@@ -12,7 +12,9 @@ app = FastAPI(
 try:
     repository = RecordRepository()
 except RepositoryLoadError as exc:
-    raise RuntimeError(f"Pro-One failed to load repository data: {exc}") from exc
+    raise RuntimeError(
+        f"Pro-One failed to load repository data: {exc}"
+    ) from exc
 
 
 @app.get("/health")
@@ -37,3 +39,16 @@ def get_workflow(workflow_id: str) -> dict:
         )
 
     return workflow
+
+
+@app.get("/workflows/{workflow_id}/resolved")
+def get_resolved_workflow(workflow_id: str) -> dict:
+    resolved = repository.resolve_workflow(workflow_id)
+
+    if resolved is None:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Workflow '{workflow_id}' was not found.",
+        )
+
+    return resolved

@@ -87,3 +87,94 @@ class RecordRepository:
             domain: len(records)
             for domain, records in self.records.items()
         }
+
+    def _records_for_workflow(
+        self,
+        domain: str,
+        workflow_id: str,
+    ) -> list[dict[str, Any]]:
+        records = self.records.get(domain, {}).values()
+        matches: list[dict[str, Any]] = []
+
+        for record in records:
+            workflow_ids: list[str] = []
+
+            if domain == "sources":
+                workflow_ids = (
+                    record.get("workflow_fit", {}).get("workflow_ids", [])
+                )
+
+            elif domain in {
+                "process_steps",
+                "legal_documents",
+                "intakes",
+            }:
+                workflow_ids = record.get("workflow_ids", [])
+
+            elif domain == "legal_rules":
+                workflow_ids = (
+                    record.get("workflow_fit", {})
+                    .get("supported_workflow_ids", [])
+                )
+
+            elif domain in {
+                "risks",
+                "responses",
+                "evaluation_fixtures",
+            }:
+                workflow_ids = (
+                    record.get("related_records", {})
+                    .get("workflow_ids", [])
+                )
+
+            if workflow_id in workflow_ids:
+                matches.append(record)
+
+        return matches
+
+    def resolve_workflow(
+        self,
+        workflow_id: str,
+    ) -> dict[str, Any] | None:
+        workflow = self.get_workflow(workflow_id)
+
+        if workflow is None:
+            return None
+
+        related: dict[str, list[dict[str, Any]]] = {
+            "sources": self._records_for_workflow(
+                "sources", workflow_id
+            ),
+            "process_steps": self._records_for_workflow(
+                "process_steps", workflow_id
+            ),
+            "legal_documents": self._records_for_workflow(
+                "legal_documents", workflow_id
+            ),
+            "intakes": self._records_for_workflow(
+                "intakes", workflow_id
+            ),
+            "legal_rules": self._records_for_workflow(
+                "legal_rules", workflow_id
+            ),
+            "risks": self._records_for_workflow(
+                "risks", workflow_id
+            ),
+            "responses": self._records_for_workflow(
+                "responses", workflow_id
+            ),
+            "evaluation_fixtures": self._records_for_workflow(
+                "evaluation_fixtures", workflow_id
+            ),
+        }
+
+        counts = {
+            domain: len(records)
+            for domain, records in related.items()
+        }
+
+        return {
+            "workflow": workflow,
+            "related": related,
+            "counts": counts,
+        }
