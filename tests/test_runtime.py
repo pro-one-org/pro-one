@@ -1,8 +1,16 @@
+import json
+import shutil
+import tempfile
 import unittest
+from pathlib import Path
 
 from fastapi.testclient import TestClient
 
 from app.main import app, repository
+from app.repository import RecordRepository, RepositoryLoadError
+
+
+ROOT = Path(__file__).resolve().parents[1]
 
 
 class RuntimeRepositoryTests(unittest.TestCase):
@@ -16,6 +24,38 @@ class RuntimeRepositoryTests(unittest.TestCase):
         self.assertIsNotNone(workflow)
         self.assertEqual("name_change_information", workflow["id"])
         self.assertEqual("Name Change Information", workflow["title"])
+    def test_malformed_record_fails_schema_validation(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            temp_root = Path(temp_dir)
+            data_dir = temp_root / "data"
+            schema_dir = temp_root / "schemas"
+
+            shutil.copytree(ROOT / "data", data_dir)
+            shutil.copytree(ROOT / "schemas", schema_dir)
+
+            workflows_path = data_dir / "sample-workflows.json"
+            workflows = json.loads(
+                workflows_path.read_text(encoding="utf-8")
+            )
+
+            del workflows[0]["title"]
+
+            workflows_path.write_text(
+                json.dumps(workflows, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            with self.assertRaises(RepositoryLoadError) as context:
+                RecordRepository(
+                    data_dir=data_dir,
+                    schema_dir=schema_dir,
+                )
+
+            message = str(context.exception)
+
+            self.assertIn("failed schema validation", message)
+            self.assertIn("title", message)
+
 
     def test_unknown_workflow_returns_none(self) -> None:
         self.assertIsNone(repository.get_workflow("does_not_exist"))
