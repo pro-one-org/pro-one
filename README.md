@@ -50,9 +50,9 @@ See [Architecture](docs/architecture.md) for the broader component model.
 
 ## Proposed first MVP
 
-The first proposed MVP is a narrow, single-jurisdiction civil-procedure workflow centered on helping a self-represented litigant understand and prepare a basic answer to a civil complaint.
+The first proposed legal workflow is a narrow Virginia General District Court Small Claims Division information workflow for a defendant who received Form DC-402, Warrant in Debt. Its specification and source metadata are proposed and have not received jurisdiction-specific legal review.
 
-That legal workflow is not implemented; the local runtime provides only repository access and readiness checks. The proposed workflow's intended role is to explain sourced concepts and options, collect and organize user-confirmed facts, and—where a reviewed workflow permits—structure or populate a draft from the user's explicit decisions. It must not decide what the user should admit or deny, invent defenses, choose litigation strategy, make factual choices, or claim that generated material is legally sufficient merely because it was generated. See [MVP](docs/mvp.md) and [Legal Safety](docs/legal-safety.md).
+That legal workflow is not implemented or publicly supported; the local runtime provides repository access and readiness checks. The proposed workflow would identify the official form and court, organize user-confirmed information, link current official sources, and flag the printed return date for prompt verification without calculating a deadline or choosing a response. See the [Virginia DC-402 workflow specification](docs/virginia-small-claims-warrant-in-debt-workflow.md), [MVP](docs/mvp.md), and [Legal Safety](docs/legal-safety.md).
 
 ## Legal-information boundary
 

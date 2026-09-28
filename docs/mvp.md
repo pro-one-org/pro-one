@@ -4,18 +4,18 @@ The first Pro-One legal workflow remains a proposal, not an implemented product.
 
 ## Direction
 
-The proposed MVP would help a self-represented civil litigant understand and prepare a basic answer to a civil complaint. Its purpose is to explain sourced concepts, organize information, and structure a user-reviewed draft—not to make litigation decisions.
+The proposed first workflow is a self-represented defendant information workflow for a Virginia General District Court Small Claims Division Warrant in Debt (Form DC-402). It identifies the official form and court, organizes user-confirmed information, explains only verified procedural propositions, and routes date uncertainty to official resources. It does not prepare a responsive pleading or make a litigation decision. See the [workflow specification](virginia-small-claims-warrant-in-debt-workflow.md).
 
 ## Intended behavior
 
-A future implementation should:
+A future implementation of this specific workflow should:
 
 1. identify the document, jurisdiction, and reviewed workflow
 2. retrieve approved, current sources for the propositions being explained
-3. explain what admissions, denials, lack-of-knowledge responses, and defenses generally mean when the sources support those explanations
-4. collect and organize user-confirmed facts
-5. record the user's explicit decisions for each allegation or section
-6. populate a draft structure from those explicit decisions only where a reviewed workflow permits it
+3. identify the court, division, form, and return date shown on the warrant
+4. organize user-confirmed facts and questions while leaving all response choices to the user
+5. explain verified small-claims procedure with links to official sources
+6. avoid creating or approving any answer, grounds of defense, counterclaim, or filing
 7. show citations, limitations, unanswered questions, and required review points
 8. evaluate the output against reviewed fixtures before public support
 
@@ -31,10 +31,10 @@ The system must not:
 
 ## Initial scope
 
-- one user type: self-represented civil litigants
-- one jurisdiction selected through documented review
-- one task: understanding and preparing a basic answer to a civil complaint
-- one inspectable, approved legal corpus
+- one user type: self-represented defendants who received Form DC-402
+- one jurisdiction: Virginia General District Court Small Claims Division
+- one task: identify a served Warrant in Debt and organize user-directed questions and official resources
+- one inspectable source corpus, reviewed and approved before any supported use
 - source-backed procedural explanations and citations
 - structured intake and user-confirmation controls
 - warnings, refusal of unsafe parts, and safe continuation
@@ -49,25 +49,25 @@ The corpus should be selected by proposition, not by a single universal source r
 
 Before the workflow is publicly supported, the project should complete jurisdiction-specific review of the legal-information/legal-advice boundary and other applicable requirements. A `legal_information_only` label is a design constraint, not a legal conclusion. The project does not currently claim attorney review.
 
-The runtime readiness gate is an enforcement point for these release conditions, not evidence that they have been satisfied. The current sample workflows remain proposed and fail the gate because required reviews, supported dependencies, and evaluation fixtures have not been completed.
+The runtime readiness gate is an enforcement point for these release conditions, not evidence that they have been satisfied. All sample workflows, including the Virginia DC-402 candidate, remain proposed and fail the gate because reviews and required dependencies have not been approved or supported. The Virginia candidate's twelve evaluation fixtures are proposed and unreviewed.
 
 ## Example interaction boundary
 
 ```text
-User: I was served with a civil complaint. What does an answer do?
+User: I received a Virginia DC-402. What does the return date mean?
 
 Permitted future behavior:
 - identify or ask for jurisdiction and the document title
-- explain sourced response categories and procedural structure
-- ask the user to confirm facts and choose their own response for each allegation
-- place those explicit choices into a clearly labeled draft structure
+- identify the document and listed court and date
+- summarize only verified procedure with official sources
+- help the user organize questions without recommending a response
 - show sources, unresolved questions, deadlines requiring verification, and limitations
 
 Prohibited behavior:
-- choose "admit" or "deny" for the user
-- invent a defense or factual explanation
-- select a litigation strategy
-- state that the draft is ready or legally sufficient solely because it was generated
+- choose whether the user should respond, appear, remove, contest, settle, or assert a defense
+- invent facts, a defense, or a legal position
+- select litigation strategy or predict an outcome
+- say an outline or document is legally sufficient or ready to file
 ```
 
 ## Success criteria

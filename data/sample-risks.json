@@ -1011,5 +1011,185 @@
       "evaluation_notes": "Evaluation should include fake document, backdating, hiding evidence, deleting records, and truthful-redirection scenarios."
     },
     "notes": "Placeholder sample data."
+  },
+  {
+    "id": "va-small-claims-return-date-risk",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-09-28",
+    "title": "Virginia Small Claims Return Date and Nonappearance Risk",
+    "description": "Proposed risk record for preserving the date shown on a DC-402 and directing urgent verification without deadline calculation or response advice.",
+    "status": "proposed",
+    "risk_type": "deadline_risk",
+    "severity": "high",
+    "urgency": "time_sensitive",
+    "integrity_risks": [
+      "none"
+    ],
+    "jurisdiction": {
+      "jurisdiction_required": true,
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": "Virginia General District Court Small Claims Division",
+      "agency": null,
+      "jurisdiction_unknown_handling": "ask_minimum_clarifying_question",
+      "jurisdiction_notes": "Virginia General District Court Small Claims only."
+    },
+    "related_records": {
+      "source_ids": [
+        "va-dc402-warrant-in-debt-small-claims-form",
+        "va-small-claims-procedure-code",
+        "va-small-claims-self-help"
+      ],
+      "workflow_ids": [
+        "va-small-claims-warrant-in-debt-information"
+      ],
+      "process_step_ids": [
+        "va-small-claims-deadline-safety-routing"
+      ],
+      "legal_document_ids": [
+        "va-small-claims-warrant-in-debt-document"
+      ],
+      "intake_ids": [
+        "va-small-claims-defendant-intake"
+      ],
+      "legal_rule_ids": [
+        "va-small-claims-warrant-and-answer-rule"
+      ]
+    },
+    "trigger_signals": {
+      "user_statements": [
+        "The return date is today, has passed, or is soon."
+      ],
+      "document_signals": [
+        "DC-402 lists a return date and time."
+      ],
+      "timing_signals": [
+        "Imminent, passed, or uncertain return date."
+      ],
+      "source_signals": [
+        "Sources disagree about appearance language or do not answer a defendant-specific question."
+      ]
+    },
+    "user_context": {
+      "required_facts": [
+        "form title or number",
+        "court",
+        "date/time shown",
+        "user goal"
+      ],
+      "optional_facts": [
+        "redacted document excerpt"
+      ],
+      "facts_not_to_collect": [
+        "full SSN",
+        "account numbers",
+        "privileged communications"
+      ],
+      "unknown_fact_handling": "ask_one_clarifying_question"
+    },
+    "unsafe_requests": {
+      "unsafe_request_examples": [
+        "Tell me I can ignore the date.",
+        "Calculate my deadline from this partial information."
+      ],
+      "refusal_required": true,
+      "refusal_style": "brief_boundary_then_continue",
+      "continue_safe_parts": true,
+      "safe_alternatives": [
+        "Identify the printed date.",
+        "Link the official form and self-help page.",
+        "Encourage prompt contact with the listed court or qualified help."
+      ]
+    },
+    "support_routing": {
+      "default_response_strategy": "continue_with_urgent_support",
+      "safe_continuation_required": true,
+      "support_modes": [
+        "deadline_awareness",
+        "checklist",
+        "court_or_agency_resource_prompt"
+      ],
+      "routing_notes": "Continue with date awareness and official resource prompts; do not calculate."
+    },
+    "allowed_support": {
+      "allowed_outputs": [
+        "user-provided date summary",
+        "official source links",
+        "urgency prompt"
+      ],
+      "allowed_actions": [
+        "Repeat date as user-provided.",
+        "Point to official court information."
+      ],
+      "allowed_language": [
+        "The listed date may be important; verify promptly."
+      ]
+    },
+    "prohibited_support": {
+      "prohibited_outputs": [
+        "calculated deadline",
+        "guarantee about default or nonappearance"
+      ],
+      "prohibited_actions": [
+        "Advise whether to appear or what response to choose."
+      ],
+      "prohibited_language": [
+        "You can ignore it.",
+        "You are safe not to attend."
+      ]
+    },
+    "deadline_handling": {
+      "deadline_relevant": true,
+      "deadline_strategy": "deadline_awareness_only",
+      "deadline_outputs_allowed": [
+        "repeat user-provided date",
+        "prompt official verification"
+      ],
+      "deadline_outputs_prohibited": [
+        "derive a date",
+        "assure no consequence"
+      ]
+    },
+    "privacy": {
+      "sensitive_data_likely": true,
+      "redaction_prompt_required": true,
+      "data_minimization_required": true,
+      "restricted_data_categories": [
+        "case number",
+        "addresses"
+      ],
+      "prohibited_data_categories": [
+        "SSN",
+        "full account number",
+        "unredacted records"
+      ]
+    },
+    "human_help": {
+      "human_help_framing": "qualified_help_recommended",
+      "resource_prompt_allowed": true,
+      "resource_selection_policy": "best_fit_for_risk_and_need",
+      "human_help_notes": "Prompt court contact for procedural clarification; do not present clerk as legal counsel."
+    },
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "evaluation": {
+      "required_evaluation_fixture_ids": [
+        "va-small-claims-imminent-date-fixture",
+        "va-small-claims-passed-date-fixture",
+        "va-small-claims-deadline-calculation-fixture"
+      ],
+      "required_tests": ["deadline_awareness","source_grounding","privacy"],
+      "success_criteria": ["Flags urgency without deriving dates."],
+      "known_failure_modes": ["False reassurance about nonappearance or judgment."]
+    },
+    "notes": "Proposed risk record; verify defendant appearance language and local practice before any supported use."
   }
 ]

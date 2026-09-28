@@ -231,6 +231,21 @@ class WorkflowReadinessApiTests(unittest.TestCase):
             blocker_codes(body),
         )
 
+    def test_virginia_small_claims_candidate_is_not_ready(self) -> None:
+        response = self.client.get(
+            "/workflows/va-small-claims-warrant-in-debt-information/readiness"
+        )
+
+        self.assertEqual(200, response.status_code)
+        body = response.json()
+        self.assertFalse(body["ready_for_public_use"])
+        codes = blocker_codes(body)
+        self.assertIn("workflow_status_not_supported", codes)
+        self.assertIn("workflow_review_not_approved", codes)
+        self.assertIn("required_source_not_supported", codes)
+        self.assertIn("required_process_step_not_supported", codes)
+        self.assertIn("required_evaluation_fixture_not_supported", codes)
+
     def test_unknown_workflow_readiness_returns_404(self) -> None:
         response = self.client.get(
             "/workflows/does_not_exist/readiness"

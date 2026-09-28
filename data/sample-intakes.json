@@ -864,5 +864,175 @@
       "evaluation_notes": "Evaluation fixtures should test unpaid invoices, contract disputes, refund requests, threats, and formal-paper scenarios."
     },
     "notes": "This is placeholder sample data for schema design."
+  },
+  {
+    "id": "va-small-claims-defendant-intake",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-09-28",
+    "title": "Virginia DC-402 Defendant Information Intake",
+    "description": "Proposed minimum-facts intake for identifying a served Virginia small-claims Warrant in Debt and routing questions safely.",
+    "status": "proposed",
+    "intake_type": "workflow_selection",
+    "workflow_ids": [
+      "va-small-claims-warrant-in-debt-information"
+    ],
+    "process_step_ids": [
+      "va-small-claims-identify-warrant",
+      "va-small-claims-organize-user-questions",
+      "va-small-claims-deadline-safety-routing"
+    ],
+    "document_ids": [
+      "va-small-claims-warrant-in-debt-document"
+    ],
+    "jurisdiction": {
+      "jurisdiction_required": true,
+      "allowed_jurisdiction_questions": [
+        "What state and court are shown?",
+        "Does the form say DC-402 or Warrant in Debt — Small Claims Division?",
+        "What return date and time are printed?"
+      ],
+      "jurisdiction_unknown_handling": "ask_minimum_clarifying_question",
+      "jurisdiction_notes": "If document or division is unclear, do not give Virginia-specific procedural guidance."
+    },
+    "intake_goal": {
+      "primary_goal": "Identify whether the user appears to have a served Virginia small-claims DC-402 and understand their information goal.",
+      "allowed_goals": [
+        "Confirm form title and listed court.",
+        "Record the printed return date as user-provided.",
+        "Offer source links and organize questions."
+      ],
+      "prohibited_goals": [
+        "Choose a response, defense, settlement, or removal strategy.",
+        "Determine service validity or a deadline."
+      ]
+    },
+    "questions": {
+      "required_questions": [
+        "What form title or number is printed?",
+        "What court/locality is listed?",
+        "What return date and time does the warrant show, if any?",
+        "What would you like help understanding?"
+      ],
+      "optional_questions": [
+        "What general claim category is shown?"
+      ],
+      "conditional_questions": [
+        "Is the listed date today, passed, or soon?"
+      ],
+      "prohibited_questions": [
+        "Do not request Social Security or full account numbers.",
+        "Do not request unredacted papers or privileged communications."
+      ],
+      "clarification_strategy": "ask_minimum_needed_questions"
+    },
+    "data_limits": {
+      "minimum_necessary_only": true,
+      "allowed_data_categories": [
+        "form title",
+        "court/locality",
+        "printed return date",
+        "general user goal",
+        "short redacted claim description"
+      ],
+      "restricted_data_categories": [
+        "case number",
+        "party addresses",
+        "financial dispute details"
+      ],
+      "prohibited_data_categories": [
+        "social_security_number",
+        "full_financial_account_numbers",
+        "unredacted_sensitive_documents",
+        "privileged_communications"
+      ]
+    },
+    "sensitive_data": {
+      "collects_sensitive_data": true,
+      "sensitive_data_handling": "ask_for_redacted_information",
+      "redaction_prompt_required": true,
+      "sensitive_data_examples": [
+        "case papers",
+        "addresses",
+        "account details"
+      ]
+    },
+    "support_routing": {
+      "default_support_modes": [
+        "workflow_selection",
+        "document_explanation",
+        "checklist",
+        "source_backed_steps"
+      ],
+      "risk_aware_support_modes": [
+        "narrow_then_continue",
+        "continue_with_checklist",
+        "continue_with_document_explanation",
+        "continue_with_court_or_agency_resource_prompt"
+      ],
+      "avoid_abandonment": true,
+      "human_help_framing": "resources_optional"
+    },
+    "risk_signals": {
+      "deadline_signals": [
+        "Return date is imminent, today, passed, or unclear."
+      ],
+      "high_risk_signals": [
+        "Court or form cannot be confirmed."
+      ],
+      "unsafe_request_signals": [
+        "User asks which response or defense to choose."
+      ],
+      "routing_response": "continue_with_urgent_support"
+    },
+    "outputs": {
+      "allowed_outputs": [
+        "jurisdiction_question",
+        "source_backed_next_steps",
+        "checklist",
+        "document_explanation",
+        "deadline_awareness_prompt",
+        "court_or_agency_resource_prompt"
+      ],
+      "prohibited_outputs": [
+        "legal opinion",
+        "response choice",
+        "final deadline calculation",
+        "filing-ready document"
+      ]
+    },
+    "privacy": {
+      "privacy_notice_required": true,
+      "data_minimization_required": true,
+      "retention_warning_required": true
+    },
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "evaluation": {
+      "required_evaluation_fixture_ids": [
+        "va-small-claims-ordinary-user-fixture",
+        "va-small-claims-unknown-court-fixture",
+        "va-small-claims-unknown-document-fixture",
+        "va-small-claims-imminent-date-fixture",
+        "va-small-claims-passed-date-fixture",
+        "va-small-claims-response-choice-fixture",
+        "va-small-claims-invent-defense-fixture",
+        "va-small-claims-out-of-scope-fixture",
+        "va-small-claims-sensitive-data-fixture",
+        "va-small-claims-deadline-calculation-fixture",
+        "va-small-claims-sufficiency-fixture",
+        "va-small-claims-citation-grounding-fixture"
+      ],
+      "required_tests": ["jurisdiction","privacy","deadline_awareness","user_control"],
+      "success_criteria": ["Collects minimum facts and routes uncertain dates safely."],
+      "known_failure_modes": ["Asking for unnecessary sensitive data or inventing procedural requirements."]
+    },
+    "notes": "Proposed intake; collect only what is needed and remind users the service has no persistent user storage."
   }
 ]
