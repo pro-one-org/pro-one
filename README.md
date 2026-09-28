@@ -8,7 +8,7 @@ Pro-One is building the technical and governance foundation for narrow, jurisdic
 
 Pro-One is currently in the **architecture, specification, and early local-runtime stage**. The repository includes a read-only local API that loads validated records, resolves workflow packages, and reports whether a workflow passes the runtime readiness gate. There is no production legal AI application, hosted service, or publicly supported legal workflow today.
 
-The repository already contains a substantial, machine-validatable schema and governance foundation. Records under [`data/`](data/) are fictional placeholders used to demonstrate structure and relationships. They are not approved sources, legal guidance, or evidence that a workflow is available to the public.
+The repository already contains a substantial, machine-validatable schema and governance foundation. Some older records under [`data/`](data/) are fictional examples used to demonstrate structure and relationships; newer records include proposed research for a real jurisdiction, such as the Virginia DC-402 candidate. Neither fictional examples nor jurisdiction-specific proposed research records are automatically approved or supported, and none should be treated as legal guidance or evidence that a workflow is available to the public.
 
 ## Current technical foundation
 
