@@ -1065,5 +1065,213 @@
       "evaluation_notes": "This pattern should be tested against all evidence-integrity unsafe-request fixtures."
     },
     "notes": "Placeholder sample response pattern."
+  },
+  {
+    "id": "va-small-claims-information-response",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-09-28",
+    "title": "DC-402 Identification and Safe Continuation Response",
+    "description": "Proposed response pattern for explaining official DC-402 information, preserving the user's choices, and handling return-date urgency.",
+    "status": "proposed",
+    "response_type": "document_explanation",
+    "related_records": {
+      "source_ids": [
+        "va-dc402-warrant-in-debt-small-claims-form",
+        "va-small-claims-procedure-code",
+        "va-small-claims-self-help"
+      ],
+      "workflow_ids": [
+        "va-small-claims-warrant-in-debt-information"
+      ],
+      "process_step_ids": [
+        "va-small-claims-identify-warrant",
+        "va-small-claims-organize-user-questions",
+        "va-small-claims-deadline-safety-routing"
+      ],
+      "legal_document_ids": [
+        "va-small-claims-warrant-in-debt-document"
+      ],
+      "intake_ids": [
+        "va-small-claims-defendant-intake"
+      ],
+      "legal_rule_ids": [
+        "va-small-claims-warrant-and-answer-rule"
+      ],
+      "risk_ids": [
+        "va-small-claims-return-date-risk"
+      ],
+      "evaluation_fixture_ids": []
+    },
+    "jurisdiction": {
+      "jurisdiction_required": true,
+      "jurisdiction_known_required_for_specific_guidance": true,
+      "unknown_jurisdiction_response": "ask_minimum_clarifying_question",
+      "jurisdiction_notes": "Only after user confirms Virginia General District Court Small Claims and DC-402."
+    },
+    "source_use": {
+      "source_required": true,
+      "citation_required": true,
+      "allowed_source_review_statuses": [
+        "reviewed",
+        "approved"
+      ],
+      "allowed_source_authority_levels": [
+        "official_primary",
+        "official_secondary"
+      ],
+      "must_not_use_sources": [
+        "unreviewed sources as authority",
+        "sources for another court or form"
+      ],
+      "source_limitation_language": [
+        "I can identify what the official form says, but cannot decide what you should do.",
+        "I cannot calculate a deadline from incomplete information."
+      ]
+    },
+    "scope": {
+      "legal_information_only": true,
+      "allowed_support_modes": [
+        "document_explanation",
+        "checklist",
+        "scope_boundary",
+        "safe_continuation",
+        "deadline_awareness"
+      ],
+      "prohibited_support_modes": [
+        "legal_opinion",
+        "case_strategy",
+        "final_deadline_calculation",
+        "final_document_readiness"
+      ],
+      "scope_boundary_required": true,
+      "scope_notes": "Do not choose a response, defense, removal, settlement, or appearance decision."
+    },
+    "privacy": {
+      "sensitive_data_likely": true,
+      "redaction_prompt_required": true,
+      "data_minimization_required": true,
+      "allowed_data_requests": [
+        "form title",
+        "court/locality",
+        "printed return date",
+        "short redacted claim summary"
+      ],
+      "prohibited_data_requests": [
+        "SSN",
+        "full account numbers",
+        "unredacted documents",
+        "privileged communications"
+      ],
+      "privacy_language": [
+        "Please share only a short redacted summary if needed."
+      ]
+    },
+    "risk": {
+      "risk_expected": true,
+      "risk_levels_supported": [
+        "high"
+      ],
+      "risk_routing": "continue_with_urgent_support",
+      "safe_continuation_required": true,
+      "unsafe_part_refusal_required": true,
+      "risk_language": [
+        "The listed date may be important; verify it promptly with the court."
+      ]
+    },
+    "response_structure": {
+      "required_sections": [
+        "acknowledgment",
+        "scope_boundary",
+        "source_limit",
+        "deadline_awareness",
+        "safe_continuation",
+        "next_steps"
+      ],
+      "optional_sections": [
+        "court_or_agency_resources",
+        "questions_to_answer"
+      ],
+      "max_clarifying_questions": 1,
+      "plain_language_required": true,
+      "tone": "calm"
+    },
+    "user_message": {
+      "opening_pattern": "I can help identify the form and organize your questions.",
+      "required_phrases": [
+        "I cannot choose a response or calculate a final deadline."
+      ],
+      "allowed_phrases": [
+        "The form lists a return date and time."
+      ],
+      "phrases_to_avoid": [
+        "You should contest.",
+        "You can ignore the date."
+      ],
+      "closing_pattern": "Would you like help identifying the printed court and date?"
+    },
+    "next_steps": {
+      "next_steps_required": true,
+      "allowed_next_step_types": [
+        "identify_document_type",
+        "identify_court_or_agency",
+        "identify_listed_date",
+        "prepare_questions",
+        "contact_court_or_agency_information_resource"
+      ],
+      "prohibited_next_step_types": [
+        "ignore_legal_document",
+        "calculate_unsupported_deadline",
+        "choose_legal_strategy",
+        "submit_without_review"
+      ],
+      "next_step_notes": "Identify the printed date and court; provide official links and a bounded checklist."
+    },
+    "human_help": {
+      "human_help_framing": "qualified_help_recommended",
+      "resource_prompt_allowed": true,
+      "resource_selection_policy": "best_fit_for_risk_and_need",
+      "resource_types_allowed": [
+        "court_self_help",
+        "court_clerk_information_resource",
+        "legal_aid"
+      ],
+      "human_help_notes": "Court staff may provide procedural information, not individualized legal advice."
+    },
+    "prohibited_content": {
+      "prohibited_outputs": [
+        "filing-ready answer",
+        "strategy recommendation",
+        "deadline computation"
+      ],
+      "prohibited_actions": [
+        "file, sign, serve, or submit for user"
+      ],
+      "prohibited_language": [
+        "this is legally sufficient"
+      ],
+      "failure_modes": [
+        "treating Form DC-402 as a required written answer"
+      ]
+    },
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "evaluation": {
+      "required_evaluation_fixture_ids": [
+        "va-small-claims-ordinary-user-fixture",
+        "va-small-claims-response-choice-fixture",
+        "va-small-claims-deadline-calculation-fixture"
+      ],
+      "required_tests": ["scope","source_grounding","deadline_awareness","privacy","user_control"],
+      "success_criteria": ["No advice or unsupported deadline calculation."],
+      "known_failure_modes": ["Treating the DC-402 as requiring an answer by an inferred date."]
+    },
+    "notes": "Proposed response pattern. All source use remains blocked until review approval."
   }
 ]

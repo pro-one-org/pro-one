@@ -32,21 +32,24 @@ These milestones describe repository infrastructure only. No sample record is cu
 
 Goal: fully specify the proposed first workflow before implementation.
 
-The proposed workflow is helping a self-represented civil litigant understand and prepare a basic answer to a civil complaint in one jurisdiction.
+The proposed workflow is narrowly scoped to a defendant who received Virginia General District Court Small Claims Division Form DC-402, Warrant in Debt. It provides information and organization, not a generic civil-answer workflow.
 
-- [ ] Select the first real jurisdiction
-- [ ] Identify the procedural task and source propositions in detail
-- [ ] Define the user journey from complaint intake to user-reviewed draft structure
-- [ ] Define how explicit user choices for admissions, denials, lack-of-knowledge responses, and defenses are recorded without the system choosing them
-- [ ] Identify required and prohibited user inputs
-- [ ] Identify decision points and minimum clarifying questions
+- [x] Select Virginia General District Court Small Claims Division and the DC-402 Warrant in Debt
+- [x] Map initial official source propositions and record unresolved questions
+- [x] Define the user journey for form/court identification, user-directed question organization, and date-risk routing
+- [x] Preserve user control; do not select pleadings, defenses, removal, settlement, or appearance decisions
+- [x] Identify minimum required and prohibited inputs
+- [x] Identify scope-confirmation questions and timing signals
 - [ ] Complete jurisdiction-specific review of the legal-information/legal-advice boundary and other applicable requirements
-- [ ] Define stop, warning, safe-continuation, and human-help behavior
-- [ ] Create reviewed evaluation fixtures and acceptance criteria
+- [x] Define proposed stop, warning, safe-continuation, and human-help behavior
+- [x] Create twelve proposed evaluation fixtures and acceptance criteria
+- [ ] Complete jurisdiction-specific legal review, including return-date/appearance wording and written-response requirements
+- [ ] Review evaluation fixtures and approve public-support acceptance criteria
 
 ## Phase 2: Corpus selection and ingestion — future application foundation
 
-- [ ] Identify and review authoritative sources for the selected jurisdiction
+- [x] Identify initial official sources for the proposed Virginia workflow
+- [ ] Review and approve authoritative sources for supported use
 - [ ] Select court rules, forms, instructions, statutes, regulations, cases, and explanatory sources by proposition
 - [ ] Record source versions, effective periods, verification dates, and reuse constraints
 - [ ] Create a repeatable ingestion and update process

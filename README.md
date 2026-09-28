@@ -8,7 +8,7 @@ Pro-One is building the technical and governance foundation for narrow, jurisdic
 
 Pro-One is currently in the **architecture, specification, and early local-runtime stage**. The repository includes a read-only local API that loads validated records, resolves workflow packages, and reports whether a workflow passes the runtime readiness gate. There is no production legal AI application, hosted service, or publicly supported legal workflow today.
 
-The repository already contains a substantial, machine-validatable schema and governance foundation. Records under [`data/`](data/) are fictional placeholders used to demonstrate structure and relationships. They are not approved sources, legal guidance, or evidence that a workflow is available to the public.
+The repository already contains a substantial, machine-validatable schema and governance foundation. Some older records under [`data/`](data/) are fictional examples used to demonstrate structure and relationships; newer records include proposed research for a real jurisdiction, such as the Virginia DC-402 candidate. Neither fictional examples nor jurisdiction-specific proposed research records are automatically approved or supported, and none should be treated as legal guidance or evidence that a workflow is available to the public.
 
 ## Current technical foundation
 
@@ -50,9 +50,9 @@ See [Architecture](docs/architecture.md) for the broader component model.
 
 ## Proposed first MVP
 
-The first proposed MVP is a narrow, single-jurisdiction civil-procedure workflow centered on helping a self-represented litigant understand and prepare a basic answer to a civil complaint.
+The first proposed legal workflow is a narrow Virginia General District Court Small Claims Division information workflow for a defendant who received Form DC-402, Warrant in Debt. Its specification and source metadata are proposed and have not received jurisdiction-specific legal review.
 
-That legal workflow is not implemented; the local runtime provides only repository access and readiness checks. The proposed workflow's intended role is to explain sourced concepts and options, collect and organize user-confirmed facts, and—where a reviewed workflow permits—structure or populate a draft from the user's explicit decisions. It must not decide what the user should admit or deny, invent defenses, choose litigation strategy, make factual choices, or claim that generated material is legally sufficient merely because it was generated. See [MVP](docs/mvp.md) and [Legal Safety](docs/legal-safety.md).
+That legal workflow is not implemented or publicly supported; the local runtime provides repository access and readiness checks. The proposed workflow would identify the official form and court, organize user-confirmed information, link current official sources, and flag the printed return date for prompt verification without calculating a deadline or choosing a response. See the [Virginia DC-402 workflow specification](docs/virginia-small-claims-warrant-in-debt-workflow.md), [MVP](docs/mvp.md), and [Legal Safety](docs/legal-safety.md).
 
 ## Legal-information boundary
 

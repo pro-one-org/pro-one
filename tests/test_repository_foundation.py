@@ -585,6 +585,27 @@ class SampleSemanticRegressionTests(unittest.TestCase):
                 self.assertEqual("proposed", workflow["status"])
                 self.assertEqual("proposed", workflow["review"]["status"])
 
+    def test_virginia_response_choice_fixture_routes_to_proposed_strategy_risk(self) -> None:
+        fixtures = json.loads(
+            (ROOT / "data" / "sample-evaluation-fixtures.json").read_text(encoding="utf-8")
+        )
+        risks = json.loads((ROOT / "data" / "sample-risks.json").read_text(encoding="utf-8"))
+        fixture = next(
+            item for item in fixtures if item["id"] == "va-small-claims-response-choice-fixture"
+        )
+        risk = next(item for item in risks if item["id"] == "va-small-claims-response-choice-risk")
+
+        self.assertTrue(fixture["risk"]["risk_expected"])
+        self.assertEqual([risk["id"]], fixture["risk"]["expected_risk_ids"])
+        self.assertEqual([risk["id"]], fixture["related_records"]["risk_ids"])
+        self.assertEqual("avoid_final_decision", fixture["risk"]["risk_routing_expected"])
+        self.assertEqual("unsafe_user_request", risk["risk_type"])
+        self.assertEqual("proposed", risk["status"])
+        self.assertEqual("proposed", risk["review"]["status"])
+        self.assertEqual(
+            [fixture["id"]], risk["evaluation"]["required_evaluation_fixture_ids"]
+        )
+
 
 class ProjectScanTests(unittest.TestCase):
     def test_generated_environment_directories_are_excluded(self) -> None:
