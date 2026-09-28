@@ -1,6 +1,6 @@
 # MVP
 
-The first Pro-One MVP is a proposal, not an implemented product. It should remain intentionally narrow: one jurisdiction, one civil-procedure task, one reviewed source corpus, and explicit release gates.
+The first Pro-One legal workflow remains a proposal, not an implemented product. An early local runtime can load and resolve repository records and evaluate a workflow's readiness gate, but it does not execute or publicly support a legal workflow. The MVP should remain intentionally narrow: one jurisdiction, one civil-procedure task, one reviewed source corpus, and explicit release gates.
 
 ## Direction
 
@@ -48,6 +48,8 @@ Payments, accounts, attorney matching, multi-jurisdiction coverage, broad legal 
 The corpus should be selected by proposition, not by a single universal source ranking. Statutes, regulations, cases, and rules may support substantive propositions; court rules, forms, and instructions may support filing and procedural requirements; official self-help and legal-aid materials may support plain-language explanation and navigation.
 
 Before the workflow is publicly supported, the project should complete jurisdiction-specific review of the legal-information/legal-advice boundary and other applicable requirements. A `legal_information_only` label is a design constraint, not a legal conclusion. The project does not currently claim attorney review.
+
+The runtime readiness gate is an enforcement point for these release conditions, not evidence that they have been satisfied. The current sample workflows remain proposed and fail the gate because required reviews, supported dependencies, and evaluation fixtures have not been completed.
 
 ## Example interaction boundary
 
