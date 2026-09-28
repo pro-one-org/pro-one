@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException
 
+from app.readiness import WorkflowReadinessService
 from app.repository import RecordRepository, RepositoryLoadError
 
 
@@ -15,6 +16,8 @@ except RepositoryLoadError as exc:
     raise RuntimeError(
         f"Pro-One failed to load repository data: {exc}"
     ) from exc
+
+readiness_service = WorkflowReadinessService(repository)
 
 
 @app.get("/health")
@@ -52,3 +55,16 @@ def get_resolved_workflow(workflow_id: str) -> dict:
         )
 
     return resolved
+
+
+@app.get("/workflows/{workflow_id}/readiness")
+def get_workflow_readiness(workflow_id: str) -> dict:
+    result = readiness_service.evaluate(workflow_id)
+
+    if result is None:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Workflow '{workflow_id}' was not found.",
+        )
+
+    return result

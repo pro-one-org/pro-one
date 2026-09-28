@@ -6,7 +6,7 @@ Pro-One is building the technical and governance foundation for narrow, jurisdic
 
 ## Project status
 
-Pro-One is currently in the **architecture, specification, and technical-foundation stage**. There is no production legal AI application, hosted service, or publicly supported legal workflow today.
+Pro-One is currently in the **architecture, specification, and early local-runtime stage**. The repository includes a read-only local API that loads validated records, resolves workflow packages, and reports whether a workflow passes the runtime readiness gate. There is no production legal AI application, hosted service, or publicly supported legal workflow today.
 
 The repository already contains a substantial, machine-validatable schema and governance foundation. Records under [`data/`](data/) are fictional placeholders used to demonstrate structure and relationships. They are not approved sources, legal guidance, or evidence that a workflow is available to the public.
 
@@ -25,6 +25,8 @@ Nine interoperable JSON Schema domains define the project's core records:
 9. [evaluation fixtures](schemas/evaluation-fixture.schema.json)
 
 Shared definitions in [`schemas/common.schema.json`](schemas/common.schema.json) keep identifiers, versions, review provenance, jurisdiction structures, maturity states, risk levels, routing behavior, and other cross-domain vocabulary consistent. A lightweight validator checks JSON syntax, Draft 2020-12 schema validity, sample-record conformance, cross-record references, key state invariants, and Markdown integrity.
+
+The early local runtime exposes workflow records, resolved workflow packages, and `GET /workflows/{workflow_id}/readiness`. The readiness endpoint fails closed unless the workflow and each required source, process step, and evaluation fixture meet the supported and approved gates. It does not execute legal workflows, generate legal information, or make any sample workflow publicly available.
 
 The schemas sit within documented [legal-safety](docs/legal-safety.md), [privacy](docs/privacy-principles.md), [governance](docs/governance.md), [source](docs/source-standards.md), [workflow-selection](docs/workflow-selection.md), and [evaluation](docs/evaluation-principles.md) standards.
 
@@ -50,7 +52,7 @@ See [Architecture](docs/architecture.md) for the broader component model.
 
 The first proposed MVP is a narrow, single-jurisdiction civil-procedure workflow centered on helping a self-represented litigant understand and prepare a basic answer to a civil complaint.
 
-That workflow is not implemented. Its intended role is to explain sourced concepts and options, collect and organize user-confirmed facts, and—where a reviewed workflow permits—structure or populate a draft from the user's explicit decisions. It must not decide what the user should admit or deny, invent defenses, choose litigation strategy, make factual choices, or claim that generated material is legally sufficient merely because it was generated. See [MVP](docs/mvp.md) and [Legal Safety](docs/legal-safety.md).
+That legal workflow is not implemented; the local runtime provides only repository access and readiness checks. The proposed workflow's intended role is to explain sourced concepts and options, collect and organize user-confirmed facts, and—where a reviewed workflow permits—structure or populate a draft from the user's explicit decisions. It must not decide what the user should admit or deny, invent defenses, choose litigation strategy, make factual choices, or claim that generated material is legally sufficient merely because it was generated. See [MVP](docs/mvp.md) and [Legal Safety](docs/legal-safety.md).
 
 ## Legal-information boundary
 
