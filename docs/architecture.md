@@ -24,7 +24,24 @@ Country values use uppercase ISO 3166-1 alpha-2 codes across every domain—for 
 
 All domain records include `schema_version`, `record_version`, and `last_modified`. Review objects distinguish reviewer identity or handle, reviewer role, review scope, review date, and the exact record version reviewed. A reviewer role is a project capacity and does not assert professional credentials.
 
-The sample records are fictional and proposed. Schema validity establishes structural conformance only; it does not make a record accurate, reviewed, approved, supported, or legally appropriate.
+The records include fictional examples and proposed Virginia research. Schema validity establishes structural conformance only; it does not make a record accurate, reviewed, approved, supported, or legally appropriate.
+
+## Current deterministic local runtime
+
+```text
+structured answers + explicit risk IDs
+  -> RecordRepository.resolve_workflow()
+  -> single applicable intake definition (fail on none/multiple)
+  -> required/optional completeness + key-based privacy filtering
+  -> explicit linked-risk resolution + canonical routing
+  -> WorkflowReadinessService.evaluate()
+  -> package integrity checks + development context assembly
+  -> separate public eligibility result (no execution or answer generation)
+```
+
+`app/intake.py` uses workflow input identifiers and intake privacy metadata without interpreting answer text or inferring facts. `app/execution.py` consumes that assessment and the existing readiness result. It verifies required package references without importing additional records, then returns detached, deterministic metadata from the existing resolver. Partial facts may appear in inspection contexts; excluded, restricted, and unrecognized values do not. User facts retain their exact value and explicit user-provided provenance. Repository jurisdiction metadata never confirms the user's jurisdiction.
+
+The single stateless `POST /workflows/{workflow_id}/intake/evaluate` endpoint returns completeness, privacy handling, all explicit risk routes, context availability, and public eligibility separately. Public eligibility requires complete and acceptable input, resolved required package references, and the readiness gate. An available context is not permission to generate or publicly execute anything. Source records contain metadata only; evaluation scenarios are omitted from context. No intake values are persisted or logged, and no external source fetching, NLP, LLM, or generation exists. See the [request and response contract](../README.md#structured-intake-and-development-context).
 
 ## Intended pipeline
 

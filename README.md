@@ -6,7 +6,7 @@ Pro-One is building the technical and governance foundation for narrow, jurisdic
 
 ## Project status
 
-Pro-One is currently in the **architecture, specification, and early local-runtime stage**. The repository includes a read-only local API that loads validated records, resolves workflow packages, and reports whether a workflow passes the runtime readiness gate. There is no production legal AI application, hosted service, or publicly supported legal workflow today.
+Pro-One is currently in the **architecture, specification, and early local-runtime stage**. The stateless local API loads and schema-validates repository records, resolves workflow packages, evaluates readiness and structured intake completeness, processes explicit workflow-linked risk IDs, and assembles deterministic development execution contexts. There is no production legal AI application, hosted service, or publicly supported legal workflow today.
 
 The repository already contains a substantial, machine-validatable schema and governance foundation. Some older records under [`data/`](data/) are fictional examples used to demonstrate structure and relationships; newer records include proposed research for a real jurisdiction, such as the Virginia DC-402 candidate. Neither fictional examples nor jurisdiction-specific proposed research records are automatically approved or supported, and none should be treated as legal guidance or evidence that a workflow is available to the public.
 
@@ -26,7 +26,36 @@ Nine interoperable JSON Schema domains define the project's core records:
 
 Shared definitions in [`schemas/common.schema.json`](schemas/common.schema.json) keep identifiers, versions, review provenance, jurisdiction structures, maturity states, risk levels, routing behavior, and other cross-domain vocabulary consistent. A lightweight validator checks JSON syntax, Draft 2020-12 schema validity, sample-record conformance, cross-record references, key state invariants, and Markdown integrity.
 
-The early local runtime exposes workflow records, resolved workflow packages, and `GET /workflows/{workflow_id}/readiness`. The readiness endpoint fails closed unless the workflow and each required source, process step, and evaluation fixture meet the supported and approved gates. It does not execute legal workflows, generate legal information, or make any sample workflow publicly available.
+The early local runtime exposes workflow records, resolved workflow packages, and `GET /workflows/{workflow_id}/readiness`. The readiness endpoint fails closed unless the workflow and each required source, process step, and evaluation fixture meet the supported and approved gates. It does not generate legal advice, legal answers, or filing-ready documents, and it does not make any sample workflow publicly available. There is no natural-language legal reasoning, LLM, retrieval system, frontend, database, or persistent user session.
+
+### Structured intake and development context
+
+`POST /workflows/{workflow_id}/intake/evaluate` accepts an `answers` object with string, boolean, number, or null values and an optional `risk_ids` list (default `[]`). Nested answer objects/arrays, wrong types, and extra top-level fields receive FastAPI validation errors (`422`). For example:
+
+```json
+{
+  "answers": {
+    "state": "Virginia",
+    "court_name_or_locality": "Augusta County",
+    "document_title_or_form_number": "DC-402",
+    "return_date_and_time_if_shown": "2026-11-10 09:00",
+    "user_goal": "Understand what this document is"
+  },
+  "risk_ids": ["va-small-claims-return-date-risk"]
+}
+```
+
+The result separates `intake`, `risks`, `privacy`, `routing`, `execution`, and `public_execution`. Required/optional field names come from the workflow record; intake questions remain explanatory metadata. Null and whitespace-only answers are missing; zero and false remain explicit values. Completeness means presence only, never confirmation of jurisdiction, form identity, dates, or legal facts.
+
+Excluded fields and intake/risk privacy categories are matched by key (case folding and space/underscore equivalence only). Excluded, restricted, and unrecognized values are withheld from context and block input eligibility. There is no inspection of prose for sensitive information or risks: callers must use the configured field names and supply explicit risk IDs. Values admitted to `user_facts` are preserved unchanged with `provenance: "user_provided"`; absent facts are never inferred.
+
+Risk IDs are checked against the selected workflow package. Unknown and unrelated IDs are reported separately and block input eligibility. All recognized risk records and their configured routes are preserved in stable order, including distinct urgent-date and response-choice routes. Routing uses the existing canonical vocabulary; incomplete input adds `pause_for_missing_information`, and privacy filtering adds `narrow_then_continue`.
+
+Inspection contexts may contain partial facts and proposed metadata. They contain only resolver-linked process steps, sources, legal rules, risks, legal documents, and response patterns, alongside workflow/intake definitions, output constraints, safety/privacy limitations, routing, and readiness. Evaluation scenarios and unrelated records are excluded; sources remain metadata, with no external content fetches. Missing required package references make context unavailable and are listed explicitly.
+
+`execution.context_available` is independent of `intake.complete` and `public_execution.allowed`. Public eligibility requires input eligibility, package integrity, and the unchanged readiness service. For the Virginia candidate, complete intake produces a development context while public execution remains **false**. Unknown workflows return `404`; missing or ambiguous intake definitions return `409` with stable codes.
+
+The application does not persist intake values, write them to disk or a database, retain them in sessions, or log answer values. Values are held transiently to evaluate the request and return admitted facts; this is not a retention or privacy guarantee about a caller, proxy, or hosting environment. No production service exists.
 
 The schemas sit within documented [legal-safety](docs/legal-safety.md), [privacy](docs/privacy-principles.md), [governance](docs/governance.md), [source](docs/source-standards.md), [workflow-selection](docs/workflow-selection.md), and [evaluation](docs/evaluation-principles.md) standards.
 
@@ -52,7 +81,7 @@ See [Architecture](docs/architecture.md) for the broader component model.
 
 The first proposed legal workflow is a narrow Virginia General District Court Small Claims Division information workflow for a defendant who received Form DC-402, Warrant in Debt. Its specification and source metadata are proposed and have not received jurisdiction-specific legal review.
 
-That legal workflow is not implemented or publicly supported; the local runtime provides repository access and readiness checks. The proposed workflow would identify the official form and court, organize user-confirmed information, link current official sources, and flag the printed return date for prompt verification without calculating a deadline or choosing a response. See the [Virginia DC-402 workflow specification](docs/virginia-small-claims-warrant-in-debt-workflow.md), [MVP](docs/mvp.md), and [Legal Safety](docs/legal-safety.md).
+That legal workflow is not publicly supported; the local runtime provides repository access, readiness checks, structured intake assessment, explicit risk routing, and development context assembly. The future grounded workflow would identify the official form and court, organize user-confirmed information, link current official sources, and flag the printed return date for prompt verification without calculating a deadline or choosing a response. See the [Virginia DC-402 workflow specification](docs/virginia-small-claims-warrant-in-debt-workflow.md), [MVP](docs/mvp.md), and [Legal Safety](docs/legal-safety.md).
 
 ## Legal-information boundary
 

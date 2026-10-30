@@ -1,5 +1,7 @@
 from fastapi import FastAPI, HTTPException
 
+from app.execution import ExecutionContextService, ExecutionResult
+from app.intake import IntakeRequest, IntakeResolutionError
 from app.readiness import WorkflowReadinessService
 from app.repository import RecordRepository, RepositoryLoadError
 
@@ -18,6 +20,7 @@ except RepositoryLoadError as exc:
     ) from exc
 
 readiness_service = WorkflowReadinessService(repository)
+execution_service = ExecutionContextService(repository)
 
 
 @app.get("/health")
@@ -67,4 +70,26 @@ def get_workflow_readiness(workflow_id: str) -> dict:
             detail=f"Workflow '{workflow_id}' was not found.",
         )
 
+    return result
+
+
+@app.post("/workflows/{workflow_id}/intake/evaluate")
+def evaluate_intake(workflow_id: str, request: IntakeRequest) -> ExecutionResult:
+    try:
+        result = execution_service.build(
+            workflow_id, request.answers, request.risk_ids,
+        )
+    except IntakeResolutionError as exc:
+        raise HTTPException(
+            status_code=409,
+            detail={
+                "code": exc.code,
+                "candidate_intake_ids": exc.candidate_ids,
+            },
+        ) from exc
+    if result is None:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Workflow '{workflow_id}' was not found.",
+        )
     return result
