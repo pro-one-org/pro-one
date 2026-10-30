@@ -28,6 +28,18 @@ Goal: create a coherent, enforceable record model before application work begins
 
 These milestones describe repository infrastructure only. No sample record is currently approved or supported, and no production application exists.
 
+## Local runtime milestones — completed for development inspection
+
+- [x] Load records with runtime Draft 2020-12 schema validation
+- [x] Resolve workflow-linked repository packages deterministically
+- [x] Evaluate public-use readiness through the workflow readiness gate
+- [x] Evaluate structured required/optional inputs and privacy category keys
+- [x] Validate explicit workflow-linked risk IDs and preserve configured routing
+- [x] Assemble controlled development contexts with unchanged user-provided facts and provenance
+- [x] Separate completeness, safety routing, context availability, and public eligibility
+
+The stateless local endpoint does not persist user data or interpret natural-language answers. Proposed Virginia records can appear in inspection contexts, but complete intake cannot override the readiness gate. All Virginia records and reviews remain proposed. Retrieval, grounded generation, LLM integration, reviewed-source context assembly, and public release remain future work.
+
 ## Phase 1: First workflow specification — current
 
 Goal: fully specify the proposed first workflow before implementation.
