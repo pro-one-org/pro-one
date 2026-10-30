@@ -750,8 +750,7 @@
       "archive_url": null
     },
     "notes": "Placeholder sample data. Not legal guidance."
-  }
-,
+  },
   {
     "id": "va-small-claims-procedure-code",
     "schema_version": "1.0.0",
@@ -814,8 +813,7 @@
     "workflow_fit": {"topics":["virginia_small_claims","return_date","court_resources"],"workflow_ids":["va-small-claims-warrant-in-debt-information"],"risk_level":"high","limitations":["Does not replace the served warrant, statute, or local court instructions.","Does not authorize advice about how to respond."],"not_for":["legal_strategy","final_deadline_calculation","supported_user_facing_use"]},
     "citation": {"preferred_citation":"Virginia Judicial System Court Self-Help, Small Claims","retrieved_at":"2026-09-28","archive_url":null},
     "notes":"Official explanatory source for proposed workflow navigation."
-  }
-,
+  },
   {
     "id": "va-dc402-warrant-in-debt-instructions",
     "schema_version": "1.0.0",
@@ -836,5 +834,248 @@
     "workflow_fit": {"topics":["dc402_form_fields","grounds_of_defense","return_date"],"workflow_ids":["va-small-claims-warrant-in-debt-information"],"risk_level":"high","limitations":["Instructions are marked September 2008 and may be stale.","Do not infer a universal defendant filing requirement or deadline."],"not_for":["deadline_calculation","legal_strategy","unreviewed_public_use"]},
     "citation": {"preferred_citation":"Virginia Form DC-402 Instructions, Data Element 31 (September 2008)","retrieved_at":"2026-09-28","archive_url":null},
     "notes":"At Data Element 31, the instructions say the judge enters dates if the judge orders grounds of defense to be filed; currentness must be verified."
+  },
+  {
+    "id": "va-scc-cis-help",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "Clerk’s Information System: official help",
+    "description": "Official navigation source for Virginia business records and status navigation.",
+    "status": "proposed",
+    "source_type": "official_self_help",
+    "url": "https://www.scc.virginia.gov/businesses/business-faqs/cis-faq/",
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": "Virginia State Corporation Commission"
+    },
+    "authority": {
+      "level": "official_secondary",
+      "issuing_body": "Virginia State Corporation Commission",
+      "is_source_of_truth": false,
+      "authority_notes": "Official explanatory source; not a case-specific legal determination."
+    },
+    "dates": {
+      "published": null,
+      "effective_from": null,
+      "effective_through": null,
+      "last_updated": null,
+      "last_verified": "2026-10-30"
+    },
+    "provenance": {
+      "source_content_version": "Official HTML observed 2026-10-30; uncertified",
+      "content_hash": null,
+      "superseded_by_source_id": null,
+      "provenance_notes": "Research observation only. No statutory effective period or legal currentness is certified."
+    },
+    "access": {
+      "is_free": true,
+      "requires_login": false,
+      "format": "html",
+      "access_notes": "Official public information page; live record search may have separate conditions."
+    },
+    "rights": {
+      "reuse_status": "unknown",
+      "license": null,
+      "terms_url": null,
+      "rights_notes": "Unknown reuse status; only a minimal research excerpt retained."
+    },
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "workflow_fit": {
+      "topics": [
+        "business_record_status"
+      ],
+      "workflow_ids": [
+        "va-scc-business-record-navigation"
+      ],
+      "risk_level": "medium",
+      "limitations": [
+        "Navigation only: no live entity lookup or conclusion about active status, good standing, reinstatement, registration fees, taxes, or filing duties.",
+        "Entity-specific status and requirements must be checked directly with SCC; the curated excerpts do not establish compliance."
+      ],
+      "not_for": [
+        "legal_strategy",
+        "final_deadline_calculation",
+        "supported_user_facing_use"
+      ]
+    },
+    "citation": {
+      "preferred_citation": "Virginia State Corporation Commission, Clerk’s Information System: official help",
+      "retrieved_at": "2026-10-30",
+      "archive_url": null
+    },
+    "notes": "Checked official source; proposed and unapproved."
+  },
+  {
+    "id": "va-scc-clerk-records",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "About the Clerk’s Office",
+    "description": "Official navigation source for Virginia business records and status navigation.",
+    "status": "proposed",
+    "source_type": "official_self_help",
+    "url": "https://www.scc.virginia.gov/businesses/about-the-clerks-office/",
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": "Virginia State Corporation Commission"
+    },
+    "authority": {
+      "level": "official_secondary",
+      "issuing_body": "Virginia State Corporation Commission",
+      "is_source_of_truth": false,
+      "authority_notes": "Official explanatory source; not a case-specific legal determination."
+    },
+    "dates": {
+      "published": null,
+      "effective_from": null,
+      "effective_through": null,
+      "last_updated": null,
+      "last_verified": "2026-10-30"
+    },
+    "provenance": {
+      "source_content_version": "Official HTML observed 2026-10-30; uncertified",
+      "content_hash": null,
+      "superseded_by_source_id": null,
+      "provenance_notes": "Research observation only. No statutory effective period or legal currentness is certified."
+    },
+    "access": {
+      "is_free": true,
+      "requires_login": false,
+      "format": "html",
+      "access_notes": "Official public information page; live record search may have separate conditions."
+    },
+    "rights": {
+      "reuse_status": "unknown",
+      "license": null,
+      "terms_url": null,
+      "rights_notes": "Unknown reuse status; only a minimal research excerpt retained."
+    },
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "workflow_fit": {
+      "topics": [
+        "business_record_status"
+      ],
+      "workflow_ids": [
+        "va-scc-business-record-navigation"
+      ],
+      "risk_level": "medium",
+      "limitations": [
+        "Navigation only: no live entity lookup or conclusion about active status, good standing, reinstatement, registration fees, taxes, or filing duties.",
+        "Entity-specific status and requirements must be checked directly with SCC; the curated excerpts do not establish compliance."
+      ],
+      "not_for": [
+        "legal_strategy",
+        "final_deadline_calculation",
+        "supported_user_facing_use"
+      ]
+    },
+    "citation": {
+      "preferred_citation": "Virginia State Corporation Commission, About the Clerk’s Office",
+      "retrieved_at": "2026-10-30",
+      "archive_url": null
+    },
+    "notes": "Checked official source; proposed and unapproved."
+  },
+  {
+    "id": "md-district-court-defendant-help",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "What to Do if You Are Sued in District Court",
+    "description": "Official navigation source for Maryland District Court civil summons orientation.",
+    "status": "proposed",
+    "source_type": "official_self_help",
+    "url": "https://www.mdcourts.gov/courthelp/suedindistrictcourt",
+    "jurisdiction": {
+      "country": "US",
+      "state": "Maryland",
+      "locality": null,
+      "court": "Maryland District Court",
+      "agency": null
+    },
+    "authority": {
+      "level": "official_secondary",
+      "issuing_body": "Maryland Judiciary",
+      "is_source_of_truth": false,
+      "authority_notes": "Official explanatory source; not a case-specific legal determination."
+    },
+    "dates": {
+      "published": null,
+      "effective_from": null,
+      "effective_through": null,
+      "last_updated": null,
+      "last_verified": "2026-10-30"
+    },
+    "provenance": {
+      "source_content_version": "Official HTML observed 2026-10-30; uncertified",
+      "content_hash": null,
+      "superseded_by_source_id": null,
+      "provenance_notes": "Research observation only. No statutory effective period or legal currentness is certified."
+    },
+    "access": {
+      "is_free": true,
+      "requires_login": false,
+      "format": "html",
+      "access_notes": "Official public information page; live record search may have separate conditions."
+    },
+    "rights": {
+      "reuse_status": "unknown",
+      "license": null,
+      "terms_url": null,
+      "rights_notes": "Unknown reuse status; only a minimal research excerpt retained."
+    },
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "workflow_fit": {
+      "topics": [
+        "district_court_civil_money_claim"
+      ],
+      "workflow_ids": [
+        "md-district-civil-defendant-orientation"
+      ],
+      "risk_level": "medium",
+      "limitations": [
+        "Ordinary civil money-claim document orientation only; not eviction, foreclosure, criminal, family, emergency, circuit court, or post-judgment advice.",
+        "Notice timing has exceptions and case-specific facts; no filing deadline, service validity, defense, appearance, venue, or jurisdiction determination is provided."
+      ],
+      "not_for": [
+        "legal_strategy",
+        "final_deadline_calculation",
+        "supported_user_facing_use"
+      ]
+    },
+    "citation": {
+      "preferred_citation": "Maryland Judiciary, What to Do if You Are Sued in District Court",
+      "retrieved_at": "2026-10-30",
+      "archive_url": null
+    },
+    "notes": "Checked official source; proposed and unapproved."
   }
 ]

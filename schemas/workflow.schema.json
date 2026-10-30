@@ -27,6 +27,67 @@
     "evaluation"
   ],
   "properties": {
+    "routing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "required_fields",
+        "selectors",
+        "intake_bindings"
+      ],
+      "properties": {
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "country",
+              "state",
+              "user_type",
+              "matter_type",
+              "court",
+              "document_title",
+              "form_number",
+              "role"
+            ]
+          }
+        },
+        "selectors": {
+          "type": "object",
+          "propertyNames": {
+            "enum": [
+              "matter_type",
+              "court",
+              "document_title",
+              "form_number",
+              "role"
+            ]
+          },
+          "additionalProperties": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "intake_bindings": {
+          "type": "object",
+          "additionalProperties": {
+            "enum": [
+              "state",
+              "court",
+              "document_title",
+              "form_number",
+              "role",
+              "user_type",
+              "matter_type",
+              "country"
+            ]
+          }
+        }
+      }
+    },
     "response_constraints": {
       "description": "Explicit planning gaps; never interpreted from source prose or treated as negative legal rules.",
       "type": "object", "additionalProperties": false,

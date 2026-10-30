@@ -21,11 +21,13 @@ from app.output_validation import OutputValidationService
 from app.repository import RecordRepository
 from app.response_assembly import ResponseAssemblyRequest, ResponseAssemblyService
 from app.retrieval import RetrievalRequest
+from app.routing import MatterRequest
 from test_intake_execution import ANSWERS, CHOICE_RISK, RETURN_RISK
 
 
 WORKFLOW = "va-small-claims-warrant-in-debt-information"
 CONFIG = GenerationConfig(provider="testing", model=TEST_MODEL, scope="within_workflow")
+MATTER = MatterRequest(state="Virginia", user_type="self_represented_individual", matter_type="small_claims_debt", court="General District Court", form_number="DC-402", role="defendant")
 SECRET = "PRIVATE_TEST_SENTINEL_937"
 
 
@@ -50,7 +52,7 @@ class GenerationTests(unittest.TestCase):
     def setUpClass(cls):
         cls.repo = RecordRepository()
         cls.assembly = ResponseAssemblyService(cls.repo)
-        cls.package = cls.assembly.assemble(WORKFLOW, ResponseAssemblyRequest(
+        cls.package = cls.assembly.assemble(WORKFLOW, ResponseAssemblyRequest(matter=MATTER,
             answers=ANSWERS, retrieval=RetrievalRequest(query="return date")))
         cls.request = build_model_request(cls.package, CONFIG)
 
@@ -96,7 +98,7 @@ class GenerationTests(unittest.TestCase):
             self.assertEqual("development_package_unavailable", result["validation"]["errors"][0]["code"])
 
     def test_no_evidence_prevents_generation(self):
-        package = self.assembly.assemble(WORKFLOW, ResponseAssemblyRequest(answers=ANSWERS, retrieval=RetrievalRequest(query="xyzzzz")))
+        package = self.assembly.assemble(WORKFLOW, ResponseAssemblyRequest(matter=MATTER, answers=ANSWERS, retrieval=RetrievalRequest(query="xyzzzz")))
         result = self.generate(package=package)
         self.assertEqual(0, result["generation"]["attempts"])
         self.assertIsNone(result["draft"])
@@ -178,7 +180,7 @@ class GenerationTests(unittest.TestCase):
         self.assertIn("unsupported_claim", {e["code"] for e in result["errors"]})
 
     def test_unrelated_citation_rejected(self):
-        package = self.assembly.assemble(WORKFLOW, ResponseAssemblyRequest(answers=ANSWERS, retrieval=RetrievalRequest(query=None, limit=20)))
+        package = self.assembly.assemble(WORKFLOW, ResponseAssemblyRequest(matter=MATTER, answers=ANSWERS, retrieval=RetrievalRequest(query=None, limit=20)))
         request = build_model_request(package, CONFIG)
         draft = valid_draft(request)
         target = next(s for s in draft["sections"] if s["kind"] == "legal_information")
@@ -245,7 +247,7 @@ class GenerationTests(unittest.TestCase):
         self.assertIn("required_control_missing", {e["code"] for e in validation["errors"]})
 
     def test_active_risk_routing_and_required_notice_cannot_be_removed(self):
-        package = self.assembly.assemble(WORKFLOW, ResponseAssemblyRequest(
+        package = self.assembly.assemble(WORKFLOW, ResponseAssemblyRequest(matter=MATTER,
             answers=ANSWERS, risk_ids=[RETURN_RISK, CHOICE_RISK], retrieval=RetrievalRequest(query="return date")))
         request = build_model_request(package, CONFIG)
         result = self.generate(package=package)
@@ -274,7 +276,7 @@ class GenerationTests(unittest.TestCase):
         self.assertIn("user_fact_changed", {e["code"] for e in invalid["errors"]})
 
     def test_excluded_and_restricted_values_never_enter_model_request(self):
-        package = self.assembly.assemble(WORKFLOW, ResponseAssemblyRequest(
+        package = self.assembly.assemble(WORKFLOW, ResponseAssemblyRequest(matter=MATTER,
             answers={**ANSWERS, "social_security_number": SECRET, "case_number": SECRET},
             retrieval=RetrievalRequest(query="return date")))
         captured = []
@@ -293,7 +295,9 @@ class GenerationTests(unittest.TestCase):
         self.assertTrue(all(v["provenance"] == "user_provided" for v in payload["user_facts"].values()))
 
     def test_scope_unconfirmed_narrows_to_controls_and_outside_prevents_call(self):
-        result = self.generate(config=GenerationConfig(provider="testing", model=TEST_MODEL))
+        package = copy.deepcopy(self.package)
+        package["scope_resolution"] = {"state": "insufficient_information"}
+        result = self.generate(package=package, config=GenerationConfig(provider="testing", model=TEST_MODEL, scope="within_workflow"))
         self.assertEqual("accepted", result["generation"]["status"])
         self.assertTrue(all(not s["claim_ids"] for s in result["draft"]["sections"]))
         outside = self.generate(config=GenerationConfig(provider="testing", model=TEST_MODEL, scope="outside_workflow"))
@@ -301,13 +305,13 @@ class GenerationTests(unittest.TestCase):
         self.assertEqual("scope_outside_workflow", outside["validation"]["errors"][0]["code"])
 
     def test_missing_scope_facts_cannot_be_overridden_by_scope_assertion(self):
-        package = self.assembly.assemble(WORKFLOW, ResponseAssemblyRequest(answers={"state": "Virginia"}))
+        package = self.assembly.assemble(WORKFLOW, ResponseAssemblyRequest(matter=MATTER, answers={"state": "Virginia"}))
         request = build_model_request(package, CONFIG)
         self.assertFalse(request.grounded_package["scope"]["topics_enabled"])
         self.assertEqual([], request.grounded_package["claims"])
 
     def test_rule_user_facing_and_quotation_controls_survive_generation(self):
-        package = self.assembly.assemble(WORKFLOW, ResponseAssemblyRequest(
+        package = self.assembly.assemble(WORKFLOW, ResponseAssemblyRequest(matter=MATTER,
             answers=ANSWERS, retrieval=RetrievalRequest(proposition_ids=["va-small-claims-pleading-categories"])))
         request = build_model_request(package, CONFIG)
         self.assertEqual([], request.grounded_package["claims"])
@@ -411,7 +415,7 @@ class GenerationTests(unittest.TestCase):
                     self.assertNotIn("public_currentness", record)
 
     def test_grounds_of_defense_retains_conditional_and_currentness_limits(self):
-        package = self.assembly.assemble(WORKFLOW, ResponseAssemblyRequest(
+        package = self.assembly.assemble(WORKFLOW, ResponseAssemblyRequest(matter=MATTER,
             answers=ANSWERS, retrieval=RetrievalRequest(proposition_ids=["va-small-claims-grounds-of-defense-order"])))
         result = self.generate(package=package)
         self.assertEqual("accepted", result["generation"]["status"], result["validation"])
@@ -425,7 +429,7 @@ class GenerationApiTests(unittest.TestCase):
     def setUpClass(cls):
         cls.client = TestClient(app)
         cls.url = f"/workflows/{WORKFLOW}/response/generate"
-        cls.payload = {"answers": ANSWERS, "retrieval": {"query": "return date"}, "generation": CONFIG.model_dump()}
+        cls.payload = {"matter": MATTER.model_dump(), "answers": ANSWERS, "retrieval": {"query": "return date"}, "generation": CONFIG.model_dump()}
 
     def test_valid_generation_api_and_openapi_reuses_contracts(self):
         response = self.client.post(self.url, json=self.payload)

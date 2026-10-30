@@ -1,159 +1,120 @@
 # Pro-One
 
-**An open-source foundation for free, source-grounded legal AI for people and small businesses handling legal matters on their own.**
+**Free legal AI for everyone.**
 
-Pro-One is building the technical and governance foundation for narrow, jurisdiction-aware legal-information workflows. The project emphasizes authoritative sources, citations, user control, privacy, fact integrity, safe continuation, and explicit evaluation.
+Pro-One helps individuals representing themselves and small businesses handling matters themselves understand documents, find official information, and organize questions. It is a free, model-agnostic legal-information platform. It does not choose legal positions, establish a lawyer-client relationship, or replace qualified help.
 
-## Project status
+## Product status
 
-Pro-One is currently in the **architecture, specification, and early local-runtime stage**. The stateless local API loads and validates records, evaluates intake/readiness, routes explicit risks, retrieves local evidence, and assembles grounded response plans. A provider-neutral generation layer now validates structured development drafts and runs mapped evaluation fixtures using an offline test provider. There is no production legal AI application, hosted service, or publicly supported legal workflow today.
+The local beta has a usable web interface, structured matter routing, deterministic scope checks, official-source retrieval, provider-neutral generation, independent output validation, and readable citations. It is stateless: no accounts, saved conversations, database, payments, or user profiling.
 
-The repository already contains a substantial, machine-validatable schema and governance foundation. Some older records under [`data/`](data/) are fictional examples used to demonstrate structure and relationships; newer records include proposed research for a real jurisdiction, such as the Virginia DC-402 candidate. Neither fictional examples nor jurisdiction-specific proposed research records are automatically approved or supported, and none should be treated as legal guidance or evidence that a workflow is available to the public.
+**All real workflows, sources, passages, and reviews remain proposed. No workflow is approved for unrestricted public use.** Development mode can exercise them. Production mode refuses unapproved workflow generation and disables the testing provider and internal inspection endpoints. No currentness or attorney review has been fabricated.
 
-## Current technical foundation
+## Development coverage
 
-Ten interoperable JSON Schema domains define the project's core records:
+| Audience | Workflow | Official authority | Important limits |
+|---|---|---|---|
+| Individuals | Virginia Small Claims DC-402 defendant information | Virginia Judicial System, Supreme Court form/instructions, Code of Virginia | Appearance wording, universal written-answer duties/deadlines, and older instruction currentness remain unresolved. |
+| Small businesses | Virginia SCC business records and status navigation | [SCC CIS help](https://www.scc.virginia.gov/businesses/business-faqs/cis-faq/), [Clerk's Office](https://www.scc.virginia.gov/businesses/about-the-clerks-office/) | Navigate records and questions; no live entity lookup, active-status/compliance opinion, filing, fees, or reinstatement decision. |
+| Individuals | Maryland District Court civil summons orientation | [Maryland Courts defendant help](https://www.mdcourts.gov/courthelp/suedindistrictcourt) | Ordinary civil money-claim document orientation; no deadline calculation, strategy, service/venue decision, or high-consequence matter. |
 
-1. [source metadata](schemas/source.schema.json)
-2. [workflow definitions](schemas/workflow.schema.json)
-3. [process steps](schemas/process-step.schema.json)
-4. [legal documents](schemas/legal-document.schema.json)
-5. [intake definitions](schemas/intake.schema.json)
-6. [legal rules](schemas/legal-rule.schema.json)
-7. [risk definitions](schemas/risk.schema.json)
-8. [response patterns](schemas/response.schema.json)
-9. [evaluation fixtures](schemas/evaluation-fixture.schema.json)
-10. [curated source passages](schemas/source-passage.schema.json)
+These are three bounded workflows in two states, not nationwide coverage. Five older fictional examples remain repository demonstrations and are excluded from the product catalog. Open `/coverage` or `GET /workflows` to inspect actual development coverage.
 
-Shared definitions in [`schemas/common.schema.json`](schemas/common.schema.json) keep identifiers, versions, review provenance, jurisdiction structures, maturity states, risk levels, routing behavior, and other cross-domain vocabulary consistent. A lightweight validator checks JSON syntax, Draft 2020-12 schema validity, sample-record conformance, cross-record references, key state invariants, and Markdown integrity.
+## Run locally
 
-The early local runtime exposes workflow records, resolved workflow packages, and `GET /workflows/{workflow_id}/readiness`. The readiness endpoint fails closed unless the workflow and each required source, process step, and evaluation fixture meet the supported and approved gates. It does not make any sample workflow publicly available. Development generation uses an offline extractive test adapter; there is no live LLM adapter, runtime web fetching, frontend, database, or persistent user session.
-
-### Structured intake and development context
-
-`POST /workflows/{workflow_id}/intake/evaluate` accepts an `answers` object with string, boolean, number, or null values and an optional `risk_ids` list (default `[]`). Nested answer objects/arrays, wrong types, and extra top-level fields receive FastAPI validation errors (`422`). For example:
-
-```json
-{
-  "answers": {
-    "state": "Virginia",
-    "court_name_or_locality": "Augusta County",
-    "document_title_or_form_number": "DC-402",
-    "return_date_and_time_if_shown": "2026-11-10 09:00",
-    "user_goal": "Understand what this document is"
-  },
-  "risk_ids": ["va-small-claims-return-date-risk"]
-}
-```
-
-The result separates `intake`, `risks`, `privacy`, `routing`, `execution`, and `public_execution`. Required/optional field names come from the workflow record; intake questions remain explanatory metadata. Null and whitespace-only answers are missing; zero and false remain explicit values. Completeness means presence only, never confirmation of jurisdiction, form identity, dates, or legal facts.
-
-Excluded fields and intake/risk privacy categories are matched by key (case folding and space/underscore equivalence only). Excluded, restricted, and unrecognized values are withheld from context and block input eligibility. There is no inspection of prose for sensitive information or risks: callers must use the configured field names and supply explicit risk IDs. Values admitted to `user_facts` are preserved unchanged with `provenance: "user_provided"`; absent facts are never inferred.
-
-Risk IDs are checked against the selected workflow package. Unknown and unrelated IDs are reported separately and block input eligibility. All recognized risk records and their configured routes are preserved in stable order, including distinct urgent-date and response-choice routes. Routing uses the existing canonical vocabulary; incomplete input adds `pause_for_missing_information`, and privacy filtering adds `narrow_then_continue`.
-
-Inspection contexts may contain partial facts and proposed metadata. They contain only resolver-linked process steps, sources, legal rules, risks, legal documents, and response patterns, alongside workflow/intake definitions, output constraints, safety/privacy limitations, routing, and readiness. Evaluation scenarios and unrelated records are excluded; sources remain metadata, with no external content fetches. Missing required package references make context unavailable and are listed explicitly.
-
-`execution.context_available` is independent of `intake.complete` and `public_execution.allowed`. Public eligibility requires input eligibility, package integrity, and the unchanged readiness service. For the Virginia candidate, complete intake produces a development context while public execution remains **false**. Unknown workflows return `404`; missing or ambiguous intake definitions return `409` with stable codes.
-
-The application does not persist intake values, write them to disk or a database, retain them in sessions, or log answer values. Values are held transiently to evaluate the request and return admitted facts; this is not a retention or privacy guarantee about a caller, proxy, or hosting environment. No production service exists.
-
-### Local source-passage retrieval
-
-`POST /workflows/{workflow_id}/retrieval` accepts an optional `query`, `source_ids`, `legal_rule_ids`, `process_step_ids`, `proposition_ids`, and `limit` (default 5, range 1–20). Empty filter lists impose no extra constraint. Omit `query` for relationship-only retrieval; blank or unmatched queries return explicit empty results.
-
-The first corpus has nine short excerpts from four existing official Virginia sources, checked on 2026-10-30. All passages, sources, and reviews remain proposed. Repository startup validates the new passage schema, excerpt hashes, source/workflow relationships, jurisdiction, and optional rule/step links. Missing or invalid corpus data fails startup.
-
-Retrieval selects the workflow package and eligible source passages before applying filters or lexical ranking. Filter types intersect; values within one type union. Unrelated/unknown IDs return `422` rather than broaden scope. Token overlap uses title weight 2 and excerpt/locator/topic weight 1, with passage ID breaking ties. This score is not legal confidence or a decision about applicability.
-
-Results expose exact excerpts, locators, existing preferred citations, official URLs, source and passage review states, verification dates, excerpt hashes, source freshness, rights, and limitations. No eligible or matching passage means no fallback. The endpoint is development inspection only and always returns `public_execution.allowed: false`, alongside the unchanged readiness result. Unknown workflows return `404`; detected runtime corpus corruption returns `409`.
-
-The appearance-wording conflict, lack of support for a universal written-answer deadline, and September 2008 instruction-sheet currentness remain unresolved. No legal answer is generated. Retrieval is local, stateless, and adds no model, embedding, vector database, or network dependency. See [Source corpus](docs/source-corpus.md) for passage provenance, support gaps, and the update process.
-
-### Grounding gate and response-plan assembly
-
-`POST /workflows/{workflow_id}/response/assemble` reuses the intake contract and accepts an optional nested `retrieval` request. It combines the existing execution context and local retrieval with the selected-evidence grounding gate. For example:
-
-```json
-{
-  "answers": {"state": "Virginia", "user_goal": "Understand the listed date"},
-  "risk_ids": [],
-  "retrieval": {"query": "return date", "limit": 5}
-}
-```
-
-The inspectable response separates user facts/provenance and missing input, explicit routing/privacy controls, selected evidence, grounding eligibility, and a response plan. Claims are topic references built only from passage proposition tags, with passage/source/rule/step links, citations, and limitations. They contain no generated legal statement. Response-pattern constraints and prohibited actions are preserved, not treated as approval. Unresolved appearance wording is a support gap, not a resolved claim; missing universal written-answer support is never turned into a negative legal rule.
-
-Public eligibility requires input eligibility, existing workflow readiness, selected grounding eligibility, and package integrity. The new gate requires supported/approved evidence and linked records, the existing review scopes and exact-version review provenance, valid relationships, usable citation/rights metadata, and explicit currentness certification for each selected passage and source. Missing certification fails closed; verification dates alone do not certify currentness. No current record was certified or promoted.
-
-Complete Virginia intake can produce a development package while public grounding and execution remain **false**. No-match retrieval returns an explicit grounding-unavailable gap with no substantive claims. Unknown workflows return `404`, malformed/unrelated filters return `422`, and intake/corpus integrity conflicts retain `409`. Assembly itself makes no model call and produces no generated legal answer. See [Grounded response assembly](docs/grounded-response-assembly.md) for the policy and claim/citation contract.
-
-### Structured development generation and evaluation
-
-`POST /workflows/{workflow_id}/response/generate` reuses the assembly request and requires `generation: {"provider": "testing", "model": "deterministic-test-model", "scope": "within_workflow"}`. Scope defaults to `unconfirmed`; missing required inputs or unconfirmed scope restrict the draft to supplied control notices. Explicit outside scope prevents a provider call. Scope assertions do not establish legal applicability or override review.
-
-The generic registry has no fallback or model routing. The only adapter is offline and extractive; it adds no SDK, credentials, or network dependency. The model receives only a whitelist projection of sanitized facts, selected evidence/topics, citations, and deterministic constraints. Strict structured output is validated independently for section/claim/citation/fact IDs, support relationships, disclosures, limitations, and prohibited structured content. Supplementary prose guards reject the named Virginia red-team cases; they do not prove semantic legal or factual correctness. Failed drafts return null with stable errors. All generation remains development-only with public execution false.
-
-Run `python -B scripts/run_evaluations.py` for the twelve mapped Virginia fixtures (`--json` gives detailed checks). Required automated failures produce a nonzero exit. Four older example fixtures remain explicitly unmapped. Narrative criteria and manual approval remain pending; automated passes do not approve a workflow. See [Model generation and evaluation](docs/model-generation.md) for the API, instruction version, privacy boundary, validator limitations, and fixture coverage.
-
-The schemas sit within documented [legal-safety](docs/legal-safety.md), [privacy](docs/privacy-principles.md), [governance](docs/governance.md), [source](docs/source-standards.md), [workflow-selection](docs/workflow-selection.md), and [evaluation](docs/evaluation-principles.md) standards.
-
-## Intended architecture
-
-The following is a specification target, not a production pipeline:
+Use Python 3.12 or later. From the repository root:
 
 ```text
-user need
-  -> intake
-  -> jurisdiction and workflow identification
-  -> approved sources
-  -> source-backed legal rules and process steps
-  -> risk controls
-  -> response pattern
-  -> citations and limitations
-  -> evaluation
+python -m venv .venv
 ```
 
-See [Architecture](docs/architecture.md) for the broader component model.
+Activate `.venv` using your platform's normal command, then:
 
-## Proposed first MVP
-
-The first proposed legal workflow is a narrow Virginia General District Court Small Claims Division information workflow for a defendant who received Form DC-402, Warrant in Debt. Its specification and source metadata are proposed and have not received jurisdiction-specific legal review.
-
-That legal workflow is not publicly supported; the local runtime provides repository access, readiness checks, structured intake assessment, explicit risk routing, and development context assembly. The future grounded workflow would identify the official form and court, organize user-confirmed information, link current official sources, and flag the printed return date for prompt verification without calculating a deadline or choosing a response. See the [Virginia DC-402 workflow specification](docs/virginia-small-claims-warrant-in-debt-workflow.md), [MVP](docs/mvp.md), and [Legal Safety](docs/legal-safety.md).
-
-## Legal-information boundary
-
-Pro-One is not a law firm or lawyer, does not form an attorney-client relationship, and does not currently provide legal services. Future workflows are intended to provide source-grounded legal information and structured assistance within reviewed boundaries.
-
-Sample sources, rules, documents, responses, and other records are placeholders—not legal guidance. Before any workflow is described as publicly supported, it must have current jurisdiction-specific sources, an approved review covering the domain-specific scopes in the [review standards](docs/review-standards.md#public-support-review-gates), documented safety and privacy controls, and passing evaluation fixtures. The repository does not claim that attorney review has occurred.
-
-## Repository navigation
-
-- [Mission](MISSION.md)
-- [Architecture](docs/architecture.md)
-- [MVP scope](docs/mvp.md)
-- [Roadmap](docs/roadmap.md)
-- [Governance](docs/governance.md)
-- [Review standards](docs/review-standards.md)
-- [Source metadata](docs/source-metadata.md) and [source standards](docs/source-standards.md)
-- [Workflow definitions](docs/workflow-definitions.md) and [workflow selection](docs/workflow-selection.md)
-- [Legal safety](docs/legal-safety.md), [privacy](docs/privacy-principles.md), and [ethics](docs/ethics.md)
-- [Evaluation principles](docs/evaluation-principles.md) and [fixtures](docs/evaluation-fixtures.md)
-- [Development setup](docs/development-setup.md)
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution expectations and [Development Setup](docs/development-setup.md) for local validation. The short version:
-
-```bash
+```text
 python -m pip install -r requirements-dev.txt
-python -B -m unittest discover --start-directory tests --verbose
-python scripts/validate_repository.py
+python -B -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --no-access-log
 ```
 
-When a shared enum or record relationship changes, update the affected schemas, sample records, documentation, and validation rules together.
+Open [Pro-One locally](http://127.0.0.1:8000). Choose Individual or Small Business, confirm the structured matter, complete the minimum intake, and submit a question. The default development adapter is explicitly labeled **Offline test provider**: it returns selected source excerpts, not a live AI answer. No frontend build or provider credential is needed for this path.
 
-## License
+## Real-provider setup
 
-Pro-One is licensed under the [MIT License](LICENSE).
+OpenAI and Anthropic adapters implement the same generic `ModelProvider` interface. Core routing, legal scope, evidence, validation, and rendering do not depend on either vendor. There is no fallback or content-based provider switching.
+
+Copy `.env.example` only if useful for your deployment, fill in the required values, and keep the resulting `.env` private. The app reads process environment variables; it does not automatically load a `.env` file. Set them in your shell, process manager, or container environment:
+
+```text
+PRO_ONE_MODE=development
+PRO_ONE_MODEL_PROVIDER=openai
+PRO_ONE_MODEL=<a model enabled for your account that supports structured outputs>
+OPENAI_API_KEY=<server-only credential>
+```
+
+For Anthropic, select `anthropic` and set `ANTHROPIC_API_KEY`. To make both providers selectable, also set `PRO_ONE_OPENAI_MODEL` and `PRO_ONE_ANTHROPIC_MODEL` with their respective keys. The default `PRO_ONE_MODEL` registers that model for the default provider; the provider-specific variables configure the other allowlisted model. Choose models explicitly; Pro-One supplies no potentially stale real-model default. `GET /model/status` reports only safe configuration identifiers and availability. Browser clients cannot provide keys or select unconfigured models.
+
+Real providers receive sanitized necessary facts and selected evidence when you submit. Their own data-handling terms apply; Pro-One maintains no prompt history. Requests use fixed official HTTPS endpoints, no redirects, no tools, bounded responses, a timeout, and no retries. OpenAI requests disable response storage. Refusals, incomplete responses, and errors fail safely. Integration follows the official [OpenAI structured-output documentation](https://developers.openai.com/api/docs/guides/structured-outputs?api-mode=responses) and [Anthropic structured-output documentation](https://platform.claude.com/docs/en/build-with-claude/structured-outputs). Local validation remains authoritative even where an adapter simplifies unsupported wire-schema keywords.
+
+## Architecture
+
+```text
+Web UI / strict API
+  -> workflow catalog + exact structured matter routing
+  -> deterministic workflow-specification scope + sanitized intake
+  -> execution context + local curated passage retrieval
+  -> workflow readiness + selected-evidence grounding gate
+  -> deterministic response plan
+  -> explicitly configured provider adapter
+  -> strict draft + independent output validation
+  -> revalidated rendering + canonical citations, or a safe failure
+```
+
+Scope matching confirms only that structured details fit a workflow specification. It does not establish jurisdiction, venue, standing, service validity, merits, or representation requirements. The old caller `generation.scope` flag cannot enable substantive topics. Unknown/contradictory matters do not receive generic model answers. No model controls retrieval, sources, workflow selection, tools, filing, or review state.
+
+The renderer displays only revalidated drafts. Citation titles, issuing authorities, locators, URLs, and source limitations come from canonical records. Invalid model text is never rendered. Structured checks and supplementary prose guards reject the documented attacks; they do not prove arbitrary prose semantically or legally correct. See [Model generation](docs/model-generation.md), [Product architecture](docs/architecture.md), and [MVP operation and release limits](docs/mvp.md).
+
+## API
+
+- `GET /health`, `GET /workflows`, `GET /model/status`
+- `POST /routing/evaluate`, `POST /workflows/{id}/scope`
+- `POST /workflows/{id}/response`: safe rendered product result
+- Existing readiness, intake, retrieval, assembly, and generation APIs remain available for development inspection.
+- OpenAPI: `/openapi.json`; development interactive docs: `/docs`.
+
+The product response distinguishes accepted development response, missing information, unsupported/out-of-workflow matter, provider unavailable, insufficient evidence, and rejected draft. Request bodies are bounded to 64 KB and validation errors omit raw input values. Frontend text uses text nodes, canonical HTTPS links, and restrictive security headers. Do not submit unnecessary sensitive information, even inside an otherwise allowed question field.
+
+## Evaluation
+
+```text
+python -B -m unittest discover --start-directory tests --verbose
+python -B scripts/validate_repository.py
+python -B scripts/run_evaluations.py
+python -B scripts/run_evaluations.py --workflow va-scc-business-record-navigation
+python -B scripts/run_evaluations.py --fixture md-district-civil-defendant-orientation-ordinary-fixture --json
+```
+
+The harness executes all 24 required real-workflow fixtures: 12 Virginia DC-402, six SCC, and six Maryland. Four older fictional fixtures remain explicitly unmapped. Missing required mappings fail; fixture versions and workflow identities must match. Automated passes cover declared deterministic checks, not narrative legal approval. Manual criteria remain pending.
+
+For cross-provider measurements:
+
+```text
+python -B scripts/benchmark_models.py --workflow va-scc-business-record-navigation --fixture va-scc-business-record-navigation-ordinary-fixture
+```
+
+This explicitly calls configured providers and may incur API charges. Without real credentials it reports them unavailable and continues the test provider. Reports contain validation, latency, usage, exact draft hashes, and a ten-dimension manual semantic rubric. `--include-drafts` displays fixture drafts for review; `--review-file` accepts strict manual scores bound to the exact workflow/fixture/provider/model/draft hash. Use `--report-file <saved-report.json> --review-file <scores.json>` to apply scores to an existing result without calling a real model again. A manual score cannot override deterministic failure or approve release. No live provider or secret is required by tests or CI.
+
+## Docker and deployment
+
+```text
+docker build -t pro-one:mvp .
+docker run --rm -p 127.0.0.1:8000:8000 -e PRO_ONE_MODE=development pro-one:mvp
+```
+
+The Python 3.12 image installs runtime dependencies only, runs as a non-root user, exposes port 8000, and includes a health check. The image defaults to **production**, which deliberately refuses every currently unapproved workflow. For a production-like start, omit the development override and inject private configuration with your host's environment mechanism or a fully configured `--env-file`. Never bake keys into the image.
+
+Any host supporting an OCI container and HTTPS can run it. Set `PORT` if your host requires another port, point health checks at `/health`, terminate TLS at the host, and run the supplied command. No database or vendor-specific infrastructure is required. CI builds the container and smoke-tests production health, catalog, and mode. No cloud resources are created by this repository change.
+
+Before public exposure, legal/source/currentness and fixture review must complete, real-model semantic/privacy evaluation must be measured, and operational abuse controls and monitoring must be reviewed. External rate limiting is not implemented by this stateless beta. Optional accounts/history, more jurisdictions, and further visual polish are future product work, not requirements for local use.
+
+## Project standards
+
+Read the [roadmap](docs/roadmap.md), [legal-safety standards](docs/legal-safety.md), [privacy principles](docs/privacy-principles.md), [source standards](docs/source-standards.md), [review standards](docs/review-standards.md), and [evaluation principles](docs/evaluation-principles.md). Structural validity and automated test success do not confer legal approval.

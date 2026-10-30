@@ -48,3 +48,10 @@ The existing readiness service is called unchanged. This development-only endpoi
 To change a passage, reopen the official source, confirm the locator and exact text, record observed version/dates, update the excerpt hash and record version, preserve uncertainty, validate relationships, run tests and repository validation, and obtain review before merge. Research checks do not create review approval. Existing source metadata remains historical unless separately and accurately updated.
 
 Runtime loads local files at startup and retrieves from memory. It makes no network/model calls, writes no user data, logs no queries, and retains no request state. No ingestion daemon, OCR, model SDK, embeddings, vector database, or deployment infrastructure was added.
+
+
+## MVP breadth
+
+The repository now contains thirteen proposed passages: nine original Virginia DC-402 excerpts, two SCC business-record navigation excerpts, and two Maryland District Court civil-summons orientation excerpts. New official pages were inspected on 2026-10-30. SCC sources are its CIS FAQ and Clerk’s Office information; Maryland uses its official defendant-help page. Excerpts are minimal, hashed, workflow-linked, and retain unknown reuse/currentness limits. Research observation does not certify legal currentness or approve public use. No new substantive legal-rule record was inferred from these navigation excerpts.
+
+The SCC workflow does not retrieve an entity record, establish active status/compliance, calculate registration fees/deadlines, or perform a filing. Maryland excerpts locate the notice section and preserve the condition that a court date may change after a notice; timing exceptions, service, response choices, and high-consequence matters remain outside the curated answer scope. See the root README for official source links and coverage.

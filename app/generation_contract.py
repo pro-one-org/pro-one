@@ -30,9 +30,10 @@ or action in its source. Empty actions and conclusions are mandatory in this con
 def build_model_request(package: dict[str, Any], config: GenerationConfig) -> ModelRequest:
     plan = package["response_plan"]
     facts = package["user_context"]["facts"]
-    # Scope is an explicit, unverified caller assertion. Missing scope inputs still
-    # narrow the contract, even if the caller asserts within_workflow.
-    discuss_topics = config.scope == "within_workflow" and not package["user_context"]["missing_information"]
+    # Caller generation.scope is compatibility metadata only. Authority comes
+    # from deterministic structured specification matching on sanitized context.
+    resolved_scope = package.get("scope_resolution", {})
+    discuss_topics = resolved_scope.get("state") == "confirmed_for_workflow" and not package["user_context"]["missing_information"]
     rule_support = plan["constraints"]["legal_rule_support"]
     claims = [deepcopy(c) for c in plan["claims"] if discuss_topics and all(
         rule_support[r]["rule_statement"]["user_facing_allowed"] for r in c["legal_rule_ids"]
@@ -67,7 +68,7 @@ def build_model_request(package: dict[str, Any], config: GenerationConfig) -> Mo
     controls.update(required_controls)
     payload = {
         "workflow_id": package["workflow_id"],
-        "scope": {"caller_assertion": config.scope, "confirmed_by_system": False,
+        "scope": {"caller_assertion": config.scope, "confirmed_by_system": discuss_topics,
                   "topics_enabled": discuss_topics, "jurisdiction": package["user_context"]["jurisdiction_scope"]},
         "user_facts": deepcopy(facts),
         "missing_information": deepcopy(package["user_context"]["missing_information"]),
