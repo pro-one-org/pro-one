@@ -32,3 +32,6 @@ jobs:
 
       - name: Validate schemas, records, references, and invariants
         run: python scripts/validate_repository.py
+
+      - name: Evaluate mapped fixtures with offline test provider
+        run: python -B scripts/run_evaluations.py
