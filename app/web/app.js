@@ -74,6 +74,7 @@ function renderAnswer(data) {
   out.replaceChildren(el('div', $('question').value, 'question-bubble'));
   if (!data.response) { out.append(el('div', data.message + (data.missing_information.length ? ' Missing: ' + data.missing_information.map(x => x.replaceAll('_', ' ')).join(', ') : ''), 'notice error')); return; }
   out.append(el('p', data.message + (data.model.testing ? ' Offline test provider: source excerpts, not a live AI answer.' : ''), 'hint'));
+  for (const notice of data.response.notices) out.append(el('div', notice, 'notice'));
   const answer = el('article', undefined, 'answer');
   for (const section of data.response.sections) {
     answer.append(el('h3', section.user_provided ? 'You provided (unverified)' : section.heading));

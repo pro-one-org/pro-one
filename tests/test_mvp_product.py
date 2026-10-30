@@ -154,6 +154,14 @@ class RoutingAndProductTests(unittest.TestCase):
         self.assertNotIn('Maryland', text)
         self.assertTrue(all('scc.virginia.gov' in s['url'] for s in body['response']['sources']))
 
+    def test_explicit_urgent_date_notice_is_rendered_prominently(self):
+        payload = payload_for(self.repo, VA)
+        payload['risk_ids'] = ['va-small-claims-return-date-risk']
+        body = self.client.post(f'/workflows/{VA}/response', json=payload).json()
+        self.assertEqual('accepted_development', body['status'])
+        self.assertIn('The listed date may be important; verify promptly.', body['response']['notices'])
+        self.assertIn("for (const notice of data.response.notices)", Path('app/web/app.js').read_text(encoding='utf-8'))
+
     def test_unsupported_and_insufficient_information_never_call_model(self):
         payload = payload_for(self.repo, VA)
         for mutate, expected in ((lambda p: p['matter'].update(state='Other'), 'out_of_workflow'),

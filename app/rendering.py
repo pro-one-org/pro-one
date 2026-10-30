@@ -26,6 +26,7 @@ class ResponseRenderingService:
                           "citation_numbers": [numbers[c] for c in s["citation_ids"]],
                           "user_provided": s["kind"] == "user_fact"} for s in draft["sections"] if s["kind"] != "control"],
             "warnings": sorted({p for s in draft["sections"] if s["kind"] == "control" for p in s["text"].split("\n\n")}),
+            "notices": sorted({text for risk in package["risks"]["recognized"] for text in risk["allowed_support"]["allowed_language"]}),
             "sources": [{"number": numbers[cid], "title": canonical[cid]["source_title"],
                          "issuing_authority": sources[canonical[cid]["source_id"]]["authority"]["issuing_body"],
                          "citation": canonical[cid]["preferred_citation"], "locator": canonical[cid]["locator"],
