@@ -25,7 +25,7 @@ class EvaluationTests(unittest.TestCase):
 
     def test_all_twelve_existing_virginia_fixtures_execute(self):
         self.assertTrue(self.report["passed"], self.report)
-        self.assertEqual(12, self.report["executed"])
+        self.assertEqual(24, self.report["executed"])
         self.assertEqual(set(FIXTURE_EXECUTIONS), {r["fixture_id"] for r in self.report["results"]})
         self.assertEqual(4, len(self.report["unmapped_fixture_ids"]))
         self.assertEqual([], self.report["required_unmapped_fixture_ids"])
@@ -122,7 +122,7 @@ class EvaluationTests(unittest.TestCase):
             with patch("sys.argv", args), redirect_stdout(out):
                 self.assertEqual(expected, main())
             if "--json" in args:
-                self.assertEqual(12, json.loads(out.getvalue())["executed"])
+                self.assertEqual(24, json.loads(out.getvalue())["executed"])
             elif expected == 0:
                 self.assertIn("Manual review remains pending", out.getvalue())
 

@@ -6,9 +6,9 @@ The generation layer consumes the deterministic assembly contract and returns an
 
 `app/models/base.py` defines generic `ModelProvider`, `ModelRequest`, and `ModelResponse` contracts. Requests separate versioned instructions, a structured grounded package, response schema, limits, and safe identifier metadata. Responses contain generic provider/model identity, success/output/error state, usage, and adapter-private metadata. No vendor SDK or request semantics enter domain services. No dependencies were added.
 
-`ProviderRegistry` resolves an explicitly selected provider and configured model. It has no fallback, model routing, or source/content-based selection. The local development application registers only `testing` / `deterministic-test-model`. That offline adapter constructs an extractive structured draft; it is not a live LLM and demonstrates no paraphrasing quality. Named bad-output scenarios are constructor-injected for tests/evaluation, never HTTP options. No credentials or network are needed by the app, tests, CLI, or CI.
+`ProviderRegistry` resolves an explicitly selected, server-configured provider and model with no fallback or legal-content routing. Development includes the labeled offline extractive test adapter; isolated OpenAI Responses and Anthropic Messages adapters are registered only with server-held credentials and configured model identifiers. Production excludes testing. Browser clients cannot provide keys or arbitrary model configuration. No SDK or dependency was added.
 
-There is no real provider adapter or production provider configuration in this milestone. A future adapter must be explicitly registered with permitted models, obtain secrets through server environment/configuration, implement transport/output limits, and keep vendor types inside its module. Clients cannot supply API keys. Raw provider metadata, exception messages, error details, and unrecognized usage fields are never returned or logged. The result includes only bounded integer token counters from an allowlist. No persistent prompt history, database, sessions, model tools, agents, or automatic retries exist.
+The real adapters use fixed official HTTPS endpoints, bounded transport/output, no redirects, a timeout, and one call without retries. Provider-specific wire-schema simplification is isolated in the adapter support module; canonical local validation remains mandatory. Raw provider metadata, exception messages, and unrecognized usage fields are never returned or logged. No persistent history, database, model tools, or agents exist. See the root README for environment configuration and current official API references. Live output quality must be verified separately with configured credentials.
 
 ## Generation input and scope
 
@@ -16,7 +16,7 @@ There is no real provider adapter or production provider configuration in this m
 
 `app/generation_contract.py` constructs a whitelist projection, not a repository dump. It supplies sanitized user facts with `user_provided` provenance, missing fields, allowed claims, only those claims' passage excerpts/citations, titles/locators, section controls, disclosures, support gaps, limitations, prohibited conclusions/actions, routing, privacy, workflow scope, relevant rule controls, and response-pattern constraints. Unrelated records, unselected evidence, reviewer identities, fixture links/expectations, and scoring assertions are omitted. Raw HTTP answers are never re-read. Facts hidden by intake remain hidden; privacy filtering still operates on category keys and cannot detect sensitive information placed inside an otherwise admitted free-text field.
 
-`generation.scope` is an explicit caller assertion: `unconfirmed` (default), `within_workflow`, or `outside_workflow`. It is never a legal finding or a model decision. Unconfirmed scope or any missing required intake field narrows output to supplied control notices; it does not present workflow procedures as applicable to the case. Explicit outside scope makes no provider call. A within-workflow assertion with complete intake enables supported topic references but cannot override review/readiness. Claims whose linked rule disallows user-facing use are excluded from generation. Rule quotation restrictions remain explicit and exact excerpt quotation/double-quote use is rejected when disallowed. This is a conservative boundary, not automatic jurisdiction or document classification.
+`ResponseAssemblyRequest.matter` supplies strict structured country/state/audience/matter/court/document/role details. `MatterRoutingService` matches explicit workflow selectors and required fields, then checks sanitized intake bindings for contradictions. Only `confirmed_for_workflow` with complete required intake permits substantive topics. This confirms specification fit, never legal jurisdiction, venue, merits, service validity, standing, or representation requirements. Missing matter/scope inputs narrow legacy generation to exact controls; the product endpoint stops for clarification. `generation.scope` is compatibility metadata and cannot enable topics. Explicit outside scope can still veto generation. Claims whose linked rule disallows user-facing use are excluded, and quotation restrictions remain enforced.
 
 The stable instruction version is `grounded_legal_information_v1`. Instructions forbid outside knowledge, invented facts/citations, gap resolution, strategy/appearance/removal decisions, unsupported deadline calculations, currentness certification, and legal-sufficiency claims. They require supplied disclosures/uncertainty and plain language. Facts and excerpts are separate untrusted data fields, not instruction text. No chain-of-thought is requested, retained, or exposed. Source/user instruction-like text cannot change policy/schema or expand retrieval; injection resistance of future real models will require separate evaluation.
 
@@ -40,6 +40,7 @@ Supplementary normalized prose guards return specific codes for the Virginia red
 
 ```json
 {
+  "matter": {"country": "US", "state": "Virginia", "user_type": "self_represented_individual", "matter_type": "small_claims_debt", "court": "General District Court", "form_number": "DC-402", "role": "defendant"},
   "answers": {
     "state": "Virginia",
     "court_name_or_locality": "Augusta County",
@@ -49,7 +50,7 @@ Supplementary normalized prose guards return specific codes for the Virginia red
   },
   "risk_ids": [],
   "retrieval": {"query": "return date", "limit": 5},
-  "generation": {"provider": "testing", "model": "deterministic-test-model", "scope": "within_workflow"}
+  "generation": {"provider": "testing", "model": "deterministic-test-model"}
 }
 ```
 
@@ -59,11 +60,11 @@ Unknown workflows return 404. Malformed input returns 422 with input values remo
 
 ## Evaluation harness
 
-`app/evaluation.py` supplies explicit mappings for the twelve existing Virginia fixture IDs and exact record versions. It maps stated facts to intake fields and reads explicit risk/source IDs; it never interprets narrative expectations into rules or fills unknown court, locality, dates, or case facts. No fixture schema or data change was needed. Version/workflow mismatches fail as `mapping_stale`. The four older example fixtures are explicitly unmapped; asking to execute one fails rather than claiming success. Missing mappings for required Virginia fixtures fail the suite.
+`app/evaluation.py` maps fixture ID/version to its own workflow, structured inputs/matter, source filters, expected checks, and optional adversarial mode. All 24 required real-workflow fixtures execute (12 DC-402, six SCC, six Maryland). Four older examples remain explicitly unmapped. Missing/stale required mappings and workflow mismatches fail rather than silently reinterpreting narrative text. No fixture expectation or scoring assertion reaches a provider.
 
-Each mapped fixture assembles the real package, invokes the offline provider, validates the draft, and scores named automated checks: evidence/workflow boundaries, citation/claim validation, scope narrowing, missing-fact/provenance preservation, user control, deadline uncertainty, disclosures, routing, privacy, and safe failure. Five mappings add explicit bad-provider cases for response choice, invented defense, unsupported deadline, sufficiency, and citation failure. Unit tests separately exercise complete-intake substantive generation and all ten critical Virginia attacks. A rejected attack is an expected passing evaluation only when the configured error is present and no draft is returned.
+Each mapped fixture assembles its workflow package, invokes the offline provider, validates output, and scores declared evidence/citation boundaries, scope, missing facts/provenance, user control, deadline uncertainty, disclosures, routing, privacy, and safe failure. Nine mappings add configured bad-provider cases. Unit tests exercise complete-intake generation across all three workflows, the ten critical Virginia attacks, provider adapters with mocked transport, rendering rejection, and cross-workflow isolation.
 
-The original fixtures lack complete court/date inputs. Their ordinary runs therefore produce control notices or an out-of-scope stop, not invented case facts to enable procedural prose. Narrative expectations such as useful form explanation, exact clarification quality, and legal correctness remain in `manual_checks_pending`. `passed` means only the listed automated checks passed; `manual_review_required` and `release_passed: false` remain explicit. The fixed offline evaluation date is 2026-10-30 and is separate from the HTTP release clock. Results are deterministic for the same repository, mapping, and test scenario.
+The original DC-402 fixtures lack complete court/date inputs and preserve missing information rather than inventing it; new SCC/Maryland ordinary fixtures explicitly supply their structured navigation context. Narrative usefulness, legal accuracy, and clarification criteria remain in `manual_checks_pending`. Automated `passed` never means legal approval; `manual_review_required` and `release_passed: false` remain explicit. Offline evaluation uses the fixed date 2026-10-30; HTTP release evaluation retains its server-owned clock.
 
 ```text
 python -B scripts/run_evaluations.py
@@ -71,4 +72,4 @@ python -B scripts/run_evaluations.py --json
 python -B scripts/run_evaluations.py --fixture va-small-claims-ordinary-user-fixture
 ```
 
-The CLI prints concise results and exits nonzero when required automated checks fail or a requested fixture is not executable. CI runs it without secrets or live models. Passing automated checks never approve fixtures, certify sources/currentness, resolve appearance/written-answer gaps, or enable public release. Future real-model evaluation is separate work.
+The CLI supports all/workflow/fixture selection and JSON reports, with nonzero exit on required failure. CI needs no credentials or live model. `scripts/benchmark_models.py` reuses one assembled fixture package across configured adapters, reports absent providers, and exposes latency, usage, exact draft hashes, and ten non-authoritative manual semantic dimensions. Optional manual scores must match workflow/fixture/provider/model/hash and cannot override deterministic rejection or grant release approval.

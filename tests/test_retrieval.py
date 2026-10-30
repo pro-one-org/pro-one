@@ -51,7 +51,7 @@ class CorpusIntegrityTests(unittest.TestCase):
             return RecordRepository(data_dir=data)
 
     def test_corpus_loads_and_resolves_through_existing_repository(self) -> None:
-        self.assertEqual(9, len(self.repository.records["source_passages"]))
+        self.assertEqual(13, len(self.repository.records["source_passages"]))
         self.assertEqual(9, self.repository.resolve_workflow(WORKFLOW)["counts"]["source_passages"])
 
     def test_missing_corpus_fails_startup(self) -> None:
@@ -119,7 +119,7 @@ class CorpusIntegrityTests(unittest.TestCase):
 
     def test_all_virginia_records_and_reviews_remain_proposed(self) -> None:
         records = [r for group in self.repository.records.values() for r in group.values() if r["id"].startswith("va-")]
-        self.assertEqual(35, len(records))
+        self.assertEqual(50, len(records))
         for record in records:
             self.assertEqual("proposed", record["status"])
             self.assertEqual("proposed", record["review"]["status"])

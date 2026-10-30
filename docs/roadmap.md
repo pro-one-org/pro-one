@@ -1,122 +1,43 @@
-# Roadmap
+# Product roadmap
 
-This roadmap distinguishes completed repository/specification work from current workflow-definition work and future application implementation. A checked foundation item does not mean a production legal AI capability exists.
+Pro-One is a free, model-agnostic legal-information platform for individuals and small businesses. Three real development workflows exist across Virginia and Maryland. No workflow is approved for unrestricted public use.
 
-## Phase 0: Repository foundation — completed
+## Completed development foundation
 
-Goal: establish the project direction and contribution standards.
+- [x] Interoperable schemas, review provenance, supported-state gates, and repository validation
+- [x] Stateless FastAPI runtime, sanitized intake, risk routing, deterministic context assembly
+- [x] Curated local official-source passages, scoped retrieval, citation provenance
+- [x] Independent workflow readiness and selected-evidence grounding/currentness gates
+- [x] Deterministic claim plans, support gaps, user-control and output constraints
+- [x] Provider-neutral structured generation, strict validation, offline adversarial testing
+- [x] Generic real-workflow catalog, exact structured matter routing and scope resolution
+- [x] Real proposed SCC business-record navigation and Maryland civil-summons orientation workflows
+- [x] Isolated OpenAI and Anthropic adapters with server configuration and safe failures
+- [x] Web landing, individual/business paths, focused assistant, citations, limits, and coverage
+- [x] Revalidation before rendering, request bounds, safe errors, no saved user history
+- [x] Multi-workflow fixture execution and cross-provider/manual semantic measurement tooling
+- [x] Development/production distinction, non-root container, portable deployment instructions, container CI smoke checks
 
-- [x] Define project architecture
-- [x] Define proposed MVP scope
-- [x] Define the initial roadmap
-- [x] Add contribution guidelines
-- [x] Add issue templates
-- [x] Add development setup documentation
-- [x] Document mission, governance, review, safety, privacy, ethics, source, workflow-selection, and evaluation principles
+## Public beta release work
 
-## Phase 0.5: Schema and specification foundation — completed
+- [ ] Review legal-information boundaries, source rights, and real workflow specifications
+- [ ] Resolve DC-402 appearance wording, written-answer support gaps, and old instruction currentness
+- [ ] Review SCC entity-specific limits and Maryland notice exceptions without inventing duties
+- [ ] Complete explicit source/passage currentness certification and required approvals
+- [ ] Review and approve required evaluation fixtures; complete narrative/manual criteria
+- [ ] Measure real-provider groundedness, factual/legal additions, citation fidelity, user control, clarity, and usefulness
+- [ ] Complete provider privacy/retention review and production configuration verification
+- [ ] Review semantic failure handling, prompt/source injection, accessibility, and user-facing safety language
+- [ ] Add host-level abuse/rate controls, TLS, operational monitoring, incident response, and dependency maintenance
+- [ ] Approve a specific public beta scope before enabling public generation
 
-Goal: create a coherent, enforceable record model before application work begins.
+Passing structural checks is not semantic legal verification. Current production mode fails closed for every proposed workflow. No roadmap checkbox promotes records or claims attorney approval.
 
-- [x] Define nine interoperable JSON Schema domains
-- [x] Add shared common definitions and canonical vocabulary
-- [x] Add fictional sample records for every domain
-- [x] Add record versioning, review provenance, source freshness, and source provenance fields
-- [x] Add supported-state conditional constraints
-- [x] Add cross-record reference and state-invariant validation
-- [x] Run validation in GitHub Actions on pull requests and pushes to `main`
+## Coverage and product improvements
 
-These milestones describe repository infrastructure only. No sample record is currently approved or supported, and no production application exists.
+- [ ] Expand official-source workflow breadth only as review capacity allows
+- [ ] Improve plain-language response usefulness using measured real-provider evidence
+- [ ] Continue accessibility and mobile/device polish
+- [ ] Consider optional accounts/history only with explicit privacy requirements
 
-## Local runtime milestones — completed for development inspection
-
-- [x] Load records with runtime Draft 2020-12 schema validation
-- [x] Resolve workflow-linked repository packages deterministically
-- [x] Evaluate public-use readiness through the workflow readiness gate
-- [x] Evaluate structured required/optional inputs and privacy category keys
-- [x] Validate explicit workflow-linked risk IDs and preserve configured routing
-- [x] Assemble controlled development contexts with unchanged user-provided facts and provenance
-- [x] Separate completeness, safety routing, context availability, and public eligibility
-
-The stateless local runtime does not persist user data or interpret natural-language answers into legal facts. Complete intake cannot override readiness. All Virginia records/reviews remain proposed. Retrieval, response assembly, and an offline development generation/validation pipeline now exist; live LLM integration, reviewed-source context assembly, semantic verification, and public release remain future work.
-
-## Phase 1: First workflow specification — current
-
-Goal: fully specify the proposed first workflow before implementation.
-
-The proposed workflow is narrowly scoped to a defendant who received Virginia General District Court Small Claims Division Form DC-402, Warrant in Debt. It provides information and organization, not a generic civil-answer workflow.
-
-- [x] Select Virginia General District Court Small Claims Division and the DC-402 Warrant in Debt
-- [x] Map initial official source propositions and record unresolved questions
-- [x] Define the user journey for form/court identification, user-directed question organization, and date-risk routing
-- [x] Preserve user control; do not select pleadings, defenses, removal, settlement, or appearance decisions
-- [x] Identify minimum required and prohibited inputs
-- [x] Identify scope-confirmation questions and timing signals
-- [ ] Complete jurisdiction-specific review of the legal-information/legal-advice boundary and other applicable requirements
-- [x] Define proposed stop, warning, safe-continuation, and human-help behavior
-- [x] Create twelve proposed evaluation fixtures and acceptance criteria
-- [ ] Complete jurisdiction-specific legal review, including return-date/appearance wording and written-response requirements
-- [ ] Review evaluation fixtures and approve public-support acceptance criteria
-
-## Phase 2: Corpus selection and ingestion — partial development foundation
-
-- [x] Identify initial official sources for the proposed Virginia workflow
-- [x] Curate nine minimal, schema-backed Virginia excerpts from four official sources with locators, topic tags, verification dates, hashes, and limitations
-- [x] Preserve source citations, rights uncertainty, and passage provenance in local retrieval
-- [ ] Review and approve authoritative sources for supported use
-- [ ] Select court rules, forms, instructions, statutes, regulations, cases, and explanatory sources by proposition
-- [ ] Record source versions, effective periods, verification dates, and reuse constraints
-- [ ] Create a repeatable ingestion and update process
-- [ ] Preserve citations and content provenance
-
-## Phase 3: Retrieval — development baseline implemented
-
-- [x] Implement deterministic local relationship selection and bounded lexical ranking
-- [x] Filter by workflow package, jurisdiction, official source, maturity, supersession, and explicit relationship IDs before ranking
-- [ ] Add jurisdiction, authority, effective-date, and review-state filtering
-- [ ] Compare retrieval approaches against reviewed fixtures
-- [ ] Reject stale, superseded, deprecated, rejected, or mismatched authority for supported use
-
-The retrieval endpoint is inspection-only and never grants execution. Proposed or freshness-uncertain passages may be inspected with visible limits. The grounding gate below implements a fail-closed selected-evidence currentness policy; source certification, reviewed evaluation, generation, and public release remain unfinished.
-
-## Phase 4: Grounded workflow and response generation — development foundation
-
-- [x] Add a selected-evidence grounding gate separate from workflow readiness
-- [x] Require version-bound source/passage currentness certification for public grounding, without certifying current records
-- [x] Assemble deterministic development response plans with passage-backed topic references, citations, support gaps, and repository constraints
-- [x] Preserve explicit user facts, risk routing, privacy controls, and prohibited conclusions in the inspection handoff
-- [x] Add a provider-neutral request/response interface and explicit provider/model registry without fallback
-- [x] Add a strict structured draft contract and versioned instruction builder with separate evidence/fact boundaries
-- [x] Add a development generation pipeline using an offline deterministic test adapter
-- [x] Validate every draft's structure, IDs, support relationships, facts, disclosures, and structured prohibitions, with supplementary prose guards
-- [ ] Build context assembly from approved records and retrieved passages
-- [ ] Generate source-backed explanations and workflow steps
-- [ ] Populate draft structure only from explicit user decisions and confirmed facts
-- [ ] Add citations, limitations, refusal of unsafe parts, and safe continuation
-- [ ] Preserve fact and source provenance through the response pipeline
-
-These completed items provide an inspection contract and offline development drafts only. Real-provider configuration, live-model quality/semantic evaluation, source/legal/fixture approval, production monitoring, and public availability are not complete. Passing deterministic validation does not certify arbitrary legal prose.
-
-## Phase 5: Evaluation and release gates — future implementation
-
-- [x] Execute explicit version-bound mappings of twelve existing proposed Virginia fixtures using the offline provider
-- [x] Report named automated checks, expected rejection cases, unmapped fixtures, and pending manual criteria through a CLI and CI
-- [ ] Execute the reviewed evaluation-fixture suite
-- [ ] Measure retrieval, citation, jurisdiction, privacy, boundary, deadline, and refusal behavior
-- [ ] Require human review for defined high-consequence cases
-- [ ] Document release criteria for the first publicly supported workflow
-
-## Phase 6: Minimal interface — future implementation
-
-- [ ] Build a narrow interface for the selected workflow
-- [ ] Display jurisdiction, sources, citations, limitations, and record maturity
-- [ ] Add privacy notices and user-confirmation controls
-- [ ] Make clear that draft generation does not establish legal sufficiency
-
-## Later phases
-
-Only after the first workflow meets its release gates should the project consider litigation tracking, additional jurisdictions, small-business dispute workflows, or broader document support.
-
-## Guiding rule
-
-Pro-One should not expand coverage faster than it can preserve grounding, citations, jurisdiction accuracy, privacy, user control, fact integrity, safe continuation, and explicit evaluation.
+Accounts, payments, model agents, model tools, embeddings, and a vector database are not prerequisites for the stateless MVP.

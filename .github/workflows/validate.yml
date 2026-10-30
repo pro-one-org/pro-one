@@ -12,7 +12,7 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - name: Check out repository
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
@@ -35,3 +35,28 @@ jobs:
 
       - name: Evaluate mapped fixtures with offline test provider
         run: python -B scripts/run_evaluations.py
+
+      - name: Build production container
+        run: docker build -t pro-one:mvp .
+
+      - name: Smoke-test production container
+        run: |
+          docker run -d --rm -p 127.0.0.1:8000:8000 --name pro-one-smoke pro-one:mvp
+          python - <<'PY'
+          import json, time, urllib.request
+          for attempt in range(30):
+              try:
+                  with urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=2) as response:
+                      assert json.load(response)['status'] == 'ok'
+                  break
+              except Exception:
+                  if attempt == 29:
+                      raise
+                  time.sleep(1)
+          with urllib.request.urlopen('http://127.0.0.1:8000/workflows') as response:
+              assert len(json.load(response)['workflows']) == 3
+          with urllib.request.urlopen('http://127.0.0.1:8000/model/status') as response:
+              assert json.load(response)['mode'] == 'production'
+          print('Production container health, catalog, and mode passed.')
+          PY
+          docker stop pro-one-smoke

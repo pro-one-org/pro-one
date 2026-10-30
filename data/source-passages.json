@@ -427,5 +427,198 @@
     "process_step_ids": [
       "va-small-claims-deadline-safety-routing"
     ]
+  },
+  {
+    "id": "va-scc-business-record-navigation-passage-1",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "Clerk’s Information System: official help",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-scc-cis-help",
+    "workflow_ids": [
+      "va-scc-business-record-navigation"
+    ],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": "Virginia State Corporation Commission"
+    },
+    "locator": "CIS FAQ: What is CIS?",
+    "propositions": [
+      "va-scc-business-record-navigation-topic-1"
+    ],
+    "text": "You can use Clerk’s Information System (CIS) to search for business information, make payments, and submit filings.",
+    "verification": {
+      "retrieved_on": "2026-10-30",
+      "verified_on": "2026-10-30",
+      "source_version": "Official HTML observed 2026-10-30; uncertified",
+      "excerpt_hash": "sha256:8594e4ad77023b31dcc30d10642e9375a564916b43afd99f78293957f00868a6",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Navigation only: no live entity lookup or conclusion about active status, good standing, reinstatement, registration fees, taxes, or filing duties.",
+      "Entity-specific status and requirements must be checked directly with SCC; the curated excerpts do not establish compliance.",
+      "Research excerpt is proposed, reuse permission unresolved, and currentness uncertified."
+    ],
+    "legal_rule_ids": [],
+    "process_step_ids": [
+      "va-scc-business-record-navigation-resources-step"
+    ]
+  },
+  {
+    "id": "va-scc-business-record-navigation-passage-2",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "About the Clerk’s Office",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-scc-clerk-records",
+    "workflow_ids": [
+      "va-scc-business-record-navigation"
+    ],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": "Virginia State Corporation Commission"
+    },
+    "locator": "About the Clerk’s Office: public records",
+    "propositions": [
+      "va-scc-business-record-navigation-topic-2"
+    ],
+    "text": "Many documents may be viewed and downloaded from the Clerk's Information System (CIS) and Docket Search.",
+    "verification": {
+      "retrieved_on": "2026-10-30",
+      "verified_on": "2026-10-30",
+      "source_version": "Official HTML observed 2026-10-30; uncertified",
+      "excerpt_hash": "sha256:fd92bf42ead820d73c27dbc813279be869c382cf019ff536246942c7e525ade7",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Navigation only: no live entity lookup or conclusion about active status, good standing, reinstatement, registration fees, taxes, or filing duties.",
+      "Entity-specific status and requirements must be checked directly with SCC; the curated excerpts do not establish compliance.",
+      "Research excerpt is proposed, reuse permission unresolved, and currentness uncertified."
+    ],
+    "legal_rule_ids": [],
+    "process_step_ids": [
+      "va-scc-business-record-navigation-resources-step"
+    ]
+  },
+  {
+    "id": "md-district-civil-defendant-orientation-passage-1",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "What to Do if You Are Sued in District Court",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "md-district-court-defendant-help",
+    "workflow_ids": [
+      "md-district-civil-defendant-orientation"
+    ],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Maryland",
+      "locality": null,
+      "court": "Maryland District Court",
+      "agency": null
+    },
+    "locator": "File a Notice of Intention to Defend: form location",
+    "propositions": [
+      "md-district-civil-defendant-orientation-topic-1"
+    ],
+    "text": "Look for the Intention to Defend section on the bottom half of the summons:",
+    "verification": {
+      "retrieved_on": "2026-10-30",
+      "verified_on": "2026-10-30",
+      "source_version": "Official HTML observed 2026-10-30; uncertified",
+      "excerpt_hash": "sha256:89453ea81d0dcd7fafc2bc671ab08843438997f4f1cec7756f63f5d0a0b23bdf",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Ordinary civil money-claim document orientation only; not eviction, foreclosure, criminal, family, emergency, circuit court, or post-judgment advice.",
+      "Notice timing has exceptions and case-specific facts; no filing deadline, service validity, defense, appearance, venue, or jurisdiction determination is provided.",
+      "Research excerpt is proposed, reuse permission unresolved, and currentness uncertified."
+    ],
+    "legal_rule_ids": [],
+    "process_step_ids": [
+      "md-district-civil-defendant-orientation-resources-step"
+    ]
+  },
+  {
+    "id": "md-district-civil-defendant-orientation-passage-2",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "Court date may change",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "md-district-court-defendant-help",
+    "workflow_ids": [
+      "md-district-civil-defendant-orientation"
+    ],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Maryland",
+      "locality": null,
+      "court": "Maryland District Court",
+      "agency": null
+    },
+    "locator": "Notice of Intention to Defend: after filing, excerpt fragment",
+    "propositions": [
+      "md-district-civil-defendant-orientation-topic-2"
+    ],
+    "text": "court date on the summons may change.",
+    "verification": {
+      "retrieved_on": "2026-10-30",
+      "verified_on": "2026-10-30",
+      "source_version": "Official HTML observed 2026-10-30; uncertified",
+      "excerpt_hash": "sha256:c537e0048bce30bea11cdb2bb1398d1c97503da2da96da29729d3a9d2bf72f9e",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Ordinary civil money-claim document orientation only; not eviction, foreclosure, criminal, family, emergency, circuit court, or post-judgment advice.",
+      "Notice timing has exceptions and case-specific facts; no filing deadline, service validity, defense, appearance, venue, or jurisdiction determination is provided.",
+      "Research excerpt is proposed, reuse permission unresolved, and currentness uncertified.",
+      "This fragment applies after filing a notice; it does not say whether this user should file or appear."
+    ],
+    "legal_rule_ids": [],
+    "process_step_ids": [
+      "md-district-civil-defendant-orientation-resources-step"
+    ]
   }
 ]

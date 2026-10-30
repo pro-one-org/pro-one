@@ -15,13 +15,16 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--json", action="store_true", help="Print the full deterministic report")
     parser.add_argument("--fixture", help="Run one existing explicitly mapped fixture")
+    parser.add_argument("--workflow", help="Run mapped fixtures for one real workflow")
     args = parser.parse_args()
     service = EvaluationService(RecordRepository())
     if args.fixture:
         result = service.run_fixture(args.fixture)
+        if args.workflow and result.get("workflow_id") != args.workflow:
+            result.update(passed=False, status="workflow_mismatch")
         report = {"passed": result["passed"], "executed": int(result["status"] == "executed"), "results": [result], "unmapped_fixture_ids": []}
     else:
-        report = service.run_all()
+        report = service.run_all(args.workflow)
     if args.json:
         print(json.dumps(report, indent=2, sort_keys=True))
     else:

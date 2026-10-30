@@ -1,7 +1,9 @@
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.exception_handlers import request_validation_exception_handler
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
+from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
+from pathlib import Path
 
 from app.execution import ExecutionContextService, ExecutionResult
 from app.intake import IntakeRequest, IntakeResolutionError
@@ -20,7 +22,10 @@ from app.response_assembly import (
     ResponseAssemblyService,
 )
 from app.generation import GenerationRequest, GenerationResult, GenerationService
-from app.models.testing import testing_registry
+from app.config import Settings
+from app.routing import MatterRequest, MatterRoutingService, WorkflowCatalogService
+from app.product import ProductResponseRequest, ProductService
+from app.security import SecurityMiddleware
 
 
 app = FastAPI(
@@ -40,19 +45,31 @@ readiness_service = WorkflowReadinessService(repository)
 execution_service = ExecutionContextService(repository)
 retrieval_service = PassageRetrievalService(repository)
 response_assembly_service = ResponseAssemblyService(repository)
-generation_service = GenerationService(testing_registry())
+settings = Settings.from_environment()
+generation_service = GenerationService(settings.registry())
+app.add_middleware(SecurityMiddleware)
+web_root = Path(__file__).resolve().parent / "web"
+app.mount("/static", StaticFiles(directory=web_root), name="static")
+
+
+@app.middleware("http")
+async def production_inspection_boundary(request: Request, call_next):
+    path = request.url.path
+    if settings.mode == "production" and (
+        path in {"/docs", "/redoc"} or path.endswith(("/resolved", "/response/assemble", "/intake/evaluate", "/retrieval"))
+        or (path.startswith("/workflows/") and path.count("/") == 2)
+    ):
+        return JSONResponse({"detail": {"code": "development_inspection_disabled"}}, status_code=403)
+    return await call_next(request)
 
 
 @app.exception_handler(RequestValidationError)
 async def safe_generation_request_error(request: Request, exc: RequestValidationError):
-    if request.url.path.endswith("/response/generate"):
-        # Pydantic's default errors include the invalid raw input. Generation
-        # errors must not echo secrets or withheld legal facts supplied in it.
-        return JSONResponse(status_code=422, content={"detail": {
-            "code": "malformed_generation_request",
-            "errors": [{"type": e["type"], "loc": list(e["loc"])} for e in exc.errors()],
-        }})
-    return await request_validation_exception_handler(request, exc)
+    # Default diagnostics include raw input; omit values on every API path.
+    return JSONResponse(status_code=422, content={"detail": {
+        "code": "malformed_generation_request" if request.url.path.endswith("/response/generate") else "malformed_request",
+        "errors": [{"type": e["type"], "loc": list(e["loc"])} for e in exc.errors()],
+    }})
 
 
 @app.get("/health")
@@ -175,4 +192,46 @@ def evaluate_intake(workflow_id: str, request: IntakeRequest) -> ExecutionResult
 def generate_response(workflow_id: str, request: GenerationRequest) -> GenerationResult:
     # Reuse exactly the assembly endpoint's scope and integrity error behavior.
     package = assemble_response(workflow_id, request)
+    if settings.mode == "production" and (not package["public_execution"]["allowed"] or request.generation.provider == "testing"):
+        raise HTTPException(status_code=403, detail={"code": "public_workflow_unavailable"})
     return generation_service.generate(package, request.generation)
+
+
+@app.get("/workflows")
+def workflow_catalog(user_type: str | None = None):
+    return {"workflows": WorkflowCatalogService(repository).catalog(user_type)}
+
+
+@app.post("/routing/evaluate")
+def route_matter(request: MatterRequest):
+    return MatterRoutingService(repository).evaluate(request)
+
+
+@app.post("/workflows/{workflow_id}/scope")
+def resolve_scope(workflow_id: str, request: MatterRequest):
+    if repository.get_workflow(workflow_id) is None:
+        raise HTTPException(status_code=404, detail={"code": "workflow_not_found"})
+    return MatterRoutingService(repository).scope(workflow_id, request)
+
+
+@app.get("/model/status")
+def model_status():
+    return settings.status(generation_service.registry)
+
+
+@app.post("/workflows/{workflow_id}/response")
+def product_response(workflow_id: str, request: ProductResponseRequest):
+    try:
+        return ProductService(repository, settings, generation_service).respond(workflow_id, request)
+    except (RepositoryLoadError, AssemblyIntegrityError):
+        raise HTTPException(status_code=409, detail={"code": "source_integrity_unavailable", "message": "Source evidence is temporarily unavailable. No answer was generated."}) from None
+    except IntakeResolutionError:
+        raise HTTPException(status_code=409, detail={"code": "intake_unavailable", "message": "This workflow’s intake is unavailable. No answer was generated."}) from None
+    except RetrievalFilterError:
+        raise HTTPException(status_code=422, detail={"code": "source_filter_unavailable", "message": "The requested evidence is outside this workflow."}) from None
+
+
+@app.get("/", response_class=HTMLResponse)
+@app.get("/coverage", response_class=HTMLResponse)
+def product_page():
+    return (web_root / "index.html").read_text(encoding="utf-8")
