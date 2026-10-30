@@ -1,0 +1,431 @@
+[
+  {
+    "id": "va-small-claims-passage-division",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "General District Court Small Claims Division",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-small-claims-procedure-code",
+    "workflow_ids": [
+      "va-small-claims-warrant-in-debt-information"
+    ],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": "Virginia General District Court Small Claims Division",
+      "agency": null
+    },
+    "locator": "Va. Code section 16.1-122.1, first sentence",
+    "propositions": [
+      "va-small-claims-division-context"
+    ],
+    "text": "a small claims division to be designated a small claims court.",
+    "verification": {
+      "retrieved_on": "2026-10-30",
+      "verified_on": "2026-10-30",
+      "source_version": "Official Code publication checked 2026-10-30; no effective-date certification",
+      "excerpt_hash": "sha256:4c0817c469c6d8e2ba3acdb414e12626e8e44af68bdb36e49c991dac363b541c",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "This fragment identifies the division; it does not establish case-specific jurisdiction or eligibility.",
+      "Research verification is not legal review, source approval, or permission for public execution. Reuse status remains unknown; only a minimal excerpt is retained."
+    ],
+    "legal_rule_ids": [],
+    "process_step_ids": [
+      "va-small-claims-identify-warrant"
+    ]
+  },
+  {
+    "id": "va-small-claims-passage-dc402-identity",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "DC-402 Warrant in Debt document identity",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-dc402-warrant-in-debt-small-claims-form",
+    "workflow_ids": [
+      "va-small-claims-warrant-in-debt-information"
+    ],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": "Virginia General District Court Small Claims Division",
+      "agency": null
+    },
+    "locator": "PDF page 1, heading; FORM DC-402 FRONT 10/07 footer identifies form number",
+    "propositions": [
+      "va-small-claims-dc402-document-identity"
+    ],
+    "text": "WARRANT IN DEBT — SMALL CLAIMS DIVISION",
+    "verification": {
+      "retrieved_on": "2026-10-30",
+      "verified_on": "2026-10-30",
+      "source_version": "DC-402 front marked 10/07; reverse marked 07/01",
+      "excerpt_hash": "sha256:4a3eb76f2986cf4a80d3923d3e007b9f2b30eea71ad03622736e7d57684ef3a9",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Heading excerpt only; form identity must be reported by the user, not inferred from an arbitrary document.",
+      "Research verification is not legal review, source approval, or permission for public execution. Reuse status remains unknown; only a minimal excerpt is retained."
+    ],
+    "legal_rule_ids": [],
+    "process_step_ids": [
+      "va-small-claims-identify-warrant"
+    ]
+  },
+  {
+    "id": "va-small-claims-passage-first-return-date",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "First return date and statutory trial timing",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-small-claims-procedure-code",
+    "workflow_ids": [
+      "va-small-claims-warrant-in-debt-information"
+    ],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": "Virginia General District Court Small Claims Division",
+      "agency": null
+    },
+    "locator": "Va. Code section 16.1-122.3(E), first sentence; read remainder of subsection for changes and continuances",
+    "propositions": [
+      "va-small-claims-first-return-date",
+      "va-small-claims-trial-timing"
+    ],
+    "text": "The trial shall be conducted on the first return date.",
+    "verification": {
+      "retrieved_on": "2026-10-30",
+      "verified_on": "2026-10-30",
+      "source_version": "Official Code publication checked 2026-10-30; no effective-date certification",
+      "excerpt_hash": "sha256:ad809cc7c88539a5b2d2ae59765f42ece74a026e1ce2825952e29b23581bcf4a",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "The remainder of subsection E permits changed trial timing by party consent or court order and continuances for good cause. Do not calculate a deadline or decide whether a continuance applies.",
+      "Research verification is not legal review, source approval, or permission for public execution. Reuse status remains unknown; only a minimal excerpt is retained."
+    ],
+    "legal_rule_ids": [],
+    "process_step_ids": [
+      "va-small-claims-identify-warrant"
+    ]
+  },
+  {
+    "id": "va-small-claims-passage-pleading-categories",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "Permitted small-claims pleading categories",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-small-claims-procedure-code",
+    "workflow_ids": [
+      "va-small-claims-warrant-in-debt-information"
+    ],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": "Virginia General District Court Small Claims Division",
+      "agency": null
+    },
+    "locator": "Va. Code section 16.1-122.3(F), excerpt from exclusive pleading list",
+    "propositions": [
+      "va-small-claims-pleading-categories"
+    ],
+    "text": "warrant and answer, grounds of defense and counterclaims",
+    "verification": {
+      "retrieved_on": "2026-10-30",
+      "verified_on": "2026-10-30",
+      "source_version": "Official Code publication checked 2026-10-30; no effective-date certification",
+      "excerpt_hash": "sha256:9333c63242613943786df68f7880a8f53268f267d75368050b2ec0e006f65c5e",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "This curated proposed source set does not establish a universal written-answer requirement or deadline. This is a research support gap, not proof that no duty can arise.",
+      "The full subsection limits counterclaims to $5,000. This short list does not establish a filing duty, a filing date, or a response choice. Existing legal-rule source_quotes_allowed remains false for user-facing use.",
+      "Research verification is not legal review, source approval, or permission for public execution. Reuse status remains unknown; only a minimal excerpt is retained."
+    ],
+    "legal_rule_ids": [
+      "va-small-claims-warrant-and-answer-rule"
+    ],
+    "process_step_ids": [
+      "va-small-claims-organize-user-questions"
+    ]
+  },
+  {
+    "id": "va-small-claims-passage-removal",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "Defendant removal before decision",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-small-claims-procedure-code",
+    "workflow_ids": [
+      "va-small-claims-warrant-in-debt-information"
+    ],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": "Virginia General District Court Small Claims Division",
+      "agency": null
+    },
+    "locator": "Va. Code section 16.1-122.4(B), excerpt from defendant removal right",
+    "propositions": [
+      "va-small-claims-removal-right"
+    ],
+    "text": "remove the case to the general district court at any point preceding the handing down of the decision by the judge",
+    "verification": {
+      "retrieved_on": "2026-10-30",
+      "verified_on": "2026-10-30",
+      "source_version": "Official Code publication checked 2026-10-30; no effective-date certification",
+      "excerpt_hash": "sha256:d6a60ea1e5112befbeb7acc9289f83dbe6aa94fb4ab4962e5f5b9a2fdbf997c4",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Subsection B identifies a defendant right and permits attorney representation for that purpose. Removal here is from small claims, not venue transfer to another locality. Do not recommend a choice or infer eligibility.",
+      "Research verification is not legal review, source approval, or permission for public execution. Reuse status remains unknown; only a minimal excerpt is retained."
+    ],
+    "legal_rule_ids": [],
+    "process_step_ids": [
+      "va-small-claims-organize-user-questions"
+    ]
+  },
+  {
+    "id": "va-small-claims-passage-informal-trial",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "Informal small-claims trial procedure",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-small-claims-procedure-code",
+    "workflow_ids": [
+      "va-small-claims-warrant-in-debt-information"
+    ],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": "Virginia General District Court Small Claims Division",
+      "agency": null
+    },
+    "locator": "Va. Code section 16.1-122.5, second sentence, opening clause",
+    "propositions": [
+      "va-small-claims-informal-trial"
+    ],
+    "text": "The general district court judge shall conduct the trial in an informal manner",
+    "verification": {
+      "retrieved_on": "2026-10-30",
+      "verified_on": "2026-10-30",
+      "source_version": "Official Code publication checked 2026-10-30; no effective-date certification",
+      "excerpt_hash": "sha256:762a6b43280cf0a1efb847e72f81dc83f0111ec053e0708e00def486e65e8b6d",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Read the full section for witness oaths, evidentiary discretion, and the exclusion of privileged communications; informal does not mean no rules or no consequences.",
+      "Research verification is not legal review, source approval, or permission for public execution. Reuse status remains unknown; only a minimal excerpt is retained."
+    ],
+    "legal_rule_ids": [],
+    "process_step_ids": [
+      "va-small-claims-organize-user-questions"
+    ]
+  },
+  {
+    "id": "va-small-claims-passage-form-appearance-warning",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "DC-402 appearance and nonappearance judgment warning",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-dc402-warrant-in-debt-small-claims-form",
+    "workflow_ids": [
+      "va-small-claims-warrant-in-debt-information"
+    ],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": "Virginia General District Court Small Claims Division",
+      "agency": null
+    },
+    "locator": "PDF page 1, TO DEFENDANT block, first sentence, excerpt",
+    "propositions": [
+      "va-small-claims-appearance-wording",
+      "va-small-claims-default-nonappearance"
+    ],
+    "text": "not required to appear; however, if you fail to appear, judgment may be entered against you.",
+    "verification": {
+      "retrieved_on": "2026-10-30",
+      "verified_on": "2026-10-30",
+      "source_version": "DC-402 front marked 10/07; reverse marked 07/01",
+      "excerpt_hash": "sha256:b918b1834802d16f00d221e27b5c06bb3b81d6ac75523fb2881be85f23a55f5e",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Appearance wording remains unresolved between DC-402 and official self-help material. Do not infer whether a particular defendant should appear or any service validity or case outcome.",
+      "This is the form warning, not a determination of default, proper service, a duty to appear, or any individual legal consequence.",
+      "Research verification is not legal review, source approval, or permission for public execution. Reuse status remains unknown; only a minimal excerpt is retained."
+    ],
+    "legal_rule_ids": [],
+    "process_step_ids": [
+      "va-small-claims-deadline-safety-routing"
+    ]
+  },
+  {
+    "id": "va-small-claims-passage-grounds-of-defense-order",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "Judge-ordered Grounds of Defense dates",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-dc402-warrant-in-debt-instructions",
+    "workflow_ids": [
+      "va-small-claims-warrant-in-debt-information"
+    ],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": "Virginia General District Court Small Claims Division",
+      "agency": null
+    },
+    "locator": "PDF page 3 (printed Page: 3), Data Element 31, under To be completed by the judge, if applicable",
+    "propositions": [
+      "va-small-claims-grounds-of-defense-order"
+    ],
+    "text": "If judge orders filing of grounds of defense, insert the appropriate dates.",
+    "verification": {
+      "retrieved_on": "2026-10-30",
+      "verified_on": "2026-10-30",
+      "source_version": "DC-402 instructions marked September 2008",
+      "excerpt_hash": "sha256:72e2e3a1b433f1c6256b87dfa8df296e2f76418f4a2233fd1404fa3f8beb115f",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "This curated proposed source set does not establish a universal written-answer requirement or deadline. This is a research support gap, not proof that no duty can arise.",
+      "The instruction sheet is marked September 2008. Currentness and locality-specific application remain unresolved despite checking the currently hosted PDF. No existing process-step source relationship names this instruction sheet; no process or legal-rule support link is asserted.",
+      "Research verification is not legal review, source approval, or permission for public execution. Reuse status remains unknown; only a minimal excerpt is retained."
+    ],
+    "legal_rule_ids": [],
+    "process_step_ids": []
+  },
+  {
+    "id": "va-small-claims-passage-self-help-appearance",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "Self-help appearance wording at trial or return date",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-small-claims-self-help",
+    "workflow_ids": [
+      "va-small-claims-warrant-in-debt-information"
+    ],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": "Virginia General District Court Small Claims Division",
+      "agency": null
+    },
+    "locator": "Trial or Return Date heading, first sentence, excerpt",
+    "propositions": [
+      "va-small-claims-appearance-wording"
+    ],
+    "text": "the defendant and the plaintiff must come to court for the trial of their dispute.",
+    "verification": {
+      "retrieved_on": "2026-10-30",
+      "verified_on": "2026-10-30",
+      "source_version": "Self-help page displays last updated February 07, 2026",
+      "excerpt_hash": "sha256:2106cd043f6cf0ae9b1ca376466520c00cb42751f32c423aa808af5ac38ed6e6",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Appearance wording remains unresolved between DC-402 and official self-help material. Do not infer whether a particular defendant should appear or any service validity or case outcome.",
+      "Official explanatory material is retained to expose its wording alongside the primary form, not to resolve the conflict or establish controlling law. The Default Judgment section separately conditions its explanation on proper service; this corpus does not decide service facts.",
+      "Research verification is not legal review, source approval, or permission for public execution. Reuse status remains unknown; only a minimal excerpt is retained."
+    ],
+    "legal_rule_ids": [],
+    "process_step_ids": [
+      "va-small-claims-deadline-safety-routing"
+    ]
+  }
+]

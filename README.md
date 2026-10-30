@@ -6,13 +6,13 @@ Pro-One is building the technical and governance foundation for narrow, jurisdic
 
 ## Project status
 
-Pro-One is currently in the **architecture, specification, and early local-runtime stage**. The stateless local API loads and schema-validates repository records, resolves workflow packages, evaluates readiness and structured intake completeness, processes explicit workflow-linked risk IDs, and assembles deterministic development execution contexts. There is no production legal AI application, hosted service, or publicly supported legal workflow today.
+Pro-One is currently in the **architecture, specification, and early local-runtime stage**. The stateless local API loads and schema-validates repository records, resolves workflow packages, evaluates readiness and structured intake completeness, processes explicit workflow-linked risk IDs, assembles deterministic development execution contexts, and retrieves curated local passages with citation/provenance metadata. There is no production legal AI application, hosted service, or publicly supported legal workflow today.
 
 The repository already contains a substantial, machine-validatable schema and governance foundation. Some older records under [`data/`](data/) are fictional examples used to demonstrate structure and relationships; newer records include proposed research for a real jurisdiction, such as the Virginia DC-402 candidate. Neither fictional examples nor jurisdiction-specific proposed research records are automatically approved or supported, and none should be treated as legal guidance or evidence that a workflow is available to the public.
 
 ## Current technical foundation
 
-Nine interoperable JSON Schema domains define the project's core records:
+Ten interoperable JSON Schema domains define the project's core records:
 
 1. [source metadata](schemas/source.schema.json)
 2. [workflow definitions](schemas/workflow.schema.json)
@@ -23,10 +23,11 @@ Nine interoperable JSON Schema domains define the project's core records:
 7. [risk definitions](schemas/risk.schema.json)
 8. [response patterns](schemas/response.schema.json)
 9. [evaluation fixtures](schemas/evaluation-fixture.schema.json)
+10. [curated source passages](schemas/source-passage.schema.json)
 
 Shared definitions in [`schemas/common.schema.json`](schemas/common.schema.json) keep identifiers, versions, review provenance, jurisdiction structures, maturity states, risk levels, routing behavior, and other cross-domain vocabulary consistent. A lightweight validator checks JSON syntax, Draft 2020-12 schema validity, sample-record conformance, cross-record references, key state invariants, and Markdown integrity.
 
-The early local runtime exposes workflow records, resolved workflow packages, and `GET /workflows/{workflow_id}/readiness`. The readiness endpoint fails closed unless the workflow and each required source, process step, and evaluation fixture meet the supported and approved gates. It does not generate legal advice, legal answers, or filing-ready documents, and it does not make any sample workflow publicly available. There is no natural-language legal reasoning, LLM, retrieval system, frontend, database, or persistent user session.
+The early local runtime exposes workflow records, resolved workflow packages, and `GET /workflows/{workflow_id}/readiness`. The readiness endpoint fails closed unless the workflow and each required source, process step, and evaluation fixture meet the supported and approved gates. It does not generate legal advice, legal answers, or filing-ready documents, and it does not make any sample workflow publicly available. There is no natural-language legal reasoning, LLM, runtime web fetching, frontend, database, or persistent user session.
 
 ### Structured intake and development context
 
@@ -56,6 +57,18 @@ Inspection contexts may contain partial facts and proposed metadata. They contai
 `execution.context_available` is independent of `intake.complete` and `public_execution.allowed`. Public eligibility requires input eligibility, package integrity, and the unchanged readiness service. For the Virginia candidate, complete intake produces a development context while public execution remains **false**. Unknown workflows return `404`; missing or ambiguous intake definitions return `409` with stable codes.
 
 The application does not persist intake values, write them to disk or a database, retain them in sessions, or log answer values. Values are held transiently to evaluate the request and return admitted facts; this is not a retention or privacy guarantee about a caller, proxy, or hosting environment. No production service exists.
+
+### Local source-passage retrieval
+
+`POST /workflows/{workflow_id}/retrieval` accepts an optional `query`, `source_ids`, `legal_rule_ids`, `process_step_ids`, `proposition_ids`, and `limit` (default 5, range 1–20). Empty filter lists impose no extra constraint. Omit `query` for relationship-only retrieval; blank or unmatched queries return explicit empty results.
+
+The first corpus has nine short excerpts from four existing official Virginia sources, checked on 2026-10-30. All passages, sources, and reviews remain proposed. Repository startup validates the new passage schema, excerpt hashes, source/workflow relationships, jurisdiction, and optional rule/step links. Missing or invalid corpus data fails startup.
+
+Retrieval selects the workflow package and eligible source passages before applying filters or lexical ranking. Filter types intersect; values within one type union. Unrelated/unknown IDs return `422` rather than broaden scope. Token overlap uses title weight 2 and excerpt/locator/topic weight 1, with passage ID breaking ties. This score is not legal confidence or a decision about applicability.
+
+Results expose exact excerpts, locators, existing preferred citations, official URLs, source and passage review states, verification dates, excerpt hashes, source freshness, rights, and limitations. No eligible or matching passage means no fallback. The endpoint is development inspection only and always returns `public_execution.allowed: false`, alongside the unchanged readiness result. Unknown workflows return `404`; detected runtime corpus corruption returns `409`.
+
+The appearance-wording conflict, lack of support for a universal written-answer deadline, and September 2008 instruction-sheet currentness remain unresolved. No legal answer is generated. Retrieval is local, stateless, and adds no model, embedding, vector database, or network dependency. See [Source corpus](docs/source-corpus.md) for passage provenance, support gaps, and the update process.
 
 The schemas sit within documented [legal-safety](docs/legal-safety.md), [privacy](docs/privacy-principles.md), [governance](docs/governance.md), [source](docs/source-standards.md), [workflow-selection](docs/workflow-selection.md), and [evaluation](docs/evaluation-principles.md) standards.
 

@@ -4,6 +4,12 @@ from app.execution import ExecutionContextService, ExecutionResult
 from app.intake import IntakeRequest, IntakeResolutionError
 from app.readiness import WorkflowReadinessService
 from app.repository import RecordRepository, RepositoryLoadError
+from app.retrieval import (
+    PassageRetrievalService,
+    RetrievalFilterError,
+    RetrievalRequest,
+    RetrievalResult,
+)
 
 
 app = FastAPI(
@@ -21,6 +27,7 @@ except RepositoryLoadError as exc:
 
 readiness_service = WorkflowReadinessService(repository)
 execution_service = ExecutionContextService(repository)
+retrieval_service = PassageRetrievalService(repository)
 
 
 @app.get("/health")
@@ -70,6 +77,29 @@ def get_workflow_readiness(workflow_id: str) -> dict:
             detail=f"Workflow '{workflow_id}' was not found.",
         )
 
+    return result
+
+
+@app.post("/workflows/{workflow_id}/retrieval")
+def retrieve_passages(workflow_id: str, request: RetrievalRequest) -> RetrievalResult:
+    try:
+        result = retrieval_service.retrieve(workflow_id, request)
+    except RetrievalFilterError as exc:
+        raise HTTPException(
+            status_code=422,
+            detail={
+                "code": "filters_not_in_workflow_package",
+                "invalid_filters": exc.invalid_filters,
+            },
+        ) from exc
+    except RepositoryLoadError as exc:
+        raise HTTPException(
+            status_code=409, detail={"code": "corpus_integrity_error"},
+        ) from exc
+    if result is None:
+        raise HTTPException(
+            status_code=404, detail=f"Workflow '{workflow_id}' was not found.",
+        )
     return result
 
 

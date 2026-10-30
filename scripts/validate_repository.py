@@ -16,6 +16,11 @@ from referencing import Registry, Resource
 
 
 ROOT = Path(__file__).resolve().parents[1]
+# Keep direct script execution portable, including outside the repository cwd.
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from app.corpus import passage_relationship_errors
+
 SCHEMA_DIR = ROOT / "schemas"
 DATA_DIR = ROOT / "data"
 PROJECT_OWNED_DIRECTORIES = (
@@ -47,6 +52,7 @@ EXCLUDED_DIRECTORY_NAMES = {
 }
 
 DATA_SCHEMAS = {
+    "source-passages.json": ("source_passage", "source-passage.schema.json"),
     "sample-evaluation-fixtures.json": ("evaluation_fixture", "evaluation-fixture.schema.json"),
     "sample-intakes.json": ("intake", "intake.schema.json"),
     "sample-legal-documents.json": ("legal_document", "legal-document.schema.json"),
@@ -75,6 +81,7 @@ class DependencyEligibility:
 
 
 REFERENCE_FIELDS = {
+    "source_id": ReferenceSpec("source"),
     "allowed_source_ids": ReferenceSpec("source"),
     "deadline_source_ids": ReferenceSpec("source"),
     "depends_on": ReferenceSpec("process_step"),
@@ -111,6 +118,9 @@ REFERENCE_FIELDS = {
 REFERENCE_PATH_ROLES: dict[
     tuple[str, tuple[str, ...]], ReferenceRole
 ] = {
+    ("source_passage", ("workflow_ids",)): "association",
+    ("source_passage", ("legal_rule_ids",)): "association",
+    ("source_passage", ("process_step_ids",)): "association",
     ("source", ("workflow_fit", "workflow_ids")): "association",
     ("process_step", ("workflow_ids",)): "association",
     ("process_step", ("sequence", "next_step_ids")): "association",
@@ -162,6 +172,9 @@ REFERENCE_PATH_ROLES: dict[
 }
 
 SUPPORTED_DEPENDENCY_ELIGIBILITY = {
+    "source_passage": DependencyEligibility(
+        frozenset({"supported"}), frozenset({"approved"}), "supported and approved source passage"
+    ),
     "source": DependencyEligibility(
         frozenset({"supported"}),
         frozenset({"approved"}),
@@ -194,6 +207,10 @@ SUPPORTED_DEPENDENCY_ELIGIBILITY = {
 }
 
 SUPPORTED_REVIEW_SCOPES = {
+    "source_passage": frozenset({
+        "schema", "source_authority", "source_freshness", "jurisdiction",
+        "legal_information_boundary",
+    }),
     "source": frozenset({"schema", "source_authority", "source_freshness", "jurisdiction"}),
     "workflow": frozenset(
         {"schema", "jurisdiction", "legal_information_boundary", "safety", "evaluation"}
@@ -616,6 +633,18 @@ def main() -> int:
             validate_review_provenance(filename, record, report)
 
     validate_cross_record_references(records_by_kind, record_locations, report)
+
+    # Share corpus semantics with runtime startup, after schema/reference checks.
+    if not report.errors:
+        for passage in records_by_kind["source_passage"].values():
+            for error in passage_relationship_errors(
+                passage,
+                sources=records_by_kind["source"],
+                workflows=records_by_kind["workflow"],
+                legal_rules=records_by_kind["legal_rule"],
+                process_steps=records_by_kind["process_step"],
+            ):
+                report.error(f"source passage {passage['id']}: {error}")
 
     validate_markdown(report)
 

@@ -287,7 +287,7 @@ class IntakeExecutionTests(unittest.TestCase):
     def test_virginia_records_and_reviews_remain_proposed(self) -> None:
         self.build()
         records = [record for group in self.repository.records.values() for record in group.values() if record["id"].startswith("va-")]
-        self.assertEqual(26, len(records))
+        self.assertEqual(35, len(records))
         for record in records:
             self.assertEqual("proposed", record["status"])
             self.assertEqual("proposed", record["review"]["status"])

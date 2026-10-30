@@ -18,7 +18,7 @@ Pro-One should be:
 
 ## Specification foundation
 
-The repository defines nine interoperable record domains: sources, workflows, process steps, legal documents, intakes, legal rules, risks, response patterns, and evaluation fixtures. `schemas/common.schema.json` centralizes record identifiers, version metadata, known jurisdiction structures, maturity and review states, review provenance, harm severity, urgency, support modes, routing behavior, human-help framing, and deadline handling where the concepts are semantically shared.
+The repository defines ten interoperable record domains: sources, workflows, process steps, legal documents, intakes, legal rules, risks, response patterns, evaluation fixtures, and curated source passages. `schemas/common.schema.json` centralizes record identifiers, version metadata, known jurisdiction structures, maturity and review states, review provenance, harm severity, urgency, support modes, routing behavior, human-help framing, and deadline handling where the concepts are semantically shared.
 
 Country values use uppercase ISO 3166-1 alpha-2 codes across every domain—for example, `US` rather than a display name. User interfaces may localize those codes for display without changing stored records.
 
@@ -42,6 +42,10 @@ structured answers + explicit risk IDs
 `app/intake.py` uses workflow input identifiers and intake privacy metadata without interpreting answer text or inferring facts. `app/execution.py` consumes that assessment and the existing readiness result. It verifies required package references without importing additional records, then returns detached, deterministic metadata from the existing resolver. Partial facts may appear in inspection contexts; excluded, restricted, and unrecognized values do not. User facts retain their exact value and explicit user-provided provenance. Repository jurisdiction metadata never confirms the user's jurisdiction.
 
 The single stateless `POST /workflows/{workflow_id}/intake/evaluate` endpoint returns completeness, privacy handling, all explicit risk routes, context availability, and public eligibility separately. Public eligibility requires complete and acceptable input, resolved required package references, and the readiness gate. An available context is not permission to generate or publicly execute anything. Source records contain metadata only; evaluation scenarios are omitted from context. No intake values are persisted or logged, and no external source fetching, NLP, LLM, or generation exists. See the [request and response contract](../README.md#structured-intake-and-development-context).
+
+The separate `POST /workflows/{workflow_id}/retrieval` service resolves that same workflow package and its local `source_passages`, validates filters, selects eligible sources/jurisdiction, and optionally ranks candidates by deterministic lexical overlap. `app/corpus.py` shares passage relationship/hash checks between repository startup and repository validation. Source metadata stays in source records; short excerpts, locators, topic tags, verification provenance, and limits live in `data/source-passages.json`.
+
+Retrieval returns an inspection package that a future layer can join to an execution context by `workflow_id`. It calls the existing readiness service and never grants public execution. Intake/execution logic is unchanged; proposed excerpts are not automatically copied into its fact context. No runtime network calls, model calls, passage generation, or answer generation exist. See [Source corpus](source-corpus.md) for exact selection, ranking, maturity, and freshness behavior.
 
 ## Intended pipeline
 

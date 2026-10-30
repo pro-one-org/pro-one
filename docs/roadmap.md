@@ -38,7 +38,7 @@ These milestones describe repository infrastructure only. No sample record is cu
 - [x] Assemble controlled development contexts with unchanged user-provided facts and provenance
 - [x] Separate completeness, safety routing, context availability, and public eligibility
 
-The stateless local endpoint does not persist user data or interpret natural-language answers. Proposed Virginia records can appear in inspection contexts, but complete intake cannot override the readiness gate. All Virginia records and reviews remain proposed. Retrieval, grounded generation, LLM integration, reviewed-source context assembly, and public release remain future work.
+The stateless local endpoint does not persist user data or interpret natural-language answers. Proposed Virginia records can appear in inspection contexts, but complete intake cannot override the readiness gate. All Virginia records and reviews remain proposed. Local development retrieval now exists as described below; grounded generation, LLM integration, reviewed-source context assembly, and public release remain future work.
 
 ## Phase 1: First workflow specification — current
 
@@ -58,21 +58,26 @@ The proposed workflow is narrowly scoped to a defendant who received Virginia Ge
 - [ ] Complete jurisdiction-specific legal review, including return-date/appearance wording and written-response requirements
 - [ ] Review evaluation fixtures and approve public-support acceptance criteria
 
-## Phase 2: Corpus selection and ingestion — future application foundation
+## Phase 2: Corpus selection and ingestion — partial development foundation
 
 - [x] Identify initial official sources for the proposed Virginia workflow
+- [x] Curate nine minimal, schema-backed Virginia excerpts from four official sources with locators, topic tags, verification dates, hashes, and limitations
+- [x] Preserve source citations, rights uncertainty, and passage provenance in local retrieval
 - [ ] Review and approve authoritative sources for supported use
 - [ ] Select court rules, forms, instructions, statutes, regulations, cases, and explanatory sources by proposition
 - [ ] Record source versions, effective periods, verification dates, and reuse constraints
 - [ ] Create a repeatable ingestion and update process
 - [ ] Preserve citations and content provenance
 
-## Phase 3: Retrieval — future implementation
+## Phase 3: Retrieval — development baseline implemented
 
-- [ ] Implement a minimal retrieval baseline
+- [x] Implement deterministic local relationship selection and bounded lexical ranking
+- [x] Filter by workflow package, jurisdiction, official source, maturity, supersession, and explicit relationship IDs before ranking
 - [ ] Add jurisdiction, authority, effective-date, and review-state filtering
 - [ ] Compare retrieval approaches against reviewed fixtures
 - [ ] Reject stale, superseded, deprecated, rejected, or mismatched authority for supported use
+
+The current endpoint is inspection-only and never grants execution. Proposed or freshness-uncertain passages may be inspected with visible limits; public effective-date/freshness policies and reviewed evaluation remain unfinished. No generation or public release is complete.
 
 ## Phase 4: Grounded workflow and response generation — future implementation
 
