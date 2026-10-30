@@ -38,7 +38,7 @@ These milestones describe repository infrastructure only. No sample record is cu
 - [x] Assemble controlled development contexts with unchanged user-provided facts and provenance
 - [x] Separate completeness, safety routing, context availability, and public eligibility
 
-The stateless local endpoint does not persist user data or interpret natural-language answers. Proposed Virginia records can appear in inspection contexts, but complete intake cannot override the readiness gate. All Virginia records and reviews remain proposed. Local development retrieval now exists as described below; grounded generation, LLM integration, reviewed-source context assembly, and public release remain future work.
+The stateless local runtime does not persist user data or interpret natural-language answers into legal facts. Complete intake cannot override readiness. All Virginia records/reviews remain proposed. Retrieval, response assembly, and an offline development generation/validation pipeline now exist; live LLM integration, reviewed-source context assembly, semantic verification, and public release remain future work.
 
 ## Phase 1: First workflow specification — current
 
@@ -79,22 +79,28 @@ The proposed workflow is narrowly scoped to a defendant who received Virginia Ge
 
 The retrieval endpoint is inspection-only and never grants execution. Proposed or freshness-uncertain passages may be inspected with visible limits. The grounding gate below implements a fail-closed selected-evidence currentness policy; source certification, reviewed evaluation, generation, and public release remain unfinished.
 
-## Phase 4: Grounded workflow and response generation — future implementation
+## Phase 4: Grounded workflow and response generation — development foundation
 
 - [x] Add a selected-evidence grounding gate separate from workflow readiness
 - [x] Require version-bound source/passage currentness certification for public grounding, without certifying current records
 - [x] Assemble deterministic development response plans with passage-backed topic references, citations, support gaps, and repository constraints
 - [x] Preserve explicit user facts, risk routing, privacy controls, and prohibited conclusions in the inspection handoff
+- [x] Add a provider-neutral request/response interface and explicit provider/model registry without fallback
+- [x] Add a strict structured draft contract and versioned instruction builder with separate evidence/fact boundaries
+- [x] Add a development generation pipeline using an offline deterministic test adapter
+- [x] Validate every draft's structure, IDs, support relationships, facts, disclosures, and structured prohibitions, with supplementary prose guards
 - [ ] Build context assembly from approved records and retrieved passages
 - [ ] Generate source-backed explanations and workflow steps
 - [ ] Populate draft structure only from explicit user decisions and confirmed facts
 - [ ] Add citations, limitations, refusal of unsafe parts, and safe continuation
 - [ ] Preserve fact and source provenance through the response pipeline
 
-These completed items prepare an inspectable contract only. Grounded natural-language generation, LLM integration, source/legal/fixture approval, evaluation release gates, and public availability are not complete.
+These completed items provide an inspection contract and offline development drafts only. Real-provider configuration, live-model quality/semantic evaluation, source/legal/fixture approval, production monitoring, and public availability are not complete. Passing deterministic validation does not certify arbitrary legal prose.
 
 ## Phase 5: Evaluation and release gates — future implementation
 
+- [x] Execute explicit version-bound mappings of twelve existing proposed Virginia fixtures using the offline provider
+- [x] Report named automated checks, expected rejection cases, unmapped fixtures, and pending manual criteria through a CLI and CI
 - [ ] Execute the reviewed evaluation-fixture suite
 - [ ] Measure retrieval, citation, jurisdiction, privacy, boundary, deadline, and refusal behavior
 - [ ] Require human review for defined high-consequence cases

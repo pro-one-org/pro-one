@@ -1,4 +1,7 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.exception_handlers import request_validation_exception_handler
+from fastapi.exceptions import RequestValidationError
+from fastapi.responses import JSONResponse
 
 from app.execution import ExecutionContextService, ExecutionResult
 from app.intake import IntakeRequest, IntakeResolutionError
@@ -16,6 +19,8 @@ from app.response_assembly import (
     ResponseAssemblyResult,
     ResponseAssemblyService,
 )
+from app.generation import GenerationRequest, GenerationResult, GenerationService
+from app.models.testing import testing_registry
 
 
 app = FastAPI(
@@ -35,6 +40,19 @@ readiness_service = WorkflowReadinessService(repository)
 execution_service = ExecutionContextService(repository)
 retrieval_service = PassageRetrievalService(repository)
 response_assembly_service = ResponseAssemblyService(repository)
+generation_service = GenerationService(testing_registry())
+
+
+@app.exception_handler(RequestValidationError)
+async def safe_generation_request_error(request: Request, exc: RequestValidationError):
+    if request.url.path.endswith("/response/generate"):
+        # Pydantic's default errors include the invalid raw input. Generation
+        # errors must not echo secrets or withheld legal facts supplied in it.
+        return JSONResponse(status_code=422, content={"detail": {
+            "code": "malformed_generation_request",
+            "errors": [{"type": e["type"], "loc": list(e["loc"])} for e in exc.errors()],
+        }})
+    return await request_validation_exception_handler(request, exc)
 
 
 @app.get("/health")
@@ -151,3 +169,10 @@ def evaluate_intake(workflow_id: str, request: IntakeRequest) -> ExecutionResult
             detail=f"Workflow '{workflow_id}' was not found.",
         )
     return result
+
+
+@app.post("/workflows/{workflow_id}/response/generate")
+def generate_response(workflow_id: str, request: GenerationRequest) -> GenerationResult:
+    # Reuse exactly the assembly endpoint's scope and integrity error behavior.
+    package = assemble_response(workflow_id, request)
+    return generation_service.generate(package, request.generation)

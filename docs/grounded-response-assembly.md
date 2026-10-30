@@ -1,6 +1,6 @@
 # Grounded response assembly
 
-This milestone creates an inspection contract for future constrained generation. It does not add a model, prompt, generated legal answer, runtime network call, persistence, or production workflow. All Virginia records, passages, and reviews remain proposed.
+This assembly layer creates an inspection contract for constrained generation. It makes no model call and produces no legal prose. The separate [development generation layer](model-generation.md) now consumes it through a provider-neutral interface and mandatory validation, using an offline adapter only. All Virginia records, passages, and reviews remain proposed; no production workflow exists.
 
 ## Separate gates
 
@@ -52,4 +52,4 @@ Only the already configured workflow and selected material appear. Retrieval's b
 
 ## Review and next handoff
 
-Review the schema additions, declared UTC-date/certification policy, proposition-level support boundaries, response-pattern composition, and support-gap controls before merge. Rights/currentness/legal review and approved fixtures remain release blockers; no workflow has passed them. A later constrained model layer may consume this contract only while preserving its gates, citations, scope, user decisions, and prohibited content. Adding that layer or validating its generated output is future work.
+The schema, UTC certification policy, proposition-level support boundaries, pattern composition, and support-gap controls remain review concerns. Rights/currentness/legal review and approved fixtures remain release blockers; no workflow has passed them. The separate development generation layer preserves this contract's gates, citations, scope, user decisions, and prohibited content, with structural validation and supplementary prose guards. Semantic validation, live-model evaluation, and public release remain future work.
