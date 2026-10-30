@@ -1,6 +1,6 @@
 # MVP
 
-The first Pro-One legal workflow remains a proposal, not an implemented product. An early local runtime can load and resolve repository records, evaluate readiness and structured intake, route explicit risk IDs, assemble development contexts, and retrieve curated local source passages with citation provenance. It does not generate legal answers or publicly execute a legal workflow. All Virginia passages and reviews remain proposed; retrieval adds no LLM or runtime web fetching. The MVP should remain intentionally narrow: one jurisdiction, one civil-procedure task, one reviewed source corpus, and explicit release gates.
+The first Pro-One legal workflow remains a proposal, not an implemented product. The local runtime loads and resolves records, evaluates readiness and intake, routes explicit risks, assembles development contexts, retrieves curated passages, evaluates selected-evidence grounding eligibility, and builds deterministic response plans with claim/citation provenance. It does not generate legal answers or publicly execute a legal workflow. All Virginia records, passages, and reviews remain proposed and publicly ineligible. No existing record receives currentness certification; no LLM or runtime web fetching exists. The MVP should remain intentionally narrow: one jurisdiction, one civil-procedure task, one reviewed source corpus, and explicit release gates.
 
 ## Direction
 

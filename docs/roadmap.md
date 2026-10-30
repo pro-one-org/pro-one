@@ -77,15 +77,21 @@ The proposed workflow is narrowly scoped to a defendant who received Virginia Ge
 - [ ] Compare retrieval approaches against reviewed fixtures
 - [ ] Reject stale, superseded, deprecated, rejected, or mismatched authority for supported use
 
-The current endpoint is inspection-only and never grants execution. Proposed or freshness-uncertain passages may be inspected with visible limits; public effective-date/freshness policies and reviewed evaluation remain unfinished. No generation or public release is complete.
+The retrieval endpoint is inspection-only and never grants execution. Proposed or freshness-uncertain passages may be inspected with visible limits. The grounding gate below implements a fail-closed selected-evidence currentness policy; source certification, reviewed evaluation, generation, and public release remain unfinished.
 
 ## Phase 4: Grounded workflow and response generation — future implementation
 
+- [x] Add a selected-evidence grounding gate separate from workflow readiness
+- [x] Require version-bound source/passage currentness certification for public grounding, without certifying current records
+- [x] Assemble deterministic development response plans with passage-backed topic references, citations, support gaps, and repository constraints
+- [x] Preserve explicit user facts, risk routing, privacy controls, and prohibited conclusions in the inspection handoff
 - [ ] Build context assembly from approved records and retrieved passages
 - [ ] Generate source-backed explanations and workflow steps
 - [ ] Populate draft structure only from explicit user decisions and confirmed facts
 - [ ] Add citations, limitations, refusal of unsafe parts, and safe continuation
 - [ ] Preserve fact and source provenance through the response pipeline
+
+These completed items prepare an inspectable contract only. Grounded natural-language generation, LLM integration, source/legal/fixture approval, evaluation release gates, and public availability are not complete.
 
 ## Phase 5: Evaluation and release gates — future implementation
 

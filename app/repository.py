@@ -154,6 +154,10 @@ class RecordRepository:
                 f"{path}:{record_id} failed schema validation: {details}"
             )
 
+    def validate_record(self, domain: str, record: dict[str, Any]) -> None:
+        """Reuse cached domain validation for selected-evidence release checks."""
+        self._validate_record(domain, self.data_dir / self.DOMAIN_FILES[domain], record)
+
     def _load(self) -> None:
         for domain, filename in self.DOMAIN_FILES.items():
             path = self.data_dir / filename

@@ -4,6 +4,27 @@
   "title": "Pro-One Common Definitions",
   "description": "Shared identifiers, version metadata, jurisdiction structures, review provenance, maturity states, risk concepts, routing behavior, and assistance vocabulary used by Pro-One records.",
   "$defs": {
+    "publicCurrentness": {
+      "description": "Optional version-bound public grounding certification. Absence is unresolved. Approval must cover this record version; dates do not themselves establish legal currentness.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status"],
+      "properties": {
+        "status": { "enum": ["unresolved", "certified"] },
+        "record_version": { "$ref": "#/$defs/recordVersion" },
+        "source_content_version": { "type": "string", "minLength": 1 },
+        "verified_on": { "type": "string", "format": "date" },
+        "valid_through": { "type": "string", "format": "date" },
+        "unresolved_issues": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+      },
+      "allOf": [{
+        "if": { "properties": { "status": { "const": "certified" } }, "required": ["status"] },
+        "then": {
+          "required": ["record_version", "source_content_version", "verified_on", "valid_through", "unresolved_issues"],
+          "properties": { "unresolved_issues": { "maxItems": 0 } }
+        }
+      }]
+    },
     "recordId": {
       "type": "string",
       "description": "Stable record identifier.",
