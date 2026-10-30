@@ -20,6 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 from app.corpus import passage_relationship_errors
+from app.review_policy import SUPPORTED_REVIEW_SCOPES
 
 SCHEMA_DIR = ROOT / "schemas"
 DATA_DIR = ROOT / "data"
@@ -206,61 +207,6 @@ SUPPORTED_DEPENDENCY_ELIGIBILITY = {
     ),
 }
 
-SUPPORTED_REVIEW_SCOPES = {
-    "source_passage": frozenset({
-        "schema", "source_authority", "source_freshness", "jurisdiction",
-        "legal_information_boundary",
-    }),
-    "source": frozenset({"schema", "source_authority", "source_freshness", "jurisdiction"}),
-    "workflow": frozenset(
-        {"schema", "jurisdiction", "legal_information_boundary", "safety", "evaluation"}
-    ),
-    "process_step": frozenset(
-        {"schema", "jurisdiction", "legal_information_boundary", "safety", "evaluation"}
-    ),
-    "legal_document": frozenset(
-        {
-            "schema",
-            "jurisdiction",
-            "legal_information_boundary",
-            "safety",
-            "privacy",
-            "evaluation",
-        }
-    ),
-    "intake": frozenset(
-        {
-            "schema",
-            "jurisdiction",
-            "legal_information_boundary",
-            "safety",
-            "privacy",
-            "evaluation",
-        }
-    ),
-    "legal_rule": frozenset(
-        {
-            "schema",
-            "source_authority",
-            "jurisdiction",
-            "legal_information_boundary",
-            "safety",
-            "evaluation",
-        }
-    ),
-    "risk": frozenset({"schema", "safety", "evaluation"}),
-    "response": frozenset(
-        {
-            "schema",
-            "jurisdiction",
-            "legal_information_boundary",
-            "safety",
-            "privacy",
-            "evaluation",
-        }
-    ),
-    "evaluation_fixture": frozenset({"schema", "evaluation"}),
-}
 MOJIBAKE_MARKERS = ("\ufffd", "\u00e2\u20ac", "\u00c3", "\u00c2")
 
 

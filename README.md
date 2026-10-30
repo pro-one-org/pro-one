@@ -6,7 +6,7 @@ Pro-One is building the technical and governance foundation for narrow, jurisdic
 
 ## Project status
 
-Pro-One is currently in the **architecture, specification, and early local-runtime stage**. The stateless local API loads and schema-validates repository records, resolves workflow packages, evaluates readiness and structured intake completeness, processes explicit workflow-linked risk IDs, assembles deterministic development execution contexts, and retrieves curated local passages with citation/provenance metadata. There is no production legal AI application, hosted service, or publicly supported legal workflow today.
+Pro-One is currently in the **architecture, specification, and early local-runtime stage**. The stateless local API loads and schema-validates repository records, resolves workflow packages, evaluates readiness and structured intake completeness, processes explicit workflow-linked risk IDs, assembles development execution contexts, retrieves curated local passages, evaluates selected-evidence grounding eligibility, and assembles deterministic grounded response plans with citation provenance. There is no production legal AI application, hosted service, or publicly supported legal workflow today.
 
 The repository already contains a substantial, machine-validatable schema and governance foundation. Some older records under [`data/`](data/) are fictional examples used to demonstrate structure and relationships; newer records include proposed research for a real jurisdiction, such as the Virginia DC-402 candidate. Neither fictional examples nor jurisdiction-specific proposed research records are automatically approved or supported, and none should be treated as legal guidance or evidence that a workflow is available to the public.
 
@@ -69,6 +69,24 @@ Retrieval selects the workflow package and eligible source passages before apply
 Results expose exact excerpts, locators, existing preferred citations, official URLs, source and passage review states, verification dates, excerpt hashes, source freshness, rights, and limitations. No eligible or matching passage means no fallback. The endpoint is development inspection only and always returns `public_execution.allowed: false`, alongside the unchanged readiness result. Unknown workflows return `404`; detected runtime corpus corruption returns `409`.
 
 The appearance-wording conflict, lack of support for a universal written-answer deadline, and September 2008 instruction-sheet currentness remain unresolved. No legal answer is generated. Retrieval is local, stateless, and adds no model, embedding, vector database, or network dependency. See [Source corpus](docs/source-corpus.md) for passage provenance, support gaps, and the update process.
+
+### Grounding gate and response-plan assembly
+
+`POST /workflows/{workflow_id}/response/assemble` reuses the intake contract and accepts an optional nested `retrieval` request. It combines the existing execution context and local retrieval with the selected-evidence grounding gate. For example:
+
+```json
+{
+  "answers": {"state": "Virginia", "user_goal": "Understand the listed date"},
+  "risk_ids": [],
+  "retrieval": {"query": "return date", "limit": 5}
+}
+```
+
+The inspectable response separates user facts/provenance and missing input, explicit routing/privacy controls, selected evidence, grounding eligibility, and a response plan. Claims are topic references built only from passage proposition tags, with passage/source/rule/step links, citations, and limitations. They contain no generated legal statement. Response-pattern constraints and prohibited actions are preserved, not treated as approval. Unresolved appearance wording is a support gap, not a resolved claim; missing universal written-answer support is never turned into a negative legal rule.
+
+Public eligibility requires input eligibility, existing workflow readiness, selected grounding eligibility, and package integrity. The new gate requires supported/approved evidence and linked records, the existing review scopes and exact-version review provenance, valid relationships, usable citation/rights metadata, and explicit currentness certification for each selected passage and source. Missing certification fails closed; verification dates alone do not certify currentness. No current record was certified or promoted.
+
+Complete Virginia intake can produce a development package while public grounding and execution remain **false**. No-match retrieval returns an explicit grounding-unavailable gap with no substantive claims. Unknown workflows return `404`, malformed/unrelated filters return `422`, and intake/corpus integrity conflicts retain `409`. No LLM, generated legal answer, runtime web access, user persistence, or user-value logging exists. See [Grounded response assembly](docs/grounded-response-assembly.md) for the policy, claim/citation contract, and future handoff boundaries.
 
 The schemas sit within documented [legal-safety](docs/legal-safety.md), [privacy](docs/privacy-principles.md), [governance](docs/governance.md), [source](docs/source-standards.md), [workflow-selection](docs/workflow-selection.md), and [evaluation](docs/evaluation-principles.md) standards.
 

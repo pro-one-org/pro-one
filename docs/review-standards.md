@@ -124,6 +124,8 @@ A supported workflow that sets `intake.collects_sensitive_data` to `true` must a
 
 Supporting dependencies of a supported record must themselves have `status: supported` and `review.status: approved`. Sources retain their source-specific schema and review gates. Negative and test relationships—including prohibited, excluded, superseded, and evaluation-target references—must resolve but are not supporting dependencies and therefore may intentionally point to records that are not eligible for public support.
 
+Selected-evidence public grounding adds a separate [release policy](grounded-response-assembly.md#freshness-policy). Source/passage `public_currentness` metadata must be explicitly certified for the exact record/content version, within its declared verification/expiry interval, and covered by approved review with `source_freshness`. Missing certification is unresolved. Schema conformance, historical verification dates, and research checks do not confer public authorization; no existing Virginia record has been certified.
+
 ## Privacy review
 
 Reviewers should check whether a change collects, stores, exposes, logs, or transmits user information.

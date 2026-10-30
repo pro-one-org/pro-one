@@ -840,8 +840,52 @@
   {
     "id": "va-small-claims-warrant-in-debt-information",
     "schema_version": "1.0.0",
-    "record_version": "0.1.0",
-    "last_modified": "2026-09-28",
+    "record_version": "0.1.1",
+    "last_modified": "2026-10-30",
+    "response_constraints": {
+      "support_gaps": [
+        {
+          "code": "universal_written_answer_requirement_unestablished",
+          "description": "The current curated sources do not establish a universal written-answer requirement. This gap does not establish that no case-specific duty exists.",
+          "propositions": ["va-small-claims-universal-written-answer-requirement"],
+          "withhold_claims": true,
+          "blocks_public_grounding": true,
+          "prohibited_conclusions": ["Do not assert a universal written-answer duty or the absence of any written-answer duty."]
+        },
+        {
+          "code": "universal_written_answer_deadline_unestablished",
+          "description": "The current curated sources do not establish a universal written-answer deadline. No deadline or absence of a deadline may be inferred.",
+          "propositions": ["va-small-claims-universal-written-answer-deadline"],
+          "withhold_claims": true,
+          "blocks_public_grounding": true,
+          "prohibited_conclusions": ["Do not invent a universal written-answer deadline or claim that Virginia defendants have no such deadline."]
+        },
+        {
+          "code": "appearance_wording_unresolved",
+          "description": "The DC-402 and official self-help appearance wording remains unresolved. Preserve the separate source wording without resolving an appearance obligation.",
+          "propositions": ["va-small-claims-appearance-wording"],
+          "withhold_claims": true,
+          "blocks_public_grounding": true,
+          "prohibited_conclusions": ["Do not recommend whether the user should appear or decide the consequences of nonappearance."]
+        },
+        {
+          "code": "instructions_currentness_unresolved",
+          "description": "The instruction excerpt applies only if the judge orders filing of Grounds of Defense. The sheet is marked September 2008; currentness and locality-specific application remain unresolved.",
+          "propositions": ["va-small-claims-grounds-of-defense-order"],
+          "withhold_claims": false,
+          "blocks_public_grounding": true,
+          "prohibited_conclusions": ["Do not treat the older instructions as certified current or infer a universal filing duty from conditional judge-order fields."]
+        },
+        {
+          "code": "local_practice_unresolved",
+          "description": "The corpus does not resolve locality-specific practice or individual service facts.",
+          "propositions": [],
+          "withhold_claims": false,
+          "blocks_public_grounding": false,
+          "prohibited_conclusions": ["Do not decide service validity, local filing requirements, strategy, or individual legal consequences."]
+        }
+      ]
+    },
     "title": "Virginia Small Claims Warrant in Debt Information",
     "description": "Proposed, narrowly scoped legal-information workflow for a self-represented defendant who identifies a served Virginia General District Court Small Claims Division Warrant in Debt (Form DC-402).",
     "status": "proposed",

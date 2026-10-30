@@ -12,6 +12,7 @@
     "legal_rule_ids", "process_step_ids"
   ],
   "properties": {
+    "public_currentness": { "$ref": "common.schema.json#/$defs/publicCurrentness" },
     "id": { "$ref": "common.schema.json#/$defs/recordId" },
     "schema_version": { "$ref": "common.schema.json#/$defs/schemaVersion" },
     "record_version": { "$ref": "common.schema.json#/$defs/recordVersion" },

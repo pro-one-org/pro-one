@@ -25,6 +25,7 @@
     "citation"
   ],
   "properties": {
+    "public_currentness": { "$ref": "common.schema.json#/$defs/publicCurrentness" },
     "id": {
       "$ref": "common.schema.json#/$defs/recordId"
     },

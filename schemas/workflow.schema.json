@@ -27,6 +27,28 @@
     "evaluation"
   ],
   "properties": {
+    "response_constraints": {
+      "description": "Explicit planning gaps; never interpreted from source prose or treated as negative legal rules.",
+      "type": "object", "additionalProperties": false,
+      "required": ["support_gaps"],
+      "properties": {
+        "support_gaps": {
+          "type": "array",
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["code", "description", "propositions", "withhold_claims", "blocks_public_grounding", "prohibited_conclusions"],
+            "properties": {
+              "code": { "$ref": "common.schema.json#/$defs/recordId" },
+              "description": { "type": "string", "minLength": 1 },
+              "propositions": { "type": "array", "uniqueItems": true, "items": { "$ref": "common.schema.json#/$defs/recordId" } },
+              "withhold_claims": { "type": "boolean" },
+              "blocks_public_grounding": { "type": "boolean" },
+              "prohibited_conclusions": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+            }
+          }
+        }
+      }
+    },
     "id": {
       "$ref": "common.schema.json#/$defs/recordId"
     },

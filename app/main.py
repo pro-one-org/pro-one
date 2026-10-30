@@ -10,6 +10,12 @@ from app.retrieval import (
     RetrievalRequest,
     RetrievalResult,
 )
+from app.response_assembly import (
+    AssemblyIntegrityError,
+    ResponseAssemblyRequest,
+    ResponseAssemblyResult,
+    ResponseAssemblyService,
+)
 
 
 app = FastAPI(
@@ -28,6 +34,7 @@ except RepositoryLoadError as exc:
 readiness_service = WorkflowReadinessService(repository)
 execution_service = ExecutionContextService(repository)
 retrieval_service = PassageRetrievalService(repository)
+response_assembly_service = ResponseAssemblyService(repository)
 
 
 @app.get("/health")
@@ -100,6 +107,27 @@ def retrieve_passages(workflow_id: str, request: RetrievalRequest) -> RetrievalR
         raise HTTPException(
             status_code=404, detail=f"Workflow '{workflow_id}' was not found.",
         )
+    return result
+
+
+@app.post("/workflows/{workflow_id}/response/assemble")
+def assemble_response(workflow_id: str, request: ResponseAssemblyRequest) -> ResponseAssemblyResult:
+    try:
+        result = response_assembly_service.assemble(workflow_id, request)
+    except IntakeResolutionError as exc:
+        raise HTTPException(status_code=409, detail={
+            "code": exc.code, "candidate_intake_ids": exc.candidate_ids,
+        }) from exc
+    except RetrievalFilterError as exc:
+        raise HTTPException(status_code=422, detail={
+            "code": "filters_not_in_workflow_package", "invalid_filters": exc.invalid_filters,
+        }) from exc
+    except RepositoryLoadError as exc:
+        raise HTTPException(status_code=409, detail={"code": "corpus_integrity_error"}) from exc
+    except AssemblyIntegrityError as exc:
+        raise HTTPException(status_code=409, detail={"code": str(exc)}) from exc
+    if result is None:
+        raise HTTPException(status_code=404, detail=f"Workflow '{workflow_id}' was not found.")
     return result
 
 

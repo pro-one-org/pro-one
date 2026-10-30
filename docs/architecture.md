@@ -47,6 +47,10 @@ The separate `POST /workflows/{workflow_id}/retrieval` service resolves that sam
 
 Retrieval returns an inspection package that a future layer can join to an execution context by `workflow_id`. It calls the existing readiness service and never grants public execution. Intake/execution logic is unchanged; proposed excerpts are not automatically copied into its fact context. No runtime network calls, model calls, passage generation, or answer generation exist. See [Source corpus](source-corpus.md) for exact selection, ranking, maturity, and freshness behavior.
 
+`app/grounding.py` now evaluates the actual selected evidence and its linked sources, legal rules, process steps, response patterns, and active risks. It calls workflow readiness independently rather than adding optional passages to the workflow readiness gate. Existing review scopes are shared with repository validation through `app/review_policy.py`. Public grounding additionally requires explicit version-bound currentness certification; absence, expiry, unresolved issues, unsupported/rejected material, invalid links, and applicable unresolved propositions block release.
+
+`app/response_assembly.py` composes execution, retrieval, and grounding in `POST /workflows/{workflow_id}/response/assemble`. It builds citation-backed proposition references and response constraints, not prose. Repository-configured support gaps can withhold topic claims without interpreting source language. The final conjunction is input eligibility AND workflow readiness AND grounding eligibility AND package integrity; development availability is separate. See [Grounded response assembly](grounded-response-assembly.md) for the server-owned evaluation date, freshness policy, and claim boundaries. No model or generation component exists.
+
 ## Intended pipeline
 
 ```text
