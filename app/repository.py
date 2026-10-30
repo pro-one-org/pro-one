@@ -5,6 +5,8 @@ from typing import Any
 from jsonschema import Draft202012Validator, FormatChecker
 from referencing import Registry, Resource
 
+from app.corpus import passage_relationship_errors
+
 
 class RepositoryLoadError(RuntimeError):
     """Raised when Pro-One repository data cannot be loaded safely."""
@@ -21,6 +23,7 @@ class RecordRepository:
         "risks": "sample-risks.json",
         "responses": "sample-responses.json",
         "evaluation_fixtures": "sample-evaluation-fixtures.json",
+        "source_passages": "source-passages.json",
     }
 
     DOMAIN_SCHEMAS = {
@@ -33,6 +36,7 @@ class RecordRepository:
         "risks": "risk.schema.json",
         "responses": "response.schema.json",
         "evaluation_fixtures": "evaluation-fixture.schema.json",
+        "source_passages": "source-passage.schema.json",
     }
 
     def __init__(
@@ -51,6 +55,24 @@ class RecordRepository:
 
         self._load_schemas()
         self._load()
+        self.validate_source_passages()
+
+    def validate_source_passages(self, workflow_id: str | None = None) -> None:
+        """Fail closed for broken corpus links, including after in-memory edits."""
+        for passage in self.records["source_passages"].values():
+            if workflow_id is not None and workflow_id not in passage["workflow_ids"]:
+                continue
+            errors = passage_relationship_errors(
+                passage,
+                sources=self.records["sources"],
+                workflows=self.records["workflows"],
+                legal_rules=self.records["legal_rules"],
+                process_steps=self.records["process_steps"],
+            )
+            if errors:
+                raise RepositoryLoadError(
+                    f"Invalid source passage {passage['id']}: {', '.join(errors)}"
+                )
 
     def _load_json(self, path: Path) -> Any:
         try:
@@ -209,6 +231,7 @@ class RecordRepository:
                 "process_steps",
                 "legal_documents",
                 "intakes",
+                "source_passages",
             }:
                 workflow_ids = record.get("workflow_ids", [])
 
@@ -266,6 +289,9 @@ class RecordRepository:
             ),
             "evaluation_fixtures": self._records_for_workflow(
                 "evaluation_fixtures", workflow_id
+            ),
+            "source_passages": self._records_for_workflow(
+                "source_passages", workflow_id
             ),
         }
 

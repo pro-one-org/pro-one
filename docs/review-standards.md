@@ -110,6 +110,7 @@ An `approved` review is necessary but not sufficient for a record to become `sup
 | Record domain | Required review scopes |
 | --- | --- |
 | Source | `schema`, `source_authority`, `source_freshness`, `jurisdiction` |
+| Source passage | `schema`, `source_authority`, `source_freshness`, `jurisdiction`, `legal_information_boundary` |
 | Workflow | `schema`, `jurisdiction`, `legal_information_boundary`, `safety`, `evaluation` |
 | Process step | `schema`, `jurisdiction`, `legal_information_boundary`, `safety`, `evaluation` |
 | Legal document | `schema`, `jurisdiction`, `legal_information_boundary`, `safety`, `privacy`, `evaluation` |

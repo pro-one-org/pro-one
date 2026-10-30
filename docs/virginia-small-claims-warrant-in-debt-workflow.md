@@ -2,6 +2,8 @@
 
 Status: proposed specification and research corpus. This workflow is not legally reviewed, approved, supported, implemented, or publicly available. All associated records and fixtures remain proposed.
 
+The local runtime now has a [development passage corpus](source-corpus.md) verified against the currently hosted official sources on 2026-10-30. This adds inspectable excerpts and deterministic retrieval; it does not implement the user-facing legal workflow, approve the sources, or resolve the legal questions below. The September research account remains historical; its absence of reproduced source text refers to that account.
+
 ## Exact scope
 
 - Jurisdiction: Commonwealth of Virginia.

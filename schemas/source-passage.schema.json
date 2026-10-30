@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "source-passage.schema.json",
+  "title": "Pro-One Source Passage",
+  "description": "A minimal curated excerpt. Source URL, citation, authority, dates and rights resolve through source_id; verification is research, not legal approval.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "schema_version", "record_version", "last_modified", "title",
+    "status", "review", "source_id", "workflow_ids", "jurisdiction",
+    "locator", "propositions", "text", "verification", "limitations",
+    "legal_rule_ids", "process_step_ids"
+  ],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/recordId" },
+    "schema_version": { "$ref": "common.schema.json#/$defs/schemaVersion" },
+    "record_version": { "$ref": "common.schema.json#/$defs/recordVersion" },
+    "last_modified": { "$ref": "common.schema.json#/$defs/lastModified" },
+    "title": { "type": "string", "minLength": 1 },
+    "status": { "$ref": "common.schema.json#/$defs/maturityStatus" },
+    "review": { "$ref": "common.schema.json#/$defs/reviewInformation" },
+    "source_id": { "$ref": "common.schema.json#/$defs/recordId" },
+    "workflow_ids": {
+      "$ref": "common.schema.json#/$defs/recordIdArray",
+      "minItems": 1
+    },
+    "jurisdiction": { "$ref": "common.schema.json#/$defs/jurisdiction" },
+    "locator": { "type": "string", "minLength": 1 },
+    "propositions": {
+      "description": "Stable topic tags local to the passage corpus, not foreign-key records or assertions of legal approval.",
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": { "$ref": "common.schema.json#/$defs/recordId" }
+    },
+    "text": {
+      "description": "Exact short excerpt with whitespace flattened where necessary; read with locator and limitations.",
+      "type": "string", "minLength": 1, "maxLength": 1000
+    },
+    "verification": {
+      "type": "object", "additionalProperties": false,
+      "required": ["retrieved_on", "verified_on", "source_version", "excerpt_hash", "method"],
+      "properties": {
+        "retrieved_on": { "type": "string", "format": "date" },
+        "verified_on": { "type": "string", "format": "date" },
+        "source_version": { "type": "string", "minLength": 1 },
+        "excerpt_hash": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" },
+        "method": { "const": "manual_official_source_check" }
+      }
+    },
+    "limitations": {
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "legal_rule_ids": { "$ref": "common.schema.json#/$defs/recordIdArray" },
+    "process_step_ids": { "$ref": "common.schema.json#/$defs/recordIdArray" }
+  },
+  "allOf": [{
+    "if": { "properties": { "status": { "const": "supported" } }, "required": ["status"] },
+    "then": { "properties": {
+      "review": { "properties": {
+        "status": { "const": "approved" },
+        "review_scope": { "allOf": [
+          { "contains": { "const": "schema" } },
+          { "contains": { "const": "source_authority" } },
+          { "contains": { "const": "source_freshness" } },
+          { "contains": { "const": "jurisdiction" } },
+          { "contains": { "const": "legal_information_boundary" } }
+        ] }
+      } }
+    } }
+  }]
+}

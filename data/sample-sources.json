@@ -755,8 +755,8 @@
   {
     "id": "va-small-claims-procedure-code",
     "schema_version": "1.0.0",
-    "record_version": "0.1.0",
-    "last_modified": "2026-09-28",
+    "record_version": "0.1.1",
+    "last_modified": "2026-10-30",
     "title": "Code of Virginia Article 5: Small Claims Court",
     "description": "Official Virginia statutory source for the proposed small-claims Warrant in Debt workflow, including jurisdiction, trial, pleadings, representation, and removal provisions.",
     "status": "proposed",
@@ -765,7 +765,7 @@
     "jurisdiction": {"country":"US","state":"Virginia","locality":null,"court":"Virginia General District Court Small Claims Division","agency":null,"jurisdiction_notes":"Applies only within the statutory small-claims framework; workflow scope must be confirmed from the served warrant."},
     "authority": {"level":"official_primary","issuing_body":"Virginia General Assembly","is_source_of_truth":true,"authority_notes":"Official Code of Virginia publication."},
     "dates": {"published":null,"effective_from":null,"effective_through":null,"last_updated":null,"last_verified":"2026-09-28"},
-    "provenance": {"source_content_version":"Current official web publication viewed 2026-09-28","content_hash":null,"superseded_by_source_id":null,"provenance_notes":"No source text is reproduced in the repository."},
+    "provenance": {"source_content_version":"Current official web publication viewed 2026-09-28","content_hash":null,"superseded_by_source_id":null,"provenance_notes":"Source metadata is retained here; minimal proposed excerpts and their separate verification dates are in source-passages.json."},
     "access": {"is_free":true,"requires_login":false,"format":"html","access_notes":"Public official legislative site."},
     "rights": {"reuse_status":"unknown","license":null,"terms_url":null,"rights_notes":"Metadata and link retained; reuse terms require review."},
     "review": {"status":"proposed","reviewed_by":null,"reviewer_role":null,"review_scope":[],"reviewed_on":null,"reviewed_record_version":null,"review_notes":"Research metadata only; not approved for public use."},
@@ -776,8 +776,8 @@
   {
     "id": "va-dc402-warrant-in-debt-small-claims-form",
     "schema_version": "1.0.0",
-    "record_version": "0.1.0",
-    "last_modified": "2026-09-28",
+    "record_version": "0.1.1",
+    "last_modified": "2026-10-30",
     "title": "Form DC-402: Warrant in Debt — Small Claims Division",
     "description": "Official Virginia Judicial System form used to initiate a small-claims money claim and identify the return date and time.",
     "status": "proposed",
@@ -792,7 +792,7 @@
     "review": {"status":"proposed","reviewed_by":null,"reviewer_role":null,"review_scope":[],"reviewed_on":null,"reviewed_record_version":null,"review_notes":"Not approved or verified for public workflow use."},
     "workflow_fit": {"topics":["virginia_small_claims","warrant_in_debt","court_document_identification"],"workflow_ids":["va-small-claims-warrant-in-debt-information"],"risk_level":"high","limitations":["The workflow does not complete, sign, file, serve, or alter this form.","Information on the served form controls over any repository description."],"not_for":["form_completion","filing","service","deadline_calculation"]},
     "citation": {"preferred_citation":"Va. Form DC-402, Warrant in Debt — Small Claims Division","retrieved_at":"2026-09-28","archive_url":null},
-    "notes":"Official form metadata; no form content is copied into the repository."
+    "notes":"Official form metadata; only minimal proposed excerpts are retained separately in source-passages.json, with reuse status still unknown."
   },
   {
     "id": "va-small-claims-self-help",
