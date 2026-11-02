@@ -26,6 +26,8 @@ from app.config import Settings
 from app.routing import MatterRequest, MatterRoutingService, WorkflowCatalogService
 from app.product import ProductResponseRequest, ProductService
 from app.security import SecurityMiddleware
+from app.assistant import AssistantRequest, AssistantService
+from app.documents import isolated_extract
 
 
 app = FastAPI(
@@ -217,6 +219,29 @@ def resolve_scope(workflow_id: str, request: MatterRequest):
 @app.get("/model/status")
 def model_status():
     return settings.status(generation_service.registry)
+
+
+@app.get("/assistant/status")
+def assistant_status():
+    return AssistantService(repository, settings, generation_service).status()
+
+
+@app.post("/documents/extract")
+async def document_extract(request: Request):
+    from starlette.concurrency import run_in_threadpool
+    try:
+        return await run_in_threadpool(isolated_extract, await request.body(), request.headers.get("content-type", ""))
+    except Exception as exc:
+        message = str(exc) if type(exc) is ValueError else "The document could not be read safely. Try a redacted TXT copy."
+        return JSONResponse({"detail": {"message": message}}, status_code=422)
+
+
+@app.post("/assistant/message")
+def assistant_message(request: AssistantRequest):
+    try:
+        return AssistantService(repository, settings, generation_service).message(request)
+    except (RepositoryLoadError, AssemblyIntegrityError, IntakeResolutionError, RetrievalFilterError):
+        return {"status": "unavailable", "message": "Official source information is temporarily unavailable. Please try again later."}
 
 
 @app.post("/workflows/{workflow_id}/response")

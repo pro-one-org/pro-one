@@ -6,7 +6,7 @@ Pro-One helps individuals representing themselves and small businesses handling 
 
 ## Product status
 
-The local beta has a usable web interface, structured matter routing, deterministic scope checks, official-source retrieval, provider-neutral generation, independent output validation, and readable citations. It is stateless: no accounts, saved conversations, database, payments, or user profiling.
+The local beta has a usable web interface, structured matter routing, deterministic scope checks, official-source retrieval, provider-neutral generation, independent output validation, and readable citations. Start with a natural-language question or a redacted document. The assistant asks for missing details and keeps citations beside the conversation. It is stateless: no accounts, saved conversations, database, payments, or user profiling.
 
 **All real workflows, sources, passages, and reviews remain proposed. No workflow is approved for unrestricted public use.** Development mode can exercise them. Production mode refuses unapproved workflow generation and disables the testing provider and internal inspection endpoints. No currentness or attorney review has been fabricated.
 
@@ -35,7 +35,7 @@ python -m pip install -r requirements-dev.txt
 python -B -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --no-access-log
 ```
 
-Open [Pro-One locally](http://127.0.0.1:8000). Choose Individual or Small Business, confirm the structured matter, complete the minimum intake, and submit a question. The default development adapter is explicitly labeled **Offline test provider**: it returns selected source excerpts, not a live AI answer. No frontend build or provider credential is needed for this path.
+Open [Pro-One locally](http://127.0.0.1:8000). Describe your situation in the composer or attach a redacted document. Confirm the identified details, answer any missing question, and continue with natural-language follow-ups. The default development adapter is explicitly labeled **Offline test provider**: it returns selected source excerpts, not a live AI answer. No frontend build or provider credential is needed for this path.
 
 ## Real-provider setup
 
@@ -118,3 +118,17 @@ Before public exposure, legal/source/currentness and fixture review must complet
 ## Project standards
 
 Read the [roadmap](docs/roadmap.md), [legal-safety standards](docs/legal-safety.md), [privacy principles](docs/privacy-principles.md), [source standards](docs/source-standards.md), [review standards](docs/review-standards.md), and [evaluation principles](docs/evaluation-principles.md). Structural validity and automated test success do not confer legal approval.
+
+## Conversation preview
+
+Start with a question or a redacted document. The assistant identifies candidate details, asks you to confirm them, and asks for missing information one question at a time. Follow-ups reuse confirmed matter details, while every answer still passes through server-side scope, evidence and output checks. The web interface never asks users to select a provider or model.
+
+The offline demo uses conservative pattern matching and official-source excerpts, not AI interpretation. Its banner stays visible. With a configured real provider, the same conversation service requests strict structured candidate extraction before invoking the existing grounded response pipeline. Inferred and document-derived fields require explicit user confirmation; model claims of explicit provenance do too.
+
+Documents: UTF-8 TXT, text-readable PDF (up to 20 pages), and DOCX; maximum 2 MB and 16,000 extracted characters. No OCR, encrypted PDFs, macros or persistent upload storage. Remove sensitive identifiers before uploading. Text and attachments remain in browser memory until reload; the server processes them in memory. A configured provider receives the text for candidate extraction. Pattern-based redaction checks cannot identify every sensitive value.
+
+Product endpoints are `GET /assistant/status`, `POST /assistant/message`, and `POST /documents/extract`. The upload endpoint accepts raw bytes with an allowlisted Content-Type, not a filesystem path or multipart filename. Developer APIs remain available under their existing mode restrictions.
+
+Conversation state is bounded to 30 turns and authenticated with a process-local signing key. Restarting the process expires existing conversations. Use a single worker for this preview; multi-worker deployment needs a shared, server-managed signing key and expiry policy before expansion. State contains structured user facts, pending candidates and the current question, never assistant answers or legal authority. Production still refuses proposed topic execution before model calls.
+
+Live provider verification requires server credentials. Tests use mocks and the clearly labeled offline adapter. Document parsers run in a child process with an eight-second timeout; Linux additionally caps address space at 256 MB and CPU time at five seconds. Windows enforces the timeout but lacks these resource limits. Public deployment still needs host-level concurrent-request and abuse controls.

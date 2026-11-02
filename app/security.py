@@ -18,7 +18,7 @@ class SecurityMiddleware:
                 if message["type"] == "http.disconnect":
                     return
                 body += message.get("body", b"")
-                if len(body) > self.max_body:
+                if len(body) > (2 * 1024 * 1024 if scope["path"] == "/documents/extract" else self.max_body):
                     return await JSONResponse({"detail": {"code": "request_too_large"}}, status_code=413)(scope, receive, send)
                 more = message.get("more_body", False)
             consumed = False
