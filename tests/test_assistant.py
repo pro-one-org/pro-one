@@ -110,6 +110,11 @@ class ExtractionTests(unittest.TestCase):
 class AdditionalSafetyTests(unittest.TestCase):
     setUp = AssistantTests.setUp
     post = AssistantTests.post
+    def test_overlong_candidate_cannot_crash_confirmation(self):
+        from app.assistant import seal
+        token=seal({'facts':{'user_type':{'value':'self_represented_individual','provenance':'user_confirmed'}},
+                    'pending':{'state':{'value':'x'*250,'provenance':'inferred'}},'question':'Explain this','turn':1})
+        self.assertEqual('clarification_needed',self.post('Yes',token)['status'])
     def test_bad_generated_answer_is_not_returned(self):
         from app.models.testing import testing_registry
         with patch('app.main.generation_service',GenerationService(testing_registry('invented_deadline'))):

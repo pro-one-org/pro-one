@@ -7,7 +7,7 @@ import re
 import secrets
 from typing import Literal
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, ValidationError
 
 from app.matter_extraction import MatterExtractionService, ExtractionUnavailable
 from app.product import ProductService, ProductResponseRequest
@@ -129,7 +129,11 @@ class AssistantService:
         if values.get("user_type") not in {"self_represented_individual", "small_business_owner"}:
             state["asking"] = "user_type"
             return reply("clarification_needed", "Are you an individual being sued, or a business owner? Please describe your situation.")
-        matter = MatterRequest(**values)
+        try:
+            matter = MatterRequest(**values)
+        except ValidationError:
+            state["facts"], state["pending"] = {}, {}
+            return reply("clarification_needed", "Those details could not be verified. Please give the state and the short title or form number printed on the document.")
         routed = self.router.evaluate(matter)
         if routed["state"] == "unsupported":
             return reply("unsupported", "These details do not fit the legal topics Pro-One currently covers. Check the court or agency's official help resources.")
