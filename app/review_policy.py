@@ -1,6 +1,8 @@
 """Existing supported-record review scopes shared by validation and release gates."""
 
 SUPPORTED_REVIEW_SCOPES = {
+    "legal_capability": frozenset({"schema", "source_authority", "source_freshness", "jurisdiction", "legal_information_boundary", "safety", "evaluation"}),
+    "research_evaluation": frozenset({"schema", "evaluation"}),
     "source_passage": frozenset({
         "schema", "source_authority", "source_freshness", "jurisdiction",
         "legal_information_boundary",

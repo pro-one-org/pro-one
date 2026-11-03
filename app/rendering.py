@@ -20,14 +20,28 @@ class ResponseRenderingService:
         canonical = {c["citation_id"]: c for c in package["response_plan"]["citations"]}
         sources = {s["id"]: s for s in package["grounding"]["sources"]}
         used = draft["citations_used"]
+        if package.get("evidence_mode") in {"capability", "general_research"}:
+            claim_index = {c["claim_id"]: c for c in package["response_plan"]["claims"]}
+            used = list(dict.fromkeys(cid for section in draft["sections"] for claim_id in section["claim_ids"]
+                                     for cid in claim_index[claim_id]["citation_ids"]))
         numbers = {cid: i + 1 for i, cid in enumerate(used)}
+        sections = [{"heading": HEADINGS.get(s["section_id"], "Information"), "text": s["text"],
+                     "citation_numbers": [numbers[c] for c in s["citation_ids"]],
+                     "user_provided": s["kind"] == "user_fact"} for s in draft["sections"] if s["kind"] != "control"]
+        if package.get("evidence_mode") in {"capability", "general_research"}:
+            claims = {c["claim_id"]: c for c in package["response_plan"]["claims"]}
+            sections = [{"heading": "From the sources", "text": text,
+                         "citation_numbers": [numbers[c] for c in claims[cid]["citation_ids"]], "user_provided": False}
+                        for s in draft["sections"] if s["kind"] == "legal_information"
+                        for cid, text in zip(s["claim_ids"], s["text"].split("\n\n"))]
         return {
-            "sections": [{"heading": HEADINGS.get(s["section_id"], "Information"), "text": s["text"],
-                          "citation_numbers": [numbers[c] for c in s["citation_ids"]],
-                          "user_provided": s["kind"] == "user_fact"} for s in draft["sections"] if s["kind"] != "control"],
+            "sections": sections,
             "warnings": sorted({p for s in draft["sections"] if s["kind"] == "control" for p in s["text"].split("\n\n")}),
             "notices": sorted({text for risk in package["risks"]["recognized"] for text in risk["allowed_support"]["allowed_language"]}),
             "sources": [{"number": numbers[cid], "title": canonical[cid]["source_title"],
+                         "source_type": sources[canonical[cid]["source_id"]]["source_type"],
+                         "case_metadata": sources[canonical[cid]["source_id"]].get("case_metadata"),
+                         "enactment_metadata": sources[canonical[cid]["source_id"]].get("enactment_metadata"),
                          "issuing_authority": sources[canonical[cid]["source_id"]]["authority"]["issuing_body"],
                          "citation": canonical[cid]["preferred_citation"], "locator": canonical[cid]["locator"],
                          "url": canonical[cid]["official_url"] if canonical[cid]["official_url"].startswith("https://") else None,
@@ -35,4 +49,5 @@ class ResponseRenderingService:
                          "maturity": canonical[cid]["source_status"]} for cid in used],
             "limitations": package["response_plan"]["limitations"],
             "status_label": "Accepted development response", "publicly_approved": False,
+            "evidence_mode": package.get("evidence_mode", "workflow"),
         }

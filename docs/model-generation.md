@@ -1,5 +1,7 @@
 # Development generation and evaluation
 
+Capability and general-research packages share this generator, validator and renderer with workflows. Research uses a null workflow ID and exact allowed claim text (source excerpts or curated compiled explanations); unsupported paraphrases fail closed. See [Architecture](architecture.md) and [Capability compiler](capability-compiler.md) for evidence modes, authority providers, currentness and research evaluations.
+
 The generation layer consumes the deterministic assembly contract and returns an accepted or rejected **development draft**. Acceptance means the checks described here passed; it is not approval, legal sufficiency, semantic verification, or public release. Generation always returns `public_execution.allowed: false`, while exposing the independent assembly eligibility result. All Virginia records/reviews remain proposed and all currentness remains uncertified.
 
 ## Provider boundary and configuration

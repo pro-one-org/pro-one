@@ -620,5 +620,294 @@
     "process_step_ids": [
       "md-district-civil-defendant-orientation-resources-step"
     ]
+  },
+  {
+    "id": "va-premises-duty",
+    "title": "Fultz v. Delhaize America, Inc. — duty",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-11-03",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-fultz-delhaize",
+    "workflow_ids": [],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": null
+    },
+    "locator": "PDF page 5, discussion of storeowner duty",
+    "propositions": [
+      "duty",
+      "premises_liability",
+      "negligence"
+    ],
+    "text": "a storeowner is not an insurer of the invitee’s safety on the premises, but must use ordinary care to render them reasonably safe for the invitee's visit.",
+    "verification": {
+      "retrieved_on": "2026-11-03",
+      "verified_on": "2026-11-03",
+      "source_version": "Official opinion dated 2009-06-04",
+      "excerpt_hash": "sha256:f0c35c6b9aa4a7a7b0f7f4e1bb5348379c888e825ccdbebb165bb9b4bdf397d1",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Source-linked proposed explanation; human legal review is pending.",
+      "Invitee status, actual or constructive notice, causation, damages and defenses require facts; no outcome is determined."
+    ],
+    "legal_rule_ids": [
+      "va-premises-duty-rule"
+    ],
+    "process_step_ids": []
+  },
+  {
+    "id": "va-premises-warning",
+    "title": "Fultz v. Delhaize America, Inc. — notice",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-11-03",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-fultz-delhaize",
+    "workflow_ids": [],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": null
+    },
+    "locator": "PDF page 5, warning and open-and-obvious qualification",
+    "propositions": [
+      "notice",
+      "premises_liability",
+      "negligence"
+    ],
+    "text": "must give notice or warning of an unsafe condition which is known to him and is unknown to the invitee, such notice is not required where the dangerous condition is open and obvious, and is patent to a reasonable person exercising ordinary care for his own safety.",
+    "verification": {
+      "retrieved_on": "2026-11-03",
+      "verified_on": "2026-11-03",
+      "source_version": "Official opinion dated 2009-06-04",
+      "excerpt_hash": "sha256:164b052abe1841779ad94935fc9cde97f61c044fb6d20c0362226b330e1a4dd6",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Source-linked proposed explanation; human legal review is pending.",
+      "Invitee status, actual or constructive notice, causation, damages and defenses require facts; no outcome is determined."
+    ],
+    "legal_rule_ids": [
+      "va-premises-warning-rule"
+    ],
+    "process_step_ids": []
+  },
+  {
+    "id": "va-premises-contributory",
+    "title": "Fultz v. Delhaize America, Inc. — contributory_negligence",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-11-03",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-fultz-delhaize",
+    "workflow_ids": [],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": null
+    },
+    "locator": "PDF page 6, contributory negligence objective standard",
+    "propositions": [
+      "contributory_negligence",
+      "premises_liability",
+      "negligence"
+    ],
+    "text": "an affirmative defense that must be proved according to an objective standard whether the plaintiff failed to act as a reasonable person would have acted for his or her own safety under the circumstances.",
+    "verification": {
+      "retrieved_on": "2026-11-03",
+      "verified_on": "2026-11-03",
+      "source_version": "Official opinion dated 2009-06-04",
+      "excerpt_hash": "sha256:b7e1dbf61be066d6159776968653656da46f8bde1c72d7e29fd1122c10151a47",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Source-linked proposed explanation; human legal review is pending.",
+      "Invitee status, actual or constructive notice, causation, damages and defenses require facts; no outcome is determined."
+    ],
+    "legal_rule_ids": [
+      "va-premises-contributory-rule"
+    ],
+    "process_step_ids": []
+  },
+  {
+    "id": "va-premises-created-condition",
+    "title": "Austin v. Shoney's, Inc. — notice",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-11-03",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-austin-shoneys",
+    "workflow_ids": [],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": null
+    },
+    "locator": "PDF pages 7-8, majority opinion notice analysis",
+    "propositions": [
+      "notice",
+      "premises_liability",
+      "negligence"
+    ],
+    "text": "If the jury accepted the plaintiff's theory that the grease-like film was the result of the improper cleaning methods, the hazardous condition was affirmatively created by the property owner.",
+    "verification": {
+      "retrieved_on": "2026-11-03",
+      "verified_on": "2026-11-03",
+      "source_version": "Official opinion dated 1997-06-06",
+      "excerpt_hash": "sha256:7695c728a8abfc10cc54f2449e88eade5d4b17779412f607780553d4db96b7fa",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Source-linked proposed explanation; human legal review is pending.",
+      "Invitee status, actual or constructive notice, causation, damages and defenses require facts; no outcome is determined."
+    ],
+    "legal_rule_ids": [
+      "va-premises-created-condition-rule"
+    ],
+    "process_step_ids": [],
+    "conflicts": [
+      "Austin contains a dissent disputing the inferences about cleaning and notice. Its majority reviewed a motion to strike; it did not find liability after trial."
+    ]
+  },
+  {
+    "id": "va-premises-causation",
+    "title": "Austin v. Shoney's, Inc. — causation",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-11-03",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-austin-shoneys",
+    "workflow_ids": [],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": null
+    },
+    "locator": "PDF page 8, majority opinion causation analysis",
+    "propositions": [
+      "causation",
+      "premises_liability",
+      "negligence"
+    ],
+    "text": "The testimony of Meadows that Austin's cane \"jetted\" out from under her suddenly and without warning just before she fell is sufficient to raise the inference that Austin's fall was caused by the condition of the floor.",
+    "verification": {
+      "retrieved_on": "2026-11-03",
+      "verified_on": "2026-11-03",
+      "source_version": "Official opinion dated 1997-06-06",
+      "excerpt_hash": "sha256:6bb4f44a6451c06ae3efc3ffb3f0ae0c2857c422c817b715365aa3afe214960f",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Source-linked proposed explanation; human legal review is pending.",
+      "Invitee status, actual or constructive notice, causation, damages and defenses require facts; no outcome is determined."
+    ],
+    "legal_rule_ids": [
+      "va-premises-causation-rule"
+    ],
+    "process_step_ids": [],
+    "conflicts": [
+      "Austin contains a dissent disputing the inferences about cleaning and notice. Its majority reviewed a motion to strike; it did not find liability after trial."
+    ]
+  },
+  {
+    "id": "va-premises-limitations",
+    "title": "Virginia personal injury limitations — limitations",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-11-03",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-personal-injury-limitations",
+    "workflow_ids": [],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": null
+    },
+    "locator": "Section 8.01-243(A), first sentence",
+    "propositions": [
+      "limitations",
+      "premises_liability",
+      "negligence"
+    ],
+    "text": "Unless otherwise provided in this section or by other statute, every action for personal injuries, whatever the theory of recovery, and every action for damages resulting from fraud, shall be brought within two years after the cause of action accrues.",
+    "verification": {
+      "retrieved_on": "2026-11-03",
+      "verified_on": "2026-11-03",
+      "source_version": "Official Code page retrieved 2026-11-03; effective date unresolved",
+      "excerpt_hash": "sha256:96c51e303a52ccbd856d92fe7514acbb0beab30ce9527a5ebdd2237cc08b679e",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Source-linked proposed explanation; human legal review is pending.",
+      "Invitee status, actual or constructive notice, causation, damages and defenses require facts; no outcome is determined.",
+      "No case-specific deadline, accrual date, tolling determination or exception is established."
+    ],
+    "legal_rule_ids": [
+      "va-premises-limitations-rule"
+    ],
+    "process_step_ids": []
   }
 ]

@@ -21,7 +21,7 @@ class GeneratedSection(StrictDraftModel):
 
 
 class GeneratedDraft(StrictDraftModel):
-    workflow_id: str = Field(min_length=1, max_length=120)
+    workflow_id: str | None = Field(min_length=1, max_length=120)
     sections: list[GeneratedSection] = Field(min_length=1, max_length=30)
     citations_used: list[str] = Field(max_length=50)
     disclosures_included: list[str] = Field(max_length=50)

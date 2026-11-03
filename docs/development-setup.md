@@ -1,11 +1,11 @@
 # Development Setup
 
-Pro-One is currently an architecture, specification, and technical-foundation repository. It contains interoperable JSON Schemas, fictional sample records, validation tooling, issue templates, and standards for sources, safety, privacy, governance, workflows, responses, and evaluation. It does not contain a production application, backend, frontend, database, or AI pipeline.
+Pro-One includes a FastAPI runtime, conversational UI, legal capabilities, workflow-independent research, specialized procedural workflows, model/authority adapters and a capability compiler. Legal/source/currentness review remains pending. See [Architecture](architecture.md) and [startup instructions](../README.md#run-locally).
 
 ## Prerequisites
 
 - Git
-- Python 3.10 or later
+- Python 3.12 or later
 - a code editor and terminal
 - a GitHub account if you plan to open a pull request
 
@@ -18,7 +18,7 @@ cd pro-one
 
 ## Install validation dependencies
 
-Use a virtual environment if desired, then install the single development dependency:
+Use a virtual environment and install the declared development dependencies:
 
 ```bash
 python -m pip install -r requirements-dev.txt
@@ -59,9 +59,9 @@ git status --short
 
 ## How schemas and records fit together
 
-The nine record domains under [`schemas/`](../schemas/) correspond to the nine `data/sample-*.json` files. Shared concepts live in [`schemas/common.schema.json`](../schemas/common.schema.json) and are referenced by the domain schemas.
+The twelve record domains under [`schemas/`](../schemas/) include capabilities and research evaluations alongside the existing workflow graph. Shared concepts live in [`schemas/common.schema.json`](../schemas/common.schema.json). The [compiler](capability-compiler.md) writes separate review artifacts.
 
-All sample records are fictional placeholders. A valid proposed record is not necessarily reviewed, approved, or supported. The `schema_version`, `record_version`, and `last_modified` fields provide a migration path; review provenance records the exact `reviewed_record_version` when a review occurs.
+Records include fictional placeholders and proposed real Virginia/Maryland collections. A valid proposed record is not necessarily reviewed, approved, current or supported. Version metadata provides a migration path; reviews bind an exact `reviewed_record_version`.
 
 ## Add or change a record
 

@@ -59,6 +59,7 @@ function sourcePanel(sources, prefix) {
       el("small", s.issuing_authority),
       el("small", s.locator),
       el("small", s.citation),
+      el("small", (s.source_type || "official source").replaceAll("_", " ")),
       el(
         "small",
         s.currentness === "certified"
@@ -66,6 +67,13 @@ function sourcePanel(sources, prefix) {
           : "Currentness has not been certified",
       ),
     );
+    if (s.case_metadata) {
+      row.append(el("small", s.case_metadata.court + " · " + (s.case_metadata.decision_date || "Date unknown")),
+        el("small", "Subsequent treatment: " + s.case_metadata.subsequent_treatment));
+    }
+    if (s.enactment_metadata) {
+      row.append(el("small", "Section " + s.enactment_metadata.section + " · Effective date " + (s.enactment_metadata.effective_date || "unverified")));
+    }
     for (const limit of s.limitations) row.append(el("small", limit));
     $("sources").append(row);
   }
@@ -83,7 +91,7 @@ async function send(event) {
   appendTurn(message, "user");
   $("message").value = "";
   $("progress").textContent =
-    "Understanding your situation and checking supported sources…";
+    "Understanding your question and checking authoritative sources…";
   try {
     const data = await api("/assistant/message", {
       message,
@@ -103,6 +111,8 @@ async function send(event) {
             " · " +
             (fact.provenance === "user_confirmed"
               ? "You confirmed"
+              : fact.provenance === "candidate_classification"
+              ? "Topic to research"
               : "You provided"),
         ),
       );
@@ -223,6 +233,15 @@ $("file").addEventListener("change", async () => {
 api("/assistant/status")
   .then((data) => {
     $("demo").hidden = !data.demo;
+    if (data.demo) {
+      const examples = ["Try premises liability example", "I received Virginia form DC-402", "My Virginia LLC SCC record"];
+      $("suggestions").replaceChildren();
+      for (const text of examples) {
+        const button = el("button", text);
+        button.addEventListener("click", () => populate(text));
+        $("suggestions").append(button);
+      }
+    }
     if (!data.available)
       $("progress").textContent =
         "Live AI is unavailable. Please try again later.";

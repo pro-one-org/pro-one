@@ -36,6 +36,12 @@ jobs:
       - name: Evaluate mapped fixtures with offline test provider
         run: python -B scripts/run_evaluations.py
 
+      - name: Check conversational JavaScript
+        run: node --check app/web/app.js
+
+      - name: Compile a proposed capability review bundle
+        run: python -B scripts/build_capability.py --jurisdiction Virginia --legal-area torts --topic premises_liability --output "$RUNNER_TEMP/pro-one-capability-review"
+
       - name: Build production container
         run: docker build -t pro-one:mvp .
 
@@ -57,6 +63,18 @@ jobs:
               assert len(json.load(response)['workflows']) == 3
           with urllib.request.urlopen('http://127.0.0.1:8000/model/status') as response:
               assert json.load(response)['mode'] == 'production'
-          print('Production container health, catalog, and mode passed.')
+          with urllib.request.urlopen('http://127.0.0.1:8000/capabilities') as response:
+              assert len(json.load(response)['capabilities']) == 4
+          with urllib.request.urlopen('http://127.0.0.1:8000/openapi.json') as response:
+              assert '/research/evidence' in json.load(response)['paths']
+          request = urllib.request.Request('http://127.0.0.1:8000/research/evidence',
+              data=json.dumps({'country':'US','state':'Virginia','legal_area':'torts','topics':['premises_liability']}).encode(),
+              headers={'Content-Type':'application/json'})
+          try:
+              urllib.request.urlopen(request)
+              raise AssertionError('Proposed research must not execute in production')
+          except urllib.error.HTTPError as error:
+              assert error.code == 403
+          print('Production health, workflow/capability catalogs, OpenAPI and research release gate passed.')
           PY
           docker stop pro-one-smoke

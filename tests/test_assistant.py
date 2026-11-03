@@ -62,7 +62,7 @@ class AssistantTests(unittest.TestCase):
         result=self.post('Not shown',result['conversation_state'])
         self.assertEqual('answered',result['status'])
     def test_unknown_needs_clarification(self):
-        self.assertEqual('clarification_needed',self.post('I received a document')['status'])
+        self.assertEqual('offline_demo_only',self.post('I received a document')['status'])
     def test_unavailable(self):
         with patch('app.main.settings',Settings(provider='openai',model='missing')):
             self.assertEqual('provider_unavailable',self.post('Virginia DC-402')['status'])

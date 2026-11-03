@@ -1,6 +1,6 @@
 # Local source corpus
 
-The first corpus is for `va-small-claims-warrant-in-debt-information` only: nine short excerpts, four existing official sources, and ten local proposition tags. All passages, sources, related legal records, and reviews remain proposed. This is development inspection material, not a legal answer or approved public corpus.
+The corpus includes workflow-scoped Virginia/Maryland excerpts and a workflow-independent Virginia premises-liability capability. All real passages, sources, legal records and reviews remain proposed. The sections below describe strict workflow retrieval; capability/general research is documented in [Architecture](architecture.md) and [Capability compiler](capability-compiler.md).
 
 ## Passage model and integrity
 

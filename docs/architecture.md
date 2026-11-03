@@ -1,239 +1,82 @@
-# Architecture
+# High-Assurance Legal Operating System
 
-Pro-One is a stateless local legal-information beta with a workflow-driven web interface for individuals and small businesses. It combines official-source records, deterministic scope and release gates, provider-neutral generation, strict validation, and canonical citation rendering. No workflow is approved for unrestricted public use.
-
-The system should help self-represented users and small businesses understand legal processes, organize their facts, and complete common legal tasks using structured workflows, retrieval from approved legal sources, and AI-generated explanations that cite their supporting material.
-
-## Design goals
-
-Pro-One should be:
-
-- **Source-grounded:** Answers should be based on retrieved legal material.
-- **Jurisdiction-aware:** The system should identify the relevant jurisdiction before answering.
-- **Workflow-first:** Features should be tied to concrete legal tasks such as responding to a complaint, understanding court steps, or organizing a contract dispute.
-- **Transparent:** Users should see sources, limitations, and confidence signals.
-- **Cautious:** When the system cannot find adequate support, it should say so.
-- **Accessible:** Legal information should be written in clear language.
-- **Free and open:** Core access should remain free, and the software should be open for inspection, contribution, and reuse.
-
-## Specification foundation
-
-The repository defines ten interoperable record domains: sources, workflows, process steps, legal documents, intakes, legal rules, risks, response patterns, evaluation fixtures, and curated source passages. `schemas/common.schema.json` centralizes record identifiers, version metadata, known jurisdiction structures, maturity and review states, review provenance, harm severity, urgency, support modes, routing behavior, human-help framing, and deadline handling where the concepts are semantically shared.
-
-Country values use uppercase ISO 3166-1 alpha-2 codes across every domain—for example, `US` rather than a display name. User interfaces may localize those codes for display without changing stored records.
-
-All domain records include `schema_version`, `record_version`, and `last_modified`. Review objects distinguish reviewer identity or handle, reviewer role, review scope, review date, and the exact record version reviewed. A reviewer role is a project capacity and does not assert professional credentials.
-
-The records include fictional examples and proposed Virginia research. Schema validity establishes structural conformance only; it does not make a record accurate, reviewed, approved, supported, or legally appropriate.
-
-## Current deterministic local runtime
+Capabilities define what Pro-One can research and explain. Workflows define structured legal processes. The control rule is **no authoritative support means no confident legal claim**, rather than requiring a workflow for every question.
 
 ```text
-structured answers + explicit risk IDs
-  -> RecordRepository.resolve_workflow()
-  -> single applicable intake definition (fail on none/multiple)
-  -> required/optional completeness + key-based privacy filtering
-  -> explicit linked-risk resolution + canonical routing
-  -> WorkflowReadinessService.evaluate()
-  -> package integrity checks + development context assembly
-  -> separate public eligibility result (no execution or answer generation)
+Legal Graph -> Capabilities -> General Research -> Optional Workflows
+
+question / facts / document
+  -> candidate matter understanding
+  -> jurisdiction + sovereign + area + legal topics
+  -> deterministic capability resolution
+  -> compiled capability OR bounded authoritative discovery
+  -> source text + provenance + passages + uncertainty
+  -> grounded claims
+  -> shared generation -> deterministic validation
+  -> revalidated rendering + canonical citations
 ```
 
-`app/intake.py` uses workflow input identifiers and intake privacy metadata without interpreting answer text or inferring facts. `app/execution.py` consumes that assessment and the existing readiness result. It verifies required package references without importing additional records, then returns detached, deterministic metadata from the existing resolver. Partial facts may appear in inspection contexts; excluded, restricted, and unrecognized values do not. User facts retain their exact value and explicit user-provided provenance. Repository jurisdiction metadata never confirms the user's jurisdiction.
+## Three layers
 
-The stateless `POST /workflows/{workflow_id}/intake/evaluate` endpoint returns completeness, privacy handling, all explicit risk routes, context availability, and public eligibility separately. Public eligibility requires complete and acceptable input, resolved required package references, and the readiness gate. An available context alone is not permission to generate or publicly execute anything. Source records contain metadata only; evaluation scenarios are omitted from context. Intake makes no model call and persists/logs no values. See the [request and response contract](../README.md#structured-intake-and-development-context).
+1. General research discovers evidence without a workflow or compiled capability. Coverage depends on configured authoritative collections, not model memory.
+2. Capabilities organize reusable jurisdiction/subject packages. One premises-liability package supports many stores/restaurants/fact patterns without prescribing conversations or deciding user-specific issues.
+3. Workflows retain strict procedural scope, intake, risk and readiness checks. Virginia DC-402, Virginia SCC records and Maryland civil summons remain available as specialized modules, associated with broader capabilities.
 
-The separate `POST /workflows/{workflow_id}/retrieval` service resolves that same workflow package and its local `source_passages`, validates filters, selects eligible sources/jurisdiction, and optionally ranks candidates by deterministic lexical overlap. `app/corpus.py` shares passage relationship/hash checks between repository startup and repository validation. Source metadata stays in source records; short excerpts, locators, topic tags, verification provenance, and limits live in `data/source-passages.json`.
+## Graph and migration
 
-Retrieval returns an inspection package joined to an execution context by `workflow_id`. It calls the existing readiness service and never grants public execution. Intake/execution logic is unchanged; proposed excerpts are not automatically copied into its fact context. Retrieval performs no runtime network/model calls or generation. See [Source corpus](source-corpus.md) for selection, ranking, maturity, and freshness behavior.
+The repository remains versioned JSON with Draft 2020-12 schemas, not a graph database. Existing source, passage, rule, process-step, document, intake, risk, response, evaluation and workflow domains remain. `legal_capabilities` and `research_evaluations` are additional first-class domains.
 
-`app/grounding.py` now evaluates the actual selected evidence and its linked sources, legal rules, process steps, response patterns, and active risks. It calls workflow readiness independently rather than adding optional passages to the workflow readiness gate. Existing review scopes are shared with repository validation through `app/review_policy.py`. Public grounding additionally requires explicit version-bound currentness certification; absence, expiry, unresolved issues, unsupported/rejected material, invalid links, and applicable unresolved propositions block release.
+Capability records reference sources, passages, rules, process steps, risks, optional workflows and research evaluations. They own subject boundaries, topic tags, support gaps, conflicts and currentness. Source metadata stays in sources; quotes/locators stay in passages; curated explanations stay in legal rules. Startup and runtime validation check typed graph links, source/rule evidence and jurisdiction. Workflow references are associations, not capability release prerequisites.
 
-`app/response_assembly.py` composes execution, retrieval, and grounding in `POST /workflows/{workflow_id}/response/assemble`. It builds citation-backed proposition references and response constraints, not prose. Repository-configured support gaps can withhold topic claims without interpreting source language. Its public conjunction is input eligibility AND workflow readiness AND grounding eligibility AND package integrity; development availability is separate. See [Grounded response assembly](grounded-response-assembly.md) for the release date policy and claim boundaries.
+Passages may now have empty workflow lists. Workflow retrieval still requires explicit membership and institution-level jurisdiction isolation. Capability/general research uses exact country/state isolation, retaining court/agency as authority context. Matching establishes subject relevance, never court jurisdiction, venue, standing, duty, negligence, causation, damages or likely success.
 
-`app/generation.py` consumes this assembly through a provider-neutral contract in `app/models/base.py`. `generation_contract.py` projects only sanitized facts, allowed topics and selected evidence, citations, and enforcement constraints; source/fact data are separate from versioned instructions. A registry resolves explicit provider/model configuration with no fallback. An offline test adapter and server-configured OpenAI/Anthropic adapters share the interface. Deterministic structured scope, not a caller generation flag, controls topics; missing inputs narrow or stop the response and contradictory scope prevents a call. Model requests have no tools, source access, or workflow/review mutation capability.
+`PassageRetrievalService.retrieve_capability()` checks filters against the selected capability. `GeneralLegalResearchService` builds compiled/dynamic evidence packages. Workflow assembly remains in `ResponseAssemblyService`. All modes converge on `GenerationService`, `build_model_request`, `GeneratedDraft`, `OutputValidationService` and `ResponseRenderingService`. Research has a null workflow ID and an internal evidence mode, never a fabricated workflow.
 
-`app/output_validation.py` treats structured output as untrusted and validates every successful adapter result before acceptance. Strict Pydantic draft models, contextual IDs, canonical relationships, exact control/fact channels, disclosure/limitation rendering, and supplementary prose guards produce stable errors. The service makes one bounded attempt and returns no rejected draft text. Semantic legal/factual verification is not claimed, and public generation remains disabled for the proposed workflows. `app/evaluation.py` runs version-bound mappings of existing fixtures with explicit automated checks and pending manual criteria; CI uses no credentials or live model. See [Model generation and evaluation](model-generation.md) for the contracts and limitations.
+## Matter interpretation
 
-## Product runtime and deployment
+Both configured model providers can suggest jurisdiction, sovereign, court/agency, area/topics, user/opponent posture, procedural/document context, dates, goal and fact categories. Strict schemas reject capability IDs, approvals and policy changes. Explicit provenance requires an exact evidence quote; inference/document text cannot establish research jurisdiction. Virginia/Maryland state facts supply US country context; other incomplete jurisdictions require clarification.
 
-`app/routing.py` serves a safe real-workflow catalog, exact structured matter routing, and deterministic specification-fit scope checks. Fictional examples remain outside coverage. Structured selectors live in workflow records; alias normalization is exact, not fuzzy classification or model reasoning. Missing information and ambiguity never select a random closest workflow. Sanitized intake bindings cannot contradict the selected matter.
+The Wendy's example is a candidate plaintiff-side tort/premises-liability issue. With state missing, the assistant asks **What state did this happen in?** An explicit Virginia answer enables deterministic resolution and sourced explanation. Existing procedural conversations still confirm inferred court/document context before workflow execution. Missing workflows no longer make a legal topic unsupported; missing authoritative evidence does.
 
-`app/product.py` composes scope, assembly/retrieval, configured generation, validation, and `app/rendering.py`. Rendering revalidates the draft, maps citation references to canonical source titles/authorities/locators/HTTPS URLs, labels user-provided facts, and preserves detailed controls in a source/limitations panel. Rejected text never reaches the user-facing answer. `app/web` is a responsive HTML/CSS/JavaScript interface served by FastAPI, with no frontend dependency or saved history.
+Conversation state is signed and bounded to 30 turns. It includes structured context, never assistant statements or legal authority. Browser-memory state and the process-local key expire on restart. A single worker is required until shared signing/expiry management exists.
 
-`app/config.py` owns environment-based mode/provider/model allowlists. Real adapter modules isolate vendor request shapes; the core services consume generic contracts. No real-model credential is required for tests. `app/security.py` bounds request bodies and attaches security headers. UI text uses DOM text nodes, not HTML interpretation; errors omit raw values and private provider diagnostics.
+## Authority providers
 
-Production excludes testing, suppresses development inspection, and enforces existing public gates before provider calls. The Python 3.12 container runs as a non-root user with health checks and PORT-aware startup. It can deploy to an OCI-compatible host using environment injection and host TLS; no paid resources or vendor-specific services are provisioned. Host-level abuse controls, semantic evaluation, legal/source/currentness review, and workflow approval precede public beta.
+`LegalAuthorityProvider.search(ResearchMatter)` returns source identifiers; `fetch(source_id)` returns metadata, actual text and passages. This interface is independent of `ModelProvider`. Models have no tools and cannot invoke either method. Authority searches receive legal concepts, not names, user goals, facts or documents.
 
-## Intended pipeline
+| Provider | Sources and access | Bounds and limitations |
+|---|---|---|
+| `repository` | Actual curated official primary/secondary passages; offline, no account | Exact jurisdiction/topic discovery; bounded collection, not comprehensive research |
+| `virginia_official` | Fixed catalog: two Virginia Supreme Court opinions and one official Code section; optional, free, no key | 2 MB body, 200,000-character text, 20 PDF pages, eight-second socket timeout and twelve-second worker deadline; changed excerpts withheld |
 
-```text
-user need
-  -> intake
-  -> jurisdiction and workflow identification
-  -> approved sources
-  -> source-backed legal rules and process steps
-  -> risk controls
-  -> response pattern
-  -> citations and limitations
-  -> evaluation
-```
+`PRO_ONE_AUTHORITY_NETWORK=virginia_official` explicitly enables runtime network retrieval. There are no arbitrary URLs, model browsing, credential headers, ambient proxies, redirects, script execution or general web-search fallback. Network/PDF parsing run in an isolated child process. Linux additionally limits memory/CPU; Windows has the wall deadline but lacks equivalent process memory limits.
 
-This diagram is an intended architecture. It is not running in production.
+The source schema supports statutes, regulations, court rules, constitutions, opinions, forms and official guidance. Primary law and explanatory guidance remain distinct. Case metadata preserves court, date, publication/precedential status, posture, opinion role and unknown subsequent treatment. Authority hierarchy is metadata and review context; no general algorithm resolves competing holdings. A government guidance page does not become a case holding by virtue of its hostname.
 
-## First MVP direction
+The [CourtListener API documentation](https://wiki.free.law/c/courtlistener/help/api) was researched: access is described through memberships/commercial agreements. It is not a core dependency; no free-access assumption or guessed API contract is implemented. A future authorized adapter must fetch actual opinion text, preserve opinion roles and retain treatment uncertainty. Search snippets never constitute evidence.
 
-The first MVP should focus on one narrow legal workflow rather than broad legal coverage.
+Dynamic results are ephemeral. Fetched excerpts must occur in normalized actual text; changed/missing wording is excluded. A fresh snapshot replaces old passages for that source. No runtime result rewrites `data/`, changes maturity/review or creates permanent law. Provider failure is an explicit gap; no external search fallback occurs.
 
-A strong first workflow is helping a self-represented civil litigant understand and prepare a basic answer to a civil complaint in one jurisdiction.
+## Grounded claims and validation
 
-This keeps the project focused on a real procedural need while allowing a future implementation to demonstrate intake, jurisdiction awareness, retrieval, citations, plain-language explanations, user-confirmed draft structure, and safe refusal behavior. The system may explain sourced response categories and organize explicit user decisions, but it must not choose admissions, denials, defenses, objections, facts, or litigation strategy.
+Research claims bind propositions to passage/source/citation IDs, jurisdiction, support state, limitations and conflicts. Compiled mode can select exact source text or its curated source-linked plain-language rule variant. General mode permits exact source text only. Compiler-created rules are extractive candidates.
 
-## Long-term direction
+Deterministic string checks cannot prove arbitrary paraphrase entailment. Research legal text must therefore exactly select allowed claim variants. The model may choose/order claims but cannot add factual application, new exceptions, cases, statutes, quotations, URLs, deadlines, approval/currentness or outcome claims. This is an intentional initial assurance boundary. Curated variants still require legal review; richer synthesis needs a stronger measured verification design.
 
-Over time, Pro-One may expand into additional legal workflows for self-represented users and small businesses, including:
+The shared validator enforces strict schema/types, identity, actual evidence links, citation existence, jurisdiction, exact legal text, empty actions/conclusions, disclosure/limitation rendering and citation manifests. Revalidation occurs before rendering. Combined research claims become individually cited paragraphs; canonical records supply names/URLs/metadata. A real citation cannot launder an invented sentence.
 
-- understanding court papers
-- preparing basic responses
-- tracking litigation steps
-- organizing deadlines
-- understanding contract disputes
-- preparing demand letters
-- reviewing common contract terms
-- organizing facts, documents, and correspondence
+## Conflicts, currentness and review
 
-Each expansion should preserve the same standard: narrow scope, reliable sources, citations, clear limitations, and user control.
+Source dates, retrieval date, content version/hash, effective dates, amendment information, known supersession and uncertainty are distinct. **Retrieved today is not certified current law.** Subsequent case treatment defaults to unknown; no citator is implemented. Austin's majority/dissent distinction and motion-to-strike posture remain mandatory limitations, without deciding their application to new facts.
 
-## Components
+All new canonical records remain proposed, null-reviewed and unresolved for currentness. Supported-record schemas and repository validation preserve review scopes, reviewed versions and eligible supporting dependencies. Public research is blocked independently of development structural success. Existing workflow release gates remain unchanged.
 
-### 1. Intake
+The [compiler](capability-compiler.md) collects sources, checks exact linkage, proposes rules/capability boundaries/evaluations and writes a separate review report. All generated records remain proposed. Refresh identifies added/removed/changed source content/provenance/dates and resets review. Humans review boundaries, source sets, key propositions, exceptions, conflicts, currentness and risk policy, not every possible user question.
 
-The intake layer receives the user's question, document, or task description.
+## Product and release
 
-Future intake should capture:
+The conversational UI, bounded in-memory document extraction and source panel remain. Case cards add court/date/treatment; statute cards add section/effective-date uncertainty. Internal modes and provider selection stay out of normal UI flows. Arbitrary offline questions get an explicit configuration notice; known named examples remain available as labeled demonstrations.
 
-- the user's jurisdiction, if known
-- the legal topic
-- the task the user is trying to complete
-- whether the user is asking for general information, document help, or procedural guidance
+Production blocks proposed research/workflow execution before model calls, disables testing and inspection paths, and retains privacy/source/release gates. Document parsers are isolated and bounded. No raw legal text or provider diagnostics are logged; documented startup disables access logs. Host-level rate limiting, monitoring, live-model semantic/privacy checks and legal/currentness review precede public exposure.
 
-### 2. Jurisdiction detection
-
-Legal answers depend heavily on jurisdiction.
-
-The system should avoid answering legal questions until it has enough information to identify the relevant jurisdiction or clearly state that the answer is general and may not apply to the user's location.
-
-### 3. Legal topic classification
-
-The system should classify the user's question into a specific legal topic, such as:
-
-- responding to a civil complaint
-- landlord-tenant
-- small claims
-- employment
-- contracts
-- consumer issues
-- administrative matters
-
-The first MVP should support only one narrow topic and jurisdiction.
-
-### 4. Source selection
-
-The system should use approved sources for the selected topic and jurisdiction.
-
-Possible source types include:
-
-- statutes
-- regulations
-- court rules
-- official forms
-- court self-help materials
-- primary legal authorities
-- carefully selected secondary explainers
-
-Primary and official sources should be preferred where available.
-
-### 5. Retrieval
-
-The retrieval layer should search the approved corpus for passages relevant to the user's question or workflow step.
-
-Future retrieval may combine:
-
-- keyword search
-- vector search
-- metadata filters
-- jurisdiction filters
-- topic filters
-- reranking
-
-The first version should be simple and measurable.
-
-### 6. Context builder
-
-The context builder prepares the retrieved material for answer or workflow generation.
-
-It should preserve:
-
-- source title
-- citation or authority reference
-- jurisdiction
-- document type
-- retrieved passage text
-- source URL, if available
-
-### 7. Answer and workflow generation
-
-The answer generator should respond using the retrieved context.
-
-For workflow tasks, the system should guide the user through steps rather than only answering a question.
-
-It should not invent legal authority. If the retrieved context does not support an answer, the system should say that it could not find enough reliable information.
-
-### 8. Citations
-
-Answers should show the sources used.
-
-Citations should help users understand:
-
-- what authority supports the answer
-- whether the source is primary law, an official source, or secondary material
-- where the user can read more
-
-### 9. Confidence and limitations
-
-The system should communicate when an answer is limited.
-
-Examples:
-
-- the jurisdiction is unclear
-- the retrieved sources are incomplete
-- the answer is based only on secondary material
-- the question is too fact-specific
-- the issue may involve a deadline or court filing
-
-## Non-goals for the first MVP
-
-The first MVP should not attempt to:
-
-- cover every area of law
-- answer questions for every jurisdiction
-- replace a lawyer
-- file court documents automatically
-- provide case-specific legal advice
-- rely on unsupported model output
-- optimize for a polished user interface before the retrieval and grounding pipeline works
-
-## Application evaluation
-
-Before any workflow is publicly supported, a future application should evaluate:
-
-- retrieval recall
-- citation accuracy
-- groundedness
-- unsupported claims
-- jurisdiction accuracy
-- refusal behavior
-- latency
-- cost
-
-Evaluation should be treated as part of the product, not an afterthought.
+Reusable process primitives remain jurisdiction/document identification, captured user dates, official-instruction navigation, service/deadline awareness, redaction and escalation. Future workflows can compose these without creating a workflow for each retailer, statute or factual permutation.

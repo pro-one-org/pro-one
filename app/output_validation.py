@@ -134,6 +134,20 @@ class OutputValidationService:
                     fail("citation_not_supporting_claim", index)
                 used_citations.add(citation_id)
             if section.kind == "legal_information":
+                if data.get("strict_claim_text"):
+                    # A real citation cannot launder an unrelated legal sentence.
+                    # This deliberately restricts paraphrases until semantic
+                    # verification beyond deterministic checks is available.
+                    parts = section.text.split("\n\n")
+                    if len(parts) != len(section.claim_ids) or any(
+                        cid not in claims or part not in claims[cid].get("allowed_texts", [])
+                        for cid, part in zip(section.claim_ids, parts)
+                    ):
+                        fail("unsupported_proposition", index)
+                    jurisdiction = data["scope"]["jurisdiction"]
+                    for cid in section.claim_ids:
+                        if cid in claims and any(claims[cid]["jurisdiction"].get(k) != jurisdiction.get(k) for k in ("country", "state")):
+                            fail("cross_jurisdiction_claim", index)
                 if not section.claim_ids:
                     fail("unsupported_claim", index)
                 # Facts may only be repeated in the exact dedicated fact channel.

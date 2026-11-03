@@ -122,7 +122,7 @@ class EvaluationTests(unittest.TestCase):
             with patch("sys.argv", args), redirect_stdout(out):
                 self.assertEqual(expected, main())
             if "--json" in args:
-                self.assertEqual(24, json.loads(out.getvalue())["executed"])
+                self.assertEqual(37, json.loads(out.getvalue())["executed"])
             elif expected == 0:
                 self.assertIn("Manual review remains pending", out.getvalue())
 

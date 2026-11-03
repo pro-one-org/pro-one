@@ -16,6 +16,7 @@ class Settings:
     model: str = TEST_MODEL
     openai_model: str = ""
     anthropic_model: str = ""
+    authority_network: str = ""
 
     @classmethod
     def from_environment(cls):
@@ -24,7 +25,10 @@ class Settings:
             raise RuntimeError("Invalid PRO_ONE_MODE; use development or production.")
         provider = os.environ.get("PRO_ONE_MODEL_PROVIDER") or ("testing" if mode == "development" else "")
         model = os.environ.get("PRO_ONE_MODEL") or (TEST_MODEL if provider == "testing" else "")
-        return cls(mode, provider, model, os.environ.get("PRO_ONE_OPENAI_MODEL", ""), os.environ.get("PRO_ONE_ANTHROPIC_MODEL", ""))
+        authority = os.environ.get("PRO_ONE_AUTHORITY_NETWORK", "")
+        if authority not in {"", "virginia_official"}:
+            raise RuntimeError("Invalid PRO_ONE_AUTHORITY_NETWORK")
+        return cls(mode, provider, model, os.environ.get("PRO_ONE_OPENAI_MODEL", ""), os.environ.get("PRO_ONE_ANTHROPIC_MODEL", ""), authority)
 
     def registry(self, environment=None) -> ProviderRegistry:
         env = os.environ if environment is None else environment

@@ -15,6 +15,13 @@ SCHEMA_DIR = ROOT / "schemas"
 VALIDATOR_PATH = ROOT / "scripts" / "validate_repository.py"
 
 STANDALONE_SUPPORTED_SCHEMA_CASES = {
+    "legal_capability": (
+        "legal-capability.schema.json", "legal-capabilities.json",
+        ("schema", "source_authority", "source_freshness", "jurisdiction", "legal_information_boundary", "safety", "evaluation"),
+    ),
+    "research_evaluation": (
+        "research-evaluation.schema.json", "research-evaluations.json", ("schema", "evaluation"),
+    ),
     "source_passage": (
         "source-passage.schema.json",
         "source-passages.json",

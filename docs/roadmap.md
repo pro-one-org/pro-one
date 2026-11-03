@@ -1,6 +1,6 @@
 # Product roadmap
 
-Pro-One is a free, model-agnostic legal-information platform for individuals and small businesses. Three real development workflows exist across Virginia and Maryland. No workflow is approved for unrestricted public use.
+Pro-One is a source-grounded legal AI operating system for individuals and small businesses. Capabilities and workflow-independent research organize legal intelligence; three real procedural workflows remain specialized modules. Real coverage remains proposed and public execution is blocked. See [Architecture](architecture.md).
 
 ## Completed development foundation
 

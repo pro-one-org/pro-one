@@ -5,13 +5,15 @@ import hmac
 import json
 import re
 import secrets
-from typing import Literal
+from copy import deepcopy
 
 from pydantic import BaseModel, ConfigDict, Field, ValidationError
 
 from app.matter_extraction import MatterExtractionService, ExtractionUnavailable
 from app.product import ProductService, ProductResponseRequest
 from app.routing import MatterRequest, MatterRoutingService, WorkflowCatalogService
+from app.capabilities import ResearchMatter
+from app.legal_research import GeneralLegalResearchService
 
 _STATE_KEY = secrets.token_bytes(32)
 FIELDS = set(MatterRequest.model_fields) - {"user_goal"}
@@ -68,7 +70,8 @@ class AssistantService:
         provider, model = self.configuration()
         available = model in self.generation.registry.configured_models().get(provider, [])
         return {"demo": provider == "testing" and self.settings.mode != "production", "available": available,
-                "coverage": [{"title": c["title"], "state": c["jurisdiction"]["state"], "purpose": c["purpose"]} for c in self.catalog]}
+                "offline_notice": "Live AI is not configured. The offline demo can exercise known example matters only.",
+                "coverage": [{"title": c["title"], "state": c["jurisdiction"]["state"], "purpose": "Proposed source collection; legal and currentness review pending."} for c in self.repository.records["legal_capabilities"].values()]}
 
     def message(self, request):
         try:
@@ -88,12 +91,19 @@ class AssistantService:
             return reply("redaction_needed", "Please remove Social Security numbers, account numbers, and other unnecessary sensitive information, then try again.")
         if re.search(r"\b(evict\w*|foreclos\w*|immigration|criminal|custody|domestic violence|bankruptcy)\b", message + " " + request.document_text, re.I):
             state["facts"], state["pending"] = {}, {}
+            state.pop("research", None)
             return reply("unsupported", "This matter is outside the legal topics Pro-One currently covers. If a date is imminent, check the instructions from the court and seek qualified help promptly. I cannot provide an answer about this matter.")
         if self.settings.mode == "production":
             return reply("unavailable", "These legal topics are still under review and are not available for public use.")
         provider, model = self.configuration()
         if model not in self.generation.registry.configured_models().get(provider, []):
             return reply("provider_unavailable", "Live AI is temporarily unavailable. Please try again later.")
+        if provider == "testing" and message.casefold() == "try premises liability example":
+            from app.models.base import GenerationConfig
+            result = GeneralLegalResearchService(self.repository, self.settings, self.generation).respond(
+                ResearchMatter(country="US", state="Virginia", legal_area="torts", topics=["premises_liability"]),
+                GenerationConfig(provider=provider, model=model))
+            return reply(result["status"], "Known Virginia premises-liability example. Live AI is not configured; this is an offline demonstration.", result["response"])
         if state["pending"] and message.casefold() in {"yes", "confirm", "yes, that's correct", "correct"}:
             state["facts"].update({k: {"value": v["value"], "provenance": "user_confirmed", "origin": v["provenance"]} for k, v in state["pending"].items()})
             state["pending"] = {}
@@ -104,16 +114,32 @@ class AssistantService:
             state["question"] = message
             if provider == "testing":
                 candidates = self.demo_candidates(message, request.document_text)
+                if not state["facts"] and not any(k in candidates for k in ("form_number", "document_title")):
+                    return reply("offline_demo_only", "Live AI is not configured. The offline demo can exercise known example matters only.")
             else:
                 try:
                     extracted = MatterExtractionService(self.generation.registry).extract(
-                        message, request.document_text, self.catalog, state["facts"], provider, model)
+                        message, request.document_text,
+                        {"workflows": self.catalog, "capabilities": [{k: c[k] for k in ("title", "jurisdiction", "legal_area", "topics")} for c in self.repository.records["legal_capabilities"].values()]},
+                        {"facts": state["facts"], "research": state.get("research", {})}, provider, model)
                 except ExtractionUnavailable:
                     return reply("provider_unavailable", "I couldn't interpret that message safely. Please try again.")
                 if extracted.unsupported:
                     state["facts"], state["pending"] = {}, {}
+                    state.pop("research", None)
                     return reply("unsupported", "I don't yet have coverage for this matter, so I cannot give a source-supported answer.")
                 candidates = {f.name: {"value": f.value, "provenance": f.provenance} for f in extracted.fields}
+                specialized = any(k in candidates for k in ("form_number",)) or any(
+                    word in (message + " " + request.document_text).casefold() for word in ("dc-402", "dc402", "scc", "summons"))
+                if not specialized and ("legal_area" in candidates or state.get("research")):
+                    return self.research_reply(candidates, state, reply, provider, model)
+                # Research context cannot make an unrelated procedural matter
+                # inherit a prior accident's scope or facts.
+                if specialized:
+                    state.pop("research", None)
+                if not specialized and not state["facts"] and not any(k in candidates for k in ("user_type", "role")):
+                    return reply("clarification_needed", "What legal issue would you like help understanding, and what state is involved?")
+            candidates = {k: v for k, v in candidates.items() if k in FIELDS}
             # Every extracted candidate is confirmed explicitly, including model claims of explicit provenance.
             changed = {k: v for k, v in candidates.items() if state["facts"].get(k, {}).get("value") != v["value"]}
             if changed:
@@ -164,6 +190,46 @@ class AssistantService:
             return reply("answered", "Official-source excerpts for this demo." if provider == "testing" else "", result["response"])
         return reply(result["status"], "I couldn't produce an answer that passed Pro-One's source and safety checks. Please check the official court or agency information.")
 
+    def research_reply(self, candidates, state, reply, provider, model):
+        from app.models.base import GenerationConfig
+        prior = state.get("research", {})
+        values = deepcopy(prior)
+        state.pop("asking", None)
+        # Area changes start a fresh subject; no inherited source scope.
+        if "legal_area" in candidates and candidates["legal_area"]["value"] != values.get("legal_area"):
+            values = {}
+        for name in ("legal_area", "user_posture", "sovereign", "court", "agency", "document_type"):
+            if name in candidates:
+                values[name] = candidates[name]["value"]
+        if "legal_topics" in candidates:
+            values["topics"] = [v.strip() for v in candidates["legal_topics"]["value"].split(",") if v.strip()][:12]
+        for name in ("country", "state"):
+            field = candidates.get(name)
+            # Source documents and model inference cannot establish jurisdiction.
+            if field and field["provenance"] == "user_explicit":
+                values[name] = field["value"]
+            elif field and field["value"] != values.get(name):
+                values.pop(name, None)
+        if values.get("state") in {"Virginia", "Maryland"}:
+            values["country"] = "US"
+        state["research"], state["pending"] = values, {}
+        state["facts"] = {k: {"value": v, "provenance": "user_explicit" if k in {"state", "country"} else "candidate_classification"}
+                          for k, v in values.items() if isinstance(v, str)}
+        if not values.get("state"):
+            return reply("clarification_needed", "What state did this happen in?")
+        if not values.get("country"):
+            return reply("clarification_needed", "What country did this happen in?")
+        try:
+            matter = ResearchMatter(**values)
+        except ValidationError:
+            state.pop("research", None)
+            return reply("clarification_needed", "Please describe the legal topic and where this happened.")
+        result = GeneralLegalResearchService(self.repository, self.settings, self.generation).respond(
+            matter, GenerationConfig(provider=provider, model=model))
+        if result["response"]:
+            return reply("answered", "", result["response"])
+        return reply(result["status"], "I don't have enough authoritative support in the configured source collections to answer this question confidently.")
+
     def demo_candidates(self, message, document):
         """Explicitly labeled offline demonstration; never represented as AI extraction."""
         text = message + " " + document
@@ -190,4 +256,3 @@ class AssistantService:
             if re.search(r"\b" + name + r"\b", message, re.I):
                 values["state"] = name
         return {k: {"value": v, "provenance": "inferred"} for k, v in values.items()}
-

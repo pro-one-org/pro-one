@@ -28,11 +28,12 @@ from app.product import ProductResponseRequest, ProductService
 from app.security import SecurityMiddleware
 from app.assistant import AssistantRequest, AssistantService
 from app.documents import isolated_extract
+from app.capabilities import ResearchMatter, CapabilityResolutionService
 
 
 app = FastAPI(
     title="Pro-One",
-    description="Runtime foundation for source-grounded legal-information workflows.",
+    description="High-assurance legal research, capabilities and specialized workflows.",
     version="0.1.0",
 )
 
@@ -224,6 +225,25 @@ def model_status():
 @app.get("/assistant/status")
 def assistant_status():
     return AssistantService(repository, settings, generation_service).status()
+
+
+@app.get("/capabilities")
+def capability_catalog():
+    return {"capabilities": [{k: c[k] for k in ("id", "title", "jurisdiction", "legal_area", "topics", "status", "related_workflow_ids", "currentness")}
+                             for c in repository.records["legal_capabilities"].values()], "public_execution": False}
+
+
+@app.post("/capabilities/resolve")
+def resolve_capabilities(request: ResearchMatter):
+    return CapabilityResolutionService(repository).resolve(request)
+
+
+@app.post("/research/evidence")
+def research_evidence(request: ResearchMatter):
+    if settings.mode == "production":
+        raise HTTPException(status_code=403, detail={"code": "research_release_review_required"})
+    from app.legal_research import GeneralLegalResearchService
+    return GeneralLegalResearchService(repository, settings).assemble(request)
 
 
 @app.post("/documents/extract")

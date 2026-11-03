@@ -28,6 +28,8 @@ or action in its source. Empty actions and conclusions are mandatory in this con
 
 
 def build_model_request(package: dict[str, Any], config: GenerationConfig) -> ModelRequest:
+    if package.get("evidence_mode") in {"capability", "general_research"}:
+        return build_research_model_request(package, config)
     plan = package["response_plan"]
     facts = package["user_context"]["facts"]
     # Caller generation.scope is compatibility metadata only. Authority comes
@@ -120,3 +122,27 @@ def build_model_request(package: dict[str, Any], config: GenerationConfig) -> Mo
 
 def request_size(request: ModelRequest) -> int:
     return len(json.dumps(request.grounded_package, ensure_ascii=False))
+
+
+def build_research_model_request(package, config):
+    plan = package["response_plan"]
+    controls = sorted(set(plan["required_disclosures"] + plan["limitations"]))
+    data = {"workflow_id": None, "evidence_mode": package["evidence_mode"], "capability_id": package["capability_id"],
+            "scope": {"jurisdiction": package["user_context"]["jurisdiction_scope"]},
+            "claims": deepcopy(plan["claims"]), "citations": deepcopy(plan["citations"]),
+            "evidence_passages": deepcopy(package["grounding"]["passages"]), "user_facts": {},
+            "allowed_sections": plan["allowed_sections"], "required_sections": plan["required_sections"],
+            "required_disclosures": plan["required_disclosures"], "limitations": plan["limitations"],
+            "required_risk_notices": [], "response_constraints": [], "control_texts": controls,
+            "required_control_texts": controls, "strict_claim_text": True}
+    schema = GeneratedDraft.model_json_schema()
+    schema["properties"]["workflow_id"] = {"type": "null"}
+    return ModelRequest(config.provider, config.model, "grounded_research_v1",
+                        INSTRUCTIONS + "\nResearch output: each legal_information section must select exactly one claim and "
+                        "copy exactly one of its allowed_texts, preferring its plain-language variant. Use a separate section "
+                        "for each claim, with a unique section_id of next_steps or questions_to_answer. You may combine multiple "
+                        "claims in one section only by joining their allowed_texts with two newlines in claim_ids order. "
+                        "Include every source limit as exact control text. No additional prose, invented examples, "
+                        "legal conclusions, authorities, quotations, currentness or approval claims are allowed.",
+                        data, schema, {"max_output_characters": 64000, "max_output_tokens": 16000},
+                        {"mode": package["evidence_mode"]})

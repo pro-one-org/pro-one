@@ -25,7 +25,9 @@
     "citation"
   ],
   "properties": {
-    "public_currentness": { "$ref": "common.schema.json#/$defs/publicCurrentness" },
+    "public_currentness": {
+      "$ref": "common.schema.json#/$defs/publicCurrentness"
+    },
     "id": {
       "$ref": "common.schema.json#/$defs/recordId"
     },
@@ -64,7 +66,8 @@
         "legal_aid_resource",
         "secondary_resource",
         "court_opinion",
-        "other"
+        "other",
+        "constitution"
       ]
     },
     "url": {
@@ -360,6 +363,119 @@
     "notes": {
       "type": "string",
       "description": "Additional notes."
+    },
+    "case_metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "court",
+        "decision_date",
+        "publication_status",
+        "precedential_status",
+        "procedural_posture",
+        "subsequent_treatment",
+        "opinion_role"
+      ],
+      "properties": {
+        "court": {
+          "type": "string",
+          "minLength": 1
+        },
+        "decision_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "publication_status": {
+          "enum": [
+            "published",
+            "unpublished",
+            "unknown"
+          ]
+        },
+        "precedential_status": {
+          "enum": [
+            "reported",
+            "nonprecedential",
+            "unknown"
+          ]
+        },
+        "procedural_posture": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "subsequent_treatment": {
+          "const": "unknown"
+        },
+        "opinion_role": {
+          "enum": [
+            "majority",
+            "dissent",
+            "concurrence",
+            "mixed",
+            "unknown"
+          ]
+        }
+      }
+    },
+    "enactment_metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "chapter",
+        "section",
+        "issuing_body",
+        "effective_date",
+        "amendment_information"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "chapter": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "section": {
+          "type": "string",
+          "minLength": 1
+        },
+        "issuing_body": {
+          "type": "string",
+          "minLength": 1
+        },
+        "effective_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "amendment_information": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "legal_areas": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 80
+      }
     }
   },
   "allOf": [
@@ -383,10 +499,26 @@
               },
               "review_scope": {
                 "allOf": [
-                  { "contains": { "const": "schema" } },
-                  { "contains": { "const": "source_authority" } },
-                  { "contains": { "const": "source_freshness" } },
-                  { "contains": { "const": "jurisdiction" } }
+                  {
+                    "contains": {
+                      "const": "schema"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "source_authority"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "source_freshness"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "jurisdiction"
+                    }
+                  }
                 ]
               }
             },

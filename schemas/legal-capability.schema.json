@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "legal-capability.schema.json",
+  "title": "Pro-One Legal Capability",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "schema_version",
+    "record_version",
+    "last_modified",
+    "title",
+    "status",
+    "review",
+    "jurisdiction",
+    "sovereign",
+    "legal_area",
+    "topics",
+    "source_ids",
+    "source_passage_ids",
+    "legal_rule_ids",
+    "process_step_ids",
+    "risk_ids",
+    "support_gaps",
+    "conflicts",
+    "related_workflow_ids",
+    "research_evaluation_ids",
+    "currentness"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/recordId"
+    },
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schemaVersion"
+    },
+    "record_version": {
+      "$ref": "common.schema.json#/$defs/recordVersion"
+    },
+    "last_modified": {
+      "$ref": "common.schema.json#/$defs/lastModified"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "$ref": "common.schema.json#/$defs/maturityStatus"
+    },
+    "review": {
+      "$ref": "common.schema.json#/$defs/reviewInformation"
+    },
+    "jurisdiction": {
+      "$ref": "common.schema.json#/$defs/jurisdiction"
+    },
+    "sovereign": {
+      "enum": [
+        "state",
+        "federal"
+      ]
+    },
+    "legal_area": {
+      "type": "string",
+      "minLength": 1
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "source_ids": {
+      "$ref": "common.schema.json#/$defs/recordIdArray"
+    },
+    "source_passage_ids": {
+      "$ref": "common.schema.json#/$defs/recordIdArray"
+    },
+    "legal_rule_ids": {
+      "$ref": "common.schema.json#/$defs/recordIdArray"
+    },
+    "process_step_ids": {
+      "$ref": "common.schema.json#/$defs/recordIdArray"
+    },
+    "risk_ids": {
+      "$ref": "common.schema.json#/$defs/recordIdArray"
+    },
+    "support_gaps": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "related_workflow_ids": {
+      "$ref": "common.schema.json#/$defs/recordIdArray"
+    },
+    "research_evaluation_ids": {
+      "$ref": "common.schema.json#/$defs/recordIdArray"
+    },
+    "currentness": {
+      "$ref": "common.schema.json#/$defs/publicCurrentness"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "supported"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "review": {
+            "properties": {
+              "status": {
+                "const": "approved"
+              },
+              "review_scope": {
+                "allOf": [
+                  {
+                    "contains": {
+                      "const": "schema"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "source_authority"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "source_freshness"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "jurisdiction"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "legal_information_boundary"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "safety"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "evaluation"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "source_ids": {
+            "minItems": 1
+          },
+          "source_passage_ids": {
+            "minItems": 1
+          },
+          "research_evaluation_ids": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ]
+}
