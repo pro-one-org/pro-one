@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pro-One — Free legal AI for everyone.</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <script src="/static/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="/">Pro-One<span class="badge">Preview</span></a>
+      <nav>
+        <button id="new-chat">New conversation</button
+        ><button id="coverage-toggle">Coverage</button>
+      </nav>
+    </header>
+    <div id="demo" class="banner" role="status" hidden>
+      Live AI is not configured. The offline demo can exercise known example matters only.
+    </div>
+    <main id="workspace">
+      <aside id="matter-panel" hidden>
+        <h2>Your matter</h2>
+        <p class="muted">Details you provide and confirm</p>
+        <div id="matter"></div>
+      </aside>
+      <section id="center">
+        <div id="welcome">
+          <p class="eyebrow">FREE LEGAL AI FOR EVERYONE.</p>
+          <h1>What can I help you<br />understand today?</h1>
+          <p>
+            Bring your question or a document.<br />We’ll start with what you
+            know.
+          </p>
+        </div>
+        <div
+          id="conversation"
+          role="log"
+          aria-label="Conversation"
+          aria-live="polite"
+        ></div>
+        <form id="composer">
+          <label class="sr-only" for="message">Your legal question</label
+          ><textarea
+            id="message"
+            maxlength="2000"
+            rows="3"
+            placeholder="Ask a legal question, describe what happened, or add a document."
+            required
+          ></textarea>
+          <div id="attachment" hidden></div>
+          <div class="composer-actions">
+            <label class="attach" for="file">＋ Add document</label
+            ><input
+              class="sr-only"
+              type="file"
+              id="file"
+              accept=".pdf,.docx,.txt"
+            /><button id="send" type="submit" aria-label="Send message">
+              Send ↑
+            </button>
+          </div>
+        </form>
+        <p id="progress" role="status"></p>
+        <p class="privacy">
+          Remove Social Security numbers, account numbers, and other information
+          Pro-One does not need. PDF, DOCX or TXT · up to 2 MB · no scanned
+          documents.
+        </p>
+        <div id="suggestions" class="chips">
+          <button>Try CourtListener research example</button
+          >
+          <button>What is premises liability in Virginia?</button
+          ><button>I received Virginia form DC-402</button
+          ><button>My Virginia LLC shows an SCC status I don’t understand</button>
+        </div>
+        <p class="boundary">
+          Official sources. Your decisions.<br />Legal information, not
+          representation. Limited topics in Virginia and Maryland; source review
+          is pending.
+        </p>
+      </section>
+      <aside id="source-panel" hidden>
+        <h2>Official sources</h2>
+        <p class="muted">Check the source behind the answer.</p>
+        <div id="sources"></div>
+      </aside>
+    </main>
+    <section id="coverage" hidden>
+      <h2>What we can help with</h2>
+      <p>
+        Limited source collections in Virginia and Maryland, with specialized
+        procedural modules where useful. Legal and currentness review remain pending.
+      </p>
+      <div id="coverage-items"></div>
+    </section>
+  </body>
+</html>

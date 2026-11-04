@@ -150,3 +150,7 @@ New features should ask:
 ## Guiding rule
 
 When in doubt, Pro-One should collect less, store less, and explain more.
+
+## External legal research privacy
+
+CourtListener receives only legal-concept queries or base citations selected by server policy, never names, user narratives, uploaded documents or conversation state. Corpus storage contains public legal material, provenance and legal-query checkpoints, not user matters. Provider credentials stay in server environment variables; responses omit tokens, membership/account data and raw error bodies. Independent claim verification receives only a candidate, its cited evidence and relevant legal metadata. Source/filing instructions cannot change orchestration. These controls supplement, rather than replace, model-provider data review and deployment access controls. See [CourtListener](courtlistener.md).

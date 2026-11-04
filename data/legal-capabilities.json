@@ -1,0 +1,259 @@
+[
+  {
+    "id": "va-premises-liability",
+    "title": "Virginia Premises Liability",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-11-03",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": null
+    },
+    "sovereign": "state",
+    "legal_area": "torts",
+    "topics": [
+      "premises_liability",
+      "negligence",
+      "duty",
+      "notice",
+      "causation",
+      "damages",
+      "contributory_negligence",
+      "limitations"
+    ],
+    "source_ids": [
+      "va-fultz-delhaize",
+      "va-austin-shoneys",
+      "va-personal-injury-limitations"
+    ],
+    "source_passage_ids": [
+      "va-premises-duty",
+      "va-premises-warning",
+      "va-premises-contributory",
+      "va-premises-created-condition",
+      "va-premises-causation",
+      "va-premises-limitations"
+    ],
+    "legal_rule_ids": [
+      "va-premises-duty-rule",
+      "va-premises-warning-rule",
+      "va-premises-contributory-rule",
+      "va-premises-created-condition-rule",
+      "va-premises-causation-rule",
+      "va-premises-limitations-rule"
+    ],
+    "process_step_ids": [],
+    "risk_ids": [],
+    "support_gaps": [
+      "Actual or constructive notice and how long any hazard existed are unresolved facts.",
+      "Exact defendant/entity identity and premises control are unresolved.",
+      "Causation, medical evidence and damages require evidence; no recovery estimate is supported.",
+      "Accrual, tolling, limitations exceptions, venue and case-specific defenses are unresolved.",
+      "A complete negligence-elements and damages framework has not yet been compiled."
+    ],
+    "conflicts": [
+      "Austin includes a dissent about permissible inferences. Preserve majority/dissent and procedural posture; do not flatten that disagreement."
+    ],
+    "related_workflow_ids": [],
+    "research_evaluation_ids": [
+      "va-premises-grounded_answer-evaluation",
+      "va-premises-missing_state-evaluation",
+      "va-premises-wrong_state-evaluation",
+      "va-premises-invented_case-evaluation",
+      "va-premises-invented_statute-evaluation",
+      "va-premises-unsupported_proposition-evaluation",
+      "va-premises-currentness-evaluation",
+      "va-premises-conflict-evaluation",
+      "va-premises-no_workflow-evaluation",
+      "va-premises-injection-evaluation",
+      "va-premises-outcome-evaluation",
+      "va-premises-deadline-evaluation",
+      "va-premises-damages-evaluation"
+    ],
+    "currentness": {
+      "status": "unresolved",
+      "unresolved_issues": [
+        "Later case treatment and supersession are unknown.",
+        "Legal/source review and effective-date verification are pending."
+      ]
+    }
+  },
+  {
+    "id": "va-civil-procedure",
+    "title": "Virginia Civil Procedure",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-11-03",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": "Virginia General District Court Small Claims Division",
+      "agency": null,
+      "jurisdiction_notes": "Only a served Form DC-402 small-claims Warrant in Debt is in scope; all other courts, forms, and procedures are excluded."
+    },
+    "sovereign": "state",
+    "legal_area": "civil_procedure",
+    "topics": [
+      "civil_procedure",
+      "dc402",
+      "summons"
+    ],
+    "source_ids": [
+      "va-small-claims-procedure-code",
+      "va-dc402-warrant-in-debt-small-claims-form",
+      "va-dc402-warrant-in-debt-instructions",
+      "va-small-claims-self-help"
+    ],
+    "source_passage_ids": [
+      "va-small-claims-passage-division",
+      "va-small-claims-passage-dc402-identity",
+      "va-small-claims-passage-first-return-date",
+      "va-small-claims-passage-pleading-categories",
+      "va-small-claims-passage-removal",
+      "va-small-claims-passage-informal-trial",
+      "va-small-claims-passage-form-appearance-warning",
+      "va-small-claims-passage-grounds-of-defense-order",
+      "va-small-claims-passage-self-help-appearance"
+    ],
+    "legal_rule_ids": [],
+    "process_step_ids": [],
+    "risk_ids": [],
+    "support_gaps": [
+      "Procedural information is limited to the linked source collection; use the specialized module for structured assistance."
+    ],
+    "conflicts": [],
+    "related_workflow_ids": [
+      "va-small-claims-warrant-in-debt-information"
+    ],
+    "research_evaluation_ids": [],
+    "currentness": {
+      "status": "unresolved"
+    }
+  },
+  {
+    "id": "va-business-entities",
+    "title": "Virginia Business Entity Records",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-11-03",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": "Virginia State Corporation Commission",
+      "jurisdiction_notes": "Structured fit is not a legal jurisdiction determination."
+    },
+    "sovereign": "state",
+    "legal_area": "business",
+    "topics": [
+      "entity_records",
+      "business_record_status",
+      "scc"
+    ],
+    "source_ids": [
+      "va-scc-cis-help",
+      "va-scc-clerk-records"
+    ],
+    "source_passage_ids": [
+      "va-scc-business-record-navigation-passage-1",
+      "va-scc-business-record-navigation-passage-2"
+    ],
+    "legal_rule_ids": [],
+    "process_step_ids": [],
+    "risk_ids": [],
+    "support_gaps": [
+      "Procedural information is limited to the linked source collection; use the specialized module for structured assistance."
+    ],
+    "conflicts": [],
+    "related_workflow_ids": [
+      "va-scc-business-record-navigation"
+    ],
+    "research_evaluation_ids": [],
+    "currentness": {
+      "status": "unresolved"
+    }
+  },
+  {
+    "id": "md-civil-procedure",
+    "title": "Maryland Civil Procedure",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-11-03",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "jurisdiction": {
+      "country": "US",
+      "state": "Maryland",
+      "locality": null,
+      "court": "Maryland District Court",
+      "agency": null,
+      "jurisdiction_notes": "Structured fit is not a legal jurisdiction determination."
+    },
+    "sovereign": "state",
+    "legal_area": "civil_procedure",
+    "topics": [
+      "civil_procedure",
+      "summons"
+    ],
+    "source_ids": [
+      "md-district-court-defendant-help"
+    ],
+    "source_passage_ids": [
+      "md-district-civil-defendant-orientation-passage-1",
+      "md-district-civil-defendant-orientation-passage-2"
+    ],
+    "legal_rule_ids": [],
+    "process_step_ids": [],
+    "risk_ids": [],
+    "support_gaps": [
+      "Procedural information is limited to the linked source collection; use the specialized module for structured assistance."
+    ],
+    "conflicts": [],
+    "related_workflow_ids": [
+      "md-district-civil-defendant-orientation"
+    ],
+    "research_evaluation_ids": [],
+    "currentness": {
+      "status": "unresolved"
+    }
+  }
+]

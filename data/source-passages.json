@@ -427,5 +427,487 @@
     "process_step_ids": [
       "va-small-claims-deadline-safety-routing"
     ]
+  },
+  {
+    "id": "va-scc-business-record-navigation-passage-1",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "Clerk’s Information System: official help",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-scc-cis-help",
+    "workflow_ids": [
+      "va-scc-business-record-navigation"
+    ],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": "Virginia State Corporation Commission"
+    },
+    "locator": "CIS FAQ: What is CIS?",
+    "propositions": [
+      "va-scc-business-record-navigation-topic-1"
+    ],
+    "text": "You can use Clerk’s Information System (CIS) to search for business information, make payments, and submit filings.",
+    "verification": {
+      "retrieved_on": "2026-10-30",
+      "verified_on": "2026-10-30",
+      "source_version": "Official HTML observed 2026-10-30; uncertified",
+      "excerpt_hash": "sha256:8594e4ad77023b31dcc30d10642e9375a564916b43afd99f78293957f00868a6",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Navigation only: no live entity lookup or conclusion about active status, good standing, reinstatement, registration fees, taxes, or filing duties.",
+      "Entity-specific status and requirements must be checked directly with SCC; the curated excerpts do not establish compliance.",
+      "Research excerpt is proposed, reuse permission unresolved, and currentness uncertified."
+    ],
+    "legal_rule_ids": [],
+    "process_step_ids": [
+      "va-scc-business-record-navigation-resources-step"
+    ]
+  },
+  {
+    "id": "va-scc-business-record-navigation-passage-2",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "About the Clerk’s Office",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-scc-clerk-records",
+    "workflow_ids": [
+      "va-scc-business-record-navigation"
+    ],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": "Virginia State Corporation Commission"
+    },
+    "locator": "About the Clerk’s Office: public records",
+    "propositions": [
+      "va-scc-business-record-navigation-topic-2"
+    ],
+    "text": "Many documents may be viewed and downloaded from the Clerk's Information System (CIS) and Docket Search.",
+    "verification": {
+      "retrieved_on": "2026-10-30",
+      "verified_on": "2026-10-30",
+      "source_version": "Official HTML observed 2026-10-30; uncertified",
+      "excerpt_hash": "sha256:fd92bf42ead820d73c27dbc813279be869c382cf019ff536246942c7e525ade7",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Navigation only: no live entity lookup or conclusion about active status, good standing, reinstatement, registration fees, taxes, or filing duties.",
+      "Entity-specific status and requirements must be checked directly with SCC; the curated excerpts do not establish compliance.",
+      "Research excerpt is proposed, reuse permission unresolved, and currentness uncertified."
+    ],
+    "legal_rule_ids": [],
+    "process_step_ids": [
+      "va-scc-business-record-navigation-resources-step"
+    ]
+  },
+  {
+    "id": "md-district-civil-defendant-orientation-passage-1",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "What to Do if You Are Sued in District Court",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "md-district-court-defendant-help",
+    "workflow_ids": [
+      "md-district-civil-defendant-orientation"
+    ],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Maryland",
+      "locality": null,
+      "court": "Maryland District Court",
+      "agency": null
+    },
+    "locator": "File a Notice of Intention to Defend: form location",
+    "propositions": [
+      "md-district-civil-defendant-orientation-topic-1"
+    ],
+    "text": "Look for the Intention to Defend section on the bottom half of the summons:",
+    "verification": {
+      "retrieved_on": "2026-10-30",
+      "verified_on": "2026-10-30",
+      "source_version": "Official HTML observed 2026-10-30; uncertified",
+      "excerpt_hash": "sha256:89453ea81d0dcd7fafc2bc671ab08843438997f4f1cec7756f63f5d0a0b23bdf",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Ordinary civil money-claim document orientation only; not eviction, foreclosure, criminal, family, emergency, circuit court, or post-judgment advice.",
+      "Notice timing has exceptions and case-specific facts; no filing deadline, service validity, defense, appearance, venue, or jurisdiction determination is provided.",
+      "Research excerpt is proposed, reuse permission unresolved, and currentness uncertified."
+    ],
+    "legal_rule_ids": [],
+    "process_step_ids": [
+      "md-district-civil-defendant-orientation-resources-step"
+    ]
+  },
+  {
+    "id": "md-district-civil-defendant-orientation-passage-2",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "Court date may change",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "md-district-court-defendant-help",
+    "workflow_ids": [
+      "md-district-civil-defendant-orientation"
+    ],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Maryland",
+      "locality": null,
+      "court": "Maryland District Court",
+      "agency": null
+    },
+    "locator": "Notice of Intention to Defend: after filing, excerpt fragment",
+    "propositions": [
+      "md-district-civil-defendant-orientation-topic-2"
+    ],
+    "text": "court date on the summons may change.",
+    "verification": {
+      "retrieved_on": "2026-10-30",
+      "verified_on": "2026-10-30",
+      "source_version": "Official HTML observed 2026-10-30; uncertified",
+      "excerpt_hash": "sha256:c537e0048bce30bea11cdb2bb1398d1c97503da2da96da29729d3a9d2bf72f9e",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Ordinary civil money-claim document orientation only; not eviction, foreclosure, criminal, family, emergency, circuit court, or post-judgment advice.",
+      "Notice timing has exceptions and case-specific facts; no filing deadline, service validity, defense, appearance, venue, or jurisdiction determination is provided.",
+      "Research excerpt is proposed, reuse permission unresolved, and currentness uncertified.",
+      "This fragment applies after filing a notice; it does not say whether this user should file or appear."
+    ],
+    "legal_rule_ids": [],
+    "process_step_ids": [
+      "md-district-civil-defendant-orientation-resources-step"
+    ]
+  },
+  {
+    "id": "va-premises-duty",
+    "title": "Fultz v. Delhaize America, Inc. — duty",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-11-03",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-fultz-delhaize",
+    "workflow_ids": [],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": null
+    },
+    "locator": "PDF page 5, discussion of storeowner duty",
+    "propositions": [
+      "duty",
+      "premises_liability",
+      "negligence"
+    ],
+    "text": "a storeowner is not an insurer of the invitee’s safety on the premises, but must use ordinary care to render them reasonably safe for the invitee's visit.",
+    "verification": {
+      "retrieved_on": "2026-11-03",
+      "verified_on": "2026-11-03",
+      "source_version": "Official opinion dated 2009-06-04",
+      "excerpt_hash": "sha256:f0c35c6b9aa4a7a7b0f7f4e1bb5348379c888e825ccdbebb165bb9b4bdf397d1",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Source-linked proposed explanation; human legal review is pending.",
+      "Invitee status, actual or constructive notice, causation, damages and defenses require facts; no outcome is determined."
+    ],
+    "legal_rule_ids": [
+      "va-premises-duty-rule"
+    ],
+    "process_step_ids": []
+  },
+  {
+    "id": "va-premises-warning",
+    "title": "Fultz v. Delhaize America, Inc. — notice",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-11-03",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-fultz-delhaize",
+    "workflow_ids": [],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": null
+    },
+    "locator": "PDF page 5, warning and open-and-obvious qualification",
+    "propositions": [
+      "notice",
+      "premises_liability",
+      "negligence"
+    ],
+    "text": "must give notice or warning of an unsafe condition which is known to him and is unknown to the invitee, such notice is not required where the dangerous condition is open and obvious, and is patent to a reasonable person exercising ordinary care for his own safety.",
+    "verification": {
+      "retrieved_on": "2026-11-03",
+      "verified_on": "2026-11-03",
+      "source_version": "Official opinion dated 2009-06-04",
+      "excerpt_hash": "sha256:164b052abe1841779ad94935fc9cde97f61c044fb6d20c0362226b330e1a4dd6",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Source-linked proposed explanation; human legal review is pending.",
+      "Invitee status, actual or constructive notice, causation, damages and defenses require facts; no outcome is determined."
+    ],
+    "legal_rule_ids": [
+      "va-premises-warning-rule"
+    ],
+    "process_step_ids": []
+  },
+  {
+    "id": "va-premises-contributory",
+    "title": "Fultz v. Delhaize America, Inc. — contributory_negligence",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-11-03",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-fultz-delhaize",
+    "workflow_ids": [],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": null
+    },
+    "locator": "PDF page 6, contributory negligence objective standard",
+    "propositions": [
+      "contributory_negligence",
+      "premises_liability",
+      "negligence"
+    ],
+    "text": "an affirmative defense that must be proved according to an objective standard whether the plaintiff failed to act as a reasonable person would have acted for his or her own safety under the circumstances.",
+    "verification": {
+      "retrieved_on": "2026-11-03",
+      "verified_on": "2026-11-03",
+      "source_version": "Official opinion dated 2009-06-04",
+      "excerpt_hash": "sha256:b7e1dbf61be066d6159776968653656da46f8bde1c72d7e29fd1122c10151a47",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Source-linked proposed explanation; human legal review is pending.",
+      "Invitee status, actual or constructive notice, causation, damages and defenses require facts; no outcome is determined."
+    ],
+    "legal_rule_ids": [
+      "va-premises-contributory-rule"
+    ],
+    "process_step_ids": []
+  },
+  {
+    "id": "va-premises-created-condition",
+    "title": "Austin v. Shoney's, Inc. — notice",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-11-03",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-austin-shoneys",
+    "workflow_ids": [],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": null
+    },
+    "locator": "PDF pages 7-8, majority opinion notice analysis",
+    "propositions": [
+      "notice",
+      "premises_liability",
+      "negligence"
+    ],
+    "text": "If the jury accepted the plaintiff's theory that the grease-like film was the result of the improper cleaning methods, the hazardous condition was affirmatively created by the property owner.",
+    "verification": {
+      "retrieved_on": "2026-11-03",
+      "verified_on": "2026-11-03",
+      "source_version": "Official opinion dated 1997-06-06",
+      "excerpt_hash": "sha256:7695c728a8abfc10cc54f2449e88eade5d4b17779412f607780553d4db96b7fa",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Source-linked proposed explanation; human legal review is pending.",
+      "Invitee status, actual or constructive notice, causation, damages and defenses require facts; no outcome is determined."
+    ],
+    "legal_rule_ids": [
+      "va-premises-created-condition-rule"
+    ],
+    "process_step_ids": [],
+    "conflicts": [
+      "Austin contains a dissent disputing the inferences about cleaning and notice. Its majority reviewed a motion to strike; it did not find liability after trial."
+    ]
+  },
+  {
+    "id": "va-premises-causation",
+    "title": "Austin v. Shoney's, Inc. — causation",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-11-03",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-austin-shoneys",
+    "workflow_ids": [],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": null
+    },
+    "locator": "PDF page 8, majority opinion causation analysis",
+    "propositions": [
+      "causation",
+      "premises_liability",
+      "negligence"
+    ],
+    "text": "The testimony of Meadows that Austin's cane \"jetted\" out from under her suddenly and without warning just before she fell is sufficient to raise the inference that Austin's fall was caused by the condition of the floor.",
+    "verification": {
+      "retrieved_on": "2026-11-03",
+      "verified_on": "2026-11-03",
+      "source_version": "Official opinion dated 1997-06-06",
+      "excerpt_hash": "sha256:6bb4f44a6451c06ae3efc3ffb3f0ae0c2857c422c817b715365aa3afe214960f",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Source-linked proposed explanation; human legal review is pending.",
+      "Invitee status, actual or constructive notice, causation, damages and defenses require facts; no outcome is determined."
+    ],
+    "legal_rule_ids": [
+      "va-premises-causation-rule"
+    ],
+    "process_step_ids": [],
+    "conflicts": [
+      "Austin contains a dissent disputing the inferences about cleaning and notice. Its majority reviewed a motion to strike; it did not find liability after trial."
+    ]
+  },
+  {
+    "id": "va-premises-limitations",
+    "title": "Virginia personal injury limitations — limitations",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-11-03",
+    "status": "proposed",
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "source_id": "va-personal-injury-limitations",
+    "workflow_ids": [],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": null
+    },
+    "locator": "Section 8.01-243(A), first sentence",
+    "propositions": [
+      "limitations",
+      "premises_liability",
+      "negligence"
+    ],
+    "text": "Unless otherwise provided in this section or by other statute, every action for personal injuries, whatever the theory of recovery, and every action for damages resulting from fraud, shall be brought within two years after the cause of action accrues.",
+    "verification": {
+      "retrieved_on": "2026-11-03",
+      "verified_on": "2026-11-03",
+      "source_version": "Official Code page retrieved 2026-11-03; effective date unresolved",
+      "excerpt_hash": "sha256:96c51e303a52ccbd856d92fe7514acbb0beab30ce9527a5ebdd2237cc08b679e",
+      "method": "manual_official_source_check"
+    },
+    "limitations": [
+      "Source-linked proposed explanation; human legal review is pending.",
+      "Invitee status, actual or constructive notice, causation, damages and defenses require facts; no outcome is determined.",
+      "No case-specific deadline, accrual date, tolling determination or exception is established."
+    ],
+    "legal_rule_ids": [
+      "va-premises-limitations-rule"
+    ],
+    "process_step_ids": []
   }
 ]

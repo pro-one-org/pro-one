@@ -1,75 +1,35 @@
-# MVP
+# MVP operation and release limits
 
-The first Pro-One legal workflow remains a proposal, not a publicly available product. The local runtime loads and resolves records, evaluates readiness/intake, routes explicit risks, retrieves curated passages, evaluates grounding, and builds deterministic response plans. A provider-neutral development pipeline now produces structured drafts through an offline extractive test adapter, validates every output, and runs twelve explicitly mapped Virginia fixtures. No live LLM adapter or runtime web fetching exists. All Virginia records/reviews remain proposed, no currentness is certified, and public generation/execution remain false. Automated checks do not complete narrative fixture review or establish semantic legal correctness. The MVP remains narrow: one jurisdiction, one civil-procedure task, one reviewed source corpus, and explicit release gates. See [Model generation and evaluation](model-generation.md).
+Pro-One is a usable local development beta for individuals representing themselves and small businesses handling matters themselves. The product flow is landing → audience → structured matter → deterministic routing → workflow confirmation → minimum intake/question → selected official evidence → configured provider → validation → readable answer and citations, or a clear stop.
 
-## Direction
+## Current coverage
 
-The proposed first workflow is a self-represented defendant information workflow for a Virginia General District Court Small Claims Division Warrant in Debt (Form DC-402). It identifies the official form and court, organizes user-confirmed information, explains only verified procedural propositions, and routes date uncertainty to official resources. It does not prepare a responsive pleading or make a litigation decision. See the [workflow specification](virginia-small-claims-warrant-in-debt-workflow.md).
+- Virginia DC-402 small-claims defendant information: proposed; appearance wording, universal written-answer support, local practice, and old instruction currentness remain unresolved.
+- Virginia SCC business records/status navigation: proposed official-resource navigation only. No actual entity lookup, compliance/status conclusion, filing, registration deadline, fee, or reinstatement advice.
+- Maryland District Court civil-summons orientation: proposed ordinary civil money-claim document navigation. No high-consequence matters, calculated deadline, service/venue conclusion, or response strategy.
 
-## Intended behavior
+All real records and reviews remain proposed. Research checks on official pages are not legal review or currentness certification. The five older fictional workflows are excluded from product coverage.
 
-A future implementation of this specific workflow should:
+## Modes and configuration
 
-1. identify the document, jurisdiction, and reviewed workflow
-2. retrieve approved, current sources for the propositions being explained
-3. identify the court, division, form, and return date shown on the warrant
-4. organize user-confirmed facts and questions while leaving all response choices to the user
-5. explain verified small-claims procedure with links to official sources
-6. avoid creating or approving any answer, grounds of defense, counterclaim, or filing
-7. show citations, limitations, unanswered questions, and required review points
-8. evaluate the output against reviewed fixtures before public support
+Development mode permits proposed workflow inspection/generation through the clearly labeled offline test adapter or explicitly configured OpenAI/Anthropic adapters. The server owns provider/model allowlists and credentials; browser clients cannot provide keys. No provider fallback exists. Missing default configuration displays an unavailable choice; choosing the offline adapter requires an explicit selection.
 
-The system must not:
+Production mode omits the testing provider, suppresses development inspection endpoints, and refuses unapproved workflow generation before calling any model. Health, coverage, safe model status, routing, scope, and OpenAPI remain available. All current workflows fail the public gates. A functioning production container is not public beta approval.
 
-- decide what the user should admit, deny, or state based on lack of knowledge
-- invent facts, defenses, objections, or legal authority
-- select litigation strategy or predict an outcome
-- turn silence, ambiguity, or model inference into a factual choice
-- calculate a final deadline without adequate reviewed authority and required facts
-- represent that a pleading is complete or legally sufficient merely because it was generated
-- file, serve, sign, or submit a document for the user
+## Safety and privacy
 
-## Initial scope
+Exact structured routing confirms specification fit only, never legal jurisdiction or merits. Missing distinguishing data narrows or stops the flow; contradictory intake cannot override scope. Caller generation.scope is compatibility metadata, not authority. Unsupported matters receive no generic LLM response.
 
-- one user type: self-represented defendants who received Form DC-402
-- one jurisdiction: Virginia General District Court Small Claims Division
-- one task: identify a served Warrant in Debt and organize user-directed questions and official resources
-- one inspectable source corpus, reviewed and approved before any supported use
-- source-backed procedural explanations and citations
-- structured intake and user-confirmation controls
-- warnings, refusal of unsafe parts, and safe continuation
-- privacy and data-minimization controls
-- reviewed evaluation fixtures
+Only sanitized facts and selected evidence/constraints reach providers. Structured drafts must pass strict local validation; rendering revalidates and uses canonical citation metadata. Rejected text and private provider errors are never displayed. Controls include exact fact repetition, required rendered disclosures/limitations/notices, relationship checks, and supplementary prose guards. The guards do not establish arbitrary prose-level factual/legal correctness or perfect injection resistance.
 
-Payments, accounts, attorney matching, multi-jurisdiction coverage, broad legal advice, automated submissions, complex strategy, production deployment, mobile apps, and advanced interface work remain out of scope.
+No accounts, database, sessions, chat history, prompt history, user profiling, tool-using model, live source retrieval, or automatic filing exists. Source links are navigation; Pro-One does not fetch generated URLs. Privacy filtering is category-key based and cannot identify every sensitive value placed in an otherwise allowed free-text question. Real providers have their own data-handling policies.
 
-## Source and review requirements
+## Evaluation and operation
 
-The corpus should be selected by proposition, not by a single universal source ranking. Statutes, regulations, cases, and rules may support substantive propositions; court rules, forms, and instructions may support filing and procedural requirements; official self-help and legal-aid materials may support plain-language explanation and navigation.
+There are 28 fixture records: 24 mapped real-workflow fixtures (12 DC-402, six SCC, six Maryland) and four explicitly unmapped fictional examples. The runner supports all/workflow/fixture modes; required unmapped or stale fixtures fail. Declared automated checks remain separate from manual narrative expectations and release approval.
 
-Before the workflow is publicly supported, the project should complete jurisdiction-specific review of the legal-information/legal-advice boundary and other applicable requirements. A `legal_information_only` label is a design constraint, not a legal conclusion. The project does not currently claim attorney review.
+Cross-model benchmarking reuses the same assembled package across configured providers and reports status, deterministic validation, latency, usage, draft hashes, and pending/manual semantic dimensions. Manual scores are bound to exact drafts and cannot override deterministic rejection. No model judge grants approval. Standard CI uses no live credentials.
 
-The runtime readiness gate is an enforcement point for these release conditions, not evidence that they have been satisfied. All sample workflows, including the Virginia DC-402 candidate, remain proposed and fail the gate because reviews and required dependencies have not been approved or supported. The Virginia candidate's twelve evaluation fixtures are proposed and unreviewed.
+The container uses Python 3.12, runtime dependencies only, a non-root user, PORT-aware Uvicorn startup, and a health check. Deployment is provider-neutral OCI hosting with environment injection and host TLS. No paid resource is provisioned. See the root README for setup and commands.
 
-## Example interaction boundary
-
-```text
-User: I received a Virginia DC-402. What does the return date mean?
-
-Permitted future behavior:
-- identify or ask for jurisdiction and the document title
-- identify the document and listed court and date
-- summarize only verified procedure with official sources
-- help the user organize questions without recommending a response
-- show sources, unresolved questions, deadlines requiring verification, and limitations
-
-Prohibited behavior:
-- choose whether the user should respond, appear, remove, contest, settle, or assert a defense
-- invent facts, a defense, or a legal position
-- select litigation strategy or predict an outcome
-- say an outline or document is legally sufficient or ready to file
-```
-
-## Success criteria
-
-The MVP should not be called publicly supported until it passes source-grounding, citation, jurisdiction, fact-integrity, user-decision, privacy, deadline, safe-continuation, and legal-boundary evaluations. Correctness, transparency, and narrow scope matter more than broad coverage.
+Before public beta, complete legal/source/rights/currentness and fixture approvals, real-model semantic/privacy evaluation, production configuration verification, and host-level abuse controls/monitoring. Optional saved history, additional jurisdictions, and further polish remain product choices rather than blockers to local use.

@@ -1291,5 +1291,368 @@
       "known_failure_modes": ["Recommending an outcome or treating procedural categories as advice."]
     },
     "notes": "Proposed Virginia-specific user-decision boundary; not reviewed or approved."
+  },
+  {
+    "id": "va-scc-business-record-navigation-uncertainty-risk",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "Virginia business records and status navigation uncertainty boundary",
+    "description": "Unclear scope, status or timing requires official verification without choosing a legal action.",
+    "status": "proposed",
+    "risk_type": "deadline_risk",
+    "severity": "medium",
+    "urgency": "time_sensitive",
+    "integrity_risks": [
+      "none"
+    ],
+    "jurisdiction": {
+      "jurisdiction_required": true,
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": "Virginia State Corporation Commission",
+      "jurisdiction_unknown_handling": "ask_minimum_clarifying_question",
+      "jurisdiction_notes": "No legal jurisdiction finding."
+    },
+    "related_records": {
+      "source_ids": [
+        "va-scc-cis-help",
+        "va-scc-clerk-records"
+      ],
+      "workflow_ids": [
+        "va-scc-business-record-navigation"
+      ],
+      "process_step_ids": [
+        "va-scc-business-record-navigation-resources-step"
+      ],
+      "legal_document_ids": [],
+      "intake_ids": [
+        "va-scc-business-record-navigation-intake"
+      ],
+      "legal_rule_ids": []
+    },
+    "trigger_signals": {
+      "user_statements": [
+        "Status or timing is unclear."
+      ],
+      "document_signals": [
+        "A date or status needs official verification."
+      ],
+      "timing_signals": [
+        "A date may be imminent or passed."
+      ],
+      "source_signals": [
+        "Curated excerpts do not establish individual duties."
+      ]
+    },
+    "user_context": {
+      "required_facts": [
+        "state",
+        "court_name_or_locality",
+        "document_title_or_form_number",
+        "user_goal"
+      ],
+      "optional_facts": [],
+      "facts_not_to_collect": [
+        "full SSN",
+        "account numbers",
+        "privileged communications"
+      ],
+      "unknown_fact_handling": "ask_one_clarifying_question"
+    },
+    "unsafe_requests": {
+      "unsafe_request_examples": [
+        "Choose my legal action or invent a fact."
+      ],
+      "refusal_required": true,
+      "refusal_style": "brief_boundary_then_continue",
+      "continue_safe_parts": true,
+      "safe_alternatives": [
+        "Organize truthful facts and official-source questions."
+      ]
+    },
+    "support_routing": {
+      "default_response_strategy": "continue_with_urgent_support",
+      "safe_continuation_required": true,
+      "support_modes": [
+        "deadline_awareness",
+        "checklist",
+        "court_or_agency_resource_prompt"
+      ],
+      "routing_notes": "Continue with date awareness and official resource prompts; do not calculate."
+    },
+    "allowed_support": {
+      "allowed_outputs": [
+        "official source links",
+        "uncertainty notice"
+      ],
+      "allowed_actions": [
+        "Prompt current official verification."
+      ],
+      "allowed_language": [
+        "Unclear status or timing should be verified promptly with official information or qualified help."
+      ]
+    },
+    "prohibited_support": {
+      "prohibited_outputs": [
+        "calculated deadline",
+        "compliance conclusion"
+      ],
+      "prohibited_actions": [
+        "Choose strategy, defenses, admissions, removal, settlement, or appearance.",
+        "Determine service validity, legal sufficiency, entity compliance, or a final deadline.",
+        "Sign, file, serve, pay, submit, or perform an action for the user.",
+        "Navigation only: no live entity lookup or conclusion about active status, good standing, reinstatement, registration fees, taxes, or filing duties.",
+        "Entity-specific status and requirements must be checked directly with SCC; the curated excerpts do not establish compliance."
+      ],
+      "prohibited_language": [
+        "You can ignore it."
+      ]
+    },
+    "deadline_handling": {
+      "deadline_relevant": true,
+      "deadline_strategy": "deadline_awareness_only",
+      "deadline_outputs_allowed": [
+        "prompt official verification"
+      ],
+      "deadline_outputs_prohibited": [
+        "derive a date",
+        "assure no consequence"
+      ]
+    },
+    "privacy": {
+      "sensitive_data_likely": true,
+      "redaction_prompt_required": true,
+      "data_minimization_required": true,
+      "restricted_data_categories": [
+        "case number",
+        "addresses"
+      ],
+      "prohibited_data_categories": [
+        "SSN",
+        "full account number",
+        "unredacted records"
+      ]
+    },
+    "human_help": {
+      "human_help_framing": "qualified_help_recommended",
+      "resource_prompt_allowed": true,
+      "resource_selection_policy": "best_fit_for_risk_and_need",
+      "human_help_notes": "Official staff can explain resources; no legal representation is implied."
+    },
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "evaluation": {
+      "required_evaluation_fixture_ids": [
+        "va-scc-business-record-navigation-ordinary-fixture",
+        "va-scc-business-record-navigation-missing-fixture",
+        "va-scc-business-record-navigation-outside-fixture",
+        "va-scc-business-record-navigation-privacy-fixture",
+        "va-scc-business-record-navigation-citation-fixture",
+        "va-scc-business-record-navigation-unsafe-fixture"
+      ],
+      "required_tests": [
+        "source_grounding",
+        "privacy",
+        "scope",
+        "user_control"
+      ],
+      "success_criteria": [
+        "No unsupported case-specific conclusion."
+      ],
+      "known_failure_modes": [
+        "Cross-workflow advice or invented facts."
+      ]
+    },
+    "notes": "Proposed uncertainty routing, not an assessment of the user’s obligations."
+  },
+  {
+    "id": "md-district-civil-defendant-orientation-uncertainty-risk",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "title": "Maryland District Court civil summons orientation uncertainty boundary",
+    "description": "Unclear scope, status or timing requires official verification without choosing a legal action.",
+    "status": "proposed",
+    "risk_type": "deadline_risk",
+    "severity": "medium",
+    "urgency": "time_sensitive",
+    "integrity_risks": [
+      "none"
+    ],
+    "jurisdiction": {
+      "jurisdiction_required": true,
+      "country": "US",
+      "state": "Maryland",
+      "locality": null,
+      "court": "Maryland District Court",
+      "agency": null,
+      "jurisdiction_unknown_handling": "ask_minimum_clarifying_question",
+      "jurisdiction_notes": "No legal jurisdiction finding."
+    },
+    "related_records": {
+      "source_ids": [
+        "md-district-court-defendant-help"
+      ],
+      "workflow_ids": [
+        "md-district-civil-defendant-orientation"
+      ],
+      "process_step_ids": [
+        "md-district-civil-defendant-orientation-resources-step"
+      ],
+      "legal_document_ids": [],
+      "intake_ids": [
+        "md-district-civil-defendant-orientation-intake"
+      ],
+      "legal_rule_ids": []
+    },
+    "trigger_signals": {
+      "user_statements": [
+        "Status or timing is unclear."
+      ],
+      "document_signals": [
+        "A date or status needs official verification."
+      ],
+      "timing_signals": [
+        "A date may be imminent or passed."
+      ],
+      "source_signals": [
+        "Curated excerpts do not establish individual duties."
+      ]
+    },
+    "user_context": {
+      "required_facts": [
+        "state",
+        "court_name_or_locality",
+        "document_title_or_form_number",
+        "user_goal"
+      ],
+      "optional_facts": [],
+      "facts_not_to_collect": [
+        "full SSN",
+        "account numbers",
+        "privileged communications"
+      ],
+      "unknown_fact_handling": "ask_one_clarifying_question"
+    },
+    "unsafe_requests": {
+      "unsafe_request_examples": [
+        "Choose my legal action or invent a fact."
+      ],
+      "refusal_required": true,
+      "refusal_style": "brief_boundary_then_continue",
+      "continue_safe_parts": true,
+      "safe_alternatives": [
+        "Organize truthful facts and official-source questions."
+      ]
+    },
+    "support_routing": {
+      "default_response_strategy": "continue_with_urgent_support",
+      "safe_continuation_required": true,
+      "support_modes": [
+        "deadline_awareness",
+        "checklist",
+        "court_or_agency_resource_prompt"
+      ],
+      "routing_notes": "Continue with date awareness and official resource prompts; do not calculate."
+    },
+    "allowed_support": {
+      "allowed_outputs": [
+        "official source links",
+        "uncertainty notice"
+      ],
+      "allowed_actions": [
+        "Prompt current official verification."
+      ],
+      "allowed_language": [
+        "Unclear status or timing should be verified promptly with official information or qualified help."
+      ]
+    },
+    "prohibited_support": {
+      "prohibited_outputs": [
+        "calculated deadline",
+        "compliance conclusion"
+      ],
+      "prohibited_actions": [
+        "Choose strategy, defenses, admissions, removal, settlement, or appearance.",
+        "Determine service validity, legal sufficiency, entity compliance, or a final deadline.",
+        "Sign, file, serve, pay, submit, or perform an action for the user.",
+        "Ordinary civil money-claim document orientation only; not eviction, foreclosure, criminal, family, emergency, circuit court, or post-judgment advice.",
+        "Notice timing has exceptions and case-specific facts; no filing deadline, service validity, defense, appearance, venue, or jurisdiction determination is provided."
+      ],
+      "prohibited_language": [
+        "You can ignore it."
+      ]
+    },
+    "deadline_handling": {
+      "deadline_relevant": true,
+      "deadline_strategy": "deadline_awareness_only",
+      "deadline_outputs_allowed": [
+        "prompt official verification"
+      ],
+      "deadline_outputs_prohibited": [
+        "derive a date",
+        "assure no consequence"
+      ]
+    },
+    "privacy": {
+      "sensitive_data_likely": true,
+      "redaction_prompt_required": true,
+      "data_minimization_required": true,
+      "restricted_data_categories": [
+        "case number",
+        "addresses"
+      ],
+      "prohibited_data_categories": [
+        "SSN",
+        "full account number",
+        "unredacted records"
+      ]
+    },
+    "human_help": {
+      "human_help_framing": "qualified_help_recommended",
+      "resource_prompt_allowed": true,
+      "resource_selection_policy": "best_fit_for_risk_and_need",
+      "human_help_notes": "Official staff can explain resources; no legal representation is implied."
+    },
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "evaluation": {
+      "required_evaluation_fixture_ids": [
+        "md-district-civil-defendant-orientation-ordinary-fixture",
+        "md-district-civil-defendant-orientation-missing-fixture",
+        "md-district-civil-defendant-orientation-outside-fixture",
+        "md-district-civil-defendant-orientation-privacy-fixture",
+        "md-district-civil-defendant-orientation-citation-fixture",
+        "md-district-civil-defendant-orientation-unsafe-fixture"
+      ],
+      "required_tests": [
+        "source_grounding",
+        "privacy",
+        "scope",
+        "user_control"
+      ],
+      "success_criteria": [
+        "No unsupported case-specific conclusion."
+      ],
+      "known_failure_modes": [
+        "Cross-workflow advice or invented facts."
+      ]
+    },
+    "notes": "Proposed uncertainty routing, not an assessment of the user’s obligations."
   }
 ]

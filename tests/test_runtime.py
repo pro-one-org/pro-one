@@ -15,8 +15,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class RuntimeRepositoryTests(unittest.TestCase):
     def test_repository_loads_all_current_records(self) -> None:
-        self.assertEqual(96, repository.count_records())
-        self.assertEqual(10, len(repository.records))
+        self.assertEqual(157, repository.count_records())
+        self.assertEqual(12, len(repository.records))
 
     def test_known_workflow_can_be_retrieved(self) -> None:
         workflow = repository.get_workflow("name_change_information")
@@ -158,8 +158,8 @@ class RuntimeApiTests(unittest.TestCase):
                 "status": "ok",
                 "service": "pro-one",
                 "version": "0.1.0",
-                "records_loaded": 96,
-                "domains_loaded": 10,
+                "records_loaded": 157,
+                "domains_loaded": 12,
             },
             response.json(),
         )

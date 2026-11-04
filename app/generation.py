@@ -59,7 +59,7 @@ class GenerationService:
                 and package["response_plan"]["available"]
                 and package["grounding"]["eligibility"]["development_grounding"]["available"]):
             return failure("development_package_unavailable")
-        if config.scope == "outside_workflow":
+        if config.scope == "outside_workflow" or package.get("scope_resolution", {}).get("state") == "outside_workflow":
             return failure("scope_outside_workflow")
         try:
             adapter = self.registry.resolve(config.provider, config.model)

@@ -3,6 +3,7 @@
 from copy import deepcopy
 from datetime import date
 from typing import Any, Callable, TypedDict
+from time import perf_counter
 
 from pydantic import Field
 
@@ -11,10 +12,12 @@ from app.grounding import GroundingEligibilityService, utc_today
 from app.intake import IntakeRequest
 from app.repository import RecordRepository
 from app.retrieval import PassageRetrievalService, RetrievalRequest
+from app.routing import MatterRequest, MatterRoutingService
 
 
 class ResponseAssemblyRequest(IntakeRequest):
     retrieval: RetrievalRequest = Field(default_factory=RetrievalRequest)
+    matter: MatterRequest | None = None
 
 
 class ResponseAssemblyResult(TypedDict):
@@ -29,6 +32,7 @@ class ResponseAssemblyResult(TypedDict):
     grounding: dict[str, Any]
     response_plan: dict[str, Any]
     public_execution: dict[str, Any]
+    scope_resolution: dict[str, Any]
 
 
 class AssemblyIntegrityError(ValueError):
@@ -42,11 +46,14 @@ class ResponseAssemblyService:
         self.retrieval_service = PassageRetrievalService(repository)
         self.grounding_service = GroundingEligibilityService(repository, today)
 
-    def assemble(self, workflow_id: str, request: ResponseAssemblyRequest) -> ResponseAssemblyResult | None:
+    def assemble(self, workflow_id: str, request: ResponseAssemblyRequest, metrics: dict | None = None) -> ResponseAssemblyResult | None:
         execution = self.execution_service.build(workflow_id, request.answers, request.risk_ids)
         if execution is None:
             return None
+        started = perf_counter()
         retrieval = self.retrieval_service.retrieve(workflow_id, request.retrieval)
+        if metrics is not None:
+            metrics["retrieval"] = round((perf_counter() - started) * 1000, 2)
         if retrieval is None or execution["workflow_id"] != workflow_id or retrieval["workflow_id"] != workflow_id:
             raise AssemblyIntegrityError("package_workflow_mismatch")
         eligibility = self.grounding_service.evaluate(
@@ -158,6 +165,7 @@ class ResponseAssemblyService:
                 claim["status"] = "public_eligible"
         return deepcopy({
             "workflow_id": workflow_id, "mode": "development_inspection",
+            "scope_resolution": MatterRoutingService(self.repository).scope(workflow_id, request.matter, context["user_facts"] if context else {}),
             "development_package": {"available": context is not None, "package_integrity": package_integrity},
             "user_context": {
                 "facts": context["user_facts"] if context else {},

@@ -544,6 +544,9 @@
     "notes": {
       "type": "string",
       "description": "Additional notes."
+    },
+    "source_passage_ids": {
+      "$ref": "common.schema.json#/$defs/recordIdArray"
     }
   },
   "allOf": [
@@ -567,12 +570,36 @@
               },
               "review_scope": {
                 "allOf": [
-                  { "contains": { "const": "schema" } },
-                  { "contains": { "const": "source_authority" } },
-                  { "contains": { "const": "jurisdiction" } },
-                  { "contains": { "const": "legal_information_boundary" } },
-                  { "contains": { "const": "safety" } },
-                  { "contains": { "const": "evaluation" } }
+                  {
+                    "contains": {
+                      "const": "schema"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "source_authority"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "jurisdiction"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "legal_information_boundary"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "safety"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "evaluation"
+                    }
+                  }
                 ]
               }
             },
