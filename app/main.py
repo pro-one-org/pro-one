@@ -29,6 +29,7 @@ from app.security import SecurityMiddleware
 from app.assistant import AssistantRequest, AssistantService
 from app.documents import isolated_extract
 from app.capabilities import ResearchMatter, CapabilityResolutionService
+from app.citation_research import CitationResearchRequest
 
 
 app = FastAPI(
@@ -243,7 +244,11 @@ def research_evidence(request: ResearchMatter):
     if settings.mode == "production":
         raise HTTPException(status_code=403, detail={"code": "research_release_review_required"})
     from app.legal_research import GeneralLegalResearchService
-    return GeneralLegalResearchService(repository, settings).assemble(request)
+    service = GeneralLegalResearchService(repository, settings)
+    try:
+        return service.assemble(request)
+    finally:
+        service.close()
 
 
 @app.post("/documents/extract")
@@ -254,6 +259,29 @@ async def document_extract(request: Request):
     except Exception as exc:
         message = str(exc) if type(exc) is ValueError else "The document could not be read safely. Try a redacted TXT copy."
         return JSONResponse({"detail": {"message": message}}, status_code=422)
+
+
+@app.post("/research/citation")
+def research_citation(request: CitationResearchRequest):
+    if settings.mode == "production":
+        raise HTTPException(status_code=403, detail={"code": "research_release_review_required"})
+    import os
+    from app.corpus_store import SQLiteCorpusStore
+    from app.courtlistener_client import CourtListenerClient
+    from app.citation_research import resolve_citation
+    if not settings.corpus_path and not os.environ.get("COURTLISTENER_API_TOKEN"):
+        return {"status": "unavailable", "reason": "courtlistener_unconfigured"}
+    with SQLiteCorpusStore(settings.corpus_path or ".local/courtlistener.sqlite3") as store:
+        client = CourtListenerClient(os.environ.get("COURTLISTENER_API_TOKEN"), store=store) if settings.authority_network == "courtlistener" else None
+        return resolve_citation(request, store, client)
+
+
+@app.get("/authority/status")
+def authority_status():
+    import os
+    return {"provider": "courtlistener", "api_version": "v4", "network_enabled": settings.authority_network == "courtlistener",
+            "configured": bool(os.environ.get("COURTLISTENER_API_TOKEN")), "local_corpus_configured": bool(settings.corpus_path),
+            "release_approved": False}
 
 
 @app.post("/assistant/message")

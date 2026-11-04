@@ -107,3 +107,7 @@ Do not commit API keys, credentials, private user data, real legal documents, co
 ## Guiding rule
 
 Keep schemas, sample records, documentation, and validation synchronized. A machine-valid record may still be unsafe or legally inappropriate; supported status requires the additional review and evaluation gates documented by the project.
+
+## CourtListener development
+
+The [CourtListener guide](courtlistener.md) documents server-only token configuration, local SQLite/FTS operation, bounded REST/bulk commands and corpus compilation. No credentials are needed for `python -B -m unittest tests.test_courtlistener -v` or `python -B scripts/benchmark_research.py --scale 1000`. In the default product, choose **Try CourtListener research example**; it explicitly uses reconstructed records and fixed model fixtures. No database is created unless a corpus/network path is configured, a CLI is invoked, or the isolated in-memory example is selected. Live acceptance tests remain pending. Never commit corpus databases, downloaded bulk files or credentials.

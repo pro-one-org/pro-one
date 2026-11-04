@@ -41,6 +41,7 @@ class ResponseRenderingService:
             "sources": [{"number": numbers[cid], "title": canonical[cid]["source_title"],
                          "source_type": sources[canonical[cid]["source_id"]]["source_type"],
                          "case_metadata": sources[canonical[cid]["source_id"]].get("case_metadata"),
+                         "external_identifiers": sources[canonical[cid]["source_id"]].get("external_identifiers"),
                          "enactment_metadata": sources[canonical[cid]["source_id"]].get("enactment_metadata"),
                          "issuing_authority": sources[canonical[cid]["source_id"]]["authority"]["issuing_body"],
                          "citation": canonical[cid]["preferred_citation"], "locator": canonical[cid]["locator"],

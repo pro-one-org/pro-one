@@ -39,6 +39,9 @@ jobs:
       - name: Check conversational JavaScript
         run: node --check app/web/app.js
 
+      - name: Benchmark offline corpus and research contracts
+        run: python -B scripts/benchmark_research.py --scale 1000 --output "$RUNNER_TEMP/pro-one-research-benchmark.json"
+
       - name: Compile a proposed capability review bundle
         run: python -B scripts/build_capability.py --jurisdiction Virginia --legal-area torts --topic premises_liability --output "$RUNNER_TEMP/pro-one-capability-review"
 
@@ -73,6 +76,14 @@ jobs:
           try:
               urllib.request.urlopen(request)
               raise AssertionError('Proposed research must not execute in production')
+          except urllib.error.HTTPError as error:
+              assert error.code == 403
+          request = urllib.request.Request('http://127.0.0.1:8000/research/citation',
+              data=json.dumps({'citation':'278 Va. 84','state':'Virginia'}).encode(),
+              headers={'Content-Type':'application/json'})
+          try:
+              urllib.request.urlopen(request)
+              raise AssertionError('Citation research must not execute in production')
           except urllib.error.HTTPError as error:
               assert error.code == 403
           print('Production health, workflow/capability catalogs, OpenAPI and research release gate passed.')

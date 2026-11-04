@@ -27,8 +27,14 @@ def evidence_errors(source, passage, jurisdiction):
         errors.append("cross_domain_evidence")
     if passage["source_id"] != source["id"]:
         errors.append("passage_source_mismatch")
-    if source["authority"]["level"] not in {"official_primary", "official_secondary"}:
+    if source["authority"]["level"] not in {"official_primary", "official_secondary", "primary_reproduction"}:
         errors.append("unknown_source_authority")
+    external = source.get("external_identifiers")
+    context = passage.get("external_context")
+    if external and (external.get("citation_status") not in {"verified", "fixture_verified"} or not context
+                     or any(external.get(k) != context.get(k) for k in ("cluster", "opinion"))
+                     or external.get("opinion") is None or context.get("source_hash") != source["provenance"]["content_hash"]):
+        errors.append("external_identity_mismatch")
     if not passage["locator"] or not source["citation"]["preferred_citation"] or not source["url"].startswith("https://"):
         errors.append("citation_metadata_missing")
     if not source["provenance"]["source_content_version"] or not passage["verification"]["source_version"]:
@@ -45,7 +51,12 @@ class GeneralLegalResearchService:
     def __init__(self, repository, settings=None, generation=None, providers=None):
         self.repository, self.settings, self.generation = repository, settings, generation
         self.providers = providers if providers is not None else configured_authority_providers(
-            repository, getattr(settings, "authority_network", ""))
+            repository, getattr(settings, "authority_network", ""), getattr(settings, "corpus_path", ""))
+
+    def close(self):
+        for provider in self.providers:
+            if hasattr(provider, "close"):
+                provider.close()
 
     def assemble(self, matter: ResearchMatter, *, force_general=False, selected_capability_id=None):
         resolution = CapabilityResolutionService(self.repository).resolve(matter)
@@ -63,18 +74,23 @@ class GeneralLegalResearchService:
             capability = self.repository.get("legal_capabilities", selected_capability_id or candidates[0])
         mode = "capability" if capability else "general_research"
         sources, passages, gaps = {}, {}, []
+        provider_gaps = ["CourtListener network access is not configured; only existing local/repository evidence can be used."
+                         for p in self.providers if getattr(p, "network_requested_unconfigured", False)]
         if capability:
             self.repository.validate_capabilities()
             sources = {sid: deepcopy(self.repository.get("sources", sid)) for sid in capability["source_ids"]}
             passages = {pid: deepcopy(self.repository.get("source_passages", pid)) for pid in capability["source_passage_ids"]}
             gaps = deepcopy(capability["support_gaps"])
-        else:
+        gaps.extend(provider_gaps)
+        if not capability or any(p.name in {"courtlistener", "courtlistener_corpus"} for p in self.providers):
             # Query only legal concepts; names, documents and user facts never
             # leave the process for an authority search.
             query = matter.model_copy(update={"goal": "", "user_posture": None, "document_type": None})
-            for provider in self.providers[:2]:
+            for provider in self.providers[:4]:
+                if capability and provider.name not in {"courtlistener", "courtlistener_corpus"}:
+                    continue
                 try:
-                    for sid in provider.search(query, limit=3)[:3]:
+                    for sid in provider.search(query, limit=6)[:6]:
                         document = provider.fetch(sid)
                         self.repository.validate_record("sources", document.source)
                         sources[sid] = deepcopy(document.source)
@@ -103,6 +119,8 @@ class GeneralLegalResearchService:
                 return {"status": "evidence_rejected", "resolution": resolution, "package": None}
             if source.get("case_metadata", {}).get("subsequent_treatment"):
                 gaps.append("Subsequent case treatment is unresolved; check later history before relying on an opinion.")
+            if source.get("external_identifiers", {}).get("origin") == "fixture":
+                gaps.append("Offline reconstructed CourtListener fixture: no authenticated API download or live semantic verification occurred.")
             conflicts.extend(passage.get("conflicts", []))
         order = {pid: index for index, pid in enumerate(capability["source_passage_ids"])} if capability else {}
         ranked = sorted(passages.values(), key=lambda p: (authority_rank(sources[p["source_id"]]),
@@ -136,6 +154,8 @@ class GeneralLegalResearchService:
                               "source_type": source["source_type"], "source_currentness": {"status": "unresolved", "dates": source["dates"],
                                   "retrieved_at": source["citation"]["retrieved_at"], "provenance": source["provenance"]},
                               "passage_currentness": passage["verification"], "limitations": limits})
+            citations[-1]["external_identifiers"] = deepcopy(source.get("external_identifiers"))
+            citations[-1]["case_metadata"] = deepcopy(source.get("case_metadata"))
         limitations = sorted({CURRENTNESS_LIMIT, FACT_LIMIT, *gaps, *conflicts, *(v for c in claims for v in c["limitations"])})
         package = {"workflow_id": None, "evidence_mode": mode, "capability_id": capability["id"] if capability else None,
                    "development_package": {"available": True, "package_integrity": True},
@@ -155,11 +175,19 @@ class GeneralLegalResearchService:
 
     def respond(self, matter, config: GenerationConfig):
         if self.settings and self.settings.mode == "production":
+            self.close()
             return {"status": "unavailable", "response": None, "reason": "research_release_review_required"}
-        prepared = self.assemble(matter)
+        try:
+            prepared = self.assemble(matter)
+        finally:
+            self.close()
         if prepared["package"] is None:
             return {"status": prepared["status"], "response": None}
         package = prepared["package"]
+        if self.generation and config.provider != "testing":
+            from app.research_synthesis import ResearchSynthesisService
+            package = ResearchSynthesisService(self.generation.registry).prepare(package, config)
         generated = self.generation.generate(package, config)
         rendered = ResponseRenderingService().render(generated, package, config)
-        return {"status": "answered" if rendered else generated["generation"]["status"], "response": rendered}
+        return {"status": "answered" if rendered else generated["generation"]["status"], "response": rendered,
+                "synthesis": deepcopy(package.get("synthesis", {"status": "exact_text_fallback"}))}

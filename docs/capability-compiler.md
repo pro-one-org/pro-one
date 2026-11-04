@@ -38,3 +38,7 @@ Review source sets, capability boundaries, key propositions, exceptions, majorit
 - [Va. Code section 8.01-243(A)](https://law.lis.virginia.gov/vacode/title8.01/section8.01-243/): general personal-injury limitations language; no deadline calculation or resolution of accrual/tolling/exceptions.
 
 This set does not establish factual notice, proper defendant, premises control, causation, medical evidence, damages, venue, defenses or outcome. A complete negligence-elements/damages framework and ordinary third-party constructive-notice doctrine remain gaps. Case treatment is unknown and legal/currentness review is pending. Thirteen registered canonical fixtures cover grounded answering, missing/wrong jurisdiction, workflow independence, general research, conflicts, currentness, invented cases/statutes, injection, unsupported propositions and outcome/deadline/damages claims.
+
+## Compile from a local case corpus
+
+Use `--provider courtlistener_corpus --corpus-path .local/courtlistener.sqlite3` with the existing jurisdiction, legal-area, topic and output arguments. No network is performed by this compiler mode. It selects locally verified identities and exact role-aware passages, preserves conflict/currentness gaps and emits only proposed review artifacts. Non-majority text remains evidence but cannot become a candidate general rule. No corpus import or verifier result promotes canonical records. See [CourtListener](courtlistener.md) for bulk/REST preparation and the complete command.

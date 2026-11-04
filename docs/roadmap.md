@@ -41,3 +41,7 @@ Passing structural checks is not semantic legal verification. Current production
 - [ ] Consider optional accounts/history only with explicit privacy requirements
 
 Accounts, payments, model agents, model tools, embeddings, and a vector database are not prerequisites for the stateless MVP.
+
+## CourtListener milestone follow-up
+
+The optional v4/corpus/synthesis integration is implemented and offline-tested; public legal release remains closed. Next acceptance work requires authorized live CourtListener/model credentials, representative real-corpus retrieval and entailment evaluation, broader reviewed jurisdiction/issue policies, legal/treatment review, large-snapshot orchestration and optional replication access. Synthetic scale proof is not national legal coverage. See [implementation and limits](courtlistener.md) and [offline measurement](research-benchmark.json).

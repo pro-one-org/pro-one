@@ -98,6 +98,45 @@ class AssistantService:
         provider, model = self.configuration()
         if model not in self.generation.registry.configured_models().get(provider, []):
             return reply("provider_unavailable", "Live AI is temporarily unavailable. Please try again later.")
+        if provider != "testing" and re.search(r"\b(?:find|look up|lookup)\b", message, re.I) and re.search(r"\b\d+\s+(?:Va\.|U\.S\.|S\.E\.2d|F\.3d)\s+\d+", message):
+            # Lookup transmits only a base legal citation, never the conversation.
+            from app.citation_research import CitationResearchRequest, resolve_citation, render_citation_identity
+            from app.corpus_store import SQLiteCorpusStore
+            from app.courtlistener_client import CourtListenerClient
+            import os
+            found = re.findall(r"\b\d+\s+(?:Va\.|U\.S\.|S\.E\.2d|F\.3d)\s+\d+", message)
+            jurisdiction = state["facts"].get("state", {}).get("value")
+            if "Virginia" in message:
+                jurisdiction = "Virginia"
+            if len(found) != 1 or not jurisdiction or re.search(r"[\"“”]|\d,\s*\d|\bv\.\s", message):
+                return reply("citation_unverified", "Give one base citation and its state. A quotation, case name or pin cite needs separate verification against the retrieved opinion.")
+            if not self.settings.corpus_path and not os.environ.get("COURTLISTENER_API_TOKEN"):
+                return reply("unavailable", "Case lookup is not configured on this server.")
+            with SQLiteCorpusStore(self.settings.corpus_path or ".local/courtlistener.sqlite3") as store:
+                client = CourtListenerClient(os.environ.get("COURTLISTENER_API_TOKEN"), store=store) if self.settings.authority_network == "courtlistener" else None
+                value = resolve_citation(CitationResearchRequest(citation=found[0], state=jurisdiction), store, client)
+            return reply(value["status"], "Base citation lookup; substantive support and currentness require separate review.", render_citation_identity(value))
+        if provider == "testing" and (message.casefold() == "try courtlistener research example"
+                or state.get("corpus_demo") and message.casefold() in {"show the cases", "why does notice matter?", "explain the evidence", "show me the official source"}):
+            from app.research_demo import run_research_demo, DEMO_NOTICE
+            state["corpus_demo"] = True
+            result = run_research_demo(self.repository)
+            response = reply(result["status"], DEMO_NOTICE, result["response"])
+            response["followups"] = ["Show the cases", "Why does notice matter?", "Explain the evidence"]
+            return response
+        if provider == "testing" and state.get("corpus_demo") and re.search(r"\d+\s+(?:Va\.|S\.E\.)", message):
+            if message.casefold() in {"find the virginia case supporting 278 va. 84", "find the virginia case supporting 254 va. 134"}:
+                from app.research_demo import demo_bundles, DEMO_NOTICE
+                from app.corpus_store import SQLiteCorpusStore
+                from app.citation_research import CitationResearchRequest, resolve_citation, render_citation_identity
+                citation = "278 Va. 84" if "278" in message else "254 Va. 134"
+                with SQLiteCorpusStore() as store:
+                    for bundle in demo_bundles(self.repository):
+                        store.ingest(bundle)
+                        store.save_verification({"citation": bundle.cluster.citations[0], "cluster": bundle.cluster.id, "name": bundle.cluster.name, "origin": "fixture"})
+                    result = resolve_citation(CitationResearchRequest(citation=citation, state="Virginia"), store)
+                return reply(result["status"], DEMO_NOTICE, render_citation_identity(result))
+            return reply("citation_unverified", "This offline example cannot validate a supplied case name, quotation or pin cite. Use the linked sources; live citation lookup is not configured.")
         if provider == "testing" and message.casefold() == "try premises liability example":
             from app.models.base import GenerationConfig
             result = GeneralLegalResearchService(self.repository, self.settings, self.generation).respond(

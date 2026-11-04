@@ -79,7 +79,7 @@ class CapabilityCompiler:
             source["provenance"]["content_hash"] = digest(document.text)
             source["provenance"]["source_content_version"] = digest(document.text)
             sources[source["id"]] = source
-            if source.get("case_metadata", {}).get("opinion_role") in {"mixed", "unknown"}:
+            if source.get("case_metadata", {}).get("opinion_role") not in {None, "majority", "lead", "unanimous"}:
                 gaps.append("Opinion-role classification requires human review; quoted context is not automatically a holding.")
             proposed_passages = list(document.passages)
             if not proposed_passages:
@@ -113,6 +113,10 @@ class CapabilityCompiler:
                 gaps.append("Candidate proposition lacks exact supporting evidence; excluded from rules.")
                 continue
             p = passages[ids[0]]
+            role = sources[p["source_id"]].get("case_metadata", {}).get("opinion_role")
+            if role and role not in {"majority", "lead", "unanimous"}:
+                gaps.append("Non-majority opinion context retained as evidence; excluded from candidate general rules.")
+                continue
             rule = proposed_rule(self.repository, p)
             self.repository.validate_record("legal_rules", rule)
             rules[rule["id"]] = rule

@@ -224,10 +224,21 @@ class VirginiaOfficialProvider:
         return AuthorityDocument(source, tuple(passages), text)
 
 
-def configured_authority_providers(repository, network_provider=""):
+def configured_authority_providers(repository, network_provider="", corpus_path=""):
     providers = [RepositoryAuthorityProvider(repository)]
     if network_provider == "virginia_official":
         providers.append(VirginiaOfficialProvider(repository))
-    elif network_provider:
+    elif network_provider not in {"", "courtlistener"}:
         raise ValueError("unknown_authority_provider")
+    if corpus_path or network_provider == "courtlistener":
+        import os
+        from app.corpus_store import SQLiteCorpusStore
+        from app.courtlistener_authority import LocalCorpusAuthorityProvider, CourtListenerAuthorityProvider
+        from app.courtlistener_client import CourtListenerClient
+        store = SQLiteCorpusStore(corpus_path or ".local/courtlistener.sqlite3")
+        token = os.environ.get("COURTLISTENER_API_TOKEN") if network_provider == "courtlistener" else None
+        provider = CourtListenerAuthorityProvider(store, CourtListenerClient(token, store=store)) if token else LocalCorpusAuthorityProvider(store)
+        provider.owned_store = True
+        provider.network_requested_unconfigured = network_provider == "courtlistener" and not token
+        providers.append(provider)
     return providers

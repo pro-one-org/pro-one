@@ -20,7 +20,8 @@ def main():
     parser.add_argument("--country", default="US")
     parser.add_argument("--legal-area", required=True)
     parser.add_argument("--topic", required=True)
-    parser.add_argument("--provider", choices=["repository", "virginia_official"], default="repository")
+    parser.add_argument("--provider", choices=["repository", "virginia_official", "courtlistener_corpus"], default="repository")
+    parser.add_argument("--corpus-path", type=Path, help="Existing local corpus; no network access")
     parser.add_argument("--collection", type=Path, help="Local authoritative source collection JSON; no URLs are fetched from it")
     parser.add_argument("--output", required=True, type=Path, help="New review directory outside canonical data")
     parser.add_argument("--previous", type=Path, help="Previous bundle.json for refresh comparison")
@@ -37,8 +38,17 @@ def main():
             raw = json.loads(args.collection.read_text(encoding="utf-8"))
             documents = [AuthorityDocument(d["source"], tuple(d.get("passages", [])), d["text"]) for d in raw]
         else:
-            provider = RepositoryAuthorityProvider(repository) if args.provider == "repository" else VirginiaOfficialProvider(repository)
-            documents = [provider.fetch(sid) for sid in provider.search(matter)]
+            if args.provider == "courtlistener_corpus":
+                from app.corpus_store import SQLiteCorpusStore
+                from app.courtlistener_authority import LocalCorpusAuthorityProvider
+                if not args.corpus_path or not args.corpus_path.is_file():
+                    raise ValueError("existing_corpus_required")
+                with SQLiteCorpusStore(args.corpus_path) as store:
+                    provider = LocalCorpusAuthorityProvider(store)
+                    documents = [provider.fetch(sid) for sid in provider.search(matter, limit=12)]
+            else:
+                provider = RepositoryAuthorityProvider(repository) if args.provider == "repository" else VirginiaOfficialProvider(repository)
+                documents = [provider.fetch(sid) for sid in provider.search(matter)]
         previous = json.loads(args.previous.read_text(encoding="utf-8")) if args.previous else None
         bundle = CapabilityCompiler(repository).compile(matter, documents, previous=previous)
     except Exception:

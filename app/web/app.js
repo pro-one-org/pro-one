@@ -69,7 +69,12 @@ function sourcePanel(sources, prefix) {
     );
     if (s.case_metadata) {
       row.append(el("small", s.case_metadata.court + " · " + (s.case_metadata.decision_date || "Date unknown")),
+        el("small", "Opinion: " + s.case_metadata.opinion_role + " · " + s.case_metadata.publication_status + " · " + s.case_metadata.precedential_status),
         el("small", "Subsequent treatment: " + s.case_metadata.subsequent_treatment));
+    }
+    if (s.external_identifiers) {
+      row.append(el("small", "CourtListener v4 · " + (s.external_identifiers.origin === "fixture" ? "offline reconstructed fixture" : s.external_identifiers.origin)),
+        el("small", "Citation identity: " + s.external_identifiers.citation_status));
     }
     if (s.enactment_metadata) {
       row.append(el("small", "Section " + s.enactment_metadata.section + " · Effective date " + (s.enactment_metadata.effective_date || "unverified")));
@@ -234,7 +239,7 @@ api("/assistant/status")
   .then((data) => {
     $("demo").hidden = !data.demo;
     if (data.demo) {
-      const examples = ["Try premises liability example", "I received Virginia form DC-402", "My Virginia LLC SCC record"];
+      const examples = ["Try CourtListener research example", "Try premises liability example", "I received Virginia form DC-402", "My Virginia LLC SCC record"];
       $("suggestions").replaceChildren();
       for (const text of examples) {
         const button = el("button", text);

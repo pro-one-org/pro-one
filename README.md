@@ -29,7 +29,9 @@ Capabilities define what Pro-One can research and explain. Workflows define stru
 
 These are bounded proposed collections, not nationwide coverage. **All new capabilities, sources, passages, rules, evaluations and reviews remain proposed; currentness is unresolved.** Development availability is not legal approval or public release. Five fictional workflow examples remain outside the product catalog.
 
-Research legal text selects source excerpts or curated, source-linked explanation variants. Arbitrary model paraphrases and case-specific conclusions fail closed. General research without a compiled package uses exact source text. Fuller synthesis requires additional semantic assurance and legal review.
+Research uses exact evidence excerpts or curated source-linked variants, with optional multi-authority synthesis through a separate proposal call, independent verifier calls and deterministic evidence/citation checks. Failed synthesis retains exact-text fallback. Legal and currentness review remain required; public execution stays closed.
+
+The [CourtListener milestone](docs/courtlistener.md) adds optional REST v4 keyword/semantic discovery, typed opinion hydration, citation identity checks, a persistent SQLite/FTS corpus, bounded bulk ingestion, citation relationships, existing RECAP document inspection and corpus-to-capability compilation. No credentials were available: authenticated downloads and live model calls are zero. The product's **Try CourtListener research example** is an explicitly reconstructed two-case fixture; [benchmark results](docs/research-benchmark.json) distinguish it from 1,000 synthetic storage/search cases.
 
 ## Run locally
 

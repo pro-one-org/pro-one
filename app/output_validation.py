@@ -112,16 +112,43 @@ class OutputValidationService:
                     fail("unknown_claim_id", index)
                     continue
                 supported = set(claim["supported_by_passage_ids"])
+                if claim.get("support_state") == "semantically_verified_development":
+                    from app.authority import digest
+                    ledger = claim.get("verification", {})
+                    bindings = ledger.get("evidence_bindings", [])
+                    if (ledger.get("verification_status") != "independently_verified_development"
+                            or ledger.get("normalized_proposition") != " ".join(claim["proposition"].split())
+                            or claim.get("allowed_texts") != [claim["proposition"]]
+                            or not set(ledger.get("limitations", [])).issubset(claim["limitations"])
+                            or {b.get("passage") for b in bindings} != supported
+                            or any(b.get("passage") not in passages or b.get("text") != passages[b["passage"]]["text"]
+                                   or b.get("source") != passages[b["passage"]]["source_id"]
+                                   or b.get("hash") != digest(passages[b["passage"]]["text"]) for b in bindings)):
+                        fail("semantic_evidence_binding_invalid", index)
                 if claim["workflow_id"] != data["workflow_id"] or not supported or not supported.issubset(passages):
                     fail("unsupported_claim", index)
                 if not section.citation_ids:
                     fail("claim_without_citation", index)
                 linked = set(claim["citation_ids"])
+                if data.get("strict_claim_text") and not linked.issubset(section.citation_ids):
+                    fail("claim_citation_missing", index)
                 if not linked.intersection(section.citation_ids):
                     fail("citation_not_supporting_claim", index)
                 for citation_id in linked.intersection(section.citation_ids):
                     citation = citations.get(citation_id)
                     passage = passages.get(citation["passage_id"]) if citation else None
+                    if citation and citation.get("external_identifiers"):
+                        external = citation["external_identifiers"]
+                        context = passage.get("external_context", {}) if passage else {}
+                        if (external.get("citation_status") not in {"verified", "fixture_verified"}
+                                or any(external.get(k) != context.get(k) for k in ("cluster", "opinion"))):
+                            fail("external_citation_identity_invalid", index)
+                    if citation and claim.get("support_state") == "semantically_verified_development":
+                        ledger = claim.get("verification", {})
+                        supports = {s["passage_id"] for s in ledger.get("support", []) if s.get("relationship") == "supports"}
+                        role = (citation.get("case_metadata") or {}).get("opinion_role")
+                        if passage and passage["id"] in supports and role and role not in {"lead", "majority", "unanimous"}:
+                            fail("non_majority_support", index)
                     if (not citation or citation["passage_id"] not in supported or not passage
                             or citation["source_id"] != passage["source_id"]
                             or citation["source_id"] not in claim["source_ids"]

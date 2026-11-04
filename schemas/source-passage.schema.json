@@ -109,7 +109,8 @@
           "enum": [
             "manual_official_source_check",
             "bounded_official_source_fetch",
-            "compiler_exact_text_check"
+            "compiler_exact_text_check",
+            "provider_exact_text_check"
           ]
         }
       }
@@ -128,6 +129,21 @@
     },
     "process_step_ids": {
       "$ref": "common.schema.json#/$defs/recordIdArray"
+    },
+    "external_context": {
+      "type": "object", "additionalProperties": false,
+      "required": ["provider", "opinion", "cluster", "opinion_role", "classification", "source_hash", "start", "end", "context_window"],
+      "properties": {
+        "provider": {"const": "courtlistener"},
+        "opinion": {"type": "integer", "minimum": 1},
+        "cluster": {"type": "integer", "minimum": 1},
+        "opinion_role": {"type": "string", "minLength": 1, "maxLength": 40},
+        "classification": {"enum": ["candidate_reasoning", "candidate_dissent", "candidate_concurrence", "unknown"]},
+        "source_hash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "start": {"type": "integer", "minimum": 0},
+        "end": {"type": "integer", "minimum": 1},
+        "context_window": {"type": "string", "maxLength": 4000}
+      }
     },
     "conflicts": {
       "type": "array",

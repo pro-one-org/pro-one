@@ -93,6 +93,7 @@
           "enum": [
             "official_primary",
             "official_secondary",
+            "primary_reproduction",
             "public_legal_aid",
             "recognized_secondary",
             "community_reference",
@@ -409,17 +410,42 @@
           ]
         },
         "subsequent_treatment": {
-          "const": "unknown"
+          "enum": ["unknown", "citation_graph_available", "human_review_required"]
         },
         "opinion_role": {
           "enum": [
             "majority",
+            "lead",
+            "unanimous",
+            "plurality",
+            "concurrence_in_part",
+            "addendum",
+            "remittitur",
+            "rehearing",
+            "on_the_merits",
+            "motion",
+            "trial_document",
             "dissent",
             "concurrence",
             "mixed",
             "unknown"
           ]
         }
+      }
+    },
+    "external_identifiers": {
+      "type": "object", "additionalProperties": false,
+      "required": ["provider", "api_version", "court", "docket", "cluster", "opinion", "origin", "citation_status"],
+      "properties": {
+        "provider": {"const": "courtlistener"},
+        "api_version": {"const": "v4"},
+        "court": {"type": "string", "pattern": "^[a-z][a-z0-9]{0,24}$"},
+        "docket": {"type": "integer", "minimum": 1},
+        "cluster": {"type": "integer", "minimum": 1},
+        "opinion": {"type": "integer", "minimum": 1},
+        "origin": {"enum": ["courtlistener_v4", "courtlistener_bulk", "fixture"]},
+        "citation_status": {"enum": ["unverified", "verified", "fixture_verified"]},
+        "treatment_signal": {"enum": ["unknown", "citation_graph_available", "human_review_required"]}
       }
     },
     "enactment_metadata": {
