@@ -47,6 +47,8 @@ Malformed search hits, citation identities and pagination URLs yield safe error 
 
 Set `PRO_ONE_AUTHORITY_NETWORK=courtlistener`, `COURTLISTENER_API_TOKEN` and optionally `PRO_ONE_CORPUS_PATH` in the server environment. Tokens cannot be supplied by the browser or model. The default corpus location, when network access is explicitly selected, is `.local/courtlistener.sqlite3`. Without a token, an existing corpus can still be used; an empty collection yields an explicit support gap. Set only `PRO_ONE_CORPUS_PATH` to use a local/bulk corpus without network access. With neither setting, research performs no corpus file I/O.
 
+If corpus storage cannot be opened or read, research can still use evidence from the other configured collections and reports a provider gap. Citation lookup returns `corpus_storage_unavailable` without database paths, provider payloads or raw diagnostics. After storage recovers, a new request can use it again.
+
 Set `PRO_ONE_AUTHORITY_NETWORK=courtlistener,virginia_official` to enable both network providers for one research request. The official adapter can recheck sources already linked to an exact capability. A successful fetch with changed text drops excerpts that no longer match. A failed fetch leaves the proposed repository evidence available with a provider limitation and unresolved currentness. CourtListener supplies separate case records and citation identities. Mixed-provider orchestration has offline transport coverage. A local acceptance run also assembled one package with a live excerpt from the [Virginia LIS test section](https://law.lis.virginia.gov/vacode/title8.01/section8.01-243/) and fixture case excerpts. Authenticated mixed-provider acceptance remains pending.
 
 ```text

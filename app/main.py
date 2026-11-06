@@ -265,16 +265,8 @@ async def document_extract(request: Request):
 def research_citation(request: CitationResearchRequest):
     if settings.mode == "production":
         raise HTTPException(status_code=403, detail={"code": "research_release_review_required"})
-    import os
-    from app.corpus_store import SQLiteCorpusStore
-    from app.courtlistener_client import CourtListenerClient
-    from app.citation_research import resolve_citation
-    token = os.environ.get("COURTLISTENER_API_TOKEN") if settings.courtlistener_enabled else None
-    if not settings.corpus_path and not token:
-        return {"status": "unavailable", "reason": "courtlistener_unconfigured"}
-    with SQLiteCorpusStore(settings.corpus_path or ".local/courtlistener.sqlite3") as store:
-        client = CourtListenerClient(token, store=store) if token else None
-        return resolve_citation(request, store, client)
+    from app.citation_research import lookup_configured_citation
+    return lookup_configured_citation(request, settings)
 
 
 @app.get("/authority/status")

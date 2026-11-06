@@ -233,13 +233,17 @@ def configured_authority_providers(repository, network_provider="", corpus_path=
     courtlistener_enabled = "courtlistener" in networks
     if corpus_path or courtlistener_enabled:
         import os
-        from app.corpus_store import SQLiteCorpusStore
+        from app.corpus_store import CORPUS_STORAGE_ERRORS, SQLiteCorpusStore
         from app.courtlistener_authority import LocalCorpusAuthorityProvider, CourtListenerAuthorityProvider
         from app.courtlistener_client import CourtListenerClient
-        store = SQLiteCorpusStore(corpus_path or ".local/courtlistener.sqlite3")
+        try:
+            store = SQLiteCorpusStore(corpus_path or ".local/courtlistener.sqlite3")
+        except CORPUS_STORAGE_ERRORS:
+            store = None
         token = os.environ.get("COURTLISTENER_API_TOKEN") if courtlistener_enabled else None
-        provider = CourtListenerAuthorityProvider(store, CourtListenerClient(token, store=store)) if token else LocalCorpusAuthorityProvider(store)
-        provider.owned_store = True
+        provider = (CourtListenerAuthorityProvider(store, CourtListenerClient(token, store=store))
+                    if token and store is not None else LocalCorpusAuthorityProvider(store))
+        provider.owned_store = store is not None
         provider.network_requested_unconfigured = courtlistener_enabled and not token
         providers.append(provider)
     return providers

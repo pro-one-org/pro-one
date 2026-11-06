@@ -109,22 +109,18 @@ class AssistantService:
             return reply("provider_unavailable", "Live AI is temporarily unavailable. Please try again later.")
         if provider != "testing" and re.search(r"\b(?:find|look up|lookup)\b", message, re.I) and re.search(r"\b\d+\s+(?:Va\.|U\.S\.|S\.E\.2d|F\.3d)\s+\d+", message):
             # Lookup transmits only a base legal citation, never the conversation.
-            from app.citation_research import CitationResearchRequest, resolve_citation, render_citation_identity
-            from app.corpus_store import SQLiteCorpusStore
-            from app.courtlistener_client import CourtListenerClient
-            import os
+            from app.citation_research import CitationResearchRequest, lookup_configured_citation, render_citation_identity
             found = re.findall(r"\b\d+\s+(?:Va\.|U\.S\.|S\.E\.2d|F\.3d)\s+\d+", message)
             jurisdiction = state["facts"].get("state", {}).get("value")
             if "Virginia" in message:
                 jurisdiction = "Virginia"
             if len(found) != 1 or not jurisdiction or re.search(r"[\"“”]|\d,\s*\d|\bv\.\s", message):
                 return reply("citation_unverified", "Give one base citation and its state. A quotation, case name or pin cite needs separate verification against the retrieved opinion.")
-            token = os.environ.get("COURTLISTENER_API_TOKEN") if self.settings.courtlistener_enabled else None
-            if not self.settings.corpus_path and not token:
+            value = lookup_configured_citation(CitationResearchRequest(citation=found[0], state=jurisdiction), self.settings)
+            if value.get("reason") == "courtlistener_unconfigured":
                 return reply("unavailable", "Case lookup is not configured on this server.")
-            with SQLiteCorpusStore(self.settings.corpus_path or ".local/courtlistener.sqlite3") as store:
-                client = CourtListenerClient(token, store=store) if token else None
-                value = resolve_citation(CitationResearchRequest(citation=found[0], state=jurisdiction), store, client)
+            if value.get("reason") == "corpus_storage_unavailable":
+                return reply("unavailable", "Case lookup is temporarily unavailable. Please try again later.")
             return reply(value["status"], "Base citation lookup; substantive support and currentness require separate review.", render_citation_identity(value))
         if provider == "testing" and (message.casefold() == "try courtlistener research example"
                 or state.get("corpus_demo") and message.casefold() in {"show the cases", "why does notice matter?", "explain the evidence", "show me the official source"}):

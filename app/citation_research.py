@@ -1,10 +1,12 @@
 """Citation identity lookup is separate from proposition/quotation verification."""
 
+import os
 import re
 from pydantic import BaseModel, ConfigDict, Field
 from app.authority import AuthorityUnavailable
 from app.courtlistener_authority import CourtListenerCitationVerifier, normalize_name
-from app.courtlistener_client import CourtListenerError
+from app.corpus_store import CORPUS_STORAGE_ERRORS, SQLiteCorpusStore
+from app.courtlistener_client import CourtListenerClient, CourtListenerError
 
 
 class CitationResearchRequest(BaseModel):
@@ -12,6 +14,18 @@ class CitationResearchRequest(BaseModel):
     citation: str = Field(min_length=1, max_length=100)
     state: str = Field(min_length=1, max_length=80)
     expected_name: str = Field(default="", max_length=1000)
+
+
+def lookup_configured_citation(request, settings):
+    token = os.environ.get("COURTLISTENER_API_TOKEN") if settings.courtlistener_enabled else None
+    if not settings.corpus_path and not token:
+        return {"status": "unavailable", "reason": "courtlistener_unconfigured"}
+    try:
+        with SQLiteCorpusStore(settings.corpus_path or ".local/courtlistener.sqlite3") as store:
+            client = CourtListenerClient(token, store=store) if token else None
+            return resolve_citation(request, store, client)
+    except CORPUS_STORAGE_ERRORS:
+        return {"status": "unavailable", "reason": "corpus_storage_unavailable"}
 
 
 def resolve_citation(request, store, client=None):

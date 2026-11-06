@@ -7,15 +7,20 @@ import io
 import json
 import os
 from pathlib import Path
+import sqlite3
 import tempfile
 import unittest
 from unittest.mock import Mock, patch
 from urllib.parse import parse_qs, urlsplit
 
+from fastapi.testclient import TestClient
+
+from app import main
 from app.authority import AuthorityUnavailable, VirginiaOfficialProvider, digest
 from app.capabilities import ResearchMatter
 from app.capability_compiler import CapabilityCompiler
 from app.citation_research import CitationResearchRequest, resolve_citation
+from app.config import Settings
 from app.corpus_ingestion import CourtListenerBulkImporter, CourtListenerCorpusBuilder
 from app.corpus_store import SQLiteCorpusStore
 from app.courtlistener_authority import LocalCorpusAuthorityProvider, CourtListenerCitationVerifier, extract_passages
@@ -681,6 +686,32 @@ class CourtListenerTests(unittest.TestCase):
         package = service.assemble(self.matter)["package"]
         self.assertIn("statute", {s["source_type"] for s in package["grounding"]["sources"]})
         self.assertTrue(any(s.get("external_identifiers") for s in package["grounding"]["sources"]))
+
+    def test_corpus_storage_failure_degrades_evidence_and_citation_endpoints(self):
+        matter = self.matter.model_dump()
+        with tempfile.TemporaryDirectory() as directory:
+            database = Path(directory) / "test.sqlite3"
+            database.write_bytes(b"fixture corrupt corpus")
+            settings = Settings(corpus_path=str(database))
+            with patch("app.main.settings", settings), TestClient(main.app) as client:
+                result = client.post("/research/evidence", json=matter)
+                self.assertEqual(200, result.status_code)
+                package = result.json()["package"]
+                self.assertTrue(package["grounding"]["passages"])
+                self.assertFalse(any(s.get("external_identifiers") for s in package["grounding"]["sources"]))
+                self.assertFalse(package["public_execution"]["allowed"])
+                self.assertTrue(any("provider was unavailable" in gap["message"]
+                                    for gap in package["response_plan"]["support_gaps"]))
+                citation = client.post("/research/citation", json={"citation": "278 Va. 84", "state": "Virginia"})
+                self.assertEqual(200, citation.status_code)
+                self.assertEqual({"status": "unavailable", "reason": "corpus_storage_unavailable"}, citation.json())
+                self.assertNotIn("fixture corrupt corpus", result.text + citation.text)
+
+    def test_corpus_read_error_is_sanitized(self):
+        provider = LocalCorpusAuthorityProvider(self.store)
+        with patch.object(self.store, "search", side_effect=sqlite3.OperationalError("fixture private diagnostic")):
+            with self.assertRaisesRegex(AuthorityUnavailable, "^corpus_storage_unavailable$"):
+                provider.search(self.matter)
 
     def test_configured_mixed_research_rechecks_official_statute(self):
         from app.config import Settings

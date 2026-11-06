@@ -6,6 +6,7 @@ import re
 import time
 
 from app.authority import AuthorityDocument, AuthorityUnavailable, proposed_review, digest
+from app.corpus_store import CORPUS_STORAGE_ERRORS
 from app.courtlistener_client import CourtListenerClient, CourtListenerError
 from app.courtlistener_models import CaseBundle
 from app.research_planning import LegalResearchPlanner, RESEARCH_TOPICS
@@ -122,6 +123,14 @@ class LocalCorpusAuthorityProvider:
             self.store.close()
 
     def search(self, matter, limit=6):
+        if self.store is None:
+            raise AuthorityUnavailable("corpus_storage_unavailable")
+        try:
+            return self._search(matter, limit)
+        except CORPUS_STORAGE_ERRORS:
+            raise AuthorityUnavailable("corpus_storage_unavailable") from None
+
+    def _search(self, matter, limit):
         try:
             plan = LegalResearchPlanner().plan(matter)
         except ValueError:
@@ -174,13 +183,13 @@ class CourtListenerAuthorityProvider(LocalCorpusAuthorityProvider):
     name = "courtlistener"
     search_modes = ("keyword", "semantic")
 
-    def search(self, matter, limit=6):
+    def _search(self, matter, limit):
         try:
             plan = LegalResearchPlanner().plan(matter)
         except ValueError:
             return []
         try:
-            local = super().search(matter, limit)
+            local = super()._search(matter, limit)
             if len(local) >= min(limit, 3):
                 return local
             usage = self.client.usage()
@@ -215,11 +224,11 @@ class CourtListenerAuthorityProvider(LocalCorpusAuthorityProvider):
                 seed = self.store.case(next(iter(sorted(seen))))
                 if seed and seed.opinions:
                     self.store.add_edges(list(self.client.citation_edges(seed.opinions[0].id, incoming=True)))
-            return super().search(matter, limit)
+            return super()._search(matter, limit)
         except CourtListenerError:
             # Partial hydrated documents remain external corpus data; only
             # verified local identities can be selected after an external error.
-            available = super().search(matter, limit)
+            available = super()._search(matter, limit)
             if available:
                 return available
             raise AuthorityUnavailable("courtlistener_unavailable") from None

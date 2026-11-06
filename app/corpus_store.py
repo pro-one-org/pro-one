@@ -11,7 +11,12 @@ import re
 import sqlite3
 from typing import Protocol
 
+from pydantic import ValidationError
+
 from app.courtlistener_models import CaseBundle, Court, Docket, Cluster, Opinion
+
+
+CORPUS_STORAGE_ERRORS = (OSError, sqlite3.Error, json.JSONDecodeError, ValidationError)
 
 
 def utcnow():
@@ -35,6 +40,13 @@ class SQLiteCorpusStore:
         if self.path != ":memory:":
             Path(path).parent.mkdir(parents=True, exist_ok=True)
         self.connection = sqlite3.connect(self.path, timeout=5)
+        try:
+            self._initialize()
+        except BaseException:
+            self.connection.close()
+            raise
+
+    def _initialize(self):
         self.connection.row_factory = sqlite3.Row
         self.connection.execute("PRAGMA foreign_keys=ON")
         self.connection.execute("PRAGMA journal_mode=WAL")
