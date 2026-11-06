@@ -139,6 +139,22 @@ class CourtListenerTests(unittest.TestCase):
             checks = accept_courtlistener.relationships(client, self.store)
             self.assertEqual("not_found", checks["safe_error"])
             self.assertIn(123, self.store.graph(opinion.id)["cited"])
+
+    def test_v4_rejects_malformed_search_citation_and_unrelated_edges(self):
+        headers = {"content-type": "application/json"}
+        responses = [
+            (200, headers, b'{"results":[{"court_id":"va"}],"next":null}'),
+            (200, headers, b'[{"status":200,"clusters":[null]}]'),
+            (200, headers, b'{"results":[{"citing_opinion":2,"cited_opinion":3}],"next":null}'),
+        ]
+        with patch.object(self.transport, "request", side_effect=responses):
+            with self.assertRaisesRegex(CourtListenerError, "search_response_invalid"):
+                next(self.client.search_pages("notice", ("va",)))
+            with self.assertRaisesRegex(CourtListenerError, "citation_response_invalid"):
+                self.client.lookup("278 Va. 84")
+            with self.assertRaisesRegex(CourtListenerError, "citation_edge_scope_mismatch"):
+                next(self.client.citation_edges(1))
+
     def test_token_is_not_in_repr_or_status(self):
         self.assertNotIn("SECRET", repr(self.client) + json.dumps(self.client.status()))
 

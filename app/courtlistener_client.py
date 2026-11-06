@@ -100,9 +100,14 @@ class CourtListenerTransport:
 
 
 def continuation_cursor(url, endpoint, original):
-    parsed = urlsplit(url)
+    if not isinstance(url, str) or len(url) > 5000:
+        raise CourtListenerError("pagination_url_rejected")
+    try:
+        parsed = urlsplit(url)
+    except ValueError:
+        raise CourtListenerError("pagination_url_rejected") from None
     if (parsed.scheme != "https" or parsed.hostname != "www.courtlistener.com" or parsed.netloc != "www.courtlistener.com"
-            or parsed.path != "/api/rest/v4/" + endpoint + "/" or parsed.fragment or len(url) > 5000):
+            or parsed.path != "/api/rest/v4/" + endpoint + "/" or parsed.fragment):
         raise CourtListenerError("pagination_url_rejected")
     values = parse_qs(parsed.query, keep_blank_values=True)
     cursor = values.pop("cursor", [])
@@ -245,10 +250,16 @@ class CourtListenerClient:
             for results, next_cursor in self.iter_pages("search", params, cursor=cursor):
                 matches = []
                 for raw in results[:100]:
+                    if not isinstance(raw, dict):
+                        raise CourtListenerError("search_response_invalid")
                     if raw.get("court_id") not in allowed:
                         continue
                     # Discovery contains no snippet or authoritative text.
-                    matches.append({"cluster": external_id(raw["cluster_id"], "clusters"), "court": raw["court_id"],
+                    try:
+                        cluster = external_id(raw.get("cluster_id"), "clusters")
+                    except ValueError:
+                        raise CourtListenerError("search_response_invalid") from None
+                    matches.append({"cluster": cluster, "court": raw["court_id"],
                                     "name": str(raw.get("caseName") or "")[:1000]})
                 yield matches, next_cursor
         finally:
@@ -306,16 +317,21 @@ class CourtListenerClient:
         started = time.perf_counter()
         try:
             raw = self._request("citation-lookup", form={"text": citation})
-            if not isinstance(raw, list) or len(raw) != 1:
+            if not isinstance(raw, list) or len(raw) != 1 or not isinstance(raw[0], dict):
                 raise CourtListenerError("citation_unresolved")
             row = raw[0]
             if row.get("status") == 429:
                 self.state = "throttled"
                 raise CourtListenerError("throttled", retry_delay(row.get("wait_until") or row.get("wait_util")))
-            if row.get("status") != 200 or len(row.get("clusters", [])) != 1:
+            clusters = row.get("clusters")
+            if row.get("status") != 200 or not isinstance(clusters, list) or len(clusters) != 1:
                 raise CourtListenerError("citation_unresolved")
-            cluster = Cluster.normalize(row["clusters"][0])
-            if citation not in cluster.citations or citation not in row.get("normalized_citations", [row.get("citation")]):
+            try:
+                cluster = Cluster.normalize(clusters[0])
+            except (AttributeError, KeyError, TypeError, ValueError):
+                raise CourtListenerError("citation_response_invalid") from None
+            normalized = row.get("normalized_citations", [row.get("citation")])
+            if not isinstance(normalized, list) or citation not in cluster.citations or citation not in normalized:
                 raise CourtListenerError("citation_mismatch")
             return {"citation": citation, "cluster": cluster.id, "name": cluster.name, "origin": self.origin}
         finally:
@@ -323,7 +339,15 @@ class CourtListenerClient:
 
     def citation_edges(self, opinion_identifier, *, incoming=False):
         field = "cited_opinion" if incoming else "citing_opinion"
-        for rows, _ in self.iter_pages("opinions-cited", {field: str(external_id(opinion_identifier, "opinions")), "order_by": "id"}):
+        opinion = external_id(opinion_identifier, "opinions")
+        for rows, _ in self.iter_pages("opinions-cited", {field: str(opinion), "order_by": "id"}):
             for row in rows[:100]:
-                yield {"citing": external_id(row["citing_opinion"], "opinions"),
-                       "cited": external_id(row["cited_opinion"], "opinions"), "depth": max(1, min(int(row.get("depth", 1)), 10000))}
+                try:
+                    citing = external_id(row["citing_opinion"], "opinions")
+                    cited = external_id(row["cited_opinion"], "opinions")
+                    depth = max(1, min(int(row.get("depth", 1)), 10000))
+                except (AttributeError, KeyError, TypeError, ValueError, OverflowError):
+                    raise CourtListenerError("citation_edge_response_invalid") from None
+                if (cited if incoming else citing) != opinion:
+                    raise CourtListenerError("citation_edge_scope_mismatch")
+                yield {"citing": citing, "cited": cited, "depth": depth}

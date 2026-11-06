@@ -41,6 +41,8 @@ python -B scripts/accept_courtlistener.py relationships
 
 Retain the JSON reports locally. On a passing phase, compare matching quota windows before and after the run and record request counts separately. Concurrent requests and rolling resets can affect the observed delta. Check the reported text formats against the provider response if the case uses a fallback. A phase that stops for quota or an API error emits a safe reason and attempted-request metrics and exits with code 2. Re-run it when the provider permits. Run hydration initially on a fresh database so cached resources from another run cannot serve as evidence of new downloads. This acceptance procedure has offline transport coverage. Authenticated acceptance remains pending.
 
+Malformed search hits, citation identities and pagination URLs yield safe error codes. A citation edge must match the requested opinion on the filtered side before the client hands it to the corpus.
+
 ## Configuration and operation
 
 Set `PRO_ONE_AUTHORITY_NETWORK=courtlistener`, `COURTLISTENER_API_TOKEN` and optionally `PRO_ONE_CORPUS_PATH` in the server environment. Tokens cannot be supplied by the browser or model. The default corpus location, when network access is explicitly selected, is `.local/courtlistener.sqlite3`. Without a token, an existing corpus can still be used; an empty collection yields an explicit support gap. Set only `PRO_ONE_CORPUS_PATH` to use a local/bulk corpus without network access. With neither setting, research performs no corpus file I/O.
