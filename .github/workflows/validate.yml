@@ -66,6 +66,14 @@ jobs:
               assert len(json.load(response)['workflows']) == 3
           with urllib.request.urlopen('http://127.0.0.1:8000/model/status') as response:
               assert json.load(response)['mode'] == 'production'
+          try:
+              urllib.request.urlopen('http://127.0.0.1:8000/ready')
+              raise AssertionError('Production research must remain unavailable')
+          except urllib.error.HTTPError as error:
+              assert error.code == 503
+              readiness = json.load(error)
+              assert readiness['checks']['research_mode_available'] is False
+              assert readiness['release_approved'] is False
           with urllib.request.urlopen('http://127.0.0.1:8000/capabilities') as response:
               assert len(json.load(response)['capabilities']) == 4
           with urllib.request.urlopen('http://127.0.0.1:8000/openapi.json') as response:

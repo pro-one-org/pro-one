@@ -713,6 +713,34 @@ class CourtListenerTests(unittest.TestCase):
             with self.assertRaisesRegex(AuthorityUnavailable, "^corpus_storage_unavailable$"):
                 provider.search(self.matter)
 
+    def test_research_readiness_distinguishes_fixture_and_release_mode(self):
+        registry = ProviderRegistry()
+        registry.register("openai", Mock(), {"test-model"})
+        with tempfile.TemporaryDirectory() as directory:
+            database = Path(directory) / "corpus.sqlite3"
+            options = {"provider": "openai", "model": "test-model", "corpus_path": str(database),
+                       "conversation_signing_key": b"x" * 32}
+            with patch.object(main, "generation_service", GenerationService(registry)), TestClient(main.app) as client:
+                with patch.object(main, "settings", Settings(**options)):
+                    self.assertEqual(200, client.get("/health").status_code)
+                    self.assertEqual(503, client.get("/ready").status_code)
+                    self.assertFalse(database.exists())
+                    with SQLiteCorpusStore(database) as store:
+                        store.ingest(self.bundles[0])
+                    self.assertFalse(client.get("/ready").json()["checks"]["virginia_corpus_available"])
+                    with SQLiteCorpusStore(database) as store:
+                        # Exercise the origin check with a synthetic record. This does
+                        # not count toward corpus coverage or live API acceptance.
+                        store.ingest(self.bundles[0].model_copy(update={"origin": "courtlistener_v4"}))
+                    ready = client.get("/ready")
+                    self.assertEqual(200, ready.status_code)
+                    self.assertTrue(all(ready.json()["checks"].values()))
+                    self.assertFalse(ready.json()["release_approved"])
+                with patch.object(main, "settings", Settings(mode="production", **options)):
+                    self.assertEqual(200, client.get("/health").status_code)
+                    self.assertEqual(503, client.get("/ready").status_code)
+                    self.assertEqual(403, client.post("/research/evidence", json=self.matter.model_dump()).status_code)
+
     def test_configured_mixed_research_rechecks_official_statute(self):
         from app.config import Settings
 

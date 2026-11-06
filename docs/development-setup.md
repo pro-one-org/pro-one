@@ -4,6 +4,8 @@ Pro-One includes a FastAPI runtime, conversational UI, legal capabilities, workf
 
 For a multi-worker development or controlled test instance, provision the same random 32-byte `PRO_ONE_CONVERSATION_SIGNING_KEY` to each worker as 64 hexadecimal characters through the server's secret configuration. An unset value uses a process-local key, suitable for single-worker development. Conversations expire one hour after they start. Changing the key invalidates existing conversations, as does upgrading from the earlier token format. The browser clears the conversation token and attachment when the server asks to restart. The signing key is independent of provider credentials.
 
+`GET /health` reports process liveness. `GET /ready` is a local operational probe for controlled research. It returns HTTP 200 only in development mode with an explicitly selected and configured OpenAI or Anthropic model, a shared conversation key, and at least one available Virginia state opinion with a CourtListener API or bulk origin in a readable corpus. The SQLite probe opens the database read-only, uses a bounded query and never creates a missing corpus. It makes no provider requests. A passing result says these prerequisites are present. Provider acceptance, corpus coverage and legal approval require separate evidence. Production remains outside research readiness while its release gate is closed.
+
 ## Prerequisites
 
 - Git

@@ -8,6 +8,7 @@ from pathlib import Path
 from app.execution import ExecutionContextService, ExecutionResult
 from app.intake import IntakeRequest, IntakeResolutionError
 from app.readiness import WorkflowReadinessService
+from app.research_readiness import research_readiness
 from app.repository import RecordRepository, RepositoryLoadError
 from app.retrieval import (
     PassageRetrievalService,
@@ -85,6 +86,12 @@ def health() -> dict:
         "records_loaded": repository.count_records(),
         "domains_loaded": len(repository.records),
     }
+
+
+@app.get("/ready")
+def ready():
+    report = research_readiness(settings, generation_service.registry)
+    return JSONResponse(report, status_code=200 if report["status"] == "ready" else 503)
 
 
 @app.get("/workflows/{workflow_id}")
