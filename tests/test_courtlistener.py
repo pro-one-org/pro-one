@@ -32,6 +32,7 @@ from app.repository import RecordRepository
 from app.research_demo import demo_bundles, run_research_demo, DemoSynthesisProvider
 from app.research_planning import LegalResearchPlanner
 from app.research_synthesis import ResearchSynthesisService
+from scripts import accept_courtlistener
 
 
 def raw_bundle(bundle):
@@ -105,6 +106,39 @@ class CourtListenerTests(unittest.TestCase):
             client.usage()
         self.assertEqual([], self.transport.calls)
 
+    def test_acceptance_probes_use_v4_transport_and_store(self):
+        transport = self.transport
+        original_request = transport.request
+        bundle = next(case for case in self.bundles if case.cluster.id == accept_courtlistener.CLUSTER)
+        opinion = next((op for op in bundle.opinions if op.cited), bundle.opinions[0])
+        sample_edge = {"citing_opinion": opinion.id, "cited_opinion": 123, "depth": 1}
+
+        def request(method, path, headers, body, timeout, max_bytes):
+            status, response_headers, content = original_request(method, path, headers, body, timeout, max_bytes)
+            call = transport.calls[-1]
+            if call["key"] == "search":
+                results = json.loads(content)["results"]
+                cursor = None
+                if "semantic" not in call["params"]:
+                    if "cursor" in call["params"]:
+                        results = results[1:]
+                    else:
+                        results = results[:1]
+                        cursor = API_BASE + "search/?" + urlsplit(path).query + "&cursor=second"
+                content = json.dumps({"results": results, "next": cursor}).encode()
+            if call["key"] == "opinions-cited":
+                content = json.dumps({"results": [sample_edge], "next": None}).encode()
+            return status, response_headers, content
+
+        with patch.object(transport, "request", side_effect=request):
+            client = CourtListenerClient("fixture-token", transport=transport, store=self.store,
+                                         budget=RequestBudget(max_pages=5))
+            self.assertEqual([1, 1], accept_courtlistener.discovery(client)["keyword_page_hits"])
+            self.assertTrue(accept_courtlistener.hydration(client, self.store, False)["ingestion"]["new"])
+            self.assertEqual([], accept_courtlistener.hydration(client, self.store, True)["ingestion"]["changed"])
+            checks = accept_courtlistener.relationships(client, self.store)
+            self.assertEqual("not_found", checks["safe_error"])
+            self.assertIn(123, self.store.graph(opinion.id)["cited"])
     def test_token_is_not_in_repr_or_status(self):
         self.assertNotIn("SECRET", repr(self.client) + json.dumps(self.client.status()))
 

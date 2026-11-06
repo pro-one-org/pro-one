@@ -23,6 +23,24 @@ No CourtListener token or live model key was available for this milestone. **Aut
 
 Access is subject to Free Law Project's current terms, membership limits, quotas and commercial arrangements. Do not assume today's access terms persist. No sign-up, payment, account rotation, quota evasion, PACER credentials or purchase/fetch APIs are implemented. The fixed endpoint allowlist cannot call `recap-fetch`.
 
+### Authorized live acceptance
+
+Set `COURTLISTENER_API_TOKEN` in the server environment. Run each phase with the same fresh acceptance database under `.local/`. Use the quota snapshots to leave room between phases when the active window is nearly exhausted. The command consults the [v4 usage endpoint](https://wiki.free.law/c/courtlistener/help/api/rest/v4/api-usage) and makes at most five ordinary requests per invocation, plus up to two usage requests against the separate usage quota.
+
+```text
+python -B scripts/accept_courtlistener.py discover
+python -B scripts/accept_courtlistener.py hydrate
+python -B scripts/accept_courtlistener.py refresh
+python -B scripts/accept_courtlistener.py relationships
+```
+
+- **Discover** checks two scoped keyword pages for distinct results and one scoped semantic page for results. This measures API compatibility and latency. Relevance requires separately labeled queries.
+- **Hydrate** downloads the known Virginia cluster for `278 Va. 84`, checks its court, docket and opinion joins, and verifies a corpus round trip, scoped retrieval and repeat ingestion. The report records each opinion's role, text format, length and hash.
+- **Refresh** bypasses the resource cache and checks the same invariants again. Compare opinion hashes and the ingestion result across the two reports. If the provider returns unchanged content, a real change transition remains unobserved. The offline suite exercises that transition with a changed fixture.
+- **Relationships** resolves the live base citation, checks the persisted identity, reads and stores one outgoing edge, and exercises safe normalization of a real 404.
+
+Retain the JSON reports locally. On a passing phase, compare matching quota windows before and after the run and record request counts separately. Concurrent requests and rolling resets can affect the observed delta. Check the reported text formats against the provider response if the case uses a fallback. A phase that stops for quota or an API error emits a safe reason and attempted-request metrics and exits with code 2. Re-run it when the provider permits. Run hydration initially on a fresh database so cached resources from another run cannot serve as evidence of new downloads. This acceptance procedure has offline transport coverage. Authenticated acceptance remains pending.
+
 ## Configuration and operation
 
 Set `PRO_ONE_AUTHORITY_NETWORK=courtlistener`, `COURTLISTENER_API_TOKEN` and optionally `PRO_ONE_CORPUS_PATH` in the server environment. Tokens cannot be supplied by the browser or model. The default corpus location, when network access is explicitly selected, is `.local/courtlistener.sqlite3`. Without a token, an existing corpus can still be used; an empty collection yields an explicit support gap. Set only `PRO_ONE_CORPUS_PATH` to use a local/bulk corpus without network access. With neither setting, research performs no corpus file I/O.
