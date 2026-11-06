@@ -154,6 +154,9 @@ class LocalCorpusAuthorityProvider:
             graph = self.store.graph(opinion.id)
             source["external_identifiers"]["treatment_signal"] = graph["treatment"]
             source["case_metadata"]["subsequent_treatment"] = graph["treatment"]
+            if graph["treatment_scan_truncated"]:
+                for p in passages:
+                    p["limitations"].append("Potential treatment screening examined only the 20 most recent eligible citing opinions in this corpus.")
             if graph["signals"]:
                 for p in passages:
                     p.setdefault("conflicts", []).append("Potential negative-treatment language exists in a later citing document; human review is required.")

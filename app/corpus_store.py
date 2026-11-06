@@ -53,7 +53,6 @@ class SQLiteCorpusStore:
         CREATE INDEX IF NOT EXISTS citation_lookup ON citations(citation);
         CREATE TABLE IF NOT EXISTS citation_edges(citing INTEGER NOT NULL,cited INTEGER NOT NULL,depth INTEGER NOT NULL,PRIMARY KEY(citing,cited));
         CREATE INDEX IF NOT EXISTS incoming_edge ON citation_edges(cited);
-        CREATE TABLE IF NOT EXISTS treatment_signals(citing INTEGER NOT NULL,cited INTEGER NOT NULL,signal TEXT NOT NULL,passage TEXT NOT NULL,role TEXT NOT NULL,recorded_at TEXT NOT NULL,PRIMARY KEY(citing,cited,signal,passage));
         CREATE TABLE IF NOT EXISTS resource_cache(key TEXT PRIMARY KEY,payload TEXT NOT NULL,fetched_at TEXT NOT NULL);
         CREATE TABLE IF NOT EXISTS citation_verifications(citation TEXT PRIMARY KEY,cluster INTEGER NOT NULL,name TEXT NOT NULL,origin TEXT NOT NULL,verified_at TEXT NOT NULL);
         CREATE TABLE IF NOT EXISTS checkpoints(key TEXT PRIMARY KEY,payload TEXT NOT NULL,updated_at TEXT NOT NULL);
@@ -135,24 +134,58 @@ class SQLiteCorpusStore:
             for kind, entity in (("court", court), ("docket", docket), ("cluster", cluster), *(("opinion", op) for op in bundle.opinions)):
                 value = encode(entity.model_dump())
                 self.connection.execute("INSERT OR IGNORE INTO entity_versions VALUES(?,?,?,?,?)", (kind, str(entity.id), digest(value), value, now))
-            self._treatment_signals(bundle)
         return {"new": new, "changed": changed, "ingested": len(bundle.opinions)}
 
-    def _treatment_signals(self, bundle):
-        # Signals require an exact known citation in the same paragraph. A
-        # citation edge alone never establishes approval or negative treatment.
-        for opinion in bundle.opinions:
-            self.connection.execute("DELETE FROM treatment_signals WHERE citing=?", (opinion.id,))
-            for cited in opinion.cited:
-                row = self.connection.execute("SELECT c.id,c.decision_date FROM opinions o JOIN clusters c ON o.cluster=c.id WHERE o.id=?", (cited,)).fetchone()
-                if not row or not row["decision_date"] or not bundle.cluster.date or bundle.cluster.date <= row["decision_date"]:
+    def _treatment_signals(self, cited):
+        # Read the current corpus so late-arriving opinions, edges and
+        # corrections take effect without a global backfill.
+        candidates = self.connection.execute("""
+            SELECT later.id, later.payload, later.last_fetched, later_case.decision_date,
+                   court.id AS court_id, target_case.id AS target_cluster
+            FROM citation_edges edge
+            JOIN opinions later ON later.id=edge.citing
+            JOIN clusters later_case ON later_case.id=later.cluster
+            JOIN dockets docket ON docket.id=later_case.docket
+            JOIN courts court ON court.id=docket.court
+            JOIN opinions target ON target.id=edge.cited
+            JOIN clusters target_case ON target_case.id=target.cluster
+            WHERE edge.cited=? AND later_case.decision_date>target_case.decision_date
+                AND later.state!='unavailable' AND target.state!='unavailable'
+            ORDER BY later_case.decision_date DESC, later.id
+            LIMIT 21
+        """, (cited,)).fetchall()
+        if not candidates:
+            return [], False
+        citations = [r[0] for r in self.connection.execute(
+            "SELECT citation FROM citations WHERE cluster=? ORDER BY citation", (candidates[0]["target_cluster"],)
+        )]
+        if not citations:
+            return [], len(candidates) > 20
+        citation_pattern = re.compile(r"(?<!\w)(?:" + "|".join(map(re.escape, citations)) + r")(?!\w)")
+        treatment_pattern = re.compile(
+            r"\b(overruled|abrogated|superseded|distinguished|limited|criticized|declined to follow)\b", re.I
+        )
+        signals = []
+        for row in candidates[:20]:
+            opinion = json.loads(row["payload"])
+            for paragraph in opinion["paragraphs"]:
+                text = paragraph["text"]
+                citation_match = citation_pattern.search(text)
+                treatment_match = treatment_pattern.search(text) if citation_match else None
+                if not treatment_match:
                     continue
-                citations = [r[0] for r in self.connection.execute("SELECT citation FROM citations WHERE cluster=?", (row[0],))]
-                for paragraph in opinion.paragraphs:
-                    match = re.search(r"\b(overruled|abrogated|superseded|distinguished|limited|criticized|declined to follow)\b", paragraph["text"], re.I)
-                    if match and any(c in paragraph["text"] for c in citations):
-                        self.connection.execute("INSERT OR IGNORE INTO treatment_signals VALUES(?,?,?,?,?,?)",
-                                                (opinion.id, cited, "potential_negative_treatment", paragraph["text"][:4000], opinion.role, utcnow()))
+                start = min(citation_match.start(), treatment_match.start())
+                end = max(citation_match.end(), treatment_match.end())
+                if end - start > 1000:
+                    continue
+                signals.append({"citing": row["id"], "cited": cited, "signal": "potential_negative_treatment",
+                                "passage": text[max(0, start - 150):end + 150], "role": opinion["role"],
+                                "locator": paragraph["locator"],
+                                "citation": citation_match.group(), "language": treatment_match.group(),
+                                "citing_court": row["court_id"], "decision_date": row["decision_date"],
+                                "source_fetched_at": row["last_fetched"], "review_status": "human_review_required"})
+                break
+        return signals, len(candidates) > 20
 
     def opinion(self, identifier):
         row = self.connection.execute("SELECT payload FROM opinions WHERE id=? AND state!='unavailable'", (identifier,)).fetchone()
@@ -239,8 +272,9 @@ class SQLiteCorpusStore:
     def graph(self, opinion_identifier):
         outgoing = [r[0] for r in self.connection.execute("SELECT cited FROM citation_edges WHERE citing=?", (opinion_identifier,))]
         incoming = [r[0] for r in self.connection.execute("SELECT citing FROM citation_edges WHERE cited=?", (opinion_identifier,))]
-        signals = [dict(r) for r in self.connection.execute("SELECT * FROM treatment_signals WHERE cited=?", (opinion_identifier,))]
+        signals, treatment_scan_truncated = self._treatment_signals(opinion_identifier)
         return {"cited": outgoing, "citing": incoming, "incoming_count": len(incoming), "signals": signals,
+                "treatment_scan_truncated": treatment_scan_truncated,
                 "treatment": "human_review_required" if signals else "citation_graph_available" if outgoing or incoming else "unknown",
                 "currentness": "unresolved"}
 

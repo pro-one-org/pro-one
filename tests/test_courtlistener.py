@@ -503,6 +503,27 @@ class CourtListenerTests(unittest.TestCase):
         self.assertEqual("human_review_required", graph["treatment"])
         self.assertEqual("dissent", graph["signals"][0]["role"])
 
+    def test_late_target_and_graph_edge_enable_treatment_candidate(self):
+        later, target = deepcopy(self.bundles)
+        target_id = target.opinions[0].id
+        opinion = Opinion.normalize({"id": later.opinions[0].id, "cluster": later.cluster.id,
+            "type": "040dissent", "plain_text": "The rule in 254 Va. 134 should be overruled concerning notice."})
+        later.opinions[0] = opinion
+        self.store.ingest(later)
+        self.store.add_edges([{"citing": opinion.id, "cited": target_id}])
+        self.assertEqual([], self.store.graph(target_id)["signals"])
+        self.store.ingest(target)
+        graph = self.store.graph(target_id)
+        signal, = graph["signals"]
+        self.assertEqual("254 Va. 134", signal["citation"])
+        self.assertEqual(later.cluster.date, signal["decision_date"])
+        self.assertEqual("va", signal["citing_court"])
+        self.assertEqual("paragraph 1", signal["locator"])
+        self.assertEqual("human_review_required", signal["review_status"])
+        self.assertEqual("unresolved", graph["currentness"])
+        self.store.mark_unavailable(opinion.id)
+        self.assertEqual([], self.store.graph(target_id)["signals"])
+
     def test_prompt_injection_not_selected_as_law(self):
         b = deepcopy(self.bundles[0])
         op = Opinion.normalize({"id": b.opinions[0].id, "cluster": b.cluster.id, "type": "020lead",
