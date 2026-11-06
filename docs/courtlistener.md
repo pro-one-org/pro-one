@@ -85,6 +85,8 @@ Base-citation lookup verifies identity only: unique cluster, canonical citation,
 
 Edges preserve outgoing/incoming relationships and depth. One optional bounded incoming-edge expansion follows discovery when page budget remains. Candidate negative-treatment detection requires a known exact citation and treatment language in the same paragraph of a later-dated opinion. It retains text, locator context and the citing opinion's role, including dissent. Signals mean **human review required**. They do not establish that a case was overruled, remains good law, or controls the user's matter. Missing treatment data stays unknown; absence of a signal is never approval.
 
+Opinion refresh replaces the references carried by the opinion payload while retaining separately collected graph edges and their depth. The corpus migrates older databases in place. Legacy depth-one edges that match the stored opinion's reference list are classified as opinion references because the original table did not record their origin. Other legacy edges are retained as graph data. A fresh graph fetch can reestablish graph provenance for overlapping legacy edges.
+
 ## Research and synthesis
 
 The legal planner emits only server-approved issue concepts, court/date scope and budgets. Names, employer/retailer identity, narrative, uploaded documents and user goals are excluded from authority queries. Model suggestions must pass a legal-vocabulary allowlist; they cannot select hosts, courts, cursors or policy.

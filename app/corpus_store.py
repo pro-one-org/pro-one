@@ -60,6 +60,7 @@ class SQLiteCorpusStore:
         CREATE TABLE IF NOT EXISTS docket_entries(id INTEGER PRIMARY KEY,docket INTEGER NOT NULL REFERENCES dockets(id),payload TEXT NOT NULL);
         CREATE TABLE IF NOT EXISTS recap_documents(id INTEGER PRIMARY KEY,docket_entry INTEGER NOT NULL REFERENCES docket_entries(id),docket INTEGER NOT NULL REFERENCES dockets(id),kind TEXT NOT NULL,text TEXT NOT NULL,content_hash TEXT NOT NULL,first_seen TEXT NOT NULL,last_fetched TEXT NOT NULL,payload TEXT NOT NULL);
         """)
+        self._migrate_citation_edges()
         try:
             self.connection.executescript("""
             CREATE VIRTUAL TABLE IF NOT EXISTS opinion_fts USING fts5(text,content='opinions',content_rowid='id');
@@ -70,6 +71,25 @@ class SQLiteCorpusStore:
             self.fts = True
         except sqlite3.OperationalError:
             self.fts = False
+
+    def _migrate_citation_edges(self):
+        if self.connection.execute("SELECT 1 FROM corpus_schema WHERE version=2").fetchone():
+            return
+        with self.connection:
+            self.connection.execute("BEGIN IMMEDIATE")
+            if self.connection.execute("SELECT 1 FROM corpus_schema WHERE version=2").fetchone():
+                return
+            self.connection.execute("ALTER TABLE citation_edges ADD COLUMN from_graph INTEGER NOT NULL DEFAULT 0")
+            # Legacy rows matching a depth-one opinion reference are ambiguous.
+            # Preserve other rows as separately collected graph data.
+            self.connection.execute("""
+                UPDATE citation_edges AS edge SET from_graph=1
+                WHERE depth != 1 OR NOT EXISTS (
+                    SELECT 1 FROM opinions AS opinion, json_each(opinion.payload, '$.cited') AS reference
+                    WHERE opinion.id=edge.citing AND reference.value=edge.cited
+                )
+            """)
+            self.connection.execute("INSERT INTO corpus_schema VALUES(2)")
 
     def close(self):
         self.connection.close()
@@ -108,8 +128,9 @@ class SQLiteCorpusStore:
                                         (opinion.id, opinion.content_hash, opinion.text, payload, now))
                 self.connection.execute("INSERT INTO opinions VALUES(?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET cluster=excluded.cluster,role=excluded.role,text=excluded.text,content_hash=excluded.content_hash,last_fetched=excluded.last_fetched,last_checked=excluded.last_checked,state=excluded.state,payload=excluded.payload",
                                         (opinion.id, cluster.id, opinion.role, opinion.text, opinion.content_hash, now, now, now, "changed_review_required" if opinion.id in changed or (old and old["state"] == "changed_review_required") else "available", payload))
-                self.connection.execute("DELETE FROM citation_edges WHERE citing=?", (opinion.id,))
-                self.connection.executemany("INSERT OR IGNORE INTO citation_edges VALUES(?,?,1)", [(opinion.id, cited) for cited in opinion.cited])
+                self.connection.execute("DELETE FROM citation_edges WHERE citing=? AND from_graph=0", (opinion.id,))
+                self.connection.executemany("INSERT OR IGNORE INTO citation_edges(citing,cited,depth) VALUES(?,?,1)",
+                                            [(opinion.id, cited) for cited in opinion.cited])
             from app.authority import digest
             for kind, entity in (("court", court), ("docket", docket), ("cluster", cluster), *(("opinion", op) for op in bundle.opinions)):
                 value = encode(entity.model_dump())
@@ -200,7 +221,8 @@ class SQLiteCorpusStore:
 
     def add_edges(self, edges):
         with self.connection:
-            self.connection.executemany("INSERT INTO citation_edges VALUES(?,?,?) ON CONFLICT(citing,cited) DO UPDATE SET depth=excluded.depth",
+            self.connection.executemany("INSERT INTO citation_edges(citing,cited,depth,from_graph) VALUES(?,?,?,1) "
+                "ON CONFLICT(citing,cited) DO UPDATE SET depth=excluded.depth,from_graph=1",
                 [(e["citing"], e["cited"], e.get("depth", 1)) for e in edges])
 
     def checkpoint(self, key, value=None):

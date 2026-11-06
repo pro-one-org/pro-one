@@ -463,6 +463,36 @@ class CourtListenerTests(unittest.TestCase):
         self.assertEqual("citation_graph_available", graph["treatment"])
         self.assertEqual("unresolved", graph["currentness"])
 
+    def test_legacy_graph_edges_survive_opinion_refresh(self):
+        bundle = deepcopy(self.bundles[0])
+        opinion = bundle.opinions[0]
+        opinion.cited = [101, 102]
+        with tempfile.TemporaryDirectory() as directory:
+            database = Path(directory) / "legacy.sqlite3"
+            with SQLiteCorpusStore(database) as store:
+                store.ingest(bundle)
+                store.add_edges([{"citing": opinion.id, "cited": 102, "depth": 3},
+                                 {"citing": opinion.id, "cited": 103, "depth": 1}])
+                store.connection.executescript("""
+                    ALTER TABLE citation_edges DROP COLUMN from_graph;
+                    DELETE FROM corpus_schema WHERE version=2;
+                """)
+            with SQLiteCorpusStore(database) as store:
+                self.assertEqual({101, 102, 103}, set(store.graph(opinion.id)["cited"]))
+                store.add_edges([{"citing": opinion.id, "cited": 104, "depth": 1}])
+                opinion.cited = [104, 105]
+                store.ingest(bundle)
+                opinion.cited = [105]
+                store.ingest(bundle)
+            with SQLiteCorpusStore(database) as store:
+                self.assertEqual({102, 103, 104, 105}, set(store.graph(opinion.id)["cited"]))
+                depth = store.connection.execute(
+                    "SELECT depth FROM citation_edges WHERE citing=? AND cited=102", (opinion.id,)
+                ).fetchone()[0]
+                self.assertEqual(3, depth)
+                self.assertEqual([opinion.id], store.graph(104)["citing"])
+                self.assertEqual("unresolved", store.graph(104)["currentness"])
+
     def test_negative_treatment_is_only_candidate_signal(self):
         self.seed()
         b = deepcopy(self.bundles[0])
