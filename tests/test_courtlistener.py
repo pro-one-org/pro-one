@@ -5,13 +5,14 @@ import bz2
 import csv
 import io
 import json
+import os
 from pathlib import Path
 import tempfile
 import unittest
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 from urllib.parse import parse_qs, urlsplit
 
-from app.authority import AuthorityUnavailable, digest
+from app.authority import AuthorityUnavailable, VirginiaOfficialProvider, digest
 from app.capabilities import ResearchMatter
 from app.capability_compiler import CapabilityCompiler
 from app.citation_research import CitationResearchRequest, resolve_citation
@@ -680,6 +681,42 @@ class CourtListenerTests(unittest.TestCase):
         package = service.assemble(self.matter)["package"]
         self.assertIn("statute", {s["source_type"] for s in package["grounding"]["sources"]})
         self.assertTrue(any(s.get("external_identifiers") for s in package["grounding"]["sources"]))
+
+    def test_configured_mixed_research_rechecks_official_statute(self):
+        from app.config import Settings
+
+        statute_id = "va-personal-injury-limitations"
+        passage = self.repository.get("source_passages", "va-premises-limitations")
+
+        def official_get(url):
+            if url != self.repository.get("sources", statute_id)["url"]:
+                raise AuthorityUnavailable("fixture_pdf_unavailable")
+            return f"<p>{official_text}</p>".encode(), "text/html"
+
+        official = VirginiaOfficialProvider(self.repository, Mock(get=official_get))
+        with tempfile.TemporaryDirectory() as directory:
+            env = {"PRO_ONE_AUTHORITY_NETWORK": "courtlistener,virginia_official",
+                   "PRO_ONE_CORPUS_PATH": str(Path(directory) / "test.sqlite3"),
+                   "COURTLISTENER_API_TOKEN": "fixture-token"}
+            with patch.dict(os.environ, env), patch("app.authority.VirginiaOfficialProvider", return_value=official), \
+                    patch.object(CourtListenerTransport, "request", side_effect=self.transport.request):
+                settings = Settings.from_environment()
+                self.assertTrue(settings.courtlistener_enabled)
+                official_text = passage["text"]
+                for expected in (True, False):
+                    with self.subTest(official_excerpt_present=expected):
+                        service = GeneralLegalResearchService(self.repository, settings)
+                        try:
+                            self.assertEqual(["repository", "virginia_official", "courtlistener"],
+                                             [p.name for p in service.providers])
+                            package = service.assemble(self.matter)["package"]
+                        finally:
+                            service.close()
+                        citations = package["response_plan"]["citations"]
+                        self.assertTrue(any(c["external_identifiers"] for c in citations))
+                        self.assertEqual(expected, any(c["source_id"] == statute_id for c in citations))
+                        self.assertFalse(package["public_execution"]["allowed"])
+                    official_text = "Fixture replacement text without the original excerpt."
 
     def test_federal_filing_explanation_not_precedent(self):
         self.transport.values.update({

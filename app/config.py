@@ -9,6 +9,14 @@ from app.models.registry import ProviderRegistry
 from app.models.testing import DeterministicTestProvider, TEST_MODEL
 
 
+def authority_networks(value):
+    names = value.split(",") if value else []
+    enabled = frozenset(names)
+    if len(enabled) != len(names) or enabled - {"virginia_official", "courtlistener"}:
+        raise ValueError("unknown_or_duplicate_authority_provider")
+    return enabled
+
+
 @dataclass(frozen=True)
 class Settings:
     mode: str = "development"
@@ -19,6 +27,10 @@ class Settings:
     authority_network: str = ""
     corpus_path: str = ""
 
+    @property
+    def courtlistener_enabled(self):
+        return "courtlistener" in authority_networks(self.authority_network)
+
     @classmethod
     def from_environment(cls):
         mode = os.environ.get("PRO_ONE_MODE", "development")
@@ -27,8 +39,10 @@ class Settings:
         provider = os.environ.get("PRO_ONE_MODEL_PROVIDER") or ("testing" if mode == "development" else "")
         model = os.environ.get("PRO_ONE_MODEL") or (TEST_MODEL if provider == "testing" else "")
         authority = os.environ.get("PRO_ONE_AUTHORITY_NETWORK", "")
-        if authority not in {"", "virginia_official", "courtlistener"}:
-            raise RuntimeError("Invalid PRO_ONE_AUTHORITY_NETWORK")
+        try:
+            authority_networks(authority)
+        except ValueError:
+            raise RuntimeError("Invalid PRO_ONE_AUTHORITY_NETWORK") from None
         return cls(mode, provider, model, os.environ.get("PRO_ONE_OPENAI_MODEL", ""), os.environ.get("PRO_ONE_ANTHROPIC_MODEL", ""), authority,
                    os.environ.get("PRO_ONE_CORPUS_PATH", ""))
 

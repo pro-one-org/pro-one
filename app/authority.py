@@ -14,6 +14,7 @@ from typing import Protocol
 from urllib.request import Request, build_opener, ProxyHandler
 
 from app.capabilities import ResearchMatter, same_jurisdiction
+from app.config import authority_networks
 from app.models.http_transport import NoRedirect
 from app.retrieval import eligible_record, lexical_score, tokens
 
@@ -225,20 +226,20 @@ class VirginiaOfficialProvider:
 
 
 def configured_authority_providers(repository, network_provider="", corpus_path=""):
+    networks = authority_networks(network_provider)
     providers = [RepositoryAuthorityProvider(repository)]
-    if network_provider == "virginia_official":
+    if "virginia_official" in networks:
         providers.append(VirginiaOfficialProvider(repository))
-    elif network_provider not in {"", "courtlistener"}:
-        raise ValueError("unknown_authority_provider")
-    if corpus_path or network_provider == "courtlistener":
+    courtlistener_enabled = "courtlistener" in networks
+    if corpus_path or courtlistener_enabled:
         import os
         from app.corpus_store import SQLiteCorpusStore
         from app.courtlistener_authority import LocalCorpusAuthorityProvider, CourtListenerAuthorityProvider
         from app.courtlistener_client import CourtListenerClient
         store = SQLiteCorpusStore(corpus_path or ".local/courtlistener.sqlite3")
-        token = os.environ.get("COURTLISTENER_API_TOKEN") if network_provider == "courtlistener" else None
+        token = os.environ.get("COURTLISTENER_API_TOKEN") if courtlistener_enabled else None
         provider = CourtListenerAuthorityProvider(store, CourtListenerClient(token, store=store)) if token else LocalCorpusAuthorityProvider(store)
         provider.owned_store = True
-        provider.network_requested_unconfigured = network_provider == "courtlistener" and not token
+        provider.network_requested_unconfigured = courtlistener_enabled and not token
         providers.append(provider)
     return providers

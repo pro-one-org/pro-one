@@ -110,10 +110,11 @@ class AssistantService:
                 jurisdiction = "Virginia"
             if len(found) != 1 or not jurisdiction or re.search(r"[\"“”]|\d,\s*\d|\bv\.\s", message):
                 return reply("citation_unverified", "Give one base citation and its state. A quotation, case name or pin cite needs separate verification against the retrieved opinion.")
-            if not self.settings.corpus_path and not os.environ.get("COURTLISTENER_API_TOKEN"):
+            token = os.environ.get("COURTLISTENER_API_TOKEN") if self.settings.courtlistener_enabled else None
+            if not self.settings.corpus_path and not token:
                 return reply("unavailable", "Case lookup is not configured on this server.")
             with SQLiteCorpusStore(self.settings.corpus_path or ".local/courtlistener.sqlite3") as store:
-                client = CourtListenerClient(os.environ.get("COURTLISTENER_API_TOKEN"), store=store) if self.settings.authority_network == "courtlistener" else None
+                client = CourtListenerClient(token, store=store) if token else None
                 value = resolve_citation(CitationResearchRequest(citation=found[0], state=jurisdiction), store, client)
             return reply(value["status"], "Base citation lookup; substantive support and currentness require separate review.", render_citation_identity(value))
         if provider == "testing" and (message.casefold() == "try courtlistener research example"

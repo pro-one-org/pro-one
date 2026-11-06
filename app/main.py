@@ -269,17 +269,18 @@ def research_citation(request: CitationResearchRequest):
     from app.corpus_store import SQLiteCorpusStore
     from app.courtlistener_client import CourtListenerClient
     from app.citation_research import resolve_citation
-    if not settings.corpus_path and not os.environ.get("COURTLISTENER_API_TOKEN"):
+    token = os.environ.get("COURTLISTENER_API_TOKEN") if settings.courtlistener_enabled else None
+    if not settings.corpus_path and not token:
         return {"status": "unavailable", "reason": "courtlistener_unconfigured"}
     with SQLiteCorpusStore(settings.corpus_path or ".local/courtlistener.sqlite3") as store:
-        client = CourtListenerClient(os.environ.get("COURTLISTENER_API_TOKEN"), store=store) if settings.authority_network == "courtlistener" else None
+        client = CourtListenerClient(token, store=store) if token else None
         return resolve_citation(request, store, client)
 
 
 @app.get("/authority/status")
 def authority_status():
     import os
-    return {"provider": "courtlistener", "api_version": "v4", "network_enabled": settings.authority_network == "courtlistener",
+    return {"provider": "courtlistener", "api_version": "v4", "network_enabled": settings.courtlistener_enabled,
             "configured": bool(os.environ.get("COURTLISTENER_API_TOKEN")), "local_corpus_configured": bool(settings.corpus_path),
             "release_approved": False}
 

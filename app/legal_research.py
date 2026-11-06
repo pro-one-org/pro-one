@@ -82,31 +82,42 @@ class GeneralLegalResearchService:
             passages = {pid: deepcopy(self.repository.get("source_passages", pid)) for pid in capability["source_passage_ids"]}
             gaps = deepcopy(capability["support_gaps"])
         gaps.extend(provider_gaps)
-        if not capability or any(p.name in {"courtlistener", "courtlistener_corpus"} for p in self.providers):
-            # Query only legal concepts; names, documents and user facts never
-            # leave the process for an authority search.
-            query = matter.model_copy(update={"goal": "", "user_posture": None, "document_type": None})
-            for provider in self.providers[:4]:
-                if capability and provider.name not in {"courtlistener", "courtlistener_corpus"}:
+        # Query only legal concepts; names, documents and user facts never
+        # leave the process for an authority search.
+        query = matter.model_copy(update={"goal": "", "user_posture": None, "document_type": None})
+        fetch_gap = "An authority provider was unavailable or returned changed evidence; research may be incomplete."
+        for provider in self.providers[:4]:
+            if capability and provider.name not in {"courtlistener", "courtlistener_corpus", "virginia_official"}:
+                continue
+            try:
+                identifiers = provider.search(query, limit=6)[:6]
+            except AuthorityUnavailable:
+                gaps.append(fetch_gap)
+                continue
+            for sid in identifiers:
+                if capability and provider.name == "virginia_official" and sid not in capability["source_ids"]:
                     continue
                 try:
-                    for sid in provider.search(query, limit=6)[:6]:
-                        document = provider.fetch(sid)
-                        self.repository.validate_record("sources", document.source)
-                        sources[sid] = deepcopy(document.source)
-                        # A new fetch replaces, rather than augments, the previous
-                        # snapshot of that source. Changed text cannot retain stale
-                        # passages under new provenance.
-                        passages = {pid: p for pid, p in passages.items() if p["source_id"] != sid}
-                        for p in document.passages[:12]:
-                            self.repository.validate_record("source_passages", p)
-                            # Provider evidence must be present in fetched text,
-                            # not an unverified search hit or invented summary.
-                            if " ".join(p["text"].split()) not in " ".join(document.text.split()):
-                                raise AuthorityUnavailable("passage_not_in_fetched_text")
-                            passages[p["id"]] = deepcopy(p)
+                    document = provider.fetch(sid)
                 except AuthorityUnavailable:
-                    gaps.append("An authority provider was unavailable or returned changed evidence; research may be incomplete.")
+                    gaps.append(fetch_gap)
+                    continue
+                self.repository.validate_record("sources", document.source)
+                candidate_passages = document.passages[:12]
+                text = " ".join(document.text.split())
+                if document.source["id"] != sid:
+                    return {"status": "evidence_rejected", "resolution": resolution, "package": None}
+                for passage in candidate_passages:
+                    self.repository.validate_record("source_passages", passage)
+                    if passage["source_id"] != sid or " ".join(passage["text"].split()) not in text:
+                        return {"status": "evidence_rejected", "resolution": resolution, "package": None}
+                if not candidate_passages:
+                    gaps.append(fetch_gap)
+                # Replace the entire source snapshot only after verifying every
+                # selected passage against the fetched text.
+                sources[sid] = deepcopy(document.source)
+                passages = {pid: p for pid, p in passages.items() if p["source_id"] != sid}
+                passages.update({p["id"]: deepcopy(p) for p in candidate_passages})
         if capability:
             conflicts = deepcopy(capability["conflicts"])
         else:
