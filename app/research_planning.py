@@ -5,15 +5,26 @@ import re
 from app.courtlistener_models import COURT_POLICY
 
 
-TOPIC_TERMS = {
-    "premises_liability": ("premises liability business invitee", "actual constructive notice dangerous condition", "hazard created by premises owner", "open obvious contributory negligence"),
-    "negligence": ("negligence duty breach causation ordinary care condition created",),
-    "notice": ("actual constructive notice dangerous condition",),
-    "contributory_negligence": ("contributory negligence ordinary care",),
-    "limitations": ("personal injury limitations accrual tolling",),
-    "civil_procedure": ("civil procedure summary judgment",),
+RESEARCH_TOPICS = {
+    "torts": {
+        "premises_liability": ("premises liability business invitee", "actual constructive notice dangerous condition",
+                               "hazard created by premises owner", "open obvious contributory negligence"),
+        "negligence": ("negligence duty breach causation ordinary care condition created",),
+        "notice": ("actual constructive notice dangerous condition",),
+        "contributory_negligence": ("contributory negligence proximate cause jury", "contributory negligence ordinary care"),
+        "limitations": ("personal injury limitations accrual tolling",),
+    },
+    "civil_procedure": {
+        "civil_procedure": ("civil procedure summary judgment",),
+        "limitations": ("personal injury limitations accrual tolling",),
+    },
+    "contracts": {
+        "contract_breach": ("contract breach enforceable obligation resulting damage",),
+    },
+    "landlord_tenant": {
+        "landlord_repairs": ("landlord tenant negligent repair mold",),
+    },
 }
-LEGAL_VOCABULARY = set(" ".join(q for queries in TOPIC_TERMS.values() for q in queries).split()) | {"wet", "floor", "store", "reasonable", "care"}
 
 
 @dataclass(frozen=True)
@@ -46,12 +57,16 @@ class LegalResearchPlanner:
                        if sovereign == matter.sovereign and state == matter.state)
         if not courts:
             raise ValueError("research_courts_unconfigured")
-        issues = tuple(t for t in matter.topics if t in TOPIC_TERMS)
-        queries = list(dict.fromkeys(q for topic in issues for q in TOPIC_TERMS[topic]))[:4]
-        for suggestion in suggestions[:4]:
-            words = re.findall(r"[a-z]+", suggestion.casefold())
-            if words and set(words).issubset(LEGAL_VOCABULARY) and len(suggestion) <= 200 and not re.search(r"[^a-zA-Z ]", suggestion):
-                queries.append(" ".join(words))
+        topic_terms = RESEARCH_TOPICS.get(matter.legal_area, {})
+        issues = tuple(t for t in matter.topics if t in topic_terms)
+        queries = list(dict.fromkeys(q for topic in issues for q in topic_terms[topic]))[:4]
         if not queries:
             raise ValueError("research_concepts_unconfigured")
+        vocabulary = set(" ".join(queries).split())
+        if matter.legal_area == "torts":
+            vocabulary.update({"wet", "floor", "store", "reasonable", "care"})
+        for suggestion in suggestions[:4]:
+            words = re.findall(r"[a-z]+", suggestion.casefold())
+            if words and set(words).issubset(vocabulary) and len(suggestion) <= 200 and not re.search(r"[^a-zA-Z ]", suggestion):
+                queries.append(" ".join(words))
         return ResearchPlan("US", matter.state, matter.sovereign, matter.legal_area, issues, tuple(dict.fromkeys(queries))[:4], courts)

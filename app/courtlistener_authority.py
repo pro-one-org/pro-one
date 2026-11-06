@@ -8,7 +8,7 @@ import time
 from app.authority import AuthorityDocument, AuthorityUnavailable, proposed_review, digest
 from app.courtlistener_client import CourtListenerClient, CourtListenerError
 from app.courtlistener_models import CaseBundle
-from app.research_planning import LegalResearchPlanner
+from app.research_planning import LegalResearchPlanner, RESEARCH_TOPICS
 from app.retrieval import tokens
 
 
@@ -37,7 +37,9 @@ def normalize_name(value):
 
 def extract_passages(bundle: CaseBundle, opinion, topics, legal_area, *, limit=5):
     """Select multiple issue-relevant exact spans, preserving role and context."""
-    wanted = tokens(" ".join(topics).replace("_", " ")) | {"notice", "duty", "negligence", "premises", "condition"}
+    area_topics = RESEARCH_TOPICS.get(legal_area, {})
+    wanted = tokens(" ".join(topics).replace("_", " "))
+    wanted |= tokens(" ".join(query for topic in topics for query in area_topics.get(topic, ())))
     candidates, offset = [], 0
     for index, paragraph in enumerate(opinion.paragraphs):
         text = paragraph["text"]

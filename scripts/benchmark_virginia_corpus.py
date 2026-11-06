@@ -8,31 +8,34 @@ import time
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from app.corpus_store import SQLiteCorpusStore
+from app.capabilities import ResearchMatter
+from app.research_planning import LegalResearchPlanner
 
 
 LABELS = (
-    ("contract_breach", "What must I show for breach of contract and resulting damages in Virginia?",
-     "breach of contract enforceable obligation resulting damage", 1059098, "267 Va. 612",
+    ("contracts", "contract_breach", "What must I show for breach of contract and resulting damages in Virginia?",
+     1059098, "267 Va. 612",
      "https://www.vacourts.gov/static/opinions/opnscvwp/1031407.pdf"),
-    ("contributory_negligence", "When should a jury decide contributory negligence in a Virginia accident?",
-     "contributory negligence proximate cause jury", 1058226, "279 Va. 370",
+    ("torts", "contributory_negligence", "When should a jury decide contributory negligence in a Virginia accident?",
+     1058226, "279 Va. 370",
      "https://www.vacourts.gov/static/opinions/opnscvwp/1090193.pdf"),
-    ("landlord_repairs", "Can a Virginia landlord face a claim over negligent repairs and mold?",
-     "landlord tenant negligent repair mold", 1058223, "279 Va. 475",
+    ("landlord_tenant", "landlord_repairs", "Can a Virginia landlord face a claim over negligent repairs and mold?",
+     1058223, "279 Va. 475",
      "https://www.vacourts.gov/static/opinions/opnscvwp/1090143.pdf"),
 )
 REAL_ORIGINS = {"courtlistener_v4", "courtlistener_bulk"}
-COURTS = ("va", "vactapp")
 
 
 def benchmark(store, limit):
     scenarios = []
-    for topic, question, query, cluster, citation, opinion_url in LABELS:
+    for area, topic, question, cluster, citation, opinion_url in LABELS:
+        plan = LegalResearchPlanner().plan(ResearchMatter(country="US", state="Virginia", legal_area=area, topics=[topic]))
+        query = " ".join(plan.queries)
         target = store.case(cluster)
         available = bool(target and target.origin in REAL_ORIGINS and target.court.id == "va"
                          and citation in target.cluster.citations and any(op.text for op in target.opinions))
         started = time.perf_counter()
-        rows = store.search(query, state="Virginia", courts=COURTS, limit=limit)
+        rows = store.search(query, state=plan.state, sovereign=plan.sovereign, courts=plan.courts, limit=limit)
         elapsed = round(1000 * (time.perf_counter() - started), 3)
         cases = {}
         outside_scope = set()
@@ -41,7 +44,8 @@ def benchmark(store, limit):
             if key not in cases:
                 cases[key] = store.case(key)
             bundle = cases[key]
-            if not bundle or bundle.court.state != "Virginia" or bundle.court.sovereign != "state" or bundle.court.id not in COURTS:
+            if (not bundle or bundle.court.state != plan.state or bundle.court.sovereign != plan.sovereign
+                    or bundle.court.id not in plan.courts):
                 outside_scope.add(key)
         ranked = [key for key, bundle in cases.items() if key not in outside_scope and bundle.origin in REAL_ORIGINS]
         rank = ranked.index(cluster) + 1 if available and cluster in ranked else None

@@ -158,7 +158,7 @@ class CourtListenerTests(unittest.TestCase):
 
     def test_virginia_benchmark_excludes_matching_fixture_case(self):
         self.seed()
-        labels = (("fixture", "What is notice?", "notice", 1058333, "278 Va. 84", "https://example.test"),)
+        labels = (("torts", "notice", "What is notice?", 1058333, "278 Va. 84", "https://example.test"),)
         with patch.object(benchmark_virginia_corpus, "LABELS", labels):
             report = benchmark_virginia_corpus.benchmark(self.store, limit=12)
         self.assertEqual(0, report["targets_in_corpus"])
@@ -514,6 +514,21 @@ class CourtListenerTests(unittest.TestCase):
         plan = LegalResearchPlanner().plan(self.matter.model_copy(update={"goal": "Jane Doe account 123456", "document_type": "private"}), suggestions=["Jane Doe", "https://evil.example"])
         self.assertNotIn("Jane", json.dumps(plan.as_dict()))
         self.assertEqual(("va", "vactapp"), plan.courts)
+
+    def test_contract_and_landlord_retrieval_topics_keep_separate_scope(self):
+        planner = LegalResearchPlanner()
+        for area, topic in (("contracts", "contract_breach"), ("landlord_tenant", "landlord_repairs")):
+            with self.subTest(area=area):
+                matter = self.matter.model_copy(update={"legal_area": area, "topics": [topic, "notice"]})
+                plan = planner.plan(matter, suggestions=["constructive notice", "Jane Doe"])
+                self.assertEqual((topic,), plan.issues)
+                self.assertEqual(1, len(plan.queries))
+                self.assertEqual(("va", "vactapp"), plan.courts)
+                with self.assertRaisesRegex(ValueError, "research_concepts_unconfigured"):
+                    planner.plan(matter.model_copy(update={"topics": ["notice"]}))
+        bundle = self.bundles[0]
+        _, passages = extract_passages(bundle, bundle.opinions[0], ["contract_breach"], "contracts")
+        self.assertFalse(passages)
 
     def test_multi_case_synthesis_uses_independent_calls(self):
         result = run_research_demo(self.repository)
