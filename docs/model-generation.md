@@ -75,3 +75,19 @@ python -B scripts/run_evaluations.py --fixture va-small-claims-ordinary-user-fix
 ```
 
 The CLI supports all/workflow/fixture selection and JSON reports, with nonzero exit on required failure. CI needs no credentials or live model. `scripts/benchmark_models.py` reuses one assembled fixture package across configured adapters, reports absent providers, and exposes latency, usage, exact draft hashes, and ten non-authoritative manual semantic dimensions. Optional manual scores must match workflow/fixture/provider/model/hash and cannot override deterministic rejection or grant release approval.
+## Live conversational acceptance
+
+Use a development environment with an authorized OpenAI or Anthropic credential, `PRO_ONE_MODEL_PROVIDER` set explicitly to the provider, and `PRO_ONE_MODEL` set to the model to evaluate. Set `PRO_ONE_CORPUS_PATH` to a locally built corpus for case-law acceptance. The runner disables live authority requests to isolate model behavior and runs one synthetic conversation per invocation. Provider calls may incur charges.
+
+```text
+python -B scripts/accept_research_model.py notice_followup --include-rendered
+python -B scripts/accept_research_model.py medical_bills --include-rendered
+python -B scripts/accept_research_model.py missing_jurisdiction
+python -B scripts/accept_research_model.py wrong_jurisdiction
+python -B scripts/accept_research_model.py fabricated_pin
+python -B scripts/accept_research_model.py hostile_document --include-rendered
+```
+
+The runner records observed model stages, turn status, latency, source counts and a hash of each rendered answer. The optional rendered answer is for review of the fixed synthetic inputs. Reports omit model prompts, raw drafts, conversation tokens and credentials. A structural pass checks the expected routing or refusal, citation links and development release marker. Use the stage trace to determine whether proposal, verification and rendering ran. An answered turn may use exact text after synthesis falls back.
+
+For live review, score each rendered legal proposition against its cited passages, including opinion role, jurisdiction, exceptions and currentness. Separately record expected and observed unsupported outcomes, citation misuse and useful answers lost to refusal or fallback. The runner's structural result does not supply these labels. Without an explicitly configured live model, it exits with zero model calls. Live semantic quality and private-beta legal review remain pending.

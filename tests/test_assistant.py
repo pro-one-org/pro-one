@@ -12,6 +12,7 @@ from app.generation import GenerationService
 from app.matter_extraction import MatterExtractionService, ExtractionUnavailable
 from app.models.base import ModelResponse
 from app.models.registry import ProviderRegistry
+from scripts import accept_research_model
 
 class AssistantTests(unittest.TestCase):
     def setUp(self):
@@ -106,6 +107,21 @@ class ExtractionTests(unittest.TestCase):
     def test_malformed_rejected(self):
         for value in ('not json',{}, {'fields':[],'unsupported':'false'}):
             with self.subTest(value=value),self.assertRaises(ExtractionUnavailable):self.extract(value)
+
+    def test_acceptance_runner_rejects_fabricated_pin_before_model_call(self):
+        class UnexpectedAdapter:
+            def generate(self, request):
+                raise AssertionError("a pin cite must stop before model interpretation")
+
+        settings = Settings(provider="openai", model="fixture")
+        observer = accept_research_model.ObservedProvider(UnexpectedAdapter())
+        registry = ProviderRegistry()
+        registry.register(settings.provider, observer, {settings.model})
+        assistant = AssistantService(main.repository, settings, GenerationService(registry))
+        turns = accept_research_model.run("fabricated_pin", assistant, observer)
+        self.assertEqual("citation_unverified", turns[0]["status"])
+        self.assertTrue(turns[0]["checks_passed"])
+        self.assertEqual([], observer.calls)
 
 class AdditionalSafetyTests(unittest.TestCase):
     setUp = AssistantTests.setUp
