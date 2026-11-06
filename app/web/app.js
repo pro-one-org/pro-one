@@ -103,7 +103,14 @@ async function send(event) {
       document_text: documentText,
       conversation_state: state,
     });
-    if (data.conversation_state) state = data.conversation_state;
+    if (data.status === "restart_needed") {
+      state = "";
+      documentText = "";
+      $("attachment").replaceChildren();
+      $("attachment").hidden = true;
+    } else if (data.conversation_state) {
+      state = data.conversation_state;
+    }
     const box = appendTurn(data.message, "assistant");
     $("matter").replaceChildren();
     for (const [name, fact] of Object.entries(data.matter || {})) {

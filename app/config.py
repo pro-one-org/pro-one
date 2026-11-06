@@ -1,7 +1,8 @@
 """Server-owned allowlists. Secrets are read only when constructing adapters."""
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 import os
+import re
 
 from app.models.anthropic_adapter import AnthropicProvider
 from app.models.openai_adapter import OpenAIProvider
@@ -26,6 +27,7 @@ class Settings:
     anthropic_model: str = ""
     authority_network: str = ""
     corpus_path: str = ""
+    conversation_signing_key: bytes | None = field(default=None, repr=False)
 
     @property
     def courtlistener_enabled(self):
@@ -43,8 +45,11 @@ class Settings:
             authority_networks(authority)
         except ValueError:
             raise RuntimeError("Invalid PRO_ONE_AUTHORITY_NETWORK") from None
+        state_key = os.environ.get("PRO_ONE_CONVERSATION_SIGNING_KEY", "")
+        if state_key and not re.fullmatch(r"[0-9a-fA-F]{64}", state_key):
+            raise RuntimeError("Invalid PRO_ONE_CONVERSATION_SIGNING_KEY; expected 64 hexadecimal characters.")
         return cls(mode, provider, model, os.environ.get("PRO_ONE_OPENAI_MODEL", ""), os.environ.get("PRO_ONE_ANTHROPIC_MODEL", ""), authority,
-                   os.environ.get("PRO_ONE_CORPUS_PATH", ""))
+                   os.environ.get("PRO_ONE_CORPUS_PATH", ""), bytes.fromhex(state_key) if state_key else None)
 
     def registry(self, environment=None) -> ProviderRegistry:
         env = os.environ if environment is None else environment

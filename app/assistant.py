@@ -6,6 +6,7 @@ import json
 import re
 import secrets
 from copy import deepcopy
+from time import time
 
 from pydantic import BaseModel, ConfigDict, Field, ValidationError
 
@@ -16,6 +17,7 @@ from app.capabilities import ResearchMatter
 from app.legal_research import GeneralLegalResearchService
 
 _STATE_KEY = secrets.token_bytes(32)
+STATE_TTL_SECONDS = 3600
 FIELDS = set(MatterRequest.model_fields) - {"user_goal"}
 QUESTIONS = {
     "country": "What country is the court or agency in?",
@@ -37,18 +39,25 @@ class AssistantRequest(BaseModel):
     conversation_state: str = Field(default="", max_length=24000)
 
 
-def seal(state):
-    payload = json.dumps(state, separators=(",", ":"), ensure_ascii=True)
-    return hmac.new(_STATE_KEY, payload.encode(), hashlib.sha256).hexdigest() + "." + payload
+def seal(state, *, key=None):
+    payload = json.dumps({"expires_at": int(time()) + STATE_TTL_SECONDS, **state},
+                         separators=(",", ":"), ensure_ascii=True)
+    signature = hmac.new(key or _STATE_KEY, payload.encode(), hashlib.sha256).hexdigest()
+    return signature + "." + payload
 
 
-def unseal(token):
+def unseal(token, *, key=None):
     if not token:
-        return {"facts": {}, "pending": {}, "question": "", "turn": 0}
+        return {"facts": {}, "pending": {}, "question": "", "turn": 0, "expires_at": int(time()) + STATE_TTL_SECONDS}
     signature, payload = token.split(".", 1)
-    if not hmac.compare_digest(signature, hmac.new(_STATE_KEY, payload.encode(), hashlib.sha256).hexdigest()):
+    expected = hmac.new(key or _STATE_KEY, payload.encode(), hashlib.sha256).hexdigest()
+    if not hmac.compare_digest(signature.encode(), expected.encode()):
         raise ValueError("invalid_state")
-    return json.loads(payload)
+    state = json.loads(payload)
+    expires_at = state.get("expires_at") if isinstance(state, dict) else None
+    if type(expires_at) is not int or time() >= expires_at:
+        raise ValueError("expired_state")
+    return state
 
 
 class AssistantService:
@@ -75,17 +84,17 @@ class AssistantService:
 
     def message(self, request):
         try:
-            state = unseal(request.conversation_state)
+            state = unseal(request.conversation_state, key=self.settings.conversation_signing_key)
         except (ValueError, TypeError):
             return {"status": "restart_needed", "message": "This conversation has expired. Start a new conversation to continue."}
         state["turn"] += 1
         def reply(status, message, response=None):
             return {"status": status, "message": message, "response": response,
-                    "conversation_state": seal(state), "matter": state["facts"],
+                    "conversation_state": seal(state, key=self.settings.conversation_signing_key), "matter": state["facts"],
                     "needs_confirmation": state["pending"], "demo": self.status()["demo"],
                     "followups": ["Explain the document", "What information should I gather?", "Show me the official source"] if response else []}
         if state["turn"] > 30:
-            return reply("restart_needed", "Please start a new conversation to keep the context manageable.")
+            return {"status": "restart_needed", "message": "Please start a new conversation to keep the context manageable."}
         message = request.message.strip()
         if re.search(r"\b\d{3}[- ]\d{2}[- ]\d{4}\b|\b\d{12,19}\b", message + " " + request.document_text):
             return reply("redaction_needed", "Please remove Social Security numbers, account numbers, and other unnecessary sensitive information, then try again.")

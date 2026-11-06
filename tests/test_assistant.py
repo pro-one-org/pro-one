@@ -1,11 +1,12 @@
 import json
 import unittest
 from io import BytesIO
+import os
 from zipfile import ZipFile
 from unittest.mock import patch
 from fastapi.testclient import TestClient
 from app import main
-from app.assistant import AssistantRequest, AssistantService, unseal
+from app.assistant import AssistantRequest, AssistantService, STATE_TTL_SECONDS, unseal
 from app.config import Settings
 from app.documents import extract_document
 from app.generation import GenerationService
@@ -40,6 +41,33 @@ class AssistantTests(unittest.TestCase):
     def test_tampered_state(self):
         first=self.post('Virginia DC-402')
         self.assertEqual('restart_needed',self.post('Yes',first['conversation_state']+' ')['status'])
+
+    def test_shared_state_survives_worker_change_until_original_expiry(self):
+        settings = Settings(conversation_signing_key=b"s" * 32)
+        with patch("app.main.settings", settings):
+            with patch("app.assistant._STATE_KEY", b"a" * 32), patch("app.assistant.time", return_value=100):
+                first = self.post("Virginia DC-402")
+            with patch("app.assistant._STATE_KEY", b"b" * 32), patch("app.assistant.time", return_value=101):
+                second = self.post("Yes", first["conversation_state"])
+                self.assertEqual("clarification_needed", second["status"])
+                state = unseal(second["conversation_state"], key=settings.conversation_signing_key)
+                self.assertEqual(100 + STATE_TTL_SECONDS, state["expires_at"])
+            with patch("app.assistant.time", return_value=100 + STATE_TTL_SECONDS):
+                expired = self.post("Not shown", second["conversation_state"])
+                self.assertEqual("restart_needed", expired["status"])
+                self.assertNotIn("conversation_state", expired)
+        with patch("app.main.settings", Settings(conversation_signing_key=b"d" * 32)):
+            with patch("app.assistant.time", return_value=102):
+                self.assertEqual("restart_needed", self.post("Yes", first["conversation_state"])["status"])
+
+    def test_shared_signing_key_configuration_is_strict(self):
+        with patch.dict(os.environ, {"PRO_ONE_CONVERSATION_SIGNING_KEY": "ab" * 32}):
+            settings = Settings.from_environment()
+            self.assertEqual(bytes.fromhex("ab" * 32), settings.conversation_signing_key)
+            self.assertNotIn("conversation_signing_key", repr(settings))
+        with patch.dict(os.environ, {"PRO_ONE_CONVERSATION_SIGNING_KEY": "invalid"}):
+            with self.assertRaisesRegex(RuntimeError, "Invalid PRO_ONE_CONVERSATION_SIGNING_KEY"):
+                Settings.from_environment()
     def test_changed_state_clears_old_facts(self):
         result=self.post('Virginia DC-402');result=self.post('Yes',result['conversation_state']);result=self.post('Not shown',result['conversation_state'])
         changed=self.post('Actually this is Maryland',result['conversation_state'])

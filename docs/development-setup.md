@@ -2,6 +2,8 @@
 
 Pro-One includes a FastAPI runtime, conversational UI, legal capabilities, workflow-independent research, specialized procedural workflows, model/authority adapters and a capability compiler. Legal/source/currentness review remains pending. See [Architecture](architecture.md) and [startup instructions](../README.md#run-locally).
 
+For a multi-worker development or controlled test instance, provision the same random 32-byte `PRO_ONE_CONVERSATION_SIGNING_KEY` to each worker as 64 hexadecimal characters through the server's secret configuration. An unset value uses a process-local key, suitable for single-worker development. Conversations expire one hour after they start. Changing the key invalidates existing conversations, as does upgrading from the earlier token format. The browser clears the conversation token and attachment when the server asks to restart. The signing key is independent of provider credentials.
+
 ## Prerequisites
 
 - Git
