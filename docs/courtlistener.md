@@ -110,3 +110,11 @@ The demo explains ordinary care, warning/open-obvious qualifications, the condit
 Run `python -B scripts/benchmark_research.py --scale 1000`. The committed [measurement](research-benchmark.json) covers twelve scope/retrieval scenarios, separate stage timings, a two-case multi-authority contract, and 1,000 synthetic duplicate cases for storage/FTS scaling. Synthetic counts are not downloads or legal coverage. The unit suite separately exercises authenticated wire shapes, safe errors, compressed bulk joins, history, resume, dissent, prompt injection, citation mismatch, mixed official/external evidence, compiler and RECAP. Existing workflow/capability suites and production release gates remain required. CI additionally builds and smoke-tests the production container.
 
 Remaining work before release: authorized live API/model acceptance tests; broader reviewed court/issue policies; representative real-corpus relevance/entailment benchmarks; large-snapshot orchestration/replication; legal/source/treatment review; operational authentication, rate limits and monitoring. Public execution remains closed.
+
+The first Virginia retrieval labels cover contract breach, contributory negligence and landlord repairs. They point to court-published opinions and their corresponding CourtListener clusters. Run the following against a locally ingested corpus.
+
+```text
+python -B scripts/benchmark_virginia_corpus.py --database .local/courtlistener.sqlite3 --limit 12
+```
+
+The benchmark uses fixed doctrinal queries and measures local FTS or keyword retrieval separately from planning and model quality. It records whether each labeled case is present, its distinct-case rank among the returned real-origin opinions, scope violations and latency. A missing target counts as a coverage gap. Fixture rows cannot count as target hits. The labels cover one known case per question, so unlabeled results need judgment before calculating precision. These are retrieval targets for engineering evaluation. Legal relevance beyond the selected target, opinion-role accuracy and currentness require separate review.

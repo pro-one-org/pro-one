@@ -33,6 +33,7 @@ from app.research_demo import demo_bundles, run_research_demo, DemoSynthesisProv
 from app.research_planning import LegalResearchPlanner
 from app.research_synthesis import ResearchSynthesisService
 from scripts import accept_courtlistener
+from scripts import benchmark_virginia_corpus
 
 
 def raw_bundle(bundle):
@@ -154,6 +155,15 @@ class CourtListenerTests(unittest.TestCase):
                 self.client.lookup("278 Va. 84")
             with self.assertRaisesRegex(CourtListenerError, "citation_edge_scope_mismatch"):
                 next(self.client.citation_edges(1))
+
+    def test_virginia_benchmark_excludes_matching_fixture_case(self):
+        self.seed()
+        labels = (("fixture", "What is notice?", "notice", 1058333, "278 Va. 84", "https://example.test"),)
+        with patch.object(benchmark_virginia_corpus, "LABELS", labels):
+            report = benchmark_virginia_corpus.benchmark(self.store, limit=12)
+        self.assertEqual(0, report["targets_in_corpus"])
+        self.assertEqual(0, report["targets_retrieved"])
+        self.assertIsNone(report["target_recall_given_coverage"])
 
     def test_token_is_not_in_repr_or_status(self):
         self.assertNotIn("SECRET", repr(self.client) + json.dumps(self.client.status()))
