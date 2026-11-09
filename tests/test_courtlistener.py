@@ -17,7 +17,7 @@ from urllib.parse import parse_qs, urlsplit
 from fastapi.testclient import TestClient
 
 from app import main
-from app.authority import AuthorityUnavailable, VirginiaOfficialProvider, VIRGINIA_RULE_EXCERPT, VIRGINIA_RULE_PAGE, digest
+from app.authority import AuthorityUnavailable, RepositoryAuthorityProvider, VirginiaOfficialProvider, VIRGINIA_RULE_EXCERPT, VIRGINIA_RULE_PAGE, digest
 from app.capabilities import ResearchMatter
 from app.capability_compiler import CapabilityCompiler
 from app.citation_research import CitationResearchRequest, resolve_citation
@@ -817,7 +817,7 @@ class CourtListenerTests(unittest.TestCase):
         matter = self.matter.model_copy(update={"legal_area": "civil_procedure", "topics": ["civil_procedure", "summary_judgment"]})
         with patch("pypdf.PdfReader", return_value=reader):
             package = GeneralLegalResearchService(
-                self.repository, providers=[official, LocalCorpusAuthorityProvider(self.store)]
+                self.repository, providers=[RepositoryAuthorityProvider(self.repository), official, LocalCorpusAuthorityProvider(self.store)]
             ).assemble(matter)["package"]
         self.assertTrue({"court_opinion", "court_rule"} <= {s["source_type"] for s in package["grounding"]["sources"]})
         self.assertIn("va-rule-3-20", {c["source_id"] for c in package["response_plan"]["citations"]})

@@ -34,7 +34,7 @@ The active branch is `feat/mvp-ship-sprint`. PR #25's published head is `ec0f34e
 
 ## Immediate external dependencies
 
-The mixed case/rule regression uses explicit official and fixture-corpus providers. With the default repository provider included, a broad civil-procedure tag can also retrieve the existing small-claims self-help source, whose version metadata is missing. Evidence assembly rejects that package. Partial capability routing does not resolve this separate source-provenance gap.
+On November 9, the default provider configuration with `authority_network=virginia_official` assembled Rule 3:20 for both `civil_procedure` and `summary_judgment` topics through a live worker fetch. The result was `evidence_ready` in general-research mode, with source hash `sha256:b92bb0b1677e1f7c9607674f2df4dff2c9b2dfa888afee8f089bb8fdbfb46aa2` and public execution blocked. The mixed case/rule regression also includes the repository provider. This corrects the earlier diagnosis: the unversioned self-help source entered through automatic capability selection, not repository discovery, and full-topic matching avoids it for this question. The source itself remains unversioned and cannot support a research package that selects it.
 
 An authorized `COURTLISTENER_API_TOKEN` is required for provider acceptance and targeted ingestion. An authorized OpenAI or Anthropic server credential and explicit model configuration are required for live semantic acceptance. Keep credentials in server secret configuration.
 
