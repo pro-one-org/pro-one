@@ -181,6 +181,34 @@ class ExtractionTests(unittest.TestCase):
         self.assertTrue(turns[0]["checks_passed"])
         self.assertEqual([], observer.calls)
 
+    def test_conversation_review_binds_saved_turn_and_records_refusal(self):
+        from app.benchmark import DIMENSIONS
+        from scripts.accept_research_model import ConversationReview, apply_review, turn_hash
+        turn = {"status": "no_authoritative_support", "checks_passed": False}
+        report = {"scenario": "contract_breach", "scenario_hash": "fixture-scenario-hash",
+                  "provider": "mock", "model": "fixture", "turns": [turn]}
+        raw_review = {"scenario": report["scenario"], "scenario_hash": report["scenario_hash"],
+                      "provider": "mock", "model": "fixture",
+                      "turns": [{"turn_hash": turn_hash(turn), "expected_action": "answer",
+                                 "scores": {dimension: 1 for dimension in DIMENSIONS}}]}
+        review = ConversationReview.model_validate(raw_review)
+        result = apply_review(report, review)
+        self.assertEqual(1, result["manual_measurements"]["false_rejections"])
+        self.assertFalse(result["manual_measurements"]["release_approved"])
+        self.assertNotIn("manual_review", report["turns"][0])
+        report["turns"][0]["status"] = "answered"
+        with self.assertRaisesRegex(ValueError, "review_turn_hash_mismatch"):
+            apply_review(report, review)
+        import hashlib
+        report["turns"][0]["rendered"] = {"fixture": "original"}
+        report["turns"][0]["render_sha256"] = hashlib.sha256(
+            json.dumps(report["turns"][0]["rendered"], sort_keys=True, ensure_ascii=True).encode()).hexdigest()
+        raw_review["turns"][0]["turn_hash"] = turn_hash(report["turns"][0])
+        review = ConversationReview.model_validate(raw_review)
+        report["turns"][0]["rendered"]["fixture"] = "changed"
+        with self.assertRaisesRegex(ValueError, "review_render_hash_mismatch"):
+            apply_review(report, review)
+
 class AdditionalSafetyTests(unittest.TestCase):
     setUp = AssistantTests.setUp
     post = AssistantTests.post

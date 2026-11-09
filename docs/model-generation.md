@@ -91,3 +91,16 @@ python -B scripts/accept_research_model.py hostile_document --include-rendered
 The runner records observed model stages, turn status, latency, source counts and a hash of each rendered answer. The optional rendered answer is for review of the fixed synthetic inputs. Reports omit model prompts, raw drafts, conversation tokens and credentials. A structural pass checks the expected routing or refusal, citation links and development release marker. Use the stage trace to determine whether proposal, verification and rendering ran. An answered turn may use exact text after synthesis falls back.
 
 For live review, score each rendered legal proposition against its cited passages, including opinion role, jurisdiction, exceptions and currentness. Separately record expected and observed unsupported outcomes, citation misuse and useful answers lost to refusal or fallback. The runner's structural result does not supply these labels. Without an explicitly configured live model, it exits with zero model calls. Live semantic quality and private-beta legal review remain pending.
+
+The acceptance set also includes contract breach, landlord deposits and repairs, unpaid wages, contributory negligence, limitations, civil procedure, business records, warrant-in-debt intake, case currentness, misleading premises, deadline pressure, and apparent or proposed orders. Several subjects exceed present corpus coverage. An expected answer that lacks evidence remains a failed scenario and identifies work needed for the product objective.
+
+Use a saved JSON report to create a human review template, then fill in its expected action and scores. These commands perform no model calls.
+
+```text
+python -B scripts/accept_research_model.py contract_breach --report-file report.json --review-template
+python -B scripts/accept_research_model.py contract_breach --report-file report.json --review-file review.json
+```
+
+The expected action is `answer`, `clarify`, `refuse` or `inspect`. Every dimension uses 0 for a concern, 1 for mixed results and 2 for satisfactory results, matching the workflow benchmark dimensions. The report records an answered turn when another action was expected as a false acceptance, and a missing answer when an answer was expected as a false rejection. It separately counts answered turns with a score of 0 in groundedness, legal support or citation fidelity.
+
+Reviews bind to the scenario hash, provider, model and each turn's status and rendered-answer hash. Included rendered text is rehashed before accepting scores. Manual measurements preserve the structural result and keep release approval false. A changed scenario or answer needs a new review. Keep saved reports and reviews outside Git while their sources or results are under review.
