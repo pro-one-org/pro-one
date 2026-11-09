@@ -76,6 +76,13 @@ class AssistantTests(unittest.TestCase):
         for field in ('provider','model','workflow_confirmed','readiness','history'):
             r=self.client.post('/assistant/message',json={'message':'hello',field:'anything'})
             self.assertEqual(422,r.status_code)
+
+    def test_validation_errors_omit_user_supplied_field_names(self):
+        private_field = "SYNTHETIC_PRIVATE_LEGAL_FIELD"
+        response = self.client.post("/assistant/message", json={"message": "hello", private_field: "fixture"})
+        self.assertEqual(422, response.status_code)
+        self.assertNotIn(private_field, response.text)
+        self.assertEqual([{"type": "extra_forbidden", "loc": ["body"]}], response.json()["detail"]["errors"])
     def test_demo_and_production(self):
         self.assertTrue(self.client.get('/assistant/status').json()['demo'])
         with patch('app.main.settings',Settings(mode='production',provider='',model='')):

@@ -70,10 +70,11 @@ async def production_inspection_boundary(request: Request, call_next):
 
 @app.exception_handler(RequestValidationError)
 async def safe_generation_request_error(request: Request, exc: RequestValidationError):
-    # Default diagnostics include raw input; omit values on every API path.
+    # Nested error locations can contain user-supplied dictionary keys.
+    # Retain only the transport location and omit raw values on every API path.
     return JSONResponse(status_code=422, content={"detail": {
         "code": "malformed_generation_request" if request.url.path.endswith("/response/generate") else "malformed_request",
-        "errors": [{"type": e["type"], "loc": list(e["loc"])} for e in exc.errors()],
+        "errors": [{"type": e["type"], "loc": list(e["loc"][:1])} for e in exc.errors()],
     }})
 
 
