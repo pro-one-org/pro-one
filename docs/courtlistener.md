@@ -112,6 +112,8 @@ Opinion refresh replaces the references carried by the opinion payload while ret
 
 The legal planner emits only server-approved issue concepts, court/date scope and budgets. Names, employer/retailer identity, narrative, uploaded documents and user goals are excluded from authority queries. Model suggestions must pass a legal-vocabulary allowlist; they cannot select hosts, courts, cursors or policy.
 
+During a configured model research response, corpus providers can make one small query-proposal call before retrieval. That call receives only the approved area, issues and baseline legal queries. Accepted word-only suggestions are placed first in the bounded query list. The server reconstructs the final plan with the original jurisdiction, courts and budgets. Malformed output, failed providers and suggestions outside the vocabulary retain deterministic planning. The same plan is reused for local retrieval, network discovery and fallback within that search. Live planning quality remains part of model acceptance.
+
 Compiled collections may be augmented with a configured external provider; general research needs no workflow ID. Official statutes and CourtListener cases keep separate source types and authority metadata. Hydrated text and citation identity are checked before evidence assembly. Live-model research can use three stages:
 
 1. A strict proposal call receives bounded evidence and proposes claims with supporting, qualifying and conflicting passage IDs.

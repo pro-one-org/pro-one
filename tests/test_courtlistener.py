@@ -24,7 +24,7 @@ from app.citation_research import CitationResearchRequest, resolve_citation
 from app.config import Settings
 from app.corpus_ingestion import CourtListenerBulkImporter, CourtListenerCorpusBuilder
 from app.corpus_store import SQLiteCorpusStore
-from app.courtlistener_authority import LocalCorpusAuthorityProvider, CourtListenerCitationVerifier, extract_passages
+from app.courtlistener_authority import CourtListenerAuthorityProvider, LocalCorpusAuthorityProvider, CourtListenerCitationVerifier, extract_passages
 from app.courtlistener_client import CourtListenerClient, CourtListenerError, CourtListenerTransport, RequestBudget, continuation_cursor, retry_delay
 from app.courtlistener_models import Court, Docket, Cluster, Opinion, CaseBundle, API_BASE
 from app.generation import GenerationService
@@ -37,7 +37,7 @@ from app.output_validation import OutputValidationService
 from app.recap import RecapArchiveProvider, render_archive_document
 from app.repository import RecordRepository
 from app.research_demo import demo_bundles, run_research_demo, DemoSynthesisProvider
-from app.research_planning import LegalResearchPlanner
+from app.research_planning import LegalResearchPlanner, ModelResearchPlanner
 from app.research_synthesis import ResearchSynthesisService
 from scripts import accept_courtlistener
 from scripts import benchmark_virginia_corpus
@@ -613,6 +613,50 @@ class CourtListenerTests(unittest.TestCase):
         plan = LegalResearchPlanner().plan(self.matter.model_copy(update={"goal": "Jane Doe account 123456", "document_type": "private"}), suggestions=["Jane Doe", "https://evil.example"])
         self.assertNotIn("Jane", json.dumps(plan.as_dict()))
         self.assertEqual(("va", "vactapp"), plan.courts)
+
+    def test_model_query_planner_cannot_expand_authority_or_send_private_context(self):
+        adapter = Mock()
+        registry = ProviderRegistry()
+        registry.register("fixture", adapter, {"test"})
+        config = GenerationConfig(provider="fixture", model="test")
+        matter = self.matter.model_copy(update={"goal": "Jane Doe account 123456", "document_type": "private contract"})
+        baseline = LegalResearchPlanner().plan(matter)
+        for proposal in ({"queries": ["https://evil.example"]}, {"queries": ["Jane Doe"]},
+                         {"queries": ["actual notice"], "courts": ["scotus"]}):
+            with self.subTest(proposal=proposal):
+                adapter.generate.return_value = ModelResponse("fixture", "test", True, proposal)
+                plan = ModelResearchPlanner(registry, config).plan(matter)
+                self.assertEqual(baseline, plan)
+                payload = json.dumps(adapter.generate.call_args.args[0].grounded_package)
+                self.assertNotIn("Jane", payload)
+                self.assertNotIn("private", payload)
+
+    def test_normal_research_response_uses_one_model_plan_for_corpus_search(self):
+        self.seed()
+        requests = []
+
+        class Adapter:
+            def generate(inner, request):
+                requests.append(request)
+                if request.metadata.get("purpose") == "legal_query_proposal":
+                    output = {"queries": ["actual notice"]}
+                elif request.metadata.get("purpose") == "claim_proposal":
+                    output = {"claims": []}
+                else:
+                    output = valid_draft(request)
+                return ModelResponse(request.provider, request.model, True, output)
+
+        registry = ProviderRegistry()
+        registry.register("fixture", Adapter(), {"test"})
+        provider = CourtListenerAuthorityProvider(self.store, self.client)
+        service = GeneralLegalResearchService(self.repository, generation=GenerationService(registry), providers=[provider])
+        result = service.respond(self.matter, GenerationConfig(provider="fixture", model="test"))
+        self.assertEqual("answered", result["status"])
+        self.assertEqual(1, sum(r.metadata.get("purpose") == "legal_query_proposal" for r in requests))
+        search = next(call for call in self.transport.calls if call["key"] == "search")
+        self.assertEqual(["actual notice"], search["params"]["q"])
+        self.assertEqual(["va vactapp"], search["params"]["court"])
+        self.assertFalse(result["response"]["publicly_approved"])
 
     def test_contract_and_landlord_retrieval_topics_keep_separate_scope(self):
         planner = LegalResearchPlanner()

@@ -117,6 +117,7 @@ class LocalCorpusAuthorityProvider:
         self._documents = {}
         self.metrics = {"local_search_ms": 0., "extraction_ms": 0.}
         self.owned_store = False
+        self.planner = LegalResearchPlanner()
 
     def close(self):
         if self.owned_store:
@@ -130,9 +131,9 @@ class LocalCorpusAuthorityProvider:
         except CORPUS_STORAGE_ERRORS:
             raise AuthorityUnavailable("corpus_storage_unavailable") from None
 
-    def _search(self, matter, limit):
+    def _search(self, matter, limit, plan=None):
         try:
-            plan = LegalResearchPlanner().plan(matter)
+            plan = plan or self.planner.plan(matter)
         except ValueError:
             return []
         started = time.perf_counter()
@@ -183,13 +184,13 @@ class CourtListenerAuthorityProvider(LocalCorpusAuthorityProvider):
     name = "courtlistener"
     search_modes = ("keyword", "semantic")
 
-    def _search(self, matter, limit):
+    def _search(self, matter, limit, plan=None):
         try:
-            plan = LegalResearchPlanner().plan(matter)
+            plan = plan or self.planner.plan(matter)
         except ValueError:
             return []
         try:
-            local = super()._search(matter, limit)
+            local = super()._search(matter, limit, plan=plan)
             if len(local) >= min(limit, 3):
                 return local
             usage = self.client.usage()
@@ -224,11 +225,11 @@ class CourtListenerAuthorityProvider(LocalCorpusAuthorityProvider):
                 seed = self.store.case(next(iter(sorted(seen))))
                 if seed and seed.opinions:
                     self.store.add_edges(list(self.client.citation_edges(seed.opinions[0].id, incoming=True)))
-            return super()._search(matter, limit)
+            return super()._search(matter, limit, plan=plan)
         except CourtListenerError:
             # Partial hydrated documents remain external corpus data; only
             # verified local identities can be selected after an external error.
-            available = super()._search(matter, limit)
+            available = super()._search(matter, limit, plan=plan)
             if available:
                 return available
             raise AuthorityUnavailable("courtlistener_unavailable") from None

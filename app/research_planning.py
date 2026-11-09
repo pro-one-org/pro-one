@@ -1,8 +1,11 @@
 """Legal concepts may be proposed; policy supplies every search boundary."""
 
 from dataclasses import dataclass, asdict
+import json
 import re
+from pydantic import BaseModel, ConfigDict, Field
 from app.courtlistener_models import COURT_POLICY
+from app.models.base import ModelRequest
 
 
 RESEARCH_TOPICS = {
@@ -65,8 +68,44 @@ class LegalResearchPlanner:
         vocabulary = set(" ".join(queries).split())
         if matter.legal_area == "torts":
             vocabulary.update({"wet", "floor", "store", "reasonable", "care"})
+        accepted = []
         for suggestion in suggestions[:4]:
             words = re.findall(r"[a-z]+", suggestion.casefold())
             if words and set(words).issubset(vocabulary) and len(suggestion) <= 200 and not re.search(r"[^a-zA-Z ]", suggestion):
-                queries.append(" ".join(words))
-        return ResearchPlan("US", matter.state, matter.sovereign, matter.legal_area, issues, tuple(dict.fromkeys(queries))[:4], courts)
+                accepted.append(" ".join(words))
+        queries = list(dict.fromkeys(accepted + queries))[:4]
+        return ResearchPlan("US", matter.state, matter.sovereign, matter.legal_area, issues, tuple(queries), courts)
+
+
+class QueryProposal(BaseModel):
+    model_config = ConfigDict(extra="forbid", strict=True)
+    queries: list[str] = Field(min_length=1, max_length=2)
+
+
+class ModelResearchPlanner:
+    def __init__(self, registry, config):
+        self.registry, self.config = registry, config
+
+    def plan(self, matter):
+        baseline = LegalResearchPlanner().plan(matter)
+        request = ModelRequest(
+            self.config.provider, self.config.model, "legal_query_proposal_v1",
+            "Propose at most two focused legal research queries using only the vocabulary in the provided "
+            "baseline queries. Use plain words and spaces. Do not add names, facts, URLs, citations, "
+            "jurisdiction, court selections or budget settings. Source policy is controlled by the server.",
+            {"legal_area": baseline.legal_area, "issues": baseline.issues, "baseline_queries": baseline.queries},
+            QueryProposal.model_json_schema(), {"max_output_tokens": 500}, {"purpose": "legal_query_proposal"},
+        )
+        try:
+            response = self.registry.resolve(self.config.provider, self.config.model).generate(request)
+            if not response.success or (response.provider, response.model) != (self.config.provider, self.config.model):
+                return baseline
+            raw = response.output
+            if isinstance(raw, str):
+                if len(raw) > 4000:
+                    return baseline
+                raw = json.loads(raw)
+            proposal = QueryProposal.model_validate(raw)
+            return LegalResearchPlanner().plan(matter, suggestions=proposal.queries)
+        except Exception:
+            return baseline

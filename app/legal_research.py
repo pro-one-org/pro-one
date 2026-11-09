@@ -189,6 +189,12 @@ class GeneralLegalResearchService:
             self.close()
             return {"status": "unavailable", "response": None, "reason": "research_release_review_required"}
         try:
+            if self.generation and config.provider != "testing":
+                from app.courtlistener_authority import LocalCorpusAuthorityProvider
+                from app.research_planning import ModelResearchPlanner
+                for provider in self.providers:
+                    if isinstance(provider, LocalCorpusAuthorityProvider):
+                        provider.planner = ModelResearchPlanner(self.generation.registry, config)
             prepared = self.assemble(matter)
         finally:
             self.close()
