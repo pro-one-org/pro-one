@@ -110,6 +110,24 @@ OFFICIAL_CATALOG = {
     "va-austin-shoneys": ("https://www.vacourts.gov/static/opinions/opnscvwp/1961236.pdf", "pdf"),
     "va-personal-injury-limitations": ("https://law.lis.virginia.gov/vacode/title8.01/section8.01-243/", "html"),
 }
+OFFICIAL_COMPILER_CASES = {
+    "va-filak-george": {
+        "url": "https://www.vacourts.gov/static/opinions/opnscvwp/1031407.pdf",
+        "title": "Filak v. George", "citation": "267 Va. 612", "date": "2004-04-23",
+        "area": "contracts", "topics": ["contract_breach"],
+    },
+    "va-rascher-friend": {
+        "url": "https://www.vacourts.gov/static/opinions/opnscvwp/1090193.pdf",
+        "title": "Rascher v. Friend", "citation": "279 Va. 370", "date": "2010-02-25",
+        "area": "torts", "topics": ["contributory_negligence"],
+    },
+    "va-sales-kecoughtan": {
+        "url": "https://www.vacourts.gov/static/opinions/opnscvwp/1090143.pdf",
+        "title": "Sales v. Kecoughtan Housing Co., Ltd.", "citation": "279 Va. 475", "date": "2010-02-25",
+        "area": "landlord_tenant", "topics": ["landlord_repairs"],
+    },
+}
+OFFICIAL_CATALOG.update({sid: (case["url"], "pdf") for sid, case in OFFICIAL_COMPILER_CASES.items()})
 
 
 class OfficialSectionParser(HTMLParser):
@@ -163,8 +181,29 @@ class VirginiaOfficialProvider:
     def search(self, matter, limit=3):
         if matter.country != "US" or matter.state != "Virginia" or matter.sovereign != "state":
             return []
-        return [sid for sid in OFFICIAL_CATALOG if matter.legal_area in self.repository.get("sources", sid).get("legal_areas", [])
-                and set(matter.topics) & set(self.repository.get("sources", sid)["workflow_fit"]["topics"])][:min(limit, 3)]
+        return [sid for sid in OFFICIAL_CATALOG if matter.legal_area in self.source_metadata(sid).get("legal_areas", [])
+                and set(matter.topics) & set(self.source_metadata(sid)["workflow_fit"]["topics"])][:min(limit, 3)]
+
+    def source_metadata(self, source_id):
+        if source_id not in OFFICIAL_COMPILER_CASES:
+            return deepcopy(self.repository.get("sources", source_id))
+        case = OFFICIAL_COMPILER_CASES[source_id]
+        source = deepcopy(self.repository.get("sources", "va-fultz-delhaize"))
+        source.update(id=source_id, title=case["title"], url=case["url"],
+                      last_modified=date.today().isoformat(), legal_areas=[case["area"]],
+                      status="proposed", review=proposed_review())
+        source.pop("public_currentness", None)
+        source["dates"] = {"published": case["date"], "effective_from": None, "effective_through": None,
+                           "last_updated": None, "last_verified": None}
+        source["provenance"] = {"source_content_version": "pending_official_fetch", "content_hash": None,
+                                "superseded_by_source_id": None}
+        source["citation"] = {"preferred_citation": case["citation"], "retrieved_at": None}
+        source["workflow_fit"] = {"topics": case["topics"], "workflow_ids": [], "risk_level": "high",
+                                  "limitations": ["Compiler input; opinion-role and legal review pending."]}
+        source["case_metadata"] = {"court": "Supreme Court of Virginia", "decision_date": case["date"],
+                                   "publication_status": "published", "precedential_status": "unknown",
+                                   "procedural_posture": None, "subsequent_treatment": "unknown", "opinion_role": "unknown"}
+        return source
 
     def fetch(self, source_id):
         if source_id not in OFFICIAL_CATALOG:
@@ -184,7 +223,7 @@ class VirginiaOfficialProvider:
                 raise AuthorityUnavailable("authority_fetch_failed") from None
         url, kind = OFFICIAL_CATALOG[source_id]
         body, media = self.transport.get(url)
-        source = deepcopy(self.repository.get("sources", source_id))
+        source = self.source_metadata(source_id)
         if not source or source["url"] != url:
             raise AuthorityUnavailable("catalog_integrity_error")
         try:

@@ -363,6 +363,24 @@ class AuthorityProviderTests(unittest.TestCase):
         document = VirginiaOfficialProvider(self.repo, transport).fetch("va-personal-injury-limitations")
         self.assertEqual((), document.passages)
 
+    def test_new_official_collection_is_unclassified_compiler_input(self):
+        text = "Synthetic contract discussion requires evidence and legal review before any public reliance."
+        reader = Mock(is_encrypted=False, pages=[Mock(extract_text=Mock(return_value=text))])
+        transport = Mock(get=Mock(return_value=(b"%PDF-fixture", "application/pdf")))
+        provider = VirginiaOfficialProvider(self.repo, transport)
+        matter = MATTER.model_copy(update={"legal_area": "contracts", "topics": ["contract_breach"]})
+        self.assertEqual(["va-filak-george"], provider.search(matter))
+        with patch("pypdf.PdfReader", return_value=reader):
+            document = provider.fetch("va-filak-george")
+        self.assertEqual("unknown", document.source["case_metadata"]["opinion_role"])
+        self.assertEqual((), document.passages)
+        self.assertEqual(digest(text), document.source["provenance"]["content_hash"])
+        bundle = CapabilityCompiler(self.repo).compile(matter, [document])
+        self.assertTrue(bundle["source_passages"])
+        self.assertEqual([], bundle["legal_rules"])
+        self.assertFalse(bundle["report"]["public_execution"])
+        self.assertIsNone(self.repo.get("sources", "va-filak-george"))
+
     def test_parser_and_http_failures_are_closed(self):
         for value in ((b"not pdf", "application/pdf"), (b"%PDF-bad", "text/html")):
             with self.subTest(value=value), self.assertRaises(AuthorityUnavailable):

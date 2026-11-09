@@ -33,6 +33,8 @@ Research uses exact evidence excerpts or curated source-linked variants, with op
 
 The [CourtListener milestone](docs/courtlistener.md) adds optional REST v4 keyword/semantic discovery, typed opinion hydration, citation identity checks, a persistent SQLite/FTS corpus, bounded bulk ingestion, citation relationships, existing RECAP document inspection and corpus-to-capability compilation. No credentials were available: authenticated downloads and live model calls are zero. The product's **Try CourtListener research example** is an explicitly reconstructed two-case fixture; [benchmark results](docs/research-benchmark.json) distinguish it from 1,000 synthetic storage/search cases.
 
+The [private-beta evidence audit](docs/private-beta-evidence.md) tracks all completion criteria. The official provider has also compiled real court-published collections for contracts, contributory negligence and landlord repairs into proposed review bundles. These compiler runs preserve unknown opinion roles and pending review. Broader reviewed legal coverage and authenticated CourtListener/model acceptance remain incomplete.
+
 ## Run locally
 
 Use Python 3.12 or later. Create and activate a virtual environment, then install dependencies and start:
