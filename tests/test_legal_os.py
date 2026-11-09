@@ -66,6 +66,19 @@ class LegalOSTests(unittest.TestCase):
         self.assertIn("state", result["missing_context"])
         self.assertTrue(result["related"])
 
+    def test_partial_topic_coverage_does_not_select_capability(self):
+        matter = ResearchMatter(country="US", state="Virginia", legal_area="civil_procedure",
+                                topics=["civil_procedure", "summary_judgment"])
+        service = GeneralLegalResearchService(self.repo, providers=[])
+        result = service.assemble(matter)
+        self.assertEqual([], result["resolution"]["exact"])
+        self.assertTrue(result["resolution"]["related"])
+        self.assertEqual("no_authoritative_support", result["status"])
+        self.assertIsNone(result["package"])
+        related_id = result["resolution"]["related"][0]["capability_id"]
+        self.assertEqual("capability_not_relevant", service.assemble(
+            matter, selected_capability_id=related_id)["status"])
+
     def test_model_cannot_supply_capability_or_source_ids(self):
         for key in ("capability_id", "source_ids", "provider", "approval", "allowlist"):
             with self.subTest(key=key), self.assertRaises(ValidationError):

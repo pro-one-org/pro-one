@@ -19,7 +19,7 @@ The active branch is `feat/mvp-ship-sprint`. PR #25's published head is `ec0f34e
 | 11. Useful retrieval across Virginia subjects | Known-target benchmark labels cover contracts, contributory negligence and landlord repairs. The fixture SQLite corpus contains none of these real targets. | Ingest labeled cases and broaden reviewed relevance labels before measuring precision and recall. |
 | 12. Compile real corpus evidence | Real official-source runs compiled contract, contributory-negligence and landlord-repair collections into proposed artifacts. | Compile a meaningful real CourtListener corpus and review knowledge candidates and source roles. |
 | 13. Broader legal capability coverage | Four canonical proposed capabilities remain. Additional generated review bundles are outside canonical data. | Establish evidence and reviewed boundaries across additional subjects. Generated bundle counts do not prove coverage. |
-| 14. Workflows remain optional | General research assembles without a workflow ID; specialized procedural intake remains available. | Preserve this behavior as subjects and providers expand. |
+| 14. Workflows remain optional | General research assembles without a workflow ID; specialized procedural intake remains available. Automatic capability selection requires coverage of every supplied topic. Partial overlaps remain related and cannot constrain a broader question to that capability's sources. | Preserve this behavior as subjects and providers expand. |
 | 15. Mixed case/statute/rule research | One actual local run combined a live LIS statute excerpt with fixture case evidence. Rule 3:20 was fetched through the normal official worker, and a regression test combined rule evidence with a fixture case without a workflow ID. | Verify real mixed-authority answers, including authentic case retrieval, relevance, qualifications and live model behavior. |
 | 16. Honest treatment/currentness uncertainty | Bounded local screening retains citing context and roles, flags truncation and leaves currentness unresolved. | Review real later-citing examples and measure screening limitations. |
 | 17. Product conversations and documents | Local tests exercise questions, procedural conversations, uploads, heading cues and labeled document excerpts. A November 9 browser review checked fixture citation navigation, synthetic proposed-order upload, quoted text, absence of console warnings/errors and a 390-pixel mobile layout without horizontal overflow. | Evaluate live conversations and substantive document questions. Heading inspection alone does not establish document intelligence acceptance. |
@@ -33,6 +33,8 @@ The active branch is `feat/mvp-ship-sprint`. PR #25's published head is `ec0f34e
 | 25. PR #25 stays unmerged | PR remains open at the published head. | Maintain the merge boundary until explicit user instruction. |
 
 ## Immediate external dependencies
+
+The mixed case/rule regression uses explicit official and fixture-corpus providers. With the default repository provider included, a broad civil-procedure tag can also retrieve the existing small-claims self-help source, whose version metadata is missing. Evidence assembly rejects that package. Partial capability routing does not resolve this separate source-provenance gap.
 
 An authorized `COURTLISTENER_API_TOKEN` is required for provider acceptance and targeted ingestion. An authorized OpenAI or Anthropic server credential and explicit model configuration are required for live semantic acceptance. Keep credentials in server secret configuration.
 

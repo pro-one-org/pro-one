@@ -92,11 +92,13 @@ class CapabilityResolutionService:
             overlap = sorted(set(matter.topics) & set(capability["topics"]))
             if matter.topics and not overlap:
                 continue
-            candidate = {"capability_id": capability["id"], "confidence": "exact_subject_match" if not missing and overlap else "related_subject",
+            covers_topics = bool(matter.topics) and set(matter.topics).issubset(capability["topics"])
+            exact_match = not missing and covers_topics
+            candidate = {"capability_id": capability["id"], "confidence": "exact_subject_match" if exact_match else "related_subject",
                          "reasons": ["Jurisdiction and legal area match supplied dimensions.", *overlap],
                          "missing_context": missing,
                          "limitations": ["Relevance is not a legal conclusion or approval."]}
-            (exact if not missing and overlap else related).append(candidate)
+            (exact if exact_match else related).append(candidate)
         return {"exact": deepcopy(exact), "related": deepcopy(related), "missing_context": missing,
                 "unsupported_areas": [] if exact or related else [matter.legal_area or "unidentified"],
-                "confidence_basis": "Exact jurisdiction, sovereign, area and topic overlap; no statistical or legal confidence."}
+                "confidence_basis": "Exact matches require jurisdiction, sovereign, area and coverage of every supplied topic; no statistical or legal confidence."}

@@ -814,13 +814,14 @@ class CourtListenerTests(unittest.TestCase):
         page = Mock(extract_text=Mock(return_value="Rule 3:20. Motion for Summary Judgment. " + VIRGINIA_RULE_EXCERPT))
         reader = Mock(is_encrypted=False, pages=[Mock()] * VIRGINIA_RULE_PAGE + [page])
         official = VirginiaOfficialProvider(self.repository, Mock(get=Mock(return_value=(b"%PDF-fixture", "application/pdf"))))
-        matter = self.matter.model_copy(update={"legal_area": "civil_procedure", "topics": ["summary_judgment"]})
+        matter = self.matter.model_copy(update={"legal_area": "civil_procedure", "topics": ["civil_procedure", "summary_judgment"]})
         with patch("pypdf.PdfReader", return_value=reader):
             package = GeneralLegalResearchService(
                 self.repository, providers=[official, LocalCorpusAuthorityProvider(self.store)]
             ).assemble(matter)["package"]
         self.assertTrue({"court_opinion", "court_rule"} <= {s["source_type"] for s in package["grounding"]["sources"]})
         self.assertIn("va-rule-3-20", {c["source_id"] for c in package["response_plan"]["citations"]})
+        self.assertEqual("general_research", package["evidence_mode"])
         self.assertIsNone(package["workflow_id"])
         self.assertFalse(package["public_execution"]["allowed"])
 
