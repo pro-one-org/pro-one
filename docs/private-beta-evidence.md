@@ -2,7 +2,7 @@
 
 Audit date is November 9, 2026. The private-beta objective is incomplete. The evidence below distinguishes implemented behavior, fixture proof, real public-source checks and required external acceptance. Automated results do not grant legal or currentness approval.
 
-The active branch is `feat/mvp-ship-sprint`. PR #25's published head is `ec0f34e3499e66c39491145d9fbe0ac6c0f8c14c`; its existing CI run passed. Subsequent local commits require publication and CI. Automatic approval review rejected the push because it did not accept the pasted authorization for the GitHub destination.
+The active branch is `feat/mvp-ship-sprint`. On November 9, the user explicitly confirmed publication to `pro-one-org/pro-one` and continued use of PR #25 without merging. The 23 completed local commits were reviewed and published at `2f1b3d84b4c15644e305defd091b9152d9c5a76a`; an added-content credential-pattern scan found no matches. All 448 local tests, repository validation, 37 mapped evaluations, JavaScript syntax and the offline benchmark passed before publication. Exact-head [CI run 42645604055](https://github.com/pro-one-org/pro-one/actions/runs/42645604055) completed successfully, including the Docker build and production smoke steps. The prior publication-authorization blocker is resolved.
 
 | Criterion | Current evidence | Work required |
 |---|---|---|
@@ -25,7 +25,7 @@ The active branch is `feat/mvp-ship-sprint`. PR #25's published head is `ec0f34e
 | 17. Product conversations and documents | Local tests exercise questions, procedural conversations, uploads, heading cues and labeled document excerpts. A November 9 browser review checked fixture citation navigation, synthetic proposed-order upload, quoted text, absence of console warnings/errors and a 390-pixel mobile layout without horizontal overflow. | Evaluate live conversations and substantive document questions. Heading inspection alone does not establish document intelligence acceptance. |
 | 18. Adversarial assurance | Offline suites cover citation, jurisdiction, evidence and prompt-injection boundaries. | Add reviewed live-model results. |
 | 19. Existing regressions stay green | Standard unit, evaluation, schema and frontend checks are run after implementation cycles. | Keep exact-commit local and CI results current. |
-| 20. CI passes | Published PR head passed CI. Local changes have local validation only. | Publish the branch, wait for CI and repair any legitimate failures. |
+| 20. CI passes | The 23 subsequent engineering commits are published at `2f1b3d8` with successful exact-head CI. | Keep CI current as implementation changes. |
 | 21. Controlled-beta operations | Shared signing, fixed conversation expiry, read-only readiness probing, corpus outage handling and online backups exist. Production research remains gated. | Establish host access controls, abuse limits, privacy handling and deployment verification before beta exposure. |
 | 22. Accurate documentation | Provider, compiler, privacy, readiness, backup and acceptance runbooks disclose limits. This audit records outstanding criteria. | Update evidence as real acceptance runs complete. |
 | 23. Keep secrets, databases and private legal text out of Git | Corpus files and local reports are ignored. The current changes use public source metadata and synthetic tests. | Repeat staged-file review before publication and retain corpus data outside Git. |
@@ -38,7 +38,7 @@ On November 9, the default provider configuration with `authority_network=virgin
 
 An authorized `COURTLISTENER_API_TOKEN` is required for provider acceptance and targeted ingestion. An authorized OpenAI or Anthropic server credential and explicit model configuration are required for live semantic acceptance. Keep credentials in server secret configuration.
 
-Publishing needs direct confirmation following the automatic review rejection. Legal validity, currentness and release readiness require authorized human review of the evidence. None of these dependencies is satisfied by fixture tests or by a successful compiler run.
+Publication is authorized for subsequent legitimate Goal progress on the same branch and PR. Legal validity, currentness and release readiness still require authorized human review of the evidence. Fixture tests and successful compiler runs do not satisfy those dependencies.
 
 ## Evidence locations
 

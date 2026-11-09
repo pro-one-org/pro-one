@@ -77,6 +77,10 @@ python -B scripts/run_evaluations.py --fixture va-small-claims-ordinary-user-fix
 The CLI supports all/workflow/fixture selection and JSON reports, with nonzero exit on required failure. CI needs no credentials or live model. `scripts/benchmark_models.py` reuses one assembled fixture package across configured adapters, reports absent providers, and exposes latency, usage, exact draft hashes, and ten non-authoritative manual semantic dimensions. Optional manual scores must match workflow/fixture/provider/model/hash and cannot override deterministic rejection or grant release approval.
 ## Live conversational acceptance
 
+For the first high-quality OpenAI benchmark, the November 9, 2026 documentation check selects `gpt-6-astra` as the candidate. The [official model page](https://developers.openai.com/api/docs/models/gpt-6-astra) identifies it as the most capable general model and lists Responses API and Structured Outputs support. Pro-One already uses Responses with strict JSON-schema output and `store: false`; deterministic local validation remains mandatory. This is a documented compatibility selection, not proof of account access, successful execution or legal quality. No OpenAI credential was available during selection. Check account access and a bounded real request before running the acceptance scenarios; do not silently substitute a different model if access fails.
+
+Set `PRO_ONE_MODEL_PROVIDER=openai` and `PRO_ONE_MODEL=gpt-6-astra` only in the acceptance process or server configuration. Supply `OPENAI_API_KEY` through the approved secret/environment mechanism. Never put a credential in commands, reports, model inputs or Git. Recheck the official model documentation when repeating this benchmark later.
+
 Use a development environment with an authorized OpenAI or Anthropic credential, `PRO_ONE_MODEL_PROVIDER` set explicitly to the provider, and `PRO_ONE_MODEL` set to the model to evaluate. Set `PRO_ONE_CORPUS_PATH` to a locally built corpus for case-law acceptance. The runner disables live authority requests to isolate model behavior and runs one synthetic conversation per invocation. Provider calls may incur charges.
 
 ```text
