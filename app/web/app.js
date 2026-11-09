@@ -162,11 +162,13 @@ async function send(event) {
         box.append(p);
       }
       sourcePanel(data.response.sources, prefix);
-      const limits = el("details");
-      limits.append(el("summary", "Source limits and important notices"));
-      for (const warning of data.response.warnings)
-        limits.append(el("p", warning));
-      box.append(limits);
+      if (data.response.warnings.length) {
+        const limits = el("details");
+        limits.append(el("summary", "Source limits and important notices"));
+        for (const warning of data.response.warnings)
+          limits.append(el("p", warning));
+        box.append(limits);
+      }
       const chips = el("div", undefined, "chips");
       for (const text of data.followups || []) {
         const b = el("button", text);
