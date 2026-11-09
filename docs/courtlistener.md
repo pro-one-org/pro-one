@@ -64,6 +64,8 @@ python -B scripts/courtlistener_corpus.py --database .local/courtlistener.sqlite
 
 Identifiers in the last two commands are placeholders for authorized existing archive records. The CLI reports safe errors and Retry-After seconds; it never sleeps through a throttle. Re-run an ingestion with the same legal scope and `--resume`. Checkpoints retain completed clusters and the validated cursor, including partial-page progress. A different scope gets a different checkpoint. Request, page, document, byte and runtime caps apply across an operation. HTTPS uses a fixed host, no redirects/proxies, bounded socket deadlines and bounded streaming reads. Only same-endpoint, unchanged-scope continuation URLs can yield cursor tokens. 401/403, 404, HTTP/per-citation 429 and malformed data fail safely without raw error bodies.
 
+Completing a search page advances its cursor even when earlier pages left the operation checkpointed. Hitting the case limit at a page boundary saves the next cursor and returns before requesting that next page. A resumed completed operation returns without an API request.
+
 ```text
 python -B scripts/courtlistener_corpus.py --database .local/bulk.sqlite3 bulk --courts courts.csv.bz2 --dockets dockets.csv.bz2 --clusters clusters.csv.bz2 --opinions opinions.csv.bz2 --citations citations.csv.bz2 --opinions-cited opinions-cited.csv.bz2 --max-rows 10000 --max-clusters 1000
 python -B scripts/build_capability.py --jurisdiction Virginia --legal-area torts --topic premises_liability --provider courtlistener_corpus --corpus-path .local/bulk.sqlite3 --output .local/proposed-review

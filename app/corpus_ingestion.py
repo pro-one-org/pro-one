@@ -41,11 +41,13 @@ class CourtListenerCorpusBuilder:
             remaining = min(r["remaining"] for r in usage["limits"] if r["scope"] == "user")
             self.client.budget.max_requests = min(self.client.budget.max_requests, self.client.budget.requests + remaining)
             for matches, next_cursor in self.client.search_pages(query, courts, mode=mode, date_from=date_from, date_to=date_to, cursor=state["cursor"]):
+                page_limit_reached = False
                 for hit in matches:
                     if hit["cluster"] in state["completed"]:
                         continue
                     if report["downloaded_clusters"] >= max_results:
                         report["status"] = "checkpointed"
+                        page_limit_reached = True
                         break
                     bundle = self.client.hydrate(hit["cluster"])
                     if bundle.court.state != jurisdiction or bundle.court.id not in courts:
@@ -61,12 +63,14 @@ class CourtListenerCorpusBuilder:
                         self.store.save_verification(resolution)
                     state["completed"].append(bundle.cluster.id)
                     self.store.checkpoint(key, state)
-                if report["status"] == "checkpointed":
+                if page_limit_reached:
                     break
                 state["cursor"], state["done"] = next_cursor, next_cursor is None
                 self.store.checkpoint(key, state)
                 if not state["done"]:
                     report["status"] = "checkpointed"
+                if report["downloaded_clusters"] >= max_results:
+                    break
             if state["done"]:
                 report["status"] = "completed"
         except CourtListenerError as error:

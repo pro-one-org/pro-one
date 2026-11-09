@@ -407,12 +407,51 @@ class CourtListenerTests(unittest.TestCase):
         self.assertEqual(1, second["downloaded_clusters"])
         self.assertEqual(2, self.store.stats()["clusters"])
 
+    def test_ingestion_advances_checkpoint_after_second_page(self):
+        original = self.transport.request
+
+        def request(method, path, headers, body, timeout, max_bytes):
+            status, response_headers, content = original(method, path, headers, body, timeout, max_bytes)
+            parsed = urlsplit(path)
+            if parsed.path.endswith("/search/"):
+                params = parse_qs(parsed.query)
+                page = 1 if "cursor" in params else 0
+                bundle = self.bundles[page]
+                content = json.dumps({"results": [{"cluster_id": bundle.cluster.id, "court_id": "va",
+                                                   "caseName": bundle.cluster.name}],
+                                      "next": API_BASE + "search/?" + parsed.query + "&cursor=page2" if page == 0 else None}).encode()
+            return status, response_headers, content
+
+        with patch.object(self.transport, "request", side_effect=request):
+            first = CourtListenerCorpusBuilder(self.client, self.store).ingest(
+                "notice", ["va"], jurisdiction="Virginia", max_results=10)
+            self.assertEqual(2, first["downloaded_clusters"])
+            self.assertEqual("completed", first["status"])
+            checkpoint = self.store.checkpoint(first["checkpoint"])
+            self.assertTrue(checkpoint["done"])
+            calls = len(self.transport.calls)
+            resumed = CourtListenerCorpusBuilder(self.client, self.store).ingest(
+                "notice", ["va"], jurisdiction="Virginia", max_results=10, resume=True)
+            self.assertEqual("already_completed", resumed["status"])
+            self.assertEqual(calls, len(self.transport.calls))
+
     def test_throttle_checkpoint_keeps_safe_error(self):
         self.transport.status = 429
         result = CourtListenerCorpusBuilder(self.client, self.store).ingest("notice", ["va"], jurisdiction="Virginia")
         self.assertEqual(["throttled"], result["errors"])
         self.assertEqual(9, result["retry_after_seconds"])
         self.assertNotIn("private", json.dumps(result))
+
+    def test_ingestion_stops_before_fetching_page_beyond_case_limit(self):
+        def pages(*args, **kwargs):
+            yield [{"cluster": self.bundles[0].cluster.id}], "page2"
+            raise AssertionError("case limit must stop before the next search request")
+
+        with patch.object(self.client, "search_pages", side_effect=pages):
+            report = CourtListenerCorpusBuilder(self.client, self.store).ingest(
+                "notice", ["va"], jurisdiction="Virginia", max_results=1)
+        self.assertEqual("checkpointed", report["status"])
+        self.assertEqual("page2", self.store.checkpoint(report["checkpoint"])["cursor"])
 
     def test_bulk_streaming_compressed_joins(self):
         importer = CourtListenerBulkImporter(self.store)
