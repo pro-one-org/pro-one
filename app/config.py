@@ -28,6 +28,7 @@ class Settings:
     authority_network: str = ""
     corpus_path: str = ""
     conversation_signing_key: bytes | None = field(default=None, repr=False)
+    openai_extraction_model: str = ""
 
     @property
     def courtlistener_enabled(self):
@@ -49,7 +50,8 @@ class Settings:
         if state_key and not re.fullmatch(r"[0-9a-fA-F]{64}", state_key):
             raise RuntimeError("Invalid PRO_ONE_CONVERSATION_SIGNING_KEY; expected 64 hexadecimal characters.")
         return cls(mode, provider, model, os.environ.get("PRO_ONE_OPENAI_MODEL", ""), os.environ.get("PRO_ONE_ANTHROPIC_MODEL", ""), authority,
-                   os.environ.get("PRO_ONE_CORPUS_PATH", ""), bytes.fromhex(state_key) if state_key else None)
+                   os.environ.get("PRO_ONE_CORPUS_PATH", ""), bytes.fromhex(state_key) if state_key else None,
+                   os.environ.get("PRO_ONE_OPENAI_EXTRACTION_MODEL", ""))
 
     def registry(self, environment=None) -> ProviderRegistry:
         env = os.environ if environment is None else environment
@@ -61,6 +63,8 @@ class Settings:
             ("anthropic", AnthropicProvider, "ANTHROPIC_API_KEY", self.anthropic_model),
         ):
             models = {m for m in (model, self.model if self.provider == provider else "") if m}
+            if provider == "openai" and self.provider == "openai" and self.openai_extraction_model:
+                models.add(self.openai_extraction_model)
             if models and env.get(key_name):
                 registry.register(provider, adapter(env[key_name]), models)
         return registry

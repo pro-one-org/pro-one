@@ -154,6 +154,50 @@ class AssistantTests(unittest.TestCase):
         self.assertIn('/assistant/message',js);self.assertNotIn('localStorage',js);self.assertNotIn('innerHTML',js)
 
 class ExtractionTests(unittest.TestCase):
+    def test_openai_extraction_routes_separately_without_escalation(self):
+        from app.models.testing import valid_draft
+        calls = []
+
+        class Adapter:
+            def generate(self, request):
+                purpose = request.metadata.get("purpose")
+                calls.append((purpose, request.model))
+                if purpose == "matter_extraction":
+                    output = {"fields": [
+                        {"name": "state", "value": "Virginia", "provenance": "user_explicit", "evidence": "Virginia"},
+                        {"name": "legal_area", "value": "torts", "provenance": "inferred", "evidence": ""},
+                        {"name": "legal_topics", "value": "premises_liability", "provenance": "inferred", "evidence": ""},
+                    ], "unsupported": False}
+                elif purpose == "claim_proposal":
+                    output = {"claims": []}
+                else:
+                    output = valid_draft(request)
+                return ModelResponse(request.provider, request.model, True, output)
+
+        settings = Settings(provider="openai", model="gpt-6.1-sol", openai_extraction_model="gpt-6-luna")
+        with patch.dict(os.environ, {"PRO_ONE_MODEL_PROVIDER": "openai", "PRO_ONE_MODEL": settings.model,
+                                    "PRO_ONE_OPENAI_EXTRACTION_MODEL": settings.openai_extraction_model}, clear=True):
+            self.assertEqual(settings.openai_extraction_model, Settings.from_environment().openai_extraction_model)
+        configured = settings.registry({"OPENAI_API_KEY": "synthetic-fixture-key"}).configured_models()
+        self.assertEqual(["gpt-6-luna", "gpt-6.1-sol"], configured["openai"])
+        registry = ProviderRegistry()
+        observer = accept_research_model.ObservedProvider(Adapter())
+        registry.register("openai", observer, set(configured["openai"]))
+        assistant = AssistantService(main.repository, settings, GenerationService(registry))
+        answer = assistant.message(AssistantRequest(message="What is premises liability in Virginia?"))
+        self.assertEqual("answered", answer["status"])
+        self.assertIn(("matter_extraction", "gpt-6-luna"), calls)
+        self.assertTrue(any(purpose != "matter_extraction" for purpose, _ in calls))
+        self.assertTrue(all(model == "gpt-6.1-sol" for purpose, model in calls if purpose != "matter_extraction"))
+        self.assertEqual([model for _, model in calls], [call["model"] for call in observer.calls])
+        calls.clear()
+        unavailable = ProviderRegistry()
+        unavailable.register("openai", Adapter(), {settings.model})
+        result = AssistantService(main.repository, settings, GenerationService(unavailable)).message(
+            AssistantRequest(message="What is premises liability in Virginia?"))
+        self.assertEqual("provider_unavailable", result["status"])
+        self.assertEqual([], calls)
+
     def extract(self,output):
         class Adapter:
             def generate(self,request):
@@ -191,7 +235,8 @@ class ExtractionTests(unittest.TestCase):
     def test_conversation_review_binds_saved_turn_and_records_refusal(self):
         from app.benchmark import DIMENSIONS
         from scripts.accept_research_model import ConversationReview, apply_review, turn_hash
-        turn = {"status": "no_authoritative_support", "checks_passed": False}
+        turn = {"status": "no_authoritative_support", "checks_passed": False,
+                "calls": [{"stage": "matter-candidates-v3", "provider": "mock", "model": "extraction-fixture"}]}
         report = {"scenario": "contract_breach", "scenario_hash": "fixture-scenario-hash",
                   "provider": "mock", "model": "fixture", "turns": [turn]}
         raw_review = {"scenario": report["scenario"], "scenario_hash": report["scenario_hash"],
@@ -203,6 +248,10 @@ class ExtractionTests(unittest.TestCase):
         self.assertEqual(1, result["manual_measurements"]["false_rejections"])
         self.assertFalse(result["manual_measurements"]["release_approved"])
         self.assertNotIn("manual_review", report["turns"][0])
+        report["turns"][0]["calls"][0]["model"] = "changed-extraction-model"
+        with self.assertRaisesRegex(ValueError, "review_turn_hash_mismatch"):
+            apply_review(report, review)
+        report["turns"][0]["calls"][0]["model"] = "extraction-fixture"
         report["turns"][0]["status"] = "answered"
         with self.assertRaisesRegex(ValueError, "review_turn_hash_mismatch"):
             apply_review(report, review)

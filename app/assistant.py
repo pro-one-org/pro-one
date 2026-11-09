@@ -169,10 +169,11 @@ class AssistantService:
                     return reply("offline_demo_only", "Live AI is not configured. The offline demo can exercise known example matters only.")
             else:
                 try:
+                    extraction_model = self.settings.openai_extraction_model if provider == "openai" else ""
                     extracted = MatterExtractionService(self.generation.registry).extract(
                         message, request.document_text,
                         {"workflows": self.catalog, "capabilities": [{k: c[k] for k in ("title", "jurisdiction", "legal_area", "topics")} for c in self.repository.records["legal_capabilities"].values()]},
-                        {"facts": state["facts"], "research": state.get("research", {})}, provider, model)
+                        {"facts": state["facts"], "research": state.get("research", {})}, provider, extraction_model or model)
                 except ExtractionUnavailable:
                     return reply("provider_unavailable", "I couldn't interpret that message safely. Please try again.")
                 if extracted.unsupported:

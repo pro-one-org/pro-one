@@ -119,6 +119,8 @@ class ConversationReview(BaseModel):
 
 def turn_hash(turn):
     identity = {key: turn.get(key) for key in ("status", "render_sha256")}
+    identity["routing"] = [{key: call.get(key) for key in ("stage", "provider", "model")}
+                           for call in turn.get("calls", [])]
     return hashlib.sha256(json.dumps(identity, sort_keys=True).encode()).hexdigest()
 
 
@@ -170,6 +172,7 @@ class ObservedProvider:
         started = time.perf_counter()
         response = self.adapter.generate(request)
         self.calls.append({"stage": request.instruction_version, "provider_success": response.success,
+                           "provider": request.provider, "model": request.model,
                            "elapsed_ms": round(1000 * (time.perf_counter() - started), 2)})
         return response
 
@@ -251,13 +254,14 @@ def main():
         config = GenerationConfig(provider=settings.provider, model=settings.model)
         if settings.mode != "development" or config.provider not in {"openai", "anthropic"}:
             raise ProviderConfigurationError("explicit_live_development_provider_required")
-        adapter = settings.registry().resolve(config.provider, config.model)
+        configured_registry = settings.registry()
+        adapter = configured_registry.resolve(config.provider, config.model)
     except (RuntimeError, ValueError):
         print(json.dumps({"status": "unavailable", "reason": "configure_live_development_model", "model_calls": 0}))
         return 2
     observer = ObservedProvider(adapter)
     registry = ProviderRegistry()
-    registry.register(config.provider, observer, {config.model})
+    registry.register(config.provider, observer, set(configured_registry.configured_models()[config.provider]))
     # Isolate model behavior from live authority quota. Operators may supply a local corpus.
     assistant = AssistantService(RecordRepository(), replace(settings, authority_network=""), GenerationService(registry))
     turns = run(args.scenario, assistant, observer, args.include_rendered)
