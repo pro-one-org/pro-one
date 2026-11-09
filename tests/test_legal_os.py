@@ -22,6 +22,7 @@ from app.config import Settings
 from app.generation import GenerationService
 from app.generation_contract import build_model_request
 from app.legal_research import GeneralLegalResearchService
+from app.knowledge_proposals import propose_knowledge
 from app.models.base import GenerationConfig, ModelResponse
 from app.models.registry import ProviderRegistry
 from app.models.testing import TEST_MODEL, testing_registry, valid_draft
@@ -228,6 +229,39 @@ class CompilerTests(unittest.TestCase):
         passages = {p["id"]: p for p in bundle["source_passages"]}
         for rule in bundle["legal_rules"]:
             self.assertEqual(rule["rule_statement"]["canonical_statement"], passages[rule["source_passage_ids"][0]]["text"])
+
+    def test_knowledge_proposals_are_bound_and_cannot_promote_rules(self):
+        bundle = self.compile()
+        ids = [p["id"] for p in bundle["source_passages"][:2]]
+        candidate = {"kind": "concept", "statement": "Candidate concept for review.",
+                     "supporting_passage_ids": ids, "qualifying_passage_ids": [], "conflicting_passage_ids": []}
+        adapter = Mock()
+        registry = ProviderRegistry()
+        registry.register("mock", adapter, {"test"})
+        config = GenerationConfig(provider="mock", model="test")
+        for alteration in ({}, {"supporting_passage_ids": ["invented"]}, {"approved": True}):
+            with self.subTest(alteration=alteration):
+                adapter.generate.return_value = ModelResponse("mock", "test", True, {"candidates": [{**candidate, **alteration}]})
+                result = propose_knowledge(bundle, registry, config)
+                self.assertEqual(bundle["legal_rules"], result["legal_rules"])
+                self.assertNotIn("knowledge_candidates", bundle)
+                if alteration:
+                    self.assertEqual([], result["knowledge_candidates"])
+                    self.assertEqual("unavailable", result["report"]["knowledge_proposal"]["status"])
+                else:
+                    proposal, = result["knowledge_candidates"]
+                    self.assertEqual("proposed", proposal["status"])
+                    self.assertEqual("pending", proposal["semantic_review"])
+                    self.assertFalse(proposal["user_facing_allowed"])
+                    self.assertEqual(ids, [e["passage_id"] for e in proposal["evidence"]])
+                    self.assertEqual(bundle["source_passages"][0]["verification"]["excerpt_hash"],
+                                     proposal["evidence"][0]["excerpt_hash"])
+        dissent_bundle = copy.deepcopy(bundle)
+        support_source = next(s for s in dissent_bundle["sources"]
+                              if s["id"] == dissent_bundle["source_passages"][0]["source_id"])
+        support_source.setdefault("case_metadata", {})["opinion_role"] = "dissent"
+        adapter.generate.return_value = ModelResponse("mock", "test", True, {"candidates": [candidate]})
+        self.assertEqual([], propose_knowledge(dissent_bundle, registry, config)["knowledge_candidates"])
 
     def test_missing_or_excessive_support_becomes_gap(self):
         for candidate in ({"statement": "Automatic liability", "source_passage_ids": []},

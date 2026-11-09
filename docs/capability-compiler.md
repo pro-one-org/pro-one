@@ -23,7 +23,15 @@ Default provider: `repository`, using actual curated authoritative excerpts offl
 7. Generate a capability and proposed evaluation fixtures, then validate schemas and typed graph relationships.
 8. Write `bundle.json` and `REVIEW.md` to a new directory outside canonical data. Never promote records, rewrite Git or commit.
 
-All records remain proposed, all review identities/dates/versions remain null, and currentness is unresolved. Exact text linkage establishes occurrence in collected evidence, not legal applicability or holding status. Generated rule `user_facing_allowed` stays false. Future LLM extraction must remain candidate data and satisfy this boundary or introduce a stronger reviewed entailment mechanism.
+All records remain proposed, all review identities/dates/versions remain null, and currentness is unresolved. Exact text linkage establishes occurrence in collected evidence, not legal applicability or holding status. Generated rule `user_facing_allowed` stays false.
+
+## Optional knowledge proposals
+
+Add `--propose-knowledge` with an explicitly configured OpenAI or Anthropic provider and model to request one bounded model call. The call may incur charges. This step proposes concepts, definitions, elements, tests, exceptions, qualifications, defenses, procedures, cross-references, conflicts, authority relationships and support gaps. It can link multiple passages to one proposed statement.
+
+The compiler stores these interpretations in `knowledge_candidates` alongside the exact-text bundle. Each candidate carries its evidence IDs, excerpt hashes, source versions, locators, opinion roles, model identity and instruction version. Unknown evidence, malformed output and attempts to add approval fields reject the proposal batch. Dissent and other non-majority support is restricted to qualification, conflict, gap and authority-relationship candidates.
+
+Every knowledge candidate has pending semantic review, unresolved currentness, unknown treatment and `user_facing_allowed=false`. The model's statements require review against the linked passages. The existing exact-text legal rules are preserved. Proposal failures retain the original compiler artifacts, report an unavailable status and produce CLI exit code 2. Authenticated model quality remains unverified until live acceptance is performed.
 
 ## Review and refresh
 
