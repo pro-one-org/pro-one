@@ -15,7 +15,8 @@ from pydantic import ValidationError
 from app import main
 from app.assistant import AssistantRequest, AssistantService
 from app.authority import (AuthorityDocument, AuthorityUnavailable, BoundedAuthorityTransport,
-                           RepositoryAuthorityProvider, VirginiaOfficialProvider, digest)
+                           RepositoryAuthorityProvider, VirginiaOfficialProvider, VIRGINIA_RULE_EXCERPT,
+                           VIRGINIA_RULE_PAGE, VIRGINIA_RULES_URL, digest)
 from app.capabilities import CapabilityResolutionService, ResearchMatter
 from app.capability_compiler import CapabilityCompiler
 from app.config import Settings
@@ -380,6 +381,20 @@ class AuthorityProviderTests(unittest.TestCase):
         self.assertEqual([], bundle["legal_rules"])
         self.assertFalse(bundle["report"]["public_execution"])
         self.assertIsNone(self.repo.get("sources", "va-filak-george"))
+
+    def test_official_rule_extracts_only_verified_page_and_rejects_moved_heading(self):
+        target = Mock(extract_text=Mock(return_value="Rule 3:20. Motion for Summary Judgment. " + VIRGINIA_RULE_EXCERPT))
+        other = Mock()
+        reader = Mock(is_encrypted=False, pages=[other] * VIRGINIA_RULE_PAGE + [target])
+        provider = VirginiaOfficialProvider(self.repo, Mock(get=Mock(return_value=(b"%PDF-fixture", "application/pdf"))))
+        with patch("pypdf.PdfReader", return_value=reader):
+            document = provider.fetch("va-rule-3-20")
+            self.assertEqual("court_rule", document.source["source_type"])
+            self.assertEqual(VIRGINIA_RULE_EXCERPT, document.passages[0]["text"])
+            other.extract_text.assert_not_called()
+            target.extract_text.return_value = "Rule 3:21. This fixture represents a shifted page."
+            with self.assertRaisesRegex(AuthorityUnavailable, "authority_parse_failed"):
+                provider.fetch("va-rule-3-20")
 
     def test_parser_and_http_failures_are_closed(self):
         for value in ((b"not pdf", "application/pdf"), (b"%PDF-bad", "text/html")):

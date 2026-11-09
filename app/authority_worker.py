@@ -8,8 +8,11 @@ from dataclasses import asdict
 def main():
     if sys.platform != "win32":
         import resource
-        resource.setrlimit(resource.RLIMIT_AS, (256 * 1024 * 1024, 256 * 1024 * 1024))
-        resource.setrlimit(resource.RLIMIT_CPU, (5, 5))
+        rule_source = len(sys.argv) > 1 and sys.argv[1] == "va-rule-3-20"
+        memory = (512 if rule_source else 256) * 1024 * 1024
+        cpu = 10 if rule_source else 5
+        resource.setrlimit(resource.RLIMIT_AS, (memory, memory))
+        resource.setrlimit(resource.RLIMIT_CPU, (cpu, cpu))
     from app.authority import VirginiaOfficialProvider, BoundedAuthorityTransport
     from app.repository import RecordRepository
     try:

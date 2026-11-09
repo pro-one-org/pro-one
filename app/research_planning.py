@@ -19,6 +19,7 @@ RESEARCH_TOPICS = {
     },
     "civil_procedure": {
         "civil_procedure": ("civil procedure summary judgment",),
+        "summary_judgment": ("summary judgment material fact dispute motion",),
         "limitations": ("personal injury limitations accrual tolling",),
     },
     "contracts": {

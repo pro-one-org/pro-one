@@ -128,6 +128,11 @@ OFFICIAL_COMPILER_CASES = {
     },
 }
 OFFICIAL_CATALOG.update({sid: (case["url"], "pdf") for sid, case in OFFICIAL_COMPILER_CASES.items()})
+VIRGINIA_RULE_SOURCE = "va-rule-3-20"
+VIRGINIA_RULES_URL = "https://www.vacourts.gov/static/courts/scv/rulesofcourt.pdf"
+VIRGINIA_RULE_PAGE = 202
+VIRGINIA_RULE_EXCERPT = "Summary judgment may not be entered if any material fact is genuinely in dispute."
+OFFICIAL_CATALOG[VIRGINIA_RULE_SOURCE] = (VIRGINIA_RULES_URL, "pdf")
 
 
 class OfficialSectionParser(HTMLParser):
@@ -155,15 +160,16 @@ class BoundedAuthorityTransport:
         if url not in {item[0] for item in OFFICIAL_CATALOG.values()}:
             raise AuthorityUnavailable("endpoint_not_allowed")
         try:
+            max_bytes = 16 * 1024 * 1024 if url == VIRGINIA_RULES_URL else self.MAX_BYTES
             # Disable ambient proxies, redirects, compression and credential headers.
             with build_opener(ProxyHandler({}), NoRedirect()).open(
                 Request(url, headers={"User-Agent": "Pro-One-Research/0.2", "Accept-Encoding": "identity"}), timeout=8
             ) as response:
                 if response.status != 200 or response.headers.get("Content-Encoding", "identity") != "identity":
                     raise AuthorityUnavailable("unexpected_authority_response")
-                body = response.read(self.MAX_BYTES + 1)
+                body = response.read(max_bytes + 1)
                 kind = response.headers.get_content_type()
-            if len(body) > self.MAX_BYTES:
+            if len(body) > max_bytes:
                 raise AuthorityUnavailable("authority_response_limit")
             return body, kind
         except Exception:
@@ -185,6 +191,24 @@ class VirginiaOfficialProvider:
                 and set(matter.topics) & set(self.source_metadata(sid)["workflow_fit"]["topics"])][:min(limit, 3)]
 
     def source_metadata(self, source_id):
+        if source_id == VIRGINIA_RULE_SOURCE:
+            source = deepcopy(self.repository.get("sources", "va-personal-injury-limitations"))
+            source.update(id=source_id, title="Virginia Rule 3:20 — Motion for Summary Judgment",
+                          source_type="court_rule", url=VIRGINIA_RULES_URL, legal_areas=["civil_procedure"],
+                          status="proposed", review=proposed_review(), last_modified=date.today().isoformat())
+            source.pop("enactment_metadata", None)
+            source.pop("public_currentness", None)
+            source["authority"]["issuing_body"] = "Supreme Court of Virginia"
+            source["authority"]["authority_notes"] = "Official Rule 3:20 page from the consolidated rules PDF. Content hash covers the selected normalized page."
+            source["dates"] = {"published": None, "effective_from": None, "effective_through": None,
+                               "last_updated": None, "last_verified": None}
+            source["provenance"] = {"source_content_version": "pending_rule_page_fetch", "content_hash": None,
+                                    "superseded_by_source_id": None}
+            source["citation"] = {"preferred_citation": "Va. Sup. Ct. R. 3:20", "retrieved_at": None}
+            source["workflow_fit"] = {"topics": ["civil_procedure", "summary_judgment"], "workflow_ids": [],
+                                      "risk_level": "high", "limitations": ["Applicability and currentness require review."]}
+            source["access"]["format"] = "pdf"
+            return source
         if source_id not in OFFICIAL_COMPILER_CASES:
             return deepcopy(self.repository.get("sources", source_id))
         case = OFFICIAL_COMPILER_CASES[source_id]
@@ -214,7 +238,8 @@ class VirginiaOfficialProvider:
             import sys
             try:
                 result = subprocess.run([sys.executable, "-B", "-m", "app.authority_worker", source_id],
-                                        stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, timeout=12, check=False)
+                                        stdout=subprocess.PIPE, stderr=subprocess.DEVNULL,
+                                        timeout=30 if source_id == VIRGINIA_RULE_SOURCE else 12, check=False)
                 if result.returncode or len(result.stdout) > 512000:
                     raise ValueError()
                 value = json.loads(result.stdout)
@@ -232,9 +257,16 @@ class VirginiaOfficialProvider:
                     raise ValueError()
                 from pypdf import PdfReader
                 reader = PdfReader(BytesIO(body))
-                if reader.is_encrypted or len(reader.pages) > 20:
+                rule_source = source_id == VIRGINIA_RULE_SOURCE
+                if reader.is_encrypted or len(reader.pages) > (800 if rule_source else 20):
                     raise ValueError()
-                text = normalized_source(" ".join(p.extract_text() or "" for p in reader.pages))
+                if rule_source:
+                    text = normalized_source(reader.pages[VIRGINIA_RULE_PAGE].extract_text() or "")
+                    if ("Rule 3:20." not in text or "Motion for Summary Judgment." not in text
+                            or "Rule 3:21." in text or VIRGINIA_RULE_EXCERPT not in text):
+                        raise ValueError()
+                else:
+                    text = normalized_source(" ".join(p.extract_text() or "" for p in reader.pages))
             else:
                 if media != "text/html":
                     raise ValueError()
@@ -253,6 +285,12 @@ class VirginiaOfficialProvider:
         # Verified minimal excerpts are checked against the newly fetched text.
         # Changed/missing wording is a gap, never silently substituted as law.
         passages = []
+        if source_id == VIRGINIA_RULE_SOURCE:
+            passage = evidence_passage(source, VIRGINIA_RULE_EXCERPT,
+                                       f"Rule 3:20, PDF page {VIRGINIA_RULE_PAGE + 1}",
+                                       ["civil_procedure", "summary_judgment"])
+            passage["limitations"].append("Read the complete rule for procedure, exceptions and permitted materials. No ruling on the user's motion is made.")
+            passages.append(passage)
         for existing in self.repository.records["source_passages"].values():
             if existing["source_id"] == source_id and normalized_source(existing["text"]) in text:
                 passage = deepcopy(existing)

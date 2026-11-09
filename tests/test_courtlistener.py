@@ -17,7 +17,7 @@ from urllib.parse import parse_qs, urlsplit
 from fastapi.testclient import TestClient
 
 from app import main
-from app.authority import AuthorityUnavailable, VirginiaOfficialProvider, digest
+from app.authority import AuthorityUnavailable, VirginiaOfficialProvider, VIRGINIA_RULE_EXCERPT, VIRGINIA_RULE_PAGE, digest
 from app.capabilities import ResearchMatter
 from app.capability_compiler import CapabilityCompiler
 from app.citation_research import CitationResearchRequest, resolve_citation
@@ -802,6 +802,27 @@ class CourtListenerTests(unittest.TestCase):
         package = service.assemble(self.matter)["package"]
         self.assertIn("statute", {s["source_type"] for s in package["grounding"]["sources"]})
         self.assertTrue(any(s.get("external_identifiers") for s in package["grounding"]["sources"]))
+
+    def test_general_research_combines_case_and_official_rule(self):
+        case = deepcopy(self.bundles[0])
+        case.opinions[0] = Opinion.normalize({
+            "id": case.opinions[0].id, "cluster": case.cluster.id, "type": "020lead",
+            "plain_text": "Synthetic fixture reasoning discusses a motion for summary judgment and disputed material facts."})
+        self.store.ingest(case)
+        self.store.save_verification({"citation": case.cluster.citations[0], "cluster": case.cluster.id,
+                                      "name": case.cluster.name, "origin": "fixture"})
+        page = Mock(extract_text=Mock(return_value="Rule 3:20. Motion for Summary Judgment. " + VIRGINIA_RULE_EXCERPT))
+        reader = Mock(is_encrypted=False, pages=[Mock()] * VIRGINIA_RULE_PAGE + [page])
+        official = VirginiaOfficialProvider(self.repository, Mock(get=Mock(return_value=(b"%PDF-fixture", "application/pdf"))))
+        matter = self.matter.model_copy(update={"legal_area": "civil_procedure", "topics": ["summary_judgment"]})
+        with patch("pypdf.PdfReader", return_value=reader):
+            package = GeneralLegalResearchService(
+                self.repository, providers=[official, LocalCorpusAuthorityProvider(self.store)]
+            ).assemble(matter)["package"]
+        self.assertTrue({"court_opinion", "court_rule"} <= {s["source_type"] for s in package["grounding"]["sources"]})
+        self.assertIn("va-rule-3-20", {c["source_id"] for c in package["response_plan"]["citations"]})
+        self.assertIsNone(package["workflow_id"])
+        self.assertFalse(package["public_execution"]["allowed"])
 
     def test_corpus_storage_failure_degrades_evidence_and_citation_endpoints(self):
         matter = self.matter.model_dump()

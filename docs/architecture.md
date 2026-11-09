@@ -47,7 +47,7 @@ Conversation state is signed and bounded to 30 turns. It includes structured con
 | Provider | Sources and access | Bounds and limitations |
 |---|---|---|
 | `repository` | Actual curated official primary/secondary passages; offline, no account | Exact jurisdiction/topic discovery; bounded collection, not comprehensive research |
-| `virginia_official` | Fixed catalog with five Virginia Supreme Court opinions and one official Code section; three opinions supply unclassified compiler inputs; optional, free, no key | 2 MB body, 200,000-character text, 20 PDF pages, eight-second socket timeout and twelve-second worker deadline; changed excerpts withheld |
+| `virginia_official` | Fixed catalog with five Virginia Supreme Court opinions, one official Code section and Rule 3:20; three opinions supply unclassified compiler inputs; optional, free, no key | Standard sources use a 2 MB body and 20-page limit. The consolidated-rules source uses 16 MB/800 pages, extracts one fixed page and has a 30-second worker deadline. Changed excerpts or rule headings are withheld. |
 | `courtlistener` / local corpus | REST v4 discovery and separate Court/Docket/Cluster/Opinion hydration, citation lookup; SQLite/FTS cache and bulk import | Server token; fixed endpoints, operation budgets, exact jurisdiction, preserved opinion roles; external records remain unreviewed |
 
 `PRO_ONE_AUTHORITY_NETWORK=virginia_official` explicitly enables the official adapter. Use `courtlistener,virginia_official` to enable both network providers. The official adapter uses fixed URLs, credential-free requests and a bounded child process for network access and parsing. Linux additionally limits worker memory and CPU. The worker uses a wall deadline on Windows.
