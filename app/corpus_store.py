@@ -5,10 +5,14 @@ bulk snapshots and a future replication source share the same write boundary.
 """
 
 from datetime import datetime, timezone, timedelta
+from contextlib import closing
 import json
+import os
 from pathlib import Path
 import re
 import sqlite3
+import tempfile
+import time
 from typing import Protocol
 
 from pydantic import ValidationError
@@ -110,6 +114,35 @@ class SQLiteCorpusStore:
 
     def __exit__(self, *args):
         self.close()
+
+    def backup(self, destination, *, max_seconds=30):
+        destination = Path(destination).absolute()
+        if not 1 <= max_seconds <= 300 or self.connection.in_transaction:
+            raise ValueError("backup_budget_or_transaction_invalid")
+        if destination.exists() or (self.path != ":memory:" and destination.resolve() == Path(self.path).resolve()):
+            raise ValueError("backup_destination_exists")
+        deadline = time.monotonic() + max_seconds
+
+        def progress(*_):
+            if time.monotonic() >= deadline:
+                raise ValueError("backup_runtime_limit")
+
+        descriptor, filename = tempfile.mkstemp(prefix=".pro-one-backup-", suffix=".sqlite3", dir=destination.parent)
+        os.close(descriptor)
+        temporary = Path(filename)
+        try:
+            with closing(sqlite3.connect(temporary)) as target:
+                self.connection.backup(target, pages=128, progress=progress, sleep=0.05)
+                target.set_progress_handler(lambda: int(time.monotonic() >= deadline), 1000)
+                if target.execute("PRAGMA quick_check").fetchone()[0] != "ok":
+                    raise ValueError("backup_integrity_failed")
+            progress()
+            size = temporary.stat().st_size
+            # Same-directory publication is atomic and refuses an existing path.
+            os.link(temporary, destination)
+            return {"status": "backed_up", "bytes": size}
+        finally:
+            temporary.unlink(missing_ok=True)
 
     def ingest(self, bundle: CaseBundle):
         bundle.validate_relationships()

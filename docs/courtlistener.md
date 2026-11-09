@@ -66,6 +66,19 @@ Identifiers in the last two commands are placeholders for authorized existing ar
 
 Completing a search page advances its cursor even when earlier pages left the operation checkpointed. Hitting the case limit at a page boundary saves the next cursor and returns before requesting that next page. A resumed completed operation returns without an API request.
 
+## Corpus backup and restore
+
+Use SQLite's [online backup API](https://docs.python.org/3.12/library/sqlite3.html#sqlite3.Connection.backup) to capture a consistent database while other connections may be writing. The CLI accepts an existing source database and a new destination file in an existing directory.
+
+```text
+python -B scripts/courtlistener_corpus.py --database .local/courtlistener.sqlite3 backup .local/courtlistener-snapshot.sqlite3 --max-seconds 30
+python -B scripts/courtlistener_corpus.py --database .local/courtlistener-snapshot.sqlite3 stats
+```
+
+The operation checks the snapshot's integrity before publishing it and refuses to replace an existing path. It writes a temporary database in the destination directory and publishes it with a hard link, which requires filesystem support. Timeout or failure removes the temporary file. The runtime budget defaults to 30 seconds and supports up to 300 seconds. Backups include the corpus, provenance, citation graph, ingestion checkpoints and caches.
+
+To restore, stop the app and ingestion workers, select the snapshot as `PRO_ONE_CORPUS_PATH`, inspect its statistics and scoped searches, then restart the workers. Keep the original file until the restored instance has been checked. Existing schema migration runs when the store opens. Store backups outside Git alongside other corpus data.
+
 ```text
 python -B scripts/courtlistener_corpus.py --database .local/bulk.sqlite3 bulk --courts courts.csv.bz2 --dockets dockets.csv.bz2 --clusters clusters.csv.bz2 --opinions opinions.csv.bz2 --citations citations.csv.bz2 --opinions-cited opinions-cited.csv.bz2 --max-rows 10000 --max-clusters 1000
 python -B scripts/build_capability.py --jurisdiction Virginia --legal-area torts --topic premises_liability --provider courtlistener_corpus --corpus-path .local/bulk.sqlite3 --output .local/proposed-review

@@ -1,6 +1,7 @@
 """Offline v4 contract, corpus, synthesis and adversarial regression proof."""
 
 from copy import deepcopy
+from contextlib import closing
 import bz2
 import csv
 import io
@@ -398,6 +399,38 @@ class CourtListenerTests(unittest.TestCase):
                 store.ingest(self.bundles[0])
             with SQLiteCorpusStore(path) as store:
                 self.assertEqual(1, store.stats()["opinions"])
+
+    def test_online_backup_restores_corpus_and_preserves_existing_files(self):
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "source.sqlite3"
+            backup = Path(directory) / "snapshot.sqlite3"
+            with SQLiteCorpusStore(source) as store:
+                store.ingest(self.bundles[0])
+                store.add_edges([{"citing": self.bundles[0].opinions[0].id, "cited": 123, "depth": 4}])
+                with closing(sqlite3.connect(source)) as writer:
+                    writer.execute("INSERT INTO checkpoints VALUES('uncommitted','{}','fixture')")
+                    report = store.backup(backup)
+                    self.assertEqual("backed_up", report["status"])
+                    self.assertGreater(report["bytes"], 0)
+                    writer.commit()
+                self.assertEqual({}, store.checkpoint("uncommitted"))
+                original = backup.read_bytes()
+                with self.assertRaisesRegex(ValueError, "backup_destination_exists"):
+                    store.backup(backup)
+                self.assertEqual(original, backup.read_bytes())
+            with SQLiteCorpusStore(backup) as restored:
+                self.assertEqual(self.bundles[0].cluster.id, restored.search("notice", state="Virginia")[0]["cluster"])
+                self.assertIsNone(restored.checkpoint("uncommitted"))
+                self.assertEqual([123], restored.graph(self.bundles[0].opinions[0].id)["cited"])
+            self.assertEqual([], list(Path(directory).glob(".pro-one-backup-*")))
+
+    def test_backup_timeout_leaves_no_published_or_temporary_file(self):
+        with tempfile.TemporaryDirectory() as directory:
+            destination = Path(directory) / "snapshot.sqlite3"
+            with patch("app.corpus_store.time.monotonic", side_effect=[0, 31]):
+                with self.assertRaisesRegex(ValueError, "backup_runtime_limit"):
+                    self.store.backup(destination)
+            self.assertEqual([], list(Path(directory).iterdir()))
 
     def test_resume_skips_completed_clusters(self):
         first = CourtListenerCorpusBuilder(self.client, self.store).ingest("notice", ["va"], jurisdiction="Virginia", max_results=1)

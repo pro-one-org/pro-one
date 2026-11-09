@@ -7,7 +7,7 @@ from pathlib import Path
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from app.corpus_store import SQLiteCorpusStore
+from app.corpus_store import CORPUS_STORAGE_ERRORS, SQLiteCorpusStore
 from app.corpus_ingestion import CourtListenerCorpusBuilder, CourtListenerBulkImporter
 from app.courtlistener_client import CourtListenerClient, CourtListenerError, RequestBudget
 from app.research_planning import LegalResearchPlanner
@@ -19,6 +19,9 @@ def main(argv=None):
     parser.add_argument("--database", type=Path, default=Path(".local/courtlistener.sqlite3"))
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("stats")
+    backup = sub.add_parser("backup")
+    backup.add_argument("destination", type=Path, help="New backup file in an existing directory")
+    backup.add_argument("--max-seconds", type=int, default=30)
     search = sub.add_parser("search")
     search.add_argument("query")
     search.add_argument("--state", required=True)
@@ -54,6 +57,8 @@ def main(argv=None):
     recap.add_argument("--entry", required=True, type=int)
     args = parser.parse_args(argv)
     try:
+        if args.command == "backup" and not args.database.is_file():
+            raise ValueError("existing_corpus_required")
         if args.command in {"ingest", "refresh", "lookup", "read-recap"} and not os.environ.get("COURTLISTENER_API_TOKEN"):
             print(json.dumps({"status": "unavailable", "reason": "courtlistener_unconfigured", "requests": 0}))
             return 2
@@ -63,6 +68,8 @@ def main(argv=None):
                                      max_seconds=getattr(args, "max_seconds", 30), max_documents=100))
             if args.command == "stats":
                 result = store.stats()
+            elif args.command == "backup":
+                result = store.backup(args.destination, max_seconds=args.max_seconds)
             elif args.command == "search":
                 result = store.search(args.query, state=args.state, sovereign="state", limit=args.limit)
             elif args.command == "show":
@@ -96,7 +103,7 @@ def main(argv=None):
     except CourtListenerError as error:
         print(json.dumps({"status": "unavailable", "reason": error.code, "retry_after_seconds": error.retry_after}))
         return 2
-    except (ValueError, OSError):
+    except (ValueError, *CORPUS_STORAGE_ERRORS):
         print(json.dumps({"status": "unavailable", "reason": "invalid_corpus_input_or_storage"}))
         return 2
 
