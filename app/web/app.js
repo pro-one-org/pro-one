@@ -146,7 +146,9 @@ async function send(event) {
       for (const notice of data.response.notices)
         box.append(el("div", notice, "notice"));
       for (const s of data.response.sections) {
-        const p = el("p", s.text);
+        if (data.status === "document_inspected")
+          box.append(el("strong", s.heading));
+        const p = el(data.status === "document_inspected" && s.user_provided ? "blockquote" : "p", s.text);
         for (const number of s.citation_numbers) {
           const a = el("a", "[" + number + "]");
           a.href = "#" + prefix + number;

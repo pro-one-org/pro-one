@@ -1,6 +1,6 @@
 # MVP operation and release limits
 
-Pro-One is a usable local development beta for individuals representing themselves and small businesses handling matters themselves. The product flow is landing → audience → structured matter → deterministic routing → workflow confirmation → minimum intake/question → selected official evidence → configured provider → validation → readable answer and citations, or a clear stop.
+Pro-One is a local development system for source-grounded legal research and structured procedural help. Users can ask a question, describe facts or add a redacted document. The server identifies candidate matter information, selects a bounded source collection, assembles evidence and validates a proposed answer. Specialized workflows provide structured intake when appropriate. Private-beta acceptance remains pending.
 
 ## Current coverage
 
@@ -12,7 +12,7 @@ All real records and reviews remain proposed. Research checks on official pages 
 
 ## Modes and configuration
 
-Development mode permits proposed workflow inspection/generation through the clearly labeled offline test adapter or explicitly configured OpenAI/Anthropic adapters. The server owns provider/model allowlists and credentials; browser clients cannot provide keys. No provider fallback exists. Missing default configuration displays an unavailable choice; choosing the offline adapter requires an explicit selection.
+Development mode permits proposed research and workflow inspection through the clearly labeled offline test adapter or configured OpenAI/Anthropic adapters. The server owns provider/model allowlists and credentials. The consumer UI presents the question-and-document flow. Offline examples identify their fixture origin.
 
 Production mode omits the testing provider, suppresses development inspection endpoints, and refuses unapproved workflow generation before calling any model. Health, coverage, safe model status, routing, scope, and OpenAPI remain available. All current workflows fail the public gates. A functioning production container is not public beta approval.
 
@@ -22,11 +22,13 @@ Exact structured routing confirms specification fit only, never legal jurisdicti
 
 Only sanitized facts and selected evidence/constraints reach providers. Structured drafts must pass strict local validation; rendering revalidates and uses canonical citation metadata. Rejected text and private provider errors are never displayed. Controls include exact fact repetition, required rendered disclosures/limitations/notices, relationship checks, and supplementary prose guards. The guards do not establish arbitrary prose-level factual/legal correctness or perfect injection resistance.
 
-No accounts, database, sessions, chat history, prompt history, user profiling, tool-using model, live source retrieval, or automatic filing exists. Source links are navigation; Pro-One does not fetch generated URLs. Privacy filtering is category-key based and cannot identify every sensitive value placed in an otherwise allowed free-text question. Real providers have their own data-handling policies.
+The browser holds signed conversation state in memory with one-hour expiry. A separate SQLite corpus stores public legal material and provenance. Configured CourtListener and fixed official-source adapters can retrieve legal material. Host-level access controls and provider privacy review remain required. Privacy filtering has limited coverage for sensitive data in free text.
+
+Uploaded documents with recognizable headings have a separate development inspection path. It identifies a possible document type, states the uncertainty and displays a labeled excerpt of up to 600 characters. Allegations, advocacy, proposed orders and apparent orders retain their distinct caveats. The excerpt is user-provided text and receives no authority citation. Existing DC-402 and other recognized procedural intake remains available. This feature identifies cues and quotes text. It does not determine a document's legal effect.
 
 ## Evaluation and operation
 
-There are 28 fixture records: 24 mapped real-workflow fixtures (12 DC-402, six SCC, six Maryland) and four explicitly unmapped fictional examples. The runner supports all/workflow/fixture modes; required unmapped or stale fixtures fail. Declared automated checks remain separate from manual narrative expectations and release approval.
+The evaluation runner currently executes 37 mapped workflow and research fixtures, with four fictional fixtures unmapped. It supports all/workflow/fixture modes. Required unmapped or stale fixtures fail. Declared automated checks remain separate from manual narrative expectations and release approval.
 
 Cross-model benchmarking reuses the same assembled package across configured providers and reports status, deterministic validation, latency, usage, draft hashes, and pending/manual semantic dimensions. Manual scores are bound to exact drafts and cannot override deterministic rejection. No model judge grants approval. Standard CI uses no live credentials.
 

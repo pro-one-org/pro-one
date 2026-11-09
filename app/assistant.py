@@ -14,6 +14,7 @@ from app.matter_extraction import MatterExtractionService, ExtractionUnavailable
 from app.product import ProductService, ProductResponseRequest
 from app.routing import MatterRequest, MatterRoutingService, WorkflowCatalogService
 from app.capabilities import ResearchMatter
+from app.document_inspection import inspect_document_question
 from app.legal_research import GeneralLegalResearchService
 
 _STATE_KEY = secrets.token_bytes(32)
@@ -104,6 +105,11 @@ class AssistantService:
             return reply("unsupported", "This matter is outside the legal topics Pro-One currently covers. If a date is imminent, check the instructions from the court and seek qualified help promptly. I cannot provide an answer about this matter.")
         if self.settings.mode == "production":
             return reply("unavailable", "These legal topics are still under review and are not available for public use.")
+        inspection = inspect_document_question(message, request.document_text)
+        if inspection:
+            response = reply("document_inspected", "Here is what I can identify from the uploaded text.", inspection)
+            response.update(matter={}, needs_confirmation={}, followups=[])
+            return response
         provider, model = self.configuration()
         if model not in self.generation.registry.configured_models().get(provider, []):
             return reply("provider_unavailable", "Live AI is temporarily unavailable. Please try again later.")
