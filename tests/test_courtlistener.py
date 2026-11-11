@@ -682,19 +682,29 @@ class CourtListenerTests(unittest.TestCase):
 
     def synth(self, scenario):
         package = self.package()
+        if scenario == "missing_context":
+            package["grounding"]["passages"][0]["conflicts"] = ["Fixture qualification"]
+        required_context = package["grounding"]["passages"][0]["id"]
         base = DemoSynthesisProvider(package)
         class Adversary:
             def generate(inner, request):
                 response = base.generate(request)
                 data = deepcopy(response.output)
                 if request.metadata.get("purpose") == "claim_proposal":
+                    if scenario == "missing_context":
+                        self.assertIn(required_context, request.grounded_package["required_context_passage_ids"])
+                        self.assertTrue(all(e["topics"] for e in request.grounded_package["evidence"]))
                     for claim in data["claims"]:
                         if scenario == "invented": claim["statement"] = "You will win and recover damages."
                         if scenario == "wrong_scope": claim["jurisdiction"]["state"] = "Maryland"
                         if scenario == "unknown_passage": claim["support"][0]["passage_id"] = "unseen"
                         if scenario == "quote": claim["statement"] = 'The court said "the store is always liable".'
+                        if scenario == "missing_context":
+                            claim["support"] = [link for link in claim["support"] if link["passage_id"] != required_context]
                 if request.metadata.get("purpose") == "claim_verification" and scenario in {"partial", "conflict", "unsupported"}:
                     data["result"] = {"partial": "partially_supported", "conflict": "conflicts_omitted", "unsupported": "unsupported"}[scenario]
+                if request.metadata.get("purpose") == "claim_verification" and scenario == "verifier_mismatch":
+                    data["passage_ids"] = []
                 return ModelResponse(request.provider, request.model, True, output=data)
         registry = ProviderRegistry()
         registry.register("fixture", Adversary(), {"demo"})
@@ -706,6 +716,17 @@ class CourtListenerTests(unittest.TestCase):
             with self.subTest(scenario=scenario):
                 original, updated, _, _ = self.synth(scenario)
                 self.assertEqual(original["response_plan"]["claims"], updated["response_plan"]["claims"])
+
+    def test_synthesis_records_context_and_verifier_binding_rejections(self):
+        for scenario, reason in (("missing_context", "missing_required_context"),
+                                 ("verifier_mismatch", "invalid_verifier_bindings")):
+            with self.subTest(scenario=scenario):
+                original, updated, _, _ = self.synth(scenario)
+                self.assertEqual(original["response_plan"]["claims"], updated["response_plan"]["claims"])
+                ledger = updated["synthesis"]["ledger"]
+                self.assertTrue(ledger)
+                self.assertTrue(all(entry["rejection_reason"] == reason for entry in ledger))
+                self.assertTrue(all(entry["verification_status"] == "rejected" for entry in ledger))
 
     def test_dissent_cannot_support_synthesized_majority_rule(self):
         package = self.package()

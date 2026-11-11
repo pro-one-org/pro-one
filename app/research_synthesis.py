@@ -73,6 +73,15 @@ majority support. A real citation alone does not support a proposition. Prefer a
 number of useful multi-authority claims. Case names/citations are rendered separately;
 do not put case names, reporter citations, URLs or direct quotations in the statement.
 Careful conditional factual considerations may be explained; never find a party negligent.
+Return no more than six claims, each with an issue label of at most 80 characters
+and a statement of at most 1,800 characters. Avoid wording about precedential
+force or approval, including the words binding, controlling, certified and approved
+even in caveats. Describe an opinion's role and procedural posture directly.
+For each candidate, include every required_context_passage_id and use only passages
+with at least one topic tag shared across all links. Label context as qualifies or
+conflicts when it does not support the proposition. Preserve the supplied jurisdiction
+exactly. If the evidence cannot support a narrow statement under these constraints,
+omit that candidate.
 """
 
 VERIFICATION_POLICY = """Independently verify the candidate proposition using ONLY the
@@ -102,15 +111,18 @@ class ResearchSynthesisService:
         jurisdiction = package["user_context"]["jurisdiction_scope"]
         if len({p["source_id"] for p in passages.values()}) < 2:
             return package
+        contrary = {p["id"] for p in passages.values() if p.get("conflicts")}
         evidence = [{"passage_id": p["id"], "text": p["text"], "locator": p["locator"],
+                     "topics": p["propositions"],
                      "source": {"source_id": p["source_id"], "jurisdiction": p["jurisdiction"],
                                 "case_metadata": sources[p["source_id"]].get("case_metadata"),
                                 "source_type": sources[p["source_id"]]["source_type"]},
                      "limitations": p["limitations"], "conflicts": p.get("conflicts", [])} for p in passages.values()]
         try:
             adapter = self.registry.resolve(config.provider, config.model)
-            request = ModelRequest(config.provider, config.model, "multi_authority_proposal_v1", SYNTHESIS_POLICY,
+            request = ModelRequest(config.provider, config.model, "multi_authority_proposal_v2", SYNTHESIS_POLICY,
                                    {"jurisdiction": jurisdiction, "evidence": evidence,
+                                    "required_context_passage_ids": sorted(contrary),
                                     "mandatory_limits": package["response_plan"]["limitations"]},
                                    SynthesisProposal.model_json_schema(), {"max_output_tokens": 5000}, {"purpose": "claim_proposal"})
             started = time.perf_counter()
@@ -133,14 +145,18 @@ class ResearchSynthesisService:
             ledger.append(entry)
             ids = [link.passage_id for link in candidate.support]
             if len(set(ids)) != len(ids) or not set(ids).issubset(passages) or candidate.jurisdiction.model_dump() != jurisdiction:
+                entry["rejection_reason"] = "invalid_evidence_or_jurisdiction"
                 continue
             supporting = [link for link in candidate.support if link.relationship == "supports"]
             if not supporting:
+                entry["rejection_reason"] = "missing_support"
                 continue
             # Deterministic defenses apply before any model verification.
             if re.search(r"https?://|www\.|\bv\.\s|\b\d+\s+(?:Va\.|U\.S\.|S\.E\.|F\.)|[\"“”]", candidate.statement):
+                entry["rejection_reason"] = "embedded_citation_or_quote"
                 continue
             if re.search(r"\b(will win|guarantee|automatically liable|was negligent|is negligent|good law|binding|controlling|certified|approved|your deadline|must file|must sue|will recover)\b", candidate.statement, re.I):
+                entry["rejection_reason"] = "prohibited_statement"
                 continue
             invalid = False
             for link in candidate.support:
@@ -160,13 +176,17 @@ class ResearchSynthesisService:
                 entry["evidence_bindings"].append({"passage": passage["id"], "source": source["id"],
                                                    "hash": passage["verification"]["excerpt_hash"], "text": passage["text"]})
             # All selected contrary-role passages remain part of the comparison.
-            contrary = {p["id"] for p in passages.values() if p.get("conflicts")}
             for key in ("support_cases", "qualifying_cases", "conflicting_cases"):
                 entry[key] = list(dict.fromkeys(entry[key]))
-            if invalid or not contrary.issubset(ids):
+            if invalid:
+                entry["rejection_reason"] = "ineligible_evidence"
+                continue
+            if not contrary.issubset(ids):
+                entry["rejection_reason"] = "missing_required_context"
                 continue
             common_topics = set.intersection(*(set(passages[pid]["propositions"]) for pid in ids))
             if not common_topics:
+                entry["rejection_reason"] = "no_shared_evidence_topic"
                 continue
             selected = [e for e in evidence if e["passage_id"] in ids]
             verifier_request = ModelRequest(config.provider, config.model, "independent_claim_verification_v1", VERIFICATION_POLICY,
@@ -182,10 +202,13 @@ class ResearchSynthesisService:
                 verdict = parse_output(result, SemanticVerdict)
                 metrics["verification_ms"] += 1000 * (time.perf_counter() - started)
             except Exception:
+                entry["rejection_reason"] = "verification_unavailable"
                 continue
             if (verdict.result != "entailed" or set(verdict.passage_ids) != set(ids)
                     or len(verdict.passage_ids) != len(ids) or verdict.missing_qualifications or verdict.unsupported_fragments):
-                entry["verification_status"] = verdict.result
+                if verdict.result != "entailed":
+                    entry["verification_status"] = verdict.result
+                entry["rejection_reason"] = "verification_not_entailed" if verdict.result != "entailed" else "invalid_verifier_bindings"
                 continue
             entry["verification_status"] = "independently_verified_development"
             entry["verifier_version"] = "independent_claim_verification_v1"
