@@ -220,6 +220,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("scenario", choices=SCENARIOS)
     parser.add_argument("--include-rendered", action="store_true", help="Include rendered synthetic answers for review")
+    parser.add_argument("--virginia-official", action="store_true", help="Allow live Virginia official sources; keep CourtListener offline")
     parser.add_argument("--report-file", type=Path, help="Saved report to score without model calls")
     parser.add_argument("--review-file", type=Path, help="Human scores bound to the saved report's turn hashes")
     parser.add_argument("--review-template", action="store_true", help="Print an unscored template for --report-file")
@@ -262,12 +263,14 @@ def main():
     observer = ObservedProvider(adapter)
     registry = ProviderRegistry()
     registry.register(config.provider, observer, set(configured_registry.configured_models()[config.provider]))
-    # Isolate model behavior from live authority quota. Operators may supply a local corpus.
-    assistant = AssistantService(RecordRepository(), replace(settings, authority_network=""), GenerationService(registry))
+    authority_network = "virginia_official" if args.virginia_official else ""
+    assistant = AssistantService(RecordRepository(), replace(settings, authority_network=authority_network),
+                                 GenerationService(registry))
     turns = run(args.scenario, assistant, observer, args.include_rendered)
     passed = all(turn["checks_passed"] for turn in turns)
     print(json.dumps({"scenario": args.scenario, "scenario_hash": scenario_hash(args.scenario),
                       "provider": config.provider, "model": config.model,
+                      "authority_network": authority_network or "offline",
                       "status": "passed_structural_checks" if passed else "failed_structural_checks",
                       "manual_quality_review": "pending", "model_calls": len(observer.calls), "turns": turns}, indent=2))
     return 0 if passed else 1

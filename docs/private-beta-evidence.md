@@ -7,7 +7,7 @@ The active branch is `feat/mvp-ship-sprint`. On November 9, the user explicitly 
 | Criterion | Current evidence | Work required |
 |---|---|---|
 | 1. Authorized CourtListener v4 acceptance | Bounded probes in `scripts/accept_courtlistener.py`; offline transport tests. No token is present and authenticated calls remain zero. | Configure an authorized token and run all probe phases, retaining quota and latency reports. |
-| 2. Real model end-to-end acceptance | Model adapters, bounded query proposals, stage tracing and conversational runner exist. Query proposals are connected to the normal corpus research path with server validation. No server model credential is present; live calls remain zero. | Configure an authorized model and evaluate interpretation, planning, synthesis, verification, rendering and follow-ups. |
+| 2. Real model end-to-end acceptance | Live OpenAI access and both requested models passed minimal Responses API requests. The conversational runner observed Luna extraction and Sol planning, proposal and rendering on a local fixture corpus. A separate run fetched a live Virginia rule and rendered a source-backed response. | Evaluate live independent verification, review the rendered answers, and expand the scenario set over an authentic case corpus. |
 | 3. Meaningful real corpus | The inspected SQLite proof corpus has two fixture clusters. Public official PDFs have supplied real compiler collections across three additional topics. | Build a meaningful real case corpus with provenance, exact text and useful subject coverage. |
 | 4. Reproducible corpus build/refresh | REST checkpoints, bulk staging and refresh have offline regression coverage. Official compilation commands reproduced public-source collections. | Exercise REST or bulk ingestion and refresh against real CourtListener data. |
 | 5. Discover, hydrate, store, search and cite cases | The complete path is covered with API-shaped fixture transports. | Run the same path with authorized real records. |
@@ -36,9 +36,15 @@ The active branch is `feat/mvp-ship-sprint`. On November 9, the user explicitly 
 
 On November 9, the default provider configuration with `authority_network=virginia_official` assembled Rule 3:20 for both `civil_procedure` and `summary_judgment` topics through a live worker fetch. The result was `evidence_ready` in general-research mode, with source hash `sha256:b92bb0b1677e1f7c9607674f2df4dff2c9b2dfa888afee8f089bb8fdbfb46aa2` and public execution blocked. The mixed case/rule regression also includes the repository provider. This corrects the earlier diagnosis: the unversioned self-help source entered through automatic capability selection, not repository discovery, and full-topic matching avoids it for this question. The source itself remains unversioned and cannot support a research package that selects it.
 
-An authorized `COURTLISTENER_API_TOKEN` is required for provider acceptance and targeted ingestion. An authorized OpenAI or Anthropic server credential and explicit model configuration are required for live semantic acceptance. Keep credentials in server secret configuration.
+An authorized `COURTLISTENER_API_TOKEN` is required for provider acceptance and targeted ingestion. Keep credentials in server secret configuration.
 
 Publication is authorized for subsequent legitimate Goal progress on the same branch and PR. Legal validity, currentness and release readiness still require authorized human review of the evidence. Fixture tests and successful compiler runs do not satisfy those dependencies.
+
+## November 11 live OpenAI checks
+
+Minimal Responses requests completed on `gpt-6-luna` and `gpt-6.1-sol` in the authorized project. The synthetic notice question and its follow-up passed structural checks using local case fixtures. Both turns exercised Luna candidate extraction, Sol query planning, Sol proposal and Sol rendering. No independent semantic verifier call occurred in that run. The medical-bills scenario passed structural checks, and the fabricated pin cite, missing jurisdiction and hostile upload triggered their expected safety paths.
+
+With live official retrieval enabled and the PDF dependency available, the summary-judgment scenario passed with a Virginia court-rule source. Personal-injury limitations and landlord repairs returned `no_authoritative_support` in the same mode. Security-deposit and wage questions exposed gaps in topic classification and evidence coverage. The two document heading scenarios exercised deterministic inspection. Substantive document analysis, reviewed semantic quality, authenticated CourtListener retrieval and release approval remain pending.
 
 ## Evidence locations
 
