@@ -1,4 +1,5 @@
 import copy
+from hashlib import sha256
 import json
 import logging
 import socket
@@ -14,7 +15,7 @@ from pydantic import ValidationError
 
 from app import main
 from app.assistant import AssistantRequest, AssistantService
-from app.authority import (AuthorityDocument, AuthorityUnavailable, BoundedAuthorityTransport,
+from app.authority import (AuthorityDocument, AuthorityUnavailable, BoundedAuthorityTransport, OFFICIAL_APPELLATE_CASES,
                            RepositoryAuthorityProvider, VirginiaOfficialProvider, VIRGINIA_RULE_EXCERPT,
                            VIRGINIA_RULE_PAGE, VIRGINIA_RULES_URL, digest)
 from app.capabilities import CapabilityResolutionService, ResearchMatter
@@ -408,6 +409,29 @@ class AuthorityProviderTests(unittest.TestCase):
             target.extract_text.return_value = "Rule 3:21. This fixture represents a shifted page."
             with self.assertRaisesRegex(AuthorityUnavailable, "authority_parse_failed"):
                 provider.fetch("va-rule-3-20")
+
+    def test_official_opinion_checks_snapshot_and_excerpt_before_assigning_role(self):
+        sid = "va-albritton-commonwealth"
+        snapshot = OFFICIAL_APPELLATE_CASES[sid]["checked_snapshot"]
+        body = b"%PDF-opinion-fixture"
+        transport = Mock(get=Mock(return_value=(body, "application/pdf")))
+        provider = VirginiaOfficialProvider(self.repo, transport)
+        preceding = Mock(extract_text=Mock(return_value="Earlier page of synthetic opinion"))
+        selected = Mock(extract_text=Mock(return_value=snapshot["excerpt"]))
+        reader = Mock(is_encrypted=False, pages=[preceding] * (snapshot["page"] - 1) + [selected])
+        with patch.dict(snapshot, {"pdf_sha256": sha256(body).hexdigest()}), patch("pypdf.PdfReader", return_value=reader):
+            document = provider.fetch(sid)
+            self.assertEqual("majority", document.source["case_metadata"]["opinion_role"])
+            self.assertEqual("unknown", document.source["case_metadata"]["subsequent_treatment"])
+            self.assertEqual(snapshot["excerpt"], document.passages[0]["text"])
+            self.assertEqual("PDF page 7", document.passages[0]["locator"])
+            selected.extract_text.return_value = "The verified passage is absent."
+            with self.assertRaisesRegex(AuthorityUnavailable, "authority_parse_failed"):
+                provider.fetch(sid)
+            selected.extract_text.return_value = snapshot["excerpt"]
+            transport.get.return_value = (body + b"-changed", "application/pdf")
+            with self.assertRaisesRegex(AuthorityUnavailable, "authority_parse_failed"):
+                provider.fetch(sid)
 
     def test_parser_and_http_failures_are_closed(self):
         for value in ((b"not pdf", "application/pdf"), (b"%PDF-bad", "text/html")):

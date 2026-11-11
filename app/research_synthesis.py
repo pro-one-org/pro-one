@@ -93,6 +93,11 @@ all qualifications, contrary passages and opinion roles are preserved. Unsupport
 exceptions, factual conclusions, deadlines, guarantees, controlling-force/currentness
 or good-law assertions are not entailed. Citation identity alone is not support. Report
 missing qualifications and unsupported fragments. Return the exact cited passage IDs.
+The rendered_response_limitations are mandatory controls displayed separately in the
+final response. The candidate must respect them. It need not repeat those notices.
+Report a missing qualification when omitting it changes the meaning, scope or
+applicability of a material clause. Preserve any substantive limitations and conflicts
+from the cited evidence that qualify the proposition itself.
 """
 
 
@@ -189,9 +194,9 @@ class ResearchSynthesisService:
                 entry["rejection_reason"] = "no_shared_evidence_topic"
                 continue
             selected = [e for e in evidence if e["passage_id"] in ids]
-            verifier_request = ModelRequest(config.provider, config.model, "independent_claim_verification_v1", VERIFICATION_POLICY,
+            verifier_request = ModelRequest(config.provider, config.model, "independent_claim_verification_v2", VERIFICATION_POLICY,
                 {"candidate": candidate.model_dump(), "cited_evidence": selected,
-                 "relevant_metadata": {"jurisdiction": jurisdiction, "mandatory_qualifications": entry["limitations"]}},
+                 "relevant_metadata": {"jurisdiction": jurisdiction, "rendered_response_limitations": entry["limitations"]}},
                 SemanticVerdict.model_json_schema(), {"max_output_tokens": 3000}, {"purpose": "claim_verification"})
             try:
                 started = time.perf_counter()
@@ -211,7 +216,7 @@ class ResearchSynthesisService:
                 entry["rejection_reason"] = "verification_not_entailed" if verdict.result != "entailed" else "invalid_verifier_bindings"
                 continue
             entry["verification_status"] = "independently_verified_development"
-            entry["verifier_version"] = "independent_claim_verification_v1"
+            entry["verifier_version"] = verifier_request.instruction_version
             claim = {"claim_id": cid, "workflow_id": None, "topic": sorted(common_topics)[0],
                      "proposition": candidate.statement, "supported_by_passage_ids": ids,
                      "source_ids": sorted({passages[pid]["source_id"] for pid in ids}),

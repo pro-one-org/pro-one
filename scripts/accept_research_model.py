@@ -49,6 +49,9 @@ SCENARIOS = {
     "civil_procedure": (
         ("Under Virginia law, can summary judgment be entered when a material fact is disputed?", {"answered"}),
     ),
+    "summary_judgment_comparison": (
+        ("Under Virginia law, how does Rule 3:20 distinguish genuine disputes over material facts from disputes over immaterial facts at summary judgment?", {"answered"}),
+    ),
     "business_records": (
         ("I own a Virginia business and want to understand its SCC record.", {"confirmation_needed"}),
         ("Yes", {"answered"}),
@@ -177,9 +180,13 @@ class ObservedProvider:
     def generate(self, request):
         started = time.perf_counter()
         response = self.adapter.generate(request)
-        self.calls.append({"stage": request.instruction_version, "provider_success": response.success,
-                           "provider": request.provider, "model": request.model,
-                           "elapsed_ms": round(1000 * (time.perf_counter() - started), 2)})
+        call = {"stage": request.instruction_version, "provider_success": response.success,
+                "provider": request.provider, "model": request.model,
+                "elapsed_ms": round(1000 * (time.perf_counter() - started), 2)}
+        if "claims" in request.grounded_package:
+            call["verified_claims_offered"] = sum(claim["claim_id"].startswith("synthesis.")
+                                                  for claim in request.grounded_package["claims"])
+        self.calls.append(call)
         return response
 
 
@@ -216,6 +223,13 @@ def run(scenario, assistant, observer, include_rendered=False):
                     and all(quote in document for quote in quotes)
                     and any(call["stage"] == "document_passage_selection_v1" and call["provider_success"]
                             for call in turn["calls"])
+                )
+            if scenario == "summary_judgment_comparison":
+                types = {source["number"]: source["source_type"] for source in sources}
+                turn["checks_passed"] &= (
+                    any({"court_rule", "court_opinion"} <= {types.get(number) for number in section["citation_numbers"]}
+                        for section in rendered["sections"])
+                    and any(call.get("verified_claims_offered", 0) for call in turn["calls"])
                 )
             turn.update(source_count=len(sources), evidence_mode=rendered.get("evidence_mode"),
                         source_types=sorted({s["source_type"] for s in sources}),

@@ -110,7 +110,7 @@ OFFICIAL_CATALOG = {
     "va-austin-shoneys": ("https://www.vacourts.gov/static/opinions/opnscvwp/1961236.pdf", "pdf"),
     "va-personal-injury-limitations": ("https://law.lis.virginia.gov/vacode/title8.01/section8.01-243/", "html"),
 }
-OFFICIAL_COMPILER_CASES = {
+OFFICIAL_APPELLATE_CASES = {
     "va-filak-george": {
         "url": "https://www.vacourts.gov/static/opinions/opnscvwp/1031407.pdf",
         "title": "Filak v. George", "citation": "267 Va. 612", "date": "2004-04-23",
@@ -126,8 +126,20 @@ OFFICIAL_COMPILER_CASES = {
         "title": "Sales v. Kecoughtan Housing Co., Ltd.", "citation": "279 Va. 475", "date": "2010-02-25",
         "area": "landlord_tenant", "topics": ["landlord_repairs"],
     },
+    "va-albritton-commonwealth": {
+        "url": "https://www.vacourts.gov/static/opinions/opnscvwp/1191030.pdf",
+        "title": "AlBritton v. Commonwealth", "citation": "299 Va. 392 (2021)", "date": "2021-02-04",
+        "area": "civil_procedure", "topics": ["summary_judgment"],
+        "checked_snapshot": {
+            "pdf_sha256": "11ff92022814a26eb509d737b8c5431c9e377ed917d5e94f4f3a8a80e8557af6",
+            "page": 7,
+            "excerpt": "It follows that immaterial facts genuinely in dispute or material facts not genuinely in dispute do not preclude the entry of summary judgment.",
+            "opinion_role": "majority",
+            "procedural_posture": "Appeal from summary judgment. The court reversed and remanded.",
+        },
+    },
 }
-OFFICIAL_CATALOG.update({sid: (case["url"], "pdf") for sid, case in OFFICIAL_COMPILER_CASES.items()})
+OFFICIAL_CATALOG.update({sid: (case["url"], "pdf") for sid, case in OFFICIAL_APPELLATE_CASES.items()})
 VIRGINIA_RULE_SOURCE = "va-rule-3-20"
 VIRGINIA_RULES_URL = "https://www.vacourts.gov/static/courts/scv/rulesofcourt.pdf"
 VIRGINIA_RULE_PAGE = 202
@@ -209,9 +221,9 @@ class VirginiaOfficialProvider:
                                       "risk_level": "high", "limitations": ["Applicability and currentness require review."]}
             source["access"]["format"] = "pdf"
             return source
-        if source_id not in OFFICIAL_COMPILER_CASES:
+        if source_id not in OFFICIAL_APPELLATE_CASES:
             return deepcopy(self.repository.get("sources", source_id))
-        case = OFFICIAL_COMPILER_CASES[source_id]
+        case = OFFICIAL_APPELLATE_CASES[source_id]
         source = deepcopy(self.repository.get("sources", "va-fultz-delhaize"))
         source.update(id=source_id, title=case["title"], url=case["url"],
                       last_modified=date.today().isoformat(), legal_areas=[case["area"]],
@@ -251,9 +263,12 @@ class VirginiaOfficialProvider:
         source = self.source_metadata(source_id)
         if not source or source["url"] != url:
             raise AuthorityUnavailable("catalog_integrity_error")
+        snapshot = OFFICIAL_APPELLATE_CASES.get(source_id, {}).get("checked_snapshot")
         try:
             if kind == "pdf":
                 if media != "application/pdf" or not body.startswith(b"%PDF-"):
+                    raise ValueError()
+                if snapshot and hashlib.sha256(body).hexdigest() != snapshot["pdf_sha256"]:
                     raise ValueError()
                 from pypdf import PdfReader
                 reader = PdfReader(BytesIO(body))
@@ -266,7 +281,10 @@ class VirginiaOfficialProvider:
                             or "Rule 3:21." in text or VIRGINIA_RULE_EXCERPT not in text):
                         raise ValueError()
                 else:
-                    text = normalized_source(" ".join(p.extract_text() or "" for p in reader.pages))
+                    pages = [normalized_source(p.extract_text() or "") for p in reader.pages]
+                    if snapshot and snapshot["excerpt"] not in pages[snapshot["page"] - 1]:
+                        raise ValueError()
+                    text = normalized_source(" ".join(pages))
             else:
                 if media != "text/html":
                     raise ValueError()
@@ -285,6 +303,14 @@ class VirginiaOfficialProvider:
         # Verified minimal excerpts are checked against the newly fetched text.
         # Changed/missing wording is a gap, never silently substituted as law.
         passages = []
+        if snapshot:
+            source["case_metadata"].update(opinion_role=snapshot["opinion_role"], precedential_status="reported",
+                                           procedural_posture=snapshot["procedural_posture"])
+            source["workflow_fit"]["limitations"] = ["Proposed source. Applicability and subsequent treatment require review."]
+            passage = evidence_passage(source, snapshot["excerpt"], f"PDF page {snapshot['page']}",
+                                       source["workflow_fit"]["topics"])
+            passage["limitations"].append("The excerpt addresses which factual disputes affect summary judgment. Read the full opinion and rule for other requirements.")
+            passages.append(passage)
         if source_id == VIRGINIA_RULE_SOURCE:
             passage = evidence_passage(source, VIRGINIA_RULE_EXCERPT,
                                        f"Rule 3:20, PDF page {VIRGINIA_RULE_PAGE + 1}",

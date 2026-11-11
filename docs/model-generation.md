@@ -91,6 +91,7 @@ python -B scripts/accept_research_model.py wrong_jurisdiction
 python -B scripts/accept_research_model.py fabricated_pin
 python -B scripts/accept_research_model.py hostile_document --include-rendered
 python -B scripts/accept_research_model.py civil_procedure --virginia-official --include-rendered
+python -B scripts/accept_research_model.py summary_judgment_comparison --virginia-official --include-rendered
 python -B scripts/accept_research_model.py contract_terms --include-rendered
 ```
 
