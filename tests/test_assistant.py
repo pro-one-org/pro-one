@@ -154,6 +154,43 @@ class AssistantTests(unittest.TestCase):
         self.assertIn('/assistant/message',js);self.assertNotIn('localStorage',js);self.assertNotIn('innerHTML',js)
 
 class ExtractionTests(unittest.TestCase):
+    def test_document_analysis_uses_primary_model_and_rejects_invented_passage(self):
+        document = accept_research_model.DOCUMENTS["contract_terms"].decode()
+        term = accept_research_model.PAYMENT_TERM
+        requests = []
+
+        class Adapter:
+            def __init__(self, quote):
+                self.quote = quote
+
+            def generate(self, request):
+                requests.append(request)
+                return ModelResponse(request.provider, request.model, True, {
+                    "passages": [{"kind": "term", "quote": self.quote}],
+                })
+
+        settings = Settings(provider="openai", model="gpt-6.1-sol", openai_extraction_model="gpt-6-luna")
+        message = AssistantRequest(message="What timing does this agreement give for the second payment?",
+                                   document_text=document)
+        for quote in (term, "The second payment is due tomorrow."):
+            with self.subTest(quote=quote):
+                registry = ProviderRegistry()
+                registry.register("openai", Adapter(quote), {settings.model, settings.openai_extraction_model})
+                result = AssistantService(main.repository, settings, GenerationService(registry)).message(message)
+                response = result["response"]
+                self.assertEqual("document_inspected", result["status"])
+                self.assertEqual(settings.model, requests[-1].model)
+                self.assertEqual("document_passage_selection", requests[-1].metadata["purpose"])
+                self.assertEqual([], response["sources"])
+                self.assertFalse(response["publicly_approved"])
+                self.assertNotIn(term, result["conversation_state"])
+                if quote == term:
+                    self.assertEqual(term, response["sections"][1]["text"])
+                    self.assertTrue(response["sections"][1]["user_provided"])
+                else:
+                    self.assertEqual("Document inspection", response["status_label"])
+                    self.assertNotIn(quote, json.dumps(response))
+
     def test_openai_extraction_routes_separately_without_escalation(self):
         from app.models.testing import valid_draft
         calls = []

@@ -91,6 +91,7 @@ python -B scripts/accept_research_model.py wrong_jurisdiction
 python -B scripts/accept_research_model.py fabricated_pin
 python -B scripts/accept_research_model.py hostile_document --include-rendered
 python -B scripts/accept_research_model.py civil_procedure --virginia-official --include-rendered
+python -B scripts/accept_research_model.py contract_terms --include-rendered
 ```
 
 The runner records observed model stages, turn status, latency, source counts and a hash of each rendered answer. The optional rendered answer is for review of the fixed synthetic inputs. Reports omit model prompts, raw drafts, conversation tokens and credentials. A structural pass checks the expected routing or refusal, citation links and development release marker. Use the stage trace to determine whether proposal, verification and rendering ran. An answered turn may use exact text after synthesis falls back.

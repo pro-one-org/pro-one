@@ -14,7 +14,7 @@ from app.matter_extraction import MatterExtractionService, ExtractionUnavailable
 from app.product import ProductService, ProductResponseRequest
 from app.routing import MatterRequest, MatterRoutingService, WorkflowCatalogService
 from app.capabilities import ResearchMatter
-from app.document_inspection import inspect_document_question
+from app.document_inspection import inspect_document_question, select_document_passages
 from app.legal_research import GeneralLegalResearchService
 
 _STATE_KEY = secrets.token_bytes(32)
@@ -107,6 +107,11 @@ class AssistantService:
             return reply("unavailable", "These legal topics are still under review and are not available for public use.")
         inspection = inspect_document_question(message, request.document_text)
         if inspection:
+            provider, model = self.configuration()
+            if provider != "testing" and model in self.generation.registry.configured_models().get(provider, []):
+                from app.models.base import GenerationConfig
+                inspection = select_document_passages(inspection, message, request.document_text, self.generation.registry,
+                                                      GenerationConfig(provider=provider, model=model))
             response = reply("document_inspected", "Here is what I can identify from the uploaded text.", inspection)
             response.update(matter={}, needs_confirmation={}, followups=[])
             return response
