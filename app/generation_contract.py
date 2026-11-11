@@ -137,11 +137,13 @@ def build_research_model_request(package, config):
             "required_control_texts": controls, "strict_claim_text": True}
     schema = GeneratedDraft.model_json_schema()
     schema["properties"]["workflow_id"] = {"type": "null"}
-    return ModelRequest(config.provider, config.model, "grounded_research_v1",
+    return ModelRequest(config.provider, config.model, "grounded_research_v2",
                         INSTRUCTIONS + "\nResearch output: each legal_information section must select exactly one claim and "
                         "copy exactly one of its allowed_texts, preferring its plain-language variant. Use a separate section "
                         "for each claim, with a unique section_id of next_steps or questions_to_answer. You may combine multiple "
                         "claims in one section only by joining their allowed_texts with two newlines in claim_ids order. "
+                        "When the supplied claims cover distinct principles from different types of authority, "
+                        "include the relevant claims for each type. Preserve their separate scope and qualifications. "
                         "Include every source limit as exact control text. No additional prose, invented examples, "
                         "legal conclusions, authorities, quotations, currentness or approval claims are allowed.",
                         data, schema, {"max_output_characters": 64000, "max_output_tokens": 16000},

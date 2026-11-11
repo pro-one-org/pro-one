@@ -37,6 +37,9 @@ SCENARIOS = {
     "landlord_repairs": (
         ("My landlord in Virginia made repairs but mold returned. What authorities discuss negligent repairs?", {"answered"}),
     ),
+    "landlord_repairs_comparison": (
+        ("For a Virginia rental covered by the Residential Landlord and Tenant Act, how do statutory repair duties compare with the common-law duty when a landlord actually undertakes repairs?", {"answered"}),
+    ),
     "unpaid_wages": (
         ("My employer in Virginia did not pay all my earned wages. What official law explains my options?", {"answered"}),
     ),
@@ -229,6 +232,16 @@ def run(scenario, assistant, observer, include_rendered=False):
                 turn["checks_passed"] &= (
                     any({"court_rule", "court_opinion"} <= {types.get(number) for number in section["citation_numbers"]}
                         for section in rendered["sections"])
+                    and any(call.get("verified_claims_offered", 0) for call in turn["calls"])
+                )
+            if scenario == "landlord_repairs_comparison":
+                cited_numbers = {number for section in rendered["sections"] for number in section["citation_numbers"]}
+                cited_sources = [source for source in sources if source["number"] in cited_numbers]
+                turn["checks_passed"] &= (
+                    {"Va. Code § 55.1-1220 A 2", "Va. Code § 55.1-1220 B"}
+                    <= {source["locator"] for source in cited_sources if source["source_type"] == "statute"}
+                    and any(source["source_type"] == "court_opinion" and source["citation"] == "279 Va. 475"
+                            for source in cited_sources)
                     and any(call.get("verified_claims_offered", 0) for call in turn["calls"])
                 )
             turn.update(source_count=len(sources), evidence_mode=rendered.get("evidence_mode"),

@@ -16,6 +16,7 @@ from pydantic import ValidationError
 from app import main
 from app.assistant import AssistantRequest, AssistantService
 from app.authority import (AuthorityDocument, AuthorityUnavailable, BoundedAuthorityTransport, OFFICIAL_APPELLATE_CASES,
+                           OFFICIAL_STATUTE_SECTIONS,
                            RepositoryAuthorityProvider, VirginiaOfficialProvider, VIRGINIA_RULE_EXCERPT,
                            VIRGINIA_RULE_PAGE, VIRGINIA_RULES_URL, digest)
 from app.capabilities import CapabilityResolutionService, ResearchMatter
@@ -430,6 +431,24 @@ class AuthorityProviderTests(unittest.TestCase):
                 provider.fetch(sid)
             selected.extract_text.return_value = snapshot["excerpt"]
             transport.get.return_value = (body + b"-changed", "application/pdf")
+            with self.assertRaisesRegex(AuthorityUnavailable, "authority_parse_failed"):
+                provider.fetch(sid)
+
+    def test_statutory_repair_duty_requires_matching_damages_paragraph(self):
+        sid = "va-residential-landlord-maintenance"
+        section = OFFICIAL_STATUTE_SECTIONS[sid]
+        duty = "2. Make all repairs according to the synthetic fixture."
+        damages = "B. The landlord shall perform the synthetic duty with the fixture's qualifications."
+        title = section["title"].replace(". ", "</span>. ", 1)
+        html = f"<h2><span>{title}</h2><p>{duty}</p><p>{damages}</p>"
+        transport = Mock(get=Mock(return_value=(html.encode(), "text/html")))
+        provider = VirginiaOfficialProvider(self.repo, transport)
+        paragraphs = (("A 2", "2. Make all repairs", digest(duty)),
+                      ("B", "B. The landlord shall perform", digest(damages)))
+        with patch.dict(section, {"paragraphs": paragraphs}):
+            document = provider.fetch(sid)
+            self.assertEqual([duty, damages], [p["text"] for p in document.passages])
+            transport.get.return_value = (html.replace(damages, damages + " Changed.").encode(), "text/html")
             with self.assertRaisesRegex(AuthorityUnavailable, "authority_parse_failed"):
                 provider.fetch(sid)
 

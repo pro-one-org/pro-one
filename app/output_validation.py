@@ -161,6 +161,7 @@ class OutputValidationService:
                     fail("citation_not_supporting_claim", index)
                 used_citations.add(citation_id)
             if section.kind == "legal_information":
+                exact_claim_text = {}
                 if data.get("strict_claim_text"):
                     # A real citation cannot launder an unrelated legal sentence.
                     # This deliberately restricts paraphrases until semantic
@@ -171,6 +172,8 @@ class OutputValidationService:
                         for cid, part in zip(section.claim_ids, parts)
                     ):
                         fail("unsupported_proposition", index)
+                    else:
+                        exact_claim_text = dict(zip(section.claim_ids, parts))
                     jurisdiction = data["scope"]["jurisdiction"]
                     for cid in section.claim_ids:
                         if cid in claims and any(claims[cid]["jurisdiction"].get(k) != jurisdiction.get(k) for k in ("country", "state")):
@@ -197,7 +200,9 @@ class OutputValidationService:
                     if c in claims and not set(claims[c]["limitations"]).issubset(draft.limitations_included):
                         fail("claim_limitation_missing", index)
                     if c in claims and not claims[c]["quotation_allowed"]:
-                        if '"' in section.text or any(normalized(passages[p]["text"]) in text for p in claims[c]["supported_by_passage_ids"] if p in passages):
+                        claim_text = exact_claim_text.get(c, section.text)
+                        if '"' in claim_text or any(normalized(passages[p]["text"]) in normalized(claim_text)
+                                                    for p in claims[c]["supported_by_passage_ids"] if p in passages):
                             fail("source_quotation_not_allowed", index)
             elif section.kind == "control":
                 paragraphs = section.text.split("\n\n")

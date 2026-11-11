@@ -73,6 +73,8 @@ majority support. A real citation alone does not support a proposition. Prefer a
 number of useful multi-authority claims. Case names/citations are rendered separately;
 do not put case names, reporter citations, URLs or direct quotations in the statement.
 Careful conditional factual considerations may be explained; never find a party negligent.
+Cover distinct relevant principles from the supplied authority types. Use separate
+claims when combining a statute and a case would blur their different requirements.
 Return no more than six claims, each with an issue label of at most 80 characters
 and a statement of at most 1,800 characters. Avoid wording about precedential
 force or approval, including the words binding, controlling, certified and approved
@@ -125,7 +127,7 @@ class ResearchSynthesisService:
                      "limitations": p["limitations"], "conflicts": p.get("conflicts", [])} for p in passages.values()]
         try:
             adapter = self.registry.resolve(config.provider, config.model)
-            request = ModelRequest(config.provider, config.model, "multi_authority_proposal_v2", SYNTHESIS_POLICY,
+            request = ModelRequest(config.provider, config.model, "multi_authority_proposal_v3", SYNTHESIS_POLICY,
                                    {"jurisdiction": jurisdiction, "evidence": evidence,
                                     "required_context_passage_ids": sorted(contrary),
                                     "mandatory_limits": package["response_plan"]["limitations"]},
@@ -227,7 +229,10 @@ class ResearchSynthesisService:
             accepted.append(claim)
         package["synthesis"] = {"status": "verified" if accepted else "no_verified_claims", "ledger": ledger, "metrics": metrics}
         if accepted:
-            package["response_plan"]["claims"] = accepted
-            package["response_plan"]["citations"] = [c for c in package["response_plan"]["citations"]
-                                                       if any(c["citation_id"] in claim["citation_ids"] for claim in accepted)]
+            plan = package["response_plan"]
+            covered_sources = {sid for claim in accepted for sid in claim["source_ids"]}
+            remaining = [claim for claim in plan["claims"] if covered_sources.isdisjoint(claim["source_ids"])]
+            plan["claims"] = accepted + remaining
+            used_citations = {cid for claim in plan["claims"] for cid in claim["citation_ids"]}
+            plan["citations"] = [citation for citation in plan["citations"] if citation["citation_id"] in used_citations]
         return package

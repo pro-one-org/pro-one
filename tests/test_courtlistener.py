@@ -728,6 +728,36 @@ class CourtListenerTests(unittest.TestCase):
                 self.assertTrue(all(entry["rejection_reason"] == reason for entry in ledger))
                 self.assertTrue(all(entry["verification_status"] == "rejected" for entry in ledger))
 
+    def test_partial_synthesis_preserves_exact_claims_from_uncovered_sources(self):
+        package = self.package()
+        passage = package["grounding"]["passages"][0]
+        scope = package["user_context"]["jurisdiction_scope"]
+
+        class Fixture:
+            def generate(self, request):
+                if request.metadata["purpose"] == "claim_proposal":
+                    output = {"claims": [{"statement": "The condition of the premises can matter.",
+                                         "issue": passage["propositions"][0], "jurisdiction": scope,
+                                         "support": [{"passage_id": passage["id"], "relationship": "supports"}]}]}
+                else:
+                    output = {"result": "entailed", "passage_ids": [passage["id"]],
+                              "missing_qualifications": [], "unsupported_fragments": []}
+                return ModelResponse(request.provider, request.model, True, output=output)
+
+        registry = ProviderRegistry()
+        registry.register("fixture", Fixture(), {"demo"})
+        config = GenerationConfig(provider="fixture", model="demo")
+        updated = ResearchSynthesisService(registry).prepare(package, config)
+        self.assertEqual("verified", updated["synthesis"]["status"])
+        claims = updated["response_plan"]["claims"]
+        self.assertEqual("semantically_verified_development", claims[0]["support_state"])
+        self.assertEqual([c for c in package["response_plan"]["claims"]
+                          if passage["source_id"] not in c["source_ids"]], claims[1:])
+        self.assertTrue(claims[1:])
+        request = build_model_request(updated, config)
+        draft, validation = OutputValidationService().validate(valid_draft(request), request)
+        self.assertIsNotNone(draft, validation)
+
     def test_dissent_cannot_support_synthesized_majority_rule(self):
         package = self.package()
         for source in package["grounding"]["sources"]:

@@ -125,6 +125,14 @@ OFFICIAL_APPELLATE_CASES = {
         "url": "https://www.vacourts.gov/static/opinions/opnscvwp/1090143.pdf",
         "title": "Sales v. Kecoughtan Housing Co., Ltd.", "citation": "279 Va. 475", "date": "2010-02-25",
         "area": "landlord_tenant", "topics": ["landlord_repairs"],
+        "checked_snapshot": {
+            "pdf_sha256": "b8d40ede372158a492a7235f45370d482f3aecc4dba291cf7983487a283a75e8",
+            "page": 5,
+            "excerpt": "where the landlord enters leased premises for the purpose of making repairs, he must use reasonable care in performing the work.",
+            "opinion_role": "majority",
+            "procedural_posture": "Appeal from a demurrer. The court reversed and remanded on the pleadings.",
+            "limitation": "The excerpt concerns common-law care in repairs actually undertaken. The court addressed the sufficiency of the allegations.",
+        },
     },
     "va-albritton-commonwealth": {
         "url": "https://www.vacourts.gov/static/opinions/opnscvwp/1191030.pdf",
@@ -136,10 +144,25 @@ OFFICIAL_APPELLATE_CASES = {
             "excerpt": "It follows that immaterial facts genuinely in dispute or material facts not genuinely in dispute do not preclude the entry of summary judgment.",
             "opinion_role": "majority",
             "procedural_posture": "Appeal from summary judgment. The court reversed and remanded.",
+            "limitation": "The excerpt addresses which factual disputes affect summary judgment. Read the full opinion and rule for other requirements.",
         },
     },
 }
 OFFICIAL_CATALOG.update({sid: (case["url"], "pdf") for sid, case in OFFICIAL_APPELLATE_CASES.items()})
+OFFICIAL_STATUTE_SECTIONS = {
+    "va-residential-landlord-maintenance": {
+        "url": "https://law.lis.virginia.gov/vacode/title55.1/chapter12/section55.1-1220/",
+        "title": "§ 55.1-1220. Landlord to maintain fit premises.",
+        "citation": "Va. Code § 55.1-1220",
+        "area": "landlord_tenant",
+        "topics": ["landlord_repairs"],
+        "paragraphs": (
+            ("A 2", "2. Make all repairs", "sha256:fc68f5dbbacfded2a8841d7beaaf421484292ea3092e85e7af380913afd7d4bd"),
+            ("B", "B. The landlord shall perform", "sha256:6ca1fbdace35a8faa62e3bf088b356a7ce964d4c77393745ca3c95eac7afdb98"),
+        ),
+    },
+}
+OFFICIAL_CATALOG.update({sid: (section["url"], "html") for sid, section in OFFICIAL_STATUTE_SECTIONS.items()})
 VIRGINIA_RULE_SOURCE = "va-rule-3-20"
 VIRGINIA_RULES_URL = "https://www.vacourts.gov/static/courts/scv/rulesofcourt.pdf"
 VIRGINIA_RULE_PAGE = 202
@@ -151,18 +174,27 @@ class OfficialSectionParser(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.parts, self.skip = [], 0
+        self.paragraphs = []
+        self.paragraph = None
 
     def handle_starttag(self, tag, attrs):
         if tag in {"script", "style"}:
             self.skip += 1
+        elif tag == "p" and not self.skip:
+            self.paragraph = []
 
     def handle_endtag(self, tag):
         if tag in {"script", "style"} and self.skip:
             self.skip -= 1
+        elif tag == "p" and self.paragraph is not None and not self.skip:
+            self.paragraphs.append(normalized_source(" ".join(self.paragraph)))
+            self.paragraph = None
 
     def handle_data(self, data):
         if not self.skip:
             self.parts.append(data)
+            if self.paragraph is not None:
+                self.paragraph.append(data)
 
 
 class BoundedAuthorityTransport:
@@ -203,6 +235,22 @@ class VirginiaOfficialProvider:
                 and set(matter.topics) & set(self.source_metadata(sid)["workflow_fit"]["topics"])][:min(limit, 3)]
 
     def source_metadata(self, source_id):
+        statute = OFFICIAL_STATUTE_SECTIONS.get(source_id)
+        if statute:
+            source = deepcopy(self.repository.get("sources", "va-personal-injury-limitations"))
+            source.update(id=source_id, title=statute["title"], url=statute["url"],
+                          legal_areas=[statute["area"]], status="proposed", review=proposed_review(),
+                          last_modified=date.today().isoformat())
+            source.pop("enactment_metadata", None)
+            source.pop("public_currentness", None)
+            source["dates"] = dict.fromkeys(source["dates"])
+            source["authority"]["authority_notes"] = "Official Code publication. Effective dates and applicability require review."
+            source["provenance"] = {"source_content_version": "pending_official_fetch", "content_hash": None,
+                                    "superseded_by_source_id": None}
+            source["citation"] = {"preferred_citation": statute["citation"], "retrieved_at": None}
+            source["workflow_fit"] = {"topics": statute["topics"], "workflow_ids": [], "risk_level": "high",
+                                      "limitations": ["Coverage of the tenancy and statutory exceptions require review."]}
+            return source
         if source_id == VIRGINIA_RULE_SOURCE:
             source = deepcopy(self.repository.get("sources", "va-personal-injury-limitations"))
             source.update(id=source_id, title="Virginia Rule 3:20 — Motion for Summary Judgment",
@@ -264,6 +312,8 @@ class VirginiaOfficialProvider:
         if not source or source["url"] != url:
             raise AuthorityUnavailable("catalog_integrity_error")
         snapshot = OFFICIAL_APPELLATE_CASES.get(source_id, {}).get("checked_snapshot")
+        statute = OFFICIAL_STATUTE_SECTIONS.get(source_id)
+        checked_paragraphs = []
         try:
             if kind == "pdf":
                 if media != "application/pdf" or not body.startswith(b"%PDF-"):
@@ -291,6 +341,15 @@ class VirginiaOfficialProvider:
                 parser = OfficialSectionParser()
                 parser.feed(body.decode("utf-8"))
                 text = normalized_source(" ".join(parser.parts))
+                if statute:
+                    # The linked section number and its period can be separate HTML text nodes.
+                    if statute["title"] not in text.replace(" .", "."):
+                        raise ValueError()
+                    for locator, prefix, fingerprint in statute["paragraphs"]:
+                        matches = [paragraph for paragraph in parser.paragraphs if paragraph.startswith(prefix)]
+                        if len(matches) != 1 or digest(matches[0]) != fingerprint:
+                            raise ValueError()
+                        checked_paragraphs.append((locator, matches[0]))
             if not text or len(text) > 200000:
                 raise ValueError()
         except Exception:
@@ -309,7 +368,12 @@ class VirginiaOfficialProvider:
             source["workflow_fit"]["limitations"] = ["Proposed source. Applicability and subsequent treatment require review."]
             passage = evidence_passage(source, snapshot["excerpt"], f"PDF page {snapshot['page']}",
                                        source["workflow_fit"]["topics"])
-            passage["limitations"].append("The excerpt addresses which factual disputes affect summary judgment. Read the full opinion and rule for other requirements.")
+            passage["limitations"].append(snapshot["limitation"])
+            passages.append(passage)
+        for locator, paragraph in checked_paragraphs:
+            passage = evidence_passage(source, paragraph, f"{statute['citation']} {locator}", statute["topics"],
+                                       suffix="paragraph-" + locator.lower().replace(" ", "-"))
+            passage["limitations"].extend(source["workflow_fit"]["limitations"])
             passages.append(passage)
         if source_id == VIRGINIA_RULE_SOURCE:
             passage = evidence_passage(source, VIRGINIA_RULE_EXCERPT,
