@@ -144,3 +144,31 @@ bridge, legal relationship and currentness evidence, live cross-provider
 identity checks, broader source rights review and a labeled mixed-source
 research evaluation remain pending. The benchmark covers the corpus path.
 Mixed-source research and live model costs remain unmeasured.
+
+### State source investigation
+
+These publisher entry points are candidates for additional state adapters.
+Each requires its own section identity, edition and operative-text checks.
+
+| State | Publisher format and integration question |
+| --- | --- |
+| Maryland | The General Assembly's HTML and PDF portal distinguishes January and October snapshots. The adapter must preserve the selected edition and distinguish law text from session enactment data. [Maryland statutes portal](https://mgaleg.maryland.gov/mgawebsite/Laws/Statutes) |
+| Florida | The legislature's Online Sunshine site exposes year-specific statutes and a download option. The adapter must preserve the displayed edition and distinguish statutes, the constitution and session laws. [Florida statutes and constitution](https://www.leg.state.fl.us/Statutes/) |
+| New York | The Senate JSON API exposes law IDs, section locations and weekly publication updates. It requires a key, and the site lists CC BY-NC-ND 3.0 for its content. Review applicability to the planned normalized redistribution before choosing this route. [NYS Laws API](https://legislation.nysenate.gov/static/docs/html/laws.html), [Open Legislation terms](https://legislation.nysenate.gov/) |
+| California | The Legislature exposes a legislative downloads directory. The interactive codes endpoint returned HTTP 403 during source discovery. Evaluate the bulk artifacts and documentation for code-table coverage and update semantics. [California legislative downloads](https://downloads.leginfo.legislature.ca.gov/) |
+
+### Optional derivative dataset
+
+Vaquill publishes Open US Law snapshot `v2026.09.1` under CC BY-NC 4.0
+for the compilation and metadata. The publisher lists Apache-2.0 for its
+scrapers and treats underlying statutory, regulatory and constitutional
+text separately from its normalization. Sharing or adapting the compilation
+under that license is limited to noncommercial use and requires appropriate
+credit, a license link and disclosure of changes. [Publisher data license](https://github.com/Vaquill-AI/open-us-law/blob/main/data/LICENSE.md), [Creative Commons license](https://creativecommons.org/licenses/by-nc/4.0/)
+
+The dataset is a candidate for derivative discovery. It reports government
+source URLs and snapshot metadata. A future import would need to pin the
+snapshot and hashes, retain the original attribution and distinguish
+provider-derived status fields from official identity and currentness evidence.
+This foundation uses publisher feeds and CourtListener. It includes zero
+Open US Law records. [Dataset card](https://huggingface.co/datasets/vaquill/open-us-law)
