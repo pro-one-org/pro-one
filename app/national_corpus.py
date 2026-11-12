@@ -17,6 +17,10 @@ AuthorityType = Literal[
     "executive_material", "session_law", "recap_filing", "register_document",
 ]
 Currentness = Literal["unresolved", "historical", "repealed", "superseded"]
+OpinionRole = Literal[
+    "lead", "majority", "unanimous", "plurality", "concurrence", "concurrence_in_part", "dissent",
+    "mixed", "addendum", "remittitur", "rehearing", "on_the_merits", "motion", "trial_document", "unknown",
+]
 
 
 def fingerprint(value: bytes) -> str:
@@ -58,7 +62,7 @@ class AuthorityVersion(BaseModel):
     amended_on: date | None = None
     repealed_on: date | None = None
     currentness: Currentness = "unresolved"
-    opinion_role: Literal["lead", "majority", "concurrence", "dissent", "mixed", "unknown"] | None = None
+    opinion_role: OpinionRole | None = None
     precedential_status: str | None = None
     procedural_posture: str | None = None
     limitations: tuple[str, ...] = ()
@@ -90,11 +94,18 @@ class AuthorityVersion(BaseModel):
 
 
 @dataclass(frozen=True)
+class SourceRelationship:
+    kind: Literal["cites", "opinion_of", "docket_of"]
+    target_native_id: str
+
+
+@dataclass(frozen=True)
 class Observation:
     version: AuthorityVersion
     native_id: str
     locator: str
     original_citation: str
+    relationships: tuple[SourceRelationship, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -116,13 +127,20 @@ class Source:
     authentication: str = "none"
     pagination: str = "none"
     max_bytes: int = 8 * 1024 * 1024
+    max_requests: int = 1
+
+
+@dataclass(frozen=True)
+class FetchedSource:
+    raw: bytes
+    requests: int
 
 
 class CorpusProvider(Protocol):
     source: Source
 
     def source_url(self, selector: str) -> str: ...
-    def fetch(self, selector: str) -> bytes: ...
+    def fetch(self, selector: str) -> FetchedSource: ...
     def normalize(self, selector: str, raw: bytes) -> Iterable[Observation]: ...
 
 
@@ -136,6 +154,11 @@ class CorpusQuery:
     provider: str = ""
     currentness: Currentness | Literal["current"] = "unresolved"
     opinion_roles: tuple[str, ...] = ()
+    court: str = ""
+    agency: str = ""
+    legislature: str = ""
+    published_from: date | None = None
+    published_through: date | None = None
     limit: int = 12
 
 

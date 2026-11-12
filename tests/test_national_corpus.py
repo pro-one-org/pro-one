@@ -1,11 +1,16 @@
 """Offline contract tests using invented statutory and regulatory text."""
 
+from base64 import b64decode
 from dataclasses import replace
 from io import BytesIO
+import json
+import os
 import unittest
+from unittest.mock import patch
 from zipfile import ZipFile
 
 from app.national_corpus import CorpusError, CorpusQuery
+from app.national_corpus_courtlistener import CourtListenerProvider
 from app.national_corpus_providers import PROVIDERS
 from app.national_corpus_store import SQLiteNormalizedCorpus
 
@@ -131,6 +136,72 @@ class NationalCorpusTests(unittest.TestCase):
     def test_corrupt_archive_is_rejected(self):
         with self.assertRaisesRegex(CorpusError, "source_zip_invalid"):
             self.store.ingest(self.olrc, "119-88/1", b"invalid archive")
+
+    def test_virginia_publisher_scope_and_ambiguous_section_are_closed(self):
+        provider = PROVIDERS["virginia_code"]
+        section = "55.1/12/55.1-1220"
+        body = b'<section data-table="CoV" data-field="body"><p>Example state text.</p></section>'
+        def page(content):
+            return b'<article id="vacode"><h2>&sect; 55.1-1220. Sample statute.</h2>' + content + b"</article>"
+
+        with self.assertRaisesRegex(CorpusError, "duplicate_statutory_body"):
+            self.store.ingest(provider, section, page(body * 2))
+        with self.assertRaisesRegex(CorpusError, "source_section_identity_mismatch"):
+            self.store.ingest(provider, "55.1/12/55.1-1244", page(body))
+        raw = page(body + b"<p>Editorial history.</p>")
+        self.store.ingest(provider, section, raw)
+        [match] = self.store.search(CorpusQuery("US-VA", "statute", citation="Va. Code § 55.1-1220"))
+        self.assertEqual(match["text"], "Example state text.")
+        self.assertEqual(self.store.search(CorpusQuery("US", "statute", text="example state")), [])
+        self.assertEqual(self.store.search(CorpusQuery("US-MD", "statute", text="example state")), [])
+
+    def test_courtlistener_replay_keeps_roles_citations_and_relationship_provenance(self):
+        citation = "603 U.S. 369"
+        cluster = {"id": 12, "docket": 13, "case_name": "Example v. Commission",
+                   "citations": [citation], "sub_opinions": [14, 15],
+                   "date_filed": "2024-06-28", "precedential_status": "Published"}
+        raw_opinions = {
+            14: b'{ "id": 14, "cluster_id": 12, "plain_text": "Example lead text.", "type": "020lead", "opinions_cited": [16] }',
+            15: b'{ "id": 15, "cluster_id": 12, "plain_text": "Example dissent.", "type": "040dissent" }',
+        }
+        resources = {
+            "citation-lookup/": [{"status": 200, "clusters": [cluster], "normalized_citations": [citation]}],
+            "clusters/12/": cluster, "dockets/13/": {"id": 13, "court_id": "scotus"},
+            "courts/scotus/": {"id": "scotus", "full_name": "Supreme Court of the United States"},
+        }
+
+        class FixtureTransport:
+            def request(self, method, path, headers, body, timeout, max_bytes):
+                resource = path.removeprefix("/api/rest/v4/")
+                if resource.startswith("opinions/"):
+                    raw = raw_opinions[int(resource.split("/")[1])]
+                else:
+                    raw = json.dumps(resources[resource]).encode()
+                return 200, {"content-type": "application/json"}, raw
+
+        provider = CourtListenerProvider(FixtureTransport())
+        with patch.dict(os.environ, {"COURTLISTENER_API_TOKEN": "test-token-never-stored"}):
+            fetched = provider.fetch(f"scotus/{citation}")
+            with self.assertRaisesRegex(CorpusError, "courtlistener_case_identity_mismatch"):
+                provider.fetch(f"ca4/{citation}")
+        self.assertEqual(fetched.requests, 6)
+        responses = [b64decode(item["response"]) for item in json.loads(fetched.raw)]
+        self.assertTrue(all(b"test-token-never-stored" not in response for response in responses))
+        self.assertIn(raw_opinions[14], responses)
+        result = self.store.ingest(provider, f"scotus/{citation}", fetched.raw)
+        self.assertEqual(result["relationships_created"], 5)
+        self.assertEqual(result["records"], 2)
+        matches = self.store.search(CorpusQuery("US", "opinion", citation=citation))
+        self.assertEqual({match["opinion_role"] for match in matches}, {"lead", "dissent"})
+        self.assertEqual(len({match["authority_id"] for match in matches}), 2)
+        [lead] = self.store.search(CorpusQuery("US", "opinion", citation=citation, opinion_roles=("lead", "majority")))
+        self.assertNotIn("dissent", lead["text"])
+        edges = self.store.relationships(lead["version_id"])
+        self.assertIn(("cites", "opinions/16/"), {(edge["kind"], edge["target_native_id"]) for edge in edges})
+        self.assertTrue(all(edge["snapshot_id"] == result["snapshot"] for edge in edges))
+        [provenance] = self.store.provenance(lead["version_id"])
+        self.assertFalse(provenance["source_metadata"]["official_publisher"])
+        self.assertEqual(self.store.snapshot_bytes(result["source_hash"]), fetched.raw)
 
 
 if __name__ == "__main__":

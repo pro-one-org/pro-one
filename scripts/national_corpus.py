@@ -15,7 +15,7 @@ from pydantic import ValidationError
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from app.corpus_store import utcnow
-from app.national_corpus import AuthorityType, CorpusError, CorpusQuery
+from app.national_corpus import AuthorityType, CorpusError, CorpusQuery, OpinionRole
 from app.national_corpus_providers import PROVIDERS
 from app.national_corpus_store import SQLiteNormalizedCorpus
 
@@ -28,15 +28,15 @@ def build(store, provider, selector, directory):
         "build_id": build_id, "started_at": utcnow(), "provider": source.name,
         "parser_revision": source.parser_revision,
         "jurisdictions": source.jurisdictions, "authority_types": [source.authority_type],
-        "requests_attempted": 0, "status": "failed",
+        "request_budget": source.max_requests, "status": "failed",
     }
     try:
         provider.source_url(selector)
         report["selector"] = selector
-        report["requests_attempted"] = 1
-        raw = provider.fetch(selector)
-        report["bytes_downloaded"] = len(raw)
-        result = store.ingest(provider, selector, raw)
+        fetched = provider.fetch(selector)
+        report["requests_attempted"] = fetched.requests
+        report["artifact_bytes"] = len(fetched.raw)
+        result = store.ingest(provider, selector, fetched.raw)
         report.update(result, status="committed", totals=store.stats())
     except CorpusError as exc:
         report["error"] = str(exc)
@@ -67,6 +67,7 @@ def main():
     search.add_argument("--text", default="")
     search.add_argument("--edition", default="")
     search.add_argument("--provider", choices=PROVIDERS, default="")
+    search.add_argument("--opinion-role", action="append", choices=get_args(OpinionRole), default=[])
     search.add_argument("--currentness", choices=("unresolved", "current", "historical", "repealed", "superseded"),
                         default="unresolved")
     search.add_argument("--limit", type=int, default=12)
@@ -86,10 +87,12 @@ def main():
             print(json.dumps(store.stats(), indent=2))
         else:
             query = CorpusQuery(args.jurisdiction, args.authority_type, citation=args.citation, text=args.text,
-                                edition=args.edition, provider=args.provider, currentness=args.currentness, limit=args.limit)
+                                edition=args.edition, provider=args.provider, currentness=args.currentness,
+                                opinion_roles=tuple(args.opinion_role), limit=args.limit)
             matches = store.search(query)
             for match in matches:
                 match["provenance"] = store.provenance(match["version_id"])
+                match["relationships"] = store.relationships(match["version_id"])
             print(json.dumps(matches, indent=2))
     return 0
 

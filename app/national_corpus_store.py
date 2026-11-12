@@ -33,6 +33,12 @@ CREATE TABLE IF NOT EXISTS corpus_observations(
     PRIMARY KEY(snapshot_id, native_id)
 );
 CREATE INDEX IF NOT EXISTS corpus_observation_version ON corpus_observations(version_id);
+CREATE TABLE IF NOT EXISTS corpus_relationships(
+    snapshot_id TEXT NOT NULL, native_id TEXT NOT NULL,
+    kind TEXT NOT NULL, target_native_id TEXT NOT NULL,
+    PRIMARY KEY(snapshot_id, native_id, kind, target_native_id),
+    FOREIGN KEY(snapshot_id, native_id) REFERENCES corpus_observations(snapshot_id, native_id)
+);
 CREATE TABLE IF NOT EXISTS corpus_citations(
     citation TEXT NOT NULL, version_id TEXT NOT NULL REFERENCES corpus_versions(version_id),
     PRIMARY KEY(citation, version_id)
@@ -89,13 +95,13 @@ class SQLiteNormalizedCorpus:
                     "SELECT count(*) FROM corpus_observations WHERE snapshot_id=?", (snapshot,),
                 ).fetchone()[0]
                 return {"snapshot": snapshot, "source_hash": raw_hash, "records": seen, "new_versions": 0,
-                        "changed_records": 0, "unchanged_snapshot": True}
+                        "changed_records": 0, "relationships_created": 0, "unchanged_snapshot": True}
             db.execute("INSERT OR IGNORE INTO corpus_artifacts VALUES(?,?)", (raw_hash, raw))
             db.execute("INSERT INTO corpus_snapshots VALUES(?,?,?,?,?,?,?,?,?)", (
                 snapshot, source.name, selector, raw_hash, url, source.parser_revision, timestamp,
                 timestamp, encode(asdict(source)),
             ))
-            records = added = changed = 0
+            records = added = changed = edges = 0
             for observation in provider.normalize(selector, raw):
                 version = observation.version
                 if (version.authority_type != source.authority_type or version.jurisdiction not in source.jurisdictions
@@ -115,13 +121,19 @@ class SQLiteNormalizedCorpus:
                     ))
                 except sqlite3.IntegrityError as exc:
                     raise CorpusError("duplicate_source_native_identity") from exc
+                relationship_rows = [
+                    (snapshot, observation.native_id, edge.kind, edge.target_native_id)
+                    for edge in observation.relationships
+                ]
+                db.executemany("INSERT INTO corpus_relationships VALUES(?,?,?,?)", relationship_rows)
+                edges += len(relationship_rows)
                 records += 1
                 added += inserted
                 changed += bool(existed and inserted)
             if not records:
                 raise CorpusError("empty_source_snapshot")
         return {"snapshot": snapshot, "source_hash": raw_hash, "records": records, "new_versions": added,
-                "changed_records": changed, "unchanged_snapshot": False}
+                "changed_records": changed, "relationships_created": edges, "unchanged_snapshot": False}
 
     def _write_version(self, version):
         version_id = version.version_id
@@ -142,7 +154,8 @@ class SQLiteNormalizedCorpus:
 
     def search(self, query):
         if (not query.jurisdiction or not query.authority_type or not 1 <= query.limit <= 100
-                or len(query.text) > 500 or len(query.citation) > 200 or len(query.opinion_roles) > 7):
+                or len(query.text) > 500 or len(query.citation) > 200 or len(query.opinion_roles) > 15
+                or (query.published_from and query.published_through and query.published_from > query.published_through)):
             raise CorpusError("invalid_corpus_query")
         # All eligibility predicates apply before ranking and limiting.
         joins = []
@@ -168,6 +181,17 @@ class SQLiteNormalizedCorpus:
             placeholders = ",".join("?" for _ in query.opinion_roles)
             filters.append(f"v.opinion_role IN ({placeholders})")
             params.extend(query.opinion_roles)
+        for field in ("court", "agency", "legislature"):
+            value = getattr(query, field)
+            if value:
+                filters.append(f"json_extract(v.payload, '$.{field}')=?")
+                params.append(value)
+        if query.published_from:
+            filters.append("json_extract(v.payload, '$.published_on')>=?")
+            params.append(query.published_from.isoformat())
+        if query.published_through:
+            filters.append("json_extract(v.payload, '$.published_on')<=?")
+            params.append(query.published_through.isoformat())
         if query.provider:
             filters.append("""EXISTS (SELECT 1 FROM corpus_observations o
                 JOIN corpus_snapshots s ON s.id=o.snapshot_id WHERE o.version_id=v.version_id AND s.provider=?)""")
@@ -198,6 +222,18 @@ class SQLiteNormalizedCorpus:
     def snapshot_bytes(self, content_hash):
         row = self.connection.execute("SELECT raw FROM corpus_artifacts WHERE hash=?", (content_hash,)).fetchone()
         return row["raw"] if row else None
+
+    def relationships(self, version_id, *, limit=100):
+        if not 1 <= limit <= 1000:
+            raise CorpusError("invalid_relationship_limit")
+        rows = self.connection.execute("""
+            SELECT s.provider, r.snapshot_id, r.native_id, r.kind, r.target_native_id
+            FROM corpus_observations o
+            JOIN corpus_relationships r ON r.snapshot_id=o.snapshot_id AND r.native_id=o.native_id
+            JOIN corpus_snapshots s ON s.id=o.snapshot_id
+            WHERE o.version_id=? ORDER BY s.id, r.kind, r.target_native_id LIMIT ?
+            """, (version_id, limit))
+        return [dict(row) for row in rows]
 
     def stats(self):
         return dict(self.connection.execute("""

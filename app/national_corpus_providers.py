@@ -1,6 +1,8 @@
 """Server-owned selectors and deterministic parsers for public federal editions."""
 
 from datetime import datetime
+from html.parser import HTMLParser
+from http.client import HTTPException
 from io import BytesIO
 from time import monotonic
 import re
@@ -12,7 +14,8 @@ from zipfile import BadZipFile, ZipFile
 
 from app.authority import normalized_source
 from app.models.http_transport import NoRedirect
-from app.national_corpus import AuthorityVersion, CorpusError, Observation, Source
+from app.national_corpus import AuthorityVersion, CorpusError, FetchedSource, Observation, Source
+from app.national_corpus_courtlistener import CourtListenerProvider
 
 
 USLM = "{http://xml.house.gov/schemas/uslm/1.0}"
@@ -34,7 +37,7 @@ def text_of(element):
     return normalized_source("".join(element.itertext())) if element is not None else ""
 
 
-class FederalProvider:
+class PublicProvider:
     def fetch(self, selector):
         url = self.source_url(selector)
         deadline = monotonic() + 30
@@ -43,7 +46,8 @@ class FederalProvider:
         raw = bytearray()
         try:
             with opener.open(request, timeout=10) as response:
-                if response.geturl() != url or response.status != 200:
+                if (response.geturl() != url or response.status != 200
+                        or response.headers.get("Content-Encoding", "identity") != "identity"):
                     raise CorpusError("source_response_invalid")
                 while True:
                     chunk = response.read1(min(65536, self.source.max_bytes + 1 - len(raw)))
@@ -53,16 +57,16 @@ class FederalProvider:
                     if monotonic() > deadline:
                         raise CorpusError("source_download_deadline")
                     if not chunk:
-                        return bytes(raw)
+                        return FetchedSource(bytes(raw), requests=1)
         except HTTPError as exc:
             status = exc.code
             exc.close()
             raise CorpusError(f"source_http_{status}") from None
-        except (URLError, OSError):
+        except (URLError, OSError, HTTPException):
             raise CorpusError("source_transport_error") from None
 
 
-class OLRCProvider(FederalProvider):
+class OLRCProvider(PublicProvider):
     source = Source(
         name="olrc", host="uscode.house.gov", authority_type="statute", jurisdictions=("US",),
         official_publisher=True, rendition="OLRC U.S. Code USLM release",
@@ -110,12 +114,15 @@ class OLRCProvider(FederalProvider):
             raise CorpusError("source_title_identity_mismatch")
         yield from self._sections(main, title, release, member, (title_path,))
 
-    def _sections(self, element, title, release, member, hierarchy):
+    def _sections(self, element, title, release, member, hierarchy, depth=0):
+        if depth > 16:
+            raise CorpusError("source_hierarchy_limit")
         containers = {USLM + name for name in ("subtitle", "chapter", "subchapter", "part", "subpart", "division")}
         for child in element:
             if child.tag in containers:
                 parent = child.get("identifier")
-                yield from self._sections(child, title, release, member, (*hierarchy, parent) if parent else hierarchy)
+                nested_hierarchy = (*hierarchy, parent) if parent else hierarchy
+                yield from self._sections(child, title, release, member, nested_hierarchy, depth + 1)
                 continue
             if child.tag != USLM + "section":
                 continue
@@ -145,7 +152,7 @@ class OLRCProvider(FederalProvider):
             yield Observation(version, native_id, f"{member}#{native_id}", text_of(number))
 
 
-class GovInfoCFRProvider(FederalProvider):
+class GovInfoCFRProvider(PublicProvider):
     source = Source(
         name="govinfo_cfr", host="www.govinfo.gov", authority_type="regulation", jurisdictions=("US",),
         official_publisher=True, rendition="GovInfo annual CFR XML rendition",
@@ -207,14 +214,129 @@ class GovInfoCFRProvider(FederalProvider):
                 )
                 yield Observation(version, f"{title}/{section[1]}", f"PART {part_number[1]} / SECTION {section[1]}", original)
 
-    def _operative_sections(self, element):
+    def _operative_sections(self, element, depth=0):
+        if depth > 8:
+            raise CorpusError("source_hierarchy_limit")
         for child in element:
             if child.tag == "SECTION":
                 yield child
             elif child.tag == "SUBPART":
-                yield from self._operative_sections(child)
+                yield from self._operative_sections(child, depth + 1)
+
+
+class VirginiaSectionParser(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.article = False
+        self.heading = False
+        self.body_depth = 0
+        self.body_closed = False
+        self.excluded = 0
+        self.headings = 0
+        self.heading_text = []
+        self.body_text = []
+
+    def handle_starttag(self, tag, attrs):
+        attributes = dict(attrs)
+        if tag == "article" and attributes.get("id") == "vacode":
+            self.article = True
+        if not self.article:
+            return
+        if tag in {"script", "style", "template", "iframe"}:
+            self.excluded += 1
+        if self.excluded:
+            return
+        if tag == "h2" and not self.body_depth:
+            self.heading = True
+            self.headings += 1
+        if tag == "section":
+            if self.body_depth:
+                self.body_depth += 1
+            elif attributes.get("data-table") == "CoV" and attributes.get("data-field") == "body":
+                if self.body_closed:
+                    raise CorpusError("duplicate_statutory_body")
+                self.body_depth = 1
+        if self.body_depth and tag in {"p", "li", "br", "div", "tr", "td"}:
+            self.body_text.append(" ")
+
+    def handle_endtag(self, tag):
+        if tag in {"script", "style", "template", "iframe"} and self.excluded:
+            self.excluded -= 1
+            return
+        if self.excluded:
+            return
+        if tag == "article":
+            self.article = False
+        if tag == "h2":
+            self.heading = False
+        if tag == "section" and self.body_depth:
+            self.body_depth -= 1
+            self.body_closed = not self.body_depth
+        if self.body_depth and tag in {"p", "li", "div", "tr", "td"}:
+            self.body_text.append(" ")
+
+    def handle_data(self, data):
+        if not self.article or self.excluded:
+            return
+        if self.heading:
+            self.heading_text.append(data)
+        if self.body_depth:
+            self.body_text.append(data)
+
+
+class VirginiaCodeProvider(PublicProvider):
+    source = Source(
+        name="virginia_code", host="law.lis.virginia.gov", authority_type="statute", jurisdictions=("US-VA",),
+        official_publisher=True, rendition="Virginia General Assembly online Code of Virginia",
+        endpoint="/vacode/title{title}/chapter{chapter}/section{section}/",
+        format="single official section HTML page", update="explicit chapter and section refresh",
+        rights="Virginia statutory text. The official website excludes licensed publisher annotations.",
+        attribution="Virginia General Assembly, Division of Legislative Automated Systems",
+        currentness_method="Checks the section heading against the requested citation. Effective dates and later changes unresolved.",
+        parser_revision="1", max_bytes=1024 * 1024,
+    )
+
+    def _selection(self, selector):
+        match = re.fullmatch(r"([0-9]{1,2}(?:\.[0-9]{1,2})?)/([0-9]{1,3}(?:\.[0-9]{1,3})?)/([0-9.]{1,5}-[0-9]{1,4}(?:\.[0-9]{1,3})?)", selector)
+        if not match or match[3].split("-")[0] != match[1]:
+            raise CorpusError("invalid_virginia_code_selector")
+        return match.groups()
+
+    def source_url(self, selector):
+        title, chapter, section = self._selection(selector)
+        path = self.source.endpoint.format(title=title, chapter=chapter, section=section)
+        return f"https://{self.source.host}{path}"
+
+    def normalize(self, selector, raw):
+        title, chapter, section = self._selection(selector)
+        parser = VirginiaSectionParser()
+        try:
+            parser.feed(raw.decode("utf-8-sig"))
+            parser.close()
+        except UnicodeError:
+            raise CorpusError("source_html_encoding_invalid") from None
+        heading = normalized_source("".join(parser.heading_text))
+        prefix = f"§ {section}. "
+        if parser.headings != 1 or not heading.startswith(prefix) or not parser.body_closed:
+            raise CorpusError("source_section_identity_mismatch")
+        body = normalized_source("".join(parser.body_text))
+        if not body or heading.removeprefix(prefix).casefold().startswith(("repealed", "reserved", "expired")):
+            raise CorpusError("source_statutory_text_unavailable")
+        citation = f"Va. Code § {section}"
+        version = AuthorityVersion(
+            jurisdiction="US-VA", sovereign="state", authority_type="statute",
+            identity_namespace="va_code", identity_key=section, citation=citation,
+            alternate_citations=(f"Va. Code Ann. § {section}",),
+            title=heading.removeprefix(prefix), edition="online codification",
+            text=body, hierarchy=(f"Title {title}", f"Chapter {chapter}"),
+            legislature="Virginia General Assembly",
+            limitations=("Effective dates and subsequent legislative changes unresolved.",),
+        )
+        yield Observation(version, section, "article#vacode section[data-table=CoV][data-field=body]", f"§ {section}")
 
 
 PROVIDERS = MappingProxyType({
-    provider.source.name: provider for provider in (OLRCProvider(), GovInfoCFRProvider())
+    provider.source.name: provider for provider in (
+        OLRCProvider(), GovInfoCFRProvider(), CourtListenerProvider(), VirginiaCodeProvider(),
+    )
 })
