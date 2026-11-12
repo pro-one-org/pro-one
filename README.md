@@ -82,6 +82,13 @@ python -B scripts/build_capability.py --jurisdiction Virginia --legal-area torts
 
 Options include `--provider virginia_official`, `--collection <source-collection.json>`, and `--previous <prior-bundle.json>`. Output must be a new review directory outside canonical data. It contains proposed records, candidate evaluations and a review report. No record is automatically approved, certified, committed or promoted. See [Capability compiler](docs/capability-compiler.md).
 
+## National corpus foundation
+
+The proposed normalized corpus foundation stores bounded OLRC U.S. Code and
+GovInfo annual CFR snapshots with versioned sections and exact source provenance
+in local SQLite. See the [corpus architecture and operator commands](docs/national-corpus.md)
+for measured coverage, retrieval constraints and outstanding acceptance.
+
 ## Validation
 
 ```text
