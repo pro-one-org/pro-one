@@ -11,7 +11,7 @@ class GenerationConfig(BaseModel):
 
     provider: str = Field(min_length=1, max_length=80, pattern=r"^[a-zA-Z0-9_.-]+$")
     model: str = Field(min_length=1, max_length=120, pattern=r"^[a-zA-Z0-9_.-]+$")
-    # An explicit caller assertion, never a model determination or legal finding.
+    # Legacy caller hint; cannot enable topics without deterministic scope.
     scope: Literal["unconfirmed", "within_workflow", "outside_workflow"] = "unconfirmed"
 
 

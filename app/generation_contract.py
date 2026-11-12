@@ -28,11 +28,14 @@ or action in its source. Empty actions and conclusions are mandatory in this con
 
 
 def build_model_request(package: dict[str, Any], config: GenerationConfig) -> ModelRequest:
+    if package.get("evidence_mode") in {"capability", "general_research"}:
+        return build_research_model_request(package, config)
     plan = package["response_plan"]
     facts = package["user_context"]["facts"]
-    # Scope is an explicit, unverified caller assertion. Missing scope inputs still
-    # narrow the contract, even if the caller asserts within_workflow.
-    discuss_topics = config.scope == "within_workflow" and not package["user_context"]["missing_information"]
+    # Caller generation.scope is compatibility metadata only. Authority comes
+    # from deterministic structured specification matching on sanitized context.
+    resolved_scope = package.get("scope_resolution", {})
+    discuss_topics = resolved_scope.get("state") == "confirmed_for_workflow" and not package["user_context"]["missing_information"]
     rule_support = plan["constraints"]["legal_rule_support"]
     claims = [deepcopy(c) for c in plan["claims"] if discuss_topics and all(
         rule_support[r]["rule_statement"]["user_facing_allowed"] for r in c["legal_rule_ids"]
@@ -67,7 +70,7 @@ def build_model_request(package: dict[str, Any], config: GenerationConfig) -> Mo
     controls.update(required_controls)
     payload = {
         "workflow_id": package["workflow_id"],
-        "scope": {"caller_assertion": config.scope, "confirmed_by_system": False,
+        "scope": {"caller_assertion": config.scope, "confirmed_by_system": discuss_topics,
                   "topics_enabled": discuss_topics, "jurisdiction": package["user_context"]["jurisdiction_scope"]},
         "user_facts": deepcopy(facts),
         "missing_information": deepcopy(package["user_context"]["missing_information"]),
@@ -119,3 +122,29 @@ def build_model_request(package: dict[str, Any], config: GenerationConfig) -> Mo
 
 def request_size(request: ModelRequest) -> int:
     return len(json.dumps(request.grounded_package, ensure_ascii=False))
+
+
+def build_research_model_request(package, config):
+    plan = package["response_plan"]
+    controls = sorted(set(plan["required_disclosures"] + plan["limitations"]))
+    data = {"workflow_id": None, "evidence_mode": package["evidence_mode"], "capability_id": package["capability_id"],
+            "scope": {"jurisdiction": package["user_context"]["jurisdiction_scope"]},
+            "claims": deepcopy(plan["claims"]), "citations": deepcopy(plan["citations"]),
+            "evidence_passages": deepcopy(package["grounding"]["passages"]), "user_facts": {},
+            "allowed_sections": plan["allowed_sections"], "required_sections": plan["required_sections"],
+            "required_disclosures": plan["required_disclosures"], "limitations": plan["limitations"],
+            "required_risk_notices": [], "response_constraints": [], "control_texts": controls,
+            "required_control_texts": controls, "strict_claim_text": True}
+    schema = GeneratedDraft.model_json_schema()
+    schema["properties"]["workflow_id"] = {"type": "null"}
+    return ModelRequest(config.provider, config.model, "grounded_research_v2",
+                        INSTRUCTIONS + "\nResearch output: each legal_information section must select exactly one claim and "
+                        "copy exactly one of its allowed_texts, preferring its plain-language variant. Use a separate section "
+                        "for each claim, with a unique section_id of next_steps or questions_to_answer. You may combine multiple "
+                        "claims in one section only by joining their allowed_texts with two newlines in claim_ids order. "
+                        "When the supplied claims cover distinct principles from different types of authority, "
+                        "include the relevant claims for each type. Preserve their separate scope and qualifications. "
+                        "Include every source limit as exact control text. No additional prose, invented examples, "
+                        "legal conclusions, authorities, quotations, currentness or approval claims are allowed.",
+                        data, schema, {"max_output_characters": 64000, "max_output_tokens": 16000},
+                        {"mode": package["evidence_mode"]})

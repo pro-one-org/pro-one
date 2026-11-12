@@ -835,46 +835,61 @@
       "evaluation_notes": "Evaluation is required before supported use."
     },
     "notes": "Placeholder sample data. Not legal guidance."
-  }
-,
+  },
   {
     "id": "va-small-claims-warrant-in-debt-information",
     "schema_version": "1.0.0",
-    "record_version": "0.1.1",
+    "record_version": "0.1.2",
     "last_modified": "2026-10-30",
     "response_constraints": {
       "support_gaps": [
         {
           "code": "universal_written_answer_requirement_unestablished",
           "description": "The current curated sources do not establish a universal written-answer requirement. This gap does not establish that no case-specific duty exists.",
-          "propositions": ["va-small-claims-universal-written-answer-requirement"],
+          "propositions": [
+            "va-small-claims-universal-written-answer-requirement"
+          ],
           "withhold_claims": true,
           "blocks_public_grounding": true,
-          "prohibited_conclusions": ["Do not assert a universal written-answer duty or the absence of any written-answer duty."]
+          "prohibited_conclusions": [
+            "Do not assert a universal written-answer duty or the absence of any written-answer duty."
+          ]
         },
         {
           "code": "universal_written_answer_deadline_unestablished",
           "description": "The current curated sources do not establish a universal written-answer deadline. No deadline or absence of a deadline may be inferred.",
-          "propositions": ["va-small-claims-universal-written-answer-deadline"],
+          "propositions": [
+            "va-small-claims-universal-written-answer-deadline"
+          ],
           "withhold_claims": true,
           "blocks_public_grounding": true,
-          "prohibited_conclusions": ["Do not invent a universal written-answer deadline or claim that Virginia defendants have no such deadline."]
+          "prohibited_conclusions": [
+            "Do not invent a universal written-answer deadline or claim that Virginia defendants have no such deadline."
+          ]
         },
         {
           "code": "appearance_wording_unresolved",
           "description": "The DC-402 and official self-help appearance wording remains unresolved. Preserve the separate source wording without resolving an appearance obligation.",
-          "propositions": ["va-small-claims-appearance-wording"],
+          "propositions": [
+            "va-small-claims-appearance-wording"
+          ],
           "withhold_claims": true,
           "blocks_public_grounding": true,
-          "prohibited_conclusions": ["Do not recommend whether the user should appear or decide the consequences of nonappearance."]
+          "prohibited_conclusions": [
+            "Do not recommend whether the user should appear or decide the consequences of nonappearance."
+          ]
         },
         {
           "code": "instructions_currentness_unresolved",
           "description": "The instruction excerpt applies only if the judge orders filing of Grounds of Defense. The sheet is marked September 2008; currentness and locality-specific application remain unresolved.",
-          "propositions": ["va-small-claims-grounds-of-defense-order"],
+          "propositions": [
+            "va-small-claims-grounds-of-defense-order"
+          ],
           "withhold_claims": false,
           "blocks_public_grounding": true,
-          "prohibited_conclusions": ["Do not treat the older instructions as certified current or infer a universal filing duty from conditional judge-order fields."]
+          "prohibited_conclusions": [
+            "Do not treat the older instructions as certified current or infer a universal filing duty from conditional judge-order fields."
+          ]
         },
         {
           "code": "local_practice_unresolved",
@@ -882,25 +897,649 @@
           "propositions": [],
           "withhold_claims": false,
           "blocks_public_grounding": false,
-          "prohibited_conclusions": ["Do not decide service validity, local filing requirements, strategy, or individual legal consequences."]
+          "prohibited_conclusions": [
+            "Do not decide service validity, local filing requirements, strategy, or individual legal consequences."
+          ]
         }
       ]
     },
     "title": "Virginia Small Claims Warrant in Debt Information",
     "description": "Proposed, narrowly scoped legal-information workflow for a self-represented defendant who identifies a served Virginia General District Court Small Claims Division Warrant in Debt (Form DC-402).",
     "status": "proposed",
-    "user_types":["self_represented_individual"],
-    "legal_area":"civil_procedure",
-    "topics":["virginia_small_claims","warrant_in_debt","return_date","user_directed_response"],
-    "jurisdiction":{"country":"US","state":"Virginia","locality":null,"court":"Virginia General District Court Small Claims Division","agency":null,"jurisdiction_notes":"Only a served Form DC-402 small-claims Warrant in Debt is in scope; all other courts, forms, and procedures are excluded."},
-    "scope":{"purpose":"Help a user identify the official form and court, organize the form's stated information, understand the official return-date process, and prepare user-directed questions and an outline without deciding a response.","legal_information_only":true,"includes":["Explain source-supported terms on Form DC-402.","Help the user identify the court, case number, return date, claim amount, and stated claim basis.","Explain that the official form says a judgment may be entered if the defendant does not appear.","Offer a user-directed checklist and official source links."],"excludes":["Deciding whether the user should admit, deny, contest, remove, settle, or assert a defense.","Calculating a deadline or deciding whether service was valid.","Completing, signing, filing, serving, or submitting a document.","Giving advice on cases outside Virginia small claims or involving high-consequence issues."],"assumptions":["The user has a served document or reliable form details.","The workflow remains proposed and is not publicly supported."]},
-    "sources":{"required_source_ids":["va-small-claims-procedure-code","va-dc402-warrant-in-debt-small-claims-form","va-dc402-warrant-in-debt-instructions","va-small-claims-self-help"],"optional_source_ids":[],"source_review_required":true,"source_notes":"All sources require freshness, legal, and local-practice review before supported use; the instructions are marked September 2008."},
-    "intake":{"required_inputs":["state","court_name_or_locality","document_title_or_form_number","return_date_and_time_if_shown","user_goal"],"optional_inputs":["case_number","claim_amount_as_shown","stated_basis_of_claim","redacted_document_summary"],"excluded_inputs":["social_security_number","bank_account_numbers","full_date_of_birth","unredacted_sensitive_documents","facts_for_pro_one_to_invent"],"collects_sensitive_data":true,"data_minimization_notes":"Use user summaries and only the fields printed on the warrant when needed; do not request uploads or unnecessary party information."},
-    "process":{"process_step_ids":["va-small-claims-identify-warrant","va-small-claims-organize-user-questions","va-small-claims-deadline-safety-routing"],"summary_steps":["Confirm the document appears to be Virginia Form DC-402 and identify the listed court.","Organize user-confirmed warrant information and questions without selecting a factual or legal position.","Flag the listed return date for prompt official verification and provide safe resource routing."],"deadline_handling":"qualified_review_required","process_notes":"The workflow does not calculate deadlines; the served warrant, current official sources, and court information must be checked."},
-    "outputs":{"allowed_outputs":["information_summary","checklist","document_outline","citation_summary","referral_prompt"],"prohibited_outputs":["legal_opinion","guaranteed_outcome","deadline_calculation","case_strategy","final_filing_decision","emergency_advice","unsupported_document"],"document_types":["court_form"],"output_notes":"Any outline remains a user-review aid, not an answer, grounds of defense, or filing-ready document."},
-    "safety":{"risk_level":"high","escalation_triggers":["Return date is today, imminent, unclear, or already passed.","User asks Pro-One to choose an admission, denial, defense, removal, or strategy.","Document is not clearly Form DC-402 or court jurisdiction is uncertain.","Matter involves eviction, family law, immigration, criminal exposure, domestic violence, or other high-consequence facts."],"refusal_triggers":["User asks Pro-One to invent facts, defenses, or evidence.","User asks Pro-One to choose a response or advise ignoring the warrant.","User asks Pro-One to sign, file, serve, or submit a document."],"required_warnings":["This proposed workflow provides legal information, not legal advice.","The listed return date may be important; check the served warrant and official court information promptly.","Pro-One cannot decide what factual or legal position you should take or say a document is legally sufficient."],"safety_notes":"This is a proposed research specification and is not publicly available or supported."},
-    "review":{"status":"proposed","reviewed_by":null,"reviewer_role":null,"review_scope":[],"reviewed_on":null,"reviewed_record_version":null,"review_notes":"Official-source research completed only; no attorney, legal, privacy, or release approval is claimed."},
-    "evaluation":{"required_evaluation_fixture_ids":["va-small-claims-ordinary-user-fixture","va-small-claims-unknown-court-fixture","va-small-claims-unknown-document-fixture","va-small-claims-imminent-date-fixture","va-small-claims-passed-date-fixture","va-small-claims-response-choice-fixture","va-small-claims-invent-defense-fixture","va-small-claims-out-of-scope-fixture","va-small-claims-sensitive-data-fixture","va-small-claims-deadline-calculation-fixture","va-small-claims-sufficiency-fixture","va-small-claims-citation-grounding-fixture"],"required_tests":["source_grounding","jurisdiction_clarity","legal_advice_boundary","deadline_handling","sensitive_data_minimization","escalation_trigger_detection"],"success_criteria":["The workflow stays within the identified Form DC-402 small-claims scope.","It never chooses a user response or defense.","It directs users to current official sources and flags return-date uncertainty."],"known_failure_modes":["Treating a non-small-claims warrant or another court procedure as in scope.","Giving a calculated deadline or response strategy.","Collecting sensitive document contents unnecessarily."],"evaluation_notes":"Twelve proposed fixtures define behavior but are not reviewed or approved."},
-    "notes":"Real jurisdiction-specific proposed record; not legal guidance or public support."
+    "user_types": [
+      "self_represented_individual"
+    ],
+    "legal_area": "civil_procedure",
+    "topics": [
+      "virginia_small_claims",
+      "warrant_in_debt",
+      "return_date",
+      "user_directed_response"
+    ],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": "Virginia General District Court Small Claims Division",
+      "agency": null,
+      "jurisdiction_notes": "Only a served Form DC-402 small-claims Warrant in Debt is in scope; all other courts, forms, and procedures are excluded."
+    },
+    "scope": {
+      "purpose": "Help a user identify the official form and court, organize the form's stated information, understand the official return-date process, and prepare user-directed questions and an outline without deciding a response.",
+      "legal_information_only": true,
+      "includes": [
+        "Explain source-supported terms on Form DC-402.",
+        "Help the user identify the court, case number, return date, claim amount, and stated claim basis.",
+        "Explain that the official form says a judgment may be entered if the defendant does not appear.",
+        "Offer a user-directed checklist and official source links."
+      ],
+      "excludes": [
+        "Deciding whether the user should admit, deny, contest, remove, settle, or assert a defense.",
+        "Calculating a deadline or deciding whether service was valid.",
+        "Completing, signing, filing, serving, or submitting a document.",
+        "Giving advice on cases outside Virginia small claims or involving high-consequence issues."
+      ],
+      "assumptions": [
+        "The user has a served document or reliable form details.",
+        "The workflow remains proposed and is not publicly supported."
+      ]
+    },
+    "sources": {
+      "required_source_ids": [
+        "va-small-claims-procedure-code",
+        "va-dc402-warrant-in-debt-small-claims-form",
+        "va-dc402-warrant-in-debt-instructions",
+        "va-small-claims-self-help"
+      ],
+      "optional_source_ids": [],
+      "source_review_required": true,
+      "source_notes": "All sources require freshness, legal, and local-practice review before supported use; the instructions are marked September 2008."
+    },
+    "intake": {
+      "required_inputs": [
+        "state",
+        "court_name_or_locality",
+        "document_title_or_form_number",
+        "return_date_and_time_if_shown",
+        "user_goal"
+      ],
+      "optional_inputs": [
+        "case_number",
+        "claim_amount_as_shown",
+        "stated_basis_of_claim",
+        "redacted_document_summary",
+        "country",
+        "user_type",
+        "matter_type",
+        "court",
+        "form_number",
+        "role",
+        "document_title"
+      ],
+      "excluded_inputs": [
+        "social_security_number",
+        "bank_account_numbers",
+        "full_date_of_birth",
+        "unredacted_sensitive_documents",
+        "facts_for_pro_one_to_invent"
+      ],
+      "collects_sensitive_data": true,
+      "data_minimization_notes": "Use user summaries and only the fields printed on the warrant when needed; do not request uploads or unnecessary party information."
+    },
+    "process": {
+      "process_step_ids": [
+        "va-small-claims-identify-warrant",
+        "va-small-claims-organize-user-questions",
+        "va-small-claims-deadline-safety-routing"
+      ],
+      "summary_steps": [
+        "Confirm the document appears to be Virginia Form DC-402 and identify the listed court.",
+        "Organize user-confirmed warrant information and questions without selecting a factual or legal position.",
+        "Flag the listed return date for prompt official verification and provide safe resource routing."
+      ],
+      "deadline_handling": "qualified_review_required",
+      "process_notes": "The workflow does not calculate deadlines; the served warrant, current official sources, and court information must be checked."
+    },
+    "outputs": {
+      "allowed_outputs": [
+        "information_summary",
+        "checklist",
+        "document_outline",
+        "citation_summary",
+        "referral_prompt"
+      ],
+      "prohibited_outputs": [
+        "legal_opinion",
+        "guaranteed_outcome",
+        "deadline_calculation",
+        "case_strategy",
+        "final_filing_decision",
+        "emergency_advice",
+        "unsupported_document"
+      ],
+      "document_types": [
+        "court_form"
+      ],
+      "output_notes": "Any outline remains a user-review aid, not an answer, grounds of defense, or filing-ready document."
+    },
+    "safety": {
+      "risk_level": "high",
+      "escalation_triggers": [
+        "Return date is today, imminent, unclear, or already passed.",
+        "User asks Pro-One to choose an admission, denial, defense, removal, or strategy.",
+        "Document is not clearly Form DC-402 or court jurisdiction is uncertain.",
+        "Matter involves eviction, family law, immigration, criminal exposure, domestic violence, or other high-consequence facts."
+      ],
+      "refusal_triggers": [
+        "User asks Pro-One to invent facts, defenses, or evidence.",
+        "User asks Pro-One to choose a response or advise ignoring the warrant.",
+        "User asks Pro-One to sign, file, serve, or submit a document."
+      ],
+      "required_warnings": [
+        "This proposed workflow provides legal information, not legal advice.",
+        "The listed return date may be important; check the served warrant and official court information promptly.",
+        "Pro-One cannot decide what factual or legal position you should take or say a document is legally sufficient."
+      ],
+      "safety_notes": "This is a proposed research specification and is not publicly available or supported."
+    },
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null,
+      "review_notes": "Official-source research completed only; no attorney, legal, privacy, or release approval is claimed."
+    },
+    "evaluation": {
+      "required_evaluation_fixture_ids": [
+        "va-small-claims-ordinary-user-fixture",
+        "va-small-claims-unknown-court-fixture",
+        "va-small-claims-unknown-document-fixture",
+        "va-small-claims-imminent-date-fixture",
+        "va-small-claims-passed-date-fixture",
+        "va-small-claims-response-choice-fixture",
+        "va-small-claims-invent-defense-fixture",
+        "va-small-claims-out-of-scope-fixture",
+        "va-small-claims-sensitive-data-fixture",
+        "va-small-claims-deadline-calculation-fixture",
+        "va-small-claims-sufficiency-fixture",
+        "va-small-claims-citation-grounding-fixture"
+      ],
+      "required_tests": [
+        "source_grounding",
+        "jurisdiction_clarity",
+        "legal_advice_boundary",
+        "deadline_handling",
+        "sensitive_data_minimization",
+        "escalation_trigger_detection"
+      ],
+      "success_criteria": [
+        "The workflow stays within the identified Form DC-402 small-claims scope.",
+        "It never chooses a user response or defense.",
+        "It directs users to current official sources and flags return-date uncertainty."
+      ],
+      "known_failure_modes": [
+        "Treating a non-small-claims warrant or another court procedure as in scope.",
+        "Giving a calculated deadline or response strategy.",
+        "Collecting sensitive document contents unnecessarily."
+      ],
+      "evaluation_notes": "Twelve proposed fixtures define behavior but are not reviewed or approved."
+    },
+    "notes": "Real jurisdiction-specific proposed record; not legal guidance or public support.",
+    "routing": {
+      "required_fields": [
+        "country",
+        "state",
+        "user_type",
+        "matter_type",
+        "court",
+        "form_number",
+        "role"
+      ],
+      "selectors": {
+        "matter_type": [
+          "small_claims_debt"
+        ],
+        "court": [
+          "Virginia General District Court Small Claims Division",
+          "General District Court"
+        ],
+        "form_number": [
+          "DC-402"
+        ],
+        "role": [
+          "defendant"
+        ],
+        "document_title": [
+          "Warrant in Debt — Small Claims Division"
+        ]
+      },
+      "intake_bindings": {
+        "state": "state",
+        "document_title_or_form_number": "form_number"
+      }
+    }
+  },
+  {
+    "id": "va-scc-business-record-navigation",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "response_constraints": {
+      "support_gaps": [
+        {
+          "code": "va-scc-business-record-navigation-case-specific-requirements-unresolved-1",
+          "description": "Navigation only: no live entity lookup or conclusion about active status, good standing, reinstatement, registration fees, taxes, or filing duties.",
+          "propositions": [],
+          "withhold_claims": false,
+          "blocks_public_grounding": false,
+          "prohibited_conclusions": [
+            "Do not resolve case-specific legal duties, deadlines, or status."
+          ]
+        },
+        {
+          "code": "va-scc-business-record-navigation-case-specific-requirements-unresolved-2",
+          "description": "Entity-specific status and requirements must be checked directly with SCC; the curated excerpts do not establish compliance.",
+          "propositions": [],
+          "withhold_claims": false,
+          "blocks_public_grounding": false,
+          "prohibited_conclusions": [
+            "Do not resolve case-specific legal duties, deadlines, or status."
+          ]
+        }
+      ]
+    },
+    "title": "Virginia business records and status navigation",
+    "description": "Help a small-business operator locate official SCC entity information and prepare questions about the displayed record, without deciding compliance or taking filing actions.",
+    "status": "proposed",
+    "user_types": [
+      "small_business_owner"
+    ],
+    "legal_area": "business_records",
+    "topics": [
+      "business_record_status"
+    ],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Virginia",
+      "locality": null,
+      "court": null,
+      "agency": "Virginia State Corporation Commission",
+      "jurisdiction_notes": "Structured fit is not a legal jurisdiction determination."
+    },
+    "scope": {
+      "purpose": "Help a small-business operator locate official SCC entity information and prepare questions about the displayed record, without deciding compliance or taking filing actions.",
+      "legal_information_only": true,
+      "includes": [
+        "Locate official information.",
+        "Explain only the curated document-navigation topics.",
+        "Organize user questions."
+      ],
+      "excludes": [
+        "Choose strategy, defenses, admissions, removal, settlement, or appearance.",
+        "Determine service validity, legal sufficiency, entity compliance, or a final deadline.",
+        "Sign, file, serve, pay, submit, or perform an action for the user.",
+        "Navigation only: no live entity lookup or conclusion about active status, good standing, reinstatement, registration fees, taxes, or filing duties.",
+        "Entity-specific status and requirements must be checked directly with SCC; the curated excerpts do not establish compliance."
+      ],
+      "assumptions": [
+        "User confirms document and agency/court context; no legal approval is claimed."
+      ]
+    },
+    "sources": {
+      "required_source_ids": [
+        "va-scc-cis-help",
+        "va-scc-clerk-records"
+      ],
+      "optional_source_ids": [],
+      "source_review_required": true,
+      "source_notes": "Official pages checked 2026-10-30 for research only; no currentness certification."
+    },
+    "intake": {
+      "required_inputs": [
+        "state",
+        "court_name_or_locality",
+        "document_title_or_form_number",
+        "user_goal"
+      ],
+      "optional_inputs": [
+        "country",
+        "user_type",
+        "matter_type",
+        "court",
+        "document_title",
+        "form_number",
+        "role",
+        "redacted_document_summary"
+      ],
+      "excluded_inputs": [
+        "social_security_number",
+        "bank_account_numbers",
+        "unredacted_sensitive_documents",
+        "facts_for_pro_one_to_invent"
+      ],
+      "collects_sensitive_data": false,
+      "data_minimization_notes": "No uploads, party identifiers, entity identifiers, or account information are needed for navigation."
+    },
+    "process": {
+      "process_step_ids": [
+        "va-scc-business-record-navigation-resources-step"
+      ],
+      "summary_steps": [
+        "Confirm the structured workflow context.",
+        "Read the linked official information and organize questions."
+      ],
+      "deadline_handling": "qualified_review_required",
+      "process_notes": "No automatic lookup, filing, or deadline calculation."
+    },
+    "outputs": {
+      "allowed_outputs": [
+        "information_summary",
+        "checklist",
+        "document_outline",
+        "citation_summary",
+        "referral_prompt"
+      ],
+      "prohibited_outputs": [
+        "legal_opinion",
+        "guaranteed_outcome",
+        "deadline_calculation",
+        "case_strategy",
+        "final_filing_decision",
+        "emergency_advice",
+        "unsupported_document"
+      ],
+      "document_types": [
+        "other"
+      ],
+      "output_notes": "An informational summary or checklist is not a filing-ready document or compliance opinion."
+    },
+    "safety": {
+      "risk_level": "medium",
+      "escalation_triggers": [
+        "Unclear status, document, or timing; high-consequence facts."
+      ],
+      "refusal_triggers": [
+        "Request for invented facts, strategy, final deadline, or legal sufficiency."
+      ],
+      "required_warnings": [
+        "Pro-One provides legal information, not legal advice or representation.",
+        "You control legal decisions; check official documents and current court or agency instructions."
+      ],
+      "safety_notes": "Proposed development workflow only."
+    },
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "evaluation": {
+      "required_evaluation_fixture_ids": [
+        "va-scc-business-record-navigation-ordinary-fixture",
+        "va-scc-business-record-navigation-missing-fixture",
+        "va-scc-business-record-navigation-outside-fixture",
+        "va-scc-business-record-navigation-privacy-fixture",
+        "va-scc-business-record-navigation-citation-fixture",
+        "va-scc-business-record-navigation-unsafe-fixture"
+      ],
+      "required_tests": [
+        "source_grounding",
+        "privacy",
+        "scope",
+        "user_control"
+      ],
+      "success_criteria": [
+        "No unsupported case-specific conclusion."
+      ],
+      "known_failure_modes": [
+        "Cross-workflow advice or invented facts."
+      ],
+      "evaluation_notes": "Automated checks do not replace manual legal/source review."
+    },
+    "notes": "Real official-source research, proposed; no legal approval, currentness certification, or public availability.",
+    "routing": {
+      "required_fields": [
+        "country",
+        "state",
+        "user_type",
+        "matter_type",
+        "court",
+        "document_title",
+        "role"
+      ],
+      "selectors": {
+        "matter_type": [
+          "business_record_status"
+        ],
+        "court": [
+          "Virginia State Corporation Commission"
+        ],
+        "document_title": [
+          "Business entity record"
+        ],
+        "role": [
+          "business_operator"
+        ]
+      },
+      "intake_bindings": {
+        "state": "state",
+        "court_name_or_locality": "court",
+        "document_title_or_form_number": "document_title"
+      }
+    }
+  },
+  {
+    "id": "md-district-civil-defendant-orientation",
+    "schema_version": "1.0.0",
+    "record_version": "0.1.0",
+    "last_modified": "2026-10-30",
+    "response_constraints": {
+      "support_gaps": [
+        {
+          "code": "md-district-civil-defendant-orientation-case-specific-requirements-unresolved-1",
+          "description": "Ordinary civil money-claim document orientation only; not eviction, foreclosure, criminal, family, emergency, circuit court, or post-judgment advice.",
+          "propositions": [],
+          "withhold_claims": false,
+          "blocks_public_grounding": false,
+          "prohibited_conclusions": [
+            "Do not resolve case-specific legal duties, deadlines, or status."
+          ]
+        },
+        {
+          "code": "md-district-civil-defendant-orientation-case-specific-requirements-unresolved-2",
+          "description": "Notice timing has exceptions and case-specific facts; no filing deadline, service validity, defense, appearance, venue, or jurisdiction determination is provided.",
+          "propositions": [],
+          "withhold_claims": false,
+          "blocks_public_grounding": false,
+          "prohibited_conclusions": [
+            "Do not resolve case-specific legal duties, deadlines, or status."
+          ]
+        }
+      ]
+    },
+    "title": "Maryland District Court civil summons orientation",
+    "description": "Orient an individual defendant to an ordinary District Court civil money-claim summons and official court help, without choosing a response or calculating a deadline.",
+    "status": "proposed",
+    "user_types": [
+      "self_represented_individual"
+    ],
+    "legal_area": "civil_procedure",
+    "topics": [
+      "district_court_civil_money_claim"
+    ],
+    "jurisdiction": {
+      "country": "US",
+      "state": "Maryland",
+      "locality": null,
+      "court": "Maryland District Court",
+      "agency": null,
+      "jurisdiction_notes": "Structured fit is not a legal jurisdiction determination."
+    },
+    "scope": {
+      "purpose": "Orient an individual defendant to an ordinary District Court civil money-claim summons and official court help, without choosing a response or calculating a deadline.",
+      "legal_information_only": true,
+      "includes": [
+        "Locate official information.",
+        "Explain only the curated document-navigation topics.",
+        "Organize user questions."
+      ],
+      "excludes": [
+        "Choose strategy, defenses, admissions, removal, settlement, or appearance.",
+        "Determine service validity, legal sufficiency, entity compliance, or a final deadline.",
+        "Sign, file, serve, pay, submit, or perform an action for the user.",
+        "Ordinary civil money-claim document orientation only; not eviction, foreclosure, criminal, family, emergency, circuit court, or post-judgment advice.",
+        "Notice timing has exceptions and case-specific facts; no filing deadline, service validity, defense, appearance, venue, or jurisdiction determination is provided."
+      ],
+      "assumptions": [
+        "User confirms document and agency/court context; no legal approval is claimed."
+      ]
+    },
+    "sources": {
+      "required_source_ids": [
+        "md-district-court-defendant-help"
+      ],
+      "optional_source_ids": [],
+      "source_review_required": true,
+      "source_notes": "Official pages checked 2026-10-30 for research only; no currentness certification."
+    },
+    "intake": {
+      "required_inputs": [
+        "state",
+        "court_name_or_locality",
+        "document_title_or_form_number",
+        "user_goal"
+      ],
+      "optional_inputs": [
+        "country",
+        "user_type",
+        "matter_type",
+        "court",
+        "document_title",
+        "form_number",
+        "role",
+        "redacted_document_summary"
+      ],
+      "excluded_inputs": [
+        "social_security_number",
+        "bank_account_numbers",
+        "unredacted_sensitive_documents",
+        "facts_for_pro_one_to_invent"
+      ],
+      "collects_sensitive_data": false,
+      "data_minimization_notes": "No uploads, party identifiers, entity identifiers, or account information are needed for navigation."
+    },
+    "process": {
+      "process_step_ids": [
+        "md-district-civil-defendant-orientation-resources-step"
+      ],
+      "summary_steps": [
+        "Confirm the structured workflow context.",
+        "Read the linked official information and organize questions."
+      ],
+      "deadline_handling": "qualified_review_required",
+      "process_notes": "No automatic lookup, filing, or deadline calculation."
+    },
+    "outputs": {
+      "allowed_outputs": [
+        "information_summary",
+        "checklist",
+        "document_outline",
+        "citation_summary",
+        "referral_prompt"
+      ],
+      "prohibited_outputs": [
+        "legal_opinion",
+        "guaranteed_outcome",
+        "deadline_calculation",
+        "case_strategy",
+        "final_filing_decision",
+        "emergency_advice",
+        "unsupported_document"
+      ],
+      "document_types": [
+        "court_form"
+      ],
+      "output_notes": "An informational summary or checklist is not a filing-ready document or compliance opinion."
+    },
+    "safety": {
+      "risk_level": "medium",
+      "escalation_triggers": [
+        "Unclear status, document, or timing; high-consequence facts."
+      ],
+      "refusal_triggers": [
+        "Request for invented facts, strategy, final deadline, or legal sufficiency."
+      ],
+      "required_warnings": [
+        "Pro-One provides legal information, not legal advice or representation.",
+        "You control legal decisions; check official documents and current court or agency instructions."
+      ],
+      "safety_notes": "Proposed development workflow only."
+    },
+    "review": {
+      "status": "proposed",
+      "reviewed_by": null,
+      "reviewer_role": null,
+      "review_scope": [],
+      "reviewed_on": null,
+      "reviewed_record_version": null
+    },
+    "evaluation": {
+      "required_evaluation_fixture_ids": [
+        "md-district-civil-defendant-orientation-ordinary-fixture",
+        "md-district-civil-defendant-orientation-missing-fixture",
+        "md-district-civil-defendant-orientation-outside-fixture",
+        "md-district-civil-defendant-orientation-privacy-fixture",
+        "md-district-civil-defendant-orientation-citation-fixture",
+        "md-district-civil-defendant-orientation-unsafe-fixture"
+      ],
+      "required_tests": [
+        "source_grounding",
+        "privacy",
+        "scope",
+        "user_control"
+      ],
+      "success_criteria": [
+        "No unsupported case-specific conclusion."
+      ],
+      "known_failure_modes": [
+        "Cross-workflow advice or invented facts."
+      ],
+      "evaluation_notes": "Automated checks do not replace manual legal/source review."
+    },
+    "notes": "Real official-source research, proposed; no legal approval, currentness certification, or public availability.",
+    "routing": {
+      "required_fields": [
+        "country",
+        "state",
+        "user_type",
+        "matter_type",
+        "court",
+        "document_title",
+        "role"
+      ],
+      "selectors": {
+        "matter_type": [
+          "district_court_civil_money_claim"
+        ],
+        "court": [
+          "Maryland District Court"
+        ],
+        "document_title": [
+          "Civil summons"
+        ],
+        "role": [
+          "defendant"
+        ]
+      },
+      "intake_bindings": {
+        "state": "state",
+        "court_name_or_locality": "court",
+        "document_title_or_form_number": "document_title"
+      }
+    }
   }
 ]

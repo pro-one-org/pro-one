@@ -1,6 +1,6 @@
 # Grounded response assembly
 
-This assembly layer creates an inspection contract for constrained generation. It makes no model call and produces no legal prose. The separate [development generation layer](model-generation.md) now consumes it through a provider-neutral interface and mandatory validation, using an offline adapter only. All Virginia records, passages, and reviews remain proposed; no production workflow exists.
+This workflow assembly layer creates an inspection contract for constrained generation. It makes no model call or legal prose. The [generation layer](model-generation.md) consumes it through configured OpenAI/Anthropic or offline adapters with mandatory validation. Capability/general research assembles evidence independently and shares generation/validation/rendering; see [Architecture](architecture.md). All real coverage remains proposed and public execution is blocked.
 
 ## Separate gates
 

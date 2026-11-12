@@ -28,6 +28,17 @@ def passage_relationship_errors(
         errors.append("verification_precedes_retrieval")
 
     dimensions = ("country", "state", "locality", "court", "agency")
+    if source is not None and any(passage["jurisdiction"].get(k) != source["jurisdiction"].get(k) for k in dimensions):
+        errors.append("source_passage_jurisdiction_mismatch")
+    for rule_id in passage["legal_rule_ids"]:
+        if rule_id not in legal_rules:
+            errors.append(f"unknown_legal_rule_ids:{rule_id}")
+        elif not passage["workflow_ids"]:
+            rule = legal_rules[rule_id]
+            if passage["source_id"] not in rule["source_support"]["required_source_ids"] + rule["source_support"].get("optional_source_ids", []):
+                errors.append(f"source_not_linked_to_record:{rule_id}")
+            if any(passage["jurisdiction"].get(k) != rule["jurisdiction"].get(k) for k in dimensions):
+                errors.append(f"jurisdiction_mismatch:{rule_id}")
     for workflow_id in passage["workflow_ids"]:
         workflow = workflows.get(workflow_id)
         if workflow is None:

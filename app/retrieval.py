@@ -64,6 +64,32 @@ class PassageRetrievalService:
         self.repository = repository
         self.readiness_service = WorkflowReadinessService(repository)
 
+    def retrieve_capability(self, capability_id: str, request: RetrievalRequest):
+        from app.capabilities import ResearchMatter
+        from app.legal_research import GeneralLegalResearchService
+        capability = self.repository.get("legal_capabilities", capability_id)
+        if capability is None:
+            return None
+        allowed = {"source_ids": set(capability["source_ids"]), "legal_rule_ids": set(capability["legal_rule_ids"]),
+                   "process_step_ids": set(capability["process_step_ids"]),
+                   "proposition_ids": {t for pid in capability["source_passage_ids"] for t in self.repository.get("source_passages", pid)["propositions"]}}
+        invalid = {field: sorted(set(getattr(request, field)) - ids) for field, ids in allowed.items() if set(getattr(request, field)) - ids}
+        if invalid:
+            raise RetrievalFilterError(invalid)
+        prepared = GeneralLegalResearchService(self.repository).assemble(ResearchMatter(
+            country=capability["jurisdiction"]["country"], state=capability["jurisdiction"].get("state"),
+            legal_area=capability["legal_area"], topics=capability["topics"], sovereign=capability["sovereign"]), selected_capability_id=capability_id)
+        package = prepared["package"]
+        passages = package["grounding"]["passages"] if package else []
+        passages = [p for p in passages if all(not getattr(request, field) or set(getattr(request, field)) & set(
+            [p["source_id"]] if field == "source_ids" else p["propositions"] if field == "proposition_ids" else p[field]
+        ) for field in allowed)]
+        if request.query is not None:
+            passages = [p for p in passages if lexical_score(tokens(request.query), p) > 0]
+            passages.sort(key=lambda p: (-lexical_score(tokens(request.query), p), p["id"]))
+        return {"capability_id": capability_id, "mode": "capability", "passages": deepcopy(passages[:request.limit]),
+                "public_execution": {"allowed": False}, "limitations": package["response_plan"]["limitations"] if package else []}
+
     def retrieve(self, workflow_id: str, request: RetrievalRequest) -> RetrievalResult | None:
         resolved = self.repository.resolve_workflow(workflow_id)
         if resolved is None:

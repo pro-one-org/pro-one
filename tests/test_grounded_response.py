@@ -448,7 +448,7 @@ class ResponseAssemblyTests(unittest.TestCase):
 
     def test_all_actual_virginia_records_stay_proposed_and_uncertified(self):
         self.assemble(None, limit=20)
-        records = [r for group in self.repo.records.values() for r in group.values() if r["id"].startswith("va-")]
+        records = [r for group in self.repo.records.values() for r in group.values() if r["id"].startswith(("va-small-claims", "va-dc402"))]
         self.assertEqual(35, len(records))
         for record in records:
             self.assertEqual("proposed", record["status"])

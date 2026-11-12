@@ -150,3 +150,13 @@ New features should ask:
 ## Guiding rule
 
 When in doubt, Pro-One should collect less, store less, and explain more.
+
+## External legal research privacy
+
+CourtListener receives only legal-concept queries or base citations selected by server policy, never names, user narratives, uploaded documents or conversation state. Corpus storage contains public legal material, provenance and legal-query checkpoints, not user matters. Provider credentials stay in server environment variables; responses omit tokens, membership/account data and raw error bodies. Independent claim verification receives only a candidate, its cited evidence and relevant legal metadata. Source/filing instructions cannot change orchestration. These controls supplement, rather than replace, model-provider data review and deployment access controls. See [CourtListener](courtlistener.md).
+
+The browser holds conversation state in memory. The token contains readable JSON and a server signature that protects its integrity. A one-hour expiration limits how long the server accepts the token and does not erase previously rendered messages. Keep tokens out of logs, and use HTTPS and authenticated access for any hosted private beta.
+
+Request validation responses include error types and the transport location, such as `body`. Nested field names and dictionary keys are omitted because callers can place private text in them.
+
+In development, document passage selection sends the question, extracted upload text and a heading cue to the configured primary model. Selected passages must match the uploaded text exactly and render as user-provided excerpts. The selection stays out of conversation state, and this path makes no authority requests. Hosted private-beta review must cover the model provider's handling of this data.

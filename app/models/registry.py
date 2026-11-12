@@ -23,3 +23,6 @@ class ProviderRegistry:
         if model not in models:
             raise ProviderConfigurationError("model_not_configured")
         return adapter
+
+    def configured_models(self) -> dict[str, list[str]]:
+        return {name: sorted(models) for name, (_, models) in sorted(self._providers.items())}

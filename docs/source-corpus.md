@@ -1,6 +1,6 @@
 # Local source corpus
 
-The first corpus is for `va-small-claims-warrant-in-debt-information` only: nine short excerpts, four existing official sources, and ten local proposition tags. All passages, sources, related legal records, and reviews remain proposed. This is development inspection material, not a legal answer or approved public corpus.
+The corpus includes workflow-scoped Virginia/Maryland excerpts and a workflow-independent Virginia premises-liability capability. All real passages, sources, legal records and reviews remain proposed. The sections below describe strict workflow retrieval; capability/general research is documented in [Architecture](architecture.md) and [Capability compiler](capability-compiler.md).
 
 ## Passage model and integrity
 
@@ -48,3 +48,14 @@ The existing readiness service is called unchanged. This development-only endpoi
 To change a passage, reopen the official source, confirm the locator and exact text, record observed version/dates, update the excerpt hash and record version, preserve uncertainty, validate relationships, run tests and repository validation, and obtain review before merge. Research checks do not create review approval. Existing source metadata remains historical unless separately and accurately updated.
 
 Runtime loads local files at startup and retrieves from memory. It makes no network/model calls, writes no user data, logs no queries, and retains no request state. No ingestion daemon, OCR, model SDK, embeddings, vector database, or deployment infrastructure was added.
+
+
+## MVP breadth
+
+The repository contains nineteen proposed passages: nine original Virginia DC-402 excerpts, two SCC business-record navigation excerpts, two Maryland District Court civil-summons orientation excerpts, and six later premises-liability case/statute excerpts. SCC and Maryland official pages were inspected on 2026-10-30; the premises collection was checked on 2026-11-03. Excerpts are minimal, hashed and retain review/currentness limits. Research observation does not certify legal currentness or approve public use. No substantive legal-rule record was inferred from navigation excerpts.
+
+The SCC workflow does not retrieve an entity record, establish active status/compliance, calculate registration fees/deadlines, or perform a filing. Maryland excerpts locate the notice section and preserve the condition that a court date may change after a notice; timing exceptions, service, response choices, and high-consequence matters remain outside the curated answer scope. See the root README for official source links and coverage.
+
+## External CourtListener corpus
+
+See [CourtListener corpus operations](courtlistener.md) for the separate SQLite/FTS store, normalized case structure, streaming bulk import, bounded REST ingestion, refresh/history, citation lookup and graph inspection. Corpus data is external and proposed; database/snapshot files stay outside Git. Public cluster metadata was checked, but no authenticated API records were downloaded. The two-case reconstructed demo and 1,000 synthetic scale cases do not expand reviewed legal coverage. Official statutes, rules, forms and guidance retain their existing providers.

@@ -1,11 +1,14 @@
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.exception_handlers import request_validation_exception_handler
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
+from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
+from pathlib import Path
 
 from app.execution import ExecutionContextService, ExecutionResult
 from app.intake import IntakeRequest, IntakeResolutionError
 from app.readiness import WorkflowReadinessService
+from app.research_readiness import research_readiness
 from app.repository import RecordRepository, RepositoryLoadError
 from app.retrieval import (
     PassageRetrievalService,
@@ -20,12 +23,19 @@ from app.response_assembly import (
     ResponseAssemblyService,
 )
 from app.generation import GenerationRequest, GenerationResult, GenerationService
-from app.models.testing import testing_registry
+from app.config import Settings
+from app.routing import MatterRequest, MatterRoutingService, WorkflowCatalogService
+from app.product import ProductResponseRequest, ProductService
+from app.security import SecurityMiddleware
+from app.assistant import AssistantRequest, AssistantService
+from app.documents import isolated_extract
+from app.capabilities import ResearchMatter, CapabilityResolutionService
+from app.citation_research import CitationResearchRequest
 
 
 app = FastAPI(
     title="Pro-One",
-    description="Runtime foundation for source-grounded legal-information workflows.",
+    description="High-assurance legal research, capabilities and specialized workflows.",
     version="0.1.0",
 )
 
@@ -40,19 +50,32 @@ readiness_service = WorkflowReadinessService(repository)
 execution_service = ExecutionContextService(repository)
 retrieval_service = PassageRetrievalService(repository)
 response_assembly_service = ResponseAssemblyService(repository)
-generation_service = GenerationService(testing_registry())
+settings = Settings.from_environment()
+generation_service = GenerationService(settings.registry())
+app.add_middleware(SecurityMiddleware)
+web_root = Path(__file__).resolve().parent / "web"
+app.mount("/static", StaticFiles(directory=web_root), name="static")
+
+
+@app.middleware("http")
+async def production_inspection_boundary(request: Request, call_next):
+    path = request.url.path
+    if settings.mode == "production" and (
+        path in {"/docs", "/redoc"} or path.endswith(("/resolved", "/response/assemble", "/intake/evaluate", "/retrieval"))
+        or (path.startswith("/workflows/") and path.count("/") == 2)
+    ):
+        return JSONResponse({"detail": {"code": "development_inspection_disabled"}}, status_code=403)
+    return await call_next(request)
 
 
 @app.exception_handler(RequestValidationError)
 async def safe_generation_request_error(request: Request, exc: RequestValidationError):
-    if request.url.path.endswith("/response/generate"):
-        # Pydantic's default errors include the invalid raw input. Generation
-        # errors must not echo secrets or withheld legal facts supplied in it.
-        return JSONResponse(status_code=422, content={"detail": {
-            "code": "malformed_generation_request",
-            "errors": [{"type": e["type"], "loc": list(e["loc"])} for e in exc.errors()],
-        }})
-    return await request_validation_exception_handler(request, exc)
+    # Nested error locations can contain user-supplied dictionary keys.
+    # Retain only the transport location and omit raw values on every API path.
+    return JSONResponse(status_code=422, content={"detail": {
+        "code": "malformed_generation_request" if request.url.path.endswith("/response/generate") else "malformed_request",
+        "errors": [{"type": e["type"], "loc": list(e["loc"][:1])} for e in exc.errors()],
+    }})
 
 
 @app.get("/health")
@@ -64,6 +87,12 @@ def health() -> dict:
         "records_loaded": repository.count_records(),
         "domains_loaded": len(repository.records),
     }
+
+
+@app.get("/ready")
+def ready():
+    report = research_readiness(settings, generation_service.registry)
+    return JSONResponse(report, status_code=200 if report["status"] == "ready" else 503)
 
 
 @app.get("/workflows/{workflow_id}")
@@ -175,4 +204,108 @@ def evaluate_intake(workflow_id: str, request: IntakeRequest) -> ExecutionResult
 def generate_response(workflow_id: str, request: GenerationRequest) -> GenerationResult:
     # Reuse exactly the assembly endpoint's scope and integrity error behavior.
     package = assemble_response(workflow_id, request)
+    if settings.mode == "production" and (not package["public_execution"]["allowed"] or request.generation.provider == "testing"):
+        raise HTTPException(status_code=403, detail={"code": "public_workflow_unavailable"})
     return generation_service.generate(package, request.generation)
+
+
+@app.get("/workflows")
+def workflow_catalog(user_type: str | None = None):
+    return {"workflows": WorkflowCatalogService(repository).catalog(user_type)}
+
+
+@app.post("/routing/evaluate")
+def route_matter(request: MatterRequest):
+    return MatterRoutingService(repository).evaluate(request)
+
+
+@app.post("/workflows/{workflow_id}/scope")
+def resolve_scope(workflow_id: str, request: MatterRequest):
+    if repository.get_workflow(workflow_id) is None:
+        raise HTTPException(status_code=404, detail={"code": "workflow_not_found"})
+    return MatterRoutingService(repository).scope(workflow_id, request)
+
+
+@app.get("/model/status")
+def model_status():
+    return settings.status(generation_service.registry)
+
+
+@app.get("/assistant/status")
+def assistant_status():
+    return AssistantService(repository, settings, generation_service).status()
+
+
+@app.get("/capabilities")
+def capability_catalog():
+    return {"capabilities": [{k: c[k] for k in ("id", "title", "jurisdiction", "legal_area", "topics", "status", "related_workflow_ids", "currentness")}
+                             for c in repository.records["legal_capabilities"].values()], "public_execution": False}
+
+
+@app.post("/capabilities/resolve")
+def resolve_capabilities(request: ResearchMatter):
+    return CapabilityResolutionService(repository).resolve(request)
+
+
+@app.post("/research/evidence")
+def research_evidence(request: ResearchMatter):
+    if settings.mode == "production":
+        raise HTTPException(status_code=403, detail={"code": "research_release_review_required"})
+    from app.legal_research import GeneralLegalResearchService
+    service = GeneralLegalResearchService(repository, settings)
+    try:
+        return service.assemble(request)
+    finally:
+        service.close()
+
+
+@app.post("/documents/extract")
+async def document_extract(request: Request):
+    from starlette.concurrency import run_in_threadpool
+    try:
+        return await run_in_threadpool(isolated_extract, await request.body(), request.headers.get("content-type", ""))
+    except Exception as exc:
+        message = str(exc) if type(exc) is ValueError else "The document could not be read safely. Try a redacted TXT copy."
+        return JSONResponse({"detail": {"message": message}}, status_code=422)
+
+
+@app.post("/research/citation")
+def research_citation(request: CitationResearchRequest):
+    if settings.mode == "production":
+        raise HTTPException(status_code=403, detail={"code": "research_release_review_required"})
+    from app.citation_research import lookup_configured_citation
+    return lookup_configured_citation(request, settings)
+
+
+@app.get("/authority/status")
+def authority_status():
+    import os
+    return {"provider": "courtlistener", "api_version": "v4", "network_enabled": settings.courtlistener_enabled,
+            "configured": bool(os.environ.get("COURTLISTENER_API_TOKEN")), "local_corpus_configured": bool(settings.corpus_path),
+            "release_approved": False}
+
+
+@app.post("/assistant/message")
+def assistant_message(request: AssistantRequest):
+    try:
+        return AssistantService(repository, settings, generation_service).message(request)
+    except (RepositoryLoadError, AssemblyIntegrityError, IntakeResolutionError, RetrievalFilterError):
+        return {"status": "unavailable", "message": "Official source information is temporarily unavailable. Please try again later."}
+
+
+@app.post("/workflows/{workflow_id}/response")
+def product_response(workflow_id: str, request: ProductResponseRequest):
+    try:
+        return ProductService(repository, settings, generation_service).respond(workflow_id, request)
+    except (RepositoryLoadError, AssemblyIntegrityError):
+        raise HTTPException(status_code=409, detail={"code": "source_integrity_unavailable", "message": "Source evidence is temporarily unavailable. No answer was generated."}) from None
+    except IntakeResolutionError:
+        raise HTTPException(status_code=409, detail={"code": "intake_unavailable", "message": "This workflow’s intake is unavailable. No answer was generated."}) from None
+    except RetrievalFilterError:
+        raise HTTPException(status_code=422, detail={"code": "source_filter_unavailable", "message": "The requested evidence is outside this workflow."}) from None
+
+
+@app.get("/", response_class=HTMLResponse)
+@app.get("/coverage", response_class=HTMLResponse)
+def product_page():
+    return (web_root / "index.html").read_text(encoding="utf-8")

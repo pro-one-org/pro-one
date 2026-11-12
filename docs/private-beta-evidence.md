@@ -1,0 +1,102 @@
+# Private-beta evidence audit
+
+Audit date is November 12, 2026. The private-beta objective is incomplete. The evidence below distinguishes implemented behavior, fixture proof, real public-source checks and required external acceptance. Automated results do not grant legal or currentness approval.
+
+The active branch is `feat/mvp-ship-sprint`. On November 9, the user explicitly confirmed publication to `pro-one-org/pro-one` and continued use of PR #25 without merging. The 23 completed local commits were reviewed and published at `2f1b3d84b4c15644e305defd091b9152d9c5a76a`; an added-content credential-pattern scan found no matches. All 448 local tests, repository validation, 37 mapped evaluations, JavaScript syntax and the offline benchmark passed before publication. Exact-head [CI run 42645604055](https://github.com/pro-one-org/pro-one/actions/runs/42645604055) completed successfully, including the Docker build and production smoke steps. The prior publication-authorization blocker is resolved.
+
+| Criterion | Current evidence | Remaining work |
+|---|---|---|
+| 1. Authorized CourtListener v4 acceptance | Authenticated Virginia court, usage, keyword and semantic search, hydration, refresh and relationship probes passed. | Complete for Research Core. |
+| 2. Real model end-to-end acceptance | Luna extraction, Sol proposal, independent verification and rendering passed on an official case-and-rule summary judgment question. The fixture notice conversation also exercised Sol query planning and follow-up handling. | C. Extend live semantic-quality review before beta. |
+| 3. Meaningful real corpus | The bounded Research Core corpus holds five Virginia Supreme Court clusters and seven opinion records from authenticated v4 downloads. | B. Expand subject and court coverage. |
+| 4. Reproducible corpus build/refresh | Fresh Fultz ingestion and a cache-bypassing live refresh matched the opinion hash and produced no changes. The changed-content transition has offline regression coverage. | B. Measure changed-content refresh on real provider revisions as they occur. |
+| 5. Discover, hydrate, store, search and cite cases | Live scoped search, case hydration, SQLite round trips, local retrieval and citation identity checks passed. | B. Sample additional courts. |
+| 6. Reject fabricated/mismatched citation identities | Live lookup left `999 Va. 999` unresolved. The persisted Fultz identity rejected an incorrect case name. The product rejected a fabricated pin and quote before any model call. | C. Extend reviewed adversarial coverage. |
+| 7. Preserve opinion roles | Austin stored separate lead and dissent records plus a mixed record. Four other cases arrived as mixed opinions. Checked Virginia PDFs supply separately attributed majority passages. | C. Review role boundaries and combined records in the release collection. |
+| 8. Keep RECAP filings outside precedent | Archive inspection uses a separate channel and preserves filing/allegation limitations. Fixture tests cover membership and injection. | B. Verify live existing archive access and representative filing classifications. |
+| 9. Independently verified multi-authority synthesis | Sol proposed, separately verified and rendered case/rule, case/statute and lead/dissent comparisons. The November 12 notice review checked treatment of the Austin dissent and the limits of the majority's procedural ruling. | C. Measure performance on a larger labeled sample and obtain independent legal review. |
+| 10. Unsupported propositions fail closed | Attack tests cover unsupported statements, source bindings, jurisdiction, role, quotes and citation mismatches. | C. Expand live adversarial measurements beyond the reviewed controls. |
+| 11. Useful retrieval across Virginia subjects | The five-case corpus returned all three labeled cases at ranks 1, 2 and 2 with zero out-of-scope results. Manual review identified irrelevant cases admitted by generic overlapping terms and drove an issue-anchor check before evidence selection. | C. Add negative relevance labels and a larger reviewed sample before estimating precision or corpus-wide recall. |
+| 12. Compile real corpus evidence | Official case, statute and rule collections compiled proposed candidates. The first v4 sample had only mixed opinions and produced zero candidate rules. Adding Austin's separate opinions produced five extractive candidates from lead text, with mixed and dissent text retained as context. | B. Compile additional subjects. C. Review the candidate rules before release. |
+| 13. Broader legal capability coverage | Four canonical proposed capabilities remain. Additional generated review bundles are outside canonical data. | B. Establish evidence and boundaries across additional subjects. |
+| 14. Workflows remain optional | General research assembles without a workflow ID; specialized procedural intake remains available. Automatic capability selection requires coverage of every supplied topic. Partial overlaps remain related and cannot constrain a broader question to that capability's sources. | Complete for Research Core. |
+| 15. Mixed case/statute/rule research | Live summary judgment research used AlBritton and Rule 3:20. Landlord-repair research compared the official Sales opinion and its verified CourtListener reproduction with both checked paragraphs of Virginia Code § 55.1-1220. Both ran without a workflow ID. | C. Review mixed-authority relevance and qualifications before exposure. |
+| 16. Honest treatment/currentness uncertainty | Bounded local screening retains citing context and roles, flags truncation and leaves currentness unresolved. | C. Review real later-citing examples and measure currentness-screening limitations. |
+| 17. Product conversations and documents | Local tests exercise procedural conversations, uploads and exact document passage selection. Live Sol selected the full conditional second-payment clause in a synthetic agreement and Pro-One rendered it as uploaded text. A November 9 browser review checked citation navigation, proposed-order upload and mobile layout. | C. Review document answer quality across more types, ambiguous passages and hostile uploads. |
+| 18. Adversarial assurance | Offline suites cover citation, jurisdiction, evidence and prompt-injection boundaries. | C. Extend reviewed prompt-injection and evidence abuse cases. |
+| 19. Existing regressions stay green | Standard unit, evaluation, schema and frontend checks are run after implementation cycles. | Complete for Research Core after the closeout checks. |
+| 20. CI passes | Exact-head CI for `1a72746` passed in [run 43238540970](https://github.com/pro-one-org/pro-one/actions/runs/43238540970). The closeout PR description tracks validation on the final head. | The final head requires green CI. |
+| 21. Controlled-beta operations | Shared signing, fixed conversation expiry, read-only readiness probing, corpus outage handling and online backups exist. Production research remains gated. | C. Establish host access controls, abuse limits, privacy handling and deployment verification before beta exposure. |
+| 22. Accurate documentation | Provider, compiler, privacy, readiness, backup and acceptance runbooks disclose limits. This audit records outstanding criteria. | Complete for Research Core. |
+| 23. Keep secrets, databases and private legal text out of Git | Corpus files and local reports are ignored. The current changes use public source metadata and synthetic tests. | Complete for Research Core. |
+| 24. Public release stays gated | Production research, citation and proposed workflow execution are blocked by server policy and regression tests. | C. Record legal and operational release approval and separate deployment authorization. |
+| 25. PR #25 stays unmerged | PR remains open at the published head. | Human merge decision only. |
+
+## Immediate external dependencies
+
+On November 9, the default provider configuration with `authority_network=virginia_official` assembled Rule 3:20 for both `civil_procedure` and `summary_judgment` topics through a live worker fetch. The result was `evidence_ready` in general-research mode, with source hash `sha256:b92bb0b1677e1f7c9607674f2df4dff2c9b2dfa888afee8f089bb8fdbfb46aa2` and public execution blocked. The mixed case/rule regression also includes the repository provider. This corrects the earlier diagnosis: the unversioned self-help source entered through automatic capability selection, not repository discovery, and full-topic matching avoids it for this question. The source itself remains unversioned and cannot support a research package that selects it.
+
+Authorized CourtListener v4 and OpenAI credentials were available on November 12. Keep credentials in server secret configuration.
+
+Publication is authorized for subsequent legitimate Goal progress on the same branch and PR. Legal validity, currentness and release readiness still require authorized human review of the evidence. Fixture tests and successful compiler runs do not satisfy those dependencies.
+
+## November 11 live OpenAI checks
+
+Minimal Responses requests completed on `gpt-6-luna` and `gpt-6.1-sol` in the authorized project. The synthetic notice question and its follow-up passed structural checks using local case fixtures. Both turns exercised Luna candidate extraction, Sol query planning, Sol proposal and Sol rendering. No independent semantic verifier call occurred in that run. The medical-bills scenario passed structural checks, and the fabricated pin cite, missing jurisdiction and hostile upload triggered their expected safety paths.
+
+On November 11, the proposal request began supplying the topic tags and required contrary-context passage IDs used by the deterministic checks. The rerun passed structural checks on both notice turns. A deterministic statement check rejected the first proposal. On the follow-up, Sol's independent verification returned `conflicts_omitted`. Both turns retained the exact-text fallback. The local report `.local/live-notice-synthesis-v2-final.json` records stage calls, rejection reasons and rendered output for review. It remains outside Git. This run exercised conversational verification and confirmed rejection behavior. The November 12 acceptance below supersedes this initial result.
+
+A fixed-proposal control used Fultz as support and the mixed Austin opinion as qualification. Live Sol returned `entailed`, and the final draft passed deterministic validation. The November 12 sample includes independently verified model proposals and engineering review.
+
+The `contract_terms` acceptance scenario asked about a condition and timing in a synthetic uploaded agreement. One Sol passage-selection call returned the exact conditional clause. Pro-One displayed it with user-provided provenance and zero authority sources. A live proposed-order scenario retained its draft warning and displayed the selected wording as uploaded text. The regression test rejects a fabricated due date and retains basic inspection. The local reports are `.local/live-openai-contract_terms.json` and `.local/live-openai-proposed-order-selection.json`.
+
+The `summary_judgment_comparison` scenario freshly retrieved the official AlBritton majority opinion and Rule 3:20. A first verifier run asked the candidate to repeat notices already required in the final response. With those controls identified separately, the rerun passed through Luna extraction, Sol proposal, separate Sol verification and Sol rendering. The resulting paragraph cited both sources, and the response retained the required limitations. The report is `.local/live-official-summary-judgment-verified.json`. The compiler also produced two extractive candidate rules and proposed knowledge candidates in `.local/albritton-summary-judgment-compiler`. See the November 12 review and live CourtListener results below.
+
+The `landlord_repairs_comparison` scenario uses the official Sales opinion and Virginia Code § 55.1-1220 A 2 and B. One live run verified distinct statutory and common-law paragraphs. Follow-up runs exposed an extraction clarification and the loss of an opinion when only a statutory claim verified. The updated pipeline preserves source-linked excerpts from authorities that its verified claims do not cover. The final live run passed with a verified statutory paragraph, both statutory citations and the exact opinion passage. The compiler produced three extractive candidate rules and a proposed Sol knowledge bundle. The reports are `.local/live-official-landlord-repairs-verified.json` and `.local/sales-landlord-maintenance-compiler`. The bounded engineering review appears below. Independent legal review is a release gate.
+
+With live official retrieval enabled and the PDF dependency available, the summary-judgment scenario passed with a Virginia court-rule source. Personal-injury limitations and landlord repairs returned `no_authoritative_support` in the same mode. Security-deposit and wage questions exposed gaps in topic classification and evidence coverage. The two document heading scenarios exercised deterministic inspection. The subsequent document selection, semantic review and CourtListener evidence appear below. Release approval remains a gate.
+
+## November 12 Research Core acceptance
+
+The Virginia court and API usage v4 endpoints both returned HTTP 200. The account reported 20 ordinary requests per rolling minute and 1,000 per rolling hour, plus 60 citation lookups per minute and separate usage windows of 10 per minute and 120 per hour. The passing discovery phase returned 20 results on each of two keyword pages with distinct continuation hits and 20 semantic results. It took 8.42 seconds including quota snapshots and made three ordinary requests. A transient request failure preceded the successful run.
+
+Fultz hydration took 1.69 seconds and used four ordinary requests. A cache-bypassing refresh took 0.84 seconds with the same four requests, preserved the opinion hash and made zero content changes. Citation identity and the stored outgoing edge passed, and a real missing court returned the expected safe error. The three labeled hydrations each took four ordinary requests. Austin used seven ordinary requests after the initial quota snapshot and retained separate lead, dissent and mixed records. The corpus held five clusters and seven opinions. The AlBritton search found a matching case record with no indexed citations and the reported citation did not resolve through lookup. The benchmark used the checked official PDF for AlBritton.
+
+The case benchmark used local FTS5 and issued zero CourtListener calls. Contracts, contributory negligence and landlord repairs ranked 1, 2 and 2 at an opinion limit of 12. Search times were 7.20, 1.29 and 0.40 ms. These are known-target measurements on a deliberately selected sample. They do not measure recall over all relevant Virginia law.
+
+| Synthetic live case | Wall time | Input / output tokens | Estimated model cost |
+| --- | ---: | ---: | ---: |
+| Contract elements | 36.62 s | 20,623 / 2,110 | $0.0530 |
+| Material factual disputes | 28.85 s | 8,924 / 1,400 | $0.0240 |
+| Landlord repairs | 47.46 s | 28,501 / 3,158 | $0.0796 |
+| Traffic contributory negligence | 44.22 s | 24,642 / 2,734 | $0.0691 |
+| Notice, initial question | 41.86 s | 34,897 / 2,723 | $0.0900 |
+| Notice, follow-up | 41.18 s | 34,984 / 2,808 | $0.0907 |
+
+The table estimates cost using provider-reported tokens from selected passing runs and standard short-context uncached rates. All six turns ran Luna extraction and separate Sol planning, proposal, verification and rendering calls. The model runs used a citation-verified local corpus and issued zero live CourtListener requests. [OpenAI API pricing](https://developers.openai.com/api/docs/pricing?latest-pricing-expanded=true)
+
+Manual engineering review compared rendered propositions with their cited passages. The contract answer retained the damages element and distinguished the procedural outcome. The summary-judgment answer preserved the genuine/material distinction. The landlord answer retained ordinary care, actual damages, proximate causation and the demurrer posture. The traffic answer cited both checked Rascher passages for the factfinder's role and the defense burden. The notice answers distinguished known danger and the owner-created condition inference, attributed the dissent separately and left liability unresolved. The follow-up repeated much of the first answer and the traffic answer needed a long exact-text fallback for causation.
+
+Earlier runs brought unrelated cases into narrow questions and passed structural checks while overlooking notice. The issue filter, checked Austin passages and passage-level preservation addressed those observed gaps. A fabricated pin was refused with zero model calls. Alaska scope produced a clarification without a Virginia legal answer. The misleading premise probe supplied no award prediction, but included unnecessary background. These are targeted engineering checks. Broader relevance, currentness and legal review remain release requirements. The database and rendered reports stay under `.local/`.
+
+## Research Core closeout
+
+The audit compared the full PR with its main-branch base and reopened the v4 phase reports, the five-case SQLite corpus, the rendered synthetic turns and the independent verification controls. The corpus retained the expected Virginia court, citation and opinion identities. Manual engineering review checked the contract elements, factfinder and causation burden, notice and separate dissent, statutory and common-law repair duties, and summary-judgment posture. Exact excerpts retain their source roles and citations. A citation quoted inside an opinion remains part of that opinion's text. All reviewed case citations retained unresolved currentness. Synthetic document selections remained user-provided text with zero legal authority sources.
+
+### A. Must fix before Research Core merge
+
+The closeout reproduced and repaired a removed citation that could still pass from a cached verification, a notice filter that could select unrelated hazards, and combined opinion text that could crowd out a separately attributed dissent under the evidence cap. Regression tests cover those cases and preserve both valid notice formulations restored by `1a72746`. Both live notice turns passed on the repaired code and cited Austin's separate dissent alongside lead passages. A two-request v4 check reconfirmed the Virginia court and usage access.
+
+The Docker build context now excludes local reports and SQLite files. The full PR history and staged closeout scan found no matches for the configured credentials or common credential patterns. The PR history contained no corpus databases, local reports or user legal document artifacts. The PR records final-head CI and the human merge decision.
+
+### B. Future milestone
+
+Broader subject, court and corpus coverage, observed provider content revisions, live RECAP archive acceptance and compilation across additional subjects remain outside Research Core. Forms, procedural workflows, deadline and filing systems, and matter management are future scope.
+
+### C. Private-beta and release gates
+
+The remaining C items in the table cover independent legal and currentness review, larger labeled relevance and adversarial samples, broader document review, candidate rule approval and operational verification. Hosted deployment requires access and abuse controls, privacy and model-provider handling checks, and explicit release and deployment approval. The production research gates remain enforced.
+
+## Evidence locations
+
+The operational commands and distinctions are documented in [CourtListener](courtlistener.md), [model generation and live acceptance](model-generation.md), [capability compilation](capability-compiler.md), [development setup](development-setup.md) and [privacy](privacy-principles.md). Downloaded material, generated bundles, corpus snapshots and acceptance reports belong in local storage outside Git.

@@ -53,6 +53,8 @@ EXCLUDED_DIRECTORY_NAMES = {
 }
 
 DATA_SCHEMAS = {
+    "legal-capabilities.json": ("legal_capability", "legal-capability.schema.json"),
+    "research-evaluations.json": ("research_evaluation", "research-evaluation.schema.json"),
     "source-passages.json": ("source_passage", "source-passage.schema.json"),
     "sample-evaluation-fixtures.json": ("evaluation_fixture", "evaluation-fixture.schema.json"),
     "sample-intakes.json": ("intake", "intake.schema.json"),
@@ -82,6 +84,10 @@ class DependencyEligibility:
 
 
 REFERENCE_FIELDS = {
+    "capability_ids": ReferenceSpec("legal_capability", "association"),
+    "related_workflow_ids": ReferenceSpec("workflow", "association"),
+    "source_passage_ids": ReferenceSpec("source_passage"),
+    "research_evaluation_ids": ReferenceSpec("research_evaluation"),
     "source_id": ReferenceSpec("source"),
     "allowed_source_ids": ReferenceSpec("source"),
     "deadline_source_ids": ReferenceSpec("source"),
@@ -173,6 +179,8 @@ REFERENCE_PATH_ROLES: dict[
 }
 
 SUPPORTED_DEPENDENCY_ELIGIBILITY = {
+    "legal_capability": DependencyEligibility(frozenset({"supported"}), frozenset({"approved"}), "supported approved capability"),
+    "research_evaluation": DependencyEligibility(frozenset({"supported"}), frozenset({"approved"}), "supported approved evaluation"),
     "source_passage": DependencyEligibility(
         frozenset({"supported"}), frozenset({"approved"}), "supported and approved source passage"
     ),
@@ -579,6 +587,15 @@ def main() -> int:
             validate_review_provenance(filename, record, report)
 
     validate_cross_record_references(records_by_kind, record_locations, report)
+
+    from app.capabilities import capability_errors
+    domain_names = {"source": "sources", "source_passage": "source_passages", "legal_rule": "legal_rules",
+                    "process_step": "process_steps", "risk": "risks", "workflow": "workflows",
+                    "research_evaluation": "research_evaluations"}
+    graph = {domain: records_by_kind[kind] for kind, domain in domain_names.items()}
+    for capability in records_by_kind["legal_capability"].values():
+        for error in capability_errors(capability, graph):
+            report.error(f"capability {capability['id']}: {error}")
 
     # Share corpus semantics with runtime startup, after schema/reference checks.
     if not report.errors:

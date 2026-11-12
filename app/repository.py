@@ -24,6 +24,8 @@ class RecordRepository:
         "responses": "sample-responses.json",
         "evaluation_fixtures": "sample-evaluation-fixtures.json",
         "source_passages": "source-passages.json",
+        "legal_capabilities": "legal-capabilities.json",
+        "research_evaluations": "research-evaluations.json",
     }
 
     DOMAIN_SCHEMAS = {
@@ -37,6 +39,8 @@ class RecordRepository:
         "responses": "response.schema.json",
         "evaluation_fixtures": "evaluation-fixture.schema.json",
         "source_passages": "source-passage.schema.json",
+        "legal_capabilities": "legal-capability.schema.json",
+        "research_evaluations": "research-evaluation.schema.json",
     }
 
     def __init__(
@@ -56,6 +60,15 @@ class RecordRepository:
         self._load_schemas()
         self._load()
         self.validate_source_passages()
+        self.validate_capabilities()
+
+    def validate_capabilities(self):
+        from app.capabilities import capability_errors
+        for capability in self.records["legal_capabilities"].values():
+            self.validate_record("legal_capabilities", capability)
+            errors = capability_errors(capability, self.records)
+            if errors:
+                raise RepositoryLoadError(f"Invalid capability {capability['id']}: {', '.join(errors)}")
 
     def validate_source_passages(self, workflow_id: str | None = None) -> None:
         """Fail closed for broken corpus links, including after in-memory edits."""

@@ -1,0 +1,241 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "research-evaluation.schema.json",
+  "title": "Proposed research evaluation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "schema_version",
+    "record_version",
+    "last_modified",
+    "title",
+    "status",
+    "review",
+    "capability_ids",
+    "mode",
+    "scenario",
+    "check",
+    "matter",
+    "expected_status"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/recordId"
+    },
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schemaVersion"
+    },
+    "record_version": {
+      "$ref": "common.schema.json#/$defs/recordVersion"
+    },
+    "last_modified": {
+      "$ref": "common.schema.json#/$defs/lastModified"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "$ref": "common.schema.json#/$defs/maturityStatus"
+    },
+    "review": {
+      "$ref": "common.schema.json#/$defs/reviewInformation"
+    },
+    "capability_ids": {
+      "$ref": "common.schema.json#/$defs/recordIdArray"
+    },
+    "mode": {
+      "enum": [
+        "capability",
+        "general_research"
+      ]
+    },
+    "scenario": {
+      "type": "string",
+      "minLength": 1
+    },
+    "check": {
+      "enum": [
+        "grounded_answer",
+        "missing_state",
+        "wrong_state",
+        "invented_case",
+        "invented_statute",
+        "unsupported_proposition",
+        "currentness",
+        "conflict",
+        "no_workflow",
+        "injection",
+        "outcome",
+        "deadline",
+        "damages"
+      ]
+    },
+    "matter": {
+      "additionalProperties": false,
+      "properties": {
+        "country": {
+          "anyOf": [
+            {
+              "maxLength": 2,
+              "minLength": 2,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Country"
+        },
+        "state": {
+          "anyOf": [
+            {
+              "maxLength": 80,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "State"
+        },
+        "sovereign": {
+          "default": "state",
+          "pattern": "^(state|federal|unknown)$",
+          "title": "Sovereign",
+          "type": "string"
+        },
+        "legal_area": {
+          "anyOf": [
+            {
+              "maxLength": 80,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Legal Area"
+        },
+        "topics": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 12,
+          "title": "Topics",
+          "type": "array"
+        },
+        "user_posture": {
+          "anyOf": [
+            {
+              "maxLength": 120,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "User Posture"
+        },
+        "document_type": {
+          "anyOf": [
+            {
+              "maxLength": 120,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Document Type"
+        },
+        "court": {
+          "anyOf": [
+            {
+              "maxLength": 120,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Court"
+        },
+        "agency": {
+          "anyOf": [
+            {
+              "maxLength": 120,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Agency"
+        },
+        "goal": {
+          "default": "",
+          "maxLength": 2000,
+          "title": "Goal",
+          "type": "string"
+        }
+      },
+      "title": "ResearchMatter",
+      "type": "object"
+    },
+    "expected_status": {
+      "enum": [
+        "evidence_ready",
+        "missing_context",
+        "no_authoritative_support",
+        "rejected"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "supported"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "review": {
+            "properties": {
+              "status": {
+                "const": "approved"
+              },
+              "review_scope": {
+                "allOf": [
+                  {
+                    "contains": {
+                      "const": "schema"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "evaluation"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

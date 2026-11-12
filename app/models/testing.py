@@ -48,6 +48,10 @@ def valid_draft(request: ModelRequest) -> dict:
             passage = next(p for p in data["evidence_passages"] if p["id"] in claim["supported_by_passage_ids"])
             section.update(kind="legal_information", text=passage["text"],
                            claim_ids=[claim["claim_id"]], citation_ids=deepcopy(claim["citation_ids"]))
+            if data.get("strict_claim_text"):
+                section.update(text="\n\n".join(c["allowed_texts"][-1] for c in data["claims"]),
+                               claim_ids=[c["claim_id"] for c in data["claims"]],
+                               citation_ids=list(dict.fromkeys(i for c in data["claims"] for i in c["citation_ids"])))
         else:
             section["text"] = "\n\n".join(paragraphs[section_id] or data["control_texts"][:1])
         sections.append(section)

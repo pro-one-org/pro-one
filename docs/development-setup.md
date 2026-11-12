@@ -1,11 +1,15 @@
 # Development Setup
 
-Pro-One is currently an architecture, specification, and technical-foundation repository. It contains interoperable JSON Schemas, fictional sample records, validation tooling, issue templates, and standards for sources, safety, privacy, governance, workflows, responses, and evaluation. It does not contain a production application, backend, frontend, database, or AI pipeline.
+Pro-One includes a FastAPI runtime, conversational UI, legal capabilities, workflow-independent research, specialized procedural workflows, model/authority adapters and a capability compiler. Legal/source/currentness review remains pending. See [Architecture](architecture.md) and [startup instructions](../README.md#run-locally).
+
+For a multi-worker development or controlled test instance, provision the same random 32-byte `PRO_ONE_CONVERSATION_SIGNING_KEY` to each worker as 64 hexadecimal characters through the server's secret configuration. An unset value uses a process-local key, suitable for single-worker development. Conversations expire one hour after they start. Changing the key invalidates existing conversations, as does upgrading from the earlier token format. The browser clears the conversation token and attachment when the server asks to restart. The signing key is independent of provider credentials.
+
+`GET /health` reports process liveness. `GET /ready` is a local operational probe for controlled research. It returns HTTP 200 only in development mode with an explicitly selected and configured OpenAI or Anthropic model, a shared conversation key, and at least one available Virginia state opinion with a CourtListener API or bulk origin in a readable corpus. The SQLite probe opens the database read-only, uses a bounded query and never creates a missing corpus. It makes no provider requests. A passing result says these prerequisites are present. Provider acceptance, corpus coverage and legal approval require separate evidence. Production remains outside research readiness while its release gate is closed.
 
 ## Prerequisites
 
 - Git
-- Python 3.10 or later
+- Python 3.12 or later
 - a code editor and terminal
 - a GitHub account if you plan to open a pull request
 
@@ -18,7 +22,7 @@ cd pro-one
 
 ## Install validation dependencies
 
-Use a virtual environment if desired, then install the single development dependency:
+Use a virtual environment and install the declared development dependencies:
 
 ```bash
 python -m pip install -r requirements-dev.txt
@@ -59,9 +63,9 @@ git status --short
 
 ## How schemas and records fit together
 
-The nine record domains under [`schemas/`](../schemas/) correspond to the nine `data/sample-*.json` files. Shared concepts live in [`schemas/common.schema.json`](../schemas/common.schema.json) and are referenced by the domain schemas.
+The twelve record domains under [`schemas/`](../schemas/) include capabilities and research evaluations alongside the existing workflow graph. Shared concepts live in [`schemas/common.schema.json`](../schemas/common.schema.json). The [compiler](capability-compiler.md) writes separate review artifacts.
 
-All sample records are fictional placeholders. A valid proposed record is not necessarily reviewed, approved, or supported. The `schema_version`, `record_version`, and `last_modified` fields provide a migration path; review provenance records the exact `reviewed_record_version` when a review occurs.
+Records include fictional placeholders and proposed real Virginia/Maryland collections. A valid proposed record is not necessarily reviewed, approved, current or supported. Version metadata provides a migration path; reviews bind an exact `reviewed_record_version`.
 
 ## Add or change a record
 
@@ -107,3 +111,7 @@ Do not commit API keys, credentials, private user data, real legal documents, co
 ## Guiding rule
 
 Keep schemas, sample records, documentation, and validation synchronized. A machine-valid record may still be unsafe or legally inappropriate; supported status requires the additional review and evaluation gates documented by the project.
+
+## CourtListener development
+
+The [CourtListener guide](courtlistener.md) documents server-only token configuration, local SQLite/FTS operation, bounded REST/bulk commands and corpus compilation. No credentials are needed for `python -B -m unittest tests.test_courtlistener -v` or `python -B scripts/benchmark_research.py --scale 1000`. In the default product, choose **Try CourtListener research example**; it explicitly uses reconstructed records and fixed model fixtures. No database is created unless a corpus/network path is configured, a CLI is invoked, or the isolated in-memory example is selected. Live acceptance tests remain pending. Never commit corpus databases, downloaded bulk files or credentials.
