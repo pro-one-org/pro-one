@@ -15,6 +15,7 @@ RESEARCH_TOPICS = {
         "negligence": ("negligence duty breach causation ordinary care condition created",),
         "notice": ("actual constructive notice dangerous condition",),
         "contributory_negligence": ("contributory negligence proximate cause jury", "contributory negligence ordinary care"),
+        "traffic_contributory_negligence": ("traffic collision contributory negligence jury proximate cause",),
         "limitations": ("personal injury limitations accrual tolling",),
     },
     "civil_procedure": {

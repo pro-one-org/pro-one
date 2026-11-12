@@ -230,8 +230,9 @@ class ResearchSynthesisService:
         package["synthesis"] = {"status": "verified" if accepted else "no_verified_claims", "ledger": ledger, "metrics": metrics}
         if accepted:
             plan = package["response_plan"]
-            covered_sources = {sid for claim in accepted for sid in claim["source_ids"]}
-            remaining = [claim for claim in plan["claims"] if covered_sources.isdisjoint(claim["source_ids"])]
+            covered_passages = {pid for claim in accepted for pid in claim["supported_by_passage_ids"]}
+            remaining = [claim for claim in plan["claims"]
+                         if not set(claim["supported_by_passage_ids"]).issubset(covered_passages)]
             plan["claims"] = accepted + remaining
             used_citations = {cid for claim in plan["claims"] for cid in claim["citation_ids"]}
             plan["citations"] = [citation for citation in plan["citations"] if citation["citation_id"] in used_citations]

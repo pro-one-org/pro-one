@@ -118,6 +118,10 @@ class GeneralLegalResearchService:
                 sources[sid] = deepcopy(document.source)
                 passages = {pid: p for pid, p in passages.items() if p["source_id"] != sid}
                 passages.update({p["id"]: deepcopy(p) for p in candidate_passages})
+        if capability and selected_capability_id is None:
+            topical_passages = {pid: p for pid, p in passages.items() if set(matter.topics) & set(p["propositions"])}
+            if topical_passages:
+                passages = topical_passages
         if capability:
             conflicts = deepcopy(capability["conflicts"])
         else:

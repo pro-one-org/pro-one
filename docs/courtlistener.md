@@ -19,7 +19,7 @@ The implementation uses `https://www.courtlistener.com/api/rest/v4/` with a serv
 | Bulk | Stream local UTF-8 CSV / CSV.bz2 by table with PostgreSQL escaping into indexed staging; join into normalized bundles |
 | Future replication | Normalized `CaseBundle` / ingestion-source boundary; no replication connection or access provisioned |
 
-No CourtListener token or live model key was available for this milestone. **Authenticated downloads: zero. Authenticated API calls: zero. Live semantic-model calls: zero.** Public documentation and public cluster metadata were checked; the authenticated wire behavior is tested with offline transports. Access still needs live acceptance testing with an authorized account.
+On November 12, authenticated v4 access passed on the Virginia court and usage endpoints. The discovery, hydration, refresh and relationships probes passed against live responses. The targeted Research Core corpus contains five Virginia Supreme Court cases. See the [private-beta evidence audit](private-beta-evidence.md) for results and review gaps.
 
 Access is subject to Free Law Project's current terms, membership limits, quotas and commercial arrangements. Do not assume today's access terms persist. No sign-up, payment, account rotation, quota evasion, PACER credentials or purchase/fetch APIs are implemented. The fixed endpoint allowlist cannot call `recap-fetch`.
 
@@ -32,14 +32,22 @@ python -B scripts/accept_courtlistener.py discover
 python -B scripts/accept_courtlistener.py hydrate
 python -B scripts/accept_courtlistener.py refresh
 python -B scripts/accept_courtlistener.py relationships
+python -B scripts/accept_courtlistener.py hydrate --target contract_breach
+python -B scripts/accept_courtlistener.py hydrate --target contributory_negligence
+python -B scripts/accept_courtlistener.py hydrate --target landlord_repairs
+python -B scripts/courtlistener_corpus.py --database .local/courtlistener-acceptance.sqlite3 refresh 1060050
+python -B scripts/courtlistener_corpus.py --database .local/courtlistener-acceptance.sqlite3 lookup "486 S.E.2d 285"
+python -B scripts/benchmark_virginia_corpus.py --database .local/courtlistener-acceptance.sqlite3
 ```
 
 - **Discover** checks two scoped keyword pages for distinct results and one scoped semantic page for results. This measures API compatibility and latency. Relevance requires separately labeled queries.
 - **Hydrate** downloads the known Virginia cluster for `278 Va. 84`, checks its court, docket and opinion joins, and verifies a corpus round trip, scoped retrieval and repeat ingestion. The report records each opinion's role, text format, length and hash.
 - **Refresh** bypasses the resource cache and checks the same invariants again. Compare opinion hashes and the ingestion result across the two reports. If the provider returns unchanged content, a real change transition remains unobserved. The offline suite exercises that transition with a changed fixture.
 - **Relationships** resolves the live base citation, checks the persisted identity, reads and stores one outgoing edge, and exercises safe normalization of a real 404.
+- **Targeted hydrate** checks one labeled Virginia case and verifies its preferred citation against the cluster and case name. The local benchmark measures known-case rank against the same database.
+- **Austin role comparison** uses the Austin v. Shoney’s cluster and its parallel citation. Confirm the lookup and stored case agree on the cluster and name before using its separate lead, dissent and mixed records.
 
-Retain the JSON reports locally. On a passing phase, compare matching quota windows before and after the run and record request counts separately. Concurrent requests and rolling resets can affect the observed delta. Check the reported text formats against the provider response if the case uses a fallback. A phase that stops for quota or an API error emits a safe reason and attempted-request metrics and exits with code 2. Re-run it when the provider permits. Run hydration initially on a fresh database so cached resources from another run cannot serve as evidence of new downloads. This acceptance procedure has offline transport coverage. Authenticated acceptance remains pending.
+Retain the JSON reports locally. On a passing phase, compare matching quota windows before and after the run and record request counts separately. Concurrent requests and rolling resets can affect the observed delta. Check the reported text formats against the provider response if the case uses a fallback. A phase that stops for quota or an API error emits a safe reason and attempted-request metrics and exits with code 2. Re-run it when the provider permits. Run hydration initially on a fresh database so cached resources from another run cannot serve as evidence of new downloads.
 
 Malformed search hits, citation identities and pagination URLs yield safe error codes. A citation edge must match the requested opinion on the filtered side before the client hands it to the corpus.
 
@@ -49,7 +57,7 @@ Set `PRO_ONE_AUTHORITY_NETWORK=courtlistener`, `COURTLISTENER_API_TOKEN` and opt
 
 If corpus storage cannot be opened or read, research can still use evidence from the other configured collections and reports a provider gap. Citation lookup returns `corpus_storage_unavailable` without database paths, provider payloads or raw diagnostics. After storage recovers, a new request can use it again.
 
-Set `PRO_ONE_AUTHORITY_NETWORK=courtlistener,virginia_official` to enable both network providers for one research request. The official adapter can recheck sources already linked to an exact capability. A successful fetch with changed text drops excerpts that no longer match. A failed fetch leaves the proposed repository evidence available with a provider limitation and unresolved currentness. CourtListener supplies separate case records and citation identities. Mixed-provider orchestration has offline transport coverage. A local acceptance run also assembled one package with a live excerpt from the [Virginia LIS test section](https://law.lis.virginia.gov/vacode/title8.01/section8.01-243/) and fixture case excerpts. Authenticated mixed-provider acceptance remains pending.
+Set `PRO_ONE_AUTHORITY_NETWORK=courtlistener,virginia_official` to enable both network providers for one research request. The official adapter can recheck sources already linked to an exact capability. A successful fetch with changed text drops excerpts that no longer match. A failed fetch leaves the proposed repository evidence available with a provider limitation and unresolved currentness. CourtListener supplies separate case records and citation identities. The Research Core benchmark combines a locally hydrated and citation-verified v4 corpus with live official sources. In-request dual-network orchestration has offline transport coverage.
 
 The official adapter can also supply Rule 3:20 for the `civil_procedure / summary_judgment` research subject. Its fixed source is the [court's consolidated rules publication](https://www.vacourts.gov/static/courts/scv/rulesofcourt.pdf). A November 9 measurement found a 13,611,122-byte PDF with 631 pages and located the rule on PDF page 203. This source alone has a 16 MB download cap and an 800-page metadata cap. The parser extracts only the fixed rule page, verifies its heading and exact excerpt, and rejects a shifted page or changed excerpt. Its content hash covers the selected normalized page. The worker deadline is 30 seconds, with Linux limits of 512 MB and ten CPU seconds. Other source budgets stay as documented. The source remains proposed with unresolved applicability and currentness.
 

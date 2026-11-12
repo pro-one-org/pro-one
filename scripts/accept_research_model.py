@@ -46,6 +46,9 @@ SCENARIOS = {
     "contributory_negligence": (
         ("When should a jury decide contributory negligence under Virginia law?", {"answered"}),
     ),
+    "traffic_contributory_negligence": (
+        ("In a Virginia traffic collision case, when does the jury decide contributory negligence, and who has to prove proximate causation?", {"answered"}),
+    ),
     "limitations": (
         ("What sources explain personal injury limitations and accrual in Virginia?", {"answered"}),
     ),
@@ -186,6 +189,10 @@ class ObservedProvider:
         call = {"stage": request.instruction_version, "provider_success": response.success,
                 "provider": request.provider, "model": request.model,
                 "elapsed_ms": round(1000 * (time.perf_counter() - started), 2)}
+        usage = response.usage if isinstance(response.usage, dict) else {}
+        call["usage"] = {key: value for key, value in usage.items()
+                         if key in {"input_tokens", "output_tokens", "total_tokens"}
+                         and type(value) is int and value >= 0}
         if "claims" in request.grounded_package:
             call["verified_claims_offered"] = sum(claim["claim_id"].startswith("synthesis.")
                                                   for claim in request.grounded_package["claims"])
@@ -244,11 +251,19 @@ def run(scenario, assistant, observer, include_rendered=False):
                             for source in cited_sources)
                     and any(call.get("verified_claims_offered", 0) for call in turn["calls"])
                 )
+            if scenario == "traffic_contributory_negligence":
+                cited_numbers = {number for section in rendered["sections"] for number in section["citation_numbers"]}
+                turn["checks_passed"] &= {"PDF page 5", "PDF page 6"} <= {
+                    source["locator"] for source in sources if source["number"] in cited_numbers
+                    and source["source_type"] == "court_opinion" and source["citation"] == "279 Va. 370"
+                }
             turn.update(source_count=len(sources), evidence_mode=rendered.get("evidence_mode"),
                         source_types=sorted({s["source_type"] for s in sources}),
                         render_sha256=hashlib.sha256(encoded.encode()).hexdigest())
             if include_rendered:
                 turn["rendered"] = rendered
+        elif include_rendered:
+            turn["message"] = result.get("message", "")
         elif status == "answered":
             turn["checks_passed"] = False
         turn["turn_hash"] = turn_hash(turn)
@@ -263,6 +278,7 @@ def main():
     parser.add_argument("scenario", choices=SCENARIOS)
     parser.add_argument("--include-rendered", action="store_true", help="Include rendered synthetic answers for review")
     parser.add_argument("--virginia-official", action="store_true", help="Allow live Virginia official sources; keep CourtListener offline")
+    parser.add_argument("--corpus", type=Path, help="Read a preverified local corpus without making CourtListener requests")
     parser.add_argument("--report-file", type=Path, help="Saved report to score without model calls")
     parser.add_argument("--review-file", type=Path, help="Human scores bound to the saved report's turn hashes")
     parser.add_argument("--review-template", action="store_true", help="Print an unscored template for --report-file")
@@ -292,6 +308,8 @@ def main():
             return 2
     if args.review_template:
         parser.error("--review-template requires --report-file")
+    if args.corpus and not args.corpus.is_file():
+        parser.error("--corpus must reference an existing acceptance database")
     try:
         settings = Settings.from_environment()
         config = GenerationConfig(provider=settings.provider, model=settings.model)
@@ -306,13 +324,16 @@ def main():
     registry = ProviderRegistry()
     registry.register(config.provider, observer, set(configured_registry.configured_models()[config.provider]))
     authority_network = "virginia_official" if args.virginia_official else ""
-    assistant = AssistantService(RecordRepository(), replace(settings, authority_network=authority_network),
+    corpus_path = str(args.corpus) if args.corpus else settings.corpus_path
+    assistant = AssistantService(RecordRepository(), replace(settings, authority_network=authority_network,
+                                                             corpus_path=corpus_path),
                                  GenerationService(registry))
     turns = run(args.scenario, assistant, observer, args.include_rendered)
     passed = all(turn["checks_passed"] for turn in turns)
     print(json.dumps({"scenario": args.scenario, "scenario_hash": scenario_hash(args.scenario),
                       "provider": config.provider, "model": config.model,
                       "authority_network": authority_network or "offline",
+                      "local_corpus_enabled": bool(corpus_path),
                       "status": "passed_structural_checks" if passed else "failed_structural_checks",
                       "manual_quality_review": "pending", "model_calls": len(observer.calls), "turns": turns}, indent=2))
     return 0 if passed else 1

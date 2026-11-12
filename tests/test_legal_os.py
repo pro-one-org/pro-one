@@ -386,7 +386,8 @@ class AuthorityProviderTests(unittest.TestCase):
         provider = VirginiaOfficialProvider(self.repo, transport)
         matter = MATTER.model_copy(update={"legal_area": "contracts", "topics": ["contract_breach"]})
         self.assertEqual(["va-filak-george"], provider.search(matter))
-        with patch("pypdf.PdfReader", return_value=reader):
+        with patch.dict(OFFICIAL_APPELLATE_CASES["va-filak-george"], {"checked_snapshot": None}), \
+                patch("pypdf.PdfReader", return_value=reader):
             document = provider.fetch("va-filak-george")
         self.assertEqual("unknown", document.source["case_metadata"]["opinion_role"])
         self.assertEqual((), document.passages)
@@ -418,18 +419,20 @@ class AuthorityProviderTests(unittest.TestCase):
         transport = Mock(get=Mock(return_value=(body, "application/pdf")))
         provider = VirginiaOfficialProvider(self.repo, transport)
         preceding = Mock(extract_text=Mock(return_value="Earlier page of synthetic opinion"))
-        selected = Mock(extract_text=Mock(return_value=snapshot["excerpt"]))
-        reader = Mock(is_encrypted=False, pages=[preceding] * (snapshot["page"] - 1) + [selected])
-        with patch.dict(snapshot, {"pdf_sha256": sha256(body).hexdigest()}), patch("pypdf.PdfReader", return_value=reader):
+        excerpt = "The synthetic opinion includes this checked passage."
+        selected = Mock(extract_text=Mock(return_value=excerpt))
+        reader = Mock(is_encrypted=False, pages=[preceding] * 6 + [selected])
+        checked = {"pdf_sha256": sha256(body).hexdigest(), "passages": ((7, 0, len(excerpt), digest(excerpt)),)}
+        with patch.dict(snapshot, checked), patch("pypdf.PdfReader", return_value=reader):
             document = provider.fetch(sid)
             self.assertEqual("majority", document.source["case_metadata"]["opinion_role"])
             self.assertEqual("unknown", document.source["case_metadata"]["subsequent_treatment"])
-            self.assertEqual(snapshot["excerpt"], document.passages[0]["text"])
+            self.assertEqual(excerpt, document.passages[0]["text"])
             self.assertEqual("PDF page 7", document.passages[0]["locator"])
-            selected.extract_text.return_value = "The verified passage is absent."
+            selected.extract_text.return_value = "Moved passage. " + excerpt
             with self.assertRaisesRegex(AuthorityUnavailable, "authority_parse_failed"):
                 provider.fetch(sid)
-            selected.extract_text.return_value = snapshot["excerpt"]
+            selected.extract_text.return_value = excerpt
             transport.get.return_value = (body + b"-changed", "application/pdf")
             with self.assertRaisesRegex(AuthorityUnavailable, "authority_parse_failed"):
                 provider.fetch(sid)

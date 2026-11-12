@@ -728,9 +728,10 @@ class CourtListenerTests(unittest.TestCase):
                 self.assertTrue(all(entry["rejection_reason"] == reason for entry in ledger))
                 self.assertTrue(all(entry["verification_status"] == "rejected" for entry in ledger))
 
-    def test_partial_synthesis_preserves_exact_claims_from_uncovered_sources(self):
+    def test_partial_synthesis_preserves_exact_claims_from_uncovered_passages(self):
         package = self.package()
-        passage = package["grounding"]["passages"][0]
+        passages = package["grounding"]["passages"]
+        passage = next(p for p in passages if sum(other["source_id"] == p["source_id"] for other in passages) > 1)
         scope = package["user_context"]["jurisdiction_scope"]
 
         class Fixture:
@@ -752,8 +753,8 @@ class CourtListenerTests(unittest.TestCase):
         claims = updated["response_plan"]["claims"]
         self.assertEqual("semantically_verified_development", claims[0]["support_state"])
         self.assertEqual([c for c in package["response_plan"]["claims"]
-                          if passage["source_id"] not in c["source_ids"]], claims[1:])
-        self.assertTrue(claims[1:])
+                          if passage["id"] not in c["supported_by_passage_ids"]], claims[1:])
+        self.assertTrue(any(passage["source_id"] in c["source_ids"] for c in claims[1:]))
         request = build_model_request(updated, config)
         draft, validation = OutputValidationService().validate(valid_draft(request), request)
         self.assertIsNotNone(draft, validation)
@@ -855,6 +856,13 @@ class CourtListenerTests(unittest.TestCase):
         self.assertTrue(any(s.get("external_identifiers") for s in package["grounding"]["sources"]))
 
     def test_general_research_combines_case_and_official_rule(self):
+        unrelated = deepcopy(self.bundles[1])
+        unrelated.opinions[0] = Opinion.normalize({
+            "id": unrelated.opinions[0].id, "cluster": unrelated.cluster.id, "type": "010combined",
+            "plain_text": "Synthetic fixture reasoning addresses a motion to strike and disputed material facts."})
+        self.store.ingest(unrelated)
+        self.store.save_verification({"citation": unrelated.cluster.citations[0], "cluster": unrelated.cluster.id,
+                                      "name": unrelated.cluster.name, "origin": "fixture"})
         case = deepcopy(self.bundles[0])
         case.opinions[0] = Opinion.normalize({
             "id": case.opinions[0].id, "cluster": case.cluster.id, "type": "020lead",
@@ -872,6 +880,8 @@ class CourtListenerTests(unittest.TestCase):
             ).assemble(matter)["package"]
         self.assertTrue({"court_opinion", "court_rule"} <= {s["source_type"] for s in package["grounding"]["sources"]})
         self.assertIn("va-rule-3-20", {c["source_id"] for c in package["response_plan"]["citations"]})
+        self.assertNotIn(f"cl-opinion-{unrelated.opinions[0].id}",
+                         {s["id"] for s in package["grounding"]["sources"]})
         self.assertEqual("general_research", package["evidence_mode"])
         self.assertIsNone(package["workflow_id"])
         self.assertFalse(package["public_execution"]["allowed"])

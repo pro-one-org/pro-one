@@ -13,6 +13,16 @@ from app.research_planning import LegalResearchPlanner, RESEARCH_TOPICS
 from app.retrieval import tokens
 
 
+# Common words such as "motion" and "negligent" are useful for discovery,
+# but cannot by themselves make a case relevant to these narrower issues.
+ISSUE_ANCHORS = {
+    "notice": r"\b(?:actual|constructive)\s+(?:notice|knowledge)\b",
+    "summary_judgment": r"\bsummary\s+judg(?:e)?ment\b",
+    "landlord_repairs": r"\b(?:landlord|tenant|tenancy|leased premises)\b",
+    "traffic_contributory_negligence": r"\b(?:collision|motor vehicle|automobile|driver|pedestrian)\b",
+}
+
+
 class CourtListenerCitationVerifier:
     def __init__(self, store, client=None):
         self.store, self.client = store, client
@@ -38,6 +48,10 @@ def normalize_name(value):
 
 def extract_passages(bundle: CaseBundle, opinion, topics, legal_area, *, limit=5):
     """Select multiple issue-relevant exact spans, preserving role and context."""
+    source = source_record(bundle, opinion, legal_area, topics)
+    anchors = [ISSUE_ANCHORS[topic] for topic in topics if topic in ISSUE_ANCHORS]
+    if anchors and not any(re.search(anchor, opinion.text, re.IGNORECASE) for anchor in anchors):
+        return source, ()
     area_topics = RESEARCH_TOPICS.get(legal_area, {})
     wanted = tokens(" ".join(topics).replace("_", " "))
     wanted |= tokens(" ".join(query for topic in topics for query in area_topics.get(topic, ())))
@@ -59,7 +73,6 @@ def extract_passages(bundle: CaseBundle, opinion, topics, legal_area, *, limit=5
                 excerpt = excerpt[:excerpt.rfind(". ") + 1]
             candidates.append((score, index, start, excerpt, text))
     selected = sorted(candidates, key=lambda item: (-item[0], item[1]))[:min(limit, 8)]
-    source = source_record(bundle, opinion, legal_area, topics)
     passages = []
     for _, index, start, text, context in sorted(selected, key=lambda item: item[1]):
         role = opinion.role

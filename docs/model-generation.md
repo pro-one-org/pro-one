@@ -81,7 +81,7 @@ The November 9, 2026 operator policy uses [GPT-6 Luna](https://developers.openai
 
 Reserve [GPT-6 Astra](https://developers.openai.com/api/docs/models/gpt-6-astra) for explicitly configured limited benchmarks or escalations; there is no automatic Astra fallback. Pro-One uses strict JSON-schema Responses with `store: false`; local deterministic validation remains mandatory. Documented API compatibility and mock routing tests do not prove account access, extraction adequacy or legal quality. Check access and bounded real requests before running acceptance. Supply `OPENAI_API_KEY` through the approved secret/environment mechanism. Never put a credential in commands, reports, model inputs or Git. Recheck official model documentation when repeating this benchmark later.
 
-Use a development environment with an authorized OpenAI or Anthropic credential, `PRO_ONE_MODEL_PROVIDER` set explicitly to the provider, and `PRO_ONE_MODEL` set to the model to evaluate. Set `PRO_ONE_CORPUS_PATH` to a locally built corpus for case-law acceptance. The runner runs one synthetic conversation per invocation and defaults to offline authority retrieval. Pass `--virginia-official` to exercise bounded live retrieval from Virginia's official sources. Both modes keep live CourtListener requests disabled. Provider calls may incur charges.
+Use a development environment with an authorized OpenAI or Anthropic credential, `PRO_ONE_MODEL_PROVIDER` set explicitly to the provider, and `PRO_ONE_MODEL` set to the model to evaluate. Pass `--corpus` with an existing citation-verified case database, or set `PRO_ONE_CORPUS_PATH`. The runner runs one synthetic conversation per invocation and defaults to offline authority retrieval. Pass `--virginia-official` to exercise bounded live retrieval from Virginia's official sources. Both modes keep live CourtListener requests disabled. Provider calls may incur charges.
 
 ```text
 python -B scripts/accept_research_model.py notice_followup --include-rendered
@@ -93,10 +93,11 @@ python -B scripts/accept_research_model.py hostile_document --include-rendered
 python -B scripts/accept_research_model.py civil_procedure --virginia-official --include-rendered
 python -B scripts/accept_research_model.py summary_judgment_comparison --virginia-official --include-rendered
 python -B scripts/accept_research_model.py landlord_repairs_comparison --virginia-official --include-rendered
+python -B scripts/accept_research_model.py landlord_repairs_comparison --virginia-official --corpus .local/courtlistener-acceptance.sqlite3 --include-rendered
 python -B scripts/accept_research_model.py contract_terms --include-rendered
 ```
 
-The runner records observed model stages, turn status, latency, source counts and a hash of each rendered answer. The optional rendered answer is for review of the fixed synthetic inputs. Reports omit model prompts, raw drafts, conversation tokens and credentials. A structural pass checks the expected routing or refusal, citation links and development release marker. Use the stage trace to determine whether proposal, verification and rendering ran. An answered turn may use exact text after synthesis falls back.
+The runner records observed model stages, provider-reported token counts when available, turn status, latency, source counts and a hash of each rendered answer. The optional rendered answer is for review of the fixed synthetic inputs. Reports omit model prompts, raw drafts, conversation tokens and credentials. A structural pass checks the expected routing or refusal, citation links and development release marker. Use the stage trace to determine whether proposal, verification and rendering ran. An answered turn may use exact text after synthesis falls back.
 
 For live review, score each rendered legal proposition against its cited passages, including opinion role, jurisdiction, exceptions and currentness. Separately record expected and observed unsupported outcomes, citation misuse and useful answers lost to refusal or fallback. The runner's structural result does not supply these labels. Without an explicitly configured live model, it exits with zero model calls. Live semantic quality and private-beta legal review remain pending.
 

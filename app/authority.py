@@ -103,6 +103,20 @@ class RepositoryAuthorityProvider:
         return AuthorityDocument(deepcopy(source), passages, " ".join(p["text"] for p in passages))
 
 
+# Only these spans of the combined official Austin PDF are attributed to the majority.
+AUSTIN_NOTICE_SNAPSHOT = {
+    "pdf_sha256": "d415a280c200d3196b6ab7eaa63170277a03726de15d4a984806b064ed7d601d",
+    "passages": (
+        (7, 1162, 1486, "sha256:51195d4f9464590e63afa4223cbc59c160aac2317a6956e01b3a0c995686d223"),
+        (8, 16, 244, "sha256:a00e669cbbb2d543ad3921352005880daf33a39101cef9230c35ec0151a1f2d5"),
+    ),
+    "opinion_role": "lead",
+    "procedural_posture": "Appeal from a renewed motion to strike. Reversed and remanded.",
+    "limitation": "The majority's constructive-knowledge analysis depends on a reasonable inference that the property owner created the condition. The court did not determine liability.",
+    "topics": ["notice"],
+}
+
+
 # Server-owned registry. No API, user input, model output or redirect can expand it.
 # Catalog subjects describe source collections, never per-question workflows.
 OFFICIAL_CATALOG = {
@@ -115,11 +129,28 @@ OFFICIAL_APPELLATE_CASES = {
         "url": "https://www.vacourts.gov/static/opinions/opnscvwp/1031407.pdf",
         "title": "Filak v. George", "citation": "267 Va. 612", "date": "2004-04-23",
         "area": "contracts", "topics": ["contract_breach"],
+        "checked_snapshot": {
+            "pdf_sha256": "40bff5eb96358580eaefc518b0a082eaa2ee1fff1daec4d6344ad9773cf1b816",
+            "passages": ((9, 843, 1096, "sha256:afddb80549438da3563d592c96394d1b4f66d273d203ad7685db84bb257312d0"),),
+            "opinion_role": "majority",
+            "procedural_posture": "The court affirmed the judgment, including the ruling striking the contract evidence.",
+            "limitation": "The excerpt lists claim elements. The court resolved the contract claim on proof of damages and left other issues unresolved.",
+        },
     },
     "va-rascher-friend": {
         "url": "https://www.vacourts.gov/static/opinions/opnscvwp/1090193.pdf",
         "title": "Rascher v. Friend", "citation": "279 Va. 370", "date": "2010-02-25",
-        "area": "torts", "topics": ["contributory_negligence"],
+        "area": "torts", "topics": ["contributory_negligence", "traffic_contributory_negligence"],
+        "checked_snapshot": {
+            "pdf_sha256": "5aa9b45270cde61889d1b60d0fcff00ed68b871898ac009ed53dc0bc49b0872b",
+            "passages": (
+                (5, 964, 1259, "sha256:667e1e5fc15154b1dbd3d12bd06a8abad63f7a1951b51b0d1ebcd14a8340f13c"),
+                (6, 0, 464, "sha256:f7ce1388f32d6eba0762dad9d7faee6f2563c971652879703828ff7fa58d80b6"),
+            ),
+            "opinion_role": "majority",
+            "procedural_posture": "Appeal from a ruling striking evidence in a traffic collision case. Reversed and remanded for a new trial.",
+            "limitation": "The opinion addresses the factfinder's role and proof of negligence and proximate causation. It leaves the collision's outcome for trial.",
+        },
     },
     "va-sales-kecoughtan": {
         "url": "https://www.vacourts.gov/static/opinions/opnscvwp/1090143.pdf",
@@ -127,8 +158,7 @@ OFFICIAL_APPELLATE_CASES = {
         "area": "landlord_tenant", "topics": ["landlord_repairs"],
         "checked_snapshot": {
             "pdf_sha256": "b8d40ede372158a492a7235f45370d482f3aecc4dba291cf7983487a283a75e8",
-            "page": 5,
-            "excerpt": "where the landlord enters leased premises for the purpose of making repairs, he must use reasonable care in performing the work.",
+            "passages": ((5, 1173, 1301, "sha256:37d28e1312b765222dfd7de6a7176024eb0d8a0b714304db19cca1afaa0fc2bc"),),
             "opinion_role": "majority",
             "procedural_posture": "Appeal from a demurrer. The court reversed and remanded on the pleadings.",
             "limitation": "The excerpt concerns common-law care in repairs actually undertaken. The court addressed the sufficiency of the allegations.",
@@ -140,8 +170,7 @@ OFFICIAL_APPELLATE_CASES = {
         "area": "civil_procedure", "topics": ["summary_judgment"],
         "checked_snapshot": {
             "pdf_sha256": "11ff92022814a26eb509d737b8c5431c9e377ed917d5e94f4f3a8a80e8557af6",
-            "page": 7,
-            "excerpt": "It follows that immaterial facts genuinely in dispute or material facts not genuinely in dispute do not preclude the entry of summary judgment.",
+            "passages": ((7, 41, 184, "sha256:37a26fb14391d56397c4723b2ba531bc10c34ef5e57a8aae2cecd30936d79744"),),
             "opinion_role": "majority",
             "procedural_posture": "Appeal from summary judgment. The court reversed and remanded.",
             "limitation": "The excerpt addresses which factual disputes affect summary judgment. Read the full opinion and rule for other requirements.",
@@ -312,7 +341,10 @@ class VirginiaOfficialProvider:
         if not source or source["url"] != url:
             raise AuthorityUnavailable("catalog_integrity_error")
         snapshot = OFFICIAL_APPELLATE_CASES.get(source_id, {}).get("checked_snapshot")
+        if source_id == "va-austin-shoneys":
+            snapshot = AUSTIN_NOTICE_SNAPSHOT
         statute = OFFICIAL_STATUTE_SECTIONS.get(source_id)
+        checked_opinion_passages = []
         checked_paragraphs = []
         try:
             if kind == "pdf":
@@ -332,8 +364,13 @@ class VirginiaOfficialProvider:
                         raise ValueError()
                 else:
                     pages = [normalized_source(p.extract_text() or "") for p in reader.pages]
-                    if snapshot and snapshot["excerpt"] not in pages[snapshot["page"] - 1]:
-                        raise ValueError()
+                    if snapshot:
+                        for page, start, end, fingerprint in snapshot["passages"]:
+                            page_text = pages[page - 1]
+                            excerpt = page_text[start:end]
+                            if not 0 <= start < end <= len(page_text) or digest(excerpt) != fingerprint:
+                                raise ValueError()
+                            checked_opinion_passages.append((page, excerpt))
                     text = normalized_source(" ".join(pages))
             else:
                 if media != "text/html":
@@ -366,10 +403,11 @@ class VirginiaOfficialProvider:
             source["case_metadata"].update(opinion_role=snapshot["opinion_role"], precedential_status="reported",
                                            procedural_posture=snapshot["procedural_posture"])
             source["workflow_fit"]["limitations"] = ["Proposed source. Applicability and subsequent treatment require review."]
-            passage = evidence_passage(source, snapshot["excerpt"], f"PDF page {snapshot['page']}",
-                                       source["workflow_fit"]["topics"])
-            passage["limitations"].append(snapshot["limitation"])
-            passages.append(passage)
+            for index, (page, excerpt) in enumerate(checked_opinion_passages, 1):
+                passage = evidence_passage(source, excerpt, f"PDF page {page}", snapshot.get("topics", source["workflow_fit"]["topics"]),
+                                           suffix="excerpt" if index == 1 else f"excerpt-{index}")
+                passage["limitations"].append(snapshot["limitation"])
+                passages.append(passage)
         for locator, paragraph in checked_paragraphs:
             passage = evidence_passage(source, paragraph, f"{statute['citation']} {locator}", statute["topics"],
                                        suffix="paragraph-" + locator.lower().replace(" ", "-"))

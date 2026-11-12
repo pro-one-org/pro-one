@@ -12,6 +12,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from app.citation_research import CitationResearchRequest, resolve_citation
 from app.corpus_store import SQLiteCorpusStore
 from app.courtlistener_client import CourtListenerClient, CourtListenerError, RequestBudget
+from app.courtlistener_authority import normalize_name
+from scripts.benchmark_virginia_corpus import LABELS
 
 
 CLUSTER = 1058333
@@ -35,14 +37,20 @@ def discovery(client):
     return {"keyword_page_hits": [len(first), len(second)], "semantic_hits": len(semantic)}
 
 
-def hydration(client, store, refresh):
-    if refresh and store.case(CLUSTER) is None:
+def hydration(client, store, refresh, cluster=CLUSTER, citation=CITATION, *, verify_identity=False):
+    if refresh and store.case(cluster) is None:
         raise CourtListenerError("hydrate_before_refresh")
-    bundle = client.hydrate(CLUSTER, refresh=refresh)
-    if bundle.court.id != "va" or CITATION not in bundle.cluster.citations or not any(o.text for o in bundle.opinions):
+    bundle = client.hydrate(cluster, refresh=refresh)
+    if (bundle.court.id != "va" or bundle.court.state != "Virginia" or bundle.court.sovereign != "state"
+            or citation not in bundle.cluster.citations or not any(o.text for o in bundle.opinions)):
         raise CourtListenerError("expected_virginia_case_not_hydrated")
+    if verify_identity:
+        value = client.lookup(bundle.cluster.citations[0])
+        if value["cluster"] != cluster or normalize_name(value["name"]) != normalize_name(bundle.cluster.name):
+            raise CourtListenerError("unexpected_citation_identity")
+        store.save_verification(value)
     result = store.ingest(bundle)
-    stored = store.case(CLUSTER)
+    stored = store.case(cluster)
     stored.validate_relationships()
     if stored.model_copy(update={"opinions": sorted(stored.opinions, key=lambda o: o.id)}) != bundle.model_copy(
             update={"opinions": sorted(bundle.opinions, key=lambda o: o.id)}):
@@ -50,9 +58,11 @@ def hydration(client, store, refresh):
     repeated = store.ingest(bundle)
     if repeated["new"] or repeated["changed"]:
         raise CourtListenerError("corpus_idempotency_failed")
-    if not any(hit["cluster"] == CLUSTER for hit in store.search("notice", state="Virginia", courts=("va",))):
+    if cluster == CLUSTER and not any(hit["cluster"] == cluster for hit in store.search("notice", state="Virginia", courts=("va",))):
         raise CourtListenerError("corpus_case_not_retrieved")
-    return {"cluster": CLUSTER, "origin": bundle.origin, "ingestion": result,
+    return {"cluster": cluster, "court": bundle.court.id, "state": bundle.court.state,
+            "origin": bundle.origin, "ingestion": result,
+            "verified_citation": bundle.cluster.citations[0] if verify_identity else None,
             "opinions": [{"id": op.id, "role": op.role, "format": op.text_format,
                           "characters": len(op.text), "sha256": op.content_hash} for op in stored.opinions]}
 
@@ -90,7 +100,11 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("phase", choices=("discover", "hydrate", "refresh", "relationships"))
     parser.add_argument("--database", type=Path, default=Path(".local/courtlistener-acceptance.sqlite3"))
+    targets = {label[1]: (label[3], label[4]) for label in LABELS}
+    parser.add_argument("--target", choices=targets, help="Hydrate and verify one labeled Virginia benchmark case")
     args = parser.parse_args(argv)
+    if args.target and args.phase != "hydrate":
+        parser.error("--target requires hydrate")
     token = os.environ.get("COURTLISTENER_API_TOKEN")
     report = {"phase": args.phase, "status": "unavailable"}
     if not token:
@@ -112,6 +126,8 @@ def main(argv=None):
                 result = discovery(client)
             elif args.phase == "relationships":
                 result = relationships(client, store)
+            elif args.target:
+                result = hydration(client, store, False, *targets[args.target], verify_identity=True)
             else:
                 result = hydration(client, store, refresh=args.phase == "refresh")
             report["checks"] = result
