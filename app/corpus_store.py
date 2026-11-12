@@ -157,6 +157,8 @@ class SQLiteCorpusStore:
                                     (cluster.id, cluster.docket, cluster.name, cluster.date, cluster.publication, bundle.origin, encode(cluster.model_dump())))
             self.connection.execute("DELETE FROM citations WHERE cluster=?", (cluster.id,))
             self.connection.executemany("INSERT INTO citations VALUES(?,?)", [(cluster.id, citation) for citation in set(cluster.citations)])
+            self.connection.execute("DELETE FROM citation_verifications WHERE cluster=? AND citation NOT IN "
+                                    "(SELECT citation FROM citations WHERE cluster=?)", (cluster.id, cluster.id))
             if bundle.cluster.opinions:
                 placeholders = ",".join("?" for _ in bundle.cluster.opinions)
                 self.connection.execute("UPDATE opinions SET state='unavailable',last_checked=? WHERE cluster=? AND id NOT IN (" + placeholders + ")",

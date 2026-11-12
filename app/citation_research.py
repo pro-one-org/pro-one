@@ -46,6 +46,8 @@ def resolve_citation(request, store, client=None):
             store.ingest(bundle)
         if not bundle or bundle.court.state != request.state or bundle.court.sovereign != "state":
             return {"status": "citation_unverified", "reason": "jurisdiction_mismatch_or_missing_case"}
+        if request.citation not in bundle.cluster.citations:
+            return {"status": "citation_unverified", "reason": "citation_missing_from_current_case"}
         verification = CourtListenerCitationVerifier(store, client).verify(request.citation, bundle.cluster.id, bundle.cluster.name)
         return {"status": "identity_verified", "name": bundle.cluster.name, "citation": request.citation,
                 "court": bundle.court.name, "date": bundle.cluster.date, "cluster": bundle.cluster.id,

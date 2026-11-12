@@ -138,7 +138,10 @@ class GeneralLegalResearchService:
                 gaps.append("Offline reconstructed CourtListener fixture: no authenticated API download or live semantic verification occurred.")
             conflicts.extend(passage.get("conflicts", []))
         order = {pid: index for index, pid in enumerate(capability["source_passage_ids"])} if capability else {}
+        # A combined opinion can duplicate the lead and dissent. Prefer
+        # separately attributed text when selecting within the evidence cap.
         ranked = sorted(passages.values(), key=lambda p: (authority_rank(sources[p["source_id"]]),
+                        (sources[p["source_id"]].get("case_metadata") or {}).get("opinion_role") in {"mixed", "unknown"},
                         order.get(p["id"], 0), -lexical_score(tokens(" ".join(matter.topics)), p), p["id"]))[:12]
         if not ranked:
             return {"status": "no_authoritative_support", "resolution": resolution, "package": None}

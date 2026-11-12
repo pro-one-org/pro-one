@@ -23,6 +23,7 @@ ISSUE_ANCHORS = {
     "landlord_repairs": r"\b(?:landlord|tenant|tenancy|leased premises)\b",
     "traffic_contributory_negligence": r"\b(?:collision|motor vehicle|automobile|driver|pedestrian)\b",
 }
+PREMISES_NOTICE_CONTEXT = r"\b(?:premises|property owner|store\s?owner|invitee)\b"
 
 
 class CourtListenerCitationVerifier:
@@ -51,8 +52,12 @@ def normalize_name(value):
 def extract_passages(bundle: CaseBundle, opinion, topics, legal_area, *, limit=5):
     """Select multiple issue-relevant exact spans, preserving role and context."""
     source = source_record(bundle, opinion, legal_area, topics)
-    anchors = [ISSUE_ANCHORS[topic] for topic in topics if topic in ISSUE_ANCHORS]
-    if anchors and not any(re.search(anchor, opinion.text, re.IGNORECASE) for anchor in anchors):
+    anchored_topics = [topic for topic in topics if topic in ISSUE_ANCHORS]
+    if anchored_topics and not any(
+        re.search(ISSUE_ANCHORS[topic], opinion.text, re.IGNORECASE)
+        and (topic != "notice" or re.search(PREMISES_NOTICE_CONTEXT, opinion.text, re.IGNORECASE))
+        for topic in anchored_topics
+    ):
         return source, ()
     area_topics = RESEARCH_TOPICS.get(legal_area, {})
     wanted = tokens(" ".join(topics).replace("_", " "))
