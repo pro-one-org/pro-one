@@ -16,7 +16,9 @@ from app.retrieval import tokens
 # Common words such as "motion" and "negligent" are useful for discovery,
 # but cannot by themselves make a case relevant to these narrower issues.
 ISSUE_ANCHORS = {
-    "notice": r"\b(?:actual|constructive)\s+(?:notice|knowledge)\b",
+    "notice": (r"\b(?:(?:actual|constructive)\s+(?:notice|knowledge)"
+               r"|unsafe condition (?:which is )?known"
+               r"|hazardous condition was (?:affirmatively )?created)\b"),
     "summary_judgment": r"\bsummary\s+judg(?:e)?ment\b",
     "landlord_repairs": r"\b(?:landlord|tenant|tenancy|leased premises)\b",
     "traffic_contributory_negligence": r"\b(?:collision|motor vehicle|automobile|driver|pedestrian)\b",
