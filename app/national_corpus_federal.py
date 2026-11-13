@@ -155,3 +155,68 @@ class USReportsProvider(PublicProvider):
                          "Role and subsequent treatment require independent review."),
         )
         yield Observation(version, "USREPORTS-347-483", "PDF pages 1–14", "347 U.S. 483 (1954)")
+
+
+class GovInfoECFRProvider(PublicProvider):
+    source = Source(
+        name="govinfo_ecfr", host="www.govinfo.gov", authority_type="regulation", jurisdictions=("US",),
+        official_publisher=False, rendition="Unofficial editorial eCFR compilation distributed by GPO",
+        endpoint="/bulkdata/ECFR/title-{title}/ECFR-title{title}.xml",
+        format="XML title with bounded section selection", update="refresh public title snapshot",
+        attribution="Office of the Federal Register and U.S. Government Publishing Office",
+        rights="Federal regulatory text. Source XML retains publisher structure and metadata.",
+        currentness_method="Retains title-level amendment metadata without treating it as section currency.",
+        parser_revision="1",
+    )
+    selected = {"1": ("1.1", "2.2"), "8": ("100.4",)}
+
+    def source_url(self, selector):
+        if selector not in self.selected:
+            raise CorpusError("invalid_ecfr_title_selector")
+        return f"https://{self.source.host}" + self.source.endpoint.format(title=selector)
+
+    def normalize(self, selector, raw):
+        self.source_url(selector)
+        root = xml_root(raw)
+        document = root.find("./TEXT/BODY/ECFRBRWS")
+        if (root.tag != "DLPSTEXTCLASS" or document is None
+                or text_of(root.find("./HEADER/FILEDESC/PUBLICATIONSTMT/IDNO")) != selector):
+            raise CorpusError("source_title_identity_mismatch")
+        revision = text_of(document.find("AMDDATE")).removesuffix("(fm)").strip()
+        try:
+            amended = datetime.strptime(revision, "%b. %d, %Y").date()
+        except ValueError:
+            raise CorpusError("source_edition_identity_mismatch") from None
+        expected = set(self.selected[selector])
+        for part in document.iter("DIV5"):
+            if part.get("TYPE") != "PART":
+                continue
+            for node in part.iter("DIV8"):
+                original = node.get("N", "")
+                section = original.removeprefix("§").strip()
+                if section not in self.selected[selector]:
+                    continue
+                if (section not in expected or node.get("TYPE") != "SECTION"
+                        or part.get("N") != section.split(".")[0]
+                        or not node.get("NODE", "").startswith(selector + ":")):
+                    raise CorpusError("source_section_identity_mismatch")
+                expected.remove(section)
+                heading = text_of(node.find("HEAD"))
+                prefix = f"§ {section} "
+                if not heading.startswith(prefix):
+                    raise CorpusError("source_section_identity_mismatch")
+                body = "\n".join(text_of(child) for child in node if child.tag not in {"HEAD", "CITA"})
+                citation = f"{selector} CFR {section}"
+                parent = f"{selector} CFR part {part.get('N')}"
+                version = AuthorityVersion(
+                    jurisdiction="US", sovereign="federal", authority_type="regulation",
+                    identity_namespace="cfr", identity_key=f"{selector}/{section}",
+                    title=heading.removeprefix(prefix), citation=citation, edition=f"eCFR title metadata {amended}",
+                    text=body, hierarchy=(f"{selector} CFR", parent),
+                    limitations=("Unofficial eCFR editorial compilation. The amendment marker applies to the title.",
+                                 "Section currentness and subsequent Federal Register changes remain unresolved."),
+                )
+                yield Observation(version, node.get("NODE"), f"DIV8 NODE={node.get('NODE')}", original,
+                                  (SourceRelationship("part_of", parent),))
+        if expected:
+            raise CorpusError("source_section_identity_mismatch")

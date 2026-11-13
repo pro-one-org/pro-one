@@ -1,6 +1,6 @@
 """Bounded adapters for state legislature and judiciary publications."""
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from datetime import date, datetime
 from html.parser import HTMLParser
 import re
@@ -258,11 +258,15 @@ class FloridaProvider(PublicProvider):
 
 
 class CaliforniaCourtRules(PublicProvider):
-    source = official_source(
+    source = replace(official_source(
         "california_court_rules", "courts.ca.gov", "US-CA", "court_rule",
         "Judicial Branch of California", "/cms/rules/index/eight/rule8_{number}", "Publisher edition heading",
-        "California Rules of Court. Advisory commentary is retained in the source artifact.",
-    )
+        "Judicial Branch site terms prohibit automated data gathering. Retained samples are available for local replay.",
+    ), acceptance="retained_sample_only", max_requests=0)
+
+    def fetch(self, selector):
+        self.source_url(selector)
+        raise CorpusError("california_court_rules_automated_access_restricted")
 
     def source_url(self, selector):
         (number,) = selector_match(r"8\.([1-9][0-9]{0,3})", selector)
@@ -290,4 +294,35 @@ class CaliforniaCourtRules(PublicProvider):
             self.source, selector, title, f"Cal. Rules of Court, rule {selector}", title,
             edition, "\n".join(paragraphs), ("Title 8",), "article / operative rule paragraphs",
             effective_from=amended,
+        )
+
+
+class CaliforniaRegulations(PublicProvider):
+    source = official_source(
+        "california_regulations", "www.dir.ca.gov", "US-CA", "regulation",
+        "California Department of Industrial Relations", "/title8/{section}.html", "Explicit published section refresh",
+        "DIR generally treats its site information as public domain unless indicated. The corpus extracts regulatory text.",
+    )
+
+    def source_url(self, selector):
+        if selector != "3203":
+            raise CorpusError("invalid_state_selector")
+        return f"https://{self.source.host}/title8/{selector}.html"
+
+    def normalize(self, selector, raw):
+        self.source_url(selector)
+        root = StateHTML(raw).root
+        heading = root.one(tag="h1").text()
+        page_title = root.one(tag="title").text()
+        if (not heading.startswith(f"§{selector}. ")
+                or not page_title.startswith(f"California Code of Regulations, Title 8, Section {selector}. ")):
+            raise CorpusError("source_section_identity_mismatch")
+        section = root.one(css="co_section")
+        native = section.attrs.get("id", "")
+        if not re.fullmatch(r"co_anchor_I[A-F0-9]{32}", native):
+            raise CorpusError("source_section_identity_mismatch")
+        yield state_observation(
+            self.source, selector, heading, f"Cal. Code Regs. tit. 8, § {selector}", heading, "DIR online rendition",
+            section.one(css="co_body").text(), ("Title 8",), f"#{native} .co_body",
+            agency="California Department of Industrial Relations",
         )

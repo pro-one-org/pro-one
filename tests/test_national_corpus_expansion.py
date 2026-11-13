@@ -4,7 +4,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 
-from app.capabilities import ResearchMatter
+from app.capabilities import ResearchComparison, ResearchMatter
 from app.config import Settings
 from app.legal_research import GeneralLegalResearchService
 from app.national_corpus import AuthorityVersion, CorpusQuery, Observation
@@ -15,6 +15,15 @@ from app.repository import RecordRepository
 
 
 class CorpusExpansionTests(unittest.TestCase):
+    def test_comparison_requires_two_distinct_states_and_the_same_authority_scope(self):
+        base = dict(country="US", state="Virginia", legal_area="landlord_tenant", topics=["landlord_repairs"])
+        left = ResearchMatter(**base)
+        right = ResearchMatter(**(base | {"state": "Florida"}))
+        self.assertEqual(len(ResearchComparison(matters=[left, right]).matters), 2)
+        for update in ({"state": "Virginia"}, {"authority_types": ["statute"]}, {"sovereign": "federal"}):
+            with self.subTest(update=update), self.assertRaisesRegex(ValueError, "comparison_requires_distinct_states"):
+                ResearchComparison(matters=[left, right.model_copy(update=update)])
+
     def test_register_categories_and_part_provenance(self):
         documents = []
         for index, (tag, action) in enumerate((
@@ -86,6 +95,23 @@ class CorpusExpansionTests(unittest.TestCase):
         self.assertEqual(check(first | {"authority_id": "two"}), "probable_match")
         self.assertEqual(check(first | {"authority_id": "two", "court": "Court B"}), "conflicting_identity")
         self.assertEqual(check(first | {"authority_id": "two", "citation": "1 U.S. 2"}), "unresolved_identity")
+
+    def test_ecfr_title_metadata_does_not_establish_section_currentness(self):
+        provider = PROVIDERS["govinfo_ecfr"]
+        raw = """<DLPSTEXTCLASS><HEADER><FILEDESC><PUBLICATIONSTMT><IDNO>1</IDNO>
+            </PUBLICATIONSTMT></FILEDESC></HEADER><TEXT><BODY><ECFRBRWS>
+            <AMDDATE>Dec. 29, 2022(fm)</AMDDATE>
+            <DIV5 TYPE="PART" N="1"><DIV8 TYPE="SECTION" N="§ 1.1" NODE="1:1.1">
+            <HEAD>§ 1.1 Definitions.</HEAD><P>Example content.</P></DIV8></DIV5>
+            <DIV5 TYPE="PART" N="2"><DIV8 TYPE="SECTION" N="§ 2.2" NODE="1:2.2">
+            <HEAD>§ 2.2 Example.</HEAD><P>Example content.</P></DIV8></DIV5>
+            </ECFRBRWS></BODY></TEXT></DLPSTEXTCLASS>""".encode()
+        with SQLiteNormalizedCorpus(":memory:") as store:
+            result = store.ingest(provider, "1", raw)
+            self.assertEqual(result["records"], 2)
+            [row] = store.search(CorpusQuery("US", "regulation", citation="1 CFR 1.1"))
+            self.assertEqual(row["edition"], "eCFR title metadata 2022-12-29")
+            self.assertFalse(store.search(CorpusQuery("US", "regulation", currentness="current", as_of=date(2022, 12, 29))))
 
     def test_research_core_replays_artifact_and_fails_closed_after_tampering(self):
         raw = b'<article id="vacode"><h2>&sect; 55.1-1220. Example.</h2><section data-table="CoV" data-field="body"><p>A landlord shall repair a broken fixture under the example conditions.</p></section></article>'

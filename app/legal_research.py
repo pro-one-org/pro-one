@@ -19,6 +19,19 @@ CURRENTNESS_LIMIT = "Retrieval and verification dates do not certify current law
 FACT_LIMIT = "These sources do not establish that you have a valid claim, that any party was negligent, or that you will recover damages."
 
 
+def compare_state_research(request, repository, settings, generation, config):
+    """Render independently verified state answers in one comparison response."""
+    if settings.mode != "development":
+        return {"status": "unavailable", "jurisdictions": [], "publicly_approved": False}
+    scoped = []
+    for matter in request.matters:
+        answer = GeneralLegalResearchService(repository, settings, generation).respond(matter, config)
+        scoped.append({"state": matter.state, "status": answer["status"], "response": answer["response"]})
+    count = sum(item["response"] is not None for item in scoped)
+    status = "answered" if count == len(scoped) else "partial_support" if count else "no_authoritative_support"
+    return {"status": status, "jurisdictions": scoped, "publicly_approved": False}
+
+
 def evidence_errors(source, passage, jurisdiction):
     errors = []
     if not same_jurisdiction(source["jurisdiction"], jurisdiction) or not same_jurisdiction(passage["jurisdiction"], jurisdiction):

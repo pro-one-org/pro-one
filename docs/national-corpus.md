@@ -30,6 +30,7 @@ publisher artifacts outside the curated graph.
 | --- | --- | --- |
 | OLRC | 426 federal statutory records across Titles 1 and 44, including 38 repeal markers | Explicit USLM release. Title, chapter, release point, section identifiers and original ZIP. |
 | GovInfo annual CFR | 250 historical sections from 2023 Title 1, Volume 1 | Annual volume. Embedded revision year, part hierarchy, XML and part authority citations. |
+| GPO eCFR bulk | Three sections from Titles 1 and 8 | Unofficial editorial rendition. Exact XML and embedded title amendment metadata. Section currency unresolved. |
 | GovInfo Federal Register | 112 preambles from January 30, 2026. Nine proposed rules, three recognized final rules, 96 notices and four other items. | Explicit issue date and document number. Full issue retained, with 14 explicit CFR part references and three section amendments in the latest parser revision. |
 | CourtListener | Four Supreme Court opinion records across two cases and 41 source relationships | Citation lookup plus case hydration. Exact public JSON responses retained in a replay envelope. Derivative provenance. |
 | U.S. Reports via GovInfo | One official Supreme Court reporter granule | Pinned PDF, reporter citation and case date. The granule combines judicial and editorial material. |
@@ -38,7 +39,8 @@ publisher artifacts outside the curated graph.
 | Florida Legislature | Three Chapter 83 sections and 28 Article I constitutional sections | Online Sunshine markup, statutory edition heading and constitutional section anchors. |
 | New York State Senate | Two Real Property sections and one constitutional section | Public HTML and embedded revision date. Some CLI fetches returned 403. Two exact public captures were independently fetched and parsed locally. |
 | California Legislative Counsel | Two Civil Code sections | Three bounded ranges from the reviewed PUBINFO archive. Archive ETag, exact compressed members, CRCs, SHA-256 and operative text identifiers. |
-| Judicial Branch of California | Two Title 8 court rules | Rule and edition headings, operative paragraphs and explicit rule-history date where recognized. |
+| California Department of Industrial Relations | One Title 8 regulation | Publisher HTML with the title, section and operative body checked. Section currentness remains unresolved. |
+| Judicial Branch of California | Two retained Title 8 court rules | Rule and edition headings, operative paragraphs and rule-history dates. Automated refresh is disabled under the publisher's site terms. |
 
 No external publisher fetch runs in CI. Exact artifacts, manifests and SQLite files are ignored. The official-publisher flag describes the source channel. Both Brown records remain separately queryable. The pinned official granule and CourtListener opinion were linked as a derivative representation based on court, date, reporter citation, native IDs and pinned source evidence. Their text representations differ. Unchecked matches remain probable, conflicting or unresolved.
 
@@ -53,6 +55,10 @@ The California statute adapter uses the active-code flag and the pinned archive 
 - [California legislative data downloads](https://downloads.leginfo.legislature.ca.gov/)
 - [California official legislative information and reuse notice](https://www.leginfo.ca.gov/)
 - [California court rules](https://courts.ca.gov/cms/rules/index/eight)
+- [California Judicial Branch site terms](https://courts.ca.gov/about/terms-use)
+- [California DIR conditions of use](https://www.dir.ca.gov/od_pub/conditions.html)
+- [GovInfo policies and copyright notice](https://www.govinfo.gov/about/policies)
+- [CourtListener terms](https://wiki.free.law/c/terms/courtlistener/courtlistenercom-terms-of-service-and-policies)
 
 ## Operations
 
@@ -62,6 +68,8 @@ Run in the development Python environment. CourtListener uses the existing serve
 python -B scripts/national_corpus.py sources
 python -B scripts/national_corpus.py ingest olrc 119-88/44
 python -B scripts/national_corpus.py ingest govinfo_cfr 2023/1/1
+python -B scripts/national_corpus.py ingest govinfo_ecfr 1
+python -B scripts/national_corpus.py ingest govinfo_ecfr 8
 python -B scripts/national_corpus.py ingest govinfo_register 2026-01-30
 python -B scripts/national_corpus.py ingest courtlistener "scotus/347 U.S. 483"
 python -B scripts/national_corpus.py ingest courtlistener "scotus/332 U.S. 380"
@@ -74,7 +82,7 @@ python -B scripts/national_corpus.py ingest florida_constitution article-I
 python -B scripts/national_corpus.py ingest new_york_code RPP/226-B
 python -B scripts/national_corpus.py ingest new_york_constitution CNS/A1S6
 python -B scripts/national_corpus.py ingest california_code 2025/civil-habitability
-python -B scripts/national_corpus.py ingest california_court_rules 8.1115
+python -B scripts/national_corpus.py ingest california_regulations 3203
 python -B scripts/national_corpus.py stats
 python -B scripts/national_corpus.py search US-CA statute --currentness current --as-of 2026-11-09
 python -B scripts/national_corpus.py search US opinion --citation "347 U.S. 483"
@@ -108,16 +116,18 @@ deterministic response validation remain in the response path.
 
 ## Verified increment
 
-The working corpus has 838 authority identities, 840 versions, 29
-snapshots, 1,353 observations, 1,033 source relationship rows and one
-cross-provider identity check. California's two earlier observations
+The working corpus has 840 authority identities, 844 versions, 32
+snapshots, 1,357 observations, 1,037 source relationship rows and three
+cross-provider identity checks. The annual CFR and eCFR renditions of
+1 CFR 1.1 and 1 CFR 2.2 share authority identity and retain distinct versions.
+California's two earlier observations
 and their current-as-of versions coexist. The counts include preserved
 parser-revision observations for OLRC Title 1, GovInfo CFR and Federal Register.
 
-The labeled retrieval sample spans all six jurisdictions. All 19 targets
+The labeled retrieval sample spans all six jurisdictions. All 21 targets
 ranked first, with precision at 1 of 1.00 and precision at 3 of 0.33
-under a one-target-per-query label. All 13 negative controls returned
-zero rows.
+under a one-target-per-query label. All 14 negative controls returned
+zero rows. Two labeled cross-provider identity checks matched.
 The 30,000-record benchmark replicates real normalized shapes across six
 families. It processed 30,000 edges in 26.53 seconds including indexing,
 with 1,131 records per second, 0.782 ms p95 retrieval latency, 100.23 ms
@@ -135,17 +145,21 @@ tokens. All responses remained development-only.
 The federal statute-and-case run paired Title 44 with the separately
 attributed Merrill lead and dissent. Live Sol completed five calls and
 verified two claims using 31,420 input and 3,906 output tokens.
-Virginia and Florida also passed a paired check that rendered each state
-independently. A single comparative synthesis remains outstanding.
+Virginia and Florida passed a development comparison through
+`/research/compare`, which renders two separately verified state answers
+side by side. Federal statute/regulation and Register/regulation live Sol
+checks also answered and independently verified four and two claims,
+respectively. Register material was publication context. The two runs used
+31,942 input and 5,159 output tokens across 12 calls.
 
 ## Outstanding Corpus v1 acceptance
 
-Federal statute/regulation and Register/regulation model scenarios, an
-independently scoped comparison answer, expanded amendment and supersession relationships, and broader
+Expanded amendment and supersession relationships and broader
 operative currentness remain open. The eCFR title API exposed publisher
 coverage metadata, but the matching point-in-time XML returned HTTP 406
-for the attempted title, part and section routes. No eCFR currentness was
-asserted. The Federal Register adapter indexes preambles and preserves
+for the attempted title, part and section routes. GPO bulk XML supplied
+the text for the three bounded sections with unresolved currentness.
+The Federal Register adapter indexes preambles and preserves
 full issue bytes. The bounded sample provides no nationwide recall estimate.
 
 ### State source investigation

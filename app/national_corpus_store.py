@@ -260,8 +260,9 @@ class SQLiteNormalizedCorpus:
         for version_id in (left_version, right_version):
             row = self.connection.execute("SELECT * FROM corpus_versions WHERE version_id=?", (version_id,)).fetchone()
             sources = self.provenance(version_id)
-            if not row or len(sources) != 1:
-                raise CorpusError("identity_check_requires_one_observation_per_version")
+            if not row or not sources:
+                raise CorpusError("identity_check_requires_observed_version")
+            sources.sort(key=lambda source: (source["first_retrieved"], source["id"]), reverse=True)
             pairs.append((json.loads(row["payload"]) | {"authority_id": row["authority_id"],
                           "normalized_hash": row["normalized_hash"]}, sources[0]))
         (left, left_source), (right, right_source) = sorted(pairs, key=lambda pair: (pair[1]["id"], pair[1]["native_id"]))
@@ -274,6 +275,15 @@ class SQLiteNormalizedCorpus:
                                     (*values, classification, basis, utcnow()))
         return {"classification": classification, "basis": basis, "left_snapshot": values[0], "left_native": values[1],
                 "right_snapshot": values[2], "right_native": values[3]}
+
+    def identity_checks(self, left_version, right_version):
+        rows = self.connection.execute("""
+            SELECT DISTINCT c.classification FROM corpus_identity_checks c
+            JOIN corpus_observations l ON l.snapshot_id=c.left_snapshot AND l.native_id=c.left_native
+            JOIN corpus_observations r ON r.snapshot_id=c.right_snapshot AND r.native_id=c.right_native
+            WHERE (l.version_id=? AND r.version_id=?) OR (l.version_id=? AND r.version_id=?)
+            """, (left_version, right_version, right_version, left_version))
+        return [row[0] for row in rows]
 
     def stats(self):
         return dict(self.connection.execute("""

@@ -29,7 +29,7 @@ from app.product import ProductResponseRequest, ProductService
 from app.security import SecurityMiddleware
 from app.assistant import AssistantRequest, AssistantService
 from app.documents import isolated_extract
-from app.capabilities import ResearchMatter, CapabilityResolutionService
+from app.capabilities import ResearchComparison, ResearchMatter, CapabilityResolutionService
 from app.citation_research import CitationResearchRequest
 
 
@@ -257,6 +257,18 @@ def research_evidence(request: ResearchMatter):
         return service.assemble(request)
     finally:
         service.close()
+
+
+@app.post("/research/compare")
+def research_compare(request: ResearchComparison):
+    if settings.mode == "production":
+        raise HTTPException(status_code=403, detail={"code": "research_release_review_required"})
+    from app.legal_research import compare_state_research
+    from app.models.base import GenerationConfig
+    return compare_state_research(
+        request, repository, settings, GenerationService(settings.registry()),
+        GenerationConfig(provider=settings.provider, model=settings.model),
+    )
 
 
 @app.post("/documents/extract")

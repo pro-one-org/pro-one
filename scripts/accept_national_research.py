@@ -8,17 +8,17 @@ import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from app.capabilities import ResearchMatter
+from app.capabilities import ResearchComparison, ResearchMatter
 from app.config import Settings
 from app.generation import GenerationService
-from app.legal_research import GeneralLegalResearchService
+from app.legal_research import GeneralLegalResearchService, compare_state_research
 from app.models.base import GenerationConfig
 from app.models.registry import ProviderRegistry
 from app.repository import RecordRepository
 from scripts.accept_research_model import ObservedProvider
 
 
-def run(normalized, courtlistener, *, live=False, federal=False):
+def run(normalized, courtlistener, *, live=False, federal=False, federal_rules=False):
     base = Settings.from_environment() if live else Settings()
     if base.mode != "development" or (live and base.provider == "testing"):
         raise ValueError("development_acceptance_model_required")
@@ -47,6 +47,16 @@ def run(normalized, courtlistener, *, live=False, federal=False):
                     legal_area="administrative_law", topics=["federal_register"], authority_types=["statute", "opinion"]),
                     {"statute", "court_opinion"})
         scenarios = [scenario] if live else [*scenarios, scenario]
+    if not live or federal_rules:
+        if live:
+            scenarios = []
+        for label, topic, families in (
+            ("federal_statute_regulation", "federal_register_definitions", ["statute", "regulation"]),
+            ("federal_register_regulation", "port_of_entry", ["register_document", "regulation"]),
+        ):
+            scenarios.append((label, ResearchMatter(country="US", sovereign="federal",
+                              legal_area="administrative_law", topics=[topic], authority_types=families),
+                              {"other" if family == "register_document" else family for family in families}))
     for label, matter, expected in scenarios:
         service = GeneralLegalResearchService(repo, settings, GenerationService(registry))
         try:
@@ -75,10 +85,12 @@ def run(normalized, courtlistener, *, live=False, federal=False):
         finally:
             service.close()
     if not live:
-        comparison = [row for row in results if row["label"] in {"virginia_mixed", "florida_statute"}]
-        results.append({"label": "virginia_florida_independent_scope", "status": "separate_scoped_responses",
-                        "passed": len(comparison) == 2 and all(row["passed"] for row in comparison)
-                        and {tuple(row["jurisdictions"]) for row in comparison} == {("Virginia",), ("Florida",)}})
+        comparison = ResearchComparison(matters=[matter for label, matter, _ in scenarios
+                                                  if label in {"virginia_mixed", "florida_statute"}])
+        answer = compare_state_research(comparison, repo, settings, GenerationService(registry), config)
+        results.append({"label": "virginia_florida_independent_scope", "status": answer["status"],
+                        "passed": answer["status"] == "answered" and not answer["publicly_approved"]
+                        and {row["state"] for row in answer["jurisdictions"]} == {"Virginia", "Florida"}})
         for label, family, topic, status, expected in (
             ("federal_statute", "statute", "federal_register", "unresolved", "evidence_ready"),
             ("federal_historical_regulation", "regulation", "federal_register", "historical", "evidence_ready"),
@@ -103,11 +115,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--live", action="store_true")
     parser.add_argument("--federal", action="store_true", help="Use the federal mixed-source scenario in live mode")
+    parser.add_argument("--federal-rules", action="store_true", help="Use the two federal regulation scenarios in live mode")
     parser.add_argument("--normalized", type=Path, default=Path(".local/national-corpus/corpus.sqlite3"))
     parser.add_argument("--courtlistener", type=Path, required=True)
     args = parser.parse_args()
     if not args.normalized.is_file() or not args.courtlistener.is_file():
         parser.error("both source databases must already exist")
-    result = run(args.normalized, args.courtlistener, live=args.live, federal=args.federal)
+    result = run(args.normalized, args.courtlistener, live=args.live, federal=args.federal, federal_rules=args.federal_rules)
     print(json.dumps(result, indent=2))
     sys.exit(0 if result["passed"] else 1)

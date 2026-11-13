@@ -11,8 +11,8 @@ from app.authority import normalized_source
 from app.national_corpus import AuthorityVersion, CorpusError, Observation, Source, SourceRelationship
 from app.national_corpus_california import CaliforniaCivilCode
 from app.national_corpus_courtlistener import CourtListenerProvider
-from app.national_corpus_federal import FederalRegisterProvider, USReportsProvider
-from app.national_corpus_states import CaliforniaCourtRules, FloridaProvider, MarylandProvider, NewYorkProvider
+from app.national_corpus_federal import FederalRegisterProvider, GovInfoECFRProvider, USReportsProvider
+from app.national_corpus_states import CaliforniaCourtRules, CaliforniaRegulations, FloridaProvider, MarylandProvider, NewYorkProvider
 from app.national_corpus_transport import PublicProvider, text_of, xml_root
 
 
@@ -321,6 +321,7 @@ PROVIDERS = MappingProxyType({
         OLRCProvider(), GovInfoCFRProvider(), CourtListenerProvider(), VirginiaCodeProvider(),
         MarylandProvider(), MarylandProvider(constitutional=True), FloridaProvider(),
         FloridaProvider(constitutional=True), NewYorkProvider(), NewYorkProvider(constitutional=True),
-        CaliforniaCourtRules(), CaliforniaCivilCode(), FederalRegisterProvider(), USReportsProvider(),
+        CaliforniaCourtRules(), CaliforniaCivilCode(), CaliforniaRegulations(), FederalRegisterProvider(),
+        USReportsProvider(), GovInfoECFRProvider(),
     )
 })
