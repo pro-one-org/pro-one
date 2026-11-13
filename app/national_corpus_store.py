@@ -344,13 +344,18 @@ class SQLiteNormalizedCorpus:
             """, (left_version, right_version, right_version, left_version))
         return [row[0] for row in rows]
 
-    def stats(self):
-        return dict(self.connection.execute("""
+    def stats(self, *, include_relationships=False):
+        totals = dict(self.connection.execute("""
             SELECT (SELECT count(DISTINCT authority_id) FROM corpus_versions) AS authorities,
                    (SELECT count(*) FROM corpus_versions) AS versions,
                    (SELECT count(*) FROM corpus_snapshots) AS snapshots,
-                   (SELECT count(*) FROM corpus_observations) AS observations,
+                   (SELECT count(*) FROM corpus_observations) AS observations
+            """).fetchone())
+        if include_relationships:
+            totals.update(self.connection.execute("""
+            SELECT
                    (SELECT count(*) FROM corpus_relationships) AS source_relationships,
                    (SELECT count(*) FROM corpus_identity_checks) AS identity_checks,
                    (SELECT count(*) FROM corpus_supersessions) AS reviewed_supersessions
             """).fetchone())
+        return totals

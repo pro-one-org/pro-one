@@ -84,7 +84,7 @@ def evaluate(store):
         checks = store.identity_checks(*pair) if len(pair) == 2 else []
         identities.append({"citation": citation, "expected": expected, "matched": expected in checks})
     return {
-        "corpus": store.stats(), "positive_checks": positives, "negative_checks": negatives,
+        "corpus": store.stats(include_relationships=True), "positive_checks": positives, "negative_checks": negatives,
         "precision_at_1": sum(row["target_rank"] == 1 for row in positives) / len(positives),
         "precision_at_3": sum(row["precision_at"]["3"] for row in positives) / len(positives),
         "negative_leaks": sum(row["results"] for row in negatives),

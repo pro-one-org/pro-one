@@ -93,7 +93,7 @@ def main():
             print(json.dumps(report, indent=2))
             return int(report["status"] != "committed")
         if args.command == "stats":
-            print(json.dumps(store.stats(), indent=2))
+            print(json.dumps(store.stats(include_relationships=True), indent=2))
         elif args.command == "record-reviewed-supersession":
             print(json.dumps(record_reviewed_supersession(store), indent=2))
         elif args.command == "replay":
