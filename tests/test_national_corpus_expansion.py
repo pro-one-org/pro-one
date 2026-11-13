@@ -24,12 +24,13 @@ class CorpusExpansionTests(unittest.TestCase):
             documents.append(f"""<{tag}><PREAMB><AGENCY>Example Agency</AGENCY>
                 <SUBJECT>Example publication {index}</SUBJECT><ACT>ACTION: {action}</ACT>
                 <CFR>1 CFR Part 1</CFR><EFFDATE>DATES: Effective March 2, 2026.</EFFDATE>
-                </PREAMB><FRDOC>[FR Doc. 2026-0000{index} Filed 1-29-26; 8:45 am]</FRDOC></{tag}>""")
+                </PREAMB><REGTEXT><AMDPAR>In § 1.1, revise paragraph (a).</AMDPAR></REGTEXT>
+                <FRDOC>[FR Doc. 2026-0000{index} Filed 1-29-26; 8:45 am]</FRDOC></{tag}>""")
         raw = ("<FEDREG><VOL>91</VOL><DATE>Friday, January 30, 2026</DATE>"
                + "".join(documents) + "</FEDREG>").encode()
         with SQLiteNormalizedCorpus(":memory:") as store:
             result = store.ingest(PROVIDERS["govinfo_register"], "2026-01-30", raw)
-            self.assertEqual(result["relationships_created"], 4)
+            self.assertEqual(result["relationships_created"], 5)
             [proposed] = store.search(CorpusQuery("US", "register_document", currentness="proposed"))
             self.assertEqual(proposed["document_kind"], "proposed_rule")
             self.assertIsNone(proposed["effective_from"])
@@ -41,6 +42,10 @@ class CorpusExpansionTests(unittest.TestCase):
             [edge] = store.relationships(proposed["version_id"])
             self.assertEqual(edge["target_native_id"], "1 CFR part 1")
             self.assertEqual(edge["snapshot_id"], result["snapshot"])
+            final = next(item for item in remaining if item["document_kind"] == "final_rule")
+            self.assertIn(("amends_cfr", "1 CFR 1.1"), {
+                (item["kind"], item["target_native_id"]) for item in store.relationships(final["version_id"])
+            })
 
     def test_as_of_current_excludes_repealed_superseded_and_later_queries(self):
         provider = PROVIDERS["virginia_code"]

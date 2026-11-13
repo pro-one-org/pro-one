@@ -75,6 +75,10 @@ def run(normalized, courtlistener, *, live=False, federal=False):
         finally:
             service.close()
     if not live:
+        comparison = [row for row in results if row["label"] in {"virginia_mixed", "florida_statute"}]
+        results.append({"label": "virginia_florida_independent_scope", "status": "separate_scoped_responses",
+                        "passed": len(comparison) == 2 and all(row["passed"] for row in comparison)
+                        and {tuple(row["jurisdictions"]) for row in comparison} == {("Virginia",), ("Florida",)}})
         for label, family, topic, status, expected in (
             ("federal_statute", "statute", "federal_register", "unresolved", "evidence_ready"),
             ("federal_historical_regulation", "regulation", "federal_register", "historical", "evidence_ready"),

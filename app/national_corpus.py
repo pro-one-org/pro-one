@@ -114,7 +114,7 @@ class AuthorityVersion(BaseModel):
 
 @dataclass(frozen=True)
 class SourceRelationship:
-    kind: Literal["cites", "opinion_of", "docket_of", "part_of", "references_cfr", "part_authority_citation"]
+    kind: Literal["cites", "opinion_of", "docket_of", "part_of", "references_cfr", "part_authority_citation", "amends_cfr"]
     target_native_id: str
 
 

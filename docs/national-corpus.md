@@ -30,7 +30,7 @@ publisher artifacts outside the curated graph.
 | --- | --- | --- |
 | OLRC | 426 federal statutory records across Titles 1 and 44, including 38 repeal markers | Explicit USLM release. Title, chapter, release point, section identifiers and original ZIP. |
 | GovInfo annual CFR | 250 historical sections from 2023 Title 1, Volume 1 | Annual volume. Embedded revision year, part hierarchy, XML and part authority citations. |
-| GovInfo Federal Register | 112 preambles from January 30, 2026. Nine proposed rules, three recognized final rules, 96 notices and four other items. | Explicit issue date and document number. Full issue retained, with 14 explicit CFR part references. |
+| GovInfo Federal Register | 112 preambles from January 30, 2026. Nine proposed rules, three recognized final rules, 96 notices and four other items. | Explicit issue date and document number. Full issue retained, with 14 explicit CFR part references and three section amendments in the latest parser revision. |
 | CourtListener | Four Supreme Court opinion records across two cases and 41 source relationships | Citation lookup plus case hydration. Exact public JSON responses retained in a replay envelope. Derivative provenance. |
 | U.S. Reports via GovInfo | One official Supreme Court reporter granule | Pinned PDF, reporter citation and case date. The granule combines judicial and editorial material. |
 | Virginia General Assembly | Two statutory sections | Section HTML and title/chapter scope. |
@@ -108,11 +108,11 @@ deterministic response validation remain in the response path.
 
 ## Verified increment
 
-The working corpus has 838 authority identities, 840 versions, 27
-snapshots, 1,129 observations, 1,002 source relationship rows and one
+The working corpus has 838 authority identities, 840 versions, 29
+snapshots, 1,353 observations, 1,033 source relationship rows and one
 cross-provider identity check. California's two earlier observations
 and their current-as-of versions coexist. The counts include preserved
-parser-revision observations for OLRC Title 1 and GovInfo CFR.
+parser-revision observations for OLRC Title 1, GovInfo CFR and Federal Register.
 
 The labeled retrieval sample spans all six jurisdictions. All 19 targets
 ranked first, with precision at 1 of 1.00 and precision at 3 of 0.33
@@ -135,6 +135,8 @@ tokens. All responses remained development-only.
 The federal statute-and-case run paired Title 44 with the separately
 attributed Merrill lead and dissent. Live Sol completed five calls and
 verified two claims using 31,420 input and 3,906 output tokens.
+Virginia and Florida also passed a paired check that rendered each state
+independently. A single comparative synthesis remains outstanding.
 
 ## Outstanding Corpus v1 acceptance
 

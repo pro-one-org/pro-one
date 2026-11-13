@@ -18,7 +18,7 @@ class FederalRegisterProvider(PublicProvider):
         rights="Federal Register government text. Exact XML remains in local audit storage.",
         attribution="Office of the Federal Register and U.S. Government Publishing Office",
         currentness_method="Uses issue date, XML classification and explicit effective-date wording where recognized.",
-        parser_revision="1",
+        parser_revision="3",
     )
     kinds = {"RULE": "other", "PRORULE": "proposed_rule", "NOTICE": "notice", "PRESDOC": "other"}
 
@@ -96,7 +96,23 @@ class FederalRegisterProvider(PublicProvider):
             if (match := re.fullmatch(r"([1-9][0-9]?) CFR Part ([0-9]+[a-zA-Z]?)", text_of(ref)))
         )
         edges = tuple(SourceRelationship("references_cfr", target) for target in targets)
+        if kind == "final_rule":
+            edges += self._amendments(node, targets)
         return Observation(version, native, f"{node.tag} / FRDOC {native} / PREAMB", text_of(node.find("FRDOC")), edges)
+
+    def _amendments(self, node, parts):
+        if len(parts) != 1:
+            return ()
+        edges = []
+        for part in parts:
+            title, _, _, part_number = part.split()
+            for instruction in node.findall(".//REGTEXT/AMDPAR"):
+                text = text_of(instruction)
+                match = re.search(r"§\s*([0-9]+[a-zA-Z]?\.[0-9]+[a-zA-Z0-9-]*)\b", text)
+                if (match and match[1].split(".")[0] == part_number
+                        and re.search(r"\b(add|revise|remove|amend|redesignate|correct)\b", text, re.I)):
+                    edges.append(SourceRelationship("amends_cfr", f"{title} CFR {match[1]}"))
+        return tuple(dict.fromkeys(edges))
 
 
 class USReportsProvider(PublicProvider):
