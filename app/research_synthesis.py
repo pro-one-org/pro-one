@@ -14,6 +14,7 @@ from typing import Literal
 from pydantic import BaseModel, ConfigDict, Field
 
 from app.authority import digest
+from app.national_corpus import OPERATIVE_CLAIM
 from app.models.base import ModelRequest
 
 
@@ -35,7 +36,7 @@ class CandidateClaim(StrictSynthesis):
 
 class ClaimJurisdiction(StrictSynthesis):
     country: Literal["US"]
-    state: str
+    state: str | None
 
 
 class SynthesisProposal(StrictSynthesis):
@@ -75,6 +76,9 @@ do not put case names, reporter citations, URLs or direct quotations in the stat
 Careful conditional factual considerations may be explained; never find a party negligent.
 Cover distinct relevant principles from the supplied authority types. Use separate
 claims when combining a statute and a case would blur their different requirements.
+Describe the text of an authority within the supplied source status. Historical,
+proposed and superseded material may provide context. Only application code
+renders a verified as-of date. Do not assert present operative legal status.
 Return no more than six claims, each with an issue label of at most 80 characters
 and a statement of at most 1,800 characters. Avoid wording about precedential
 force or approval, including the words binding, controlling, certified and approved
@@ -123,7 +127,8 @@ class ResearchSynthesisService:
                      "topics": p["propositions"],
                      "source": {"source_id": p["source_id"], "jurisdiction": p["jurisdiction"],
                                 "case_metadata": sources[p["source_id"]].get("case_metadata"),
-                                "source_type": sources[p["source_id"]]["source_type"]},
+                                "source_type": sources[p["source_id"]]["source_type"],
+                                "currentness": citations[p["id"]]["source_currentness"]},
                      "limitations": p["limitations"], "conflicts": p.get("conflicts", [])} for p in passages.values()]
         try:
             adapter = self.registry.resolve(config.provider, config.model)
@@ -165,6 +170,9 @@ class ResearchSynthesisService:
             if re.search(r"\b(will win|guarantee|automatically liable|was negligent|is negligent|good law|binding|controlling|certified|approved|your deadline|must file|must sue|will recover)\b", candidate.statement, re.I):
                 entry["rejection_reason"] = "prohibited_statement"
                 continue
+            if OPERATIVE_CLAIM.search(candidate.statement):
+                entry["rejection_reason"] = "unsupported_operative_status"
+                continue
             invalid = False
             for link in candidate.support:
                 passage = passages[link.passage_id]
@@ -177,11 +185,17 @@ class ResearchSynthesisService:
                 external = source.get("external_identifiers")
                 if external and external.get("citation_status") not in {"verified", "fixture_verified"}:
                     invalid = True
-                if source["source_type"] not in {"court_opinion", "statute", "regulation", "court_rule", "constitution", "official_self_help", "agency_guidance"}:
-                    invalid = True
+                if link.relationship == "supports":
+                    if source["source_type"] not in {"court_opinion", "statute", "regulation", "court_rule", "constitution", "official_self_help", "agency_guidance"}:
+                        invalid = True
+                    if source.get("corpus_provenance", {}).get("currentness") in {"historical", "proposed", "superseded", "repealed"}:
+                        invalid = True
                 entry[{"supports": "support_cases", "qualifies": "qualifying_cases", "conflicts": "conflicting_cases"}[link.relationship]].append(source["id"])
-                entry["evidence_bindings"].append({"passage": passage["id"], "source": source["id"],
-                                                   "hash": passage["verification"]["excerpt_hash"], "text": passage["text"]})
+                binding = {"passage": passage["id"], "source": source["id"],
+                           "hash": passage["verification"]["excerpt_hash"], "text": passage["text"]}
+                if source.get("corpus_provenance"):
+                    binding["currentness"] = deepcopy(citations[passage["id"]]["source_currentness"])
+                entry["evidence_bindings"].append(binding)
             # All selected contrary-role passages remain part of the comparison.
             for key in ("support_cases", "qualifying_cases", "conflicting_cases"):
                 entry[key] = list(dict.fromkeys(entry[key]))

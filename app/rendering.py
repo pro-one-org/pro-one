@@ -42,6 +42,8 @@ class ResponseRenderingService:
                          "source_type": sources[canonical[cid]["source_id"]]["source_type"],
                          "case_metadata": sources[canonical[cid]["source_id"]].get("case_metadata"),
                          "external_identifiers": sources[canonical[cid]["source_id"]].get("external_identifiers"),
+                         **({"corpus_provenance": canonical[cid]["corpus_provenance"]}
+                            if "corpus_provenance" in canonical[cid] else {}),
                          "enactment_metadata": sources[canonical[cid]["source_id"]].get("enactment_metadata"),
                          "issuing_authority": sources[canonical[cid]["source_id"]]["authority"]["issuing_body"],
                          "citation": canonical[cid]["preferred_citation"], "locator": canonical[cid]["locator"],

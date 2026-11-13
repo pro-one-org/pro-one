@@ -5,7 +5,8 @@ action, jurisdiction over a party, or a favorable outcome.
 """
 
 from copy import deepcopy
-from pydantic import BaseModel, ConfigDict, Field
+from typing import Literal
+from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 
 class ResearchMatter(BaseModel):
@@ -20,6 +21,28 @@ class ResearchMatter(BaseModel):
     court: str | None = Field(default=None, max_length=120)
     agency: str | None = Field(default=None, max_length=120)
     goal: str = Field(default="", max_length=2000)
+    authority_types: list[Literal["statute", "regulation", "opinion", "constitution", "court_rule", "register_document"]] = Field(
+        default_factory=list, max_length=6,
+    )
+    authority_status: Literal["unresolved", "historical", "current", "current_as_of", "proposed", "superseded", "repealed"] = "unresolved"
+    authority_as_of: str | None = Field(default=None, pattern=r"^\d{4}-\d{2}-\d{2}$")
+
+
+class ResearchComparison(BaseModel):
+    model_config = ConfigDict(extra="forbid", strict=True)
+    matters: list[ResearchMatter] = Field(min_length=2, max_length=2)
+
+    @model_validator(mode="after")
+    def distinct_state_scopes(self):
+        left, right = self.matters
+        if (any(m.country != "US" or m.sovereign != "state" or not m.state for m in self.matters)
+                or left.state.casefold() == right.state.casefold()
+                or not left.legal_area or not left.topics
+                or left.legal_area != right.legal_area or set(left.topics) != set(right.topics)
+                or set(left.authority_types) != set(right.authority_types)
+                or (left.authority_status, left.authority_as_of) != (right.authority_status, right.authority_as_of)):
+            raise ValueError("comparison_requires_distinct_states_and_shared_subject_and_authority_scope")
+        return self
 
 
 REFERENCE_DOMAINS = {
@@ -77,7 +100,8 @@ class CapabilityResolutionService:
         self.repository = repository
 
     def resolve(self, matter: ResearchMatter):
-        missing = [k for k in ("country", "state", "legal_area", "topics") if not getattr(matter, k)]
+        required = ("country", "legal_area", "topics") if matter.sovereign == "federal" else ("country", "state", "legal_area", "topics")
+        missing = [k for k in required if not getattr(matter, k)]
         exact, related = [], []
         for capability in self.repository.records["legal_capabilities"].values():
             if capability["status"] in {"rejected", "deprecated"} or capability["review"]["status"] in {"rejected", "deprecated"}:
