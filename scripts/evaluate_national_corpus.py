@@ -13,6 +13,7 @@ from app.national_corpus_store import SQLiteNormalizedCorpus
 
 POSITIVES = (
     ("olrc_title_one", CorpusQuery("US", "statute", citation="1 USC 1"), "1 U.S.C. § 1"),
+    ("olrc_second_release", CorpusQuery("US", "statute", citation="1 USC 1", edition="PL 119-138"), "1 U.S.C. § 1"),
     ("historical_cfr", CorpusQuery("US", "regulation", citation="1 CFR 1.1", currentness="historical"), "1 CFR 1.1"),
     ("ecfr_amended_section", CorpusQuery("US", "regulation", citation="8 CFR 100.4", provider="govinfo_ecfr"), "8 CFR 100.4"),
     ("federal_reporter", CorpusQuery("US", "opinion", citation="347 U.S. 483"), "347 U.S. 483"),

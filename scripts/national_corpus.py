@@ -58,6 +58,8 @@ def main():
     commands = parser.add_subparsers(dest="command", required=True)
     commands.add_parser("sources")
     commands.add_parser("stats")
+    replay = commands.add_parser("replay", help="Replay a stored source snapshot without network access")
+    replay.add_argument("snapshot")
     compare = commands.add_parser("identity")
     compare.add_argument("left_version")
     compare.add_argument("right_version")
@@ -90,6 +92,12 @@ def main():
             return int(report["status"] != "committed")
         if args.command == "stats":
             print(json.dumps(store.stats(), indent=2))
+        elif args.command == "replay":
+            provider, selector, raw = store.replay_artifact(args.snapshot)
+            adapter = PROVIDERS.get(provider)
+            if adapter is None:
+                raise CorpusError("snapshot_provider_unavailable")
+            print(json.dumps(store.ingest(adapter, selector, raw), indent=2))
         elif args.command == "identity":
             print(json.dumps(store.check_identity(args.left_version, args.right_version), indent=2))
         else:

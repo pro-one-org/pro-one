@@ -62,7 +62,8 @@ class NormalizedAuthorityProvider:
                                                     as_of=as_of, court=matter.court or "",
                                                     agency=matter.agency or "", limit=3)):
                     if not hit["edition_conflict"]:
-                        candidates.setdefault(family, {}).setdefault(hit["version_id"], hit)
+                        key = (hit["authority_id"], hit["normalized_hash"])
+                        candidates.setdefault(family, {}).setdefault(key, hit)
         # Give every requested family one turn before filling additional slots.
         by_family = [list(candidates.get(family, {}).values())[:3] for family in families]
         loaded_cases = set()

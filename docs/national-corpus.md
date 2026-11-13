@@ -28,7 +28,7 @@ publisher artifacts outside the curated graph.
 
 | Publisher | Authority and bounded live sample | Update and provenance |
 | --- | --- | --- |
-| OLRC | 426 federal statutory records across Titles 1 and 44, including 38 repeal markers | Explicit USLM release. Title, chapter, release point, section identifiers and original ZIP. |
+| OLRC | 426 federal statutory identities across Titles 1 and 44, including 38 repeal markers | Two USLM release points. Title, chapter, release point, section identifiers and original ZIP. |
 | GovInfo annual CFR | 250 historical sections from 2023 Title 1, Volume 1 | Annual volume. Embedded revision year, part hierarchy, XML and part authority citations. |
 | GPO eCFR bulk | Three sections from Titles 1 and 8 | Unofficial editorial rendition. Exact XML and embedded title amendment metadata. Section currency unresolved. |
 | GovInfo Federal Register | 112 preambles from January 30, 2026. Nine proposed rules, three recognized final rules, 96 notices and four other items. | Explicit issue date and document number. Full issue retained, with 14 explicit CFR part references and three section amendments in the latest parser revision. |
@@ -67,6 +67,8 @@ Run in the development Python environment. CourtListener uses the existing serve
 ```powershell
 python -B scripts/national_corpus.py sources
 python -B scripts/national_corpus.py ingest olrc 119-88/44
+python -B scripts/national_corpus.py ingest olrc 119-138/1
+python -B scripts/national_corpus.py ingest olrc 119-138/44
 python -B scripts/national_corpus.py ingest govinfo_cfr 2023/1/1
 python -B scripts/national_corpus.py ingest govinfo_ecfr 1
 python -B scripts/national_corpus.py ingest govinfo_ecfr 8
@@ -84,6 +86,7 @@ python -B scripts/national_corpus.py ingest new_york_constitution CNS/A1S6
 python -B scripts/national_corpus.py ingest california_code 2025/civil-habitability
 python -B scripts/national_corpus.py ingest california_regulations 3203
 python -B scripts/national_corpus.py stats
+python -B scripts/national_corpus.py replay SNAPSHOT_ID
 python -B scripts/national_corpus.py search US-CA statute --currentness current --as-of 2026-11-09
 python -B scripts/national_corpus.py search US opinion --citation "347 U.S. 483"
 python -B scripts/national_corpus.py identity LEFT_VERSION RIGHT_VERSION
@@ -116,15 +119,18 @@ deterministic response validation remain in the response path.
 
 ## Verified increment
 
-The working corpus has 840 authority identities, 844 versions, 32
-snapshots, 1,357 observations, 1,037 source relationship rows and three
+The working corpus has 840 authority identities, 1,270 versions, 34
+snapshots, 1,783 observations, 1,463 source relationship rows and three
 cross-provider identity checks. The annual CFR and eCFR renditions of
 1 CFR 1.1 and 1 CFR 2.2 share authority identity and retain distinct versions.
+OLRC releases 119-88 and 119-138 coexist for all 426 sampled identities.
+Their normalized text hashes matched across both releases. The corpus
+preserves the edition change without treating it as an amendment.
 California's two earlier observations
 and their current-as-of versions coexist. The counts include preserved
 parser-revision observations for OLRC Title 1, GovInfo CFR and Federal Register.
 
-The labeled retrieval sample spans all six jurisdictions. All 21 targets
+The labeled retrieval sample spans all six jurisdictions. All 22 targets
 ranked first, with precision at 1 of 1.00 and precision at 3 of 0.33
 under a one-target-per-query label. All 14 negative controls returned
 zero rows. Two labeled cross-provider identity checks matched.
@@ -151,6 +157,8 @@ side by side. Federal statute/regulation and Register/regulation live Sol
 checks also answered and independently verified four and two claims,
 respectively. Register material was publication context. The two runs used
 31,942 input and 5,159 output tokens across 12 calls.
+The four live scenarios used 81,611 input and 11,088 output tokens across
+21 calls. The uncached standard-rate estimate is $0.27. [Model pricing](https://developers.openai.com/api/docs/models/gpt-6.1-sol)
 
 ## Outstanding Corpus v1 acceptance
 

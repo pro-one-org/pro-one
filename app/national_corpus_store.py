@@ -241,6 +241,15 @@ class SQLiteNormalizedCorpus:
         row = self.connection.execute("SELECT raw FROM corpus_artifacts WHERE hash=?", (content_hash,)).fetchone()
         return row["raw"] if row else None
 
+    def replay_artifact(self, snapshot):
+        row = self.connection.execute("""
+            SELECT s.provider, s.selector, s.hash, a.raw
+            FROM corpus_snapshots s JOIN corpus_artifacts a ON a.hash=s.hash WHERE s.id=?
+            """, (snapshot,)).fetchone()
+        if not row or fingerprint(row["raw"]) != row["hash"]:
+            raise CorpusError("snapshot_unavailable_or_corrupt")
+        return row["provider"], row["selector"], row["raw"]
+
     def relationships(self, version_id, *, limit=100):
         if not 1 <= limit <= 1000:
             raise CorpusError("invalid_relationship_limit")
