@@ -126,6 +126,7 @@ class OLRCProvider(PublicProvider):
 
 
 class GovInfoCFRProvider(PublicProvider):
+    title_8_sample = "2025/8/1/100.4"
     source = Source(
         name="govinfo_cfr", host="www.govinfo.gov", authority_type="regulation", jurisdictions=("US",),
         official_publisher=True, rendition="GovInfo annual CFR XML rendition",
@@ -134,10 +135,13 @@ class GovInfoCFRProvider(PublicProvider):
         rights="Federal regulatory text. Publisher graphics and annotations remain in the original artifact.",
         attribution="U.S. Government Publishing Office and Office of the Federal Register",
         currentness_method="Checks the catalog year and embedded revision date. Annual editions are historical snapshots.",
+        version_method="Embedded annual revision date and normalized section hash. One bounded Title 8 bulk selector.",
         parser_revision="2",
     )
 
     def _selection(self, selector):
+        if selector == self.title_8_sample:
+            return ("2025", "8", "1")
         match = re.fullmatch(r"(19[9][6-9]|20[0-9]{2})/([1-9]|[1-4][0-9]|50)/([1-9][0-9]?)", selector)
         if not match:
             raise CorpusError("invalid_cfr_selector")
@@ -145,6 +149,8 @@ class GovInfoCFRProvider(PublicProvider):
 
     def source_url(self, selector):
         year, title, volume = self._selection(selector)
+        if selector == self.title_8_sample:
+            return f"https://{self.source.host}/bulkdata/CFR/2025/title-8/CFR-2025-title8-vol1.xml"
         path = self.source.endpoint.format(package=f"CFR-{year}-title{title}-vol{volume}")
         return f"https://{self.source.host}{path}"
 
@@ -161,6 +167,7 @@ class GovInfoCFRProvider(PublicProvider):
             raise CorpusError("source_edition_identity_mismatch") from None
         if str(revision.year) != year:
             raise CorpusError("source_edition_identity_mismatch")
+        selected = selector == self.title_8_sample
         for part in root.iter("PART"):
             part_number = re.fullmatch(r"Pt\. ([0-9]+[a-zA-Z]?)", text_of(part.find("EAR")))
             authorities = tuple(dict.fromkeys(
@@ -171,6 +178,8 @@ class GovInfoCFRProvider(PublicProvider):
             ))
             for child in self._operative_sections(part):
                 original = text_of(child.find("SECTNO"))
+                if selected and not re.fullmatch(r"§\s*100\.4", original):
+                    continue
                 heading = text_of(child.find("SUBJECT"))
                 if child.find("RESERVED") is not None or heading.casefold() == "[reserved]":
                     continue

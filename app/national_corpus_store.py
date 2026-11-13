@@ -52,6 +52,16 @@ CREATE TABLE IF NOT EXISTS corpus_identity_checks(
     FOREIGN KEY(left_snapshot,left_native) REFERENCES corpus_observations(snapshot_id,native_id),
     FOREIGN KEY(right_snapshot,right_native) REFERENCES corpus_observations(snapshot_id,native_id)
 );
+CREATE TABLE IF NOT EXISTS corpus_supersessions(
+    earlier_snapshot TEXT NOT NULL, earlier_native TEXT NOT NULL,
+    later_snapshot TEXT NOT NULL, later_native TEXT NOT NULL,
+    rule_snapshot TEXT NOT NULL, rule_native TEXT NOT NULL,
+    effective_on TEXT NOT NULL, basis TEXT NOT NULL,
+    PRIMARY KEY(earlier_snapshot, earlier_native),
+    FOREIGN KEY(earlier_snapshot, earlier_native) REFERENCES corpus_observations(snapshot_id,native_id),
+    FOREIGN KEY(later_snapshot, later_native) REFERENCES corpus_observations(snapshot_id,native_id),
+    FOREIGN KEY(rule_snapshot, rule_native) REFERENCES corpus_observations(snapshot_id,native_id)
+);
 CREATE VIRTUAL TABLE IF NOT EXISTS corpus_fts USING fts5(title, body);
 """
 
@@ -175,13 +185,28 @@ class SQLiteNormalizedCorpus:
             raise CorpusError("invalid_corpus_query")
         # All eligibility predicates apply before ranking and limiting.
         joins = []
-        filters = ["v.jurisdiction=?", "v.authority_type=?", "v.currentness=?"]
-        params = [query.jurisdiction, query.authority_type, query.currentness]
-        if query.currentness == "current":
+        filters = ["v.jurisdiction=?", "v.authority_type=?"]
+        params = [query.jurisdiction, query.authority_type]
+        supersession = query.currentness == "superseded" and query.as_of is not None
+        if supersession:
+            if not self.connection.execute(
+                "SELECT 1 FROM sqlite_master WHERE type='table' AND name='corpus_supersessions'"
+            ).fetchone():
+                return []
+            filters.append("""EXISTS (SELECT 1 FROM corpus_observations previous
+                JOIN corpus_supersessions change ON change.earlier_snapshot=previous.snapshot_id
+                AND change.earlier_native=previous.native_id
+                WHERE previous.version_id=v.version_id AND change.effective_on<=?)""")
+            params.append(query.as_of.isoformat())
+        elif query.currentness in {"current", "current_as_of"}:
             if not query.as_of:
                 return []
+            filters.append("v.currentness IN ('current_as_of','current')")
             filters.append("json_extract(v.payload, '$.current_as_of')=?")
             params.append(query.as_of.isoformat())
+        else:
+            filters.append("v.currentness=?")
+            params.append(query.currentness)
         rank = "v.version_id"
         if query.citation:
             joins.append("JOIN corpus_citations c ON c.version_id=v.version_id")
@@ -225,11 +250,33 @@ class SQLiteNormalizedCorpus:
                 FROM corpus_versions v {' '.join(joins)} WHERE {' AND '.join(filters)} ORDER BY {rank} LIMIT ?""",
             (*params, query.limit),
         )
-        return [self._result(row) for row in rows]
+        results = [self._result(row) for row in rows]
+        if supersession:
+            for result in results:
+                result["currentness"] = "superseded"
+                result["supersession"] = self.supersession(result["version_id"], query.as_of)
+        return results
+
+    def supersession(self, version_id, as_of):
+        row = self.connection.execute("""
+            SELECT change.*, previous.version_id AS earlier_version,
+                   later.version_id AS later_version, rule.version_id AS rule_version
+            FROM corpus_supersessions change
+            JOIN corpus_observations previous ON previous.snapshot_id=change.earlier_snapshot
+                AND previous.native_id=change.earlier_native
+            JOIN corpus_observations later ON later.snapshot_id=change.later_snapshot
+                AND later.native_id=change.later_native
+            JOIN corpus_observations rule ON rule.snapshot_id=change.rule_snapshot
+                AND rule.native_id=change.rule_native
+            WHERE previous.version_id=? AND change.effective_on<=?
+            """, (version_id, as_of.isoformat())).fetchone()
+        return dict(row) if row else None
 
     def _result(self, row):
         return {
-            **json.loads(row["payload"]), "authority_id": row["authority_id"], "version_id": row["version_id"],
+            **json.loads(row["payload"]),
+            "currentness": "current_as_of" if row["currentness"] == "current" else row["currentness"],
+            "authority_id": row["authority_id"], "version_id": row["version_id"],
             "normalized_hash": row["normalized_hash"], "edition_conflict": bool(row["edition_conflict"]),
         }
 
@@ -302,5 +349,8 @@ class SQLiteNormalizedCorpus:
             SELECT (SELECT count(DISTINCT authority_id) FROM corpus_versions) AS authorities,
                    (SELECT count(*) FROM corpus_versions) AS versions,
                    (SELECT count(*) FROM corpus_snapshots) AS snapshots,
-                   (SELECT count(*) FROM corpus_observations) AS observations
+                   (SELECT count(*) FROM corpus_observations) AS observations,
+                   (SELECT count(*) FROM corpus_relationships) AS source_relationships,
+                   (SELECT count(*) FROM corpus_identity_checks) AS identity_checks,
+                   (SELECT count(*) FROM corpus_supersessions) AS reviewed_supersessions
             """).fetchone())

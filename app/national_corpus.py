@@ -4,6 +4,7 @@ from collections.abc import Iterable
 from dataclasses import dataclass
 from datetime import date
 from hashlib import sha256
+import re
 from typing import Literal, Protocol
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
@@ -16,7 +17,13 @@ AuthorityType = Literal[
     "administrative_decision", "attorney_general_opinion", "agency_guidance",
     "executive_material", "session_law", "recap_filing", "register_document",
 ]
-Currentness = Literal["unresolved", "current", "historical", "repealed", "superseded", "proposed"]
+Currentness = Literal["unresolved", "current", "current_as_of", "historical", "repealed", "superseded", "proposed"]
+OPERATIVE_CLAIM = re.compile(
+    r"\b(?:current law|current(?:ly)? (?:operative|effective|in force|in effect|applies|requires|governs)|"
+    r"(?:law|rule|regulation|statute) (?:is|remains|still is) (?:current|operative|effective|in force|in effect)|"
+    r"(?:remains|still) (?:in force|in effect|operative|effective|the law)|"
+    r"as of today|today['’]s law|is (?:now )?in force|is now in effect)\b", re.I,
+)
 OpinionRole = Literal[
     "lead", "majority", "unanimous", "plurality", "concurrence", "concurrence_in_part", "dissent",
     "mixed", "addendum", "remittitur", "rehearing", "on_the_merits", "motion", "trial_document", "unknown",
@@ -85,7 +92,7 @@ class AuthorityVersion(BaseModel):
             raise ValueError("register_kind_requires_register_document")
         if self.document_kind == "proposed_rule" and self.currentness != "proposed":
             raise ValueError("proposed_rule_requires_proposed_status")
-        if self.currentness == "current":
+        if self.currentness in {"current", "current_as_of"}:
             if not self.current_as_of or not self.currentness_basis or self.authority_type not in {"statute", "regulation"}:
                 raise ValueError("current_status_requires_as_of_evidence")
             if ((self.effective_from and self.effective_from > self.current_as_of)
@@ -110,6 +117,12 @@ class AuthorityVersion(BaseModel):
             if payload[field] is None:
                 del payload[field]
         return identity(self.authority_id, encode(payload))
+
+    @property
+    def evidence_status(self) -> str:
+        # Legacy snapshots encoded dated evidence as "current". Preserve their
+        # hashes while exposing the actual scope of the evidence.
+        return "current_as_of" if self.currentness == "current" else self.currentness
 
 
 @dataclass(frozen=True)
@@ -147,6 +160,10 @@ class Source:
     pagination: str = "none"
     max_bytes: int = 8 * 1024 * 1024
     max_requests: int = 1
+    refresh_mode: str = "explicit_selector"
+    refresh_supported: bool = True
+    version_method: str = "Source edition and normalized version hash"
+    refresh_limitation: str | None = None
 
 
 @dataclass(frozen=True)

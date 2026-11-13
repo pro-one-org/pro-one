@@ -29,7 +29,7 @@ publisher artifacts outside the curated graph.
 | Publisher | Authority and bounded live sample | Update and provenance |
 | --- | --- | --- |
 | OLRC | 426 federal statutory identities across Titles 1 and 44, including 38 repeal markers | Two USLM release points. Title, chapter, release point, section identifiers and original ZIP. |
-| GovInfo annual CFR | 250 historical sections from 2023 Title 1, Volume 1 | Annual volume. Embedded revision year, part hierarchy, XML and part authority citations. |
+| GovInfo annual CFR | 250 historical sections from 2023 Title 1, Volume 1, plus 8 CFR 100.4 from the 2025 annual edition | Annual volume. Embedded revision date, part hierarchy, XML and part authority citations. |
 | GPO eCFR bulk | Three sections from Titles 1 and 8 | Unofficial editorial rendition. Exact XML and embedded title amendment metadata. Section currency unresolved. |
 | GovInfo Federal Register | 112 preambles from January 30, 2026. Nine proposed rules, three recognized final rules, 96 notices and four other items. | Explicit issue date and document number. Full issue retained, with 14 explicit CFR part references and three section amendments in the latest parser revision. |
 | CourtListener | Four Supreme Court opinion records across two cases and 41 source relationships | Citation lookup plus case hydration. Exact public JSON responses retained in a replay envelope. Derivative provenance. |
@@ -37,7 +37,7 @@ publisher artifacts outside the curated graph.
 | Virginia General Assembly | Two statutory sections | Section HTML and title/chapter scope. |
 | Maryland General Assembly | Three Real Property sections and two Declaration of Rights articles | Scoped HTML and January rendition selector. Publisher does not expose a reliable edition year in the sampled body. |
 | Florida Legislature | Three Chapter 83 sections and 28 Article I constitutional sections | Online Sunshine markup, statutory edition heading and constitutional section anchors. |
-| New York State Senate | Two Real Property sections and one constitutional section | Public HTML and embedded revision date. Some CLI fetches returned 403. Two exact public captures were independently fetched and parsed locally. |
+| New York State Senate | Two retained Real Property sections and one retained constitutional section | Official public HTML with publisher revision dates. Automated refresh is disabled after repeated HTTP 403s. Offline replay preserves original retrieval times and leaves currentness unresolved. |
 | California Legislative Counsel | Two Civil Code sections | Three bounded ranges from the reviewed PUBINFO archive. Archive ETag, exact compressed members, CRCs, SHA-256 and operative text identifiers. |
 | California Department of Industrial Relations | One Title 8 regulation | Publisher HTML with the title, section and operative body checked. Section currentness remains unresolved. |
 | Judicial Branch of California | Two retained Title 8 court rules | Rule and edition headings, operative paragraphs and rule-history dates. Automated refresh is disabled under the publisher's site terms. |
@@ -70,6 +70,7 @@ python -B scripts/national_corpus.py ingest olrc 119-88/44
 python -B scripts/national_corpus.py ingest olrc 119-138/1
 python -B scripts/national_corpus.py ingest olrc 119-138/44
 python -B scripts/national_corpus.py ingest govinfo_cfr 2023/1/1
+python -B scripts/national_corpus.py ingest govinfo_cfr 2025/8/1/100.4
 python -B scripts/national_corpus.py ingest govinfo_ecfr 1
 python -B scripts/national_corpus.py ingest govinfo_ecfr 8
 python -B scripts/national_corpus.py ingest govinfo_register 2026-01-30
@@ -81,13 +82,13 @@ python -B scripts/national_corpus.py ingest maryland_code grp/8-211
 python -B scripts/national_corpus.py ingest maryland_constitution c0/24
 python -B scripts/national_corpus.py ingest florida_code 83.51
 python -B scripts/national_corpus.py ingest florida_constitution article-I
-python -B scripts/national_corpus.py ingest new_york_code RPP/226-B
-python -B scripts/national_corpus.py ingest new_york_constitution CNS/A1S6
 python -B scripts/national_corpus.py ingest california_code 2025/civil-habitability
 python -B scripts/national_corpus.py ingest california_regulations 3203
 python -B scripts/national_corpus.py stats
 python -B scripts/national_corpus.py replay SNAPSHOT_ID
-python -B scripts/national_corpus.py search US-CA statute --currentness current --as-of 2026-11-09
+python -B scripts/national_corpus.py record-reviewed-supersession
+python -B scripts/national_corpus.py search US-CA statute --currentness current_as_of --as-of 2026-11-09
+python -B scripts/national_corpus.py search US regulation --citation "8 CFR 100.4" --currentness superseded --as-of 2026-03-02
 python -B scripts/national_corpus.py search US opinion --citation "347 U.S. 483"
 python -B scripts/national_corpus.py identity LEFT_VERSION RIGHT_VERSION
 python -B scripts/evaluate_national_corpus.py
@@ -120,9 +121,9 @@ deterministic response validation remain in the response path.
 
 ## Verified increment
 
-The working corpus has 840 authority identities, 1,270 versions, 34
-snapshots, 1,783 observations, 1,463 source relationship rows and three
-cross-provider identity checks. The annual CFR and eCFR renditions of
+The working corpus has 840 authority identities, 1,272 versions, 36
+snapshots, 1,896 observations, 1,483 source relationship rows, three
+cross-provider identity checks and one reviewed supersession. The annual CFR and eCFR renditions of
 1 CFR 1.1 and 1 CFR 2.2 share authority identity and retain distinct versions.
 OLRC releases 119-88 and 119-138 coexist for all 426 sampled identities.
 Their normalized text hashes matched across both releases. The corpus
@@ -131,15 +132,15 @@ California's two earlier observations
 and their current-as-of versions coexist. The counts include preserved
 parser-revision observations for OLRC Title 1, GovInfo CFR and Federal Register.
 
-The labeled retrieval sample spans all six jurisdictions. All 22 targets
+The labeled retrieval sample spans all six jurisdictions. All 23 targets
 ranked first, with precision at 1 of 1.00 and precision at 3 of 0.33
-under a one-target-per-query label. All 14 negative controls returned
+under a one-target-per-query label. All 16 negative controls returned
 zero rows. Two labeled cross-provider identity checks matched.
-The 30,000-record benchmark replicates real normalized shapes across six
-families. It processed 30,000 edges in 26.53 seconds including indexing,
-with 1,131 records per second, 0.782 ms p95 retrieval latency, 100.23 ms
-total for unchanged refresh and a 221,163,520-byte database. Python
-allocations peaked at 916,625 traced bytes. That measurement excludes
+The closeout benchmark replicated 30,000 records and 30,000 edges across six
+authority families. Ingest and indexing took 33.442 seconds at 897 records
+per second. Across 120 scoped queries, p95 retrieval latency was 1.282 ms.
+Unchanged refresh took 85.16 ms and the database occupied 224,346,112 bytes.
+Python allocations peaked at 916,335 traced bytes. That measurement excludes
 SQLite native allocations and OS cache.
 
 Five state-scoped packages rendered through the offline Research Core,
@@ -161,15 +162,47 @@ respectively. Register material was publication context. The two runs used
 The four live scenarios used 81,611 input and 11,088 output tokens across
 21 calls. The uncached standard-rate estimate is $0.27. [Model pricing](https://developers.openai.com/api/docs/models/gpt-6.1-sol)
 
-## Outstanding Corpus v1 acceptance
+## Closeout currentness and refresh
 
-Expanded amendment and supersession relationships and broader
-operative currentness remain open. The eCFR title API exposed publisher
-coverage metadata, but the matching point-in-time XML returned HTTP 406
-for the attempted title, part and section routes. GPO bulk XML supplied
-the text for the three bounded sections with unresolved currentness.
-The Federal Register adapter indexes preambles and preserves
-full issue bytes. The bounded sample provides no nationwide recall estimate.
+The corpus distinguishes date-bounded currentness, historical editions,
+superseded versions, repeal markers, proposals and unresolved status. A
+`current` search requires an exact supported as-of date and returns
+`current_as_of` evidence. No sampled adapter establishes open-ended
+currentness. OLRC editions, Maryland and Florida publisher renditions,
+Virginia section pages, California regulations and retained court rules
+preserve publication or version context. California Civil Code active flags
+support the reviewed publication date. Opinions preserve role and edition
+with subsequent treatment uncertainty.
+
+The January 1, 2025 annual edition of 8 CFR 100.4 lacks the Detroit bridge
+entry. FR Doc. 2026-01868 expressly adds that entry in paragraph (a) and
+states March 2, 2026 as the final rule's effective date. The retained eCFR
+rendition includes the entry. The reviewed pairing binds all three exact
+source observations and records the earlier text as superseded from that
+date. The operator command replays the pinned hashes and is idempotent.
+The eCFR title-level marker and the amendment alone leave present section
+currentness unresolved. Sampled eCFR point-in-time XML routes returned
+HTTP 406. The Federal Register index stores preambles with exact issue
+bytes retained. [Published final rule](https://www.govinfo.gov/content/pkg/FR-2026-01-30/html/2026-01868.htm)
+
+New York remains a retained sample. The machine registry disables network
+refresh for both New York adapters and the ingestion CLI fails before
+network access. Operators can replay an existing reviewed snapshot by ID.
+The Senate documents a keyed API, including API-key handling and service
+limits. That path was neither authenticated nor validated for this milestone.
+The sample uses retained official text with Senate attribution and local
+audit storage. The Open Legislation site lists CC BY-NC-ND 3.0 terms. Review
+API access and redistribution terms before enabling a new acquisition path.
+[API getting started](https://legislation.nysenate.gov/static/docs/html/getting_started.html)
+[Open Legislation terms](https://legislation.nysenate.gov/)
+
+Research Core carries structured status and limitations into the proposal
+and independent verification requests and binds them to the cited passage.
+The development acceptance includes dated California, historical CFR,
+proposed Federal Register, superseded CFR, unresolved eCFR and a
+New York–Florida comparison. Deterministic guards reject operative-law
+assertions and preserve exact passages. The bounded sample provides no
+nationwide recall estimate.
 
 ### State source investigation
 

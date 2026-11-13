@@ -36,9 +36,25 @@
         "version_key": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
         "artifact_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
         "locator": {"type": "string", "minLength": 1},
-        "currentness": {"enum": ["unresolved", "current", "historical", "repealed", "superseded", "proposed"]},
+        "currentness": {"enum": ["unresolved", "current_as_of", "historical", "repealed", "superseded", "proposed"]},
         "current_as_of": {"type": ["string", "null"], "format": "date"},
         "currentness_basis": {"type": ["string", "null"]},
+        "refresh_supported": {"type": "boolean"},
+        "refresh_limitation": {"type": ["string", "null"]},
+        "supersession": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["earlier_snapshot", "earlier_native", "earlier_version", "later_snapshot", "later_native", "later_version",
+                       "rule_snapshot", "rule_native", "rule_version", "effective_on", "basis"],
+          "patternProperties": {
+            "^(earlier|later|rule)_(snapshot|version)$": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "^(earlier|later|rule)_native$": {"type": "string", "minLength": 1}
+          },
+          "properties": {
+            "effective_on": {"type": "string", "format": "date"},
+            "basis": {"type": "string", "minLength": 1}
+          }
+        },
         "document_kind": {"enum": [null, "proposed_rule", "final_rule", "notice", "other"]}
       }
     },

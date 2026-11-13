@@ -9,6 +9,7 @@ from app.courtlistener_authority import extract_passages
 from app.national_corpus import CorpusError, CorpusQuery, fingerprint
 from app.national_corpus_providers import PROVIDERS
 from app.national_corpus_store import SQLiteNormalizedCorpus
+from app.national_corpus_supersession import reviewed_supersession
 from app.research_planning import LegalResearchPlanner
 from app.retrieval import tokens
 
@@ -106,9 +107,15 @@ class NormalizedAuthorityProvider:
                 continue
             version = matches[0].version
             expected_jurisdiction = "US" if matter.sovereign == "federal" else "US-" + STATE_CODES[matter.state]
+            requested_status = "current_as_of" if matter.authority_status == "current" else matter.authority_status
+            supersession = hit.get("supersession")
+            if supersession and (supersession["earlier_snapshot"] != observation["id"]
+                                 or reviewed_supersession(store) != supersession):
+                continue
+            status = "superseded" if supersession else version.evidence_status
             if (version.jurisdiction != expected_jurisdiction or version.sovereign != matter.sovereign
-                    or version.authority_type != hit["authority_type"] or version.currentness != matter.authority_status
-                    or (version.currentness == "current" and version.current_as_of.isoformat() != matter.authority_as_of)):
+                    or version.authority_type != hit["authority_type"] or status != requested_status
+                    or (requested_status == "current_as_of" and version.current_as_of.isoformat() != matter.authority_as_of)):
                 continue
             if version.authority_type == "opinion":
                 if provider.source.name != "courtlistener":
@@ -120,6 +127,8 @@ class NormalizedAuthorityProvider:
                     return documents
                 continue
             source = self._source(matter, plan, version, observation, provider.source)
+            if supersession:
+                source["corpus_provenance"].update(currentness=status, supersession=supersession)
             passages = self._passages(source, plan, version.text, queries, observation["locator"])
             if passages:
                 return (AuthorityDocument(source, passages, version.text),)
@@ -169,7 +178,9 @@ class NormalizedAuthorityProvider:
             "corpus_provenance": {"provider": metadata.name, "native_identifier": observation["native_id"],
                                   "snapshot_key": observation["id"], "version_key": version.version_id,
                                   "artifact_hash": observation["hash"], "locator": observation["locator"],
-                                  "currentness": version.currentness, "document_kind": version.document_kind,
+                                  "currentness": version.evidence_status, "document_kind": version.document_kind,
+                                  "refresh_supported": metadata.refresh_supported,
+                                  "refresh_limitation": metadata.refresh_limitation,
                                   "current_as_of": version.current_as_of.isoformat() if version.current_as_of else None,
                                   "currentness_basis": version.currentness_basis},
             "access": {"is_free": True, "requires_login": metadata.authentication != "none", "format": "other"},
@@ -192,7 +203,11 @@ class NormalizedAuthorityProvider:
                                        list(plan.issues), suffix=f"p{offset + 1}", method="provider_exact_text_check")
             passage["verification"]["retrieved_on"] = source["citation"]["retrieved_at"]
             status = source["corpus_provenance"]["currentness"]
-            passage["limitations"].append(f"Corpus source edition: {source['provenance']['source_content_version']}; state: {status}.")
+            passage["limitations"].append(f"Corpus source edition: {source['provenance']['source_content_version']}; status: {status.replace('_', ' ')}.")
+            if source["corpus_provenance"]["refresh_limitation"]:
+                passage["limitations"].append(source["corpus_provenance"]["refresh_limitation"])
+            if source["corpus_provenance"].get("supersession"):
+                passage["limitations"].append(source["corpus_provenance"]["supersession"]["basis"])
             if source["corpus_provenance"]["current_as_of"]:
                 passage["limitations"].append("Publisher currentness is limited to " + source["corpus_provenance"]["current_as_of"] + ".")
             if source["corpus_provenance"]["document_kind"]:

@@ -19,6 +19,7 @@ from app.corpus_store import utcnow
 from app.national_corpus import AuthorityType, CorpusError, CorpusQuery, OpinionRole
 from app.national_corpus_providers import PROVIDERS
 from app.national_corpus_store import SQLiteNormalizedCorpus
+from app.national_corpus_supersession import record_reviewed_supersession
 
 
 def build(store, provider, selector, directory):
@@ -58,6 +59,7 @@ def main():
     commands = parser.add_subparsers(dest="command", required=True)
     commands.add_parser("sources")
     commands.add_parser("stats")
+    commands.add_parser("record-reviewed-supersession")
     replay = commands.add_parser("replay", help="Replay a stored source snapshot without network access")
     replay.add_argument("snapshot")
     compare = commands.add_parser("identity")
@@ -74,7 +76,7 @@ def main():
     search.add_argument("--edition", default="")
     search.add_argument("--provider", choices=PROVIDERS, default="")
     search.add_argument("--opinion-role", action="append", choices=get_args(OpinionRole), default=[])
-    search.add_argument("--currentness", choices=("unresolved", "current", "historical", "repealed", "superseded", "proposed"),
+    search.add_argument("--currentness", choices=("unresolved", "current", "current_as_of", "historical", "repealed", "superseded", "proposed"),
                         default="unresolved")
     search.add_argument("--as-of", type=date.fromisoformat)
     search.add_argument("--limit", type=int, default=12)
@@ -92,6 +94,8 @@ def main():
             return int(report["status"] != "committed")
         if args.command == "stats":
             print(json.dumps(store.stats(), indent=2))
+        elif args.command == "record-reviewed-supersession":
+            print(json.dumps(record_reviewed_supersession(store), indent=2))
         elif args.command == "replay":
             provider, selector, raw, retrieved_at = store.replay_artifact(args.snapshot)
             adapter = PROVIDERS.get(provider)

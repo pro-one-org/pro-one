@@ -38,7 +38,7 @@ def run(normalized, courtlistener, *, live=False, federal=False, federal_rules=F
     results = []
     scenarios = []
     for label, state, expected in areas[:1] if live else areas:
-        fields = {"authority_status": "current", "authority_as_of": "2026-11-09"} if state == "California" else {}
+        fields = {"authority_status": "current_as_of", "authority_as_of": "2026-11-09"} if state == "California" else {}
         scenarios.append((label, ResearchMatter(country="US", state=state, legal_area="landlord_tenant",
                                                 topics=["landlord_repairs"], authority_types=["statute", "opinion"],
                                                 **fields), expected))
@@ -91,20 +91,37 @@ def run(normalized, courtlistener, *, live=False, federal=False, federal_rules=F
         results.append({"label": "virginia_florida_independent_scope", "status": answer["status"],
                         "passed": answer["status"] == "answered" and not answer["publicly_approved"]
                         and {row["state"] for row in answer["jurisdictions"]} == {"Virginia", "Florida"}})
+        comparison = ResearchComparison(matters=[
+            ResearchMatter(country="US", state=state, legal_area="landlord_tenant", topics=["landlord_repairs"],
+                           authority_types=["statute"]) for state in ("New York", "Florida")
+        ])
+        answer = compare_state_research(comparison, repo, settings, GenerationService(registry), config)
+        new_york = next(row for row in answer["jurisdictions"] if row["state"] == "New York")
+        results.append({"label": "new_york_retained_comparison", "status": answer["status"],
+                        "passed": answer["status"] == "answered" and not answer["publicly_approved"]
+                        and "refresh" in json.dumps(new_york).casefold()
+                        and "unresolved" in json.dumps(new_york).casefold()})
         for label, family, topic, status, expected in (
             ("federal_statute", "statute", "federal_register", "unresolved", "evidence_ready"),
             ("federal_historical_regulation", "regulation", "federal_register", "historical", "evidence_ready"),
             ("federal_current_regulation_gap", "regulation", "federal_register", "current", "no_authoritative_support"),
             ("federal_register_proposal", "register_document", "port_of_entry", "proposed", "no_authoritative_support"),
+            ("federal_ozone_proposal", "register_document", "interstate_ozone_transport", "proposed", "evidence_ready"),
+            ("federal_superseded_regulation", "regulation", "port_of_entry", "superseded", "evidence_ready"),
             ("federal_register_final", "register_document", "port_of_entry", "unresolved", "evidence_ready"),
             ("uncovered_issue", "statute", "unmapped_topic", "unresolved", "no_authoritative_support"),
         ):
             matter = ResearchMatter(country="US", sovereign="federal", legal_area="administrative_law", topics=[topic],
-                                    authority_types=[family], authority_status=status)
+                                    authority_types=[family], authority_status=status,
+                                    authority_as_of="2026-03-02" if status == "superseded" else None)
             service = GeneralLegalResearchService(repo, settings)
             try:
                 outcome = service.assemble(matter)
-                results.append({"label": label, "status": outcome["status"], "passed": outcome["status"] == expected})
+                actual = {citation["source_currentness"]["status"]
+                          for citation in (outcome.get("package") or {}).get("response_plan", {}).get("citations", [])}
+                results.append({"label": label, "status": outcome["status"], "authority_status": sorted(actual),
+                                "passed": outcome["status"] == expected and
+                                (expected != "evidence_ready" or actual == {status})})
             finally:
                 service.close()
     return {"mode": "live" if live else "offline", "results": results, "calls": observer.calls,

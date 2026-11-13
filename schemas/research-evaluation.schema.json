@@ -80,7 +80,7 @@
           "maxItems": 6,
           "items": {"enum": ["statute", "regulation", "opinion", "constitution", "court_rule", "register_document"]}
         },
-        "authority_status": {"enum": ["unresolved", "historical", "current", "proposed"]},
+        "authority_status": {"enum": ["unresolved", "historical", "current", "current_as_of", "proposed", "superseded", "repealed"]},
         "authority_as_of": {"type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
         "country": {
           "anyOf": [

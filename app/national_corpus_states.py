@@ -156,12 +156,18 @@ class MarylandProvider(PublicProvider):
 class NewYorkProvider(PublicProvider):
     def __init__(self, constitutional=False):
         self.constitutional = constitutional
-        self.source = official_source(
+        self.source = replace(official_source(
             "new_york_constitution" if constitutional else "new_york_code",
             "www.nysenate.gov", "US-NY", "constitution" if constitutional else "statute",
             "New York State Senate", "/legislation/laws/{law}/{section}", "Publisher revision marker",
             "Senate Open Legislation publishes CC BY-NC-ND 3.0 terms for site content. Local capture of legal text only.",
-        )
+        ), acceptance="retained_sample_only", max_requests=0, refresh_mode="retained_snapshot_replay",
+            refresh_supported=False, version_method="Senate page revision date, native selector and exact artifact hash",
+            refresh_limitation="Sampled Senate HTML routes returned HTTP 403. Keyed Open Legislation API is unvalidated for v1.")
+
+    def fetch(self, selector):
+        self.source_url(selector)
+        raise CorpusError("new_york_refresh_unavailable")
 
     def _selection(self, selector):
         return selector_match(r"(CNS)/(A1S[1-9][0-9]?)" if self.constitutional else
@@ -262,7 +268,8 @@ class CaliforniaCourtRules(PublicProvider):
         "california_court_rules", "courts.ca.gov", "US-CA", "court_rule",
         "Judicial Branch of California", "/cms/rules/index/eight/rule8_{number}", "Publisher edition heading",
         "Judicial Branch site terms prohibit automated data gathering. Retained samples are available for local replay.",
-    ), acceptance="retained_sample_only", max_requests=0)
+    ), acceptance="retained_sample_only", max_requests=0, refresh_mode="retained_snapshot_replay",
+        refresh_supported=False, refresh_limitation="California Judicial Branch site terms restrict automated gathering.")
 
     def fetch(self, selector):
         self.source_url(selector)

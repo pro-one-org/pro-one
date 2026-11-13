@@ -205,8 +205,14 @@ class GeneralLegalResearchService:
             citations[-1]["external_identifiers"] = deepcopy(source.get("external_identifiers"))
             citations[-1]["case_metadata"] = deepcopy(source.get("case_metadata"))
             if source.get("corpus_provenance"):
-                citations[-1]["corpus_provenance"] = deepcopy(source["corpus_provenance"])
-                citations[-1]["source_currentness"]["status"] = source["corpus_provenance"]["currentness"]
+                corpus = source["corpus_provenance"]
+                citations[-1]["corpus_provenance"] = deepcopy(corpus)
+                citations[-1]["source_currentness"].update(
+                    status=corpus["currentness"], as_of=corpus.get("current_as_of"),
+                    basis=corpus.get("currentness_basis"), refresh_supported=corpus.get("refresh_supported"),
+                    refresh_limitation=corpus.get("refresh_limitation"), document_kind=corpus.get("document_kind"),
+                    supersession=deepcopy(corpus.get("supersession")),
+                )
         limitations = sorted({CURRENTNESS_LIMIT, FACT_LIMIT, *gaps, *conflicts, *(v for c in claims for v in c["limitations"])})
         package = {"workflow_id": None, "evidence_mode": mode, "capability_id": capability["id"] if capability else None,
                    "development_package": {"available": True, "package_integrity": True},

@@ -16,6 +16,8 @@ POSITIVES = (
     ("olrc_second_release", CorpusQuery("US", "statute", citation="1 USC 1", edition="PL 119-138"), "1 U.S.C. § 1"),
     ("historical_cfr", CorpusQuery("US", "regulation", citation="1 CFR 1.1", currentness="historical"), "1 CFR 1.1"),
     ("ecfr_amended_section", CorpusQuery("US", "regulation", citation="8 CFR 100.4", provider="govinfo_ecfr"), "8 CFR 100.4"),
+    ("cfr_superseded_after_amendment", CorpusQuery("US", "regulation", citation="8 CFR 100.4",
+                                                 currentness="superseded", as_of=date(2026, 3, 2)), "8 CFR 100.4"),
     ("federal_reporter", CorpusQuery("US", "opinion", citation="347 U.S. 483"), "347 U.S. 483"),
     ("federal_lead", CorpusQuery("US", "opinion", citation="332 U.S. 380", opinion_roles=("lead",)), "332 U.S. 380"),
     ("federal_dissent", CorpusQuery("US", "opinion", citation="332 U.S. 380", opinion_roles=("dissent",)), "332 U.S. 380"),
@@ -56,6 +58,10 @@ NEGATIVES = (
                                               currentness="current", as_of=date(2026, 11, 12))),
     ("florida_constitution_as_statute", CorpusQuery("US-FL", "statute", citation="Fla. Const. art. I, § 2")),
     ("ny_text_in_maryland", CorpusQuery("US-MD", "statute", citation="N.Y. Real Prop. Law § 235-b")),
+    ("ny_retrieval_is_not_currentness", CorpusQuery("US-NY", "statute", citation="N.Y. Real Prop. Law § 235-b",
+                                                   currentness="current_as_of", as_of=date(2026, 11, 9))),
+    ("cfr_supersession_before_amendment", CorpusQuery("US", "regulation", citation="8 CFR 100.4",
+                                                    currentness="superseded", as_of=date(2026, 3, 1))),
 )
 
 

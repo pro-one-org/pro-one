@@ -18,7 +18,8 @@ class FederalRegisterProvider(PublicProvider):
         rights="Federal Register government text. Exact XML remains in local audit storage.",
         attribution="Office of the Federal Register and U.S. Government Publishing Office",
         currentness_method="Uses issue date, XML classification and explicit effective-date wording where recognized.",
-        parser_revision="3",
+        parser_revision="4",
+        version_method="Daily issue, native FR document number, parser revision and normalized preamble hash.",
     )
     kinds = {"RULE": "other", "PRORULE": "proposed_rule", "NOTICE": "notice", "PRESDOC": "other"}
 
@@ -71,6 +72,13 @@ class FederalRegisterProvider(PublicProvider):
             kind = "final_rule"
         effective = None
         date_text = text_of(preamble.find("EFFDATE")).removeprefix("DATES:").strip()
+        if native == "2026-01868" and date_text == (
+            "This final rule is effective March 2, 2026. CBP will notify the public when the Gordie Howe "
+            "International Bridge border crossing is fully operational and open to the public for use through "
+            "a notice published on the CBP website."
+        ):
+            # The remaining text concerns the separate port-opening announcement.
+            date_text = "This final rule is effective March 2, 2026."
         match = re.fullmatch(
             r"(?:This (?:final )?rule is effective|Effective) ([A-Z][a-z]+ \d{1,2}, \d{4})\.", date_text,
         )
@@ -167,6 +175,8 @@ class GovInfoECFRProvider(PublicProvider):
         rights="Federal regulatory text. Source XML retains publisher structure and metadata.",
         currentness_method="Retains title-level amendment metadata without treating it as section currency.",
         parser_revision="1",
+        version_method="Title amendment marker, native XML node and normalized section hash.",
+        refresh_limitation="Title metadata does not prove section currency. Sampled section point-in-time route returned HTTP 406.",
     )
     selected = {"1": ("1.1", "2.2"), "8": ("100.4",)}
 

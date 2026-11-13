@@ -24,7 +24,7 @@ class ResearchMatter(BaseModel):
     authority_types: list[Literal["statute", "regulation", "opinion", "constitution", "court_rule", "register_document"]] = Field(
         default_factory=list, max_length=6,
     )
-    authority_status: Literal["unresolved", "historical", "current", "proposed"] = "unresolved"
+    authority_status: Literal["unresolved", "historical", "current", "current_as_of", "proposed", "superseded", "repealed"] = "unresolved"
     authority_as_of: str | None = Field(default=None, pattern=r"^\d{4}-\d{2}-\d{2}$")
 
 

@@ -32,6 +32,7 @@ RESEARCH_TOPICS = {
     "administrative_law": {
         "federal_register": ("federal register", "office of the federal register"),
         "port_of_entry": ("port of entry", "gordie howe international bridge"),
+        "interstate_ozone_transport": ("interstate transport ozone",),
         "federal_register_definitions": ("administrative committee of the federal register",),
     },
     "constitutional_law": {
