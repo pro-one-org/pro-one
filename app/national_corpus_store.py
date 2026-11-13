@@ -88,14 +88,16 @@ class SQLiteNormalizedCorpus:
     def __exit__(self, *args):
         self.connection.close()
 
-    def ingest(self, provider, selector, raw):
+    def ingest(self, provider, selector, raw, *, retrieved_at=None, replay=False):
         source = provider.source
         url = provider.source_url(selector)
         if not raw or len(raw) > source.max_bytes:
             raise CorpusError("source_size_out_of_bounds")
         raw_hash = fingerprint(raw)
         snapshot = identity(source.name, selector, raw_hash, source.parser_revision)
-        timestamp = utcnow()
+        timestamp = retrieved_at if replay else utcnow()
+        if not timestamp:
+            raise CorpusError("snapshot_retrieval_timestamp_missing")
         db = self.connection
         with db:
             db.execute("BEGIN IMMEDIATE")
@@ -103,7 +105,8 @@ class SQLiteNormalizedCorpus:
                 "SELECT 1 FROM corpus_snapshots WHERE id=?", (snapshot,),
             ).fetchone()
             if existing:
-                db.execute("UPDATE corpus_snapshots SET last_retrieved=? WHERE id=?", (timestamp, snapshot))
+                if not replay:
+                    db.execute("UPDATE corpus_snapshots SET last_retrieved=? WHERE id=?", (timestamp, snapshot))
                 seen = db.execute(
                     "SELECT count(*) FROM corpus_observations WHERE snapshot_id=?", (snapshot,),
                 ).fetchone()[0]
@@ -243,12 +246,12 @@ class SQLiteNormalizedCorpus:
 
     def replay_artifact(self, snapshot):
         row = self.connection.execute("""
-            SELECT s.provider, s.selector, s.hash, a.raw
+            SELECT s.provider, s.selector, s.hash, s.first_retrieved, a.raw
             FROM corpus_snapshots s JOIN corpus_artifacts a ON a.hash=s.hash WHERE s.id=?
             """, (snapshot,)).fetchone()
         if not row or fingerprint(row["raw"]) != row["hash"]:
             raise CorpusError("snapshot_unavailable_or_corrupt")
-        return row["provider"], row["selector"], row["raw"]
+        return row["provider"], row["selector"], row["raw"], row["first_retrieved"]
 
     def relationships(self, version_id, *, limit=100):
         if not 1 <= limit <= 1000:

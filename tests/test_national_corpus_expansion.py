@@ -15,6 +15,22 @@ from app.repository import RecordRepository
 
 
 class CorpusExpansionTests(unittest.TestCase):
+    def test_offline_replay_preserves_original_retrieval_timestamp(self):
+        raw = b'<article id="vacode"><h2>&sect; 1-200. Example.</h2><section data-table="CoV" data-field="body"><p>Fixture text.</p></section></article>'
+        provider = PROVIDERS["virginia_code"]
+        with SQLiteNormalizedCorpus(":memory:") as store:
+            original = store.ingest(provider, "1/2/1-200", raw)
+            name, selector, artifact, retrieved = store.replay_artifact(original["snapshot"])
+            [version] = store.search(CorpusQuery("US-VA", "statute"))
+            before = store.provenance(version["version_id"])
+            repeat = store.ingest(PROVIDERS[name], selector, artifact, retrieved_at=retrieved, replay=True)
+            self.assertTrue(repeat["unchanged_snapshot"])
+            self.assertEqual(store.provenance(version["version_id"]), before)
+            with SQLiteNormalizedCorpus(":memory:") as other:
+                other.ingest(PROVIDERS[name], selector, artifact, retrieved_at=retrieved, replay=True)
+                [provenance] = other.provenance(version["version_id"])
+                self.assertEqual(provenance["first_retrieved"], retrieved)
+
     def test_comparison_requires_two_distinct_states_and_the_same_authority_scope(self):
         base = dict(country="US", state="Virginia", legal_area="landlord_tenant", topics=["landlord_repairs"])
         left = ResearchMatter(**base)

@@ -93,11 +93,11 @@ def main():
         if args.command == "stats":
             print(json.dumps(store.stats(), indent=2))
         elif args.command == "replay":
-            provider, selector, raw = store.replay_artifact(args.snapshot)
+            provider, selector, raw, retrieved_at = store.replay_artifact(args.snapshot)
             adapter = PROVIDERS.get(provider)
             if adapter is None:
                 raise CorpusError("snapshot_provider_unavailable")
-            print(json.dumps(store.ingest(adapter, selector, raw), indent=2))
+            print(json.dumps(store.ingest(adapter, selector, raw, retrieved_at=retrieved_at, replay=True), indent=2))
         elif args.command == "identity":
             print(json.dumps(store.check_identity(args.left_version, args.right_version), indent=2))
         else:

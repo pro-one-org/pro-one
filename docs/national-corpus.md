@@ -102,7 +102,8 @@ benchmark requires the six ingested authority families. Local output is
 stored under `.local/national-corpus/`. The importer validates a bounded
 artifact and commits it atomically. A repeat with identical bytes and parser
 revision updates retrieval metadata. A corrected rendition remains traceable
-to its earlier version. Currentness and opinion role are deterministic filters.
+to its earlier version. Offline replay preserves the original retrieval
+timestamp. Currentness and opinion role are deterministic filters.
 
 Development mode enables corpus evidence when
 `PRO_ONE_NORMALIZED_CORPUS_PATH` names the existing local database. The
