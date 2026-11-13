@@ -15,6 +15,8 @@ POSITIVES = (
     ("olrc_title_one", CorpusQuery("US", "statute", citation="1 USC 1"), "1 U.S.C. § 1"),
     ("historical_cfr", CorpusQuery("US", "regulation", citation="1 CFR 1.1", currentness="historical"), "1 CFR 1.1"),
     ("federal_reporter", CorpusQuery("US", "opinion", citation="347 U.S. 483"), "347 U.S. 483"),
+    ("federal_lead", CorpusQuery("US", "opinion", citation="332 U.S. 380", opinion_roles=("lead",)), "332 U.S. 380"),
+    ("federal_dissent", CorpusQuery("US", "opinion", citation="332 U.S. 380", opinion_roles=("dissent",)), "332 U.S. 380"),
     ("virginia_landlord", CorpusQuery("US-VA", "statute", citation="Va. Code § 55.1-1220"), "Va. Code § 55.1-1220"),
     ("virginia_common_law", CorpusQuery("US-VA", "statute", text="common law england"), "Va. Code § 1-200"),
     ("maryland_repairs", CorpusQuery("US-MD", "statute", citation="Md. Code, Real Prop. § 8-211"), "Md. Code, Real Prop. § 8-211"),

@@ -89,6 +89,10 @@ class CourtListenerProvider:
         return FetchedSource(encode(transport.responses).encode(), requests)
 
     def normalize(self, selector, raw):
+        bundle = self.replay_case(selector, raw)
+        yield from self.observations(bundle)
+
+    def replay_case(self, selector, raw):
         try:
             replay = ReplayTransport(json.loads(raw))
         except (UnicodeError, ValueError):
@@ -96,6 +100,9 @@ class CourtListenerProvider:
         bundle, _ = self._case(selector, replay, "offline-replay")
         if next(replay.responses, None) is not None:
             raise CorpusError("courtlistener_snapshot_has_extra_responses")
+        return bundle
+
+    def observations(self, bundle):
         citation = bundle.cluster.citations[0]
         cluster = f"clusters/{bundle.cluster.id}/"
         docket = f"dockets/{bundle.docket.id}/"

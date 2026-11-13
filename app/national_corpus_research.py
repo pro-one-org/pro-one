@@ -5,6 +5,7 @@ import re
 import sqlite3
 
 from app.authority import AuthorityDocument, AuthorityUnavailable, evidence_passage, normalized_source, proposed_review
+from app.courtlistener_authority import extract_passages
 from app.national_corpus import CorpusError, CorpusQuery, fingerprint
 from app.national_corpus_providers import PROVIDERS
 from app.national_corpus_store import SQLiteNormalizedCorpus
@@ -64,15 +65,18 @@ class NormalizedAuthorityProvider:
                         candidates.setdefault(family, {}).setdefault(hit["version_id"], hit)
         # Give every requested family one turn before filling additional slots.
         by_family = [list(candidates.get(family, {}).values())[:3] for family in families]
+        loaded_cases = set()
         for index in range(3):
             for hits in by_family:
                 if index < len(hits):
                     hit = hits[index]
                     try:
-                        document = self._verified_document(store, matter, plan, hit, queries)
+                        documents = self._verified_documents(store, matter, plan, hit, queries, loaded_cases)
                     except (ValueError, OSError):
-                        document = None
-                    if document:
+                        documents = ()
+                    if len(documents) > limit - len(self.documents):
+                        continue
+                    for document in documents:
                         self.documents[document.source["id"]] = document
                     if len(self.documents) >= limit:
                         return
@@ -82,12 +86,10 @@ class NormalizedAuthorityProvider:
             raise AuthorityUnavailable("normalized_authority_unavailable")
         return self.documents[source_id]
 
-    def _verified_document(self, store, matter, plan, hit, queries):
-        # Opinion claims need the existing CourtListener citation and role
-        # path. A reporter granule can include syllabus and counsel's words.
-        if hit["authority_type"] == "opinion":
-            return None
+    def _verified_documents(self, store, matter, plan, hit, queries, loaded_cases):
         for observation in store.provenance(hit["version_id"]):
+            if observation["id"] in loaded_cases:
+                continue
             provider = PROVIDERS.get(observation["provider"])
             if not provider or provider.source.parser_revision != observation["parser_revision"]:
                 continue
@@ -107,11 +109,42 @@ class NormalizedAuthorityProvider:
                     or version.authority_type != hit["authority_type"] or version.currentness != matter.authority_status
                     or (version.currentness == "current" and version.current_as_of.isoformat() != matter.authority_as_of)):
                 continue
+            if version.authority_type == "opinion":
+                if provider.source.name != "courtlistener":
+                    continue
+                bundle = provider.replay_case(observation["selector"], raw)
+                documents = self._case_documents(store, matter, plan, bundle, provider, observation)
+                if documents:
+                    loaded_cases.add(observation["id"])
+                    return documents
+                continue
             source = self._source(matter, plan, version, observation, provider.source)
             passages = self._passages(source, plan, version.text, queries, observation["locator"])
             if passages:
-                return AuthorityDocument(source, passages, version.text)
-        return None
+                return (AuthorityDocument(source, passages, version.text),)
+        return ()
+
+    def _case_documents(self, store, matter, plan, bundle, provider, observation):
+        documents = []
+        versions = {item.version.identity_key: item.version for item in provider.observations(bundle)}
+        checked_citation = observation["selector"].partition("/")[2]
+        has_separate = any(opinion.role != "mixed" for opinion in bundle.opinions)
+        for opinion in bundle.opinions:
+            if opinion.role == "mixed" and has_separate:
+                continue
+            version = versions[str(opinion.id)]
+            matches = [item for item in store.provenance(version.version_id)
+                       if item["id"] == observation["id"] and item["native_id"] == f"opinions/{opinion.id}/"]
+            if len(matches) != 1:
+                return ()
+            source, passages = extract_passages(bundle, opinion, list(plan.issues), plan.legal_area, limit=2)
+            if not passages:
+                return ()
+            source["external_identifiers"]["citation_status"] = "verified"
+            source["citation"]["preferred_citation"] = checked_citation
+            source["corpus_provenance"] = self._source(matter, plan, version, matches[0], provider.source)["corpus_provenance"]
+            documents.append(AuthorityDocument(source, passages, opinion.text))
+        return tuple(documents)
 
     def _source(self, matter, plan, version, observation, metadata):
         today = date.today().isoformat()

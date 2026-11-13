@@ -31,7 +31,7 @@ publisher artifacts outside the curated graph.
 | OLRC | 426 federal statutory records across Titles 1 and 44, including 38 repeal markers | Explicit USLM release. Title, chapter, release point, section identifiers and original ZIP. |
 | GovInfo annual CFR | 250 historical sections from 2023 Title 1, Volume 1 | Annual volume. Embedded revision year, part hierarchy, XML and part authority citations. |
 | GovInfo Federal Register | 112 preambles from January 30, 2026. Nine proposed rules, three recognized final rules, 96 notices and four other items. | Explicit issue date and document number. Full issue retained, with 14 explicit CFR part references. |
-| CourtListener | One Supreme Court combined opinion and 21 source relationships | Citation lookup plus case hydration. Exact public JSON responses retained in a replay envelope. Derivative provenance. |
+| CourtListener | Four Supreme Court opinion records across two cases and 41 source relationships | Citation lookup plus case hydration. Exact public JSON responses retained in a replay envelope. Derivative provenance. |
 | U.S. Reports via GovInfo | One official Supreme Court reporter granule | Pinned PDF, reporter citation and case date. The granule combines judicial and editorial material. |
 | Virginia General Assembly | Two statutory sections | Section HTML and title/chapter scope. |
 | Maryland General Assembly | Three Real Property sections and two Declaration of Rights articles | Scoped HTML and January rendition selector. Publisher does not expose a reliable edition year in the sampled body. |
@@ -64,6 +64,7 @@ python -B scripts/national_corpus.py ingest olrc 119-88/44
 python -B scripts/national_corpus.py ingest govinfo_cfr 2023/1/1
 python -B scripts/national_corpus.py ingest govinfo_register 2026-01-30
 python -B scripts/national_corpus.py ingest courtlistener "scotus/347 U.S. 483"
+python -B scripts/national_corpus.py ingest courtlistener "scotus/332 U.S. 380"
 python -B scripts/national_corpus.py ingest us_reports 347-483
 python -B scripts/national_corpus.py ingest virginia_code 55.1/12/55.1-1220
 python -B scripts/national_corpus.py ingest maryland_code grp/8-211
@@ -97,21 +98,23 @@ Development mode enables corpus evidence when
 bridge opens it read-only, enforces the planned matter scope, verifies the
 raw artifact hash, reruns the matching registered parser and checks the
 version and source-native locator before generating exact excerpts. Corpus
-opinions remain searchable for review. Research evidence for case law uses
-the existing CourtListener role and citation controls. Register material
+opinions remain searchable for review. The bridge replays CourtListener
+citation resolution and projects separately attributed opinions together
+through the existing role and citation controls. Official reporter granules
+remain corpus evidence for identity review. Register material
 is retained as publication context and is ineligible as operative law
 in semantic synthesis. The existing proposal, independent verifier and
 deterministic response validation remain in the response path.
 
 ## Verified increment
 
-The working corpus has 835 authority identities, 837 versions, 26
-snapshots, 1,126 observations, 982 source relationship rows and one
+The working corpus has 838 authority identities, 840 versions, 27
+snapshots, 1,129 observations, 1,002 source relationship rows and one
 cross-provider identity check. California's two earlier observations
 and their current-as-of versions coexist. The counts include preserved
 parser-revision observations for OLRC Title 1 and GovInfo CFR.
 
-The labeled retrieval sample spans all six jurisdictions. All 17 targets
+The labeled retrieval sample spans all six jurisdictions. All 19 targets
 ranked first, with precision at 1 of 1.00 and precision at 3 of 0.33
 under a one-target-per-query label. All 13 negative controls returned
 zero rows.
@@ -129,17 +132,19 @@ regulation evidence checks passed. A live Sol Virginia mixed-source run
 answered with verified synthesis after four calls, including independent
 semantic verification. Reported usage was 18,249 input and 2,023 output
 tokens. All responses remained development-only.
+The federal statute-and-case run paired Title 44 with the separately
+attributed Merrill lead and dissent. Live Sol completed five calls and
+verified two claims using 31,420 input and 3,906 output tokens.
 
 ## Outstanding Corpus v1 acceptance
 
-Federal mixed-source model scenarios, an independently scoped comparison
-answer, expanded amendment and supersession relationships, and broader
+Federal statute/regulation and Register/regulation model scenarios, an
+independently scoped comparison answer, expanded amendment and supersession relationships, and broader
 operative currentness remain open. The eCFR title API exposed publisher
 coverage metadata, but the matching point-in-time XML returned HTTP 406
 for the attempted title, part and section routes. No eCFR currentness was
 asserted. The Federal Register adapter indexes preambles and preserves
-full issue bytes, and the opinion bridge still uses the existing validated
-case provider. The bounded sample provides no nationwide recall estimate.
+full issue bytes. The bounded sample provides no nationwide recall estimate.
 
 ### State source investigation
 
