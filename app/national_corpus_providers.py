@@ -2,68 +2,21 @@
 
 from datetime import datetime
 from html.parser import HTMLParser
-from http.client import HTTPException
 from io import BytesIO
-from time import monotonic
 import re
 from types import MappingProxyType
-from urllib.error import HTTPError, URLError
-from urllib.request import ProxyHandler, Request, build_opener
-from xml.etree import ElementTree as ET
 from zipfile import BadZipFile, ZipFile
 
 from app.authority import normalized_source
-from app.models.http_transport import NoRedirect
-from app.national_corpus import AuthorityVersion, CorpusError, FetchedSource, Observation, Source
+from app.national_corpus import AuthorityVersion, CorpusError, Observation, Source, SourceRelationship
+from app.national_corpus_california import CaliforniaCivilCode
 from app.national_corpus_courtlistener import CourtListenerProvider
+from app.national_corpus_federal import FederalRegisterProvider, USReportsProvider
+from app.national_corpus_states import CaliforniaCourtRules, FloridaProvider, MarylandProvider, NewYorkProvider
+from app.national_corpus_transport import PublicProvider, text_of, xml_root
 
 
 USLM = "{http://xml.house.gov/schemas/uslm/1.0}"
-
-
-class SafeTree(ET.TreeBuilder):
-    def doctype(self, name, public_id, system_id):
-        raise CorpusError("source_xml_doctype_forbidden")
-
-
-def xml_root(raw):
-    try:
-        return ET.fromstring(raw, parser=ET.XMLParser(target=SafeTree()))
-    except ET.ParseError as exc:
-        raise CorpusError("source_xml_invalid") from exc
-
-
-def text_of(element):
-    return normalized_source("".join(element.itertext())) if element is not None else ""
-
-
-class PublicProvider:
-    def fetch(self, selector):
-        url = self.source_url(selector)
-        deadline = monotonic() + 30
-        opener = build_opener(ProxyHandler({}), NoRedirect())
-        request = Request(url, headers={"User-Agent": "Pro-One legal corpus ingestion/1.0", "Accept-Encoding": "identity"})
-        raw = bytearray()
-        try:
-            with opener.open(request, timeout=10) as response:
-                if (response.geturl() != url or response.status != 200
-                        or response.headers.get("Content-Encoding", "identity") != "identity"):
-                    raise CorpusError("source_response_invalid")
-                while True:
-                    chunk = response.read1(min(65536, self.source.max_bytes + 1 - len(raw)))
-                    raw.extend(chunk)
-                    if len(raw) > self.source.max_bytes:
-                        raise CorpusError("source_size_out_of_bounds")
-                    if monotonic() > deadline:
-                        raise CorpusError("source_download_deadline")
-                    if not chunk:
-                        return FetchedSource(bytes(raw), requests=1)
-        except HTTPError as exc:
-            status = exc.code
-            exc.close()
-            raise CorpusError(f"source_http_{status}") from None
-        except (URLError, OSError, HTTPException):
-            raise CorpusError("source_transport_error") from None
 
 
 class OLRCProvider(PublicProvider):
@@ -75,7 +28,7 @@ class OLRCProvider(PublicProvider):
         rights="Federal codified statutory text. Publisher packaging and annotations preserved for audit.",
         attribution="Office of the Law Revision Counsel, U.S. House of Representatives",
         currentness_method="Matches embedded release identity. Later amendments and effective dates unresolved.",
-        parser_revision="1",
+        parser_revision="2",
     )
 
     def _selection(self, selector):
@@ -129,12 +82,31 @@ class OLRCProvider(PublicProvider):
             number = child.find(USLM + "num")
             section = number.get("value", "") if number is not None else ""
             native_id = child.get("identifier", "")
-            if not re.fullmatch(r"[0-9][A-Za-z0-9-]*", section) or native_id != f"/us/usc/t{title}/s{section}":
-                raise CorpusError("source_section_identity_mismatch")
             status = child.get("status", "")
-            # Retain non-operative sections in the raw snapshot.
+            if status in {"repealed", "superseded"}:
+                natives = native_id.split()
+                interval = re.fullmatch(rf"/us/usc/t{title}/s([0-9]+)\.\.\.([0-9]+)", native_id)
+                if interval and 0 <= int(interval[2]) - int(interval[1]) <= 200:
+                    natives = [f"/us/usc/t{title}/s{i}" for i in range(int(interval[1]), int(interval[2]) + 1)]
+                for native in natives:
+                    match = re.fullmatch(rf"/us/usc/t{title}/s([0-9][A-Za-z0-9-]*)", native)
+                    if not match:
+                        raise CorpusError("source_section_identity_mismatch")
+                    citation = f"{title} U.S.C. § {match[1]}"
+                    version = AuthorityVersion(
+                        jurisdiction="US", sovereign="federal", authority_type="statute",
+                        identity_namespace="usc", identity_key=f"{title}/{match[1]}", citation=citation,
+                        title=citation, edition=f"PL {release}", text=text_of(child), hierarchy=hierarchy,
+                        legislature="U.S. Congress", currentness=status,
+                        limitations=("OLRC USLM status marker. Any former operative text requires a separate edition.",),
+                    )
+                    yield Observation(version, native, f"{member}#{native_id}", text_of(number),
+                                      (SourceRelationship("part_of", hierarchy[-1]),))
+                continue
             if status:
                 continue
+            if not re.fullmatch(r"[0-9][A-Za-z0-9-]*", section) or native_id != f"/us/usc/t{title}/s{section}":
+                raise CorpusError("source_section_identity_mismatch")
             body = " ".join(filter(None, (text_of(node) for node in child if node.tag in {
                 USLM + name for name in ("content", "subsection", "paragraph", "chapeau", "continuation")
             })))
@@ -149,7 +121,8 @@ class OLRCProvider(PublicProvider):
                 text=body, hierarchy=hierarchy, legislature="U.S. Congress",
                 limitations=("Release-point text. Effective dates and subsequent legislative changes unresolved.",),
             )
-            yield Observation(version, native_id, f"{member}#{native_id}", text_of(number))
+            yield Observation(version, native_id, f"{member}#{native_id}", text_of(number),
+                              (SourceRelationship("part_of", hierarchy[-1]),))
 
 
 class GovInfoCFRProvider(PublicProvider):
@@ -161,7 +134,7 @@ class GovInfoCFRProvider(PublicProvider):
         rights="Federal regulatory text. Publisher graphics and annotations remain in the original artifact.",
         attribution="U.S. Government Publishing Office and Office of the Federal Register",
         currentness_method="Checks the catalog year and embedded revision date. Annual editions are historical snapshots.",
-        parser_revision="1",
+        parser_revision="2",
     )
 
     def _selection(self, selector):
@@ -190,6 +163,12 @@ class GovInfoCFRProvider(PublicProvider):
             raise CorpusError("source_edition_identity_mismatch")
         for part in root.iter("PART"):
             part_number = re.fullmatch(r"Pt\. ([0-9]+[a-zA-Z]?)", text_of(part.find("EAR")))
+            authorities = tuple(dict.fromkeys(
+                f"{match[1]} U.S.C. § {match[2]}" for match in re.finditer(
+                    r"\b([1-9][0-9]?) U\.S\.C\.\s*(?:§\s*)?([0-9]+[a-zA-Z0-9-]*)",
+                    text_of(part.find("AUTH")),
+                )
+            ))
             for child in self._operative_sections(part):
                 original = text_of(child.find("SECTNO"))
                 heading = text_of(child.find("SUBJECT"))
@@ -212,7 +191,9 @@ class GovInfoCFRProvider(PublicProvider):
                     hierarchy=(f"{title} CFR", f"{title} CFR part {part_number[1]}"), currentness="historical",
                     limitations=("Annual-edition text. Revision date does not establish section-level effective dates.",),
                 )
-                yield Observation(version, f"{title}/{section[1]}", f"PART {part_number[1]} / SECTION {section[1]}", original)
+                edges = (SourceRelationship("part_of", version.hierarchy[-1]),
+                         *(SourceRelationship("part_authority_citation", target) for target in authorities))
+                yield Observation(version, f"{title}/{section[1]}", f"PART {part_number[1]} / SECTION {section[1]}", original, edges)
 
     def _operative_sections(self, element, depth=0):
         if depth > 8:
@@ -338,5 +319,8 @@ class VirginiaCodeProvider(PublicProvider):
 PROVIDERS = MappingProxyType({
     provider.source.name: provider for provider in (
         OLRCProvider(), GovInfoCFRProvider(), CourtListenerProvider(), VirginiaCodeProvider(),
+        MarylandProvider(), MarylandProvider(constitutional=True), FloridaProvider(),
+        FloridaProvider(constitutional=True), NewYorkProvider(), NewYorkProvider(constitutional=True),
+        CaliforniaCourtRules(), CaliforniaCivilCode(), FederalRegisterProvider(), USReportsProvider(),
     )
 })

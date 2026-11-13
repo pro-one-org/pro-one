@@ -84,10 +84,13 @@ Options include `--provider virginia_official`, `--collection <source-collection
 
 ## National corpus foundation
 
-The proposed normalized corpus foundation stores bounded OLRC U.S. Code, GovInfo
-annual CFR, CourtListener opinion and Virginia Code snapshots with exact source
-provenance in local SQLite. See the [corpus architecture and operator commands](docs/national-corpus.md)
-for measured coverage, retrieval constraints and outstanding acceptance.
+The proposed normalized corpus stores exact source artifacts in local SQLite.
+The bounded sample covers federal statutes, annual CFR, Federal Register
+preambles, federal opinions, statutes from five states, three state
+constitutional collections and California court rules. Development research
+can replay and cite eligible corpus text through the existing Research Core.
+See the [corpus architecture and operator commands](docs/national-corpus.md)
+for the tested editions, source limitations and outstanding acceptance.
 
 ## Validation
 

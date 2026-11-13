@@ -16,7 +16,7 @@ AuthorityType = Literal[
     "administrative_decision", "attorney_general_opinion", "agency_guidance",
     "executive_material", "session_law", "recap_filing", "register_document",
 ]
-Currentness = Literal["unresolved", "historical", "repealed", "superseded"]
+Currentness = Literal["unresolved", "current", "historical", "repealed", "superseded", "proposed"]
 OpinionRole = Literal[
     "lead", "majority", "unanimous", "plurality", "concurrence", "concurrence_in_part", "dissent",
     "mixed", "addendum", "remittitur", "rehearing", "on_the_merits", "motion", "trial_document", "unknown",
@@ -62,9 +62,12 @@ class AuthorityVersion(BaseModel):
     amended_on: date | None = None
     repealed_on: date | None = None
     currentness: Currentness = "unresolved"
+    current_as_of: date | None = None
+    currentness_basis: str | None = None
     opinion_role: OpinionRole | None = None
     precedential_status: str | None = None
     procedural_posture: str | None = None
+    document_kind: Literal["proposed_rule", "final_rule", "notice", "other"] | None = None
     limitations: tuple[str, ...] = ()
     review_state: Literal["proposed"] = "proposed"
 
@@ -78,6 +81,18 @@ class AuthorityVersion(BaseModel):
             raise ValueError("invalid_effective_period")
         if self.repealed_on and self.currentness != "repealed":
             raise ValueError("repeal_requires_repealed_status")
+        if self.document_kind is not None and self.authority_type != "register_document":
+            raise ValueError("register_kind_requires_register_document")
+        if self.document_kind == "proposed_rule" and self.currentness != "proposed":
+            raise ValueError("proposed_rule_requires_proposed_status")
+        if self.currentness == "current":
+            if not self.current_as_of or not self.currentness_basis or self.authority_type not in {"statute", "regulation"}:
+                raise ValueError("current_status_requires_as_of_evidence")
+            if ((self.effective_from and self.effective_from > self.current_as_of)
+                    or (self.effective_until and self.effective_until <= self.current_as_of)):
+                raise ValueError("current_status_outside_effective_period")
+        elif self.current_as_of is not None or self.currentness_basis is not None:
+            raise ValueError("current_evidence_requires_current_status")
         return self
 
     @property
@@ -90,12 +105,16 @@ class AuthorityVersion(BaseModel):
 
     @property
     def version_id(self) -> str:
-        return identity(self.authority_id, encode(self.model_dump(mode="json")))
+        payload = self.model_dump(mode="json")
+        for field in ("document_kind", "current_as_of", "currentness_basis"):
+            if payload[field] is None:
+                del payload[field]
+        return identity(self.authority_id, encode(payload))
 
 
 @dataclass(frozen=True)
 class SourceRelationship:
-    kind: Literal["cites", "opinion_of", "docket_of"]
+    kind: Literal["cites", "opinion_of", "docket_of", "part_of", "references_cfr", "part_authority_citation"]
     target_native_id: str
 
 
@@ -152,7 +171,8 @@ class CorpusQuery:
     text: str = ""
     edition: str = ""
     provider: str = ""
-    currentness: Currentness | Literal["current"] = "unresolved"
+    currentness: Currentness = "unresolved"
+    as_of: date | None = None
     opinion_roles: tuple[str, ...] = ()
     court: str = ""
     agency: str = ""

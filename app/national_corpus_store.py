@@ -2,6 +2,7 @@
 
 from dataclasses import asdict
 import json
+from pathlib import Path
 import re
 import sqlite3
 
@@ -43,6 +44,14 @@ CREATE TABLE IF NOT EXISTS corpus_citations(
     citation TEXT NOT NULL, version_id TEXT NOT NULL REFERENCES corpus_versions(version_id),
     PRIMARY KEY(citation, version_id)
 );
+CREATE TABLE IF NOT EXISTS corpus_identity_checks(
+    left_snapshot TEXT NOT NULL, left_native TEXT NOT NULL,
+    right_snapshot TEXT NOT NULL, right_native TEXT NOT NULL,
+    classification TEXT NOT NULL, basis TEXT NOT NULL, checked_at TEXT NOT NULL,
+    PRIMARY KEY(left_snapshot,left_native,right_snapshot,right_native),
+    FOREIGN KEY(left_snapshot,left_native) REFERENCES corpus_observations(snapshot_id,native_id),
+    FOREIGN KEY(right_snapshot,right_native) REFERENCES corpus_observations(snapshot_id,native_id)
+);
 CREATE VIRTUAL TABLE IF NOT EXISTS corpus_fts USING fts5(title, body);
 """
 
@@ -52,11 +61,15 @@ def citation_key(citation):
 
 
 class SQLiteNormalizedCorpus:
-    def __init__(self, path, *, storage_limit=1024 * 1024 * 1024):
-        self.connection = sqlite3.connect(path, timeout=5)
+    def __init__(self, path, *, storage_limit=1024 * 1024 * 1024, read_only=False):
+        address = Path(path).resolve().as_uri() + "?mode=ro" if read_only else path
+        self.connection = sqlite3.connect(address, timeout=5, uri=read_only)
         try:
             self.connection.row_factory = sqlite3.Row
             self.connection.execute("PRAGMA foreign_keys=ON")
+            if read_only:
+                self.connection.execute("PRAGMA query_only=ON")
+                return
             page_size = self.connection.execute("PRAGMA page_size").fetchone()[0]
             if storage_limit < page_size or storage_limit % page_size:
                 raise ValueError("invalid_corpus_storage_limit")
@@ -161,6 +174,11 @@ class SQLiteNormalizedCorpus:
         joins = []
         filters = ["v.jurisdiction=?", "v.authority_type=?", "v.currentness=?"]
         params = [query.jurisdiction, query.authority_type, query.currentness]
+        if query.currentness == "current":
+            if not query.as_of:
+                return []
+            filters.append("json_extract(v.payload, '$.current_as_of')=?")
+            params.append(query.as_of.isoformat())
         rank = "v.version_id"
         if query.citation:
             joins.append("JOIN corpus_citations c ON c.version_id=v.version_id")
@@ -199,7 +217,7 @@ class SQLiteNormalizedCorpus:
         rows = self.connection.execute(
             f"""SELECT v.*, EXISTS (
                     SELECT 1 FROM corpus_versions other WHERE other.authority_id=v.authority_id
-                    AND other.edition=v.edition AND other.version_id!=v.version_id
+                    AND other.edition=v.edition AND other.normalized_hash!=v.normalized_hash
                 ) AS edition_conflict
                 FROM corpus_versions v {' '.join(joins)} WHERE {' AND '.join(filters)} ORDER BY {rank} LIMIT ?""",
             (*params, query.limit),
@@ -234,6 +252,28 @@ class SQLiteNormalizedCorpus:
             WHERE o.version_id=? ORDER BY s.id, r.kind, r.target_native_id LIMIT ?
             """, (version_id, limit))
         return [dict(row) for row in rows]
+
+    def check_identity(self, left_version, right_version):
+        from app.national_corpus_identity import compare_identity
+
+        pairs = []
+        for version_id in (left_version, right_version):
+            row = self.connection.execute("SELECT * FROM corpus_versions WHERE version_id=?", (version_id,)).fetchone()
+            sources = self.provenance(version_id)
+            if not row or len(sources) != 1:
+                raise CorpusError("identity_check_requires_one_observation_per_version")
+            pairs.append((json.loads(row["payload"]) | {"authority_id": row["authority_id"],
+                          "normalized_hash": row["normalized_hash"]}, sources[0]))
+        (left, left_source), (right, right_source) = sorted(pairs, key=lambda pair: (pair[1]["id"], pair[1]["native_id"]))
+        if (left_source["id"], left_source["native_id"]) == (right_source["id"], right_source["native_id"]):
+            raise CorpusError("identity_check_requires_distinct_observations")
+        classification, basis = compare_identity(left, right, left_source, right_source)
+        values = (left_source["id"], left_source["native_id"], right_source["id"], right_source["native_id"])
+        with self.connection:
+            self.connection.execute("INSERT OR REPLACE INTO corpus_identity_checks VALUES(?,?,?,?,?,?,?)",
+                                    (*values, classification, basis, utcnow()))
+        return {"classification": classification, "basis": basis, "left_snapshot": values[0], "left_native": values[1],
+                "right_snapshot": values[2], "right_native": values[3]}
 
     def stats(self):
         return dict(self.connection.execute("""

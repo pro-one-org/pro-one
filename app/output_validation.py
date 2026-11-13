@@ -149,6 +149,12 @@ class OutputValidationService:
                         role = (citation.get("case_metadata") or {}).get("opinion_role")
                         if passage and passage["id"] in supports and role and role not in {"lead", "majority", "unanimous"}:
                             fail("non_majority_support", index)
+                        corpus = citation.get("corpus_provenance", {})
+                        if (passage and passage["id"] in supports and corpus
+                                and (corpus.get("document_kind") or corpus.get("currentness") in {
+                                    "historical", "proposed", "repealed", "superseded",
+                                })):
+                            fail("ineligible_corpus_claim_support", index)
                     if (not citation or citation["passage_id"] not in supported or not passage
                             or citation["source_id"] != passage["source_id"]
                             or citation["source_id"] not in claim["source_ids"]

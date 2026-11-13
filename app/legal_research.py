@@ -52,6 +52,10 @@ class GeneralLegalResearchService:
         self.repository, self.settings, self.generation = repository, settings, generation
         self.providers = providers if providers is not None else configured_authority_providers(
             repository, getattr(settings, "authority_network", ""), getattr(settings, "corpus_path", ""))
+        if (providers is None and getattr(settings, "mode", None) == "development"
+                and getattr(settings, "normalized_corpus_path", "")):
+            from app.national_corpus_research import NormalizedAuthorityProvider
+            self.providers.append(NormalizedAuthorityProvider(settings.normalized_corpus_path))
 
     def close(self):
         for provider in self.providers:
@@ -62,12 +66,17 @@ class GeneralLegalResearchService:
         resolution = CapabilityResolutionService(self.repository).resolve(matter)
         if resolution["missing_context"]:
             return {"status": "missing_context", "resolution": resolution, "package": None}
-        if matter.sovereign != "state":
+        corpus_enabled = any(provider.name == "normalized_corpus" for provider in self.providers)
+        if matter.sovereign != "state" and not (corpus_enabled and matter.sovereign == "federal" and matter.state is None):
             return {"status": "unsupported", "resolution": resolution, "package": None}
+        requested_types = set()
+        if matter.authority_types:
+            from app.national_corpus_research import SOURCE_TYPES
+            requested_types = {SOURCE_TYPES[kind] for kind in matter.authority_types}
         if selected_capability_id is not None and not any(c["capability_id"] == selected_capability_id for c in resolution["exact"]):
             return {"status": "capability_not_relevant", "resolution": resolution, "package": None}
         capability = None
-        if resolution["exact"] and not force_general:
+        if resolution["exact"] and not force_general and not matter.authority_types and matter.authority_status == "unresolved":
             candidates = [c["capability_id"] for c in resolution["exact"]]
             if selected_capability_id is not None and selected_capability_id not in candidates:
                 return {"status": "capability_not_relevant", "resolution": resolution, "package": None}
@@ -87,6 +96,10 @@ class GeneralLegalResearchService:
         query = matter.model_copy(update={"goal": "", "user_posture": None, "document_type": None})
         fetch_gap = "An authority provider was unavailable or returned changed evidence; research may be incomplete."
         for provider in self.providers[:4]:
+            if matter.authority_status != "unresolved" and provider.name != "normalized_corpus":
+                continue
+            if matter.sovereign == "federal" and provider.name not in {"normalized_corpus", "courtlistener", "courtlistener_corpus"}:
+                continue
             if capability and provider.name not in {"courtlistener", "courtlistener_corpus", "virginia_official"}:
                 continue
             try:
@@ -101,6 +114,10 @@ class GeneralLegalResearchService:
                     document = provider.fetch(sid)
                 except AuthorityUnavailable:
                     gaps.append(fetch_gap)
+                    continue
+                if requested_types and document.source["source_type"] not in requested_types:
+                    continue
+                if document.source["source_type"] == "other" and not document.source.get("corpus_provenance", {}).get("document_kind"):
                     continue
                 self.repository.validate_record("sources", document.source)
                 candidate_passages = document.passages[:12]
@@ -174,6 +191,9 @@ class GeneralLegalResearchService:
                               "passage_currentness": passage["verification"], "limitations": limits})
             citations[-1]["external_identifiers"] = deepcopy(source.get("external_identifiers"))
             citations[-1]["case_metadata"] = deepcopy(source.get("case_metadata"))
+            if source.get("corpus_provenance"):
+                citations[-1]["corpus_provenance"] = deepcopy(source["corpus_provenance"])
+                citations[-1]["source_currentness"]["status"] = source["corpus_provenance"]["currentness"]
         limitations = sorted({CURRENTNESS_LIMIT, FACT_LIMIT, *gaps, *conflicts, *(v for c in claims for v in c["limitations"])})
         package = {"workflow_id": None, "evidence_mode": mode, "capability_id": capability["id"] if capability else None,
                    "development_package": {"available": True, "package_integrity": True},

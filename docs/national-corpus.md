@@ -24,126 +24,122 @@ Source adapters own document selectors, URL construction, identity validation
 and extraction. The source registry is code-owned. The corpus keeps original
 publisher artifacts outside the curated graph.
 
-## Source coverage
+## Implemented source coverage
 
-| Registry source | Normalized unit | Edition check | Currentness |
-| --- | --- | --- | --- |
-| `olrc` | U.S. Code section with title and available chapter hierarchy | USLM title number, title identifier and embedded public-law release point | Unresolved |
-| `govinfo_cfr` | CFR section with title and part hierarchy | Annual volume title and embedded revision year | Historical |
-| `courtlistener` | Federal opinion with separate role and provider citation edges | v4 citation lookup agrees with the hydrated case identity and requested court | Unresolved |
-| `virginia_code` | Virginia Code section with title and chapter hierarchy | Official section heading agrees with the requested citation | Unresolved |
+| Publisher | Authority and bounded live sample | Update and provenance |
+| --- | --- | --- |
+| OLRC | 426 federal statutory records across Titles 1 and 44, including 38 repeal markers | Explicit USLM release. Title, chapter, release point, section identifiers and original ZIP. |
+| GovInfo annual CFR | 250 historical sections from 2023 Title 1, Volume 1 | Annual volume. Embedded revision year, part hierarchy, XML and part authority citations. |
+| GovInfo Federal Register | 112 preambles from January 30, 2026. Nine proposed rules, three recognized final rules, 96 notices and four other items. | Explicit issue date and document number. Full issue retained, with 14 explicit CFR part references. |
+| CourtListener | One Supreme Court combined opinion and 21 source relationships | Citation lookup plus case hydration. Exact public JSON responses retained in a replay envelope. Derivative provenance. |
+| U.S. Reports via GovInfo | One official Supreme Court reporter granule | Pinned PDF, reporter citation and case date. The granule combines judicial and editorial material. |
+| Virginia General Assembly | Two statutory sections | Section HTML and title/chapter scope. |
+| Maryland General Assembly | Three Real Property sections and two Declaration of Rights articles | Scoped HTML and January rendition selector. Publisher does not expose a reliable edition year in the sampled body. |
+| Florida Legislature | Three Chapter 83 sections and 28 Article I constitutional sections | Online Sunshine markup, statutory edition heading and constitutional section anchors. |
+| New York State Senate | Two Real Property sections and one constitutional section | Public HTML and embedded revision date. Some CLI fetches returned 403. Two exact public captures were independently fetched and parsed locally. |
+| California Legislative Counsel | Two Civil Code sections | Three bounded ranges from the reviewed PUBINFO archive. Archive ETag, exact compressed members, CRCs, SHA-256 and operative text identifiers. |
+| Judicial Branch of California | Two Title 8 court rules | Rule and edition headings, operative paragraphs and explicit rule-history date where recognized. |
 
-The official-publisher flag describes who supplied the artifact. The
-GovInfo XML is a rendition of the annual edition. Text is extracted from
-supported section elements. The exact snapshot retains editorial material,
-source credits, reserved sections and unsupported structures for audit.
-Effective periods and independent currentness verification remain pending.
-If the requested catalog year conflicts with the embedded date, ingestion
-rejects the volume. The real GovInfo 2024 Title 1 Volume 1 XML returned
-embedded revision year 2023 during acceptance.
+No external publisher fetch runs in CI. Exact artifacts, manifests and SQLite files are ignored. The official-publisher flag describes the source channel. Both Brown records remain separately queryable. The pinned official granule and CourtListener opinion were linked as a derivative representation based on court, date, reporter citation, native IDs and pinned source evidence. Their text representations differ. Unchecked matches remain probable, conflicting or unresolved.
 
-CourtListener is a derivative opinion source. Its adapter uses the Research
-Core client and scope checks, stores exact public response bytes in a replay
-envelope, and retains provider-scoped opinion IDs, roles, citations and
-relationships. The envelope carries response bodies and resource paths.
-It excludes request credentials. Reported citation lookup establishes
-provider identity. Independent official-text comparison and later treatment
-remain unresolved. The accepted Brown opinion was supplied as combined text.
+The California statute adapter uses the active-code flag and the pinned archive publication date of November 9, 2026. Currentness queries require the exact supported as-of date. Civil Code § 1941.1 includes an explicit January 1, 2026 effective date. OLRC repeal markers are stored separately from operative text. Federal Register classifications come from the issue's publication section and explicit action wording. A final-rule date is retained only when its wording is unambiguous. The underlying CFR effect of proposed, corrected or delayed material remains unresolved.
 
-Virginia's adapter reads the official section page and extracts the scoped
-statutory body. The exact HTML retains editorial history. Pages containing
-multiple bodies, including the sampled § 55.1-1244, require an edition-aware
-parser before ingestion.
-
-Attribute U.S. Code material to the Office of the Law Revision Counsel and
-CFR material to the Government Publishing Office and Office of the Federal
-Register. The import targets federal statutory and regulatory text. Retained
-publisher files may contain seals, images and other ancillary material.
-Redistribution review of those materials is pending.
-
-- [OLRC release-point archive](https://uscode.house.gov/download/releasepoints/us/pl/119/88/usc-rp@119-88.htm)
-- [GovInfo CFR coverage and revision cycle](https://www.govinfo.gov/help/cfr)
-- [GovInfo CFR bulk data and XML resources](https://www.govinfo.gov/bulkdata/CFR)
+- [OLRC release archive](https://uscode.house.gov/download/releasepoints/us/pl/119/88/usc-rp@119-88.htm)
+- [GovInfo CFR coverage](https://www.govinfo.gov/help/cfr)
+- [Federal Register XML resources](https://www.govinfo.gov/bulkdata/xml/FR/resources)
+- [United States Reports granule](https://www.govinfo.gov/app/details/USREPORTS-347/USREPORTS-347-483/context)
 - [CourtListener v4 API usage](https://wiki.free.law/c/courtlistener/help/api/rest/v4/api-usage)
-- [Virginia Code and publisher coverage notes](https://law.lis.virginia.gov/vacode/)
+- [California PUBINFO format and code table evidence](https://github.com/cagov/caldata-legislation-tracker/blob/main/docs/ca-leginfo-bulk-download.md)
+- [California legislative data downloads](https://downloads.leginfo.legislature.ca.gov/)
+- [California official legislative information and reuse notice](https://www.leginfo.ca.gov/)
+- [California court rules](https://courts.ca.gov/cms/rules/index/eight)
 
 ## Operations
 
-Run from the repository root in the development Python environment.
+Run in the development Python environment. CourtListener uses the existing server-side token.
 
 ```powershell
 python -B scripts/national_corpus.py sources
-python -B scripts/national_corpus.py ingest olrc 119-88/1
+python -B scripts/national_corpus.py ingest olrc 119-88/44
 python -B scripts/national_corpus.py ingest govinfo_cfr 2023/1/1
+python -B scripts/national_corpus.py ingest govinfo_register 2026-01-30
 python -B scripts/national_corpus.py ingest courtlistener "scotus/347 U.S. 483"
+python -B scripts/national_corpus.py ingest us_reports 347-483
 python -B scripts/national_corpus.py ingest virginia_code 55.1/12/55.1-1220
-python -B scripts/national_corpus.py ingest virginia_code 1/2/1-200
+python -B scripts/national_corpus.py ingest maryland_code grp/8-211
+python -B scripts/national_corpus.py ingest maryland_constitution c0/24
+python -B scripts/national_corpus.py ingest florida_code 83.51
+python -B scripts/national_corpus.py ingest florida_constitution article-I
+python -B scripts/national_corpus.py ingest new_york_code RPP/226-B
+python -B scripts/national_corpus.py ingest new_york_constitution CNS/A1S6
+python -B scripts/national_corpus.py ingest california_code 2025/civil-habitability
+python -B scripts/national_corpus.py ingest california_court_rules 8.1115
 python -B scripts/national_corpus.py stats
-python -B scripts/national_corpus.py search US statute --citation "1 USC 1"
-python -B scripts/national_corpus.py search US regulation --citation "1 CFR 1.1" --currentness historical
+python -B scripts/national_corpus.py search US-CA statute --currentness current --as-of 2026-11-09
+python -B scripts/national_corpus.py search US opinion --citation "347 U.S. 483"
+python -B scripts/national_corpus.py identity LEFT_VERSION RIGHT_VERSION
 python -B scripts/evaluate_national_corpus.py
 python -B scripts/benchmark_national_corpus.py --scale 10000
+python -B scripts/benchmark_mixed_corpus.py
+python -B scripts/accept_national_research.py --courtlistener .local/courtlistener-acceptance-nov12.sqlite3
 ```
 
-Public publisher imports make one HTTPS request per build. The CourtListener
-import uses the server-side `COURTLISTENER_API_TOKEN` and budgets at most
-12 requests, eight opinions and 5.5 MB of response bytes. All adapters refuse
-redirects. The maximum artifact size is 8 MiB, with a 1 MiB limit for Virginia
-pages. The single decompressed OLRC XML member has an 8 MiB limit.
-Operators can repeat a failed request after the source becomes available.
-SQLite commits a whole snapshot or rolls it back. A committed snapshot is
-the restart boundary. A refresh of matching bytes and parser revision
-updates the last retrieval timestamp. A changed representation keeps its
-prior observation. Different representations under one edition are flagged
-for review. There is no automatic edition or version promotion.
+The live evaluation also uses OLRC Title 1, Virginia § 1-200, the bounded
+New York § 235-b capture and the source editions in the table. The mixed
+benchmark requires the six ingested authority families. Local output is
+stored under `.local/national-corpus/`. The importer validates a bounded
+artifact and commits it atomically. A repeat with identical bytes and parser
+revision updates retrieval metadata. A corrected rendition remains traceable
+to its earlier version. Currentness and opinion role are deterministic filters.
 
-The SQLite database and JSON build manifests live in `.local/national-corpus/`.
-Each manifest identifies the build, provider, selector, parser revision,
-source hash and counts for committed records and new versions. Query output
-includes snapshot and source-native locators. Preserve the database when
-reproducibility requires the original artifact bytes.
+Development mode enables corpus evidence when
+`PRO_ONE_NORMALIZED_CORPUS_PATH` names the existing local database. The
+bridge opens it read-only, enforces the planned matter scope, verifies the
+raw artifact hash, reruns the matching registered parser and checks the
+version and source-native locator before generating exact excerpts. Corpus
+opinions remain searchable for review. Research evidence for case law uses
+the existing CourtListener role and citation controls. Register material
+is retained as publication context and is ineligible as operative law
+in semantic synthesis. The existing proposal, independent verifier and
+deterministic response validation remain in the response path.
 
-Search requires a jurisdiction and an authority family. It applies edition,
-currentness, provider, citation and opinion-role predicates before ranking.
-Text search uses SQLite FTS5 and deterministic tie-breaking. The current-law
-filter returns zero results until an evidence-backed currentness mechanism
-exists.
+## Verified increment
 
-## Verified foundation results
+The working corpus has 835 authority identities, 837 versions, 26
+snapshots, 1,126 observations, 982 source relationship rows and one
+cross-provider identity check. California's two earlier observations
+and their current-as-of versions coexist. The counts include preserved
+parser-revision observations for OLRC Title 1 and GovInfo CFR.
 
-| Measure | Observed result |
-| --- | --- |
-| OLRC Title 1, release 119-88 | 39 authorities and versions |
-| GovInfo CFR 2023 Title 1, Volume 1 | 250 authorities and versions |
-| CourtListener, `347 U.S. 483` | 1 combined opinion, 21 source relationship edges, 5 requests |
-| Virginia Code, §§ 1-200 and 55.1-1220 | 2 authorities and versions, 2 requests |
-| Live corpus total | 292 authorities, 292 versions, 5 snapshots, 292 observations |
-| Federal publisher refresh | 2 requests and zero new versions |
-| Live database size | 3,268,608 bytes |
-| Labeled live retrieval | 5 targets at rank one and zero results on 7 negatives |
-| Offline synthetic benchmark | 10,000 regulations, 101 correct rank-one hits and zero results on 3 scope negatives |
-| Local benchmark measurement | 1.738 seconds to ingest and index, 0.808 ms p95 positive query latency, 22,953,984-byte database |
-| Model/API usage for the synthetic benchmark | Zero requests, calls, tokens and estimated model cost |
+The labeled retrieval sample spans all six jurisdictions. All 17 targets
+ranked first, with precision at 1 of 1.00 and precision at 3 of 0.33
+under a one-target-per-query label. All 13 negative controls returned
+zero rows.
+The 30,000-record benchmark replicates real normalized shapes across six
+families. It processed 30,000 edges in 26.53 seconds including indexing,
+with 1,131 records per second, 0.782 ms p95 retrieval latency, 100.23 ms
+total for unchanged refresh and a 221,163,520-byte database. Python
+allocations peaked at 916,625 traced bytes. That measurement excludes
+SQLite native allocations and OS cache.
 
-The synthetic benchmark uses generated section identities and short, unique
-text anchors. It measures this parsing and retrieval path with labeled
-positives and scope negatives. It provides no estimate of nationwide recall.
-Fixture tests cover raw-byte provenance, changed text, competing same-edition
-versions, cross-source observations, citation and jurisdiction isolation,
-historical exclusion, opinion roles, relationship provenance, rollback and
-malformed inputs. CourtListener could not resolve either sampled reporter
-citation for Loper Bright during live acceptance. The operator received an
-explicit error and the database retained its prior state.
+Five state-scoped packages rendered through the offline Research Core,
+including a Virginia statute plus CourtListener case and the bounded
+California as-of request. Separate federal statute and historical
+regulation evidence checks passed. A live Sol Virginia mixed-source run
+answered with verified synthesis after four calls, including independent
+semantic verification. Reported usage was 18,249 input and 2,023 output
+tokens. All responses remained development-only.
 
 ## Outstanding Corpus v1 acceptance
 
-Coverage is bounded to one U.S. Code title release, one annual CFR volume,
-one federal case and two Virginia statutes. Federal Register, official federal
-judiciary sources, additional representative states, a verified Research Core
-bridge, legal relationship and currentness evidence, live cross-provider
-identity checks, broader source rights review and a labeled mixed-source
-research evaluation remain pending. The benchmark covers the corpus path.
-Mixed-source research and live model costs remain unmeasured.
+Federal mixed-source model scenarios, an independently scoped comparison
+answer, expanded amendment and supersession relationships, and broader
+operative currentness remain open. The eCFR title API exposed publisher
+coverage metadata, but the matching point-in-time XML returned HTTP 406
+for the attempted title, part and section routes. No eCFR currentness was
+asserted. The Federal Register adapter indexes preambles and preserves
+full issue bytes, and the opinion bridge still uses the existing validated
+case provider. The bounded sample provides no nationwide recall estimate.
 
 ### State source investigation
 

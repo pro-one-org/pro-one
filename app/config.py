@@ -29,6 +29,7 @@ class Settings:
     corpus_path: str = ""
     conversation_signing_key: bytes | None = field(default=None, repr=False)
     openai_extraction_model: str = ""
+    normalized_corpus_path: str = ""
 
     @property
     def courtlistener_enabled(self):
@@ -51,7 +52,8 @@ class Settings:
             raise RuntimeError("Invalid PRO_ONE_CONVERSATION_SIGNING_KEY; expected 64 hexadecimal characters.")
         return cls(mode, provider, model, os.environ.get("PRO_ONE_OPENAI_MODEL", ""), os.environ.get("PRO_ONE_ANTHROPIC_MODEL", ""), authority,
                    os.environ.get("PRO_ONE_CORPUS_PATH", ""), bytes.fromhex(state_key) if state_key else None,
-                   os.environ.get("PRO_ONE_OPENAI_EXTRACTION_MODEL", ""))
+                   os.environ.get("PRO_ONE_OPENAI_EXTRACTION_MODEL", ""),
+                   os.environ.get("PRO_ONE_NORMALIZED_CORPUS_PATH", ""))
 
     def registry(self, environment=None) -> ProviderRegistry:
         env = os.environ if environment is None else environment

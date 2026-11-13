@@ -2,6 +2,7 @@
 
 import argparse
 from dataclasses import asdict
+from datetime import date
 import json
 from pathlib import Path
 import sqlite3
@@ -57,6 +58,9 @@ def main():
     commands = parser.add_subparsers(dest="command", required=True)
     commands.add_parser("sources")
     commands.add_parser("stats")
+    compare = commands.add_parser("identity")
+    compare.add_argument("left_version")
+    compare.add_argument("right_version")
     ingest = commands.add_parser("ingest")
     ingest.add_argument("provider", choices=PROVIDERS)
     ingest.add_argument("selector")
@@ -68,8 +72,9 @@ def main():
     search.add_argument("--edition", default="")
     search.add_argument("--provider", choices=PROVIDERS, default="")
     search.add_argument("--opinion-role", action="append", choices=get_args(OpinionRole), default=[])
-    search.add_argument("--currentness", choices=("unresolved", "current", "historical", "repealed", "superseded"),
+    search.add_argument("--currentness", choices=("unresolved", "current", "historical", "repealed", "superseded", "proposed"),
                         default="unresolved")
+    search.add_argument("--as-of", type=date.fromisoformat)
     search.add_argument("--limit", type=int, default=12)
     args = parser.parse_args()
     if args.command == "sources":
@@ -85,10 +90,12 @@ def main():
             return int(report["status"] != "committed")
         if args.command == "stats":
             print(json.dumps(store.stats(), indent=2))
+        elif args.command == "identity":
+            print(json.dumps(store.check_identity(args.left_version, args.right_version), indent=2))
         else:
             query = CorpusQuery(args.jurisdiction, args.authority_type, citation=args.citation, text=args.text,
                                 edition=args.edition, provider=args.provider, currentness=args.currentness,
-                                opinion_roles=tuple(args.opinion_role), limit=args.limit)
+                                as_of=args.as_of, opinion_roles=tuple(args.opinion_role), limit=args.limit)
             matches = store.search(query)
             for match in matches:
                 match["provenance"] = store.provenance(match["version_id"])

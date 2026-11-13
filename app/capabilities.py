@@ -5,6 +5,7 @@ action, jurisdiction over a party, or a favorable outcome.
 """
 
 from copy import deepcopy
+from typing import Literal
 from pydantic import BaseModel, ConfigDict, Field
 
 
@@ -20,6 +21,11 @@ class ResearchMatter(BaseModel):
     court: str | None = Field(default=None, max_length=120)
     agency: str | None = Field(default=None, max_length=120)
     goal: str = Field(default="", max_length=2000)
+    authority_types: list[Literal["statute", "regulation", "opinion", "constitution", "court_rule", "register_document"]] = Field(
+        default_factory=list, max_length=6,
+    )
+    authority_status: Literal["unresolved", "historical", "current", "proposed"] = "unresolved"
+    authority_as_of: str | None = Field(default=None, pattern=r"^\d{4}-\d{2}-\d{2}$")
 
 
 REFERENCE_DOMAINS = {
@@ -77,7 +83,8 @@ class CapabilityResolutionService:
         self.repository = repository
 
     def resolve(self, matter: ResearchMatter):
-        missing = [k for k in ("country", "state", "legal_area", "topics") if not getattr(matter, k)]
+        required = ("country", "legal_area", "topics") if matter.sovereign == "federal" else ("country", "state", "legal_area", "topics")
+        missing = [k for k in required if not getattr(matter, k)]
         exact, related = [], []
         for capability in self.repository.records["legal_capabilities"].values():
             if capability["status"] in {"rejected", "deprecated"} or capability["review"]["status"] in {"rejected", "deprecated"}:

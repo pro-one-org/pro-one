@@ -35,7 +35,7 @@ class CandidateClaim(StrictSynthesis):
 
 class ClaimJurisdiction(StrictSynthesis):
     country: Literal["US"]
-    state: str
+    state: str | None
 
 
 class SynthesisProposal(StrictSynthesis):
@@ -178,6 +178,8 @@ class ResearchSynthesisService:
                 if external and external.get("citation_status") not in {"verified", "fixture_verified"}:
                     invalid = True
                 if source["source_type"] not in {"court_opinion", "statute", "regulation", "court_rule", "constitution", "official_self_help", "agency_guidance"}:
+                    invalid = True
+                if source.get("corpus_provenance", {}).get("currentness") in {"historical", "proposed", "superseded", "repealed"}:
                     invalid = True
                 entry[{"supports": "support_cases", "qualifies": "qualifying_cases", "conflicts": "conflicting_cases"}[link.relationship]].append(source["id"])
                 entry["evidence_bindings"].append({"passage": passage["id"], "source": source["id"],

@@ -29,6 +29,13 @@ RESEARCH_TOPICS = {
     "landlord_tenant": {
         "landlord_repairs": ("landlord tenant negligent repair mold",),
     },
+    "administrative_law": {
+        "federal_register": ("federal register", "office of the federal register"),
+        "port_of_entry": ("port of entry", "gordie howe international bridge"),
+    },
+    "constitutional_law": {
+        "equal_protection": ("equal protection",),
+    },
 }
 
 
@@ -55,12 +62,12 @@ class ResearchPlan:
 
 
 class LegalResearchPlanner:
-    def plan(self, matter, suggestions=()):
+    def plan(self, matter, suggestions=(), *, require_courts=True):
         if matter.country != "US" or not matter.legal_area:
             raise ValueError("research_jurisdiction_required")
         courts = tuple(cid for cid, (state, sovereign, _) in COURT_POLICY.items()
                        if sovereign == matter.sovereign and state == matter.state)
-        if not courts:
+        if not courts and require_courts:
             raise ValueError("research_courts_unconfigured")
         topic_terms = RESEARCH_TOPICS.get(matter.legal_area, {})
         issues = tuple(t for t in matter.topics if t in topic_terms)

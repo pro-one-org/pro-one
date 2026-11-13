@@ -25,6 +25,23 @@
     "citation"
   ],
   "properties": {
+    "corpus_provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider", "native_identifier", "snapshot_key", "version_key", "artifact_hash", "locator", "currentness", "document_kind"],
+      "properties": {
+        "provider": {"type": "string", "minLength": 1},
+        "native_identifier": {"type": "string", "minLength": 1},
+        "snapshot_key": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "version_key": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "artifact_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "locator": {"type": "string", "minLength": 1},
+        "currentness": {"enum": ["unresolved", "current", "historical", "repealed", "superseded", "proposed"]},
+        "current_as_of": {"type": ["string", "null"], "format": "date"},
+        "currentness_basis": {"type": ["string", "null"]},
+        "document_kind": {"enum": [null, "proposed_rule", "final_rule", "notice", "other"]}
+      }
+    },
     "public_currentness": {
       "$ref": "common.schema.json#/$defs/publicCurrentness"
     },
