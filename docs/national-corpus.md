@@ -204,6 +204,40 @@ New York–Florida comparison. Deterministic guards reject operative-law
 assertions and preserve exact passages. The bounded sample provides no
 nationwide recall estimate.
 
+## Corpus v1 closeout audit
+
+Audited implementation `916bc777509caf06de998480a221394473719ad0` against
+the original milestone, based on Research Core
+`ec1be937c0b5e77f9f113bbc83c13b4cf748a3ae`. This closeout adds documentation
+only. [Implementation CI](https://github.com/pro-one-org/pro-one/actions/runs/43512971657)
+
+| Original acceptance criteria | Verified evidence and remaining gaps |
+| --- | --- |
+| 1–7, providers, federal/state coverage and provenance | Six jurisdictions, six authority families and 16 registered adapters represented in retained observations. Real OLRC, annual CFR, eCFR, Register, CourtListener, official U.S. Reports and five state statute samples passed. Official federal judiciary material is represented by U.S. Reports. The original federal court-rule source requirement remains open, and the labeled rule target is California. |
+| 8–10, version coexistence and refresh | Two OLRC releases coexist for 426 identities, and the same-identity CFR variants have distinct observations. Identical bytes are idempotent, changed records retain version history and offline replay retains the capture timestamp. New York uses the accepted retained-snapshot fallback. |
+| 11–16, deterministic filters, identity, roles and status | Jurisdiction and authority-type negatives returned zero hits. The Brown derivative pairing and CFR same-authority version pairing passed. The Merrill lead and dissent stayed separate. Dated California evidence, historical and superseded CFR, proposed Register material, OLRC repeal markers and unresolved eCFR were tested. |
+| 17–20, Research Core and regressions | 18 bounded scenarios passed. The proposal and verifier received status and refresh limits in the offline test, and the unsupported operative assertion was rejected with exact-evidence fallback. Existing invented citation, unsupported proposition and jurisdiction controls passed. Four prior authorized live Sol mixed-source cases passed independently. The full local suite passed 477 tests. |
+| 21–23, scale, retrieval and licensing | The 30,000-record benchmark passed. All 23 labeled targets ranked first, all 16 negative controls returned zero hits and both labeled identity controls matched. The source inventory records attribution, known terms and the evaluation boundary. Federal court-rule retrieval remains untested. |
+| 24, reproducibility and resumption | All artifact hashes and database constraints validated. Replaying the current parser reproduced native IDs, locators, original citations and versions for 30 snapshots. Six earlier parser revisions remain in the audit store. The CLI supports single-selector commits, re-runs and snapshot replay. A persisted checkpoint and a build-level manifest for resuming and verifying a multi-source build remain absent. |
+| 25–28, hygiene, CI, documentation and limitations | The branch history check found zero configured credential values or local corpus files. Implementation CI passed offline evaluations and benchmarks, JavaScript checks, production container build and smoke. Production research and comparison remain release-gated. Coverage and limitations are documented on this page. |
+
+### Remaining work
+
+- **A. Must fix before corpus merge.** Integrate and evaluate a bounded official
+  federal court-rule sample, or obtain an explicit v1 scope exception. The
+  federal judiciary publishes editioned PDF sources. Also demonstrate a
+  reproducible multi-source build with a build manifest and persisted
+  checkpoint, or obtain explicit acceptance of single-selector replay as the
+  v1 resumption boundary. [Federal judiciary rules](https://www.uscourts.gov/forms-rules/current-rules-practice-procedure)
+- **B. Future milestone.** Procedural Intelligence, additional nationwide
+  coverage, additional source families beyond the v1 boundary, and scaling
+  beyond the bounded local corpus.
+- **C. Private beta and release gates.** Independent legal review, broader
+  currentness and adversarial validation, deployment, privacy and abuse
+  controls, and explicit release approval.
+
+**NOT READY FOR MERGE**
+
 ### State source investigation
 
 These publisher entry points are candidates for additional state adapters.
