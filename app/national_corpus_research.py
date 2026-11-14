@@ -18,7 +18,7 @@ STATE_CODES = {"Virginia": "VA", "Maryland": "MD", "Florida": "FL", "New York": 
 SOURCE_TYPES = {"statute": "statute", "regulation": "regulation", "opinion": "court_opinion",
                 "court_rule": "court_rule", "constitution": "constitution", "register_document": "other"}
 FAMILY_PRIORITY = ("statute", "regulation", "opinion", "constitution", "court_rule", "register_document")
-CORPUS_ANCHORS = {"landlord_repairs": (
+CORPUS_ANCHORS = {"summary_judgment": ("summary judgment genuine dispute material fact",), "landlord_repairs": (
     "landlord repair", "warranty habitability", "dwelling untenantable", "fit habitable condition", "keep premises fit",
     "fit human habitation",
 )}

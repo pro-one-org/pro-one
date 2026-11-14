@@ -17,6 +17,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from app.corpus_store import utcnow
 from app.national_corpus import AuthorityType, CorpusError, CorpusQuery, OpinionRole
+from app.national_corpus_build import BuildSelector, CorpusBuilds
 from app.national_corpus_providers import PROVIDERS
 from app.national_corpus_store import SQLiteNormalizedCorpus
 from app.national_corpus_supersession import record_reviewed_supersession
@@ -60,6 +61,15 @@ def main():
     commands.add_parser("sources")
     commands.add_parser("stats")
     commands.add_parser("record-reviewed-supersession")
+    multi = commands.add_parser("build-start", help="Record an ordered multi-source plan in the local corpus")
+    multi.add_argument("--source", action="append", nargs=2, metavar=("PROVIDER", "SELECTOR"), default=[])
+    multi.add_argument("--retained", action="append", nargs=3, metavar=("PROVIDER", "SELECTOR", "SNAPSHOT"), default=[])
+    resume = commands.add_parser("build-resume")
+    resume.add_argument("build_id")
+    resume.add_argument("--max-steps", type=int, default=32)
+    manifest = commands.add_parser("build-manifest")
+    manifest.add_argument("build_id")
+    manifest.add_argument("--verify", action="store_true")
     replay = commands.add_parser("replay", help="Replay a stored source snapshot without network access")
     replay.add_argument("snapshot")
     compare = commands.add_parser("identity")
@@ -88,6 +98,16 @@ def main():
     directory = Path(__file__).resolve().parents[1] / ".local" / "national-corpus"
     directory.mkdir(parents=True, exist_ok=True)
     with SQLiteNormalizedCorpus(directory / "corpus.sqlite3") as store:
+        if args.command.startswith("build-"):
+            builds = CorpusBuilds(store)
+            if args.command == "build-start":
+                report = builds.start([BuildSelector(*entry) for entry in [*args.source, *args.retained]])
+            elif args.command == "build-resume":
+                report = builds.resume(args.build_id, max_steps=args.max_steps)
+            else:
+                report = builds.manifest(args.build_id, verify=args.verify)
+            print(json.dumps(report, indent=2))
+            return int(report["status"] == "failed")
         if args.command == "ingest":
             report = build(store, PROVIDERS[args.provider], args.selector, directory)
             print(json.dumps(report, indent=2))

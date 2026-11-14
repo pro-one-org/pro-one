@@ -120,7 +120,12 @@ class ResearchSynthesisService:
         sources = {s["id"]: s for s in package["grounding"]["sources"]}
         citations = {c["passage_id"]: c for c in package["response_plan"]["citations"]}
         jurisdiction = package["user_context"]["jurisdiction_scope"]
-        if len({p["source_id"] for p in passages.values()}) < 2:
+        selected_sources = {p["source_id"] for p in passages.values()}
+        federal_rule = any(
+            sources[sid]["source_type"] == "court_rule" and sources[sid].get("corpus_provenance")
+            and sources[sid]["jurisdiction"]["state"] is None for sid in selected_sources
+        )
+        if len(selected_sources) < 2 and not federal_rule:
             return package
         contrary = {p["id"] for p in passages.values() if p.get("conflicts")}
         evidence = [{"passage_id": p["id"], "text": p["text"], "locator": p["locator"],

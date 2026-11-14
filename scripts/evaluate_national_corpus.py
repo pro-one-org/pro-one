@@ -12,6 +12,7 @@ from app.national_corpus_store import SQLiteNormalizedCorpus
 
 
 POSITIVES = (
+    ("federal_court_rule", CorpusQuery("US", "court_rule", text="summary judgment material fact"), "Fed. R. Civ. P. 56"),
     ("olrc_title_one", CorpusQuery("US", "statute", citation="1 USC 1"), "1 U.S.C. § 1"),
     ("olrc_second_release", CorpusQuery("US", "statute", citation="1 USC 1", edition="PL 119-138"), "1 U.S.C. § 1"),
     ("historical_cfr", CorpusQuery("US", "regulation", citation="1 CFR 1.1", currentness="historical"), "1 CFR 1.1"),
@@ -41,6 +42,8 @@ POSITIVES = (
      "FR Doc. 2026-01844"),
 )
 NEGATIVES = (
+    ("federal_rule_wrong_family", CorpusQuery("US", "statute", citation="Fed. R. Civ. P. 56")),
+    ("federal_rule_wrong_jurisdiction", CorpusQuery("US-CA", "court_rule", citation="Fed. R. Civ. P. 56")),
     ("wrong_state", CorpusQuery("US-MD", "statute", citation="Va. Code § 55.1-1220")),
     ("federal_only", CorpusQuery("US", "statute", citation="Va. Code § 1-200")),
     ("wrong_type", CorpusQuery("US", "statute", citation="1 CFR 1.1", currentness="historical")),

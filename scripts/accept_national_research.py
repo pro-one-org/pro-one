@@ -12,7 +12,8 @@ from app.capabilities import ResearchComparison, ResearchMatter
 from app.config import Settings
 from app.generation import GenerationService
 from app.legal_research import GeneralLegalResearchService, compare_state_research
-from app.models.base import GenerationConfig
+from app.models.base import GenerationConfig, ModelResponse
+from app.models.testing import valid_draft
 from app.models.registry import ProviderRegistry
 from app.repository import RecordRepository
 from scripts.accept_research_model import ObservedProvider
@@ -85,6 +86,7 @@ def run(normalized, courtlistener, *, live=False, federal=False, federal_rules=F
         finally:
             service.close()
     if not live:
+        results.append(accept_federal_rule(repo, settings))
         comparison = ResearchComparison(matters=[matter for label, matter, _ in scenarios
                                                   if label in {"virginia_mixed", "florida_statute"}])
         answer = compare_state_research(comparison, repo, settings, GenerationService(registry), config)
@@ -126,6 +128,54 @@ def run(normalized, courtlistener, *, live=False, federal=False, federal_rules=F
                 service.close()
     return {"mode": "live" if live else "offline", "results": results, "calls": observer.calls,
             "passed": all(item["passed"] for item in results)}
+
+
+def accept_federal_rule(repo, settings):
+    calls = []
+
+    class RuleFixture:
+        def generate(self, request):
+            purpose = request.metadata.get("purpose", "render")
+            calls.append(purpose)
+            data = request.grounded_package
+            if purpose == "legal_query_proposal":
+                output = {"queries": ["summary judgment material fact dispute motion"]}
+            elif purpose == "claim_proposal":
+                [evidence] = data["evidence"]
+                assert evidence["source"]["source_type"] == "court_rule"
+                assert evidence["source"]["currentness"]["status"] == "unresolved"
+                assert "genuine dispute as to any material fact" in evidence["text"]
+                output = {"claims": [{
+                    "statement": "The rule requires no genuine dispute about a material fact and entitlement to judgment as a matter of law.",
+                    "issue": "summary_judgment", "jurisdiction": data["jurisdiction"],
+                    "support": [{"passage_id": evidence["passage_id"], "relationship": "supports"}],
+                }]}
+            elif purpose == "claim_verification":
+                [evidence] = data["cited_evidence"]
+                assert evidence["source"]["source_type"] == "court_rule"
+                assert evidence["source"]["currentness"]["status"] == "unresolved"
+                output = {"result": "entailed", "passage_ids": [evidence["passage_id"]],
+                          "missing_qualifications": [], "unsupported_fragments": []}
+            else:
+                output = valid_draft(request)
+            return ModelResponse(request.provider, request.model, True, output=output)
+
+    config = GenerationConfig(provider="fixture", model="federal-rule")
+    registry = ProviderRegistry()
+    registry.register(config.provider, RuleFixture(), {config.model})
+    service = GeneralLegalResearchService(repo, settings, GenerationService(registry))
+    try:
+        outcome = service.respond(ResearchMatter(country="US", sovereign="federal", legal_area="civil_procedure",
+                                  topics=["summary_judgment"], authority_types=["court_rule"]), config)
+    finally:
+        service.close()
+    response = outcome.get("response") or {}
+    ledger = outcome.get("synthesis", {}).get("ledger", [])
+    return {"label": "federal_rule_verified_synthesis", "status": outcome["status"], "model_stages": calls,
+            "passed": outcome["status"] == "answered" and response.get("publicly_approved") is False
+            and [stage for stage in calls if stage != "legal_query_proposal"] == ["claim_proposal", "claim_verification", "render"]
+            and any(row["verification_status"] == "independently_verified_development" for row in ledger)
+            and "uscourts.gov" in json.dumps(response) and "Fed. R. Civ. P. 56" in json.dumps(response)}
 
 
 if __name__ == "__main__":

@@ -165,6 +165,62 @@ class USReportsProvider(PublicProvider):
         yield Observation(version, "USREPORTS-347-483", "PDF pages 1–14", "347 U.S. 483 (1954)")
 
 
+class FederalCivilRulesProvider(PublicProvider):
+    source = Source(
+        name="federal_civil_rules", host="www.uscourts.gov", authority_type="court_rule", jurisdictions=("US",),
+        official_publisher=True, rendition="Judiciary-hosted Federal Rules of Civil Procedure committee print",
+        endpoint="/sites/default/files/document/federal-rules-of-civil-procedure.pdf", format="reviewed PDF edition",
+        update="review and pin a replacement edition", max_bytes=4 * 1024 * 1024,
+        rights="Federal court-rule text. Publisher compilation retained locally for audit.",
+        attribution="Administrative Office of the U.S. Courts and House Committee on the Judiciary",
+        currentness_method="Pinned December 1, 2025 edition. Subsequent rule and local-rule changes are unresolved.",
+        version_method="Cover edition and pinned PDF hash with printed rule and page locators.",
+        parser_revision="1", acceptance="bounded_official_sample",
+        refresh_mode="pinned_edition", refresh_limitation="Changed publisher bytes require a new edition review.",
+    )
+    raw_hash = "bd8705fc038d87e4fe222a7ea2e4324222c9430e2373fce56826bd2dfa2f8baf"
+
+    def source_url(self, selector):
+        if selector != "2025-12-01/56":
+            raise CorpusError("invalid_federal_civil_rule_selector")
+        return f"https://{self.source.host}{self.source.endpoint}"
+
+    def normalize(self, selector, raw):
+        self.source_url(selector)
+        if fingerprint(raw) != self.raw_hash:
+            raise CorpusError("federal_civil_rules_snapshot_unreviewed")
+        from pypdf import PdfReader
+
+        pages = PdfReader(BytesIO(raw)).pages
+        if (len(pages) != 142 or not normalized_source(pages[0].extract_text()).startswith(
+                "FEDERAL RULES OF CIVIL PROCEDURE DECEMBER 1, 2025")):
+            raise CorpusError("federal_civil_rules_edition_mismatch")
+        first = pages[100].extract_text().splitlines()
+        second = pages[101].extract_text().splitlines()
+        heading = "Rule 56. Summary Judgment"
+        starts = [i for i, line in enumerate(first) if line.strip() == heading]
+        ends = [i for i, line in enumerate(second) if line.startswith("(As amended")]
+        if (len(starts) != 1 or not ends or not first[0].startswith("82 Rule 56 ")
+                or not second[0].startswith("83 Rule 58 ")
+                or not any(line.strip() == "Rule 57. Declaratory Judgment" for line in second[ends[0]:])):
+            raise CorpusError("federal_civil_rule_boundary_mismatch")
+        body = "\n".join(first[starts[0] + 1:] + second[1:ends[0]])
+        # The reviewed print uses letter-to-letter line breaks for soft hyphens.
+        body = normalized_source(re.sub(r"(?<=[A-Za-z])-\s*\n(?=[A-Za-z])", "", body))
+        if re.findall(r"\(([a-h])\) [A-Z]", body) != list("abcdefgh"):
+            raise CorpusError("federal_civil_rule_boundary_mismatch")
+        version = AuthorityVersion(
+            jurisdiction="US", sovereign="federal", authority_type="court_rule",
+            identity_namespace="frcp", identity_key="56", title="Summary Judgment",
+            citation="Fed. R. Civ. P. 56", alternate_citations=("FRCP 56",),
+            edition="2025-12-01", text=body, institution="Supreme Court of the United States",
+            hierarchy=("Federal Rules of Civil Procedure", "Title VII. Judgment"),
+            limitations=("December 1, 2025 edition. Subsequent changes and local rules remain unresolved.",),
+        )
+        yield Observation(version, "FRCP/56", "Printed pp. 82–83, Rule 56(a)–(h)", heading,
+                          (SourceRelationship("part_of", "Federal Rules of Civil Procedure, Title VII"),))
+
+
 class GovInfoECFRProvider(PublicProvider):
     source = Source(
         name="govinfo_ecfr", host="www.govinfo.gov", authority_type="regulation", jurisdictions=("US",),

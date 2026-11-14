@@ -62,6 +62,18 @@ CREATE TABLE IF NOT EXISTS corpus_supersessions(
     FOREIGN KEY(later_snapshot, later_native) REFERENCES corpus_observations(snapshot_id,native_id),
     FOREIGN KEY(rule_snapshot, rule_native) REFERENCES corpus_observations(snapshot_id,native_id)
 );
+CREATE TABLE IF NOT EXISTS corpus_builds(
+    id TEXT PRIMARY KEY, started_at TEXT NOT NULL, completed_at TEXT,
+    config_version TEXT NOT NULL, config_hash TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS corpus_build_steps(
+    build_id TEXT NOT NULL REFERENCES corpus_builds(id),
+    ordinal INTEGER NOT NULL, provider TEXT NOT NULL, selector TEXT NOT NULL,
+    parser_revision TEXT NOT NULL, jurisdictions TEXT NOT NULL, authority_type TEXT NOT NULL,
+    pinned_snapshot TEXT REFERENCES corpus_snapshots(id), result_snapshot TEXT REFERENCES corpus_snapshots(id),
+    attempts INTEGER NOT NULL DEFAULT 0, error TEXT, result TEXT,
+    PRIMARY KEY(build_id, ordinal), UNIQUE(build_id, provider, selector)
+);
 CREATE VIRTUAL TABLE IF NOT EXISTS corpus_fts USING fts5(title, body);
 """
 
@@ -98,7 +110,7 @@ class SQLiteNormalizedCorpus:
     def __exit__(self, *args):
         self.connection.close()
 
-    def ingest(self, provider, selector, raw, *, retrieved_at=None, replay=False):
+    def ingest(self, provider, selector, raw, *, retrieved_at=None, replay=False, checkpoint=None):
         source = provider.source
         url = provider.source_url(selector)
         if not raw or len(raw) > source.max_bytes:
@@ -120,8 +132,11 @@ class SQLiteNormalizedCorpus:
                 seen = db.execute(
                     "SELECT count(*) FROM corpus_observations WHERE snapshot_id=?", (snapshot,),
                 ).fetchone()[0]
-                return {"snapshot": snapshot, "source_hash": raw_hash, "records": seen, "new_versions": 0,
-                        "changed_records": 0, "relationships_created": 0, "unchanged_snapshot": True}
+                result = {"snapshot": snapshot, "source_hash": raw_hash, "records": seen, "new_versions": 0,
+                          "changed_records": 0, "relationships_created": 0, "unchanged_snapshot": True}
+                if checkpoint is not None:
+                    checkpoint(result)
+                return result
             db.execute("INSERT OR IGNORE INTO corpus_artifacts VALUES(?,?)", (raw_hash, raw))
             db.execute("INSERT INTO corpus_snapshots VALUES(?,?,?,?,?,?,?,?,?)", (
                 snapshot, source.name, selector, raw_hash, url, source.parser_revision, timestamp,
@@ -158,8 +173,11 @@ class SQLiteNormalizedCorpus:
                 changed += bool(existed and inserted)
             if not records:
                 raise CorpusError("empty_source_snapshot")
-        return {"snapshot": snapshot, "source_hash": raw_hash, "records": records, "new_versions": added,
-                "changed_records": changed, "relationships_created": edges, "unchanged_snapshot": False}
+            result = {"snapshot": snapshot, "source_hash": raw_hash, "records": records, "new_versions": added,
+                      "changed_records": changed, "relationships_created": edges, "unchanged_snapshot": False}
+            if checkpoint is not None:
+                checkpoint(result)
+        return result
 
     def _write_version(self, version):
         version_id = version.version_id

@@ -34,6 +34,7 @@ publisher artifacts outside the curated graph.
 | GovInfo Federal Register | 112 preambles from January 30, 2026. Nine proposed rules, three recognized final rules, 96 notices and four other items. | Explicit issue date and document number. Full issue retained, with 14 explicit CFR part references and three section amendments in the latest parser revision. |
 | CourtListener | Four Supreme Court opinion records across two cases and 41 source relationships | Citation lookup plus case hydration. Exact public JSON responses retained in a replay envelope. Derivative provenance. |
 | U.S. Reports via GovInfo | One official Supreme Court reporter granule | Pinned PDF, reporter citation and case date. The granule combines judicial and editorial material. |
+| U.S. Courts | Federal Rule of Civil Procedure 56, December 1, 2025 edition | Pinned judiciary-hosted PDF. Printed pp. 82–83, subsections (a)–(h). The parser bounds rule text before amendment history and Rule 57. Subsequent currency remains unresolved. [Publisher PDF](https://www.uscourts.gov/sites/default/files/document/federal-rules-of-civil-procedure.pdf) |
 | Virginia General Assembly | Two statutory sections | Section HTML and title/chapter scope. |
 | Maryland General Assembly | Three Real Property sections and two Declaration of Rights articles | Scoped HTML and January rendition selector. Publisher does not expose a reliable edition year in the sampled body. |
 | Florida Legislature | Three Chapter 83 sections and 28 Article I constitutional sections | Online Sunshine markup, statutory edition heading and constitutional section anchors. |
@@ -77,6 +78,7 @@ python -B scripts/national_corpus.py ingest govinfo_register 2026-01-30
 python -B scripts/national_corpus.py ingest courtlistener "scotus/347 U.S. 483"
 python -B scripts/national_corpus.py ingest courtlistener "scotus/332 U.S. 380"
 python -B scripts/national_corpus.py ingest us_reports 347-483
+python -B scripts/national_corpus.py ingest federal_civil_rules 2025-12-01/56
 python -B scripts/national_corpus.py ingest virginia_code 55.1/12/55.1-1220
 python -B scripts/national_corpus.py ingest maryland_code grp/8-211
 python -B scripts/national_corpus.py ingest maryland_constitution c0/24
@@ -106,6 +108,34 @@ revision updates retrieval metadata. A corrected rendition remains traceable
 to its earlier version. Offline replay preserves the original retrieval
 timestamp. Currentness and opinion role are deterministic filters.
 
+### Multi-source build and resumption
+
+`build-start` records a plan of up to 32 registered provider/selector pairs
+and returns its build ID. Live selectors are ordered first, then retained
+selectors, preserving order within each group. Each selector is either a
+bounded adapter fetch or a pinned snapshot already in the same corpus.
+Use retained snapshots to reproduce exact source bytes. A live plan can be
+replayed by taking its successful snapshot IDs into a new retained plan.
+
+```powershell
+python -B scripts/national_corpus.py build-start --source olrc 119-138/1 --source federal_civil_rules 2025-12-01/56
+python -B scripts/national_corpus.py build-resume BUILD_ID --max-steps 1
+python -B scripts/national_corpus.py build-manifest BUILD_ID --verify
+python -B scripts/national_corpus.py build-resume BUILD_ID
+python -B scripts/national_corpus.py build-manifest BUILD_ID --verify
+# Pin exact retained results for reproducibility.
+python -B scripts/national_corpus.py build-start --retained olrc 119-138/1 OLRC_SNAPSHOT --retained federal_civil_rules 2025-12-01/56 RULE_SNAPSHOT
+```
+
+The SQLite build rows are the persisted manifest and checkpoint. A source
+commit and its checkpoint share a transaction. A resume skips completed
+selectors and stops at the first failure. Retry retains the last safe error
+code and the attempt count. Unfinished selectors have no record counts.
+`--verify` checks retained bytes, snapshot identity, normalized payload hashes,
+and replayed authority, version and relationship identities. Parser upgrades
+require the matching parser for a full historical verification. The CLI prints
+the manifest as JSON. Keep any exports inside ignored local storage.
+
 Development mode enables corpus evidence when
 `PRO_ONE_NORMALIZED_CORPUS_PATH` names the existing local database. The
 bridge opens it read-only, enforces the planned matter scope, verifies the
@@ -121,8 +151,8 @@ deterministic response validation remain in the response path.
 
 ## Verified increment
 
-The working corpus has 840 authority identities, 1,272 versions, 36
-snapshots, 1,896 observations, 1,483 source relationship rows, three
+The working corpus has 841 authority identities, 1,273 versions, 37
+snapshots, 1,897 observations, 1,484 source relationship rows, three
 cross-provider identity checks and one reviewed supersession. The annual CFR and eCFR renditions of
 1 CFR 1.1 and 1 CFR 2.2 share authority identity and retain distinct versions.
 OLRC releases 119-88 and 119-138 coexist for all 426 sampled identities.
@@ -132,15 +162,15 @@ California's two earlier observations
 and their current-as-of versions coexist. The counts include preserved
 parser-revision observations for OLRC Title 1, GovInfo CFR and Federal Register.
 
-The labeled retrieval sample spans all six jurisdictions. All 23 targets
+The labeled retrieval sample spans all six jurisdictions. All 24 targets
 ranked first, with precision at 1 of 1.00 and precision at 3 of 0.33
-under a one-target-per-query label. All 16 negative controls returned
+under a one-target-per-query label. All 18 negative controls returned
 zero rows. Two labeled cross-provider identity checks matched.
 The closeout benchmark replicated 30,000 records and 30,000 edges across six
-authority families. Ingest and indexing took 33.442 seconds at 897 records
-per second. Across 120 scoped queries, p95 retrieval latency was 1.282 ms.
-Unchanged refresh took 85.16 ms and the database occupied 224,346,112 bytes.
-Python allocations peaked at 916,335 traced bytes. That measurement excludes
+authority families. Ingest and indexing took 61.26 seconds at 490 records
+per second. Across 120 scoped queries, p95 retrieval latency was 2.847 ms.
+Unchanged refresh took 305.04 ms and the database occupied 229,142,528 bytes.
+Python allocations peaked at 919,390 traced bytes. That measurement excludes
 SQLite native allocations and OS cache.
 
 Five state-scoped packages rendered through the offline Research Core,
@@ -206,37 +236,30 @@ nationwide recall estimate.
 
 ## Corpus v1 closeout audit
 
-Audited implementation `916bc777509caf06de998480a221394473719ad0` against
-the original milestone, based on Research Core
-`ec1be937c0b5e77f9f113bbc83c13b4cf748a3ae`. This closeout adds documentation
-only. [Implementation CI](https://github.com/pro-one-org/pro-one/actions/runs/43512971657)
+The original milestone is based on Research Core
+`ec1be937c0b5e77f9f113bbc83c13b4cf748a3ae`. The two follow-up changes are
+the official federal rule sample and multi-source build resumption.
 
 | Original acceptance criteria | Verified evidence and remaining gaps |
 | --- | --- |
-| 1–7, providers, federal/state coverage and provenance | Six jurisdictions, six authority families and 16 registered adapters represented in retained observations. Real OLRC, annual CFR, eCFR, Register, CourtListener, official U.S. Reports and five state statute samples passed. Official federal judiciary material is represented by U.S. Reports. The original federal court-rule source requirement remains open, and the labeled rule target is California. |
+| 1–7, providers, federal/state coverage and provenance | Six jurisdictions, six authority families and 17 adapters represented in retained observations. Real OLRC, annual CFR, eCFR, Register, CourtListener, official U.S. Reports, national and California court rules, and five state statute samples passed. |
 | 8–10, version coexistence and refresh | Two OLRC releases coexist for 426 identities, and the same-identity CFR variants have distinct observations. Identical bytes are idempotent, changed records retain version history and offline replay retains the capture timestamp. New York uses the accepted retained-snapshot fallback. |
 | 11–16, deterministic filters, identity, roles and status | Jurisdiction and authority-type negatives returned zero hits. The Brown derivative pairing and CFR same-authority version pairing passed. The Merrill lead and dissent stayed separate. Dated California evidence, historical and superseded CFR, proposed Register material, OLRC repeal markers and unresolved eCFR were tested. |
-| 17–20, Research Core and regressions | 18 bounded scenarios passed. The proposal and verifier received status and refresh limits in the offline test, and the unsupported operative assertion was rejected with exact-evidence fallback. Existing invented citation, unsupported proposition and jurisdiction controls passed. Four prior authorized live Sol mixed-source cases passed independently. The full local suite passed 477 tests. |
-| 21–23, scale, retrieval and licensing | The 30,000-record benchmark passed. All 23 labeled targets ranked first, all 16 negative controls returned zero hits and both labeled identity controls matched. The source inventory records attribution, known terms and the evaluation boundary. Federal court-rule retrieval remains untested. |
-| 24, reproducibility and resumption | All artifact hashes and database constraints validated. Replaying the current parser reproduced native IDs, locators, original citations and versions for 30 snapshots. Six earlier parser revisions remain in the audit store. The CLI supports single-selector commits, re-runs and snapshot replay. A persisted checkpoint and a build-level manifest for resuming and verifying a multi-source build remain absent. |
+| 17–20, Research Core and regressions | 19 bounded scenarios passed. The official federal rule ran through exact evidence, a model fixture proposal, independent verifier and deterministic rendering. The unsupported operative assertion was rejected with exact-evidence fallback. Existing invented citation, unsupported proposition and jurisdiction controls passed. Four prior authorized live Sol mixed-source cases passed independently. |
+| 21–23, scale, retrieval and licensing | The 30,000-record benchmark passed. All 24 labeled targets ranked first, all 18 negatives returned zero hits and both labeled identity controls matched. The federal Rule 56 target and both isolation controls passed. Source attribution, terms and evaluation limits appear above. |
+| 24, reproducibility and resumption | Build `25a94fd758504872a3907e333b52e13b` used retained OLRC, federal Rule 56, eCFR, Register, official reporter and Virginia statute artifacts. It was interrupted at 2/6 checkpoints. After reopening SQLite, only the interrupted selector was retried. All six finished under the same ID with attempts 1, 1, 2, 1, 1, 1. Reverification and an independent pinned repeat matched source, version, artifact and relationship identities for 155 observations and 58 relationships, with zero versions or relationships added on replay. |
 | 25–28, hygiene, CI, documentation and limitations | The branch history check found zero configured credential values or local corpus files. Implementation CI passed offline evaluations and benchmarks, JavaScript checks, production container build and smoke. Production research and comparison remain release-gated. Coverage and limitations are documented on this page. |
 
 ### Remaining work
 
-- **A. Must fix before corpus merge.** Integrate and evaluate a bounded official
-  federal court-rule sample, or obtain an explicit v1 scope exception. The
-  federal judiciary publishes editioned PDF sources. Also demonstrate a
-  reproducible multi-source build with a build manifest and persisted
-  checkpoint, or obtain explicit acceptance of single-selector replay as the
-  v1 resumption boundary. [Federal judiciary rules](https://www.uscourts.gov/forms-rules/current-rules-practice-procedure)
+- **A. Must fix before corpus merge.** No remaining implementation blockers
+  identified in the bounded Corpus v1 audit. Final merge remains a human decision.
 - **B. Future milestone.** Procedural Intelligence, additional nationwide
   coverage, additional source families beyond the v1 boundary, and scaling
   beyond the bounded local corpus.
 - **C. Private beta and release gates.** Independent legal review, broader
   currentness and adversarial validation, deployment, privacy and abuse
   controls, and explicit release approval.
-
-**NOT READY FOR MERGE**
 
 ### State source investigation
 
