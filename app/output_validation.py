@@ -114,6 +114,9 @@ class OutputValidationService:
                 supported = set(claim["supported_by_passage_ids"])
                 if claim.get("support_state") == "semantically_verified_development":
                     from app.authority import digest
+                    from app.national_corpus import OPERATIVE_CLAIM
+                    if OPERATIVE_CLAIM.search(claim["proposition"]):
+                        fail("unsupported_operative_status", index)
                     ledger = claim.get("verification", {})
                     bindings = ledger.get("evidence_bindings", [])
                     if (ledger.get("verification_status") != "independently_verified_development"
@@ -149,6 +152,18 @@ class OutputValidationService:
                         role = (citation.get("case_metadata") or {}).get("opinion_role")
                         if passage and passage["id"] in supports and role and role not in {"lead", "majority", "unanimous"}:
                             fail("non_majority_support", index)
+                        corpus = citation.get("corpus_provenance", {})
+                        if corpus and passage:
+                            bound = next((b.get("currentness") for b in ledger.get("evidence_bindings", [])
+                                          if b.get("passage") == passage["id"]), None)
+                            if (not bound or bound != citation.get("source_currentness")
+                                    or bound.get("status") != corpus.get("currentness")):
+                                fail("corpus_currentness_binding_invalid", index)
+                        if (passage and passage["id"] in supports and corpus
+                                and (corpus.get("document_kind") or corpus.get("currentness") in {
+                                    "historical", "proposed", "repealed", "superseded",
+                                })):
+                            fail("ineligible_corpus_claim_support", index)
                     if (not citation or citation["passage_id"] not in supported or not passage
                             or citation["source_id"] != passage["source_id"]
                             or citation["source_id"] not in claim["source_ids"]

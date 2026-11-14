@@ -255,9 +255,14 @@ class AssistantService:
         # Area changes start a fresh subject; no inherited source scope.
         if "legal_area" in candidates and candidates["legal_area"]["value"] != values.get("legal_area"):
             values = {}
-        for name in ("legal_area", "user_posture", "sovereign", "court", "agency", "document_type"):
+        for name in ("legal_area", "user_posture", "court", "agency", "document_type"):
             if name in candidates:
                 values[name] = candidates[name]["value"]
+        sovereign = candidates.get("sovereign")
+        if sovereign and sovereign["provenance"] == "user_explicit":
+            values["sovereign"] = sovereign["value"]
+            if sovereign["value"] == "federal":
+                values.pop("state", None)
         if "legal_topics" in candidates:
             values["topics"] = [v.strip() for v in candidates["legal_topics"]["value"].split(",") if v.strip()][:12]
         for name in ("country", "state"):
@@ -267,12 +272,14 @@ class AssistantService:
                 values[name] = field["value"]
             elif field and field["value"] != values.get(name):
                 values.pop(name, None)
-        if values.get("state") in {"Virginia", "Maryland"}:
+        if values.get("state") in {"Virginia", "Maryland", "Florida", "New York", "California"}:
+            values["country"] = "US"
+        if values.get("sovereign") == "federal" and not values.get("country"):
             values["country"] = "US"
         state["research"], state["pending"] = values, {}
         state["facts"] = {k: {"value": v, "provenance": "user_explicit" if k in {"state", "country"} else "candidate_classification"}
                           for k, v in values.items() if isinstance(v, str)}
-        if not values.get("state"):
+        if not values.get("state") and values.get("sovereign") != "federal":
             return reply("clarification_needed", "What state did this happen in?")
         if not values.get("country"):
             return reply("clarification_needed", "What country did this happen in?")

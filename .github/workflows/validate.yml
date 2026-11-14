@@ -42,6 +42,9 @@ jobs:
       - name: Benchmark offline corpus and research contracts
         run: python -B scripts/benchmark_research.py --scale 1000 --output "$RUNNER_TEMP/pro-one-research-benchmark.json"
 
+      - name: Benchmark normalized authority parsing and scoped search
+        run: python -B scripts/benchmark_national_corpus.py --scale 10000
+
       - name: Compile a proposed capability review bundle
         run: python -B scripts/build_capability.py --jurisdiction Virginia --legal-area torts --topic premises_liability --output "$RUNNER_TEMP/pro-one-capability-review"
 
@@ -77,7 +80,8 @@ jobs:
           with urllib.request.urlopen('http://127.0.0.1:8000/capabilities') as response:
               assert len(json.load(response)['capabilities']) == 4
           with urllib.request.urlopen('http://127.0.0.1:8000/openapi.json') as response:
-              assert '/research/evidence' in json.load(response)['paths']
+              paths = json.load(response)['paths']
+              assert '/research/evidence' in paths and '/research/compare' in paths
           request = urllib.request.Request('http://127.0.0.1:8000/research/evidence',
               data=json.dumps({'country':'US','state':'Virginia','legal_area':'torts','topics':['premises_liability']}).encode(),
               headers={'Content-Type':'application/json'})
@@ -92,6 +96,17 @@ jobs:
           try:
               urllib.request.urlopen(request)
               raise AssertionError('Citation research must not execute in production')
+          except urllib.error.HTTPError as error:
+              assert error.code == 403
+          comparison = {'matters': [
+              {'country': 'US', 'state': state, 'legal_area': 'landlord_tenant', 'topics': ['landlord_repairs']}
+              for state in ('Virginia', 'Florida')
+          ]}
+          request = urllib.request.Request('http://127.0.0.1:8000/research/compare',
+              data=json.dumps(comparison).encode(), headers={'Content-Type': 'application/json'})
+          try:
+              urllib.request.urlopen(request)
+              raise AssertionError('Proposed research comparisons must not execute in production')
           except urllib.error.HTTPError as error:
               assert error.code == 403
           print('Production health, workflow/capability catalogs, OpenAPI and research release gate passed.')

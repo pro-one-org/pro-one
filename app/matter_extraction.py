@@ -53,6 +53,7 @@ class MatterExtractionService:
                 "When a general question unambiguously names the jurisdiction of the law it asks about, "
                 "return its exact state name as user_explicit research scope with an exact quote containing the name. "
                 "For example, 'under Virginia law' gives state Virginia with evidence 'Virginia'. "
+                "For explicit federal law scope, return sovereign federal with the exact word federal from the user message. "
                 "A person wanting to sue after a fall is a potential_plaintiff, not a defendant. "
                 "For DC-402, SCC records or Maryland summons, retain the catalog procedural fields so the specialized module can help. "
                 "Use sovereign state, federal, or unknown; legal topics and posture are candidate classifications, not legal findings. "

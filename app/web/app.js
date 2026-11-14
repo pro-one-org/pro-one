@@ -54,6 +54,15 @@ function sourcePanel(sources, prefix) {
       link.target = "_blank";
       link.rel = "noopener noreferrer";
     }
+    const corpus = s.corpus_provenance;
+    const authorityStatus = {
+      current_as_of: corpus?.current_as_of ? "Current as of " + corpus.current_as_of : "Currentness unresolved",
+      historical: "Historical text",
+      superseded: "Superseded text" + (corpus?.supersession?.effective_on ? " as of " + corpus.supersession.effective_on : ""),
+      repealed: "Repealed text",
+      proposed: "Proposed rule",
+      unresolved: "Currentness unresolved",
+    };
     row.append(
       link,
       el("small", s.issuing_authority),
@@ -64,9 +73,10 @@ function sourcePanel(sources, prefix) {
         "small",
         s.currentness === "certified"
           ? "Currentness certified"
-          : "Currentness has not been certified",
+          : authorityStatus[corpus?.currentness] || "Currentness has not been certified",
       ),
     );
+    if (corpus?.refresh_limitation) row.append(el("small", corpus.refresh_limitation));
     if (s.case_metadata) {
       row.append(el("small", s.case_metadata.court + " · " + (s.case_metadata.decision_date || "Date unknown")),
         el("small", "Opinion: " + s.case_metadata.opinion_role + " · " + s.case_metadata.publication_status + " · " + s.case_metadata.precedential_status),
