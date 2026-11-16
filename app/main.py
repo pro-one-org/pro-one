@@ -29,6 +29,7 @@ from app.product import ProductResponseRequest, ProductService
 from app.security import SecurityMiddleware
 from app.assistant import AssistantRequest, AssistantService
 from app.documents import isolated_extract
+from app.matter_api import router as matter_router
 from app.capabilities import ResearchComparison, ResearchMatter, CapabilityResolutionService
 from app.citation_research import CitationResearchRequest
 from app.procedural_research import ProceduralRequest, ProceduralResearchService
@@ -54,6 +55,7 @@ response_assembly_service = ResponseAssemblyService(repository)
 settings = Settings.from_environment()
 generation_service = GenerationService(settings.registry())
 app.add_middleware(SecurityMiddleware)
+app.include_router(matter_router(lambda: settings, repository, generation_service))
 web_root = Path(__file__).resolve().parent / "web"
 app.mount("/static", StaticFiles(directory=web_root), name="static")
 

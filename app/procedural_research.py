@@ -197,7 +197,7 @@ class ProceduralResearchService:
         self.choice_key = (hmac.digest(settings.conversation_signing_key, CHOICE_DOMAIN, "sha256")
                            if settings.conversation_signing_key else DEVELOPMENT_CHOICE_KEY)
 
-    def respond(self, request):
+    def respond(self, request, *, matter_scope=None):
         if self.settings.mode != "development":
             return self.result("unavailable")
         if re.search(r"\b(?:file|submit|sign|serve|send|pay|settle|negotiate)\b.{0,55}\b(?:for me|on my behalf)\b", request.message, re.I):
@@ -229,6 +229,8 @@ class ProceduralResearchService:
         scope = {"purpose": "procedural_choice_v1", "catalog": self.catalog.record_version,
                  "topic": subject, "jurisdiction": jurisdiction, "as_of": on.isoformat(),
                  "inquiry": identity(request.message)}
+        if matter_scope is not None:
+            scope["matter"] = matter_scope
         common = {"jurisdiction": jurisdiction, "reference_date": on.isoformat(), "subject": subject,
                   "catalog_version": self.catalog.record_version,
                   "inferences": {"possible_legal_area": "premises_liability", "desired_outcome": "compensation"}
@@ -238,7 +240,7 @@ class ProceduralResearchService:
                 choice = unseal(request.choice_token, key=self.choice_key)
             except (ValueError, TypeError):
                 choice = {}
-            if (any(choice.get(key) != value for key, value in scope.items())
+            if (choice.get("matter") != matter_scope or any(choice.get(key) != value for key, value in scope.items())
                     or request.selected_path not in choice.get("paths", []) or request.selected_path not in options
                     or choice.get("forum") not in (None, request.forum)
                     or choice.get("authority_type") not in (None, request.authority_type)):

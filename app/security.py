@@ -1,5 +1,7 @@
 """Bound request bodies before JSON parsing and attach conservative headers."""
 
+import re
+
 from starlette.responses import JSONResponse
 
 
@@ -12,13 +14,17 @@ class SecurityMiddleware:
             return await self.app(scope, receive, send)
         body = b""
         if scope["method"] in {"POST", "PUT", "PATCH"}:
+            document = scope["path"] == "/documents/extract" or re.fullmatch(
+                r"/matters/[0-9a-f-]{36}/documents", scope["path"], re.I
+            )
+            limit = 2 * 1024 * 1024 if document else self.max_body
             more = True
             while more:
                 message = await receive()
                 if message["type"] == "http.disconnect":
                     return
                 body += message.get("body", b"")
-                if len(body) > (2 * 1024 * 1024 if scope["path"] == "/documents/extract" else self.max_body):
+                if len(body) > limit:
                     return await JSONResponse({"detail": {"code": "request_too_large"}}, status_code=413)(scope, receive, send)
                 more = message.get("more_body", False)
             consumed = False
