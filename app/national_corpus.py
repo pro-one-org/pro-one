@@ -15,7 +15,7 @@ from app.corpus_store import encode
 AuthorityType = Literal[
     "statute", "regulation", "opinion", "constitution", "court_rule",
     "administrative_decision", "attorney_general_opinion", "agency_guidance",
-    "executive_material", "session_law", "recap_filing", "register_document",
+    "executive_material", "session_law", "recap_filing", "register_document", "court_instruction",
 ]
 Currentness = Literal["unresolved", "current", "current_as_of", "historical", "repealed", "superseded", "proposed"]
 OPERATIVE_CLAIM = re.compile(
@@ -93,7 +93,9 @@ class AuthorityVersion(BaseModel):
         if self.document_kind == "proposed_rule" and self.currentness != "proposed":
             raise ValueError("proposed_rule_requires_proposed_status")
         if self.currentness in {"current", "current_as_of"}:
-            if not self.current_as_of or not self.currentness_basis or self.authority_type not in {"statute", "regulation"}:
+            if not self.current_as_of or not self.currentness_basis or self.authority_type not in {
+                "statute", "regulation", "court_rule",
+            }:
                 raise ValueError("current_status_requires_as_of_evidence")
             if ((self.effective_from and self.effective_from > self.current_as_of)
                     or (self.effective_until and self.effective_until <= self.current_as_of)):

@@ -1,0 +1,1509 @@
+{
+  "schema_version": "1.0.0",
+  "record_version": "0.1.0",
+  "review": "development_only",
+  "reference_date": "2026-11-16",
+  "jurisdictions": {
+    "US-VA": {
+      "name": "Commonwealth of Virginia",
+      "state_name": "Virginia"
+    },
+    "US": {
+      "name": "United States federal"
+    },
+    "US-FL": {
+      "name": "State of Florida",
+      "state_name": "Florida"
+    }
+  },
+  "authorities": {
+    "venue": {
+      "artifact": "venue",
+      "artifact_hash": "2dd8e99af81086daa96a3adc4a88a295ef58aea6f7ad9d2bd43890ffc26bca1f",
+      "captured_on": "2026-11-16",
+      "locator": "article#vacode, § 8.01-262(1)–(4)",
+      "native_id": "8.01-262",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "statute",
+        "identity_namespace": "va_code",
+        "identity_key": "8.01-262",
+        "title": "Permissible venue",
+        "citation": "Va. Code § 8.01-262",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "In any actions to which this chapter applies except those actions enumerated in Category A where preferred venue is specified, one or more of the following counties or cities shall be permissible forums, such forums being sometimes referred to as \"Category B\" in this title: 1. Wherein the defendant resides or has his principal place of employment or, if the defendant is not an individual, wherein its principal office or principal place of business is located; 2. Wherein the defendant has a registered office, has appointed an agent to receive process, or such agent has been appointed by operation of the law; or, in case of withdrawal from the Commonwealth by such defendant, wherein venue herein was proper at the time of such withdrawal; 3. Provided there exists any practical nexus to the forum including, but not limited to, the location of fact witnesses, plaintiffs, or other evidence to the action, wherein the defendant regularly conducts substantial business activity, or in the case of withdrawal from the Commonwealth by such defendant, wherein venue herein was proper at the time of such withdrawal; 4. Wherein the cause of action, or any part thereof, arose;",
+        "institution": "Virginia General Assembly",
+        "court": null,
+        "effective_from": null,
+        "currentness": "current_as_of",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review."
+        ],
+        "current_as_of": "2026-11-16",
+        "currentness_basis": "Dated operative Virginia Code section and 2026 update index reviewed as of 2026-11-16."
+      },
+      "status_artifact": "code_updates",
+      "status_hash": "0ee4f610139db4f229db2bb87de1ac4979fa8d5f60b120d78686a3cfee9ea8d5"
+    },
+    "district": {
+      "artifact": "district",
+      "artifact_hash": "154bf4a87fc19451fd6cfb738e85cb4ff981e641a79ac67d15d98b7b95ebe8df",
+      "captured_on": "2026-11-16",
+      "locator": "article#vacode, § 16.1-77(1)",
+      "native_id": "16.1-77",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "statute",
+        "identity_namespace": "va_code",
+        "identity_key": "16.1-77",
+        "title": "Civil jurisdiction of general district courts",
+        "citation": "Va. Code § 16.1-77",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "Except as provided in Article 5 (§ 16.1-122.1 et seq.), each general district court shall have, within the limits of the territory it serves, civil jurisdiction as follows: (1) Exclusive original jurisdiction of any claim to specific personal property or to any debt, fine, or other money, or to damages for breach of contract or for injury done to property, real or personal, or for any action for injury to person, regardless of theory, and any action for wrongful death as provided for in Article 5 (§ 8.01-50 et seq.) of Chapter 3 of Title 8.01 when the amount of such claim does not exceed $4,500, exclusive of interest and any attorney fees, and concurrent jurisdiction with the circuit courts having jurisdiction in such territory of any such claim when the amount thereof exceeds $4,500 but does not exceed $50,000, exclusive of interest and any attorney fees.",
+        "institution": "Virginia General Assembly",
+        "court": null,
+        "effective_from": "2025-07-01",
+        "currentness": "current_as_of",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review."
+        ],
+        "current_as_of": "2026-11-16",
+        "currentness_basis": "Dated operative Virginia Code section and 2026 update index reviewed as of 2026-11-16."
+      },
+      "status_artifact": "code_updates",
+      "status_hash": "0ee4f610139db4f229db2bb87de1ac4979fa8d5f60b120d78686a3cfee9ea8d5"
+    },
+    "circuit": {
+      "artifact": "circuit",
+      "artifact_hash": "723ec03d1b60b8b29c6705afa4ec3f28d48d592b5e6558336fbef9fbe0dbfaf9",
+      "captured_on": "2026-11-16",
+      "locator": "article#vacode, § 17.1-513",
+      "native_id": "17.1-513",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "statute",
+        "identity_namespace": "va_code",
+        "identity_key": "17.1-513",
+        "title": "Circuit court jurisdiction",
+        "citation": "Va. Code § 17.1-513",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "They shall have original and general jurisdiction of all civil cases, except cases upon claims to recover personal property or money not of greater value than $100, exclusive of interest, and except such cases as are assigned to some other tribunal;",
+        "institution": "Virginia General Assembly",
+        "court": null,
+        "effective_from": null,
+        "currentness": "current_as_of",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review."
+        ],
+        "current_as_of": "2026-11-16",
+        "currentness_basis": "Dated operative Virginia Code section and 2026 update index reviewed as of 2026-11-16."
+      },
+      "status_artifact": "code_updates",
+      "status_hash": "0ee4f610139db4f229db2bb87de1ac4979fa8d5f60b120d78686a3cfee9ea8d5"
+    },
+    "service": {
+      "artifact": "service",
+      "artifact_hash": "2c96331253f27b95403d8d55da459b6d3953b94c728a15333c26ea3351e1fe07",
+      "captured_on": "2026-11-16",
+      "locator": "article#vacode, § 8.01-299",
+      "native_id": "8.01-299",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "statute",
+        "identity_namespace": "va_code",
+        "identity_key": "8.01-299",
+        "title": "Service on Virginia corporations and LLCs",
+        "citation": "Va. Code § 8.01-299",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "Except as prescribed in § 8.01-300 as to municipal and quasi-governmental corporations, and subject to § 8.01-286.1, process may be served on a domestic stock corporation, nonstock corporation, or limited liability company created by the laws of the Commonwealth as follows: 1. By personal service on any officer, director, or registered agent of any such corporation or on the registered agent of such limited liability company; 2. By substituted service on stock corporations in accordance with § 13.1-637, on nonstock corporations in accordance with § 13.1-836, and on limited liability companies in accordance with § 13.1-1018; or 3. If the address of the registered office of the corporation or limited liability company is a single-family residential dwelling, by substituted service on the registered agent of the corporation or limited liability company in the manner provided by subdivision 2 of § 8.01-296. This section does not prescribe the only means, or necessarily the required means, of serving a domestic stock or nonstock corporation or limited liability company.",
+        "institution": "Virginia General Assembly",
+        "court": null,
+        "effective_from": null,
+        "currentness": "current_as_of",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review."
+        ],
+        "current_as_of": "2026-11-16",
+        "currentness_basis": "Dated operative Virginia Code section and 2026 update index reviewed as of 2026-11-16."
+      },
+      "status_artifact": "code_updates",
+      "status_hash": "0ee4f610139db4f229db2bb87de1ac4979fa8d5f60b120d78686a3cfee9ea8d5"
+    },
+    "server": {
+      "artifact": "server",
+      "artifact_hash": "97a24b58862f14e5cc6aec6e354bf8b83bba4443abf54784169452bda342a238",
+      "captured_on": "2026-11-16",
+      "locator": "article#vacode, § 8.01-293(A)(1)–(2)",
+      "native_id": "8.01-293",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "statute",
+        "identity_namespace": "va_code",
+        "identity_key": "8.01-293",
+        "title": "Who may serve process",
+        "citation": "Va. Code § 8.01-293",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "The following persons are authorized to serve process: 1. The sheriff within such territorial bounds as described in § 8.01-295; 2. Any person 18 years of age or older and who is not a party or otherwise interested in the subject matter in controversy.",
+        "institution": "Virginia General Assembly",
+        "court": null,
+        "effective_from": null,
+        "currentness": "current_as_of",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review."
+        ],
+        "current_as_of": "2026-11-16",
+        "currentness_basis": "Dated operative Virginia Code section and 2026 update index reviewed as of 2026-11-16."
+      },
+      "status_artifact": "code_updates",
+      "status_hash": "0ee4f610139db4f229db2bb87de1ac4979fa8d5f60b120d78686a3cfee9ea8d5"
+    },
+    "proof": {
+      "artifact": "proof",
+      "artifact_hash": "1c6bc8f2addad754c5ab4892794f5a8806b2c9fce8d217d91fe44f9c946e0d7e",
+      "captured_on": "2026-11-16",
+      "locator": "article#vacode, § 8.01-325(A)–(B)(2)",
+      "native_id": "8.01-325",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "statute",
+        "identity_namespace": "va_code",
+        "identity_key": "8.01-325",
+        "title": "Return by process server",
+        "citation": "Va. Code § 8.01-325",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "Unless otherwise directed by the court, the person serving process shall make return thereof to the clerk's office within seventy-two hours of service, except when such return would be due on a Saturday, Sunday, or legal holiday. In such case, the return is due on the next day following such Saturday, Sunday, or legal holiday. The process shall state thereon the date and manner of service and the name of the party served. B. Proof of service shall be in the following manner: 1. If service by sheriff, the form of the return of such sheriff as provided by the Rules of the Supreme Court; or 2. If service by any other person qualified under § 8.01-293, whether service made in or out of the Commonwealth, his affidavit of such qualifications; the date and manner of service and the name of the party served; and stamped, typed, or printed on the return of process, an annotation that the service was by a private server, and the name, address, and telephone number of the server;",
+        "institution": "Virginia General Assembly",
+        "court": null,
+        "effective_from": null,
+        "currentness": "current_as_of",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review."
+        ],
+        "current_as_of": "2026-11-16",
+        "currentness_basis": "Dated operative Virginia Code section and 2026 update index reviewed as of 2026-11-16."
+      },
+      "status_artifact": "code_updates",
+      "status_hash": "0ee4f610139db4f229db2bb87de1ac4979fa8d5f60b120d78686a3cfee9ea8d5"
+    },
+    "count": {
+      "artifact": "count",
+      "artifact_hash": "5ec9254536282bbd2d0cf4cb256534f8d74a921aae9653751bc08d4c046bdbd8",
+      "captured_on": "2026-11-16",
+      "locator": "article#vacode, § 1-210(A)–(B), last sentence",
+      "native_id": "1-210",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "statute",
+        "identity_namespace": "va_code",
+        "identity_key": "1-210",
+        "title": "Counting time",
+        "citation": "Va. Code § 1-210",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "When an act of the General Assembly or rule of court requires that an act be performed within a prescribed amount of time after any event or judgment, the day on which the event or judgment occurred shall not be counted against the time allowed. B. When the last day for performing an act during the course of a judicial proceeding falls on a Saturday, Sunday, legal holiday, or any day or part of a day on which the clerk's office is closed as authorized by an act of the General Assembly, the act may be performed on the next day that is not a Saturday, Sunday, legal holiday, or day or part of a day on which the clerk's office is closed as authorized by an act of the General Assembly. C. When an act of the General Assembly specifies a maximum period of time in which a legal action may be brought and the last day of that period falls on a Saturday, Sunday, legal holiday, or day or part of a day on which the clerk's office is closed as authorized by an act of the General Assembly, the action may be brought on the next day that is not a Saturday, Sunday, legal holiday, or day or part of a day on which the clerk's office is closed as authorized by an act of the General Assembly.",
+        "institution": "Virginia General Assembly",
+        "court": null,
+        "effective_from": null,
+        "currentness": "current_as_of",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review."
+        ],
+        "current_as_of": "2026-11-16",
+        "currentness_basis": "Dated operative Virginia Code section and 2026 update index reviewed as of 2026-11-16."
+      },
+      "status_artifact": "code_updates",
+      "status_hash": "0ee4f610139db4f229db2bb87de1ac4979fa8d5f60b120d78686a3cfee9ea8d5"
+    },
+    "settlement": {
+      "artifact": "settlement",
+      "artifact_hash": "4d4e081b80368ee4e5de7a9e8e4118819c8742652396432e05d350bd1fd219f2",
+      "captured_on": "2026-11-16",
+      "locator": "article#vacode, § 8.01-35.1(A)(1)",
+      "native_id": "8.01-35.1",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "statute",
+        "identity_namespace": "va_code",
+        "identity_key": "8.01-35.1",
+        "title": "Settlement releases",
+        "citation": "Va. Code § 8.01-35.1",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "When a release or a covenant not to sue is given in good faith to one of two or more persons liable for the same injury to a person or property, or the same wrongful death: 1. It shall not discharge any other person from liability for the injury, property damage or wrongful death unless its terms so provide; but any amount recovered against the other person or any one of them shall be reduced by any amount stipulated by the covenant or the release, or in the amount of the consideration paid for it, whichever is the greater.",
+        "institution": "Virginia General Assembly",
+        "court": null,
+        "effective_from": null,
+        "currentness": "current_as_of",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review."
+        ],
+        "current_as_of": "2026-11-16",
+        "currentness_basis": "Dated operative Virginia Code section and 2026 update index reviewed as of 2026-11-16."
+      },
+      "status_artifact": "code_updates",
+      "status_hash": "0ee4f610139db4f229db2bb87de1ac4979fa8d5f60b120d78686a3cfee9ea8d5"
+    },
+    "insurance": {
+      "artifact": "insurance",
+      "artifact_hash": "6c97a4962e03d57374328c0cee340f4f0242cff9a9c77ee7bbb04fd38e908f2a",
+      "captured_on": "2026-11-16",
+      "locator": "article#vacode, § 38.2-236(A)",
+      "native_id": "38.2-236",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "statute",
+        "identity_namespace": "va_code",
+        "identity_key": "38.2-236",
+        "title": "Notice of certain insurance settlements",
+        "citation": "Va. Code § 38.2-236",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "Upon payment by any insurer of at least $5,000 in a single check to an attorney licensed in the Commonwealth, or other representative, in settlement or satisfaction by an insured or a third party of any claim arising out of an insurance policy issued or delivered in the Commonwealth, the insurer shall send to the claimant or judgment creditor on the underlying insurance or liability claim a notice of such payment as required by subsection B within five business days after the date payment is made or sent to the attorney or other representative of the claimant or judgment creditor.",
+        "institution": "Virginia General Assembly",
+        "court": null,
+        "effective_from": null,
+        "currentness": "current_as_of",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review."
+        ],
+        "current_as_of": "2026-11-16",
+        "currentness_basis": "Dated operative Virginia Code section and 2026 update index reviewed as of 2026-11-16."
+      },
+      "status_artifact": "code_updates",
+      "status_hash": "0ee4f610139db4f229db2bb87de1ac4979fa8d5f60b120d78686a3cfee9ea8d5"
+    },
+    "unrepresented": {
+      "artifact": "unrepresented",
+      "artifact_hash": "9bf7352dfe3f4d590c9c728b9af25ad4a8b808dc0281b082b2043ca759fdbd80",
+      "captured_on": "2026-11-16",
+      "locator": "article#vacode, § 8.01-271.1(A)",
+      "native_id": "8.01-271.1",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "statute",
+        "identity_namespace": "va_code",
+        "identity_key": "8.01-271.1",
+        "title": "Signing papers filed without counsel",
+        "citation": "Va. Code § 8.01-271.1",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "A party who is not represented by an attorney, including a person confined in a state or local correctional facility proceeding pro se, shall sign his pleading, motion, or other paper and state his mailing address. In any action in a court of record, the first pleading shall also contain the email address and, if available, the telephone number of the party who is not represented by an attorney.",
+        "institution": "Virginia General Assembly",
+        "court": null,
+        "effective_from": null,
+        "currentness": "current_as_of",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review."
+        ],
+        "current_as_of": "2026-11-16",
+        "currentness_basis": "Dated operative Virginia Code section and 2026 update index reviewed as of 2026-11-16."
+      },
+      "status_artifact": "code_updates",
+      "status_hash": "0ee4f610139db4f229db2bb87de1ac4979fa8d5f60b120d78686a3cfee9ea8d5"
+    },
+    "commence": {
+      "artifact": "rules",
+      "artifact_hash": "15a5095aba5043b863d2c7fb26f24c2556cad4908054874c0dff4f770af53a0f",
+      "captured_on": "2026-11-16",
+      "locator": "PDF pages 181, Rule 3:2(a)",
+      "native_id": "3:2(a)",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "court_rule",
+        "identity_namespace": "va_court_rules",
+        "identity_key": "3:2(a)",
+        "title": "Starting a circuit court civil case",
+        "citation": "Va. Sup. Ct. R. 3:2(a)",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "A civil action is commenced by filing a complaint in the clerk's office. When a statute or established practice requires, a proceeding may be commenced by a pleading styled \"Petition.\" Upon filing of the pleading, the action is then instituted and pending as to all parties defendant thereto. The statutory writ tax and clerk's fees must be paid before the summons is issued.",
+        "institution": "Virginia Judiciary",
+        "court": null,
+        "effective_from": "2021-03-01",
+        "currentness": "current_as_of",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review."
+        ],
+        "current_as_of": "2026-11-16",
+        "currentness_basis": "Supreme Court operative compilation and amendment-order index reviewed for the selected rule as of 2026-11-16."
+      },
+      "status_artifact": "amend",
+      "status_hash": "b80079b2c6a3eefe112cd30898f3e1e3c0f0aa41b9c84d53fdd777f98dfb280b"
+    },
+    "components": {
+      "artifact": "rules",
+      "artifact_hash": "15a5095aba5043b863d2c7fb26f24c2556cad4908054874c0dff4f770af53a0f",
+      "captured_on": "2026-11-16",
+      "locator": "PDF pages 181, Rule 3:2(b)–(c)",
+      "native_id": "3:2(b)–(c)",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "court_rule",
+        "identity_namespace": "va_court_rules",
+        "identity_key": "3:2(b)–(c)",
+        "title": "Caption and request for relief",
+        "citation": "Va. Sup. Ct. R. 3:2(b)–(c)",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "The complaint must be captioned with the name of the court and the full style of the action, which must include the names of all the parties. The requirements of Code § 8.01-290 may be met by giving the address or other data after the name of each defendant. (c) Form and Content of the Complaint. — (i) It is sufficient for the complaint to ask for the specific relief sought. Without more it will be understood that all defendants mentioned in the caption are made parties defendant and required to answer the complaint; that proper process against them is requested; that answers under oath are waived, except when required by law, and that all relief authorized by law and demanded in the complaint may be granted. No formal conclusion is necessary. (ii) Every complaint requesting an award of money damages must contain an ad damnum clause stating the amount of damages sought. Leave to amend the ad damnum clause is available under Rule 1:8.",
+        "institution": "Virginia Judiciary",
+        "court": null,
+        "effective_from": "2021-03-01",
+        "currentness": "current_as_of",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review."
+        ],
+        "current_as_of": "2026-11-16",
+        "currentness_basis": "Supreme Court operative compilation and amendment-order index reviewed for the selected rule as of 2026-11-16."
+      },
+      "status_artifact": "amend",
+      "status_hash": "b80079b2c6a3eefe112cd30898f3e1e3c0f0aa41b9c84d53fdd777f98dfb280b"
+    },
+    "format": {
+      "artifact": "rules",
+      "artifact_hash": "15a5095aba5043b863d2c7fb26f24c2556cad4908054874c0dff4f770af53a0f",
+      "captured_on": "2026-11-16",
+      "locator": "PDF pages 25, Rule 1:16(a)–(b)",
+      "native_id": "1:16(a)–(b)",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "court_rule",
+        "identity_namespace": "va_court_rules",
+        "identity_key": "1:16(a)–(b)",
+        "title": "Paper formatting",
+        "citation": "Va. Sup. Ct. R. 1:16(a)–(b)",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "(a) Except as provided in Rules 1:17, 3:3, 3A:23, 7A:7(c), and 8:8(f) pertaining to Electronically Filed Cases: (1) All pleadings, motions, briefs, depositions, requests for discovery and responses thereto, and all other documents filed in any clerk's office in any proceeding pursuant to these Rules must be produced on pages 8 1/2 by 11 inches in size and all typed material must be double spaced except for quotations. (2) Subdivision (a)(1) of this Rule does not apply to tables, charts, plats, photographs, and other material that cannot be reasonably reproduced on paper of that size. (3) All transcripts of proceedings, including any excerpt of a transcript filed as an exhibit, must be filed in the format of one transcript page per page. The filing of condensed, “minuscript,” or multi-page transcripts is prohibited. (b) No paper will be refused for failure to comply with the provisions of this Rule, but the clerk may require that the paper be redone in compliance with this Rule and substituted for the paper initially filed.",
+        "institution": "Virginia Judiciary",
+        "court": null,
+        "effective_from": "2023-01-09",
+        "currentness": "current_as_of",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review."
+        ],
+        "current_as_of": "2026-11-16",
+        "currentness_basis": "Supreme Court operative compilation and amendment-order index reviewed for the selected rule as of 2026-11-16."
+      },
+      "status_artifact": "amend",
+      "status_hash": "b80079b2c6a3eefe112cd30898f3e1e3c0f0aa41b9c84d53fdd777f98dfb280b"
+    },
+    "summons": {
+      "artifact": "rules",
+      "artifact_hash": "15a5095aba5043b863d2c7fb26f24c2556cad4908054874c0dff4f770af53a0f",
+      "captured_on": "2026-11-16",
+      "locator": "PDF pages 185, Rule 3:5(b)",
+      "native_id": "3:5(b)",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "court_rule",
+        "identity_namespace": "va_court_rules",
+        "identity_key": "3:5(b)",
+        "title": "Summons and complaint for service",
+        "citation": "Va. Sup. Ct. R. 3:5(b)",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "Upon the commencement of a civil action defendants may appear voluntarily and file responsive pleadings and may appear voluntarily and waive process, but in cases of divorce or annulment of marriage only in accordance with the provisions of the controlling statutes. With respect to defendants who do not appear voluntarily or file responsive pleadings or waive service of process, the clerk must issue summonses and securely attach one to and upon the front of each copy of the complaint to be served. The copies of the complaint, with a summons so attached, must be delivered by the clerk for service together as the plaintiff may direct.",
+        "institution": "Virginia Judiciary",
+        "court": null,
+        "effective_from": null,
+        "currentness": "current_as_of",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review."
+        ],
+        "current_as_of": "2026-11-16",
+        "currentness_basis": "Supreme Court operative compilation and amendment-order index reviewed for the selected rule as of 2026-11-16."
+      },
+      "status_artifact": "amend",
+      "status_hash": "b80079b2c6a3eefe112cd30898f3e1e3c0f0aa41b9c84d53fdd777f98dfb280b"
+    },
+    "response": {
+      "artifact": "rules",
+      "artifact_hash": "15a5095aba5043b863d2c7fb26f24c2556cad4908054874c0dff4f770af53a0f",
+      "captured_on": "2026-11-16",
+      "locator": "PDF pages 189, Rule 3:8(a)",
+      "native_id": "3:8(a)",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "court_rule",
+        "identity_namespace": "va_court_rules",
+        "identity_key": "3:8(a)",
+        "title": "Initial response to summons and complaint",
+        "citation": "Va. Sup. Ct. R. 3:8(a)",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "A defendant must file pleadings in response within 21 days after service of the summons and complaint upon that defendant, or if service of the summons has been timely waived on request under Code § 8.01-286.1, within 60 days after the date when the request for waiver was sent, or within 90 days after that date if the defendant was addressed outside the Commonwealth.",
+        "institution": "Virginia Judiciary",
+        "court": null,
+        "effective_from": "2025-08-17",
+        "currentness": "current_as_of",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review."
+        ],
+        "current_as_of": "2026-11-16",
+        "currentness_basis": "Supreme Court operative compilation and amendment-order index reviewed for the selected rule as of 2026-11-16."
+      },
+      "status_artifact": "amend",
+      "status_hash": "b80079b2c6a3eefe112cd30898f3e1e3c0f0aa41b9c84d53fdd777f98dfb280b"
+    },
+    "appeal": {
+      "artifact": "rules",
+      "artifact_hash": "15a5095aba5043b863d2c7fb26f24c2556cad4908054874c0dff4f770af53a0f",
+      "captured_on": "2026-11-16",
+      "locator": "PDF pages 474, Rule 5A:6(a)",
+      "native_id": "5A:6(a)",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "court_rule",
+        "identity_namespace": "va_court_rules",
+        "identity_key": "5A:6(a)",
+        "title": "Notice of appeal",
+        "citation": "Va. Sup. Ct. R. 5A:6(a)",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "Except as otherwise provided by statute, no appeal will be allowed unless, within 30 days after entry of final judgment or other appealable order or decree, or within any specified extension thereof granted by this Court under Rule 5A:3(a), counsel files with the clerk of the trial court a notice of appeal, and at the same time transmits, mails, or delivers a copy of such notice to all opposing counsel.",
+        "institution": "Virginia Judiciary",
+        "court": null,
+        "effective_from": null,
+        "currentness": "current_as_of",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review."
+        ],
+        "current_as_of": "2026-11-16",
+        "currentness_basis": "Supreme Court operative compilation and amendment-order index reviewed for the selected rule as of 2026-11-16."
+      },
+      "status_artifact": "amend",
+      "status_hash": "b80079b2c6a3eefe112cd30898f3e1e3c0f0aa41b9c84d53fdd777f98dfb280b"
+    },
+    "postjudgment": {
+      "artifact": "rules",
+      "artifact_hash": "15a5095aba5043b863d2c7fb26f24c2556cad4908054874c0dff4f770af53a0f",
+      "captured_on": "2026-11-16",
+      "locator": "PDF pages 2, Rule 1:1(a)",
+      "native_id": "1:1(a)",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "court_rule",
+        "identity_namespace": "va_court_rules",
+        "identity_key": "1:1(a)",
+        "title": "Trial court control of final judgment",
+        "citation": "Va. Sup. Ct. R. 1:1(a)",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "All final judgments, orders, and decrees, irrespective of terms of court, rema in under the control of the trial court and may be modified, vacated, or suspended for twenty -one days after the date of entry, and no longer. The date of entry of an y final judgment, order, or decree is the date it is signed by the judge either on paper or by electronic means in accord with Rule 1:17.",
+        "institution": "Virginia Judiciary",
+        "court": null,
+        "effective_from": "2022-01-01",
+        "currentness": "current_as_of",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review."
+        ],
+        "current_as_of": "2026-11-16",
+        "currentness_basis": "Supreme Court operative compilation and amendment-order index reviewed for the selected rule as of 2026-11-16."
+      },
+      "status_artifact": "amend",
+      "status_hash": "b80079b2c6a3eefe112cd30898f3e1e3c0f0aa41b9c84d53fdd777f98dfb280b"
+    },
+    "efiling": {
+      "artifact": "filing",
+      "artifact_hash": "0f82296921f178f6c89cc912ca7e9c24dc827421442cc700cc36e07be3cac143",
+      "captured_on": "2026-11-16",
+      "locator": "Electronic Filing, first paragraph",
+      "native_id": "VJEFS, Electronic Filing",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "court_instruction",
+        "identity_namespace": "procedure_filing",
+        "identity_key": "efiling",
+        "title": "Virginia Judiciary eFiling System",
+        "citation": "VJEFS, Electronic Filing",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "This system, for use by members of the Virginia State Bar and their designated staff, allows electronic filing of most civil cases in circuit court.",
+        "institution": "Virginia Judiciary",
+        "court": null,
+        "effective_from": null,
+        "currentness": "unresolved",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review.",
+          "Currentness is unresolved. Publisher text is reference material only."
+        ]
+      }
+    },
+    "fees": {
+      "artifact": "fees",
+      "artifact_hash": "14cacf11474a1bff402fe890a612d7f9ce2a887e3392b76b26b622e4d129b2a3",
+      "captured_on": "2026-11-16",
+      "locator": "Filing Fees & Waivers, opening paragraph",
+      "native_id": "Virginia Judiciary, Filing Fees & Waivers",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "court_instruction",
+        "identity_namespace": "procedure_fees",
+        "identity_key": "fees",
+        "title": "Filing fees and official calculator",
+        "citation": "Virginia Judiciary, Filing Fees & Waivers",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "There is not one uniform filing fee. Fees depend on case type and location.",
+        "institution": "Virginia Judiciary",
+        "court": null,
+        "effective_from": null,
+        "currentness": "unresolved",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review.",
+          "Currentness is unresolved. Publisher text is reference material only."
+        ]
+      }
+    },
+    "richmond": {
+      "artifact": "richmond",
+      "artifact_hash": "2e5bfd8f2daf47ee63bc01b3cd464c2a440c2ccd4e457b09ff359279f14e4544",
+      "captured_on": "2026-11-16",
+      "locator": "Court heading and circuit identifier",
+      "native_id": "Virginia Judiciary directory, Richmond Circuit Court",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "court_instruction",
+        "identity_namespace": "procedure_richmond",
+        "identity_key": "richmond",
+        "title": "Richmond Circuit Court",
+        "citation": "Virginia Judiciary directory, Richmond Circuit Court",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "Richmond Circuit Court 13th Judicial Circuit of Virginia",
+        "institution": "Virginia Judiciary",
+        "court": "va_richmond",
+        "effective_from": null,
+        "currentness": "unresolved",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review.",
+          "Currentness is unresolved. Publisher text is reference material only."
+        ]
+      }
+    },
+    "local": {
+      "artifact": "local",
+      "artifact_hash": "c972a3c8e3978b553bc4defe1dde91918de6a4d62ea76b6c6003a6deae8574a2",
+      "captured_on": "2026-11-16",
+      "locator": "PDF page 3, Civil Scheduling",
+      "native_id": "Richmond Circuit Court, Civil Scheduling",
+      "version": {
+        "jurisdiction": "US-VA",
+        "sovereign": "state",
+        "authority_type": "court_instruction",
+        "identity_namespace": "procedure_local",
+        "identity_key": "local",
+        "title": "Richmond civil scheduling practices",
+        "citation": "Richmond Circuit Court, Civil Scheduling",
+        "edition": "Publisher rendition captured 2026-11-16",
+        "text": "Dates will only be set on dates available to the Court and all parties. If the parties are unable to agree upon a date, the Court may invoke its authority under Rule 4:13 and Rule 1:20 to hold a Pretrial Scheduling Conference.",
+        "institution": "Virginia Judiciary",
+        "court": "va_richmond",
+        "effective_from": null,
+        "currentness": "unresolved",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review.",
+          "Currentness is unresolved. Publisher text is reference material only."
+        ]
+      }
+    },
+    "federal_service": {
+      "artifact": "federal",
+      "artifact_hash": "bd8705fc038d87e4fe222a7ea2e4324222c9430e2373fce56826bd2dfa2f8baf",
+      "captured_on": "2026-11-16",
+      "locator": "PDF page 21, printed page 2, Rule 4(c)(1)–(2)",
+      "native_id": "4(c)(1)–(2)",
+      "version": {
+        "jurisdiction": "US",
+        "sovereign": "federal",
+        "authority_type": "court_rule",
+        "identity_namespace": "frcp",
+        "identity_key": "4(c)(1)–(2)",
+        "title": "Initial federal service",
+        "citation": "Fed. R. Civ. P. 4(c)(1)–(2)",
+        "edition": "2025-12-01",
+        "text": "A summons must be served with a copy of the complaint. The plaintiff is responsible for having the summons and complaint served within the time allowed by Rule 4(m) and must furnish the necessary copies to the person who makes service. (2) By Whom. Any person who is at least 18 years old and not a party may serve a summons and complaint.",
+        "institution": "Administrative Office of the U.S. Courts",
+        "court": null,
+        "effective_from": null,
+        "currentness": "current_as_of",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review."
+        ],
+        "current_as_of": "2026-11-16",
+        "currentness_basis": "U.S. Courts current-rules index identifies the December 1, 2025 civil rules edition as of 2026-11-16."
+      },
+      "status_artifact": "federal_status",
+      "status_hash": "e6d244d2347fdce90086f84414e1adb9d5288162f80453cd639eb58845cd4d35"
+    },
+    "federal_service_old": {
+      "artifact": "federal_old",
+      "artifact_hash": "c86b327b3bbe7dd3e68ea434a2bf0bc62aee8e85229f3456f094a1b232568317",
+      "captured_on": "2026-11-16",
+      "locator": "PDF page 21, Rule 4(c)(1)–(2)",
+      "native_id": "4(c)(1)–(2)",
+      "version": {
+        "jurisdiction": "US",
+        "sovereign": "federal",
+        "authority_type": "court_rule",
+        "identity_namespace": "frcp",
+        "identity_key": "4(c)(1)–(2)",
+        "title": "Initial federal service",
+        "citation": "Fed. R. Civ. P. 4(c)(1)–(2)",
+        "edition": "2024-12-01",
+        "text": "A summons must be served with a copy of the complaint. The plaintiff is responsible for having the summons and complaint served within the time allowed by Rule 4(m) and must furnish the necessary copies to the person who makes service. (2) By Whom. Any person who is at least 18 years old and not a party may serve a summons and complaint.",
+        "institution": "Administrative Office of the U.S. Courts",
+        "court": null,
+        "effective_from": null,
+        "currentness": "historical",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review."
+        ]
+      }
+    },
+    "florida_service": {
+      "artifact": "florida",
+      "artifact_hash": "802b2f4baa44e4ca657a9d8e11e5d041f6d14021bd59aad208131952a08106b3",
+      "captured_on": "2026-11-16",
+      "locator": "2026 Florida Statutes, § 48.031(1)(a)",
+      "native_id": "Fla. Stat. § 48.031(1)(a)",
+      "version": {
+        "jurisdiction": "US-FL",
+        "sovereign": "state",
+        "authority_type": "statute",
+        "identity_namespace": "procedure_florida",
+        "identity_key": "florida_service",
+        "title": "Florida original process",
+        "citation": "Fla. Stat. § 48.031(1)(a)",
+        "edition": "2026 Florida Statutes",
+        "text": "Service of original process is made by delivering a copy of it to the person to be served with a copy of the complaint, petition, or other initial pleading or paper or by leaving the copies at his or her usual place of abode with any person residing therein who is 15 years of age or older and informing the person of their contents.",
+        "institution": "Florida Legislature",
+        "court": null,
+        "effective_from": null,
+        "currentness": "unresolved",
+        "limitations": [
+          "Bounded publisher excerpt. Scope, exceptions and applicable local or case orders require review.",
+          "Currentness is unresolved. Publisher text is reference material only."
+        ]
+      }
+    }
+  },
+  "forums": {
+    "va_circuit": {
+      "jurisdiction": "US-VA",
+      "level": "general_trial",
+      "name": "Virginia circuit courts",
+      "court_id": "Virginia circuit court class",
+      "subject_matter": [
+        "General civil jurisdiction subject to statutory exceptions"
+      ],
+      "evidence": [
+        {
+          "authority": "circuit",
+          "authority_type": "statute"
+        }
+      ],
+      "geography": [
+        "Virginia"
+      ],
+      "venue_facts": [
+        "incident_locality",
+        "defendant_location"
+      ],
+      "filing_systems": [
+        "vjefs"
+      ]
+    },
+    "va_district": {
+      "jurisdiction": "US-VA",
+      "level": "limited_trial",
+      "name": "Virginia general district courts",
+      "court_id": "Virginia general district court class",
+      "subject_matter": [
+        "Limited civil jurisdiction by claim type and amount"
+      ],
+      "evidence": [
+        {
+          "authority": "district",
+          "authority_type": "statute"
+        }
+      ],
+      "geography": [
+        "Virginia"
+      ],
+      "venue_facts": [
+        "incident_locality",
+        "defendant_location"
+      ]
+    },
+    "va_richmond": {
+      "jurisdiction": "US-VA",
+      "level": "general_trial",
+      "name": "Richmond Circuit Court",
+      "court_id": "13th Judicial Circuit of Virginia",
+      "subject_matter": [
+        "General civil jurisdiction subject to statutory exceptions"
+      ],
+      "evidence": [
+        {
+          "authority": "richmond",
+          "authority_type": "court_instruction"
+        },
+        {
+          "authority": "circuit",
+          "authority_type": "statute"
+        }
+      ],
+      "parent": "va_circuit",
+      "geography": [
+        "City of Richmond"
+      ],
+      "clerk_reference": {
+        "authority": "richmond",
+        "authority_type": "court_instruction"
+      },
+      "filing_systems": [
+        "vjefs"
+      ]
+    },
+    "us_district": {
+      "jurisdiction": "US",
+      "level": "general_trial",
+      "name": "United States district courts",
+      "court_id": "United States district court class",
+      "subject_matter": [
+        "Federal civil cases within the district court’s jurisdiction"
+      ],
+      "evidence": [
+        {
+          "authority": "federal_service",
+          "authority_type": "court_rule"
+        }
+      ],
+      "geography": [
+        "United States"
+      ]
+    }
+  },
+  "paths": {
+    "va_claim": {
+      "jurisdiction": "US-VA",
+      "legal_area": "torts",
+      "proceeding": "informal_claim",
+      "kind": "claim",
+      "label": "Ask about a liability insurance claim",
+      "description": "If an applicable policy and an insurer claim channel exist, you can ask about that process. The source describes certain insurance settlements under existing policies. Coverage, liability and payment depend on the facts.",
+      "evidence": [
+        {
+          "authority": "insurance",
+          "authority_type": "statute"
+        }
+      ],
+      "forums": [],
+      "entry_facts": [
+        "defendant_identity"
+      ],
+      "entry_stage": null,
+      "stages": {},
+      "inquiry": "compensation"
+    },
+    "va_demand": {
+      "jurisdiction": "US-VA",
+      "legal_area": "torts",
+      "proceeding": "informal_resolution",
+      "kind": "demand",
+      "label": "Ask the business for payment",
+      "description": "A request for voluntary payment can open a settlement discussion. The cited release statute illustrates consequences of certain agreements involving multiple liable parties. Any agreement requires separate review.",
+      "evidence": [
+        {
+          "authority": "settlement",
+          "authority_type": "statute"
+        }
+      ],
+      "forums": [],
+      "entry_facts": [
+        "defendant_identity"
+      ],
+      "entry_stage": null,
+      "stages": {},
+      "inquiry": "compensation"
+    },
+    "va_negotiation": {
+      "jurisdiction": "US-VA",
+      "legal_area": "torts",
+      "proceeding": "informal_resolution",
+      "kind": "negotiation",
+      "label": "Explore a settlement",
+      "description": "You and the other side can explore whether you both agree to a settlement. In the situations covered by the cited statute, signing a release may affect recovery from other parties.",
+      "evidence": [
+        {
+          "authority": "settlement",
+          "authority_type": "statute"
+        }
+      ],
+      "forums": [],
+      "entry_facts": [
+        "defendant_identity"
+      ],
+      "entry_stage": null,
+      "stages": {},
+      "inquiry": "compensation"
+    },
+    "va_litigation": {
+      "jurisdiction": "US-VA",
+      "legal_area": "torts",
+      "proceeding": "civil_injury",
+      "kind": "civil_litigation",
+      "label": "Explore a civil lawsuit",
+      "description": "A civil action is a way to seek damages in court. The court types and possible locations depend on the amount sought, the parties and where the events occurred.",
+      "evidence": [
+        {
+          "authority": "district",
+          "authority_type": "statute"
+        },
+        {
+          "authority": "commence",
+          "authority_type": "court_rule"
+        },
+        {
+          "authority": "venue",
+          "authority_type": "statute"
+        }
+      ],
+      "forums": [
+        "va_circuit",
+        "va_district",
+        "va_richmond"
+      ],
+      "entry_facts": [],
+      "entry_stage": "forum",
+      "stages": {
+        "forum": {
+          "label": "Identify possible court types and locations",
+          "prerequisite_facts": [],
+          "completion_facts": [
+            "incident_locality",
+            "amount_sought",
+            "defendant_identity",
+            "defendant_location"
+          ],
+          "transitions": [
+            "filing"
+          ]
+        },
+        "filing": {
+          "label": "Understand starting a circuit court case",
+          "prerequisite_facts": [],
+          "completion_facts": [
+            "complaint_filed",
+            "summons_issued"
+          ],
+          "transitions": [
+            "service"
+          ]
+        },
+        "service": {
+          "label": "Understand initial service",
+          "prerequisite_facts": [],
+          "completion_facts": [
+            "service_date"
+          ],
+          "transitions": [
+            "later_stages",
+            "appeal",
+            "post_judgment"
+          ]
+        },
+        "later_stages": {
+          "label": "Read the Richmond civil scheduling practices",
+          "prerequisite_facts": [],
+          "completion_facts": [],
+          "transitions": []
+        },
+        "appeal": {
+          "label": "Understand the notice of appeal",
+          "prerequisite_facts": [
+            "order_entered"
+          ]
+        },
+        "post_judgment": {
+          "label": "Read the trial-court final judgment rule",
+          "prerequisite_facts": [
+            "order_entered"
+          ]
+        }
+      },
+      "inquiry": "compensation"
+    },
+    "va_response": {
+      "jurisdiction": "US-VA",
+      "legal_area": "civil_procedure",
+      "proceeding": "circuit_civil_response",
+      "kind": "defense",
+      "label": "Understand the response process",
+      "description": "A circuit court summons and complaint can require a written response. The document type, court and service details determine which rules to check.",
+      "evidence": [
+        {
+          "authority": "response",
+          "authority_type": "court_rule"
+        }
+      ],
+      "forums": [
+        "va_circuit",
+        "va_richmond"
+      ],
+      "entry_facts": [],
+      "entry_stage": "response",
+      "stages": {
+        "response": {
+          "label": "Check the response rule",
+          "prerequisite_facts": [
+            "document_type"
+          ],
+          "completion_facts": [],
+          "transitions": []
+        }
+      },
+      "inquiry": "response"
+    },
+    "federal_service": {
+      "jurisdiction": "US",
+      "legal_area": "civil_procedure",
+      "proceeding": "federal_civil_service",
+      "kind": "civil_litigation",
+      "label": "Understand federal initial service",
+      "description": "Federal civil rules describe serving a summons and complaint in a U.S. district court.",
+      "evidence": [
+        {
+          "authority": "federal_service",
+          "authority_type": "court_rule"
+        }
+      ],
+      "forums": [
+        "us_district"
+      ],
+      "entry_facts": [],
+      "entry_stage": "service",
+      "stages": {
+        "service": {
+          "label": "Understand federal service",
+          "prerequisite_facts": [],
+          "completion_facts": [],
+          "transitions": []
+        }
+      },
+      "inquiry": "service"
+    },
+    "florida_service": {
+      "jurisdiction": "US-FL",
+      "legal_area": "civil_procedure",
+      "proceeding": "florida_civil_service",
+      "kind": "civil_litigation",
+      "label": "Read the Florida service provision",
+      "description": "The retained Florida statute describes initial civil process. The retained edition still needs a currentness review.",
+      "evidence": [
+        {
+          "authority": "florida_service",
+          "authority_type": "statute"
+        }
+      ],
+      "forums": [],
+      "entry_facts": [],
+      "entry_stage": "service",
+      "stages": {
+        "service": {
+          "label": "Review the published Florida provision",
+          "prerequisite_facts": [],
+          "completion_facts": [],
+          "transitions": []
+        }
+      },
+      "inquiry": "service"
+    }
+  },
+  "requirements": {
+    "court_types": {
+      "path": "va_litigation",
+      "stage": "forum",
+      "classification": "conditional_procedural_requirement",
+      "action": "informational",
+      "trigger": "Review of this procedural stage",
+      "forum": null,
+      "text": "For the personal-injury claims covered by this section, Virginia general district court generally has exclusive original jurisdiction up to $4,500 and shares jurisdiction with circuit court above $4,500 through $50,000, excluding interest and attorney fees.",
+      "evidence": [
+        {
+          "authority": "district",
+          "authority_type": "statute"
+        }
+      ],
+      "facts": [
+        "amount_sought"
+      ],
+      "conditions": [
+        "Statutory exceptions and territorial limits apply."
+      ]
+    },
+    "venue": {
+      "path": "va_litigation",
+      "stage": "forum",
+      "classification": "conditional_procedural_requirement",
+      "action": "informational",
+      "trigger": "Review of this procedural stage",
+      "forum": null,
+      "text": "When Virginia’s permissible-venue rules apply, relevant locations can include where events giving rise to the claim occurred or where a defendant has its principal office or registered office.",
+      "evidence": [
+        {
+          "authority": "venue",
+          "authority_type": "statute"
+        }
+      ],
+      "facts": [
+        "incident_locality",
+        "defendant_location"
+      ],
+      "conditions": [
+        "Check whether a preferred-venue rule applies."
+      ]
+    },
+    "commence": {
+      "path": "va_litigation",
+      "stage": "filing",
+      "classification": "conditional_procedural_requirement",
+      "action": "required",
+      "trigger": "Opening a circuit court civil case",
+      "forum": "va_circuit",
+      "text": "An ordinary Virginia circuit court civil case starts by filing a complaint with the clerk.",
+      "evidence": [
+        {
+          "authority": "commence",
+          "authority_type": "court_rule"
+        }
+      ],
+      "filing": {
+        "method": "unspecified",
+        "destination": "Clerk of the circuit court",
+        "eligibility": "Court, proceeding and local practice must be verified.",
+        "components": [
+          "Complaint"
+        ],
+        "exceptions": [
+          "Some proceedings begin by petition."
+        ]
+      }
+    },
+    "components": {
+      "path": "va_litigation",
+      "stage": "filing",
+      "classification": "conditional_procedural_requirement",
+      "action": "required",
+      "trigger": "Review of this procedural stage",
+      "forum": "va_circuit",
+      "text": "A complaint identifies the court and all parties and says what relief is requested. A complaint seeking money damages states the amount sought.",
+      "evidence": [
+        {
+          "authority": "components",
+          "authority_type": "court_rule"
+        }
+      ],
+      "filing": {
+        "method": "unspecified",
+        "destination": "Clerk of the circuit court",
+        "eligibility": "Circuit court civil complaint",
+        "components": [
+          "Court and full party names",
+          "Requested relief",
+          "Amount sought for money damages"
+        ]
+      }
+    },
+    "paper_format": {
+      "path": "va_litigation",
+      "stage": "filing",
+      "classification": "conditional_procedural_requirement",
+      "action": "required",
+      "trigger": "Review of this procedural stage",
+      "forum": "va_circuit",
+      "text": "The rule specifies letter-size paper and double spacing for typed material, with exceptions for quotations and certain exhibits.",
+      "evidence": [
+        {
+          "authority": "format",
+          "authority_type": "court_rule"
+        }
+      ],
+      "filing": {
+        "method": "paper",
+        "destination": "Clerk’s office",
+        "eligibility": "Paper material covered by Rule 1:16",
+        "formatting": "8.5 by 11 inches and double-spaced typed material",
+        "exceptions": [
+          "Quotations",
+          "Certain exhibits",
+          "Electronic-case provisions"
+        ]
+      }
+    },
+    "signature": {
+      "path": "va_litigation",
+      "stage": "filing",
+      "classification": "conditional_procedural_requirement",
+      "action": "required",
+      "trigger": "Review of this procedural stage",
+      "forum": "va_circuit",
+      "text": "An unrepresented party generally signs their papers and gives a mailing address. In a court of record the first pleading also gives an email address and a phone number if available.",
+      "evidence": [
+        {
+          "authority": "unrepresented",
+          "authority_type": "statute"
+        }
+      ],
+      "filing": {
+        "method": "unspecified",
+        "destination": "Clerk of the circuit court",
+        "eligibility": "Papers of an unrepresented party subject to § 8.01-271.1(A)",
+        "signature": "Unrepresented party signs and supplies applicable contact information.",
+        "exceptions": [
+          "Additional rules apply to a minor without counsel."
+        ]
+      }
+    },
+    "filing_fee": {
+      "path": "va_litigation",
+      "stage": "filing",
+      "classification": "conditional_procedural_requirement",
+      "action": "required",
+      "trigger": "Before issuance of the summons",
+      "forum": "va_circuit",
+      "text": "The commencement rule addresses payment of the statutory writ tax and clerk fees before the summons is issued.",
+      "evidence": [
+        {
+          "authority": "commence",
+          "authority_type": "court_rule"
+        }
+      ],
+      "fee": {
+        "payment_event": "Statutory writ tax and clerk fees before issuance of the summons"
+      }
+    },
+    "fee_reference": {
+      "path": "va_litigation",
+      "stage": "filing",
+      "classification": "conditional_procedural_requirement",
+      "action": "informational",
+      "trigger": "Review of this procedural stage",
+      "forum": "va_circuit",
+      "text": "The judiciary describes variable filing fees based on case type and location.",
+      "evidence": [
+        {
+          "authority": "fees",
+          "authority_type": "court_instruction"
+        }
+      ],
+      "fee": {
+        "variable_by": [
+          "Case type",
+          "Court location"
+        ]
+      }
+    },
+    "efiling": {
+      "path": "va_litigation",
+      "stage": "filing",
+      "classification": "conditional_procedural_requirement",
+      "action": "optional",
+      "trigger": "Review of this procedural stage",
+      "forum": "va_circuit",
+      "text": "The judiciary describes VJEFS as serving Virginia State Bar members and their designated staff for most circuit civil cases.",
+      "evidence": [
+        {
+          "authority": "efiling",
+          "authority_type": "court_instruction"
+        }
+      ],
+      "filing": {
+        "method": "electronic",
+        "destination": "Participating circuit court",
+        "system": "vjefs",
+        "eligibility": "Virginia State Bar members and designated staff for eligible cases.",
+        "exceptions": [
+          "Court participation and case eligibility require verification."
+        ]
+      }
+    },
+    "summons": {
+      "path": "va_litigation",
+      "stage": "service",
+      "classification": "conditional_procedural_requirement",
+      "action": "required",
+      "trigger": "After commencement and summons issuance",
+      "forum": "va_circuit",
+      "text": "For defendants covered by the rule, the clerk attaches the issued summons to the copy of the complaint for service.",
+      "evidence": [
+        {
+          "authority": "summons",
+          "authority_type": "court_rule"
+        }
+      ],
+      "service": {
+        "recipient": "Defendant subject to service",
+        "documents": [
+          "Issued summons",
+          "Copy of complaint"
+        ],
+        "methods": [
+          "Use an authorized server and legally permitted method"
+        ],
+        "actor": "Clerk issues and attaches summons",
+        "trigger": "After commencement where service is required",
+        "exceptions": [
+          "Voluntary appearance, responsive pleading, waiver or disability may change requirements."
+        ]
+      }
+    },
+    "entity_service": {
+      "path": "va_litigation",
+      "stage": "service",
+      "classification": "conditional_procedural_requirement",
+      "action": "required",
+      "trigger": "Original service on a covered Virginia entity",
+      "forum": "va_circuit",
+      "text": "The domestic-entity statute describes personal service on a Virginia LLC’s registered agent, and on an officer, director or registered agent for a covered Virginia corporation.",
+      "evidence": [
+        {
+          "authority": "service",
+          "authority_type": "statute"
+        }
+      ],
+      "facts": [
+        "defendant_type"
+      ],
+      "conditions": [
+        "Domestic corporation or LLC",
+        "Waiver and entity-specific exceptions may apply."
+      ],
+      "service": {
+        "recipient": "Officer, director or registered agent for covered corporation; registered agent for covered LLC",
+        "methods": [
+          "Personal service",
+          "Statutory substituted service where permitted"
+        ],
+        "trigger": "Service on a covered Virginia entity",
+        "entity_type": "Domestic stock corporation, nonstock corporation or limited liability company",
+        "exceptions": [
+          "Municipal and quasi-governmental corporations",
+          "Waiver",
+          "Other legally authorized methods"
+        ]
+      }
+    },
+    "service_actor": {
+      "path": "va_litigation",
+      "stage": "service",
+      "classification": "conditional_procedural_requirement",
+      "action": "informational",
+      "trigger": "Arranging initial service",
+      "forum": "va_circuit",
+      "text": "The statute authorizes a sheriff within territorial limits or an adult who is neither a party nor otherwise interested in the dispute for the ordinary service covered here.",
+      "evidence": [
+        {
+          "authority": "server",
+          "authority_type": "statute"
+        }
+      ]
+    },
+    "service_proof": {
+      "path": "va_litigation",
+      "stage": "service",
+      "classification": "conditional_procedural_requirement",
+      "action": "required",
+      "trigger": "After service",
+      "forum": "va_circuit",
+      "text": "The person serving process returns it to the clerk. The rules for proof differ for a sheriff and a qualified private server.",
+      "evidence": [
+        {
+          "authority": "proof",
+          "authority_type": "statute"
+        }
+      ],
+      "service": {
+        "recipient": "Clerk of the court",
+        "documents": [
+          "Return of process"
+        ],
+        "methods": [
+          "Sheriff return",
+          "Qualified private-server affidavit"
+        ],
+        "actor": "Person who served process",
+        "trigger": "After service",
+        "proof": "Date, manner and party served, plus applicable return details",
+        "exceptions": [
+          "Court direction and weekend or holiday provisions apply."
+        ]
+      }
+    },
+    "richmond_scheduling": {
+      "path": "va_litigation",
+      "stage": "later_stages",
+      "classification": "conditional_procedural_requirement",
+      "action": "informational",
+      "trigger": "Civil scheduling in Richmond Circuit Court",
+      "forum": "va_richmond",
+      "text": "Published Richmond court practices discuss scheduling conferences when parties cannot agree on a date.",
+      "evidence": [
+        {
+          "authority": "local",
+          "authority_type": "court_instruction"
+        }
+      ],
+      "local": true
+    },
+    "appeal": {
+      "path": "va_litigation",
+      "stage": "appeal",
+      "classification": "conditional_procedural_requirement",
+      "action": "informational",
+      "trigger": "Entry of an appealable order",
+      "forum": "va_circuit",
+      "text": "After entry of an appealable order, the cited rule describes a notice filed with the trial court clerk, with statutory and extension exceptions.",
+      "evidence": [
+        {
+          "authority": "appeal",
+          "authority_type": "court_rule"
+        }
+      ],
+      "conditions": [
+        "Whether the order can be appealed and the right forum require review."
+      ]
+    },
+    "postjudgment": {
+      "path": "va_litigation",
+      "stage": "post_judgment",
+      "classification": "conditional_procedural_requirement",
+      "action": "informational",
+      "trigger": "Entry of final judgment",
+      "forum": "va_circuit",
+      "text": "The cited court rule generally gives the trial court a limited period after entry of final judgment to modify, vacate or suspend it.",
+      "evidence": [
+        {
+          "authority": "postjudgment",
+          "authority_type": "court_rule"
+        }
+      ],
+      "conditions": [
+        "Finality, suspension and statutory exceptions require review."
+      ]
+    },
+    "response_deadline": {
+      "path": "va_response",
+      "stage": "response",
+      "classification": "conditional_procedural_requirement",
+      "action": "required",
+      "trigger": "Service of summons and complaint on the defendant",
+      "forum": "va_circuit",
+      "text": "The ordinary circuit court response period is 21 days after service of the summons and complaint. A timely waiver uses a different period tied to when the waiver request was sent.",
+      "evidence": [
+        {
+          "authority": "response",
+          "authority_type": "court_rule"
+        }
+      ],
+      "facts": [
+        "document_type",
+        "service_date",
+        "service_mode",
+        "extension_status",
+        "local_rules_checked"
+      ],
+      "conditions": [
+        "Verified ordinary service, rather than waiver",
+        "Check orders, exceptions and clerk closures."
+      ],
+      "deadline": {
+        "trigger": "service_of_summons_and_complaint",
+        "period": 21,
+        "unit": "calendar_days",
+        "counting": "exclude_trigger_include_last",
+        "last_day": "next_open_business_day",
+        "counting_authority": {
+          "authority": "count",
+          "authority_type": "statute"
+        },
+        "service_effects": "Timely waiver uses 60 days from request, or 90 days if addressed outside Virginia.",
+        "extensions": "Check for any extensions and case-specific orders."
+      }
+    },
+    "federal_service": {
+      "path": "federal_service",
+      "stage": "service",
+      "classification": "conditional_procedural_requirement",
+      "action": "required",
+      "trigger": "Initial service after filing",
+      "forum": "us_district",
+      "text": "The plaintiff generally supplies the copies and is responsible for having the summons and complaint served. A server must generally be an adult who is not a party.",
+      "evidence": [
+        {
+          "authority": "federal_service",
+          "authority_type": "court_rule"
+        }
+      ],
+      "conditions": [
+        "Federal civil district court proceeding",
+        "Check waiver, appointed servers and specific methods."
+      ],
+      "service": {
+        "recipient": "Defendant",
+        "documents": [
+          "Summons",
+          "Copy of complaint"
+        ],
+        "methods": [
+          "Use eligible adult nonparty"
+        ],
+        "actor": "Plaintiff arranges service",
+        "trigger": "After filing and issuance",
+        "exceptions": [
+          "Waiver",
+          "Marshal or appointed person",
+          "Other Rule 4 provisions"
+        ]
+      }
+    },
+    "florida_service": {
+      "path": "florida_service",
+      "stage": "service",
+      "classification": "conditional_procedural_requirement",
+      "action": "required",
+      "trigger": "Florida original civil process",
+      "forum": null,
+      "text": "The retained statute describes personal delivery of initial papers or delivery to a qualifying resident at the usual home.",
+      "evidence": [
+        {
+          "authority": "florida_service",
+          "authority_type": "statute"
+        }
+      ],
+      "service": {
+        "recipient": "Person to be served or qualifying resident",
+        "documents": [
+          "Original process copy",
+          "Initial pleading copy"
+        ],
+        "methods": [
+          "Personal delivery",
+          "Qualifying abode delivery"
+        ],
+        "trigger": "Initial process in Florida",
+        "exceptions": [
+          "Additional provisions and entity-specific rules apply."
+        ]
+      }
+    }
+  }
+}

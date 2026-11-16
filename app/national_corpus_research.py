@@ -156,7 +156,8 @@ class NormalizedAuthorityProvider:
             documents.append(AuthorityDocument(source, passages, opinion.text))
         return tuple(documents)
 
-    def _source(self, matter, plan, version, observation, metadata):
+    @staticmethod
+    def _source(matter, plan, version, observation, metadata):
         today = date.today().isoformat()
         retrieved = observation["first_retrieved"][:10]
         dates = {key: value.isoformat() if value else None for key, value in {
@@ -167,10 +168,11 @@ class NormalizedAuthorityProvider:
         return {
             "id": "corpus-" + version.version_id, "schema_version": "1.0.0", "record_version": "0.1.0",
             "last_modified": today, "title": version.title, "status": "proposed",
-            "source_type": SOURCE_TYPES[version.authority_type], "url": observation["url"],
+            "source_type": SOURCE_TYPES.get(version.authority_type, version.authority_type), "url": observation["url"],
             "jurisdiction": {"country": "US", "state": matter.state, "agency": version.agency},
             "legal_areas": [plan.legal_area], "review": proposed_review(),
-            "authority": {"level": "official_primary" if metadata.official_publisher else "primary_reproduction",
+            "authority": {"level": ("official_secondary" if version.authority_type == "court_instruction" else
+                                    "official_primary" if metadata.official_publisher else "primary_reproduction"),
                           "issuing_body": version.institution or version.legislature or metadata.attribution},
             "dates": dates,
             "provenance": {"source_content_version": version.edition, "content_hash": "sha256:" + version.normalized_hash,
