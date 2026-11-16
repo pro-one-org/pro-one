@@ -23,6 +23,23 @@ from app.research_synthesis import ResearchSynthesisService
 CHOICE_DOMAIN = b"pro-one/procedural-choice/v1"
 DEVELOPMENT_CHOICE_KEY = secrets.token_bytes(32)
 BLOCKED_CLASSIFICATIONS = {"strategy_legal_judgment", "reserved_legal_act"}
+US_STATE_NAMES = {
+    "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas", "CA": "California",
+    "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware", "DC": "District of Columbia",
+    "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho", "IL": "Illinois",
+    "IN": "Indiana", "IA": "Iowa", "KS": "Kansas", "KY": "Kentucky", "LA": "Louisiana",
+    "ME": "Maine", "MD": "Maryland", "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota",
+    "MS": "Mississippi", "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada",
+    "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York",
+    "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio", "OK": "Oklahoma", "OR": "Oregon",
+    "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina", "SD": "South Dakota",
+    "TN": "Tennessee", "TX": "Texas", "UT": "Utah", "VT": "Vermont", "VA": "Virginia",
+    "WA": "Washington", "WV": "West Virginia", "WI": "Wisconsin", "WY": "Wyoming",
+}
+STATE_NAME_SCOPES = {name.casefold(): f"US-{code}" for code, name in US_STATE_NAMES.items()}
+STATE_NAME_PATTERN = re.compile(
+    r"\b(?:" + "|".join(map(re.escape, sorted(STATE_NAME_SCOPES, key=len, reverse=True))) + r")\b", re.I,
+)
 FACT_QUESTIONS = {
     "forum": "What court are you considering, or what court is named on the document?",
     "document_type": "What is the full title on the court papers? If this is a summons, was a complaint included?",
@@ -162,15 +179,12 @@ def infer_subject(message):
     return None
 
 
-def infer_jurisdiction(message, jurisdictions):
-    explicit = {scope for scope, item in jurisdictions.items() if item.state_name
-                and re.search(rf"(?<!West )\b{re.escape(item.state_name)}\b", message, re.I)}
+def infer_jurisdiction(message):
+    explicit = {STATE_NAME_SCOPES[match.group().casefold()] for match in STATE_NAME_PATTERN.finditer(message)}
     if re.search(r"\b(?:federal (?:district )?court|(?:United States|U\.?S\.?) district court)\b", message, re.I):
         if not re.search(r"\b(?:state court|circuit court|general district court)\b", message, re.I):
             return {"US"}
         explicit.add("US")
-    if re.search(r"\bWest Virginia\b", message, re.I):
-        explicit.add("US-WV")
     return explicit
 
 
@@ -190,7 +204,7 @@ class ProceduralResearchService:
             return self.result("reserved_legal_act", classification="reserved_legal_act")
         if re.search(r"\b(?:choose|pick|decide)\b.{0,55}\b(?:for me|on my behalf)\b", request.message, re.I):
             return self.result("legal_judgment_required", classification="strategy_legal_judgment")
-        named = infer_jurisdiction(request.message, self.catalog.jurisdictions)
+        named = infer_jurisdiction(request.message)
         if len(named) > 1 or (named and request.jurisdiction and request.jurisdiction not in named):
             return self.result("jurisdiction_confirmation_required")
         jurisdiction = request.jurisdiction or next(iter(named), None)
@@ -200,8 +214,11 @@ class ProceduralResearchService:
         on = request.as_of or self.catalog.reference_date
         options = tuple(key for key, path in self.catalog.paths.items()
                         if path.jurisdiction == jurisdiction and path.inquiry == subject)
-        if request.forum and (request.forum not in self.catalog.forums
-                              or self.catalog.forums[request.forum].jurisdiction != jurisdiction
+        forum = self.catalog.forums.get(request.forum)
+        reported_district = jurisdiction == "US-VA" and re.search(r"\bGeneral District Court\b", request.message, re.I)
+        if reported_district and (subject == "response" or (forum and forum.level != "limited_trial")):
+            return self.result("wrong_forum", jurisdiction=jurisdiction)
+        if request.forum and (not forum or forum.jurisdiction != jurisdiction
                               or subject != "compensation" and not any(request.forum in self.catalog.paths[key].forums for key in options)):
             return self.result("wrong_forum", jurisdiction=jurisdiction)
         if not options:
@@ -317,12 +334,15 @@ class ProceduralResearchService:
         registry = self.forums(path, request.forum, on) if stage == "forum" and not request.authority_type else []
         transitions = []
         if not missing and synthesis:
-            transitions = [
-                target for target in path.stages[stage].transitions
-                if not self.stage_prerequisites(path, target, request.facts)
-                and select_requirements(self.catalog, path_id=path_id, stage=target, jurisdiction=path.jurisdiction,
-                                        forum=request.forum, authority_type=request.authority_type)
-            ]
+            for target in path.stages[stage].transitions:
+                if self.stage_prerequisites(path, target, request.facts):
+                    continue
+                target_rows = select_requirements(self.catalog, path_id=path_id, stage=target,
+                                                  jurisdiction=path.jurisdiction, forum=request.forum,
+                                                  authority_type=request.authority_type)
+                if any(all(is_dated(self.catalog.authorities[ref.authority], on) for ref in requirement_evidence(row))
+                       for row in target_rows.values()):
+                    transitions.append(target)
         return self.result("procedure_explained" if synthesis else "reference_only", **base, stage=stage,
                            stage_label=path.stages[stage].label,
                            requirements=items, responses=rendered, evidence=self.evidence(refs), forums=registry,

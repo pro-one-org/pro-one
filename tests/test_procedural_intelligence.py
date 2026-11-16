@@ -137,11 +137,18 @@ class ProceduralIntelligenceTests(unittest.TestCase):
         self.assertNotIn("evidence", conflict)
         self.assertEqual("outside_bounded_coverage", service.respond(ProceduralRequest(
             message="I slipped in West Virginia and want them to pay."))["status"])
+        other = service.respond(ProceduralRequest(message="I fell in Maryland and want them to pay.",
+                                                   jurisdiction="US-VA"))
+        self.assertEqual("jurisdiction_confirmation_required", other["status"])
 
     def test_wrong_court_and_wrong_stage_do_not_leak_evidence(self):
         wrong = self.service().respond(ProceduralRequest(message=SERVED, forum="va_district"))
         self.assertEqual("wrong_forum", wrong["status"])
         self.assertNotIn("evidence", wrong)
+        conflicting = self.service().respond(ProceduralRequest(
+            message="I was served a Virginia General District Court summons and complaint.", forum="va_circuit"))
+        self.assertEqual("wrong_forum", conflicting["status"])
+        self.assertNotIn("choice_token", conflicting)
         result = self.choose(FALL, "va_litigation", stage="response")
         self.assertEqual("invalid_stage", result["status"])
         self.assertNotIn("requirements", result)
