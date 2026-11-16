@@ -175,11 +175,7 @@ class MatterService:
             if new_party and initial_party and field == initial_party[0] and not patch["parties"]:
                 patch["parties"].append(Party(id=party, origin=row.id, role=new_party_role or "business_involved"))
             if field in IDENTITY_FIELDS:
-                anchor = None
-                if evidence and evidence.external:
-                    known = projection(base).get(Target(field="registry_id", subject=party), {}).get("preferred")
-                    if known and known.status == "documented" and known.value == f"{evidence.external.provider}/{evidence.external.record_id}":
-                        anchor = known.id
+                anchor = registry_anchor(base, party, evidence.external) if evidence and evidence.external else None
                 patch["identities"].append(IdentityCandidate(
                     party=party, assertion=row.id, relationship={"legal_name": "legal_name", "operator": "operator",
                     "property_owner": "owner"}[field], corroborates=anchor))
@@ -220,8 +216,10 @@ class MatterService:
         text = record.excerpt
         digest = sha256(record.model_dump_json().encode()).hexdigest()
         existing = {item.id for item in base.evidence if item.content_hash == digest}
-        if any(isinstance(row.source, ExternalSource) and row.source.evidence_id in existing
-               and row.target.subject == party for row in base.assertions):
+        prior = {row.id for row in base.assertions if isinstance(row.source, ExternalSource)
+                 and row.source.evidence_id in existing and row.target.subject == party}
+        if prior and (any(row.assertion in prior and row.corroborates for row in base.identities)
+                      or not registry_anchor(base, party, record.source)):
             return base
         on = now()
         item = Evidence(id=uuid4(), kind=record.kind, origin="external_record", content_hash=digest,
@@ -233,6 +231,22 @@ class MatterService:
             raise MatterError("external_record_requires_party_and_identity_evidence")
         patch = self.add_rows(base, rows, on, None, evidence=item, party=party)
         return self.store.update(base, self.revise(base, on, evidence=(item,), **patch))
+
+
+def registry_anchor(base, party, record):
+    fields = projection(base)
+    known = fields.get(Target(field="registry_id", subject=party), {}).get("preferred")
+    scope = next((row for row in base.parties if row.id == party), None)
+    proof = next((item for item in base.evidence if known and isinstance(known.source, DocumentSource)
+                  and item.id == known.source.evidence_id), None)
+    origin = next((row for row in base.assertions if scope and row.id == scope.origin), None)
+    if (known and proof and origin and proof.content_hash == record.link_evidence_hash
+            and equivalent(origin.value, record.subject_label)
+            and known.value == f"{record.provider}/{record.record_id}"
+            and not any(row.previous == origin.id for row in base.corrections)
+            and not any(row.assertion == origin.id for row in base.disputes)):
+        return known.id
+    return None
 
 
 def issue_supported(text, issue):

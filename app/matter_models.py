@@ -19,7 +19,7 @@ PartyRole = Literal["user", "business_involved", "potential_defendant", "owner",
 EntityType = Literal["individual", "business", "government", "insurer", "unknown"]
 FieldName = Literal[
     "jurisdiction", "matter_type", "goal", "brand", "legal_name", "alias", "property_owner",
-    "operator", "registry_id", "registered_agent", "hazard", "warning_sign", "injury", "employee_notice",
+    "operator", "registry_id", "entity_type", "registered_agent", "hazard", "warning_sign", "injury", "employee_notice",
     "medical_expenses", "lost_wages", "future_treatment", "surveillance", "incident_report",
     "date", "location", "street", "allegation", "possible_legal_issue", "forum",
 ] | ProceduralFact
@@ -116,6 +116,14 @@ class ExternalRecord(Record):
     retrieved_at: AwareDatetime
     current_as_of: date | None = None
     locator: Text
+    link_evidence_hash: Digest | None = None
+    subject_label: Text | None = None
+
+    @model_validator(mode="after")
+    def link_scope(self):
+        if bool(self.link_evidence_hash) != bool(self.subject_label):
+            raise ValueError("incomplete external identity link scope")
+        return self
 
 
 class Evidence(Record):
@@ -164,7 +172,6 @@ class Party(Record):
 class IdentityCandidate(Record):
     party: UUID
     assertion: UUID
-    entity_type: EntityType = "unknown"
     relationship: Literal["legal_name", "owner", "operator"] = "legal_name"
     corroborates: UUID | None = None
 

@@ -2,11 +2,11 @@
 from collections import defaultdict
 from datetime import datetime
 
-from app.matter_ingest import MONTH_DATE, FACT_FIELDS, grounded_rows
+from app.matter_ingest import FACT_FIELDS, MONTH_DATE, MONTHS, grounded_rows
 from app.matter_models import DocumentSource, ExternalSource, Gap, InferenceSource, Target, Temporal, UserSource
 from app.procedural_research import FACT_QUESTIONS, MatterFacts
 
-PARTY_FIELDS = {"brand", "legal_name", "registry_id", "alias", "operator", "property_owner", "registered_agent"}
+PARTY_FIELDS = {"brand", "legal_name", "registry_id", "entity_type", "alias", "operator", "property_owner", "registered_agent"}
 EVENT_FIELDS = {"date", "location", "street"}
 IDENTITY_FIELDS = {"legal_name", "operator", "property_owner"}
 INDEPENDENT = {"alias", "allegation"}
@@ -60,7 +60,7 @@ def overlap(left, right):
         partial, dated = (left, right) if left.start is None else (right, left)
         parsed = MONTH_DATE.fullmatch(partial.original)
         if parsed and dated.end is None:
-            return dated.start.strftime("%B").casefold() == parsed[1].casefold() and dated.start.day == int(parsed[2])
+            return MONTHS[dated.start.month - 1].casefold() == parsed[1].casefold() and dated.start.day == int(parsed[2])
         return True
     if isinstance(left.start, datetime) != isinstance(right.start, datetime):
         return False
@@ -121,6 +121,8 @@ def validate(matter):
                 isinstance(source, DocumentSource) and source.page != page_at(item, source.offset)
             ):
                 raise MatterError("invalid_source_locator")
+        if isinstance(source, ExternalSource) and row.target.field not in IDENTITY_FIELDS:
+            raise MatterError("unsupported_external_fact")
         if row.status != source_status(source, item):
             raise MatterError("invalid_source_status")
         if row.status == "inferred":
@@ -150,7 +152,11 @@ def validate(matter):
         if row.corroborates:
             anchor = assertions.get(row.corroborates)
             item = evidence.get(assertion.source.evidence_id) if isinstance(assertion.source, ExternalSource) else None
-            if (not item or not anchor or anchor.status != "documented"
+            anchor_evidence = evidence.get(anchor.source.evidence_id) if anchor and isinstance(anchor.source, DocumentSource) else None
+            origin = assertions[parties[row.party].origin]
+            if (not item or not anchor or not anchor_evidence or anchor.status != "documented"
+                    or anchor_evidence.content_hash != item.external.link_evidence_hash
+                    or not equivalent(origin.value, item.external.subject_label)
                     or anchor.target != Target(field="registry_id", subject=row.party)
                     or anchor.value != f"{item.external.provider}/{item.external.record_id}" or anchor.received_at > assertion.received_at):
                 raise MatterError("invalid_identity_link")
@@ -187,8 +193,9 @@ def projection(matter):
     superseded = {row.previous for row in matter.corrections}
     confirmed = {row.replacement for row in matter.corrections}
     disputed = {row.assertion for row in matter.disputes}
-    linked = {row.assertion: row.corroborates for row in matter.identities if row.corroborates}
-    gaps = {gap.target: gap for gap in matter.gaps}
+    origins = {row.id: row.origin for row in matter.parties}
+    linked = {row.assertion: row.corroborates for row in matter.identities
+              if row.corroborates and origins[row.party] not in superseded | disputed}
     blocked_links = superseded | disputed
     for target, rows in grouped.items():
         if target.field == "registry_id":
@@ -196,7 +203,17 @@ def projection(matter):
             if any(not equivalent(left.value, right.value) for left in live for right in live):
                 blocked_links |= {row.id for row in live}
     result = {}
-    scoped = {target.field for target in grouped if target.subject is not None}
+    gaps = {gap.target: gap for gap in matter.gaps}
+    for party in matter.parties:
+        for field in {"legal_name", "operator", "property_owner", "registered_agent"}:
+            target = Target(field=field, subject=party.id)
+            gaps[target] = Gap(target=target, status="unresolved", question=BASE_GAPS[field])
+    for event in matter.events:
+        if event.kind != "document_received":
+            target = Target(field="date", subject=event.id)
+            gaps[target] = Gap(target=target, status="unknown", question=
+                                      "When did this event occur? Include the year if you know it.")
+    scoped = {target.field for target in grouped.keys() | gaps.keys() if target.subject is not None}
     for target in sorted(grouped.keys() | gaps.keys(), key=lambda t: (str(t.subject or ""), t.field)):
         if target.subject is None and target.field in scoped:
             continue
@@ -231,6 +248,7 @@ def projection(matter):
                           "confirmed": bool(preferred and preferred.id in confirmed),
                           "assertions": tuple(row.id for row in active),
                           "superseded": tuple(row.id for row in grouped[target] if row.id in superseded),
+                          "question_template": gaps[target].question if target in gaps else None,
                           "conflicts": tuple(conflicts) if target.field not in INDEPENDENT else ()}
     return result
 
@@ -241,7 +259,7 @@ def questions(fields):
         if status in {"unknown", "unresolved", "disputed", "conflicting", "alleged"}:
             prompt = (f"Which account of {target.field.replace('_', ' ')} do you confirm?"
                       if status in {"disputed", "conflicting"} else
-                      BASE_GAPS.get(target.field) or FACT_QUESTIONS.get(target.field)
+                      fact["question_template"] or BASE_GAPS.get(target.field) or FACT_QUESTIONS.get(target.field)
                       or f"What evidence supports {target.field.replace('_', ' ')}?")
             yield {"target": target, "reason": status, "question": prompt}
 

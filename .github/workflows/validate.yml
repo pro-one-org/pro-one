@@ -50,6 +50,9 @@ jobs:
       - name: Benchmark bounded procedural research
         run: python -B scripts/procedural_intelligence.py benchmark
 
+      - name: Benchmark matter updates, replay and document ingestion
+        run: python -B scripts/benchmark_matter_intelligence.py
+
       - name: Compile a proposed capability review bundle
         run: python -B scripts/build_capability.py --jurisdiction Virginia --legal-area torts --topic premises_liability --output "$RUNNER_TEMP/pro-one-capability-review"
 
@@ -86,7 +89,7 @@ jobs:
               assert len(json.load(response)['capabilities']) == 4
           with urllib.request.urlopen('http://127.0.0.1:8000/openapi.json') as response:
               paths = json.load(response)['paths']
-              assert all(path in paths for path in ('/research/evidence', '/research/compare', '/research/procedure'))
+              assert all(path in paths for path in ('/research/evidence', '/research/compare', '/research/procedure', '/matters'))
           request = urllib.request.Request('http://127.0.0.1:8000/research/evidence',
               data=json.dumps({'country':'US','state':'Virginia','legal_area':'torts','topics':['premises_liability']}).encode(),
               headers={'Content-Type':'application/json'})
@@ -123,6 +126,15 @@ jobs:
           except urllib.error.HTTPError as error:
               assert error.code == 403
               assert json.load(error)['detail']['code'] == 'procedural_release_review_required'
+          request = urllib.request.Request('http://127.0.0.1:8000/matters',
+              data=json.dumps({'text':'Synthetic matter smoke test'}).encode(),
+              headers={'Content-Type':'application/json'})
+          try:
+              urllib.request.urlopen(request)
+              raise AssertionError('Matter persistence must remain disabled in production')
+          except urllib.error.HTTPError as error:
+              assert error.code == 403
+              assert json.load(error)['detail']['code'] == 'matter_release_review_required'
           print('Production health, workflow/capability catalogs, OpenAPI and research release gate passed.')
           PY
           docker stop pro-one-smoke

@@ -1,11 +1,12 @@
 """Bounded extraction rules and provider-neutral, review-only model proposals."""
 import json
 import re
+from typing import get_args
 from datetime import date, datetime
 
 from pydantic import Field
 
-from app.matter_models import FIELD_NAMES, FactValue, FieldName, Record, Suggestion, Temporal
+from app.matter_models import FIELD_NAMES, EntityType, Record, Suggestion, Temporal
 from app.models.base import ModelRequest
 from app.procedural_research import MatterFacts, STATE_NAME_SCOPES
 
@@ -62,6 +63,8 @@ def typed_value(field, value):
     normalized = value.strip()
     if field == "jurisdiction":
         return STATE_NAME_SCOPES.get(normalized.casefold(), normalized if normalized in STATE_NAME_SCOPES.values() or normalized == "US" else None)
+    if field == "entity_type":
+        return normalized if normalized in get_args(EntityType) else None
     if field == "goal":
         return normalized.lower().replace(" ", "_") if normalized.lower().replace(" ", "_") in GOALS else None
     if field == "possible_legal_issue":
@@ -79,20 +82,21 @@ def typed_value(field, value):
 LABELS = {field.replace("_", " "): field for field in FIELD_NAMES if field not in {"possible_legal_issue", "allegation"}}
 LABELS.update({"incident date": "date", "diagnosis": "injury", "business brand": "brand",
                "property owner": "property_owner", "legal entity": "legal_name"})
+DATE_EXPRESSION = rf"(?:{'|'.join(MONTHS)}) \d{{1,2}}(?:,? \d{{4}})?|\d{{4}}-\d{{2}}-\d{{2}}"
 RESTAURANT = r"(?:Wendy['’]s|McDonald['’]s|Burger King)"
 STATEMENT_RULES = (
     ("jurisdiction", r"(?:i am in |this happened in )?([a-z ]{2,30})"),
-    ("brand", rf"(?:I slipped (?:in|at) (?:(?:a|the) )?|It happened at (?:(?:a|the) )?|I want to sue )({RESTAURANT})(?=\s|$)"),
+    ("brand", rf"(?:I slipped (?:in|at) (?:(?:a|the) )?|It happened (?:(?:{DATE_EXPRESSION}) )?at (?:(?:a|the) )?|I want to sue )({RESTAURANT})(?=\s|$)"),
     ("injury", rf"I slipped (?:in|at) (?:(?:a|the) )?{RESTAURANT}(?: bathroom)? and broke my wrist$"),
     ("location", rf"(?:I slipped in (?:(?:a|the) )?({RESTAURANT} bathroom))(?: and broke my wrist)?$"),
-    ("street", rf"It happened at (?:(?:a|the) )?{RESTAURANT} on ([a-z0-9 ]{{2,60}}?)(?: on (?:[a-z]+ \d{{1,2}}(?:,? \d{{4}})?|\d{{4}}-\d{{2}}-\d{{2}}))?"),
+    ("street", rf"It happened (?:(?:{DATE_EXPRESSION}) )?at (?:(?:a|the) )?{RESTAURANT} on ([a-z0-9 ]{{2,60}}?)(?: on (?:[a-z]+ \d{{1,2}}(?:,? \d{{4}})?|\d{{4}}-\d{{2}}-\d{{2}}))?"),
     ("matter_type", rf"I slipped (?:in|at) (?:(?:a|the) )?{RESTAURANT}(?: bathroom)?(?: and broke my wrist)?$"),
     ("goal", r"I want (?:them to pay|compensation)$"),
     ("property_owner", rf"(?:I think |I was guessing before[,. ]+)?([a-z0-9 &'’.\-]{{2,90}}) owns (?:it|the building)$"),
     ("hazard", r"(?:There was|I slipped on) (water(?: near the sink)?|liquid on the floor)$"),
     ("hazard", r"The floor was wet(?: and there wasn't a sign)?$"),
     ("warning_sign", r"(?:There was no sign|The floor was wet and there wasn't a sign)$"),
-    ("date", rf"(?:Actually[,]? )?(?:the fall happened|it happened|it was)(?: at (?:(?:a|the) )?{RESTAURANT} on [a-z0-9 ]{{2,60}}?)? (?:on )?((?:{'|'.join(MONTHS)}) \d{{1,2}}(?:,? \d{{4}})?|\d{{4}}-\d{{2}}-\d{{2}})(?:,? not .+)?$"),
+    ("date", rf"(?:Actually[,]? )?(?:the fall happened|it happened|it was)(?: at (?:(?:a|the) )?{RESTAURANT} on [a-z0-9 ]{{2,60}}?)? (?:on )?({DATE_EXPRESSION})(?: at (?:(?:a|the) )?{RESTAURANT} on [a-z0-9 ]{{2,60}})?(?:,? not .+)?$"),
 )
 FIXED = {"injury": "wrist fracture", "matter_type": "personal_injury", "goal": "compensation",
          "warning_sign": False}

@@ -63,7 +63,7 @@ class LedgerTests(unittest.TestCase):
         self.assertEqual(lookup(matter, "goal")["preferred"].value, "compensation")
         self.assertEqual(lookup(matter, "jurisdiction")["status"], "unknown")
         self.assertEqual(lookup(matter, "legal_name")["status"], "unresolved")
-        matter = self.statement(matter, "Virginia. It happened at the Wendy's on Main Street on October 4. There was water near the sink.")
+        matter = self.statement(matter, "Virginia. It happened October 4 at the Wendy's on Main Street. There was water near the sink.")
         event = matter.events[0]
         self.assertEqual(event.participants, (matter.parties[0].id,))
         self.assertEqual(lookup(matter, "street", event.id)["preferred"].value, "Main Street")
@@ -138,7 +138,9 @@ class LedgerTests(unittest.TestCase):
     def test_similarly_named_entities_need_registry_namespace(self):
         record = ImportedRecord(
             source=ExternalRecord(provider="state_registry", record_id="EX-413", retrieved_at=now(),
-                                  current_as_of=date(2026, 1, 1), locator="Reviewed registry row 44"),
+                                  current_as_of=date(2026, 1, 1), locator="Reviewed registry row 44",
+                                  subject_label="Wendy's Holdings",
+                                  link_evidence_hash=sha256(b"Registry id: state_registry/EX-413").hexdigest()),
             kind="corporate_record", excerpt="Legal name: Wendy's Holdings LLC\nProperty owner: XYZ Properties LLC",
         )
         self.service.records = records_by_id([record])
@@ -150,6 +152,10 @@ class LedgerTests(unittest.TestCase):
         right = matter.parties[-1].id
         matter = self.statement(matter, "I think Wendy's owns the building.", party=right)
         matter = self.upload(matter, "Registry id: another_registry/EX-413", "corporate_record", party=left)
+        matter = self.service.external(matter, "state_registry", "EX-413", party=left)
+        self.assertEqual(lookup(matter, "legal_name", left)["status"], "unresolved")
+        matter = self.service.external(matter, "state_registry", "EX-413", party=right)
+        self.assertEqual(lookup(matter, "legal_name", right)["status"], "unresolved")
         matter = self.upload(matter, "Registry id: state_registry/EX-413", "corporate_record", party=right)
         matter = self.service.external(matter, "state_registry", "EX-413", party=right)
         linked = lookup(matter, "legal_name", right)["preferred"]
