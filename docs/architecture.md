@@ -70,7 +70,7 @@ The shared validator enforces strict schema/types, identity, actual evidence lin
 
 Source dates, retrieval date, content version/hash, effective dates, amendment information, known supersession and uncertainty are distinct. **Retrieved today is not certified current law.** Subsequent case treatment defaults to unknown; no citator is implemented. Austin's majority/dissent distinction and motion-to-strike posture remain mandatory limitations, without deciding their application to new facts.
 
-All new canonical records remain proposed, null-reviewed and unresolved for currentness. Supported-record schemas and repository validation preserve review scopes, reviewed versions and eligible supporting dependencies. Public research is blocked independently of development structural success. Existing workflow release gates remain unchanged.
+Canonical capability records remain proposed, null-reviewed and unresolved for currentness. Supported-record schemas and repository validation preserve review scopes, reviewed versions and eligible supporting dependencies. Public research is blocked independently of development structural success.
 
 The [compiler](capability-compiler.md) collects sources, checks exact linkage, proposes rules/capability boundaries/evaluations and writes a separate review report. All generated records remain proposed. Refresh identifies added/removed/changed source content/provenance/dates and resets review. Humans review boundaries, source sets, key propositions, exceptions, conflicts, currentness and risk policy, not every possible user question.
 
@@ -81,6 +81,13 @@ The conversational UI, bounded in-memory document extraction and source panel re
 Production blocks proposed research/workflow execution before model calls, disables testing and inspection paths, and retains privacy/source/release gates. Document parsers are isolated and bounded. No raw legal text or provider diagnostics are logged; documented startup disables access logs. Host-level rate limiting, monitoring, live-model semantic/privacy checks and legal/currentness review precede public exposure.
 
 Reusable process primitives remain jurisdiction/document identification, captured user dates, official-instruction navigation, service/deadline awareness, redaction and escalation. Future workflows can compose these without creating a workflow for each retailer, statute or factual permutation.
+
+The [procedural intelligence layer](procedural-intelligence.md) associates
+normalized authority versions with a jurisdiction, forum, path, stage and trigger.
+It filters the bounded catalog before the shared Research Core assembles evidence.
+Signed choice receipts, explicit prerequisites and dated authority checks gate
+stage progression. The same verifier and output validator control procedural
+paraphrases and render citation-bound publisher excerpts when verification fails.
 
 ## External corpus and independently verified synthesis
 
