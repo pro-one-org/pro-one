@@ -27,7 +27,7 @@ Capabilities define what Pro-One can research and explain. Workflows define stru
 | Virginia business entity records | Existing SCC official guidance | SCC record/status navigation |
 | Maryland civil procedure | Existing District Court official guidance | Civil summons orientation |
 
-These are bounded proposed collections, not nationwide coverage. **All new capabilities, sources, passages, rules, evaluations and reviews remain proposed; currentness is unresolved.** Development availability is not legal approval or public release. Five fictional workflow examples remain outside the product catalog.
+These proposed capability collections have bounded coverage and unresolved currentness. Development availability carries no legal or release approval. Five fictional workflow examples remain outside the product catalog.
 
 Research uses exact evidence excerpts or curated source-linked variants, with optional multi-authority synthesis through a separate proposal call, independent verifier calls and deterministic evidence/citation checks. Failed synthesis retains exact-text fallback. Legal and currentness review remain required; public execution stays closed.
 
@@ -92,6 +92,17 @@ can replay and cite eligible corpus text through the existing Research Core.
 See the [corpus architecture and operator commands](docs/national-corpus.md)
 for the tested editions, source limitations and outstanding acceptance.
 
+## Procedural Intelligence v1
+
+The development research API presents sourced options for a Virginia restaurant
+fall described in ordinary language. After an explicit path choice, it can show
+bounded court, venue, filing and service information. It also covers an ordinary
+Virginia circuit court summons and complaint, a federal initial-service sample
+and a Florida service statute for reference. The November 16, 2026 review date
+bounds the dated samples. Publication guidance with unresolved currentness is
+shown as reference material. Production returns HTTP 403. See the
+[procedural architecture and operator commands](docs/procedural-intelligence.md).
+
 ## Validation
 
 ```text
@@ -117,6 +128,7 @@ The harness runs 24 mapped workflow fixtures and 13 registered capability/genera
 - `POST /documents/extract`: raw PDF/DOCX/TXT; no filesystem path or filename
 - `POST /capabilities/resolve`: deterministic subject matching
 - `POST /research/evidence`: development evidence inspection without a workflow
+- `POST /research/procedure` accepts a lay description and an explicit choice for bounded development research.
 - Existing workflow routing, scope, readiness, intake, retrieval, assembly and response APIs remain.
 - `/openapi.json` documents strict requests; `/docs` is development-only.
 

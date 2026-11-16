@@ -31,6 +31,7 @@ from app.assistant import AssistantRequest, AssistantService
 from app.documents import isolated_extract
 from app.capabilities import ResearchComparison, ResearchMatter, CapabilityResolutionService
 from app.citation_research import CitationResearchRequest
+from app.procedural_research import ProceduralRequest, ProceduralResearchService
 
 
 app = FastAPI(
@@ -257,6 +258,13 @@ def research_evidence(request: ResearchMatter):
         return service.assemble(request)
     finally:
         service.close()
+
+
+@app.post("/research/procedure")
+def research_procedure(request: ProceduralRequest):
+    if settings.mode != "development":
+        raise HTTPException(status_code=403, detail={"code": "procedural_release_review_required"})
+    return ProceduralResearchService(repository, settings, generation_service).respond(request)
 
 
 @app.post("/research/compare")

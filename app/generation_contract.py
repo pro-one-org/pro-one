@@ -134,7 +134,8 @@ def build_research_model_request(package, config):
             "allowed_sections": plan["allowed_sections"], "required_sections": plan["required_sections"],
             "required_disclosures": plan["required_disclosures"], "limitations": plan["limitations"],
             "required_risk_notices": [], "response_constraints": [], "control_texts": controls,
-            "required_control_texts": controls, "strict_claim_text": True}
+            "required_control_texts": controls, "strict_claim_text": True,
+            "procedural_publisher_excerpts": package.get("procedural_publisher_excerpts", False)}
     schema = GeneratedDraft.model_json_schema()
     schema["properties"]["workflow_id"] = {"type": "null"}
     return ModelRequest(config.provider, config.model, "grounded_research_v2",

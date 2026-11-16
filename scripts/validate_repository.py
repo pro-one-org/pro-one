@@ -507,6 +507,15 @@ def validate_cross_record_references(
 def main() -> int:
     report = ValidationReport()
 
+    from app.procedural_authority import load_catalog
+
+    try:
+        procedure = load_catalog()
+        report.checked("Procedural records", len(procedure.authorities) + len(procedure.forums)
+                       + len(procedure.paths) + len(procedure.requirements))
+    except (ValueError, OSError) as exc:
+        report.error(f"data/procedural-intelligence.json: {exc}")
+
     parsed_json: dict[Path, Any] = {}
     for path in iter_project_files({".json"}):
         value = load_json(path, report)

@@ -30,7 +30,8 @@ class ResponseRenderingService:
                      "user_provided": s["kind"] == "user_fact"} for s in draft["sections"] if s["kind"] != "control"]
         if package.get("evidence_mode") in {"capability", "general_research"}:
             claims = {c["claim_id"]: c for c in package["response_plan"]["claims"]}
-            sections = [{"heading": "From the sources", "text": text,
+            sections = [{"heading": ("Exact publisher excerpt" if package.get("procedural_publisher_excerpts")
+                                      and claims[cid]["quotation_allowed"] else "From the sources"), "text": text,
                          "citation_numbers": [numbers[c] for c in claims[cid]["citation_ids"]], "user_provided": False}
                         for s in draft["sections"] if s["kind"] == "legal_information"
                         for cid, text in zip(s["claim_ids"], s["text"].split("\n\n"))]

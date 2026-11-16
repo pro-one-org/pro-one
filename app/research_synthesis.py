@@ -111,7 +111,7 @@ class ResearchSynthesisService:
     def __init__(self, registry):
         self.registry = registry
 
-    def prepare(self, package, config):
+    def prepare(self, package, config, *, procedural_context=None):
         """Return a detached package; failed stages cannot authorize new prose."""
         package = deepcopy(package)
         ledger, accepted = [], []
@@ -125,7 +125,7 @@ class ResearchSynthesisService:
             sources[sid]["source_type"] == "court_rule" and sources[sid].get("corpus_provenance")
             and sources[sid]["jurisdiction"]["state"] is None for sid in selected_sources
         )
-        if len(selected_sources) < 2 and not federal_rule:
+        if len(selected_sources) < 2 and not federal_rule and procedural_context is None:
             return package
         contrary = {p["id"] for p in passages.values() if p.get("conflicts")}
         evidence = [{"passage_id": p["id"], "text": p["text"], "locator": p["locator"],
@@ -135,9 +135,19 @@ class ResearchSynthesisService:
                                 "source_type": sources[p["source_id"]]["source_type"],
                                 "currentness": citations[p["id"]]["source_currentness"]},
                      "limitations": p["limitations"], "conflicts": p.get("conflicts", [])} for p in passages.values()]
+        if procedural_context is not None:
+            for item in evidence:
+                item["procedure"] = {
+                    "bindings": [rule for rule in procedural_context if item["passage_id"] in rule["passage_ids"]]
+                }
         try:
             adapter = self.registry.resolve(config.provider, config.model)
-            request = ModelRequest(config.provider, config.model, "multi_authority_proposal_v3", SYNTHESIS_POLICY,
+            policy = SYNTHESIS_POLICY
+            if procedural_context is not None:
+                policy += ("\nUse only the supplied eligible procedural propositions verbatim with their exact support "
+                           "IDs. Preserve the forum, stage, trigger and conditions. Never recommend a path or "
+                           "assert a user fact, calculated deadline, case-specific requirement or permission to act.")
+            request = ModelRequest(config.provider, config.model, "multi_authority_proposal_v3", policy,
                                    {"jurisdiction": jurisdiction, "evidence": evidence,
                                     "required_context_passage_ids": sorted(contrary),
                                     "mandatory_limits": package["response_plan"]["limitations"]},
@@ -168,6 +178,12 @@ class ResearchSynthesisService:
             if not supporting:
                 entry["rejection_reason"] = "missing_support"
                 continue
+            if procedural_context is not None:
+                matching = [rule for rule in procedural_context if candidate.statement == rule["text"]
+                            and set(rule["passage_ids"]) == set(ids) and len(supporting) == len(ids)]
+                if not matching:
+                    entry["rejection_reason"] = "procedural_statement_outside_reviewed_scope"
+                    continue
             # Deterministic defenses apply before any model verification.
             if re.search(r"https?://|www\.|\bv\.\s|\b\d+\s+(?:Va\.|U\.S\.|S\.E\.|F\.)|[\"“”]", candidate.statement):
                 entry["rejection_reason"] = "embedded_citation_or_quote"

@@ -199,8 +199,25 @@ class OutputValidationService:
                 if section.user_fact_ids:
                     fail("fact_use_outside_fact_section", index)
                 text = normalized(section.text)
+                guard_text = text
+                if data.get("procedural_publisher_excerpts") and exact_claim_text:
+                    # A source's words about a time period or an appearance
+                    # are evidence, even when that phrasing is unsafe as advice.
+                    from app.authority import digest
+
+                    prose = []
+                    for cid, part in exact_claim_text.items():
+                        claim = claims[cid]
+                        ids = claim["supported_by_passage_ids"]
+                        passage = passages.get(ids[0]) if len(ids) == 1 else None
+                        if not (claim["quotation_allowed"] and passage and part == passage["text"]
+                                and digest(part) == passage["verification"]["excerpt_hash"]
+                                and claim.get("support_state") == "source_linked_development"):
+                            prose.append(part)
+                    guard_text = normalized(" ".join(prose))
                 for code, pattern in PROSE_GUARDS:
-                    if re.search(pattern, text):
+                    scope = guard_text if code in {"unsupported_deadline", "prohibited_appearance_advice"} else text
+                    if re.search(pattern, scope):
                         fail(code, index)
                 # No free-form URLs: citations are rendered by the caller from
                 # canonical IDs, never from generated text or provider metadata.
