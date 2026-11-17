@@ -1,0 +1,331 @@
+{
+  "jurisdiction": "US-LA",
+  "version": "1",
+  "sources": {
+    "US-LA:statutes:68c1cfd511f9": {
+      "category": "statutes",
+      "title": "Louisiana Codes and Revised Statutes",
+      "url": "http://www.legis.la.gov/legis/LawSearch.aspx",
+      "directory": "codes",
+      "locator": "Louisiana"
+    },
+    "US-LA:constitution:5cc5b8fcfdc6": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://senate.legis.state.la.us/Documents/Constitution/",
+      "directory": "codes",
+      "locator": "Louisiana"
+    },
+    "US-LA:legislature:c7438549a200": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.legis.la.gov/legis/home.aspx",
+      "directory": "codes",
+      "locator": "Louisiana"
+    },
+    "US-LA:labor_agency:9f4dead1725c": {
+      "category": "labor_agency",
+      "title": "www.laworks.net/",
+      "url": "https://www.laworks.net/",
+      "directory": "labor",
+      "locator": "Louisiana"
+    },
+    "US-LA:commercial_code:61cd48d61073": {
+      "category": "commercial_code",
+      "title": "TITLE 14 - COMMERCIAL LAWS",
+      "url": "https://legis.la.gov/Legis/Laws_Toc.aspx?folder=75&level=Parent",
+      "directory": "ucc",
+      "locator": "Louisiana"
+    },
+    "US-LA:civil_rules:56f4a53c5c48": {
+      "category": "civil_rules",
+      "title": "Title 13",
+      "url": "http://www.legis.la.gov/legis/Laws_Toc.aspx?folder=75&level=Parent",
+      "directory": "procedure",
+      "locator": "Louisiana"
+    },
+    "US-LA:consumer_agency:076aad0c7c11": {
+      "category": "consumer_agency",
+      "title": "Louisiana (LA)",
+      "url": "https://www.ag.state.la.us/Division/PublicProtection#consumer-protection",
+      "directory": "consumer",
+      "locator": "Louisiana (LA)"
+    },
+    "US-LA:judiciary:f1054a866eb8": {
+      "category": "judiciary",
+      "title": "Judiciary",
+      "url": "https://www.louisiana.gov/government/judicial-branch/",
+      "directory": "doj-LA",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-LA:court_directory:aa767486d398": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://www.lasc.org/",
+      "directory": "doj-LA",
+      "locator": "Supreme Court"
+    },
+    "US-LA:court_directory:d566df5e67b7": {
+      "category": "court_directory",
+      "title": "First Circuit Court of Appeals",
+      "url": "https://www.la-fcca.org/",
+      "directory": "doj-LA",
+      "locator": "First Circuit Court of Appeals"
+    },
+    "US-LA:court_directory:17feea65c432": {
+      "category": "court_directory",
+      "title": "Second Circuit Court of Appeals",
+      "url": "https://www.la2nd.org/",
+      "directory": "doj-LA",
+      "locator": "Second Circuit Court of Appeals"
+    },
+    "US-LA:court_directory:9e0266a99c93": {
+      "category": "court_directory",
+      "title": "Third Circuit Court of Appeals",
+      "url": "https://www.la3circuit.org/",
+      "directory": "doj-LA",
+      "locator": "Third Circuit Court of Appeals"
+    },
+    "US-LA:court_directory:7a680f1c3c5c": {
+      "category": "court_directory",
+      "title": "Fourth Circuit Court of Appeals",
+      "url": "https://www.la4th.org/",
+      "directory": "doj-LA",
+      "locator": "Fourth Circuit Court of Appeals"
+    },
+    "US-LA:court_directory:895c29029f33": {
+      "category": "court_directory",
+      "title": "Fifth Circuit Court of Appeals",
+      "url": "https://www.fifthcircuit.org/",
+      "directory": "doj-LA",
+      "locator": "Fifth Circuit Court of Appeals"
+    },
+    "US-LA:constitution:fdbc9c9d6673": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://legis.la.gov/legis/Laws_Toc.aspx?folder=72",
+      "directory": "doj-LA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-LA:constitution:58d08298a4bd": {
+      "category": "constitution",
+      "title": "Louisiana's Constitutions: Home",
+      "url": "https://lasc.libguides.com/Louisiana-Constitutions",
+      "directory": "doj-LA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-LA:statutes:5b9e5c1ecee4": {
+      "category": "statutes",
+      "title": "Louisiana Laws Search",
+      "url": "http://www.legis.la.gov/legis/lawsearch.aspx",
+      "directory": "doj-LA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-LA:regulations:fdeb9ed7ab5f": {
+      "category": "regulations",
+      "title": "Administrative Code",
+      "url": "http://www.doa.la.gov/Pages/osr/lac/Code.aspx",
+      "directory": "doj-LA",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-LA:regulations:3a20f54bff8b": {
+      "category": "regulations",
+      "title": "Louisiana Register",
+      "url": "http://www.doa.la.gov/Pages/osr/reg/register.aspx",
+      "directory": "doj-LA",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-LA:pi_limitations:8e7ca76d79d3": {
+      "category": "pi_limitations",
+      "title": "La. Civ. Code art. 3493.1",
+      "url": "https://legis.la.gov/legis/Law.aspx?d=1386443",
+      "directory": null,
+      "locator": "La. Civ. Code art. 3493.1",
+      "observation": {
+        "requested_url": "https://legis.la.gov/legis/Law.aspx?d=1386443",
+        "retrieved_at": "2026-11-17T19:33:57.780060+00:00",
+        "http_status": "200",
+        "sha256": "ed56dc3a73e6d8ce2a1cd8c250a431e52d5e4f5ddb6b05298dc63fdc17570600",
+        "health": "healthy"
+      }
+    },
+    "US-LA:written_contract_limitations:cf232adcc953": {
+      "category": "written_contract_limitations",
+      "title": "La. Civ. Code art. 3499",
+      "url": "https://legis.la.gov/legis/Law.aspx?d=110525",
+      "directory": null,
+      "locator": "La. Civ. Code art. 3499",
+      "observation": {
+        "requested_url": "https://legis.la.gov/legis/Law.aspx?d=110525",
+        "retrieved_at": "2026-11-17T19:33:57.715987+00:00",
+        "http_status": "200",
+        "sha256": "f39ce14401ccf9dc5e4d5282a0583e7d0fd5da3203197fa85fef3633fce5ca62",
+        "health": "healthy"
+      }
+    },
+    "US-LA:oral_contract_limitations:cf232adcc953": {
+      "category": "oral_contract_limitations",
+      "title": "La. Civ. Code art. 3499",
+      "url": "https://legis.la.gov/legis/Law.aspx?d=110525",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://legis.la.gov/legis/Law.aspx?d=110525",
+        "retrieved_at": "2026-11-17T19:33:57.715987+00:00",
+        "http_status": "200",
+        "sha256": "f39ce14401ccf9dc5e4d5282a0583e7d0fd5da3203197fa85fef3633fce5ca62",
+        "health": "manual_review_required"
+      }
+    },
+    "US-LA:small_claims:8023183efdad": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.lasc.org/rules/City_Parish/Uniform_Forms_for_City_Parish_Courts.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.lasc.org/rules/City_Parish/Uniform_Forms_for_City_Parish_Courts.pdf",
+        "retrieved_at": "2026-11-17T19:42:47.696528+00:00",
+        "http_status": "200",
+        "sha256": "7cc66111e6027e16510c773faecc6a44248968dd67dda509251c0972754e61ce",
+        "health": "manual_review_required"
+      }
+    },
+    "US-LA:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-LA:court:6d37c2f79bed",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-LA:court_directory:aa767486d398"
+    },
+    {
+      "id": "US-LA:court:02356f9ab9f5",
+      "name": "First Circuit Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-LA:court_directory:d566df5e67b7"
+    },
+    {
+      "id": "US-LA:court:81024643c8a9",
+      "name": "Second Circuit Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-LA:court_directory:17feea65c432"
+    },
+    {
+      "id": "US-LA:court:438887555be3",
+      "name": "Third Circuit Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-LA:court_directory:9e0266a99c93"
+    },
+    {
+      "id": "US-LA:court:cf3af5005151",
+      "name": "Fourth Circuit Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-LA:court_directory:7a680f1c3c5c"
+    },
+    {
+      "id": "US-LA:court:50babf398863",
+      "name": "Fifth Circuit Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-LA:court_directory:895c29029f33"
+    },
+    {
+      "id": "US-LA:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-LA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-LA:court:c49ee6246d85",
+      "name": "Juvenile & Family",
+      "level": "general_trial",
+      "source_id": "US-LA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-LA:court:130cafc44268",
+      "name": "Justice of the Peace",
+      "level": "limited_trial",
+      "source_id": "US-LA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-LA:court:bce59d8d8e77",
+      "name": "Mayor’s",
+      "level": "limited_trial",
+      "source_id": "US-LA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-LA:court:741d2c8cd279",
+      "name": "City & Parish",
+      "level": "limited_trial",
+      "source_id": "US-LA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "La. Civ. Code art. 3493.1",
+      "source_id": "US-LA:pi_limitations:8e7ca76d79d3",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "La. Civ. Code art. 3499",
+      "source_id": "US-LA:written_contract_limitations:cf232adcc953",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "La. Civ. Code art. 3499",
+      "source_id": "US-LA:oral_contract_limitations:cf232adcc953",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "La. Code of Civil Proc. Art. 4731. Rule to show cause why possession should not be delivered; abandonment of premises",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "b2fafd32b59dee350e89694d4c50ac": {
+      "citation": "La. Civ. Code art. 3493.1",
+      "source_id": "US-LA:pi_limitations:8e7ca76d79d3",
+      "authority_type": "statute",
+      "text": "Delictual actions are subject to a liberative prescription of two years. This prescription commences to run from the day that injury or damage is sustained. It does not run against minors or interdicts in actions involving permanent disability and brought pursuant to the Louisiana Products Liability Act or state law governing product liability actions in effect at the time of the injury or damage.",
+      "text_sha256": "786d4600b615740239781a98eccd8b28bac5a11f20832b7eb22e1e67670471e9",
+      "publisher_sha256": "ed56dc3a73e6d8ce2a1cd8c250a431e52d5e4f5ddb6b05298dc63fdc17570600",
+      "retrieved_at": "2026-11-17T19:33:57.780060+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "7688a23a282650833e671f14adf570": {
+      "citation": "La. Civ. Code art. 3499",
+      "source_id": "US-LA:written_contract_limitations:cf232adcc953",
+      "authority_type": "statute",
+      "text": "Unless otherwise provided by legislation, a personal action is subject to a liberative prescription of ten years.",
+      "text_sha256": "17944e940cc2b7e1da3d889c73028fcd0bf44cb9d8d767aa12423bf238c5839c",
+      "publisher_sha256": "f39ce14401ccf9dc5e4d5282a0583e7d0fd5da3203197fa85fef3633fce5ca62",
+      "retrieved_at": "2026-11-17T19:33:57.715987+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    }
+  }
+}

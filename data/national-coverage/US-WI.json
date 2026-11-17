@@ -1,0 +1,305 @@
+{
+  "jurisdiction": "US-WI",
+  "version": "1",
+  "sources": {
+    "US-WI:statutes:6ce7a5dca7b2": {
+      "category": "statutes",
+      "title": "Wisconsin Statutes",
+      "url": "http://www.legis.state.wi.us/rsb/stats.html",
+      "directory": "codes",
+      "locator": "Wisconsin"
+    },
+    "US-WI:constitution:ee1e8a9035ad": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.legis.state.wi.us/rsb/2wiscon.html",
+      "directory": "codes",
+      "locator": "Wisconsin"
+    },
+    "US-WI:legislature:e1fbb7b32f17": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://legis.wisconsin.gov/",
+      "directory": "codes",
+      "locator": "Wisconsin"
+    },
+    "US-WI:labor_agency:422d69d25bf8": {
+      "category": "labor_agency",
+      "title": "dwd.wisconsin.gov",
+      "url": "https://dwd.wisconsin.gov/",
+      "directory": "labor",
+      "locator": "Wisconsin"
+    },
+    "US-WI:commercial_code:c10807bfd00a": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code (Chapters 401-411)",
+      "url": "http://docs.legis.wisconsin.gov/statutes/prefaces/toc",
+      "directory": "ucc",
+      "locator": "Wisconsin"
+    },
+    "US-WI:civil_rules:c10807bfd00a": {
+      "category": "civil_rules",
+      "title": "Civil Procedure (Chapters 801-847)",
+      "url": "http://docs.legis.wisconsin.gov/statutes/prefaces/toc",
+      "directory": "procedure",
+      "locator": "Wisconsin"
+    },
+    "US-WI:consumer_agency:c3a79daf4a93": {
+      "category": "consumer_agency",
+      "title": "Wisconsin (WI)",
+      "url": "https://datcp.wi.gov/Pages/Programs_Services/ConsumerProtection.aspx",
+      "directory": "consumer",
+      "locator": "Wisconsin (WI)"
+    },
+    "US-WI:judiciary:144748f8f16d": {
+      "category": "judiciary",
+      "title": "Court System",
+      "url": "http://www.wicourts.gov/",
+      "directory": "doj-WI",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-WI:court_directory:ed1bc35b2b54": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://www.wicourts.gov/courts/supreme/index.htm",
+      "directory": "doj-WI",
+      "locator": "Supreme Court"
+    },
+    "US-WI:court_directory:5230275b7abf": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "http://www.wicourts.gov/courts/appeals/index.htm",
+      "directory": "doj-WI",
+      "locator": "Court of Appeals"
+    },
+    "US-WI:court_directory:84fe33228579": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "http://www.wicourts.gov/courts/circuit/index.htm",
+      "directory": "doj-WI",
+      "locator": "Circuit Courts"
+    },
+    "US-WI:court_directory:6d383616cf0a": {
+      "category": "court_directory",
+      "title": "Municipal Courts",
+      "url": "http://www.wicourts.gov/courts/municipal/index.htm",
+      "directory": "doj-WI",
+      "locator": "Municipal Courts"
+    },
+    "US-WI:court_directory:9534b09dce75": {
+      "category": "court_directory",
+      "title": "Court System Directories",
+      "url": "https://www.wicourts.gov/contact/directories.htm",
+      "directory": "doj-WI",
+      "locator": "Court System Directories"
+    },
+    "US-WI:forms:d3001de5c157": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "http://www.wicourts.gov/forms1/index.htm",
+      "directory": "doj-WI",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-WI:forms:5a88b7998497": {
+      "category": "forms",
+      "title": "Court of Appeals Forms",
+      "url": "http://www.wicourts.gov/forms1/appeals.htm",
+      "directory": "doj-WI",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-WI:forms:83acaf408b60": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "http://wilawlibrary.gov/topics/wiforms.php",
+      "directory": "doj-WI",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-WI:constitution:d9233852efbc": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://docs.legis.wisconsin.gov/constitution",
+      "directory": "doj-WI",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-WI:statutes:726fb730c03c": {
+      "category": "statutes",
+      "title": "Statutes",
+      "url": "https://docs.legis.wisconsin.gov/statutes",
+      "directory": "doj-WI",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-WI:regulations:16c282558682": {
+      "category": "regulations",
+      "title": "Administrative Code and Register",
+      "url": "https://docs.legis.wisconsin.gov/code",
+      "directory": "doj-WI",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-WI:pi_limitations:a89fb6009660": {
+      "category": "pi_limitations",
+      "title": "Wis. Stat. § 893.54(1m)(a)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/v/54",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/v/54",
+        "retrieved_at": "2026-11-17T19:34:05.848111+00:00",
+        "http_status": "200",
+        "sha256": "bf3cc4dda04bf46158a0092188030b3a216bdeb4e71d33731988e5e6502714bd",
+        "health": "manual_review_required"
+      }
+    },
+    "US-WI:written_contract_limitations:24e8eab97bde": {
+      "category": "written_contract_limitations",
+      "title": "Wis. Stat. § 893.43(1)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/iv/43",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/iv/43",
+        "retrieved_at": "2026-11-17T19:34:05.399197+00:00",
+        "http_status": "200",
+        "sha256": "f0747c61b6f7fd8b0bc995db4b1d8961e82a9a56bea01dc91f9f8fb973dfd470",
+        "health": "manual_review_required"
+      }
+    },
+    "US-WI:oral_contract_limitations:24e8eab97bde": {
+      "category": "oral_contract_limitations",
+      "title": "Wis. Stat. § 893.43(1)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/iv/43",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/iv/43",
+        "retrieved_at": "2026-11-17T19:34:05.399197+00:00",
+        "http_status": "200",
+        "sha256": "f0747c61b6f7fd8b0bc995db4b1d8961e82a9a56bea01dc91f9f8fb973dfd470",
+        "health": "manual_review_required"
+      }
+    },
+    "US-WI:small_claims:8418a4a8c3a6": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.wicourts.gov/forms1/circuit/ccform.jsp?FormName=SC-500",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.wicourts.gov/forms1/circuit/ccform.jsp?FormName=SC-500",
+        "retrieved_at": "2026-11-17T19:43:10.913309+00:00",
+        "http_status": "200",
+        "sha256": "8aee17d9dc30607adf5815753a74ae1d48748f0e3f8b7dc8091aa01104257089",
+        "health": "manual_review_required"
+      }
+    },
+    "US-WI:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 30"
+    },
+    "US-WI:wageLaw:a8e519e91376": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://dwd.wisconsin.gov/er/labor-standards/wages-deductions/payment-collection",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://dwd.wisconsin.gov/er/labor-standards/wages-deductions/payment-collection",
+        "retrieved_at": "2026-11-17T19:41:53.817621+00:00",
+        "http_status": "200",
+        "sha256": "b84d093de934029c187103a8aca466d8eda088d5bf0811b4c61dc457bae82f84",
+        "health": "manual_review_required"
+      }
+    },
+    "US-WI:consumerLaw:694f8e4f6540": {
+      "category": "consumerLaw",
+      "title": "Consumer protection publication",
+      "url": "https://datcp.wi.gov/Pages/About_Us/BCPApplicableLaws.aspx",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://datcp.wi.gov/Pages/About_Us/BCPApplicableLaws.aspx",
+        "retrieved_at": "2026-11-17T19:41:52.123492+00:00",
+        "http_status": "200",
+        "sha256": "774f5aacdb1661415d239626075d7cf4ce81fc6d34373c1b499af541c3f6a8e1",
+        "health": "manual_review_required"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-WI:court:66e3f18e1935",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-WI:court_directory:ed1bc35b2b54"
+    },
+    {
+      "id": "US-WI:court:2fbbafaeaf8a",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-WI:court_directory:5230275b7abf"
+    },
+    {
+      "id": "US-WI:court:9e5c506dd312",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-WI:court_directory:84fe33228579"
+    },
+    {
+      "id": "US-WI:court:ca6d60ee4177",
+      "name": "Municipal Courts",
+      "level": "trial_directory",
+      "source_id": "US-WI:court_directory:6d383616cf0a"
+    },
+    {
+      "id": "US-WI:court:9279123ee7c4",
+      "name": "Court System Directories",
+      "level": "trial_directory",
+      "source_id": "US-WI:court_directory:9534b09dce75"
+    },
+    {
+      "id": "US-WI:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-WI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-WI:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-WI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Wis. Stat. § 893.54(1m)(a)",
+      "source_id": "US-WI:pi_limitations:a89fb6009660",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Wis. Stat. § 893.43(1)",
+      "source_id": "US-WI:written_contract_limitations:24e8eab97bde",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Wis. Stat. § 893.43(1)",
+      "source_id": "US-WI:oral_contract_limitations:24e8eab97bde",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Wis. Stat. § 799.40. Eviction actions",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ]
+}

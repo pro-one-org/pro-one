@@ -1,0 +1,343 @@
+{
+  "jurisdiction": "US-DE",
+  "version": "1",
+  "sources": {
+    "US-DE:statutes:0b8236809198": {
+      "category": "statutes",
+      "title": "Delaware Code and Constitution",
+      "url": "http://delcode.delaware.gov/",
+      "directory": "codes",
+      "locator": "Delaware"
+    },
+    "US-DE:constitution:ae47f60ade6a": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://delcode.delaware.gov/constitution/",
+      "directory": "codes",
+      "locator": "Delaware"
+    },
+    "US-DE:legislature:5ae375cd5e26": {
+      "category": "legislature",
+      "title": "General Assembly",
+      "url": "http://legis.delaware.gov/",
+      "directory": "codes",
+      "locator": "Delaware"
+    },
+    "US-DE:labor_agency:0cd01d5aba18": {
+      "category": "labor_agency",
+      "title": "www.labor.delaware.gov",
+      "url": "https://labor.delaware.gov/",
+      "directory": "labor",
+      "locator": "Delaware"
+    },
+    "US-DE:business_registration:a3e528c1bb77": {
+      "category": "business_registration",
+      "title": "Delaware Department of State",
+      "url": "http://www.corp.delaware.gov/howtoform.shtml",
+      "directory": "business",
+      "locator": "Delaware"
+    },
+    "US-DE:commercial_code:9ea36b37fc6b": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "https://delcode.delaware.gov/title6/index.shtml#TopOfPage",
+      "directory": "ucc",
+      "locator": "Delaware"
+    },
+    "US-DE:civil_rules:d61f2c437052": {
+      "category": "civil_rules",
+      "title": "Procedure",
+      "url": "https://delcode.delaware.gov/title10/c095/index.shtml",
+      "directory": "procedure",
+      "locator": "Delaware"
+    },
+    "US-DE:consumer_agency:0c6258e44b48": {
+      "category": "consumer_agency",
+      "title": "Delaware (DE)",
+      "url": "https://attorneygeneral.delaware.gov/fraud/cpu/",
+      "directory": "consumer",
+      "locator": "Delaware (DE)"
+    },
+    "US-DE:judiciary:15f191bbc438": {
+      "category": "judiciary",
+      "title": "Judicial Branch",
+      "url": "http://courts.delaware.gov/",
+      "directory": "doj-DE",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-DE:court_directory:3c85f8f823b9": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://courts.delaware.gov/supreme/",
+      "directory": "doj-DE",
+      "locator": "Supreme Court"
+    },
+    "US-DE:court_directory:bac606b8f7af": {
+      "category": "court_directory",
+      "title": "Superior Court",
+      "url": "http://courts.delaware.gov/superior/",
+      "directory": "doj-DE",
+      "locator": "Superior Court"
+    },
+    "US-DE:court_directory:2c0e78d8ecec": {
+      "category": "court_directory",
+      "title": "Family Court",
+      "url": "http://courts.delaware.gov/family/",
+      "directory": "doj-DE",
+      "locator": "Family Court"
+    },
+    "US-DE:court_directory:310bc33f372e": {
+      "category": "court_directory",
+      "title": "Court of Chancery",
+      "url": "http://courts.delaware.gov/chancery/",
+      "directory": "doj-DE",
+      "locator": "Court of Chancery"
+    },
+    "US-DE:court_directory:4f21ab1fb9e3": {
+      "category": "court_directory",
+      "title": "Court of Common Pleas",
+      "url": "http://courts.delaware.gov/commonpleas/",
+      "directory": "doj-DE",
+      "locator": "Court of Common Pleas"
+    },
+    "US-DE:constitution:c98420e40ee7": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://delcode.delaware.gov/constitution/index.shtml",
+      "directory": "doj-DE",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-DE:statutes:f4cd7193d63e": {
+      "category": "statutes",
+      "title": "Code",
+      "url": "http://delcode.delaware.gov/index.shtml",
+      "directory": "doj-DE",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-DE:statutes:e095bbcef860": {
+      "category": "statutes",
+      "title": "Session Laws",
+      "url": "http://delcode.delaware.gov/sessionlaws/",
+      "directory": "doj-DE",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-DE:regulations:800a7d9cc691": {
+      "category": "regulations",
+      "title": "Register of Regulations",
+      "url": "http://regulations.delaware.gov/services/register.shtml",
+      "directory": "doj-DE",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-DE:pi_limitations:d66a8c19d8c6": {
+      "category": "pi_limitations",
+      "title": "10 Del. C. § 8119",
+      "url": "https://delcode.delaware.gov/title10/c081/index.html",
+      "directory": null,
+      "locator": "10 Del. C. § 8119",
+      "observation": {
+        "requested_url": "https://delcode.delaware.gov/title10/c081/index.html",
+        "retrieved_at": "2026-11-17T19:33:55.515257+00:00",
+        "http_status": "200",
+        "sha256": "fe416bed3788d1b09090d8f5423c90fcbe207652f11d300c7a09b2dfd0fc1f20",
+        "health": "healthy"
+      }
+    },
+    "US-DE:written_contract_limitations:d66a8c19d8c6": {
+      "category": "written_contract_limitations",
+      "title": "10 Del. C. § 8106(a)",
+      "url": "https://delcode.delaware.gov/title10/c081/index.html",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://delcode.delaware.gov/title10/c081/index.html",
+        "retrieved_at": "2026-11-17T19:33:55.515257+00:00",
+        "http_status": "200",
+        "sha256": "fe416bed3788d1b09090d8f5423c90fcbe207652f11d300c7a09b2dfd0fc1f20",
+        "health": "manual_review_required"
+      }
+    },
+    "US-DE:oral_contract_limitations:d66a8c19d8c6": {
+      "category": "oral_contract_limitations",
+      "title": "10 Del. C. § 8106(a)",
+      "url": "https://delcode.delaware.gov/title10/c081/index.html",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://delcode.delaware.gov/title10/c081/index.html",
+        "retrieved_at": "2026-11-17T19:33:55.515257+00:00",
+        "http_status": "200",
+        "sha256": "fe416bed3788d1b09090d8f5423c90fcbe207652f11d300c7a09b2dfd0fc1f20",
+        "health": "manual_review_required"
+      }
+    },
+    "US-DE:small_claims:8c711815936b": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://courts.delaware.gov/help/generalcivil.aspx",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://courts.delaware.gov/help/generalcivil.aspx",
+        "retrieved_at": "2026-11-17T19:41:45.037206+00:00",
+        "http_status": "200",
+        "sha256": "953da87b89dea0221a1feeec06564caf6779e3fb0cfa05123f3fa2b12f811979",
+        "health": "manual_review_required"
+      }
+    },
+    "US-DE:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 26"
+    },
+    "US-DE:deposit:3a555149e8a5": {
+      "category": "deposit",
+      "title": "Residential tenancy publication",
+      "url": "https://www.legis.delaware.gov/docs/default-source/default-document-library/landlordtenantcode202447c4e5feaf2a6dfeae60ff0000a39f38.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.legis.delaware.gov/docs/default-source/default-document-library/landlordtenantcode202447c4e5feaf2a6dfeae60ff0000a39f38.pdf",
+        "retrieved_at": "2026-11-17T19:42:49.604260+00:00",
+        "http_status": "200",
+        "sha256": "ad561d2488bc178b5e47aa11813ca3412ba78f8e45531ab83a3606b2ec903d05",
+        "health": "manual_review_required"
+      }
+    },
+    "US-DE:wageLaw:6b22a0143c97": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://industrialaffairs.delaware.gov/hubfs/Wage_Hour_Labor_Law_Poster.pdf?hsLang=en",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://industrialaffairs.delaware.gov/hubfs/Wage_Hour_Labor_Law_Poster.pdf?hsLang=en",
+        "retrieved_at": "2026-11-17T19:41:56.779127+00:00",
+        "http_status": "200",
+        "sha256": "24d4e9fbd4026c319d6424d32aaf3947acd76e6022a54d6206bea0449a569d80",
+        "health": "manual_review_required"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-DE:court:13c82f614dca",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-DE:court_directory:3c85f8f823b9"
+    },
+    {
+      "id": "US-DE:court:ec3d029dfd20",
+      "name": "Superior Court",
+      "level": "trial_directory",
+      "source_id": "US-DE:court_directory:bac606b8f7af"
+    },
+    {
+      "id": "US-DE:court:889df8ffbb23",
+      "name": "Family Court",
+      "level": "trial_directory",
+      "source_id": "US-DE:court_directory:2c0e78d8ecec"
+    },
+    {
+      "id": "US-DE:court:4c9ad2e8c847",
+      "name": "Court of Chancery",
+      "level": "trial_directory",
+      "source_id": "US-DE:court_directory:310bc33f372e"
+    },
+    {
+      "id": "US-DE:court:342b6099daf7",
+      "name": "Court of Common Pleas",
+      "level": "trial_directory",
+      "source_id": "US-DE:court_directory:4f21ab1fb9e3"
+    },
+    {
+      "id": "US-DE:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-DE:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-DE:court:1ea33477d484",
+      "name": "Chancery",
+      "level": "limited_trial",
+      "source_id": "US-DE:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-DE:court:130cafc44268",
+      "name": "Justice of the Peace",
+      "level": "limited_trial",
+      "source_id": "US-DE:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-DE:court:6946571becdd",
+      "name": "Family",
+      "level": "limited_trial",
+      "source_id": "US-DE:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-DE:court:84e7c8c46936",
+      "name": "Common Pleas",
+      "level": "limited_trial",
+      "source_id": "US-DE:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-DE:court:3c40cb915cba",
+      "name": "Alderman’s",
+      "level": "limited_trial",
+      "source_id": "US-DE:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "10 Del. C. § 8119",
+      "source_id": "US-DE:pi_limitations:d66a8c19d8c6",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "10 Del. C. § 8106(a)",
+      "source_id": "US-DE:written_contract_limitations:d66a8c19d8c6",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "10 Del. C. § 8106(a)",
+      "source_id": "US-DE:oral_contract_limitations:d66a8c19d8c6",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Del Code tit. 25 § 5106. Rental agreement; term and termination of rental agreement",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "c056beca21265af1bb173fcd7a100a": {
+      "citation": "10 Del. C. § 8119",
+      "source_id": "US-DE:pi_limitations:d66a8c19d8c6",
+      "authority_type": "statute",
+      "text": "No action for the recovery of damages upon a claim for alleged personal injuries shall be brought after the expiration of 2 years from the date upon which it is claimed that such alleged injuries were sustained; subject, however, to the provisions of § 8127 of this title.",
+      "text_sha256": "17295de17c048c23e5f96d2c4d712fa7d875bc036fb86ff54b845eb03478c389",
+      "publisher_sha256": "fe416bed3788d1b09090d8f5423c90fcbe207652f11d300c7a09b2dfd0fc1f20",
+      "retrieved_at": "2026-11-17T19:33:55.515257+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    }
+  }
+}

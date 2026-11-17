@@ -1,0 +1,318 @@
+{
+  "jurisdiction": "US-NH",
+  "version": "1",
+  "sources": {
+    "US-NH:statutes:59a59137d51c": {
+      "category": "statutes",
+      "title": "Revised Statutes",
+      "url": "http://gencourt.state.nh.us/rsa/html/indexes/default.html",
+      "directory": "doj-NH",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NH:constitution:232218fa083a": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.nh.gov/glance/constitution.htm",
+      "directory": "codes",
+      "locator": "New Hampshire"
+    },
+    "US-NH:legislature:3ad16558c702": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://gencourt.state.nh.us/",
+      "directory": "codes",
+      "locator": "New Hampshire"
+    },
+    "US-NH:labor_agency:6d72e87ef25b": {
+      "category": "labor_agency",
+      "title": "dol.nh.gov",
+      "url": "https://dol.nh.gov",
+      "directory": "labor",
+      "locator": "New Hampshire"
+    },
+    "US-NH:commercial_code:16d8b3c85d39": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://www.gencourt.state.nh.us/rsa/html/NHTOC/NHTOC-XXXIV-A-382-A.htm",
+      "directory": "ucc",
+      "locator": "New Hampshire"
+    },
+    "US-NH:civil_rules:5e90b05d31bb": {
+      "category": "civil_rules",
+      "title": "Proceedings in Court",
+      "url": "http://www.gencourt.state.nh.us/rsa/html/NHTOC/NHTOC-LIII.htm",
+      "directory": "procedure",
+      "locator": "New Hampshire"
+    },
+    "US-NH:consumer_agency:a938b6e52ac4": {
+      "category": "consumer_agency",
+      "title": "New Hampshire (NH)",
+      "url": "https://www.doj.nh.gov/citizens/consumer-protection-antitrust-bureau",
+      "directory": "consumer",
+      "locator": "New Hampshire (NH)"
+    },
+    "US-NH:judiciary:664651efee56": {
+      "category": "judiciary",
+      "title": "Judicial Branch",
+      "url": "http://www.courts.state.nh.us/",
+      "directory": "doj-NH",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-NH:court_directory:a2e1a95ee258": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://www.courts.state.nh.us/supreme/index.htm",
+      "directory": "doj-NH",
+      "locator": "Supreme Court"
+    },
+    "US-NH:court_directory:9344ce2d9574": {
+      "category": "court_directory",
+      "title": "Superior Court",
+      "url": "http://www.courts.state.nh.us/superior/index.htm",
+      "directory": "doj-NH",
+      "locator": "Superior Court"
+    },
+    "US-NH:court_directory:51610bff7ce6": {
+      "category": "court_directory",
+      "title": "Probate Court",
+      "url": "http://www.courts.state.nh.us/probate/index.htm",
+      "directory": "doj-NH",
+      "locator": "Probate Court"
+    },
+    "US-NH:court_directory:2dc8b875adfc": {
+      "category": "court_directory",
+      "title": "District Court",
+      "url": "http://www.courts.state.nh.us/district/index.htm",
+      "directory": "doj-NH",
+      "locator": "District Court"
+    },
+    "US-NH:constitution:23ebd4484bc6": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.nh.gov/glance/state-constitution",
+      "directory": "doj-NH",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NH:regulations:e432d29b4de9": {
+      "category": "regulations",
+      "title": "Administrative Rules and Register",
+      "url": "https://www.gencourt.state.nh.us/rules/",
+      "directory": "doj-NH",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-NH:pi_limitations:a667c045ad43": {
+      "category": "pi_limitations",
+      "title": "N.H. Rev. Stat. Ann. § 508:4, I",
+      "url": "https://gc.nh.gov/rsa/html/LII/508/508-4.htm",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://gc.nh.gov/rsa/html/LII/508/508-4.htm",
+        "retrieved_at": "2026-11-17T19:33:59.791105+00:00",
+        "http_status": "200",
+        "sha256": "1f5b13bbdcd9c43705cb5870eae1bb79687892be50da71b1a95b85e2795d868b",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NH:written_contract_limitations:a667c045ad43": {
+      "category": "written_contract_limitations",
+      "title": "N.H. Rev. Stat. Ann. § 508:4, I",
+      "url": "https://gc.nh.gov/rsa/html/LII/508/508-4.htm",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://gc.nh.gov/rsa/html/LII/508/508-4.htm",
+        "retrieved_at": "2026-11-17T19:33:59.791105+00:00",
+        "http_status": "200",
+        "sha256": "1f5b13bbdcd9c43705cb5870eae1bb79687892be50da71b1a95b85e2795d868b",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NH:oral_contract_limitations:a667c045ad43": {
+      "category": "oral_contract_limitations",
+      "title": "N.H. Rev. Stat. Ann. § 508:4, I",
+      "url": "https://gc.nh.gov/rsa/html/LII/508/508-4.htm",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://gc.nh.gov/rsa/html/LII/508/508-4.htm",
+        "retrieved_at": "2026-11-17T19:33:59.791105+00:00",
+        "http_status": "200",
+        "sha256": "1f5b13bbdcd9c43705cb5870eae1bb79687892be50da71b1a95b85e2795d868b",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NH:small_claims:b023f5d2baec": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2021-06/filingintoexistingsmallclaims.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2021-06/filingintoexistingsmallclaims.pdf",
+        "retrieved_at": "2026-11-17T19:42:37.988754+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-NH:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 28"
+    },
+    "US-NH:fault:c1c38019662c": {
+      "category": "fault",
+      "title": "N.H. RSA 507:7-d",
+      "url": "https://gc.nh.gov/rsa/html/lii/507/507-7-d.htm",
+      "directory": null,
+      "locator": "N.H. RSA 507:7-d"
+    },
+    "US-NH:deposit:1eb757fe282e": {
+      "category": "deposit",
+      "title": "N.H. RSA 540-A:7",
+      "url": "https://gc.nh.gov/rsa/html/LV/540-A/540-A-7.htm",
+      "directory": null,
+      "locator": "N.H. RSA 540-A:7"
+    },
+    "US-NH:wageLaw:c770ed7a9776": {
+      "category": "wageLaw",
+      "title": "N.H. RSA 275:44",
+      "url": "https://gc.nh.gov/rsa/html/XXIII/275/275-44.htm",
+      "directory": null,
+      "locator": "N.H. RSA 275:44"
+    },
+    "US-NH:debtLaw:cd95697b25af": {
+      "category": "debtLaw",
+      "title": "N.H. RSA 358-C:2",
+      "url": "https://gc.nh.gov/rsa/html/xxxi/358-c/358-c-mrg.htm",
+      "directory": null,
+      "locator": "N.H. RSA 358-C:2"
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-NH:court:f135c41b8306",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-NH:court_directory:a2e1a95ee258"
+    },
+    {
+      "id": "US-NH:court:a75c3372d4af",
+      "name": "Superior Court",
+      "level": "trial_directory",
+      "source_id": "US-NH:court_directory:9344ce2d9574"
+    },
+    {
+      "id": "US-NH:court:2877a101f3cf",
+      "name": "Probate Court",
+      "level": "trial_directory",
+      "source_id": "US-NH:court_directory:51610bff7ce6"
+    },
+    {
+      "id": "US-NH:court:c4802801e90f",
+      "name": "District Court",
+      "level": "trial_directory",
+      "source_id": "US-NH:court_directory:2dc8b875adfc"
+    },
+    {
+      "id": "US-NH:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-NH:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NH:court:3c9c83e81fef",
+      "name": "District",
+      "level": "limited_trial",
+      "source_id": "US-NH:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NH:court:4f54b582f9f0",
+      "name": "Probate",
+      "level": "limited_trial",
+      "source_id": "US-NH:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "N.H. Rev. Stat. Ann. § 508:4, I",
+      "source_id": "US-NH:pi_limitations:a667c045ad43",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "N.H. Rev. Stat. Ann. § 508:4, I",
+      "source_id": "US-NH:written_contract_limitations:a667c045ad43",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "N.H. Rev. Stat. Ann. § 508:4, I",
+      "source_id": "US-NH:oral_contract_limitations:a667c045ad43",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "N.H. Rev. Stat. § 540-A:2  General prohibition",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "80bd68ccc5907afd6ed0450b613626": {
+      "citation": "N.H. RSA 507:7-d",
+      "source_id": "US-NH:fault:c1c38019662c",
+      "authority_type": "statute",
+      "text": "Contributory fault shall not bar recovery in an action by any plaintiff or plaintiff's legal representative, to recover damages in tort for death, personal injury or property damage, if such fault was not greater than the fault of the defendant, or the defendants in the aggregate if recovery is allowed against more than one defendant, but the damages awarded shall be diminished in proportion to the amount of fault attributed to the plaintiff by general verdict. The burden of proof as to the existence or amount of fault attributable to a party shall rest upon the party making such allegation.",
+      "text_sha256": "babcedd914a1ec962aa884931e170208343ae1699c927c9ea2f083c4b92e79ef",
+      "publisher_sha256": "5813ca734e6fb8c2938642280ce299c52511ad73891ab46b3f39b312bcb357e4",
+      "retrieved_at": "2026-11-17T19:41:55.101377+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "210e784adba65caf1cf129b0a8e77b": {
+      "citation": "N.H. RSA 540-A:7",
+      "source_id": "US-NH:deposit:1eb757fe282e",
+      "authority_type": "statute",
+      "text": "I. Except as provided in RSA 540-A:6, IV(c), a landlord shall return a security deposit to a tenant and pay the interest due, if any, within 30 days from the termination of the tenancy. If there are any damages to the premises, excluding reasonable wear and tear, the landlord may deduct the costs of repair from the security deposit. The landlord shall provide the tenant with a written, itemized list of any damages for which the landlord claims the tenant is liable, which shall indicate with particularity the nature of any repair necessary to correct any damage and satisfactory evidence that repair necessary to correct these damages has been or will be completed. Satisfactory evidence may include, but not be limited to, receipts for purchased repair materials and labor estimates, bills or invoices indicating the actual or estimated cost thereof.",
+      "text_sha256": "bcfddd3a9e5ed4192f53fe4e30de3b682a5c7560cfda9cda043c4ca50574dde4",
+      "publisher_sha256": "d4c7612d60e9d8f1969474c42b1bd5b60df3ac8860bcec0b3561abd4af0a8737",
+      "retrieved_at": "2026-11-17T19:41:54.912235+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "cb743a250cec3fea05489ff4beb7a8": {
+      "citation": "N.H. RSA 275:44",
+      "source_id": "US-NH:wageLaw:c770ed7a9776",
+      "authority_type": "statute",
+      "text": "I. Whenever an employer discharges an employee, the employer shall pay the employee's wages in full within 72 hours. II. Whenever an employee quits or resigns, the employer shall pay the employee's wages no later than the next regular payday, as provided under RSA 275:43, either through the regular pay channels or by mail if requested by the employee, except that if the employee gives at least one pay period's notice of intention to quit the employer shall pay all wages earned by the employee within 72 hours.",
+      "text_sha256": "729206e14a5f585f2d032705c74cd62b2b29d0d1990c26793bc37ac3d255e56a",
+      "publisher_sha256": "8b9be9f75e4fd4ff52bb91d805bde298989c9cf95a6770663b07d3fa551b0c90",
+      "retrieved_at": "2026-11-17T19:41:55.008981+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "ec7ff83b64329aaf719b5133c203cb": {
+      "citation": "N.H. RSA 358-C:2",
+      "source_id": "US-NH:debtLaw:cd95697b25af",
+      "authority_type": "statute",
+      "text": "No debt collector shall collect or attempt to collect a debt in an unfair, deceptive or unreasonable manner as defined in this chapter.",
+      "text_sha256": "9ea1e81441a8fb75a2f46eec670deb000bdb8f5f5ded1ce38422b536ebc1f8fb",
+      "publisher_sha256": "c524d7702147242b887305d85df4af05dcd861654e85ef9bc42f0def8d5f9ecd",
+      "retrieved_at": "2026-11-17T19:41:55.155449+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    }
+  }
+}

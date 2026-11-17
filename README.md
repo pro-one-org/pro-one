@@ -84,6 +84,8 @@ Options include `--provider virginia_official`, `--collection <source-collection
 
 ## National corpus foundation
 
+The national coverage catalog provides scoped publisher directories, retained authority, court and form references, and inspection commands for 57 jurisdictions. Operators can replay the evidence and inspect gaps by jurisdiction and subject. [National coverage guide](docs/national-coverage.md)
+
 The proposed normalized corpus stores exact source artifacts in local SQLite.
 The bounded sample covers federal statutes, annual CFR, Federal Register
 preambles, federal opinions, statutes from five states, three state

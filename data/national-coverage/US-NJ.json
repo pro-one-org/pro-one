@@ -1,0 +1,306 @@
+{
+  "jurisdiction": "US-NJ",
+  "version": "1",
+  "sources": {
+    "US-NJ:statutes:159edec86acc": {
+      "category": "statutes",
+      "title": "New Jersey Statutes",
+      "url": "https://lis.njleg.state.nj.us/nxt/gateway.dll?f=templates&fn=default.htm&vid=Publish:10.1048/Enu",
+      "directory": "codes",
+      "locator": "New Jersey",
+      "observation": {
+        "requested_url": "https://lis.njleg.state.nj.us/nxt/gateway.dll?f=templates&fn=default.htm&vid=Publish:10.1048/Enu",
+        "retrieved_at": "2026-11-17T19:33:59.832225+00:00",
+        "http_status": "200",
+        "sha256": "167cb4af1cff5db866b8fb48b3e400383040216880e432d21c16010593f7a6ee",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NJ:constitution:382d43f665d3": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.njleg.state.nj.us/lawsconstitution/consearch.asp",
+      "directory": "codes",
+      "locator": "New Jersey"
+    },
+    "US-NJ:legislature:f2b03885b066": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.njleg.state.nj.us/",
+      "directory": "codes",
+      "locator": "New Jersey"
+    },
+    "US-NJ:labor_agency:d54cc9dba303": {
+      "category": "labor_agency",
+      "title": "https://www.nj.gov/labor/",
+      "url": "https://www.nj.gov/labor/",
+      "directory": "labor",
+      "locator": "New Jersey"
+    },
+    "US-NJ:commercial_code:e12f7aa6ee74": {
+      "category": "commercial_code",
+      "title": "Commerce and Navigation Title 12",
+      "url": "https://law.justia.com/codes/new-jersey/2018/title-12/index.html",
+      "directory": "ucc",
+      "locator": "New Jersey"
+    },
+    "US-NJ:commercial_code:61e8eca25ea0": {
+      "category": "commercial_code",
+      "title": "Commercial Transactions Title 12A",
+      "url": "https://law.justia.com/codes/new-jersey/2018/title-12a/index.html",
+      "directory": "ucc",
+      "locator": "New Jersey"
+    },
+    "US-NJ:civil_rules:cab3f0450d23": {
+      "category": "civil_rules",
+      "title": "Administration of Civil and Criminal Justice",
+      "url": "https://law.justia.com/codes/new-jersey/2018/title-2a/index.html",
+      "directory": "procedure",
+      "locator": "New Jersey"
+    },
+    "US-NJ:consumer_agency:3848d1cd7e17": {
+      "category": "consumer_agency",
+      "title": "New Jersey (NJ)",
+      "url": "https://www.njconsumeraffairs.gov/",
+      "directory": "consumer",
+      "locator": "New Jersey (NJ)"
+    },
+    "US-NJ:judiciary:f85b77d09e6f": {
+      "category": "judiciary",
+      "title": "Judiciary",
+      "url": "http://www.judiciary.state.nj.us/",
+      "directory": "doj-NJ",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-NJ:court_directory:a56eb5a92999": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.njcourts.gov/courts/supreme",
+      "directory": "doj-NJ",
+      "locator": "Supreme Court"
+    },
+    "US-NJ:court_directory:ef6e5b8ef09c": {
+      "category": "court_directory",
+      "title": "Appellate Court",
+      "url": "https://www.njcourts.gov/courts/appellate",
+      "directory": "doj-NJ",
+      "locator": "Appellate Court"
+    },
+    "US-NJ:court_directory:ce9a7accbc7a": {
+      "category": "court_directory",
+      "title": "Tax Court",
+      "url": "https://www.njcourts.gov/courts/tax",
+      "directory": "doj-NJ",
+      "locator": "Tax Court"
+    },
+    "US-NJ:opinions:0d585d5e94e3": {
+      "category": "opinions",
+      "title": "Supreme, Appellate, and Tax Court Opinions",
+      "url": "https://njlaw.rutgers.edu/collections/courts/",
+      "directory": "doj-NJ",
+      "locator": "State and Local Courts / Local/Lower Courts"
+    },
+    "US-NJ:court_directory:ac022195baa7": {
+      "category": "court_directory",
+      "title": "Trial Courts",
+      "url": "https://www.njcourts.gov/courts/scco",
+      "directory": "doj-NJ",
+      "locator": "Trial Courts"
+    },
+    "US-NJ:court_directory:17c89adbbd37": {
+      "category": "court_directory",
+      "title": "Municipal Courts",
+      "url": "https://www.njcourts.gov/courts/municipal",
+      "directory": "doj-NJ",
+      "locator": "Municipal Courts"
+    },
+    "US-NJ:forms:d2d3ab2767d3": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "https://www.njcourts.gov/self-help/forms",
+      "directory": "doj-NJ",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-NJ:constitution:3ebd6c45fd0f": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.njleg.state.nj.us/constitution",
+      "directory": "doj-NJ",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NJ:constitution:19617802d896": {
+      "category": "constitution",
+      "title": "Historical Laws, Constitutions and Charters",
+      "url": "http://www.njstatelib.org/research_library/legal_resources/historical_laws/",
+      "directory": "doj-NJ",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NJ:statutes:81c0cb40dd94": {
+      "category": "statutes",
+      "title": "Statutes",
+      "url": "https://lis.njleg.state.nj.us/nxt/gateway.dll/statutes/1?f=templates&fn=default.htm&vid=Publish:10.1048/Enu",
+      "directory": "doj-NJ",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NJ:statutes:7e63dd1708bc": {
+      "category": "statutes",
+      "title": "Chapter Laws",
+      "url": "https://www.njleg.state.nj.us/chapter-laws",
+      "directory": "doj-NJ",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NJ:statutes:991dd2f67745": {
+      "category": "statutes",
+      "title": "Session Laws from Rutgers Law Library",
+      "url": "https://njlaw.rutgers.edu/collections/njleg/",
+      "directory": "doj-NJ",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NJ:pi_limitations:159edec86acc": {
+      "category": "pi_limitations",
+      "title": "N.J. Stat. Ann. § 2A:14-2(a)",
+      "url": "https://lis.njleg.state.nj.us/nxt/gateway.dll?f=templates&fn=default.htm&vid=Publish:10.1048/Enu",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://lis.njleg.state.nj.us/nxt/gateway.dll?f=templates&fn=default.htm&vid=Publish:10.1048/Enu",
+        "retrieved_at": "2026-11-17T19:33:59.832225+00:00",
+        "http_status": "200",
+        "sha256": "167cb4af1cff5db866b8fb48b3e400383040216880e432d21c16010593f7a6ee",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NJ:written_contract_limitations:159edec86acc": {
+      "category": "written_contract_limitations",
+      "title": "N.J. Stat. Ann. § 2A:14-1(a)",
+      "url": "https://lis.njleg.state.nj.us/nxt/gateway.dll?f=templates&fn=default.htm&vid=Publish:10.1048/Enu",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://lis.njleg.state.nj.us/nxt/gateway.dll?f=templates&fn=default.htm&vid=Publish:10.1048/Enu",
+        "retrieved_at": "2026-11-17T19:33:59.832225+00:00",
+        "http_status": "200",
+        "sha256": "167cb4af1cff5db866b8fb48b3e400383040216880e432d21c16010593f7a6ee",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NJ:oral_contract_limitations:159edec86acc": {
+      "category": "oral_contract_limitations",
+      "title": "N.J. Stat. Ann. § 2A:14-1(a)",
+      "url": "https://lis.njleg.state.nj.us/nxt/gateway.dll?f=templates&fn=default.htm&vid=Publish:10.1048/Enu",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://lis.njleg.state.nj.us/nxt/gateway.dll?f=templates&fn=default.htm&vid=Publish:10.1048/Enu",
+        "retrieved_at": "2026-11-17T19:33:59.832225+00:00",
+        "http_status": "200",
+        "sha256": "167cb4af1cff5db866b8fb48b3e400383040216880e432d21c16010593f7a6ee",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NJ:small_claims:adf92591e5cd": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.njcourts.gov/sites/default/files/forms/11482_small_claims_faq.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.njcourts.gov/sites/default/files/forms/11482_small_claims_faq.pdf",
+        "retrieved_at": "2026-11-17T19:42:53.496365+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-NJ:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 28"
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-NJ:court:5f3a5d4bbb2c",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-NJ:court_directory:a56eb5a92999"
+    },
+    {
+      "id": "US-NJ:court:cb0ce62f679b",
+      "name": "Appellate Court",
+      "level": "appellate_directory",
+      "source_id": "US-NJ:court_directory:ef6e5b8ef09c"
+    },
+    {
+      "id": "US-NJ:court:69d9d71c957b",
+      "name": "Tax Court",
+      "level": "trial_directory",
+      "source_id": "US-NJ:court_directory:ce9a7accbc7a"
+    },
+    {
+      "id": "US-NJ:court:ce4ca5ec1aed",
+      "name": "Trial Courts",
+      "level": "trial_directory",
+      "source_id": "US-NJ:court_directory:ac022195baa7"
+    },
+    {
+      "id": "US-NJ:court:1bffc9c5587a",
+      "name": "Municipal Courts",
+      "level": "trial_directory",
+      "source_id": "US-NJ:court_directory:17c89adbbd37"
+    },
+    {
+      "id": "US-NJ:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-NJ:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NJ:court:78eab5a37cfb",
+      "name": "Tax",
+      "level": "limited_trial",
+      "source_id": "US-NJ:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NJ:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-NJ:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "N.J. Stat. Ann. § 2A:14-2(a)",
+      "source_id": "US-NJ:pi_limitations:159edec86acc",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "N.J. Stat. Ann. § 2A:14-1(a)",
+      "source_id": "US-NJ:written_contract_limitations:159edec86acc",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "N.J. Stat. Ann. § 2A:14-1(a)",
+      "source_id": "US-NJ:oral_contract_limitations:159edec86acc",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "N.J. Stat 2A:18-61.1 Grounds for removal of tenants; N.J. Stat 2A:42-10.13 Application of act to rental premises for dwelling purposes; N.J. Stat 2A:18-60 Removal of proceedings into Law Division",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ]
+}

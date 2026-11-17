@@ -1,0 +1,155 @@
+"""Read-only coverage inspection. Directory references cannot satisfy an authority requirement."""
+from collections import Counter, defaultdict
+from hashlib import sha256
+import re
+from functools import lru_cache
+import json
+from urllib.parse import urlsplit
+
+from app.jurisdictions import ROOT, jurisdiction_id, registry
+
+# Each capability has its own discovery dependencies. A homepage alone is never
+# evidence of a rule, a form revision, a monetary amount, or a filing deadline.
+CAPABILITIES = {
+    "research": {"statutes": ("statutes",), "constitution": ("constitution",),
+                 "cases": ("opinions",), "regulations": ("regulations",), "rules": ("civil_rules", "court_rules")},
+    "substantive": {"negligence": ("negligence",), "premises": ("premises",), "fault_allocation": ("fault",),
+                    "contract": ("contract", "commercial_code"), "consumer": ("consumerLaw", "consumer_agency"),
+                    "landlord_tenant": ("deposit", "eviction"), "debt": ("debtLaw",), "wage": ("wageLaw", "labor_agency")},
+    "procedure": {"court_structure": ("court_directory", "judiciary"), "commencement": ("commencement",),
+                  "venue": ("venue",), "service": ("service",), "response": ("response",), "fees": ("fees",),
+                  "e_filing": ("e_filing",), "small_claims": ("small_claims",), "calendar": ("calendar",)},
+    "deadlines": {"pi_limitations": ("pi_limitations",), "contract_limitations": ("written_contract_limitations", "oral_contract_limitations"),
+                  "initial_response": ("response",), "service": ("service",)},
+    "forms": {"forms_index": ("forms",), "complaint": ("complaint_form",), "answer": ("answer_form",),
+              "summons": ("summons_form",), "cover_sheet": ("cover_sheet_form",), "small_claim": ("small_claim_form",)},
+}
+ACTION_REQUIREMENTS = {
+    "complaint": ("commencement", "venue", "service", "fees", "e_filing"),
+    "answer": ("response", "service", "fees", "e_filing"),
+    "small_claim": ("small_claims", "venue", "service", "fees"),
+    "demand": (),
+}
+
+
+@lru_cache(maxsize=1)
+def directories():
+    return json.loads((ROOT / "directories.json").read_bytes())
+
+
+@lru_cache(maxsize=57)
+def manifest(scope):
+    owner = registry()[scope]
+    record = json.loads((ROOT / owner.manifest).read_bytes())
+    if record["jurisdiction"] != scope or not record["sources"]:
+        raise ValueError("coverage_manifest_scope_mismatch")
+    sources = record["sources"]
+    for key, source in sources.items():
+        if (not key.startswith(f"{scope}:{source['category']}:")
+                or urlsplit(source["url"]).scheme not in {"https", "http"}
+                or not urlsplit(source["url"]).hostname
+                or (source["directory"] and source["directory"] not in directories())):
+            raise ValueError("invalid_coverage_source")
+    seen = set()
+    for court in record["court_directory"]:
+        if (not court["id"].startswith(scope + ":court:") or court["id"] in seen
+                or court["source_id"] not in sources):
+            raise ValueError("invalid_court_reference")
+        seen.add(court["id"])
+    for lead in record["citation_leads"]:
+        if lead.get("source_id") and lead["source_id"] not in sources:
+            raise ValueError("invalid_citation_lead")
+    for key, form in record.get("forms", {}).items():
+        if (not key.startswith(scope + ":form:") or form["source_id"] not in sources
+                or form["index_source_id"] not in sources or form["automated_completion"] != "disabled"):
+            raise ValueError("invalid_form_reference")
+    for selector, passage in record.get("passages", {}).items():
+        source = sources.get(passage["source_id"])
+        capture = passage["publisher_sha256"]
+        identity = scope + passage["citation"] + passage["text"] + capture
+        if (not source or source["title"] != passage["citation"] or not re.fullmatch("[a-f0-9]{64}", capture)
+                or sha256(identity.encode()).hexdigest()[:30] != selector
+                or sha256(passage["text"].encode()).hexdigest() != passage["text_sha256"]
+                or passage["currentness"] not in {"unresolved", "historical"}):
+            raise ValueError("invalid_passage_binding")
+    return record
+
+
+def action_shells(scope):
+    if scope not in registry() or registry()[scope].kind not in {"state", "district"}:
+        return []
+    record = manifest(scope)
+    by_category = defaultdict(list)
+    for key, item in record["sources"].items():
+        by_category[item["category"]].append(key)
+    return [{
+        "id": f"{scope[3:].lower()}_{kind}_reference", "jurisdiction": scope, "version": record["version"],
+        "action_type": kind, "path": "pre_suit" if kind == "demand" else "civil_response" if kind == "answer" else "civil_initiation",
+        "stage": "reference", "coverage_status": "reference_only" if kind == "demand" else "local_rule_required",
+        "court_selection": "not_applicable" if kind == "demand" else "user_must_identify_court",
+        "party_requirements": ["attributed_legal_identity", "party_role"],
+        "matter_requirements": ["resolved_governing_jurisdiction", "attributed_material_facts", "user_selected_path"],
+        "claim_analysis": "verified_applicable_basis_required",
+        "procedure_dependencies": {k: by_category[k] for k in deps},
+        "court_references": by_category["judiciary"], "rules_references": by_category["civil_rules"],
+        "document_strategy": "reviewed_demand_basis_required" if kind == "demand" else "resolve_mandatory_form_and_local_requirements",
+        "local_rules": "not_assessed" if kind == "demand" else "local_rule_required",
+        "currentness": "currentness_unresolved", "readiness": "blocked", "execution": "disabled",
+    } for kind, deps in ACTION_REQUIREMENTS.items()]
+
+
+def coverage(value):
+    scope = jurisdiction_id(value)
+    if not scope:
+        raise KeyError(value)
+    record = manifest(scope)
+    by_category = defaultdict(list)
+    for key, source in record["sources"].items():
+        by_category[source["category"]].append(key)
+    passages = defaultdict(list)
+    for key, passage in record.get("passages", {}).items():
+        passages[passage["source_id"]].append(key)
+    cells = {}
+    for area, capabilities in CAPABILITIES.items():
+        for capability, categories in capabilities.items():
+            refs = [key for category in categories for key in by_category[category]]
+            leads = [row for row in record["citation_leads"] if row["category"] in categories]
+            bindings = [binding for ref in refs for binding in passages[ref]]
+            cells[area + "." + capability] = {
+                "status": "currentness_unresolved" if bindings else "reference_only" if refs or leads else "not_yet_supported",
+                "passage_selectors": bindings,
+                "source_ids": refs, "citation_leads": leads, "currentness": "currentness_unresolved",
+            }
+    shells = action_shells(scope)
+    for kind in ACTION_REQUIREMENTS:
+        shell = next((s for s in shells if s["action_type"] == kind), None)
+        cells["action." + kind] = {"status": shell["coverage_status"] if shell else "not_yet_supported",
+                                  "definition_id": shell["id"] if shell else None, "currentness": "currentness_unresolved"}
+    return {"jurisdiction": scope, "name": registry()[scope].name, "kind": registry()[scope].kind,
+            "coverage_version": record["version"], "cells": cells, "sources": record["sources"],
+            "court_directory": record["court_directory"], "action_shells": shells, "forms": record.get("forms", {}),
+            "passages": record.get("passages", {}),
+            "execution": "disabled", "legal_review": "legal_review_required",
+            "governing_law": "matter_specific_review_required",
+            "tribal_scope": "identify_the_specific_sovereign_if_applicable"}
+
+
+def summary():
+    counts = Counter()
+    by_status = Counter()
+    endpoints = set()
+    for scope, owner in registry().items():
+        row = coverage(scope)
+        counts[owner.kind] += 1
+        counts["manifests"] += 1
+        counts["source_entries"] += len(row["sources"])
+        endpoints.update(source["url"] for source in row["sources"].values())
+        counts["court_directory_entries"] += len(row["court_directory"])
+        counts["action_shells"] += len(row["action_shells"])
+        counts["form_records"] += len(row["forms"])
+        counts["retained_state_and_territorial_passages"] += len(row["passages"])
+        counts["small_claims_source_entries"] += sum(s["category"] == "small_claims" for s in row["sources"].values())
+        counts["coverage_cells"] += len(row["cells"])
+        by_status.update(v["status"] for v in row["cells"].values())
+    return {"jurisdictions": len(registry()), **counts, "unique_directory_endpoints": len(endpoints),
+            "coverage_statuses": dict(by_status), "execution": "disabled"}

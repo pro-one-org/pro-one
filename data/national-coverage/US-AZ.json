@@ -1,0 +1,300 @@
+{
+  "jurisdiction": "US-AZ",
+  "version": "1",
+  "sources": {
+    "US-AZ:statutes:f290d1e8752d": {
+      "category": "statutes",
+      "title": "Revised Statutes",
+      "url": "https://www.azleg.gov/arstitle/",
+      "directory": "doj-AZ",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-AZ:constitution:074686076db3": {
+      "category": "constitution",
+      "title": "Arizona Constitution",
+      "url": "https://www.azleg.gov/constitution/",
+      "directory": "doj-AZ",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-AZ:legislature:adeedbbc3cdc": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.azleg.gov",
+      "directory": "codes",
+      "locator": "Arizona"
+    },
+    "US-AZ:labor_agency:42edfcdb6b21": {
+      "category": "labor_agency",
+      "title": "www.azica.gov",
+      "url": "http://www.azica.gov/",
+      "directory": "labor",
+      "locator": "Arizona"
+    },
+    "US-AZ:labor_agency:3cd6750c6d61": {
+      "category": "labor_agency",
+      "title": "https://www.azica.gov/divisions/labor-department",
+      "url": "https://www.azica.gov/divisions/labor-department",
+      "directory": "labor",
+      "locator": "Arizona"
+    },
+    "US-AZ:business_registration:42233d71dd14": {
+      "category": "business_registration",
+      "title": "Arizona Secretary of State",
+      "url": "https://www.azsos.gov/business",
+      "directory": "business",
+      "locator": "Arizona"
+    },
+    "US-AZ:commercial_code:8f0dfc13a636": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "https://www.azleg.gov/arsDetail/?title=47",
+      "directory": "ucc",
+      "locator": "Arizona"
+    },
+    "US-AZ:civil_rules:35841c19e694": {
+      "category": "civil_rules",
+      "title": "Courts and Civil Proceedings",
+      "url": "https://www.azleg.gov/arsDetail/?title=12",
+      "directory": "procedure",
+      "locator": "Arizona"
+    },
+    "US-AZ:consumer_agency:f58477260642": {
+      "category": "consumer_agency",
+      "title": "Arizona (AZ)",
+      "url": "https://www.azag.gov/consumer",
+      "directory": "consumer",
+      "locator": "Arizona (AZ)"
+    },
+    "US-AZ:judiciary:bee4f71f33e2": {
+      "category": "judiciary",
+      "title": "Arizona Judicial Branch",
+      "url": "http://www.azcourts.gov/AZ-Supreme-Court",
+      "directory": "doj-AZ",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-AZ:court_directory:ab07698f0220": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://www.azcourts.gov/azsupremecourt.aspx",
+      "directory": "doj-AZ",
+      "locator": "Supreme Court"
+    },
+    "US-AZ:court_directory:6d8db5c84f3a": {
+      "category": "court_directory",
+      "title": "Court of Appeals Division One",
+      "url": "http://azcourts.gov/Default.aspx?alias=azcourts.gov/coa1",
+      "directory": "doj-AZ",
+      "locator": "Court of Appeals Division One"
+    },
+    "US-AZ:court_directory:68296bf065cf": {
+      "category": "court_directory",
+      "title": "Court of Appeals Division Two",
+      "url": "https://www.appeals2.az.gov/apl2.cfm",
+      "directory": "doj-AZ",
+      "locator": "Court of Appeals Division Two"
+    },
+    "US-AZ:court_directory:8c0ce34bf10a": {
+      "category": "court_directory",
+      "title": "State & Local Courts",
+      "url": "https://www.appeals2.az.gov/othercrt.html",
+      "directory": "doj-AZ",
+      "locator": "State & Local Courts"
+    },
+    "US-AZ:forms:af2448dba4b0": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "http://www.azcourts.gov/selfservicecenter/Self-Service-Center-Home/Self-Service-Center-Forms",
+      "directory": "doj-AZ",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-AZ:regulations:9c7788a5714a": {
+      "category": "regulations",
+      "title": "Administrative Code",
+      "url": "https://azsos.gov/rules/arizona-administrative-code",
+      "directory": "doj-AZ",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-AZ:regulations:5c487b2c7118": {
+      "category": "regulations",
+      "title": "Administrative Register",
+      "url": "https://azsos.gov/rules/arizona-administrative-register",
+      "directory": "doj-AZ",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-AZ:pi_limitations:ab955cf075cb": {
+      "category": "pi_limitations",
+      "title": "A.R.S. § 12-542",
+      "url": "https://www.azleg.gov/ars/12/00542.htm",
+      "directory": null,
+      "locator": "A.R.S. § 12-542",
+      "observation": {
+        "requested_url": "https://www.azleg.gov/ars/12/00542.htm",
+        "retrieved_at": "2026-11-17T19:33:54.909148+00:00",
+        "http_status": "200",
+        "sha256": "29513120d481ec5432c4cc9f90d8f4cea212f6780f138bddb87981f34e5555b1",
+        "health": "healthy"
+      }
+    },
+    "US-AZ:written_contract_limitations:7d29338070d1": {
+      "category": "written_contract_limitations",
+      "title": "A.R.S. § 12-548",
+      "url": "https://www.azleg.gov/ars/12/00548.htm",
+      "directory": null,
+      "locator": "A.R.S. § 12-548",
+      "observation": {
+        "requested_url": "https://www.azleg.gov/ars/12/00548.htm",
+        "retrieved_at": "2026-11-17T19:33:54.913667+00:00",
+        "http_status": "200",
+        "sha256": "ce2c4c6010e702958ab41e2f8cb30494b39d90b57e38f08c6a31bed3a5bc8fe7",
+        "health": "healthy"
+      }
+    },
+    "US-AZ:oral_contract_limitations:97dc61e8dea0": {
+      "category": "oral_contract_limitations",
+      "title": "A.R.S. § 12-543",
+      "url": "https://www.azleg.gov/ars/12/00543.htm",
+      "directory": null,
+      "locator": "A.R.S. § 12-543",
+      "observation": {
+        "requested_url": "https://www.azleg.gov/ars/12/00543.htm",
+        "retrieved_at": "2026-11-17T19:33:54.914662+00:00",
+        "http_status": "200",
+        "sha256": "118ee5349b607512dc5719da485e388ae0426f0551d7cab6a36eda414baaf269",
+        "health": "healthy"
+      }
+    },
+    "US-AZ:small_claims:022843cd3150": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.azcourts.gov/selfservicecenter/small-claims",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.azcourts.gov/selfservicecenter/small-claims",
+        "retrieved_at": "2026-11-17T19:42:34.561404+00:00",
+        "http_status": "200",
+        "sha256": "7c87b3ad525baa2893dcfc3fcf1306b5c37dac00e2e94f35eceea6cffd4fb746",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AZ:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 26"
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-AZ:court:f1b7478f1e46",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-AZ:court_directory:ab07698f0220"
+    },
+    {
+      "id": "US-AZ:court:08d78e0984b5",
+      "name": "Court of Appeals Division One",
+      "level": "appellate_directory",
+      "source_id": "US-AZ:court_directory:6d8db5c84f3a"
+    },
+    {
+      "id": "US-AZ:court:58afbb741cfc",
+      "name": "Court of Appeals Division Two",
+      "level": "appellate_directory",
+      "source_id": "US-AZ:court_directory:68296bf065cf"
+    },
+    {
+      "id": "US-AZ:court:c000455be3c9",
+      "name": "State & Local Courts",
+      "level": "trial_directory",
+      "source_id": "US-AZ:court_directory:8c0ce34bf10a"
+    },
+    {
+      "id": "US-AZ:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-AZ:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-AZ:court:130cafc44268",
+      "name": "Justice of the Peace",
+      "level": "limited_trial",
+      "source_id": "US-AZ:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-AZ:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-AZ:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "A.R.S. § 12-542(1)",
+      "source_id": "US-AZ:pi_limitations:ab955cf075cb",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "A.R.S. § 12-548(A)(1)",
+      "source_id": "US-AZ:written_contract_limitations:7d29338070d1",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "A.R.S. § 12-543(1)",
+      "source_id": "US-AZ:oral_contract_limitations:97dc61e8dea0",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Arizona Stat. § 33-1307. Territorial application",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "b8e2acd029e941f7038a57996280e3": {
+      "citation": "A.R.S. § 12-542",
+      "source_id": "US-AZ:pi_limitations:ab955cf075cb",
+      "authority_type": "statute",
+      "text": "Except as provided in section 12-551 there shall be commenced and prosecuted within two years after the cause of action accrues, and not afterward, the following actions: 1. For injuries done to the person of another including causes of action for medical malpractice as defined in section 12-561.",
+      "text_sha256": "313e1edbf7b7a3ca84ef929b54724c0940f24bf8be40c18b679ed901b8436032",
+      "publisher_sha256": "29513120d481ec5432c4cc9f90d8f4cea212f6780f138bddb87981f34e5555b1",
+      "retrieved_at": "2026-11-17T19:33:54.909148+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "e743619df21ca3be9a8bfa0670909d": {
+      "citation": "A.R.S. § 12-548",
+      "source_id": "US-AZ:written_contract_limitations:7d29338070d1",
+      "authority_type": "statute",
+      "text": "A. An action for debt shall be commenced and prosecuted within six years after the cause of action accrues, and not afterward, if the indebtedness is evidenced by or founded on either of the following: 1. A contract in writing that is executed in this state. 2. A credit card as defined in section 13-2101, paragraph 3, subdivision (a).",
+      "text_sha256": "f351d3ce7ec84e3411925eb0a6a385d2e617c215cc73739c0830565448858787",
+      "publisher_sha256": "ce2c4c6010e702958ab41e2f8cb30494b39d90b57e38f08c6a31bed3a5bc8fe7",
+      "retrieved_at": "2026-11-17T19:33:54.913667+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "3be8a01cb8ac7227ecc78fab59dace": {
+      "citation": "A.R.S. § 12-543",
+      "source_id": "US-AZ:oral_contract_limitations:97dc61e8dea0",
+      "authority_type": "statute",
+      "text": "There shall be commenced and prosecuted within three years after the cause of action accrues, and not afterward, the following actions: 1. For debt where the indebtedness is not evidenced by a contract in writing.",
+      "text_sha256": "e12eb90b73b6d31324bdc60217783cf11e98c2c16e0990f0f37bc64f5b69d882",
+      "publisher_sha256": "118ee5349b607512dc5719da485e388ae0426f0551d7cab6a36eda414baaf269",
+      "retrieved_at": "2026-11-17T19:33:54.914662+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    }
+  }
+}

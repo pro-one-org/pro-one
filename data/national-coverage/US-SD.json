@@ -1,0 +1,265 @@
+{
+  "jurisdiction": "US-SD",
+  "version": "1",
+  "sources": {
+    "US-SD:statutes:65d4e5e95677": {
+      "category": "statutes",
+      "title": "South Dakota Codified Laws",
+      "url": "http://sdlegislature.gov/statutes/Codified_Laws/",
+      "directory": "codes",
+      "locator": "South Dakota"
+    },
+    "US-SD:constitution:2b3c30b9577f": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://sdlegislature.gov/Statutes/Constitution/",
+      "directory": "codes",
+      "locator": "South Dakota"
+    },
+    "US-SD:legislature:d9e23dbb0852": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://sdlegislature.gov/",
+      "directory": "codes",
+      "locator": "South Dakota"
+    },
+    "US-SD:labor_agency:b85abbc5b5c9": {
+      "category": "labor_agency",
+      "title": "www.dlr.sd.gov",
+      "url": "http://www.dlr.sd.gov/",
+      "directory": "labor",
+      "locator": "South Dakota"
+    },
+    "US-SD:commercial_code:3f937343653e": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://legis.state.sd.us/statutes/DisplayStatute.aspx?Type=Statute&Statute=57A",
+      "directory": "ucc",
+      "locator": "South Dakota"
+    },
+    "US-SD:civil_rules:e86731ab9322": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "http://legis.state.sd.us/statutes/DisplayStatute.aspx?Type=Statute&Statute=15",
+      "directory": "procedure",
+      "locator": "South Dakota"
+    },
+    "US-SD:consumer_agency:8a4318ef1122": {
+      "category": "consumer_agency",
+      "title": "South Dakota (SD)",
+      "url": "https://consumer.sd.gov/",
+      "directory": "consumer",
+      "locator": "South Dakota (SD)"
+    },
+    "US-SD:judiciary:c73f9db7c09b": {
+      "category": "judiciary",
+      "title": "Judicial System",
+      "url": "http://ujs.sd.gov/",
+      "directory": "doj-SD",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-SD:judiciary:7e1cbaac52a6": {
+      "category": "judiciary",
+      "title": "Statewide Case Record Search",
+      "url": "https://ujslawhelp.sd.gov/recordsearch.aspx",
+      "directory": "doj-SD",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-SD:court_directory:57dbb4213de0": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://ujs.sd.gov/Supreme_Court/default.aspx",
+      "directory": "doj-SD",
+      "locator": "Supreme Court"
+    },
+    "US-SD:court_directory:ae060a707b5b": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "http://ujs.sd.gov/Circuit_Court/default.aspx",
+      "directory": "doj-SD",
+      "locator": "Circuit Courts"
+    },
+    "US-SD:court_directory:7f4300e72da3": {
+      "category": "court_directory",
+      "title": "Small Claims Court",
+      "url": "http://ujs.sd.gov/Small_Claims/",
+      "directory": "doj-SD",
+      "locator": "Small Claims Court"
+    },
+    "US-SD:forms:f6a941757528": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "https://ujslawhelp.sd.gov/onlineforms.aspx",
+      "directory": "doj-SD",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-SD:statutes:cf78308af09d": {
+      "category": "statutes",
+      "title": "Codified Laws",
+      "url": "http://sdlegislature.gov/Statutes/Codified_Laws/default.aspx",
+      "directory": "doj-SD",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-SD:constitution:c11c7895a25f": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://sdlegislature.gov/Statutes/Constitution/default.aspx",
+      "directory": "doj-SD",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-SD:statutes:44b94622970e": {
+      "category": "statutes",
+      "title": "Session Laws",
+      "url": "http://sdlegislature.gov/Statutes/Session_Laws/Archive.aspx?Session=2017",
+      "directory": "doj-SD",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-SD:pi_limitations:6a5ee5e2f932": {
+      "category": "pi_limitations",
+      "title": "SDCL § 15-2-14(3)",
+      "url": "https://sdlegislature.gov/Statutes/15-2-14",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://sdlegislature.gov/Statutes/15-2-14",
+        "retrieved_at": "2026-11-17T19:34:01.414630+00:00",
+        "http_status": "200",
+        "sha256": "603d94196c4231431bfae66a818425b9dc03fcb690187f6e7bf7f441a354195c",
+        "health": "manual_review_required"
+      }
+    },
+    "US-SD:written_contract_limitations:17c2d3348b16": {
+      "category": "written_contract_limitations",
+      "title": "SDCL § 15-2-13(1)",
+      "url": "https://sdlegislature.gov/Statutes/15-2-13",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://sdlegislature.gov/Statutes/15-2-13",
+        "retrieved_at": "2026-11-17T19:34:01.336885+00:00",
+        "http_status": "200",
+        "sha256": "603d94196c4231431bfae66a818425b9dc03fcb690187f6e7bf7f441a354195c",
+        "health": "manual_review_required"
+      }
+    },
+    "US-SD:oral_contract_limitations:17c2d3348b16": {
+      "category": "oral_contract_limitations",
+      "title": "SDCL § 15-2-13(1)",
+      "url": "https://sdlegislature.gov/Statutes/15-2-13",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://sdlegislature.gov/Statutes/15-2-13",
+        "retrieved_at": "2026-11-17T19:34:01.336885+00:00",
+        "http_status": "200",
+        "sha256": "603d94196c4231431bfae66a818425b9dc03fcb690187f6e7bf7f441a354195c",
+        "health": "manual_review_required"
+      }
+    },
+    "US-SD:small_claims:73541579a44b": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://ujs.sd.gov/self-help/pro-se-forms/small-claims-forms/",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://ujs.sd.gov/self-help/pro-se-forms/small-claims-forms/",
+        "retrieved_at": "2026-11-17T19:42:33.165669+00:00",
+        "http_status": "200",
+        "sha256": "85e49ce260a965b770553cb3d8108abe2bfa15a55735755fac79288bf1a7ebf2",
+        "health": "manual_review_required"
+      }
+    },
+    "US-SD:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 29"
+    },
+    "US-SD:small_claim_form:c2f5404c9757": {
+      "category": "small_claim_form",
+      "title": "UJS-008 Plaintiff's Statement of Claim",
+      "url": "https://ujs.sd.gov/files/ujs-008-plaintiffs-statement-of-claim/",
+      "directory": null,
+      "locator": "UJS-008"
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-SD:court:b5beae039c9b",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-SD:court_directory:57dbb4213de0"
+    },
+    {
+      "id": "US-SD:court:3f7fdb39198a",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-SD:court_directory:ae060a707b5b"
+    },
+    {
+      "id": "US-SD:court:fdbed6b9940a",
+      "name": "Small Claims Court",
+      "level": "trial_directory",
+      "source_id": "US-SD:court_directory:7f4300e72da3"
+    },
+    {
+      "id": "US-SD:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-SD:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-SD:court:44949d940273",
+      "name": "Magistrate",
+      "level": "limited_trial",
+      "source_id": "US-SD:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "SDCL § 15-2-14(3)",
+      "source_id": "US-SD:pi_limitations:6a5ee5e2f932",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "SDCL § 15-2-13(1)",
+      "source_id": "US-SD:written_contract_limitations:17c2d3348b16",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "SDCL § 15-2-13(1)",
+      "source_id": "US-SD:oral_contract_limitations:17c2d3348b16",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "S.D. Codified Laws § 21-16-1. Grounds for maintenance of action.; S.D. Codified Laws § 43-32-18. Termination of lease by landlord before end of agreed term--Use of premises by tenant contrary to agreement--Neglect of tenant to make repairs.; S.D. Codified Laws § 43-32-36. Eviction for false claims of disability requiring service animal or fraudulent documentation—Damages.",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "forms": {
+    "US-SD:form:UJS-008": {
+      "title": "UJS-008 Plaintiff's Statement of Claim",
+      "publisher_identifier": "UJS-008",
+      "source_id": "US-SD:small_claim_form:c2f5404c9757",
+      "index_source_id": "US-SD:small_claims:73541579a44b",
+      "index_sha256": "85e49ce260a965b770553cb3d8108abe2bfa15a55735755fac79288bf1a7ebf2",
+      "court_scope": "small_claims",
+      "mandatory": "review_required",
+      "revision": null,
+      "last_observed": "2026-11-17T19:42:33.165669+00:00",
+      "automated_completion": "disabled"
+    }
+  }
+}

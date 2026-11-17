@@ -1,0 +1,382 @@
+{
+  "jurisdiction": "US-SC",
+  "version": "1",
+  "sources": {
+    "US-SC:statutes:dc83ae434d2a": {
+      "category": "statutes",
+      "title": "Code of Laws",
+      "url": "http://www.scstatehouse.gov/code/statmast.php",
+      "directory": "codes",
+      "locator": "South Carolina"
+    },
+    "US-SC:constitution:f20757aeea87": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.scstatehouse.gov/scconstitution/scconst.php",
+      "directory": "codes",
+      "locator": "South Carolina"
+    },
+    "US-SC:legislature:c511b4d5a423": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.scstatehouse.gov/index.php",
+      "directory": "codes",
+      "locator": "South Carolina"
+    },
+    "US-SC:labor_agency:c945203739b5": {
+      "category": "labor_agency",
+      "title": "llr.sc.gov/",
+      "url": "https://llr.sc.gov/",
+      "directory": "labor",
+      "locator": "South Carolina"
+    },
+    "US-SC:commercial_code:94552df38d79": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://www.scstatehouse.gov/code/t36c011.php",
+      "directory": "ucc",
+      "locator": "South Carolina"
+    },
+    "US-SC:civil_rules:a1898ad811e0": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "http://www.scstatehouse.gov/code/title15.php",
+      "directory": "procedure",
+      "locator": "South Carolina"
+    },
+    "US-SC:consumer_agency:ea8580eba9dd": {
+      "category": "consumer_agency",
+      "title": "South Carolina (SC)",
+      "url": "https://consumer.sc.gov/",
+      "directory": "consumer",
+      "locator": "South Carolina (SC)"
+    },
+    "US-SC:judiciary:433ee577418e": {
+      "category": "judiciary",
+      "title": "Judicial Branch",
+      "url": "https://www.sccourts.org/",
+      "directory": "doj-SC",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-SC:judiciary:1af606732ab5": {
+      "category": "judiciary",
+      "title": "Judicial Branch Opinion Search",
+      "url": "https://www.sccourts.org/opinions-orders/opinions/opinion-search/",
+      "directory": "doj-SC",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-SC:judiciary:bc2e2510dc7f": {
+      "category": "judiciary",
+      "title": "Advance Sheets",
+      "url": "https://www.sccourts.org/opinions-orders/advance-sheets/",
+      "directory": "doj-SC",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-SC:court_directory:4bf6183a0a42": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.sccourts.org/supreme/",
+      "directory": "doj-SC",
+      "locator": "Supreme Court"
+    },
+    "US-SC:opinions:3c8bc7a0d97e": {
+      "category": "opinions",
+      "title": "Supreme Court Opinions",
+      "url": "https://www.sccourts.org/opinions-orders/opinions/published-opinions/supreme-court/",
+      "directory": "doj-SC",
+      "locator": "State and Local Courts / Supreme Court"
+    },
+    "US-SC:court_directory:fda706284b14": {
+      "category": "court_directory",
+      "title": "South Carolina Court of Appeals",
+      "url": "https://www.sccourts.org/appeals/",
+      "directory": "doj-SC",
+      "locator": "South Carolina Court of Appeals"
+    },
+    "US-SC:opinions:15d5fe790d40": {
+      "category": "opinions",
+      "title": "Court of Appeals Opinions",
+      "url": "https://www.sccourts.org/opinions-orders/opinions/published-opinions/court-of-appeals/",
+      "directory": "doj-SC",
+      "locator": "State and Local Courts / Courts of Appeal"
+    },
+    "US-SC:court_directory:c2adf09ece43": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "https://www.sccourts.org/courts/trial-courts/circuit-court/",
+      "directory": "doj-SC",
+      "locator": "Circuit Courts"
+    },
+    "US-SC:court_directory:7f3e1203a8a5": {
+      "category": "court_directory",
+      "title": "Family Courts",
+      "url": "http://www.sccourts.org/familyCourt/",
+      "directory": "doj-SC",
+      "locator": "Family Courts"
+    },
+    "US-SC:court_directory:7449e18ea4f2": {
+      "category": "court_directory",
+      "title": "Probate Courts",
+      "url": "http://www.sccourts.org/probateCourt/",
+      "directory": "doj-SC",
+      "locator": "Probate Courts"
+    },
+    "US-SC:court_directory:6ff7f69c8e43": {
+      "category": "court_directory",
+      "title": "Magistrates Court",
+      "url": "http://www.sccourts.org/magistrateCourt/",
+      "directory": "doj-SC",
+      "locator": "Magistrates Court"
+    },
+    "US-SC:court_directory:ff29db8441c8": {
+      "category": "court_directory",
+      "title": "Charleston County Courts",
+      "url": "https://clerkofcourt.charlestoncounty.org/",
+      "directory": "doj-SC",
+      "locator": "Charleston County Courts"
+    },
+    "US-SC:forms:0e7303dc0209": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "http://www.sccourts.org/forms/",
+      "directory": "doj-SC",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-SC:forms:e8c5169e2e43": {
+      "category": "forms",
+      "title": "Charleston County Court Forms",
+      "url": "https://www.charlestoncounty.org/departments/clerk-of-court/forms.php#go",
+      "directory": "doj-SC",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-SC:constitution:d6799a396c2a": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.scstatehouse.gov/scconstitution/scconst.php",
+      "directory": "doj-SC",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-SC:statutes:06f9e405dce0": {
+      "category": "statutes",
+      "title": "Code of Laws",
+      "url": "https://www.scstatehouse.gov/code/statmast.php",
+      "directory": "doj-SC",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-SC:regulations:f9298451c908": {
+      "category": "regulations",
+      "title": "Code of Regulations",
+      "url": "https://www.scstatehouse.gov/coderegs/statmast.php",
+      "directory": "doj-SC",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-SC:regulations:701487b2624c": {
+      "category": "regulations",
+      "title": "State Register",
+      "url": "https://www.scstatehouse.gov/state_register.php",
+      "directory": "doj-SC",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-SC:pi_limitations:7da72fb70ade": {
+      "category": "pi_limitations",
+      "title": "S.C. Code § 15-3-530(5)",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.scstatehouse.gov/code/t15c003.php",
+        "retrieved_at": "2026-11-17T19:34:00.985892+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-SC:written_contract_limitations:7da72fb70ade": {
+      "category": "written_contract_limitations",
+      "title": "S.C. Code § 15-3-530(1)",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.scstatehouse.gov/code/t15c003.php",
+        "retrieved_at": "2026-11-17T19:34:00.985892+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-SC:oral_contract_limitations:7da72fb70ade": {
+      "category": "oral_contract_limitations",
+      "title": "S.C. Code § 15-3-530(1)",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.scstatehouse.gov/code/t15c003.php",
+        "retrieved_at": "2026-11-17T19:34:00.985892+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-SC:small_claims:8f6830a3ee23": {
+      "category": "small_claims",
+      "title": "Summary court civil procedure",
+      "url": "https://www.scstatehouse.gov/code/t22c003.php",
+      "directory": null,
+      "locator": "Publisher resource"
+    },
+    "US-SC:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 29"
+    },
+    "US-SC:wageLaw:ab6bbc50b61a": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://www.scstatehouse.gov/code/t41c010",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.scstatehouse.gov/code/t41c010",
+        "retrieved_at": "2026-11-17T19:43:06.970483+00:00",
+        "http_status": "200",
+        "sha256": "618d3e12990fbae124919734d199173e28a7bde113861b10b11dc338046f161a",
+        "health": "manual_review_required"
+      }
+    },
+    "US-SC:consumerLaw:0b6b786a8fb2": {
+      "category": "consumerLaw",
+      "title": "S.C. Code § 39-5-20",
+      "url": "https://www.scstatehouse.gov/Archives/CodeofLaws2018/t39c005",
+      "directory": null,
+      "locator": "S.C. Code § 39-5-20"
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-SC:court:406cd8b1c8cb",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-SC:court_directory:4bf6183a0a42"
+    },
+    {
+      "id": "US-SC:court:651c91cc84b8",
+      "name": "South Carolina Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-SC:court_directory:fda706284b14"
+    },
+    {
+      "id": "US-SC:court:afd5b207030b",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-SC:court_directory:c2adf09ece43"
+    },
+    {
+      "id": "US-SC:court:25c6acda7e80",
+      "name": "Family Courts",
+      "level": "trial_directory",
+      "source_id": "US-SC:court_directory:7f3e1203a8a5"
+    },
+    {
+      "id": "US-SC:court:fbc6950ebe7e",
+      "name": "Probate Courts",
+      "level": "trial_directory",
+      "source_id": "US-SC:court_directory:7449e18ea4f2"
+    },
+    {
+      "id": "US-SC:court:fd12629be78e",
+      "name": "Magistrates Court",
+      "level": "trial_directory",
+      "source_id": "US-SC:court_directory:6ff7f69c8e43"
+    },
+    {
+      "id": "US-SC:court:3ca8c9628c2b",
+      "name": "Charleston County Courts",
+      "level": "trial_directory",
+      "source_id": "US-SC:court_directory:ff29db8441c8"
+    },
+    {
+      "id": "US-SC:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-SC:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-SC:court:6946571becdd",
+      "name": "Family",
+      "level": "limited_trial",
+      "source_id": "US-SC:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-SC:court:44949d940273",
+      "name": "Magistrate",
+      "level": "limited_trial",
+      "source_id": "US-SC:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-SC:court:4f54b582f9f0",
+      "name": "Probate",
+      "level": "limited_trial",
+      "source_id": "US-SC:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-SC:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-SC:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "S.C. Code § 15-3-530(5)",
+      "source_id": "US-SC:pi_limitations:7da72fb70ade",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "S.C. Code § 15-3-530(1)",
+      "source_id": "US-SC:written_contract_limitations:7da72fb70ade",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "S.C. Code § 15-3-530(1)",
+      "source_id": "US-SC:oral_contract_limitations:7da72fb70ade",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "S.C. Code § 27-40-110. Territorial application",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "932e7f8a958ff21f1e47b0270a07b5": {
+      "citation": "S.C. Code § 39-5-20",
+      "source_id": "US-SC:consumerLaw:0b6b786a8fb2",
+      "authority_type": "statute",
+      "text": "(a) Unfair methods of competition and unfair or deceptive acts or practices in the conduct of any trade or commerce are hereby declared unlawful. (b) It is the intent of the legislature that in construing paragraph (a) of this section the courts will be guided by the interpretations given by the Federal Trade Commission and the Federal Courts to Section 5(a) (1) of the Federal Trade Commission Act (15 U.S.C. 45(a)(1)), as from time to time amended.",
+      "text_sha256": "9540d95bbd624bc5437265c6c7f49e36408cc40098cdc73589728a7677da736a",
+      "publisher_sha256": "5d59d752058185c071e8f7b90e1873c98cea59f9419928bf9e7421850183bf7a",
+      "retrieved_at": "2026-11-17T19:43:06.726355+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    }
+  }
+}

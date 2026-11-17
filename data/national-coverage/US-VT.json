@@ -1,0 +1,294 @@
+{
+  "jurisdiction": "US-VT",
+  "version": "1",
+  "sources": {
+    "US-VT:statutes:1c516682787e": {
+      "category": "statutes",
+      "title": "Vermont Statutes",
+      "url": "http://legislature.vermont.gov/statutes",
+      "directory": "codes",
+      "locator": "Vermont"
+    },
+    "US-VT:constitution:ec24f81d9ec4": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://legislature.vermont.gov/statutes/constitution-of-the-state-of-vermont/",
+      "directory": "codes",
+      "locator": "Vermont"
+    },
+    "US-VT:legislature:949aea6a298d": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://legislature.vermont.gov",
+      "directory": "codes",
+      "locator": "Vermont"
+    },
+    "US-VT:labor_agency:7f24b10b377e": {
+      "category": "labor_agency",
+      "title": "www.labor.vermont.gov",
+      "url": "http://www.labor.vermont.gov/",
+      "directory": "labor",
+      "locator": "Vermont"
+    },
+    "US-VT:commercial_code:d7dbbf61fa58": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "https://legislature.vermont.gov/statutes/title/09A",
+      "directory": "ucc",
+      "locator": "Vermont"
+    },
+    "US-VT:civil_rules:88af66cf8a25": {
+      "category": "civil_rules",
+      "title": "Court Procedure",
+      "url": "https://legislature.vermont.gov/statutes/chapter/12/001",
+      "directory": "procedure",
+      "locator": "Vermont"
+    },
+    "US-VT:consumer_agency:d6287c3dad44": {
+      "category": "consumer_agency",
+      "title": "Vermont (VT)",
+      "url": "https://ago.vermont.gov/cap",
+      "directory": "consumer",
+      "locator": "Vermont (VT)"
+    },
+    "US-VT:judiciary:6856ce2ee069": {
+      "category": "judiciary",
+      "title": "Vermont Judiciary",
+      "url": "http://www.vermontjudiciary.org/",
+      "directory": "doj-VT",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-VT:judiciary:17bd6ab68102": {
+      "category": "judiciary",
+      "title": "Opinions, Decisions, and Order Library",
+      "url": "https://www.vermontjudiciary.org/opinions-decisions?f%5B0%5D=court_division_opinions_library%3A7&f%5B1%5D=court_division_opinions_library%3A7",
+      "directory": "doj-VT",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-VT:court_directory:657030435d5c": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://www.vermontjudiciary.org/GTC/supreme/default.aspx",
+      "directory": "doj-VT",
+      "locator": "Supreme Court"
+    },
+    "US-VT:opinions:77ecb5f54ef8": {
+      "category": "opinions",
+      "title": "Supreme Court Published Opinions by Date",
+      "url": "https://www.vermontjudiciary.org/supreme-court/published-opinions-and-entry-orders",
+      "directory": "doj-VT",
+      "locator": "State and Local Courts / Supreme Court"
+    },
+    "US-VT:court_directory:291bced48a9a": {
+      "category": "court_directory",
+      "title": "Superior Court Divisions",
+      "url": "https://www.vermontjudiciary.org/court-divisions",
+      "directory": "doj-VT",
+      "locator": "Superior Court Divisions"
+    },
+    "US-VT:forms:aacbf872c597": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "http://www.vermontjudiciary.org/MasterPages/Court-FormsIndex.aspx",
+      "directory": "doj-VT",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-VT:constitution:64200aae88ae": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://legislature.vermont.gov/statutes/constitution-of-the-state-of-vermont/",
+      "directory": "doj-VT",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-VT:statutes:8e197a03daf1": {
+      "category": "statutes",
+      "title": "Statutes Online",
+      "url": "http://legislature.vermont.gov/statutes/",
+      "directory": "doj-VT",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-VT:pi_limitations:ea575ac77f66": {
+      "category": "pi_limitations",
+      "title": "12 V.S.A. § 512(4)",
+      "url": "https://legislature.vermont.gov/statutes/section/12/023/00512",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://legislature.vermont.gov/statutes/section/12/023/00512",
+        "retrieved_at": "2026-11-17T19:34:02.316745+00:00",
+        "http_status": "200",
+        "sha256": "b267d2007fc73a550b01c5c9f8c5f59ce698d3acfc87ef3e94e14b985dfab3fd",
+        "health": "manual_review_required"
+      }
+    },
+    "US-VT:written_contract_limitations:f0763d17ada9": {
+      "category": "written_contract_limitations",
+      "title": "12 V.S.A. § 511",
+      "url": "https://legislature.vermont.gov/statutes/section/12/023/00511",
+      "directory": null,
+      "locator": "12 V.S.A. § 511",
+      "observation": {
+        "requested_url": "https://legislature.vermont.gov/statutes/section/12/023/00511",
+        "retrieved_at": "2026-11-17T19:34:02.572203+00:00",
+        "http_status": "200",
+        "sha256": "705f8f2347d549881163169d5c6844a29d413cf0a1569594ce72167be5ad5464",
+        "health": "healthy"
+      }
+    },
+    "US-VT:oral_contract_limitations:f0763d17ada9": {
+      "category": "oral_contract_limitations",
+      "title": "12 V.S.A. § 511",
+      "url": "https://legislature.vermont.gov/statutes/section/12/023/00511",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://legislature.vermont.gov/statutes/section/12/023/00511",
+        "retrieved_at": "2026-11-17T19:34:02.572203+00:00",
+        "http_status": "200",
+        "sha256": "705f8f2347d549881163169d5c6844a29d413cf0a1569594ce72167be5ad5464",
+        "health": "manual_review_required"
+      }
+    },
+    "US-VT:small_claims:d5fbcd5fa147": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.vermontjudiciary.org/sites/default/files/documents/Small%20Claims%20Booklet%20-%20October2019.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.vermontjudiciary.org/sites/default/files/documents/Small%20Claims%20Booklet%20-%20October2019.pdf",
+        "retrieved_at": "2026-11-17T19:43:10.316511+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-VT:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 29"
+    },
+    "US-VT:deposit:d858bf1c9e66": {
+      "category": "deposit",
+      "title": "9 V.S.A. § 4461",
+      "url": "https://legislature.vermont.gov/statutes/section/09/137/04461",
+      "directory": null,
+      "locator": "9 V.S.A. § 4461"
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-VT:court:5079aeebabaf",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-VT:court_directory:657030435d5c"
+    },
+    {
+      "id": "US-VT:court:1501f6455cd5",
+      "name": "Superior Court Divisions",
+      "level": "trial_directory",
+      "source_id": "US-VT:court_directory:291bced48a9a"
+    },
+    {
+      "id": "US-VT:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-VT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-VT:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-VT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-VT:court:d9bcb339204e",
+      "name": "Family",
+      "level": "general_trial",
+      "source_id": "US-VT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-VT:court:4f54b582f9f0",
+      "name": "Probate",
+      "level": "limited_trial",
+      "source_id": "US-VT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-VT:court:b8b23a5c5780",
+      "name": "Environmental",
+      "level": "limited_trial",
+      "source_id": "US-VT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-VT:court:f37bb82a94cf",
+      "name": "Judicial Bureau",
+      "level": "limited_trial",
+      "source_id": "US-VT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "12 V.S.A. § 512(4)",
+      "source_id": "US-VT:pi_limitations:ea575ac77f66",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "12 V.S.A. § 511",
+      "source_id": "US-VT:written_contract_limitations:f0763d17ada9",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "12 V.S.A. § 511",
+      "source_id": "US-VT:oral_contract_limitations:f0763d17ada9",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Vt. Stat. tit. 9, §4467 Termination of tenancy; notice; Vt. Stat. tit. 9, §4467 Termination of tenancy; notice; Vt. Stat. tit. 9, §4467 Termination of tenancy; notice; Vt. Stat. tit. 10, §6237 Evictions; E.O. 20-59. (No. 01-20) [Declaration of State of Emergency in Response to COVID-19 and National Guard Call-Out; No. 101. An act relating to establishing a moratorium on ejectment and foreclosure actions during the COVID-19 emergency. (S. 333)",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "e5b229e67943bf9e61bd39438a8166": {
+      "citation": "12 V.S.A. § 511",
+      "source_id": "US-VT:written_contract_limitations:f0763d17ada9",
+      "authority_type": "statute",
+      "text": "A civil action, except one brought upon the judgment or decree of a court of record of the United States or of this or some other state, and except as otherwise provided, shall be commenced within six years after the cause of action accrues and not thereafter.",
+      "text_sha256": "eea45df4f6dfa7caebebe74ff5493851b526160248411f56b871e1a7f5b2466b",
+      "publisher_sha256": "705f8f2347d549881163169d5c6844a29d413cf0a1569594ce72167be5ad5464",
+      "retrieved_at": "2026-11-17T19:34:02.572203+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "4b151ea20a4801fdb1d12c08f9ee31": {
+      "citation": "9 V.S.A. § 4461",
+      "source_id": "US-VT:deposit:d858bf1c9e66",
+      "authority_type": "statute",
+      "text": "(c) A landlord shall return the security deposit along with a written statement itemizing any deductions to a tenant within 14 days from the date on which the landlord discovers that the tenant vacated or abandoned the dwelling unit or the date the tenant vacated the dwelling unit, provided the landlord received notice from the tenant of that date. In the case of the seasonal occupancy and rental of a dwelling unit not intended as a primary residence, the security deposit and written statement shall be returned within 60 days.",
+      "text_sha256": "5e11dfaf09799b9fa23c6f1597a582b49dd6e0bd479810f5b6b1415ab9aee073",
+      "publisher_sha256": "ff3ec21d34b84645e16484af4b7c59ef65c0d22c9bedc8e4307c8a05235c9f7a",
+      "retrieved_at": "2026-11-17T19:42:03.898494+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    }
+  }
+}

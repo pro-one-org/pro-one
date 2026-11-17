@@ -1,0 +1,334 @@
+{
+  "jurisdiction": "US-MI",
+  "version": "1",
+  "sources": {
+    "US-MI:statutes:6166d8dae612": {
+      "category": "statutes",
+      "title": "Michigan Compiled Laws",
+      "url": "http://www.legislature.mi.gov/",
+      "directory": "codes",
+      "locator": "Michigan"
+    },
+    "US-MI:constitution:ca931c2e57e2": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://legislature.mi.gov/doc.aspx?mcl-Constitution",
+      "directory": "codes",
+      "locator": "Michigan"
+    },
+    "US-MI:legislature:301e03422ff9": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.legislature.mi.gov",
+      "directory": "codes",
+      "locator": "Michigan"
+    },
+    "US-MI:labor_agency:b016d3391e81": {
+      "category": "labor_agency",
+      "title": "www.michigan.gov/leo",
+      "url": "http://www.michigan.gov/leo",
+      "directory": "labor",
+      "locator": "Michigan"
+    },
+    "US-MI:commercial_code:c23ddfb9e562": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://legislature.mi.gov/(S(vi5pov45iocdgufj1040tm55))/mileg.aspx?page=GetObject&objectname=mcl-chap440",
+      "directory": "ucc",
+      "locator": "Michigan"
+    },
+    "US-MI:consumer_agency:03cbeb81129c": {
+      "category": "consumer_agency",
+      "title": "Michigan (MI)",
+      "url": "https://www.michigan.gov/consumerprotection",
+      "directory": "consumer",
+      "locator": "Michigan (MI)"
+    },
+    "US-MI:judiciary:26b492fe1132": {
+      "category": "judiciary",
+      "title": "Judiciary",
+      "url": "http://courts.michigan.gov/",
+      "directory": "doj-MI",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-MI:court_directory:e5b8535dfb93": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://courts.mi.gov/Courts/MichiganSupremeCourt/Pages/default.aspx",
+      "directory": "doj-MI",
+      "locator": "Supreme Court"
+    },
+    "US-MI:court_directory:5cab3a110004": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "https://courts.michigan.gov/courts/coa/pages/default.aspx",
+      "directory": "doj-MI",
+      "locator": "Court of Appeals"
+    },
+    "US-MI:court_directory:968cd26063cc": {
+      "category": "court_directory",
+      "title": "Trial Courts",
+      "url": "https://www.courts.michigan.gov/courts/trial-courts/",
+      "directory": "doj-MI",
+      "locator": "Trial Courts"
+    },
+    "US-MI:forms:e5ba5a03f375": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "http://courts.mi.gov/administration/scao/forms/pages/default.aspx",
+      "directory": "doj-MI",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-MI:forms:b126978190d3": {
+      "category": "forms",
+      "title": "Court of Appeal Forms",
+      "url": "http://courts.mi.gov/courts/coa/forms/pages/forms.aspx",
+      "directory": "doj-MI",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-MI:constitution:3d887b8cc1d6": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.legislature.mi.gov/(S(p3gv0oysebi1gx1ktztpou5p))/mileg.aspx?page=getobject&objectname=mcl-chap1",
+      "directory": "doj-MI",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MI:statutes:8e741c2165c2": {
+      "category": "statutes",
+      "title": "Compiled Laws and Bills",
+      "url": "http://www.legislature.mi.gov/(S(xdq5cp2xt2pkbzppqbgpmk25))/mileg.aspx?page=home",
+      "directory": "doj-MI",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MI:regulations:7b8c479bc40b": {
+      "category": "regulations",
+      "title": "Administrative Code",
+      "url": "https://ars.apps.lara.state.mi.us/AdminCode/AdminCode",
+      "directory": "doj-MI",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-MI:regulations:0098ebe24d6a": {
+      "category": "regulations",
+      "title": "Michigan Register",
+      "url": "https://www.michigan.gov/lara/0,4601,7-154-89334_10576_92306_92312_92359---,00.html",
+      "directory": "doj-MI",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-MI:pi_limitations:8c49b6c69e89": {
+      "category": "pi_limitations",
+      "title": "MCL 600.5805",
+      "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-600-5805",
+      "directory": null,
+      "locator": "MCL 600.5805",
+      "observation": {
+        "requested_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-600-5805",
+        "retrieved_at": "2026-11-17T19:33:58.714081+00:00",
+        "http_status": "200",
+        "sha256": "b5c81858affaf9bc235aac2255b317ae954fe6e51ebed8251b43859fb3c2b5b4",
+        "health": "healthy"
+      }
+    },
+    "US-MI:written_contract_limitations:9b7a5bb615f3": {
+      "category": "written_contract_limitations",
+      "title": "MCL 600.5807",
+      "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-600-5807",
+      "directory": null,
+      "locator": "MCL 600.5807",
+      "observation": {
+        "requested_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-600-5807",
+        "retrieved_at": "2026-11-17T19:33:58.767753+00:00",
+        "http_status": "200",
+        "sha256": "8267e53ce24c71a2fc23651020e6bfa7620ac62c415416529e8d0d0486c1cf3c",
+        "health": "healthy"
+      }
+    },
+    "US-MI:oral_contract_limitations:9b7a5bb615f3": {
+      "category": "oral_contract_limitations",
+      "title": "MCL 600.5807(9)",
+      "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-600-5807",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-600-5807",
+        "retrieved_at": "2026-11-17T19:33:58.767753+00:00",
+        "http_status": "200",
+        "sha256": "8267e53ce24c71a2fc23651020e6bfa7620ac62c415416529e8d0d0486c1cf3c",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MI:small_claims:c38faec3b7a6": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.courts.michigan.gov/SCAO-forms/small-claims/",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.courts.michigan.gov/SCAO-forms/small-claims/",
+        "retrieved_at": "2026-11-17T19:42:37.071744+00:00",
+        "http_status": "200",
+        "sha256": "ef7d400976b5783d8d6a036ffa94d504f3ab1c6e263c49b3011efc4a931d1fef",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MI:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    },
+    "US-MI:deposit:0a071e7b8027": {
+      "category": "deposit",
+      "title": "Residential tenancy publication",
+      "url": "https://www.legislature.mi.gov/documents/mcl/archive/2025/March/mcl-Act-348-of-1972.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.legislature.mi.gov/documents/mcl/archive/2025/March/mcl-Act-348-of-1972.pdf",
+        "retrieved_at": "2026-11-17T19:42:51.508838+00:00",
+        "http_status": "200",
+        "sha256": "4b6030d472264e71a6c6bee2577f6d7805bd68bbdd8760c6e83fd086602da0a6",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MI:wageLaw:ea802b920dba": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://www.legislature.mi.gov/documents/mcl/archive/2025/January/mcl-Act-390-of-1978.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.legislature.mi.gov/documents/mcl/archive/2025/January/mcl-Act-390-of-1978.pdf",
+        "retrieved_at": "2026-11-17T19:42:52.081516+00:00",
+        "http_status": "200",
+        "sha256": "d1758e0e96f72f7b6901703872ff10055fe034dcff3279c91f32c0e1e023bc7c",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MI:debtLaw:c226462ce710": {
+      "category": "debtLaw",
+      "title": "Debt collection publication",
+      "url": "https://www.legislature.mi.gov/documents/mcl/archive/2025/May/mcl-Act-70-of-1981.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.legislature.mi.gov/documents/mcl/archive/2025/May/mcl-Act-70-of-1981.pdf",
+        "retrieved_at": "2026-11-17T19:42:51.505828+00:00",
+        "http_status": "200",
+        "sha256": "7c1662e50216b016b168c130c4c60150209487f628ae93a4b4f93bff01553b90",
+        "health": "manual_review_required"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-MI:court:349fb1d4fdad",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-MI:court_directory:e5b8535dfb93"
+    },
+    {
+      "id": "US-MI:court:f30d4b979b3c",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-MI:court_directory:5cab3a110004"
+    },
+    {
+      "id": "US-MI:court:6bb6ab555fcc",
+      "name": "Trial Courts",
+      "level": "trial_directory",
+      "source_id": "US-MI:court_directory:968cd26063cc"
+    },
+    {
+      "id": "US-MI:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-MI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MI:court:47bb6deb1044",
+      "name": "Claims",
+      "level": "general_trial",
+      "source_id": "US-MI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MI:court:3c9c83e81fef",
+      "name": "District",
+      "level": "limited_trial",
+      "source_id": "US-MI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MI:court:4f54b582f9f0",
+      "name": "Probate",
+      "level": "limited_trial",
+      "source_id": "US-MI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MI:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-MI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "MCL 600.5805(2)",
+      "source_id": "US-MI:pi_limitations:8c49b6c69e89",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "MCL 600.5807(9)",
+      "source_id": "US-MI:written_contract_limitations:9b7a5bb615f3",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "MCL 600.5807(9)",
+      "source_id": "US-MI:oral_contract_limitations:9b7a5bb615f3",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Mich. Comp. Laws § 600.2918. Unlawful ejectment or interference with possessory interest; action for damages, possession, and injunctive relief; conditions and exceptions; limitations of actions",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "1d6571e76e05296438345e40a0573e": {
+      "citation": "MCL 600.5805",
+      "source_id": "US-MI:pi_limitations:8c49b6c69e89",
+      "authority_type": "statute",
+      "text": "(1) A person shall not bring or maintain an action to recover damages for injuries to persons or property unless, after the claim first accrued to the plaintiff or to someone through whom the plaintiff claims, the action is commenced within the periods of time prescribed by this section. (2) Except as otherwise provided in this section, the period of limitations is 3 years after the time of the death or injury for all actions to recover damages for the death of a person or for injury to a person or property.",
+      "text_sha256": "c9f8eccf93e445a7b3375557976d57b2d9368cc26c184d7375ffd9686c901a62",
+      "publisher_sha256": "b5c81858affaf9bc235aac2255b317ae954fe6e51ebed8251b43859fb3c2b5b4",
+      "retrieved_at": "2026-11-17T19:33:58.714081+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "11ee414566c072459000578f443bff": {
+      "citation": "MCL 600.5807",
+      "source_id": "US-MI:written_contract_limitations:9b7a5bb615f3",
+      "authority_type": "statute",
+      "text": "(1) A person may not bring or maintain an action to recover damages or money due for breach of contract or to enforce the specific performance of a contract unless, after the claim first accrued to the person or to someone through whom the person claims, the person commences the action within the applicable period prescribed by this section.",
+      "text_sha256": "70ceff4e86a2b1e907594f1a4a77eaf0331d19a1a048a24567be3335ad6b98f6",
+      "publisher_sha256": "8267e53ce24c71a2fc23651020e6bfa7620ac62c415416529e8d0d0486c1cf3c",
+      "retrieved_at": "2026-11-17T19:33:58.767753+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    }
+  }
+}

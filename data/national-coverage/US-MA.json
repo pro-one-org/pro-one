@@ -1,0 +1,395 @@
+{
+  "jurisdiction": "US-MA",
+  "version": "1",
+  "sources": {
+    "US-MA:statutes:78dc108363c3": {
+      "category": "statutes",
+      "title": "General Laws of Massachusetts",
+      "url": "http://malegislature.gov/Laws/GeneralLaws/Search",
+      "directory": "codes",
+      "locator": "Massachusetts"
+    },
+    "US-MA:constitution:7c308bbb7206": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://malegislature.gov/Laws/Constitution",
+      "directory": "doj-MA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MA:legislature:fa0955e7432b": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://malegislature.gov/",
+      "directory": "codes",
+      "locator": "Massachusetts"
+    },
+    "US-MA:labor_agency:21e6bb6ecc27": {
+      "category": "labor_agency",
+      "title": "www.mass.gov/orgs/executive-office-of-labor-and-workforce-development",
+      "url": "https://www.mass.gov/orgs/executive-office-of-labor-and-workforce-development",
+      "directory": "labor",
+      "locator": "Massachusetts"
+    },
+    "US-MA:commercial_code:e0f1426beed8": {
+      "category": "commercial_code",
+      "title": "Commercial Law",
+      "url": "https://malegislature.gov/laws/generallaws/parti/titlexv/chapter106",
+      "directory": "ucc",
+      "locator": "Massachusetts"
+    },
+    "US-MA:civil_rules:928130c0c348": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "https://www.mass.gov/law-library/massachusetts-rules-of-civil-procedure",
+      "directory": "procedure",
+      "locator": "Massachusetts"
+    },
+    "US-MA:consumer_agency:95a9090df565": {
+      "category": "consumer_agency",
+      "title": "Massachusetts (MA)",
+      "url": "https://www.mass.gov/orgs/office-of-consumer-affairs-and-business-regulation",
+      "directory": "consumer",
+      "locator": "Massachusetts (MA)"
+    },
+    "US-MA:judiciary:7923f1ab542d": {
+      "category": "judiciary",
+      "title": "Judicial Branch",
+      "url": "https://www.mass.gov/orgs/massachusetts-court-system",
+      "directory": "doj-MA",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-MA:judiciary:727ddec1bb14": {
+      "category": "judiciary",
+      "title": "Supreme Court, Court of Appeals, and Superior Court Decisions",
+      "url": "http://www.socialaw.com/slips.htm?sid=120",
+      "directory": "doj-MA",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-MA:court_directory:a30720ef6b26": {
+      "category": "court_directory",
+      "title": "Supreme Judicial Court",
+      "url": "http://www.mass.gov/courts/sjc",
+      "directory": "doj-MA",
+      "locator": "Supreme Judicial Court"
+    },
+    "US-MA:court_directory:93e7ec81c850": {
+      "category": "court_directory",
+      "title": "Appeals Court",
+      "url": "http://www.mass.gov/courts/court-info/appealscourt/",
+      "directory": "doj-MA",
+      "locator": "Appeals Court"
+    },
+    "US-MA:court_directory:89f99b827ddd": {
+      "category": "court_directory",
+      "title": "Trial Court",
+      "url": "https://www.mass.gov/orgs/executive-office-of-the-trial-court",
+      "directory": "doj-MA",
+      "locator": "Trial Court"
+    },
+    "US-MA:court_directory:0f7a62f3440a": {
+      "category": "court_directory",
+      "title": "Trial Court Law Libraries",
+      "url": "http://www.mass.gov/courts/case-legal-res/law-lib/",
+      "directory": "doj-MA",
+      "locator": "Trial Court Law Libraries"
+    },
+    "US-MA:forms:7b84bde465f2": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://www.mass.gov/topics/court-forms",
+      "directory": "doj-MA",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-MA:statutes:f239c9f9b739": {
+      "category": "statutes",
+      "title": "General Laws",
+      "url": "https://malegislature.gov/Laws/GeneralLaws",
+      "directory": "doj-MA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MA:statutes:056a51a2a97e": {
+      "category": "statutes",
+      "title": "Session Laws",
+      "url": "https://malegislature.gov/Laws/SessionLaws",
+      "directory": "doj-MA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MA:regulations:aa5ecd66b9a2": {
+      "category": "regulations",
+      "title": "State Publications and Regulations Division",
+      "url": "https://www.sec.state.ma.us/divisions/pubs-regs/pubs-regs.htm",
+      "directory": "doj-MA",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-MA:regulations:135bb660d12c": {
+      "category": "regulations",
+      "title": "Code of Massachusetts Regulations",
+      "url": "https://www.mass.gov/code-of-massachusetts-regulations-cmr",
+      "directory": "doj-MA",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-MA:pi_limitations:f5d1a2006371": {
+      "category": "pi_limitations",
+      "title": "Mass. Gen. Laws ch. 260, § 2A",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleV/Chapter260/Section2A",
+      "directory": null,
+      "locator": "Mass. Gen. Laws ch. 260, § 2A",
+      "observation": {
+        "requested_url": "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleV/Chapter260/Section2A",
+        "retrieved_at": "2026-11-17T19:33:58.264182+00:00",
+        "http_status": "200",
+        "sha256": "2f26d703c5cbb6709840f24061f8552abd333f5253040985af2ff5df0886aab1",
+        "health": "healthy"
+      }
+    },
+    "US-MA:written_contract_limitations:e11da4007b18": {
+      "category": "written_contract_limitations",
+      "title": "Mass. Gen. Laws ch. 260, § 2",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleV/Chapter260/Section2",
+      "directory": null,
+      "locator": "Mass. Gen. Laws ch. 260, § 2",
+      "observation": {
+        "requested_url": "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleV/Chapter260/Section2",
+        "retrieved_at": "2026-11-17T19:33:58.361147+00:00",
+        "http_status": "200",
+        "sha256": "6942a7dfc0b5f47819934bc51de4b2ca366255d74fa79983cf81d478a60def7d",
+        "health": "healthy"
+      }
+    },
+    "US-MA:oral_contract_limitations:e11da4007b18": {
+      "category": "oral_contract_limitations",
+      "title": "M.G.L. c. 260, § 2",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleV/Chapter260/Section2",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleV/Chapter260/Section2",
+        "retrieved_at": "2026-11-17T19:33:58.361147+00:00",
+        "http_status": "200",
+        "sha256": "6942a7dfc0b5f47819934bc51de4b2ca366255d74fa79983cf81d478a60def7d",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MA:small_claims:b62a8f3633b9": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.mass.gov/lists/small-claims-court-forms",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.mass.gov/lists/small-claims-court-forms",
+        "retrieved_at": "2026-11-17T19:42:52.082524+00:00",
+        "http_status": "200",
+        "sha256": "d16d1b113823851f2679e89cfb1eeef9d0f38576aa4e3f3cef6b1edd78ecdcc0",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MA:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    },
+    "US-MA:debtLaw:48762a1990e1": {
+      "category": "debtLaw",
+      "title": "Debt collection publication",
+      "url": "https://www.mass.gov/info-details/fair-debt-collection",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.mass.gov/info-details/fair-debt-collection",
+        "retrieved_at": "2026-11-17T19:42:53.014111+00:00",
+        "http_status": "200",
+        "sha256": "ca874cbf01730ba23faeda8e88c7ea7277bbb6b4df3d32c43931160abfcd35f4",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MA:contract:684b1315dc88": {
+      "category": "contract",
+      "title": "Contract research publication",
+      "url": "https://www.mass.gov/doc/superior-court-model-civil-jury-instructions-contract-claims-pdf/download",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.mass.gov/doc/superior-court-model-civil-jury-instructions-contract-claims-pdf/download",
+        "retrieved_at": "2026-11-17T19:42:51.862935+00:00",
+        "http_status": "200",
+        "sha256": "86ed5ab214295db105a5a2e62e673de9231afd4f954631819863d0e622f53b34",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MA:negligence:cc7c092f6a8f": {
+      "category": "negligence",
+      "title": "Negligence research publication",
+      "url": "https://www.mass.gov/lists/civil-model-jury-instructions-for-use-in-the-district-court",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.mass.gov/lists/civil-model-jury-instructions-for-use-in-the-district-court",
+        "retrieved_at": "2026-11-17T19:42:52.031709+00:00",
+        "http_status": "200",
+        "sha256": "6186f26d1c9cf121d1ef14afbb934589ca0727c5bbbadca2b4cc5ee70402f940",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MA:commencement:ccc6df24c423": {
+      "category": "commencement",
+      "title": "Mass. R. Civ. P. 3",
+      "url": "https://www.mass.gov/rules-of-civil-procedure/civil-procedure-rule-3-commencement-of-action",
+      "directory": null,
+      "locator": "Mass. R. Civ. P. 3",
+      "language": "en",
+      "publisher_role": "official_rule_publication",
+      "observation": {
+        "health": "retained_snapshot",
+        "retrieved_at": "2026-11-17T20:14:26.711025+00:00",
+        "sha256": "6aa5b31a8e535a80d3d7104f4d6de50eac629cb6cd00a2984a4b052a45bbf3c9"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-MA:court:2bac4330f8a3",
+      "name": "Supreme Judicial Court",
+      "level": "highest_directory",
+      "source_id": "US-MA:court_directory:a30720ef6b26"
+    },
+    {
+      "id": "US-MA:court:dbf9d862b625",
+      "name": "Appeals Court",
+      "level": "appellate_directory",
+      "source_id": "US-MA:court_directory:93e7ec81c850"
+    },
+    {
+      "id": "US-MA:court:3cb6f8f0a4d5",
+      "name": "Trial Court",
+      "level": "trial_directory",
+      "source_id": "US-MA:court_directory:89f99b827ddd"
+    },
+    {
+      "id": "US-MA:court:051b3b335d91",
+      "name": "Trial Court Law Libraries",
+      "level": "trial_directory",
+      "source_id": "US-MA:court_directory:0f7a62f3440a"
+    },
+    {
+      "id": "US-MA:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-MA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MA:court:3c9c83e81fef",
+      "name": "District",
+      "level": "limited_trial",
+      "source_id": "US-MA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MA:court:b2fbf62c5136",
+      "name": "Probate & Family",
+      "level": "limited_trial",
+      "source_id": "US-MA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MA:court:d693956e904d",
+      "name": "Juvenile",
+      "level": "limited_trial",
+      "source_id": "US-MA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MA:court:ae409c6c3854",
+      "name": "Housing",
+      "level": "limited_trial",
+      "source_id": "US-MA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MA:court:a2a7eb4830d0",
+      "name": "Boston Municipal",
+      "level": "limited_trial",
+      "source_id": "US-MA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MA:court:6d1dbfbecb2e",
+      "name": "Land",
+      "level": "limited_trial",
+      "source_id": "US-MA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "M.G.L. c. 260, § 2A",
+      "source_id": "US-MA:pi_limitations:f5d1a2006371",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "M.G.L. c. 260, § 2",
+      "source_id": "US-MA:written_contract_limitations:e11da4007b18",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "M.G.L. c. 260, § 2",
+      "source_id": "US-MA:oral_contract_limitations:e11da4007b18",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Mass. Gen. Laws ch. 186 § 11. Determination of lease for nonpayment of rent.; Mass. Gen. Laws ch. 239 § 1A. Land or tenements used for residential purposes; action by lessor under this chapter to recover possession; conditions and restrictions.",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "d4b6310725049d934157837b6571f6": {
+      "citation": "Mass. Gen. Laws ch. 260, § 2A",
+      "source_id": "US-MA:pi_limitations:f5d1a2006371",
+      "authority_type": "statute",
+      "text": "Section 2A. Except as otherwise provided, actions of tort, actions of contract to recover for personal injuries, and actions of replevin, shall be commenced only within three years next after the cause of action accrues.",
+      "text_sha256": "6fbd090e1cc2794c35dc1d4224a3a132af61fdf486de4ef9f3bffd991e3e1b77",
+      "publisher_sha256": "2f26d703c5cbb6709840f24061f8552abd333f5253040985af2ff5df0886aab1",
+      "retrieved_at": "2026-11-17T19:33:58.264182+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "8647f61e64a27a2a64f4067abc8fd8": {
+      "citation": "Mass. Gen. Laws ch. 260, § 2",
+      "source_id": "US-MA:written_contract_limitations:e11da4007b18",
+      "authority_type": "statute",
+      "text": "Section 2. Actions of contract, other than those to recover for personal injuries, founded upon contracts or liabilities, express or implied, except actions limited by section one or actions upon judgments or decrees of courts of record of the United States or of this or of any other state of the United States, shall, except as otherwise provided, be commenced only within six years next after the cause of action accrues.",
+      "text_sha256": "48515650cb4411d89fd565cb3b211a09036d68004d4da648af0a4e13ea1ba9fe",
+      "publisher_sha256": "6942a7dfc0b5f47819934bc51de4b2ca366255d74fa79983cf81d478a60def7d",
+      "retrieved_at": "2026-11-17T19:33:58.361147+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "7fd5e68372a5edd622b541357bba2c": {
+      "source_id": "US-MA:commencement:ccc6df24c423",
+      "citation": "Mass. R. Civ. P. 3",
+      "authority_type": "court_rule",
+      "language": "en",
+      "text": "Rule 3 A civil action is commenced by (1) mailing to the clerk of the proper court by certified or registered mail a complaint and an entry fee prescribed by law, (2) filing such complaint and an entry fee with such clerk, or (3) submitting the complaint to the court through the court’s electronic filing system accompanied by electronic payment of the entry fee pursuant to the Massachusetts Rules of Electronic Filing. Actions brought pursuant to G.L. c. 185 for registration or confirmation shall be commenced by filing a surveyor’s plan and complaint on a form furnished by the Land Court. Waiver of the entry fee on the ground of indigency may be sought in accordance with G.L. c. 261, § 27C.",
+      "text_sha256": "48d7fffcb3b368e9e8747b1325026b8d3677d6d59dcb5048d42cc5f31ca35b70",
+      "publisher_sha256": "6aa5b31a8e535a80d3d7104f4d6de50eac629cb6cd00a2984a4b052a45bbf3c9",
+      "retrieved_at": "2026-11-17T20:14:26.711025+00:00",
+      "currentness": "unresolved"
+    }
+  }
+}

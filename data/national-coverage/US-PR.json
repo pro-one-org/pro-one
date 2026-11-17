@@ -1,0 +1,160 @@
+{
+  "jurisdiction": "US-PR",
+  "version": "1",
+  "sources": {
+    "US-PR:statutes:c0bc8d347dc8": {
+      "category": "statutes",
+      "title": "Laws of Puerto Rico and Constitution",
+      "url": "http://www.lexisnexis.com/hottopics/lawsofpuertorico/",
+      "directory": "codes",
+      "locator": "Puerto Rico"
+    },
+    "US-PR:statutes:e08c5501caea": {
+      "category": "statutes",
+      "title": "Leyes de Puerto Rico Unanotadas",
+      "url": "http://www.lexisnexis.com/hottopics/lawsofpuertoricospan/",
+      "directory": "codes",
+      "locator": "Puerto Rico"
+    },
+    "US-PR:labor_agency:bf605ec089f6": {
+      "category": "labor_agency",
+      "title": "www.trabajo.pr.gov",
+      "url": "http://www.trabajo.pr.gov/",
+      "directory": "labor",
+      "locator": "Puerto Rico"
+    },
+    "US-PR:consumer_agency:72d6322ba36e": {
+      "category": "consumer_agency",
+      "title": "Puerto Rico (PR)",
+      "url": "https://www.daco.pr.gov/",
+      "directory": "consumer",
+      "locator": "Puerto Rico (PR)"
+    },
+    "US-PR:judiciary:3c73a4afd4ec": {
+      "category": "judiciary",
+      "title": "Tribunal Supremo",
+      "url": "https://www.poderjudicial.pr/index.php/tribunal-supremo/",
+      "directory": "doj-PR",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-PR:judiciary:7d60f3847179": {
+      "category": "judiciary",
+      "title": "Tribunal Apelaciones",
+      "url": "https://www.poderjudicial.pr/index.php/tribunal-apelaciones/",
+      "directory": "doj-PR",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-PR:judiciary:7c1eb65cd694": {
+      "category": "judiciary",
+      "title": "Tribunal de Primera Instancia",
+      "url": "https://www.poderjudicial.pr/index.php/tribunal-de-primera-instancia/",
+      "directory": "doj-PR",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-PR:judiciary:a84b45b7454e": {
+      "category": "judiciary",
+      "title": "Telephone numbers for the Supreme Court for contact regarding translations",
+      "url": "https://poderjudicial.pr/index.php/servicios-a-la-comunidad/traducciones/",
+      "directory": "doj-PR",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-PR:constitution:6bea067479be": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://welcome.topuertorico.org/constitu.shtml",
+      "directory": "doj-PR",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-PR:small_claims:77a1cc3ada7c": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://poderjudicial.pr/educacion-a-la-comunidad/informacion-sobres-temas-legales/casos-civiles/cobro-de-dinero/",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://poderjudicial.pr/educacion-a-la-comunidad/informacion-sobres-temas-legales/casos-civiles/cobro-de-dinero/",
+        "retrieved_at": "2026-11-17T19:42:23.724472+00:00",
+        "http_status": "200",
+        "sha256": "cac8ac5857a68156bbc5efd9e8c0483b2bd60f9f10567a75f23f8af6bc01581c",
+        "health": "manual_review_required"
+      }
+    },
+    "US-PR:statutes:4afe6a97b933": {
+      "category": "statutes",
+      "title": "Biblioteca Virtual de la Oficina de Gerencia y Presupuesto",
+      "url": "https://bvirtualogp.pr.gov/",
+      "directory": null,
+      "locator": "Publisher resource"
+    },
+    "US-PR:civil_rules:f008b911b4d3": {
+      "category": "civil_rules",
+      "title": "Leyes y reglamentos del Poder Judicial",
+      "url": "https://poderjudicial.pr/leyes-y-reglamentos-de-la-rama-judicial/",
+      "directory": null,
+      "locator": "Publisher resource"
+    },
+    "US-PR:judiciary:c58e9b8092eb": {
+      "category": "judiciary",
+      "title": "Poder Judicial de Puerto Rico",
+      "url": "https://poderjudicial.pr/",
+      "directory": null,
+      "locator": "Publisher resource"
+    },
+    "US-PR:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 29"
+    },
+    "US-PR:commencement:b522043947c9": {
+      "category": "commencement",
+      "title": "P.R. R. Civ. P. 2 (English version)",
+      "url": "https://poderjudicial.pr/Documentos/Leyes-Reglamentos/English/Rules-of-Civil-Procedure-as-amended.pdf",
+      "directory": null,
+      "locator": "P.R. R. Civ. P. 2 (English version)",
+      "language": "en",
+      "publisher_role": "official_rule_publication",
+      "observation": {
+        "health": "retained_snapshot",
+        "retrieved_at": "2026-11-17T20:14:10.535548+00:00",
+        "sha256": "3f80de579124028436254710a0a76553e2ab581f3c27b2975191016eaf4f15ab"
+      },
+      "original_language": "es",
+      "translation_status": "publisher_english_version",
+      "original_language_directory": "https://poderjudicial.pr/leyes-y-reglamentos-de-la-rama-judicial/"
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-PR:court:825170b43115",
+      "name": "First Instance",
+      "level": "general_trial",
+      "source_id": "US-PR:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "eviction",
+      "citation": "32 L. P. R. A. § 2823. Jurisdiction; appearance",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "3c0d9659f22009b529ec1ed7ba416d": {
+      "source_id": "US-PR:commencement:b522043947c9",
+      "citation": "P.R. R. Civ. P. 2 (English version)",
+      "authority_type": "court_rule",
+      "language": "en",
+      "text": "Rule 2. Commencement of Action An action is commenced by filing a complaint with the court.",
+      "text_sha256": "0da6640c1ba27ab6e91225418aaef37341b5aa3d17585093ce10724b5f6d5459",
+      "publisher_sha256": "3f80de579124028436254710a0a76553e2ab581f3c27b2975191016eaf4f15ab",
+      "retrieved_at": "2026-11-17T20:14:10.535548+00:00",
+      "currentness": "unresolved"
+    }
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "jurisdiction": "US-PA",
+  "version": "1",
+  "sources": {
+    "US-PA:statutes:5c9c03f36030": {
+      "category": "statutes",
+      "title": "Pennsylvania Statutes and Constitution",
+      "url": "http://government.westlaw.com/linkedslice/default.asp?SP=pac-1000",
+      "directory": "codes",
+      "locator": "Pennsylvania"
+    },
+    "US-PA:constitution:3c55186fe19f": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=00&div=0&chpt=1",
+      "directory": "codes",
+      "locator": "Pennsylvania"
+    },
+    "US-PA:legislature:8dfb5767b380": {
+      "category": "legislature",
+      "title": "General Assembly",
+      "url": "http://www.legis.state.pa.us/",
+      "directory": "codes",
+      "locator": "Pennsylvania"
+    },
+    "US-PA:labor_agency:f17e1e125210": {
+      "category": "labor_agency",
+      "title": "https://www.pa.gov/agencies/dli",
+      "url": "https://www.pa.gov/agencies/dli",
+      "directory": "labor",
+      "locator": "Pennsylvania"
+    },
+    "US-PA:civil_rules:ec59e2b5e61d": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "http://www.pacode.com/secure/data/231/231toc.html",
+      "directory": "procedure",
+      "locator": "Pennsylvania"
+    },
+    "US-PA:consumer_agency:566a9fea45ea": {
+      "category": "consumer_agency",
+      "title": "Pennsylvania (PA)",
+      "url": "https://www.attorneygeneral.gov/protect-yourself/consumer-advisories/",
+      "directory": "consumer",
+      "locator": "Pennsylvania (PA)"
+    },
+    "US-PA:judiciary:74d6304746b2": {
+      "category": "judiciary",
+      "title": "Unified Judicial System",
+      "url": "https://ujsportal.pacourts.us/",
+      "directory": "doj-PA",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-PA:judiciary:591c9d1a7ccc": {
+      "category": "judiciary",
+      "title": "court opinions and postings",
+      "url": "https://www.pacourts.us/courts/supreme-court/court-opinions/",
+      "directory": "doj-PA",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-PA:court_directory:2bcb3d1a7fd3": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.pacourts.us/courts/supreme-court/",
+      "directory": "doj-PA",
+      "locator": "Supreme Court"
+    },
+    "US-PA:court_directory:549d4f115bb0": {
+      "category": "court_directory",
+      "title": "Superior Court",
+      "url": "https://www.pacourts.us/courts/superior-court/",
+      "directory": "doj-PA",
+      "locator": "Superior Court"
+    },
+    "US-PA:court_directory:158341c8c089": {
+      "category": "court_directory",
+      "title": "Common Pleas Courts",
+      "url": "https://www.pacourts.us/courts/courts-of-common-pleas/",
+      "directory": "doj-PA",
+      "locator": "Common Pleas Courts"
+    },
+    "US-PA:court_directory:f12126c9f0b8": {
+      "category": "court_directory",
+      "title": "Minor Courts",
+      "url": "https://www.pacourts.us/courts/minor-courts/",
+      "directory": "doj-PA",
+      "locator": "Minor Courts"
+    },
+    "US-PA:court_directory:aa92e82ca18f": {
+      "category": "court_directory",
+      "title": "Philadelphia Municipal Courts",
+      "url": "https://www.courts.phila.gov/municipal/",
+      "directory": "doj-PA",
+      "locator": "Philadelphia Municipal Courts"
+    },
+    "US-PA:constitution:0d175c5051e8": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=0",
+      "directory": "doj-PA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-PA:statutes:967bfd316e7b": {
+      "category": "statutes",
+      "title": "Session Laws",
+      "url": "https://www.palrb.gov/",
+      "directory": "doj-PA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-PA:regulations:29a2d47948ee": {
+      "category": "regulations",
+      "title": "Pennsylvania Code (of Regulations)",
+      "url": "https://www.pacodeandbulletin.gov/Home/Pacode",
+      "directory": "doj-PA",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-PA:pi_limitations:8ad70fb0439d": {
+      "category": "pi_limitations",
+      "title": "42 Pa.C.S. § 5524(2)",
+      "url": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=HTM&ttl=42&div=0&chapter=55&section=24&subsctn=0",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=HTM&ttl=42&div=0&chapter=55&section=24&subsctn=0",
+        "retrieved_at": "2026-11-17T19:34:00.766190+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-PA:written_contract_limitations:d00e9a59b83a": {
+      "category": "written_contract_limitations",
+      "title": "42 Pa.C.S. § 5525(a)(8)",
+      "url": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=HTM&ttl=42&div=0&chapter=55&section=25&subsctn=0",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=HTM&ttl=42&div=0&chapter=55&section=25&subsctn=0",
+        "retrieved_at": "2026-11-17T19:34:00.545556+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-PA:oral_contract_limitations:d00e9a59b83a": {
+      "category": "oral_contract_limitations",
+      "title": "42 Pa.C.S. § 5525(a)(3)",
+      "url": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=HTM&ttl=42&div=0&chapter=55&section=25&subsctn=0",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=HTM&ttl=42&div=0&chapter=55&section=25&subsctn=0",
+        "retrieved_at": "2026-11-17T19:34:00.545556+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-PA:small_claims:9c5084f88396": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.pacourts.us/forms/for-the-public",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.pacourts.us/forms/for-the-public",
+        "retrieved_at": "2026-11-17T19:43:05.580301+00:00",
+        "http_status": "200",
+        "sha256": "9347468bbd64695db3ec4b351380271ef21db4d9c8155b7090e30bbe208797f5",
+        "health": "manual_review_required"
+      }
+    },
+    "US-PA:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 29"
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-PA:court:9cebe6e3a4b7",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-PA:court_directory:2bcb3d1a7fd3"
+    },
+    {
+      "id": "US-PA:court:bc562392834b",
+      "name": "Superior Court",
+      "level": "appellate_directory",
+      "source_id": "US-PA:court_directory:549d4f115bb0"
+    },
+    {
+      "id": "US-PA:court:38a0e84767f4",
+      "name": "Common Pleas Courts",
+      "level": "trial_directory",
+      "source_id": "US-PA:court_directory:158341c8c089"
+    },
+    {
+      "id": "US-PA:court:a6de0b955e5c",
+      "name": "Minor Courts",
+      "level": "trial_directory",
+      "source_id": "US-PA:court_directory:f12126c9f0b8"
+    },
+    {
+      "id": "US-PA:court:dfd0550debc9",
+      "name": "Philadelphia Municipal Courts",
+      "level": "trial_directory",
+      "source_id": "US-PA:court_directory:aa92e82ca18f"
+    },
+    {
+      "id": "US-PA:court:3fe628f13bfa",
+      "name": "Common Pleas",
+      "level": "general_trial",
+      "source_id": "US-PA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-PA:court:1edc7a31c8d1",
+      "name": "Philadelphia Municipal",
+      "level": "limited_trial",
+      "source_id": "US-PA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-PA:court:e2ccea8919b9",
+      "name": "Magisterial District Judge",
+      "level": "limited_trial",
+      "source_id": "US-PA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-PA:court:26bf679c2acf",
+      "name": "Philadelphia Traffic",
+      "level": "limited_trial",
+      "source_id": "US-PA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "42 Pa.C.S. § 5524(2)",
+      "source_id": "US-PA:pi_limitations:8ad70fb0439d",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "42 Pa.C.S. § 5525(a)(8)",
+      "source_id": "US-PA:written_contract_limitations:d00e9a59b83a",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "42 Pa.C.S. § 5525(a)(3)",
+      "source_id": "US-PA:oral_contract_limitations:d00e9a59b83a",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "68 PA. Cons. Stat. § 250.501. Notice to quit",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ]
+}

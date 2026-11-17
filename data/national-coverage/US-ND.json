@@ -1,0 +1,245 @@
+{
+  "jurisdiction": "US-ND",
+  "version": "1",
+  "sources": {
+    "US-ND:statutes:325f928b7bd5": {
+      "category": "statutes",
+      "title": "Century Code",
+      "url": "http://www.legis.nd.gov/general-information/north-dakota-century-code",
+      "directory": "codes",
+      "locator": "North Dakota"
+    },
+    "US-ND:constitution:646f7f954ae1": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.legis.nd.gov/constitution",
+      "directory": "codes",
+      "locator": "North Dakota"
+    },
+    "US-ND:legislature:4cb02324f367": {
+      "category": "legislature",
+      "title": "Legislative Assembly",
+      "url": "http://www.legis.nd.gov/",
+      "directory": "codes",
+      "locator": "North Dakota"
+    },
+    "US-ND:labor_agency:bc37ffdb7b4f": {
+      "category": "labor_agency",
+      "title": "www.nd.gov/labor",
+      "url": "http://www.nd.gov/labor/",
+      "directory": "labor",
+      "locator": "North Dakota"
+    },
+    "US-ND:commercial_code:6e64c54a3982": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://www.legis.nd.gov/cencode/t41.html",
+      "directory": "ucc",
+      "locator": "North Dakota"
+    },
+    "US-ND:civil_rules:3fd367602653": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "http://www.legis.nd.gov/cencode/t28.html",
+      "directory": "procedure",
+      "locator": "North Dakota"
+    },
+    "US-ND:consumer_agency:1a550fcedc40": {
+      "category": "consumer_agency",
+      "title": "North Dakota (ND)",
+      "url": "https://attorneygeneral.nd.gov/consumer-resources/",
+      "directory": "consumer",
+      "locator": "North Dakota (ND)",
+      "observation": {
+        "requested_url": "https://attorneygeneral.nd.gov/consumer-resources/",
+        "retrieved_at": "2026-11-17T19:41:35.219548+00:00",
+        "http_status": "200",
+        "sha256": "1d0156a5d7216d581a3216aa879666123dcce86840fe967f76e84d6f7e53dd11",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ND:judiciary:41af70cef065": {
+      "category": "judiciary",
+      "title": "Judicial System",
+      "url": "https://www.ndcourts.gov/",
+      "directory": "doj-ND",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-ND:court_directory:8bb8d1d5ab0d": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.ndcourts.gov/supreme-court",
+      "directory": "doj-ND",
+      "locator": "Supreme Court"
+    },
+    "US-ND:court_directory:a570b99e1ae4": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "https://www.ndcourts.gov/district-court",
+      "directory": "doj-ND",
+      "locator": "District Courts",
+      "observation": {
+        "requested_url": "https://www.ndcourts.gov/district-court",
+        "retrieved_at": "2026-11-17T19:43:07.612598+00:00",
+        "http_status": "000",
+        "sha256": null,
+        "health": "unreachable"
+      }
+    },
+    "US-ND:forms:542d6c39d0ae": {
+      "category": "forms",
+      "title": "Civil Procedure Forms",
+      "url": "https://www.ndcourts.gov/legal-self-help/general-use-forms",
+      "directory": "doj-ND",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-ND:forms:c1e3265f14c1": {
+      "category": "forms",
+      "title": "Criminal Procedure Forms",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcrimp/appendix",
+      "directory": "doj-ND",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-ND:forms:2026f652128f": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "https://www.ndcourts.gov/legal-self-help",
+      "directory": "doj-ND",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-ND:constitution:2f6d6bd5906e": {
+      "category": "constitution",
+      "title": "Constitution and Laws",
+      "url": "http://www.lawmoose.com/index.cfm?Action=library.&Topic=WI180317",
+      "directory": "doj-ND",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-ND:regulations:364a7e050425": {
+      "category": "regulations",
+      "title": "Administrative Code, Rules, and Notices",
+      "url": "https://ndlegis.gov/agency-rules/north-dakota-administrative-code/index.html",
+      "directory": "doj-ND",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-ND:pi_limitations:9c8a4658898e": {
+      "category": "pi_limitations",
+      "title": "N.D. Cent. Code § 28-01-16(5)",
+      "url": "https://www.ndlegis.gov/cencode/t28c01.pdf#nameddest=28-01-16",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.ndlegis.gov/cencode/t28c01.pdf",
+        "retrieved_at": "2026-11-17T19:34:04.201354+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-ND:written_contract_limitations:9c8a4658898e": {
+      "category": "written_contract_limitations",
+      "title": "N.D. Cent. Code § 28-01-16(1)",
+      "url": "https://www.ndlegis.gov/cencode/t28c01.pdf#nameddest=28-01-16",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.ndlegis.gov/cencode/t28c01.pdf",
+        "retrieved_at": "2026-11-17T19:34:04.201354+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-ND:oral_contract_limitations:9c8a4658898e": {
+      "category": "oral_contract_limitations",
+      "title": "N.D. Cent. Code § 28-01-16(1)",
+      "url": "https://www.ndlegis.gov/cencode/t28c01.pdf#nameddest=28-01-16",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.ndlegis.gov/cencode/t28c01.pdf",
+        "retrieved_at": "2026-11-17T19:34:04.201354+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-ND:small_claims:5455cf68b07a": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.ndcourts.gov/legal-self-help/small-claims",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.ndcourts.gov/legal-self-help/small-claims",
+        "retrieved_at": "2026-11-17T19:42:54.366728+00:00",
+        "http_status": "200",
+        "sha256": "d68537640a658bc4c63882f22a0087468e7f79dffefdc8f1c96c305057203aa2",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ND:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 28"
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-ND:court:ac635657c1be",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-ND:court_directory:8bb8d1d5ab0d"
+    },
+    {
+      "id": "US-ND:court:4b843bf3a4b1",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-ND:court_directory:a570b99e1ae4"
+    },
+    {
+      "id": "US-ND:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-ND:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-ND:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-ND:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "N.D. Cent. Code § 28-01-16(5)",
+      "source_id": "US-ND:pi_limitations:9c8a4658898e",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "N.D. Cent. Code § 28-01-16(1)",
+      "source_id": "US-ND:written_contract_limitations:9c8a4658898e",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "N.D. Cent. Code § 28-01-16(1)",
+      "source_id": "US-ND:oral_contract_limitations:9c8a4658898e",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "N.D. Cent. Code § 47-16-13.1. Landlord obligations",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ]
+}

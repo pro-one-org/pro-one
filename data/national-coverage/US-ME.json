@@ -1,0 +1,351 @@
+{
+  "jurisdiction": "US-ME",
+  "version": "1",
+  "sources": {
+    "US-ME:statutes:26155c0a39e3": {
+      "category": "statutes",
+      "title": "Maine Revised Statutes",
+      "url": "http://janus.state.me.us/legis/statutes/",
+      "directory": "codes",
+      "locator": "Maine"
+    },
+    "US-ME:constitution:b7bc781b9d45": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://janus.state.me.us/legis/const/",
+      "directory": "codes",
+      "locator": "Maine"
+    },
+    "US-ME:legislature:c9fcdd6fde5f": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://legislature.maine.gov/",
+      "directory": "codes",
+      "locator": "Maine"
+    },
+    "US-ME:labor_agency:63a60520305d": {
+      "category": "labor_agency",
+      "title": "www.maine.gov/labor",
+      "url": "https://www.maine.gov/labor/",
+      "directory": "labor",
+      "locator": "Maine"
+    },
+    "US-ME:commercial_code:349d24375d50": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://www.mainelegislature.org/legis/statutes/11/title11ch0sec0.html",
+      "directory": "ucc",
+      "locator": "Maine"
+    },
+    "US-ME:civil_rules:a1299d5bdd6b": {
+      "category": "civil_rules",
+      "title": "Court Procedure-- Civil",
+      "url": "http://www.mainelegislature.org/legis/statutes/14/title14ch0sec0.html",
+      "directory": "procedure",
+      "locator": "Maine"
+    },
+    "US-ME:consumer_agency:2660f23f62eb": {
+      "category": "consumer_agency",
+      "title": "Maine (ME)",
+      "url": "https://www.maine.gov/ag/consumer/index.shtml",
+      "directory": "consumer",
+      "locator": "Maine (ME)"
+    },
+    "US-ME:judiciary:dc02312bf9e8": {
+      "category": "judiciary",
+      "title": "Judicial Branch",
+      "url": "https://www.courts.maine.gov/",
+      "directory": "doj-ME",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-ME:court_directory:ac1b1435819a": {
+      "category": "court_directory",
+      "title": "Supreme Judicial Court",
+      "url": "http://www.courts.state.me.us/maine_courts/supreme/index.shtml",
+      "directory": "doj-ME",
+      "locator": "Supreme Judicial Court"
+    },
+    "US-ME:opinions:df0013e8e9c6": {
+      "category": "opinions",
+      "title": "Supreme Court Decisions, Orders, Rule Amendments",
+      "url": "http://www.cleaves.org/supreme.htm",
+      "directory": "doj-ME",
+      "locator": "State and Local Courts / Supreme Court"
+    },
+    "US-ME:court_directory:e4b559873298": {
+      "category": "court_directory",
+      "title": "Superior Court",
+      "url": "http://www.courts.state.me.us/maine_courts/superior/index.shtml",
+      "directory": "doj-ME",
+      "locator": "Superior Court"
+    },
+    "US-ME:court_directory:9c1b3e352e1d": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "http://www.courts.state.me.us/maine_courts/district/index.shtml",
+      "directory": "doj-ME",
+      "locator": "District Courts"
+    },
+    "US-ME:forms:f515a90121cf": {
+      "category": "forms",
+      "title": "Forms and Fees",
+      "url": "https://www.courts.maine.gov/forms/index.html",
+      "directory": "doj-ME",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-ME:constitution:b4b1f8757b45": {
+      "category": "constitution",
+      "title": "Constitution, Statutes and Session Laws of Maine",
+      "url": "https://legislature.maine.gov/ros/maine-constitution-statutes-and-law/9574",
+      "directory": "doj-ME",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-ME:statutes:f551ffc8b9ad": {
+      "category": "statutes",
+      "title": "Law and Legislative Digital Library",
+      "url": "https://www.maine.gov/legis/lawlib/lldl/lldlhome.htm",
+      "directory": "doj-ME",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-ME:pi_limitations:96e4f7b1da76": {
+      "category": "pi_limitations",
+      "title": "14 M.R.S. § 752",
+      "url": "https://legislature.maine.gov/statutes/14/title14sec752.html",
+      "directory": null,
+      "locator": "14 M.R.S. § 752",
+      "observation": {
+        "requested_url": "https://legislature.maine.gov/statutes/14/title14sec752.html",
+        "retrieved_at": "2026-11-17T19:33:57.904323+00:00",
+        "http_status": "200",
+        "sha256": "0069d0fa956ed2a7aabe5fe2f99a5fbfe8fefc9eeb9c957609af14edaff0c0bd",
+        "health": "healthy"
+      }
+    },
+    "US-ME:written_contract_limitations:96e4f7b1da76": {
+      "category": "written_contract_limitations",
+      "title": "14 M.R.S. § 752",
+      "url": "https://legislature.maine.gov/statutes/14/title14sec752.html",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://legislature.maine.gov/statutes/14/title14sec752.html",
+        "retrieved_at": "2026-11-17T19:33:57.904323+00:00",
+        "http_status": "200",
+        "sha256": "0069d0fa956ed2a7aabe5fe2f99a5fbfe8fefc9eeb9c957609af14edaff0c0bd",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ME:oral_contract_limitations:96e4f7b1da76": {
+      "category": "oral_contract_limitations",
+      "title": "14 M.R.S. § 752",
+      "url": "https://legislature.maine.gov/statutes/14/title14sec752.html",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://legislature.maine.gov/statutes/14/title14sec752.html",
+        "retrieved_at": "2026-11-17T19:33:57.904323+00:00",
+        "http_status": "200",
+        "sha256": "0069d0fa956ed2a7aabe5fe2f99a5fbfe8fefc9eeb9c957609af14edaff0c0bd",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ME:small_claims:a854b269cebc": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.courts.maine.gov/help/guides/sc-guide-2026.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.courts.maine.gov/help/guides/sc-guide-2026.pdf",
+        "retrieved_at": "2026-11-17T19:42:37.259105+00:00",
+        "http_status": "200",
+        "sha256": "ef9d5e36c980dc5f2317f5d181cdd8c5409101fc99a5762497c91f2afaf93f6e",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ME:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    },
+    "US-ME:fault:e602808291ba": {
+      "category": "fault",
+      "title": "14 M.R.S. § 156",
+      "url": "https://www.legislature.maine.gov/statutes/14/title14sec156.html",
+      "directory": null,
+      "locator": "14 M.R.S. § 156"
+    },
+    "US-ME:deposit:a18878c0785f": {
+      "category": "deposit",
+      "title": "Residential tenancy publication",
+      "url": "https://legislature.maine.gov/statutes/14/title14ch710-A.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://legislature.maine.gov/statutes/14/title14ch710-A.pdf",
+        "retrieved_at": "2026-11-17T19:42:03.310386+00:00",
+        "http_status": "200",
+        "sha256": "99b33d17a770e97921fefd576d8f400d4924ea719c9379f06dc0a44d9aa4dede",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ME:wageLaw:a8c89723688e": {
+      "category": "wageLaw",
+      "title": "26 M.R.S. § 621-A",
+      "url": "https://www.legislature.maine.gov/legis/statutes/26/title26sec621-A.html",
+      "directory": null,
+      "locator": "26 M.R.S. § 621-A"
+    },
+    "US-ME:consumerLaw:56ff9a5131c3": {
+      "category": "consumerLaw",
+      "title": "5 M.R.S. § 207",
+      "url": "https://legislature.maine.gov/statutes/5/title5ch10.pdf",
+      "directory": null,
+      "locator": "5 M.R.S. § 207"
+    },
+    "US-ME:commencement:5016b7dc6716": {
+      "category": "commencement",
+      "title": "Me. R. Civ. P. 3",
+      "url": "https://www.courts.maine.gov/rules/text/mr_civ_p_only_2026-06-01.pdf",
+      "directory": null,
+      "locator": "Me. R. Civ. P. 3",
+      "language": "en",
+      "publisher_role": "official_rule_publication",
+      "observation": {
+        "health": "retained_snapshot",
+        "retrieved_at": "2026-11-17T20:14:17.739999+00:00",
+        "sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-ME:court:b5051d16d543",
+      "name": "Supreme Judicial Court",
+      "level": "highest_directory",
+      "source_id": "US-ME:court_directory:ac1b1435819a"
+    },
+    {
+      "id": "US-ME:court:deb3d69596a6",
+      "name": "Superior Court",
+      "level": "trial_directory",
+      "source_id": "US-ME:court_directory:e4b559873298"
+    },
+    {
+      "id": "US-ME:court:45b7fa1b68f6",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-ME:court_directory:9c1b3e352e1d"
+    },
+    {
+      "id": "US-ME:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-ME:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-ME:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-ME:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-ME:court:4f54b582f9f0",
+      "name": "Probate",
+      "level": "limited_trial",
+      "source_id": "US-ME:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "14 M.R.S. § 752",
+      "source_id": "US-ME:pi_limitations:96e4f7b1da76",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "14 M.R.S. § 752",
+      "source_id": "US-ME:written_contract_limitations:96e4f7b1da76",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "14 M.R.S. § 752",
+      "source_id": "US-ME:oral_contract_limitations:96e4f7b1da76",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Me. Rev. Stat. tit. 14, § 6001. Availability of remedy",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "9dee2e5c30d67278a74dfbface80dd": {
+      "citation": "14 M.R.S. § 752",
+      "source_id": "US-ME:pi_limitations:96e4f7b1da76",
+      "authority_type": "statute",
+      "text": "All civil actions shall be commenced within 6 years after the cause of action accrues and not afterwards, except actions on a judgment or decree of any court of record of the United States, or of any state, or of a justice of the peace in this State, and except as otherwise specially provided.",
+      "text_sha256": "06d32b803495ec74c2f3ddceb0e8e36da3161898c314946292e69e41139b1e2c",
+      "publisher_sha256": "0069d0fa956ed2a7aabe5fe2f99a5fbfe8fefc9eeb9c957609af14edaff0c0bd",
+      "retrieved_at": "2026-11-17T19:33:57.904323+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "3be5c40580c94d74ce98f50ff677bf": {
+      "citation": "14 M.R.S. § 156",
+      "source_id": "US-ME:fault:e602808291ba",
+      "authority_type": "statute",
+      "text": "When any person suffers death or damage as a result partly of that person's own fault and partly of the fault of any other person or persons, a claim in respect of that death or damage may not be defeated by reason of the fault of the person suffering the damage, but the damages recoverable in respect thereof must be reduced to such extent as the jury thinks just and equitable having regard to the claimant's share in the responsibility for the damage. [PL 1999, c. 633, §1 (AMD); PL 1999, c. 633, §3 (AFF).] When damages are recoverable by any person by virtue of this section, subject to such reduction as is mentioned, the court shall instruct the jury to find and record the total damages that would have been recoverable if the claimant had not been at fault, and further instruct the jury to reduce the total damages by dollars and cents, and not by percentage, to the extent considered just and equitable, having regard to the claimant's share in the responsibility for the damages, and instruct the jury to return both amounts with the knowledge that the lesser figure is the final verdict in the case. [PL 1999, c. 633, §1 (AMD); PL 1999, c. 633, §3 (AFF).] Fault means negligence, breach of statutory duty or other act or omission that gives rise to a liability in tort or would, apart from this section, give rise to the defense of contributory negligence. [PL 1999, c. 633, §1 (AMD); PL 1999, c. 633, §3 (AFF).] If such claimant is found by the jury to be equally at fault, the claimant may not recover. [PL 1999, c. 633, §1 (AMD); PL 1999, c. 633, §3 (AFF).]",
+      "text_sha256": "8cac4849b3a2cd6f3a4a01bf08d1ee9d5df262902306ce0ae1a735ed6abeb19c",
+      "publisher_sha256": "9daee217a9c5256ff4c425bad0082533d7dc74294bae1d28cadec3ce8440c2b0",
+      "retrieved_at": "2026-11-17T19:42:51.278312+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "e3c4ad62ee2c43f68b20d2122b9f4c": {
+      "citation": "26 M.R.S. § 621-A",
+      "source_id": "US-ME:wageLaw:a8c89723688e",
+      "authority_type": "statute",
+      "text": "1. Minimum frequency and full payment. At regular intervals not to exceed 16 days, every employer must pay in full all wages earned by each employee, except members of the family of the employer and salaried employees. Each payment must include all wages earned to within 8 days of the payment date. Payments that fall on a day when the business is regularly closed must be paid no later than the following business day. An employee who is absent from work at a time fixed for payment must be paid as if the employee was not absent. For purposes of this subsection, \"members of the family of the employer\" and \"salaried employees\" have the same meanings as described in section 663, subsection 3, paragraphs J and K, respectively.",
+      "text_sha256": "b376b8442ea46a7ca366c5e30baa919fb5926914b947bbcdf40fcd16c8ba99f4",
+      "publisher_sha256": "02da9697343ca4b3f862ef81b931b47125a1ea830c2375b282e4271da7c2de7d",
+      "retrieved_at": "2026-11-17T19:42:51.050941+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "b113f60a50326193acb99295569d72": {
+      "citation": "5 M.R.S. § 207",
+      "source_id": "US-ME:consumerLaw:56ff9a5131c3",
+      "authority_type": "statute",
+      "text": "Unfair methods of competition and unfair or deceptive acts or practices in the conduct of any trade or commerce are declared unlawful.",
+      "text_sha256": "5a886a7a52fed4ff38d3556edaf237caf5912005521c82f1dbab3f74b9599159",
+      "publisher_sha256": "e65749a80dd680f29f3b960692cc77cedadba2fa59ba4e02e6ffc805567d602c",
+      "retrieved_at": "2026-11-17T19:42:03.401162+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "d0d68a2a21bdbea1bafeb750997843": {
+      "source_id": "US-ME:commencement:5016b7dc6716",
+      "citation": "Me. R. Civ. P. 3",
+      "authority_type": "court_rule",
+      "language": "en",
+      "text": "Except as otherwise provided in these rules, a civil action is commenced in one of two ways: (a) Service. A civil action may be commenced by the service of a summons, complaint, and notice regarding Electronic Service . If so commenced, the complaint must be filed with the court within 20 days after completion of service of the summons, complaint, and notice regarding Electronic Service. (b) Filing. A civil action may be commenced by filing a complaint with the court. If so commenced , the return of service shall be filed with the court within 90 days after the filing of the complaint. If the complaint or the return of service is not timely filed, the action may be dismissed on motion and notice, and in such case the court may, in its discretion, if it shall be of the opinion that the action was vexatiously commenced, tax a reasonable attorney fee as costs in favor of the defendant, to be recovered of the plaintiff or the plaintiff’s attorney.",
+      "text_sha256": "2ec5788e563b9efeb13f902d650c6b7c4bfda376520f282bdf5605ed631e828b",
+      "publisher_sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0",
+      "retrieved_at": "2026-11-17T20:14:17.739999+00:00",
+      "currentness": "unresolved"
+    }
+  }
+}

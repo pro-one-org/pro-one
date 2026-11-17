@@ -1,0 +1,282 @@
+{
+  "jurisdiction": "US-IN",
+  "version": "1",
+  "sources": {
+    "US-IN:statutes:216cc9cd36fd": {
+      "category": "statutes",
+      "title": "Indiana Code",
+      "url": "http://iga.in.gov/legislative/laws/2019/ic/titles/001",
+      "directory": "codes",
+      "locator": "Indiana"
+    },
+    "US-IN:constitution:5ceb5786fe38": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://iga.in.gov/legislative/laws/const/",
+      "directory": "doj-IN",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-IN:legislature:ecd68c6821e2": {
+      "category": "legislature",
+      "title": "General Assembly",
+      "url": "http://iga.in.gov/",
+      "directory": "codes",
+      "locator": "Indiana"
+    },
+    "US-IN:labor_agency:962c407b7600": {
+      "category": "labor_agency",
+      "title": "www.in.gov/dol",
+      "url": "http://www.in.gov/dol",
+      "directory": "labor",
+      "locator": "Indiana"
+    },
+    "US-IN:commercial_code:104d07f25781": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://iga.in.gov/legislative/laws/2020/ic/titles/026#26-1",
+      "directory": "ucc",
+      "locator": "Indiana"
+    },
+    "US-IN:civil_rules:cb509c1eeab2": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "http://iga.in.gov/legislative/laws/2020/ic/titles/034",
+      "directory": "procedure",
+      "locator": "Indiana"
+    },
+    "US-IN:consumer_agency:c39799eec13f": {
+      "category": "consumer_agency",
+      "title": "Indiana (IN)",
+      "url": "https://www.in.gov/attorneygeneral/consumer-protection-division/",
+      "directory": "consumer",
+      "locator": "Indiana (IN)"
+    },
+    "US-IN:judiciary:ce03abfcd02b": {
+      "category": "judiciary",
+      "title": "State Judiciary",
+      "url": "http://www.in.gov/judiciary/",
+      "directory": "doj-IN",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-IN:court_directory:4be054c70173": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://www.in.gov/judiciary/supreme/",
+      "directory": "doj-IN",
+      "locator": "Supreme Court"
+    },
+    "US-IN:court_directory:aed95b1f63f1": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "http://www.in.gov/judiciary/appeals/",
+      "directory": "doj-IN",
+      "locator": "Court of Appeals"
+    },
+    "US-IN:court_directory:8d25a8cd5c84": {
+      "category": "court_directory",
+      "title": "Tax Court",
+      "url": "http://www.in.gov/judiciary/tax/",
+      "directory": "doj-IN",
+      "locator": "Tax Court"
+    },
+    "US-IN:forms:e073af7614d2": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://indianalegalhelp.org/landing-page-updated/",
+      "directory": "doj-IN",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-IN:statutes:548d48cbce31": {
+      "category": "statutes",
+      "title": "Code",
+      "url": "https://iga.in.gov/legislative/laws/current/ic/",
+      "directory": "doj-IN",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-IN:statutes:6aadc16144f5": {
+      "category": "statutes",
+      "title": "Non-Code Statutes",
+      "url": "https://iga.in.gov/legislative/laws/noncode/",
+      "directory": "doj-IN",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-IN:regulations:7acc28082dbe": {
+      "category": "regulations",
+      "title": "Administrative Code",
+      "url": "http://www.in.gov/legislative/iac/",
+      "directory": "doj-IN",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-IN:regulations:0f43a409fd39": {
+      "category": "regulations",
+      "title": "Register",
+      "url": "http://www.in.gov/legislative/iac/irtoc.htm",
+      "directory": "doj-IN",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-IN:pi_limitations:864cb5f29739": {
+      "category": "pi_limitations",
+      "title": "Ind. Code § 34-11-2-4(a)",
+      "url": "https://iga.in.gov/laws/2025/ic/titles/34#34-11-2-4",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://iga.in.gov/laws/2025/ic/titles/34",
+        "retrieved_at": "2026-11-17T19:33:56.506459+00:00",
+        "http_status": "200",
+        "sha256": "4cc9b45ba54c259c5584a0c05a308f3811c78361a4dc5935e2911ecdc0bd16d2",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IN:written_contract_limitations:9b17db38356b": {
+      "category": "written_contract_limitations",
+      "title": "Ind. Code §§ 34-11-2-11, 34-11-2-9",
+      "url": "https://iga.in.gov/laws/2025/ic/titles/34#34-11-2-11",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://iga.in.gov/laws/2025/ic/titles/34",
+        "retrieved_at": "2026-11-17T19:33:56.506459+00:00",
+        "http_status": "200",
+        "sha256": "4cc9b45ba54c259c5584a0c05a308f3811c78361a4dc5935e2911ecdc0bd16d2",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IN:oral_contract_limitations:dff69a311aef": {
+      "category": "oral_contract_limitations",
+      "title": "Ind. Code § 34-11-2-7(1)",
+      "url": "https://iga.in.gov/laws/2025/ic/titles/34#34-11-2-7",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://iga.in.gov/laws/2025/ic/titles/34",
+        "retrieved_at": "2026-11-17T19:33:56.506459+00:00",
+        "http_status": "200",
+        "sha256": "4cc9b45ba54c259c5584a0c05a308f3811c78361a4dc5935e2911ecdc0bd16d2",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IN:small_claims:96b132e0898f": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.in.gov/courts/files/small-claims-manual.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.in.gov/courts/files/small-claims-manual.pdf",
+        "retrieved_at": "2026-11-17T19:42:45.685909+00:00",
+        "http_status": "200",
+        "sha256": "027759e0937d962751428e7ac4c68cba93322ed4385d45125cd103274e33976d",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IN:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    },
+    "US-IN:wageLaw:5356f9338a4c": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://www.in.gov/dol/wage-and-hour/wage-and-hour-home",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.in.gov/dol/wage-and-hour/wage-and-hour-home",
+        "retrieved_at": "2026-11-17T19:42:46.532284+00:00",
+        "http_status": "200",
+        "sha256": "fdfd33c24b2915f77710057392426b148a4e6637fff93ab38efb54232c0b0d8d",
+        "health": "manual_review_required"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-IN:court:21dae6017880",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-IN:court_directory:4be054c70173"
+    },
+    {
+      "id": "US-IN:court:93d435347a67",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-IN:court_directory:aed95b1f63f1"
+    },
+    {
+      "id": "US-IN:court:242c904c1981",
+      "name": "Tax Court",
+      "level": "trial_directory",
+      "source_id": "US-IN:court_directory:8d25a8cd5c84"
+    },
+    {
+      "id": "US-IN:court:62b7cc2e89f8",
+      "name": "Superior and Circuit",
+      "level": "general_trial",
+      "source_id": "US-IN:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-IN:court:6c5bd59f8a48",
+      "name": "Probate",
+      "level": "general_trial",
+      "source_id": "US-IN:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-IN:court:09753adaaaf9",
+      "name": "County",
+      "level": "limited_trial",
+      "source_id": "US-IN:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-IN:court:f459b48d194d",
+      "name": "City and Town",
+      "level": "limited_trial",
+      "source_id": "US-IN:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-IN:court:02f16578caa3",
+      "name": "Small Claims/Marion County",
+      "level": "limited_trial",
+      "source_id": "US-IN:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Ind. Code § 34-11-2-4(a)",
+      "source_id": "US-IN:pi_limitations:864cb5f29739",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Ind. Code §§ 34-11-2-11, 34-11-2-9",
+      "source_id": "US-IN:written_contract_limitations:9b17db38356b",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Ind. Code § 34-11-2-7(1)",
+      "source_id": "US-IN:oral_contract_limitations:dff69a311aef",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Ind. Code § 32-31-5-6 Landlord prohibited from interfering with access, possession, or essential services; unit entry by landlord",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ]
+}

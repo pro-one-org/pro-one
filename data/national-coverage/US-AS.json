@@ -1,0 +1,72 @@
+{
+  "jurisdiction": "US-AS",
+  "version": "1",
+  "sources": {
+    "US-AS:statutes:5d851aa9ba09": {
+      "category": "statutes",
+      "title": "American Samoa Code Annotated",
+      "url": "https://new.asbar.org/legal-resources/code-annotated/code-annotated-by-title-and-chapter/",
+      "directory": "codes",
+      "locator": "American Samoa"
+    },
+    "US-AS:constitution:335d83c7c8bc": {
+      "category": "constitution",
+      "title": "American Samoa Constitution",
+      "url": "http://extwprlegs1.fao.org/docs/pdf/ams72562.pdf",
+      "directory": "codes",
+      "locator": "American Samoa"
+    },
+    "US-AS:consumer_agency:6454238bf2d6": {
+      "category": "consumer_agency",
+      "title": "American Samoa (AS)",
+      "url": "https://legalaffairs.as.gov/consumers",
+      "directory": "consumer",
+      "locator": "American Samoa (AS)"
+    },
+    "US-AS:small_claims:e8af6ee4003b": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://asbar.org/forms-and-pamphlets/",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://asbar.org/forms-and-pamphlets/",
+        "retrieved_at": "2026-11-17T19:41:34.134901+00:00",
+        "http_status": "200",
+        "sha256": "a5ec6b18ba608afad1907a1b56e52dd61573ac948b4c926d6f3d2d6d2df1d2ee",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AS:statutes:1ef4329724e1": {
+      "category": "statutes",
+      "title": "American Samoa Bar Association code collection",
+      "url": "https://asbar.org/code-annotated/",
+      "directory": null,
+      "locator": "Publisher resource"
+    },
+    "US-AS:judiciary:d52010f6c6bb": {
+      "category": "judiciary",
+      "title": "Territorial government",
+      "url": "https://www.americansamoa.gov/",
+      "directory": null,
+      "locator": "Publisher resource"
+    },
+    "US-AS:civil_rules:8d69e6482f25": {
+      "category": "civil_rules",
+      "title": "American Samoa Bar Association court rules collection",
+      "url": "https://asbar.org/court-rules/",
+      "directory": null,
+      "locator": "Publisher resource"
+    }
+  },
+  "court_directory": [],
+  "citation_leads": [
+    {
+      "category": "eviction",
+      "citation": "Am. Sam. Code Ann. § 43.1405 Grounds for summary recovery of possession.",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ]
+}

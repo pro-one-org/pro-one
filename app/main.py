@@ -24,6 +24,7 @@ from app.response_assembly import (
 )
 from app.generation import GenerationRequest, GenerationResult, GenerationService
 from app.config import Settings
+from app.national_coverage import coverage, summary as national_coverage_summary
 from app.routing import MatterRequest, MatterRoutingService, WorkflowCatalogService
 from app.product import ProductResponseRequest, ProductService
 from app.security import SecurityMiddleware
@@ -331,3 +332,26 @@ def product_response(workflow_id: str, request: ProductResponseRequest):
 @app.get("/coverage", response_class=HTMLResponse)
 def product_page():
     return (web_root / "index.html").read_text(encoding="utf-8")
+
+
+@app.get("/api/coverage")
+def coverage_summary():
+    return national_coverage_summary()
+
+
+@app.get("/api/coverage/{jurisdiction}")
+def jurisdiction_coverage(jurisdiction: str):
+    try:
+        return coverage(jurisdiction)
+    except KeyError:
+        raise HTTPException(404, detail="unsupported_jurisdiction") from None
+
+
+@app.get("/api/coverage/{jurisdiction}/{domain}")
+def domain_coverage(jurisdiction: str, domain: str):
+    row = jurisdiction_coverage(jurisdiction)
+    cells = {key: cell for key, cell in row["cells"].items()
+             if key == domain or key.split(".")[0] == domain or key.split(".")[1] == domain}
+    if not cells:
+        raise HTTPException(404, detail="unsupported_domain")
+    return {"jurisdiction": row["jurisdiction"], "cells": cells, "execution": "disabled"}

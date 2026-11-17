@@ -1,0 +1,310 @@
+{
+  "jurisdiction": "US-CO",
+  "version": "1",
+  "sources": {
+    "US-CO:statutes:c72fd9131241": {
+      "category": "statutes",
+      "title": "Colorado Revised Statutes and Constitution",
+      "url": "http://www.lexisnexis.com/hottopics/Colorado/",
+      "directory": "codes",
+      "locator": "Colorado"
+    },
+    "US-CO:legislature:c60313d7de18": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.leg.state.co.us/clics/cslFrontPages.nsf/HomeSplash?OpenForm",
+      "directory": "codes",
+      "locator": "Colorado"
+    },
+    "US-CO:labor_agency:92a088d44caa": {
+      "category": "labor_agency",
+      "title": "cdle.colorado.gov/dlss",
+      "url": "https://cdle.colorado.gov/dlss",
+      "directory": "labor",
+      "locator": "Colorado"
+    },
+    "US-CO:business_registration:2b920b72efb9": {
+      "category": "business_registration",
+      "title": "Colorado Secretary of State",
+      "url": "https://www.coloradosos.gov/pubs/business/businessHome.html",
+      "directory": "business",
+      "locator": "Colorado"
+    },
+    "US-CO:commercial_code:0ca1b78c1c7d": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code-Title 4",
+      "url": "http://www.lexisnexis.com/hottopics/colorado/",
+      "directory": "ucc",
+      "locator": "Colorado"
+    },
+    "US-CO:civil_rules:d54e7a0441e4": {
+      "category": "civil_rules",
+      "title": "Colorado (searchable index)",
+      "url": "https://advance.lexis.com/documentpage/?pdmfid=1000516&crid=fd031ff4-7fc0-4e08-90e9-c6e0353524f0&nodeid=AANAABAADAAI&nodepath=%2FROOT%2FAAN%2FAANAAB%2FAANAABAAD%2FAANAABAADAAI&level=4&haschildren=&populated=false&title=13-2-108.+Rules+of+civil+procedure&config=014FJAAyNGJkY2Y4Zi1mNjgyLTRkN2YtYmE4OS03NTYzNzYzOTg0OGEKAFBvZENhdGFsb2d592qv2Kywlf8caKqYROP5&pddocfullpath=%2Fshared%2Fdocument%2Fstatutes-legislation%2Furn%3AcontentItem%3A5YWF-4WD1-FFMK-M3XF-00008-00&ecomp=f38_9kk&prid=7649e7b1-f946-433a-8654-8b93cd2c750d",
+      "directory": "procedure",
+      "locator": "Colorado"
+    },
+    "US-CO:consumer_agency:3ef791667e74": {
+      "category": "consumer_agency",
+      "title": "Colorado (CO)",
+      "url": "https://coag.gov/office-sections/consumer-protection/",
+      "directory": "consumer",
+      "locator": "Colorado (CO)"
+    },
+    "US-CO:judiciary:7a08f72865f5": {
+      "category": "judiciary",
+      "title": "Colorado Courts",
+      "url": "http://www.courts.state.co.us/",
+      "directory": "doj-CO",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-CO:judiciary:6e7c9d7d5d08": {
+      "category": "judiciary",
+      "title": "Map of the Judicial Districts of Colorado",
+      "url": "http://www.courts.state.co.us/Courts/Map.cfm",
+      "directory": "doj-CO",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-CO:court_directory:ac5d8b4ec36d": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://www.coloradosupremecourt.com/",
+      "directory": "doj-CO",
+      "locator": "Supreme Court"
+    },
+    "US-CO:court_directory:edf98fa475c5": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "http://www.courts.state.co.us/Courts/Court_Of_Appeals/Index.cfm",
+      "directory": "doj-CO",
+      "locator": "Court of Appeals"
+    },
+    "US-CO:court_directory:263cd0a4ec03": {
+      "category": "court_directory",
+      "title": "Trial Courts",
+      "url": "http://www.courts.state.co.us/Courts/District/Choose.cfm",
+      "directory": "doj-CO",
+      "locator": "Trial Courts"
+    },
+    "US-CO:court_directory:b0487040493a": {
+      "category": "court_directory",
+      "title": "Water Courts",
+      "url": "http://www.courts.state.co.us/Courts/Water/Index.cfm",
+      "directory": "doj-CO",
+      "locator": "Water Courts"
+    },
+    "US-CO:forms:a1d5b947b852": {
+      "category": "forms",
+      "title": "Court of Appeals Forms and Policies",
+      "url": "http://www.courts.state.co.us/Forms/Index.cfm",
+      "directory": "doj-CO",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-CO:statutes:55bd17fb7d4b": {
+      "category": "statutes",
+      "title": "Session Laws",
+      "url": "https://leg.colorado.gov/agencies/office-legislative-legal-services/session-laws-archive",
+      "directory": "doj-CO",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-CO:regulations:969f0a39867c": {
+      "category": "regulations",
+      "title": "Rules and Regulations Promulgated by Executive Departments",
+      "url": "https://www.sos.state.co.us/CCR/Welcome.do",
+      "directory": "doj-CO",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-CO:pi_limitations:0e4bc6464030": {
+      "category": "pi_limitations",
+      "title": "Colo. Rev. Stat. § 13-80-102(1)(a)",
+      "url": "https://leg.colorado.gov/laws/colorado-revised-statutes",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://leg.colorado.gov/laws/colorado-revised-statutes",
+        "retrieved_at": "2026-11-17T19:33:55.447389+00:00",
+        "http_status": "200",
+        "sha256": "50a3df4293b9d7d709e876c0630c8228ad22ec7287dbcabe407f9af875e13486",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CO:written_contract_limitations:0e4bc6464030": {
+      "category": "written_contract_limitations",
+      "title": "Colo. Rev. Stat. § 13-80-101(1)(a)",
+      "url": "https://leg.colorado.gov/laws/colorado-revised-statutes",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://leg.colorado.gov/laws/colorado-revised-statutes",
+        "retrieved_at": "2026-11-17T19:33:55.447389+00:00",
+        "http_status": "200",
+        "sha256": "50a3df4293b9d7d709e876c0630c8228ad22ec7287dbcabe407f9af875e13486",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CO:oral_contract_limitations:0e4bc6464030": {
+      "category": "oral_contract_limitations",
+      "title": "Colo. Rev. Stat. § 13-80-101(1)(a)",
+      "url": "https://leg.colorado.gov/laws/colorado-revised-statutes",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://leg.colorado.gov/laws/colorado-revised-statutes",
+        "retrieved_at": "2026-11-17T19:33:55.447389+00:00",
+        "http_status": "200",
+        "sha256": "50a3df4293b9d7d709e876c0630c8228ad22ec7287dbcabe407f9af875e13486",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CO:small_claims:e5c41d46df80": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.coloradojudicial.gov/self-help-forms?form_category=457",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.coloradojudicial.gov/self-help-forms?form_category=457",
+        "retrieved_at": "2026-11-17T19:42:38.014995+00:00",
+        "http_status": "200",
+        "sha256": "94d4f010c37f84f302452259f8ddd8df4239c717d549f90cd981b0001c3d4169",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CO:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 26"
+    },
+    "US-CO:fault:c6bf22d87b5b": {
+      "category": "fault",
+      "title": "Fault allocation research publication",
+      "url": "https://www.coloradojudicial.gov/sites/default/files/2024-06/Chapter%209.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.coloradojudicial.gov/sites/default/files/2024-06/Chapter%209.pdf",
+        "retrieved_at": "2026-11-17T19:42:36.398411+00:00",
+        "http_status": "200",
+        "sha256": "05b233bd5ec2ae1bd9a1f9b0a7d329282f9835de6b30ee48a34d0cb0835e6e66",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CO:negligence:40176a427f13": {
+      "category": "negligence",
+      "title": "Negligence research publication",
+      "url": "https://www.coloradojudicial.gov/pattern-civil-jury-instructions-committee",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.coloradojudicial.gov/pattern-civil-jury-instructions-committee",
+        "retrieved_at": "2026-11-17T19:42:35.945997+00:00",
+        "http_status": "200",
+        "sha256": "ea2c7a299b3b9a0fcb4b0cd3e1e0ee975511bed7d6d827182295307ef17d2e21",
+        "health": "manual_review_required"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-CO:court:f822a5377f47",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-CO:court_directory:ac5d8b4ec36d"
+    },
+    {
+      "id": "US-CO:court:ea22b4b57f19",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-CO:court_directory:edf98fa475c5"
+    },
+    {
+      "id": "US-CO:court:c6520b43db43",
+      "name": "Trial Courts",
+      "level": "trial_directory",
+      "source_id": "US-CO:court_directory:263cd0a4ec03"
+    },
+    {
+      "id": "US-CO:court:4247f74a07b8",
+      "name": "Water Courts",
+      "level": "trial_directory",
+      "source_id": "US-CO:court_directory:b0487040493a"
+    },
+    {
+      "id": "US-CO:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-CO:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-CO:court:f808f9ac00ce",
+      "name": "Denver Probate",
+      "level": "general_trial",
+      "source_id": "US-CO:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-CO:court:92f249354501",
+      "name": "Denver Juvenile",
+      "level": "general_trial",
+      "source_id": "US-CO:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-CO:court:7f0c4124a47c",
+      "name": "Water",
+      "level": "general_trial",
+      "source_id": "US-CO:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-CO:court:09753adaaaf9",
+      "name": "County",
+      "level": "limited_trial",
+      "source_id": "US-CO:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-CO:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-CO:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Colo. Rev. Stat. § 13-80-102(1)(a)",
+      "source_id": "US-CO:pi_limitations:0e4bc6464030",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Colo. Rev. Stat. § 13-80-101(1)(a)",
+      "source_id": "US-CO:written_contract_limitations:0e4bc6464030",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Colo. Rev. Stat. § 13-80-101(1)(a)",
+      "source_id": "US-CO:oral_contract_limitations:0e4bc6464030",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Colo. Rev. Stat. § 13-40-104. Unlawful detention defined",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ]
+}

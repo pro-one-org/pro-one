@@ -1,0 +1,411 @@
+{
+  "jurisdiction": "US-RI",
+  "version": "1",
+  "sources": {
+    "US-RI:statutes:74aac0710330": {
+      "category": "statutes",
+      "title": "General Laws of Rhode Island",
+      "url": "http://www.rilin.state.ri.us/Statutes/Statutes.html",
+      "directory": "doj-RI",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-RI:constitution:6b9f31290e32": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.rilin.state.ri.us/RiConstitution/Pages/constintro.aspx",
+      "directory": "codes",
+      "locator": "Rhode Island"
+    },
+    "US-RI:legislature:b89425a37322": {
+      "category": "legislature",
+      "title": "General Assembly",
+      "url": "http://www.rilin.state.ri.us/Pages/Default.aspx",
+      "directory": "codes",
+      "locator": "Rhode Island"
+    },
+    "US-RI:labor_agency:074d4aeb960e": {
+      "category": "labor_agency",
+      "title": "www.dlt.ri.gov",
+      "url": "http://www.dlt.ri.gov",
+      "directory": "labor",
+      "locator": "Rhode Island"
+    },
+    "US-RI:commercial_code:ead5090c48aa": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://webserver.rilin.state.ri.us/Statutes/TITLE6A/INDEX.HTM",
+      "directory": "ucc",
+      "locator": "Rhode Island"
+    },
+    "US-RI:civil_rules:fec08a8374b0": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "http://webserver.rilin.state.ri.us/Statutes/TITLE9/INDEX.HTM",
+      "directory": "procedure",
+      "locator": "Rhode Island"
+    },
+    "US-RI:consumer_agency:87f73aba2e9a": {
+      "category": "consumer_agency",
+      "title": "Rhode Island (RI)",
+      "url": "https://riag.ri.gov/consumerprotection",
+      "directory": "consumer",
+      "locator": "Rhode Island (RI)"
+    },
+    "US-RI:judiciary:8d05d2dced0e": {
+      "category": "judiciary",
+      "title": "Judiciary",
+      "url": "https://www.courts.ri.gov/Pages/default.aspx",
+      "directory": "doj-RI",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-RI:judiciary:6f26af96b203": {
+      "category": "judiciary",
+      "title": "Court Records and Hearings Search (Judicial Public Portal)",
+      "url": "https://publicportal.courts.ri.gov/PublicPortal",
+      "directory": "doj-RI",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-RI:court_directory:cb7ae8baa8f0": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.courts.ri.gov/Courts/SupremeCourt/Pages/default.aspx",
+      "directory": "doj-RI",
+      "locator": "Supreme Court"
+    },
+    "US-RI:court_directory:25334aff826d": {
+      "category": "court_directory",
+      "title": "Superior Court",
+      "url": "https://www.courts.ri.gov/Courts/SuperiorCourt/Pages/default.aspx",
+      "directory": "doj-RI",
+      "locator": "Superior Court"
+    },
+    "US-RI:court_directory:92519945ad8c": {
+      "category": "court_directory",
+      "title": "District Court",
+      "url": "https://www.courts.ri.gov/Courts/districtcourt/Pages/default.aspx",
+      "directory": "doj-RI",
+      "locator": "District Court"
+    },
+    "US-RI:court_directory:19d6fc34f246": {
+      "category": "court_directory",
+      "title": "Workers' Compensation Court",
+      "url": "https://www.courts.ri.gov/Courts/workerscompensationcourt/Pages/default.aspx",
+      "directory": "doj-RI",
+      "locator": "Workers' Compensation Court"
+    },
+    "US-RI:court_directory:7a100c9a10c6": {
+      "category": "court_directory",
+      "title": "Family Court",
+      "url": "https://www.courts.ri.gov/Courts/FamilyCourt/Pages/default.aspx",
+      "directory": "doj-RI",
+      "locator": "Family Court"
+    },
+    "US-RI:court_directory:6c9e0c050a47": {
+      "category": "court_directory",
+      "title": "Rhode Island Traffic Tribunal",
+      "url": "https://www.courts.ri.gov/Courts/traffictribunal/Pages/default.aspx",
+      "directory": "doj-RI",
+      "locator": "Rhode Island Traffic Tribunal"
+    },
+    "US-RI:forms:8d443bc9a8db": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://www.courts.ri.gov/Pages/forms.aspx",
+      "directory": "doj-RI",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-RI:forms:d73fe238846c": {
+      "category": "forms",
+      "title": "Probate Forms",
+      "url": "https://www.sos.ri.gov/divisions/business-services/probate-forms/",
+      "directory": "doj-RI",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-RI:constitution:08ef26485a96": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://webserver.rilin.state.ri.us/RiConstitution/",
+      "directory": "doj-RI",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-RI:regulations:2c08b574b609": {
+      "category": "regulations",
+      "title": "Rules and Regulations",
+      "url": "http://sos.ri.gov/divisions/open-government/state/rules-and-regulations",
+      "directory": "doj-RI",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-RI:pi_limitations:bc91e3e49fa8": {
+      "category": "pi_limitations",
+      "title": "R.I. Gen. Laws § 9-1-14",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE9/9-1/9-1-14.htm",
+      "directory": null,
+      "locator": "R.I. Gen. Laws § 9-1-14",
+      "observation": {
+        "requested_url": "https://webserver.rilegislature.gov/Statutes/TITLE9/9-1/9-1-14.htm",
+        "retrieved_at": "2026-11-17T19:34:00.989909+00:00",
+        "http_status": "200",
+        "sha256": "74027ad3173d8356154cc4dbf19d892f6bfcc9ceba2bfbbc4767d6dcb677d62b",
+        "health": "healthy"
+      }
+    },
+    "US-RI:written_contract_limitations:8bc1dc64f9db": {
+      "category": "written_contract_limitations",
+      "title": "R.I. Gen. Laws § 9-1-13",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE9/9-1/9-1-13.htm",
+      "directory": null,
+      "locator": "R.I. Gen. Laws § 9-1-13",
+      "observation": {
+        "requested_url": "https://webserver.rilegislature.gov/Statutes/TITLE9/9-1/9-1-13.htm",
+        "retrieved_at": "2026-11-17T19:34:01.004205+00:00",
+        "http_status": "200",
+        "sha256": "db5dd5e49359d908696402dacc479fe10c44d742bdb4f890197df8838deccdfb",
+        "health": "healthy"
+      }
+    },
+    "US-RI:oral_contract_limitations:8bc1dc64f9db": {
+      "category": "oral_contract_limitations",
+      "title": "R.I. Gen. Laws § 9-1-13(a)",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE9/9-1/9-1-13.htm",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://webserver.rilegislature.gov/Statutes/TITLE9/9-1/9-1-13.htm",
+        "retrieved_at": "2026-11-17T19:34:01.004205+00:00",
+        "http_status": "200",
+        "sha256": "db5dd5e49359d908696402dacc479fe10c44d742bdb4f890197df8838deccdfb",
+        "health": "manual_review_required"
+      }
+    },
+    "US-RI:small_claims:2da9e67285a8": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.courts.ri.gov/Forms/Small%20Claims%20Lawsuit%20-%20Complaint%20%28Self-represented%20Litigant%20-%20With%20Instructions%29.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.courts.ri.gov/Forms/Small%20Claims%20Lawsuit%20-%20Complaint%20%28Self-represented%20Litigant%20-%20With%20Instructions%29.pdf",
+        "retrieved_at": "2026-11-17T19:42:38.696221+00:00",
+        "http_status": "200",
+        "sha256": "e1000a04c56d2a5c6e4df1472cb7892743d78bac685811fbaeb4276dc1a6b36d",
+        "health": "manual_review_required"
+      }
+    },
+    "US-RI:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 29"
+    },
+    "US-RI:deposit:744a4e7c9150": {
+      "category": "deposit",
+      "title": "Residential tenancy publication",
+      "url": "https://www.courts.ri.gov/Courts/districtcourt/Documents/Handbook.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.courts.ri.gov/Courts/districtcourt/Documents/Handbook.pdf",
+        "retrieved_at": "2026-11-17T19:42:40.177945+00:00",
+        "http_status": "200",
+        "sha256": "7256d09ef225ac69eea5548114aaf1eeb872ea77cbb0dc8d63a78f824ec589e2",
+        "health": "manual_review_required"
+      }
+    },
+    "US-RI:commencement:4fa7283c0e85": {
+      "category": "commencement",
+      "title": "R.I. Super. R. Civ. P. 3",
+      "url": "https://www.courts.ri.gov/Courts/superiorcourt/Documents/SuperiorCourtRulesOfCivilProcedure.pdf",
+      "directory": null,
+      "locator": "R.I. Super. R. Civ. P. 3",
+      "language": "en",
+      "publisher_role": "official_rule_publication",
+      "observation": {
+        "health": "retained_snapshot",
+        "retrieved_at": "2026-11-17T20:14:20.957417+00:00",
+        "sha256": "01dea708aa73f7816bd816f6ae5d29701b38e5b0571d8c2e1ea01e17acc700f6"
+      }
+    },
+    "US-RI:commencement:ab765588d91e": {
+      "category": "commencement",
+      "title": "R.I. Dist. Ct. R. Civ. P. 3",
+      "url": "https://www.courts.ri.gov/Courts/districtcourt/Documents/District_Civil_Rules.pdf",
+      "directory": null,
+      "locator": "R.I. Dist. Ct. R. Civ. P. 3",
+      "language": "en",
+      "publisher_role": "official_rule_publication",
+      "observation": {
+        "health": "retained_snapshot",
+        "retrieved_at": "2026-11-17T20:14:21.035638+00:00",
+        "sha256": "916161d04e3905bbcb735933c78a5531d98177a5149d95cb3be9d5c564cd8e55"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-RI:court:f0b5db8d3bff",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-RI:court_directory:cb7ae8baa8f0"
+    },
+    {
+      "id": "US-RI:court:90900e54b56d",
+      "name": "Superior Court",
+      "level": "trial_directory",
+      "source_id": "US-RI:court_directory:25334aff826d"
+    },
+    {
+      "id": "US-RI:court:b65a734cf243",
+      "name": "District Court",
+      "level": "trial_directory",
+      "source_id": "US-RI:court_directory:92519945ad8c"
+    },
+    {
+      "id": "US-RI:court:a0010f6f0b12",
+      "name": "Workers' Compensation Court",
+      "level": "trial_directory",
+      "source_id": "US-RI:court_directory:19d6fc34f246"
+    },
+    {
+      "id": "US-RI:court:fb853b49f5e9",
+      "name": "Family Court",
+      "level": "trial_directory",
+      "source_id": "US-RI:court_directory:7a100c9a10c6"
+    },
+    {
+      "id": "US-RI:court:321fa150774d",
+      "name": "Rhode Island Traffic Tribunal",
+      "level": "trial_directory",
+      "source_id": "US-RI:court_directory:6c9e0c050a47"
+    },
+    {
+      "id": "US-RI:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-RI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-RI:court:b11065887313",
+      "name": "Workers’ Compensation",
+      "level": "limited_trial",
+      "source_id": "US-RI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-RI:court:3c9c83e81fef",
+      "name": "District",
+      "level": "limited_trial",
+      "source_id": "US-RI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-RI:court:6946571becdd",
+      "name": "Family",
+      "level": "limited_trial",
+      "source_id": "US-RI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-RI:court:4f54b582f9f0",
+      "name": "Probate",
+      "level": "limited_trial",
+      "source_id": "US-RI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-RI:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-RI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-RI:court:92974132b0b3",
+      "name": "Traffic Tribunal",
+      "level": "limited_trial",
+      "source_id": "US-RI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "R.I. Gen. Laws § 9-1-14(b)",
+      "source_id": "US-RI:pi_limitations:bc91e3e49fa8",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "R.I. Gen. Laws § 9-1-13(a)",
+      "source_id": "US-RI:written_contract_limitations:8bc1dc64f9db",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "R.I. Gen. Laws § 9-1-13(a)",
+      "source_id": "US-RI:oral_contract_limitations:8bc1dc64f9db",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "R.I. Gen. Laws § 34-18-7. Application; R.I. Gen. Laws § 34-18-8. Exclusions from application of chapter; R.I. Gen. Laws § 34-18-9. Jurisdiction",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "9866df35fa31bee0fa331f25ddfa10": {
+      "citation": "R.I. Gen. Laws § 9-1-14",
+      "source_id": "US-RI:pi_limitations:bc91e3e49fa8",
+      "authority_type": "statute",
+      "text": "(b) Actions for injuries to the person shall be commenced and sued within three (3) years next after the cause of action shall accrue, and not after, except as provided for otherwise in subsection (c) herein. Notwithstanding anything herein, any claim based on sexual abuse or exploitation of a child shall be governed by § 9-1-51.",
+      "text_sha256": "2b51313a062d2c40e4ade6c801b4ff482acacf7157a0b818c0a1502ad3c68009",
+      "publisher_sha256": "74027ad3173d8356154cc4dbf19d892f6bfcc9ceba2bfbbc4767d6dcb677d62b",
+      "retrieved_at": "2026-11-17T19:34:00.989909+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "5e0f46f4a750614eb58abbd15d18ae": {
+      "citation": "R.I. Gen. Laws § 9-1-13",
+      "source_id": "US-RI:written_contract_limitations:8bc1dc64f9db",
+      "authority_type": "statute",
+      "text": "(a) Except as otherwise specially provided, all civil actions shall be commenced within ten (10) years next after the cause of action shall accrue, and not after.",
+      "text_sha256": "c13f19a982d5561fa07a4929592c157842fbd6ee1334ffc689cb960312c8d3dc",
+      "publisher_sha256": "db5dd5e49359d908696402dacc479fe10c44d742bdb4f890197df8838deccdfb",
+      "retrieved_at": "2026-11-17T19:34:01.004205+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "13abb3e8f5d640cba376316f0b2c76": {
+      "source_id": "US-RI:commencement:4fa7283c0e85",
+      "citation": "R.I. Super. R. Civ. P. 3",
+      "authority_type": "court_rule",
+      "language": "en",
+      "text": "3. Commencement of Action. — A civil action is commenced by the filing of a complaint and all other required documents together with the fees prescribed by law. Incarcerated individuals, attorneys who are granted a waiver pursuant to Art. X, Rule 3(c) of the Rhode Island Supreme Court Rules Governing Electronic Filing, and self- represented litigants who do not elect to electronically file pursuant to Art. X, Rule 3(b) may deposit the complaint and all other required documents with said fee in the mail addressed to the clerk or file the documents at the clerk's office.",
+      "text_sha256": "b45a3d73478c75756051fc6bcf262801638787ad919f2a303035b877f664fc46",
+      "publisher_sha256": "01dea708aa73f7816bd816f6ae5d29701b38e5b0571d8c2e1ea01e17acc700f6",
+      "retrieved_at": "2026-11-17T20:14:20.957417+00:00",
+      "currentness": "unresolved"
+    },
+    "d7a5cfc8ee00362055e447bf5990fc": {
+      "source_id": "US-RI:commencement:ab765588d91e",
+      "citation": "R.I. Dist. Ct. R. Civ. P. 3",
+      "authority_type": "court_rule",
+      "language": "en",
+      "text": "3. Commencement of Action. — A civil action is commenced by the filing of a complaint and all other required documents together with the fees prescribed by law. Incarcerated individuals, attorneys who are granted a waiver pursuant to Art. X, Rule 3(c) of the Rhode Island Supreme Court Rules Governing Electronic Filing, and self- represented litigants who do not elect to electronically file pursuant to Art. X, Rule 3(b) may deposit the complaint and all other required documents with said fee in the mail addressed to the clerk or file the documents at the clerk's office.",
+      "text_sha256": "b45a3d73478c75756051fc6bcf262801638787ad919f2a303035b877f664fc46",
+      "publisher_sha256": "916161d04e3905bbcb735933c78a5531d98177a5149d95cb3be9d5c564cd8e55",
+      "retrieved_at": "2026-11-17T20:14:21.035638+00:00",
+      "currentness": "unresolved"
+    }
+  }
+}

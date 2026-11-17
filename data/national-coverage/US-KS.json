@@ -1,0 +1,251 @@
+{
+  "jurisdiction": "US-KS",
+  "version": "1",
+  "sources": {
+    "US-KS:statutes:b8619bcd6e25": {
+      "category": "statutes",
+      "title": "Kansas Statutes",
+      "url": "http://www.kslegislature.org/li/b2015_16/statute/",
+      "directory": "codes",
+      "locator": "Kansas"
+    },
+    "US-KS:constitution:c2b166f6265d": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.kslib.info/constitution",
+      "directory": "codes",
+      "locator": "Kansas"
+    },
+    "US-KS:legislature:b9c2275b34aa": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.kslegislature.org/li",
+      "directory": "codes",
+      "locator": "Kansas"
+    },
+    "US-KS:labor_agency:d02130657512": {
+      "category": "labor_agency",
+      "title": "www.dol.ks.gov",
+      "url": "http://www.dol.ks.gov/",
+      "directory": "labor",
+      "locator": "Kansas"
+    },
+    "US-KS:commercial_code:7a6abba637c0": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://www.kslegislature.org/li/b2019_20/statute/084_000_0000_chapter/",
+      "directory": "ucc",
+      "locator": "Kansas"
+    },
+    "US-KS:civil_rules:987c4dbc7edf": {
+      "category": "civil_rules",
+      "title": "Procedure, Civil",
+      "url": "http://www.kslegislature.org/li/b2019_20/statute/060_000_0000_chapter/060_002_0000_article/",
+      "directory": "procedure",
+      "locator": "Kansas"
+    },
+    "US-KS:consumer_agency:0ab7d768195e": {
+      "category": "consumer_agency",
+      "title": "Kansas (KS)",
+      "url": "https://www.ag.ks.gov/divisions/public-protection/consumer-protection",
+      "directory": "consumer",
+      "locator": "Kansas (KS)"
+    },
+    "US-KS:judiciary:56ed1b503a27": {
+      "category": "judiciary",
+      "title": "Kansas Judicial Branch",
+      "url": "https://www.kscourts.gov/",
+      "directory": "doj-KS",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-KS:judiciary:3bd1e617c1aa": {
+      "category": "judiciary",
+      "title": "Kansas Judicial Council",
+      "url": "http://www.kansasjudicialcouncil.org/",
+      "directory": "doj-KS",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-KS:court_directory:eb378e0d2e42": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.kscourts.gov/about-the-courts/supreme-court.html",
+      "directory": "doj-KS",
+      "locator": "Supreme Court"
+    },
+    "US-KS:court_directory:46896e0b220e": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "https://www.kscourts.gov/about-the-courts/district-courts.html",
+      "directory": "doj-KS",
+      "locator": "District Courts"
+    },
+    "US-KS:court_directory:5a08a9f502b2": {
+      "category": "court_directory",
+      "title": "Municipal Courts",
+      "url": "https://www.kscourts.gov/about-the-courts/municipal-courts.html",
+      "directory": "doj-KS",
+      "locator": "Municipal Courts"
+    },
+    "US-KS:forms:5fde257adaeb": {
+      "category": "forms",
+      "title": "Forms (Kansas Judicial Council)",
+      "url": "http://www.kansasjudicialcouncil.org/legal-forms",
+      "directory": "doj-KS",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-KS:constitution:43bbb33fd8aa": {
+      "category": "constitution",
+      "title": "Kansas Constitution",
+      "url": "https://library.ks.gov/agencies/government-information/",
+      "directory": "doj-KS",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-KS:statutes:0a6bafd1d8ee": {
+      "category": "statutes",
+      "title": "Statutes",
+      "url": "http://www.kslegislature.org/li/",
+      "directory": "doj-KS",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-KS:regulations:852542968891": {
+      "category": "regulations",
+      "title": "Kansas Register",
+      "url": "https://sos.ks.gov/publications/kansas-register.html",
+      "directory": "doj-KS",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-KS:regulations:01d8e17d6d8a": {
+      "category": "regulations",
+      "title": "Administrative Regulations",
+      "url": "https://www.sos.ks.gov/publications/pubs_kar.aspx",
+      "directory": "doj-KS",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-KS:pi_limitations:f79a46694d85": {
+      "category": "pi_limitations",
+      "title": "K.S.A. § 60-513(a)(4)",
+      "url": "https://www.ksrevisor.org/statutes/chapters/ch60/060_005_0013.html",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.ksrevisor.org/statutes/chapters/ch60/060_005_0013.html",
+        "retrieved_at": "2026-11-17T19:33:56.936839+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-KS:written_contract_limitations:cd0e6b94267f": {
+      "category": "written_contract_limitations",
+      "title": "K.S.A. § 60-511(1)",
+      "url": "https://www.ksrevisor.org/statutes/chapters/ch60/060_005_0011.html",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.ksrevisor.org/statutes/chapters/ch60/060_005_0011.html",
+        "retrieved_at": "2026-11-17T19:33:56.991543+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-KS:oral_contract_limitations:4e0e99d4b85b": {
+      "category": "oral_contract_limitations",
+      "title": "K.S.A. § 60-512(1)",
+      "url": "https://www.ksrevisor.org/statutes/chapters/ch60/060_005_0012.html",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.ksrevisor.org/statutes/chapters/ch60/060_005_0012.html",
+        "retrieved_at": "2026-11-17T19:33:57.483995+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-KS:small_claims:0be4ef6b395f": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.kansasjudicialcouncil.org/sites/default/files/SC%20Plaintiff%20Instruction%20Sheet%20%287-2024%29.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.kansasjudicialcouncil.org/sites/default/files/SC%20Plaintiff%20Instruction%20Sheet%20%287-2024%29.pdf",
+        "retrieved_at": "2026-11-17T19:42:47.360537+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-KS:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-KS:court:bdb6f5796b75",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-KS:court_directory:eb378e0d2e42"
+    },
+    {
+      "id": "US-KS:court:9c5a12186d9c",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-KS:court_directory:46896e0b220e"
+    },
+    {
+      "id": "US-KS:court:a453a39f6ec5",
+      "name": "Municipal Courts",
+      "level": "trial_directory",
+      "source_id": "US-KS:court_directory:5a08a9f502b2"
+    },
+    {
+      "id": "US-KS:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-KS:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-KS:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-KS:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "K.S.A. § 60-513(a)(4)",
+      "source_id": "US-KS:pi_limitations:f79a46694d85",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "K.S.A. § 60-511(1)",
+      "source_id": "US-KS:written_contract_limitations:cd0e6b94267f",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "K.S.A. § 60-512(1)",
+      "source_id": "US-KS:oral_contract_limitations:4e0e99d4b85b",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Kan. Stat. § 58-25,120. Material noncompliance by tenant; notice; termination of rental agreement; limitations; nonpayment of rent; remedies",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ]
+}

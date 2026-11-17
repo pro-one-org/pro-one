@@ -1,0 +1,314 @@
+{
+  "jurisdiction": "US-NY",
+  "version": "1",
+  "sources": {
+    "US-NY:statutes:ace451b65fde": {
+      "category": "statutes",
+      "title": "New York Consolidated Laws",
+      "url": "http://public.leginfo.state.ny.us/lawssrch.cgi?NVLWO:",
+      "directory": "codes",
+      "locator": "New York"
+    },
+    "US-NY:constitution:45de4dc7ccf3": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.dos.ny.gov/info/constitution.htm",
+      "directory": "codes",
+      "locator": "New York"
+    },
+    "US-NY:legislature:d92f75b643ad": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://public.leginfo.state.ny.us/",
+      "directory": "codes",
+      "locator": "New York"
+    },
+    "US-NY:labor_agency:0948dfdc97f3": {
+      "category": "labor_agency",
+      "title": "www.labor.ny.gov",
+      "url": "http://www.labor.ny.gov/",
+      "directory": "labor",
+      "locator": "New York"
+    },
+    "US-NY:commercial_code:962e594d2abf": {
+      "category": "commercial_code",
+      "title": "UCC",
+      "url": "https://www.nysenate.gov/legislation/laws/UCC",
+      "directory": "ucc",
+      "locator": "New York"
+    },
+    "US-NY:civil_rules:1e58346be91f": {
+      "category": "civil_rules",
+      "title": "CVP, Civil Practice Law & Rules",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP",
+      "directory": "procedure",
+      "locator": "New York"
+    },
+    "US-NY:consumer_agency:2c3b9a603e22": {
+      "category": "consumer_agency",
+      "title": "New York (NY)",
+      "url": "https://dos.ny.gov/consumer-protection",
+      "directory": "consumer",
+      "locator": "New York (NY)"
+    },
+    "US-NY:judiciary:c333fb450c7b": {
+      "category": "judiciary",
+      "title": "State Unified Court System",
+      "url": "https://www.nycourts.gov/",
+      "directory": "doj-NY",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-NY:court_directory:146f064b6f83": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "http://www.courts.state.ny.us/ctapps/",
+      "directory": "doj-NY",
+      "locator": "Court of Appeals"
+    },
+    "US-NY:court_directory:23d9d7ea4c7d": {
+      "category": "court_directory",
+      "title": "Court of Claims",
+      "url": "http://www.nyscourtofclaims.state.ny.us/",
+      "directory": "doj-NY",
+      "locator": "Court of Claims"
+    },
+    "US-NY:court_directory:08a20d52fc89": {
+      "category": "court_directory",
+      "title": "New York City Courts",
+      "url": "https://www.nycourts.gov/new-york-city-courts",
+      "directory": "doj-NY",
+      "locator": "New York City Courts"
+    },
+    "US-NY:court_directory:41f5c4547237": {
+      "category": "court_directory",
+      "title": "City, Town and Village Courts",
+      "url": "http://www.nycourts.gov/courts/townandvillage/",
+      "directory": "doj-NY",
+      "locator": "City, Town and Village Courts"
+    },
+    "US-NY:forms:54a4095d6425": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://www.nycourts.gov/forms/",
+      "directory": "doj-NY",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-NY:constitution:5e884c870794": {
+      "category": "constitution",
+      "title": "Constitution,",
+      "url": "https://www.nysenate.gov/legislation/laws/CNS",
+      "directory": "doj-NY",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NY:statutes:0a43e66e63e5": {
+      "category": "statutes",
+      "title": "Consolidated and Unconsolidated Laws",
+      "url": "https://www.nysenate.gov/legislation/laws/all",
+      "directory": "doj-NY",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NY:regulations:d0dfc0f85ae1": {
+      "category": "regulations",
+      "title": "State Register",
+      "url": "http://www.dos.ny.gov/info/register.htm",
+      "directory": "doj-NY",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-NY:pi_limitations:ba1e5c214e0f": {
+      "category": "pi_limitations",
+      "title": "N.Y. C.P.L.R. § 214(5)",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/214",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.nysenate.gov/legislation/laws/CVP/214",
+        "retrieved_at": "2026-11-17T19:33:59.847728+00:00",
+        "http_status": "200",
+        "sha256": "0244764c782a973dc6245c5513dfdc05d87c1ae87b04078de5f1f277455b722d",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NY:written_contract_limitations:7de544da597c": {
+      "category": "written_contract_limitations",
+      "title": "N.Y. C.P.L.R. § 213(2)",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/213",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.nysenate.gov/legislation/laws/CVP/213",
+        "retrieved_at": "2026-11-17T19:33:59.892150+00:00",
+        "http_status": "200",
+        "sha256": "948824446cfbcaab22960b2aaf179298846b8c59bc948c0d4e102d452e57b727",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NY:oral_contract_limitations:7de544da597c": {
+      "category": "oral_contract_limitations",
+      "title": "N.Y. C.P.L.R. § 213(2)",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/213",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.nysenate.gov/legislation/laws/CVP/213",
+        "retrieved_at": "2026-11-17T19:33:59.892150+00:00",
+        "http_status": "200",
+        "sha256": "948824446cfbcaab22960b2aaf179298846b8c59bc948c0d4e102d452e57b727",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NY:small_claims:b389e43ebf52": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.nycourts.gov/new-york-city-small-claims-court/nyc-small-claims-forms",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.nycourts.gov/new-york-city-small-claims-court/nyc-small-claims-forms",
+        "retrieved_at": "2026-11-17T19:42:54.535317+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-NY:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 28"
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-NY:court:019166d38a56",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-NY:court_directory:146f064b6f83"
+    },
+    {
+      "id": "US-NY:court:9bbffa5eef08",
+      "name": "Court of Claims",
+      "level": "trial_directory",
+      "source_id": "US-NY:court_directory:23d9d7ea4c7d"
+    },
+    {
+      "id": "US-NY:court:458646662f03",
+      "name": "New York City Courts",
+      "level": "trial_directory",
+      "source_id": "US-NY:court_directory:08a20d52fc89"
+    },
+    {
+      "id": "US-NY:court:87cd21528fbb",
+      "name": "City, Town and Village Courts",
+      "level": "trial_directory",
+      "source_id": "US-NY:court_directory:41f5c4547237"
+    },
+    {
+      "id": "US-NY:court:ad8c892080d6",
+      "name": "Supreme",
+      "level": "general_trial",
+      "source_id": "US-NY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NY:court:774c517dcaa1",
+      "name": "County",
+      "level": "general_trial",
+      "source_id": "US-NY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NY:court:47bb6deb1044",
+      "name": "Claims",
+      "level": "general_trial",
+      "source_id": "US-NY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NY:court:8865e09f4724",
+      "name": "Surrogates’",
+      "level": "limited_trial",
+      "source_id": "US-NY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NY:court:6946571becdd",
+      "name": "Family",
+      "level": "limited_trial",
+      "source_id": "US-NY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NY:court:3c9c83e81fef",
+      "name": "District",
+      "level": "limited_trial",
+      "source_id": "US-NY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NY:court:c4a7a7b35c28",
+      "name": "City",
+      "level": "limited_trial",
+      "source_id": "US-NY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NY:court:fc34dcbe3861",
+      "name": "NYC Civil",
+      "level": "limited_trial",
+      "source_id": "US-NY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NY:court:fe0e6e988743",
+      "name": "NYC Criminal",
+      "level": "limited_trial",
+      "source_id": "US-NY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NY:court:0d81a8d52547",
+      "name": "Town & Village Justice",
+      "level": "limited_trial",
+      "source_id": "US-NY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "N.Y. C.P.L.R. § 214(5)",
+      "source_id": "US-NY:pi_limitations:ba1e5c214e0f",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "N.Y. C.P.L.R. § 213(2)",
+      "source_id": "US-NY:written_contract_limitations:7de544da597c",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "N.Y. C.P.L.R. § 213(2)",
+      "source_id": "US-NY:oral_contract_limitations:7de544da597c",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "N.Y. Real Prop. Acts. Law § 711. Grounds where landlord-tenant relationship exists",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ]
+}

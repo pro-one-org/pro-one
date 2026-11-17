@@ -1,0 +1,313 @@
+{
+  "jurisdiction": "US-IA",
+  "version": "1",
+  "sources": {
+    "US-IA:statutes:4421cd4a7174": {
+      "category": "statutes",
+      "title": "Iowa State Code",
+      "url": "http://www.legis.iowa.gov/law",
+      "directory": "codes",
+      "locator": "Iowa"
+    },
+    "US-IA:constitution:a395670b9867": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.legis.iowa.gov/law/statutory/constitution",
+      "directory": "codes",
+      "locator": "Iowa"
+    },
+    "US-IA:legislature:954b671c572a": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.legis.iowa.gov/",
+      "directory": "codes",
+      "locator": "Iowa"
+    },
+    "US-IA:labor_agency:b8157c774dab": {
+      "category": "labor_agency",
+      "title": "www.iowadivisionoflabor.gov",
+      "url": "http://www.iowadivisionoflabor.gov",
+      "directory": "labor",
+      "locator": "Iowa"
+    },
+    "US-IA:commercial_code:a16d1e298d38": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=554",
+      "directory": "ucc",
+      "locator": "Iowa"
+    },
+    "US-IA:civil_rules:466efa708127": {
+      "category": "civil_rules",
+      "title": "Civil Procedure - Subtitle 3",
+      "url": "https://www.legis.iowa.gov/docs/ACO/CourtRulesChapter/1.pdf",
+      "directory": "procedure",
+      "locator": "Iowa"
+    },
+    "US-IA:consumer_agency:caa3f0441a1d": {
+      "category": "consumer_agency",
+      "title": "Iowa (IA)",
+      "url": "https://www.iowaattorneygeneral.gov/about-us/divisions/consumer-protection",
+      "directory": "consumer",
+      "locator": "Iowa (IA)"
+    },
+    "US-IA:judiciary:faaf68fe5fa2": {
+      "category": "judiciary",
+      "title": "Judicial Branch",
+      "url": "http://www.iowacourts.gov/",
+      "directory": "doj-IA",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-IA:court_directory:ffd71e774fa6": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://www.iowacourts.gov/About_the_Courts/Supreme_Court/",
+      "directory": "doj-IA",
+      "locator": "Supreme Court"
+    },
+    "US-IA:court_directory:68b6c647d065": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "http://www.iowacourts.gov/About_the_Courts/Court_of_Appeals/",
+      "directory": "doj-IA",
+      "locator": "Court of Appeals"
+    },
+    "US-IA:court_directory:1aa49a9d2cbd": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "http://www.iowacourts.gov/About_the_Courts/District_Courts/",
+      "directory": "doj-IA",
+      "locator": "District Courts"
+    },
+    "US-IA:court_rules:cf4018ccb871": {
+      "category": "court_rules",
+      "title": "Court Rules",
+      "url": "https://www.legis.iowa.gov/law/courtRules",
+      "directory": "doj-IA",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-IA:forms:8b701f13cfc5": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "http://www.iowacourts.gov/Court_Rules__Forms/Overview/",
+      "directory": "doj-IA",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-IA:constitution:1f79a3f5540b": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.legis.iowa.gov/law/statutory/constitution",
+      "directory": "doj-IA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-IA:statutes:0f3b53462c45": {
+      "category": "statutes",
+      "title": "Code and Acts",
+      "url": "https://www.legis.iowa.gov/law",
+      "directory": "doj-IA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-IA:statutes:c7b03b22fb51": {
+      "category": "statutes",
+      "title": "Iowa Code Archive",
+      "url": "https://www.legis.iowa.gov/archives/code",
+      "directory": "doj-IA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-IA:regulations:da1fca81b7f0": {
+      "category": "regulations",
+      "title": "Administrative Code",
+      "url": "https://www.legis.iowa.gov/law/administrativeRules/agencies",
+      "directory": "doj-IA",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-IA:pi_limitations:cd90c7072f38": {
+      "category": "pi_limitations",
+      "title": "Iowa Code § 614.1(2)",
+      "url": "https://www.legis.iowa.gov/docs/code/614.1.pdf",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.legis.iowa.gov/docs/code/614.1.pdf",
+        "retrieved_at": "2026-11-17T19:33:57.174874+00:00",
+        "http_status": "200",
+        "sha256": "d67a4e99292c1311a0a4f737db8885ab07e9f3b884a96f34a0c17563c53bfc6a",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IA:written_contract_limitations:cd90c7072f38": {
+      "category": "written_contract_limitations",
+      "title": "Iowa Code § 614.1(5)(a)",
+      "url": "https://www.legis.iowa.gov/docs/code/614.1.pdf",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.legis.iowa.gov/docs/code/614.1.pdf",
+        "retrieved_at": "2026-11-17T19:33:57.174874+00:00",
+        "http_status": "200",
+        "sha256": "d67a4e99292c1311a0a4f737db8885ab07e9f3b884a96f34a0c17563c53bfc6a",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IA:oral_contract_limitations:cd90c7072f38": {
+      "category": "oral_contract_limitations",
+      "title": "Iowa Code § 614.1(4)",
+      "url": "https://www.legis.iowa.gov/docs/code/614.1.pdf",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.legis.iowa.gov/docs/code/614.1.pdf",
+        "retrieved_at": "2026-11-17T19:33:57.174874+00:00",
+        "http_status": "200",
+        "sha256": "d67a4e99292c1311a0a4f737db8885ab07e9f3b884a96f34a0c17563c53bfc6a",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IA:small_claims:5d98ec8f631c": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.iowacourts.gov/faq/small-claims-filing-a-petition",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.iowacourts.gov/faq/small-claims-filing-a-petition",
+        "retrieved_at": "2026-11-17T19:42:46.630285+00:00",
+        "http_status": "200",
+        "sha256": "42dd38211731e96ed06a59c225ddf83d0e269d66822e822726da8c3062625df9",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IA:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    },
+    "US-IA:fault:131094f0aeb0": {
+      "category": "fault",
+      "title": "Fault allocation research publication",
+      "url": "https://www.legis.iowa.gov/docs/code/2025/668.1.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.legis.iowa.gov/docs/code/2025/668.1.pdf",
+        "retrieved_at": "2026-11-17T19:42:49.866909+00:00",
+        "http_status": "200",
+        "sha256": "2588488745a8286ba0825e43f852e64c85102edf8a7c26e83cd1082f3082beec",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IA:deposit:0cee3e632cf7": {
+      "category": "deposit",
+      "title": "Residential tenancy publication",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/562A.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.legis.iowa.gov/docs/code/2026/562A.pdf",
+        "retrieved_at": "2026-11-17T19:42:50.812715+00:00",
+        "http_status": "200",
+        "sha256": "f0605fd44e8c7bb0905b0bc31802a2a7e8bed0cbd0b287a9db1ae5f8dad57692",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IA:wageLaw:86f6199d03c9": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://www.legis.iowa.gov/docs/code/2025/91A.html",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.legis.iowa.gov/docs/code/2025/91A.html",
+        "retrieved_at": "2026-11-17T19:42:50.456096+00:00",
+        "http_status": "200",
+        "sha256": "d532fa3c6756f49085314f0e4dfdd19e4cf4fd8b74570a7b87b41eea7d3584bd",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IA:debtLaw:9a2d17aebc58": {
+      "category": "debtLaw",
+      "title": "Debt collection publication",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/537.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.legis.iowa.gov/docs/code/2026/537.pdf",
+        "retrieved_at": "2026-11-17T19:42:50.817038+00:00",
+        "http_status": "200",
+        "sha256": "8ce4f416985a27f5e268255129c08d09f0786a83586066c67186d30cc394ca61",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IA:negligence:41c01a04be71": {
+      "category": "negligence",
+      "title": "Negligence research publication",
+      "url": "https://www.iowacourts.gov/courtcases/14742/embed/CourtAppealsOpinion",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.iowacourts.gov/courtcases/14742/embed/CourtAppealsOpinion",
+        "retrieved_at": "2026-11-17T19:42:45.967504+00:00",
+        "http_status": "200",
+        "sha256": "4377d766318d4d736833f047fbd0a21297b6773755bd482d9cee15401d45d349",
+        "health": "manual_review_required"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-IA:court:d6bc272c5ddf",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-IA:court_directory:ffd71e774fa6"
+    },
+    {
+      "id": "US-IA:court:57335225bf10",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-IA:court_directory:68b6c647d065"
+    },
+    {
+      "id": "US-IA:court:76e63dd31bce",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-IA:court_directory:1aa49a9d2cbd"
+    },
+    {
+      "id": "US-IA:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-IA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Iowa Code § 614.1(2)",
+      "source_id": "US-IA:pi_limitations:cd90c7072f38",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Iowa Code § 614.1(5)(a)",
+      "source_id": "US-IA:written_contract_limitations:cd90c7072f38",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Iowa Code § 614.1(4)",
+      "source_id": "US-IA:oral_contract_limitations:cd90c7072f38",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Iowa Code § 562A.27. Noncompliance with rental agreement—failure to pay rent—violation of federal regulation; Iowa Code § 562A.32. Remedy after termination",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ]
+}

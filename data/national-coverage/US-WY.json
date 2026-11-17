@@ -1,0 +1,244 @@
+{
+  "jurisdiction": "US-WY",
+  "version": "1",
+  "sources": {
+    "US-WY:statutes:482b831fb14e": {
+      "category": "statutes",
+      "title": "Wyoming Statutes and Constitution",
+      "url": "https://www.wyoleg.gov/StateStatutes/StatutesConstitution",
+      "directory": "codes",
+      "locator": "Wyoming"
+    },
+    "US-WY:constitution:89f5edef1263": {
+      "category": "constitution",
+      "title": "Wyoming Statutes Annotated and Constitution",
+      "url": "http://www.lexisnexis.com/hottopics/wystatutes/",
+      "directory": "codes",
+      "locator": "Wyoming"
+    },
+    "US-WY:legislature:eaffbb02cd25": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://legisweb.state.wy.us",
+      "directory": "codes",
+      "locator": "Wyoming"
+    },
+    "US-WY:labor_agency:c9338961f240": {
+      "category": "labor_agency",
+      "title": "dws.wyo.gov",
+      "url": "https://dws.wyo.gov/",
+      "directory": "labor",
+      "locator": "Wyoming"
+    },
+    "US-WY:commercial_code:8df828c1729a": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "https://wyoleg.gov/statutes/compress/title341.pdf",
+      "directory": "ucc",
+      "locator": "Wyoming"
+    },
+    "US-WY:civil_rules:e969b0985d81": {
+      "category": "civil_rules",
+      "title": "Code of Civil Procedure",
+      "url": "https://wyoleg.gov/statutes/compress/title1.pdf",
+      "directory": "procedure",
+      "locator": "Wyoming"
+    },
+    "US-WY:consumer_agency:cf5414bd8b23": {
+      "category": "consumer_agency",
+      "title": "Wyoming (WY)",
+      "url": "https://ag.wyo.gov/law-office-division/consumer-protection-and-antitrust-unit",
+      "directory": "consumer",
+      "locator": "Wyoming (WY)"
+    },
+    "US-WY:judiciary:d56b5735c133": {
+      "category": "judiciary",
+      "title": "Wyoming Judicial Branch",
+      "url": "https://www.courts.state.wy.us/",
+      "directory": "doj-WY",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-WY:court_directory:d8b74aeadbb9": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.courts.state.wy.us/supreme-court/",
+      "directory": "doj-WY",
+      "locator": "Supreme Court"
+    },
+    "US-WY:court_directory:d1d97dcc0acb": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "https://www.courts.state.wy.us/district-courts/",
+      "directory": "doj-WY",
+      "locator": "District Courts"
+    },
+    "US-WY:court_directory:003da5c3dca6": {
+      "category": "court_directory",
+      "title": "Chancery Court",
+      "url": "https://www.courts.state.wy.us/chancery-court/",
+      "directory": "doj-WY",
+      "locator": "Chancery Court"
+    },
+    "US-WY:court_directory:c5912983d17a": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "https://www.courts.state.wy.us/circuit-courts/",
+      "directory": "doj-WY",
+      "locator": "Circuit Courts"
+    },
+    "US-WY:forms:f3957b82f974": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://www.wyocourts.gov/self-help-forms//",
+      "directory": "doj-WY",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-WY:constitution:ebab1de63186": {
+      "category": "constitution",
+      "title": "Wyoming Constitution and Statutes",
+      "url": "https://wyoleg.gov/stateStatutes/StateStatutes",
+      "directory": "doj-WY",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-WY:pi_limitations:619ad730fe8d": {
+      "category": "pi_limitations",
+      "title": "Wyo. Stat. § 1-3-105(a)(iv)(C)",
+      "url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+        "retrieved_at": "2026-11-17T19:34:05.998948+00:00",
+        "http_status": "200",
+        "sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f",
+        "health": "manual_review_required"
+      }
+    },
+    "US-WY:written_contract_limitations:619ad730fe8d": {
+      "category": "written_contract_limitations",
+      "title": "Wyo. Stat. § 1-3-105(a)(i)",
+      "url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+        "retrieved_at": "2026-11-17T19:34:05.998948+00:00",
+        "http_status": "200",
+        "sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f",
+        "health": "manual_review_required"
+      }
+    },
+    "US-WY:oral_contract_limitations:619ad730fe8d": {
+      "category": "oral_contract_limitations",
+      "title": "Wyo. Stat. § 1-3-105(a)(ii)(A)",
+      "url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+        "retrieved_at": "2026-11-17T19:34:05.998948+00:00",
+        "http_status": "200",
+        "sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f",
+        "health": "manual_review_required"
+      }
+    },
+    "US-WY:small_claims:2daa3ef8cfe3": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.wyocourts.gov/legal-help-by-topic/small-claims/",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.wyocourts.gov/legal-help-by-topic/small-claims/",
+        "retrieved_at": "2026-11-17T19:43:10.936275+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-WY:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 30"
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-WY:court:3078a9bd4d48",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-WY:court_directory:d8b74aeadbb9"
+    },
+    {
+      "id": "US-WY:court:a04963e6115b",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-WY:court_directory:d1d97dcc0acb"
+    },
+    {
+      "id": "US-WY:court:2a1be35d383a",
+      "name": "Chancery Court",
+      "level": "trial_directory",
+      "source_id": "US-WY:court_directory:003da5c3dca6"
+    },
+    {
+      "id": "US-WY:court:0fe623dabc24",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-WY:court_directory:c5912983d17a"
+    },
+    {
+      "id": "US-WY:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-WY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-WY:court:16009b20d3aa",
+      "name": "Circuit",
+      "level": "limited_trial",
+      "source_id": "US-WY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-WY:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-WY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Wyo. Stat. § 1-3-105(a)(iv)(C)",
+      "source_id": "US-WY:pi_limitations:619ad730fe8d",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Wyo. Stat. § 1-3-105(a)(i)",
+      "source_id": "US-WY:written_contract_limitations:619ad730fe8d",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Wyo. Stat. § 1-3-105(a)(ii)(A)",
+      "source_id": "US-WY:oral_contract_limitations:619ad730fe8d",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Wyo. Stat. § 1-21-1001. Jurisdiction of circuit courts",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ]
+}

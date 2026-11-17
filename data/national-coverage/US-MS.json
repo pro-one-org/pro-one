@@ -1,0 +1,207 @@
+{
+  "jurisdiction": "US-MS",
+  "version": "1",
+  "sources": {
+    "US-MS:statutes:40666b7d6fe8": {
+      "category": "statutes",
+      "title": "Mississippi Code and Constitution",
+      "url": "http://www.lexisnexis.com/hottopics/mscode/",
+      "directory": "codes",
+      "locator": "Mississippi"
+    },
+    "US-MS:legislature:ff3c13defcf2": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.legislature.ms.gov/",
+      "directory": "codes",
+      "locator": "Mississippi"
+    },
+    "US-MS:labor_agency:4c6233c22e25": {
+      "category": "labor_agency",
+      "title": "www.mdes.ms.gov",
+      "url": "http://www.mdes.ms.gov/",
+      "directory": "labor",
+      "locator": "Mississippi"
+    },
+    "US-MS:commercial_code:c0b7202038bc": {
+      "category": "commercial_code",
+      "title": "Regulation of Trade, Commerce and Investments",
+      "url": "https://law.justia.com/codes/mississippi/2017/title-75/index.html",
+      "directory": "ucc",
+      "locator": "Mississippi"
+    },
+    "US-MS:civil_rules:6e0fc77394a1": {
+      "category": "civil_rules",
+      "title": "Civil Practice and Procedures",
+      "url": "https://law.justia.com/codes/mississippi/2017/title-11/index.html",
+      "directory": "procedure",
+      "locator": "Mississippi"
+    },
+    "US-MS:consumer_agency:030a5f4fcfc2": {
+      "category": "consumer_agency",
+      "title": "Mississippi (MS)",
+      "url": "https://attorneygenerallynnfitch.com/divisions/consumer-protection/",
+      "directory": "consumer",
+      "locator": "Mississippi (MS)"
+    },
+    "US-MS:judiciary:b9dc34157992": {
+      "category": "judiciary",
+      "title": "Judiciary",
+      "url": "https://courts.ms.gov/",
+      "directory": "doj-MS",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-MS:constitution:a2f0db57b636": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.sos.state.ms.us/ed_pubs/constitution/constitution.asp",
+      "directory": "doj-MS",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MS:regulations:f6dda7eef6a2": {
+      "category": "regulations",
+      "title": "Administrative Code and Bulletin",
+      "url": "https://www.sos.ms.gov/adminsearch/default.aspx?current_page=Bulletin",
+      "directory": "doj-MS",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-MS:pi_limitations:f22c6dd7c5cc": {
+      "category": "pi_limitations",
+      "title": "Miss. Code Ann. § 15-1-49(1)",
+      "url": "https://www.legislature.ms.gov/",
+      "directory": "limitations",
+      "locator": "personalInjury"
+    },
+    "US-MS:written_contract_limitations:f22c6dd7c5cc": {
+      "category": "written_contract_limitations",
+      "title": "Miss. Code Ann. § 15-1-49(1)",
+      "url": "https://www.legislature.ms.gov/",
+      "directory": "limitations",
+      "locator": "writtenContract"
+    },
+    "US-MS:oral_contract_limitations:f22c6dd7c5cc": {
+      "category": "oral_contract_limitations",
+      "title": "Miss. Code Ann. § 15-1-29",
+      "url": "https://www.legislature.ms.gov/",
+      "directory": "limitations",
+      "locator": "oralContract"
+    },
+    "US-MS:small_claims:3a3a50911c08": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://courts.ms.gov/research/rules/msrulesofcourt/Rules%20of%20Justice%20Court.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://courts.ms.gov/research/rules/msrulesofcourt/Rules%20of%20Justice%20Court.pdf",
+        "retrieved_at": "2026-11-17T19:41:47.955324+00:00",
+        "http_status": "200",
+        "sha256": "dad4e46551b0203187f003c0258ae2399af57a0ed7f4f6502cf76ece76cddbc5",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MS:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    },
+    "US-MS:commencement:590b22aa5df5": {
+      "category": "commencement",
+      "title": "Miss. R. Civ. P. 3",
+      "url": "https://courts.ms.gov/research/rules/msrulesofcourt/2026-07-01%20Rules%20of%20Civil%20Procedure%20with%20Advisory%20Committee%20Notes%20%28with%20Forms%206-8%20attached%29.pdf",
+      "directory": null,
+      "locator": "Miss. R. Civ. P. 3",
+      "language": "en",
+      "publisher_role": "official_rule_publication",
+      "observation": {
+        "health": "retained_snapshot",
+        "retrieved_at": "2026-11-17T20:14:00.019290+00:00",
+        "sha256": "b85e6543980b7f3a7d2d3623d9ec538d9aabec651a30a6589c87424ea6116095"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-MS:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-MS:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MS:court:1ea33477d484",
+      "name": "Chancery",
+      "level": "limited_trial",
+      "source_id": "US-MS:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MS:court:09753adaaaf9",
+      "name": "County",
+      "level": "limited_trial",
+      "source_id": "US-MS:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MS:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-MS:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MS:court:0b3db1cdefd8",
+      "name": "Justice",
+      "level": "limited_trial",
+      "source_id": "US-MS:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Miss. Code Ann. § 15-1-49(1)",
+      "source_id": "US-MS:pi_limitations:f22c6dd7c5cc",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Miss. Code Ann. § 15-1-49(1)",
+      "source_id": "US-MS:written_contract_limitations:f22c6dd7c5cc",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Miss. Code Ann. § 15-1-29",
+      "source_id": "US-MS:oral_contract_limitations:f22c6dd7c5cc",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Miss. Code § 89-8-13. Right to terminate tenancy for breach; notice of breach; return of prepaid rent and security; disposition of tenant’s abandoned personal property.",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "9181ca305541842428e54084a39530": {
+      "source_id": "US-MS:commencement:590b22aa5df5",
+      "citation": "Miss. R. Civ. P. 3",
+      "authority_type": "court_rule",
+      "language": "en",
+      "text": "A civil action is commenced by filing a complaint with the court. A costs deposit shall be made with the filing of the complaint, such deposit to be in the amount required by law and rules of the court.. (b) Proceeding In Forma Pauperis. A party may proceed in forma pauperis in accordance with sections 11-53-17 and 11-53-19 of the Mississippi Code Annotated. The court may, however, on the motion of any party, on the motion of the clerk of the court, or on its own initiative, examine the affiant as to the facts and circumstances of his pauperism.",
+      "text_sha256": "e827c95673a933fa5fbebf3c95424ec68975c55ea02cfe3e9775b7a55ffa1ba9",
+      "publisher_sha256": "b85e6543980b7f3a7d2d3623d9ec538d9aabec651a30a6589c87424ea6116095",
+      "retrieved_at": "2026-11-17T20:14:00.019290+00:00",
+      "currentness": "unresolved"
+    }
+  }
+}

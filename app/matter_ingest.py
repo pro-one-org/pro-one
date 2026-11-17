@@ -8,7 +8,8 @@ from pydantic import Field
 
 from app.matter_models import FIELD_NAMES, EntityType, Record, Suggestion, Temporal
 from app.models.base import ModelRequest
-from app.procedural_research import MatterFacts, STATE_NAME_SCOPES
+from app.procedural_research import MatterFacts
+from app.jurisdictions import CONNECTION_FIELDS, NAME_SCOPES, jurisdiction_id
 
 
 class ProposedUpdates(Record):
@@ -61,8 +62,8 @@ def typed_value(field, value):
     if field in MONEY:
         return int(value) if re.fullmatch(r"[0-9]{1,9}", value) else None
     normalized = value.strip()
-    if field == "jurisdiction":
-        return STATE_NAME_SCOPES.get(normalized.casefold(), normalized if normalized in STATE_NAME_SCOPES.values() or normalized == "US" else None)
+    if field == "jurisdiction" or field in CONNECTION_FIELDS:
+        return NAME_SCOPES.get(normalized.casefold()) or (jurisdiction_id(normalized) if normalized.isupper() else None)
     if field == "entity_type":
         return normalized if normalized in get_args(EntityType) else None
     if field == "goal":
@@ -89,7 +90,10 @@ REPORTED_LEAK_NOTICE = (
     r"|(?:The|A) (?:manager|employee) told me (?:they|the staff) knew the sink had been leaking since that morning"
 )
 STATEMENT_RULES = (
-    ("jurisdiction", r"(?:i am in |this happened in )?([a-z ]{2,30})"),
+    ("jurisdiction", r"(?:this happened in )?([a-z ]{2,30})"),
+    ("residence_jurisdiction", r"(?:I live in|I reside in) ([a-z .]{2,35})"),
+    ("work_jurisdiction", r"I (?:work|worked) in ([a-z .]{2,35})"),
+    ("employer_jurisdiction", r"My employer is (?:based|headquartered) in ([a-z .]{2,35})"),
     ("brand", rf"(?:I slipped (?:in|at) (?:(?:a|the) )?|It happened (?:(?:{DATE_EXPRESSION}) )?at (?:(?:a|the) )?|I want to sue )({RESTAURANT})(?=\s|$)"),
     ("injury", rf"I slipped (?:in|at) (?:(?:a|the) )?{RESTAURANT}(?: bathroom)? and broke my wrist$"),
     ("location", rf"(?:I slipped in (?:(?:a|the) )?({RESTAURANT} bathroom))(?: and broke my wrist)?$"),

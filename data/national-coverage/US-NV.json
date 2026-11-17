@@ -1,0 +1,316 @@
+{
+  "jurisdiction": "US-NV",
+  "version": "1",
+  "sources": {
+    "US-NV:statutes:f6b3c65d1ad9": {
+      "category": "statutes",
+      "title": "Nevada Revised Statutes",
+      "url": "http://leg.state.nv.us/law1.cfm",
+      "directory": "codes",
+      "locator": "Nevada"
+    },
+    "US-NV:constitution:680064730f4d": {
+      "category": "constitution",
+      "title": "Nevada Constitution",
+      "url": "http://www.leg.state.nv.us/Const/NVConst.html",
+      "directory": "doj-NV",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NV:legislature:de843b6b833e": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://leg.state.nv.us/",
+      "directory": "codes",
+      "locator": "Nevada"
+    },
+    "US-NV:labor_agency:014e3254f686": {
+      "category": "labor_agency",
+      "title": "labor.nv.gov",
+      "url": "http://labor.nv.gov/",
+      "directory": "labor",
+      "locator": "Nevada"
+    },
+    "US-NV:commercial_code:7d0beae25e81": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://www.leg.state.nv.us/NRS/NRS-104.html",
+      "directory": "ucc",
+      "locator": "Nevada"
+    },
+    "US-NV:commercial_code:39437b2ba3b1": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code- Additional Articles",
+      "url": "http://www.leg.state.nv.us/NRS/NRS-104A.html",
+      "directory": "ucc",
+      "locator": "Nevada"
+    },
+    "US-NV:civil_rules:82a3b27dd22f": {
+      "category": "civil_rules",
+      "title": "Justice Courts and Civil Procedure",
+      "url": "http://www.leg.state.nv.us/NRS/Index.cfm",
+      "directory": "procedure",
+      "locator": "Nevada"
+    },
+    "US-NV:consumer_agency:7a5c58663716": {
+      "category": "consumer_agency",
+      "title": "Nevada (NV)",
+      "url": "https://ag.nv.gov/About/Consumer_Protection/Bureau_of_Consumer_Protection/",
+      "directory": "consumer",
+      "locator": "Nevada (NV)"
+    },
+    "US-NV:judiciary:98a7da68b2e9": {
+      "category": "judiciary",
+      "title": "Nevada Judiciary",
+      "url": "https://nvcourts.gov/",
+      "directory": "doj-NV",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-NV:court_directory:98a7da68b2e9": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://nvcourts.gov/",
+      "directory": "doj-NV",
+      "locator": "Supreme Court"
+    },
+    "US-NV:court_rules:577c6fa92f55": {
+      "category": "court_rules",
+      "title": "Court Rules",
+      "url": "http://www.leg.state.nv.us/COURTRULES/",
+      "directory": "doj-NV",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-NV:statutes:90e09169f406": {
+      "category": "statutes",
+      "title": "Revised Statutes Search",
+      "url": "http://search.leg.state.nv.us/NRS/NRS.html",
+      "directory": "doj-NV",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NV:statutes:283d3d0a2ea1": {
+      "category": "statutes",
+      "title": "Revised Statutes Browse",
+      "url": "http://www.leg.state.nv.us/NRS/",
+      "directory": "doj-NV",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NV:regulations:d85e58131ee7": {
+      "category": "regulations",
+      "title": "Administrative Code Search",
+      "url": "http://search.leg.state.nv.us/NAC/NAC.html",
+      "directory": "doj-NV",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-NV:regulations:96fca3cb6da7": {
+      "category": "regulations",
+      "title": "Administrative Code Browse",
+      "url": "http://www.leg.state.nv.us/NAC/",
+      "directory": "doj-NV",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-NV:regulations:907d0dc18039": {
+      "category": "regulations",
+      "title": "Register Search",
+      "url": "http://search.leg.state.nv.us/Register/Register.html",
+      "directory": "doj-NV",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-NV:regulations:c9c93dfaa6cb": {
+      "category": "regulations",
+      "title": "Register Browse",
+      "url": "http://www.leg.state.nv.us/register/",
+      "directory": "doj-NV",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-NV:pi_limitations:34f82f4d76cf": {
+      "category": "pi_limitations",
+      "title": "Nev. Rev. Stat. § 11.190(4)(e)",
+      "url": "https://www.leg.state.nv.us/NRS/NRS-011.html#NRS011Sec190",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.leg.state.nv.us/NRS/NRS-011.html",
+        "retrieved_at": "2026-11-17T19:33:59.751169+00:00",
+        "http_status": "200",
+        "sha256": "e21bdde020606c1ae00134b3739ae29c6ed5817d47c6295a47e1239a25a31d83",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NV:written_contract_limitations:34f82f4d76cf": {
+      "category": "written_contract_limitations",
+      "title": "Nev. Rev. Stat. § 11.190(1)(b)",
+      "url": "https://www.leg.state.nv.us/NRS/NRS-011.html#NRS011Sec190",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.leg.state.nv.us/NRS/NRS-011.html",
+        "retrieved_at": "2026-11-17T19:33:59.751169+00:00",
+        "http_status": "200",
+        "sha256": "e21bdde020606c1ae00134b3739ae29c6ed5817d47c6295a47e1239a25a31d83",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NV:oral_contract_limitations:34f82f4d76cf": {
+      "category": "oral_contract_limitations",
+      "title": "Nev. Rev. Stat. § 11.190(2)(c)",
+      "url": "https://www.leg.state.nv.us/NRS/NRS-011.html#NRS011Sec190",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.leg.state.nv.us/NRS/NRS-011.html",
+        "retrieved_at": "2026-11-17T19:33:59.751169+00:00",
+        "http_status": "200",
+        "sha256": "e21bdde020606c1ae00134b3739ae29c6ed5817d47c6295a47e1239a25a31d83",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NV:small_claims:60474239c723": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://nvcourts.gov/aoc/discover_nevada_justice/discover_nevada_justice_articles/small_claims_court",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://nvcourts.gov/aoc/discover_nevada_justice/discover_nevada_justice_articles/small_claims_court",
+        "retrieved_at": "2026-11-17T19:42:23.708316+00:00",
+        "http_status": "000",
+        "sha256": null,
+        "health": "unreachable"
+      }
+    },
+    "US-NV:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 28"
+    },
+    "US-NV:deposit:60f06d6f11e4": {
+      "category": "deposit",
+      "title": "Residential tenancy publication",
+      "url": "https://www.leg.state.nv.us/nrs/NRS-118A.html",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.leg.state.nv.us/nrs/NRS-118A.html",
+        "retrieved_at": "2026-11-17T19:42:48.807587+00:00",
+        "http_status": "200",
+        "sha256": "388d0c493c7783ed38d48574dce1fcffd0d6b70781e9b97e4eabc6430d94e98e",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NV:debtLaw:292b6f13c377": {
+      "category": "debtLaw",
+      "title": "Debt collection publication",
+      "url": "https://www.leg.state.nv.us/NRS/NRS-649.html",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.leg.state.nv.us/NRS/NRS-649.html",
+        "retrieved_at": "2026-11-17T19:42:48.992900+00:00",
+        "http_status": "200",
+        "sha256": "665709e6a9ac2e7a860b62b2e967417122c9484f59bc0970999d190fbd788896",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NV:consumerLaw:781e3f0cc5d3": {
+      "category": "consumerLaw",
+      "title": "Consumer protection publication",
+      "url": "https://www.leg.state.nv.us/Division/Legal/LawLibrary/NRs/NRS-598.html",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.leg.state.nv.us/Division/Legal/LawLibrary/NRs/NRS-598.html",
+        "retrieved_at": "2026-11-17T19:42:48.491590+00:00",
+        "http_status": "200",
+        "sha256": "c9ce1ce2687dc7a9ece7a0f13b1a0e893da9f00c67031554cb237bc2011a7f76",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NV:commencement:ee4d83b80f13": {
+      "category": "commencement",
+      "title": "Nev. R. Civ. P. 3",
+      "url": "https://www.leg.state.nv.us/courtrules/nrcp.html",
+      "directory": null,
+      "locator": "Nev. R. Civ. P. 3",
+      "language": "en",
+      "publisher_role": "official_rule_publication",
+      "observation": {
+        "health": "retained_snapshot",
+        "retrieved_at": "2026-11-17T20:14:25.244018+00:00",
+        "sha256": "99812c5ef90fa83a0b5ded17bb4f1649316b2e1c3cc48c9e91eaca63e2479065"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-NV:court:fce668e71fef",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-NV:court_directory:98a7da68b2e9"
+    },
+    {
+      "id": "US-NV:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-NV:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NV:court:0b3db1cdefd8",
+      "name": "Justice",
+      "level": "limited_trial",
+      "source_id": "US-NV:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NV:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-NV:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Nev. Rev. Stat. § 11.190(4)(e)",
+      "source_id": "US-NV:pi_limitations:34f82f4d76cf",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Nev. Rev. Stat. § 11.190(1)(b)",
+      "source_id": "US-NV:written_contract_limitations:34f82f4d76cf",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Nev. Rev. Stat. § 11.190(2)(c)",
+      "source_id": "US-NV:oral_contract_limitations:34f82f4d76cf",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Nev. Rev. Stat. § 40.2545. Unlawful detainer: sealing of eviction case court file under certain circumstances; notice to surrender must not be made available for public inspection",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "0ebfeb732d1808c0f185b2861fcab0": {
+      "source_id": "US-NV:commencement:ee4d83b80f13",
+      "citation": "Nev. R. Civ. P. 3",
+      "authority_type": "court_rule",
+      "language": "en",
+      "text": "Rule 3. Commencing an Action A civil action is commenced by filing a complaint with the court.",
+      "text_sha256": "403ae9d28c182ba9c09c3d9ae3c8ef9c40ae80a845659a183685d0b1d2908a33",
+      "publisher_sha256": "99812c5ef90fa83a0b5ded17bb4f1649316b2e1c3cc48c9e91eaca63e2479065",
+      "retrieved_at": "2026-11-17T20:14:25.244018+00:00",
+      "currentness": "unresolved"
+    }
+  }
+}

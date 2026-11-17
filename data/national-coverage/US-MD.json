@@ -1,0 +1,310 @@
+{
+  "jurisdiction": "US-MD",
+  "version": "1",
+  "sources": {
+    "US-MD:statutes:b8367033c56b": {
+      "category": "statutes",
+      "title": "Maryland Statutes",
+      "url": "http://mgaleg.maryland.gov/webmga/frmStatutes.aspx",
+      "directory": "codes",
+      "locator": "Maryland"
+    },
+    "US-MD:constitution:6f563a533cca": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://mgaleg.maryland.gov/Pubs/LegisLegal/2015-constitution-maryland-us.pdf",
+      "directory": "codes",
+      "locator": "Maryland"
+    },
+    "US-MD:legislature:6745967e3b59": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://mgaleg.maryland.gov/webmga/",
+      "directory": "codes",
+      "locator": "Maryland"
+    },
+    "US-MD:labor_agency:d1901ae64c8b": {
+      "category": "labor_agency",
+      "title": "www.labor.maryland.gov",
+      "url": "https://www.labor.maryland.gov",
+      "directory": "labor",
+      "locator": "Maryland"
+    },
+    "US-MD:commercial_code:3650f95eb4dc": {
+      "category": "commercial_code",
+      "title": "Searchable Index- See Commercial Law Title 1",
+      "url": "http://www.lexisnexis.com/hottopics/mdcode/",
+      "directory": "ucc",
+      "locator": "Maryland"
+    },
+    "US-MD:civil_rules:3650f95eb4dc": {
+      "category": "civil_rules",
+      "title": "Searchable Index- See Generally Maryland Rules",
+      "url": "http://www.lexisnexis.com/hottopics/mdcode/",
+      "directory": "procedure",
+      "locator": "Maryland"
+    },
+    "US-MD:consumer_agency:706ece3db64a": {
+      "category": "consumer_agency",
+      "title": "Maryland (MD)",
+      "url": "https://www.marylandattorneygeneral.gov/Pages/CPD/default.aspx",
+      "directory": "consumer",
+      "locator": "Maryland (MD)"
+    },
+    "US-MD:judiciary:28bfc8471d6d": {
+      "category": "judiciary",
+      "title": "Judicial Branch",
+      "url": "http://www.courts.state.md.us/",
+      "directory": "doj-MD",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-MD:court_directory:47e60c816c66": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "http://www.courts.state.md.us/coappeals/",
+      "directory": "doj-MD",
+      "locator": "Court of Appeals"
+    },
+    "US-MD:court_directory:1583b337208d": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "http://www.courts.state.md.us/circuit/",
+      "directory": "doj-MD",
+      "locator": "Circuit Courts"
+    },
+    "US-MD:court_directory:9a9a209f9613": {
+      "category": "court_directory",
+      "title": "District Court",
+      "url": "http://www.courts.state.md.us/district/index.html",
+      "directory": "doj-MD",
+      "locator": "District Court"
+    },
+    "US-MD:court_directory:c88b04ef53fa": {
+      "category": "court_directory",
+      "title": "Tax Court",
+      "url": "https://taxcourt.maryland.gov/",
+      "directory": "doj-MD",
+      "locator": "Tax Court"
+    },
+    "US-MD:forms:116b0e8047bf": {
+      "category": "forms",
+      "title": "Maryland Court Forms Finder",
+      "url": "http://www.courts.state.md.us/courtforms/index.html",
+      "directory": "doj-MD",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-MD:forms:8add94d84a3f": {
+      "category": "forms",
+      "title": "Tax Court Forms",
+      "url": "https://taxcourt.maryland.gov/PetitionForms.shtml",
+      "directory": "doj-MD",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-MD:constitution:2c806b600b55": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://msa.maryland.gov/msa/mdmanual/43const/html/const.html",
+      "directory": "doj-MD",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MD:statutes:4503c0d698ef": {
+      "category": "statutes",
+      "title": "Statutes",
+      "url": "http://mgaleg.maryland.gov/webmga/frmStatutes.aspx?pid=statpage&tab=subject5",
+      "directory": "doj-MD",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MD:statutes:a8399fb5d8d1": {
+      "category": "statutes",
+      "title": "Session Laws from the Maryland State Archives",
+      "url": "http://aomol.msa.maryland.gov/html/laws.html",
+      "directory": "doj-MD",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MD:regulations:fd05fa3eb3c6": {
+      "category": "regulations",
+      "title": "Code of Maryland Regulations",
+      "url": "https://dsd.maryland.gov/Pages/COMARHome.aspx",
+      "directory": "doj-MD",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-MD:regulations:1d2484a66f7b": {
+      "category": "regulations",
+      "title": "Maryland Register Online",
+      "url": "https://dsd.maryland.gov/Pages/MDRegister.aspx",
+      "directory": "doj-MD",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-MD:pi_limitations:d751546e8e10": {
+      "category": "pi_limitations",
+      "title": "Md. Code, Courts & Judicial Proceedings § 5-101",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&section=5-101&enactments=false",
+      "directory": null,
+      "locator": "Md. Code, Courts & Judicial Proceedings § 5-101",
+      "observation": {
+        "requested_url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&section=5-101&enactments=false",
+        "retrieved_at": "2026-11-17T19:33:57.967038+00:00",
+        "http_status": "200",
+        "sha256": "9b0d24980d89b383a21b33f73d2cd51299524d5c3780282c68c0712fee9bea74",
+        "health": "healthy"
+      }
+    },
+    "US-MD:written_contract_limitations:d751546e8e10": {
+      "category": "written_contract_limitations",
+      "title": "Md. Code, Cts. & Jud. Proc. § 5-101",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&section=5-101&enactments=false",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&section=5-101&enactments=false",
+        "retrieved_at": "2026-11-17T19:33:57.967038+00:00",
+        "http_status": "200",
+        "sha256": "9b0d24980d89b383a21b33f73d2cd51299524d5c3780282c68c0712fee9bea74",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MD:oral_contract_limitations:d751546e8e10": {
+      "category": "oral_contract_limitations",
+      "title": "Md. Code, Cts. & Jud. Proc. § 5-101",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&section=5-101&enactments=false",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&section=5-101&enactments=false",
+        "retrieved_at": "2026-11-17T19:33:57.967038+00:00",
+        "http_status": "200",
+        "sha256": "9b0d24980d89b383a21b33f73d2cd51299524d5c3780282c68c0712fee9bea74",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MD:small_claims:b0fce44a5779": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.mdcourts.gov/legalhelp/smallclaims",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.mdcourts.gov/legalhelp/smallclaims",
+        "retrieved_at": "2026-11-17T19:42:52.451948+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-MD:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    },
+    "US-MD:wageLaw:2d16f46a0577": {
+      "category": "wageLaw",
+      "title": "Md. Code, Labor and Employment § 3-502",
+      "url": "https://mgaleg.maryland.gov/2024RS/Statute_Web/gle/3-502.pdf",
+      "directory": null,
+      "locator": "Md. Code, Labor and Employment § 3-502"
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-MD:court:ec122365bf76",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-MD:court_directory:47e60c816c66"
+    },
+    {
+      "id": "US-MD:court:facc060ddf3c",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-MD:court_directory:1583b337208d"
+    },
+    {
+      "id": "US-MD:court:7bbc63693e7e",
+      "name": "District Court",
+      "level": "trial_directory",
+      "source_id": "US-MD:court_directory:9a9a209f9613"
+    },
+    {
+      "id": "US-MD:court:7230a7b278e1",
+      "name": "Tax Court",
+      "level": "trial_directory",
+      "source_id": "US-MD:court_directory:c88b04ef53fa"
+    },
+    {
+      "id": "US-MD:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-MD:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MD:court:3c9c83e81fef",
+      "name": "District",
+      "level": "limited_trial",
+      "source_id": "US-MD:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MD:court:388a78e13f43",
+      "name": "Orphan’s",
+      "level": "limited_trial",
+      "source_id": "US-MD:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Md. Code, Cts. & Jud. Proc. § 5-101",
+      "source_id": "US-MD:pi_limitations:d751546e8e10",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Md. Code, Cts. & Jud. Proc. § 5-101",
+      "source_id": "US-MD:written_contract_limitations:d751546e8e10",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Md. Code, Cts. & Jud. Proc. § 5-101",
+      "source_id": "US-MD:oral_contract_limitations:d751546e8e10",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Md. Code, Real Property § 8A-101. Definitions; Md. Code, Real Property § 8-401. Nonpayment of rent",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "b849952ff2cdca764969147958b75e": {
+      "citation": "Md. Code, Courts & Judicial Proceedings § 5-101",
+      "source_id": "US-MD:pi_limitations:d751546e8e10",
+      "authority_type": "statute",
+      "text": "A civil action at law shall be filed within three years from the date it accrues unless another provision of the Code provides a different period of time within which an action shall be commenced.",
+      "text_sha256": "8a5ad4f7f83de56966e74fe94c5540bf4c9b87c3ee2527ac65eea3d213f19e71",
+      "publisher_sha256": "9b0d24980d89b383a21b33f73d2cd51299524d5c3780282c68c0712fee9bea74",
+      "retrieved_at": "2026-11-17T19:33:57.967038+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "d32f25383a8eb57efec7d8525cf9f8": {
+      "citation": "Md. Code, Labor and Employment § 3-502",
+      "source_id": "US-MD:wageLaw:2d16f46a0577",
+      "authority_type": "statute",
+      "text": "(a) (1) Each employer: (i) shall set regular pay periods; and (ii) except as provided in paragraph (2) of this subsection, shall pay each employee at least once in every 2 weeks or twice in each month. (2) An employer may pay an administrative, executive, or professional employee less frequently than required under paragraph (1)(ii) of this subsection.",
+      "text_sha256": "da4ac0070bc4ebcb1b27384ecce5ddbd6ddf26af61e21aea8070f5da91e6c0e9",
+      "publisher_sha256": "60c9791a738c7acae49090dd9fa7c7b9f83240d2b90323ef141f6b5cea065231",
+      "retrieved_at": "2026-11-17T19:42:03.930259+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    }
+  }
+}

@@ -1,0 +1,499 @@
+{
+  "jurisdiction": "US-TX",
+  "version": "1",
+  "sources": {
+    "US-TX:statutes:cd5b530a25fa": {
+      "category": "statutes",
+      "title": "Texas Codes and Statutes",
+      "url": "http://www.statutes.legis.state.tx.us/",
+      "directory": "codes",
+      "locator": "Texas"
+    },
+    "US-TX:constitution:4de4fbd9d6ae": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.constitution.legis.state.tx.us/",
+      "directory": "codes",
+      "locator": "Texas"
+    },
+    "US-TX:legislature:c06e8a811131": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.legis.state.tx.us/",
+      "directory": "codes",
+      "locator": "Texas"
+    },
+    "US-TX:labor_agency:d6ad2c1b2692": {
+      "category": "labor_agency",
+      "title": "www.twc.texas.gov/",
+      "url": "https://www.twc.texas.gov/",
+      "directory": "labor",
+      "locator": "Texas"
+    },
+    "US-TX:commercial_code:db1e4e3d5919": {
+      "category": "commercial_code",
+      "title": "Business and Commerce Code",
+      "url": "http://www.statutes.legis.state.tx.us?link=BC",
+      "directory": "ucc",
+      "locator": "Texas"
+    },
+    "US-TX:civil_rules:79c4c8500341": {
+      "category": "civil_rules",
+      "title": "Civil Practice and Remedies Code",
+      "url": "http://www.statutes.legis.state.tx.us?link=CP",
+      "directory": "procedure",
+      "locator": "Texas"
+    },
+    "US-TX:consumer_agency:f4a090e6cec5": {
+      "category": "consumer_agency",
+      "title": "Texas (TX)",
+      "url": "https://www.texasattorneygeneral.gov/consumer-protection",
+      "directory": "consumer",
+      "locator": "Texas (TX)"
+    },
+    "US-TX:judiciary:910596ce2bbd": {
+      "category": "judiciary",
+      "title": "Texas Courts Online",
+      "url": "https://www.txcourts.gov/",
+      "directory": "doj-TX",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-TX:judiciary:0d2ed8dca161": {
+      "category": "judiciary",
+      "title": "Court Activity and Reporting and Directory System",
+      "url": "https://www.txcourts.gov/oca",
+      "directory": "doj-TX",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-TX:judiciary:062959357d74": {
+      "category": "judiciary",
+      "title": "Judical Directory",
+      "url": "https://card.txcourts.gov/DirectorySearch.aspx",
+      "directory": "doj-TX",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-TX:court_directory:cace054335eb": {
+      "category": "court_directory",
+      "title": "Texas Supreme Court",
+      "url": "https://www.txcourts.gov/supreme",
+      "directory": "doj-TX",
+      "locator": "Texas Supreme Court"
+    },
+    "US-TX:court_directory:bfb877954bfc": {
+      "category": "court_directory",
+      "title": "Third Court of Appeals (Austin)",
+      "url": "https://www.txcourts.gov/3rdcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Third Court of Appeals (Austin)"
+    },
+    "US-TX:court_directory:1ce37e1ff81d": {
+      "category": "court_directory",
+      "title": "Fourth Court of Appeals (San Antonio)",
+      "url": "https://www.txcourts.gov/4thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Fourth Court of Appeals (San Antonio)"
+    },
+    "US-TX:court_directory:fd970d38517d": {
+      "category": "court_directory",
+      "title": "Fifth Court of Appeals (Dallas)",
+      "url": "https://www.txcourts.gov/5thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Fifth Court of Appeals (Dallas)"
+    },
+    "US-TX:court_directory:d8a8d027c3b7": {
+      "category": "court_directory",
+      "title": "Sixth Court of Appeals (Texarkana)",
+      "url": "https://www.txcourts.gov/6thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Sixth Court of Appeals (Texarkana)"
+    },
+    "US-TX:court_directory:50a1f1e6f6a0": {
+      "category": "court_directory",
+      "title": "Seventh Court of Appeals (Amarillo)",
+      "url": "https://www.txcourts.gov/7thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Seventh Court of Appeals (Amarillo)"
+    },
+    "US-TX:court_directory:2339930e0f58": {
+      "category": "court_directory",
+      "title": "Eighth Court of Appeals (El Paso)",
+      "url": "https://www.txcourts.gov/8thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Eighth Court of Appeals (El Paso)"
+    },
+    "US-TX:court_directory:480649e59804": {
+      "category": "court_directory",
+      "title": "Ninth Court of Appeals (Beaumont)",
+      "url": "https://www.txcourts.gov/9thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Ninth Court of Appeals (Beaumont)"
+    },
+    "US-TX:court_directory:e2b46f9b9402": {
+      "category": "court_directory",
+      "title": "Tenth Court of Appeals (Waco)",
+      "url": "https://www.txcourts.gov/10thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Tenth Court of Appeals (Waco)"
+    },
+    "US-TX:court_directory:6ba3c126fe2a": {
+      "category": "court_directory",
+      "title": "Eleventh Court of Appeals (Eastland)",
+      "url": "https://www.txcourts.gov/11thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Eleventh Court of Appeals (Eastland)"
+    },
+    "US-TX:court_directory:cd0bb2c055f2": {
+      "category": "court_directory",
+      "title": "Twelfth Court of Appeals (Tyler)",
+      "url": "https://www.txcourts.gov/12thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Twelfth Court of Appeals (Tyler)"
+    },
+    "US-TX:court_directory:e6a7ead13393": {
+      "category": "court_directory",
+      "title": "Thirteenth Court of Appeals (Corpus Christi)",
+      "url": "https://www.txcourts.gov/13thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Thirteenth Court of Appeals (Corpus Christi)"
+    },
+    "US-TX:court_directory:653fcee8f731": {
+      "category": "court_directory",
+      "title": "Fourteenth Court of Appeals (Houston)",
+      "url": "https://www.txcourts.gov/14thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Fourteenth Court of Appeals (Houston)"
+    },
+    "US-TX:court_directory:971e15ae0337": {
+      "category": "court_directory",
+      "title": "Trial Courts",
+      "url": "https://www.txcourts.gov/courts/overview/about-texas-courts/trial-courts.aspx",
+      "directory": "doj-TX",
+      "locator": "Trial Courts"
+    },
+    "US-TX:court_directory:222d3903f3e2": {
+      "category": "court_directory",
+      "title": "Municipal Courts Education Center",
+      "url": "http://www.tmcec.com/",
+      "directory": "doj-TX",
+      "locator": "Municipal Courts Education Center"
+    },
+    "US-TX:court_directory:9ca4a2810fef": {
+      "category": "court_directory",
+      "title": "Justice of the Peace Courts",
+      "url": "https://ballotpedia.org/Texas_Justice_of_the_Peace_Courts",
+      "directory": "doj-TX",
+      "locator": "Justice of the Peace Courts"
+    },
+    "US-TX:forms:672172fd8227": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "https://www.txcourts.gov/rules-forms/forms.aspx",
+      "directory": "doj-TX",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-TX:constitution:9ba91226ab6f": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://statutes.capitol.texas.gov/",
+      "directory": "doj-TX",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-TX:constitution:d72e36174f5c": {
+      "category": "constitution",
+      "title": "Constitutional Amendments",
+      "url": "https://lrl.texas.gov/legis/constAmends/lrlhome.cfm",
+      "directory": "doj-TX",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-TX:statutes:9ba91226ab6f": {
+      "category": "statutes",
+      "title": "Statutes",
+      "url": "https://statutes.capitol.texas.gov/",
+      "directory": "doj-TX",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-TX:statutes:70b182e0909b": {
+      "category": "statutes",
+      "title": "Laws and Resolutions Archive",
+      "url": "http://texinfo.library.unt.edu/sessionlaws/",
+      "directory": "doj-TX",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-TX:statutes:e2d4fb15e1a4": {
+      "category": "statutes",
+      "title": "Gammel's The Laws of Texas",
+      "url": "http://texinfo.library.unt.edu/lawsoftexas/",
+      "directory": "doj-TX",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-TX:regulations:daa46eff389a": {
+      "category": "regulations",
+      "title": "Administrative Code",
+      "url": "http://www.sos.state.tx.us/tac/index.shtml",
+      "directory": "doj-TX",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-TX:regulations:1bec4ffb6409": {
+      "category": "regulations",
+      "title": "Register",
+      "url": "http://www.sos.state.tx.us/texreg/index.shtml",
+      "directory": "doj-TX",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-TX:regulations:e60079a41096": {
+      "category": "regulations",
+      "title": "Archived Texas Register",
+      "url": "http://texinfo.library.unt.edu/texasregister/",
+      "directory": "doj-TX",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-TX:pi_limitations:8ea4e32455f7": {
+      "category": "pi_limitations",
+      "title": "Tex. Civ. Prac. & Rem. Code § 16.003(a)",
+      "url": "https://statutes.capitol.texas.gov/Docs/CP/htm/CP.16.htm#16.003",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://statutes.capitol.texas.gov/Docs/CP/htm/CP.16.htm",
+        "retrieved_at": "2026-11-17T19:34:02.809119+00:00",
+        "http_status": "200",
+        "sha256": "dbfba8a96dc3cd584157ca66aaafdf67e0ed15dd5a0c8a58f3d4bd0f109fc646",
+        "health": "manual_review_required"
+      }
+    },
+    "US-TX:written_contract_limitations:f25c8e3be43e": {
+      "category": "written_contract_limitations",
+      "title": "Tex. Civ. Prac. & Rem. Code §§ 16.004(a)(3), 16.051",
+      "url": "https://statutes.capitol.texas.gov/Docs/CP/htm/CP.16.htm#16.004",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://statutes.capitol.texas.gov/Docs/CP/htm/CP.16.htm",
+        "retrieved_at": "2026-11-17T19:34:02.809119+00:00",
+        "http_status": "200",
+        "sha256": "dbfba8a96dc3cd584157ca66aaafdf67e0ed15dd5a0c8a58f3d4bd0f109fc646",
+        "health": "manual_review_required"
+      }
+    },
+    "US-TX:oral_contract_limitations:f25c8e3be43e": {
+      "category": "oral_contract_limitations",
+      "title": "Tex. Civ. Prac. & Rem. Code §§ 16.004(a)(3), 16.051",
+      "url": "https://statutes.capitol.texas.gov/Docs/CP/htm/CP.16.htm#16.004",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://statutes.capitol.texas.gov/Docs/CP/htm/CP.16.htm",
+        "retrieved_at": "2026-11-17T19:34:02.809119+00:00",
+        "http_status": "200",
+        "sha256": "dbfba8a96dc3cd584157ca66aaafdf67e0ed15dd5a0c8a58f3d4bd0f109fc646",
+        "health": "manual_review_required"
+      }
+    },
+    "US-TX:small_claims:b15115ec3eae": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://guides.sll.texas.gov/small-claims/legal-forms",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://guides.sll.texas.gov/small-claims/legal-forms",
+        "retrieved_at": "2026-11-17T19:41:56.368530+00:00",
+        "http_status": "200",
+        "sha256": "537f4a62dd04474d19e4be882276f310000f038615d5666dda1e6861dd1b0733",
+        "health": "manual_review_required"
+      }
+    },
+    "US-TX:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 29"
+    },
+    "US-TX:deposit:3e87864ece1d": {
+      "category": "deposit",
+      "title": "Residential tenancy publication",
+      "url": "https://guides.sll.texas.gov/landlord-tenant-law/security-deposits",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://guides.sll.texas.gov/landlord-tenant-law/security-deposits",
+        "retrieved_at": "2026-11-17T19:41:56.259163+00:00",
+        "http_status": "200",
+        "sha256": "14b72271a41249770ae134b778656e610aa8fb2fc2a094a67c7b15efd156d257",
+        "health": "manual_review_required"
+      }
+    },
+    "US-TX:consumerLaw:1183b44bdff1": {
+      "category": "consumerLaw",
+      "title": "Consumer protection publication",
+      "url": "https://guides.sll.texas.gov/consumer-protection/deceptive-practices",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://guides.sll.texas.gov/consumer-protection/deceptive-practices",
+        "retrieved_at": "2026-11-17T19:41:56.296825+00:00",
+        "http_status": "200",
+        "sha256": "b0effb0424090d64d885d84c2445bdd965fd16080548a2640dd6f57e40494b18",
+        "health": "manual_review_required"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-TX:court:ed65acfb9683",
+      "name": "Texas Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-TX:court_directory:cace054335eb"
+    },
+    {
+      "id": "US-TX:court:791aae998d97",
+      "name": "Third Court of Appeals (Austin)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:bfb877954bfc"
+    },
+    {
+      "id": "US-TX:court:6991bc21849b",
+      "name": "Fourth Court of Appeals (San Antonio)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:1ce37e1ff81d"
+    },
+    {
+      "id": "US-TX:court:d490e009bdb7",
+      "name": "Fifth Court of Appeals (Dallas)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:fd970d38517d"
+    },
+    {
+      "id": "US-TX:court:37bead0170a0",
+      "name": "Sixth Court of Appeals (Texarkana)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:d8a8d027c3b7"
+    },
+    {
+      "id": "US-TX:court:bc076b28e7f0",
+      "name": "Seventh Court of Appeals (Amarillo)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:50a1f1e6f6a0"
+    },
+    {
+      "id": "US-TX:court:e31a06709453",
+      "name": "Eighth Court of Appeals (El Paso)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:2339930e0f58"
+    },
+    {
+      "id": "US-TX:court:552a7d2e788d",
+      "name": "Ninth Court of Appeals (Beaumont)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:480649e59804"
+    },
+    {
+      "id": "US-TX:court:a9de7061a10e",
+      "name": "Tenth Court of Appeals (Waco)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:e2b46f9b9402"
+    },
+    {
+      "id": "US-TX:court:554ea6582639",
+      "name": "Eleventh Court of Appeals (Eastland)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:6ba3c126fe2a"
+    },
+    {
+      "id": "US-TX:court:91ebb02cfc89",
+      "name": "Twelfth Court of Appeals (Tyler)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:cd0bb2c055f2"
+    },
+    {
+      "id": "US-TX:court:3654e35f2163",
+      "name": "Thirteenth Court of Appeals (Corpus Christi)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:e6a7ead13393"
+    },
+    {
+      "id": "US-TX:court:3de6a886827c",
+      "name": "Fourteenth Court of Appeals (Houston)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:653fcee8f731"
+    },
+    {
+      "id": "US-TX:court:a9c476231efc",
+      "name": "Trial Courts",
+      "level": "trial_directory",
+      "source_id": "US-TX:court_directory:971e15ae0337"
+    },
+    {
+      "id": "US-TX:court:f7c9eae62261",
+      "name": "Municipal Courts Education Center",
+      "level": "trial_directory",
+      "source_id": "US-TX:court_directory:222d3903f3e2"
+    },
+    {
+      "id": "US-TX:court:6473970afac7",
+      "name": "Justice of the Peace Courts",
+      "level": "trial_directory",
+      "source_id": "US-TX:court_directory:9ca4a2810fef"
+    },
+    {
+      "id": "US-TX:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-TX:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-TX:court:a19a9ba124c8",
+      "name": "County-level",
+      "level": "limited_trial",
+      "source_id": "US-TX:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-TX:court:130cafc44268",
+      "name": "Justice of the Peace",
+      "level": "limited_trial",
+      "source_id": "US-TX:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-TX:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-TX:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Tex. Civ. Prac. & Rem. Code § 16.003(a)",
+      "source_id": "US-TX:pi_limitations:8ea4e32455f7",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Tex. Civ. Prac. & Rem. Code §§ 16.004(a)(3), 16.051",
+      "source_id": "US-TX:written_contract_limitations:f25c8e3be43e",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Tex. Civ. Prac. & Rem. Code §§ 16.004(a)(3), 16.051",
+      "source_id": "US-TX:oral_contract_limitations:f25c8e3be43e",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Tex. Property Code § 24.002. Forcible Detainer.",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ]
+}

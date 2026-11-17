@@ -1,0 +1,327 @@
+{
+  "jurisdiction": "US-AL",
+  "version": "1",
+  "sources": {
+    "US-AL:statutes:0c885c814123": {
+      "category": "statutes",
+      "title": "Code of Alabama 1975",
+      "url": "http://alisondb.legislature.state.al.us/alison/codeofalabama/1975/coatoc.htm",
+      "directory": "codes",
+      "locator": "Alabama"
+    },
+    "US-AL:constitution:c55ad4968de8": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://alisondb.legislature.state.al.us/ALISON_LCC/CodeOfAlabama/Constitution/1901/toc.htm",
+      "directory": "codes",
+      "locator": "Alabama"
+    },
+    "US-AL:legislature:1ce8bb830496": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://alisondb.legislature.state.al.us/alison/alisonlogin.aspx?SESSIONOID=1065",
+      "directory": "codes",
+      "locator": "Alabama"
+    },
+    "US-AL:labor_agency:140bc6e27554": {
+      "category": "labor_agency",
+      "title": "www.labor.alabama.gov",
+      "url": "http://www.labor.alabama.gov/",
+      "directory": "labor",
+      "locator": "Alabama"
+    },
+    "US-AL:business_registration:24c19dac17ae": {
+      "category": "business_registration",
+      "title": "Alabama Secretary of State",
+      "url": "http://sos.alabama.gov/business-services",
+      "directory": "business",
+      "locator": "Alabama"
+    },
+    "US-AL:commercial_code:4a012bdb5da1": {
+      "category": "commercial_code",
+      "title": "Title 7, Commercial Code",
+      "url": "http://alisondb.legislature.state.al.us/alison/CodeOfAlabama/1975/3997.htm",
+      "directory": "ucc",
+      "locator": "Alabama"
+    },
+    "US-AL:civil_rules:e791c1231b4c": {
+      "category": "civil_rules",
+      "title": "Rules of Civil Procedure",
+      "url": "https://judicial.alabama.gov/library/CivilProcedure",
+      "directory": "procedure",
+      "locator": "Alabama"
+    },
+    "US-AL:consumer_agency:dcab7ed88a0a": {
+      "category": "consumer_agency",
+      "title": "Alabama (AL)",
+      "url": "https://www.alabamaag.gov/consumer-complaint/",
+      "directory": "consumer",
+      "locator": "Alabama (AL)"
+    },
+    "US-AL:judiciary:ab1446a2240b": {
+      "category": "judiciary",
+      "title": "Alabama Judicial System",
+      "url": "http://judicial.alabama.gov/",
+      "directory": "doj-AL",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-AL:court_directory:a8ff8ef214bd": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://judicial.alabama.gov/Appellate/SupremeCourt",
+      "directory": "doj-AL",
+      "locator": "Supreme Court"
+    },
+    "US-AL:opinions:b0e67def7d89": {
+      "category": "opinions",
+      "title": "Supreme Court Decisions and Opinions (Alabama Sup. Ct.)",
+      "url": "https://judicial.alabama.gov/decision/supremecourtdecisions",
+      "directory": "doj-AL",
+      "locator": "State and Local Courts / Supreme Court"
+    },
+    "US-AL:court_directory:b291a4f28379": {
+      "category": "court_directory",
+      "title": "Appellate Courts",
+      "url": "http://judicial.alabama.gov/Appellate/Index",
+      "directory": "doj-AL",
+      "locator": "Appellate Courts"
+    },
+    "US-AL:court_directory:3f2d378e78c7": {
+      "category": "court_directory",
+      "title": "Court of Civil Appeals",
+      "url": "http://judicial.alabama.gov/Appellate/CivilAppeals",
+      "directory": "doj-AL",
+      "locator": "Court of Civil Appeals"
+    },
+    "US-AL:court_directory:872d4c1fd13b": {
+      "category": "court_directory",
+      "title": "Court of Criminal Appeals",
+      "url": "http://judicial.alabama.gov/Appellate/CriminalAppeals",
+      "directory": "doj-AL",
+      "locator": "Court of Criminal Appeals"
+    },
+    "US-AL:forms:748c8315522f": {
+      "category": "forms",
+      "title": "Court Forms (Administrative Office of Courts)",
+      "url": "http://eforms.alacourt.gov/default.aspx",
+      "directory": "doj-AL",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-AL:constitution:497beea07fe2": {
+      "category": "constitution",
+      "title": "Alabama Constitution",
+      "url": "https://alison.legislature.state.al.us/constitution",
+      "directory": "doj-AL",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-AL:statutes:6f2a6f65fd23": {
+      "category": "statutes",
+      "title": "Code of Alabama",
+      "url": "https://alison.legislature.state.al.us/code-of-alabama",
+      "directory": "doj-AL",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-AL:pi_limitations:4f021ef2fb38": {
+      "category": "pi_limitations",
+      "title": "Ala. Code § 6-2-38(l)",
+      "url": "https://alison.legislature.state.al.us/code-of-alabama?section=6-2-38",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://alison.legislature.state.al.us/code-of-alabama?section=6-2-38",
+        "retrieved_at": "2026-11-17T19:33:54.959908+00:00",
+        "http_status": "200",
+        "sha256": "688759f9da1b9973e62d6bffdbb7ebb9dca1a424c4bc3225c9e15a1582095b9c",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AL:written_contract_limitations:4e21331ad0d3": {
+      "category": "written_contract_limitations",
+      "title": "Ala. Code § 6-2-34(4)",
+      "url": "https://alison.legislature.state.al.us/code-of-alabama?section=6-2-34",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://alison.legislature.state.al.us/code-of-alabama?section=6-2-34",
+        "retrieved_at": "2026-11-17T19:33:54.663709+00:00",
+        "http_status": "200",
+        "sha256": "3d82c2b5a27df5e350c9dfbf58f02ef10ee247c40044ff8490282d1b96c80b59",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AL:oral_contract_limitations:4e21331ad0d3": {
+      "category": "oral_contract_limitations",
+      "title": "Ala. Code § 6-2-34(9)",
+      "url": "https://alison.legislature.state.al.us/code-of-alabama?section=6-2-34",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://alison.legislature.state.al.us/code-of-alabama?section=6-2-34",
+        "retrieved_at": "2026-11-17T19:33:54.663709+00:00",
+        "http_status": "200",
+        "sha256": "3d82c2b5a27df5e350c9dfbf58f02ef10ee247c40044ff8490282d1b96c80b59",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AL:small_claims:29b5524bf55f": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://eforms.alacourt.gov/small-claims/",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://eforms.alacourt.gov/small-claims/",
+        "retrieved_at": "2026-11-17T19:41:54.174035+00:00",
+        "http_status": "200",
+        "sha256": "756d7a78ee12fc6c53c84b7834a409880aec824894822571561b90bc8fb03c47",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AL:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 26"
+    },
+    "US-AL:deposit:79b0fd85bacd": {
+      "category": "deposit",
+      "title": "Residential tenancy publication",
+      "url": "https://mobile.alacourt.gov/media/ccmhtoa0/universal-residential-landlord-and-tenant-act.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://mobile.alacourt.gov/media/ccmhtoa0/universal-residential-landlord-and-tenant-act.pdf",
+        "retrieved_at": "2026-11-17T19:42:06.120767+00:00",
+        "http_status": "200",
+        "sha256": "80d713b68b23b2a0f135dce7ba26dfa49e0121a5ba18a17b126880160e3e5d16",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AL:small_claim_form:d699289cd7f5": {
+      "category": "small_claim_form",
+      "title": "Statement of Claim (Complaint) - General",
+      "url": "https://eforms.alacourt.gov/media/fhjeaxgw/sm-1-statement-of-claim-complaint-general.pdf",
+      "directory": null,
+      "locator": "SM-01"
+    },
+    "US-AL:answer_form:76ea2314e846": {
+      "category": "answer_form",
+      "title": "Defendant's Answer",
+      "url": "https://eforms.alacourt.gov/media/df4mch23/sm-3-defendant-s-answer.pdf",
+      "directory": null,
+      "locator": "SM-03"
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-AL:court:364e30e7f9d7",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-AL:court_directory:a8ff8ef214bd"
+    },
+    {
+      "id": "US-AL:court:aca75cc088f4",
+      "name": "Appellate Courts",
+      "level": "appellate_directory",
+      "source_id": "US-AL:court_directory:b291a4f28379"
+    },
+    {
+      "id": "US-AL:court:399439ea7a6b",
+      "name": "Court of Civil Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-AL:court_directory:3f2d378e78c7"
+    },
+    {
+      "id": "US-AL:court:0cf422c8f472",
+      "name": "Court of Criminal Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-AL:court_directory:872d4c1fd13b"
+    },
+    {
+      "id": "US-AL:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-AL:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-AL:court:3c9c83e81fef",
+      "name": "District",
+      "level": "limited_trial",
+      "source_id": "US-AL:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-AL:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-AL:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-AL:court:4f54b582f9f0",
+      "name": "Probate",
+      "level": "limited_trial",
+      "source_id": "US-AL:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Ala. Code § 6-2-38(l)",
+      "source_id": "US-AL:pi_limitations:4f021ef2fb38",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Ala. Code § 6-2-34(4)",
+      "source_id": "US-AL:written_contract_limitations:4e21331ad0d3",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Ala. Code § 6-2-34(9)",
+      "source_id": "US-AL:oral_contract_limitations:4e21331ad0d3",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Ala. Code § 35-9A-141. Definitions.",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "forms": {
+    "US-AL:form:SM-01": {
+      "title": "Statement of Claim (Complaint) - General",
+      "publisher_identifier": "SM-01",
+      "source_id": "US-AL:small_claim_form:d699289cd7f5",
+      "index_source_id": "US-AL:small_claims:29b5524bf55f",
+      "index_sha256": "756d7a78ee12fc6c53c84b7834a409880aec824894822571561b90bc8fb03c47",
+      "court_scope": "small_claims",
+      "mandatory": "review_required",
+      "revision": null,
+      "last_observed": "2026-11-17T19:41:54.174035+00:00",
+      "automated_completion": "disabled"
+    },
+    "US-AL:form:SM-03": {
+      "title": "Defendant's Answer",
+      "publisher_identifier": "SM-03",
+      "source_id": "US-AL:answer_form:76ea2314e846",
+      "index_source_id": "US-AL:small_claims:29b5524bf55f",
+      "index_sha256": "756d7a78ee12fc6c53c84b7834a409880aec824894822571561b90bc8fb03c47",
+      "court_scope": "small_claims",
+      "mandatory": "review_required",
+      "revision": null,
+      "last_observed": "2026-11-17T19:41:54.174035+00:00",
+      "automated_completion": "disabled"
+    }
+  }
+}

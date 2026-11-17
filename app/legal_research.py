@@ -65,6 +65,7 @@ class GeneralLegalResearchService:
         self.repository, self.settings, self.generation = repository, settings, generation
         self.providers = providers if providers is not None else configured_authority_providers(
             repository, getattr(settings, "authority_network", ""), getattr(settings, "corpus_path", ""))
+        self.include_national_excerpts = providers is None
         if (providers is None and getattr(settings, "mode", None) == "development"
                 and getattr(settings, "normalized_corpus_path", "")):
             from app.national_corpus_research import NormalizedAuthorityProvider
@@ -80,7 +81,8 @@ class GeneralLegalResearchService:
         if resolution["missing_context"]:
             return {"status": "missing_context", "resolution": resolution, "package": None}
         corpus_enabled = any(provider.name == "normalized_corpus" for provider in self.providers)
-        if matter.sovereign != "state" and not (corpus_enabled and matter.sovereign == "federal" and matter.state is None):
+        if (matter.sovereign not in {"state", "district", "territory"}
+                and not (corpus_enabled and matter.sovereign == "federal" and matter.state is None)):
             return {"status": "unsupported", "resolution": resolution, "package": None}
         requested_types = set()
         if matter.authority_types:
@@ -108,8 +110,14 @@ class GeneralLegalResearchService:
         # leave the process for an authority search.
         query = matter.model_copy(update={"goal": "", "user_posture": None, "document_type": None})
         fetch_gap = "An authority provider was unavailable or returned changed evidence; research may be incomplete."
-        for provider in self.providers[:4]:
+        providers = self.providers[:4]
+        if self.include_national_excerpts and not capability and matter.authority_status == "unresolved":
+            from app.national_excerpt_research import RetainedLegislativeResearch
+            providers = [*providers, RetainedLegislativeResearch()]
+        for provider in providers:
             if matter.authority_status != "unresolved" and provider.name != "normalized_corpus":
+                continue
+            if matter.sovereign in {"district", "territory"} and provider.name not in {"normalized_corpus", "retained_legislative_authority"}:
                 continue
             if matter.sovereign == "federal" and provider.name not in {"normalized_corpus", "courtlistener", "courtlistener_corpus"}:
                 continue

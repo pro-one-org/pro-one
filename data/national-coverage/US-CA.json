@@ -1,0 +1,347 @@
+{
+  "jurisdiction": "US-CA",
+  "version": "1",
+  "sources": {
+    "US-CA:statutes:807f0da53b80": {
+      "category": "statutes",
+      "title": "Code Search",
+      "url": "http://leginfo.legislature.ca.gov/faces/codes.xhtml",
+      "directory": "doj-CA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-CA:legislature:ab0d07b3860a": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://leginfo.legislature.ca.gov",
+      "directory": "codes",
+      "locator": "California"
+    },
+    "US-CA:labor_agency:e0bc399d0c3c": {
+      "category": "labor_agency",
+      "title": "www.dir.ca.gov/contactus.html",
+      "url": "http://www.dir.ca.gov/contactus.html",
+      "directory": "labor",
+      "locator": "California"
+    },
+    "US-CA:business_registration:3d1251c08f78": {
+      "category": "business_registration",
+      "title": "California Secretary of State",
+      "url": "http://www.sos.ca.gov/business-programs/business-entities/forms/",
+      "directory": "business",
+      "locator": "California"
+    },
+    "US-CA:commercial_code:692737018438": {
+      "category": "commercial_code",
+      "title": "Commercial Code",
+      "url": "https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=COM&tocTitle=+Commercial+Code+-+COM",
+      "directory": "ucc",
+      "locator": "California"
+    },
+    "US-CA:civil_rules:124a25accb48": {
+      "category": "civil_rules",
+      "title": "Code of Civil Procedure",
+      "url": "https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=CCP&tocTitle=+Code+of+Civil+Procedure+-+CCP",
+      "directory": "procedure",
+      "locator": "California"
+    },
+    "US-CA:consumer_agency:2ad3a51b5dfa": {
+      "category": "consumer_agency",
+      "title": "California (CA)",
+      "url": "https://www.dca.ca.gov/",
+      "directory": "consumer",
+      "locator": "California (CA)"
+    },
+    "US-CA:judiciary:27981f618ec9": {
+      "category": "judiciary",
+      "title": "Judicial Branch of California",
+      "url": "http://www.courts.ca.gov/",
+      "directory": "doj-CA",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-CA:judiciary:dfdc4f1d5424": {
+      "category": "judiciary",
+      "title": "Judicial Council of California",
+      "url": "http://www.courts.ca.gov/policyadmin.htm",
+      "directory": "doj-CA",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-CA:court_directory:994adffb4e6d": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://www.courts.ca.gov/supremecourt.htm",
+      "directory": "doj-CA",
+      "locator": "Supreme Court"
+    },
+    "US-CA:court_directory:70d136018d8f": {
+      "category": "court_directory",
+      "title": "Trial Courts",
+      "url": "http://www.courts.ca.gov/superiorcourts.htm",
+      "directory": "doj-CA",
+      "locator": "Trial Courts"
+    },
+    "US-CA:forms:4900cdc0cfd0": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "http://www.courts.ca.gov/forms.htm",
+      "directory": "doj-CA",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-CA:constitution:0f6bf72330d0": {
+      "category": "constitution",
+      "title": "California Constitution",
+      "url": "http://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=CONS&tocTitle=+California+Constitution+-+CONS",
+      "directory": "doj-CA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-CA:statutes:520209143b82": {
+      "category": "statutes",
+      "title": "Statutes",
+      "url": "http://www.leginfo.ca.gov/statute.html",
+      "directory": "doj-CA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-CA:statutes:c378f10b575d": {
+      "category": "statutes",
+      "title": "Statutes Archive",
+      "url": "http://clerk.assembly.ca.gov/archive-list?archive_type=statutes&=Apply",
+      "directory": "doj-CA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-CA:regulations:904e426e56d3": {
+      "category": "regulations",
+      "title": "Code of Regulations",
+      "url": "https://oal.ca.gov/publications/ccr/",
+      "directory": "doj-CA",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-CA:regulations:557e1fa77e18": {
+      "category": "regulations",
+      "title": "Regulatory Notice Register",
+      "url": "http://www.oal.ca.gov/publications/notice_register/",
+      "directory": "doj-CA",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-CA:pi_limitations:75eac6538d2d": {
+      "category": "pi_limitations",
+      "title": "Cal. Code Civ. Proc. § 335.1",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=335.1",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=335.1",
+        "retrieved_at": "2026-11-17T19:33:54.982691+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-CA:written_contract_limitations:590464774252": {
+      "category": "written_contract_limitations",
+      "title": "Cal. Code Civ. Proc. § 337(a)",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=337",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=337",
+        "retrieved_at": "2026-11-17T19:33:54.994923+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-CA:oral_contract_limitations:db88a2e590fd": {
+      "category": "oral_contract_limitations",
+      "title": "Cal. Code Civ. Proc. § 339(1)",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=339",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=339",
+        "retrieved_at": "2026-11-17T19:33:54.999924+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-CA:small_claims:d10e23cd9a32": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://selfhelp.courts.ca.gov/small-claims-forms",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://selfhelp.courts.ca.gov/small-claims-forms",
+        "retrieved_at": "2026-11-17T19:42:33.238783+00:00",
+        "http_status": "200",
+        "sha256": "690642dcffcc55f5da19a7d78d033422b59c2245f54a16251e4e36e4cd5b21e8",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CA:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 26"
+    },
+    "US-CA:deposit:6174bcfad099": {
+      "category": "deposit",
+      "title": "Residential tenancy publication",
+      "url": "https://dre.ca.gov/files/pdf/2025_Landlord_Tenant_Guide.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://dre.ca.gov/files/pdf/2025_Landlord_Tenant_Guide.pdf",
+        "retrieved_at": "2026-11-17T19:42:06.838905+00:00",
+        "http_status": "200",
+        "sha256": "f29002289aa8b2d049067296cd5c599579311b4dbc327f9a23e1e7465b408ad4",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CA:wageLaw:27f02e06e45d": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://www.dir.ca.gov/dlse/faq_paydays.htm",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.dir.ca.gov/dlse/faq_paydays.htm",
+        "retrieved_at": "2026-11-17T19:42:43.285907+00:00",
+        "http_status": "200",
+        "sha256": "5ac463483c3572720d323db43d96d8e030b4455ff8bc8bf0afb36bbc11551a60",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CA:debtLaw:57477f343e6a": {
+      "category": "debtLaw",
+      "title": "Debt collection publication",
+      "url": "https://dfpi.ca.gov/regulated-industries/debt-collection-licensee/",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://dfpi.ca.gov/regulated-industries/debt-collection-licensee/",
+        "retrieved_at": "2026-11-17T19:41:52.638260+00:00",
+        "http_status": "200",
+        "sha256": "f366a397f8ad69e44bd1b4567ae9de31189bc4a3bb1a8e582c43ce4b332618b4",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CA:contract:7242bec5aa3c": {
+      "category": "contract",
+      "title": "Contract research publication",
+      "url": "https://www.selfhelp.courts.ca.gov/civil-lawsuit/breach-contract",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.selfhelp.courts.ca.gov/civil-lawsuit/breach-contract",
+        "retrieved_at": "2026-11-17T19:43:08.516433+00:00",
+        "http_status": "200",
+        "sha256": "e274778d89385f56feb1413b492e194a0148fdae2d4f1c9bbfefa54312e4b2ec",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CA:negligence:bba69edc8b8b": {
+      "category": "negligence",
+      "title": "Negligence research publication",
+      "url": "https://selfhelp.courts.ca.gov/jcc-form/PLD-PI-001%282%29",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://selfhelp.courts.ca.gov/jcc-form/PLD-PI-001%282%29",
+        "retrieved_at": "2026-11-17T19:42:31.630289+00:00",
+        "http_status": "200",
+        "sha256": "348d6cdd469b6a24bfc8659581f947a350f981465d5cd902f4fe163d17ae2d97",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CA:small_claim_form:809c694880d3": {
+      "category": "small_claim_form",
+      "title": "Plaintiff's Claim and Order to Go to Small Claims Court",
+      "url": "https://www.courts.ca.gov/documents/sc100.pdf",
+      "directory": null,
+      "locator": "SC-100"
+    },
+    "US-CA:small_claim_form:5104ea3ead0a": {
+      "category": "small_claim_form",
+      "title": "Defendant's Claim and Order to Go to Small Claims Court",
+      "url": "https://www.courts.ca.gov/documents/sc120.pdf",
+      "directory": null,
+      "locator": "SC-120"
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-CA:court:647fd719b951",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-CA:court_directory:994adffb4e6d"
+    },
+    {
+      "id": "US-CA:court:ee38762ed909",
+      "name": "Trial Courts",
+      "level": "trial_directory",
+      "source_id": "US-CA:court_directory:70d136018d8f"
+    },
+    {
+      "id": "US-CA:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-CA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Cal. Code Civ. Proc. § 335.1",
+      "source_id": "US-CA:pi_limitations:75eac6538d2d",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Cal. Code Civ. Proc. § 337(a)",
+      "source_id": "US-CA:written_contract_limitations:590464774252",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Cal. Code Civ. Proc. § 339(1)",
+      "source_id": "US-CA:oral_contract_limitations:db88a2e590fd",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Cal. Civil Code § 1940. Application of chapter; “persons who hire” and “dwelling unit”",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "forms": {
+    "US-CA:form:SC-100": {
+      "title": "Plaintiff's Claim and Order to Go to Small Claims Court",
+      "publisher_identifier": "SC-100",
+      "source_id": "US-CA:small_claim_form:809c694880d3",
+      "index_source_id": "US-CA:small_claims:d10e23cd9a32",
+      "index_sha256": "690642dcffcc55f5da19a7d78d033422b59c2245f54a16251e4e36e4cd5b21e8",
+      "court_scope": "small_claims",
+      "mandatory": "review_required",
+      "revision": null,
+      "last_observed": "2026-11-17T19:42:33.238783+00:00",
+      "automated_completion": "disabled"
+    },
+    "US-CA:form:SC-120": {
+      "title": "Defendant's Claim and Order to Go to Small Claims Court",
+      "publisher_identifier": "SC-120",
+      "source_id": "US-CA:small_claim_form:5104ea3ead0a",
+      "index_source_id": "US-CA:small_claims:d10e23cd9a32",
+      "index_sha256": "690642dcffcc55f5da19a7d78d033422b59c2245f54a16251e4e36e4cd5b21e8",
+      "court_scope": "small_claims",
+      "mandatory": "review_required",
+      "revision": null,
+      "last_observed": "2026-11-17T19:42:33.238783+00:00",
+      "automated_completion": "disabled"
+    }
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "jurisdiction": "US-MT",
+  "version": "1",
+  "sources": {
+    "US-MT:statutes:6830239ae55b": {
+      "category": "statutes",
+      "title": "Montana Code",
+      "url": "https://leg.mt.gov/bills/mca/index.html",
+      "directory": "codes",
+      "locator": "Montana"
+    },
+    "US-MT:constitution:755f87245bc2": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://leg.mt.gov/bills/mca_toc/Constitution.htm",
+      "directory": "codes",
+      "locator": "Montana"
+    },
+    "US-MT:legislature:4be3735a7f85": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "https://leg.mt.gov/",
+      "directory": "codes",
+      "locator": "Montana"
+    },
+    "US-MT:labor_agency:3266875e3fd9": {
+      "category": "labor_agency",
+      "title": "www.dli.mt.gov",
+      "url": "http://www.dli.mt.gov/",
+      "directory": "labor",
+      "locator": "Montana"
+    },
+    "US-MT:commercial_code:2433f054240c": {
+      "category": "commercial_code",
+      "title": "See Trade and Commerce Chapters 1-9",
+      "url": "https://leg.mt.gov/bills/mca/title_0300/chapters_index.html",
+      "directory": "ucc",
+      "locator": "Montana"
+    },
+    "US-MT:civil_rules:bce052c98aa2": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "https://leg.mt.gov/bills/mca/title_0250/chapters_index.html",
+      "directory": "procedure",
+      "locator": "Montana"
+    },
+    "US-MT:consumer_agency:575ae38cd617": {
+      "category": "consumer_agency",
+      "title": "Montana (MT)",
+      "url": "https://dojmt.gov/office-of-consumer-protection/",
+      "directory": "consumer",
+      "locator": "Montana (MT)"
+    },
+    "US-MT:judiciary:d9fcc510f68a": {
+      "category": "judiciary",
+      "title": "Montana Judicial Branch",
+      "url": "https://courts.mt.gov/",
+      "directory": "doj-MT",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-MT:judiciary:c3c1ae92a0ea": {
+      "category": "judiciary",
+      "title": "Legal Research Guides",
+      "url": "https://courts.mt.gov/Library/LibraryCollections/LegalResearchGuides",
+      "directory": "doj-MT",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-MT:judiciary:bcdb374e101b": {
+      "category": "judiciary",
+      "title": "Legal Information",
+      "url": "http://www.law.cornell.edu/states/montana",
+      "directory": "doj-MT",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-MT:court_directory:7b9c91b76e7a": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://courts.mt.gov/courts/supreme",
+      "directory": "doj-MT",
+      "locator": "Supreme Court"
+    },
+    "US-MT:court_directory:1893a3c1d610": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "https://courts.mt.gov/courts/dcourt",
+      "directory": "doj-MT",
+      "locator": "District Courts"
+    },
+    "US-MT:court_directory:56c83888da39": {
+      "category": "court_directory",
+      "title": "Water Court",
+      "url": "https://courts.mt.gov/courts/water/",
+      "directory": "doj-MT",
+      "locator": "Water Court"
+    },
+    "US-MT:court_directory:9c764e541ff9": {
+      "category": "court_directory",
+      "title": "Workers' Compensation Court",
+      "url": "http://wcc.dli.mt.gov/",
+      "directory": "doj-MT",
+      "locator": "Workers' Compensation Court"
+    },
+    "US-MT:court_directory:b310f1bf4045": {
+      "category": "court_directory",
+      "title": "Courts of Limited Jurisdiction",
+      "url": "http://courts.mt.gov/courts/lcourt",
+      "directory": "doj-MT",
+      "locator": "Courts of Limited Jurisdiction"
+    },
+    "US-MT:forms:ad40e26d9f5a": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://www.mtd.uscourts.gov/forms",
+      "directory": "doj-MT",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-MT:constitution:967777ae01e4": {
+      "category": "constitution",
+      "title": "Montana Constitution",
+      "url": "https://mca.legmt.gov/bills/mca/title_0000/chapters_index.html",
+      "directory": "doj-MT",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MT:statutes:41a697c8883d": {
+      "category": "statutes",
+      "title": "Code Annotated",
+      "url": "https://mca.legmt.gov/bills/mca/index.html",
+      "directory": "doj-MT",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MT:regulations:d08a7b77b98c": {
+      "category": "regulations",
+      "title": "Administrative Register and Rules Information",
+      "url": "http://sos.mt.gov/ARM/index.asp",
+      "directory": "doj-MT",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-MT:pi_limitations:ce0ddf053375": {
+      "category": "pi_limitations",
+      "title": "MCA § 27-2-204",
+      "url": "https://mca.legmt.gov/bills/mca/title_0270/chapter_0020/part_0020/section_0040/0270-0020-0020-0040.html",
+      "directory": null,
+      "locator": "MCA § 27-2-204",
+      "observation": {
+        "requested_url": "https://mca.legmt.gov/bills/mca/title_0270/chapter_0020/part_0020/section_0040/0270-0020-0020-0040.html",
+        "retrieved_at": "2026-11-17T19:33:59.217362+00:00",
+        "http_status": "200",
+        "sha256": "b48baf022f371e55a3c4b0a837faf4aed2c9bdbf1bd8e7fdc958d6c61476f393",
+        "health": "healthy"
+      }
+    },
+    "US-MT:written_contract_limitations:364e321ffc37": {
+      "category": "written_contract_limitations",
+      "title": "Mont. Code Ann. § 27-2-202(1)",
+      "url": "https://mca.legmt.gov/bills/mca/title_0270/chapter_0020/part_0020/section_0020/0270-0020-0020-0020.html",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://mca.legmt.gov/bills/mca/title_0270/chapter_0020/part_0020/section_0020/0270-0020-0020-0020.html",
+        "retrieved_at": "2026-11-17T19:33:59.212158+00:00",
+        "http_status": "200",
+        "sha256": "ba2b270b3c2a4f76d4867b5796be1f7ea3fb107e1db4443410e5ddf7aa9ac51b",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MT:oral_contract_limitations:364e321ffc37": {
+      "category": "oral_contract_limitations",
+      "title": "Mont. Code Ann. § 27-2-202(2)",
+      "url": "https://mca.legmt.gov/bills/mca/title_0270/chapter_0020/part_0020/section_0020/0270-0020-0020-0020.html",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://mca.legmt.gov/bills/mca/title_0270/chapter_0020/part_0020/section_0020/0270-0020-0020-0020.html",
+        "retrieved_at": "2026-11-17T19:33:59.212158+00:00",
+        "http_status": "200",
+        "sha256": "ba2b270b3c2a4f76d4867b5796be1f7ea3fb107e1db4443410e5ddf7aa9ac51b",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MT:small_claims:a5a110a0c1dc": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://courts.mt.gov/courts/lcourt/benchbook/SmallClaims",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://courts.mt.gov/courts/lcourt/benchbook/SmallClaims",
+        "retrieved_at": "2026-11-17T19:41:48.648815+00:00",
+        "http_status": "200",
+        "sha256": "f54d21fd6551a783f44c29ede12d02b8aa5216014ea86dfc06cd2abe6375e393",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MT:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 28"
+    },
+    "US-MT:small_claim_form:30bb4b674297": {
+      "category": "small_claim_form",
+      "title": "Complaint/Order and Notice to Defendant",
+      "url": "https://courts.mt.gov/external/lcourt/benchbook/sc/sc-004.docx",
+      "directory": null,
+      "locator": "SC-004"
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-MT:court:39a426a804ba",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-MT:court_directory:7b9c91b76e7a"
+    },
+    {
+      "id": "US-MT:court:f755f36c488f",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-MT:court_directory:1893a3c1d610"
+    },
+    {
+      "id": "US-MT:court:327d00928841",
+      "name": "Water Court",
+      "level": "trial_directory",
+      "source_id": "US-MT:court_directory:56c83888da39"
+    },
+    {
+      "id": "US-MT:court:d78e89de7f1a",
+      "name": "Workers' Compensation Court",
+      "level": "trial_directory",
+      "source_id": "US-MT:court_directory:9c764e541ff9"
+    },
+    {
+      "id": "US-MT:court:a4f88d199b1e",
+      "name": "Courts of Limited Jurisdiction",
+      "level": "trial_directory",
+      "source_id": "US-MT:court_directory:b310f1bf4045"
+    },
+    {
+      "id": "US-MT:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-MT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MT:court:85cbaf4e41b3",
+      "name": "Workers’ Compensation",
+      "level": "general_trial",
+      "source_id": "US-MT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MT:court:7f0c4124a47c",
+      "name": "Water",
+      "level": "general_trial",
+      "source_id": "US-MT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MT:court:130cafc44268",
+      "name": "Justice of the Peace",
+      "level": "limited_trial",
+      "source_id": "US-MT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MT:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-MT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MT:court:c4a7a7b35c28",
+      "name": "City",
+      "level": "limited_trial",
+      "source_id": "US-MT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Mont. Code Ann. § 27-2-204(1)",
+      "source_id": "US-MT:pi_limitations:ce0ddf053375",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Mont. Code Ann. § 27-2-202(1)",
+      "source_id": "US-MT:written_contract_limitations:364e321ffc37",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Mont. Code Ann. § 27-2-202(2)",
+      "source_id": "US-MT:oral_contract_limitations:364e321ffc37",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Mont. Code § 70-24-104. Exclusions from application of chapter; Mont. Code § 70-24-107. Territorial application",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "d928b8dfa6a98ff4060a139d08d41a": {
+      "citation": "MCA § 27-2-204",
+      "source_id": "US-MT:pi_limitations:ce0ddf053375",
+      "authority_type": "statute",
+      "text": "27-2-204. (Temporary) Tort actions -- general and personal injury. (1) Except as provided in 27-2-216, the period prescribed for the commencement of an action upon a liability not founded upon an instrument in writing is within 3 years.",
+      "text_sha256": "79e5f0618246f074d3ef90061958cce9824f38e899a26bb3300a185e585e1fa8",
+      "publisher_sha256": "b48baf022f371e55a3c4b0a837faf4aed2c9bdbf1bd8e7fdc958d6c61476f393",
+      "retrieved_at": "2026-11-17T19:33:59.217362+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    }
+  },
+  "forms": {
+    "US-MT:form:SC-004": {
+      "title": "Complaint/Order and Notice to Defendant",
+      "publisher_identifier": "SC-004",
+      "source_id": "US-MT:small_claim_form:30bb4b674297",
+      "index_source_id": "US-MT:small_claims:a5a110a0c1dc",
+      "index_sha256": "f54d21fd6551a783f44c29ede12d02b8aa5216014ea86dfc06cd2abe6375e393",
+      "court_scope": "small_claims",
+      "mandatory": "review_required",
+      "revision": null,
+      "last_observed": "2026-11-17T19:41:48.648815+00:00",
+      "automated_completion": "disabled"
+    }
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "jurisdiction": "US-NE",
+  "version": "1",
+  "sources": {
+    "US-NE:statutes:bab98dfd84de": {
+      "category": "statutes",
+      "title": "Nebraska Statutes",
+      "url": "https://nebraskalegislature.gov/laws/browse-statutes.php",
+      "directory": "codes",
+      "locator": "Nebraska"
+    },
+    "US-NE:constitution:6ffe28027df8": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://nebraskalegislature.gov/laws/browse-constitution.php",
+      "directory": "codes",
+      "locator": "Nebraska"
+    },
+    "US-NE:legislature:11362e05b139": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "https://nebraskalegislature.gov/",
+      "directory": "codes",
+      "locator": "Nebraska"
+    },
+    "US-NE:labor_agency:f88ede704d19": {
+      "category": "labor_agency",
+      "title": "www.dol.nebraska.gov",
+      "url": "http://www.dol.nebraska.gov/",
+      "directory": "labor",
+      "locator": "Nebraska"
+    },
+    "US-NE:civil_rules:ead32e61c958": {
+      "category": "civil_rules",
+      "title": "Courts; Civil Procedure",
+      "url": "http://nebraskalegislature.gov/laws/browse-chapters.php?chapter=25",
+      "directory": "procedure",
+      "locator": "Nebraska"
+    },
+    "US-NE:consumer_agency:8514041e3fbb": {
+      "category": "consumer_agency",
+      "title": "Nebraska (NE)",
+      "url": "https://protectthegoodlife.nebraska.gov/",
+      "directory": "consumer",
+      "locator": "Nebraska (NE)"
+    },
+    "US-NE:judiciary:0e59e1b34f8b": {
+      "category": "judiciary",
+      "title": "Judiciary",
+      "url": "http://www.supremecourt.ne.gov/",
+      "directory": "doj-NE",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-NE:court_directory:26d8f7e22a48": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://supremecourt.nebraska.gov/courts/supreme-court",
+      "directory": "doj-NE",
+      "locator": "Supreme Court"
+    },
+    "US-NE:court_directory:20b26d2e74be": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "https://supremecourt.nebraska.gov/courts/court-appeals",
+      "directory": "doj-NE",
+      "locator": "Court of Appeals"
+    },
+    "US-NE:court_directory:40883c4c0d0f": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "https://supremecourt.nebraska.gov/courts/district-court",
+      "directory": "doj-NE",
+      "locator": "District Courts"
+    },
+    "US-NE:court_directory:98ddcd568f3d": {
+      "category": "court_directory",
+      "title": "County Courts",
+      "url": "https://supremecourt.nebraska.gov/courts/county-court",
+      "directory": "doj-NE",
+      "locator": "County Courts"
+    },
+    "US-NE:court_directory:7d4c0b4248fa": {
+      "category": "court_directory",
+      "title": "Workers' Compensation Court",
+      "url": "https://www.newcc.gov/",
+      "directory": "doj-NE",
+      "locator": "Workers' Compensation Court"
+    },
+    "US-NE:court_directory:3129c489330e": {
+      "category": "court_directory",
+      "title": "Juvenile Courts",
+      "url": "https://supremecourt.nebraska.gov/courts/separate-juvenile-courts",
+      "directory": "doj-NE",
+      "locator": "Juvenile Courts"
+    },
+    "US-NE:forms:731fee6f1da4": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://supremecourt.nebraska.gov/forms?field_language_tid=288",
+      "directory": "doj-NE",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-NE:constitution:2becde25c1dc": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.nebraskalegislature.gov/laws/browse-constitution.php",
+      "directory": "doj-NE",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NE:statutes:e799ce3b8499": {
+      "category": "statutes",
+      "title": "Revised Statutes",
+      "url": "http://www.nebraskalegislature.gov/laws/browse-statutes.php",
+      "directory": "doj-NE",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NE:statutes:6488598eca80": {
+      "category": "statutes",
+      "title": "Bills and Laws Search",
+      "url": "http://www.nebraskalegislature.gov/bills/intro.php",
+      "directory": "doj-NE",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NE:regulations:40fe618912e7": {
+      "category": "regulations",
+      "title": "Rules and Regulations",
+      "url": "http://www.sos.state.ne.us/dyindex.html#boxingName",
+      "directory": "doj-NE",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-NE:pi_limitations:0b6415b2a000": {
+      "category": "pi_limitations",
+      "title": "Neb. Rev. Stat. § 25-207(3)",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-207",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-207",
+        "retrieved_at": "2026-11-17T19:33:59.373696+00:00",
+        "http_status": "200",
+        "sha256": "d041c681f04a617152e12a4d71493a6ffba3b587c023648fd8f9891f9850cd43",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NE:written_contract_limitations:0b77e2211cc0": {
+      "category": "written_contract_limitations",
+      "title": "Neb. Rev. Stat. § 25-205(1)",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-205",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-205",
+        "retrieved_at": "2026-11-17T19:33:59.472380+00:00",
+        "http_status": "200",
+        "sha256": "0bfb26248843c6181bc4b739e675bec922b721dc96e7ad6797756f7238ce1822",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NE:oral_contract_limitations:d043ae7ef388": {
+      "category": "oral_contract_limitations",
+      "title": "Neb. Rev. Stat. § 25-206",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-206",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-206",
+        "retrieved_at": "2026-11-17T19:33:59.515803+00:00",
+        "http_status": "200",
+        "sha256": "7ac9e3a93a0e4ead3dfbc18b55e3b451f807140e384045defff360ce9e3c0b75",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NE:small_claims:ffa0737dce31": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://nebraskajudicial.gov/administration/self-represented-litigant-resources/small-claims",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://nebraskajudicial.gov/administration/self-represented-litigant-resources/small-claims",
+        "retrieved_at": "2026-11-17T19:42:13.806145+00:00",
+        "http_status": "200",
+        "sha256": "387c957aca4fcfe0534ef1a943436da61876465efac97d963351cddf2b8235a5",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NE:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 28"
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-NE:court:e70d17217ff1",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-NE:court_directory:26d8f7e22a48"
+    },
+    {
+      "id": "US-NE:court:b47ed66ee865",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-NE:court_directory:20b26d2e74be"
+    },
+    {
+      "id": "US-NE:court:7ee2b3f5043b",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-NE:court_directory:40883c4c0d0f"
+    },
+    {
+      "id": "US-NE:court:cf9659861036",
+      "name": "County Courts",
+      "level": "trial_directory",
+      "source_id": "US-NE:court_directory:98ddcd568f3d"
+    },
+    {
+      "id": "US-NE:court:808d2d23c693",
+      "name": "Workers' Compensation Court",
+      "level": "trial_directory",
+      "source_id": "US-NE:court_directory:7d4c0b4248fa"
+    },
+    {
+      "id": "US-NE:court:75d77653d9a6",
+      "name": "Juvenile Courts",
+      "level": "trial_directory",
+      "source_id": "US-NE:court_directory:3129c489330e"
+    },
+    {
+      "id": "US-NE:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-NE:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NE:court:ce79a4218d1c",
+      "name": "Separate Juvenile",
+      "level": "limited_trial",
+      "source_id": "US-NE:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NE:court:09753adaaaf9",
+      "name": "County",
+      "level": "limited_trial",
+      "source_id": "US-NE:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NE:court:b11065887313",
+      "name": "Workers’ Compensation",
+      "level": "limited_trial",
+      "source_id": "US-NE:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Neb. Rev. Stat. § 25-207(3)",
+      "source_id": "US-NE:pi_limitations:0b6415b2a000",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Neb. Rev. Stat. § 25-205(1)",
+      "source_id": "US-NE:written_contract_limitations:0b77e2211cc0",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Neb. Rev. Stat. § 25-206",
+      "source_id": "US-NE:oral_contract_limitations:d043ae7ef388",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Neb. Rev. Stat. § 76-1407. Jurisdiction; territorial application; Neb. Rev. Stat. § 76-1410. Terms, defined; Neb. Rev. Stat. § 76-1408. Exclusions from application of sections; Neb. Rev. Stat. § 76-1440. Action for possession; Neb. Rev. Stat. § 76-1453. Purposes; construction",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "jurisdiction": "US-DC",
+  "version": "1",
+  "sources": {
+    "US-DC:statutes:c6f2df9c95a2": {
+      "category": "statutes",
+      "title": "District of Columbia Code and Constitution",
+      "url": "https://www.lexisnexis.com/hottopics/dccode",
+      "directory": "codes",
+      "locator": "District of Columbia"
+    },
+    "US-DC:labor_agency:95b09af7e909": {
+      "category": "labor_agency",
+      "title": "www.does.dc.gov",
+      "url": "http://www.does.dc.gov/",
+      "directory": "labor",
+      "locator": "District of Columbia"
+    },
+    "US-DC:labor_agency:0526a83c9c8e": {
+      "category": "labor_agency",
+      "title": "ohr.dc.gov",
+      "url": "https://ohr.dc.gov/",
+      "directory": "labor",
+      "locator": "District of Columbia"
+    },
+    "US-DC:business_registration:4d0bdf9ba762": {
+      "category": "business_registration",
+      "title": "District of Columbia Office of Tax and Revenue",
+      "url": "https://otr.cfo.dc.gov/page/new-business-registration",
+      "directory": "business",
+      "locator": "District of Columbia"
+    },
+    "US-DC:consumer_agency:1e35bf1e4555": {
+      "category": "consumer_agency",
+      "title": "District of Columbia (DC)",
+      "url": "https://oag.dc.gov/consumer-protection",
+      "directory": "consumer",
+      "locator": "District of Columbia (DC)"
+    },
+    "US-DC:judiciary:66662e936bb9": {
+      "category": "judiciary",
+      "title": "District of Columbia Superior Court",
+      "url": "http://www.dccourts.gov/superior-court",
+      "directory": "doj-DC",
+      "locator": "State and Local Courts / Superior Court"
+    },
+    "US-DC:court_directory:0c04551c42b0": {
+      "category": "court_directory",
+      "title": "District of Columbia Court of Appeals",
+      "url": "http://www.dccourts.gov/court-of-appeals",
+      "directory": "doj-DC",
+      "locator": "District of Columbia Court of Appeals"
+    },
+    "US-DC:regulations:ad3130efa003": {
+      "category": "regulations",
+      "title": "DC Municipal Regulations and Register",
+      "url": "http://os.dc.gov/service/publication-and-regulatory-services",
+      "directory": "doj-DC",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-DC:pi_limitations:98e4ed313ec9": {
+      "category": "pi_limitations",
+      "title": "D.C. Code § 12-301",
+      "url": "https://code.dccouncil.gov/us/dc/council/code/sections/12-301",
+      "directory": null,
+      "locator": "D.C. Code § 12-301",
+      "observation": {
+        "requested_url": "https://code.dccouncil.gov/us/dc/council/code/sections/12-301",
+        "retrieved_at": "2026-11-17T19:33:55.408074+00:00",
+        "http_status": "200",
+        "sha256": "e0cff6ce52a59d953cbd22a1d7fdd7b3d72411becd7d32f4c0e9f4d0a59f1c49",
+        "health": "healthy"
+      }
+    },
+    "US-DC:written_contract_limitations:98e4ed313ec9": {
+      "category": "written_contract_limitations",
+      "title": "D.C. Code § 12-301(a)(7)",
+      "url": "https://code.dccouncil.gov/us/dc/council/code/sections/12-301",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://code.dccouncil.gov/us/dc/council/code/sections/12-301",
+        "retrieved_at": "2026-11-17T19:33:55.408074+00:00",
+        "http_status": "200",
+        "sha256": "e0cff6ce52a59d953cbd22a1d7fdd7b3d72411becd7d32f4c0e9f4d0a59f1c49",
+        "health": "manual_review_required"
+      }
+    },
+    "US-DC:oral_contract_limitations:98e4ed313ec9": {
+      "category": "oral_contract_limitations",
+      "title": "D.C. Code § 12-301(a)(7)",
+      "url": "https://code.dccouncil.gov/us/dc/council/code/sections/12-301",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://code.dccouncil.gov/us/dc/council/code/sections/12-301",
+        "retrieved_at": "2026-11-17T19:33:55.408074+00:00",
+        "http_status": "200",
+        "sha256": "e0cff6ce52a59d953cbd22a1d7fdd7b3d72411becd7d32f4c0e9f4d0a59f1c49",
+        "health": "manual_review_required"
+      }
+    },
+    "US-DC:small_claims:8dbc12bfb5b8": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.dccourts.gov/superior-court/superior-court-divisions/civil-division/small-claims",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.dccourts.gov/superior-court/superior-court-divisions/civil-division/small-claims",
+        "retrieved_at": "2026-11-17T19:42:42.046210+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-DC:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 26"
+    },
+    "US-DC:wageLaw:899a71bb7d50": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://does.dc.gov/service/dc-worker-labor-and-anti-discrimination-rights",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://does.dc.gov/service/dc-worker-labor-and-anti-discrimination-rights",
+        "retrieved_at": "2026-11-17T19:41:53.418126+00:00",
+        "http_status": "200",
+        "sha256": "bb1972ec7a6580b1f909829dffdddee3964f4bcf66cb29da6d56434f8de606d8",
+        "health": "manual_review_required"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-DC:court:725cec110e79",
+      "name": "District of Columbia Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-DC:court_directory:0c04551c42b0"
+    },
+    {
+      "id": "US-DC:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-DC:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "D.C. Code § 12-301(a)(8)",
+      "source_id": "US-DC:pi_limitations:98e4ed313ec9",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "D.C. Code § 12-301(a)(7)",
+      "source_id": "US-DC:written_contract_limitations:98e4ed313ec9",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "D.C. Code § 12-301(a)(7)",
+      "source_id": "US-DC:oral_contract_limitations:98e4ed313ec9",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "D.C. Code § 42-3505.01. Evictions.",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "492786edda81d59e9ab38b95885f40": {
+      "citation": "D.C. Code § 12-301",
+      "source_id": "US-DC:pi_limitations:98e4ed313ec9",
+      "authority_type": "statute",
+      "text": "[(a)] Except as otherwise specifically provided by law, actions for the following purposes may not be brought after the expiration of the period specified below from the time the right to maintain the action accrues: (1) for the recovery of lands, tenements, or hereditaments— 15 years; (2) for the recovery of personal property or damages for its unlawful detention— 3 years; (3) for the recovery of damages for an injury to real or personal property— 3 years; (4) for libel, slander, assault, battery, mayhem, wounding, malicious prosecution, false arrest or false imprisonment— 1 year; (5) for a statutory penalty or forfeiture— 1 year; (6) on an executor’s or administrator’s bond— 5 years; on any other bond or single bill, covenant, or other instrument under seal— 12 years; (7) on a simple contract, express or implied— 3 years; (8) for which a limitation is not otherwise specially prescribed— 3 years;",
+      "text_sha256": "f71e1db989fe85878256df2addbc2ca90e57a5db4cec21059d40f31dbf32414f",
+      "publisher_sha256": "e0cff6ce52a59d953cbd22a1d7fdd7b3d72411becd7d32f4c0e9f4d0a59f1c49",
+      "retrieved_at": "2026-11-17T19:33:55.408074+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    }
+  }
+}

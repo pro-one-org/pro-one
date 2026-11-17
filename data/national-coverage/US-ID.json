@@ -1,0 +1,310 @@
+{
+  "jurisdiction": "US-ID",
+  "version": "1",
+  "sources": {
+    "US-ID:statutes:b8bd0ebd8bce": {
+      "category": "statutes",
+      "title": "Idaho Statutes",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/",
+      "directory": "codes",
+      "locator": "Idaho"
+    },
+    "US-ID:constitution:b81d5b138612": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://legislature.idaho.gov/statutesrules/idconst/",
+      "directory": "codes",
+      "locator": "Idaho"
+    },
+    "US-ID:legislature:65ecc1283b72": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "https://legislature.idaho.gov/",
+      "directory": "codes",
+      "locator": "Idaho"
+    },
+    "US-ID:labor_agency:dbef7bd50479": {
+      "category": "labor_agency",
+      "title": "www.labor.idaho.gov",
+      "url": "http://www.labor.idaho.gov/",
+      "directory": "labor",
+      "locator": "Idaho"
+    },
+    "US-ID:commercial_code:847694a30d64": {
+      "category": "commercial_code",
+      "title": "Commercial Transactions",
+      "url": "http://legislature.idaho.gov/statutesrules/idstat/Title28/",
+      "directory": "ucc",
+      "locator": "Idaho"
+    },
+    "US-ID:civil_rules:d2f7640819b4": {
+      "category": "civil_rules",
+      "title": "Proceedings in Civil Actions in Courts of Record",
+      "url": "http://legislature.idaho.gov/statutesrules/idstat/Title5/",
+      "directory": "procedure",
+      "locator": "Idaho"
+    },
+    "US-ID:consumer_agency:8c12799daa4a": {
+      "category": "consumer_agency",
+      "title": "Idaho (ID)",
+      "url": "https://www.ag.idaho.gov/consumer-protection/",
+      "directory": "consumer",
+      "locator": "Idaho (ID)",
+      "observation": {
+        "requested_url": "https://www.ag.idaho.gov/consumer-protection/",
+        "retrieved_at": "2026-11-17T19:42:35.160390+00:00",
+        "http_status": "200",
+        "sha256": "118da851dd98c39d12c63197db554bc71f5cf39681482fd2e513aea79197958f",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ID:judiciary:2add8bad6697": {
+      "category": "judiciary",
+      "title": "Idaho State Judiciary",
+      "url": "https://www.isc.idaho.gov/",
+      "directory": "doj-ID",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-ID:court_directory:2add8bad6697": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.isc.idaho.gov/",
+      "directory": "doj-ID",
+      "locator": "Supreme Court"
+    },
+    "US-ID:court_directory:3399a812cabc": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "https://isc.idaho.gov/appeals-court/handbook",
+      "directory": "doj-ID",
+      "locator": "Court of Appeals"
+    },
+    "US-ID:court_directory:429dd790f3a5": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "https://isc.idaho.gov/about-the-courts/idaho-district-court",
+      "directory": "doj-ID",
+      "locator": "District Courts"
+    },
+    "US-ID:forms:0fdfe81b7014": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://courtselfhelp.idaho.gov/Forms",
+      "directory": "doj-ID",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-ID:regulations:b27b93d463a0": {
+      "category": "regulations",
+      "title": "Administrative Code",
+      "url": "https://adminrules.idaho.gov/current-rules/",
+      "directory": "doj-ID",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-ID:pi_limitations:c4313a5ebb6e": {
+      "category": "pi_limitations",
+      "title": "Idaho Code § 5-219(4)",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title5/T5CH2/SECT5-219/",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://legislature.idaho.gov/statutesrules/idstat/Title5/T5CH2/SECT5-219/",
+        "retrieved_at": "2026-11-17T19:33:57.395542+00:00",
+        "http_status": "200",
+        "sha256": "2d618dcd3bfe1dc3d0873c4afac0fa06deb40829d7c070bc73a87f0bad624cc6",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ID:written_contract_limitations:95d28668b4b5": {
+      "category": "written_contract_limitations",
+      "title": "Idaho Code § 5-216",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title5/T5CH2/SECT5-216/",
+      "directory": null,
+      "locator": "Idaho Code § 5-216",
+      "observation": {
+        "requested_url": "https://legislature.idaho.gov/statutesrules/idstat/Title5/T5CH2/SECT5-216/",
+        "retrieved_at": "2026-11-17T19:33:57.131589+00:00",
+        "http_status": "200",
+        "sha256": "ae0846f198d634ff30253d8a1a33aa311cf4f17f41fd81f4586d6c3a590f80ac",
+        "health": "healthy"
+      }
+    },
+    "US-ID:oral_contract_limitations:69cf8e101094": {
+      "category": "oral_contract_limitations",
+      "title": "Idaho Code § 5-217",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title5/T5CH2/SECT5-217/",
+      "directory": null,
+      "locator": "Idaho Code § 5-217",
+      "observation": {
+        "requested_url": "https://legislature.idaho.gov/statutesrules/idstat/Title5/T5CH2/SECT5-217/",
+        "retrieved_at": "2026-11-17T19:33:57.110131+00:00",
+        "http_status": "200",
+        "sha256": "e867f4505530fa9232738bae137becd2a4abce0ed37621a131aec87d0d43d206",
+        "health": "healthy"
+      }
+    },
+    "US-ID:small_claims:0ed041317c45": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://courtselfhelp.idaho.gov/Forms/Claims",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://courtselfhelp.idaho.gov/Forms/Claims",
+        "retrieved_at": "2026-11-17T19:41:49.302366+00:00",
+        "http_status": "200",
+        "sha256": "d3f88872594dcc283e290022a48577e952f8a76be1b035cbeaec610221db24f5",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ID:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 26"
+    },
+    "US-ID:deposit:4e2f80b4b9a2": {
+      "category": "deposit",
+      "title": "Residential tenancy publication",
+      "url": "https://www.ag.idaho.gov/content/uploads/2026/07/LandlordTenant.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.ag.idaho.gov/content/uploads/2026/07/LandlordTenant.pdf",
+        "retrieved_at": "2026-11-17T19:42:36.008752+00:00",
+        "http_status": "200",
+        "sha256": "f228fcd506febc702bb2d15cbf166a7cf2a89a7ad29f4b2e5912f4a111cfd9e9",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ID:wageLaw:9b2a4a59899e": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://www.labor.idaho.gov/laws-and-guidance/wage-and-hour/",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.labor.idaho.gov/laws-and-guidance/wage-and-hour/",
+        "retrieved_at": "2026-11-17T19:42:50.078038+00:00",
+        "http_status": "200",
+        "sha256": "251554c8eadc9362460855e3e85ffc1be0e63043cd6117c4bce1933365d7f318",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ID:debtLaw:4ab7ce50203a": {
+      "category": "debtLaw",
+      "title": "Debt collection publication",
+      "url": "https://www.finance.idaho.gov/financial-literacy-tip-of-the-week-idaho-department-of-finance-encourages-consumers-to-verify-licensing-when-seeking-help-with-tax-related-or-other-debt/",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.finance.idaho.gov/financial-literacy-tip-of-the-week-idaho-department-of-finance-encourages-consumers-to-verify-licensing-when-seeking-help-with-tax-related-or-other-debt/",
+        "retrieved_at": "2026-11-17T19:42:45.250877+00:00",
+        "http_status": "200",
+        "sha256": "01c91acae15c3c3200760ba9dd967428ece6b0a6217bb86f1f6fcdbf46f264d3",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ID:consumerLaw:8c12799daa4a": {
+      "category": "consumerLaw",
+      "title": "Consumer protection publication",
+      "url": "https://www.ag.idaho.gov/consumer-protection/",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.ag.idaho.gov/consumer-protection/",
+        "retrieved_at": "2026-11-17T19:42:35.160390+00:00",
+        "http_status": "200",
+        "sha256": "118da851dd98c39d12c63197db554bc71f5cf39681482fd2e513aea79197958f",
+        "health": "manual_review_required"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-ID:court:35a4b0b86174",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-ID:court_directory:2add8bad6697"
+    },
+    {
+      "id": "US-ID:court:bab196c71fd0",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-ID:court_directory:3399a812cabc"
+    },
+    {
+      "id": "US-ID:court:80111707e241",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-ID:court_directory:429dd790f3a5"
+    },
+    {
+      "id": "US-ID:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-ID:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-ID:court:e0af3b333e19",
+      "name": "Magistrate’s Division",
+      "level": "limited_trial",
+      "source_id": "US-ID:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Idaho Code § 5-219(4)",
+      "source_id": "US-ID:pi_limitations:c4313a5ebb6e",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Idaho Code § 5-216",
+      "source_id": "US-ID:written_contract_limitations:95d28668b4b5",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Idaho Code § 5-217",
+      "source_id": "US-ID:oral_contract_limitations:69cf8e101094",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Idaho Code § 6-303. Unlawful detainer defined",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "818449be80f0eccc8d071cd85e37ac": {
+      "citation": "Idaho Code § 5-216",
+      "source_id": "US-ID:written_contract_limitations:95d28668b4b5",
+      "authority_type": "statute",
+      "text": "5-216. Action on written contract. Within five (5) years: An action upon any contract, obligation or liability founded upon an instrument in writing. The limitations prescribed by this section shall never apply to actions in the name or for the benefit of the state and shall never be asserted nor interposed as a defense to any action in the name or for the benefit of the state although such limitations may have become fully operative as a defense prior to the adoption of this amendment.",
+      "text_sha256": "91a44cef636a96b28c806d7e17de6c625abf6e6303a1d5c864b217da52a86c21",
+      "publisher_sha256": "ae0846f198d634ff30253d8a1a33aa311cf4f17f41fd81f4586d6c3a590f80ac",
+      "retrieved_at": "2026-11-17T19:33:57.131589+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "aaf84ed5f67205bce7b87dbdf15b8c": {
+      "citation": "Idaho Code § 5-217",
+      "source_id": "US-ID:oral_contract_limitations:69cf8e101094",
+      "authority_type": "statute",
+      "text": "5-217. Action on oral contract. Within four (4) years: An action upon a contract, obligation or liability not founded upon an instrument of writing.",
+      "text_sha256": "00ab63cee053c4f0308711168e2d0832f506e1fa1b32552143bf3fcc3d305516",
+      "publisher_sha256": "e867f4505530fa9232738bae137becd2a4abce0ed37621a131aec87d0d43d206",
+      "retrieved_at": "2026-11-17T19:33:57.110131+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    }
+  }
+}

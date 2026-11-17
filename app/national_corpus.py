@@ -10,6 +10,7 @@ from typing import Literal, Protocol
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 from app.corpus_store import encode
+from app.jurisdictions import registry, tribal_registry
 
 
 AuthorityType = Literal[
@@ -17,7 +18,7 @@ AuthorityType = Literal[
     "administrative_decision", "attorney_general_opinion", "agency_guidance",
     "executive_material", "session_law", "recap_filing", "register_document", "court_instruction",
 ]
-Currentness = Literal["unresolved", "current", "current_as_of", "historical", "repealed", "superseded", "proposed"]
+Currentness = Literal["unresolved", "current", "current_as_of", "historical", "repealed", "superseded", "proposed", "future_effective", "review_required"]
 OPERATIVE_CLAIM = re.compile(
     r"\b(?:current law|current(?:ly)? (?:operative|effective|in force|in effect|applies|requires|governs)|"
     r"(?:law|rule|regulation|statute) (?:is|remains|still is) (?:current|operative|effective|in force|in effect)|"
@@ -45,8 +46,8 @@ class CorpusError(ValueError):
 class AuthorityVersion(BaseModel):
     model_config = ConfigDict(frozen=True, extra="forbid", str_strip_whitespace=True)
 
-    jurisdiction: str = Field(pattern=r"^US(?:-[A-Z]{2})?$")
-    sovereign: Literal["federal", "state"]
+    jurisdiction: str = Field(pattern=r"^(?:US(?:-[A-Z]{2})?|TRIBAL-[A-Z]+(?:-[A-Z]+)*)$")
+    sovereign: Literal["federal", "state", "district", "territory", "tribal"]
     authority_type: AuthorityType
     # Namespace and key identify a legal unit independent of its representation.
     # Adapters without independently checked identity must use their own namespace.
@@ -80,7 +81,9 @@ class AuthorityVersion(BaseModel):
 
     @model_validator(mode="after")
     def validate_scope(self):
-        if (self.jurisdiction == "US") != (self.sovereign == "federal"):
+        owner = registry().get(self.jurisdiction)
+        kind = owner.kind if owner else "tribal" if self.jurisdiction in tribal_registry() else None
+        if self.sovereign != kind:
             raise ValueError("authority_jurisdiction_mismatch")
         if self.opinion_role is not None and self.authority_type != "opinion":
             raise ValueError("opinion_role_requires_opinion")

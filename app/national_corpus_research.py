@@ -14,7 +14,9 @@ from app.research_planning import LegalResearchPlanner
 from app.retrieval import tokens
 
 
-STATE_CODES = {"Virginia": "VA", "Maryland": "MD", "Florida": "FL", "New York": "NY", "California": "CA"}
+from app.jurisdictions import SUBNATIONAL_NAMES, registry
+
+STATE_CODES = {name: code for code, name in SUBNATIONAL_NAMES.items()}
 SOURCE_TYPES = {"statute": "statute", "regulation": "regulation", "opinion": "court_opinion",
                 "court_rule": "court_rule", "constitution": "constitution", "register_document": "other"}
 FAMILY_PRIORITY = ("statute", "regulation", "opinion", "constitution", "court_rule", "register_document")
@@ -36,8 +38,10 @@ class NormalizedAuthorityProvider:
             return []
         if matter.sovereign == "federal" and matter.state is None:
             scope = "US"
-        elif matter.sovereign == "state" and matter.state in STATE_CODES:
+        elif matter.sovereign in {"state", "district", "territory"} and matter.state in STATE_CODES:
             scope = "US-" + STATE_CODES[matter.state]
+            if registry()[scope].kind != matter.sovereign:
+                return []
         else:
             return []
         try:

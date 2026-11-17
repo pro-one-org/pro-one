@@ -1,0 +1,250 @@
+{
+  "jurisdiction": "US-MO",
+  "version": "1",
+  "sources": {
+    "US-MO:statutes:32d610221df1": {
+      "category": "statutes",
+      "title": "Revised Statutes",
+      "url": "https://revisor.mo.gov/main/Home.aspx",
+      "directory": "doj-MO",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MO:constitution:29bc4805768e": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.sos.mo.gov/pubs/constitution",
+      "directory": "codes",
+      "locator": "Missouri"
+    },
+    "US-MO:legislature:0a0920afebfd": {
+      "category": "legislature",
+      "title": "General Assembly",
+      "url": "https://www.mo.gov/government/legislative-branch/",
+      "directory": "codes",
+      "locator": "Missouri"
+    },
+    "US-MO:labor_agency:bf1cd432b2de": {
+      "category": "labor_agency",
+      "title": "www.labor.mo.gov",
+      "url": "http://www.labor.mo.gov/",
+      "directory": "labor",
+      "locator": "Missouri"
+    },
+    "US-MO:commercial_code:3630a8bab309": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://revisor.mo.gov/main/OneChapter.aspx?chapter=400",
+      "directory": "ucc",
+      "locator": "Missouri"
+    },
+    "US-MO:civil_rules:04ecb21b8ded": {
+      "category": "civil_rules",
+      "title": "Civil Procedure and Limitations",
+      "url": "http://revisor.mo.gov/main/Home.aspx#T35",
+      "directory": "procedure",
+      "locator": "Missouri"
+    },
+    "US-MO:consumer_agency:8768ca62ec50": {
+      "category": "consumer_agency",
+      "title": "Missouri (MO)",
+      "url": "https://ago.mo.gov/civil-division/consumer",
+      "directory": "consumer",
+      "locator": "Missouri (MO)"
+    },
+    "US-MO:judiciary:1e35d4b824fb": {
+      "category": "judiciary",
+      "title": "Judiciary",
+      "url": "http://www.courts.mo.gov/",
+      "directory": "doj-MO",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-MO:court_directory:cff46dab0e67": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.courts.mo.gov/page.jsp?id=27",
+      "directory": "doj-MO",
+      "locator": "Supreme Court"
+    },
+    "US-MO:court_directory:04f28e82619a": {
+      "category": "court_directory",
+      "title": "Supreme Court Historical Database",
+      "url": "http://s1.sos.mo.gov/records/archives/archivesdb/supremecourt/",
+      "directory": "doj-MO",
+      "locator": "Supreme Court Historical Database"
+    },
+    "US-MO:court_directory:a5f8550b0e56": {
+      "category": "court_directory",
+      "title": "Appellate Courts",
+      "url": "http://www.courts.mo.gov/page.jsp?id=261",
+      "directory": "doj-MO",
+      "locator": "Appellate Courts"
+    },
+    "US-MO:court_directory:0c6c06cc8673": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "http://www.courts.mo.gov/page.jsp?id=321",
+      "directory": "doj-MO",
+      "locator": "Circuit Courts"
+    },
+    "US-MO:forms:1c520d4352f9": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "http://www.courts.mo.gov/page.jsp?id=103116",
+      "directory": "doj-MO",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-MO:constitution:d859db71ad9e": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.sos.mo.gov/pubs/constitution.asp",
+      "directory": "doj-MO",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MO:regulations:7d8481b62c3b": {
+      "category": "regulations",
+      "title": "Code of State Regulations",
+      "url": "http://www.sos.mo.gov/adrules/csr/csr.asp",
+      "directory": "doj-MO",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-MO:regulations:1d8343c8d05b": {
+      "category": "regulations",
+      "title": "Register",
+      "url": "http://www.sos.mo.gov/adrules/moreg/moreg.asp",
+      "directory": "doj-MO",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-MO:pi_limitations:8d881d62360d": {
+      "category": "pi_limitations",
+      "title": "Mo. Rev. Stat. § 516.120(4)",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=516.120",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://revisor.mo.gov/main/OneSection.aspx?section=516.120",
+        "retrieved_at": "2026-11-17T19:33:58.604667+00:00",
+        "http_status": "200",
+        "sha256": "5fd66250f582988023487b848f9ad62208b6e43f55f8d781f1b27509a8eb4fdd",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MO:written_contract_limitations:67915c1b5980": {
+      "category": "written_contract_limitations",
+      "title": "Mo. Rev. Stat. § 516.110(1)",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=516.110",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://revisor.mo.gov/main/OneSection.aspx?section=516.110",
+        "retrieved_at": "2026-11-17T19:33:59.646848+00:00",
+        "http_status": "200",
+        "sha256": "7f1027564f618904f2913770fcef8c2680083539fd57fb0e02d84902e5f8ef77",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MO:oral_contract_limitations:8d881d62360d": {
+      "category": "oral_contract_limitations",
+      "title": "Mo. Rev. Stat. § 516.120(1)",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=516.120",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://revisor.mo.gov/main/OneSection.aspx?section=516.120",
+        "retrieved_at": "2026-11-17T19:33:58.604667+00:00",
+        "http_status": "200",
+        "sha256": "5fd66250f582988023487b848f9ad62208b6e43f55f8d781f1b27509a8eb4fdd",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MO:small_claims:b1046dcf40d8": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.courts.mo.gov/hosted/circuit13/forms/Civil/CIVIL_SmallClaimsCourtHandbook.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.courts.mo.gov/hosted/circuit13/forms/Civil/CIVIL_SmallClaimsCourtHandbook.pdf",
+        "retrieved_at": "2026-11-17T19:42:37.813593+00:00",
+        "http_status": "200",
+        "sha256": "eb644cf6d891e0425c5c336119e2fffbb6bd6e7fa4b970c48ab270bd80843397",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MO:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-MO:court:ccde27e1f85e",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-MO:court_directory:cff46dab0e67"
+    },
+    {
+      "id": "US-MO:court:5552a1f98d9f",
+      "name": "Supreme Court Historical Database",
+      "level": "highest_directory",
+      "source_id": "US-MO:court_directory:04f28e82619a"
+    },
+    {
+      "id": "US-MO:court:979bd40bfa18",
+      "name": "Appellate Courts",
+      "level": "appellate_directory",
+      "source_id": "US-MO:court_directory:a5f8550b0e56"
+    },
+    {
+      "id": "US-MO:court:9e667d6ce06c",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-MO:court_directory:0c6c06cc8673"
+    },
+    {
+      "id": "US-MO:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-MO:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MO:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-MO:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Mo. Rev. Stat. § 516.120(4)",
+      "source_id": "US-MO:pi_limitations:8d881d62360d",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Mo. Rev. Stat. § 516.110(1)",
+      "source_id": "US-MO:written_contract_limitations:67915c1b5980",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Mo. Rev. Stat. § 516.120(1)",
+      "source_id": "US-MO:oral_contract_limitations:8d881d62360d",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Mo. Rev. Stat. § 213.040 Unlawfulhousingpractices--discriminationinhousing--sufficient compliance with other standards--local government compliance--construction of law--housingfor older persons, defined--conviction for controlled substances, effect--religious organizations, effect of; Mo. Rev. Stat. § 441.740 Immediate eviction ordered, when--immediate removal ordered, when",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ]
+}

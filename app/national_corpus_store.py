@@ -275,6 +275,39 @@ class SQLiteNormalizedCorpus:
                 result["supersession"] = self.supersession(result["version_id"], query.as_of)
         return results
 
+    def applicable_version(self, jurisdiction, authority_type, citation, on):
+        """Resolve a single evidenced version for an incident date, or explain the gap.
+
+        End dates are exclusive. A dated observation only establishes that date.
+        An open-ended historical record cannot establish applicability indefinitely.
+        """
+        rows = self.connection.execute(
+            """SELECT DISTINCT v.* FROM corpus_versions v JOIN corpus_citations c
+               ON c.version_id=v.version_id
+               WHERE v.jurisdiction=? AND v.authority_type=? AND c.citation=?""",
+            (jurisdiction, authority_type, citation_key(citation)),
+        ).fetchall()
+        if not rows:
+            return {"status": "unsupported_authority", "version_id": None}
+        eligible = []
+        day = on.isoformat()
+        for row in rows:
+            version = json.loads(row["payload"])
+            start, end = version.get("effective_from"), version.get("effective_until")
+            repeal = version.get("repealed_on")
+            if (start and day < start) or (end and day >= end) or (repeal and day >= repeal):
+                continue
+            if self.supersession(row["version_id"], on):
+                continue
+            status = version["currentness"]
+            dated = status in {"current", "current_as_of"} and version.get("current_as_of") == day
+            interval = status in {"historical", "superseded", "repealed"} and start and (end or repeal)
+            if dated or interval:
+                eligible.append(row["version_id"])
+        if len(eligible) == 1:
+            return {"status": "applicable_on_date", "version_id": eligible[0]}
+        return {"status": "version_conflict" if eligible else "currentness_unresolved", "version_id": None}
+
     def supersession(self, version_id, as_of):
         row = self.connection.execute("""
             SELECT change.*, previous.version_id AS earlier_version,

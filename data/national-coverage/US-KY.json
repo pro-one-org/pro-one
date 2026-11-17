@@ -1,0 +1,278 @@
+{
+  "jurisdiction": "US-KY",
+  "version": "1",
+  "sources": {
+    "US-KY:statutes:99aacae0b0f4": {
+      "category": "statutes",
+      "title": "Revised Statutes",
+      "url": "https://legislature.ky.gov/Law/Statutes/Pages/default.aspx",
+      "directory": "doj-KY",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-KY:constitution:fa689ad6aaa0": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://apps.legislature.ky.gov/law/constitution",
+      "directory": "doj-KY",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-KY:legislature:bf8c4df05d1b": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "https://legislature.ky.gov/Pages/index.aspx",
+      "directory": "codes",
+      "locator": "Kentucky"
+    },
+    "US-KY:labor_agency:fe2720e7ce69": {
+      "category": "labor_agency",
+      "title": "elc.ky.gov",
+      "url": "https://elc.ky.gov/Pages/index.aspx",
+      "directory": "labor",
+      "locator": "Kentucky"
+    },
+    "US-KY:commercial_code:81db735be52a": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code- TITLE XXIX",
+      "url": "https://apps.legislature.ky.gov/law/statutes/index.aspx",
+      "directory": "ucc",
+      "locator": "Kentucky"
+    },
+    "US-KY:civil_rules:eb038ee8f3cf": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "https://govt.westlaw.com/kyrules/Browse/Home/Kentucky/KentuckyCourtRules/KentuckyStatutesCourtRules?guid=N2C3C8B00A79211DAAB1DC31F8EB14563&transitionType=CategoryPageItem&contextData=(sc.Default)",
+      "directory": "procedure",
+      "locator": "Kentucky"
+    },
+    "US-KY:consumer_agency:260893fb7bb9": {
+      "category": "consumer_agency",
+      "title": "Kentucky (KY)",
+      "url": "https://www.ag.ky.gov/about/Office-Divisions/OCP/Pages/default.aspx",
+      "directory": "consumer",
+      "locator": "Kentucky (KY)"
+    },
+    "US-KY:judiciary:459b40293a3b": {
+      "category": "judiciary",
+      "title": "Courts",
+      "url": "https://courts.ky.gov/courts/Pages/default.aspx",
+      "directory": "doj-KY",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-KY:court_directory:cfcb0b765c51": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://kycourts.gov/Courts/Supreme-Court/Pages/default.aspx",
+      "directory": "doj-KY",
+      "locator": "Supreme Court"
+    },
+    "US-KY:court_directory:1c10c289c94b": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "https://kycourts.gov/Courts/Court-of-Appeals/Pages/default.aspx",
+      "directory": "doj-KY",
+      "locator": "Court of Appeals"
+    },
+    "US-KY:court_directory:4b5a5de060df": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "https://kycourts.gov/Courts/Circuit-Court/Pages/default.aspx",
+      "directory": "doj-KY",
+      "locator": "Circuit Courts"
+    },
+    "US-KY:court_directory:aab9c501bba4": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "https://kycourts.gov/Courts/District-Court/Pages/default.aspx",
+      "directory": "doj-KY",
+      "locator": "District Courts"
+    },
+    "US-KY:forms:442ccb0eff86": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://kycourts.gov/Legal-Forms/Pages/default.aspx",
+      "directory": "doj-KY",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-KY:regulations:3227b14b4b3f": {
+      "category": "regulations",
+      "title": "Administrative Regulations",
+      "url": "https://apps.legislature.ky.gov/committees/statutory/Admin_Regs/minutes_all.html",
+      "directory": "doj-KY",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-KY:pi_limitations:ffd0fc99aa2e": {
+      "category": "pi_limitations",
+      "title": "KRS 413.140",
+      "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=58050",
+      "directory": null,
+      "locator": "KRS 413.140",
+      "observation": {
+        "requested_url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=58050",
+        "retrieved_at": "2026-11-17T19:33:57.481985+00:00",
+        "http_status": "200",
+        "sha256": "8c5a4cae5dbf648ec3e1194fcd63cf8d61b418174eeb1f08d330528ce87d12f6",
+        "health": "healthy"
+      }
+    },
+    "US-KY:written_contract_limitations:c1b4d8ff45da": {
+      "category": "written_contract_limitations",
+      "title": "KRS 413.160",
+      "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=43544",
+      "directory": null,
+      "locator": "KRS 413.160",
+      "observation": {
+        "requested_url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=43544",
+        "retrieved_at": "2026-11-17T19:33:57.569065+00:00",
+        "http_status": "200",
+        "sha256": "65e6331dbeddeddda4c472260970beee2e8f7ce84da0f9b746307035894523c3",
+        "health": "healthy"
+      }
+    },
+    "US-KY:oral_contract_limitations:1050ec189bc2": {
+      "category": "oral_contract_limitations",
+      "title": "KRS 413.120(1)",
+      "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=44670",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=44670",
+        "retrieved_at": "2026-11-17T19:33:57.369159+00:00",
+        "http_status": "200",
+        "sha256": "8c50f9c592ea9e49672d52d1612d0a73fe19b4d622c2f2cf97f0c30d5f8f7f51",
+        "health": "manual_review_required"
+      }
+    },
+    "US-KY:small_claims:8409fa5bec72": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.kycourts.gov/Legal-Help/Documents/P-6_Small_Claims_Handbook.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.kycourts.gov/Legal-Help/Documents/P-6_Small_Claims_Handbook.pdf",
+        "retrieved_at": "2026-11-17T19:42:47.113967+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-KY:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    },
+    "US-KY:wageLaw:df65e75e3813": {
+      "category": "wageLaw",
+      "title": "KRS 337.385",
+      "url": "https://apps.legislature.ky.gov/Law/statutes/statute.aspx?id=55338",
+      "directory": null,
+      "locator": "KRS 337.385"
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-KY:court:4abae2be330b",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-KY:court_directory:cfcb0b765c51"
+    },
+    {
+      "id": "US-KY:court:d3988ff48eb8",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-KY:court_directory:1c10c289c94b"
+    },
+    {
+      "id": "US-KY:court:95cda9ff9174",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-KY:court_directory:4b5a5de060df"
+    },
+    {
+      "id": "US-KY:court:d692a4909ae3",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-KY:court_directory:aab9c501bba4"
+    },
+    {
+      "id": "US-KY:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-KY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-KY:court:3c9c83e81fef",
+      "name": "District",
+      "level": "limited_trial",
+      "source_id": "US-KY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "KRS 413.140(1)(a)",
+      "source_id": "US-KY:pi_limitations:ffd0fc99aa2e",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "KRS 413.160",
+      "source_id": "US-KY:written_contract_limitations:c1b4d8ff45da",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "KRS 413.120(1)",
+      "source_id": "US-KY:oral_contract_limitations:1050ec189bc2",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Ky. Rev. Stat. § 383.200. Definitions of forcible entry and detainer.; Ky. Rev. Stat. § 383.660. Tenant's noncompliance with rental agreement -- Failure to pay rent.; Ky. Rev. Stat. § 383.660. Tenant's noncompliance with rental agreement -- Failure to pay rent.",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "5a7886e45780eff9eeb0444e858be6": {
+      "citation": "KRS 413.140",
+      "source_id": "US-KY:pi_limitations:ffd0fc99aa2e",
+      "authority_type": "statute",
+      "text": "413.140 Actions to be brought within one year. (1) The following actions shall be commenced within one (1) year after the cause of action accrued: (a) An action for an injury to the person of the plaintiff, or of her husband, his wife, child, ward, apprentice, or servant;",
+      "text_sha256": "0e2b3861d9d1729790455e567e472a6c38c436d3af13020ec245009c1c6537e7",
+      "publisher_sha256": "8c5a4cae5dbf648ec3e1194fcd63cf8d61b418174eeb1f08d330528ce87d12f6",
+      "retrieved_at": "2026-11-17T19:33:57.481985+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "b2a19060b397c9151b873af6c1c3d9": {
+      "citation": "KRS 413.160",
+      "source_id": "US-KY:written_contract_limitations:c1b4d8ff45da",
+      "authority_type": "statute",
+      "text": "413.160 Actions upon written contract or not provided for by statute -- Ten-year limitation. An action upon a written contract executed after July 15, 2014, unless otherwise provided by statute, and an action for relief not provided for by statute can only be commenced within ten (10) years after the cause of action accrued.",
+      "text_sha256": "5a691ae6421d61aa16c4310089ea3f5e48164bd7a7f6442255506bb312949ace",
+      "publisher_sha256": "65e6331dbeddeddda4c472260970beee2e8f7ce84da0f9b746307035894523c3",
+      "retrieved_at": "2026-11-17T19:33:57.569065+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "9ae41e9bd91ede686e1f39d36ae764": {
+      "citation": "KRS 337.385",
+      "source_id": "US-KY:wageLaw:df65e75e3813",
+      "authority_type": "statute",
+      "text": "(1) Except as provided in subsection (3) of this section, any employer who pays any employee less than wag es and overtime compensation to which such employee is entitled under or by virtue of KRS 337.020 to 337.285 shall be liable to such employee affected for the full amount of such wages and overtime compensation, less any amount actually paid to such employ ee by the employer, for an additional equal amount as liquidated damages, and for costs and such reasonable attorney's fees as may be allowed by the court.",
+      "text_sha256": "9fd2b01d11ac6009f029c551f5294eccb4f7b108ce677d0660ee8c2a7cbc15f8",
+      "publisher_sha256": "2ece3377951fcd848779a7f62958ec6d9f31a42fa627bf71318b999f14dff797",
+      "retrieved_at": "2026-11-17T19:41:32.510695+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    }
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "jurisdiction": "US-CT",
+  "version": "1",
+  "sources": {
+    "US-CT:statutes:07ce012e5334": {
+      "category": "statutes",
+      "title": "General Statutes of Connecticut",
+      "url": "https://www.cga.ct.gov/current/pub/titles.htm",
+      "directory": "codes",
+      "locator": "Connecticut"
+    },
+    "US-CT:constitution:680b2db9a5f0": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.cga.ct.gov/asp/Content/constitutions/CTConstitution.htm",
+      "directory": "codes",
+      "locator": "Connecticut"
+    },
+    "US-CT:legislature:6a3a23523cc8": {
+      "category": "legislature",
+      "title": "General Assembly",
+      "url": "https://www.cga.ct.gov",
+      "directory": "codes",
+      "locator": "Connecticut"
+    },
+    "US-CT:labor_agency:7d25cd0a268e": {
+      "category": "labor_agency",
+      "title": "www.ct.gov/dol",
+      "url": "http://www.ct.gov/dol",
+      "directory": "labor",
+      "locator": "Connecticut"
+    },
+    "US-CT:business_registration:9d9522f60e77": {
+      "category": "business_registration",
+      "title": "Connecticut Secretary of State",
+      "url": "https://www.concord-sots.ct.gov/CONCORD/NewBusinessFormation/BusinessRegistrationTool.jsp?pInquiry=false",
+      "directory": "business",
+      "locator": "Connecticut"
+    },
+    "US-CT:commercial_code:b457e88a776a": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://www.cga.ct.gov/current/pub/title_42a.htm",
+      "directory": "ucc",
+      "locator": "Connecticut"
+    },
+    "US-CT:civil_rules:049304d9840d": {
+      "category": "civil_rules",
+      "title": "Civil Process, Service and Time for Return",
+      "url": "http://www.cga.ct.gov/current/pub/chap_896.htm",
+      "directory": "procedure",
+      "locator": "Connecticut"
+    },
+    "US-CT:consumer_agency:90404594ec5b": {
+      "category": "consumer_agency",
+      "title": "Connecticut (CT)",
+      "url": "https://portal.ct.gov/dcp",
+      "directory": "consumer",
+      "locator": "Connecticut (CT)"
+    },
+    "US-CT:judiciary:40513dbd8c69": {
+      "category": "judiciary",
+      "title": "Judicial Branch",
+      "url": "https://www.jud.ct.gov/",
+      "directory": "doj-CT",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-CT:court_directory:7638e5c0cebd": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://jud.ct.gov/supremecourt/",
+      "directory": "doj-CT",
+      "locator": "Supreme Court"
+    },
+    "US-CT:court_directory:9162720aa65f": {
+      "category": "court_directory",
+      "title": "Appellate Court",
+      "url": "http://jud.ct.gov/appellatecourt/",
+      "directory": "doj-CT",
+      "locator": "Appellate Court"
+    },
+    "US-CT:court_directory:298396278e2a": {
+      "category": "court_directory",
+      "title": "Superior Court",
+      "url": "https://www.jud.ct.gov/external/super/",
+      "directory": "doj-CT",
+      "locator": "Superior Court"
+    },
+    "US-CT:court_directory:c9362edf9673": {
+      "category": "court_directory",
+      "title": "Probate Court",
+      "url": "http://www.ctprobate.gov/",
+      "directory": "doj-CT",
+      "locator": "Probate Court"
+    },
+    "US-CT:forms:e3b48a48432d": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "http://www.jud.ct.gov/webforms/",
+      "directory": "doj-CT",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-CT:constitution:bd15b928f4d9": {
+      "category": "constitution",
+      "title": "Constitution and History",
+      "url": "https://www.cga.ct.gov/asp/menu/cgastatutes.asp",
+      "directory": "doj-CT",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-CT:statutes:b20e40a28821": {
+      "category": "statutes",
+      "title": "Statutes",
+      "url": "http://www.cga.ct.gov/lco/statutes.asp",
+      "directory": "doj-CT",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-CT:regulations:cc8dff79690a": {
+      "category": "regulations",
+      "title": "State Register and Manual",
+      "url": "http://portal.ct.gov/SOTS/Register-Manual/Register-Manual/Welcome-to-the-Register-and-Manual",
+      "directory": "doj-CT",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-CT:regulations:b5a4bbf93fff": {
+      "category": "regulations",
+      "title": "eRegulations",
+      "url": "https://eregulations.ct.gov/eRegsPortal/",
+      "directory": "doj-CT",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-CT:pi_limitations:515ac977187a": {
+      "category": "pi_limitations",
+      "title": "Conn. Gen. Stat. § 52-584",
+      "url": "https://www.cga.ct.gov/current/pub/chap_926.htm#sec_52-584",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.cga.ct.gov/current/pub/chap_926.htm",
+        "retrieved_at": "2026-11-17T19:33:56.045083+00:00",
+        "http_status": "200",
+        "sha256": "29bd29d8f82067f1a90cfffa4b5e1ba158aafe60a3bcd979838f464ad7f60329",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CT:written_contract_limitations:8b82844dcc78": {
+      "category": "written_contract_limitations",
+      "title": "Conn. Gen. Stat. § 52-576(a)",
+      "url": "https://www.cga.ct.gov/current/pub/chap_926.htm#sec_52-576",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.cga.ct.gov/current/pub/chap_926.htm",
+        "retrieved_at": "2026-11-17T19:33:56.045083+00:00",
+        "http_status": "200",
+        "sha256": "29bd29d8f82067f1a90cfffa4b5e1ba158aafe60a3bcd979838f464ad7f60329",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CT:oral_contract_limitations:9a6665759917": {
+      "category": "oral_contract_limitations",
+      "title": "Conn. Gen. Stat. § 52-581",
+      "url": "https://www.cga.ct.gov/current/pub/chap_926.htm#sec_52-581",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.cga.ct.gov/current/pub/chap_926.htm",
+        "retrieved_at": "2026-11-17T19:33:56.045083+00:00",
+        "http_status": "200",
+        "sha256": "29bd29d8f82067f1a90cfffa4b5e1ba158aafe60a3bcd979838f464ad7f60329",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CT:small_claims:020bc8f6d7c0": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://jud.ct.gov/external/super/E-services/efile/How_DoIFile_New_SmClaims_Case.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://jud.ct.gov/external/super/E-services/efile/How_DoIFile_New_SmClaims_Case.pdf",
+        "retrieved_at": "2026-11-17T19:41:57.282734+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-CT:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 26"
+    },
+    "US-CT:wageLaw:8ca6435c482f": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://portal.ct.gov/dol/divisions/wage-and-workplace-standards/wage-and-hour",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://portal.ct.gov/dol/divisions/wage-and-workplace-standards/wage-and-hour",
+        "retrieved_at": "2026-11-17T19:42:32.074680+00:00",
+        "http_status": "200",
+        "sha256": "81f51a8597093f092498a3f963fdfec70d88289814f7fd4bc2fd1593ac8ce6e4",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CT:debtLaw:33d6e73c0061": {
+      "category": "debtLaw",
+      "title": "Debt collection publication",
+      "url": "https://portal.ct.gov/DOB/Consumer-Credit-Licensing-Info/Consumer-Credit-Licensing-Information/Collection-Agency-Licensing-Information",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://portal.ct.gov/DOB/Consumer-Credit-Licensing-Info/Consumer-Credit-Licensing-Information/Collection-Agency-Licensing-Information",
+        "retrieved_at": "2026-11-17T19:42:24.043374+00:00",
+        "http_status": "200",
+        "sha256": "43a33c6e33547942740235f99924da678d2470571f0e962af5a27f78306f77d6",
+        "health": "manual_review_required"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-CT:court:6a3a7e215097",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-CT:court_directory:7638e5c0cebd"
+    },
+    {
+      "id": "US-CT:court:f782f97a38f5",
+      "name": "Appellate Court",
+      "level": "appellate_directory",
+      "source_id": "US-CT:court_directory:9162720aa65f"
+    },
+    {
+      "id": "US-CT:court:bb308ce2b2e3",
+      "name": "Superior Court",
+      "level": "trial_directory",
+      "source_id": "US-CT:court_directory:298396278e2a"
+    },
+    {
+      "id": "US-CT:court:0ee7c9e1bb68",
+      "name": "Probate Court",
+      "level": "trial_directory",
+      "source_id": "US-CT:court_directory:c9362edf9673"
+    },
+    {
+      "id": "US-CT:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-CT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-CT:court:4f54b582f9f0",
+      "name": "Probate",
+      "level": "limited_trial",
+      "source_id": "US-CT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Conn. Gen. Stat. § 52-584",
+      "source_id": "US-CT:pi_limitations:515ac977187a",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Conn. Gen. Stat. § 52-576(a)",
+      "source_id": "US-CT:written_contract_limitations:8b82844dcc78",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Conn. Gen. Stat. § 52-581",
+      "source_id": "US-CT:oral_contract_limitations:9a6665759917",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Conn. Gen. Stat. § 47a-15. Noncompliance by tenant. Remedy of breach by tenant. Landlord's remedies",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ]
+}

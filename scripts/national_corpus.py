@@ -86,7 +86,7 @@ def main():
     search.add_argument("--edition", default="")
     search.add_argument("--provider", choices=PROVIDERS, default="")
     search.add_argument("--opinion-role", action="append", choices=get_args(OpinionRole), default=[])
-    search.add_argument("--currentness", choices=("unresolved", "current", "current_as_of", "historical", "repealed", "superseded", "proposed"),
+    search.add_argument("--currentness", choices=("unresolved", "current", "current_as_of", "historical", "repealed", "superseded", "proposed", "review_required", "future_effective"),
                         default="unresolved")
     search.add_argument("--as-of", type=date.fromisoformat)
     search.add_argument("--limit", type=int, default=12)

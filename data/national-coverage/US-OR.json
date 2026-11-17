@@ -1,0 +1,322 @@
+{
+  "jurisdiction": "US-OR",
+  "version": "1",
+  "sources": {
+    "US-OR:statutes:11843e19968c": {
+      "category": "statutes",
+      "title": "Oregon Revised Statutes",
+      "url": "http://www.oregonlegislature.gov/bills_laws/Pages/ORS.aspx",
+      "directory": "codes",
+      "locator": "Oregon"
+    },
+    "US-OR:constitution:cee8aef619a0": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.oregonlegislature.gov/bills_laws/Pages/OrConst.aspx",
+      "directory": "codes",
+      "locator": "Oregon"
+    },
+    "US-OR:legislature:fa6c5309dfda": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.oregonlegislature.gov/",
+      "directory": "codes",
+      "locator": "Oregon"
+    },
+    "US-OR:labor_agency:004b3de49505": {
+      "category": "labor_agency",
+      "title": "www.oregon.gov/boli",
+      "url": "http://www.oregon.gov/boli",
+      "directory": "labor",
+      "locator": "Oregon"
+    },
+    "US-OR:commercial_code:06bcecac3ba3": {
+      "category": "commercial_code",
+      "title": "General Provisions for Uniform Commercial Code",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors071.html",
+      "directory": "ucc",
+      "locator": "Oregon"
+    },
+    "US-OR:civil_rules:21de2d05bbac": {
+      "category": "civil_rules",
+      "title": "Procedure in Civil Proceedings-(see Chapters 12-36)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/Pages/ORS.aspx",
+      "directory": "procedure",
+      "locator": "Oregon"
+    },
+    "US-OR:consumer_agency:c5cf0d9b9190": {
+      "category": "consumer_agency",
+      "title": "Oregon (OR)",
+      "url": "https://www.doj.state.or.us/consumer-protection/",
+      "directory": "consumer",
+      "locator": "Oregon (OR)"
+    },
+    "US-OR:judiciary:79002a795822": {
+      "category": "judiciary",
+      "title": "Oregon Judicial Department",
+      "url": "https://www.courts.oregon.gov/Pages/default.aspx",
+      "directory": "doj-OR",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-OR:judiciary:22b179d68854": {
+      "category": "judiciary",
+      "title": "Court Opinions",
+      "url": "http://willamettelawonline.com/category/orsupreme/",
+      "directory": "doj-OR",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-OR:court_directory:36e84a666e74": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://courts.oregon.gov/Supreme/Pages/index.aspx",
+      "directory": "doj-OR",
+      "locator": "Supreme Court"
+    },
+    "US-OR:opinions:0fb87f450512": {
+      "category": "opinions",
+      "title": "Supreme Court Opinions (State of Oregon Digital Collection)",
+      "url": "https://cdm17027.contentdm.oclc.org/digital/collection/p17027coll3",
+      "directory": "doj-OR",
+      "locator": "State and Local Courts / Supreme Court"
+    },
+    "US-OR:court_directory:9198af8080ae": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "http://courts.oregon.gov/COA/Pages/index.aspx",
+      "directory": "doj-OR",
+      "locator": "Court of Appeals"
+    },
+    "US-OR:opinions:7480b15ac444": {
+      "category": "opinions",
+      "title": "Court of Appeals Opinions (State of Oregon Digital Collection)",
+      "url": "https://cdm17027.contentdm.oclc.org/digital/collection/p17027coll5",
+      "directory": "doj-OR",
+      "locator": "State and Local Courts / Courts of Appeal"
+    },
+    "US-OR:court_directory:9b9f45bcd6fc": {
+      "category": "court_directory",
+      "title": "Tax Court",
+      "url": "http://courts.oregon.gov/Tax/",
+      "directory": "doj-OR",
+      "locator": "Tax Court"
+    },
+    "US-OR:court_directory:81df62691eb3": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "https://www.courts.oregon.gov/courts/Pages/default.aspx",
+      "directory": "doj-OR",
+      "locator": "Circuit Courts"
+    },
+    "US-OR:forms:d9d10384bebd": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "http://www.courts.oregon.gov/forms/Pages/default.aspx",
+      "directory": "doj-OR",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-OR:forms:904b07695bfd": {
+      "category": "forms",
+      "title": "Tax Court Forms",
+      "url": "http://courts.oregon.gov/Tax/Pages/forms.aspx",
+      "directory": "doj-OR",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-OR:constitution:628c592b208b": {
+      "category": "constitution",
+      "title": "Oregon Constitution",
+      "url": "https://www.oregonlegislature.gov/bills_laws/Pages/OreConstAdmission.aspx",
+      "directory": "doj-OR",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-OR:statutes:958b4a9ec04b": {
+      "category": "statutes",
+      "title": "Bills and Laws",
+      "url": "https://www.oregonlegislature.gov/bills_laws",
+      "directory": "doj-OR",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-OR:pi_limitations:e26e5e69b107": {
+      "category": "pi_limitations",
+      "title": "Or. Rev. Stat. § 12.110(1)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors012.html",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.oregonlegislature.gov/bills_laws/ors/ors012.html",
+        "retrieved_at": "2026-11-17T19:34:02.277299+00:00",
+        "http_status": "200",
+        "sha256": "b8962dadbebcce63dbb6b1a1bfa9c9244f904dddaad59ecf63b4cb4b180b2410",
+        "health": "manual_review_required"
+      }
+    },
+    "US-OR:written_contract_limitations:e26e5e69b107": {
+      "category": "written_contract_limitations",
+      "title": "Or. Rev. Stat. § 12.080(1)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors012.html",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.oregonlegislature.gov/bills_laws/ors/ors012.html",
+        "retrieved_at": "2026-11-17T19:34:02.277299+00:00",
+        "http_status": "200",
+        "sha256": "b8962dadbebcce63dbb6b1a1bfa9c9244f904dddaad59ecf63b4cb4b180b2410",
+        "health": "manual_review_required"
+      }
+    },
+    "US-OR:oral_contract_limitations:e26e5e69b107": {
+      "category": "oral_contract_limitations",
+      "title": "Or. Rev. Stat. § 12.080(1)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors012.html",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.oregonlegislature.gov/bills_laws/ors/ors012.html",
+        "retrieved_at": "2026-11-17T19:34:02.277299+00:00",
+        "http_status": "200",
+        "sha256": "b8962dadbebcce63dbb6b1a1bfa9c9244f904dddaad59ecf63b4cb4b180b2410",
+        "health": "manual_review_required"
+      }
+    },
+    "US-OR:small_claims:a0356dbaab93": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.courts.oregon.gov/forms/Pages/small-claims.aspx",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.courts.oregon.gov/forms/Pages/small-claims.aspx",
+        "retrieved_at": "2026-11-17T19:42:38.440951+00:00",
+        "http_status": "503",
+        "sha256": null,
+        "health": "unreachable"
+      }
+    },
+    "US-OR:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 29"
+    },
+    "US-OR:commencement:8f5b2fab8947": {
+      "category": "commencement",
+      "title": "ORCP 3",
+      "url": "https://www.oregonlegislature.gov/bills_laws/SiteAssets/ORCP.html",
+      "directory": null,
+      "locator": "ORCP 3",
+      "language": "en",
+      "publisher_role": "official_rule_publication",
+      "observation": {
+        "health": "retained_snapshot",
+        "retrieved_at": "2026-11-17T20:14:55.256641+00:00",
+        "sha256": "e55957b95b25f21142acfca62e8a6c9521b79b7362289f0b308fedf6aa0b602c"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-OR:court:7c2b99f48094",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-OR:court_directory:36e84a666e74"
+    },
+    {
+      "id": "US-OR:court:43506991f6e4",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-OR:court_directory:9198af8080ae"
+    },
+    {
+      "id": "US-OR:court:377a6e307544",
+      "name": "Tax Court",
+      "level": "trial_directory",
+      "source_id": "US-OR:court_directory:9b9f45bcd6fc"
+    },
+    {
+      "id": "US-OR:court:8af72ce8b0c9",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-OR:court_directory:81df62691eb3"
+    },
+    {
+      "id": "US-OR:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-OR:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-OR:court:808814dfffdd",
+      "name": "Tax",
+      "level": "general_trial",
+      "source_id": "US-OR:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-OR:court:09753adaaaf9",
+      "name": "County",
+      "level": "limited_trial",
+      "source_id": "US-OR:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-OR:court:0b3db1cdefd8",
+      "name": "Justice",
+      "level": "limited_trial",
+      "source_id": "US-OR:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-OR:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-OR:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Or. Rev. Stat. § 12.110(1)",
+      "source_id": "US-OR:pi_limitations:e26e5e69b107",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Or. Rev. Stat. § 12.080(1)",
+      "source_id": "US-OR:written_contract_limitations:e26e5e69b107",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Or. Rev. Stat. § 12.080(1)",
+      "source_id": "US-OR:oral_contract_limitations:e26e5e69b107",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Or. Rev. Stat. § 90.392 Termination of tenancy for cause; tenant right to cure violation.; Or. Rev. Stat. Ch. 13, § 5. Definitions; prohibited conduct; notice; remedies; Or. Rev. Stat. Ch. 13, § 3. Definitions; prohibited actions; notice; application of payments; remedies",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "5514f30522e09093bac96faf4dd5dc": {
+      "source_id": "US-OR:commencement:8f5b2fab8947",
+      "citation": "ORCP 3",
+      "authority_type": "court_rule",
+      "language": "en",
+      "text": "RULE 3 Commencement of action. Other than for purposes of statutes of limitations, an action shall be commenced by filing a complaint with the clerk of the court.",
+      "text_sha256": "40fa1f941a2d120743ee02e34e2744bb036d823ae14564ce406da5c48cad6ea6",
+      "publisher_sha256": "e55957b95b25f21142acfca62e8a6c9521b79b7362289f0b308fedf6aa0b602c",
+      "retrieved_at": "2026-11-17T20:14:55.256641+00:00",
+      "currentness": "unresolved"
+    }
+  }
+}

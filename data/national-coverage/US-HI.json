@@ -1,0 +1,283 @@
+{
+  "jurisdiction": "US-HI",
+  "version": "1",
+  "sources": {
+    "US-HI:statutes:4f7aaa0c59e4": {
+      "category": "statutes",
+      "title": "Hawaii Revised Statutes",
+      "url": "https://www.capitol.hawaii.gov/docs/HRS.htm",
+      "directory": "codes",
+      "locator": "Hawaii"
+    },
+    "US-HI:constitution:eac3163fa8eb": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://lrbhawaii.org/con/",
+      "directory": "codes",
+      "locator": "Hawaii"
+    },
+    "US-HI:legislature:0d3464bfe4af": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.capitol.hawaii.gov/house.aspx",
+      "directory": "codes",
+      "locator": "Hawaii"
+    },
+    "US-HI:labor_agency:b0d91bcf2bf2": {
+      "category": "labor_agency",
+      "title": "www.labor.hawaii.gov",
+      "url": "http://www.labor.hawaii.gov/",
+      "directory": "labor",
+      "locator": "Hawaii"
+    },
+    "US-HI:commercial_code:9aa83987c3be": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://www.capitol.hawaii.gov/hrscurrent/Vol11_Ch0476-0490/HRS0490/HRS_0490-.htm",
+      "directory": "ucc",
+      "locator": "Hawaii"
+    },
+    "US-HI:civil_rules:2b18fd3c6a4c": {
+      "category": "civil_rules",
+      "title": "Civil Remedies and Defenses and Special Proceedings",
+      "url": "http://www.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0651/HRS_0651-.htm",
+      "directory": "procedure",
+      "locator": "Hawaii"
+    },
+    "US-HI:consumer_agency:b7a4eae0a755": {
+      "category": "consumer_agency",
+      "title": "Hawaii (HI)",
+      "url": "https://cca.hawaii.gov/ocp/",
+      "directory": "consumer",
+      "locator": "Hawaii (HI)"
+    },
+    "US-HI:judiciary:22385cd8827e": {
+      "category": "judiciary",
+      "title": "Hawaii State Judiciary",
+      "url": "http://www.courts.state.hi.us/",
+      "directory": "doj-HI",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-HI:court_directory:7631297300ed": {
+      "category": "court_directory",
+      "title": "Supreme Court of Hawaii",
+      "url": "https://www.courts.state.hi.us/courts/supreme/hawaii_supreme_court",
+      "directory": "doj-HI",
+      "locator": "Supreme Court of Hawaii"
+    },
+    "US-HI:court_directory:f4ffeb91c5c3": {
+      "category": "court_directory",
+      "title": "Intermediate Court of Appeals",
+      "url": "https://www.courts.state.hi.us/courts/appeals/intermediate_court_of_appeals",
+      "directory": "doj-HI",
+      "locator": "Intermediate Court of Appeals"
+    },
+    "US-HI:court_directory:382cbbee01c1": {
+      "category": "court_directory",
+      "title": "Land and Tax Appeal Courts",
+      "url": "http://www.courts.state.hi.us/courts/landtax/land_and_tax_appeal_courts",
+      "directory": "doj-HI",
+      "locator": "Land and Tax Appeal Courts"
+    },
+    "US-HI:court_directory:28aaf5641843": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "http://www.courts.state.hi.us/courts/circuit/circuit_courts",
+      "directory": "doj-HI",
+      "locator": "Circuit Courts"
+    },
+    "US-HI:court_directory:fa51882acba9": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "http://www.courts.state.hi.us/courts/district/district_courts",
+      "directory": "doj-HI",
+      "locator": "District Courts"
+    },
+    "US-HI:court_directory:a8089c84745f": {
+      "category": "court_directory",
+      "title": "Family Courts",
+      "url": "http://www.courts.state.hi.us/courts/family/family_courts",
+      "directory": "doj-HI",
+      "locator": "Family Courts"
+    },
+    "US-HI:forms:1afe05e2fe92": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "http://www.courts.state.hi.us/self-help/courts/forms/court_forms",
+      "directory": "doj-HI",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-HI:constitution:5c659f6b2230": {
+      "category": "constitution",
+      "title": "Hawaii Constitution",
+      "url": "https://lrb.hawaii.gov/constitution",
+      "directory": "doj-HI",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-HI:statutes:7705793a123e": {
+      "category": "statutes",
+      "title": "Revised Statutes, Bills, and Legislative Documents",
+      "url": "https://www.capitol.hawaii.gov/documentdirectories.aspx",
+      "directory": "doj-HI",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-HI:pi_limitations:57f7eb463907": {
+      "category": "pi_limitations",
+      "title": "Haw. Rev. Stat. § 657-7",
+      "url": "https://www.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0657/HRS_0657-0007.htm",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0657/HRS_0657-0007.htm",
+        "retrieved_at": "2026-11-17T19:33:55.628033+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-HI:written_contract_limitations:a89665f68c95": {
+      "category": "written_contract_limitations",
+      "title": "Haw. Rev. Stat. § 657-1(1)",
+      "url": "https://www.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0657/HRS_0657-0001.htm",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0657/HRS_0657-0001.htm",
+        "retrieved_at": "2026-11-17T19:33:55.557448+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-HI:oral_contract_limitations:a89665f68c95": {
+      "category": "oral_contract_limitations",
+      "title": "Haw. Rev. Stat. § 657-1(1)",
+      "url": "https://www.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0657/HRS_0657-0001.htm",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0657/HRS_0657-0001.htm",
+        "retrieved_at": "2026-11-17T19:33:55.557448+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-HI:small_claims:8e113fb880a2": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.courts.state.hi.us/small_claims",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.courts.state.hi.us/small_claims",
+        "retrieved_at": "2026-11-17T19:42:40.480665+00:00",
+        "http_status": "200",
+        "sha256": "3bcc2c93329e8fdbf7fe7f669518e8135a94fcc9763b0db8cc7db84790698578",
+        "health": "manual_review_required"
+      }
+    },
+    "US-HI:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 26"
+    },
+    "US-HI:wageLaw:a2a1025b8946": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://labor.hawaii.gov/wsd/unpaid-wages/",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://labor.hawaii.gov/wsd/unpaid-wages/",
+        "retrieved_at": "2026-11-17T19:42:00.975319+00:00",
+        "http_status": "200",
+        "sha256": "b1e3d6a4c2a1cc18354158de84b11260cd8c6df4f95d4fb04da550902b2a44fa",
+        "health": "manual_review_required"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-HI:court:ef8dc041901c",
+      "name": "Supreme Court of Hawaii",
+      "level": "highest_directory",
+      "source_id": "US-HI:court_directory:7631297300ed"
+    },
+    {
+      "id": "US-HI:court:a257d035542e",
+      "name": "Intermediate Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-HI:court_directory:f4ffeb91c5c3"
+    },
+    {
+      "id": "US-HI:court:061d7d2af052",
+      "name": "Land and Tax Appeal Courts",
+      "level": "trial_directory",
+      "source_id": "US-HI:court_directory:382cbbee01c1"
+    },
+    {
+      "id": "US-HI:court:31b6f0f4a057",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-HI:court_directory:28aaf5641843"
+    },
+    {
+      "id": "US-HI:court:a814224d39de",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-HI:court_directory:fa51882acba9"
+    },
+    {
+      "id": "US-HI:court:fa45616aafa9",
+      "name": "Family Courts",
+      "level": "trial_directory",
+      "source_id": "US-HI:court_directory:a8089c84745f"
+    },
+    {
+      "id": "US-HI:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-HI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-HI:court:3c9c83e81fef",
+      "name": "District",
+      "level": "limited_trial",
+      "source_id": "US-HI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Haw. Rev. Stat. § 657-7",
+      "source_id": "US-HI:pi_limitations:57f7eb463907",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Haw. Rev. Stat. § 657-1(1)",
+      "source_id": "US-HI:written_contract_limitations:a89665f68c95",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Haw. Rev. Stat. § 657-1(1)",
+      "source_id": "US-HI:oral_contract_limitations:a89665f68c95",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Haw. Rev. Stat. § 521-74. Retaliatory evictions and rent increases prohibited.; Haw. Rev. Stat. § 521-41. Landlord to supply possession of dwelling unit.; Haw. Rev. Stat. § 666-1. Summary possession on termination or forfeiture of lease.",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ]
+}
