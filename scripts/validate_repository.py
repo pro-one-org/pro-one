@@ -619,7 +619,9 @@ def main() -> int:
                 report.error(f"source passage {passage['id']}: {error}")
 
     if not report.errors:
+        from app.action_catalog import ActionCatalog
         from app.claim_catalog import ClaimCatalog
+        from app.procedural_authority import load_catalog
         from app.repository import RecordRepository, RepositoryLoadError
         try:
             catalog = ClaimCatalog(RecordRepository(DATA_DIR, SCHEMA_DIR))
@@ -628,6 +630,17 @@ def main() -> int:
                 report.checked("Claim theory versions")
         except (OSError, ValueError, RepositoryLoadError) as exc:
             report.error(f"Claim theory catalog: {exc}")
+        else:
+            try:
+                action_catalog = ActionCatalog(load_catalog(), catalog)
+                for _ in action_catalog.actions:
+                    report.checked("Action definitions")
+                for _ in action_catalog.deadlines:
+                    report.checked("Deadline policies")
+                for _ in action_catalog.templates:
+                    report.checked("Action document templates")
+            except (OSError, ValueError) as exc:
+                report.error(f"Legal Action OS catalog: {exc}")
 
     validate_markdown(report)
 

@@ -120,6 +120,15 @@ conflicts, and targeted factual questions on revision-bound reports.
 See the [Claim & Element Engine guide](docs/claim-element-engine.md) for
 coverage, API details, and offline checks.
 
+## Legal Action OS v1
+
+Development Legal Action OS evaluates bounded preparation requirements,
+records traceable deadlines where the rule, event and calendar support them,
+assembles provenance-backed reference drafts, and projects a revisioned matter
+workspace. It includes a Richmond Circuit Court complaint preparation scenario
+and exact draft review. External execution is disabled. See the
+[Legal Action OS guide](docs/legal-action-os.md) for setup, coverage and release gates.
+
 ## Validation
 
 ```text

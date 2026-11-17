@@ -6,11 +6,15 @@ from app.matter_ingest import FACT_FIELDS, MONTH_DATE, MONTHS, grounded_rows
 from app.matter_models import DocumentSource, ExternalSource, Gap, InferenceSource, Target, Temporal, UserSource
 from app.procedural_research import FACT_QUESTIONS, MatterFacts
 
-PARTY_FIELDS = {"brand", "legal_name", "registry_id", "entity_type", "alias", "operator", "property_owner", "registered_agent"}
+PARTY_FIELDS = {"brand", "legal_name", "registry_id", "entity_type", "alias", "operator", "property_owner",
+                "registered_agent", "self_name"}
 EVENT_FIELDS = {"date", "location", "street"}
 OPTIONAL_EVENT_FIELDS = {"hazard", "warning_sign", "injury", "employee_notice", "hazard_duration",
-                         "visit_purpose", "condition_visibility", "hazard_origin", "fall_mechanism"}
-IDENTITY_FIELDS = {"legal_name", "operator", "property_owner"}
+                         "visit_purpose", "condition_visibility", "hazard_origin", "fall_mechanism",
+                         "incident_locality", "service_date", "service_mode", "document_type",
+                         "extension_status", "local_rules_checked"}
+IDENTITY_FIELDS = {"legal_name", "operator", "property_owner", "registered_agent"}
+IDENTITY_RELATIONSHIPS = {field: field for field in IDENTITY_FIELDS - {"property_owner"}} | {"property_owner": "owner"}
 INDEPENDENT = {"alias", "allegation"}
 SUPPORT_ORDER = {"asserted": 0, "documented": 1, "externally_verified": 2}
 BASE_GAPS = {
@@ -141,7 +145,9 @@ def validate(matter):
             raise MatterError("unsupported_assertion")
     for row in matter.parties:
         origin = assertions.get(row.origin)
-        if not origin or origin.target.subject != row.id or origin.target.field not in {"brand", "legal_name"}:
+        if (not origin or origin.target.subject != row.id
+                or origin.target.field not in {"brand", "legal_name", "self_name"}
+                or origin.target.field == "self_name" and row.role != "user"):
             raise MatterError("invalid_party_origin")
     for row in matter.events:
         if row.origin not in messages and row.origin not in evidence:
@@ -150,7 +156,7 @@ def validate(matter):
             raise MatterError("invalid_event_reference")
     for row in matter.identities:
         assertion = assertions.get(row.assertion)
-        field = {"legal_name": "legal_name", "owner": "property_owner", "operator": "operator"}[row.relationship]
+        field = next(field for field, relation in IDENTITY_RELATIONSHIPS.items() if relation == row.relationship)
         if row.party not in parties or not assertion or assertion.target != Target(field=field, subject=row.party):
             raise MatterError("invalid_identity_candidate")
         if row.corroborates:

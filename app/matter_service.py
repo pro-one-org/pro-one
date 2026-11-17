@@ -13,7 +13,7 @@ from app.matter_models import (
     Record, Target, Text, UserSource,
 )
 from app.matter_state import (
-    BASE_GAPS, EVENT_FIELDS, IDENTITY_FIELDS, OPTIONAL_EVENT_FIELDS, PARTY_FIELDS, MatterError, equivalent,
+    BASE_GAPS, EVENT_FIELDS, IDENTITY_FIELDS, IDENTITY_RELATIONSHIPS, OPTIONAL_EVENT_FIELDS, PARTY_FIELDS, MatterError, equivalent,
     norm, page_at, projection, source_status,
 )
 from app.matter_store import RevisionConflict, now
@@ -128,7 +128,8 @@ class MatterService:
             row[0] in EVENT_FIELDS | OPTIONAL_EVENT_FIELDS for row in rows
         ):
             raise MatterError("incident_requires_explicit_scope")
-        initial_party = next((row for row in rows if row[0] in {"brand", "legal_name"}), None)
+        origin_fields = {"brand", "legal_name", "self_name"} if new_party_role == "user" else {"brand", "legal_name"}
+        initial_party = next((row for row in rows if row[0] in origin_fields), None)
         if not party and (new_party_role or (initial_party and not base.parties)):
             if not initial_party:
                 raise MatterError("party_requires_attributed_name")
@@ -183,8 +184,7 @@ class MatterService:
             if field in IDENTITY_FIELDS:
                 anchor = registry_anchor(base, party, evidence.external) if evidence and evidence.external else None
                 patch["identities"].append(IdentityCandidate(
-                    party=party, assertion=row.id, relationship={"legal_name": "legal_name", "operator": "operator",
-                    "property_owner": "owner"}[field], corroborates=anchor))
+                    party=party, assertion=row.id, relationship=IDENTITY_RELATIONSHIPS[field], corroborates=anchor))
         return patch
 
     def upload(self, base, raw, content_type, kind, *, party=None, event=None, model_assistance=False):

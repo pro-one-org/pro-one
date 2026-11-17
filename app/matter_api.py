@@ -11,6 +11,7 @@ from fastapi import APIRouter, HTTPException, Query, Request
 from pydantic import Field, TypeAdapter
 from starlette.concurrency import run_in_threadpool
 
+from app.action_api import install as install_action_routes
 from app.capabilities import ResearchMatter
 from app.claim_models import AnalyzeClaim
 from app.claim_service import ClaimService
@@ -299,4 +300,5 @@ def router(settings, repository, generation):
         return {key: analysis[key] for key in ("matter_revision", "latest_matter_revision", "freshness",
                                                 "stale_reasons", "questions")}
 
+    install_action_routes(routes, access, execute, repository)
     return routes

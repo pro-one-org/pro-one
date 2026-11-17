@@ -10,6 +10,7 @@ from pydantic import Field
 
 from app.assistant import seal, unseal
 from app.capabilities import ResearchMatter
+from app.deadline_counting import CountingMethod, count_days
 from app.generation import GenerationService
 from app.legal_research import GeneralLegalResearchService
 from app.models.base import GenerationConfig
@@ -142,16 +143,8 @@ def bounded_deadline(rule, *, trigger, trigger_date, on, calendar, conditions_co
     if (not conditions_confirmed or trigger != rule.trigger or not trigger_date
             or not date.min <= trigger_date <= on or on > date.max - timedelta(days=372)):
         return None
-    nominal = trigger_date + timedelta(days=rule.period)
-    for offset in range(8):
-        candidate = nominal + timedelta(days=offset)
-        if candidate.weekday() >= 5:
-            continue
-        if type(calendar.get(candidate)) is not bool:
-            return None
-        if calendar[candidate]:
-            return candidate
-    return None
+    result = count_days(CountingMethod(rule.period, rule.unit, False, "next_open"), trigger_date, calendar)
+    return result.due if result else None
 
 
 def preview_deadline(catalog, *, path, stage, jurisdiction, forum, facts, on, calendar):
