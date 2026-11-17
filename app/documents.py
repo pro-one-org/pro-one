@@ -8,7 +8,7 @@ MAX_FILE = 2 * 1024 * 1024
 MAX_TEXT = 16000
 
 
-def isolated_extract(data, content_type):
+def isolated_extract(data, content_type, *, include_locators=False):
     """A timed child process isolates parser failures from the ASGI worker."""
     import json
     import subprocess
@@ -21,13 +21,16 @@ def isolated_extract(data, content_type):
     response = json.loads(result.stdout)
     if "error" in response:
         raise ValueError(response["error"])
+    if not include_locators:
+        response.pop("page_offsets", None)
     return response
 
 
-def extract_document(data: bytes, content_type: str):
+def extract_document(data: bytes, content_type: str, *, include_locators=False):
     if not data or len(data) > MAX_FILE:
         raise ValueError("Use a nonempty document smaller than 2 MB.")
     pages = None
+    page_offsets = []
     if content_type == "text/plain":
         text = data.decode("utf-8-sig")
         if "\x00" in text:
@@ -44,6 +47,7 @@ def extract_document(data: bytes, content_type: str):
         for page in reader.pages:
             if len(text) > MAX_TEXT:
                 break
+            page_offsets.append(len(text))
             text += (page.extract_text() or "") + "\n"
     elif content_type == "application/vnd.openxmlformats-officedocument.wordprocessingml.document":
         with ZipFile(BytesIO(data)) as archive:
@@ -65,7 +69,8 @@ def extract_document(data: bytes, content_type: str):
         raise ValueError("This document is too long. Upload a shorter redacted excerpt (up to 16,000 characters).")
     if re.search(r"\b\d{3}[- ]\d{2}[- ]\d{4}\b|\b\d{12,19}\b", text):
         raise ValueError("Remove Social Security and account numbers before uploading again.")
-    return {"text": text, "pages": pages, "characters": len(text), "warnings": ["Check extracted text against your original. Layout and dates may be misread."], "persisted": False}
+    locations = {"page_offsets": page_offsets} if include_locators else {}
+    return {**locations, "text": text, "pages": pages, "characters": len(text), "warnings": ["Check extracted text against your original. Layout and dates may be misread."], "persisted": False}
 
 
 if __name__ == "__main__":
@@ -76,7 +81,7 @@ if __name__ == "__main__":
         resource.setrlimit(resource.RLIMIT_AS, (256 * 1024 * 1024, 256 * 1024 * 1024))
         resource.setrlimit(resource.RLIMIT_CPU, (5, 5))
     try:
-        response = extract_document(sys.stdin.buffer.read(MAX_FILE + 1), sys.argv[1])
+        response = extract_document(sys.stdin.buffer.read(MAX_FILE + 1), sys.argv[1], include_locators=True)
     except Exception:
         response = {"error": "This document could not be read safely. Use a short, redacted, text-readable PDF, DOCX or TXT copy. Scanned documents are not supported."}
     sys.stdout.buffer.write(json.dumps(response).encode("utf-8"))

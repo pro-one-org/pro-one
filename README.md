@@ -103,6 +103,15 @@ bounds the dated samples. Publication guidance with unresolved currentness is
 shown as reference material. Production returns HTTP 403. See the
 [procedural architecture and operator commands](docs/procedural-intelligence.md).
 
+## Matter Intelligence v1
+
+The optional local development API stores revisioned matters with source-attributed assertions,
+evidence, party candidates, dated events, structured questions, and explicit corrections. The
+restaurant-fall scenario exercises conversation, medical document extraction and conflicting
+dates. Research Core uses the matter's confirmed scope and Procedural Intelligence can read
+bounded facts and preserve a user's explicit path selection. The feature is disabled in production.
+See the [Matter Intelligence guide](docs/matter-intelligence.md) for setup and coverage.
+
 ## Validation
 
 ```text
