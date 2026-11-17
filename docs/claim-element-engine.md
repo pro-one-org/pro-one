@@ -85,4 +85,4 @@ The claim suite replays retained authoritative excerpts, synthetic matter update
 
 ## Release gates
 
-Production exposure requires independent legal review of source coverage and mappings, jurisdiction-specific legal-services and UPL review, privacy and provider data-handling approval, a retention policy, access-control and abuse review, operational monitoring, broader adversarial testing, deployment review, and explicit release approval. These development reports are inputs for later human-reviewed capabilities. Action Readiness, filings, service, document assembly, deadlines, and matter management have separate milestones.
+Production exposure requires independent legal review of source coverage and mappings, jurisdiction-specific legal-services and UPL review, privacy and provider data-handling approval, a retention policy, access-control and abuse review, operational monitoring, broader adversarial testing, deployment review, and explicit release approval. The development [Legal Action OS](legal-action-os.md) uses these reports for bounded preparation, deadlines, draft assembly and matter workspace projections.

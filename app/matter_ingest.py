@@ -126,7 +126,7 @@ def grounded_rows(text, origin, evidence_kind=None):
         offset = start + len(unit) - len(unit.lstrip())
         label, separator, value = raw.partition(":")
         field = LABELS.get(label.strip().lower())
-        if separator and field and (origin == "user_statement" or field not in {"goal", "matter_type", "jurisdiction"}):
+        if separator and field and (origin == "user_statement" or field not in {"goal", "matter_type", "jurisdiction", "self_name"}):
             value = value.strip()
             if value and (field in DATE_FIELDS or not NEGATION.search(value)):
                 parsed = typed_value(field, value)

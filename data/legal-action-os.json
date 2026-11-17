@@ -1,0 +1,534 @@
+{
+  "schema_version": "1.0.0",
+  "actions": [
+    {
+      "jurisdiction": "US-VA",
+      "path": "va_litigation",
+      "forum": "va_richmond",
+      "version": "v1",
+      "id": "va_richmond_complaint",
+      "action_type": "complaint",
+      "label": "Richmond Circuit Court civil complaint preparation",
+      "stage": "filing",
+      "event_kind": "incident",
+      "allowed_party_roles": ["business_involved", "potential_defendant", "owner", "operator"],
+      "theories": [
+        "va_premises_warning"
+      ],
+      "procedure_refs": [
+        "court_types",
+        "venue",
+        "commence",
+        "components",
+        "paper_format",
+        "signature",
+        "filing_fee",
+        "fee_reference",
+        "summons",
+        "entity_service",
+        "service_actor",
+        "service_proof"
+      ],
+      "deadline_rules": [
+        "va_richmond_injury_timing"
+      ],
+      "template": "va_richmond_complaint_draft",
+      "requirements": [
+        {
+          "id": "path_choice",
+          "dimension": "prerequisites",
+          "severity": "blocking_requirement",
+          "check": "choice",
+          "message": "Confirm the procedural path and court for this matter revision.",
+          "origin": "system_safety",
+          "refs": []
+        },
+        {
+          "id": "jurisdiction",
+          "dimension": "jurisdiction",
+          "severity": "blocking_requirement",
+          "check": "fact",
+          "message": "Confirm that the incident is in Virginia.",
+          "origin": "system_safety",
+          "refs": [],
+          "fact": {
+            "field": "jurisdiction",
+            "sources": [
+              "asserted",
+              "documented",
+              "externally_verified"
+            ],
+            "equals": "US-VA"
+          }
+        },
+        {
+          "id": "claim_support",
+          "check": "claim",
+          "dimension": "claim_analysis",
+          "severity": "blocking_requirement",
+          "message": "Obtain the current matter revision’s claim analysis for the selected incident and party.",
+          "origin": "legal_authority",
+          "refs": [
+            "va_premises_warning"
+          ]
+        },
+        {
+          "id": "legal_currentness",
+          "check": "claim_currentness",
+          "dimension": "legal",
+          "severity": "review_required",
+          "message": "Have qualified legal review confirm the governing law and theory before relying on this reference draft.",
+          "origin": "legal_authority",
+          "refs": [
+            "va_premises_warning"
+          ]
+        },
+        {
+          "id": "procedure_currentness",
+          "check": "procedure_currentness",
+          "dimension": "procedural",
+          "severity": "review_required",
+          "message": "Review court requirements, local practices and applicable orders for the intended action date.",
+          "origin": "procedural_authority",
+          "refs": [
+            "commence",
+            "components",
+            "signature",
+            "paper_format",
+            "venue"
+          ]
+        },
+        {
+          "id": "defendant_name",
+          "dimension": "party_identity",
+          "severity": "blocking_requirement",
+          "check": "fact",
+          "message": "Verify the legal name of the party the user has selected to name.",
+          "origin": "document_template",
+          "refs": [
+            "va_richmond_complaint_draft"
+          ],
+          "fact": {
+            "field": "legal_name",
+            "sources": [
+              "externally_verified"
+            ],
+            "scope": "party",
+            "format": "name"
+          }
+        },
+        {
+          "id": "operator",
+          "dimension": "party_identity",
+          "severity": "blocking_requirement",
+          "check": "fact",
+          "message": "Verify the selected party’s documented connection to the business at the incident site.",
+          "origin": "system_safety",
+          "refs": [],
+          "fact": {
+            "field": "operator",
+            "sources": [
+              "externally_verified"
+            ],
+            "scope": "party",
+            "format": "name",
+            "same_as": "defendant_name",
+            "claim_element": "invitee_care",
+            "claim_relation": "context"
+          }
+        },
+        {
+          "id": "plaintiff_name",
+          "dimension": "documents",
+          "severity": "blocking_requirement",
+          "check": "fact",
+          "message": "Record the name of the user to include in the caption.",
+          "origin": "document_template",
+          "refs": [
+            "va_richmond_complaint_draft"
+          ],
+          "fact": {
+            "field": "self_name",
+            "sources": [
+              "asserted"
+            ],
+            "scope": "user",
+            "format": "name"
+          }
+        },
+        {
+          "id": "venue_locality",
+          "dimension": "venue",
+          "severity": "blocking_requirement",
+          "check": "fact",
+          "message": "Record evidence that the incident occurred in the City of Richmond for this bounded court draft.",
+          "origin": "procedural_authority",
+          "refs": [
+            "venue"
+          ],
+          "fact": {
+            "field": "incident_locality",
+            "sources": [
+              "documented"
+            ],
+            "scope": "event",
+            "equals": "City of Richmond",
+            "evidence_kinds": [
+              "incident_report",
+              "government_record"
+            ]
+          }
+        },
+        {
+          "id": "amount_sought",
+          "dimension": "jurisdiction",
+          "severity": "blocking_requirement",
+          "check": "fact",
+          "message": "Record the amount the user seeks for the circuit court jurisdiction screen.",
+          "origin": "procedural_authority",
+          "refs": [
+            "court_types",
+            "components"
+          ],
+          "fact": {
+            "field": "amount_sought",
+            "sources": [
+              "asserted"
+            ],
+            "minimum": 4501
+          }
+        },
+        {
+          "id": "incident_date",
+          "dimension": "facts",
+          "severity": "blocking_requirement",
+          "check": "fact",
+          "message": "Record an exact date for the selected incident.",
+          "origin": "system_safety",
+          "refs": [],
+          "fact": {
+            "field": "date",
+            "sources": [
+              "asserted",
+              "documented",
+              "externally_verified"
+            ],
+            "scope": "event",
+            "exact_date": true
+          }
+        },
+        {
+          "id": "incident_location",
+          "dimension": "facts",
+          "severity": "blocking_requirement",
+          "check": "fact",
+          "message": "Record a location for the selected incident.",
+          "origin": "system_safety",
+          "refs": [],
+          "fact": {
+            "field": "location",
+            "sources": [
+              "asserted",
+              "documented",
+              "externally_verified"
+            ],
+            "scope": "event",
+            "format": "observation",
+            "claim_element": "invitee_care",
+            "claim_relation": "context"
+          }
+        },
+        {
+          "id": "hazard",
+          "dimension": "facts",
+          "severity": "blocking_requirement",
+          "check": "fact",
+          "message": "Record the observed floor condition for this incident.",
+          "origin": "system_safety",
+          "refs": [],
+          "fact": {
+            "field": "hazard",
+            "sources": [
+              "asserted",
+              "documented",
+              "externally_verified"
+            ],
+            "scope": "event",
+            "format": "observation",
+            "allowed_text": ["water", "wet floor", "water near the sink", "liquid on the floor", "water on the floor"],
+            "claim_element": "invitee_care",
+            "claim_relation": "context"
+          }
+        },
+        {
+          "id": "fall_mechanism",
+          "dimension": "facts",
+          "severity": "blocking_requirement",
+          "check": "fact",
+          "message": "Record how the person reported slipping at the incident site.",
+          "origin": "system_safety",
+          "refs": [],
+          "fact": {
+            "field": "fall_mechanism",
+            "sources": ["asserted", "documented"],
+            "scope": "event",
+            "format": "observation",
+            "allowed_text": ["I slipped on water near the sink", "I slipped on the wet floor", "I slipped on water on the floor"]
+          }
+        },
+        {
+          "id": "warning",
+          "dimension": "facts",
+          "severity": "blocking_requirement",
+          "check": "fact",
+          "message": "Clarify whether there was a warning sign at the incident site.",
+          "origin": "system_safety",
+          "refs": [],
+          "fact": {
+            "field": "warning_sign",
+            "sources": [
+              "asserted",
+              "documented",
+              "externally_verified"
+            ],
+            "scope": "event",
+            "equals": false,
+            "claim_element": "warning",
+            "claim_relation": "supporting"
+          }
+        },
+        {
+          "id": "notice",
+          "dimension": "evidence",
+          "severity": "blocking_requirement",
+          "check": "fact",
+          "message": "Record a specific account about what staff knew before the fall.",
+          "origin": "system_safety",
+          "refs": [],
+          "fact": {
+            "field": "employee_notice",
+            "sources": [
+              "asserted",
+              "documented",
+              "externally_verified"
+            ],
+            "scope": "event",
+            "format": "observation",
+            "claim_element": "warning",
+            "claim_relation": "supporting"
+          }
+        },
+        {
+          "id": "injury",
+          "dimension": "evidence",
+          "severity": "blocking_requirement",
+          "check": "fact",
+          "message": "Link a medical record that documents the injury.",
+          "origin": "system_safety",
+          "refs": [],
+          "fact": {
+            "field": "injury",
+            "sources": [
+              "documented"
+            ],
+            "scope": "event",
+            "evidence_kinds": [
+              "medical_record"
+            ],
+            "format": "observation"
+          }
+        },
+        {
+          "id": "registered_agent",
+          "dimension": "prerequisites",
+          "severity": "informational_gap",
+          "check": "fact",
+          "message": "Review a linked registry record for the registered agent before planning service.",
+          "origin": "procedural_authority",
+          "refs": [
+            "entity_service"
+          ],
+          "fact": {
+            "field": "registered_agent",
+            "sources": [
+              "externally_verified"
+            ],
+            "scope": "party",
+            "format": "name"
+          }
+        },
+        {
+          "id": "limitations",
+          "check": "deadline",
+          "dimension": "deadlines",
+          "severity": "review_required",
+          "message": "Review when the claim accrued, the governing rule version and any exceptions before relying on a limitations date.",
+          "origin": "legal_authority",
+          "refs": [
+            "va_richmond_injury_timing"
+          ]
+        },
+        {
+          "id": "remedy_review",
+          "check": "assess_remedies",
+          "dimension": "documents",
+          "severity": "review_required",
+          "message": "Review available relief and complete the signature and filing components before relying on this preparation copy.",
+          "origin": "system_safety",
+          "refs": []
+        },
+        {
+          "id": "exact_review",
+          "dimension": "review",
+          "severity": "informational_gap",
+          "check": "review",
+          "message": "Review the exact preparation copy when it is available.",
+          "origin": "system_safety",
+          "refs": []
+        },
+        {
+          "id": "execution_authorization",
+          "dimension": "authorization",
+          "severity": "informational_gap",
+          "check": "future_authorization",
+          "message": "External execution is disabled. Reviewing a draft records review only.",
+          "origin": "user_authorization",
+          "refs": []
+        }
+      ]
+    }
+  ],
+  "templates": [
+    {
+      "id": "va_richmond_complaint_draft",
+      "version": "v1",
+      "action": "va_richmond_complaint",
+      "document_type": "complaint",
+      "title": "Civil complaint preparation copy",
+      "procedure_refs": [
+        "components",
+        "paper_format",
+        "signature"
+      ],
+      "attachment_kinds": [
+        "incident_report",
+        "medical_record"
+      ],
+      "include_caption": true,
+      "unsigned_signature_block": true,
+      "sections": [
+        {
+          "title": "Caption",
+          "fields": [
+            {
+              "id": "court",
+              "title": "Court",
+              "source": "forum"
+            },
+            {
+              "id": "plaintiff",
+              "title": "Plaintiff",
+              "source": "plaintiff_name"
+            },
+            {
+              "id": "defendant",
+              "title": "Selected defendant",
+              "source": "defendant_name"
+            }
+          ]
+        },
+        {
+          "title": "Attributed factual allegations for review",
+          "number_paragraphs": true,
+          "fields": [
+            {
+              "id": "operator",
+              "title": "Recorded operator",
+              "source": "operator"
+            },
+            {
+              "id": "venue",
+              "title": "Recorded locality",
+              "source": "venue_locality"
+            },
+            {
+              "id": "incident_date",
+              "title": "Incident date",
+              "source": "incident_date"
+            },
+            {
+              "id": "location",
+              "title": "Recorded location",
+              "source": "incident_location"
+            },
+            {
+              "id": "condition",
+              "title": "Reported condition",
+              "source": "hazard"
+            },
+            {
+              "id": "fall",
+              "title": "Reported fall mechanism",
+              "source": "fall_mechanism"
+            },
+            {
+              "id": "warning",
+              "title": "Warning sign recorded",
+              "source": "warning"
+            },
+            {
+              "id": "notice",
+              "title": "Reported notice account",
+              "source": "notice"
+            },
+            {
+              "id": "injury",
+              "title": "Medical record describes",
+              "source": "injury"
+            }
+          ]
+        },
+        {
+          "title": "Claim and relief review",
+          "fields": [
+            {
+              "id": "theory",
+              "title": "Selected reference theory",
+              "source": "theory"
+            },
+            {
+              "id": "user_amount",
+              "title": "Amount supplied by user for jurisdiction review (USD)",
+              "source": "amount_sought"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "deadlines": [
+    {
+      "jurisdiction": "US-VA",
+      "path": "va_litigation",
+      "forum": "va_richmond",
+      "version": "v1",
+      "id": "va_richmond_injury_timing",
+      "event_kind": "incident",
+      "theory_ref": "va_personal_injury_limitations",
+      "message": "The incident is relevant to timing. The accrual date and exceptions require review."
+    },
+    {
+      "jurisdiction": "US-VA",
+      "path": "va_response",
+      "forum": "va_richmond",
+      "version": "v1",
+      "id": "va_richmond_response",
+      "event_kind": "service",
+      "procedure_ref": "response_deadline",
+      "trigger_evidence": [
+        "proof_of_service"
+      ],
+      "message": "Response timing for the recorded ordinary service of a summons and complaint."
+    }
+  ]
+}

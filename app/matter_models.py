@@ -13,13 +13,13 @@ Digest = Annotated[str, Field(pattern=r"^[0-9a-f]{64}$")]
 EvidenceKind = Literal[
     "document", "photo", "video", "message", "email", "medical_record", "contract",
     "receipt", "incident_report", "witness", "corporate_record", "court_filing",
-    "government_record", "legal_authority", "other",
+    "government_record", "proof_of_service", "legal_authority", "other",
 ]
 PartyRole = Literal["user", "business_involved", "potential_defendant", "owner", "operator", "witness", "insurer", "other"]
 EntityType = Literal["individual", "business", "government", "insurer", "unknown"]
 FieldName = Literal[
     "jurisdiction", "matter_type", "goal", "brand", "legal_name", "alias", "property_owner",
-    "operator", "registry_id", "entity_type", "registered_agent", "hazard", "warning_sign", "injury", "employee_notice",
+    "operator", "registry_id", "entity_type", "registered_agent", "self_name", "hazard", "warning_sign", "injury", "employee_notice",
     "hazard_duration", "visit_purpose", "condition_visibility", "hazard_origin", "fall_mechanism",
     "contract_obligation", "contract_performance", "contract_loss",
     "medical_expenses", "lost_wages", "future_treatment", "surveillance", "incident_report",
@@ -28,7 +28,8 @@ FieldName = Literal[
 FIELD_NAMES = tuple(name for group in get_args(FieldName) for name in get_args(group))
 EventKind = Literal[
     "incident", "medical_visit", "conversation", "notice", "payment", "demand", "filing",
-    "service", "court_event", "document_received", "deadline_trigger",
+    "service", "court_event", "document_received", "deadline_trigger", "judgment", "agency_decision",
+    "hearing", "order", "mailing", "publication",
 ]
 
 
@@ -174,7 +175,7 @@ class Party(Record):
 class IdentityCandidate(Record):
     party: UUID
     assertion: UUID
-    relationship: Literal["legal_name", "owner", "operator"] = "legal_name"
+    relationship: Literal["legal_name", "owner", "operator", "registered_agent"] = "legal_name"
     corroborates: UUID | None = None
 
 

@@ -38,13 +38,17 @@ jobs:
       - name: Evaluate mapped fixtures with offline test provider
         run: python -B scripts/run_evaluations.py
 
-      - name: Validate procedural and claim catalogs
+      - name: Validate procedural, claim and action catalogs
         run: |
           python -B scripts/procedural_intelligence.py validate
           python -B scripts/claim_engine.py validate
+          python -B scripts/legal_action_os.py validate
 
       - name: Evaluate claim analysis with offline matter and model fixtures
         run: python -B -m unittest discover -s tests -p test_claim_engine.py -v
+
+      - name: Evaluate Legal Action OS readiness, deadlines, documents and workspace
+        run: python -B -m unittest discover -s tests -p test_legal_action_os.py -v
 
       - name: Check conversational JavaScript
         run: node --check app/web/app.js
@@ -63,6 +67,9 @@ jobs:
 
       - name: Benchmark claim analysis, snapshot storage and staleness
         run: python -B scripts/claim_engine.py benchmark
+
+      - name: Benchmark Legal Action OS and artifact storage
+        run: python -B scripts/legal_action_os.py benchmark
 
       - name: Compile a proposed capability review bundle
         run: python -B scripts/build_capability.py --jurisdiction Virginia --legal-area torts --topic premises_liability --output "$RUNNER_TEMP/pro-one-capability-review"
@@ -160,6 +167,26 @@ jobs:
               except urllib.error.HTTPError as error:
                   assert error.code == 403
                   assert json.load(error)['detail']['code'] == 'matter_release_review_required'
-          print('Production health, catalogs, OpenAPI, research and claim release gates passed.')
+          artifact = '0' * 64
+          for suffix, body in (
+              ('/actions', None), ('/readiness', {'revision': 0, 'action_id': 'va_richmond_complaint'}),
+              ('/readiness/' + artifact, None), ('/deadlines', None), ('/deadlines/' + artifact, None),
+              ('/deadlines/evaluate', {'revision': 0, 'rule_id': 'va_richmond_response'}),
+              ('/action-documents', {'revision': 0, 'readiness_id': artifact}),
+              ('/action-documents/' + artifact, None), ('/workspace', None), ('/workspace', {'revision': 0}),
+              ('/workspace/' + artifact, None), ('/tasks', None), ('/tasks/' + artifact, None),
+              ('/reviews/' + artifact, None),
+              ('/reviews', {'revision': 0, 'package_id': artifact, 'displayed_digest': artifact, 'reviewed': True}),
+          ):
+              request = urllib.request.Request('http://127.0.0.1:8000' + matter + suffix,
+                  data=json.dumps(body).encode() if body else None, headers={'Content-Type': 'application/json'})
+              try:
+                  urllib.request.urlopen(request)
+                  raise AssertionError('Legal Action OS must remain disabled in production')
+              except urllib.error.HTTPError as error:
+                  assert error.code == 403
+                  assert error.headers['Cache-Control'] == 'no-store'
+                  assert json.load(error)['detail']['code'] == 'matter_release_review_required'
+          print('Production health, catalogs, OpenAPI and research, claim and action release gates passed.')
           PY
           docker stop pro-one-smoke
