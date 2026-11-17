@@ -113,7 +113,9 @@ class GeneralLegalResearchService:
                 continue
             if matter.sovereign == "federal" and provider.name not in {"normalized_corpus", "courtlistener", "courtlistener_corpus"}:
                 continue
-            if capability and provider.name not in {"courtlistener", "courtlistener_corpus", "virginia_official"}:
+            if capability and provider.name not in {
+                "courtlistener", "courtlistener_corpus", "virginia_official", "retained_claim_authority",
+            }:
                 continue
             try:
                 identifiers = provider.search(query, limit=6)[:6]

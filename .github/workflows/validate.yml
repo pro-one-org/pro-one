@@ -38,6 +38,14 @@ jobs:
       - name: Evaluate mapped fixtures with offline test provider
         run: python -B scripts/run_evaluations.py
 
+      - name: Validate procedural and claim catalogs
+        run: |
+          python -B scripts/procedural_intelligence.py validate
+          python -B scripts/claim_engine.py validate
+
+      - name: Evaluate claim analysis with offline matter and model fixtures
+        run: python -B -m unittest discover -s tests -p test_claim_engine.py -v
+
       - name: Check conversational JavaScript
         run: node --check app/web/app.js
 
@@ -52,6 +60,9 @@ jobs:
 
       - name: Benchmark matter updates, replay and document ingestion
         run: python -B scripts/benchmark_matter_intelligence.py
+
+      - name: Benchmark claim analysis, snapshot storage and staleness
+        run: python -B scripts/claim_engine.py benchmark
 
       - name: Compile a proposed capability review bundle
         run: python -B scripts/build_capability.py --jurisdiction Virginia --legal-area torts --topic premises_liability --output "$RUNNER_TEMP/pro-one-capability-review"
@@ -135,6 +146,20 @@ jobs:
           except urllib.error.HTTPError as error:
               assert error.code == 403
               assert json.load(error)['detail']['code'] == 'matter_release_review_required'
-          print('Production health, workflow/capability catalogs, OpenAPI and research release gate passed.')
+          matter = '/matters/00000000-0000-0000-0000-000000000000'
+          analysis = '/claim-analysis/' + '0' * 64
+          for suffix, body in (
+              ('/legal-theories?revision=0', None), ('/claim-analysis', {'revision': 0}),
+              (analysis, None), (analysis + '/questions', None),
+          ):
+              request = urllib.request.Request('http://127.0.0.1:8000' + matter + suffix,
+                  data=json.dumps(body).encode() if body else None, headers={'Content-Type': 'application/json'})
+              try:
+                  urllib.request.urlopen(request)
+                  raise AssertionError('Claim analysis must remain disabled in production')
+              except urllib.error.HTTPError as error:
+                  assert error.code == 403
+                  assert json.load(error)['detail']['code'] == 'matter_release_review_required'
+          print('Production health, catalogs, OpenAPI, research and claim release gates passed.')
           PY
           docker stop pro-one-smoke

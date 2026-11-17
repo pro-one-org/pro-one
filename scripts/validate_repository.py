@@ -618,6 +618,17 @@ def main() -> int:
             ):
                 report.error(f"source passage {passage['id']}: {error}")
 
+    if not report.errors:
+        from app.claim_catalog import ClaimCatalog
+        from app.repository import RecordRepository, RepositoryLoadError
+        try:
+            catalog = ClaimCatalog(RecordRepository(DATA_DIR, SCHEMA_DIR))
+            catalog.validate()
+            for _ in catalog.versions:
+                report.checked("Claim theory versions")
+        except (OSError, ValueError, RepositoryLoadError) as exc:
+            report.error(f"Claim theory catalog: {exc}")
+
     validate_markdown(report)
 
     stale_patterns = {
