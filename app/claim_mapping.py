@@ -1,6 +1,8 @@
 """Bounded evidence linking. Models can select IDs within a validated proposal set."""
+import re
+
 from app.claim_models import ElementMatterMapping, MappingBatch, MappingVerification
-from app.matter_ingest import INSTRUCTIONS
+from app.matter_ingest import INSTRUCTIONS, REPORTED_LEAK_NOTICE
 from app.matter_models import Target
 from app.matter_state import OPTIONAL_EVENT_FIELDS, MatterError, overlap
 from app.models.base import ModelRequest
@@ -46,10 +48,12 @@ def relation(link, assertion, status):
         return "conflicting"
     if link.adverse_value is not None and assertion.value is link.adverse_value:
         return "adverse"
-    if assertion.target.field == "employee_notice" and isinstance(assertion.value, str) and any(
-        phrase in assertion.value.casefold() for phrase in ("i think", "probably", "perhaps", "might")
-    ):
-        return "context"
+    if assertion.target.field == "employee_notice" and assertion.status != "alleged":
+        # Free-text accounts can be negative, speculative, or ambiguous. The
+        # bounded affirmative report is attributable to the user.
+        if (assertion.source.kind != "user_statement" or not isinstance(assertion.value, str)
+                or not re.fullmatch(REPORTED_LEAK_NOTICE, assertion.value, re.I)):
+            return "context"
     return link.relation
 
 

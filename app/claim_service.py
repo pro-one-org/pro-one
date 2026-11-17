@@ -75,9 +75,14 @@ class ClaimService:
                 gaps = []
                 for link in element.fields:
                     target, rows, status = fact_view(claim_matter, facts, link, event, party)
-                    if status in CONFLICT | {"unknown", "unresolved", "inferred", "alleged"}:
+                    relationships = [relation(link, row, status) for row in rows]
+                    if link.field == "employee_notice" and event and len(event.participants) > 1:
+                        relationships = ["context" if kind == "supporting" else kind for kind in relationships]
+                    notice_unclear = link.field == "employee_notice" and bool(rows) and set(relationships) == {"context"}
+                    if notice_unclear or status in CONFLICT | {"unknown", "unresolved", "inferred", "alleged"}:
                         reason = ("party_identity_unresolved" if link.scope == "party" and status == "unresolved"
-                                  else "event_scope_unresolved" if target is None else status)
+                                  else "event_scope_unresolved" if target is None
+                                  else "evidence_attribution_unresolved" if notice_unclear else status)
                         gaps.append({"field": link.field, "target": target, "reason": reason})
                         if target is not None:
                             prompt = (f"What can clarify the different accounts of {link.field.replace('_', ' ')}?"
@@ -89,12 +94,8 @@ class ClaimService:
                                 "theory_id": theory.id, "theory_version": theory.version, "element_id": element.id,
                                 "authority_passages": [row["passage_id"] for row in binding],
                             })
-                    for assertion in rows:
+                    for assertion, relationship in zip(rows, relationships, strict=True):
                         source_id = getattr(assertion.source, "evidence_id", None)
-                        relationship = relation(link, assertion, status)
-                        if link.field == "employee_notice" and event and len(event.participants) > 1:
-                            if relationship == "supporting":
-                                relationship = "context"
                         mapping = ElementMatterMapping(
                             matter_id=matter.id, matter_revision=matter.revision, theory_id=theory.id,
                             theory_version=theory.version, element_id=element.id, target=assertion.target,

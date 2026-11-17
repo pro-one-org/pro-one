@@ -84,6 +84,10 @@ LABELS.update({"incident date": "date", "diagnosis": "injury", "business brand":
                "property owner": "property_owner", "legal entity": "legal_name"})
 DATE_EXPRESSION = rf"(?:{'|'.join(MONTHS)}) \d{{1,2}}(?:,? \d{{4}})?|\d{{4}}-\d{{2}}-\d{{2}}"
 RESTAURANT = r"(?:Wendy['’]s|McDonald['’]s|Burger King)"
+REPORTED_LEAK_NOTICE = (
+    r"(?:The|A) (?:manager|employee) told me (?:they|the staff) already knew (?:about )?(?:the sink leak|the wet floor)"
+    r"|(?:The|A) (?:manager|employee) told me (?:they|the staff) knew the sink had been leaking since that morning"
+)
 STATEMENT_RULES = (
     ("jurisdiction", r"(?:i am in |this happened in )?([a-z ]{2,30})"),
     ("brand", rf"(?:I slipped (?:in|at) (?:(?:a|the) )?|It happened (?:(?:{DATE_EXPRESSION}) )?at (?:(?:a|the) )?|I want to sue )({RESTAURANT})(?=\s|$)"),
@@ -96,7 +100,7 @@ STATEMENT_RULES = (
     ("hazard", r"(?:There was|I slipped on) (water(?: near the sink)?|liquid on the floor)$"),
     ("hazard", r"The floor was wet(?: and there wasn't a sign)?$"),
     ("warning_sign", r"(?:There was no (?:warning )?sign|The floor was wet and there wasn't a sign)$"),
-    ("employee_notice", r"((?:The|A) (?:manager|employee) told me (?:they|the staff) knew .+)$"),
+    ("employee_notice", rf"({REPORTED_LEAK_NOTICE})$"),
     ("date", rf"(?:Actually[,]? )?(?:the fall happened|it happened|it was)(?: at (?:(?:a|the) )?{RESTAURANT} on [a-z0-9 ]{{2,60}}?)? (?:on )?({DATE_EXPRESSION})(?: at (?:(?:a|the) )?{RESTAURANT} on [a-z0-9 ]{{2,60}})?(?:,? not .+)?$"),
 )
 FIXED = {"injury": "wrist fracture", "matter_type": "personal_injury", "goal": "compensation",

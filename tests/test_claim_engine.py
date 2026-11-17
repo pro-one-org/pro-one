@@ -154,6 +154,13 @@ class ClaimTests(unittest.TestCase):
         self.assertEqual({row["posture"] for row in notice}, {"alleged_support", "evidence_present"})
         self.assertEqual({row["assertion"].status for row in notice}, {"alleged", "asserted"})
 
+    def test_uncertain_notice_text_preserves_a_gap(self):
+        matter = self.statement(self.fall(), "Employee notice: I have no idea whether anyone knew")
+        warning = self.element(self.analyze(matter), WARNING, "warning")
+        notice = next(row for row in warning["evidence"] if row["mapping"].target.field == "employee_notice")
+        self.assertEqual(notice["posture"], "evidence_present")
+        self.assertTrue(any(gap["field"] == "employee_notice" for gap in warning["gaps"]))
+
     def test_party_registry_link_remains_attribution_only(self):
         matter = self.fall()
         party = matter.parties[0].id
