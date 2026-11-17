@@ -126,7 +126,7 @@ class ClaimTests(unittest.TestCase):
                              event=matter.events[0].id)
         matter = self.statement(matter, "It happened October 3, 2026.")
         matter = self.statement(matter, "It happened October 4, 2026.")
-        matter = self.upload(matter, "A store receipt without an observation", "receipt")
+        matter = self.upload(matter, "Diagnosis: invented ankle fracture", "receipt")
         result = self.analyze(matter)
         warning = self.element(result, WARNING, "warning")["evidence"]
         self.assertEqual({row["posture"] for row in warning}, {"conflicting_support"})
@@ -239,6 +239,31 @@ class ClaimTests(unittest.TestCase):
         record["logic"]["operands"][0]["element"] = "fake"
         with self.assertRaises(ValueError):
             LegalTheory.model_validate(record)
+
+    def test_dated_binding_requires_corpus_as_of_and_basis(self):
+        catalog = self.engine.catalog
+        theory = catalog.active[BAR]
+        ref = theory.elements[0].authority[0]
+        query = ResearchMatter(country="US", state="Virginia", legal_area="torts", topics=["premises_liability"])
+        package = GeneralLegalResearchService(self.repository).assemble(query, selected_capability_id=theory.capability)["package"]
+        source = next(row for row in package["grounding"]["sources"] if row["id"] == ref.source_id)
+        passage = next(row for row in package["grounding"]["passages"] if row["id"] == ref.passage_id)
+        citation = next(row for row in package["response_plan"]["citations"] if row["passage_id"] == ref.passage_id)
+        dated = query.model_copy(update={"authority_as_of": "2026-01-01"})
+        proof = {"currentness": "current_as_of", "currentness_basis": "synthetic date evidence",
+                 "current_as_of": "2026-01-01"}
+        verified = citation | {"source_currentness": citation["source_currentness"] | {
+            "status": "current_as_of", "as_of": "2026-01-01",
+        }}
+        self.assertIsNone(authority_binding(ref, passage, source, verified, dated))
+        self.assertTrue(authority_binding(ref, passage, source | {"corpus_provenance": proof}, verified, dated))
+        self.assertIsNone(authority_binding(ref, passage, source | {"corpus_provenance": proof | {
+            "document_kind": "proposed_rule",
+        }}, verified, dated))
+        other_date = dated.model_copy(update={"authority_as_of": "2026-01-02"})
+        self.assertIsNone(authority_binding(ref, passage, source | {"corpus_provenance": proof}, verified, other_date))
+
+    def test_parent_cycle_rejected(self):
         record = self.engine.catalog.active[WARNING].model_dump()
         elements = list(record["elements"])
         elements[1]["parent"] = elements[2]["id"]
@@ -285,6 +310,23 @@ class ClaimTests(unittest.TestCase):
         rejected = self.analyze(matter, model_assistance=True, theory_ids=(WARNING,))
         self.assertEqual(rejected["lineage"]["verification"], "rejected")
         self.assertTrue(rejected["unmapped_matter_evidence"])
+
+    def test_model_cannot_suppress_adverse_and_conflicting_sources(self):
+        matter = self.fall()
+        matter = self.upload(matter, "Warning sign: yes", "incident_report")
+        proposer = FixtureModel(lambda pkg: {"mappings": [row["mapping"] for row in pkg["eligible"]]})
+        verifier = FixtureModel(lambda pkg: {"accepted": [
+            row["mapping"] for row in pkg["proposed"] if row["mapping"]["relationship"] != "conflicting"
+        ]})
+        registry = ProviderRegistry()
+        registry.register("fixture", proposer, {"propose"})
+        registry.register("independent", verifier, {"verify"})
+        self.engine = ClaimService(self.repository, Settings(provider="fixture", model="propose"),
+                                   registry, ("independent", "verify"))
+        result = self.analyze(matter, model_assistance=True, theory_ids=(WARNING,))
+        self.assertEqual(result["lineage"]["verification"], "protected_evidence_omitted")
+        self.assertEqual({row["assertion"].value for row in result["unmapped_matter_evidence"]
+                          if row["assertion"].target.field == "warning_sign"}, {True, False})
 
     def test_duplicate_and_cross_matter_mapping_reference_are_rejected(self):
         first = self.analyze(self.fall())

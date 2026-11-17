@@ -112,6 +112,14 @@ dates. Research Core uses the matter's confirmed scope and Procedural Intelligen
 bounded facts and preserve a user's explicit path selection. The feature is disabled in production.
 See the [Matter Intelligence guide](docs/matter-intelligence.md) for setup and coverage.
 
+## Claim & Element Engine v1
+
+Development claim analysis connects bounded Virginia legal requirements to
+provenance-backed matter facts and evidence. It exposes authority limits,
+conflicts, and targeted factual questions on revision-bound reports.
+See the [Claim & Element Engine guide](docs/claim-element-engine.md) for
+coverage, API details, and offline checks.
+
 ## Validation
 
 ```text
