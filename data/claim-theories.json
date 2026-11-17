@@ -1,0 +1,513 @@
+[
+  {
+    "id": "va_premises_warning",
+    "version": "v1",
+    "jurisdiction": "US-VA",
+    "legal_area": "torts",
+    "kind": "claim",
+    "label": "Invitee premises liability and warning duty",
+    "plain_language_label": "Store conditions and warnings for visitors",
+    "capability": "va-premises-liability",
+    "topics": [
+      "premises_liability"
+    ],
+    "matter_types": [
+      "personal_injury"
+    ],
+    "limitations": [
+      "This catalog covers the invitee and warning passages only. It does not establish a complete negligence test or the meaning of constructive notice.",
+      "The separate Austin analysis concerns an inference drawn on appeal from a ruling striking the evidence."
+    ],
+    "elements": [
+      {
+        "id": "invitee_care",
+        "label": "Ordinary care toward invitees",
+        "description": "The opinion describes a storeowner's duty to use ordinary care to make premises reasonably safe for an invitee's visit.",
+        "kind": "requirement",
+        "authority": [
+          {
+            "passage_id": "va-premises-duty",
+            "source_id": "va-fultz-delhaize",
+            "source_type": "court_opinion",
+            "source_version": "Official opinion dated 2009-06-04",
+            "excerpt_hash": "sha256:f0c35c6b9aa4a7a7b0f7f4e1bb5348379c888e825ccdbebb165bb9b4bdf397d1"
+          }
+        ],
+        "fields": [
+          {
+            "field": "location",
+            "question": "Where did the incident happen?",
+            "scope": "event",
+            "relation": "context"
+          },
+          {
+            "field": "visit_purpose",
+            "question": "What brought you to the premises that day?",
+            "scope": "event",
+            "relation": "context"
+          },
+          {
+            "field": "operator",
+            "question": "What record identifies the business operating this location?",
+            "scope": "party",
+            "relation": "context"
+          },
+          {
+            "field": "hazard",
+            "question": "What condition did you observe on the floor?",
+            "scope": "event",
+            "relation": "context"
+          }
+        ]
+      },
+      {
+        "id": "warning",
+        "label": "Warning about a condition known to the storeowner",
+        "description": "The opinion describes a warning duty for an unsafe condition known to the storeowner and unknown to the invitee, subject to the stated visibility exception.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "va-premises-warning",
+            "source_id": "va-fultz-delhaize",
+            "source_type": "court_opinion",
+            "source_version": "Official opinion dated 2009-06-04",
+            "excerpt_hash": "sha256:164b052abe1841779ad94935fc9cde97f61c044fb6d20c0362226b330e1a4dd6"
+          }
+        ],
+        "fields": [
+          {
+            "field": "employee_notice",
+            "question": "Did anyone say what employees knew about the condition before the incident?",
+            "scope": "event",
+            "relation": "supporting"
+          },
+          {
+            "field": "hazard_duration",
+            "question": "What did you observe or hear about how long the condition was present?",
+            "scope": "event",
+            "relation": "context"
+          },
+          {
+            "field": "warning_sign",
+            "question": "What warnings, if any, did you see before the incident?",
+            "scope": "event",
+            "relation": "supporting",
+            "adverse_value": true
+          }
+        ]
+      },
+      {
+        "id": "open_and_obvious",
+        "label": "Open and obvious condition",
+        "description": "The opinion describes an exception where the condition would be obvious to a reasonable person using ordinary care.",
+        "kind": "exception",
+        "authority": [
+          {
+            "passage_id": "va-premises-warning",
+            "source_id": "va-fultz-delhaize",
+            "source_type": "court_opinion",
+            "source_version": "Official opinion dated 2009-06-04",
+            "excerpt_hash": "sha256:164b052abe1841779ad94935fc9cde97f61c044fb6d20c0362226b330e1a4dd6"
+          }
+        ],
+        "fields": [
+          {
+            "field": "condition_visibility",
+            "question": "What could you see about the condition as you approached?",
+            "scope": "event",
+            "relation": "context"
+          }
+        ],
+        "parent": "warning"
+      }
+    ],
+    "logic": {
+      "op": "all",
+      "operands": [
+        {
+          "op": "element",
+          "element": "invitee_care"
+        },
+        {
+          "op": "unless",
+          "operands": [
+            {
+              "op": "element",
+              "element": "warning"
+            },
+            {
+              "op": "element",
+              "element": "open_and_obvious"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "va_premises_contributory_negligence",
+    "version": "v1",
+    "jurisdiction": "US-VA",
+    "legal_area": "torts",
+    "kind": "defense",
+    "label": "Contributory negligence",
+    "plain_language_label": "Whether the visitor exercised reasonable care",
+    "capability": "va-premises-liability",
+    "topics": [
+      "premises_liability"
+    ],
+    "matter_types": [
+      "personal_injury"
+    ],
+    "limitations": [
+      "The retained excerpt supplies the objective standard. Further authority is needed for a complete defense analysis."
+    ],
+    "elements": [
+      {
+        "id": "reasonable_care",
+        "label": "Objective reasonable-care standard",
+        "description": "The opinion describes an affirmative defense assessed by whether the plaintiff acted as a reasonable person would have acted for their own safety in the circumstances.",
+        "kind": "requirement",
+        "authority": [
+          {
+            "passage_id": "va-premises-contributory",
+            "source_id": "va-fultz-delhaize",
+            "source_type": "court_opinion",
+            "source_version": "Official opinion dated 2009-06-04",
+            "excerpt_hash": "sha256:b7e1dbf61be066d6159776968653656da46f8bde1c72d7e29fd1122c10151a47"
+          }
+        ],
+        "fields": [
+          {
+            "field": "condition_visibility",
+            "question": "What could you see about the condition as you approached?",
+            "scope": "event",
+            "relation": "context"
+          },
+          {
+            "field": "warning_sign",
+            "question": "What warnings, if any, did you see before the incident?",
+            "scope": "event",
+            "relation": "context"
+          }
+        ],
+        "standard": "Objective reasonable-person standard under the circumstances."
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "reasonable_care"
+    },
+    "related_theory": "va_premises_warning"
+  },
+  {
+    "id": "va_personal_injury_limitations",
+    "version": "v1",
+    "jurisdiction": "US-VA",
+    "legal_area": "torts",
+    "kind": "bar",
+    "label": "Personal injury limitations provision",
+    "plain_language_label": "Timing rule for personal injury actions",
+    "capability": "va-premises-liability",
+    "topics": [
+      "premises_liability"
+    ],
+    "matter_types": [
+      "personal_injury"
+    ],
+    "limitations": [
+      "The incident date is context. Accrual, tolling, exceptions and applicable edition require additional research. No deadline is computed."
+    ],
+    "elements": [
+      {
+        "id": "personal_injury_scope",
+        "label": "Personal injury action",
+        "description": "The quoted provision covers actions for personal injuries, subject to exceptions in the section or other statutes.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "va-premises-limitations",
+            "source_id": "va-personal-injury-limitations",
+            "source_type": "statute",
+            "source_version": "Official Code page retrieved 2026-11-03; effective date unresolved",
+            "excerpt_hash": "sha256:96c51e303a52ccbd856d92fe7514acbb0beab30ce9527a5ebdd2237cc08b679e"
+          }
+        ],
+        "fields": [
+          {
+            "field": "injury",
+            "question": "What injury is described in your records or your account?",
+            "scope": "event",
+            "relation": "supporting"
+          }
+        ]
+      },
+      {
+        "id": "accrual_timing",
+        "label": "Time after accrual",
+        "description": "The quoted provision generally sets two years after accrual for covered actions, subject to statutory exceptions.",
+        "kind": "requirement",
+        "authority": [
+          {
+            "passage_id": "va-premises-limitations",
+            "source_id": "va-personal-injury-limitations",
+            "source_type": "statute",
+            "source_version": "Official Code page retrieved 2026-11-03; effective date unresolved",
+            "excerpt_hash": "sha256:96c51e303a52ccbd856d92fe7514acbb0beab30ce9527a5ebdd2237cc08b679e"
+          }
+        ],
+        "fields": [
+          {
+            "field": "date",
+            "question": "When did the incident occur? Include the year if you know it.",
+            "scope": "event",
+            "relation": "context"
+          }
+        ]
+      }
+    ],
+    "logic": {
+      "op": "all",
+      "operands": [
+        {
+          "op": "element",
+          "element": "personal_injury_scope"
+        },
+        {
+          "op": "element",
+          "element": "accrual_timing"
+        }
+      ]
+    },
+    "related_theory": "va_premises_warning"
+  },
+  {
+    "id": "va_owner_created_condition",
+    "version": "v1",
+    "jurisdiction": "US-VA",
+    "legal_area": "torts",
+    "kind": "claim",
+    "label": "Owner-created floor condition",
+    "plain_language_label": "Whether the business created the floor condition",
+    "capability": "va-premises-liability",
+    "topics": [
+      "premises_liability"
+    ],
+    "matter_types": [
+      "personal_injury"
+    ],
+    "related_theory": "va_premises_warning",
+    "limitations": [
+      "The opinion considered which inferences the evidence permitted on a motion to strike. Other routes to notice and the complete negligence test remain outside this definition."
+    ],
+    "logic": {
+      "op": "if",
+      "operands": [
+        {
+          "op": "element",
+          "element": "owner_creation"
+        },
+        {
+          "op": "element",
+          "element": "constructive_knowledge"
+        }
+      ]
+    },
+    "elements": [
+      {
+        "id": "owner_creation",
+        "label": "Condition created by the owner",
+        "description": "In the appeal, evidence of improper cleaning could support an inference that the property owner created the condition.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "va-austin-shoneys-lead-created-condition",
+            "source_id": "va-austin-shoneys-lead",
+            "source_type": "court_opinion",
+            "role": "supports",
+            "source_version": "sha256:887cbdca92d1a4a5520568b8e3be82a5de20f74f6ec5a98b4217cbdfb99fab25",
+            "excerpt_hash": "sha256:7695c728a8abfc10cc54f2449e88eade5d4b17779412f607780553d4db96b7fa"
+          }
+        ],
+        "fields": [
+          {
+            "field": "hazard",
+            "scope": "event",
+            "question": "What condition did you observe on the floor?",
+            "relation": "context"
+          },
+          {
+            "field": "hazard_origin",
+            "scope": "event",
+            "question": "What did you see or hear about how the condition arose?",
+            "relation": "context"
+          },
+          {
+            "field": "operator",
+            "scope": "party",
+            "question": "What record identifies the business operating this location?",
+            "relation": "context"
+          }
+        ]
+      },
+      {
+        "id": "constructive_knowledge",
+        "label": "Constructive knowledge where the owner created the condition",
+        "description": "On that inference, the opinion charged the owner with constructive knowledge based on its duty to use reasonable care to avoid creating the danger.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "va-austin-shoneys-lead-excerpt-2",
+            "source_id": "va-austin-shoneys-lead",
+            "source_type": "court_opinion",
+            "role": "supports",
+            "source_version": "sha256:887cbdca92d1a4a5520568b8e3be82a5de20f74f6ec5a98b4217cbdfb99fab25",
+            "excerpt_hash": "sha256:a00e669cbbb2d543ad3921352005880daf33a39101cef9230c35ec0151a1f2d5"
+          },
+          {
+            "passage_id": "va-austin-shoneys-lead-created-condition",
+            "source_id": "va-austin-shoneys-lead",
+            "source_type": "court_opinion",
+            "role": "qualifies",
+            "source_version": "sha256:887cbdca92d1a4a5520568b8e3be82a5de20f74f6ec5a98b4217cbdfb99fab25",
+            "excerpt_hash": "sha256:7695c728a8abfc10cc54f2449e88eade5d4b17779412f607780553d4db96b7fa"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "fall_mechanism",
+        "label": "Evidence connecting the condition to the fall",
+        "description": "The opinion considered testimony about how the fall happened in deciding whether the floor condition could be inferred to have caused it.",
+        "kind": "factor",
+        "authority": [
+          {
+            "passage_id": "va-austin-shoneys-lead-causation",
+            "source_id": "va-austin-shoneys-lead",
+            "source_type": "court_opinion",
+            "role": "supports",
+            "source_version": "sha256:887cbdca92d1a4a5520568b8e3be82a5de20f74f6ec5a98b4217cbdfb99fab25",
+            "excerpt_hash": "sha256:6bb4f44a6451c06ae3efc3ffb3f0ae0c2857c422c817b715365aa3afe214960f"
+          }
+        ],
+        "fields": [
+          {
+            "field": "fall_mechanism",
+            "scope": "event",
+            "question": "What did you or a witness see about how the fall happened?",
+            "relation": "context"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "va_breach_of_contract",
+    "version": "v1",
+    "jurisdiction": "US-VA",
+    "legal_area": "contracts",
+    "kind": "claim",
+    "label": "Breach of contract",
+    "plain_language_label": "Failure to carry out a contract obligation",
+    "topics": [
+      "contract_breach"
+    ],
+    "matter_types": [
+      "contract"
+    ],
+    "limitations": [
+      "This bounded definition follows the retained elements passage. Contract validity, defenses and possible remedies may require further authority."
+    ],
+    "logic": {
+      "op": "all",
+      "operands": [
+        {
+          "op": "element",
+          "element": "obligation"
+        },
+        {
+          "op": "element",
+          "element": "breach"
+        },
+        {
+          "op": "element",
+          "element": "loss_caused_by_breach"
+        }
+      ]
+    },
+    "elements": [
+      {
+        "id": "obligation",
+        "label": "Legally enforceable obligation",
+        "description": "The opinion lists a legally enforceable obligation owed by the defendant to the plaintiff.",
+        "kind": "requirement",
+        "authority": [
+          {
+            "passage_id": "va-filak-george-excerpt",
+            "source_id": "va-filak-george",
+            "source_type": "court_opinion",
+            "role": "supports",
+            "source_version": "sha256:713663b65fdb6baa9584b2338502662422abceafcd2c96cd299ebb97794d7e9d",
+            "excerpt_hash": "sha256:afddb80549438da3563d592c96394d1b4f66d273d203ad7685db84bb257312d0"
+          }
+        ],
+        "fields": [
+          {
+            "field": "contract_obligation",
+            "scope": "matter",
+            "question": "What does the agreement say each party agreed to do?",
+            "relation": "context"
+          }
+        ]
+      },
+      {
+        "id": "breach",
+        "label": "Breach of the obligation",
+        "description": "The opinion lists a violation of that obligation.",
+        "kind": "requirement",
+        "authority": [
+          {
+            "passage_id": "va-filak-george-excerpt",
+            "source_id": "va-filak-george",
+            "source_type": "court_opinion",
+            "role": "supports",
+            "source_version": "sha256:713663b65fdb6baa9584b2338502662422abceafcd2c96cd299ebb97794d7e9d",
+            "excerpt_hash": "sha256:afddb80549438da3563d592c96394d1b4f66d273d203ad7685db84bb257312d0"
+          }
+        ],
+        "fields": [
+          {
+            "field": "contract_performance",
+            "scope": "matter",
+            "question": "What did each party actually do under the agreement?",
+            "relation": "context"
+          }
+        ]
+      },
+      {
+        "id": "loss_caused_by_breach",
+        "label": "Injury or damage caused by the breach",
+        "description": "The opinion lists injury or damage to the plaintiff caused by the breach.",
+        "kind": "requirement",
+        "authority": [
+          {
+            "passage_id": "va-filak-george-excerpt",
+            "source_id": "va-filak-george",
+            "source_type": "court_opinion",
+            "role": "supports",
+            "source_version": "sha256:713663b65fdb6baa9584b2338502662422abceafcd2c96cd299ebb97794d7e9d",
+            "excerpt_hash": "sha256:afddb80549438da3563d592c96394d1b4f66d273d203ad7685db84bb257312d0"
+          }
+        ],
+        "fields": [
+          {
+            "field": "contract_loss",
+            "scope": "matter",
+            "question": "What loss occurred, and how do your records connect it to what happened?",
+            "relation": "context"
+          }
+        ]
+      }
+    ]
+  }
+]

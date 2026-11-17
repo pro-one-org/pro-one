@@ -20,6 +20,8 @@ EntityType = Literal["individual", "business", "government", "insurer", "unknown
 FieldName = Literal[
     "jurisdiction", "matter_type", "goal", "brand", "legal_name", "alias", "property_owner",
     "operator", "registry_id", "entity_type", "registered_agent", "hazard", "warning_sign", "injury", "employee_notice",
+    "hazard_duration", "visit_purpose", "condition_visibility", "hazard_origin", "fall_mechanism",
+    "contract_obligation", "contract_performance", "contract_loss",
     "medical_expenses", "lost_wages", "future_treatment", "surveillance", "incident_report",
     "date", "location", "street", "allegation", "possible_legal_issue", "forum",
 ] | ProceduralFact

@@ -8,6 +8,8 @@ from app.procedural_research import FACT_QUESTIONS, MatterFacts
 
 PARTY_FIELDS = {"brand", "legal_name", "registry_id", "entity_type", "alias", "operator", "property_owner", "registered_agent"}
 EVENT_FIELDS = {"date", "location", "street"}
+OPTIONAL_EVENT_FIELDS = {"hazard", "warning_sign", "injury", "employee_notice", "hazard_duration",
+                         "visit_purpose", "condition_visibility", "hazard_origin", "fall_mechanism"}
 IDENTITY_FIELDS = {"legal_name", "operator", "property_owner"}
 INDEPENDENT = {"alias", "allegation"}
 SUPPORT_ORDER = {"asserted": 0, "documented": 1, "externally_verified": 2}
@@ -101,7 +103,9 @@ def validate(matter):
             raise MatterError("invalid_party_scope")
         if row.target.field in EVENT_FIELDS and row.target.subject not in events:
             raise MatterError("invalid_event_scope")
-        if row.target.field not in PARTY_FIELDS | EVENT_FIELDS and row.target.subject is not None:
+        if row.target.field in OPTIONAL_EVENT_FIELDS and row.target.subject is not None and row.target.subject not in events:
+            raise MatterError("invalid_event_scope")
+        if row.target.field not in PARTY_FIELDS | EVENT_FIELDS | OPTIONAL_EVENT_FIELDS and row.target.subject is not None:
             raise MatterError("invalid_fact_scope")
         item = None
         if isinstance(source, (UserSource, InferenceSource)):
@@ -179,7 +183,7 @@ def validate(matter):
         if not message or message.received_at != row.received_at or row.based_on_revision >= matter.revision:
             raise MatterError("invalid_choice")
     for gap in matter.gaps:
-        index = parties if gap.target.field in PARTY_FIELDS else events if gap.target.field in EVENT_FIELDS else {}
+        index = parties if gap.target.field in PARTY_FIELDS else events if gap.target.field in EVENT_FIELDS | OPTIONAL_EVENT_FIELDS else {}
         if gap.target.subject is not None and gap.target.subject not in index:
             raise MatterError("invalid_gap_scope")
     return matter

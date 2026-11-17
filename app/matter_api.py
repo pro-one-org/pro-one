@@ -12,6 +12,9 @@ from pydantic import Field, TypeAdapter
 from starlette.concurrency import run_in_threadpool
 
 from app.capabilities import ResearchMatter
+from app.claim_models import AnalyzeClaim
+from app.claim_service import ClaimService
+from app.claim_store import ClaimStore
 from app.legal_research import GeneralLegalResearchService
 from app.matter_models import Choice, EvidenceKind, EventKind, FieldName, Message, PartyRole, Record, Target, Text, UserSource
 from app.matter_service import ImportedRecord, MatterService, records_by_id
@@ -252,5 +255,48 @@ def router(settings, repository, generation):
                     matter.choices[-1].based_on_revision + 1 == matter.revision else None, "research": result}
 
         return execute(assemble)
+
+    @routes.get("/{matter_id}/legal-theories")
+    def legal_theories(request: Request, matter_id: UUID, revision: int = Query(ge=0, le=199)):
+        config, path, _ = access(request, matter_id)
+
+        def read():
+            matter = service(config, path).read(matter_id, revision)
+            report = ClaimService(repository, config).analyze(matter, AnalyzeClaim(revision=revision))
+            return {key: report[key] for key in ("matter_revision", "jurisdiction", "status", "summary", "exact_authority")}
+
+        return execute(read)
+
+    @routes.post("/{matter_id}/claim-analysis", status_code=201)
+    def analyze_claim(request: Request, matter_id: UUID, body: AnalyzeClaim):
+        config, path, _ = access(request, matter_id)
+
+        def apply():
+            ledger = service(config, path)
+            matter = ledger.read(matter_id, body.revision)
+            verifier = (os.environ.get("PRO_ONE_CLAIM_VERIFIER_PROVIDER", ""),
+                        os.environ.get("PRO_ONE_CLAIM_VERIFIER_MODEL", ""))
+            engine = ClaimService(repository, config, generation.registry, verifier)
+            return ClaimStore(ledger.store).save(matter, engine.analyze(matter, body))
+
+        return execute(apply)
+
+    @routes.get("/{matter_id}/claim-analysis/{analysis_id}")
+    def read_claim(request: Request, matter_id: UUID, analysis_id: str):
+        config, path, _ = access(request, matter_id)
+
+        def read():
+            if not re.fullmatch(r"[0-9a-f]{64}", analysis_id):
+                raise MatterNotFound("claim_analysis_not_found")
+            ledger = service(config, path)
+            return ClaimStore(ledger.store).get(matter_id, analysis_id, ClaimService(repository, config))
+
+        return execute(read)
+
+    @routes.get("/{matter_id}/claim-analysis/{analysis_id}/questions")
+    def claim_questions(request: Request, matter_id: UUID, analysis_id: str):
+        analysis = read_claim(request, matter_id, analysis_id)
+        return {key: analysis[key] for key in ("matter_revision", "latest_matter_revision", "freshness",
+                                                "stale_reasons", "questions")}
 
     return routes

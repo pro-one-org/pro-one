@@ -13,7 +13,7 @@ from app.matter_models import (
     Record, Target, Text, UserSource,
 )
 from app.matter_state import (
-    BASE_GAPS, EVENT_FIELDS, IDENTITY_FIELDS, PARTY_FIELDS, MatterError, equivalent,
+    BASE_GAPS, EVENT_FIELDS, IDENTITY_FIELDS, OPTIONAL_EVENT_FIELDS, PARTY_FIELDS, MatterError, equivalent,
     norm, page_at, projection, source_status,
 )
 from app.matter_store import RevisionConflict, now
@@ -123,6 +123,11 @@ class MatterService:
             raise MatterError("invalid_subject_reference")
         if not event_kind and (participants or related_evidence):
             raise MatterError("event_required_for_relationships")
+        explicit_event = event is not None or event_kind is not None
+        if not explicit_event and sum(row.kind == "incident" for row in base.events) > 1 and any(
+            row[0] in EVENT_FIELDS | OPTIONAL_EVENT_FIELDS for row in rows
+        ):
+            raise MatterError("incident_requires_explicit_scope")
         initial_party = next((row for row in rows if row[0] in {"brand", "legal_name"}), None)
         if not party and (new_party_role or (initial_party and not base.parties)):
             if not initial_party:
@@ -145,7 +150,8 @@ class MatterService:
         superseded = {row.previous for row in base.corrections}
         prior_sources = {row.id: row.text for row in base.messages}
         for field, value, quote, offset in rows:
-            subject = party if field in PARTY_FIELDS else event if field in EVENT_FIELDS else None
+            event_scoped = field in EVENT_FIELDS or (explicit_event and field in OPTIONAL_EVENT_FIELDS)
+            subject = party if field in PARTY_FIELDS else event if event_scoped else None
             if field in PARTY_FIELDS | EVENT_FIELDS and subject is None:
                 continue
             # A differently named business requires an explicit scope; never merge by a name.
