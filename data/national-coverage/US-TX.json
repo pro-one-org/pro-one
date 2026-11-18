@@ -346,6 +346,18 @@
       "locator": "Tex. Bus. & Com. Code § 17.41 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-TX:fault:e38dca8bf7e8": {
+      "category": "fault",
+      "title": "Tex. Civ. Prac. & Rem. Code § 33.001",
+      "url": "https://tcss.legis.texas.gov/resources/CP/pdf/CP.33.pdf",
+      "directory": null,
+      "locator": "Tex. Civ. Prac. & Rem. Code § 33.001",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:50.594134+00:00",
+        "sha256": "884e293055350901b242356073665b86b875edc77ca8534369009acf90c7762f"
+      }
     }
   },
   "court_directory": [
@@ -511,5 +523,25 @@
       "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "4974a9d050712beb6e5241b048806d": {
+      "source_id": "US-TX:fault:e38dca8bf7e8",
+      "citation": "Tex. Civ. Prac. & Rem. Code § 33.001",
+      "authority_type": "statute",
+      "text": "In an action to which this chapter applies, a claimant may not recover damages if his percentage of responsibility is greater than 50 percent.",
+      "text_sha256": "4dbc6dd73e344326317680380731ce375d920e4c996cca295353be00076a63ad",
+      "publisher_sha256": "884e293055350901b242356073665b86b875edc77ca8534369009acf90c7762f",
+      "retrieved_at": "2026-11-17T21:03:50.594134+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "4974a9d050712beb6e5241b048806d",
+    "source_id": "US-TX:fault:e38dca8bf7e8",
+    "currentness": "unresolved",
+    "qualification": "The provision applies to actions within Chapter 33. Applicability and exceptions require separate review."
+  }
 }
