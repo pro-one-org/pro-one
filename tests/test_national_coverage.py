@@ -15,12 +15,31 @@ from app.jurisdictions import jurisdiction_id, possible_tribal_scope, registry, 
 from app.main import app
 from app.national_corpus import AuthorityVersion, CorpusError, CorpusQuery, FetchedSource
 from app.national_corpus_store import SQLiteNormalizedCorpus
-from app.national_coverage import coverage
+from app.national_coverage import coverage, manifest
 from app.national_excerpt_research import RetainedLegislativeResearch
 from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_archive_edition_and_effective_date_do_not_establish_currentness(self):
+        scope = "US-CA"
+        selector, row = next((key, item) for key, item in manifest(scope)["passages"].items()
+                             if item["citation"] == "Cal. Civ. Code § 1788.13")
+        self.assertEqual(row["effective_from"], "2025-01-01")
+        self.assertEqual(row["currentness"], "unresolved")
+        with TemporaryDirectory() as folder:
+            observation = check(scope, selector, Path(folder) / "health.sqlite3",
+                                fetch=lambda _: self.fail("Unexpected whole-archive fetch"))
+            self.assertEqual(observation["status"], "archive_member_replay_required")
+            self.assertIsNone(observation["observed_hash"])
+        query = ResearchMatter(country="US", state="New Jersey", legal_area="contracts",
+                               topics=["contract_formation"], authority_types=["statute"])
+        provider = RetainedLegislativeResearch()
+        key, = provider.search(query)
+        self.assertIn("contract for sale of goods", provider.fetch(key).text)
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                  "authority_as_of": "2026-11-18"})))
+
     def test_certified_statute_requires_matching_date_and_jurisdiction(self):
         query = ResearchMatter(country="US", state="Wisconsin", legal_area="contracts",
                                topics=["contract_formation"], authority_types=["statute"],

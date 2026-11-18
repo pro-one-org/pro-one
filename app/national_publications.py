@@ -66,12 +66,16 @@ class LegislativeExcerpts:
             identity_key=citation,
             title=citation, citation=citation,
             edition=row.get("edition", f"publisher capture {retrieved.isoformat()}"),
+            effective_from=date.fromisoformat(row["effective_from"]) if row.get("effective_from") else None,
             text=row["text"], legislature=publisher if self.source.authority_type == "statute" else None,
             court=row.get("court"), currentness=row["currentness"],
             current_as_of=day, currentness_basis=basis,
             limitations=("Bounded excerpt. Classification, exceptions, later amendments and application require review.",),
         )
-        yield Observation(version, selector, f"{citation}; original publisher SHA-256 {row['publisher_sha256']}",
+        member = row.get("publisher_member")
+        location = f"{citation}; archive member {member}" if member else citation
+        hash_scope = "publisher member" if row.get("publisher_archive_etag") else "original publisher"
+        yield Observation(version, selector, f"{location}; {hash_scope} SHA-256 {row['publisher_sha256']}",
                           citation)
 
 

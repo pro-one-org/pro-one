@@ -40,6 +40,8 @@ def check(scope, selector, history, *, fetch=None):
     observed = None
     code = None
     try:
+        if isinstance(provider, LegislativeExcerpts) and provider.publication(selector)[0].get("publisher_archive_etag"):
+            raise CorpusError("archive_member_replay_required")
         raw = (fetch or endpoint.fetch)(selector).raw
         observed = fingerprint(raw)
         if observed != expected:
@@ -51,7 +53,9 @@ def check(scope, selector, history, *, fetch=None):
             status = "publisher_bytes_unchanged"
     except CorpusError as exc:
         code = str(exc)
-        if code in {"source_http_301", "source_http_302", "source_http_303", "source_http_307", "source_http_308"}:
+        if code == "archive_member_replay_required":
+            status = "archive_member_replay_required"
+        elif code in {"source_http_301", "source_http_302", "source_http_303", "source_http_307", "source_http_308"}:
             status = "redirected"
         elif code in {"source_http_401", "source_http_403"}:
             status = "authentication_required" if code.endswith("401") else "access_denied"
