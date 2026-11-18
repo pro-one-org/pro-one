@@ -199,6 +199,18 @@
       "locator": "Ind. Code § 24-5-0.5",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-IN:contract_formation:242e3aa726b1": {
+      "category": "contract_formation",
+      "title": "Teachers Credit Union v. Cripe, No. 24A-PL-698, ¶ 17 (Ind. Ct. App. Dec. 13, 2024)",
+      "url": "https://public.courts.in.gov/Decisions/api/Document/Opinion?Id=upwm4C_OH_iJlmECtk93nxXUq0bmQ2yqxamm_TUoUiRgYf1amzw2T36zx7dlWWLg0",
+      "locator": "Teachers Credit Union v. Cripe, No. 24A-PL-698, ¶ 17 (Ind. Ct. App. Dec. 13, 2024)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:31:28.092951+00:00",
+        "sha256": "0649b5c227b691bd165208034482ea08d649bf44186a5e594aa4caf474430789"
+      }
     }
   },
   "court_directory": [
@@ -294,5 +306,23 @@
       "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "bb286762ae5d998dd422a4af14f52c": {
+      "source_id": "US-IN:contract_formation:242e3aa726b1",
+      "authority_type": "opinion",
+      "citation": "Teachers Credit Union v. Cripe, No. 24A-PL-698, ¶ 17 (Ind. Ct. App. Dec. 13, 2024)",
+      "text": "“[A]n arbitration agreement, as with a typical contract, requires ‘offer, acceptance of the offer and consideration.’” Land 1, 218 N.E.3d at 1287 (quoting Reitenour v. M/I Homes of Ind., L.P., 176 N.E.3d 505, 510-11 (Ind. Ct. App. 2021)).",
+      "text_sha256": "6b931e0a88641e1bbe8b1f6009d28d209aa204159562d3f2e92f4c56cd773cc4",
+      "publisher_sha256": "0649b5c227b691bd165208034482ea08d649bf44186a5e594aa4caf474430789",
+      "retrieved_at": "2026-11-18T20:31:28.092951+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2024-12-13",
+      "court": "Court of Appeals of Indiana",
+      "decision_date": "2024-12-13",
+      "opinion_role": "unanimous",
+      "procedural_posture": "Appeal from denial of a motion to compel arbitration and dismiss the complaint; affirmed."
+    }
+  }
 }

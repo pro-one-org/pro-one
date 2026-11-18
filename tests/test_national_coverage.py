@@ -21,6 +21,21 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_decided_cases_keep_court_role_and_subsequent_treatment(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Mississippi", legal_area="contracts",
+                               topics=["contract_formation"], authority_types=["opinion"],
+                               authority_status="historical", court="Supreme Court of Mississippi")
+        key, = provider.search(query)
+        doc = provider.fetch(key)
+        self.assertEqual(doc.source["source_type"], "court_opinion")
+        self.assertEqual(doc.source["case_metadata"]["opinion_role"], "majority")
+        self.assertEqual(doc.source["case_metadata"]["subsequent_treatment"], "unknown")
+        self.assertIn("agreement that is sufficiently definite", doc.text)
+        for change in ({"state": "Indiana"}, {"court": "Court of Appeals of Mississippi"},
+                       {"authority_types": ["statute"]}, {"authority_status": "current"}):
+            self.assertFalse(provider.search(query.model_copy(update=change)))
+
     def test_archive_edition_and_effective_date_do_not_establish_currentness(self):
         scope = "US-CA"
         selector, row = next((key, item) for key, item in manifest(scope)["passages"].items()

@@ -19,7 +19,8 @@ class LegislativeExcerpts:
         record = manifest(jurisdiction)
         hosts = sorted({urlsplit(record["sources"][p["source_id"]]["url"]).hostname
                         for p in record.get("passages", {}).values() if p["authority_type"] == authority_type})
-        prefix = "legislative_excerpts_" if authority_type == "statute" else "court_rule_excerpts_"
+        prefix = {"statute": "legislative_excerpts_", "court_rule": "court_rule_excerpts_",
+                  "opinion": "judicial_opinion_excerpts_"}[authority_type]
         self.source = Source(
             name=prefix + jurisdiction.lower().replace("-", "_"),
             host=", ".join(hosts), authority_type=authority_type, jurisdictions=(jurisdiction,),
@@ -69,6 +70,9 @@ class LegislativeExcerpts:
             effective_from=date.fromisoformat(row["effective_from"]) if row.get("effective_from") else None,
             text=row["text"], legislature=publisher if self.source.authority_type == "statute" else None,
             court=row.get("court"), currentness=row["currentness"],
+            published_on=date.fromisoformat(row["decision_date"]) if row.get("decision_date") else None,
+            opinion_role=row.get("opinion_role"), procedural_posture=row.get("procedural_posture"),
+            precedential_status="unknown" if row["authority_type"] == "opinion" else None,
             current_as_of=day, currentness_basis=basis,
             limitations=("Bounded excerpt. Classification, exceptions, later amendments and application require review.",),
         )

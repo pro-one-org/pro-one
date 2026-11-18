@@ -86,6 +86,11 @@ def manifest(scope):
                 or sha256(passage["text"].encode()).hexdigest() != passage["text_sha256"]
                 or passage["currentness"] not in {"unresolved", "historical", "current_as_of"}):
             raise ValueError("invalid_passage_binding")
+        if passage["authority_type"] == "opinion" and (
+                not passage.get("court") or not passage.get("decision_date") or not passage.get("procedural_posture")
+                or passage.get("opinion_role") not in {"majority", "unanimous"}
+                or passage["currentness"] != "historical"):
+            raise ValueError("invalid_retained_opinion")
         if passage["currentness"] == "current_as_of":
             day, _ = certified_basis(scope, source["url"], capture, passage["publisher_path"], passage["citation"], passage["text"])
             if passage["current_as_of"] != day.isoformat() or passage["authority_type"] != "statute":

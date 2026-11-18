@@ -64,6 +64,13 @@ class RetainedLegislativeResearch:
                           "locator": observation.locator}
             source = NormalizedAuthorityProvider._source(
                 matter, SimpleNamespace(legal_area=area, issues=[topic]), v, provenance, provider.source)
+            if kind == "opinion":
+                source["authority"]["issuing_body"] = v.court
+                source["case_metadata"] = {
+                    "court": v.court, "decision_date": row["decision_date"], "publication_status": "unknown",
+                    "precedential_status": v.precedential_status, "procedural_posture": v.procedural_posture,
+                    "subsequent_treatment": "unknown", "opinion_role": v.opinion_role,
+                }
             chunks = wrap(v.text, 1000, break_long_words=False, break_on_hyphens=False)
             passages = [evidence_passage(source, text, observation.locator, [topic], suffix=f"p{i}")
                         for i, text in enumerate(chunks, 1)]

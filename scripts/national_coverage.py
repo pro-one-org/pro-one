@@ -10,7 +10,7 @@ from time import perf_counter_ns
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from app.coverage_audit import build, gaps, health, retained_observations, review_queue, source_distribution
+from app.coverage_audit import build, gaps, health, retained_observations, review_queue, source_distribution, state_baseline
 from app.coverage_health import check
 from app.jurisdictions import jurisdiction_id, registry
 from app.national_coverage import action_shells, coverage, manifest, summary
@@ -63,7 +63,7 @@ def benchmark():
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
-    for cmd in ("status", "validate", "distribution", "benchmark"):
+    for cmd in ("status", "validate", "distribution", "benchmark", "baseline"):
         commands.add_parser(cmd)
     commands.add_parser("jurisdiction").add_argument("scope")
     commands.add_parser("domain").add_argument("domain")
@@ -79,6 +79,8 @@ def main():
         result = summary()
     elif args.command == "distribution":
         result = source_distribution()
+    elif args.command == "baseline":
+        result = state_baseline()
     elif args.command == "build":
         result = build(args.database)
     elif args.command == "check-publisher":

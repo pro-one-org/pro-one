@@ -42,6 +42,24 @@ def gaps(scope):
             for key, cell in row["cells"].items() if cell["status"] != "verified_supported"]
 
 
+def state_baseline():
+    """Count evidence versions and jurisdiction-level capabilities independently."""
+    domains = {}
+    for scope, owner in registry().items():
+        if owner.kind not in {"state", "district"}:
+            continue
+        row = coverage(scope)
+        for key, cell in row["cells"].items():
+            report = domains.setdefault(key, {"passages": Counter(), "capability_statuses": Counter(),
+                                               "with_passages": [], "without_passages": []})
+            selectors = set(cell.get("passage_selectors", ()))
+            for selector in selectors:
+                report["passages"][row["passages"][selector]["currentness"]] += 1
+            report["capability_statuses"][cell["status"]] += 1
+            report["with_passages" if selectors else "without_passages"].append(scope)
+    return domains
+
+
 def review_queue(scope):
     return [{"jurisdiction": scope, "citation": item["citation"], "source_id": item["source_id"],
              "currentness": item["currentness"], "captured_at": item["retrieved_at"],

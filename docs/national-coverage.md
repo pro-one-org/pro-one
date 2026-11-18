@@ -12,6 +12,7 @@ python scripts/national_coverage.py gaps --jurisdiction LA
 python scripts/national_coverage.py stale --jurisdiction NH
 python scripts/national_coverage.py source-health --jurisdiction PR
 python scripts/national_coverage.py distribution
+python scripts/national_coverage.py baseline
 ```
 
 The same public catalog is readable at `GET /api/coverage`, `GET /api/coverage/{jurisdiction}` and `GET /api/coverage/{jurisdiction}/{domain}`. These routes accept no matter content. The existing product page is at `/coverage`.
