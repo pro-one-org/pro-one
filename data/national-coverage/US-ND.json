@@ -228,6 +228,18 @@
         "retrieved_at": "2026-11-18T15:14:32.696982+00:00",
         "sha256": "7c2e8b6e26c0870a8fb08995ddfabfe1fc2cab407df956e3129f54a9604cde67"
       }
+    },
+    "US-ND:commencement:c9ae882cd38d": {
+      "category": "commencement",
+      "title": "N.D.R.Civ.P. 3",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcivp/3",
+      "locator": "N.D.R.Civ.P. 3",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:21:42.109148+00:00",
+        "sha256": "4a0f9b7e1b8be3a38f92ea0ef7c8c1ca05755c66962f38b195b8f2a4c18ae0da"
+      }
     }
   },
   "court_directory": [
@@ -327,6 +339,18 @@
       "retrieved_at": "2026-11-18T15:14:32.696982+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "a8dd73511a30b296753e4ecbc73efb": {
+      "source_id": "US-ND:commencement:c9ae882cd38d",
+      "authority_type": "court_rule",
+      "citation": "N.D.R.Civ.P. 3",
+      "text": "A civil action is commenced by the service of a summons.",
+      "text_sha256": "b216a9742b55660f2093557b65975d061a6c0fa66c0caf673965b0133328a1b0",
+      "publisher_sha256": "4a0f9b7e1b8be3a38f92ea0ef7c8c1ca05755c66962f38b195b8f2a4c18ae0da",
+      "retrieved_at": "2026-11-18T20:21:42.109148+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "North Dakota District Court"
     }
   },
   "fault_allocation": {

@@ -223,6 +223,42 @@
         "retrieved_at": "2026-11-18T15:14:28.823092+00:00",
         "sha256": "e63af7035b045c77dcd825d49bfcb98f4440351fc49d80fbb2c2c0e65b0ee1bf"
       }
+    },
+    "US-MN:commencement:3e4a90450307": {
+      "category": "commencement",
+      "title": "Minn. R. Civ. P. 3.01",
+      "url": "https://www.revisor.mn.gov/court_rules/cp/id/3/",
+      "locator": "Minn. R. Civ. P. 3.01",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:21:41.830711+00:00",
+        "sha256": "01c5c62e0c41245a09f83098e186b415133cd6abcc6eac186842aeb055a148dc"
+      }
+    },
+    "US-MN:service:c4b1534bde61": {
+      "category": "service",
+      "title": "Minn. R. Civ. P. 4.02",
+      "url": "https://www.revisor.mn.gov/court_rules/cp/id/4/",
+      "locator": "Minn. R. Civ. P. 4.02",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:21:41.908645+00:00",
+        "sha256": "246870593e1b36523647b87587006419a6f344b58d91565ea04ac9e65d98f7c0"
+      }
+    },
+    "US-MN:response:a1c422accba1": {
+      "category": "response",
+      "title": "Minn. R. Civ. P. 12.01",
+      "url": "https://www.revisor.mn.gov/court_rules/cp/id/12/",
+      "locator": "Minn. R. Civ. P. 12.01",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:21:41.924341+00:00",
+        "sha256": "f01e56e9ca534253f1754424850cdc7a21d39cb6b80567e339126a85d3107a1f"
+      }
     }
   },
   "court_directory": [
@@ -321,6 +357,42 @@
       "retrieved_at": "2026-11-18T15:14:28.823092+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "38ec94a167f3d387ca150b0c9dc7b6": {
+      "source_id": "US-MN:commencement:3e4a90450307",
+      "authority_type": "court_rule",
+      "citation": "Minn. R. Civ. P. 3.01",
+      "text": "A civil action is commenced against each defendant: (a) when the summons is served upon that defendant; or (b) at the date of signing a waiver of service pursuant to Rule 4.05; or (c) when the summons is delivered for service to the sheriff in the county where the defendant resides personally, by U.S. Mail (postage prepaid), by commercial courier with proof of delivery, or by electronic means consented to by the sheriff's office either in writing or electronically; but such delivery shall be ineffectual unless within 60 days thereafter the summons is actually served on that defendant or the first publication thereof is made. Filing requirements are set forth in Rule 5.04, which requires filing with the court within one year after commencement for non-family cases.",
+      "text_sha256": "69568b21a5acbed00b06179516b025889364a98aa0f7be1cadf0c5d6b2ddfb2e",
+      "publisher_sha256": "01c5c62e0c41245a09f83098e186b415133cd6abcc6eac186842aeb055a148dc",
+      "retrieved_at": "2026-11-18T20:21:41.830711+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Minnesota District Court"
+    },
+    "e3f7eb46dd3e990a8e3520ea33b5e6": {
+      "source_id": "US-MN:service:c4b1534bde61",
+      "authority_type": "court_rule",
+      "citation": "Minn. R. Civ. P. 4.02",
+      "text": "Unless otherwise ordered by the court, the sheriff or any other person not less than 18 years of age and not a party to the action, may make service of a summons or other process.",
+      "text_sha256": "cdf3cdc9f9d1455bea96037bb018f5cfdd5e7fee2b4c9528b41ca1cd751045a1",
+      "publisher_sha256": "246870593e1b36523647b87587006419a6f344b58d91565ea04ac9e65d98f7c0",
+      "retrieved_at": "2026-11-18T20:21:41.908645+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Minnesota District Court"
+    },
+    "95b55f97139022e279a3179645ded4": {
+      "source_id": "US-MN:response:a1c422accba1",
+      "authority_type": "court_rule",
+      "citation": "Minn. R. Civ. P. 12.01",
+      "text": "Defendant shall serve an answer within 21 days after service of the summons upon that defendant unless the court directs otherwise pursuant to Rule 4.043. A party served with a pleading stating a cross-claim against that party shall serve an answer thereto within 21 days after the service upon that party. The plaintiff shall serve a reply to a counterclaim in the answer within 21 days after service of the answer or, if a reply is ordered by the court, within 21 days after service of the order, unless the order otherwise directs. The service of a motion permitted under this rule alters these periods of time as follows unless a different time is fixed by order of the court: (1) If the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within 14 days after service of notice of the court's action; (2) if the court grants a motion for a more definite statement, the responsive pleading shall be served within 14 days after the service of the more definite statement.",
+      "text_sha256": "b8647bb5a0681ccb2f3ec1c62afeadd96fb32b632e7fb8d5e3813cdb850e175c",
+      "publisher_sha256": "f01e56e9ca534253f1754424850cdc7a21d39cb6b80567e339126a85d3107a1f",
+      "retrieved_at": "2026-11-18T20:21:41.924341+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Minnesota District Court"
     }
   },
   "fault_allocation": {

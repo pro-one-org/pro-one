@@ -298,6 +298,42 @@
         "retrieved_at": "2026-11-18T15:14:37.322821+00:00",
         "sha256": "fb0e626421a62ffcc6a4f51f7965c34bc3d0535fbb09f5643dc3273cb5bc78b9"
       }
+    },
+    "US-IA:wageLaw:9d5d4f8a6ffc": {
+      "category": "wageLaw",
+      "title": "Iowa Code § 91A.3(1)",
+      "url": "https://www.legis.iowa.gov/docs/code/2025/91A.3.pdf",
+      "locator": "Iowa Code § 91A.3(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:21:42.650683+00:00",
+        "sha256": "b1b1d823adb918ce08e0363490edf26a58a1b941e89baf3fbc570434090a79ef"
+      }
+    },
+    "US-IA:deposit:c90de55d38ee": {
+      "category": "deposit",
+      "title": "Iowa Code § 562A.12(1)",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/562A.12.pdf",
+      "locator": "Iowa Code § 562A.12(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:21:42.677424+00:00",
+        "sha256": "00de83376b558e8ccd56efc7bedc5a8e4447f9ef4d41644cd2434a21b954e43b"
+      }
+    },
+    "US-IA:debtLaw:668645835631": {
+      "category": "debtLaw",
+      "title": "Iowa Code § 537.7103(1)(a)–(b)",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/537.7103.pdf",
+      "locator": "Iowa Code § 537.7103(1)(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:21:42.677424+00:00",
+        "sha256": "e67441d3bcdde354a6e275b3663d587532f849ae880ffc483555ea1b0651dd79"
+      }
     }
   },
   "court_directory": [
@@ -397,6 +433,42 @@
       "currentness": "historical",
       "language": "en",
       "edition": "2025 codification"
+    },
+    "4a2d6a77adc8e22fa271ac6cec6e32": {
+      "source_id": "US-IA:wageLaw:9d5d4f8a6ffc",
+      "authority_type": "statute",
+      "citation": "Iowa Code § 91A.3(1)",
+      "text": "An employer shall pay all wages due its employees, less any lawful deductions specified in section 91A .5 , at least in monthly , semimonthly , or biweekly installments on regular paydays which are at consistent intervals from each other and which are designated in advance by the employer . However , if any of these wages due its employees are determined on a commission basis, the employer may , upon agreement with the employee, pay only a credit against such wages. If such credit is paid, the employer shall, at regular intervals, pay any difference between a credit paid against wages determined on a commission basis and such wages actually earned on a commission basis. These regular intervals shall not be separated by more than twelve months. A regular payday shall not be more than twelve days, excluding Sundays and legal holidays, after the end of the period in which the wages were earned. An employer and employee may , upon written agreement which shall be maintained as a record, vary the provisions of this subsection .",
+      "text_sha256": "97c6ed82ef6ea7ada129bc9bf091a3a0cc6082bd35e886ac1130c1d38f6d9786",
+      "publisher_sha256": "b1b1d823adb918ce08e0363490edf26a58a1b941e89baf3fbc570434090a79ef",
+      "retrieved_at": "2026-11-18T20:21:42.650683+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Iowa Code 2025"
+    },
+    "c7db18de9d7f3d55e9d92632c544b4": {
+      "source_id": "US-IA:deposit:c90de55d38ee",
+      "authority_type": "statute",
+      "citation": "Iowa Code § 562A.12(1)",
+      "text": "A landlord shall not demand or receive as a security deposit an amount or value in excess of two months’ rent.",
+      "text_sha256": "138ace73a2498ae6bcf340a15e795bfb584fa7c79ec1a163dfc9c6c04d02493b",
+      "publisher_sha256": "00de83376b558e8ccd56efc7bedc5a8e4447f9ef4d41644cd2434a21b954e43b",
+      "retrieved_at": "2026-11-18T20:21:42.677424+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Iowa Code 2026"
+    },
+    "2ce2f88c31890ce59d181300a5cb13": {
+      "source_id": "US-IA:debtLaw:668645835631",
+      "authority_type": "statute",
+      "citation": "Iowa Code § 537.7103(1)(a)–(b)",
+      "text": "A debt collector shall not collect or attempt to collect a debt by means of an illegal threat, coercion or attempt to coerce. The conduct described in each of the following paragraphs is an illegal threat, coercion or attempt to coerce within the meaning of this subsection : a. The use, or express or implicit threat of use, of force, violence or other criminal means, to cause harm to a person or to property of a person. b. The false accusation or threat to falsely accuse a person of fraud or any other crime.",
+      "text_sha256": "a21f39428d3f582132bfc472d081f24c9fb6d6f3f0eb14c5a6ce44668d3263e5",
+      "publisher_sha256": "e67441d3bcdde354a6e275b3663d587532f849ae880ffc483555ea1b0651dd79",
+      "retrieved_at": "2026-11-18T20:21:42.677424+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Iowa Code 2026"
     }
   },
   "fault_allocation": {
