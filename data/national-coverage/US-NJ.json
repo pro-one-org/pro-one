@@ -218,6 +218,15 @@
       "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
       "directory": "bjs_sco_2004",
       "locator": "Table 3, PDF page 28"
+    },
+    "US-NJ:consumerLaw:c92ae9267670": {
+      "title": "N.J. Stat. Ann. § 56:8-1 et seq.",
+      "category": "consumerLaw",
+      "url": "https://lis.njleg.state.nj.us/nxt/gateway.dll/statutes/1/2797",
+      "directory": "consumer_statutes_index",
+      "locator": "N.J. Stat. Ann. § 56:8-1 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -300,6 +309,13 @@
       "citation": "N.J. Stat 2A:18-61.1 Grounds for removal of tenants; N.J. Stat 2A:42-10.13 Application of act to rental premises for dwelling purposes; N.J. Stat 2A:18-60 Removal of proceedings into Law Division",
       "directory": "eviction",
       "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "N.J. Stat. Ann. § 56:8-1 et seq.",
+      "source_id": "US-NJ:consumerLaw:c92ae9267670",
+      "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
   ]

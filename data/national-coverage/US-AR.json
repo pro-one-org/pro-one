@@ -183,6 +183,15 @@
       "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
       "directory": "bjs_sco_2004",
       "locator": "Table 3, PDF page 26"
+    },
+    "US-AR:consumerLaw:2fbdc9bc7092": {
+      "title": "Ark. Code Ann. § 4-88-101 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.arkleg.state.ar.us/ArkansasLaw/ArkansasCode/",
+      "directory": "consumer_statutes_index",
+      "locator": "Ark. Code Ann. § 4-88-101 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -271,6 +280,13 @@
       "citation": "Ark. Code § 18-17-201. Territorial application",
       "directory": "eviction",
       "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Ark. Code Ann. § 4-88-101 et seq.",
+      "source_id": "US-AR:consumerLaw:2fbdc9bc7092",
+      "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
   ]

@@ -239,6 +239,27 @@
         "sha256": "4445fdb684c016f4e5c7500316143d20cb32291669bb431aac0b7ace65c55ae8",
         "health": "manual_review_required"
       }
+    },
+    "US-OK:fault:c5d0cc690cdd": {
+      "category": "fault",
+      "title": "Okla. Stat. tit. 23, § 13",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os23.pdf",
+      "directory": null,
+      "locator": "Okla. Stat. tit. 23, § 13",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:38.843448+00:00",
+        "sha256": "2aa8239ae37628ca67b517a9a4ea35bd5d7c6c6c9a5d10891774875b0348c841"
+      }
+    },
+    "US-OK:consumerLaw:716d40a4ca23": {
+      "title": "Okla. Stat. tit. 15 § 751 et seq.",
+      "category": "consumerLaw",
+      "url": "https://oksenate.gov/sites/default/files/2019-12/os15.pdf",
+      "directory": "consumer_statutes_index",
+      "locator": "Okla. Stat. tit. 15 § 751 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -326,6 +347,33 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Okla. Stat. tit. 15 § 751 et seq.",
+      "source_id": "US-OK:consumerLaw:716d40a4ca23",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "7e32e199f442b5cff4feee4043a2d0": {
+      "citation": "Okla. Stat. tit. 23, § 13",
+      "source_id": "US-OK:fault:c5d0cc690cdd",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "In all actions hereafter brought, whether arising before or after the effective date of this act, for negligence resulting in personal injuries or wrongful death, or injury to property, contributory negligence shall not bar a recovery, unless any negligence of the person so injured, damaged or killed, is of greater degree than any negligence of the person, firm or corporation causing such damage, or unless any negligence of the person so injured, damaged or killed, is of greater degree than Oklahoma Statutes - Title 23. Damages Page 9 the combined negligence of any persons, firms or corporations causing such damage.",
+      "text_sha256": "d21b27b9186cbd2273a2ebbb538ff84851f3451d0fc25c7b536dcf622d5ae2be",
+      "publisher_sha256": "2aa8239ae37628ca67b517a9a4ea35bd5d7c6c6c9a5d10891774875b0348c841",
+      "retrieved_at": "2026-11-17T20:50:38.843448+00:00",
+      "currentness": "unresolved"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "7e32e199f442b5cff4feee4043a2d0",
+    "source_id": "US-OK:fault:c5d0cc690cdd",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
 }

@@ -218,6 +218,27 @@
         "sha256": "118da851dd98c39d12c63197db554bc71f5cf39681482fd2e513aea79197958f",
         "health": "manual_review_required"
       }
+    },
+    "US-ID:fault:e42a54e830ed": {
+      "category": "fault",
+      "title": "Idaho Code § 6-801",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title6/T6CH8/SECT6-801/",
+      "directory": null,
+      "locator": "Idaho Code § 6-801",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:40.987973+00:00",
+        "sha256": "7c2d94e86c2eb09ae62376af79dc66b220199fc55a12f79230ce58a457e6b92e"
+      }
+    },
+    "US-ID:consumerLaw:5734a7b95edb": {
+      "title": "Idaho Code § 48-601 et seq.",
+      "category": "consumerLaw",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title48/T48CH6/SECT48-602/",
+      "directory": "consumer_statutes_index",
+      "locator": "Idaho Code § 48-601 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -281,6 +302,13 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Idaho Code § 48-601 et seq.",
+      "source_id": "US-ID:consumerLaw:5734a7b95edb",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
   ],
   "passages": {
@@ -305,6 +333,24 @@
       "retrieved_at": "2026-11-17T19:33:57.110131+00:00",
       "language": "en",
       "currentness": "unresolved"
+    },
+    "493595a89f22b1e17003b1ea51411d": {
+      "citation": "Idaho Code § 6-801",
+      "source_id": "US-ID:fault:e42a54e830ed",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "Contributory negligence or comparative responsibility shall not bar recovery in an action by any person or his legal representative to recover damages for negligence, gross negligence or comparative responsibility resulting in death or in injury to person or property, if such negligence or comparative responsibility was not as great as the negligence, gross negligence or comparative responsibility of the person against whom recovery is sought, but any damages allowed shall be diminished in the proportion to the amount of negligence or comparative responsibility attributable to the person recovering. Nothing contained herein shall create any new legal theory, cause of action, or legal defense.",
+      "text_sha256": "ec88d9e98002cdd060f9758578a1ca20b9f256973bfcf6aee5cc307cd2182b3a",
+      "publisher_sha256": "7c2d94e86c2eb09ae62376af79dc66b220199fc55a12f79230ce58a457e6b92e",
+      "retrieved_at": "2026-11-17T20:50:40.987973+00:00",
+      "currentness": "unresolved"
     }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_50",
+    "passage_selector": "493595a89f22b1e17003b1ea51411d",
+    "source_id": "US-ID:fault:e42a54e830ed",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
   }
 }

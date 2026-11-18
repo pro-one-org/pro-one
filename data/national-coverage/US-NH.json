@@ -190,6 +190,15 @@
       "url": "https://gc.nh.gov/rsa/html/xxxi/358-c/358-c-mrg.htm",
       "directory": null,
       "locator": "N.H. RSA 358-C:2"
+    },
+    "US-NH:consumerLaw:b37da46fd302": {
+      "title": "N.H. Rev. Stat. § 358-A",
+      "category": "consumerLaw",
+      "url": "https://www.gencourt.state.nh.us/rsa/html/XXXI/358-A/358-A-mrg.htm",
+      "directory": "consumer_statutes_index",
+      "locator": "N.H. Rev. Stat. § 358-A",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -267,6 +276,13 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "N.H. Rev. Stat. § 358-A",
+      "source_id": "US-NH:consumerLaw:b37da46fd302",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
   ],
   "passages": {
@@ -314,5 +330,12 @@
       "language": "en",
       "currentness": "unresolved"
     }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "80bd68ccc5907afd6ed0450b613626",
+    "source_id": "US-NH:fault:c1c38019662c",
+    "currentness": "unresolved",
+    "qualification": "Refer to the quoted provision for allocation, exceptions and applicability."
   }
 }

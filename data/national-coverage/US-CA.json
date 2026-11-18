@@ -267,6 +267,15 @@
       "url": "https://www.courts.ca.gov/documents/sc120.pdf",
       "directory": null,
       "locator": "SC-120"
+    },
+    "US-CA:consumerLaw:6c6e9b9a03a8": {
+      "title": "Cal. Civ. Code § 1750 et seq.",
+      "category": "consumerLaw",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1750",
+      "directory": "consumer_statutes_index",
+      "locator": "Cal. Civ. Code § 1750 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -315,6 +324,13 @@
       "citation": "Cal. Civil Code § 1940. Application of chapter; “persons who hire” and “dwelling unit”",
       "directory": "eviction",
       "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Cal. Civ. Code § 1750 et seq.",
+      "source_id": "US-CA:consumerLaw:6c6e9b9a03a8",
+      "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
   ],

@@ -218,6 +218,27 @@
         "sha256": "7c1662e50216b016b168c130c4c60150209487f628ae93a4b4f93bff01553b90",
         "health": "manual_review_required"
       }
+    },
+    "US-MI:fault:304f28750d52": {
+      "category": "fault",
+      "title": "MCL 600.2959",
+      "url": "https://www.legislature.mi.gov/documents/mcl/pdf/MCL-600-2959.pdf",
+      "directory": null,
+      "locator": "MCL 600.2959",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:34.950001+00:00",
+        "sha256": "625275719fd54e903431b8200c2c207ac1f88f17e5ab11d4a6458e561559f3dd"
+      }
+    },
+    "US-MI:consumerLaw:fd59c215a903": {
+      "title": "Mich. Comp. Laws § 445.901 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-445-902",
+      "directory": "consumer_statutes_index",
+      "locator": "Mich. Comp. Laws § 445.901 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -305,6 +326,13 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Mich. Comp. Laws § 445.901 et seq.",
+      "source_id": "US-MI:consumerLaw:fd59c215a903",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
   ],
   "passages": {
@@ -329,6 +357,24 @@
       "retrieved_at": "2026-11-17T19:33:58.767753+00:00",
       "language": "en",
       "currentness": "unresolved"
+    },
+    "799aa3b81def939ff43dcc3c03524a": {
+      "citation": "MCL 600.2959",
+      "source_id": "US-MI:fault:304f28750d52",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "Sec. 2959. In an action based on tort or another legal theory seeking damages for personal injury, property damage, or wrongful death, the court shall reduce the damages by the percentage of comparative fault of the person upon whose injury or death the damages are based as provided in section 6306 or 6306a, as applicable. If that person's percentage of fault is greater than the aggregate fault of the other person or persons, whether or not parties to the action, the court shall reduce economic damages by the percentage of comparative fault of the person upon whose injury or death the damages are based as provided in section 6306 or 6306a, as applicable, and noneconomic damages shall not be awarded.",
+      "text_sha256": "a70a9921337475d1beae338b77a1b828762e3c91226a7f2ef3e5c4d7181fd5bf",
+      "publisher_sha256": "625275719fd54e903431b8200c2c207ac1f88f17e5ab11d4a6458e561559f3dd",
+      "retrieved_at": "2026-11-17T20:50:34.950001+00:00",
+      "currentness": "unresolved"
     }
+  },
+  "fault_allocation": {
+    "regime": "other_state_specific",
+    "passage_selector": "799aa3b81def939ff43dcc3c03524a",
+    "source_id": "US-MI:fault:304f28750d52",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
   }
 }

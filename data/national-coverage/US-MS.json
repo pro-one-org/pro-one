@@ -120,6 +120,15 @@
         "retrieved_at": "2026-11-17T20:14:00.019290+00:00",
         "sha256": "b85e6543980b7f3a7d2d3623d9ec538d9aabec651a30a6589c87424ea6116095"
       }
+    },
+    "US-MS:consumerLaw:2c0c0a61e073": {
+      "title": "Miss. Code Ann. § 75-24-1 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.sos.ms.gov/communications-publications/mississippi-law",
+      "directory": "consumer_statutes_index",
+      "locator": "Miss. Code Ann. § 75-24-1 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -188,6 +197,13 @@
       "citation": "Miss. Code § 89-8-13. Right to terminate tenancy for breach; notice of breach; return of prepaid rent and security; disposition of tenant’s abandoned personal property.",
       "directory": "eviction",
       "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Miss. Code Ann. § 75-24-1 et seq.",
+      "source_id": "US-MS:consumerLaw:2c0c0a61e073",
+      "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
   ],

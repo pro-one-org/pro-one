@@ -239,6 +239,27 @@
         "retrieved_at": "2026-11-17T20:14:21.035638+00:00",
         "sha256": "916161d04e3905bbcb735933c78a5531d98177a5149d95cb3be9d5c564cd8e55"
       }
+    },
+    "US-RI:fault:15ce5d5d01d4": {
+      "category": "fault",
+      "title": "R.I. Gen. Laws § 9-20-4",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE9/9-20/9-20-4.htm",
+      "directory": null,
+      "locator": "R.I. Gen. Laws § 9-20-4",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:39.805248+00:00",
+        "sha256": "66e7bd2443f3d817866c1dc57de8fe1c952fb6d8f8d74b50d19830e17dd6e690"
+      }
+    },
+    "US-RI:consumerLaw:5a0a245d300c": {
+      "title": "R.I. Gen. Laws § 6-13.1-1 et seq.",
+      "category": "consumerLaw",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE6/6-13.1/6-13.1-1.htm",
+      "directory": "consumer_statutes_index",
+      "locator": "R.I. Gen. Laws § 6-13.1-1 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -360,6 +381,13 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "R.I. Gen. Laws § 6-13.1-1 et seq.",
+      "source_id": "US-RI:consumerLaw:5a0a245d300c",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
   ],
   "passages": {
@@ -394,7 +422,8 @@
       "text_sha256": "b45a3d73478c75756051fc6bcf262801638787ad919f2a303035b877f664fc46",
       "publisher_sha256": "01dea708aa73f7816bd816f6ae5d29701b38e5b0571d8c2e1ea01e17acc700f6",
       "retrieved_at": "2026-11-17T20:14:20.957417+00:00",
-      "currentness": "unresolved"
+      "currentness": "unresolved",
+      "court": "Rhode Island Superior Court"
     },
     "d7a5cfc8ee00362055e447bf5990fc": {
       "source_id": "US-RI:commencement:ab765588d91e",
@@ -405,7 +434,26 @@
       "text_sha256": "b45a3d73478c75756051fc6bcf262801638787ad919f2a303035b877f664fc46",
       "publisher_sha256": "916161d04e3905bbcb735933c78a5531d98177a5149d95cb3be9d5c564cd8e55",
       "retrieved_at": "2026-11-17T20:14:21.035638+00:00",
+      "currentness": "unresolved",
+      "court": "Rhode Island District Court"
+    },
+    "3a68bb159de716fad21952eb8e11e5": {
+      "citation": "R.I. Gen. Laws § 9-20-4",
+      "source_id": "US-RI:fault:15ce5d5d01d4",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "In all actions hereafter brought for personal injuries, or where personal injuries have resulted in death, or for injury to property, the fact that the person injured, or the owner of the property or person having control over the property, may not have been in the exercise of due care or the fact that the danger or defect was open and obvious shall not bar a recovery, but damages shall be diminished by the finder of fact in proportion to the amount of negligence attributable to the person injured, or the owner of the property or the person having control over the property.",
+      "text_sha256": "90b1c83328f950708c4f2ec12db39cb4acc54c3faf95687bcd59d71f1e295f6f",
+      "publisher_sha256": "66e7bd2443f3d817866c1dc57de8fe1c952fb6d8f8d74b50d19830e17dd6e690",
+      "retrieved_at": "2026-11-17T20:50:39.805248+00:00",
       "currentness": "unresolved"
     }
+  },
+  "fault_allocation": {
+    "regime": "pure_comparative",
+    "passage_selector": "3a68bb159de716fad21952eb8e11e5",
+    "source_id": "US-RI:fault:15ce5d5d01d4",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
   }
 }

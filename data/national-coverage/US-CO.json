@@ -204,6 +204,15 @@
         "sha256": "ea2c7a299b3b9a0fcb4b0cd3e1e0ee975511bed7d6d827182295307ef17d2e21",
         "health": "manual_review_required"
       }
+    },
+    "US-CO:consumerLaw:6e4f6aa0debc": {
+      "title": "Colo. Rev. Stat. § 6-1-101 et seq.",
+      "category": "consumerLaw",
+      "url": "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2024-title-06.pdf",
+      "directory": "consumer_statutes_index",
+      "locator": "Colo. Rev. Stat. § 6-1-101 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -304,6 +313,13 @@
       "citation": "Colo. Rev. Stat. § 13-40-104. Unlawful detention defined",
       "directory": "eviction",
       "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Colo. Rev. Stat. § 6-1-101 et seq.",
+      "source_id": "US-CO:consumerLaw:6e4f6aa0debc",
+      "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
   ]

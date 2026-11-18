@@ -225,6 +225,15 @@
         "sha256": "774f5aacdb1661415d239626075d7cf4ce81fc6d34373c1b499af541c3f6a8e1",
         "health": "manual_review_required"
       }
+    },
+    "US-WI:consumerLaw:c7eedd2e885d": {
+      "title": "Wis. Stat. § 100.18",
+      "category": "consumerLaw",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/100/18",
+      "directory": "consumer_statutes_index",
+      "locator": "Wis. Stat. § 100.18",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -299,6 +308,13 @@
       "citation": "Wis. Stat. § 799.40. Eviction actions",
       "directory": "eviction",
       "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Wis. Stat. § 100.18",
+      "source_id": "US-WI:consumerLaw:c7eedd2e885d",
+      "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
   ]

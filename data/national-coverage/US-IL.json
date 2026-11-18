@@ -204,6 +204,15 @@
       "url": "https://ilcourtsaudio.blob.core.windows.net/antilles-resources/resources/5156dafd-8e60-4afb-ba88-e5b188b73dfd/SMC%20Complaint.pdf",
       "directory": null,
       "locator": "Small Claims Complaint"
+    },
+    "US-IL:consumerLaw:9895ce055c52": {
+      "title": "815 ILCS 505",
+      "category": "consumerLaw",
+      "url": "https://www.ilga.gov/Legislation/ILCS/Articles?ActID=2356&ChapterID=67&Chapter=BUSINESS%20TRANSACTIONS&MajorTopic=BUSINESS%20AND%20EMPLOYMENT",
+      "directory": "consumer_statutes_index",
+      "locator": "815 ILCS 505",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -258,6 +267,13 @@
       "citation": "Executive Order 2020-72 (COVID-19 Executive Order No. 68); 735 Ill. Comp. Stat. 5/9-209 Demand for rent – eviction action; 735 Ill. Comp. Stat. 5/9-210 Notice to quit; 765 Ill. Comp. Stat. 742/10 Exceptions",
       "directory": "eviction",
       "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "815 ILCS 505",
+      "source_id": "US-IL:consumerLaw:9895ce055c52",
+      "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
   ],

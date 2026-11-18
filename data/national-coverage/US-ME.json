@@ -218,6 +218,15 @@
         "retrieved_at": "2026-11-17T20:14:17.739999+00:00",
         "sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0"
       }
+    },
+    "US-ME:consumerLaw:790587a56d61": {
+      "title": "5 M.R.S. § 205-A et seq.",
+      "category": "consumerLaw",
+      "url": "https://legislature.maine.gov/statutes/5/title5sec206.html",
+      "directory": "consumer_statutes_index",
+      "locator": "5 M.R.S. § 205-A et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -289,6 +298,13 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "5 M.R.S. § 205-A et seq.",
+      "source_id": "US-ME:consumerLaw:790587a56d61",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
   ],
   "passages": {
@@ -347,5 +363,12 @@
       "retrieved_at": "2026-11-17T20:14:17.739999+00:00",
       "currentness": "unresolved"
     }
+  },
+  "fault_allocation": {
+    "regime": "other_state_specific",
+    "passage_selector": "3be5c40580c94d74ce98f50ff677bf",
+    "source_id": "US-ME:fault:e602808291ba",
+    "currentness": "unresolved",
+    "qualification": "Refer to the quoted provision for allocation, exceptions and applicability."
   }
 }

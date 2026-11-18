@@ -239,6 +239,27 @@
         "retrieved_at": "2026-11-17T20:14:25.244018+00:00",
         "sha256": "99812c5ef90fa83a0b5ded17bb4f1649316b2e1c3cc48c9e91eaca63e2479065"
       }
+    },
+    "US-NV:fault:2c2122cc907b": {
+      "category": "fault",
+      "title": "NRS 41.141(1)",
+      "url": "https://www.leg.state.nv.us/Nrs/NRS-041.html",
+      "directory": null,
+      "locator": "NRS 41.141(1)",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:35.281890+00:00",
+        "sha256": "2f43bf05571a5c9df32060cd6419ae18e4b82ee277a6c8d404699140989ab786"
+      }
+    },
+    "US-NV:consumerLaw:51fee8a2d66b": {
+      "title": "Nev. Rev. Stat. § 598.0903 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.leg.state.nv.us/nrs/nrs-041.html#NRS041Sec600",
+      "directory": "consumer_statutes_index",
+      "locator": "Nev. Rev. Stat. § 598.0903 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -298,6 +319,13 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Nev. Rev. Stat. § 598.0903 et seq.",
+      "source_id": "US-NV:consumerLaw:51fee8a2d66b",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
   ],
   "passages": {
@@ -311,6 +339,24 @@
       "publisher_sha256": "99812c5ef90fa83a0b5ded17bb4f1649316b2e1c3cc48c9e91eaca63e2479065",
       "retrieved_at": "2026-11-17T20:14:25.244018+00:00",
       "currentness": "unresolved"
+    },
+    "0ef92d5eef0e92c3bdd52c0ed41b33": {
+      "citation": "NRS 41.141(1)",
+      "source_id": "US-NV:fault:2c2122cc907b",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "In any action to recover damages for death or injury to persons or for injury to property in which comparative negligence is asserted as a defense, the comparative negligence of the plaintiff or the plaintiff’s decedent does not bar a recovery if that negligence was not greater than the negligence or gross negligence of the parties to the action against whom recovery is sought.",
+      "text_sha256": "ded824085a289e44e8558191d1f26b07754a534b8f4b8816ecc81a5b56acd00c",
+      "publisher_sha256": "2f43bf05571a5c9df32060cd6419ae18e4b82ee277a6c8d404699140989ab786",
+      "retrieved_at": "2026-11-17T20:50:35.281890+00:00",
+      "currentness": "unresolved"
     }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "0ef92d5eef0e92c3bdd52c0ed41b33",
+    "source_id": "US-NV:fault:2c2122cc907b",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
   }
 }

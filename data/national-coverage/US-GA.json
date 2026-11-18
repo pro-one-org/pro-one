@@ -176,6 +176,27 @@
         "sha256": "454c14e3a0e882342e8b0513e44436b72223e69e2786d05e711f45145c0b93a0",
         "health": "manual_review_required"
       }
+    },
+    "US-GA:fault:7adbad27dfab": {
+      "category": "fault",
+      "title": "O.C.G.A. § 51-12-33(g)",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t51-%28v39%29-pdf.pdf",
+      "directory": null,
+      "locator": "O.C.G.A. § 51-12-33(g)",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:34.067833+00:00",
+        "sha256": "9104a04c683d8ee006f80ffc59a6f2d127734ee2939e86489bc42feda00a98c0"
+      }
+    },
+    "US-GA:consumerLaw:20e37ea56918": {
+      "title": "O.C.G.A. § 10-1-390 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t10-%28v8%29-2024-pdf.pdf",
+      "directory": "consumer_statutes_index",
+      "locator": "O.C.G.A. § 10-1-390 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -289,6 +310,34 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "O.C.G.A. § 10-1-390 et seq.",
+      "source_id": "US-GA:consumerLaw:20e37ea56918",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "e28d84cee4570b6d057333050cc7ad": {
+      "citation": "O.C.G.A. § 51-12-33(g)",
+      "source_id": "US-GA:fault:7adbad27dfab",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "(g) Notwithstanding the provisions of this Code section or any other provisions of law which might be construed to the contrary , the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible for the injury or damages claimed.",
+      "text_sha256": "c3b5d71b3b020305e8923679a5062fc7e9ea0ec5b4ed005aeba295e969972107",
+      "publisher_sha256": "9104a04c683d8ee006f80ffc59a6f2d127734ee2939e86489bc42feda00a98c0",
+      "retrieved_at": "2026-11-17T20:50:34.067833+00:00",
+      "currentness": "historical",
+      "edition": "2025 Supplement"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_50",
+    "passage_selector": "e28d84cee4570b6d057333050cc7ad",
+    "source_id": "US-GA:fault:7adbad27dfab",
+    "currentness": "historical",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
 }

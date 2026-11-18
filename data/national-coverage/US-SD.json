@@ -183,6 +183,27 @@
       "url": "https://ujs.sd.gov/files/ujs-008-plaintiffs-statement-of-claim/",
       "directory": null,
       "locator": "UJS-008"
+    },
+    "US-SD:fault:bd75836f8936": {
+      "category": "fault",
+      "title": "SDCL § 20-9-2",
+      "url": "https://sdlegislature.gov/api/Statutes/20-9-2.html",
+      "directory": null,
+      "locator": "SDCL § 20-9-2",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:35.759839+00:00",
+        "sha256": "5f0a68ddcfc8698c508e97cd689838ba45e831a28924a7d5f1f2f3548c0d209c"
+      }
+    },
+    "US-SD:consumerLaw:88b675058a95": {
+      "title": "S.D. Codified Laws ch. 37-24",
+      "category": "consumerLaw",
+      "url": "https://sdlegislature.gov/api/Statutes/37-24.html",
+      "directory": "consumer_statutes_index",
+      "locator": "S.D. Codified Laws ch. 37-24",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -246,6 +267,13 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "S.D. Codified Laws ch. 37-24",
+      "source_id": "US-SD:consumerLaw:88b675058a95",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
   ],
   "forms": {
@@ -261,5 +289,25 @@
       "last_observed": "2026-11-17T19:42:33.165669+00:00",
       "automated_completion": "disabled"
     }
+  },
+  "passages": {
+    "42ae0fd26869204e6e64376d078846": {
+      "citation": "SDCL § 20-9-2",
+      "source_id": "US-SD:fault:bd75836f8936",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "In all actions brought to recover damages for injuries to a person or to that person's property caused by the negligence of another, the fact that the plaintiff may have been guilty of contributory negligence does not bar a recovery when the contributory negligence of the plaintiff was slight in comparison with the negligence of the defendant, but in such case, the damages shall be reduced in proportion to the amount of plaintiff's contributory negligence. Notwithstanding Woods vs. City of Crooks, 559 N.W.2d 558 (SD 1997), the determination of whether the contributory negligence of the plaintiff was slight in comparison with the negligence of the defendant shall be made without disclosing any determination of percentage of plaintiff's fault by special interrogatory.",
+      "text_sha256": "7bebdbcd9be8bdb860f08b47f6d4a2be5bc1a8c793982b3f2af28e9e25193bdc",
+      "publisher_sha256": "5f0a68ddcfc8698c508e97cd689838ba45e831a28924a7d5f1f2f3548c0d209c",
+      "retrieved_at": "2026-11-17T20:50:35.759839+00:00",
+      "currentness": "unresolved"
+    }
+  },
+  "fault_allocation": {
+    "regime": "other_state_specific",
+    "passage_selector": "42ae0fd26869204e6e64376d078846",
+    "source_id": "US-SD:fault:bd75836f8936",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
   }
 }

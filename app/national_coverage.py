@@ -7,6 +7,7 @@ import json
 from urllib.parse import urlsplit
 
 from app.jurisdictions import ROOT, jurisdiction_id, registry
+from app.national_govinfo_code import federal_granules
 
 # Each capability has its own discovery dependencies. A homepage alone is never
 # evidence of a rule, a form revision, a monetary amount, or a filing deadline.
@@ -16,6 +17,18 @@ CAPABILITIES = {
     "substantive": {"negligence": ("negligence",), "premises": ("premises",), "fault_allocation": ("fault",),
                     "contract": ("contract", "commercial_code"), "consumer": ("consumerLaw", "consumer_agency"),
                     "landlord_tenant": ("deposit", "eviction"), "debt": ("debtLaw",), "wage": ("wageLaw", "labor_agency")},
+    "negligence": {"duty": ("negligence_duty",), "breach": ("negligence_breach",),
+                   "causation": ("negligence_causation",), "injury": ("negligence_injury",),
+                   "premises_relationship": ("premises",), "plaintiff_fault": ("fault",)},
+    "contract": {"formation": ("contract_formation",), "breach": ("contract_breach",),
+                 "damages": ("contract_damages",), "limitations": ("written_contract_limitations", "oral_contract_limitations")},
+    "consumer": {"statute": ("consumerLaw",), "enforcement": ("consumer_agency",),
+                 "private_action": ("consumer_private_action",), "remedies": ("consumer_remedies",)},
+    "housing": {"deposit": ("deposit",), "habitability": ("habitability",), "possession": ("eviction",),
+                "notice": ("tenancy_notice",)},
+    "debt": {"collection_law": ("debtLaw",), "forum": ("debt_forum",), "response": ("debt_response",)},
+    "wages": {"payment": ("wageLaw",), "agency": ("labor_agency",),
+              "enforcement": ("wage_enforcement",), "limitations": ("wage_limitations",)},
     "procedure": {"court_structure": ("court_directory", "judiciary"), "commencement": ("commencement",),
                   "venue": ("venue",), "service": ("service",), "response": ("response",), "fees": ("fees",),
                   "e_filing": ("e_filing",), "small_claims": ("small_claims",), "calendar": ("calendar",)},
@@ -72,6 +85,15 @@ def manifest(scope):
                 or sha256(passage["text"].encode()).hexdigest() != passage["text_sha256"]
                 or passage["currentness"] not in {"unresolved", "historical"}):
             raise ValueError("invalid_passage_binding")
+    fault = record.get("fault_allocation")
+    if fault:
+        binding = record.get("passages", {}).get(fault["passage_selector"])
+        if (not binding or binding["source_id"] != fault["source_id"]
+                or sources[binding["source_id"]]["category"] != "fault"
+                or fault["currentness"] != binding["currentness"]
+                or fault["regime"] not in {"contributory", "pure_comparative", "modified_comparative_50",
+                                          "modified_comparative_51", "other_state_specific"}):
+            raise ValueError("invalid_fault_allocation_binding")
     return record
 
 
@@ -109,17 +131,27 @@ def coverage(value):
     passages = defaultdict(list)
     for key, passage in record.get("passages", {}).items():
         passages[passage["source_id"]].append(key)
+    editions = {row["source_id"]: selector for selector, row in federal_granules().items()} if scope == "US" else {}
     cells = {}
-    for area, capabilities in CAPABILITIES.items():
+    capabilities_by_area = dict(CAPABILITIES)
+    if scope == "US":
+        capabilities_by_area["federal_jurisdiction"] = {"federal_question": ("federal_question",), "diversity": ("diversity",)}
+    for area, capabilities in capabilities_by_area.items():
         for capability, categories in capabilities.items():
             refs = [key for category in categories for key in by_category[category]]
             leads = [row for row in record["citation_leads"] if row["category"] in categories]
             bindings = [binding for ref in refs for binding in passages[ref]]
+            historical = [editions[ref] for ref in refs if ref in editions]
+            has_unresolved = any(record["passages"][key]["currentness"] == "unresolved" for key in bindings)
+            only_historical = (bindings or historical) and not has_unresolved
             cells[area + "." + capability] = {
-                "status": "currentness_unresolved" if bindings else "reference_only" if refs or leads else "not_yet_supported",
+                "status": "currentness_unresolved" if has_unresolved else "historical_only" if only_historical else "reference_only" if refs or leads else "not_yet_supported",
+                "historical_granules": historical,
                 "passage_selectors": bindings,
-                "source_ids": refs, "citation_leads": leads, "currentness": "currentness_unresolved",
+                "source_ids": refs, "citation_leads": leads, "currentness": "historical" if only_historical else "currentness_unresolved",
             }
+    if "fault_allocation" in record:
+        cells["substantive.fault_allocation"]["allocation"] = record["fault_allocation"]
     shells = action_shells(scope)
     for kind in ACTION_REQUIREMENTS:
         shell = next((s for s in shells if s["action_type"] == kind), None)

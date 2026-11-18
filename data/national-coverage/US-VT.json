@@ -176,6 +176,27 @@
       "url": "https://legislature.vermont.gov/statutes/section/09/137/04461",
       "directory": null,
       "locator": "9 V.S.A. § 4461"
+    },
+    "US-VT:fault:056cae38d9ed": {
+      "category": "fault",
+      "title": "12 V.S.A. § 1036",
+      "url": "https://legislature.vermont.gov/statutes/fullchapter/12/027",
+      "directory": null,
+      "locator": "12 V.S.A. § 1036",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:36.870958+00:00",
+        "sha256": "a19f9377154e38284412d3bf95cefccdae573963968e7e0d5c76c2e5ec5333e5"
+      }
+    },
+    "US-VT:consumerLaw:7ef4b7b2eafb": {
+      "title": "9 V.S.A. § 2451 et seq.",
+      "category": "consumerLaw",
+      "url": "https://legislature.vermont.gov/statutes/section/09/063/02451",
+      "directory": "consumer_statutes_index",
+      "locator": "9 V.S.A. § 2451 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -265,6 +286,13 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "9 V.S.A. § 2451 et seq.",
+      "source_id": "US-VT:consumerLaw:7ef4b7b2eafb",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
   ],
   "passages": {
@@ -289,6 +317,24 @@
       "retrieved_at": "2026-11-17T19:42:03.898494+00:00",
       "language": "en",
       "currentness": "unresolved"
+    },
+    "887bb256eb1fa1fb72bdaf9273fcb8": {
+      "citation": "12 V.S.A. § 1036",
+      "source_id": "US-VT:fault:056cae38d9ed",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "§ 1036. Contributory and comparative negligence (a) Contributory negligence shall not bar recovery in an action by any plaintiff, or the plaintiff’s legal representative, to recover damages for negligence resulting in death, personal injury, or property damage, if the negligence was not greater than the causal total negligence of the defendant or defendants, but the damage shall be diminished by general verdict in proportion to the amount of negligence attributed to the plaintiff. Where recovery is allowed against more than one defendant, each defendant shall be liable for that proportion of the total dollar amount awarded as damages in the ratio of the amount of the defendant’s causal negligence to the amount of causal negligence attributed to all defendants against whom recovery is allowed. (b) Contributory and comparative negligence shall be prohibited as a defense to limit a plaintiff’s recovery for damages in an action for a negligence claim relating to a sexual act as defined in 13 V.S.A. § 3251 or sexual conduct as defined in 13 V.S.A. § 2821.",
+      "text_sha256": "9981aba0120e2dd3353d9fe8b226466cb84d07fe1a682a2edcbe4bc05d6163e5",
+      "publisher_sha256": "a19f9377154e38284412d3bf95cefccdae573963968e7e0d5c76c2e5ec5333e5",
+      "retrieved_at": "2026-11-17T20:50:36.870958+00:00",
+      "currentness": "unresolved"
     }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "887bb256eb1fa1fb72bdaf9273fcb8",
+    "source_id": "US-VT:fault:056cae38d9ed",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
   }
 }

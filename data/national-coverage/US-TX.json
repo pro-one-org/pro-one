@@ -337,6 +337,15 @@
         "sha256": "b0effb0424090d64d885d84c2445bdd965fd16080548a2640dd6f57e40494b18",
         "health": "manual_review_required"
       }
+    },
+    "US-TX:consumerLaw:7ba5bad089c1": {
+      "title": "Tex. Bus. & Com. Code § 17.41 et seq.",
+      "category": "consumerLaw",
+      "url": "https://statutes.capitol.texas.gov/Docs/BC/htm/BC.17.htm",
+      "directory": "consumer_statutes_index",
+      "locator": "Tex. Bus. & Com. Code § 17.41 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -493,6 +502,13 @@
       "citation": "Tex. Property Code § 24.002. Forcible Detainer.",
       "directory": "eviction",
       "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Tex. Bus. & Com. Code § 17.41 et seq.",
+      "source_id": "US-TX:consumerLaw:7ba5bad089c1",
+      "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
   ]

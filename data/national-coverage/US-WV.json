@@ -190,6 +190,27 @@
         "retrieved_at": "2026-11-17T20:14:22.334501+00:00",
         "sha256": "0ee05eb2712a88f1e98eba5414a7d1c8bb0612b4b95d77b5222a39fb9dfb64dd"
       }
+    },
+    "US-WV:fault:e61417b28dd7": {
+      "category": "fault",
+      "title": "W. Va. Code § 55-7-13c(c)",
+      "url": "https://code.wvlegislature.gov/55-7-13c/",
+      "directory": null,
+      "locator": "W. Va. Code § 55-7-13c(c)",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:39.471656+00:00",
+        "sha256": "0c5f40e58aab8c276572d96adacce22ed309e75c4d0c00302fe12e4cbb629c03"
+      }
+    },
+    "US-WV:consumerLaw:28b30b03b9df": {
+      "title": "W. Va. Code § 46A-6-101 et seq.",
+      "category": "consumerLaw",
+      "url": "https://code.wvlegislature.gov/46A-6-101/",
+      "directory": "consumer_statutes_index",
+      "locator": "W. Va. Code § 46A-6-101 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -275,6 +296,13 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "W. Va. Code § 46A-6-101 et seq.",
+      "source_id": "US-WV:consumerLaw:28b30b03b9df",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
   ],
   "passages": {
@@ -299,6 +327,24 @@
       "publisher_sha256": "0ee05eb2712a88f1e98eba5414a7d1c8bb0612b4b95d77b5222a39fb9dfb64dd",
       "retrieved_at": "2026-11-17T20:14:22.334501+00:00",
       "currentness": "unresolved"
+    },
+    "5fa9c5ae27c2b416cddb492174fa23": {
+      "citation": "W. Va. Code § 55-7-13c(c)",
+      "source_id": "US-WV:fault:e61417b28dd7",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "(c) Any fault chargeable to the plaintiff shall not bar recovery by the plaintiff unless the plaintiff's fault is greater than the combined fault of all other persons responsible for the total amount of damages, if any, to be awarded. If the plaintiff's fault is less than the combined fault of all other persons, the plaintiff's recovery shall be reduced in proportion to the plaintiff's degree of fault.",
+      "text_sha256": "fb00d2d0e739db49300b1f5cbeb569a6476f2f03009d5175df64fe89c20be6a1",
+      "publisher_sha256": "0c5f40e58aab8c276572d96adacce22ed309e75c4d0c00302fe12e4cbb629c03",
+      "retrieved_at": "2026-11-17T20:50:39.471656+00:00",
+      "currentness": "unresolved"
     }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "5fa9c5ae27c2b416cddb492174fa23",
+    "source_id": "US-WV:fault:e61417b28dd7",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
   }
 }

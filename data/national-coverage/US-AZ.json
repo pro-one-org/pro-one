@@ -183,6 +183,27 @@
       "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
       "directory": "bjs_sco_2004",
       "locator": "Table 3, PDF page 26"
+    },
+    "US-AZ:fault:9c2c05fa45d0": {
+      "category": "fault",
+      "title": "A.R.S. § 12-2505",
+      "url": "https://www.azleg.gov/ars/12/02505.htm",
+      "directory": null,
+      "locator": "A.R.S. § 12-2505",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:32.546862+00:00",
+        "sha256": "2d2a9c95b28164c1298cb13671c9e47f799280a465850e98d16d9d8f2411384e"
+      }
+    },
+    "US-AZ:consumerLaw:9a83da05c3d4": {
+      "title": "A.R.S. § 44-1521 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.azleg.gov/ars/44/01521.htm",
+      "directory": "consumer_statutes_index",
+      "locator": "A.R.S. § 44-1521 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -260,6 +281,13 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "A.R.S. § 44-1521 et seq.",
+      "source_id": "US-AZ:consumerLaw:9a83da05c3d4",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
   ],
   "passages": {
@@ -295,6 +323,24 @@
       "retrieved_at": "2026-11-17T19:33:54.914662+00:00",
       "language": "en",
       "currentness": "unresolved"
+    },
+    "8e28ca8905c3b14a574e25e2660147": {
+      "citation": "A.R.S. § 12-2505",
+      "source_id": "US-AZ:fault:9c2c05fa45d0",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "A. The defense of contributory negligence or of assumption of risk is in all cases a question of fact and shall at all times be left to the jury. If the jury applies either defense, the claimant's action is not barred, but the full damages shall be reduced in proportion to the relative degree of the claimant's fault which is a proximate cause of the injury or death, if any. There is no right to comparative negligence in favor of any claimant who has intentionally, wilfully or wantonly caused or contributed to the injury or wrongful death. B. In this section, \"claimant's fault\" includes the fault imputed or attributed to a claimant by operation of law, if any.",
+      "text_sha256": "9b53f5d565435da485be389b97ce8b32fd0fb3e9104dc07c72a12d7f3330f107",
+      "publisher_sha256": "2d2a9c95b28164c1298cb13671c9e47f799280a465850e98d16d9d8f2411384e",
+      "retrieved_at": "2026-11-17T20:50:32.546862+00:00",
+      "currentness": "unresolved"
     }
+  },
+  "fault_allocation": {
+    "regime": "pure_comparative",
+    "passage_selector": "8e28ca8905c3b14a574e25e2660147",
+    "source_id": "US-AZ:fault:9c2c05fa45d0",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
   }
 }

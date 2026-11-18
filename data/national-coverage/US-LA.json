@@ -197,6 +197,27 @@
       "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
       "directory": "bjs_sco_2004",
       "locator": "Table 3, PDF page 27"
+    },
+    "US-LA:fault:b6c8ac710079": {
+      "category": "fault",
+      "title": "La. Civ. Code art. 2323",
+      "url": "https://legis.la.gov/Legis/law.aspx?d=109387",
+      "directory": null,
+      "locator": "La. Civ. Code art. 2323",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:33.943744+00:00",
+        "sha256": "13975d87a3b941bb3bb8513a6a222c68e8df7d23db7675be0f66dfd6f373ce61"
+      }
+    },
+    "US-LA:consumerLaw:a431c9a5ba43": {
+      "title": "La. Rev. Stat. § 51:1401 et seq.",
+      "category": "consumerLaw",
+      "url": "https://legis.la.gov/legis/Law.aspx?d=104033",
+      "directory": "consumer_statutes_index",
+      "locator": "La. Rev. Stat. § 51:1401 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -302,6 +323,13 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "La. Rev. Stat. § 51:1401 et seq.",
+      "source_id": "US-LA:consumerLaw:a431c9a5ba43",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
   ],
   "passages": {
@@ -326,6 +354,24 @@
       "retrieved_at": "2026-11-17T19:33:57.715987+00:00",
       "language": "en",
       "currentness": "unresolved"
+    },
+    "fa32f55038ba2f8c88ad0e24188a70": {
+      "citation": "La. Civ. Code art. 2323",
+      "source_id": "US-LA:fault:b6c8ac710079",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "Art. 2323. Comparative fault A.(1) In any action for damages where a person suffers injury, death, or loss, the degree or percentage of fault attributable to all persons causing or contributing to the injury, death, or loss shall be determined, regardless of whether the person is a party to the action or a nonparty, and regardless of the person's insolvency, ability to pay, immunity by statute, including but not limited to the provisions of R.S. 23:1032, or that the other person's identity is not known or reasonably ascertainable. (2) If a person suffers injury, death, or loss partly as the result of his own negligence and partly as a result of the fault of another person or persons, then the following shall apply: (a) If the degree or percentage of negligence attributable to the person suffering injury, death, or loss is equal to or greater than fifty-one percent, then the person suffering injury, death, or loss shall not be entitled to recover damages. (b) If the degree or percentage of negligence attributable to the person suffering injury, death, or loss is less than fifty-one percent, then the amount of damages recoverable shall be reduced in proportion to the degree or percentage of negligence attributable to the person suffering the injury, death, or loss. B. The provisions of Paragraph A shall apply to any claim for recovery of damages for injury, death, or loss asserted under any law or legal doctrine or theory of liability, regardless of the basis of liability. C. Notwithstanding the provisions of Paragraphs A and B, if a person suffers injury, death, or loss as a result partly of his own negligence and partly as a result of the fault of an intentional tortfeasor, his claim for recovery of damages shall not be reduced. D. In cases where the issue of comparative fault is submitted to the jury, the jury shall be instructed on the effect of this Article.",
+      "text_sha256": "97448e4645fb71230c55750dc40a823f540cce09285d561f9037794cf37d8e96",
+      "publisher_sha256": "13975d87a3b941bb3bb8513a6a222c68e8df7d23db7675be0f66dfd6f373ce61",
+      "retrieved_at": "2026-11-17T20:50:33.943744+00:00",
+      "currentness": "unresolved"
     }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "fa32f55038ba2f8c88ad0e24188a70",
+    "source_id": "US-LA:fault:b6c8ac710079",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
   }
 }

@@ -290,6 +290,7 @@ class SQLiteNormalizedCorpus:
         if not rows:
             return {"status": "unsupported_authority", "version_id": None}
         eligible = []
+        unresolved = False
         day = on.isoformat()
         for row in rows:
             version = json.loads(row["payload"])
@@ -304,11 +305,16 @@ class SQLiteNormalizedCorpus:
             interval = status in {"historical", "superseded", "repealed"} and start and (end or repeal)
             if dated or interval:
                 eligible.append(row["version_id"])
-        if len(eligible) == 1:
+            elif status in {"unresolved", "review_required"}:
+                unresolved = True
+        if len(eligible) == 1 and not unresolved:
             return {"status": "applicable_on_date", "version_id": eligible[0]}
         return {"status": "version_conflict" if eligible else "currentness_unresolved", "version_id": None}
 
     def supersession(self, version_id, as_of):
+        if not self.connection.execute(
+                "SELECT 1 FROM sqlite_master WHERE type='table' AND name='corpus_supersessions'").fetchone():
+            return None
         row = self.connection.execute("""
             SELECT change.*, previous.version_id AS earlier_version,
                    later.version_id AS later_version, rule.version_id AS rule_version

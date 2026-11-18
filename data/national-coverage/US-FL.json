@@ -232,6 +232,27 @@
       "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
       "directory": "bjs_sco_2004",
       "locator": "Table 3, PDF page 26"
+    },
+    "US-FL:fault:826a11fa4bd3": {
+      "category": "fault",
+      "title": "Fla. Stat. § 768.81(6)",
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm/Ch0322/index.cfm?App_mode=Display_Statute&Search_String=&URL=0700-0799%2F0768%2FSections%2F0768.81.html",
+      "directory": null,
+      "locator": "Fla. Stat. § 768.81(6)",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:32.798686+00:00",
+        "sha256": "af7c149bf511152e462914eac4d4b0f4545ff60a724e5dc1bb2be08b235f18b5"
+      }
+    },
+    "US-FL:consumerLaw:795e6f10de87": {
+      "title": "Fla. Stat. § 501.201 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0501/Sections/0501.202.html",
+      "directory": "consumer_statutes_index",
+      "locator": "Fla. Stat. § 501.201 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -331,6 +352,33 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Fla. Stat. § 501.201 et seq.",
+      "source_id": "US-FL:consumerLaw:795e6f10de87",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "bafe9f02e02a7a481a2649f0453e13": {
+      "citation": "Fla. Stat. § 768.81(6)",
+      "source_id": "US-FL:fault:826a11fa4bd3",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "(6) GREATER PERCENTAGE OF FAULT.—In a negligence action to which this section applies, any party found to be greater than 50 percent at fault for his or her own harm may not recover any damages. This subsection does not apply to an action for damages for personal injury or wrongful death arising out of medical negligence pursuant to chapter 766.",
+      "text_sha256": "ae7d9f4e5b5d6a89ae93c0c7dc137b30f059d73c3635650713ea3ceb852d4492",
+      "publisher_sha256": "af7c149bf511152e462914eac4d4b0f4545ff60a724e5dc1bb2be08b235f18b5",
+      "retrieved_at": "2026-11-17T20:50:32.798686+00:00",
+      "currentness": "unresolved"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "bafe9f02e02a7a481a2649f0453e13",
+    "source_id": "US-FL:fault:826a11fa4bd3",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
 }

@@ -190,6 +190,27 @@
       "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
       "directory": "bjs_sco_2004",
       "locator": "Table 3, PDF page 28"
+    },
+    "US-NE:fault:c9852be1156d": {
+      "category": "fault",
+      "title": "Neb. Rev. Stat. § 25-21,185.09",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-21%2C185.09",
+      "directory": null,
+      "locator": "Neb. Rev. Stat. § 25-21,185.09",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:34.865618+00:00",
+        "sha256": "ab80e7e5f93bf4b3c007903ea43bb44bed91923e6bce3b13a7869955f137d918"
+      }
+    },
+    "US-NE:consumerLaw:ed81bf4566d7": {
+      "title": "Neb. Rev. Stat. § 59-1601 et seq.",
+      "category": "consumerLaw",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=59-1601",
+      "directory": "consumer_statutes_index",
+      "locator": "Neb. Rev. Stat. § 59-1601 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -287,6 +308,33 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Neb. Rev. Stat. § 59-1601 et seq.",
+      "source_id": "US-NE:consumerLaw:ed81bf4566d7",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "dd12643ed906b4af5b2c4ecbd93c72": {
+      "citation": "Neb. Rev. Stat. § 25-21,185.09",
+      "source_id": "US-NE:fault:c9852be1156d",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "Any contributory negligence chargeable to the claimant shall diminish proportionately the amount awarded as damages for an injury attributable to the claimant's contributory negligence but shall not bar recovery, except that if the contributory negligence of the claimant is equal to or greater than the total negligence of all persons against whom recovery is sought, the claimant shall be totally barred from recovery. The jury shall be instructed on the effects of the allocation of negligence.",
+      "text_sha256": "3bd5aa466d078ffb2d354fe1daaf3aa484e49fa37bb4bf9ebd93ed63be878031",
+      "publisher_sha256": "ab80e7e5f93bf4b3c007903ea43bb44bed91923e6bce3b13a7869955f137d918",
+      "retrieved_at": "2026-11-17T20:50:34.865618+00:00",
+      "currentness": "unresolved"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_50",
+    "passage_selector": "dd12643ed906b4af5b2c4ecbd93c72",
+    "source_id": "US-NE:fault:c9852be1156d",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
 }

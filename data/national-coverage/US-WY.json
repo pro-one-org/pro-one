@@ -162,6 +162,27 @@
       "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
       "directory": "bjs_sco_2004",
       "locator": "Table 3, PDF page 30"
+    },
+    "US-WY:fault:7dd5d5aac4a7": {
+      "category": "fault",
+      "title": "Wyo. Stat. § 1-1-109(b)",
+      "url": "https://wyoleg.gov/statutes/compress/title01.pdf?preview=true&site_id=756",
+      "directory": null,
+      "locator": "Wyo. Stat. § 1-1-109(b)",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:39.607321+00:00",
+        "sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f"
+      }
+    },
+    "US-WY:consumerLaw:1a42b7129492": {
+      "title": "Wyo. Stat. § 40-12-101 et seq.",
+      "category": "consumerLaw",
+      "url": "https://wyoleg.gov/statutes/compress/title40.pdf",
+      "directory": "consumer_statutes_index",
+      "locator": "Wyo. Stat. § 40-12-101 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -239,6 +260,33 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Wyo. Stat. § 40-12-101 et seq.",
+      "source_id": "US-WY:consumerLaw:1a42b7129492",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "4f0279820e3e29ac76bd9a48816d9f": {
+      "citation": "Wyo. Stat. § 1-1-109(b)",
+      "source_id": "US-WY:fault:7dd5d5aac4a7",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "(b) Contributory fault shall not bar a recovery in an action by any claimant or the claimant's legal representative to recover damages for wrongful death or injury to person or property, if the contributory fault of the claimant is not more than fifty percent (50%) of the total fault of all actors. Any damages allowed shall be diminished in proportion to the amount of fault attributed to the claimant.",
+      "text_sha256": "29ebd196cd035040e47e47973149ece0efdc7ec2e1460def49785c7025cbf237",
+      "publisher_sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f",
+      "retrieved_at": "2026-11-17T20:50:39.607321+00:00",
+      "currentness": "unresolved"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "4f0279820e3e29ac76bd9a48816d9f",
+    "source_id": "US-WY:fault:7dd5d5aac4a7",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
 }

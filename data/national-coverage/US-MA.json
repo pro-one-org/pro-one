@@ -246,6 +246,27 @@
         "retrieved_at": "2026-11-17T20:14:26.711025+00:00",
         "sha256": "6aa5b31a8e535a80d3d7104f4d6de50eac629cb6cd00a2984a4b052a45bbf3c9"
       }
+    },
+    "US-MA:fault:169d777bb89e": {
+      "category": "fault",
+      "title": "Mass. Gen. Laws ch. 231, § 85",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleII/Chapter231/Section85",
+      "directory": null,
+      "locator": "Mass. Gen. Laws ch. 231, § 85",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:34.378546+00:00",
+        "sha256": "122c50b90f52c60a5979acf3b10682155f117dbea98cc4ae92ba6b9e30fa3c92"
+      }
+    },
+    "US-MA:consumerLaw:274b7b77d4a9": {
+      "title": "Mass. Gen. Laws ch. 93A",
+      "category": "consumerLaw",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXV/Chapter93A/Section1",
+      "directory": "consumer_statutes_index",
+      "locator": "Mass. Gen. Laws ch. 93A",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -355,6 +376,13 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Mass. Gen. Laws ch. 93A",
+      "source_id": "US-MA:consumerLaw:274b7b77d4a9",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
   ],
   "passages": {
@@ -390,6 +418,24 @@
       "publisher_sha256": "6aa5b31a8e535a80d3d7104f4d6de50eac629cb6cd00a2984a4b052a45bbf3c9",
       "retrieved_at": "2026-11-17T20:14:26.711025+00:00",
       "currentness": "unresolved"
+    },
+    "0283d5930050a86dec49d8271c357c": {
+      "citation": "Mass. Gen. Laws ch. 231, § 85",
+      "source_id": "US-MA:fault:169d777bb89e",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "Section 85. Contributory negligence shall not bar recovery in any action by any person or legal representative to recover damages for negligence resulting in death or in injury to person or property, if such negligence was not greater than the total amount of negligence attributable to the person or persons against whom recovery is sought, but any damages allowed shall be diminished in proportion to the amount of negligence attributable to the person for whose injury, damage or death recovery is made. In determining by what amount the plaintiff's damages shall be diminished in such a case, the negligence of each plaintiff shall be compared to the total negligence of all persons against whom recovery is sought. The combined total of the plaintiff's negligence taken together with all of the negligence of all defendants shall equal one hundred per cent. The violation of a criminal statute, ordinance or regulation by a plaintiff which contributed to said injury, death or damage, shall be considered as evidence of negligence of that plaintiff, but the violation of said statute, ordinance or regulation shall not as a matter of law and for that reason alone, serve to bar a plaintiff from recovery. The defense of assumption of risk is hereby abolished in all actions hereunder. The burden of alleging and proving negligence which serves to diminish a plaintiff's damages or bar recovery under this section shall be upon the person who seeks to establish such negligence, and the plaintiff shall be presumed to have been in the exercise of due care.",
+      "text_sha256": "94278e872f854d3648688278c857abf01af22ed52c4949e001e907a2ded96500",
+      "publisher_sha256": "122c50b90f52c60a5979acf3b10682155f117dbea98cc4ae92ba6b9e30fa3c92",
+      "retrieved_at": "2026-11-17T20:50:34.378546+00:00",
+      "currentness": "unresolved"
     }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "0283d5930050a86dec49d8271c357c",
+    "source_id": "US-MA:fault:169d777bb89e",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
   }
 }

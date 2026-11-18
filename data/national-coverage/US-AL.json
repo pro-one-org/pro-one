@@ -211,6 +211,15 @@
       "url": "https://eforms.alacourt.gov/media/df4mch23/sm-3-defendant-s-answer.pdf",
       "directory": null,
       "locator": "SM-03"
+    },
+    "US-AL:consumerLaw:5061a64ca349": {
+      "title": "Ala. Code § 8-19-1 et seq.",
+      "category": "consumerLaw",
+      "url": "https://alison.legislature.state.al.us/code-of-alabama?section=8-19-1",
+      "directory": "consumer_statutes_index",
+      "locator": "Ala. Code § 8-19-1 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -295,6 +304,13 @@
       "citation": "Ala. Code § 35-9A-141. Definitions.",
       "directory": "eviction",
       "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Ala. Code § 8-19-1 et seq.",
+      "source_id": "US-AL:consumerLaw:5061a64ca349",
+      "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
   ],

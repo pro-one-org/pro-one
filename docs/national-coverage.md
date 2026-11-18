@@ -35,6 +35,8 @@ Jurisdiction-specific claims require every bound passage, proposition, edition a
 
 ## Review and release
 
+To check a publisher, run `python scripts/national_coverage.py check-publisher US 28-1331-2024 .local/publisher-health.sqlite3`. This operator command requests only the public URL for a catalogued selector. The local history stores its timestamp, status and hashes. Changed bytes or an inaccessible endpoint require review. Existing legal records keep their prior versions and status.
+
 A discovery entry, a historical citation and a review-required action each have different evidentiary uses. Inspect the per-jurisdiction gap output before relying on a coverage claim. The nationwide substantive baseline remains incomplete whenever the requisite domain elements lack primary-authority bindings. Counts include the publication records that the replay command can independently reproduce. The synthetic scale benchmark uses invented data exclusively.
 
 Court filing, service, payments, agency submissions, outbound communications, e-signature and representation remain disabled. Public release requires independent attorney and jurisdiction-specific legal-services review, substantive and procedural currentness review, forms and deadlines review, privacy and security review, source licensing and retention review, abuse controls, deployment and monitoring checks, broader adversarial testing and explicit release approval.

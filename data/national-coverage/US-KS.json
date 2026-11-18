@@ -183,6 +183,27 @@
       "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
       "directory": "bjs_sco_2004",
       "locator": "Table 3, PDF page 27"
+    },
+    "US-KS:fault:ccfc9752ccfc": {
+      "category": "fault",
+      "title": "Kan. Stat. Ann. § 60-258a(a)",
+      "url": "https://www.ksrevisor.gov/statutes/chapters/ch60/060_002_0058a.html",
+      "directory": null,
+      "locator": "Kan. Stat. Ann. § 60-258a(a)",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:34.573766+00:00",
+        "sha256": "0c876cf92bdd8eab5cab10f182d85eaf80ae5b2c7fb26f58b8854344bd0dd5b1"
+      }
+    },
+    "US-KS:consumerLaw:9e6b2a2f1df3": {
+      "title": "Kan. Stat. Ann. § 50-623 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.ksrevisor.org/statutes/chapters/ch50/050_006_0034.html",
+      "directory": "consumer_statutes_index",
+      "locator": "Kan. Stat. Ann. § 50-623 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -246,6 +267,33 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Kan. Stat. Ann. § 50-623 et seq.",
+      "source_id": "US-KS:consumerLaw:9e6b2a2f1df3",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "38f0918ec1922f7f86082fcc2b170f": {
+      "citation": "Kan. Stat. Ann. § 60-258a(a)",
+      "source_id": "US-KS:fault:ccfc9752ccfc",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "(a) Effect of contributory negligence. The contributory negligence of a party in a civil action does not bar that party or its legal representative from recovering damages for negligence resulting in death, personal injury, property damage or economic loss, if that party's negligence was less than the causal negligence of the party or parties against whom a claim is made, but the award of damages to that party must be reduced in proportion to the amount of negligence attributed to that party. If a party claims damages for a decedent's wrongful death, the negligence of the decedent, if any, must be imputed to that party.",
+      "text_sha256": "5fe68cd46c13d37cf43163d15b0313e46eebfe4c0e135ea9dcd351d953d489e9",
+      "publisher_sha256": "0c876cf92bdd8eab5cab10f182d85eaf80ae5b2c7fb26f58b8854344bd0dd5b1",
+      "retrieved_at": "2026-11-17T20:50:34.573766+00:00",
+      "currentness": "unresolved"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_50",
+    "passage_selector": "38f0918ec1922f7f86082fcc2b170f",
+    "source_id": "US-KS:fault:ccfc9752ccfc",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
 }

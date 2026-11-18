@@ -204,6 +204,27 @@
       "url": "https://courts.mt.gov/external/lcourt/benchbook/sc/sc-004.docx",
       "directory": null,
       "locator": "SC-004"
+    },
+    "US-MT:fault:17939b546741": {
+      "category": "fault",
+      "title": "MCA § 27-1-702",
+      "url": "https://mca.legmt.gov/bills/mca/title_0270/chapter_0010/part_0070/section_0020/0270-0010-0070-0020.html",
+      "directory": null,
+      "locator": "MCA § 27-1-702",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:40.355757+00:00",
+        "sha256": "161756fd270339f202a3d221be0c2ec044e8dbc2a0dc912228a0ab2095a3a0f4"
+      }
+    },
+    "US-MT:consumerLaw:35a7c4868e38": {
+      "title": "Mont. Code Ann. § 30-14-101 et seq.",
+      "category": "consumerLaw",
+      "url": "https://archive.legmt.gov/bills/mca/title_0300/chapter_0140/part_0010/section_0020/0300-0140-0010-0020.html",
+      "directory": "consumer_statutes_index",
+      "locator": "Mont. Code Ann. § 30-14-101 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -311,6 +332,13 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Mont. Code Ann. § 30-14-101 et seq.",
+      "source_id": "US-MT:consumerLaw:35a7c4868e38",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
   ],
   "passages": {
@@ -323,6 +351,17 @@
       "publisher_sha256": "b48baf022f371e55a3c4b0a837faf4aed2c9bdbf1bd8e7fdc958d6c61476f393",
       "retrieved_at": "2026-11-17T19:33:59.217362+00:00",
       "language": "en",
+      "currentness": "unresolved"
+    },
+    "32c15ff53a40053e89a571b047aa64": {
+      "citation": "MCA § 27-1-702",
+      "source_id": "US-MT:fault:17939b546741",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "Contributory negligence does not bar recovery in an action by a person or the person's legal representative to recover damages for negligence resulting in death or injury to the person or property if the contributory negligence was not greater than the negligence of the person or the combined negligence of all persons against whom recovery is sought, but any damages allowed must be diminished in the proportion to the percentage of negligence attributable to the person recovering. (Terminates on occurrence of contingency--sec. 11(2), Ch. 429, L. 1997.) 27-1-702. (Effective on occurrence of contingency) Comparative fault -- extent to which contributory fault bars recovery in action for damages. Contributory fault does not bar recovery in an action by a person or a person's legal representative to recover tort damages for death of a person or injury to a person or property if the contributory fault was not greater than the fault of the defendant or the combined fault of all defendants and nonparties, but damages allowed must be diminished in proportion to the percentage of fault attributable to the person recovering.",
+      "text_sha256": "e580fc5fac4dcfc01afb2f10244ba3dab7f5899402a4e8e791641ccd9afe210a",
+      "publisher_sha256": "161756fd270339f202a3d221be0c2ec044e8dbc2a0dc912228a0ab2095a3a0f4",
+      "retrieved_at": "2026-11-17T20:50:40.355757+00:00",
       "currentness": "unresolved"
     }
   },
@@ -339,5 +378,12 @@
       "last_observed": "2026-11-17T19:41:48.648815+00:00",
       "automated_completion": "disabled"
     }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "32c15ff53a40053e89a571b047aa64",
+    "source_id": "US-MT:fault:17939b546741",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
   }
 }

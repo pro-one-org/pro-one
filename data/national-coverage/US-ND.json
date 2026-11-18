@@ -183,6 +183,27 @@
       "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
       "directory": "bjs_sco_2004",
       "locator": "Table 3, PDF page 28"
+    },
+    "US-ND:fault:8f7384b8f891": {
+      "category": "fault",
+      "title": "N.D. Cent. Code § 32-03.2-02",
+      "url": "https://ndlegis.gov/prod/cencode/t32c03-2.pdf",
+      "directory": null,
+      "locator": "N.D. Cent. Code § 32-03.2-02",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:36.168980+00:00",
+        "sha256": "e56939f921bc3303492815f28d2479ac7693aa1cb56ac2eb2a7116c6eb521679"
+      }
+    },
+    "US-ND:consumerLaw:176bc364e1d5": {
+      "title": "N.D.C.C. § 51-15-01 et seq.",
+      "category": "consumerLaw",
+      "url": "https://ndlegis.gov/cencode/t51c15.pdf",
+      "directory": "consumer_statutes_index",
+      "locator": "N.D.C.C. § 51-15-01 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -240,6 +261,33 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "N.D.C.C. § 51-15-01 et seq.",
+      "source_id": "US-ND:consumerLaw:176bc364e1d5",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "78fdedd1f65a5874a57cf5f076a1da": {
+      "citation": "N.D. Cent. Code § 32-03.2-02",
+      "source_id": "US-ND:fault:8f7384b8f891",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "Modified comparative fault. Contributory fault does not bar recovery in an action by any person to recover damages for death or injury to person or property unless the fault was as great as the combined fault of all other persons who contribute to the injury, but any damages allowed must be diminished in proportion to the amount of contributing fault attributable to the person recovering. The court may, and when requested by any party, shall direct the jury to find separate special verdicts determining the amount of damages and the percentage of fault attributable to each person, whether or not a party, who contributed to the injury. The court shall then reduce the amount of such damages in proportion to the amount of fault attributable to the person recovering.",
+      "text_sha256": "6ece7e2560f8e16e4f00adf9d1f075a5cbc3467b42f29514b447007c7d9db672",
+      "publisher_sha256": "e56939f921bc3303492815f28d2479ac7693aa1cb56ac2eb2a7116c6eb521679",
+      "retrieved_at": "2026-11-17T20:50:36.168980+00:00",
+      "currentness": "unresolved"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_50",
+    "passage_selector": "78fdedd1f65a5874a57cf5f076a1da",
+    "source_id": "US-ND:fault:8f7384b8f891",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
 }

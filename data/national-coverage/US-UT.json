@@ -183,6 +183,27 @@
         "retrieved_at": "2026-11-17T20:14:06.970687+00:00",
         "sha256": "7cc4be87525e9869fb2c7d4b635d667aa3010723ed187050e3c0f7043a02b9b8"
       }
+    },
+    "US-UT:fault:106d58d09095": {
+      "category": "fault",
+      "title": "Utah Code § 78B-5-818",
+      "url": "https://le.utah.gov/xcode/Title78B/Chapter5/C78B-5-S818_1800010118000101.pdf",
+      "directory": null,
+      "locator": "Utah Code § 78B-5-818",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:36.057708+00:00",
+        "sha256": "d319d63f4c92ec50110872bf997470d21359c66f431f6580c8946e2da0b0f5c8"
+      }
+    },
+    "US-UT:consumerLaw:d1b18d2274fc": {
+      "title": "Utah Code § 13-11-1 et seq.",
+      "category": "consumerLaw",
+      "url": "https://le.utah.gov/xcode/Title13/C13_1800010118000101.pdf",
+      "directory": "consumer_statutes_index",
+      "locator": "Utah Code § 13-11-1 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -266,6 +287,13 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Utah Code § 13-11-1 et seq.",
+      "source_id": "US-UT:consumerLaw:d1b18d2274fc",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
   ],
   "passages": {
@@ -279,6 +307,24 @@
       "publisher_sha256": "7cc4be87525e9869fb2c7d4b635d667aa3010723ed187050e3c0f7043a02b9b8",
       "retrieved_at": "2026-11-17T20:14:06.970687+00:00",
       "currentness": "unresolved"
+    },
+    "6e1134ec6760a157c37ef7bc0e8f05": {
+      "citation": "Utah Code § 78B-5-818",
+      "source_id": "US-UT:fault:106d58d09095",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "78B-5-818 Comparative negligence. (1) The fault of a person seeking recovery may not alone bar recovery by that person. (2) A person seeking recovery may recover from any defendant or group of defendants whose fault, combined with the fault of persons immune from suit and nonparties to whom fault is allocated, exceeds the fault of the person seeking recovery prior to any reallocation of fault made under Subsection 78B-5-819(2). (3) No defendant is liable to any person seeking recovery for any amount in excess of the proportion of fault attributed to that defendant under Section 78B-5-819. (4) (a) The fact finder may, and when requested by a party shall, allocate the percentage or proportion of fault attributable to each person seeking recovery, to each defendant, to any person immune from suit, and to any other person identified under Subsection 78B-5-821(4) for whom there is a factual and legal basis to allocate fault. In the case of a motor vehicle accident involving an unidentified motor vehicle, the existence of the vehicle shall be proven by clear and convincing evidence which may consist solely of one person's testimony. (b) Any fault allocated to a person immune from suit is considered only to accurately determine the fault of the person seeking recovery and a defendant and may not subject the person immune from suit to any liability, based on the allocation of fault, in this or any other action.",
+      "text_sha256": "12bcba4d7dd8aa5e1b46040471ed4de631a801ba4471cd8001edcef435a8f7b1",
+      "publisher_sha256": "d319d63f4c92ec50110872bf997470d21359c66f431f6580c8946e2da0b0f5c8",
+      "retrieved_at": "2026-11-17T20:50:36.057708+00:00",
+      "currentness": "unresolved"
     }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_50",
+    "passage_selector": "6e1134ec6760a157c37ef7bc0e8f05",
+    "source_id": "US-UT:fault:106d58d09095",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
   }
 }

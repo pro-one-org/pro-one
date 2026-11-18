@@ -211,6 +211,27 @@
         "retrieved_at": "2026-11-17T20:14:55.256641+00:00",
         "sha256": "e55957b95b25f21142acfca62e8a6c9521b79b7362289f0b308fedf6aa0b602c"
       }
+    },
+    "US-OR:fault:2f3d5d9647fb": {
+      "category": "fault",
+      "title": "ORS 31.600(1)–(2)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors031.html",
+      "directory": null,
+      "locator": "ORS 31.600(1)–(2)",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:37.254817+00:00",
+        "sha256": "db9df4c8ed9ac4412024bb6b8b619b704c0518e5484382ca2b296457c0076ed9"
+      }
+    },
+    "US-OR:consumerLaw:a591ad70d515": {
+      "title": "Or. Rev. Stat. § 646.605 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors646.html",
+      "directory": "consumer_statutes_index",
+      "locator": "Or. Rev. Stat. § 646.605 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -304,6 +325,13 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Or. Rev. Stat. § 646.605 et seq.",
+      "source_id": "US-OR:consumerLaw:a591ad70d515",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
   ],
   "passages": {
@@ -317,6 +345,24 @@
       "publisher_sha256": "e55957b95b25f21142acfca62e8a6c9521b79b7362289f0b308fedf6aa0b602c",
       "retrieved_at": "2026-11-17T20:14:55.256641+00:00",
       "currentness": "unresolved"
+    },
+    "b7d5a7b87c08da5b59b86741eb5074": {
+      "citation": "ORS 31.600(1)–(2)",
+      "source_id": "US-OR:fault:2f3d5d9647fb",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "(1) Contributory negligence shall not bar recovery in an action by any person or the legal representative of the person to recover damages for death or injury to person or property if the fault attributable to the claimant was not greater than the combined fault of all persons specified in subsection (2) of this section, but any damages allowed shall be diminished in the proportion to the percentage of fault attributable to the claimant. This section is not intended to create or abolish any defense. (2) The trier of fact shall compare the fault of the claimant with the fault of any party against whom recovery is sought, the fault of third party defendants who are liable in tort to the claimant, and the fault of any person with whom the claimant has settled. The failure of a claimant to make a direct claim against a third party defendant does not affect the requirement that the fault of the third party defendant be considered by the trier of fact under this subsection. Except for persons who have settled with the claimant, there shall be no comparison of fault with any person: (a) Who is immune from liability to the claimant; (b) Who is not subject to the jurisdiction of the court; or (c) Who is not subject to action because the claim is barred by a statute of limitation or statute of ultimate repose.",
+      "text_sha256": "da5f12f3eb448591b796d3405ec87619970da610a72092cf1249e77011eaee05",
+      "publisher_sha256": "db9df4c8ed9ac4412024bb6b8b619b704c0518e5484382ca2b296457c0076ed9",
+      "retrieved_at": "2026-11-17T20:50:37.254817+00:00",
+      "currentness": "unresolved"
     }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "b7d5a7b87c08da5b59b86741eb5074",
+    "source_id": "US-OR:fault:2f3d5d9647fb",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
   }
 }

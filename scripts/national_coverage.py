@@ -11,6 +11,7 @@ from time import perf_counter_ns
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from app.coverage_audit import build, gaps, health, retained_observations, review_queue, source_distribution
+from app.coverage_health import check
 from app.jurisdictions import jurisdiction_id, registry
 from app.national_coverage import action_shells, coverage, manifest, summary
 from app.national_corpus import CorpusQuery
@@ -66,6 +67,10 @@ def main():
     commands.add_parser("jurisdiction").add_argument("scope")
     commands.add_parser("domain").add_argument("domain")
     commands.add_parser("build").add_argument("database", type=Path)
+    refresh = commands.add_parser("check-publisher")
+    refresh.add_argument("scope")
+    refresh.add_argument("selector")
+    refresh.add_argument("history", type=Path)
     for cmd in ("gaps", "stale", "source-health"):
         commands.add_parser(cmd).add_argument("--jurisdiction")
     args = parser.parse_args()
@@ -75,6 +80,8 @@ def main():
         result = source_distribution()
     elif args.command == "build":
         result = build(args.database)
+    elif args.command == "check-publisher":
+        result = check(jurisdiction_id(args.scope), args.selector, args.history)
     elif args.command == "benchmark":
         result = benchmark()
     elif args.command == "validate":

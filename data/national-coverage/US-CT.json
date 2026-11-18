@@ -218,6 +218,27 @@
         "sha256": "43a33c6e33547942740235f99924da678d2470571f0e962af5a27f78306f77d6",
         "health": "manual_review_required"
       }
+    },
+    "US-CT:fault:33b05f66ddff": {
+      "category": "fault",
+      "title": "Conn. Gen. Stat. § 52-572h(b)",
+      "url": "https://www.cga.ct.gov/2025/pub/chap_925.htm",
+      "directory": null,
+      "locator": "Conn. Gen. Stat. § 52-572h(b)",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:32.783493+00:00",
+        "sha256": "13c746baac0113d9968df4063b8fd30d7883ef86e0d109ae276acc77b439e7e5"
+      }
+    },
+    "US-CT:consumerLaw:21e24ce915e0": {
+      "title": "Conn. Gen. Stat. § 42-110a et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.cga.ct.gov/current/pub/chap_735a.htm",
+      "directory": "consumer_statutes_index",
+      "locator": "Conn. Gen. Stat. § 42-110a et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -287,6 +308,34 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Conn. Gen. Stat. § 42-110a et seq.",
+      "source_id": "US-CT:consumerLaw:21e24ce915e0",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "8786e92c49f51e503c389e8550bdde": {
+      "citation": "Conn. Gen. Stat. § 52-572h(b)",
+      "source_id": "US-CT:fault:33b05f66ddff",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "(b) In causes of action based on negligence, contributory negligence shall not bar recovery in an action by any person or the person's legal representative to recover damages resulting from personal injury, wrongful death or damage to property if the negligence was not greater than the combined negligence of the person or persons against whom recovery is sought including settled or released persons under subsection (n) of this section. The economic or noneconomic damages allowed shall be diminished in the proportion of the percentage of negligence attributable to the person recovering which percentage shall be determined pursuant to subsection (f) of this section.",
+      "text_sha256": "4a93fc8317e27cefe46464c14a5ffded23e0dfd4d2615a66972c5d3a695e2105",
+      "publisher_sha256": "13c746baac0113d9968df4063b8fd30d7883ef86e0d109ae276acc77b439e7e5",
+      "retrieved_at": "2026-11-17T20:50:32.783493+00:00",
+      "currentness": "historical",
+      "edition": "2025 publication"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "8786e92c49f51e503c389e8550bdde",
+    "source_id": "US-CT:fault:33b05f66ddff",
+    "currentness": "historical",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
 }

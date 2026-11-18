@@ -42,6 +42,7 @@ class RetainedLegislativeResearch:
             area, topic = SUBJECTS.get(source_row["category"], (None, None))
             kind = row["authority_type"]
             if (area != matter.legal_area or topic not in matter.topics or row["currentness"] != "unresolved"
+                    or matter.agency or (matter.court and matter.court != row.get("court"))
                     or matter.authority_types and kind not in matter.authority_types):
                 continue
             provider = LegislativeExcerpts(scope, kind)

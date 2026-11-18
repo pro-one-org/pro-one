@@ -204,6 +204,27 @@
       "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
       "directory": "bjs_sco_2004",
       "locator": "Table 3, PDF page 30"
+    },
+    "US-WA:fault:b08a13af8aed": {
+      "category": "fault",
+      "title": "RCW 4.22.005",
+      "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=4.22.005&full=true",
+      "directory": null,
+      "locator": "RCW 4.22.005",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:36.900981+00:00",
+        "sha256": "9f5dadec64a3eed7319b66cd911969a56427efb014c74495cb87957925eeb6d4"
+      }
+    },
+    "US-WA:consumerLaw:850fd97eb5be": {
+      "title": "RCW 19.86",
+      "category": "consumerLaw",
+      "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=19.86.020",
+      "directory": "consumer_statutes_index",
+      "locator": "RCW 19.86",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -299,6 +320,13 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "RCW 19.86",
+      "source_id": "US-WA:consumerLaw:850fd97eb5be",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
   ],
   "passages": {
@@ -323,6 +351,24 @@
       "retrieved_at": "2026-11-17T19:34:05.588586+00:00",
       "language": "en",
       "currentness": "unresolved"
+    },
+    "28bb9fbee471492a63bd9f843a2ab7": {
+      "citation": "RCW 4.22.005",
+      "source_id": "US-WA:fault:b08a13af8aed",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "In an action based on fault seeking to recover damages for injury or death to person or harm to property, any contributory fault chargeable to the claimant diminishes proportionately the amount awarded as compensatory damages for an injury attributable to the claimant's contributory fault, but does not bar recovery. This rule applies whether or not under prior law the claimant's contributory fault constituted a defense or was disregarded under applicable legal doctrines, such as last clear chance.",
+      "text_sha256": "24048d8340ca820a6343b721a99cb13a5d3704e7541522e36ceb67ca836af47c",
+      "publisher_sha256": "9f5dadec64a3eed7319b66cd911969a56427efb014c74495cb87957925eeb6d4",
+      "retrieved_at": "2026-11-17T20:50:36.900981+00:00",
+      "currentness": "unresolved"
     }
+  },
+  "fault_allocation": {
+    "regime": "pure_comparative",
+    "passage_selector": "28bb9fbee471492a63bd9f843a2ab7",
+    "source_id": "US-WA:fault:b08a13af8aed",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
   }
 }

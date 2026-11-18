@@ -197,6 +197,27 @@
         "sha256": "b1e3d6a4c2a1cc18354158de84b11260cd8c6df4f95d4fb04da550902b2a44fa",
         "health": "manual_review_required"
       }
+    },
+    "US-HI:fault:214876141e1f": {
+      "category": "fault",
+      "title": "Haw. Rev. Stat. § 663-31(a)",
+      "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0663/HRS_0663-0031.htm",
+      "directory": null,
+      "locator": "Haw. Rev. Stat. § 663-31(a)",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:33.257382+00:00",
+        "sha256": "d7c666e6b2af18266d46f5f72234074d3d7c9f7ebf9883cc9320bf58673e75ee"
+      }
+    },
+    "US-HI:consumerLaw:cc8a7adaf621": {
+      "title": "Haw. Rev. Stat. § 480-1 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.capitol.hawaii.gov/hrscurrent/Vol11_Ch0476-0490/HRS0480/HRS_0480-0002.htm",
+      "directory": "consumer_statutes_index",
+      "locator": "Haw. Rev. Stat. § 480-1 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -278,6 +299,33 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Haw. Rev. Stat. § 480-1 et seq.",
+      "source_id": "US-HI:consumerLaw:cc8a7adaf621",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "91f5bae2ad0d0cc93bceddc108ddb9": {
+      "citation": "Haw. Rev. Stat. § 663-31(a)",
+      "source_id": "US-HI:fault:214876141e1f",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "(a) Contributory negligence shall not bar recovery in any action by any person or the person's legal representative to recover damages for negligence resulting in death or in injury to person or property, if such negligence was not greater than the negligence of the person or in the case of more than one person, the aggregate negligence of such persons against whom recovery is sought, but any damages allowed shall be diminished in proportion to the amount of negligence attributable to the person for whose injury, damage or death recovery is made.",
+      "text_sha256": "d5dea9f29a90aee8e50671756adc095dfb3f652e13888657112f47160cc9b1b8",
+      "publisher_sha256": "d7c666e6b2af18266d46f5f72234074d3d7c9f7ebf9883cc9320bf58673e75ee",
+      "retrieved_at": "2026-11-17T20:50:33.257382+00:00",
+      "currentness": "unresolved"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "91f5bae2ad0d0cc93bceddc108ddb9",
+    "source_id": "US-HI:fault:214876141e1f",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
 }

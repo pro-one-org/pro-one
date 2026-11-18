@@ -225,6 +225,15 @@
       "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
       "directory": "bjs_sco_2004",
       "locator": "Table 3, PDF page 28"
+    },
+    "US-NC:consumerLaw:0dfc5a4d2b6b": {
+      "title": "N.C. Gen. Stat. § 75-1.1 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_75/GS_75-1.1.html",
+      "directory": "consumer_statutes_index",
+      "locator": "N.C. Gen. Stat. § 75-1.1 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -311,6 +320,13 @@
       "citation": "N.C. Gen. Stat. § 42-38. Application",
       "directory": "eviction",
       "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "N.C. Gen. Stat. § 75-1.1 et seq.",
+      "source_id": "US-NC:consumerLaw:0dfc5a4d2b6b",
+      "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
   ],

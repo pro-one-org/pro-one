@@ -204,6 +204,15 @@
       "url": "https://mgaleg.maryland.gov/2024RS/Statute_Web/gle/3-502.pdf",
       "directory": null,
       "locator": "Md. Code, Labor and Employment § 3-502"
+    },
+    "US-MD:consumerLaw:891a872ca8c1": {
+      "title": "Md. Code, Com. Law § 13-101 et seq.",
+      "category": "consumerLaw",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=13-101",
+      "directory": "consumer_statutes_index",
+      "locator": "Md. Code, Com. Law § 13-101 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -280,6 +289,13 @@
       "citation": "Md. Code, Real Property § 8A-101. Definitions; Md. Code, Real Property § 8-401. Nonpayment of rent",
       "directory": "eviction",
       "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Md. Code, Com. Law § 13-101 et seq.",
+      "source_id": "US-MD:consumerLaw:891a872ca8c1",
+      "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
   ],

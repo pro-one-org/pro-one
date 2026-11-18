@@ -169,6 +169,27 @@
         "sha256": "9bfbccbbe0dad883a60e35362b9d819d577b0a98b24315a7f8976b2e6c7d09d7",
         "health": "manual_review_required"
       }
+    },
+    "US-OH:fault:4f738f54c0fc": {
+      "category": "fault",
+      "title": "Ohio Rev. Code § 2315.33",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-2315.33",
+      "directory": null,
+      "locator": "Ohio Rev. Code § 2315.33",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:35.338278+00:00",
+        "sha256": "0f85da8d28741f8cd614e7c742398973da7299ae4d7c8d98810c01c8152f037c"
+      }
+    },
+    "US-OH:consumerLaw:d35c9e2a3aef": {
+      "title": "Ohio Rev. Code § 1345.01 et seq.",
+      "category": "consumerLaw",
+      "url": "https://codes.ohio.gov/ohio-revised-code/chapter-1345",
+      "directory": "consumer_statutes_index",
+      "locator": "Ohio Rev. Code § 1345.01 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -250,6 +271,13 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Ohio Rev. Code § 1345.01 et seq.",
+      "source_id": "US-OH:consumerLaw:d35c9e2a3aef",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
   ],
   "passages": {
@@ -285,6 +313,24 @@
       "retrieved_at": "2026-11-17T19:34:00.298855+00:00",
       "language": "en",
       "currentness": "unresolved"
+    },
+    "30aa1a685232be390fb6ccca94da19": {
+      "citation": "Ohio Rev. Code § 2315.33",
+      "source_id": "US-OH:fault:4f738f54c0fc",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "The contributory fault of a person does not bar the person as plaintiff from recovering damages that have directly and proximately resulted from the tortious conduct of one or more other persons, if the contributory fault of the plaintiff was not greater than the combined tortious conduct of all other persons from whom the plaintiff seeks recovery in this action and of all other persons from whom the plaintiff does not seek recovery in this action. The court shall diminish any compensatory damages recoverable by the plaintiff by an amount that is proportionately equal to the percentage of tortious conduct of the plaintiff as determined pursuant to section 2315.34 of the Revised Code.",
+      "text_sha256": "451d3347ee46371fa380023d95f83f19625fa3c99239e9917376558114c8aa17",
+      "publisher_sha256": "0f85da8d28741f8cd614e7c742398973da7299ae4d7c8d98810c01c8152f037c",
+      "retrieved_at": "2026-11-17T20:50:35.338278+00:00",
+      "currentness": "unresolved"
     }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "30aa1a685232be390fb6ccca94da19",
+    "source_id": "US-OH:fault:4f738f54c0fc",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
   }
 }

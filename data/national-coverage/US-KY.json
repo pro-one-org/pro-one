@@ -169,6 +169,27 @@
       "url": "https://apps.legislature.ky.gov/Law/statutes/statute.aspx?id=55338",
       "directory": null,
       "locator": "KRS 337.385"
+    },
+    "US-KY:fault:aa7878471fe8": {
+      "category": "fault",
+      "title": "KRS 411.182",
+      "url": "https://apps.legislature.ky.gov/law/Statutes/statute.aspx?id=17782",
+      "directory": null,
+      "locator": "KRS 411.182",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:33.594435+00:00",
+        "sha256": "9939ea05212a4dc743c070477e3f19fe087ede19ca29de40169e02697e653f1d"
+      }
+    },
+    "US-KY:consumerLaw:9bb0d68f61c1": {
+      "title": "Ky. Rev. Stat. § 367.110 et seq.",
+      "category": "consumerLaw",
+      "url": "https://apps.legislature.ky.gov/law/statutes/chapter.aspx?id=39092",
+      "directory": "consumer_statutes_index",
+      "locator": "Ky. Rev. Stat. § 367.110 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -238,6 +259,13 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Ky. Rev. Stat. § 367.110 et seq.",
+      "source_id": "US-KY:consumerLaw:9bb0d68f61c1",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
   ],
   "passages": {
@@ -273,6 +301,24 @@
       "retrieved_at": "2026-11-17T19:41:32.510695+00:00",
       "language": "en",
       "currentness": "unresolved"
+    },
+    "bf5158710073d186ed670573e8d225": {
+      "citation": "KRS 411.182",
+      "source_id": "US-KY:fault:aa7878471fe8",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "411.182 Allocation of fault in tort actions -- Award of damages -- Effect of release. (1) In all tort actions, including products liability actions, involving fault of more than one (1) party to the action, including third -party defendants and persons who hav e been released under subsection (4) of this section, the court, unless otherwise agreed by all parties, shall instruct the jury to answer interrogatories or, if there is no jury, shall make findings indicating: (a) The amount of damages each claimant woul d be entitled to recover if contributory fault is disregarded; and (b) The percentage of the total fault of all the parties to each claim that is allocated to each claimant, defendant, third -party defendant, and person who has been released from liability under subsection (4) of this section. (2) In determining the percentages of fault, the trier of fact shall consider both the nature of the conduct of each party at fault and the extent of the causal relation between the conduct and the damages claimed. (3) The court shall determine the award of damages to each claimant in accordance with the findings, subject to any reduction under subsection (4) of this section, and shall determine and state in the judgment each party's equitable share of the obligation to each claimant in accordance with the respective percentages of fault. (4) A release, covenant not to sue, or similar agreement entered into by a claimant and a person liable, shall discharge that person from all liability for contribution, but it shall not be considered to discharge any other persons liable upon the same claim unless it so provides. However, the claim of the releasing person against other persons shall be reduced by the amount of the released persons' equitable share of the obligation, determined in accordance with the provisions of this section.",
+      "text_sha256": "6f9db4f41f427be0a0b2651518f8ed87079fb2d1ff0aea8debdd8d03ad3d9248",
+      "publisher_sha256": "9939ea05212a4dc743c070477e3f19fe087ede19ca29de40169e02697e653f1d",
+      "retrieved_at": "2026-11-17T20:50:33.594435+00:00",
+      "currentness": "unresolved"
     }
+  },
+  "fault_allocation": {
+    "regime": "other_state_specific",
+    "passage_selector": "bf5158710073d186ed670573e8d225",
+    "source_id": "US-KY:fault:aa7878471fe8",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
   }
 }

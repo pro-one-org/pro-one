@@ -246,6 +246,15 @@
         "sha256": "bed35507b65fd86e615bbd438ff39c17971ebdf0ed991aca842508fd2d4ab132",
         "health": "manual_review_required"
       }
+    },
+    "US-VA:consumerLaw:17c1bdeba668": {
+      "title": "Va. Code § 59.1-196 et seq.",
+      "category": "consumerLaw",
+      "url": "https://law.lis.virginia.gov/vacodefull/title59.1/chapter17/",
+      "directory": "consumer_statutes_index",
+      "locator": "Va. Code § 59.1-196 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -320,6 +329,13 @@
       "citation": "Va. Code § 55.1-1245. Noncompliance with rental agreement; monetary penalty.",
       "directory": "eviction",
       "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Va. Code § 59.1-196 et seq.",
+      "source_id": "US-VA:consumerLaw:17c1bdeba668",
+      "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
   ]

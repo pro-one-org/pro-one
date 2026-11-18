@@ -134,6 +134,15 @@
         "sha256": "bb1972ec7a6580b1f909829dffdddee3964f4bcf66cb29da6d56434f8de606d8",
         "health": "manual_review_required"
       }
+    },
+    "US-DC:consumerLaw:c1f3fb8cd9c2": {
+      "title": "D.C. Code § 28-3901 et seq.",
+      "category": "consumerLaw",
+      "url": "https://code.dccouncil.gov/us/dc/council/code/sections/28-3905",
+      "directory": "consumer_statutes_index",
+      "locator": "D.C. Code § 28-3901 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -176,6 +185,13 @@
       "citation": "D.C. Code § 42-3505.01. Evictions.",
       "directory": "eviction",
       "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "D.C. Code § 28-3901 et seq.",
+      "source_id": "US-DC:consumerLaw:c1f3fb8cd9c2",
+      "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
   ],

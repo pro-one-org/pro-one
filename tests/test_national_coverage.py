@@ -10,9 +10,10 @@ from pydantic import ValidationError
 
 from app.capabilities import ResearchMatter
 from app.coverage_audit import build, retained_observations
+from app.coverage_health import check
 from app.jurisdictions import jurisdiction_id, possible_tribal_scope, registry, tribal_registry
 from app.main import app
-from app.national_corpus import AuthorityVersion, CorpusError, CorpusQuery
+from app.national_corpus import AuthorityVersion, CorpusError, CorpusQuery, FetchedSource
 from app.national_corpus_store import SQLiteNormalizedCorpus
 from app.national_coverage import coverage
 from app.national_excerpt_research import RetainedLegislativeResearch
@@ -20,6 +21,27 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_health_journal_preserves_drift_and_outage_without_mutating_corpus(self):
+        import sqlite3
+        provider, selector, raw, _ = next(retained_observations())
+        def unavailable(_):
+            raise CorpusError("source_http_403")
+        with TemporaryDirectory() as folder:
+            history = Path(folder) / "health.sqlite3"
+            for fetch, expected in [(lambda _: FetchedSource(raw, 1), "healthy"),
+                                    (lambda _: FetchedSource(b"changed", 1), "changed_content"),
+                                    (unavailable, "access_denied")]:
+                self.assertEqual(check("US", selector, history, fetch=fetch)["status"], expected)
+            with self.assertRaises(CorpusError):
+                check("US-VA", selector, history, fetch=unavailable)
+            connection = sqlite3.connect(history)
+            try:
+                self.assertEqual(connection.execute("SELECT COUNT(*) FROM publisher_health").fetchone()[0], 3)
+            finally:
+                connection.close()
+            original, = provider.normalize(selector, raw)
+            self.assertEqual(original.version.currentness, "historical")
+
     def test_every_required_jurisdiction_has_isolated_sources_and_action_status(self):
         self.assertEqual(Counter(owner.kind for owner in registry().values()),
                          {"state": 50, "district": 1, "territory": 5, "federal": 1})

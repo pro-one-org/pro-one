@@ -267,6 +267,27 @@
         "sha256": "84539e4abfac974bf293e6e237441c801b89095a79e77d84aeb2aa8e3bc2962c",
         "health": "manual_review_required"
       }
+    },
+    "US-AK:fault:b7c635c68da1": {
+      "category": "fault",
+      "title": "Alaska Stat. § 09.17.060",
+      "url": "https://www.akleg.gov/statutesPDF/Title-9.pdf",
+      "directory": null,
+      "locator": "Alaska Stat. § 09.17.060",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:32.390483+00:00",
+        "sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f"
+      }
+    },
+    "US-AK:consumerLaw:9da123b123e8": {
+      "title": "AS 45.50.471 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.akleg.gov/basis/statutes.asp#45.50.531",
+      "directory": "consumer_statutes_index",
+      "locator": "AS 45.50.471 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -316,6 +337,33 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "AS 45.50.471 et seq.",
+      "source_id": "US-AK:consumerLaw:9da123b123e8",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "56ca0d7bb5d2990f41fadcf312dd52": {
+      "citation": "Alaska Stat. § 09.17.060",
+      "source_id": "US-AK:fault:b7c635c68da1",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "Sec. 09.17.060. Effect of contributory fault. In an action based on fault seeking to recover damages for injury or death to a person or harm to property, contributory fault chargeable to the claimant diminishes proportionately the amount awarded as compensatory damages for the injury attributable to the claimant's contributory fault, but does not bar recovery.",
+      "text_sha256": "05742af37461fc99f7642d4102afab779d6f0bbb3053171749313678d4c6208c",
+      "publisher_sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f",
+      "retrieved_at": "2026-11-17T20:50:32.390483+00:00",
+      "currentness": "unresolved"
+    }
+  },
+  "fault_allocation": {
+    "regime": "pure_comparative",
+    "passage_selector": "56ca0d7bb5d2990f41fadcf312dd52",
+    "source_id": "US-AK:fault:b7c635c68da1",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
 }

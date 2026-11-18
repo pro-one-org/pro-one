@@ -253,6 +253,27 @@
         "sha256": "4377d766318d4d736833f047fbd0a21297b6773755bd482d9cee15401d45d349",
         "health": "manual_review_required"
       }
+    },
+    "US-IA:fault:f3b39ea29516": {
+      "category": "fault",
+      "title": "Iowa Code § 668.3(1)(a)",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/668.pdf",
+      "directory": null,
+      "locator": "Iowa Code § 668.3(1)(a)",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:33.379562+00:00",
+        "sha256": "80828e7f7cd84a4ebc8f4716490387326e8c17d01eb784a4cf9238d5c2cc98a4"
+      }
+    },
+    "US-IA:consumerLaw:fadc69e21a18": {
+      "title": "Iowa Code ch. 714H (private actions); § 714.16 (AG)",
+      "category": "consumerLaw",
+      "url": "https://www.legis.iowa.gov/docs/code/714H.1.pdf",
+      "directory": "consumer_statutes_index",
+      "locator": "Iowa Code ch. 714H (private actions); § 714.16 (AG)",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -308,6 +329,33 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Iowa Code ch. 714H (private actions); § 714.16 (AG)",
+      "source_id": "US-IA:consumerLaw:fadc69e21a18",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "6bfc73a64a49ce7a625745edd8e44c": {
+      "citation": "Iowa Code § 668.3(1)(a)",
+      "source_id": "US-IA:fault:f3b39ea29516",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "1. a. Contributory fault shall not bar recovery in an action by a claimant to recover damages for fault resulting in death or in injury to person or property unless the claimant bears a greater percentage of fault than the combined percentage of fault attributed to the defendants, third-party defendants and persons who have been released pursuant to section 668.7 , but any damages allowed shall be diminished in proportion to the amount of fault attributable to the claimant.",
+      "text_sha256": "a8b55e85aea72fb077a9acfafeeaf529e9cffea29a3c24a9e00a31e652fbe85a",
+      "publisher_sha256": "80828e7f7cd84a4ebc8f4716490387326e8c17d01eb784a4cf9238d5c2cc98a4",
+      "retrieved_at": "2026-11-17T20:50:33.379562+00:00",
+      "currentness": "unresolved"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "6bfc73a64a49ce7a625745edd8e44c",
+    "source_id": "US-IA:fault:f3b39ea29516",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
 }

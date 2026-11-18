@@ -176,6 +176,27 @@
       "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
       "directory": "bjs_sco_2004",
       "locator": "Table 3, PDF page 28"
+    },
+    "US-NY:fault:8d0e072334d2": {
+      "category": "fault",
+      "title": "N.Y. CPLR 1411",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/1411",
+      "directory": null,
+      "locator": "N.Y. CPLR 1411",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:35.153837+00:00",
+        "sha256": "8e22857d706801cf6bdbcf8bdb3340ab2ed61845c63febd4b7f89715eed8834e"
+      }
+    },
+    "US-NY:consumerLaw:e7ef6034d27d": {
+      "title": "N.Y. Gen. Bus. Law § 349 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.nysenate.gov/legislation/laws/GBS/349",
+      "directory": "consumer_statutes_index",
+      "locator": "N.Y. Gen. Bus. Law § 349 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -309,6 +330,33 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "N.Y. Gen. Bus. Law § 349 et seq.",
+      "source_id": "US-NY:consumerLaw:e7ef6034d27d",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "6284fbf2e45eeac83a62d9ede67a68": {
+      "citation": "N.Y. CPLR 1411",
+      "source_id": "US-NY:fault:8d0e072334d2",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "(a) Except as provided in subsection (b) of this section, in any action to recover damages for personal injury, injury to property, or wrongful death, the culpable conduct attributable to the claimant or to the decedent, including contributory negligence or assumption of risk, shall not bar recovery. The amount of damages otherwise recoverable shall be diminished in the proportion which the culpable conduct attributable to the claimant or decedent bears to the culpable conduct which caused the damages. (b) In any action to recover damages for personal injury subject to article fifty-one of the insurance law, the culpable conduct attributable to the claimant shall bar recovery if the culpable conduct attributable to the claimant is greater than the culpable conduct of the person against whom recovery is sought or is greater than the combined culpable conduct of the persons against whom recovery is sought.",
+      "text_sha256": "442063ddeed4e06493d0a1fc452f23e9e9a08b55bb3749ca89aefdf147f670dc",
+      "publisher_sha256": "8e22857d706801cf6bdbcf8bdb3340ab2ed61845c63febd4b7f89715eed8834e",
+      "retrieved_at": "2026-11-17T20:50:35.153837+00:00",
+      "currentness": "unresolved"
+    }
+  },
+  "fault_allocation": {
+    "regime": "other_state_specific",
+    "passage_selector": "6284fbf2e45eeac83a62d9ede67a68",
+    "source_id": "US-NY:fault:8d0e072334d2",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
 }

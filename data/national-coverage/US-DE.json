@@ -218,6 +218,27 @@
         "sha256": "24d4e9fbd4026c319d6424d32aaf3947acd76e6022a54d6206bea0449a569d80",
         "health": "manual_review_required"
       }
+    },
+    "US-DE:fault:096caca3b135": {
+      "category": "fault",
+      "title": "10 Del. C. § 8132",
+      "url": "https://delcode.delaware.gov/title10/c081/index.html",
+      "directory": null,
+      "locator": "10 Del. C. § 8132",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:32.617194+00:00",
+        "sha256": "fe416bed3788d1b09090d8f5423c90fcbe207652f11d300c7a09b2dfd0fc1f20"
+      }
+    },
+    "US-DE:consumerLaw:238440f8f9cc": {
+      "title": "6 Del. C. § 2511 et seq.",
+      "category": "consumerLaw",
+      "url": "https://delcode.delaware.gov/title6/c025/sc01/index.html",
+      "directory": "consumer_statutes_index",
+      "locator": "6 Del. C. § 2511 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -325,6 +346,13 @@
       "directory": "eviction",
       "survey_through": "2021-01-01",
       "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "6 Del. C. § 2511 et seq.",
+      "source_id": "US-DE:consumerLaw:238440f8f9cc",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
     }
   ],
   "passages": {
@@ -338,6 +366,24 @@
       "retrieved_at": "2026-11-17T19:33:55.515257+00:00",
       "language": "en",
       "currentness": "unresolved"
+    },
+    "873e38b7f1f0c2567781262f081ec5": {
+      "citation": "10 Del. C. § 8132",
+      "source_id": "US-DE:fault:096caca3b135",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "§ 8132. Comparative negligence. In all actions brought to recover damages for negligence which results in death or injury to person or property, the fact that the plaintiff may have been contributorily negligent shall not bar a recovery by the plaintiff or the plaintiff’s legal representative where such negligence was not greater than the negligence of the defendant or the combined negligence of all defendants against whom recovery is sought, but any damages awarded shall be diminished in proportion to the amount of negligence attributed to the plaintiff.",
+      "text_sha256": "dd4b056832154897d189b5452699c1f318efdf2fe2dd14a8804ae8967c36c61b",
+      "publisher_sha256": "fe416bed3788d1b09090d8f5423c90fcbe207652f11d300c7a09b2dfd0fc1f20",
+      "retrieved_at": "2026-11-17T20:50:32.617194+00:00",
+      "currentness": "unresolved"
     }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "873e38b7f1f0c2567781262f081ec5",
+    "source_id": "US-DE:fault:096caca3b135",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
   }
 }

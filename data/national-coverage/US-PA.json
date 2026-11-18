@@ -176,6 +176,15 @@
       "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
       "directory": "bjs_sco_2004",
       "locator": "Table 3, PDF page 29"
+    },
+    "US-PA:consumerLaw:c825c0e931df": {
+      "title": "73 P.S. § 201-1 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/1968/0/0387..HTM",
+      "directory": "consumer_statutes_index",
+      "locator": "73 P.S. § 201-1 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
     }
   },
   "court_directory": [
@@ -266,6 +275,13 @@
       "citation": "68 PA. Cons. Stat. § 250.501. Notice to quit",
       "directory": "eviction",
       "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "73 P.S. § 201-1 et seq.",
+      "source_id": "US-PA:consumerLaw:c825c0e931df",
+      "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
   ]
