@@ -260,6 +260,30 @@
       "locator": "Okla. Stat. tit. 15 § 751 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-OK:contract_formation:bb0d3ff0a422": {
+      "category": "contract_formation",
+      "title": "Okla. Stat. tit. 12A, § 2-204",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os12A.pdf",
+      "locator": "Okla. Stat. tit. 12A, § 2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:40.851015+00:00",
+        "sha256": "96d558afd31b77cb055be7ce20bd66930dd0daf323e0728bf3559953527575a8"
+      }
+    },
+    "US-OK:contract_damages:bc0c1e97e5fa": {
+      "category": "contract_damages",
+      "title": "Okla. Stat. tit. 12A, § 2-714",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os12A.pdf",
+      "locator": "Okla. Stat. tit. 12A, § 2-714",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:40.851015+00:00",
+        "sha256": "96d558afd31b77cb055be7ce20bd66930dd0daf323e0728bf3559953527575a8"
+      }
     }
   },
   "court_directory": [
@@ -367,6 +391,28 @@
       "publisher_sha256": "2aa8239ae37628ca67b517a9a4ea35bd5d7c6c6c9a5d10891774875b0348c841",
       "retrieved_at": "2026-11-17T20:50:38.843448+00:00",
       "currentness": "unresolved"
+    },
+    "92142a1d8957058527168056cb1315": {
+      "source_id": "US-OK:contract_formation:bb0d3ff0a422",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 12A, § 2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "96d558afd31b77cb055be7ce20bd66930dd0daf323e0728bf3559953527575a8",
+      "retrieved_at": "2026-11-18T15:14:40.851015+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "e5e528a6e0a8c66bb8c35769728dc9": {
+      "source_id": "US-OK:contract_damages:bc0c1e97e5fa",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 12A, § 2-714",
+      "text": "(1) Where the buyer has accepted goods and given notification (subsection (3) of Section 2-607) he may recover as damages for any nonconformity of tender the loss resulting in the ordinary course of events from the seller's breach as determined in any manner which is reasonable. (2) The measure of damages for breach of warranty is the difference at the time and place of acceptance between the value of the goods accepted and the value they would have had if they had been as warranted, unless special circumstances show proximate damages of a different amount.",
+      "text_sha256": "15ecd0b85da6a3c1f59ac66486602922f5a4d04b748b3b8c6c780dee4af0542a",
+      "publisher_sha256": "96d558afd31b77cb055be7ce20bd66930dd0daf323e0728bf3559953527575a8",
+      "retrieved_at": "2026-11-18T15:14:40.851015+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {
