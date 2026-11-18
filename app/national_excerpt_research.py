@@ -25,6 +25,7 @@ SUBJECTS = {
     "service": ("civil_procedure", "service_of_process"),
     "response": ("civil_procedure", "initial_response"),
     "contract_formation": ("contracts", "contract_formation"),
+    "contract_damages": ("contracts", "accepted_goods_damages"),
 }
 
 

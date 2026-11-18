@@ -228,6 +228,18 @@
         "retrieved_at": "2026-11-17T20:14:06.970687+00:00",
         "sha256": "7cc4be87525e9869fb2c7d4b635d667aa3010723ed187050e3c0f7043a02b9b8"
       }
+    },
+    "US-UT:contract_damages:f60d29c5c816": {
+      "category": "contract_damages",
+      "title": "Utah Code § 70A-2-714",
+      "url": "https://le.utah.gov/xcode/Title70A/Chapter2/C70A-2_1800010118000101.pdf",
+      "locator": "Utah Code § 70A-2-714",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:33.702908+00:00",
+        "sha256": "159729e5c447c8dc0de674de36674d318bb451b6859afd2be39bed6bcf606b43"
+      }
     }
   },
   "court_directory": [
@@ -362,6 +374,17 @@
       "text_sha256": "83c2156d7f9102724858c96d68ef0bea7a41caa00575b074a15d3e89ef0463ed",
       "publisher_sha256": "7cc4be87525e9869fb2c7d4b635d667aa3010723ed187050e3c0f7043a02b9b8",
       "retrieved_at": "2026-11-17T20:14:06.970687+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "0a5514f7f922e54b7390860b3f667e": {
+      "source_id": "US-UT:contract_damages:f60d29c5c816",
+      "authority_type": "statute",
+      "citation": "Utah Code § 70A-2-714",
+      "text": "Where the buyer has accepted goods and given notification (Subsection (3) of Section 70A-2-607) he may recover as damages for any nonconformity of tender the loss resulting in the ordinary course of events from the seller's breach as determined in any manner which is reasonable. (2) The measure of damages for breach of warranty is the difference at the time and place of acceptance between the value of the goods accepted and the value they would have had if they had been as warranted, unless special circumstances show proximate damages of a different amount.",
+      "text_sha256": "10733b4a1bf8d131b7f3e60dcdd8a727063ff8d50d9ca659f8b179fed68b5eb9",
+      "publisher_sha256": "159729e5c447c8dc0de674de36674d318bb451b6859afd2be39bed6bcf606b43",
+      "retrieved_at": "2026-11-18T15:14:33.702908+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

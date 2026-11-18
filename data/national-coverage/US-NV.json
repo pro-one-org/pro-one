@@ -296,6 +296,18 @@
         "retrieved_at": "2026-11-17T20:14:25.244018+00:00",
         "sha256": "99812c5ef90fa83a0b5ded17bb4f1649316b2e1c3cc48c9e91eaca63e2479065"
       }
+    },
+    "US-NV:contract_damages:f6e59d3af29b": {
+      "category": "contract_damages",
+      "title": "NRS 104.2714",
+      "url": "https://www.leg.state.nv.us/Nrs/NRS-104.html",
+      "locator": "NRS 104.2714",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:31.059769+00:00",
+        "sha256": "1b54fb3a52b86d9034cb0b2ab53fa05cce7bd18f4aec38a4716477c0c25a4898"
+      }
     }
   },
   "court_directory": [
@@ -417,6 +429,17 @@
       "text_sha256": "36308ab9a42da69f8bf53631a9f8f712ae3b3593cb0ae0703022424fb3005f5b",
       "publisher_sha256": "99812c5ef90fa83a0b5ded17bb4f1649316b2e1c3cc48c9e91eaca63e2479065",
       "retrieved_at": "2026-11-17T20:14:25.244018+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "3a2c37fc4d865b748aaec441495919": {
+      "source_id": "US-NV:contract_damages:f6e59d3af29b",
+      "authority_type": "statute",
+      "citation": "NRS 104.2714",
+      "text": "Where the buyer has accepted goods and given notification (subsection 3 of NRS 104.2607) the buyer may recover as damages for any nonconformity of tender the loss resulting in the ordinary course of events from the seller’s breach as determined in any manner which is reasonable. 2. The measure of damages for breach of warranty is the difference at the time and place of acceptance between the value of the goods accepted and the value they would have had if they had been as warranted, unless special circumstances show proximate damages of a different amount.",
+      "text_sha256": "2e11d50e55467c1aa69d01aa837171fe6c4c5de993d97ce9235fb5ef81921cfa",
+      "publisher_sha256": "1b54fb3a52b86d9034cb0b2ab53fa05cce7bd18f4aec38a4716477c0c25a4898",
+      "retrieved_at": "2026-11-18T15:14:31.059769+00:00",
       "currentness": "unresolved",
       "language": "en"
     }
