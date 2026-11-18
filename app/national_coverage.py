@@ -8,6 +8,7 @@ from urllib.parse import urlsplit
 
 from app.jurisdictions import ROOT, jurisdiction_id, registry
 from app.national_govinfo_code import federal_granules
+from app.national_certifications import certified_basis
 
 # Each capability has its own discovery dependencies. A homepage alone is never
 # evidence of a rule, a form revision, a monetary amount, or a filing deadline.
@@ -83,8 +84,12 @@ def manifest(scope):
         if (not source or source["title"] != passage["citation"] or not re.fullmatch("[a-f0-9]{64}", capture)
                 or sha256(identity.encode()).hexdigest()[:30] != selector
                 or sha256(passage["text"].encode()).hexdigest() != passage["text_sha256"]
-                or passage["currentness"] not in {"unresolved", "historical"}):
+                or passage["currentness"] not in {"unresolved", "historical", "current_as_of"}):
             raise ValueError("invalid_passage_binding")
+        if passage["currentness"] == "current_as_of":
+            day, _ = certified_basis(scope, source["url"], capture, passage["publisher_path"], passage["citation"], passage["text"])
+            if passage["current_as_of"] != day.isoformat() or passage["authority_type"] != "statute":
+                raise ValueError("invalid_publisher_certification")
     fault = record.get("fault_allocation")
     if fault:
         binding = record.get("passages", {}).get(fault["passage_selector"])
@@ -143,12 +148,15 @@ def coverage(value):
             bindings = [binding for ref in refs for binding in passages[ref]]
             historical = [editions[ref] for ref in refs if ref in editions]
             has_unresolved = any(record["passages"][key]["currentness"] == "unresolved" for key in bindings)
-            only_historical = (bindings or historical) and not has_unresolved
+            certified = {key: record["passages"][key]["current_as_of"] for key in bindings
+                         if record["passages"][key]["currentness"] == "current_as_of"}
+            only_historical = (bindings or historical) and not (has_unresolved or certified)
             cells[area + "." + capability] = {
-                "status": "currentness_unresolved" if has_unresolved else "historical_only" if only_historical else "reference_only" if refs or leads else "not_yet_supported",
+                "status": "currentness_unresolved" if has_unresolved else "dated_passage_available" if certified else "historical_only" if only_historical else "reference_only" if refs or leads else "not_yet_supported",
+                "certified_passages_as_of": certified,
                 "historical_granules": historical,
                 "passage_selectors": bindings,
-                "source_ids": refs, "citation_leads": leads, "currentness": "historical" if only_historical else "currentness_unresolved",
+                "source_ids": refs, "citation_leads": leads, "currentness": "historical" if only_historical else "current_as_of" if certified and not has_unresolved else "currentness_unresolved",
             }
     if "fault_allocation" in record:
         cells["substantive.fault_allocation"]["allocation"] = record["fault_allocation"]
@@ -170,6 +178,7 @@ def summary():
     counts = Counter()
     by_status = Counter()
     endpoints = set()
+    version_status = Counter(historical=len(federal_granules()))
     for scope, owner in registry().items():
         row = coverage(scope)
         counts[owner.kind] += 1
@@ -180,8 +189,13 @@ def summary():
         counts["action_shells"] += len(row["action_shells"])
         counts["form_records"] += len(row["forms"])
         counts["retained_state_and_territorial_passages"] += len(row["passages"])
+        version_status.update(p["currentness"] for p in row["passages"].values())
         counts["small_claims_source_entries"] += sum(s["category"] == "small_claims" for s in row["sources"].values())
         counts["coverage_cells"] += len(row["cells"])
         by_status.update(v["status"] for v in row["cells"].values())
     return {"jurisdictions": len(registry()), **counts, "unique_directory_endpoints": len(endpoints),
+            "retained_authority_evidence": {"total": sum(version_status.values()),
+                                            "publisher_verified_as_of": version_status["current_as_of"],
+                                            "historical": version_status["historical"],
+                                            "currentness_unresolved": version_status["unresolved"]},
             "coverage_statuses": dict(by_status), "execution": "disabled"}

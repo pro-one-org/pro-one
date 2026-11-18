@@ -45,7 +45,9 @@ def gaps(scope):
 def review_queue(scope):
     return [{"jurisdiction": scope, "citation": item["citation"], "source_id": item["source_id"],
              "currentness": item["currentness"], "captured_at": item["retrieved_at"],
-             "reason": "effective_period_and_subsequent_changes_require_review"}
+             "current_as_of": item.get("current_as_of"),
+             "reason": ("later_currentness_requires_review" if item["currentness"] == "current_as_of"
+                        else "effective_period_and_subsequent_changes_require_review")}
             for item in manifest(scope).get("passages", {}).values()]
 
 

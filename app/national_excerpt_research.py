@@ -18,6 +18,8 @@ SUBJECTS = {
     "fault": ("torts", "fault_allocation"),
     "deposit": ("landlord_tenant", "security_deposit"),
     "wageLaw": ("employment", "wage_payment"),
+    "wage_enforcement": ("employment", "wage_enforcement"),
+    "negligence_duty": ("torts", "negligence_duty"),
     "consumerLaw": ("consumer", "unfair_practices"),
     "consumer_private_action": ("consumer", "private_action"),
     "debtLaw": ("consumer_debt", "debt_collection"),
@@ -38,15 +40,18 @@ class RetainedLegislativeResearch:
     def search(self, matter, limit=6):
         self.documents.clear()
         scope = NAME_SCOPES.get((matter.state or "").casefold())
+        status = "current_as_of" if matter.authority_status == "current" else matter.authority_status
         if (matter.country != "US" or not scope or registry()[scope].kind != matter.sovereign
-                or matter.authority_status != "unresolved" or matter.authority_as_of):
+                or status not in {"historical", "unresolved", "current_as_of"}
+                or bool(matter.authority_as_of) != (status == "current_as_of")):
             return []
         record = manifest(scope)
         for selector, row in record.get("passages", {}).items():
             source_row = record["sources"][row["source_id"]]
             area, topic = SUBJECTS.get(source_row["category"], (None, None))
             kind = row["authority_type"]
-            if (area != matter.legal_area or topic not in matter.topics or row["currentness"] != "unresolved"
+            if (area != matter.legal_area or topic not in matter.topics or row["currentness"] != status
+                    or row.get("current_as_of") != matter.authority_as_of
                     or matter.agency or (matter.court and matter.court != row.get("court"))
                     or matter.authority_types and kind not in matter.authority_types):
                 continue
@@ -65,6 +70,8 @@ class RetainedLegislativeResearch:
             for passage in passages:
                 passage["verification"]["retrieved_on"] = row["retrieved_at"][:10]
                 passage["limitations"].extend(v.limitations)
+                if v.current_as_of:
+                    passage["limitations"].append("Publisher certification applies as of " + v.current_as_of.isoformat() + ".")
             self.documents[source["id"]] = AuthorityDocument(source, tuple(passages), v.text)
             if len(self.documents) >= limit:
                 break

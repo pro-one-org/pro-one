@@ -234,6 +234,78 @@
       "locator": "Wis. Stat. § 100.18",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-WI:contract_formation:7412e5b21a00": {
+      "category": "contract_formation",
+      "title": "Wis. Stat. § 402.204(1)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/402/ii/204",
+      "locator": "Wis. Stat. § 402.204(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:33:50.203744+00:00",
+        "sha256": "a5589c1a94f177267b2571515e52ace51cbb505fcb7120304d6a824fbddba4e1"
+      }
+    },
+    "US-WI:wage_enforcement:6449d10a3cb0": {
+      "category": "wage_enforcement",
+      "title": "Wis. Stat. § 109.03(5)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/109/03",
+      "locator": "Wis. Stat. § 109.03(5)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:34:37.296261+00:00",
+        "sha256": "cddec0e25ef779c1551e00cc20a02223dc40b618fdcecc25266675305ab89cbe"
+      }
+    },
+    "US-WI:deposit:f0cca8769b8b": {
+      "category": "deposit",
+      "title": "Wis. Stat. § 704.28(3)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/704/28",
+      "locator": "Wis. Stat. § 704.28(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:34:37.385063+00:00",
+        "sha256": "99e104e115d6ab1e9807a6e702c2a1e9ef2286a89256a4bdbaa7c620349b3eaa"
+      }
+    },
+    "US-WI:debtLaw:32c0a96bc26e": {
+      "category": "debtLaw",
+      "title": "Wis. Stat. § 427.104(2)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/427/104",
+      "locator": "Wis. Stat. § 427.104(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:34:36.512731+00:00",
+        "sha256": "dc47d4fdf7bf2b2f3b6e1549ffc5d3d2af2aeca851926490a36d0fa0db394846"
+      }
+    },
+    "US-WI:response:116890ab0f48": {
+      "category": "response",
+      "title": "Wis. Stat. § 802.06(1)(a)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/802/06",
+      "locator": "Wis. Stat. § 802.06(1)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:34:38.347396+00:00",
+        "sha256": "bfa72105507646181e88714e930eb442527023f848e06155ad15a55c72ddbc65"
+      }
+    },
+    "US-WI:fault:4541084e4c55": {
+      "category": "fault",
+      "title": "Wis. Stat. § 895.045(1)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/895/i/045",
+      "locator": "Wis. Stat. § 895.045(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:36:53.408345+00:00",
+        "sha256": "4b6e83e7f0c00276c3fd02fa4e9140085989e4c85d47feeaac93e54e75625b83"
+      }
     }
   },
   "court_directory": [
@@ -317,5 +389,98 @@
       "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "718302f502fd75f6926f5628a762f4": {
+      "source_id": "US-WI:contract_formation:7412e5b21a00",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 402.204(1)",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "a5589c1a94f177267b2571515e52ace51cbb505fcb7120304d6a824fbddba4e1",
+      "retrieved_at": "2026-11-18T15:33:50.203744+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "publisher_path": "/statutes/statutes/402/ii/204/1",
+      "current_as_of": "2026-11-04",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "49a78bb6b0def4e1859c0574147fca": {
+      "source_id": "US-WI:wage_enforcement:6449d10a3cb0",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 109.03(5)",
+      "text": "Except as provided in sub. (1), no employer may by special contract with employees or by any other means secure exemption from this section. Each employee shall have a right of action against any employer for the full amount of the employee’s wages due on each regular pay day as provided in this section and for increased wages as provided in s. 109.11 (2), in any court of competent jurisdiction. An employee may bring an action against an employer under this subsection without first filing a wage claim with the department under s. 109.09 (1). An employee who brings an action against an employer under this subsection shall have a lien upon all property of the employer, real or personal, located in this state as described in s. 109.09 (2).",
+      "text_sha256": "df8c2e229608cac079ce1365ed3cbab6feb241afb676ddad10347907a1dd0efa",
+      "publisher_sha256": "cddec0e25ef779c1551e00cc20a02223dc40b618fdcecc25266675305ab89cbe",
+      "retrieved_at": "2026-11-18T15:34:37.296261+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "publisher_path": "/statutes/statutes/109/03/5",
+      "current_as_of": "2026-11-04",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "2e3193920c7860f770070a4cbdbfec": {
+      "source_id": "US-WI:deposit:f0cca8769b8b",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 704.28(3)",
+      "text": "This section does not authorize a landlord to withhold any amount from a security deposit for normal wear and tear, or for other damages or losses for which the tenant cannot reasonably be held responsible under applicable law.",
+      "text_sha256": "8af87331954c442821698ef894b00c138cc6194040fe579cac59d85952206355",
+      "publisher_sha256": "99e104e115d6ab1e9807a6e702c2a1e9ef2286a89256a4bdbaa7c620349b3eaa",
+      "retrieved_at": "2026-11-18T15:34:37.385063+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "publisher_path": "/statutes/statutes/704/28/3",
+      "current_as_of": "2026-11-04",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "50ea054a6fb99b4798c5d591e1b8a6": {
+      "source_id": "US-WI:debtLaw:32c0a96bc26e",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 427.104(2)",
+      "text": "If a debt collector is not otherwise in violation of sub. (1) (j) with respect to a consumer credit transaction with a debtor, it is not a violation of this section to send a billing statement or other notice of account to, or to collect the amount due on the account from, the spouse of that debtor, if notice to the debtor’s spouse is provided under s. 766.56.",
+      "text_sha256": "51ef80d4cc3a907fa3dd9f9b47ce06579355da9ae2f1ad8ab4c7191de578d8a2",
+      "publisher_sha256": "dc47d4fdf7bf2b2f3b6e1549ffc5d3d2af2aeca851926490a36d0fa0db394846",
+      "retrieved_at": "2026-11-18T15:34:36.512731+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "publisher_path": "/statutes/statutes/427/104/2",
+      "current_as_of": "2026-11-04",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "e17b66bcb9e22832e2f6d62d6a0f63": {
+      "source_id": "US-WI:response:116890ab0f48",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 802.06(1)(a)",
+      "text": "Except when a court dismisses an action or special proceeding under s. 802.05 (4), a defendant shall serve an answer within 20 days after the service of the complaint upon the defendant. If a guardian ad litem is appointed for a defendant, the guardian ad litem shall have 20 days after appointment to serve the answer. A party served with a pleading stating a cross claim against the party shall serve an answer thereto within 20 days after the service upon the party. The plaintiff shall serve a reply to a counterclaim in the answer within 20 days after service of the answer. The state or an agency of the state or an officer, employee, or agent of the state shall serve an answer to the complaint or to a cross claim or a reply to a counterclaim within 45 days after service of the pleading in which the claim is asserted. If any pleading is ordered by the court, it shall be served within 20 days after service of the order, unless the order otherwise directs. If a defendant in the action is an insurance company, or if any cause of action raised in the original pleading, cross claim, or counterclaim is founded in tort, the periods of time to serve a reply or answer shall be 45 days. The service of a motion permitted under sub. (2) alters these periods of time as follows, unless a different time is fixed by order of the court: if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within 10 days after notice of the court’s action; or if the court grants a motion for a more definite statement, the responsive pleading shall be served within 10 days after the service of the more definite statement.",
+      "text_sha256": "14e5c6984c3ae050faac9448d14321e28c2d72c5bdc6f32e03ba2e5f3c44bda8",
+      "publisher_sha256": "bfa72105507646181e88714e930eb442527023f848e06155ad15a55c72ddbc65",
+      "retrieved_at": "2026-11-18T15:34:38.347396+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "publisher_path": "/statutes/statutes/802/06/1/a",
+      "current_as_of": "2026-11-04",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "cffe4e72856f9d68bf3c27d6b7b2ff": {
+      "source_id": "US-WI:fault:4541084e4c55",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 895.045(1)",
+      "text": "Contributory negligence does not bar recovery in an action by any person or the person’s legal representative to recover damages for negligence resulting in death or in injury to person or property, if that negligence was not greater than the negligence of the person against whom recovery is sought, but any damages allowed shall be diminished in the proportion to the amount of negligence attributed to the person recovering. The negligence of the plaintiff shall be measured separately against the negligence of each person found to be causally negligent. The liability of each person found to be causally negligent whose percentage of causal negligence is less than 51 percent is limited to the percentage of the total causal negligence attributed to that person. A person found to be causally negligent whose percentage of causal negligence is 51 percent or more shall be jointly and severally liable for the damages allowed.",
+      "text_sha256": "86f7a2c4b4786b03452c4e5dc046404fb9031087175ddad0501424974135834c",
+      "publisher_sha256": "4b6e83e7f0c00276c3fd02fa4e9140085989e4c85d47feeaac93e54e75625b83",
+      "retrieved_at": "2026-11-18T15:36:53.408345+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "publisher_path": "/statutes/statutes/895/i/045/1",
+      "current_as_of": "2026-11-04",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    }
+  },
+  "fault_allocation": {
+    "regime": "other_state_specific",
+    "source_id": "US-WI:fault:4541084e4c55",
+    "passage_selector": "cffe4e72856f9d68bf3c27d6b7b2ff",
+    "currentness": "current_as_of",
+    "qualification": "Subsection (1) compares causal negligence separately against each person. Subsections (2) and (3) address separate circumstances."
+  }
 }

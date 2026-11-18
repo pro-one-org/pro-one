@@ -3,6 +3,7 @@ from datetime import date
 from urllib.parse import urlsplit
 
 from app.jurisdictions import registry
+from app.national_certifications import certified_basis
 from app.national_corpus import AuthorityVersion, CorpusError, Observation, Source, fingerprint
 from app.national_coverage import manifest
 
@@ -39,7 +40,7 @@ class LegislativeExcerpts:
         except KeyError:
             raise CorpusError("unsupported_authority") from None
         if (not source["url"].startswith("https://") or row["authority_type"] != self.source.authority_type
-                or row["currentness"] not in {"unresolved", "historical"}):
+                or row["currentness"] not in {"unresolved", "historical", "current_as_of"}):
             raise CorpusError("invalid_legislative_publication")
         return row, source
 
@@ -57,6 +58,8 @@ class LegislativeExcerpts:
         owner = registry()[self.jurisdiction]
         retrieved = date.fromisoformat(row["retrieved_at"][:10])
         publisher = urlsplit(source["url"]).hostname
+        day, basis = (certified_basis(owner.id, source["url"], row["publisher_sha256"], row["publisher_path"], citation, row["text"])
+                      if row["currentness"] == "current_as_of" else (None, None))
         version = AuthorityVersion(
             jurisdiction=owner.id, sovereign=owner.kind, authority_type=self.source.authority_type,
             identity_namespace="legislative_publication" if self.source.authority_type == "statute" else "judicial_publication",
@@ -65,6 +68,7 @@ class LegislativeExcerpts:
             edition=row.get("edition", f"publisher capture {retrieved.isoformat()}"),
             text=row["text"], legislature=publisher if self.source.authority_type == "statute" else None,
             court=row.get("court"), currentness=row["currentness"],
+            current_as_of=day, currentness_basis=basis,
             limitations=("Bounded excerpt. Classification, exceptions, later amendments and application require review.",),
         )
         yield Observation(version, selector, f"{citation}; original publisher SHA-256 {row['publisher_sha256']}",

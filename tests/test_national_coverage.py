@@ -21,6 +21,16 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_certified_statute_requires_matching_date_and_jurisdiction(self):
+        query = ResearchMatter(country="US", state="Wisconsin", legal_area="contracts",
+                               topics=["contract_formation"], authority_types=["statute"],
+                               authority_status="current", authority_as_of="2026-11-04")
+        provider = RetainedLegislativeResearch()
+        key, = provider.search(query)
+        self.assertEqual(provider.fetch(key).source["corpus_provenance"]["current_as_of"], "2026-11-04")
+        for change in ({"authority_as_of": "2026-11-05"}, {"authority_as_of": None}, {"state": "Montana"}):
+            self.assertEqual(provider.search(query.model_copy(update=change)), [])
+
     def test_formation_sources_preserve_local_subject_and_edition(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Arizona", legal_area="contracts",
@@ -76,7 +86,12 @@ class NationalCoverageTests(unittest.TestCase):
             with self.subTest(source=provider.source.name, selector=selector):
                 observation, = provider.normalize(selector, raw)
                 self.assertIn(observation.version.jurisdiction, provider.source.jurisdictions)
-                self.assertIn(observation.version.currentness, {"unresolved", "historical"})
+                if observation.version.currentness == "current_as_of":
+                    self.assertEqual(observation.version.jurisdiction, "US-WI")
+                    self.assertEqual(observation.version.current_as_of, date(2026, 11, 4))
+                    self.assertIn("Published and certified", observation.version.currentness_basis)
+                else:
+                    self.assertIn(observation.version.currentness, {"unresolved", "historical"})
                 self.assertEqual(observation.version.authority_type, provider.source.authority_type)
                 with self.assertRaises(CorpusError):
                     list(provider.normalize(selector, raw + b" This is now current law."))

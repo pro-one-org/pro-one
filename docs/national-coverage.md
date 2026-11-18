@@ -22,6 +22,8 @@ Court directories may include historic court structures. The `edition` and `curr
 
 ## Reproduce the evidence
 
+The status report counts retained authority separately from matrix cells. For six Wisconsin statutory excerpts, offline validation reads the exact compressed publisher HTML, verifies its SHA-256 digest, and matches the excerpt and statutory citation inside the publisher's subsection. The publisher certified that edition as of November 4, 2026. A dated passage can support research on that date. The broader capability still requires its own legal, procedural and local review.
+
 ```sh
 python scripts/national_coverage.py validate
 python scripts/national_coverage.py build .local/coverage.sqlite3

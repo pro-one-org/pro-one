@@ -111,11 +111,11 @@ class GeneralLegalResearchService:
         query = matter.model_copy(update={"goal": "", "user_posture": None, "document_type": None})
         fetch_gap = "An authority provider was unavailable or returned changed evidence; research may be incomplete."
         providers = self.providers[:4]
-        if self.include_national_excerpts and not capability and matter.authority_status == "unresolved":
+        if self.include_national_excerpts and not capability:
             from app.national_excerpt_research import RetainedLegislativeResearch
             providers = [*providers, RetainedLegislativeResearch()]
         for provider in providers:
-            if matter.authority_status != "unresolved" and provider.name != "normalized_corpus":
+            if matter.authority_status != "unresolved" and provider.name not in {"normalized_corpus", "retained_legislative_authority"}:
                 continue
             if matter.sovereign in {"district", "territory"} and provider.name not in {"normalized_corpus", "retained_legislative_authority"}:
                 continue

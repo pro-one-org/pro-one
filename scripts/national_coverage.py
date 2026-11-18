@@ -30,7 +30,8 @@ def benchmark():
             for provider, selector, raw, _ in retained_observations():
                 observation, = provider.normalize(selector, raw)
                 v = observation.version
-                queries.append(CorpusQuery(v.jurisdiction, v.authority_type, citation=v.citation, currentness=v.currentness))
+                queries.append(CorpusQuery(v.jurisdiction, v.authority_type, citation=v.citation,
+                                           currentness=v.currentness, as_of=v.current_as_of))
             scopes = tuple(registry())
             def lookup(i):
                 return db.search(queries[i % len(queries)])
