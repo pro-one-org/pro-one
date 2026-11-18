@@ -267,6 +267,18 @@
       "locator": "Mass. Gen. Laws ch. 93A",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-MA:consumerLaw:ad30ed6b77ad": {
+      "category": "consumerLaw",
+      "title": "Mass. Gen. Laws ch. 93A, § 2(a)",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXV/Chapter93A/Section2",
+      "locator": "Mass. Gen. Laws ch. 93A, § 2(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:54.301867+00:00",
+        "sha256": "0b1803584382163cebc024e43348dbbe0ae653ac35e78d96fd185439809d3a82"
+      }
     }
   },
   "court_directory": [
@@ -429,6 +441,17 @@
       "publisher_sha256": "122c50b90f52c60a5979acf3b10682155f117dbea98cc4ae92ba6b9e30fa3c92",
       "retrieved_at": "2026-11-17T20:50:34.378546+00:00",
       "currentness": "unresolved"
+    },
+    "00a4ade654b2ddc2dee312f9f8b45e": {
+      "source_id": "US-MA:consumerLaw:ad30ed6b77ad",
+      "authority_type": "statute",
+      "citation": "Mass. Gen. Laws ch. 93A, § 2(a)",
+      "text": "Section 2. (a) Unfair methods of competition and unfair or deceptive acts or practices in the conduct of any trade or commerce are hereby declared unlawful.",
+      "text_sha256": "5257c6715ce31c9f2dcec7be30f63a2962ba972054856be0bcf1684ebe372ec5",
+      "publisher_sha256": "0b1803584382163cebc024e43348dbbe0ae653ac35e78d96fd185439809d3a82",
+      "retrieved_at": "2026-11-17T21:03:54.301867+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

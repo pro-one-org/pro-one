@@ -190,6 +190,18 @@
       "locator": "Ohio Rev. Code § 1345.01 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-OH:consumerLaw:bd52e6614fad": {
+      "category": "consumerLaw",
+      "title": "Ohio Rev. Code § 1345.02(A)",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-1345.02",
+      "locator": "Ohio Rev. Code § 1345.02(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:57.062986+00:00",
+        "sha256": "ef80fc6c16729687f67d27e84694c78156b58a09e3f4aae3dd39d44e217ea6d7"
+      }
     }
   },
   "court_directory": [
@@ -324,6 +336,17 @@
       "publisher_sha256": "0f85da8d28741f8cd614e7c742398973da7299ae4d7c8d98810c01c8152f037c",
       "retrieved_at": "2026-11-17T20:50:35.338278+00:00",
       "currentness": "unresolved"
+    },
+    "9af84e5480da080a36a49107028651": {
+      "source_id": "US-OH:consumerLaw:bd52e6614fad",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 1345.02(A)",
+      "text": "(A) No supplier shall commit an unfair or deceptive act or practice in connection with a consumer transaction. Such an unfair or deceptive act or practice by a supplier violates this section whether it occurs before, during, or after the transaction.",
+      "text_sha256": "d45a8d122b9148bf99771b57b8cc28a157fe2eaa261daacf86a1955801128fb2",
+      "publisher_sha256": "ef80fc6c16729687f67d27e84694c78156b58a09e3f4aae3dd39d44e217ea6d7",
+      "retrieved_at": "2026-11-17T21:03:57.062986+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

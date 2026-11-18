@@ -218,6 +218,18 @@
       "locator": "Haw. Rev. Stat. § 480-1 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-HI:consumerLaw:8c81e1f5234e": {
+      "category": "consumerLaw",
+      "title": "Haw. Rev. Stat. § 480-2(a)",
+      "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol11_Ch0476-0490/HRS0480/HRS_0480-0002.htm",
+      "locator": "Haw. Rev. Stat. § 480-2(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:51.931418+00:00",
+        "sha256": "f8b20c527cf15825b8d76914cb164885098c7ce58cbfc59dc4615b1d05681542"
+      }
     }
   },
   "court_directory": [
@@ -319,6 +331,17 @@
       "publisher_sha256": "d7c666e6b2af18266d46f5f72234074d3d7c9f7ebf9883cc9320bf58673e75ee",
       "retrieved_at": "2026-11-17T20:50:33.257382+00:00",
       "currentness": "unresolved"
+    },
+    "9dd525d196fd7a0df048b884940cf3": {
+      "source_id": "US-HI:consumerLaw:8c81e1f5234e",
+      "authority_type": "statute",
+      "citation": "Haw. Rev. Stat. § 480-2(a)",
+      "text": "(a) Unfair methods of competition and unfair or deceptive acts or practices in the conduct of any trade or commerce are unlawful.",
+      "text_sha256": "0139439c2738294f644cea3fdbf1e07ebc3808bf83e8dfed6bf98986c662b3aa",
+      "publisher_sha256": "f8b20c527cf15825b8d76914cb164885098c7ce58cbfc59dc4615b1d05681542",
+      "retrieved_at": "2026-11-17T21:03:51.931418+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

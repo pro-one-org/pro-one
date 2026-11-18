@@ -19,6 +19,7 @@ SUBJECTS = {
     "deposit": ("landlord_tenant", "security_deposit"),
     "wageLaw": ("employment", "wage_payment"),
     "consumerLaw": ("consumer", "unfair_practices"),
+    "consumer_private_action": ("consumer", "private_action"),
     "debtLaw": ("consumer_debt", "debt_collection"),
     "commencement": ("civil_procedure", "commencement"),
 }

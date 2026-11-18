@@ -225,6 +225,18 @@
       "locator": "RCW 19.86",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-WA:consumerLaw:0981a560a957": {
+      "category": "consumerLaw",
+      "title": "RCW 19.86.020",
+      "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=19.86.020",
+      "locator": "RCW 19.86.020",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:59.310590+00:00",
+        "sha256": "7d7587823d483a9d211ad59b477a0becf19bea30d35f72b6a5fba488159ebbd1"
+      }
     }
   },
   "court_directory": [
@@ -362,6 +374,17 @@
       "publisher_sha256": "9f5dadec64a3eed7319b66cd911969a56427efb014c74495cb87957925eeb6d4",
       "retrieved_at": "2026-11-17T20:50:36.900981+00:00",
       "currentness": "unresolved"
+    },
+    "c818bab7d9c22ef7022c3cf145bf85": {
+      "source_id": "US-WA:consumerLaw:0981a560a957",
+      "authority_type": "statute",
+      "citation": "RCW 19.86.020",
+      "text": "Unfair methods of competition and unfair or deceptive acts or practices in the conduct of any trade or commerce are hereby declared unlawful.",
+      "text_sha256": "d9724ec8ba7d7cbd951b81c03cce7fab764c296b26eb16baf60e626e6fbce7ab",
+      "publisher_sha256": "7d7587823d483a9d211ad59b477a0becf19bea30d35f72b6a5fba488159ebbd1",
+      "retrieved_at": "2026-11-17T21:03:59.310590+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

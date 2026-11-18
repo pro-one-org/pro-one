@@ -239,6 +239,18 @@
       "locator": "Conn. Gen. Stat. § 42-110a et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-CT:consumerLaw:b833f7dbb849": {
+      "category": "consumerLaw",
+      "title": "Conn. Gen. Stat. § 42-110b(a)",
+      "url": "https://www.cga.ct.gov/current/pub/chap_735a.htm",
+      "locator": "Conn. Gen. Stat. § 42-110b(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:51.350640+00:00",
+        "sha256": "670245dbbeca6b25d41fb16906546308e7c5a214c6a67ccde76c28deca00c796"
+      }
     }
   },
   "court_directory": [
@@ -329,6 +341,17 @@
       "retrieved_at": "2026-11-17T20:50:32.783493+00:00",
       "currentness": "historical",
       "edition": "2025 publication"
+    },
+    "619dbd2c06c8fe77c7a5464d9e7420": {
+      "source_id": "US-CT:consumerLaw:b833f7dbb849",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 42-110b(a)",
+      "text": "(a) No person shall engage in unfair methods of competition and unfair or deceptive acts or practices in the conduct of any trade or commerce.",
+      "text_sha256": "3927ad5a3cde297117ea097f498687c657a949d6d41a9bb935e2443fba4440dc",
+      "publisher_sha256": "670245dbbeca6b25d41fb16906546308e7c5a214c6a67ccde76c28deca00c796",
+      "retrieved_at": "2026-11-17T21:03:51.350640+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

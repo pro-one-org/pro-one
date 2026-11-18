@@ -204,6 +204,18 @@
       "locator": "S.D. Codified Laws ch. 37-24",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-SD:consumerLaw:3b1c48ede3cc": {
+      "category": "consumerLaw",
+      "title": "SDCL § 37-24-6(1)",
+      "url": "https://sdlegislature.gov/api/Statutes/37-24-6.html",
+      "locator": "SDCL § 37-24-6(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:58.195016+00:00",
+        "sha256": "248d548adff9bf5d7d4fa655064387bc289d1b016cb568b30e2f19419cff744b"
+      }
     }
   },
   "court_directory": [
@@ -301,6 +313,17 @@
       "publisher_sha256": "5f0a68ddcfc8698c508e97cd689838ba45e831a28924a7d5f1f2f3548c0d209c",
       "retrieved_at": "2026-11-17T20:50:35.759839+00:00",
       "currentness": "unresolved"
+    },
+    "23a580a8751dabe367650c11307dc6": {
+      "source_id": "US-SD:consumerLaw:3b1c48ede3cc",
+      "authority_type": "statute",
+      "citation": "SDCL § 37-24-6(1)",
+      "text": "It is a deceptive act or practice for any person to: (1) Knowingly act, use, or employ any deceptive act or practice, fraud, false pretense, false promises, or misrepresentation or to conceal, suppress, or omit any material fact in connection with the sale or advertisement of any merchandise or the solicitation of contributions for charitable purposes, regardless of whether any person has in fact been misled, deceived, or damaged thereby;",
+      "text_sha256": "f1258b52f1677e311412ebc5e2a0afa2ce2a1e57ff793dd8abee3e55c9e67a7b",
+      "publisher_sha256": "248d548adff9bf5d7d4fa655064387bc289d1b016cb568b30e2f19419cff744b",
+      "retrieved_at": "2026-11-17T21:03:58.195016+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

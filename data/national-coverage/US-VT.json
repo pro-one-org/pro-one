@@ -197,6 +197,18 @@
       "locator": "9 V.S.A. § 2451 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-VT:consumerLaw:512d2fa5571a": {
+      "category": "consumerLaw",
+      "title": "9 V.S.A. § 2453(a)",
+      "url": "https://legislature.vermont.gov/statutes/section/09/063/02453",
+      "locator": "9 V.S.A. § 2453(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:58.568863+00:00",
+        "sha256": "4a8f7bb70c77d8bc001fa479e705523f42399d42448c4260eed92bdce781e80c"
+      }
     }
   },
   "court_directory": [
@@ -328,6 +340,17 @@
       "publisher_sha256": "a19f9377154e38284412d3bf95cefccdae573963968e7e0d5c76c2e5ec5333e5",
       "retrieved_at": "2026-11-17T20:50:36.870958+00:00",
       "currentness": "unresolved"
+    },
+    "67f98f5cd249f69210305cbdbde9ce": {
+      "source_id": "US-VT:consumerLaw:512d2fa5571a",
+      "authority_type": "statute",
+      "citation": "9 V.S.A. § 2453(a)",
+      "text": "(a) Unfair methods of competition in commerce and unfair or deceptive acts or practices in commerce are hereby declared unlawful.",
+      "text_sha256": "5ce4cdc5cf6971b1ad3dbc83315353961d9d7819d6050ef21f1acfae1c8a5493",
+      "publisher_sha256": "4a8f7bb70c77d8bc001fa479e705523f42399d42448c4260eed92bdce781e80c",
+      "retrieved_at": "2026-11-17T21:03:58.568863+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

@@ -199,6 +199,18 @@
       "locator": "N.H. Rev. Stat. § 358-A",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-NH:consumerLaw:8a7726970759": {
+      "category": "consumerLaw",
+      "title": "N.H. RSA 358-A:2 (opening provision)",
+      "url": "https://gc.nh.gov/rsa/html/XXXI/358-A/358-A-2.htm",
+      "locator": "N.H. RSA 358-A:2 (opening provision)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:56.706339+00:00",
+        "sha256": "1c822d1ca51f3599428b159c63fcb93ac9fab36cfccc0e9b6d3c8dcc1220762e"
+      }
     }
   },
   "court_directory": [
@@ -329,6 +341,17 @@
       "retrieved_at": "2026-11-17T19:41:55.155449+00:00",
       "language": "en",
       "currentness": "unresolved"
+    },
+    "0662d502a128551aa4f5221724383b": {
+      "source_id": "US-NH:consumerLaw:8a7726970759",
+      "authority_type": "statute",
+      "citation": "N.H. RSA 358-A:2 (opening provision)",
+      "text": "It shall be unlawful for any person to use any unfair method of competition or any unfair or deceptive act or practice in the conduct of any trade or commerce within this state.",
+      "text_sha256": "43c836136fe435f66642da5b91a9324a57e5aacfbc7d4b551a20a3563084861b",
+      "publisher_sha256": "1c822d1ca51f3599428b159c63fcb93ac9fab36cfccc0e9b6d3c8dcc1220762e",
+      "retrieved_at": "2026-11-17T21:03:56.706339+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

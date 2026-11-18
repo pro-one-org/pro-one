@@ -204,6 +204,18 @@
       "locator": "Kan. Stat. Ann. § 50-623 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-KS:consumerLaw:d201776113c1": {
+      "category": "consumerLaw",
+      "title": "Kan. Stat. Ann. § 50-626(a)",
+      "url": "https://www.ksrevisor.gov/statutes/chapters/ch50/050_006_0026.html",
+      "locator": "Kan. Stat. Ann. § 50-626(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:53.528899+00:00",
+        "sha256": "2da2ef1327726beb5983c1c03d7422baeee0469bfbe1a811db307bdb87c7de76"
+      }
     }
   },
   "court_directory": [
@@ -287,6 +299,17 @@
       "publisher_sha256": "0c876cf92bdd8eab5cab10f182d85eaf80ae5b2c7fb26f58b8854344bd0dd5b1",
       "retrieved_at": "2026-11-17T20:50:34.573766+00:00",
       "currentness": "unresolved"
+    },
+    "2d9f212447a6acef5540d8205f4025": {
+      "source_id": "US-KS:consumerLaw:d201776113c1",
+      "authority_type": "statute",
+      "citation": "Kan. Stat. Ann. § 50-626(a)",
+      "text": "(a) No supplier shall engage in any deceptive act or practice in connection with a consumer transaction.",
+      "text_sha256": "cb30a01769ec9628e4a6cfb27e0a96a404159f0764d0083134fa8d846f4917ea",
+      "publisher_sha256": "2da2ef1327726beb5983c1c03d7422baeee0469bfbe1a811db307bdb87c7de76",
+      "retrieved_at": "2026-11-17T21:03:53.528899+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

@@ -234,6 +234,18 @@
       "locator": "N.C. Gen. Stat. § 75-1.1 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-NC:consumerLaw:d0a50d9c9ccc": {
+      "category": "consumerLaw",
+      "title": "N.C. Gen. Stat. § 75-1.1",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_75/GS_75-1.1.html",
+      "locator": "N.C. Gen. Stat. § 75-1.1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:56.927503+00:00",
+        "sha256": "3e596dc1eef68d15611f1882dfb3488586573195cedffa66576e15ad78b4e568"
+      }
     }
   },
   "court_directory": [
@@ -341,6 +353,17 @@
       "retrieved_at": "2026-11-17T19:34:00.010753+00:00",
       "language": "en",
       "currentness": "unresolved"
+    },
+    "283907fcd1d39a8d9241e013ca2405": {
+      "source_id": "US-NC:consumerLaw:d0a50d9c9ccc",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 75-1.1",
+      "text": "(a) Unfair methods of competition in or affecting commerce, and unfair or deceptive acts or practices in or affecting commerce, are declared unlawful.",
+      "text_sha256": "d8185a8b42742993498c7695250fb00a14c68837980f7fee1d03af7b490d53ad",
+      "publisher_sha256": "3e596dc1eef68d15611f1882dfb3488586573195cedffa66576e15ad78b4e568",
+      "retrieved_at": "2026-11-17T21:03:56.927503+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   }
 }
