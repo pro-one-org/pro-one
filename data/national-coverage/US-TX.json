@@ -358,6 +358,18 @@
         "retrieved_at": "2026-11-17T21:03:50.594134+00:00",
         "sha256": "884e293055350901b242356073665b86b875edc77ca8534369009acf90c7762f"
       }
+    },
+    "US-TX:contract_formation:19f18af64b2d": {
+      "category": "contract_formation",
+      "title": "Tex. Bus. & Com. Code § 2.204",
+      "url": "https://tcss.legis.texas.gov/resources/BC/pdf/BC.2.pdf",
+      "locator": "Tex. Bus. & Com. Code § 2.204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:39.879882+00:00",
+        "sha256": "a3afca2ca685f9c18edc631babf27140e321fe3460a73cffd97497a1dba2c1f3"
+      }
     }
   },
   "court_directory": [
@@ -533,6 +545,17 @@
       "text_sha256": "4dbc6dd73e344326317680380731ce375d920e4c996cca295353be00076a63ad",
       "publisher_sha256": "884e293055350901b242356073665b86b875edc77ca8534369009acf90c7762f",
       "retrieved_at": "2026-11-17T21:03:50.594134+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "965abeaf08d264b282ed0eec2d2d0a": {
+      "source_id": "US-TX:contract_formation:19f18af64b2d",
+      "authority_type": "statute",
+      "citation": "Tex. Bus. & Com. Code § 2.204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "a3afca2ca685f9c18edc631babf27140e321fe3460a73cffd97497a1dba2c1f3",
+      "retrieved_at": "2026-11-18T15:14:39.879882+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

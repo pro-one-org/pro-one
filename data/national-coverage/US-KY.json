@@ -190,6 +190,18 @@
       "locator": "Ky. Rev. Stat. § 367.110 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-KY:contract_formation:01ee0cab779f": {
+      "category": "contract_formation",
+      "title": "KRS 355.2-204",
+      "url": "https://apps.legislature.ky.gov/law/Statutes/statute.aspx?id=33254",
+      "locator": "KRS 355.2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:25.998152+00:00",
+        "sha256": "4845f69ec235b9daa638740eff2df7608a40040f551219aca80a9ea4e4355217"
+      }
     }
   },
   "court_directory": [
@@ -312,6 +324,17 @@
       "publisher_sha256": "9939ea05212a4dc743c070477e3f19fe087ede19ca29de40169e02697e653f1d",
       "retrieved_at": "2026-11-17T20:50:33.594435+00:00",
       "currentness": "unresolved"
+    },
+    "190a081a2d4a67755f13947cef8cbc": {
+      "source_id": "US-KY:contract_formation:01ee0cab779f",
+      "authority_type": "statute",
+      "citation": "KRS 355.2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "4845f69ec235b9daa638740eff2df7608a40040f551219aca80a9ea4e4355217",
+      "retrieved_at": "2026-11-18T15:14:25.998152+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

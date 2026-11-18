@@ -211,6 +211,42 @@
       "locator": "W. Va. Code § 46A-6-101 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-WV:contract_formation:97df05fecf64": {
+      "category": "contract_formation",
+      "title": "W. Va. Code § 46-2-204",
+      "url": "https://code.wvlegislature.gov/46-2-204/",
+      "locator": "W. Va. Code § 46-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:37.587210+00:00",
+        "sha256": "af8328e6be699d394ba63e6f2572f54ef7d58a7392c48d26cea9a4b89ef43c15"
+      }
+    },
+    "US-WV:response:11a9ac6b5629": {
+      "category": "response",
+      "title": "W. Va. R. Civ. P. 12(a)(1)(A)",
+      "url": "https://www.courtswv.gov/sites/default/pubfilesmnt/2025-01/West%20Virginia%20Rules%20of%20Civil%20Procedure.pdf",
+      "locator": "W. Va. R. Civ. P. 12(a)(1)(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:14:22.334501+00:00",
+        "sha256": "0ee05eb2712a88f1e98eba5414a7d1c8bb0612b4b95d77b5222a39fb9dfb64dd"
+      }
+    },
+    "US-WV:service:968c26417455": {
+      "category": "service",
+      "title": "W. Va. R. Civ. P. 4(c)(1)",
+      "url": "https://www.courtswv.gov/sites/default/pubfilesmnt/2025-01/West%20Virginia%20Rules%20of%20Civil%20Procedure.pdf",
+      "locator": "W. Va. R. Civ. P. 4(c)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:14:22.334501+00:00",
+        "sha256": "0ee05eb2712a88f1e98eba5414a7d1c8bb0612b4b95d77b5222a39fb9dfb64dd"
+      }
     }
   },
   "court_directory": [
@@ -338,6 +374,39 @@
       "publisher_sha256": "0c5f40e58aab8c276572d96adacce22ed309e75c4d0c00302fe12e4cbb629c03",
       "retrieved_at": "2026-11-17T20:50:39.471656+00:00",
       "currentness": "unresolved"
+    },
+    "f47b8a50b8363786d0cb22d0fffb47": {
+      "source_id": "US-WV:contract_formation:97df05fecf64",
+      "authority_type": "statute",
+      "citation": "W. Va. Code § 46-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "af8328e6be699d394ba63e6f2572f54ef7d58a7392c48d26cea9a4b89ef43c15",
+      "retrieved_at": "2026-11-18T15:14:37.587210+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "584c773fcf0566e171c14687ae5739": {
+      "source_id": "US-WV:response:11a9ac6b5629",
+      "authority_type": "court_rule",
+      "citation": "W. Va. R. Civ. P. 12(a)(1)(A)",
+      "text": "(1) In general. Unless another time is specified by this rule or a statute, the time for serving a responsive pleading is as follows: (A) A defendant shall serve an answer within 30 days after being served with the summons and complaint. Every answer shall be accompanied by a completed civil case information statement in the form prescribed by the Supreme Court of Appeals as required by Rule 3(b).",
+      "text_sha256": "6a52f3eed6f983e8dff9579e1db249c748418a2f335c0a122454be85b5ee27fd",
+      "publisher_sha256": "0ee05eb2712a88f1e98eba5414a7d1c8bb0612b4b95d77b5222a39fb9dfb64dd",
+      "retrieved_at": "2026-11-17T20:14:22.334501+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "7adaef092e1f0fc6489d56afb30851": {
+      "source_id": "US-WV:service:968c26417455",
+      "authority_type": "court_rule",
+      "citation": "W. Va. R. Civ. P. 4(c)(1)",
+      "text": "(c) Service. (1) In general . A summons shall be served with a copy of the complaint. The plaintiff is responsible for having the summons and complaint served within the time allowed by Rule 4(i) and shall furnish the necessary copies to the person who makes service.",
+      "text_sha256": "0954ebeba3b97680ec3713b814b49ebdb390de8629588438eb2ba41230d3ca03",
+      "publisher_sha256": "0ee05eb2712a88f1e98eba5414a7d1c8bb0612b4b95d77b5222a39fb9dfb64dd",
+      "retrieved_at": "2026-11-17T20:14:22.334501+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

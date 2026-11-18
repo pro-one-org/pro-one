@@ -211,6 +211,18 @@
       "locator": "Neb. Rev. Stat. § 59-1601 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-NE:contract_formation:dd2920f6fe1a": {
+      "category": "contract_formation",
+      "title": "Neb. U.C.C. § 2-204",
+      "url": "https://www.nebraskalegislature.gov/laws/ucc.php?code=2-204",
+      "locator": "Neb. U.C.C. § 2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:31.580089+00:00",
+        "sha256": "a9400b3a95f3e7926f4ce91b97373dd3d4eb29b77c2d59fc1bd6553c8b42fa1a"
+      }
     }
   },
   "court_directory": [
@@ -328,6 +340,17 @@
       "publisher_sha256": "ab80e7e5f93bf4b3c007903ea43bb44bed91923e6bce3b13a7869955f137d918",
       "retrieved_at": "2026-11-17T20:50:34.865618+00:00",
       "currentness": "unresolved"
+    },
+    "a23cd0469b4aafeab0fccd6183c288": {
+      "source_id": "US-NE:contract_formation:dd2920f6fe1a",
+      "authority_type": "statute",
+      "citation": "Neb. U.C.C. § 2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "a9400b3a95f3e7926f4ce91b97373dd3d4eb29b77c2d59fc1bd6553c8b42fa1a",
+      "retrieved_at": "2026-11-18T15:14:31.580089+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

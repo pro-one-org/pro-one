@@ -253,6 +253,18 @@
       "locator": "Fla. Stat. § 501.201 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-FL:contract_formation:f496f1f81c03": {
+      "category": "contract_formation",
+      "title": "Fla. Stat. § 672.204",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699%2F0672%2FSections%2F0672.204.html",
+      "locator": "Fla. Stat. § 672.204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:25.507098+00:00",
+        "sha256": "18c51189c1b2a23bc7603bf94c78f167b70285c6928a893efcc25f3ee940894e"
+      }
     }
   },
   "court_directory": [
@@ -372,6 +384,17 @@
       "publisher_sha256": "af7c149bf511152e462914eac4d4b0f4545ff60a724e5dc1bb2be08b235f18b5",
       "retrieved_at": "2026-11-17T20:50:32.798686+00:00",
       "currentness": "unresolved"
+    },
+    "4b454d786f7aa94a29ceda6f5abe0d": {
+      "source_id": "US-FL:contract_formation:f496f1f81c03",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 672.204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "18c51189c1b2a23bc7603bf94c78f167b70285c6928a893efcc25f3ee940894e",
+      "retrieved_at": "2026-11-18T15:14:25.507098+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

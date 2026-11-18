@@ -288,6 +288,18 @@
       "locator": "AS 45.50.471 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-AK:contract_formation:b3efcb7df114": {
+      "category": "contract_formation",
+      "title": "AS 45.02.204",
+      "url": "https://www.akleg.gov/statutesPDF/Title-45.pdf",
+      "locator": "AS 45.02.204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:38.100170+00:00",
+        "sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb"
+      }
     }
   },
   "court_directory": [
@@ -357,6 +369,17 @@
       "publisher_sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f",
       "retrieved_at": "2026-11-17T20:50:32.390483+00:00",
       "currentness": "unresolved"
+    },
+    "7ed6b84dafbee3c41038337e7a2e0e": {
+      "source_id": "US-AK:contract_formation:b3efcb7df114",
+      "authority_type": "statute",
+      "citation": "AS 45.02.204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties that recognizes the existence of the contract.",
+      "text_sha256": "db3e1e80f2c25d4ddc606cd23764cddcc8bf21b5ee3d4064212a56d630d6ce9d",
+      "publisher_sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb",
+      "retrieved_at": "2026-11-18T15:14:38.100170+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

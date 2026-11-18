@@ -216,6 +216,18 @@
         "retrieved_at": "2026-11-17T21:03:50.904224+00:00",
         "sha256": "2bf047a9791fc59d85e509342889ca58b1b066fa1d0c558c90f0dc27ed2d033a"
       }
+    },
+    "US-AZ:contract_formation:889e61772e35": {
+      "category": "contract_formation",
+      "title": "A.R.S. § 47-2204",
+      "url": "https://www.azleg.gov/ars/47/02204.htm",
+      "locator": "A.R.S. § 47-2204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:25.178656+00:00",
+        "sha256": "0ebd3d6fa5e54707700dce8e9c8ed8712d80fc676837501e9d1e2d7461a9cdf8"
+      }
     }
   },
   "court_directory": [
@@ -355,6 +367,17 @@
       "text_sha256": "a6e5b8e69029ce24e0291649806077b01ae88e81e6ed3aacfe55c7b5a9a0116b",
       "publisher_sha256": "2bf047a9791fc59d85e509342889ca58b1b066fa1d0c558c90f0dc27ed2d033a",
       "retrieved_at": "2026-11-17T21:03:50.904224+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "528952cc4adda409c01afa28049a37": {
+      "source_id": "US-AZ:contract_formation:889e61772e35",
+      "authority_type": "statute",
+      "citation": "A.R.S. § 47-2204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "0ebd3d6fa5e54707700dce8e9c8ed8712d80fc676837501e9d1e2d7461a9cdf8",
+      "retrieved_at": "2026-11-18T15:14:25.178656+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

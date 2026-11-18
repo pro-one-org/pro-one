@@ -213,6 +213,18 @@
       "locator": "Md. Code, Com. Law § 13-101 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-MD:contract_formation:72c673554849": {
+      "category": "contract_formation",
+      "title": "Md. Code, Commercial Law § 2-204",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&enactments=false&section=2-204",
+      "locator": "Md. Code, Commercial Law § 2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:27.306699+00:00",
+        "sha256": "ec357550d15410089f4ac896e3dfc74ada191f709797db2c6d69aba0aed25246"
+      }
     }
   },
   "court_directory": [
@@ -321,6 +333,17 @@
       "retrieved_at": "2026-11-17T19:42:03.930259+00:00",
       "language": "en",
       "currentness": "unresolved"
+    },
+    "3ae3282c7c494c0799d118be5b8b10": {
+      "source_id": "US-MD:contract_formation:72c673554849",
+      "authority_type": "statute",
+      "citation": "Md. Code, Commercial Law § 2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "ec357550d15410089f4ac896e3dfc74ada191f709797db2c6d69aba0aed25246",
+      "retrieved_at": "2026-11-18T15:14:27.306699+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   }
 }

@@ -213,6 +213,18 @@
       "locator": "Colo. Rev. Stat. § 6-1-101 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-CO:contract_formation:083fd29499e7": {
+      "category": "contract_formation",
+      "title": "Colo. Rev. Stat. § 4-2-204",
+      "url": "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2014-title-04.pdf",
+      "locator": "Colo. Rev. Stat. § 4-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:29.669421+00:00",
+        "sha256": "d4d69c6e2b319313e667492927a6740914f47de5a53c5722e9185c02a879102b"
+      }
     }
   },
   "court_directory": [
@@ -322,5 +334,19 @@
       "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "3efd815bc50192716814db97c87fd1": {
+      "source_id": "US-CO:contract_formation:083fd29499e7",
+      "authority_type": "statute",
+      "citation": "Colo. Rev. Stat. § 4-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "d4d69c6e2b319313e667492927a6740914f47de5a53c5722e9185c02a879102b",
+      "retrieved_at": "2026-11-18T15:14:29.669421+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2014 codification"
+    }
+  }
 }

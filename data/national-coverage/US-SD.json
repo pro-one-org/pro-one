@@ -216,6 +216,18 @@
         "retrieved_at": "2026-11-17T21:03:58.195016+00:00",
         "sha256": "248d548adff9bf5d7d4fa655064387bc289d1b016cb568b30e2f19419cff744b"
       }
+    },
+    "US-SD:contract_formation:b2ded3d83c29": {
+      "category": "contract_formation",
+      "title": "SDCL § 57A-2-204",
+      "url": "https://sdlegislature.gov/api/Statutes/57A-2-204.html",
+      "locator": "SDCL § 57A-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:39.153130+00:00",
+        "sha256": "9ca05fee83959506eed195f86b960aa8b0062d3f6393f8bce400b2291d6f6551"
+      }
     }
   },
   "court_directory": [
@@ -322,6 +334,17 @@
       "text_sha256": "f1258b52f1677e311412ebc5e2a0afa2ce2a1e57ff793dd8abee3e55c9e67a7b",
       "publisher_sha256": "248d548adff9bf5d7d4fa655064387bc289d1b016cb568b30e2f19419cff744b",
       "retrieved_at": "2026-11-17T21:03:58.195016+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "e434b967c7585d000423589a02c2b8": {
+      "source_id": "US-SD:contract_formation:b2ded3d83c29",
+      "authority_type": "statute",
+      "citation": "SDCL § 57A-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "9ca05fee83959506eed195f86b960aa8b0062d3f6393f8bce400b2291d6f6551",
+      "retrieved_at": "2026-11-18T15:14:39.153130+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

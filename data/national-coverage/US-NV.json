@@ -260,6 +260,42 @@
       "locator": "Nev. Rev. Stat. § 598.0903 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-NV:contract_formation:6166364556d7": {
+      "category": "contract_formation",
+      "title": "NRS 104.2204",
+      "url": "https://www.leg.state.nv.us/Nrs/NRS-104.html",
+      "locator": "NRS 104.2204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:31.059769+00:00",
+        "sha256": "1b54fb3a52b86d9034cb0b2ab53fa05cce7bd18f4aec38a4716477c0c25a4898"
+      }
+    },
+    "US-NV:response:61312e40369c": {
+      "category": "response",
+      "title": "Nev. R. Civ. P. 12(a)(1)(A)",
+      "url": "https://www.leg.state.nv.us/courtrules/nrcp.html",
+      "locator": "Nev. R. Civ. P. 12(a)(1)(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:14:25.244018+00:00",
+        "sha256": "99812c5ef90fa83a0b5ded17bb4f1649316b2e1c3cc48c9e91eaca63e2479065"
+      }
+    },
+    "US-NV:service:724318dad321": {
+      "category": "service",
+      "title": "Nev. R. Civ. P. 4(c)(2)–(3)",
+      "url": "https://www.leg.state.nv.us/courtrules/nrcp.html",
+      "locator": "Nev. R. Civ. P. 4(c)(2)–(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:14:25.244018+00:00",
+        "sha256": "99812c5ef90fa83a0b5ded17bb4f1649316b2e1c3cc48c9e91eaca63e2479065"
+      }
     }
   },
   "court_directory": [
@@ -350,6 +386,39 @@
       "publisher_sha256": "2f43bf05571a5c9df32060cd6419ae18e4b82ee277a6c8d404699140989ab786",
       "retrieved_at": "2026-11-17T20:50:35.281890+00:00",
       "currentness": "unresolved"
+    },
+    "e71c1b3e2bee5dbbc3daac3e9d714b": {
+      "source_id": "US-NV:contract_formation:6166364556d7",
+      "authority_type": "statute",
+      "citation": "NRS 104.2204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "1b54fb3a52b86d9034cb0b2ab53fa05cce7bd18f4aec38a4716477c0c25a4898",
+      "retrieved_at": "2026-11-18T15:14:31.059769+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "c73e9fdb8417c650b23c8d9be76acb": {
+      "source_id": "US-NV:response:61312e40369c",
+      "authority_type": "court_rule",
+      "citation": "Nev. R. Civ. P. 12(a)(1)(A)",
+      "text": "(1) In General. Unless another time is specified by Rule 4.2(c)(3)(E), this rule, or a statute, the time for serving a responsive pleading is as follows: (A) A defendant must serve an answer: (i) within 21 days after being served with the summons and complaint; or (ii) if the defendant has timely waived service under Rule 4.1, within 60 days after the request for a waiver was sent, or within 90 days after the request for a waiver was sent to the defendant outside of the United States.",
+      "text_sha256": "d94a81dc38b408015cec07669b42c2378e1c8a012f8beb9379f25c07b463d05b",
+      "publisher_sha256": "99812c5ef90fa83a0b5ded17bb4f1649316b2e1c3cc48c9e91eaca63e2479065",
+      "retrieved_at": "2026-11-17T20:14:25.244018+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "d7eb6372e1a1eeff32f9f2023c410f": {
+      "source_id": "US-NV:service:724318dad321",
+      "authority_type": "court_rule",
+      "citation": "Nev. R. Civ. P. 4(c)(2)–(3)",
+      "text": "(2) Service With a Copy of the Complaint. A summons must be served with a copy of the complaint. The plaintiff must furnish the necessary copies to the person who makes service. (3) By Whom. The summons and complaint may be served by the sheriff, or a deputy sheriff, of the county where the defendant is found or by any person who is at least 18 years old and not a party to the action.",
+      "text_sha256": "36308ab9a42da69f8bf53631a9f8f712ae3b3593cb0ae0703022424fb3005f5b",
+      "publisher_sha256": "99812c5ef90fa83a0b5ded17bb4f1649316b2e1c3cc48c9e91eaca63e2479065",
+      "retrieved_at": "2026-11-17T20:14:25.244018+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

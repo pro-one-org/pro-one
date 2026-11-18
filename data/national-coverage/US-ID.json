@@ -239,6 +239,18 @@
       "locator": "Idaho Code § 48-601 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-ID:contract_formation:de1cc66ebe56": {
+      "category": "contract_formation",
+      "title": "Idaho Code § 28-2-204",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title28/T28CH2/SECT28-2-204/",
+      "locator": "Idaho Code § 28-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:39.421965+00:00",
+        "sha256": "51d82e0854f64ff8fa693e380e3cea23738ce38a2983765c283a9ae3cc51ecb4"
+      }
     }
   },
   "court_directory": [
@@ -344,6 +356,17 @@
       "publisher_sha256": "7c2d94e86c2eb09ae62376af79dc66b220199fc55a12f79230ce58a457e6b92e",
       "retrieved_at": "2026-11-17T20:50:40.987973+00:00",
       "currentness": "unresolved"
+    },
+    "5b8917404e4cc9f1959332170ddb98": {
+      "source_id": "US-ID:contract_formation:de1cc66ebe56",
+      "authority_type": "statute",
+      "citation": "Idaho Code § 28-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "51d82e0854f64ff8fa693e380e3cea23738ce38a2983765c283a9ae3cc51ecb4",
+      "retrieved_at": "2026-11-18T15:14:39.421965+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

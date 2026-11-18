@@ -22,6 +22,9 @@ SUBJECTS = {
     "consumer_private_action": ("consumer", "private_action"),
     "debtLaw": ("consumer_debt", "debt_collection"),
     "commencement": ("civil_procedure", "commencement"),
+    "service": ("civil_procedure", "service_of_process"),
+    "response": ("civil_procedure", "initial_response"),
+    "contract_formation": ("contracts", "contract_formation"),
 }
 
 

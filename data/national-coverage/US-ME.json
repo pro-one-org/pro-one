@@ -227,6 +227,18 @@
       "locator": "5 M.R.S. § 205-A et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-ME:contract_formation:1bb204676004": {
+      "category": "contract_formation",
+      "title": "11 M.R.S. § 2-204",
+      "url": "https://legislature.maine.gov/legis/statutes/11/title11sec2-204.html",
+      "locator": "11 M.R.S. § 2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:30.513400+00:00",
+        "sha256": "e5d73c3838e8a27d7b696658b29ba4b6b3af39389f308af21893a2ad88631048"
+      }
     }
   },
   "court_directory": [
@@ -362,6 +374,17 @@
       "publisher_sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0",
       "retrieved_at": "2026-11-17T20:14:17.739999+00:00",
       "currentness": "unresolved"
+    },
+    "65b5e2e295710401d0a24a9f6ff697": {
+      "source_id": "US-ME:contract_formation:1bb204676004",
+      "authority_type": "statute",
+      "citation": "11 M.R.S. § 2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "e5d73c3838e8a27d7b696658b29ba4b6b3af39389f308af21893a2ad88631048",
+      "retrieved_at": "2026-11-18T15:14:30.513400+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

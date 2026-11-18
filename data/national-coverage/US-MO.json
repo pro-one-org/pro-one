@@ -185,6 +185,18 @@
       "locator": "Mo. Rev. Stat. § 407.010 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-MO:contract_formation:5307caee0e92": {
+      "category": "contract_formation",
+      "title": "Mo. Rev. Stat. § 400.2-204",
+      "url": "https://www.revisor.mo.gov/main/OneSection.aspx?section=400.2-204",
+      "locator": "Mo. Rev. Stat. § 400.2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:32.001787+00:00",
+        "sha256": "91dfb8004d81844ee492c0f55edf67352d4a3bb6e9ec8b298fd5c6ed6fc9016e"
+      }
     }
   },
   "court_directory": [
@@ -262,5 +274,18 @@
       "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "f95aed47bb291123a4f8ffb1668897": {
+      "source_id": "US-MO:contract_formation:5307caee0e92",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 400.2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "91dfb8004d81844ee492c0f55edf67352d4a3bb6e9ec8b298fd5c6ed6fc9016e",
+      "retrieved_at": "2026-11-18T15:14:32.001787+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    }
+  }
 }

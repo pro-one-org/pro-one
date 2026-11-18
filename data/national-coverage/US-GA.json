@@ -197,6 +197,18 @@
       "locator": "O.C.G.A. § 10-1-390 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-GA:contract_formation:b8903af49e39": {
+      "category": "contract_formation",
+      "title": "O.C.G.A. § 11-2-204",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t11-%28v9%29-2022-pdf.pdf",
+      "locator": "O.C.G.A. § 11-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:31.286212+00:00",
+        "sha256": "ad397fccbf21994357afda463fca395efe9ecdb8c1a50948888b771f8b4c5695"
+      }
     }
   },
   "court_directory": [
@@ -331,6 +343,18 @@
       "retrieved_at": "2026-11-17T20:50:34.067833+00:00",
       "currentness": "historical",
       "edition": "2025 Supplement"
+    },
+    "344ab9322beddc6378993233d86a75": {
+      "source_id": "US-GA:contract_formation:b8903af49e39",
+      "authority_type": "statute",
+      "citation": "O.C.G.A. § 11-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "ad397fccbf21994357afda463fca395efe9ecdb8c1a50948888b771f8b4c5695",
+      "retrieved_at": "2026-11-18T15:14:31.286212+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2022 publication"
     }
   },
   "fault_allocation": {

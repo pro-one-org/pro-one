@@ -202,6 +202,18 @@
         "retrieved_at": "2026-11-17T21:03:57.062986+00:00",
         "sha256": "ef80fc6c16729687f67d27e84694c78156b58a09e3f4aae3dd39d44e217ea6d7"
       }
+    },
+    "US-OH:contract_formation:6f277ed6e1ed": {
+      "category": "contract_formation",
+      "title": "Ohio Rev. Code § 1302.07",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-1302.07",
+      "locator": "Ohio Rev. Code § 1302.07",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:31.872172+00:00",
+        "sha256": "ad5d5dc933793afd8730a309da72bb0bcf3ad6ec98eaf52d762324c328f5a985"
+      }
     }
   },
   "court_directory": [
@@ -345,6 +357,17 @@
       "text_sha256": "d45a8d122b9148bf99771b57b8cc28a157fe2eaa261daacf86a1955801128fb2",
       "publisher_sha256": "ef80fc6c16729687f67d27e84694c78156b58a09e3f4aae3dd39d44e217ea6d7",
       "retrieved_at": "2026-11-17T21:03:57.062986+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "fa2a4fb13a43b57a7b9b63992161f6": {
+      "source_id": "US-OH:contract_formation:6f277ed6e1ed",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 1302.07",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "ad5d5dc933793afd8730a309da72bb0bcf3ad6ec98eaf52d762324c328f5a985",
+      "retrieved_at": "2026-11-18T15:14:31.872172+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

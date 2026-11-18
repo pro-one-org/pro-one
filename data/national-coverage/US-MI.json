@@ -239,6 +239,18 @@
       "locator": "Mich. Comp. Laws § 445.901 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-MI:contract_formation:c1b21d01207e": {
+      "category": "contract_formation",
+      "title": "MCL 440.2204",
+      "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=MCL-440-2204",
+      "locator": "MCL 440.2204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:30.680893+00:00",
+        "sha256": "59f422b20dfafc63ad1c3001fd6a06094f6821a4f6c3a1d6a90ba7b5a586cc03"
+      }
     }
   },
   "court_directory": [
@@ -368,6 +380,17 @@
       "publisher_sha256": "625275719fd54e903431b8200c2c207ac1f88f17e5ab11d4a6458e561559f3dd",
       "retrieved_at": "2026-11-17T20:50:34.950001+00:00",
       "currentness": "unresolved"
+    },
+    "cdff071aebe2a8aef05b74ec8bf429": {
+      "source_id": "US-MI:contract_formation:c1b21d01207e",
+      "authority_type": "statute",
+      "citation": "MCL 440.2204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "59f422b20dfafc63ad1c3001fd6a06094f6821a4f6c3a1d6a90ba7b5a586cc03",
+      "retrieved_at": "2026-11-18T15:14:30.680893+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

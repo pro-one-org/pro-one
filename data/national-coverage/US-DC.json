@@ -143,6 +143,18 @@
       "locator": "D.C. Code § 28-3901 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-DC:contract_formation:044a3d72274f": {
+      "category": "contract_formation",
+      "title": "D.C. Code § 28:2-204",
+      "url": "https://code.dccouncil.gov/us/dc/council/code/sections/28%3A2-204",
+      "locator": "D.C. Code § 28:2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:25.062867+00:00",
+        "sha256": "226e46cacc3e95a3b4d71fae5047a48a1f4c2bbc6d0db43f782fac56974c5398"
+      }
     }
   },
   "court_directory": [
@@ -206,6 +218,17 @@
       "retrieved_at": "2026-11-17T19:33:55.408074+00:00",
       "language": "en",
       "currentness": "unresolved"
+    },
+    "a52f0dad760688481a82a96cd7be3a": {
+      "source_id": "US-DC:contract_formation:044a3d72274f",
+      "authority_type": "statute",
+      "citation": "D.C. Code § 28:2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "226e46cacc3e95a3b4d71fae5047a48a1f4c2bbc6d0db43f782fac56974c5398",
+      "retrieved_at": "2026-11-18T15:14:25.062867+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   }
 }

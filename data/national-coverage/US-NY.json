@@ -197,6 +197,18 @@
       "locator": "N.Y. Gen. Bus. Law § 349 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-NY:contract_formation:fa8a1cfeb8d9": {
+      "category": "contract_formation",
+      "title": "N.Y. U.C.C. § 2-204",
+      "url": "https://www.nysenate.gov/legislation/laws/UCC/2-204",
+      "locator": "N.Y. U.C.C. § 2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:31.473014+00:00",
+        "sha256": "032f9a123f8b35b617534fa8aeecdd2845ffdba3abfec6f1991ae26b1ec93610"
+      }
     }
   },
   "court_directory": [
@@ -350,6 +362,17 @@
       "publisher_sha256": "8e22857d706801cf6bdbcf8bdb3340ab2ed61845c63febd4b7f89715eed8834e",
       "retrieved_at": "2026-11-17T20:50:35.153837+00:00",
       "currentness": "unresolved"
+    },
+    "f8bd4c9e7a2f3fb5040aa03f09290b": {
+      "source_id": "US-NY:contract_formation:fa8a1cfeb8d9",
+      "authority_type": "statute",
+      "citation": "N.Y. U.C.C. § 2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "032f9a123f8b35b617534fa8aeecdd2845ffdba3abfec6f1991ae26b1ec93610",
+      "retrieved_at": "2026-11-18T15:14:31.473014+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

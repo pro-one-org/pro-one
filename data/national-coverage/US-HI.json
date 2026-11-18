@@ -230,6 +230,18 @@
         "retrieved_at": "2026-11-17T21:03:51.931418+00:00",
         "sha256": "f8b20c527cf15825b8d76914cb164885098c7ce58cbfc59dc4615b1d05681542"
       }
+    },
+    "US-HI:contract_formation:7584497236b2": {
+      "category": "contract_formation",
+      "title": "Haw. Rev. Stat. § 490:2-204",
+      "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol11_Ch0476-0490/HRS0490/HRS_0490-0002-0204.htm",
+      "locator": "Haw. Rev. Stat. § 490:2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:38.712693+00:00",
+        "sha256": "c3e25312213992e9c14db0e8600dba2fe84b77351bace8f304221ad4f614e785"
+      }
     }
   },
   "court_directory": [
@@ -340,6 +352,17 @@
       "text_sha256": "0139439c2738294f644cea3fdbf1e07ebc3808bf83e8dfed6bf98986c662b3aa",
       "publisher_sha256": "f8b20c527cf15825b8d76914cb164885098c7ce58cbfc59dc4615b1d05681542",
       "retrieved_at": "2026-11-17T21:03:51.931418+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "456012dda871ccfee76d5c9d91842d": {
+      "source_id": "US-HI:contract_formation:7584497236b2",
+      "authority_type": "statute",
+      "citation": "Haw. Rev. Stat. § 490:2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "c3e25312213992e9c14db0e8600dba2fe84b77351bace8f304221ad4f614e785",
+      "retrieved_at": "2026-11-18T15:14:38.712693+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

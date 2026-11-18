@@ -274,6 +274,18 @@
       "locator": "Iowa Code ch. 714H (private actions); § 714.16 (AG)",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-IA:contract_formation:50f4964511a8": {
+      "category": "contract_formation",
+      "title": "Iowa Code § 554.2204",
+      "url": "https://www.legis.iowa.gov/docs/code/2025/554.html",
+      "locator": "Iowa Code § 554.2204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:37.322821+00:00",
+        "sha256": "fb0e626421a62ffcc6a4f51f7965c34bc3d0535fbb09f5643dc3273cb5bc78b9"
+      }
     }
   },
   "court_directory": [
@@ -349,6 +361,18 @@
       "publisher_sha256": "80828e7f7cd84a4ebc8f4716490387326e8c17d01eb784a4cf9238d5c2cc98a4",
       "retrieved_at": "2026-11-17T20:50:33.379562+00:00",
       "currentness": "unresolved"
+    },
+    "419a82cf73423ee71512bb94d6df57": {
+      "source_id": "US-IA:contract_formation:50f4964511a8",
+      "authority_type": "statute",
+      "citation": "Iowa Code § 554.2204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "fb0e626421a62ffcc6a4f51f7965c34bc3d0535fbb09f5643dc3273cb5bc78b9",
+      "retrieved_at": "2026-11-18T15:14:37.322821+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 codification"
     }
   },
   "fault_allocation": {

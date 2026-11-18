@@ -211,6 +211,18 @@
         "retrieved_at": "2026-11-17T21:03:56.706339+00:00",
         "sha256": "1c822d1ca51f3599428b159c63fcb93ac9fab36cfccc0e9b6d3c8dcc1220762e"
       }
+    },
+    "US-NH:contract_formation:e090f3108580": {
+      "category": "contract_formation",
+      "title": "N.H. RSA 382-A:2-204",
+      "url": "https://gc.nh.gov/rsa/html/XXXIV-A/382-A/382-A-2-204.htm",
+      "locator": "N.H. RSA 382-A:2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:31.254360+00:00",
+        "sha256": "fb345fd66147b50af12bfbe5d0ce75cea9a1e6d7072f27311b56edc63d96f497"
+      }
     }
   },
   "court_directory": [
@@ -350,6 +362,17 @@
       "text_sha256": "43c836136fe435f66642da5b91a9324a57e5aacfbc7d4b551a20a3563084861b",
       "publisher_sha256": "1c822d1ca51f3599428b159c63fcb93ac9fab36cfccc0e9b6d3c8dcc1220762e",
       "retrieved_at": "2026-11-17T21:03:56.706339+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "25b2af66f3d426df2cf75d2d2cf585": {
+      "source_id": "US-NH:contract_formation:e090f3108580",
+      "authority_type": "statute",
+      "citation": "N.H. RSA 382-A:2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "fb345fd66147b50af12bfbe5d0ce75cea9a1e6d7072f27311b56edc63d96f497",
+      "retrieved_at": "2026-11-18T15:14:31.254360+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

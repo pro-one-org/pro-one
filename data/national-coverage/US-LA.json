@@ -230,6 +230,18 @@
         "retrieved_at": "2026-11-17T21:03:53.829987+00:00",
         "sha256": "9020060853b5b748e9017f14cbd93aaf5955e6339ea2e24dd42a693e686c265c"
       }
+    },
+    "US-LA:contract_formation:57d69a23fa6d": {
+      "category": "contract_formation",
+      "title": "La. Civ. Code art. 1927",
+      "url": "https://legis.la.gov/legis/Law.aspx?d=109174",
+      "locator": "La. Civ. Code art. 1927",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:27.724462+00:00",
+        "sha256": "acc78f03d639389cedcb6e2b7e3c8349dd046242769764f553fbd4ef71bc2c4a"
+      }
     }
   },
   "court_directory": [
@@ -386,6 +398,17 @@
       "text_sha256": "2c883392a4fe0cc0a2bfed3eaa50a1b6c2bb07fa6857c152dab268344fdceaca",
       "publisher_sha256": "9020060853b5b748e9017f14cbd93aaf5955e6339ea2e24dd42a693e686c265c",
       "retrieved_at": "2026-11-17T21:03:53.829987+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "0f80107dd478e9f52a88c17792b946": {
+      "source_id": "US-LA:contract_formation:57d69a23fa6d",
+      "authority_type": "statute",
+      "citation": "La. Civ. Code art. 1927",
+      "text": "A contract is formed by the consent of the parties established through offer and acceptance. Unless the law prescribes a certain formality for the intended contract, offer and acceptance may be made orally, in writing, or by action or inaction that under the circumstances is clearly indicative of consent. Unless otherwise specified in the offer, there need not be conformity between the manner in which the offer is made and the manner in which the acceptance is made.",
+      "text_sha256": "fbbd8d41054aaadbcee1f3bf3b88018f05679c30d500fa95cba6e5827d39a841",
+      "publisher_sha256": "acc78f03d639389cedcb6e2b7e3c8349dd046242769764f553fbd4ef71bc2c4a",
+      "retrieved_at": "2026-11-18T15:14:27.724462+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

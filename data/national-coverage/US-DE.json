@@ -239,6 +239,18 @@
       "locator": "6 Del. C. § 2511 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-DE:contract_formation:f26fe17b173d": {
+      "category": "contract_formation",
+      "title": "6 Del. C. § 2-204",
+      "url": "https://delcode.delaware.gov/title6/c002/sc02/index.html",
+      "locator": "6 Del. C. § 2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:25.110688+00:00",
+        "sha256": "4d226d238bf60cbae376a956780e989963f5dae6290fb12d0cca9a71a11c68f0"
+      }
     }
   },
   "court_directory": [
@@ -377,6 +389,17 @@
       "publisher_sha256": "fe416bed3788d1b09090d8f5423c90fcbe207652f11d300c7a09b2dfd0fc1f20",
       "retrieved_at": "2026-11-17T20:50:32.617194+00:00",
       "currentness": "unresolved"
+    },
+    "b15a6247539c0a1ed300bbd7ba14e1": {
+      "source_id": "US-DE:contract_formation:f26fe17b173d",
+      "authority_type": "statute",
+      "citation": "6 Del. C. § 2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "4d226d238bf60cbae376a956780e989963f5dae6290fb12d0cca9a71a11c68f0",
+      "retrieved_at": "2026-11-18T15:14:25.110688+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

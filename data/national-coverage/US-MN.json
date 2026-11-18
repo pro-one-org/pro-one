@@ -211,6 +211,18 @@
       "locator": "Minn. Stat. § 325F.68 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-MN:contract_formation:a5c0e9893080": {
+      "category": "contract_formation",
+      "title": "Minn. Stat. § 336.2-204",
+      "url": "https://www.revisor.mn.gov/statutes/cite/336.2-204",
+      "locator": "Minn. Stat. § 336.2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:28.823092+00:00",
+        "sha256": "e63af7035b045c77dcd825d49bfcb98f4440351fc49d80fbb2c2c0e65b0ee1bf"
+      }
     }
   },
   "court_directory": [
@@ -298,6 +310,17 @@
       "publisher_sha256": "73d48b1f4a4430c672c78770457861b8e675a126cf366727b61f81e225545457",
       "retrieved_at": "2026-11-17T20:50:34.988579+00:00",
       "currentness": "unresolved"
+    },
+    "9e7479a853c3238cc4644f5296c943": {
+      "source_id": "US-MN:contract_formation:a5c0e9893080",
+      "authority_type": "statute",
+      "citation": "Minn. Stat. § 336.2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "e63af7035b045c77dcd825d49bfcb98f4440351fc49d80fbb2c2c0e65b0ee1bf",
+      "retrieved_at": "2026-11-18T15:14:28.823092+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

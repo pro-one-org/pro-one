@@ -237,6 +237,18 @@
         "retrieved_at": "2026-11-17T21:03:59.310590+00:00",
         "sha256": "7d7587823d483a9d211ad59b477a0becf19bea30d35f72b6a5fba488159ebbd1"
       }
+    },
+    "US-WA:contract_formation:ad71feed8c8f": {
+      "category": "contract_formation",
+      "title": "RCW 62A.2-204",
+      "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=62A.2.204",
+      "locator": "RCW 62A.2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:36.135395+00:00",
+        "sha256": "287722f8d11f59485eef48301842a12ecd40e53268ff8830f645596fa2a61503"
+      }
     }
   },
   "court_directory": [
@@ -383,6 +395,17 @@
       "text_sha256": "d9724ec8ba7d7cbd951b81c03cce7fab764c296b26eb16baf60e626e6fbce7ab",
       "publisher_sha256": "7d7587823d483a9d211ad59b477a0becf19bea30d35f72b6a5fba488159ebbd1",
       "retrieved_at": "2026-11-17T21:03:59.310590+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "ee2eb98793388e17238a385756c69f": {
+      "source_id": "US-WA:contract_formation:ad71feed8c8f",
+      "authority_type": "statute",
+      "citation": "RCW 62A.2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "287722f8d11f59485eef48301842a12ecd40e53268ff8830f645596fa2a61503",
+      "retrieved_at": "2026-11-18T15:14:36.135395+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

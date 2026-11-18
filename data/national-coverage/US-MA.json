@@ -279,6 +279,18 @@
         "retrieved_at": "2026-11-17T21:03:54.301867+00:00",
         "sha256": "0b1803584382163cebc024e43348dbbe0ae653ac35e78d96fd185439809d3a82"
       }
+    },
+    "US-MA:contract_formation:6cdeff8ed71b": {
+      "category": "contract_formation",
+      "title": "Mass. Gen. Laws ch. 106, § 2-204",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXV/Chapter106/Article2/Section2-204",
+      "locator": "Mass. Gen. Laws ch. 106, § 2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:30.286769+00:00",
+        "sha256": "d39f144c8ef9789b5641379fde6a8cfe0229c05d3a1d50fa788ff33752dba819"
+      }
     }
   },
   "court_directory": [
@@ -450,6 +462,17 @@
       "text_sha256": "5257c6715ce31c9f2dcec7be30f63a2962ba972054856be0bcf1684ebe372ec5",
       "publisher_sha256": "0b1803584382163cebc024e43348dbbe0ae653ac35e78d96fd185439809d3a82",
       "retrieved_at": "2026-11-17T21:03:54.301867+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "2208e296f3ba17cf6c145a32a6842f": {
+      "source_id": "US-MA:contract_formation:6cdeff8ed71b",
+      "authority_type": "statute",
+      "citation": "Mass. Gen. Laws ch. 106, § 2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "d39f144c8ef9789b5641379fde6a8cfe0229c05d3a1d50fa788ff33752dba819",
+      "retrieved_at": "2026-11-18T15:14:30.286769+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

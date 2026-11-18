@@ -21,6 +21,18 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_formation_sources_preserve_local_subject_and_edition(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Arizona", legal_area="contracts",
+                               topics=["contract_formation"], authority_types=["statute"])
+        key, = provider.search(query)
+        self.assertIn("sale of goods", provider.fetch(key).text)
+        louisiana, = provider.search(query.model_copy(update={"state": "Louisiana"}))
+        self.assertIn("consent of the parties", provider.fetch(louisiana).text)
+        self.assertNotIn("sale of goods", provider.fetch(louisiana).text)
+        self.assertEqual(provider.search(query.model_copy(update={"topics": ["contract_breach"]})), [])
+        self.assertEqual(coverage("CO")["cells"]["contract.formation"]["status"], "historical_only")
+
     def test_health_journal_preserves_drift_and_outage_without_mutating_corpus(self):
         import sqlite3
         provider, selector, raw, _ = next(retained_observations())

@@ -274,6 +274,18 @@
         "retrieved_at": "2026-11-18T15:06:27.866203+00:00",
         "sha256": "8a5faf02c17cdb9456e004774cb91811e77f3b6c94a42cda96d20f8973900c00"
       }
+    },
+    "US-SC:contract_formation:82e2f2a00fcb": {
+      "category": "contract_formation",
+      "title": "S.C. Code § 36-2-204",
+      "url": "https://www.scstatehouse.gov/code/t36c002",
+      "locator": "S.C. Code § 36-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:32.481170+00:00",
+        "sha256": "a9dded040ef7b53901e1f121acc42e2585c097dc6d08a5596975ac923bbaf020"
+      }
     }
   },
   "court_directory": [
@@ -417,6 +429,17 @@
       "retrieved_at": "2026-11-18T15:06:27.866203+00:00",
       "language": "en",
       "currentness": "unresolved"
+    },
+    "3e9b344b00b9d44bca71ca65dbd1ca": {
+      "source_id": "US-SC:contract_formation:82e2f2a00fcb",
+      "authority_type": "statute",
+      "citation": "S.C. Code § 36-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "a9dded040ef7b53901e1f121acc42e2585c097dc6d08a5596975ac923bbaf020",
+      "retrieved_at": "2026-11-18T15:14:32.481170+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   }
 }

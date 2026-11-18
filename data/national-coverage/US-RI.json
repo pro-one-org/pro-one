@@ -260,6 +260,30 @@
       "locator": "R.I. Gen. Laws § 6-13.1-1 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-RI:contract_formation:4a9d82285f6e": {
+      "category": "contract_formation",
+      "title": "R.I. Gen. Laws § 6A-2-204",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE6A/6A-2/6A-2-204.htm",
+      "locator": "R.I. Gen. Laws § 6A-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:38.911127+00:00",
+        "sha256": "d1b056f3083a4b4b7dce6efba389a8316714f9e8a10bc1fb734dc1190af8f329"
+      }
+    },
+    "US-RI:response:35453209dcf8": {
+      "category": "response",
+      "title": "R.I. Super. R. Civ. P. 12(a)(1)",
+      "url": "https://www.courts.ri.gov/Courts/superiorcourt/Documents/SuperiorCourtRulesOfCivilProcedure.pdf",
+      "locator": "R.I. Super. R. Civ. P. 12(a)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:14:20.957417+00:00",
+        "sha256": "01dea708aa73f7816bd816f6ae5d29701b38e5b0571d8c2e1ea01e17acc700f6"
+      }
     }
   },
   "court_directory": [
@@ -447,6 +471,29 @@
       "publisher_sha256": "66e7bd2443f3d817866c1dc57de8fe1c952fb6d8f8d74b50d19830e17dd6e690",
       "retrieved_at": "2026-11-17T20:50:39.805248+00:00",
       "currentness": "unresolved"
+    },
+    "121eafb248163694056a9f675360ba": {
+      "source_id": "US-RI:contract_formation:4a9d82285f6e",
+      "authority_type": "statute",
+      "citation": "R.I. Gen. Laws § 6A-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "d1b056f3083a4b4b7dce6efba389a8316714f9e8a10bc1fb734dc1190af8f329",
+      "retrieved_at": "2026-11-18T15:14:38.911127+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "50c365bc3e0849d510aeb0b08a987f": {
+      "source_id": "US-RI:response:35453209dcf8",
+      "authority_type": "court_rule",
+      "citation": "R.I. Super. R. Civ. P. 12(a)(1)",
+      "text": "(a) When Presented. (1) A defendant shall serve an answer: (A) Within twenty (20) days after the service of the summons, complaint, Language Assistance Notice, and all other required documents upon the defendant, unless the court directs otherwise when service of process is made pursuant to an order of court. Where service upon a defendant is made by publication of an order of notice, a defendant shall serve an answer within twenty (20) days after the last publication of said order of notice, or (B) If service of the summons has been timely waived on request under Rule 4(d), within sixty (60) days after the date when the request for waiver was sent, or within ninety (90) days after that date if the defendant was addressed outside the United States.",
+      "text_sha256": "afd4ba68701c6e4e198cf867700d11bd49bbcc50b0a31713edbaa26324b49b29",
+      "publisher_sha256": "01dea708aa73f7816bd816f6ae5d29701b38e5b0571d8c2e1ea01e17acc700f6",
+      "retrieved_at": "2026-11-17T20:14:20.957417+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Rhode Island Superior Court"
     }
   },
   "fault_allocation": {

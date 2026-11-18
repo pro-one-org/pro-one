@@ -204,6 +204,30 @@
       "locator": "Utah Code § 13-11-1 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-UT:contract_formation:92d7342ac769": {
+      "category": "contract_formation",
+      "title": "Utah Code § 70A-2-204",
+      "url": "https://le.utah.gov/xcode/Title70A/Chapter2/C70A-2_1800010118000101.pdf",
+      "locator": "Utah Code § 70A-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:33.702908+00:00",
+        "sha256": "159729e5c447c8dc0de674de36674d318bb451b6859afd2be39bed6bcf606b43"
+      }
+    },
+    "US-UT:service:50fe939bd0bb": {
+      "category": "service",
+      "title": "Utah R. Civ. P. 4(d)(1) (personal service)",
+      "url": "https://legacy.utcourts.gov/rules/viewall.php?chapter=01&type=URCP",
+      "locator": "Utah R. Civ. P. 4(d)(1) (personal service)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:14:06.970687+00:00",
+        "sha256": "7cc4be87525e9869fb2c7d4b635d667aa3010723ed187050e3c0f7043a02b9b8"
+      }
     }
   },
   "court_directory": [
@@ -318,6 +342,28 @@
       "publisher_sha256": "d319d63f4c92ec50110872bf997470d21359c66f431f6580c8946e2da0b0f5c8",
       "retrieved_at": "2026-11-17T20:50:36.057708+00:00",
       "currentness": "unresolved"
+    },
+    "6977b28f113b4e78de464a00fecc1f": {
+      "source_id": "US-UT:contract_formation:92d7342ac769",
+      "authority_type": "statute",
+      "citation": "Utah Code § 70A-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "159729e5c447c8dc0de674de36674d318bb451b6859afd2be39bed6bcf606b43",
+      "retrieved_at": "2026-11-18T15:14:33.702908+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "0b96aaa65d931279b26028a62c5edc": {
+      "source_id": "US-UT:service:50fe939bd0bb",
+      "authority_type": "court_rule",
+      "citation": "Utah R. Civ. P. 4(d)(1) (personal service)",
+      "text": "(1) Personal service. The summons and complaint may be served by any person 18 years of age or older at the time of service and not a party to the action or a party's attorney. If the person to be served refuses to accept a copy of the summons and complaint, service is sufficient if the person serving them states the name of the process and offers to deliver them.",
+      "text_sha256": "83c2156d7f9102724858c96d68ef0bea7a41caa00575b074a15d3e89ef0463ed",
+      "publisher_sha256": "7cc4be87525e9869fb2c7d4b635d667aa3010723ed187050e3c0f7043a02b9b8",
+      "retrieved_at": "2026-11-17T20:14:06.970687+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

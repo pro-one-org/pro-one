@@ -255,6 +255,18 @@
       "locator": "Va. Code § 59.1-196 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-VA:contract_formation:7179ba33689a": {
+      "category": "contract_formation",
+      "title": "Va. Code § 8.2-204",
+      "url": "https://law.lis.virginia.gov/vacode/title8.2/part2/section8.2-204/",
+      "locator": "Va. Code § 8.2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:37.207378+00:00",
+        "sha256": "551614f5c386245b30c28774be485794adf3cc9078c7b293fd61a7b6526c5e92"
+      }
     }
   },
   "court_directory": [
@@ -338,5 +350,18 @@
       "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "c4dc23ad032d7f04a7b5da0e65392b": {
+      "source_id": "US-VA:contract_formation:7179ba33689a",
+      "authority_type": "statute",
+      "citation": "Va. Code § 8.2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "551614f5c386245b30c28774be485794adf3cc9078c7b293fd61a7b6526c5e92",
+      "retrieved_at": "2026-11-18T15:14:37.207378+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    }
+  }
 }
