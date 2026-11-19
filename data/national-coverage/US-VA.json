@@ -291,6 +291,18 @@
         "retrieved_at": "2026-11-19T14:11:08.091139+00:00",
         "sha256": "1a4a82c695fe43e7d99221338f042b176360c6b9db188997afd1aff2410b620b"
       }
+    },
+    "US-VA:commencement:4d33a5645999": {
+      "category": "commencement",
+      "title": "Va. Sup. Ct. R. 3:2(a)",
+      "url": "https://www.vacourts.gov/static/courts/scv/rulesofcourt.pdf",
+      "locator": "Va. Sup. Ct. R. 3:2(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:02:18.051327+00:00",
+        "sha256": "15a5095aba5043b863d2c7fb26f24c2556cad4908054874c0dff4f770af53a0f"
+      }
     }
   },
   "court_directory": [
@@ -408,6 +420,19 @@
       "retrieved_at": "2026-11-19T14:11:08.091139+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "32db39cd90ebdb890679536107439f": {
+      "source_id": "US-VA:commencement:4d33a5645999",
+      "authority_type": "court_rule",
+      "citation": "Va. Sup. Ct. R. 3:2(a)",
+      "text": "(a) Commencement. — A civil action is commenced by filing a complaint in the clerk's office. When a statute or established practice requires, a proceeding may be commenced by a pleading styled \"Petition.\" Upon filing of the pleading, the action is then instituted and pending as to all parties defendant thereto. The statutory writ tax and clerk's fees must be paid before the summons is issued.",
+      "text_sha256": "51eef50520e03d15109dcb9f3a5de0975b21084cb8ba0a2a99c5277383b5748e",
+      "publisher_sha256": "15a5095aba5043b863d2c7fb26f24c2556cad4908054874c0dff4f770af53a0f",
+      "retrieved_at": "2026-11-19T19:02:18.051327+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Virginia Circuit Court",
+      "effective_from": "2021-03-01"
     }
   }
 }

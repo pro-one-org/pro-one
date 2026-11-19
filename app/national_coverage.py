@@ -114,6 +114,14 @@ def action_shells(scope):
     by_category = defaultdict(list)
     for key, item in record["sources"].items():
         by_category[item["category"]].append(key)
+    evidence = defaultdict(list)
+    for selector, passage in record.get("passages", {}).items():
+        category = record["sources"][passage["source_id"]]["category"]
+        evidence[category].append({
+            "passage_selector": selector, "source_id": passage["source_id"],
+            "citation": passage["citation"], "court": passage.get("court"),
+            "currentness": passage["currentness"], "current_as_of": passage.get("current_as_of"),
+        })
     return [{
         "id": f"{scope[3:].lower()}_{kind}_reference", "jurisdiction": scope, "version": record["version"],
         "action_type": kind, "path": "pre_suit" if kind == "demand" else "civil_response" if kind == "answer" else "civil_initiation",
@@ -123,6 +131,7 @@ def action_shells(scope):
         "matter_requirements": ["resolved_governing_jurisdiction", "attributed_material_facts", "user_selected_path"],
         "claim_analysis": "verified_applicable_basis_required",
         "procedure_dependencies": {k: by_category[k] for k in deps},
+        "procedure_evidence": {k: evidence[k] for k in deps},
         "court_references": by_category["judiciary"], "rules_references": by_category["civil_rules"],
         "document_strategy": "reviewed_demand_basis_required" if kind == "demand" else "resolve_mandatory_form_and_local_requirements",
         "local_rules": "not_assessed" if kind == "demand" else "local_rule_required",

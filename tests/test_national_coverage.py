@@ -21,6 +21,19 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_action_references_expose_dated_authority_without_unlocking_execution(self):
+        actions = coverage("US-WI")["action_shells"]
+        complaint = next(action for action in actions if action["action_type"] == "complaint")
+        evidence, = complaint["procedure_evidence"]["commencement"]
+        self.assertEqual(evidence["citation"], "Wis. Stat. § 801.02(1)")
+        self.assertEqual(evidence["current_as_of"], "2026-11-04")
+        self.assertIn(evidence["source_id"], complaint["procedure_dependencies"]["commencement"])
+        self.assertEqual(complaint["readiness"], "blocked")
+        self.assertEqual(complaint["execution"], "disabled")
+        washington = coverage("US-WA")["action_shells"]
+        for action in washington:
+            self.assertNotIn(evidence, action["procedure_evidence"].get("commencement", ()))
+
     def test_partial_historical_fault_authority_is_separate_from_current_support(self):
         cell = coverage("US-CO")["cells"]["substantive.fault_allocation"]
         self.assertEqual(cell["coverage_depth"], "partial")

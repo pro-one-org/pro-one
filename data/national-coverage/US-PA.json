@@ -209,6 +209,18 @@
         "retrieved_at": "2026-11-19T18:57:48.976320+00:00",
         "sha256": "a46e093f7c4d708e02a3f9467300473ff898970030796c21793310f8159f6239"
       }
+    },
+    "US-PA:commencement:7aba154e4032": {
+      "category": "commencement",
+      "title": "231 Pa. Code Rule 1007",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/231/chapter1000/s1007.html",
+      "locator": "231 Pa. Code Rule 1007",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:02:16.517447+00:00",
+        "sha256": "80a147b441174e9c820f0b3193a72904329775394799ecdb207e1778e4bd0541"
+      }
     }
   },
   "court_directory": [
@@ -341,6 +353,19 @@
       "decision_date": "2020-02-19",
       "opinion_role": "majority",
       "procedural_posture": "Appeal concerning allocation in asbestos strict-liability litigation."
+    },
+    "b61af7070d51da2afde0ada0df7236": {
+      "source_id": "US-PA:commencement:7aba154e4032",
+      "authority_type": "court_rule",
+      "citation": "231 Pa. Code Rule 1007",
+      "text": "An action may be commenced by filing with the prothonotary: (1) a praecipe for a writ of summons, or (2) a complaint. Official Note For the form of the writ of summons, see Rule 1351. See Rule 205.5 governing the requirement for filing a cover sheet with the pleading commencing the action. Rule 2005(b) does not authorize the filing of a praecipe for a writ of summons if an unknown defendant is to be identified by a Doe designation.",
+      "text_sha256": "c60bea32018f4107ac2fbae2f582152401c85f5024100363877397455f4d725a",
+      "publisher_sha256": "80a147b441174e9c820f0b3193a72904329775394799ecdb207e1778e4bd0541",
+      "retrieved_at": "2026-11-19T19:02:16.517447+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Pennsylvania Court of Common Pleas",
+      "effective_from": "2019-04-01"
     }
   },
   "fault_allocation": {

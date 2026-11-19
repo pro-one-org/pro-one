@@ -261,6 +261,18 @@
         "retrieved_at": "2026-11-19T18:57:49.194584+00:00",
         "sha256": "48327080891855d7b1107a5ee94622da15904257fb16dbe412a25367f230d991"
       }
+    },
+    "US-CO:commencement:4aabeaf1f886": {
+      "category": "commencement",
+      "title": "Colo. R. Civ. P. 3(a)",
+      "url": "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2023-court-rules.pdf",
+      "locator": "Colo. R. Civ. P. 3(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:46:19.362728+00:00",
+        "sha256": "07a0129954b015ff26ed4774e5979408d05631a78fff9967ee0a56f5622347e7"
+      }
     }
   },
   "court_directory": [
@@ -427,6 +439,19 @@
       "decision_date": "2015-04-13",
       "opinion_role": "majority",
       "procedural_posture": "Certiorari review of summary judgment on negligence-related claims."
+    },
+    "d62304f00a9e7f9d5310b7e17af85d": {
+      "source_id": "US-CO:commencement:4aabeaf1f886",
+      "authority_type": "court_rule",
+      "citation": "Colo. R. Civ. P. 3(a)",
+      "text": "(a) How Commenced. A civil action is commenced (1) by filing a complaint with the court, or (2) by service of a summons and complaint. If the action is commenced by the service of a summons and complaint, the complaint must be filed within 14 days after service. If the complaint is not filed within 14 days, the service of summons shall be deemed to be ineffective and void without notice. In such case the court may, in its discretion, tax a reasonable sum in favor of the defendant to compensate the defendant for expense and inconvenience, including attorney’s fees, to be paid by the plaintiff or his attorney. The 14 day filing requirement may be expressly waived by a defendant and shall be deemed waived upon the filing of a responsive pleading or motion to the complaint without reserving the issue.",
+      "text_sha256": "f55ca8a5f93420722b3c33d495052a07f4fae5cc851a91224448f130a099b773",
+      "publisher_sha256": "07a0129954b015ff26ed4774e5979408d05631a78fff9967ee0a56f5622347e7",
+      "retrieved_at": "2026-11-18T20:46:19.362728+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2023 Colorado Rules of Civil Procedure",
+      "court": "Colorado District Court"
     }
   },
   "fault_allocation": {

@@ -240,6 +240,30 @@
         "retrieved_at": "2026-11-17T19:42:29.354013+00:00",
         "sha256": "47424fdd70965aa3c427a99b3611e02b9acf7adda330ca4cea6d4374c3f7a197"
       }
+    },
+    "US-SD:commencement:c5f84d25996a": {
+      "category": "commencement",
+      "title": "SDCL § 15-6-3",
+      "url": "https://sdlegislature.gov/api/Statutes/15-6-3.html",
+      "locator": "SDCL § 15-6-3",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:02:16.517447+00:00",
+        "sha256": "0da20a996e7fbd908d1e0cd0b0a50669bf2f8f8a733d81ee2be36bad2f34eec2"
+      }
+    },
+    "US-SD:commencement:a5bb16df1783": {
+      "category": "commencement",
+      "title": "SDCL § 15-2-30",
+      "url": "https://sdlegislature.gov/api/Statutes/15-2-30.html",
+      "locator": "SDCL § 15-2-30",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:02:16.517447+00:00",
+        "sha256": "e238dea566a03074adb3dab751d82864ecb220b43c633bc4f9a067ade6d2467f"
+      }
     }
   },
   "court_directory": [
@@ -368,6 +392,29 @@
       "text_sha256": "451e67da20403cfd04044723d25380e78edc432499c195cc4b07f2cdb314c84d",
       "publisher_sha256": "47424fdd70965aa3c427a99b3611e02b9acf7adda330ca4cea6d4374c3f7a197",
       "retrieved_at": "2026-11-17T19:42:29.354013+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "270266238e5d9c2966273016540b61": {
+      "source_id": "US-SD:commencement:c5f84d25996a",
+      "authority_type": "court_rule",
+      "citation": "SDCL § 15-6-3",
+      "text": "A civil action is commenced as provided in §§ 15-2-30 and 15-2-31.",
+      "text_sha256": "c094884193d043303f75921178017a650aa606b867b1deca0b9d1086d013da50",
+      "publisher_sha256": "0da20a996e7fbd908d1e0cd0b0a50669bf2f8f8a733d81ee2be36bad2f34eec2",
+      "retrieved_at": "2026-11-19T19:02:16.517447+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "South Dakota Circuit Court"
+    },
+    "8e7ec9f0392993fcdd4d2d9c830750": {
+      "source_id": "US-SD:commencement:a5bb16df1783",
+      "authority_type": "statute",
+      "citation": "SDCL § 15-2-30",
+      "text": "An action is commenced as to each defendant when the summons is served on him, or on a codefendant who is a joint contractor or otherwise united in interest with him.",
+      "text_sha256": "2fa000878e047a8a9ae0baf6eece622e2106f73b2433e70ca5c60df1f630500d",
+      "publisher_sha256": "e238dea566a03074adb3dab751d82864ecb220b43c633bc4f9a067ade6d2467f",
+      "retrieved_at": "2026-11-19T19:02:16.517447+00:00",
       "currentness": "unresolved",
       "language": "en"
     }
