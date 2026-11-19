@@ -21,15 +21,23 @@ class PublicationText(HTMLParser):
         self.block = []
         self.page = []
         self.citations = []
+        self.has_effective_date_note = False
 
     def handle_starttag(self, tag, attrs):
+        attributes = dict(attrs)
+        element_path = attributes.get("data-path", "")
+        note_parent = element_path.rpartition("/_")[0]
+        if (note_parent and "qsnote_note" in (attributes.get("class") or "").split()
+                and (self.path == note_parent or self.path.startswith(note_parent + "/"))
+                and attributes.get("data-section")):
+            self.has_effective_date_note = True
         if self.active_tag == tag:
             self.depth += 1
-        if dict(attrs).get("data-path") == self.path:
+        if element_path == self.path:
             self.blocks += 1
             self.active_tag = tag
             self.depth = 1
-            self.citations = json.loads(dict(attrs).get("data-cites", "[]"))
+            self.citations = json.loads(attributes.get("data-cites", "[]"))
 
     def handle_endtag(self, tag):
         if tag == self.active_tag:
@@ -56,6 +64,8 @@ def certified_basis(scope, url, digest, path, citation, quote):
     parser = PublicationText(path)
     parser.feed(raw.decode("utf-8-sig"))
     parser.close()
+    if parser.has_effective_date_note:
+        raise ValueError("certified_version_requires_effective_date_review")
     page = " ".join("".join(parser.page).split())
     certificate = re.search(
         r"2023-24 Wisconsin Statutes updated through 2025 Wis\. Act 247 and through all Supreme Court Orders "

@@ -344,6 +344,18 @@
         "retrieved_at": "2026-11-17T19:42:48.992900+00:00",
         "sha256": "665709e6a9ac2e7a860b62b2e967417122c9484f59bc0970999d190fbd788896"
       }
+    },
+    "US-NV:wageLaw:443fca0f21a8": {
+      "category": "wageLaw",
+      "title": "Nev. Rev. Stat. § 608.020",
+      "url": "https://www.leg.state.nv.us/nrs/nrs-608.html",
+      "locator": "Nev. Rev. Stat. § 608.020",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:59.756416+00:00",
+        "sha256": "f01f40be28236feb7f04086bb4215786f2f11850e2f7ece99e2800c051f886f9"
+      }
     }
   },
   "court_directory": [
@@ -514,6 +526,17 @@
       "currentness": "historical",
       "language": "en",
       "edition": "2025 Nevada Revised Statutes"
+    },
+    "488a6b8c6b36809d7ee2e7c6b151e7": {
+      "source_id": "US-NV:wageLaw:443fca0f21a8",
+      "authority_type": "statute",
+      "citation": "Nev. Rev. Stat. § 608.020",
+      "text": "1. Whenever an employer discharges an employee, the wages and compensation earned and unpaid at the time of such discharge shall become due and payable immediately. 2. Whenever an employer places an employee on a nonworking status, the wages earned and unpaid at the time the employee is placed on nonworking status are due and payable immediately. 3. As used in this section, “nonworking status” means the temporary layoff of an employee by the employer whereby the employee remains employed and may be called back to work by the employer at a future date. The term does not include an employee who an employer: (a) Places on suspension pending an investigation relating to employment; (b) Places on suspension pursuant to a disciplinary action relating to employment; (c) Places on-call for available work; or (d) Approves to take a leave of absence.",
+      "text_sha256": "e66698b53c8d64b538876742de82d86c6c7c99cd4372d3eeb1996d4afe9d56de",
+      "publisher_sha256": "f01f40be28236feb7f04086bb4215786f2f11850e2f7ece99e2800c051f886f9",
+      "retrieved_at": "2026-11-19T14:10:59.756416+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

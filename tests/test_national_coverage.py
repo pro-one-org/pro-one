@@ -9,6 +9,7 @@ from fastapi.testclient import TestClient
 from pydantic import ValidationError
 
 from app.capabilities import ResearchMatter
+from app.national_certifications import certified_basis
 from app.coverage_audit import build, retained_observations
 from app.coverage_health import check
 from app.jurisdictions import jurisdiction_id, possible_tribal_scope, registry, tribal_registry
@@ -21,6 +22,16 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_wisconsin_certificate_does_not_promote_future_text(self):
+        record = manifest("US-WI")
+        row = next(item for item in record["passages"].values() if item["citation"] == "Wis. Stat. § 799.01(1)(a)")
+        url = record["sources"][row["source_id"]]["url"]
+        with self.assertRaisesRegex(ValueError, "certified_version_requires_effective_date_review"):
+            certified_basis(
+                "US-WI", url, row["publisher_sha256"], "/statutes/statutes/799/01/1/d",
+                "Wis. Stat. § 799.01(1)(d)", "Other civil actions where the amount claimed is $15,000 or less",
+            )
+
     def test_action_references_expose_dated_authority_without_unlocking_execution(self):
         actions = coverage("US-WI")["action_shells"]
         complaint = next(action for action in actions if action["action_type"] == "complaint")

@@ -263,6 +263,18 @@
         "retrieved_at": "2026-11-17T19:42:51.508838+00:00",
         "sha256": "4b6030d472264e71a6c6bee2577f6d7805bd68bbdd8760c6e83fd086602da0a6"
       }
+    },
+    "US-MI:wageLaw:735c8a1cbc9f": {
+      "category": "wageLaw",
+      "title": "Mich. Comp. Laws § 408.475",
+      "url": "https://legislature.mi.gov/Laws/MCL?objectName=MCL-408-475",
+      "locator": "Mich. Comp. Laws § 408.475",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:11:01.758217+00:00",
+        "sha256": "c622d4f2c1a0a5581dbf1f580f178c63da0347ed1bf9656d4b172a2abe1bebed"
+      }
     }
   },
   "court_directory": [
@@ -415,6 +427,17 @@
       "currentness": "historical",
       "language": "en",
       "edition": "March 2025 archive, complete through Public Act 2 of 2025"
+    },
+    "828128a947d15ee65e08905eace441": {
+      "source_id": "US-MI:wageLaw:735c8a1cbc9f",
+      "authority_type": "statute",
+      "citation": "Mich. Comp. Laws § 408.475",
+      "text": "(1) An employer shall pay to an employee voluntarily leaving employment all wages earned and due, as soon as the amount can with due diligence be determined. However, an employer shall pay all wages earned and due to an employee engaged in any phase of the hand harvesting of crops as soon as the amount can, with due diligence, be determined, but, in any event, not later than 3 days after the employee's voluntary termination of employment. (2) An employer shall immediately pay to an employee who has been discharged from employment all wages earned and due, as soon as the amount can with due diligence be determined. (3) This section shall not apply to an employee working under contract who either voluntary leaves employment or is discharged from employment if the amount due cannot be determined until the termination of the contract. In such cases, the employer shall pay to the employee under the provisions of section 2 all wages earned by the employee as nearly as they can be estimated. Final payment shall be made in full at the termination of the contract.",
+      "text_sha256": "f5c0ce15f5e813e660a9747fcd86aa55d314e72bf31f0c814477f16dcdd9f301",
+      "publisher_sha256": "c622d4f2c1a0a5581dbf1f580f178c63da0347ed1bf9656d4b172a2abe1bebed",
+      "retrieved_at": "2026-11-19T14:11:01.758217+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {
