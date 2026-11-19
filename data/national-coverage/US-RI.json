@@ -284,6 +284,18 @@
         "retrieved_at": "2026-11-17T20:14:20.957417+00:00",
         "sha256": "01dea708aa73f7816bd816f6ae5d29701b38e5b0571d8c2e1ea01e17acc700f6"
       }
+    },
+    "US-RI:negligence_elements:0abfe6ccae71": {
+      "category": "negligence_elements",
+      "title": "Berard v. HCP, Inc., No. 2012-164-Appeal (R.I. May 15, 2013)",
+      "url": "https://www.courts.ri.gov/Opinions/12-164.pdf",
+      "locator": "Berard v. HCP, Inc., No. 2012-164-Appeal (R.I. May 15, 2013)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T13:54:49.760549+00:00",
+        "sha256": "238c02cdf4b36b388a94f49f46e74865508770fe06ec523177f719a3073d8802"
+      }
     }
   },
   "court_directory": [
@@ -494,6 +506,22 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Rhode Island Superior Court"
+    },
+    "5d42bbf3ffa7a588cd767e499198ea": {
+      "source_id": "US-RI:negligence_elements:0abfe6ccae71",
+      "authority_type": "opinion",
+      "citation": "Berard v. HCP, Inc., No. 2012-164-Appeal (R.I. May 15, 2013)",
+      "text": "In setting forth a negligence claim, “ a plaintiff must establish a legally cognizable duty owed by a defendant to a plaintiff, a breach of that duty, proximate causation between the conduct and the resulting injury, and the actual loss or damage. ” Holley, 968 A.2d at 274 (quoting Willis v. Omar , 954 A.2d 126, 129 (R.I. 2008)).",
+      "text_sha256": "f3b2b6931b0595918e9195cfd5d0fab857240c7b0d40340c39fffe44e0192a3b",
+      "publisher_sha256": "238c02cdf4b36b388a94f49f46e74865508770fe06ec523177f719a3073d8802",
+      "retrieved_at": "2026-11-19T13:54:49.760549+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2013-05-15",
+      "court": "Supreme Court of Rhode Island",
+      "decision_date": "2013-05-15",
+      "opinion_role": "majority",
+      "procedural_posture": "Negligence appeal from Kent County Superior Court."
     }
   },
   "fault_allocation": {

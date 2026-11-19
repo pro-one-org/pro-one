@@ -240,6 +240,18 @@
         "retrieved_at": "2026-11-18T20:45:33.808787+00:00",
         "sha256": "022194c52c2c51ff885f5dba4d43af7789052509f43c7295713d2c57064c64a8"
       }
+    },
+    "US-AZ:negligence_elements:d2da50ae7685": {
+      "category": "negligence_elements",
+      "title": "Henke v. Hospital Development of West Phoenix, Inc., No. CV-24-0259-PR, ¶ 23 (Ariz. Oct. 22, 2025)",
+      "url": "https://www.azcourts.gov/Portals/0/OpinionFiles/Supreme/2025/CV240259PR.pdf",
+      "locator": "Henke v. Hospital Development of West Phoenix, Inc., No. CV-24-0259-PR, ¶ 23 (Ariz. Oct. 22, 2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T13:54:35.508947+00:00",
+        "sha256": "ade982671e4d4eefff0935b6822c276d06a56f1869c82f97646ed6d9e3058b43"
+      }
     }
   },
   "court_directory": [
@@ -405,6 +417,22 @@
       "language": "en",
       "edition": "Supreme Court Order R-16-0010, effective January 1, 2017",
       "court": "Arizona Superior Court"
+    },
+    "828c4e64929c8680276e8009d45907": {
+      "source_id": "US-AZ:negligence_elements:d2da50ae7685",
+      "authority_type": "opinion",
+      "citation": "Henke v. Hospital Development of West Phoenix, Inc., No. CV-24-0259-PR, ¶ 23 (Ariz. Oct. 22, 2025)",
+      "text": "“In medical malpractice actions, as in all negligence actions, the plaintiff must prove the existence of a duty, a breach of that duty, causation, and damages.” Seisinger v. Siebel, 220 Ariz. 85, 94 ¶ 32 (2009).",
+      "text_sha256": "cb12b2fbbc0879e4284ad9da69e10323602e552f567742d9eaebeb55eb0914ab",
+      "publisher_sha256": "ade982671e4d4eefff0935b6822c276d06a56f1869c82f97646ed6d9e3058b43",
+      "retrieved_at": "2026-11-19T13:54:35.508947+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2025-10-22",
+      "court": "Supreme Court of Arizona",
+      "decision_date": "2025-10-22",
+      "opinion_role": "majority",
+      "procedural_posture": "Medical malpractice action. Trial judgment reversed and remanded; intermediate decision vacated."
     }
   },
   "fault_allocation": {

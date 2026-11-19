@@ -268,6 +268,18 @@
         "retrieved_at": "2026-11-18T20:37:41.648522+00:00",
         "sha256": "e64171d2ad5a7c624bfe8420110bef2eccc6972efb5c82460e571b7b219b1617"
       }
+    },
+    "US-AL:negligence_elements:8a6fef5893b2": {
+      "category": "negligence_elements",
+      "title": "Haddan v. Norfolk Southern Railway Co., No. 1190976 (Ala. Feb. 4, 2022)",
+      "url": "https://acis.alabama.gov/displaydocs.cfm?event=6990L7U1P&no=1118640",
+      "locator": "Haddan v. Norfolk Southern Railway Co., No. 1190976 (Ala. Feb. 4, 2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T13:54:39.848819+00:00",
+        "sha256": "c39385b07f8aa09f05a68990def2b935e171f80a66083451d164ea3fb32c5e86"
+      }
     }
   },
   "court_directory": [
@@ -440,6 +452,22 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Alabama Circuit Court"
+    },
+    "596b23600ec5e55d217fa2cfb170a6": {
+      "source_id": "US-AL:negligence_elements:8a6fef5893b2",
+      "authority_type": "opinion",
+      "citation": "Haddan v. Norfolk Southern Railway Co., No. 1190976 (Ala. Feb. 4, 2022)",
+      "text": "To prevail on a negligence claim, a plaintiff must prove that the defendant owed the plaintiff a legal duty, that the defendant breached that duty, that the plaintiff suffered a loss or injury, that the defendant's breach was an actual cause of the injury, and that the defendant's breach was a proximate cause of the injury.",
+      "text_sha256": "ef130146359297d93de1d847001a84494beef65e957c8735003737ce37562841",
+      "publisher_sha256": "c39385b07f8aa09f05a68990def2b935e171f80a66083451d164ea3fb32c5e86",
+      "retrieved_at": "2026-11-19T13:54:39.848819+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2022-02-04",
+      "court": "Supreme Court of Alabama",
+      "decision_date": "2022-02-04",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in railroad negligence action."
     }
   }
 }

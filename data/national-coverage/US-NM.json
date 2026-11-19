@@ -183,6 +183,18 @@
         "retrieved_at": "2026-11-18T20:40:12.862780+00:00",
         "sha256": "dd819a2a7d3af23d902c63ea2b72eeb60535815ecf23fcbbe0da3925d2557e12"
       }
+    },
+    "US-NM:negligence_elements:643606fd9c49": {
+      "category": "negligence_elements",
+      "title": "Lujan v. New Mexico Department of Transportation, No. 31,883 (N.M. Ct. App. Aug. 4, 2014)",
+      "url": "https://coa.nmcourts.gov/wp-content/uploads/sites/43/2024/01/Lujan-FO.pdf",
+      "locator": "Lujan v. New Mexico Department of Transportation, No. 31,883 (N.M. Ct. App. Aug. 4, 2014)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T13:54:45.048993+00:00",
+        "sha256": "0134230f1e9ec453844d8796c1b2191f419bc9f1ab1606d1ddf42a3c8a49f7af"
+      }
     }
   },
   "court_directory": [
@@ -295,6 +307,22 @@
       "decision_date": "2023-04-27",
       "opinion_role": "unanimous",
       "procedural_posture": "Appeal from district court. Interest award affirmed in part and remanded for recalculation."
+    },
+    "1e46ee2566a6fb0dde4c053ca76546": {
+      "source_id": "US-NM:negligence_elements:643606fd9c49",
+      "authority_type": "opinion",
+      "citation": "Lujan v. New Mexico Department of Transportation, No. 31,883 (N.M. Ct. App. Aug. 4, 2014)",
+      "text": "“It is axiomatic that a negligence action requires that there be a duty owed from the defendant to the plaintiff; that based on a standard of reasonable care under the circumstances, the defendant breached that duty; and that the breach was a cause in fact and proximate cause of the plaintiff’s damages.” Romero v. Giant Stop-N-Go of N.M., Inc., 2009-NMCA-059, ¶ 5, 146 N.M. 520, 212 P.3d 408.",
+      "text_sha256": "c427f25dab68721a96b56efbdc4871b08bacb00fdabe4c9031cc27181e4b4333",
+      "publisher_sha256": "0134230f1e9ec453844d8796c1b2191f419bc9f1ab1606d1ddf42a3c8a49f7af",
+      "retrieved_at": "2026-11-19T13:54:45.048993+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2014-08-04",
+      "court": "Court of Appeals of New Mexico",
+      "decision_date": "2014-08-04",
+      "opinion_role": "majority",
+      "procedural_posture": "Reversed summary judgment for the state transportation department."
     }
   }
 }

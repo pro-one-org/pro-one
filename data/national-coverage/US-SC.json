@@ -310,6 +310,18 @@
         "retrieved_at": "2026-11-18T20:45:46.201127+00:00",
         "sha256": "ced9775a0b20feb4f88d5c935b64024e81924ccaca61428d6d050cf2380b1c24"
       }
+    },
+    "US-SC:negligence_elements:d3ed32050476": {
+      "category": "negligence_elements",
+      "title": "Bergstrom v. Palmetto Health Alliance, Op. No. 3552 (S.C. Ct. App. Sept. 30, 2002)",
+      "url": "https://www.sccourts.org/media/opinions/htmlfiles/coa/3552.htm",
+      "locator": "Bergstrom v. Palmetto Health Alliance, Op. No. 3552 (S.C. Ct. App. Sept. 30, 2002)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T13:54:45.047992+00:00",
+        "sha256": "f54e3f32ea8d9ba33a057936cf11645a23751d86c4b6d9f3b1f01f875eae9739"
+      }
     }
   },
   "court_directory": [
@@ -487,6 +499,22 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "South Carolina Circuit Court"
+    },
+    "6492fe95e1715609ab3aaff51bf246": {
+      "source_id": "US-SC:negligence_elements:d3ed32050476",
+      "authority_type": "opinion",
+      "citation": "Bergstrom v. Palmetto Health Alliance, Op. No. 3552 (S.C. Ct. App. Sept. 30, 2002)",
+      "text": "In order to establish a claim for negligence, the plaintiff must prove the following elements: (1) a duty of care owed by the defendant to the plaintiff; (2) a breach of that duty by the defendant’s negligent act or omission; (3) resulting in damages to the plaintiff; and (4) the damages proximately resulted from the breach of duty. Thomasko v. Poole, 349 S.C. 7, 561 S.E.2d 597 (2002).",
+      "text_sha256": "cb8b75ddde874d9f19c16834a2e01891dd9227639f7cf9be154d719ad0829aee",
+      "publisher_sha256": "f54e3f32ea8d9ba33a057936cf11645a23751d86c4b6d9f3b1f01f875eae9739",
+      "retrieved_at": "2026-11-19T13:54:45.047992+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2002-09-30",
+      "court": "South Carolina Court of Appeals",
+      "decision_date": "2002-09-30",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from circuit court in hospital negligence action; affirmed."
     }
   }
 }

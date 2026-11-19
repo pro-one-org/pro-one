@@ -20,6 +20,7 @@ SUBJECTS = {
     "wageLaw": ("employment", "wage_payment"),
     "wage_enforcement": ("employment", "wage_enforcement"),
     "negligence_duty": ("torts", "negligence_duty"),
+    "negligence_elements": ("torts", "negligence_elements"),
     "consumerLaw": ("consumer", "unfair_practices"),
     "consumer_private_action": ("consumer", "private_action"),
     "debtLaw": ("consumer_debt", "debt_collection"),

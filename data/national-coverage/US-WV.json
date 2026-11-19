@@ -247,6 +247,18 @@
         "retrieved_at": "2026-11-17T20:14:22.334501+00:00",
         "sha256": "0ee05eb2712a88f1e98eba5414a7d1c8bb0612b4b95d77b5222a39fb9dfb64dd"
       }
+    },
+    "US-WV:negligence_elements:bbac2ad8afc0": {
+      "category": "negligence_elements",
+      "title": "Hersh v. E-T Enterprises, Ltd. Partnership, No. 12-0106 (W. Va. Nov. 12, 2013)",
+      "url": "https://www.courtswv.gov/sites/default/pubfilesmnt/2023-12/12-0106.pdf",
+      "locator": "Hersh v. E-T Enterprises, Ltd. Partnership, No. 12-0106 (W. Va. Nov. 12, 2013)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T13:54:45.910999+00:00",
+        "sha256": "2b6f64f1dbbf6ea03f3684af860ea6b67bdcd396d8eb655f9700aec8d60e8eca"
+      }
     }
   },
   "court_directory": [
@@ -407,6 +419,22 @@
       "retrieved_at": "2026-11-17T20:14:22.334501+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "2e24bfd90b50ddfabd6d9409d7e2bb": {
+      "source_id": "US-WV:negligence_elements:bbac2ad8afc0",
+      "authority_type": "opinion",
+      "citation": "Hersh v. E-T Enterprises, Ltd. Partnership, No. 12-0106 (W. Va. Nov. 12, 2013)",
+      "text": "In a negligence suit, a plaintiff is required to show four basic elements: duty, breach, causation, and damages.",
+      "text_sha256": "b6035f7c69b40fa036956693eaa471e4f6a587c9dd733860f53e9a74728c4157",
+      "publisher_sha256": "2b6f64f1dbbf6ea03f3684af860ea6b67bdcd396d8eb655f9700aec8d60e8eca",
+      "retrieved_at": "2026-11-19T13:54:45.910999+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2013-11-12",
+      "court": "Supreme Court of Appeals of West Virginia",
+      "decision_date": "2013-11-12",
+      "opinion_role": "majority",
+      "procedural_posture": "Reversed summary judgment in premises liability action."
     }
   },
   "fault_allocation": {

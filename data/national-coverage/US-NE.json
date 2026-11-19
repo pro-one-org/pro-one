@@ -235,6 +235,18 @@
         "retrieved_at": "2026-11-18T20:45:41.958036+00:00",
         "sha256": "7652a4530bb0f15b7ff59a37ed47d48887c72f7493ae4545697b584aa5da7798"
       }
+    },
+    "US-NE:negligence_elements:913f7e8b2f0e": {
+      "category": "negligence_elements",
+      "title": "Lewison v. Renner, 298 Neb. 654 (2018)",
+      "url": "https://www.nebraska.gov/apps-courts-epub/public/viewCertified?docId=N00010444PUB",
+      "locator": "Lewison v. Renner, 298 Neb. 654 (2018)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T13:54:55.817726+00:00",
+        "sha256": "fcc6ea577e5c92b62048bef16c1c17853d8e60bfae505b1599628f1a0d772b3c"
+      }
     }
   },
   "court_directory": [
@@ -374,6 +386,22 @@
       "retrieved_at": "2026-11-18T20:45:41.958036+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "e9b82ef68508a28692145ca63bc1bc": {
+      "source_id": "US-NE:negligence_elements:913f7e8b2f0e",
+      "authority_type": "opinion",
+      "citation": "Lewison v. Renner, 298 Neb. 654 (2018)",
+      "text": "To prevail in any negligence action, a plaintiff must show a legal duty owed by the defendant to the plaintiff, a breach of such duty, causation, and resulting damages.",
+      "text_sha256": "0c2aed76a0ffd54cadb0edc88950b3f583a39e4806af21e68b1a068793d979b7",
+      "publisher_sha256": "fcc6ea577e5c92b62048bef16c1c17853d8e60bfae505b1599628f1a0d772b3c",
+      "retrieved_at": "2026-11-19T13:54:55.817726+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2018-01-12",
+      "court": "Nebraska Supreme Court",
+      "decision_date": "2018-01-12",
+      "opinion_role": "majority",
+      "procedural_posture": "Affirmed denial of a new trial after an automobile collision."
     }
   },
   "fault_allocation": {

@@ -334,6 +334,18 @@
         "retrieved_at": "2026-11-18T20:21:42.677424+00:00",
         "sha256": "e67441d3bcdde354a6e275b3663d587532f849ae880ffc483555ea1b0651dd79"
       }
+    },
+    "US-IA:negligence_elements:555ec4b2bf29": {
+      "category": "negligence_elements",
+      "title": "Pollow v. Estate of Studebaker, No. 18-1633 (Iowa Ct. App. Apr. 29, 2020)",
+      "url": "https://www.iowacourts.gov/courtcases/8961/embed/CourtAppealsOpinion",
+      "locator": "Pollow v. Estate of Studebaker, No. 18-1633 (Iowa Ct. App. Apr. 29, 2020)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T13:54:39.226365+00:00",
+        "sha256": "aed59490a546a986a3e6cbcfc05b7baec7f2ea4c89f0cc10a0777f5e8f72a2c6"
+      }
     }
   },
   "court_directory": [
@@ -469,6 +481,22 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Iowa Code 2026"
+    },
+    "01ff40fae06aefd0d3e78657beb85e": {
+      "source_id": "US-IA:negligence_elements:555ec4b2bf29",
+      "authority_type": "opinion",
+      "citation": "Pollow v. Estate of Studebaker, No. 18-1633 (Iowa Ct. App. Apr. 29, 2020)",
+      "text": "In order to succeed on a negligence claim, a claimant must prove “existence of a duty to conform to a standard of conduct to protect others, failure to conform to that standard , proximate cause, and damages.” Hartig v. Francois, 562 N.W.2d 427, 429 (Iowa 1997).",
+      "text_sha256": "b39862633b530ed8ebdc275203043119234d3b84242f4f933d2aeea7a19ae921",
+      "publisher_sha256": "aed59490a546a986a3e6cbcfc05b7baec7f2ea4c89f0cc10a0777f5e8f72a2c6",
+      "retrieved_at": "2026-11-19T13:54:39.226365+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2020-04-29",
+      "court": "Court of Appeals of Iowa",
+      "decision_date": "2020-04-29",
+      "opinion_role": "majority",
+      "procedural_posture": "Affirmed denial of motion for new trial."
     }
   },
   "fault_allocation": {

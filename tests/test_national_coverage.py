@@ -21,6 +21,17 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_historical_negligence_elements_do_not_supply_fault_or_present_law(self):
+        query = ResearchMatter(country="US", state="Alabama", legal_area="torts",
+                               topics=["negligence_elements"], authority_types=["opinion"],
+                               authority_status="historical")
+        provider = RetainedLegislativeResearch()
+        key, = provider.search(query)
+        self.assertIn("actual cause", provider.fetch(key).text)
+        for change in ({"topics": ["fault_allocation"]}, {"topics": ["limitations"]},
+                       {"authority_status": "current"}, {"court": "Alabama Circuit Court"}):
+            self.assertFalse(provider.search(query.model_copy(update=change)))
+
     def test_automated_transaction_enactment_is_scoped_and_historical(self):
         query = ResearchMatter(country="US", state="Arkansas", legal_area="contracts",
                                topics=["automated_contract_formation"], authority_types=["statute"],

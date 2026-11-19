@@ -237,6 +237,18 @@
         "retrieved_at": "2026-11-18T15:14:29.669421+00:00",
         "sha256": "d4d69c6e2b319313e667492927a6740914f47de5a53c5722e9185c02a879102b"
       }
+    },
+    "US-CO:negligence_elements:e5d1bd52a221": {
+      "category": "negligence_elements",
+      "title": "Raleigh v. Performance Plumbing, No. 04SC695 (Colo. Feb. 21, 2006)",
+      "url": "https://www.coloradojudicial.gov/sites/default/files/2024-05/04SC695.pdf",
+      "locator": "Raleigh v. Performance Plumbing, No. 04SC695 (Colo. Feb. 21, 2006)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T13:54:36.491435+00:00",
+        "sha256": "722b11c1b7f1ad8bf39fdb1cc613c950b28ffa028e5fce9e3dccab9d9b33a824"
+      }
     }
   },
   "court_directory": [
@@ -371,6 +383,22 @@
       "currentness": "historical",
       "language": "en",
       "edition": "2014 codification"
+    },
+    "cb2e053b4071593362c5663cb8c4e5": {
+      "source_id": "US-CO:negligence_elements:e5d1bd52a221",
+      "authority_type": "opinion",
+      "citation": "Raleigh v. Performance Plumbing, No. 04SC695 (Colo. Feb. 21, 2006)",
+      "text": "Appropriately formulated and applied, tort principles adopted pursuant to the common law or legislative enactment are meant to deter and sanction conduct that results in victim injury and to remedy victim injury, in circumstances where the defendant owes a duty of care, defendant breaches the duty, that breach is the proximate cause of the plaintiff’s injuries, and damages result. See, e.g., Bayer v. Crested Butte Mountain Resorts, 960 P.2d 70, 80 (Colo. 1998).",
+      "text_sha256": "ff561023233f4e731c0ba64c7571135e8d56839f349e740908489bc018912fd9",
+      "publisher_sha256": "722b11c1b7f1ad8bf39fdb1cc613c950b28ffa028e5fce9e3dccab9d9b33a824",
+      "retrieved_at": "2026-11-19T13:54:36.491435+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2006-02-21",
+      "court": "Supreme Court of Colorado",
+      "decision_date": "2006-02-21",
+      "opinion_role": "majority",
+      "procedural_posture": "Certiorari on negligent hiring and respondeat superior claims."
     }
   }
 }
