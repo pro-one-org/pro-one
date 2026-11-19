@@ -287,6 +287,18 @@
         "retrieved_at": "2026-11-19T14:10:52.498275+00:00",
         "sha256": "22e13ddfced85efe86bf4ded00364b6b3e03974b5ffd9a6c1b29eb59f7c474ce"
       }
+    },
+    "US-DE:service:63626c14abd8": {
+      "category": "service",
+      "title": "Del. Super. Ct. Civ. R. 4(d)",
+      "url": "https://courts.delaware.gov/superior/pdf/civil_rules_2015.pdf",
+      "locator": "Del. Super. Ct. Civ. R. 4(d)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:34.638546+00:00",
+        "sha256": "05594a0eac48fee5aa00c28c1602b7d36976e4e0933758a4aefa6c97af59d49d"
+      }
     }
   },
   "court_directory": [
@@ -470,6 +482,18 @@
       "retrieved_at": "2026-11-19T14:10:52.498275+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "d3227bf5161b8358e24838ec895ea3": {
+      "source_id": "US-DE:service:63626c14abd8",
+      "authority_type": "court_rule",
+      "citation": "Del. Super. Ct. Civ. R. 4(d)",
+      "text": "(d) By whom served. -- Service of process shall be made by the sheriff to whom the writ is directed, by a deputy or by some person specially appointed by the Court for that purpose, except that a subpoena may be served as provided in Rule 45. (1) Except in cases governed by subsection (d)(2) of this Rule, no person shall be specially appointed by the Court to make service unless moving papers affirmatively demonstrate that: (i) the Sheriff has made one return non est inventus ; or, (ii) it is necessary that service be accomplished after 10:00 p.m. on any weekday other than a holiday; or, (iii) it is necessary that service be accomplished on a holiday or weekend; or, (iv) some other exigent reason is shown why the Sheriff cannot or will not accomplish service. Except in cases governed by subsection (d)(2) of this Rule, with respect to each filed motion, the Sheriff shall be served with notice of the motion and may offer reason as to why the Sheriff s hould not be disqualified from making service. (2) In cases governed by 10 Del. C. { 3104, 10 Del. C. { 3112, and 10 Del. C. { 3114, special appointments to accomplish service upon the Secretary of State as required by these statutes may be made freely by the Court.",
+      "text_sha256": "7f4b24c2fee4afc13c2a0a12186a4ca4e33b7c7b545982ab8b38578b5ea6e506",
+      "publisher_sha256": "05594a0eac48fee5aa00c28c1602b7d36976e4e0933758a4aefa6c97af59d49d",
+      "retrieved_at": "2026-11-18T20:45:34.638546+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Delaware Superior Court"
     }
   },
   "fault_allocation": {

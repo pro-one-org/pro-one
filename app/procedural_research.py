@@ -152,6 +152,8 @@ def infer_subject(message):
     if re.search(r"\b(?:serve|served|serving|service|process server)\b", message, re.I) and re.search(
             r"\b(?:complaint|summons|process|civil)\b", message, re.I):
         return "service"
+    if re.search(r"\b(?:commence|start|begin)\b.{0,35}\b(?:civil action|civil case|lawsuit)\b", message, re.I):
+        return "commencement"
     if re.search(r"\b(?:slip\w*|fell|fall|trip\w*)\b", message, re.I) and re.search(
             r"\b(?:pay|payment|compensat\w*|reimburse\w*|damages|money)\b", message, re.I):
         return "compensation"
@@ -209,8 +211,22 @@ class ProceduralResearchService:
                               or subject != "compensation" and not any(request.forum in self.catalog.paths[key].forums for key in options)):
             return self.result("wrong_forum", jurisdiction=jurisdiction)
         if not options:
+            national = coverage(jurisdiction) if jurisdiction in registry() else {}
+            cells = national.get("cells", {})
+            selectors = cells.get(f"procedure.{subject}", {}).get("passage_selectors", ())
+            references = []
+            for selector in selectors:
+                passage = national["passages"][selector]
+                if request.authority_type and request.authority_type != passage["authority_type"]:
+                    continue
+                source = national["sources"][passage["source_id"]]
+                references.append({
+                    "passage_selector": selector, "citation": passage["citation"], "url": source["url"],
+                    "court": passage.get("court"), "currentness": passage["currentness"],
+                    "current_as_of": passage.get("current_as_of"),
+                })
             return self.result("outside_bounded_coverage", jurisdiction=jurisdiction,
-                               national_coverage=coverage(jurisdiction)["cells"] if jurisdiction in registry() else {},
+                               national_coverage=cells, reference_authorities=references[:8],
                                local_requirements="local_rule_required")
         if not request.selected_path and (request.choice_token or request.stage):
             return self.result("explicit_choice_required", jurisdiction=jurisdiction)

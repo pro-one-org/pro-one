@@ -264,6 +264,18 @@
         "retrieved_at": "2026-11-19T14:10:52.413228+00:00",
         "sha256": "1bf5541dcb579793481d102ff973842d67db3d11ea1f70c3b5dc01869369fe88"
       }
+    },
+    "US-AZ:service:3e319894e316": {
+      "category": "service",
+      "title": "Ariz. R. Civ. P. 4(d)",
+      "url": "https://www.azcourts.gov/Portals/0/20/2016%20Rules/R-16-0010.pdf",
+      "locator": "Ariz. R. Civ. P. 4(d)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:33.808787+00:00",
+        "sha256": "022194c52c2c51ff885f5dba4d43af7789052509f43c7295713d2c57064c64a8"
+      }
     }
   },
   "court_directory": [
@@ -456,6 +468,19 @@
       "retrieved_at": "2026-11-19T14:10:52.413228+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "f32ab67c97fcd6e34fe9aa5b896591": {
+      "source_id": "US-AZ:service:3e319894e316",
+      "authority_type": "court_rule",
+      "citation": "Ariz. R. Civ. P. 4(d)",
+      "text": "(d) Who May Serve Process. (1) Generally. Service of process must be made by a sheriff, a sheriff’s deputy, a constable, a constable’s deputy, a private process server certified under the Arizona Code of Judicial Administration § 7-204 and Rule 4(e), or any other person specially appointed by the court. Service of process may also be made by a party or that party’s attorney if expressly authorized by these rules. (2) Special Appointment. (A) Qualifications. A specially appointed person must be at least 21 years of age and must not be a party, an attorney, or an employee of an attorney in the action in which process is to be served. (B) Procedure for Appointment. A party may request a special appointment to serve process by filing a motion with the presiding superior court judge in the county where the action is pending. The motion must be accompanied by a proposed order. If the proposed order is signed, no minute en try will issue. Special appointments should be granted freely, are valid only for the cause specified in the motion, and do not constitute an appointment as a certified private process server.",
+      "text_sha256": "75d384eb1c993be9e50030ab03df3b4f448faae7709e53621bab949a4f9b6a6e",
+      "publisher_sha256": "022194c52c2c51ff885f5dba4d43af7789052509f43c7295713d2c57064c64a8",
+      "retrieved_at": "2026-11-18T20:45:33.808787+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Supreme Court Order R-16-0010, effective January 1, 2017",
+      "court": "Arizona Superior Court"
     }
   },
   "fault_allocation": {

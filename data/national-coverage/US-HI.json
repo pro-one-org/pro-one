@@ -266,6 +266,30 @@
         "retrieved_at": "2026-11-19T14:10:53.644552+00:00",
         "sha256": "0d9d8dff8af32500e4a04bf5f939ccbd2403f28a46f727d9a27f9643e252c2ad"
       }
+    },
+    "US-HI:service:70db2b1f2445": {
+      "category": "service",
+      "title": "Haw. R. Civ. P. 4(c)",
+      "url": "https://www.courts.state.hi.us/wp-content/uploads/2024/09/hrcp_ada.pdf",
+      "locator": "Haw. R. Civ. P. 4(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:58.834498+00:00",
+        "sha256": "e74747393544ab0c36f0f3db12bf460db86c2995dd7e3ac3dfef00a9643a384a"
+      }
+    },
+    "US-HI:response:bdec0caac404": {
+      "category": "response",
+      "title": "Haw. R. Civ. P. 12(a)",
+      "url": "https://www.courts.state.hi.us/wp-content/uploads/2024/09/hrcp_ada.pdf",
+      "locator": "Haw. R. Civ. P. 12(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:58.834498+00:00",
+        "sha256": "e74747393544ab0c36f0f3db12bf460db86c2995dd7e3ac3dfef00a9643a384a"
+      }
     }
   },
   "court_directory": [
@@ -413,6 +437,30 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Hawaii Legislature archive, 2017 session"
+    },
+    "9c39068141798683788e80d6a0cecb": {
+      "source_id": "US-HI:service:70db2b1f2445",
+      "authority_type": "court_rule",
+      "citation": "Haw. R. Civ. P. 4(c)",
+      "text": "(c) Same: By whom served. Service of al l process shall be made: (1) anywhere in the State by the sheriff or the sheriff's deputy, by some other person specially appointed by the court for that purpose, or by any person who is not a party and is not less than 18 years of age; or (2) in any county by the chief of police or the chief's duly authorized subordinate. A subpoena, however, may be served as provided in Rule 45.",
+      "text_sha256": "f497272593dcafb0b6fb81d5d2ace99f3cf438789b30ae7e109ae430d2bd548f",
+      "publisher_sha256": "e74747393544ab0c36f0f3db12bf460db86c2995dd7e3ac3dfef00a9643a384a",
+      "retrieved_at": "2026-11-18T20:45:58.834498+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Hawaii Circuit Court"
+    },
+    "07a79c942cca863e96f046d662ec33": {
+      "source_id": "US-HI:response:bdec0caac404",
+      "authority_type": "court_rule",
+      "citation": "Haw. R. Civ. P. 12(a)",
+      "text": "(a) When presented. (1) A defendant shall serve an answer withi n 20 days after being served with the summons and complaint, except when service is made under Rule 4(c) and a different time is prescribed in an order of court under a statute or rule of court. (2) A party served with a pleading stating a cross-claim against that party shall serve an answer thereto within 20 days after being served. The plaintiff shall serve a reply to a counter -claim in the answer within 20 days after service of the answer or, if a reply is ordered by the court, within 20 days after service of the order, unless the order otherwise directs. (3) The service of a motion permitted under this rule alters these periods of time as follows, unless a different time is fixed by order of the court: (A) if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within 10 days after notice of the court's action; (B) if the court grants a motion for a mor e definite statement the responsive pleading shall be served within 10 days after the service of the more definite statement.",
+      "text_sha256": "ee4fbe3be0158eeb83d0249f6f117319eaed738b110d6e131a76d48b64b2d9ef",
+      "publisher_sha256": "e74747393544ab0c36f0f3db12bf460db86c2995dd7e3ac3dfef00a9643a384a",
+      "retrieved_at": "2026-11-18T20:45:58.834498+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Hawaii Circuit Court"
     }
   },
   "fault_allocation": {

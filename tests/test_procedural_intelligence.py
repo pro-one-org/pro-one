@@ -153,6 +153,22 @@ class ProceduralIntelligenceTests(unittest.TestCase):
         self.assertEqual("invalid_stage", result["status"])
         self.assertNotIn("requirements", result)
 
+    def test_national_response_authority_is_a_scoped_reference(self):
+        service = self.service()
+        message = "I received a summons and complaint in Alaska."
+        result = service.respond(ProceduralRequest(message=message))
+        self.assertEqual("outside_bounded_coverage", result["status"])
+        self.assertFalse(result["external_action_allowed"])
+        reference, = result["reference_authorities"]
+        self.assertEqual("Alaska R. Civ. P. 12(a)", reference["citation"])
+        self.assertEqual("Alaska Superior Court", reference["court"])
+        self.assertEqual("unresolved", reference["currentness"])
+        self.assertNotIn("due_date", result)
+        other = service.respond(ProceduralRequest(message=message, jurisdiction="US-TX"))
+        self.assertNotIn("reference_authorities", other)
+        excluded = service.respond(ProceduralRequest(message=message, authority_type="statute"))
+        self.assertEqual([], excluded["reference_authorities"])
+
     def test_prerequisite_cannot_be_skipped_by_requested_stage(self):
         result = self.choose(FALL, "va_litigation", stage="service", forum="va_circuit", facts=FORUM_FACTS)
         self.assertEqual("prerequisite_missing", result["status"])
