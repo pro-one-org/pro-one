@@ -240,6 +240,18 @@
         "retrieved_at": "2026-11-18T20:21:42.109148+00:00",
         "sha256": "4a0f9b7e1b8be3a38f92ea0ef7c8c1ca05755c66962f38b195b8f2a4c18ae0da"
       }
+    },
+    "US-ND:wageLaw:e32c19fa48fd": {
+      "category": "wageLaw",
+      "title": "N.D. Cent. Code § 34-14-02",
+      "url": "https://ndlegis.gov/cencode/t34c14.pdf",
+      "locator": "N.D. Cent. Code § 34-14-02",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:59.048563+00:00",
+        "sha256": "7ba4a2ec6deaccd33e33a33a6ee525936ca81bfdb9369ba4d942c55909830df6"
+      }
     }
   },
   "court_directory": [
@@ -351,6 +363,17 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "North Dakota District Court"
+    },
+    "19864a1d941986639a6dd1c2de70ae": {
+      "source_id": "US-ND:wageLaw:e32c19fa48fd",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 34-14-02",
+      "text": "Every employer shall pay all wages due to employees at least once each calendar month on regular agreed paydays designated in advance by the employer. Wages must be paid in lawful money of the United States; with checks, as that item is used in chapter 41 -03, drawn on banks or credit unions convenient to the place of employment; with direct deposit in the financial institution of the employee's choice; or, at the election of the employee when offered by the employer, by delivery to the employee of a stored value card that meets the requirements of this section. A stored value card that is used by an employer to pay wages must be issued by a federally insured bank or credit union. The value of the funds underlying a stored value card that is used by an employer to pay wages must be a deposit that is insured by the federal deposit insurance corporation or national credit union administration. Before paying wages by delivering a stored value card to an employee, an employer must have deposited with the issuer funds in an amount at least equal to the wages due from the employer to each employee whose wages are being paid through a stored value card and any account fees that are charged to the employer by the issuer.",
+      "text_sha256": "ac87b230aa0f35ce7daed093a6efe684119b5c23c9056bcaac2bcbc573d629a0",
+      "publisher_sha256": "7ba4a2ec6deaccd33e33a33a6ee525936ca81bfdb9369ba4d942c55909830df6",
+      "retrieved_at": "2026-11-19T14:10:59.048563+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

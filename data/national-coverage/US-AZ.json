@@ -252,6 +252,18 @@
         "retrieved_at": "2026-11-19T13:54:35.508947+00:00",
         "sha256": "ade982671e4d4eefff0935b6822c276d06a56f1869c82f97646ed6d9e3058b43"
       }
+    },
+    "US-AZ:wageLaw:e584dc736354": {
+      "category": "wageLaw",
+      "title": "A.R.S. § 23-353(A)–(B)",
+      "url": "https://www.azleg.gov/ars/23/00353.htm",
+      "locator": "A.R.S. § 23-353(A)–(B)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:52.413228+00:00",
+        "sha256": "1bf5541dcb579793481d102ff973842d67db3d11ea1f70c3b5dc01869369fe88"
+      }
     }
   },
   "court_directory": [
@@ -433,6 +445,17 @@
       "decision_date": "2025-10-22",
       "opinion_role": "majority",
       "procedural_posture": "Medical malpractice action. Trial judgment reversed and remanded; intermediate decision vacated."
+    },
+    "b7ed6c5d93df53dfdd22193a565c60": {
+      "source_id": "US-AZ:wageLaw:e584dc736354",
+      "authority_type": "statute",
+      "citation": "A.R.S. § 23-353(A)–(B)",
+      "text": "A. When an employee is discharged from the service of an employer, he shall be paid wages due him within seven working days or the end of the next regular pay period, whichever is sooner. B. When an employee quits the service of an employer he shall be paid in the usual manner all wages due him no later than the regular payday for the pay period during which the termination occurred. If requested by the employee, such wages shall be paid by mail.",
+      "text_sha256": "77f25f81d929eb8b5096db8f7f0523c45e0555bb8cb008e0a345dd719a97a066",
+      "publisher_sha256": "1bf5541dcb579793481d102ff973842d67db3d11ea1f70c3b5dc01869369fe88",
+      "retrieved_at": "2026-11-19T14:10:52.413228+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

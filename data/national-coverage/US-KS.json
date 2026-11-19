@@ -240,6 +240,18 @@
         "retrieved_at": "2026-11-18T20:45:38.956797+00:00",
         "sha256": "a368d2a6ea22e4feb308eb5ab6537bd9104bb797df6e2ea6faea5d4be5b4515f"
       }
+    },
+    "US-KS:wageLaw:0e7dc2a5ce52": {
+      "category": "wageLaw",
+      "title": "K.S.A. § 44-315(a)",
+      "url": "https://ksrevisor.gov/statutes/chapters/ch44/044_003_0015.html",
+      "locator": "K.S.A. § 44-315(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:53.790252+00:00",
+        "sha256": "03489397ae79367538f9644d89e97e0b361634da04f47dd60dec0ae408f41cf1"
+      }
     }
   },
   "court_directory": [
@@ -357,6 +369,17 @@
       "currentness": "historical",
       "language": "en",
       "edition": "2025 Kansas Statutes"
+    },
+    "d84f1310a51dfc8bc2acea57d9f4d3": {
+      "source_id": "US-KS:wageLaw:0e7dc2a5ce52",
+      "authority_type": "statute",
+      "citation": "K.S.A. § 44-315(a)",
+      "text": "(a) Whenever an employer discharges an employee or whenever an employee quits or resigns, the employer shall pay the employee's earned wages not later than the next regular payday upon which he or she would have been paid if still employed as provided under K.S.A. 44-314 either through the regular pay channels or by mail postmarked within the deadlines herein specified if requested by the employee.",
+      "text_sha256": "df644776ae5cc57941fd68666e35e26ca64108c8822630cfb173894c89bb0712",
+      "publisher_sha256": "03489397ae79367538f9644d89e97e0b361634da04f47dd60dec0ae408f41cf1",
+      "retrieved_at": "2026-11-19T14:10:53.790252+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

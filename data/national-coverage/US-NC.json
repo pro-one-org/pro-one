@@ -270,6 +270,18 @@
         "retrieved_at": "2026-11-18T20:45:42.409078+00:00",
         "sha256": "ce40b1a18e84f47017014bbfa32b07924af906b9cee5c6fbd4f4a48ba362b17c"
       }
+    },
+    "US-NC:wageLaw:f28dee4012ec": {
+      "category": "wageLaw",
+      "title": "N.C. Gen. Stat. § 95-25.6",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_95/Article_2A.html",
+      "locator": "N.C. Gen. Stat. § 95-25.6",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:59.222394+00:00",
+        "sha256": "2ccb4cc40c6e07e5ebd711804fdb19fe68a20254b3d0754cb4e109aa3d74c74d"
+      }
     }
   },
   "court_directory": [
@@ -408,6 +420,17 @@
       "text_sha256": "9711830224e2552d1f87037f89b1dda1de6d043af4ff6d376e66d8ef38e2c2c8",
       "publisher_sha256": "ce40b1a18e84f47017014bbfa32b07924af906b9cee5c6fbd4f4a48ba362b17c",
       "retrieved_at": "2026-11-18T20:45:42.409078+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "2f266acbe1bf62ef3ae1a676a02e79": {
+      "source_id": "US-NC:wageLaw:f28dee4012ec",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 95-25.6",
+      "text": "Every employer shall pay every employee all wages and tips accruing to the employee on the regular payday. Pay periods may be daily, weekly, bi-weekly, semi-monthly, or monthly. Wages based upon bonuses, commissions, or other forms of calculation may be paid as infrequently as annually if prescribed in advance.",
+      "text_sha256": "e524c23875d80378518cad7eda2e1ff10689ebea8ef55c0a91cfd95b2228d3ff",
+      "publisher_sha256": "2ccb4cc40c6e07e5ebd711804fdb19fe68a20254b3d0754cb4e109aa3d74c74d",
+      "retrieved_at": "2026-11-19T14:10:59.222394+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

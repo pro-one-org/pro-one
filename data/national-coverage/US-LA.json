@@ -254,6 +254,18 @@
         "retrieved_at": "2026-11-18T20:45:39.640681+00:00",
         "sha256": "dcdfa50ecaa2b35757a200fbe703e0573440bd31c53b1b641c4b9b179c90dd7e"
       }
+    },
+    "US-LA:wageLaw:133888de69c2": {
+      "category": "wageLaw",
+      "title": "La. R.S. § 23:631(A)",
+      "url": "https://www.legis.la.gov/legis/Law.aspx?d=83945",
+      "locator": "La. R.S. § 23:631(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:55.090746+00:00",
+        "sha256": "f2dd143d3a369ef419a6e8c57d9650280f064eeba548d3511e59ebf3436be97f"
+      }
     }
   },
   "court_directory": [
@@ -432,6 +444,17 @@
       "text_sha256": "6f9a22da09681437f75e50869c3f5b51ee37779833866a7b4cc7a1342682a435",
       "publisher_sha256": "dcdfa50ecaa2b35757a200fbe703e0573440bd31c53b1b641c4b9b179c90dd7e",
       "retrieved_at": "2026-11-18T20:45:39.640681+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "24c8f805374b28ec00565eb69e58ac": {
+      "source_id": "US-LA:wageLaw:133888de69c2",
+      "authority_type": "statute",
+      "citation": "La. R.S. § 23:631(A)",
+      "text": "A.(1)(a) Upon the discharge of any laborer or other employee of any kind whatever, it shall be the duty of the person employing such laborer or other employee to pay the amount then due under the terms of employment, whether the employment is by the hour, day, week, or month, on or before the next regular payday or no later than fifteen days following the date of discharge, whichever occurs first. (b) Upon the resignation of any laborer or other employee of any kind whatever, it shall be the duty of the person employing such laborer or other employee to pay the amount then due under the terms of employment, whether the employment is by the hour, day, week, or month, on or before the next regular payday for the pay cycle during which the employee was working at the time of separation or no later than fifteen days following the date of resignation, whichever occurs first. (2) Payment shall be made at the place and in the manner which has been customary during the employment, except that payment may be made via United States mail to the laborer or other employee, provided postage has been prepaid and the envelope properly addressed with the employee's or laborer's current address as shown in the employer's records. In the event payment is made by mail the employer shall be deemed to have made such payment when it is mailed. The timeliness of the mailing may be shown by an official United States postmark or other official documentation from the United States Postal Service. (3) The provisions of this Subsection shall not apply when there is a collective bargaining agreement between the employer and the laborer or other employee which provides otherwise.",
+      "text_sha256": "f9c1ab0f255ea27c60771512e919c7dcab4b8e7fdecd56ca2fd7c5bf9c3ae9c5",
+      "publisher_sha256": "f2dd143d3a369ef419a6e8c57d9650280f064eeba548d3511e59ebf3436be97f",
+      "retrieved_at": "2026-11-19T14:10:55.090746+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

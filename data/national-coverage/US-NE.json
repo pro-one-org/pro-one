@@ -247,6 +247,18 @@
         "retrieved_at": "2026-11-19T13:54:55.817726+00:00",
         "sha256": "fcc6ea577e5c92b62048bef16c1c17853d8e60bfae505b1599628f1a0d772b3c"
       }
+    },
+    "US-NE:wageLaw:6eb230eb51fb": {
+      "category": "wageLaw",
+      "title": "Neb. Rev. Stat. § 48-1230(1)",
+      "url": "https://www.nebraskalegislature.gov/laws/statutes.php?statute=48-1230",
+      "locator": "Neb. Rev. Stat. § 48-1230(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:56.888263+00:00",
+        "sha256": "2cc67f7ae7b822c5b5040bdb3be73c14a590186afb91aa12c3e7109c910405bc"
+      }
     }
   },
   "court_directory": [
@@ -402,6 +414,17 @@
       "decision_date": "2018-01-12",
       "opinion_role": "majority",
       "procedural_posture": "Affirmed denial of a new trial after an automobile collision."
+    },
+    "f9df50fde802f6cf8e4b6af0130f79": {
+      "source_id": "US-NE:wageLaw:6eb230eb51fb",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 48-1230(1)",
+      "text": "(1) Except as otherwise provided in this section, each employer shall pay all wages due its employees on regular days designated by the employer or agreed upon by the employer and employee. Thirty days' written notice shall be given to an employee before regular paydays are altered by an employer. An employer may deduct, withhold, or divert a portion of an employee's wages only when the employer is required to or may do so by state or federal law or by order of a court of competent jurisdiction or the employer has a written agreement with the employee to deduct, withhold, or divert.",
+      "text_sha256": "8963de7494928f585f47562ace568591a0f556d10058be1ba2eb8d0dcccf18d3",
+      "publisher_sha256": "2cc67f7ae7b822c5b5040bdb3be73c14a590186afb91aa12c3e7109c910405bc",
+      "retrieved_at": "2026-11-19T14:10:56.888263+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

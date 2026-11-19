@@ -259,6 +259,18 @@
         "retrieved_at": "2026-11-18T20:21:41.924341+00:00",
         "sha256": "f01e56e9ca534253f1754424850cdc7a21d39cb6b80567e339126a85d3107a1f"
       }
+    },
+    "US-MN:wageLaw:2b0492d8f039": {
+      "category": "wageLaw",
+      "title": "Minn. Stat. § 181.101",
+      "url": "https://www.revisor.mn.gov/statutes/cite/181.101",
+      "locator": "Minn. Stat. § 181.101",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:58.573905+00:00",
+        "sha256": "33dc17613880a5de3352790c1903900790b62c1613670157176cb18c492022e5"
+      }
     }
   },
   "court_directory": [
@@ -393,6 +405,17 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Minnesota District Court"
+    },
+    "5a08018af7980acacb878bb3e0313c": {
+      "source_id": "US-MN:wageLaw:2b0492d8f039",
+      "authority_type": "statute",
+      "citation": "Minn. Stat. § 181.101",
+      "text": "(a) Except as provided in paragraph (b), every employer must pay all wages, including salary, earnings, and gratuities earned by an employee at least once every 31 days and all commissions earned by an employee at least once every three months, on a regular payday designated in advance by the employer regardless of whether the employee requests payment at longer intervals. Unless paid earlier, the wages earned during the first half of the first 31-day pay period become due on the first regular payday following the first day of work. If wages or commissions earned are not paid, the commissioner of labor and industry or the commissioner's representative may serve a demand for payment on behalf of an employee. In addition to other remedies under section 177.27, if payment of wages is not made within ten days of service of the demand, the commissioner may charge and collect the wages earned at the employee's rate or rates of pay or at the rate or rates required by law, including any applicable statute, regulation, rule, ordinance, government resolution or policy, contract, or other legal authority, whichever rate of pay is greater, and a penalty in the amount of the employee's average daily earnings at the same rate or rates for each day beyond the ten-day limit following the demand. If payment of commissions is not made within ten days of service of the demand, the commissioner may charge and collect the commissions earned and a penalty equal to 1/15 of the commissions earned but unpaid for each day beyond the ten-day limit. Money collected by the commissioner must be paid to the employee concerned. This section does not prevent an employee from prosecuting a claim for wages. This section does not prevent a school district, other public school entity, or other school, as defined under section 120A.22, from paying any wages earned by its employees during a school year on regular paydays in the manner provided by an applicable contract or collective bargaining agreement, or a personnel policy adopted by the governing board. For purposes of this section, \"employee\" includes a person who performs agricultural labor as defined in section 181.85, subdivision 2. For purposes of this section, wages are earned on the day an employee works. This section provides a substantive right for employees to the payment of wages, including salary, earnings, and gratuities, as well as commissions, in addition to the right to be paid at certain times. (b) An employer of a paid on-call firefighter, as defined in section 424A.001, subdivision 10a, a member of an organized first responder squad that is formally recognized by a political subdivision in the state, or a volunteer ambulance driver or attendant must pay all wages earned by the paid on-call firefighter, first responder, or volunteer ambulance driver or attendant at least once every 31 days, unless the employer and the employee mutually agree upon payment at longer intervals.",
+      "text_sha256": "188c5fe24e2c1fba8b0192113814bed52b96f58333ed174d50feda11c7b56018",
+      "publisher_sha256": "33dc17613880a5de3352790c1903900790b62c1613670157176cb18c492022e5",
+      "retrieved_at": "2026-11-19T14:10:58.573905+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

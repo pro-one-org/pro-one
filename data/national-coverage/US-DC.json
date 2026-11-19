@@ -155,6 +155,18 @@
         "retrieved_at": "2026-11-18T15:14:25.062867+00:00",
         "sha256": "226e46cacc3e95a3b4d71fae5047a48a1f4c2bbc6d0db43f782fac56974c5398"
       }
+    },
+    "US-DC:wageLaw:191438c782b8": {
+      "category": "wageLaw",
+      "title": "D.C. Code § 32-1303(1)",
+      "url": "https://code.dccouncil.gov/us/dc/council/code/sections/32-1303",
+      "locator": "D.C. Code § 32-1303(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:52.794048+00:00",
+        "sha256": "b3a469d04a8d11b6463731fe0a25019e2ef17da58dc7c49a946d76cb87a2adb3"
+      }
     }
   },
   "court_directory": [
@@ -227,6 +239,17 @@
       "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
       "publisher_sha256": "226e46cacc3e95a3b4d71fae5047a48a1f4c2bbc6d0db43f782fac56974c5398",
       "retrieved_at": "2026-11-18T15:14:25.062867+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "781a6aaa9e2e99839f20c50cc788cf": {
+      "source_id": "US-DC:wageLaw:191438c782b8",
+      "authority_type": "statute",
+      "citation": "D.C. Code § 32-1303(1)",
+      "text": "Unless otherwise specified in a collective agreement between an employer and a bona fide union representing his employees: (1) Whenever an employer discharges an employee, the employer shall pay the employee’s wages earned not later than the working day following such discharge; provided, however, that in the instance of an employee who is responsible for monies belonging to the employer, the employer shall be allowed a period of 4 days from the date of discharge or resignation for the determination of the accuracy of the employee’s accounts, at the end of which time all wages earned by the employee shall be paid.",
+      "text_sha256": "1e6611d4ba4b8062ee061ee4ef960f75afbbbfbec64bfea1e8995151bee27229",
+      "publisher_sha256": "b3a469d04a8d11b6463731fe0a25019e2ef17da58dc7c49a946d76cb87a2adb3",
+      "retrieved_at": "2026-11-19T14:10:52.794048+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

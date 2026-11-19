@@ -202,6 +202,18 @@
         "retrieved_at": "2026-11-18T15:14:25.998152+00:00",
         "sha256": "4845f69ec235b9daa638740eff2df7608a40040f551219aca80a9ea4e4355217"
       }
+    },
+    "US-KY:wageLaw:9e7597c822cf": {
+      "category": "wageLaw",
+      "title": "KRS § 337.020",
+      "url": "https://apps.legislature.ky.gov/law/Statutes/statute.aspx?id=32046",
+      "locator": "KRS § 337.020",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:54.256412+00:00",
+        "sha256": "0d60f63939fa181ab397298ebd53c6e297ca91d9bcac3603a7ccb5c558c8ed91"
+      }
     }
   },
   "court_directory": [
@@ -333,6 +345,17 @@
       "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
       "publisher_sha256": "4845f69ec235b9daa638740eff2df7608a40040f551219aca80a9ea4e4355217",
       "retrieved_at": "2026-11-18T15:14:25.998152+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "375da4cdc9cc956d49de8902c3b34f": {
+      "source_id": "US-KY:wageLaw:9e7597c822cf",
+      "authority_type": "statute",
+      "citation": "KRS § 337.020",
+      "text": "Every employer doing business in this state shall, as often as semimonthly, pay to each of its employees all wages or salary earned to a day not more than eighteen (18) days prior to the date of that payment. Any employee who is absent at the time fixed fo r payment, or who, for any other reason, is not paid at that time, shall be paid thereafter at any time upon six (6) days' demand. No employer subject to this section shall, by any means, secure exemption from it. Every such employee shall have a right of action against any such employer for the full amount of his wages due on each regular pay day. The provisions of this section do not apply to those individuals defined in KRS 337.010(2)(a)2.",
+      "text_sha256": "0917c6800649463b0bd621d9a20f04060259c01b5c73ba2922610088e5a5ff83",
+      "publisher_sha256": "0d60f63939fa181ab397298ebd53c6e297ca91d9bcac3603a7ccb5c558c8ed91",
+      "retrieved_at": "2026-11-19T14:10:54.256412+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

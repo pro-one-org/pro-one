@@ -256,6 +256,18 @@
         "retrieved_at": "2026-11-18T15:14:37.546103+00:00",
         "sha256": "75fa9e40a5b90935877e6bf3fd672ff458077fb9cdc148ebf22c02d93f7c0bb6"
       }
+    },
+    "US-OR:wageLaw:000d5de02c85": {
+      "category": "wageLaw",
+      "title": "ORS § 652.120",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors652.html",
+      "locator": "ORS § 652.120",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:11:09.105638+00:00",
+        "sha256": "a24238e77679b4e89d752458a871962f39b203f793df3802d8c50ae47919d3e6"
+      }
     }
   },
   "court_directory": [
@@ -400,6 +412,17 @@
       "text_sha256": "7858e93242887cd8bb62ad0d5dcf224f51c7dfd1944702f8a9fa6fa361dea03a",
       "publisher_sha256": "75fa9e40a5b90935877e6bf3fd672ff458077fb9cdc148ebf22c02d93f7c0bb6",
       "retrieved_at": "2026-11-18T15:14:37.546103+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "bd5d7175be9eba112f53a3e8f6fb51": {
+      "source_id": "US-OR:wageLaw:000d5de02c85",
+      "authority_type": "statute",
+      "citation": "ORS § 652.120",
+      "text": "(1) Every employer shall establish and maintain a regular payday, at which date the employer shall pay all employees the wages due and owing to them. (2) Payday may not extend beyond a period of 35 days from the time that the employees entered upon their work, or from the date of the last regular payday. (3) This section does not prevent the employer from establishing and maintaining paydays at more frequent intervals. (4) This section does not prevent any employer from entering into a written agreement, prior to the rendering of any services, and mutually satisfactory with the employer’s employees, as to the payment of wages at a future date. (5) When an employer has notice that an employee has not been paid the full amount the employee is owed on a regular payday and there is no dispute between the employer and the employee regarding the amount of the unpaid wages: (a) If the unpaid amount is less than five percent of the employee’s gross wages due on the regular payday, the employer shall pay the employee the unpaid amount no later than the next regular payday; or (b) If the unpaid amount is five percent or more of the employee’s gross wages due on the regular payday, the employer shall pay the employee the unpaid amount within three days after the employer has notice of the unpaid amount, excluding Saturdays, Sundays and holidays.",
+      "text_sha256": "524aa968283ee09e815809889d7a775c0d4135fabf403124f488c269a1f1b7aa",
+      "publisher_sha256": "a24238e77679b4e89d752458a871962f39b203f793df3802d8c50ae47919d3e6",
+      "retrieved_at": "2026-11-19T14:11:09.105638+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

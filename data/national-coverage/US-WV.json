@@ -259,6 +259,18 @@
         "retrieved_at": "2026-11-19T13:54:45.910999+00:00",
         "sha256": "2b6f64f1dbbf6ea03f3684af860ea6b67bdcd396d8eb655f9700aec8d60e8eca"
       }
+    },
+    "US-WV:wageLaw:71258cee4616": {
+      "category": "wageLaw",
+      "title": "W. Va. Code § 21-5-4(b)",
+      "url": "https://code.wvlegislature.gov/21-5-4/",
+      "locator": "W. Va. Code § 21-5-4(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:11:02.826931+00:00",
+        "sha256": "c260e281da109aba2dfa3cc541b6dbaeeb84f6f87c2c30c80b8e208ad9da9b48"
+      }
     }
   },
   "court_directory": [
@@ -435,6 +447,17 @@
       "decision_date": "2013-11-12",
       "opinion_role": "majority",
       "procedural_posture": "Reversed summary judgment in premises liability action."
+    },
+    "d77d2bab13c471443c354d43ea928a": {
+      "source_id": "US-WV:wageLaw:71258cee4616",
+      "authority_type": "statute",
+      "citation": "W. Va. Code § 21-5-4(b)",
+      "text": "(b) Whenever a person, firm, or corporation discharges an employee, or whenever an employee quits or resigns from employment, the person, firm or corporation shall pay the employee’s wages due for work that the employee performed prior to the separation of employment on or before the next regular payday on which the wages would otherwise be due and payable: Provided, That fringe benefits, as defined in section one of this article, that are provided an employee pursuant to an agreement between the employee and employer and that are due, but pursuant to the terms of the agreement, are to be paid at a future date or upon additional conditions which are ascertainable are not subject to this subsection and are not payable on or before the next regular payday, but shall be paid according to the terms of the agreement. For purposes of this section, “business day” means any day other than Saturday, Sunday, or any legal holiday as set forth in §2-2-1 of this code.",
+      "text_sha256": "42f2f39c33c4b339d835bde34867780d92421e5e1698677ff6a14c601e93dccd",
+      "publisher_sha256": "c260e281da109aba2dfa3cc541b6dbaeeb84f6f87c2c30c80b8e208ad9da9b48",
+      "retrieved_at": "2026-11-19T14:11:02.826931+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

@@ -279,6 +279,18 @@
         "retrieved_at": "2026-11-17T21:03:58.844366+00:00",
         "sha256": "44e232a79506c0f7982f3f66e68a3e6e13f65de9cce388a8648fb7387acccd36"
       }
+    },
+    "US-VA:wageLaw:341bd032f236": {
+      "category": "wageLaw",
+      "title": "Va. Code § 40.1-29(B)",
+      "url": "https://law.lis.virginia.gov/vacode/title40.1/chapter3/section40.1-29/",
+      "locator": "Va. Code § 40.1-29(B)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:11:08.091139+00:00",
+        "sha256": "1a4a82c695fe43e7d99221338f042b176360c6b9db188997afd1aff2410b620b"
+      }
     }
   },
   "court_directory": [
@@ -383,6 +395,17 @@
       "text_sha256": "efca16331b111136300749e8fae54e3d9d2479276d0dd49b234e1185c751d51a",
       "publisher_sha256": "44e232a79506c0f7982f3f66e68a3e6e13f65de9cce388a8648fb7387acccd36",
       "retrieved_at": "2026-11-17T21:03:58.844366+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "05b9309e805c95b9ca9557629a55a4": {
+      "source_id": "US-VA:wageLaw:341bd032f236",
+      "authority_type": "statute",
+      "citation": "Va. Code § 40.1-29(B)",
+      "text": "B. All employers operating a business or engaging an individual to perform domestic service shall establish regular pay periods and rates of pay for employees except executive personnel. All such employers shall pay salaried employees at least once each month and employees paid on an hourly rate at least once every two weeks or twice in each month, except that (i) a student who is currently enrolled in a work-study program or its equivalent administered by any secondary school, institution of higher education, or trade school, and (ii) employees whose weekly wages total more than 150 percent of the average weekly wage of the Commonwealth as defined in § 65.2-500, upon agreement by each affected employee, may be paid once each month if the institution or employer so chooses. Upon termination of employment an employee shall be paid all wages due him for work performed prior thereto; such payment shall be made on or before the date on which he would have been paid for such work had his employment not been terminated.",
+      "text_sha256": "2eed63ab69dd52807d6714a9d7e394b95d24aeebcfefcdec8e48b80870c7e1a6",
+      "publisher_sha256": "1a4a82c695fe43e7d99221338f042b176360c6b9db188997afd1aff2410b620b",
+      "retrieved_at": "2026-11-19T14:11:08.091139+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

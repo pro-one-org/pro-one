@@ -226,6 +226,18 @@
         "retrieved_at": "2026-11-18T20:46:32.705237+00:00",
         "sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040"
       }
+    },
+    "US-OH:wageLaw:e08fd54a5666": {
+      "category": "wageLaw",
+      "title": "Ohio Rev. Code § 4113.15(A)",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-4113.15",
+      "locator": "Ohio Rev. Code § 4113.15(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:59.913261+00:00",
+        "sha256": "efcd8ee475d00ea86424ebd95798940eb52b2cacdd52be966bb107e395f6c66d"
+      }
     }
   },
   "court_directory": [
@@ -394,6 +406,17 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Ohio Court of Common Pleas"
+    },
+    "997468083d52adb5fd526ad47fa7b2": {
+      "source_id": "US-OH:wageLaw:e08fd54a5666",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 4113.15(A)",
+      "text": "(A) Every employer doing business in this state shall, on or before the first day of each month, pay all its employees the wages earned by them during the first half of the preceding month ending with the fifteenth day thereof, and shall, on or before the fifteenth day of each month, pay such employees the wages earned by them during the last half of the preceding calendar month. If at any time of payment an employee is absent from the employee's regular place of labor and does not receive payment of wages through an authorized representative, such person shall be entitled to said payment at any time thereafter upon demand upon the proper paymaster at the place where such wages are usually paid and where such pay is due. This section does not prohibit the daily or weekly payment of wages. The use of a longer time lapse that is customary to a given trade, profession or occupation, or establishment of a different time lapse by written contract or by operation of law.",
+      "text_sha256": "71399c9bd67f1a7ab01bb5211d41fa6beded5c60ac304317f1858b643ad157d7",
+      "publisher_sha256": "efcd8ee475d00ea86424ebd95798940eb52b2cacdd52be966bb107e395f6c66d",
+      "retrieved_at": "2026-11-19T14:10:59.913261+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

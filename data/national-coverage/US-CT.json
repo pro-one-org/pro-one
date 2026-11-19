@@ -275,6 +275,18 @@
         "retrieved_at": "2026-11-18T15:14:26.543556+00:00",
         "sha256": "eccbb0d711a42bfa6b23924391a796a784b42f2818a626fed4514b9900e3dab8"
       }
+    },
+    "US-CT:wageLaw:68977cad0702": {
+      "category": "wageLaw",
+      "title": "Conn. Gen. Stat. § 31-71c",
+      "url": "https://cga.ct.gov/current/PUB/chap_558.htm",
+      "locator": "Conn. Gen. Stat. § 31-71c",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:56.026660+00:00",
+        "sha256": "ed6642bd9e7b553dea4399e6c18b777f0b529906d8378556eb220e6cd8471692"
+      }
     }
   },
   "court_directory": [
@@ -400,6 +412,17 @@
       "currentness": "historical",
       "language": "en",
       "edition": "2025 codification"
+    },
+    "532fb893c4b1aa2eae00568df501c3": {
+      "source_id": "US-CT:wageLaw:68977cad0702",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 31-71c",
+      "text": "(a) Whenever an employee voluntarily terminates his employment, the employer shall pay the employee's wages in full not later than the next regular pay day, as designated under section 31-71b, either through the regular payment channels or by mail. (b) Whenever an employer discharges an employee, the employer shall pay the employee's wages in full not later than the business day next succeeding the date of such discharge. (c) When work of any employee is suspended as a result of a labor dispute, or when an employee for any reason is laid off, the employer shall pay in full to such employee the wages earned by him not later than the next regular pay day, as designated under section 31-71b.",
+      "text_sha256": "35c13a3c523d2107b596e5f0228e5d3aaa7a4af555d1ed3de3462ff1f6deb016",
+      "publisher_sha256": "ed6642bd9e7b553dea4399e6c18b777f0b529906d8378556eb220e6cd8471692",
+      "retrieved_at": "2026-11-19T14:10:56.026660+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

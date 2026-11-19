@@ -296,6 +296,18 @@
         "retrieved_at": "2026-11-19T13:54:49.760549+00:00",
         "sha256": "238c02cdf4b36b388a94f49f46e74865508770fe06ec523177f719a3073d8802"
       }
+    },
+    "US-RI:wageLaw:c01cd25a6010": {
+      "category": "wageLaw",
+      "title": "R.I. Gen. Laws § 28-14-4",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE28/28-14/28-14-4.htm",
+      "locator": "R.I. Gen. Laws § 28-14-4",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:11:00.982302+00:00",
+        "sha256": "af61c1b904e75c8ea149e0d5003a54be89556a90400c7ffe27c58e18381e9b2b"
+      }
     }
   },
   "court_directory": [
@@ -522,6 +534,17 @@
       "decision_date": "2013-05-15",
       "opinion_role": "majority",
       "procedural_posture": "Negligence appeal from Kent County Superior Court."
+    },
+    "e6fd3fe9a95257f7244de9fe3249c5": {
+      "source_id": "US-RI:wageLaw:c01cd25a6010",
+      "authority_type": "statute",
+      "citation": "R.I. Gen. Laws § 28-14-4",
+      "text": "(a) Whenever an employee separates or is separated from the payroll of an employer, the unpaid wages or compensation of the employee shall become due on the next regular payday and payable at the usual place of payment. (b) Whenever an employee separates or is separated from the payroll of an employer after completing at least one year of service, any vacation pay accrued or awarded by collective bargaining, written or verbal company policy, or any other written or verbal agreement between the employer and employee shall become wages and payable in full or on a prorated basis with all other due wages on the next regular payday for the employee. (c) Whenever an employer separates an employee from the payroll as a result of the employer liquidating the business, merging the business, disposing the business, or removing the business out of state, all wages become immediately due and payable within twenty-four (24) hours of the time of separation at the usual place of payment. Additionally, if the employee has completed at least one year of service with the employer, holiday pay, vacation pay in full or on a prorated basis, and insurance benefits due the employee under a collective bargaining agreement, company policy, or other agreement between the employer and employee shall be considered as unpaid wages due and payable within twenty-four (24) hours of the time of separation at the usual place of payment.",
+      "text_sha256": "58a56a6804efb6c79334e7ff9c11274e72517559625bae192e44f4de093ce90e",
+      "publisher_sha256": "af61c1b904e75c8ea149e0d5003a54be89556a90400c7ffe27c58e18381e9b2b",
+      "retrieved_at": "2026-11-19T14:11:00.982302+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {
