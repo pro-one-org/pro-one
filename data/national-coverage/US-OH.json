@@ -238,6 +238,18 @@
         "retrieved_at": "2026-11-19T14:10:59.913261+00:00",
         "sha256": "efcd8ee475d00ea86424ebd95798940eb52b2cacdd52be966bb107e395f6c66d"
       }
+    },
+    "US-OH:contract_breach:39d4ca8d3505": {
+      "category": "contract_breach",
+      "title": "Quincy Communication v. Patrick, 2021-Ohio-1736, ¶ 10",
+      "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/1/2021/2021-Ohio-1736.pdf",
+      "locator": "Quincy Communication v. Patrick, 2021-Ohio-1736, ¶ 10",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:39:46.886724+00:00",
+        "sha256": "63edf00c58b592f1ad49f18c4efb9e31e55e1ca00eafc8cf00a0d84fa6aabce4"
+      }
     }
   },
   "court_directory": [
@@ -417,6 +429,22 @@
       "retrieved_at": "2026-11-19T14:10:59.913261+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "5d3354415c2ab12bd22546b10bf5eb": {
+      "source_id": "US-OH:contract_breach:39d4ca8d3505",
+      "authority_type": "opinion",
+      "citation": "Quincy Communication v. Patrick, 2021-Ohio-1736, ¶ 10",
+      "text": "The elements of a breach-of-contract claim are a contract, the plaintiff’s performance, a breach by the defendant, and damages. White v. Pitman , 2020-Ohio-3957, 156 N.E.3d 1026, ¶ 37 (1st Dist.).",
+      "text_sha256": "9cd9811d4a8e341c5ed9c2c4f366c9b8b9b2aa93be5b068fc74ec6df47e3539c",
+      "publisher_sha256": "63edf00c58b592f1ad49f18c4efb9e31e55e1ca00eafc8cf00a0d84fa6aabce4",
+      "retrieved_at": "2026-11-19T19:39:46.886724+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2021-05-21",
+      "court": "Ohio First District Court of Appeals",
+      "decision_date": "2021-05-21",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a municipal court judgment. Affirmed."
     }
   },
   "fault_allocation": {

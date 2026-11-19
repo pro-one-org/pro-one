@@ -36,6 +36,7 @@ SUBJECTS = {
     "response": ("civil_procedure", "initial_response"),
     "contract_formation": ("contracts", "contract_formation"),
     "automated_contract_formation": ("contracts", "automated_contract_formation"),
+    "contract_breach": ("contracts", "contract_breach"),
     "contract_damages": ("contracts", "accepted_goods_damages"),
 }
 

@@ -283,6 +283,18 @@
         "retrieved_at": "2026-11-19T19:26:45.748550+00:00",
         "sha256": "26fcbb1e36879e31e2162db6e1acea7ae07911d6ebeeea70d4db9e58e25c8775"
       }
+    },
+    "US-WV:contract_breach:74e99c8c8c60": {
+      "category": "contract_breach",
+      "title": "Carbon Energy Corp. v. Shonk Land Co., LLC, No. 24-ICA-154 (W. Va. ICA May 22, 2025)",
+      "url": "https://www.courtswv.gov/sites/default/pubfilesmnt/2025-05/24-ICA-154%20Opinion.pdf",
+      "locator": "Carbon Energy Corp. v. Shonk Land Co., LLC, No. 24-ICA-154 (W. Va. ICA May 22, 2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:39:42.051835+00:00",
+        "sha256": "4f03c5aaaf86589f3947de6695b0f4c0da10a56019c937a9cff5f3cf439bc57d"
+      }
     }
   },
   "court_directory": [
@@ -481,6 +493,22 @@
       "retrieved_at": "2026-11-19T19:26:45.748550+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "0b4fc4edd378006f2e504b33022fc2": {
+      "source_id": "US-WV:contract_breach:74e99c8c8c60",
+      "authority_type": "opinion",
+      "citation": "Carbon Energy Corp. v. Shonk Land Co., LLC, No. 24-ICA-154 (W. Va. ICA May 22, 2025)",
+      "text": "To establish a breach of contract claim, three elements must be presented. “A claim for breach of contract requires proof of the formation of a contract, a breach of the terms of that contract, and resulting damages.” Sneberger v. Morrison, 235 W. Va. 654, 669, 776 S.E.2d 156, 171 (2015).",
+      "text_sha256": "ee53637207b69417c4111b9ad4474124ca937c5c1411597269a2c3dfbbce013d",
+      "publisher_sha256": "4f03c5aaaf86589f3947de6695b0f4c0da10a56019c937a9cff5f3cf439bc57d",
+      "retrieved_at": "2026-11-19T19:39:42.051835+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2025-05-22",
+      "court": "Intermediate Court of Appeals of West Virginia",
+      "decision_date": "2025-05-22",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a circuit court judgment. Affirmed and reversed in part."
     }
   },
   "fault_allocation": {

@@ -301,6 +301,18 @@
         "retrieved_at": "2026-11-19T19:31:20.499305+00:00",
         "sha256": "0147a0490694fc10a6b237aeb32fc78b65160a7675b149b948783db100c55c9a"
       }
+    },
+    "US-FL:contract_breach:8c057d291b99": {
+      "category": "contract_breach",
+      "title": "Grove Isle Association, Inc. v. Grove Isle Associates, LLLP, No. 3D10-2312 (Fla. 3d DCA Mar. 26, 2014)",
+      "url": "https://flcourts-media.flcourts.gov/content/download/454246/opinion/Opinion_10-2312.pdf",
+      "locator": "Grove Isle Association, Inc. v. Grove Isle Associates, LLLP, No. 3D10-2312 (Fla. 3d DCA Mar. 26, 2014)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:39:39.450411+00:00",
+        "sha256": "449efcd3f289ccaafd01ccc5230a5ab0cf8c38eabf7ebee09c92aa90aa94f3d3"
+      }
     }
   },
   "court_directory": [
@@ -464,6 +476,22 @@
       "retrieved_at": "2026-11-19T19:31:20.499305+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "993dee34f11bb435a75161fd113fee": {
+      "source_id": "US-FL:contract_breach:8c057d291b99",
+      "authority_type": "opinion",
+      "citation": "Grove Isle Association, Inc. v. Grove Isle Associates, LLLP, No. 3D10-2312 (Fla. 3d DCA Mar. 26, 2014)",
+      "text": "“The elements of a breach of contract action are: (1) a valid contract; (2) a material breach; and (3) damages.” Schiffman v. Schiffman, 47 So. 3d 925, 927 (Fla. 3d DCA 2010) (quoting Abbott Labs., Inc. v. Gen. Elec. Capital, 765 So. 2d 737, 740 (Fla. 5th DCA 2000)).",
+      "text_sha256": "a1849dbcc710a9556a209348f837104d1ec6a891b2898c6db818aca3eb6b65c2",
+      "publisher_sha256": "449efcd3f289ccaafd01ccc5230a5ab0cf8c38eabf7ebee09c92aa90aa94f3d3",
+      "retrieved_at": "2026-11-19T19:39:39.450411+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2014-03-26",
+      "court": "Florida Third District Court of Appeal",
+      "decision_date": "2014-03-26",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissal with prejudice of condominium association claims. Reversed and remanded."
     }
   },
   "fault_allocation": {

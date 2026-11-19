@@ -363,6 +363,18 @@
         "retrieved_at": "2026-11-19T19:35:41.480991+00:00",
         "sha256": "9ab6865364fbb0decb42468d021fb53c93f0f58a319dedf2308b9a1eadb4e344"
       }
+    },
+    "US-VA:contract_breach:0035f6fc01dd": {
+      "category": "contract_breach",
+      "title": "Filak v. George, No. 031407 (Va. Apr. 23, 2004)",
+      "url": "https://www.vacourts.gov/static/opinions/opnscvwp/1031407.pdf",
+      "locator": "Filak v. George, No. 031407 (Va. Apr. 23, 2004)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:39:42.243348+00:00",
+        "sha256": "40bff5eb96358580eaefc518b0a082eaa2ee1fff1daec4d6344ad9773cf1b816"
+      }
     }
   },
   "court_directory": [
@@ -551,6 +563,22 @@
       "retrieved_at": "2026-11-19T19:35:41.480991+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "44771e174590dce96393013300fc28": {
+      "source_id": "US-VA:contract_breach:0035f6fc01dd",
+      "authority_type": "opinion",
+      "citation": "Filak v. George, No. 031407 (Va. Apr. 23, 2004)",
+      "text": "The elements of a breach of contract action are (1) a legally enforceable obligation of a defendant to a plaintiff; (2) the defendant's violation or breach of that obligation; and (3) injury or damage to the plaintiff caused by the breach of obligation.",
+      "text_sha256": "afddb80549438da3563d592c96394d1b4f66d273d203ad7685db84bb257312d0",
+      "publisher_sha256": "40bff5eb96358580eaefc518b0a082eaa2ee1fff1daec4d6344ad9773cf1b816",
+      "retrieved_at": "2026-11-19T19:39:42.243348+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2004-04-23",
+      "court": "Supreme Court of Virginia",
+      "decision_date": "2004-04-23",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from judgment for the defendant on asserted breach of contract and constructive fraud claims."
     }
   }
 }

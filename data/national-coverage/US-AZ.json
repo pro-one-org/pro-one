@@ -300,6 +300,18 @@
         "retrieved_at": "2026-11-19T19:23:23.221766+00:00",
         "sha256": "8dbf520997bc08885b6f4bb318f3077a0c8783cc86e6ef2f307a78fbab299595"
       }
+    },
+    "US-AZ:contract_breach:0cafb0180b82": {
+      "category": "contract_breach",
+      "title": "First American Title Insurance Co. v. Johnson Bank, No. CV-15-0244-PR (Ariz. June 13, 2016)",
+      "url": "https://www.azcourts.gov/Portals/0/OpinionFiles/Supreme/2016/CV150244PR.pdf",
+      "locator": "First American Title Insurance Co. v. Johnson Bank, No. CV-15-0244-PR (Ariz. June 13, 2016)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:39:38.801880+00:00",
+        "sha256": "046fa8094e5c0c4c38a6fa35d32322bdbc0eb482a185632beb65b48df98a0b5c"
+      }
     }
   },
   "court_directory": [
@@ -527,6 +539,22 @@
       "retrieved_at": "2026-11-19T19:23:23.221766+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "54a28afae7cb934605a2bbb44a493b": {
+      "source_id": "US-AZ:contract_breach:0cafb0180b82",
+      "authority_type": "opinion",
+      "citation": "First American Title Insurance Co. v. Johnson Bank, No. CV-15-0244-PR (Ariz. June 13, 2016)",
+      "text": "See Graham v. Asbury, 112 Ariz. 184, 185, 540 P.2d 656, 657 (1975) (identifying the elements of a breach-of-contract claim as: (1) the existence of a contract; (2) breach; and (3) result ing damages).",
+      "text_sha256": "c53656c09031c6b718d56102d3e64a9a0b9f295d662aeb9df23008b51a5c5905",
+      "publisher_sha256": "046fa8094e5c0c4c38a6fa35d32322bdbc0eb482a185632beb65b48df98a0b5c",
+      "retrieved_at": "2026-11-19T19:39:38.801880+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2016-06-13",
+      "court": "Supreme Court of Arizona",
+      "decision_date": "2016-06-13",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of title insurance contract damages. Reversed and remanded."
     }
   },
   "fault_allocation": {

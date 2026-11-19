@@ -394,6 +394,18 @@
         "retrieved_at": "2026-11-19T19:31:20.910554+00:00",
         "sha256": "d67a4e99292c1311a0a4f737db8885ab07e9f3b884a96f34a0c17563c53bfc6a"
       }
+    },
+    "US-IA:contract_breach:8157d420fba6": {
+      "category": "contract_breach",
+      "title": "5th and Walnut Parking LLC v. City of Des Moines, No. 24-1886 (Iowa June 12, 2026, amended Aug. 24, 2026)",
+      "url": "https://www.iowacourts.gov/courtcases/26031/embed/SupremeCourtOpinion",
+      "locator": "5th and Walnut Parking LLC v. City of Des Moines, No. 24-1886 (Iowa June 12, 2026, amended Aug. 24, 2026)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:39:39.534255+00:00",
+        "sha256": "6c607422c05df44c5a938e74040da9a6eabe2a3416167fca410f4049829a660a"
+      }
     }
   },
   "court_directory": [
@@ -593,6 +605,22 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Iowa Code 2026"
+    },
+    "4e1f730f0b97bf65367feb07b2f6d1": {
+      "source_id": "US-IA:contract_breach:8157d420fba6",
+      "authority_type": "opinion",
+      "citation": "5th and Walnut Parking LLC v. City of Des Moines, No. 24-1886 (Iowa June 12, 2026, amended Aug. 24, 2026)",
+      "text": "To succeed on a breach of contract claim, the claimant must prove the following: (1) [T]he existence of a contract; (2) the terms and conditions of the contract; (3) that it has performed all the terms and conditions required under the contract; (4) the defendant’s breach of the contract in some particular way; and (5) that plaintiff has suff ered damages as a result of the breach. Molo Oil Co. v. River City Ford Truck Sales, Inc., 578 N.W.2d 222, 224 (Iowa 1998).",
+      "text_sha256": "8345961eeb4b21089a74bad16b7035cfe69dc7b42a3a9dbb7756af5f3bd16bcc",
+      "publisher_sha256": "6c607422c05df44c5a938e74040da9a6eabe2a3416167fca410f4049829a660a",
+      "retrieved_at": "2026-11-19T19:39:39.534255+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Amended August 24, 2026",
+      "court": "Supreme Court of Iowa",
+      "decision_date": "2026-06-12",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal and cross-appeal from money judgment on a real estate project."
     }
   },
   "fault_allocation": {

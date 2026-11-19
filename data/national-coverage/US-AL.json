@@ -280,6 +280,18 @@
         "retrieved_at": "2026-11-19T13:54:39.848819+00:00",
         "sha256": "c39385b07f8aa09f05a68990def2b935e171f80a66083451d164ea3fb32c5e86"
       }
+    },
+    "US-AL:contract_breach:e8537641e810": {
+      "category": "contract_breach",
+      "title": "Coffman v. Snead Hydraulic & Supply, LLC, Nos. 2200446 and 2200452 (Ala. Civ. App. Feb. 11, 2022)",
+      "url": "https://acis.alabama.gov/displaydocs.cfm?event=69G0OUG81&no=1119717",
+      "locator": "Coffman v. Snead Hydraulic & Supply, LLC, Nos. 2200446 and 2200452 (Ala. Civ. App. Feb. 11, 2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:39:45.925274+00:00",
+        "sha256": "0198105ad04851844b1ef832dbc78351f633c49896445f5be796183eb2be41a5"
+      }
     }
   },
   "court_directory": [
@@ -468,6 +480,22 @@
       "decision_date": "2022-02-04",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from summary judgment in railroad negligence action."
+    },
+    "370e37fa83516775b8a1e8248f3256": {
+      "source_id": "US-AL:contract_breach:e8537641e810",
+      "authority_type": "opinion",
+      "citation": "Coffman v. Snead Hydraulic & Supply, LLC, Nos. 2200446 and 2200452 (Ala. Civ. App. Feb. 11, 2022)",
+      "text": "The elements of a breach-of-contract claim under Alabama law are (1) a valid contract binding the parties; (2) the plaintiffs' performance under the contract; (3) the defendant's nonperformance; and (4) resulting damages.' \"",
+      "text_sha256": "eeec045db77b5cf68c04ec2bff1a956f1febc64056d90a4e7470a7208b4c070d",
+      "publisher_sha256": "0198105ad04851844b1ef832dbc78351f633c49896445f5be796183eb2be41a5",
+      "retrieved_at": "2026-11-19T19:39:45.925274+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2022-02-11",
+      "court": "Alabama Court of Civil Appeals",
+      "decision_date": "2022-02-11",
+      "opinion_role": "majority",
+      "procedural_posture": "Circuit court contract appeals. One appeal dismissed and the other reversed and remanded."
     }
   }
 }
