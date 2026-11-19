@@ -297,6 +297,18 @@
         "retrieved_at": "2026-11-19T19:23:24.462984+00:00",
         "sha256": "7514a77b37e4d9d482562d4d9eb9fb41e0044358db415cc0956a294667502f75"
       }
+    },
+    "US-WA:written_contract_limitations:7c5db0837b8f": {
+      "category": "written_contract_limitations",
+      "title": "RCW § 4.16.040(1)",
+      "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=4.16.040",
+      "locator": "RCW § 4.16.040(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:35:43.165644+00:00",
+        "sha256": "13607a518daaa7dbf60a96d4ffecc96425813d69ddd49a07fa14420a823c6593"
+      }
     }
   },
   "court_directory": [
@@ -505,6 +517,17 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Code Reviser PDF certified August 15, 2025"
+    },
+    "64280bb68da979d842ef4110e7c47b": {
+      "source_id": "US-WA:written_contract_limitations:7c5db0837b8f",
+      "authority_type": "statute",
+      "citation": "RCW § 4.16.040(1)",
+      "text": "The following actions shall be commenced within six years: (1) An action upon a contract in writing, or liability express or implied arising out of a written agreement, except as provided for in RCW 64.04.007(2).",
+      "text_sha256": "2e8af4821e0e88f0280b139003ced4771dd25b3248bf75175c104858f6badd95",
+      "publisher_sha256": "13607a518daaa7dbf60a96d4ffecc96425813d69ddd49a07fa14420a823c6593",
+      "retrieved_at": "2026-11-19T19:35:43.165644+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

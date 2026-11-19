@@ -510,6 +510,30 @@
         "retrieved_at": "2026-11-19T19:31:28.592484+00:00",
         "sha256": "bf3cc4dda04bf46158a0092188030b3a216bdeb4e71d33731988e5e6502714bd"
       }
+    },
+    "US-WI:general_contract_limitations:a2e2b485cd9c": {
+      "category": "general_contract_limitations",
+      "title": "Wis. Stat. § 893.43(1)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/iv/43",
+      "locator": "Wis. Stat. § 893.43(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:35:43.285618+00:00",
+        "sha256": "f0747c61b6f7fd8b0bc995db4b1d8961e82a9a56bea01dc91f9f8fb973dfd470"
+      }
+    },
+    "US-WI:general_contract_limitations:91687d8a5b93": {
+      "category": "general_contract_limitations",
+      "title": "Wis. Stat. § 893.43(2)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/iv/43",
+      "locator": "Wis. Stat. § 893.43(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:35:43.285618+00:00",
+        "sha256": "f0747c61b6f7fd8b0bc995db4b1d8961e82a9a56bea01dc91f9f8fb973dfd470"
+      }
     }
   },
   "court_directory": [
@@ -915,6 +939,34 @@
       "language": "en",
       "current_as_of": "2026-11-04",
       "publisher_path": "/statutes/statutes/893/v/54/2m",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "f3d761387b34fac6a708191de324f5": {
+      "source_id": "US-WI:general_contract_limitations:a2e2b485cd9c",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 893.43(1)",
+      "text": "Except as provided in sub. (2), an action upon any contract, obligation, or liability, express or implied, including an action to recover fees for professional services, except those mentioned in s. 893.40, shall be commenced within 6 years after the cause of action accrues or be barred.",
+      "text_sha256": "b467ff0eafa03b0e568c9fc615b5959450e80a18775bf29fc595a19b6ada4066",
+      "publisher_sha256": "f0747c61b6f7fd8b0bc995db4b1d8961e82a9a56bea01dc91f9f8fb973dfd470",
+      "retrieved_at": "2026-11-19T19:35:43.285618+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/893/iv/43/1",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "5aa815c118046dc1be4b34060c56f2": {
+      "source_id": "US-WI:general_contract_limitations:91687d8a5b93",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 893.43(2)",
+      "text": "An action upon a motor vehicle insurance policy described in s. 632.32 (1) shall be commenced within 3 years after the cause of action accrues or be barred. A cause of action involving underinsured motorist coverage, as defined in s. 632.32 (2) (d), or uninsured motorist coverage, as defined in s. 632.32 (2) (f), accrues on the date there is final resolution of the underlying cause of action by the injured party against the tortfeasor.",
+      "text_sha256": "55024a460e3b1280b3b99b5a2d9a5d8ff01fd28c692aedca9c2058c64c14f3c4",
+      "publisher_sha256": "f0747c61b6f7fd8b0bc995db4b1d8961e82a9a56bea01dc91f9f8fb973dfd470",
+      "retrieved_at": "2026-11-19T19:35:43.285618+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/893/iv/43/2",
       "edition": "Wisconsin Statutes certified November 4, 2026"
     }
   },

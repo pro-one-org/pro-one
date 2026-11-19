@@ -16,6 +16,7 @@ SUBJECTS = {
     "wrongful_death_limitations": ("torts", "wrongful_death_limitations"),
     "written_contract_limitations": ("contracts", "written_contract_limitations"),
     "oral_contract_limitations": ("contracts", "oral_contract_limitations"),
+    "general_contract_limitations": ("contracts", "contract_limitations"),
     "fault": ("torts", "fault_allocation"),
     "deposit": ("landlord_tenant", "security_deposit"),
     "habitability": ("landlord_tenant", "habitability"),

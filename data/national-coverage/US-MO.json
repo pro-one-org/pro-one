@@ -233,6 +233,18 @@
         "retrieved_at": "2026-11-19T19:31:21.580666+00:00",
         "sha256": "3695f73e648b32205241b1d918c09bb8bc17a6aa86ba718b1460537b4d9c34cc"
       }
+    },
+    "US-MO:written_contract_limitations:7bded41c62c1": {
+      "category": "written_contract_limitations",
+      "title": "Mo. Rev. Stat. § 516.110(1)",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=516.110",
+      "locator": "Mo. Rev. Stat. § 516.110(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:35:42.205333+00:00",
+        "sha256": "99c10fd7a3b116a7f08b4905a09bfa5d416f03d4ad1e5b829a6aaa3de50184d0"
+      }
     }
   },
   "court_directory": [
@@ -354,6 +366,17 @@
       "text_sha256": "0d444e766292745718a05861c22a9cc32e45bf0850d4b41074ab91db38d8c758",
       "publisher_sha256": "3695f73e648b32205241b1d918c09bb8bc17a6aa86ba718b1460537b4d9c34cc",
       "retrieved_at": "2026-11-19T19:31:21.580666+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "de416f28968ec8b981313a7645069b": {
+      "source_id": "US-MO:written_contract_limitations:7bded41c62c1",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 516.110(1)",
+      "text": "Within ten years: (1) An action upon any writing, whether sealed or unsealed, for the payment of money or property;",
+      "text_sha256": "ed624685af7b950ae93c9996f5883ce7e827aa17b8ba39562d50663ff4049688",
+      "publisher_sha256": "99c10fd7a3b116a7f08b4905a09bfa5d416f03d4ad1e5b829a6aaa3de50184d0",
+      "retrieved_at": "2026-11-19T19:35:42.205333+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

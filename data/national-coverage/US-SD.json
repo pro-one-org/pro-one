@@ -276,6 +276,18 @@
         "retrieved_at": "2026-11-19T19:31:23.516198+00:00",
         "sha256": "f56477102ef1f3dcb56023feec50f901882759daac13768d8792e25ef8617a81"
       }
+    },
+    "US-SD:general_contract_limitations:b37f0098faf2": {
+      "category": "general_contract_limitations",
+      "title": "SDCL § 15-2-13(1)",
+      "url": "https://sdlegislature.gov/api/Statutes/15-2-13.html",
+      "locator": "SDCL § 15-2-13(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:35:42.819984+00:00",
+        "sha256": "31522165f59292d57ee6bb231e8f2579d38c23c3608ad9794231507f3cdbe9a2"
+      }
     }
   },
   "court_directory": [
@@ -438,6 +450,17 @@
       "text_sha256": "d51c987db53128e28eb3437faa10ae92ee01e54bee3390b87cdf03e817682d91",
       "publisher_sha256": "f56477102ef1f3dcb56023feec50f901882759daac13768d8792e25ef8617a81",
       "retrieved_at": "2026-11-19T19:31:23.516198+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "ab4ea4f2df4d96a468407548667f1e": {
+      "source_id": "US-SD:general_contract_limitations:b37f0098faf2",
+      "authority_type": "statute",
+      "citation": "SDCL § 15-2-13(1)",
+      "text": "Except where, in special cases, a different limitation is prescribed by statute, the following civil actions other than for the recovery of real property can be commenced only within six years after the cause of action shall have accrued: (1) An action upon a contract, obligation, or liability, express or implied, excepting those mentioned in §§ 15-2-6 to 15-2-8, inclusive, and subdivisions 15-2-15(3) and (4);",
+      "text_sha256": "d1604b9165644a11369581e6744e312297b8c4240a4b5334b2a80ba18e10865c",
+      "publisher_sha256": "31522165f59292d57ee6bb231e8f2579d38c23c3608ad9794231507f3cdbe9a2",
+      "retrieved_at": "2026-11-19T19:35:42.819984+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

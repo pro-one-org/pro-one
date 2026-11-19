@@ -287,6 +287,30 @@
         "retrieved_at": "2026-11-19T19:31:23.384864+00:00",
         "sha256": "e59f0be003f4fd3ac125a5d20251b764d9c480a2c4f5d9af61f7c12141e43b34"
       }
+    },
+    "US-ID:written_contract_limitations:aa4fb57d384c": {
+      "category": "written_contract_limitations",
+      "title": "Idaho Code § 5-216",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title5/T5CH2/SECT5-216/",
+      "locator": "Idaho Code § 5-216",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:35:42.535404+00:00",
+        "sha256": "3450771b225e181dc81136765810e57598cecef2e2ea11a72f07100b5d7c3a59"
+      }
+    },
+    "US-ID:oral_contract_limitations:dffacfe4c5fc": {
+      "category": "oral_contract_limitations",
+      "title": "Idaho Code § 5-217",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title5/T5CH2/SECT5-217/",
+      "locator": "Idaho Code § 5-217",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:35:42.518165+00:00",
+        "sha256": "c113a5ba7e421992fa6d958103377397371fe2dd3790dc66906d636870820110"
+      }
     }
   },
   "court_directory": [
@@ -434,6 +458,28 @@
       "text_sha256": "a7c8819a5a3ed5c501a79111649eac18e33e495714f841e415a6449ed3135ebb",
       "publisher_sha256": "e59f0be003f4fd3ac125a5d20251b764d9c480a2c4f5d9af61f7c12141e43b34",
       "retrieved_at": "2026-11-19T19:31:23.384864+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "dad8632a38e70389cbdf999e170821": {
+      "source_id": "US-ID:written_contract_limitations:aa4fb57d384c",
+      "authority_type": "statute",
+      "citation": "Idaho Code § 5-216",
+      "text": "Within five (5) years: An action upon any contract, obligation or liability founded upon an instrument in writing. The limitations prescribed by this section shall never apply to actions in the name or for the benefit of the state and shall never be asserted nor interposed as a defense to any action in the name or for the benefit of the state although such limitations may have become fully operative as a defense prior to the adoption of this amendment.",
+      "text_sha256": "2d779822011057e80ed2dda1c13e72a00dc889e47f1e39396a3f1fa147d9e43d",
+      "publisher_sha256": "3450771b225e181dc81136765810e57598cecef2e2ea11a72f07100b5d7c3a59",
+      "retrieved_at": "2026-11-19T19:35:42.535404+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "4d2d4e948ec409aa250a9e49d36a44": {
+      "source_id": "US-ID:oral_contract_limitations:dffacfe4c5fc",
+      "authority_type": "statute",
+      "citation": "Idaho Code § 5-217",
+      "text": "Within four (4) years: An action upon a contract, obligation or liability not founded upon an instrument of writing.",
+      "text_sha256": "0e94f6f013828d07c2b4be2173cc9f7aa6bd634c459dd4146b31417e93a1f44b",
+      "publisher_sha256": "c113a5ba7e421992fa6d958103377397371fe2dd3790dc66906d636870820110",
+      "retrieved_at": "2026-11-19T19:35:42.518165+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

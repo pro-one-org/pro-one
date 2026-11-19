@@ -370,6 +370,30 @@
         "retrieved_at": "2026-11-19T19:31:20.910554+00:00",
         "sha256": "d67a4e99292c1311a0a4f737db8885ab07e9f3b884a96f34a0c17563c53bfc6a"
       }
+    },
+    "US-IA:written_contract_limitations:2d10689988d6": {
+      "category": "written_contract_limitations",
+      "title": "Iowa Code § 614.1(5)",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/614.1.pdf",
+      "locator": "Iowa Code § 614.1(5)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:20.910554+00:00",
+        "sha256": "d67a4e99292c1311a0a4f737db8885ab07e9f3b884a96f34a0c17563c53bfc6a"
+      }
+    },
+    "US-IA:oral_contract_limitations:fb02b474ec03": {
+      "category": "oral_contract_limitations",
+      "title": "Iowa Code § 614.1(4)",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/614.1.pdf",
+      "locator": "Iowa Code § 614.1(4)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:20.910554+00:00",
+        "sha256": "d67a4e99292c1311a0a4f737db8885ab07e9f3b884a96f34a0c17563c53bfc6a"
+      }
     }
   },
   "court_directory": [
@@ -540,6 +564,30 @@
       "citation": "Iowa Code § 614.1(2)",
       "text": "2. Injuries to person or reputation — relative rights — statute penalty . Those founded on injuries to the person or reputation, including injuries to relative rights, whether based on contract or tort, or for a statute penalty , within two years.",
       "text_sha256": "889e07d01a35284e43af851378d99065d6de20893afc8bc2dfad2e48268687b6",
+      "publisher_sha256": "d67a4e99292c1311a0a4f737db8885ab07e9f3b884a96f34a0c17563c53bfc6a",
+      "retrieved_at": "2026-11-19T19:31:20.910554+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Iowa Code 2026"
+    },
+    "98ce895c33bdd154d77f71a7f43cf2": {
+      "source_id": "US-IA:written_contract_limitations:2d10689988d6",
+      "authority_type": "statute",
+      "citation": "Iowa Code § 614.1(5)",
+      "text": "5. W ritten contracts — judgments of courts not of record — recovery of real property and rent. a. Except as provided in paragraph “b” , those founded on written contracts, or on judgments of any courts except those provided for in subsection 6 , and those brought for the recovery of real property , within ten years. b. Those founded on claims for rent, within five years.",
+      "text_sha256": "ba73aea73d108d12b67369afd7e6b05a31b9763ebebcc86b5d60c05dba8cd5cc",
+      "publisher_sha256": "d67a4e99292c1311a0a4f737db8885ab07e9f3b884a96f34a0c17563c53bfc6a",
+      "retrieved_at": "2026-11-19T19:31:20.910554+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Iowa Code 2026"
+    },
+    "948fb44351973f1acff7952b9bc540": {
+      "source_id": "US-IA:oral_contract_limitations:fb02b474ec03",
+      "authority_type": "statute",
+      "citation": "Iowa Code § 614.1(4)",
+      "text": "4. Unwritten contracts — injuries to property — fraud — other actions. Those founded on unwritten contracts, those brought for injuries to property , or for relief on the ground of fraud in cases heretofore solely cognizable in a court of chancery , and all other actions not otherwise provided for in this respect, within five years, except as provided by subsections 8 and 10 .",
+      "text_sha256": "866701a7fcd892f74d8a541599a168f470a0d8d4eea72661dbff5c9199b8d77d",
       "publisher_sha256": "d67a4e99292c1311a0a4f737db8885ab07e9f3b884a96f34a0c17563c53bfc6a",
       "retrieved_at": "2026-11-19T19:31:20.910554+00:00",
       "currentness": "historical",
