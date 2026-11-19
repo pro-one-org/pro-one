@@ -197,6 +197,18 @@
         "retrieved_at": "2026-11-18T20:40:10.884333+00:00",
         "sha256": "fa9a1539ea27ab8a9dab5ae55b9f1c0efcf8cf62050ba87d652f681e0f63397d"
       }
+    },
+    "US-PA:fault:1deb88482607": {
+      "category": "fault",
+      "title": "Roverano v. John Crane, Inc., Nos. 26 and 27 EAP 2018 (Pa. Feb. 19, 2020)",
+      "url": "https://www.pacourts.us/assets/opinions/Supreme/out/j-10a-2019mo%20-%2010434040095151580.pdf",
+      "locator": "Roverano v. John Crane, Inc., Nos. 26 and 27 EAP 2018 (Pa. Feb. 19, 2020)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T18:57:48.976320+00:00",
+        "sha256": "a46e093f7c4d708e02a3f9467300473ff898970030796c21793310f8159f6239"
+      }
     }
   },
   "court_directory": [
@@ -313,6 +325,29 @@
       "decision_date": "2025-03-20",
       "opinion_role": "majority",
       "procedural_posture": "Parentage appeal. The court affirmed on the ground of intent-based parentage."
+    },
+    "8a0025acf6d1ff898eba6b9a092d4f": {
+      "source_id": "US-PA:fault:1deb88482607",
+      "authority_type": "opinion",
+      "citation": "Roverano v. John Crane, Inc., Nos. 26 and 27 EAP 2018 (Pa. Feb. 19, 2020)",
+      "text": "(a) General rule.--In all actions brought to recover damages for negligence resulting in death or injury to person or property, the fact that the plaintiff may have been guilty of contributory negligence shall not bar a recovery by the plaintiff or his legal representative where such negligence was not greater than the causal negl igence of the defendant or defendants against whom recovery is sought, but any damages sustained by the plaintiff shall be diminished in proportion to the amount of negligence attributed to the plaintiff.",
+      "text_sha256": "79ead704bfc07601ffb26d05e4511329b4a992db8ae76f5a016adecc7e4a82e3",
+      "publisher_sha256": "a46e093f7c4d708e02a3f9467300473ff898970030796c21793310f8159f6239",
+      "retrieved_at": "2026-11-19T18:57:48.976320+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2020-02-19",
+      "court": "Supreme Court of Pennsylvania",
+      "decision_date": "2020-02-19",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal concerning allocation in asbestos strict-liability litigation."
     }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "source_id": "US-PA:fault:1deb88482607",
+    "passage_selector": "8a0025acf6d1ff898eba6b9a092d4f",
+    "currentness": "historical",
+    "qualification": "The opinion reproduces 42 Pa.C.S. § 7102(a). Its discussion of asbestos strict-liability apportionment is separate."
   }
 }

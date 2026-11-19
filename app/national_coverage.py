@@ -158,6 +158,7 @@ def coverage(value):
             only_historical = (bindings or historical) and not (has_unresolved or certified)
             cells[area + "." + capability] = {
                 "status": "currentness_unresolved" if has_unresolved else "dated_passage_available" if certified else "historical_only" if only_historical else "reference_only" if refs or leads else "not_yet_supported",
+                "coverage_depth": "partial" if bindings or historical else "reference_only" if refs or leads else "unsupported",
                 "certified_passages_as_of": certified,
                 "historical_granules": historical,
                 "passage_selectors": bindings,
@@ -169,6 +170,7 @@ def coverage(value):
     for kind in ACTION_REQUIREMENTS:
         shell = next((s for s in shells if s["action_type"] == kind), None)
         cells["action." + kind] = {"status": shell["coverage_status"] if shell else "not_yet_supported",
+                                  "coverage_depth": "reference_only" if shell else "unsupported",
                                   "definition_id": shell["id"] if shell else None, "currentness": "currentness_unresolved"}
     return {"jurisdiction": scope, "name": registry()[scope].name, "kind": registry()[scope].kind,
             "coverage_version": record["version"], "cells": cells, "sources": record["sources"],
@@ -182,6 +184,7 @@ def coverage(value):
 def summary():
     counts = Counter()
     by_status = Counter()
+    by_depth = Counter()
     endpoints = set()
     version_status = Counter(historical=len(federal_granules()))
     for scope, owner in registry().items():
@@ -198,9 +201,10 @@ def summary():
         counts["small_claims_source_entries"] += sum(s["category"] == "small_claims" for s in row["sources"].values())
         counts["coverage_cells"] += len(row["cells"])
         by_status.update(v["status"] for v in row["cells"].values())
+        by_depth.update(v["coverage_depth"] for v in row["cells"].values())
     return {"jurisdictions": len(registry()), **counts, "unique_directory_endpoints": len(endpoints),
             "retained_authority_evidence": {"total": sum(version_status.values()),
                                             "publisher_verified_as_of": version_status["current_as_of"],
                                             "historical": version_status["historical"],
                                             "currentness_unresolved": version_status["unresolved"]},
-            "coverage_statuses": dict(by_status), "execution": "disabled"}
+            "coverage_statuses": dict(by_status), "coverage_depth": dict(by_depth), "execution": "disabled"}

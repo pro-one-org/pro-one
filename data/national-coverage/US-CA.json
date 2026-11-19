@@ -420,6 +420,18 @@
         "retrieved_at": "2026-11-18T20:28:24.335839+00:00",
         "sha256": "e207b022bbcd244f7851a269b4e83e07a702c6e61b7b0342cc270054e8abdcc3"
       }
+    },
+    "US-CA:fault:4c26491cf27e": {
+      "category": "fault",
+      "title": "B.B. v. County of Los Angeles, No. S250734 (Cal. Aug. 10, 2020)",
+      "url": "https://supreme.courts.ca.gov/sites/default/files/supremecourt/default/2022-08/S250734.pdf",
+      "locator": "B.B. v. County of Los Angeles, No. S250734 (Cal. Aug. 10, 2020)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T18:56:03.214134+00:00",
+        "sha256": "103fc32e865d66bc8953090c9425ffc810063ba97a0ebc7a8a9dee8b610a3443"
+      }
     }
   },
   "court_directory": [
@@ -703,6 +715,29 @@
       "publisher_section_id": "BPC17200.19924302",
       "publisher_history": "Amended by Stats. 1992, Ch. 430, Sec. 2.   Effective January 1, 1993.",
       "effective_from": "1993-01-01"
+    },
+    "dc0ae0c6dc8db3566cc3595469f4f8": {
+      "source_id": "US-CA:fault:4c26491cf27e",
+      "authority_type": "opinion",
+      "citation": "B.B. v. County of Los Angeles, No. S250734 (Cal. Aug. 10, 2020)",
+      "text": "In 1975, in Li, supra, 13 Cal.3d at page 829, we abolished the contributory negligence defense and replaced it with “ a system of ‘pure’ comparative negligence ” that “ assess[es] liability in proportion to negligence.” Under that system, we explained, “liability for damage will be borne by those whose negligence caused it in direct proportion to their respective fault” (id. at p. 813), meaning “the amount of [their] negligence” (id. at p. 829).",
+      "text_sha256": "5664daf0cb288d5ee078a233710571c14ddccb74d727d337959949ef759e25ba",
+      "publisher_sha256": "103fc32e865d66bc8953090c9425ffc810063ba97a0ebc7a8a9dee8b610a3443",
+      "retrieved_at": "2026-11-19T18:56:03.214134+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2020-08-10",
+      "court": "Supreme Court of California",
+      "decision_date": "2020-08-10",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of apportionment of noneconomic damages for an intentional tort."
     }
+  },
+  "fault_allocation": {
+    "regime": "pure_comparative",
+    "source_id": "US-CA:fault:4c26491cf27e",
+    "passage_selector": "dc0ae0c6dc8db3566cc3595469f4f8",
+    "currentness": "historical",
+    "qualification": "The court describes the rule for negligence and separately considers intentional tort liability."
   }
 }

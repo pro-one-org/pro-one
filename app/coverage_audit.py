@@ -50,12 +50,13 @@ def state_baseline():
             continue
         row = coverage(scope)
         for key, cell in row["cells"].items():
-            report = domains.setdefault(key, {"passages": Counter(), "capability_statuses": Counter(),
+            report = domains.setdefault(key, {"passages": Counter(), "capability_statuses": Counter(), "coverage_depth": Counter(),
                                                "with_passages": [], "without_passages": []})
             selectors = set(cell.get("passage_selectors", ()))
             for selector in selectors:
                 report["passages"][row["passages"][selector]["currentness"]] += 1
             report["capability_statuses"][cell["status"]] += 1
+            report["coverage_depth"][cell["coverage_depth"]] += 1
             report["with_passages" if selectors else "without_passages"].append(scope)
     return domains
 

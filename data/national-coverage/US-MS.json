@@ -153,6 +153,18 @@
         "retrieved_at": "2026-11-18T20:31:26.168376+00:00",
         "sha256": "084da13bb59927713f4f1a66a97ebd3ce6ce2e52ab041f068b444be243ac23c2"
       }
+    },
+    "US-MS:fault:35f65da6679a": {
+      "category": "fault",
+      "title": "Smith v. Church Mutual Insurance Co., No. 2016-IA-01060-SCT, ¶ 22 (Miss. Aug. 2, 2018)",
+      "url": "https://courts.ms.gov/images/Opinions/CO131947.pdf",
+      "locator": "Smith v. Church Mutual Insurance Co., No. 2016-IA-01060-SCT, ¶ 22 (Miss. Aug. 2, 2018)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T18:56:02.174507+00:00",
+        "sha256": "911a17e3345ca7e4e67b3f2c0d6fd52af78a61ef95190bb6d14f4a10cdccc1a7"
+      }
     }
   },
   "court_directory": [
@@ -269,6 +281,29 @@
       "decision_date": "2019-06-06",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from Harrison County Circuit Court; judgment affirmed."
+    },
+    "765346092c4b10b7cf61516ef7ec28": {
+      "source_id": "US-MS:fault:35f65da6679a",
+      "authority_type": "opinion",
+      "citation": "Smith v. Church Mutual Insurance Co., No. 2016-IA-01060-SCT, ¶ 22 (Miss. Aug. 2, 2018)",
+      "text": "Additionally, Mississippi applies a pure comparative-fault scheme, while Tennessee uses a modified comparative-fault scheme. Compare Miss. Code Ann. § 11-7-15 (Rev. 2004), with McIntyre v. Balentine, 833 S.W.2d 52, 57 (Tenn. 1992) (abrogating contributory-negligence scheme and adopting “a system of modified comparative fault”).",
+      "text_sha256": "ec61cca4c07da9bceac3e5213ad7c8fb5b376bd7f3f4f875852efe9e617b20c9",
+      "publisher_sha256": "911a17e3345ca7e4e67b3f2c0d6fd52af78a61ef95190bb6d14f4a10cdccc1a7",
+      "retrieved_at": "2026-11-19T18:56:02.174507+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2018-08-02",
+      "court": "Supreme Court of Mississippi",
+      "decision_date": "2018-08-02",
+      "opinion_role": "majority",
+      "procedural_posture": "Interlocutory appeal in a personal injury action involving a choice of law."
     }
+  },
+  "fault_allocation": {
+    "regime": "pure_comparative",
+    "source_id": "US-MS:fault:35f65da6679a",
+    "passage_selector": "765346092c4b10b7cf61516ef7ec28",
+    "currentness": "historical",
+    "qualification": "This historical statement describes Mississippi law in a choice-of-law analysis and does not establish the law that applies to a new case."
   }
 }

@@ -249,6 +249,18 @@
         "retrieved_at": "2026-11-19T13:54:36.491435+00:00",
         "sha256": "722b11c1b7f1ad8bf39fdb1cc613c950b28ffa028e5fce9e3dccab9d9b33a824"
       }
+    },
+    "US-CO:fault:3f3dffa88b1a": {
+      "category": "fault",
+      "title": "Westin Operator, LLC v. Groh, 2015 CO 25, n.9",
+      "url": "https://www.coloradojudicial.gov/sites/default/files/2024-05/13SC382.pdf",
+      "locator": "Westin Operator, LLC v. Groh, 2015 CO 25, n.9",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T18:57:49.194584+00:00",
+        "sha256": "48327080891855d7b1107a5ee94622da15904257fb16dbe412a25367f230d991"
+      }
     }
   },
   "court_directory": [
@@ -399,6 +411,29 @@
       "decision_date": "2006-02-21",
       "opinion_role": "majority",
       "procedural_posture": "Certiorari on negligent hiring and respondeat superior claims."
+    },
+    "addf4e2a966b9f009fb48577879d68": {
+      "source_id": "US-CO:fault:3f3dffa88b1a",
+      "authority_type": "opinion",
+      "citation": "Westin Operator, LLC v. Groh, 2015 CO 25, n.9",
+      "text": "The statute provides that a plaintiff’s contributory negligence does not bar recovery in a negligence action provided that “such negligence was not as great as the negligence of the person against whom recovery is sought.” § 13 -21-111(1). But it limits recovery in that “any damages allowed shall be diminished in proportion to the amount of negligence attributable to the person for whose injury, damage, or death recovery is made.” Id.",
+      "text_sha256": "284dba0232b8ba2d62c34b17e69203b6266793041e6eb5f759faa6da6dcfa860",
+      "publisher_sha256": "48327080891855d7b1107a5ee94622da15904257fb16dbe412a25367f230d991",
+      "retrieved_at": "2026-11-19T18:57:49.194584+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2015-04-13",
+      "court": "Supreme Court of Colorado",
+      "decision_date": "2015-04-13",
+      "opinion_role": "majority",
+      "procedural_posture": "Certiorari review of summary judgment on negligence-related claims."
     }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_50",
+    "source_id": "US-CO:fault:3f3dffa88b1a",
+    "passage_selector": "addf4e2a966b9f009fb48577879d68",
+    "currentness": "historical",
+    "qualification": "The opinion quotes the threshold and proportional reduction in Colo. Rev. Stat. § 13-21-111(1)."
   }
 }

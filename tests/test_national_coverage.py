@@ -21,6 +21,14 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_partial_historical_fault_authority_is_separate_from_current_support(self):
+        cell = coverage("US-CO")["cells"]["substantive.fault_allocation"]
+        self.assertEqual(cell["coverage_depth"], "partial")
+        self.assertEqual(cell["status"], "historical_only")
+        self.assertEqual(cell["allocation"]["regime"], "modified_comparative_50")
+        self.assertEqual(cell["allocation"]["currentness"], "historical")
+        self.assertFalse(cell["certified_passages_as_of"])
+
     def test_historical_negligence_elements_do_not_supply_fault_or_present_law(self):
         query = ResearchMatter(country="US", state="Alabama", legal_area="torts",
                                topics=["negligence_elements"], authority_types=["opinion"],
