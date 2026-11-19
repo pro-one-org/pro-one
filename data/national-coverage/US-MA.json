@@ -303,6 +303,30 @@
         "retrieved_at": "2026-11-19T14:10:55.472282+00:00",
         "sha256": "c8d2c1eb5382ac594b5b025d411b6ecb3ddcd7cf6779d07906f094e0f7de9ddf"
       }
+    },
+    "US-MA:deposit:20799ff6f74d": {
+      "category": "deposit",
+      "title": "Mass. Gen. Laws ch. 186, § 15B(1)(b)",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15b",
+      "locator": "Mass. Gen. Laws ch. 186, § 15B(1)(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:20:35.889124+00:00",
+        "sha256": "8f9ce4e1aa743b7ba363f9788e9cce8bb87029889ef9e6df7fe34061a8cd360f"
+      }
+    },
+    "US-MA:debtLaw:91d5c63f34b8": {
+      "category": "debtLaw",
+      "title": "Mass. Gen. Laws ch. 93, § 24A",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXV/Chapter93/Section24a",
+      "locator": "Mass. Gen. Laws ch. 93, § 24A",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:23:24.052052+00:00",
+        "sha256": "f843d89255886f5afd8ef36a549e37273406ad7f53956ef7d305403cd109d332"
+      }
     }
   },
   "court_directory": [
@@ -496,6 +520,30 @@
       "text_sha256": "97afe3366de7bfe4f3184e4d199b861aa6381ee5886994c140270ccbc16739a3",
       "publisher_sha256": "c8d2c1eb5382ac594b5b025d411b6ecb3ddcd7cf6779d07906f094e0f7de9ddf",
       "retrieved_at": "2026-11-19T14:10:55.472282+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "f03dcf893d09c3a57c918c92380e55": {
+      "source_id": "US-MA:deposit:20799ff6f74d",
+      "authority_type": "statute",
+      "citation": "Mass. Gen. Laws ch. 186, § 15B(1)(b)",
+      "text": "(b) At or prior to the commencement of any tenancy, no lessor or agent of the lessor may require a tenant or prospective tenant to pay, to the lessor or to an agent of the lessor, any amount in excess of the following: (i) rent for the first full month of occupancy; and, (ii) rent for the last full month of occupancy calculated at the same rate as the first month; and, (iii) a security deposit equal to the first month's rent provided that such security deposit is deposited as required by subsection (3) and that the tenant is given the statement of condition as required by subsection (2); provided, however, that the executive office of housing and livable communities may promulgate regulations to authorize a lessor and a tenant or prospective tenant to agree to the payment of a fee in lieu of payment of a security deposit; provided further, that any such regulations shall: (A) require the lessor to utilize a fee collected to waive a security deposit to cover for unpaid rent or unit damage that applies to the tenant's lease; (B) require that a fee so collected be: (I) entirely or partially non-refundable; provided, however, that the lessor shall disclose that the fee is non-refundable in the lease; provided further, that the tenant shall agree to the fee and acknowledge that the tenant understand that it is entirely or partially non-refundable, as the case may be, in writing; and (II) a recurring monthly fee, or payable upon any schedule and in an amount that the lessor and tenant agree upon, as authorized by the executive office; (C) limit the total sum of the fee or recurring payments, regardless of the duration of the lease and any extensions thereto, to an amount not to exceed 1 month's rent; (D) require that the fee be made optional for both the tenant and the lessor and that the tenant be permitted to choose to pay a full security deposit rather than the fee; (E) require a lessor who offers such a fee in lieu of security deposit: (I) to offer the option of a fee in lieu of a security deposit to every prospective tenant whose application for occupancy has been approved, regardless of income, race, gender, gender identity, disability, sexual orientation, immigration status, size of household or credit score; and (II) not to consider such factors and categories when setting the amount of the fee; and (F) allow a tenant who agrees to pay a fee to waive a security deposit to opt-out of the obligation to pay such fee if such tenant pays the security deposit that would otherwise be in effect for the tenant's apartment on the day the tenant chooses to opt-out of such fee; provided further, that the sum of fees paid to waive a security deposit and the payment of the security deposit shall not exceed, in total, the amount of 1 month's rent; and provided further, that the executive office shall consult with the office of the attorney general prior to promulgating regulations authorizing a fee in lieu of a security deposit under this section; and, (iv) the purchase and installation cost for a key and lock.",
+      "text_sha256": "e0f520a12f59b52e84769a0b2f79508449503d27262094b8c820f6bc128b3d70",
+      "publisher_sha256": "8f9ce4e1aa743b7ba363f9788e9cce8bb87029889ef9e6df7fe34061a8cd360f",
+      "retrieved_at": "2026-11-19T19:20:35.889124+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2025-08-01",
+      "edition": "Text effective August 1, 2025 under 2025 Mass. Acts ch. 9"
+    },
+    "dbcd0e9fb0438f7cbae2b34fe9538c": {
+      "source_id": "US-MA:debtLaw:91d5c63f34b8",
+      "authority_type": "statute",
+      "citation": "Mass. Gen. Laws ch. 93, § 24A",
+      "text": "No person shall directly or indirectly engage in the commonwealth in the business of a debt collector, or engage in the commonwealth in soliciting the right to collect or receive payment for another of an account, bill or other indebtedness, or advertise for or solicit in print the right to collect or receive payment for another of an account, bill or other indebtedness, without first obtaining from the commissioner a license to carry on the business, nor unless the person or the person for whom he or it may be acting as agent has on file with the state treasurer a good and sufficient bond. (b) A person shall not directly or indirectly engage in the commonwealth in the business of a third party loan servicer without registering with the commissioner. A registrant shall not be required to comply with sections 24F to 27, inclusive. (c) This section shall not apply to a bank as defined in section 1 of chapter 167, a national banking association, federal savings bank, federal savings and loan association, federal credit union, or any bank, trust company, savings bank, savings and loan association or credit union organized under the laws of any other state of the United States, or any subsidiary of the above; but except as provided herein, this section shall apply to a subsidiary or affiliate, as defined by the commissioner, of an exempted entity and of a bank holding company established in accordance with state or federal law. The commissioner may adopt, amend or repeal rules and regulations, to aid in the administration and enforcement of this chapter. (d) The commissioner may from time to time establish regulations pertaining to the conduct of the business of a debt collector or a third party loan servicer as he considers necessary. (e) A student loan servicer licensed under chapter 93L who is engaged solely in the activities of a student loan servicer shall not be required to: (i) obtain a debt collector license pursuant to subsection (a); or (ii) register as a third party loan servicer pursuant to subsection (b); provided, however, that if a student loan servicer acts, represents, operates or holds itself out as a third party loan servicer or debt collector outside of the scope of said chapter 93L, the student loan servicer shall register as a third party loan servicer or obtain a debt collector license, or both, as appropriate. A licensed student loan servicer who engages in third party loan servicing activities or debt collection activities within the scope of said chapter 93L shall comply with all state and federal laws and regulations governing third party loan servicers and debt collection when acting in such capacity.",
+      "text_sha256": "c5c39916c09e0ef6abf77cbaf0937cc3b65ce60673a5337f919ae6202e0d2686",
+      "publisher_sha256": "f843d89255886f5afd8ef36a549e37273406ad7f53956ef7d305403cd109d332",
+      "retrieved_at": "2026-11-19T19:23:24.052052+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

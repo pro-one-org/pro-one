@@ -266,6 +266,18 @@
         "retrieved_at": "2026-11-19T14:10:55.090746+00:00",
         "sha256": "f2dd143d3a369ef419a6e8c57d9650280f064eeba548d3511e59ebf3436be97f"
       }
+    },
+    "US-LA:deposit:c237de0ac11c": {
+      "category": "deposit",
+      "title": "La. R.S. § 9:3251",
+      "url": "https://legis.la.gov/legis/LawPrint.aspx?d=107468",
+      "locator": "La. R.S. § 9:3251",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:20:34.464178+00:00",
+        "sha256": "7d2aa7728bc461147a1a4460078c84750b32b60030f0ca6bb93680c1331e7183"
+      }
     }
   },
   "court_directory": [
@@ -455,6 +467,17 @@
       "text_sha256": "f9c1ab0f255ea27c60771512e919c7dcab4b8e7fdecd56ca2fd7c5bf9c3ae9c5",
       "publisher_sha256": "f2dd143d3a369ef419a6e8c57d9650280f064eeba548d3511e59ebf3436be97f",
       "retrieved_at": "2026-11-19T14:10:55.090746+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "f31f3d3b6e96499bb6009a644ca777": {
+      "source_id": "US-LA:deposit:c237de0ac11c",
+      "authority_type": "statute",
+      "citation": "La. R.S. § 9:3251",
+      "text": "A. Any advance or deposit of money furnished by a tenant or lessee to a landlord or lessor to secure the performance of any part of a written or oral lease or rental agreement shall be returned to the tenant or lessee of residential or dwelling premises within one month after the lease shall terminate. However, the landlord or lessor may retain all or any portion of the advance or deposit which is reasonably necessary to remedy a default of the tenant or to remedy unreasonable wear to the premises. If any portion of an advance or deposit is retained by a landlord or lessor, he shall forward to the tenant or lessee, within one month after the date the tenancy terminates or within fifteen days after the date that is one month after the tenancy terminates, an itemized statement accounting for the proceeds which are retained and giving the reasons therefor. The tenant shall furnish the lessor a forwarding address at the termination of the lease, to which such statements may be sent. B. In the event of a transfer of the lessor's interest in the leased premises during the term of a lease, the transferor shall also transfer to his successor in interest the sum deposited as security for performance of the lease and the transferor shall then be relieved of further liability with respect to the security deposit. The transferee shall be responsible for the return of the lessee's deposit at the termination of the lease, as set forth in Subsection A of this Section. C. Paragraph A of this Section shall not apply when the tenant abandons the premises, either without giving notice as required or prior to the termination of the lease.",
+      "text_sha256": "454068a3f4de3beece5d9a734f3204c71e1279fce339f22a1dc7c7597e2b1f0a",
+      "publisher_sha256": "7d2aa7728bc461147a1a4460078c84750b32b60030f0ca6bb93680c1331e7183",
+      "retrieved_at": "2026-11-19T19:20:34.464178+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

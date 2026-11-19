@@ -315,6 +315,18 @@
         "retrieved_at": "2026-11-19T19:17:30.121488+00:00",
         "sha256": "9a456313835102e9127da442212bdad2f5da20ec226022c07af56bca547dbb26"
       }
+    },
+    "US-VA:deposit:8ed2a96335fe": {
+      "category": "deposit",
+      "title": "Va. Code § 55.1-1226(A)",
+      "url": "https://law.lis.virginia.gov/vacode/title55.1/chapter12/section55.1-1226/",
+      "locator": "Va. Code § 55.1-1226(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:20:34.916925+00:00",
+        "sha256": "a84309a90d6bf3c73da1b21dda3ffb2de4eede3d4425844ae8a91decb4ec7f8f"
+      }
     }
   },
   "court_directory": [
@@ -457,6 +469,17 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Virginia General District Court"
+    },
+    "17ff8c03796bcfbdd213d7f41eea78": {
+      "source_id": "US-VA:deposit:8ed2a96335fe",
+      "authority_type": "statute",
+      "citation": "Va. Code § 55.1-1226(A)",
+      "text": "A. No landlord may demand or receive a security deposit, however denominated, in an amount or value in excess of two months' periodic rent. Upon termination of the tenancy or the date the tenant vacates the dwelling unit, whichever occurs last, such security deposit, whether it is property or money held by the landlord as security as provided in this section, may be applied by the landlord solely to (i) the payment of accrued rent, including the reasonable charges for late payment of rent specified in the rental agreement; (ii) the payment of the amount of damages that the landlord has suffered by reason of the tenant's noncompliance with § 55.1-1227, less reasonable wear and tear; (iii) other damages or charges as provided in the rental agreement; or (iv) actual damages for breach of the rental agreement pursuant to § 55.1-1251. The security deposit and any deductions, damages, and charges shall be itemized by the landlord in a written notice given to the tenant, together with any amount due to the tenant, within 45 days after the termination date of the tenancy or the date the tenant vacates the dwelling unit, whichever occurs last. As of the date of the termination of the tenancy or the date the tenant vacates the dwelling unit, whichever occurs last, the tenant shall be required to deliver possession of the dwelling unit to the landlord. If the termination date is prior to the expiration of the rental agreement or any renewal thereof, or the tenant has not given proper notice of termination of the rental agreement, the tenant shall be liable for actual damages pursuant to § 55.1-1251, in which case, the landlord shall give written notice of security deposit disposition within the 45-day period but may retain any security balance to apply against any financial obligations of the tenant to the landlord pursuant to this chapter or the rental agreement. If the tenant fails to vacate the dwelling unit as of the termination of the tenancy, the landlord may file an unlawful detainer action pursuant to § 8.01-126.",
+      "text_sha256": "83a335939eb48a852494d09d2b76f1074dc0edb46a4ab8b7c6545cc84a35d148",
+      "publisher_sha256": "a84309a90d6bf3c73da1b21dda3ffb2de4eede3d4425844ae8a91decb4ec7f8f",
+      "retrieved_at": "2026-11-19T19:20:34.916925+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   }
 }

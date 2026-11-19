@@ -268,6 +268,18 @@
         "retrieved_at": "2026-11-19T14:11:09.105638+00:00",
         "sha256": "a24238e77679b4e89d752458a871962f39b203f793df3802d8c50ae47919d3e6"
       }
+    },
+    "US-OR:debtLaw:170efebe5dcf": {
+      "category": "debtLaw",
+      "title": "ORS § 646.639(2)(a)–(e)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors646.html",
+      "locator": "ORS § 646.639(2)(a)–(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:23:32.550981+00:00",
+        "sha256": "dfede44588217a24bea040748cd3a7bd4cbd566ced2d8f1dca65e70dda0f1e6e"
+      }
     }
   },
   "court_directory": [
@@ -423,6 +435,17 @@
       "text_sha256": "524aa968283ee09e815809889d7a775c0d4135fabf403124f488c269a1f1b7aa",
       "publisher_sha256": "a24238e77679b4e89d752458a871962f39b203f793df3802d8c50ae47919d3e6",
       "retrieved_at": "2026-11-19T14:11:09.105638+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "f0393adf4d4faadf955b9900da93c9": {
+      "source_id": "US-OR:debtLaw:170efebe5dcf",
+      "authority_type": "statute",
+      "citation": "ORS § 646.639(2)(a)–(e)",
+      "text": "(2) A debt collector engages in an unlawful collection practice if the debt collector, while collecting or attempting to collect a debt, does any of the following: (a) Uses or threatens to use force or violence to cause physical harm to a debtor or to the debtor’s family or property. (b) Threatens arrest or criminal prosecution. (c) Threatens to seize, attach or sell a debtor’s property if doing so requires a court order and the debt collector does not disclose that seizing, attaching or selling the debtor’s property requires prior court proceedings. (d) Uses profane, obscene or abusive language in communicating with a debtor or the debtor’s family. (e) Communicates with a debtor or any member of the debtor’s family repeatedly or continuously or at times known to be inconvenient to the debtor or any member of the debtor’s family and with intent to harass or annoy the debtor or any member of the debtor’s family.",
+      "text_sha256": "f1e42daa4c11456c962c37758adb7bcc2cb6c25b93a885819788c0ee9e2adc21",
+      "publisher_sha256": "dfede44588217a24bea040748cd3a7bd4cbd566ced2d8f1dca65e70dda0f1e6e",
+      "retrieved_at": "2026-11-19T19:23:32.550981+00:00",
       "currentness": "unresolved",
       "language": "en"
     }
