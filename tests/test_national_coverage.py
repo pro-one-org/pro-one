@@ -22,6 +22,17 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_wisconsin_death_limitation_stays_separate_from_injury_limitation(self):
+        provider = RetainedLegislativeResearch()
+        matter = ResearchMatter(country="US", state="Wisconsin", legal_area="torts",
+                                topics=["wrongful_death_limitations"], authority_status="current",
+                                authority_as_of="2026-11-04")
+        key, = provider.search(matter)
+        self.assertEqual(provider.fetch(key).source["citation"]["preferred_citation"], "Wis. Stat. § 893.54(2m)")
+        injury_ids = provider.search(matter.model_copy(update={"topics": ["limitations"]}))
+        self.assertEqual(len(injury_ids), 2)
+        self.assertNotIn(key, injury_ids)
+
     def test_published_effective_interval_survives_without_currentness_promotion(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Virginia", legal_area="consumer",

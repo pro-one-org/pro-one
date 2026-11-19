@@ -290,6 +290,18 @@
         "retrieved_at": "2026-11-18T20:45:58.834498+00:00",
         "sha256": "e74747393544ab0c36f0f3db12bf460db86c2995dd7e3ac3dfef00a9643a384a"
       }
+    },
+    "US-HI:pi_limitations:2d79a64d0936": {
+      "category": "pi_limitations",
+      "title": "Haw. Rev. Stat. § 657-7",
+      "url": "https://data.capitol.hawaii.gov/sessions/session2017/HRS-Chapter-PDF%27s/HRS_0657.pdf",
+      "locator": "Haw. Rev. Stat. § 657-7",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:21.302815+00:00",
+        "sha256": "949c0f595ea050ef495098121f7b5a776086265e452881e2b0e76edca5a4b373"
+      }
     }
   },
   "court_directory": [
@@ -461,6 +473,18 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Hawaii Circuit Court"
+    },
+    "de8e4d5fe7befe60449759fa31ef32": {
+      "source_id": "US-HI:pi_limitations:2d79a64d0936",
+      "authority_type": "statute",
+      "citation": "Haw. Rev. Stat. § 657-7",
+      "text": "Actions for the recovery of compensation for damage or injury to persons or property shall be instituted within two years after the cause of action accrued, and not after, except as provided in section 657-13.",
+      "text_sha256": "4fec815e4ca698689d765137f5b59c6d78c0db1111770fc103716da2b9f9c38b",
+      "publisher_sha256": "949c0f595ea050ef495098121f7b5a776086265e452881e2b0e76edca5a4b373",
+      "retrieved_at": "2026-11-19T19:31:21.302815+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Hawaii Legislature archive, 2017 session"
     }
   },
   "fault_allocation": {

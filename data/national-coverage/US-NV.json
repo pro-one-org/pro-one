@@ -368,6 +368,18 @@
         "retrieved_at": "2026-11-19T19:26:45.087882+00:00",
         "sha256": "c9ce1ce2687dc7a9ece7a0f13b1a0e893da9f00c67031554cb237bc2011a7f76"
       }
+    },
+    "US-NV:pi_limitations:7905f4de4e2d": {
+      "category": "pi_limitations",
+      "title": "Nev. Rev. Stat. § 11.190(4)(a)–(e)",
+      "url": "https://www.leg.state.nv.us/NRS/NRS-011.html",
+      "locator": "Nev. Rev. Stat. § 11.190(4)(a)–(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:22.077873+00:00",
+        "sha256": "e21bdde020606c1ae00134b3739ae29c6ed5817d47c6295a47e1239a25a31d83"
+      }
     }
   },
   "court_directory": [
@@ -561,6 +573,17 @@
       "currentness": "historical",
       "language": "en",
       "edition": "2025 Nevada Revised Statutes"
+    },
+    "d229c611716dc2f78235444d800e3f": {
+      "source_id": "US-NV:pi_limitations:7905f4de4e2d",
+      "authority_type": "statute",
+      "citation": "Nev. Rev. Stat. § 11.190(4)(a)–(e)",
+      "text": "4. Within 2 years: (a) An action against a sheriff, coroner or constable upon liability incurred by acting in his or her official capacity and in virtue of his or her office, or by the omission of an official duty, including the nonpayment of money collected upon an execution. (b) An action upon a statute for a penalty or forfeiture, where the action is given to a person or the State, or both, except when the statute imposing it prescribes a different limitation. (c) An action for libel, slander, assault, battery, false imprisonment or seduction. (d) An action against a sheriff or other officer for the escape of a prisoner arrested or imprisoned on civil process. (e) Except as otherwise provided in NRS 11.215 or 11.217, an action to recover damages for injuries to a person or for the death of a person caused by the wrongful act or neglect of another. The provisions of this paragraph relating to an action to recover damages for injuries to a person apply only to causes of action which accrue after March 20, 1951.",
+      "text_sha256": "ffb9856cbcee50c4bb707efac7a523458e5900aa6eddfd2ad02c68eebca05619",
+      "publisher_sha256": "e21bdde020606c1ae00134b3739ae29c6ed5817d47c6295a47e1239a25a31d83",
+      "retrieved_at": "2026-11-19T19:31:22.077873+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

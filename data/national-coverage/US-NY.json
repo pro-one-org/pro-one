@@ -245,6 +245,18 @@
         "retrieved_at": "2026-11-19T19:26:45.145872+00:00",
         "sha256": "642b7f983fcc19eba8ebb0760b749a38dadaac2572ca75f9eb146a84a1101a1f"
       }
+    },
+    "US-NY:pi_limitations:c751287f58e8": {
+      "category": "pi_limitations",
+      "title": "N.Y. CPLR 214",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/214",
+      "locator": "N.Y. CPLR 214",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:22.174933+00:00",
+        "sha256": "57d787694ac254ec9f7c1ef444273362e6210d2c0744b78cf87c38501b1b6f96"
+      }
     }
   },
   "court_directory": [
@@ -441,6 +453,17 @@
       "text_sha256": "e474058b89c7a9f076403e1587e6cd66770e169cc0bfd08fbcb74ada136e4678",
       "publisher_sha256": "642b7f983fcc19eba8ebb0760b749a38dadaac2572ca75f9eb146a84a1101a1f",
       "retrieved_at": "2026-11-19T19:26:45.145872+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "bf401048b292879943a0c3d3b57bcc": {
+      "source_id": "US-NY:pi_limitations:c751287f58e8",
+      "authority_type": "statute",
+      "citation": "N.Y. CPLR 214",
+      "text": "The following actions must be commenced within three years: 1. an action against a sheriff, constable or other officer for the non-payment of money collected upon an execution; 2. an action to recover upon a liability, penalty or forfeiture created or imposed by statute except as provided in sections 213 and 215; 3. an action to recover a chattel or damages for the taking or detaining of a chattel; 4. an action to recover damages for an injury to property except as provided in section 214-c; 5. an action to recover damages for a personal injury except as provided in sections 214-b, 214-c, 214-i and 215; 6. an action to recover damages for malpractice, other than medical, dental or podiatric malpractice, regardless of whether the underlying theory is based in contract or tort; and 7. an action to annul a marriage on the ground of fraud; the time within which the action must be commenced shall be computed from the time the plaintiff discovered the facts constituting the fraud, but if the plaintiff is a person other than the spouse whose consent was obtained by fraud, the time within which the action must be commenced shall be computed from the time, if earlier, that that spouse discovered the facts constituting the fraud.",
+      "text_sha256": "d87cf87da039f43a4a64e519ef6bf1b7929414b18e01d91d8082ba9f9bc58ab1",
+      "publisher_sha256": "57d787694ac254ec9f7c1ef444273362e6210d2c0744b78cf87c38501b1b6f96",
+      "retrieved_at": "2026-11-19T19:31:22.174933+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

@@ -221,6 +221,18 @@
         "retrieved_at": "2026-11-19T19:26:44.302791+00:00",
         "sha256": "20a13074b3884f6d905affe172e5f1cde8d868ceb9c83291490f1ef9c8893011"
       }
+    },
+    "US-MO:pi_limitations:ee6dcba543bf": {
+      "category": "pi_limitations",
+      "title": "Mo. Rev. Stat. § 516.120",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=516.120",
+      "locator": "Mo. Rev. Stat. § 516.120",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:21.580666+00:00",
+        "sha256": "3695f73e648b32205241b1d918c09bb8bc17a6aa86ba718b1460537b4d9c34cc"
+      }
     }
   },
   "court_directory": [
@@ -333,6 +345,17 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "2020-08-28"
+    },
+    "60dc337260037c1e27fcadd6173b12": {
+      "source_id": "US-MO:pi_limitations:ee6dcba543bf",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 516.120",
+      "text": "Within five years: (1) All actions upon contracts, obligations or liabilities, express or implied, except those mentioned in section 516.110, and except upon judgments or decrees of a court of record, and except where a different time is herein limited; (2) An action upon a liability created by a statute other than a penalty or forfeiture; (3) An action for trespass on real estate; (4) An action for taking, detaining or injuring any goods or chattels, including actions for the recovery of specific personal property, or for any other injury to the person or rights of another, not arising on contract and not herein otherwise enumerated; (5) An action for relief on the ground of fraud, the cause of action in such case to be deemed not to have accrued until the discovery by the aggrieved party, at any time within ten years, of the facts constituting the fraud.",
+      "text_sha256": "0d444e766292745718a05861c22a9cc32e45bf0850d4b41074ab91db38d8c758",
+      "publisher_sha256": "3695f73e648b32205241b1d918c09bb8bc17a6aa86ba718b1460537b4d9c34cc",
+      "retrieved_at": "2026-11-19T19:31:21.580666+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   }
 }

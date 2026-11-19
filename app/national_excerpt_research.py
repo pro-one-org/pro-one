@@ -13,6 +13,7 @@ from app.national_publications import LegislativeExcerpts
 # section must never establish the elements of negligence or contract breach.
 SUBJECTS = {
     "pi_limitations": ("torts", "limitations"),
+    "wrongful_death_limitations": ("torts", "wrongful_death_limitations"),
     "written_contract_limitations": ("contracts", "written_contract_limitations"),
     "oral_contract_limitations": ("contracts", "oral_contract_limitations"),
     "fault": ("torts", "fault_allocation"),

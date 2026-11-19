@@ -474,6 +474,42 @@
         "retrieved_at": "2026-11-19T19:07:31.356155+00:00",
         "sha256": "5e6605de6a9b0e6b08ab15d2fe4ed1c679a338beda2a91fdff04c6592737bf84"
       }
+    },
+    "US-WI:pi_limitations:fb42aa31d052": {
+      "category": "pi_limitations",
+      "title": "Wis. Stat. § 893.54(1m)(intro.)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/v/54",
+      "locator": "Wis. Stat. § 893.54(1m)(intro.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:28.592484+00:00",
+        "sha256": "bf3cc4dda04bf46158a0092188030b3a216bdeb4e71d33731988e5e6502714bd"
+      }
+    },
+    "US-WI:pi_limitations:a71a9c5b8ec3": {
+      "category": "pi_limitations",
+      "title": "Wis. Stat. § 893.54(1m)(a)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/v/54",
+      "locator": "Wis. Stat. § 893.54(1m)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:28.592484+00:00",
+        "sha256": "bf3cc4dda04bf46158a0092188030b3a216bdeb4e71d33731988e5e6502714bd"
+      }
+    },
+    "US-WI:wrongful_death_limitations:a7ac766893ce": {
+      "category": "wrongful_death_limitations",
+      "title": "Wis. Stat. § 893.54(2m)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/v/54",
+      "locator": "Wis. Stat. § 893.54(2m)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:28.592484+00:00",
+        "sha256": "bf3cc4dda04bf46158a0092188030b3a216bdeb4e71d33731988e5e6502714bd"
+      }
     }
   },
   "court_directory": [
@@ -837,6 +873,48 @@
       "language": "en",
       "current_as_of": "2026-11-04",
       "publisher_path": "/statutes/statutes/704/17/2/a",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "fc39881d715010abd8e2de5d2276b1": {
+      "source_id": "US-WI:pi_limitations:fb42aa31d052",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 893.54(1m)(intro.)",
+      "text": "Except as provided in sub. (2m), the following actions shall be commenced within 3 years or be barred:",
+      "text_sha256": "e72413c780f58bc257868edb2e88c95aba7852017dc29177b43750cd255ca8b6",
+      "publisher_sha256": "bf3cc4dda04bf46158a0092188030b3a216bdeb4e71d33731988e5e6502714bd",
+      "retrieved_at": "2026-11-19T19:31:28.592484+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/893/v/54/1m",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "b760263217e436e92150ad92d6efd8": {
+      "source_id": "US-WI:pi_limitations:a71a9c5b8ec3",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 893.54(1m)(a)",
+      "text": "An action to recover damages for injuries to the person, including an action to recover damages for injuries to the person caused or sustained by or arising from an accident involving a motor vehicle.",
+      "text_sha256": "d33cf978dd84c89894a98161430350e6a47301403ba42fdb80d0a3b83411e68e",
+      "publisher_sha256": "bf3cc4dda04bf46158a0092188030b3a216bdeb4e71d33731988e5e6502714bd",
+      "retrieved_at": "2026-11-19T19:31:28.592484+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/893/v/54/1m/a",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "a1616c7febbf58b1d47a6cb4d6d3d4": {
+      "source_id": "US-WI:wrongful_death_limitations:a7ac766893ce",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 893.54(2m)",
+      "text": "An action brought to recover damages for death caused by the wrongful act, neglect, or default of another and arising from an accident involving a motor vehicle shall be commenced within 2 years after the cause of action accrues or be barred.",
+      "text_sha256": "e6626001af1a36dc9271c1aec030572fb78a07b0c9fc4d8210842b60126c5704",
+      "publisher_sha256": "bf3cc4dda04bf46158a0092188030b3a216bdeb4e71d33731988e5e6502714bd",
+      "retrieved_at": "2026-11-19T19:31:28.592484+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/893/v/54/2m",
       "edition": "Wisconsin Statutes certified November 4, 2026"
     }
   },

@@ -245,6 +245,18 @@
         "retrieved_at": "2026-11-19T19:17:29.882679+00:00",
         "sha256": "4cdd61faade161008cce1acd7d293eeedf645e292f9eaf5bec2dc45de05651d4"
       }
+    },
+    "US-VT:pi_limitations:751041f46150": {
+      "category": "pi_limitations",
+      "title": "12 V.S.A. § 512",
+      "url": "https://legislature.vermont.gov/statutes/section/12/023/00512",
+      "locator": "12 V.S.A. § 512",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:23.862555+00:00",
+        "sha256": "9f874b276e120f758f075dc02c88ade9d0e6b4c43b8e8a0cfdd87e659c176b55"
+      }
     }
   },
   "court_directory": [
@@ -421,6 +433,17 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Vermont Superior Court"
+    },
+    "b9ea4aab03aede72a19867fdaaae19": {
+      "source_id": "US-VT:pi_limitations:751041f46150",
+      "authority_type": "statute",
+      "citation": "12 V.S.A. § 512",
+      "text": "Actions for the following causes shall be commenced within three years after the cause of action accrues, and not after: (1) assault and battery; (2) false imprisonment; (3) slander and libel; (4) except as otherwise provided in this chapter, injuries to the person suffered by the act or default of another person, provided that the cause of action shall be deemed to accrue as of the date of the discovery of the injury; (5) damage to personal property suffered by the act or default of another.",
+      "text_sha256": "c49a152e93080d527c83a8f5a8040a915ccbda50fbea6b520ba7a74fa546d8ca",
+      "publisher_sha256": "9f874b276e120f758f075dc02c88ade9d0e6b4c43b8e8a0cfdd87e659c176b55",
+      "retrieved_at": "2026-11-19T19:31:23.862555+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

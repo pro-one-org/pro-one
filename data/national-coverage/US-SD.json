@@ -264,6 +264,18 @@
         "retrieved_at": "2026-11-19T19:02:16.517447+00:00",
         "sha256": "e238dea566a03074adb3dab751d82864ecb220b43c633bc4f9a067ade6d2467f"
       }
+    },
+    "US-SD:pi_limitations:2775070735b7": {
+      "category": "pi_limitations",
+      "title": "SDCL § 15-2-14",
+      "url": "https://sdlegislature.gov/api/Statutes/15-2-14.html",
+      "locator": "SDCL § 15-2-14",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:23.516198+00:00",
+        "sha256": "f56477102ef1f3dcb56023feec50f901882759daac13768d8792e25ef8617a81"
+      }
     }
   },
   "court_directory": [
@@ -415,6 +427,17 @@
       "text_sha256": "2fa000878e047a8a9ae0baf6eece622e2106f73b2433e70ca5c60df1f630500d",
       "publisher_sha256": "e238dea566a03074adb3dab751d82864ecb220b43c633bc4f9a067ade6d2467f",
       "retrieved_at": "2026-11-19T19:02:16.517447+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "b8a1372929e7e32252a90b639bff44": {
+      "source_id": "US-SD:pi_limitations:2775070735b7",
+      "authority_type": "statute",
+      "citation": "SDCL § 15-2-14",
+      "text": "Except where, in special cases, a different limitation is prescribed by statute, the following civil actions other than for the recovery of real property can be commenced only within three years after the cause of action shall have accrued: (1) An action against a sheriff, coroner, or constable upon a liability incurred by the doing of an act in his official capacity and in virtue of his office, or by the omission of an official duty, including the nonpayment of money collected upon an execution. But this subdivision shall not apply to an action for an escape; (2) An action upon a statute for a penalty or forfeiture where the action is given to the party aggrieved, or to such party and the state except where the statute imposing it prescribes a different limitation; (3) An action for personal injury.",
+      "text_sha256": "d51c987db53128e28eb3437faa10ae92ee01e54bee3390b87cdf03e817682d91",
+      "publisher_sha256": "f56477102ef1f3dcb56023feec50f901882759daac13768d8792e25ef8617a81",
+      "retrieved_at": "2026-11-19T19:31:23.516198+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

@@ -289,6 +289,18 @@
         "retrieved_at": "2026-11-19T19:26:42.955422+00:00",
         "sha256": "f7a3507701ba62a3114666e31fb0fab64ec2537924eaab09542a0699278bbbe4"
       }
+    },
+    "US-FL:pi_limitations:499e2b8cfe58": {
+      "category": "pi_limitations",
+      "title": "Fla. Stat. § 95.11(5)(a)",
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0095/Sections/0095.11.html",
+      "locator": "Fla. Stat. § 95.11(5)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:20.499305+00:00",
+        "sha256": "0147a0490694fc10a6b237aeb32fc78b65160a7675b149b948783db100c55c9a"
+      }
     }
   },
   "court_directory": [
@@ -439,6 +451,17 @@
       "text_sha256": "b96ce12f55c9d32658a0b112bd4818cac13e262077756faeae7f89dbd8be31dd",
       "publisher_sha256": "f7a3507701ba62a3114666e31fb0fab64ec2537924eaab09542a0699278bbbe4",
       "retrieved_at": "2026-11-19T19:26:42.955422+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "bc34b04878d28acdf85040203872b1": {
+      "source_id": "US-FL:pi_limitations:499e2b8cfe58",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 95.11(5)(a)",
+      "text": "(5) WITHIN TWO YEARS.—(a) An action founded on negligence.",
+      "text_sha256": "67f4ab3c675f7a097d44f28ec8864290f47a718370b61235b67c6b5a748af28a",
+      "publisher_sha256": "0147a0490694fc10a6b237aeb32fc78b65160a7675b149b948783db100c55c9a",
+      "retrieved_at": "2026-11-19T19:31:20.499305+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

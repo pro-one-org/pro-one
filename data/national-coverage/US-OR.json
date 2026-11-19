@@ -280,6 +280,18 @@
         "retrieved_at": "2026-11-19T19:23:32.550981+00:00",
         "sha256": "dfede44588217a24bea040748cd3a7bd4cbd566ced2d8f1dca65e70dda0f1e6e"
       }
+    },
+    "US-OR:pi_limitations:fb19d57b41f1": {
+      "category": "pi_limitations",
+      "title": "ORS § 12.110(1)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors012.html",
+      "locator": "ORS § 12.110(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:23.293234+00:00",
+        "sha256": "b8962dadbebcce63dbb6b1a1bfa9c9244f904dddaad59ecf63b4cb4b180b2410"
+      }
     }
   },
   "court_directory": [
@@ -446,6 +458,17 @@
       "text_sha256": "f1e42daa4c11456c962c37758adb7bcc2cb6c25b93a885819788c0ee9e2adc21",
       "publisher_sha256": "dfede44588217a24bea040748cd3a7bd4cbd566ced2d8f1dca65e70dda0f1e6e",
       "retrieved_at": "2026-11-19T19:23:32.550981+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "9c1ce2365c1993a1dc7822a1241d71": {
+      "source_id": "US-OR:pi_limitations:fb19d57b41f1",
+      "authority_type": "statute",
+      "citation": "ORS § 12.110(1)",
+      "text": "(1) An action for assault, battery, false imprisonment, or for any injury to the person or rights of another, not arising on contract, and not especially enumerated in this chapter, shall be commenced within two years; provided, that in an action at law based upon fraud or deceit, the limitation shall be deemed to commence only from the discovery of the fraud or deceit.",
+      "text_sha256": "e619246e6d02442cd1ad3d03710a42ec94db6d1464eadaf8548722363205909f",
+      "publisher_sha256": "b8962dadbebcce63dbb6b1a1bfa9c9244f904dddaad59ecf63b4cb4b180b2410",
+      "retrieved_at": "2026-11-19T19:31:23.293234+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

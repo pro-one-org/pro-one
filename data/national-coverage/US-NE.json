@@ -271,6 +271,18 @@
         "retrieved_at": "2026-11-19T19:17:29.479431+00:00",
         "sha256": "f40f81a09a83ae5201815901ed2caaa75fd976d936aff548066f50446d7d9a0c"
       }
+    },
+    "US-NE:pi_limitations:061f5c2fa9fd": {
+      "category": "pi_limitations",
+      "title": "Neb. Rev. Stat. § 25-207",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-207",
+      "locator": "Neb. Rev. Stat. § 25-207",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:21.900751+00:00",
+        "sha256": "00f4b632566ae75b7dde93d4a984ae45ce1488832bd5934d093761a726005d8c"
+      }
     }
   },
   "court_directory": [
@@ -449,6 +461,17 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Nebraska County Court"
+    },
+    "888a7f46fa1475a0d02feb53f51372": {
+      "source_id": "US-NE:pi_limitations:061f5c2fa9fd",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 25-207",
+      "text": "The following actions can only be brought within four years: (1) An action for trespass upon real property; (2) an action for taking, detaining or injuring personal property, including actions for the specific recovery of personal property; (3) an action for an injury to the rights of the plaintiff, not arising on contract, and not hereinafter enumerated; and (4) an action for relief on the ground of fraud, but the cause of action in such case shall not be deemed to have accrued until the discovery of the fraud, except as provided in sections 30-2206 and 76-288 to 76-298.",
+      "text_sha256": "c4dbd9d770b8e008f266d495053ec55f1a38c10c633dc182bb823791f90a931e",
+      "publisher_sha256": "00f4b632566ae75b7dde93d4a984ae45ce1488832bd5934d093761a726005d8c",
+      "retrieved_at": "2026-11-19T19:31:21.900751+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

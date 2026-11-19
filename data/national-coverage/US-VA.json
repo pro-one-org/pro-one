@@ -339,6 +339,18 @@
         "retrieved_at": "2026-11-19T19:26:45.579652+00:00",
         "sha256": "8c3607f926ff6462e640a7c25ce8b7677980efd42fb6a6f3ac482d0161f302d4"
       }
+    },
+    "US-VA:pi_limitations:a37e7fd9c130": {
+      "category": "pi_limitations",
+      "title": "Va. Code § 8.01-243(A)",
+      "url": "https://law.lis.virginia.gov/vacode/title8.01/chapter4/section8.01-243/",
+      "locator": "Va. Code § 8.01-243(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:23.672498+00:00",
+        "sha256": "6fa9956ee70d3938d1261eb468bac1c819e5e9bf9a824d321f70f0ea9b41aaa9"
+      }
     }
   },
   "court_directory": [
@@ -505,6 +517,17 @@
       "language": "en",
       "effective_from": "2026-11-01",
       "effective_until": "2027-07-01"
+    },
+    "11d3e76192d34d383830f5a34185a8": {
+      "source_id": "US-VA:pi_limitations:a37e7fd9c130",
+      "authority_type": "statute",
+      "citation": "Va. Code § 8.01-243(A)",
+      "text": "A. Unless otherwise provided in this section or by other statute, every action for personal injuries, whatever the theory of recovery, and every action for damages resulting from fraud, shall be brought within two years after the cause of action accrues.",
+      "text_sha256": "dc8ae622ce8d030b8d914e25ff6685bb289e0042d6fe1db8e90a2011fea5a4db",
+      "publisher_sha256": "6fa9956ee70d3938d1261eb468bac1c819e5e9bf9a824d321f70f0ea9b41aaa9",
+      "retrieved_at": "2026-11-19T19:31:23.672498+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   }
 }

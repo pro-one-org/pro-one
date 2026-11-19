@@ -235,6 +235,18 @@
         "retrieved_at": "2026-11-19T14:10:57.476871+00:00",
         "sha256": "8b9be9f75e4fd4ff52bb91d805bde298989c9cf95a6770663b07d3fa551b0c90"
       }
+    },
+    "US-NH:pi_limitations:c8b00151a468": {
+      "category": "pi_limitations",
+      "title": "N.H. Rev. Stat. § 508:4, I",
+      "url": "https://gc.nh.gov/rsa/html/LII/508/508-4.htm",
+      "locator": "N.H. Rev. Stat. § 508:4, I",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:22.022518+00:00",
+        "sha256": "1f5b13bbdcd9c43705cb5870eae1bb79687892be50da71b1a95b85e2795d868b"
+      }
     }
   },
   "court_directory": [
@@ -396,6 +408,17 @@
       "text_sha256": "654c60a56e40d2a736dd26e07d73d92b8f65895247fa9f4b97017882a0131e96",
       "publisher_sha256": "8b9be9f75e4fd4ff52bb91d805bde298989c9cf95a6770663b07d3fa551b0c90",
       "retrieved_at": "2026-11-19T14:10:57.476871+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "9d623e30bb0fad476926c2081f7b15": {
+      "source_id": "US-NH:pi_limitations:c8b00151a468",
+      "authority_type": "statute",
+      "citation": "N.H. Rev. Stat. § 508:4, I",
+      "text": "I. Except as otherwise provided by law, all personal actions, except actions for slander or libel, may be brought only within 3 years of the act or omission complained of, except that when the injury and its causal relationship to the act or omission were not discovered and could not reasonably have been discovered at the time of the act or omission, the action shall be commenced within 3 years of the time the plaintiff discovers, or in the exercise of reasonable diligence should have discovered, the injury and its causal relationship to the act or omission complained of.",
+      "text_sha256": "fbc088cc18d38af99549693f78f0cddb0832b06712a99759d4e1c28911161ed2",
+      "publisher_sha256": "1f5b13bbdcd9c43705cb5870eae1bb79687892be50da71b1a95b85e2795d868b",
+      "retrieved_at": "2026-11-19T19:31:22.022518+00:00",
       "currentness": "unresolved",
       "language": "en"
     }
