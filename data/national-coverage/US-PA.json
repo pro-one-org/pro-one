@@ -221,6 +221,18 @@
         "retrieved_at": "2026-11-19T19:02:16.517447+00:00",
         "sha256": "80a147b441174e9c820f0b3193a72904329775394799ecdb207e1778e4bd0541"
       }
+    },
+    "US-PA:response:1200c936a18e": {
+      "category": "response",
+      "title": "231 Pa. Code Rule 1026(a)",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/231/chapter1000/s1026.html",
+      "locator": "231 Pa. Code Rule 1026(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:42:59.773135+00:00",
+        "sha256": "36698c2bb03961ca951c29f27ad7ef96329a1158636832a4d171c0c5fd26dc85"
+      }
     }
   },
   "court_directory": [
@@ -366,6 +378,18 @@
       "language": "en",
       "court": "Pennsylvania Court of Common Pleas",
       "effective_from": "2019-04-01"
+    },
+    "b52c38abb3ca7fb3ab37109994a2bd": {
+      "source_id": "US-PA:response:1200c936a18e",
+      "authority_type": "court_rule",
+      "citation": "231 Pa. Code Rule 1026(a)",
+      "text": "(a) Except as provided by Rule 1042.4 or by subdivision (b) of this rule, every pleading subsequent to the complaint shall be filed within twenty days after service of the preceding pleading, but no pleading need be filed unless the preceding pleading contains a notice to defend or is endorsed with a notice to plead.",
+      "text_sha256": "63dd0dd817e0d5bfb6b0f051c668766f2decbf84825cefd7be0a6d8f180652ea",
+      "publisher_sha256": "36698c2bb03961ca951c29f27ad7ef96329a1158636832a4d171c0c5fd26dc85",
+      "retrieved_at": "2026-11-19T19:42:59.773135+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Pennsylvania Court of Common Pleas"
     }
   },
   "fault_allocation": {

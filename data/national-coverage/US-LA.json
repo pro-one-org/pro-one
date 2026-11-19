@@ -290,6 +290,18 @@
         "retrieved_at": "2026-11-19T19:26:43.477236+00:00",
         "sha256": "0dd3549fb04c9fb352eb5d9cda6766cfb4ca3d16bb271f5e2df952e033b24f8d"
       }
+    },
+    "US-LA:response:58326e03ceb8": {
+      "category": "response",
+      "title": "La. Code Civ. Proc. art. 1001",
+      "url": "https://www.legis.la.gov/Legis/LawPrint.aspx?d=111105",
+      "locator": "La. Code Civ. Proc. art. 1001",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:43:00.095595+00:00",
+        "sha256": "1ecb90fa1b16610d422de0193045fbafc7ee642f0aa9ed1c17618ebcdad5a1e9"
+      }
     }
   },
   "court_directory": [
@@ -503,6 +515,18 @@
       "retrieved_at": "2026-11-19T19:26:43.477236+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "f1ef1249ba1a1bff28aae20ecab0fd": {
+      "source_id": "US-LA:response:58326e03ceb8",
+      "authority_type": "statute",
+      "citation": "La. Code Civ. Proc. art. 1001",
+      "text": "A. A defendant shall file his answer within twenty-one days after service of citation upon him, except as otherwise provided by law. If the plaintiff files and serves a discovery request with his petition, the defendant shall file his answer to the petition within thirty days after service of citation and service of discovery request. B. When an exception is filed prior to answer and is overruled or referred to the merits, or is sustained and an amendment of the petition ordered, the answer shall be filed within fifteen days after the exception is overruled or referred to the merits, or fifteen days after service of the amended petition. C. The court may grant additional time for answering.",
+      "text_sha256": "0f1c901fc0ff51564acb45ea892b1fc90bffada5fe1d2385036b3969afbe38cb",
+      "publisher_sha256": "1ecb90fa1b16610d422de0193045fbafc7ee642f0aa9ed1c17618ebcdad5a1e9",
+      "retrieved_at": "2026-11-19T19:43:00.095595+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Louisiana District Court"
     }
   },
   "fault_allocation": {

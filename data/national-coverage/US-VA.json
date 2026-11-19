@@ -375,6 +375,18 @@
         "retrieved_at": "2026-11-19T19:39:42.243348+00:00",
         "sha256": "40bff5eb96358580eaefc518b0a082eaa2ee1fff1daec4d6344ad9773cf1b816"
       }
+    },
+    "US-VA:response:b50b54ad5943": {
+      "category": "response",
+      "title": "Va. Sup. Ct. R. 3:8(a)",
+      "url": "https://www.vacourts.gov/static/courts/scv/rulesofcourt.pdf",
+      "locator": "Va. Sup. Ct. R. 3:8(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:02:18.051327+00:00",
+        "sha256": "15a5095aba5043b863d2c7fb26f24c2556cad4908054874c0dff4f770af53a0f"
+      }
     }
   },
   "court_directory": [
@@ -579,6 +591,18 @@
       "decision_date": "2004-04-23",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from judgment for the defendant on asserted breach of contract and constructive fraud claims."
+    },
+    "cb70e39ac0c6abff5c9c964418b139": {
+      "source_id": "US-VA:response:b50b54ad5943",
+      "authority_type": "court_rule",
+      "citation": "Va. Sup. Ct. R. 3:8(a)",
+      "text": "(a) Response Requirement. — A defendant must file pleadings in response within 21 days after service of the summons and complaint upon that defendant, or if service of the summons has been timely waived on request under Code § 8.01-286.1, within 60 days after the date when the request for waiver was sent, or within 90 days after that date if the defendant was addressed outside the Commonwealth. Pleadings in response under this Rule – other than an answer – are limited to the following, and are deemed responsive only to the specific count or counts addressed therein: a demurrer, plea, motion to dismiss, motion for a bill of particulars, motion craving oyer, and a written motion asserting any preliminary defense permitted under Code § 8.01-276. If a defendant files no other pleading in response than the answer, it must be filed within the applicable 21- day, 60-day, or 90-day period specified in this Rule. An answer must respond to the paragraphs of the complaint. A general denial of the entire complaint or plea of the general issue is not permitted.",
+      "text_sha256": "b53f053865d66453ec4f9ff77c18c4cf276a3ca9d93a9fb56e3d91467550ba30",
+      "publisher_sha256": "15a5095aba5043b863d2c7fb26f24c2556cad4908054874c0dff4f770af53a0f",
+      "retrieved_at": "2026-11-19T19:02:18.051327+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Virginia Circuit Court"
     }
   }
 }

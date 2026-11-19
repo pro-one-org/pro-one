@@ -309,6 +309,18 @@
         "retrieved_at": "2026-11-19T19:35:43.165644+00:00",
         "sha256": "13607a518daaa7dbf60a96d4ffecc96425813d69ddd49a07fa14420a823c6593"
       }
+    },
+    "US-WA:response:05550c611e10": {
+      "category": "response",
+      "title": "Wash. Superior Court Civil Rule 12(a)",
+      "url": "https://www.courts.wa.gov/court_rules/pdf/CR/SUP_CR_12_00_00.pdf",
+      "locator": "Wash. Superior Court Civil Rule 12(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:43:00.469004+00:00",
+        "sha256": "13d405d7815241efe76a2a503a3f0960adabc21137c1943608604f8ff4fbead1"
+      }
     }
   },
   "court_directory": [
@@ -528,6 +540,18 @@
       "retrieved_at": "2026-11-19T19:35:43.165644+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "fecc0c7eb6de5d4a4bd66936c79fec": {
+      "source_id": "US-WA:response:05550c611e10",
+      "authority_type": "court_rule",
+      "citation": "Wash. Superior Court Civil Rule 12(a)",
+      "text": "(a) When Presented. A defendant shall serve an answer within the following periods: (1) Within 20 days, exclusive of the day of service, after the service of the summons and complaint upon the defendant pursuant to rule 4; (2) Within 60 days from the date of the first publication of the summons if the summons is served by publication in accordance with rule 4(d)(3); (3) Within 60 days after the service of the summons upon the defendant if the summons is served upon the defendant personally out of the state in accordance with RCW 4.28.180 and 4.28.185 or on the Secretary of State as provided by RCW 46.64.040. (4) Within 60 days after the service of the summons upon the defendant if the summons is served in a jail, detention facility, or prison facility pursuant to rule 4, unless a different time for response, appearance, or answer is specifically stated in statute. (5) Within the period fixed by any other applicable statutes or rules. A party served with a pleading stating a cross claim against another party shall serve an answer thereto within 20 days after the service upon that other party. The plaintiff shall serve a reply to a counterclaim in the answer within 20 days after service of the answer or, if a reply is ordered by the court, within 20 days after service of the order, unless the order otherwise directs. The service of a motion permitted under this rule alters these periods of time as follows, unless a different time is fixed by order of the court. (A) If the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within 10 days after notice of the court’s action. (B) If the court grants a motion for a more definite statement, the responsive pleading shall be served within 10 days after the service of the more definite statement.",
+      "text_sha256": "9304b0fbaaabd4478e96d2147a5cbffbddcaaff766c66679bb7c1d32d2f85b6f",
+      "publisher_sha256": "13d405d7815241efe76a2a503a3f0960adabc21137c1943608604f8ff4fbead1",
+      "retrieved_at": "2026-11-19T19:43:00.469004+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Washington Superior Court"
     }
   },
   "fault_allocation": {

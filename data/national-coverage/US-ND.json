@@ -288,6 +288,18 @@
         "retrieved_at": "2026-11-19T19:35:43.375301+00:00",
         "sha256": "0e812b146e5c18aecc4c4d2c9cfcb015cc1d8109bea93db8e74ed5bade078364"
       }
+    },
+    "US-ND:response:17388d03e1b6": {
+      "category": "response",
+      "title": "N.D.R.Civ.P. 12(a)",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcivp/12",
+      "locator": "N.D.R.Civ.P. 12(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:43:00.407066+00:00",
+        "sha256": "e116736fb940981ce48ac5c3a33a7f68a6c68a7aebddf2034944c38cbfbf3c59"
+      }
     }
   },
   "court_directory": [
@@ -443,6 +455,18 @@
       "retrieved_at": "2026-11-19T19:35:43.375301+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "9d16f0f0a99d175531078c0fd8d1b1": {
+      "source_id": "US-ND:response:17388d03e1b6",
+      "authority_type": "court_rule",
+      "citation": "N.D.R.Civ.P. 12(a)",
+      "text": "(a) Time to serve a responsive pleading. (1) In General. Unless another time is specified by this rule or a statute, the time for serving a responsive pleading is: (A) a defendant must serve an answer within 21 days after being served with the summons and complaint; (B) a party must serve an answer to a counterclaim or crossclaim within 21 days after being served with the pleading that states the counterclaim or crossclaim; (C) a party must serve a reply to an answer within 21 days after being served with an order to reply, unless the order specifies a different time. (2) Effect of a Motion. Unless the court sets a different time, serving a motion under this rule alters these periods as follows: (A) if the court denies the motion or postpones its disposition until trial, the responsive pleading must be served within 14 days after notice of the court's action; (B) if the court grants a motion for a more definite statement, the responsive pleading must be served within 14 days after the more definite statement is served.",
+      "text_sha256": "78795c5e9ba4ab73a8fb94c7a806409b0b5c49ecad2ce6a343a04407c102310b",
+      "publisher_sha256": "e116736fb940981ce48ac5c3a33a7f68a6c68a7aebddf2034944c38cbfbf3c59",
+      "retrieved_at": "2026-11-19T19:43:00.407066+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "North Dakota District Court"
     }
   },
   "fault_allocation": {

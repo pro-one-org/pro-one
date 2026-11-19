@@ -318,6 +318,18 @@
         "retrieved_at": "2026-11-19T19:31:22.203850+00:00",
         "sha256": "213613bb0ccda0f9864f2658fc753cd7123dd96380ade9e55bc590e8b0ca76d7"
       }
+    },
+    "US-NC:response:460107101bf2": {
+      "category": "response",
+      "title": "N.C. Gen. Stat. § 1A-1, Rule 12(a)",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_1A/GS_1A-1%2C_Rule_12.html",
+      "locator": "N.C. Gen. Stat. § 1A-1, Rule 12(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:42:59.369086+00:00",
+        "sha256": "66b74dd17ca270f745fd33151226fdbafa9497a1dd1222e9c50f2590c1a7d8ae"
+      }
     }
   },
   "court_directory": [
@@ -502,6 +514,18 @@
       "retrieved_at": "2026-11-19T19:31:22.203850+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "193fff657f5f2a9b40dcfa660581b3": {
+      "source_id": "US-NC:response:460107101bf2",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 1A-1, Rule 12(a)",
+      "text": "(a) (1) When Presented. - A defendant shall serve his answer within 30 days after service of the summons and complaint upon him. A party served with a pleading stating a crossclaim against him shall serve an answer thereto within 30 days after service upon him. The plaintiff shall serve his reply to a counterclaim in the answer within 30 days after service of the answer or, if a reply is ordered by the court, within 30 days after service of the order, unless the order otherwise directs. Service of a motion permitted under this rule alters these periods of time as follows, unless a different time is fixed by order of the court: a. The responsive pleading shall be served within 20 days after notice of the court's action in ruling on the motion or postponing its disposition until the trial on the merits; b. If the court grants a motion for a more definite statement, the responsive pleading shall be served within 20 days after service of the more definite statement. (2) Cases Removed to United States District Court. - Upon the filing in a district court of the United States of a petition for the removal of a civil action or proceeding from a court in this State and the filing of a copy of the petition in the State court, the State court shall proceed no further therein unless and until the case is remanded. If it shall be finally determined in the United States courts that the action or proceeding was not removable or was improperly removed, or for other reason should be remanded, and a final order is entered remanding the action or proceeding to the State court, the defendant or defendants, or any other party who would have been permitted or required to file a pleading had the proceedings to remove not been instituted, shall have 30 days after the filing in such State court of a certified copy of the order of remand to file motions and to answer or otherwise plead.",
+      "text_sha256": "28deb81a509a81f4b2c6011fd426cda57665798bc655b9f01ffd75ca2b1f1d73",
+      "publisher_sha256": "66b74dd17ca270f745fd33151226fdbafa9497a1dd1222e9c50f2590c1a7d8ae",
+      "retrieved_at": "2026-11-19T19:42:59.369086+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "North Carolina Superior and District Courts"
     }
   }
 }

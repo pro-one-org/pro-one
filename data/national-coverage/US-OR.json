@@ -304,6 +304,18 @@
         "retrieved_at": "2026-11-19T19:31:23.293234+00:00",
         "sha256": "b8962dadbebcce63dbb6b1a1bfa9c9244f904dddaad59ecf63b4cb4b180b2410"
       }
+    },
+    "US-OR:response:2ffe5f89ff10": {
+      "category": "response",
+      "title": "ORCP 15 A–B",
+      "url": "https://www.oregonlegislature.gov/bills_laws/SiteAssets/ORCP.html",
+      "locator": "ORCP 15 A–B",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:43:10.820517+00:00",
+        "sha256": "e55957b95b25f21142acfca62e8a6c9521b79b7362289f0b308fedf6aa0b602c"
+      }
     }
   },
   "court_directory": [
@@ -494,6 +506,19 @@
       "retrieved_at": "2026-11-19T19:31:23.293234+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "3d62947e4c172c3d01466deb0dd7bf": {
+      "source_id": "US-OR:response:2ffe5f89ff10",
+      "authority_type": "court_rule",
+      "citation": "ORCP 15 A–B",
+      "text": "15 A Time for filing motions and pleadings. An answer to a complaint or to a third-party complaint, or a motion responsive to either pleading, must be filed with the clerk within the time required by Rule 7 C(2) to appear and defend. If the summons is served by publication, the defendant must appear and defend within 30 days of the date of first publication. A reply to a counterclaim, a reply to assert affirmative allegations in avoidance of defenses alleged in an answer, or a motion responsive to either of those pleadings must be filed within 30 days from the date of service of the counterclaim or answer. An answer to a cross-claim or a motion responsive to a cross-claim must be filed within 30 days from the date of service of the cross-claim. B Pleading after motion. B(1) If the court denies a motion, any responsive pleading required must be filed within 10 days after service of the order, unless the order otherwise directs. B(2) If the court grants a motion and an amended pleading is allowed or required, that pleading must be filed within 10 days after service of the order, unless the order otherwise directs.",
+      "text_sha256": "22a3958b04388d4c08869decb4e0bae1b0c6ebb9fcd0e7b75ec6a26847a999ab",
+      "publisher_sha256": "e55957b95b25f21142acfca62e8a6c9521b79b7362289f0b308fedf6aa0b602c",
+      "retrieved_at": "2026-11-19T19:43:10.820517+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Oregon Rules of Civil Procedure 2025",
+      "court": "Oregon Circuit Court"
     }
   },
   "fault_allocation": {

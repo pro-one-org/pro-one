@@ -288,6 +288,18 @@
         "retrieved_at": "2026-11-19T19:35:42.819984+00:00",
         "sha256": "31522165f59292d57ee6bb231e8f2579d38c23c3608ad9794231507f3cdbe9a2"
       }
+    },
+    "US-SD:response:37f35efeee02": {
+      "category": "response",
+      "title": "SDCL § 15-6-12(a)",
+      "url": "https://sdlegislature.gov/api/Statutes/15-6-12(a).html",
+      "locator": "SDCL § 15-6-12(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:43:00.395175+00:00",
+        "sha256": "1ba10e3c3b739764550125119ccd1b08940563837abfd6905722f67ae6ff9420"
+      }
     }
   },
   "court_directory": [
@@ -463,6 +475,18 @@
       "retrieved_at": "2026-11-19T19:35:42.819984+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "b3dd53ac2e86b6c0966b9eec8c8b2a": {
+      "source_id": "US-SD:response:37f35efeee02",
+      "authority_type": "court_rule",
+      "citation": "SDCL § 15-6-12(a)",
+      "text": "A defendant shall serve the answer within thirty days after the service of the complaint upon defendant, except when otherwise provided by statute or rule. A party served with a pleading stating a cross-claim shall serve an answer within twenty days after the service. The plaintiff shall serve a reply to a counterclaim in the answer within twenty days after service of the answer or, if a reply is ordered by the court, within twenty days after service of the order, unless the order otherwise directs. The service of a motion permitted under § 15-6-12 alters these periods of time as follows, unless a different time is fixed by order of the court: (1) If the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within ten days after notice of the court's action; (2) If the court grants a motion for a more definite statement, the responsive pleading shall be served within ten days after the service of the more definite statement; (3) If an appeal is taken from an order sustaining a motion to dismiss and such order is thereafter reversed, the responsive pleading shall be served within twenty days after the judgment or order of reversal is filed in the trial court.",
+      "text_sha256": "35d7bd1f41254fd7e91c0306fb1f0e5039818d4bf28e9f4769f9f39c1f40dce1",
+      "publisher_sha256": "1ba10e3c3b739764550125119ccd1b08940563837abfd6905722f67ae6ff9420",
+      "retrieved_at": "2026-11-19T19:43:00.395175+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "South Dakota Circuit Court"
     }
   },
   "fault_allocation": {

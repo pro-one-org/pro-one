@@ -269,6 +269,18 @@
         "retrieved_at": "2026-11-19T19:35:41.909786+00:00",
         "sha256": "4e9787e9bcf9a4025761956ea622ba2facfcacf33228279c871df019c4701811"
       }
+    },
+    "US-NY:response:7c480b070e2f": {
+      "category": "response",
+      "title": "N.Y. CPLR 320(a)",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/320",
+      "locator": "N.Y. CPLR 320(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:42:59.508864+00:00",
+        "sha256": "9dccb65ef5691a52436883305cd5bfac24dea988675c488dad9c1d945ebcd9a3"
+      }
     }
   },
   "court_directory": [
@@ -489,6 +501,18 @@
       "retrieved_at": "2026-11-19T19:35:41.909786+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "07f0eb132784751c2506f3bef1a765": {
+      "source_id": "US-NY:response:7c480b070e2f",
+      "authority_type": "statute",
+      "citation": "N.Y. CPLR 320(a)",
+      "text": "(a) Requirement of appearance. The defendant appears by serving an answer or a notice of appearance, or by making a motion which has the effect of extending the time to answer. An appearance shall be made within twenty days after service of the summons, except that if the summons was served on the defendant by delivering it to an official of the state authorized to receive service in his behalf or if it was served pursuant to section 303, subdivision two, three, four or five of section 308, or sections 313, 314 or 315, the appearance shall be made within thirty days after service is complete. If the complaint is not served with the summons, the time to appear may be extended as provided in subdivision (b) of section 3012.",
+      "text_sha256": "e604e2de4774d51753c194aca3d6dd58da85b75d4ac4c415f0fe1c22fa491205",
+      "publisher_sha256": "9dccb65ef5691a52436883305cd5bfac24dea988675c488dad9c1d945ebcd9a3",
+      "retrieved_at": "2026-11-19T19:42:59.508864+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "New York courts governed by the CPLR"
     }
   },
   "fault_allocation": {

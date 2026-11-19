@@ -264,6 +264,18 @@
         "retrieved_at": "2026-11-19T19:31:22.560368+00:00",
         "sha256": "17089bc3ab37f6fc936ee4609318f39c568688764c4fc8df00bc4286d84e823c"
       }
+    },
+    "US-KS:response:2401a1141018": {
+      "category": "response",
+      "title": "K.S.A. § 60-212(a)",
+      "url": "https://ksrevisor.gov/statutes/chapters/ch60/060_002_0012.html",
+      "locator": "K.S.A. § 60-212(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:43:00.938707+00:00",
+        "sha256": "1d2022e29e94aa4a93eee4c5c575c39c71c27b30d39e2dde55b14902d5a5e8e9"
+      }
     }
   },
   "court_directory": [
@@ -403,6 +415,18 @@
       "retrieved_at": "2026-11-19T19:31:22.560368+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "c24a4890c9ede12818de36ea66e347": {
+      "source_id": "US-KS:response:2401a1141018",
+      "authority_type": "statute",
+      "citation": "K.S.A. § 60-212(a)",
+      "text": "(a) Time to serve a responsive pleading. (1) In general. Unless otherwise provided by law, the time for serving a responsive pleading is as follows: (A) A defendant must serve an answer: (i) Within 21 days after being served with the summons and petition; or (ii) within the time fixed in the notice when service is by publication, which must not be less than 41 days from the time the notice is first published; (B) a party must serve an answer to a counterclaim or crossclaim within 21 days after being served with the pleading that states the counterclaim or crossclaim; and (C) a party must serve a reply to an answer within 21 days after being served with an order to reply, unless the order specifies a different time. (2) Effect of a motion. Unless the court sets a different time, serving a motion under this section alters these periods as follows: (A) If the court denies the motion or postpones its disposition until trial, the responsive pleading must be served within 14 days after notice of the court's action; or (B) if the court grants a motion for a more definite statement, the responsive pleading must be served within 14 days after the more definite statement is served.",
+      "text_sha256": "d7f9c0582d741b829ea6fd95c040d5fd9991f540300e4f9923063c8857eeee6a",
+      "publisher_sha256": "1d2022e29e94aa4a93eee4c5c575c39c71c27b30d39e2dde55b14902d5a5e8e9",
+      "retrieved_at": "2026-11-19T19:43:00.938707+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Kansas District Court"
     }
   },
   "fault_allocation": {

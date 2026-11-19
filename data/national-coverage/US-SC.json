@@ -334,6 +334,18 @@
         "retrieved_at": "2026-11-17T19:43:06.970483+00:00",
         "sha256": "618d3e12990fbae124919734d199173e28a7bde113861b10b11dc338046f161a"
       }
+    },
+    "US-SC:response:4b67c1ccfe81": {
+      "category": "response",
+      "title": "S.C. R. Civ. P. 12(a)",
+      "url": "https://www.sccourts.org/resources/judicial-community/court-rules/civil/rule-12/",
+      "locator": "S.C. R. Civ. P. 12(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:42:59.195878+00:00",
+        "sha256": "a7f7cd9bdf5835437a297483c4c0c0af7bc30d44ad8070214b57db3b29ea847a"
+      }
     }
   },
   "court_directory": [
@@ -538,6 +550,18 @@
       "retrieved_at": "2026-11-17T19:43:06.970483+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "1d6603e7a23c92ab260d4651134320": {
+      "source_id": "US-SC:response:4b67c1ccfe81",
+      "authority_type": "court_rule",
+      "citation": "S.C. R. Civ. P. 12(a)",
+      "text": "(a) When Presented. A defendant shall serve his answer within 30 days after the service of the complaint upon him, unless the Court directs otherwise when service of process is made pursuant to Rule 4(e), and provided further that the State of South Carolina shall answer or otherwise respond to an application for post-conviction relief within 60 days after service of the application, if it arises out of a guilty plea, and 90 days if it arises out of a trial. A party served with a pleading stating a cross-claim against him shall serve an answer thereto within 30 days after the service upon him. The plaintiff shall serve his reply to a counterclaim in the answer within 30 days after service of the answer or, if a reply is ordered by the court, within 30 days after service of the order, unless the order otherwise directs. The service of a motion permitted under this rule alters these periods of time as follows, unless a different time is fixed by order of the Court: (1) if the Court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within 15 days after notice of the Court's action; (2) if the Court grants a motion for a more definite statement the responsive pleading shall be served within 15 days after the service of the more definite statement, and a responsive pleading, if necessary, shall be served within 15 days after notice of the court's action on a motion to strike. Note: This Rule 12(a) is identical to the Federal Rule except that it changes the time to answer from 20 to 30 days, and the time to plead after motion denied from 10 to 15 days. No other changes in State practice are affected by the Rule. Note to 1986 Amendment: The amendment to Rule 12(a)(2) sets the time for response after a motion to strike at 15 days, which is the same time set for pleading after a successful motion for a more definite statement. Note to 1995 Amendment: Rule 12(a) is amended to provide special time periods for the State to respond to applications for post-conviction relief because the thirty day time period for civil litigation is often extended so that the State may obtain a transcript of the proceeding before responding.",
+      "text_sha256": "66090ada2c5fe6a69fc6cdf06c099bf176043919e928d40f902393dd55f7aca9",
+      "publisher_sha256": "a7f7cd9bdf5835437a297483c4c0c0af7bc30d44ad8070214b57db3b29ea847a",
+      "retrieved_at": "2026-11-19T19:42:59.195878+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "South Carolina Circuit Court"
     }
   }
 }

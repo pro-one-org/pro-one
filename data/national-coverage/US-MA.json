@@ -327,6 +327,18 @@
         "retrieved_at": "2026-11-19T19:23:24.052052+00:00",
         "sha256": "f843d89255886f5afd8ef36a549e37273406ad7f53956ef7d305403cd109d332"
       }
+    },
+    "US-MA:response:60849a91234c": {
+      "category": "response",
+      "title": "Mass. R. Civ. P. 12(a)",
+      "url": "https://www.mass.gov/rules-of-civil-procedure/civil-procedure-rule-12-defenses-and-objections-when-and-how-presented-by-pleading-or-motion-motion-for-judgment-on-pleadings",
+      "locator": "Mass. R. Civ. P. 12(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:42:59.578439+00:00",
+        "sha256": "e0a94f51ff78dcb706d4674ec9c0a3cb31d6723e371e0df5c2e5c065a6c18f8d"
+      }
     }
   },
   "court_directory": [
@@ -546,6 +558,18 @@
       "retrieved_at": "2026-11-19T19:23:24.052052+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "0bb8e04bedccdec4c9c6c94462cdc3": {
+      "source_id": "US-MA:response:60849a91234c",
+      "authority_type": "court_rule",
+      "citation": "Mass. R. Civ. P. 12(a)",
+      "text": "(a) When presented (1) After service upon him of any pleading requiring a responsive pleading, a party shall serve such responsive pleading within 20 days unless otherwise directed by order of the court. (2) The service of a motion permitted under this rule alters this period of time as follows, unless a different time is fixed by order of the court: (i) if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within 10 days after notice of the court's action; (ii) if the court grants a motion for a more definite statement, the responsive pleading shall be served within 10 days after the service of the more definite statement.",
+      "text_sha256": "83420bf076fa7ae576d341bad420e9d334cd9cf24bf16e4d686a9d9b50f2ebec",
+      "publisher_sha256": "e0a94f51ff78dcb706d4674ec9c0a3cb31d6723e371e0df5c2e5c065a6c18f8d",
+      "retrieved_at": "2026-11-19T19:42:59.578439+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Massachusetts trial courts governed by the civil rules"
     }
   },
   "fault_allocation": {
