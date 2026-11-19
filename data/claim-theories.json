@@ -1109,6 +1109,278 @@
       "op": "element",
       "element": "written_contract_reference"
     }
+  },
+  {
+    "id": "ca_accepted_goods_damages",
+    "version": "v1",
+    "jurisdiction": "US-CA",
+    "legal_area": "contracts",
+    "kind": "remedy",
+    "label": "Buyer damages for nonconforming accepted goods",
+    "plain_language_label": "Buyer damages for nonconforming accepted goods",
+    "topics": [
+      "accepted_goods_damages"
+    ],
+    "matter_types": [
+      "contract"
+    ],
+    "limitations": [
+      "Section 2714 addresses accepted goods and incorporates notice under section 2607(3). The measure of warranty damages, special circumstances and any incidental or consequential loss require review. No damages are calculated."
+    ],
+    "elements": [
+      {
+        "id": "accepted_goods",
+        "label": "Acceptance of goods",
+        "description": "Identify which goods the buyer accepted.",
+        "kind": "requirement",
+        "authority": [
+          {
+            "passage_id": "corpus-5e7d2094d7d3b10405c131754d72db14c3c2801f62de73219e0458ea0e8f9fd5-p1",
+            "source_id": "corpus-5e7d2094d7d3b10405c131754d72db14c3c2801f62de73219e0458ea0e8f9fd5",
+            "source_type": "statute",
+            "source_version": "California Legislative Counsel PUBINFO, archive modified November 16, 2026",
+            "excerpt_hash": "sha256:aff9d7ee64af7ebdf2bfaf4ef3c0cc34c5cd6620e7f5fb2e8df2e784b984d2dd"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "notice",
+        "label": "Notification of breach",
+        "description": "Identify notice given under section 2607(3), including its content and timing.",
+        "kind": "requirement",
+        "authority": [
+          {
+            "passage_id": "corpus-5e7d2094d7d3b10405c131754d72db14c3c2801f62de73219e0458ea0e8f9fd5-p1",
+            "source_id": "corpus-5e7d2094d7d3b10405c131754d72db14c3c2801f62de73219e0458ea0e8f9fd5",
+            "source_type": "statute",
+            "source_version": "California Legislative Counsel PUBINFO, archive modified November 16, 2026",
+            "excerpt_hash": "sha256:aff9d7ee64af7ebdf2bfaf4ef3c0cc34c5cd6620e7f5fb2e8df2e784b984d2dd"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "nonconformity",
+        "label": "Nonconformity of tender",
+        "description": "Identify how the tender differed from the contractual obligation.",
+        "kind": "requirement",
+        "authority": [
+          {
+            "passage_id": "corpus-5e7d2094d7d3b10405c131754d72db14c3c2801f62de73219e0458ea0e8f9fd5-p1",
+            "source_id": "corpus-5e7d2094d7d3b10405c131754d72db14c3c2801f62de73219e0458ea0e8f9fd5",
+            "source_type": "statute",
+            "source_version": "California Legislative Counsel PUBINFO, archive modified November 16, 2026",
+            "excerpt_hash": "sha256:aff9d7ee64af7ebdf2bfaf4ef3c0cc34c5cd6620e7f5fb2e8df2e784b984d2dd"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "resulting_loss",
+        "label": "Loss resulting from breach",
+        "description": "Identify the loss resulting in the ordinary course of events and a reasonable basis for determining it.",
+        "kind": "requirement",
+        "authority": [
+          {
+            "passage_id": "corpus-5e7d2094d7d3b10405c131754d72db14c3c2801f62de73219e0458ea0e8f9fd5-p1",
+            "source_id": "corpus-5e7d2094d7d3b10405c131754d72db14c3c2801f62de73219e0458ea0e8f9fd5",
+            "source_type": "statute",
+            "source_version": "California Legislative Counsel PUBINFO, archive modified November 16, 2026",
+            "excerpt_hash": "sha256:aff9d7ee64af7ebdf2bfaf4ef3c0cc34c5cd6620e7f5fb2e8df2e784b984d2dd"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "all",
+      "operands": [
+        {
+          "op": "element",
+          "element": "accepted_goods"
+        },
+        {
+          "op": "element",
+          "element": "notice"
+        },
+        {
+          "op": "element",
+          "element": "nonconformity"
+        },
+        {
+          "op": "element",
+          "element": "resulting_loss"
+        }
+      ]
+    }
+  },
+  {
+    "id": "nj_consumer_loss_action",
+    "version": "v1",
+    "jurisdiction": "US-NJ",
+    "legal_area": "consumer",
+    "kind": "claim",
+    "label": "Private action for ascertainable consumer loss",
+    "plain_language_label": "Private action for ascertainable consumer loss",
+    "topics": [
+      "private_action"
+    ],
+    "matter_types": [
+      "consumer"
+    ],
+    "limitations": [
+      "This provision requires review of the underlying unlawful practice, applicable edition and forum. The amount of damages and any entitlement to fees require separate analysis."
+    ],
+    "elements": [
+      {
+        "id": "unlawful_practice",
+        "label": "Unlawful practice by another person",
+        "description": "Identify the specific method, act or practice alleged to be unlawful under the referenced legislation.",
+        "kind": "requirement",
+        "authority": [
+          {
+            "passage_id": "corpus-b7fa5116d5a048f1f567bcdb739ad264517c071b80a17794464102a63203a138-p1",
+            "source_id": "corpus-b7fa5116d5a048f1f567bcdb739ad264517c071b80a17794464102a63203a138",
+            "source_type": "statute",
+            "source_version": "New Jersey General and Permanent Statutes, updated through P.L.2026, c.70, and J.R.2",
+            "excerpt_hash": "sha256:f61e9f85fed5818ac59a0faa89c9a90fd01fe6934d40fa556efa5208c6c663eb"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "ascertainable_loss",
+        "label": "Ascertainable loss of money or property",
+        "description": "Identify the loss of money or property, real or personal.",
+        "kind": "requirement",
+        "authority": [
+          {
+            "passage_id": "corpus-b7fa5116d5a048f1f567bcdb739ad264517c071b80a17794464102a63203a138-p1",
+            "source_id": "corpus-b7fa5116d5a048f1f567bcdb739ad264517c071b80a17794464102a63203a138",
+            "source_type": "statute",
+            "source_version": "New Jersey General and Permanent Statutes, updated through P.L.2026, c.70, and J.R.2",
+            "excerpt_hash": "sha256:f61e9f85fed5818ac59a0faa89c9a90fd01fe6934d40fa556efa5208c6c663eb"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "causal_connection",
+        "label": "Causal connection",
+        "description": "Identify how the unlawful practice caused that ascertainable loss.",
+        "kind": "requirement",
+        "authority": [
+          {
+            "passage_id": "corpus-b7fa5116d5a048f1f567bcdb739ad264517c071b80a17794464102a63203a138-p1",
+            "source_id": "corpus-b7fa5116d5a048f1f567bcdb739ad264517c071b80a17794464102a63203a138",
+            "source_type": "statute",
+            "source_version": "New Jersey General and Permanent Statutes, updated through P.L.2026, c.70, and J.R.2",
+            "excerpt_hash": "sha256:f61e9f85fed5818ac59a0faa89c9a90fd01fe6934d40fa556efa5208c6c663eb"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "all",
+      "operands": [
+        {
+          "op": "element",
+          "element": "unlawful_practice"
+        },
+        {
+          "op": "element",
+          "element": "ascertainable_loss"
+        },
+        {
+          "op": "element",
+          "element": "causal_connection"
+        }
+      ]
+    }
+  },
+  {
+    "id": "wi_wages_due",
+    "version": "v1",
+    "jurisdiction": "US-WI",
+    "legal_area": "employment",
+    "kind": "claim",
+    "label": "Employee action for wages due",
+    "plain_language_label": "Employee action for wages due",
+    "authority_as_of": "2026-11-04",
+    "topics": [
+      "wage_enforcement"
+    ],
+    "matter_types": [
+      "wage"
+    ],
+    "limitations": [
+      "Section 109.03(5) cross-references other provisions concerning increased wages and liens. Additional remedies, exclusions, wage amounts and venue require review."
+    ],
+    "elements": [
+      {
+        "id": "wage_enforcement",
+        "label": "Employee action for wages due",
+        "description": "Identify the wages due from the employer on a regular payday under section 109.03.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-fe53b00fe3e8b71e8357e15976dc9c76c48f2aaf1eb8ab73c4401ffac7651728-p1",
+            "source_id": "corpus-fe53b00fe3e8b71e8357e15976dc9c76c48f2aaf1eb8ab73c4401ffac7651728",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:df8c2e229608cac079ce1365ed3cbab6feb241afb676ddad10347907a1dd0efa",
+            "source_type": "statute"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "wage_enforcement"
+    }
+  },
+  {
+    "id": "wi_comparative_negligence",
+    "version": "v1",
+    "jurisdiction": "US-WI",
+    "legal_area": "torts",
+    "kind": "defense",
+    "label": "Separate comparison of causal negligence",
+    "plain_language_label": "Separate comparison of causal negligence",
+    "authority_as_of": "2026-11-04",
+    "topics": [
+      "fault_allocation"
+    ],
+    "matter_types": [
+      "personal_injury"
+    ],
+    "limitations": [
+      "Subsection (1) addresses separate comparison, proportional reduction and allocation among defendants. Other subsections and case-specific exceptions require review."
+    ],
+    "elements": [
+      {
+        "id": "fault_allocation",
+        "label": "Separate comparison of causal negligence",
+        "description": "Compare the claimant’s causal negligence separately with that of each person against whom recovery is sought.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-13e87f76c593971705559533418e2d156da269b455129a2412839b364d9f8528-p1",
+            "source_id": "corpus-13e87f76c593971705559533418e2d156da269b455129a2412839b364d9f8528",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:86f7a2c4b4786b03452c4e5dc046404fb9031087175ddad0501424974135834c",
+            "source_type": "statute"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "fault_allocation"
+    }
   }
 
 ]

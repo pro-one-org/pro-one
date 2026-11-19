@@ -78,6 +78,7 @@ class LegalTheory(Record):
     plain_language_label: Text
     review: Literal["proposed", "development_reviewed"] = "proposed"
     capability: str | None = None
+    authority_as_of: date | None = None
     topics: tuple[Key, ...] = Field(min_length=1, max_length=8)
     matter_types: tuple[Key, ...] = Field(min_length=1, max_length=8)
     elements: tuple[LegalElement, ...] = Field(min_length=1, max_length=16)

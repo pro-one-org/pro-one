@@ -148,6 +148,8 @@ class ClaimCatalog:
         self.active = {key: group[-1] for key, group in versions.items()}
 
     def research(self, theory, settings=None, law_as_of=None, *, packages=None):
+        if theory.authority_as_of is not None and theory.authority_as_of != law_as_of:
+            return {}, (), ()
         owner = registry()[theory.jurisdiction]
         query = ResearchMatter(country="US", sovereign=owner.kind,
                                state=owner.name if owner.kind != "federal" else None, legal_area=theory.legal_area,
@@ -192,7 +194,7 @@ class ClaimCatalog:
     def validate(self):
         packages = {}
         for theory in self.versions:
-            bindings, _, _ = self.research(theory, packages=packages)
+            bindings, _, _ = self.research(theory, law_as_of=theory.authority_as_of, packages=packages)
             if set(bindings) != {element.id for element in theory.elements}:
                 raise ValueError(f"unbound_catalog_authority:{theory.id}:{theory.version}")
 

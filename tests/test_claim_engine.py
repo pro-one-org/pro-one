@@ -59,6 +59,18 @@ class ClaimTests(unittest.TestCase):
     def statement(self, matter, text, **scope):
         return self.ledger.statement(matter, text, **scope)[0]
 
+    def test_wisconsin_claims_replay_only_for_the_certified_date(self):
+        catalog = self.engine.catalog
+        for key in ("wi_wages_due", "wi_comparative_negligence"):
+            theory = catalog.active[key]
+            bound, _, _ = catalog.research(theory, law_as_of=date(2026, 11, 4))
+            self.assertEqual(set(bound), {element.id for element in theory.elements})
+            for rows in bound.values():
+                for row in rows:
+                    self.assertEqual(row["currentness"]["as_of"], "2026-11-04")
+            for day in (None, date(2026, 11, 3), date(2026, 11, 5)):
+                self.assertFalse(catalog.research(theory, law_as_of=day)[0])
+
     def upload(self, matter, text, kind, **scope):
         return self.ledger.upload(matter, text.encode(), "text/plain", kind, **scope)[0]
 
