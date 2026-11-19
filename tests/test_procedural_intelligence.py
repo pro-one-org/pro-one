@@ -169,6 +169,14 @@ class ProceduralIntelligenceTests(unittest.TestCase):
         excluded = service.respond(ProceduralRequest(message=message, authority_type="statute"))
         self.assertEqual([], excluded["reference_authorities"])
 
+    def test_new_york_small_claims_reference_identifies_the_city_court(self):
+        result = self.service().respond(ProceduralRequest(message="What are the small claims rules in New York?"))
+        self.assertEqual("outside_bounded_coverage", result["status"])
+        reference, = result["reference_authorities"]
+        self.assertEqual("Civil Court of the City of New York", reference["court"])
+        self.assertEqual("unresolved", reference["currentness"])
+        self.assertFalse(result["external_action_allowed"])
+
     def test_prerequisite_cannot_be_skipped_by_requested_stage(self):
         result = self.choose(FALL, "va_litigation", stage="service", forum="va_circuit", facts=FORUM_FACTS)
         self.assertEqual("prerequisite_missing", result["status"])

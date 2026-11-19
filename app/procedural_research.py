@@ -152,6 +152,8 @@ def infer_subject(message):
     if re.search(r"\b(?:serve|served|serving|service|process server)\b", message, re.I) and re.search(
             r"\b(?:complaint|summons|process|civil)\b", message, re.I):
         return "service"
+    if re.search(r"\b(?:small[- ]claims?|conciliation court)\b", message, re.I):
+        return "small_claims"
     if re.search(r"\b(?:commence|start|begin)\b.{0,35}\b(?:civil action|civil case|lawsuit)\b", message, re.I):
         return "commencement"
     if re.search(r"\b(?:slip\w*|fell|fall|trip\w*)\b", message, re.I) and re.search(

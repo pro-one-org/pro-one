@@ -271,6 +271,18 @@
         "retrieved_at": "2026-11-19T14:10:58.573905+00:00",
         "sha256": "33dc17613880a5de3352790c1903900790b62c1613670157176cb18c492022e5"
       }
+    },
+    "US-MN:small_claims:353161b730af": {
+      "category": "small_claims",
+      "title": "Minn. Stat. § 491A.01, subd. 3a(a)–(b)",
+      "url": "https://www.revisor.mn.gov/statutes/cite/491A.01",
+      "locator": "Minn. Stat. § 491A.01, subd. 3a(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:17:29.883841+00:00",
+        "sha256": "7ea8ac11bb195c8cbbab1713cb288e8acdd7d415b949ef7b8ad058482134d169"
+      }
     }
   },
   "court_directory": [
@@ -416,6 +428,18 @@
       "retrieved_at": "2026-11-19T14:10:58.573905+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "8f2f43229358d5c727af2e1fa2a838": {
+      "source_id": "US-MN:small_claims:353161b730af",
+      "authority_type": "statute",
+      "citation": "Minn. Stat. § 491A.01, subd. 3a(a)–(b)",
+      "text": "(a) Except as provided in subdivisions 4 and 5, the conciliation court has jurisdiction to hear, conciliate, try, and determine civil claims if the amount of money or property that is the subject matter of the claim does not exceed: (1) $20,000; or (2) $4,000, if the claim involves a consumer credit transaction. (b) \"Consumer credit transaction\" means a sale of personal property, or a loan arranged to facilitate the purchase of personal property, in which: (1) credit is granted by a seller or a lender who regularly engages as a seller or lender in credit transactions of the same kind; (2) the buyer is a natural person; (3) the claimant is the seller or lender in the transaction; and (4) the personal property is purchased primarily for a personal, family, or household purpose and not for a commercial, agricultural, or business purpose.",
+      "text_sha256": "53ca5eaab5b7dc233e70e7b646cea6d44af055fc6d44165d75cd55d50cdc878e",
+      "publisher_sha256": "7ea8ac11bb195c8cbbab1713cb288e8acdd7d415b949ef7b8ad058482134d169",
+      "retrieved_at": "2026-11-19T19:17:29.883841+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Minnesota Conciliation Court"
     }
   },
   "fault_allocation": {

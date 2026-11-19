@@ -233,6 +233,18 @@
         "retrieved_at": "2026-11-19T14:11:01.853177+00:00",
         "sha256": "a79e3e523379c302a4064bd344a1914e08d5c1b40eadff16d4e8c41004d83a58"
       }
+    },
+    "US-VT:small_claims:893e5e3585ea": {
+      "category": "small_claims",
+      "title": "12 V.S.A. § 5531",
+      "url": "https://legislature.vermont.gov/statutes/section/12/187/05531",
+      "locator": "12 V.S.A. § 5531",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:17:29.882679+00:00",
+        "sha256": "4cdd61faade161008cce1acd7d293eeedf645e292f9eaf5bec2dc45de05651d4"
+      }
     }
   },
   "court_directory": [
@@ -397,6 +409,18 @@
       "retrieved_at": "2026-11-19T14:11:01.853177+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "34b5dcfd6076a19b4fa8c105a65624": {
+      "source_id": "US-VT:small_claims:893e5e3585ea",
+      "authority_type": "statute",
+      "citation": "12 V.S.A. § 5531",
+      "text": "(a) The Supreme Court, pursuant to section 1 of this title, shall make rules under this chapter applicable to such Court providing for a simple, informal, and inexpensive procedure for the determination, according to the rules of substantive law, of actions of a civil nature of which they have jurisdiction, other than actions for slander or libel and in which the plaintiff does not claim as debt or damage more than $10,000.00. Small claims proceedings shall be limited in accord with this chapter and the procedures made available under those rules. The procedure shall not be exclusive but shall be alternative to the formal procedure begun by the filing of a complaint. (b) Parties may not request claims for relief other than money damages under this chapter. Nor may parties split a claim in excess of $10,000.00 into two or more claims under this chapter. (c) In small claims actions where the plaintiff makes a claim for relief greater than $3,500.00, the defendant shall have the right to request a special assignment of a judicial officer. Upon making this request, a Superior judge or a member of the Vermont bar appointed pursuant to 4 V.S.A. § 22(b) shall be assigned to hear the action. (d) Venue in small claims actions shall be governed by section 402 of this title. (e) Notwithstanding this section or any other provision of law, the small claims court shall not have jurisdiction over actions for collection of any debt greater than $5,000.00 arising out of: (1) a consumer credit transaction as defined in 15 U.S.C. § 1679a; or (2) medical debt as defined in 18 V.S.A. § 9481.",
+      "text_sha256": "da70b9f33e1dcaafe489f249896e68adaad5a0b996afc72158c2142a40a14c83",
+      "publisher_sha256": "4cdd61faade161008cce1acd7d293eeedf645e292f9eaf5bec2dc45de05651d4",
+      "retrieved_at": "2026-11-19T19:17:29.882679+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Vermont Superior Court"
     }
   },
   "fault_allocation": {

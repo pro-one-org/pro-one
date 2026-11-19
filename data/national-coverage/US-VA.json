@@ -303,6 +303,18 @@
         "retrieved_at": "2026-11-19T19:02:18.051327+00:00",
         "sha256": "15a5095aba5043b863d2c7fb26f24c2556cad4908054874c0dff4f770af53a0f"
       }
+    },
+    "US-VA:small_claims:03d3fbf77f95": {
+      "category": "small_claims",
+      "title": "Va. Code § 16.1-122.2",
+      "url": "https://law.lis.virginia.gov/vacode/title16.1/chapter6/section16.1-122.2/",
+      "locator": "Va. Code § 16.1-122.2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:17:30.121488+00:00",
+        "sha256": "9a456313835102e9127da442212bdad2f5da20ec226022c07af56bca547dbb26"
+      }
     }
   },
   "court_directory": [
@@ -433,6 +445,18 @@
       "language": "en",
       "court": "Virginia Circuit Court",
       "effective_from": "2021-03-01"
+    },
+    "ee9b27743a538dea7c41d02504c968": {
+      "source_id": "US-VA:small_claims:03d3fbf77f95",
+      "authority_type": "statute",
+      "citation": "Va. Code § 16.1-122.2",
+      "text": "Notwithstanding any provision of law to the contrary, the small claims court shall have jurisdiction, concurrent with that of the general district court, over the civil action specified in § 16.1-77 (1) when the amount claimed does not exceed $5,000, exclusive of interest.",
+      "text_sha256": "685e75dd9e05a057938cb4b9d7337ef798c409d4cae2678015f0b1a5a307cfe8",
+      "publisher_sha256": "9a456313835102e9127da442212bdad2f5da20ec226022c07af56bca547dbb26",
+      "retrieved_at": "2026-11-19T19:17:30.121488+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Virginia General District Court"
     }
   }
 }

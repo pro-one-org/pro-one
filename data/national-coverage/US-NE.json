@@ -259,6 +259,18 @@
         "retrieved_at": "2026-11-19T14:10:56.888263+00:00",
         "sha256": "2cc67f7ae7b822c5b5040bdb3be73c14a590186afb91aa12c3e7109c910405bc"
       }
+    },
+    "US-NE:small_claims:ac9d70dc1d32": {
+      "category": "small_claims",
+      "title": "Neb. Rev. Stat. § 25-2802",
+      "url": "https://www.nebraskalegislature.gov/laws/statutes.php?print=true&statute=25-2802",
+      "locator": "Neb. Rev. Stat. § 25-2802",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:17:29.479431+00:00",
+        "sha256": "f40f81a09a83ae5201815901ed2caaa75fd976d936aff548066f50446d7d9a0c"
+      }
     }
   },
   "court_directory": [
@@ -425,6 +437,18 @@
       "retrieved_at": "2026-11-19T14:10:56.888263+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "7a47f7d3ec9007df7ae0d6110d75f6": {
+      "source_id": "US-NE:small_claims:ac9d70dc1d32",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 25-2802",
+      "text": "(1) The Small Claims Court shall have subject matter jurisdiction in all civil actions of any type when the amount of money or damages or the value of the personal property claimed does not exceed the jurisdictional amount specified in subsection (4) of this section, exclusive of interest and costs. (2) The Small Claims Court shall have subject matter jurisdiction in civil matters when the plaintiff seeks to disaffirm, avoid, or rescind a contract or agreement for the purchase of goods or services not in excess of the jurisdictional amount specified in subsection (4) of this section, exclusive of interest and costs. (3) The Small Claims Court shall have jurisdiction when the party defendant or his or her agent resides or is doing business within the county or when the cause of action arose within the county. (4) The jurisdictional amount is six thousand dollars from July 1, 2024, through June 30, 2025. The jurisdictional amount is seven thousand five hundred dollars beginning July 1, 2025.",
+      "text_sha256": "78cd1ad22648069d6f518c653c77ff9024767c04d1945c16c421533a476d1ffa",
+      "publisher_sha256": "f40f81a09a83ae5201815901ed2caaa75fd976d936aff548066f50446d7d9a0c",
+      "retrieved_at": "2026-11-19T19:17:29.479431+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Nebraska County Court"
     }
   },
   "fault_allocation": {

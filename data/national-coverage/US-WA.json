@@ -261,6 +261,18 @@
         "retrieved_at": "2026-11-18T20:45:51.277436+00:00",
         "sha256": "fa8a485acb64e889978fca6f210932e1e79931cbb5155ea6bdc059215bdd9a3b"
       }
+    },
+    "US-WA:small_claims:ab9a81c76fbd": {
+      "category": "small_claims",
+      "title": "RCW 12.40.010",
+      "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=12.40.010&pdf=true",
+      "locator": "RCW 12.40.010",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:17:34.999180+00:00",
+        "sha256": "68d4b50d246b22144301056b34aa21602d75fe2aecf34354284aa8ab9078a1cb"
+      }
     }
   },
   "court_directory": [
@@ -432,6 +444,19 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Washington Superior Court"
+    },
+    "e25b8a33396dcbb1a3862446cfa470": {
+      "source_id": "US-WA:small_claims:ab9a81c76fbd",
+      "authority_type": "statute",
+      "citation": "RCW 12.40.010",
+      "text": "(1) In every district court there shall be created and organized by the court a department to be known as the \"small claims department of the district court.\" The small claims department shall have jurisdiction, but not exclusive, in cases for the recovery of money only if the amount claimed does not exceed: (a) Ten thousand dollars in cases brought by a natural person; or (b) Five thousand dollars in all other cases. (2) For the purposes of this section, \"natural person\" means a human being.",
+      "text_sha256": "55ca6043d8c47c180e2b29cd45c20b8b37ce61be576fcfefaaefc91860f7cf19",
+      "publisher_sha256": "68d4b50d246b22144301056b34aa21602d75fe2aecf34354284aa8ab9078a1cb",
+      "retrieved_at": "2026-11-19T19:17:34.999180+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Code Reviser PDF certified July 12, 2024",
+      "court": "Washington District Court"
     }
   },
   "fault_allocation": {

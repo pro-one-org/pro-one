@@ -221,6 +221,18 @@
         "retrieved_at": "2026-11-18T20:45:52.057836+00:00",
         "sha256": "cc80bb63eca7f05b0495ba9072f297ab3fa21fba56e250fd1adfb590698d12f4"
       }
+    },
+    "US-NY:small_claims:04b6983c0db1": {
+      "category": "small_claims",
+      "title": "N.Y.C. Civil Court Act § 1801",
+      "url": "https://www.nysenate.gov/legislation/laws/CCA/1801",
+      "locator": "N.Y.C. Civil Court Act § 1801",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:17:29.362293+00:00",
+        "sha256": "501820e82bf3bfd2e29eea4d72e01dc919d94c9a8bde06a0789cdd132065db63"
+      }
     }
   },
   "court_directory": [
@@ -396,6 +408,18 @@
       "retrieved_at": "2026-11-18T20:45:52.057836+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "4a5686da4e40a14918ba99e7a70627": {
+      "source_id": "US-NY:small_claims:04b6983c0db1",
+      "authority_type": "statute",
+      "citation": "N.Y.C. Civil Court Act § 1801",
+      "text": "The term \"small claim\" or \"small claims\" as used in this act shall mean and include any cause of action for money only not in excess of ten thousand dollars exclusive of interest and costs, or any action commenced by a party aggrieved by an arbitration award rendered pursuant to part 137 of the rules of the chief administrator of the courts (22 NYCRR Part 137) in which the amount in dispute does not exceed ten thousand dollars, provided that the defendant either resides, or has an office for the transaction of business or a regular employment within the city of New York, or where claimant is a tenant or lessee of real property owned by the defendant and the claim relates to such tenancy or lease, and such real property is situated within the city of New York.",
+      "text_sha256": "3e1a8a55dcdf152d29e7c82fc867ccfd2abb79a928255a5cb7ef65acaa0ba83b",
+      "publisher_sha256": "501820e82bf3bfd2e29eea4d72e01dc919d94c9a8bde06a0789cdd132065db63",
+      "retrieved_at": "2026-11-19T19:17:29.362293+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Civil Court of the City of New York"
     }
   },
   "fault_allocation": {

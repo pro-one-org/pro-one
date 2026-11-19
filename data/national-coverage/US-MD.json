@@ -237,6 +237,18 @@
         "retrieved_at": "2026-11-19T14:10:54.573666+00:00",
         "sha256": "88922fa20282b3776e13c44e65981f14ddc6a1d0776fc64aefd5794986194e27"
       }
+    },
+    "US-MD:small_claims:d652a5846ed5": {
+      "category": "small_claims",
+      "title": "Md. Code, Cts. & Jud. Proc. § 4-405",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&section=4-405",
+      "locator": "Md. Code, Cts. & Jud. Proc. § 4-405",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:17:30.188587+00:00",
+        "sha256": "5f3830af48820efe88eec6e69264362b0b3494f26949281a8bb7e6bae91f6e36"
+      }
     }
   },
   "court_directory": [
@@ -367,6 +379,18 @@
       "retrieved_at": "2026-11-19T14:10:54.573666+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "05ca878c64e1e298d24589fd9054b1": {
+      "source_id": "US-MD:small_claims:d652a5846ed5",
+      "authority_type": "statute",
+      "citation": "Md. Code, Cts. & Jud. Proc. § 4-405",
+      "text": "The District Court has exclusive jurisdiction over a small claim action, which, for purposes of this section, means a civil action for money in which the amount claimed does not exceed $5,000 exclusive of interest, costs, and attorney’s fees, if attorney’s fees are recoverable by law or contract; and landlord tenant action under §§ 8-401 and 8-402 of the Real Property Article, in which the amount of rent claimed does not exceed $5,000 exclusive of interest and costs.",
+      "text_sha256": "6522c47dab6a3c66eeaf8e4b1d60bbb5ab1c2b4b8c42fc58690bf69dcbb136f5",
+      "publisher_sha256": "5f3830af48820efe88eec6e69264362b0b3494f26949281a8bb7e6bae91f6e36",
+      "retrieved_at": "2026-11-19T19:17:30.188587+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "District Court of Maryland"
     }
   }
 }

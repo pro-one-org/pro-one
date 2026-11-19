@@ -29,6 +29,7 @@ SUBJECTS = {
     "debtLaw": ("consumer_debt", "debt_collection"),
     "commencement": ("civil_procedure", "commencement"),
     "venue": ("civil_procedure", "venue"),
+    "small_claims": ("civil_procedure", "small_claims"),
     "service": ("civil_procedure", "service_of_process"),
     "response": ("civil_procedure", "initial_response"),
     "contract_formation": ("contracts", "contract_formation"),
