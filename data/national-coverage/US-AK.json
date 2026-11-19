@@ -312,6 +312,18 @@
         "retrieved_at": "2026-11-18T15:14:38.100170+00:00",
         "sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb"
       }
+    },
+    "US-AK:commencement:705182a88cdf": {
+      "category": "commencement",
+      "title": "Alaska R. Civ. P. 3(a)",
+      "url": "https://courts.alaska.gov/rules/docs/civ.pdf",
+      "locator": "Alaska R. Civ. P. 3(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:45.439868+00:00",
+        "sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb"
+      }
     }
   },
   "court_directory": [
@@ -403,6 +415,18 @@
       "retrieved_at": "2026-11-18T15:14:38.100170+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "d092f273d2bcdd8f9597e9691dfd48": {
+      "source_id": "US-AK:commencement:705182a88cdf",
+      "authority_type": "court_rule",
+      "citation": "Alaska R. Civ. P. 3(a)",
+      "text": "(a) A civil action is commenced by filing a complaint with the court . The complaint, in order to be accepted for filing, must be accompanied by a completed case description on a form provided by the clerk of court. Unless filing by fax or electronic mail where authorized, the complaint shall also be accompanied by an envel ope addressed to the plaintiff with sufficient postage to mail the envelope and all summonses tha t will be issued in the case.",
+      "text_sha256": "38f339b2cf67e4fe89abaaff35fc9813e847131dff5104eae45db0aaefb6d901",
+      "publisher_sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb",
+      "retrieved_at": "2026-11-18T20:45:45.439868+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska Superior Court"
     }
   },
   "fault_allocation": {

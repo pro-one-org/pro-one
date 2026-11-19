@@ -382,6 +382,18 @@
         "retrieved_at": "2026-11-18T15:14:39.879882+00:00",
         "sha256": "a3afca2ca685f9c18edc631babf27140e321fe3460a73cffd97497a1dba2c1f3"
       }
+    },
+    "US-TX:commencement:e60e51166a6e": {
+      "category": "commencement",
+      "title": "Tex. R. Civ. P. 22",
+      "url": "https://www.txcourts.gov/media/1462349/texas-rules-of-civil-procedure.pdf",
+      "locator": "Tex. R. Civ. P. 22",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:47.983754+00:00",
+        "sha256": "5428d16df065d6c5bd8b746576ee74b27ec67b36dd09ed03738a3c7ed370d3d3"
+      }
     }
   },
   "court_directory": [
@@ -581,6 +593,18 @@
       "retrieved_at": "2026-11-18T15:14:39.879882+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "405569aabe8cdd47dda13a0d9c65de": {
+      "source_id": "US-TX:commencement:e60e51166a6e",
+      "authority_type": "court_rule",
+      "citation": "Tex. R. Civ. P. 22",
+      "text": "A civil suit in the district or county court shall be commenced by a petition filed in the office of the clerk.",
+      "text_sha256": "7ba58e8ebecad80290cbd23acbfc9d7fd396a3e6f5114da67ff618b49004f90c",
+      "publisher_sha256": "5428d16df065d6c5bd8b746576ee74b27ec67b36dd09ed03738a3c7ed370d3d3",
+      "retrieved_at": "2026-11-18T20:45:47.983754+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Texas District and County Courts"
     }
   },
   "fault_allocation": {

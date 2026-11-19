@@ -242,6 +242,18 @@
         "retrieved_at": "2026-11-18T15:14:38.712693+00:00",
         "sha256": "c3e25312213992e9c14db0e8600dba2fe84b77351bace8f304221ad4f614e785"
       }
+    },
+    "US-HI:commencement:96af7fb055aa": {
+      "category": "commencement",
+      "title": "Haw. R. Civ. P. 3",
+      "url": "https://www.courts.state.hi.us/wp-content/uploads/2024/09/hrcp_ada.pdf",
+      "locator": "Haw. R. Civ. P. 3",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:58.834498+00:00",
+        "sha256": "e74747393544ab0c36f0f3db12bf460db86c2995dd7e3ac3dfef00a9643a384a"
+      }
     }
   },
   "court_directory": [
@@ -365,6 +377,18 @@
       "retrieved_at": "2026-11-18T15:14:38.712693+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "64689116d4e51bfd75500289b954d2": {
+      "source_id": "US-HI:commencement:96af7fb055aa",
+      "authority_type": "court_rule",
+      "citation": "Haw. R. Civ. P. 3",
+      "text": "A civil action is commenced by filing a complaint with the court.",
+      "text_sha256": "4345c2469f24d6e60fd993cb2587c8049f27a75270937dfa9b4748be88f154d9",
+      "publisher_sha256": "e74747393544ab0c36f0f3db12bf460db86c2995dd7e3ac3dfef00a9643a384a",
+      "retrieved_at": "2026-11-18T20:45:58.834498+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Hawaii Circuit Court"
     }
   },
   "fault_allocation": {

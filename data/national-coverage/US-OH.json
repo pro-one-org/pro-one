@@ -214,6 +214,18 @@
         "retrieved_at": "2026-11-18T15:14:31.872172+00:00",
         "sha256": "ad5d5dc933793afd8730a309da72bb0bcf3ad6ec98eaf52d762324c328f5a985"
       }
+    },
+    "US-OH:commencement:8bbfc8bb5eb3": {
+      "category": "commencement",
+      "title": "Ohio Civ. R. 3(A)",
+      "url": "https://www.supremecourt.ohio.gov/docs/LegalResources/Rules/civil/CivilProcedure.pdf",
+      "locator": "Ohio Civ. R. 3(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:46:32.705237+00:00",
+        "sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040"
+      }
     }
   },
   "court_directory": [
@@ -370,6 +382,18 @@
       "retrieved_at": "2026-11-18T15:14:31.872172+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "7a13e11e10af4080ccc3148b504963": {
+      "source_id": "US-OH:commencement:8bbfc8bb5eb3",
+      "authority_type": "court_rule",
+      "citation": "Ohio Civ. R. 3(A)",
+      "text": "A civil action is commenced by filing a complaint with the court, if service is obtained within one year from such filing upon a named defendant, or upon an incorrectly named defendant whose name is later corrected pursuant to Civ.R. 15(C), or upon a defen dant identified by a fictitious name whose name is later corrected pursuant to Civ.R. 15(D).",
+      "text_sha256": "29355f099e8d6617d6ab1d49d900e7ad6703f65f26e85093ca8534e87a39554a",
+      "publisher_sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040",
+      "retrieved_at": "2026-11-18T20:46:32.705237+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Ohio Court of Common Pleas"
     }
   },
   "fault_allocation": {

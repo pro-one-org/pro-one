@@ -228,6 +228,18 @@
         "retrieved_at": "2026-11-18T15:14:25.178656+00:00",
         "sha256": "0ebd3d6fa5e54707700dce8e9c8ed8712d80fc676837501e9d1e2d7461a9cdf8"
       }
+    },
+    "US-AZ:commencement:973555b4dfa6": {
+      "category": "commencement",
+      "title": "Ariz. R. Civ. P. 3",
+      "url": "https://www.azcourts.gov/Portals/0/20/2016%20Rules/R-16-0010.pdf",
+      "locator": "Ariz. R. Civ. P. 3",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:33.808787+00:00",
+        "sha256": "022194c52c2c51ff885f5dba4d43af7789052509f43c7295713d2c57064c64a8"
+      }
     }
   },
   "court_directory": [
@@ -380,6 +392,19 @@
       "retrieved_at": "2026-11-18T15:14:25.178656+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "3f089867f83fa7ee08a3705b7614d9": {
+      "source_id": "US-AZ:commencement:973555b4dfa6",
+      "authority_type": "court_rule",
+      "citation": "Ariz. R. Civ. P. 3",
+      "text": "A civil action is commenced by filing a complaint with the court.",
+      "text_sha256": "4345c2469f24d6e60fd993cb2587c8049f27a75270937dfa9b4748be88f154d9",
+      "publisher_sha256": "022194c52c2c51ff885f5dba4d43af7789052509f43c7295713d2c57064c64a8",
+      "retrieved_at": "2026-11-18T20:45:33.808787+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Supreme Court Order R-16-0010, effective January 1, 2017",
+      "court": "Arizona Superior Court"
     }
   },
   "fault_allocation": {

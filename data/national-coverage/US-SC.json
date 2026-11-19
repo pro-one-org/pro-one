@@ -298,6 +298,18 @@
         "retrieved_at": "2026-11-18T15:14:32.481170+00:00",
         "sha256": "a9dded040ef7b53901e1f121acc42e2585c097dc6d08a5596975ac923bbaf020"
       }
+    },
+    "US-SC:commencement:1ed1bff7bcf2": {
+      "category": "commencement",
+      "title": "S.C. R. Civ. P. 3(a)",
+      "url": "https://www.sccourts.org/resources/judicial-community/court-rules/civil/rule-3/",
+      "locator": "S.C. R. Civ. P. 3(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:46.201127+00:00",
+        "sha256": "ced9775a0b20feb4f88d5c935b64024e81924ccaca61428d6d050cf2380b1c24"
+      }
     }
   },
   "court_directory": [
@@ -463,6 +475,18 @@
       "retrieved_at": "2026-11-18T15:14:32.481170+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "a5a443ef8351bd62a35c3bb7faf9a0": {
+      "source_id": "US-SC:commencement:1ed1bff7bcf2",
+      "authority_type": "court_rule",
+      "citation": "S.C. R. Civ. P. 3(a)",
+      "text": "(a) Commencement of civil action. A civil action is commenced when the summons and complaint are filed with the clerk of court if: (1) the summons and complaint are served within the statute of limitations in any manner prescribed by law; or (2) if not served within the statute of limitations, actual service must be accomplished not later than one hundred twenty days after filing.",
+      "text_sha256": "56fc851dd6a72ff944c01e7962c8ab048473640ee0e3a57a6eb9240e6c1f6705",
+      "publisher_sha256": "ced9775a0b20feb4f88d5c935b64024e81924ccaca61428d6d050cf2380b1c24",
+      "retrieved_at": "2026-11-18T20:45:46.201127+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "South Carolina Circuit Court"
     }
   }
 }

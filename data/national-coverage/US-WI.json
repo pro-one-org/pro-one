@@ -306,6 +306,18 @@
         "retrieved_at": "2026-11-18T15:36:53.408345+00:00",
         "sha256": "4b6e83e7f0c00276c3fd02fa4e9140085989e4c85d47feeaac93e54e75625b83"
       }
+    },
+    "US-WI:commencement:8245bd4f7cb8": {
+      "category": "commencement",
+      "title": "Wis. Stat. § 801.02(1)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/801/02",
+      "locator": "Wis. Stat. § 801.02(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:55.516690+00:00",
+        "sha256": "46b5426884546975d997291fd55bbc874cf81b62f0a08e584aebee3dba4e6591"
+      }
     }
   },
   "court_directory": [
@@ -473,6 +485,20 @@
       "language": "en",
       "publisher_path": "/statutes/statutes/895/i/045/1",
       "current_as_of": "2026-11-04",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "3babb1d2b21006018ba1e9a5806359": {
+      "source_id": "US-WI:commencement:8245bd4f7cb8",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 801.02(1)",
+      "text": "A civil action in which a personal judgment is sought is commenced as to any defendant when a summons and a complaint naming the person as defendant are filed with the court, provided service of an authenticated copy of the summons and of the complaint is made upon the defendant under this chapter within 90 days after filing.",
+      "text_sha256": "682c4285c1934b2bf8008b5db692ff8f88947139cdf26c62b38c32aa5a0d42a8",
+      "publisher_sha256": "46b5426884546975d997291fd55bbc874cf81b62f0a08e584aebee3dba4e6591",
+      "retrieved_at": "2026-11-18T20:45:55.516690+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/801/02/1",
       "edition": "Wisconsin Statutes certified November 4, 2026"
     }
   },
