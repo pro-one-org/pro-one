@@ -22,6 +22,18 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_published_effective_interval_survives_without_currentness_promotion(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Virginia", legal_area="consumer",
+                               topics=["unfair_practices"], authority_types=["statute"])
+        version, = [provider.fetch(key).source for key in provider.search(query)
+                    if provider.fetch(key).source["citation"]["preferred_citation"] == "Va. Code § 59.1-200(A)(1)–(6)"]
+        self.assertEqual(version["dates"]["effective_from"], "2026-11-01")
+        self.assertEqual(version["dates"]["effective_through"], "2027-07-01")
+        self.assertEqual(version["corpus_provenance"]["currentness"], "unresolved")
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                  "authority_as_of": "2026-11-19"})))
+
     def test_wisconsin_certificate_does_not_promote_future_text(self):
         record = manifest("US-WI")
         row = next(item for item in record["passages"].values() if item["citation"] == "Wis. Stat. § 799.01(1)(a)")

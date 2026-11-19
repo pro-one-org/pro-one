@@ -327,6 +327,18 @@
         "retrieved_at": "2026-11-19T19:20:34.916925+00:00",
         "sha256": "a84309a90d6bf3c73da1b21dda3ffb2de4eede3d4425844ae8a91decb4ec7f8f"
       }
+    },
+    "US-VA:consumerLaw:f9303e4fe01d": {
+      "category": "consumerLaw",
+      "title": "Va. Code § 59.1-200(A)(1)–(6)",
+      "url": "https://law.lis.virginia.gov/vacode/title59.1/chapter17/section59.1-200/",
+      "locator": "Va. Code § 59.1-200(A)(1)–(6)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:45.579652+00:00",
+        "sha256": "8c3607f926ff6462e640a7c25ce8b7677980efd42fb6a6f3ac482d0161f302d4"
+      }
     }
   },
   "court_directory": [
@@ -480,6 +492,19 @@
       "retrieved_at": "2026-11-19T19:20:34.916925+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "68eb4ceca1beba82dd3b76cd0dbef7": {
+      "source_id": "US-VA:consumerLaw:f9303e4fe01d",
+      "authority_type": "statute",
+      "citation": "Va. Code § 59.1-200(A)(1)–(6)",
+      "text": "A. The following fraudulent acts or practices committed by a supplier in connection with a consumer transaction are hereby declared unlawful: 1. Misrepresenting goods or services as those of another; 2. Misrepresenting the source, sponsorship, approval, or certification of goods or services; 3. Misrepresenting the affiliation, connection, or association of the supplier, or of the goods or services, with another; 4. Misrepresenting geographic origin in connection with goods or services; 5. Misrepresenting that goods or services have certain quantities, characteristics, ingredients, uses, or benefits; 6. Misrepresenting that goods or services are of a particular standard, quality, grade, style, or model;",
+      "text_sha256": "168745938932f761dc5e2df1dbca1a72a47121b3c4fb4ea2c1e8e52f2a469115",
+      "publisher_sha256": "8c3607f926ff6462e640a7c25ce8b7677980efd42fb6a6f3ac482d0161f302d4",
+      "retrieved_at": "2026-11-19T19:26:45.579652+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2026-11-01",
+      "effective_until": "2027-07-01"
     }
   }
 }

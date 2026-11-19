@@ -214,6 +214,18 @@
         "retrieved_at": "2026-11-19T14:10:54.256412+00:00",
         "sha256": "0d60f63939fa181ab397298ebd53c6e297ca91d9bcac3603a7ccb5c558c8ed91"
       }
+    },
+    "US-KY:consumerLaw:3ae7dceeb152": {
+      "category": "consumerLaw",
+      "title": "KRS § 367.170",
+      "url": "https://apps.legislature.ky.gov/LAW/STATUTES/statute.aspx?id=34914",
+      "locator": "KRS § 367.170",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:43.238034+00:00",
+        "sha256": "626ddce01660f1fbfabce102f8169709ace8fe50c608be1d1b035ee889e5c19b"
+      }
     }
   },
   "court_directory": [
@@ -356,6 +368,17 @@
       "text_sha256": "0917c6800649463b0bd621d9a20f04060259c01b5c73ba2922610088e5a5ff83",
       "publisher_sha256": "0d60f63939fa181ab397298ebd53c6e297ca91d9bcac3603a7ccb5c558c8ed91",
       "retrieved_at": "2026-11-19T14:10:54.256412+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "0151d85effaa94613fab1e8577aec1": {
+      "source_id": "US-KY:consumerLaw:3ae7dceeb152",
+      "authority_type": "statute",
+      "citation": "KRS § 367.170",
+      "text": "(1) Unfair, false, misleading, or deceptive acts or practices in the conduct of any trade or commerce are hereby declared unlawful. (2) For the purposes of this section, unfair shall be construed to mean unconscionable.",
+      "text_sha256": "d1ca22dfdfabbdb69cff6342c88595e6b6dea48c7c476a8ba543f001155e9d01",
+      "publisher_sha256": "626ddce01660f1fbfabce102f8169709ace8fe50c608be1d1b035ee889e5c19b",
+      "retrieved_at": "2026-11-19T19:26:43.238034+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

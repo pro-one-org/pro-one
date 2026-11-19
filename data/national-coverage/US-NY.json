@@ -233,6 +233,18 @@
         "retrieved_at": "2026-11-19T19:17:29.362293+00:00",
         "sha256": "501820e82bf3bfd2e29eea4d72e01dc919d94c9a8bde06a0789cdd132065db63"
       }
+    },
+    "US-NY:consumerLaw:6b8b7996ce9e": {
+      "category": "consumerLaw",
+      "title": "N.Y. Gen. Bus. Law § 349(a)",
+      "url": "https://www.nysenate.gov/legislation/laws/GBS/349",
+      "locator": "N.Y. Gen. Bus. Law § 349(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:45.145872+00:00",
+        "sha256": "642b7f983fcc19eba8ebb0760b749a38dadaac2572ca75f9eb146a84a1101a1f"
+      }
     }
   },
   "court_directory": [
@@ -420,6 +432,17 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Civil Court of the City of New York"
+    },
+    "3d9788583f7aa9f17c0fa9b192dbc4": {
+      "source_id": "US-NY:consumerLaw:6b8b7996ce9e",
+      "authority_type": "statute",
+      "citation": "N.Y. Gen. Bus. Law § 349(a)",
+      "text": "(a) Unfair, deceptive, or abusive acts or practices in the conduct of any business, trade or commerce or in the furnishing of any service in this state are hereby declared unlawful. For the purposes of this section: (1) An act or practice is unfair when it causes or is likely to cause substantial injury which is not reasonably avoidable and is not outweighed by countervailing benefits to consumers or to competition. The term \"substantial injury\" as used in this subdivision shall have the same meaning as the term \"substantial injury\" in the federal trade commission act, 15 U.S.C. Section 41 et seq. (2) An act or practice is abusive when: (i) it materially interferes with the ability of a person to understand a term or condition of a product or service; or (ii) it takes unreasonable advantage of: (A) a lack of understanding on the part of a person of the material risks, costs, or conditions of a product or service; (B) the inability of a person to protect such person's interests in selecting or using a product or service; or (C) the reasonable reliance by a person on a person engaging in the act or practice to act in the relying person's interests.",
+      "text_sha256": "e474058b89c7a9f076403e1587e6cd66770e169cc0bfd08fbcb74ada136e4678",
+      "publisher_sha256": "642b7f983fcc19eba8ebb0760b749a38dadaac2572ca75f9eb146a84a1101a1f",
+      "retrieved_at": "2026-11-19T19:26:45.145872+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

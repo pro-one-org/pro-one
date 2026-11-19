@@ -240,6 +240,18 @@
         "retrieved_at": "2026-11-18T15:14:33.702908+00:00",
         "sha256": "159729e5c447c8dc0de674de36674d318bb451b6859afd2be39bed6bcf606b43"
       }
+    },
+    "US-UT:consumerLaw:36784f3b7143": {
+      "category": "consumerLaw",
+      "title": "Utah Code § 13-11-4(1)",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter11/C13-11-S4_2026050620260506.html",
+      "locator": "Utah Code § 13-11-4(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:45.505086+00:00",
+        "sha256": "12f11ba7d0df24246b2d87cfbf73d13f74773dbec2d8eea85916beb97787391b"
+      }
     }
   },
   "court_directory": [
@@ -387,6 +399,18 @@
       "retrieved_at": "2026-11-18T15:14:33.702908+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "0e477d509c2be785e46f468635795f": {
+      "source_id": "US-UT:consumerLaw:36784f3b7143",
+      "authority_type": "statute",
+      "citation": "Utah Code § 13-11-4(1)",
+      "text": "(1) A supplier that engages in a deceptive act or practice in connection with a consumer transaction violates this chapter, whether the deceptive act or practice occurs before, during, or after the transaction.",
+      "text_sha256": "95cbfb551e128044ed6343a4a6ab91b854efb9d84b52910611a69ae2b5c0d89a",
+      "publisher_sha256": "12f11ba7d0df24246b2d87cfbf73d13f74773dbec2d8eea85916beb97787391b",
+      "retrieved_at": "2026-11-19T19:26:45.505086+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2026-05-06"
     }
   },
   "fault_allocation": {

@@ -346,6 +346,18 @@
         "retrieved_at": "2026-11-19T13:54:39.226365+00:00",
         "sha256": "aed59490a546a986a3e6cbcfc05b7baec7f2ea4c89f0cc10a0777f5e8f72a2c6"
       }
+    },
+    "US-IA:consumerLaw:fda8f70d6946": {
+      "category": "consumerLaw",
+      "title": "Iowa Code § 714.16(2)(a), first sentence",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/714.16.pdf",
+      "locator": "Iowa Code § 714.16(2)(a), first sentence",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:43.479744+00:00",
+        "sha256": "ecd0c9f5006f6ebf4d9ad76ab7827720b11a1d2e0a79e3f9e6144714299cf06f"
+      }
     }
   },
   "court_directory": [
@@ -497,6 +509,18 @@
       "decision_date": "2020-04-29",
       "opinion_role": "majority",
       "procedural_posture": "Affirmed denial of motion for new trial."
+    },
+    "9a84aa290bdac776d13aa63a3cf3fd": {
+      "source_id": "US-IA:consumerLaw:fda8f70d6946",
+      "authority_type": "statute",
+      "citation": "Iowa Code § 714.16(2)(a), first sentence",
+      "text": "a. The act, use or employment by a person of an unfair practice, deception, fraud, false pretense, false promise, or misrepresentation, or the concealment, suppression, or omission of a material fact with intent that others rely upon the concealment, suppression, or omission, in connection with the lease, sale, or advertisement of any merchandise or the solicitation of contributions for charitable purposes, whether or not a person has in fact been misled, deceived, or damaged, is an unlawful practice.",
+      "text_sha256": "0fd2744fd838c59ebe0aa4283040c84b2e2b7786687d71732784a474c907b5a3",
+      "publisher_sha256": "ecd0c9f5006f6ebf4d9ad76ab7827720b11a1d2e0a79e3f9e6144714299cf06f",
+      "retrieved_at": "2026-11-19T19:26:43.479744+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Iowa Code 2026"
     }
   },
   "fault_allocation": {

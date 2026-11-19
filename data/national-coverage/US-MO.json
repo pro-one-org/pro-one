@@ -209,6 +209,18 @@
         "retrieved_at": "2026-11-19T14:10:56.350230+00:00",
         "sha256": "6f10d8dfe9edcdeb0f53873ee15402a3695306ffff4a1f84d09197a0195884fb"
       }
+    },
+    "US-MO:consumerLaw:a5211939e0e3": {
+      "category": "consumerLaw",
+      "title": "Mo. Rev. Stat. § 407.020(1)",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=407.020",
+      "locator": "Mo. Rev. Stat. § 407.020(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:44.302791+00:00",
+        "sha256": "20a13074b3884f6d905affe172e5f1cde8d868ceb9c83291490f1ef9c8893011"
+      }
     }
   },
   "court_directory": [
@@ -309,6 +321,18 @@
       "retrieved_at": "2026-11-19T14:10:56.350230+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "d36b6fb6f45728b2190779f3ba6136": {
+      "source_id": "US-MO:consumerLaw:a5211939e0e3",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 407.020(1)",
+      "text": "1. The act, use or employment by any person of any deception, fraud, false pretense, false promise, misrepresentation, unfair practice or the concealment, suppression, or omission of any material fact in connection with the sale or advertisement of any merchandise in trade or commerce or the solicitation of any funds for any charitable purpose, as defined in section 407.453, in or from the state of Missouri, is declared to be an unlawful practice. The use by any person, in connection with the sale or advertisement of any merchandise in trade or commerce or the solicitation of any funds for any charitable purpose, as defined in section 407.453, in or from the state of Missouri of the fact that the attorney general has approved any filing required by this chapter as the approval, sanction or endorsement of any activity, project or action of such person, is declared to be an unlawful practice. Any act, use or employment declared unlawful by this subsection violates this subsection whether committed before, during or after the sale, advertisement or solicitation.",
+      "text_sha256": "784dd7a7f023f4f728948cb160450f28327be8f7e766304ce5c85eca51fed03d",
+      "publisher_sha256": "20a13074b3884f6d905affe172e5f1cde8d868ceb9c83291490f1ef9c8893011",
+      "retrieved_at": "2026-11-19T19:26:44.302791+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2020-08-28"
     }
   }
 }

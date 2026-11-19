@@ -283,6 +283,18 @@
         "retrieved_at": "2026-11-19T19:17:29.883841+00:00",
         "sha256": "7ea8ac11bb195c8cbbab1713cb288e8acdd7d415b949ef7b8ad058482134d169"
       }
+    },
+    "US-MN:consumerLaw:e80a3a148634": {
+      "category": "consumerLaw",
+      "title": "Minn. Stat. § 325F.69, subd. 1",
+      "url": "https://www.revisor.mn.gov/statutes/cite/325F.69",
+      "locator": "Minn. Stat. § 325F.69, subd. 1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:44.102475+00:00",
+        "sha256": "2d27763e95bd359b102ca682f13586b2d08a789b06fb8040189666709cb29d2b"
+      }
     }
   },
   "court_directory": [
@@ -440,6 +452,17 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Minnesota Conciliation Court"
+    },
+    "91f7ac129ef143d03df963f0bbe4e0": {
+      "source_id": "US-MN:consumerLaw:e80a3a148634",
+      "authority_type": "statute",
+      "citation": "Minn. Stat. § 325F.69, subd. 1",
+      "text": "The act, use, or employment by any person of any fraud, unfair or unconscionable practice, false pretense, false promise, misrepresentation, misleading statement or deceptive practice, with the intent that others rely thereon in connection with the sale of any merchandise, whether or not any person has in fact been misled, deceived, or damaged thereby, is enjoinable as provided in section 325F.70.",
+      "text_sha256": "b1d875cfd7e2b5bb603b2a83c826001ada75a7d622f5f2b0df61ef0d60d76bb8",
+      "publisher_sha256": "2d27763e95bd359b102ca682f13586b2d08a789b06fb8040189666709cb29d2b",
+      "retrieved_at": "2026-11-19T19:26:44.102475+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

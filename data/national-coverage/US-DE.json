@@ -299,6 +299,18 @@
         "retrieved_at": "2026-11-18T20:45:34.638546+00:00",
         "sha256": "05594a0eac48fee5aa00c28c1602b7d36976e4e0933758a4aefa6c97af59d49d"
       }
+    },
+    "US-DE:consumerLaw:0d5b1f0d49f7": {
+      "category": "consumerLaw",
+      "title": "6 Del. C. § 2513(a)",
+      "url": "https://delcode.delaware.gov/title6/c025/sc02/index.html",
+      "locator": "6 Del. C. § 2513(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:43.006459+00:00",
+        "sha256": "c93f19527e946932a47cef8228bded1e873accfadc244d18fd22d082cc5ac3e6"
+      }
     }
   },
   "court_directory": [
@@ -494,6 +506,17 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Delaware Superior Court"
+    },
+    "683ccf1eba521ef9cdf4fcfc75d520": {
+      "source_id": "US-DE:consumerLaw:0d5b1f0d49f7",
+      "authority_type": "statute",
+      "citation": "6 Del. C. § 2513(a)",
+      "text": "(a) The act, use, or employment by any person of any deception, fraud, false pretense, false promise, misrepresentation, unfair practice, or the concealment, suppression, or omission of any material fact with intent that others rely upon such concealment, suppression, or omission, in connection with the sale, lease, receipt, or advertisement of any merchandise, whether or not any person has in fact been misled, deceived, or damaged thereby, is an unlawful practice. It shall also be an unlawful practice to misrepresent the geographic location of a business or supplier which raises or sells flowers and/or ornamental plants by any of the following: (1) Listing a local telephone number in a local telephone directory if: a. Calls to the telephone number are routinely forwarded or otherwise transferred to a business location that is outside the calling area covered by the local telephone directory other than to counties contiguous to this State; and b. The listing fails to identify the locality and state of the supplier’s business; or (2) Listing a fictitious business name or an assumed business name in a local telephone directory if: a. The name misrepresents the supplier’s geographic location; and b. The listing fails to identify the locality and state of the supplier’s business.",
+      "text_sha256": "423d1ec296776c691b4cb67fec402e1e5485add46b6d8d8d25ba778a180e165e",
+      "publisher_sha256": "c93f19527e946932a47cef8228bded1e873accfadc244d18fd22d082cc5ac3e6",
+      "retrieved_at": "2026-11-19T19:26:43.006459+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

@@ -249,6 +249,18 @@
         "retrieved_at": "2026-11-19T19:17:30.188587+00:00",
         "sha256": "5f3830af48820efe88eec6e69264362b0b3494f26949281a8bb7e6bae91f6e36"
       }
+    },
+    "US-MD:consumerLaw:482b69421a8d": {
+      "category": "consumerLaw",
+      "title": "Md. Code, Com. Law § 13-303",
+      "url": "https://mgaleg.maryland.gov/2026RS/Statute_Web/gcl/13-303.pdf",
+      "locator": "Md. Code, Com. Law § 13-303",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:44.004548+00:00",
+        "sha256": "0ef0fb336124b2397eaeba8efd437e607c1c784f3b8817c3bb73403a1f0fa36e"
+      }
     }
   },
   "court_directory": [
@@ -391,6 +403,17 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "District Court of Maryland"
+    },
+    "60e946979a241788007d5af747ecc6": {
+      "source_id": "US-MD:consumerLaw:482b69421a8d",
+      "authority_type": "statute",
+      "citation": "Md. Code, Com. Law § 13-303",
+      "text": "A person may not engage in any unfair, abusive, or deceptive trade practice, as defined in this subtitle or as further defined by the Division, in: (1) The sale, lease, rental, loan, or bailment of any consumer goods, consumer realty, or consumer services; (2) The offer for sale, lease, rental, loan, or bailment of consumer goods, consumer realty, or consumer services; (3) The offer for sale of course credit or other educational services; (4) The extension of consumer credit; (5) The collection of consumer debts; or (6) The purchase or offer for purchase of consumer goods or consumer realty from a consumer by a merchant whose business includes paying off consumer debt in connection with the purchase of any consumer goods or consumer realty from a consumer.",
+      "text_sha256": "2b09f381faa440c688518f5856e541773d0d6b9d832dd9dcb01fa5b612b2fece",
+      "publisher_sha256": "0ef0fb336124b2397eaeba8efd437e607c1c784f3b8817c3bb73403a1f0fa36e",
+      "retrieved_at": "2026-11-19T19:26:44.004548+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   }
 }

@@ -356,6 +356,18 @@
         "retrieved_at": "2026-11-19T14:10:59.756416+00:00",
         "sha256": "f01f40be28236feb7f04086bb4215786f2f11850e2f7ece99e2800c051f886f9"
       }
+    },
+    "US-NV:consumerLaw:98f1b517eec3": {
+      "category": "consumerLaw",
+      "title": "Nev. Rev. Stat. § 598.0915(1)–(4)",
+      "url": "https://www.leg.state.nv.us/NRS/NRS-598.html",
+      "locator": "Nev. Rev. Stat. § 598.0915(1)–(4)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:45.087882+00:00",
+        "sha256": "c9ce1ce2687dc7a9ece7a0f13b1a0e893da9f00c67031554cb237bc2011a7f76"
+      }
     }
   },
   "court_directory": [
@@ -537,6 +549,18 @@
       "retrieved_at": "2026-11-19T14:10:59.756416+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "e24d450014231926949f53e2b5eee6": {
+      "source_id": "US-NV:consumerLaw:98f1b517eec3",
+      "authority_type": "statute",
+      "citation": "Nev. Rev. Stat. § 598.0915(1)–(4)",
+      "text": "A person engages in a “deceptive trade practice” if, in the course of his or her business or occupation, he or she: 1. Knowingly passes off goods or services for sale or lease as those of another person. 2. Knowingly makes a false representation as to the source, sponsorship, approval or certification of goods or services for sale or lease. 3. Knowingly makes a false representation as to affiliation, connection, association with or certification by another person. 4. Uses deceptive representations or designations of geographic origin in connection with goods or services for sale or lease.",
+      "text_sha256": "670821ea550508c56940377edb0205926a73d7b70e8c32a8a7d218fbc292c78e",
+      "publisher_sha256": "c9ce1ce2687dc7a9ece7a0f13b1a0e893da9f00c67031554cb237bc2011a7f76",
+      "retrieved_at": "2026-11-19T19:26:45.087882+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 Nevada Revised Statutes"
     }
   },
   "fault_allocation": {

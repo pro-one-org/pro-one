@@ -68,6 +68,7 @@ class LegislativeExcerpts:
             title=citation, citation=citation,
             edition=row.get("edition", f"publisher capture {retrieved.isoformat()}"),
             effective_from=date.fromisoformat(row["effective_from"]) if row.get("effective_from") else None,
+            effective_until=date.fromisoformat(row["effective_until"]) if row.get("effective_until") else None,
             text=row["text"], legislature=publisher if self.source.authority_type == "statute" else None,
             court=row.get("court"), currentness=row["currentness"],
             published_on=date.fromisoformat(row["decision_date"]) if row.get("decision_date") else None,

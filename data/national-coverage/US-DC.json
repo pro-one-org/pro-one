@@ -179,6 +179,18 @@
         "retrieved_at": "2026-11-19T19:20:34.349118+00:00",
         "sha256": "568c8ab5599e95b6714b40150be7b4420283ebcc909bad83dbaffea4b94c174a"
       }
+    },
+    "US-DC:consumerLaw:1b17162cdfb0": {
+      "category": "consumerLaw",
+      "title": "D.C. Code § 28-3904(a)(1)–(3)",
+      "url": "https://code.dccouncil.gov/us/dc/council/code/sections/28-3904",
+      "locator": "D.C. Code § 28-3904(a)(1)–(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:42.853283+00:00",
+        "sha256": "070126b620d9b9710190c5ffc422dd9a443e172f6ef59ea42199b5bbf1945e84"
+      }
     }
   },
   "court_directory": [
@@ -273,6 +285,17 @@
       "text_sha256": "421d5f3c54387ff775b1b30d27c2cd8681be380ba496a867938ec1fcd450dca1",
       "publisher_sha256": "568c8ab5599e95b6714b40150be7b4420283ebcc909bad83dbaffea4b94c174a",
       "retrieved_at": "2026-11-19T19:20:34.349118+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "dafca48413e4aba1ca215cd70f552f": {
+      "source_id": "US-DC:consumerLaw:1b17162cdfb0",
+      "authority_type": "statute",
+      "citation": "D.C. Code § 28-3904(a)(1)–(3)",
+      "text": "(a) It shall be a violation of this chapter for any merchant to engage in an unfair, deceptive, or abusive trade practice, whether or not any consumer is in fact misled, deceived, or damaged thereby. Without limiting the general application of the foregoing, it is an unfair, deceptive, or abusive trade practice prohibited by this chapter to: (1) Represent that goods or services have a source, sponsorship, approval, certification, licensure, accessories, characteristics, ingredients, uses, benefits, or quantities that they do not have; (2) Represent that the person has a sponsorship, approval, status, affiliation, certification, licensure, or connection that the person does not have; (3) Represent that goods are original or new if in fact they are deteriorated, altered, reconditioned, reclaimed, or second hand, or have been used;",
+      "text_sha256": "93203f5ce8a309ed7a659319d28022c4b26e2a6c218853d32a8de287e6f35b5b",
+      "publisher_sha256": "070126b620d9b9710190c5ffc422dd9a443e172f6ef59ea42199b5bbf1945e84",
+      "retrieved_at": "2026-11-19T19:26:42.853283+00:00",
       "currentness": "unresolved",
       "language": "en"
     }
