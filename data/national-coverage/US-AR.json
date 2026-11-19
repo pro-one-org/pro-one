@@ -192,6 +192,18 @@
       "locator": "Ark. Code Ann. § 4-88-101 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-AR:automated_contract_formation:d8f1d9eb7dc0": {
+      "category": "automated_contract_formation",
+      "title": "Ark. Acts 2001, Act 905, § 14",
+      "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2001%2FPublic%2FACT905.pdf",
+      "locator": "Ark. Acts 2001, Act 905, § 14",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:43:21.496850+00:00",
+        "sha256": "3d87b91edc42d471c6efae71ab726e908a3df2b8c05bf2fc42c87b58fd348a24"
+      }
     }
   },
   "court_directory": [
@@ -289,5 +301,19 @@
       "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "18272de2d3b69b289dfcec178e4bf2": {
+      "source_id": "US-AR:automated_contract_formation:d8f1d9eb7dc0",
+      "authority_type": "statute",
+      "citation": "Ark. Acts 2001, Act 905, § 14",
+      "text": "In an automated transaction, the following rules apply: (1) A contract may be formed by the interaction of electronic agents of the parties, even if no individual was aware of or reviewed the electronic agents’ actions or the resulting terms and agreements. (2) A contract may be formed by the interaction of an electronic agent and an individual, acting on the individual’s own behalf or for another person, including by an interaction in which the individual performs actions that the individual is free to refuse to perform and which the individual knows or has reason to know will cause the electronic agent to complete the transaction or performance. (3) The terms of the contract are determined by the substantive law applicable to it.",
+      "text_sha256": "04e3492db94d21f10eabb3e5f0b480425d0885c1b51f1a9fb519074706835579",
+      "publisher_sha256": "3d87b91edc42d471c6efae71ab726e908a3df2b8c05bf2fc42c87b58fd348a24",
+      "retrieved_at": "2026-11-18T20:43:21.496850+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Approved March 19, 2001"
+    }
+  }
 }

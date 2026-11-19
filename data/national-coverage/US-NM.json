@@ -171,6 +171,18 @@
       "locator": "N.M. Stat. Ann. § 57-12-1 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-NM:contract_formation:17ce32eff880": {
+      "category": "contract_formation",
+      "title": "White Sands Construction, Inc. v. City of Las Cruces, No. A-1-CA-39429, ¶ 9 (N.M. Ct. App. Apr. 27, 2023)",
+      "url": "https://coa.nmcourts.gov/wp-content/uploads/sites/43/2023/11/April-27-2023-White-Sands-Construction-Inc.-v.-City-of-Las-Cruces-No.-A-1-CA-39429.pdf",
+      "locator": "White Sands Construction, Inc. v. City of Las Cruces, No. A-1-CA-39429, ¶ 9 (N.M. Ct. App. Apr. 27, 2023)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:40:12.862780+00:00",
+        "sha256": "dd819a2a7d3af23d902c63ea2b72eeb60535815ecf23fcbbe0da3925d2557e12"
+      }
     }
   },
   "court_directory": [
@@ -266,5 +278,23 @@
       "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "e9e7af976c7b958ee2e8fd908b9230": {
+      "source_id": "US-NM:contract_formation:17ce32eff880",
+      "authority_type": "opinion",
+      "citation": "White Sands Construction, Inc. v. City of Las Cruces, No. A-1-CA-39429, ¶ 9 (N.M. Ct. App. Apr. 27, 2023)",
+      "text": "“The essential attributes of a contract include an offer, an acceptance, consideration, and mutual assent.”",
+      "text_sha256": "bc6e4063e27094d368e236a60d7d7c596606c8058db45b4b4246cfee8923be05",
+      "publisher_sha256": "dd819a2a7d3af23d902c63ea2b72eeb60535815ecf23fcbbe0da3925d2557e12",
+      "retrieved_at": "2026-11-18T20:40:12.862780+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2023-04-27",
+      "court": "Court of Appeals of New Mexico",
+      "decision_date": "2023-04-27",
+      "opinion_role": "unanimous",
+      "procedural_posture": "Appeal from district court. Interest award affirmed in part and remanded for recalculation."
+    }
+  }
 }

@@ -27,6 +27,7 @@ SUBJECTS = {
     "service": ("civil_procedure", "service_of_process"),
     "response": ("civil_procedure", "initial_response"),
     "contract_formation": ("contracts", "contract_formation"),
+    "automated_contract_formation": ("contracts", "automated_contract_formation"),
     "contract_damages": ("contracts", "accepted_goods_damages"),
 }
 
@@ -64,6 +65,8 @@ class RetainedLegislativeResearch:
                           "locator": observation.locator}
             source = NormalizedAuthorityProvider._source(
                 matter, SimpleNamespace(legal_area=area, issues=[topic]), v, provenance, provider.source)
+            if v.court:
+                source["jurisdiction"]["court"] = v.court
             if kind == "opinion":
                 source["authority"]["issuing_body"] = v.court
                 source["case_metadata"] = {

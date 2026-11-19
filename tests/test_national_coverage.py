@@ -21,6 +21,17 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_automated_transaction_enactment_is_scoped_and_historical(self):
+        query = ResearchMatter(country="US", state="Arkansas", legal_area="contracts",
+                               topics=["automated_contract_formation"], authority_types=["statute"],
+                               authority_status="historical")
+        provider = RetainedLegislativeResearch()
+        key, = provider.search(query)
+        self.assertIn("In an automated transaction", provider.fetch(key).text)
+        for changes in ({"topics": ["contract_formation"]}, {"authority_status": "unresolved"},
+                        {"authority_status": "current", "authority_as_of": "2026-11-18"}):
+            self.assertFalse(provider.search(query.model_copy(update=changes)))
+
     def test_decided_cases_keep_court_role_and_subsequent_treatment(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Mississippi", legal_area="contracts",
@@ -29,6 +40,8 @@ class NationalCoverageTests(unittest.TestCase):
         key, = provider.search(query)
         doc = provider.fetch(key)
         self.assertEqual(doc.source["source_type"], "court_opinion")
+        self.assertEqual(doc.source["jurisdiction"]["court"], query.court)
+        self.assertEqual(doc.passages[0]["jurisdiction"]["court"], query.court)
         self.assertEqual(doc.source["case_metadata"]["opinion_role"], "majority")
         self.assertEqual(doc.source["case_metadata"]["subsequent_treatment"], "unknown")
         self.assertIn("agreement that is sufficiently definite", doc.text)

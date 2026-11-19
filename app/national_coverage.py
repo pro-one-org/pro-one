@@ -21,7 +21,7 @@ CAPABILITIES = {
     "negligence": {"duty": ("negligence_duty",), "breach": ("negligence_breach",),
                    "causation": ("negligence_causation",), "injury": ("negligence_injury",),
                    "premises_relationship": ("premises",), "plaintiff_fault": ("fault",)},
-    "contract": {"formation": ("contract_formation",), "breach": ("contract_breach",),
+    "contract": {"formation": ("contract_formation", "automated_contract_formation"), "breach": ("contract_breach",),
                  "damages": ("contract_damages",), "limitations": ("written_contract_limitations", "oral_contract_limitations")},
     "consumer": {"statute": ("consumerLaw",), "enforcement": ("consumer_agency",),
                  "private_action": ("consumer_private_action",), "remedies": ("consumer_remedies",)},

@@ -220,6 +220,54 @@
       "locator": "Ala. Code § 8-19-1 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-AL:contract_formation:5bfbcc70d374": {
+      "category": "contract_formation",
+      "title": "The Gardens at Glenlakes Property Owners Association, Inc. v. Baldwin County Sewer Service, LLC, No. 1150563, slip op. at 16 (Ala. Sept. 23, 2016)",
+      "url": "https://acis.alabama.gov/displaydocs.cfm?event=4QJ0LUCMJ&no=761343",
+      "locator": "The Gardens at Glenlakes Property Owners Association, Inc. v. Baldwin County Sewer Service, LLC, No. 1150563, slip op. at 16 (Ala. Sept. 23, 2016)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:40:12.134192+00:00",
+        "sha256": "300d29ee6270597cdb8a74d933b09f39364fe8a7617a6b6466560ef440c92393"
+      }
+    },
+    "US-AL:commencement:a6fb5170ff73": {
+      "category": "commencement",
+      "title": "Ala. R. Civ. P. 3(a)",
+      "url": "https://judicial.alabama.gov/docs/library/rules/cv3.pdf",
+      "locator": "Ala. R. Civ. P. 3(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:37:41.556335+00:00",
+        "sha256": "ac10bc5d5d6fb427a732f34eae5a851731a0c0915b74214b3b4798104bacc422"
+      }
+    },
+    "US-AL:service:3e533347353b": {
+      "category": "service",
+      "title": "Ala. R. Civ. P. 4(a)(1)",
+      "url": "https://judicial.alabama.gov/docs/library/rules/cv4.pdf",
+      "locator": "Ala. R. Civ. P. 4(a)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:37:43.917466+00:00",
+        "sha256": "2232a67deb0e6e9e5a3634a45ea3730a3c02762af5088be21644799f926c93ac"
+      }
+    },
+    "US-AL:response:2fd040d0d109": {
+      "category": "response",
+      "title": "Ala. R. Civ. P. 12(a)",
+      "url": "https://judicial.alabama.gov/docs/library/rules/cv12.pdf",
+      "locator": "Ala. R. Civ. P. 12(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:37:41.648522+00:00",
+        "sha256": "e64171d2ad5a7c624bfe8420110bef2eccc6972efb5c82460e571b7b219b1617"
+      }
     }
   },
   "court_directory": [
@@ -338,6 +386,60 @@
       "revision": null,
       "last_observed": "2026-11-17T19:41:54.174035+00:00",
       "automated_completion": "disabled"
+    }
+  },
+  "passages": {
+    "f1f10b843582283150bba2ff2af673": {
+      "source_id": "US-AL:contract_formation:5bfbcc70d374",
+      "authority_type": "opinion",
+      "citation": "The Gardens at Glenlakes Property Owners Association, Inc. v. Baldwin County Sewer Service, LLC, No. 1150563, slip op. at 16 (Ala. Sept. 23, 2016)",
+      "text": "Even though a manifestation of intention is intended to be understood as an offer, it cannot be accepted so as to form a contract unless the terms of the contract are reasonably certain.' 17A Am. Jur. 2d Contracts § 183 (2004). 'The terms of a contract are reasonably certain if they provide a basis for determining the existence of a breach and for giving an appropriate remedy.' Id. (emphasis added). See also Smith, 263 Ala. at 249, 82 So. 2d at 203.\" White Sands Group, L.L.C. v. PRS II, LLC, 998 So. 2d 1042, 1051 (Ala. 2008).",
+      "text_sha256": "f9e747c9c03c42902bd5a576fb405e84f3201fd037ff464050c7e58b7ca50fef",
+      "publisher_sha256": "300d29ee6270597cdb8a74d933b09f39364fe8a7617a6b6466560ef440c92393",
+      "retrieved_at": "2026-11-18T20:40:12.134192+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2016-09-23",
+      "court": "Supreme Court of Alabama",
+      "decision_date": "2016-09-23",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from judgment of Baldwin Circuit Court. Reversed and remanded."
+    },
+    "7ebea83f39744b0e669be3886aa035": {
+      "source_id": "US-AL:commencement:a6fb5170ff73",
+      "authority_type": "court_rule",
+      "citation": "Ala. R. Civ. P. 3(a)",
+      "text": "(a) Filing the Complaint. A civil action is commenced by filing a complaint with the court.",
+      "text_sha256": "4bc67e27ffbc002872dfc97e9702a3cc81c8e4af07cb9ecb99385548b61aec7f",
+      "publisher_sha256": "ac10bc5d5d6fb427a732f34eae5a851731a0c0915b74214b3b4798104bacc422",
+      "retrieved_at": "2026-11-18T20:37:41.556335+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alabama Circuit Court"
+    },
+    "e50f3f5ba0031b13b40934f0d7c9a8": {
+      "source_id": "US-AL:service:3e533347353b",
+      "authority_type": "court_rule",
+      "citation": "Ala. R. Civ. P. 4(a)(1)",
+      "text": "(1) Issuance. Upon the filing of the complaint, or other document required to be served in the manner of an original complaint, the clerk shall forthwith issue the required summons or other process for service upon each defendant. Upon request of the plaintiff separate or additional summons shall issue at any time against any defendant.",
+      "text_sha256": "6418fd38633bc14d8abf5948786c3752f31fd708e8451e2f0304d9fa5b32c91f",
+      "publisher_sha256": "2232a67deb0e6e9e5a3634a45ea3730a3c02762af5088be21644799f926c93ac",
+      "retrieved_at": "2026-11-18T20:37:43.917466+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alabama Circuit Court"
+    },
+    "9d5cf78602c2ababf2ca799ece2cb2": {
+      "source_id": "US-AL:response:2fd040d0d109",
+      "authority_type": "court_rule",
+      "citation": "Ala. R. Civ. P. 12(a)",
+      "text": "(a) When presented. A defendant shall serve an answer within thirty (30) days after the service of the summons and complaint upon that defendant except when service is made by publication and a different time is prescribed under the applicable procedure. A party served with a pleading stating a cross-claim against that party shall serve an answer thereto within thirty (30) days after the service upon that party. The plaintiff shall serve a reply to a counterclaim in the answer within thirty (30) days after serv ice of the answer or, if a reply is ordered by the court, within thirty (30) days after service of the order, unless the order otherwise directs. The service of a motion permitted under this rule alters these periods to time as follows, unless a different time is fixed by order of the court: (1) if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within ten (10) days after notice of the court’s action; (2) if the court grants a motion for a more definite statement the responsive pleading shall be served within ten (10) days after the service of the more definite statement. Proceedings to modify, cite for contempt, or similar motions in divorce proceedings shall not be considered as original pleadings within the meaning of this rule.",
+      "text_sha256": "0dc07ca00058031579dec7631d93dfca3a10c9d33d93c3f32267185789f6fe30",
+      "publisher_sha256": "e64171d2ad5a7c624bfe8420110bef2eccc6972efb5c82460e571b7b219b1617",
+      "retrieved_at": "2026-11-18T20:37:41.648522+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alabama Circuit Court"
     }
   }
 }

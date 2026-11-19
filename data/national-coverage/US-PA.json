@@ -185,6 +185,18 @@
       "locator": "73 P.S. § 201-1 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-PA:contract_formation:a36c3152f580": {
+      "category": "contract_formation",
+      "title": "Glover v. Junior, No. 9 EAP 2024, slip op. at 23 (Pa. Mar. 20, 2025)",
+      "url": "https://www.pacourts.us/assets/opinions/Supreme/out/J-50-2024mo%20-%20106309294303879268.pdf",
+      "locator": "Glover v. Junior, No. 9 EAP 2024, slip op. at 23 (Pa. Mar. 20, 2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:40:10.884333+00:00",
+        "sha256": "fa9a1539ea27ab8a9dab5ae55b9f1c0efcf8cf62050ba87d652f681e0f63397d"
+      }
     }
   },
   "court_directory": [
@@ -284,5 +296,23 @@
       "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "ad108775f4ad9df81862a3cd47c997": {
+      "source_id": "US-PA:contract_formation:a36c3152f580",
+      "authority_type": "opinion",
+      "citation": "Glover v. Junior, No. 9 EAP 2024, slip op. at 23 (Pa. Mar. 20, 2025)",
+      "text": "General acquiescence to a course of conduct is not sufficient “mutual assent” to establish an oral contract; the parties must each know the terms of the contract and they must both assent to those terms, i.e., there must be an “offer” and an “acceptance” as defined by our common law contract principles.",
+      "text_sha256": "2361bd90a0988e38d3d0306c6772b50c0e9f1f01979285d7e6b8abfd31b0af4c",
+      "publisher_sha256": "fa9a1539ea27ab8a9dab5ae55b9f1c0efcf8cf62050ba87d652f681e0f63397d",
+      "retrieved_at": "2026-11-18T20:40:10.884333+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2025-03-20",
+      "court": "Supreme Court of Pennsylvania",
+      "decision_date": "2025-03-20",
+      "opinion_role": "majority",
+      "procedural_posture": "Parentage appeal. The court affirmed on the ground of intent-based parentage."
+    }
+  }
 }

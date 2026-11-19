@@ -213,6 +213,30 @@
       "locator": "815 ILCS 505",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-IL:contract_formation:2b00abec022c": {
+      "category": "contract_formation",
+      "title": "Rose v. Mavrakis, No. 1-03-1064 (Ill. App. Ct. Sept. 30, 2003)",
+      "url": "https://www.illinoiscourts.gov/Resources/b2880933-70d8-4630-9532-c1b8d7049a09/1031064.htm",
+      "locator": "Rose v. Mavrakis, No. 1-03-1064 (Ill. App. Ct. Sept. 30, 2003)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:40:11.091373+00:00",
+        "sha256": "59af8673f2721f2f6e41af974602ae5adad943be9ec721c30189e05e52bb114a"
+      }
+    },
+    "US-IL:eviction:50fc56d4b3d5": {
+      "category": "eviction",
+      "title": "Ill. Sup. Ct. R. 139(a)–(b) (July 17, 2020)",
+      "url": "https://www.illinoiscourts.gov/resources/ad68a856-c4f9-4789-8e71-738a1ec785b2/071720.pdf",
+      "locator": "Ill. Sup. Ct. R. 139(a)–(b) (July 17, 2020)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:37:43.367369+00:00",
+        "sha256": "565d1a623937002d32c8432437df307e1d8e9a31df58794415c6c214f12793f9"
+      }
     }
   },
   "court_directory": [
@@ -289,6 +313,37 @@
       "revision": null,
       "last_observed": "2026-11-17T19:42:44.990219+00:00",
       "automated_completion": "disabled"
+    }
+  },
+  "passages": {
+    "6d7b74aa881fcc2910cfb44a66f2e2": {
+      "source_id": "US-IL:contract_formation:2b00abec022c",
+      "authority_type": "opinion",
+      "citation": "Rose v. Mavrakis, No. 1-03-1064 (Ill. App. Ct. Sept. 30, 2003)",
+      "text": "Although some terms of a contract may be missing or left to be agreed upon, the parties' failure to agree upon an essential term of a contract indicates that the mutual assent required to make a contract is lacking and, thus, there is no enforceable contract. Trittipo v. O'Brien, 204 Ill. App. 3d 662, 672, 561 N.E.2d 1201 (1990). The lack of nonessential details, however, will not render a contract unenforceable. First National Bank of Oak Lawn v. Minke, 99 Ill. App. 3d 10, 14, 425 N.E.2d 11 (1981).",
+      "text_sha256": "8db6f109f93123b50eed69cf29dfb9d91f30089aed75ddcd2a0387f8d296dab8",
+      "publisher_sha256": "59af8673f2721f2f6e41af974602ae5adad943be9ec721c30189e05e52bb114a",
+      "retrieved_at": "2026-11-18T20:40:11.091373+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2003-09-30",
+      "court": "Appellate Court of Illinois, First District",
+      "decision_date": "2003-09-30",
+      "opinion_role": "unanimous",
+      "procedural_posture": "Appeal from order enforcing oral settlement. Affirmed and remanded."
+    },
+    "6cf4edde72b9cf32b34bd5df763bb4": {
+      "source_id": "US-IL:eviction:50fc56d4b3d5",
+      "authority_type": "court_rule",
+      "citation": "Ill. Sup. Ct. R. 139(a)–(b) (July 17, 2020)",
+      "text": "(a) App licability of the Rule. This Rule supplements , but does not replace , the requirements set forth in article IX of the Code of Civil Procedure (735 ILCS 5/9-1 01 et seq .) and applies only to eviction actions filed on or after the effective date of July 17, 2020. (b) Supporting Documents for Eviction Complaints. ( 1) At the time of filing , the plaintiff shall attach a copy of the eviction notice or demand upon which the action is based , including any affida vits or other proof of service , to the eviction comp laint. If the plaintiff does not have the eviction notice or demand , the plaintiff may attach an affidavit instead , using the standardized form approved for use by the Illinois Supreme Court. (2) When an eviction action is based on a breach of a written lease and brought pursuant to section 9-210 of the Code of Civil Procedure (735 ILCS 5/9-210) , the plaintiff shall also attach a copy of the lease, or the relevant portions of the lease, to the eviction complaint at the time of filing. If the plaintiff does not have the lease or if there is no written lease, the plaintiff may attach an affidavit instead, using the standardized form approved for use by the Illinois Supreme Court.",
+      "text_sha256": "a2a0206a2e6652f5599bedf150c7def68a5f4bf65662cb5421044d8cffb999ff",
+      "publisher_sha256": "565d1a623937002d32c8432437df307e1d8e9a31df58794415c6c214f12793f9",
+      "retrieved_at": "2026-11-18T20:37:43.367369+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Supreme Court order M.R. 3140, July 17, 2020",
+      "court": "Illinois Circuit Court"
     }
   }
 }

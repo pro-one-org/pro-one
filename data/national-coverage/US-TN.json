@@ -150,6 +150,18 @@
       "locator": "Tenn. Code Ann. § 47-18-101 et seq.",
       "publisher_role": "discovery_link",
       "content_status": "section_verification_required"
+    },
+    "US-TN:automated_contract_formation:0cdd4d7a90a8": {
+      "category": "automated_contract_formation",
+      "title": "2001 Tenn. Pub. Acts, ch. 72, § 14",
+      "url": "https://sharetngov.s3.amazonaws.com/sos/acts/102/pub/pc0072.pdf",
+      "locator": "2001 Tenn. Pub. Acts, ch. 72, § 14",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:42:58.076453+00:00",
+        "sha256": "56a019bc47663657f293ac9d4f1c50a4d5f4865bc8c433eb80b4d18cdd453cf0"
+      }
     }
   },
   "court_directory": [
@@ -249,5 +261,19 @@
       "directory": "consumer_statutes_index",
       "status": "primary_passage_required"
     }
-  ]
+  ],
+  "passages": {
+    "227a670c0d4e066587addeb6420ee4": {
+      "source_id": "US-TN:automated_contract_formation:0cdd4d7a90a8",
+      "authority_type": "statute",
+      "citation": "2001 Tenn. Pub. Acts, ch. 72, § 14",
+      "text": "In an automated transaction, the following rules apply: (1) A contract may be formed by the interaction of electronic agents of the parties, even if no individual was aware of or reviewed the electronic agents' actions or the resulting terms and agreements. (2) A contract may be formed by the interaction of an electronic agent and an individual, acting on the individual's own behalf or for another person, including by an interaction in which the individual performs actions that the individual is free to refuse to perform and which the individual knows or has reason to know will cause the electronic agent to complete the transaction or performance. (3) The terms of the contract are determined by the substantive law applicable to it.",
+      "text_sha256": "28f7e49bb52fd562f031118d0cdce197721fc349c0c5dcc23728a39c435c187a",
+      "publisher_sha256": "56a019bc47663657f293ac9d4f1c50a4d5f4865bc8c433eb80b4d18cdd453cf0",
+      "retrieved_at": "2026-11-18T20:42:58.076453+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Approved April 11, 2001"
+    }
+  }
 }
