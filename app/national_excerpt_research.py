@@ -17,6 +17,8 @@ SUBJECTS = {
     "oral_contract_limitations": ("contracts", "oral_contract_limitations"),
     "fault": ("torts", "fault_allocation"),
     "deposit": ("landlord_tenant", "security_deposit"),
+    "habitability": ("landlord_tenant", "habitability"),
+    "eviction": ("landlord_tenant", "eviction_procedure"),
     "wageLaw": ("employment", "wage_payment"),
     "wage_enforcement": ("employment", "wage_enforcement"),
     "negligence_duty": ("torts", "negligence_duty"),

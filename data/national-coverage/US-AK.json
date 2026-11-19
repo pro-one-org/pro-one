@@ -324,6 +324,18 @@
         "retrieved_at": "2026-11-18T20:45:45.439868+00:00",
         "sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb"
       }
+    },
+    "US-AK:wageLaw:4cc7a88c27e2": {
+      "category": "wageLaw",
+      "title": "Alaska Stat. § 23.05.140(a)–(b)",
+      "url": "https://www.akleg.gov/statutesPDF/Title-23.pdf",
+      "locator": "Alaska Stat. § 23.05.140(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T19:42:34.060323+00:00",
+        "sha256": "3957ea138984d5c12646a05c5fa9beeb8c965437fd847d09864dc8f44f760547"
+      }
     }
   },
   "court_directory": [
@@ -427,6 +439,17 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Alaska Superior Court"
+    },
+    "f3c0211135825209f5c256b30c2afc": {
+      "source_id": "US-AK:wageLaw:4cc7a88c27e2",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 23.05.140(a)–(b)",
+      "text": "(a) An employee and employer may agree in an annual initial contract of employment to monthly pay periods when the employer shall pay the employee for all labor performed or services rendered. Otherwise, the employer shall establish monthly or semi-monthly pay periods, at the election of the employee. (b) If the employment is terminated, all wages, salaries, or other compensation for labor or services become due immediately and shall be paid within the time required by this subsection at the place where the employee is usually paid or at a location agreed upon by the employer and employee. If the employment is terminated by the employer, regardless of the cause for the termination, payment is due within three working days after the termination. If the employment is terminated by the employee, payment is due at the next regular pay day that is at least three days after the employer received notice of the employee's termination of services.",
+      "text_sha256": "92df782ac91135ac387d4412003cdef056e7807feb02616ed2065408e51b9981",
+      "publisher_sha256": "3957ea138984d5c12646a05c5fa9beeb8c965437fd847d09864dc8f44f760547",
+      "retrieved_at": "2026-11-17T19:42:34.060323+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

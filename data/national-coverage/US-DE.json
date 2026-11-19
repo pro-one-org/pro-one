@@ -263,6 +263,18 @@
         "retrieved_at": "2026-11-18T20:45:34.638546+00:00",
         "sha256": "05594a0eac48fee5aa00c28c1602b7d36976e4e0933758a4aefa6c97af59d49d"
       }
+    },
+    "US-DE:deposit:152cd71ef5c9": {
+      "category": "deposit",
+      "title": "25 Del. C. § 5514(a)",
+      "url": "https://www.legis.delaware.gov/docs/default-source/default-document-library/landlordtenantcode202447c4e5feaf2a6dfeae60ff0000a39f38.pdf",
+      "locator": "25 Del. C. § 5514(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T19:42:49.604260+00:00",
+        "sha256": "ad561d2488bc178b5e47aa11813ca3412ba78f8e45531ab83a3606b2ec903d05"
+      }
     }
   },
   "court_directory": [
@@ -424,6 +436,17 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Delaware Superior Court"
+    },
+    "290b5fe9889627d127787b1d2926ef": {
+      "source_id": "US-DE:deposit:152cd71ef5c9",
+      "authority_type": "statute",
+      "citation": "25 Del. C. § 5514(a)",
+      "text": "(a)(1) A landlord may require the payment of security deposit. (2) No landlord may require a security deposit in excess of 1 month's rent where the rental agreement is for 1 year or more. (3) No landlord may require a security deposit in excess of 1 month's rent (with the exception of federally-assisted housing regulations), for primary residential tenancies of undefined terms or month to month where the tenancy has lasted 1 year or more. After the expiration of 1 year, the landlord shall immediately return, as a credit to the tenant, any security deposit amount in excess of 1 month's rent , including such amount which when combined with the amount of any surety bond is in excess of 1 month’s rent. (4) The security deposit limits set forth above shall not apply to furnished rental units.",
+      "text_sha256": "b77a44744afc61c13c6f7cf9831dc95159661dd865afec75230573b66dc35aa6",
+      "publisher_sha256": "ad561d2488bc178b5e47aa11813ca3412ba78f8e45531ab83a3606b2ec903d05",
+      "retrieved_at": "2026-11-17T19:42:49.604260+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

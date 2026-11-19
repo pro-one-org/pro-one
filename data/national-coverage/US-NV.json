@@ -308,6 +308,42 @@
         "retrieved_at": "2026-11-18T15:14:31.059769+00:00",
         "sha256": "1b54fb3a52b86d9034cb0b2ab53fa05cce7bd18f4aec38a4716477c0c25a4898"
       }
+    },
+    "US-NV:deposit:b4d8782c09f9": {
+      "category": "deposit",
+      "title": "Nev. Rev. Stat. § 118A.242(1)",
+      "url": "https://www.leg.state.nv.us/nrs/NRS-118A.html",
+      "locator": "Nev. Rev. Stat. § 118A.242(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T19:42:48.807587+00:00",
+        "sha256": "388d0c493c7783ed38d48574dce1fcffd0d6b70781e9b97e4eabc6430d94e98e"
+      }
+    },
+    "US-NV:habitability:f8c8b0085850": {
+      "category": "habitability",
+      "title": "Nev. Rev. Stat. § 118A.290(1)",
+      "url": "https://www.leg.state.nv.us/nrs/NRS-118A.html",
+      "locator": "Nev. Rev. Stat. § 118A.290(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T19:42:48.807587+00:00",
+        "sha256": "388d0c493c7783ed38d48574dce1fcffd0d6b70781e9b97e4eabc6430d94e98e"
+      }
+    },
+    "US-NV:debtLaw:a0e923d5588d": {
+      "category": "debtLaw",
+      "title": "Nev. Rev. Stat. § 649.075(1)",
+      "url": "https://www.leg.state.nv.us/NRS/NRS-649.html",
+      "locator": "Nev. Rev. Stat. § 649.075(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T19:42:48.992900+00:00",
+        "sha256": "665709e6a9ac2e7a860b62b2e967417122c9484f59bc0970999d190fbd788896"
+      }
     }
   },
   "court_directory": [
@@ -442,6 +478,42 @@
       "retrieved_at": "2026-11-18T15:14:31.059769+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "57c2c3b8ccc5468e45e35c93510310": {
+      "source_id": "US-NV:deposit:b4d8782c09f9",
+      "authority_type": "statute",
+      "citation": "Nev. Rev. Stat. § 118A.242(1)",
+      "text": "1. The landlord may not demand or receive a security deposit or a surety bond, or a combination thereof, including the last month’s rent, whose total amount or value exceeds 3 months’ periodic rent.",
+      "text_sha256": "f3b615fb30bf0478040b713467e343d6244b800e91a1b6c9994d7c78c7c4dd1b",
+      "publisher_sha256": "388d0c493c7783ed38d48574dce1fcffd0d6b70781e9b97e4eabc6430d94e98e",
+      "retrieved_at": "2026-11-17T19:42:48.807587+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 Nevada Revised Statutes"
+    },
+    "03db47888ad16c03834d3b71c25f9c": {
+      "source_id": "US-NV:habitability:f8c8b0085850",
+      "authority_type": "statute",
+      "citation": "Nev. Rev. Stat. § 118A.290(1)",
+      "text": "1. The landlord shall at all times during the tenancy maintain the dwelling unit in a habitable condition. A dwelling unit is not habitable if it violates provisions of housing or health codes concerning the health, safety, sanitation or fitness for habitation of the dwelling unit or if it substantially lacks: (a) Effective waterproofing and weather protection of the roof and exterior walls, including windows and doors. (b) Plumbing facilities which conformed to applicable law when installed and which are maintained in good working order. (c) A water supply approved under applicable law, which is: (1) Under the control of the tenant or landlord and is capable of producing hot and cold running water; (2) Furnished to appropriate fixtures; and (3) Connected to a sewage disposal system approved under applicable law and maintained in good working order to the extent that the system can be controlled by the landlord. (d) Adequate heating facilities which conformed to applicable law when installed and are maintained in good working order. (e) Electrical lighting, outlets, wiring and electrical equipment which conformed to applicable law when installed and are maintained in good working order. (f) An adequate number of appropriate receptacles for garbage and rubbish in clean condition and good repair at the commencement of the tenancy. The landlord shall arrange for the removal of garbage and rubbish from the premises unless the parties by written agreement provide otherwise. (g) Building, grounds, appurtenances and all other areas under the landlord’s control at the time of the commencement of the tenancy in every part clean, sanitary and reasonably free from all accumulations of debris, filth, rubbish, garbage, rodents, insects and vermin. (h) Floors, walls, ceilings, stairways and railings maintained in good repair. (i) Ventilating, air-conditioning and other facilities and appliances, including elevators, maintained in good repair if supplied or required to be supplied by the landlord.",
+      "text_sha256": "0ec6877d32ed77ba1379b0bda5829bb5adf4f67ebf4e25b9701bc3746a13a366",
+      "publisher_sha256": "388d0c493c7783ed38d48574dce1fcffd0d6b70781e9b97e4eabc6430d94e98e",
+      "retrieved_at": "2026-11-17T19:42:48.807587+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 Nevada Revised Statutes"
+    },
+    "a1428ea609a75c1870c0d215950783": {
+      "source_id": "US-NV:debtLaw:a0e923d5588d",
+      "authority_type": "statute",
+      "citation": "Nev. Rev. Stat. § 649.075(1)",
+      "text": "1. Except as otherwise provided in this section, a person shall not engage in the business of a collection agency within this State without having first applied for and obtained a license as a collection agency from the Commissioner.",
+      "text_sha256": "896c7fd1ddcaf1c8b2d41ad53222a7b8bcc1acf0f5950a89b25c7961191e812c",
+      "publisher_sha256": "665709e6a9ac2e7a860b62b2e967417122c9484f59bc0970999d190fbd788896",
+      "retrieved_at": "2026-11-17T19:42:48.992900+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 Nevada Revised Statutes"
     }
   },
   "fault_allocation": {

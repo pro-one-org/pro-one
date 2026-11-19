@@ -228,6 +228,18 @@
         "retrieved_at": "2026-11-18T15:14:39.153130+00:00",
         "sha256": "9ca05fee83959506eed195f86b960aa8b0062d3f6393f8bce400b2291d6f6551"
       }
+    },
+    "US-SD:wageLaw:26e6a20f943c": {
+      "category": "wageLaw",
+      "title": "SDCL § 60-11-9",
+      "url": "https://sdlegislature.gov/api/Statutes/60-11-9.html",
+      "locator": "SDCL § 60-11-9",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T19:42:29.354013+00:00",
+        "sha256": "47424fdd70965aa3c427a99b3611e02b9acf7adda330ca4cea6d4374c3f7a197"
+      }
     }
   },
   "court_directory": [
@@ -345,6 +357,17 @@
       "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
       "publisher_sha256": "9ca05fee83959506eed195f86b960aa8b0062d3f6393f8bce400b2291d6f6551",
       "retrieved_at": "2026-11-18T15:14:39.153130+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "16fd675035cb377eabb1395e5e6993": {
+      "source_id": "US-SD:wageLaw:26e6a20f943c",
+      "authority_type": "statute",
+      "citation": "SDCL § 60-11-9",
+      "text": "Every employer shall pay all wages due to employees at least once each calendar month unless otherwise provided by law, or on regular agreed pay days designated in advance by the employer, in lawful money of the United States. An employer may pay wages by check, cash, or direct deposit to the employee's bank account, unless an employer and employee agree to another form of payment.",
+      "text_sha256": "451e67da20403cfd04044723d25380e78edc432499c195cc4b07f2cdb314c84d",
+      "publisher_sha256": "47424fdd70965aa3c427a99b3611e02b9acf7adda330ca4cea6d4374c3f7a197",
+      "retrieved_at": "2026-11-17T19:42:29.354013+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

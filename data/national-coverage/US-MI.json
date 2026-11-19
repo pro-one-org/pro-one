@@ -251,6 +251,18 @@
         "retrieved_at": "2026-11-18T15:14:30.680893+00:00",
         "sha256": "59f422b20dfafc63ad1c3001fd6a06094f6821a4f6c3a1d6a90ba7b5a586cc03"
       }
+    },
+    "US-MI:deposit:bf6061e92acf": {
+      "category": "deposit",
+      "title": "Mich. Comp. Laws § 554.602",
+      "url": "https://www.legislature.mi.gov/documents/mcl/archive/2025/March/mcl-Act-348-of-1972.pdf",
+      "locator": "Mich. Comp. Laws § 554.602",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T19:42:51.508838+00:00",
+        "sha256": "4b6030d472264e71a6c6bee2577f6d7805bd68bbdd8760c6e83fd086602da0a6"
+      }
     }
   },
   "court_directory": [
@@ -391,6 +403,18 @@
       "retrieved_at": "2026-11-18T15:14:30.680893+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "ebd3cd16170ad717c66ce65ab5953f": {
+      "source_id": "US-MI:deposit:bf6061e92acf",
+      "authority_type": "statute",
+      "citation": "Mich. Comp. Laws § 554.602",
+      "text": "A landlord may require a security deposit for each rental unit. A security deposit shall be requiredand maintained in accordance with the terms of this act and shall not exceed 1 1/2 months' rent.",
+      "text_sha256": "b6b83f54c388bc27181b6d7a1086e894907428da7f753ad4b5d9216fb57220b4",
+      "publisher_sha256": "4b6030d472264e71a6c6bee2577f6d7805bd68bbdd8760c6e83fd086602da0a6",
+      "retrieved_at": "2026-11-17T19:42:51.508838+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "March 2025 archive, complete through Public Act 2 of 2025"
     }
   },
   "fault_allocation": {

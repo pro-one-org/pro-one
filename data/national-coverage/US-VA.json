@@ -267,6 +267,18 @@
         "retrieved_at": "2026-11-18T15:14:37.207378+00:00",
         "sha256": "551614f5c386245b30c28774be485794adf3cc9078c7b293fd61a7b6526c5e92"
       }
+    },
+    "US-VA:consumer_private_action:d5367d589eb4": {
+      "category": "consumer_private_action",
+      "title": "Va. Code § 59.1-204(A)",
+      "url": "https://law.lis.virginia.gov/vacodefull/title59.1/chapter17/",
+      "locator": "Va. Code § 59.1-204(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:58.844366+00:00",
+        "sha256": "44e232a79506c0f7982f3f66e68a3e6e13f65de9cce388a8648fb7387acccd36"
+      }
     }
   },
   "court_directory": [
@@ -360,6 +372,17 @@
       "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
       "publisher_sha256": "551614f5c386245b30c28774be485794adf3cc9078c7b293fd61a7b6526c5e92",
       "retrieved_at": "2026-11-18T15:14:37.207378+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "7e6f29fab08856a107e2bbe795e692": {
+      "source_id": "US-VA:consumer_private_action:d5367d589eb4",
+      "authority_type": "statute",
+      "citation": "Va. Code § 59.1-204(A)",
+      "text": "Any person who suffers loss as the result of a violation of this chapter shall be entitled to initiate an action to recover actual damages, or $500, whichever is greater. If the trier of fact finds that the violation was willful, it may increase damages to an amount not exceeding three times the actual damages sustained, or $1,000, whichever is greater. Any person who accepts a cure offer under this chapter may not initiate or maintain any other or additional action based on any cause of action arising under any other statute or common law theory if such other action is substantially based on the same allegations of fact on which the action initiated under this chapter is based.",
+      "text_sha256": "efca16331b111136300749e8fae54e3d9d2479276d0dd49b234e1185c751d51a",
+      "publisher_sha256": "44e232a79506c0f7982f3f66e68a3e6e13f65de9cce388a8648fb7387acccd36",
+      "retrieved_at": "2026-11-17T21:03:58.844366+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

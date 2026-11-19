@@ -322,6 +322,18 @@
         "retrieved_at": "2026-11-19T13:54:45.047992+00:00",
         "sha256": "f54e3f32ea8d9ba33a057936cf11645a23751d86c4b6d9f3b1f01f875eae9739"
       }
+    },
+    "US-SC:wageLaw:399c5f644332": {
+      "category": "wageLaw",
+      "title": "S.C. Code § 41-10-50",
+      "url": "https://www.scstatehouse.gov/code/t41c010",
+      "locator": "S.C. Code § 41-10-50",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T19:43:06.970483+00:00",
+        "sha256": "618d3e12990fbae124919734d199173e28a7bde113861b10b11dc338046f161a"
+      }
     }
   },
   "court_directory": [
@@ -515,6 +527,17 @@
       "decision_date": "2002-09-30",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from circuit court in hospital negligence action; affirmed."
+    },
+    "d3e87c690e85a7952e79473b4e07c4": {
+      "source_id": "US-SC:wageLaw:399c5f644332",
+      "authority_type": "statute",
+      "citation": "S.C. Code § 41-10-50",
+      "text": "When an employer separates an employee from the payroll for any reason, the employer shall pay all wages due to the employee within forty-eight hours of the time of separation or the next regular payday which may not exceed thirty days.",
+      "text_sha256": "5299146ff0d6e66a61d18684f2948cc2e3e6a836a99a9131359dc8b10444c85a",
+      "publisher_sha256": "618d3e12990fbae124919734d199173e28a7bde113861b10b11dc338046f161a",
+      "retrieved_at": "2026-11-17T19:43:06.970483+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   }
 }
