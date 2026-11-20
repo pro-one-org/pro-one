@@ -1,14 +1,33 @@
-"""Replay Wisconsin's dated legislative certification against the retained publication."""
-from datetime import date
+"""Replay dated publisher evidence against retained official publications."""
+from datetime import date, datetime
 from functools import lru_cache
 import gzip
 from hashlib import sha256
 from html.parser import HTMLParser
+from itertools import takewhile
 import json
 import re
 from urllib.parse import urlsplit
 
 from app.jurisdictions import ROOT
+
+
+CERTIFIED_TYPES = {"US-WI": "statute", "US-MI": "court_rule"}
+MICHIGAN_CIVIL_RULES = (
+    "https://www.courts.michigan.gov/siteassets/rules-instructions-administrative-orders/"
+    "michigan-court-rules/michigan-court-rules-responsive-html5.zip/Michigan_Court_Rules/"
+    "Court_Rules_Chapter_2/Court_Rules_Chapter_2.htm"
+)
+
+
+@lru_cache(maxsize=16)
+def retained_publication(digest):
+    if not re.fullmatch(r"[0-9a-f]{64}", digest):
+        raise ValueError("invalid_certified_publication")
+    raw = gzip.decompress((ROOT / "certified" / (digest + ".html.gz")).read_bytes())
+    if sha256(raw).hexdigest() != digest:
+        raise ValueError("certified_publisher_hash_mismatch")
+    return raw.decode("utf-8-sig")
 
 
 class PublicationText(HTMLParser):
@@ -51,18 +70,83 @@ class PublicationText(HTMLParser):
             self.block.append(data)
 
 
+class CourtRuleParagraphs(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.active = None
+        self.rows = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "p":
+            attributes = dict(attrs)
+            self.active = (attributes.get("id"), attributes.get("class", "").split(), [])
+
+    def handle_data(self, data):
+        if self.active:
+            self.active[2].append(data)
+
+    def handle_endtag(self, tag):
+        if tag == "p" and self.active:
+            anchor, classes, parts = self.active
+            text = " ".join("".join(parts).replace("\u200b", " ").split())
+            self.rows.append((anchor, classes, text))
+            self.active = None
+
+
+@lru_cache(maxsize=4)
+def michigan_civil_rules(digest):
+    parser = CourtRuleParagraphs()
+    parser.feed(retained_publication(digest))
+    parser.close()
+    return parser.rows
+
+
+def michigan_basis(url, digest, anchor, citation, quote):
+    matched = re.fullmatch(r"MCR (2\.\d{3})\(([A-Z])\)", citation)
+    if url != MICHIGAN_CIVIL_RULES or not matched or not re.fullmatch(r"\d+", anchor):
+        raise ValueError("invalid_certified_publication")
+    rule, subsection = matched.groups()
+    rows = michigan_civil_rules(digest)
+    dates = [text for _, classes, text in rows if "MainDate" in classes]
+    headings = [index for index, (_, classes, text) in enumerate(rows)
+                if "Rule_Heading" in classes and text.startswith(f"Rule {rule} ")]
+    if len(dates) != 1 or len(headings) != 1:
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    edition = "Chapter Updated with MSC Order(s) Effective on "
+    if not dates[0].startswith(edition):
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    day = datetime.strptime(dates[0].removeprefix(edition), "%B %d, %Y").date()
+    rule_rows = list(takewhile(lambda row: "Rule_Heading" not in row[1], rows[headings[0] + 1:]))
+    targets = [index for index, (node, classes, text) in enumerate(rule_rows)
+               if node == anchor and any(kind.startswith("L1_") for kind in classes)
+               and text.startswith(f"({subsection}) ")]
+    if len(targets) != 1:
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    target = targets[0]
+    excerpt = [rule_rows[target]]
+    excerpt.extend(takewhile(lambda row: not any(kind.startswith("L1_") for kind in row[1]),
+                            rule_rows[target + 1:]))
+    rule_text = " ".join(text for _, _, text in rule_rows)
+    effective_dates = re.findall(r"\b(?:effective|takes effect)(?: on)? ([A-Z][a-z]+ \d{1,2}, \d{4})\b",
+                                 rule_text, re.IGNORECASE)
+    if (re.search(r"\b(?:future[- ]effective|proposed amendment)\b", rule_text, re.IGNORECASE)
+            or any(datetime.strptime(label, "%B %d, %Y").date() > day for label in effective_dates)):
+        raise ValueError("certified_version_requires_effective_date_review")
+    if not quote or quote != " ".join(text for _, _, text in excerpt if text):
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    return day, "Michigan Supreme Court Civil Procedure chapter. " + dates[0]
+
+
 @lru_cache(maxsize=64)
 def certified_basis(scope, url, digest, path, citation, quote):
+    if scope == "US-MI":
+        return michigan_basis(url, digest, path, citation, quote)
     endpoint = urlsplit(url)
     if (scope != "US-WI" or endpoint.scheme != "https" or endpoint.netloc != "docs.legis.wisconsin.gov"
-            or not citation.startswith("Wis. Stat. § ") or not path.startswith(endpoint.path + "/")
-            or not re.fullmatch(r"[0-9a-f]{64}", digest)):
+            or not citation.startswith("Wis. Stat. § ") or not path.startswith(endpoint.path + "/")):
         raise ValueError("invalid_certified_publication")
-    raw = gzip.decompress((ROOT / "certified" / (digest + ".html.gz")).read_bytes())
-    if sha256(raw).hexdigest() != digest:
-        raise ValueError("certified_publisher_hash_mismatch")
     parser = PublicationText(path)
-    parser.feed(raw.decode("utf-8-sig"))
+    parser.feed(retained_publication(digest))
     parser.close()
     if parser.has_effective_date_note:
         raise ValueError("certified_version_requires_effective_date_review")

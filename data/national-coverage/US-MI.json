@@ -299,6 +299,54 @@
         "retrieved_at": "2026-11-20T15:18:08.847235+00:00",
         "sha256": "40bd472bbe69c7a439aaef5f8f593d04d6771ca6621d0bcf263320f9d8932735"
       }
+    },
+    "US-MI:commencement:2a9881399e4a": {
+      "category": "commencement",
+      "title": "MCR 2.101(B)",
+      "url": "https://www.courts.michigan.gov/siteassets/rules-instructions-administrative-orders/michigan-court-rules/michigan-court-rules-responsive-html5.zip/Michigan_Court_Rules/Court_Rules_Chapter_2/Court_Rules_Chapter_2.htm",
+      "locator": "MCR 2.101(B)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.143207+00:00",
+        "sha256": "d1aef373b1951d06f865945fab8d933880f263461a333f73eeaa9920fb04e62c"
+      }
+    },
+    "US-MI:service:16d9fe16194c": {
+      "category": "service",
+      "title": "MCR 2.105(A)",
+      "url": "https://www.courts.michigan.gov/siteassets/rules-instructions-administrative-orders/michigan-court-rules/michigan-court-rules-responsive-html5.zip/Michigan_Court_Rules/Court_Rules_Chapter_2/Court_Rules_Chapter_2.htm",
+      "locator": "MCR 2.105(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.143207+00:00",
+        "sha256": "d1aef373b1951d06f865945fab8d933880f263461a333f73eeaa9920fb04e62c"
+      }
+    },
+    "US-MI:response:77dce3461092": {
+      "category": "response",
+      "title": "MCR 2.108(A)",
+      "url": "https://www.courts.michigan.gov/siteassets/rules-instructions-administrative-orders/michigan-court-rules/michigan-court-rules-responsive-html5.zip/Michigan_Court_Rules/Court_Rules_Chapter_2/Court_Rules_Chapter_2.htm",
+      "locator": "MCR 2.108(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.143207+00:00",
+        "sha256": "d1aef373b1951d06f865945fab8d933880f263461a333f73eeaa9920fb04e62c"
+      }
+    },
+    "US-MI:fees:094afb42276b": {
+      "category": "fees",
+      "title": "MCR 2.002(B)",
+      "url": "https://www.courts.michigan.gov/siteassets/rules-instructions-administrative-orders/michigan-court-rules/michigan-court-rules-responsive-html5.zip/Michigan_Court_Rules/Court_Rules_Chapter_2/Court_Rules_Chapter_2.htm",
+      "locator": "MCR 2.002(B)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.143207+00:00",
+        "sha256": "d1aef373b1951d06f865945fab8d933880f263461a333f73eeaa9920fb04e62c"
+      }
     }
   },
   "court_directory": [
@@ -487,6 +535,66 @@
       "language": "en",
       "effective_from": "1963-01-01",
       "edition": "Michigan Compiled Laws complete through 2026 PA 114, rendered October 26, 2026"
+    },
+    "bff896a6262dcdefd92029eeb78379": {
+      "source_id": "US-MI:commencement:2a9881399e4a",
+      "authority_type": "court_rule",
+      "citation": "MCR 2.101(B)",
+      "text": "(B) Commencement of Action. A civil action is commenced by filing a complaint with a court.",
+      "text_sha256": "f5e6763c8853ee5a695e20ce3bd740e41dd43cc89a570f71e70ef341c2b910ea",
+      "publisher_sha256": "d1aef373b1951d06f865945fab8d933880f263461a333f73eeaa9920fb04e62c",
+      "retrieved_at": "2026-11-20T16:01:53.143207+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Michigan courts governed by Chapter 2",
+      "current_as_of": "2026-11-18",
+      "publisher_path": "1002151",
+      "edition": "Michigan Court Rules Chapter 2 updated through November 18, 2026"
+    },
+    "2ca4e8ce68dcc5297f726275c4d0be": {
+      "source_id": "US-MI:service:16d9fe16194c",
+      "authority_type": "court_rule",
+      "citation": "MCR 2.105(A)",
+      "text": "(A) Individuals. Process may be served on a resident or nonresident individual by (1) delivering a summons and a copy of the complaint to the defendant personally; or (2) sending a summons and a copy of the complaint by registered or certified mail, return receipt requested, and delivery restricted to the addressee. Service is made when the defendant acknowledges receipt of the mail. A copy of the return receipt signed by the defendant must be attached to proof showing service under subrule (A)(2).",
+      "text_sha256": "a0b139dbe489fa4605c9075458760ac31e0866d68fc7f6ca6ace1ced0d55b78f",
+      "publisher_sha256": "d1aef373b1951d06f865945fab8d933880f263461a333f73eeaa9920fb04e62c",
+      "retrieved_at": "2026-11-20T16:01:53.143207+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Michigan courts governed by Chapter 2",
+      "current_as_of": "2026-11-18",
+      "publisher_path": "1002199",
+      "edition": "Michigan Court Rules Chapter 2 updated through November 18, 2026"
+    },
+    "8cddca91faf14a1e6454d73dbcc09e": {
+      "source_id": "US-MI:response:77dce3461092",
+      "authority_type": "court_rule",
+      "citation": "MCR 2.108(A)",
+      "text": "(A) Time for Service and Filing of Pleadings. (1) A defendant must serve and file an answer or take other action permitted by law or these rules within 21 days after being served with the summons and a copy of the complaint in Michigan in the manner provided in MCR 2.105(A)(1). (2) If service of the summons and a copy of the complaint is made outside Michigan, or if the manner of service used requires the summons and a copy of the complaint to be sent by registered mail addressed to the defendant, the defendant must serve and file an answer or take other action permitted by law or these rules within 28 days after service. (3) When service is made in accordance with MCR 2.106, the court shall allow a reasonable time for the defendant to answer or take other action permitted by law or these rules, but may not prescribe a time less than 28 days after publication or posting is completed. (4) A party served with a pleading stating a cross-claim or counterclaim against that party must serve and file an answer or take other action permitted by law or these rules within 21 days after service. (5) A party served with a pleading to which a reply is required or permitted may serve and file a reply within 21 days after service of the pleading to which it is directed. (6) In an action alleging medical malpractice filed on or after October 1, 1986, unless the defendant has responded as provided in subrule (A)(1) or (2), the defendant must serve and file an answer within 21 days after being served with the notice of filing the security for costs or the affidavit in lieu of such security required by MCL 600.2912d.",
+      "text_sha256": "3fd8650da04a939860e069f4e0721a1ba15a24017871111c954cc77fc65d8e09",
+      "publisher_sha256": "d1aef373b1951d06f865945fab8d933880f263461a333f73eeaa9920fb04e62c",
+      "retrieved_at": "2026-11-20T16:01:53.143207+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Michigan courts governed by Chapter 2",
+      "current_as_of": "2026-11-18",
+      "publisher_path": "1002338",
+      "edition": "Michigan Court Rules Chapter 2 updated through November 18, 2026"
+    },
+    "b4448e23e5aafe33137fc9b8f38d49": {
+      "source_id": "US-MI:fees:094afb42276b",
+      "authority_type": "court_rule",
+      "citation": "MCR 2.002(B)",
+      "text": "(B) Request for Waiver of Fees. A request to waive fees must accompany the documents the individual is filing with the court. If the request is being made by a prisoner under the jurisdiction of the Michigan Department of Corrections, the prisoner must also file a certified copy of their institutional account showing the current balance and a 12-month history of any deposits and withdrawals. The request must be on a form approved by the State Court Administrative Office entitled “Fee Waiver Request.” Except as provided in (K), no additional documentation may be required. The information contained on the form shall be nonpublic. The request must be verified in accordance with MCR 1.109(D)(3)(b) and may be signed either (1) by the individual in whose behalf the request is made; or (2) by a person having personal knowledge of the facts required to be shown, if the individual in whose behalf the request is made is unable to sign it because of minority or other disability.",
+      "text_sha256": "6a5dd7e781174e63a827cc21cc20e2237c42b8e8d519ba97fdc9efa2341e1a89",
+      "publisher_sha256": "d1aef373b1951d06f865945fab8d933880f263461a333f73eeaa9920fb04e62c",
+      "retrieved_at": "2026-11-20T16:01:53.143207+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Michigan courts governed by Chapter 2",
+      "current_as_of": "2026-11-18",
+      "publisher_path": "1071850",
+      "edition": "Michigan Court Rules Chapter 2 updated through November 18, 2026"
     }
   },
   "fault_allocation": {

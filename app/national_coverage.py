@@ -8,7 +8,7 @@ from urllib.parse import urlsplit
 
 from app.jurisdictions import ROOT, jurisdiction_id, registry
 from app.national_govinfo_code import federal_granules
-from app.national_certifications import certified_basis
+from app.national_certifications import CERTIFIED_TYPES, certified_basis
 
 # Each capability has its own discovery dependencies. A homepage alone is never
 # evidence of a rule, a form revision, a monetary amount, or a filing deadline.
@@ -95,7 +95,7 @@ def manifest(scope):
             raise ValueError("invalid_retained_opinion")
         if passage["currentness"] == "current_as_of":
             day, _ = certified_basis(scope, source["url"], capture, passage["publisher_path"], passage["citation"], passage["text"])
-            if passage["current_as_of"] != day.isoformat() or passage["authority_type"] != "statute":
+            if passage["current_as_of"] != day.isoformat() or passage["authority_type"] != CERTIFIED_TYPES[scope]:
                 raise ValueError("invalid_publisher_certification")
     fault = record.get("fault_allocation")
     if fault:

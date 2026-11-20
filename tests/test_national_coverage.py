@@ -86,6 +86,24 @@ class NationalCoverageTests(unittest.TestCase):
                 "Wis. Stat. § 799.01(1)(d)", "Other civil actions where the amount claimed is $15,000 or less",
             )
 
+    def test_michigan_rule_currentness_requires_exact_subsection_and_date(self):
+        record = manifest("US-MI")
+        service = next(row for row in record["passages"].values() if row["citation"] == "MCR 2.105(A)")
+        args = (record["sources"][service["source_id"]]["url"], service["publisher_sha256"], service["publisher_path"])
+        with self.assertRaisesRegex(ValueError, "certified_excerpt_or_date_mismatch"):
+            certified_basis("US-MI", *args, "MCR 2.108(A)", service["text"])
+
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Michigan", legal_area="civil_procedure",
+                               topics=["service_of_process"], authority_types=["court_rule"],
+                               authority_status="current", authority_as_of="2026-11-18")
+        key, = provider.search(query)
+        source = provider.fetch(key).source
+        self.assertEqual(source["citation"]["preferred_citation"], "MCR 2.105(A)")
+        self.assertEqual(source["corpus_provenance"]["current_as_of"], "2026-11-18")
+        self.assertFalse(provider.search(query.model_copy(update={"authority_as_of": "2026-11-20"})))
+        self.assertFalse(provider.search(query.model_copy(update={"state": "Wisconsin"})))
+
     def test_action_references_expose_dated_authority_without_unlocking_execution(self):
         actions = coverage("US-WI")["action_shells"]
         complaint = next(action for action in actions if action["action_type"] == "complaint")
@@ -238,14 +256,18 @@ class NationalCoverageTests(unittest.TestCase):
                     self.assertTrue(row["court_directory"])
 
     def test_exact_publication_replay_rejects_invented_or_changed_text(self):
+        publisher_editions = {
+            "US-WI": (date(2026, 11, 4), "Published and certified"),
+            "US-MI": (date(2026, 11, 18), "Chapter Updated with MSC Order(s) Effective on"),
+        }
         for provider, selector, raw, _ in retained_observations():
             with self.subTest(source=provider.source.name, selector=selector):
                 observation, = provider.normalize(selector, raw)
                 self.assertIn(observation.version.jurisdiction, provider.source.jurisdictions)
                 if observation.version.currentness == "current_as_of":
-                    self.assertEqual(observation.version.jurisdiction, "US-WI")
-                    self.assertEqual(observation.version.current_as_of, date(2026, 11, 4))
-                    self.assertIn("Published and certified", observation.version.currentness_basis)
+                    day, basis = publisher_editions[observation.version.jurisdiction]
+                    self.assertEqual(observation.version.current_as_of, day)
+                    self.assertIn(basis, observation.version.currentness_basis)
                 else:
                     self.assertIn(observation.version.currentness, {"unresolved", "historical"})
                 self.assertEqual(observation.version.authority_type, provider.source.authority_type)
