@@ -165,6 +165,18 @@
         "retrieved_at": "2026-11-19T18:56:02.174507+00:00",
         "sha256": "911a17e3345ca7e4e67b3f2c0d6fd52af78a61ef95190bb6d14f4a10cdccc1a7"
       }
+    },
+    "US-MS:pi_limitations:af0482fd0377": {
+      "category": "pi_limitations",
+      "title": "Unruh v. Johnson, No. 2024-IA-00028-SCT, ¶ 33 (Miss. Mar. 13, 2025)",
+      "url": "https://courts.ms.gov/images/Opinions/CO182630.pdf",
+      "locator": "Unruh v. Johnson, No. 2024-IA-00028-SCT, ¶ 33 (Miss. Mar. 13, 2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:43:51.597737+00:00",
+        "sha256": "f8d621a027439b430b6253bd730850fb911f3e8621ede4175a7c65f4c4c16100"
+      }
     }
   },
   "court_directory": [
@@ -297,6 +309,22 @@
       "decision_date": "2018-08-02",
       "opinion_role": "majority",
       "procedural_posture": "Interlocutory appeal in a personal injury action involving a choice of law."
+    },
+    "60006899947b92f7a128c5a97e604a": {
+      "source_id": "US-MS:pi_limitations:af0482fd0377",
+      "authority_type": "opinion",
+      "citation": "Unruh v. Johnson, No. 2024-IA-00028-SCT, ¶ 33 (Miss. Mar. 13, 2025)",
+      "text": "Under Mississippi Code Section 15-1-49, negligence claims generally are subject to a three-year statute of limitations. GEICO Cas. Co. v. Stapleton , 315 So. 3d 464, 469 (¶ 16) (Miss. 2021) (citing Miss. Code Ann. § 15-1-49(1) (Rev. 2019)).",
+      "text_sha256": "cfe48244eb9268ee14fe7f93f0d8d26d22bf5795cdcfabd6401a2e2878bb8b33",
+      "publisher_sha256": "f8d621a027439b430b6253bd730850fb911f3e8621ede4175a7c65f4c4c16100",
+      "retrieved_at": "2026-11-20T15:43:51.597737+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2025-03-13",
+      "court": "Supreme Court of Mississippi",
+      "decision_date": "2025-03-13",
+      "opinion_role": "majority",
+      "procedural_posture": "Interlocutory appeal in a personal injury case. The court considered service, the requested extension, and the applicable ordinary negligence limitations period."
     }
   },
   "fault_allocation": {

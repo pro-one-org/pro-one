@@ -418,6 +418,18 @@
         "retrieved_at": "2026-11-20T15:27:32.089519+00:00",
         "sha256": "bb3afad1d274688672eadb49115eabef8e66234b79ee59b99479ca3e35a87f96"
       }
+    },
+    "US-TX:pi_limitations:a80c0ab9ca1d": {
+      "category": "pi_limitations",
+      "title": "Rodriguez v. Crowell, No. 08-07-00269-CV (Tex. App. Dec. 22, 2009)",
+      "url": "https://dev-search.txcourts.gov/SearchMedia.aspx?DT=Opinion&MediaID=d6db779b-6461-4397-820e-a2faa495c7ed&MediaVersionID=0bbf64c5-f5fa-4097-bbf9-dca2015c679d&coa=coa08",
+      "locator": "Rodriguez v. Crowell, No. 08-07-00269-CV (Tex. App. Dec. 22, 2009)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:43:52.036794+00:00",
+        "sha256": "3bb849217b25f716a2c55d1bddb08a9e3f2225e3641497ab8f0954ab71f62ab5"
+      }
     }
   },
   "court_directory": [
@@ -657,6 +669,22 @@
       "decision_date": "2017-06-14",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from a judgment on townhome owners’ claims against an association and property management companies."
+    },
+    "895e6ad079ed7fe423d8a9a6fecae1": {
+      "source_id": "US-TX:pi_limitations:a80c0ab9ca1d",
+      "authority_type": "opinion",
+      "citation": "Rodriguez v. Crowell, No. 08-07-00269-CV (Tex. App. Dec. 22, 2009)",
+      "text": "A plaintiff must commence a suit for personal injuries within two years after the day the cause of action accrues. See Tex.Civ.Prac.&Rem.Code Ann. § 16.003(a)(Vernon Supp. 2009). Because the accrual date is not defined by statute, the courts are charged with the responsibility of articulating the rules governing accrual. See, e.g., S.V. v. R.V., 933 S.W.2d 1, 4 (Tex. 1996); see also Developments in the Law: Statutes of Limitations, 63 Harv. L.Rev. 1177, 1185 (1950). In most cases, a cause of action accrues when a wrongful act causes an injury, regardless of when the plaintiff learns of that injury or whether all resulting damages have yet to occur. See S.V., 933 S.W.2d at 4. However, in those rare cases when the nature of the injury incurred is inherently undiscoverable and the evidence of injury is objectively verifiable,” the Texas Supreme Court applies a judicially crafted exception to the general rule of accrual, known as the discovery rule.",
+      "text_sha256": "6897807977d9fc0f156a7d7cf554e387b78409862fb8a7fe7f38d6e62e30874b",
+      "publisher_sha256": "3bb849217b25f716a2c55d1bddb08a9e3f2225e3641497ab8f0954ab71f62ab5",
+      "retrieved_at": "2026-11-20T15:43:52.036794+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2009-12-22",
+      "court": "Texas Eighth District Court of Appeals",
+      "decision_date": "2009-12-22",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of summary judgment on limitations in a negligence and premises liability action involving latent occupational disease."
     }
   },
   "fault_allocation": {

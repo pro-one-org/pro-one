@@ -162,6 +162,26 @@
         "retrieved_at": "2026-11-18T20:42:58.076453+00:00",
         "sha256": "56a019bc47663657f293ac9d4f1c50a4d5f4865bc8c433eb80b4d18cdd453cf0"
       }
+    },
+    "US-TN:pi_limitations:d48319c355e2": {
+      "category": "pi_limitations",
+      "title": "2015 Tenn. Pub. Acts ch. 388, §§ 1–2 (adopted Senate Amendment 1)",
+      "url": "https://capitol.tn.gov/Bills/109/Amend/SA0351.pdf",
+      "locator": "2015 Tenn. Pub. Acts ch. 388, §§ 1–2 (adopted Senate Amendment 1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:47:20.105805+00:00",
+        "sha256": "638d2586e0c9bf01357ab47e727455b58347f891d6eaaaf6adb68f77a1c3ffd2"
+      },
+      "supporting_publications": [
+        {
+          "role": "legislative_passage_history",
+          "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB0463&ga=109",
+          "retrieved_at": "2026-11-20T15:47:20.326632+00:00",
+          "sha256": "b048e806e5628f2ce1f1b3f6781eed7c5474fef908ce2fa852c8baaca540fa75"
+        }
+      ]
     }
   },
   "court_directory": [
@@ -274,6 +294,19 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Approved April 11, 2001"
+    },
+    "4a5c8e4929cef5428063a7c86101d0": {
+      "source_id": "US-TN:pi_limitations:d48319c355e2",
+      "authority_type": "statute",
+      "citation": "2015 Tenn. Pub. Acts ch. 388, §§ 1–2 (adopted Senate Amendment 1)",
+      "text": "(a) (1) Except as provided in subdivision (a)(2), the following actions shall be commenced within one (1) year after the cause of action accrued: (A) Actions for libel, injuries to the person, false imprisonment, malicious prosecution, or breach of marriage promise; (B) Civil actions for compensatory or punitive damages, or both, brought under the federal civil rights statutes; and (C) Actions for statutory penalties. (2) A cause of action listed in subdivision (a)(1) shall be commenced within two (2) years after the cause of action accrued, if: (A) Criminal charges are brought against any person alleged to have caused or contributed to the injury; (B) The conduct, transaction, or occurrence that gives rise to the cause of action for civil damages is the subject of a criminal prosecution commenced within one (1) year by: (i) A law enforcement officer; (ii) A district attorney general; or (iii) A grand jury; and (C) The cause of action is brought by the person injured by the criminal conduct against the party prosecuted for such conduct. (3) This subsection (a) shall be strictly construed. SECTION 2. This act shall take effect July 1, 2015, the public welfare requiring it, and shall apply to causes of action accruing on or after that date.",
+      "text_sha256": "dda3aacf4d682d6391527a986f4e534b370a3eab0ec9c6ec79192743c20141af",
+      "publisher_sha256": "638d2586e0c9bf01357ab47e727455b58347f891d6eaaaf6adb68f77a1c3ffd2",
+      "retrieved_at": "2026-11-20T15:47:20.105805+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2015 enrolled Senate Bill 463 as amended, verified in the legislative passage history",
+      "effective_from": "2015-07-01"
     }
   }
 }

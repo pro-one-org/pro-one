@@ -257,6 +257,18 @@
         "retrieved_at": "2026-11-20T15:34:32.474689+00:00",
         "sha256": "47c37f10f8c597f564ffca1c3bf3ef95a97befede97a7234e9fad973d532c7d3"
       }
+    },
+    "US-PA:pi_limitations:fa1925704605": {
+      "category": "pi_limitations",
+      "title": "Dubose v. Quinlan, Nos. 21 and 22 EAP 2016, n.3 (Pa. Nov. 22, 2017)",
+      "url": "https://www.pacourts.us/assets/opinions/Supreme/out/Majority%20Opinion%20%20Affirmed%20%2010332878727765858.pdf",
+      "locator": "Dubose v. Quinlan, Nos. 21 and 22 EAP 2016, n.3 (Pa. Nov. 22, 2017)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:43:51.231256+00:00",
+        "sha256": "6a0c67d134c65001da6f87257442eb8b1bfc26832983431ea5e0696d40981f21"
+      }
     }
   },
   "court_directory": [
@@ -442,6 +454,22 @@
       "decision_date": "2015-03-19",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from dismissal of wrongful-death claims involving asbestos exposure. The opinion distinguishes general accrual from a special asbestos limitation."
+    },
+    "2e42fe8b1ffb987bb26b337b9fb46c": {
+      "source_id": "US-PA:pi_limitations:fa1925704605",
+      "authority_type": "opinion",
+      "citation": "Dubose v. Quinlan, Nos. 21 and 22 EAP 2016, n.3 (Pa. Nov. 22, 2017)",
+      "text": "42 Pa.C.S. § 5524 provides a two-year statute of limitations for personal injury actions: § 5524. Two year limitation The following actions and proceedings must be commenced within two years: . . . (2) An action to recover damages for injuries to the person or for the death of an individual caused by the wrongful act or neglect or unlawful violence or negligence of another. 42 Pa.C.S. § 5524(2).",
+      "text_sha256": "115979e549b0017fcf440ecc665683ba10361e5d31eb7b352fefc012d8630a9f",
+      "publisher_sha256": "6a0c67d134c65001da6f87257442eb8b1bfc26832983431ea5e0696d40981f21",
+      "retrieved_at": "2026-11-20T15:43:51.231256+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2017-11-22",
+      "court": "Supreme Court of Pennsylvania",
+      "decision_date": "2017-11-22",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal by allowance in a medical professional liability survival action. The majority reproduced the ordinary statute and applied the specific medical professional liability provision."
     }
   },
   "fault_allocation": {

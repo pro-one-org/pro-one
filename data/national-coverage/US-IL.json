@@ -249,6 +249,18 @@
         "retrieved_at": "2026-11-20T15:12:11.014534+00:00",
         "sha256": "b819500b4668285ca53bbdf29dd41d49ae83b747923ccb9468c928049769cbc0"
       }
+    },
+    "US-IL:pi_limitations:acbf28f6b220": {
+      "category": "pi_limitations",
+      "title": "Merritt v. Randall Painting Co., No. 1-99-4171 (Ill. App. Ct. June 22, 2000)",
+      "url": "https://www.illinoiscourts.gov/Resources/132171af-62bf-4b84-9fe8-5937878a2f88/1994171.htm",
+      "locator": "Merritt v. Randall Painting Co., No. 1-99-4171 (Ill. App. Ct. June 22, 2000)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:43:51.280071+00:00",
+        "sha256": "ae85320cbdaee0f2fbc550e6ec4ec1740d3e1a953bed0e0fc76c1a40e996192c"
+      }
     }
   },
   "court_directory": [
@@ -372,6 +384,22 @@
       "decision_date": "2011-09-30",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from summary judgment in a wrongful death action arising from a pedestrian collision."
+    },
+    "2e9cba99d6e2b4021ca1aa9fca8991": {
+      "source_id": "US-IL:pi_limitations:acbf28f6b220",
+      "authority_type": "opinion",
+      "citation": "Merritt v. Randall Painting Co., No. 1-99-4171 (Ill. App. Ct. June 22, 2000)",
+      "text": "Because the plaintiff failed to allege any facts in her complaint or provide any affidavit to establish that her injury was the result of an act or omission in the design, planning, supervision, observation, or management of construction, or construction of an improvement to real property, the four-year limitation provided in section 13-214(a) of the Code is inapplicable. Estate of Herington v. County of Woodford, 250 Ill. App. 3d 870, 874-75, 620 N.E.2d 463 (1993). As such, her action is governed by the two-year statute of limitations set forth in section 13-202 of the Code, and was properly dismissed by the trial court as time-barred.",
+      "text_sha256": "5ca6ed9552cc6b89488a841ff374fa0e0308f52ecf29361db5fb954c0e3b9e10",
+      "publisher_sha256": "ae85320cbdaee0f2fbc550e6ec4ec1740d3e1a953bed0e0fc76c1a40e996192c",
+      "retrieved_at": "2026-11-20T15:43:51.280071+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2000-06-22",
+      "court": "Illinois Appellate Court, First District",
+      "decision_date": "2000-06-22",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of dismissal of a personal injury suit. The court applied the general statute after analyzing the potential construction statute exception."
     }
   },
   "fault_allocation": {

@@ -209,6 +209,18 @@
         "retrieved_at": "2026-11-18T15:14:31.286212+00:00",
         "sha256": "ad397fccbf21994357afda463fca395efe9ecdb8c1a50948888b771f8b4c5695"
       }
+    },
+    "US-GA:pi_limitations:b29eac731acf": {
+      "category": "pi_limitations",
+      "title": "Omstead v. BPG Inspection, LLC, 319 Ga. 512 (2024)",
+      "url": "https://www.gasupreme.us/wp-content/uploads/2024/06/s23g0771.pdf",
+      "locator": "Omstead v. BPG Inspection, LLC, 319 Ga. 512 (2024)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:45:44.675321+00:00",
+        "sha256": "d616fc634107bc6cbbe1ee37ec1c90d751db338cd597d40171efe624071386bc"
+      }
     }
   },
   "court_directory": [
@@ -355,6 +367,22 @@
       "currentness": "historical",
       "language": "en",
       "edition": "2022 publication"
+    },
+    "4ac1cbf615bc910ba53cc25c342db0": {
+      "source_id": "US-GA:pi_limitations:b29eac731acf",
+      "authority_type": "opinion",
+      "citation": "Omstead v. BPG Inspection, LLC, 319 Ga. 512 (2024)",
+      "text": "As relevant here, Omstead asserts a claim for wrongful death, which “does not accrue until the death occurs[.]” Williams v. Ga. Dept. of Human Resources, 272 Ga. 624, 626 (532 SE2d 401) (2000). See OCGA § 9-3-33 (“[A]ctions for injuries to the person shall be brought within two years after the right of action accrues[.]”).",
+      "text_sha256": "86dac1021d8633b02bef2444f3d9fade6764409244153b86c6e28e5bb832e2f1",
+      "publisher_sha256": "d616fc634107bc6cbbe1ee37ec1c90d751db338cd597d40171efe624071386bc",
+      "retrieved_at": "2026-11-20T15:45:44.675321+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2024-06-11",
+      "court": "Supreme Court of Georgia",
+      "decision_date": "2024-06-11",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of a wrongful-death claim involving a contractually shortened limitation. The court quoted the ordinary statutory period and enforced the separate contractual term in this case."
     }
   },
   "fault_allocation": {

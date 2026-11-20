@@ -228,6 +228,30 @@
         "retrieved_at": "2026-11-20T15:25:15.746813+00:00",
         "sha256": "e4d506b2e9f50ee6ce25d3730fedf87831bb8d31a4d6a6abeb8ab89bc18a15bd"
       }
+    },
+    "US-AR:pi_limitations:ed4cbd23e1c1": {
+      "category": "pi_limitations",
+      "title": "Shelter Mutual Insurance Co. v. Nash, 357 Ark. 581 (2004)",
+      "url": "https://opinions.arcourts.gov/ark/supremecourt/en/item/262881/index.do?iframe=true",
+      "locator": "Shelter Mutual Insurance Co. v. Nash, 357 Ark. 581 (2004)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:49:45.764807+00:00",
+        "sha256": "d986fcbd85a0fc2b2030bb6b4d7c66c6bcbfd9329d000e5b4662c8a54ce7fc76"
+      }
+    },
+    "US-AR:contract_formation:9ef844c5754c": {
+      "category": "contract_formation",
+      "title": "The Money Place, LLC v. Barnes, 349 Ark. 411 (2002)",
+      "url": "https://opinions.arcourts.gov/ark/supremecourt/en/item/247256/index.do?iframe=true",
+      "locator": "The Money Place, LLC v. Barnes, 349 Ark. 411 (2002)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:49:46.354046+00:00",
+        "sha256": "400e727b671ca1a90880fd2544f84610d03df71971e1e91591b8763fc24610cb"
+      }
     }
   },
   "court_directory": [
@@ -362,6 +386,38 @@
       "currentness": "historical",
       "language": "en",
       "edition": "2023 Arkansas Acts"
+    },
+    "13a33fbb3d9d0d49784dab1562e7ec": {
+      "source_id": "US-AR:pi_limitations:ed4cbd23e1c1",
+      "authority_type": "opinion",
+      "citation": "Shelter Mutual Insurance Co. v. Nash, 357 Ark. 581 (2004)",
+      "text": "An action for personal injury, however, must be brought within three years after the cause of action accrues. Ark. Code Ann. § 16-56-105 (Supp. 2001).",
+      "text_sha256": "891a47561dbfe6fcce8699c229727f70cc9d1e4cac35625a87ac1f30f288b281",
+      "publisher_sha256": "d986fcbd85a0fc2b2030bb6b4d7c66c6bcbfd9329d000e5b4662c8a54ce7fc76",
+      "retrieved_at": "2026-11-20T15:49:45.764807+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court-reported opinion of 2004-06-03",
+      "court": "Supreme Court of Arkansas",
+      "decision_date": "2004-06-03",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of a certified question arising in an underinsured motorist contract dispute. The court distinguished personal-injury and written-contract statutes."
+    },
+    "4b2cb3ccfd87171a80e2b5399f9779": {
+      "source_id": "US-AR:contract_formation:9ef844c5754c",
+      "authority_type": "opinion",
+      "citation": "The Money Place, LLC v. Barnes, 349 Ark. 411 (2002)",
+      "text": "The essential elements of a contract are (1) competent parties, (2) subject matter, (3) legal consideration, (4) mutual agreement, and (5) mutual obligations.",
+      "text_sha256": "755ae746c45a3a409db9e622ffabe449b422437447742fb077ebdcf6b489139a",
+      "publisher_sha256": "400e727b671ca1a90880fd2544f84610d03df71971e1e91591b8763fc24610cb",
+      "retrieved_at": "2026-11-20T15:49:46.354046+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court-reported opinion of 2002-06-20",
+      "court": "Supreme Court of Arkansas",
+      "decision_date": "2002-06-20",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from denial of a motion to compel arbitration. The court discussed ordinary formation elements in reviewing the asserted agreement."
     }
   },
   "fault_allocation": {
