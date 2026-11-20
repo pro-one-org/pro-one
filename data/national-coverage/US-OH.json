@@ -322,6 +322,30 @@
         "retrieved_at": "2026-11-20T16:42:37.557891+00:00",
         "sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040"
       }
+    },
+    "US-OH:debtLaw:41b5d79471a9": {
+      "category": "debtLaw",
+      "title": "Ohio Rev. Code § 1319.12(B)–(C)",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-1319.12",
+      "locator": "Ohio Rev. Code § 1319.12(B)–(C)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:26:27.175815+00:00",
+        "sha256": "96b7b83e0b0c4a1e766c4bab196913272131d3017bad1882d6d12e0a3cc02648"
+      }
+    },
+    "US-OH:debt_forum:6cbd5d6432b9": {
+      "category": "debt_forum",
+      "title": "Ohio Rev. Code § 1319.12(D)–(E)",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-1319.12",
+      "locator": "Ohio Rev. Code § 1319.12(D)–(E)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:26:27.175815+00:00",
+        "sha256": "96b7b83e0b0c4a1e766c4bab196913272131d3017bad1882d6d12e0a3cc02648"
+      }
     }
   },
   "court_directory": [
@@ -592,6 +616,30 @@
       "retrieved_at": "2026-11-20T16:42:37.557891+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "e3db4f4664137ea00206f0d1d2d27a": {
+      "source_id": "US-OH:debtLaw:41b5d79471a9",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 1319.12(B)–(C)",
+      "text": "(B) A collection agency with a place of business in this state may take assignment of another person's accounts, bills, or other evidences of indebtedness in its own name for the purpose of billing, collecting, or filing suit in its own name as the real party in interest. (C) No collection agency shall commence litigation for the collection of an assigned account, bill, or other evidence of indebtedness unless it has taken the assignment in accordance with all of the following requirements: (1) The assignment was voluntary, properly executed, and acknowledged by the person transferring title to the collection agency. (2) The collection agency did not require the assignment as a condition to listing the account, bill, or other evidence of indebtedness with the collection agency for collection. (3) The assignment was manifested by a written agreement separate from and in addition to any document intended for the purpose of listing the account, bill, or other evidence of indebtedness with the collection agency. The written agreement shall state the effective date of the assignment and the consideration paid or given, if any, for the assignment and shall expressly authorize the collection agency to refer the assigned account, bill, or other evidence of indebtedness to an attorney admitted to the practice of law in this state for the commencement of litigation. The written agreement also shall disclose that the collection agency may consolidate, for purposes of filing an action, the assigned account, bill, or other evidence of indebtedness with those of other creditors against an individual debtor or co-debtors. (4) Upon the effective date of the assignment to the collection agency, the creditor's account maintained by the collection agency in connection with the assigned account, bill, or other evidence of indebtedness was canceled.",
+      "text_sha256": "9ab98b5043e5b8f05dfdee1227334ff8d73b11ecd516ca1066f8df8ebb263533",
+      "publisher_sha256": "96b7b83e0b0c4a1e766c4bab196913272131d3017bad1882d6d12e0a3cc02648",
+      "retrieved_at": "2026-11-20T17:26:27.175815+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2018-03-23"
+    },
+    "cf5c6918cda44f9f540a7a27baaa08": {
+      "source_id": "US-OH:debt_forum:6cbd5d6432b9",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 1319.12(D)–(E)",
+      "text": "(D) A collection agency shall commence litigation for the collection of an assigned account, bill, or other evidence of indebtedness in a court of competent jurisdiction located in the county in which the debtor resides, or in the case of co-debtors, a county in which at least one of the co-debtors resides. (E) No collection agency shall commence any litigation authorized by this section unless the agency appears by an attorney admitted to the practice of law in this state.",
+      "text_sha256": "98b095785f5372d04dfd79cde694df4c9d22e7aea19736e0f5b0c734d562a456",
+      "publisher_sha256": "96b7b83e0b0c4a1e766c4bab196913272131d3017bad1882d6d12e0a3cc02648",
+      "retrieved_at": "2026-11-20T17:26:27.175815+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2018-03-23"
     }
   },
   "fault_allocation": {

@@ -355,6 +355,30 @@
         "retrieved_at": "2026-11-20T16:35:17.081732+00:00",
         "sha256": "dff9ee19ca5d2131cc800bee64042a43aa6a35fd6e4df05ce229af1eaf088e8d"
       }
+    },
+    "US-MN:debtLaw:b7aca948046b": {
+      "category": "debtLaw",
+      "title": "Minn. Stat. § 332.37(a)(1)–(5)",
+      "url": "https://www.revisor.mn.gov/statutes/cite/332.37",
+      "locator": "Minn. Stat. § 332.37(a)(1)–(5)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:26:26.693713+00:00",
+        "sha256": "fbcfdf27d6b5a40991717247a1498d839e33313183f4b24654ed61117d2fc5ad"
+      }
+    },
+    "US-MN:debt_limitations:415c5ca74e13": {
+      "category": "debt_limitations",
+      "title": "Minn. Stat. § 541.053",
+      "url": "https://www.revisor.mn.gov/statutes/cite/541.053",
+      "locator": "Minn. Stat. § 541.053",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:27:34.870458+00:00",
+        "sha256": "6a7f9c9ccab6cb720b54bec4428a8b7105f34b35d2ba10255e003d4f1d363d95"
+      }
     }
   },
   "court_directory": [
@@ -582,6 +606,28 @@
       "text_sha256": "f18963a650fe157340bd5909ffc8528022eaf44272e5b0f41d9dcbd866d7a197",
       "publisher_sha256": "dff9ee19ca5d2131cc800bee64042a43aa6a35fd6e4df05ce229af1eaf088e8d",
       "retrieved_at": "2026-11-20T16:35:17.081732+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "65453e557a755056d839d3e7302618": {
+      "source_id": "US-MN:debtLaw:b7aca948046b",
+      "authority_type": "statute",
+      "citation": "Minn. Stat. § 332.37(a)(1)–(5)",
+      "text": "(a) No collection agency, debt buyer, or collector shall: (1) in collection letters or publications, or in any communication, oral or written threaten wage garnishment or legal suit by a particular lawyer, unless it has actually retained the lawyer; (2) use or employ sheriffs or any other officer authorized to serve legal papers in connection with the collection of a claim, except when performing their legally authorized duties; (3) use or threaten to use methods of collection which violate Minnesota law; (4) furnish legal advice or otherwise engage in the practice of law or represent that it is competent to do so; (5) communicate with debtors in a misleading or deceptive manner by using the stationery of a lawyer, forms or instruments which only lawyers are authorized to prepare, or instruments which simulate the form and appearance of judicial process;",
+      "text_sha256": "7f517f3f553334b3f475b32d84c87e739f387755a734b13ea00b8c24f6780333",
+      "publisher_sha256": "fbcfdf27d6b5a40991717247a1498d839e33313183f4b24654ed61117d2fc5ad",
+      "retrieved_at": "2026-11-20T17:26:26.693713+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "f4b6aab90df2f1cfd907639482438d": {
+      "source_id": "US-MN:debt_limitations:415c5ca74e13",
+      "authority_type": "statute",
+      "citation": "Minn. Stat. § 541.053",
+      "text": "Notwithstanding section 541.31, subdivision 1, actions upon an obligation arising out of a consumer debt primarily for personal, family, or household purposes shall be commenced within six years. After its expiration, the statute of limitations is not revived by the collection of a payment on an account, a discharge in a bankruptcy proceeding, or an oral or written reaffirmation of the debt.",
+      "text_sha256": "f2a112144c0868fa1ced4b3883b89ec83522d75634a76ebd057fb57ce49bbf58",
+      "publisher_sha256": "6a7f9c9ccab6cb720b54bec4428a8b7105f34b35d2ba10255e003d4f1d363d95",
+      "retrieved_at": "2026-11-20T17:27:34.870458+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

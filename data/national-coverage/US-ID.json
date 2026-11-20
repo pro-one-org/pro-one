@@ -359,6 +359,30 @@
         "retrieved_at": "2026-11-20T16:16:31.851875+00:00",
         "sha256": "4a1b0907345e638a23295771796149d294bbcf039009657f2b30cf12daa46fbe"
       }
+    },
+    "US-ID:debtLaw:f5d74a910813": {
+      "category": "debtLaw",
+      "title": "Idaho Code § 26-2229A(1)–(4)",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title26/T26CH22/SECT26-2229A/",
+      "locator": "Idaho Code § 26-2229A(1)–(4)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:26:29.016733+00:00",
+        "sha256": "31ddbaa7ad10fe39628b6d291735d4b616f84c48821d532d3322c412722ac6e0"
+      }
+    },
+    "US-ID:wageLaw:0ce555540269": {
+      "category": "wageLaw",
+      "title": "Idaho Code § 45-606(1)–(2)",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title45/T45CH6/SECT45-606/",
+      "locator": "Idaho Code § 45-606(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:27:37.194426+00:00",
+        "sha256": "91956eb26a3c17fcdd3ff423db8d07106467d8442a5eaf19553f6bc4984de353"
+      }
     }
   },
   "court_directory": [
@@ -578,6 +602,28 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Idaho District Court Magistrate Division Small Claims Department"
+    },
+    "ed99cf12710e055e4ac2a3c47cc97b": {
+      "source_id": "US-ID:debtLaw:f5d74a910813",
+      "authority_type": "statute",
+      "citation": "Idaho Code § 26-2229A(1)–(4)",
+      "text": "(1) Every licensee or person required to be licensed under this chapter and its agents shall deal openly, fairly, and honestly without deception in the conduct of its business activities in this state under this chapter. (2) When not inconsistent with the statutes of this state, the provisions of the federal fair debt collection practices act, 15 U.S.C. 1692 et seq., as amended, may be enforced by the director against collection agencies licensed or required to be licensed under the provisions of this chapter. (3) In every instance where a collection agency licensee has a managerial or financial interest in a creditor client, or where a creditor client has a managerial or financial interest in a collection agency licensee, disclosure of such interest must be made on each and every contact with a debtor in seeking to make a collection of any account, claim, or other indebtedness. (4) No collection agency licensee, or collection agency required to be licensed under this chapter, or agent of such collection agency shall collect or attempt to collect any interest or other charges, fees, or expenses incidental to the principal obligation unless such interest or incidental fees, charges, or expenses: (a) Are expressly authorized by statute; (b) Are allowed by court ruling against the debtor; (c) Are expressly authorized by the agreement creating the debt, except as otherwise prohibited by law. Provided, however, that no person shall collect any attorney’s fees or litigation costs unless such attorney’s fees or litigation costs are reasonable, are for actual attorney services performed, and are limited to those costs actually incurred; (d) Have been judicially determined; (e) Are provided for in a written form agreement that is signed by both the debtor and the licensee and has the prior approval of the director with respect to the terms of the agreement and amounts of the fees, interest, charges, and expenses; or (f) Reasonably relate to the actual cost associated with processing a demand draft or other form of electronic payment on behalf of a debtor for a debt payment, provided that the debtor has preauthorized the method of payment and has been notified in advance that such payment may be made by reasonable alternative means that will not result in additional charges, fees, or expenses to the debtor.",
+      "text_sha256": "9c38f5f9334c303af323497d1a66f5828cefad4458f11e14c72303925fa09d94",
+      "publisher_sha256": "31ddbaa7ad10fe39628b6d291735d4b616f84c48821d532d3322c412722ac6e0",
+      "retrieved_at": "2026-11-20T17:26:29.016733+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "cad8356709d138a44c763a2d095908": {
+      "source_id": "US-ID:wageLaw:0ce555540269",
+      "authority_type": "statute",
+      "citation": "Idaho Code § 45-606(1)–(2)",
+      "text": "(1) Upon layoff, or upon termination of employment by either the employer or employee, the employer shall pay or make available at the usual place of payment all wages then due the employee by the earlier of the next regularly scheduled payday or within ten (10) days of such layoff or termination, weekends and holidays excluded. However, if the employee makes written request upon the employer for earlier payment of wages, all wages then due the employee shall be paid within forty-eight (48) hours of the receipt of such request, weekends and holidays excluded. (2) Unless exempt from the minimum wage requirements of chapter 15, title 44, Idaho Code, employees who are not being paid on an hourly or salary basis must be paid at least the applicable minimum wage for all hours worked in the pay period immediately preceding layoff or termination from employment. The minimum wage payment shall be made within the same time limitations provided for in subsection (1) of this section. Any additional wages owed to employees shall be paid by the next regularly schedule payday.",
+      "text_sha256": "0e1b38f25b736bbe1bdd27120ca791af4a7aae73547c69e99ac04b0dc88ca83f",
+      "publisher_sha256": "91956eb26a3c17fcdd3ff423db8d07106467d8442a5eaf19553f6bc4984de353",
+      "retrieved_at": "2026-11-20T17:27:37.194426+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

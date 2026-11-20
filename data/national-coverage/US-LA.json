@@ -326,6 +326,18 @@
         "retrieved_at": "2026-11-20T16:01:53.100404+00:00",
         "sha256": "6097d41ea78bc7636e8f53923359d2ad353f703d1a907cfd18ae85f26828405c"
       }
+    },
+    "US-LA:debtLaw:ef6aefe6aeb7": {
+      "category": "debtLaw",
+      "title": "La. Rev. Stat. § 9:3562",
+      "url": "https://legis.la.gov/Legis/Law.aspx?d=107679",
+      "locator": "La. Rev. Stat. § 9:3562",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:26:26.383444+00:00",
+        "sha256": "a0edacb6bd832dc6e3eca009785e5836febd45f239c70c801f6ffa7e60953eb9"
+      }
     }
   },
   "court_directory": [
@@ -579,6 +591,17 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Louisiana District Court"
+    },
+    "c500aaf3c678250d02e2b7f3a508a2": {
+      "source_id": "US-LA:debtLaw:ef6aefe6aeb7",
+      "authority_type": "statute",
+      "citation": "La. Rev. Stat. § 9:3562",
+      "text": "Except as otherwise provided by law or this section, the creditor, including, but not limited to the creditor in a consumer credit transaction, shall not contact any person other than an extender of credit or credit reporting agency who is not living, residing, or present in the household of the debtor regarding the debtor's obligation to pay a debt. (1) Notwithstanding R.S. 9:3513 the debtor may waive the benefits of this section at any time by giving consent, provided such consent is given at a time subsequent to the date the debt arises. (2) The creditor may contact any person without the debtor's consent: (a) To ascertain information bearing on a debtor's credit worthiness, credit standing, credit capacity, character, general reputation, personal characteristics or mode of living which is used or expected to be used or collected in whole or in part for the purpose of serving as a factor in establishing the debtor's eligibility for credit or insurance provided such contacts are not designed to collect a delinquent debt, or (b) To ascertain the whereabouts of the debtor when the creditor has reason to believe the debtor has changed his employment or has moved from his last known address. (3) If the debtor has defaulted on his promise to pay, and if he has given specific notice in writing by registered or certified mail, instructing the creditor to cease further contacts with the debtor in regard to the indebtedness, the creditor shall thereafter limit mail contacts to one notice per month so long as the notice is not designed to threaten action not otherwise permitted by law. If the debtor has instructed the creditor to cease further contact, as heretofore provided, the creditor may make a maximum of four personal contacts with the debtor for the purpose of settling the obligation provided such contacts are not designed to threaten action not otherwise permitted by law. (4) This section shall not prohibit the extender of credit from (a) contacting any person in order to discover property belonging to the debtor that may be seized to satisfy a debt that has been reduced to judgment; (b) making amicable demand and filing suit on the debt; or (c) contacting persons related to the debtor if permission is specifically given in writing at the time the debt arises or at any time thereafter, provided that such contacts are reasonable. (5) This section shall not limit a debtor's right to bring an action for damages provided by Article 2315 of the Louisiana Civil Code. (6) Notwithstanding the provisions of Paragraph (3), when the extender of credit has filed suit and obtained judgment he shall be permitted to resume contacts with the consumer against whom judgment has been obtained.",
+      "text_sha256": "658c45af23bfaa5cc2acce5e40155e3af4693649e7e37379247ca3b001d2484d",
+      "publisher_sha256": "a0edacb6bd832dc6e3eca009785e5836febd45f239c70c801f6ffa7e60953eb9",
+      "retrieved_at": "2026-11-20T17:26:26.383444+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

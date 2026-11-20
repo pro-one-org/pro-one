@@ -297,6 +297,18 @@
         "retrieved_at": "2026-11-20T16:20:53.900546+00:00",
         "sha256": "560ff6d64b5afdf2a3bc5ac917a392269d16270a029b252ff8f7957deb38b423"
       }
+    },
+    "US-CO:debtLaw:3220fede0a65": {
+      "category": "debtLaw",
+      "title": "Colo. Rev. Stat. § 5-16-106 (2023)",
+      "url": "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2023-title-05.pdf",
+      "locator": "Colo. Rev. Stat. § 5-16-106 (2023)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:26:27.643132+00:00",
+        "sha256": "16837b1c7dfa704a12935c1bd403e0a3242c20ab69f513ca3f0b094bf849734e"
+      }
     }
   },
   "court_directory": [
@@ -500,6 +512,18 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Colorado Revised Statutes 2024 unofficial printout"
+    },
+    "f616d88b78b0a390e5616c5065131c": {
+      "source_id": "US-CO:debtLaw:3220fede0a65",
+      "authority_type": "statute",
+      "citation": "Colo. Rev. Stat. § 5-16-106 (2023)",
+      "text": "(1) A debt collector or collection agency shall not engage in any conduct the natural consequence of which is to harass, oppress, or abuse any person in connection with the collection of a debt, including, but not limited to, the following conduct: (a) The use or threat of use of violence or other criminal means to harm the physical person, reputation, or property of any person; (b) The use of obscene or profane language or language the natural consequence of which is to abuse the hearer or reader; (c) The publication of a list of consumers who allegedly refuse to pay debts, except to a consumer reporting agency or to persons meeting the requirements of 15 U.S.C. sec. 1681b (a)(3) and section 5-18-104 (1)(c); (d) The advertisement for sale of any debt to coerce payment of the debt or agreeing to do so for the purpose of solicitation of claims; (e) Causing a telephone to ring or engaging any person in telephone conversation repeatedly or continuously with intent to annoy, abuse, or harass any person at the called number; (f) Except as provided in section 5-16-104, the placement of telephone calls without meaningful disclosure of the caller's identity within the first sixty seconds after the other party to the call is identified as the debtor.",
+      "text_sha256": "c478f7520e639a2336710bb33b9a97652700a671d5b4e93d08e5cb93d1a32bfd",
+      "publisher_sha256": "16837b1c7dfa704a12935c1bd403e0a3242c20ab69f513ca3f0b094bf849734e",
+      "retrieved_at": "2026-11-20T17:26:27.643132+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Colorado Revised Statutes 2023 uncertified printout"
     }
   },
   "fault_allocation": {

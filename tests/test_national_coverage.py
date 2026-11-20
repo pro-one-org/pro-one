@@ -138,6 +138,15 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertFalse(provider.search(query.model_copy(update={"topics": ["fault_allocation"]})))
         self.assertFalse(provider.search(query.model_copy(update={"state": "Missouri"})))
 
+    def test_debt_assignee_venue_is_scoped_to_its_topic_and_jurisdiction(self):
+        query = ResearchMatter(country="US", state="Ohio", legal_area="consumer_debt",
+                               topics=["debt_forum"], authority_types=["statute"])
+        provider = RetainedLegislativeResearch()
+        key, = provider.search(query)
+        self.assertIn("a county in which at least one of the co-debtors resides", provider.fetch(key).text)
+        self.assertNotIn(key, provider.search(query.model_copy(update={"topics": ["debt_collection"]})))
+        self.assertFalse(provider.search(query.model_copy(update={"state": "Indiana"})))
+
     def test_historical_negligence_elements_do_not_supply_fault_or_present_law(self):
         query = ResearchMatter(country="US", state="Alabama", legal_area="torts",
                                topics=["negligence_elements"], authority_types=["opinion"],

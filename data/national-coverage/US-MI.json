@@ -371,6 +371,30 @@
         "retrieved_at": "2026-11-20T16:35:16.494119+00:00",
         "sha256": "feedb5d7287f1f9aa0c4cba94861f18e9b8058e685b2ca3f9ecd8c2329623c41"
       }
+    },
+    "US-MI:debtLaw:4d869bb2e4a8": {
+      "category": "debtLaw",
+      "title": "Mich. Comp. Laws § 445.252(a)–(e)",
+      "url": "https://legislature.mi.gov/Laws/MCL?objectName=mcl-445-252",
+      "locator": "Mich. Comp. Laws § 445.252(a)–(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:26:26.762033+00:00",
+        "sha256": "d4259b155d5e948b465b97fda0a458e42404648737520c23d70044610b8f1743"
+      }
+    },
+    "US-MI:debt_private_action:a8d6a287c619": {
+      "category": "debt_private_action",
+      "title": "Mich. Comp. Laws § 445.257",
+      "url": "https://legislature.mi.gov/Laws/MCL?objectName=mcl-445-257",
+      "locator": "Mich. Comp. Laws § 445.257",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:26:26.633280+00:00",
+        "sha256": "9dfd591db37f876c6fdd0cea2d866278f89d0ca35f5c9be7143894c9a72f21e7"
+      }
     }
   },
   "court_directory": [
@@ -642,6 +666,30 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "2026-09-21"
+    },
+    "91276b9123ce90535b2120b1d3e6d9": {
+      "source_id": "US-MI:debtLaw:4d869bb2e4a8",
+      "authority_type": "statute",
+      "citation": "Mich. Comp. Laws § 445.252(a)–(e)",
+      "text": "A regulated person shall not commit 1 or more of the following acts: (a) Communicating with a debtor in a misleading or deceptive manner, such as using the stationery of an attorney or credit bureau unless the regulated person is an attorney or is a credit bureau and it is disclosed that it is the collection department of the credit bureau. (b) Using forms or instruments which simulate the appearance of judicial process. (c) Using seals or printed forms of a government agency or instrumentality. (d) Using forms that may otherwise induce the belief that they have judicial or official sanction. (e) Making an inaccurate, misleading, untrue, or deceptive statement or claim in a communication to collect a debt or concealing or not revealing the purpose of a communication when it is made in connection with collecting a debt.",
+      "text_sha256": "78d98876af8e0c9d31c757445a4be8794b949aedc74e0a926e088afaf14c0223",
+      "publisher_sha256": "d4259b155d5e948b465b97fda0a458e42404648737520c23d70044610b8f1743",
+      "retrieved_at": "2026-11-20T17:26:26.762033+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1981-06-29"
+    },
+    "f363a3263d9ec9e251b44a99fd5550": {
+      "source_id": "US-MI:debt_private_action:a8d6a287c619",
+      "authority_type": "statute",
+      "citation": "Mich. Comp. Laws § 445.257",
+      "text": "(1) A person who suffers injury, loss, or damage, or from whom money was collected by the use of a method, act, or practice in violation of this act may bring an action for damages or other equitable relief. (2) In an action brought pursuant to subsection (1), if the court finds for the petitioner, recovery shall be in the amount of actual damages or $50.00, whichever is greater. If the court finds that the method, act, or practice was a wilful violation, the court may assess a civil fine of not less than 3 times the actual damages, or $150.00, whichever is greater, and shall award reasonable attorney's fees and court costs incurred in connection with the action.",
+      "text_sha256": "0f65754aa42e554775de3f19a4bfff90bb2fbc2346abba919f655483e0489fe4",
+      "publisher_sha256": "9dfd591db37f876c6fdd0cea2d866278f89d0ca35f5c9be7143894c9a72f21e7",
+      "retrieved_at": "2026-11-20T17:26:26.633280+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1981-06-29"
     }
   },
   "fault_allocation": {

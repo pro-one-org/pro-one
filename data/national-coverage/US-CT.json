@@ -323,6 +323,18 @@
         "retrieved_at": "2026-11-20T16:35:17.050995+00:00",
         "sha256": "f8033276d6563ccdf4a8ee34b498405ec3090519f48ce97b0eb0845103c99a22"
       }
+    },
+    "US-CT:debtLaw:64aa8c86b1ee": {
+      "category": "debtLaw",
+      "title": "Conn. Gen. Stat. § 36a-646 (2025)",
+      "url": "https://www.cga.ct.gov/2025/pub/chap_669.htm",
+      "locator": "Conn. Gen. Stat. § 36a-646 (2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:26:26.809560+00:00",
+        "sha256": "2e249d87b267658dda0f0660b905932de802aa09b85723773d05476399821dc4"
+      }
     }
   },
   "court_directory": [
@@ -494,6 +506,18 @@
       "retrieved_at": "2026-11-20T16:35:17.050995+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "f897551207c16119fe7d8d43d1ef1d": {
+      "source_id": "US-CT:debtLaw:64aa8c86b1ee",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 36a-646 (2025)",
+      "text": "No creditor shall use any abusive, harassing, fraudulent, deceptive or misleading representation, device or practice to collect or attempt to collect any debt.",
+      "text_sha256": "1711fb8d5ff644c680bf41489ac456814d30eab4bfc886d0864c6555a30767f5",
+      "publisher_sha256": "2e249d87b267658dda0f0660b905932de802aa09b85723773d05476399821dc4",
+      "retrieved_at": "2026-11-20T17:26:26.809560+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 Connecticut General Statutes compilation"
     }
   },
   "fault_allocation": {

@@ -344,6 +344,18 @@
         "retrieved_at": "2026-11-20T16:35:17.575803+00:00",
         "sha256": "d4dc2f8191ec32b910b65f98bae1353d3f3cbf8b71edf75a80e87022445e72bd"
       }
+    },
+    "US-OK:wageLaw:632f5dc253de": {
+      "category": "wageLaw",
+      "title": "Okla. Stat. tit. 40, § 165.3(A)–(B)",
+      "url": "https://oksenate.gov/sites/default/files/2019-12/os40.pdf",
+      "locator": "Okla. Stat. tit. 40, § 165.3(A)–(B)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:27:35.114115+00:00",
+        "sha256": "0792c2e7714eae1611479043c9fd58bdcccf51ee55799a84f0ef7f1b7dd3ae7b"
+      }
     }
   },
   "court_directory": [
@@ -538,6 +550,18 @@
       "retrieved_at": "2026-11-20T16:35:17.575803+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "464eeca16c69410e3582b04513b738": {
+      "source_id": "US-OK:wageLaw:632f5dc253de",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 40, § 165.3(A)–(B)",
+      "text": "A. Whenever an employee's employment terminates, the employer shall pay the employee's wages in full, less offsets and less any amount over which a bona fide disagreement exists, as defined by Section 165.1 of this title, at the next regular designated payday established for the pay period in which the work was performed either through the regular pay channels or by certified mail postmarked within the deadlines herein specified if requested by the employee, unless provided otherwise by a collective bargaining agreement that covers the employee. B. If an employer fails to pay an employee wages as required under subsection A of this section, such employer shall be additionally liable to the employee for liquidated damages in the amount of two percent (2%) of the unpaid wages for each day upon which such failure shall continue after the day the wages were earned and due if the employer willfully withheld wages over which there was no bona fide disagreement; or in an amount equal to the unpaid wages, whichever is smaller; provided, however, that for the purpose of such liquidated damages such failure shall not be deemed to continue after the date of the filing of a petition in bankruptcy with respect to the employer if he thereafter shall have been adjudicated bankrupt upon such petition.",
+      "text_sha256": "438533acb53baca074f0a31e151d89d63bfb23f5c89907c6b77073b9a74fec88",
+      "publisher_sha256": "0792c2e7714eae1611479043c9fd58bdcccf51ee55799a84f0ef7f1b7dd3ae7b",
+      "retrieved_at": "2026-11-20T17:27:35.114115+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2005-11-01"
     }
   },
   "fault_allocation": {
