@@ -116,6 +116,29 @@ class NationalCoverageTests(unittest.TestCase):
         for change in ({"authority_as_of": "2026-11-18"}, {"topics": ["initial_response"]}):
             self.assertFalse(provider.search(query.model_copy(update=change)))
 
+    def test_michigan_distinguishes_civil_procedure_topics(self):
+        provider = RetainedLegislativeResearch()
+        matter = ResearchMatter(country="US", state="Michigan", legal_area="civil_procedure",
+                                authority_types=["court_rule"], authority_status="current",
+                                authority_as_of="2026-11-18")
+        for topic, expected in (
+            ("summons_issuance", {"MCR 2.102(A)"}),
+            ("service_of_process", {"MCR 2.105(A)"}),
+            ("proof_of_service", {"MCR 2.104(A)"}),
+            ("service_on_business_entities", {"MCR 2.105(D)", "MCR 2.105(H)"}),
+            ("initial_response", {"MCR 2.108(A)"}),
+            ("postmotion_response", {"MCR 2.108(C)"}),
+            ("pleading_contents", {"MCR 2.111(B)"}),
+            ("answer_contents", {"MCR 2.111(C)"}),
+        ):
+            with self.subTest(topic=topic):
+                query = matter.model_copy(update={"topics": [topic]})
+                citations = {provider.fetch(key).source["citation"]["preferred_citation"]
+                             for key in provider.search(query)}
+                self.assertEqual(citations, expected)
+                self.assertFalse(provider.search(query.model_copy(update={"state": "Indiana"})))
+                self.assertFalse(provider.search(query.model_copy(update={"authority_as_of": "2026-11-19"})))
+
     def test_indiana_rule_edition_binds_rule_text_and_keeps_proceedings_separate(self):
         record = manifest("US-IN")
         response = next(row for row in record["passages"].values() if row["citation"] == "Ind. Trial R. 6(D)")
