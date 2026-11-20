@@ -293,6 +293,30 @@
         "retrieved_at": "2026-11-20T22:30:36.564800+00:00",
         "sha256": "d86fd6e4449f7a6256b61c6e74daab8df843da6114118de244bbfad4d7df0971"
       }
+    },
+    "US-GA:debtLaw:7e51e1bda312": {
+      "category": "debtLaw",
+      "title": "2020 Ga. S.B. 462 § 2 (O.C.G.A. § 7-3-33)",
+      "url": "https://gov.georgia.gov/document/2020-signed-legislation/sb-462/download",
+      "locator": "2020 Ga. S.B. 462 § 2 (O.C.G.A. § 7-3-33)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:19:11.585233+00:00",
+        "sha256": "0eaa1e2ae364b0fe9d130bcd679c0d77bea0c12a810589d3a476a1cd68797305"
+      }
+    },
+    "US-GA:debtLaw:d9c76904431c": {
+      "category": "debtLaw",
+      "title": "2020 Ga. S.B. 462 § 10",
+      "url": "https://gov.georgia.gov/document/2020-signed-legislation/sb-462/download",
+      "locator": "2020 Ga. S.B. 462 § 10",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:19:11.585233+00:00",
+        "sha256": "0eaa1e2ae364b0fe9d130bcd679c0d77bea0c12a810589d3a476a1cd68797305"
+      }
     }
   },
   "court_directory": [
@@ -533,6 +557,30 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Georgia Code supplement incorporating the 2025 regular session"
+    },
+    "c15473406392d0ed12622f6f9a213c": {
+      "source_id": "US-GA:debtLaw:7e51e1bda312",
+      "authority_type": "statute",
+      "citation": "2020 Ga. S.B. 462 § 2 (O.C.G.A. § 7-3-33)",
+      "text": "No licensee or employee or agent thereof shall willfully use any unreasonable collection tactics. Unreasonable collection tactics shall include, but not be limited to, any conduct by the licensee or any employee or agent thereof which: (1) Causes the borrower or any member of his or her family to suffer bodily injury or physical harm; (2) Constitutes a willful or intentional trespass by force of the borrower's home or personal property without process of law; (3) Holds up the borrower to public ridicule or unreasonably degrades the borrower in the presence of neighbors or business associates; (4) Involves use of printed material which simulates or resembles a summons, warrant, or other legal process; or (5) Although otherwise lawful, occurs at an unreasonable hour of the night. Attempts to make collections by means of personal visits, telephone calls, and the like shall be deemed to occur at an unreasonable hour of the night if they occur between the hours of 10:00 P.M. and 5:00 A.M.",
+      "text_sha256": "9f6accb7439b630c517185629a617cfc21d1e72d8d407790be7abbb2ff271806",
+      "publisher_sha256": "0eaa1e2ae364b0fe9d130bcd679c0d77bea0c12a810589d3a476a1cd68797305",
+      "retrieved_at": "2026-11-20T23:19:11.585233+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Georgia enacted S.B. 462 (2020), Georgia Installment Loan Act"
+    },
+    "e73cc2140120ab04ed527ce4ae78d2": {
+      "source_id": "US-GA:debtLaw:d9c76904431c",
+      "authority_type": "statute",
+      "citation": "2020 Ga. S.B. 462 § 10",
+      "text": "This Act shall apply to all installment loan agreements entered into on and after July 1, 2020.",
+      "text_sha256": "2a47a4e04e5b71307fbab54b00f773d3dfff035b6f7cd17da176dadd0b28c09e",
+      "publisher_sha256": "0eaa1e2ae364b0fe9d130bcd679c0d77bea0c12a810589d3a476a1cd68797305",
+      "retrieved_at": "2026-11-20T23:19:11.585233+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Georgia enacted S.B. 462 (2020), Georgia Installment Loan Act"
     }
   },
   "fault_allocation": {

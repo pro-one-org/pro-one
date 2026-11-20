@@ -267,6 +267,42 @@
         "retrieved_at": "2026-11-20T17:57:54.533978+00:00",
         "sha256": "62bc0885f652522f8c914c0479d7d0a3baa7fc1b5953260e2a67225b1a2ce19e"
       }
+    },
+    "US-NM:debtLaw:81b3d8ff9d66": {
+      "category": "debtLaw",
+      "title": "2021 N.M. Laws ch. 31, § 2(G)",
+      "url": "https://www.nmlegis.gov/Sessions/21%20Regular/final/SB0071.pdf",
+      "locator": "2021 N.M. Laws ch. 31, § 2(G)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:19:58.255567+00:00",
+        "sha256": "fb90ef83bb60ab58e61aa5586f15ec3c86f75335aa22fa16907865f1cbb2b1a2"
+      }
+    },
+    "US-NM:debtLaw:89d1170b9ebe": {
+      "category": "debtLaw",
+      "title": "2021 N.M. Laws ch. 31, § 4(A)",
+      "url": "https://www.nmlegis.gov/Sessions/21%20Regular/final/SB0071.pdf",
+      "locator": "2021 N.M. Laws ch. 31, § 4(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:19:58.255567+00:00",
+        "sha256": "fb90ef83bb60ab58e61aa5586f15ec3c86f75335aa22fa16907865f1cbb2b1a2"
+      }
+    },
+    "US-NM:debtLaw:19cb9b83ed08": {
+      "category": "debtLaw",
+      "title": "2021 N.M. Laws ch. 31, § 13 (NMSA § 61-18A-26)",
+      "url": "https://www.nmlegis.gov/Sessions/21%20Regular/final/SB0071.pdf",
+      "locator": "2021 N.M. Laws ch. 31, § 13 (NMSA § 61-18A-26)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:19:58.255567+00:00",
+        "sha256": "fb90ef83bb60ab58e61aa5586f15ec3c86f75335aa22fa16907865f1cbb2b1a2"
+      }
     }
   },
   "court_directory": [
@@ -486,6 +522,45 @@
       "decision_date": "1995-04-26",
       "opinion_role": "majority",
       "procedural_posture": "Appeal of a judgment concerning compliance with the security-deposit return and accounting provisions of the Uniform Owner-Resident Relations Act. The court reversed."
+    },
+    "4ea8f1de900aef5baf74b7fcc9d739": {
+      "source_id": "US-NM:debtLaw:81b3d8ff9d66",
+      "authority_type": "statute",
+      "citation": "2021 N.M. Laws ch. 31, § 2(G)",
+      "text": "G. \"indigent patient\" means a patient with a household income that does not exceed two hundred percent of the federal poverty level;",
+      "text_sha256": "f794188879672f3739c47ada1970ea550035a268eee20495667ad6273ed41730",
+      "publisher_sha256": "fb90ef83bb60ab58e61aa5586f15ec3c86f75335aa22fa16907865f1cbb2b1a2",
+      "retrieved_at": "2026-11-20T23:19:58.255567+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Mexico Laws 2021, ch. 31, effective July 1, 2021",
+      "effective_from": "2021-07-01"
+    },
+    "06b091ba814ecef704501dc9c61efe": {
+      "source_id": "US-NM:debtLaw:89d1170b9ebe",
+      "authority_type": "statute",
+      "citation": "2021 N.M. Laws ch. 31, § 4(A)",
+      "text": "A. For patients who are determined to be indigent patients, charges for health care services and medical debt shall not be pursued through collection actions. All collection actions through which charges for health care services and medical debt are pursued shall be terminated upon the determination that a patient is an indigent patient. Health care facilities, third-party health care providers and medical creditors shall not hire or otherwise engage third parties to perform collection actions against or otherwise recover debts from indigent patients.",
+      "text_sha256": "443d2adc679966e4aab9c46eb45adc734215d0a8bddcd356f4c1e7d3200585e9",
+      "publisher_sha256": "fb90ef83bb60ab58e61aa5586f15ec3c86f75335aa22fa16907865f1cbb2b1a2",
+      "retrieved_at": "2026-11-20T23:19:58.255567+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Mexico Laws 2021, ch. 31, effective July 1, 2021",
+      "effective_from": "2021-07-01"
+    },
+    "8b8c6cd61b99d28cc9d2e00136c10a": {
+      "source_id": "US-NM:debtLaw:19cb9b83ed08",
+      "authority_type": "statute",
+      "citation": "2021 N.M. Laws ch. 31, § 13 (NMSA § 61-18A-26)",
+      "text": "Nothing in the Collection Agency Regulatory Act shall be construed to prevent collection agencies from taking assignments of claims in their own name as real parties in interest for the purpose of billing and collection and bringing suit in their own names; provided that no suit allowed by this section may be instituted on behalf of a collection agency in a court unless the collection agency appears by a duly authorized and licensed attorney-at-law.",
+      "text_sha256": "450da4f6c8fbd2c15c748e458aab20586137d45d2e3f1d88e2504b761ee8c935",
+      "publisher_sha256": "fb90ef83bb60ab58e61aa5586f15ec3c86f75335aa22fa16907865f1cbb2b1a2",
+      "retrieved_at": "2026-11-20T23:19:58.255567+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Mexico Laws 2021, ch. 31, effective July 1, 2021",
+      "effective_from": "2021-07-01"
     }
   },
   "fault_allocation": {
