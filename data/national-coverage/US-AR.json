@@ -300,6 +300,42 @@
         "retrieved_at": "2026-11-20T17:54:38.655753+00:00",
         "sha256": "309d3162c479b8e5b2c501fb90f7f2b0b4deca0eb160efd1a17701e33adeb440"
       }
+    },
+    "US-AR:debtLaw:f93fdcc364cf": {
+      "category": "debtLaw",
+      "title": "Ark. Code Ann. § 17-24-101",
+      "url": "https://labor.arkansas.gov/wp-content/uploads/ASBCA-statute-Ark-FDCPA-rev-2023.pdf",
+      "locator": "Ark. Code Ann. § 17-24-101",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:15:50.257783+00:00",
+        "sha256": "6f001e0a0ad4350bca31401305e569d436aef5706031da7d1b3bc73855ebbb3d"
+      }
+    },
+    "US-AR:debtLaw:c39cedb6d31d": {
+      "category": "debtLaw",
+      "title": "Ark. Code Ann. § 17-24-301",
+      "url": "https://labor.arkansas.gov/wp-content/uploads/ASBCA-statute-Ark-FDCPA-rev-2023.pdf",
+      "locator": "Ark. Code Ann. § 17-24-301",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:15:50.257783+00:00",
+        "sha256": "6f001e0a0ad4350bca31401305e569d436aef5706031da7d1b3bc73855ebbb3d"
+      }
+    },
+    "US-AR:debtLaw:dfb5da6db307": {
+      "category": "debtLaw",
+      "title": "Ark. Code Ann. § 17-24-507(a), (b)(1)",
+      "url": "https://labor.arkansas.gov/wp-content/uploads/ASBCA-statute-Ark-FDCPA-rev-2023.pdf",
+      "locator": "Ark. Code Ann. § 17-24-507(a), (b)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:15:50.257783+00:00",
+        "sha256": "6f001e0a0ad4350bca31401305e569d436aef5706031da7d1b3bc73855ebbb3d"
+      }
     }
   },
   "court_directory": [
@@ -519,6 +555,42 @@
       "decision_date": "2024-05-22",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from a grant of summary judgment on negligence claims arising from a collision with a tractor trailer. The court affirmed."
+    },
+    "6d32b87d97661ca7d0ff6c7a9f2a6e": {
+      "source_id": "US-AR:debtLaw:f93fdcc364cf",
+      "authority_type": "statute",
+      "citation": "Ark. Code Ann. § 17-24-101",
+      "text": "As used in this chapter, unless the context otherwise requires, “collection agency” means any person, partnership, corporation, association, limited liability corporation, or firm that: (1) Engages in the collection of delinquent accounts, bills, or other forms of indebtedness owed or due or asserted to be owed or due to another; (2) Uses a fictitious name or any name other than its own to collect its own accounts receivable; (3) Solicits claims for collection; or (4) Purchases and attempts to collect delinquent accounts or bills.",
+      "text_sha256": "628a34b59e0336b2e08825e3a9af21196af00456de0df9fb95c6a0be61119e41",
+      "publisher_sha256": "6f001e0a0ad4350bca31401305e569d436aef5706031da7d1b3bc73855ebbb3d",
+      "retrieved_at": "2026-11-20T23:15:50.257783+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas State Board of Collection Agencies code compilation, through the 2023 session"
+    },
+    "1c5a3e3f3f45c6bdddfdca09c38a90": {
+      "source_id": "US-AR:debtLaw:c39cedb6d31d",
+      "authority_type": "statute",
+      "citation": "Ark. Code Ann. § 17-24-301",
+      "text": "Unless licensed by the State Board of Collection Agencies under this subchapter it is unlawful to: (1) Engage in the collection of delinquent accounts, bills, or other forms of indebtedness; (2) Use a fictitious name or any name other than their own in the collection of their own accounts receivable; (3) Solicit claims for collection; or (4) Purchase and attempt to collect delinquent accounts or bills.",
+      "text_sha256": "282a87ac029e52afe4d806762b177c600072a1656ac101584f5a0c74a4a85443",
+      "publisher_sha256": "6f001e0a0ad4350bca31401305e569d436aef5706031da7d1b3bc73855ebbb3d",
+      "retrieved_at": "2026-11-20T23:15:50.257783+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas State Board of Collection Agencies code compilation, through the 2023 session"
+    },
+    "89b707dbd4572468414e882d1ed2ea": {
+      "source_id": "US-AR:debtLaw:dfb5da6db307",
+      "authority_type": "statute",
+      "citation": "Ark. Code Ann. § 17-24-507(a), (b)(1)",
+      "text": "(a) A debt collector may not use unfair or unconscionable means to collect or attempt to collect a debt. (b) Without limiting the general application of subsection (a) of this section, the following actions of a debt collector violate this section: (1) The collection of an amount, including interest, a fee, a charge, or an expense incidental to the principal obligation unless the amount is expressly authorized by the agreement creating the debt or permitted by law;",
+      "text_sha256": "cfc7e5e3aa5337ede8ae02434185cc3beb69ab55ed3d3fb161cc76ab9b95f644",
+      "publisher_sha256": "6f001e0a0ad4350bca31401305e569d436aef5706031da7d1b3bc73855ebbb3d",
+      "retrieved_at": "2026-11-20T23:15:50.257783+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas State Board of Collection Agencies code compilation, through the 2023 session"
     }
   },
   "fault_allocation": {

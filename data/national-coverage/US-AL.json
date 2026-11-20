@@ -400,6 +400,30 @@
         "retrieved_at": "2026-11-20T22:39:55.679252+00:00",
         "sha256": "ded816776a4dcacad06302f5d12ed65eae6a2b4cddd3a289daa4efadc216ebea"
       }
+    },
+    "US-AL:debtLaw:4002a3920eac": {
+      "category": "debtLaw",
+      "title": "Ala. Code § 5-19-8",
+      "url": "https://banking.alabama.gov/wp-content/uploads/2023/08/AL_MC_Act.pdf",
+      "locator": "Ala. Code § 5-19-8",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:15:49.664426+00:00",
+        "sha256": "8199ad6549783bb5f96fccda093eb1c11e7f2914770890c1883e9d3465b30fc9"
+      }
+    },
+    "US-AL:debtLaw:174fa31d998b": {
+      "category": "debtLaw",
+      "title": "Ala. Code § 5-19-10",
+      "url": "https://banking.alabama.gov/wp-content/uploads/2023/08/AL_MC_Act.pdf",
+      "locator": "Ala. Code § 5-19-10",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:15:49.664426+00:00",
+        "sha256": "8199ad6549783bb5f96fccda093eb1c11e7f2914770890c1883e9d3465b30fc9"
+      }
     }
   },
   "court_directory": [
@@ -728,6 +752,28 @@
       "language": "en",
       "edition": "Alabama enacted Act 2016-18, effective February 25, 2016",
       "effective_from": "2016-02-25"
+    },
+    "b4dbf8174f8069fd5e29bef0e01339": {
+      "source_id": "US-AL:debtLaw:4002a3920eac",
+      "authority_type": "statute",
+      "citation": "Ala. Code § 5-19-8",
+      "text": "With respect to a consumer credit sale, an assignee of the rights of the seller is subject to all claims and defenses of the buyer against the seller arising out of the sale, notwithstanding an agreement to the contrary, but the assignee's liability under this section may not exceed the amount owing to the assignee at the time the claim or defense is asserted against the assignee. Rights of the buyer under this section can only be asserted as a matter of defense to or setoff against a claim by the assignee.",
+      "text_sha256": "2075eb6199883a6b5e8381236f56eed2a480ceb508b70ca9f2112baf25c61d99",
+      "publisher_sha256": "8199ad6549783bb5f96fccda093eb1c11e7f2914770890c1883e9d3465b30fc9",
+      "retrieved_at": "2026-11-20T23:15:49.664426+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "ca4f595c40106252d6e101f7e90ac2": {
+      "source_id": "US-AL:debtLaw:174fa31d998b",
+      "authority_type": "statute",
+      "citation": "Ala. Code § 5-19-10",
+      "text": "A contract for a consumer credit transaction with an original amount financed not exceeding three hundred dollars ($300) may not provide for payment by the debtor of attorney's fees after default by the debtor. A contract for a consumer credit transaction with an original amount financed exceeding three hundred dollars ($300) may provide for the payment by the debtor of reasonable attorney's fees not exceeding 15 percent of the unpaid debt after default and referral of the contract to an attorney who is not a salaried employee of the creditor. An open-end credit plan may not provide for attorney's fees when the unpaid balance does not exceed three hundred dollars ($300), but may provide for reasonable attorney's fees after default by the debtor when the unpaid balance exceeds three hundred dollars ($300). In a consumer credit transaction contract where the original amount financed exceeds ten thousand dollars ($10,000) or the credit transaction is secured by real property, the creditor may require the payment by the debtor of attorney's fees prior to default by the debtor in connection with the closing of, amendment to, or modification of the credit transaction, provided that the attorney is not a salaried employee of the creditor.",
+      "text_sha256": "66fd482958ff7f6ac7e6e149f13ba6c3c7bc1bd9a7eb7b1c6a8eab5a4f289676",
+      "publisher_sha256": "8199ad6549783bb5f96fccda093eb1c11e7f2914770890c1883e9d3465b30fc9",
+      "retrieved_at": "2026-11-20T23:15:49.664426+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {
