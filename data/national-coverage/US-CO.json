@@ -321,6 +321,18 @@
         "retrieved_at": "2026-11-20T17:37:35.427630+00:00",
         "sha256": "89aa1dc1621cc1a0ac1a25a1c0d3c4df30e7064f35d17b7559da498606af9f04"
       }
+    },
+    "US-CO:deposit:b95a5ef4f22f": {
+      "category": "deposit",
+      "title": "Colo. H.B. 25-1249, § 3 (Colo. Rev. Stat. § 38-12-103(1)(a))",
+      "url": "https://leg.colorado.gov/bill_files/40829/download",
+      "locator": "Colo. H.B. 25-1249, § 3 (Colo. Rev. Stat. § 38-12-103(1)(a))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:21:55.148269+00:00",
+        "sha256": "b6a26aff3ae01fb4910f1e3b4726f351f8f73c49cf637e6232492cf2e49406a3"
+      }
     }
   },
   "court_directory": [
@@ -548,6 +560,19 @@
       "currentness": "historical",
       "language": "en",
       "edition": "2024 Colorado Revised Statutes uncertified printout"
+    },
+    "e81abc20e73226d9e3414608f201dc": {
+      "source_id": "US-CO:deposit:b95a5ef4f22f",
+      "authority_type": "statute",
+      "citation": "Colo. H.B. 25-1249, § 3 (Colo. Rev. Stat. § 38-12-103(1)(a))",
+      "text": "(1) (a) A landlord shall, within thirty days after the termination of a lease or surrender of a premises, whichever occurs last, return to the tenant the full security deposit deposited with the landlord by the tenant, unless the lease agreement specifies a longer period of time, but not to exceed sixty days. A landlord shall not retain the security deposit to cover normal wear and tear or for any damage or defective condition that preexisted the tenancy. If a tenant terminates the lease pursuant to section 38-12-402 (2)(a) and provides the documentation required pursuant to section 38-12-402 (2)(a.5), the tenant is not liable for damage to the dwelling unit caused by the responsible party or during the course of an incident of unlawful sexual behavior, stalking, domestic violence, or domestic abuse, and any amount of money that the landlord retains from the security deposit must comply with section 38-12-402 (2)(b). In the event that actual cause exists for retaining any portion of the security deposit, the landlord shall provide the tenant with a written statement listing the exact reasons for the retention of any portion of the security deposit. When the landlord delivers the statement, the landlord shall also deliver the difference between any sum deposited and the amount retained, along with any relevant documentation required by subsection (8) of this section. A landlord is deemed to have complied with this requirement by sending the statement, any required payment, and any required documentation to the last-known address of the tenant or to any email address for the tenant that the landlord has actual notice of by sending any required payment to the tenant in accordance with subsection (10) of this section.",
+      "text_sha256": "ad1390c8b70e4cf82e2a01fc3056a0516d308c24e4f96463e828ae9e642cf6cb",
+      "publisher_sha256": "b6a26aff3ae01fb4910f1e3b4726f351f8f73c49cf637e6232492cf2e49406a3",
+      "retrieved_at": "2026-11-20T18:21:55.148269+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Colorado signed H.B. 25-1249, § 3 (operative branch because H.B. 25-1168 became law)",
+      "effective_from": "2026-01-01"
     }
   },
   "fault_allocation": {

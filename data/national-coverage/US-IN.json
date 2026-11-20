@@ -415,6 +415,18 @@
         "retrieved_at": "2026-11-20T18:05:11.174633+00:00",
         "sha256": "e638220f4db721c4c9343e71adcde61dfc4a7975ab592919dfddad48886a859e"
       }
+    },
+    "US-IN:deposit:412f2ff9c6f4": {
+      "category": "deposit",
+      "title": "Wang v. Sun, No. 22A-SC-1473, ¶ 23 (Ind. Ct. App. June 23, 2023)",
+      "url": "https://public.courts.in.gov/Decisions/api/Document/Opinion?Id=lg1RQHfURjPKh0UZHaTg2rLELnpnGSfoSmVk-ydJE5KM7Cx0tRLyZdHH4pSP8Jxu0",
+      "locator": "Wang v. Sun, No. 22A-SC-1473, ¶ 23 (Ind. Ct. App. June 23, 2023)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:21:54.266785+00:00",
+        "sha256": "59cc747b25f94cd4673ccbda1af01530841ef85bdc9eb7ac6934d5af2d5b2961"
+      }
     }
   },
   "court_directory": [
@@ -799,6 +811,22 @@
       "publisher_path": "9c04a4fb31dea283659c8e9bad22a9b47f99ec4ceacbe5a6eee1b15db219a02a",
       "edition": "Indiana Small Claims Rules. Updated, Effective January 1, 2025.",
       "effective_from": "2022-01-01"
+    },
+    "69b2cb80942b8bccca47e696d68aeb": {
+      "source_id": "US-IN:deposit:412f2ff9c6f4",
+      "authority_type": "opinion",
+      "citation": "Wang v. Sun, No. 22A-SC-1473, ¶ 23 (Ind. Ct. App. June 23, 2023)",
+      "text": "(a) Upon termination of a rental agreement, a landlord shall return to the tenant the security deposit minus any amount applied to: (1) the payment of accrued rent; (2) the amount of damages that the landlord has suffered or will reasonably suffer by reason of the tenant’s noncompliance with law or the rental agreement; and (3) unpaid utility or sewer charges that the tenant is obligated to pay under the rental agreement; all as itemized by the landlord with the amount due in a written notice that is delivered to the tenant not more than forty-five (45) days after termination of the rental agreement and delivery of possession. . . . (b) If a landlord fails to comply with subsection (a), a tenant may recover all of the security deposit due the tenant and reasonable attorney’s fees.",
+      "text_sha256": "5223aee3188c467f1684ef851f6d14587d6c58d71a739da47e5dba78c00e897c",
+      "publisher_sha256": "59cc747b25f94cd4673ccbda1af01530841ef85bdc9eb7ac6934d5af2d5b2961",
+      "retrieved_at": "2026-11-20T18:21:54.266785+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2023-06-23",
+      "court": "Court of Appeals of Indiana",
+      "decision_date": "2023-06-23",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal and cross-appeal from a small-claims judgment on both parties’ rental-agreement claims. The court affirmed in part and reversed in part."
     }
   },
   "fault_allocation": {

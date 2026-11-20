@@ -300,6 +300,30 @@
         "retrieved_at": "2026-11-19T19:43:00.395175+00:00",
         "sha256": "1ba10e3c3b739764550125119ccd1b08940563837abfd6905722f67ae6ff9420"
       }
+    },
+    "US-SD:deposit:8801bec9048a": {
+      "category": "deposit",
+      "title": "S.D. Codified Laws § 43-32-24 (version incorporating 2026 S.D. Sess. Laws ch. 179)",
+      "url": "https://sdlegislature.gov/api/Statutes/43-32.html?all=true",
+      "locator": "S.D. Codified Laws § 43-32-24 (version incorporating 2026 S.D. Sess. Laws ch. 179)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:24:17.612218+00:00",
+        "sha256": "5bfb260f37ace0cc434cd9a9e6d442ce90957b981133e868dc10781f21b655be"
+      }
+    },
+    "US-SD:small_claims:f52690fd33ef": {
+      "category": "small_claims",
+      "title": "S.D. Codified Laws § 16-12C-13 (uncontested clerk-magistrate jurisdiction)",
+      "url": "https://sdlegislature.gov/api/Statutes/16-12C.html?all=true",
+      "locator": "S.D. Codified Laws § 16-12C-13 (uncontested clerk-magistrate jurisdiction)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:24:17.524122+00:00",
+        "sha256": "383ccd37b11fead6031f3015f96cfac366d10a89ffa466064a666e70676daf16"
+      }
     }
   },
   "court_directory": [
@@ -487,6 +511,28 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "South Dakota Circuit Court"
+    },
+    "bd83cce09cf079730d911f9b2618cf": {
+      "source_id": "US-SD:deposit:8801bec9048a",
+      "authority_type": "statute",
+      "citation": "S.D. Codified Laws § 43-32-24 (version incorporating 2026 S.D. Sess. Laws ch. 179)",
+      "text": "Every lessor of residential premises shall, within twenty-one days after the termination of the tenancy and receipt of the tenant's mailing address or delivery instructions, return the security deposit described in § 43-32-6.1 to the tenant or furnish to the tenant a written statement showing the specific reason for withholding the deposit, or any portion of the deposit. The lessor may withhold from the deposit only the amounts reasonably necessary to: (1) Remedy tenant defaults in the payment of: (a) Rent; and(b) Other funds due to the landlord pursuant to an agreement; and(2) Restore the premises to their condition at the commencement of the tenancy, ordinary wear and tear excepted. Within forty-five days after termination of the tenancy, upon request of the lessee, the lessor must provide the lessee with an itemized accounting of any deposit withheld. Any lessor of residential premises who fails to comply with this section forfeits all rights to withhold any portion of the deposit. The bad faith retention of a deposit, or any portion of a deposit, by a lessor of residential premises, in violation of this section, or the bad faith failure to provide the written statement or itemized accounting, as required by this section, subjects the lessor to punitive damages not to exceed two hundred dollars.",
+      "text_sha256": "1667b3656974c629ff1597aa72ea4257ac2d463b8e2f627640a8f77f0457382e",
+      "publisher_sha256": "5bfb260f37ace0cc434cd9a9e6d442ce90957b981133e868dc10781f21b655be",
+      "retrieved_at": "2026-11-20T18:24:17.612218+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "80b7907dfac4f8300f5dfcbdb4d90a": {
+      "source_id": "US-SD:small_claims:f52690fd33ef",
+      "authority_type": "statute",
+      "citation": "S.D. Codified Laws § 16-12C-13 (uncontested clerk-magistrate jurisdiction)",
+      "text": "A magistrate court with a clerk magistrate presiding has concurrent jurisdiction with the circuit courts, in noncontested civil actions or noncontested small claims proceedings where the amount of money or damage does not exceed twelve thousand dollars, to take the necessary evidence and to enter a judgment.",
+      "text_sha256": "0da3dda6e720ed11373bfc517fb7a50f4befef3a1f024d389b00a9dc1a70af52",
+      "publisher_sha256": "383ccd37b11fead6031f3015f96cfac366d10a89ffa466064a666e70676daf16",
+      "retrieved_at": "2026-11-20T18:24:17.524122+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

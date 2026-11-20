@@ -326,6 +326,18 @@
         "retrieved_at": "2026-11-20T18:12:28.237074+00:00",
         "sha256": "e6ad43857748e803629d82d9830273e53def9b002feb0ba1f684d073de3acecc"
       }
+    },
+    "US-HI:deposit:9d53b41287a4": {
+      "category": "deposit",
+      "title": "Haw. Rev. Stat. § 521-44(c)–(d)",
+      "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol12_Ch0501-0588/HRS0521/HRS_0521-0044.htm",
+      "locator": "Haw. Rev. Stat. § 521-44(c)–(d)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:21:54.111047+00:00",
+        "sha256": "ae922259fe854bdf5825060ee99b8b68495e9051afd0b1275987a65ae0f9dc89"
+      }
     }
   },
   "court_directory": [
@@ -537,6 +549,17 @@
       "decision_date": "2014-11-13",
       "procedural_posture": "Certiorari review of summary judgment on a negligence claim about county maintenance of property records.",
       "opinion_role": "majority"
+    },
+    "dd15719bfba6b8864af7ce6f340fd3": {
+      "source_id": "US-HI:deposit:9d53b41287a4",
+      "authority_type": "statute",
+      "citation": "Haw. Rev. Stat. § 521-44(c)–(d)",
+      "text": "(c) At the termination of a rental agreement in which the landlord required and received a security deposit if the landlord proposes to retain any amount of the security deposit for any of the purposes specified in subsection (a), the landlord shall so notify the tenant, in writing, unless the tenant had wrongfully quit the dwelling unit, together with the particulars of and grounds for the retention, including written evidence of the costs of remedying tenant defaults, such as estimates or invoices for material and services or of the costs of cleaning, such as receipts for supplies and equipment or charges for cleaning services. The security deposit, or the portion of the security deposit remaining after the landlord has claimed and retained amounts authorized under this section, if any, shall be returned to the tenant not later than fourteen days after the termination of the rental agreement. If the landlord does not furnish the tenant with the written notice and other information required by this subsection, within fourteen days after the termination of the rental agreement, the landlord shall not be entitled to retain the security deposit or any part of it, and the landlord shall return the entire amount of the security deposit to the tenant. A return of the security deposit or the furnishing of the written notice and other required information in compliance with the requirements of this subsection shall be presumptively proven if mailed to the tenant, at an address supplied to the landlord by the tenant, with acceptable proof of mailing and postmarked before midnight of the fourteenth day after the date of the termination of the rental agreement or if there is an acknowledgment by the tenant of receipt within the fourteen-day limit. All actions for the recovery of a landlord's complete or partial retention of the security deposit shall be instituted not later than one year after termination of the rental agreement. (d) For the purposes of this section if a tenant is absent from the dwelling unit for a continuous period of twenty days or more without written notice to the landlord the tenant shall be deemed to have wrongfully quit the dwelling unit; provided that the tenant shall not be considered to be absent from the dwelling unit without notice to the landlord during any period for which the landlord has received payment of rent. In addition to any other right or remedy the landlord has with respect to such a tenant the landlord may retain the entire amount of any security deposit the landlord has received from or on behalf of such tenant.",
+      "text_sha256": "03020bb7c7e27a094765ab9ce773ab5c17ec8cee8a3d141a53fcc3f91adff867",
+      "publisher_sha256": "ae922259fe854bdf5825060ee99b8b68495e9051afd0b1275987a65ae0f9dc89",
+      "retrieved_at": "2026-11-20T18:21:54.111047+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {
