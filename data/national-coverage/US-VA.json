@@ -423,6 +423,18 @@
         "retrieved_at": "2026-11-20T16:01:53.114073+00:00",
         "sha256": "88c3edf1b34fde22467046db7423498f71d586461060cf2a5644c9c04a86f81c"
       }
+    },
+    "US-VA:negligence_elements:776b0f802607": {
+      "category": "negligence_elements",
+      "title": "Al-Saray v. Furr, Record No. 230488 (Va. Jan. 16, 2025)",
+      "url": "https://www.vacourts.gov/static/opinions/opnscvwp/1230488.pdf",
+      "locator": "Al-Saray v. Furr, Record No. 230488 (Va. Jan. 16, 2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:46:43.464073+00:00",
+        "sha256": "bb946bbe0039a0a55ddfae3828ac14c669d6d43b45f977a8bef67980072d2a69"
+      }
     }
   },
   "court_directory": [
@@ -683,6 +695,22 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Virginia courts governed by Title 8.01"
+    },
+    "4a898fe2275e25beb11a27c8d8800c": {
+      "source_id": "US-VA:negligence_elements:776b0f802607",
+      "authority_type": "opinion",
+      "citation": "Al-Saray v. Furr, Record No. 230488 (Va. Jan. 16, 2025)",
+      "text": "“The elements of an action in negligence are a legal duty on the part of the defendant, breach of that duty, and a showing that such breach was the proximate cause of injury, resulting in damage to the plaintiff.” Blue Ridge Serv. Corp. v. Saxon Shoes, Inc., 271 Va. 206, 218 (2006).",
+      "text_sha256": "0a82d635380048ca4b14ca56345bc9eb89eecad8fd0239c7c006a0908b80a051",
+      "publisher_sha256": "bb946bbe0039a0a55ddfae3828ac14c669d6d43b45f977a8bef67980072d2a69",
+      "retrieved_at": "2026-11-20T17:46:43.464073+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2025-01-16",
+      "court": "Supreme Court of Virginia",
+      "decision_date": "2025-01-16",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of an appellate decision reversing a judgment on a negligence verdict arising from a motor-vehicle collision."
     }
   },
   "fault_allocation": {

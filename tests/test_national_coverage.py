@@ -170,6 +170,17 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertIn("Monday next after the expiration of twenty days", provider.fetch(district).text)
         self.assertFalse(provider.search(query.model_copy(update={"court": "Texas district and county courts"})))
 
+    def test_florida_minimum_wage_amendment_preserves_constitutional_authority_type(self):
+        query = ResearchMatter(country="US", state="Florida", legal_area="employment",
+                               topics=["wage_payment"], authority_types=["constitution"])
+        provider = RetainedLegislativeResearch()
+        key, = provider.search(query)
+        doc = provider.fetch(key)
+        self.assertEqual(doc.source["source_type"], "constitution")
+        self.assertIn("September 30th, 2026", doc.text)
+        self.assertFalse(provider.search(query.model_copy(update={"authority_types": ["statute"]})))
+        self.assertFalse(provider.search(query.model_copy(update={"state": "Georgia"})))
+
     def test_historical_negligence_elements_do_not_supply_fault_or_present_law(self):
         query = ResearchMatter(country="US", state="Alabama", legal_area="torts",
                                topics=["negligence_elements"], authority_types=["opinion"],

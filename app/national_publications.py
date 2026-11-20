@@ -19,7 +19,8 @@ class LegislativeExcerpts:
         record = manifest(jurisdiction)
         hosts = sorted({urlsplit(record["sources"][p["source_id"]]["url"]).hostname
                         for p in record.get("passages", {}).values() if p["authority_type"] == authority_type})
-        prefix = {"statute": "legislative_excerpts_", "court_rule": "court_rule_excerpts_",
+        prefix = {"statute": "legislative_excerpts_", "constitution": "constitutional_excerpts_",
+                  "court_rule": "court_rule_excerpts_",
                   "opinion": "judicial_opinion_excerpts_"}[authority_type]
         self.source = Source(
             name=prefix + jurisdiction.lower().replace("-", "_"),
@@ -59,11 +60,17 @@ class LegislativeExcerpts:
         owner = registry()[self.jurisdiction]
         retrieved = date.fromisoformat(row["retrieved_at"][:10])
         publisher = urlsplit(source["url"]).hostname
+        namespace = {
+            "statute": "legislative_publication",
+            "constitution": "constitutional_publication",
+            "court_rule": "judicial_publication",
+            "opinion": "judicial_publication",
+        }[self.source.authority_type]
         day, basis = (certified_basis(owner.id, source["url"], row["publisher_sha256"], row["publisher_path"], citation, row["text"])
                       if row["currentness"] == "current_as_of" else (None, None))
         version = AuthorityVersion(
             jurisdiction=owner.id, sovereign=owner.kind, authority_type=self.source.authority_type,
-            identity_namespace="legislative_publication" if self.source.authority_type == "statute" else "judicial_publication",
+            identity_namespace=namespace,
             identity_key=citation,
             title=citation, citation=citation,
             edition=row.get("edition", f"publisher capture {retrieved.isoformat()}"),

@@ -243,6 +243,18 @@
         "retrieved_at": "2026-11-20T16:23:37.914951+00:00",
         "sha256": "92605b8bfadc32a956fe144aea5bc9b3a6a0cb93248af9270983ec7bc781beac"
       }
+    },
+    "US-NM:wageLaw:2a3894ffb8f4": {
+      "category": "wageLaw",
+      "title": "N.M. Stat. Ann. § 50-4-4(A)–(C)",
+      "url": "https://www.env.nm.gov/wp-content/uploads/sites/18/2021/01/NM-OSH-Act.pdf",
+      "locator": "N.M. Stat. Ann. § 50-4-4(A)–(C)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:48:15.139513+00:00",
+        "sha256": "1b4ffd29a04cc7661ecd467d23a3e47fd955e98c95759f9fc0453822504f9916"
+      }
     }
   },
   "court_directory": [
@@ -435,6 +447,17 @@
       "decision_date": "1993-06-14",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from a jury verdict for a discharged employee. The court reversed and ordered judgment for the employer. The retained rule is limited to implied-in-fact employment terms."
+    },
+    "eda60c3a2349dbf70e3a2c94973532": {
+      "source_id": "US-NM:wageLaw:2a3894ffb8f4",
+      "authority_type": "statute",
+      "citation": "N.M. Stat. Ann. § 50-4-4(A)–(C)",
+      "text": "A. Whenever an employer discharges an employee, the unpaid wages or compensation of such employee, if a fixed and definite amount, and not based on a task, piece, commission basis or other method of calculation, shall, upon demand become due immediately, and the employer shall pay such wages to the employee within five days of such discharge. B. In all other cases of discharged employees the settlement and payment of wages or compensation shall be made within ten days of such discharge. C. In case of failure to pay wages or compensation due an employee within the time hereinbefore fixed, the wages and compensation of the employee shall continue from the date of discharge until paid at the same rate the employee received at the time of discharge, and may be recovered in a civil action brought by the employee; provided that the employee shall not be entitled to recover any wages or compensation for any period subsequent to the date of discharge unless he pleads in his complaint and establishes that he made demand within a reasonable time upon his employer at the place designated for payment and payment was refused, provided further that the employee shall not be entitled to recover any wages or compensation for any period subsequent to the sixtieth day after the date of discharge.",
+      "text_sha256": "d86d5d89b7b5ff88db636218d61404dea1964fe4476cae67251a1614c1e04c3e",
+      "publisher_sha256": "1b4ffd29a04cc7661ecd467d23a3e47fd955e98c95759f9fc0453822504f9916",
+      "retrieved_at": "2026-11-20T17:48:15.139513+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

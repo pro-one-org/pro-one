@@ -233,6 +233,18 @@
         "retrieved_at": "2026-11-20T16:29:35.191438+00:00",
         "sha256": "f1fc4f45d8c665b3180be42133721febeabd59a03153409291b8f6cc2a2f82c9"
       }
+    },
+    "US-GA:wageLaw:36e79acb90ca": {
+      "category": "wageLaw",
+      "title": "O.C.G.A. § 34-7-2(b) (2025 Supp.)",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t34-%28v26%29-pdf.pdf",
+      "locator": "O.C.G.A. § 34-7-2(b) (2025 Supp.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:48:14.858573+00:00",
+        "sha256": "fbb5a8d0f75f1ce65d020b875a57c31f1ad66e959e69cb8832aae92e01dffecb"
+      }
     }
   },
   "court_directory": [
@@ -407,6 +419,19 @@
       "currentness": "historical",
       "language": "en",
       "edition": "2025 Georgia Code supplement incorporating the 2025 regular session"
+    },
+    "7e0b3ff14e93ba781544b0f8eef48e": {
+      "source_id": "US-GA:wageLaw:36e79acb90ca",
+      "authority_type": "statute",
+      "citation": "O.C.G.A. § 34-7-2(b) (2025 Supp.)",
+      "text": "(b) Every person, firm, or corporation, including steam and electric railroads, but not including farming, sawmill, and turpentine industries, employing skilled or unskilled wageworkers in manual, mechanical, or clerical labor, including all employees except officials, superintendents, or other heads or subheads of departments who may be employed by the month or year at stipulated salaries, shall, upon the discretion of such person, firm, or corporation, make wage and salary payments to such employees or to their authorized representatives: (1) By lawful money of the United States; (2) By check; (3) By credit to a payroll card account; or (4) With the consent of the employee, by authorization of electronic credit transfer to his or her account with a bank, trust company, or other financial institution authorized by the United States or one of the several states to receive deposits in the United States. Such payments shall be made on such dates during the month as may be decided upon by such person, firm, or corporation; provided, however, that the dates so selected shall be such that the month will be divided into at least two equal periods; and provided, further, that the payments made on each such date shall in every case correspond to the full net amount of wages or earnings due the employees for the period for which the payment is made.",
+      "text_sha256": "9a0ac586d2a800d662d0294eecaf36f0d93bbb3063d82a93478983c4bd5fcdcb",
+      "publisher_sha256": "fbb5a8d0f75f1ce65d020b875a57c31f1ad66e959e69cb8832aae92e01dffecb",
+      "retrieved_at": "2026-11-20T17:48:14.858573+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 Georgia Code supplement incorporating the 2025 regular session",
+      "effective_from": "2019-05-06"
     }
   },
   "fault_allocation": {

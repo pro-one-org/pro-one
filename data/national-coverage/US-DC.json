@@ -203,6 +203,18 @@
         "retrieved_at": "2026-11-20T15:13:14.241699+00:00",
         "sha256": "fdf1ec3c4161bffa2d906a38ab467bb9ba61c9010c576de5a8a442e0884f7d8b"
       }
+    },
+    "US-DC:small_claims:fd230d7129c6": {
+      "category": "small_claims",
+      "title": "D.C. Code § 11–1321",
+      "url": "https://code.dccouncil.gov/us/dc/council/code/sections/11-1321",
+      "locator": "D.C. Code § 11–1321",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:46:44.044336+00:00",
+        "sha256": "ff19187ccd0055b5cafb4a77b73c51d613a9ec8fc2187bd0d163369ec4522206"
+      }
     }
   },
   "court_directory": [
@@ -322,6 +334,18 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "2021-03-16"
+    },
+    "e3be685bf71f4257f17ec5e6c52025": {
+      "source_id": "US-DC:small_claims:fd230d7129c6",
+      "authority_type": "statute",
+      "citation": "D.C. Code § 11–1321",
+      "text": "The Small Claims and Conciliation Branch has exclusive jurisdiction of any action within the jurisdiction of the Superior Court which is only for the recovery of money, if the amount in controversy does not exceed $10,000, exclusive of interest, attorney fees, protest fees, and costs. An action which affects an interest in real property may not be brought in the Branch. If a counterclaim, cross claim, or any other claim or any defense, affecting an interest in real property, is made in an action brought in the Branch, the action shall be certified to the Civil Division.",
+      "text_sha256": "1d18521068e8dc5ce3cdcc303447e3843f0ee10d8df83a4fee8cf72f38bc3d35",
+      "publisher_sha256": "ff19187ccd0055b5cafb4a77b73c51d613a9ec8fc2187bd0d163369ec4522206",
+      "retrieved_at": "2026-11-20T17:46:44.044336+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2016-12-14"
     }
   },
   "fault_allocation": {

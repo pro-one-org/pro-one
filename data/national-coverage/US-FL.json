@@ -361,6 +361,30 @@
         "retrieved_at": "2026-11-20T16:35:16.842201+00:00",
         "sha256": "22f8337df3bfa596706fbf606c001b03dc7834e6de781879a2a910195a52f3d4"
       }
+    },
+    "US-FL:wageLaw:45b27080bba7": {
+      "category": "wageLaw",
+      "title": "Fla. Const. art. X, § 24(c)",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?submenu=3",
+      "locator": "Fla. Const. art. X, § 24(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:51:44.469893+00:00",
+        "sha256": "b41032dc1bd2b887e94f1f319498c04c7ccdd6dc0f56cc337c1dce2a0ca37efa"
+      }
+    },
+    "US-FL:wage_enforcement:eb6bede41704": {
+      "category": "wage_enforcement",
+      "title": "Fla. Const. art. X, § 24(e)",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?submenu=3",
+      "locator": "Fla. Const. art. X, § 24(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:51:44.469893+00:00",
+        "sha256": "b41032dc1bd2b887e94f1f319498c04c7ccdd6dc0f56cc337c1dce2a0ca37efa"
+      }
     }
   },
   "court_directory": [
@@ -591,6 +615,28 @@
       "text_sha256": "b046df6a654f9a4c19e3396819843eb66990dbc928b8cc77e582cb6f729d727f",
       "publisher_sha256": "22f8337df3bfa596706fbf606c001b03dc7834e6de781879a2a910195a52f3d4",
       "retrieved_at": "2026-11-20T16:35:16.842201+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "6204525df68d8f0f8242aaf8bf7539": {
+      "source_id": "US-FL:wageLaw:45b27080bba7",
+      "authority_type": "constitution",
+      "citation": "Fla. Const. art. X, § 24(c)",
+      "text": "(c) MINIMUM WAGE. Employers shall pay Employees Wages no less than the Minimum Wage for all hours worked in Florida. Six months after enactment, the Minimum Wage shall be established at an hourly rate of $6.15. Effective September 30th, 2021, the existing state Minimum Wage shall increase to $10.00 per hour, and then increase each September 30th thereafter by $1.00 per hour, until the Minimum Wage reaches $15.00 per hour on September 30th, 2026. On September 30th of 2027 and on each following September 30th, the state Agency for Workforce Innovation shall calculate an adjusted Minimum Wage rate by increasing the current Minimum Wage rate by the rate of inflation during the twelve months prior to each September 1st using the consumer price index for urban wage earners and clerical workers, CPI-W, or a successor index as calculated by the United States Department of Labor. Each adjusted Minimum Wage rate calculated shall be published and take effect on the following January 1st. For tipped Employees meeting eligibility requirements for the tip credit under the FLSA, Employers may credit towards satisfaction of the Minimum Wage tips up to the amount of the allowable FLSA tip credit in 2003.",
+      "text_sha256": "7684b74d4d1687968a74fc7a5cb1bc483834567f00e23b70b4537efa49313c82",
+      "publisher_sha256": "b41032dc1bd2b887e94f1f319498c04c7ccdd6dc0f56cc337c1dce2a0ca37efa",
+      "retrieved_at": "2026-11-20T17:51:44.469893+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "44105a733c3460992e22270c2d6b0f": {
+      "source_id": "US-FL:wage_enforcement:eb6bede41704",
+      "authority_type": "constitution",
+      "citation": "Fla. Const. art. X, § 24(e)",
+      "text": "(e) ENFORCEMENT. Persons aggrieved by a violation of this amendment may bring a civil action in a court of competent jurisdiction against an Employer or person violating this amendment and, upon prevailing, shall recover the full amount of any back wages unlawfully withheld plus the same amount as liquidated damages, and shall be awarded reasonable attorney’s fees and costs. In addition, they shall be entitled to such legal or equitable relief as may be appropriate to remedy the violation including, without limitation, reinstatement in employment and/or injunctive relief. Any Employer or other person found liable for willfully violating this amendment shall also be subject to a fine payable to the state in the amount of $1000.00 for each violation. The state attorney general or other official designated by the state legislature may also bring a civil action to enforce this amendment. Actions to enforce this amendment shall be subject to a statute of limitations of four years or, in the case of willful violations, five years. Such actions may be brought as a class action pursuant to Rule 1.220 of the Florida Rules of Civil Procedure.",
+      "text_sha256": "385b49f5e091ca4d493881c4fb3fd011d4e7d726f47323e5e163fd5c09289cd0",
+      "publisher_sha256": "b41032dc1bd2b887e94f1f319498c04c7ccdd6dc0f56cc337c1dce2a0ca37efa",
+      "retrieved_at": "2026-11-20T17:51:44.469893+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

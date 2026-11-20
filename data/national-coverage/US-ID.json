@@ -383,6 +383,18 @@
         "retrieved_at": "2026-11-20T17:27:37.194426+00:00",
         "sha256": "91956eb26a3c17fcdd3ff423db8d07106467d8442a5eaf19553f6bc4984de353"
       }
+    },
+    "US-ID:negligence_elements:254ba433a6ab": {
+      "category": "negligence_elements",
+      "title": "Oswald v. Costco Wholesale Corp., No. 47261 (Idaho Oct. 5, 2020)",
+      "url": "https://api.isc.idaho.gov/uploads/Documents/ISC/Civil/2020/1775503785943-oswaldmyers.pdf",
+      "locator": "Oswald v. Costco Wholesale Corp., No. 47261 (Idaho Oct. 5, 2020)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:46:43.842919+00:00",
+        "sha256": "b579afa03abc467a8b6c789b1d46d12254d3e72171a83cc8f62c32f23eec50ca"
+      }
     }
   },
   "court_directory": [
@@ -624,6 +636,22 @@
       "retrieved_at": "2026-11-20T17:27:37.194426+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "327839bf9e8cd723dcb0d465750127": {
+      "source_id": "US-ID:negligence_elements:254ba433a6ab",
+      "authority_type": "opinion",
+      "citation": "Oswald v. Costco Wholesale Corp., No. 47261 (Idaho Oct. 5, 2020)",
+      "text": "A common-law action for negligence requires the plaintiffs to prove “(1) a duty, recognized by law, requiring the defendant to conform to a certain standard of conduct; (2) a breach of that duty; (3) a causal connection between the defendant’s conduct and the resulting injury; and (4) actual loss or damage.” Brooks v. Wal-Mart Stores, Inc., 164 Idaho 22, 27, 423 P.3d 443, 448 (2018) (quoting Griffith v. JumpTime Meridian, LLC, 161 Idaho 913, 915, 393 P.3d 573, 575 (2017)).",
+      "text_sha256": "285b62f86f10a18cdfcc11af5ed4a31a06b198da775bce238867afaa8b4f7a15",
+      "publisher_sha256": "b579afa03abc467a8b6c789b1d46d12254d3e72171a83cc8f62c32f23eec50ca",
+      "retrieved_at": "2026-11-20T17:46:43.842919+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2020-10-05",
+      "court": "Supreme Court of Idaho",
+      "decision_date": "2020-10-05",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in a negligence action for injuries incurred when a vehicle struck pedestrians in a store parking lot. The court reversed and remanded."
     }
   },
   "fault_allocation": {

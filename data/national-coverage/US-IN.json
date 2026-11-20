@@ -283,6 +283,18 @@
         "retrieved_at": "2026-11-20T16:22:38.321090+00:00",
         "sha256": "43ebd4fd61184cb62f099e305fae32a058173d8996a996c9b367412656b96ae9"
       }
+    },
+    "US-IN:wageLaw:35dde3eaf07c": {
+      "category": "wageLaw",
+      "title": "Mitchell v. Universal Solutions of North Carolina, Inc., No. 29A02-0411-CV-931 (Ind. Ct. App. Feb. 28, 2006)",
+      "url": "https://public.courts.in.gov/Decisions/api/Document/Opinion?Id=h7fjNWK42IrA6LU6T8F0niVJiDmJksDG_sdjYVcD15GCYVukJJ1-WomrMH17diFy0",
+      "locator": "Mitchell v. Universal Solutions of North Carolina, Inc., No. 29A02-0411-CV-931 (Ind. Ct. App. Feb. 28, 2006)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:51:44.195344+00:00",
+        "sha256": "7cd6d8af84670dfa937bc1cdb48c494026dbab141bcc6a8e3ab817d7f9d1abd4"
+      }
     }
   },
   "court_directory": [
@@ -479,6 +491,22 @@
       "decision_date": "2024-09-30",
       "opinion_role": "majority",
       "procedural_posture": "Joint appeals from dismissals of two Attorney General actions under the Deceptive Consumer Sales Act. The court quoted the operative statute in the dispute."
+    },
+    "a61a7af012a5823e67ff75456deaaf": {
+      "source_id": "US-IN:wageLaw:35dde3eaf07c",
+      "authority_type": "opinion",
+      "citation": "Mitchell v. Universal Solutions of North Carolina, Inc., No. 29A02-0411-CV-931 (Ind. Ct. App. Feb. 28, 2006)",
+      "text": "Indiana Code § 22-2-5-1, sometimes referred to as the Wage Payment Statute, contains three distinct regulations: “(1) employee’s wages must be paid in money; (2) if requested, employers must pay employees semi-monthly or bi-weekly; and (3) employees, upon separation from employment, must be paid the amount due them at their next and usual payday (unless their whereabouts are unknown).”",
+      "text_sha256": "e2dc48893976cf8aee8dc1f2b913d59c4ad111939ef2fe1767960d196fababa6",
+      "publisher_sha256": "7cd6d8af84670dfa937bc1cdb48c494026dbab141bcc6a8e3ab817d7f9d1abd4",
+      "retrieved_at": "2026-11-20T17:51:44.195344+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2006-02-28",
+      "court": "Court of Appeals of Indiana",
+      "decision_date": "2006-02-28",
+      "opinion_role": "majority",
+      "procedural_posture": "Consolidated appeal from summary judgments about accrued vacation pay and bonuses. The published opinion summarized the wage-payment statute applicable in those disputes."
     }
   },
   "fault_allocation": {

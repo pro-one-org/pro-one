@@ -218,6 +218,18 @@
         "retrieved_at": "2026-11-20T16:30:24.951368+00:00",
         "sha256": "26c257b8296189a6adbfbb84dbea3bed8acfedb5c8bfcf177910077440d29214"
       }
+    },
+    "US-TN:wageLaw:07febd5c57cb": {
+      "category": "wageLaw",
+      "title": "1999 Tenn. Pub. Acts ch. 32, § 1 (Tenn. Code § 50-2-103(a))",
+      "url": "https://www.capitol.tn.gov/Bills/101/Chapter/PC0032.pdf",
+      "locator": "1999 Tenn. Pub. Acts ch. 32, § 1 (Tenn. Code § 50-2-103(a))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:48:14.426874+00:00",
+        "sha256": "bedc25ac86974798cd8feb9f4c51101bdb0ea11a23fd1dd6e8d4bc93a549f48b"
+      }
     }
   },
   "court_directory": [
@@ -382,6 +394,19 @@
       "language": "en",
       "edition": "2011 enrolled House Bill 2008 as amended, verified in the legislative passage history",
       "effective_from": "2011-10-01"
+    },
+    "d43767f0fc4e7cd75e95a25c4b9292": {
+      "source_id": "US-TN:wageLaw:07febd5c57cb",
+      "authority_type": "statute",
+      "citation": "1999 Tenn. Pub. Acts ch. 32, § 1 (Tenn. Code § 50-2-103(a))",
+      "text": "For the purposes of this subsection, the final wages of an employee who quits or is discharged shall include any vacation pay or other compensatory time that is owed to the employee by virtue of company policy or labor agreement. This act does not mandate employers to provide vacations, either paid or unpaid, nor does it require that employers establish written vacation pay policies.",
+      "text_sha256": "50b56f3e242e6e50cae021edf8297579a0a9cc0b46481a331727b16df0c3cd13",
+      "publisher_sha256": "bedc25ac86974798cd8feb9f4c51101bdb0ea11a23fd1dd6e8d4bc93a549f48b",
+      "retrieved_at": "2026-11-20T17:48:14.426874+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Tennessee enacted Public Chapter 32 of 1999",
+      "effective_from": "1999-07-01"
     }
   },
   "fault_allocation": {
