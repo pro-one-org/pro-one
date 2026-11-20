@@ -1381,6 +1381,246 @@
       "op": "element",
       "element": "fault_allocation"
     }
+  },
+  {
+    "id": "wi_residential_landlord_repairs",
+    "version": "v1",
+    "jurisdiction": "US-WI",
+    "legal_area": "landlord_tenant",
+    "kind": "entitlement",
+    "label": "Landlord repair duties in a residential tenancy",
+    "plain_language_label": "Landlord repair duties in a residential tenancy",
+    "authority_as_of": "2026-11-04",
+    "topics": [
+      "habitability"
+    ],
+    "matter_types": [
+      "landlord_tenant"
+    ],
+    "limitations": [
+      "This development definition covers retained duties for landlord-controlled parts of the premises and equipment needed for agreed tenant services.",
+      "Tenant-caused repairs, obligations to other tenants and casualty damage require separate factual review under the cited qualifications. Local housing codes, other repair duties and remedies require additional authority."
+    ],
+    "elements": [
+      {
+        "id": "residential_tenancy",
+        "label": "Residential tenancy",
+        "description": "Determine whether the premises are held under a residential tenancy.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-a91851c77102bcd8cc12fa417a7d8a036219521e864357f6df179d51f9a76d42-p1",
+            "source_id": "corpus-a91851c77102bcd8cc12fa417a7d8a036219521e864357f6df179d51f9a76d42",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:31c1dee5136ed759728065f754f9dab375e34edbf1cbed8f219686711e05265b"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "controlled_premises",
+        "label": "Condition of landlord-controlled areas",
+        "description": "Identify which parts of the premises the landlord controls and whether those areas are in a reasonable state of repair.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-9c22b1a2b6206330856d68a649684f12fd6bebcc727485c3166d4f57d732f141-p1",
+            "source_id": "corpus-9c22b1a2b6206330856d68a649684f12fd6bebcc727485c3166d4f57d732f141",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:91ecb31cf8929d3a43aa1a9836cf162c658f031e58cbb0161e9ed4fd547db4e5"
+          },
+          {
+            "passage_id": "corpus-09acdcf04698ad9b174fe9f4729064695c66812900ee67db048fc38279f499e4-p1",
+            "source_id": "corpus-09acdcf04698ad9b174fe9f4729064695c66812900ee67db048fc38279f499e4",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:ea8d5003d3f40f590d920a57294d25ca5e7450dc730306d33391bdf32feb30b2",
+            "role": "qualifies"
+          },
+          {
+            "passage_id": "corpus-da9fca80a9a4a2b9d633169bf6d901da7bbb2ff110ea6719f27b161790e6782d-p1",
+            "source_id": "corpus-da9fca80a9a4a2b9d633169bf6d901da7bbb2ff110ea6719f27b161790e6782d",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:1812957cb70548dc63b3ce34d700aae0f13dd42827278734208c024c3cd1a7a7",
+            "role": "qualifies"
+          },
+          {
+            "passage_id": "corpus-4519dbee29fb9c3e1d15b2378854c9a44a39405a233ee3b76facc8db63050e58-p1",
+            "source_id": "corpus-4519dbee29fb9c3e1d15b2378854c9a44a39405a233ee3b76facc8db63050e58",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:ee0267a83bdf0bc80dc8327d1d3d63535fe4f04f219e2244d5b251fc0bd2a48f",
+            "role": "qualifies"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "agreed_service_equipment",
+        "label": "Equipment necessary to furnish agreed services",
+        "description": "Determine whether the landlord controls equipment necessary for a service the landlord expressly or impliedly agreed to provide and whether the equipment is in a reasonable state of repair.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-699a16e41a2e28088d8a9b9196a4726f06c26648cf2bfa1b092bcf645b56796f-p1",
+            "source_id": "corpus-699a16e41a2e28088d8a9b9196a4726f06c26648cf2bfa1b092bcf645b56796f",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:a31f27bd96d3274606864b32e17e3fc4a8cc81cf9a55f37efb17f1110a298fb4"
+          },
+          {
+            "passage_id": "corpus-09acdcf04698ad9b174fe9f4729064695c66812900ee67db048fc38279f499e4-p1",
+            "source_id": "corpus-09acdcf04698ad9b174fe9f4729064695c66812900ee67db048fc38279f499e4",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:ea8d5003d3f40f590d920a57294d25ca5e7450dc730306d33391bdf32feb30b2",
+            "role": "qualifies"
+          },
+          {
+            "passage_id": "corpus-da9fca80a9a4a2b9d633169bf6d901da7bbb2ff110ea6719f27b161790e6782d-p1",
+            "source_id": "corpus-da9fca80a9a4a2b9d633169bf6d901da7bbb2ff110ea6719f27b161790e6782d",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:1812957cb70548dc63b3ce34d700aae0f13dd42827278734208c024c3cd1a7a7",
+            "role": "qualifies"
+          },
+          {
+            "passage_id": "corpus-4519dbee29fb9c3e1d15b2378854c9a44a39405a233ee3b76facc8db63050e58-p1",
+            "source_id": "corpus-4519dbee29fb9c3e1d15b2378854c9a44a39405a233ee3b76facc8db63050e58",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:ee0267a83bdf0bc80dc8327d1d3d63535fe4f04f219e2244d5b251fc0bd2a48f",
+            "role": "qualifies"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "all",
+      "operands": [
+        {
+          "op": "element",
+          "element": "residential_tenancy"
+        },
+        {
+          "op": "any",
+          "operands": [
+            {
+              "op": "element",
+              "element": "controlled_premises"
+            },
+            {
+              "op": "element",
+              "element": "agreed_service_equipment"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "wi_deceptive_public_representation",
+    "version": "v1",
+    "jurisdiction": "US-WI",
+    "legal_area": "consumer",
+    "kind": "claim",
+    "label": "Pecuniary loss from a deceptive public representation",
+    "plain_language_label": "Pecuniary loss from a deceptive public representation",
+    "authority_as_of": "2026-11-04",
+    "topics": [
+      "unfair_practices",
+      "private_action"
+    ],
+    "matter_types": [
+      "consumer"
+    ],
+    "limitations": [
+      "The definition covers a private statutory claim for pecuniary loss allegedly caused by a violation of the identified public-representation provision. The meaning of public, case-specific exceptions, separate injunction claims, remedies and filing limitations require additional review."
+    ],
+    "elements": [
+      {
+        "id": "public_representation",
+        "label": "Representation to the public with a covered purpose",
+        "description": "Identify the representation made to the public in Wisconsin and the covered sale, transaction, or other statutory purpose.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-4f5affd1841bd32a54f6f748f111a5d361c5743fc51a8ba1c573e887d05f4c21-p1",
+            "source_id": "corpus-4f5affd1841bd32a54f6f748f111a5d361c5743fc51a8ba1c573e887d05f4c21",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:8bb4a6c9b5bf088aa641898328468838056fa0e0be5ee607de63c56c1e5b9b73"
+          },
+          {
+            "passage_id": "corpus-4f5affd1841bd32a54f6f748f111a5d361c5743fc51a8ba1c573e887d05f4c21-p2",
+            "source_id": "corpus-4f5affd1841bd32a54f6f748f111a5d361c5743fc51a8ba1c573e887d05f4c21",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:75187e24114afa43f21ccdab09e886c53b83860f92af8b34f588d935d6f308e8"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "deceptive_factual_statement",
+        "label": "Untrue, deceptive or misleading factual statement",
+        "description": "Identify the assertion, representation or statement of fact alleged to be untrue, deceptive or misleading.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-4f5affd1841bd32a54f6f748f111a5d361c5743fc51a8ba1c573e887d05f4c21-p1",
+            "source_id": "corpus-4f5affd1841bd32a54f6f748f111a5d361c5743fc51a8ba1c573e887d05f4c21",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:8bb4a6c9b5bf088aa641898328468838056fa0e0be5ee607de63c56c1e5b9b73"
+          },
+          {
+            "passage_id": "corpus-4f5affd1841bd32a54f6f748f111a5d361c5743fc51a8ba1c573e887d05f4c21-p2",
+            "source_id": "corpus-4f5affd1841bd32a54f6f748f111a5d361c5743fc51a8ba1c573e887d05f4c21",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:75187e24114afa43f21ccdab09e886c53b83860f92af8b34f588d935d6f308e8"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "resulting_pecuniary_loss",
+        "label": "Pecuniary loss caused by the violation",
+        "description": "Identify a pecuniary loss and the factual link between the alleged statutory violation and that loss.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-e1abbc2b481b21748f27117c06ec6e4feace4d1726bfd00ce1635dc214b43fd2-p1",
+            "source_id": "corpus-e1abbc2b481b21748f27117c06ec6e4feace4d1726bfd00ce1635dc214b43fd2",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:f94abf12ccd961092433b3aed02d5a534b3988d6c1ba37f9295627adf9831ad3"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "all",
+      "operands": [
+        {
+          "op": "element",
+          "element": "public_representation"
+        },
+        {
+          "op": "element",
+          "element": "deceptive_factual_statement"
+        },
+        {
+          "op": "element",
+          "element": "resulting_pecuniary_loss"
+        }
+      ]
+    }
   }
-
 ]

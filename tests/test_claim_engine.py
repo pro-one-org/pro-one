@@ -61,7 +61,8 @@ class ClaimTests(unittest.TestCase):
 
     def test_wisconsin_claims_replay_only_for_the_certified_date(self):
         catalog = self.engine.catalog
-        for key in ("wi_wages_due", "wi_comparative_negligence"):
+        for key in ("wi_wages_due", "wi_comparative_negligence", "wi_residential_landlord_repairs",
+                    "wi_deceptive_public_representation"):
             theory = catalog.active[key]
             bound, _, _ = catalog.research(theory, law_as_of=date(2026, 11, 4))
             self.assertEqual(set(bound), {element.id for element in theory.elements})
@@ -70,6 +71,17 @@ class ClaimTests(unittest.TestCase):
                     self.assertEqual(row["currentness"]["as_of"], "2026-11-04")
             for day in (None, date(2026, 11, 3), date(2026, 11, 5)):
                 self.assertFalse(catalog.research(theory, law_as_of=day)[0])
+
+    def test_wisconsin_landlord_repair_elements_require_their_qualifying_passages(self):
+        catalog = self.engine.catalog
+        theory = catalog.active["wi_residential_landlord_repairs"]
+        day = date(2026, 11, 4)
+        bindings, _, _ = catalog.research(theory, law_as_of=day)
+        for element in ("controlled_premises", "agreed_service_equipment"):
+            self.assertEqual(
+                {row["citation"] for row in bindings[element] if row["relationship"] == "qualifies"},
+                {"Wis. Stat. § 704.07(2)(a)(intro.)", "Wis. Stat. § 704.07(2)(b)", "Wis. Stat. § 704.07(2)(c)"},
+            )
 
     def upload(self, matter, text, kind, **scope):
         return self.ledger.upload(matter, text.encode(), "text/plain", kind, **scope)[0]

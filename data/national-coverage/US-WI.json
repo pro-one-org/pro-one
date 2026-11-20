@@ -546,6 +546,42 @@
         "retrieved_at": "2026-11-20T15:29:40.322652+00:00",
         "sha256": "6cb6795c7a2653c469138a5d4eca28d27556621a6ab7b09d47d7df4cc3567fad"
       }
+    },
+    "US-WI:habitability:a4b606f2767a": {
+      "category": "habitability",
+      "title": "Wis. Stat. § 704.07(1)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/704/07",
+      "locator": "Wis. Stat. § 704.07(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:07:29.019137+00:00",
+        "sha256": "98587c9726218a62f74008c247219679c04e4479cdbd1133b3573e1ff00dbc1a"
+      }
+    },
+    "US-WI:habitability:b4583a4a1a6d": {
+      "category": "habitability",
+      "title": "Wis. Stat. § 704.07(2)(b)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/704/07",
+      "locator": "Wis. Stat. § 704.07(2)(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:07:29.019137+00:00",
+        "sha256": "98587c9726218a62f74008c247219679c04e4479cdbd1133b3573e1ff00dbc1a"
+      }
+    },
+    "US-WI:habitability:29676931a5da": {
+      "category": "habitability",
+      "title": "Wis. Stat. § 704.07(2)(c)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/704/07",
+      "locator": "Wis. Stat. § 704.07(2)(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:07:29.019137+00:00",
+        "sha256": "98587c9726218a62f74008c247219679c04e4479cdbd1133b3573e1ff00dbc1a"
+      }
     }
   },
   "court_directory": [
@@ -996,6 +1032,48 @@
       "decision_date": "2006-06-13",
       "opinion_role": "majority",
       "procedural_posture": "Review of judgment on negligence claims against a lender and title company."
+    },
+    "87f50b92b187f2451018a2db7f69de": {
+      "source_id": "US-WI:habitability:a4b606f2767a",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 704.07(1)",
+      "text": "This section applies to any nonresidential tenancy if there is no contrary provision in writing signed by both parties and to all residential tenancies. An agreement to waive the requirements of this section in a residential tenancy, including an agreement in a rental agreement, is void. Nothing in this section is intended to affect rights and duties arising under other provisions of the statutes.",
+      "text_sha256": "31c1dee5136ed759728065f754f9dab375e34edbf1cbed8f219686711e05265b",
+      "publisher_sha256": "98587c9726218a62f74008c247219679c04e4479cdbd1133b3573e1ff00dbc1a",
+      "retrieved_at": "2026-11-19T19:07:29.019137+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/704/07/1",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "82defac45c55733e7cb1a1841bd96a": {
+      "source_id": "US-WI:habitability:b4583a4a1a6d",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 704.07(2)(b)",
+      "text": "If the premises are part of a building, other parts of which are occupied by one or more other tenants, negligence or improper use by one tenant does not relieve the landlord from the landlord’s duty as to the other tenants to make repairs as provided in par. (a).",
+      "text_sha256": "1812957cb70548dc63b3ce34d700aae0f13dd42827278734208c024c3cd1a7a7",
+      "publisher_sha256": "98587c9726218a62f74008c247219679c04e4479cdbd1133b3573e1ff00dbc1a",
+      "retrieved_at": "2026-11-19T19:07:29.019137+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/704/07/2/b",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "5bec6677b01efe386992a22a3c4b78": {
+      "source_id": "US-WI:habitability:29676931a5da",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 704.07(2)(c)",
+      "text": "If the premises are damaged by fire, water or other casualty, not the result of the negligence or intentional act of the landlord, this subsection is inapplicable and either sub. (3) or (4) governs.",
+      "text_sha256": "ee0267a83bdf0bc80dc8327d1d3d63535fe4f04f219e2244d5b251fc0bd2a48f",
+      "publisher_sha256": "98587c9726218a62f74008c247219679c04e4479cdbd1133b3573e1ff00dbc1a",
+      "retrieved_at": "2026-11-19T19:07:29.019137+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/704/07/2/c",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
     }
   },
   "fault_allocation": {
