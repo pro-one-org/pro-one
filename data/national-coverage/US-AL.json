@@ -340,6 +340,18 @@
         "retrieved_at": "2026-11-20T17:57:54.087002+00:00",
         "sha256": "0017851f280518dd876ddc5665092b053b92a38c8d811bb42960f3a7c7991baf"
       }
+    },
+    "US-AL:wage_enforcement:dfa132d48d70": {
+      "category": "wage_enforcement",
+      "title": "Ala. Act 2019-519, § 2(a)–(c) (equal-pay protections and remedies)",
+      "url": "https://alison.legislature.state.al.us/files/pdf/SearchableInstruments/2019RS/PrintFiles/HB225-Enr.pdf",
+      "locator": "Ala. Act 2019-519, § 2(a)–(c) (equal-pay protections and remedies)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:16:58.765782+00:00",
+        "sha256": "254a04c7463356abae3c982378eeeee283e40c7282fa4eb5795414ab64860c0b"
+      }
     }
   },
   "court_directory": [
@@ -602,6 +614,19 @@
       "language": "en",
       "edition": "Alabama Act 2014-279 (effective July 1, 2014)",
       "effective_from": "2014-07-01"
+    },
+    "13ffa1e97bbd02bb54a2b6e826fefd": {
+      "source_id": "US-AL:wage_enforcement:dfa132d48d70",
+      "authority_type": "statute",
+      "citation": "Ala. Act 2019-519, § 2(a)–(c) (equal-pay protections and remedies)",
+      "text": "(a) An employer, including the state or any of its political subdivisions, including public bodies, may not pay any of its employees at wage rates less than the rates paid to employees of another sex or race for equal work within the same establishment on jobs the performance of which requires equal skill, effort, education, experience, and responsibility, and performance under similar working conditions, except where the payment is made pursuant to any of the following: (1) A seniority system. (2) A merit system. (3) A system that measures earnings by quantity or quality of production. (4) A differential based on any factor other than sex or race. (b) An employer shall not refuse to interview, hire, promote, or employ an applicant for employment, or retaliate against an applicant for employment because the applicant does not provide wage history. Wage history means the wages paid to an applicant for employment by the applicant's current or former employer. (c) Any employer who violates subsection (a) or (b) is liable to the employee affected in an amount equal to the wages, and interest thereon, of which the employee is deprived by reason of the violation, or any other relief warranted.",
+      "text_sha256": "6dfaeedc411b8d4b8661a2cb7e2a9e5b17e181d00e302e6bd317e911d8cab219",
+      "publisher_sha256": "254a04c7463356abae3c982378eeeee283e40c7282fa4eb5795414ab64860c0b",
+      "retrieved_at": "2026-11-20T18:16:58.765782+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Alabama Clarke-Figures Equal Pay Act (effective September 1, 2019)",
+      "effective_from": "2019-09-01"
     }
   },
   "fault_allocation": {

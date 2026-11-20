@@ -324,6 +324,18 @@
         "retrieved_at": "2026-11-20T16:16:28.606808+00:00",
         "sha256": "b3a72ba5e931064f4bb07a9bb172f2e5b2fcf4745ab24e59345614cab596b416"
       }
+    },
+    "US-AZ:response:2278ebfa1bb7": {
+      "category": "response",
+      "title": "Ariz. R. Civ. P. 12(a) (R-16-0010, Attachment A)",
+      "url": "https://www.azcourts.gov/Portals/0/20/2016%20Rules/R-16-0010.pdf",
+      "locator": "Ariz. R. Civ. P. 12(a) (R-16-0010, Attachment A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:16:58.771385+00:00",
+        "sha256": "022194c52c2c51ff885f5dba4d43af7789052509f43c7295713d2c57064c64a8"
+      }
     }
   },
   "court_directory": [
@@ -579,6 +591,20 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Arizona Justice Court Small Claims Division"
+    },
+    "a18f2e2d5d4dd233b682d953838c96": {
+      "source_id": "US-AZ:response:2278ebfa1bb7",
+      "authority_type": "court_rule",
+      "citation": "Ariz. R. Civ. P. 12(a) (R-16-0010, Attachment A)",
+      "text": "(a) Time to Serve a Responsive Pleading. (1) Generally. Unless another time is specified by rule or statute, the time for serving a responsive pleading is as follows: (A) A defendant or third-party defendant must serve an answer or other responsive pleading: (i) within 20 days after being served with the summons and complaint, except as otherwise provided in Rules 4.2(d)(3) and (m); or (ii) if it has timely waived service under Rule 4(f), within 60 days after the request for a waiver was sent, or within 90 days after it was sent to the defendant or third-party defendant outside any judicial district of the United States. (B) A party must serve an answer or other pleading responsive to a counterclaim or crossclaim within 20 days after being served with the pleading that states the counterclaim or crossclaim. (C) A party must serve a reply to an answer within 20 days after being served with an order to reply, unless the order specifies a different time. (2) Effect of a Motion. Unless the court sets a different time, serving a motion under this rule alters these periods as follows: (A) if the court denies the motion or postpones its disposition until trial, the responsive pleading must be served within 10 days after notice of the court’s action; or (B) if the court grants a motion for a more definite statement, the responsive pleading must be served within 10 days after the more definite statement is served.",
+      "text_sha256": "7c934d1ab13c0084a2223ada65293ae3c330b100b67955e5f010c0336c1b9a75",
+      "publisher_sha256": "022194c52c2c51ff885f5dba4d43af7789052509f43c7295713d2c57064c64a8",
+      "retrieved_at": "2026-11-20T18:16:58.771385+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arizona Supreme Court Order R-16-0010 (effective January 1, 2017)",
+      "court": "Arizona superior courts",
+      "effective_from": "2017-01-01"
     }
   },
   "fault_allocation": {

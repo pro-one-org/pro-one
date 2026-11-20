@@ -385,6 +385,18 @@
         "retrieved_at": "2026-11-20T17:51:44.469893+00:00",
         "sha256": "b41032dc1bd2b887e94f1f319498c04c7ccdd6dc0f56cc337c1dce2a0ca37efa"
       }
+    },
+    "US-FL:response:9dc41654a70a": {
+      "category": "response",
+      "title": "Fla. R. Civ. P. 1.140(a) (No. 93,726)",
+      "url": "https://flcourts-media.flcourts.gov/content/download/421008/4552437/op93726.pdf",
+      "locator": "Fla. R. Civ. P. 1.140(a) (No. 93,726)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:15:33.925207+00:00",
+        "sha256": "5d6d4520e4bc09d187df2b08193597ab0f8411e6044e3c03027575e64bc2532e"
+      }
     }
   },
   "court_directory": [
@@ -639,6 +651,20 @@
       "retrieved_at": "2026-11-20T17:51:44.469893+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "861df288bd95d9192d477bff42f994": {
+      "source_id": "US-FL:response:9dc41654a70a",
+      "authority_type": "court_rule",
+      "citation": "Fla. R. Civ. P. 1.140(a) (No. 93,726)",
+      "text": "(a) When Presented. (1) A defendant shall serve an answer within 20 days after service of original process and the initial pleading on the defendant, or not later than the date fixed in a notice by publication. A party served with a pleading stating a cross-claim against that party shall serve an answer to it within 20 days after service on that party. The plaintiff shall serve an answer to a counterclaim within 20 days after service of the counterclaim. If a reply is required, the reply shall be served within 20 days after service of the answer. (2) The service of a motion under this rule, except a motion for judgment on the pleadings or a motion to strike under subdivision (f), alters these periods of time so that if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleadings shall be served within 10 days after notice of the court's action or, if the court grants a motion for a more definite statement, the responsive pleadings shall be served within 10 days after service of the more definite statement unless a different time is fixed by the court in either case. (3) If the court permits or requires an amended or responsive pleading or a more definite statement, the pleading or statement shall be served within 10 days after notice of the court's action. Responses to the pleadings or statements shall be served within 10 days of service of the pleadings or statements.",
+      "text_sha256": "2349886edfd8eca6a1462180404f7e4a5654c7bcb304f8b4fc5f8fafb72e5aba",
+      "publisher_sha256": "5d6d4520e4bc09d187df2b08193597ab0f8411e6044e3c03027575e64bc2532e",
+      "retrieved_at": "2026-11-20T18:15:33.925207+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Florida Supreme Court order No. 93,726 (effective October 1, 1998)",
+      "court": "Florida courts applying the Rules of Civil Procedure",
+      "effective_from": "1998-10-01"
     }
   },
   "fault_allocation": {

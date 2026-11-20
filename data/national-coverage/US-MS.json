@@ -189,6 +189,18 @@
         "retrieved_at": "2026-11-20T16:20:54.639108+00:00",
         "sha256": "03849ec8ca3dd99ef48b9d5dcd33e6bc414df4e134e14015f035990400ea55ad"
       }
+    },
+    "US-MS:deposit:69004f7049eb": {
+      "category": "deposit",
+      "title": "Miss. S.B. 2461, § 10 (2022) (Miss. Code § 89-8-13(4))",
+      "url": "https://billstatus.ls.state.ms.us/documents/2022/pdf/SB/2400-2499/SB2461SG.pdf",
+      "locator": "Miss. S.B. 2461, § 10 (2022) (Miss. Code § 89-8-13(4))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:16:58.858913+00:00",
+        "sha256": "858eb91bf518ae3e37ff64411fe0b11a31d94156d91c446235f43584382332c6"
+      }
     }
   },
   "court_directory": [
@@ -353,6 +365,19 @@
       "decision_date": "2020-04-30",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from dismissal of an Attorney General enforcement action arising from alleged price fixing. The quoted statutory language is from the 2016 edition."
+    },
+    "1a59ca7d4fb8147c280bff5c7db1e0": {
+      "source_id": "US-MS:deposit:69004f7049eb",
+      "authority_type": "statute",
+      "citation": "Miss. S.B. 2461, § 10 (2022) (Miss. Code § 89-8-13(4))",
+      "text": "(4) If the rental agreement is terminated, the landlord shall return all prepaid and unearned rent and security recoverable by the tenant under Section 89-8-21.",
+      "text_sha256": "9ad20be8893802e8cbdf56632f32303a967b20bfd5f754ec53dd8bd656380fcc",
+      "publisher_sha256": "858eb91bf518ae3e37ff64411fe0b11a31d94156d91c446235f43584382332c6",
+      "retrieved_at": "2026-11-20T18:16:58.858913+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Mississippi S.B. 2461 as signed April 21, 2022",
+      "effective_from": "2022-04-21"
     }
   },
   "fault_allocation": {
