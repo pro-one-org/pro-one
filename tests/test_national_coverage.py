@@ -471,6 +471,21 @@ class NationalCoverageTests(unittest.TestCase):
                 self.assertIn(citation, provider.fetch(key).source["citation"]["preferred_citation"])
                 self.assertFalse(provider.search(matter.model_copy(update={"topics": ["wage_payment"]})))
 
+    def test_wisconsin_debt_cure_preserves_qualification_and_response_scope(self):
+        provider = RetainedLegislativeResearch()
+        matter = ResearchMatter(country="US", state="Wisconsin", legal_area="consumer_debt",
+                                topics=["debt_cure_prior_defaults"], authority_status="current",
+                                authority_as_of="2026-11-04")
+        citations = {provider.fetch(key).source["citation"]["preferred_citation"]
+                     for key in provider.search(matter)}
+        self.assertEqual(citations, {"Wis. Stat. § 425.105(3)(intro.)", "Wis. Stat. § 425.105(3)(a)",
+                                     "Wis. Stat. § 425.105(3)(b)", "Wis. Stat. § 425.105(3)(c)"})
+        query = matter.model_copy(update={"topics": ["debt_cure_exceptions"]})
+        self.assertEqual(len(provider.search(query)), 4)
+        self.assertFalse(provider.search(query.model_copy(update={"authority_as_of": "2026-11-05"})))
+        self.assertFalse(provider.search(query.model_copy(update={"state": "South Dakota"})))
+        self.assertFalse(provider.search(query.model_copy(update={"topics": ["debt_response"]})))
+
     def test_replay_idempotence_separate_courts_and_historical_federal_granules(self):
         with TemporaryDirectory() as folder:
             path = Path(folder) / "corpus.sqlite3"

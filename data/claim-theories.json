@@ -1688,5 +1688,126 @@
         }
       ]
     }
+  },
+  {
+    "id": "wi_collection_nonexistent_right",
+    "version": "v1",
+    "jurisdiction": "US-WI",
+    "legal_area": "consumer_debt",
+    "kind": "claim",
+    "label": "Debt collection involving a claimed right that does not exist",
+    "plain_language_label": "Debt collection involving a claimed right that does not exist",
+    "authority_as_of": "2026-11-04",
+    "topics": [
+      "debt_collection",
+      "debt_private_action"
+    ],
+    "matter_types": [
+      "consumer_debt"
+    ],
+    "limitations": [
+      "This definition covers the identified Wisconsin statutory claim on the certified edition date.",
+      "Review the legal basis of the claimed right and whether the collector knew or had reason to know it did not exist.",
+      "Case-specific exceptions, limitations, remedies and any penalty calculation require separate review."
+    ],
+    "elements": [
+      {
+        "id": "covered_collection",
+        "label": "Collection of a covered alleged debt",
+        "description": "Identify the underlying consumer transaction, the agreement to defer payment and the person engaged in collection.",
+        "authority": [
+          {
+            "passage_id": "corpus-d269b222419e5664a1bb219e8d077260e921dd193dae7af29e81fb8fcf1a991d-p1",
+            "source_id": "corpus-d269b222419e5664a1bb219e8d077260e921dd193dae7af29e81fb8fcf1a991d",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:c828ed6ea9a62a3f63409bbb9f4babbe97a9f367b791a550d977f1252ced7b7c"
+          },
+          {
+            "passage_id": "corpus-5b798bd76d25f4a6b13718e2a69baf8d4f792558955b51a1a2559961acf622e7-p1",
+            "source_id": "corpus-5b798bd76d25f4a6b13718e2a69baf8d4f792558955b51a1a2559961acf622e7",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:3e03c04d1b122230b3d9ada4b83495e87b6210e680d55e82b0a26c13332854d2",
+            "role": "qualifies"
+          },
+          {
+            "passage_id": "corpus-7cee211f5bc710b0b6ae3ebfabdeb60bc81d4e6c39b439ed9b3731db0581a4d2-p1",
+            "source_id": "corpus-7cee211f5bc710b0b6ae3ebfabdeb60bc81d4e6c39b439ed9b3731db0581a4d2",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:de1cbe8abc38632d99d09ccaa4f3f7a74d0f3b1d2d8b4083bc9f3e969a7bdb13",
+            "role": "qualifies"
+          }
+        ],
+        "kind": "condition",
+        "fields": []
+      },
+      {
+        "id": "unenforceable_right",
+        "label": "Assertion or attempted enforcement of a right",
+        "description": "Identify the right claimed or sought or threatened to be enforced, whether it existed and whether the collector knew or had reason to know it did not exist.",
+        "authority": [
+          {
+            "passage_id": "corpus-2db8280515577b01f2bc36069ac0b1d92fd45dde3816f2a055c4b884dabff692-p1",
+            "source_id": "corpus-2db8280515577b01f2bc36069ac0b1d92fd45dde3816f2a055c4b884dabff692",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:a531ed15f0b7236298b9c3be5cc65819e936ff58a7f791e9856d4657be579a99"
+          },
+          {
+            "passage_id": "corpus-d269b222419e5664a1bb219e8d077260e921dd193dae7af29e81fb8fcf1a991d-p1",
+            "source_id": "corpus-d269b222419e5664a1bb219e8d077260e921dd193dae7af29e81fb8fcf1a991d",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:c828ed6ea9a62a3f63409bbb9f4babbe97a9f367b791a550d977f1252ced7b7c",
+            "role": "qualifies"
+          },
+          {
+            "passage_id": "corpus-4d04afe8cea4e73058817bdb0d4606f19dae33e03b24d1bdb042ab511d27c2d5-p1",
+            "source_id": "corpus-4d04afe8cea4e73058817bdb0d4606f19dae33e03b24d1bdb042ab511d27c2d5",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:51ef80d4cc3a907fa3dd9f9b47ce06579355da9ae2f1ad8ab4c7191de578d8a2",
+            "role": "qualifies"
+          }
+        ],
+        "kind": "condition",
+        "fields": []
+      },
+      {
+        "id": "resulting_injury",
+        "label": "Injury caused by the alleged violation",
+        "description": "Identify the injury alleged and the factual connection to the collection conduct.",
+        "authority": [
+          {
+            "passage_id": "corpus-825e15796f420dc17bf16cc3a22bbdadc92e6eeeb9874ea14d7bd4512ac81e7f-p1",
+            "source_id": "corpus-825e15796f420dc17bf16cc3a22bbdadc92e6eeeb9874ea14d7bd4512ac81e7f",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:45b61d1b10db6d93433e7d8770b631f9b3202e2581600bc585e557b773a46c72"
+          }
+        ],
+        "kind": "condition",
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "all",
+      "operands": [
+        {
+          "op": "element",
+          "element": "covered_collection"
+        },
+        {
+          "op": "element",
+          "element": "unenforceable_right"
+        },
+        {
+          "op": "element",
+          "element": "resulting_injury"
+        }
+      ]
+    }
   }
 ]

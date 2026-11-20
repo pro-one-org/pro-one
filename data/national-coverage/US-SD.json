@@ -324,6 +324,18 @@
         "retrieved_at": "2026-11-20T18:24:17.524122+00:00",
         "sha256": "383ccd37b11fead6031f3015f96cfac366d10a89ffa466064a666e70676daf16"
       }
+    },
+    "US-SD:debtLaw:8b877d4bdf81": {
+      "category": "debtLaw",
+      "title": "SDCL § 54-4-77",
+      "url": "https://sdlegislature.gov/api/Statutes/54-4.html?all=true",
+      "locator": "SDCL § 54-4-77",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:47:12.456875+00:00",
+        "sha256": "18c9b453df64d0009032b13c10bceaa77938b7fb6fc3da142704973020d067f9"
+      }
     }
   },
   "court_directory": [
@@ -531,6 +543,17 @@
       "text_sha256": "0da3dda6e720ed11373bfc517fb7a50f4befef3a1f024d389b00a9dc1a70af52",
       "publisher_sha256": "383ccd37b11fead6031f3015f96cfac366d10a89ffa466064a666e70676daf16",
       "retrieved_at": "2026-11-20T18:24:17.524122+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "091cfa3b6a26cbfb8f6ecda75fc3de": {
+      "source_id": "US-SD:debtLaw:8b877d4bdf81",
+      "authority_type": "statute",
+      "citation": "SDCL § 54-4-77",
+      "text": "No person employed by a licensee to collect or attempt to collect any debt owed or due or asserted to be owed or due may: (1) Harass, oppress, or abuse a borrower by: (a) Using any threat of violence or harm; (b) Publishing a list of names of borrowers who refuse to pay their debts absent providing such information to credit reporting companies; (c) Using obscene or profane language; or (d) Repeatedly using the phone with the intent to annoy borrowers; (2) Use any false statement when attempting to collect a debt by falsely: (a) Claiming to be an attorney or government representative; (b) Claiming that the borrower has committed a crime; (c) Representing that the licensee operates or any person employed by the licensee works for a credit reporting company; (d) Representing the amount the borrower owes; (e) Representing the nature and character of any forms sent to the borrower in order to collect a debt; (f) Indicating that the borrower will be arrested if the debt isn't paid; (g) Using a company name; (h) Indicating that the licensee will seize, garnish, attach, or sell a borrower's property or wages unless the licensee is permitted by law to take the action and the licensee intends to do so; (i) Indicating that legal action will be taken against the borrower, if doing so would be illegal or if the licensee does not intend to take the action; (3) Give false credit information about the borrower to anyone, including a credit reporting company; (4) Attempt to collect any interest, fee, or other charge on top of the amount a borrower owes unless the contract that created the debt or state law allows the charge; (5) Deposit a post-dated check early; (6) Take or threaten to take the borrower's property unless it can be done legally; or (7) Cause misleading information to be transmitted to users of caller identification technologies or otherwise block or misrepresent the identity of the caller or entity as described in subdivision 37-24-6 (16).",
+      "text_sha256": "62151256b3dac5ce599ecee3b5079a25f3eda0cdb3e05f56f4be1e114640d3b4",
+      "publisher_sha256": "18c9b453df64d0009032b13c10bceaa77938b7fb6fc3da142704973020d067f9",
+      "retrieved_at": "2026-11-20T22:47:12.456875+00:00",
       "currentness": "unresolved",
       "language": "en"
     }
