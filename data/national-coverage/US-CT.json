@@ -335,6 +335,18 @@
         "retrieved_at": "2026-11-20T17:26:26.809560+00:00",
         "sha256": "2e249d87b267658dda0f0660b905932de802aa09b85723773d05476399821dc4"
       }
+    },
+    "US-CT:negligence_elements:226bacb57abd": {
+      "category": "negligence_elements",
+      "title": "Roux v. Coffey, 230 Conn. App. 130, 139 (2025)",
+      "url": "https://www.jud.ct.gov/lawjournal/Docs/Appellate/2025/3/ap230_8629.pdf",
+      "locator": "Roux v. Coffey, 230 Conn. App. 130, 139 (2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:11:12.702520+00:00",
+        "sha256": "a596f1aa946c36d8ce3b376894c4754ba8a8ba37f68fe2b35f662215d81ba664"
+      }
     }
   },
   "court_directory": [
@@ -518,6 +530,22 @@
       "currentness": "historical",
       "language": "en",
       "edition": "2025 Connecticut General Statutes compilation"
+    },
+    "1289e192f9caaf314aa9d58133118e": {
+      "source_id": "US-CT:negligence_elements:226bacb57abd",
+      "authority_type": "opinion",
+      "citation": "Roux v. Coffey, 230 Conn. App. 130, 139 (2025)",
+      "text": "The following legal principles are applicable. ‘‘[A] cause of action in negligence is comprised of four elements: duty; breach of that duty; causation; and actual injury. . . . Whether a duty exists is a question of law for the court, and only if the court finds that such a duty exists does the trier of fact consider whether that duty was breached. . . . If a court determines, as a matter of law, that a defendant owes no duty to a plaintiff, the plaintiff cannot recover in negligence from the defendant. . . . Duty is a legal conclusion about relationships between individuals, made after the fact, and imperative to a negligence cause of action. The nature of the duty, and the specific persons to whom it is owed, are determined by the circumstances surrounding the conduct of the individual. . . . Foreseeability is a critical factor in the analysis, because no duty exists unless an ordinary person in the defendant’s position, knowing what the defendant knew or should have known, would anticipate that harm of the general nature of that suffered was likely to result . . . . Our law makes clear that foreseeability alone, however, does not automatically give rise to a duty of care . . . . A further inquiry must be made, for we recognize that duty is not sacrosanct in itself . . . but is only an expression of the sum total of those considerations of policy [that] lead the law to say that the plaintiff is entitled to protection. . . . The final step in the duty inquiry, then, is to make a determination of the fundamental policy of the law, as to whether the defendant’s responsibility should extend to such results.’’",
+      "text_sha256": "0f611c2f3850830c012f44062844e9fb56a79dc3c15295074a4bc97ab922d611",
+      "publisher_sha256": "a596f1aa946c36d8ce3b376894c4754ba8a8ba37f68fe2b35f662215d81ba664",
+      "retrieved_at": "2026-11-20T18:11:12.702520+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2025-01-14",
+      "court": "Appellate Court of Connecticut",
+      "decision_date": "2025-01-14",
+      "procedural_posture": "Appeal from a judgment following a motion to strike negligence and public nuisance claims concerning the roadway design. The court affirmed.",
+      "opinion_role": "majority"
     }
   },
   "fault_allocation": {

@@ -314,6 +314,18 @@
         "retrieved_at": "2026-11-20T16:16:29.432489+00:00",
         "sha256": "42ae7b738cb00fdd1ed1b26609bff5be8534d9b58c504fdd22b45c02f823632f"
       }
+    },
+    "US-HI:negligence_elements:bd0452d04b9c": {
+      "category": "negligence_elements",
+      "title": "Molfino v. Yuen, No. SCWC-10-0000150 (Haw. Nov. 13, 2014)",
+      "url": "https://www.courts.state.hi.us/docs/opin_ord/sct/2014/November/SCWC-10-0000150.pdf",
+      "locator": "Molfino v. Yuen, No. SCWC-10-0000150 (Haw. Nov. 13, 2014)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:12:28.237074+00:00",
+        "sha256": "e6ad43857748e803629d82d9830273e53def9b002feb0ba1f684d073de3acecc"
+      }
     }
   },
   "court_directory": [
@@ -509,6 +521,22 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Hawaii District Court Small Claims Division"
+    },
+    "87939fb2b9614d94ac31948c196c08": {
+      "source_id": "US-HI:negligence_elements:bd0452d04b9c",
+      "authority_type": "opinion",
+      "citation": "Molfino v. Yuen, No. SCWC-10-0000150 (Haw. Nov. 13, 2014)",
+      "text": "In order to prevail on a negligence claim, a plaintiff is required to prove all four of the necessary elements of negligence: (1) A duty, or obligation, recognized by the law, requiring the defendant to conform to a certain standard of conduct, for the protection of others against unreasonable risks; (2) A failure on the defendant’s part to conform to the standard required: a breach of the duty; (3) A reasonably close causal connection between the conduct and the resulting injury; and (4) Actual loss or damage resulting to the interests of another.",
+      "text_sha256": "77cc009c63ceadb789d1fd3f5cdb22716b1a124e1c83dd9fe270d6bb629f735a",
+      "publisher_sha256": "e6ad43857748e803629d82d9830273e53def9b002feb0ba1f684d073de3acecc",
+      "retrieved_at": "2026-11-20T18:12:28.237074+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2014-11-13",
+      "court": "Supreme Court of Hawaiʻi",
+      "decision_date": "2014-11-13",
+      "procedural_posture": "Certiorari review of summary judgment on a negligence claim about county maintenance of property records.",
+      "opinion_role": "majority"
     }
   },
   "fault_allocation": {

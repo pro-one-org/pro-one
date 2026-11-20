@@ -300,6 +300,30 @@
         "retrieved_at": "2026-11-20T16:35:16.377438+00:00",
         "sha256": "6eaa8d13f3fcdf390f4b263f46de1955b9954915942e6cf9a113aa2327be3b66"
       }
+    },
+    "US-KS:negligence_elements:2f388fdd39a1": {
+      "category": "negligence_elements",
+      "title": "Montgomery v. Saleh, Nos. 117,518 & 117,519 (Kan. Ct. App. Mar. 30, 2018)",
+      "url": "https://kscourts.gov/KSCourts/media/KsCourts/Opinions/117518.pdf?ext=.pdf",
+      "locator": "Montgomery v. Saleh, Nos. 117,518 & 117,519 (Kan. Ct. App. Mar. 30, 2018)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:11:12.525567+00:00",
+        "sha256": "c8218f663f95aa0de409c70b6e089ff6eb43de7029a09f5d8c7cd86a40fd8634"
+      }
+    },
+    "US-KS:negligence_causation:713760ded024": {
+      "category": "negligence_causation",
+      "title": "Montgomery v. Saleh, Nos. 117,518 & 117,519 (Kan. June 26, 2020)",
+      "url": "https://kscourts.gov/KSCourts/media/KsCourts/Opinions/117518_1.pdf?ext=.pdf",
+      "locator": "Montgomery v. Saleh, Nos. 117,518 & 117,519 (Kan. June 26, 2020)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:12:28.033535+00:00",
+        "sha256": "b8b6d937e6dd23e9266f34d5c1d360e8750dab2f500b070941737a3e3a80f6ed"
+      }
     }
   },
   "court_directory": [
@@ -475,6 +499,38 @@
       "retrieved_at": "2026-11-20T16:35:16.377438+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "017180d7f4fbb1f64c6e530222f2af": {
+      "source_id": "US-KS:negligence_elements:2f388fdd39a1",
+      "authority_type": "opinion",
+      "citation": "Montgomery v. Saleh, Nos. 117,518 & 117,519 (Kan. Ct. App. Mar. 30, 2018)",
+      "text": "The well-known essential elements of an action sounding in tort are duty, breach, causation, and damages. Summary judgment is appropriate if the defendant can establish the absence of evidence necessary to support an essential element of a plaintiff's case. Kuxhausen v. Tillman Partners, 291 Kan. 314, 318, 241 P.3d 75 (2010). When a plaintiff lacks evidence to establish an essential element of a claim, there can be no genuine issue of material fact because the complete failure of proof concerning an essential element of the plaintiff's case renders all other facts immaterial. Crooks v. Greene, 12 Kan. App. 2d 62, 64-65, 736 P.2d 78 (1987).",
+      "text_sha256": "3a439c976353e9cda3f8212480a8b7c33b754e28ae2b508f73d37c9b1b19a24c",
+      "publisher_sha256": "c8218f663f95aa0de409c70b6e089ff6eb43de7029a09f5d8c7cd86a40fd8634",
+      "retrieved_at": "2026-11-20T18:11:12.525567+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2018-03-30",
+      "court": "Kansas Court of Appeals",
+      "decision_date": "2018-03-30",
+      "procedural_posture": "Cross-appeals from summary judgment in consolidated negligence actions involving a police pursuit. The court affirmed in part, reversed in part, and remanded. The Kansas Supreme Court affirmed the appellate judgment in 2020.",
+      "opinion_role": "majority"
+    },
+    "b82bc59fd28e10081a37b8dd976d9c": {
+      "source_id": "US-KS:negligence_causation:713760ded024",
+      "authority_type": "opinion",
+      "citation": "Montgomery v. Saleh, Nos. 117,518 & 117,519 (Kan. June 26, 2020)",
+      "text": "Whether a causal connection exists between a breached duty and the plaintiffs' injuries is a question of fact. Yount v. Deibert, 282 Kan. 619, 624, 147 P.3d 1065 (2006). We have defined proximate cause as a cause that \"in natural and continuous sequence, unbroken by an efficient intervening cause, produces the injury and without which the injury would not have occurred, the injury being the natural and probable consequence of the wrongful act.\" Puckett v. Mt. Carmel Regional Medical Center, 290 Kan. 406, 420, 228 P.3d 1048 (2010). Proximate cause has two components: causation in fact and legal causation. Causation in fact means a cause-and-effect relationship exists between a party's conduct and the resulting harm. Legal causation means a party's conduct might foreseeably create a risk of harm and cause or contribute to the resulting harm. Drouhard-Nordhus v. Rosenquist, 301 Kan. 618, 623, 345 P.3d 281 (2015).",
+      "text_sha256": "82da11c597e0a0eddc6d199a317847421c5984107db855d55433674a030c0c78",
+      "publisher_sha256": "b8b6d937e6dd23e9266f34d5c1d360e8750dab2f500b070941737a3e3a80f6ed",
+      "retrieved_at": "2026-11-20T18:12:28.033535+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2020-06-26",
+      "court": "Supreme Court of Kansas",
+      "decision_date": "2020-06-26",
+      "procedural_posture": "Review of the appellate judgment concerning summary judgment in consolidated police-pursuit negligence cases. The court affirmed the appellate judgment and remanded.",
+      "opinion_role": "majority"
     }
   },
   "fault_allocation": {

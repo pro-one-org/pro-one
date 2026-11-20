@@ -338,6 +338,18 @@
         "retrieved_at": "2026-11-20T17:26:26.383444+00:00",
         "sha256": "a0edacb6bd832dc6e3eca009785e5836febd45f239c70c801f6ffa7e60953eb9"
       }
+    },
+    "US-LA:small_claims:52ab86ff2ba3": {
+      "category": "small_claims",
+      "title": "La. Rev. Stat. § 13:5202(A)–(E)",
+      "url": "https://legis.la.gov/Legis/Law.aspx?d=77961",
+      "locator": "La. Rev. Stat. § 13:5202(A)–(E)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:05:10.877521+00:00",
+        "sha256": "b1210232944b06af9e895d8f3a823c2cda86b651e7162893e180c86f5ee729d0"
+      }
     }
   },
   "court_directory": [
@@ -602,6 +614,18 @@
       "retrieved_at": "2026-11-20T17:26:26.383444+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "5eb6350265d14955cefd3eda47f324": {
+      "source_id": "US-LA:small_claims:52ab86ff2ba3",
+      "authority_type": "statute",
+      "citation": "La. Rev. Stat. § 13:5202(A)–(E)",
+      "text": "A. A small claims division shall be a court not of record and shall have civil subject matter jurisdiction in cases where the amount in dispute does not exceed five thousand dollars, exclusive of interest, court costs, attorney fees, or penalties, whether provided by agreement or by law, provided that not more than ten parties plaintiff shall be joined in the same action pursuant to Article 463 of the Code of Civil Procedure and that there shall be no class certification pursuant to Articles 591 through 597 of the Code of Civil Procedure. B. A small claims division shall have authority to grant any appropriate relief, including money damages and equitable relief. Injunctions and restraining orders shall not issue from a small claims division, except to arrest the execution of its own writ. Class actions, summary proceedings, and executory proceedings shall be prohibited. C. The judges and clerks of the respective courts shall serve as the judges and clerks of the small claims divisions, except that an attorney appointed by the judges may serve as arbitrator as hereinafter provided. D. Each court may by court rule establish mass filing limitations on all parties filing claims in the small claims divisions. E. In the City Court of East St. Tammany, the small claims division shall have civil subject matter jurisdiction in cases where the amount in dispute is the same as the amount established for civil jurisdiction in a justice of the peace court, exclusive of interest, court costs, attorney fees, or penalties, whether provided by agreement or by law, provided that not more than ten parties plaintiff shall be joined in the same action pursuant to Code of Civil Procedure Article 463, and there shall be no class certification pursuant to Code of Civil Procedure Articles 591 through 597.",
+      "text_sha256": "4987080e21e611998611845a9f988543f0994b83c9deddf20961d7a0a0bbfc2a",
+      "publisher_sha256": "b1210232944b06af9e895d8f3a823c2cda86b651e7162893e180c86f5ee729d0",
+      "retrieved_at": "2026-11-20T18:05:10.877521+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2020-06-11"
     }
   },
   "fault_allocation": {

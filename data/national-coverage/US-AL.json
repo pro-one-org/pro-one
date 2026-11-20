@@ -328,6 +328,18 @@
         "retrieved_at": "2026-11-20T16:29:32.742648+00:00",
         "sha256": "6eadd3c59badcf58fbbe18f09d11060fec52a596f10c5ef6793de71c50b5b398"
       }
+    },
+    "US-AL:deposit:b2b131bd62fc": {
+      "category": "deposit",
+      "title": "Ala. Act 2014-279, § 1 (Ala. Code § 35-9A-201(a)–(d))",
+      "url": "https://alison.legislature.state.al.us/files/pdf/SearchableInstruments/2014RS/PrintFiles/SB291-Enr.pdf",
+      "locator": "Ala. Act 2014-279, § 1 (Ala. Code § 35-9A-201(a)–(d))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:57:54.087002+00:00",
+        "sha256": "0017851f280518dd876ddc5665092b053b92a38c8d811bb42960f3a7c7991baf"
+      }
     }
   },
   "court_directory": [
@@ -577,6 +589,19 @@
       "language": "en",
       "edition": "2021 legislative enrolled text, matched to the Secretary of State’s enacted Act 2021-349",
       "effective_from": "2021-08-01"
+    },
+    "a530ac7efd000efb40788c9efa03f5": {
+      "source_id": "US-AL:deposit:b2b131bd62fc",
+      "authority_type": "statute",
+      "citation": "Ala. Act 2014-279, § 1 (Ala. Code § 35-9A-201(a)–(d))",
+      "text": "(a) A landlord may not demand or receive money as security, in an amount in excess of one month's periodic rent, except for pets, changes to the premises, or increased liability risks to the landlord or premises, for tenant's obligations under a rental agreement. (b) Upon termination of the tenancy, money held by the landlord as security may be applied to the payment of accrued rent and the amount of damages that the landlord has suffered by reason of the tenant's noncompliance with Section 35-9A-301 all as itemized by the landlord in a written notice delivered to the tenant together with the amount due 60 days after termination of the tenancy and delivery of possession. (c) If the landlord does not refund the entire deposit, the landlord, within the 60-day period, shall provide the tenant an itemized list of amounts withheld. (d) Upon vacating the premises, the tenant shall provide to the landlord a valid forwarding address, in writing, to which the deposit or itemized accounting, or both, may be mailed. If the tenant fails to provide a valid forwarding address, the landlord shall mail, by first class mail, the deposit or itemized accounting, or both, to the last known address of the tenant or, if none, to the tenant at the address of the property. Any deposit unclaimed by the tenant as well as any check outstanding shall be forfeited by the tenant after a period of 90 days.",
+      "text_sha256": "f4ec45a530f3a8c98507752389bebb36bdfaa3bb258a34ec9910ef605f7d0084",
+      "publisher_sha256": "0017851f280518dd876ddc5665092b053b92a38c8d811bb42960f3a7c7991baf",
+      "retrieved_at": "2026-11-20T17:57:54.087002+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Alabama Act 2014-279 (effective July 1, 2014)",
+      "effective_from": "2014-07-01"
     }
   },
   "fault_allocation": {
