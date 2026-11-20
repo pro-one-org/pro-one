@@ -1622,5 +1622,71 @@
         }
       ]
     }
+  },
+  {
+    "id": "wi_pay_upon_employment_separation",
+    "version": "v1",
+    "jurisdiction": "US-WI",
+    "legal_area": "employment",
+    "kind": "entitlement",
+    "label": "Pay upon separation from employment",
+    "plain_language_label": "Pay upon separation from employment",
+    "authority_as_of": "2026-11-04",
+    "topics": [
+      "wage_separation"
+    ],
+    "matter_types": [
+      "wage"
+    ],
+    "limitations": [
+      "The two statutory provisions cover distinct separation circumstances. Worker classification, contractual terms, the cause of separation and payroll facts require review. The ordinary separation provision cross-references subsection (1), including payment-frequency exceptions. No due date or recovery is calculated."
+    ],
+    "elements": [
+      {
+        "id": "resignation_or_discharge",
+        "label": "Pay after resignation or discharge",
+        "description": "Check whether the employee quit or was discharged and whether the commission-sales or definite-term contract qualifications apply. Identify the established payroll schedule and the requirements in subsection (1).",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-43d66f1e5cb85a3532c43fe0a8d007766f73221bd606ab254af45e92b4dcbc15-p1",
+            "source_id": "corpus-43d66f1e5cb85a3532c43fe0a8d007766f73221bd606ab254af45e92b4dcbc15",
+            "source_type": "statute",
+            "source_version": "Certified Wisconsin Statutes as of November 4, 2026",
+            "excerpt_hash": "sha256:bcbf2b4e19da1c42707ba820f8ca4a72c3cf9d9f64fe8e0e03f07794366f0d12"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "business_change",
+        "label": "Pay after a covered business change",
+        "description": "Check whether a merger, liquidation, disposition, cessation of operations or relocation caused the employee’s separation and identify the unpaid wages and the employer or successor involved.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-6d9f1936f730a2e7b35fd8b6f8f85b067dba4f630a378655830d3e73e1fa2039-p1",
+            "source_id": "corpus-6d9f1936f730a2e7b35fd8b6f8f85b067dba4f630a378655830d3e73e1fa2039",
+            "source_type": "statute",
+            "source_version": "Certified Wisconsin Statutes as of November 4, 2026",
+            "excerpt_hash": "sha256:5607848d8bdab97f3816be95884b9f1f110becec2d27da4362d3cf86ba9bd4e2"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "any",
+      "operands": [
+        {
+          "op": "element",
+          "element": "resignation_or_discharge"
+        },
+        {
+          "op": "element",
+          "element": "business_change"
+        }
+      ]
+    }
   }
 ]

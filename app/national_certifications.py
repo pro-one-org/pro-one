@@ -13,10 +13,9 @@ from app.jurisdictions import ROOT
 
 
 CERTIFIED_TYPES = {"US-WI": "statute", "US-MI": "court_rule"}
-MICHIGAN_CIVIL_RULES = (
+MICHIGAN_RULES_BOOK = (
     "https://www.courts.michigan.gov/siteassets/rules-instructions-administrative-orders/"
     "michigan-court-rules/michigan-court-rules-responsive-html5.zip/Michigan_Court_Rules/"
-    "Court_Rules_Chapter_2/Court_Rules_Chapter_2.htm"
 )
 
 
@@ -102,10 +101,13 @@ def michigan_civil_rules(digest):
 
 
 def michigan_basis(url, digest, anchor, citation, quote):
-    matched = re.fullmatch(r"MCR (2\.\d{3})\(([A-Z])\)", citation)
-    if url != MICHIGAN_CIVIL_RULES or not matched or not re.fullmatch(r"\d+", anchor):
+    matched = re.fullmatch(r"MCR (([24])\.\d{3})\(([A-Z])\)", citation)
+    if not matched or not re.fullmatch(r"\d+", anchor):
         raise ValueError("invalid_certified_publication")
-    rule, subsection = matched.groups()
+    rule, chapter, subsection = matched.groups()
+    chapter_name = f"Court_Rules_Chapter_{chapter}"
+    if url != f"{MICHIGAN_RULES_BOOK}{chapter_name}/{chapter_name}.htm":
+        raise ValueError("invalid_certified_publication")
     rows = michigan_civil_rules(digest)
     dates = [text for _, classes, text in rows if "MainDate" in classes]
     headings = [index for index, (_, classes, text) in enumerate(rows)
@@ -134,7 +136,7 @@ def michigan_basis(url, digest, anchor, citation, quote):
         raise ValueError("certified_version_requires_effective_date_review")
     if not quote or quote != " ".join(text for _, _, text in excerpt if text):
         raise ValueError("certified_excerpt_or_date_mismatch")
-    return day, "Michigan Supreme Court Civil Procedure chapter. " + dates[0]
+    return day, f"Michigan Supreme Court Rules Chapter {chapter}. " + dates[0]
 
 
 @lru_cache(maxsize=64)

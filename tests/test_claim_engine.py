@@ -62,7 +62,7 @@ class ClaimTests(unittest.TestCase):
     def test_wisconsin_claims_replay_only_for_the_certified_date(self):
         catalog = self.engine.catalog
         for key in ("wi_wages_due", "wi_comparative_negligence", "wi_residential_landlord_repairs",
-                    "wi_deceptive_public_representation"):
+                    "wi_deceptive_public_representation", "wi_pay_upon_employment_separation"):
             theory = catalog.active[key]
             bound, _, _ = catalog.research(theory, law_as_of=date(2026, 11, 4))
             self.assertEqual(set(bound), {element.id for element in theory.elements})

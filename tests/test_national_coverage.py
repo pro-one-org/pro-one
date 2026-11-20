@@ -104,6 +104,18 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertFalse(provider.search(query.model_copy(update={"authority_as_of": "2026-11-20"})))
         self.assertFalse(provider.search(query.model_copy(update={"state": "Wisconsin"})))
 
+    def test_michigan_small_claims_removal_has_a_distinct_rule_date_and_topic(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Michigan", legal_area="civil_procedure",
+                               topics=["small_claims"], authority_types=["court_rule"],
+                               authority_status="current", authority_as_of="2024-09-01")
+        docs = [provider.fetch(key) for key in provider.search(query)]
+        removal = next(doc for doc in docs if doc.source["citation"]["preferred_citation"] == "MCR 4.306(B)")
+        self.assertIn("within 14 days after the date of the order", removal.text)
+        self.assertEqual(removal.source["jurisdiction"]["court"], "Small Claims Division of the Michigan District Court")
+        for change in ({"authority_as_of": "2026-11-18"}, {"topics": ["initial_response"]}):
+            self.assertFalse(provider.search(query.model_copy(update=change)))
+
     def test_action_references_expose_dated_authority_without_unlocking_execution(self):
         actions = coverage("US-WI")["action_shells"]
         complaint = next(action for action in actions if action["action_type"] == "complaint")
@@ -291,16 +303,18 @@ class NationalCoverageTests(unittest.TestCase):
 
     def test_exact_publication_replay_rejects_invented_or_changed_text(self):
         publisher_editions = {
-            "US-WI": (date(2026, 11, 4), "Published and certified"),
-            "US-MI": (date(2026, 11, 18), "Chapter Updated with MSC Order(s) Effective on"),
+            ("US-WI", date(2026, 11, 4)): "Published and certified",
+            ("US-MI", date(2026, 11, 18)): "Michigan Supreme Court Rules Chapter 2.",
+            ("US-MI", date(2024, 9, 1)): "Michigan Supreme Court Rules Chapter 4.",
         }
         for provider, selector, raw, _ in retained_observations():
             with self.subTest(source=provider.source.name, selector=selector):
                 observation, = provider.normalize(selector, raw)
                 self.assertIn(observation.version.jurisdiction, provider.source.jurisdictions)
                 if observation.version.currentness == "current_as_of":
-                    day, basis = publisher_editions[observation.version.jurisdiction]
-                    self.assertEqual(observation.version.current_as_of, day)
+                    edition = (observation.version.jurisdiction, observation.version.current_as_of)
+                    self.assertIn(edition, publisher_editions)
+                    basis = publisher_editions[edition]
                     self.assertIn(basis, observation.version.currentness_basis)
                 else:
                     self.assertIn(observation.version.currentness, {"unresolved", "historical"})

@@ -23,7 +23,7 @@ Court directories may include historic court structures. The `edition` and `curr
 
 ## Reproduce the evidence
 
-The status report counts retained authority separately from matrix cells. For six Wisconsin statutory excerpts, offline validation reads the exact compressed publisher HTML, verifies its SHA-256 digest, and matches the excerpt and statutory citation inside the publisher's subsection. The publisher certified that edition as of November 4, 2026. A dated passage can support research on that date. The broader capability still requires its own legal, procedural and local review.
+The status report counts retained authority separately from matrix cells. Offline validation verifies the SHA-256 digest of retained publisher HTML and matches the excerpt to the cited subsection. The Wisconsin Legislature certified its retained statutory edition as of November 4, 2026. The Michigan Supreme Court gives November 18, 2026 for the retained Chapter 2 civil rules and September 1, 2024 for the retained Chapter 4 small-claims rules. Research can use each dated passage for its stated date and scope. The broader capability still requires its own legal, procedural and local review.
 
 ```sh
 python scripts/national_coverage.py validate
