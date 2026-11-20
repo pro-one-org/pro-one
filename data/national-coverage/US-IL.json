@@ -333,6 +333,42 @@
         "retrieved_at": "2026-11-20T18:35:16.988176+00:00",
         "sha256": "67085d04d4bc7bac655f114a6c7048b0a82bdd9f8290a6c2d5a199f646513637"
       }
+    },
+    "US-IL:small_claims:f1114bae7bfc": {
+      "category": "small_claims",
+      "title": "Ill. Sup. Ct. R. 281",
+      "url": "https://www.illinoiscourts.gov/resources/7e33f8da-3efb-48b2-8c20-1257037e97ec/file",
+      "locator": "Ill. Sup. Ct. R. 281",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:12:48.997856+00:00",
+        "sha256": "965cb78d591aa5d3c7e71d3978bd70a39073fa766eef7676205930618550a3db"
+      }
+    },
+    "US-IL:small_claims:c32e8b336e24": {
+      "category": "small_claims",
+      "title": "Ill. Sup. Ct. R. 282(a)",
+      "url": "https://www.illinoiscourts.gov/resources/0b9c3467-f08d-4fe4-a69a-31ea7052e0df/file",
+      "locator": "Ill. Sup. Ct. R. 282(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:12:49.037758+00:00",
+        "sha256": "12a243ce73e46e85d5af8b58eda652adb3218c8fc94ebe85462c29ff1ece096d"
+      }
+    },
+    "US-IL:small_claims:ff727e043e0e": {
+      "category": "small_claims",
+      "title": "Ill. Sup. Ct. R. 284",
+      "url": "https://www.illinoiscourts.gov/resources/4263eadc-0108-4bbc-a04d-ef48a321a609/file",
+      "locator": "Ill. Sup. Ct. R. 284",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:12:48.998861+00:00",
+        "sha256": "cbcb910bd6873de3c90b9f82c733aebab721bfef20f5e89320524bf73d7859ce"
+      }
     }
   },
   "court_directory": [
@@ -554,6 +590,48 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Illinois Public Act 104-0149 (2025 enacted text)"
+    },
+    "3af8da9d717d886705f1e4417e25d9": {
+      "source_id": "US-IL:small_claims:f1114bae7bfc",
+      "authority_type": "court_rule",
+      "citation": "Ill. Sup. Ct. R. 281",
+      "text": "For the purpose of the application of Rules 281 through 288, a small claim is a civil action based on either tort or contract for money not in excess of $10,000, exclusive of interest and costs. The order entered December 6, 2005, amending Rule 281 and effective January 1, 2006, shall apply only to cases filed after such effective date.",
+      "text_sha256": "c27eede7d6c18bd10de719887f5679d03b6c3e9f2fc38d6575d134c6a4723c92",
+      "publisher_sha256": "965cb78d591aa5d3c7e71d3978bd70a39073fa766eef7676205930618550a3db",
+      "retrieved_at": "2026-11-20T23:12:48.997856+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Supreme Court published rule as amended effective 2022-01-01",
+      "court": "Illinois Circuit Court",
+      "effective_from": "2022-01-01"
+    },
+    "07f5d3ae531e057a3bef2daf55e5fb": {
+      "source_id": "US-IL:small_claims:c32e8b336e24",
+      "authority_type": "court_rule",
+      "citation": "Ill. Sup. Ct. R. 282(a)",
+      "text": "(a) Commencement of Actions. An action on a small claim may be commenced by paying to the clerk of the court the required filing fee and filing a short and simple complaint setting forth (1) plaintiff’s name, residence address, e-mail address (required for attorneys only), and telephone number, (2) defendant’s name and place of residence, or place of business or regular employment, and (3) the nature and amount of the plaintiff’s claim, giving dates and other relevant information. If the claim is based upon a written instrument, a copy thereof or of so much of it as is relevant must be copied in or attached to the original and all copies of the complaint, unless the plaintiff attaches to the complaint an affidavit stating facts showing that the instrument is unavailable to him.",
+      "text_sha256": "acb415838d716141f39f2134c944b5462a9e536f3677a6c6067c4ac29efdc359",
+      "publisher_sha256": "12a243ce73e46e85d5af8b58eda652adb3218c8fc94ebe85462c29ff1ece096d",
+      "retrieved_at": "2026-11-20T23:12:49.037758+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Supreme Court published rule as amended effective 2018-01-01",
+      "court": "Illinois Circuit Court",
+      "effective_from": "2018-01-01"
+    },
+    "9f2fa8aad3dc18e2c752e0b81cf1e9": {
+      "source_id": "US-IL:small_claims:ff727e043e0e",
+      "authority_type": "court_rule",
+      "citation": "Ill. Sup. Ct. R. 284",
+      "text": "Unless otherwise provided by circuit court rule, at the request of the plaintiff and in lieu of personal service, service in small claims may be made within the state as follows: (a) For each defendant to be served the plaintiff shall pay to the clerk of the court a fee of $2, plus the cost of mailing, and file a summons containing an affidavit setting forth the defendant’s last known mailing address. (b) The clerk forthwith shall mail to the defendant, at the address appearing in the affidavit, the copy of the summons and complaint, certified or registered mail, return receipt requested, showing to whom delivered and the date and address of delivery. United States Postal Service electronic return receipt may be utilized in lieu of paper receipts. The summons and complaint shall be mailed on a “restricted delivery” basis when service is directed to a natural person. The envelope and return receipt shall bear the return address of the clerk, and the return receipt shall include the docket number of the case. The receipt for certified or registered mail shall state the name and address of the addressee, and the date of mailing, and shall be filed by the clerk. (c) The return receipt, when returned to the clerk, shall be filed by the clerk. If the receipt shows delivery at least 21 days before the day for appearance, the receipt shall constitute proof of service. (d) The clerk shall note the fact of service in a permanent record.",
+      "text_sha256": "2d4947ccb4ad1e919a288f231e7d19e79af491a1aedefece7ad0b677d671135c",
+      "publisher_sha256": "cbcb910bd6873de3c90b9f82c733aebab721bfef20f5e89320524bf73d7859ce",
+      "retrieved_at": "2026-11-20T23:12:48.998861+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Supreme Court published rule as amended effective 2023-04-20",
+      "court": "Illinois Circuit Court",
+      "effective_from": "2023-04-20"
     }
   },
   "fault_allocation": {

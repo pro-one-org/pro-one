@@ -348,6 +348,18 @@
         "retrieved_at": "2026-11-20T18:29:53.598273+00:00",
         "sha256": "0cdcf838290824affbc24f13831a2520e431ab5995dc0f5e18af1224e653d9d4"
       }
+    },
+    "US-KS:small_claims:88a7762ac603": {
+      "category": "small_claims",
+      "title": "K.S.A. § 61-2703(a)",
+      "url": "https://www.kslegislature.gov/b2025_26/laws/061_000_0000_chapter/061_027_0000_article/061_027_0003_section/061_027_0003_k/",
+      "locator": "K.S.A. § 61-2703(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:12:28.568917+00:00",
+        "sha256": "815e12bf3de64e69dfac46df964e22c4933f7c261edfe85e56ebc1bb82b5875e"
+      }
     }
   },
   "court_directory": [
@@ -578,6 +590,20 @@
       "retrieved_at": "2026-11-20T18:29:53.598273+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "2e3e30458dccc19a958b9f3fefbdef": {
+      "source_id": "US-KS:small_claims:88a7762ac603",
+      "authority_type": "statute",
+      "citation": "K.S.A. § 61-2703(a)",
+      "text": "(a) \"Small claim\" means a claim for the recovery of money or personal property, where the amount claimed or the value of the property sought does not exceed $10,000, exclusive of interest, costs and any damages awarded pursuant to K.S.A. 60-2610, and amendments thereto. In actions of replevin, the verified petition fixing the value of the property shall be determinative of the value of the property for jurisdictional purposes. A small claim shall not include: (1) An assigned claim; (2) a claim based on an obligation or indebtedness allegedly owed to a person other than the person filing the claim, where the person filing the claim is not a full-time employee or officer of the person to whom the obligation or indebtedness is allegedly owed; or (3) a claim obtained through subrogation.",
+      "text_sha256": "8206db739e376bdba38e5ae97293fa0e6893ed410e3a41570803f0bdecbf2049",
+      "publisher_sha256": "815e12bf3de64e69dfac46df964e22c4933f7c261edfe85e56ebc1bb82b5875e",
+      "retrieved_at": "2026-11-20T23:12:28.568917+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "2026 Kansas Statutes",
+      "court": "Kansas District Court",
+      "effective_from": "2024-07-01"
     }
   },
   "fault_allocation": {

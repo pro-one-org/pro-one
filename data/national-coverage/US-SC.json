@@ -406,6 +406,18 @@
         "retrieved_at": "2026-11-20T18:01:54.679945+00:00",
         "sha256": "ceafdf641e45fc58394744abc5e8d564c326c55991b9221db868acc51bd39fbb"
       }
+    },
+    "US-SC:small_claims:60e7c17b807f": {
+      "category": "small_claims",
+      "title": "S.C. Code Ann. § 22-3-10(1)-(2)",
+      "url": "https://www.scstatehouse.gov/Archives/CodeofLaws2024/t22c003",
+      "locator": "S.C. Code Ann. § 22-3-10(1)-(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:12:28.583044+00:00",
+        "sha256": "9273f2cf86343b0c545645560e9e6c8f5cb3266a20ccddb4830c57c1db71fd1c"
+      }
     }
   },
   "court_directory": [
@@ -683,6 +695,19 @@
       "retrieved_at": "2026-11-20T18:01:54.679945+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "bc2e121bbf68e94c19215760c1d244": {
+      "source_id": "US-SC:small_claims:60e7c17b807f",
+      "authority_type": "statute",
+      "citation": "S.C. Code Ann. § 22-3-10(1)-(2)",
+      "text": "Magistrates have concurrent civil jurisdiction in the following cases: (1) in actions arising on contracts for the recovery of money only, if the sum claimed does not exceed seven thousand five hundred dollars; (2) in actions for damages for injury to rights pertaining to the person or personal or real property, if the damages claimed do not exceed seven thousand five hundred dollars;",
+      "text_sha256": "59026ff40c164323a105f9b421996ad0d222db78e5d893ce8589b30b55d53f80",
+      "publisher_sha256": "9273f2cf86343b0c545645560e9e6c8f5cb3266a20ccddb4830c57c1db71fd1c",
+      "retrieved_at": "2026-11-20T23:12:28.583044+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "South Carolina 2024 archived Code of Laws",
+      "court": "South Carolina Magistrates Court"
     }
   },
   "fault_allocation": {

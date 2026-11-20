@@ -333,6 +333,18 @@
         "retrieved_at": "2026-11-20T22:55:41.620213+00:00",
         "sha256": "2ac047415072639773e28f6601fd0520a96319a42e7a23920bad06839490e4df"
       }
+    },
+    "US-MT:small_claims:c8226e0429d1": {
+      "category": "small_claims",
+      "title": "Mont. Code Ann. § 25-35-502",
+      "url": "https://mca.legmt.gov/bills/mca/title_0250/chapter_0350/part_0050/section_0020/0250-0350-0050-0020.html",
+      "locator": "Mont. Code Ann. § 25-35-502",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:12:28.825631+00:00",
+        "sha256": "b86baac79d80045a384f52558d137126799efa71144d3fc5751d56a5eda29311"
+      }
     }
   },
   "court_directory": [
@@ -582,6 +594,19 @@
       "language": "en",
       "edition": "Montana Supreme Court AF 07-0157 rules attachment effective July 1, 2017",
       "court": "Montana District Court"
+    },
+    "f2dbef60ebd624c04c6c216e41c6b2": {
+      "source_id": "US-MT:small_claims:c8226e0429d1",
+      "authority_type": "statute",
+      "citation": "Mont. Code Ann. § 25-35-502",
+      "text": "(1) The small claims court has jurisdiction over all actions for the recovery of money or specific personal property when the amount claimed does not exceed $7,000, exclusive of costs, and the defendant can be served within the county where the action is commenced. (2) The small claims court has jurisdiction over an interpleader under 25-35-508 in which the amount claimed does not exceed $7,000.",
+      "text_sha256": "2598655ade3d550af62253e653c3cb79b423b8e7e18c198cfa37e6941a4bc1f7",
+      "publisher_sha256": "b86baac79d80045a384f52558d137126799efa71144d3fc5751d56a5eda29311",
+      "retrieved_at": "2026-11-20T23:12:28.825631+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Montana Code Annotated 2025",
+      "court": "Montana Justice Court"
     }
   },
   "forms": {

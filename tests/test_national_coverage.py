@@ -494,6 +494,19 @@ class NationalCoverageTests(unittest.TestCase):
                 self.assertIn(citation, provider.fetch(key).source["citation"]["preferred_citation"])
                 self.assertFalse(provider.search(matter.model_copy(update={"topics": ["wage_payment"]})))
 
+    def test_tennessee_electronic_form_preserves_transaction_scope(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Tennessee", legal_area="contracts",
+                               topics=["electronic_contract_form"], authority_types=["statute"],
+                               authority_status="historical")
+        key, = provider.search(query)
+        self.assertIn("solely because an electronic record was used", provider.fetch(key).text)
+        consent, = provider.search(query.model_copy(update={"topics": ["electronic_transaction_consent"]}))
+        self.assertIn("each of which has agreed to conduct transactions by electronic means",
+                      provider.fetch(consent).text)
+        self.assertFalse(provider.search(query.model_copy(update={"topics": ["contract_formation"]})))
+        self.assertFalse(provider.search(query.model_copy(update={"state": "Kentucky"})))
+
     def test_wisconsin_debt_cure_preserves_qualification_and_response_scope(self):
         provider = RetainedLegislativeResearch()
         matter = ResearchMatter(country="US", state="Wisconsin", legal_area="consumer_debt",
