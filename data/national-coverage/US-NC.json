@@ -366,6 +366,42 @@
         "retrieved_at": "2026-11-20T17:22:59.111835+00:00",
         "sha256": "508f6e2be78db2437949b9d122d2908c7fe905f48d1ffea438bf6165f1c22dac"
       }
+    },
+    "US-NC:small_claims:dbdf131661ef": {
+      "category": "small_claims",
+      "title": "N.C. Gen. Stat. § 7A-210 (small-claim action defined)",
+      "url": "https://www3.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_7A/GS_7A-210.html",
+      "locator": "N.C. Gen. Stat. § 7A-210 (small-claim action defined)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:32:56.018633+00:00",
+        "sha256": "a90f5c7e067bb86d8e5a61f68b977aa4aaaac2760bd480fce5d84c9277ccfdec"
+      }
+    },
+    "US-NC:small_claims:c7cfc8cb1ac0": {
+      "category": "small_claims",
+      "title": "N.C. Gen. Stat. § 7A-217 (personal jurisdiction in magistrate small claims)",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/PDF/BySection/Chapter_7A/GS_7A-217.pdf",
+      "locator": "N.C. Gen. Stat. § 7A-217 (personal jurisdiction in magistrate small claims)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:32:56.185377+00:00",
+        "sha256": "de40e1eb69dd470adce78e85d4dd04c467653f168200b5430c7c841b71786798"
+      }
+    },
+    "US-NC:small_claims:ec2253c800b4": {
+      "category": "small_claims",
+      "title": "N.C. Gen. Stat. § 7A-218 (answer in magistrate small claims)",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/PDF/BySection/Chapter_7A/GS_7A-218.pdf",
+      "locator": "N.C. Gen. Stat. § 7A-218 (answer in magistrate small claims)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:32:56.098226+00:00",
+        "sha256": "e67aef8b4edff756adf8418aa6a1c70d82dc6505c20253e86fd9e49624d9b0c5"
+      }
     }
   },
   "court_directory": [
@@ -601,6 +637,39 @@
       "decision_date": "2025-05-23",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from a divided intermediate appellate decision reviewing dismissal of an insurance-agent negligence claim. The majority analyzed the pleading-stage defense of contributory negligence."
+    },
+    "e4dd69e487fb5c03fbad0e058630eb": {
+      "source_id": "US-NC:small_claims:dbdf131661ef",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 7A-210 (small-claim action defined)",
+      "text": "For purposes of this Article a small claim action is a civil action wherein: (1) The amount in controversy, computed in accordance with G.S. 7A-243, does not exceed ten thousand dollars ($10,000); and (2) The only principal relief prayed is monetary, or the recovery of specific personal property, or summary ejectment, or any combination of the foregoing in properly joined claims; and (3) The plaintiff has requested assignment to a magistrate in the manner provided in this Article. The seeking of the ancillary remedy of claim and delivery or an order from the clerk of superior court for the relinquishment of property subject to a lien pursuant to G.S 44A-4(a) does not prevent an action otherwise qualifying as a small claim under this Article from so qualifying.",
+      "text_sha256": "c88a3438416b319280afa080795199ee792c00b09d400cd701ed3a8c5d9af4ed",
+      "publisher_sha256": "a90f5c7e067bb86d8e5a61f68b977aa4aaaac2760bd480fce5d84c9277ccfdec",
+      "retrieved_at": "2026-11-20T18:32:56.018633+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "6b228c462cb44e8a493850776938dd": {
+      "source_id": "US-NC:small_claims:c7cfc8cb1ac0",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 7A-217 (personal jurisdiction in magistrate small claims)",
+      "text": "When by order or rule a small claim action is assigned to a magistrate, the court may obtain jurisdiction over the person of the defendant by the following methods: (1) By delivering a copy of the summons and of the complaint to the defendant or by leaving copies thereof at the defendant's dwelling house or usual place of abode with some person of suitable age and discretion then residing therein. When the defendant is under any legal disability, the defendant may be subjected to personal jurisdiction only by personal service of process in the manner provided by G.S. 1A‑1, Rule 4(j)(2). (2) When the defendant is not under any legal disability, the defendant may be served by registered or certified mail, signature confirmation, or designated delivery service as provided in G.S. 1A‑1, Rule 4(j). Proof of service is as provided in G.S. 1A‑1, Rule 4(j2). (3) When the defendant is under no legal disability, the defendant may be subjected to the jurisdiction of the court over the person of the defendant by written acceptance of service or by voluntary appearance. (4) In summary ejectment cases only, service as provided in G.S. 42‑29 is also authorized.",
+      "text_sha256": "22284213e62dd57613526acc7638e2510640cc9e82bb0ae5a4737661472a153e",
+      "publisher_sha256": "de40e1eb69dd470adce78e85d4dd04c467653f168200b5430c7c841b71786798",
+      "retrieved_at": "2026-11-20T18:32:56.185377+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "679454b0dca8657672bf4f2887704f": {
+      "source_id": "US-NC:small_claims:ec2253c800b4",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 7A-218 (answer in magistrate small claims)",
+      "text": "At any time prior to the time set for trial, the defendant may file a written answer admitting or denying all or any of the allegations in the complaint, or pleading new matter in avoidance. No particular form is required, but it is sufficient if in a form to enable a person of common understanding to know the nature of the defense intended. A general denial of all the allegations of the complaint is permissible. Failure of defendant to file a written answer after being subjected to the jurisdiction of the court over his person constitutes a general denial.",
+      "text_sha256": "0d765f84691903a6b8d232135043a73de49a81fb54a5a4ed060c75c5886826b2",
+      "publisher_sha256": "e67aef8b4edff756adf8418aa6a1c70d82dc6505c20253e86fd9e49624d9b0c5",
+      "retrieved_at": "2026-11-20T18:32:56.098226+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

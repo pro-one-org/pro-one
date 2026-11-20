@@ -392,6 +392,18 @@
         "retrieved_at": "2026-11-19T19:35:43.096131+00:00",
         "sha256": "e21bdde020606c1ae00134b3739ae29c6ed5817d47c6295a47e1239a25a31d83"
       }
+    },
+    "US-NV:small_claims:952bc214c3cb": {
+      "category": "small_claims",
+      "title": "Nev. Rev. Stat. § 73.010(1)–(2) (justice-court small claims)",
+      "url": "https://www.leg.state.nv.us/NRs/NRS-073.html",
+      "locator": "Nev. Rev. Stat. § 73.010(1)–(2) (justice-court small claims)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:32:56.185377+00:00",
+        "sha256": "da3d1dd76e90895e39f9a4345bd75c93d19f75ec7292aa25b56ee9516089c140"
+      }
     }
   },
   "court_directory": [
@@ -607,6 +619,18 @@
       "retrieved_at": "2026-11-19T19:35:43.096131+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "e99e86a9eb9a18a0e8945460dcac3c": {
+      "source_id": "US-NV:small_claims:952bc214c3cb",
+      "authority_type": "statute",
+      "citation": "Nev. Rev. Stat. § 73.010(1)–(2) (justice-court small claims)",
+      "text": "1. A justice of the peace has jurisdiction and may proceed as provided in this chapter and by rules of court in all cases arising in the justice court for the recovery of money only, where the amount claimed does not exceed $10,000. 2. An action brought pursuant to this chapter must be filed in one of the following townships as the proper venue for the action: (a) The township in which the defendant named is a resident, does business or is employed at the time the cause of action arose or at the time the complaint is filed; or (b) In addition to any township described in paragraph (a): (1) In a case involving injury to the person or property, the township where the injury was committed. (2) In a case involving a person who has contracted to perform an obligation at, or relating to, a particular place, the township in which the obligation is or was to be performed. For the purposes of this subparagraph, the township in which the obligation is incurred shall be deemed to be the township in which the obligation is or was to be performed, unless there is a special contract to the contrary.",
+      "text_sha256": "98762daf5476f4c03fc903c7b15558bf17d00e1686c742fe49f87b74333e230b",
+      "publisher_sha256": "da3d1dd76e90895e39f9a4345bd75c93d19f75ec7292aa25b56ee9516089c140",
+      "retrieved_at": "2026-11-20T18:32:56.185377+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Nevada 2025 NRS Chapter 73 publication, revised April 15, 2026"
     }
   },
   "fault_allocation": {

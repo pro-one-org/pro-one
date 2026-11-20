@@ -368,6 +368,30 @@
         "retrieved_at": "2026-11-20T18:29:53.760781+00:00",
         "sha256": "e3836e7db9711d8c0964b41417c0e488194b49708d6e3d6b80a9b02d804c2884"
       }
+    },
+    "US-RI:small_claims:1487f09a97e1": {
+      "category": "small_claims",
+      "title": "R.I. Gen. Laws § 10-16-1 (covered small and consumer claims)",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE10/10-16/10-16-1.htm",
+      "locator": "R.I. Gen. Laws § 10-16-1 (covered small and consumer claims)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:32:56.255418+00:00",
+        "sha256": "1d1fc9f0cb6f4e9f6a53a7470665af485eec9458e48bf87466993254787c9aa3"
+      }
+    },
+    "US-RI:small_claims:8a25720c2a58": {
+      "category": "small_claims",
+      "title": "R.I. Gen. Laws § 10-16-3 (small and consumer claims venue and rules)",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE10/10-16/10-16-3.htm",
+      "locator": "R.I. Gen. Laws § 10-16-3 (small and consumer claims venue and rules)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:32:56.299457+00:00",
+        "sha256": "32dcbca48c020e4e265696a568939d089fc7fa1cf78369715ec967b5ab17ea0d"
+      }
     }
   },
   "court_directory": [
@@ -663,6 +687,28 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "2023-06-27"
+    },
+    "187eba9c325ac29bb54874f89de087": {
+      "source_id": "US-RI:small_claims:1487f09a97e1",
+      "authority_type": "statute",
+      "citation": "R.I. Gen. Laws § 10-16-1 (covered small and consumer claims)",
+      "text": "In all ex contractu civil actions and in any action to recover the amount of any tax for money only not in excess of five thousand dollars ($5,000) exclusive of interest and costs, and in all actions or suits to recover damages resulting from a retail sale of tangible personal property to a member of the general public or from services rendered to a member of the general public in which the plaintiff seeks to recover an amount of money only not in excess of five thousand dollars ($5,000) exclusive of interest and costs, and in all actions or suits based upon a negotiable instrument involving an amount of money only not in excess of five thousand dollars ($5,000) exclusive of interest and costs, the procedure shall, at the plaintiff’s election, shown by his or her waiver of appeal, be as provided by this chapter.",
+      "text_sha256": "f13fb49794747f49d807b89d5c70ee28d11c11d027a8a4204e9f60f48eb58b21",
+      "publisher_sha256": "1d1fc9f0cb6f4e9f6a53a7470665af485eec9458e48bf87466993254787c9aa3",
+      "retrieved_at": "2026-11-20T18:32:56.255418+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "a01b64ec01d0f9d486037bb45ee953": {
+      "source_id": "US-RI:small_claims:8a25720c2a58",
+      "authority_type": "statute",
+      "citation": "R.I. Gen. Laws § 10-16-3 (small and consumer claims venue and rules)",
+      "text": "The venue of actions under this chapter shall be the same as in ordinary civil actions, except cases wherein the plaintiff is a corporation, in which event the action must be brought in the division of the district court wherein the defendant resides. If the defendant resides outside the state, then the venue shall be the same as in other civil actions. The laws relating to practice in ordinary civil actions in the district court, which are applicable to this procedure, and not inconsistent with the provisions of this chapter, shall apply to cases under this procedure.",
+      "text_sha256": "010663111ab0ec26f41d5b650d786a2be6073ecf2e462f19a03b8998340b886a",
+      "publisher_sha256": "32dcbca48c020e4e265696a568939d089fc7fa1cf78369715ec967b5ab17ea0d",
+      "retrieved_at": "2026-11-20T18:32:56.299457+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

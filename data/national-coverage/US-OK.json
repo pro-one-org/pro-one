@@ -356,6 +356,30 @@
         "retrieved_at": "2026-11-20T17:27:35.114115+00:00",
         "sha256": "0792c2e7714eae1611479043c9fd58bdcccf51ee55799a84f0ef7f1b7dd3ae7b"
       }
+    },
+    "US-OK:small_claims:5f455af8b91f": {
+      "category": "small_claims",
+      "title": "Okla. Stat. tit. 12, § 1751(A) (actions within small claims procedure)",
+      "url": "https://www.oscn.net/applications/oscn/deliverdocument.asp?citeid=438809",
+      "locator": "Okla. Stat. tit. 12, § 1751(A) (actions within small claims procedure)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:32:56.487792+00:00",
+        "sha256": "ef11f2943cad8c98c36d637df452da8f67d79178783bef0e4091fc5ac81801b2"
+      }
+    },
+    "US-OK:debt_forum:b1be561fdcce": {
+      "category": "debt_forum",
+      "title": "Okla. Stat. tit. 12, § 1751(B) (small-claims limits on collectors and assignees)",
+      "url": "https://www.oscn.net/applications/oscn/deliverdocument.asp?citeid=438809",
+      "locator": "Okla. Stat. tit. 12, § 1751(B) (small-claims limits on collectors and assignees)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:32:56.487792+00:00",
+        "sha256": "ef11f2943cad8c98c36d637df452da8f67d79178783bef0e4091fc5ac81801b2"
+      }
     }
   },
   "court_directory": [
@@ -562,6 +586,28 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "2005-11-01"
+    },
+    "8b83b1ee383db7f4d99d69485e5829": {
+      "source_id": "US-OK:small_claims:5f455af8b91f",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 12, § 1751(A) (actions within small claims procedure)",
+      "text": "A. The following suits may be brought under the small claims procedure: 1. Actions for the recovery of money based on contract or tort, including subrogation claims, but excluding libel or slander, in which the amount sought to be recovered, exclusive of attorney fees and other court costs, does not exceed Ten Thousand Dollars ($10,000.00); 2. Actions to replevy personal property the value of which does not exceed Ten Thousand Dollars ($10,000.00). If the claims for possession of personal property and to recover money are pled in the alternative, the joinder of claims is permissible if neither the value of the property nor the total amount of money sought to be recovered, exclusive of attorney fees and other costs, exceeds Ten Thousand Dollars ($10,000.00); and 3. Actions in the nature of interpleader, as provided for in Section 2022 of this title, in which the value of the money which is the subject of such action does not exceed Ten Thousand Dollars ($10,000.00).",
+      "text_sha256": "2e99ecffc2d4e8bb393bdb9023c543f29dba7a740fce15204815f07a7ba8b3fe",
+      "publisher_sha256": "ef11f2943cad8c98c36d637df452da8f67d79178783bef0e4091fc5ac81801b2",
+      "retrieved_at": "2026-11-20T18:32:56.487792+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "b8b3f896f5ef2379330e55da9bb580": {
+      "source_id": "US-OK:debt_forum:b1be561fdcce",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 12, § 1751(B) (small-claims limits on collectors and assignees)",
+      "text": "B. No action may be brought under the small claims procedure by any collection agency, collection agent, or assignee of a claim, except that an action may be brought against an insurer or third-party administrator by a health care provider as that term is defined in Section 6552 of Title 36 of the Oklahoma Statutes, who is an assignee of benefits available under an accident and health insurance policy, trust, plan, or contract.",
+      "text_sha256": "2250596155e25265cf2c251c30c91cbfaed14c241b8632a8e6dbff025791f99d",
+      "publisher_sha256": "ef11f2943cad8c98c36d637df452da8f67d79178783bef0e4091fc5ac81801b2",
+      "retrieved_at": "2026-11-20T18:32:56.487792+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

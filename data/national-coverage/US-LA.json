@@ -350,6 +350,18 @@
         "retrieved_at": "2026-11-20T18:05:10.877521+00:00",
         "sha256": "b1210232944b06af9e895d8f3a823c2cda86b651e7162893e180c86f5ee729d0"
       }
+    },
+    "US-LA:small_claims:b462a4b712bb": {
+      "category": "small_claims",
+      "title": "La. Rev. Stat. § 13:5204(A)–(D) (small-claims service and transfer notice)",
+      "url": "https://www.legis.la.gov/Legis/Law.aspx?d=77963",
+      "locator": "La. Rev. Stat. § 13:5204(A)–(D) (small-claims service and transfer notice)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:32:56.662705+00:00",
+        "sha256": "452dba6b3f68fd9f6212491481629606feecc5fa8bb27a61118922a30c769745"
+      }
     }
   },
   "court_directory": [
@@ -626,6 +638,17 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "2020-06-11"
+    },
+    "8eec93ccf7b8727538ac462015f61c": {
+      "source_id": "US-LA:small_claims:b462a4b712bb",
+      "authority_type": "statute",
+      "citation": "La. Rev. Stat. § 13:5204(A)–(D) (small-claims service and transfer notice)",
+      "text": "A. Service of citation or other process shall be by certified mail, with return receipt requested. However, should the receipt not be returned, or, if requested by a party filing the pleading who pays the service charge therefor, or if required by local court rule, service of pleadings may be made in accordance with the Louisiana Code of Civil Procedure. B. Notwithstanding any other provision of law to the contrary, each citation or other process shall contain a notice which provides substantially as follows: \"ATTENTION! THIS LAWSUIT IS FILED IN THE SMALL CLAIMS COURT. THE ORDINARY RULES OF EVIDENCE DO NOT APPLY IN SMALL CLAIMS COURT. IF YOU LOSE IN SMALL CLAIMS COURT, YOU HAVE NO RIGHT TO APPEAL THE COURT'S DECISION. YOU MAY HAVE THIS CASE TRANSFERRED TO THE REGULAR CIVIL COURT IF YOU WISH. TO DO SO, YOU MUST FILE A WRITTEN NOTICE WITH THE CLERK OF THE SMALL CLAIMS COURT AND PAY THE APPROPRIATE TRANSFER FEE WITHIN TEN (10) DAYS OF RECEIVING THIS LETTER. IF YOU ARE UNSURE OF WHAT TO DO, YOU SHOULD TALK WITH AN ATTORNEY ABOUT IT IMMEDIATELY.\" C.(1) If the properly addressed certified mail return receipt reply form is signed by the addressee/defendant, then service shall be considered as personal service. (2) If the properly addressed certified mail return receipt reply form is signed by a person other than the defendant then service shall be considered as domiciliary service. (3) If the properly addressed certified mail return receipt reply form is returned and marked \"refused\" or \"unclaimed\" by the addressee then service is regarded as tendered and shall be considered as domiciliary service. D. If service of the citation and original petition is made by domiciliary service as provided herein, service of the notice of judgment shall be made as provided by law, except if the certified mail is marked \"unclaimed\" or \"refused\", service of the notice of judgment shall be made by the sheriff, marshal, or constable having jurisdiction.",
+      "text_sha256": "c12a13d89140d9b912ba33f144ef5b80104ca80661407fd644d2f79122783493",
+      "publisher_sha256": "452dba6b3f68fd9f6212491481629606feecc5fa8bb27a61118922a30c769745",
+      "retrieved_at": "2026-11-20T18:32:56.662705+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

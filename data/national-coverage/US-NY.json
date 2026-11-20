@@ -317,6 +317,18 @@
         "retrieved_at": "2026-11-20T17:54:37.125228+00:00",
         "sha256": "2f425dff410a73b30cb3f4f7e9ee3d846faa91432e1d38efdee06a9b464a086b"
       }
+    },
+    "US-NY:debtLaw:2b271cb25470": {
+      "category": "debtLaw",
+      "title": "N.Y. C.P.L.R. § 214-i (consumer credit transactions, nonrevival)",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/214-I",
+      "locator": "N.Y. C.P.L.R. § 214-i (consumer credit transactions, nonrevival)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:32:56.432673+00:00",
+        "sha256": "8e50c2d56b5960e3680f5da7d66c5b2cf03ce158313e280256bf57c74e40ffd6"
+      }
     }
   },
   "court_directory": [
@@ -584,6 +596,18 @@
       "retrieved_at": "2026-11-20T17:54:37.125228+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "500888ea4c06e63ba91c990c62a240": {
+      "source_id": "US-NY:debtLaw:2b271cb25470",
+      "authority_type": "statute",
+      "citation": "N.Y. C.P.L.R. § 214-i (consumer credit transactions, nonrevival)",
+      "text": "An action arising out of a consumer credit transaction where a purchaser, borrower or debtor is a defendant must be commenced within three years, except as provided in section two hundred thirteen-a of this article or article 2 of the uniform commercial code or article 36-B of the general business law. Notwithstanding any other provision of law, when the applicable limitations period expires, any subsequent payment toward, written or oral affirmation of or other activity on the debt does not revive or extend the limitations period.",
+      "text_sha256": "bbba7cd4bcac3ef4b3b50727bf870268edb719ee7eb49d83ae8ab88a2ac2ecba",
+      "publisher_sha256": "8e50c2d56b5960e3680f5da7d66c5b2cf03ce158313e280256bf57c74e40ffd6",
+      "retrieved_at": "2026-11-20T18:32:56.432673+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "New York Senate revision dated April 8, 2022, consumer-credit provision"
     }
   },
   "fault_allocation": {
