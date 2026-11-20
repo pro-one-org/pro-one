@@ -255,6 +255,18 @@
         "retrieved_at": "2026-11-20T17:48:15.139513+00:00",
         "sha256": "1b4ffd29a04cc7661ecd467d23a3e47fd955e98c95759f9fc0453822504f9916"
       }
+    },
+    "US-NM:deposit:40932fb694ae": {
+      "category": "deposit",
+      "title": "Garcia v. Thong, 1995-NMSC-030, ¶ 4 (quoting the 1994 version of § 47-8-18(C))",
+      "url": "https://nmonesource.com/nmos/nmsc/en/item/373214/index.do?iframe=true",
+      "locator": "Garcia v. Thong, 1995-NMSC-030, ¶ 4 (quoting the 1994 version of § 47-8-18(C))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:57:54.533978+00:00",
+        "sha256": "62bc0885f652522f8c914c0479d7d0a3baa7fc1b5953260e2a67225b1a2ce19e"
+      }
     }
   },
   "court_directory": [
@@ -458,6 +470,22 @@
       "retrieved_at": "2026-11-20T17:48:15.139513+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "18045f64e8112db24ebcee628b2e20": {
+      "source_id": "US-NM:deposit:40932fb694ae",
+      "authority_type": "opinion",
+      "citation": "Garcia v. Thong, 1995-NMSC-030, ¶ 4 (quoting the 1994 version of § 47-8-18(C))",
+      "text": "No deposit shall be retained to cover normal wear and tear. In the event actual cause exists for retaining any portion of the deposit, the owner shall provide the resident with an itemized written list of the deductions from the deposit and the balance of the deposit, if any, within thirty days of the date of termination of the rental agreement or resident departure, whichever is later. The owner is deemed to have complied with this section by mailing the statement and any payment required to the last known address of the resident. Nothing in this section shall preclude the owner from retaining portions of the deposit for nonpayment of rent or utilities, repair work or other legitimate damages.",
+      "text_sha256": "362a99e2126ee3ab75e7b326a83136bb5ff784fcab052cea6336deedf20c0fed",
+      "publisher_sha256": "62bc0885f652522f8c914c0479d7d0a3baa7fc1b5953260e2a67225b1a2ce19e",
+      "retrieved_at": "2026-11-20T17:57:54.533978+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 1995-04-26 applying 1994 cumulative supplement",
+      "court": "Supreme Court of New Mexico",
+      "decision_date": "1995-04-26",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal of a judgment concerning compliance with the security-deposit return and accounting provisions of the Uniform Owner-Resident Relations Act. The court reversed."
     }
   },
   "fault_allocation": {

@@ -382,6 +382,30 @@
         "retrieved_at": "2026-11-20T15:34:30.240295+00:00",
         "sha256": "357478cdedb194c9a8d4384e5e305d7eca7eb420557985270d05122db40be127"
       }
+    },
+    "US-SC:deposit:b735ab1a7761": {
+      "category": "deposit",
+      "title": "S.C. Code § 27-40-410(a)–(b)",
+      "url": "https://www.scstatehouse.gov/code/t27c040",
+      "locator": "S.C. Code § 27-40-410(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:57:54.267724+00:00",
+        "sha256": "61faf4a26101dac9a2208b54787d2c5b448ebf0c908b824f820a68203a09a95f"
+      }
+    },
+    "US-SC:debtLaw:83dc1bd112bb": {
+      "category": "debtLaw",
+      "title": "S.C. Code § 37-5-108(1)",
+      "url": "https://www.scstatehouse.gov/code/t37c005",
+      "locator": "S.C. Code § 37-5-108(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:01:54.679945+00:00",
+        "sha256": "ceafdf641e45fc58394744abc5e8d564c326c55991b9221db868acc51bd39fbb"
+      }
     }
   },
   "court_directory": [
@@ -635,6 +659,28 @@
       "text_sha256": "4bb119a3177ff6195f42a7b3b5e3395acaceaba00ba55e3839c8b2b4b758a728",
       "publisher_sha256": "357478cdedb194c9a8d4384e5e305d7eca7eb420557985270d05122db40be127",
       "retrieved_at": "2026-11-20T15:34:30.240295+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "5ff5c895fbdb34e2045bd89387532c": {
+      "source_id": "US-SC:deposit:b735ab1a7761",
+      "authority_type": "statute",
+      "citation": "S.C. Code § 27-40-410(a)–(b)",
+      "text": "(a) Upon termination of the tenancy, property or money held by the landlord as security must be returned less amounts withheld by the landlord for accrued rent and damages which the landlord has suffered by reason of the tenant's noncompliance with Section 27-40-510. Any deduction from the security/rental deposit must be itemized by the landlord in a written notice to the tenant together with the amount due, if any, within thirty days after termination of the tenancy and delivery of possession and demand by the tenant, whichever is later. The tenant shall provide the landlord in writing with a forwarding address or new address to which the written notice and amount due from the landlord may be sent. If the tenant fails to provide the landlord with the forwarding or new address, the tenant is not entitled to damages under this subsection provided the landlord (1) had no notice of the tenant's whereabouts and (2) mailed the written notice and amount due, if any, to the tenant's last known address. (b) If the landlord fails to return to the tenant any prepaid rent or security/rental deposit with the notice required to be sent by the landlord pursuant to subsection (a), the tenant may recover the property and money in an amount equal to three times the amount wrongfully withheld and reasonable attorney's fees.",
+      "text_sha256": "7195f27c174bd459b37900398b879589b3de2faa08646a71ed3023d0995728a6",
+      "publisher_sha256": "61faf4a26101dac9a2208b54787d2c5b448ebf0c908b824f820a68203a09a95f",
+      "retrieved_at": "2026-11-20T17:57:54.267724+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "bcddb36c11a00609c68d7b687457c5": {
+      "source_id": "US-SC:debtLaw:83dc1bd112bb",
+      "authority_type": "statute",
+      "citation": "S.C. Code § 37-5-108(1)",
+      "text": "(1) With respect to a transaction that is, gives rise to, or leads the debtor to believe will give rise to, a consumer credit transaction, if the court as a matter of law finds: (a) the agreement or transaction to have been unconscionable at the time it was made, or to have been induced by unconscionable conduct, the court may refuse to enforce the agreement; or (b) any term or part of the agreement or transaction to have been unconscionable at the time it was made, the court may refuse to enforce the agreement, enforce the remainder of the agreement without the unconscionable term or part, or so limit the application of any unconscionable term or part as to avoid any unconscionable result and award the consumer any actual damages he has sustained.",
+      "text_sha256": "1682f624168a2b5c5f1e9c5a59a474a3cfbe694887cf7d243083979ac103e889",
+      "publisher_sha256": "ceafdf641e45fc58394744abc5e8d564c326c55991b9221db868acc51bd39fbb",
+      "retrieved_at": "2026-11-20T18:01:54.679945+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

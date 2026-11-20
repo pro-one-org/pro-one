@@ -288,6 +288,18 @@
         "retrieved_at": "2026-11-20T17:48:14.184406+00:00",
         "sha256": "b6b45efc7e068301f4ef208e9c6e7e9d3f95617c08dc2bf199692ce85dbf120f"
       }
+    },
+    "US-AR:negligence_elements:2c85a83bfbf5": {
+      "category": "negligence_elements",
+      "title": "Summerfield v. Southeastern Freight Lines, Inc., 2024 Ark. App. 326",
+      "url": "https://opinions.arcourts.gov/ark/courtofappeals/en/item/522807/index.do?iframe=true",
+      "locator": "Summerfield v. Southeastern Freight Lines, Inc., 2024 Ark. App. 326",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:54:38.655753+00:00",
+        "sha256": "309d3162c479b8e5b2c501fb90f7f2b0b4deca0eb160efd1a17701e33adeb440"
+      }
     }
   },
   "court_directory": [
@@ -491,6 +503,22 @@
       "language": "en",
       "edition": "Arkansas Supreme Court order adopting rule text effective January 1, 2019",
       "effective_from": "2019-01-01"
+    },
+    "ce9502740e5d3388919fcb89ed414d": {
+      "source_id": "US-AR:negligence_elements:2c85a83bfbf5",
+      "authority_type": "opinion",
+      "citation": "Summerfield v. Southeastern Freight Lines, Inc., 2024 Ark. App. 326",
+      "text": "To prevail on a claim of negligence, a plaintiff “must prove that the defendant owed a duty to the plaintiff, that the defendant breached the duty, and that the breach was the proximate cause of the plaintiff’s injuries.” Duran v. Sw. Ark. Elec. Coop. Corp., 2018 Ark. 33, at 6, 537 S.W.3d 722, 726.",
+      "text_sha256": "43853ea3bc9ec4842092d6f0390ae61dfa4094c3c9ba67f98276798b564280ad",
+      "publisher_sha256": "309d3162c479b8e5b2c501fb90f7f2b0b4deca0eb160efd1a17701e33adeb440",
+      "retrieved_at": "2026-11-20T17:54:38.655753+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2024-05-22",
+      "court": "Arkansas Court of Appeals",
+      "decision_date": "2024-05-22",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a grant of summary judgment on negligence claims arising from a collision with a tractor trailer. The court affirmed."
     }
   },
   "fault_allocation": {

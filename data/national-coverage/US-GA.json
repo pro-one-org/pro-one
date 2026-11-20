@@ -245,6 +245,18 @@
         "retrieved_at": "2026-11-20T17:48:14.858573+00:00",
         "sha256": "fbb5a8d0f75f1ce65d020b875a57c31f1ad66e959e69cb8832aae92e01dffecb"
       }
+    },
+    "US-GA:deposit:750e10c4ee25": {
+      "category": "deposit",
+      "title": "Georgia H.B. 404, §§ 4, 6 (2024) (O.C.G.A. § 44-7-30.1)",
+      "url": "https://gov.georgia.gov/document/2024-signed-legislation/hb-404/download",
+      "locator": "Georgia H.B. 404, §§ 4, 6 (2024) (O.C.G.A. § 44-7-30.1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:01:54.708216+00:00",
+        "sha256": "dbea79f04278558d5377e36b7da21d8ee6fe832fcc317371abb041a2f221d1d8"
+      }
     }
   },
   "court_directory": [
@@ -432,6 +444,19 @@
       "language": "en",
       "edition": "2025 Georgia Code supplement incorporating the 2025 regular session",
       "effective_from": "2019-05-06"
+    },
+    "d72518801d9fc23ce93d0b5ed5870d": {
+      "source_id": "US-GA:deposit:750e10c4ee25",
+      "authority_type": "statute",
+      "citation": "Georgia H.B. 404, §§ 4, 6 (2024) (O.C.G.A. § 44-7-30.1)",
+      "text": "“44-7-30.1. No landlord shall demand or receive a security deposit in an amount that exceeds the equivalent of two months’ rent.” […] This Act shall apply to residential lease agreements that are entered into or renewed on or after July 1, 2024.",
+      "text_sha256": "4294821a813a95039152be73bedd6eb0a8cb67bdd997b5b37d85b1f54f2446a5",
+      "publisher_sha256": "dbea79f04278558d5377e36b7da21d8ee6fe832fcc317371abb041a2f221d1d8",
+      "retrieved_at": "2026-11-20T18:01:54.708216+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Georgia enrolled and signed Safe at Home Act (2024)",
+      "effective_from": "2024-07-01"
     }
   },
   "fault_allocation": {

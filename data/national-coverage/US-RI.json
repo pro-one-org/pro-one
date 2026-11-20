@@ -332,6 +332,18 @@
         "retrieved_at": "2026-11-20T16:01:53.714345+00:00",
         "sha256": "01dea708aa73f7816bd816f6ae5d29701b38e5b0571d8c2e1ea01e17acc700f6"
       }
+    },
+    "US-RI:deposit:bdcfb8ea0677": {
+      "category": "deposit",
+      "title": "R.I. Gen. Laws § 34-18-19(a)–(c)",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE34/34-18/34-18-19.htm",
+      "locator": "R.I. Gen. Laws § 34-18-19(a)–(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:54:37.294605+00:00",
+        "sha256": "1d6fc4042865d649f3d5fe621e3067a1264104e51a7d9672af991d58b0b3a8de"
+      }
     }
   },
   "court_directory": [
@@ -593,6 +605,17 @@
       "language": "en",
       "edition": "Rhode Island Superior Court Rules of Civil Procedure, February 2024",
       "court": "Rhode Island Superior Court"
+    },
+    "63705ae06e3dc0f8ab40f49feff261": {
+      "source_id": "US-RI:deposit:bdcfb8ea0677",
+      "authority_type": "statute",
+      "citation": "R.I. Gen. Laws § 34-18-19(a)–(c)",
+      "text": "(a) A landlord may not demand or receive a security deposit, however denominated, in an amount or value in excess of one month’s periodic rent. (b) Upon termination of the tenancy, the amount of security deposit due to the tenant shall be the entire amount given by the tenant as a security deposit, minus any amount of unpaid accrued rent, the amount due, if any, for reasonable cleaning expenses, the amount due, if any, for reasonable trash disposal expenses and the amount of physical damages to the premises, other than ordinary wear and tear, that the landlord has suffered by reason of the tenant’s noncompliance with § 34-18-24, all as itemized by the landlord in a written notice delivered to the tenant. The landlord shall deliver the notice, together with the amount of the security deposit due to the tenant, within twenty (20) days after the later of either termination of the tenancy, delivery of possession, or the tenant’s providing the landlord with a forwarding address for the purpose of receiving the security deposit. (c) If the landlord fails to comply with subsection (b), the tenant may recover the amount due him or her, together with damages in an amount equal to twice the amount wrongfully withheld, and reasonable attorney fees.",
+      "text_sha256": "dfaa9ff9b390668df54bf66b02fa621651fa7a69a1a92f7fa46f93072289475c",
+      "publisher_sha256": "1d6fc4042865d649f3d5fe621e3067a1264104e51a7d9672af991d58b0b3a8de",
+      "retrieved_at": "2026-11-20T17:54:37.294605+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

@@ -226,6 +226,30 @@
         "retrieved_at": "2026-11-19T19:26:43.238034+00:00",
         "sha256": "626ddce01660f1fbfabce102f8169709ace8fe50c608be1d1b035ee889e5c19b"
       }
+    },
+    "US-KY:deposit:e0944330c868": {
+      "category": "deposit",
+      "title": "Ky. Rev. Stat. § 383.500 (local adoption of residential landlord–tenant act)",
+      "url": "https://apps.legislature.ky.gov/Law/statutes/statute.aspx?id=35717",
+      "locator": "Ky. Rev. Stat. § 383.500 (local adoption of residential landlord–tenant act)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:03:08.900584+00:00",
+        "sha256": "d52c648e9efd92d8dd95d594c8868c95c672b34f1c41964829b9e7a2096e793a"
+      }
+    },
+    "US-KY:deposit:cb8665a98b53": {
+      "category": "deposit",
+      "title": "Ky. Rev. Stat. § 383.580(1)–(4) (local adoption under § 383.500 required)",
+      "url": "https://apps.legislature.ky.gov/law/Statutes/statute.aspx?id=35733",
+      "locator": "Ky. Rev. Stat. § 383.580(1)–(4) (local adoption under § 383.500 required)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:54:37.043183+00:00",
+        "sha256": "27987bf3424ab9fbc83ff3dbef4f0cf1736e8a3791266f461d3007dfb74070d8"
+      }
     }
   },
   "court_directory": [
@@ -379,6 +403,28 @@
       "text_sha256": "d1ca22dfdfabbdb69cff6342c88595e6b6dea48c7c476a8ba543f001155e9d01",
       "publisher_sha256": "626ddce01660f1fbfabce102f8169709ace8fe50c608be1d1b035ee889e5c19b",
       "retrieved_at": "2026-11-19T19:26:43.238034+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "10c16c55ce00d108debe4d8902555d": {
+      "source_id": "US-KY:deposit:e0944330c868",
+      "authority_type": "statute",
+      "citation": "Ky. Rev. Stat. § 383.500 (local adoption of residential landlord–tenant act)",
+      "text": "The General Assembly hereby authorizes cities, counties and urban -county governments to enact the provisions of the Uniform Residential Landlord and Tenant Act as set forth in KRS 383.505 to 383.705. If adopted, these provisions shall be adopted in their entirety and without amendment. No other ordinance shall be enacted by a city, county or urban - county government which relates to the subjects embraced in KRS 383.505 to 383.705.",
+      "text_sha256": "5936270608f136888e14e731b23478826e8966adba97e0163b6af23ba6d2d19b",
+      "publisher_sha256": "d52c648e9efd92d8dd95d594c8868c95c672b34f1c41964829b9e7a2096e793a",
+      "retrieved_at": "2026-11-20T18:03:08.900584+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "b7c007957b3126520515de9c0fba28": {
+      "source_id": "US-KY:deposit:cb8665a98b53",
+      "authority_type": "statute",
+      "citation": "Ky. Rev. Stat. § 383.580(1)–(4) (local adoption under § 383.500 required)",
+      "text": "(1) All landlords of residential property requiring security deposits prior to occupancy shall be required to deposit all tenants' security deposits in an account used only for that purpose, in any bank or other lending institution subject to regulation by the Commonwealth of Kentucky or any agency of the United States government. Prospective tenants shall be informed of the location of the separate account and the account number. (2) Prior to tendering any consideration deemed to be a security deposit, the prospective tenant shall be presented with a comprehensive listing of any then-existing damage to the unit which would be the basis for a charge against the security deposit and the estimated dollar cost of repairing such damage. The tenant shall have the right to inspect the premises to ascertain the accuracy of such listing prior to taking occupancy. The landlord and the tenant shall sign the listing, which signatures shall be conclusive evidence of the accuracy of such listing, but shall not be construed to be conclusive to latent defects. If the tenant shall refuse to sign such listing, he shall state specifically in writing the items on the list to which he dissents, and shall sign such statement of dissent. (3) At the termination of occupancy, the landlord shall inspect the premises and compile a comprehensive listing of any damage to the unit which is the basis for any charge against the security deposit and the estimated dollar cost of repairing such damage. The tenant shall then have the right to inspect the premises to ascertain the accuracy of such listing. The landlord and the tenant shall sign the listing, which signatures shall be conclusive evidence of the accuracy of such listing. If the tenant shall refuse to sign such listing, he shall state specifically in writing the items on the list to which he dissents, and shall sign such statement of dissent. (4) No landlord shall be entitled to retain any portion of a security deposit if the security deposit was not deposited in a separate account as required by subsection (1) of this section and if the initial and final damage listings required by subsections (2) and (3) of this section are not provided.",
+      "text_sha256": "3991ace9d8ddb82f4ae197453624b1697d103512a37eb4e00de132e2ae151b2a",
+      "publisher_sha256": "27987bf3424ab9fbc83ff3dbef4f0cf1736e8a3791266f461d3007dfb74070d8",
+      "retrieved_at": "2026-11-20T17:54:37.043183+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

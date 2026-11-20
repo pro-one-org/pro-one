@@ -396,6 +396,18 @@
         "retrieved_at": "2026-11-20T17:40:13.579125+00:00",
         "sha256": "a6010baf45eef5daf8ac97f1c5bdefc7b1b16af0d9f3e5029cc701541957da1f"
       }
+    },
+    "US-AK:deposit:d474aeba4ae4": {
+      "category": "deposit",
+      "title": "Alaska Stat. § 34.03.070(a)–(b), (g)–(h)",
+      "url": "https://www.akleg.gov/statutesPDF/Title-34.pdf",
+      "locator": "Alaska Stat. § 34.03.070(a)–(b), (g)–(h)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:57:54.083516+00:00",
+        "sha256": "83cec8fab79a503771ed3be0ac4b43042136bf10d4d7d3d4cb5f6c3105c84f96"
+      }
     }
   },
   "court_directory": [
@@ -572,6 +584,17 @@
       "procedural_posture": "Appeal from summary judgment for a municipality following a fall into an uncovered valve box.",
       "opinion_role": "majority",
       "decision_date": "2012-03-02"
+    },
+    "4ca6053c0071e144cd752f8234bddf": {
+      "source_id": "US-AK:deposit:d474aeba4ae4",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 34.03.070(a)–(b), (g)–(h)",
+      "text": "(a) Except as provided in (h) of this section, a landlord may not demand or receive prepaid rent or a security deposit, however denominated, in an amount or value in excess of two months' periodic rent. This section does not apply to rental units where the rent exceeds $2,000 a month. (b) Upon termination of the tenancy, property or money held by the landlord as prepaid rent or as a security deposit may be applied to the payment of accrued rent and the amount of damages that the landlord has suffered by reason of the tenant's noncompliance with AS 34.03.120. The accrued rent and damages must be itemized by the landlord in a written notice mailed to the tenant's last known address within the time limit prescribed by (g) of this section, together with the amount due the tenant. In this subsection, “damages” (1) means deterioration of the premises and, if applicable, of the contents of the premises; (2) does not include deterioration (A) that is the result of normal wear and tear; (B) caused by the landlord's failure to prepare for expected conditions or by the landlord's failure to comply with an obligation of the landlord imposed by this chapter. […] (g) If the landlord or tenant gives notice that complies with AS 34.03.290, the landlord shall mail the written notice and refund required by (b) of this section within 14 days after the tenancy is terminated and possession is delivered by the tenant, except the landlord shall have 30 days after the tenancy is terminated to mail the refund if costs are deducted for damages that the landlord has suffered because of the tenant's noncompliance with AS 34.03.120. If the tenant does not give notice that complies with AS 34.03.290, the landlord shall mail the written notice and refund required by (b) of this section within 30 days after the tenancy is terminated, possession is delivered by the tenant, or the landlord becomes aware that the dwelling unit is abandoned. If the landlord does not know the mailing address of the tenant, but knows or has reason to know how to contact the tenant to give the notice required by (b) of this section, the landlord shall make a reasonable effort to deliver the notice and refund to the tenant. (h) Notwithstanding the limitation on the amount of prepaid rent or security deposit in (a) of this section, a landlord may demand or receive an additional security deposit from a tenant who has a pet on the premises that is not a service animal. The additional security deposit (1) may not exceed the periodic rent for one month; and (2) shall be accounted for separately from prepaid rent or a security deposit received under (a) of this section and may be applied only to the amount of damages that are directly related to the pet of the tenant.",
+      "text_sha256": "1abca6f4acc0e80e152c99c32b47fb2c9f8a1e22464d3e05562125457f1d8148",
+      "publisher_sha256": "83cec8fab79a503771ed3be0ac4b43042136bf10d4d7d3d4cb5f6c3105c84f96",
+      "retrieved_at": "2026-11-20T17:57:54.083516+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

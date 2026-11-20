@@ -297,6 +297,30 @@
         "retrieved_at": "2026-11-20T17:40:12.738153+00:00",
         "sha256": "4310628f41474d80184f5161f8801d96cbad24d0dea0fd411720239e534a4ba7"
       }
+    },
+    "US-IL:deposit:e0e847ede169": {
+      "category": "deposit",
+      "title": "Illinois P.A. 103-0224, § 5 (765 ILCS 710/1(a))",
+      "url": "https://ftp.ilga.gov/Public%20Acts/103/103-0224.htm",
+      "locator": "Illinois P.A. 103-0224, § 5 (765 ILCS 710/1(a))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:57:55.077078+00:00",
+        "sha256": "e51a95c09daa949fccf2c15d4fb9b65459d3685fa9589c842622df68bb41ff0f"
+      }
+    },
+    "US-IL:wageLaw:7a50e1d6b01d": {
+      "category": "wageLaw",
+      "title": "Illinois P.A. 103-0201, § 30 (820 ILCS 115/3)",
+      "url": "https://ftp.ilga.gov/Public%20Acts/103/103-0201.htm",
+      "locator": "Illinois P.A. 103-0201, § 30 (820 ILCS 115/3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:57:55.082889+00:00",
+        "sha256": "9b34e43c2f7aa154bb635a747faf8aee13a17aa64f7567b425f40f42f8a4e97e"
+      }
     }
   },
   "court_directory": [
@@ -480,6 +504,32 @@
       "procedural_posture": "Appeal from summary judgment on a municipal sidewalk injury claim. The court separately considered statutory notice and immunity.",
       "opinion_role": "majority",
       "decision_date": "2018-08-02"
+    },
+    "798d7db0d5c3e7d9fa2dbd3b90f401": {
+      "source_id": "US-IL:deposit:e0e847ede169",
+      "authority_type": "statute",
+      "citation": "Illinois P.A. 103-0224, § 5 (765 ILCS 710/1(a))",
+      "text": "(a) Except as provided in subsection (b), a lessor of residential real property who has received a security deposit from a lessee to secure the payment of rent or to compensate for damage to the leased premises may not withhold any part of that deposit as reimbursement for property damage unless the lessor has, within 30 days of the date that the lessee vacated the leased premises or within 30 days of the date the lessee's right of possession ends, whichever is later, furnished to the lessee, by personal delivery, by postmarked mail directed to his or her last known address, or by electronic mail to a verified electronic mail address provided by the lessee, an itemized statement of the damage allegedly caused to the leased premises and the estimated or actual cost for repairing or replacing each item on that statement, attaching the paid receipts, or copies thereof, for the repair or replacement. If the lessor utilizes his or her own labor to repair or replace any damage or damaged items caused by the lessee, the lessor may include the reasonable cost of his or her labor to repair or replace such damage or damaged items. If estimated cost is given, the lessor shall furnish to the lessee, delivered in person or by postmarked mail directed to the last known address of the lessee or another address provided by the lessee, paid receipts, or copies thereof, within 30 days from the date the statement showing estimated cost was furnished to the lessee, as required by this Section. If a written lease specifies the cost for cleaning, repair, or replacement of any component of the leased premises or any component of the building or common areas that, if damaged, will not be replaced, the lessor may withhold the dollar amount specified in the lease. Costs specified in a written lease shall be for damage beyond normal wear and tear and reasonable to restore the leased premises to the same condition as at the time the lease began. The itemized statement shall reference the dollar amount specified in the written lease associated with the specific building component or amenity and include a copy of the applicable portion of the lease. Deductions for costs or values not specified in the lease shall otherwise comply with the requirements of this Section. If no such statement and receipts, or copies thereof, are furnished to the lessee as required by this Section, the lessor shall return the security deposit in full within 45 days of the date that the lessee vacated the premises, delivered in person or by postmarked mail directed to the last known address of the lessee or another address provided by the lessee. If the lessee fails to provide the lessor with a mailing address or electronic mail address, the lessor shall not be held liable for any damages or penalties as a result of the lessee's failure to provide an address.",
+      "text_sha256": "c75612039de5168c705b5185e8f4c87f5c99e69ae615bc24b63a0f5804f9508c",
+      "publisher_sha256": "e51a95c09daa949fccf2c15d4fb9b65459d3685fa9589c842622df68bb41ff0f",
+      "retrieved_at": "2026-11-20T17:57:55.077078+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Public Act 103-0224 (effective January 1, 2024)",
+      "effective_from": "2024-01-01"
+    },
+    "cef12c09025931953ece992be5d0e8": {
+      "source_id": "US-IL:wageLaw:7a50e1d6b01d",
+      "authority_type": "statute",
+      "citation": "Illinois P.A. 103-0201, § 30 (820 ILCS 115/3)",
+      "text": "Sec. 3. Every employer shall be required, at least semi-monthly, to pay every employee all wages earned during the semi-monthly pay period. Wages of executive, administrative and professional employees, as defined in the Federal Fair Labor Standards Act of 1939, may be paid once a month. Commissions may be paid once a month. At the request of a person employed by an employment or labor placement agency which, in the ordinary course of business, makes daily wage payments to employees, the agency shall hold the daily wages and make either weekly or semi-monthly payments. Upon the written request of the employee, the wage shall be paid in a single check representing the wages earned during the period, either weekly or semi-monthly, designated by the employee in accordance with Section 4 of this Act. Employment and labor placement agencies that make daily wage payments shall provide written notification to all daily wage payment employees of the right to request weekly or semi-monthly checks. The employer may provide this notice by conspicuously posting the notice at the location where the wages are received by the daily wage employees. Every employer with employees who do not regularly report to a physical workplace, such as employees who work remotely or travel for work, shall also provide the summary and notice by email to its employees or conspicuous posting on the employer's website or intranet site, if such site is regularly used by the employer to communicate work-related information to employees and is able to be regularly accessed by all employees, freely and without interference.",
+      "text_sha256": "11f05c9b700a2cd1df4d6dd7f442c207853a85e3333ea887b7b57ad822eb1c9f",
+      "publisher_sha256": "9b34e43c2f7aa154bb635a747faf8aee13a17aa64f7567b425f40f42f8a4e97e",
+      "retrieved_at": "2026-11-20T17:57:55.082889+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Public Act 103-0201 (effective January 1, 2024)",
+      "effective_from": "2024-01-01"
     }
   },
   "fault_allocation": {

@@ -215,6 +215,18 @@
         "retrieved_at": "2026-11-20T17:46:44.044336+00:00",
         "sha256": "ff19187ccd0055b5cafb4a77b73c51d613a9ec8fc2187bd0d163369ec4522206"
       }
+    },
+    "US-DC:deposit:0d5a5a597196": {
+      "category": "deposit",
+      "title": "D.C. Code § 42–3502.17(a) (last sentence), (b)–(c)",
+      "url": "https://code.dccouncil.gov/us/dc/council/code/sections/42-3502.17",
+      "locator": "D.C. Code § 42–3502.17(a) (last sentence), (b)–(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:57:54.724680+00:00",
+        "sha256": "1331c8040c14f297df6b987e04cc8fc79bfd70562d668a4e4245f7f8d47ea5f7"
+      }
     }
   },
   "court_directory": [
@@ -346,6 +358,17 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "2016-12-14"
+    },
+    "84573868e3d33842f1efdedf4d1380": {
+      "source_id": "US-DC:deposit:0d5a5a597196",
+      "authority_type": "statute",
+      "citation": "D.C. Code § 42–3502.17(a) (last sentence), (b)–(c)",
+      "text": "Security deposits shall be collected pursuant to the Security Deposit Act, effective February 20, 1976 (D.C. Law 1-48; 14 DCMR 308 et seq.). (b) The Office of Administrative Hearings may adjudicate complaints for the non-return of tenant security deposits and for the nonpayment of interest on tenant security deposits pursuant to section 2908 of the Housing Regulations of the District of Columbia (14 DCMR §§ 308 through 311). (c)(1) No housing provider shall withhold a security deposit for the replacement value of apartment items that are damaged due to ordinary wear and tear. (2) A covenant or promise by a tenant to leave, restore, surrender, or yield a leased premises in good repair does not obligate the tenant to make substantial repairs, replace obsolete materials, or fix other defects without negligence or fault on the tenant's part. (3) For the purposes of this subsection, the term \"ordinary wear and tear\" means deterioration that results from the intended use of a dwelling unit, including breakage or malfunction due to age or deteriorated condition. The term \"ordinary wear and tear\" does not include deterioration that results from negligence, carelessness, accident, or abuse of the unit, fixtures, equipment, or other tangible personal property by the tenant, immediate family member, or a guest.",
+      "text_sha256": "26d060c92f4cf9153f178af310022ac8b203836068c9298252afb034a81a677b",
+      "publisher_sha256": "1331c8040c14f297df6b987e04cc8fc79bfd70562d668a4e4245f7f8d47ea5f7",
+      "retrieved_at": "2026-11-20T17:57:54.724680+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

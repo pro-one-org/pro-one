@@ -243,6 +243,18 @@
         "retrieved_at": "2026-11-20T17:37:35.494990+00:00",
         "sha256": "c131a406d44bf2e556500c4ca8de7ccc3c6334cdc4d02c5e31ceabc25293b47a"
       }
+    },
+    "US-WY:deposit:1777e20b220c": {
+      "category": "deposit",
+      "title": "Wyo. Stat. § 1-21-1208(a)",
+      "url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+      "locator": "Wyo. Stat. § 1-21-1208(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:54:38.210871+00:00",
+        "sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f"
+      }
     }
   },
   "court_directory": [
@@ -393,6 +405,17 @@
       "text_sha256": "f6d6e1351e04e52f863cda186271e6814398cd07db8bae96af045b024ccd497a",
       "publisher_sha256": "c131a406d44bf2e556500c4ca8de7ccc3c6334cdc4d02c5e31ceabc25293b47a",
       "retrieved_at": "2026-11-20T17:37:35.494990+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "f1ec142a73d706af5925a293437629": {
+      "source_id": "US-WY:deposit:1777e20b220c",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. § 1-21-1208(a)",
+      "text": "(a) Upon termination of the rental agreement, property or money held as a deposit may be applied by the owner or his agent to the payment of accrued rent, damages to the residential rental unit beyond reasonable wear and tear, the cost to clean the unit to the condition at the beginning of the rental agreement and to other costs provided by any contract. The balance of any deposit and prepaid rent and a written itemization of any deductions from the deposit together with reasons therefor, shall be delivered or mailed without interest to the renter within thirty (30) days after termination of the rental agreement or within fifteen (15) days after receipt of the renter's new mailing address, whichever is later. If there is damage to the residential rental unit, this period shall be extended by thirty (30) days. The renter shall within thirty (30) days of termination of the rental agreement, notify the owner or designated agent of the location where payment and notice may be made or mailed.",
+      "text_sha256": "bf68d8d22c5a8370a33ed317faaa813e1f642e13bc3c184c93166d5b6e2f9fd2",
+      "publisher_sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f",
+      "retrieved_at": "2026-11-20T17:54:38.210871+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

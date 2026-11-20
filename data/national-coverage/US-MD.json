@@ -285,6 +285,18 @@
         "retrieved_at": "2026-11-20T17:26:26.151122+00:00",
         "sha256": "bf5103610234513cb4a6a24e49fdc34ab3e227ee9615f3ed6f1b7440dd09c48d"
       }
+    },
+    "US-MD:deposit:a04b93a84dad": {
+      "category": "deposit",
+      "title": "Md. Code, Real Property § 8-203(e)",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=grp&enactments=false&section=8-203",
+      "locator": "Md. Code, Real Property § 8-203(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:54:36.964736+00:00",
+        "sha256": "32db53d903e079527f1f4ce930cd9b1f060a94ba4f283a7193b5dea43ef76c1e"
+      }
     }
   },
   "court_directory": [
@@ -458,6 +470,17 @@
       "text_sha256": "ed57ca76c9099cbeec0d4eae1839246f90ab2fbadb5ba462f8fd775429eeb532",
       "publisher_sha256": "bf5103610234513cb4a6a24e49fdc34ab3e227ee9615f3ed6f1b7440dd09c48d",
       "retrieved_at": "2026-11-20T17:26:26.151122+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "803ff7128a01cf5ac2e535eb613543": {
+      "source_id": "US-MD:deposit:a04b93a84dad",
+      "authority_type": "statute",
+      "citation": "Md. Code, Real Property § 8-203(e)",
+      "text": "(e) (1) Within 45 days after the end of the tenancy, the landlord shall return the security deposit to the tenant together with simple interest which has accrued at the daily U.S. Treasury yield curve rate for 1 year, as of the first business day of each year, or 1.5% a year, whichever is greater, less any damages rightfully withheld. (2) (i) Except as provided in subparagraph (ii) of this paragraph, interest shall accrue at monthly intervals from the day the tenant gives the landlord the security deposit. Interest is not compounded. (ii) No interest is due or payable: 1. Unless the landlord has held the security deposit for at least 6 months; or 2. For any period less than a full month. (3) Interest shall be payable only on security deposits of $50 or more. (4) If the landlord, without a reasonable basis, fails to return any part of the security deposit, plus accrued interest, within 45 days after the termination of the tenancy, the tenant has an action of up to threefold of the withheld amount, plus reasonable attorney’s fees.",
+      "text_sha256": "627d6f1947a621c4d05846ab79fbd117ade6be26c445283e7f9a321d91b66b65",
+      "publisher_sha256": "32db53d903e079527f1f4ce930cd9b1f060a94ba4f283a7193b5dea43ef76c1e",
+      "retrieved_at": "2026-11-20T17:54:36.964736+00:00",
       "currentness": "unresolved",
       "language": "en"
     }
