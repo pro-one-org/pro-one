@@ -273,6 +273,18 @@
         "retrieved_at": "2026-11-18T20:46:19.362728+00:00",
         "sha256": "07a0129954b015ff26ed4774e5979408d05631a78fff9967ee0a56f5622347e7"
       }
+    },
+    "US-CO:pi_limitations:6ff9716e9549": {
+      "category": "pi_limitations",
+      "title": "Colo. Rev. Stat. § 13-80-102(1)(a)",
+      "url": "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2024-title-13.pdf",
+      "locator": "Colo. Rev. Stat. § 13-80-102(1)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:34:31.983334+00:00",
+        "sha256": "1e6004c382b54d4e5741e57a172df232c2639a299451c5ed5f793831ab7981aa"
+      }
     }
   },
   "court_directory": [
@@ -452,6 +464,18 @@
       "language": "en",
       "edition": "2023 Colorado Rules of Civil Procedure",
       "court": "Colorado District Court"
+    },
+    "307917646f6a8e9d6bb10adf4d34a4": {
+      "source_id": "US-CO:pi_limitations:6ff9716e9549",
+      "authority_type": "statute",
+      "citation": "Colo. Rev. Stat. § 13-80-102(1)(a)",
+      "text": "(1) The following civil actions, regardless of the theory upon which suit is brought, or against whom suit is brought, must be commenced within two years after the cause of action accrues, and not thereafter: (a) Tort actions, including but not limited to actions for negligence, trespass, malicious abuse of process, malicious prosecution, outrageous conduct, interference with relationships, and tortious breach of contract; except that this paragraph (a) does not apply to any tort action arising out of the use or operation of a motor vehicle as set forth in section 13-80-101 (1)(n);",
+      "text_sha256": "ea7db28749813b15cd559f1edbedefaef841a441ede80161504c6ef91c1154a5",
+      "publisher_sha256": "1e6004c382b54d4e5741e57a172df232c2639a299451c5ed5f793831ab7981aa",
+      "retrieved_at": "2026-11-20T15:34:31.983334+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Colorado Revised Statutes 2024 unofficial printout"
     }
   },
   "fault_allocation": {

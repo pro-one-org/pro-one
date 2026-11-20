@@ -370,6 +370,18 @@
         "retrieved_at": "2026-11-20T15:21:02.672289+00:00",
         "sha256": "983116fcd457aa6c78bc790bea063885b55d801d87e06df8d3a5077151345eac"
       }
+    },
+    "US-SC:pi_limitations:13becc09cbca": {
+      "category": "pi_limitations",
+      "title": "S.C. Code § 15-3-530(5)",
+      "url": "https://www.scstatehouse.gov/code/t15c003?section=15-3-530",
+      "locator": "S.C. Code § 15-3-530(5)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:34:30.240295+00:00",
+        "sha256": "357478cdedb194c9a8d4384e5e305d7eca7eb420557985270d05122db40be127"
+      }
     }
   },
   "court_directory": [
@@ -614,6 +626,17 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "South Carolina Circuit Court"
+    },
+    "73b631d5471c5acaa693c9c0a6f07a": {
+      "source_id": "US-SC:pi_limitations:13becc09cbca",
+      "authority_type": "statute",
+      "citation": "S.C. Code § 15-3-530(5)",
+      "text": "SECTION 15-3-530. Three years. Within three years: (1) an action upon a contract, obligation, or liability, express or implied, excepting those provided for in Section 15-3-520; (2) an action upon a liability created by statute other than a penalty or forfeiture; (3) an action for trespass upon or damage to real property; (4) an action for taking, detaining, or injuring any goods or chattels including an action for the specific recovery of personal property; (5) an action for assault, battery, or any injury to the person or rights of another, not arising on contract and not enumerated by law, and those provided for in Section 15-3-545;",
+      "text_sha256": "4bb119a3177ff6195f42a7b3b5e3395acaceaba00ba55e3839c8b2b4b758a728",
+      "publisher_sha256": "357478cdedb194c9a8d4384e5e305d7eca7eb420557985270d05122db40be127",
+      "retrieved_at": "2026-11-20T15:34:30.240295+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

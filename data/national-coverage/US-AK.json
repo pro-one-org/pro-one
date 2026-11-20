@@ -348,6 +348,18 @@
         "retrieved_at": "2026-11-18T20:45:45.439868+00:00",
         "sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb"
       }
+    },
+    "US-AK:pi_limitations:fae681f483ed": {
+      "category": "pi_limitations",
+      "title": "Alaska Stat. § 09.10.070(a)",
+      "url": "https://www.akleg.gov/statutesPDF/Title-9.pdf",
+      "locator": "Alaska Stat. § 09.10.070(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:34:30.890765+00:00",
+        "sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f"
+      }
     }
   },
   "court_directory": [
@@ -474,6 +486,17 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Alaska Superior Court"
+    },
+    "cdd7b3fd035eabca156db8e0494782": {
+      "source_id": "US-AK:pi_limitations:fae681f483ed",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 09.10.070(a)",
+      "text": "(a) Except as otherwise provided by law, a person may not bring an action (1) for libel, slander, assault, battery, seduction, or false imprisonment, (2) for personal injury or death, or injury to the rights of another not arising on contract and not specifically provided otherwise; (3) for taking, detaining, or injuring personal property, including an action for its specific recovery; (4) upon a statute for a forfeiture or penalty to the state; or (5) upon a liability created by statute, other than a penalty or forfeiture; unless the action is commenced within two years of the accrual of the cause of action.",
+      "text_sha256": "9987164072efc6b48f1535178a31a79ffa6c5d17fa33ab91fdbd4e16fb2089aa",
+      "publisher_sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f",
+      "retrieved_at": "2026-11-20T15:34:30.890765+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

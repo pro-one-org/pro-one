@@ -296,6 +296,30 @@
         "retrieved_at": "2026-11-20T15:29:40.020548+00:00",
         "sha256": "4508e2871be4121fe78a2f99dbae61e69df3fc438831f13bae69b33b1d50679e"
       }
+    },
+    "US-OK:pi_limitations:efd2d92bcd8d": {
+      "category": "pi_limitations",
+      "title": "Okla. Stat. tit. 12, § 95(A)(3)",
+      "url": "https://www.oscn.net/applications/oscn/DeliverDocument.asp?citeid=480528",
+      "locator": "Okla. Stat. tit. 12, § 95(A)(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:34:30.366584+00:00",
+        "sha256": "10b29cdc5bfe60ddf96e8c364f24f20c560344c24fd7ea26e3f9bfb6446f7e2a"
+      }
+    },
+    "US-OK:pi_limitations:6129d861a953": {
+      "category": "pi_limitations",
+      "title": "Okla. Stat. tit. 12, § 95(A)(3)",
+      "url": "https://www.oscn.net/applications/oscn/DeliverDocument.asp?CiteID=439150",
+      "locator": "Okla. Stat. tit. 12, § 95(A)(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:40:19.184815+00:00",
+        "sha256": "a0176467f9e0b54a37151b386244b49935440afad82b104274a9678344be5366"
+      }
     }
   },
   "court_directory": [
@@ -441,6 +465,32 @@
       "decision_date": "1996-01-16",
       "opinion_role": "majority",
       "procedural_posture": "Certiorari review of summary judgment arising from a motor-vehicle collision."
+    },
+    "17e52cb828939f2c9642f5c37112a4": {
+      "source_id": "US-OK:pi_limitations:efd2d92bcd8d",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 12, § 95(A)(3)",
+      "text": "3. Within two (2) years: An action for trespass upon real property; an action for taking, detaining, or injuring personal property, including actions for the specific recovery of personal property; an action for injury to the rights of another, not arising on contract, and not hereinafter enumerated; an action for relief on the ground of fraud - the cause of action in such case shall not be deemed to have accrued until the discovery of the fraud;",
+      "text_sha256": "e3d08ca17b1ca20f0ecb2ab5c7b6a942fe1d7836c4de84838553847887c341d9",
+      "publisher_sha256": "10b29cdc5bfe60ddf96e8c364f24f20c560344c24fd7ea26e3f9bfb6446f7e2a",
+      "retrieved_at": "2026-11-20T15:34:30.366584+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Oklahoma publisher’s version superseded November 1, 2017",
+      "effective_until": "2017-11-01"
+    },
+    "83053a0ecf1161abd40bd038191e4f": {
+      "source_id": "US-OK:pi_limitations:6129d861a953",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 12, § 95(A)(3)",
+      "text": "3. Within two (2) years: An action for trespass upon real property; an action for taking, detaining, or injuring personal property, including actions for the specific recovery of personal property; an action for injury to the rights of another, not arising on contract, and not hereinafter enumerated; an action for relief on the ground of fraud - the cause of action in such case shall not be deemed to have accrued until the discovery of the fraud;",
+      "text_sha256": "e3d08ca17b1ca20f0ecb2ab5c7b6a942fe1d7836c4de84838553847887c341d9",
+      "publisher_sha256": "a0176467f9e0b54a37151b386244b49935440afad82b104274a9678344be5366",
+      "retrieved_at": "2026-11-20T15:40:19.184815+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2017-11-01",
+      "edition": "OSCN section publication citing 2017 Oklahoma Acts chapters 221 and 378"
     }
   },
   "fault_allocation": {

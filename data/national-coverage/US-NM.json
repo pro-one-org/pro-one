@@ -195,6 +195,18 @@
         "retrieved_at": "2026-11-19T13:54:45.048993+00:00",
         "sha256": "0134230f1e9ec453844d8796c1b2191f419bc9f1ab1606d1ddf42a3c8a49f7af"
       }
+    },
+    "US-NM:pi_limitations:e9e4833186bd": {
+      "category": "pi_limitations",
+      "title": "Gomez v. Chavarria, Nos. 28,072 and 28,073, ¶ 7 (N.M. Ct. App. Jan. 12, 2009)",
+      "url": "https://coa.nmcourts.gov/wp-content/uploads/sites/43/2024/01/Gomez-F-Op.pdf",
+      "locator": "Gomez v. Chavarria, Nos. 28,072 and 28,073, ¶ 7 (N.M. Ct. App. Jan. 12, 2009)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:40:20.079501+00:00",
+        "sha256": "70a18b24e7ad1bc49b5870b000dd579ad4b2d613a09b200f8304314b81a93ec6"
+      }
     }
   },
   "court_directory": [
@@ -323,6 +335,22 @@
       "decision_date": "2014-08-04",
       "opinion_role": "majority",
       "procedural_posture": "Reversed summary judgment for the state transportation department."
+    },
+    "30a258e2647a06e5e1fb843cb95c3b": {
+      "source_id": "US-NM:pi_limitations:e9e4833186bd",
+      "authority_type": "opinion",
+      "citation": "Gomez v. Chavarria, Nos. 28,072 and 28,073, ¶ 7 (N.M. Ct. App. Jan. 12, 2009)",
+      "text": "The three-year limitations period in Section 37-1-8 begins to run against both adults and minors when the cause of action accrues. Slade v. Slade, 81 N.M. 462, 466, 468 P.2d 627, 631 (1970). It is quite clear from a plain reading of Section 37-1-10 that, when the three-year limitations period in Section 37-1-8 runs its full course during minority status, Section 37-1-10 gives the minor a year from his or her eighteenth birthday within which to sue.",
+      "text_sha256": "0437bca7397bd966b5cbcc20423f245c27104719f92c89ee316de6307aecd58f",
+      "publisher_sha256": "70a18b24e7ad1bc49b5870b000dd579ad4b2d613a09b200f8304314b81a93ec6",
+      "retrieved_at": "2026-11-20T15:40:20.079501+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2009-01-12",
+      "court": "New Mexico Court of Appeals",
+      "decision_date": "2009-01-12",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissals of personal-injury actions arising out of two vehicle collisions. The court addressed the interplay of the general statute and the provision for minors."
     }
   }
 }

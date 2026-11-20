@@ -245,6 +245,18 @@
         "retrieved_at": "2026-11-20T15:21:03.127415+00:00",
         "sha256": "f403e3ec6bce46386edb1552ae97892bd7e4f04edb249e4f59d2b10f2b28ca81"
       }
+    },
+    "US-PA:wrongful_death_limitations:b79986ffd003": {
+      "category": "wrongful_death_limitations",
+      "title": "Wygant v. General Electric Co., 2015 PA Super 56",
+      "url": "https://www.pacourts.us/assets/opinions/Superior/out/J-A35041-14o%20-%201021468483249865.pdf?cb=1",
+      "locator": "Wygant v. General Electric Co., 2015 PA Super 56",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:34:32.474689+00:00",
+        "sha256": "47c37f10f8c597f564ffca1c3bf3ef95a97befede97a7234e9fad973d532c7d3"
+      }
     }
   },
   "court_directory": [
@@ -414,6 +426,22 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Pennsylvania Court of Common Pleas"
+    },
+    "f5a94afb296dc31736b56919c3143c": {
+      "source_id": "US-PA:wrongful_death_limitations:b79986ffd003",
+      "authority_type": "opinion",
+      "citation": "Wygant v. General Electric Co., 2015 PA Super 56",
+      "text": "Generally, 42 Pa.C.S. § 5502(a) supplies the commencement date for limitations periods under § 5524(2), and provides that the two-year period is computed “ from the time the cause of action accrued.” The accrual date for a survival action is the date of the tort; a wrongful death action generally accrues when the cause of action can be maintained to a successful conclusion, i.e., the date of death. See Matharu v. Muir , 29 A.3d 375, 383 (Pa.Super. 2011). However, 42 Pa.C.S. § 5502(b) provides that the §5502(a) accrual date “may be made more specifically applicable to particular classes of matters by general rules defining the acts, omissions or events from which the limitation shall be computed. ” Section 5524(8) is the type of rule contemplated in 42 Pa.C.S. § 5502(b) because the legislature has specifically defined the event from which the statute of limitations for asbestos claims is to be computed. The statutory language, on its face, indicates that the legislature intended to measure the time for commencing all asbestos-related actions, including wrongful death actions, from the date of formal diagnosis or from the date when the affected person knew or should have known with the exercise of reasonable diligence of the asbestos-related injury.",
+      "text_sha256": "d8d6f6f2d2ea5b3ec99e09e65b184aa14e42ec960845c739517d4f2f770f344d",
+      "publisher_sha256": "47c37f10f8c597f564ffca1c3bf3ef95a97befede97a7234e9fad973d532c7d3",
+      "retrieved_at": "2026-11-20T15:34:32.474689+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2015-03-19",
+      "court": "Superior Court of Pennsylvania",
+      "decision_date": "2015-03-19",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissal of wrongful-death claims involving asbestos exposure. The opinion distinguishes general accrual from a special asbestos limitation."
     }
   },
   "fault_allocation": {

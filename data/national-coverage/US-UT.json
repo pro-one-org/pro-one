@@ -264,6 +264,18 @@
         "retrieved_at": "2026-11-20T15:18:09.519894+00:00",
         "sha256": "ea284e30bb04ebf6de4277dc985bd377c4ac3f0f8a809e999b54f2ea81261d9c"
       }
+    },
+    "US-UT:pi_limitations:9d95f00dde13": {
+      "category": "pi_limitations",
+      "title": "Utah Code § 78B-2-307",
+      "url": "https://le.utah.gov/xcode/Title78B/Chapter2/C78B-2-S307_2023050320230503.pdf",
+      "locator": "Utah Code § 78B-2-307",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:34:30.406686+00:00",
+        "sha256": "7d49d030e6f0445ed7b1a75637e6aed0b13bc975a8498baa16fd1a789f3f5370"
+      }
     }
   },
   "court_directory": [
@@ -434,7 +446,19 @@
       "retrieved_at": "2026-11-20T15:18:09.519894+00:00",
       "currentness": "unresolved",
       "language": "en",
-      "effective_date": "2021-05-05"
+      "effective_from": "2021-05-05"
+    },
+    "cc4c30de7529b552a68ed67baeac6e": {
+      "source_id": "US-UT:pi_limitations:9d95f00dde13",
+      "authority_type": "statute",
+      "citation": "Utah Code § 78B-2-307",
+      "text": "An action may be brought within four years: (1) after the last charge is made or the last payment is received: (a) upon a contract, obligation, or liability not founded upon an instrument in writing; (b) on an open store account for any goods, wares, or merchandise; or (c) on an open account for work, labor or services rendered, or materials furnished; (2) for a claim for relief or a cause of action under the following sections of Title 25, Chapter 6, Uniform Voidable Transactions Act: (a) Subsection 25-6-202(1)(a), except in specific situations where the time for action is limited to one year under Section 25-6-305; (b) Subsection 25-6-202(1)(b); or (c) Subsection 25-6-203(1); (3) for a claim involving personal property damage to the aggrieved party's motor vehicle, as defined in Section 41-6a-102, or personal property from an accident involving a motor vehicle; and (4) for relief not otherwise provided for by law.",
+      "text_sha256": "e760321df847f51c33dfdd577dde7e51042b4c35a8d381ea2f8ce68e9243d160",
+      "publisher_sha256": "7d49d030e6f0445ed7b1a75637e6aed0b13bc975a8498baa16fd1a789f3f5370",
+      "retrieved_at": "2026-11-20T15:34:30.406686+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2023-05-03"
     }
   },
   "fault_allocation": {

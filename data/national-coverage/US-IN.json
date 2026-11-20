@@ -259,6 +259,18 @@
         "retrieved_at": "2026-11-20T15:12:11.636524+00:00",
         "sha256": "6d6cb3d3deabc0a6391c68b1f022db1e5dddbb5e8e36c1d6e1fc73793d9e18b9"
       }
+    },
+    "US-IN:pi_limitations:56bb950dd98d": {
+      "category": "pi_limitations",
+      "title": "William F. Braun Milk Hauling, Inc. v. Malanoski, No. 22A-CT-333, ¶ 10 (Ind. Ct. App. July 27, 2022)",
+      "url": "https://public.courts.in.gov/Decisions/api/Document/Opinion?Id=6PFq8Esh38CyEDWoREftx-zPlq3mdYR2wfpNiyRSHIsoH1Tw-SwG33Lb5YUW973c0",
+      "locator": "William F. Braun Milk Hauling, Inc. v. Malanoski, No. 22A-CT-333, ¶ 10 (Ind. Ct. App. July 27, 2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:40:19.160559+00:00",
+        "sha256": "88fef303bb9377bc494d802aeb06b5726e11346d84ff903f68b6f3d0d18f7932"
+      }
     }
   },
   "court_directory": [
@@ -423,6 +435,22 @@
       "decision_date": "2026-03-16",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from a defense verdict in a premises negligence case."
+    },
+    "026729fda00ffc474530003038950b": {
+      "source_id": "US-IN:pi_limitations:56bb950dd98d",
+      "authority_type": "opinion",
+      "citation": "William F. Braun Milk Hauling, Inc. v. Malanoski, No. 22A-CT-333, ¶ 10 (Ind. Ct. App. July 27, 2022)",
+      "text": "Ind. Code § 34-11-2-4 provides that an action for injury to person or personal property must be commenced within two years after the cause of action accrues.",
+      "text_sha256": "8cba6c82bae6588c83dc173c31715c0f0252192b47dfd908435cfc05747d32d5",
+      "publisher_sha256": "88fef303bb9377bc494d802aeb06b5726e11346d84ff903f68b6f3d0d18f7932",
+      "retrieved_at": "2026-11-20T15:40:19.160559+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2022-07-27",
+      "court": "Court of Appeals of Indiana",
+      "decision_date": "2022-07-27",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from denial of summary judgment in a personal-injury action. The court separately considered the scope of pandemic tolling orders."
     }
   },
   "fault_allocation": {

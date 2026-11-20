@@ -432,6 +432,18 @@
         "retrieved_at": "2026-11-19T18:56:03.214134+00:00",
         "sha256": "103fc32e865d66bc8953090c9425ffc810063ba97a0ebc7a8a9dee8b610a3443"
       }
+    },
+    "US-CA:pi_limitations:598a0140cc49": {
+      "category": "pi_limitations",
+      "title": "Cal. Code Civ. Proc. § 335.1",
+      "url": "https://downloads.leginfo.legislature.ca.gov/pubinfo_2025.zip",
+      "locator": "Cal. Code Civ. Proc. § 335.1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:34:34.140568+00:00",
+        "sha256": "7c33cff3df40e03c1bdb5af676f79db23c9b1e2e9e7457a51c45924ede5cae47"
+      }
     }
   },
   "court_directory": [
@@ -731,6 +743,23 @@
       "decision_date": "2020-08-10",
       "opinion_role": "majority",
       "procedural_posture": "Review of apportionment of noneconomic damages for an intentional tort."
+    },
+    "95a517bf5bb62dc69227b16520b2da": {
+      "source_id": "US-CA:pi_limitations:598a0140cc49",
+      "authority_type": "statute",
+      "citation": "Cal. Code Civ. Proc. § 335.1",
+      "text": "Within two years: An action for assault, battery, or injury to, or for the death of, an individual caused by the wrongful act or neglect of another.",
+      "text_sha256": "3ab6d0929abd3ad248c212fc1e875fd60fae84efd7df3850c26331bf0fdd97dc",
+      "publisher_sha256": "7c33cff3df40e03c1bdb5af676f79db23c9b1e2e9e7457a51c45924ede5cae47",
+      "retrieved_at": "2026-11-20T15:34:34.140568+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "California Legislative Counsel PUBINFO, archive modified November 16, 2026",
+      "publisher_member": "LAW_SECTION_TBL_8767.lob",
+      "publisher_archive_etag": "\"4d06606a-6605e05841b00\"",
+      "publisher_section_id": "CCP335.1.20024482",
+      "publisher_history": "Added by Stats. 2002, Ch. 448, Sec. 2.   Effective January 1, 2003.",
+      "effective_from": "2003-01-01"
     }
   },
   "fault_allocation": {

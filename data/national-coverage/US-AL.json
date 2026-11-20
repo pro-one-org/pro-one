@@ -304,6 +304,18 @@
         "retrieved_at": "2026-11-20T15:12:11.967547+00:00",
         "sha256": "587d12ea547e84db8d1ff9a08e162f23dbf7a575adb84d8a243359de2d9e3c13"
       }
+    },
+    "US-AL:pi_limitations:6b652dc01487": {
+      "category": "pi_limitations",
+      "title": "Ex parte Integra LifeSciences Corp., No. 1170692 (Ala. Aug. 24, 2018)",
+      "url": "https://acis.alabama.gov/displaydocs.cfm?event=5A20M5B1B&no=894318",
+      "locator": "Ex parte Integra LifeSciences Corp., No. 1170692 (Ala. Aug. 24, 2018)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:34:31.810396+00:00",
+        "sha256": "d46c9f7d5c405714e9a5902398ce9020dda74e0cb66f6ce2aa1e8595ce54b733"
+      }
     }
   },
   "court_directory": [
@@ -524,6 +536,22 @@
       "decision_date": "2019-09-20",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from a circuit court judgment on a spoliation claim. The court considered contributory negligence in the underlying negligence action."
+    },
+    "eaf42a17895263af7c4ef32d25a23a": {
+      "source_id": "US-AL:pi_limitations:6b652dc01487",
+      "authority_type": "opinion",
+      "citation": "Ex parte Integra LifeSciences Corp., No. 1170692 (Ala. Aug. 24, 2018)",
+      "text": "Section 6-2-38(l), Ala. Code 1975, provides that \"[a]ll actions for any injury to the person or rights of another not arising from contract ... must be brought within two years.\" The statute of limitations begins to run when the cause of action accrues, which this Court has held is the date the first legal injury occurs. See, e.g., McWilliams v. Union Pacific Res. Co., 569 So. 2d 702, 703-04 (Ala. 1990).",
+      "text_sha256": "c138f62dbda2eefa4b14101b76586573a59872f46c9944bb5d9a90327d5ec7bc",
+      "publisher_sha256": "d46c9f7d5c405714e9a5902398ce9020dda74e0cb66f6ce2aa1e8595ce54b733",
+      "retrieved_at": "2026-11-20T15:34:31.810396+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2018-08-24",
+      "court": "Supreme Court of Alabama",
+      "decision_date": "2018-08-24",
+      "opinion_role": "majority",
+      "procedural_posture": "Mandamus review of a motion to dismiss. The court applied the limitation to a products-liability claim and separately addressed an asserted breach of warranty."
     }
   },
   "fault_allocation": {

@@ -18,16 +18,34 @@ from app.national_corpus import AuthorityVersion, CorpusError, CorpusQuery, Fetc
 from app.national_corpus_store import SQLiteNormalizedCorpus
 from app.national_coverage import coverage, manifest
 from app.national_excerpt_research import RetainedLegislativeResearch
+from app.national_publications import LegislativeExcerpts
 from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_oklahoma_retains_both_limitations_versions_without_currentness_promotion(self):
+        provider = LegislativeExcerpts("US-OK")
+        versions = {}
+        for selector, row in manifest("US-OK")["passages"].items():
+            if row["citation"] == "Okla. Stat. tit. 12, § 95(A)(3)":
+                observation, = provider.normalize(selector, row["text"].encode("utf-8"))
+                versions[observation.version.currentness] = observation.version
+
+        older = versions["historical"]
+        later = versions["unresolved"]
+        self.assertEqual(older.authority_id, later.authority_id)
+        self.assertNotEqual(older.version_id, later.version_id)
+        self.assertEqual(older.effective_until, date(2017, 11, 1))
+        self.assertEqual(later.effective_from, older.effective_until)
+
     def test_accrual_and_tolling_do_not_supply_ordinary_limitations(self):
         provider = RetainedLegislativeResearch()
         matter = ResearchMatter(country="US", state="Michigan", legal_area="torts",
                                 authority_types=["statute"], authority_status="unresolved", topics=["accrual"])
         accrual, = provider.search(matter)
-        self.assertEqual(provider.fetch(accrual).source["citation"]["preferred_citation"], "Mich. Comp. Laws § 600.5827")
+        source = provider.fetch(accrual).source
+        self.assertEqual(source["citation"]["preferred_citation"], "Mich. Comp. Laws § 600.5827")
+        self.assertEqual(source["dates"]["effective_from"], "1963-01-01")
         tolling_query = matter.model_copy(update={"topics": ["tolling"]})
         tolling, = provider.search(tolling_query)
         self.assertEqual(provider.fetch(tolling).source["citation"]["preferred_citation"], "Mich. Comp. Laws § 600.5855")
@@ -96,14 +114,17 @@ class NationalCoverageTests(unittest.TestCase):
         provider = RetainedLegislativeResearch()
         key, = provider.search(query)
         self.assertIn("actual cause", provider.fetch(key).text)
-        fault_query = query.model_copy(update={"topics": ["fault_allocation"]})
-        fault_key, = provider.search(fault_query)
-        self.assertNotEqual(fault_key, key)
-        self.assertIn("Imperial Aluminum-Scottsboro", provider.fetch(fault_key).source["citation"]["preferred_citation"])
-        self.assertFalse(provider.search(fault_query.model_copy(update={"authority_status": "current"})))
-        for change in ({"topics": ["limitations"]},
-                       {"authority_status": "current"}, {"court": "Alabama Circuit Court"}):
-            self.assertFalse(provider.search(query.model_copy(update=change)))
+        for topic, citation in (("fault_allocation", "Imperial Aluminum-Scottsboro"),
+                                ("limitations", "Ex parte Integra LifeSciences")):
+            scoped = query.model_copy(update={"topics": [topic]})
+            scoped_key, = provider.search(scoped)
+            self.assertNotEqual(scoped_key, key)
+            self.assertIn(citation, provider.fetch(scoped_key).source["citation"]["preferred_citation"])
+        for topic in ("negligence_elements", "fault_allocation", "limitations"):
+            current = query.model_copy(update={"topics": [topic], "authority_status": "current",
+                                               "authority_as_of": "2026-11-20"})
+            self.assertFalse(provider.search(current))
+        self.assertFalse(provider.search(query.model_copy(update={"court": "Alabama Circuit Court"})))
 
     def test_automated_transaction_enactment_is_scoped_and_historical(self):
         query = ResearchMatter(country="US", state="Arkansas", legal_area="contracts",
