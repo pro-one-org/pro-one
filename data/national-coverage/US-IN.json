@@ -296,30 +296,6 @@
         "sha256": "7cd6d8af84670dfa937bc1cdb48c494026dbab141bcc6a8e3ab817d7f9d1abd4"
       }
     },
-    "US-IN:commencement:7d7340c28b67": {
-      "category": "commencement",
-      "title": "Ind. Trial R. 3",
-      "url": "https://rules.incourts.gov/Content/trial/rule3/current.htm",
-      "locator": "Ind. Trial R. 3",
-      "directory": null,
-      "observation": {
-        "health": "publisher_bytes_retained",
-        "retrieved_at": "2026-11-20T18:05:10.698789+00:00",
-        "sha256": "47fa6ac872713f4367b7badc078ed406907ed23c021d65af219302d624a65eae"
-      }
-    },
-    "US-IN:service:42322b97d6de": {
-      "category": "service",
-      "title": "Ind. Trial R. 4(B)",
-      "url": "https://rules.incourts.gov/Content/trial/rule4/current.htm",
-      "locator": "Ind. Trial R. 4(B)",
-      "directory": null,
-      "observation": {
-        "health": "publisher_bytes_retained",
-        "retrieved_at": "2026-11-20T18:05:10.677919+00:00",
-        "sha256": "666be6fa8c14dd74f460558e8b398df7abc9d83e37ae5e995d523e1ee27f1b75"
-      }
-    },
     "US-IN:service:eb1c3ac42fd4": {
       "category": "service",
       "title": "Ind. Trial R. 4.1(A)",
@@ -390,18 +366,6 @@
         "health": "publisher_bytes_retained",
         "retrieved_at": "2026-11-20T18:05:10.938337+00:00",
         "sha256": "7affe39da4c4da3b3de690f2e4e7fa477b41f66b23b985b5cd970fbf87f43342"
-      }
-    },
-    "US-IN:response:84f4a6e207ed": {
-      "category": "response",
-      "title": "Ind. Trial R. 12(A)",
-      "url": "https://rules.incourts.gov/Content/trial/rule12/current.htm",
-      "locator": "Ind. Trial R. 12(A)",
-      "directory": null,
-      "observation": {
-        "health": "publisher_bytes_retained",
-        "retrieved_at": "2026-11-20T18:05:10.938337+00:00",
-        "sha256": "28d81afa2685b7f2f9d8a25e1d232b9b54b0a52e4b92cd9ff67f11acaa7f409b"
       }
     },
     "US-IN:small_claims:3353eacfcf79": {
@@ -572,9 +536,13 @@
       "text_sha256": "79536e84dc8e12278fbf187b8f64c14fdb0464c564c2c992d154cff11911d6eb",
       "publisher_sha256": "47fa6ac872713f4367b7badc078ed406907ed23c021d65af219302d624a65eae",
       "retrieved_at": "2026-11-18T20:45:37.949038+00:00",
-      "currentness": "unresolved",
+      "currentness": "current_as_of",
       "language": "en",
-      "court": "Indiana trial courts"
+      "court": "Indiana trial courts",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2002-04-01"
     },
     "01912429b60859a199e51b5ad0913f": {
       "source_id": "US-IN:service:3dc98fb46370",
@@ -584,9 +552,13 @@
       "text_sha256": "ade46cb36ea314300af0a242cb8702cba11ab6c809be37d4a5562f3406aaae2c",
       "publisher_sha256": "666be6fa8c14dd74f460558e8b398df7abc9d83e37ae5e995d523e1ee27f1b75",
       "retrieved_at": "2026-11-18T20:45:55.679956+00:00",
-      "currentness": "unresolved",
+      "currentness": "current_as_of",
       "language": "en",
-      "court": "Indiana trial courts"
+      "court": "Indiana trial courts",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2019-01-01"
     },
     "3fc8653847bc2c6f7c25e5a5843f9c": {
       "source_id": "US-IN:response:ef3c46fed72e",
@@ -596,9 +568,13 @@
       "text_sha256": "91a60d60bbf0ade84dd7ab203294079f052f8a807379913dab744fe7e9f70194",
       "publisher_sha256": "28d81afa2685b7f2f9d8a25e1d232b9b54b0a52e4b92cd9ff67f11acaa7f409b",
       "retrieved_at": "2026-11-18T20:45:55.864619+00:00",
-      "currentness": "unresolved",
+      "currentness": "current_as_of",
       "language": "en",
-      "court": "Indiana trial courts"
+      "court": "Indiana trial courts",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2026-07-01"
     },
     "34f89a8f86d8e17f94b2ecb7dcca0b": {
       "source_id": "US-IN:fault:ec846fef5b5e",
@@ -663,38 +639,6 @@
       "decision_date": "2006-02-28",
       "opinion_role": "majority",
       "procedural_posture": "Consolidated appeal from summary judgments about accrued vacation pay and bonuses. The published opinion summarized the wage-payment statute applicable in those disputes."
-    },
-    "747c3907e1e08ea1c04f77fdb2ee86": {
-      "source_id": "US-IN:commencement:7d7340c28b67",
-      "authority_type": "court_rule",
-      "citation": "Ind. Trial R. 3",
-      "text": "A civil action is commenced by filing with the court a complaint or such equivalent pleading or document as may be specified by statute, by payment of the prescribed filing fee or filing an order waiving the filing fee, and, where service of process is required, by furnishing to the clerk as many copies of the complaint and summons as are necessary.",
-      "text_sha256": "79536e84dc8e12278fbf187b8f64c14fdb0464c564c2c992d154cff11911d6eb",
-      "publisher_sha256": "47fa6ac872713f4367b7badc078ed406907ed23c021d65af219302d624a65eae",
-      "retrieved_at": "2026-11-20T18:05:10.698789+00:00",
-      "currentness": "current_as_of",
-      "language": "en",
-      "court": "Indiana courts applying the Rules of Trial Procedure",
-      "current_as_of": "2026-08-01",
-      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
-      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
-      "effective_from": "2002-04-01"
-    },
-    "25d17dfd88d89623054bd77a943c2c": {
-      "source_id": "US-IN:service:42322b97d6de",
-      "authority_type": "court_rule",
-      "citation": "Ind. Trial R. 4(B)",
-      "text": "Contemporaneously with the filing of the complaint or equivalent pleading, the person seeking service or his attorney shall furnish to the clerk as many copies of the complaint and summons as are necessary. The clerk shall examine, date, sign, and affix his seal to the summons and thereupon issue and deliver the papers to the appropriate person for service. Affidavits, requests, and any other information relating to the summons and its service as required or permitted by these rules shall be included in a praecipe attached to or entered upon the summons. Such praecipe shall be deemed to be a part of the summons for purposes of these rules. Separate or additional summons shall, as provided by these rules, be issued by the clerk at any time upon proper request of the person seeking service or his attorney.",
-      "text_sha256": "3f7537fda77f75e0e4477ea986ef62cbd6ab6e1879c42ac6361f368046f3e695",
-      "publisher_sha256": "666be6fa8c14dd74f460558e8b398df7abc9d83e37ae5e995d523e1ee27f1b75",
-      "retrieved_at": "2026-11-20T18:05:10.677919+00:00",
-      "currentness": "current_as_of",
-      "language": "en",
-      "court": "Indiana courts applying the Rules of Trial Procedure",
-      "current_as_of": "2026-08-01",
-      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
-      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
-      "effective_from": "2019-01-01"
     },
     "7af2f55222e107e7210f0156833c8c": {
       "source_id": "US-IN:service:eb1c3ac42fd4",
@@ -783,22 +727,6 @@
       "text": "Whenever a party has the right or is required to do some act or take some proceedings within a prescribed period after the service of a notice or other paper and the notice or paper is served by United States mail, three days must be added to the prescribed period.",
       "text_sha256": "39a86edd7594f026aee2ff256874714509ebcfca687633ecd04718f75c9c4a13",
       "publisher_sha256": "7affe39da4c4da3b3de690f2e4e7fa477b41f66b23b985b5cd970fbf87f43342",
-      "retrieved_at": "2026-11-20T18:05:10.938337+00:00",
-      "currentness": "current_as_of",
-      "language": "en",
-      "court": "Indiana courts applying the Rules of Trial Procedure",
-      "current_as_of": "2026-08-01",
-      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
-      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
-      "effective_from": "2026-07-01"
-    },
-    "f912a2561733898f22505ef7080b2e": {
-      "source_id": "US-IN:response:84f4a6e207ed",
-      "authority_type": "court_rule",
-      "citation": "Ind. Trial R. 12(A)",
-      "text": "The time allowed for the presentation of defenses and objections in a motion or responsive pleading is computed as set forth in this rule. Filing a motion permitted under this rule alters the time for filing a responsive pleading as follows, unless a different time is fixed by the court: (1) if the court does not grant the motion, the responsive pleading must be filed within ten days of the order; (2) if the court grants the motion and corrective action is permitted, an amended pleading taking the corrective action must be filed within ten days of the order, and the responsive pleading must be filed within ten days thereafter.",
-      "text_sha256": "bdbbd2b6a6ff2f811ba307f428cf22a6a84bcec38f8a7d7cf1c04369d398eea1",
-      "publisher_sha256": "28d81afa2685b7f2f9d8a25e1d232b9b54b0a52e4b92cd9ff67f11acaa7f409b",
       "retrieved_at": "2026-11-20T18:05:10.938337+00:00",
       "currentness": "current_as_of",
       "language": "en",

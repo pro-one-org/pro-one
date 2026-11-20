@@ -134,7 +134,8 @@ class NationalCoverageTests(unittest.TestCase):
         docs = {doc.source["citation"]["preferred_citation"]: doc.text
                 for doc in map(provider.fetch, provider.search(matter))}
         self.assertIn("within twenty days after service of the pleading", docs["Ind. Trial R. 6(D)"])
-        self.assertIn("Filing a motion permitted under this rule alters the time", docs["Ind. Trial R. 12(A)"])
+        self.assertIn("Filing a motion permitted under this rule alters the time", docs["Ind. Trial Rule 12(A)"])
+        self.assertFalse(any(row["citation"] == "Ind. Trial R. 12(A)" for row in record["passages"].values()))
         self.assertNotIn(small_claim["citation"], docs)
         for day in ("2025-01-01", "2026-08-02"):
             self.assertFalse(provider.search(matter.model_copy(update={"authority_as_of": day})))

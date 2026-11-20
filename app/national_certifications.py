@@ -188,7 +188,7 @@ def indiana_rule_publication(digest):
 
 
 def indiana_basis(url, digest, path, citation, quote):
-    match = re.fullmatch(r"Ind\. (Trial|Small Claims) R\. (\d+(?:\.\d+)?)(?:\(([A-Z])\))?", citation)
+    match = re.fullmatch(r"Ind\. (Trial|Small Claims) (?:R\.|Rule) (\d+(?:\.\d+)?)(?:\(([A-Z])\))?", citation)
     if not match or not re.fullmatch(r"[0-9a-f]{64}", path):
         raise ValueError("invalid_certified_publication")
     kind, rule, subsection = match.groups()
@@ -215,11 +215,15 @@ def indiana_basis(url, digest, path, citation, quote):
     body_start = next(i for i, (_, classes, _) in enumerate(page.rows) if "effective" in classes)
     rows = list(takewhile(lambda row: row[2] != "Version History", page.rows[body_start + 1:]))
     headings = [i for i, (tag, _, text) in enumerate(rows) if tag == "h2" and text.startswith(f"({subsection}) ")]
+    section_heading = ""
     if subsection and len(headings) == 1:
-        rows = list(takewhile(lambda row: row[0] != "h2", rows[headings[0] + 1:]))
+        start = headings[0]
+        section_heading = rows[start][2] + " "
+        rows = list(takewhile(lambda row: row[0] != "h2", rows[start + 1:]))
     elif subsection or any(tag == "h2" for tag, _, _ in rows):
         raise ValueError("certified_excerpt_or_date_mismatch")
-    if not quote or quote != " ".join(text for _, _, text in rows if text):
+    body = " ".join(text for _, _, text in rows if text)
+    if not body or quote not in (body, section_heading + body):
         raise ValueError("certified_excerpt_or_date_mismatch")
     return day, f"{heading}. Updated, Effective {dates[0]}."
 
