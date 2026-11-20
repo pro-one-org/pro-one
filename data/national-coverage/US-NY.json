@@ -293,6 +293,18 @@
         "retrieved_at": "2026-11-20T15:21:02.583732+00:00",
         "sha256": "26966a415ad0e72a488eaa0266ab8ce2fe7b65138827fa9e7c1e2d75d5aecdda"
       }
+    },
+    "US-NY:wageLaw:585fafc9bdd3": {
+      "category": "wageLaw",
+      "title": "N.Y. Lab. Law § 191(1)(a)(i)",
+      "url": "https://www.nysenate.gov/legislation/laws/LAB/191",
+      "locator": "N.Y. Lab. Law § 191(1)(a)(i)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:37:34.210071+00:00",
+        "sha256": "75da18789ae67c33332cc6bbfeb3b3646451385e60a29895efb32790e285c5cf"
+      }
     }
   },
   "court_directory": [
@@ -538,6 +550,17 @@
       "language": "en",
       "court": "New York courts governed by the CPLR",
       "edition": "NY Senate Open Legislation revision labeled September 22, 2014"
+    },
+    "f00d44b60656d49919221f9d62ffe0": {
+      "source_id": "US-NY:wageLaw:585fafc9bdd3",
+      "authority_type": "statute",
+      "citation": "N.Y. Lab. Law § 191(1)(a)(i)",
+      "text": "(i) A manual worker shall be paid weekly and not later than seven calendar days after the end of the week in which the wages are earned; provided however that a manual worker employed by an employer authorized by the commissioner pursuant to subparagraph (ii) of this paragraph or by a non-profitmaking organization shall be paid in accordance with the agreed terms of employment, but not less frequently than semi-monthly.",
+      "text_sha256": "7a358c3e4572c6d39209a7fd19ded9baa2871b02115bcb59b71c4facf460ba42",
+      "publisher_sha256": "75da18789ae67c33332cc6bbfeb3b3646451385e60a29895efb32790e285c5cf",
+      "retrieved_at": "2026-11-20T17:37:34.210071+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

@@ -285,6 +285,18 @@
         "retrieved_at": "2026-11-20T16:41:35.644150+00:00",
         "sha256": "6dc52c9989ba52e0273c1e1f27422bf49c2380662a2631227f18c1efcb7eae60"
       }
+    },
+    "US-IL:negligence_elements:cc98bce4d377": {
+      "category": "negligence_elements",
+      "title": "Monson v. City of Danville, 2018 IL 122486, ¶ 23",
+      "url": "https://www.illinoiscourts.gov/Resources/0a24574c-c592-4617-b5d8-4614d48c3f1c/122486.pdf",
+      "locator": "Monson v. City of Danville, 2018 IL 122486, ¶ 23",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:40:12.738153+00:00",
+        "sha256": "4310628f41474d80184f5161f8801d96cbad24d0dea0fd411720239e534a4ba7"
+      }
     }
   },
   "court_directory": [
@@ -452,6 +464,22 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "2020-07-17"
+    },
+    "57053a5da360d5c42632b61ee7edae": {
+      "source_id": "US-IL:negligence_elements:cc98bce4d377",
+      "authority_type": "opinion",
+      "citation": "Monson v. City of Danville, 2018 IL 122486, ¶ 23",
+      "text": "It is the plaintiff’s burden to allege and prove all of the elements of a negligence claim, including a duty owed by the defendant, a breach of that duty, and that the breach was the proximate cause of the plaintiff’s injuries. First Springfield Bank & Trust v. Galman, 188 Ill. 2d 252, 256 (1999).",
+      "text_sha256": "5a72dd5451002efddbeb9d928a9fa29a7277a8ccf186a132905f50f6aa3c0329",
+      "publisher_sha256": "4310628f41474d80184f5161f8801d96cbad24d0dea0fd411720239e534a4ba7",
+      "retrieved_at": "2026-11-20T17:40:12.738153+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2018-08-02",
+      "court": "Supreme Court of Illinois",
+      "procedural_posture": "Appeal from summary judgment on a municipal sidewalk injury claim. The court separately considered statutory notice and immunity.",
+      "opinion_role": "majority",
+      "decision_date": "2018-08-02"
     }
   },
   "fault_allocation": {

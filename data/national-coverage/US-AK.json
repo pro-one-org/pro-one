@@ -384,6 +384,18 @@
         "retrieved_at": "2026-11-20T16:20:52.510567+00:00",
         "sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb"
       }
+    },
+    "US-AK:negligence_elements:a955d15d16f6": {
+      "category": "negligence_elements",
+      "title": "Kelly v. Municipality of Anchorage, Opinion No. 6653 (Alaska Mar. 2, 2012)",
+      "url": "https://courts.alaska.gov/media/outreach/ops/sp-6653.pdf",
+      "locator": "Kelly v. Municipality of Anchorage, Opinion No. 6653 (Alaska Mar. 2, 2012)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:40:13.579125+00:00",
+        "sha256": "a6010baf45eef5daf8ac97f1c5bdefc7b1b16af0d9f3e5029cc701541957da1f"
+      }
     }
   },
   "court_directory": [
@@ -544,6 +556,22 @@
       "retrieved_at": "2026-11-20T16:20:52.510567+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "7d46e974e40cfc4ecdb964d021c45d": {
+      "source_id": "US-AK:negligence_elements:a955d15d16f6",
+      "authority_type": "opinion",
+      "citation": "Kelly v. Municipality of Anchorage, Opinion No. 6653 (Alaska Mar. 2, 2012)",
+      "text": "In order to succeed on a negligence claim, a plaintiff must prove duty, breach of duty, causation, and harm.",
+      "text_sha256": "437668365be5ddd02ad7b1ab20f98a26aa57ffba6a7ab7c16158c720079a587d",
+      "publisher_sha256": "a6010baf45eef5daf8ac97f1c5bdefc7b1b16af0d9f3e5029cc701541957da1f",
+      "retrieved_at": "2026-11-20T17:40:13.579125+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2012-03-02",
+      "court": "Supreme Court of Alaska",
+      "procedural_posture": "Appeal from summary judgment for a municipality following a fall into an uncovered valve box.",
+      "opinion_role": "majority",
+      "decision_date": "2012-03-02"
     }
   },
   "fault_allocation": {

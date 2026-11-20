@@ -455,6 +455,18 @@
         "retrieved_at": "2026-11-20T16:43:49.188164+00:00",
         "sha256": "28c7bb356b6bc0d398c2e5a4e701c851b8d36d813b7fe73a4eaab9c525fdec5e"
       }
+    },
+    "US-ME:negligence_elements:93a69a2e4a19": {
+      "category": "negligence_elements",
+      "title": "Murdock v. Thorne, 2017 ME 136, ¶ 11 (corrected July 25, 2017)",
+      "url": "https://www.courts.maine.gov/courts/sjc/lawcourt/2017/17me136co.pdf",
+      "locator": "Murdock v. Thorne, 2017 ME 136, ¶ 11 (corrected July 25, 2017)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:40:12.375184+00:00",
+        "sha256": "81f7ed1022cd6f17243c4f65df443f137b1fc27b3fc8f3bc5b089328dfb8de85"
+      }
     }
   },
   "court_directory": [
@@ -818,6 +830,22 @@
       "currentness": "unresolved",
       "language": "en",
       "edition": "Revisor’s 132nd Legislature Second Regular Session compilation, current through October 1, 2026"
+    },
+    "23f846cc3b6171a021db81a2218787": {
+      "source_id": "US-ME:negligence_elements:93a69a2e4a19",
+      "authority_type": "opinion",
+      "citation": "Murdock v. Thorne, 2017 ME 136, ¶ 11 (corrected July 25, 2017)",
+      "text": "A prima facie case of negligence requires a plaintiff to establish four elements: duty, breach, causation, and damages.",
+      "text_sha256": "fb5e8182564e4befb6d73e18a338f56c5707fe1e38741026a5b7ba85187bd975",
+      "publisher_sha256": "81f7ed1022cd6f17243c4f65df443f137b1fc27b3fc8f3bc5b089328dfb8de85",
+      "retrieved_at": "2026-11-20T17:40:12.375184+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2017-06-27",
+      "court": "Maine Supreme Judicial Court",
+      "procedural_posture": "Appeal from summary judgment in a motor-vehicle negligence action involving a signal from another driver. The court affirmed based on causation.",
+      "opinion_role": "majority",
+      "decision_date": "2017-06-27"
     }
   },
   "fault_allocation": {

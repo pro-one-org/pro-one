@@ -264,6 +264,18 @@
         "retrieved_at": "2026-11-20T16:20:53.908577+00:00",
         "sha256": "c5449bb2ef008293c0294f6e0de42f8530e177daa556cd6ba4d7170c3f501b37"
       }
+    },
+    "US-AR:wageLaw:1cf648e00ff7": {
+      "category": "wageLaw",
+      "title": "2019 Ark. Acts 853, § 7 (Ark. Code Ann. § 11-4-405)",
+      "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2019R%2FPublic%2FACT853.pdf",
+      "locator": "2019 Ark. Acts 853, § 7 (Ark. Code Ann. § 11-4-405)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:42:34.458091+00:00",
+        "sha256": "0513291ba2f254c1deb92f09a2e5937bc14f69d02941167369392dcad7de3029"
+      }
     }
   },
   "court_directory": [
@@ -442,6 +454,18 @@
       "currentness": "historical",
       "language": "en",
       "edition": "1995 Arkansas Acts"
+    },
+    "4c768853ab5d0525c9cfc7856fa28c": {
+      "source_id": "US-AR:wageLaw:1cf648e00ff7",
+      "authority_type": "statute",
+      "citation": "2019 Ark. Acts 853, § 7 (Ark. Code Ann. § 11-4-405)",
+      "text": "An employer that discharges an employee is required to pay all wages due by the next regular payday. (b) An employer that fails to make the payment required under subsection (a) of this section within seven (7) days of the next regular payday shall owe the employee double the wages due.",
+      "text_sha256": "8762042d84e00602ae2ff0a88b0d6a97a1349eedca4c07449570d92caee09ba9",
+      "publisher_sha256": "0513291ba2f254c1deb92f09a2e5937bc14f69d02941167369392dcad7de3029",
+      "retrieved_at": "2026-11-20T17:42:34.458091+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2019 enacted Arkansas Acts text"
     }
   },
   "fault_allocation": {

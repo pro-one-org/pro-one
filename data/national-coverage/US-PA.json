@@ -281,6 +281,18 @@
         "retrieved_at": "2026-11-20T16:22:38.296808+00:00",
         "sha256": "fd6d368933e4da9b9fb14b429e6dbabfa167e8431df6e29f3b852588256b4e50"
       }
+    },
+    "US-PA:wageLaw:1416faa8bec3": {
+      "category": "wageLaw",
+      "title": "43 P.S. § 260.3(a) (Wage Payment and Collection Law § 3(a))",
+      "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/dli/documents/documents/regulations/llc/wpclaw.pdf",
+      "locator": "43 P.S. § 260.3(a) (Wage Payment and Collection Law § 3(a))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:41:00.166923+00:00",
+        "sha256": "7a4b984415b9c878c0996992faa729eb1d582317c9d70d3be30b868276540a2a"
+      }
     }
   },
   "court_directory": [
@@ -498,6 +510,17 @@
       "decision_date": "2021-02-17",
       "opinion_role": "majority",
       "procedural_posture": "Review of judgment in a private consumer action based on insurance and investment sales. The court considered the 1996 amendment to the consumer statute."
+    },
+    "5f7cca4caeda06aae5fa595aebd666": {
+      "source_id": "US-PA:wageLaw:1416faa8bec3",
+      "authority_type": "statute",
+      "citation": "43 P.S. § 260.3(a) (Wage Payment and Collection Law § 3(a))",
+      "text": "(a) Wages other than fringe benefits and wage supplements. Every employer shall pay all wages, other than fringe benefits and wage supplements, due to his employes on regular paydays designated in advance by the employer. Overtime wages may be considered as wages earned and payable in the next succeeding pay period. All wages, other than fringe benefits and wage supplements, earned in any pay period shall be due and payable within the number of days after the expiration of said pay period as provided in a written contract of employment or, if not so specified, within the standard time lapse customary in the trade or within 15 days from the end of such pay period. The wages shall be paid in lawful money of the United States or check, except that deductions provided by law, or as authorized by regulation of the Department of Labor and Industry for the convenience of the employe, may be made including deductions of contributions to employe benefit plans which are subject to the Employee Retirement Income Security Act of 1974, 29 U.S.C. §1001 et seq.",
+      "text_sha256": "1ddf65bc68594d7549bdac056176fcd19cf7571c2f62186c6698c3c35b8541c8",
+      "publisher_sha256": "7a4b984415b9c878c0996992faa729eb1d582317c9d70d3be30b868276540a2a",
+      "retrieved_at": "2026-11-20T17:41:00.166923+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

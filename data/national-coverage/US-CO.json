@@ -309,6 +309,18 @@
         "retrieved_at": "2026-11-20T17:26:27.643132+00:00",
         "sha256": "16837b1c7dfa704a12935c1bd403e0a3242c20ab69f513ca3f0b094bf849734e"
       }
+    },
+    "US-CO:wageLaw:a4414922fb5e": {
+      "category": "wageLaw",
+      "title": "Colo. Rev. Stat. § 8-4-109(1)(a)–(b) (2024)",
+      "url": "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2024-title-08.pdf",
+      "locator": "Colo. Rev. Stat. § 8-4-109(1)(a)–(b) (2024)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:37:35.427630+00:00",
+        "sha256": "89aa1dc1621cc1a0ac1a25a1c0d3c4df30e7064f35d17b7559da498606af9f04"
+      }
     }
   },
   "court_directory": [
@@ -524,6 +536,18 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Colorado Revised Statutes 2023 uncertified printout"
+    },
+    "64a2fe4a157324229421c46abdec90": {
+      "source_id": "US-CO:wageLaw:a4414922fb5e",
+      "authority_type": "statute",
+      "citation": "Colo. Rev. Stat. § 8-4-109(1)(a)–(b) (2024)",
+      "text": "(1) (a) When an interruption in the employer-employee relationship by volition of the employer occurs, the wages or compensation for labor or service earned, vested, determinable, and unpaid at the time of such discharge is due and payable immediately. If at such time the employer's accounting unit, responsible for the drawing of payroll checks, is not regularly scheduled to be operational, then the wages due the separated employee shall be made available to the employee no later than six hours after the start of such employer's accounting unit's next regular workday; except that, if the accounting unit is located off the work site, the employer shall deliver the check for wages due the separated employee no later than twenty-four hours after the start of such employer's accounting unit's next regular workday to one of the following locations selected by the employer: (I) The work site; (II) The employer's local office; or (III) The employee's last-known mailing address. (b) When an employee quits or resigns such employee's employment, the wages or compensation shall become due and payable upon the next regular payday. When a separation of employment occurs, the employer shall make the separated employee's check for wages due available at one of the following locations selected by the employer: (I) The work site; (II) The employer's local office; or (III) The employee's last-known mailing address. (c) If an employer has made the employee's wages or compensation available at the work site or at the employer's local office under paragraph (a) or (b) of this subsection (1), and the employee has not received the wages or compensation within sixty days after the wages or compensation were due, the employer shall mail the employee's check for wages or compensation due to the employee's last-known mailing address.",
+      "text_sha256": "5ae621a0c6dfce2c045316abb2a5f8e9fbc93da6aae47fbe6546933240d387a2",
+      "publisher_sha256": "89aa1dc1621cc1a0ac1a25a1c0d3c4df30e7064f35d17b7559da498606af9f04",
+      "retrieved_at": "2026-11-20T17:37:35.427630+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2024 Colorado Revised Statutes uncertified printout"
     }
   },
   "fault_allocation": {

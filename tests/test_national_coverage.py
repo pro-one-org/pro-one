@@ -159,6 +159,17 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertNotIn(key, provider.search(query.model_copy(update={"topics": ["debt_collection"]})))
         self.assertFalse(provider.search(query.model_copy(update={"state": "Indiana"})))
 
+    def test_texas_response_passages_keep_justice_and_district_court_rules_apart(self):
+        query = ResearchMatter(country="US", state="Texas", legal_area="civil_procedure",
+                               topics=["justice_court_response"], authority_types=["court_rule"])
+        provider = RetainedLegislativeResearch()
+        justice, = provider.search(query)
+        self.assertIn("14th day after the day", provider.fetch(justice).text)
+        self.assertEqual(provider.fetch(justice).source["jurisdiction"]["court"], "Texas Justice Court")
+        district, = provider.search(query.model_copy(update={"topics": ["initial_response"]}))
+        self.assertIn("Monday next after the expiration of twenty days", provider.fetch(district).text)
+        self.assertFalse(provider.search(query.model_copy(update={"court": "Texas district and county courts"})))
+
     def test_historical_negligence_elements_do_not_supply_fault_or_present_law(self):
         query = ResearchMatter(country="US", state="Alabama", legal_area="torts",
                                topics=["negligence_elements"], authority_types=["opinion"],

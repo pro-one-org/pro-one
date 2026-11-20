@@ -324,6 +324,18 @@
         "retrieved_at": "2026-11-20T17:27:34.359207+00:00",
         "sha256": "8c38da28e243fc5cb2ac38d016dd93d5bea159a6cf8af689e5117bf3df36de34"
       }
+    },
+    "US-UT:wageLaw:701488bdf29f": {
+      "category": "wageLaw",
+      "title": "Utah Code § 34-28-3(1)",
+      "url": "https://le.utah.gov/xcode/Title34/Chapter28/C34-28-S3_2014040320140513.pdf",
+      "locator": "Utah Code § 34-28-3(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:37:34.516604+00:00",
+        "sha256": "923b2f5dd5bd0e8df50d37aae90561b8405504ac2a6be9008727a4be14bffa18"
+      }
     }
   },
   "court_directory": [
@@ -556,6 +568,19 @@
       "retrieved_at": "2026-11-20T17:27:34.359207+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "75e55368c4d2114f6797fae1878d81": {
+      "source_id": "US-UT:wageLaw:701488bdf29f",
+      "authority_type": "statute",
+      "citation": "Utah Code § 34-28-3(1)",
+      "text": "(1) (a) An employer shall pay the wages earned by an employee at regular intervals, but in periods no longer than semimonthly on days to be designated in advance by the employer as the regular payday. (b) An employer shall pay for services rendered during a pay period within 10 days after the close of that pay period. (c) If a payday falls on a Saturday, Sunday, or legal holiday, an employer shall pay wages earned during the pay period on the day preceding the Saturday, Sunday, or legal holiday. (d) If an employer hires an employee on a yearly salary basis, the employer may pay the employee on a monthly basis by paying on or before the seventh of the month following the month for which services are rendered. (e) Wages shall be paid in full to an employee: (i) in lawful money of the United States; (ii) by a check or draft on a depository institution, as defined in Section 7-1-103, that is convertible into cash on demand at full face value; or (iii) by electronic transfer to the depository institution designated by the employee.",
+      "text_sha256": "0d3206ba91c1dbcfbe98ae70d1def4828b81b11c5822767f67abff3d5f0d33e9",
+      "publisher_sha256": "923b2f5dd5bd0e8df50d37aae90561b8405504ac2a6be9008727a4be14bffa18",
+      "retrieved_at": "2026-11-20T17:37:34.516604+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Utah Code statutory version effective May 13, 2014",
+      "effective_from": "2014-05-13"
     }
   },
   "fault_allocation": {

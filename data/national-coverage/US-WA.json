@@ -357,6 +357,18 @@
         "retrieved_at": "2026-11-20T15:27:32.390013+00:00",
         "sha256": "6f23b573e734fee0c14abc4578a959820f290492e750c085e5a634743bad87b2"
       }
+    },
+    "US-WA:wageLaw:f87b7dc07f01": {
+      "category": "wageLaw",
+      "title": "RCW 49.48.010(2)",
+      "url": "https://apps.leg.wa.gov/rcw/default.aspx?cite=49.48.010",
+      "locator": "RCW 49.48.010(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:37:34.484769+00:00",
+        "sha256": "2799dbe5f3126ece1964f238e4a9d7515ac6f3a243fd4340b1e857a0ac87d612"
+      }
     }
   },
   "court_directory": [
@@ -627,6 +639,17 @@
       "decision_date": "2013-08-08",
       "opinion_role": "majority",
       "procedural_posture": "Review of summary judgment on legal causation in a roadway negligence dispute."
+    },
+    "731f4f5538d9a6ce141bc0847c9461": {
+      "source_id": "US-WA:wageLaw:f87b7dc07f01",
+      "authority_type": "statute",
+      "citation": "RCW 49.48.010(2)",
+      "text": "(2) When any employee shall cease to work for an employer, whether by discharge or by voluntary withdrawal, the wages due him or her on account of his or her employment shall be paid to him or her at the end of the established pay period: PROVIDED, HOWEVER, That this subsection shall not apply when workers are engaged in an employment that normally involves working for several employers in the same industry interchangeably, and the several employers or some of them cooperate to establish a plan for the weekly payment of wages at a central place or places and in accordance with a unified schedule of paydays providing for at least one payday each week; but this subsection shall not apply to any such plan until ten days after notice of their intention to set up such a plan shall have been given to the director of labor and industries by the employers who cooperate to establish the plan; and having once been established, no such plan can be abandoned except after notice of their intention to abandon such plan has been given to the director of labor and industries by the employers intending to abandon the plan: PROVIDED FURTHER, That the duty to pay an employee forthwith shall not apply if the labor-management agreement under which the employee has been employed provides otherwise.",
+      "text_sha256": "049bcc2e756f0642a8229a12d365d36f431b28664a6eb600c2cc550fd2455950",
+      "publisher_sha256": "2799dbe5f3126ece1964f238e4a9d7515ac6f3a243fd4340b1e857a0ac87d612",
+      "retrieved_at": "2026-11-20T17:37:34.484769+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {
