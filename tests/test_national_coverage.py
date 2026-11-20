@@ -168,6 +168,25 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertIn(small_claim["citation"], small_citations)
         self.assertNotIn(response["citation"], small_citations)
 
+    def test_california_response_statutes_keep_triggers_and_form_revision_separate(self):
+        provider = RetainedLegislativeResearch()
+        matter = ResearchMatter(country="US", state="California", legal_area="civil_procedure",
+                                authority_types=["statute"], authority_status="unresolved")
+        for topic, section, trigger in (
+            ("initial_response", "412.20(a)", "after summons is served"),
+            ("demurrer_timing", "430.40(a)–(b)", "after service of the complaint or cross-complaint"),
+            ("amended_pleading_response", "471.5(a)–(b)", "after service thereof"),
+        ):
+            with self.subTest(topic=topic):
+                query = matter.model_copy(update={"topics": [topic]})
+                key, = provider.search(query)
+                doc = provider.fetch(key)
+                self.assertIn(section, doc.source["citation"]["preferred_citation"])
+                self.assertIn(trigger, doc.text)
+                self.assertNotIn("January 1, 2027", doc.text)
+                self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                          "authority_as_of": "2026-11-20"})))
+
     def test_action_references_expose_dated_authority_without_unlocking_execution(self):
         actions = coverage("US-WI")["action_shells"]
         complaint = next(action for action in actions if action["action_type"] == "complaint")

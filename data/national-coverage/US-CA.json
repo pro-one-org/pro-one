@@ -468,6 +468,54 @@
         "retrieved_at": "2026-11-20T16:16:30.551529+00:00",
         "sha256": "3877e1bf8a7e8e3f4de802c1c9b7bc9c1d49e1a03723b88068c02bc8b41fed8e"
       }
+    },
+    "US-CA:response:5b41cd5a34e1": {
+      "category": "response",
+      "title": "Cal. Code Civ. Proc. § 412.20(a) (ordinary summons contents and response)",
+      "url": "https://downloads.leginfo.legislature.ca.gov/pubinfo_2025.zip",
+      "locator": "Cal. Code Civ. Proc. § 412.20(a) (ordinary summons contents and response)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:24:00.014038+00:00",
+        "sha256": "4fd6e57d650c0fbb19bef72cf68660c21f6ce16694fd9806312ba6b265beb0b8"
+      }
+    },
+    "US-CA:demurrer_timing:ac4b09a14db0": {
+      "category": "demurrer_timing",
+      "title": "Cal. Code Civ. Proc. § 430.40(a)–(b) (demurrer timing)",
+      "url": "https://downloads.leginfo.legislature.ca.gov/pubinfo_2025.zip",
+      "locator": "Cal. Code Civ. Proc. § 430.40(a)–(b) (demurrer timing)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:24:01.129436+00:00",
+        "sha256": "d7d30c2c9c3b5e3a003615e7c7c0e15e0c4e838d4485e71e43db3ef06845a83c"
+      }
+    },
+    "US-CA:amended_pleading_response:6487f43c3f1c": {
+      "category": "amended_pleading_response",
+      "title": "Cal. Code Civ. Proc. § 471.5(a)–(b) (amended pleading response)",
+      "url": "https://downloads.leginfo.legislature.ca.gov/pubinfo_2025.zip",
+      "locator": "Cal. Code Civ. Proc. § 471.5(a)–(b) (amended pleading response)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:24:02.057019+00:00",
+        "sha256": "26b72e05494989fad14f4fba3d597d0124d0f619695dbffb6263a38fd9f750c5"
+      }
+    },
+    "US-CA:tort_damages:f9b1521ddbe4": {
+      "category": "tort_damages",
+      "title": "Cal. Civ. Code § 3333 (damages for breach of noncontractual obligations)",
+      "url": "https://downloads.leginfo.legislature.ca.gov/pubinfo_2025.zip",
+      "locator": "Cal. Civ. Code § 3333 (damages for breach of noncontractual obligations)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:24:02.767114+00:00",
+        "sha256": "075d5687451db3bcb8871a703ca42042d9e9bc88ca71304543077268f5528c56"
+      }
     }
   },
   "court_directory": [
@@ -820,6 +868,74 @@
       "publisher_section_id": "CCP116.221.20238616",
       "publisher_history": "Amended by Stats. 2023, Ch. 861, Sec. 6.   (SB 71)   Effective January 1, 2024.",
       "effective_from": "2024-01-01"
+    },
+    "764dbf969dd2511d282fcb5e4b6597": {
+      "source_id": "US-CA:response:5b41cd5a34e1",
+      "authority_type": "statute",
+      "citation": "Cal. Code Civ. Proc. § 412.20(a) (ordinary summons contents and response)",
+      "text": "(a) Except as otherwise required by statute, a summons shall be directed to the defendant, signed by the clerk and issued under the seal of the court in which the action is pending, and it shall contain: (1) The title of the court in which the action is pending. (2) The names of the parties to the action. (3) A direction that the defendant file with the court a written pleading in response to the complaint within 30 days after summons is served on the defendant. (4) A notice that, unless the defendant so responds, their default will be entered upon application by the plaintiff, and the plaintiff may apply to the court for the relief demanded in the complaint, which could result in garnishment of wages, taking of money or property, or other relief. (5) The following statement in boldface type: “You may seek the advice of an attorney in any matter connected with the complaint or this summons. Such attorney should be consulted promptly so that your pleading may be filed or entered within the time required by this summons.” (6) The following introductory legend at the top of the summons above all other matter, in boldface type, in English and Spanish: “Notice! You have been sued. The court may decide against you without your being heard unless you respond within 30 days. Read information below.”",
+      "text_sha256": "8c0b8aa2b84ac94113b20b65d5de60ce965c6aa4b22b42a65bb1c760743deb56",
+      "publisher_sha256": "4fd6e57d650c0fbb19bef72cf68660c21f6ce16694fd9806312ba6b265beb0b8",
+      "retrieved_at": "2026-11-20T22:24:00.014038+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "California courts applying the ordinary civil statutes",
+      "edition": "California Legislative Counsel PUBINFO, archive modified November 16, 2026",
+      "publisher_member": "LAW_SECTION_TBL_3309.lob",
+      "publisher_archive_etag": "\"4d06606a-6605e05841b00\"",
+      "publisher_section_id": "CCP412.20.20253441",
+      "publisher_history": "Amended by Stats. 2025, Ch. 344, Sec. 1.   (AB 863)   Effective January 1, 2026.",
+      "effective_from": "2026-01-01"
+    },
+    "33a16e6114876fc6ab4ac78d1a5ef2": {
+      "source_id": "US-CA:demurrer_timing:ac4b09a14db0",
+      "authority_type": "statute",
+      "citation": "Cal. Code Civ. Proc. § 430.40(a)–(b) (demurrer timing)",
+      "text": "(a) A person against whom a complaint or cross-complaint has been filed may, within 30 days after service of the complaint or cross-complaint, demur to the complaint or cross-complaint. (b) A party who has filed a complaint or cross-complaint may, within 10 days after service of the answer to his pleading, demur to the answer.",
+      "text_sha256": "4bee1176e2cc8700f89ce5f5e0769122d9bc7d0167bb5b4f99548cc1ab0b37d6",
+      "publisher_sha256": "d7d30c2c9c3b5e3a003615e7c7c0e15e0c4e838d4485e71e43db3ef06845a83c",
+      "retrieved_at": "2026-11-20T22:24:01.129436+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "California courts applying the ordinary civil statutes",
+      "edition": "California Legislative Counsel PUBINFO, archive modified November 16, 2026",
+      "publisher_member": "LAW_SECTION_TBL_9545.lob",
+      "publisher_archive_etag": "\"4d06606a-6605e05841b00\"",
+      "publisher_section_id": "CCP430.40.1971244",
+      "publisher_history": "Added by Stats. 1971, Ch. 244."
+    },
+    "7af81c3b62764798aa8f071846fe6f": {
+      "source_id": "US-CA:amended_pleading_response:6487f43c3f1c",
+      "authority_type": "statute",
+      "citation": "Cal. Code Civ. Proc. § 471.5(a)–(b) (amended pleading response)",
+      "text": "(a) If the complaint is amended, a copy of the amendments shall be filed, or the court may, in its discretion, require the complaint as amended to be filed, and a copy of the amendments or amended complaint must be served upon the defendants affected thereby. The defendant shall answer the amendments, or the complaint as amended, within 30 days after service thereof, or such other time as the court may direct, and judgment by default may be entered upon failure to answer, as in other cases. For the purposes of this subdivision, “complaint” includes a cross-complaint, and “defendant” includes a person against whom a cross-complaint is filed. (b) If the answer is amended, the adverse party has 10 days after service thereof, or such other time as the court may direct, in which to demur to the amended answer.",
+      "text_sha256": "5ab6ba1f90ce058f3ae931a03ad2d56220edb584a44e5f3c819f46eb3040664e",
+      "publisher_sha256": "26b72e05494989fad14f4fba3d597d0124d0f619695dbffb6263a38fd9f750c5",
+      "retrieved_at": "2026-11-20T22:24:02.057019+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "California courts applying the ordinary civil statutes",
+      "edition": "California Legislative Counsel PUBINFO, archive modified November 16, 2026",
+      "publisher_member": "LAW_SECTION_TBL_9615.lob",
+      "publisher_archive_etag": "\"4d06606a-6605e05841b00\"",
+      "publisher_section_id": "CCP471.5.197273",
+      "publisher_history": "Repealed and added by Stats. 1972, Ch. 73."
+    },
+    "39cd7a736a29ef53c500eb042e91d6": {
+      "source_id": "US-CA:tort_damages:f9b1521ddbe4",
+      "authority_type": "statute",
+      "citation": "Cal. Civ. Code § 3333 (damages for breach of noncontractual obligations)",
+      "text": "For the breach of an obligation not arising from contract, the measure of damages, except where otherwise expressly provided by this Code, is the amount which will compensate for all the detriment proximately caused thereby, whether it could have been anticipated or not.",
+      "text_sha256": "a0c44cfb5550ec48978878fd73af761648c394a624371977b1db6c00f69232a8",
+      "publisher_sha256": "075d5687451db3bcb8871a703ca42042d9e9bc88ca71304543077268f5528c56",
+      "retrieved_at": "2026-11-20T22:24:02.767114+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "California Legislative Counsel PUBINFO, archive modified November 16, 2026",
+      "publisher_member": "LAW_SECTION_TBL_24512.lob",
+      "publisher_archive_etag": "\"4d06606a-6605e05841b00\"",
+      "publisher_section_id": "CIV3333.1872",
+      "publisher_history": "Enacted 1872."
     }
   },
   "fault_allocation": {
