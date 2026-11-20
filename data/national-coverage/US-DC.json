@@ -191,6 +191,18 @@
         "retrieved_at": "2026-11-19T19:26:42.853283+00:00",
         "sha256": "070126b620d9b9710190c5ffc422dd9a443e172f6ef59ea42199b5bbf1945e84"
       }
+    },
+    "US-DC:fault:47842a8c4074": {
+      "category": "fault",
+      "title": "D.C. Code § 50–2204.52(a)–(b)",
+      "url": "https://code.dccouncil.gov/us/dc/council/code/sections/50-2204.52",
+      "locator": "D.C. Code § 50–2204.52(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:13:14.241699+00:00",
+        "sha256": "fdf1ec3c4161bffa2d906a38ab467bb9ba61c9010c576de5a8a442e0884f7d8b"
+      }
     }
   },
   "court_directory": [
@@ -298,6 +310,25 @@
       "retrieved_at": "2026-11-19T19:26:42.853283+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "9ccf7567645c158996869a47864d15": {
+      "source_id": "US-DC:fault:47842a8c4074",
+      "authority_type": "statute",
+      "citation": "D.C. Code § 50–2204.52(a)–(b)",
+      "text": "(a) Unless the plaintiff's negligence is a proximate cause of the plaintiff's injury and greater than the aggregated total negligence of all the defendants that proximately caused the plaintiff's injury, the negligence of the following shall not bar the plaintiff's recovery in any civil action in which the plaintiff is one of the following: (1) A pedestrian or vulnerable user of a public highway or sidewalk involved in a collision with a motor vehicle or another vulnerable user; or (2) A vulnerable user of a public highway or sidewalk involved in a collision with a pedestrian. (b) Nothing in this subchapter shall be construed to: (1) Change or affect the doctrine of joint and several liability or the last clear chance doctrine; or (2) Reduce the legal protections provided to pedestrians and cyclists under: (A) § 7-1004; or (B) § 50-1606.",
+      "text_sha256": "a12740728deacac38355e72119d90a14834424bc085f365ce81a7121d9e60a9c",
+      "publisher_sha256": "fdf1ec3c4161bffa2d906a38ab467bb9ba61c9010c576de5a8a442e0884f7d8b",
+      "retrieved_at": "2026-11-20T15:13:14.241699+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_date": "2021-03-16"
     }
+  },
+  "fault_allocation": {
+    "regime": "other_state_specific",
+    "source_id": "US-DC:fault:47842a8c4074",
+    "passage_selector": "9ccf7567645c158996869a47864d15",
+    "currentness": "unresolved",
+    "qualification": "The provision is limited to the covered public-highway and sidewalk collisions and parties specified in subsection (a). Joint and several liability, last clear chance, and the additional legislation identified in subsection (b) are preserved."
   }
 }

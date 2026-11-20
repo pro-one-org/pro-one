@@ -346,6 +346,18 @@
         "retrieved_at": "2026-11-19T19:42:59.195878+00:00",
         "sha256": "a7f7cd9bdf5835437a297483c4c0c0af7bc30d44ad8070214b57db3b29ea847a"
       }
+    },
+    "US-SC:fault:532a4af3124d": {
+      "category": "fault",
+      "title": "Berberich v. Jack, Opinion No. 26955 (S.C. Apr. 4, 2011)",
+      "url": "https://www.sccourts.org/media/opinions/HTMLFiles/SC/26955.htm",
+      "locator": "Berberich v. Jack, Opinion No. 26955 (S.C. Apr. 4, 2011)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:12:10.872912+00:00",
+        "sha256": "92214099e3459e3d5e8a644a0a3ba0104b58094ed113d3b15b9575f43dce5d4c"
+      }
     }
   },
   "court_directory": [
@@ -562,6 +574,29 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "South Carolina Circuit Court"
+    },
+    "c44b1c5dcabe769e4c7222f2371292": {
+      "source_id": "US-SC:fault:532a4af3124d",
+      "authority_type": "opinion",
+      "citation": "Berberich v. Jack, Opinion No. 26955 (S.C. Apr. 4, 2011)",
+      "text": "In Nelson, this Court stated that, under comparative negligence \"a plaintiff in a negligence action may recover damages if his or her negligence is not greater than that of the defendant.\" Id. at 245, 399 S.E.2d at 784. \"The amount of the plaintiff's recovery shall be reduced in proportion to the amount of his or her negligence.\" Id.",
+      "text_sha256": "66d52ff9d2f9efa0c310f84b58a4d17db3cf5df3fbea85ee82867ec3356afbf0",
+      "publisher_sha256": "92214099e3459e3d5e8a644a0a3ba0104b58094ed113d3b15b9575f43dce5d4c",
+      "retrieved_at": "2026-11-20T15:12:10.872912+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2011-04-04",
+      "court": "Supreme Court of South Carolina",
+      "decision_date": "2011-04-04",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a circuit court judgment in a negligence case concerning jury instructions."
     }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "source_id": "US-SC:fault:532a4af3124d",
+    "passage_selector": "c44b1c5dcabe769e4c7222f2371292",
+    "currentness": "historical",
+    "qualification": "The cited discussion concerns ordinary negligence. The opinion separately analyzes reckless, willful and wanton conduct."
   }
 }

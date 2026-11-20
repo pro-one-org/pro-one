@@ -237,6 +237,18 @@
         "retrieved_at": "2026-11-18T20:37:43.367369+00:00",
         "sha256": "565d1a623937002d32c8432437df307e1d8e9a31df58794415c6c214f12793f9"
       }
+    },
+    "US-IL:fault:fbd9d5fc8926": {
+      "category": "fault",
+      "title": "Merca v. Rhodes, 2011 IL App (1st) 102234, ¶ 45",
+      "url": "https://www.illinoiscourts.gov/Resources/bda9eadc-39cd-4778-84c5-9f6d318dfe14/1102234.pdf",
+      "locator": "Merca v. Rhodes, 2011 IL App (1st) 102234, ¶ 45",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:12:11.014534+00:00",
+        "sha256": "b819500b4668285ca53bbdf29dd41d49ae83b747923ccb9468c928049769cbc0"
+      }
     }
   },
   "court_directory": [
@@ -344,6 +356,29 @@
       "language": "en",
       "edition": "Supreme Court order M.R. 3140, July 17, 2020",
       "court": "Illinois Circuit Court"
+    },
+    "c514fc03864b70416099306052de79": {
+      "source_id": "US-IL:fault:fbd9d5fc8926",
+      "authority_type": "opinion",
+      "citation": "Merca v. Rhodes, 2011 IL App (1st) 102234, ¶ 45",
+      "text": "Section 2-1116 of the Code of Civil Procedure (735 ILCS 5/2-1116 (West 2008)) bars a plaintiff whose contributory negligence is more “than 50% of the proximate cause of the injury or damage for which recovery is sought” from recovering any damages.",
+      "text_sha256": "7f6b7cc3922f9cec05d517150e24a9c37f1cc35a7ddd440f3aebc2ddc2539d9e",
+      "publisher_sha256": "b819500b4668285ca53bbdf29dd41d49ae83b747923ccb9468c928049769cbc0",
+      "retrieved_at": "2026-11-20T15:12:11.014534+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2011-09-30",
+      "court": "Illinois Appellate Court, First District",
+      "decision_date": "2011-09-30",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in a wrongful death action arising from a pedestrian collision."
     }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "source_id": "US-IL:fault:fbd9d5fc8926",
+    "passage_selector": "c514fc03864b70416099306052de79",
+    "currentness": "historical",
+    "qualification": "This opinion discusses the bar in the 2008 version of 735 ILCS 5/2-1116."
   }
 }

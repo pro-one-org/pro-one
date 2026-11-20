@@ -247,6 +247,18 @@
         "retrieved_at": "2026-11-18T20:45:55.864619+00:00",
         "sha256": "28d81afa2685b7f2f9d8a25e1d232b9b54b0a52e4b92cd9ff67f11acaa7f409b"
       }
+    },
+    "US-IN:fault:ec846fef5b5e": {
+      "category": "fault",
+      "title": "Ludwig v. Flaherty & Collins, Inc., No. 25A-CT-941, ¶ 11 (Ind. Ct. App. Mar. 16, 2026)",
+      "url": "https://public.courts.in.gov/Decisions/api/Document/Opinion?Id=O5e2N4TgWFZc3xrL-ulBho5tCFDP1iYKI73Al-RGtcGezeRHiZn9BtTnz--u8VWR0",
+      "locator": "Ludwig v. Flaherty & Collins, Inc., No. 25A-CT-941, ¶ 11 (Ind. Ct. App. Mar. 16, 2026)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:12:11.636524+00:00",
+        "sha256": "6d6cb3d3deabc0a6391c68b1f022db1e5dddbb5e8e36c1d6e1fc73793d9e18b9"
+      }
     }
   },
   "court_directory": [
@@ -395,6 +407,29 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Indiana trial courts"
+    },
+    "34f89a8f86d8e17f94b2ecb7dcca0b": {
+      "source_id": "US-IN:fault:ec846fef5b5e",
+      "authority_type": "opinion",
+      "citation": "Ludwig v. Flaherty & Collins, Inc., No. 25A-CT-941, ¶ 11 (Ind. Ct. App. Mar. 16, 2026)",
+      "text": "If the jury finds the plaintiff more than fifty percent at fault, it must “return a verdict for the defendant and no further deliberation of the jury is required.” I.C. § 34-51-2-7(b)(2).",
+      "text_sha256": "3f049fe369139fa04668f8d7347fb947bd54c79a03c7a1a23287d745029c734d",
+      "publisher_sha256": "6d6cb3d3deabc0a6391c68b1f022db1e5dddbb5e8e36c1d6e1fc73793d9e18b9",
+      "retrieved_at": "2026-11-20T15:12:11.636524+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2026-03-16",
+      "court": "Court of Appeals of Indiana",
+      "decision_date": "2026-03-16",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a defense verdict in a premises negligence case."
     }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "source_id": "US-IN:fault:ec846fef5b5e",
+    "passage_selector": "34f89a8f86d8e17f94b2ecb7dcca0b",
+    "currentness": "historical",
+    "qualification": "The opinion applies Ind. Code § 34-51-2-7(b)(2) in a private premises negligence case. Claims governed by distinct statutes are outside the retained excerpt."
   }
 }

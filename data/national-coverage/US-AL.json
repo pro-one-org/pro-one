@@ -292,6 +292,18 @@
         "retrieved_at": "2026-11-19T19:39:45.925274+00:00",
         "sha256": "0198105ad04851844b1ef832dbc78351f633c49896445f5be796183eb2be41a5"
       }
+    },
+    "US-AL:fault:cd68a9f56605": {
+      "category": "fault",
+      "title": "Imperial Aluminum-Scottsboro, LLC v. Taylor, No. 1171133 (Ala. Sept. 20, 2019)",
+      "url": "https://acis.alabama.gov/displaydocs.cfm?event=5L00KSPGV&no=970661",
+      "locator": "Imperial Aluminum-Scottsboro, LLC v. Taylor, No. 1171133 (Ala. Sept. 20, 2019)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:12:11.967547+00:00",
+        "sha256": "587d12ea547e84db8d1ff9a08e162f23dbf7a575adb84d8a243359de2d9e3c13"
+      }
     }
   },
   "court_directory": [
@@ -496,6 +508,29 @@
       "decision_date": "2022-02-11",
       "opinion_role": "majority",
       "procedural_posture": "Circuit court contract appeals. One appeal dismissed and the other reversed and remanded."
+    },
+    "579d88a0d023df3828b20e26ab4fe9": {
+      "source_id": "US-AL:fault:cd68a9f56605",
+      "authority_type": "opinion",
+      "citation": "Imperial Aluminum-Scottsboro, LLC v. Taylor, No. 1171133 (Ala. Sept. 20, 2019)",
+      "text": "Contributory negligence is an affirmative and complete defense to a claim based on negligence. In order to establish contributory negligence, the defendant bears the burden of proving that the plaintiff 1) had knowledge of the dangerous condition; 2) had an appreciation of the danger under the surrounding circumstances; and 3) failed to exercise reasonable care, by placing himself in the way of danger.\"",
+      "text_sha256": "b97c49382aac092e070f6959e062c11dab0bb762aaa6d369fc9b247d7c88bec1",
+      "publisher_sha256": "587d12ea547e84db8d1ff9a08e162f23dbf7a575adb84d8a243359de2d9e3c13",
+      "retrieved_at": "2026-11-20T15:12:11.967547+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2019-09-20",
+      "court": "Supreme Court of Alabama",
+      "decision_date": "2019-09-20",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a circuit court judgment on a spoliation claim. The court considered contributory negligence in the underlying negligence action."
     }
+  },
+  "fault_allocation": {
+    "regime": "contributory",
+    "source_id": "US-AL:fault:cd68a9f56605",
+    "passage_selector": "579d88a0d023df3828b20e26ab4fe9",
+    "currentness": "historical",
+    "qualification": "The opinion quotes Alabama’s affirmative defense and its elements."
   }
 }

@@ -83,7 +83,12 @@ class NationalCoverageTests(unittest.TestCase):
         provider = RetainedLegislativeResearch()
         key, = provider.search(query)
         self.assertIn("actual cause", provider.fetch(key).text)
-        for change in ({"topics": ["fault_allocation"]}, {"topics": ["limitations"]},
+        fault_query = query.model_copy(update={"topics": ["fault_allocation"]})
+        fault_key, = provider.search(fault_query)
+        self.assertNotEqual(fault_key, key)
+        self.assertIn("Imperial Aluminum-Scottsboro", provider.fetch(fault_key).source["citation"]["preferred_citation"])
+        self.assertFalse(provider.search(fault_query.model_copy(update={"authority_status": "current"})))
+        for change in ({"topics": ["limitations"]},
                        {"authority_status": "current"}, {"court": "Alabama Circuit Court"}):
             self.assertFalse(provider.search(query.model_copy(update=change)))
 

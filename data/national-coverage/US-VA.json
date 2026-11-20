@@ -387,6 +387,18 @@
         "retrieved_at": "2026-11-19T19:02:18.051327+00:00",
         "sha256": "15a5095aba5043b863d2c7fb26f24c2556cad4908054874c0dff4f770af53a0f"
       }
+    },
+    "US-VA:fault:a5d48c31d89d": {
+      "category": "fault",
+      "title": "Rascher v. Friend, No. 090193 (Va. Feb. 25, 2010)",
+      "url": "https://www.vacourts.gov/static/opinions/opnscvwp/1090193.pdf",
+      "locator": "Rascher v. Friend, No. 090193 (Va. Feb. 25, 2010)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:12:11.494311+00:00",
+        "sha256": "5aa9b45270cde61889d1b60d0fcff00ed68b871898ac009ed53dc0bc49b0872b"
+      }
     }
   },
   "court_directory": [
@@ -603,6 +615,29 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Virginia Circuit Court"
+    },
+    "f9070d18be478f634b224060155b4f": {
+      "source_id": "US-VA:fault:a5d48c31d89d",
+      "authority_type": "opinion",
+      "citation": "Rascher v. Friend, No. 090193 (Va. Feb. 25, 2010)",
+      "text": "Contributory negligence consists of the independent elements of negligence and proximate causation. Karim v. Grover, 235 Va. 550, 552, 369 S.E.2d 185, 186 (1988). Accordingly, “[w]hen a defendant relies upon contributory negligence as a defense, he has the burden of proving by the greater weight of the evidence not only that the plaintiff was negligent, but also that his negligence was a proximate cause, a direct, efficient contributing cause of the accident.” Id. (internal quotations and citation omitted)",
+      "text_sha256": "7fa635678cd85f86db909a39e1f0cba0dfb19b417ecd171461d9a57b301cc029",
+      "publisher_sha256": "5aa9b45270cde61889d1b60d0fcff00ed68b871898ac009ed53dc0bc49b0872b",
+      "retrieved_at": "2026-11-20T15:12:11.494311+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2010-02-25",
+      "court": "Supreme Court of Virginia",
+      "decision_date": "2010-02-25",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from an order striking the plaintiff’s evidence in a motor-vehicle personal injury action."
     }
+  },
+  "fault_allocation": {
+    "regime": "contributory",
+    "source_id": "US-VA:fault:a5d48c31d89d",
+    "passage_selector": "f9070d18be478f634b224060155b4f",
+    "currentness": "historical",
+    "qualification": "The retained passage concerns the defense’s elements and burden of proof in a negligence action. It does not provide statutory or common-law exceptions."
   }
 }
