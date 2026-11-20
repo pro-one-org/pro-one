@@ -349,6 +349,18 @@
         "retrieved_at": "2026-11-20T16:16:28.940021+00:00",
         "sha256": "ce5d6837482abf31278e1198760d6955b8648bd6407e1280c65b5269052e731c"
       }
+    },
+    "US-FL:deposit:923945328605": {
+      "category": "deposit",
+      "title": "Fla. Stat. § 83.49(3)(a)",
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0083/Sections/0083.49.html",
+      "locator": "Fla. Stat. § 83.49(3)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:16.842201+00:00",
+        "sha256": "22f8337df3bfa596706fbf606c001b03dc7834e6de781879a2a910195a52f3d4"
+      }
     }
   },
   "court_directory": [
@@ -570,6 +582,17 @@
       "edition": "Florida Supreme Court rule order SC2024-1765, adopted October 23, 2025",
       "court": "Florida County Court",
       "effective_from": "2026-01-01"
+    },
+    "55c3bb60df2c8150cd6e23fc80e287": {
+      "source_id": "US-FL:deposit:923945328605",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 83.49(3)(a)",
+      "text": "(a) Upon the vacating of the premises for termination of the rental agreement, if the landlord does not intend to impose a claim on the security deposit, the landlord must return the security deposit, together with interest if otherwise required, within 15 days after the termination of the rental agreement. If the landlord intends to impose a claim on the deposit, the landlord must, within 30 days after the termination of the rental agreement, provide the tenant written notice by certified mail to the tenant’s last known mailing address or by e-mail in accordance with s. 83.505 of his or her intention to impose a claim on the deposit and the reason for imposing the claim. The written notice must contain a statement in substantially the following form: This is a notice of my intention to impose a claim for damages in the amount of upon your security deposit, due to . It is sent to you as required by s. 83.49(3), Florida Statutes. You are hereby notified that you must object in writing to this deduction from your security deposit within 15 days after the time you receive this notice or I will be authorized to deduct my claim from your security deposit. Your objection must be sent to (landlord’s address) . If the landlord fails to give the required written notice within the 30-day period, he or she forfeits the right to impose a claim upon the security deposit and may not seek a setoff against the deposit but may file an action for damages after returning the security deposit to the tenant.",
+      "text_sha256": "b046df6a654f9a4c19e3396819843eb66990dbc928b8cc77e582cb6f729d727f",
+      "publisher_sha256": "22f8337df3bfa596706fbf606c001b03dc7834e6de781879a2a910195a52f3d4",
+      "retrieved_at": "2026-11-20T16:35:16.842201+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

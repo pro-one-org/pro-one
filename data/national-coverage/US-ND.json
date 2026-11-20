@@ -324,6 +324,18 @@
         "retrieved_at": "2026-11-20T16:16:29.521693+00:00",
         "sha256": "e325e53f03eafa6259eaa96482bdd3653e74610257958e7095237c9a0b9c78eb"
       }
+    },
+    "US-ND:deposit:129d70da3d60": {
+      "category": "deposit",
+      "title": "N.D. Cent. Code § 47-16-07.1(3)",
+      "url": "https://ndlegis.gov/prod/cencode/t47c16.pdf",
+      "locator": "N.D. Cent. Code § 47-16-07.1(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:17.275448+00:00",
+        "sha256": "fcefb7c8434ad80e2e9644eec141b299f05b7b4bffa0517c8f607e51375b91b0"
+      }
     }
   },
   "court_directory": [
@@ -515,6 +527,17 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "North Dakota District Court sitting as Small Claims Court"
+    },
+    "8abd52bb5cc640cfeb13fb66531cce": {
+      "source_id": "US-ND:deposit:129d70da3d60",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 47-16-07.1(3)",
+      "text": "3. A lessor may apply security deposit money and accrued interest upon termination of a lease towards: a. Any damages the lessor has suffered by reason of deteriorations or injuries to the real property or dwelling by the lessee's pet or through the negligence of the lessee or the lessee's guest. b. Any unpaid rent. c. The costs of cleaning or other repairs which were the responsibility of the lessee, and which are necessary to return the dwelling unit to its original state when the lessee took possession, reasonable wear and tear excepted. Application of any portion of a security deposit not paid to the lessee upon termination of the lease must be itemized by the lessor. Such itemization together with the amount due must be delivered or mailed to the lessee at the last address furnished lessor, along with a written notice within thirty days after termination of the lease and delivery of possession by the lessee. The notice must contain a statement of any amount still due the lessor or the refund due the lessee. A lessor is not required to pay interest on security deposits if the period of occupancy was less than nine months in duration. Any amounts not claimed from the lessor by the lessee within one year of the termination of the lease agreement are subject to the reporting requirements of section 47-30.2-04.",
+      "text_sha256": "65a51511eb350291d11793be162b9d201a2f3ba286c625d1c443199b4d7be9c8",
+      "publisher_sha256": "fcefb7c8434ad80e2e9644eec141b299f05b7b4bffa0517c8f607e51375b91b0",
+      "retrieved_at": "2026-11-20T16:35:17.275448+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

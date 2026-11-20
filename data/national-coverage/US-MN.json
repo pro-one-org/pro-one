@@ -343,6 +343,18 @@
         "retrieved_at": "2026-11-20T15:27:32.912340+00:00",
         "sha256": "91cb9bad1b45a2550e44b83b49a8db3998cfb08d4f415e83ef16be255e37e509"
       }
+    },
+    "US-MN:deposit:d7cf1b86eb17": {
+      "category": "deposit",
+      "title": "Minn. Stat. § 504B.178, subd. 3",
+      "url": "https://www.revisor.mn.gov/statutes/cite/504B.178",
+      "locator": "Minn. Stat. § 504B.178, subd. 3",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:17.081732+00:00",
+        "sha256": "dff9ee19ca5d2131cc800bee64042a43aa6a35fd6e4df05ce229af1eaf088e8d"
+      }
     }
   },
   "court_directory": [
@@ -561,6 +573,17 @@
       "decision_date": "2009-05-14",
       "opinion_role": "majority",
       "procedural_posture": "Review of summary judgment in a landowner negligence case involving a child injured by a bookcase."
+    },
+    "eda9004c3f4fdc33de7bad10d94ccb": {
+      "source_id": "US-MN:deposit:d7cf1b86eb17",
+      "authority_type": "statute",
+      "citation": "Minn. Stat. § 504B.178, subd. 3",
+      "text": "(a) Every landlord shall: (1) within three weeks after termination of the tenancy; or (2) within five days of the date when the tenant leaves the building or dwelling due to the legal condemnation of the building or dwelling in which the tenant lives for reasons not due to willful, malicious, or irresponsible conduct of the tenant, and after receipt of the tenant's mailing address or delivery instructions, return the deposit to the tenant, with interest thereon as provided in subdivision 2, or furnish to the tenant a written statement showing the specific reason for the withholding of the deposit or any portion thereof. (b) It shall be sufficient compliance with the time requirement of this subdivision if the deposit or written statement required by this subdivision is placed in the United States mail as first class mail, postage prepaid, in an envelope with a proper return address, correctly addressed according to the mailing address or delivery instructions furnished by the tenant, within the time required by this subdivision. The landlord may withhold from the deposit only amounts reasonably necessary: (1) to remedy tenant defaults in the payment of rent or of other funds due to the landlord pursuant to an agreement; or (2) to restore the premises to their condition at the commencement of the tenancy, ordinary wear and tear excepted. (c) In any action concerning the deposit, the burden of proving, by a fair preponderance of the evidence, the reason for withholding all or any portion of the deposit shall be on the landlord.",
+      "text_sha256": "f18963a650fe157340bd5909ffc8528022eaf44272e5b0f41d9dcbd866d7a197",
+      "publisher_sha256": "dff9ee19ca5d2131cc800bee64042a43aa6a35fd6e4df05ce229af1eaf088e8d",
+      "retrieved_at": "2026-11-20T16:35:17.081732+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

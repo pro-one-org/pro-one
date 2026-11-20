@@ -288,6 +288,18 @@
         "retrieved_at": "2026-11-20T15:21:03.506816+00:00",
         "sha256": "5263aa47c5576c5b0456a8c8bbdd41ff5662bd92128dab7a63a7c82535dae540"
       }
+    },
+    "US-KS:deposit:e6f4ebe88a37": {
+      "category": "deposit",
+      "title": "Kan. Stat. Ann. § 58-2550(b)",
+      "url": "https://www.kslegislature.gov/b2025_26/laws/058_000_0000_chapter/058_025_0000_article/058_025_0050_section/058_025_0050_k/",
+      "locator": "Kan. Stat. Ann. § 58-2550(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:16.377438+00:00",
+        "sha256": "6eaa8d13f3fcdf390f4b263f46de1955b9954915942e6cf9a113aa2327be3b66"
+      }
     }
   },
   "court_directory": [
@@ -452,6 +464,17 @@
       "language": "en",
       "edition": "Kansas Legislature 2024 Special Session statutory publication",
       "court": "Kansas District Court"
+    },
+    "15ff0464e34d2aec16a398f27de33f": {
+      "source_id": "US-KS:deposit:e6f4ebe88a37",
+      "authority_type": "statute",
+      "citation": "Kan. Stat. Ann. § 58-2550(b)",
+      "text": "(b) Upon termination of the tenancy, any security deposit held by the landlord may be applied to the payment of accrued rent and the amount of damages which the landlord has suffered by reason of the tenant's noncompliance with K.S.A. 58-2555, and amendments thereto, and the rental agreement, all as itemized by the landlord in a written notice delivered to the tenant. If the landlord proposes to retain any portion of the security deposit for expenses, damages or other legally allowable charges under the provisions of the rental agreement, other than rent, the landlord shall return the balance of the security deposit to the tenant within 14 days after the determination of the amount of such expenses, damages or other charges, but in no event to exceed 30 days after termination of the tenancy, delivery of possession and demand by the tenant. If the tenant does not make such demand within 30 days after termination of the tenancy, the landlord shall mail that portion of the security deposit due the tenant to the tenant's last known address.",
+      "text_sha256": "c38294b31fbd6aee1da74873e8daa85885892969da344ca5e0aa2054f275a4af",
+      "publisher_sha256": "6eaa8d13f3fcdf390f4b263f46de1955b9954915942e6cf9a113aa2327be3b66",
+      "retrieved_at": "2026-11-20T16:35:16.377438+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

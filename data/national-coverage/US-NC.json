@@ -342,6 +342,18 @@
         "retrieved_at": "2026-11-20T15:21:02.946874+00:00",
         "sha256": "86be095fe77ef7fca0ff3db9cef136d79009c2766214cfc00c04b8afbbc84569"
       }
+    },
+    "US-NC:deposit:366e3db6acbe": {
+      "category": "deposit",
+      "title": "N.C. Gen. Stat. § 42-52",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_42/GS_42-52.html",
+      "locator": "N.C. Gen. Stat. § 42-52",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:17.787738+00:00",
+        "sha256": "930d266be2161621da6feb7845f90e30955fe580112f3d1fe5d8c8a0c161a095"
+      }
     }
   },
   "court_directory": [
@@ -550,6 +562,17 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "North Carolina Superior and District Courts"
+    },
+    "570b24b314cdd87bd3325114cb4d68": {
+      "source_id": "US-NC:deposit:366e3db6acbe",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 42-52",
+      "text": "Upon termination of the tenancy, money held by the landlord as security may be applied as permitted in G.S. 42-51 or, if not so applied, shall be refunded to the tenant. In either case the landlord in writing shall itemize any damage and mail or deliver same to the tenant, together with the balance of the security deposit, no later than 30 days after termination of the tenancy and delivery of possession of the premises to the landlord. If the extent of the landlord's claim against the security deposit cannot be determined within 30 days, the landlord shall provide the tenant with an interim accounting no later than 30 days after termination of the tenancy and delivery of possession of the premises to the landlord and shall provide a final accounting within 60 days after termination of the tenancy and delivery of possession of the premises to the landlord. If the tenant's address is unknown the landlord shall apply the deposit as permitted in G.S. 42-51 after a period of 30 days and the landlord shall hold the balance of the deposit for collection by the tenant for at least six months. The landlord may not withhold as damages part of the security deposit for conditions that are due to normal wear and tear nor may the landlord retain an amount from the security deposit which exceeds his actual damages.",
+      "text_sha256": "63f6926c9d9a2cde04b0f0055c70be95074e9c421374483c8dfb042eb3e38c3b",
+      "publisher_sha256": "930d266be2161621da6feb7845f90e30955fe580112f3d1fe5d8c8a0c161a095",
+      "retrieved_at": "2026-11-20T16:35:17.787738+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   }
 }

@@ -359,6 +359,18 @@
         "retrieved_at": "2026-11-20T16:20:53.233511+00:00",
         "sha256": "c36a4adf711c2fd45cc8d0ba72a3663a1e789ef7a4a71818dc7add0cc7b4e1c6"
       }
+    },
+    "US-MI:deposit:79f284d04280": {
+      "category": "deposit",
+      "title": "Mich. Comp. Laws § 554.609(1)–(4)",
+      "url": "https://legislature.mi.gov/Laws/MCL?objectName=mcl-554-609",
+      "locator": "Mich. Comp. Laws § 554.609(1)–(4)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:16.494119+00:00",
+        "sha256": "feedb5d7287f1f9aa0c4cba94861f18e9b8058e685b2ca3f9ecd8c2329623c41"
+      }
     }
   },
   "court_directory": [
@@ -618,6 +630,18 @@
       "retrieved_at": "2026-11-20T16:20:53.233511+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "1ad649c7da6ddd2c0088f9daa88271": {
+      "source_id": "US-MI:deposit:79f284d04280",
+      "authority_type": "statute",
+      "citation": "Mich. Comp. Laws § 554.609(1)–(4)",
+      "text": "(1) In case of damage to the rental unit or other obligation against the security deposit, the landlord shall mail to the tenant, within 30 days after the termination of occupancy, a notice of damages that contains an itemized list of damages claimed for which the security deposit may be used as provided in section 7, including the estimated cost of repair of each damaged property item and the amounts and bases on which the landlord intends to assess the tenant. (2) Except as otherwise provided in subsection (3), the notice of damages must be accompanied by a check or money order for the difference between the damages claimed and the amount of the security deposit held by the landlord and must not include any damages that were claimed on a previous termination inventory checklist prior to the tenant's occupancy of the rental unit. (3) Beginning on the effective date of the amendatory act that added this subsection, a notice of damages may not be accompanied by a check or money order as described in subsection (2) if the landlord transmits the difference between the damages claimed and the amount of the security deposit held by the landlord as described in subsection (2) to the tenant through direct deposit or electronic transfer to a bank account, or to an internet or mobile payment account or application. A landlord that complies with this subsection must deposit the amount determined in accordance with subsection (2) into the tenant's account in a financial institution or internet or mobile payment account or application within 10 days after mailing the notice of damages. (4) The notice of damages must include the following statement in 12 point boldface type that is at least 4 points larger than the body of the notice: \"You must respond to this notice by mail within 7 days after receipt of the notice of damages, otherwise you will forfeit the amount claimed for damages.\".",
+      "text_sha256": "729ca30b46d6d17b8af1888b03de58ad9bf920d2d0d10bdfd30debcc057ade1f",
+      "publisher_sha256": "feedb5d7287f1f9aa0c4cba94861f18e9b8058e685b2ca3f9ecd8c2329623c41",
+      "retrieved_at": "2026-11-20T16:35:16.494119+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2026-09-21"
     }
   },
   "fault_allocation": {

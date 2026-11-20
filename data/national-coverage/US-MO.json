@@ -257,6 +257,18 @@
         "retrieved_at": "2026-11-20T16:16:29.780669+00:00",
         "sha256": "c91990fef227edbbb7ecba25445268c992fd025b56a4a39d51bf0c2bae0a1703"
       }
+    },
+    "US-MO:deposit:049d8cd8f863": {
+      "category": "deposit",
+      "title": "Mo. Rev. Stat. § 535.300(3)",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=535.300",
+      "locator": "Mo. Rev. Stat. § 535.300(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:17.529331+00:00",
+        "sha256": "d44830a3c333f93d10ebd047118e290aa9ecf042ace42b97b89ee426ba7c0038"
+      }
     }
   },
   "court_directory": [
@@ -404,6 +416,18 @@
       "language": "en",
       "court": "Missouri Small Claims Court",
       "effective_from": "2011-08-28"
+    },
+    "dd4ba898b4a538ff7ef4c77bf88e5f": {
+      "source_id": "US-MO:deposit:049d8cd8f863",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 535.300(3)",
+      "text": "3. Within thirty days after the date of termination of the tenancy, the landlord shall: (1) Return the full amount of the security deposit; or (2) Furnish to the tenant a written itemized list of the damages for which the security deposit or any portion thereof is withheld, along with the balance of the security deposit. The landlord shall have complied with this subsection by mailing such statement and any payment to the last known address of the tenant.",
+      "text_sha256": "a78965f312a9f7225b1152a9ca0f2fbaddb97ef4eefd49cc851a39349ce627aa",
+      "publisher_sha256": "d44830a3c333f93d10ebd047118e290aa9ecf042ace42b97b89ee426ba7c0038",
+      "retrieved_at": "2026-11-20T16:35:17.529331+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2018-08-28"
     }
   }
 }

@@ -319,6 +319,18 @@
         "retrieved_at": "2026-11-20T16:20:52.892896+00:00",
         "sha256": "7a4fadd42b7b50500006cf294156a0607dedd2be1da36024192563848563ee9b"
       }
+    },
+    "US-NE:deposit:05a31fbc93e5": {
+      "category": "deposit",
+      "title": "Neb. Rev. Stat. § 76-1416(2)",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=s7614016000",
+      "locator": "Neb. Rev. Stat. § 76-1416(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:16.327970+00:00",
+        "sha256": "05b66149715f9957045edad6c19ad25d45cdb9e432cc4456f2fab375deb64dd0"
+      }
     }
   },
   "court_directory": [
@@ -539,6 +551,17 @@
       "text_sha256": "5d70efecf3b50d2cfd14019c3faae129fdf3e0de2c5d42778904bd743a2aacaf",
       "publisher_sha256": "7a4fadd42b7b50500006cf294156a0607dedd2be1da36024192563848563ee9b",
       "retrieved_at": "2026-11-20T16:20:52.892896+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "eeec2f7879711533736dc7197423bd": {
+      "source_id": "US-NE:deposit:05a31fbc93e5",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 76-1416(2)",
+      "text": "(2) Upon termination of the tenancy, property or money held by the landlord as prepaid rent and security may be applied to the payment of rent and the amount of damages which the landlord has suffered by reason of the tenant's noncompliance with the rental agreement or section 76-1421. The balance, if any, and a written itemization shall be delivered or mailed to the tenant within fourteen days after the date of termination of the tenancy. If no mailing address or instructions are provided by the tenant to the landlord, the landlord shall mail, by first-class mail, the balance of the security deposit to be returned, if any, and a written itemization of the amount of the security deposit not returned to the tenant's last-known mailing address. If the mailing is returned as undeliverable, or if the returned balance of the security deposit remains outstanding for one year, it shall be considered abandoned property to be reported and paid to the State Treasurer in accordance with the Uniform Disposition of Unclaimed Property Act.",
+      "text_sha256": "05c15d21af620494944ef30add4290dd1ae3798c9664d381d2098a2328df9952",
+      "publisher_sha256": "05b66149715f9957045edad6c19ad25d45cdb9e432cc4456f2fab375deb64dd0",
+      "retrieved_at": "2026-11-20T16:35:16.327970+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

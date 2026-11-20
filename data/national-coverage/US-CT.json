@@ -311,6 +311,18 @@
         "retrieved_at": "2026-11-19T19:31:20.736451+00:00",
         "sha256": "29bd29d8f82067f1a90cfffa4b5e1ba158aafe60a3bcd979838f464ad7f60329"
       }
+    },
+    "US-CT:deposit:3d126073195f": {
+      "category": "deposit",
+      "title": "Conn. Gen. Stat. § 47a-21(d)(1)–(2)",
+      "url": "https://cga.ct.gov/current/pub/chap_831.htm",
+      "locator": "Conn. Gen. Stat. § 47a-21(d)(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:17.050995+00:00",
+        "sha256": "f8033276d6563ccdf4a8ee34b498405ec3090519f48ce97b0eb0845103c99a22"
+      }
     }
   },
   "court_directory": [
@@ -471,6 +483,17 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Connecticut General Statutes 2025"
+    },
+    "c2b903dd783cba987b41dbb68cc4a0": {
+      "source_id": "US-CT:deposit:3d126073195f",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 47a-21(d)(1)–(2)",
+      "text": "(1) Not later than the time specified in subdivision (2) of this subsection, the person who is the landlord at the time a tenancy is terminated, other than a rent receiver, shall pay to the tenant or former tenant: (A) The amount of any security deposit that was deposited by the tenant with the person who was landlord at the time such security deposit was deposited less the value of any damages that any person who was a landlord of such premises at any time during the tenancy of such tenant has suffered as a result of such tenant's failure to comply with such tenant's obligations; and (B) any accrued interest. If the landlord at the time of termination of a tenancy is a rent receiver, such rent receiver shall return security deposits in accordance with the provisions of subdivision (3) of this subsection. (2) Upon termination of a tenancy, any tenant may notify the landlord in writing of such tenant's forwarding address. Not later than twenty-one days after termination of a tenancy or fifteen days after receiving written notification of such tenant's forwarding address, whichever is later, each landlord other than a rent receiver shall deliver to the tenant or former tenant at such forwarding address either (A) the full amount of the security deposit paid by such tenant plus accrued interest, or (B) the balance of such security deposit and accrued interest after deduction for any damages suffered by such landlord by reason of such tenant's failure to comply with such tenant's obligations, together with a written statement itemizing the nature and amount of such damages. Any landlord who violates any provision of this subsection shall be liable for twice the amount of any security deposit paid by such tenant, except that, if the only violation is the failure to deliver the accrued interest, such landlord shall be liable for ten dollars or twice the amount of the accrued interest, whichever is greater.",
+      "text_sha256": "42ab4d37804babea0118de79d1c99c54556abc997706eb63cbc161a917667c92",
+      "publisher_sha256": "f8033276d6563ccdf4a8ee34b498405ec3090519f48ce97b0eb0845103c99a22",
+      "retrieved_at": "2026-11-20T16:35:17.050995+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

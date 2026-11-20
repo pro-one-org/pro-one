@@ -275,6 +275,18 @@
         "retrieved_at": "2026-11-20T16:16:29.885821+00:00",
         "sha256": "ca5bcc13fb4732cbb086d16a77dd5b452f947aecd3f529a4fe62219becd6cc19"
       }
+    },
+    "US-ME:deposit:7c63d4f11ad9": {
+      "category": "deposit",
+      "title": "Me. Rev. Stat. tit. 14, § 6033(2)–(3)",
+      "url": "https://legislature.maine.gov/statutes/14/title14sec6033.html",
+      "locator": "Me. Rev. Stat. tit. 14, § 6033(2)–(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:17.162832+00:00",
+        "sha256": "f7b27a670f5288235670110ef7661d0d4740294056c7f14edb498ffcbf6e5f44"
+      }
     }
   },
   "court_directory": [
@@ -459,6 +471,17 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Maine District Court sitting in small claims"
+    },
+    "cdc5790da9573c2bafb15a0393e4e2": {
+      "source_id": "US-ME:deposit:7c63d4f11ad9",
+      "authority_type": "statute",
+      "citation": "Me. Rev. Stat. tit. 14, § 6033(2)–(3)",
+      "text": "2. Return; time; retention. A landlord shall return to a tenant the full security deposit deposited with the landlord by the tenant or, if there is actual cause for retaining the security deposit or any portion of it, the landlord shall provide the tenant with a written statement itemizing the reasons for the retention of the security deposit or any portion of it: A. In the case of a written rental agreement, within the time, not to exceed 30 days, stated in the agreement; and B. In the case of a tenancy at will, within 21 days after the termination of the tenancy or the surrender and acceptance of the premises, whichever occurs later. The written statement itemizing the reasons for the retention of any portion of the security deposit must be accompanied by a full payment of the difference between the security deposit and the amount retained. Reasons for which a landlord may retain the security deposit or a portion of the security deposit include, but are not limited to, covering the costs of storing and disposing of unclaimed property, nonpayment of rent and nonpayment of utility charges that the tenant was required to pay directly to the landlord. The landlord is deemed to have complied with this section by mailing the statement and any payment required to the last known address of the tenant. 3. Penalty. If a landlord fails to provide a written statement or to return the security deposit within the time specified in subsection 2, the landlord shall forfeit his right to withhold any portion of the security deposit.",
+      "text_sha256": "852092b9abf460ed888efbacf419ef2a737a00ddca39955b9b1d690c02817728",
+      "publisher_sha256": "f7b27a670f5288235670110ef7661d0d4740294056c7f14edb498ffcbf6e5f44",
+      "retrieved_at": "2026-11-20T16:35:17.162832+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

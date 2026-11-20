@@ -332,6 +332,18 @@
         "retrieved_at": "2026-11-20T16:20:54.659965+00:00",
         "sha256": "6d5dbd85aa840465cf2de863b640a03a7a771398787c624d9edc753d4e25a9f5"
       }
+    },
+    "US-OK:deposit:fe04efcbc246": {
+      "category": "deposit",
+      "title": "Okla. Stat. tit. 41, § 115(B)",
+      "url": "https://oksenate.gov/sites/default/files/2019-12/os41.pdf",
+      "locator": "Okla. Stat. tit. 41, § 115(B)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:17.575803+00:00",
+        "sha256": "d4dc2f8191ec32b910b65f98bae1353d3f3cbf8b71edf75a80e87022445e72bd"
+      }
     }
   },
   "court_directory": [
@@ -515,6 +527,17 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "2026-01-01"
+    },
+    "afdcd8d1a57e942c61588a2772726f": {
+      "source_id": "US-OK:deposit:fe04efcbc246",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 41, § 115(B)",
+      "text": "B. Upon termination of the tenancy, any security deposit held by the landlord may be applied to the payment of accrued rent and the amount of damages which the landlord has suffered by reason of the tenant's noncompliance with this act and the rental agreement, all as itemized by the landlord in a written statement delivered by mail to be by return receipt requested and to be signed for by any person of statutory service age at such address or in person to the tenant if he can reasonably be found. If the landlord proposes to retain any portion of the security deposit for rent, damages or other legally allowable charges under the provisions of this act or the rental agreement, the landlord shall return the balance of the security deposit without interest to the tenant within forty-five (45) days after the termination of tenancy, delivery of possession and written demand by the tenant. If the tenant does not make such written demand of such deposit within six (6) months after termination of the tenancy, the deposit reverts to the landlord in consideration of the costs and burden of maintaining the escrow account, and the interest of the tenant in that deposit terminates at that time.",
+      "text_sha256": "59731b93d778bec7b492cb6533dec10eb64e40042ad174a46c6d0f951c0b8cff",
+      "publisher_sha256": "d4dc2f8191ec32b910b65f98bae1353d3f3cbf8b71edf75a80e87022445e72bd",
+      "retrieved_at": "2026-11-20T16:35:17.575803+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

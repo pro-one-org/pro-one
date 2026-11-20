@@ -286,6 +286,18 @@
         "retrieved_at": "2026-11-20T16:16:29.527565+00:00",
         "sha256": "3e2d83cf0d1785496fd3c23e6212c1340509965080c6476f3cafdfc90595328e"
       }
+    },
+    "US-OH:deposit:f5fe0c6d7176": {
+      "category": "deposit",
+      "title": "Ohio Rev. Code § 5321.16(B)–(C)",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-5321.16",
+      "locator": "Ohio Rev. Code § 5321.16(B)–(C)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:18.758588+00:00",
+        "sha256": "48f00165db31bde6fa13353f9f46718dde55b774105f3bc053acdf264b34b6b6"
+      }
     }
   },
   "court_directory": [
@@ -522,6 +534,18 @@
       "language": "en",
       "court": "Ohio courts with a statutory small-claims division",
       "effective_from": "2025-04-09"
+    },
+    "51da8721d73171810b6dadad68d53d": {
+      "source_id": "US-OH:deposit:f5fe0c6d7176",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 5321.16(B)–(C)",
+      "text": "(B) Upon termination of the rental agreement any property or money held by the landlord as a security deposit may be applied to the payment of past due rent and to the payment of the amount of damages that the landlord has suffered by reason of the tenant's noncompliance with section 5321.05 of the Revised Code or the rental agreement. Any deduction from the security deposit shall be itemized and identified by the landlord in a written notice delivered to the tenant together with the amount due, within thirty days after termination of the rental agreement and delivery of possession. The tenant shall provide the landlord in writing with a forwarding address or new address to which the written notice and amount due from the landlord may be sent. If the tenant fails to provide the landlord with the forwarding or new address as required, the tenant shall not be entitled to damages or attorneys fees under division (C) of this section. (C) If the landlord fails to comply with division (B) of this section, the tenant may recover the property and money due him, together with damages in an amount equal to the amount wrongfully withheld, and reasonable attorneys fees.",
+      "text_sha256": "a37497d4daf77e3d9b195006cdef79959e3408dc9058e79daf3ef31d5a8621e8",
+      "publisher_sha256": "48f00165db31bde6fa13353f9f46718dde55b774105f3bc053acdf264b34b6b6",
+      "retrieved_at": "2026-11-20T16:35:18.758588+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1974-11-04"
     }
   },
   "fault_allocation": {
