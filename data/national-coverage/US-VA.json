@@ -399,6 +399,18 @@
         "retrieved_at": "2026-11-20T15:12:11.494311+00:00",
         "sha256": "5aa9b45270cde61889d1b60d0fcff00ed68b871898ac009ed53dc0bc49b0872b"
       }
+    },
+    "US-VA:fault:797f52e1537a": {
+      "category": "fault",
+      "title": "Coutlakis v. CSX Transportation, Inc., No. 160277 (Va. Mar. 9, 2017)",
+      "url": "https://vacourts.gov/static/opinions/opnscvwp/1160277.pdf",
+      "locator": "Coutlakis v. CSX Transportation, Inc., No. 160277 (Va. Mar. 9, 2017)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:25:15.147521+00:00",
+        "sha256": "c0812f60968522d4159bfa8617a8d1b5b387c635ced768321a67c93a41434047"
+      }
     }
   },
   "court_directory": [
@@ -631,6 +643,22 @@
       "decision_date": "2010-02-25",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from an order striking the plaintiff’s evidence in a motor-vehicle personal injury action."
+    },
+    "754650a6232ed771774691feb03c33": {
+      "source_id": "US-VA:fault:797f52e1537a",
+      "authority_type": "opinion",
+      "citation": "Coutlakis v. CSX Transportation, Inc., No. 160277 (Va. Mar. 9, 2017)",
+      "text": "An examination of this Court’s jurisprudence leads to the conclusion that the continuing nature of a plaintiff’s contributory negligence does not automatically bar the application of the last clear chance doctrine. Rather, once a plaintiff’s contributory negligence is established, the application of the doctrine turns first on whether the defendant was also negligent and then on a determination of which party, if any, had the last clear chance to avoid the accident, as the name implies. Thus, contrary to the Appellees’ argument, the fact that James’s negligence continued up to the point of the accident, without more, does not bar the application of the last clear chance doctrine.",
+      "text_sha256": "ee50c485f67b0106d815063ef23ca9a99dafcf421cf2e6b281e5481b95742045",
+      "publisher_sha256": "c0812f60968522d4159bfa8617a8d1b5b387c635ced768321a67c93a41434047",
+      "retrieved_at": "2026-11-20T15:25:15.147521+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2017-03-09",
+      "court": "Supreme Court of Virginia",
+      "decision_date": "2017-03-09",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from an order sustaining a demurrer in a wrongful-death action. The court considered the last clear chance doctrine."
     }
   },
   "fault_allocation": {

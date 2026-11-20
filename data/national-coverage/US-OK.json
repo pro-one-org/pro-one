@@ -284,6 +284,18 @@
         "retrieved_at": "2026-11-18T15:14:40.851015+00:00",
         "sha256": "96d558afd31b77cb055be7ce20bd66930dd0daf323e0728bf3559953527575a8"
       }
+    },
+    "US-OK:negligence_elements:3265fa3d5e1f": {
+      "category": "negligence_elements",
+      "title": "Dirickson v. Mings, 1996 OK 2, ¶ 7",
+      "url": "https://www.oscn.net/applications/oscn/DeliverDocument.asp?CiteID=4426",
+      "locator": "Dirickson v. Mings, 1996 OK 2, ¶ 7",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:29:40.020548+00:00",
+        "sha256": "4508e2871be4121fe78a2f99dbae61e69df3fc438831f13bae69b33b1d50679e"
+      }
     }
   },
   "court_directory": [
@@ -413,6 +425,22 @@
       "retrieved_at": "2026-11-18T15:14:40.851015+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "ceff70bb4aaefe35ba18d8c5ddbce1": {
+      "source_id": "US-OK:negligence_elements:3265fa3d5e1f",
+      "authority_type": "opinion",
+      "citation": "Dirickson v. Mings, 1996 OK 2, ¶ 7",
+      "text": "The elements of negligence are (1) the existence of a duty on the part of a defendant to protect the plaintiff from injury; (2) a violation of that duty; and (3) injury proximately resulting from the violation.",
+      "text_sha256": "44db4406e1929d172e9d5ed564964c1497bceda35db7ff45cb19b6ddec01272d",
+      "publisher_sha256": "4508e2871be4121fe78a2f99dbae61e69df3fc438831f13bae69b33b1d50679e",
+      "retrieved_at": "2026-11-20T15:29:40.020548+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 1996-01-16",
+      "court": "Supreme Court of Oklahoma",
+      "decision_date": "1996-01-16",
+      "opinion_role": "majority",
+      "procedural_posture": "Certiorari review of summary judgment arising from a motor-vehicle collision."
     }
   },
   "fault_allocation": {

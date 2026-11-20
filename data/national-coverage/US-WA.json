@@ -345,6 +345,18 @@
         "retrieved_at": "2026-11-20T15:21:05.230279+00:00",
         "sha256": "1e1d93e762b10e8785cf98295c97bf2b8d4e2cde23329aec5bf1c4e7085f1e9e"
       }
+    },
+    "US-WA:negligence_elements:a40e0c3bf642": {
+      "category": "negligence_elements",
+      "title": "Lowman v. Wilbur, No. 86584-1 (Wash. Aug. 8, 2013)",
+      "url": "https://www.courts.wa.gov/opinions/pdf/865841.pdf",
+      "locator": "Lowman v. Wilbur, No. 86584-1 (Wash. Aug. 8, 2013)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:27:32.390013+00:00",
+        "sha256": "6f23b573e734fee0c14abc4578a959820f290492e750c085e5a634743bad87b2"
+      }
     }
   },
   "court_directory": [
@@ -599,6 +611,22 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Washington Superior Court"
+    },
+    "afe4bdae8e5c3652709ce147e5ba8b": {
+      "source_id": "US-WA:negligence_elements:a40e0c3bf642",
+      "authority_type": "opinion",
+      "citation": "Lowman v. Wilbur, No. 86584-1 (Wash. Aug. 8, 2013)",
+      "text": "In order to recover on a common law claim of negligence, a plaintiff \"must show (1) the existence of a duty to the plaintiff, (2) a breach of that duty, (3) a resulting injury, and (4) the breach as the proximate cause of the injury.\" Crowe v. Gaston, 134 Wn.2d 509,514,951 P.2d 1118 (1998). Washington \"recognizes two elements to proximate cause: [c]ause in fact and legal causation.\" Hartley v. State, 103 Wn.2d 768, 777, 698 P.2d 77 (1985).",
+      "text_sha256": "7065661aa1c02cf71aa8bab4ba2c60e40581e72a9a8b6fa4a7403936353cd449",
+      "publisher_sha256": "6f23b573e734fee0c14abc4578a959820f290492e750c085e5a634743bad87b2",
+      "retrieved_at": "2026-11-20T15:27:32.390013+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court slip opinion of 2013-08-08",
+      "court": "Supreme Court of Washington",
+      "decision_date": "2013-08-08",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of summary judgment on legal causation in a roadway negligence dispute."
     }
   },
   "fault_allocation": {

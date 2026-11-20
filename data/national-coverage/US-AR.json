@@ -204,6 +204,30 @@
         "retrieved_at": "2026-11-18T20:43:21.496850+00:00",
         "sha256": "3d87b91edc42d471c6efae71ab726e908a3df2b8c05bf2fc42c87b58fd348a24"
       }
+    },
+    "US-AR:fault:02a012887ade": {
+      "category": "fault",
+      "title": "1991 Ark. Acts 663, § 1 (Ark. Code Ann. § 16-64-122(a)–(b))",
+      "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F1991%2FPublic%2F663.pdf",
+      "locator": "1991 Ark. Acts 663, § 1 (Ark. Code Ann. § 16-64-122(a)–(b))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:25:15.606937+00:00",
+        "sha256": "6794209744e891e3fb7537e942b70de1c296c5da319a531da5c2b395af278f46"
+      }
+    },
+    "US-AR:fault:8d259b378465": {
+      "category": "fault",
+      "title": "2023 Ark. Acts 354, § 2 (Ark. Code Ann. § 16-118-109(g))",
+      "url": "https://arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2023R%2FPublic%2FACT354.pdf",
+      "locator": "2023 Ark. Acts 354, § 2 (Ark. Code Ann. § 16-118-109(g))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:25:15.746813+00:00",
+        "sha256": "e4d506b2e9f50ee6ce25d3730fedf87831bb8d31a4d6a6abeb8ab89bc18a15bd"
+      }
     }
   },
   "court_directory": [
@@ -314,6 +338,37 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Approved March 19, 2001"
+    },
+    "5db561d6edffbb01fe6df51f6f5985": {
+      "source_id": "US-AR:fault:02a012887ade",
+      "authority_type": "statute",
+      "citation": "1991 Ark. Acts 663, § 1 (Ark. Code Ann. § 16-64-122(a)–(b))",
+      "text": "(a) In all actions for damages for personal injuries or wrongful death or injury to property in which recovery is predicated upon fault, liability shall be determined by comparing the fault chargeable to a claiming party with the fault chargeable to the party or parties from whom the claiming party seeks to recover damages. (b)(1) If the fault chargeable to a party claiming damages is of a lesser degree than the fault chargeable to the party or parties from whom the claiming party seeks to recover damages, then the claiming party is entitled to recover the amount of his damages after they have been diminished in proportion to the degree of his own fault. (2) If the fault chargeable to a party claiming damages is equal to or greater in degree than any fault chargeable to the party or parties from whom the claiming party seeks to recover damages, then the claiming party is not entitled to recover such damages.",
+      "text_sha256": "036a77571bdb8d3a2c157a475c4f3a2d937b727ec3185cc15f75fa5cacfedc6a",
+      "publisher_sha256": "6794209744e891e3fb7537e942b70de1c296c5da319a531da5c2b395af278f46",
+      "retrieved_at": "2026-11-20T15:25:15.606937+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "1991 Arkansas Acts"
+    },
+    "b213f0c14241bdd350f8f2938d7d8b": {
+      "source_id": "US-AR:fault:8d259b378465",
+      "authority_type": "statute",
+      "citation": "2023 Ark. Acts 354, § 2 (Ark. Code Ann. § 16-118-109(g))",
+      "text": "(g) In a civil action brought under this section: (1) Fault of a victim of human trafficking shall not be apportioned against the victim of human trafficking; and (2) The comparative fault provisions under § 16-64-122 do not apply.",
+      "text_sha256": "c6e83faf35729d31cf3c1deccdaf896225f3b93e66a8d5d7447f77e4e32ef209",
+      "publisher_sha256": "e4d506b2e9f50ee6ce25d3730fedf87831bb8d31a4d6a6abeb8ab89bc18a15bd",
+      "retrieved_at": "2026-11-20T15:25:15.746813+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2023 Arkansas Acts"
     }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_50",
+    "source_id": "US-AR:fault:02a012887ade",
+    "passage_selector": "5db561d6edffbb01fe6df51f6f5985",
+    "currentness": "historical",
+    "qualification": "This enacted version compared the claimant’s fault with the party or parties from whom the claimant sought recovery. The later 2023 enactment added a separate rule for the civil action under Ark. Code Ann. § 16-118-109."
   }
 }

@@ -331,6 +331,18 @@
         "retrieved_at": "2026-11-20T15:18:08.972199+00:00",
         "sha256": "6163b61b2867e50b73cb4a9f25c78a1589a4864e014541fe0b03fa4da3874f78"
       }
+    },
+    "US-MN:negligence_elements:78eafa14232a": {
+      "category": "negligence_elements",
+      "title": "Foss v. Kincade, No. A07-0313 (Minn. May 14, 2009)",
+      "url": "https://mn.gov/web/prod/static/lawlib/live/archive/supct/0905/OPA070313-0514.pdf",
+      "locator": "Foss v. Kincade, No. A07-0313 (Minn. May 14, 2009)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:27:32.912340+00:00",
+        "sha256": "91cb9bad1b45a2550e44b83b49a8db3998cfb08d4f415e83ef16be255e37e509"
+      }
     }
   },
   "court_directory": [
@@ -533,6 +545,22 @@
       "currentness": "unresolved",
       "language": "en",
       "edition": "2026 Minnesota Statutes"
+    },
+    "8e8a2ebb577352b60d6c3dc77134ea": {
+      "source_id": "US-MN:negligence_elements:78eafa14232a",
+      "authority_type": "opinion",
+      "citation": "Foss v. Kincade, No. A07-0313 (Minn. May 14, 2009)",
+      "text": "In order to establish a prima facie case of negligence, Foss must show the following elements: (1) that the Kincades owed a duty to David; (2) that the Kincades breached that duty; (3) that the breach of duty was the proximate cause of David's injury; and (4) that David did in fact suffer an injury. Hudson v. Snyder Body, Inc. , 326 N.W.2d 149, 155 (Minn. 1982). The Kincades are entitled to summary judgment if the record reflects a complete lack of proof on any of the four elements of a prima facie case. Louis, 636 N.W.2d at 318.",
+      "text_sha256": "70e6b1a2191b429951677506a286df6d5b8f3efbee07305c1b95c81a88d725f3",
+      "publisher_sha256": "91cb9bad1b45a2550e44b83b49a8db3998cfb08d4f415e83ef16be255e37e509",
+      "retrieved_at": "2026-11-20T15:27:32.912340+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2009-05-14",
+      "court": "Supreme Court of Minnesota",
+      "decision_date": "2009-05-14",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of summary judgment in a landowner negligence case involving a child injured by a bookcase."
     }
   },
   "fault_allocation": {

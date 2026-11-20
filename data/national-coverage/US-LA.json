@@ -302,6 +302,18 @@
         "retrieved_at": "2026-11-19T19:43:00.095595+00:00",
         "sha256": "1ecb90fa1b16610d422de0193045fbafc7ee642f0aa9ed1c17618ebcdad5a1e9"
       }
+    },
+    "US-LA:negligence_elements:20ebeb35ef78": {
+      "category": "negligence_elements",
+      "title": "Pinsonneault v. Merchants & Farmers Bank & Trust Co., No. 01-C-2217 (La. Apr. 3, 2002)",
+      "url": "https://www.lasc.org/opinions/2002/01c2217.opn.pdf",
+      "locator": "Pinsonneault v. Merchants & Farmers Bank & Trust Co., No. 01-C-2217 (La. Apr. 3, 2002)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:27:29.873138+00:00",
+        "sha256": "c0e6c564549cba013bcf8cdce169342c0635969455eea91640409efd5c452fc5"
+      }
     }
   },
   "court_directory": [
@@ -527,6 +539,22 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Louisiana District Court"
+    },
+    "038b254f307d001ab254082a29eb7e": {
+      "source_id": "US-LA:negligence_elements:20ebeb35ef78",
+      "authority_type": "opinion",
+      "citation": "Pinsonneault v. Merchants & Farmers Bank & Trust Co., No. 01-C-2217 (La. Apr. 3, 2002)",
+      "text": "In order for liability to attach under a duty-risk analysis, a plaintiff must prove five separate elements: (1) the defendant had a duty to conform his or her conduct to a specific standard of care (the duty element); (2) the defendant failed to conform his or her conduct to the appropriate standard of care (the breach of duty element); (3) the defendant’s substandard conduct was a cause-in-fact of the plaintiff’s injuries (the cause-in-fact element); (4) the defendant’s substandard conduct was a legal cause of the plaintiff’s injuries (the scope of protection element); and (5) actual damages (the damage element).",
+      "text_sha256": "892e0e423b4ebd3f9774c6bd66e0c6ff578b8343566f82c964ef47e5ed2a260b",
+      "publisher_sha256": "c0e6c564549cba013bcf8cdce169342c0635969455eea91640409efd5c452fc5",
+      "retrieved_at": "2026-11-20T15:27:29.873138+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2002-04-03",
+      "court": "Supreme Court of Louisiana",
+      "decision_date": "2002-04-03",
+      "opinion_role": "majority",
+      "procedural_posture": "Certiorari review of a negligence judgment concerning bank security. The court applied the Civil Code article 2315 duty-risk analysis."
     }
   },
   "fault_allocation": {

@@ -406,6 +406,18 @@
         "retrieved_at": "2026-11-18T20:45:47.983754+00:00",
         "sha256": "5428d16df065d6c5bd8b746576ee74b27ec67b36dd09ed03738a3c7ed370d3d3"
       }
+    },
+    "US-TX:negligence_elements:10ce201fa206": {
+      "category": "negligence_elements",
+      "title": "Lakeside Village Homeowners Association, Inc. v. Belanger, No. 08-15-00214-CV (Tex. App. June 14, 2017)",
+      "url": "https://dev-search.txcourts.gov/SearchMedia.aspx?DT=Opinion&MediaID=6030c305-6ed1-473e-a764-9be883f59a77&MediaVersionID=1f69fd72-0cca-4ebf-83b8-f690c69cf9b7&coa=coa08",
+      "locator": "Lakeside Village Homeowners Association, Inc. v. Belanger, No. 08-15-00214-CV (Tex. App. June 14, 2017)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:27:32.089519+00:00",
+        "sha256": "bb3afad1d274688672eadb49115eabef8e66234b79ee59b99479ca3e35a87f96"
+      }
     }
   },
   "court_directory": [
@@ -629,6 +641,22 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Texas District and County Courts"
+    },
+    "fb09a78b05ed22242a6d1048b7d1f9": {
+      "source_id": "US-TX:negligence_elements:10ce201fa206",
+      "authority_type": "opinion",
+      "citation": "Lakeside Village Homeowners Association, Inc. v. Belanger, No. 08-15-00214-CV (Tex. App. June 14, 2017)",
+      "text": "The elements of negligence are the existence of a legal duty, breach of that duty, and damages proximately caused by the breach. Gharda USA, Inc. v. Control Solutions, Inc. , 464 S.W.3d 338, 352 (Tex. 2015); IHS Cedars Treatment Ctr. of DeSoto, Tex., Inc. v. Mason , 143 S.W.3d 794, 798 (Tex. 2004)(citation omitted). The components of proximate cause are cause in fact and foreseeability. Doe v. Boys Clubs of Greater Dallas, Inc. , 907 S.W.2d 472, 478 (Tex. 1995); Travis v. City of Mesquite , 830 S.W.2d 94, 98 (Tex. 1992). These elements cannot be established by mere conjecture, guess, or speculation. McClure v. Allied Stores of Tex., Inc., 608 S.W.2d 901, 903 (Tex. 1980); Farley v. MM Cattle Co. , 529 S.W.2d 751, 755 (Tex. 1975).",
+      "text_sha256": "d6f6d065f1fa9c967e35d97f4dec85df6587b2d98aff6b4fca874e79cceb03d6",
+      "publisher_sha256": "bb3afad1d274688672eadb49115eabef8e66234b79ee59b99479ca3e35a87f96",
+      "retrieved_at": "2026-11-20T15:27:32.089519+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2017-06-14",
+      "court": "Texas Eighth District Court of Appeals",
+      "decision_date": "2017-06-14",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a judgment on townhome owners’ claims against an association and property management companies."
     }
   },
   "fault_allocation": {

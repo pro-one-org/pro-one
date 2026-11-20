@@ -534,6 +534,18 @@
         "retrieved_at": "2026-11-19T19:35:43.285618+00:00",
         "sha256": "f0747c61b6f7fd8b0bc995db4b1d8961e82a9a56bea01dc91f9f8fb973dfd470"
       }
+    },
+    "US-WI:negligence_elements:eaabcd7b2f39": {
+      "category": "negligence_elements",
+      "title": "Hoida, Inc. v. M&I Midstate Bank, 2006 WI 69, ¶ 23",
+      "url": "https://www.wicourts.gov/sc/opinion/DisplayDocument.pdf?content=pdf&seqNo=25525",
+      "locator": "Hoida, Inc. v. M&I Midstate Bank, 2006 WI 69, ¶ 23",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:29:40.322652+00:00",
+        "sha256": "6cb6795c7a2653c469138a5d4eca28d27556621a6ab7b09d47d7df4cc3567fad"
+      }
     }
   },
   "court_directory": [
@@ -968,6 +980,22 @@
       "current_as_of": "2026-11-04",
       "publisher_path": "/statutes/statutes/893/iv/43/2",
       "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "c7a3d4bd78a297fbd944bf78919006": {
+      "source_id": "US-WI:negligence_elements:eaabcd7b2f39",
+      "authority_type": "opinion",
+      "citation": "Hoida, Inc. v. M&I Midstate Bank, 2006 WI 69, ¶ 23",
+      "text": "We require a plaintiff to plead facts, which if proved true, would establish the following four elements: \"(1) the existence of a duty of care on the part of the defendant, (2) a breach of that duty of care, (3) a causal connection between the defendant's breach of the duty of care and the plaintiff's injury, and (4) actual loss or damage resulting from the [breach].\"",
+      "text_sha256": "a20d17e56936de1422391ec80ef2b2d4375ee21019815dae6cdd79ca35ba8346",
+      "publisher_sha256": "6cb6795c7a2653c469138a5d4eca28d27556621a6ab7b09d47d7df4cc3567fad",
+      "retrieved_at": "2026-11-20T15:29:40.322652+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2006-06-13",
+      "court": "Supreme Court of Wisconsin",
+      "decision_date": "2006-06-13",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of judgment on negligence claims against a lender and title company."
     }
   },
   "fault_allocation": {

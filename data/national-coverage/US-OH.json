@@ -262,6 +262,18 @@
         "retrieved_at": "2026-11-20T15:18:10.286884+00:00",
         "sha256": "f12bd9cd517ef3a90bc14b366c59c405be8d556f3d27bd03ab68b0863533f1bf"
       }
+    },
+    "US-OH:negligence_elements:0612feae8114": {
+      "category": "negligence_elements",
+      "title": "Madden v. Production Concrete, Inc., 2013-Ohio-5393",
+      "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/10/2013/2013-ohio-5393.pdf",
+      "locator": "Madden v. Production Concrete, Inc., 2013-Ohio-5393",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:27:31.439601+00:00",
+        "sha256": "82cc222844f60e7aa6ca77707ce645ec49119b773e198365c15279697569602f"
+      }
     }
   },
   "court_directory": [
@@ -469,6 +481,22 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_date": "2006-08-03"
+    },
+    "9e4b604cb4bc20fe936d2f9ec7bfb8": {
+      "source_id": "US-OH:negligence_elements:0612feae8114",
+      "authority_type": "opinion",
+      "citation": "Madden v. Production Concrete, Inc., 2013-Ohio-5393",
+      "text": "The elements of a claim of negligence are: (1) the existence of a legal duty owing from the defendant to the plaintiff; (2) the defendant's breach of that duty; and (3) injury to the plaintiff proximately resulting from such failure.",
+      "text_sha256": "7f3143cab2d9b168b43b15ae20e7b9aeb8a38a5da533ce8e1dde11c25a0adf5f",
+      "publisher_sha256": "82cc222844f60e7aa6ca77707ce645ec49119b773e198365c15279697569602f",
+      "retrieved_at": "2026-11-20T15:27:31.439601+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2013-12-10",
+      "court": "Ohio Tenth District Court of Appeals",
+      "decision_date": "2013-12-10",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in a personal injury action arising from an excavation collapse."
     }
   },
   "fault_allocation": {
