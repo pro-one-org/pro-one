@@ -325,6 +325,18 @@
         "retrieved_at": "2026-11-20T15:29:39.596725+00:00",
         "sha256": "0ccbaa2ee5fc67b458d20a5e6093ad650f74e87b35e44a924e7190ed902837ea"
       }
+    },
+    "US-FL:service:1f57d555bbe6": {
+      "category": "service",
+      "title": "Fla. Stat. § 48.031(1)(a)",
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0048/Sections/0048.031.html",
+      "locator": "Fla. Stat. § 48.031(1)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.748032+00:00",
+        "sha256": "2818cd61cf570ce1682e339270b8da81383ba7f2e662139784fab4ff53e2c87b"
+      }
     }
   },
   "court_directory": [
@@ -520,6 +532,18 @@
       "decision_date": "2025-08-22",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from a final premises liability judgment. Reversed for improper denial of directed verdict."
+    },
+    "53c09e090680b867f5370c8b7ed159": {
+      "source_id": "US-FL:service:1f57d555bbe6",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 48.031(1)(a)",
+      "text": "(1)(a) Service of original process is made by delivering a copy of it to the person to be served with a copy of the complaint, petition, or other initial pleading or paper or by leaving the copies at his or her usual place of abode with any person residing therein who is 15 years of age or older and informing the person of their contents. Minors who are or have been married shall be served as provided in this section.",
+      "text_sha256": "0c3ed083dd6e911c1a03a2209e1bcaf8c98d49bff5ce365607b5cc7d9f249647",
+      "publisher_sha256": "2818cd61cf570ce1682e339270b8da81383ba7f2e662139784fab4ff53e2c87b",
+      "retrieved_at": "2026-11-20T16:01:53.748032+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Florida civil proceedings governed by Chapter 48"
     }
   },
   "fault_allocation": {

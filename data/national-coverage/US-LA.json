@@ -314,6 +314,18 @@
         "retrieved_at": "2026-11-20T15:27:29.873138+00:00",
         "sha256": "c0e6c564549cba013bcf8cdce169342c0635969455eea91640409efd5c452fc5"
       }
+    },
+    "US-LA:service:772fae109aed": {
+      "category": "service",
+      "title": "La. Code Civ. Proc. art. 1232",
+      "url": "https://www.legis.la.gov/legis/Law.aspx?d=111154",
+      "locator": "La. Code Civ. Proc. art. 1232",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.100404+00:00",
+        "sha256": "6097d41ea78bc7636e8f53923359d2ad353f703d1a907cfd18ae85f26828405c"
+      }
     }
   },
   "court_directory": [
@@ -555,6 +567,18 @@
       "decision_date": "2002-04-03",
       "opinion_role": "majority",
       "procedural_posture": "Certiorari review of a negligence judgment concerning bank security. The court applied the Civil Code article 2315 duty-risk analysis."
+    },
+    "6ef45b9708f0e6f4b7cd5084a3d7e0": {
+      "source_id": "US-LA:service:772fae109aed",
+      "authority_type": "statute",
+      "citation": "La. Code Civ. Proc. art. 1232",
+      "text": "Personal service is made when a proper officer tenders the citation or other process to the person to be served.",
+      "text_sha256": "41ea0eafeb7f0ae2daf892af7c267280ab5212242b809d3217b5f507945c39fc",
+      "publisher_sha256": "6097d41ea78bc7636e8f53923359d2ad353f703d1a907cfd18ae85f26828405c",
+      "retrieved_at": "2026-11-20T16:01:53.100404+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Louisiana District Court"
     }
   },
   "fault_allocation": {

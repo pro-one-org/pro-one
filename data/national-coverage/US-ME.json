@@ -239,6 +239,30 @@
         "retrieved_at": "2026-11-18T15:14:30.513400+00:00",
         "sha256": "e5d73c3838e8a27d7b696658b29ba4b6b3af39389f308af21893a2ad88631048"
       }
+    },
+    "US-ME:service:9f018fb2f6d7": {
+      "category": "service",
+      "title": "Me. R. Civ. P. 4(d)(1)",
+      "url": "https://www.courts.maine.gov/rules/text/mr_civ_p_only_2026-06-01.pdf",
+      "locator": "Me. R. Civ. P. 4(d)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
+        "sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0"
+      }
+    },
+    "US-ME:response:bf6a167ca784": {
+      "category": "response",
+      "title": "Me. R. Civ. P. 12(a)",
+      "url": "https://www.courts.maine.gov/rules/text/mr_civ_p_only_2026-06-01.pdf",
+      "locator": "Me. R. Civ. P. 12(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
+        "sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0"
+      }
     }
   },
   "court_directory": [
@@ -385,6 +409,32 @@
       "retrieved_at": "2026-11-18T15:14:30.513400+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "5f879262d81397907b4455f3cde0d8": {
+      "source_id": "US-ME:service:9f018fb2f6d7",
+      "authority_type": "court_rule",
+      "citation": "Me. R. Civ. P. 4(d)(1)",
+      "text": "(d) Summons: Personal Service. The summons, complaint, and notice regarding Electronic Service shall be served together. Personal service within the state shall be made as follows: (1) Upon an individual other than a minor or an incompetent person, by delivering a copy of the summons, complaint, and notice regarding Electronic Service to the individual personally or by leaving copies thereof at the individual’s dwelling house or usual place of abode with some person of suitable age and discretion then residing therein or by delivering a copy of the summons, complaint, and notice regarding Electronic Service to an agent authorized by appointment or by law to receive service of process, provided that if the agent is one designated by statute to receive service, such further notice as the statute requires shall be given. The court, on motion, upon a showing that service as prescribed above cannot be made with due diligence, may order service to be made pursuant to subdivision (g) of this rule.",
+      "text_sha256": "c7a5f310c3836263e60563970cd6ad712e8d814fafc9a135a87ec186caa908d6",
+      "publisher_sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0",
+      "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Maine Rules of Civil Procedure edition including amendments effective June 1, 2026",
+      "court": "Maine courts governed by the Civil Rules"
+    },
+    "972fd0270e80c3d6968df5bd7372ae": {
+      "source_id": "US-ME:response:bf6a167ca784",
+      "authority_type": "court_rule",
+      "citation": "Me. R. Civ. P. 12(a)",
+      "text": "(a) When Presented. A defendant shall serve that defendant’s answer within 20 days after the service of the summons, complaint, and notice regarding Electronic Service upon that defendant, unless the court directs otherwise when service of process is made pursuant to an order of court under Rule 4(d) or 4(g), and provided that a defendant served pursuant to Rule 4(e), 4(f), or 4(j) outside the Continental United States or Canada may serve the answer at any time within 50 days after such service. A party who is served with a pleading stating a cross-claim against that party shall serve an answer thereto within 20 days after the service upon that party. The plaintiff shall serve a reply to a counterclaim in the answer within 20 days after service of the answer or, if a reply is ordered by the court, within 20 days after service of the order, unless the order otherwise directs. The service of a motion permitted under this rule alters these periods of time as follows, unless a different time is fixed by order of the court: (1) if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within 10 days after notice of the court’s action; (2) if the court grants a motion for a more definite statement the responsive pleading shall be served within 10 days after the service of the more definite statement.",
+      "text_sha256": "c144f071265d0ee4735b5b2cfd1952908eb6a080386ddb9681210aae12662adb",
+      "publisher_sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0",
+      "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Maine Rules of Civil Procedure edition including amendments effective June 1, 2026",
+      "court": "Maine courts governed by the Civil Rules"
     }
   },
   "fault_allocation": {

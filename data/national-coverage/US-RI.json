@@ -320,6 +320,18 @@
         "retrieved_at": "2026-11-19T19:26:45.321855+00:00",
         "sha256": "d4ac04745a1079b62d2be0b71ad147b6f8a7d7c8fd4f28aa977c5b4dfc855f96"
       }
+    },
+    "US-RI:service:7e92b8c0ad67": {
+      "category": "service",
+      "title": "R.I. Super. R. Civ. P. 4(e)(intro.), (e)(1)",
+      "url": "https://www.courts.ri.gov/Courts/superiorcourt/Documents/SuperiorCourtRulesOfCivilProcedure.pdf",
+      "locator": "R.I. Super. R. Civ. P. 4(e)(intro.), (e)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.714345+00:00",
+        "sha256": "01dea708aa73f7816bd816f6ae5d29701b38e5b0571d8c2e1ea01e17acc700f6"
+      }
     }
   },
   "court_directory": [
@@ -568,6 +580,19 @@
       "retrieved_at": "2026-11-19T19:26:45.321855+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "41a96d17474046722448247d451ac7": {
+      "source_id": "US-RI:service:7e92b8c0ad67",
+      "authority_type": "court_rule",
+      "citation": "R.I. Super. R. Civ. P. 4(e)(intro.), (e)(1)",
+      "text": "(e) Summons: Personal Service. The summons, complaint, Language Assistance Notice, and all other required documents shall be served together. The plaintiff shall furnish the person making service with such copies as are necessary. Service shall be made as follows: (1) Upon an individual from whom a waiver has not been obtained and filed, other than an incompetent person, by delivering a copy of the summons, complaint, Language Assistance Notice, and all other required documents to the individual personally or by leaving copies thereof at the individual's dwelling house or usual place of abode with some person of suitable age and discretion then residing therein or by delivering a copy of the summons, complaint, Language Assistance Notice, and all other required documents to an agent authorized by appointment or by law to receive service of process, provided that if the agent is one designated by statute to receive service, such further notice as the statute requires shall be given.",
+      "text_sha256": "627371cb8e7f30024ec588c7377bdaee166dc9e056b12f5d07e2e6153ad5ef5f",
+      "publisher_sha256": "01dea708aa73f7816bd816f6ae5d29701b38e5b0571d8c2e1ea01e17acc700f6",
+      "retrieved_at": "2026-11-20T16:01:53.714345+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Rhode Island Superior Court Rules of Civil Procedure, February 2024",
+      "court": "Rhode Island Superior Court"
     }
   },
   "fault_allocation": {

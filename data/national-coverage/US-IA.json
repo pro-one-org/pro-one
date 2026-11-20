@@ -418,6 +418,30 @@
         "retrieved_at": "2026-11-20T15:18:09.937023+00:00",
         "sha256": "990d286decab02318a36890513fd9690745520a4fc09def0cebcadf2258a9119"
       }
+    },
+    "US-IA:service:811cbbfc3cb4": {
+      "category": "service",
+      "title": "Iowa R. Civ. P. 1.305(1)",
+      "url": "https://www.legis.iowa.gov/docs/ACO/CourtRulesChapter/07-31-2026.1.pdf",
+      "locator": "Iowa R. Civ. P. 1.305(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:54.208218+00:00",
+        "sha256": "ae6ecf5e9a558a4f80cd0e63a5bc3229fb7681ecd5946a4ca8fbe1773f7c56b6"
+      }
+    },
+    "US-IA:commencement:1cd6f2981c76": {
+      "category": "commencement",
+      "title": "Iowa R. Civ. P. 1.301(1)",
+      "url": "https://www.legis.iowa.gov/docs/ACO/CourtRulesChapter/07-31-2026.1.pdf",
+      "locator": "Iowa R. Civ. P. 1.301(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:54.208218+00:00",
+        "sha256": "ae6ecf5e9a558a4f80cd0e63a5bc3229fb7681ecd5946a4ca8fbe1773f7c56b6"
+      }
     }
   },
   "court_directory": [
@@ -645,6 +669,32 @@
       "currentness": "historical",
       "language": "en",
       "edition": "2026 Iowa Code"
+    },
+    "b74e23b3e617387ddbd6f9559ceb44": {
+      "source_id": "US-IA:service:811cbbfc3cb4",
+      "authority_type": "court_rule",
+      "citation": "Iowa R. Civ. P. 1.305(1)",
+      "text": "1.305(1) Upon any individual who has attained majority and who has not been adjudged incompetent, either by taking the individual’s signed, dated acknowledgment of service endorsed on the notice, or by serving the individual personally; or by serving, at the individual’s dwelling house or usual place of abode, any person residing therein who is at least 18 years old, but if such place is a rooming house, hotel, club or apartment building, a copy may be delivered to such person who resides with the individual or is either a member of the individual’s family or the manager or proprietor of such place; or upon the individual’s spouse at a place other than the individual’s dwelling house or usual place of abode if probable cause exists to believe that the spouse lives at the individual’s dwelling house or usual place of abode.",
+      "text_sha256": "3346d98f3e0322495d3610b38faea7ca85df850f9bbad68778c3ae985214cb61",
+      "publisher_sha256": "ae6ecf5e9a558a4f80cd0e63a5bc3229fb7681ecd5946a4ca8fbe1773f7c56b6",
+      "retrieved_at": "2026-11-20T16:01:54.208218+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Iowa Judicial Branch Chapter 1 court rules archive retrieved from July 31, 2026 release",
+      "court": "Iowa District Court"
+    },
+    "19f5fa2551f1aec1ac915e236a6f39": {
+      "source_id": "US-IA:commencement:1cd6f2981c76",
+      "authority_type": "court_rule",
+      "citation": "Iowa R. Civ. P. 1.301(1)",
+      "text": "1.301(1) For all purposes, a civil action is commenced by filing a petition with the court. The date of filing shall determine whether an action has been commenced within the time allowed by statutes for limitation of actions, even though the limitation may inhere in the statute creating the remedy.",
+      "text_sha256": "32efe9d1e7aa03586e51fa0175924fea9de7dfb0164e70578075b040bec58099",
+      "publisher_sha256": "ae6ecf5e9a558a4f80cd0e63a5bc3229fb7681ecd5946a4ca8fbe1773f7c56b6",
+      "retrieved_at": "2026-11-20T16:01:54.208218+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Iowa Judicial Branch Chapter 1 court rules archive retrieved from July 31, 2026 release",
+      "court": "Iowa District Court"
     }
   },
   "fault_allocation": {

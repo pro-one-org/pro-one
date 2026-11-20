@@ -411,6 +411,18 @@
         "retrieved_at": "2026-11-20T15:25:15.147521+00:00",
         "sha256": "c0812f60968522d4159bfa8617a8d1b5b387c635ced768321a67c93a41434047"
       }
+    },
+    "US-VA:service:9c11a838424e": {
+      "category": "service",
+      "title": "Va. Code § 8.01-296",
+      "url": "https://law.lis.virginia.gov/vacode/title8.01/chapter8/section8.01-296/",
+      "locator": "Va. Code § 8.01-296",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.114073+00:00",
+        "sha256": "88c3edf1b34fde22467046db7423498f71d586461060cf2a5644c9c04a86f81c"
+      }
     }
   },
   "court_directory": [
@@ -659,6 +671,18 @@
       "decision_date": "2017-03-09",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from an order sustaining a demurrer in a wrongful-death action. The court considered the last clear chance doctrine."
+    },
+    "fd8eb2cfd0fae691156e258b5dcaf1": {
+      "source_id": "US-VA:service:9c11a838424e",
+      "authority_type": "statute",
+      "citation": "Va. Code § 8.01-296",
+      "text": "In addition to any other manner of service upon natural persons prescribed elsewhere in the Code, and subject to the provisions of § 8.01-286.1, in any action at law or in equity or any other civil proceeding in any court, process, for which no particular mode of service is prescribed, may be served upon natural persons as follows: 1. By delivering a copy thereof in writing to the party in person; or 2. By substituted service in the following manner: a. If the party to be served is not found at his usual place of abode, by delivering a copy of such process and giving information of its purport to any person found there, who is a member of his family, other than a temporary sojourner or guest, and who is of the age of 16 years or older; or b. If such service cannot be effected under subdivision 2 a, then by posting a copy of such process at the front door or at such other door as appears to be the main entrance of such place of abode, provided that not less than 10 days before judgment by default may be entered, the party causing service or his attorney or agent mails to the party served a copy of such process and thereafter files in the office of the clerk of the court a certificate of such mailing. In any civil action brought in a general district court, the mailing of the application for a warrant in debt or affidavit for summons in unlawful detainer or other civil pleading or a copy of such pleading, whether yet issued by the court or not, which contains the date, time and place of the return, prior to or after filing such pleading in the general district court, shall satisfy the mailing requirements of this section. In any civil action brought in a circuit court, the mailing of a copy of the pleadings with a notice that the proceedings are pending in the court indicated and that upon the expiration of 10 days after the giving of the notice and the expiration of the statutory period within which to respond, without further notice, the entry of a judgment by default as prayed for in the pleadings may be requested, shall satisfy the mailing requirements of this section and any notice requirement of the Rules of Court. Any judgment by default entered after July 1, 1989, upon posted service in which proceedings a copy of the pleadings was mailed as provided for in this section prior to July 1, 1989, is validated. c. The person executing such service shall note the manner and the date of such service on the original and the copy of the process so delivered or posted under this subdivision and shall effect the return of process as provided in §§ 8.01-294 and 8.01-325. 3. If service cannot be effected under subdivisions 1 and 2, then by order of publication in appropriate cases under the provisions of §§ 8.01-316 through 8.01-320. 4. The landlord or his duly authorized agent or representative may serve notices required by the rental agreement or by law upon the tenant or occupant under a rental agreement that is within the purview of Chapter 14 (§ 55.1-1400 et seq.) of Title 55.1.",
+      "text_sha256": "d6651651c9600f079aa3c3ca82d8a85d32e84297ccd3dbc7b156f8592d1cc9a0",
+      "publisher_sha256": "88c3edf1b34fde22467046db7423498f71d586461060cf2a5644c9c04a86f81c",
+      "retrieved_at": "2026-11-20T16:01:53.114073+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Virginia courts governed by Title 8.01"
     }
   },
   "fault_allocation": {
