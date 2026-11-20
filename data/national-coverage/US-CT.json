@@ -359,6 +359,18 @@
         "retrieved_at": "2026-11-20T18:29:01.421868+00:00",
         "sha256": "ad9515f4242d029ed00b6a0e9299595917d8505f155f3bdc7480b535422cbfa6"
       }
+    },
+    "US-CT:small_claims:32d2d4920681": {
+      "category": "small_claims",
+      "title": "Conn. Gen. Stat. § 51-15(d) (2025, small-claims monetary scope and exceptions)",
+      "url": "https://www.cga.ct.gov/2025/pub/chap_870.htm",
+      "locator": "Conn. Gen. Stat. § 51-15(d) (2025, small-claims monetary scope and exceptions)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:36:54.102400+00:00",
+        "sha256": "711abd246b895b297afea915d50f74ad0a846b78ff5fe70360286bc31a20af2e"
+      }
     }
   },
   "court_directory": [
@@ -574,6 +586,18 @@
       "decision_date": "2018-09-18",
       "opinion_role": "majority",
       "procedural_posture": "Appeal after a motion to strike a matter from the hearing-in-damages list in a landlord’s unpaid-rent action. The appellate court reversed and remanded."
+    },
+    "c921e411ad86c8d60fcb8bf0ae32d7": {
+      "source_id": "US-CT:small_claims:32d2d4920681",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 51-15(d) (2025, small-claims monetary scope and exceptions)",
+      "text": "The procedure for the hearing and determination of small claims as the same may be prescribed, from time to time, by the judges of the Superior Court shall be used in all small claims sessions of the court. The small claims procedure shall only be applicable to (1) all actions claiming money damages not in excess of five thousand dollars, except such procedure shall not be applicable to actions of libel and slander, and (2) actions claiming loss or damages not in excess of fifteen thousand dollars sustained by reason of (A) performance of, or offer to perform, home improvement, as defined in section 20-419, by a contractor holding a certificate under chapter 400, or (B) a contract for new home construction with a new home construction contractor holding a certificate under chapter 399a. If an action is brought in the small claims session by a tenant pursuant to subsection (g) of section 47a-21 to reclaim any part of a security deposit which may be due, the judicial authority hearing the action may award to the tenant the damages authorized by subsection (d) of said section and, if authorized by the rental agreement or any provision of the general statutes, costs, notwithstanding that the amount of such damages and costs, in the aggregate, exceeds the jurisdictional monetary limit established by subdivision (1) of this subsection. If a motion is filed to transfer a small claims matter to the regular docket in the court, the moving party shall pay the fee prescribed by section 52-259. The Attorney General or an assistant attorney general, or the head of any state agency or his or her authorized representative, while acting in his or her official capacity shall not be required to pay any small claims court fee. There shall be no charge for copies of service on defendants in small claims matters.",
+      "text_sha256": "29a59ad63340613e5ee99af04f2c32956f76cf39e49ec7b73968d5a0436f3923",
+      "publisher_sha256": "711abd246b895b297afea915d50f74ad0a846b78ff5fe70360286bc31a20af2e",
+      "retrieved_at": "2026-11-20T22:36:54.102400+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes 2025 edition"
     }
   },
   "fault_allocation": {

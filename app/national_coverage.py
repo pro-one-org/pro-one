@@ -47,6 +47,10 @@ ACTION_REQUIREMENTS = {
     "small_claim": ("small_claims", "venue", "service", "fees"),
     "demand": (),
 }
+ACTION_REVIEW_TOPICS = {
+    "complaint": ("pleading_contents", "summons_issuance", "service_business_entity", "service_proof"),
+    "answer": ("answer_contents", "postmotion_response", "demurrer_timing", "amended_pleading_response", "calendar"),
+}
 
 
 @lru_cache(maxsize=1)
@@ -135,6 +139,8 @@ def action_shells(scope):
         "claim_analysis": "verified_applicable_basis_required",
         "procedure_dependencies": {k: by_category[k] for k in deps},
         "procedure_evidence": {k: evidence[k] for k in deps},
+        "review_evidence": {topic: evidence[topic] for topic in ACTION_REVIEW_TOPICS.get(kind, ())
+                            if topic in evidence},
         "court_references": by_category["judiciary"], "rules_references": by_category["civil_rules"],
         "document_strategy": "reviewed_demand_basis_required" if kind == "demand" else "resolve_mandatory_form_and_local_requirements",
         "local_rules": "not_assessed" if kind == "demand" else "local_rule_required",

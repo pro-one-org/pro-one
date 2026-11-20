@@ -352,6 +352,42 @@
         "retrieved_at": "2026-11-20T18:16:58.765782+00:00",
         "sha256": "254a04c7463356abae3c982378eeeee283e40c7282fa4eb5795414ab64860c0b"
       }
+    },
+    "US-AL:small_claims:fb2146b08a4a": {
+      "category": "small_claims",
+      "title": "Ala. Small Cl. R. A (scope and unlawful-detainer exclusion)",
+      "url": "https://judicial.alabama.gov/docs/library/rules/sma.pdf",
+      "locator": "Ala. Small Cl. R. A (scope and unlawful-detainer exclusion)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:36:54.432876+00:00",
+        "sha256": "7505d51ffd50b8c7acad3d003c8f6b054a3d25951e1ad4e32385988bbb05ed71"
+      }
+    },
+    "US-AL:small_claims:c8bc5f0c90fa": {
+      "category": "small_claims",
+      "title": "Ala. Small Cl. R. D (process in small claims)",
+      "url": "https://judicial.alabama.gov/docs/library/rules/smd.pdf",
+      "locator": "Ala. Small Cl. R. D (process in small claims)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:36:54.738012+00:00",
+        "sha256": "34e235314aa1a5757cbeb8a39a810fc23a9161d48fc3e147ac1559d68497efaa"
+      }
+    },
+    "US-AL:small_claims:2bad12d1377d": {
+      "category": "small_claims",
+      "title": "Ala. Small Cl. R. E (time computation in small claims)",
+      "url": "https://judicial.alabama.gov/docs/library/rules/sme.pdf",
+      "locator": "Ala. Small Cl. R. E (time computation in small claims)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:36:54.656683+00:00",
+        "sha256": "1377903673e85733adcbb1cc640373bb044cd49575f106a5609990a173912403"
+      }
     }
   },
   "court_directory": [
@@ -627,6 +663,46 @@
       "language": "en",
       "edition": "Alabama Clarke-Figures Equal Pay Act (effective September 1, 2019)",
       "effective_from": "2019-09-01"
+    },
+    "22e1c9eb28ed8988b14d7a7dfd1e36": {
+      "source_id": "US-AL:small_claims:fb2146b08a4a",
+      "authority_type": "court_rule",
+      "citation": "Ala. Small Cl. R. A (scope and unlawful-detainer exclusion)",
+      "text": "These rules govern procedure in cases in the district courts. They are to be known and cited as the “Alabama Small Claims Rules.” They shall be construed to secure the just, speedy and inexpensive determination of every case. All small claims court cases shall be conducted in such manner as to do substantial justice between the parties according to the rules of substantive law and, in the administration of these rules, and particularly Rule “N” hereof, the court shall make such accommodation to parties not represented by an attorney as is necessary to serve the ends of justice and the court, in its discretion, may explore claims and/or defenses not raised by the parties. These rules shall not be applicable to actions of unlawful detainer pursuant to Title 6, Chapter 6 or Title 35, Chapter 9, Code of Alabama 1975. Actions of unlawful detainer shall be filed on the regular district court docket and shall be governed by the Alabama Rules of Civil Procedure with district court modifications.",
+      "text_sha256": "4f7f67468e902de14cce5cbf1d2685c373c9bcdeacea1c24d5225f38a6946431",
+      "publisher_sha256": "7505d51ffd50b8c7acad3d003c8f6b054a3d25951e1ad4e32385988bbb05ed71",
+      "retrieved_at": "2026-11-20T22:36:54.432876+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Alabama Small Claims Rule A, amendment effective October 9, 1980",
+      "court": "Alabama district court small-claims division",
+      "effective_from": "1980-10-09"
+    },
+    "7d2e158c7581620997ff7cb5cf1f5d": {
+      "source_id": "US-AL:small_claims:c8bc5f0c90fa",
+      "authority_type": "court_rule",
+      "citation": "Ala. Small Cl. R. D (process in small claims)",
+      "text": "All service of process shall be made as provided in the Alabama Rules of Civil Procedure.",
+      "text_sha256": "bf85a3aa60266a799223260d4b8b33a361449d2899d3a6ddfee0fd28cf400e1d",
+      "publisher_sha256": "34e235314aa1a5757cbeb8a39a810fc23a9161d48fc3e147ac1559d68497efaa",
+      "retrieved_at": "2026-11-20T22:36:54.738012+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Alabama Small Claims Rule D, amendment effective June 7, 2012",
+      "court": "Alabama district court small-claims division",
+      "effective_from": "2012-06-07"
+    },
+    "565ad65eb0a585d76a3ef162b3bd96": {
+      "source_id": "US-AL:small_claims:2bad12d1377d",
+      "authority_type": "court_rule",
+      "citation": "Ala. Small Cl. R. E (time computation in small claims)",
+      "text": "All time periods shall be measured by starting to count on the first day after the complaint was served on the defendant or on the first day after the judgment was entered or on the first day after any other event happens which by these rules starts the running of a time period. If the last day is anything other than a working week day, then the last day is not considered to have arrived until the next working week day thereafter has arrived.",
+      "text_sha256": "b30e0cb175dc86de5f7b6ec427759520f933560ce06a0551a57a802ec988d67d",
+      "publisher_sha256": "1377903673e85733adcbb1cc640373bb044cd49575f106a5609990a173912403",
+      "retrieved_at": "2026-11-20T22:36:54.656683+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alabama district court small-claims division"
     }
   },
   "fault_allocation": {

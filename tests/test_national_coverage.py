@@ -204,6 +204,21 @@ class NationalCoverageTests(unittest.TestCase):
         for action in washington:
             self.assertNotIn(evidence, action["procedure_evidence"].get("commencement", ()))
 
+    def test_action_review_links_preserve_scope_without_satisfying_dependencies(self):
+        actions = {row["action_type"]: row for row in coverage("US-MI")["action_shells"]}
+        complaint, answer = actions["complaint"], actions["answer"]
+        proof, = complaint["review_evidence"]["service_proof"]
+        self.assertEqual(proof["citation"], "MCR 2.104(A)")
+        self.assertEqual(proof["current_as_of"], "2026-11-18")
+        self.assertNotIn(proof, complaint["procedure_evidence"]["service"])
+        self.assertNotIn("service_proof", answer["review_evidence"])
+        postmotion, = answer["review_evidence"]["postmotion_response"]
+        self.assertNotIn(postmotion, answer["procedure_evidence"]["response"])
+        self.assertFalse(actions["small_claim"]["review_evidence"])
+        self.assertFalse(actions["demand"]["review_evidence"])
+        self.assertTrue(all(row["readiness"] == "blocked" and row["execution"] == "disabled"
+                            for row in actions.values()))
+
     def test_partial_historical_fault_authority_is_separate_from_current_support(self):
         cell = coverage("US-CO")["cells"]["substantive.fault_allocation"]
         self.assertEqual(cell["coverage_depth"], "partial")

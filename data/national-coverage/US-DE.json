@@ -359,6 +359,18 @@
         "retrieved_at": "2026-11-20T18:39:01.639212+00:00",
         "sha256": "21818593323092a34cb8c117468f18129632095802d2c72cb7bf402fc7b24279"
       }
+    },
+    "US-DE:small_claims:9000dcbe534c": {
+      "category": "small_claims",
+      "title": "10 Del. C. § 9301 (civil jurisdiction of Justice of the Peace Court)",
+      "url": "https://delcode.delaware.gov/title10/c093/",
+      "locator": "10 Del. C. § 9301 (civil jurisdiction of Justice of the Peace Court)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:36:53.783767+00:00",
+        "sha256": "d560cf7748f18778d5ff99d7716ba74a474bc33a6f05fb8ac7e489d6f03ec21d"
+      }
     }
   },
   "court_directory": [
@@ -607,6 +619,17 @@
       "text_sha256": "acb9bd315621d3c8376504cce0763e142c22f03bf786b8b8c6d856ca8a5cbc39",
       "publisher_sha256": "21818593323092a34cb8c117468f18129632095802d2c72cb7bf402fc7b24279",
       "retrieved_at": "2026-11-20T18:39:01.639212+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "996432a55614dac4503b132e356acf": {
+      "source_id": "US-DE:small_claims:9000dcbe534c",
+      "authority_type": "statute",
+      "citation": "10 Del. C. § 9301 (civil jurisdiction of Justice of the Peace Court)",
+      "text": "Unless otherwise specified by law, the Justice of the Peace Court shall have civil jurisdiction over the following: (1) Common-law actions in contract, express or implied, and common-law actions in tort for damage, destruction or taking of personal property (including replevin), for injury to real property, and for trespass on the land. Jurisdiction over such actions shall be limited to actions in which the matter in demand, damage claimed, or the value of the property whose return is sought does not exceed $25,000; provided, however, that the $25,000 limit does not apply to monetary claims, counter-claims, or cross-claims asserted in an action for summary possession as provided in Chapter 57 of Title 25 and arising from or relating to a commercial lease as defined in Part IV of Title 25 [§ 6101 et seq. of Title 25]. A penalty in any contract exceeding that sum shall not exclude it from this jurisdiction if the sum actually due thereon is within it. The interest also due on any cause of action within this jurisdiction may be added, although the judgment, with interest so added, exceeds $25,000. (2) Actions for any penalty or forfeiture incurred under the provisions of any statute, bylaw or ordinance authorized by statute when the matter in demand does not exceed $25,000. The interest also due on any such cause of action may be added, although the judgment, with interest so added, exceeds $25,000. (3) Summary possession actions as provided in Chapter 57 of Title 25. (4) Distress for rent actions as provided in Chapter 63 of Title 25. (5) Truancy actions as provided in Chapter 27 of Title 14. (6) Any other civil jurisdiction provided by law.",
+      "text_sha256": "45914c23cc3878f2724b37b4ccca0ef5ece26fe68f9cc9223311629bd78fb1df",
+      "publisher_sha256": "d560cf7748f18778d5ff99d7716ba74a474bc33a6f05fb8ac7e489d6f03ec21d",
+      "retrieved_at": "2026-11-20T22:36:53.783767+00:00",
       "currentness": "unresolved",
       "language": "en"
     }
