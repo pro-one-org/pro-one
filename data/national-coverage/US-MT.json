@@ -297,6 +297,18 @@
         "retrieved_at": "2026-11-19T19:26:44.652796+00:00",
         "sha256": "82567a86a0da7907ad621de112a6b51b9ec766e00158f9950368b50473508505"
       }
+    },
+    "US-MT:debtLaw:f5de759d2930": {
+      "category": "debtLaw",
+      "title": "2003 Mont. Laws ch. 308, § 1 (Mont. Code § 32-5-301(4), past-due loan charges)",
+      "url": "https://archive.legmt.gov/content/publications/sales/2003_sess_laws_vol_2.pdf",
+      "locator": "2003 Mont. Laws ch. 308, § 1 (Mont. Code § 32-5-301(4), past-due loan charges)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:29:53.200211+00:00",
+        "sha256": "ee29f32ec911c800dda89a385bfef620437bbb401c809f88e5354d1cbf6a2505"
+      }
     }
   },
   "court_directory": [
@@ -508,6 +520,18 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Montana Code Annotated 2025"
+    },
+    "41b20fd3d8bc810f00d8a69534a063": {
+      "source_id": "US-MT:debtLaw:f5de759d2930",
+      "authority_type": "statute",
+      "citation": "2003 Mont. Laws ch. 308, § 1 (Mont. Code § 32-5-301(4), past-due loan charges)",
+      "text": "(4) If the contract so provides, the additional charge for any amount past due according to the original terms of the contract, whether by reason of default or extension agreement, may be the greater of 5% of the amount past due or $15, and that amount may be charged only once.",
+      "text_sha256": "1dcb891c6e8bba3f49d684a449cbf0ee40d425fb86b1997957af9e0cc0325337",
+      "publisher_sha256": "ee29f32ec911c800dda89a385bfef620437bbb401c809f88e5354d1cbf6a2505",
+      "retrieved_at": "2026-11-20T22:29:53.200211+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Montana enacted 2003 Session Laws chapter 308"
     }
   },
   "forms": {

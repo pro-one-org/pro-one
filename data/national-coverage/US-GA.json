@@ -269,6 +269,30 @@
         "retrieved_at": "2026-11-20T18:43:05.115389+00:00",
         "sha256": "e7ab491a703cd9b7ae1f27904215bf7dfcd651a4f000c55011c2c8d5fdeff5f2"
       }
+    },
+    "US-GA:response:be1154eafa18": {
+      "category": "response",
+      "title": "O.C.G.A. § 9-11-12(a) (2025 Supp.)",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t9-ch11-%28v7%29-pdf.pdf",
+      "locator": "O.C.G.A. § 9-11-12(a) (2025 Supp.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:30:36.575817+00:00",
+        "sha256": "77fea3e8736b9826570a59f287fd3310bf2fbe632e16265f9af58a4a538ce2b0"
+      }
+    },
+    "US-GA:small_claims:65ebe4aad96d": {
+      "category": "small_claims",
+      "title": "O.C.G.A. § 15-10-2(a)(5) (2025 Supp., magistrate civil jurisdiction)",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t15-ch1-11a-%28v13%29-pdf.pdf",
+      "locator": "O.C.G.A. § 15-10-2(a)(5) (2025 Supp., magistrate civil jurisdiction)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:30:36.564800+00:00",
+        "sha256": "d86fd6e4449f7a6256b61c6e74daab8df843da6114118de244bbfad4d7df0971"
+      }
     }
   },
   "court_directory": [
@@ -485,6 +509,30 @@
       "decision_date": "2023-06-29",
       "opinion_role": "majority",
       "procedural_posture": "Consolidated certiorari review concerning premises liability for third-party criminal conduct. The judgment in Carmichael was affirmed."
+    },
+    "49a576aedfc4a1e46d0972f4f147ad": {
+      "source_id": "US-GA:response:be1154eafa18",
+      "authority_type": "statute",
+      "citation": "O.C.G.A. § 9-11-12(a) (2025 Supp.)",
+      "text": "(a) When answer presented. (1) Except as provided in paragraph (2) of this subsection, a defendant shall serve an answer within 30 days after the service of the summons and complaint upon the defendant, unless otherwise provided by statute. A cross-claim or counterclaim shall not require an answer, unless one is required by order of the court, and shall automatically stand denied. (2) Unless the court sets a different time, serving a motion under this Code section alters the time for serving an answer pursuant to paragraph (1) of this subsection as follows: (A) If the court denies the motion or postpones its disposition until trial, the answer shall be served within 15 days after notice of the court’s action; or (B) If the court grants a motion for a more definite statement, the answer shall be served within 15 days after the more definite statement is served.",
+      "text_sha256": "37b1d7660c39130049851eb2d0d5c11da9a55f4c2a8e4f329d0ffb4fb0a52206",
+      "publisher_sha256": "77fea3e8736b9826570a59f287fd3310bf2fbe632e16265f9af58a4a538ce2b0",
+      "retrieved_at": "2026-11-20T22:30:36.575817+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Georgia Code supplement incorporating the 2025 regular session"
+    },
+    "a92e1817773fa830a552bb914fc83e": {
+      "source_id": "US-GA:small_claims:65ebe4aad96d",
+      "authority_type": "statute",
+      "citation": "O.C.G.A. § 15-10-2(a)(5) (2025 Supp., magistrate civil jurisdiction)",
+      "text": "(5) The trial of civil claims including garnishment and attachment in which exclusive jurisdiction is not vested in the superior court and the amount demanded or the value of the property claimed does not exceed $15,000.00, provided that no prejudgment attachment may be granted;",
+      "text_sha256": "c1dc5f420e0b50c4c9dfa4e178b34a9d90f99a54b8dcb952e781bfd60d70c0e4",
+      "publisher_sha256": "d86fd6e4449f7a6256b61c6e74daab8df843da6114118de244bbfad4d7df0971",
+      "retrieved_at": "2026-11-20T22:30:36.564800+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Georgia Code supplement incorporating the 2025 regular session"
     }
   },
   "fault_allocation": {

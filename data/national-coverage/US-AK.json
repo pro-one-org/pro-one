@@ -408,6 +408,18 @@
         "retrieved_at": "2026-11-20T17:57:54.083516+00:00",
         "sha256": "83cec8fab79a503771ed3be0ac4b43042136bf10d4d7d3d4cb5f6c3105c84f96"
       }
+    },
+    "US-AK:debtLaw:6e2c6ba98659": {
+      "category": "debtLaw",
+      "title": "Alaska Stat. § 08.24.090(a)–(c) (collection agency licensing and exemptions)",
+      "url": "https://www.commerce.alaska.gov/web/Portals/5/pub/CollectionStatutes.pdf",
+      "locator": "Alaska Stat. § 08.24.090(a)–(c) (collection agency licensing and exemptions)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:29:48.565486+00:00",
+        "sha256": "23dc205309f7c99789a0cb5321531cc80a913aac14ac6d5cdc9ae333cf4b2ca6"
+      }
     }
   },
   "court_directory": [
@@ -595,6 +607,18 @@
       "retrieved_at": "2026-11-20T17:57:54.083516+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "a528a6e5eb2d18aac354c48779cc14": {
+      "source_id": "US-AK:debtLaw:6e2c6ba98659",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 08.24.090(a)–(c) (collection agency licensing and exemptions)",
+      "text": "Sec. 08.24.090. License required. (a) A person other than a collection agency licensed and authorized under this chapter may not for compensation (1) conduct a collection agency business in this state; (2) collect claims for others in this state; (3) solicit the right to collect or receive payment of a claim for another; (4) advertise or solicit either in print, by letter, in person or otherwise, the right to collect or receive payment of a claim for another; (5) seek to make collection or obtain payment of a claim on behalf of another. (b) This chapter does not apply to the following when engaged in the regular course of their respective businesses: (1) attorneys at law; (2) persons regularly employed on a regular wage or salary in the capacity of credit men or a similar capacity, except as an independent contractor; (3) banks, including trust departments of banks, fiduciaries and financing and lending institutions; (4) common carriers, (5) title insurers and abstract companies while doing an escrow business; (6) licensed real estate brokers; (7) employees of licensees under this chapter; (8) substation payment offices employed by or serving as independent contractors for public utilities. (c) A violation of this section is a misdemeanor punishable by imprisonment in a jail for not to exceed one year, or by a fine of not more than $1,000, or by both.",
+      "text_sha256": "f35c3fb0a842480f4d628a4d8d231726e4cd4d50c7d60dff486df1d65b6ac4a6",
+      "publisher_sha256": "23dc205309f7c99789a0cb5321531cc80a913aac14ac6d5cdc9ae333cf4b2ca6",
+      "retrieved_at": "2026-11-20T22:29:48.565486+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Alaska agency publication of collection statutes, May 2022"
     }
   },
   "fault_allocation": {

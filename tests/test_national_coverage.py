@@ -431,6 +431,20 @@ class NationalCoverageTests(unittest.TestCase):
             self.assertEqual(provider.search(query.model_copy(update=changes)), [])
         self.assertEqual(infer_jurisdiction("I live in Maryland and work in Washington, D.C."), {"US-MD", "US-DC"})
 
+    def test_retained_specialized_authority_is_routed_by_scope_and_topic(self):
+        provider = RetainedLegislativeResearch()
+        for state, area, topic, kind, status, day, citation in (
+            ("Georgia", "torts", "premises_liability", "opinion", "historical", None, "Carmichael"),
+            ("Kansas", "torts", "negligence_causation", "opinion", "historical", None, "Montgomery v. Saleh"),
+            ("Indiana", "civil_procedure", "time_computation", "court_rule", "current", "2026-08-01", "Ind. Trial R. 6(A)"),
+        ):
+            with self.subTest(state=state, topic=topic):
+                matter = ResearchMatter(country="US", state=state, legal_area=area, topics=[topic],
+                                        authority_types=[kind], authority_status=status, authority_as_of=day)
+                key, = provider.search(matter)
+                self.assertIn(citation, provider.fetch(key).source["citation"]["preferred_citation"])
+                self.assertFalse(provider.search(matter.model_copy(update={"state": "Wisconsin"})))
+
     def test_replay_idempotence_separate_courts_and_historical_federal_granules(self):
         with TemporaryDirectory() as folder:
             path = Path(folder) / "corpus.sqlite3"

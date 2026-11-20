@@ -250,6 +250,30 @@
         "retrieved_at": "2026-11-20T17:54:37.043183+00:00",
         "sha256": "27987bf3424ab9fbc83ff3dbef4f0cf1736e8a3791266f461d3007dfb74070d8"
       }
+    },
+    "US-KY:debtLaw:82b8a838fae8": {
+      "category": "debtLaw",
+      "title": "2025 Ky. Acts ch. 55, § 1 (KRS 190.100(1)(d), motor-vehicle installment collections)",
+      "url": "https://apps.legislature.ky.gov/law/acts/25RS/documents/0055.pdf",
+      "locator": "2025 Ky. Acts ch. 55, § 1 (KRS 190.100(1)(d), motor-vehicle installment collections)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:29:47.597993+00:00",
+        "sha256": "729be7b10fa2d077e83482cae588748d0566ebbd1996116165e1047dc56c1ffc"
+      }
+    },
+    "US-KY:small_claims:ae5ec8302daa": {
+      "category": "small_claims",
+      "title": "Ky. Rev. Stat. § 24A.230 (subject-matter jurisdiction in small claims)",
+      "url": "https://apps.legislature.ky.gov/LAW/STATUTES/statute.aspx?id=39856",
+      "locator": "Ky. Rev. Stat. § 24A.230 (subject-matter jurisdiction in small claims)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:31:56.863241+00:00",
+        "sha256": "5458c55733ac254fc4bdfa42ced35b671d1e0e9b8c8f74d810acbfd5ec0fcc94"
+      }
     }
   },
   "court_directory": [
@@ -427,6 +451,30 @@
       "retrieved_at": "2026-11-20T17:54:37.043183+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "f09e34ec7264fa3be466bb70540ca4": {
+      "source_id": "US-KY:debtLaw:82b8a838fae8",
+      "authority_type": "statute",
+      "citation": "2025 Ky. Acts ch. 55, § 1 (KRS 190.100(1)(d), motor-vehicle installment collections)",
+      "text": "(d) 1. The holder of a retail installment contract may collect a delinquency and collection charge in an amount not in excess of five percent (5%) of each installment or fifteen dollars ($15), whichever is greater, for each installment in arrears for a period not less than: a. Three (3) days for installment periods that are less than twenty-eight (28) days; or b. Ten (10) days for installment periods that are twenty-eight (28) days or longer. 2. In addition to such delinquency and collection charge, the retail installment contract may provide for the payment of reasonable attorneys' fees where such contract is referred to an attorney not a salaried employee of the holder of the contract for collection, plus the court costs.",
+      "text_sha256": "c1b8b8f7d66bb0b5d3761eac5c27b09749e5a08b6c4b31c43da54ac9630be1f3",
+      "publisher_sha256": "729be7b10fa2d077e83482cae588748d0566ebbd1996116165e1047dc56c1ffc",
+      "retrieved_at": "2026-11-20T22:29:47.597993+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Kentucky enacted 2025 Acts chapter 55"
+    },
+    "d064485d21ac86a9dff22e03341275": {
+      "source_id": "US-KY:small_claims:ae5ec8302daa",
+      "authority_type": "statute",
+      "citation": "Ky. Rev. Stat. § 24A.230 (subject-matter jurisdiction in small claims)",
+      "text": "(1) The small claims division shall have jurisdiction, concurrent with that of the District Court, in all civil actions, other than libel, slander, alienation of affections, malicious prosecution and abuse of process actions, when the amount of money or damages or the value of the personal property claimed does not exceed two thousand five hundred dollars ($2,500) exclusive of interest and costs. (2) The division may also be used in civil matters when the plaintiff seeks to disaffirm, avoid, or rescind a contract or agreement for the purchase of goods or services not in excess of two thousand five hundred dollars ($2,500) exclusive of interest and costs. (3) The division shall have authority to grant appropriate relief, except no prejudgment actions for attachment, garnishment, replevin or other provisional remedy may be filed in the division.",
+      "text_sha256": "451e982f00b5df9de731e7e7e73877de328b76256d0a62da982650af20e379e1",
+      "publisher_sha256": "5458c55733ac254fc4bdfa42ced35b671d1e0e9b8c8f74d810acbfd5ec0fcc94",
+      "retrieved_at": "2026-11-20T22:31:56.863241+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2011-06-08"
     }
   },
   "fault_allocation": {
