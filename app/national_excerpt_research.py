@@ -20,6 +20,8 @@ SUBJECTS = {
     "oral_contract_limitations": ("contracts", "oral_contract_limitations"),
     "general_contract_limitations": ("contracts", "contract_limitations"),
     "fault": ("torts", "fault_allocation"),
+    "joint_several_liability": ("torts", "joint_several_liability"),
+    "tortfeasor_contribution": ("torts", "tortfeasor_contribution"),
     "deposit": ("landlord_tenant", "security_deposit"),
     "habitability": ("landlord_tenant", "habitability"),
     "eviction": ("landlord_tenant", "eviction_procedure"),

@@ -273,6 +273,18 @@
         "retrieved_at": "2026-11-20T16:20:54.354931+00:00",
         "sha256": "4570b68959941da1ea2ede78e7659a68c6194045fd704bae3167d3a0e0f61d40"
       }
+    },
+    "US-IL:response:a6abcad02bc8": {
+      "category": "response",
+      "title": "Ill. Sup. Ct. R. 181(a)",
+      "url": "https://ilcourtsaudio.blob.core.windows.net/antilles-resources/resources/7ae8a196-2a43-4484-9666-43098da60282/S_Ct_Rules_full.pdf",
+      "locator": "Ill. Sup. Ct. R. 181(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:41:35.644150+00:00",
+        "sha256": "6dc52c9989ba52e0273c1e1f27422bf49c2380662a2631227f18c1efcb7eae60"
+      }
     }
   },
   "court_directory": [
@@ -428,6 +440,18 @@
       "decision_date": "2019-06-20",
       "opinion_role": "majority",
       "procedural_posture": "Review of the dismissal of an action under the Illinois Consumer Fraud Act involving the collection of a bottled-water tax."
+    },
+    "d4a4dba926625689a26326f959b0b7": {
+      "source_id": "US-IL:response:a6abcad02bc8",
+      "authority_type": "court_rule",
+      "citation": "Ill. Sup. Ct. R. 181(a)",
+      "text": "(a) When Summons Requires Appearance Within 30 Days After Service. When the summons requires appearance within 30 days after service, exclusive of the day of service (see Rule 101(d)), the 30-day period shall be computed from the day the copy of the summons is left with the person designated by law and not from the day a copy is mailed, in case mailing is also required. The defendant may make his or her appearance by filing a motion within the 30-day period, in which instance an answer or another appropriate motion shall be filed within the time the court directs in the order disposing of the motion. If the defendant’s appearance is made in some other manner, nevertheless his or her answer or appropriate motion shall be filed on or before the last day on which he or she was required to appear.",
+      "text_sha256": "6d0a84401cc6ce4cbfafdbafa3e88acb80714066efd662de57f1bc807e489f13",
+      "publisher_sha256": "6dc52c9989ba52e0273c1e1f27422bf49c2380662a2631227f18c1efcb7eae60",
+      "retrieved_at": "2026-11-20T16:41:35.644150+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2020-07-17"
     }
   },
   "fault_allocation": {

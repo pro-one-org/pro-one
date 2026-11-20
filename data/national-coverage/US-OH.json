@@ -298,6 +298,30 @@
         "retrieved_at": "2026-11-20T16:35:18.758588+00:00",
         "sha256": "48f00165db31bde6fa13353f9f46718dde55b774105f3bc053acdf264b34b6b6"
       }
+    },
+    "US-OH:response:20a67f1515f4": {
+      "category": "response",
+      "title": "Ohio Civ.R. 12(A)",
+      "url": "https://www.supremecourt.ohio.gov/docs/LegalResources/Rules/civil/CivilProcedure.pdf",
+      "locator": "Ohio Civ.R. 12(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:42:37.557891+00:00",
+        "sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040"
+      }
+    },
+    "US-OH:commencement:5a1f4764d920": {
+      "category": "commencement",
+      "title": "Ohio Civ.R. 3(A)",
+      "url": "https://www.supremecourt.ohio.gov/docs/LegalResources/Rules/civil/CivilProcedure.pdf",
+      "locator": "Ohio Civ.R. 3(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:42:37.557891+00:00",
+        "sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040"
+      }
     }
   },
   "court_directory": [
@@ -546,6 +570,28 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "1974-11-04"
+    },
+    "e1809675b3a0483f03a157d563d5cc": {
+      "source_id": "US-OH:response:20a67f1515f4",
+      "authority_type": "court_rule",
+      "citation": "Ohio Civ.R. 12(A)",
+      "text": "(A) When answer presented (1) Generally The defendant shall serve his answer within twenty-eight days after service of the summons and complaint upon him; if service of notice has been made by publication, he shall serve his answer within twenty-eight days after the completion of service by publication. (2) Other responses and motions A party served with a pleading stating a cross-claim against him shall serve an answer thereto within twenty-eight days after the service upon him. The plaintiff shall serve his reply to a counterclaim in the answer within twenty-eight days after service of the answer or, if a reply is ordered by the court, within twenty-eight days after service of the order, unless the order otherwise directs. The service of a motion permitted under this rule alters these periods of time as follows, unless a different time is fixed by order of the court: (a) if the court denies the motion, a responsive pleading, delayed because of service of the motion, shall be served within fourteen days after notice of the court's action; (b) if the court grants a motion, a responsive pleading, delayed because of service of the motion, shall be served within fourteen days after service of the pleading which complies with the court's order.",
+      "text_sha256": "272b921cb586747f051a24e65132639e603422df60196b9a7a47af6025245366",
+      "publisher_sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040",
+      "retrieved_at": "2026-11-20T16:42:37.557891+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "5117ddce690d4f8c3ef3f1bf2591c9": {
+      "source_id": "US-OH:commencement:5a1f4764d920",
+      "authority_type": "court_rule",
+      "citation": "Ohio Civ.R. 3(A)",
+      "text": "(A) Commencement A civil action is commenced by filing a complaint with the court, if service is obtained within one year from such filing upon a named defendant, or upon an incorrectly named defendant whose name is later corrected pursuant to Civ.R. 15(C), or upon a defendant identified by a fictitious name whose name is later corrected pursuant to Civ.R. 15(D).",
+      "text_sha256": "0fbd97d5258fa318fe1d84dded7fbaa22a87260b3651c504158030846d2592d4",
+      "publisher_sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040",
+      "retrieved_at": "2026-11-20T16:42:37.557891+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

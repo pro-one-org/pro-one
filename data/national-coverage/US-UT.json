@@ -288,6 +288,18 @@
         "retrieved_at": "2026-11-20T16:16:28.470787+00:00",
         "sha256": "0d565f5579dc5ea29f8cf3502a93edea1f03bbbf07606329affd50083ff3cd2c"
       }
+    },
+    "US-UT:response:7016f16e2e8e": {
+      "category": "response",
+      "title": "Utah R. Civ. P. 12(a)(1)",
+      "url": "https://legacy.utcourts.gov/rules/view.php?type=urcp&rule=12",
+      "locator": "Utah R. Civ. P. 12(a)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:41:36.881162+00:00",
+        "sha256": "eac41de30f9068242c7af2f52660bef6216c285c7c6d30858797cae5ebdd114f"
+      }
     }
   },
   "court_directory": [
@@ -485,6 +497,18 @@
       "edition": "Utah Code version effective May 4, 2022",
       "court": "Utah small-claims courts governed by Title 78A, Chapter 8",
       "effective_from": "2022-05-04"
+    },
+    "f78a2952d55fe1e755d6e0ab9e421a": {
+      "source_id": "US-UT:response:7016f16e2e8e",
+      "authority_type": "court_rule",
+      "citation": "Utah R. Civ. P. 12(a)(1)",
+      "text": "(1) Unless otherwise provided by statute or order of the court, a defendant must file and serve an answer within 21 days after the service of the summons and complaint within the state and within 30 days after service of the summons and complaint outside the state. A party served with a crossclaim must file and serve an answer to the crossclaim within 21 days after service. The plaintiff must file and serve an answer to a counterclaim within 21 days after service of the counterclaim, unless the court orders otherwise. The service of a motion under this rule alters these periods of time as follows, unless a different time is ordered by the court, but a motion directed to fewer than all of the claims in a pleading does not affect the time for responding to the remaining claims: (A) If the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading must be served within 14 days after notice of the court's action; (B) If the court grants a motion for a more definite statement, the responsive pleading must be served within 14 days after the service of the more definite statement.",
+      "text_sha256": "94aff6b9e649e3d274584303ff79a6544b7a84f27075c5c587a024d47a224b36",
+      "publisher_sha256": "eac41de30f9068242c7af2f52660bef6216c285c7c6d30858797cae5ebdd114f",
+      "retrieved_at": "2026-11-20T16:41:36.881162+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2024-05-01"
     }
   },
   "fault_allocation": {

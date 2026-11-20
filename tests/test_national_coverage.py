@@ -129,6 +129,15 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertEqual(cell["allocation"]["currentness"], "historical")
         self.assertFalse(cell["certified_passages_as_of"])
 
+    def test_tortfeasor_contribution_does_not_supply_plaintiff_fault(self):
+        query = ResearchMatter(country="US", state="Maryland", legal_area="torts",
+                               topics=["tortfeasor_contribution"], authority_types=["statute"])
+        provider = RetainedLegislativeResearch()
+        key, = provider.search(query)
+        self.assertIn("discharged the common liability", provider.fetch(key).text)
+        self.assertFalse(provider.search(query.model_copy(update={"topics": ["fault_allocation"]})))
+        self.assertFalse(provider.search(query.model_copy(update={"state": "Missouri"})))
+
     def test_historical_negligence_elements_do_not_supply_fault_or_present_law(self):
         query = ResearchMatter(country="US", state="Alabama", legal_area="torts",
                                topics=["negligence_elements"], authority_types=["opinion"],

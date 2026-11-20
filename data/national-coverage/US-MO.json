@@ -269,6 +269,30 @@
         "retrieved_at": "2026-11-20T16:35:17.529331+00:00",
         "sha256": "d44830a3c333f93d10ebd047118e290aa9ecf042ace42b97b89ee426ba7c0038"
       }
+    },
+    "US-MO:fault:212f37efb988": {
+      "category": "fault",
+      "title": "Mo. Rev. Stat. § 537.765(1)–(2)",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=537.765",
+      "locator": "Mo. Rev. Stat. § 537.765(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:41:35.357241+00:00",
+        "sha256": "296f60f733e521c7215527c174eceae43fb95db38daca4ad5160e6e6c3160c0b"
+      }
+    },
+    "US-MO:joint_several_liability:38283b104f44": {
+      "category": "joint_several_liability",
+      "title": "Mo. Rev. Stat. § 537.067",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=537.067",
+      "locator": "Mo. Rev. Stat. § 537.067",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:41:35.699966+00:00",
+        "sha256": "e6e9580190e46334b9ca43e1fbc4ab70f57fa2b3d951b8cd0c52ae8838b5eace"
+      }
     }
   },
   "court_directory": [
@@ -428,6 +452,37 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "2018-08-28"
+    },
+    "dddc21139735982e55afe5ac8d9b96": {
+      "source_id": "US-MO:fault:212f37efb988",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 537.765(1)–(2)",
+      "text": "1. Contributory fault, as a complete bar to plaintiff's recovery in a products liability claim, is abolished. The doctrine of pure comparative fault shall apply to products liability claims as provided in this section. 2. Defendant may plead and prove the fault of the plaintiff as an affirmative defense. Any fault chargeable to the plaintiff shall diminish proportionately the amount awarded as compensatory damages but shall not bar recovery.",
+      "text_sha256": "b1395af1cb7ca300192eb0aa1f0815a213014d337e393d48f628d997fce95db5",
+      "publisher_sha256": "296f60f733e521c7215527c174eceae43fb95db38daca4ad5160e6e6c3160c0b",
+      "retrieved_at": "2026-11-20T16:41:35.357241+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1987-07-01"
+    },
+    "d339a7f2bf8144aceb9bb165d3e02e": {
+      "source_id": "US-MO:joint_several_liability:38283b104f44",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 537.067",
+      "text": "1. In all tort actions for damages, if a defendant is found to bear fifty-one percent or more of fault, then such defendant shall be jointly and severally liable for the amount of the judgment rendered against the defendants. If a defendant is found to bear less than fifty-one percent of fault, then the defendant shall only be responsible for the percentage of the judgment for which the defendant is determined to be responsible by the trier of fact; except that, a party is responsible for the fault of another defendant or for payment of the proportionate share of another defendant if any of the following applies: (1) The other defendant was acting as an employee of the party; (2) The party's liability for the fault of another person arises out of a duty created by the federal Employers' Liability Act, 45 U.S.C. Section 51. 2. The defendants shall only be severally liable for the percentage of punitive damages for which fault is attributed to such defendant by the trier of fact. 3. In all tort actions, no party may disclose to the trier of fact the impact of this section.",
+      "text_sha256": "16bbf4c289563553d11d277dc28283a519a437f8b4639b161724fd2d0f19fab1",
+      "publisher_sha256": "e6e9580190e46334b9ca43e1fbc4ab70f57fa2b3d951b8cd0c52ae8838b5eace",
+      "retrieved_at": "2026-11-20T16:41:35.699966+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2005-08-28"
     }
+  },
+  "fault_allocation": {
+    "regime": "pure_comparative",
+    "source_id": "US-MO:fault:212f37efb988",
+    "passage_selector": "dddc21139735982e55afe5ac8d9b96",
+    "currentness": "unresolved",
+    "qualification": "The statute expressly applies to products liability. The retained subsections address compensatory damages and the affirmative defense, and subsection (3) limits qualifying fault. Ordinary negligence requires independent authority."
   }
 }

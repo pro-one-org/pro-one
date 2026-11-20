@@ -354,6 +354,18 @@
         "retrieved_at": "2026-11-20T16:35:17.787738+00:00",
         "sha256": "930d266be2161621da6feb7845f90e30955fe580112f3d1fe5d8c8a0c161a095"
       }
+    },
+    "US-NC:fault:db9fc7f53eee": {
+      "category": "fault",
+      "title": "Jones v. J. Kim Hatcher Insurance Agencies, Inc., No. 264A23 (N.C. May 23, 2025)",
+      "url": "https://appellate.nccourts.org/opinions/?c=1&pdf=44743",
+      "locator": "Jones v. J. Kim Hatcher Insurance Agencies, Inc., No. 264A23 (N.C. May 23, 2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:22:59.111835+00:00",
+        "sha256": "508f6e2be78db2437949b9d122d2908c7fe905f48d1ffea438bf6165f1c22dac"
+      }
     }
   },
   "court_directory": [
@@ -573,6 +585,29 @@
       "retrieved_at": "2026-11-20T16:35:17.787738+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "cfdc80d4b1b07848acdf271488d93d": {
+      "source_id": "US-NC:fault:db9fc7f53eee",
+      "authority_type": "opinion",
+      "citation": "Jones v. J. Kim Hatcher Insurance Agencies, Inc., No. 264A23 (N.C. May 23, 2025)",
+      "text": "See Sorrells v. M.Y.B. Hosp. Ventures, 332 N.C. 645, 648 (1992) (“[A] plaintiff’s contributory negligence is a bar to recovery from a defendant who commits an act of ordinary negligence.”). To establish contributory negligence as an affirmative defense, a defendant must prove that the “plaintiff could have avoided injury by exercising reasonable care.” Cullen, 386 N.C. at 377. Whether a plaintiff exercised reasonable care, in turn, depends on whether he “conform[ed] to an objective standard of behavior —the care an ordinarily prudent person would exercise under the same or similar circumstances to avoid injury.” Id. (quoting Smith v. Fiber Controls Corp., 300 N.C. 669, 673 (1980)).",
+      "text_sha256": "0aa7eb6e839bdb878209c1ad6e452f68ee5716d5fc6914c47a7b359026abffa1",
+      "publisher_sha256": "508f6e2be78db2437949b9d122d2908c7fe905f48d1ffea438bf6165f1c22dac",
+      "retrieved_at": "2026-11-20T17:22:59.111835+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2025-05-23",
+      "court": "Supreme Court of North Carolina",
+      "decision_date": "2025-05-23",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a divided intermediate appellate decision reviewing dismissal of an insurance-agent negligence claim. The majority analyzed the pleading-stage defense of contributory negligence."
     }
+  },
+  "fault_allocation": {
+    "regime": "contributory",
+    "source_id": "US-NC:fault:db9fc7f53eee",
+    "passage_selector": "cfdc80d4b1b07848acdf271488d93d",
+    "currentness": "historical",
+    "qualification": "Historical majority discussion of the affirmative defense to ordinary negligence. The same opinion analyzes pleading-stage treatment and gross negligence separately."
   }
 }
