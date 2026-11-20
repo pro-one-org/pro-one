@@ -168,6 +168,28 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertIn(small_claim["citation"], small_citations)
         self.assertNotIn(response["citation"], small_citations)
 
+    def test_delaware_common_pleas_certification_binds_court_date_and_text(self):
+        record = manifest("US-DE")
+        row = next(item for item in record["passages"].values()
+                   if item["citation"] == "Del. Ct. Com. Pl. Civ. R. 12(a)")
+        url = record["sources"][row["source_id"]]["url"]
+        with self.assertRaisesRegex(ValueError, "certified_excerpt_or_date_mismatch"):
+            certified_basis("US-DE", url, row["publisher_sha256"], row["publisher_path"],
+                            row["citation"], row["text"].replace("20 days", "21 days", 1))
+
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Delaware", court="Delaware Court of Common Pleas",
+                               legal_area="civil_procedure", topics=["initial_response"],
+                               authority_types=["court_rule"], authority_status="current",
+                               authority_as_of="2023-01-10")
+        key, = provider.search(query)
+        source = provider.fetch(key).source
+        self.assertEqual(source["citation"]["preferred_citation"], row["citation"])
+        self.assertEqual(source["corpus_provenance"]["current_as_of"], "2023-01-10")
+        for change in ({"court": "Delaware Superior Court"}, {"authority_as_of": "2023-01-11"},
+                       {"state": "Maryland"}):
+            self.assertFalse(provider.search(query.model_copy(update=change)))
+
     def test_california_response_statutes_keep_triggers_and_form_revision_separate(self):
         provider = RetainedLegislativeResearch()
         matter = ResearchMatter(country="US", state="California", legal_area="civil_procedure",
@@ -411,6 +433,7 @@ class NationalCoverageTests(unittest.TestCase):
 
     def test_exact_publication_replay_rejects_invented_or_changed_text(self):
         publisher_editions = {
+            ("US-DE", date(2023, 1, 10)): "Court of Common Pleas Civil Rules. Current as of January 10, 2023.",
             ("US-WI", date(2026, 11, 4)): "Published and certified",
             ("US-MI", date(2026, 11, 18)): "Michigan Supreme Court Rules Chapter 2.",
             ("US-MI", date(2024, 9, 1)): "Michigan Supreme Court Rules Chapter 4.",

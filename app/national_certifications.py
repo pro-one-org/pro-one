@@ -4,6 +4,7 @@ from functools import lru_cache
 import gzip
 from hashlib import sha256
 from html.parser import HTMLParser
+from io import BytesIO
 from itertools import takewhile
 import json
 import re
@@ -12,23 +13,43 @@ from urllib.parse import urlsplit
 from app.jurisdictions import ROOT
 
 
-CERTIFIED_TYPES = {"US-WI": "statute", "US-MI": "court_rule", "US-IN": "court_rule"}
+CERTIFIED_TYPES = {"US-WI": "statute", "US-MI": "court_rule", "US-IN": "court_rule", "US-DE": "court_rule"}
 INDIANA_RULES_ROOT = "https://rules.incourts.gov/Content/"
 INDIANA_RULESETS = {"trial": "Indiana Rules of Trial Procedure", "small-claims": "Indiana Small Claims Rules"}
 MICHIGAN_RULES_BOOK = (
     "https://www.courts.michigan.gov/siteassets/rules-instructions-administrative-orders/"
     "michigan-court-rules/michigan-court-rules-responsive-html5.zip/Michigan_Court_Rules/"
 )
+DELAWARE_COMMON_PLEAS_PATH = "/forms/download.aspx?id=176248"
+DELAWARE_COMMON_PLEAS_DIGEST = "89f788cd80dae047959e9cc98e2a6fdf83c4ec7d51fc339198f9c2fd7f1fad7e"
+DELAWARE_COMMON_PLEAS_RULES = {
+    "3(a)": (0, "Rule 3. Commencement of action.", "(a) Complaint and praecipe.", "(b) Omitted."),
+    "4(a)": (1, "Rule 4. Process.", "(a) Issuance of writs.", "(b)"),
+    "6(a)": (8, "Rule 6. Time.", "(a) Computation.", "(b)"),
+    "8(a)": (9, "Rule 8. General rules of pleading.", "(a) Claims for relief.", "(b)"),
+    "8(b)": (9, "Rule 8. General rules of pleading.", "(b) Defense; form of denials.", "(c)"),
+    "12(a)": (12, "Rule 12. Defenses and objections", "(a) Time.", "(b)"),
+}
+DELAWARE_PDF_SPACING = {
+    " t herein": " therein", " especia lly": " especially", " w hich": " which",
+    " th e Court": " the Court", " relief ,": " relief,", " third -party": " third-party",
+    " deni ed": " denied", " th e averments": " the averments", " ord er": " order",
+    " tri al": " trial", " cross -claim": " cross-claim", " a ffidavit": " affidavit",
+}
 
 
 @lru_cache(maxsize=16)
 def retained_publication(digest):
+    return retained_publisher_bytes(digest, "html").decode("utf-8-sig")
+
+
+def retained_publisher_bytes(digest, extension):
     if not re.fullmatch(r"[0-9a-f]{64}", digest):
         raise ValueError("invalid_certified_publication")
-    raw = gzip.decompress((ROOT / "certified" / (digest + ".html.gz")).read_bytes())
+    raw = gzip.decompress((ROOT / "certified" / f"{digest}.{extension}.gz").read_bytes())
     if sha256(raw).hexdigest() != digest:
         raise ValueError("certified_publisher_hash_mismatch")
-    return raw.decode("utf-8-sig")
+    return raw
 
 
 class PublicationText(HTMLParser):
@@ -228,12 +249,61 @@ def indiana_basis(url, digest, path, citation, quote):
     return day, f"{heading}. Updated, Effective {dates[0]}."
 
 
+@lru_cache(maxsize=2)
+def delaware_common_pleas_pages(digest):
+    from pypdf import PdfReader
+
+    if digest != DELAWARE_COMMON_PLEAS_DIGEST:
+        raise ValueError("invalid_certified_publication")
+    raw = retained_publisher_bytes(digest, "pdf")
+    # The original has a complete PDF followed by an empty incremental xref
+    # whose terminator is malformed. Parse the complete revision only.
+    body, marker, tail = raw.rpartition(b"%%EOF")
+    if not marker or not tail.startswith(b"\r\nxref\r\n0 0\r\ntrailer\r\n"):
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    pages = PdfReader(BytesIO(body + marker), strict=True).pages
+    if len(pages) != 68:
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    text = {page: " ".join(pages[page].extract_text().split())
+            for page, *_ in DELAWARE_COMMON_PLEAS_RULES.values()}
+    if not text[0].startswith("Civil Rules Governing the Court of Common Pleas "):
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    return text
+
+
+def delaware_common_pleas_basis(url, digest, path, citation, quote):
+    spec = DELAWARE_COMMON_PLEAS_RULES.get(citation.removeprefix("Del. Ct. Com. Pl. Civ. R. "))
+    if (not citation.startswith("Del. Ct. Com. Pl. Civ. R. ") or not spec
+            or url != "https://courts.delaware.gov" + DELAWARE_COMMON_PLEAS_PATH):
+        raise ValueError("invalid_certified_publication")
+    title = "Court of Common Pleas Civil Rules"
+    edition = re.findall(
+        rf'<h3>\s*<a href="{re.escape(DELAWARE_COMMON_PLEAS_PATH)}">{title}[^<]*'
+        r'(?:<i[^>]*></i>)?</a>\*?\s*<span class="badge">Current as of (January 10, 2023)</span></h3>',
+        retained_publication(path),
+    )
+    page, rule, first, following = spec
+    text = delaware_common_pleas_pages(digest)[page]
+    if len(edition) != 1 or text.count(rule) != 1:
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    content = text.split(rule, 1)[1].partition(following)
+    section = content[0].partition(first)
+    expected = (section[1] + section[2]).strip()
+    for split_word, printed_word in DELAWARE_PDF_SPACING.items():
+        expected = expected.replace(split_word, printed_word)
+    if not section[1] or not content[1] or quote != expected:
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    return date(2023, 1, 10), f"{title}. Current as of {edition[0]}."
+
+
 @lru_cache(maxsize=96)
 def certified_basis(scope, url, digest, path, citation, quote):
     if scope == "US-MI":
         return michigan_basis(url, digest, path, citation, quote)
     if scope == "US-IN":
         return indiana_basis(url, digest, path, citation, quote)
+    if scope == "US-DE":
+        return delaware_common_pleas_basis(url, digest, path, citation, quote)
     endpoint = urlsplit(url)
     if (scope != "US-WI" or endpoint.scheme != "https" or endpoint.netloc != "docs.legis.wisconsin.gov"
             or not citation.startswith("Wis. Stat. § ") or not path.startswith(endpoint.path + "/")):
