@@ -305,6 +305,54 @@
         "retrieved_at": "2026-11-20T23:20:49.817299+00:00",
         "sha256": "d99120cf975bccf75d905e732e5e6949244e7da57fc87016f4a38b3a1230b1ac"
       }
+    },
+    "US-PA:debtLaw:871ec58af51a": {
+      "category": "debtLaw",
+      "title": "Matteo v. EOS USA, Inc., 2023 PA Super 51, slip op. at 16",
+      "url": "https://www.pacourts.us/assets/opinions/Superior/out/J-A06036-23o.pdf",
+      "locator": "Matteo v. EOS USA, Inc., 2023 PA Super 51, slip op. at 16",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:30:27.848552+00:00",
+        "sha256": "43dbdca9cc54715e9ab265e67e11239bc84c416273880f5de2c8478e1ab3e1cd"
+      }
+    },
+    "US-PA:small_claims:fc452edab657": {
+      "category": "small_claims",
+      "title": "Pa. R. Civ. P. M.D.J. 303",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/246/chapter300/246_0300.pdf",
+      "locator": "Pa. R. Civ. P. M.D.J. 303",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:31:13.418668+00:00",
+        "sha256": "d759fad237cb7f4e5688ffcc0a6158e28b587402add1c777e2804616f8002521"
+      }
+    },
+    "US-PA:small_claims:f83a137ea622": {
+      "category": "small_claims",
+      "title": "Pa. R. Civ. P. M.D.J. 305(a)",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/246/chapter300/246_0300.pdf",
+      "locator": "Pa. R. Civ. P. M.D.J. 305(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:31:13.418668+00:00",
+        "sha256": "d759fad237cb7f4e5688ffcc0a6158e28b587402add1c777e2804616f8002521"
+      }
+    },
+    "US-PA:small_claims:dd37ac6598f4": {
+      "category": "small_claims",
+      "title": "Pa. R. Civ. P. M.D.J. 307(1)",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/246/chapter300/246_0300.pdf",
+      "locator": "Pa. R. Civ. P. M.D.J. 307(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:31:13.418668+00:00",
+        "sha256": "d759fad237cb7f4e5688ffcc0a6158e28b587402add1c777e2804616f8002521"
+      }
     }
   },
   "court_directory": [
@@ -549,6 +597,55 @@
       "decision_date": "2018-09-14",
       "opinion_role": "majority",
       "procedural_posture": "Landlord appeal after a nonjury trial. The panel addressed the adequacy of the list of damages used to deduct from a residential security deposit."
+    },
+    "54cfdfe28effcd090681834747fde7": {
+      "source_id": "US-PA:debtLaw:871ec58af51a",
+      "authority_type": "opinion",
+      "citation": "Matteo v. EOS USA, Inc., 2023 PA Super 51, slip op. at 16",
+      "text": "a violation of the FDCPA constitutes an unfair or deceptive debt collection act or practice under FCEUA. See 73 P.S. § 2270.4(a). However, the FCEUA does not have its own private cause of action. Instead, pursuant to the enforcement and penalties provision of Section 2270.5 of the FCEUA, “If a debt collector or creditor engages in an unfair or deceptive debt collection act or practice under this act, it shall constitute a violation of the [UTPCPL].” 73 P.S. § 2270.5(a) (emphases added). In other words, if a debt collector violates the FDCPA, it is an unfair or deceptive debt collection act under the FCEUA, which is a violation of the UTPCPL.",
+      "text_sha256": "4478ac38ea5a2040f678b92c4bfa76af2ad2479292762a9a3ed19aee55b2c82a",
+      "publisher_sha256": "43dbdca9cc54715e9ab265e67e11239bc84c416273880f5de2c8478e1ab3e1cd",
+      "retrieved_at": "2026-11-20T23:30:27.848552+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2023-03-30",
+      "court": "Superior Court of Pennsylvania",
+      "decision_date": "2023-03-30",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal in a putative class case from an order sustaining preliminary objections. The panel addressed enforcement of the state debt collection statute through the UTPCPL."
+    },
+    "7f48d95deb73559802984871ae4180": {
+      "source_id": "US-PA:small_claims:f83a137ea622",
+      "authority_type": "court_rule",
+      "citation": "Pa. R. Civ. P. M.D.J. 305(a)",
+      "text": "The magisterial district judge, at the time the complaint is filed, shall: (a) Set a hearing date which shall be not less than 12 or more than 60 days from the date the complaint is filed.",
+      "text_sha256": "3c845c06603b4b0c2bd655b27e9b5c3551cded3517b2759423fef9b76a82d1f2",
+      "publisher_sha256": "d759fad237cb7f4e5688ffcc0a6158e28b587402add1c777e2804616f8002521",
+      "retrieved_at": "2026-11-20T23:31:13.418668+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "9a1035d1d2e202883cfd00349b2d21": {
+      "source_id": "US-PA:small_claims:dd37ac6598f4",
+      "authority_type": "court_rule",
+      "citation": "Pa. R. Civ. P. M.D.J. 307(1)",
+      "text": "Service shall be made at least ten days before the hearing, in the following manner: (1) A copy of the complaint for each defendant shall be delivered by the magisterial district judge for service to the sheriff of, or any certified constable in, the county in which the magisterial district of the magisterial district judge is situated. If this service is not available to the magisterial district judge, service may be made by any certified constable of the Commonwealth. If the complaint is delivered for service to the sheriff and service is to be made in a county other than the one in which the magisterial district of the magisterial district judge is situated, the sheriff shall deputize the sheriff of the county in which service is to be made. A certified constable may serve the complaint anywhere in the Commonwealth.",
+      "text_sha256": "1e9c05877f4c22c4d56e86b77c297fbb62151387c6b8211f48148c1d64c3a55a",
+      "publisher_sha256": "d759fad237cb7f4e5688ffcc0a6158e28b587402add1c777e2804616f8002521",
+      "retrieved_at": "2026-11-20T23:31:13.418668+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "4660de701430b16bb6729216a52235": {
+      "source_id": "US-PA:small_claims:fc452edab657",
+      "authority_type": "court_rule",
+      "citation": "Pa. R. Civ. P. M.D.J. 303",
+      "text": "An action shall be commenced by the filing of a complaint.",
+      "text_sha256": "34143d5bf21563278c51cc24c8553a81362bb90781810c74c826af24e7a65d5f",
+      "publisher_sha256": "d759fad237cb7f4e5688ffcc0a6158e28b587402add1c777e2804616f8002521",
+      "retrieved_at": "2026-11-20T23:31:13.418668+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

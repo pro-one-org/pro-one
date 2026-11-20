@@ -302,6 +302,18 @@
         "retrieved_at": "2026-11-20T23:09:56.202871+00:00",
         "sha256": "437c3ca5ff71914699856712432fcb38441902c185e191cd3ea62bd7aa091f89"
       }
+    },
+    "US-TN:small_claims:7a61c8028a18": {
+      "category": "small_claims",
+      "title": "2006 Tenn. Pub. Acts ch. 722, § 1 (Tenn. Code Ann. § 16-15-501(d))",
+      "url": "https://www.capitol.tn.gov/Bills/104/Chapter/PC0722.pdf",
+      "locator": "2006 Tenn. Pub. Acts ch. 722, § 1 (Tenn. Code Ann. § 16-15-501(d))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:30:27.854347+00:00",
+        "sha256": "532f27b4f633ebca8b29e662415963d1ad69c5657922f0c4974e0faffeb8e5cc"
+      }
     }
   },
   "court_directory": [
@@ -557,6 +569,19 @@
       "language": "en",
       "edition": "Tennessee Public Chapter 272 of 2011, adopted House Amendments HA0302 and HA0307",
       "effective_from": "2011-10-01"
+    },
+    "c6b4d3fb21e4f0881951e117205596": {
+      "source_id": "US-TN:small_claims:7a61c8028a18",
+      "authority_type": "statute",
+      "citation": "2006 Tenn. Pub. Acts ch. 722, § 1 (Tenn. Code Ann. § 16-15-501(d))",
+      "text": "(1) The jurisdiction of courts of general sessions, where they have been created, shall extend to the sum of twenty-five thousand dollars ($25,000) in all civil cases, both law and equity; provided, that this section shall not apply to cases of forcible entry and detainer, wherein the court shall have unlimited original jurisdiction; and provided further, that this section shall not apply to actions to recover personal property wherein the court shall have unlimited original jurisdiction including jurisdiction to award an alternative money judgment; and general sessions judges shall have jurisdiction to issue restraining orders and to enforce the penalty provisions for violation of such restraining orders. (2) For the purpose of calculating whether a judgment entered by a court of general sessions is within or exceeds the monetary jurisdictional limits established for such courts by this subsection, the following amounts shall not be included: (A) Any amount awarded for attorney fees; (B) Any court costs assessed by the court; and (C) Any discretionary costs assessed by the court.",
+      "text_sha256": "e598b85c33eaf9a0216724a2edb04a598b51e05546ee6db872bc5f114b9121eb",
+      "publisher_sha256": "532f27b4f633ebca8b29e662415963d1ad69c5657922f0c4974e0faffeb8e5cc",
+      "retrieved_at": "2026-11-20T23:30:27.854347+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Tennessee Public Acts 2006, ch. 722, effective September 1, 2006",
+      "effective_from": "2006-09-01"
     }
   },
   "fault_allocation": {
