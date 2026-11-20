@@ -274,6 +274,18 @@
         "retrieved_at": "2026-11-20T15:27:31.439601+00:00",
         "sha256": "82cc222844f60e7aa6ca77707ce645ec49119b773e198365c15279697569602f"
       }
+    },
+    "US-OH:small_claims:d94d8d5f0a29": {
+      "category": "small_claims",
+      "title": "Ohio Rev. Code § 1925.02(A)",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-1925.02",
+      "locator": "Ohio Rev. Code § 1925.02(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:29.527565+00:00",
+        "sha256": "3e2d83cf0d1785496fd3c23e6212c1340509965080c6476f3cafdfc90595328e"
+      }
     }
   },
   "court_directory": [
@@ -497,6 +509,19 @@
       "decision_date": "2013-12-10",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from summary judgment in a personal injury action arising from an excavation collapse."
+    },
+    "3c4d613d47256c7695a161738973d3": {
+      "source_id": "US-OH:small_claims:d94d8d5f0a29",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 1925.02(A)",
+      "text": "(A)(1) Except as provided in division (A)(2) of this section, a small claims division established under section 1925.01 of the Revised Code has jurisdiction in civil actions for the recovery of taxes and money only, for amounts not exceeding six thousand dollars, exclusive of interest and costs. (2)(a) A small claims division does not have jurisdiction in any of the following: (i) Libel, slander, replevin, malicious prosecution, and abuse of process actions; (ii) Actions on any claim brought by an assignee or agent, except a claim to recover taxes that is filed by any authorized employee of a political subdivision or any authorized officer or employee of the state or a claim filed by a person designated under section 1925.18 of the Revised Code to act as the representative of a prosecuting attorney; (iii) Actions for the recovery of punitive or exemplary damages. (b) Division (A)(2)(a) of this section does not exclude either of the following: (i) Actions for the recovery of damages specifically authorized by division (B) of either section 1345.09 or 1345.48 of the Revised Code from the jurisdiction of a small claims division; (ii) The filing or defense of an action by the holder of a security agreement or retail installment contract, purchased by the holder for the holder's portfolio of investments, provided that the holder is not an assignee for the purpose of collection. (3) The territorial jurisdiction and venue of a small claims division are concurrent with that of the respective court under its procedures in ordinary civil actions. Jurisdiction over the person of a defendant may not be obtained by any form of published or substituted service or warrant of attorney.",
+      "text_sha256": "1f17c051559bd144202299bb8ea27119930691f778fb21e1667063607d8bd86b",
+      "publisher_sha256": "3e2d83cf0d1785496fd3c23e6212c1340509965080c6476f3cafdfc90595328e",
+      "retrieved_at": "2026-11-20T16:16:29.527565+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Ohio courts with a statutory small-claims division",
+      "effective_from": "2025-04-09"
     }
   },
   "fault_allocation": {

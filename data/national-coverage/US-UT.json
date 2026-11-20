@@ -276,6 +276,18 @@
         "retrieved_at": "2026-11-20T15:34:30.406686+00:00",
         "sha256": "7d49d030e6f0445ed7b1a75637e6aed0b13bc975a8498baa16fd1a789f3f5370"
       }
+    },
+    "US-UT:small_claims:b376482e58d4": {
+      "category": "small_claims",
+      "title": "Utah Code § 78A-8-102(1)",
+      "url": "https://le.utah.gov/xcode/Title78A/Chapter8/C78A-8-S102_2022050420220504.pdf",
+      "locator": "Utah Code § 78A-8-102(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:28.470787+00:00",
+        "sha256": "0d565f5579dc5ea29f8cf3502a93edea1f03bbbf07606329affd50083ff3cd2c"
+      }
     }
   },
   "court_directory": [
@@ -459,6 +471,20 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "2023-05-03"
+    },
+    "f7c0364f0bc83a5ce32ce8774d323f": {
+      "source_id": "US-UT:small_claims:b376482e58d4",
+      "authority_type": "statute",
+      "citation": "Utah Code § 78A-8-102(1)",
+      "text": "(1) A small claims action is a civil action: (a) for the recovery of money when: (i) the amount claimed does not exceed: (A) on or after May 4, 2022, through December 31, 2024, $15,000 including attorney fees but exclusive of court costs and interest; (B) on or after January 1, 2025, through December 31, 2029, $20,000 including attorney fees but exclusive of court costs and interest; and (C) on or after January 1, 2030, $25,000 including attorney fees but exclusive of court costs and interest; and (ii) the defendant resides or the action of indebtedness was incurred within the jurisdiction of the court in which the action is to be maintained; or (b) involving interpleader under Rule 22 of the Utah Rules of Civil Procedure, in which the amount claimed does not exceed the amount described in Subsection (1)(a)(i).",
+      "text_sha256": "7626eff12cf4bf1eb9f3d30c8ae59b87851af54147d0fc0e2575990839c068d8",
+      "publisher_sha256": "0d565f5579dc5ea29f8cf3502a93edea1f03bbbf07606329affd50083ff3cd2c",
+      "retrieved_at": "2026-11-20T16:16:28.470787+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Utah Code version effective May 4, 2022",
+      "court": "Utah small-claims courts governed by Title 78A, Chapter 8",
+      "effective_from": "2022-05-04"
     }
   },
   "fault_allocation": {

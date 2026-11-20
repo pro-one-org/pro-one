@@ -245,6 +245,18 @@
         "retrieved_at": "2026-11-19T19:35:42.205333+00:00",
         "sha256": "99c10fd7a3b116a7f08b4905a09bfa5d416f03d4ad1e5b829a6aaa3de50184d0"
       }
+    },
+    "US-MO:small_claims:83235bcfff8b": {
+      "category": "small_claims",
+      "title": "Mo. Rev. Stat. § 482.305",
+      "url": "https://www.revisor.mo.gov/main/OneSection.aspx?bid=26829&section=482.305",
+      "locator": "Mo. Rev. Stat. § 482.305",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:29.780669+00:00",
+        "sha256": "c91990fef227edbbb7ecba25445268c992fd025b56a4a39d51bf0c2bae0a1703"
+      }
     }
   },
   "court_directory": [
@@ -379,6 +391,19 @@
       "retrieved_at": "2026-11-19T19:35:42.205333+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "28a74349ad5ce41922e963c92f4a5a": {
+      "source_id": "US-MO:small_claims:83235bcfff8b",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 482.305",
+      "text": "When sitting as a small claims court, the judge shall have original jurisdiction of all civil cases, whether tort or contract, where the amount in controversy does not exceed five thousand dollars, exclusive of interest or costs, or as provided in this chapter.",
+      "text_sha256": "e392b07b3b41560da05b0ffa703ca5baebd6c6b83f574ceb5bee8f7165e694bf",
+      "publisher_sha256": "c91990fef227edbbb7ecba25445268c992fd025b56a4a39d51bf0c2bae0a1703",
+      "retrieved_at": "2026-11-20T16:16:29.780669+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Missouri Small Claims Court",
+      "effective_from": "2011-08-28"
     }
   }
 }

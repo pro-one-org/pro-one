@@ -337,6 +337,18 @@
         "retrieved_at": "2026-11-20T16:01:53.748032+00:00",
         "sha256": "2818cd61cf570ce1682e339270b8da81383ba7f2e662139784fab4ff53e2c87b"
       }
+    },
+    "US-FL:small_claims:ff34550cfc72": {
+      "category": "small_claims",
+      "title": "Fla. Sm. Cl. R. 7.010(b) (scope sentence)",
+      "url": "https://flcourts-media.flcourts.gov/content/download/2470505/opinion/Opinion_SC2024-1765.pdf",
+      "locator": "Fla. Sm. Cl. R. 7.010(b) (scope sentence)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:28.940021+00:00",
+        "sha256": "ce5d6837482abf31278e1198760d6955b8648bd6407e1280c65b5269052e731c"
+      }
     }
   },
   "court_directory": [
@@ -544,6 +556,20 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Florida civil proceedings governed by Chapter 48"
+    },
+    "66832caad19bccb05b24c17c8e6af0": {
+      "source_id": "US-FL:small_claims:ff34550cfc72",
+      "authority_type": "court_rule",
+      "citation": "Fla. Sm. Cl. R. 7.010(b) (scope sentence)",
+      "text": "(b) Scope. These rules are applicable to all actions of a civil nature in the county courts which contain a demand for money or property, the value of which does not exceed $8,000 exclusive of costs, interest, and attorneys’ fees.",
+      "text_sha256": "25752b7d4b94466bbdc51aae994b6df3bdd67ced86d3d519f6e32dfd9e25f894",
+      "publisher_sha256": "ce5d6837482abf31278e1198760d6955b8648bd6407e1280c65b5269052e731c",
+      "retrieved_at": "2026-11-20T16:16:28.940021+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Florida Supreme Court rule order SC2024-1765, adopted October 23, 2025",
+      "court": "Florida County Court",
+      "effective_from": "2026-01-01"
     }
   },
   "fault_allocation": {

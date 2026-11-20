@@ -328,6 +328,18 @@
         "retrieved_at": "2026-11-20T15:21:12.167609+00:00",
         "sha256": "e55957b95b25f21142acfca62e8a6c9521b79b7362289f0b308fedf6aa0b602c"
       }
+    },
+    "US-OR:small_claims:da248185a60e": {
+      "category": "small_claims",
+      "title": "ORS § 46.405",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors046.html",
+      "locator": "ORS § 46.405",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:28.957878+00:00",
+        "sha256": "b870c9b691b060ea61a87882543e2a8be89e30ef8733089d22ed4d1408642bdd"
+      }
     }
   },
   "court_directory": [
@@ -544,6 +556,19 @@
       "language": "en",
       "edition": "Oregon Rules of Civil Procedure (2025)",
       "court": "Oregon Circuit Court"
+    },
+    "96346a704396d616439678fef10050": {
+      "source_id": "US-OR:small_claims:da248185a60e",
+      "authority_type": "statute",
+      "citation": "ORS § 46.405",
+      "text": "46.405 Small claims department; jurisdiction. (1) Except as provided in subsection (6) of this section, each circuit court shall have a small claims department. (2) Except as provided in this section, all actions for the recovery of money, damages, specific personal property, or any penalty or forfeiture must be commenced and prosecuted in the small claims department if the amount or value claimed in the action does not exceed $750. (3) Except as provided in this section, an action for the recovery of money, damages, specific personal property, or any penalty or forfeiture may be commenced and prosecuted in the small claims department if the amount or value claimed in the action does not exceed $10,000. (4)(a) Class actions may not be commenced and prosecuted in the small claims department. (b) An action by an adult in custody, as defined in ORS 30.642, against another adult in custody may not be commenced and prosecuted in the small claims department. (5) Actions providing for statutory attorney fees in which the amount or value claimed does not exceed $750 may be commenced and prosecuted in the small claims department or may be commenced and prosecuted in the regular department of the circuit court. This subsection does not apply to an action based on contract for which attorney fees are authorized under ORS 20.082. (6) If a circuit court is located in the same city as a justice court, the circuit court need not have a small claims department if the circuit court and the justice court enter into an intergovernmental agreement that provides that only the justice court will operate a small claims department. If an intergovernmental agreement is entered into under this subsection, the agreement must establish appropriate procedures for referring small claims cases to the justice court.",
+      "text_sha256": "34851c1671c58109cf9e3b06900f7cf20db88dfbcd41c5ebad69d7d72aaa5efb",
+      "publisher_sha256": "b870c9b691b060ea61a87882543e2a8be89e30ef8733089d22ed4d1408642bdd",
+      "retrieved_at": "2026-11-20T16:16:28.957878+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 Oregon Revised Statutes",
+      "court": "Oregon Circuit Court Small Claims Department"
     }
   },
   "fault_allocation": {

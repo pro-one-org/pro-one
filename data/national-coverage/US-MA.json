@@ -351,6 +351,18 @@
         "retrieved_at": "2026-11-20T15:21:04.563685+00:00",
         "sha256": "72ab1b0cc8114df583b30bd3f102a62835834ea8479e069b57a619491a74fa1e"
       }
+    },
+    "US-MA:small_claims:65d7c2445a59": {
+      "category": "small_claims",
+      "title": "Mass. Gen. Laws ch. 218, § 21, first paragraph excerpt",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleI/Chapter218/Section21",
+      "locator": "Mass. Gen. Laws ch. 218, § 21, first paragraph excerpt",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:29.925156+00:00",
+        "sha256": "a3ec820ead338d41a1c1998912366376306d9f5d7168c43c5ea13a1a7c72de55"
+      }
     }
   },
   "court_directory": [
@@ -594,6 +606,18 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Massachusetts trial courts governed by the civil rules"
+    },
+    "b3aea82eaec05245feda8fd7d56469": {
+      "source_id": "US-MA:small_claims:65d7c2445a59",
+      "authority_type": "statute",
+      "citation": "Mass. Gen. Laws ch. 218, § 21, first paragraph excerpt",
+      "text": "There shall be within the district court department and the Boston municipal court department a simple, informal and inexpensive procedure, hereinafter called the procedure, for the determination, according to the rules of substantive law, of claims in the nature of contract or tort, other than slander and libel, in which the plaintiff does not claim as debt or damages more than $7,000; provided, however, that a city or town may bring an action under section 35 of chapter 60 for the collection of unpaid taxes on personal property in any amount or any other action which shall not exceed $15,000; and provided further, that said dollar limitation shall not apply to an action for property damage caused by a motor vehicle, and for a review of judgments upon such claims when justice so requires. The procedure shall not be exclusive, but shall be alternative to the formal procedure for civil actions begun by summons and complaint.",
+      "text_sha256": "b7cc1e247a71e49b7383bb292a348030b7d3a4edf07cb765408fd48183f9caea",
+      "publisher_sha256": "a3ec820ead338d41a1c1998912366376306d9f5d7168c43c5ea13a1a7c72de55",
+      "retrieved_at": "2026-11-20T16:16:29.925156+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Massachusetts District Court and Boston Municipal Court departments"
     }
   },
   "fault_allocation": {

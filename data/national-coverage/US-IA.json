@@ -442,6 +442,18 @@
         "retrieved_at": "2026-11-20T16:01:54.208218+00:00",
         "sha256": "ae6ecf5e9a558a4f80cd0e63a5bc3229fb7681ecd5946a4ca8fbe1773f7c56b6"
       }
+    },
+    "US-IA:small_claims:b0e1577bead1": {
+      "category": "small_claims",
+      "title": "Iowa Code § 631.1(1)",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/631.1.pdf",
+      "locator": "Iowa Code § 631.1(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:29.386673+00:00",
+        "sha256": "54937e2e8e80553cd2956fa0efc0465108f0a0214d46310d58f5db4df3a56a70"
+      }
     }
   },
   "court_directory": [
@@ -695,6 +707,19 @@
       "language": "en",
       "edition": "Iowa Judicial Branch Chapter 1 court rules archive retrieved from July 31, 2026 release",
       "court": "Iowa District Court"
+    },
+    "1b40ca35d667733e50846154bddedd": {
+      "source_id": "US-IA:small_claims:b0e1577bead1",
+      "authority_type": "statute",
+      "citation": "Iowa Code § 631.1(1)",
+      "text": "1. The following actions or claims are small claims and shall be commenced, heard and determined as provided in this chapter: a. A civil action for a money judgment where the amount in controversy is five thousand dollars or less for actions commenced before July 1, 2018, exclusive of interest and costs. b. A civil action for a money judgment where the amount in controversy is six thousand five hundred dollars or less for actions commenced on or after July 1, 2018, exclusive of interest and costs.",
+      "text_sha256": "586d1ee524e512a73b5cc050f0b3412e628516752fd70473379e85cdb386b4b4",
+      "publisher_sha256": "54937e2e8e80553cd2956fa0efc0465108f0a0214d46310d58f5db4df3a56a70",
+      "retrieved_at": "2026-11-20T16:16:29.386673+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2026 Iowa Code",
+      "court": "Iowa District Court sitting in small claims"
     }
   },
   "fault_allocation": {

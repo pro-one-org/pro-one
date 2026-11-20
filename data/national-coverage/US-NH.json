@@ -247,6 +247,18 @@
         "retrieved_at": "2026-11-19T19:31:22.022518+00:00",
         "sha256": "1f5b13bbdcd9c43705cb5870eae1bb79687892be50da71b1a95b85e2795d868b"
       }
+    },
+    "US-NH:small_claims:bd2b3659534a": {
+      "category": "small_claims",
+      "title": "N.H. Rev. Stat. § 503:1",
+      "url": "https://gc.nh.gov/rsa/html/LI/503/503-1.htm",
+      "locator": "N.H. Rev. Stat. § 503:1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:29.981694+00:00",
+        "sha256": "735815069f9196a3f49e07051e7497bd06836c1ebb1b904f3c0f6483dbd58bd4"
+      }
     }
   },
   "court_directory": [
@@ -421,6 +433,18 @@
       "retrieved_at": "2026-11-19T19:31:22.022518+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "83162816c73c35c78a64cf7bcf1ffa": {
+      "source_id": "US-NH:small_claims:bd2b3659534a",
+      "authority_type": "statute",
+      "citation": "N.H. Rev. Stat. § 503:1",
+      "text": "I. A small claim is any right of action not involving the title to real estate in which the debt or damages, exclusive of interest and costs, does not exceed $10,000. II. Any person may file a small claims action as provided in this chapter, unless trial by jury is claimed by the plaintiff when the debt or damages exceed $1,500 or when the defendant claims trial by jury as provided in paragraph III. III. When the debt or damages claimed exceed $1,500, a defendant may claim trial by jury by filing a written request within 5 business days of the filing of the application and statement of the claim under RSA 503:3 or within such additional time as the municipal or district court may for good cause allow. If such a request is filed, the case shall be transferred at once to the superior court in the county in which the town or district is located and heard and tried as if originally entered in the superior court. The original entry fee shall be paid by the plaintiff, but is recoverable as a cost if the plaintiff prevails. The small claims transfer fee shall be paid by the defendant, but is recoverable as a cost if the defendant prevails. IV. When the amount of debt or damages exceeds $5,000 and no claim is made for trial by jury under paragraph III, the parties to the action shall be required to participate in a mediation program in the district courts approved by the office of mediation and arbitration established under RSA 490-E. If mediation of such action does not result in resolution of the action, the case shall be presented to the judge under oath.",
+      "text_sha256": "6caedc13f1a7b95236f7060f38b979ac9a7b942553326685e3da0488446438c2",
+      "publisher_sha256": "735815069f9196a3f49e07051e7497bd06836c1ebb1b904f3c0f6483dbd58bd4",
+      "retrieved_at": "2026-11-20T16:16:29.981694+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "New Hampshire courts governed by RSA Chapter 503"
     }
   },
   "fault_allocation": {

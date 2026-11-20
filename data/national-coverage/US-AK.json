@@ -360,6 +360,18 @@
         "retrieved_at": "2026-11-20T15:34:30.890765+00:00",
         "sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f"
       }
+    },
+    "US-AK:small_claims:115c05be1ba1": {
+      "category": "small_claims",
+      "title": "Alaska Stat. § 22.15.040(a)–(b)",
+      "url": "https://www.akleg.gov/statutesPDF/Title-22.pdf",
+      "locator": "Alaska Stat. § 22.15.040(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:29.910572+00:00",
+        "sha256": "4952e89f4c67e338ab24ef1e012a0ad6a65701f09c97b770a08120e1c26d4d25"
+      }
     }
   },
   "court_directory": [
@@ -497,6 +509,18 @@
       "retrieved_at": "2026-11-20T15:34:30.890765+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "4d9ff3eb4363b6228ea5b13c92dd2c": {
+      "source_id": "US-AK:small_claims:115c05be1ba1",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 22.15.040(a)–(b)",
+      "text": "(a) Except as otherwise provided in this subsection, when a claim for relief does not exceed $10,000, exclusive of costs, interest, and attorney fees, and request is so made, the district judge or magistrate shall hear the action as a small claim unless important or unusual points of law are involved or the state is a defendant. The Department of Labor and Workforce Development may bring an action as a small claim under this subsection for the payment of wages under AS 23.05.220 in an amount not to exceed $20,000, exclusive of costs, interest, and attorney fees. The supreme court shall prescribe the procedural rules and standard forms to assure simplicity and the expeditious handling of small claims. (b) All potential small claim litigants shall be informed if mediation, conciliation, and arbitration services are available as an alternative to litigation.",
+      "text_sha256": "5507e18536302cdc356c031f15b58d3dc10b3555cbb0a814063c8ff848f36e36",
+      "publisher_sha256": "4952e89f4c67e338ab24ef1e012a0ad6a65701f09c97b770a08120e1c26d4d25",
+      "retrieved_at": "2026-11-20T16:16:29.910572+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska District Court"
     }
   },
   "fault_allocation": {

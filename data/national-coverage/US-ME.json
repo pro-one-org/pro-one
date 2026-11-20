@@ -263,6 +263,18 @@
         "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
         "sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0"
       }
+    },
+    "US-ME:small_claims:fae6ae1f0cdb": {
+      "category": "small_claims",
+      "title": "14 M.R.S. § 7482, first paragraph",
+      "url": "https://legislature.maine.gov/statutes/14/title14sec7482.html",
+      "locator": "14 M.R.S. § 7482, first paragraph",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:29.885821+00:00",
+        "sha256": "ca5bcc13fb4732cbb086d16a77dd5b452f947aecd3f529a4fe62219becd6cc19"
+      }
     }
   },
   "court_directory": [
@@ -435,6 +447,18 @@
       "language": "en",
       "edition": "Maine Rules of Civil Procedure edition including amendments effective June 1, 2026",
       "court": "Maine courts governed by the Civil Rules"
+    },
+    "3a046e255dedb7855c62e110a31ec8": {
+      "source_id": "US-ME:small_claims:fae6ae1f0cdb",
+      "authority_type": "statute",
+      "citation": "14 M.R.S. § 7482, first paragraph",
+      "text": "Notwithstanding the total amount of a debt or contract, a \"small claim\" means a right of action cognizable by a court if the debt or damage does not exceed $10,000 exclusive of interest and costs. It does not include an action involving the title to real estate.",
+      "text_sha256": "9939bd8ed7fb886f2c2e75ce3d2dfd4ba9f7dac9cffa3294fedda20012fc3093",
+      "publisher_sha256": "ca5bcc13fb4732cbb086d16a77dd5b452f947aecd3f529a4fe62219becd6cc19",
+      "retrieved_at": "2026-11-20T16:16:29.885821+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Maine District Court sitting in small claims"
     }
   },
   "fault_allocation": {

@@ -347,6 +347,18 @@
         "retrieved_at": "2026-11-20T16:01:55.611634+00:00",
         "sha256": "8d790600ff3e504fbba4d6ccad4e824497b0919a50c44725b629381b95dbf19f"
       }
+    },
+    "US-ID:small_claims:b2d9119a8d21": {
+      "category": "small_claims",
+      "title": "Idaho Code § 1-2301",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/title1/t1ch23/sect1-2301/",
+      "locator": "Idaho Code § 1-2301",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:31.851875+00:00",
+        "sha256": "4a1b0907345e638a23295771796149d294bbcf039009657f2b30cf12daa46fbe"
+      }
     }
   },
   "court_directory": [
@@ -554,6 +566,18 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Idaho District Court"
+    },
+    "52429b10975ee1bb1d4761f9f1e12c": {
+      "source_id": "US-ID:small_claims:b2d9119a8d21",
+      "authority_type": "statute",
+      "citation": "Idaho Code § 1-2301",
+      "text": "In every magistrate’s division of the district court of this state, the district court may create and organize a \"Small Claims Department of the Magistrate’s Division,\" which shall have jurisdiction in cases for the recovery of money where the amount of each claim does not exceed fifteen thousand dollars ($15,000), and in cases for the recovery of personal property where the value of the property does not exceed fifteen thousand dollars ($15,000); provided however, that the small claims department shall not award punitive damages or damages for pain or suffering in any proceeding. Any action brought in a small claims department of the magistrate’s division shall be brought in the magistrate’s division in the county where the defendant resides or the county where the cause of action arose. A defendant may request a change of venue if an action is brought in an improper county.",
+      "text_sha256": "e105e5b13fd7411c308aeeee837bc03545ad9579a833ba5e2d52b608bddd7a1c",
+      "publisher_sha256": "4a1b0907345e638a23295771796149d294bbcf039009657f2b30cf12daa46fbe",
+      "retrieved_at": "2026-11-20T16:16:31.851875+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Idaho District Court Magistrate Division Small Claims Department"
     }
   },
   "fault_allocation": {

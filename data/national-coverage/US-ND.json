@@ -312,6 +312,18 @@
         "retrieved_at": "2026-11-20T15:21:03.597898+00:00",
         "sha256": "374fdd92b4d2794ffc09bdd961d32f3c143183d8d6db3b8ba2b82c744ee999f0"
       }
+    },
+    "US-ND:small_claims:41d654db062f": {
+      "category": "small_claims",
+      "title": "N.D. Cent. Code § 27-08.1-01(1)",
+      "url": "https://ndlegis.gov/prod/cencode/t27c08-1.pdf",
+      "locator": "N.D. Cent. Code § 27-08.1-01(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:29.521693+00:00",
+        "sha256": "e325e53f03eafa6259eaa96482bdd3653e74610257958e7095237c9a0b9c78eb"
+      }
     }
   },
   "court_directory": [
@@ -491,6 +503,18 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "North Dakota District Court"
+    },
+    "5c34ce66aec44019cf32f115b2bd0b": {
+      "source_id": "US-ND:small_claims:41d654db062f",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 27-08.1-01(1)",
+      "text": "1. All judges of the district courts may exercise the jurisdiction conferred by this chapter, and while sitting in the exercise of that jurisdiction must be known and referred to as the \"small claims court\". The jurisdiction of this court is confined to cases for recovery of money, a tenant's claim for civil damages under subsection 9 of section 47-10-28, or the cancellation of any agreement involving material fraud, deception, misrepresentation, or false promise, when the value of the agreement or the amount claimed by the plaintiff or the defendant does not exceed fifteen thousand dollars.",
+      "text_sha256": "bf821b8a4647d16b39496e1b4fb82932f8e74f0c9c0d53ba5fbde0bbcc3b8dc8",
+      "publisher_sha256": "e325e53f03eafa6259eaa96482bdd3653e74610257958e7095237c9a0b9c78eb",
+      "retrieved_at": "2026-11-20T16:16:29.521693+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "North Dakota District Court sitting as Small Claims Court"
     }
   },
   "fault_allocation": {

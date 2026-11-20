@@ -312,6 +312,18 @@
         "retrieved_at": "2026-11-19T19:39:38.801880+00:00",
         "sha256": "046fa8094e5c0c4c38a6fa35d32322bdbc0eb482a185632beb65b48df98a0b5c"
       }
+    },
+    "US-AZ:small_claims:82ba6f35e776": {
+      "category": "small_claims",
+      "title": "A.R.S. § 22-503(A)–(B)",
+      "url": "https://www.azleg.gov/ars/22/00503.htm",
+      "locator": "A.R.S. § 22-503(A)–(B)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:28.606808+00:00",
+        "sha256": "b3a72ba5e931064f4bb07a9bb172f2e5b2fcf4745ab24e59345614cab596b416"
+      }
     }
   },
   "court_directory": [
@@ -555,6 +567,18 @@
       "decision_date": "2016-06-13",
       "opinion_role": "majority",
       "procedural_posture": "Review of title insurance contract damages. Reversed and remanded."
+    },
+    "6bd3846c37707ed7f8ace8a191b56a": {
+      "source_id": "US-AZ:small_claims:82ba6f35e776",
+      "authority_type": "statute",
+      "citation": "A.R.S. § 22-503(A)–(B)",
+      "text": "A. The small claims division has concurrent original jurisdiction with the justice court in all civil actions in which the debt, damage, tort, injury or value of the personal property claims either by the plaintiff or defendant does not exceed $5,000, exclusive of interest and costs, and in actions in which a party seeks to disaffirm, avoid or rescind a contract, or seeks equitable relief, and the amount at issue does not exceed $5,000. B. The small claims division does not have jurisdiction over the following: 1. Those matters excluded from justice court jurisdiction as provided in section 22-201. 2. Actions involving claims of defamation by libel or slander. 3. Actions in forcible entry, forcible detainer or unlawful detainer. 4. Actions for specific performance. 5. Actions brought or defended on behalf of a class. 6. Actions requesting or involving prejudgment remedies. 7. Actions involving injunctive relief. 8. Traffic violations and other criminal matters. 9. Actions against this state, its political subdivisions or an officer or employee of the state or its political subdivisions in his official capacity.",
+      "text_sha256": "e102bead06a0843fb5e83badcd6290bee5b80cb39ecbfcefd364f05751d75436",
+      "publisher_sha256": "b3a72ba5e931064f4bb07a9bb172f2e5b2fcf4745ab24e59345614cab596b416",
+      "retrieved_at": "2026-11-20T16:16:28.606808+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Arizona Justice Court Small Claims Division"
     }
   },
   "fault_allocation": {
