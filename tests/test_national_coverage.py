@@ -93,6 +93,10 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertEqual(evidence["citation"], "Wis. Stat. § 801.02(1)")
         self.assertEqual(evidence["current_as_of"], "2026-11-04")
         self.assertIn(evidence["source_id"], complaint["procedure_dependencies"]["commencement"])
+        fee, = complaint["procedure_evidence"]["fees"]
+        self.assertEqual(fee["citation"], "Wis. Stat. § 814.61(1)(a)")
+        self.assertEqual(fee["current_as_of"], "2026-11-04")
+        self.assertEqual(len(complaint["procedure_evidence"]["e_filing"]), 6)
         self.assertEqual(complaint["readiness"], "blocked")
         self.assertEqual(complaint["execution"], "disabled")
         washington = coverage("US-WA")["action_shells"]

@@ -36,6 +36,8 @@ SUBJECTS = {
     "small_claims": ("civil_procedure", "small_claims"),
     "service": ("civil_procedure", "service_of_process"),
     "response": ("civil_procedure", "initial_response"),
+    "fees": ("civil_procedure", "filing_fees"),
+    "e_filing": ("civil_procedure", "electronic_filing"),
     "contract_formation": ("contracts", "contract_formation"),
     "automated_contract_formation": ("contracts", "automated_contract_formation"),
     "contract_breach": ("contracts", "contract_breach"),

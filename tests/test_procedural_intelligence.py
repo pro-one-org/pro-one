@@ -177,6 +177,24 @@ class ProceduralIntelligenceTests(unittest.TestCase):
         self.assertEqual("unresolved", reference["currentness"])
         self.assertFalse(result["external_action_allowed"])
 
+    def test_wisconsin_filing_topics_return_dated_references_only(self):
+        service = self.service()
+        for message, count, citation in (
+                ("What are the filing fees in Wisconsin Circuit Court?", 1, "Wis. Stat. § 814.61(1)(a)"),
+                ("What are the e-filing rules in Wisconsin Circuit Court?", 6, "Wis. Stat. § 801.18(3)(b)")):
+            with self.subTest(message=message):
+                result = service.respond(ProceduralRequest(message=message))
+                self.assertEqual("outside_bounded_coverage", result["status"])
+                self.assertFalse(result["external_action_allowed"])
+                self.assertNotIn("choice_token", result)
+                references = result["reference_authorities"]
+                self.assertEqual(count, len(references))
+                self.assertIn(citation, {row["citation"] for row in references})
+                for row in references:
+                    self.assertEqual("Wisconsin Circuit Court", row["court"])
+                    self.assertEqual("current_as_of", row["currentness"])
+                    self.assertEqual("2026-11-04", row["current_as_of"])
+
     def test_prerequisite_cannot_be_skipped_by_requested_stage(self):
         result = self.choose(FALL, "va_litigation", stage="service", forum="va_circuit", facts=FORUM_FACTS)
         self.assertEqual("prerequisite_missing", result["status"])

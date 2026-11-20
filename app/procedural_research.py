@@ -156,6 +156,10 @@ def infer_subject(message):
         return "small_claims"
     if re.search(r"\b(?:commence|start|begin)\b.{0,35}\b(?:civil action|civil case|lawsuit)\b", message, re.I):
         return "commencement"
+    if re.search(r"\b(?:filing fees?|court fees?)\b", message, re.I):
+        return "fees"
+    if re.search(r"\b(?:e[- ]?filing|electronic filing|electronically fil(?:e|ing))\b", message, re.I):
+        return "e_filing"
     if re.search(r"\b(?:slip\w*|fell|fall|trip\w*)\b", message, re.I) and re.search(
             r"\b(?:pay|payment|compensat\w*|reimburse\w*|damages|money)\b", message, re.I):
         return "compensation"
