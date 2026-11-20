@@ -358,6 +358,18 @@
         "retrieved_at": "2026-11-20T15:12:10.872912+00:00",
         "sha256": "92214099e3459e3d5e8a644a0a3ba0104b58094ed113d3b15b9575f43dce5d4c"
       }
+    },
+    "US-SC:service:563f48f7e185": {
+      "category": "service",
+      "title": "S.C. R. Civ. P. 4(d)(1)",
+      "url": "https://www.sccourts.org/resources/judicial-community/court-rules/civil/rule-4/",
+      "locator": "S.C. R. Civ. P. 4(d)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:02.672289+00:00",
+        "sha256": "983116fcd457aa6c78bc790bea063885b55d801d87e06df8d3a5077151345eac"
+      }
     }
   },
   "court_directory": [
@@ -590,6 +602,18 @@
       "decision_date": "2011-04-04",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from a circuit court judgment in a negligence case concerning jury instructions."
+    },
+    "47a5cc6536893b2936b919be04e874": {
+      "source_id": "US-SC:service:563f48f7e185",
+      "authority_type": "court_rule",
+      "citation": "S.C. R. Civ. P. 4(d)(1)",
+      "text": "(d)(1) Individuals. Upon an individual other than a minor under the age of 14 years or an incompetent person, by delivering a copy of the summons and complaint to him personally or by leaving copies thereof at his dwelling house or usual place of abode with some person of suitable age and discretion then residing therein, or by delivering a copy to an agent authorized by appointment or by law to receive service of process.",
+      "text_sha256": "9d0f411d3b098e9a9ad084d5e4c76cfd08c565522ff34e8338a6995530dccfb8",
+      "publisher_sha256": "983116fcd457aa6c78bc790bea063885b55d801d87e06df8d3a5077151345eac",
+      "retrieved_at": "2026-11-20T15:21:02.672289+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "South Carolina Circuit Court"
     }
   },
   "fault_allocation": {

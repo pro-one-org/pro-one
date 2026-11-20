@@ -276,6 +276,18 @@
         "retrieved_at": "2026-11-19T19:43:00.938707+00:00",
         "sha256": "1d2022e29e94aa4a93eee4c5c575c39c71c27b30d39e2dde55b14902d5a5e8e9"
       }
+    },
+    "US-KS:service:468484206cce": {
+      "category": "service",
+      "title": "K.S.A. § 60-304(a)",
+      "url": "https://www.kslegislature.gov/li_2024s/b2023_24/statute/060_000_0000_chapter/060_003_0000_article/060_003_0004_section/060_003_0004_k/",
+      "locator": "K.S.A. § 60-304(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:03.506816+00:00",
+        "sha256": "5263aa47c5576c5b0456a8c8bbdd41ff5662bd92128dab7a63a7c82535dae540"
+      }
     }
   },
   "court_directory": [
@@ -426,6 +438,19 @@
       "retrieved_at": "2026-11-19T19:43:00.938707+00:00",
       "currentness": "unresolved",
       "language": "en",
+      "court": "Kansas District Court"
+    },
+    "fdf32efbf2d494e1fd4580b1b96eca": {
+      "source_id": "US-KS:service:468484206cce",
+      "authority_type": "statute",
+      "citation": "K.S.A. § 60-304(a)",
+      "text": "(a) Individual. On an individual other than a minor or a disabled person, by serving the individual or by serving an agent authorized by appointment or by law to receive service of process. If the agent is one designated by statute to receive service, such further notice as the statute requires must be given. Service by return receipt delivery must be addressed to an individual at the individual's dwelling or usual place of abode and to an authorized agent at the agent's usual or designated address. If the sheriff, party or party's attorney files a return of service stating that the return receipt delivery to the individual at the individual's dwelling or usual place of abode was refused or unclaimed and that a business address is known for the individual, the sheriff, party or party's attorney may complete service by return receipt delivery, addressed to the individual at the individual's business address.",
+      "text_sha256": "dafc2c91be75d3eb03baa518f448b1ada2d280b180ab78633e43dab5b52e9bd5",
+      "publisher_sha256": "5263aa47c5576c5b0456a8c8bbdd41ff5662bd92128dab7a63a7c82535dae540",
+      "retrieved_at": "2026-11-20T15:21:03.506816+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Kansas Legislature 2024 Special Session statutory publication",
       "court": "Kansas District Court"
     }
   },

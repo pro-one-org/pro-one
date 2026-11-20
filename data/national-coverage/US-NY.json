@@ -281,6 +281,18 @@
         "retrieved_at": "2026-11-19T19:42:59.508864+00:00",
         "sha256": "9dccb65ef5691a52436883305cd5bfac24dea988675c488dad9c1d945ebcd9a3"
       }
+    },
+    "US-NY:service:2db664050016": {
+      "category": "service",
+      "title": "N.Y. CPLR 308",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/308",
+      "locator": "N.Y. CPLR 308",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:02.583732+00:00",
+        "sha256": "26966a415ad0e72a488eaa0266ab8ce2fe7b65138827fa9e7c1e2d75d5aecdda"
+      }
     }
   },
   "court_directory": [
@@ -513,6 +525,19 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "New York courts governed by the CPLR"
+    },
+    "4c015c6159486a790f9a5d7efd0476": {
+      "source_id": "US-NY:service:2db664050016",
+      "authority_type": "statute",
+      "citation": "N.Y. CPLR 308",
+      "text": "Personal service upon a natural person shall be made by any of the following methods: 1. by delivering the summons within the state to the person to be served; or 2. by delivering the summons within the state to a person of suitable age and discretion at the actual place of business, dwelling place or usual place of abode of the person to be served and by either mailing the summons to the person to be served at his or her last known residence or by mailing the summons by first class mail to the person to be served at his or her actual place of business in an envelope bearing the legend \"personal and confidential\" and not indicating on the outside thereof, by return address or otherwise, that the communication is from an attorney or concerns an action against the person to be served, such delivery and mailing to be effected within twenty days of each other; proof of such service shall be filed with the clerk of the court designated in the summons within twenty days of either such delivery or mailing, whichever is effected later; service shall be complete ten days after such filing; proof of service shall identify such person of suitable age and discretion and state the date, time and place of service, except in matrimonial actions where service hereunder may be made pursuant to an order made in accordance with the provisions of subdivision a of section two hundred thirty-two of the domestic relations law; or 3. by delivering the summons within the state to the agent for service of the person to be served as designated under rule 318, except in matrimonial actions where service hereunder may be made pursuant to an order made in accordance with the provisions of subdivision a of section two hundred thirty-two of the domestic relations law; 4. where service under paragraphs one and two cannot be made with due diligence, by affixing the summons to the door of either the actual place of business, dwelling place or usual place of abode within the state of the person to be served and by either mailing the summons to such person at his or her last known residence or by mailing the summons by first class mail to the person to be served at his or her actual place of business in an envelope bearing the legend \"personal and confidential\" and not indicating on the outside thereof, by return address or otherwise, that the communication is from an attorney or concerns an action against the person to be served, such affixing and mailing to be effected within twenty days of each other; proof of such service shall be filed with the clerk of the court designated in the summons within twenty days of either such affixing or mailing, whichever is effected later; service shall be complete ten days after such filing, except in matrimonial actions where service hereunder may be made pursuant to an order made in accordance with the provisions of subdivision a of section two hundred thirty-two of the domestic relations law; 5. in such manner as the court, upon motion without notice, directs, if service is impracticable under paragraphs one, two and four of this section. 6. For purposes of this section, \"actual place of business\" shall include any location that the defendant, through regular solicitation or advertisement, has held out as its place of business.",
+      "text_sha256": "c4013e4cb7d61a5408365710f24cb1514d9ccfcac06e6e42d496d20fbfb5fb40",
+      "publisher_sha256": "26966a415ad0e72a488eaa0266ab8ce2fe7b65138827fa9e7c1e2d75d5aecdda",
+      "retrieved_at": "2026-11-20T15:21:02.583732+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "New York courts governed by the CPLR",
+      "edition": "NY Senate Open Legislation revision labeled September 22, 2014"
     }
   },
   "fault_allocation": {

@@ -300,6 +300,18 @@
         "retrieved_at": "2026-11-19T19:43:00.407066+00:00",
         "sha256": "e116736fb940981ce48ac5c3a33a7f68a6c68a7aebddf2034944c38cbfbf3c59"
       }
+    },
+    "US-ND:service:f6de086b4b8f": {
+      "category": "service",
+      "title": "N.D.R.Civ.P. 4(d)(2)(A)",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcivp/4",
+      "locator": "N.D.R.Civ.P. 4(d)(2)(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:03.597898+00:00",
+        "sha256": "374fdd92b4d2794ffc09bdd961d32f3c143183d8d6db3b8ba2b82c744ee999f0"
+      }
     }
   },
   "court_directory": [
@@ -464,6 +476,18 @@
       "text_sha256": "78795c5e9ba4ab73a8fb94c7a806409b0b5c49ecad2ce6a343a04407c102310b",
       "publisher_sha256": "e116736fb940981ce48ac5c3a33a7f68a6c68a7aebddf2034944c38cbfbf3c59",
       "retrieved_at": "2026-11-19T19:43:00.407066+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "North Dakota District Court"
+    },
+    "9a9b2b7c8b94dfdef4ebf407fed0f5": {
+      "source_id": "US-ND:service:f6de086b4b8f",
+      "authority_type": "court_rule",
+      "citation": "N.D.R.Civ.P. 4(d)(2)(A)",
+      "text": "(A) Serving an Individual Fourteen Years of Age and Older. Service must be made on an individual 14 or more years of age by: (i) delivering a copy of the summons to the individual personally; (ii) leaving a copy of the summons at the individual's dwelling or usual place of residence in the presence of a person of suitable age and discretion who resides there; (iii) delivering, at the office of the process server, a copy of the summons to the individual's spouse if the spouses reside together; (iv) delivering a copy of the summons to the individual's agent authorized by appointment or by law to receive service of process; or (v) any form of mail or third-party commercial delivery addressed to the individual to be served and requiring a signed receipt and resulting in delivery to that individual.",
+      "text_sha256": "2647e6706227b8168b9d10a3b68105536cb8399ed0d2ecc08ccabe7f136de9d3",
+      "publisher_sha256": "374fdd92b4d2794ffc09bdd961d32f3c143183d8d6db3b8ba2b82c744ee999f0",
+      "retrieved_at": "2026-11-20T15:21:03.597898+00:00",
       "currentness": "unresolved",
       "language": "en",
       "court": "North Dakota District Court"

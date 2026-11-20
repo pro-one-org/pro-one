@@ -233,6 +233,18 @@
         "retrieved_at": "2026-11-19T19:42:59.773135+00:00",
         "sha256": "36698c2bb03961ca951c29f27ad7ef96329a1158636832a4d171c0c5fd26dc85"
       }
+    },
+    "US-PA:service:ddf3c7115cf5": {
+      "category": "service",
+      "title": "231 Pa. Code Rule 402(a)",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/231/chapter400/s402.html",
+      "locator": "231 Pa. Code Rule 402(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:03.127415+00:00",
+        "sha256": "f403e3ec6bce46386edb1552ae97892bd7e4f04edb249e4f59d2b10f2b28ca81"
+      }
     }
   },
   "court_directory": [
@@ -387,6 +399,18 @@
       "text_sha256": "63dd0dd817e0d5bfb6b0f051c668766f2decbf84825cefd7be0a6d8f180652ea",
       "publisher_sha256": "36698c2bb03961ca951c29f27ad7ef96329a1158636832a4d171c0c5fd26dc85",
       "retrieved_at": "2026-11-19T19:42:59.773135+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Pennsylvania Court of Common Pleas"
+    },
+    "2f43030b53cdeab6ba9216f6a5ca70": {
+      "source_id": "US-PA:service:ddf3c7115cf5",
+      "authority_type": "court_rule",
+      "citation": "231 Pa. Code Rule 402(a)",
+      "text": "(a) Original process may be served (1) by handing a copy to the defendant; or (2) by handing a copy (i) at the residence of the defendant to an adult member of the family with whom he resides; but if no adult member of the family is found, then to an adult person in charge of such residence; or (ii) at the residence of the defendant to the clerk or manager of the hotel, inn, apartment house, boarding house or other place of lodging at which he resides; or (iii) at any office or usual place of business of the defendant to his agent or to the person for the time being in charge thereof.",
+      "text_sha256": "dacb2385fe8c2fe5f6a720c5d15434fccb439c481d5f30daebfc0fd8743d9663",
+      "publisher_sha256": "f403e3ec6bce46386edb1552ae97892bd7e4f04edb249e4f59d2b10f2b28ca81",
+      "retrieved_at": "2026-11-20T15:21:03.127415+00:00",
       "currentness": "unresolved",
       "language": "en",
       "court": "Pennsylvania Court of Common Pleas"

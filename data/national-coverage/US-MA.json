@@ -339,6 +339,18 @@
         "retrieved_at": "2026-11-19T19:42:59.578439+00:00",
         "sha256": "e0a94f51ff78dcb706d4674ec9c0a3cb31d6723e371e0df5c2e5c065a6c18f8d"
       }
+    },
+    "US-MA:service:9bd4da59e8e1": {
+      "category": "service",
+      "title": "Mass. R. Civ. P. 4(d)(1)",
+      "url": "https://www.mass.gov/rules-of-civil-procedure/civil-procedure-rule-4-process",
+      "locator": "Mass. R. Civ. P. 4(d)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:04.563685+00:00",
+        "sha256": "72ab1b0cc8114df583b30bd3f102a62835834ea8479e069b57a619491a74fa1e"
+      }
     }
   },
   "court_directory": [
@@ -567,6 +579,18 @@
       "text_sha256": "83420bf076fa7ae576d341bad420e9d334cd9cf24bf16e4d686a9d9b50f2ebec",
       "publisher_sha256": "e0a94f51ff78dcb706d4674ec9c0a3cb31d6723e371e0df5c2e5c065a6c18f8d",
       "retrieved_at": "2026-11-19T19:42:59.578439+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Massachusetts trial courts governed by the civil rules"
+    },
+    "6e0db6bcee7d1d5e1146d669ace5e6": {
+      "source_id": "US-MA:service:9bd4da59e8e1",
+      "authority_type": "court_rule",
+      "citation": "Mass. R. Civ. P. 4(d)(1)",
+      "text": "(1) Upon an individual by delivering a copy of the summons and of the complaint to him personally; or by leaving copies thereof at his last and usual place of abode; or by delivering a copy of the summons and of the complaint to an agent authorized by appointment or by statute to receive service of process, provided that any further notice required by such statute be given. If the person authorized to serve process makes return that after diligent search he can find neither the defendant, nor defendant's last and usual abode, nor any agent upon whom service may be made in compliance with this subsection, the court may on application of the plaintiff issue an order of notice in the manner and form prescribed by law.",
+      "text_sha256": "194a867f609d6140712fb4bfbab8217934d4381d8aec0159d6c756ca5ddb26e4",
+      "publisher_sha256": "72ab1b0cc8114df583b30bd3f102a62835834ea8479e069b57a619491a74fa1e",
+      "retrieved_at": "2026-11-20T15:21:04.563685+00:00",
       "currentness": "unresolved",
       "language": "en",
       "court": "Massachusetts trial courts governed by the civil rules"

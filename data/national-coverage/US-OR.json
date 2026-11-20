@@ -316,6 +316,18 @@
         "retrieved_at": "2026-11-19T19:43:10.820517+00:00",
         "sha256": "e55957b95b25f21142acfca62e8a6c9521b79b7362289f0b308fedf6aa0b602c"
       }
+    },
+    "US-OR:service:3b61e198da24": {
+      "category": "service",
+      "title": "ORCP 7 D(3)(a)(i)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/SiteAssets/ORCP.html",
+      "locator": "ORCP 7 D(3)(a)(i)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:12.167609+00:00",
+        "sha256": "e55957b95b25f21142acfca62e8a6c9521b79b7362289f0b308fedf6aa0b602c"
+      }
     }
   },
   "court_directory": [
@@ -518,6 +530,19 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Oregon Rules of Civil Procedure 2025",
+      "court": "Oregon Circuit Court"
+    },
+    "fc1414bde19929b8c813e069acf813": {
+      "source_id": "US-OR:service:3b61e198da24",
+      "authority_type": "court_rule",
+      "citation": "ORCP 7 D(3)(a)(i)",
+      "text": "D(3)(a)(i) Generally. On an individual defendant, by personal delivery of true copies of the summons and the complaint to the defendant or other person authorized by appointment or law to receive service of summons on behalf of the defendant, by substituted service, or by office service. Service may also be made on an individual defendant or other person authorized to receive service to whom neither subparagraph D(3)(a)(ii) nor D(3)(a)(iii) of this rule applies by a mailing made in accordance with paragraph D(2)(d) of this rule provided the defendant or other person authorized to receive service signs a receipt for the certified, registered, or express mailing, in which case service shall be complete on the date on which the defendant signs a receipt for the mailing.",
+      "text_sha256": "9c716288b9cbaf8546239b57515fd79bdf392db1a6a112c43f4700da28742ff2",
+      "publisher_sha256": "e55957b95b25f21142acfca62e8a6c9521b79b7362289f0b308fedf6aa0b602c",
+      "retrieved_at": "2026-11-20T15:21:12.167609+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Oregon Rules of Civil Procedure (2025)",
       "court": "Oregon Circuit Court"
     }
   },
