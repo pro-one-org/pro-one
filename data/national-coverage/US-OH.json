@@ -250,6 +250,18 @@
         "retrieved_at": "2026-11-19T19:39:46.886724+00:00",
         "sha256": "63edf00c58b592f1ad49f18c4efb9e31e55e1ca00eafc8cf00a0d84fa6aabce4"
       }
+    },
+    "US-OH:accrual:7a8acc1d100c": {
+      "category": "accrual",
+      "title": "Ohio Rev. Code § 2305.10(B)(1)",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-2305.10",
+      "locator": "Ohio Rev. Code § 2305.10(B)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:18:10.286884+00:00",
+        "sha256": "f12bd9cd517ef3a90bc14b366c59c405be8d556f3d27bd03ab68b0863533f1bf"
+      }
     }
   },
   "court_directory": [
@@ -445,6 +457,18 @@
       "decision_date": "2021-05-21",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from a municipal court judgment. Affirmed."
+    },
+    "6f2983ed0dafc79de13e0d861827cf": {
+      "source_id": "US-OH:accrual:7a8acc1d100c",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 2305.10(B)(1)",
+      "text": "(B)(1) For purposes of division (A) of this section, a cause of action for bodily injury that is not described in division (B)(2), (3), (4), or (5) of this section and that is caused by exposure to hazardous or toxic chemicals, ethical drugs, or ethical medical devices accrues upon the date on which the plaintiff is informed by competent medical authority that the plaintiff has an injury that is related to the exposure, or upon the date on which by the exercise of reasonable diligence the plaintiff should have known that the plaintiff has an injury that is related to the exposure, whichever date occurs first.",
+      "text_sha256": "85116ef4434034e746453ac00a83048d8d8685d3dc6dc1731207a93be76f9e7c",
+      "publisher_sha256": "f12bd9cd517ef3a90bc14b366c59c405be8d556f3d27bd03ab68b0863533f1bf",
+      "retrieved_at": "2026-11-20T15:18:10.286884+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_date": "2006-08-03"
     }
   },
   "fault_allocation": {

@@ -14,6 +14,8 @@ from app.national_publications import LegislativeExcerpts
 SUBJECTS = {
     "pi_limitations": ("torts", "limitations"),
     "wrongful_death_limitations": ("torts", "wrongful_death_limitations"),
+    "accrual": ("torts", "accrual"),
+    "tolling": ("torts", "tolling"),
     "written_contract_limitations": ("contracts", "written_contract_limitations"),
     "oral_contract_limitations": ("contracts", "oral_contract_limitations"),
     "general_contract_limitations": ("contracts", "contract_limitations"),

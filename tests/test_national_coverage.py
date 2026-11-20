@@ -22,6 +22,19 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_accrual_and_tolling_do_not_supply_ordinary_limitations(self):
+        provider = RetainedLegislativeResearch()
+        matter = ResearchMatter(country="US", state="Michigan", legal_area="torts",
+                                authority_types=["statute"], authority_status="unresolved", topics=["accrual"])
+        accrual, = provider.search(matter)
+        self.assertEqual(provider.fetch(accrual).source["citation"]["preferred_citation"], "Mich. Comp. Laws § 600.5827")
+        tolling_query = matter.model_copy(update={"topics": ["tolling"]})
+        tolling, = provider.search(tolling_query)
+        self.assertEqual(provider.fetch(tolling).source["citation"]["preferred_citation"], "Mich. Comp. Laws § 600.5855")
+        self.assertFalse({accrual, tolling} & set(provider.search(matter.model_copy(update={"topics": ["limitations"]}))))
+        self.assertFalse(provider.search(tolling_query.model_copy(update={"authority_status": "current",
+                                                                          "authority_as_of": "2026-11-20"})))
+
     def test_wisconsin_death_limitation_stays_separate_from_injury_limitation(self):
         provider = RetainedLegislativeResearch()
         matter = ResearchMatter(country="US", state="Wisconsin", legal_area="torts",

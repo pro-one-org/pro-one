@@ -34,6 +34,7 @@ CAPABILITIES = {
                   "venue": ("venue",), "service": ("service",), "response": ("response",), "fees": ("fees",),
                   "e_filing": ("e_filing",), "small_claims": ("small_claims",), "calendar": ("calendar",)},
     "deadlines": {"pi_limitations": ("pi_limitations",), "wrongful_death_limitations": ("wrongful_death_limitations",),
+                  "accrual": ("accrual",), "tolling": ("tolling",),
                   "contract_limitations": ("written_contract_limitations", "oral_contract_limitations", "general_contract_limitations"),
                   "initial_response": ("response",), "service": ("service",)},
     "forms": {"forms_index": ("forms",), "complaint": ("complaint_form",), "answer": ("answer_form",),

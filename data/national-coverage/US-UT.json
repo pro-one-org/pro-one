@@ -252,6 +252,18 @@
         "retrieved_at": "2026-11-19T19:26:45.505086+00:00",
         "sha256": "12f11ba7d0df24246b2d87cfbf73d13f74773dbec2d8eea85916beb97787391b"
       }
+    },
+    "US-UT:tolling:03a269bafb84": {
+      "category": "tolling",
+      "title": "Utah Code § 78B-2-108(1)–(3)",
+      "url": "https://le.utah.gov/xcode/Title78B/Chapter2/C78B-2-S108_2021050520210505.html",
+      "locator": "Utah Code § 78B-2-108(1)–(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:18:09.519894+00:00",
+        "sha256": "ea284e30bb04ebf6de4277dc985bd377c4ac3f0f8a809e999b54f2ea81261d9c"
+      }
     }
   },
   "court_directory": [
@@ -411,6 +423,18 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "2026-05-06"
+    },
+    "8b827408e9c3100150edde16e08c7d": {
+      "source_id": "US-UT:tolling:03a269bafb84",
+      "authority_type": "statute",
+      "citation": "Utah Code § 78B-2-108(1)–(3)",
+      "text": "(1) An individual may not bring a cause of action while the individual is: (a) under 18 years old; or (b) mentally incompetent without a legal guardian. (2) During the time that an individual is underage or mentally incompetent, the statute of limitations for a cause of action other than for the recovery of real property may not run. (3) A cause of action under this section includes any claim: (a) for general or special damages; or (b) for which a parent or legal guardian of an individual described in Subsection (1) may be financially responsible for the payment of general or special damages.",
+      "text_sha256": "e956ed0e6a9a82b78c8f10956a670725ec129d1c9128f366e403141af6028a82",
+      "publisher_sha256": "ea284e30bb04ebf6de4277dc985bd377c4ac3f0f8a809e999b54f2ea81261d9c",
+      "retrieved_at": "2026-11-20T15:18:09.519894+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_date": "2021-05-05"
     }
   },
   "fault_allocation": {

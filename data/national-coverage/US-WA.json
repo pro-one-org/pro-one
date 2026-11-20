@@ -321,6 +321,18 @@
         "retrieved_at": "2026-11-19T19:43:00.469004+00:00",
         "sha256": "13d405d7815241efe76a2a503a3f0960adabc21137c1943608604f8ff4fbead1"
       }
+    },
+    "US-WA:tolling:989c75541bf4": {
+      "category": "tolling",
+      "title": "Wash. Rev. Code § 4.16.190",
+      "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=4.16.190",
+      "locator": "Wash. Rev. Code § 4.16.190",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:18:10.081987+00:00",
+        "sha256": "ce118c06c8661391dc614853be72222b1e6513a96a185167c2928c2e54c21048"
+      }
     }
   },
   "court_directory": [
@@ -552,6 +564,17 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Washington Superior Court"
+    },
+    "c73dcfe579c03e31cae0d7b1177861": {
+      "source_id": "US-WA:tolling:989c75541bf4",
+      "authority_type": "statute",
+      "citation": "Wash. Rev. Code § 4.16.190",
+      "text": "Unless otherwise provided in this section, if a person entitled to bring an action mentioned in this chapter, except for a penalty or forfeiture, or against a sheriff or other officer, for an escape, be at the time the cause of action accrued either under the age of eighteen years, or incompetent or disabled to such a degree that he or she cannot understand the nature of the proceedings, such incompetency or disability as determined according to chapter 11.130 RCW, or imprisoned on a criminal charge prior to sentencing, the time of such disability shall not be a part of the time limited for the commencement of action.",
+      "text_sha256": "2023f2415ed06dc96ee7c3f7daf9c5141be8c1841015ae69a0603e9d952eb1c8",
+      "publisher_sha256": "ce118c06c8661391dc614853be72222b1e6513a96a185167c2928c2e54c21048",
+      "retrieved_at": "2026-11-20T15:18:10.081987+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

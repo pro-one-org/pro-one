@@ -406,6 +406,18 @@
         "retrieved_at": "2026-11-19T19:39:39.534255+00:00",
         "sha256": "6c607422c05df44c5a938e74040da9a6eabe2a3416167fca410f4049829a660a"
       }
+    },
+    "US-IA:tolling:d8b4ff464f0c": {
+      "category": "tolling",
+      "title": "Iowa Code § 614.8(1)–(2)",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/614.8.pdf",
+      "locator": "Iowa Code § 614.8(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:18:09.937023+00:00",
+        "sha256": "990d286decab02318a36890513fd9690745520a4fc09def0cebcadf2258a9119"
+      }
     }
   },
   "court_directory": [
@@ -621,6 +633,18 @@
       "decision_date": "2026-06-12",
       "opinion_role": "majority",
       "procedural_posture": "Appeal and cross-appeal from money judgment on a real estate project."
+    },
+    "e1d532b988d6912e915711bcbd2585": {
+      "source_id": "US-IA:tolling:d8b4ff464f0c",
+      "authority_type": "statute",
+      "citation": "Iowa Code § 614.8(1)–(2)",
+      "text": "1. The times limited for actions in this chapter , or chapter 216 , 669 , or 670 , except those brought for penalties and forfeitures, are extended in favor of persons with mental illness, so that they shall have one year from and after the termination of the disability within which to file a complaint pursuant to chapter 216 , to make a claim pursuant to chapter 669 , or to otherwise commence an action. 2. Except as provided in section 614.1, subsection 9 , the times limited for actions in this chapter , or chapter 216 , 659A , 669 , or 670 , except those brought for penalties and forfeitures, are extended in favor of minors, so that they shall have one year from and after attainment of majority within which to file a complaint pursuant to chapter 216 , to make a claim pursuant to chapter 669 , or to otherwise commence an action.",
+      "text_sha256": "655053c6ef256c5146da20f5cc9470d064789ab4cb1ebe5fcd6d8d9f9b4ab66d",
+      "publisher_sha256": "990d286decab02318a36890513fd9690745520a4fc09def0cebcadf2258a9119",
+      "retrieved_at": "2026-11-20T15:18:09.937023+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2026 Iowa Code"
     }
   },
   "fault_allocation": {

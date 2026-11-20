@@ -275,6 +275,30 @@
         "retrieved_at": "2026-11-19T14:11:01.758217+00:00",
         "sha256": "c622d4f2c1a0a5581dbf1f580f178c63da0347ed1bf9656d4b172a2abe1bebed"
       }
+    },
+    "US-MI:accrual:54fcedac34ac": {
+      "category": "accrual",
+      "title": "Mich. Comp. Laws § 600.5827",
+      "url": "https://legislature.mi.gov/Laws/MCL?objectName=MCL-600-5827",
+      "locator": "Mich. Comp. Laws § 600.5827",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:18:09.233934+00:00",
+        "sha256": "2d2259869707aa34b424c1d72dc269606be43b499ff69692c1cb17eb6aef92b9"
+      }
+    },
+    "US-MI:tolling:6e13a2742a38": {
+      "category": "tolling",
+      "title": "Mich. Comp. Laws § 600.5855",
+      "url": "https://legislature.mi.gov/documents/mcl/pdf/MCL-600-5855.pdf",
+      "locator": "Mich. Comp. Laws § 600.5855",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:18:08.847235+00:00",
+        "sha256": "40bd472bbe69c7a439aaef5f8f593d04d6771ca6621d0bcf263320f9d8932735"
+      }
     }
   },
   "court_directory": [
@@ -438,6 +462,31 @@
       "retrieved_at": "2026-11-19T14:11:01.758217+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "3889a2422d528297b32912179ff0da": {
+      "source_id": "US-MI:accrual:54fcedac34ac",
+      "authority_type": "statute",
+      "citation": "Mich. Comp. Laws § 600.5827",
+      "text": "Except as otherwise expressly provided, the period of limitations runs from the time the claim accrues. The claim accrues at the time provided in sections 5829 to 5838, and in cases not covered by these sections the claim accrues at the time the wrong upon which the claim is based was done regardless of the time when damage results.",
+      "text_sha256": "24fb46de9eca97c91c01f3f1bf413badeb683a4f24b5ab96ee068376200ebe02",
+      "publisher_sha256": "2d2259869707aa34b424c1d72dc269606be43b499ff69692c1cb17eb6aef92b9",
+      "retrieved_at": "2026-11-20T15:18:09.233934+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_date": "1963-01-01"
+    },
+    "a2fa59f1d5ae8217539460af401e17": {
+      "source_id": "US-MI:tolling:6e13a2742a38",
+      "authority_type": "statute",
+      "citation": "Mich. Comp. Laws § 600.5855",
+      "text": "If a person who is or may be liable for any claim fraudulently conceals the existence of the claim or the identity of any person who is liable for the claim from the knowledge of the person entitled to sue on the claim, the action may be commenced at any time within 2 years after the person who is entitled to bring the action discovers, or should have discovered, the existence of the claim or the identity of the person who is liable for the claim, although the action would otherwise be barred by the period of limitations.",
+      "text_sha256": "4e648c72579d0326c45d49f764cb2a80265ed6d65255615724b0e28d1ea848c9",
+      "publisher_sha256": "40bd472bbe69c7a439aaef5f8f593d04d6771ca6621d0bcf263320f9d8932735",
+      "retrieved_at": "2026-11-20T15:18:08.847235+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_date": "1963-01-01",
+      "edition": "Michigan Compiled Laws complete through 2026 PA 114, rendered October 26, 2026"
     }
   },
   "fault_allocation": {

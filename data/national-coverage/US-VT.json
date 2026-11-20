@@ -257,6 +257,18 @@
         "retrieved_at": "2026-11-19T19:31:23.862555+00:00",
         "sha256": "9f874b276e120f758f075dc02c88ade9d0e6b4c43b8e8a0cfdd87e659c176b55"
       }
+    },
+    "US-VT:tolling:aa1169e10b37": {
+      "category": "tolling",
+      "title": "12 V.S.A. § 551(a)–(b)",
+      "url": "https://legislature.vermont.gov/statutes/section/12/023/00551",
+      "locator": "12 V.S.A. § 551(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:18:10.521949+00:00",
+        "sha256": "c9431fbc63f9524b9ca484abd0d03930b9a7955ba7853ddbdad7bdd0b4743bcd"
+      }
     }
   },
   "court_directory": [
@@ -444,6 +456,18 @@
       "retrieved_at": "2026-11-19T19:31:23.862555+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "3a29c407806d2feaa7abd76e7dc0d2": {
+      "source_id": "US-VT:tolling:aa1169e10b37",
+      "authority_type": "statute",
+      "citation": "12 V.S.A. § 551(a)–(b)",
+      "text": "(a) When a person entitled to bring an action specified in this chapter is a minor, lacks capacity to protect his or her interests due to a mental condition or psychiatric disability, or is imprisoned at the time the cause of action accrues, such person may bring such action within the times in this chapter respectively limited, after the disability is removed. (b) If a person entitled to bring an action specified in this chapter becomes unable to protect his or her interests due to a mental condition or psychiatric disability after the cause of action accrues but before the statute has run, the time during which the person is unable to protect his or her interests due to a mental condition or psychiatric disability shall not be taken as a part of the time limited for the commencement of the action.",
+      "text_sha256": "2ed3ad5c945720239d695b1322f6359cefbda3deaa2bc099e252518a68066854",
+      "publisher_sha256": "c9431fbc63f9524b9ca484abd0d03930b9a7955ba7853ddbdad7bdd0b4743bcd",
+      "retrieved_at": "2026-11-20T15:18:10.521949+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Vermont Statutes Online including actions of the 2026 session"
     }
   },
   "fault_allocation": {

@@ -319,6 +319,18 @@
         "retrieved_at": "2026-11-19T19:31:21.555725+00:00",
         "sha256": "5aec4ea2b05e04c1a1ffe607a1f0b4ed70c830d3f353cdaa845ef3d06827f4da"
       }
+    },
+    "US-MN:tolling:11d26343e6c5": {
+      "category": "tolling",
+      "title": "Minn. Stat. § 541.15(a)–(b)",
+      "url": "https://www.revisor.mn.gov/statutes/cite/541.15",
+      "locator": "Minn. Stat. § 541.15(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:18:08.972199+00:00",
+        "sha256": "6163b61b2867e50b73cb4a9f25c78a1589a4864e014541fe0b03fa4da3874f78"
+      }
     }
   },
   "court_directory": [
@@ -509,6 +521,18 @@
       "retrieved_at": "2026-11-19T19:31:21.555725+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "4a72349c2ed9df4ca3df504d0c9e0d": {
+      "source_id": "US-MN:tolling:11d26343e6c5",
+      "authority_type": "statute",
+      "citation": "Minn. Stat. § 541.15(a)–(b)",
+      "text": "(a) Except as provided in paragraph (b), any of the following grounds of disability, existing at the time when a cause of action accrued or arising anytime during the period of limitation, shall suspend the running of the period of limitation until the same is removed; provided that such period, except in the case of infancy, shall not be extended for more than five years, nor in any case for more than one year after the disability ceases: (1) that the plaintiff is within the age of 18 years; (2) the plaintiff's insanity; (3) is an alien and the subject or citizen of a country at war with the United States; (4) when the beginning of the action is stayed by injunction or by statutory prohibition. If two or more disabilities shall coexist, the suspension shall continue until all are removed. (b) In actions alleging malpractice, error, mistake, or failure to cure, whether based on contract or tort, against a health care provider, the ground of disability specified in paragraph (a), clause (1), suspends the period of limitation until the disability is removed. The suspension may not be extended for more than seven years, or for more than one year after the disability ceases. For purposes of this paragraph, health care provider means a physician, surgeon, dentist, or other health care professional or hospital, including all persons or entities providing health care as defined in section 145.61, subdivisions 2 and 4, or a certified health care professional employed by or providing services as an independent contractor in a hospital.",
+      "text_sha256": "262250632110ba301737d47dd1761f62f67a2625d4703c3ed4c64c8fb28d9ff4",
+      "publisher_sha256": "6163b61b2867e50b73cb4a9f25c78a1589a4864e014541fe0b03fa4da3874f78",
+      "retrieved_at": "2026-11-20T15:18:08.972199+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "2026 Minnesota Statutes"
     }
   },
   "fault_allocation": {
