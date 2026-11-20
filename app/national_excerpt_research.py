@@ -40,6 +40,7 @@ SUBJECTS = {
     "e_filing": ("civil_procedure", "electronic_filing"),
     "contract_formation": ("contracts", "contract_formation"),
     "automated_contract_formation": ("contracts", "automated_contract_formation"),
+    "employment_contract_formation": ("contracts", "employment_contract_formation"),
     "contract_breach": ("contracts", "contract_breach"),
     "contract_damages": ("contracts", "accepted_goods_damages"),
 }

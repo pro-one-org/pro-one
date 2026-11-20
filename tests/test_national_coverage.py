@@ -176,6 +176,22 @@ class NationalCoverageTests(unittest.TestCase):
                        {"authority_types": ["statute"]}, {"authority_status": "current"}):
             self.assertFalse(provider.search(query.model_copy(update=change)))
 
+    def test_implied_employment_formation_keeps_its_own_historical_topic(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(
+            country="US", state="New Mexico", legal_area="contracts",
+            topics=["employment_contract_formation"], authority_types=["opinion"],
+            authority_status="historical",
+        )
+        key, = provider.search(query)
+        self.assertIn("employee handbook", provider.fetch(key).text)
+        for change in (
+            {"topics": ["contract_formation"]},
+            {"state": "Colorado"},
+            {"authority_status": "current", "authority_as_of": "2026-11-20"},
+        ):
+            self.assertNotIn(key, provider.search(query.model_copy(update=change)))
+
     def test_archive_edition_and_effective_date_do_not_establish_currentness(self):
         scope = "US-CA"
         selector, row = next((key, item) for key, item in manifest(scope)["passages"].items()

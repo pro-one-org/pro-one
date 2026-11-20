@@ -221,6 +221,18 @@
         "retrieved_at": "2026-11-20T15:45:44.675321+00:00",
         "sha256": "d616fc634107bc6cbbe1ee37ec1c90d751db338cd597d40171efe624071386bc"
       }
+    },
+    "US-GA:consumerLaw:70deb7cadee9": {
+      "category": "consumerLaw",
+      "title": "O.C.G.A. § 10-1-393(a) (2025 Supp.)",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t10-%28v8%29-pdf.pdf",
+      "locator": "O.C.G.A. § 10-1-393(a) (2025 Supp.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:29:35.191438+00:00",
+        "sha256": "f1fc4f45d8c665b3180be42133721febeabd59a03153409291b8f6cc2a2f82c9"
+      }
     }
   },
   "court_directory": [
@@ -383,6 +395,18 @@
       "decision_date": "2024-06-11",
       "opinion_role": "majority",
       "procedural_posture": "Review of a wrongful-death claim involving a contractually shortened limitation. The court quoted the ordinary statutory period and enforced the separate contractual term in this case."
+    },
+    "d811a4a1341d0b1139990145482032": {
+      "source_id": "US-GA:consumerLaw:70deb7cadee9",
+      "authority_type": "statute",
+      "citation": "O.C.G.A. § 10-1-393(a) (2025 Supp.)",
+      "text": "(a) Unfair or deceptive acts or practices in the conduct of consumer transactions and consumer acts or practices in trade or commerce are declared unlawful.",
+      "text_sha256": "ce2fd9a95b5ef0382caab14c80c9a63b9db2d99a65251bd25cff4e6e94aa9437",
+      "publisher_sha256": "f1fc4f45d8c665b3180be42133721febeabd59a03153409291b8f6cc2a2f82c9",
+      "retrieved_at": "2026-11-20T16:29:35.191438+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 Georgia Code supplement incorporating the 2025 regular session"
     }
   },
   "fault_allocation": {

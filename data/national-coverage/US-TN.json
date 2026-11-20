@@ -182,6 +182,42 @@
           "sha256": "b048e806e5628f2ce1f1b3f6781eed7c5474fef908ce2fa852c8baaca540fa75"
         }
       ]
+    },
+    "US-TN:consumerLaw:b73eae3074e5": {
+      "category": "consumerLaw",
+      "title": "2011 Tenn. Pub. Acts ch. 510 (adopted Senate Amendment 1, §§ 14–15)",
+      "url": "https://capitol.tn.gov/Bills/107/Amend/SA0360.pdf",
+      "locator": "2011 Tenn. Pub. Acts ch. 510 (adopted Senate Amendment 1, §§ 14–15)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:30:24.951368+00:00",
+        "sha256": "26c257b8296189a6adbfbb84dbea3bed8acfedb5c8bfcf177910077440d29214"
+      }
+    },
+    "US-TN:consumer_private_action:a683b317e367": {
+      "category": "consumer_private_action",
+      "title": "2011 Tenn. Pub. Acts ch. 510 (adopted Senate Amendment 2, amendments to §§ 47-18-104(b) and 47-18-109(a)(1))",
+      "url": "https://capitol.tn.gov/Bills/107/Amend/SA0361.pdf",
+      "locator": "2011 Tenn. Pub. Acts ch. 510 (adopted Senate Amendment 2, amendments to §§ 47-18-104(b) and 47-18-109(a)(1))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:30:24.722069+00:00",
+        "sha256": "320ac1ed6052c5041e14ea1f323c2c459808c895e443e6251daba044da586f52"
+      }
+    },
+    "US-TN:fault:923fcb0264d1": {
+      "category": "fault",
+      "title": "2011 Tenn. Pub. Acts ch. 510 (adopted Senate Amendment 1, § 10, Tenn. Code § 29-39-102(b))",
+      "url": "https://capitol.tn.gov/Bills/107/Amend/SA0360.pdf",
+      "locator": "2011 Tenn. Pub. Acts ch. 510 (adopted Senate Amendment 1, § 10, Tenn. Code § 29-39-102(b))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:30:24.951368+00:00",
+        "sha256": "26c257b8296189a6adbfbb84dbea3bed8acfedb5c8bfcf177910077440d29214"
+      }
     }
   },
   "court_directory": [
@@ -307,6 +343,52 @@
       "language": "en",
       "edition": "2015 enrolled Senate Bill 463 as amended, verified in the legislative passage history",
       "effective_from": "2015-07-01"
+    },
+    "cdc2b4131ad73cccf8d5e97ca7f922": {
+      "source_id": "US-TN:consumerLaw:b73eae3074e5",
+      "authority_type": "statute",
+      "citation": "2011 Tenn. Pub. Acts ch. 510 (adopted Senate Amendment 1, §§ 14–15)",
+      "text": "SECTION 14. Tennessee Code Annotated, Section 47-18-109, is amended by adding the following language as a new, appropriately designated subsection: ( ) No private right of action shall be commenced under this section for any alleged unfair or deceptive act or practice involving the marketing or sale of a security as defined in the Tennessee Securities Act, § 48-2-102(17). SECTION 15. Tennessee Code Annotated, Section 47-18-104, is amended by adding the following language at the end of subdivision (b)(27): provided, however, that enforcement of this subdivision (b)(27) is vested exclusively in the office of the Attorney General and Reporter and the director of the division.",
+      "text_sha256": "b14f8e1aa19e7d3284c8a23f73ec2cee799536641ecfd3299da68cafa1ad9cd8",
+      "publisher_sha256": "26c257b8296189a6adbfbb84dbea3bed8acfedb5c8bfcf177910077440d29214",
+      "retrieved_at": "2026-11-20T16:30:24.951368+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2011 enrolled House Bill 2008 as amended, verified in the legislative passage history",
+      "effective_from": "2011-10-01"
+    },
+    "dcbfc66cfa6aa119cc3e0c33bfcb64": {
+      "source_id": "US-TN:consumer_private_action:a683b317e367",
+      "authority_type": "statute",
+      "citation": "2011 Tenn. Pub. Acts ch. 510 (adopted Senate Amendment 2, amendments to §§ 47-18-104(b) and 47-18-109(a)(1))",
+      "text": "SECTION ___. Tennessee Code Annotated, Section §47-18-104(b) is amended by deleting the language “Without limiting the scope of subsection (a), the” and substituiting instead the language “The”. SECTION ___. Tennessee Code Annotated, Section 47-18-109(a)(1) is amended by inserting the language “described in §47-18-104(b) and” before the language “declared to be unlawful by this part”.",
+      "text_sha256": "99f6031ef984981743e6d4ee0629496e60a1d299d9cf06a57eaf6e725b080eb6",
+      "publisher_sha256": "320ac1ed6052c5041e14ea1f323c2c459808c895e443e6251daba044da586f52",
+      "retrieved_at": "2026-11-20T16:30:24.722069+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2011 enrolled House Bill 2008 as amended, verified in the legislative passage history",
+      "effective_from": "2011-10-01"
+    },
+    "fde66c034a80b5bfea857de2e0810e": {
+      "source_id": "US-TN:fault:923fcb0264d1",
+      "authority_type": "statute",
+      "citation": "2011 Tenn. Pub. Acts ch. 510 (adopted Senate Amendment 1, § 10, Tenn. Code § 29-39-102(b))",
+      "text": "(b) If multiple defendants are found liable under the principle of comparative fault, the amount of all noneconomic damages, not to exceed seven hundred fifty thousand dollars ($750,000) for each injured plaintiff, shall be apportioned among the defendants based upon the percentage of fault for each defendant, so long as the plaintiff’s comparative fault (or in a wrongful death action, the fault of the decedent) is not equal to or greater than fifty percent (50%), in which case recovery for any damages is barred.",
+      "text_sha256": "15113784d8237d1791f98ec1b3a6840d80b221611a9d14d3d465f023c79a3fa0",
+      "publisher_sha256": "26c257b8296189a6adbfbb84dbea3bed8acfedb5c8bfcf177910077440d29214",
+      "retrieved_at": "2026-11-20T16:30:24.951368+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2011 enrolled House Bill 2008 as amended, verified in the legislative passage history",
+      "effective_from": "2011-10-01"
     }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_50",
+    "source_id": "US-TN:fault:923fcb0264d1",
+    "passage_selector": "fde66c034a80b5bfea857de2e0810e",
+    "currentness": "historical",
+    "qualification": "Historical civil damages enactment. The passage expressly addresses multiple liable defendants and the 50 percent recovery bar. The retained provision does not establish the rule for all other claim contexts."
   }
 }

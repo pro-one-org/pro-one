@@ -219,6 +219,30 @@
         "retrieved_at": "2026-11-20T16:22:38.477811+00:00",
         "sha256": "e7e4e039ae496673b788be8df9ef788e22b886649667a0ce613b329dd5acb75b"
       }
+    },
+    "US-NM:fault:29fff0fcb402": {
+      "category": "fault",
+      "title": "Scott v. Rizzo, 1981-NMSC-021, ¶ 30",
+      "url": "https://nmonesource.com/nmos/nmsc/en/item/384724/index.do?iframe=true",
+      "locator": "Scott v. Rizzo, 1981-NMSC-021, ¶ 30",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:23:37.905010+00:00",
+        "sha256": "847628e4a7b71079a3ebca4970dd15f55ac68e4a3aea81da141d407536a5a9a9"
+      }
+    },
+    "US-NM:employment_contract_formation:1369ea32d3dd": {
+      "category": "employment_contract_formation",
+      "title": "Hartbarger v. Frank Paxton Co., 1993-NMSC-029, ¶ 6",
+      "url": "https://nmonesource.com/nmos/nmsc/en/item/374126/index.do?iframe=true",
+      "locator": "Hartbarger v. Frank Paxton Co., 1993-NMSC-029, ¶ 6",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:23:37.914951+00:00",
+        "sha256": "92605b8bfadc32a956fe144aea5bc9b3a6a0cb93248af9270983ec7bc781beac"
+      }
     }
   },
   "court_directory": [
@@ -379,6 +403,45 @@
       "decision_date": "2024-10-28",
       "opinion_role": "majority",
       "procedural_posture": "Certiorari review of dismissal of a challenge to representation by credit-union staff in a magistrate-court action. The court directed reinstatement of the complaint."
+    },
+    "714aad3de1f102901882270c10f46e": {
+      "source_id": "US-NM:fault:29fff0fcb402",
+      "authority_type": "opinion",
+      "citation": "Scott v. Rizzo, 1981-NMSC-021, ¶ 30",
+      "text": "Considering all of these reasons, we conclude that adoption of a rule of pure comparative negligence more nearly synthesizes the long-standing legal thought on the subject than any other form. We therefore hold that a pure comparative negligence standard shall supersede prior law in New Mexico, and that a plaintiff suing in negligence shall no longer be totally barred from recovery because of his contributory negligence.",
+      "text_sha256": "55b8f856fd417d4a6edbd5ddb6157ab02b28c76ed1e887d47fb532cbf14e2e38",
+      "publisher_sha256": "847628e4a7b71079a3ebca4970dd15f55ac68e4a3aea81da141d407536a5a9a9",
+      "retrieved_at": "2026-11-20T16:23:37.905010+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 1981-02-12",
+      "court": "Supreme Court of New Mexico",
+      "decision_date": "1981-02-12",
+      "opinion_role": "majority",
+      "procedural_posture": "Certiorari in consolidated negligence proceedings concerning the effect of plaintiff fault. The court remanded for application of comparative negligence."
+    },
+    "1056f722cf5836b79ee34d1cf47025": {
+      "source_id": "US-NM:employment_contract_formation:1369ea32d3dd",
+      "authority_type": "opinion",
+      "citation": "Hartbarger v. Frank Paxton Co., 1993-NMSC-029, ¶ 6",
+      "text": "Implied employment contract restricting employer's power to discharge employee is an implied-in-fact contract. The question whether an employment relationship has been modified is a question of fact. Lukoski, 106 N.M. at 666, 748 P.2d at 509. A promise, or offer, that supports an implied contract might be found in written representations such as an employee handbook, in oral representations, in the conduct of the parties, or in a combination of representations and conduct.",
+      "text_sha256": "61a5bb2b606c4641189e9fb23e5205ea9ca3adf5c4c518a039328c5a9f7d6329",
+      "publisher_sha256": "92605b8bfadc32a956fe144aea5bc9b3a6a0cb93248af9270983ec7bc781beac",
+      "retrieved_at": "2026-11-20T16:23:37.914951+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 1993-06-14",
+      "court": "Supreme Court of New Mexico",
+      "decision_date": "1993-06-14",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a jury verdict for a discharged employee. The court reversed and ordered judgment for the employer. The retained rule is limited to implied-in-fact employment terms."
     }
+  },
+  "fault_allocation": {
+    "regime": "pure_comparative",
+    "source_id": "US-NM:fault:29fff0fcb402",
+    "passage_selector": "714aad3de1f102901882270c10f46e",
+    "currentness": "historical",
+    "qualification": "Historical judicial adoption of pure comparative negligence to replace the complete contributory-negligence bar. The next section separately addresses transition."
   }
 }
