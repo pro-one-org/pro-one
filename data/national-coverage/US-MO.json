@@ -293,6 +293,18 @@
         "retrieved_at": "2026-11-20T16:41:35.699966+00:00",
         "sha256": "e6e9580190e46334b9ca43e1fbc4ab70f57fa2b3d951b8cd0c52ae8838b5eace"
       }
+    },
+    "US-MO:debtLaw:3ca963ac8565": {
+      "category": "debtLaw",
+      "title": "Mo. Rev. Stat. § 408.330(1) (retail time or charge agreement collection fees)",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=408.330",
+      "locator": "Mo. Rev. Stat. § 408.330(1) (retail time or charge agreement collection fees)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:35:16.571755+00:00",
+        "sha256": "a377578c1ad6ca01ceca1ebc204c499c057236fc37976bfa77a6bad7966a046d"
+      }
     }
   },
   "court_directory": [
@@ -476,6 +488,18 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "2005-08-28"
+    },
+    "3621e80e545b9c872941103fd7beb2": {
+      "source_id": "US-MO:debtLaw:3ca963ac8565",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 408.330(1) (retail time or charge agreement collection fees)",
+      "text": "1. If a retail time contract or a retail charge agreement so provides, the holder thereof may charge and collect: (1) A premium for insurance in lieu of charges for perfecting a security interest required by the lender if the premium does not exceed the fees which would otherwise be payable; (2) Charges assessed by any institution for processing a refused instrument plus a handling fee of not more than fifteen dollars; (3) A delinquency and collection charge on each installment in default for a period of not less than ten days in an amount not to exceed ten dollars or five dollars when the monthly installment is less than twenty-five dollars; or (4) Interest on each delinquent payment thereunder at a rate which will not exceed the highest lawful contract rate. In addition to such delinquency charge, the contract may provide for the payment of attorney fees not exceeding fifteen percent of the amount due and payable under such contract where such contract is referred for collection to an attorney not a salaried employee of the holder of the contract and for court costs.",
+      "text_sha256": "dfc855eec380b95c37fe002437305cbb5fa374c779a2cabdf943a4949715d57b",
+      "publisher_sha256": "a377578c1ad6ca01ceca1ebc204c499c057236fc37976bfa77a6bad7966a046d",
+      "retrieved_at": "2026-11-20T18:35:16.571755+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2017-08-28"
     }
   },
   "fault_allocation": {

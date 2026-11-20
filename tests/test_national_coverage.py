@@ -404,6 +404,11 @@ class NationalCoverageTests(unittest.TestCase):
                 self.assertFalse(store.search(CorpusQuery("US-PR", "statute", citation=cite, currentness="historical")))
                 self.assertEqual(store.applicable_version("US", "statute", cite, date(2026, 1, 1))["status"],
                                  "currentness_unresolved")
+                ok_cite = "Okla. Stat. tit. 12, § 95(A)(3)"
+                historical, = store.search(CorpusQuery("US-OK", "statute", citation=ok_cite, currentness="historical"))
+                unresolved, = store.search(CorpusQuery("US-OK", "statute", citation=ok_cite, currentness="unresolved"))
+                self.assertEqual(store.identity_checks(historical["version_id"], unresolved["version_id"]),
+                                 ["same_authority_different_version"])
 
     def test_named_tribal_authority_requires_its_own_sovereign(self):
         self.assertTrue(possible_tribal_scope("The matter is in Navajo Nation court in Arizona."))

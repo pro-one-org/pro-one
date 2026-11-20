@@ -338,6 +338,42 @@
         "retrieved_at": "2026-11-20T18:21:54.111047+00:00",
         "sha256": "ae922259fe854bdf5825060ee99b8b68495e9051afd0b1275987a65ae0f9dc89"
       }
+    },
+    "US-HI:debtLaw:4392663849c4": {
+      "category": "debtLaw",
+      "title": "Haw. Rev. Stat. § 480D-3 (prohibited consumer-debt collection practices)",
+      "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol11_Ch0476-0490/HRS0480D/HRS_0480D-0003.htm",
+      "locator": "Haw. Rev. Stat. § 480D-3 (prohibited consumer-debt collection practices)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:35:16.700829+00:00",
+        "sha256": "addf57f4011639110b842282f12c09aacd3ee44dd7b1e055aac38258df31c57a"
+      }
+    },
+    "US-HI:debtLaw:47842d699f5f": {
+      "category": "debtLaw",
+      "title": "Haw. Rev. Stat. § 480D-2 (consumer debt and covered debt collectors)",
+      "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol11_Ch0476-0490/HRS0480D/HRS_0480D-0002.htm",
+      "locator": "Haw. Rev. Stat. § 480D-2 (consumer debt and covered debt collectors)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:35:16.708624+00:00",
+        "sha256": "66f08df72868870842e60cd296116e72d6ab99826b58d4fc52f1bfe12293797f"
+      }
+    },
+    "US-HI:debtLaw:a26865420a71": {
+      "category": "debtLaw",
+      "title": "Haw. Rev. Stat. § 443B-19 (collection agency unfair or unconscionable means)",
+      "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol10_Ch0436-0474/HRS0443B/HRS_0443B-0019.htm",
+      "locator": "Haw. Rev. Stat. § 443B-19 (collection agency unfair or unconscionable means)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:35:16.744966+00:00",
+        "sha256": "9447add5bbd46d5a876ed9726aae19dba49873aba8a35435ccf5b9945452912d"
+      }
     }
   },
   "court_directory": [
@@ -558,6 +594,39 @@
       "text_sha256": "03020bb7c7e27a094765ab9ce773ab5c17ec8cee8a3d141a53fcc3f91adff867",
       "publisher_sha256": "ae922259fe854bdf5825060ee99b8b68495e9051afd0b1275987a65ae0f9dc89",
       "retrieved_at": "2026-11-20T18:21:54.111047+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "8144f2d5d76c1dc921e2d47473d5b0": {
+      "source_id": "US-HI:debtLaw:4392663849c4",
+      "authority_type": "statute",
+      "citation": "Haw. Rev. Stat. § 480D-3 (prohibited consumer-debt collection practices)",
+      "text": "It shall be a prohibited practice for any debt collector to engage in any of the following practices while collecting a consumer debt: (1) To threaten the use of violence or other criminal means to cause harm to the physical person, reputation, or property of any person; (2) To falsely accuse or threaten to falsely accuse any person of fraud or any other criminal conduct; (3) To make false accusations or threaten to make false accusations, to another person, including any credit reporting agency, that a debt has not been paid; (4) To threaten that nonpayment of a debt will result in the arrest of any person; (5) To threaten to turn over the collection of the debt to a person who will engage in practices prohibited by this section; (6) To threaten to sell or assign the debt with statements that, or implying that, the sale or assignment will cause the debtor to lose a defense or legal right as a result of the sale or assignment; (7) To use profane or obscene language that is intended to abuse the hearer or reader; (8) To disclose, publish, or communicate any false and material information relating to the indebtedness; (9) To represent that an existing obligation may be increased by attorney's fees, investigation fees, service fees, and other fees or charges when in fact the fees or charges may not legally be added to the existing obligations; (10) To seek or obtain any statement or acknowledgment that the debt was incurred for necessities of life when in fact the debt was not so incurred; or (11) To collect or attempt to collect any interest, charge, fee, or expense incidental to the debt unless the additions are authorized by the agreement or by law.",
+      "text_sha256": "51bc4cac5d9d115d69ab79f0f6ff7ca9e2e7afb47ffaf6d954bcf773251d451e",
+      "publisher_sha256": "addf57f4011639110b842282f12c09aacd3ee44dd7b1e055aac38258df31c57a",
+      "retrieved_at": "2026-11-20T18:35:16.700829+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "dbe34fc515153f3d449036a397f8fb": {
+      "source_id": "US-HI:debtLaw:47842d699f5f",
+      "authority_type": "statute",
+      "citation": "Haw. Rev. Stat. § 480D-2 (consumer debt and covered debt collectors)",
+      "text": "\"Consumer debt\" means any debt of a natural person incurred primarily for personal, family, or household purposes. \"Debt\" means any obligation or alleged obligation of a person to pay money arising out of any transaction, whether or not the obligation has been reduced to judgment. \"Debt collector\" means any person, who is not a collection agency regulated pursuant to chapter 443B, and who in the regular course of business collects or attempts to collect consumer debts owed or due or asserted to be owed or due to the collector.",
+      "text_sha256": "e582ca776a7363cfe9ee25739513c63de7b03016ed7de95dc4d58235c3206a72",
+      "publisher_sha256": "66f08df72868870842e60cd296116e72d6ab99826b58d4fc52f1bfe12293797f",
+      "retrieved_at": "2026-11-20T18:35:16.708624+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "fd60f1e2d3b142f53fc128b45482a3": {
+      "source_id": "US-HI:debtLaw:a26865420a71",
+      "authority_type": "statute",
+      "citation": "Haw. Rev. Stat. § 443B-19 (collection agency unfair or unconscionable means)",
+      "text": "No collection agency shall use unfair or unconscionable means to collect or attempt to collect any claim in any of the following ways: (1) The seeking or obtaining of any written statement or acknowledgment in any form that a debtor or alleged debtor's obligation is one incurred for necessities of life where the original obligation was not in fact incurred for these necessities; (2) The seeking or obtaining of any written statement or acknowledgment in any form containing an affirmation of any obligation by a debtor or alleged debtor who has been declared bankrupt, without clearly disclosing the nature and consequences of the affirmation and the fact that the debtor or alleged debtor is not legally obligated to make the affirmation; (3) The collection of or the attempt to collect from a debtor or alleged debtor all or any part of the collection agency's fees or charges for services rendered; (4) The collection of or the attempt to collect any interest or other charge, fee, or expense incidental to the principal obligation unless the interest or incidental fee, charge, or expense is expressly authorized by the agreement creating the obligation and legally chargeable to the debtor or alleged debtor; or unless the interest or incidental fee, charge, or expense is expressly authorized by law; and (5) Any communication with a debtor or alleged debtor whenever it appears that the debtor or alleged debtor is represented by an attorney and the attorney's name and address are known.",
+      "text_sha256": "304ea1c4783033b53354a1e800b32502d09354b50274d0a9a6ece4538f65e931",
+      "publisher_sha256": "9447add5bbd46d5a876ed9726aae19dba49873aba8a35435ccf5b9945452912d",
+      "retrieved_at": "2026-11-20T18:35:16.744966+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

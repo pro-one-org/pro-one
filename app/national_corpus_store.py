@@ -401,6 +401,17 @@ class SQLiteNormalizedCorpus:
             """, (left_version, right_version, right_version, left_version))
         return [row[0] for row in rows]
 
+    def check_retained_versions(self):
+        pairs = self.connection.execute("""
+            SELECT a.version_id, b.version_id FROM corpus_versions a
+            JOIN corpus_versions b ON a.authority_id=b.authority_id AND a.version_id<b.version_id
+                AND a.jurisdiction=b.jurisdiction AND a.authority_type=b.authority_type
+            ORDER BY a.version_id, b.version_id
+        """).fetchall()
+        for left, right in pairs:
+            if not self.identity_checks(left, right):
+                self.check_identity(left, right)
+
     def stats(self, *, include_relationships=False):
         totals = dict(self.connection.execute("""
             SELECT (SELECT count(DISTINCT authority_id) FROM corpus_versions) AS authorities,

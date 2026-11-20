@@ -321,6 +321,18 @@
         "retrieved_at": "2026-11-20T17:57:55.082889+00:00",
         "sha256": "9b34e43c2f7aa154bb635a747faf8aee13a17aa64f7567b425f40f42f8a4e97e"
       }
+    },
+    "US-IL:debtLaw:052ead97b491": {
+      "category": "debtLaw",
+      "title": "Illinois P.A. 104-0149, § 10 (205 ILCS 740/9.1, location-information communications)",
+      "url": "https://ftp.ilga.gov/Public%20Acts/104/104-0149.htm",
+      "locator": "Illinois P.A. 104-0149, § 10 (205 ILCS 740/9.1, location-information communications)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:35:16.988176+00:00",
+        "sha256": "67085d04d4bc7bac655f114a6c7048b0a82bdd9f8290a6c2d5a199f646513637"
+      }
     }
   },
   "court_directory": [
@@ -530,6 +542,18 @@
       "language": "en",
       "edition": "Illinois Public Act 103-0201 (effective January 1, 2024)",
       "effective_from": "2024-01-01"
+    },
+    "16a9b7717d5ec0d4814ebb4e47f6eb": {
+      "source_id": "US-IL:debtLaw:052ead97b491",
+      "authority_type": "statute",
+      "citation": "Illinois P.A. 104-0149, § 10 (205 ILCS 740/9.1, location-information communications)",
+      "text": "Any collection agency communicating with any person other than the debtor for the purpose of acquiring location information about the debtor shall: (1) identify himself or herself, state that he or she is confirming or correcting location information concerning the consumer, and, only if expressly requested, identify his or her employer; (2) not state that the consumer owes any debt; (3) not communicate with any person more than once unless requested to do so by the person or unless the collection agency reasonably believes that the earlier response of the person is erroneous or incomplete and that the person now has correct or complete location information; (4) not communicate by postcard; (5) not use any language or symbol on any envelope or in the contents of any communication effected by mail or telegram that indicates that the collection agency is in the debt collection business or that the communication relates to the collection of a debt; and (6) not communicate with any person other than the debtor's attorney after the collection agency knows the debtor is represented by an attorney with regard to the subject debt and has knowledge of or can readily ascertain the attorney's name and address, unless the attorney fails to respond within a reasonable period of time, not less than 30 days, to communication from the collection agency. This Section applies to a collection agency or debt buyer only when engaged in the collection of consumer debt.",
+      "text_sha256": "b11a3b7410b232d786e0375f13a0b55da84cc6662df93ff7f182f016385f7cef",
+      "publisher_sha256": "67085d04d4bc7bac655f114a6c7048b0a82bdd9f8290a6c2d5a199f646513637",
+      "retrieved_at": "2026-11-20T18:35:16.988176+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Public Act 104-0149 (2025 enacted text)"
     }
   },
   "fault_allocation": {

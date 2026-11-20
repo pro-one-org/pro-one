@@ -23,6 +23,7 @@ def build(path):
     with SQLiteNormalizedCorpus(Path(path)) as store:
         for provider, selector, raw, timestamp in retained_observations():
             store.ingest(provider, selector, raw, retrieved_at=timestamp, replay=True)
+        store.check_retained_versions()
         return store.stats(include_relationships=True)
 
 
