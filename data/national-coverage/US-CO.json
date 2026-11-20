@@ -333,6 +333,18 @@
         "retrieved_at": "2026-11-20T18:21:55.148269+00:00",
         "sha256": "b6a26aff3ae01fb4910f1e3b4726f351f8f73c49cf637e6232492cf2e49406a3"
       }
+    },
+    "US-CO:response:06aacd38e750": {
+      "category": "response",
+      "title": "Colo. R. Civ. P. 12(a)(1) (Rule Change 2024(08))",
+      "url": "https://www.coloradojudicial.gov/sites/default/files/2024-05/Rule%20Change%202024%2808%29.pdf",
+      "locator": "Colo. R. Civ. P. 12(a)(1) (Rule Change 2024(08))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:40:42.159461+00:00",
+        "sha256": "54604116264f7d15be39a099500d2d3b2e76adda1bc3632039081493e94701b5"
+      }
     }
   },
   "court_directory": [
@@ -573,6 +585,20 @@
       "language": "en",
       "edition": "Colorado signed H.B. 25-1249, § 3 (operative branch because H.B. 25-1168 became law)",
       "effective_from": "2026-01-01"
+    },
+    "dafdaeaa171caffa1670c593fab876": {
+      "source_id": "US-CO:response:06aacd38e750",
+      "authority_type": "court_rule",
+      "citation": "Colo. R. Civ. P. 12(a)(1) (Rule Change 2024(08))",
+      "text": "(a) When Presented. (1) A defendant shall file his answer or other response within 21 days after the service of the summons and complaint, except as otherwise provided by rule or statute. The filing of a motion permitted under this Rule alters these periods of time, as follows: (A) if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleadings shall be filed within 14 days after notice of the court's action; (B) if the court grants a motion for a more definite statement, or for a statement in separate counts or defenses, the responsive pleadings shall be filed within 14 days after the service of the more definite statement or amended pleading.",
+      "text_sha256": "32913775968c98a7f5e5095ad69541ad9dd307be23e273198983f80eebcc0ff6",
+      "publisher_sha256": "54604116264f7d15be39a099500d2d3b2e76adda1bc3632039081493e94701b5",
+      "retrieved_at": "2026-11-20T18:40:42.159461+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Colorado Supreme Court Rule Change 2024(08), adopted and effective May 2, 2024",
+      "court": "Colorado courts applying the ordinary civil rules",
+      "effective_from": "2024-05-02"
     }
   },
   "fault_allocation": {

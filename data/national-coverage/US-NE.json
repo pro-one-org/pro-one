@@ -355,6 +355,18 @@
         "retrieved_at": "2026-11-20T18:35:17.063918+00:00",
         "sha256": "9a109fa07a22f645134c118f7c10b14dff3e8fa50abc5082bf150f8e534cee79"
       }
+    },
+    "US-NE:response:e4b9aef97e7f": {
+      "category": "response",
+      "title": "Neb. Ct. R. Pldg. § 6-1112(a) (time to plead or move)",
+      "url": "https://nebraskajudicial.gov/book/export/html/24475",
+      "locator": "Neb. Ct. R. Pldg. § 6-1112(a) (time to plead or move)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:42:12.471453+00:00",
+        "sha256": "4c15d19c613858e0544cac7f79b2854e3c57cf4d4a8a483fd3d981f1af7336b6"
+      }
     }
   },
   "court_directory": [
@@ -610,6 +622,18 @@
       "retrieved_at": "2026-11-20T18:35:17.063918+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "294b9fdcaa5c660d0a17c3c6694340": {
+      "source_id": "US-NE:response:e4b9aef97e7f",
+      "authority_type": "court_rule",
+      "citation": "Neb. Ct. R. Pldg. § 6-1112(a) (time to plead or move)",
+      "text": "(a) When Presented. (1) A defendant shall serve an answer within 30 days after being served with the summons and complaint or completion of service by publication. (2) A party served with a pleading stating a cross-claim against that party shall serve an answer thereto within 30 days after being served. A plaintiff shall serve a reply to a counterclaim in the answer within 30 days after being served with the answer, or, if a reply is ordered by the court, within 15 days after service of the order, unless the order otherwise directs. (3) [Reserved] (4) Unless a different time is fixed by court order, the service of a motion permitted under this rule alters these periods of time as follows: (A) if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within 20 days after notice of the court's action; or (B) if the court grants a motion for a more definite statement, the responsive pleading shall be served within 20 days after the service of the more definite statement.",
+      "text_sha256": "ade36e77eed5f036a78ca7d107ddc96a69d1205136a3861392e1bba73479e01b",
+      "publisher_sha256": "4c15d19c613858e0544cac7f79b2854e3c57cf4d4a8a483fd3d981f1af7336b6",
+      "retrieved_at": "2026-11-20T18:42:12.471453+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Nebraska courts applying the Rules of Pleading in Civil Cases"
     }
   },
   "fault_allocation": {

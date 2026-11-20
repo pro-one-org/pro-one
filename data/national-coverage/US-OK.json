@@ -380,6 +380,18 @@
         "retrieved_at": "2026-11-20T18:32:56.487792+00:00",
         "sha256": "ef11f2943cad8c98c36d637df452da8f67d79178783bef0e4091fc5ac81801b2"
       }
+    },
+    "US-OK:debtLaw:a34838bebf14": {
+      "category": "debtLaw",
+      "title": "Okla. Stat. tit. 14A, § 5-108 (consumer sales, leases and loans)",
+      "url": "https://www.oscn.net/applications/oscn/deliverdocument.asp?citeid=65902",
+      "locator": "Okla. Stat. tit. 14A, § 5-108 (consumer sales, leases and loans)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:39:37.725444+00:00",
+        "sha256": "6490bf14ff38e910308d5dfb78d40dbff1d9315fd9c9db1a20e4c7b131e73522"
+      }
     }
   },
   "court_directory": [
@@ -608,6 +620,18 @@
       "retrieved_at": "2026-11-20T18:32:56.487792+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "72d41ddbe8d0635c3ee09e5e57e11e": {
+      "source_id": "US-OK:debtLaw:a34838bebf14",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 14A, § 5-108 (consumer sales, leases and loans)",
+      "text": "(1) With respect to a consumer credit sale, consumer lease, or consumer loan, if the court as a matter of law finds the agreement or any clause of the agreement to have been unconscionable at the time it was made the court may refuse to enforce the agreement, or it may enforce the remainder of the agreement without the unconscionable clause, or it may so limit the application of any unconscionable clause as to avoid any unconscionable result. (2) If it is claimed or appears to the court that the agreement or any clause thereof may be unconscionable the parties shall be afforded a reasonable opportunity to present evidence as to its setting, purpose, and effect to aid the court in making the determination. (3) For the purposes of this section, a charge or practice expressly permitted by this act is not in itself unconscionable.",
+      "text_sha256": "e229d376f7dfefc4345dbc33a0840f8d90f604ac6f46cf31ce5c5518da0792de",
+      "publisher_sha256": "6490bf14ff38e910308d5dfb78d40dbff1d9315fd9c9db1a20e4c7b131e73522",
+      "retrieved_at": "2026-11-20T18:39:37.725444+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1969-07-01"
     }
   },
   "fault_allocation": {

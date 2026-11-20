@@ -454,6 +454,18 @@
         "retrieved_at": "2026-11-20T16:16:29.386673+00:00",
         "sha256": "54937e2e8e80553cd2956fa0efc0465108f0a0214d46310d58f5db4df3a56a70"
       }
+    },
+    "US-IA:response:8ca416f3734e": {
+      "category": "response",
+      "title": "Iowa R. Civ. P. 1.303(1)–(3) (time for motion or answer)",
+      "url": "https://www.legis.iowa.gov/docs/ACO/CourtRulesChapter/09-30-2026.1.pdf",
+      "locator": "Iowa R. Civ. P. 1.303(1)–(3) (time for motion or answer)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:40:43.165942+00:00",
+        "sha256": "ae6ecf5e9a558a4f80cd0e63a5bc3229fb7681ecd5946a4ca8fbe1773f7c56b6"
+      }
     }
   },
   "court_directory": [
@@ -720,6 +732,19 @@
       "language": "en",
       "edition": "2026 Iowa Code",
       "court": "Iowa District Court sitting in small claims"
+    },
+    "2d3441a78ba3f28b5c58ee27f64ffb": {
+      "source_id": "US-IA:response:8ca416f3734e",
+      "authority_type": "court_rule",
+      "citation": "Iowa R. Civ. P. 1.303(1)–(3) (time for motion or answer)",
+      "text": "1.303(1) Unless otherwise provided, the defendant, respondent, or other party shall serve, and within a reasonable time thereafter file, a motion or answer within 20 days after the service of the original notice and petition upon such party. 1.303(2) Any statute of Iowa which specifically requires response by a particular party, or in a particular action, within a specified time, shall govern the time for serving, and within a reasonable time thereafter filing, a motion or answer in such cases. 1.303(3) A defendant, respondent, or other party served in a manner prescribed by an order of court shall serve, and within a reasonable time thereafter file, a motion or answer on or before the date fixed.",
+      "text_sha256": "9d05eea9622038977d2490382ad519639d11840cac31557f80fe8636a0b64048",
+      "publisher_sha256": "ae6ecf5e9a558a4f80cd0e63a5bc3229fb7681ecd5946a4ca8fbe1773f7c56b6",
+      "retrieved_at": "2026-11-20T18:40:43.165942+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Iowa courts applying the ordinary civil rules",
+      "edition": "Iowa Rules of Civil Procedure chapter PDF dated September 30, 2026"
     }
   },
   "fault_allocation": {

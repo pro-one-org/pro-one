@@ -347,6 +347,18 @@
         "retrieved_at": "2026-11-20T16:41:34.739544+00:00",
         "sha256": "22ec3a0556439cef64be7bc81efa054093dfc04d3c4f7f421ab56c2cdb0f3ca5"
       }
+    },
+    "US-DE:debtLaw:8a0a1fb0ccad": {
+      "category": "debtLaw",
+      "title": "5 Del. C. § 2236 (licensed short-term loan collection costs)",
+      "url": "https://delcode.delaware.gov/title5/c022/sc03/index.html",
+      "locator": "5 Del. C. § 2236 (licensed short-term loan collection costs)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:39:01.639212+00:00",
+        "sha256": "21818593323092a34cb8c117468f18129632095802d2c72cb7bf402fc7b24279"
+      }
     }
   },
   "court_directory": [
@@ -584,6 +596,17 @@
       "text_sha256": "1093741d03b8cf491451b9b0afe4d1081f18f73b69d35d7ec098c7038d28ff1b",
       "publisher_sha256": "22ec3a0556439cef64be7bc81efa054093dfc04d3c4f7f421ab56c2cdb0f3ca5",
       "retrieved_at": "2026-11-20T16:41:34.739544+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "f25e4a7391f8234b4340b27a69cfd2": {
+      "source_id": "US-DE:debtLaw:8a0a1fb0ccad",
+      "authority_type": "statute",
+      "citation": "5 Del. C. § 2236 (licensed short-term loan collection costs)",
+      "text": "In the event a borrower defaults under the terms of a loan, the licensee may, if the borrower’s account is referred to an attorney (not a regularly salaried employee of the licensee) or to a third party for collection and if the agreement governing, or the bond, note or other evidence of, the loan so provides, charge and collect from the borrower a reasonable attorneys’ fee. In addition, following a borrower’s default, the licensee may, if the agreement governing, or the bond, note or other evidence of, the loan so provides, recover from the borrower all court, alternative dispute resolution or other collection costs (including, without limitation, fees and charges of collection agencies) actually incurred by the licensee.",
+      "text_sha256": "acb9bd315621d3c8376504cce0763e142c22f03bf786b8b8c6d856ca8a5cbc39",
+      "publisher_sha256": "21818593323092a34cb8c117468f18129632095802d2c72cb7bf402fc7b24279",
+      "retrieved_at": "2026-11-20T18:39:01.639212+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

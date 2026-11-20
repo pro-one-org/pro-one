@@ -435,6 +435,18 @@
         "retrieved_at": "2026-11-20T17:46:43.464073+00:00",
         "sha256": "bb946bbe0039a0a55ddfae3828ac14c669d6d43b45f977a8bef67980072d2a69"
       }
+    },
+    "US-VA:debtLaw:ddc6588f736f": {
+      "category": "debtLaw",
+      "title": "Va. Code § 6.2-1816(20)–(22) (licensed short-term loan collections)",
+      "url": "https://law.lis.virginia.gov/vacode/title6.2/chapter18/section6.2-1816/",
+      "locator": "Va. Code § 6.2-1816(20)–(22) (licensed short-term loan collections)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:39:37.862648+00:00",
+        "sha256": "853f41ae7d9d9da0e19a4f652f89bc83c0efc94828312df2e821420c6e913d6f"
+      }
     }
   },
   "court_directory": [
@@ -711,6 +723,17 @@
       "decision_date": "2025-01-16",
       "opinion_role": "majority",
       "procedural_posture": "Review of an appellate decision reversing a judgment on a negligence verdict arising from a motor-vehicle collision."
+    },
+    "5e8d472d0d625cab7d0a987266cd8a": {
+      "source_id": "US-VA:debtLaw:ddc6588f736f",
+      "authority_type": "statute",
+      "citation": "Va. Code § 6.2-1816(20)–(22) (licensed short-term loan collections)",
+      "text": "20. In collecting or attempting to collect a short-term loan, a licensee shall comply with the restrictions and prohibitions applicable to debt collectors contained in the Fair Debt Collection Practices Act (15 U.S.C. § 1692 et seq.) regarding harassment or abuse, false or misleading misrepresentations, and unfair practices in collections. 21. A licensee shall not contact a borrower for any reason other than (i) for the borrower's benefit regarding upcoming payments, options for obtaining loans, payment options, payment due dates, the effect of default, or, after default, receiving payments or other actions permitted by the licensee; (ii) to advise the borrower of missed payments or dishonored checks; or (iii) to assist the transmittal of payments via a third-party mechanism. 22. A short-term loan agreement shall not be sold or otherwise assigned to any other person who is not also a licensee, and if a loan agreement or its servicing is sold or assigned to another licensee, the buyer or assignee of the loan agreement shall be subject to the same obligations under this chapter that apply to the selling or assigning licensee. If a licensee sells or assigns a short-term loan or its servicing, the licensee shall provide to the borrower written notice and the information needed to make future payments no later than 10 days before the borrower's next payment due date.",
+      "text_sha256": "36713cefa8e0a1680fd98e290fd1aa9ebf318a27c05a350bbd2992d330ee13ea",
+      "publisher_sha256": "853f41ae7d9d9da0e19a4f652f89bc83c0efc94828312df2e821420c6e913d6f",
+      "retrieved_at": "2026-11-20T18:39:37.862648+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

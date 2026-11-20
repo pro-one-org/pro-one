@@ -257,6 +257,18 @@
         "retrieved_at": "2026-11-20T18:01:54.708216+00:00",
         "sha256": "dbea79f04278558d5377e36b7da21d8ee6fe832fcc317371abb041a2f221d1d8"
       }
+    },
+    "US-GA:premises:009c2653d6fb": {
+      "category": "premises",
+      "title": "Georgia CVS Pharmacy, LLC v. Carmichael, 316 Ga. 718 (2023) (third-party criminal conduct)",
+      "url": "https://www.gasupreme.us/wp-content/uploads/2023/06/s22g0527.pdf",
+      "locator": "Georgia CVS Pharmacy, LLC v. Carmichael, 316 Ga. 718 (2023) (third-party criminal conduct)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:43:05.115389+00:00",
+        "sha256": "e7ab491a703cd9b7ae1f27904215bf7dfcd651a4f000c55011c2c8d5fdeff5f2"
+      }
     }
   },
   "court_directory": [
@@ -457,6 +469,22 @@
       "language": "en",
       "edition": "Georgia enrolled and signed Safe at Home Act (2024)",
       "effective_from": "2024-07-01"
+    },
+    "0ece64899795f89b1001c553fe9d95": {
+      "source_id": "US-GA:premises:009c2653d6fb",
+      "authority_type": "opinion",
+      "citation": "Georgia CVS Pharmacy, LLC v. Carmichael, 316 Ga. 718 (2023) (third-party criminal conduct)",
+      "text": "As a general rule, in order to recover on a premises liability claim arising from third-party criminal conduct, a plaintiff must present evidence of a duty, a breach of that duty, causation, and damages. See Goldstein, Garber & Salama, LLC v. J. B., 300 Ga. 840, 841-842 (1) (797 SE2d 87) (2017); Lau’s Corp., 261 Ga. at 492. In our first question to the parties, we asked whether and how the concept of reasonable foreseeability informs each of these elements — that is, whether reasonable foreseeability is part of the plaintiff’s burden to prove the elements of duty, breach, and causation. We hold that the reasonable foreseeability of third-party criminal conduct is properly considered as part of a proprietor’s duty to exercise ordinary care in keeping the premises and approaches safe under OCGA § 51-3-1 although considerations of foreseeability also inform other elements of a premises liability claim, as we will discuss below.",
+      "text_sha256": "d9c381b97a71c4fd2c0bfd964166770682e57aefadc3c2874cd4840f26c0dbad",
+      "publisher_sha256": "e7ab491a703cd9b7ae1f27904215bf7dfcd651a4f000c55011c2c8d5fdeff5f2",
+      "retrieved_at": "2026-11-20T18:43:05.115389+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2023-06-29",
+      "court": "Supreme Court of Georgia",
+      "decision_date": "2023-06-29",
+      "opinion_role": "majority",
+      "procedural_posture": "Consolidated certiorari review concerning premises liability for third-party criminal conduct. The judgment in Carmichael was affirmed."
     }
   },
   "fault_allocation": {
