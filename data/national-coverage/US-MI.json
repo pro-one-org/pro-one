@@ -347,6 +347,18 @@
         "retrieved_at": "2026-11-20T16:01:53.143207+00:00",
         "sha256": "d1aef373b1951d06f865945fab8d933880f263461a333f73eeaa9920fb04e62c"
       }
+    },
+    "US-MI:consumerLaw:92164aaecc07": {
+      "category": "consumerLaw",
+      "title": "Mich. Comp. Laws § 445.903(1)(a)–(d)",
+      "url": "https://legislature.mi.gov/Laws/MCL?objectName=MCL-445-903",
+      "locator": "Mich. Comp. Laws § 445.903(1)(a)–(d)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:20:53.233511+00:00",
+        "sha256": "c36a4adf711c2fd45cc8d0ba72a3663a1e789ef7a4a71818dc7add0cc7b4e1c6"
+      }
     }
   },
   "court_directory": [
@@ -595,6 +607,17 @@
       "current_as_of": "2026-11-18",
       "publisher_path": "1071850",
       "edition": "Michigan Court Rules Chapter 2 updated through November 18, 2026"
+    },
+    "bee391f5fd57d3df0fc61aac11ae07": {
+      "source_id": "US-MI:consumerLaw:92164aaecc07",
+      "authority_type": "statute",
+      "citation": "Mich. Comp. Laws § 445.903(1)(a)–(d)",
+      "text": "(1) Unfair, unconscionable, or deceptive methods, acts, or practices in the conduct of trade or commerce are unlawful and are defined as follows: (a) Causing a probability of confusion or misunderstanding as to the source, sponsorship, approval, or certification of goods or services. (b) Using deceptive representations or deceptive designations of geographic origin in connection with goods or services. (c) Representing that goods or services have sponsorship, approval, characteristics, ingredients, uses, benefits, or quantities that they do not have or that a person has sponsorship, approval, status, affiliation, or connection that he or she does not have. (d) Representing that goods are new if they are deteriorated, altered, reconditioned, used, or secondhand.",
+      "text_sha256": "f73a95f80020b85e8ee046249184038e734031a9a3b2b6695538153da96beee2",
+      "publisher_sha256": "c36a4adf711c2fd45cc8d0ba72a3663a1e789ef7a4a71818dc7add0cc7b4e1c6",
+      "retrieved_at": "2026-11-20T16:20:53.233511+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

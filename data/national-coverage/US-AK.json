@@ -372,6 +372,18 @@
         "retrieved_at": "2026-11-20T16:16:29.910572+00:00",
         "sha256": "4952e89f4c67e338ab24ef1e012a0ad6a65701f09c97b770a08120e1c26d4d25"
       }
+    },
+    "US-AK:consumerLaw:8b2aeefbd0e6": {
+      "category": "consumerLaw",
+      "title": "Alaska Stat. § 45.50.471(a)–(b)(2)",
+      "url": "https://www.akleg.gov/statutesPDF/Title-45.pdf",
+      "locator": "Alaska Stat. § 45.50.471(a)–(b)(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:20:52.510567+00:00",
+        "sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb"
+      }
     }
   },
   "court_directory": [
@@ -521,6 +533,17 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Alaska District Court"
+    },
+    "3547d481e434893db7f91d89dcbe37": {
+      "source_id": "US-AK:consumerLaw:8b2aeefbd0e6",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 45.50.471(a)–(b)(2)",
+      "text": "(a) Unfair methods of competition and unfair or deceptive acts or practices in the conduct of trade or commerce are declared to be unlawful. (b) The terms “unfair methods of competition” and “unfair or deceptive acts or practices” include the following acts: (1) fraudulently conveying or transferring goods or services by representing them to be those of another; (2) falsely representing or designating the geographic origin of goods or services;",
+      "text_sha256": "f89bf5bbec8db1d7b59eb1ab6d120a50d052df93869ab5b49f59fb9ee515dca1",
+      "publisher_sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb",
+      "retrieved_at": "2026-11-20T16:20:52.510567+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

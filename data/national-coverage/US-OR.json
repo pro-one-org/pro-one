@@ -340,6 +340,18 @@
         "retrieved_at": "2026-11-20T16:16:28.957878+00:00",
         "sha256": "b870c9b691b060ea61a87882543e2a8be89e30ef8733089d22ed4d1408642bdd"
       }
+    },
+    "US-OR:consumerLaw:caf807249bef": {
+      "category": "consumerLaw",
+      "title": "ORS § 646.608(1)(a)–(e)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors646.html",
+      "locator": "ORS § 646.608(1)(a)–(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:20:57.461285+00:00",
+        "sha256": "dfede44588217a24bea040748cd3a7bd4cbd566ced2d8f1dca65e70dda0f1e6e"
+      }
     }
   },
   "court_directory": [
@@ -569,6 +581,18 @@
       "language": "en",
       "edition": "2025 Oregon Revised Statutes",
       "court": "Oregon Circuit Court Small Claims Department"
+    },
+    "e51cbb64e9431997b503a679219577": {
+      "source_id": "US-OR:consumerLaw:caf807249bef",
+      "authority_type": "statute",
+      "citation": "ORS § 646.608(1)(a)–(e)",
+      "text": "(1) A person engages in an unlawful practice if in the course of the person’s business, vocation or occupation the person does any of the following: (a) Passes off real estate, goods or services as the real estate, goods or services of another. (b) Causes likelihood of confusion or of misunderstanding as to the source, sponsorship, approval, or certification of real estate, goods or services. (c) Causes likelihood of confusion or of misunderstanding as to affiliation, connection, or association with, or certification by, another. (d) Uses deceptive representations or designations of geographic origin in connection with real estate, goods or services. (e) Represents that real estate, goods or services have sponsorship, approval, characteristics, ingredients, uses, benefits, quantities or qualities that the real estate, goods or services do not have or that a person has a sponsorship, approval, status, qualification, affiliation, or connection that the person does not have.",
+      "text_sha256": "8925762e9ad23a910d6537ae9c54e09b2564701521ea4373526e3807aa2ad103",
+      "publisher_sha256": "dfede44588217a24bea040748cd3a7bd4cbd566ced2d8f1dca65e70dda0f1e6e",
+      "retrieved_at": "2026-11-20T16:20:57.461285+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 Oregon Revised Statutes"
     }
   },
   "fault_allocation": {

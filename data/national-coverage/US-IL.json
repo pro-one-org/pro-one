@@ -261,6 +261,18 @@
         "retrieved_at": "2026-11-20T15:43:51.280071+00:00",
         "sha256": "ae85320cbdaee0f2fbc550e6ec4ec1740d3e1a953bed0e0fc76c1a40e996192c"
       }
+    },
+    "US-IL:consumerLaw:5f677262bce0": {
+      "category": "consumerLaw",
+      "title": "McIntosh v. Walgreens Boots Alliance, Inc., 2019 IL 123626, ¶ 20",
+      "url": "https://www.illinoiscourts.gov/Resources/064ffe94-8514-4172-9262-62c63dbbe26b/123626.pdf",
+      "locator": "McIntosh v. Walgreens Boots Alliance, Inc., 2019 IL 123626, ¶ 20",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:20:54.354931+00:00",
+        "sha256": "4570b68959941da1ea2ede78e7659a68c6194045fd704bae3167d3a0e0f61d40"
+      }
     }
   },
   "court_directory": [
@@ -400,6 +412,22 @@
       "decision_date": "2000-06-22",
       "opinion_role": "majority",
       "procedural_posture": "Review of dismissal of a personal injury suit. The court applied the general statute after analyzing the potential construction statute exception."
+    },
+    "b7a334d3c92750995e91456c1c40bf": {
+      "source_id": "US-IL:consumerLaw:5f677262bce0",
+      "authority_type": "opinion",
+      "citation": "McIntosh v. Walgreens Boots Alliance, Inc., 2019 IL 123626, ¶ 20",
+      "text": "Section 2 of the statute provides that it is unlawful to engage in “unfair or deceptive acts or practices, including but not limited to the use or employment of any deception, fraud, false pretense, false promise, misrepresentation or the concealment, suppression or omission of any material fact, with intent that others rely upon the concealment, suppression or omission of such material fact *** in the conduct of any trade or commerce.” 815 ILCS 505/2 (West 2014).",
+      "text_sha256": "eda7fba440529a0acbf4f13edf3425bb9010806e9284d94dbcd5f9aedfab72db",
+      "publisher_sha256": "4570b68959941da1ea2ede78e7659a68c6194045fd704bae3167d3a0e0f61d40",
+      "retrieved_at": "2026-11-20T16:20:54.354931+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2019-06-20",
+      "court": "Supreme Court of Illinois",
+      "decision_date": "2019-06-20",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of the dismissal of an action under the Illinois Consumer Fraud Act involving the collection of a bottled-water tax."
     }
   },
   "fault_allocation": {

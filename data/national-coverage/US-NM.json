@@ -207,6 +207,18 @@
         "retrieved_at": "2026-11-20T15:40:20.079501+00:00",
         "sha256": "70a18b24e7ad1bc49b5870b000dd579ad4b2d613a09b200f8304314b81a93ec6"
       }
+    },
+    "US-NM:consumerLaw:75a3dd06e59d": {
+      "category": "consumerLaw",
+      "title": "Salas v. Guadalupe Credit Union, 2025-NMSC-006, ¶ 44",
+      "url": "https://nmonesource.com/nmos/nmsc/en/item/531110/index.do?iframe=true",
+      "locator": "Salas v. Guadalupe Credit Union, 2025-NMSC-006, ¶ 44",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:22:38.477811+00:00",
+        "sha256": "e7e4e039ae496673b788be8df9ef788e22b886649667a0ce613b329dd5acb75b"
+      }
     }
   },
   "court_directory": [
@@ -351,6 +363,22 @@
       "decision_date": "2009-01-12",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from dismissals of personal-injury actions arising out of two vehicle collisions. The court addressed the interplay of the general statute and the provision for minors."
+    },
+    "512e897a4c49c27de12aa938f7764e": {
+      "source_id": "US-NM:consumerLaw:75a3dd06e59d",
+      "authority_type": "opinion",
+      "citation": "Salas v. Guadalupe Credit Union, 2025-NMSC-006, ¶ 44",
+      "text": "The UPA further declares, “Unfair or deceptive trade practices and unconscionable trade practices in the conduct of any trade or commerce are unlawful.” Section 57-12-3.",
+      "text_sha256": "a1884a92ba6fbf7c2a48bc66be5aa58ad5463961843929bb28abf02e8fa05b13",
+      "publisher_sha256": "e7e4e039ae496673b788be8df9ef788e22b886649667a0ce613b329dd5acb75b",
+      "retrieved_at": "2026-11-20T16:22:38.477811+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2024-10-28",
+      "court": "Supreme Court of New Mexico",
+      "decision_date": "2024-10-28",
+      "opinion_role": "majority",
+      "procedural_posture": "Certiorari review of dismissal of a challenge to representation by credit-union staff in a magistrate-court action. The court directed reinstatement of the complaint."
     }
   }
 }

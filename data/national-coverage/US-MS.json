@@ -177,6 +177,18 @@
         "retrieved_at": "2026-11-20T15:43:51.597737+00:00",
         "sha256": "f8d621a027439b430b6253bd730850fb911f3e8621ede4175a7c65f4c4c16100"
       }
+    },
+    "US-MS:consumerLaw:3fb8ec049f31": {
+      "category": "consumerLaw",
+      "title": "State ex rel. Fitch v. Yazaki North America, Inc., No. 2019-CA-00094-SCT, ¶ 17 (Miss. Apr. 30, 2020)",
+      "url": "https://courts.ms.gov/images/Opinions/CO145452.pdf",
+      "locator": "State ex rel. Fitch v. Yazaki North America, Inc., No. 2019-CA-00094-SCT, ¶ 17 (Miss. Apr. 30, 2020)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:20:54.639108+00:00",
+        "sha256": "03849ec8ca3dd99ef48b9d5dcd33e6bc414df4e134e14015f035990400ea55ad"
+      }
     }
   },
   "court_directory": [
@@ -325,6 +337,22 @@
       "decision_date": "2025-03-13",
       "opinion_role": "majority",
       "procedural_posture": "Interlocutory appeal in a personal injury case. The court considered service, the requested extension, and the applicable ordinary negligence limitations period."
+    },
+    "1d3240371fd08ea9acadf302df213a": {
+      "source_id": "US-MS:consumerLaw:3fb8ec049f31",
+      "authority_type": "opinion",
+      "citation": "State ex rel. Fitch v. Yazaki North America, Inc., No. 2019-CA-00094-SCT, ¶ 17 (Miss. Apr. 30, 2020)",
+      "text": "Section 75-24-5(1) of the MCPA prohibits “[u]nfair methods of competition affecting commerce and unfair or deceptive trade practices affecting commerce . . . .” Miss. Code Ann. § 75-24-5(1) (Rev. 2016).",
+      "text_sha256": "f87724a872ff3d9e73ac5db93238c32da0798ef43a08801509bd6dbe951d6f03",
+      "publisher_sha256": "03849ec8ca3dd99ef48b9d5dcd33e6bc414df4e134e14015f035990400ea55ad",
+      "retrieved_at": "2026-11-20T16:20:54.639108+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2020-04-30",
+      "court": "Supreme Court of Mississippi",
+      "decision_date": "2020-04-30",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissal of an Attorney General enforcement action arising from alleged price fixing. The quoted statutory language is from the 2016 edition."
     }
   },
   "fault_allocation": {

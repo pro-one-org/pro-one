@@ -271,6 +271,18 @@
         "retrieved_at": "2026-11-20T15:40:19.160559+00:00",
         "sha256": "88fef303bb9377bc494d802aeb06b5726e11346d84ff903f68b6f3d0d18f7932"
       }
+    },
+    "US-IN:consumerLaw:b78b589a8db3": {
+      "category": "consumerLaw",
+      "title": "State v. TikTok Inc., Nos. 23A-PL-3110 and 23A-PL-3111, ¶ 31 (Ind. Ct. App. Sept. 30, 2024)",
+      "url": "https://public.courts.in.gov/Decisions/api/Document/Opinion?Id=bzvctIEa1piP7LQm6TLz7kDoOE5nIfsoQfx7RRvU4lRD-S32bDI_5fdu6BM3PbvO0",
+      "locator": "State v. TikTok Inc., Nos. 23A-PL-3110 and 23A-PL-3111, ¶ 31 (Ind. Ct. App. Sept. 30, 2024)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:22:38.321090+00:00",
+        "sha256": "43ebd4fd61184cb62f099e305fae32a058173d8996a996c9b367412656b96ae9"
+      }
     }
   },
   "court_directory": [
@@ -451,6 +463,22 @@
       "decision_date": "2022-07-27",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from denial of summary judgment in a personal-injury action. The court separately considered the scope of pandemic tolling orders."
+    },
+    "5dc20aed39004801967db21fa8fdd9": {
+      "source_id": "US-IN:consumerLaw:b78b589a8db3",
+      "authority_type": "opinion",
+      "citation": "State v. TikTok Inc., Nos. 23A-PL-3110 and 23A-PL-3111, ¶ 31 (Ind. Ct. App. Sept. 30, 2024)",
+      "text": "Indiana Code section 24-5-0.5-3(a) (“section 3(a)”) states the relevant operative language of the DCSA: A supplier may not commit an unfair, abusive, or deceptive act, omission, or practice in connection with a consumer transaction. Such an act, omission, or practice by a supplier is a violation of this chapter whether it occurs before, during, or after the transaction. An act, omission, or practice prohibited by this section includes both implicit and explicit misrepresentations.",
+      "text_sha256": "b7b7463245a42622b0b8b76545e244da58bef954c44bb8af68601ce28b533904",
+      "publisher_sha256": "43ebd4fd61184cb62f099e305fae32a058173d8996a996c9b367412656b96ae9",
+      "retrieved_at": "2026-11-20T16:22:38.321090+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2024-09-30",
+      "court": "Court of Appeals of Indiana",
+      "decision_date": "2024-09-30",
+      "opinion_role": "majority",
+      "procedural_posture": "Joint appeals from dismissals of two Attorney General actions under the Deceptive Consumer Sales Act. The court quoted the operative statute in the dispute."
     }
   },
   "fault_allocation": {

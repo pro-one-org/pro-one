@@ -252,6 +252,18 @@
         "retrieved_at": "2026-11-20T15:49:46.354046+00:00",
         "sha256": "400e727b671ca1a90880fd2544f84610d03df71971e1e91591b8763fc24610cb"
       }
+    },
+    "US-AR:consumerLaw:e8f2f161f102": {
+      "category": "consumerLaw",
+      "title": "1995 Ark. Acts 1306, § 1 (Ark. Code Ann. § 4-88-107(a)(1)–(2))",
+      "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F1995%2FPublic%2F1306.pdf",
+      "locator": "1995 Ark. Acts 1306, § 1 (Ark. Code Ann. § 4-88-107(a)(1)–(2))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:20:53.908577+00:00",
+        "sha256": "c5449bb2ef008293c0294f6e0de42f8530e177daa556cd6ba4d7170c3f501b37"
+      }
     }
   },
   "court_directory": [
@@ -418,6 +430,18 @@
       "decision_date": "2002-06-20",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from denial of a motion to compel arbitration. The court discussed ordinary formation elements in reviewing the asserted agreement."
+    },
+    "b1a77d1762bc9da3dcb7342ae6ad13": {
+      "source_id": "US-AR:consumerLaw:e8f2f161f102",
+      "authority_type": "statute",
+      "citation": "1995 Ark. Acts 1306, § 1 (Ark. Code Ann. § 4-88-107(a)(1)–(2))",
+      "text": "(a) Deceptive and unconscionable trade practices made unlawful and prohibited by this chapter include, but are not limited to, the following: (1) Knowingly making a false representation as to the characteristics, ingredients, uses, benefits, alterations, source, sponsorship, approval, or certification of goods or services, or as to whether goods are original or new, or of a particular standard, quality, grade, style, or model; (2) Disparaging the goods, services, or business of another by false or misleading representation of fact;",
+      "text_sha256": "9363791a7a9edd7f145291f10fb3aecbbdadd85f59ae2e472b756a5ec3a5607c",
+      "publisher_sha256": "c5449bb2ef008293c0294f6e0de42f8530e177daa556cd6ba4d7170c3f501b37",
+      "retrieved_at": "2026-11-20T16:20:53.908577+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "1995 Arkansas Acts"
     }
   },
   "fault_allocation": {

@@ -307,6 +307,18 @@
         "retrieved_at": "2026-11-19T19:35:41.762457+00:00",
         "sha256": "79cb106cb75173b5f5424bd436aedd237b6aea708445fb7a701a329d81ad85fe"
       }
+    },
+    "US-NE:consumerLaw:b20c6d0c9ced": {
+      "category": "consumerLaw",
+      "title": "Neb. Rev. Stat. § 59-1602",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=59-1602",
+      "locator": "Neb. Rev. Stat. § 59-1602",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:20:52.892896+00:00",
+        "sha256": "7a4fadd42b7b50500006cf294156a0607dedd2be1da36024192563848563ee9b"
+      }
     }
   },
   "court_directory": [
@@ -516,6 +528,17 @@
       "text_sha256": "01c94d647d021dde873b07f5d61803ca8fe12245ab2d958bb407a2cdee7766c6",
       "publisher_sha256": "79cb106cb75173b5f5424bd436aedd237b6aea708445fb7a701a329d81ad85fe",
       "retrieved_at": "2026-11-19T19:35:41.762457+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "079880e4c41bac7cc1aa9c5127399b": {
+      "source_id": "US-NE:consumerLaw:b20c6d0c9ced",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 59-1602",
+      "text": "Unfair methods of competition and unfair or deceptive acts or practices in the conduct of any trade or commerce shall be unlawful.",
+      "text_sha256": "5d70efecf3b50d2cfd14019c3faae129fdf3e0de2c5d42778904bd743a2aacaf",
+      "publisher_sha256": "7a4fadd42b7b50500006cf294156a0607dedd2be1da36024192563848563ee9b",
+      "retrieved_at": "2026-11-20T16:20:52.892896+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

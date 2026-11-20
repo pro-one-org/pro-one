@@ -430,6 +430,18 @@
         "retrieved_at": "2026-11-20T15:43:52.036794+00:00",
         "sha256": "3bb849217b25f716a2c55d1bddb08a9e3f2225e3641497ab8f0954ab71f62ab5"
       }
+    },
+    "US-TX:consumerLaw:9c1f49160c75": {
+      "category": "consumerLaw",
+      "title": "Vuong v. Luk, No. 01-11-00178-CV (Tex. App. Dec. 19, 2013)",
+      "url": "https://dev-search.txcourts.gov/SearchMedia.aspx?DT=Opinion&MediaID=a12c8196-0215-4b4b-a856-29295b7df1d1&MediaVersionID=a650697e-2345-466f-a227-ee44c6d21d57&coa=coa01",
+      "locator": "Vuong v. Luk, No. 01-11-00178-CV (Tex. App. Dec. 19, 2013)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:20:55.174282+00:00",
+        "sha256": "bed17ce7abbd12a61edf95c54e3a70050d328115cb2a3586cd092ec934383ad2"
+      }
     }
   },
   "court_directory": [
@@ -685,6 +697,22 @@
       "decision_date": "2009-12-22",
       "opinion_role": "majority",
       "procedural_posture": "Review of summary judgment on limitations in a negligence and premises liability action involving latent occupational disease."
+    },
+    "a8d9dbd5adc8d8d7666bab33d3b449": {
+      "source_id": "US-TX:consumerLaw:9c1f49160c75",
+      "authority_type": "opinion",
+      "citation": "Vuong v. Luk, No. 01-11-00178-CV (Tex. App. Dec. 19, 2013)",
+      "text": "The subsections provide that false, misleading, or deceptive acts or practices include: (2) causing confusion or misunderstanding as to the source, sponsorship, approval, or certification of goods or services; . . . (5) representing that goods or services have sponsorship, approval, characteristics, ingredients, uses, benefits, or quantities which they do not have or that a person has a sponsorship, approval, status, affiliation, or connection which he does not; . . . (12) representing that an agreement confers or involves rights, remedies, or obligations which it does not have or involve, or which are prohibited by law; . . . (20) representing that a guarantee or warranty confers or involves rights or remedies which it does not have or involve . . . ; [and] (24) failing to disclose information concerning goods or services which was known at the time of the transaction if such failure 17 to disclose such information was intended to induce the consumer into a transaction into which the consumer would not have entered had the information been disclosed. Id. § 17.46(b)(2), (5), (12), (20), and (24).",
+      "text_sha256": "3c668bc4d8b661d447d1c165fc8838abeb89031f93e5c4aacefe71bf20dee9ce",
+      "publisher_sha256": "bed17ce7abbd12a61edf95c54e3a70050d328115cb2a3586cd092ec934383ad2",
+      "retrieved_at": "2026-11-20T16:20:55.174282+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2013-12-19",
+      "court": "Texas First District Court of Appeals",
+      "decision_date": "2013-12-19",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a judgment in a dispute about professional services and a business transaction. The opinion quotes selected enumerated DTPA practices."
     }
   },
   "fault_allocation": {

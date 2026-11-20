@@ -320,6 +320,18 @@
         "retrieved_at": "2026-11-20T15:40:19.184815+00:00",
         "sha256": "a0176467f9e0b54a37151b386244b49935440afad82b104274a9678344be5366"
       }
+    },
+    "US-OK:consumerLaw:a0bf98492f10": {
+      "category": "consumerLaw",
+      "title": "Okla. Stat. tit. 15, § 753(1)–(5)",
+      "url": "https://www.oscn.net/applications/oscn/deliverdocument.asp?citeid=436245",
+      "locator": "Okla. Stat. tit. 15, § 753(1)–(5)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:20:54.659965+00:00",
+        "sha256": "6d5dbd85aa840465cf2de863b640a03a7a771398787c624d9edc753d4e25a9f5"
+      }
     }
   },
   "court_directory": [
@@ -491,6 +503,18 @@
       "language": "en",
       "effective_from": "2017-11-01",
       "edition": "OSCN section publication citing 2017 Oklahoma Acts chapters 221 and 378"
+    },
+    "e238266c127b36e11cd992bc4a7bee": {
+      "source_id": "US-OK:consumerLaw:a0bf98492f10",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 15, § 753(1)–(5)",
+      "text": "A person engages in a practice which is declared to be unlawful and deemed a Class D1 felony offense under the Oklahoma Consumer Protection Act when, in the course of the person's business, the person: 1. Represents, knowingly or with reason to know, that the subject of a consumer transaction is of a particular make or brand, when it is of another; 2. Makes a false or misleading representation, knowingly or with reason to know, as to the source, sponsorship, approval, or certification of the subject of a consumer transaction; 3. Makes a false or misleading representation, knowingly or with reason to know, as to affiliation, connection, association with, or certification by another; 4. Makes a false or misleading representation or designation, knowingly or with reason to know, of the geographic origin of the subject of a consumer transaction; 5. Makes a false representation, knowingly or with reason to know, as to the characteristics, ingredients, uses, benefits, alterations, or quantities of the subject of a consumer transaction or a false representation as to the sponsorship, approval, status, affiliation or connection of a person therewith;",
+      "text_sha256": "e2af6419e5a4a8c0d7d087a1617751e50b7bc468c002e90236e23267e84f7837",
+      "publisher_sha256": "6d5dbd85aa840465cf2de863b640a03a7a771398787c624d9edc753d4e25a9f5",
+      "retrieved_at": "2026-11-20T16:20:54.659965+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2026-01-01"
     }
   },
   "fault_allocation": {

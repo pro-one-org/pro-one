@@ -269,6 +269,18 @@
         "retrieved_at": "2026-11-20T15:43:51.231256+00:00",
         "sha256": "6a0c67d134c65001da6f87257442eb8b1bfc26832983431ea5e0696d40981f21"
       }
+    },
+    "US-PA:consumerLaw:bd518d8c885c": {
+      "category": "consumerLaw",
+      "title": "Gregg v. Ameriprise Financial, Inc., No. 29 WAP 2019 (Pa. Feb. 17, 2021)",
+      "url": "https://www.pacourts.us/assets/opinions/Supreme/out/j-31-2020mo%20-%20104690395127764804.pdf",
+      "locator": "Gregg v. Ameriprise Financial, Inc., No. 29 WAP 2019 (Pa. Feb. 17, 2021)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:22:38.296808+00:00",
+        "sha256": "fd6d368933e4da9b9fb14b429e6dbabfa167e8431df6e29f3b852588256b4e50"
+      }
     }
   },
   "court_directory": [
@@ -470,6 +482,22 @@
       "decision_date": "2017-11-22",
       "opinion_role": "majority",
       "procedural_posture": "Appeal by allowance in a medical professional liability survival action. The majority reproduced the ordinary statute and applied the specific medical professional liability provision."
+    },
+    "0c9b607d93660ab6d23e89f125af39": {
+      "source_id": "US-PA:consumerLaw:bd518d8c885c",
+      "authority_type": "opinion",
+      "citation": "Gregg v. Ameriprise Financial, Inc., No. 29 WAP 2019 (Pa. Feb. 17, 2021)",
+      "text": "Apparently dissatisfied with this restrictive interpretation, in 1996, the General Assembly expanded the unlawful conduct barred by the catch-all provision so as also to prohibit deceptive conduct. The resulting iteration bars “engaging in any other fraudulent or deceptive conduct which creates a likelihood of confusion or of misunderstanding.” 73 P.S. § 201-2(4)(xxi) (1996).",
+      "text_sha256": "d5602a4d9ad0a9364c53e198be6d403dae5c6bfd73ebf25e3091db333e4baf71",
+      "publisher_sha256": "fd6d368933e4da9b9fb14b429e6dbabfa167e8431df6e29f3b852588256b4e50",
+      "retrieved_at": "2026-11-20T16:22:38.296808+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2021-02-17",
+      "court": "Supreme Court of Pennsylvania",
+      "decision_date": "2021-02-17",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of judgment in a private consumer action based on insurance and investment sales. The court considered the 1996 amendment to the consumer statute."
     }
   },
   "fault_allocation": {
