@@ -305,6 +305,30 @@
         "retrieved_at": "2026-11-20T18:35:16.571755+00:00",
         "sha256": "a377578c1ad6ca01ceca1ebc204c499c057236fc37976bfa77a6bad7966a046d"
       }
+    },
+    "US-MO:contract_damages:c5db2b35da32": {
+      "category": "contract_damages",
+      "title": "Mo. Rev. Stat. § 400.2-714",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=400.2-714",
+      "locator": "Mo. Rev. Stat. § 400.2-714",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:39:55.404839+00:00",
+        "sha256": "4bd68ec5cdd50e5783cac5351218225d83842af4151f081d174d1f94670265ee"
+      }
+    },
+    "US-MO:sale_price_recovery:ec3f4654fd36": {
+      "category": "sale_price_recovery",
+      "title": "Mo. Rev. Stat. § 400.2-709",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?bid=22339&section=400.2-709",
+      "locator": "Mo. Rev. Stat. § 400.2-709",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:39:55.695835+00:00",
+        "sha256": "646b94f5ba3c99b921578254e529c9a3107f6b7bc0dd5fc84f88cf2165b80099"
+      }
     }
   },
   "court_directory": [
@@ -500,6 +524,30 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "2017-08-28"
+    },
+    "6d6d607eac1e14bc0dbc6c7ca30110": {
+      "source_id": "US-MO:contract_damages:c5db2b35da32",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 400.2-714",
+      "text": "(1) Where the buyer has accepted goods and given notification (subsection (3) of section 400.2-607) he may recover as damages for any nonconformity of tender the loss resulting in the ordinary course of events from the seller's breach as determined in any manner which is reasonable. (2) The measure of damages for breach of warranty is the difference at the time and place of acceptance between the value of the goods accepted and the value they would have had if they had been as warranted, unless special circumstances show proximate damages of a different amount. (3) In a proper case any incidental and consequential damages under section 400.2-715 may also be recovered.",
+      "text_sha256": "4ed45d35117bebac4cb2f7cc9a8f4875a62592b8cc94916c7c5249d19683f531",
+      "publisher_sha256": "4bd68ec5cdd50e5783cac5351218225d83842af4151f081d174d1f94670265ee",
+      "retrieved_at": "2026-11-20T22:39:55.404839+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1963-08-28"
+    },
+    "51bb24fffef532c0459eaeb4916102": {
+      "source_id": "US-MO:sale_price_recovery:ec3f4654fd36",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 400.2-709",
+      "text": "(1) When the buyer fails to pay the price as it becomes due the seller may recover, together with any incidental damages under section 400.2-710, the price (a) of goods accepted or of conforming goods lost or damaged within a commercially reasonable time after risk of their loss has passed to the buyer; and (b) of goods identified to the contract if the seller is unable after reasonable effort to resell them at a reasonable price or the circumstances reasonably indicate that such effort will be unavailing. (2) Where the seller sues for the price he must hold for the buyer any goods which have been identified to the contract and are still in his control except that if resale becomes possible he may resell them at any time prior to the collection of the judgment. The net proceeds of any such resale must be credited to the buyer and payment of the judgment entitles him to any goods not resold. (3) After the buyer has wrongfully rejected or revoked acceptance of the goods or has failed to make a payment due or has repudiated (section 400.2-610), a seller who is held not entitled to the price under this section shall nevertheless be awarded damages for nonacceptance under section 400.2-708.",
+      "text_sha256": "71be32604e587dafe462143d7f15938eea308362d5f9d0b5dfe0e61db8facd38",
+      "publisher_sha256": "646b94f5ba3c99b921578254e529c9a3107f6b7bc0dd5fc84f88cf2165b80099",
+      "retrieved_at": "2026-11-20T22:39:55.695835+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1963-08-28"
     }
   },
   "fault_allocation": {

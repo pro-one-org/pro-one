@@ -29,6 +29,7 @@ SUBJECTS = {
     "wageLaw": ("employment", "wage_payment"),
     "wage_separation": ("employment", "wage_separation"),
     "wage_enforcement": ("employment", "wage_enforcement"),
+    "wage_preemption": ("employment", "wage_preemption"),
     "negligence_duty": ("torts", "negligence_duty"),
     "negligence_elements": ("torts", "negligence_elements"),
     "negligence_causation": ("torts", "negligence_causation"),
@@ -62,6 +63,8 @@ SUBJECTS = {
     "employment_contract_formation": ("contracts", "employment_contract_formation"),
     "contract_breach": ("contracts", "contract_breach"),
     "contract_damages": ("contracts", "accepted_goods_damages"),
+    "general_contract_damages": ("contracts", "general_contract_damages"),
+    "sale_price_recovery": ("contracts", "sale_price_recovery"),
 }
 
 

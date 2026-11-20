@@ -201,6 +201,18 @@
         "retrieved_at": "2026-11-20T18:16:58.858913+00:00",
         "sha256": "858eb91bf518ae3e37ff64411fe0b11a31d94156d91c446235f43584382332c6"
       }
+    },
+    "US-MS:wage_preemption:b49932cd6aea": {
+      "category": "wage_preemption",
+      "title": "2013 Miss. H.B. 141, § 1(1) (local minimum wage and leave mandates)",
+      "url": "https://billstatus.ls.state.ms.us/documents/2013/pdf/HB/0100-0199/HB0141SG.pdf",
+      "locator": "2013 Miss. H.B. 141, § 1(1) (local minimum wage and leave mandates)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:39:55.766698+00:00",
+        "sha256": "d3fcda1c2aceb4cba59b0b498f9a26236e16540c3f1de8b794a78fe700fff213"
+      }
     }
   },
   "court_directory": [
@@ -378,6 +390,19 @@
       "language": "en",
       "edition": "Mississippi S.B. 2461 as signed April 21, 2022",
       "effective_from": "2022-04-21"
+    },
+    "32b0583b2d82359a8773d99a48df26": {
+      "source_id": "US-MS:wage_preemption:b49932cd6aea",
+      "authority_type": "statute",
+      "citation": "2013 Miss. H.B. 141, § 1(1) (local minimum wage and leave mandates)",
+      "text": "(1) No county, board of supervisors of a county, municipality or governing authority of a municipality is authorized to establish a mandatory, minimum living wage rate, minimum number of vacation or sick days, whether paid or unpaid, that would regulate how a private employer pays its employees. Each county, board of supervisors of a county, municipality or governing authority of a municipality shall be prohibited from establishing a mandatory, minimum living wage rate, minimum number of vacation or sick days, whether paid or unpaid, that would regulate how a private employer pays its employees.",
+      "text_sha256": "8d3b0de49329fa1390978f714897da070ada1fff283dcff09476773e64865635",
+      "publisher_sha256": "d3fcda1c2aceb4cba59b0b498f9a26236e16540c3f1de8b794a78fe700fff213",
+      "retrieved_at": "2026-11-20T22:39:55.766698+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Mississippi enacted H.B. 141, effective July 1, 2013",
+      "effective_from": "2013-07-01"
     }
   },
   "fault_allocation": {

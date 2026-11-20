@@ -460,6 +460,17 @@ class NationalCoverageTests(unittest.TestCase):
                 self.assertIn(citation, provider.fetch(key).source["citation"]["preferred_citation"])
                 self.assertFalse(provider.search(matter.model_copy(update={"state": "Wisconsin"})))
 
+    def test_wage_preemption_does_not_establish_a_wage_payment_rule(self):
+        provider = RetainedLegislativeResearch()
+        for state, citation in (("Alabama", "Act 2016-18"), ("Mississippi", "H.B. 141")):
+            with self.subTest(state=state):
+                matter = ResearchMatter(country="US", state=state, legal_area="employment",
+                                        topics=["wage_preemption"], authority_types=["statute"],
+                                        authority_status="historical")
+                key, = provider.search(matter)
+                self.assertIn(citation, provider.fetch(key).source["citation"]["preferred_citation"])
+                self.assertFalse(provider.search(matter.model_copy(update={"topics": ["wage_payment"]})))
+
     def test_replay_idempotence_separate_courts_and_historical_federal_granules(self):
         with TemporaryDirectory() as folder:
             path = Path(folder) / "corpus.sqlite3"

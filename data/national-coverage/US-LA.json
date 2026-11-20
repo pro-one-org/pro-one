@@ -362,6 +362,42 @@
         "retrieved_at": "2026-11-20T18:32:56.662705+00:00",
         "sha256": "452dba6b3f68fd9f6212491481629606feecc5fa8bb27a61118922a30c769745"
       }
+    },
+    "US-LA:contract_breach:a2b5813dec43": {
+      "category": "contract_breach",
+      "title": "La. Civ. Code art. 1994",
+      "url": "https://www.legis.la.gov/legis/Law.aspx?d=109248",
+      "locator": "La. Civ. Code art. 1994",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:39:55.345374+00:00",
+        "sha256": "47c9f4280536d5b665f438c8b4d8e29202f0cab04d0de3b618f301a25f001a4d"
+      }
+    },
+    "US-LA:general_contract_damages:95ce34554eb4": {
+      "category": "general_contract_damages",
+      "title": "La. Civ. Code art. 1995",
+      "url": "https://legis.la.gov/legis/Law.aspx?d=109249",
+      "locator": "La. Civ. Code art. 1995",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:39:55.392831+00:00",
+        "sha256": "4ca80a7bf060d9046b7899bd0e635af25b334e56d41043eef0a5d5060984ed28"
+      }
+    },
+    "US-LA:general_contract_damages:c8d14820ed40": {
+      "category": "general_contract_damages",
+      "title": "La. Civ. Code art. 1996",
+      "url": "https://legis.la.gov/legis/Law.aspx?d=109250",
+      "locator": "La. Civ. Code art. 1996",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:39:55.437822+00:00",
+        "sha256": "4eb4db891eb0276260030391af003b930f69f010c35e1d7cd4500e4bc1e51d04"
+      }
     }
   },
   "court_directory": [
@@ -649,6 +685,42 @@
       "retrieved_at": "2026-11-20T18:32:56.662705+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "a7c9cb86c16c34f98c3bd40cbe00cd": {
+      "source_id": "US-LA:contract_breach:a2b5813dec43",
+      "authority_type": "statute",
+      "citation": "La. Civ. Code art. 1994",
+      "text": "An obligor is liable for the damages caused by his failure to perform a conventional obligation. A failure to perform results from nonperformance, defective performance, or delay in performance.",
+      "text_sha256": "74ac5845645d1a10af5dced780ce2fcd44ae0cb43e7e610b8e25d4730ed98b3a",
+      "publisher_sha256": "47c9f4280536d5b665f438c8b4d8e29202f0cab04d0de3b618f301a25f001a4d",
+      "retrieved_at": "2026-11-20T22:39:55.345374+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1985-01-01"
+    },
+    "ccd98a52ece2c2386e4737c71cafe7": {
+      "source_id": "US-LA:general_contract_damages:95ce34554eb4",
+      "authority_type": "statute",
+      "citation": "La. Civ. Code art. 1995",
+      "text": "Damages are measured by the loss sustained by the obligee and the profit of which he has been deprived.",
+      "text_sha256": "96a7edbcbc6796b2c764d87a3c9e333a874e726e509ea9b65f6de347884548c7",
+      "publisher_sha256": "4ca80a7bf060d9046b7899bd0e635af25b334e56d41043eef0a5d5060984ed28",
+      "retrieved_at": "2026-11-20T22:39:55.392831+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1985-01-01"
+    },
+    "417462e942d37054d89121a4696acc": {
+      "source_id": "US-LA:general_contract_damages:c8d14820ed40",
+      "authority_type": "statute",
+      "citation": "La. Civ. Code art. 1996",
+      "text": "An obligor in good faith is liable only for the damages that were foreseeable at the time the contract was made.",
+      "text_sha256": "1e79409104ee29ec470363946511f2c0540b751c2b34890bff5ea660908e7ca9",
+      "publisher_sha256": "4eb4db891eb0276260030391af003b930f69f010c35e1d7cd4500e4bc1e51d04",
+      "retrieved_at": "2026-11-20T22:39:55.437822+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1985-01-01"
     }
   },
   "fault_allocation": {
