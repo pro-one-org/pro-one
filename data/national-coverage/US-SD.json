@@ -336,6 +336,42 @@
         "retrieved_at": "2026-11-20T22:47:12.456875+00:00",
         "sha256": "18c9b453df64d0009032b13c10bceaa77938b7fb6fc3da142704973020d067f9"
       }
+    },
+    "US-SD:negligence_duty:33818645172b": {
+      "category": "negligence_duty",
+      "title": "SDCL § 20-9-1",
+      "url": "https://sdlegislature.gov/api/Statutes/20-9-1.html?all=true",
+      "locator": "SDCL § 20-9-1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:59:01.430186+00:00",
+        "sha256": "ea1a6a2e052b86d94abcfedd1004c49bb42f64273354c0c74d2c1ad22ee0e30a"
+      }
+    },
+    "US-SD:negligence_causation:accf9dcb94e8": {
+      "category": "negligence_causation",
+      "title": "SDCL § 20-9-1.1",
+      "url": "https://sdlegislature.gov/api/Statutes/20-9-1.html?all=true",
+      "locator": "SDCL § 20-9-1.1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:59:01.430186+00:00",
+        "sha256": "ea1a6a2e052b86d94abcfedd1004c49bb42f64273354c0c74d2c1ad22ee0e30a"
+      }
+    },
+    "US-SD:tort_damages:00a51b740b43": {
+      "category": "tort_damages",
+      "title": "SDCL § 21-3-1",
+      "url": "https://sdlegislature.gov/api/Statutes/21-3-1.html?all=true",
+      "locator": "SDCL § 21-3-1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:59:01.354712+00:00",
+        "sha256": "d8922e00fbe0e03df6a325d7a26f65f0ba7a37492298c438e27379145641f3d3"
+      }
     }
   },
   "court_directory": [
@@ -554,6 +590,39 @@
       "text_sha256": "62151256b3dac5ce599ecee3b5079a25f3eda0cdb3e05f56f4be1e114640d3b4",
       "publisher_sha256": "18c9b453df64d0009032b13c10bceaa77938b7fb6fc3da142704973020d067f9",
       "retrieved_at": "2026-11-20T22:47:12.456875+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "d0b9068ff68cf2ded440dccb5a9be5": {
+      "source_id": "US-SD:negligence_duty:33818645172b",
+      "authority_type": "statute",
+      "citation": "SDCL § 20-9-1",
+      "text": "Every person is responsible for injury to the person, property, or rights of another caused by his willful acts or caused by his want of ordinary care or skill, subject in the latter cases to the defense of contributory negligence.",
+      "text_sha256": "1e4693d80e69843f639a3a8df3beef686cc9d591eddd661d7b743f7ed09812c1",
+      "publisher_sha256": "ea1a6a2e052b86d94abcfedd1004c49bb42f64273354c0c74d2c1ad22ee0e30a",
+      "retrieved_at": "2026-11-20T22:59:01.430186+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "4b8db764aabc6f484767ed256f54b8": {
+      "source_id": "US-SD:negligence_causation:accf9dcb94e8",
+      "authority_type": "statute",
+      "citation": "SDCL § 20-9-1.1",
+      "text": "The Legislature finds that in those actions founded upon an alleged want of ordinary care or skill the conduct of the responsible party must be shown to have been the proximate cause of the injury complained of. The Legislature also finds that the application of the so called loss of chance doctrine in such cases improperly alters or eliminates the requirement of proximate causation. Therefore, the rule in Jorgenson v. Vener, 2000 SD 87, 616 N.W. 2d 366 (2000) is hereby abrogated.",
+      "text_sha256": "300be743ec772f740ad05615cfb06ff037fb7b8597c431783b747eff310ef750",
+      "publisher_sha256": "ea1a6a2e052b86d94abcfedd1004c49bb42f64273354c0c74d2c1ad22ee0e30a",
+      "retrieved_at": "2026-11-20T22:59:01.430186+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "1bfea9d0a02f6d600ef29c3c5a274f": {
+      "source_id": "US-SD:tort_damages:00a51b740b43",
+      "authority_type": "statute",
+      "citation": "SDCL § 21-3-1",
+      "text": "For the breach of an obligation not arising from contract, the measure of damages, except where otherwise expressly provided by this code, is the amount which will compensate for all the detriment proximately caused thereby, whether it could have been anticipated or not.",
+      "text_sha256": "ce7233424873b85ec6dbf60f14c1480c059e7c6008453319a8d34697d9cd14cd",
+      "publisher_sha256": "d8922e00fbe0e03df6a325d7a26f65f0ba7a37492298c438e27379145641f3d3",
+      "retrieved_at": "2026-11-20T22:59:01.354712+00:00",
       "currentness": "unresolved",
       "language": "en"
     }

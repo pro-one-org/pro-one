@@ -371,6 +371,18 @@
         "retrieved_at": "2026-11-20T22:36:53.783767+00:00",
         "sha256": "d560cf7748f18778d5ff99d7716ba74a474bc33a6f05fb8ac7e489d6f03ec21d"
       }
+    },
+    "US-DE:negligence_elements:02cdebc9e177": {
+      "category": "negligence_elements",
+      "title": "Rogerson v. Delaware Surgical Group, P.A., No. N24C-04-058 SSA (Del. Super. Ct. Aug. 29, 2025)",
+      "url": "https://courts.delaware.gov/Opinions/Download.aspx?id=384380",
+      "locator": "Rogerson v. Delaware Surgical Group, P.A., No. N24C-04-058 SSA (Del. Super. Ct. Aug. 29, 2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:02:15.273835+00:00",
+        "sha256": "3a601130852ab76272fa9f50d6296a6c3d755e2faccdd598d56940845a9588b9"
+      }
     }
   },
   "court_directory": [
@@ -632,6 +644,22 @@
       "retrieved_at": "2026-11-20T22:36:53.783767+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "14ff1af93f67c20af4105b94c69b4c": {
+      "source_id": "US-DE:negligence_elements:02cdebc9e177",
+      "authority_type": "opinion",
+      "citation": "Rogerson v. Delaware Surgical Group, P.A., No. N24C-04-058 SSA (Del. Super. Ct. Aug. 29, 2025)",
+      "text": "The law requires demonstration of duty, breach, causation and harm to establish negligence.",
+      "text_sha256": "cb23e33cedecdd33e1e32780313aa5ce2e04cca0fee0c230cb44398da024a1f4",
+      "publisher_sha256": "3a601130852ab76272fa9f50d6296a6c3d755e2faccdd598d56940845a9588b9",
+      "retrieved_at": "2026-11-20T23:02:15.273835+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2025-08-29",
+      "court": "Delaware Superior Court",
+      "decision_date": "2025-08-29",
+      "opinion_role": "majority",
+      "procedural_posture": "Trial court ruling on summary judgment in an action about a surgical billing representation. The court addressed civil negligence separately from the contract count."
     }
   },
   "fault_allocation": {

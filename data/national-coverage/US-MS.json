@@ -213,6 +213,30 @@
         "retrieved_at": "2026-11-20T22:39:55.766698+00:00",
         "sha256": "d3fcda1c2aceb4cba59b0b498f9a26236e16540c3f1de8b794a78fe700fff213"
       }
+    },
+    "US-MS:debtLaw:dc1bf1848285": {
+      "category": "debtLaw",
+      "title": "Miss. Code Ann. § 75-67-127(3)",
+      "url": "https://dbcf.ms.gov/wp-content/uploads/2020/06/Small-Loan-Regulatory-Law-and-Consumer-Alt-Inst-Loan-Act-PDF.pdf",
+      "locator": "Miss. Code Ann. § 75-67-127(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:02:15.044135+00:00",
+        "sha256": "2616951a3ae9d116e2ff03b0f7cdf800928aefaf4576f2beea0bbf24da7ad3d2"
+      }
+    },
+    "US-MS:debtLaw:3b6e6a342cab": {
+      "category": "debtLaw",
+      "title": "Miss. Code Ann. § 75-67-619(6), as amended by 2025 S.B. 2495 § 2",
+      "url": "https://billstatus.ls.state.ms.us/documents/2025/html/SB/2400-2499/SB2495SG.htm",
+      "locator": "Miss. Code Ann. § 75-67-619(6), as amended by 2025 S.B. 2495 § 2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:02:14.886645+00:00",
+        "sha256": "a79037a4b29ba27db39ad62fcbdeec881c831992359e488585b023c642b700db"
+      }
     }
   },
   "court_directory": [
@@ -403,6 +427,32 @@
       "language": "en",
       "edition": "Mississippi enacted H.B. 141, effective July 1, 2013",
       "effective_from": "2013-07-01"
+    },
+    "00244bfc9536d57bfb547fedada9ca": {
+      "source_id": "US-MS:debtLaw:dc1bf1848285",
+      "authority_type": "statute",
+      "citation": "Miss. Code Ann. § 75-67-127(3)",
+      "text": "(3) Any contract of loan in the making or collection of which any provision of this section shall have been violated, either knowingly or without the exercise of due care to prevent the same, shall be void and the licensee shall have no right to collect or receive any principal, charges or recompense whatsoever.",
+      "text_sha256": "a69b60d525b5e4127812b5b5d99fd778be386120b3287ba63f74c8422fd4c9b5",
+      "publisher_sha256": "2616951a3ae9d116e2ff03b0f7cdf800928aefaf4576f2beea0bbf24da7ad3d2",
+      "retrieved_at": "2026-11-20T23:02:15.044135+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Mississippi Department of Banking and Consumer Finance Small Loan Regulatory Law compilation (2016)",
+      "effective_from": "1974-07-01"
+    },
+    "2d2f291e9a4743e964b59132a4ae31": {
+      "source_id": "US-MS:debtLaw:3b6e6a342cab",
+      "authority_type": "statute",
+      "citation": "Miss. Code Ann. § 75-67-619(6), as amended by 2025 S.B. 2495 § 2",
+      "text": "(6) In the event an account holder is in default under the terms of a credit availability agreement for more than sixty (60) days, the licensee may charge and collect from the account holder the following fees in connection with any such default, provided that such fees are clearly disclosed in the credit availability agreement: (a) If the licensee is required to employ a third party, including an attorney, to collect on the account the licensee may: (i) If the credit availability agreement so provides, charge and collect a reasonable collection fee and attorney's fee; and (ii) If the credit availability agreement so provides, shall be entitled to recover from the account holder all court costs incurred and to recover any court-awarded damages, including those incurred on appeal. (b) If applicable, the licensee may charge and collect from the account holder any fees and costs relating to the repossession and sale of collateral, including, but not limited to, fees and costs associated with the repossession, storage, preparation for sale and sale of collateral.",
+      "text_sha256": "9cc6cec9ee0bcc7f3dc8e85f03ad7e0e594c08667f7f5faed0cde9b0c7f0cf6e",
+      "publisher_sha256": "a79037a4b29ba27db39ad62fcbdeec881c831992359e488585b023c642b700db",
+      "retrieved_at": "2026-11-20T23:02:14.886645+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Mississippi 2025 S.B. 2495 approved March 12, 2025",
+      "effective_from": "2025-07-01"
     }
   },
   "fault_allocation": {
