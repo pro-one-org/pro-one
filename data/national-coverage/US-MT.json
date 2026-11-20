@@ -309,6 +309,30 @@
         "retrieved_at": "2026-11-20T22:29:53.200211+00:00",
         "sha256": "ee29f32ec911c800dda89a385bfef620437bbb401c809f88e5354d1cbf6a2505"
       }
+    },
+    "US-MT:response:b2e256163c47": {
+      "category": "response",
+      "title": "Mont. R. Civ. P. 12(a)(1)(A)",
+      "url": "https://juddocumentservice.mt.gov/getDocByCTrackId?DocId=162730",
+      "locator": "Mont. R. Civ. P. 12(a)(1)(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:55:41.620213+00:00",
+        "sha256": "2ac047415072639773e28f6601fd0520a96319a42e7a23920bad06839490e4df"
+      }
+    },
+    "US-MT:postmotion_response:a029a7f55e1c": {
+      "category": "postmotion_response",
+      "title": "Mont. R. Civ. P. 12(a)(4)",
+      "url": "https://juddocumentservice.mt.gov/getDocByCTrackId?DocId=162730",
+      "locator": "Mont. R. Civ. P. 12(a)(4)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:55:41.620213+00:00",
+        "sha256": "2ac047415072639773e28f6601fd0520a96319a42e7a23920bad06839490e4df"
+      }
     }
   },
   "court_directory": [
@@ -532,6 +556,32 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Montana enacted 2003 Session Laws chapter 308"
+    },
+    "af914e2a125f5c16e4e9938d002efb": {
+      "source_id": "US-MT:response:b2e256163c47",
+      "authority_type": "court_rule",
+      "citation": "Mont. R. Civ. P. 12(a)(1)(A)",
+      "text": "(1) In General. Unless another time is specified by this rule or a statute, the time for serving a responsive pleading is as follows: (A) A defendant must serve an answer within 21 days after being served with the summons and complaint, unless the court orders otherwise under Rule 4(c)(2)(C).",
+      "text_sha256": "432cf3ce79098827c2349aeb0877d4ce4e0fc39303fccf103ecf5df2777a0205",
+      "publisher_sha256": "2ac047415072639773e28f6601fd0520a96319a42e7a23920bad06839490e4df",
+      "retrieved_at": "2026-11-20T22:55:41.620213+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Montana Supreme Court AF 07-0157 rules attachment effective July 1, 2017",
+      "court": "Montana District Court"
+    },
+    "d1ec8776155ff86b4ca00caa7dea1f": {
+      "source_id": "US-MT:postmotion_response:a029a7f55e1c",
+      "authority_type": "court_rule",
+      "citation": "Mont. R. Civ. P. 12(a)(4)",
+      "text": "(4) Effect of a Motion. Unless the court sets a different time, serving a motion under this rule alters these periods as follows: (A) if the court denies the motion or postpones its disposition until trial, the responsive pleading must be served within 14 days after notice of the court’s action; or (B) if the court grants a motion for a more definite statement, the responsive pleading must be served within 14 days after the more definite statement is served.",
+      "text_sha256": "b28fcb42501e5a80e0b8917840d387bb4374d28fdb76bf0ac94613ff8e828ff2",
+      "publisher_sha256": "2ac047415072639773e28f6601fd0520a96319a42e7a23920bad06839490e4df",
+      "retrieved_at": "2026-11-20T22:55:41.620213+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Montana Supreme Court AF 07-0157 rules attachment effective July 1, 2017",
+      "court": "Montana District Court"
     }
   },
   "forms": {

@@ -274,6 +274,18 @@
         "retrieved_at": "2026-11-20T22:31:56.863241+00:00",
         "sha256": "5458c55733ac254fc4bdfa42ced35b671d1e0e9b8c8f74d810acbfd5ec0fcc94"
       }
+    },
+    "US-KY:negligence_elements:02bb1476f066": {
+      "category": "negligence_elements",
+      "title": "Phelps v. Bluegrass Hospitality Management, LLC, 630 S.W.3d 623 (Ky. 2021)",
+      "url": "https://appellatepublic.kycourts.net/api/api/v1/publicaccessdocuments/2748ce1a21c2c056e4d9885660de7e59d80979bd773083707b8131fc3fca2263/download",
+      "locator": "Phelps v. Bluegrass Hospitality Management, LLC, 630 S.W.3d 623 (Ky. 2021)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:52:02.706636+00:00",
+        "sha256": "8100c66042b789c2b86d5fdf2851ea0905a5f9a8e6a1e6549fd4c3c2cbad6152"
+      }
     }
   },
   "court_directory": [
@@ -475,6 +487,22 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "2011-06-08"
+    },
+    "d6b55fad693809525d1c5ddb7a07c0": {
+      "source_id": "US-KY:negligence_elements:02bb1476f066",
+      "authority_type": "opinion",
+      "citation": "Phelps v. Bluegrass Hospitality Management, LLC, 630 S.W.3d 623 (Ky. 2021)",
+      "text": "The basic elements of a negligence claim are: “duty, breach, causation, damages.”",
+      "text_sha256": "a2f1fc6f0c0ddcb955332270ca9f9fe437e524551a815335ac5019ee7b5057bc",
+      "publisher_sha256": "8100c66042b789c2b86d5fdf2851ea0905a5f9a8e6a1e6549fd4c3c2cbad6152",
+      "retrieved_at": "2026-11-20T22:52:02.706636+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2021-09-30",
+      "court": "Supreme Court of Kentucky",
+      "decision_date": "2021-09-30",
+      "opinion_role": "majority",
+      "procedural_posture": "Discretionary review of summary judgment in a restaurant slip-and-fall action. The court discussed the general negligence elements and examined the proof of breach in a premises claim."
     }
   },
   "fault_allocation": {

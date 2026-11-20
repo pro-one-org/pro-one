@@ -551,6 +551,18 @@
         "retrieved_at": "2026-11-20T16:01:53.143207+00:00",
         "sha256": "d1aef373b1951d06f865945fab8d933880f263461a333f73eeaa9920fb04e62c"
       }
+    },
+    "US-MI:negligence_elements:7f7330c7d18b": {
+      "category": "negligence_elements",
+      "title": "Loweke v. Ann Arbor Ceiling & Partition Co., 489 Mich. 157, 162 (2011)",
+      "url": "https://www.courts.michigan.gov/4a4c4a/siteassets/case-documents/uploads/opinions/final/sct/20110606_s141168_55_loweke-final.pdf",
+      "locator": "Loweke v. Ann Arbor Ceiling & Partition Co., 489 Mich. 157, 162 (2011)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:53:46.636643+00:00",
+        "sha256": "802a1a25b1f9cacb79c17c5f28c53d4fcd2d236108c30e4d0e413a2f55ce0d23"
+      }
     }
   },
   "court_directory": [
@@ -1041,6 +1053,22 @@
       "publisher_path": "1002395",
       "text": "(C) Form of Responsive Pleading. As to each allegation on which the adverse party relies, a responsive pleading must (1) state an explicit admission or denial; (2) plead no contest; or (3) state that the pleader lacks knowledge or information sufficient to form a belief as to the truth of an allegation, which has the effect of a denial.",
       "text_sha256": "a752474c5de817a94fe667e8cf7ade274602db879bd0eabcef3e1d4fa0a6c16a"
+    },
+    "ae175e558ffe6b33f3d0397653e8ca": {
+      "source_id": "US-MI:negligence_elements:7f7330c7d18b",
+      "authority_type": "opinion",
+      "citation": "Loweke v. Ann Arbor Ceiling & Partition Co., 489 Mich. 157, 162 (2011)",
+      "text": "To establish a prima facie case of negligence, a plaintiff must prove the following elements: (1) the defendant owed the plaintiff a legal duty, (2) the defendant breached the legal duty, (3) the plaintiff suffered damages, and (4) the defendant’s breach was a proximate cause of the plaintiff’s damages.",
+      "text_sha256": "88eb7d27e1573ccf0de80b73de732cc54dd12091d25148c73a2f8f653dac63ff",
+      "publisher_sha256": "802a1a25b1f9cacb79c17c5f28c53d4fcd2d236108c30e4d0e413a2f55ce0d23",
+      "retrieved_at": "2026-11-20T22:53:46.636643+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2011-06-06",
+      "court": "Michigan Supreme Court",
+      "decision_date": "2011-06-06",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary disposition in a negligence action by the employee of another subcontractor. The court reviewed the defendant’s duty to a noncontracting third party and remanded."
     }
   },
   "fault_allocation": {
