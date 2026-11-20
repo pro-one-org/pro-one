@@ -12,7 +12,9 @@ from urllib.parse import urlsplit
 from app.jurisdictions import ROOT
 
 
-CERTIFIED_TYPES = {"US-WI": "statute", "US-MI": "court_rule"}
+CERTIFIED_TYPES = {"US-WI": "statute", "US-MI": "court_rule", "US-IN": "court_rule"}
+INDIANA_RULES_ROOT = "https://rules.incourts.gov/Content/"
+INDIANA_RULESETS = {"trial": "Indiana Rules of Trial Procedure", "small-claims": "Indiana Small Claims Rules"}
 MICHIGAN_RULES_BOOK = (
     "https://www.courts.michigan.gov/siteassets/rules-instructions-administrative-orders/"
     "michigan-court-rules/michigan-court-rules-responsive-html5.zip/Michigan_Court_Rules/"
@@ -139,10 +141,95 @@ def michigan_basis(url, digest, anchor, citation, quote):
     return day, f"Michigan Supreme Court Rules Chapter {chapter}. " + dates[0]
 
 
-@lru_cache(maxsize=64)
+class IndianaRulePublication(HTMLParser):
+    """Read the version marker and paragraphs within the publisher's main content."""
+
+    def __init__(self):
+        super().__init__()
+        self.main_depth = 0
+        self.active = None
+        self.rows = []
+        self.current_marker = False
+        self.current_rule_links = set()
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == "div":
+            if attrs.get("id") == "mc-main-content" or self.main_depth:
+                self.main_depth += 1
+        if not self.main_depth:
+            return
+        if tag in {"p", "h1", "h2"}:
+            self.active = tag, (attrs.get("class") or "").split(), []
+        if tag == "a" and re.fullmatch(r"rule[0-9-]+/current\.htm", attrs.get("href") or ""):
+            self.current_rule_links.add(attrs["href"])
+        if tag == "madcap:concept" and attrs.get("term") == "Current":
+            self.current_marker = True
+
+    def handle_endtag(self, tag):
+        if self.active and self.active[0] == tag:
+            name, classes, parts = self.active
+            self.rows.append((name, classes, " ".join("".join(parts).split())))
+            self.active = None
+        if tag == "div" and self.main_depth:
+            self.main_depth -= 1
+
+    def handle_data(self, data):
+        if self.active:
+            self.active[2].append(data)
+
+
+@lru_cache(maxsize=12)
+def indiana_rule_publication(digest):
+    page = IndianaRulePublication()
+    page.feed(retained_publication(digest))
+    page.close()
+    return page
+
+
+def indiana_basis(url, digest, path, citation, quote):
+    match = re.fullmatch(r"Ind\. (Trial|Small Claims) R\. (\d+(?:\.\d+)?)(?:\(([A-Z])\))?", citation)
+    if not match or not re.fullmatch(r"[0-9a-f]{64}", path):
+        raise ValueError("invalid_certified_publication")
+    kind, rule, subsection = match.groups()
+    ruleset = "trial" if kind == "Trial" else "small-claims"
+    relative = f"rule{rule.replace('.', '-')}/current.htm"
+    if url != INDIANA_RULES_ROOT + ruleset + "/" + relative:
+        raise ValueError("invalid_certified_publication")
+    index = indiana_rule_publication(path)
+    page = indiana_rule_publication(digest)
+    heading = INDIANA_RULESETS[ruleset]
+    dates = [m.group(1) for _, classes, text in index.rows if "rulenote" in classes
+             for m in re.finditer(r"Updated, Effective ([A-Z][a-z]+ \d{1,2}, \d{4})", text)]
+    rule_dates = [text.removeprefix("Effective ") for _, classes, text in page.rows
+                  if "effective" in classes and text.startswith("Effective ")]
+    titles = [text for tag, _, text in page.rows if tag == "h1" and text.startswith(f"Rule {rule}. ")]
+    if (relative not in index.current_rule_links or not page.current_marker or len(titles) != 1
+            or len(dates) != 1 or len(rule_dates) != 1
+            or not any(tag == "h1" and text == heading for tag, _, text in index.rows)
+            or not any("ruleset" in classes and text == heading for _, classes, text in page.rows)):
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    day = datetime.strptime(dates[0], "%B %d, %Y").date()
+    if datetime.strptime(rule_dates[0], "%B %d, %Y").date() > day:
+        raise ValueError("certified_version_requires_effective_date_review")
+    body_start = next(i for i, (_, classes, _) in enumerate(page.rows) if "effective" in classes)
+    rows = list(takewhile(lambda row: row[2] != "Version History", page.rows[body_start + 1:]))
+    headings = [i for i, (tag, _, text) in enumerate(rows) if tag == "h2" and text.startswith(f"({subsection}) ")]
+    if subsection and len(headings) == 1:
+        rows = list(takewhile(lambda row: row[0] != "h2", rows[headings[0] + 1:]))
+    elif subsection or any(tag == "h2" for tag, _, _ in rows):
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    if not quote or quote != " ".join(text for _, _, text in rows if text):
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    return day, f"{heading}. Updated, Effective {dates[0]}."
+
+
+@lru_cache(maxsize=96)
 def certified_basis(scope, url, digest, path, citation, quote):
     if scope == "US-MI":
         return michigan_basis(url, digest, path, citation, quote)
+    if scope == "US-IN":
+        return indiana_basis(url, digest, path, citation, quote)
     endpoint = urlsplit(url)
     if (scope != "US-WI" or endpoint.scheme != "https" or endpoint.netloc != "docs.legis.wisconsin.gov"
             or not citation.startswith("Wis. Stat. § ") or not path.startswith(endpoint.path + "/")):

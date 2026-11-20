@@ -116,6 +116,34 @@ class NationalCoverageTests(unittest.TestCase):
         for change in ({"authority_as_of": "2026-11-18"}, {"topics": ["initial_response"]}):
             self.assertFalse(provider.search(query.model_copy(update=change)))
 
+    def test_indiana_rule_edition_binds_rule_text_and_keeps_proceedings_separate(self):
+        record = manifest("US-IN")
+        response = next(row for row in record["passages"].values() if row["citation"] == "Ind. Trial R. 6(D)")
+        small_claim = next(row for row in record["passages"].values()
+                           if row["citation"] == "Ind. Small Claims R. 4(A)")
+        url = record["sources"][response["source_id"]]["url"]
+        for index, quote in ((small_claim["publisher_path"], response["text"]),
+                             (response["publisher_path"], small_claim["text"])):
+            with self.assertRaisesRegex(ValueError, "certified_excerpt_or_date_mismatch"):
+                certified_basis("US-IN", url, response["publisher_sha256"], index, response["citation"], quote)
+
+        provider = RetainedLegislativeResearch()
+        matter = ResearchMatter(country="US", state="Indiana", legal_area="civil_procedure",
+                                topics=["initial_response"], authority_types=["court_rule"],
+                                authority_status="current", authority_as_of="2026-08-01")
+        docs = {doc.source["citation"]["preferred_citation"]: doc.text
+                for doc in map(provider.fetch, provider.search(matter))}
+        self.assertIn("within twenty days after service of the pleading", docs["Ind. Trial R. 6(D)"])
+        self.assertIn("Filing a motion permitted under this rule alters the time", docs["Ind. Trial R. 12(A)"])
+        self.assertNotIn(small_claim["citation"], docs)
+        for day in ("2025-01-01", "2026-08-02"):
+            self.assertFalse(provider.search(matter.model_copy(update={"authority_as_of": day})))
+        small_matter = matter.model_copy(update={"topics": ["small_claims"], "authority_as_of": "2025-01-01"})
+        small_citations = {provider.fetch(key).source["citation"]["preferred_citation"]
+                           for key in provider.search(small_matter)}
+        self.assertIn(small_claim["citation"], small_citations)
+        self.assertNotIn(response["citation"], small_citations)
+
     def test_action_references_expose_dated_authority_without_unlocking_execution(self):
         actions = coverage("US-WI")["action_shells"]
         complaint = next(action for action in actions if action["action_type"] == "complaint")
@@ -328,6 +356,8 @@ class NationalCoverageTests(unittest.TestCase):
             ("US-WI", date(2026, 11, 4)): "Published and certified",
             ("US-MI", date(2026, 11, 18)): "Michigan Supreme Court Rules Chapter 2.",
             ("US-MI", date(2024, 9, 1)): "Michigan Supreme Court Rules Chapter 4.",
+            ("US-IN", date(2026, 8, 1)): "Indiana Rules of Trial Procedure.",
+            ("US-IN", date(2025, 1, 1)): "Indiana Small Claims Rules.",
         }
         for provider, selector, raw, _ in retained_observations():
             with self.subTest(source=provider.source.name, selector=selector):
