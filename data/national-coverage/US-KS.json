@@ -324,6 +324,30 @@
         "retrieved_at": "2026-11-20T18:12:28.033535+00:00",
         "sha256": "b8b6d937e6dd23e9266f34d5c1d360e8750dab2f500b070941737a3e3a80f6ed"
       }
+    },
+    "US-KS:debtLaw:a8e3793e42bb": {
+      "category": "debtLaw",
+      "title": "Kan. Stat. Ann. § 16a-5-108(1)–(4) (consumer credit unconscionability)",
+      "url": "https://ksrevisor.gov/statutes/chapters/ch16a/016a_005_0108.html",
+      "locator": "Kan. Stat. Ann. § 16a-5-108(1)–(4) (consumer credit unconscionability)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:29:53.581959+00:00",
+        "sha256": "9c216646fbdd1cac76718a4ee2f72cae545047ab16597921e5c598cbce6db756"
+      }
+    },
+    "US-KS:debt_private_action:1507a286ef2b": {
+      "category": "debt_private_action",
+      "title": "Kan. Stat. Ann. § 16a-5-201(1) (specified consumer-credit violations)",
+      "url": "https://ksrevisor.gov/statutes/chapters/ch16a/016a_005_0201.html",
+      "locator": "Kan. Stat. Ann. § 16a-5-201(1) (specified consumer-credit violations)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:29:53.598273+00:00",
+        "sha256": "0cdcf838290824affbc24f13831a2520e431ab5995dc0f5e18af1224e653d9d4"
+      }
     }
   },
   "court_directory": [
@@ -531,6 +555,29 @@
       "decision_date": "2020-06-26",
       "procedural_posture": "Review of the appellate judgment concerning summary judgment in consolidated police-pursuit negligence cases. The court affirmed the appellate judgment and remanded.",
       "opinion_role": "majority"
+    },
+    "e818aaaa79fe5ab8acfa6f53bbb5a1": {
+      "source_id": "US-KS:debtLaw:a8e3793e42bb",
+      "authority_type": "statute",
+      "citation": "Kan. Stat. Ann. § 16a-5-108(1)–(4) (consumer credit unconscionability)",
+      "text": "(1) The unconscionability of an act or practice is a question for the trier of fact. (2) With respect to a consumer credit transaction, if the trier of fact finds: (a) The agreement was unconscionable at the time it was made, or was induced by unconscionable conduct, the court may refuse to enforce the agreement; or (b) any clause of the agreement was unconscionable at the time it was made, the court may refuse to enforce the agreement, may enforce the remainder of the agreement without the unconscionable clause or may so limit the application of any unconscionable clause as to avoid any unconscionable result. (3) If it is claimed or appears to the trier of fact that the agreement or any clause thereof may be unconscionable the parties shall be afforded a reasonable opportunity to present evidence as to its setting, purpose, and effect to aid the court in making the determination. (4) A charge or practice expressly permitted by this act shall not be unconscionable.",
+      "text_sha256": "64c6a1d5206f75ceda7ca6f758a91b2394bff95c2aaf6b878799ec91be7524c7",
+      "publisher_sha256": "9c216646fbdd1cac76718a4ee2f72cae545047ab16597921e5c598cbce6db756",
+      "retrieved_at": "2026-11-20T18:29:53.581959+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2025-01-01"
+    },
+    "4bbb589afc07e7fdbf15a7ab0ac3b0": {
+      "source_id": "US-KS:debt_private_action:1507a286ef2b",
+      "authority_type": "statute",
+      "citation": "Kan. Stat. Ann. § 16a-5-201(1) (specified consumer-credit violations)",
+      "text": "(1) If a creditor has violated the provisions of this act applying to collection of excess charges or enforcement of rights, restrictions on interests in land as security, limitations on the schedule of payments or loan terms for supervised loans, attorney's fees, security in sales and leases, assignments of earnings, authorizations to confess judgment, certain negotiable instruments prohibited, assignees subject to defenses, credit card issuer subject to defenses, or limitations on default charges, the consumer may recover actual damages and except for a class action a penalty in an amount determined by the court not less than $100 nor more than $1,000. With respect to violations arising from sales or loans made pursuant to open-end credit, no action pursuant to this subsection may be brought more than two years after the violations occurred. With respect to violations arising from other consumer transactions, no action pursuant to this subsection may be brought more than one year after the due date of the last scheduled payment of the agreement.",
+      "text_sha256": "4d6ebabfe44706942c8159d34074dbf522a0ca037cc9cea227a30ecc202297c7",
+      "publisher_sha256": "0cdcf838290824affbc24f13831a2520e431ab5995dc0f5e18af1224e653d9d4",
+      "retrieved_at": "2026-11-20T18:29:53.598273+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

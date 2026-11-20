@@ -347,6 +347,18 @@
         "retrieved_at": "2026-11-20T18:11:12.702520+00:00",
         "sha256": "a596f1aa946c36d8ce3b376894c4754ba8a8ba37f68fe2b35f662215d81ba664"
       }
+    },
+    "US-CT:response:a6f4a4b92c3f": {
+      "category": "response",
+      "title": "Kaye v. Housman, 184 Conn. App. 437 (2018) (quoting Practice Book § 10-8)",
+      "url": "https://www.jud.ct.gov/external/supapp/Cases/AROap/AP184/184AP437.pdf",
+      "locator": "Kaye v. Housman, 184 Conn. App. 437 (2018) (quoting Practice Book § 10-8)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:29:01.421868+00:00",
+        "sha256": "ad9515f4242d029ed00b6a0e9299595917d8505f155f3bdc7480b535422cbfa6"
+      }
     }
   },
   "court_directory": [
@@ -546,6 +558,22 @@
       "decision_date": "2025-01-14",
       "procedural_posture": "Appeal from a judgment following a motion to strike negligence and public nuisance claims concerning the roadway design. The court affirmed.",
       "opinion_role": "majority"
+    },
+    "07a0cf759add76c2e11ac1ee443bcd": {
+      "source_id": "US-CT:response:a6f4a4b92c3f",
+      "authority_type": "opinion",
+      "citation": "Kaye v. Housman, 184 Conn. App. 437 (2018) (quoting Practice Book § 10-8)",
+      "text": "Practice Book § 10-8, titled ‘‘Time to Plead,’’ provides in relevant part: ‘‘Commencing on the return day of the writ, summons and complaint in civil actions, pleadings . . . shall advance within thirty days from the return day, and any subsequent pleadings . . . shall advance at least one step within each successive period of thirty days from the preceding pleading . . . .’’",
+      "text_sha256": "37bf867c9176f464e16ec184ad0e2cb097af698e4718567b9a6b4f6445c93979",
+      "publisher_sha256": "ad9515f4242d029ed00b6a0e9299595917d8505f155f3bdc7480b535422cbfa6",
+      "retrieved_at": "2026-11-20T18:29:01.421868+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2018-09-18",
+      "court": "Appellate Court of Connecticut",
+      "decision_date": "2018-09-18",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal after a motion to strike a matter from the hearing-in-damages list in a landlord’s unpaid-rent action. The appellate court reversed and remanded."
     }
   },
   "fault_allocation": {

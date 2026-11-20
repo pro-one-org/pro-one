@@ -336,6 +336,18 @@
         "retrieved_at": "2026-11-20T16:35:17.275448+00:00",
         "sha256": "fcefb7c8434ad80e2e9644eec141b299f05b7b4bffa0517c8f607e51375b91b0"
       }
+    },
+    "US-ND:debtLaw:011ba533f21c": {
+      "category": "debtLaw",
+      "title": "N.D. Cent. Code § 13-05-06.3 (regulated collection conduct)",
+      "url": "https://ndlegis.gov/prod/cencode/t13c05.pdf",
+      "locator": "N.D. Cent. Code § 13-05-06.3 (regulated collection conduct)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:29:53.967603+00:00",
+        "sha256": "48197b21fe9ac3aadfc568b32637c1dc079149f538a3c643f63791de0f7c58ba"
+      }
     }
   },
   "court_directory": [
@@ -536,6 +548,17 @@
       "text_sha256": "65a51511eb350291d11793be162b9d201a2f3ba286c625d1c443199b4d7be9c8",
       "publisher_sha256": "fcefb7c8434ad80e2e9644eec141b299f05b7b4bffa0517c8f607e51375b91b0",
       "retrieved_at": "2026-11-20T16:35:17.275448+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "de8f75317670ce322d4d05737a2e42": {
+      "source_id": "US-ND:debtLaw:011ba533f21c",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 13-05-06.3 (regulated collection conduct)",
+      "text": "It is a violation of this chapter for a person or individual subject to this chapter to: 1. Negligently make any false statement or knowingly make any omission of material fact in connection with any information, reports, or applications filed with the department or another governmental agency. 2. Collect, charge, attempt to collect or charge, or use or propose any agreement purporting to collect or charge any fee prohibited by this chapter. 3. Fail to truthfully account for moneys belonging to or collected from another.",
+      "text_sha256": "6cbfebed307f59515cda887cf66da4743e4a149b4211361abf2179f4d70419d7",
+      "publisher_sha256": "48197b21fe9ac3aadfc568b32637c1dc079149f538a3c643f63791de0f7c58ba",
+      "retrieved_at": "2026-11-20T18:29:53.967603+00:00",
       "currentness": "unresolved",
       "language": "en"
     }
