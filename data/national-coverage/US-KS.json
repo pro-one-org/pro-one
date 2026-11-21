@@ -432,6 +432,18 @@
         "retrieved_at": "2026-11-21T21:58:26.258973+00:00",
         "sha256": "ec35b0e19839048ec385dcce1f0bcda13284dae3205cab9329c64e468b8ecb25"
       }
+    },
+    "US-KS:service_time_limit:d3c390a5092b": {
+      "category": "service_time_limit",
+      "title": "Kan. Stat. Ann. § 60-203(a)–(b)",
+      "url": "https://kslegislature.gov/li_2024s/s/statute/060_000_0000_chapter/060_002_0000_article/060_002_0003_section/060_002_0003_k.pdf",
+      "locator": "Kan. Stat. Ann. § 60-203(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:06:49.449930+00:00",
+        "sha256": "18b723b8790d6505fc74013b51e6cdfd280f83b01ee12a801a2e6b5eaf218bf2"
+      }
     }
   },
   "court_directory": [
@@ -756,6 +768,19 @@
       "language": "en",
       "edition": "Kansas Legislature 2025 statutes",
       "publisher_member": "Publisher PDF p. 1, Kan. Stat. Ann. § 50-634(c)–(e), statutory text"
+    },
+    "7ab0a73fb4740b451b7d00fc06a821": {
+      "source_id": "US-KS:service_time_limit:d3c390a5092b",
+      "authority_type": "statute",
+      "citation": "Kan. Stat. Ann. § 60-203(a)–(b)",
+      "text": "(a) Time of commencement. A civil action is commenced at the time of: (1) Filing a petition with the court, if service of process is obtained or the first publication is made for service by publication within 90 days after the petition is filed, except that the court may extend that time an additional 30 days upon a showing of good cause by the plaintiff; or (2) service of process or first publication, if service of process or first publication is not made within the time specified by paragraph (1). (b) Curing invalid service. If service of process or first publication purports to have been made but is later adjudicated to have been invalid due to an irregularity in form or procedure or a defect in making service, the action is considered to have been commenced at the applicable time under subsection (a) if valid service is obtained or first publication is made within 90 days after that adjudication, except that the court may extend that time an additional 30 days upon a showing of good cause by the plaintiff.",
+      "text_sha256": "9292ad02324ce1b47cf600f045a556af7212e4740350cffa99071b4292c5daf3",
+      "publisher_sha256": "18b723b8790d6505fc74013b51e6cdfd280f83b01ee12a801a2e6b5eaf218bf2",
+      "retrieved_at": "2026-11-21T22:06:49.449930+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Kansas Legislature 2023 statutes",
+      "publisher_member": "Publisher PDF p. 1, Kan. Stat. Ann. § 60-203(a)–(b), statutory text"
     }
   },
   "fault_allocation": {

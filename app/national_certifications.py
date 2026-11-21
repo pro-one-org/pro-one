@@ -8,7 +8,7 @@ from io import BytesIO
 from itertools import takewhile
 import json
 import re
-from urllib.parse import urlsplit
+from urllib.parse import unquote, urlsplit
 from xml.etree import ElementTree
 
 from app.jurisdictions import ROOT
@@ -16,6 +16,22 @@ from app.jurisdictions import ROOT
 
 CERTIFIED_TYPES = {
     "US-WI": "statute", "US-MI": "court_rule", "US-IN": "court_rule", "US-DE": "court_rule", "US-DC": "statute",
+    "US-WA": "statute",
+}
+WASHINGTON_RCW_ROOT = "https://lawfilesext.leg.wa.gov/law/RCWArchive/2026/pdf/"
+WASHINGTON_RCW_SECTIONS = {
+    "4.16.170": ("723477c44b528679f1e15cabe83ec8f08ef25552d3ace454c128d295bdfea33e",
+                 "For the purpose of tolling any statute of limitations"),
+    "19.86.080": ("630faf80fd75e2c4d55c77a5d17f47b613ff85ce4aeece9035cc22215fb472b2",
+                  "(1) The attorney general may bring an action"),
+    "19.86.090": ("e0b6f825333555689d7d2cfd1e88a0dbf2757d438bf1d0ee4a0cc9b931940801",
+                  "Any person who is injured in his or her business or property"),
+    "19.86.093": ("d7c3d76ad75b58a44b1b359e99260abce6016dca7174122d7b51f06109ae4414",
+                  "In a private action in which an unfair or deceptive act or practice is alleged"),
+    "19.86.120": ("92f79dfefbc71c65ac867fc82c044565a086f4855a59386ce17f80a650b1f673",
+                  "Any action to enforce a claim for damages"),
+    "49.52.070": ("60dcefacbc807d217bad1b283c6e5b04d18a1a3adcae0e7849fa63684f0cbbd8",
+                  "Any employer and any officer, vice principal or agent of any employer"),
 }
 DC_CODE_ROOT = ("https://raw.githubusercontent.com/DCCouncil/law-xml-codified/"
                 "6231fae42de60c3c498548c489b0ca84ef60353a/us/dc/council/code/")
@@ -462,6 +478,31 @@ def dc_code_basis(url, digest, index_digest, citation, quote):
     return date(2026, 4, 29), "D.C. Council codified XML publication, current through April 29, 2026."
 
 
+def washington_rcw_basis(url, digest, section, citation, quote):
+    from pypdf import PdfReader
+
+    spec = WASHINGTON_RCW_SECTIONS.get(section)
+    if spec is None or digest != spec[0] or citation != f"Wash. Rev. Code § {section}":
+        raise ValueError("invalid_certified_publication")
+    title, chapter, member = section.split(".")
+    title_name = f"RCW {title:>3}"
+    chapter_name = f"{title_name} . {chapter}"
+    file_url = f"{WASHINGTON_RCW_ROOT}{title_name}  TITLE/{chapter_name}  CHAPTER/{chapter_name} .{member}.pdf"
+    if unquote(url) != file_url:
+        raise ValueError("invalid_certified_publication")
+    pages = PdfReader(BytesIO(retained_publisher_bytes(digest, "pdf")), strict=True).pages
+    if len(pages) != 1:
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    text = " ".join(pages[0].extract_text().split())
+    footer = f"Certified on 7/12/2024 RCW {section} Page 1"
+    start = spec[1]
+    body, history, _ = text.partition(" [")
+    if (not text.startswith(f"RCW {section} ") or not text.endswith(footer)
+            or not history or body.count(start) != 1 or quote != body[body.index(start):]):
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    return date(2024, 7, 12), "Revised Code of Washington, certified July 12, 2024."
+
+
 @lru_cache(maxsize=96)
 def certified_basis(scope, url, digest, path, citation, quote):
     if scope == "US-MI":
@@ -474,6 +515,8 @@ def certified_basis(scope, url, digest, path, citation, quote):
         return delaware_common_pleas_basis(url, digest, path, citation, quote)
     if scope == "US-DC":
         return dc_code_basis(url, digest, path, citation, quote)
+    if scope == "US-WA":
+        return washington_rcw_basis(url, digest, path, citation, quote)
     endpoint = urlsplit(url)
     if (scope != "US-WI" or endpoint.scheme != "https" or endpoint.netloc != "docs.legis.wisconsin.gov"
             or not citation.startswith("Wis. Stat. § ") or not path.startswith(endpoint.path + "/")):

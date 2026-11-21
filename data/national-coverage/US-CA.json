@@ -600,6 +600,30 @@
         "retrieved_at": "2026-11-21T17:38:42.359248+00:00",
         "sha256": "3f822a8bc5ae4666498219012ef2578a83c89c75662a8e29742e7b6dfc464bb6"
       }
+    },
+    "US-CA:service_time_limit:a4be9ae7d009": {
+      "category": "service_time_limit",
+      "title": "Cal. R. Ct. 3.110(a)–(b), 2026 publication",
+      "url": "https://courts.ca.gov/cms/rules/index/three/rule3_110",
+      "locator": "Cal. R. Ct. 3.110(a)–(b), 2026 publication",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:06:50.432753+00:00",
+        "sha256": "19a66fe2850232588e685a2f622e519d4e7602dd42c14ac893995d4cda387d34"
+      }
+    },
+    "US-CA:service_time_limit:740b3371da44": {
+      "category": "service_time_limit",
+      "title": "Cal. R. Ct. 3.110(e)–(f), 2026 publication",
+      "url": "https://courts.ca.gov/cms/rules/index/three/rule3_110",
+      "locator": "Cal. R. Ct. 3.110(e)–(f), 2026 publication",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:06:50.432753+00:00",
+        "sha256": "19a66fe2850232588e685a2f622e519d4e7602dd42c14ac893995d4cda387d34"
+      }
     }
   },
   "court_directory": [
@@ -1118,6 +1142,34 @@
       "edition": "California Legislature code publication archived June 11, 2026",
       "publisher_member": "California Legislature statutory section 337(d), replayed from June 11, 2026 capture",
       "effective_from": "2019-01-01"
+    },
+    "74e2910407fbbeb2586a5b83cbefb5": {
+      "source_id": "US-CA:service_time_limit:a4be9ae7d009",
+      "authority_type": "court_rule",
+      "citation": "Cal. R. Ct. 3.110(a)–(b), 2026 publication",
+      "text": "(a) Application This rule applies to the service of pleadings in civil cases except for collections cases under rule 3.740(a), unlawful detainer actions, proceedings under the Family Code, and other proceedings for which different service requirements are prescribed by law. (b) Service of complaint The complaint must be served on all named defendants and proofs of service on those defendants must be filed with the court within 60 days after the filing of the complaint. When the complaint is amended to add a defendant, the added defendant must be served and proof of service must be filed within 30 days after the filing of the amended complaint.",
+      "text_sha256": "69bfd01b09c3c247831c1f37502d4f762dbe8bcbab1f493f5c8eada04786f442",
+      "publisher_sha256": "19a66fe2850232588e685a2f622e519d4e7602dd42c14ac893995d4cda387d34",
+      "retrieved_at": "2026-11-21T22:06:50.432753+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "California Rules of Court, 2026 web publication",
+      "court": "California superior courts governed by the California Rules of Court",
+      "publisher_member": "California Judicial Branch 2026 Rules of Court, Rule 3.110(a)–(b), exceptions and time to serve complaint"
+    },
+    "ce2d2b55fb2746b8462510e23e41bd": {
+      "source_id": "US-CA:service_time_limit:740b3371da44",
+      "authority_type": "court_rule",
+      "citation": "Cal. R. Ct. 3.110(e)–(f), 2026 publication",
+      "text": "(e) Modification of timing; application for order extending time The court, on its own motion or on the application of a party, may extend or otherwise modify the times provided in (b)-(d). An application for a court order extending the time to serve a pleading must be filed before the time for service has elapsed. The application must be accompanied by a declaration showing why service has not been completed, documenting the efforts that have been made to complete service, and specifying the date by which service is proposed to be completed. (f) Failure to serve If a party fails to serve and file pleadings as required under this rule, and has not obtained an order extending time to serve its pleadings, the court may issue an order to show cause why sanctions shall not be imposed.",
+      "text_sha256": "8fffe150c8742960f886161daf5c20582f7482a60b520820962c7197c43ae580",
+      "publisher_sha256": "19a66fe2850232588e685a2f622e519d4e7602dd42c14ac893995d4cda387d34",
+      "retrieved_at": "2026-11-21T22:06:50.432753+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "California Rules of Court, 2026 web publication",
+      "court": "California superior courts governed by the California Rules of Court",
+      "publisher_member": "California Judicial Branch 2026 Rules of Court, Rule 3.110(e)–(f), extensions and order to show cause"
     }
   },
   "fault_allocation": {

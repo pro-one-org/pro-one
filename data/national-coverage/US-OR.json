@@ -376,6 +376,18 @@
         "retrieved_at": "2026-11-21T04:26:23.334930+00:00",
         "sha256": "a31e8fb239d49f9e50ccc70a7b3cce15c79279c874e6d2ab1fa2f98e004d8244"
       }
+    },
+    "US-OR:service_time_limit:4bb1d0288175": {
+      "category": "service_time_limit",
+      "title": "Or. Rev. Stat. § 12.020 (2025 ed.)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors012.html",
+      "locator": "Or. Rev. Stat. § 12.020 (2025 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:06:51.881004+00:00",
+        "sha256": "b8962dadbebcce63dbb6b1a1bfa9c9244f904dddaad59ecf63b4cb4b180b2410"
+      }
     }
   },
   "court_directory": [
@@ -646,6 +658,19 @@
       "opinion_role": "majority",
       "procedural_posture": "Review of dismissal of ordinary negligence claims brought on behalf of a third party against medical providers and a pharmacy.",
       "publisher_member": "Oregon Reports advance publication, printed p. 526; verified against Oregon State Law Library item 16317"
+    },
+    "e46bec47be3dc656004da27defb584": {
+      "source_id": "US-OR:service_time_limit:4bb1d0288175",
+      "authority_type": "statute",
+      "citation": "Or. Rev. Stat. § 12.020 (2025 ed.)",
+      "text": "(1) Except as provided in subsection (2) of this section, for the purpose of determining whether an action has been commenced within the time limited, an action shall be deemed commenced as to each defendant, when the complaint is filed, and the summons served on the defendant, or on a codefendant who is a joint contractor, or otherwise united in interest with the defendant. (2) If the first publication of summons or other service of summons in an action occurs before the expiration of 60 days after the date on which the complaint in the action was filed, the action against each person of whom the court by such service has acquired jurisdiction shall be deemed to have been commenced upon the date on which the complaint in the action was filed.",
+      "text_sha256": "996a4d8ce2d64af861cbd575e0db94bd3b21ebbf82f2d2e731f9c97300c09eb9",
+      "publisher_sha256": "b8962dadbebcce63dbb6b1a1bfa9c9244f904dddaad59ecf63b4cb4b180b2410",
+      "retrieved_at": "2026-11-21T22:06:51.881004+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Oregon Revised Statutes 2025 edition",
+      "publisher_member": "Oregon Legislature 2025 ORS § 12.020, effect of service on commencement for limitations"
     }
   },
   "fault_allocation": {

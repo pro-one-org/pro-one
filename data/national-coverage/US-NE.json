@@ -391,6 +391,18 @@
         "retrieved_at": "2026-11-21T17:24:48.209114+00:00",
         "sha256": "2c333edd14254e605b65d5576995c06d6fc8a7c2ad27da214b3b5d066f4563be"
       }
+    },
+    "US-NE:service_time_limit:5a3a3342e805": {
+      "category": "service_time_limit",
+      "title": "Neb. Rev. Stat. § 25-217(2)–(3)",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-217",
+      "locator": "Neb. Rev. Stat. § 25-217(2)–(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:06:49.611701+00:00",
+        "sha256": "f80068943efdb67eb6045a470ff494f5153605abcc8b530d3bfa2ad88d2c185c"
+      }
     }
   },
   "court_directory": [
@@ -682,6 +694,18 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Nebraska Legislature statutory section 25-504.01; excludes annotations"
+    },
+    "83a9176312e937d4d949780b70785b": {
+      "source_id": "US-NE:service_time_limit:5a3a3342e805",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 25-217(2)–(3)",
+      "text": "(2) Each defendant in the action must be properly served within one hundred eighty days of the commencement of the action. If the action is stayed or enjoined during the one-hundred-eighty-day period, then any defendant who was not properly served before the action was stayed or enjoined must be properly served within ninety days after the stay or injunction is terminated or modified so as to allow the action to proceed. (3) If any defendant is not properly served within the time specified by subsection (2) of this section then the action against that defendant is dismissed by operation of law. The dismissal is without prejudice and becomes effective on the day after the time for service expires.",
+      "text_sha256": "33be829724a944595b1964bab0c8b544a5272d1dddecbac2808d857944856e90",
+      "publisher_sha256": "f80068943efdb67eb6045a470ff494f5153605abcc8b530d3bfa2ad88d2c185c",
+      "retrieved_at": "2026-11-21T22:06:49.611701+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Nebraska Legislature statutory text, § 25-217(2)–(3); commencement defined in subsection (1)"
     }
   },
   "fault_allocation": {

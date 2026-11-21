@@ -341,6 +341,18 @@
         "retrieved_at": "2026-11-21T04:21:01.617255+00:00",
         "sha256": "4f3fc75d0f9c84da7eeca678f1c9847facb6c89a26971d8b8ecbe9babe730198"
       }
+    },
+    "US-NY:service_time_limit:4ba8d081ba68": {
+      "category": "service_time_limit",
+      "title": "N.Y. C.P.L.R. 306-b",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/306-B",
+      "locator": "N.Y. C.P.L.R. 306-b",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:06:51.049371+00:00",
+        "sha256": "2f729e9ece944dced37bc5a96a28780028b565d8d175fc82a2bf1e6ede5f5508"
+      }
     }
   },
   "court_directory": [
@@ -637,6 +649,18 @@
       "opinion_role": "majority",
       "procedural_posture": "Appeal from partial summary judgment dismissing claims arising from a premature pyrotechnic detonation.",
       "publisher_member": "New York State Law Reporting Bureau corrected publication, 117 A.D.3d at 1150"
+    },
+    "7b1b4a5c43782c7fbb70e5a79a1640": {
+      "source_id": "US-NY:service_time_limit:4ba8d081ba68",
+      "authority_type": "statute",
+      "citation": "N.Y. C.P.L.R. 306-b",
+      "text": "Service of the summons and complaint, summons with notice, or petition with a notice of petition or order to show cause shall be made within one hundred twenty days after the commencement of the action or proceeding, provided that in an action or proceeding, except a proceeding commenced under the election law, where the applicable statute of limitations is four months or less, service shall be made not later than fifteen days after the date on which the applicable statute of limitations expires. If service is not made upon a defendant within the time provided in this section, the court, upon motion, shall dismiss the action without prejudice as to that defendant, or upon good cause shown or in the interest of justice, extend the time for service.",
+      "text_sha256": "bf875009077e12cded216246052454be4ddd3e411813df3c0c3e7bbfa13a38a2",
+      "publisher_sha256": "2f729e9ece944dced37bc5a96a28780028b565d8d175fc82a2bf1e6ede5f5508",
+      "retrieved_at": "2026-11-21T22:06:51.049371+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New York Senate Open Legislation CPLR 306-b, selected publication revision dated April 24, 2026"
     }
   },
   "fault_allocation": {

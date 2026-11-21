@@ -23,6 +23,24 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_washington_certified_pdf_binds_section_text_and_publisher_date(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Washington", legal_area="consumer",
+                               topics=["consumer_public_interest"], authority_status="current",
+                               authority_as_of="2024-07-12")
+        key, = provider.search(query)
+        self.assertIn("has the capacity to injure other persons", provider.fetch(key).text)
+        self.assertFalse(provider.search(query.model_copy(update={"authority_as_of": "2026-11-21"})))
+        self.assertFalse(provider.search(query.model_copy(update={"state": "Oregon"})))
+
+        record = manifest("US-WA")
+        row, = [entry for entry in record["passages"].values()
+                if entry["citation"] == "Wash. Rev. Code § 19.86.093"]
+        source = record["sources"][row["source_id"]]
+        with self.assertRaisesRegex(ValueError, "certified_excerpt_or_date_mismatch"):
+            certified_basis("US-WA", source["url"], row["publisher_sha256"], row["publisher_path"],
+                            row["citation"], row["text"].replace("other persons", "the claimant"))
+
     def test_consumer_enforcement_and_notice_have_distinct_research_topics(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="South Carolina", legal_area="consumer",

@@ -47,6 +47,7 @@ SUBJECTS = {
     "consumerLaw": ("consumer", "unfair_practices"),
     "consumer_agency": ("consumer", "consumer_agency_enforcement"),
     "consumer_private_action": ("consumer", "private_action"),
+    "consumer_public_interest": ("consumer", "consumer_public_interest"),
     "consumer_remedies": ("consumer", "consumer_remedies"),
     "consumer_limitations": ("consumer", "consumer_limitations"),
     "consumer_pre_suit_notice": ("consumer", "consumer_pre_suit_notice"),

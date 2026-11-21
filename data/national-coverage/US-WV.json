@@ -451,6 +451,18 @@
         "retrieved_at": "2026-11-21T21:58:46.654407+00:00",
         "sha256": "0b22805e636853aa7f3d24a3a40c9b13d927c21a1c2e0fed5a38b199025a5a57"
       }
+    },
+    "US-WV:service_time_limit:63bf2663e6f8": {
+      "category": "service_time_limit",
+      "title": "W. Va. R. Civ. P. 4(i) (January 2025 rules)",
+      "url": "https://www.courtswv.gov/sites/default/pubfilesmnt/2025-01/WestVirginiaRulesofCivilProcedure.pdf",
+      "locator": "W. Va. R. Civ. P. 4(i) (January 2025 rules)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:06:49.650217+00:00",
+        "sha256": "0ee05eb2712a88f1e98eba5414a7d1c8bb0612b4b95d77b5222a39fb9dfb64dd"
+      }
     }
   },
   "court_directory": [
@@ -840,6 +852,21 @@
       "language": "en",
       "edition": "West Virginia Legislature Code archive, November 15, 2025",
       "publisher_member": "West Virginia Legislature statutory text archived November 15, 2025"
+    },
+    "c6f3941600423772b4ea12a3cdfc37": {
+      "source_id": "US-WV:service_time_limit:63bf2663e6f8",
+      "authority_type": "court_rule",
+      "citation": "W. Va. R. Civ. P. 4(i) (January 2025 rules)",
+      "text": "(i) Time limit for service. If a defendant is not served within 120 days after the complaint is filed, the court on motion or on its own after notice to the plaintiff shall dismiss the action without prejudice against that defendant or order that service be made within a specified time. But if the plaintiff shows good cause for the failure, the court shall extend the time for service for an appropriate period.",
+      "text_sha256": "418daabff9cb48d62c2991bcaf0ba2d171975cd2d00716fe520874ed0e1423cb",
+      "publisher_sha256": "0ee05eb2712a88f1e98eba5414a7d1c8bb0612b4b95d77b5222a39fb9dfb64dd",
+      "retrieved_at": "2026-11-21T22:06:49.650217+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "West Virginia revised Rules of Civil Procedure, effective January 1, 2025",
+      "court": "West Virginia trial courts of record governed by the West Virginia Rules of Civil Procedure",
+      "publisher_member": "West Virginia Judiciary revised civil rules PDF p. 8, effective January 1, 2025",
+      "effective_from": "2025-01-01"
     }
   },
   "fault_allocation": {
