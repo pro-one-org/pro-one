@@ -360,6 +360,30 @@
         "retrieved_at": "2026-11-21T03:35:28.850797+00:00",
         "sha256": "5f602446dc536fdec3e9b897bd381c2b6501208ff208c13e1a741d7b25aedf8d"
       }
+    },
+    "US-AR:deposit:9e898f26d603": {
+      "category": "deposit",
+      "title": "2009 Ark. Acts 559, § 1 (Ark. Code § 18-16-305)",
+      "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2009%2FPublic%2FACT559.pdf",
+      "locator": "2009 Ark. Acts 559, § 1 (Ark. Code § 18-16-305)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:31:19.992043+00:00",
+        "sha256": "4cd16be6edcb5f5582f4ee3a36f1f207a8d639750bc68b869e753d49df7094b0"
+      }
+    },
+    "US-AR:deposit:934ebdb1ce5e": {
+      "category": "deposit",
+      "title": "2009 Ark. Acts 559, § 2 (Ark. Code § 18-17-501)",
+      "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2009%2FPublic%2FACT559.pdf",
+      "locator": "2009 Ark. Acts 559, § 2 (Ark. Code § 18-17-501)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:31:19.992043+00:00",
+        "sha256": "4cd16be6edcb5f5582f4ee3a36f1f207a8d639750bc68b869e753d49df7094b0"
+      }
     }
   },
   "court_directory": [
@@ -643,6 +667,34 @@
       "edition": "Arkansas Supreme Court per curiam, 2011 Ark. 250, effective July 1, 2011",
       "court": "Arkansas District Courts",
       "effective_from": "2011-07-01"
+    },
+    "a4b872b98317cfb6595e53faa0259b": {
+      "source_id": "US-AR:deposit:9e898f26d603",
+      "authority_type": "statute",
+      "citation": "2009 Ark. Acts 559, § 1 (Ark. Code § 18-16-305)",
+      "text": "(a)(1) Within sixty (60) days of termination of the tenancy, property or money held by the landlord as security shall be returned to the tenant. (2) However, the money may be applied to the payment of accrued unpaid rent and any damages which the landlord has suffered by reason of the tenant's noncompliance with the rental agreement, all as itemized by the landlord in a written notice delivered to the tenant, together with the remainder of the amount due sixty (60) days after termination of the tenancy and delivery of possession by the tenant. (b)(1) The landlord shall be deemed to have complied with subsection (a) of this section by mailing via first class mail the written notice and any payment required to the last known address of the tenant. (2) If the letter containing the payment is returned to the landlord and if the landlord is unable to locate the tenant after reasonable effort, then the payment shall become the property of the landlord one hundred eighty (180) days from the date the payment was mailed.",
+      "text_sha256": "e1a5f2848b5e3cd3ff8c4b19ffd0976f8d32ffb1fe447a77cfa4c8783e927767",
+      "publisher_sha256": "4cd16be6edcb5f5582f4ee3a36f1f207a8d639750bc68b869e753d49df7094b0",
+      "retrieved_at": "2026-11-21T04:31:19.992043+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Act 559 of 2009, approved March 24, 2009, effective July 31, 2009",
+      "effective_from": "2009-07-31",
+      "publisher_member": "enacted Act 559, PDF pp. 1–2; visual review of additions and deletions"
+    },
+    "424e62bfbaaccdf600d18c4f3a608b": {
+      "source_id": "US-AR:deposit:934ebdb1ce5e",
+      "authority_type": "statute",
+      "citation": "2009 Ark. Acts 559, § 2 (Ark. Code § 18-17-501)",
+      "text": "Section 18-16-301 et seq. shall determine: (1) Whether a security deposit is required under this chapter; and (2) The rights, duties, and remedies of a landlord and tenant concerning a security deposit.",
+      "text_sha256": "a86dcf61a82805c8e530011e5caaba310e7a932f869f9d8de884067b7d7e87a8",
+      "publisher_sha256": "4cd16be6edcb5f5582f4ee3a36f1f207a8d639750bc68b869e753d49df7094b0",
+      "retrieved_at": "2026-11-21T04:31:19.992043+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Act 559 of 2009, approved March 24, 2009, effective July 31, 2009",
+      "effective_from": "2009-07-31",
+      "publisher_member": "enacted Act 559, PDF pp. 1–2; visual review of additions and deletions"
     }
   },
   "fault_allocation": {

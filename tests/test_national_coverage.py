@@ -470,6 +470,45 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertTrue(all(provider.fetch(key).text != remedy for key in provider.search(other_state)))
         self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current", "authority_as_of": "2026-11-20"})))
 
+    def test_historical_arkansas_deposit_amendment_excludes_replaced_text(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Arkansas", legal_area="landlord_tenant",
+                               topics=["security_deposit"], authority_types=["statute"],
+                               authority_status="historical")
+        results = [provider.fetch(key).text for key in provider.search(query)]
+        refund, = [text for text in results if "first class mail" in text]
+        self.assertIn("sixty (60) days after termination of the tenancy and delivery of possession", refund)
+        self.assertIn("unable to locate the tenant after reasonable effort", refund)
+        self.assertNotIn("thirty (30)", refund)
+        self.assertTrue(any("Section 18-16-301 et seq. shall determine" in text for text in results))
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current", "authority_as_of": "2026-11-20"})))
+
+    def test_kentucky_response_publisher_edition_keeps_distinct_triggers(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Kentucky", legal_area="civil_procedure",
+                               topics=["initial_response"], authority_types=["court_rule"],
+                               authority_status="historical",
+                               court="Kentucky courts governed by the Kentucky Rules of Civil Procedure")
+        key, = provider.search(query)
+        text = provider.fetch(key).text
+        for phrase in ("20 days after service of the summons", "ten (10) days after entry of the court's order",
+                       "10 days after the service of the more definite statement"):
+            self.assertIn(phrase, text)
+        for updates in ({"court": "Kentucky Small Claims Division"},
+                        {"authority_status": "current", "authority_as_of": "2026-11-20"}):
+            self.assertFalse(provider.search(query.model_copy(update=updates)))
+
+    def test_mississippi_historical_wage_frequency_preserves_employer_scope(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Mississippi", legal_area="employment",
+                               topics=["wage_payment"], authority_types=["statute"],
+                               authority_status="historical")
+        key, = provider.search(query)
+        text = provider.fetch(key).text
+        self.assertIn("fifty or more employees, and employing public labor", text)
+        self.assertIn("every public service corporation", text)
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current", "authority_as_of": "2026-11-20"})))
+
     def test_automated_transaction_enactment_is_scoped_and_historical(self):
         query = ResearchMatter(country="US", state="Arkansas", legal_area="contracts",
                                topics=["automated_contract_formation"], authority_types=["statute"],
@@ -656,7 +695,7 @@ class NationalCoverageTests(unittest.TestCase):
                                         authority_status="historical")
                 key, = provider.search(matter)
                 self.assertIn(citation, provider.fetch(key).source["citation"]["preferred_citation"])
-                self.assertFalse(provider.search(matter.model_copy(update={"topics": ["wage_payment"]})))
+                self.assertNotIn(key, provider.search(matter.model_copy(update={"topics": ["wage_payment"]})))
 
     def test_tennessee_electronic_form_preserves_transaction_scope(self):
         provider = RetainedLegislativeResearch()

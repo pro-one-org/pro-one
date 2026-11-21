@@ -286,6 +286,18 @@
         "retrieved_at": "2026-11-20T22:52:02.706636+00:00",
         "sha256": "8100c66042b789c2b86d5fdf2851ea0905a5f9a8e6a1e6549fd4c3c2cbad6152"
       }
+    },
+    "US-KY:response:245ee827e7af": {
+      "category": "response",
+      "title": "Ky. R. Civ. P. 12.01 (May 2022 publisher edition)",
+      "url": "https://web.archive.org/web/20220627044552id_/https://govt.westlaw.com/kyrules/Document/N6A217680A91B11DA8F5EE32367A250AE?contextData=%28sc.Default%29&originationContext=documenttoc&transitionType=CategoryPageItem&viewType=FullText",
+      "locator": "Ky. R. Civ. P. 12.01 (May 2022 publisher edition)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:34:46.136950+00:00",
+        "sha256": "c254f4c1b7baf03285b6be6d5ad2aa9cc6dfe9d861b38746baf9f141e93aa2a2"
+      }
     }
   },
   "court_directory": [
@@ -503,6 +515,21 @@
       "decision_date": "2021-09-30",
       "opinion_role": "majority",
       "procedural_posture": "Discretionary review of summary judgment in a restaurant slip-and-fall action. The court discussed the general negligence elements and examined the proof of breach in a premises claim."
+    },
+    "0fa2b3ce1d231e0f73238f16727520": {
+      "source_id": "US-KY:response:245ee827e7af",
+      "authority_type": "court_rule",
+      "citation": "Ky. R. Civ. P. 12.01 (May 2022 publisher edition)",
+      "text": "A defendant shall serve his/her answer within 20 days after service of the summons upon him/her. A party served with a pleading stating a cross claim against him/her shall serve an answer thereto within 20 days after the service upon him/her. The plaintiff shall serve his/her reply to a counterclaim in the answer within 20 days after service of the answer or, if a reply is ordered by the court, within 20 days after service of the order, unless the order otherwise directs. The service of a motion permitted under Rule 12 alters these periods of time as follows unless a different time is fixed by order of the court: (1) if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within ten (10) days after entry of the court's order; (2) if the court grants a motion for a more definite statement, the responsive pleading shall be served within 10 days after the service of the more definite statement.",
+      "text_sha256": "ceaed07d45bee9e6bcaf3735da7ae11012221dc4c22ce252dea67b6a32eb8ae2",
+      "publisher_sha256": "c254f4c1b7baf03285b6be6d5ad2aa9cc6dfe9d861b38746baf9f141e93aa2a2",
+      "retrieved_at": "2026-11-21T04:34:46.136950+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Kentucky Court Rules publisher edition with amendments received through May 1, 2022",
+      "court": "Kentucky courts governed by the Kentucky Rules of Civil Procedure",
+      "publisher_member": "unannotated rule text on the public Kentucky Court Rules site, excluding credits and editorial material",
+      "effective_from": "1999-01-01"
     }
   },
   "fault_allocation": {

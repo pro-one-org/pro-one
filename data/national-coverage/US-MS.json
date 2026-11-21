@@ -309,6 +309,18 @@
         "retrieved_at": "2026-11-21T04:27:26.667964+00:00",
         "sha256": "e278eaa6aca3f1527081e82f7316d64bc01816ac7eddd326a43e2a862a5e3588"
       }
+    },
+    "US-MS:wageLaw:256cc114373a": {
+      "category": "wageLaw",
+      "title": "1916 Miss. Laws ch. 241, § 1 (as reproduced in BLS Bulletin 408, p. 89)",
+      "url": "https://fraser.stlouisfed.org/files/docs/publications/bls/bls_0408_1926.pdf",
+      "locator": "1916 Miss. Laws ch. 241, § 1 (as reproduced in BLS Bulletin 408, p. 89)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:34:45.025207+00:00",
+        "sha256": "f0f9ed1a17b68f729379d1a805145ce684c71d1fca13009504fa980349cd6519"
+      }
     }
   },
   "court_directory": [
@@ -607,6 +619,19 @@
       "opinion_role": "majority",
       "procedural_posture": "Interlocutory review of denial of summary judgment where the court assessed whether the facts supported negligence or an intentional tort.",
       "publisher_member": "Court-issued opinion PDF p. 10, paragraph 17"
+    },
+    "f08f70f95ff419c81348f9a1c19cab": {
+      "source_id": "US-MS:wageLaw:256cc114373a",
+      "authority_type": "statute",
+      "citation": "1916 Miss. Laws ch. 241, § 1 (as reproduced in BLS Bulletin 408, p. 89)",
+      "text": "Every corporation, company, association, partnership, and individual person engaged in manufacturing of any kind in this State, employing as many as fifty or more employees, and employing public labor, and every public service corporation doing business in this State shall be required, to make full payment to employees for services performed as often as once every two weeks or twice during each calendar month, or on the second and fourth Saturday, respectively, of each month, and such payment or settlement shall include all amounts due for labor or services performed up to not more than ten days previous to the time of payment, except that public service corporations shall not be required to make payment for labor or services performed up to more than fifteen days prior to the time of payment.",
+      "text_sha256": "0a010d245bd4f93030a1f1fd9885793875913c7cee2d773175e92b9f6472d879",
+      "publisher_sha256": "f0f9ed1a17b68f729379d1a805145ce684c71d1fca13009504fa980349cd6519",
+      "retrieved_at": "2026-11-21T04:34:45.025207+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "U.S. Bureau of Labor Statistics Bulletin 408 (1926), Mississippi 1916 amendment",
+      "publisher_member": "printed p. 89, Mississippi chapter 166 § 1; reproduced statute, excluding bracketed penalty summary"
     }
   },
   "fault_allocation": {
