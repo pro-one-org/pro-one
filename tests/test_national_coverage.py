@@ -157,6 +157,22 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
                                                                   "authority_as_of": "2026-11-21"})))
 
+    def test_colorado_wrongful_death_timing_keeps_the_exception_distinct(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Colorado", legal_area="torts",
+                               topics=["wrongful_death_limitations"], authority_status="historical")
+        selectors = provider.search(query)
+        passages = [provider.fetch(selector).text for selector in selectors]
+        ordinary, = [text for text in passages if "within two years" in text]
+        exception, = [text for text in passages if "within four years" in text]
+        self.assertIn("except as described in subsection (2)", ordinary)
+        self.assertIn("same criminal episode", exception)
+        self.assertIn("leaving the scene of a crash that resulted in the death", exception)
+        self.assertTrue(any("accrue on the date of death" in text for text in passages))
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                  "authority_as_of": "2026-11-21"})))
+        self.assertTrue(set(selectors).isdisjoint(provider.search(query.model_copy(update={"state": "Wyoming"}))))
+
     def test_service_deadline_coverage_requires_timing_evidence(self):
         georgia = coverage("US-GA")
         methods = set(georgia["cells"]["procedure.service"]["passage_selectors"])

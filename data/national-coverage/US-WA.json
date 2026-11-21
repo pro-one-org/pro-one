@@ -477,6 +477,18 @@
         "retrieved_at": "2026-11-21T22:20:29.735447+00:00",
         "sha256": "3397b4795527e9e06daf148a06cf31bd26a428464d361cbd0f270248f4d6e6f0"
       }
+    },
+    "US-WA:tolling:ed299f296121": {
+      "category": "tolling",
+      "title": "Wash. Rev. Code § 4.16.190",
+      "url": "https://lawfilesext.leg.wa.gov/law/RCWArchive/2026/pdf/RCW%20%20%204%20%20TITLE/RCW%20%20%204%20.%2016%20%20CHAPTER/RCW%20%20%204%20.%2016%20.190.pdf",
+      "locator": "Wash. Rev. Code § 4.16.190",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:48:24.224790+00:00",
+        "sha256": "4274a90eabb0fb704103c53f747f3817fff917821524eab3681fb1a14681d723"
+      }
     }
   },
   "court_directory": [
@@ -888,6 +900,20 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Washington Legislature unlawful-detainer statute; nonpayment branch distinguishes chapter 59.18 residential tenancies"
+    },
+    "3641fb88224afb120f2a4ac3b9e6d9": {
+      "source_id": "US-WA:tolling:ed299f296121",
+      "authority_type": "statute",
+      "citation": "Wash. Rev. Code § 4.16.190",
+      "text": "Unless otherwise provided in this section, if a person entitled to bring an action mentioned in this chapter, except for a penalty or forfeiture, or against a sheriff or other officer, for an escape, be at the time the cause of action accrued either under the age of eighteen years, or incompetent or disabled to such a degree that he or she cannot understand the nature of the proceedings, such incompetency or disability as determined according to chapter 11.130 RCW , or imprisoned on a criminal charge prior to sentencing, the time of such disability shall not be a part of the time limited for the commencement of action.",
+      "text_sha256": "7e044b6e5047741c62984cc191c990e7ac8cd8fc8d1e231a8b06d4e2422ed2d7",
+      "publisher_sha256": "4274a90eabb0fb704103c53f747f3817fff917821524eab3681fb1a14681d723",
+      "retrieved_at": "2026-11-21T22:48:24.224790+00:00",
+      "currentness": "current_as_of",
+      "current_as_of": "2024-07-12",
+      "language": "en",
+      "publisher_path": "4.16.190",
+      "edition": "Revised Code of Washington, certified July 12, 2024."
     }
   },
   "fault_allocation": {

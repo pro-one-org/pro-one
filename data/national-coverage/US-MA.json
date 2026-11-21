@@ -411,6 +411,30 @@
         "retrieved_at": "2026-11-21T22:23:10.787705+00:00",
         "sha256": "342ada6eada1f72a8066d5522281db0e1a77c48e6893ab406fd35fec4678d3c6"
       }
+    },
+    "US-MA:tolling:8ef34a5dd7bf": {
+      "category": "tolling",
+      "title": "Mass. Gen. Laws ch. 260, § 7",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleV/Chapter260/Section7",
+      "locator": "Mass. Gen. Laws ch. 260, § 7",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:48:23.534083+00:00",
+        "sha256": "d4cd7f1b6864fb2e8fc8b1b0283d2675f551bbdc10eaa3df26165492b688caf7"
+      }
+    },
+    "US-MA:wrongful_death_limitations:1b3493a3f75c": {
+      "category": "wrongful_death_limitations",
+      "title": "Mass. Gen. Laws ch. 229, § 2 (timing paragraph)",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleII/Chapter229/Section2",
+      "locator": "Mass. Gen. Laws ch. 229, § 2 (timing paragraph)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:48:23.550722+00:00",
+        "sha256": "d5c21b955ce73bcb21282b9daa20809c7d74362c9460f71ceb3912a76142abe2"
+      }
     }
   },
   "court_directory": [
@@ -719,6 +743,30 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Massachusetts General Court general laws; accompanying residential nonpayment notice form and proof required for filing"
+    },
+    "18753064d86e13dca84fef9c207802": {
+      "source_id": "US-MA:tolling:8ef34a5dd7bf",
+      "authority_type": "statute",
+      "citation": "Mass. Gen. Laws ch. 260, § 7",
+      "text": "If the person entitled thereto is a minor, or is incapacitated by reason of mental illness when a right to bring an action first accrues, the action may be commenced within the time hereinbefore limited after the disability is removed.",
+      "text_sha256": "0cebe44a9401d11e5e50291385f645579fd8aab4bef67fb45b3403c465e2872f",
+      "publisher_sha256": "d4cd7f1b6864fb2e8fc8b1b0283d2675f551bbdc10eaa3df26165492b688caf7",
+      "retrieved_at": "2026-11-21T22:48:23.534083+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Massachusetts General Court; disability when right first accrues"
+    },
+    "ee90a06aabfb1d82c748ad47d010db": {
+      "source_id": "US-MA:wrongful_death_limitations:1b3493a3f75c",
+      "authority_type": "statute",
+      "citation": "Mass. Gen. Laws ch. 229, § 2 (timing paragraph)",
+      "text": "An action to recover damages under this section shall be commenced within three years from the date of death, or within three years from the date when the deceased's executor or administrator knew, or in the exercise of reasonable diligence, should have known of the factual basis for a cause of action, or within such time thereafter as is provided by section four, four B, nine or ten of chapter two hundred and sixty.",
+      "text_sha256": "a734f8e4af8b1be063ccd7e4a0b8a22120638c2a60badb3baa61157c7c525311",
+      "publisher_sha256": "d5c21b955ce73bcb21282b9daa20809c7d74362c9460f71ceb3912a76142abe2",
+      "retrieved_at": "2026-11-21T22:48:23.550722+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Massachusetts General Court; wrongful-death filing alternatives and chapter 260 cross-references"
     }
   },
   "fault_allocation": {

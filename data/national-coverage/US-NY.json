@@ -425,6 +425,18 @@
         "retrieved_at": "2026-11-21T22:43:31.874127+00:00",
         "sha256": "53f4eb60d2b2cea614a7a136e3a84532eb78c489bf88acaa1cd9bc9a14b9be18"
       }
+    },
+    "US-NY:tolling:61b019faa95b": {
+      "category": "tolling",
+      "title": "N.Y. C.P.L.R. 208(a)",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/208",
+      "locator": "N.Y. C.P.L.R. 208(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:48:23.297010+00:00",
+        "sha256": "2be2f45da510b10c562c46419ba5ae56a48e76c7d5e3adf195245eda72751a91"
+      }
     }
   },
   "court_directory": [
@@ -807,6 +819,18 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "New York Senate codified revision May 16, 2025; Article 6 limitations, tolling dependent on investigation and agency dispositions"
+    },
+    "6c64b1f96cc5ef87f93cdbb50769e8": {
+      "source_id": "US-NY:tolling:61b019faa95b",
+      "authority_type": "statute",
+      "citation": "N.Y. C.P.L.R. 208(a)",
+      "text": "(a) If a person entitled to commence an action is under a disability because of infancy or insanity at the time the cause of action accrues, and the time otherwise limited for commencing the action is three years or more and expires no later than three years after the disability ceases, or the person under the disability dies, the time within which the action must be commenced shall be extended to three years after the disability ceases or the person under the disability dies, whichever event first occurs; if the time otherwise limited is less than three years, the time shall be extended by the period of disability. The time within which the action must be commenced shall not be extended by this provision beyond ten years after the cause of action accrues, except, in any action other than for medical, dental or podiatric malpractice, where the person was under a disability due to infancy. This section shall not apply to an action to recover a penalty or forfeiture, or against a sheriff or other officer for an escape.",
+      "text_sha256": "4592554564d70988e3bc0f50eb1708f7e331cb5225f3b789d2cb37712dfb7e32",
+      "publisher_sha256": "2be2f45da510b10c562c46419ba5ae56a48e76c7d5e3adf195245eda72751a91",
+      "retrieved_at": "2026-11-21T22:48:23.297010+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New York Senate Open Legislation February 15, 2019 revision; disability at accrual, maximum and malpractice qualification; separate subsection (b) omitted"
     }
   },
   "fault_allocation": {

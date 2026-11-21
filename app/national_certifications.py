@@ -22,6 +22,8 @@ WASHINGTON_RCW_ROOT = "https://lawfilesext.leg.wa.gov/law/RCWArchive/2026/pdf/"
 WASHINGTON_RCW_SECTIONS = {
     "4.16.170": ("723477c44b528679f1e15cabe83ec8f08ef25552d3ace454c128d295bdfea33e",
                  "For the purpose of tolling any statute of limitations"),
+    "4.16.190": ("4274a90eabb0fb704103c53f747f3817fff917821524eab3681fb1a14681d723",
+                 "Unless otherwise provided in this section"),
     "19.86.080": ("630faf80fd75e2c4d55c77a5d17f47b613ff85ce4aeece9035cc22215fb472b2",
                   "(1) The attorney general may bring an action"),
     "19.86.090": ("e0b6f825333555689d7d2cfd1e88a0dbf2757d438bf1d0ee4a0cc9b931940801",

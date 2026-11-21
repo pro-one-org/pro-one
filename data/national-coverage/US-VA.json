@@ -471,6 +471,54 @@
         "retrieved_at": "2026-11-21T22:20:29.379892+00:00",
         "sha256": "c537a28e233601501bd2bdaf06aa03e80de17b41d7b3672ac12f355dcb4dbf0a"
       }
+    },
+    "US-VA:accrual:845e919e3d11": {
+      "category": "accrual",
+      "title": "Va. Code § 8.01-230",
+      "url": "https://law.lis.virginia.gov/vacode/title8.01/chapter4/section8.01-230/",
+      "locator": "Va. Code § 8.01-230",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:48:23.447378+00:00",
+        "sha256": "dc19e1e03f3727826e08b18eb1940c3ddc32619fa421d8f6f5bae1b8b0c39552"
+      }
+    },
+    "US-VA:tolling:48a8048bcf8d": {
+      "category": "tolling",
+      "title": "Va. Code § 8.01-229(A)",
+      "url": "https://law.lis.virginia.gov/vacode/title8.01/chapter4/section8.01-229/",
+      "locator": "Va. Code § 8.01-229(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:48:23.560753+00:00",
+        "sha256": "5d635acea0eb4fbda06d33add58e4635817b2d5206e50c5f9de8a641359a5895"
+      }
+    },
+    "US-VA:tolling:edad5dc7e018": {
+      "category": "tolling",
+      "title": "Va. Code § 8.01-229(C)–(D)",
+      "url": "https://law.lis.virginia.gov/vacode/title8.01/chapter4/section8.01-229/",
+      "locator": "Va. Code § 8.01-229(C)–(D)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:48:23.560753+00:00",
+        "sha256": "5d635acea0eb4fbda06d33add58e4635817b2d5206e50c5f9de8a641359a5895"
+      }
+    },
+    "US-VA:refiling_after_dismissal:4b0461c96e44": {
+      "category": "refiling_after_dismissal",
+      "title": "Va. Code § 8.01-229(E)",
+      "url": "https://law.lis.virginia.gov/vacode/title8.01/chapter4/section8.01-229/",
+      "locator": "Va. Code § 8.01-229(E)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:48:23.560753+00:00",
+        "sha256": "5d635acea0eb4fbda06d33add58e4635817b2d5206e50c5f9de8a641359a5895"
+      }
     }
   },
   "court_directory": [
@@ -784,6 +832,54 @@
       "language": "en",
       "publisher_member": "Virginia Legislative Information System; publisher version effective until July 1, 2027; material noncompliance and cure, subject to other provisions",
       "effective_until": "2027-07-01"
+    },
+    "5d54bb5df617bcdd0e280008b10585": {
+      "source_id": "US-VA:accrual:845e919e3d11",
+      "authority_type": "statute",
+      "citation": "Va. Code § 8.01-230",
+      "text": "In every action for which a limitation period is prescribed, the right of action shall be deemed to accrue and the prescribed limitation period shall begin to run from the date the injury is sustained in the case of injury to the person or damage to property, when the breach of contract occurs in actions ex contractu and not when the resulting damage is discovered, except where the relief sought is solely equitable or where otherwise provided under § 8.01-233, subsection C of § 8.01-245, §§ 8.01-249, 8.01-250 or other statute.",
+      "text_sha256": "f0e979a09f122be6897aa0859e1f85f51c6ecf8e45efd9c69371c967b46ba90a",
+      "publisher_sha256": "dc19e1e03f3727826e08b18eb1940c3ddc32619fa421d8f6f5bae1b8b0c39552",
+      "retrieved_at": "2026-11-21T22:48:23.447378+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Virginia Legislative Information System; injury and contract triggers, expressly subject to listed exceptions and other statutes"
+    },
+    "c1e8fc523d4ba970b3d9407a409c74": {
+      "source_id": "US-VA:tolling:48a8048bcf8d",
+      "authority_type": "statute",
+      "citation": "Va. Code § 8.01-229(A)",
+      "text": "A. Disabilities which toll the statute of limitations. — Except as otherwise specifically provided in §§ 8.01-237, 8.01-241, 8.01-242, 8.01-243, 8.01-243.1 and other provisions of this Code, 1. If a person entitled to bring any action is at the time the cause of action accrues an infant, except if such infant has been emancipated pursuant to Article 15 (§ 16.1-331 et seq.) of Chapter 11 of Title 16.1, or incapacitated, such person may bring it within the prescribed limitation period after such disability is removed; or 2. After a cause of action accrues, a. If an infant becomes entitled to bring such action, the time during which he is within the age of minority shall not be counted as any part of the period within which the action must be brought except as to any such period during which the infant has been judicially declared emancipated; or b. If a person entitled to bring such action becomes incapacitated, the time during which he is incapacitated shall not be computed as any part of the period within which the action must be brought, except where a conservator, guardian or committee is appointed for such person in which case an action may be commenced by such conservator, committee or guardian before the expiration of the applicable period of limitation or within one year after his qualification as such, whichever occurs later. For the purposes of subdivisions 1 and 2, a person shall be deemed incapacitated if he is so adjudged by a court of competent jurisdiction, or if it shall otherwise appear to the court or jury determining the issue that such person is or was incapacitated within the prescribed limitation period. 3. If a convict is or becomes entitled to bring an action against his committee, the time during which he is incarcerated shall not be counted as any part of the period within which the action must be brought.",
+      "text_sha256": "45c4c8bb28663b229baa86f6854f6ac423b14ead6bdd3eeb150ac106938a13a8",
+      "publisher_sha256": "5d635acea0eb4fbda06d33add58e4635817b2d5206e50c5f9de8a641359a5895",
+      "retrieved_at": "2026-11-21T22:48:23.560753+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Virginia Legislative Information System; disability, emancipation, appointment and statutory exceptions"
+    },
+    "fa026212727a0f1229dd0ec8ff1efe": {
+      "source_id": "US-VA:tolling:edad5dc7e018",
+      "authority_type": "statute",
+      "citation": "Va. Code § 8.01-229(C)–(D)",
+      "text": "C. Suspension during injunctions. — When the commencement of any action is stayed by injunction, the time of the continuance of the injunction shall not be computed as any part of the period within which the action must be brought. D. Obstruction of filing by defendant. — When the filing of an action is obstructed by a defendant's (i) filing a petition in bankruptcy or filing a petition for an extension or arrangement under the United States Bankruptcy Act or (ii) using any other direct or indirect means to obstruct the filing of an action, then the time that such obstruction has continued shall not be counted as any part of the period within which the action must be brought.",
+      "text_sha256": "23887fe57954a2fe70dde6f3bc3cecdc7b0aeada3667f816ecd91e266ce9fb23",
+      "publisher_sha256": "5d635acea0eb4fbda06d33add58e4635817b2d5206e50c5f9de8a641359a5895",
+      "retrieved_at": "2026-11-21T22:48:23.560753+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Virginia Legislative Information System; filing injunction and defendant obstruction"
+    },
+    "4ff251f556373be0b09c8407d7799e": {
+      "source_id": "US-VA:refiling_after_dismissal:4b0461c96e44",
+      "authority_type": "statute",
+      "citation": "Va. Code § 8.01-229(E)",
+      "text": "E. Dismissal, abatement, or nonsuit. 1. Except as provided in subdivision 3, if any action is commenced within the prescribed limitation period and for any cause abates or is dismissed without determining the merits, the time such action is pending shall not be computed as part of the period within which such action may be brought, and another action may be brought within the remaining period. 2. If a judgment or decree is rendered for the plaintiff in any action commenced within the prescribed limitation period and such judgment or decree is arrested or reversed upon a ground which does not preclude a new action for the same cause, or if there is occasion to bring a new action by reason of the loss or destruction of any of the papers or records in a former action which was commenced within the prescribed limitation period, then a new action may be brought within one year after such arrest or reversal or such loss or destruction, but not after. 3. If a plaintiff suffers a voluntary nonsuit as prescribed in § 8.01-380, the statute of limitations with respect to such action shall be tolled by the commencement of the nonsuited action, regardless of whether the statute of limitations is statutory or contractual, and the plaintiff may recommence his action within six months from the date of the order entered by the court, or within the original period of limitation, or within the limitation period as provided by subdivision B 1, whichever period is longer. This tolling provision shall apply irrespective of whether the action is originally filed in a federal or a state court and recommenced in any other court, and shall apply to all actions irrespective of whether they arise under common law or statute.",
+      "text_sha256": "03541c359ddf54d88dbb6f93a9b50df429b1d46959ac7a6bed903b73fc9f4fe3",
+      "publisher_sha256": "5d635acea0eb4fbda06d33add58e4635817b2d5206e50c5f9de8a641359a5895",
+      "retrieved_at": "2026-11-21T22:48:23.560753+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Virginia Legislative Information System; distinct paths after abatement, reversal, loss of records or voluntary nonsuit"
     }
   },
   "fault_allocation": {
