@@ -314,6 +314,30 @@
         "retrieved_at": "2026-11-20T23:30:27.854347+00:00",
         "sha256": "532f27b4f633ebca8b29e662415963d1ad69c5657922f0c4974e0faffeb8e5cc"
       }
+    },
+    "US-TN:contract_formation:05ce14f41625": {
+      "category": "contract_formation",
+      "title": "Westfall v. Brentwood Service Group, Inc., No. E2000-01086-COA-R3-CV, slip op. at 6 (Tenn. Ct. App. Nov. 17, 2000)",
+      "url": "https://web.archive.org/web/20170210091126id_/https://www.tncourts.gov/sites/default/files/OPINIONS/TCA/PDF/004/WestfallLO.pdf",
+      "locator": "Westfall v. Brentwood Service Group, Inc., No. E2000-01086-COA-R3-CV, slip op. at 6 (Tenn. Ct. App. Nov. 17, 2000)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:59:01.906484+00:00",
+        "sha256": "75b47ca07f502c00d47737250f746d68d6fbbdd635eadbb8c60491e4f7e6a0ae"
+      }
+    },
+    "US-TN:contract_formation:a8ea4813c7a3": {
+      "category": "contract_formation",
+      "title": "Mathews Partners, LLC v. Lemme, No. M2008-01036-COA-R3-CV, slip op. at 8 (Tenn. Ct. App. Oct. 2, 2009)",
+      "url": "https://web.archive.org/web/20170222014614id_/https://www.tncourts.gov/sites/default/files/OPINIONS/TCA/PDF/094/Mathews%20Partners%20v%20Lucianna%20Lemme%20OPN.pdf",
+      "locator": "Mathews Partners, LLC v. Lemme, No. M2008-01036-COA-R3-CV, slip op. at 8 (Tenn. Ct. App. Oct. 2, 2009)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:59:01.952864+00:00",
+        "sha256": "0ff2f108b725cfd6845c1b62bc7efda50d5fbdeaf7625e5b3a691a05133298d4"
+      }
     }
   },
   "court_directory": [
@@ -582,6 +606,40 @@
       "language": "en",
       "edition": "Tennessee Public Acts 2006, ch. 722, effective September 1, 2006",
       "effective_from": "2006-09-01"
+    },
+    "5b69bde28e3da29c4ce5dcc6024ac5": {
+      "source_id": "US-TN:contract_formation:05ce14f41625",
+      "authority_type": "opinion",
+      "citation": "Westfall v. Brentwood Service Group, Inc., No. E2000-01086-COA-R3-CV, slip op. at 6 (Tenn. Ct. App. Nov. 17, 2000)",
+      "text": "“Under general principles of contract law, a contract must result from a meeting of the minds of the parties in mutual assent to the terms.” Sweeten v. Trade Envelopes, Inc., 938 S.W.2d 383, 386 (Tenn. 1996) (internal quotations omitted). Acceptance of an offer must be exactly and precisely in accord with the terms of the offer. Ray v. Thomas, 232 S.W.2d 32, 35 (Tenn. 1950). If an offeree assents to an offer, but only with conditions or with varied terms, there is no acceptance, but rather the expression constitutes a rejection of the original offer and initiation of a new offer.",
+      "text_sha256": "f6c0e677c874370ed3aff3a9bec312aa82e1dbf016fb267f263776d7a0d4b113",
+      "publisher_sha256": "75b47ca07f502c00d47737250f746d68d6fbbdd635eadbb8c60491e4f7e6a0ae",
+      "retrieved_at": "2026-11-21T03:59:01.906484+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2000-11-17",
+      "court": "Court of Appeals of Tennessee",
+      "decision_date": "2000-11-17",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal after a bench trial over post-employment commissions and an asserted noncompetition agreement.",
+      "publisher_member": "original court opinion, PDF p. 6"
+    },
+    "7f854086c7cf744179e5a1f47f90d9": {
+      "source_id": "US-TN:contract_formation:a8ea4813c7a3",
+      "authority_type": "opinion",
+      "citation": "Mathews Partners, LLC v. Lemme, No. M2008-01036-COA-R3-CV, slip op. at 8 (Tenn. Ct. App. Oct. 2, 2009)",
+      "text": "To be enforced, a contract “must result from a meeting of the minds of the parties in mutual assent to the terms, must be based upon a sufficient consideration, free from fraud or undue influence, not against public policy and sufficiently definite.” Staubach Retail Services-Southeast, Inc. v. H.G. Hill Realty Co., 160 S.W.3d 521, 524 (Tenn. 2005) (citing Doe v. HCA Health Servs. of Tenn., Inc., 46 S.W.3d 191, 196 (Tenn. 2001). “In determining mutuality of assent, courts must apply an objective standard based upon the parties’ manifestations.” Id. (citing T.R. Mills Contractors, Inc. V. WRH Enters., LLC, 93 S.W.3d 861, 866 (Tenn. Ct. App. 2002).",
+      "text_sha256": "8e9782799f1439d5d3d4f59772c64d786116463c2469f0cbe3c1e9c1ddce5b79",
+      "publisher_sha256": "0ff2f108b725cfd6845c1b62bc7efda50d5fbdeaf7625e5b3a691a05133298d4",
+      "retrieved_at": "2026-11-21T03:59:01.952864+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2009-10-02",
+      "court": "Court of Appeals of Tennessee",
+      "decision_date": "2009-10-02",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in a dispute over an exclusive listing agreement and a broker commission.",
+      "publisher_member": "original court opinion, PDF p. 8"
     }
   },
   "fault_allocation": {

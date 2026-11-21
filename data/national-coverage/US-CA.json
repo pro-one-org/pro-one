@@ -516,6 +516,18 @@
         "retrieved_at": "2026-11-20T22:24:02.767114+00:00",
         "sha256": "075d5687451db3bcb8871a703ca42042d9e9bc88ca71304543077268f5528c56"
       }
+    },
+    "US-CA:negligence_elements:033089363cd2": {
+      "category": "negligence_elements",
+      "title": "C.I. v. San Bernardino City Unified School District, No. E076212, slip op. at 11 (Cal. Ct. App. Aug. 10, 2022)",
+      "url": "https://www.courts.ca.gov/opinions/archive/E076212.PDF",
+      "locator": "C.I. v. San Bernardino City Unified School District, No. E076212, slip op. at 11 (Cal. Ct. App. Aug. 10, 2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:59:02.871314+00:00",
+        "sha256": "c307d2a68c12970a8a4b5373a2a61c6ecf9ebd02be3f249d6edb1abab119bb6e"
+      }
     }
   },
   "court_directory": [
@@ -936,6 +948,23 @@
       "publisher_archive_etag": "\"4d06606a-6605e05841b00\"",
       "publisher_section_id": "CIV3333.1872",
       "publisher_history": "Enacted 1872."
+    },
+    "ca7cf93efe6d749654a026d98446d4": {
+      "source_id": "US-CA:negligence_elements:033089363cd2",
+      "authority_type": "opinion",
+      "citation": "C.I. v. San Bernardino City Unified School District, No. E076212, slip op. at 11 (Cal. Ct. App. Aug. 10, 2022)",
+      "text": "To establish their negligence claim, plaintiffs must prove duty, breach, causation, and damages. (Regents of University of California v. Superior Court (2018) 4 Cal.5th 607, 618 (Regents-Rosen).)",
+      "text_sha256": "81a970251959491210f696ed4d5e9ffe29d69cbdc45c62a7aee1c7958ce45ab9",
+      "publisher_sha256": "c307d2a68c12970a8a4b5373a2a61c6ecf9ebd02be3f249d6edb1abab119bb6e",
+      "retrieved_at": "2026-11-21T03:59:02.871314+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2022-08-10",
+      "court": "California Court of Appeal, Fourth Appellate District, Division Two",
+      "decision_date": "2022-08-10",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in a negligence action against public school defendants.",
+      "publisher_member": "original court opinion, PDF p. 11"
     }
   },
   "fault_allocation": {

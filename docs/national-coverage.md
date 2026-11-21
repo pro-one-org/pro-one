@@ -48,9 +48,7 @@ A discovery entry, a historical citation and a review-required action each have 
 
 ### Publisher access gaps
 
-The Tennessee judiciary returned a browser verification page for public contract-formation opinions. Tennessee's retained electronic-transactions statutes support the specific topics shown by the baseline audit. General contract-formation authority remains outstanding.
-
-The Maryland judiciary's publisher endpoints returned access errors for the original opinion in `Coleman v. Soccer Association of Columbia`. Maryland's general fault-allocation record remains outstanding. The New Jersey judiciary's endpoints also refused retrieval of the 2022 Special Civil Part rules order. [Maryland opinion](https://www.mdcourts.gov/data/opinions/coa/2013/9a12.pdf) · [New Jersey order](https://www.njcourts.gov/sites/default/files/notices/2022/05/n220511d.pdf)
+The catalog binds passages from archived copies of the original court PDFs for two Tennessee contract opinions, the Maryland *Coleman* majority opinion and the New Jersey Supreme Court's May 2022 small-claims amendment. The archive URLs identify the original publishers and the retained digests identify the retrieved bytes. The opinions have historical status with subsequent treatment unverified. The dated New Jersey amendment establishes the adopted text in that order. Later currentness remains unresolved.
 
 The original pages of Mississippi Laws 1991, chapter 407, on wage-payment frequency and Arkansas Act 531 of 1979 on residential security deposits remain unavailable through the archives reviewed. For Maine, the catalog retains bounded statutory text with currentness unresolved. Redistribution of the complete publisher archives carrying a rights notice was rejected in approval review.
 

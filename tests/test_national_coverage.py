@@ -345,6 +345,36 @@ class NationalCoverageTests(unittest.TestCase):
             self.assertFalse(provider.search(current))
         self.assertFalse(provider.search(query.model_copy(update={"court": "Alabama Circuit Court"})))
 
+    def test_archived_court_originals_preserve_role_tribunal_and_currentness(self):
+        provider = RetainedLegislativeResearch()
+        cases = (
+            ("Tennessee", "contracts", "contract_formation", "opinion",
+             "Court of Appeals of Tennessee", ("rejection of the original offer", "sufficient consideration")),
+            ("Maryland", "torts", "fault_allocation", "opinion",
+             "Court of Appeals of Maryland", ("abrogate the contributory negligence defense",)),
+            ("California", "torts", "negligence_elements", "opinion",
+             "California Court of Appeal, Fourth Appellate District, Division Two", ("duty, breach, causation, and damages",)),
+            ("New Jersey", "civil_procedure", "small_claims", "court_rule",
+             "New Jersey Superior Court, Law Division, Special Civil Part, Small Claims Section", ("$5,000",)),
+        )
+        for state, area, topic, kind, court, excerpts in cases:
+            with self.subTest(state=state):
+                query = ResearchMatter(country="US", state=state, legal_area=area, topics=[topic],
+                                       authority_types=[kind], court=court, authority_status="historical")
+                docs = [provider.fetch(key) for key in provider.search(query)]
+                self.assertEqual(len(docs), len(excerpts))
+                for excerpt in excerpts:
+                    self.assertTrue(any(excerpt in doc.text for doc in docs))
+                for doc in docs:
+                    if kind == "opinion":
+                        self.assertEqual(doc.source["case_metadata"]["opinion_role"], "majority")
+                    else:
+                        self.assertNotIn("$3,000", doc.text)
+                self.assertFalse(provider.search(query.model_copy(update={"state": "Hawaii"})))
+                self.assertFalse(provider.search(query.model_copy(update={
+                    "authority_status": "current", "authority_as_of": "2026-11-20",
+                })))
+
     def test_automated_transaction_enactment_is_scoped_and_historical(self):
         query = ResearchMatter(country="US", state="Arkansas", legal_area="contracts",
                                topics=["automated_contract_formation"], authority_types=["statute"],

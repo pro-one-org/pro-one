@@ -297,6 +297,18 @@
         "retrieved_at": "2026-11-20T17:54:36.964736+00:00",
         "sha256": "32db53d903e079527f1f4ce930cd9b1f060a94ba4f283a7193b5dea43ef76c1e"
       }
+    },
+    "US-MD:fault:cdc1a3347df3": {
+      "category": "fault",
+      "title": "Coleman v. Soccer Ass’n of Columbia, 432 Md. 679, slip op. at 15 (2013)",
+      "url": "https://web.archive.org/web/20240726051643id_/https://www.mdcourts.gov/data/opinions/coa/2013/9a12.pdf",
+      "locator": "Coleman v. Soccer Ass’n of Columbia, 432 Md. 679, slip op. at 15 (2013)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:59:02.784617+00:00",
+        "sha256": "f648326d5612de7ff6263709976314cfaf7b77b0a23b3c5e1b35b6da0327d8d8"
+      }
     }
   },
   "court_directory": [
@@ -483,6 +495,30 @@
       "retrieved_at": "2026-11-20T17:54:36.964736+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "87571f990906f47c38c633674d3a9a": {
+      "source_id": "US-MD:fault:cdc1a3347df3",
+      "authority_type": "opinion",
+      "citation": "Coleman v. Soccer Ass’n of Columbia, 432 Md. 679, slip op. at 15 (2013)",
+      "text": "For this Court to change the common law and abrogate the contributory negligence defense in negligence actions, in the face of the General Assembly’s repeated refusal to do so, would be totally inconsistent with the Court’s long-standing jurisprudence.",
+      "text_sha256": "8f0a291aca9eb4ba266ee25062b54bbda4e47bf881da51028a744cc8974ba450",
+      "publisher_sha256": "f648326d5612de7ff6263709976314cfaf7b77b0a23b3c5e1b35b6da0327d8d8",
+      "retrieved_at": "2026-11-21T03:59:02.784617+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2013-07-09",
+      "court": "Court of Appeals of Maryland",
+      "decision_date": "2013-07-09",
+      "opinion_role": "majority",
+      "procedural_posture": "Certiorari before appellate argument to review a defense judgment on a jury verdict in a personal-injury action.",
+      "publisher_member": "original court opinion, PDF p. 16"
     }
+  },
+  "fault_allocation": {
+    "regime": "contributory",
+    "source_id": "US-MD:fault:cdc1a3347df3",
+    "passage_selector": "87571f990906f47c38c633674d3a9a",
+    "currentness": "historical",
+    "qualification": "The majority retained the common-law contributory negligence defense in 2013. The passage does not establish subsequent treatment, exceptions, or statutory modifications."
   }
 }

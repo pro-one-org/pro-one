@@ -335,6 +335,18 @@
         "retrieved_at": "2026-11-18T20:25:57.373832+00:00",
         "sha256": "ea3a82fbcfee5128f423537ae935393f538c5524e6d932f42533e85e6dfd0d42"
       }
+    },
+    "US-NJ:small_claims:5ec1101886b4": {
+      "category": "small_claims",
+      "title": "N.J. Ct. R. 6:1-2(a)(2) (July 2022 amendment)",
+      "url": "https://web.archive.org/web/20221207061839id_/https://www.njcourts.gov/sites/default/files/notices/2022/05/n220511d.pdf",
+      "locator": "N.J. Ct. R. 6:1-2(a)(2) (July 2022 amendment)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:59:02.197564+00:00",
+        "sha256": "4df2bb0a4be882f163bc66098f72243e968de2382056cc9ae0c6e8536db3d78e"
+      }
     }
   },
   "court_directory": [
@@ -553,6 +565,21 @@
       "edition": "New Jersey General and Permanent Statutes, updated through P.L.2026, c.70, and J.R.2",
       "publisher_member": "STATUTES.TXT",
       "publisher_member_sha256": "f8e745637279aa59f6c02035332683370ebae016d8cc34e3d90e34721e03e48f"
+    },
+    "5eea29839cb5eaaae49c231780f7c9": {
+      "source_id": "US-NJ:small_claims:5ec1101886b4",
+      "authority_type": "court_rule",
+      "citation": "N.J. Ct. R. 6:1-2(a)(2) (July 2022 amendment)",
+      "text": "(2) Small claims actions, which are defined as all actions in contract and tort (exclusive of professional malpractice, probate, and matters cognizable in the Family Division or Tax Court) and actions between a landlord and tenant for rent, return of all or part of a security deposit, or money damages, when the amount in dispute, including any applicable penalties, does not exceed, exclusive of costs, the sum of $5,000. The Small Claims Section may provide such ancillary equitable relief as may be necessary to effect a complete remedy. Actions in lieu of prerogative writs and actions in which the primary relief sought is equitable in nature are excluded from the Small Claims Section;",
+      "text_sha256": "6290f4e44df84e99857612b495ed34de7980e89c4ef82819c399e69c975d4e45",
+      "publisher_sha256": "4df2bb0a4be882f163bc66098f72243e968de2382056cc9ae0c6e8536db3d78e",
+      "retrieved_at": "2026-11-21T03:59:02.197564+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Jersey Supreme Court order of May 10, 2022, effective July 1, 2022",
+      "court": "New Jersey Superior Court, Law Division, Special Civil Part, Small Claims Section",
+      "effective_from": "2022-07-01",
+      "publisher_member": "signed order PDF p. 2 and adopted text PDF pp. 5–6"
     }
   },
   "fault_allocation": {
