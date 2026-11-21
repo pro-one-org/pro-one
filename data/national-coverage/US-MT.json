@@ -357,6 +357,18 @@
         "retrieved_at": "2026-11-20T23:15:49.797828+00:00",
         "sha256": "fa2a565c1410074809e6b5efa49bb63b64afa753a86ab9286af401c89aea4e59"
       }
+    },
+    "US-MT:negligence_elements:e0e274d7a521": {
+      "category": "negligence_elements",
+      "title": "Faulconbridge v. State, 2006 MT 198, ¶ 77",
+      "url": "https://courts.mt.gov/external/SOR/SCt/04-592.pdf",
+      "locator": "Faulconbridge v. State, 2006 MT 198, ¶ 77",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:30:07.175551+00:00",
+        "sha256": "8f2ee9c6b9c71d3ec99f460c80bd7365ce7723a87d06822068212d6dfe39cef6"
+      }
     }
   },
   "court_directory": [
@@ -631,6 +643,22 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Montana Code Annotated 2025"
+    },
+    "0bfdd80be776ed7f40099b62282638": {
+      "source_id": "US-MT:negligence_elements:e0e274d7a521",
+      "authority_type": "opinion",
+      "citation": "Faulconbridge v. State, 2006 MT 198, ¶ 77",
+      "text": "A plaintiff has the burden to prove duty, breach, causation and damages to recover under a negligence claim in Montana. Barr v. Great Falls Intern. Airport, 2005 MT 36, ¶ 41, 326 Mont. 93, ¶ 41, 107 P.3d 471, ¶ 41. The defendant may raise several defenses to a negligence action, including the defense that the plaintiff failed to prove that the defendant caused the damage to the plaintiff.",
+      "text_sha256": "f0833601a8c76e28d8749a13185b63b04cbec9eb7c1c206563858f0e42425e26",
+      "publisher_sha256": "8f2ee9c6b9c71d3ec99f460c80bd7365ce7723a87d06822068212d6dfe39cef6",
+      "retrieved_at": "2026-11-21T03:30:07.175551+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2006-08-22",
+      "court": "Supreme Court of Montana",
+      "decision_date": "2006-08-22",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal and conditional cross-appeal after a defense verdict in a wrongful death and survivorship action."
     }
   },
   "forms": {

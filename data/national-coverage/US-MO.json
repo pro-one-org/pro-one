@@ -329,6 +329,18 @@
         "retrieved_at": "2026-11-20T22:39:55.695835+00:00",
         "sha256": "646b94f5ba3c99b921578254e529c9a3107f6b7bc0dd5fc84f88cf2165b80099"
       }
+    },
+    "US-MO:negligence_elements:320df21c60e6": {
+      "category": "negligence_elements",
+      "title": "Campbell v. Baxter Int’l, Inc., No. ED112259, slip op. at 7",
+      "url": "https://www.courts.mo.gov/file.jsp?id=209179",
+      "locator": "Campbell v. Baxter Int’l, Inc., No. ED112259, slip op. at 7",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:32:46.538131+00:00",
+        "sha256": "8c3d20e2f65101032a27cf0d767d43d2c1b5107f20406b638a78b7d3cd7514a6"
+      }
     }
   },
   "court_directory": [
@@ -548,6 +560,22 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "1963-08-28"
+    },
+    "dd0367376344bd90982488c30e330a": {
+      "source_id": "US-MO:negligence_elements:320df21c60e6",
+      "authority_type": "opinion",
+      "citation": "Campbell v. Baxter Int’l, Inc., No. ED112259, slip op. at 7",
+      "text": "The claims at issue in this case – negligent hiring, negligent retention, and negligent supervision – are all negligence actions, and the general elements of negligence are: (1) a legal duty owed to the plaintiff by the defendant; (2) a breach of that duty by the defendant; (3) proximate cause; and (4) injury to the plaintiff. See Thornburg v. Federal Express Corp., 62 S.W.3d 421, 427 (Mo. App. W.D. 2001). All claims of negligence require the plaintiff to prove the defendant’s actions were the proximate cause of the plaintiff’s injury.",
+      "text_sha256": "aaef7ad157ec803e2eab1148edbd1e1a0c35854384782a53dbf5e85f034978a0",
+      "publisher_sha256": "8c3d20e2f65101032a27cf0d767d43d2c1b5107f20406b638a78b7d3cd7514a6",
+      "retrieved_at": "2026-11-21T03:32:46.538131+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2024-06-25",
+      "court": "Missouri Court of Appeals, Eastern District",
+      "decision_date": "2024-06-25",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from judgment on the pleadings for claims of negligent hiring, retention, and supervision. The court stated the generally applicable elements."
     }
   },
   "fault_allocation": {

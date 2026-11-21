@@ -372,6 +372,18 @@
         "retrieved_at": "2026-11-20T22:59:01.354712+00:00",
         "sha256": "d8922e00fbe0e03df6a325d7a26f65f0ba7a37492298c438e27379145641f3d3"
       }
+    },
+    "US-SD:negligence_elements:8cee02f06ac3": {
+      "category": "negligence_elements",
+      "title": "Stensland v. Harding County, 2015 S.D. 91, ¶ 11",
+      "url": "https://ujs.sd.gov/media/vw4dv1d0/27288.pdf",
+      "locator": "Stensland v. Harding County, 2015 S.D. 91, ¶ 11",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:32:46.179170+00:00",
+        "sha256": "9ba49418e2cfc714df40c91e43274f85338be82de069a2b25f2d0cffba87e917"
+      }
     }
   },
   "court_directory": [
@@ -625,6 +637,22 @@
       "retrieved_at": "2026-11-20T22:59:01.354712+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "f061b2f65f4d3e98ed42a85598eb61": {
+      "source_id": "US-SD:negligence_elements:8cee02f06ac3",
+      "authority_type": "opinion",
+      "citation": "Stensland v. Harding County, 2015 S.D. 91, ¶ 11",
+      "text": "The terms “negligence” and “liability” have been used loosely in these prior cases. “Negligence” can be used in at least two different ways. It may be referring to “the failure to exercise the standard of care that a reasonably prudent person would have exercised in a similar situation.” Negligence, Black’s Law Dictionary (10th ed. 2014). It may also refer to the “tort grounded in this failure, usually expressed in terms of the following elements: duty, breach of duty, causation, and damages.” Id. These prior statements should not be understood to mean that all of the elements of negligence have been met once negligence per se is established. “Negligence as a matter of law” or “Negligence per se” is not necessarily referring to the four elements constituting the tort of negligence.",
+      "text_sha256": "f292b569d0d0f80eb54bf7e88b5a4bb88f0d1f91f27b1e613ce82cd6c9d42f8e",
+      "publisher_sha256": "9ba49418e2cfc714df40c91e43274f85338be82de069a2b25f2d0cffba87e917",
+      "retrieved_at": "2026-11-21T03:32:46.179170+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court slip opinion of 2015-11-24",
+      "court": "Supreme Court of South Dakota",
+      "decision_date": "2015-11-24",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal after a negligence trial. The court distinguished negligence per se from proof of the full tort."
     }
   },
   "fault_allocation": {
