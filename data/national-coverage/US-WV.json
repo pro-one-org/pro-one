@@ -379,6 +379,30 @@
         "retrieved_at": "2026-11-20T23:25:20.310057+00:00",
         "sha256": "fe986ec022b7f1c89c16c124ecc406f1ad929c98c829e3a58ef98012c9382faf"
       }
+    },
+    "US-WV:general_contract_limitations:b90437088129": {
+      "category": "general_contract_limitations",
+      "title": "W. Va. Code § 55-2-6",
+      "url": "https://web.archive.org/web/20250401093430id_/https://code.wvlegislature.gov/pdf/55-2-6/",
+      "locator": "W. Va. Code § 55-2-6",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:31:25.499225+00:00",
+        "sha256": "3c4b13c3e1a69a7e89ac1f24da66ef43eba03b8a954051051ba4639398587f14"
+      }
+    },
+    "US-WV:wrongful_death_limitations:e8c687ebf519": {
+      "category": "wrongful_death_limitations",
+      "title": "W. Va. Code § 55-7-6(d)",
+      "url": "https://web.archive.org/web/20250218154922id_/https://code.wvlegislature.gov/pdf/55-7-6/",
+      "locator": "W. Va. Code § 55-7-6(d)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:31:26.270459+00:00",
+        "sha256": "9c260920be770202e0640b17e6395df56e5521694b83f5ed8407e1302b2c8cf9"
+      }
     }
   },
   "court_directory": [
@@ -690,6 +714,32 @@
       "decision_date": "2024-10-28",
       "opinion_role": "majority",
       "procedural_posture": "Memorandum decision after a residential security deposit bench trial. The panel reviewed the particular itemization, findings, and absence of bad faith."
+    },
+    "108ec973551f15e25a69f13a893364": {
+      "source_id": "US-WV:general_contract_limitations:b90437088129",
+      "authority_type": "statute",
+      "citation": "W. Va. Code § 55-2-6",
+      "text": "Every action to recover money, which is founded upon an award, or on any contract other than a judgment or recognizance, shall be brought within the following number of years next after the right to bring the same shall have accrued, that is to say: If the case be upon an indemnifying bond taken under any statute, or upon a bond of an executor, administrator or guardian, curator, committee, sheriff or deputy sheriff, clerk or deputy clerk, or any other fiduciary or public officer, within ten years; if it be upon any other contract in writing under seal, within ten years; if it be upon an award, or upon a contract in writing, signed by the party to be charged thereby, or by his agent, but not under seal, within ten years; and if it be upon any other contract, express or implied, within five years, unless it be an action by one party against his copartner for a settlement of the partnership accounts, or upon accounts concerning the trade or merchandise between merchant and merchant, their factors or servants, where the action of account would lie, in either of which cases the action may be brought until the expiration of five years from a cessation of the dealings in which they are interested together, but not after.",
+      "text_sha256": "fdab64af126bfad5c7bbdf392b5c4904425c62e84098ee4e04b555b9c7ef6b7e",
+      "publisher_sha256": "3c4b13c3e1a69a7e89ac1f24da66ef43eba03b8a954051051ba4639398587f14",
+      "retrieved_at": "2026-11-21T17:31:25.499225+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "West Virginia Legislature statutory PDF archived April 1, 2025",
+      "publisher_member": "Publisher PDF p. 1, W. Va. Code § 55-2-6, statutory text"
+    },
+    "cb780ebef922cfa1c07edfe203371e": {
+      "source_id": "US-WV:wrongful_death_limitations:e8c687ebf519",
+      "authority_type": "statute",
+      "citation": "W. Va. Code § 55-7-6(d)",
+      "text": "(d) Every such action shall be commenced within two years after the death of such deceased person, subject to the provisions of section eighteen, article two, chapter fifty-five. The provisions of this section shall not apply to actions brought for the death of any person occurring prior to July 1, 1988.",
+      "text_sha256": "c04ac1223a315436ace1d24acc48739856f92077aa077e219c4e767495f4c82a",
+      "publisher_sha256": "9c260920be770202e0640b17e6395df56e5521694b83f5ed8407e1302b2c8cf9",
+      "retrieved_at": "2026-11-21T17:31:26.270459+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "West Virginia Legislature statutory PDF archived February 18, 2025",
+      "publisher_member": "Publisher PDF p. 2, W. Va. Code § 55-7-6(d), statutory text"
     }
   },
   "fault_allocation": {

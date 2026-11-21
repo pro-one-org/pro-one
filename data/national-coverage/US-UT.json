@@ -348,6 +348,42 @@
         "retrieved_at": "2026-11-21T04:26:58.415194+00:00",
         "sha256": "02d1dfa0e0e8d6e002849bea425ef760ba5b6459dcb8b1ee972b792e2311b085"
       }
+    },
+    "US-UT:written_contract_limitations:17f3b4457456": {
+      "category": "written_contract_limitations",
+      "title": "Utah Code § 78B-2-309",
+      "url": "https://le.utah.gov/xcode/Title78B/Chapter2/C78B-2-S309_2019051420190514.pdf",
+      "locator": "Utah Code § 78B-2-309",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:31:03.774972+00:00",
+        "sha256": "6deec4a6dcd90f128dee2214036e4c1d20349901d6b80fc5a982dceeb63c9b71"
+      }
+    },
+    "US-UT:oral_contract_limitations:f4867681e038": {
+      "category": "oral_contract_limitations",
+      "title": "Utah Code § 78B-2-307(1)",
+      "url": "https://le.utah.gov/xcode/Title78B/Chapter2/C78B-2_1800010118000101.pdf",
+      "locator": "Utah Code § 78B-2-307(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:31:03.848068+00:00",
+        "sha256": "386abf01fc3cfe397aa7c35dcff13228aa9f4662b6ba01e13f34d31299a22c3a"
+      }
+    },
+    "US-UT:wrongful_death_limitations:3c0ad5a177a8": {
+      "category": "wrongful_death_limitations",
+      "title": "Utah Code § 78B-2-304(3)",
+      "url": "https://le.utah.gov/xcode/Title78B/Chapter2/C78B-2_1800010118000101.pdf",
+      "locator": "Utah Code § 78B-2-304(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:31:03.848068+00:00",
+        "sha256": "386abf01fc3cfe397aa7c35dcff13228aa9f4662b6ba01e13f34d31299a22c3a"
+      }
     }
   },
   "court_directory": [
@@ -610,6 +646,43 @@
       "opinion_role": "majority",
       "procedural_posture": "Appeal from summary judgment on a property damage claim the plaintiff contended sounded in negligence.",
       "publisher_member": "Court-issued opinion PDF pp. 4–5, paragraph 10"
+    },
+    "b9bd692edddd92353070d9c62efdaf": {
+      "source_id": "US-UT:written_contract_limitations:17f3b4457456",
+      "authority_type": "statute",
+      "citation": "Utah Code § 78B-2-309",
+      "text": "(1) An action may be brought within six years: (a) for the mesne profits of real property; (b) subject to Subsection (2), upon any contract, obligation, or liability founded upon an instrument in writing, except those mentioned in Section 78B-2-311; or (c) to recover fire suppression costs or other damages caused by wildland fire. (2) For a credit agreement, as defined in Section 25-5-4, the six-year period described in Subsection (1) begins the later of the day on which: (a) the debt arose; (b) the debtor makes a written acknowledgment of the debt or a promise to pay the debt; or (c) the debtor or a third party makes a payment on the debt.",
+      "text_sha256": "47a78f1df609e2fc98d6a93b9c6df134be1372efc0db55a3e2ad0d49f618127a",
+      "publisher_sha256": "6deec4a6dcd90f128dee2214036e4c1d20349901d6b80fc5a982dceeb63c9b71",
+      "retrieved_at": "2026-11-21T17:31:03.774972+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 1, Utah Code § 78B-2-309, statutory text",
+      "effective_from": "2019-05-14"
+    },
+    "92cc29e5d3421663049511ddfc49be": {
+      "source_id": "US-UT:oral_contract_limitations:f4867681e038",
+      "authority_type": "statute",
+      "citation": "Utah Code § 78B-2-307(1)",
+      "text": "An action may be brought within four years: (1) after the last charge is made or the last payment is received: (a) upon a contract, obligation, or liability not founded upon an instrument in writing; (b) on an open store account for any goods, wares, or merchandise; or (c) on an open account for work, labor or services rendered, or materials furnished;",
+      "text_sha256": "c05a92589741e00d897eb38eed774cef79d09e2dca313b5bf34d15fc8610d4d2",
+      "publisher_sha256": "386abf01fc3cfe397aa7c35dcff13228aa9f4662b6ba01e13f34d31299a22c3a",
+      "retrieved_at": "2026-11-21T17:31:03.848068+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 15, Utah Code § 78B-2-307(1), statutory text"
+    },
+    "cab174d9dc5ca06eceac393a459b48": {
+      "source_id": "US-UT:wrongful_death_limitations:3c0ad5a177a8",
+      "authority_type": "statute",
+      "citation": "Utah Code § 78B-2-304(3)",
+      "text": "An action may be brought within two years: (3) for recovery of damages for a death caused by the wrongful act or neglect of another;",
+      "text_sha256": "372d858bb64ca89e8764eb18df89c7cf9d20b1aaf8226735b7340afce148fab9",
+      "publisher_sha256": "386abf01fc3cfe397aa7c35dcff13228aa9f4662b6ba01e13f34d31299a22c3a",
+      "retrieved_at": "2026-11-21T17:31:03.848068+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 13–14, Utah Code § 78B-2-304(3), statutory text"
     }
   },
   "fault_allocation": {

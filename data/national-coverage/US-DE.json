@@ -455,6 +455,42 @@
         "retrieved_at": "2026-11-20T23:04:36.889247+00:00",
         "sha256": "89f788cd80dae047959e9cc98e2a6fdf83c4ec7d51fc339198f9c2fd7f1fad7e"
       }
+    },
+    "US-DE:general_contract_limitations:e9440f66b641": {
+      "category": "general_contract_limitations",
+      "title": "10 Del. C. § 8106(a)–(c)",
+      "url": "https://delcode.delaware.gov/title10/title10.pdf",
+      "locator": "10 Del. C. § 8106(a)–(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:31:04.137145+00:00",
+        "sha256": "f3f43c732661bae2d3e9e280a270c110b1efa5aa66a7a751738b2a5cf9a01c38"
+      }
+    },
+    "US-DE:wrongful_death_limitations:19be5c2987a9": {
+      "category": "wrongful_death_limitations",
+      "title": "10 Del. C. § 8107",
+      "url": "https://delcode.delaware.gov/title10/title10.pdf",
+      "locator": "10 Del. C. § 8107",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:31:04.137145+00:00",
+        "sha256": "f3f43c732661bae2d3e9e280a270c110b1efa5aa66a7a751738b2a5cf9a01c38"
+      }
+    },
+    "US-DE:contract_accrual:8707e3a53fa7": {
+      "category": "contract_accrual",
+      "title": "10 Del. C. § 8108",
+      "url": "https://delcode.delaware.gov/title10/title10.pdf",
+      "locator": "10 Del. C. § 8108",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:31:04.137145+00:00",
+        "sha256": "f3f43c732661bae2d3e9e280a270c110b1efa5aa66a7a751738b2a5cf9a01c38"
+      }
     }
   },
   "court_directory": [
@@ -822,6 +858,42 @@
       "current_as_of": "2023-01-10",
       "publisher_path": "cef6dd44e36af0920ab0fb259f0eac247d7390a857853b4d19ce5de3ec674120",
       "edition": "Court of Common Pleas Civil Rules. Current as of January 10, 2023."
+    },
+    "1fcfcd7446dc25a5fba8fa782be731": {
+      "source_id": "US-DE:general_contract_limitations:e9440f66b641",
+      "authority_type": "statute",
+      "citation": "10 Del. C. § 8106(a)–(c)",
+      "text": "(a) No action to recover damages for trespass, no action to regain possession of personal chattels, no action to recover damages for the detention of personal chattels, no action to recover a debt not evidenced by a record or by an instrument under seal, no action based on a detailed statement of the mutual demands in the nature of debit and credit between parties arising out of contractual or fiduciary relations, no action based on a promise, no action based on a statute, and no action to recover damages caused by an injury unaccompanied with force or resulting indirectly from the act of the defendant shall be brought after the expiration of 3 years from the accruing of the cause of such action; subject, however, to the provisions of §§ 8108-8110, 8119 and 8127 of this title. (b) Contractual limitations. — Notwithstanding any other provision of this section, a property insurance contract subject to subchapter III of Chapter 41 of Title 18: (1) May not require that an action for a claim made under the contract be filed less than 1 year from the date of the denial of the claim by the insurer; and (2) May permit an action for a claim made under the contract to be filed more than 1 year from the date of the denial of the claim by the insurer. (c) Notwithstanding anything to the contrary in this chapter (other than subsection (b) of this section) or in § 2-725 of Title 6, an action based on a written contract, agreement or undertaking involving at least $100,000 may be brought within a period specified in such written contract, agreement or undertaking provided it is brought prior to the expiration of 20 years from the accruing of the cause of such action.",
+      "text_sha256": "1a995032390d6b66c7f621df59408da3c38818d0001457bc6144e21df39cac53",
+      "publisher_sha256": "f3f43c732661bae2d3e9e280a270c110b1efa5aa66a7a751738b2a5cf9a01c38",
+      "retrieved_at": "2026-11-21T17:31:04.137145+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 261, 10 Del. C. § 8106(a)–(c), statutory text"
+    },
+    "07ea6c5ae544d5f1d2c3e2a0580e0c": {
+      "source_id": "US-DE:wrongful_death_limitations:19be5c2987a9",
+      "authority_type": "statute",
+      "citation": "10 Del. C. § 8107",
+      "text": "No action to recover damages for wrongful death or for injury to personal property shall be brought after the expiration of 2 years from the accruing of the cause of such action.",
+      "text_sha256": "420f69733d0e4de1d8541bb6b9418584c80e1cbb4131e60552d67195012f5669",
+      "publisher_sha256": "f3f43c732661bae2d3e9e280a270c110b1efa5aa66a7a751738b2a5cf9a01c38",
+      "retrieved_at": "2026-11-21T17:31:04.137145+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 262, 10 Del. C. § 8107, statutory text"
+    },
+    "b9f599381e053de1796a5f67d56f09": {
+      "source_id": "US-DE:contract_accrual:8707e3a53fa7",
+      "authority_type": "statute",
+      "citation": "10 Del. C. § 8108",
+      "text": "In the case of a mutual and running account between parties, the limitation, specified in § 8106 of this title, shall not begin to run while such account continues open and current.",
+      "text_sha256": "212a98b25581aaa64075fcaf2f9ea656358ab949fdd2bbb0ab3646580c398135",
+      "publisher_sha256": "f3f43c732661bae2d3e9e280a270c110b1efa5aa66a7a751738b2a5cf9a01c38",
+      "retrieved_at": "2026-11-21T17:31:04.137145+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 262, 10 Del. C. § 8108, statutory text"
     }
   },
   "fault_allocation": {

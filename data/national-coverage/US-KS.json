@@ -360,6 +360,30 @@
         "retrieved_at": "2026-11-20T23:12:28.568917+00:00",
         "sha256": "815e12bf3de64e69dfac46df964e22c4933f7c261edfe85e56ebc1bb82b5875e"
       }
+    },
+    "US-KS:written_contract_limitations:1d6ae61e3dd2": {
+      "category": "written_contract_limitations",
+      "title": "Kan. Stat. Ann. § 60-511(1)",
+      "url": "https://kslegislature.gov/media/statute/060_000_0000_chapter/060_005_0000_article/060_005_0011_section/060_005_0011_k.pdf",
+      "locator": "Kan. Stat. Ann. § 60-511(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:31:03.601379+00:00",
+        "sha256": "c6cd5906d7f7b40ca785a214d364bce34a5a442a068909fbfe368e1708b6e98e"
+      }
+    },
+    "US-KS:oral_contract_limitations:f6f3f9d0e6f9": {
+      "category": "oral_contract_limitations",
+      "title": "Kan. Stat. Ann. § 60-512(1)",
+      "url": "https://kslegislature.gov/media/statute/060_000_0000_chapter/060_005_0000_article/060_005_0012_section/060_005_0012_k.pdf",
+      "locator": "Kan. Stat. Ann. § 60-512(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:31:03.523723+00:00",
+        "sha256": "3871cd31528add2bff446d6b41f7fe352ae621ad392436b878473c099686c80d"
+      }
     }
   },
   "court_directory": [
@@ -604,6 +628,34 @@
       "edition": "2026 Kansas Statutes",
       "court": "Kansas District Court",
       "effective_from": "2024-07-01"
+    },
+    "3a3922a0eef82202731a8b9aab5853": {
+      "source_id": "US-KS:written_contract_limitations:1d6ae61e3dd2",
+      "authority_type": "statute",
+      "citation": "Kan. Stat. Ann. § 60-511(1)",
+      "text": "The following actions shall be brought within five (5) years: (1) An action upon any agreement, contract or promise in writing.",
+      "text_sha256": "d8a57f486827e7aa99723cdd0d81a7504bf401389adb899220c1471f689b0072",
+      "publisher_sha256": "c6cd5906d7f7b40ca785a214d364bce34a5a442a068909fbfe368e1708b6e98e",
+      "retrieved_at": "2026-11-21T17:31:03.601379+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Kansas Legislature 2025 statutes",
+      "publisher_member": "Publisher PDF p. 1, Kan. Stat. Ann. § 60-511(1), statutory text",
+      "effective_from": "1966-01-01"
+    },
+    "fcedeafe9e0878f378e4119546d696": {
+      "source_id": "US-KS:oral_contract_limitations:f6f3f9d0e6f9",
+      "authority_type": "statute",
+      "citation": "Kan. Stat. Ann. § 60-512(1)",
+      "text": "The following actions shall be brought within three (3) years: (1) All actions upon contracts, obligations or liabilities expressed or implied but not in writing.",
+      "text_sha256": "b592bedbc7609e9fb6bfe1be5fbf9c43547e07c22797398da29a4db5425e16ed",
+      "publisher_sha256": "3871cd31528add2bff446d6b41f7fe352ae621ad392436b878473c099686c80d",
+      "retrieved_at": "2026-11-21T17:31:03.523723+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Kansas Legislature 2025 statutes",
+      "publisher_member": "Publisher PDF p. 1, Kan. Stat. Ann. § 60-512(1), statutory text",
+      "effective_from": "1964-01-01"
     }
   },
   "fault_allocation": {

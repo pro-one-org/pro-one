@@ -23,6 +23,21 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_delaware_contract_limitations_keep_exceptions_and_account_accrual(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Delaware", legal_area="contracts",
+                               topics=["contract_limitations"], authority_status="unresolved")
+        key, = provider.search(query)
+        text = provider.fetch(key).text
+        self.assertIn("involving at least $100,000", text)
+        self.assertIn("prior to the expiration of 20 years", text)
+        self.assertIn("date of the denial of the claim by the insurer", text)
+        accrual, = provider.search(query.model_copy(update={"topics": ["contract_accrual"]}))
+        self.assertNotEqual(accrual, key)
+        self.assertIn("while such account continues open and current", provider.fetch(accrual).text)
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                  "authority_as_of": "2026-10-01"})))
+
     def test_colorado_service_preserves_substituted_service_conditions(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Colorado", legal_area="civil_procedure",

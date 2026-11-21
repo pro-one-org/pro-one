@@ -440,6 +440,42 @@
         "retrieved_at": "2026-11-21T17:20:51.918816+00:00",
         "sha256": "191d2eda87ab84e24a2338f82975c015019e7c55d7b34f18582469f75fdfb4c4"
       }
+    },
+    "US-OK:written_contract_limitations:fd61687eb040": {
+      "category": "written_contract_limitations",
+      "title": "Okla. Stat. tit. 12, § 95(A)(1)",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os12.pdf",
+      "locator": "Okla. Stat. tit. 12, § 95(A)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:20:51.918816+00:00",
+        "sha256": "191d2eda87ab84e24a2338f82975c015019e7c55d7b34f18582469f75fdfb4c4"
+      }
+    },
+    "US-OK:oral_contract_limitations:4fa8a174c14e": {
+      "category": "oral_contract_limitations",
+      "title": "Okla. Stat. tit. 12, § 95(A)(2)",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os12.pdf",
+      "locator": "Okla. Stat. tit. 12, § 95(A)(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:20:51.918816+00:00",
+        "sha256": "191d2eda87ab84e24a2338f82975c015019e7c55d7b34f18582469f75fdfb4c4"
+      }
+    },
+    "US-OK:wrongful_death_limitations:258599e3afb6": {
+      "category": "wrongful_death_limitations",
+      "title": "Okla. Stat. tit. 12, § 1053(A)",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os12.pdf",
+      "locator": "Okla. Stat. tit. 12, § 1053(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:20:51.918816+00:00",
+        "sha256": "191d2eda87ab84e24a2338f82975c015019e7c55d7b34f18582469f75fdfb4c4"
+      }
     }
   },
   "court_directory": [
@@ -728,6 +764,42 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Oklahoma Legislature Title 12 official compilation p. 442, § 2004(C)(1)(c)(1)"
+    },
+    "723e1a3ee152d944446018799231a9": {
+      "source_id": "US-OK:written_contract_limitations:fd61687eb040",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 12, § 95(A)(1)",
+      "text": "A. Civil actions other than for the recovery of real property can only be brought within the following periods, after the cause of action shall have accrued, and not afterwards: 1. Within five (5) years: An action upon any contract, agreement, or promise in writing;",
+      "text_sha256": "ea6c36cf3f678be344fa8590c2363e561664cadcd58219858c5edf371d478fc2",
+      "publisher_sha256": "191d2eda87ab84e24a2338f82975c015019e7c55d7b34f18582469f75fdfb4c4",
+      "retrieved_at": "2026-11-21T17:20:51.918816+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 60, Okla. Stat. tit. 12, § 95(A)(1), statutory text"
+    },
+    "cb5587216ed58b75ce6159557bc330": {
+      "source_id": "US-OK:oral_contract_limitations:4fa8a174c14e",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 12, § 95(A)(2)",
+      "text": "A. Civil actions other than for the recovery of real property can only be brought within the following periods, after the cause of action shall have accrued, and not afterwards: 2. Within three (3) years: An action upon a contract express or implied not in writing; an action upon a liability created by statute other than a forfeiture or penalty; and an action on a foreign judgment;",
+      "text_sha256": "8f5547e0308f43d77d54123bd65cf032bce9c707f8fecbff63d3c86b754d6cd5",
+      "publisher_sha256": "191d2eda87ab84e24a2338f82975c015019e7c55d7b34f18582469f75fdfb4c4",
+      "retrieved_at": "2026-11-21T17:20:51.918816+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 60, Okla. Stat. tit. 12, § 95(A)(2), statutory text"
+    },
+    "dec55d8d233afcee059d40c932be13": {
+      "source_id": "US-OK:wrongful_death_limitations:258599e3afb6",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 12, § 1053(A)",
+      "text": "A. When the death of one is caused by the wrongful act or omission of another, the personal representative of the former may maintain an action therefor against the latter, or his or her personal representative if he or she is also deceased, if the former might have maintained an action, had he or she lived, against the latter, or his or her representative, for an injury for the same act or omission. The action must be commenced within two (2) years.",
+      "text_sha256": "be040fc95345869f275514c747f3021880973b5777ebbd2f6353e1204e2668a4",
+      "publisher_sha256": "191d2eda87ab84e24a2338f82975c015019e7c55d7b34f18582469f75fdfb4c4",
+      "retrieved_at": "2026-11-21T17:20:51.918816+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 236, Okla. Stat. tit. 12, § 1053(A), statutory text"
     }
   },
   "fault_allocation": {
