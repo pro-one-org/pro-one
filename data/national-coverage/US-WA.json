@@ -441,6 +441,30 @@
         "retrieved_at": "2026-11-21T22:06:50.154522+00:00",
         "sha256": "60dcefacbc807d217bad1b283c6e5b04d18a1a3adcae0e7849fa63684f0cbbd8"
       }
+    },
+    "US-WA:wage_withholding:ea99972190c4": {
+      "category": "wage_withholding",
+      "title": "Wash. Rev. Code § 49.52.050",
+      "url": "https://lawfilesext.leg.wa.gov/law/RCWArchive/2026/pdf/RCW%20%2049%20%20TITLE/RCW%20%2049%20.%2052%20%20CHAPTER/RCW%20%2049%20.%2052%20.050.pdf",
+      "locator": "Wash. Rev. Code § 49.52.050",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:15:24.441146+00:00",
+        "sha256": "c3953f3d91764d063c298da6cbc16e31ad2c19f639b2212af6d8e418dfa3e09c"
+      }
+    },
+    "US-WA:wage_withholding_exceptions:7a200d60d126": {
+      "category": "wage_withholding_exceptions",
+      "title": "Wash. Rev. Code § 49.52.060",
+      "url": "https://lawfilesext.leg.wa.gov/law/RCWArchive/2026/pdf/RCW%20%2049%20%20TITLE/RCW%20%2049%20.%2052%20%20CHAPTER/RCW%20%2049%20.%2052%20.060.pdf",
+      "locator": "Wash. Rev. Code § 49.52.060",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:15:24.443147+00:00",
+        "sha256": "3caedb34b2d9098d00953e0501d9967dff79028ccb813f6d9a8df1035ea1f7c6"
+      }
     }
   },
   "court_directory": [
@@ -812,6 +836,34 @@
       "publisher_path": "49.52.070",
       "edition": "Revised Code of Washington, certified July 12, 2024.",
       "publisher_member": "Certified individual RCW § 49.52.070 PDF, page 1, enacted text"
+    },
+    "d6fc44d6a70d0a5f3c6aa3e71e465d": {
+      "source_id": "US-WA:wage_withholding:ea99972190c4",
+      "authority_type": "statute",
+      "citation": "Wash. Rev. Code § 49.52.050",
+      "text": "Any employer or officer, vice principal or agent of any employer, whether said employer be in private business or an elected public official, who (1) Shall collect or receive from any employee a rebate of any part of wages theretofore paid by such employer to such employee; or (2) Wilfully and with intent to deprive the employee of any part of his or her wages, shall pay any employee a lower wage than the wage such employer is obligated to pay such employee by any statute, ordinance, or contract; or (3) Shall wilfully make or cause another to make any false entry in any employer's books or records purporting to show the payment of more wages to an employee than such employee received; or (4) Being an employer or a person charged with the duty of keeping any employer's books or records shall wilfully fail or cause another to fail to show openly and clearly in due course in such employer's books and records any rebate of or deduction from any employee's wages; or (5) Shall wilfully receive or accept from any employee any false receipt for wages; Shall be guilty of a misdemeanor.",
+      "text_sha256": "2ade8d88045b180471e0c6b3ecd93186294ba8ddef70172126d08c58d8943d29",
+      "publisher_sha256": "c3953f3d91764d063c298da6cbc16e31ad2c19f639b2212af6d8e418dfa3e09c",
+      "retrieved_at": "2026-11-21T22:15:24.441146+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2024-07-12",
+      "publisher_path": "49.52.050",
+      "edition": "Revised Code of Washington, certified July 12, 2024."
+    },
+    "ca051d10831f42709229f1ec5d4ef7": {
+      "source_id": "US-WA:wage_withholding_exceptions:7a200d60d126",
+      "authority_type": "statute",
+      "citation": "Wash. Rev. Code § 49.52.060",
+      "text": "The provisions of RCW 49.52.050 shall not make it unlawful for an employer to withhold or divert any portion of an employee's wages when required or empowered so to do by state or federal law or when a deduction has been expressly authorized in writing in advance by the employee for a lawful purpose accruing to the benefit of such employee nor shall the provisions of RCW 49.52.050 make it unlawful for an employer to withhold deductions for medical, surgical, or hospital care or service, pursuant to any rule or regulation: PROVIDED, That the employer derives no financial benefit from such deduction and the same is openly, clearly and in due course recorded in the employer's books.",
+      "text_sha256": "e53449442258cdd20497e8de4ad01e0929cab3739a9f1933817bd393b27b7cb8",
+      "publisher_sha256": "3caedb34b2d9098d00953e0501d9967dff79028ccb813f6d9a8df1035ea1f7c6",
+      "retrieved_at": "2026-11-21T22:15:24.443147+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2024-07-12",
+      "publisher_path": "49.52.060",
+      "edition": "Revised Code of Washington, certified July 12, 2024."
     }
   },
   "fault_allocation": {

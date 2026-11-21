@@ -887,6 +887,22 @@ class NationalCoverageTests(unittest.TestCase):
         for change in ({"authority_as_of": "2026-11-05"}, {"authority_as_of": None}, {"state": "Montana"}):
             self.assertEqual(provider.search(query.model_copy(update=change)), [])
 
+    def test_service_timing_rules_preserve_their_distinct_triggers_and_courts(self):
+        provider = RetainedLegislativeResearch()
+        for state, status, day, citation, condition in (
+            ("Illinois", "historical", None, "103(b)", "reasonable diligence"),
+            ("Minnesota", "unresolved", None, "3.01(c)", "delivered for service to the sheriff"),
+            ("Minnesota", "unresolved", None, "508(d)", "proof of service"),
+            ("Wisconsin", "current", "2026-11-04", "801.02(2)", "only an in rem or quasi in rem judgment"),
+        ):
+            with self.subTest(state=state, citation=citation):
+                query = ResearchMatter(country="US", state=state, legal_area="civil_procedure",
+                                       topics=["service_time_limit"], authority_status=status, authority_as_of=day)
+                documents = [provider.fetch(key) for key in provider.search(query)]
+                match, = [doc for doc in documents if citation in doc.source["citation"]["preferred_citation"]]
+                self.assertIn(condition, match.text)
+                self.assertEqual(provider.search(query.model_copy(update={"state": "Alabama"})), [])
+
     def test_formation_sources_preserve_local_subject_and_edition(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Arizona", legal_area="contracts",

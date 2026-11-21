@@ -102,6 +102,19 @@ class ClaimTests(unittest.TestCase):
         for day in (None, date(2024, 7, 11), date(2024, 7, 13)):
             self.assertFalse(catalog.research(theory, law_as_of=day)[0])
 
+    def test_washington_wage_remedy_binds_required_qualifications(self):
+        catalog = self.engine.catalog
+        theory = catalog.active["wa_wage_rebate_or_underpayment_remedy_reference"]
+        self.assertIn(theory, available(catalog, "US-WA", "wage"))
+        self.assertNotIn(theory, available(catalog, "US-WI", "wage"))
+        self.assertFalse(catalog.research(theory, law_as_of=date(2024, 7, 13))[0])
+        bindings, _, _ = catalog.research(theory, law_as_of=date(2024, 7, 12))
+        rows = bindings["rebate_or_intentional_underpayment_review"]
+        self.assertEqual(
+            {row["citation"] for row in rows if row["relationship"] == "qualifies"},
+            {"Wash. Rev. Code § 49.52.050", "Wash. Rev. Code § 49.52.060"},
+        )
+
     def test_wisconsin_collection_claim_preserves_scope_and_spouse_qualification(self):
         catalog = self.engine.catalog
         theory = catalog.active["wi_collection_nonexistent_right"]

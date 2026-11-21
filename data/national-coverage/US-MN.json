@@ -379,6 +379,30 @@
         "retrieved_at": "2026-11-20T17:27:34.870458+00:00",
         "sha256": "6a7f9c9ccab6cb720b54bec4428a8b7105f34b35d2ba10255e003d4f1d363d95"
       }
+    },
+    "US-MN:service_time_limit:12c7f604e504": {
+      "category": "service_time_limit",
+      "title": "Minn. R. Civ. P. 3.01(c)",
+      "url": "https://www.revisor.mn.gov/court_rules/cp/id/3/",
+      "locator": "Minn. R. Civ. P. 3.01(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:15:23.933625+00:00",
+        "sha256": "01c5c62e0c41245a09f83098e186b415133cd6abcc6eac186842aeb055a148dc"
+      }
+    },
+    "US-MN:service_time_limit:c27e1942118d": {
+      "category": "service_time_limit",
+      "title": "Minn. Gen. R. Prac. 508(d)",
+      "url": "https://www.revisor.mn.gov/court_rules/gp/id/508/",
+      "locator": "Minn. Gen. R. Prac. 508(d)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:15:23.949600+00:00",
+        "sha256": "4723387160d2d45cf56f7e2f5e992917ab19ec9e39253844b2138b87238e6ba9"
+      }
     }
   },
   "court_directory": [
@@ -630,6 +654,32 @@
       "retrieved_at": "2026-11-20T17:27:34.870458+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "e5ba4e6fc1d7ff3be8041e67da9f5a": {
+      "source_id": "US-MN:service_time_limit:12c7f604e504",
+      "authority_type": "court_rule",
+      "citation": "Minn. R. Civ. P. 3.01(c)",
+      "text": "(c) when the summons is delivered for service to the sheriff in the county where the defendant resides personally, by U.S. Mail (postage prepaid), by commercial courier with proof of delivery, or by electronic means consented to by the sheriff's office either in writing or electronically; but such delivery shall be ineffectual unless within 60 days thereafter the summons is actually served on that defendant or the first publication thereof is made.",
+      "text_sha256": "d589c567481e28596ac0251bc705390e0fa968d77d0d47a18a7dded50e575b4c",
+      "publisher_sha256": "01c5c62e0c41245a09f83098e186b415133cd6abcc6eac186842aeb055a148dc",
+      "retrieved_at": "2026-11-21T22:15:23.933625+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Minnesota District Court",
+      "publisher_member": "Minnesota Revisor of Statutes, sheriff-delivery branch only; service or first publication determines effectiveness"
+    },
+    "038b319c6f34b400d626d38b48ae3d": {
+      "source_id": "US-MN:service_time_limit:c27e1942118d",
+      "authority_type": "court_rule",
+      "citation": "Minn. Gen. R. Prac. 508(d)",
+      "text": "(1) If the defendant's address as shown on the statement of claim is within the county, the administrator must summon the defendant by first class mail, except that if the claim exceeds $2,500 the summons must be served by the plaintiff by certified mail, and proof of service must be filed with the administrator. If the summons is not properly served and proof of service filed within sixty (60) days after issuance of the summons, the action will be dismissed without prejudice. (2) If the defendant's address as shown on the statement of claim is outside the county but within the state, and the law provides for service of the summons anywhere within the state, the administrator must summon the defendant by first class mail, except that if the claim exceeds $2,500 the summons must be served by the plaintiff by certified mail, and proof of service must be filed with the administrator. If the summons is not properly served and proof of service filed within sixty (60) days after issuance of the summons, the action will be dismissed without prejudice. (3) If the defendant's address as shown on the statement of claim is outside the state, the administrator must forward the summons to the plaintiff who, within sixty (60) days after issuance of the summons, must cause it to be served on the defendant and file proof of service with the administrator. If the summons is not properly served and proof of service filed within sixty (60) days after issuance of the summons, the action will be dismissed without prejudice. A party who is unable to pay the fees for service of a summons may apply for permission to proceed without payment of fees pursuant to the procedure set forth in Minnesota Statutes, section 563.01. (4) Service by mail is complete upon mailing. (5) If a claim involves a consumer credit transaction as defined by Minnesota Statutes, section 491A.01, subdivision. 3a, and the plaintiff and defendant have previously communicated with each other by electronic message, including but not limited to email, text message, instant message, chat, or voicemail, the plaintiff must also inform the defendant of the date, time, and place of the hearing specified in the summons by the form of electronic message that the parties have previously used. In such cases, the plaintiff must submit an affidavit to the court prior to the hearing date indicating whether the plaintiff and defendant have previously communicated by electronic message and, if so, the date, time, and electronic means used to inform the defendant of the hearing as described in this paragraph. Failure to file this affidavit may result in the court denying a request for default judgment.",
+      "text_sha256": "b29ecd336b835cbbb08e59be2b2c5ce7938f4f400212736a8b4c4f8b85020062",
+      "publisher_sha256": "4723387160d2d45cf56f7e2f5e992917ab19ec9e39253844b2138b87238e6ba9",
+      "retrieved_at": "2026-11-21T22:15:23.949600+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Minnesota Conciliation Court",
+      "publisher_member": "Minnesota Revisor of Statutes, Conciliation Court service on defendant; dollar amount, address, consumer-credit electronic notice and service branches"
     }
   },
   "fault_allocation": {

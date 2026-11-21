@@ -30,6 +30,10 @@ WASHINGTON_RCW_SECTIONS = {
                   "In a private action in which an unfair or deceptive act or practice is alleged"),
     "19.86.120": ("92f79dfefbc71c65ac867fc82c044565a086f4855a59386ce17f80a650b1f673",
                   "Any action to enforce a claim for damages"),
+    "49.52.050": ("c3953f3d91764d063c298da6cbc16e31ad2c19f639b2212af6d8e418dfa3e09c",
+                  "Any employer or officer, vice principal or agent of any employer"),
+    "49.52.060": ("3caedb34b2d9098d00953e0501d9967dff79028ccb813f6d9a8df1035ea1f7c6",
+                  "The provisions of RCW 49.52.050 shall not make it unlawful"),
     "49.52.070": ("60dcefacbc807d217bad1b283c6e5b04d18a1a3adcae0e7849fa63684f0cbbd8",
                   "Any employer and any officer, vice principal or agent of any employer"),
 }

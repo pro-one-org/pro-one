@@ -1002,6 +1002,18 @@
         "retrieved_at": "2026-11-20T22:47:11.727697+00:00",
         "sha256": "885db3d45e381eba1705b902b57256399d6fae28e06c7ef545edddd78cd91033"
       }
+    },
+    "US-WI:service_time_limit:2622237ee341": {
+      "category": "service_time_limit",
+      "title": "Wis. Stat. § 801.02(2)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/801/02",
+      "locator": "Wis. Stat. § 801.02(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:15:24.015211+00:00",
+        "sha256": "46b5426884546975d997291fd55bbc874cf81b62f0a08e584aebee3dba4e6591"
+      }
     }
   },
   "court_directory": [
@@ -1990,6 +2002,20 @@
       "language": "en",
       "current_as_of": "2026-11-04",
       "publisher_path": "/statutes/statutes/427/104/1/j",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "1054f0e41ff6ea7456b7a861bf2b7f": {
+      "source_id": "US-WI:service_time_limit:2622237ee341",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 801.02(2)",
+      "text": "A civil action in which only an in rem or quasi in rem judgment is sought is commenced as to any defendant when a summons and a complaint are filed with the court, provided service of an authenticated copy of the summons and of either the complaint or a notice of object of action under s. 801.12 is made upon the defendant under this chapter within 90 days after filing.",
+      "text_sha256": "4192dedb8910fb8e94a55d5cd1154e3823eddcce53c37238b6de2f7097a67298",
+      "publisher_sha256": "46b5426884546975d997291fd55bbc874cf81b62f0a08e584aebee3dba4e6591",
+      "retrieved_at": "2026-11-21T22:15:24.015211+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/801/02/2",
       "edition": "Wisconsin Statutes certified November 4, 2026"
     }
   },

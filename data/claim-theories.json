@@ -1986,5 +1986,65 @@
       "op": "element",
       "element": "public_interest_showing"
     }
+  },
+  {
+    "id": "wa_wage_rebate_or_underpayment_remedy_reference",
+    "version": "v1",
+    "jurisdiction": "US-WA",
+    "legal_area": "employment",
+    "kind": "remedy",
+    "label": "Washington wage rebate or underpayment remedy",
+    "plain_language_label": "Review of additional damages for a wage rebate or intentional underpayment",
+    "authority_as_of": "2024-07-12",
+    "topics": [
+      "wage_enforcement",
+      "wage_withholding",
+      "wage_withholding_exceptions"
+    ],
+    "matter_types": [
+      "wage"
+    ],
+    "limitations": [
+      "RCW 49.52.070 applies to the conduct described in RCW 49.52.050(1) and (2). Review any applicable authorization under RCW 49.52.060 and whether the employee knowingly submitted to the violation.",
+      "Review the applicable edition, party capacity, wage obligation and case facts before assessing or calculating any remedy."
+    ],
+    "elements": [
+      {
+        "id": "rebate_or_intentional_underpayment_review",
+        "label": "Statutory conditions for the wage remedy",
+        "description": "Identify whether the alleged conduct involves collection of a wage rebate or willful underpayment with intent to deprive, the legal basis of wages owed, any applicable authorization, and any evidence of knowing submission.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-3e0556aaf5957f565b4eadc28c80205191634c39904ce3306ac7a45b41739c10-p1",
+            "source_id": "corpus-3e0556aaf5957f565b4eadc28c80205191634c39904ce3306ac7a45b41739c10",
+            "source_type": "statute",
+            "source_version": "Revised Code of Washington, certified July 12, 2024.",
+            "excerpt_hash": "sha256:fabeb9446af1308dee50a908a703154fd02bf602c54bbb48a5f843f29c64c085"
+          },
+          {
+            "passage_id": "corpus-6bbf10a2af6d32cd75d4bdae50f46d14af347a0f578ffefd26ea7df3029a6828-p1",
+            "source_id": "corpus-6bbf10a2af6d32cd75d4bdae50f46d14af347a0f578ffefd26ea7df3029a6828",
+            "source_type": "statute",
+            "source_version": "Revised Code of Washington, certified July 12, 2024.",
+            "excerpt_hash": "sha256:4dcee6f9585e09b7be69fec46d9b683833e023c291fb16015d171211dbf1f891",
+            "role": "qualifies"
+          },
+          {
+            "passage_id": "corpus-c3e07492691792d7f50383106d34131426e9e1863bf2ac9d1634e06b00ce2d5f-p1",
+            "source_id": "corpus-c3e07492691792d7f50383106d34131426e9e1863bf2ac9d1634e06b00ce2d5f",
+            "source_type": "statute",
+            "source_version": "Revised Code of Washington, certified July 12, 2024.",
+            "excerpt_hash": "sha256:e53449442258cdd20497e8de4ad01e0929cab3739a9f1933817bd393b27b7cb8",
+            "role": "qualifies"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "rebate_or_intentional_underpayment_review"
+    }
   }
 ]

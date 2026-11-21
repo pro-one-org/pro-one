@@ -37,6 +37,8 @@ SUBJECTS = {
     "sales_commissions": ("employment", "sales_commissions"),
     "wage_separation": ("employment", "wage_separation"),
     "wage_enforcement": ("employment", "wage_enforcement"),
+    "wage_withholding": ("employment", "wage_withholding"),
+    "wage_withholding_exceptions": ("employment", "wage_withholding_exceptions"),
     "wage_limitations": ("employment", "wage_limitations"),
     "wage_preemption": ("employment", "wage_preemption"),
     "negligence_duty": ("torts", "negligence_duty"),

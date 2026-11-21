@@ -465,6 +465,18 @@
         "retrieved_at": "2026-11-21T16:55:54.453374+00:00",
         "sha256": "c5d8fa0c1ab784fa63ff16726c9116897fe086df162d5b415c12f47713c83cce"
       }
+    },
+    "US-IL:service_time_limit:247af470ca56": {
+      "category": "service_time_limit",
+      "title": "Ill. Sup. Ct. R. 103(b) (2007 amendment)",
+      "url": "https://www.illinoiscourts.gov/resources/bcfa3230-741a-4d4c-a131-f4e8099cfe19/file",
+      "locator": "Ill. Sup. Ct. R. 103(b) (2007 amendment)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:15:24.441146+00:00",
+        "sha256": "cb991c7fc3c0ca89efe11919bc5202be32b24f493dc76fe03ab7e814c89057ce"
+      }
     }
   },
   "court_directory": [
@@ -839,6 +851,21 @@
       "edition": "Illinois General Assembly FTP archive captured February 26, 2025",
       "publisher_member": "Illinois General Assembly FTP statutory archive, section 13-206; historical compilation",
       "effective_from": "2007-08-16"
+    },
+    "a058c895a0b34024f4641eb2780765": {
+      "source_id": "US-IL:service_time_limit:247af470ca56",
+      "authority_type": "court_rule",
+      "citation": "Ill. Sup. Ct. R. 103(b) (2007 amendment)",
+      "text": "(b) Dismissal for Lack of Diligence. If the plaintiff fails to exercise reasonable diligence to obtain service on a defendant prior to the expiration of the applicable statute of limitations, the action as to that defendant may be dismissed without prejudice. If the failure to exercise reasonable diligence to obtain service on a defendant occurs after the expiration of the applicable statute of limitations, the dismissal shall be with prejudice as to that defendant only and shall not bar any claim against any other party based on vicarious liability for that dismissed defendant’s conduct. The dismissal may be made on the application of any party or on the court’s own motion. In considering the exercise of reasonable diligence, the court shall review the totality of the circumstances, including both lack of reasonable diligence in any previous case voluntarily dismissed or dismissed for want of prosecution, and the exercise of reasonable diligence in obtaining service in any case refiled under section 13-217 of the Code of Civil Procedure.",
+      "text_sha256": "3e1cd4a1cb09f85d87a285eba609abed24a3c6e880ef66c7c5ac2d6bf18b985b",
+      "publisher_sha256": "cb991c7fc3c0ca89efe11919bc5202be32b24f493dc76fe03ab7e814c89057ce",
+      "retrieved_at": "2026-11-21T22:15:24.441146+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Supreme Court Rule 103 as amended June 5, 2007",
+      "court": "Illinois trial courts governed by the Illinois Supreme Court Rules",
+      "publisher_member": "Illinois Supreme Court published Rule 103, PDF p. 1, reasonable diligence with defendant-specific dismissal consequences",
+      "effective_from": "2007-07-01"
     }
   },
   "fault_allocation": {
