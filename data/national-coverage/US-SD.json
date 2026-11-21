@@ -408,6 +408,30 @@
         "retrieved_at": "2026-11-21T22:39:51.931518+00:00",
         "sha256": "83ffb8e15a56f38b2c314c1e9a0834f4782d4a21c6e60ba95730815c10011c47"
       }
+    },
+    "US-SD:wage_enforcement:48170c45daf1": {
+      "category": "wage_enforcement",
+      "title": "S.D. Codified Laws § 60-11-7",
+      "url": "https://sdlegislature.gov/api/Statutes/60-11-7.html",
+      "locator": "S.D. Codified Laws § 60-11-7",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:43:31.997251+00:00",
+        "sha256": "1bdb9521ae19bb72405e01a4cd408c3ef4f4d51fe2ae545dded41b29d97c9f17"
+      }
+    },
+    "US-SD:wage_enforcement:3ce38e7bd5c9": {
+      "category": "wage_enforcement",
+      "title": "S.D. Codified Laws § 60-11-4",
+      "url": "https://sdlegislature.gov/api/Statutes/60-11-4.html",
+      "locator": "S.D. Codified Laws § 60-11-4",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:43:32.001265+00:00",
+        "sha256": "a3f6b2d4baae46530bfa80c9608679d00c1a94c21c813419d624df8ba1d30872"
+      }
     }
   },
   "court_directory": [
@@ -702,6 +726,30 @@
       "retrieved_at": "2026-11-21T22:39:51.931518+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "1e774a3da0d3e8e03e4614e50a6800": {
+      "source_id": "US-SD:wage_enforcement:48170c45daf1",
+      "authority_type": "statute",
+      "citation": "S.D. Codified Laws § 60-11-7",
+      "text": "In any action for the breach of an obligation to pay wages, if a private employer has been oppressive, fraudulent, or malicious, in the employer's refusal to pay wages due to the employee, the measure of damages is double the amount of wages for which the employer is liable.",
+      "text_sha256": "85571a50c68ddd4f1b0e3ed4db2957628f6d47271f9c837f375d161c458b89ac",
+      "publisher_sha256": "1bdb9521ae19bb72405e01a4cd408c3ef4f4d51fe2ae545dded41b29d97c9f17",
+      "retrieved_at": "2026-11-21T22:43:31.997251+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "South Dakota Legislative Research Council codified law; conditional double damages for a private employer’s refusal to pay wages due"
+    },
+    "79ac0869d4ff281275ce75614dbfd4": {
+      "source_id": "US-SD:wage_enforcement:3ce38e7bd5c9",
+      "authority_type": "statute",
+      "citation": "S.D. Codified Laws § 60-11-4",
+      "text": "A person so employed at less than the minimum wage provided by § 60-11-3 shall be entitled to recover the full amount measured by said minimum wage and costs, notwithstanding any agreement to work for less.",
+      "text_sha256": "b4235df0c3494ca2e924760247eb23944eea0abb2502273da5acf6a541018a40",
+      "publisher_sha256": "a3f6b2d4baae46530bfa80c9608679d00c1a94c21c813419d624df8ba1d30872",
+      "retrieved_at": "2026-11-21T22:43:32.001265+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "South Dakota Legislative Research Council codified law; minimum wage recovery tied to section 60-11-3"
     }
   },
   "fault_allocation": {

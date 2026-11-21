@@ -101,6 +101,25 @@ class NationalCoverageTests(unittest.TestCase):
             "authority_status": "current", "authority_as_of": "2026-11-21",
         })))
 
+    def test_new_york_wage_amendment_keeps_frequency_and_tolling_separate(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="New York", legal_area="employment",
+                               topics=["wage_enforcement"], authority_status="unresolved")
+        key, = provider.search(query)
+        remedy = provider.fetch(key)
+        self.assertEqual(remedy.source["dates"]["effective_from"], "2025-05-09")
+        self.assertIn("no less frequently than semi-monthly", remedy.text)
+        self.assertIn("employees performing the same work", remedy.text)
+        self.assertIn("causes pending or commenced on or after May 9, 2025",
+                      remedy.source["corpus_provenance"]["locator"])
+        limitation, = provider.search(query.model_copy(update={"topics": ["wage_limitations"]}))
+        self.assertNotEqual(key, limitation)
+        self.assertIn("the commissioner commences an investigation, whichever is earlier",
+                      provider.fetch(limitation).text)
+        self.assertFalse(provider.search(query.model_copy(update={
+            "authority_status": "current", "authority_as_of": "2025-05-16",
+        })))
+
     def test_enacted_contract_limitation_references_keep_tolling_conditions(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Arkansas", legal_area="contracts",

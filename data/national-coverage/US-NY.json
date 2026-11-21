@@ -401,6 +401,30 @@
         "retrieved_at": "2026-11-21T22:25:36.534412+00:00",
         "sha256": "7179e5041c4cb345e39874c3f0f410f2475a525f6313bae78fb3e4f8d02f1d76"
       }
+    },
+    "US-NY:wage_enforcement:af73a17111e7": {
+      "category": "wage_enforcement",
+      "title": "N.Y. Lab. Law § 198(1-a)",
+      "url": "https://www.nysenate.gov/legislation/laws/LAB/198",
+      "locator": "N.Y. Lab. Law § 198(1-a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:43:31.874127+00:00",
+        "sha256": "53f4eb60d2b2cea614a7a136e3a84532eb78c489bf88acaa1cd9bc9a14b9be18"
+      }
+    },
+    "US-NY:wage_limitations:709623cff189": {
+      "category": "wage_limitations",
+      "title": "N.Y. Lab. Law § 198(3)",
+      "url": "https://www.nysenate.gov/legislation/laws/LAB/198",
+      "locator": "N.Y. Lab. Law § 198(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:43:31.874127+00:00",
+        "sha256": "53f4eb60d2b2cea614a7a136e3a84532eb78c489bf88acaa1cd9bc9a14b9be18"
+      }
     }
   },
   "court_directory": [
@@ -758,6 +782,31 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "New York Senate Open Legislation revision dated April 3, 2026, following 2025 chapter 708 and 2026 chapter 94; revision date identifies the publication"
+    },
+    "a9390366cb947739eac20249b13a48": {
+      "source_id": "US-NY:wage_enforcement:af73a17111e7",
+      "authority_type": "statute",
+      "citation": "N.Y. Lab. Law § 198(1-a)",
+      "text": "1-a. On behalf of any employee paid less than the wage to which they are entitled under the provisions of this article, the commissioner may bring any legal action necessary, including administrative action, to collect such claim and as part of such legal action, in addition to any other remedies and penalties otherwise available under this article, the commissioner shall assess against the employer the full amount of any such underpayment, and an additional amount as liquidated damages, unless the employer proves a good faith basis for believing that its underpayment of wages was in compliance with the law. Liquidated damages shall be calculated by the commissioner as no more than one hundred percent of the total amount of wages found to be due, except such liquidated damages may be up to three hundred percent of the total amount of the wages found to be due for a willful violation of section one hundred ninety-four of this article. In any action instituted in the courts upon a wage claim by an employee or the commissioner in which the employee prevails, the court shall allow such employee to recover the full amount of any underpayment, all reasonable attorney's fees, prejudgment interest as required under the civil practice law and rules, and, unless the employer proves a good faith basis to believe that its underpayment of wages was in compliance with the law, an additional amount as liquidated damages equal to one hundred percent of the total amount of the wages found to be due, except such liquidated damages may be up to three hundred percent of the total amount of the wages found to be due for a willful violation of section one hundred ninety-four of this article. Notwithstanding the provisions of this subdivision, liquidated damages shall not be applicable to violations of paragraph a of subdivision one of section one hundred ninety-one of this article where the employer paid the employee wages on a regular payday, no less frequently than semi-monthly. Such violations shall be subject to damages as follows: (i) no more than one hundred percent of the lost interest found to be due for the delayed payment of wages calculated using a daily interest rate for each day payment is late based on the annual rate of interest then in effect, as prescribed by the superintendent of financial services pursuant to section fourteen-a of the banking law for the employer's first violation; or (ii) for conduct occurring after the effective date of this paragraph, liquidated damages equal to one hundred percent of the total amount of wages found to be due in violation of paragraph a of subdivision one of section one hundred ninety-one of this article for any employer who, after the effective date of this paragraph, has been subject to one or more previous findings and orders for violations of paragraph a of subdivision one of section one hundred ninety-one of this article for which no proceeding for administrative or judicial review as provided in this chapter is pending and the time for initiation of such proceeding shall have expired and relating to employees performing the same work. For purposes of this subdivision, an order shall mean a single final order or determination made by the commissioner or a court of competent jurisdiction, regardless of the number of employees or the time period that was subject to such order.",
+      "text_sha256": "637372d45e93d1151c24910badd7c49477adc495c9f544c19df9038b1de1e09f",
+      "publisher_sha256": "53f4eb60d2b2cea614a7a136e3a84532eb78c489bf88acaa1cd9bc9a14b9be18",
+      "retrieved_at": "2026-11-21T22:43:31.874127+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New York Senate codified revision May 16, 2025; text verified against S3006-C Part U, pp. 53-54, signed May 9, 2025 as chapter 56. Part U applies to causes pending or commenced on or after May 9, 2025; subdivision preserves additional conduct and order timing conditions.",
+      "effective_from": "2025-05-09"
+    },
+    "9c63fa9b1d1ecdf503e93ecdee5a5b": {
+      "source_id": "US-NY:wage_limitations:709623cff189",
+      "authority_type": "statute",
+      "citation": "N.Y. Lab. Law § 198(3)",
+      "text": "3. Notwithstanding any other provision of law, an action to recover upon a liability imposed by this article must be commenced within six years. The statute of limitations shall be tolled from the date an employee files a complaint with the commissioner or the commissioner commences an investigation, whichever is earlier, until an order to comply issued by the commissioner becomes final, or where the commissioner does not issue an order, until the date on which the commissioner notifies the complainant that the investigation has concluded. Investigation by the commissioner shall not be a prerequisite to nor a bar against a person bringing a civil action under this section. All employees shall have the right to recover full wages, benefits and wage supplements and liquidated damages accrued during the six years previous to the commencing of such action, whether such action is instituted by the employee or by the commissioner. There is no exception to liability under this section for the unauthorized failure to pay wages, benefits or wage supplements.",
+      "text_sha256": "0981571119cbcc801e9262a876f2aa85b0ec5b7ce9c32a09e41da90c71115645",
+      "publisher_sha256": "53f4eb60d2b2cea614a7a136e3a84532eb78c489bf88acaa1cd9bc9a14b9be18",
+      "retrieved_at": "2026-11-21T22:43:31.874127+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New York Senate codified revision May 16, 2025; Article 6 limitations, tolling dependent on investigation and agency dispositions"
     }
   },
   "fault_allocation": {
