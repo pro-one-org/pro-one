@@ -375,6 +375,19 @@ class NationalCoverageTests(unittest.TestCase):
                     "authority_status": "current", "authority_as_of": "2026-11-20",
                 })))
 
+    def test_oregon_ordinary_negligence_retains_its_own_formulation(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Oregon", legal_area="torts",
+                               topics=["negligence_elements"], authority_types=["opinion"],
+                               authority_status="historical", court="Oregon Supreme Court")
+        key, = provider.search(query)
+        doc = provider.fetch(key)
+        self.assertIn("unreasonably created a foreseeable risk", doc.text)
+        self.assertIn("harm actually resulting from", doc.text)
+        self.assertEqual(doc.source["case_metadata"]["opinion_role"], "majority")
+        self.assertFalse(provider.search(query.model_copy(update={"state": "Washington"})))
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current", "authority_as_of": "2026-11-20"})))
+
     def test_archived_response_rules_enforce_court_and_topic_boundaries(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="New Jersey", legal_area="civil_procedure",

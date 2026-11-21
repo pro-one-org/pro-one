@@ -336,6 +336,18 @@
         "retrieved_at": "2026-11-20T17:37:34.516604+00:00",
         "sha256": "923b2f5dd5bd0e8df50d37aae90561b8405504ac2a6be9008727a4be14bffa18"
       }
+    },
+    "US-UT:negligence_elements:dbb2f11d7c7f": {
+      "category": "negligence_elements",
+      "title": "McCollin v. J.D.F. Properties, LLC, 2014 UT App 75, ¶ 10",
+      "url": "https://cases.justia.com/utah/court-of-appeals-published/2014-20120783-ca.pdf?ts=1397158523",
+      "locator": "McCollin v. J.D.F. Properties, LLC, 2014 UT App 75, ¶ 10",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:26:58.415194+00:00",
+        "sha256": "02d1dfa0e0e8d6e002849bea425ef760ba5b6459dcb8b1ee972b792e2311b085"
+      }
     }
   },
   "court_directory": [
@@ -581,6 +593,23 @@
       "language": "en",
       "edition": "Utah Code statutory version effective May 13, 2014",
       "effective_from": "2014-05-13"
+    },
+    "39c9d06dc25f72716b60be563834c8": {
+      "source_id": "US-UT:negligence_elements:dbb2f11d7c7f",
+      "authority_type": "opinion",
+      "citation": "McCollin v. J.D.F. Properties, LLC, 2014 UT App 75, ¶ 10",
+      "text": "If McCollin believed his claim sounded in negligence, he needed to argue that his ‚damage to real property‛ claim was actually a negligence cause of action, articulate the elements of that cause of action, and demonstrate with record evidence that genuine issues of material fact existed on each of those elements. However, McCollin’s opposition did not even reference the elements of a negligence cause of action—duty, breach, causation, and damages. See Williams v. Melby, 699 P.2d 723, 726 (Utah 1985).",
+      "text_sha256": "d282c755f21e290da07880b82f186529958e7e4b6fdf8bacb0b05a90e37a4362",
+      "publisher_sha256": "02d1dfa0e0e8d6e002849bea425ef760ba5b6459dcb8b1ee972b792e2311b085",
+      "retrieved_at": "2026-11-21T04:26:58.415194+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2014-04-10",
+      "court": "Utah Court of Appeals",
+      "decision_date": "2014-04-10",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment on a property damage claim the plaintiff contended sounded in negligence.",
+      "publisher_member": "Court-issued opinion PDF pp. 4–5, paragraph 10"
     }
   },
   "fault_allocation": {

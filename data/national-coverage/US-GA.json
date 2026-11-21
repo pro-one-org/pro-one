@@ -317,6 +317,18 @@
         "retrieved_at": "2026-11-20T23:19:11.585233+00:00",
         "sha256": "0eaa1e2ae364b0fe9d130bcd679c0d77bea0c12a810589d3a476a1cd68797305"
       }
+    },
+    "US-GA:negligence_elements:e64bd6b1898f": {
+      "category": "negligence_elements",
+      "title": "Rasnick v. Krishna Hospitality, Inc., 289 Ga. 565, 566 (2011)",
+      "url": "https://cases.justia.com/georgia/supreme-court/s10g0971.pdf?ts=1462331176",
+      "locator": "Rasnick v. Krishna Hospitality, Inc., 289 Ga. 565, 566 (2011)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:26:23.304898+00:00",
+        "sha256": "29953b4d36a17cb4adab64bd1b13853d57a4b5c2729bb07c2c2a7d47c06a933e"
+      }
     }
   },
   "court_directory": [
@@ -581,6 +593,23 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Georgia enacted S.B. 462 (2020), Georgia Installment Loan Act"
+    },
+    "a16b9f3307ea488412ef04025089e9": {
+      "source_id": "US-GA:negligence_elements:e64bd6b1898f",
+      "authority_type": "opinion",
+      "citation": "Rasnick v. Krishna Hospitality, Inc., 289 Ga. 565, 566 (2011)",
+      "text": "In order to have a viable negligence action, a plaintiff must satisfy the elements of the tort, namely, the existence of a duty on the part of the defendant, a breach of that duty, causation of the alleged injury, and damages resulting from the alleged breach of the duty. John Crane, Inc. v. Jones, 278 Ga. 747, 751 (604 SE2d 822) (2004).",
+      "text_sha256": "e23f645ed39bc7e635fe049fec0cba035724e943b0d892988311ec53de588cc7",
+      "publisher_sha256": "29953b4d36a17cb4adab64bd1b13853d57a4b5c2729bb07c2c2a7d47c06a933e",
+      "retrieved_at": "2026-11-21T04:26:23.304898+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2011-07-05",
+      "court": "Supreme Court of Georgia",
+      "decision_date": "2011-07-05",
+      "opinion_role": "majority",
+      "procedural_posture": "Certiorari to review summary judgment in a wrongful-death action concerning an innkeeper’s alleged affirmative duty.",
+      "publisher_member": "Court-issued opinion PDF pp. 3–4, excluding the intervening footnote"
     }
   },
   "fault_allocation": {

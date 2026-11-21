@@ -297,6 +297,18 @@
         "retrieved_at": "2026-11-21T03:36:44.788676+00:00",
         "sha256": "dad4e46551b0203187f003c0258ae2399af57a0ed7f4f6502cf76ece76cddbc5"
       }
+    },
+    "US-MS:negligence_elements:9e1cff2fa787": {
+      "category": "negligence_elements",
+      "title": "Sanderson Farms, Inc. v. McCullough, 212 So. 3d 69, ¶ 17 (Miss. 2017)",
+      "url": "https://cases.justia.com/mississippi/supreme-court/2017-2015-ia-00854-sct.pdf?ts=1486063931",
+      "locator": "Sanderson Farms, Inc. v. McCullough, 212 So. 3d 69, ¶ 17 (Miss. 2017)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:27:26.667964+00:00",
+        "sha256": "e278eaa6aca3f1527081e82f7316d64bc01816ac7eddd326a43e2a862a5e3588"
+      }
     }
   },
   "court_directory": [
@@ -578,6 +590,23 @@
       "language": "en",
       "edition": "Mississippi Rules of Justice Court compilation listing amendments effective July 1, 2020",
       "court": "Mississippi Justice Courts"
+    },
+    "7560e25642cbea3ca7749dc9f1273f": {
+      "source_id": "US-MS:negligence_elements:9e1cff2fa787",
+      "authority_type": "opinion",
+      "citation": "Sanderson Farms, Inc. v. McCullough, 212 So. 3d 69, ¶ 17 (Miss. 2017)",
+      "text": "Alternatively, to prevail on a claim of negligence, the “plaintiff must establish by a preponderance of the evidence each of the elements of negligence: duty, breach, causation and injury.” Miss. Dep’t of Mental Health v. Hall, 936 So. 2d 917, 922 (Miss. 2006) (quoting Miss. Dep’t of Transp. v. Cargile, 847 So. 2d 258, 262 (Miss. 2003), overruled on other grounds by Miss. Transp. Comm’n v. Montgomery, 80 So. 3d 789 (Miss. 2012)). Further, the plaintiff must show “a causal connection between the breach and the [injury], such that the breach is the proximate cause of the [injury].” Double Quick v. Lymas, 50 So. 3d 292, 298 (Miss. 2010).",
+      "text_sha256": "e630a0a4b6fbc7013ffef7d899b9267c575292631065364d1f75fc971d3ea4fc",
+      "publisher_sha256": "e278eaa6aca3f1527081e82f7316d64bc01816ac7eddd326a43e2a862a5e3588",
+      "retrieved_at": "2026-11-21T04:27:26.667964+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2017-02-02",
+      "court": "Supreme Court of Mississippi",
+      "decision_date": "2017-02-02",
+      "opinion_role": "majority",
+      "procedural_posture": "Interlocutory review of denial of summary judgment where the court assessed whether the facts supported negligence or an intentional tort.",
+      "publisher_member": "Court-issued opinion PDF p. 10, paragraph 17"
     }
   },
   "fault_allocation": {

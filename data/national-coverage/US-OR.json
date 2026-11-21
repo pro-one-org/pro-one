@@ -364,6 +364,18 @@
         "retrieved_at": "2026-11-20T16:35:26.675326+00:00",
         "sha256": "6c2a386474edbd2c36f6c713156688ed4f16e7336feea23268002a16b29f60bc"
       }
+    },
+    "US-OR:negligence_elements:e9d1ad20f680": {
+      "category": "negligence_elements",
+      "title": "Stone v. Witt, 374 Or. 524, 526 (2025)",
+      "url": "https://cases.justia.com/oregon/supreme-court/2025-s071097.pdf?ts=1765470484",
+      "locator": "Stone v. Witt, 374 Or. 524, 526 (2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:26:23.334930+00:00",
+        "sha256": "a31e8fb239d49f9e50ccc70a7b3cce15c79279c874e6d2ab1fa2f98e004d8244"
+      }
     }
   },
   "court_directory": [
@@ -617,6 +629,23 @@
       "currentness": "historical",
       "language": "en",
       "edition": "2025 Oregon Revised Statutes"
+    },
+    "dd1dca6dd001fdb3ce1fd5fe9f4d40": {
+      "source_id": "US-OR:negligence_elements:e9d1ad20f680",
+      "authority_type": "opinion",
+      "citation": "Stone v. Witt, 374 Or. 524, 526 (2025)",
+      "text": "The longstanding rule of common-law negligence in Oregon is that “liability for harm actually resulting from [a] defendant’s conduct depends on whether that conduct unreasonably created a foreseeable risk to a protected interest of the kind of harm that befell the plaintiff,” which is what plaintiff has alleged in this case. Fazzolari v. Portland School Dist. No. 1J, 303 Or 1, 17, 734 P2d 1326 (1987). Plaintiff’s allegations thus state a claim for ordinary negligence liability that does not depend on the existence of a special relationship between a defendant and the injured party.",
+      "text_sha256": "12c31ee98ac36ae328db24eec9a2bf9b3f5556eae855bc684749cb492e292401",
+      "publisher_sha256": "a31e8fb239d49f9e50ccc70a7b3cce15c79279c874e6d2ab1fa2f98e004d8244",
+      "retrieved_at": "2026-11-21T04:26:23.334930+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2025-12-11",
+      "court": "Oregon Supreme Court",
+      "decision_date": "2025-12-11",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of dismissal of ordinary negligence claims brought on behalf of a third party against medical providers and a pharmacy.",
+      "publisher_member": "Oregon Reports advance publication, printed p. 526; verified against Oregon State Law Library item 16317"
     }
   },
   "fault_allocation": {

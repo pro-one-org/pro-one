@@ -355,6 +355,18 @@
         "retrieved_at": "2026-11-21T04:08:50.883305+00:00",
         "sha256": "e7a284523ab329e9fb191c708c5912198e663c305e57232a7d7001400fbea197"
       }
+    },
+    "US-NH:negligence_elements:512172c09a92": {
+      "category": "negligence_elements",
+      "title": "Christen v. Fiesta Shows, Inc., 170 N.H. 372, 375 (2017)",
+      "url": "https://cases.justia.com/new-hampshire/supreme-court/2017-2016-0528.pdf?ts=1507122376",
+      "locator": "Christen v. Fiesta Shows, Inc., 170 N.H. 372, 375 (2017)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:27:26.513512+00:00",
+        "sha256": "d5e50419759ab96bff8349fea2bfc1c06e95d8fc7c582f5c3d0f1b48f11f28b1"
+      }
     }
   },
   "court_directory": [
@@ -653,6 +665,23 @@
       "edition": "New Hampshire Judicial Branch Superior Court rules archived February 17, 2025",
       "court": "New Hampshire Superior Court",
       "publisher_member": "Rule 17(a)–(b) in the archived Superior Court rules"
+    },
+    "0ce476e31447e6e514028e3c2319d3": {
+      "source_id": "US-NH:negligence_elements:512172c09a92",
+      "authority_type": "opinion",
+      "citation": "Christen v. Fiesta Shows, Inc., 170 N.H. 372, 375 (2017)",
+      "text": "To recover for negligence, a plaintiff must show that the defendant owes a duty to the plaintiff and that the defendant’s breach of that duty caused the plaintiff’s injuries. Manchenton v. Auto Leasing Corp., 135 N.H. 298, 304 (1992). Absent a duty, there is no negligence. Walls v. Oxford Management Co., 137 N.H. 653, 656 (1993).",
+      "text_sha256": "9f7a994f5e52f7429fb8642e650618ad31977b252a4144770f674178a12dcffa",
+      "publisher_sha256": "d5e50419759ab96bff8349fea2bfc1c06e95d8fc7c582f5c3d0f1b48f11f28b1",
+      "retrieved_at": "2026-11-21T04:27:26.513512+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2017-10-04",
+      "court": "New Hampshire Supreme Court",
+      "decision_date": "2017-10-04",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment on whether a carnival operator owed a duty in a wrongful-death negligence action.",
+      "publisher_member": "Court-issued slip opinion, PDF p. 3"
     }
   },
   "fault_allocation": {

@@ -371,6 +371,18 @@
         "retrieved_at": "2026-11-21T04:05:27.284347+00:00",
         "sha256": "87faf0e709046d377a54399a77b8b870b3fa7bc34332206647c84e1e347e9b5b"
       }
+    },
+    "US-NJ:negligence_elements:57893df7367c": {
+      "category": "negligence_elements",
+      "title": "Townsend v. Pierre, 221 N.J. 36, 51 (2015)",
+      "url": "https://civiljusticenj.org/wp-content/uploads/2015/03/15Mar12_TownsendV.Pierre.pdf",
+      "locator": "Townsend v. Pierre, 221 N.J. 36, 51 (2015)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:26:58.498926+00:00",
+        "sha256": "b228b2908128564772b0a80f2f412e9d01c388a8367d6c6b2d877834200f04a7"
+      }
     }
   },
   "court_directory": [
@@ -633,6 +645,23 @@
       "court": "New Jersey Superior Court, Law Division, Special Civil Part",
       "publisher_member": "publisher rule PDF p. 1",
       "effective_from": "2016-09-01"
+    },
+    "6a8c2bc0e612a5bd7d380b8d31af2f": {
+      "source_id": "US-NJ:negligence_elements:57893df7367c",
+      "authority_type": "opinion",
+      "citation": "Townsend v. Pierre, 221 N.J. 36, 51 (2015)",
+      "text": "To sustain a cause of action for negligence, a plaintiff must establish four elements: “‘(1) a duty of care, (2) a breach of that duty, (3) proximate cause, and (4) actual damages.’”",
+      "text_sha256": "372e6d4437f391be9bb31fded28905a7c4ba6fc393dca85191d9bbdc9cdc306d",
+      "publisher_sha256": "b228b2908128564772b0a80f2f412e9d01c388a8367d6c6b2d877834200f04a7",
+      "retrieved_at": "2026-11-21T04:26:58.498926+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2015-03-12",
+      "court": "Supreme Court of New Jersey",
+      "decision_date": "2015-03-12",
+      "opinion_role": "majority",
+      "procedural_posture": "Certification to review exclusion of expert causation testimony and summary judgment in a wrongful-death negligence action.",
+      "publisher_member": "Court-issued slip opinion in the original packet, PDF p. 17, majority opinion after the clerk syllabus"
     }
   },
   "fault_allocation": {

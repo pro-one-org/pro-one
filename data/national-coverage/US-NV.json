@@ -404,6 +404,18 @@
         "retrieved_at": "2026-11-20T18:32:56.185377+00:00",
         "sha256": "da3d1dd76e90895e39f9a4345bd75c93d19f75ec7292aa25b56ee9516089c140"
       }
+    },
+    "US-NV:negligence_elements:c6be98b8d39c": {
+      "category": "negligence_elements",
+      "title": "Klasch v. Walgreen Co., 127 Nev. 832, 837, 264 P.3d 1155, 1158 (2011)",
+      "url": "https://cases.justia.com/nevada/supreme-court/54805.pdf?ts=1462391281",
+      "locator": "Klasch v. Walgreen Co., 127 Nev. 832, 837, 264 P.3d 1155, 1158 (2011)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:27:26.733130+00:00",
+        "sha256": "1740d1109bb1ef1a1b59ec8ee1cc69fdf8a5acc1aa4a737af5d699756f11ab5f"
+      }
     }
   },
   "court_directory": [
@@ -631,6 +643,23 @@
       "currentness": "unresolved",
       "language": "en",
       "edition": "Nevada 2025 NRS Chapter 73 publication, revised April 15, 2026"
+    },
+    "9df04c3750e66a04adbbf23817bfaf": {
+      "source_id": "US-NV:negligence_elements:c6be98b8d39c",
+      "authority_type": "opinion",
+      "citation": "Klasch v. Walgreen Co., 127 Nev. 832, 837, 264 P.3d 1155, 1158 (2011)",
+      "text": "To prevail on a negligence claim, a plaintiff must establish four elements: (1) the existence of a duty of care, (2) breach of that duty, (3) legal causation, and (4) damages.",
+      "text_sha256": "7c6a48a4cf7c86c307469ef92f7914426e962e467314b72604ac01ad28451316",
+      "publisher_sha256": "1740d1109bb1ef1a1b59ec8ee1cc69fdf8a5acc1aa4a737af5d699756f11ab5f",
+      "retrieved_at": "2026-11-21T04:27:26.733130+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2011-11-23",
+      "court": "Supreme Court of Nevada",
+      "decision_date": "2011-11-23",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in a wrongful-death negligence action concerning the scope of a pharmacist’s duty.",
+      "publisher_member": "Filed court-issued Advance Opinion 74, printed p. 7, visual transcription"
     }
   },
   "fault_allocation": {

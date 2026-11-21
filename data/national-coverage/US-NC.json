@@ -402,6 +402,18 @@
         "retrieved_at": "2026-11-20T18:32:56.098226+00:00",
         "sha256": "e67aef8b4edff756adf8418aa6a1c70d82dc6505c20253e86fd9e49624d9b0c5"
       }
+    },
+    "US-NC:negligence_elements:d0c9d6699fcb": {
+      "category": "negligence_elements",
+      "title": "McClease v. Dover Volunteer Fire Department, 260 N.C. App. 81, 85 (2018)",
+      "url": "https://appellate.nccourts.org/opinions/?c=2&pdf=36690",
+      "locator": "McClease v. Dover Volunteer Fire Department, 260 N.C. App. 81, 85 (2018)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:28:23.761092+00:00",
+        "sha256": "f8c91ba8df274716a43e273a56e5128015a9d273a20cf20f51cce1e0bb05f9aa"
+      }
     }
   },
   "court_directory": [
@@ -670,6 +682,23 @@
       "retrieved_at": "2026-11-20T18:32:56.098226+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "fc68dd8cf798f5baef0231f57abdcb": {
+      "source_id": "US-NC:negligence_elements:d0c9d6699fcb",
+      "authority_type": "opinion",
+      "citation": "McClease v. Dover Volunteer Fire Department, 260 N.C. App. 81, 85 (2018)",
+      "text": "It is well established that in order to establish a prima facie case of negligence against the defendant, the plaintiff must demonstrate that “(1) the defendant owed the plaintiff a duty of care; (2) the defendant’s conduct breached that duty; (3) the breach was the actual and proximate cause of the plaintiff’s injury; and (4) plaintiff suffered damages as a result of the injury.”",
+      "text_sha256": "9df37e5f89c9884d24fc365f2850df351aaa14f068a66403c96ceabb12abf2f2",
+      "publisher_sha256": "f8c91ba8df274716a43e273a56e5128015a9d273a20cf20f51cce1e0bb05f9aa",
+      "retrieved_at": "2026-11-21T04:28:23.761092+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2018-06-19",
+      "court": "North Carolina Court of Appeals",
+      "decision_date": "2018-06-19",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment on negligence and emotional-distress claims stemming from a fire department response.",
+      "publisher_member": "Court-issued slip opinion PDF p. 8; North Carolina Court of Appeals Reports p. 85"
     }
   },
   "fault_allocation": {

@@ -363,6 +363,18 @@
         "retrieved_at": "2026-11-20T16:16:29.925156+00:00",
         "sha256": "a3ec820ead338d41a1c1998912366376306d9f5d7168c43c5ea13a1a7c72de55"
       }
+    },
+    "US-MA:negligence_elements:db54864d87bf": {
+      "category": "negligence_elements",
+      "title": "Jupin v. Kask, 447 Mass. 141, 146 (2006)",
+      "url": "https://web.archive.org/web/20210625094150id_/https://masscases.com/cases/sjc/447/447mass141.html",
+      "locator": "Jupin v. Kask, 447 Mass. 141, 146 (2006)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:24:20.802753+00:00",
+        "sha256": "c407937393dd5ff7f4eb444859187f1b014349bae3613ed8880d5472ea30c8c9"
+      }
     }
   },
   "court_directory": [
@@ -618,6 +630,23 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Massachusetts District Court and Boston Municipal Court departments"
+    },
+    "25e8c757c6b1609a26bc3c44e52a09": {
+      "source_id": "US-MA:negligence_elements:db54864d87bf",
+      "authority_type": "opinion",
+      "citation": "Jupin v. Kask, 447 Mass. 141, 146 (2006)",
+      "text": "To prevail on a negligence claim, a plaintiff must prove that the defendant owed the plaintiff a duty of reasonable care, that the defendant breached this duty, that damage resulted, and that there was a causal relation between the breach of the duty and the damage. See J.R. Nolan & L.J. Sartorio, Tort Law § 11.1 (3d ed. 2005).",
+      "text_sha256": "04390ecd45f973e05a3a01c2127f25b74f8c52f81d0ee2b8f12142bf1198d4b4",
+      "publisher_sha256": "c407937393dd5ff7f4eb444859187f1b014349bae3613ed8880d5472ea30c8c9",
+      "retrieved_at": "2026-11-21T04:24:20.802753+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2006-06-30",
+      "court": "Supreme Judicial Court of Massachusetts",
+      "decision_date": "2006-06-30",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of summary judgment in a wrongful-death and survival suit involving a property owner’s asserted duty of reasonable care.",
+      "publisher_member": "Massachusetts Reports text published by the Commonwealth Trial Court Law Libraries, p. 146"
     }
   },
   "fault_allocation": {
