@@ -435,6 +435,30 @@
         "retrieved_at": "2026-11-21T22:48:23.550722+00:00",
         "sha256": "d5c21b955ce73bcb21282b9daa20809c7d74362c9460f71ceb3912a76142abe2"
       }
+    },
+    "US-MA:service_time_limit:ee2ec8ccfb12": {
+      "category": "service_time_limit",
+      "title": "Mass. R. Civ. P. 4(j)",
+      "url": "https://www.mass.gov/rules-of-civil-procedure/civil-procedure-rule-4-process",
+      "locator": "Mass. R. Civ. P. 4(j)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:04.563685+00:00",
+        "sha256": "72ab1b0cc8114df583b30bd3f102a62835834ea8479e069b57a619491a74fa1e"
+      }
+    },
+    "US-MA:service_time_limit:05825315bca3": {
+      "category": "service_time_limit",
+      "title": "Mass. R. Civ. P. 4(f)",
+      "url": "https://www.mass.gov/rules-of-civil-procedure/civil-procedure-rule-4-process",
+      "locator": "Mass. R. Civ. P. 4(f)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:04.563685+00:00",
+        "sha256": "72ab1b0cc8114df583b30bd3f102a62835834ea8479e069b57a619491a74fa1e"
+      }
     }
   },
   "court_directory": [
@@ -767,6 +791,28 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Massachusetts General Court; wrongful-death filing alternatives and chapter 260 cross-references"
+    },
+    "2dbceeeb5adf8f3059c533713cd09b": {
+      "source_id": "US-MA:service_time_limit:ee2ec8ccfb12",
+      "authority_type": "court_rule",
+      "citation": "Mass. R. Civ. P. 4(j)",
+      "text": "If a service of the summons and complaint is not made upon a defendant within 90 days after the filing of the complaint and the party on whose behalf such service was required cannot show good cause why such service was not made within that period, the action shall be dismissed as to that defendant without prejudice upon the court's own initiative with notice to such party or upon motion.",
+      "text_sha256": "03b40faa6fd27c47115cfb73ba1aff4cea36efd26012bb68aee59e735461a050",
+      "publisher_sha256": "72ab1b0cc8114df583b30bd3f102a62835834ea8479e069b57a619491a74fa1e",
+      "retrieved_at": "2026-11-20T15:21:04.563685+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "d70e1bbd6db83feb3a934ef270fe1b": {
+      "source_id": "US-MA:service_time_limit:05825315bca3",
+      "authority_type": "court_rule",
+      "citation": "Mass. R. Civ. P. 4(f)",
+      "text": "The person serving the process shall make proof of service thereof in writing to the court promptly and in any event within the time during which the person served must respond to the process. If service is made by a person other than a sheriff, deputy sheriff, or special sheriff, he shall make affidavit thereof. Proof of service outside the Commonwealth may be made by affidavit of the individual who made the service or in the manner prescribed by the law of the Commonwealth, or the law of the place in which the service is made for proof of service in an action in any of its courts of general jurisdiction. When service is made by mail, proof of service shall include a receipt signed by the addressee or such other evidence of personal delivery to the addressee as may be satisfactory to the court. Failure to make proof of service does not affect the validity of the service.",
+      "text_sha256": "a553d8d43207e54385cf89710ee2626806062a658fc8b31d244ffb3ce02ed1fa",
+      "publisher_sha256": "72ab1b0cc8114df583b30bd3f102a62835834ea8479e069b57a619491a74fa1e",
+      "retrieved_at": "2026-11-20T15:21:04.563685+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

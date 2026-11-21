@@ -489,6 +489,30 @@
         "retrieved_at": "2026-11-21T22:48:24.224790+00:00",
         "sha256": "4274a90eabb0fb704103c53f747f3817fff917821524eab3681fb1a14681d723"
       }
+    },
+    "US-WA:contract_breach:b02dd4c6ba28": {
+      "category": "contract_breach",
+      "title": "C 1031 Properties, Inc. v. First Am. Title Ins. Co., No. 30849-9-III (Wash. Ct. App. May 23, 2013) (breach)",
+      "url": "https://www.courts.wa.gov/opinions/pdf/308499.pdf",
+      "locator": "C 1031 Properties, Inc. v. First Am. Title Ins. Co., No. 30849-9-III (Wash. Ct. App. May 23, 2013) (breach)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:54:48.432047+00:00",
+        "sha256": "395ea48abae394d59352c5d151aa7aaf5123482584ed4a48cc3a7092f0129da9"
+      }
+    },
+    "US-WA:general_contract_damages:55348bcfed23": {
+      "category": "general_contract_damages",
+      "title": "C 1031 Properties, Inc. v. First Am. Title Ins. Co., No. 30849-9-III (Wash. Ct. App. May 23, 2013) (damages)",
+      "url": "https://www.courts.wa.gov/opinions/pdf/308499.pdf",
+      "locator": "C 1031 Properties, Inc. v. First Am. Title Ins. Co., No. 30849-9-III (Wash. Ct. App. May 23, 2013) (damages)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:54:48.432047+00:00",
+        "sha256": "395ea48abae394d59352c5d151aa7aaf5123482584ed4a48cc3a7092f0129da9"
+      }
     }
   },
   "court_directory": [
@@ -914,6 +938,40 @@
       "language": "en",
       "publisher_path": "4.16.190",
       "edition": "Revised Code of Washington, certified July 12, 2024."
+    },
+    "653a75c4d9ca673c4ab2decb7fcaa0": {
+      "source_id": "US-WA:contract_breach:b02dd4c6ba28",
+      "authority_type": "opinion",
+      "citation": "C 1031 Properties, Inc. v. First Am. Title Ins. Co., No. 30849-9-III (Wash. Ct. App. May 23, 2013) (breach)",
+      "text": "C 1031 sued for breach of contract against First American. \"A breach of contract is actionable only if the contract imposes a duty, the duty is breached, and the breach proximately causes damage to the claimant.\" Nw. Indep. Forest Mfrs. v. Dep't of Labor & Indus., 78 Wn. App. 707, 712, 899 P.2d 6 (1995) (citing Larson v. Union Inv. & Loan Co., 168 Wash. 5,10 P.2d 557 (1932)).",
+      "text_sha256": "b66769d673e247bd6c21a06234b5d2db09bea498e4af2cb27cf1263c7a5c1707",
+      "publisher_sha256": "395ea48abae394d59352c5d151aa7aaf5123482584ed4a48cc3a7092f0129da9",
+      "retrieved_at": "2026-11-21T22:54:48.432047+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "May 23, 2013 slip opinion of a published case, revised subsequently for the official reports",
+      "court": "Court of Appeals of the State of Washington, Division Three",
+      "publisher_member": "Published slip opinion, page 7, section B on damages",
+      "decision_date": "2013-05-23",
+      "opinion_role": "majority",
+      "procedural_posture": "Interlocutory review of summary judgment; reversed as to the title-insurance knowledge exclusion and remanded, leaving the damages issues for trial."
+    },
+    "e8b3e43928dc4f7b38fdee218cf2dc": {
+      "source_id": "US-WA:general_contract_damages:55348bcfed23",
+      "authority_type": "opinion",
+      "citation": "C 1031 Properties, Inc. v. First Am. Title Ins. Co., No. 30849-9-III (Wash. Ct. App. May 23, 2013) (damages)",
+      "text": "A greater degree of certainty is required to prove the fact of damages than the amount of damages: once it is reasonably certain that the breach caused damages, the fact finder may determine the amount of the damage award by drawing reasonable inferences from reasonably convincing evidence. Gaasland Co., Inc. v. Hyak Lumber & Millwork, Inc., 42 Wn.2d 705, 713-14, 257 P.2d 784 (1953). In other words, damages are questions of fact left for the jury to decide unless reasonable minds could not differ. Womack v. Von Rardon, 133 Wn. App. 254, 263,135 P.3d 542 (2006).",
+      "text_sha256": "69b7ea1c96038c314f63447d4a5d52e64c3650f77b3a00cf7a61e3d4ea3eaf3c",
+      "publisher_sha256": "395ea48abae394d59352c5d151aa7aaf5123482584ed4a48cc3a7092f0129da9",
+      "retrieved_at": "2026-11-21T22:54:48.432047+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "May 23, 2013 slip opinion of a published case, revised subsequently for the official reports",
+      "court": "Court of Appeals of the State of Washington, Division Three",
+      "publisher_member": "Published slip opinion, page 7, section B on damages",
+      "decision_date": "2013-05-23",
+      "opinion_role": "majority",
+      "procedural_posture": "Interlocutory review of summary judgment; reversed as to the title-insurance knowledge exclusion and remanded, leaving the damages issues for trial."
     }
   },
   "fault_allocation": {

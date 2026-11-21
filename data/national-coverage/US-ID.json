@@ -407,6 +407,18 @@
         "retrieved_at": "2026-11-21T22:37:22.183432+00:00",
         "sha256": "1af198c83d8600ffee3ea6395952c8ab7288c57245ff4cffe8b100eb8c92a9c0"
       }
+    },
+    "US-ID:service_time_limit:e915a5114dd1": {
+      "category": "service_time_limit",
+      "title": "Idaho R. Civ. P. 4(b)(2)",
+      "url": "https://isc.idaho.gov/rules-procedure/ircp",
+      "locator": "Idaho R. Civ. P. 4(b)(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:55.611634+00:00",
+        "sha256": "8d790600ff3e504fbba4d6ccad4e824497b0919a50c44725b629381b95dbf19f"
+      }
     }
   },
   "court_directory": [
@@ -681,6 +693,17 @@
       "decision_date": "2026-10-06",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from summary judgment in an insurance coverage dispute; the court affirmed summary judgment on the breach claims."
+    },
+    "a4052d84a07968a73e056665320b64": {
+      "source_id": "US-ID:service_time_limit:e915a5114dd1",
+      "authority_type": "court_rule",
+      "citation": "Idaho R. Civ. P. 4(b)(2)",
+      "text": "If a defendant is not served within 182 days after the complaint is filed, the court, on motion or on its own after 14 days’ notice to the plaintiff, must dismiss the action without prejudice against that defendant. But if the plaintiff shows good cause for the failure, the court must extend the time for service for an appropriate period.",
+      "text_sha256": "8026899e2c414423f9d088de2baeba50bf2fb432baf0677ca76384733e8742b6",
+      "publisher_sha256": "8d790600ff3e504fbba4d6ccad4e824497b0919a50c44725b629381b95dbf19f",
+      "retrieved_at": "2026-11-20T16:01:55.611634+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

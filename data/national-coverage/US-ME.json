@@ -515,6 +515,30 @@
         "retrieved_at": "2026-11-21T22:37:21.652321+00:00",
         "sha256": "795b57659796ebee47ed50c9b28efd3a6ed61067cef58215c7bfc07ecb01e62a"
       }
+    },
+    "US-ME:service_time_limit:360891da9408": {
+      "category": "service_time_limit",
+      "title": "Me. R. Civ. P. 3(a)–(b) (service and return timing)",
+      "url": "https://www.courts.maine.gov/rules/text/mr_civ_p_only_2026-06-01.pdf",
+      "locator": "Me. R. Civ. P. 3(a)–(b) (service and return timing)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
+        "sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0"
+      }
+    },
+    "US-ME:service_time_limit:5a1b0ce5d62e": {
+      "category": "service_time_limit",
+      "title": "Me. R. Civ. P. 4(c)(1) (mail acknowledgment timing)",
+      "url": "https://www.courts.maine.gov/rules/text/mr_civ_p_only_2026-06-01.pdf",
+      "locator": "Me. R. Civ. P. 4(c)(1) (mail acknowledgment timing)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
+        "sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0"
+      }
     }
   },
   "court_directory": [
@@ -947,6 +971,30 @@
       "decision_date": "2020-02-25",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from a judgment after a bench trial on claims related to the sale of a house; the court affirmed denial of the breach claim concerning a mediation clause."
+    },
+    "306a9afb15f0d4b9c3451ce57b3229": {
+      "source_id": "US-ME:service_time_limit:360891da9408",
+      "authority_type": "court_rule",
+      "citation": "Me. R. Civ. P. 3(a)–(b) (service and return timing)",
+      "text": "Except as otherwise provided in these rules, a civil action is commenced in one of two ways: (a) Service. A civil action may be commenced by the service of a summons, complaint, and notice regarding Electronic Service . If so commenced, the complaint must be filed with the court within 20 days after completion of service of the summons, complaint, and notice regarding Electronic Service. (b) Filing. A civil action may be commenced by filing a complaint with the court. If so commenced , the return of service shall be filed with the court within 90 days after the filing of the complaint. If the complaint or the return of service is not timely filed, the action may be dismissed on motion and notice, and in such case the court may, in its discretion, if it shall be of the opinion that the action was vexatiously commenced, tax a reasonable attorney fee as costs in favor of the defendant, to be recovered of the plaintiff or the plaintiff’s attorney.",
+      "text_sha256": "2ec5788e563b9efeb13f902d650c6b7c4bfda376520f282bdf5605ed631e828b",
+      "publisher_sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0",
+      "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Maine Rules of Civil Procedure including amendments effective June 1, 2026"
+    },
+    "4805c810660ca45a1eef9ea5583b37": {
+      "source_id": "US-ME:service_time_limit:5a1b0ce5d62e",
+      "authority_type": "court_rule",
+      "citation": "Me. R. Civ. P. 4(c)(1) (mail acknowledgment timing)",
+      "text": "If no acknowledgment of service under this paragraph is received by the sender within 20 days after the date of mailing, service of the summons, complaint, and notice regarding Electronic Service shall be made under paragraph (2) or (3) of this subdivision.",
+      "text_sha256": "7cfdc626538b7d22b91bd35cda378da0e699df7c897292d38fcbd11116907525",
+      "publisher_sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0",
+      "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Maine Rules of Civil Procedure including amendments effective June 1, 2026"
     }
   },
   "fault_allocation": {

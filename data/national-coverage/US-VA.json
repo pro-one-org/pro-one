@@ -519,6 +519,42 @@
         "retrieved_at": "2026-11-21T22:48:23.560753+00:00",
         "sha256": "5d635acea0eb4fbda06d33add58e4635817b2d5206e50c5f9de8a641359a5895"
       }
+    },
+    "US-VA:service_time_limit:128b04472d4f": {
+      "category": "service_time_limit",
+      "title": "Va. Code § 8.01-275.1",
+      "url": "https://law.lis.virginia.gov/vacode/title8.01/chapter8/section8.01-275.1/",
+      "locator": "Va. Code § 8.01-275.1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:54:46.939490+00:00",
+        "sha256": "394f440686a8859c15b2865c91b49d8bf108f698990cea9506ffbc12f515bd28"
+      }
+    },
+    "US-VA:service_time_limit:af74b404f04d": {
+      "category": "service_time_limit",
+      "title": "Va. Code § 8.01-277(B)",
+      "url": "https://law.lis.virginia.gov/vacode/title8.01/chapter8/section8.01-277/",
+      "locator": "Va. Code § 8.01-277(B)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:54:46.703200+00:00",
+        "sha256": "d08c8ef55bcce19847b504012b7431a0fe692e26f2a1dd60ad68afd7f6539d64"
+      }
+    },
+    "US-VA:contract_breach:e40aefbc69d2": {
+      "category": "contract_breach",
+      "title": "Ulloa v. QSP, Inc., 271 Va. 72 (2006) (breach elements)",
+      "url": "https://www.vacourts.gov/static/opinions/opnscvwp/1050095.pdf",
+      "locator": "Ulloa v. QSP, Inc., 271 Va. 72 (2006) (breach elements)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:54:46.614804+00:00",
+        "sha256": "a00e1d48297e45049699535c456e361c116cb3e104c3da8a20472d4348b8b604"
+      }
     }
   },
   "court_directory": [
@@ -880,6 +916,45 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Virginia Legislative Information System; distinct paths after abatement, reversal, loss of records or voluntary nonsuit"
+    },
+    "2380cde3ad3f839cddafcb3d6b1fba": {
+      "source_id": "US-VA:service_time_limit:128b04472d4f",
+      "authority_type": "statute",
+      "citation": "Va. Code § 8.01-275.1",
+      "text": "Service of process in an action or suit within twelve months of commencement of the action or suit against a defendant shall be timely as to that defendant. Service of process on a defendant more than twelve months after the suit or action was commenced shall be timely upon a finding by the court that the plaintiff exercised due diligence to have timely service made on the defendant.",
+      "text_sha256": "528774490cccecc9a51982788239db029ac6f45a245aa8d02e1c5c27e5d2249e",
+      "publisher_sha256": "394f440686a8859c15b2865c91b49d8bf108f698990cea9506ffbc12f515bd28",
+      "retrieved_at": "2026-11-21T22:54:46.939490+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "339ce0aa5ec5ab271ce21ed4448f6f": {
+      "source_id": "US-VA:service_time_limit:af74b404f04d",
+      "authority_type": "statute",
+      "citation": "Va. Code § 8.01-277(B)",
+      "text": "B. A person, upon whom process has not been served within one year of commencement of the action against him, may make a special appearance, which does not constitute a general appearance, to file a motion to dismiss. Upon finding that the plaintiff did not exercise due diligence to have timely service and sustaining the motion to dismiss, the court shall dismiss the action with prejudice. Upon finding that the plaintiff did exercise due diligence to have timely service and denying the motion to dismiss, the court shall require the person filing such motion to file a responsive pleading within 21 days of such ruling. Nothing herein shall prevent the plaintiff from filing a nonsuit under § 8.01-380 before the entry of an order granting a motion to dismiss pursuant to the provisions of this section. Nothing in this subsection shall pertain to cases involving asbestos.",
+      "text_sha256": "0e46a3c2191136d7862549c6f9d44e648df873feeec4ad8cd0003519e7644dad",
+      "publisher_sha256": "d08c8ef55bcce19847b504012b7431a0fe692e26f2a1dd60ad68afd7f6539d64",
+      "retrieved_at": "2026-11-21T22:54:46.703200+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "62055ea9f07e176d7b94371161537a": {
+      "source_id": "US-VA:contract_breach:e40aefbc69d2",
+      "authority_type": "opinion",
+      "citation": "Ulloa v. QSP, Inc., 271 Va. 72 (2006) (breach elements)",
+      "text": "We have recently stated that “[t]he elements of a breach of contract action are (1) a legally enforceable obligation of a defendant to a plaintiff; (2) the defendant’s violation or breach of that obligation; and (3) injury or damage to the plaintiff caused by the breach of obligation.” Filak v. George, 267 Va. 612, 619, 594 S.E.2d 610, 614 (2004).",
+      "text_sha256": "e7d1638ac8eb39ba217a12c1650f275e9602e9573b2006ba0d193dfb6e8b9c3f",
+      "publisher_sha256": "a00e1d48297e45049699535c456e361c116cb3e104c3da8a20472d4348b8b604",
+      "retrieved_at": "2026-11-21T22:54:46.614804+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "January 13, 2006 opinion",
+      "court": "Supreme Court of Virginia",
+      "publisher_member": "Majority opinion, slip page 9",
+      "decision_date": "2006-01-13",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal after jury verdict; affirmed in part, reversed in part and remanded for reconsideration of attorney fees."
     }
   },
   "fault_allocation": {

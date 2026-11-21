@@ -444,6 +444,18 @@
         "retrieved_at": "2026-11-21T21:58:25.115756+00:00",
         "sha256": "c9647cf125e0a9688fd905b645102aa9c4136c46654e166259fd4cc789ee6e3b"
       }
+    },
+    "US-UT:service_time_limit:b0881e8ad52a": {
+      "category": "service_time_limit",
+      "title": "Utah R. Civ. P. 4(b)",
+      "url": "https://legacy.utcourts.gov/rules/view.php?rule=4&type=urcp",
+      "locator": "Utah R. Civ. P. 4(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:57:51.044597+00:00",
+        "sha256": "5823e4a53f0e6f569a22cfedf96bf610ae0c4719ad9e9014f6bd8da2361fa9f9"
+      }
     }
   },
   "court_directory": [
@@ -807,6 +819,19 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Publisher PDF p. 5–6, Utah Code § 34-28-9(1), statutory text"
+    },
+    "3d9fb525e34a6d91990b223b32615d": {
+      "source_id": "US-UT:service_time_limit:b0881e8ad52a",
+      "authority_type": "court_rule",
+      "citation": "Utah R. Civ. P. 4(b)",
+      "text": "(b) Time of service. Unless the summons and complaint are accepted, a copy of the summons and complaint in an action commenced under Rule 3(a)(1) must be served no later than 120 days after the complaint is filed, unless the court orders a different period under Rule 6. If the summons and complaint are not timely served, the action against the unserved defendant may be dismissed without prejudice on motion of any party or on the court's own initiative.",
+      "text_sha256": "346ecd630b807549695366acb7b07f58ccbce3597084493e267136f0eaed9ecb",
+      "publisher_sha256": "5823e4a53f0e6f569a22cfedf96bf610ae0c4719ad9e9014f6bd8da2361fa9f9",
+      "retrieved_at": "2026-11-21T22:57:51.044597+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2023-11-01",
+      "publisher_member": "Utah Courts legacy rules publication, version effective November 1, 2023"
     }
   },
   "fault_allocation": {

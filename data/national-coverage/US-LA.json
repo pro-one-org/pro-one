@@ -398,6 +398,30 @@
         "retrieved_at": "2026-11-20T22:39:55.437822+00:00",
         "sha256": "4eb4db891eb0276260030391af003b930f69f010c35e1d7cd4500e4bc1e51d04"
       }
+    },
+    "US-LA:service_time_limit:50875bb88aca": {
+      "category": "service_time_limit",
+      "title": "La. Code Civ. Proc. art. 1201(A)–(C)",
+      "url": "https://www.legis.la.gov/legis/Law.aspx?d=111147",
+      "locator": "La. Code Civ. Proc. art. 1201(A)–(C)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:57:50.036099+00:00",
+        "sha256": "0e9e1ccd12b021c376117d2debf9a812978c7fc5718f80a2455d9a345b394e22"
+      }
+    },
+    "US-LA:service_time_limit:7a0a20a9cde3": {
+      "category": "service_time_limit",
+      "title": "La. Code Civ. Proc. art. 1201(D)–(F)",
+      "url": "https://www.legis.la.gov/legis/Law.aspx?d=111147",
+      "locator": "La. Code Civ. Proc. art. 1201(D)–(F)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:57:50.036099+00:00",
+        "sha256": "0e9e1ccd12b021c376117d2debf9a812978c7fc5718f80a2455d9a345b394e22"
+      }
     }
   },
   "court_directory": [
@@ -721,6 +745,31 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "1985-01-01"
+    },
+    "f5078aacced0f9e465c275ae4a14b2": {
+      "source_id": "US-LA:service_time_limit:50875bb88aca",
+      "authority_type": "statute",
+      "citation": "La. Code Civ. Proc. art. 1201(A)–(C)",
+      "text": "A. Citation and service thereof are essential in all civil actions except summary and executory proceedings, divorce actions under Civil Code Article 102, and proceedings under the Children's Code. Without them all proceedings are absolutely null. B. The defendant may expressly waive citation and service thereof by any written waiver made part of the record. C. Service of the citation shall be requested on all named defendants within ninety days of commencement of the action. When a supplemental or amended petition is filed naming any additional defendant, service of citation shall be requested within ninety days of its filing, and the additional defendant shall be served with the original petition and the supplemental or amended petition. The defendant may expressly waive the requirements of this Paragraph by any written waiver. The requirement provided by this Paragraph shall be expressly waived by a defendant unless the defendant files, in accordance with the provisions of Article 928, a declinatory exception of insufficiency of service of process specifically alleging the failure to timely request service of citation or a contradictory motion in accordance with Article 1672(C).",
+      "text_sha256": "334d31f0302793b1755236b5ab21e67b557fc54234b44ec5c84861db2e90ad1e",
+      "publisher_sha256": "0e9e1ccd12b021c376117d2debf9a812978c7fc5718f80a2455d9a345b394e22",
+      "retrieved_at": "2026-11-21T22:57:50.036099+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Louisiana State Legislature codified article; exclusions and written waiver; time to request service"
+    },
+    "df29451d54604606bdfde85b63826f": {
+      "source_id": "US-LA:service_time_limit:7a0a20a9cde3",
+      "authority_type": "statute",
+      "citation": "La. Code Civ. Proc. art. 1201(D)–(F)",
+      "text": "D. If not waived, a request for service of citation upon the defendant shall be considered timely if requested on the defendant within the time period provided by this Article and all fees specified by the clerk of court for service of citation are paid within the times provided by Paragraph E of this Article, notwithstanding insufficient or erroneous service. E.(1) Upon receipt of a request for service of citation pursuant to this Article, the clerk of court shall provide to the filing party a confirmation of receipt of the request and a statement of the initial fees for the requested service, which shall be paid within the ninety-day period for requesting service in accordance with Paragraph C of this Article. (2) If additional fees are owed, the clerk of court shall provide to the filing party a statement of additional fees for the requested service, which shall be paid within the ninety-day period for requesting service in accordance with Paragraph C of this Article or within thirty days from the date of receipt of the statement of additional fees from the clerk of court, whichever period is longer. F. The provisions of this Article regarding the payment of fees for service of citation shall not apply to litigants permitted to litigate without the payment of costs.",
+      "text_sha256": "b55c562b3186305e86c3586ca14922d27c58ea9c85fbe3d29983df0099374960",
+      "publisher_sha256": "0e9e1ccd12b021c376117d2debf9a812978c7fc5718f80a2455d9a345b394e22",
+      "retrieved_at": "2026-11-21T22:57:50.036099+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2026-08-01",
+      "publisher_member": "Louisiana State Legislature codified article; Act 36 of 2026 (SB 475) is prospective only under section 2"
     }
   },
   "fault_allocation": {

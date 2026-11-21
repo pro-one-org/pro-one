@@ -185,6 +185,22 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertIn("Time Limit for Service", wyoming["passages"][timing]["text"])
         self.assertNotIn(timing, wyoming["cells"]["procedure.service"]["passage_selectors"])
 
+    def test_louisiana_request_and_fee_timing_stay_in_blocked_review(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Louisiana", legal_area="civil_procedure",
+                               topics=["service_time_limit"], authority_status="unresolved")
+        request, fees = sorted((provider.fetch(key).text for key in provider.search(query)))
+        self.assertIn("shall be requested on all named defendants within ninety days", request)
+        self.assertIn("except summary and executory proceedings", request)
+        self.assertIn("whichever period is longer", fees)
+        self.assertIn("litigants permitted to litigate without the payment of costs", fees)
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                  "authority_as_of": "2026-11-21"})))
+        complaint = next(shell for shell in coverage("US-LA")["action_shells"] if shell["action_type"] == "complaint")
+        self.assertEqual(len(complaint["review_evidence"]["service_time_limit"]), 2)
+        self.assertNotIn("service_time_limit", complaint["procedure_evidence"])
+        self.assertEqual((complaint["readiness"], complaint["execution"]), ("blocked", "disabled"))
+
     def test_michigan_certified_summons_timing_stays_in_blocked_review(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Michigan", court="Michigan courts governed by Chapter 2",

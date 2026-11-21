@@ -587,6 +587,42 @@
         "retrieved_at": "2026-11-21T22:39:52.120899+00:00",
         "sha256": "e34899cd34b355a8cfd5292a6daf826dc9ddd6032905392bb8699d6c34c4bb9a"
       }
+    },
+    "US-CT:service_time_limit:c4c1a3e9411b": {
+      "category": "service_time_limit",
+      "title": "Conn. Gen. Stat. § 52-46 (2025 ed.)",
+      "url": "https://prdext2.cga.ct.gov/2025/pub/chap_896.htm",
+      "locator": "Conn. Gen. Stat. § 52-46 (2025 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:34.053179+00:00",
+        "sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5"
+      }
+    },
+    "US-CT:service_time_limit:782b331fbe78": {
+      "category": "service_time_limit",
+      "title": "Conn. Gen. Stat. § 52-46a (2025 ed.)",
+      "url": "https://prdext2.cga.ct.gov/2025/pub/chap_896.htm",
+      "locator": "Conn. Gen. Stat. § 52-46a (2025 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:34.053179+00:00",
+        "sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5"
+      }
+    },
+    "US-CT:service_time_limit:64a82bf679bf": {
+      "category": "service_time_limit",
+      "title": "Conn. Gen. Stat. § 52-48 (2025 ed.)",
+      "url": "https://prdext2.cga.ct.gov/2025/pub/chap_896.htm",
+      "locator": "Conn. Gen. Stat. § 52-48 (2025 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:34.053179+00:00",
+        "sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5"
+      }
     }
   },
   "court_directory": [
@@ -1050,6 +1086,42 @@
       "decision_date": "2022-05-10",
       "opinion_role": "majority",
       "procedural_posture": "Commercial lease dispute following a bench trial; the court rejected the special defenses and ordered a new damages hearing."
+    },
+    "baffcda248aecec8d514bc30e45df7": {
+      "source_id": "US-CT:service_time_limit:c4c1a3e9411b",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 52-46 (2025 ed.)",
+      "text": "Civil process, if returnable to the Supreme Court, shall be served at least thirty days, inclusive, before the day of the sitting of the court, and, if returnable to the Superior Court, at least twelve days, inclusive, before such day.",
+      "text_sha256": "f75ccbe674ce60ae89038af0da217ef67f96a99765266e8ee3d142193afc4e35",
+      "publisher_sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5",
+      "retrieved_at": "2026-11-18T20:45:34.053179+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes, revised to January 1, 2025"
+    },
+    "0b6e39553310cad2efc6a6dfbc580e": {
+      "source_id": "US-CT:service_time_limit:782b331fbe78",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 52-46a (2025 ed.)",
+      "text": "Process in civil actions returnable to the Supreme Court shall be returned to its clerk at least twenty days before the return day and, if returnable to the Superior Court, except process in summary process actions and petitions for parentage and support, to the clerk of such court at least six days before the return day.",
+      "text_sha256": "38fab05292e309342ac732674c4323e00fb4a4d29a270e2921cfdbc4bb0d4d1f",
+      "publisher_sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5",
+      "retrieved_at": "2026-11-18T20:45:34.053179+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes, revised to January 1, 2025"
+    },
+    "574c9ee8dc84f4a0f957e1e132f2a2": {
+      "source_id": "US-CT:service_time_limit:64a82bf679bf",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 52-48 (2025 ed.)",
+      "text": "(a) Process in civil actions, including transfers and applications for relief or removal, but not including summary process actions, brought to the Superior Court may be made returnable on any Tuesday in any month. The return day in any summary process action may be any week day, Monday through Saturday, except a holiday. (b) All process shall be made returnable not later than two months after the date of the process and shall designate the place where court is to be held.",
+      "text_sha256": "b74034bfe7c9cfdcc77685e4fbc10f00023a97be0c659f2e1ca66f9213582dae",
+      "publisher_sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5",
+      "retrieved_at": "2026-11-18T20:45:34.053179+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes, revised to January 1, 2025"
     }
   },
   "fault_allocation": {
