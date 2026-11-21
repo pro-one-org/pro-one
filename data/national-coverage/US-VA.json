@@ -447,6 +447,30 @@
         "retrieved_at": "2026-11-20T18:39:37.862648+00:00",
         "sha256": "853f41ae7d9d9da0e19a4f652f89bc83c0efc94828312df2e821420c6e913d6f"
       }
+    },
+    "US-VA:tenancy_notice:06b6710a40ad": {
+      "category": "tenancy_notice",
+      "title": "Va. Code § 55.1-1245(F)–(G) (version effective until July 1, 2027)",
+      "url": "https://law.lis.virginia.gov/vacode/title55.1/chapter12/section55.1-1245/",
+      "locator": "Va. Code § 55.1-1245(F)–(G) (version effective until July 1, 2027)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:20:29.379892+00:00",
+        "sha256": "c537a28e233601501bd2bdaf06aa03e80de17b41d7b3672ac12f355dcb4dbf0a"
+      }
+    },
+    "US-VA:tenancy_notice:523bcc5918b9": {
+      "category": "tenancy_notice",
+      "title": "Va. Code § 55.1-1245(A)–(B) (version effective until July 1, 2027)",
+      "url": "https://law.lis.virginia.gov/vacode/title55.1/chapter12/section55.1-1245/",
+      "locator": "Va. Code § 55.1-1245(A)–(B) (version effective until July 1, 2027)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:20:29.379892+00:00",
+        "sha256": "c537a28e233601501bd2bdaf06aa03e80de17b41d7b3672ac12f355dcb4dbf0a"
+      }
     }
   },
   "court_directory": [
@@ -734,6 +758,32 @@
       "retrieved_at": "2026-11-20T18:39:37.862648+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "34a4d9e0a5eb24b8d2dce1977db339": {
+      "source_id": "US-VA:tenancy_notice:06b6710a40ad",
+      "authority_type": "statute",
+      "citation": "Va. Code § 55.1-1245(F)–(G) (version effective until July 1, 2027)",
+      "text": "F. If rent is unpaid when due, and the tenant fails to pay rent within 14 days after written notice is served on him notifying the tenant of his nonpayment, and of the landlord's intention to terminate the rental agreement if the rent is not paid within the 14-day period, the landlord may terminate the rental agreement and proceed to obtain possession of the premises as provided in § 55.1-1251 . If a check for rent is delivered to the landlord drawn on an account with insufficient funds, or if an electronic funds transfer has been rejected because of insufficient funds or a stop-payment order has been placed in bad faith by the authorizing party, and the tenant fails to pay rent within 14 days after written notice is served on him notifying the tenant of his nonpayment and of the landlord's intention to terminate the rental agreement if the rent is not paid by cash, cashier's check, certified check, or a completed electronic funds transfer within the 14-day period, the landlord may terminate the rental agreement and proceed to obtain possession of the premises as provided in § 55.1-1251 . Nothing shall be construed to prevent a landlord from seeking an award of costs or attorney fees under § 8.01-27.1 or civil recovery under § 8.01-27.2 , as a part of other damages requested on the unlawful detainer filed pursuant to § 8.01-126 , provided that the landlord has given notice in accordance with § 55.1-1202 , which notice may be included in the 14-day termination notice provided in accordance with this section. G. If a public housing authority issues a notice of nonpayment of rent to a tenant, such public housing authority shall also provide to the tenant along with the notice of nonpayment written information printed on pink or orange paper explaining how the tenant may recertify the tenant's income, including how the tenant can, in accordance with federal law and policy, report changes in income, request a minimum rent hardship exemption, and file grievances. Such information shall be posted by the public housing authority in conspicuous locations in each public housing community under its authority.",
+      "text_sha256": "fe06b9df3c84ca8a1e5c6b6ac148b1feb659485d4963cffea411b85e546d8f33",
+      "publisher_sha256": "c537a28e233601501bd2bdaf06aa03e80de17b41d7b3672ac12f355dcb4dbf0a",
+      "retrieved_at": "2026-11-21T22:20:29.379892+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Virginia Legislative Information System; publisher version effective until July 1, 2027, including separate public-housing notice requirements",
+      "effective_until": "2027-07-01"
+    },
+    "0b48f25ead335e53e6eb5bc708a63c": {
+      "source_id": "US-VA:tenancy_notice:523bcc5918b9",
+      "authority_type": "statute",
+      "citation": "Va. Code § 55.1-1245(A)–(B) (version effective until July 1, 2027)",
+      "text": "A. Except as otherwise provided in this chapter, if there is a material noncompliance by the tenant with the rental agreement or a violation of § 55.1-1227 materially affecting health and safety, the landlord may serve a written notice on the tenant specifying the acts and omissions constituting the breach and stating that the rental agreement will terminate upon a date not less than 30 days after receipt of the notice if the breach is not remedied in 21 days and that the rental agreement shall terminate as provided in the notice. B. If the breach is remediable by repairs or the payment of damages or otherwise and the tenant adequately remedies the breach prior to the date specified in the notice, the rental agreement shall not terminate.",
+      "text_sha256": "e808573a94b9ba012748db2df61f46d350b0ccf3c02a0d5cddd6a1c536433eb3",
+      "publisher_sha256": "c537a28e233601501bd2bdaf06aa03e80de17b41d7b3672ac12f355dcb4dbf0a",
+      "retrieved_at": "2026-11-21T22:20:29.379892+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Virginia Legislative Information System; publisher version effective until July 1, 2027; material noncompliance and cure, subject to other provisions",
+      "effective_until": "2027-07-01"
     }
   },
   "fault_allocation": {

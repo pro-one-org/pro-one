@@ -524,6 +524,18 @@
         "retrieved_at": "2026-11-18T20:46:32.705237+00:00",
         "sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040"
       }
+    },
+    "US-OH:tenancy_notice:22cbe3368277": {
+      "category": "tenancy_notice",
+      "title": "Ohio Rev. Code § 1923.04",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-1923.04",
+      "locator": "Ohio Rev. Code § 1923.04",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:23:11.580663+00:00",
+        "sha256": "a22b37b9796de55b2daf3f7fc252168b971856c10d84cc7868f5545d65aa6c43"
+      }
     }
   },
   "court_directory": [
@@ -1011,6 +1023,19 @@
       "edition": "Supreme Court of Ohio civil rules publication, July 2026 edition",
       "court": "Ohio courts governed by the Ohio Rules of Civil Procedure",
       "publisher_member": "Supreme Court of Ohio civil rules publication, July 2026 edition, PDF p. 16, Ohio Civ. R. 4(E) (July 2026 ed.), rule text only"
+    },
+    "99305b4aa14fb9c15a79b67370388c": {
+      "source_id": "US-OH:tenancy_notice:22cbe3368277",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 1923.04",
+      "text": "(A) Except as provided in division (B) or (C) of this section, a party desiring to commence an action under this chapter shall notify the adverse party to leave the premises, for the possession of which the action is about to be brought, three or more days before beginning the action, by certified mail, return receipt requested, or by handing a written copy of the notice to the defendant in person, or by leaving it at the defendant's usual place of abode or at the premises from which the defendant is sought to be evicted. Every notice given under this section by a landlord to recover residential premises shall contain the following language printed or written in a conspicuous manner: \"You are being asked to leave the premises. If you do not leave, an eviction action may be initiated against you. If you are in doubt regarding your legal rights and obligations as a tenant, it is recommended that you seek legal assistance.\" (B) The service of notice pursuant to section 5313.06 of the Revised Code constitutes compliance with the notice requirement of division (A) of this section. The service of the notice required by division (C) of section 5321.17 of the Revised Code constitutes compliance with the notice requirement of division (A) of this section. (C) If the adverse party in an action under this chapter is a deceased resident of a manufactured home park, the notice required by division (A) of this section shall be left at the premises from which the defendant is sought to be evicted and also shall be sent by ordinary mail to the following persons if their names and addresses are known to the park operator: (1) If a probate court has granted letters testamentary or of administration for the estate of the adverse party in accordance with Title XXI of the Revised Code, the executor or administrator appointed by the probate court; (2) The deceased resident's spouse and any other members of the deceased resident's immediate family.",
+      "text_sha256": "a4f11fe062f840c413b237e61f051a88646ec1b4a0bd1b24684084b3eac4c474",
+      "publisher_sha256": "a22b37b9796de55b2daf3f7fc252168b971856c10d84cc7868f5545d65aa6c43",
+      "retrieved_at": "2026-11-21T22:23:11.580663+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Ohio Laws Chapter 1923; pre-action notice, delivery, required residential warning and statutory exceptions",
+      "effective_from": "2007-10-18"
     }
   },
   "fault_allocation": {

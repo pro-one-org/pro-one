@@ -683,6 +683,18 @@
         "retrieved_at": "2026-11-21T17:05:35.670052+00:00",
         "sha256": "ee5006dfd1897e71bb35971292c74e579d02c28cc1ec55534ca533ffde3a53b1"
       }
+    },
+    "US-MI:tenancy_notice:36f36c58695c": {
+      "category": "tenancy_notice",
+      "title": "Mich. Comp. Laws § 554.134(2)",
+      "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=MCL-554-134",
+      "locator": "Mich. Comp. Laws § 554.134(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:20:30.075625+00:00",
+        "sha256": "f392bca1844b73cc8c0e2d092e5aa53c845b73047a05590f8735e5cc42ef6c30"
+      }
     }
   },
   "court_directory": [
@@ -1327,6 +1339,18 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Michigan Legislature statutory PDF, § 445.911(2)–(3)"
+    },
+    "889e1bdccca1f06b18fba5b3b7c62a": {
+      "source_id": "US-MI:tenancy_notice:36f36c58695c",
+      "authority_type": "statute",
+      "citation": "Mich. Comp. Laws § 554.134(2)",
+      "text": "(2) If a tenant neglects or refuses to pay rent on a lease at will or otherwise, the landlord may terminate the tenancy by giving the tenant a written 7-day notice to quit.",
+      "text_sha256": "c148bbed13602c02a17f467e4c83ebbdffd924b44c63b5dfb03c7982db8646ff",
+      "publisher_sha256": "f392bca1844b73cc8c0e2d092e5aa53c845b73047a05590f8735e5cc42ef6c30",
+      "retrieved_at": "2026-11-21T22:20:30.075625+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Michigan Legislature compiled statute; written notice for nonpayment, distinct from other grounds in the section"
     }
   },
   "fault_allocation": {

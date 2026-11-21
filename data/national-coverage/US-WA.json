@@ -465,6 +465,18 @@
         "retrieved_at": "2026-11-21T22:15:24.443147+00:00",
         "sha256": "3caedb34b2d9098d00953e0501d9967dff79028ccb813f6d9a8df1035ea1f7c6"
       }
+    },
+    "US-WA:tenancy_notice:f94455fba3f8": {
+      "category": "tenancy_notice",
+      "title": "Wash. Rev. Code § 59.12.030(3)",
+      "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=59.12.030",
+      "locator": "Wash. Rev. Code § 59.12.030(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:20:29.735447+00:00",
+        "sha256": "3397b4795527e9e06daf148a06cf31bd26a428464d361cbd0f270248f4d6e6f0"
+      }
     }
   },
   "court_directory": [
@@ -864,6 +876,18 @@
       "current_as_of": "2024-07-12",
       "publisher_path": "49.52.060",
       "edition": "Revised Code of Washington, certified July 12, 2024."
+    },
+    "02e780b26b9da6acfd9dec8d6a7e76": {
+      "source_id": "US-WA:tenancy_notice:f94455fba3f8",
+      "authority_type": "statute",
+      "citation": "Wash. Rev. Code § 59.12.030(3)",
+      "text": "(3) When he or she continues in possession in person or by subtenant after a default in the payment of rent, and after notice in writing requiring in the alternative the payment of the rent or the surrender of the detained premises, served (in manner in RCW 59.12.040 provided) on behalf of the person entitled to the rent upon the person owing it, has remained uncomplied with for the period of three days after service, or for the period of 14 days after service for tenancies under chapter 59.18 RCW. The notice may be served at any time after the rent becomes due. For the purposes of this subsection and as applied to tenancies under chapter 59.18 RCW, \"rent\" has the same meaning as defined in RCW 59.18.030;",
+      "text_sha256": "e689caacd25ddef9374bcca809e6079d94bc4e9672bdea7eb6c70c629285c870",
+      "publisher_sha256": "3397b4795527e9e06daf148a06cf31bd26a428464d361cbd0f270248f4d6e6f0",
+      "retrieved_at": "2026-11-21T22:20:29.735447+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Washington Legislature unlawful-detainer statute; nonpayment branch distinguishes chapter 59.18 residential tenancies"
     }
   },
   "fault_allocation": {

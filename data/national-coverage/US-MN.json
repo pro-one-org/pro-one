@@ -403,6 +403,30 @@
         "retrieved_at": "2026-11-21T22:15:23.949600+00:00",
         "sha256": "4723387160d2d45cf56f7e2f5e992917ab19ec9e39253844b2138b87238e6ba9"
       }
+    },
+    "US-MN:tenancy_notice:4342ea1ead12": {
+      "category": "tenancy_notice",
+      "title": "Minn. Stat. § 504B.321, subd. 1a",
+      "url": "https://www.revisor.mn.gov/statutes/2026/cite/504B.321",
+      "locator": "Minn. Stat. § 504B.321, subd. 1a",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:20:29.582603+00:00",
+        "sha256": "13521a505dc1561559eec18dd9312dc4bb2fc8e65ed999726f36caba0f60ed2c"
+      }
+    },
+    "US-MN:tenancy_notice:4de19155b698": {
+      "category": "tenancy_notice",
+      "title": "Minn. Stat. § 504B.135",
+      "url": "https://www.revisor.mn.gov/statutes/2026/cite/504B.135",
+      "locator": "Minn. Stat. § 504B.135",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:20:29.518779+00:00",
+        "sha256": "13beb5041badd48e5beeb2ee73ba1de7018d66186a804445948367d9dfc05069"
+      }
     }
   },
   "court_directory": [
@@ -680,6 +704,32 @@
       "language": "en",
       "court": "Minnesota Conciliation Court",
       "publisher_member": "Minnesota Revisor of Statutes, Conciliation Court service on defendant; dollar amount, address, consumer-credit electronic notice and service branches"
+    },
+    "56d113f4c008704c97f2b41225a0f9": {
+      "source_id": "US-MN:tenancy_notice:4342ea1ead12",
+      "authority_type": "statute",
+      "citation": "Minn. Stat. § 504B.321, subd. 1a",
+      "text": "(a) Before bringing an eviction action alleging nonpayment of rent or other unpaid financial obligation in violation of the lease, a landlord must provide written notice to the residential tenant specifying the basis for future eviction action. The notice must include: (1) the total amount due; (2) a specific accounting of the amount of the total due from unpaid rent, late fees, and other charges under the lease; (3) the name and address of the person authorized to receive rent and fees on behalf of the landlord; (4) the following statement: \"You have the right to seek legal help. If you can't afford a lawyer, free legal help may be available. Contact Legal Aid or visit www.LawHelpMN.org to know your rights and find your local Legal Aid office.\"; (5) the following statement: \"To apply for financial help, contact your local county or Tribal social services office, apply online at MNBenefits.mn.gov or call the United Way toll-free information line by dialing 2-1-1 or 800-543-7709.\"; and (6) the following statement: \"Your landlord can file an eviction case if you do not pay the total amount due or move out within 14 days from the date of this notice. Some local governments may have an eviction notice period longer than 14 days.\" (b) The landlord or an agent of the landlord must deliver the notice personally or by first class mail to the residential tenant at the address of the leased premises. (c) If the residential tenant fails to correct the rent delinquency within 14 days of the delivery or mailing of the notice, or the number of days required by a local government rule or law if the notice period prior to an eviction required by the local government is longer than 14 days, or fails to vacate, then the landlord may bring an eviction action under subdivision 1 based on nonpayment of rent.",
+      "text_sha256": "b4ee522a299745f162f0ff78027e5bd0ac7d761764e909dc375644ce32af9489",
+      "publisher_sha256": "13521a505dc1561559eec18dd9312dc4bb2fc8e65ed999726f36caba0f60ed2c",
+      "retrieved_at": "2026-11-21T22:20:29.582603+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2026 Minnesota Statutes",
+      "publisher_member": "Minnesota Revisor 2026 codification; pre-eviction residential nonpayment notice, required statements, delivery, and longer local notice"
+    },
+    "f4a2a63d8f9f9d28eab0b909d6efd9": {
+      "source_id": "US-MN:tenancy_notice:4de19155b698",
+      "authority_type": "statute",
+      "citation": "Minn. Stat. § 504B.135",
+      "text": "A tenancy at will may be terminated by either party by giving notice in writing. The time of the notice must be at least as long as the interval between the time rent is due or three months, whichever is less.",
+      "text_sha256": "54ecaad5b282866d0bd8a902198e65fbb385b48bf5d30c069c66024b4d56e864",
+      "publisher_sha256": "13beb5041badd48e5beeb2ee73ba1de7018d66186a804445948367d9dfc05069",
+      "retrieved_at": "2026-11-21T22:20:29.518779+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2026 Minnesota Statutes",
+      "publisher_member": "Minnesota Revisor 2026 codification; written notice for terminating a tenancy at will"
     }
   },
   "fault_allocation": {

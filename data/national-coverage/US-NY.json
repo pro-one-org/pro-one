@@ -353,6 +353,18 @@
         "retrieved_at": "2026-11-21T22:06:51.049371+00:00",
         "sha256": "2f729e9ece944dced37bc5a96a28780028b565d8d175fc82a2bf1e6ede5f5508"
       }
+    },
+    "US-NY:tenancy_notice:976658c064e8": {
+      "category": "tenancy_notice",
+      "title": "N.Y. Real Prop. Acts. Law § 711(2) (version effective until June 15, 2034)",
+      "url": "https://www.nysenate.gov/legislation/laws/RPA/711",
+      "locator": "N.Y. Real Prop. Acts. Law § 711(2) (version effective until June 15, 2034)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:23:10.455672+00:00",
+        "sha256": "8886e2f336220727f3143ffb5087b546ef16ba86e0154a8035970e14aefb71e3"
+      }
     }
   },
   "court_directory": [
@@ -661,6 +673,19 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "New York Senate Open Legislation CPLR 306-b, selected publication revision dated April 24, 2026"
+    },
+    "8540664e4c47d92bc6c3782da6c7f4": {
+      "source_id": "US-NY:tenancy_notice:976658c064e8",
+      "authority_type": "statute",
+      "citation": "N.Y. Real Prop. Acts. Law § 711(2) (version effective until June 15, 2034)",
+      "text": "2. The tenant has defaulted in the payment of rent, pursuant to the agreement under which the premises are held, and a written demand of the rent has been made with at least fourteen days' notice requiring, in the alternative, the payment of the rent, or the possession of the premises, has been served upon the tenant as prescribed in section seven hundred thirty-five of this article. The fourteen-day notice shall append or contain the notice required pursuant to section two hundred thirty-one-c of the real property law, which shall state the following: (i) if the premises are or are not subject to article six-A of the real property law, the \"good cause eviction law\", and if the premises are exempt, such notice shall state why the premises are exempt from such law; (ii) if the landlord is not renewing the lease for a unit subject to article six-A of the real property law, the lawful basis for such non-renewal; and (iii) if the landlord is increasing the rent upon an existing lease of a unit subject to article six-A of the real property law above the applicable local rent standard, as defined in subdivision eight of section two hundred eleven of the real property law, the justification for such increase. Any person succeeding to the landlord's interest in the premises may proceed under this subdivision for rent due such person's predecessor in interest if such person has a right thereto. Where a tenant dies during the term of the lease and rent due has not been paid and the apartment is occupied by a person with a claim to possession, a proceeding may be commenced naming the occupants of the apartment seeking a possessory judgment only as against the estate. Entry of such a judgment shall be without prejudice to the possessory claims of the occupants, and any warrant issued shall not be effective as against the occupants.",
+      "text_sha256": "21938ff7f15d09d43fbc143b3a7b3e97935c5aaeca06abf958cc094d0869feb7",
+      "publisher_sha256": "8886e2f336220727f3143ffb5087b546ef16ba86e0154a8035970e14aefb71e3",
+      "retrieved_at": "2026-11-21T22:23:10.455672+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New York Senate Open Legislation revision dated December 13, 2024; subsection (2) version marked effective until June 15, 2034",
+      "effective_until": "2034-06-15"
     }
   },
   "fault_allocation": {

@@ -903,6 +903,26 @@ class NationalCoverageTests(unittest.TestCase):
                 self.assertIn(condition, match.text)
                 self.assertEqual(provider.search(query.model_copy(update={"state": "Alabama"})), [])
 
+    def test_tenancy_notice_keeps_publisher_version_limits_and_local_requirements(self):
+        provider = RetainedLegislativeResearch()
+        for state, citation, effective_until, condition in (
+            ("Virginia", "55.1-1245(F)", "2027-07-01", "public housing authority"),
+            ("New York", "711(2)", "2034-06-15", "good cause eviction law"),
+            ("Minnesota", "504B.321", None, "local government rule or law"),
+        ):
+            with self.subTest(state=state):
+                query = ResearchMatter(country="US", state=state, legal_area="landlord_tenant",
+                                       topics=["tenancy_notice"],
+                                       authority_status="historical" if state == "Minnesota" else "unresolved")
+                documents = [provider.fetch(key) for key in provider.search(query)]
+                match, = [doc for doc in documents if citation in doc.source["citation"]["preferred_citation"]]
+                self.assertIn(condition, match.text)
+                self.assertEqual(match.source["dates"]["effective_through"], effective_until)
+                self.assertIsNone(match.source["corpus_provenance"]["current_as_of"])
+                self.assertFalse(provider.search(query.model_copy(update={
+                    "authority_status": "current", "authority_as_of": "2026-11-21",
+                })))
+
     def test_formation_sources_preserve_local_subject_and_edition(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Arizona", legal_area="contracts",
