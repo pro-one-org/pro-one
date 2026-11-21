@@ -375,6 +375,27 @@ class NationalCoverageTests(unittest.TestCase):
                     "authority_status": "current", "authority_as_of": "2026-11-20",
                 })))
 
+    def test_archived_response_rules_enforce_court_and_topic_boundaries(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="New Jersey", legal_area="civil_procedure",
+                               topics=["initial_response"], authority_types=["court_rule"],
+                               authority_status="historical")
+        for suffix, text in (("Civil Part", "may be enlarged"), ("Special Civil Part", "shall not apply")):
+            with self.subTest(court=suffix):
+                scoped = query.model_copy(update={"court": f"New Jersey Superior Court, Law Division, {suffix}"})
+                key, = provider.search(scoped)
+                evidence = provider.fetch(key).text
+                self.assertIn("35 days", evidence)
+                self.assertIn(text, evidence)
+        dc = query.model_copy(update={"state": "District of Columbia", "sovereign": "district",
+                                      "court": "District of Columbia Superior Court, Civil Division"})
+        key, = provider.search(dc)
+        for phrase in ("21 days after being served with the summons and complaint", "within 60 days", "within 14 days"):
+            self.assertIn(phrase, provider.fetch(key).text)
+        self.assertFalse(provider.search(dc.model_copy(update={"authority_status": "current", "authority_as_of": "2026-11-20"})))
+        self.assertFalse(provider.search(dc.model_copy(update={"sovereign": "state"})))
+        self.assertFalse(provider.search(dc.model_copy(update={"court": "District of Columbia Superior Court, Small Claims and Conciliation Branch"})))
+
     def test_automated_transaction_enactment_is_scoped_and_historical(self):
         query = ResearchMatter(country="US", state="Arkansas", legal_area="contracts",
                                topics=["automated_contract_formation"], authority_types=["statute"],

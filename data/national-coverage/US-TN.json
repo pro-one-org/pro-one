@@ -338,6 +338,18 @@
         "retrieved_at": "2026-11-21T03:59:01.952864+00:00",
         "sha256": "0ff2f108b725cfd6845c1b62bc7efda50d5fbdeaf7625e5b3a691a05133298d4"
       }
+    },
+    "US-TN:response:743ce9f4de02": {
+      "category": "response",
+      "title": "Tenn. R. Civ. P. 12.01 (March 2025 archive)",
+      "url": "https://web.archive.org/web/20250309052812id_/https://www.tncourts.gov/rules/rules-civil-procedure/1201",
+      "locator": "Tenn. R. Civ. P. 12.01 (March 2025 archive)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:05:30.817419+00:00",
+        "sha256": "075418f0678f1fa3ac62fa98e78ef04b2977d4751eb9b27be378df97a55c2091"
+      }
     }
   },
   "court_directory": [
@@ -640,6 +652,21 @@
       "opinion_role": "majority",
       "procedural_posture": "Appeal from summary judgment in a dispute over an exclusive listing agreement and a broker commission.",
       "publisher_member": "original court opinion, PDF p. 8"
+    },
+    "d83918ea46ffba88de95be2fa61f38": {
+      "source_id": "US-TN:response:743ce9f4de02",
+      "authority_type": "court_rule",
+      "citation": "Tenn. R. Civ. P. 12.01 (March 2025 archive)",
+      "text": "A defendant shall serve an answer within thirty (30) days after the service of the summons and complaint upon him. A party served with a pleading stating a cross-claim against such party shall serve an answer thereto within thirty (30) days after the service upon him or her. The plaintiff shall serve a reply to a counterclaim in the answer within thirty (30) days after service of the answer, or, if a reply is ordered by the court, within thirty (30) days after service of the order, unless the order otherwise directs. The service of a motion permitted under this rule alters these periods of time as follows, unless a different time is fixed by order of the court: (1) if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within fifteen (15) days after notice of the court's action; (2) if the court grants a motion for a more definite statement the responsive pleading shall be served within fifteen (15) days after the service of the more definite statement.",
+      "text_sha256": "bf33b937ab78f219e3e62c8b424eeda24988c968022cfcfe53c0701f86530263",
+      "publisher_sha256": "075418f0678f1fa3ac62fa98e78ef04b2977d4751eb9b27be378df97a55c2091",
+      "retrieved_at": "2026-11-21T04:05:30.817419+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Tennessee judiciary Rule 12.01 archived March 9, 2025",
+      "court": "Tennessee trial courts governed by the Rules of Civil Procedure",
+      "publisher_member": "publisher Rule 12.01 text",
+      "effective_from": "1999-07-01"
     }
   },
   "fault_allocation": {
