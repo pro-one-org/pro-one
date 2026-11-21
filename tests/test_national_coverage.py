@@ -23,6 +23,22 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_maryland_refiling_rules_keep_the_receiving_court_and_trigger_separate(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Maryland", legal_area="civil_procedure", authority_status="historical",
+                               court="District Court of Maryland", topics=["refiling_after_dismissal"])
+        key, = provider.search(query)
+        doc = provider.fetch(key)
+        self.assertIn("the circuit court dismisses the action for lack of subject matter jurisdiction", doc.text)
+        self.assertIn("timely filed in the District Court", doc.text)
+        self.assertFalse(provider.search(query.model_copy(update={"topics": ["commencement"]})))
+        circuit = query.model_copy(update={"court": "Maryland Circuit Courts"})
+        docs = {doc.source["citation"]["preferred_citation"]: doc.text
+                for doc in map(provider.fetch, provider.search(circuit))}
+        self.assertIn("the District Court dismisses the action", docs["Md. Rule 2-101(c) (November 2003 order)"])
+        self.assertIn("a United States District Court or a court of another state",
+                      docs["Md. Rule 2-101(b) (November 2003 order)"])
+
     def test_dc_code_verification_binds_publication_date_subsection_and_jurisdiction(self):
         record = manifest("US-DC")
         wage = next(row for row in record["passages"].values() if row["citation"] == "D.C. Code § 32-1308(c)")
