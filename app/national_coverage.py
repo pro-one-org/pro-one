@@ -53,7 +53,8 @@ ACTION_REQUIREMENTS = {
     "demand": (),
 }
 ACTION_REVIEW_TOPICS = {
-    "complaint": ("pleading_contents", "debt_pleading", "summons_issuance", "service_business_entity", "service_proof"),
+    "complaint": ("pleading_contents", "debt_pleading", "summons_issuance", "service_business_entity", "service_proof",
+                  "service_time_limit"),
     "answer": ("answer_contents", "postmotion_response", "demurrer_timing", "amended_pleading_response", "calendar",
                "debt_judgment_proof"),
 }

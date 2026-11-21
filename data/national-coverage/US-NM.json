@@ -483,6 +483,18 @@
         "retrieved_at": "2026-11-21T21:55:58.527552+00:00",
         "sha256": "b981a8ae3636b45a1bba3f269a14fe06b95f61bde69bc2836bdccdb1f09fa403"
       }
+    },
+    "US-NM:service_time_limit:0a519112ffee": {
+      "category": "service_time_limit",
+      "title": "Rule 1-004(C)(2) NMRA",
+      "url": "https://nmonesource.com/w/nmos/1786096/document/chunk/getContentByDocumentFragmentAnchorText?anchorText=zoupio-_Toc240365728",
+      "locator": "Rule 1-004(C)(2) NMRA",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:14:00.370441+00:00",
+        "sha256": "6ea117573daeb6aaa573b3e8a88ddb6b168f38c2e689226d9fd87d8739daaa6b"
+      }
     }
   },
   "court_directory": [
@@ -956,6 +968,21 @@
       "language": "en",
       "edition": "New Mexico 2015 Session Laws chapter 91, governor signed April 8, 2015",
       "publisher_member": "Publisher PDF p. 1, N.M. Stat. Ann. § 37-1-3(A) (2015 N.M. Laws ch. 91), statutory text"
+    },
+    "8b827e6eba3c94d7d7170c3e69a039": {
+      "source_id": "US-NM:service_time_limit:0a519112ffee",
+      "authority_type": "court_rule",
+      "citation": "Rule 1-004(C)(2) NMRA",
+      "text": "(2) Service of process shall be made with reasonable diligence, and the original summons with proof of service shall be filed with the court in accordance with the provisions of Paragraph L of this rule.",
+      "text_sha256": "79e2342b086042c03b9bdaca7db2f8a9d4af8b79203518eaaad9206be2ef97e6",
+      "publisher_sha256": "6ea117573daeb6aaa573b3e8a88ddb6b168f38c2e689226d9fd87d8739daaa6b",
+      "retrieved_at": "2026-11-21T04:14:00.370441+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "New Mexico District Courts",
+      "publisher_member": "New Mexico Compilation Commission Rule 1-004(C)(2); reasonable diligence and separate proof-of-service requirements",
+      "effective_from": "2025-12-31",
+      "edition": "Amendment S-1-RCR-2023-00009 applies to actions filed on or after December 31, 2025"
     }
   },
   "fault_allocation": {

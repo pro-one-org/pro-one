@@ -634,6 +634,18 @@
         "retrieved_at": "2026-11-21T17:43:02.519206+00:00",
         "sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce"
       }
+    },
+    "US-TX:service_time_limit:cb8091261219": {
+      "category": "service_time_limit",
+      "title": "Farris v. Evans, No. 01-20-00165-CV, slip op. at 5–6 (Tex. App. July 14, 2020)",
+      "url": "https://www.txcourts.gov/media/1448850/200165f.pdf",
+      "locator": "Farris v. Evans, No. 01-20-00165-CV, slip op. at 5–6 (Tex. App. July 14, 2020)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:34:35.934965+00:00",
+        "sha256": "37d9bfc7d1d7b8f2fcffd53219da8ff4b4293e89e205c352b484b0cdce814a22"
+      }
     }
   },
   "court_directory": [
@@ -1103,6 +1115,23 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Publisher PDF p. 2, Tex. Civ. Prac. & Rem. Code § 16.003(b), statutory text"
+    },
+    "b3b47f9c782a0340796d5463e8091c": {
+      "source_id": "US-TX:service_time_limit:cb8091261219",
+      "authority_type": "opinion",
+      "citation": "Farris v. Evans, No. 01-20-00165-CV, slip op. at 5–6 (Tex. App. July 14, 2020)",
+      "text": "If a plaintiff files his petition within the limitations period, but obtains service on the defendant outside of the limitations period, such service is valid only if the plaintiff exercised “diligence” in procuring service. Ashley v. Hawkins, 293 S.W.3d 175, 179 (Tex. 2009); see also Proulx v. Wells, 235 S.W.3d 213, 215 (Tex. 2007) (holding that “a timely filed suit will not interrupt the running of limitations unless the plaintiff exercises due diligence in the issuance and service of citation”). If a plaintiff diligently effects service after the expiration of the limitations period, the date of service relates back to the date of filing. Proulx, 235 S.W.3d at 215. If a defendant affirmatively pleads the defense of limitations and shows that service occurred after the limitations deadline, the burden shifts to the plaintiff to prove diligence. Ashley, 293 S.W.3d at 179; Proulx, 235 S.W.3d at 216. The plaintiff then must present evidence regarding the efforts made to serve the defendant and “explain every lapse in effort or period of delay.” Proulx, 235 S.W.3d at 216. “[T]he relevant inquiry is whether the plaintiff acted as an ordinarily prudent person would have acted under the same or similar circumstances and was diligent up until the time the defendant was served.” Id. The question of the plaintiff’s diligence in obtaining service is generally one of fact to be determined by examining the time it took to secure citation, service, or both, and the type of effort or lack of effort the plaintiff expended in procuring service. Id. However, a plaintiff’s explanation of his efforts to obtain service may demonstrate a lack of diligence as a matter of law when one or more lapses between service efforts are unexplained or patently unreasonable. Id.",
+      "text_sha256": "7f1b81761c4c5acd488974e58d5718e9d1b0b82afa4a786de4e4febcb5466f2a",
+      "publisher_sha256": "37d9bfc7d1d7b8f2fcffd53219da8ff4b4293e89e205c352b484b0cdce814a22",
+      "retrieved_at": "2026-11-21T22:34:35.934965+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Memorandum opinion issued July 14, 2020",
+      "court": "Texas First Court of Appeals",
+      "publisher_member": "Texas First Court of Appeals PDF pp. 5-6, Part B; relation back and diligence after limitations",
+      "decision_date": "2020-07-14",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in an automobile personal-injury case; the court affirmed on limitations after examining unexplained gaps in service efforts."
     }
   },
   "fault_allocation": {

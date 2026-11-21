@@ -401,6 +401,18 @@
         "retrieved_at": "2026-11-21T22:25:37.001604+00:00",
         "sha256": "f1fc4f45d8c665b3180be42133721febeabd59a03153409291b8f6cc2a2f82c9"
       }
+    },
+    "US-GA:service_time_limit:44d7e59e4563": {
+      "category": "service_time_limit",
+      "title": "Ga. Code Ann. § 9-11-4(c) (2015 publication)",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t9-ch11-%28v7%29-2015-pdf.pdf",
+      "locator": "Ga. Code Ann. § 9-11-4(c) (2015 publication)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:34:37.159275+00:00",
+        "sha256": "3e6a3f858b0696ef6942ed8968a3ccc180982c658e356c346692227c3a814b0b"
+      }
     }
   },
   "court_directory": [
@@ -769,6 +781,19 @@
       "language": "en",
       "edition": "Georgia Code 2025 Supplement",
       "publisher_member": "Georgia General Assembly Title 10 2025 supplement, PDF p. 55; intentional violation with subsection (b) qualification"
+    },
+    "39390f2d1b6455a7572a835eb88622": {
+      "source_id": "US-GA:service_time_limit:44d7e59e4563",
+      "authority_type": "statute",
+      "citation": "Ga. Code Ann. § 9-11-4(c) (2015 publication)",
+      "text": "When service is to be made within this state, the person making such service shall make the service within five days from the time of receiving the summons and complaint; but failure to make service within the five-day period will not invalidate a later service.",
+      "text_sha256": "5527d024be387b93460534a17871b533654385a054c21e230512c503b061a2b6",
+      "publisher_sha256": "3e6a3f858b0696ef6942ed8968a3ccc180982c658e356c346692227c3a814b0b",
+      "retrieved_at": "2026-11-21T22:34:37.159275+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Georgia General Assembly Civil Practice Act 2015 publication",
+      "publisher_member": "Georgia General Assembly Civil Practice Act, PDF p. 20, last paragraph of subsection (c); server receipt and effect of later service"
     }
   },
   "fault_allocation": {

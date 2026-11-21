@@ -414,6 +414,18 @@
         "retrieved_at": "2026-11-21T04:28:23.761092+00:00",
         "sha256": "f8c91ba8df274716a43e273a56e5128015a9d273a20cf20f51cce1e0bb05f9aa"
       }
+    },
+    "US-NC:service_time_limit:bc271d4534f4": {
+      "category": "service_time_limit",
+      "title": "N.C. Gen. Stat. § 1A-1, Rule 4(c)–(f)",
+      "url": "https://www.ncleg.gov/enactedlegislation/statutes/html/bysection/chapter_1a/gs_1a-1%2C_rule_4.html",
+      "locator": "N.C. Gen. Stat. § 1A-1, Rule 4(c)–(f)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:02.946874+00:00",
+        "sha256": "86be095fe77ef7fca0ff3db9cef136d79009c2766214cfc00c04b8afbbc84569"
+      }
     }
   },
   "court_directory": [
@@ -699,6 +711,19 @@
       "opinion_role": "majority",
       "procedural_posture": "Appeal from summary judgment on negligence and emotional-distress claims stemming from a fire department response.",
       "publisher_member": "Court-issued slip opinion PDF p. 8; North Carolina Court of Appeals Reports p. 85"
+    },
+    "06b91ae3a22f3ee7de0925bfac508a": {
+      "source_id": "US-NC:service_time_limit:bc271d4534f4",
+      "authority_type": "court_rule",
+      "citation": "N.C. Gen. Stat. § 1A-1, Rule 4(c)–(f)",
+      "text": "(c) Summons - Return. - Personal service or substituted personal service of summons as prescribed by Rules 4(j) and (j1) must be made within 60 days after the date of the issuance of summons. When a summons has been served upon every party named in the summons, it shall be returned immediately to the clerk who issued it, with notation thereon of its service. Failure to make service within the time allowed or failure to return a summons to the clerk after it has been served on every party named in the summons shall not invalidate the summons. If the summons is not served within the time allowed upon every party named in the summons, it shall be returned immediately upon the expiration of such time by the officer to the clerk of the court who issued it with notation thereon of its nonservice and the reasons therefor as to every such party not served, but failure to comply with this requirement shall not invalidate the summons. (d) Summons - Extension; endorsement, alias and pluries. - When any defendant in a civil action is not served within the time allowed for service, the action may be continued in existence as to such defendant by either of the following methods of extension: (1) The plaintiff may secure an endorsement upon the original summons for an extension of time within which to complete service of process. Return of the summons so endorsed shall be in the same manner as the original process. Such endorsement may be secured within 90 days after the issuance of summons or the date of the last prior endorsement, or (2) The plaintiff may sue out an alias or pluries summons returnable in the same manner as the original process. Such alias or pluries summons may be sued out at any time within 90 days after the date of issue of the last preceding summons in the chain of summonses or within 90 days of the last prior endorsement. Provided, in tax and assessment foreclosures under G.S. 47-108.25 and G.S. 105-374, the first endorsement may be made at any time within two years after the issuance of the original summons, and subsequent endorsements may thereafter be made as in other actions; or an alias or pluries summons may be sued out at any time within two years after the issuance of the original summons, and after the issuance of such alias or pluries summons, the chain of summonses may be kept up as in any other action. Provided, for service upon a defendant in a place not within the United States, the first endorsement may be made at any time within two years after the issuance of the original summons, and subsequent endorsements may thereafter be made at least once every two years; or an alias or pluries summons may be sued out at any time within two years after the issuance of the original summons, and after the issuance of such alias or pluries summons, the chain of summonses may be kept up as in any other action if sued out within two years of the last preceding summons in the chain of summonses or within two years of the last prior endorsement. Provided, further, the methods of extension may be used interchangeably in any case and regardless of the form of the preceding extension. (e) Summons - Discontinuance. - When there is neither endorsement by the clerk nor issuance of alias or pluries summons within the time specified in Rule 4(d), the action is discontinued as to any defendant not theretofore served with summons within the time allowed. Thereafter, alias or pluries summons may issue, or an extension be endorsed by the clerk, but, as to such defendant, the action shall be deemed to have commenced on the date of such issuance or endorsement. (f) Summons - Date of multiple summonses. - If the plaintiff shall cause separate or additional summonses to be issued as provided in Rule 4(a), the date of issuance of such separate or additional summonses shall be considered the same as that of the original summons for purposes of endorsement or alias summons under Rule 4(d).",
+      "text_sha256": "d4232267a46b90eb0422fd6dd3b7b084d3004372b2bda6ef1814c57b0a5fa9ce",
+      "publisher_sha256": "86be095fe77ef7fca0ff3db9cef136d79009c2766214cfc00c04b8afbbc84569",
+      "retrieved_at": "2026-11-20T15:21:02.946874+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "North Carolina Superior and District Courts",
+      "publisher_member": "North Carolina General Assembly Rule 4(c)-(f); return, extensions, tax foreclosure and foreign service qualifications, discontinuance, renewed commencement and date of multiple summonses"
     }
   },
   "fault_allocation": {

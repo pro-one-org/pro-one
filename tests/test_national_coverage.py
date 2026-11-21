@@ -125,13 +125,34 @@ class NationalCoverageTests(unittest.TestCase):
                                                                   "authority_as_of": "2026-11-21"})))
 
     def test_service_deadline_coverage_requires_timing_evidence(self):
-        georgia = coverage("US-GA")["cells"]
-        self.assertTrue(georgia["procedure.service"]["passage_selectors"])
-        self.assertFalse(georgia["deadlines.service"]["passage_selectors"])
+        georgia = coverage("US-GA")
+        methods = set(georgia["cells"]["procedure.service"]["passage_selectors"])
+        timing, = georgia["cells"]["deadlines.service"]["passage_selectors"]
+        self.assertTrue(methods)
+        self.assertNotIn(timing, methods)
+        self.assertIn("will not invalidate a later service", georgia["passages"][timing]["text"])
         wyoming = coverage("US-WY")
         timing, = wyoming["cells"]["deadlines.service"]["passage_selectors"]
         self.assertIn("Time Limit for Service", wyoming["passages"][timing]["text"])
         self.assertNotIn(timing, wyoming["cells"]["procedure.service"]["passage_selectors"])
+
+    def test_michigan_certified_summons_timing_stays_in_blocked_review(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Michigan", court="Michigan courts governed by Chapter 2",
+                               legal_area="civil_procedure", topics=["service_time_limit"], authority_status="current",
+                               authority_as_of="2026-11-18")
+        documents = [provider.fetch(key) for key in provider.search(query)]
+        by_citation = {doc.source["citation"]["preferred_citation"]: doc.text for doc in documents}
+        self.assertIn("while a motion challenging the sufficiency", by_citation["MCR 2.102(D)"])
+        self.assertIn("as to a defendant added", by_citation["MCR 2.102(E)"].lower())
+        self.assertIn("within 28 days after notice", by_citation["MCR 2.102(F)"])
+        self.assertFalse(provider.search(query.model_copy(update={"authority_as_of": "2026-11-19"})))
+        self.assertFalse(provider.search(query.model_copy(update={"court": "Small Claims Division of the Michigan District Court"})))
+        complaint = next(shell for shell in coverage("US-MI")["action_shells"] if shell["action_type"] == "complaint")
+        self.assertEqual({row["citation"] for row in complaint["review_evidence"]["service_time_limit"]},
+                         set(by_citation))
+        self.assertNotIn("service_time_limit", complaint["procedure_evidence"])
+        self.assertEqual((complaint["readiness"], complaint["execution"]), ("blocked", "disabled"))
 
     def test_delaware_service_deadline_certification_stays_with_its_court_and_edition(self):
         provider = RetainedLegislativeResearch()
