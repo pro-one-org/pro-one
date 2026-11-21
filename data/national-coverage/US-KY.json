@@ -322,6 +322,54 @@
         "retrieved_at": "2026-11-21T16:24:43.273819+00:00",
         "sha256": "85fd166f636fa50873d0cbcdda10200d1e76901d7e60571a8cf64654936a4dea"
       }
+    },
+    "US-KY:consumer_private_action:0979649dc172": {
+      "category": "consumer_private_action",
+      "title": "Ky. Rev. Stat. § 367.220(1)",
+      "url": "https://apps.legislature.ky.gov/Law/statutes/statute.aspx?id=34922",
+      "locator": "Ky. Rev. Stat. § 367.220(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:04.748901+00:00",
+        "sha256": "59ebf1712f1edb40e32c9eae955c51f6dee835dc81fe72283ee410f83fede0c8"
+      }
+    },
+    "US-KY:consumer_remedies:cd42ba63a0da": {
+      "category": "consumer_remedies",
+      "title": "Ky. Rev. Stat. § 367.220(3)",
+      "url": "https://apps.legislature.ky.gov/Law/statutes/statute.aspx?id=34922",
+      "locator": "Ky. Rev. Stat. § 367.220(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:04.748901+00:00",
+        "sha256": "59ebf1712f1edb40e32c9eae955c51f6dee835dc81fe72283ee410f83fede0c8"
+      }
+    },
+    "US-KY:consumer_limitations:57675e3cc81f": {
+      "category": "consumer_limitations",
+      "title": "Ky. Rev. Stat. § 367.220(5)",
+      "url": "https://apps.legislature.ky.gov/Law/statutes/statute.aspx?id=34922",
+      "locator": "Ky. Rev. Stat. § 367.220(5)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:04.748901+00:00",
+        "sha256": "59ebf1712f1edb40e32c9eae955c51f6dee835dc81fe72283ee410f83fede0c8"
+      }
+    },
+    "US-KY:wrongful_death:f8cc1bb095aa": {
+      "category": "wrongful_death",
+      "title": "Ky. Rev. Stat. § 411.130(1)",
+      "url": "https://apps.legislature.ky.gov/Law/statutes/statute.aspx?id=17769",
+      "locator": "Ky. Rev. Stat. § 411.130(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:04.745381+00:00",
+        "sha256": "a7c8ead4146c3890a0794f9f61f4f7c4c87d27e66933609a6fa3b46e2fb36cfa"
+      }
     }
   },
   "court_directory": [
@@ -582,6 +630,54 @@
       "language": "en",
       "publisher_member": "Kentucky Legislative Research Commission, ch. 413 Limitation of Actions, § 413.250",
       "effective_from": "1942-10-01"
+    },
+    "0a1566e2c933a6e3582046a4849d50": {
+      "source_id": "US-KY:consumer_private_action:0979649dc172",
+      "authority_type": "statute",
+      "citation": "Ky. Rev. Stat. § 367.220(1)",
+      "text": "(1) Any person who purchases or leases goods or services primarily for personal, family or household purposes and thereby suffers any ascertainable loss of money or property, real or personal, as a result of the use or employment by another person of a method, act or practice declared unlawful by KRS 367.170, may bring an action under the Rules of Civil Procedure in the Circuit Court in which the seller or lessor resides or has his principal place of business or is doing business, or in the Circuit Court in which the purchaser or lessee of goods or services resides, or where the transaction in question occurred, to recover actual damages. The court may, in its discretion, award actual damages and may provide such equitable relief as it deems necessary or proper. Nothing in this subsection shall be construed to limit a person's right to seek punitive damages where appropriate.",
+      "text_sha256": "19faba701b77c68d42efe260822c6b9cd1f2b6455b97435b728eeddbada3045c",
+      "publisher_sha256": "59ebf1712f1edb40e32c9eae955c51f6dee835dc81fe72283ee410f83fede0c8",
+      "retrieved_at": "2026-11-21T16:33:04.748901+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Kentucky Legislative Research Commission, § 367.220(1)"
+    },
+    "07fab0e01cf79880ae0e9478b83d3a": {
+      "source_id": "US-KY:consumer_remedies:cd42ba63a0da",
+      "authority_type": "statute",
+      "citation": "Ky. Rev. Stat. § 367.220(3)",
+      "text": "(3) In any action brought by a person under this section, the court may award, to the prevailing party, in addition to the relief provided in this section, reasonable attorney's fees and costs.",
+      "text_sha256": "c6a77642c7daeb4281c75435a0dea101a26412bae8a7a421c09ccefb58074208",
+      "publisher_sha256": "59ebf1712f1edb40e32c9eae955c51f6dee835dc81fe72283ee410f83fede0c8",
+      "retrieved_at": "2026-11-21T16:33:04.748901+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Kentucky Legislative Research Commission, § 367.220(3)"
+    },
+    "bc8b247f479bfac1ebd0611bbb243c": {
+      "source_id": "US-KY:consumer_limitations:57675e3cc81f",
+      "authority_type": "statute",
+      "citation": "Ky. Rev. Stat. § 367.220(5)",
+      "text": "(5) Any person bringing an action under this section must bring such action within one (1) year after any action of the Attorney General has been terminated or within two (2) years after the violation of KRS 367.170, whichever is later.",
+      "text_sha256": "35d430e31d76057780d2047cd1e7400ce5083f460357396df2e229a23a676539",
+      "publisher_sha256": "59ebf1712f1edb40e32c9eae955c51f6dee835dc81fe72283ee410f83fede0c8",
+      "retrieved_at": "2026-11-21T16:33:04.748901+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Kentucky Legislative Research Commission, § 367.220(5)"
+    },
+    "d6afe3c04b550afe045f859ceef89a": {
+      "source_id": "US-KY:wrongful_death:f8cc1bb095aa",
+      "authority_type": "statute",
+      "citation": "Ky. Rev. Stat. § 411.130(1)",
+      "text": "(1) Whenever the death of a person results from an injury inflicted by the negligence or wrongful act of another, damages may be recovered for the death from the person who caused it, or whose agent or servant caused it. If the act was willful or the negligence gross, punitive damages may be recovered. The action shall be prosecuted by the personal representative of the deceased.",
+      "text_sha256": "5e37cbb318b77722ca5439d38e09077b17872ff062215621e6e174a1d19154f1",
+      "publisher_sha256": "a7c8ead4146c3890a0794f9f61f4f7c4c87d27e66933609a6fa3b46e2fb36cfa",
+      "retrieved_at": "2026-11-21T16:33:04.745381+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Kentucky Legislative Research Commission, § 411.130(1)"
     }
   },
   "fault_allocation": {

@@ -456,6 +456,30 @@
         "retrieved_at": "2026-11-21T16:23:01.188644+00:00",
         "sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb"
       }
+    },
+    "US-AK:small_claims:c82da3cc2f2a": {
+      "category": "small_claims",
+      "title": "Alaska Dist. Ct. R. Civ. P. 8(a)–(c)",
+      "url": "https://courts.alaska.gov/rules/docs/dciv.pdf",
+      "locator": "Alaska Dist. Ct. R. Civ. P. 8(a)–(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:04.101771+00:00",
+        "sha256": "49121b867dd56877a3154d98ce61972f30380c56a1ffe3ef07f922cc658c1721"
+      }
+    },
+    "US-AK:small_claims:49c3d9e5b154": {
+      "category": "small_claims",
+      "title": "Alaska Dist. Ct. R. Civ. P. 10(a)",
+      "url": "https://courts.alaska.gov/rules/docs/dciv.pdf",
+      "locator": "Alaska Dist. Ct. R. Civ. P. 10(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:04.101771+00:00",
+        "sha256": "49121b867dd56877a3154d98ce61972f30380c56a1ffe3ef07f922cc658c1721"
+      }
     }
   },
   "court_directory": [
@@ -694,6 +718,32 @@
       "language": "en",
       "court": "Alaska Superior Court and Alaska District Court insofar as applicable",
       "publisher_member": "Alaska Court System Fall 2026 civil rules, printed p. 20, Rule 4(d)(4)"
+    },
+    "00e3d3f1ad803ebeadd367bc6d62cb": {
+      "source_id": "US-AK:small_claims:c82da3cc2f2a",
+      "authority_type": "court_rule",
+      "citation": "Alaska Dist. Ct. R. Civ. P. 8(a)–(c)",
+      "text": "(a) The following procedure applies to a small claim action: (1) When all parties elect small claims procedure, a small claim action, as defined by AS 22.15.040, is governed by: (A) this Part (Part II of the District Court Rules of Civil Procedure, Small Claims Rules); (B) applicable portions of Civil Rules 5, 5.1, 5.3, and 6; and ES OF CIVIL PROCEDURE Rule 10 3 (C) other rules specifically referenced in this Part (Part II of the District Court Rules of Civil Procedure, Small Claims Rules). (2) When the parties do not elect small claim procedure, a small claim action is governed by Part I of the District Court Rules of Civil Procedure. (b) A party having a claim or claims exceeding the maximum amount of a small claim as defined by AS 22.15.040 may waive the right to recover the excess amount and elect to proceed under this Part II, by filing a written waiver of the excess amount. (c) Actions to foreclose or enforce statutory, common law or possessory liens and actions for recovery of real property may not be brought as small claims actions. The court may, on its own motion, order the rules in Part I to apply in any other action when important or difficult questions of fact or law are involved.",
+      "text_sha256": "845dafa36437feb62df1602b3a4c9fe896760d85e853d5e58173851eaa5fc668",
+      "publisher_sha256": "49121b867dd56877a3154d98ce61972f30380c56a1ffe3ef07f922cc658c1721",
+      "retrieved_at": "2026-11-21T16:33:04.101771+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska District Court, small claims",
+      "publisher_member": "Alaska Court System District Court Rules, printed p. 3, Rule 8; excludes post-rule editorial note"
+    },
+    "cc701e41445d97ad40dd32ce3a0bf3": {
+      "source_id": "US-AK:small_claims:49c3d9e5b154",
+      "authority_type": "court_rule",
+      "citation": "Alaska Dist. Ct. R. Civ. P. 10(a)",
+      "text": "(a) A small claim action is commenced by filing a complaint on the form provided by the Alaska court system. The complaint is a short, plain written statement showing the nature of the claim for relief, signed by the plaintiff. The complaint shall contain a statement that the plaintiff elects to have the claim treated as a small claim and waives the right to jury trial and the right to proceed formally. A complaint which does not contain a waiver of the right to jury trial and formal proceedings is governed by Part I of the District Court Rules of Civil Procedure. The plaintiff’s mailing address shall be shown on the complaint. In a debt collection case, the complaint must designate a person authorized to discuss the case on behalf of the plaintiff and include that person’s name, phone number, mailing address, and email address. When the complaint is based upon a written document, the document or a copy of it shall be attached to the complaint.",
+      "text_sha256": "4977e497036c6b21a9e1ac34c6ab24e8b7b5116877ea0ecaf7d6663e44a44fad",
+      "publisher_sha256": "49121b867dd56877a3154d98ce61972f30380c56a1ffe3ef07f922cc658c1721",
+      "retrieved_at": "2026-11-21T16:33:04.101771+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska District Court, small claims",
+      "publisher_member": "Alaska Court System District Court Rules, printed p. 3, Rule 10(a)"
     }
   },
   "fault_allocation": {

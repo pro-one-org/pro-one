@@ -23,6 +23,30 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_connecticut_periodic_wage_limit_exposes_tolling_without_generalizing_it(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Connecticut", legal_area="employment",
+                               topics=["wage_limitations"], authority_status="historical")
+        key, = provider.search(query)
+        text = provider.fetch(key).text
+        self.assertIn("employment payable periodically", text)
+        self.assertIn("tolled upon the filing with the Labor Commissioner", text)
+        self.assertFalse(provider.search(query.model_copy(update={"topics": ["wage_payment"]})))
+        self.assertFalse(provider.search(query.model_copy(update={"state": "Illinois"})))
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                  "authority_as_of": "2026-11-21"})))
+
+    def test_alaska_small_claim_election_does_not_supply_ordinary_commencement(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Alaska", legal_area="civil_procedure",
+                               court="Alaska District Court, small claims", topics=["small_claims"],
+                               authority_status="unresolved")
+        docs = {doc.source["citation"]["preferred_citation"]: doc.text
+                for doc in map(provider.fetch, provider.search(query))}
+        self.assertIn("When all parties elect small claims procedure", docs["Alaska Dist. Ct. R. Civ. P. 8(a)–(c)"])
+        self.assertIn("waives the right to jury trial", docs["Alaska Dist. Ct. R. Civ. P. 10(a)"])
+        self.assertFalse(provider.search(query.model_copy(update={"topics": ["commencement"]})))
+
     def test_partial_negligence_summary_uses_retained_passages_in_each_state(self):
         for scope, jurisdiction in registry().items():
             if jurisdiction.kind not in {"state", "district"}:
