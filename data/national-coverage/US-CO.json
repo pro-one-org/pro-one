@@ -441,6 +441,18 @@
         "retrieved_at": "2026-11-21T17:26:29.304547+00:00",
         "sha256": "ebd2fca201a0f76fbe7884de4ea7f640e91515c946a2cfd91f863ce3987b8e26"
       }
+    },
+    "US-CO:service_time_limit:c398bb1ef3ab": {
+      "category": "service_time_limit",
+      "title": "Colo. R. Civ. P. 4(m) (2023 compilation)",
+      "url": "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2023-court-rules.pdf",
+      "locator": "Colo. R. Civ. P. 4(m) (2023 compilation)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:46:19.362728+00:00",
+        "sha256": "07a0129954b015ff26ed4774e5979408d05631a78fff9967ee0a56f5622347e7"
+      }
     }
   },
   "court_directory": [
@@ -805,6 +817,20 @@
       "court": "Colorado courts of record",
       "publisher_member": "Colorado Supreme Court Rule Change 2008(5) p. 1, adopted Rule 4(h)(1)",
       "effective_from": "2008-02-07"
+    },
+    "7cbc78a91fb74a1e010676243393dc": {
+      "source_id": "US-CO:service_time_limit:c398bb1ef3ab",
+      "authority_type": "court_rule",
+      "citation": "Colo. R. Civ. P. 4(m) (2023 compilation)",
+      "text": "(m) Time Limit for Service. If a defendant is not served within 63 days (nine weeks) after the complaint is filed, the court—on motion or on its own after notice to the plaintiff—shall dismiss the action without prejudice against that defendant or order that service be made within a specified time. But if the plaintiff shows good cause for the failure, the court shall extend the time for service for an appropriate period. This subdivision (m) does not apply to service in a foreign country under rule 4(d).",
+      "text_sha256": "67b93f93b3f3a2aa71e505276e91c8386a839ffffb0742170b44f7119ee62f09",
+      "publisher_sha256": "07a0129954b015ff26ed4774e5979408d05631a78fff9967ee0a56f5622347e7",
+      "retrieved_at": "2026-11-18T20:46:19.362728+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Colorado Office of Legislative Legal Services 2023 court rules compilation",
+      "court": "Colorado courts of record governed by the Colorado Rules of Civil Procedure",
+      "publisher_member": "Colorado Office of Legislative Legal Services 2023 court rules compilation, PDF p. 30, Colo. R. Civ. P. 4(m) (2023 compilation), rule text only"
     }
   },
   "fault_allocation": {

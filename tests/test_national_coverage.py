@@ -76,13 +76,23 @@ class NationalCoverageTests(unittest.TestCase):
                                                                   "authority_as_of": "2026-11-21"})))
 
     def test_service_deadline_coverage_requires_timing_evidence(self):
-        colorado = coverage("US-CO")["cells"]
-        self.assertTrue(colorado["procedure.service"]["passage_selectors"])
-        self.assertFalse(colorado["deadlines.service"]["passage_selectors"])
+        georgia = coverage("US-GA")["cells"]
+        self.assertTrue(georgia["procedure.service"]["passage_selectors"])
+        self.assertFalse(georgia["deadlines.service"]["passage_selectors"])
         wyoming = coverage("US-WY")
         timing, = wyoming["cells"]["deadlines.service"]["passage_selectors"]
         self.assertIn("Time Limit for Service", wyoming["passages"][timing]["text"])
         self.assertNotIn(timing, wyoming["cells"]["procedure.service"]["passage_selectors"])
+
+    def test_delaware_service_deadline_certification_stays_with_its_court_and_edition(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Delaware", court="Delaware Court of Common Pleas",
+                               legal_area="civil_procedure", topics=["service_time_limit"],
+                               authority_status="current", authority_as_of="2023-01-10")
+        key, = provider.search(query)
+        self.assertIn("cannot show good cause", provider.fetch(key).text)
+        self.assertFalse(provider.search(query.model_copy(update={"court": "Delaware Superior Court"})))
+        self.assertFalse(provider.search(query.model_copy(update={"authority_as_of": "2023-01-11"})))
 
     def test_delaware_contract_limitations_keep_exceptions_and_account_accrual(self):
         provider = RetainedLegislativeResearch()

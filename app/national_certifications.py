@@ -58,12 +58,14 @@ DELAWARE_COMMON_PLEAS_DIGEST = "89f788cd80dae047959e9cc98e2a6fdf83c4ec7d51fc3391
 DELAWARE_COMMON_PLEAS_RULES = {
     "3(a)": (0, "Rule 3. Commencement of action.", "(a) Complaint and praecipe.", "(b) Omitted."),
     "4(a)": (1, "Rule 4. Process.", "(a) Issuance of writs.", "(b)"),
+    "4(j)": (5, "(i) Amendment of process.", "(j) Summons: Time limit for service.", "History."),
     "6(a)": (8, "Rule 6. Time.", "(a) Computation.", "(b)"),
     "8(a)": (9, "Rule 8. General rules of pleading.", "(a) Claims for relief.", "(b)"),
     "8(b)": (9, "Rule 8. General rules of pleading.", "(b) Defense; form of denials.", "(c)"),
     "12(a)": (12, "Rule 12. Defenses and objections", "(a) Time.", "(b)"),
 }
 DELAWARE_PDF_SPACING = {
+    "prejudi ce": "prejudice",
     " t herein": " therein", " especia lly": " especially", " w hich": " which",
     " th e Court": " the Court", " relief ,": " relief,", " third -party": " third-party",
     " deni ed": " denied", " th e averments": " the averments", " ord er": " order",

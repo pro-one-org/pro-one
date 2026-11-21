@@ -491,6 +491,30 @@
         "retrieved_at": "2026-11-21T17:31:04.137145+00:00",
         "sha256": "f3f43c732661bae2d3e9e280a270c110b1efa5aa66a7a751738b2a5cf9a01c38"
       }
+    },
+    "US-DE:service_time_limit:00c57368c115": {
+      "category": "service_time_limit",
+      "title": "Del. Super. Ct. Civ. R. 4(j) (Superior Court compilation)",
+      "url": "https://courts.delaware.gov/superior/pdf/civil_rules_2015.pdf",
+      "locator": "Del. Super. Ct. Civ. R. 4(j) (Superior Court compilation)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:34.638546+00:00",
+        "sha256": "05594a0eac48fee5aa00c28c1602b7d36976e4e0933758a4aefa6c97af59d49d"
+      }
+    },
+    "US-DE:service_time_limit:b4e44f0459fd": {
+      "category": "service_time_limit",
+      "title": "Del. Ct. Com. Pl. Civ. R. 4(j)",
+      "url": "https://courts.delaware.gov/forms/download.aspx?id=176248",
+      "locator": "Del. Ct. Com. Pl. Civ. R. 4(j)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:04:36.889247+00:00",
+        "sha256": "89f788cd80dae047959e9cc98e2a6fdf83c4ec7d51fc339198f9c2fd7f1fad7e"
+      }
     }
   },
   "court_directory": [
@@ -894,6 +918,36 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Publisher PDF p. 262, 10 Del. C. § 8108, statutory text"
+    },
+    "ddee3fc97c01eb7efda03ad3b3cb75": {
+      "source_id": "US-DE:service_time_limit:00c57368c115",
+      "authority_type": "court_rule",
+      "citation": "Del. Super. Ct. Civ. R. 4(j) (Superior Court compilation)",
+      "text": "(j) Summons: Time limit for service. -- If a service of the summons and complaint is not made upon a defendant within 120 days after the filing of the complaint and the party on whose behalf such service was required cannot show good cause why such service was not made within that period, the action shall be dismissed as to that defendant without prejudice upon the court's own initiative with notice to such party or upon motion.",
+      "text_sha256": "a32933223221b54d684b700b984991b5b0db28e58a491a362395330a28d48cd4",
+      "publisher_sha256": "05594a0eac48fee5aa00c28c1602b7d36976e4e0933758a4aefa6c97af59d49d",
+      "retrieved_at": "2026-11-18T20:45:34.638546+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Delaware Superior Court civil rules publication titled civil_rules_2015",
+      "court": "Delaware Superior Court",
+      "publisher_member": "Delaware Superior Court civil rules publication titled civil_rules_2015, PDF p. 7, Del. Super. Ct. Civ. R. 4(j) (Superior Court compilation), rule text only"
+    },
+    "0c9b40614ecd34f558304ca8daad1d": {
+      "source_id": "US-DE:service_time_limit:b4e44f0459fd",
+      "authority_type": "court_rule",
+      "citation": "Del. Ct. Com. Pl. Civ. R. 4(j)",
+      "text": "(j) Summons: Time limit for service. If a service of the summons and complaint is not made upon a defendant within 120 days after the filing of the complaint and the party on whose behalf such service was required cannot show good cause why such service was not made within that period, the action shall be dismissed as to that defendant without prejudice upon the court’s own initiative with notice to such party or upon motion.",
+      "text_sha256": "67814043517a5098150f516ad80a874ac08fc38da7fdb8db7e72e9a7b7e740ac",
+      "publisher_sha256": "89f788cd80dae047959e9cc98e2a6fdf83c4ec7d51fc339198f9c2fd7f1fad7e",
+      "retrieved_at": "2026-11-20T23:04:36.889247+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Delaware Court of Common Pleas",
+      "current_as_of": "2023-01-10",
+      "publisher_path": "cef6dd44e36af0920ab0fb259f0eac247d7390a857853b4d19ce5de3ec674120",
+      "edition": "Court of Common Pleas Civil Rules. Current as of January 10, 2023.",
+      "publisher_member": "Court of Common Pleas civil rules PDF p. 6, Rule 4(j)"
     }
   },
   "fault_allocation": {

@@ -552,6 +552,18 @@
         "retrieved_at": "2026-11-21T21:58:24.975636+00:00",
         "sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb"
       }
+    },
+    "US-AK:service_time_limit:d294f36c8897": {
+      "category": "service_time_limit",
+      "title": "Alaska R. Civ. P. 4(j), court rules compilation",
+      "url": "https://courts.alaska.gov/rules/docs/civ.pdf",
+      "locator": "Alaska R. Civ. P. 4(j), court rules compilation",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:45.439868+00:00",
+        "sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb"
+      }
     }
   },
   "court_directory": [
@@ -888,6 +900,20 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Publisher PDF p. 419, Alaska Stat. § 45.50.501(a), statutory text"
+    },
+    "5d054eb7e28392e8faf28003beda65": {
+      "source_id": "US-AK:service_time_limit:d294f36c8897",
+      "authority_type": "court_rule",
+      "citation": "Alaska R. Civ. P. 4(j), court rules compilation",
+      "text": "(j) Summons—Time Limit for Service. The clerk shall review each pending case 120 days after filing of the complaint to determine whether all defendants have been served. If any defendant has not been served, the clerk shall send notice to the plaintiff to show good cause in writing why service on that defendant is not complete. If good cause is not shown within 30 days after distribution of the notice, the court shall dismiss without prejudice the action as to that defendant. The clerk may enter the dismissal if the plaintiff has not opposed dismissal. If the court finds good cause why service has not been made, the court shall establish a new deadline by which plaintiff must file proof of service or proof that plaintiff has made diligent efforts to serve.",
+      "text_sha256": "19145ef6d6c6a7234d3b82b8ebbf54518e9876f07398ff800caa4dc03fa264b7",
+      "publisher_sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb",
+      "retrieved_at": "2026-11-18T20:45:45.439868+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Alaska Court System civil rules compilation retained in November 2026",
+      "court": "Alaska courts governed by the Alaska Rules of Civil Procedure",
+      "publisher_member": "Alaska Court System civil rules compilation retained in November 2026, PDF p. 22, Alaska R. Civ. P. 4(j), court rules compilation, rule text only"
     }
   },
   "fault_allocation": {

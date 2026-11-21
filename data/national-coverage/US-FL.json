@@ -517,6 +517,18 @@
         "retrieved_at": "2026-11-21T16:38:28.344420+00:00",
         "sha256": "339274bbeab2fe5955d076c36d40e0ab996576dd42745f2722bf5fe124efc8c7"
       }
+    },
+    "US-FL:service_time_limit:fae54a476ed3": {
+      "category": "service_time_limit",
+      "title": "Fla. R. Civ. P. 1.070(j) (August 2024 ed.)",
+      "url": "https://web.archive.org/web/20251024180332id_/https://www-media.floridabar.org/uploads/2024/08/Civil-Procedure-Rules-08-29-24.pdf",
+      "locator": "Fla. R. Civ. P. 1.070(j) (August 2024 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:08.739297+00:00",
+        "sha256": "1f1ea731fb2fed59ffaadf57f70a7da85881828d1b7b61b76cf7be7b3574da76"
+      }
     }
   },
   "court_directory": [
@@ -907,6 +919,20 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Florida Legislature Online Sunshine, 2026 Florida Statutes, § 501.211(2)"
+    },
+    "374bea972214350036fe8f613b4838": {
+      "source_id": "US-FL:service_time_limit:fae54a476ed3",
+      "authority_type": "court_rule",
+      "citation": "Fla. R. Civ. P. 1.070(j) (August 2024 ed.)",
+      "text": "(j) Summons; Time Limit. If service of the initial process and initial pleading is not made on a defendant within 120 days after filing of the initial pleading directed to that defendant the court, on its own initiative after notice or on motion, must direct that service be effected within a specified time or must dismiss the action without prejudice or drop that defendant as a party; provided that if the plaintiff shows good cause or excusable neglect for the failure, the court must extend the time for service for an appropriate period. When a motion for leave to amend with the attached proposed amended complaint is filed, the 120-day period for service of amended complaints on the new party or parties will begin on the entry of an order granting leave to amend. A dismissal under this subdivision will not be considered a voluntary dismissal or operate as an adjudication on the merits under rule 1.420(a)(1).",
+      "text_sha256": "0fd7bb07aed2d797c900d2c0476afdf43f1c47db3739b0d0bb58d37eb3ae49b3",
+      "publisher_sha256": "1f1ea731fb2fed59ffaadf57f70a7da85881828d1b7b61b76cf7be7b3574da76",
+      "retrieved_at": "2026-11-21T16:33:08.739297+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Florida Bar civil rules publication, August 29, 2024",
+      "court": "Florida Circuit and County Courts governed by the Florida Rules of Civil Procedure",
+      "publisher_member": "Florida Bar civil rules publication, August 29, 2024, PDF p. 25, Fla. R. Civ. P. 1.070(j) (August 2024 ed.), rule text only"
     }
   },
   "fault_allocation": {

@@ -512,6 +512,18 @@
         "retrieved_at": "2026-11-21T17:01:00.3116239+00:00",
         "sha256": "e2ca8befd153fa48d48053a8426d8aa6ad0d3392315fa4d6cec9e6e5154bf819"
       }
+    },
+    "US-OH:service_time_limit:db28c0755d9a": {
+      "category": "service_time_limit",
+      "title": "Ohio Civ. R. 4(E) (July 2026 ed.)",
+      "url": "https://www.supremecourt.ohio.gov/docs/LegalResources/Rules/civil/CivilProcedure.pdf",
+      "locator": "Ohio Civ. R. 4(E) (July 2026 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:46:32.705237+00:00",
+        "sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040"
+      }
     }
   },
   "court_directory": [
@@ -985,6 +997,20 @@
       "language": "en",
       "publisher_member": "Ohio Legislative Service Commission authenticated PDF, section 4113.15(B)",
       "effective_from": "2019-03-20"
+    },
+    "cc649819b056ffc551ba7cc9b903c3": {
+      "source_id": "US-OH:service_time_limit:db28c0755d9a",
+      "authority_type": "court_rule",
+      "citation": "Ohio Civ. R. 4(E) (July 2026 ed.)",
+      "text": "(E) Summons: time limit for service If a service of the summons and complaint is not made upon a defendant within six months after the filing of the complaint and the party on whose behalf such service was required cannot show good cause why such service was not made within that period, the action shall be dismissed as to that defendant without prejudice upon the court's own initiative with notice to such party or upon motion. This division shall not apply to out-of-state service pursuant to Rule 4.3 or to service in a foreign country pursuant to Rule 4.5.",
+      "text_sha256": "b5c6b8f125339ec3bb6c09fcb915cfaebf06eec831e52b8fb51949aeda62483c",
+      "publisher_sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040",
+      "retrieved_at": "2026-11-18T20:46:32.705237+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Supreme Court of Ohio civil rules publication, July 2026 edition",
+      "court": "Ohio courts governed by the Ohio Rules of Civil Procedure",
+      "publisher_member": "Supreme Court of Ohio civil rules publication, July 2026 edition, PDF p. 16, Ohio Civ. R. 4(E) (July 2026 ed.), rule text only"
     }
   },
   "fault_allocation": {

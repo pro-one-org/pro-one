@@ -336,6 +336,18 @@
         "retrieved_at": "2026-11-20T18:16:58.771385+00:00",
         "sha256": "022194c52c2c51ff885f5dba4d43af7789052509f43c7295713d2c57064c64a8"
       }
+    },
+    "US-AZ:service_time_limit:ae596ea0c3b7": {
+      "category": "service_time_limit",
+      "title": "Ariz. R. Civ. P. 4(i) (R-16-0010)",
+      "url": "https://www.azcourts.gov/Portals/0/20/2016%20Rules/R-16-0010.pdf",
+      "locator": "Ariz. R. Civ. P. 4(i) (R-16-0010)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:33.808787+00:00",
+        "sha256": "022194c52c2c51ff885f5dba4d43af7789052509f43c7295713d2c57064c64a8"
+      }
     }
   },
   "court_directory": [
@@ -604,6 +616,21 @@
       "language": "en",
       "edition": "Arizona Supreme Court Order R-16-0010 (effective January 1, 2017)",
       "court": "Arizona superior courts",
+      "effective_from": "2017-01-01"
+    },
+    "911b3fbd215599bcf8c5e87d42812b": {
+      "source_id": "US-AZ:service_time_limit:ae596ea0c3b7",
+      "authority_type": "court_rule",
+      "citation": "Ariz. R. Civ. P. 4(i) (R-16-0010)",
+      "text": "(i) Time Limit for Service. If a defendant is not served with process within 90 days after the complaint is filed, the court—on motion, or on its own after notice to the plaintiff—must dismiss the action without prejudice against that defendant or order that service be made within a specified time. But if the plaintiff shows good cause for the failure, the court must extend the time for service for an appropriate period. This Rule 4(i) does not apply to service in a foreign country under Rules 4.2(i), (j), (k), and (l).",
+      "text_sha256": "c74792c85f4f03ffb8bf73bab1e65f06c059f629432e9ce173e6901a3dc122d2",
+      "publisher_sha256": "022194c52c2c51ff885f5dba4d43af7789052509f43c7295713d2c57064c64a8",
+      "retrieved_at": "2026-11-18T20:45:33.808787+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arizona Supreme Court order R-16-0010, filed September 2, 2016",
+      "court": "Arizona courts governed by the Arizona Rules of Civil Procedure",
+      "publisher_member": "Arizona Supreme Court order R-16-0010, filed September 2, 2016, PDF p. 38, Ariz. R. Civ. P. 4(i) (R-16-0010), rule text only",
       "effective_from": "2017-01-01"
     }
   },
