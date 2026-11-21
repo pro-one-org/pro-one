@@ -118,7 +118,12 @@
         "retrieved_at": "2026-11-17T19:34:00.264789+00:00",
         "http_status": "200",
         "sha256": "d0f5d9642a11b0eca27a42ce6899cc1b4ec4c65dd9ec106e4f0660b90be81c5b",
-        "health": "healthy"
+        "health": "healthy",
+        "corroborating_publisher": {
+          "url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/23/2305/2305.06/9-23-2026/2305.06-9-23-2026.pdf",
+          "sha256": "04355a7702a3eaa7ce7725079783948725906ad6bfd3ddc8a6731ee5c86e2434",
+          "checked_at": "2026-11-21T16:58:33.347078+00:00"
+        }
       }
     },
     "US-OH:oral_contract_limitations:a2186f17fd1b": {
@@ -132,7 +137,12 @@
         "retrieved_at": "2026-11-17T19:34:00.298855+00:00",
         "http_status": "200",
         "sha256": "856e6db30a16555cc100fc2ba187d93cb5c34f533d64771966b551fa49942bee",
-        "health": "healthy"
+        "health": "healthy",
+        "corroborating_publisher": {
+          "url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/23/2305/2305.07/6-16-2021/2305.07-6-16-2021.pdf",
+          "sha256": "31108036e62d508b917b799c114e08e5e5c3db6c53f58467ef14c9d3df2e826b",
+          "checked_at": "2026-11-21T17:00:58.7932873+00:00"
+        }
       }
     },
     "US-OH:small_claims:006993e965e3": {
@@ -346,6 +356,162 @@
         "retrieved_at": "2026-11-20T17:26:27.175815+00:00",
         "sha256": "96b7b83e0b0c4a1e766c4bab196913272131d3017bad1882d6d12e0a3cc02648"
       }
+    },
+    "US-OH:venue:0ea3de9da859": {
+      "category": "venue",
+      "title": "Ohio Civ. R. 3(C) (July 2026 ed.)",
+      "url": "https://www.supremecourt.ohio.gov/docs/LegalResources/Rules/civil/CivilProcedure.pdf",
+      "locator": "Ohio Civ. R. 3(C) (July 2026 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:00:49.4665743+00:00",
+        "sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040"
+      }
+    },
+    "US-OH:summons_issuance:d6e9e8524e63": {
+      "category": "summons_issuance",
+      "title": "Ohio Civ. R. 4(A)–(B) (July 2026 ed.)",
+      "url": "https://www.supremecourt.ohio.gov/docs/LegalResources/Rules/civil/CivilProcedure.pdf",
+      "locator": "Ohio Civ. R. 4(A)–(B) (July 2026 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:00:49.4665743+00:00",
+        "sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040"
+      }
+    },
+    "US-OH:service:9c7a679670af": {
+      "category": "service",
+      "title": "Ohio Civ. R. 4.1(B) (July 2026 ed.)",
+      "url": "https://www.supremecourt.ohio.gov/docs/LegalResources/Rules/civil/CivilProcedure.pdf",
+      "locator": "Ohio Civ. R. 4.1(B) (July 2026 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:00:49.4665743+00:00",
+        "sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040"
+      }
+    },
+    "US-OH:service:3040ffb7de4d": {
+      "category": "service",
+      "title": "Ohio Civ. R. 4.1(C) (July 2026 ed.)",
+      "url": "https://www.supremecourt.ohio.gov/docs/LegalResources/Rules/civil/CivilProcedure.pdf",
+      "locator": "Ohio Civ. R. 4.1(C) (July 2026 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:00:49.4665743+00:00",
+        "sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040"
+      }
+    },
+    "US-OH:calendar:896b24c477d0": {
+      "category": "calendar",
+      "title": "Ohio Civ. R. 6(A) (July 2026 ed.)",
+      "url": "https://www.supremecourt.ohio.gov/docs/LegalResources/Rules/civil/CivilProcedure.pdf",
+      "locator": "Ohio Civ. R. 6(A) (July 2026 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:00:49.4665743+00:00",
+        "sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040"
+      }
+    },
+    "US-OH:postmotion_response:8c97245f1c96": {
+      "category": "postmotion_response",
+      "title": "Ohio Civ. R. 12(A)(2) (July 2026 ed.)",
+      "url": "https://www.supremecourt.ohio.gov/docs/LegalResources/Rules/civil/CivilProcedure.pdf",
+      "locator": "Ohio Civ. R. 12(A)(2) (July 2026 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:00:49.4665743+00:00",
+        "sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040"
+      }
+    },
+    "US-OH:written_contract_limitations:e9cab07c0ba8": {
+      "category": "written_contract_limitations",
+      "title": "Ohio Rev. Code § 2305.06",
+      "url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/23/2305/2305.06/6-16-2021/2305.06-6-16-2021.pdf",
+      "locator": "Ohio Rev. Code § 2305.06",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:00:58.4778614+00:00",
+        "sha256": "c230106a5e3a93aadb205ddb637b4958bbfee1c55503c9cbf9ee08cbd7e3ae9a"
+      }
+    },
+    "US-OH:debt_limitations:aafe9c6b9f83": {
+      "category": "debt_limitations",
+      "title": "Ohio Rev. Code § 2305.07(C)",
+      "url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/23/2305/2305.07/6-16-2021/2305.07-6-16-2021.pdf",
+      "locator": "Ohio Rev. Code § 2305.07(C)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:00:58.7932873+00:00",
+        "sha256": "31108036e62d508b917b799c114e08e5e5c3db6c53f58467ef14c9d3df2e826b"
+      }
+    },
+    "US-OH:consumer_private_action:4a030f873fed": {
+      "category": "consumer_private_action",
+      "title": "Ohio Rev. Code § 1345.09 introductory text and (A)",
+      "url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/13/1345/1345.09/7-3-2012/1345.09-7-3-2012.pdf",
+      "locator": "Ohio Rev. Code § 1345.09 introductory text and (A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:00:59.1991357+00:00",
+        "sha256": "484e2f0dff53d76afd3ec02dcec344d833f56cac0ad2d5dc7b83073d986e8949"
+      }
+    },
+    "US-OH:consumer_remedies:3f3fa42e7e3a": {
+      "category": "consumer_remedies",
+      "title": "Ohio Rev. Code § 1345.09(B)",
+      "url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/13/1345/1345.09/7-3-2012/1345.09-7-3-2012.pdf",
+      "locator": "Ohio Rev. Code § 1345.09(B)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:00:59.1991357+00:00",
+        "sha256": "484e2f0dff53d76afd3ec02dcec344d833f56cac0ad2d5dc7b83073d986e8949"
+      }
+    },
+    "US-OH:wrongful_death_limitations:f49a15dcf2cb": {
+      "category": "wrongful_death_limitations",
+      "title": "Ohio Rev. Code § 2125.02(F)(1)",
+      "url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/21/2125/2125.02/4-4-2023/2125.02-4-4-2023.pdf",
+      "locator": "Ohio Rev. Code § 2125.02(F)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:00:59.5385661+00:00",
+        "sha256": "7f581dbc6b21eb9a08a7db17cfb7ece22fb8acfcb606afc34b8361c3e7fb3474"
+      }
+    },
+    "US-OH:habitability:d724937197ea": {
+      "category": "habitability",
+      "title": "Ohio Rev. Code § 5321.04(A)(1)–(6)",
+      "url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/53/5321/5321.04/9-28-2012/5321.04-9-28-2012.pdf",
+      "locator": "Ohio Rev. Code § 5321.04(A)(1)–(6)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:00:59.8706546+00:00",
+        "sha256": "f7f7af37d78a4a3f925150fc2eea8d4898487f311c3728e2aaee6d6202fa91cf"
+      }
+    },
+    "US-OH:wage_enforcement:5ea9f6f309f7": {
+      "category": "wage_enforcement",
+      "title": "Ohio Rev. Code § 4113.15(B)",
+      "url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/41/4113/4113.15/3-20-2019/4113.15-3-20-2019.pdf",
+      "locator": "Ohio Rev. Code § 4113.15(B)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:01:00.3116239+00:00",
+        "sha256": "e2ca8befd153fa48d48053a8426d8aa6ad0d3392315fa4d6cec9e6e5154bf819"
+      }
     }
   },
   "court_directory": [
@@ -457,7 +623,8 @@
       "publisher_sha256": "d0f5d9642a11b0eca27a42ce6899cc1b4ec4c65dd9ec106e4f0660b90be81c5b",
       "retrieved_at": "2026-11-17T19:34:00.264789+00:00",
       "language": "en",
-      "currentness": "unresolved"
+      "currentness": "unresolved",
+      "effective_from": "2026-09-23"
     },
     "77663923be03ddba281c6124afdddc": {
       "citation": "Ohio Rev. Code § 2305.07",
@@ -468,7 +635,8 @@
       "publisher_sha256": "856e6db30a16555cc100fc2ba187d93cb5c34f533d64771966b551fa49942bee",
       "retrieved_at": "2026-11-17T19:34:00.298855+00:00",
       "language": "en",
-      "currentness": "unresolved"
+      "currentness": "unresolved",
+      "effective_from": "2021-06-16"
     },
     "30aa1a685232be390fb6ccca94da19": {
       "citation": "Ohio Rev. Code § 2315.33",
@@ -640,6 +808,183 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "2018-03-23"
+    },
+    "f03d0ac4b3e06c903f63d5a582f7b8": {
+      "source_id": "US-OH:venue:0ea3de9da859",
+      "authority_type": "court_rule",
+      "citation": "Ohio Civ. R. 3(C) (July 2026 ed.)",
+      "text": "(C) Venue: where proper Any action may be venued, commenced, and decided in any court in any county. When applied to county and municipal courts, “county,” as used in this rule, shall be construed, where appropriate, as the territorial limits of those courts. Proper venue lies in any one or more of the following counties: (1) The county in which the defendant resides; (2) The county in which the defendant has his or her principal place of business; (3) A county in which the defendant conducted activity that gave rise to the claim for relief; (4) A county in which a public officer maintains his or her principal office if suit is brought against the officer in the officer’s official capacity; (5) A county in which the property, or any part of the property, is situated if the subject of the action is real property or tangible personal property; (6) The county in which all or part of the claim for relief arose; or, if the claim for relief arose upon a river, other watercourse, or a road, that is the boundary of the state, or of two or more counties, in any county bordering on the river, watercourse, or road, and opposite to the place where the claim for relief arose; (7) In actions described in Civ.R. 4.3, in the county where plaintiff resides; (8) In an action against an executor, administrator, guardian, or trustee, in the county in which the executor, administrator, guardian, or trustee was appointed; (9) In actions for divorce, annulment, or legal separation, in the county in which the plaintiff is and has been a resident for at least ninety days immediately preceding the filing of the complaint; (10) In actions for a civil protection order, in the county in which the petitioner currently or temporarily resides; (11) In tort actions involving asbestos claims, silicosis claims, or mixed dust disease claims, only in the county in which all of the exposed plaintiffs reside, a county where all of the exposed plaintiffs were exposed to asbestos, silica, or mixed dust, or the county in which the defendant has his or her principal place of business. (12) If there is no available forum in divisions (C)(1) to (C)(10) of this rule, in the county in which plaintiff resides, has his or her principal place of business, or regularly and systematically conducts business activity; (13) If there is no available forum in divisions (C)(1) to (C)(11) of this rule: (a) In a county in which defendant has property or debts owing to the defendant subject to attachment or garnishment; (b) In a county in which defendant has appointed an agent to receive service of process or in which an agent has been appointed by operation of law.",
+      "text_sha256": "d37f6227fa49a577171bfcb1463e4242f063f404242d0f8f51e12dc51a75cd6e",
+      "publisher_sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040",
+      "retrieved_at": "2026-11-21T17:00:49.4665743+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Ohio Supreme Court Rules of Civil Procedure, July 1, 2026 edition",
+      "court": "Ohio courts governed by the Ohio Rules of Civil Procedure",
+      "publisher_member": "Ohio Supreme Court rules PDF edition linked in the court index, pages 8–9, rule 3(C)"
+    },
+    "bedfccb03b5eabcba8bb3a4550ca7a": {
+      "source_id": "US-OH:summons_issuance:d6e9e8524e63",
+      "authority_type": "court_rule",
+      "citation": "Ohio Civ. R. 4(A)–(B) (July 2026 ed.)",
+      "text": "(A) Summons: issuance Upon the filing of the complaint the clerk shall forthwith issue a summons for service upon each defendant listed in the caption. Upon request of the plaintiff separate or additional summons shall issue at any time against any defendant. (B) Summons: form; copy of complaint The summons shall be signed by the clerk, contain the name and address of the court and the names and addresses of the parties, be directed to the defendant, state the name and address of the plaintiff's attorney, if any, otherwise the plaintiff's address, and the times within which these rules or any statutory provision require the defendant to appear and defend, and shall notify the defendant that in case of failure to do so, judgment by default will be rendered against the defendant for the relief demanded in the complaint. Where there are multiple plaintiffs or multiple defendants, or both, the summons may contain, in lieu of the names and addresses of all parties, the name of the first party on each side and the name and address of the party to be served. A copy of the complaint shall be attached to each summons. The plaintiff shall furnish the clerk with sufficient copies.",
+      "text_sha256": "d67a4f195a44f25354b09cca51e76102c4b15b3a94f3a55bbe47cd61a658ce0c",
+      "publisher_sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040",
+      "retrieved_at": "2026-11-21T17:00:49.4665743+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Ohio Supreme Court Rules of Civil Procedure, July 1, 2026 edition",
+      "court": "Ohio courts governed by the Ohio Rules of Civil Procedure",
+      "publisher_member": "Ohio Supreme Court rules PDF edition linked in the court index, pages 15–15, rule 4(A)–(B)"
+    },
+    "405eed524987e273e3335a207e7db6": {
+      "source_id": "US-OH:service:9c7a679670af",
+      "authority_type": "court_rule",
+      "citation": "Ohio Civ. R. 4.1(B) (July 2026 ed.)",
+      "text": "(B) Personal service When the plaintiff files a written request with the clerk for personal service, service of process shall be made by that method. (1) Civil process server; general When process issued from the Supreme Court, a court of appeals, a court of common pleas, or a county court is to be served personally under this division, the clerk of the court shall deliver the process and sufficient copies of the process and complaint, or other document to be served, to the sheriff of the county in which the party to be served resides or may be found. When process issues from the municipal court, delivery shall be to the bailiff of the court for service on all defendants who reside or m ay be found within the county or counties in which that court has territorial jurisdiction and to the sheriff of any other county in this state for service upon a defendant who resides in or may be found in that other county. In the alternative, process issuing from any of these courts may be delivered by the clerk to a person designated by court order to serve civil process under division (E) of this rule. (2) Civil process server; procedure (a) The person serving process shall locate the person to be served and shall tender a copy of the process and accompanying documents to the person to be served. When the copy of the process has been served, the person serving process shall endorse that fact on the process and return it to the clerk, who shall make the appropriate entry on the appearance docket. (b) When the person serving process is unable to serve a copy of the process within twenty-eight days, the person shall endorse that fact and the reasons therefor on the process and return the process and copies to the clerk who shall make the appropriate entry on the appearance docket. In the event of failure of service, the clerk shall follow the notification procedure set forth in division (A)(2) of this rule. Failure to make service within the twenty-eight-day period and failure to make proof of service do not affect the validity of the service.",
+      "text_sha256": "2f4b693f4467a114bb60aae866f4a646fb4d4c196051e61d12a7d1920c35b6f5",
+      "publisher_sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040",
+      "retrieved_at": "2026-11-21T17:00:49.4665743+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Ohio Supreme Court Rules of Civil Procedure, July 1, 2026 edition",
+      "court": "Ohio courts governed by the Ohio Rules of Civil Procedure",
+      "publisher_member": "Ohio Supreme Court rules PDF edition linked in the court index, pages 18–19, rule 4.1(B)"
+    },
+    "0cf441108e1e7dac19ea29ec5190fe": {
+      "source_id": "US-OH:service:3040ffb7de4d",
+      "authority_type": "court_rule",
+      "citation": "Ohio Civ. R. 4.1(C) (July 2026 ed.)",
+      "text": "(C) Residence service When the plaintiff files a written request with the clerk for residence service, service of process shall be made by that method. (1) Civil process server; general When process is to be served under this division, deliver the process and sufficient copies of the process and complaint, or other document to be served, to the sheriff of the county in which the party to be served resides or may be found. When process issues from the municipal court, delivery shall be to the bailiff of the court for service on all defendants who reside or may be found within the county or counties in which that court has territorial jurisdiction and to the sheriff of any other county in this state for service upon a defendant who resides in or may be found in that county. In the alternative, process may be delivered by the clerk to a person designated by court order to serve civil process under division (E) of this rule. (2) Civil process server; procedure (a) The person serving process shall effect service by leaving a copy of the process and the complaint, or other document to be served, at the usual place of residence of the person to be served with some person of suitable age and discretion then residing therein. When the copy of the process has been served, the person serving process shall endorse that fact on the process and return it to the clerk, who shall make the appropriate entry on the appearance docket. (b) When the person serving process is unable to serve a copy of the process within twenty-eight days, the person shall endorse that fact and the reasons therefor on the process, and return the process and copies to the clerk, who shall make the appropriate entry on the appearance docket. In the event of failure of service, the clerk shall follow the notification procedure set forth in division (A)(2) of this rule. Failure to make service within the twenty-eight-day period and failure to make proof of service do not affect the validity of service.",
+      "text_sha256": "10b0e3f46844c38f0a3e9c8bb195c06599c99efab46a3c99c0ad9cfac32dc418",
+      "publisher_sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040",
+      "retrieved_at": "2026-11-21T17:00:49.4665743+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Ohio Supreme Court Rules of Civil Procedure, July 1, 2026 edition",
+      "court": "Ohio courts governed by the Ohio Rules of Civil Procedure",
+      "publisher_member": "Ohio Supreme Court rules PDF edition linked in the court index, pages 19–19, rule 4.1(C)"
+    },
+    "9fa922015c433ac3aaa0a35fdf3481": {
+      "source_id": "US-OH:calendar:896b24c477d0",
+      "authority_type": "court_rule",
+      "citation": "Ohio Civ. R. 6(A) (July 2026 ed.)",
+      "text": "(A) Time: computation In computing any period of time prescribed or allowed by these rules, by the local rules of any court, by order of court, or by any applicable statute, the day of the act, event, or default from which the designated period of time begins to run shall not be included. The last day of the period so computed shall be included, unless it is a Saturday, a Sunday, or a legal holiday, in which event the period runs until the end of the next day which is not a Saturday, a Sunday, or a legal holiday. When the period of time prescribed or allowed is less than seven days, intermediate Saturdays, Sundays, and legal holidays shall be excluded in the computation. When a public office in which an act, required by law, rule, or order of court, is to be performed is closed to the public for the entire day which constitutes the last day for doing such an act, or before its usual closing time on such day, then such act may be performed on the next succeeding day which is not a Saturday, a Sunday, or a legal holiday.",
+      "text_sha256": "240e2c2fb84ae68a9e3a952d53363725ce4b31e5ef941504d352c4aa9a247340",
+      "publisher_sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040",
+      "retrieved_at": "2026-11-21T17:00:49.4665743+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Ohio Supreme Court Rules of Civil Procedure, July 1, 2026 edition",
+      "court": "Ohio courts governed by the Ohio Rules of Civil Procedure",
+      "publisher_member": "Ohio Supreme Court rules PDF edition linked in the court index, pages 49–49, rule 6(A)"
+    },
+    "d081b207a3fdd90cf67b0350564ed1": {
+      "source_id": "US-OH:postmotion_response:8c97245f1c96",
+      "authority_type": "court_rule",
+      "citation": "Ohio Civ. R. 12(A)(2) (July 2026 ed.)",
+      "text": "(2) Other responses and motions A party served with a pleading stating a cross-claim against him shall serve an answer thereto within twenty-eight days after the service upon him. The plaintiff shall serve his reply to a counterclaim in the answer within twenty-eight days after service of the answer or, if a reply is ordered by the court, within twenty-eight days after service of the order, unless the order otherwise directs. The service of a motion permitted under this rule alters these periods of time as follows, unless a different time is fixed by order of the court: (a) if the court denies the motion, a responsive pleading, delayed because of service of the motion, shall be served within fourteen days after notice of the court's action; (b) if the court grants a motion, a responsive pleading, delayed because of service of the motion, shall be served within fourteen days after service of the pleading which complies with the court's order.",
+      "text_sha256": "5ca3c8d3650aac8473d1b7e1d5f94ce0a620744d858f98864a75d0c691a1389b",
+      "publisher_sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040",
+      "retrieved_at": "2026-11-21T17:00:49.4665743+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Ohio Supreme Court Rules of Civil Procedure, July 1, 2026 edition",
+      "court": "Ohio courts governed by the Ohio Rules of Civil Procedure",
+      "publisher_member": "Ohio Supreme Court rules PDF edition linked in the court index, pages 66–66, rule 12(A)(2)"
+    },
+    "7bce0fccf313a08210e155d0f74d3b": {
+      "source_id": "US-OH:written_contract_limitations:e9cab07c0ba8",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 2305.06",
+      "text": "Except as provided in sections 126.301, 1302.98, 1303.16, 1345.10, and 2305.04 of the Revised Code, an action upon a specialty or an agreement, contract, or promise in writing shall be brought within six years after the cause of action accrued.",
+      "text_sha256": "109c74ff2481cfe512ca252de26125ce4becbd414c388fe4a26fcfc0a148a577",
+      "publisher_sha256": "c230106a5e3a93aadb205ddb637b4958bbfee1c55503c9cbf9ee08cbd7e3ae9a",
+      "retrieved_at": "2026-11-21T17:00:58.4778614+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Ohio authenticated statute edition effective June 16, 2021",
+      "publisher_member": "Ohio Legislative Service Commission authenticated PDF, section 2305.06",
+      "effective_from": "2021-06-16",
+      "effective_until": "2026-09-23"
+    },
+    "4ff0202490c6418374c4ad1ff108e5": {
+      "source_id": "US-OH:debt_limitations:aafe9c6b9f83",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 2305.07(C)",
+      "text": "(C) Except as provided in sections 1303.16, 1345.10, and 2305.04 of the Revised Code, and notwithstanding divisions (A) and (B) of this section, section 1302.98, and division (B) of section 2305.03 of the Revised Code, an action arising out of a consumer transaction incurred primarily for personal, family, or household purposes, based upon any contract, agreement, obligation, liability, or promise, express or implied, including an account stated, whether or not reduced to writing or signed by the party to be charged by that transaction, shall be commenced within six years after the cause of action accrued. For purposes of this division, a cause of action accrues thirty calendar days after the date of the last charge or payment by, or on behalf of, the consumer, whichever is later.",
+      "text_sha256": "84a8e88dc476b67364d8bd35abc64d0fe7232ec91aa6091ee816543301ada741",
+      "publisher_sha256": "31108036e62d508b917b799c114e08e5e5c3db6c53f58467ef14c9d3df2e826b",
+      "retrieved_at": "2026-11-21T17:00:58.7932873+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Ohio Legislative Service Commission authenticated PDF, section 2305.07(C)",
+      "effective_from": "2021-06-16"
+    },
+    "70d2db88db7e7515ad866c2f155f04": {
+      "source_id": "US-OH:consumer_private_action:4a030f873fed",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 1345.09 introductory text and (A)",
+      "text": "For a violation of Chapter 1345. of the Revised Code, a consumer has a cause of action and is entitled to relief as follows: (A) Where the violation was an act prohibited by section 1345.02, 1345.03, or 1345.031 of the Revised Code, the consumer may, in an individual action, rescind the transaction or recover the consumer's actual economic damages plus an amount not exceeding five thousand dollars in noneconomic damages.",
+      "text_sha256": "15ca2c6859abb558c6c1dae9eebc6c9a1c4cf418b3447608970bed40a8f7694f",
+      "publisher_sha256": "484e2f0dff53d76afd3ec02dcec344d833f56cac0ad2d5dc7b83073d986e8949",
+      "retrieved_at": "2026-11-21T17:00:59.1991357+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Ohio Legislative Service Commission authenticated PDF, section 1345.09 introductory text and (A)",
+      "effective_from": "2012-07-03"
+    },
+    "a8ba8d61f397fa9888b86e79477855": {
+      "source_id": "US-OH:consumer_remedies:3f3fa42e7e3a",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 1345.09(B)",
+      "text": "(B) Where the violation was an act or practice declared to be deceptive or unconscionable by rule adopted under division (B)(2) of section 1345.05 of the Revised Code before the consumer transaction on which the action is based, or an act or practice determined by a court of this state to violate section 1345.02, 1345.03, or 1345.031 of the Revised Code and committed after the decision containing the determination has been made available for public inspection under division (A)(3) of section 1345.05 of the Revised Code, the consumer may rescind the transaction or recover, but not in a class action, three times the amount of the consumer's actual economic damages or two hundred dollars, whichever is greater, plus an amount not exceeding five thousand dollars in noneconomic damages or recover damages or other appropriate relief in a class action under Civil Rule 23, as amended.",
+      "text_sha256": "a5b48fe01f9f5d06bf518b96af35e31dce980fef049533dc329cfa093d9c8b21",
+      "publisher_sha256": "484e2f0dff53d76afd3ec02dcec344d833f56cac0ad2d5dc7b83073d986e8949",
+      "retrieved_at": "2026-11-21T17:00:59.1991357+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Ohio Legislative Service Commission authenticated PDF, section 1345.09(B)",
+      "effective_from": "2012-07-03"
+    },
+    "e6a806a8ebf9de48f41a21759564f9": {
+      "source_id": "US-OH:wrongful_death_limitations:f49a15dcf2cb",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 2125.02(F)(1)",
+      "text": "(F)(1) Except as provided in division (D)(2) of this section, a civil action for wrongful death shall be commenced within two years after the decedent's death.",
+      "text_sha256": "020a8e8468748c4c9648b600182277db3830ece6df75942d728df1d842eec6cd",
+      "publisher_sha256": "7f581dbc6b21eb9a08a7db17cfb7ece22fb8acfcb606afc34b8361c3e7fb3474",
+      "retrieved_at": "2026-11-21T17:00:59.5385661+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Ohio Legislative Service Commission authenticated PDF, section 2125.02(F)(1)",
+      "effective_from": "2023-04-04"
+    },
+    "24b1c256ddb1bb20df941b75d7923a": {
+      "source_id": "US-OH:habitability:d724937197ea",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 5321.04(A)(1)–(6)",
+      "text": "(A) A landlord who is a party to a rental agreement shall do all of the following: (1) Comply with the requirements of all applicable building, housing, health, and safety codes that materially affect health and safety; (2) Make all repairs and do whatever is reasonably necessary to put and keep the premises in a fit and habitable condition; (3) Keep all common areas of the premises in a safe and sanitary condition; (4) Maintain in good and safe working order and condition all electrical, plumbing, sanitary, heating, ventilating, and air conditioning fixtures and appliances, and elevators, supplied or required to be supplied by the landlord; (5) When the landlord is a party to any rental agreements that cover four or more dwelling units in the same structure, provide and maintain appropriate receptacles for the removal of ashes, garbage, rubbish, and other waste incidental to the occupancy of a dwelling unit, and arrange for their removal; (6) Supply running water, reasonable amounts of hot water, and reasonable heat at all times, except where the building that includes the dwelling unit is not required by law to be equipped for that purpose, or the dwelling unit is so constructed that heat or hot water is generated by an installation within the exclusive control of the tenant and supplied by a direct public utility connection;",
+      "text_sha256": "32b5674777d84cb18ac48bd3093b1d27de6d61d48e3c3c6188d4fa853f3b8305",
+      "publisher_sha256": "f7f7af37d78a4a3f925150fc2eea8d4898487f311c3728e2aaee6d6202fa91cf",
+      "retrieved_at": "2026-11-21T17:00:59.8706546+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Ohio Legislative Service Commission authenticated PDF, section 5321.04(A)(1)–(6)",
+      "effective_from": "2012-09-28"
+    },
+    "4bdf3a6c2a11a190bf700ae44e74fb": {
+      "source_id": "US-OH:wage_enforcement:5ea9f6f309f7",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 4113.15(B)",
+      "text": "(B) Where wages remain unpaid for thirty days beyond the regularly scheduled payday or, in the case where no regularly scheduled payday is applicable, for sixty days beyond the filing by the employee of a claim or for sixty days beyond the date of the agreement, award, or other act making wages payable and no contest court order or dispute of any wage claim including the assertion of a counterclaim exists accounting for nonpayment, the employer, in addition, as liquidated damages, is liable to the employee in an amount equal to six per cent of the amount of the claim still unpaid and not in contest or disputed or two hundred dollars, whichever is greater.",
+      "text_sha256": "270937395a1a628343639b85b50c62116d4e4c98545d42f8984d605e77ab4c25",
+      "publisher_sha256": "e2ca8befd153fa48d48053a8426d8aa6ad0d3392315fa4d6cec9e6e5154bf819",
+      "retrieved_at": "2026-11-21T17:01:00.3116239+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Ohio Legislative Service Commission authenticated PDF, section 4113.15(B)",
+      "effective_from": "2019-03-20"
     }
   },
   "fault_allocation": {

@@ -23,6 +23,21 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_ohio_written_contract_limitation_keeps_both_authenticated_versions(self):
+        provider = LegislativeExcerpts("US-OH")
+        versions = {}
+        for selector, row in manifest("US-OH")["passages"].items():
+            if row["citation"] == "Ohio Rev. Code § 2305.06":
+                observation, = provider.normalize(selector, row["text"].encode())
+                versions[observation.version.currentness] = observation.version
+        older, later = versions["historical"], versions["unresolved"]
+        self.assertEqual(older.authority_id, later.authority_id)
+        self.assertNotEqual(older.version_id, later.version_id)
+        self.assertEqual(older.effective_until, later.effective_from)
+        self.assertEqual(later.effective_from, date(2026, 9, 23))
+        self.assertNotIn("2305.041", older.text)
+        self.assertIn("division (B) of section 2305.041", later.text)
+
     def test_colorado_contract_accrual_and_debt_exceptions_use_separate_topics(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Colorado", legal_area="contracts", authority_status="unresolved",
