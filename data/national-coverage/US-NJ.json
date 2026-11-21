@@ -395,6 +395,18 @@
         "retrieved_at": "2026-11-21T16:38:31.575304+00:00",
         "sha256": "62867723d73c82d2bcfec136c1828a781907482fcbef369b67e5ec0a6caa7a79"
       }
+    },
+    "US-NJ:service:fb22ea622587": {
+      "category": "service",
+      "title": "N.J. Ct. R. 4:4-4(a)(1) (January 2022 publication)",
+      "url": "https://web.archive.org/web/20220105233115id_/https://www.njcourts.gov/attorneys/assets/rules/r4-4.pdf",
+      "locator": "N.J. Ct. R. 4:4-4(a)(1) (January 2022 publication)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:26:31.106547+00:00",
+        "sha256": "3589c5d101e6d964837c3c645a5e003cefba9c5a4f5a5020a1baaf2ee34322d2"
+      }
     }
   },
   "court_directory": [
@@ -691,6 +703,20 @@
       "decision_date": "2023-01-18",
       "opinion_role": "unanimous",
       "procedural_posture": "Interlocutory review of denial of motion to dismiss under the Tort Claims Act; affirmance and remand."
+    },
+    "4aa487d20ff4c31cc1160fe904e9e4": {
+      "source_id": "US-NJ:service:fb22ea622587",
+      "authority_type": "court_rule",
+      "citation": "N.J. Ct. R. 4:4-4(a)(1) (January 2022 publication)",
+      "text": "(a) Primary Method of Obtaining In Personam Jurisdiction. The primary method of obtaining in personam jurisdiction over a defendant in this State is by causing the summons and complaint to be personally served within this State pursuant to R. 4:4-3, as follows: (1) Upon a competent individual of the age of 14 or over, by delivering a copy of the summons and complaint to the individual personally, or by leaving a copy thereof at the individual's dwelling place or usual place of abode with a competent member of the household of the age of 14 or over then residing therein, or by delivering a copy thereof to a person authorized by appointment or by law to receive service of process on the individual's behalf;",
+      "text_sha256": "54e56648f791a84881c4a9fc1901e457a1272224d440a4396115ab3828668ebb",
+      "publisher_sha256": "3589c5d101e6d964837c3c645a5e003cefba9c5a4f5a5020a1baaf2ee34322d2",
+      "retrieved_at": "2026-11-21T17:26:31.106547+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Jersey Judiciary rule publication archived January 5, 2022",
+      "court": "New Jersey Superior Court governed by Part IV rules",
+      "publisher_member": "Judiciary rule PDF pp. 2–3, archived January 5, 2022, opening of Rule 4:4-4(a) and subsection (a)(1)"
     }
   },
   "fault_allocation": {

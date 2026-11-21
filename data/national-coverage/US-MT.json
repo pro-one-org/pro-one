@@ -369,6 +369,18 @@
         "retrieved_at": "2026-11-21T03:30:07.175551+00:00",
         "sha256": "8f2ee9c6b9c71d3ec99f460c80bd7365ce7723a87d06822068212d6dfe39cef6"
       }
+    },
+    "US-MT:service:bbdb3c3926b4": {
+      "category": "service",
+      "title": "Mont. R. Civ. P. 4(e) (2012 compilation)",
+      "url": "https://www.leg.mt.gov/bills/2011/mca/25/20/2012%20court%20rules%20-%20title%2025%2C%20ch%2020%20%28Rules%20of%20Civil%20Procedure%29.pdf",
+      "locator": "Mont. R. Civ. P. 4(e) (2012 compilation)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:24:50.914842+00:00",
+        "sha256": "261cf3037f2e3510f742c91ef5b22bdf72713ac0cf8481682aad6e5e7be77129"
+      }
     }
   },
   "court_directory": [
@@ -659,6 +671,20 @@
       "decision_date": "2006-08-22",
       "opinion_role": "majority",
       "procedural_posture": "Appeal and conditional cross-appeal after a defense verdict in a wrongful death and survivorship action."
+    },
+    "42dcc3cd6baabd5d5557bdfbbe1aab": {
+      "source_id": "US-MT:service:bbdb3c3926b4",
+      "authority_type": "court_rule",
+      "citation": "Mont. R. Civ. P. 4(e) (2012 compilation)",
+      "text": "(e) Serving an Individual. An individual -- other than a minor or an incompetent person -- must be served by either: (1) delivering a copy of the summons and complaint to the individual personally; or (2) delivering a copy of the summons and complaint to an agent authorized by appointment or law to receive service of process. If the agent is one designated by statute to receive service, such further notice as the statute requires must be given.",
+      "text_sha256": "1e8693ed3018274eef8b3779b4bf7582c1668aaf8531923add904415ce2005ac",
+      "publisher_sha256": "261cf3037f2e3510f742c91ef5b22bdf72713ac0cf8481682aad6e5e7be77129",
+      "retrieved_at": "2026-11-21T17:24:50.914842+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Montana Legislature 2012 court rule publication",
+      "court": "Montana district courts governed by the Montana Rules of Civil Procedure",
+      "publisher_member": "Montana Legislature 2012 Court Rules Title 25, Chapter 20, PDF p. 21, Rule 4(e)"
     }
   },
   "forms": {

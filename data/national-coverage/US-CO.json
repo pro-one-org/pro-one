@@ -417,6 +417,30 @@
         "retrieved_at": "2026-11-21T16:55:52.405186+00:00",
         "sha256": "16a31770d5018a405ed16e685c94adf71ddd74e6a50156a0919466125dd6c8a5"
       }
+    },
+    "US-CO:service:4a6212543012": {
+      "category": "service",
+      "title": "Willhite v. Rodriguez-Cera, 2012 CO 29, ¶ 21",
+      "url": "https://www.coloradojudicial.gov/sites/default/files/2024-05/11SA250.pdf",
+      "locator": "Willhite v. Rodriguez-Cera, 2012 CO 29, ¶ 21",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:26:29.392466+00:00",
+        "sha256": "253ff38dd58011b086bfea05fb3737d4fcc4c4488750c84c2fcce24c7a2860dc"
+      }
+    },
+    "US-CO:service_proof:07ad88b3e9ac": {
+      "category": "service_proof",
+      "title": "Colo. R. Civ. P. 4(h)(1) (adopted February 7, 2008)",
+      "url": "https://www.coloradojudicial.gov/sites/default/files/2023-07/Rule_Change_2008-05.pdf",
+      "locator": "Colo. R. Civ. P. 4(h)(1) (adopted February 7, 2008)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:26:29.304547+00:00",
+        "sha256": "ebd2fca201a0f76fbe7884de4ea7f640e91515c946a2cfd91f863ce3987b8e26"
+      }
     }
   },
   "court_directory": [
@@ -749,6 +773,38 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Colorado Office of Legislative Legal Services, 2026 Colorado Revised Statutes, Title 13, § 13-80-108(6)"
+    },
+    "f8865839915ccf48084aca9c4d0608": {
+      "source_id": "US-CO:service:4a6212543012",
+      "authority_type": "opinion",
+      "citation": "Willhite v. Rodriguez-Cera, 2012 CO 29, ¶ 21",
+      "text": "In the event that a party attempting service of process by personal service under section (e) is unable to accomplish service, . . . the party may file a motion supported by an affidavit of the person attempting service, for an order for substituted service. The motion shall state (1) the efforts made to obtain personal service and the reason that personal service could not be obtained, (2) the identity of the person to whom the party wishes to deliver the process, and (3) the address, or last known address of the workplace and residence, if known, of the party upon whom service is to be effected. If the court is satisfied that due diligence has been used to attempt personal service under section (e), that further attempts to obtain service under section (e) would be to no avail, and that the person to whom delivery of the process is appropriate under the circumstances and reasonably calculated to give actual notice to the party upon whom service is to be effective, it shall (1) authorize delivery to be made to the person deemed appropriate for service, and (2) order the process to be mailed to the address(es) of the party to be served by substituted service, as set forth in the motion, on or before the date of delivery. Service shall be complete on the date of delivery to the person deemed appropriate for service.",
+      "text_sha256": "c5018a635d338f882d9c730e018d063aa36fd531b03c884425ee0bbf35e4b486",
+      "publisher_sha256": "253ff38dd58011b086bfea05fb3737d4fcc4c4488750c84c2fcce24c7a2860dc",
+      "retrieved_at": "2026-11-21T17:26:29.392466+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported opinion issued 2012-04-23",
+      "court": "Colorado Supreme Court",
+      "publisher_member": "Colorado Supreme Court majority ¶ 21, Rule 4(f) language quoted by the court in that decision, substituted service as applied in the opinion",
+      "decision_date": "2012-04-23",
+      "opinion_role": "majority",
+      "procedural_posture": "Original proceeding reviewing order quashing substituted service in Colorado; supreme court made the rule absolute and remanded."
+    },
+    "c5ab83e377733ad4ded73663c14b4e": {
+      "source_id": "US-CO:service_proof:07ad88b3e9ac",
+      "authority_type": "court_rule",
+      "citation": "Colo. R. Civ. P. 4(h)(1) (adopted February 7, 2008)",
+      "text": "(h) Manner of Proof. Proof of service shall be made as follows: (1) If served personally, by a duly acknowledged statement, certified by the sheriff, marshal or similar governmental official, or statement duly acknowledged under oath by any other person completing the service as to date, place, and manner of service;",
+      "text_sha256": "2b83ba52196571a309ab9004842294eec228ff4f56f4f82566e4c94037a0d637",
+      "publisher_sha256": "ebd2fca201a0f76fbe7884de4ea7f640e91515c946a2cfd91f863ce3987b8e26",
+      "retrieved_at": "2026-11-21T17:26:29.304547+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Colorado Supreme Court Rule Change 2008(5)",
+      "court": "Colorado courts of record",
+      "publisher_member": "Colorado Supreme Court Rule Change 2008(5) p. 1, adopted Rule 4(h)(1)",
+      "effective_from": "2008-02-07"
     }
   },
   "fault_allocation": {

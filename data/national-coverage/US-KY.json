@@ -394,6 +394,18 @@
         "retrieved_at": "2026-11-21T16:38:28.259501+00:00",
         "sha256": "ea47b6af432922b5a4593d5681083588e12b8df38497fdba9db1d58a3120e34a"
       }
+    },
+    "US-KY:service:087066ba81ac": {
+      "category": "service",
+      "title": "Ky. Sup. Ct. Order 2025-02, eFiling Rules, service of process",
+      "url": "https://web.archive.org/web/20260519014533id_/https://www.kycourts.gov/Courts/Supreme-Court/Supreme%20Court%20Orders/202502.pdf",
+      "locator": "Ky. Sup. Ct. Order 2025-02, eFiling Rules, service of process",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:27:08.618786+00:00",
+        "sha256": "76a2c94e3191233461862c3f49aa367e4563a380aefc8dbc19bbf6d8ca33be1e"
+      }
     }
   },
   "court_directory": [
@@ -728,6 +740,20 @@
       "language": "en",
       "publisher_member": "Kentucky Legislative Research Commission, § 452.450",
       "effective_from": "1953-07-01"
+    },
+    "cdefff7fab4a409643156b78bb3c7b": {
+      "source_id": "US-KY:service:087066ba81ac",
+      "authority_type": "court_rule",
+      "citation": "Ky. Sup. Ct. Order 2025-02, eFiling Rules, service of process",
+      "text": "(4) Service of process. Electronic service of process is not permitted for purposes of obtaining jurisdiction over persons or property, i.e., CR 4 service, with the exception of the service of summons on a cross, counter, or third-party complaint where the defendant to such complaint is an eFiler who has already consented to receive electronic service in the action in accordance with subsection (1) of this Section. All other service of process must be effected in the traditional manner. The plaintiff or petitioner need not present the summons to the clerk along with the initiating document; the clerk will generate the summons and issue it as set out below in paragraphs (a) and (b). The summons shall bear the date and time indicated on the NEF, regardless of when the clerk processes the eFiling and issues an NCP. (a) Summonses will be issued as follows: (i) For service by certified mail under CR 4.01(1)(a), the clerk will issue the summons, and cause service of the summons and complaint to be made via certified mail; (ii) For service by the sheriff under CR 4.01(1)(b), the clerk will issue the summons and cause the summons and complaint to be transferred to the sheriff for service; (iii) For service by a process server or other authorized person under CR 4.01(1)(b), other than the sheriff, the summons will be issued by the clerk and electronically returned to the initiating party for service; or (iv) At the request of the initiating party, in accordance with CR 4.01(1)(c), the clerk will issue the summons and electronically return it to the initiating party for service. (v) For service by warning order attorney under CRs 4.05, 4.06, and 4.07, the party requesting the warning order attorney shall upload a copy of the affidavit as provided by CR 4.06. Such affidavits shall be filed as stand-alone documents and not included within the body of an initiating document or pleading. The clerk shall appoint a practicing attorney of the court to serve as warning order attorney for the defendant pursuant to CR 4.07. The eFiling system may assess a non-refundable deposit for the warning order attorney, which may or may not constitute the entirety of his or her legal fees under CR 4.07(6). (vi) For service of process through the Secretary of State in accordance with KRS 454.210, the clerk will issue the summons, and cause copies of the summons and attested copies of the initiating party’s complaint to be transferred to the Secretary of State.",
+      "text_sha256": "4fbab19d7f425d72ac4ea70ea9491612f5f0accc99f717cdc890783c27de83c1",
+      "publisher_sha256": "76a2c94e3191233461862c3f49aa367e4563a380aefc8dbc19bbf6d8ca33be1e",
+      "retrieved_at": "2026-11-21T17:27:08.618786+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Kentucky Supreme Court Amended Order 2025-02",
+      "court": "Kentucky courts subject to the Administrative Rules of Practice and Procedure for Electronic Filing",
+      "publisher_member": "Kentucky Supreme Court Amended Order 2025-02, pp. 16–17, service of process for supported eFiled cases, subsection (4)(a)"
     }
   },
   "fault_allocation": {

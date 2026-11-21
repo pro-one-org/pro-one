@@ -413,6 +413,18 @@
         "retrieved_at": "2026-11-21T17:21:50.676633+00:00",
         "sha256": "7293e5b7f864dd591b1d5ba146828364b511655ac0ecfba149fc4857caa24882"
       }
+    },
+    "US-MO:service:cb720f8cdaa0": {
+      "category": "service",
+      "title": "State ex rel. Phillip-Smith v. Stelzer, No. ED111912 (Mo. App. E.D. Sept. 12, 2023)",
+      "url": "https://www.courts.mo.gov/file/ED/Opinion_ED111912.pdf",
+      "locator": "State ex rel. Phillip-Smith v. Stelzer, No. ED111912 (Mo. App. E.D. Sept. 12, 2023)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:24:47.621279+00:00",
+        "sha256": "acc450b381d3a936c0d83c4e927ffb1ea310219428b07308a4ca9edb2b2fa769"
+      }
     }
   },
   "court_directory": [
@@ -736,6 +748,23 @@
       "decision_date": "2017-12-05",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from dismissal of mechanic’s-lien enforcement claim; appellate court applied the amended commencement rule and reversed and remanded."
+    },
+    "892eaec33186afabc20b474993946d": {
+      "source_id": "US-MO:service:cb720f8cdaa0",
+      "authority_type": "opinion",
+      "citation": "State ex rel. Phillip-Smith v. Stelzer, No. ED111912 (Mo. App. E.D. Sept. 12, 2023)",
+      "text": "Rule 54.14 provides that when personal service is made outside of Missouri, service must be made by an individual authorized to serve process in civil actions within the state where the service is being made, and service must be made as provided in Rule 54.13(b). To properly serve process on an individual, a copy of the summons and petition must be delivered to that person: (1) individually; (2) at the person’s usual place of abode with a resident who is at least 18 years old; or (3) to an authorized agent. Rule 54.13(b)(1).",
+      "text_sha256": "01e7c1fdc093d79f79e8805ec151b260ac6e9a6911136d05249046dacc5207e3",
+      "publisher_sha256": "acc450b381d3a936c0d83c4e927ffb1ea310219428b07308a4ca9edb2b2fa769",
+      "retrieved_at": "2026-11-21T17:24:47.621279+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported opinion issued 2023-09-12",
+      "court": "Missouri Court of Appeals, Eastern District",
+      "publisher_member": "Missouri Court of Appeals issued opinion p. 4, Missouri Rules 54.14 and 54.13(b)(1) applied to out-of-state service",
+      "decision_date": "2023-09-12",
+      "opinion_role": "majority",
+      "procedural_posture": "Writ of prohibition made permanent because attempted service at the relator’s Alabama workplace through human resources did not confer personal jurisdiction."
     }
   },
   "fault_allocation": {

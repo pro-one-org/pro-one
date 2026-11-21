@@ -363,6 +363,30 @@
         "retrieved_at": "2026-11-21T17:20:50.733110+00:00",
         "sha256": "521cc3d421d2287fbba1f58b015e43817e623e239bb340f9709a57627db1fd84"
       }
+    },
+    "US-WY:service:1c3bf8ee7980": {
+      "category": "service",
+      "title": "Wyo. R. Civ. P. 4(e) (August 2024 ed.)",
+      "url": "https://www.wyocourts.gov/app/uploads/2025/01/Wyoming-Rules-of-Civil-Procedure-August-2024.pdf",
+      "locator": "Wyo. R. Civ. P. 4(e) (August 2024 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:24:47.127847+00:00",
+        "sha256": "11cab58c83c13c1b54823da45bb5ad003ad43324fced3f4cbfc6543500b3ebbd"
+      }
+    },
+    "US-WY:service_time_limit:4ecd4a9a83c6": {
+      "category": "service_time_limit",
+      "title": "Wyo. R. Civ. P. 4(w) (August 2024 ed.)",
+      "url": "https://www.wyocourts.gov/app/uploads/2025/01/Wyoming-Rules-of-Civil-Procedure-August-2024.pdf",
+      "locator": "Wyo. R. Civ. P. 4(w) (August 2024 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:24:47.127847+00:00",
+        "sha256": "11cab58c83c13c1b54823da45bb5ad003ad43324fced3f4cbfc6543500b3ebbd"
+      }
     }
   },
   "court_directory": [
@@ -651,6 +675,34 @@
       "court": "Wyoming district courts governed by the Wyoming Rules of Civil Procedure",
       "publisher_member": "Wyoming Supreme Court order signed March 15, 2022, PDF p. 2; Rule 3 text",
       "effective_from": "2022-06-01"
+    },
+    "89553b11b249e042756e462736fec7": {
+      "source_id": "US-WY:service:1c3bf8ee7980",
+      "authority_type": "court_rule",
+      "citation": "Wyo. R. Civ. P. 4(e) (August 2024 ed.)",
+      "text": "(e) Serving an Individual Within the United States. — An individual other than a person under 14 years of age or an incompetent person may be served within the United States: (1) by delivering a copy of the summons and of the complaint to the individual personally, (2) by leaving copies thereof at the individual’s dwelling house or usual place of abode with some person over the age of 14 years then residing therein, (3) at the defendant’s usual place of business with an employee of the defendant then in charge of such place of business, or (4) by delivering a copy of the summons and of the complaint to an agent authorized by appointment or by law to receive service of process.",
+      "text_sha256": "17ad15c7630d67c6a5d296dab2e54d41d8a21c6e52f82dc80e41466ef2ee0e66",
+      "publisher_sha256": "11cab58c83c13c1b54823da45bb5ad003ad43324fced3f4cbfc6543500b3ebbd",
+      "retrieved_at": "2026-11-21T17:24:47.127847+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Wyoming Judicial Branch Rules of Civil Procedure, August 2024 edition",
+      "court": "Wyoming district courts governed by the Wyoming Rules of Civil Procedure",
+      "publisher_member": "Wyoming Judicial Branch August 2024 compilation p. 6, Rule 4(e); excludes annotations"
+    },
+    "d8f4cd80701fce7a7820940c10d048": {
+      "source_id": "US-WY:service_time_limit:4ecd4a9a83c6",
+      "authority_type": "court_rule",
+      "citation": "Wyo. R. Civ. P. 4(w) (August 2024 ed.)",
+      "text": "(w) Time Limit for Service. — If a defendant is not served within 90 days after the complaint is filed, the court — on motion or on its own after notice to the plaintiff — must dismiss the action without prejudice against that defendant or order that service be made within a specified time. But if the plaintiff shows good cause for the failure, the court must extend the time for service for an appropriate period. This subdivision (w) does not apply to service in a foreign country under Rule 4(f).",
+      "text_sha256": "7a00664f42cf257914e820619d660c3529752f6b55522a88377e1aa4ce92b6fb",
+      "publisher_sha256": "11cab58c83c13c1b54823da45bb5ad003ad43324fced3f4cbfc6543500b3ebbd",
+      "retrieved_at": "2026-11-21T17:24:47.127847+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Wyoming Judicial Branch Rules of Civil Procedure, August 2024 edition",
+      "court": "Wyoming district courts governed by the Wyoming Rules of Civil Procedure",
+      "publisher_member": "Wyoming Judicial Branch August 2024 compilation p. 12, Rule 4(w); excludes annotations"
     }
   },
   "fault_allocation": {

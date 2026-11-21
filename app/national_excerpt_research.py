@@ -66,6 +66,7 @@ SUBJECTS = {
     "service": ("civil_procedure", "service_of_process"),
     "service_time_limit": ("civil_procedure", "service_time_limit"),
     "summons_issuance": ("civil_procedure", "summons_issuance"),
+    "summons_contents": ("civil_procedure", "summons_and_complaint"),
     "service_business_entity": ("civil_procedure", "service_on_business_entities"),
     "service_proof": ("civil_procedure", "proof_of_service"),
     "response": ("civil_procedure", "initial_response"),

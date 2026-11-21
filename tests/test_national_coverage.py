@@ -23,6 +23,20 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_colorado_service_preserves_substituted_service_conditions(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Colorado", legal_area="civil_procedure",
+                               topics=["service_of_process"], authority_status="historical")
+        key, = provider.search(query)
+        text = provider.fetch(key).text
+        self.assertIn("due diligence has been used to attempt personal service", text)
+        self.assertIn("authorize delivery to be made to the person deemed appropriate", text)
+        self.assertIn("order the process to be mailed", text)
+        self.assertNotIn(key, provider.search(query.model_copy(update={"topics": ["service_time_limit"]})))
+        self.assertNotIn(key, provider.search(query.model_copy(update={"state": "Wyoming"})))
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                  "authority_as_of": "2026-11-21"})))
+
     def test_wyoming_commencement_preserves_conditional_refiling(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Wyoming", legal_area="civil_procedure",

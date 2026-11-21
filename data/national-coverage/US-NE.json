@@ -367,6 +367,30 @@
         "retrieved_at": "2026-11-20T18:42:12.471453+00:00",
         "sha256": "4c15d19c613858e0544cac7f79b2854e3c57cf4d4a8a483fd3d981f1af7336b6"
       }
+    },
+    "US-NE:service:3c0f29f6aae2": {
+      "category": "service",
+      "title": "Neb. Rev. Stat. § 25-505.01",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-505.01",
+      "locator": "Neb. Rev. Stat. § 25-505.01",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:24:47.519703+00:00",
+        "sha256": "3d5402361b6fba4b65da01c900ef1e04c537592bf4bb1461fda0c1c81bf4cdb0"
+      }
+    },
+    "US-NE:summons_contents:0e78b6e6e197": {
+      "category": "summons_contents",
+      "title": "Neb. Rev. Stat. § 25-504.01",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-504.01",
+      "locator": "Neb. Rev. Stat. § 25-504.01",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:24:48.209114+00:00",
+        "sha256": "2c333edd14254e605b65d5576995c06d6fc8a7c2ad27da214b3b5d066f4563be"
+      }
     }
   },
   "court_directory": [
@@ -634,6 +658,30 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Nebraska courts applying the Rules of Pleading in Civil Cases"
+    },
+    "90c4fa4e49d2650ce20194b2265d6d": {
+      "source_id": "US-NE:service:3c0f29f6aae2",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 25-505.01",
+      "text": "(1) Unless otherwise limited by statute or by the court, a plaintiff may elect to have service made by any of the following methods: (a) Personal service which shall be made by leaving the summons with the individual to be served; (b) Residence service which shall be made by leaving the summons at the usual place of residence of the individual to be served, with some person of suitable age and discretion residing therein; (c) Certified mail service which shall be made by (i) within ten days of issuance, sending the summons to the defendant by certified mail with a return receipt requested showing to whom and where delivered and the date of delivery, and (ii) filing with the court proof of service with the signed receipt attached; or (d) Designated delivery service which shall be made by (i) within ten days of issuance, sending the summons by a designated delivery service to the defendant, (ii) obtaining a signed delivery receipt showing to whom and where delivered and the date of delivery, and (iii) filing with the court proof of service with a copy of the signed delivery receipt attached. As used in this subdivision, a designated delivery service means a delivery service designated as such pursuant to 26 U.S.C. 7502(f) and a signed delivery receipt includes an electronic or facsimile receipt with an image of the recipient's signature. (2) Failure to make service by the method elected by the plaintiff does not affect the validity of the service. (3) The State Court Administrator shall maintain on the website of the Supreme Court a list of designated delivery services.",
+      "text_sha256": "ad60f7e9be73f5fdd411737b29e50056b03873bff23f6f20d17e7873dd12dfa4",
+      "publisher_sha256": "3d5402361b6fba4b65da01c900ef1e04c537592bf4bb1461fda0c1c81bf4cdb0",
+      "retrieved_at": "2026-11-21T17:24:47.519703+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Nebraska Legislature statutory section 25-505.01; excludes annotations"
+    },
+    "af4114da77ee0a68fff638865ad385": {
+      "source_id": "US-NE:summons_contents:0e78b6e6e197",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 25-504.01",
+      "text": "A copy of the complaint shall be served with the summons, except when service is by publication. The plaintiff shall deliver to the clerk sufficient copies of the complaint at the time it is filed.",
+      "text_sha256": "0872a3474cced96a2c7c86f65eb523054af3ff8531af50b5aef0de0a2846de5f",
+      "publisher_sha256": "2c333edd14254e605b65d5576995c06d6fc8a7c2ad27da214b3b5d066f4563be",
+      "retrieved_at": "2026-11-21T17:24:48.209114+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Nebraska Legislature statutory section 25-504.01; excludes annotations"
     }
   },
   "fault_allocation": {

@@ -384,6 +384,18 @@
         "retrieved_at": "2026-11-21T03:32:46.179170+00:00",
         "sha256": "9ba49418e2cfc714df40c91e43274f85338be82de069a2b25f2d0cffba87e917"
       }
+    },
+    "US-SD:service:b53dcd27f11e": {
+      "category": "service",
+      "title": "S.D. Sup. Ct. R. 05-01, SDCL § 15-6-4(d)(8)",
+      "url": "https://mylrc.sdlegislature.gov/api/Documents/106265.html?Year=2005",
+      "locator": "S.D. Sup. Ct. R. 05-01, SDCL § 15-6-4(d)(8)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:26:29.488062+00:00",
+        "sha256": "5a214b00452721ff819c4f18191c4c504a0e41653bc5873c7a6c64e48d2487a0"
+      }
     }
   },
   "court_directory": [
@@ -653,6 +665,20 @@
       "decision_date": "2015-11-24",
       "opinion_role": "majority",
       "procedural_posture": "Appeal after a negligence trial. The court distinguished negligence per se from proof of the full tort."
+    },
+    "e4e8f041ab443cc14dfddef94bac4d": {
+      "source_id": "US-SD:service:b53dcd27f11e",
+      "authority_type": "statute",
+      "citation": "S.D. Sup. Ct. R. 05-01, SDCL § 15-6-4(d)(8)",
+      "text": "(8) In all other cases, to the defendant personally;",
+      "text_sha256": "d6e0e6284b6e4c1efc4713eefdbc1318aee31e19d00085e25803565db8a988e0",
+      "publisher_sha256": "5a214b00452721ff819c4f18191c4c504a0e41653bc5873c7a6c64e48d2487a0",
+      "retrieved_at": "2026-11-21T17:26:29.488062+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "South Dakota 2005 Session Laws chapter 287",
+      "publisher_member": "South Dakota 2005 Session Laws chapter 287, Rule 05-01 provision on other cases, subsection (8)",
+      "effective_from": "2005-02-25"
     }
   },
   "fault_allocation": {

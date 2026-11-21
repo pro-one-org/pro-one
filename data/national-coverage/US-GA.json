@@ -341,6 +341,18 @@
         "retrieved_at": "2026-11-21T17:20:51.052658+00:00",
         "sha256": "77fea3e8736b9826570a59f287fd3310bf2fbe632e16265f9af58a4a538ce2b0"
       }
+    },
+    "US-GA:service:8b1828fc798a": {
+      "category": "service",
+      "title": "Perry v. Peterson, No. A25A1075 (Ga. Ct. App. July 31, 2025)",
+      "url": "https://cases.justia.com/georgia/court-of-appeals/2025-a25a1075.pdf",
+      "locator": "Perry v. Peterson, No. A25A1075 (Ga. Ct. App. July 31, 2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:26:29.661940+00:00",
+        "sha256": "f56dc1a564430d836f882f6dced995ab59a870d88d04710d9fd613f3fb1dfee2"
+      }
     }
   },
   "court_directory": [
@@ -636,6 +648,23 @@
       "edition": "Georgia General Assembly Civil Practice Act 2025 Supplement",
       "publisher_member": "Georgia General Assembly Civil Practice Act 2025 supplement PDF p. 7; enacted text only",
       "effective_from": "2018-01-01"
+    },
+    "e2a7666c66355c40405c9c00884b93": {
+      "source_id": "US-GA:service:8b1828fc798a",
+      "authority_type": "opinion",
+      "citation": "Perry v. Peterson, No. A25A1075 (Ga. Ct. App. July 31, 2025)",
+      "text": "Under OCGA § 9-11-4 (e), service of process — or the method by which a defendant is provided with a summons and complaint — on an individual defendant such as Pearson, occurs when a person of the type identified in OCGA § 9-11-4 (c) personally provides the summons and complaint to the defendant, leaves the summons and complaint at the defendant’s dwelling with a person of suitable age and discretion who also resides at the dwelling, or delivers the summons and complaint to an agent authorized by appointment or by law to receive service of process on behalf of the defendant.",
+      "text_sha256": "b678606bd04e2a0a987d337d6036359c43a3c6b3bbb1201f8a16279a701e328d",
+      "publisher_sha256": "f56dc1a564430d836f882f6dced995ab59a870d88d04710d9fd613f3fb1dfee2",
+      "retrieved_at": "2026-11-21T17:26:29.661940+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported opinion issued 2025-07-31",
+      "court": "Court of Appeals of Georgia",
+      "publisher_member": "Georgia Court of Appeals issued opinion p. 6, division 1, individual service under § 9-11-4(e)(7)",
+      "decision_date": "2025-07-31",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissal of negligence complaint; appellate court reversed and distinguished completed service from later filing proof."
     }
   },
   "fault_allocation": {
