@@ -546,6 +546,19 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertFalse(provider.search(query.model_copy(update={"topics": ["contract_formation"]})))
         self.assertFalse(provider.search(query.model_copy(update={"state": "Kentucky"})))
 
+    def test_alabama_sales_commissions_require_wholesale_scope(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Alabama", legal_area="employment",
+                               topics=["sales_commissions"], authority_types=["statute"],
+                               authority_status="historical")
+        texts = [provider.fetch(key).text for key in provider.search(query)]
+        self.assertTrue(any("purchase at wholesale" in value and "home solicitation sales" in value
+                            for value in texts))
+        self.assertTrue(any("within thirty days after the date of termination" in value for value in texts))
+        for change in ({"topics": ["wage_payment"]}, {"state": "Mississippi"},
+                       {"authority_status": "current", "authority_as_of": "1994-05-03"}):
+            self.assertFalse(provider.search(query.model_copy(update=change)))
+
     def test_wisconsin_debt_cure_preserves_qualification_and_response_scope(self):
         provider = RetainedLegislativeResearch()
         matter = ResearchMatter(country="US", state="Wisconsin", legal_area="consumer_debt",
@@ -581,6 +594,12 @@ class NationalCoverageTests(unittest.TestCase):
         for changes in ({"topics": ["debt_response"]}, {"topics": ["debt_collection"]},
                         {"state": "Arizona"}, {"authority_status": "current", "authority_as_of": "2025-12-31"}):
             self.assertFalse(provider.search(matter.model_copy(update=changes)))
+        complaint = next(shell for shell in coverage("US-NM")["action_shells"] if shell["action_type"] == "complaint")
+        review = complaint["review_evidence"]["debt_pleading"]
+        self.assertEqual({(item["court"], item["citation"]) for item in review},
+                         {(court, citation) for court, citation, _ in cases})
+        self.assertNotIn("debt_pleading", complaint["procedure_evidence"])
+        self.assertEqual((complaint["readiness"], complaint["execution"]), ("blocked", "disabled"))
 
     def test_replay_idempotence_separate_courts_and_historical_federal_granules(self):
         with TemporaryDirectory() as folder:
