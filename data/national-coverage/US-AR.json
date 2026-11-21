@@ -336,6 +336,30 @@
         "retrieved_at": "2026-11-20T23:15:50.257783+00:00",
         "sha256": "6f001e0a0ad4350bca31401305e569d436aef5706031da7d1b3bc73855ebbb3d"
       }
+    },
+    "US-AR:small_claims:894f4427a413": {
+      "category": "small_claims",
+      "title": "Ark. Dist. Ct. R. 10(a)(1)",
+      "url": "https://opinions.arcourts.gov/ark/supremecourt/en/260210/1/document.do",
+      "locator": "Ark. Dist. Ct. R. 10(a)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:35:28.850797+00:00",
+        "sha256": "5f602446dc536fdec3e9b897bd381c2b6501208ff208c13e1a741d7b25aedf8d"
+      }
+    },
+    "US-AR:small_claims:18cc27e4abc0": {
+      "category": "small_claims",
+      "title": "Ark. Dist. Ct. R. 10(a)(1), summons and notice to defendant",
+      "url": "https://opinions.arcourts.gov/ark/supremecourt/en/260210/1/document.do",
+      "locator": "Ark. Dist. Ct. R. 10(a)(1), summons and notice to defendant",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:35:28.850797+00:00",
+        "sha256": "5f602446dc536fdec3e9b897bd381c2b6501208ff208c13e1a741d7b25aedf8d"
+      }
     }
   },
   "court_directory": [
@@ -591,6 +615,34 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Arkansas State Board of Collection Agencies code compilation, through the 2023 session"
+    },
+    "8085d256d1f1a3baca9819834f21c5": {
+      "source_id": "US-AR:small_claims:894f4427a413",
+      "authority_type": "court_rule",
+      "citation": "Ark. Dist. Ct. R. 10(a)(1)",
+      "text": "Actions in the small claims division of district court shall be commenced whenever the claimant or the personal representative of a deceased claimant shall file with the clerk of the court a claim in substantially the following form:",
+      "text_sha256": "0b3bd0c3e723747f0106cb7fc3154424b7ffc0e9967d338e85fea4f6873a9ec9",
+      "publisher_sha256": "5f602446dc536fdec3e9b897bd381c2b6501208ff208c13e1a741d7b25aedf8d",
+      "retrieved_at": "2026-11-21T03:35:28.850797+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas Supreme Court per curiam, 2011 Ark. 250, effective July 1, 2011",
+      "court": "Arkansas District Courts",
+      "effective_from": "2011-07-01"
+    },
+    "aa19ef275c4dc3e8e7be87e39c3050": {
+      "source_id": "US-AR:small_claims:18cc27e4abc0",
+      "authority_type": "court_rule",
+      "citation": "Ark. Dist. Ct. R. 10(a)(1), summons and notice to defendant",
+      "text": "You are hereby warned to file a written answer with the clerk of this court within thirty (30) days after you receive this claim and forward a copy to the plaintiff at the address above or a default judgment may be entered against you.",
+      "text_sha256": "f861346592d782a7a75309bc48a4a01d121005c9a8da095e04129b1e2282635f",
+      "publisher_sha256": "5f602446dc536fdec3e9b897bd381c2b6501208ff208c13e1a741d7b25aedf8d",
+      "retrieved_at": "2026-11-21T03:35:28.850797+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas Supreme Court per curiam, 2011 Ark. 250, effective July 1, 2011",
+      "court": "Arkansas District Courts",
+      "effective_from": "2011-07-01"
     }
   },
   "fault_allocation": {

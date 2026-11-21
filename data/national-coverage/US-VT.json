@@ -281,6 +281,30 @@
         "retrieved_at": "2026-11-20T18:39:37.693130+00:00",
         "sha256": "fb50ab5954ff6a96c73a3a1b6fd7cc7d139d70bdfeaa14a378df82c41c08fa92"
       }
+    },
+    "US-VT:response:966f6f35c1b3": {
+      "category": "response",
+      "title": "Vt. R. Civ. P. 12(a)(1)",
+      "url": "https://www.vtcourts.gov/sites/default/files/documents/PROMULGATED%20Civil%20Day%20is%20Day.pdf",
+      "locator": "Vt. R. Civ. P. 12(a)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:37:48.914679+00:00",
+        "sha256": "a7ec99c310e4e9b74e7a582c5bad00db3e6b0c04b33dbfd623b07580870f1a71"
+      }
+    },
+    "US-VT:postmotion_response:503f2f198fb9": {
+      "category": "postmotion_response",
+      "title": "Vt. R. Civ. P. 12(a)(3)",
+      "url": "https://www.vtcourts.gov/sites/default/files/documents/PROMULGATED%20Civil%20Day%20is%20Day.pdf",
+      "locator": "Vt. R. Civ. P. 12(a)(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:37:48.914679+00:00",
+        "sha256": "a7ec99c310e4e9b74e7a582c5bad00db3e6b0c04b33dbfd623b07580870f1a71"
+      }
     }
   },
   "court_directory": [
@@ -493,6 +517,32 @@
       "language": "en",
       "edition": "Vermont enacted Act No. 55, § 11 (effective July 1, 2009)",
       "effective_from": "2009-07-01"
+    },
+    "58c7813d11952bcac59d7cef4b5096": {
+      "source_id": "US-VT:response:966f6f35c1b3",
+      "authority_type": "court_rule",
+      "citation": "Vt. R. Civ. P. 12(a)(1)",
+      "text": "(1) A defendant shall serve an answer (A) within 21 days after being served with the summons and complaint, unless the court directs otherwise when service of process is made pursuant to an order of court under Rule 4(d) or 4(g), and provided that a defendant served pursuant to Rule 4(e), 4(f), or 4(k) outside the continental United States or Canada may serve an answer at any time within 49 days after such service; or (B) if service of the summons has been timely waived on request under Rule 4(l), within 60 days after the date when the request for waiver was sent, or within 90 days if the defendant was addressed outside any state or territory of the United States.",
+      "text_sha256": "123cf044dc4002de8191e2d007fd8899c50b6af22f8f05e1b05f8ce47fc49f08",
+      "publisher_sha256": "a7ec99c310e4e9b74e7a582c5bad00db3e6b0c04b33dbfd623b07580870f1a71",
+      "retrieved_at": "2026-11-21T03:37:48.914679+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Vermont Supreme Court civil timing amendments effective January 1, 2018",
+      "effective_from": "2018-01-01"
+    },
+    "874acc8d7a152ad5a4c4b0774d48f7": {
+      "source_id": "US-VT:postmotion_response:503f2f198fb9",
+      "authority_type": "court_rule",
+      "citation": "Vt. R. Civ. P. 12(a)(3)",
+      "text": "(3) Unless a different time is fixed by court order, the service of a motion permitted under this rule alters these periods of time as follows: (A) if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within 14 days after notice of the court’s action; or (B) if the court grants a motion for a more definite statement the responsive pleading shall be served within 14 days after the service of the more definite statement.",
+      "text_sha256": "6dcbb6914573ee65948e836998aa5b3152ae2ebb1696a60a026f56e60926ba51",
+      "publisher_sha256": "a7ec99c310e4e9b74e7a582c5bad00db3e6b0c04b33dbfd623b07580870f1a71",
+      "retrieved_at": "2026-11-21T03:37:48.914679+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Vermont Supreme Court civil timing amendments effective January 1, 2018",
+      "effective_from": "2018-01-01"
     }
   },
   "fault_allocation": {
