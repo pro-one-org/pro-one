@@ -362,6 +362,42 @@
         "retrieved_at": "2026-11-21T04:18:05.272531+00:00",
         "sha256": "913316d465ae3984ede9c5dc12e241b4e7cabd59cc4e7acf8b01ead48e89debe"
       }
+    },
+    "US-TN:commencement:72ab1a47ce32": {
+      "category": "commencement",
+      "title": "Tenn. R. Civ. P. 3 (2016 Christenberry quotation)",
+      "url": "https://web.archive.org/web/20170215185856id_/https://tncourts.gov/sites/default/files/christenberry.opn_.final_.pdf",
+      "locator": "Tenn. R. Civ. P. 3 (2016 Christenberry quotation)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:32.549144+00:00",
+        "sha256": "1f68fb108d981e328412c6ea0117601b13c6e16fb2696a376b39e109bc2b50f2"
+      }
+    },
+    "US-TN:summons_issuance:e60262d967b5": {
+      "category": "summons_issuance",
+      "title": "Tenn. R. Civ. P. 4.01(1) (2016 Christenberry quotation)",
+      "url": "https://web.archive.org/web/20170215185856id_/https://tncourts.gov/sites/default/files/christenberry.opn_.final_.pdf",
+      "locator": "Tenn. R. Civ. P. 4.01(1) (2016 Christenberry quotation)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:32.549144+00:00",
+        "sha256": "1f68fb108d981e328412c6ea0117601b13c6e16fb2696a376b39e109bc2b50f2"
+      }
+    },
+    "US-TN:service:f79d9dec5263": {
+      "category": "service",
+      "title": "Tenn. R. Civ. P. 4.01(2) (2016 Christenberry quotation)",
+      "url": "https://web.archive.org/web/20170215185856id_/https://tncourts.gov/sites/default/files/christenberry.opn_.final_.pdf",
+      "locator": "Tenn. R. Civ. P. 4.01(2) (2016 Christenberry quotation)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:32.549144+00:00",
+        "sha256": "1f68fb108d981e328412c6ea0117601b13c6e16fb2696a376b39e109bc2b50f2"
+      }
     }
   },
   "court_directory": [
@@ -696,6 +732,48 @@
       "opinion_role": "majority",
       "procedural_posture": "Appeal from a defense verdict in an automobile negligence action.",
       "publisher_member": "court opinion PDF p. 4"
+    },
+    "aa4dfe30e75d712867e72084eb84ab": {
+      "source_id": "US-TN:commencement:72ab1a47ce32",
+      "authority_type": "court_rule",
+      "citation": "Tenn. R. Civ. P. 3 (2016 Christenberry quotation)",
+      "text": "All civil actions are commenced by filing a complaint with the clerk of the court. An action is commenced within the meaning of any statute of limitations upon such filing of a complaint, whether process be issued or not issued and whether process be returned served or unserved. If process remains unissued for 90 days or is not served within 90 days from issuance, regardless of the reason, the plaintiff cannot rely upon the original commencement to toll the running of a statute of limitations unless the plaintiff continues the action by obtaining issuance of new process within one year from issuance of the previous process or, if no process is issued, within one year of the filing of the complaint.",
+      "text_sha256": "ffa78383ac62578629520733e663d91a3d8b4ee5fc0955bbb240ffcee922dcde",
+      "publisher_sha256": "1f68fb108d981e328412c6ea0117601b13c6e16fb2696a376b39e109bc2b50f2",
+      "retrieved_at": "2026-11-21T16:38:32.549144+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Tennessee Rule 3 as quoted by the Tennessee Court of Appeals on January 14, 2016",
+      "court": "Tennessee courts governed by the Tennessee Rules of Civil Procedure",
+      "publisher_member": "Tennessee Court of Appeals, Christenberry v. Christenberry, Jan. 14, 2016, slip op. p. 6, rule quoted in opinion"
+    },
+    "712fc61e2c6d53df8d94d7fd3bfbca": {
+      "source_id": "US-TN:summons_issuance:e60262d967b5",
+      "authority_type": "court_rule",
+      "citation": "Tenn. R. Civ. P. 4.01(1) (2016 Christenberry quotation)",
+      "text": "(1) Upon the filing of the complaint the clerk of the court wherein the complaint is filed shall forthwith issue the required summons and cause it, with necessary copies of the complaint and summons, to be delivered for service to any person authorized to serve process. This person shall serve the summons, and the return indorsed thereon shall be proof of the time and manner of service. A summons may be issued for service in any county against any defendant, and separate or additional summonses may be issued against any defendant upon request of plaintiff. Nothing in this rule shall affect existing laws with respect to venue.",
+      "text_sha256": "97ffba441d84bffcf08b1447cc716a4a1f65922dbdaea49da711fcc47c1e9a10",
+      "publisher_sha256": "1f68fb108d981e328412c6ea0117601b13c6e16fb2696a376b39e109bc2b50f2",
+      "retrieved_at": "2026-11-21T16:38:32.549144+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Tennessee Rule 4.01 as quoted by the Tennessee Court of Appeals on January 14, 2016",
+      "court": "Tennessee courts governed by the Tennessee Rules of Civil Procedure",
+      "publisher_member": "Tennessee Court of Appeals, Christenberry v. Christenberry, Jan. 14, 2016, slip op. p. 7, rule quoted in opinion"
+    },
+    "940138887ad8d265899e556a0a4eae": {
+      "source_id": "US-TN:service:f79d9dec5263",
+      "authority_type": "court_rule",
+      "citation": "Tenn. R. Civ. P. 4.01(2) (2016 Christenberry quotation)",
+      "text": "(2) A summons and complaint may be served by any person who is not a party and is not less than 18 years of age. The process server must be identified by name and address on the return.",
+      "text_sha256": "e02b49da2b761f3447af89ebe509a477018e731c0475610584eaf25a4ae0e35f",
+      "publisher_sha256": "1f68fb108d981e328412c6ea0117601b13c6e16fb2696a376b39e109bc2b50f2",
+      "retrieved_at": "2026-11-21T16:38:32.549144+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Tennessee Rule 4.01 as quoted by the Tennessee Court of Appeals on January 14, 2016",
+      "court": "Tennessee courts governed by the Tennessee Rules of Civil Procedure",
+      "publisher_member": "Tennessee Court of Appeals, Christenberry v. Christenberry, Jan. 14, 2016, slip op. p. 7, rule quoted in opinion"
     }
   },
   "fault_allocation": {

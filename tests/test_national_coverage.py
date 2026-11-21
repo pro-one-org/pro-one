@@ -23,6 +23,20 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_florida_contract_limitation_passages_keep_duration_and_scope_separate(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Florida", legal_area="contracts",
+                               topics=["written_contract_limitations"], authority_status="unresolved")
+        key, = provider.search(query)
+        text = provider.fetch(key).text
+        self.assertIn("WITHIN FIVE YEARS", text)
+        self.assertIn("except for an action to enforce a claim against a payment bond", text)
+        oral, = provider.search(query.model_copy(update={"topics": ["oral_contract_limitations"]}))
+        self.assertNotEqual(oral, key)
+        self.assertIn("WITHIN FOUR YEARS", provider.fetch(oral).text)
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                  "authority_as_of": "2026-11-21"})))
+
     def test_connecticut_periodic_wage_limit_exposes_tolling_without_generalizing_it(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Connecticut", legal_area="employment",

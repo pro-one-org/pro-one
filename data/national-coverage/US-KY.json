@@ -370,6 +370,30 @@
         "retrieved_at": "2026-11-21T16:33:04.745381+00:00",
         "sha256": "a7c8ead4146c3890a0794f9f61f4f7c4c87d27e66933609a6fa3b46e2fb36cfa"
       }
+    },
+    "US-KY:venue:6c157fd03ffa": {
+      "category": "venue",
+      "title": "Ky. Rev. Stat. § 452.480",
+      "url": "https://apps.legislature.ky.gov/Law/statutes/statute.aspx?id=19520",
+      "locator": "Ky. Rev. Stat. § 452.480",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:28.241423+00:00",
+        "sha256": "8ec28ac6c486a1c4d1fbc75231d6f41768af5c329af61656e846465120442712"
+      }
+    },
+    "US-KY:venue:7b32a1cacf17": {
+      "category": "venue",
+      "title": "Ky. Rev. Stat. § 452.450",
+      "url": "https://apps.legislature.ky.gov/Law/statutes/statute.aspx?id=19513",
+      "locator": "Ky. Rev. Stat. § 452.450",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:28.259501+00:00",
+        "sha256": "ea47b6af432922b5a4593d5681083588e12b8df38497fdba9db1d58a3120e34a"
+      }
     }
   },
   "court_directory": [
@@ -678,6 +702,32 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Kentucky Legislative Research Commission, § 411.130(1)"
+    },
+    "38ef8c2fc4d07f683700d7a826f039": {
+      "source_id": "US-KY:venue:6c157fd03ffa",
+      "authority_type": "statute",
+      "citation": "Ky. Rev. Stat. § 452.480",
+      "text": "An action which is not required by the foregoing provisions of KRS 452.400 to 452.475 to be brought in some other county may be brought in any county in which the defendant, or in which one (1) of several defendants, who may be properly joined as such in the action, resides or is summoned.",
+      "text_sha256": "3edab53a90416a3e5aa2955e7f9e8d694f8a3691625799cf87a015513dac46dc",
+      "publisher_sha256": "8ec28ac6c486a1c4d1fbc75231d6f41768af5c329af61656e846465120442712",
+      "retrieved_at": "2026-11-21T16:38:28.241423+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Kentucky Legislative Research Commission, § 452.480",
+      "effective_from": "1953-07-01"
+    },
+    "1f4c36bf826fbbdad7f93f15f427ee": {
+      "source_id": "US-KY:venue:7b32a1cacf17",
+      "authority_type": "statute",
+      "citation": "Ky. Rev. Stat. § 452.450",
+      "text": "Excepting the actions mentioned in KRS 452.400 to 452.420 both inclusive, and in KRS 452.430, 452.440, 452.445, 452.455, 452.465 and 452.475, an action against a corporation which has an office or place of business in this state, or a chief officer or agent residing in this state, must be brought in the county in which such office or place of business is situated or in which such officer or agent resides; or, if it be upon a contract, in the above-named county, or in the county in which the contract is made or to be performed; or, if it be for a tort, in the first-named county, or the county in which the tort is committed.",
+      "text_sha256": "8bd683f59388454acfb08b8cbb899116390ca3e1b9aa4b0dafdd8aae3981145b",
+      "publisher_sha256": "ea47b6af432922b5a4593d5681083588e12b8df38497fdba9db1d58a3120e34a",
+      "retrieved_at": "2026-11-21T16:38:28.259501+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Kentucky Legislative Research Commission, § 452.450",
+      "effective_from": "1953-07-01"
     }
   },
   "fault_allocation": {

@@ -383,6 +383,18 @@
         "retrieved_at": "2026-11-21T04:26:58.498926+00:00",
         "sha256": "b228b2908128564772b0a80f2f412e9d01c388a8367d6c6b2d877834200f04a7"
       }
+    },
+    "US-NJ:commencement:bdaebb1b3d54": {
+      "category": "commencement",
+      "title": "W.S. v. Hildreth, No. A-46-21, slip op. at 16 (N.J. 2023)",
+      "url": "https://web.archive.org/web/20240616090729id_/https://www.njcourts.gov/system/files/court-opinions/2023/a_46_21.pdf",
+      "locator": "W.S. v. Hildreth, No. A-46-21, slip op. at 16 (N.J. 2023)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:31.575304+00:00",
+        "sha256": "62867723d73c82d2bcfec136c1828a781907482fcbef369b67e5ec0a6caa7a79"
+      }
     }
   },
   "court_directory": [
@@ -662,6 +674,23 @@
       "opinion_role": "majority",
       "procedural_posture": "Certification to review exclusion of expert causation testimony and summary judgment in a wrongful-death negligence action.",
       "publisher_member": "Court-issued slip opinion in the original packet, PDF p. 17, majority opinion after the clerk syllabus"
+    },
+    "ca544a55ccd66894ca8e36249bf65b": {
+      "source_id": "US-NJ:commencement:bdaebb1b3d54",
+      "authority_type": "opinion",
+      "citation": "W.S. v. Hildreth, No. A-46-21, slip op. at 16 (N.J. 2023)",
+      "text": "Pursuant to Rule 4:2-2, “[a] civil action is commenced by filing a complaint with the court.” Neither a notice of claim nor a motion for leave to file a late notice of claim constitutes a complaint.",
+      "text_sha256": "e02570117092246b5a745e98364b3c146bba69f46a68fe6e9044b06d27d195d2",
+      "publisher_sha256": "62867723d73c82d2bcfec136c1828a781907482fcbef369b67e5ec0a6caa7a79",
+      "retrieved_at": "2026-11-21T16:38:31.575304+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Jersey Supreme Court slip opinion issued January 18, 2023",
+      "court": "Supreme Court of New Jersey",
+      "publisher_member": "Court opinion, printed p. 16 (PDF p. 19), Part III",
+      "decision_date": "2023-01-18",
+      "opinion_role": "unanimous",
+      "procedural_posture": "Interlocutory review of denial of motion to dismiss under the Tort Claims Act; affirmance and remand."
     }
   },
   "fault_allocation": {
