@@ -1809,5 +1809,140 @@
         }
       ]
     }
+  },
+  {
+    "id": "dc_consumer_private_action_reference",
+    "version": "v1",
+    "jurisdiction": "US-DC",
+    "legal_area": "consumer",
+    "kind": "entitlement",
+    "label": "Consumer access to a private action",
+    "plain_language_label": "Consumer access to a private action",
+    "authority_as_of": "2026-04-29",
+    "topics": [
+      "private_action",
+      "consumer_remedies"
+    ],
+    "matter_types": [
+      "consumer"
+    ],
+    "limitations": [
+      "The statutory excerpts support review of an individual consumer action for the selected edition date.",
+      "Review the specific District law allegedly violated, claimant status, exceptions and prerequisites before assessing any claim or remedy."
+    ],
+    "elements": [
+      {
+        "id": "consumer_trade_practice",
+        "label": "Consumer access to a private action",
+        "description": "Identify the individual consumer, the trade practice and the District law the conduct allegedly violated.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-022774773e0b29228fea2dfdadafcefa527bee34b6b403f7ac15c892759f1651-p1",
+            "source_id": "corpus-022774773e0b29228fea2dfdadafcefa527bee34b6b403f7ac15c892759f1651",
+            "source_type": "statute",
+            "source_version": "D.C. Council XML, current through April 29, 2026",
+            "excerpt_hash": "sha256:b20c4595fb9ba24711af6f5afef0cd88658eb7a5a2441372f5dbf1dcb73d9bba"
+          },
+          {
+            "passage_id": "corpus-7ec79df3bf5a64aa4132337f3fbff22bb871dd906e677ae157248c38d44f6577-p1",
+            "source_id": "corpus-7ec79df3bf5a64aa4132337f3fbff22bb871dd906e677ae157248c38d44f6577",
+            "source_type": "statute",
+            "source_version": "D.C. Council XML, current through April 29, 2026",
+            "excerpt_hash": "sha256:6adebd0c51df2fee402a13fafeb56e762f6fc1619ce1f51062a528e4bef06cd3",
+            "role": "qualifies"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "consumer_trade_practice"
+    }
+  },
+  {
+    "id": "dc_security_deposit_ordinary_wear",
+    "version": "v1",
+    "jurisdiction": "US-DC",
+    "legal_area": "landlord_tenant",
+    "kind": "defense",
+    "label": "Ordinary wear and tear in a security deposit dispute",
+    "plain_language_label": "Ordinary wear and tear in a security deposit dispute",
+    "authority_as_of": "2026-04-29",
+    "topics": [
+      "security_deposit"
+    ],
+    "matter_types": [
+      "landlord_tenant"
+    ],
+    "limitations": [
+      "The statute supplies a bounded rule on withholding replacement value and the meaning of ordinary wear and tear for the selected edition date.",
+      "Review the lease, condition of the premises, disputed charge and applicable remedies."
+    ],
+    "elements": [
+      {
+        "id": "ordinary_wear_and_tear",
+        "label": "Ordinary wear and tear in a security deposit dispute",
+        "description": "Identify the withheld replacement charge and evidence showing whether the condition resulted from ordinary use or from fault, accident or abuse.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-0bc292bfc27857fafc9ab35f20ef7a1f29ca1093b296bc4c9ad5f820e99fec7c-p1",
+            "source_id": "corpus-0bc292bfc27857fafc9ab35f20ef7a1f29ca1093b296bc4c9ad5f820e99fec7c",
+            "source_type": "statute",
+            "source_version": "D.C. Council XML, current through April 29, 2026",
+            "excerpt_hash": "sha256:a3a31a9f48f502ef34993d87212956fe18c4fd8a20a2d55bec14e56213cdad14"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "ordinary_wear_and_tear"
+    }
+  },
+  {
+    "id": "dc_wrongful_death_timing_reference",
+    "version": "v1",
+    "jurisdiction": "US-DC",
+    "legal_area": "torts",
+    "kind": "bar",
+    "label": "Timing reference for a District wrongful-death action",
+    "plain_language_label": "Timing reference for a District wrongful-death action",
+    "authority_as_of": "2026-04-29",
+    "topics": [
+      "wrongful_death_limitations"
+    ],
+    "matter_types": [
+      "wrongful_death"
+    ],
+    "limitations": [
+      "This reference addresses actions under the District wrongful-death chapter for the selected edition date.",
+      "Confirm the applicable edition, possible exceptions, representative capacity and case facts. The engine provides no calculated deadline."
+    ],
+    "elements": [
+      {
+        "id": "wrongful_death_filing_reference",
+        "label": "Timing reference for a District wrongful-death action",
+        "description": "Identify the decedent’s date of death and the personal representative who would bring the action under this chapter.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-61d4a29b2a89e4e232e1e83ad4b14f769413f2390dffe678f36b1419aa5e8751-p1",
+            "source_id": "corpus-61d4a29b2a89e4e232e1e83ad4b14f769413f2390dffe678f36b1419aa5e8751",
+            "source_type": "statute",
+            "source_version": "D.C. Council XML, current through April 29, 2026",
+            "excerpt_hash": "sha256:feba52f6012eb14fa5fe308f90ae9cabba93aad26ea3c05d7574889f1b5909df"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "wrongful_death_filing_reference"
+    }
   }
 ]

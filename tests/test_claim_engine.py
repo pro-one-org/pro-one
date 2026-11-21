@@ -11,7 +11,7 @@ from uuid import uuid4
 from fastapi.testclient import TestClient
 
 from app.capabilities import ResearchMatter
-from app.claim_catalog import ClaimCatalog, authority_binding
+from app.claim_catalog import ClaimCatalog, authority_binding, available
 from app.claim_mapping import validate_mappings
 from app.claim_models import AnalyzeClaim, LegalTheory
 from app.claim_service import ClaimService
@@ -71,6 +71,22 @@ class ClaimTests(unittest.TestCase):
                 for row in rows:
                     self.assertEqual(row["currentness"]["as_of"], "2026-11-04")
             for day in (None, date(2026, 11, 3), date(2026, 11, 5)):
+                self.assertFalse(catalog.research(theory, law_as_of=day)[0])
+
+    def test_dc_theories_require_the_verified_edition_and_their_matter_types(self):
+        catalog = self.engine.catalog
+        for matter_type, key, citation in (
+            ("consumer", "dc_consumer_private_action_reference", "D.C. Code § 28-3905(k)(1)(A)"),
+            ("landlord_tenant", "dc_security_deposit_ordinary_wear", "D.C. Code § 42-3502.17(c)"),
+            ("wrongful_death", "dc_wrongful_death_timing_reference", "D.C. Code § 16-2702"),
+        ):
+            theory = catalog.active[key]
+            self.assertIn(theory, available(catalog, "US-DC", matter_type))
+            self.assertNotIn(theory, available(catalog, "US-MD", matter_type))
+            self.assertNotIn(theory, available(catalog, "US-DC", "personal_injury"))
+            bindings, _, _ = catalog.research(theory, law_as_of=date(2026, 4, 29))
+            self.assertIn(citation, {ref["citation"] for rows in bindings.values() for ref in rows})
+            for day in (None, date(2026, 4, 28), date(2026, 4, 30)):
                 self.assertFalse(catalog.research(theory, law_as_of=day)[0])
 
     def test_wisconsin_collection_claim_preserves_scope_and_spouse_qualification(self):

@@ -38,6 +38,8 @@ For the District of Columbia, offline verification compares eleven statutory pas
 
 Jurisdiction-specific claims require every bound passage, proposition, edition and hash in their definitions. The development research provider exposes matching text for the requested jurisdiction, authority type and subject. A limitations reference alone cannot determine accrual, tolling, service, a calendar or a deadline. Each national Action OS reference definition describes dependencies and requires local review. All 204 reference definitions block execution.
 
+The Claim Engine uses the verified April 29, 2026 D.C. edition for three bounded issues involving consumer access to a private action, ordinary wear and tear in security deposit disputes, and wrongful-death timing. The wrongful-death reference requires that matter type. The consumer reference requires separate support for the District law allegedly violated.
+
 ## Review and release
 
 To check a publisher, run `python scripts/national_coverage.py check-publisher US 28-1331-2024 .local/publisher-health.sqlite3`. This operator command requests only the public URL for a catalogued selector. The local history stores its timestamp, status and hashes. Changed bytes or an inaccessible endpoint require review. Existing legal records keep their prior versions and status.
