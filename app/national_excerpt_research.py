@@ -39,6 +39,7 @@ SUBJECTS = {
     "consumer_private_action": ("consumer", "private_action"),
     "debtLaw": ("consumer_debt", "debt_collection"),
     "debt_forum": ("consumer_debt", "debt_forum"),
+    "debt_pleading": ("consumer_debt", "debt_pleading"),
     "debt_limitations": ("consumer_debt", "debt_limitations"),
     "debt_private_action": ("consumer_debt", "debt_private_action"),
     "debt_cure_notice": ("consumer_debt", "debt_cure_notice"),

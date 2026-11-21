@@ -303,6 +303,66 @@
         "retrieved_at": "2026-11-20T23:19:58.255567+00:00",
         "sha256": "fb90ef83bb60ab58e61aa5586f15ec3c86f75335aa22fa16907865f1cbb2b1a2"
       }
+    },
+    "US-NM:small_claims:7e1d71618e21": {
+      "category": "small_claims",
+      "title": "Rule 2-201(A)-(C) NMRA",
+      "url": "https://supremecourt.nmcourts.gov/wp-content/uploads/sites/2/2025/10/Rule-2-201-NMRA.pdf",
+      "locator": "Rule 2-201(A)-(C) NMRA",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:35:57.639650+00:00",
+        "sha256": "e511d26d091073ed661699dbe902cd63f8d069dedbdd42d4d5c833ca80446693"
+      }
+    },
+    "US-NM:debt_pleading:95b5fc739448": {
+      "category": "debt_pleading",
+      "title": "Rule 2-201(E)(2) NMRA",
+      "url": "https://supremecourt.nmcourts.gov/wp-content/uploads/sites/2/2025/10/Rule-2-201-NMRA.pdf",
+      "locator": "Rule 2-201(E)(2) NMRA",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:35:57.639650+00:00",
+        "sha256": "e511d26d091073ed661699dbe902cd63f8d069dedbdd42d4d5c833ca80446693"
+      }
+    },
+    "US-NM:small_claims:c37c3a1a81d9": {
+      "category": "small_claims",
+      "title": "Rule 3-201(A)-(C) NMRA",
+      "url": "https://supremecourt.nmcourts.gov/wp-content/uploads/sites/2/2025/10/Rule-3-201-NMRA.pdf",
+      "locator": "Rule 3-201(A)-(C) NMRA",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:36:39.341270+00:00",
+        "sha256": "dfd03523aeb1dfccb3e21e2d269fa3101939ce5495dc22fb49bf95f5ae8f5a72"
+      }
+    },
+    "US-NM:debt_pleading:2533c1870ad7": {
+      "category": "debt_pleading",
+      "title": "Rule 3-201(E)(2) NMRA",
+      "url": "https://supremecourt.nmcourts.gov/wp-content/uploads/sites/2/2025/10/Rule-3-201-NMRA.pdf",
+      "locator": "Rule 3-201(E)(2) NMRA",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:36:39.341270+00:00",
+        "sha256": "dfd03523aeb1dfccb3e21e2d269fa3101939ce5495dc22fb49bf95f5ae8f5a72"
+      }
+    },
+    "US-NM:debt_pleading:59a4d7be2ed8": {
+      "category": "debt_pleading",
+      "title": "Rule 1-009(J)(2) NMRA",
+      "url": "https://supremecourt.nmcourts.gov/wp-content/uploads/sites/2/2025/10/Rule-1-009-NMRA.pdf",
+      "locator": "Rule 1-009(J)(2) NMRA",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:36:39.380651+00:00",
+        "sha256": "aa5c655556f3da2081835fb7f394fad34aa2768ddb9723e867b4c67a9f2be2e1"
+      }
     }
   },
   "court_directory": [
@@ -561,6 +621,76 @@
       "language": "en",
       "edition": "New Mexico Laws 2021, ch. 31, effective July 1, 2021",
       "effective_from": "2021-07-01"
+    },
+    "80109214cb6d1f50a088627573e59d": {
+      "source_id": "US-NM:small_claims:7e1d71618e21",
+      "authority_type": "court_rule",
+      "citation": "Rule 2-201(A)-(C) NMRA",
+      "text": "A. How commenced. A civil action is commenced by filing with the court a complaint consisting of a written statement of a claim or claims setting forth briefly the facts and circumstances giving rise to the action. B. Jurisdiction. Magistrates have jurisdiction in all cases as may be provided by law. C. Form of complaint. The complaint shall be in substantially the form approved by the court administrator and the Supreme Court.",
+      "text_sha256": "14850ee799621f47368a6302efe7e8f86f3a0d3f956e0c3d5836501ec2610400",
+      "publisher_sha256": "e511d26d091073ed661699dbe902cd63f8d069dedbdd42d4d5c833ca80446693",
+      "retrieved_at": "2026-11-20T23:35:57.639650+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Mexico Supreme Court Order S-1-RCR-2025-00174, effective December 31, 2025",
+      "court": "New Mexico Magistrate Courts",
+      "effective_from": "2025-12-31"
+    },
+    "9c66ae7a116dccf41660ecec1d1e4a": {
+      "source_id": "US-NM:debt_pleading:95b5fc739448",
+      "authority_type": "court_rule",
+      "citation": "Rule 2-201(E)(2) NMRA",
+      "text": "(2) Medical debt claims. The pleading of a party whose cause of action is to collect a medical debt, as defined in NMSA 1978, Section 57-32-2(I), shall comply with Rule 2-201(E)(3), Rule 2-401(D), Form 4-226A NMRA, and shall include a copy of the current Attestation of Indigency form promulgated by the New Mexico Superintendent of Insurance.",
+      "text_sha256": "f8e7886fe14ca2871ecfe4a0f64c868e455f900fe079faf5c6102539426852cc",
+      "publisher_sha256": "e511d26d091073ed661699dbe902cd63f8d069dedbdd42d4d5c833ca80446693",
+      "retrieved_at": "2026-11-20T23:35:57.639650+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Mexico Supreme Court Order S-1-RCR-2025-00174, effective December 31, 2025",
+      "court": "New Mexico Magistrate Courts",
+      "effective_from": "2025-12-31"
+    },
+    "ad33879cb89c804fc65fada175560d": {
+      "source_id": "US-NM:small_claims:c37c3a1a81d9",
+      "authority_type": "court_rule",
+      "citation": "Rule 3-201(A)-(C) NMRA",
+      "text": "A. How commenced. A civil action is commenced by filing with the court a complaint consisting of a written statement of a claim or claims setting forth briefly the facts and circumstances giving rise to the action. B. Nature of claim. Metropolitan judges have jurisdiction in all cases as may be provided by law. C. Form of complaint. The complaint shall be in substantially the form approved by the court administrator and the Supreme Court.",
+      "text_sha256": "b121c3628a3cc60e5175f335a8b551d46bdda384bbc987d70a192826c6b5740e",
+      "publisher_sha256": "dfd03523aeb1dfccb3e21e2d269fa3101939ce5495dc22fb49bf95f5ae8f5a72",
+      "retrieved_at": "2026-11-20T23:36:39.341270+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Mexico Supreme Court Order S-1-RCR-2025-00174, effective December 31, 2025",
+      "court": "New Mexico Metropolitan Courts",
+      "effective_from": "2025-12-31"
+    },
+    "4910f56344a849fde40f62c215ca0a": {
+      "source_id": "US-NM:debt_pleading:2533c1870ad7",
+      "authority_type": "court_rule",
+      "citation": "Rule 3-201(E)(2) NMRA",
+      "text": "(2) Medical debt claims. The pleading of a party whose cause of action is to collect a medical debt, as defined in NMSA 1978, Section 57-32-2(I), shall comply with Rule 3-201(E)(3), Rule 3-401(D), and Form 4-226A NMRA, and shall include a copy of the current Attestation of Indigency form promulgated by the New Mexico Superintendent of Insurance.",
+      "text_sha256": "4a1fe8016c302337cc19e6a23b193fca82280b11f5cfda438e06e05fa212f455",
+      "publisher_sha256": "dfd03523aeb1dfccb3e21e2d269fa3101939ce5495dc22fb49bf95f5ae8f5a72",
+      "retrieved_at": "2026-11-20T23:36:39.341270+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Mexico Supreme Court Order S-1-RCR-2025-00174, effective December 31, 2025",
+      "court": "New Mexico Metropolitan Courts",
+      "effective_from": "2025-12-31"
+    },
+    "973a914c6daf301f1e3c77bfe36968": {
+      "source_id": "US-NM:debt_pleading:59a4d7be2ed8",
+      "authority_type": "court_rule",
+      "citation": "Rule 1-009(J)(2) NMRA",
+      "text": "(2) Medical debt claims. The pleading of a party whose cause of action is to collect a medical debt, as defined in NMSA 1978, Section 57-32-2(I), shall comply with Rule 1-009(J)(3), Rule 1-017(E), Form 4-226A, and shall include a copy of the current Attestation of Indigency form promulgated by the New Mexico Superintendent of Insurance.",
+      "text_sha256": "767a272561a9fa8aa157e90bab68a8e9faade0202526e3a57267b29f82d6b49a",
+      "publisher_sha256": "aa5c655556f3da2081835fb7f394fad34aa2768ddb9723e867b4c67a9f2be2e1",
+      "retrieved_at": "2026-11-20T23:36:39.380651+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Mexico Supreme Court Order S-1-RCR-2025-00174, effective December 31, 2025",
+      "court": "New Mexico District Courts",
+      "effective_from": "2025-12-31"
     }
   },
   "fault_allocation": {

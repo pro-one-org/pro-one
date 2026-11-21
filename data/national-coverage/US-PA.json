@@ -353,6 +353,30 @@
         "retrieved_at": "2026-11-20T23:31:13.418668+00:00",
         "sha256": "d759fad237cb7f4e5688ffcc0a6158e28b587402add1c777e2804616f8002521"
       }
+    },
+    "US-PA:negligence_elements:043b69c736d7": {
+      "category": "negligence_elements",
+      "title": "Harris v. Hutchinson Sportsmen’s Club, 2026 PA Super 21, slip op. at 14",
+      "url": "https://www.pacourts.us/assets/opinions/Superior/out/J-A02020-26o%20-%20106668446345858497.pdf?cb=1",
+      "locator": "Harris v. Hutchinson Sportsmen’s Club, 2026 PA Super 21, slip op. at 14",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:40:49.771262+00:00",
+        "sha256": "7f779711dd371d869606113cbbc31d7e22a88ea3967e2e352c47f1679331480e"
+      }
+    },
+    "US-PA:premises:a3af9875e184": {
+      "category": "premises",
+      "title": "Harris v. Hutchinson Sportsmen’s Club, 2026 PA Super 21, slip op. at 15",
+      "url": "https://www.pacourts.us/assets/opinions/Superior/out/J-A02020-26o%20-%20106668446345858497.pdf?cb=1",
+      "locator": "Harris v. Hutchinson Sportsmen’s Club, 2026 PA Super 21, slip op. at 15",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:40:49.771262+00:00",
+        "sha256": "7f779711dd371d869606113cbbc31d7e22a88ea3967e2e352c47f1679331480e"
+      }
     }
   },
   "court_directory": [
@@ -646,6 +670,38 @@
       "retrieved_at": "2026-11-20T23:31:13.418668+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "0bd20db68840f1d769a0aa92af5e55": {
+      "source_id": "US-PA:negligence_elements:043b69c736d7",
+      "authority_type": "opinion",
+      "citation": "Harris v. Hutchinson Sportsmen’s Club, 2026 PA Super 21, slip op. at 14",
+      "text": "To establish a viable cause of action for negligence, the plaintiff must demonstrate the following four elements: (1) a duty or obligation recognized by the law that requires an actor to conform his actions to a standard of conduct for the protection of others against unreasonable risks; (2) failure on the part of the defendant to conform to that standard of conduct, i.e., a breach of duty; (3) a reasonably close causal connection between the breach of duty and the injury sustained; and (4) actual loss or damages that result from the breach. Shellenberger, 288 A.3d at 906 (citation omitted).",
+      "text_sha256": "499e2bb8f373bf8baf729a7f460bf65d58351f175d78a86116da80ecea34d8c3",
+      "publisher_sha256": "7f779711dd371d869606113cbbc31d7e22a88ea3967e2e352c47f1679331480e",
+      "retrieved_at": "2026-11-20T23:40:49.771262+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2026-02-04",
+      "court": "Superior Court of Pennsylvania",
+      "decision_date": "2026-02-04",
+      "opinion_role": "majority",
+      "procedural_posture": "Published panel opinion affirming summary judgment in a personal injury action arising from an alleged dangerous condition on a road."
+    },
+    "bbf7d23eb2f116ece5a84449d11972": {
+      "source_id": "US-PA:premises:a3af9875e184",
+      "authority_type": "opinion",
+      "citation": "Harris v. Hutchinson Sportsmen’s Club, 2026 PA Super 21, slip op. at 15",
+      "text": "However, our Supreme Court has recognized that a possessor of land “is not liable to his invitees for physical harm caused to them by any activity or condition on the land whose danger is known or obvious to them, unless the possessor should anticipate the harm despite such knowledge or obviousness.” Carrender v. Fitterer, 469 A.2d 120, 123 (Pa. 1983) (quoting Restatement (Second) of Torts § 343A).",
+      "text_sha256": "43d56f20dc699e472d866b06f530019952f3e03b2a8cf096143fcaa715be9d0c",
+      "publisher_sha256": "7f779711dd371d869606113cbbc31d7e22a88ea3967e2e352c47f1679331480e",
+      "retrieved_at": "2026-11-20T23:40:49.771262+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2026-02-04",
+      "court": "Superior Court of Pennsylvania",
+      "decision_date": "2026-02-04",
+      "opinion_role": "majority",
+      "procedural_posture": "Published panel opinion affirming summary judgment in a personal injury action arising from an alleged dangerous condition on a road."
     }
   },
   "fault_allocation": {

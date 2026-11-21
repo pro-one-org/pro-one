@@ -522,6 +522,27 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertFalse(provider.search(query.model_copy(update={"state": "South Dakota"})))
         self.assertFalse(provider.search(query.model_copy(update={"topics": ["debt_response"]})))
 
+    def test_new_mexico_medical_debt_pleading_is_scoped_to_tribunal_and_topic(self):
+        provider = RetainedLegislativeResearch()
+        matter = ResearchMatter(country="US", state="New Mexico", legal_area="consumer_debt",
+                                topics=["debt_pleading"], authority_types=["court_rule"],
+                                authority_status="historical")
+        cases = (
+            ("New Mexico District Courts", "Rule 1-009(J)(2) NMRA", "Rule 1-017(E)"),
+            ("New Mexico Magistrate Courts", "Rule 2-201(E)(2) NMRA", "Rule 2-401(D)"),
+            ("New Mexico Metropolitan Courts", "Rule 3-201(E)(2) NMRA", "Rule 3-401(D)"),
+        )
+        for court, citation, requirement in cases:
+            with self.subTest(court=court):
+                key, = provider.search(matter.model_copy(update={"court": court}))
+                doc = provider.fetch(key)
+                self.assertEqual(doc.source["citation"]["preferred_citation"], citation)
+                self.assertIn(requirement, doc.text)
+                self.assertIn("Attestation of Indigency", doc.text)
+        for changes in ({"topics": ["debt_response"]}, {"topics": ["debt_collection"]},
+                        {"state": "Arizona"}, {"authority_status": "current", "authority_as_of": "2025-12-31"}):
+            self.assertFalse(provider.search(matter.model_copy(update=changes)))
+
     def test_replay_idempotence_separate_courts_and_historical_federal_granules(self):
         with TemporaryDirectory() as folder:
             path = Path(folder) / "corpus.sqlite3"
