@@ -329,6 +329,18 @@
         "retrieved_at": "2026-11-20T18:32:56.432673+00:00",
         "sha256": "8e50c2d56b5960e3680f5da7d66c5b2cf03ce158313e280256bf57c74e40ffd6"
       }
+    },
+    "US-NY:negligence_elements:8cb27ad60330": {
+      "category": "negligence_elements",
+      "title": "Evarts v. Pyro Engineering, Inc., 2014 NY Slip Op 02996, 117 A.D.3d 1148, 1150",
+      "url": "https://web.archive.org/web/20250419191430id_/https://www.nycourts.gov/REPORTER/3dseries/2014/2014_02996.htm",
+      "locator": "Evarts v. Pyro Engineering, Inc., 2014 NY Slip Op 02996, 117 A.D.3d 1148, 1150",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:21:01.617255+00:00",
+        "sha256": "4f3fc75d0f9c84da7eeca678f1c9847facb6c89a26971d8b8ecbe9babe730198"
+      }
     }
   },
   "court_directory": [
@@ -608,6 +620,23 @@
       "currentness": "unresolved",
       "language": "en",
       "edition": "New York Senate revision dated April 8, 2022, consumer-credit provision"
+    },
+    "7ac7f6d1a48ac900c093067a9414d5": {
+      "source_id": "US-NY:negligence_elements:8cb27ad60330",
+      "authority_type": "opinion",
+      "citation": "Evarts v. Pyro Engineering, Inc., 2014 NY Slip Op 02996, 117 A.D.3d 1148, 1150",
+      "text": "To establish a prima facie case of negligence, the plaintiff is required to demonstrate that the defendant owed a duty to him or her, that the defendant breached that duty and that such breach was a proximate cause of the injuries sustained (see Ortega v Liberty Holdings, LLC, 111 AD3d 904, 906 [2013]; Merchants Mut. Ins. Co. v Quality Signs of Middletown, 110 AD3d 1042, 1043 [2013]).",
+      "text_sha256": "732e6db797250a351a857d3cc91e57e3ddcd72ec4c1d060c88fd384b4440d2e9",
+      "publisher_sha256": "4f3fc75d0f9c84da7eeca678f1c9847facb6c89a26971d8b8ecbe9babe730198",
+      "retrieved_at": "2026-11-21T04:21:01.617255+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2014-05-01",
+      "court": "New York Supreme Court, Appellate Division, Third Department",
+      "decision_date": "2014-05-01",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from partial summary judgment dismissing claims arising from a premature pyrotechnic detonation.",
+      "publisher_member": "New York State Law Reporting Bureau corrected publication, 117 A.D.3d at 1150"
     }
   },
   "fault_allocation": {

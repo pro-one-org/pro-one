@@ -350,6 +350,18 @@
         "retrieved_at": "2026-11-21T04:05:30.817419+00:00",
         "sha256": "075418f0678f1fa3ac62fa98e78ef04b2977d4751eb9b27be378df97a55c2091"
       }
+    },
+    "US-TN:negligence_elements:17a8aa9b52aa": {
+      "category": "negligence_elements",
+      "title": "Brown v. Hugo, No. W2005-01356-COA-R3-CV, slip op. at 4 (Tenn. Ct. App. June 27, 2006)",
+      "url": "https://web.archive.org/web/20170221095643id_/https://www.tncourts.gov/sites/default/files/OPINIONS/TCA/PDF/062/BrownBettyGopn.pdf",
+      "locator": "Brown v. Hugo, No. W2005-01356-COA-R3-CV, slip op. at 4 (Tenn. Ct. App. June 27, 2006)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:18:05.272531+00:00",
+        "sha256": "913316d465ae3984ede9c5dc12e241b4e7cabd59cc4e7acf8b01ead48e89debe"
+      }
     }
   },
   "court_directory": [
@@ -667,6 +679,23 @@
       "court": "Tennessee trial courts governed by the Rules of Civil Procedure",
       "publisher_member": "publisher Rule 12.01 text",
       "effective_from": "1999-07-01"
+    },
+    "71254084902282120802e2227b33e5": {
+      "source_id": "US-TN:negligence_elements:17a8aa9b52aa",
+      "authority_type": "opinion",
+      "citation": "Brown v. Hugo, No. W2005-01356-COA-R3-CV, slip op. at 4 (Tenn. Ct. App. June 27, 2006)",
+      "text": "In an action for negligence, the plaintiff must prove five elements: (1) a duty of care owed to the plaintiff by the defendant; (2) conduct by the defendant constituting breach of that duty; (3) injury or loss to the plaintiff; (4) that the defendant’s conduct was the cause in fact of the plaintiff’s injury; and (5) that the defendant’s conduct was the proximate or legal cause of the injury.",
+      "text_sha256": "5cafe455e20fbebe2c3be613579b8cd7479b931c2f5df2f75a23bc592e8e8657",
+      "publisher_sha256": "913316d465ae3984ede9c5dc12e241b4e7cabd59cc4e7acf8b01ead48e89debe",
+      "retrieved_at": "2026-11-21T04:18:05.272531+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2006-06-27",
+      "court": "Court of Appeals of Tennessee",
+      "decision_date": "2006-06-27",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a defense verdict in an automobile negligence action.",
+      "publisher_member": "court opinion PDF p. 4"
     }
   },
   "fault_allocation": {

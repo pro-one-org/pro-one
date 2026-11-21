@@ -333,6 +333,18 @@
         "retrieved_at": "2026-11-21T04:10:31.113974+00:00",
         "sha256": "b63ecd63d184d617b8c745d76a0b0cabc158d96ccbb3e028d8192c56fef7cea8"
       }
+    },
+    "US-MD:negligence_elements:e136d94b51e3": {
+      "category": "negligence_elements",
+      "title": "Bel Air Carpet, Inc. v. Korey Homes Building Group, LLC, No. 1006, Sept. Term 2019, slip op. at 16 (Md. Ct. Spec. App. Jan. 28, 2021)",
+      "url": "https://web.archive.org/web/20250310005118id_/https://www.mdcourts.gov/data/opinions/cosa/2021/1006s19.pdf",
+      "locator": "Bel Air Carpet, Inc. v. Korey Homes Building Group, LLC, No. 1006, Sept. Term 2019, slip op. at 16 (Md. Ct. Spec. App. Jan. 28, 2021)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:18:04.466484+00:00",
+        "sha256": "973ec6257f37b97948ee520c607e1f1e9b7f461c5223c854206a0025519ac897"
+      }
     }
   },
   "court_directory": [
@@ -566,6 +578,23 @@
       "court": "District Court of Maryland",
       "effective_from": "2004-01-01",
       "publisher_member": "printed pp. 116–117"
+    },
+    "64bef02195d0a19bc4103f9bbcc848": {
+      "source_id": "US-MD:negligence_elements:e136d94b51e3",
+      "authority_type": "opinion",
+      "citation": "Bel Air Carpet, Inc. v. Korey Homes Building Group, LLC, No. 1006, Sept. Term 2019, slip op. at 16 (Md. Ct. Spec. App. Jan. 28, 2021)",
+      "text": "To sustain a cause of action for negligence in Maryland, a plaintiff must allege: (1) the defendant was under a duty to protect the plaintiff from harm; (2) a breach of that duty; (3) a causal relationship between the breach and the harm; and 4) the damages suffered.",
+      "text_sha256": "c43265fd5326f2d689466b14e0c2844280278b113f4c805de5b68a30852b2eb9",
+      "publisher_sha256": "973ec6257f37b97948ee520c607e1f1e9b7f461c5223c854206a0025519ac897",
+      "retrieved_at": "2026-11-21T04:18:04.466484+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2021-01-28",
+      "court": "Court of Special Appeals of Maryland",
+      "decision_date": "2021-01-28",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissal of a negligence claim against a lender in a construction-payment dispute.",
+      "publisher_member": "court opinion PDF p. 19"
     }
   },
   "fault_allocation": {

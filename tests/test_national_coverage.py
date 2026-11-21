@@ -444,6 +444,19 @@ class NationalCoverageTests(unittest.TestCase):
             self.assertFalse(provider.search(service.model_copy(update={"court": court})))
         self.assertFalse(provider.search(service.model_copy(update={"authority_status": "current", "authority_as_of": "2026-11-20"})))
 
+    def test_indiana_enacted_collection_provision_preserves_department_remedy(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Indiana", legal_area="consumer_debt",
+                               topics=["debt_collection"], authority_types=["statute"],
+                               authority_status="historical")
+        passages = [provider.fetch(key) for key in provider.search(query)]
+        remedy, = [doc.text for doc in passages if "the department may bring a civil action" in doc.text.lower()]
+        self.assertIn("consumer credit sales, consumer leases, or consumer loans", remedy)
+        self.assertIn("the court may grant relief only if it finds", remedy)
+        other_state = query.model_copy(update={"state": "Illinois"})
+        self.assertTrue(all(provider.fetch(key).text != remedy for key in provider.search(other_state)))
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current", "authority_as_of": "2026-11-20"})))
+
     def test_automated_transaction_enactment_is_scoped_and_historical(self):
         query = ResearchMatter(country="US", state="Arkansas", legal_area="contracts",
                                topics=["automated_contract_formation"], authority_types=["statute"],

@@ -305,6 +305,18 @@
         "retrieved_at": "2026-11-21T03:37:48.914679+00:00",
         "sha256": "a7ec99c310e4e9b74e7a582c5bad00db3e6b0c04b33dbfd623b07580870f1a71"
       }
+    },
+    "US-VT:negligence_elements:8b09bc42b097": {
+      "category": "negligence_elements",
+      "title": "Driscoll v. Wright Cut and Clean, LLC, 2024 VT 49, ¶ 7",
+      "url": "https://www.vtcourts.gov/sites/default/files/documents/op23-347.pdf",
+      "locator": "Driscoll v. Wright Cut and Clean, LLC, 2024 VT 49, ¶ 7",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:18:02.093262+00:00",
+        "sha256": "ebb8f5a019f9315989a589f220c7b0e0bc91f500eada31e9b5f5e733ea377c20"
+      }
     }
   },
   "court_directory": [
@@ -543,6 +555,23 @@
       "language": "en",
       "edition": "Vermont Supreme Court civil timing amendments effective January 1, 2018",
       "effective_from": "2018-01-01"
+    },
+    "128b6c2f20a320450d62e4f978f226": {
+      "source_id": "US-VT:negligence_elements:8b09bc42b097",
+      "authority_type": "opinion",
+      "citation": "Driscoll v. Wright Cut and Clean, LLC, 2024 VT 49, ¶ 7",
+      "text": "To survive judgment as a matter of law in a negligence claim, the plaintiff must produce sufficient evidence of (1) “a legal duty owed by defendant to plaintiff,” (2) “a breach of that duty,” (3) an “actual injury to the plaintiff,” and (4) “a causal link between the breach and the injury.” Zukatis v. Perry, 165 Vt. 298, 301, 682 A.2d 964, 966 (1996).",
+      "text_sha256": "471468a0a2b4b24ce174c3a1d59082509a95fbf74cae63fb0e01335724a37bba",
+      "publisher_sha256": "ebb8f5a019f9315989a589f220c7b0e0bc91f500eada31e9b5f5e733ea377c20",
+      "retrieved_at": "2026-11-21T04:18:02.093262+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2024-08-02",
+      "court": "Vermont Supreme Court",
+      "decision_date": "2024-08-02",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from judgment as a matter of law at trial on a negligence claim arising from a vehicle collision.",
+      "publisher_member": "court opinion PDF p. 4"
     }
   },
   "fault_allocation": {

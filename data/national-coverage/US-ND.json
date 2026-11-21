@@ -360,6 +360,18 @@
         "retrieved_at": "2026-11-20T23:15:49.805282+00:00",
         "sha256": "18483a275f1d44e54da31a06035744a0882e9a1d8c4c61df97ccaaa2f1422d24"
       }
+    },
+    "US-ND:negligence_elements:bd85a7356436": {
+      "category": "negligence_elements",
+      "title": "Schmidt v. Hess Corp., 2024 ND 72, ¶ 6",
+      "url": "https://web.archive.org/web/20240519124232id_/https://www.ndcourts.gov/supreme-court/opinions/156541",
+      "locator": "Schmidt v. Hess Corp., 2024 ND 72, ¶ 6",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:18:03.703378+00:00",
+        "sha256": "343af08796820a929a1abeeefbd03c290907ad32a80023f091c197ecb2a90f6c"
+      }
     }
   },
   "court_directory": [
@@ -584,6 +596,23 @@
       "retrieved_at": "2026-11-20T23:15:49.805282+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "822024b30126986e10306434ee77bd": {
+      "source_id": "US-ND:negligence_elements:bd85a7356436",
+      "authority_type": "opinion",
+      "citation": "Schmidt v. Hess Corp., 2024 ND 72, ¶ 6",
+      "text": "To prove negligence, a plaintiff must establish the existence of a duty, breach of that duty, and an injury proximately caused by the breach of duty. Bjerk, 2018 ND 124, ¶ 10.",
+      "text_sha256": "aea351415d9b12be9eb4c584375f07bc03997d57767bad46f98cb9266c9b1d8b",
+      "publisher_sha256": "343af08796820a929a1abeeefbd03c290907ad32a80023f091c197ecb2a90f6c",
+      "retrieved_at": "2026-11-21T04:18:03.703378+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2024-04-19",
+      "court": "Supreme Court of North Dakota",
+      "decision_date": "2024-04-19",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of summary judgments on a negligence claim for injuries suffered by an independent contractor’s employee.",
+      "publisher_member": "court opinion PDF p. 4"
     }
   },
   "fault_allocation": {

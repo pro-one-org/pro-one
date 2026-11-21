@@ -339,6 +339,18 @@
         "retrieved_at": "2026-11-20T22:55:55.695321+00:00",
         "sha256": "3c428d58067c1df7e6dfdc74ccebd1f43cf98a78509714e63de3421d7ce3fd92"
       }
+    },
+    "US-WY:negligence_elements:f7b199bbdee7": {
+      "category": "negligence_elements",
+      "title": "Glenn v. Union Pacific Railroad Co., 2008 WY 16, ¶ 7",
+      "url": "https://web.archive.org/web/20240525204930id_/https://documents.courts.state.wy.us/Opinions/2008WY16.pdf",
+      "locator": "Glenn v. Union Pacific Railroad Co., 2008 WY 16, ¶ 7",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:18:06.104743+00:00",
+        "sha256": "a98e17e3ed3b721b5baa74e5be61a4782dc5b2976e38ebdf86efeba7b7ebc1d4"
+      }
     }
   },
   "court_directory": [
@@ -595,6 +607,23 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Wyoming Legislature 2025 archived Statutes, Title 33"
+    },
+    "7aed30fae88fa857aa4ba50f73a228": {
+      "source_id": "US-WY:negligence_elements:f7b199bbdee7",
+      "authority_type": "opinion",
+      "citation": "Glenn v. Union Pacific Railroad Co., 2008 WY 16, ¶ 7",
+      "text": "In Natrona County v. Blake, 2003 WY 170, ¶ 6, 81 P.3d 948, 951 (Wyo. 2003), we listed the following elements of a negligence claim: (1) The defendant owed the plaintiff a duty to conform to a specified standard of care, (2) the defendant breached the duty of care, (3) the defendant’s breach of the duty of care proximately caused injury to the plaintiff, and (4) the injury sustained by the plaintiff is compensable by money damages.",
+      "text_sha256": "3601d3798a427fc669eed29a988161e08c6082e273ddb5e4c46288b67afd869a",
+      "publisher_sha256": "a98e17e3ed3b721b5baa74e5be61a4782dc5b2976e38ebdf86efeba7b7ebc1d4",
+      "retrieved_at": "2026-11-21T04:18:06.104743+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2008-02-08",
+      "court": "Supreme Court of Wyoming",
+      "decision_date": "2008-02-08",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in a negligence claim arising from an injury while closing a railroad car’s dump doors.",
+      "publisher_member": "court opinion PDF p. 4"
     }
   },
   "fault_allocation": {

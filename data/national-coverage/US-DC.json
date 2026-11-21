@@ -323,6 +323,18 @@
         "retrieved_at": "2026-11-21T04:05:27.962157+00:00",
         "sha256": "b9a80a86c4b087e860b8f99dabf55a4c9a0bcbc3041b7de1096dd1e54b880d15"
       }
+    },
+    "US-DC:negligence_elements:f8607d8963b7": {
+      "category": "negligence_elements",
+      "title": "Bushong v. Park, No. 02-CV-633, slip op. at 7 n.6 (D.C. Dec. 4, 2003)",
+      "url": "https://web.archive.org/web/20250425144136id_/https://www.dccourts.gov/sites/default/files/pdf-opinions/02-CV-633.PDF",
+      "locator": "Bushong v. Park, No. 02-CV-633, slip op. at 7 n.6 (D.C. Dec. 4, 2003)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:18:04.591559+00:00",
+        "sha256": "93ddf8cf633d9026c422564ba7cacbea441ee9341728a128a094ea007cf3194d"
+      }
     }
   },
   "court_directory": [
@@ -577,6 +589,23 @@
       "edition": "District of Columbia Superior Court Rules of Civil Procedure, 2025 publication",
       "court": "District of Columbia Superior Court, Civil Division",
       "publisher_member": "publisher rulebook PDF p. 50"
+    },
+    "ee2481142e784d823ce584bd8e1391": {
+      "source_id": "US-DC:negligence_elements:f8607d8963b7",
+      "authority_type": "opinion",
+      "citation": "Bushong v. Park, No. 02-CV-633, slip op. at 7 n.6 (D.C. Dec. 4, 2003)",
+      "text": "“The elements of a cause of action for negligence are a duty of care owed by the defendant to the plaintiff, a breach of that duty by the defendant, and damage to the interests of the plaintiff, proximately caused by the breach.” Taylor v. District of Columbia, 776 A.2d 1208, 1214 (D.C. 2001) (citation omitted).",
+      "text_sha256": "d329cfa70950e0e03c02ccc8d2e0ee03942d68ed131edaf343df27e0c1ff2e8f",
+      "publisher_sha256": "93ddf8cf633d9026c422564ba7cacbea441ee9341728a128a094ea007cf3194d",
+      "retrieved_at": "2026-11-21T04:18:04.591559+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2003-12-04",
+      "court": "District of Columbia Court of Appeals",
+      "decision_date": "2003-12-04",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of judgment as a matter of law on a negligence claim after the plaintiff presented evidence.",
+      "publisher_member": "court opinion PDF p. 7"
     }
   },
   "fault_allocation": {
