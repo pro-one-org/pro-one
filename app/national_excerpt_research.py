@@ -76,6 +76,7 @@ SUBJECTS = {
     "answer_contents": ("civil_procedure", "answer_contents"),
     "justice_court_response": ("civil_procedure", "justice_court_response"),
     "fees": ("civil_procedure", "filing_fees"),
+    "filing_cost_waiver": ("civil_procedure", "filing_cost_waiver"),
     "e_filing": ("civil_procedure", "electronic_filing"),
     "calendar": ("civil_procedure", "time_computation"),
     "contract_formation": ("contracts", "contract_formation"),

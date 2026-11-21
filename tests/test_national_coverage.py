@@ -23,6 +23,19 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_mississippi_service_time_does_not_supply_a_response_deadline(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Mississippi", legal_area="civil_procedure",
+                               topics=["service_time_limit"], authority_status="historical")
+        key, = provider.search(query)
+        text = provider.fetch(key).text
+        self.assertIn("within 120 days after the filing of the complaint", text)
+        self.assertIn("cannot show good cause", text)
+        self.assertIn("without prejudice", text)
+        self.assertNotIn(key, provider.search(query.model_copy(update={"topics": ["initial_response"]})))
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                  "authority_as_of": "2026-11-21"})))
+
     def test_wage_agency_authority_stays_scoped_to_the_publisher_and_claim_route(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="North Dakota", legal_area="employment", authority_status="unresolved",
