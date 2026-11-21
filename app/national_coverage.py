@@ -15,8 +15,10 @@ from app.national_certifications import certified_authority_type, certified_basi
 CAPABILITIES = {
     "research": {"statutes": ("statutes",), "constitution": ("constitution",),
                  "cases": ("opinions",), "regulations": ("regulations",), "rules": ("civil_rules", "court_rules")},
-    "substantive": {"negligence": ("negligence",), "premises": ("premises",), "fault_allocation": ("fault",),
-                    "contract": ("contract", "commercial_code"), "consumer": ("consumerLaw", "consumer_agency"),
+    "substantive": {"negligence": ("negligence", "negligence_elements"), "premises": ("premises",),
+                    "fault_allocation": ("fault",),
+                    "contract": ("contract", "commercial_code", "contract_formation", "contract_breach",
+                                 "general_contract_damages"), "consumer": ("consumerLaw", "consumer_agency"),
                     "landlord_tenant": ("deposit", "eviction"), "debt": ("debtLaw",),
                     "wage": ("wageLaw", "wage_separation", "labor_agency")},
     "negligence": {"duty": ("negligence_duty", "negligence_elements"), "breach": ("negligence_breach", "negligence_elements"),

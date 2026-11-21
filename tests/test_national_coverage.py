@@ -23,6 +23,34 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_partial_negligence_summary_uses_retained_passages_in_each_state(self):
+        for scope, jurisdiction in registry().items():
+            if jurisdiction.kind not in {"state", "district"}:
+                continue
+            with self.subTest(scope=scope):
+                cell = coverage(scope)["cells"]["substantive.negligence"]
+                self.assertTrue(cell["passage_selectors"])
+                self.assertEqual(cell["coverage_depth"], "partial")
+
+    def test_illinois_service_proof_is_separate_from_service_and_execution(self):
+        complaint = next(row for row in coverage("US-IL")["action_shells"] if row["action_type"] == "complaint")
+        proof, = complaint["review_evidence"]["service_proof"]
+        self.assertIn("102(d)", proof["citation"])
+        self.assertNotIn(proof, complaint["procedure_evidence"]["service"])
+        self.assertEqual(proof["currentness"], "historical")
+        self.assertEqual((complaint["readiness"], complaint["execution"]), ("blocked", "disabled"))
+
+    def test_kentucky_limitations_commencement_is_separate_from_commencement_rule(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Kentucky", legal_area="civil_procedure",
+                               topics=["limitations_commencement"], authority_status="unresolved")
+        key, = provider.search(query)
+        self.assertIn("first summons or process issued in good faith", provider.fetch(key).text)
+        self.assertNotIn(key, provider.search(query.model_copy(update={"topics": ["commencement"]})))
+        self.assertFalse(provider.search(query.model_copy(update={"state": "Illinois"})))
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                  "authority_as_of": "2026-11-21"})))
+
     def test_oklahoma_retains_both_limitations_versions_without_currentness_promotion(self):
         provider = LegislativeExcerpts("US-OK")
         versions = {}

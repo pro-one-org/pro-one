@@ -357,6 +357,30 @@
         "retrieved_at": "2026-11-20T22:36:55.263428+00:00",
         "sha256": "16a31770d5018a405ed16e685c94adf71ddd74e6a50156a0919466125dd6c8a5"
       }
+    },
+    "US-CO:summons_issuance:f96749cce504": {
+      "category": "summons_issuance",
+      "title": "Colo. R. Civ. P. 4(b)–(c)(1) (Rule Change 2024(08))",
+      "url": "https://www.coloradojudicial.gov/sites/default/files/2024-05/Rule%20Change%202024%2808%29.pdf",
+      "locator": "Colo. R. Civ. P. 4(b)–(c)(1) (Rule Change 2024(08))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:22:56.848123+00:00",
+        "sha256": "54604116264f7d15be39a099500d2d3b2e76adda1bc3632039081493e94701b5"
+      }
+    },
+    "US-CO:eviction_summons:2191483a0d7e": {
+      "category": "eviction_summons",
+      "title": "Colo. R. Civ. P. 4(c)(2) (Rule Change 2024(08))",
+      "url": "https://www.coloradojudicial.gov/sites/default/files/2024-05/Rule%20Change%202024%2808%29.pdf",
+      "locator": "Colo. R. Civ. P. 4(c)(2) (Rule Change 2024(08))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:22:56.848123+00:00",
+        "sha256": "54604116264f7d15be39a099500d2d3b2e76adda1bc3632039081493e94701b5"
+      }
     }
   },
   "court_directory": [
@@ -623,6 +647,36 @@
       "currentness": "unresolved",
       "language": "en",
       "edition": "Colorado Revised Statutes 2026 edition, Title 13"
+    },
+    "5bf067db13b497a96f3695b585d5a5": {
+      "source_id": "US-CO:summons_issuance:f96749cce504",
+      "authority_type": "court_rule",
+      "citation": "Colo. R. Civ. P. 4(b)–(c)(1) (Rule Change 2024(08))",
+      "text": "(b) Issuance of Summons by Attorney or Clerk. The summons may be signed and issued by the clerk, under the seal of the court, or it may be signed and issued by the attorney for the plaintiff. Separate additional or amended summons may issue against any defendant at any time. All other process shall be issued by the clerk, except as otherwise provided in these rules. (c) Contents of Summons. (1) The summons shall contain the name of the court, the county in which the action is brought, the names or designation of the parties, shall be directed to the defendant, shall state the time within which the defendant is required to appear and defend against the claims of the complaint, and shall notify the defendant that in case of the defendant's failure to do so, judgment by default may be rendered against the defendant. If the summons is served by publication, the summons shall briefly state the sum of money or other relief demanded. The summons shall contain the name, address, and registration number of the plaintiff's attorney, if any, and if none, the address of the plaintiff. Except in case of service by publication under Rule 4(g) or when otherwise ordered by the court, the complaint shall be served with the summons. In any case, where by special order personal service of summons is allowed without the complaint, a copy of the order shall be served with the summons.",
+      "text_sha256": "c7c0b8bbcd10549d5192bc14c746004b878d355a8c479463473daea154fb207b",
+      "publisher_sha256": "54604116264f7d15be39a099500d2d3b2e76adda1bc3632039081493e94701b5",
+      "retrieved_at": "2026-11-21T16:22:56.848123+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Colorado Supreme Court Rule Change 2024(08), adopted and effective May 2, 2024",
+      "court": "Colorado District Courts",
+      "publisher_member": "Colorado Supreme Court signed Rule Change 2024(08), PDF p. 2, Rule 4(b)–(c)(1); adoption at PDF p. 8",
+      "effective_from": "2024-05-02"
+    },
+    "341801415f783dda1a526d32675e9f": {
+      "source_id": "US-CO:eviction_summons:2191483a0d7e",
+      "authority_type": "court_rule",
+      "citation": "Colo. R. Civ. P. 4(c)(2) (Rule Change 2024(08))",
+      "text": "(2) In forcible entry and detainer cases, the summons shall also contain all language and information required by statute, and in addition to the complaint, be accompanied by a blank copy of Form JDF 103 Eviction Answer, Form JDF 186 Information for Eviction Cases, Form JDF 108 Request for Documents in Eviction Cases, and blank copies of forms JDF 205 and 206 (fee waiver forms).",
+      "text_sha256": "3870fc43b533963d8f0aafbbb45785947675d0dc1537f8f4a66b0d88d868b45f",
+      "publisher_sha256": "54604116264f7d15be39a099500d2d3b2e76adda1bc3632039081493e94701b5",
+      "retrieved_at": "2026-11-21T16:22:56.848123+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Colorado Supreme Court Rule Change 2024(08), adopted and effective May 2, 2024",
+      "court": "Colorado District Courts",
+      "publisher_member": "Colorado Supreme Court signed Rule Change 2024(08), PDF p. 2, Rule 4(c)(2); adoption at PDF p. 8",
+      "effective_from": "2024-05-02"
     }
   },
   "fault_allocation": {

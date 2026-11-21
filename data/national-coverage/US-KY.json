@@ -298,6 +298,30 @@
         "retrieved_at": "2026-11-21T04:34:46.136950+00:00",
         "sha256": "c254f4c1b7baf03285b6be6d5ad2aa9cc6dfe9d861b38746baf9f141e93aa2a2"
       }
+    },
+    "US-KY:commencement:f7c4f5176382": {
+      "category": "commencement",
+      "title": "Ky. R. Civ. P. 3.01 (March 2024 publisher edition)",
+      "url": "https://web.archive.org/web/20240418082433id_/https://govt.westlaw.com/kyrules/Document/N54769680A91B11DA8F5EE32367A250AE?contextData=%28sc.Default%29&originationContext=documenttoc&transitionType=CategoryPageItem&viewType=FullText",
+      "locator": "Ky. R. Civ. P. 3.01 (March 2024 publisher edition)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:24:45.002725+00:00",
+        "sha256": "39800b246e1b070f388bb65ded0b821c40109487f8da643db4d3f30e9e76c87b"
+      }
+    },
+    "US-KY:limitations_commencement:806b2dca59d8": {
+      "category": "limitations_commencement",
+      "title": "Ky. Rev. Stat. § 413.250",
+      "url": "https://apps.legislature.ky.gov/law/Statutes/statute.aspx?id=17889",
+      "locator": "Ky. Rev. Stat. § 413.250",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:24:43.273819+00:00",
+        "sha256": "85fd166f636fa50873d0cbcdda10200d1e76901d7e60571a8cf64654936a4dea"
+      }
     }
   },
   "court_directory": [
@@ -530,6 +554,34 @@
       "court": "Kentucky courts governed by the Kentucky Rules of Civil Procedure",
       "publisher_member": "unannotated rule text on the public Kentucky Court Rules site, excluding credits and editorial material",
       "effective_from": "1999-01-01"
+    },
+    "e9cc500b9036738533726aa291cadf": {
+      "source_id": "US-KY:commencement:f7c4f5176382",
+      "authority_type": "court_rule",
+      "citation": "Ky. R. Civ. P. 3.01 (March 2024 publisher edition)",
+      "text": "A civil action is commenced by the filing of a complaint with the court and the issuance of a summons or warning order thereon in good faith.",
+      "text_sha256": "841050527e3f3bbdfcbb3e1d9bbd4d3bbb315e1f6621aefb196243c788209fae",
+      "publisher_sha256": "39800b246e1b070f388bb65ded0b821c40109487f8da643db4d3f30e9e76c87b",
+      "retrieved_at": "2026-11-21T16:24:45.002725+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Kentucky Court Rules publisher edition with amendments received through March 1, 2024",
+      "court": "Kentucky courts governed by the Kentucky Rules of Civil Procedure",
+      "publisher_member": "Public Kentucky Court Rules, Rule 3.01, unannotated rule text through March 1, 2024",
+      "effective_from": "1953-07-01"
+    },
+    "f007046c4dd4b2aca29390f5089e44": {
+      "source_id": "US-KY:limitations_commencement:806b2dca59d8",
+      "authority_type": "statute",
+      "citation": "Ky. Rev. Stat. § 413.250",
+      "text": "An action shall be deemed to commence on the date of the first summons or process issued in good faith from the court having jurisdiction of the cause of action.",
+      "text_sha256": "10782f8f5d231a16a20bb24517f45380ceef890c316dafb66f0a59c271b925ca",
+      "publisher_sha256": "85fd166f636fa50873d0cbcdda10200d1e76901d7e60571a8cf64654936a4dea",
+      "retrieved_at": "2026-11-21T16:24:43.273819+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Kentucky Legislative Research Commission, ch. 413 Limitation of Actions, § 413.250",
+      "effective_from": "1942-10-01"
     }
   },
   "fault_allocation": {

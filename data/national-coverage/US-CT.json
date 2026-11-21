@@ -371,6 +371,54 @@
         "retrieved_at": "2026-11-20T22:36:54.102400+00:00",
         "sha256": "711abd246b895b297afea915d50f74ad0a846b78ff5fe70360286bc31a20af2e"
       }
+    },
+    "US-CT:service:9b025b5b7b3a": {
+      "category": "service",
+      "title": "Conn. Gen. Stat. § 52-54",
+      "url": "https://www.cga.ct.gov/current/pub/chap_896.htm",
+      "locator": "Conn. Gen. Stat. § 52-54",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:22:56.694411+00:00",
+        "sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5"
+      }
+    },
+    "US-CT:service:2f9fda83cba5": {
+      "category": "service",
+      "title": "Conn. Gen. Stat. § 52-57(a)",
+      "url": "https://www.cga.ct.gov/current/pub/chap_896.htm",
+      "locator": "Conn. Gen. Stat. § 52-57(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:22:56.694411+00:00",
+        "sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5"
+      }
+    },
+    "US-CT:service_business_entity:7585a17c66b1": {
+      "category": "service_business_entity",
+      "title": "Conn. Gen. Stat. § 52-57(c)",
+      "url": "https://www.cga.ct.gov/current/pub/chap_896.htm",
+      "locator": "Conn. Gen. Stat. § 52-57(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:22:56.694411+00:00",
+        "sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5"
+      }
+    },
+    "US-CT:summons_issuance:3b9d759ccbf7": {
+      "category": "summons_issuance",
+      "title": "Conn. Practice Book § 8-1(a) (2026 ed.)",
+      "url": "https://www.jud.ct.gov/publications/PracticeBook/PB.pdf",
+      "locator": "Conn. Practice Book § 8-1(a) (2026 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:23:08.401292+00:00",
+        "sha256": "bb406ab49314de7f6b49f5de43e1b2e354465bb70ce52ecc37412ec058db69d6"
+      }
     }
   },
   "court_directory": [
@@ -598,6 +646,56 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Connecticut General Statutes 2025 edition"
+    },
+    "1bdd0177c8a022bfb1c4274f3f8871": {
+      "source_id": "US-CT:service:9b025b5b7b3a",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 52-54",
+      "text": "The service of a writ of summons shall be made by the officer reading it and the complaint accompanying it in the hearing of the defendant or by leaving an attested copy thereof with him or at his usual place of abode. When service is made by leaving an attested copy at the defendant's usual place of abode, the officer making service shall note in his return the address at which such attested copy was left.",
+      "text_sha256": "edcb5ee9543f35437cd4cf1308a548810732ca1d5dcab620ca23bd46bf4fbca9",
+      "publisher_sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5",
+      "retrieved_at": "2026-11-21T16:22:56.694411+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Connecticut General Assembly, ch. 896 § 52-54, operative text preceding history"
+    },
+    "c328a1f534c561030a346532d950ab": {
+      "source_id": "US-CT:service:2f9fda83cba5",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 52-57(a)",
+      "text": "(a) Except as otherwise provided, process in any civil action shall be served by leaving a true and attested copy of it, including the declaration or complaint, with the defendant, or at his usual place of abode, in this state.",
+      "text_sha256": "504e7280d30942518ba31971c1bc8e226c65c46a74ae1a0006bcdca65a4e4307",
+      "publisher_sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5",
+      "retrieved_at": "2026-11-21T16:22:56.694411+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Connecticut General Assembly, ch. 896 § 52-57(a)"
+    },
+    "9fe749a2cad977dbcc16e25947b741": {
+      "source_id": "US-CT:service_business_entity:7585a17c66b1",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 52-57(c)",
+      "text": "(c) In actions against a private corporation, service of process shall be made either upon the president, the vice president, an assistant vice president, the secretary, the assistant secretary, the treasurer, the assistant treasurer, the cashier, the assistant cashier, the teller or the assistant teller or its general or managing agent or manager or upon any director resident in this state, or the person in charge of the business of the corporation or upon any person who is at the time of service in charge of the office of the corporation in the town in which its principal office or place of business is located. In actions against a private corporation established under the laws of any other state, any foreign country or the United States, service of process may be made upon any of the aforesaid officers or agents, or upon the agent of the corporation appointed pursuant to section 33-922 .",
+      "text_sha256": "79208946750530f00ff554a5bdf4bc640ca4873ef149ad38883ac8dabf0fe4cc",
+      "publisher_sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5",
+      "retrieved_at": "2026-11-21T16:22:56.694411+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Connecticut General Assembly, ch. 896 § 52-57(c)"
+    },
+    "1e69225f87ea29fbe1670bfbb1cc63": {
+      "source_id": "US-CT:summons_issuance:3b9d759ccbf7",
+      "authority_type": "court_rule",
+      "citation": "Conn. Practice Book § 8-1(a) (2026 ed.)",
+      "text": "(a) Process in civil actions shall be a writ of summons or attachment, describing the parties, the court to which it is returnable and the time and place of appearance, and shall be accompanied by the plaintiff’s complaint. Such writ may run into any judicial district or geographical area and shall be signed by a Commissioner of the Superior Court or a judge or clerk of the court to which it is returnable. Except in those actions and proceedings indicated below, the writ of summons shall be on a form substantially in compliance with the following Judicial Branch forms prescribed by the chief court administrator: Form JD-FM-3 in family actions, Form JD-HM-32 in summary process actions, and Form JD-CV-1 in other civil actions, as such forms shall from time to time be amended. Any person proceeding without the assistance of counsel shall sign the complaint and present the complaint and proposed writ of summons to the clerk; the clerk shall review the proposed writ of summons and, unless it is defective as to form, shall sign it.",
+      "text_sha256": "1775637bc2b9a31bf2b5b4eec0b485c49dec66049273155984f7f4b9257ba102",
+      "publisher_sha256": "bb406ab49314de7f6b49f5de43e1b2e354465bb70ce52ecc37412ec058db69d6",
+      "retrieved_at": "2026-11-21T16:23:08.401292+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Connecticut Superior Court",
+      "publisher_member": "Official 2026 Connecticut Practice Book, printed p. 191, § 8-1(a)",
+      "effective_from": "2014-01-01"
     }
   },
   "fault_allocation": {

@@ -420,6 +420,42 @@
         "retrieved_at": "2026-11-20T22:29:48.565486+00:00",
         "sha256": "23dc205309f7c99789a0cb5321531cc80a913aac14ac6d5cdc9ae333cf4b2ca6"
       }
+    },
+    "US-AK:venue:71e246c50838": {
+      "category": "venue",
+      "title": "Alaska R. Civ. P. 3(b)–(g)",
+      "url": "https://courts.alaska.gov/rules/docs/civ.pdf",
+      "locator": "Alaska R. Civ. P. 3(b)–(g)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:23:01.188644+00:00",
+        "sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb"
+      }
+    },
+    "US-AK:service:219da268e35f": {
+      "category": "service",
+      "title": "Alaska R. Civ. P. 4(d)(1)",
+      "url": "https://courts.alaska.gov/rules/docs/civ.pdf",
+      "locator": "Alaska R. Civ. P. 4(d)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:23:01.188644+00:00",
+        "sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb"
+      }
+    },
+    "US-AK:service_business_entity:eafee514f439": {
+      "category": "service_business_entity",
+      "title": "Alaska R. Civ. P. 4(d)(4)",
+      "url": "https://courts.alaska.gov/rules/docs/civ.pdf",
+      "locator": "Alaska R. Civ. P. 4(d)(4)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:23:01.188644+00:00",
+        "sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb"
+      }
     }
   },
   "court_directory": [
@@ -619,6 +655,45 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Alaska agency publication of collection statutes, May 2022"
+    },
+    "2cbfbfb0a05fb38ee955c8e4366bf5": {
+      "source_id": "US-AK:venue:71e246c50838",
+      "authority_type": "court_rule",
+      "citation": "Alaska R. Civ. P. 3(b)–(g)",
+      "text": "(b) All actions in ejectment, for recovery of possession, for quieting title, for partition, or for the enforcement of liens upon real property shall be commenced in the superior court in the judicial district in which the real property, or any part of it affected by the action, is situated. Such actions may also be commenced in the venue district in which the real property is located if the superior court in the district accepts such cases for filing. (c) If, in a civil action other than one specified in (b) of this rule, a defendant can be personally served within a judicial district of the State of Alaska, the action may be commenced either in: (1) the judicial district in which the claim arose; or (2) a judicial district where the defendant may be personally served; or (3) a venue district where the claim arose if the superior court in the district accepts such cases for filing. (d) Subject to a change of venue motion under AS 22.10.040, a trial and any hearings in an action shall be conducted in a venue district within the judicial district at a location which would best serve the convenience of the parties and witnesses. (e) Actions in cases not otherwise covered under this rule may be commenced in any judicial district of the state. (f) Failure to make timely objection to improper venue waives the venue requirements of this rule. (g) Venue districts as used in this rule refer to the districts referenced in the venue map described in Criminal Rule 18.",
+      "text_sha256": "4771a3ddb8bd0e5942f07c0d9f6dd0eefafd16c00676fa2db0f32ecf437b98d8",
+      "publisher_sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb",
+      "retrieved_at": "2026-11-21T16:23:01.188644+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska Superior Court and Alaska District Court insofar as applicable",
+      "publisher_member": "Alaska Court System Fall 2026 civil rules, printed p. 18, Rule 3(b)–(g)"
+    },
+    "a1d25f5e8343295f3a1995550951da": {
+      "source_id": "US-AK:service:219da268e35f",
+      "authority_type": "court_rule",
+      "citation": "Alaska R. Civ. P. 4(d)(1)",
+      "text": "(d) Summons—Personal Service. The summons and complaint shall be served together. The plaintiff shall furnish the person making service with such copies as are necessary. Service shall be made as follows: (1) Individuals. Upon an individual other than an infant or an incompetent person, by delivering a copy of the summons and of the complaint to the individual personally, or by leaving copies thereof at the individual’s dwelling house or usual place of abode with some person of suitable age and discretion then residing therein, or by delivering a copy of the summons and of the complaint to an agent authorized by appointment or by law to receive service of process.",
+      "text_sha256": "46e84fbc910f8b7577fe8fde3bbc29f373c64b7ff00e9292f43f13da9e790130",
+      "publisher_sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb",
+      "retrieved_at": "2026-11-21T16:23:01.188644+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska Superior Court and Alaska District Court insofar as applicable",
+      "publisher_member": "Alaska Court System Fall 2026 civil rules, printed p. 19, Rule 4(d) introduction and (1)"
+    },
+    "d1e2ddf2b479d1965c7bd2f2d65458": {
+      "source_id": "US-AK:service_business_entity:eafee514f439",
+      "authority_type": "court_rule",
+      "citation": "Alaska R. Civ. P. 4(d)(4)",
+      "text": "(4) Corporations or Limited Liability Companies. Upon a domestic or foreign corporation or limited liability company, by delivering a copy of the summons and of the complaint to a managing member, an officer, a managing or general agent, or to any other agent authorized by appointment or by law to receive service of process.",
+      "text_sha256": "be945e3c4e28d2946a889997b5286c9a64c74861874f51bc500337480a3ccf5a",
+      "publisher_sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb",
+      "retrieved_at": "2026-11-21T16:23:01.188644+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska Superior Court and Alaska District Court insofar as applicable",
+      "publisher_member": "Alaska Court System Fall 2026 civil rules, printed p. 20, Rule 4(d)(4)"
     }
   },
   "fault_allocation": {

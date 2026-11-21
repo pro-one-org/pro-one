@@ -369,6 +369,66 @@
         "retrieved_at": "2026-11-20T23:12:48.998861+00:00",
         "sha256": "cbcb910bd6873de3c90b9f82c733aebab721bfef20f5e89320524bf73d7859ce"
       }
+    },
+    "US-IL:venue:c707997cb697": {
+      "category": "venue",
+      "title": "735 ILCS 5/2-101 (general venue clause)",
+      "url": "https://web.archive.org/web/20251019152449id_/https://www.ilga.gov/documents/legislation/ilcs/documents/073500050K2-101.htm",
+      "locator": "735 ILCS 5/2-101 (general venue clause)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:24:44.859797+00:00",
+        "sha256": "fac43a61dc24af1653db2c99383d19416553064828666716af926bdd5dd9ecb5"
+      }
+    },
+    "US-IL:commencement:deb80b27d455": {
+      "category": "commencement",
+      "title": "735 ILCS 5/2-201(a)",
+      "url": "https://web.archive.org/web/20260121142440id_/https://www.ilga.gov/documents/legislation/ilcs/documents/073500050K2-201.htm",
+      "locator": "735 ILCS 5/2-201(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:24:45.984438+00:00",
+        "sha256": "13621a4d9d725e701c3bd498cafe190dda6e46597f263be28346ef8c601da82d"
+      }
+    },
+    "US-IL:service:d8013f621014": {
+      "category": "service",
+      "title": "Ill. Sup. Ct. R. 102(a)–(c) (April 2023 ed.)",
+      "url": "https://www.illinoiscourts.gov/resources/d890ef39-a2b2-4b43-8014-500f5c3826f3/file",
+      "locator": "Ill. Sup. Ct. R. 102(a)–(c) (April 2023 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:24:43.637839+00:00",
+        "sha256": "1581052308cf6ec48ec4cba4605efc195830724110ce7758b69426600a38b228"
+      }
+    },
+    "US-IL:service_proof:913a9156818c": {
+      "category": "service_proof",
+      "title": "Ill. Sup. Ct. R. 102(d) (April 2023 ed.)",
+      "url": "https://www.illinoiscourts.gov/resources/d890ef39-a2b2-4b43-8014-500f5c3826f3/file",
+      "locator": "Ill. Sup. Ct. R. 102(d) (April 2023 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:24:43.637839+00:00",
+        "sha256": "1581052308cf6ec48ec4cba4605efc195830724110ce7758b69426600a38b228"
+      }
+    },
+    "US-IL:response:7b7f1228ee09": {
+      "category": "response",
+      "title": "Ill. Sup. Ct. R. 101(d) (April 2023 ed.)",
+      "url": "https://www.illinoiscourts.gov/resources/4f5ab89a-4f26-459c-b5b5-da8f155ee5d7/file",
+      "locator": "Ill. Sup. Ct. R. 101(d) (April 2023 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:24:43.609356+00:00",
+        "sha256": "59c07c1008cecb69476e0bfc633445d67342c7716d98b9fdb913b3f472a896c0"
+      }
     }
   },
   "court_directory": [
@@ -631,6 +691,77 @@
       "language": "en",
       "edition": "Illinois Supreme Court published rule as amended effective 2023-04-20",
       "court": "Illinois Circuit Court",
+      "effective_from": "2023-04-20"
+    },
+    "6eb55715afd29e0e3bc2451dbbd942": {
+      "source_id": "US-IL:venue:c707997cb697",
+      "authority_type": "statute",
+      "citation": "735 ILCS 5/2-101 (general venue clause)",
+      "text": "Except as otherwise provided in this Act, every action must be commenced (1) in the county of residence of any defendant who is joined in good faith and with probable cause for the purpose of obtaining a judgment against him or her and not solely for the purpose of fixing venue in that county, or (2) in the county in which the transaction or some part thereof occurred out of which the cause of action arose.",
+      "text_sha256": "caf38a57b5438192dbb855da3a4ba479ea06aba0348605cde98b3d98f2b6b352",
+      "publisher_sha256": "fac43a61dc24af1653db2c99383d19416553064828666716af926bdd5dd9ecb5",
+      "retrieved_at": "2026-11-21T16:24:44.859797+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois General Assembly archive captured October 19, 2025",
+      "publisher_member": "Illinois General Assembly archived section 2-101, first operative sentence, October 19, 2025 capture"
+    },
+    "72b7d35f77a72f7749b997dccce0b0": {
+      "source_id": "US-IL:commencement:deb80b27d455",
+      "authority_type": "statute",
+      "citation": "735 ILCS 5/2-201(a)",
+      "text": "(a) Every action, unless otherwise expressly provided by statute, shall be commenced by the filing of a complaint. The clerk shall issue summons upon request of the plaintiff. The form and substance of the summons, and of all other process, and the issuance of alias process, and the service of copies of pleadings shall be according to rules.",
+      "text_sha256": "ab373080354ed44f68a38148c967e9b7193bf98cd5e570c4e7520f977b528ed4",
+      "publisher_sha256": "13621a4d9d725e701c3bd498cafe190dda6e46597f263be28346ef8c601da82d",
+      "retrieved_at": "2026-11-21T16:24:45.984438+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois General Assembly archive captured January 21, 2026",
+      "publisher_member": "Illinois General Assembly archived section 2-201(a), January 21, 2026 capture"
+    },
+    "e711e8fb354522863c131199e949e4": {
+      "source_id": "US-IL:service:d8013f621014",
+      "authority_type": "court_rule",
+      "citation": "Ill. Sup. Ct. R. 102(a)–(c) (April 2023 ed.)",
+      "text": "(a) Placement for Service. Promptly upon issuance, summons (together with copies of the complaint as required by Rule 104) shall be placed for service with the sheriff or other officer or person authorized to serve process. (b) When Service Must Be Made. No summons in the form provided in paragraph (d) of Rule 101 may be served later than 30 days after its date. A summons in the form provided in paragraph (b)(1) of Rule 101 may not be served later than 21 days before the day for appearance. A summons in the form provided in paragraph (b)(2) or (b)(3) of Rule 101 may not be served later than three days before the day of appearance. (c) Indorsement Showing Date of Service. The officer or other person making service of summons shall indorse the date of service upon the copy left with the defendant/respondent or other person. Failure to indorse the date of service does not affect the validity of service.",
+      "text_sha256": "13a732144b59f3d5394f5d9556ed09b7e767d0d3ab67e680e8f4bf4e8e64cbac",
+      "publisher_sha256": "1581052308cf6ec48ec4cba4605efc195830724110ce7758b69426600a38b228",
+      "retrieved_at": "2026-11-21T16:24:43.637839+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Supreme Court Rule 102, April 24, 2023 edition",
+      "court": "Illinois Circuit Courts",
+      "publisher_member": "Illinois Supreme Court Rules, Rule 102, p. 1, subsections (a)–(c)",
+      "effective_from": "2023-04-24"
+    },
+    "10e4c5be41947a5eb4eee76cabc2ce": {
+      "source_id": "US-IL:service_proof:913a9156818c",
+      "authority_type": "court_rule",
+      "citation": "Ill. Sup. Ct. R. 102(d) (April 2023 ed.)",
+      "text": "(d) Return. The officer or person making service shall make a return by filing proof of service immediately after service on all defendants/respondents has been had, and, in any event, shall make a return: (1) in the case of a summons in the form provided in Rule 101(b)(1), not less than 21 days before the day of appearance; (2) in the case of a summons in the form provided in Rule 101(b)(2) or (b)(3), not less than 3 days before that day; (3) in other cases, immediately after the last day fixed for service. If there is more than one defendant/respondent, the proof of service may be filed immediately after service on each defendant/respondent. The proof of service need not state whether a copy of the complaint was served. A party who has placed a summons with an officer or other person who is authorized to serve process, but who does not have access to the court filing system, shall file the proof of service obtained from the officer. Failure to return the summons or file proof of service does not invalidate the summons or the service thereof, if had.",
+      "text_sha256": "717378ce86fec38182b87771cb52ebdcc707da9be0e311ca6ab22d99a96c28df",
+      "publisher_sha256": "1581052308cf6ec48ec4cba4605efc195830724110ce7758b69426600a38b228",
+      "retrieved_at": "2026-11-21T16:24:43.637839+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Supreme Court Rule 102, April 24, 2023 edition",
+      "court": "Illinois Circuit Courts",
+      "publisher_member": "Illinois Supreme Court Rules, Rule 102, p. 1, subsection (d)",
+      "effective_from": "2023-04-24"
+    },
+    "c7d75d4ccd82f8bceaa9434058ddaa": {
+      "source_id": "US-IL:response:7b7f1228ee09",
+      "authority_type": "court_rule",
+      "citation": "Ill. Sup. Ct. R. 101(d) (April 2023 ed.)",
+      "text": "(d) Summons Requiring Appearance Within 30 Days After Service. In all other cases the summons shall require each defendant to file his answer or otherwise file his appearance within 30 days after service, exclusive of the day of service (see Rule 181(a)), and shall be prepared by utilizing, or substantially adopting the appearance and content of, the form provided in the Article II Forms Appendix.",
+      "text_sha256": "3cfe406f59c64598625e23c09d8172363825d2e174c7cd27570fc0f2b9a18f08",
+      "publisher_sha256": "59c07c1008cecb69476e0bfc633445d67342c7716d98b9fdb913b3f472a896c0",
+      "retrieved_at": "2026-11-21T16:24:43.609356+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Supreme Court Rule 101, April 20, 2023 edition",
+      "court": "Illinois Circuit Courts",
+      "publisher_member": "Illinois Supreme Court Rules, Rule 101, p. 2, subsection (d), residual cases governed by Rule 181(a)",
       "effective_from": "2023-04-20"
     }
   },
