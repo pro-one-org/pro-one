@@ -384,6 +384,18 @@
         "retrieved_at": "2026-11-21T17:31:03.848068+00:00",
         "sha256": "386abf01fc3cfe397aa7c35dcff13228aa9f4662b6ba01e13f34d31299a22c3a"
       }
+    },
+    "US-UT:venue:975d133960d5": {
+      "category": "venue",
+      "title": "Utah Code § 78B-3a-201",
+      "url": "https://le.utah.gov/xcode/Title78B/Chapter3A/C78B-3a-S201_2023050320240701.pdf",
+      "locator": "Utah Code § 78B-3a-201",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:38:38.535103+00:00",
+        "sha256": "dc13ad303f2c28159a78a492178789d18f4633e0afa2aaa8e81e56823b92088a"
+      }
     }
   },
   "court_directory": [
@@ -683,6 +695,19 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Publisher PDF p. 13–14, Utah Code § 78B-2-304(3), statutory text"
+    },
+    "9c560c4624ef5dfe029e31bb7424b9": {
+      "source_id": "US-UT:venue:975d133960d5",
+      "authority_type": "statute",
+      "citation": "Utah Code § 78B-3a-201",
+      "text": "(1) Except as otherwise provided by this chapter or another provision of the Utah Code, a plaintiff shall bring an action in the county in which: (a) the cause of action arises; or (b) any defendant resides at the commencement of the action. (2) If none of the defendants reside in this state, the plaintiff may bring the action in any county designated by the plaintiff in the complaint. (3) If the defendant is about to depart from the state, the plaintiff may bring the action in any county where any of the parties resides or service is had.",
+      "text_sha256": "ce8fbdb141b4b0da6b18020fb7740fc9347ac30655ecc5800faf1536672578ac",
+      "publisher_sha256": "dc13ad303f2c28159a78a492178789d18f4633e0afa2aaa8e81e56823b92088a",
+      "retrieved_at": "2026-11-21T17:38:38.535103+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 1, Utah Code § 78B-3a-201, statutory text",
+      "effective_from": "2024-07-01"
     }
   },
   "fault_allocation": {

@@ -23,6 +23,19 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_maryland_wrongful_death_timing_retains_statutory_exceptions(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Maryland", legal_area="torts",
+                               topics=["wrongful_death_limitations"], authority_status="unresolved")
+        key, = provider.search(query)
+        text = provider.fetch(key).text
+        self.assertIn("whichever is the shorter", text)
+        self.assertIn("criminal homicide under State or federal law", text)
+        self.assertIn("unsealed and available to the public", text)
+        self.assertNotIn(key, provider.search(query.model_copy(update={"topics": ["limitations"]})))
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                  "authority_as_of": "2026-11-21"})))
+
     def test_service_deadline_coverage_requires_timing_evidence(self):
         colorado = coverage("US-CO")["cells"]
         self.assertTrue(colorado["procedure.service"]["passage_selectors"])

@@ -384,6 +384,30 @@
         "retrieved_at": "2026-11-21T17:31:03.523723+00:00",
         "sha256": "3871cd31528add2bff446d6b41f7fe352ae621ad392436b878473c099686c80d"
       }
+    },
+    "US-KS:venue:543a5c6b5d93": {
+      "category": "venue",
+      "title": "Kan. Stat. Ann. § 60-603",
+      "url": "https://kslegislature.gov/media/statute/060_000_0000_chapter/060_006_0000_article/060_006_0003_section/060_006_0003_k.pdf",
+      "locator": "Kan. Stat. Ann. § 60-603",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:38:38.468893+00:00",
+        "sha256": "22bbc5e7821d0205ae16fdc07ba3c7770153f62e0a6c5503f3abb6bf8bcec205"
+      }
+    },
+    "US-KS:venue:6b94cedf548f": {
+      "category": "venue",
+      "title": "Kan. Stat. Ann. § 60-604",
+      "url": "https://kslegislature.gov/media/statute/060_000_0000_chapter/060_006_0000_article/060_006_0004_section/060_006_0004_k.pdf",
+      "locator": "Kan. Stat. Ann. § 60-604",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:38:38.366595+00:00",
+        "sha256": "3fe810c6ae0a475c41d095ee6d6e8950f993365572327f06834310e2bcc8c911"
+      }
     }
   },
   "court_directory": [
@@ -656,6 +680,32 @@
       "edition": "Kansas Legislature 2025 statutes",
       "publisher_member": "Publisher PDF p. 1, Kan. Stat. Ann. § 60-512(1), statutory text",
       "effective_from": "1964-01-01"
+    },
+    "94900b1ea6dc3a57f1ee389c59dc6c": {
+      "source_id": "US-KS:venue:543a5c6b5d93",
+      "authority_type": "statute",
+      "citation": "Kan. Stat. Ann. § 60-603",
+      "text": "An action against a resident of this state, other than an action for which venue is otherwise specifically prescribed by law may be brought in the county, (1) in which the defendant resides, or (2) in which the plaintiff resides if the defendant is served therein, or (3) in which the cause of action arose, or (4) in which the defendant has a place of business or of employment if said defendant is served therein, or (5) in which the estate of a deceased person is being probated if such deceased person was jointly liable with the defendant and a demand to enforce such liability has been duly exhibited in the probate proceedings, or (6) in which there is located tangible personal property which is the subject of an action for the possession thereof if immediate possession is sought in accordance with K.S.A. 60-1005 at the time of the filing of the action.",
+      "text_sha256": "d67e9d8d116d9ed9d76d12e7b17fb60d19741417e2d74bd135e4e756e0b38b69",
+      "publisher_sha256": "22bbc5e7821d0205ae16fdc07ba3c7770153f62e0a6c5503f3abb6bf8bcec205",
+      "retrieved_at": "2026-11-21T17:38:38.468893+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Kansas Legislature 2025 statutes",
+      "publisher_member": "Publisher PDF p. 1, Kan. Stat. Ann. § 60-603, statutory text"
+    },
+    "d6300692553b5720fce535931653e4": {
+      "source_id": "US-KS:venue:6b94cedf548f",
+      "authority_type": "statute",
+      "citation": "Kan. Stat. Ann. § 60-604",
+      "text": "An action against a domestic corporation, or against a foreign corporation which is qualified to do business in this state, other than an action for which venue is otherwise specifically prescribed by law, may be brought in the county in which: (1) Its registered office is located; (2) the cause of action arose; (3) the defendant is transacting business at the time of the filing of the petition, if the plaintiff is a resident of such county at the time the cause of action arose; (4) there is located tangible personal property which is the subject of an action for the possession thereof if immediate possession is sought in accordance with K.S.A. 60-1005 and amendments thereto at the time of the filing of the action; or (5) equipment or facilities for use in the supply of transportation services, or communication services, including, without limitation, telephonic communication services, are located, where the subject of such action relates to transportation services or communication services supplied or rendered, in whole or in part, using such equipment or facilities.",
+      "text_sha256": "3f697210b13e337124e210798a7147f5026d5f81d372d2811b80d1f6973f9530",
+      "publisher_sha256": "3fe810c6ae0a475c41d095ee6d6e8950f993365572327f06834310e2bcc8c911",
+      "retrieved_at": "2026-11-21T17:38:38.366595+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Kansas Legislature 2025 statutes",
+      "publisher_member": "Publisher PDF p. 1, Kan. Stat. Ann. § 60-604, statutory text"
     }
   },
   "fault_allocation": {

@@ -405,6 +405,42 @@
         "retrieved_at": "2026-11-21T16:54:43.901197+00:00",
         "sha256": "310aff987f01fba0fdb12deddaa93a5b0d34186e49c1d8b30b9673b66a978b7d"
       }
+    },
+    "US-MD:general_contract_limitations:98b45052fab0": {
+      "category": "general_contract_limitations",
+      "title": "Md. Code, Cts. & Jud. Proc. § 5-101",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&enactments=false&section=5-101",
+      "locator": "Md. Code, Cts. & Jud. Proc. § 5-101",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:38:38.428539+00:00",
+        "sha256": "a9e8a7e8c8dd673b6bb1990c99a6b81df407ba7dc9d0226df046638bba7078ae"
+      }
+    },
+    "US-MD:written_contract_limitations:34a50bfe74b3": {
+      "category": "written_contract_limitations",
+      "title": "Md. Code, Cts. & Jud. Proc. § 5-102",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&enactments=false&section=5-102",
+      "locator": "Md. Code, Cts. & Jud. Proc. § 5-102",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:38:38.444714+00:00",
+        "sha256": "8b788d0f2eca9bc1d01c97c4d99d0e55d4c030ce9df55b3d2c2d126d2031e145"
+      }
+    },
+    "US-MD:wrongful_death_limitations:0352e001f41a": {
+      "category": "wrongful_death_limitations",
+      "title": "Md. Code, Cts. & Jud. Proc. § 3-904(g)",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&enactments=false&section=3-904",
+      "locator": "Md. Code, Cts. & Jud. Proc. § 3-904(g)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:38:38.455077+00:00",
+        "sha256": "702083ebe982970a86bba72dc4ebeaf382e21e7bfbe7c4864a92310c5ba4b8fa"
+      }
     }
   },
   "court_directory": [
@@ -731,6 +767,42 @@
       "decision_date": "2015-02-25",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from dismissal; the appellate court affirmed the dismissal as to Tung for insufficient service."
+    },
+    "5c8c8fa6d19ddfb298c5fb13481261": {
+      "source_id": "US-MD:general_contract_limitations:98b45052fab0",
+      "authority_type": "statute",
+      "citation": "Md. Code, Cts. & Jud. Proc. § 5-101",
+      "text": "A civil action at law shall be filed within three years from the date it accrues unless another provision of the Code provides a different period of time within which an action shall be commenced.",
+      "text_sha256": "8a5ad4f7f83de56966e74fe94c5540bf4c9b87c3ee2527ac65eea3d213f19e71",
+      "publisher_sha256": "a9e8a7e8c8dd673b6bb1990c99a6b81df407ba7dc9d0226df046638bba7078ae",
+      "retrieved_at": "2026-11-21T17:38:38.428539+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Maryland General Assembly statutory text, § 5-101"
+    },
+    "532b065ea1a3df35ce723e5e71c1d7": {
+      "source_id": "US-MD:written_contract_limitations:34a50bfe74b3",
+      "authority_type": "statute",
+      "citation": "Md. Code, Cts. & Jud. Proc. § 5-102",
+      "text": "(a) An action on one of the following specialties shall be filed within 12 years after the cause of action accrues, or within 12 years from the date of the death of the last to die of the principal debtor or creditor, whichever is sooner: (1) Promissory note or other instrument under seal; (2) Bond except a public officer’s bond; (3) Judgment; (4) Recognizance; (5) Contract under seal; or (6) Any other specialty. (b) A payment of principal or interest on a specialty suspends the operation of this section as to the specialty for three years after the date of payment. (c) This section does not apply to: (1) A specialty taken for the use of the State; (2) A deed of trust, mortgage, or promissory note that has been signed under seal and secures or is secured by owner–occupied residential property, as defined in § 7–105.1 of the Real Property Article; or (3) A contract, including a contract under seal, or a promissory note or other instrument under seal that is: (i) Related to an obligation of a consumer to pay consumer debt, as defined in § 5–1201 of this title, that arises from hospital services, as defined in § 19–201 of the Health – General Article; and (ii) Between a consumer and a hospital, as defined in § 19–301 of the Health – General Article.",
+      "text_sha256": "1fa270c0ccfd53d9e85ae6bb90503734ea784d3091154c1c882d7b3701975cc6",
+      "publisher_sha256": "8b788d0f2eca9bc1d01c97c4d99d0e55d4c030ce9df55b3d2c2d126d2031e145",
+      "retrieved_at": "2026-11-21T17:38:38.444714+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Maryland General Assembly statutory text, § 5-102"
+    },
+    "8099401a254076da716eeadee0501b": {
+      "source_id": "US-MD:wrongful_death_limitations:0352e001f41a",
+      "authority_type": "statute",
+      "citation": "Md. Code, Cts. & Jud. Proc. § 3-904(g)",
+      "text": "(g) (1) Except as provided in paragraph (2) or (3) of this subsection, an action under this subtitle shall be filed within three years after the death of the injured person. (2) (i) In this paragraph, “occupational disease” means a disease caused by exposure to any toxic substance in the person’s workplace and contracted by a person in the course of the person’s employment. (ii) If an occupational disease was a cause of a person’s death, an action shall be filed: 1. Within 10 years of the time of death; or 2. Within 3 years of the date when the cause of death was discovered, whichever is the shorter. (3) (i) This paragraph applies only to a wrongful death cause of action arising from conduct that would constitute a criminal homicide under State or federal law. (ii) If knowledge of a cause of action or the identity of a person whose wrongful act contributed to a homicide is kept from a party by the conduct of an adverse party or an accessory or accomplice of an adverse party: 1. The cause of action shall be deemed to accrue at the time the party discovered or should have discovered by the exercise of ordinary diligence the homicide and the identity of the person who contributed to the homicide; 2. A presumption shall exist that the party should have discovered by the exercise of ordinary diligence the identity of the person who contributed to the homicide after: A. A charging document is filed against the person alleged to have participated in the homicide; and B. The charging document is unsealed and available to the public; and 3. An action under this subtitle shall be filed within 3 years after the date that the cause of action accrues.",
+      "text_sha256": "c6a7e53cb301ac29e6043cdeee1e1a5e35b853f6b487870816b940490b97976c",
+      "publisher_sha256": "702083ebe982970a86bba72dc4ebeaf382e21e7bfbe7c4864a92310c5ba4b8fa",
+      "retrieved_at": "2026-11-21T17:38:38.455077+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Maryland General Assembly statutory text, § 3-904(g)"
     }
   },
   "fault_allocation": {

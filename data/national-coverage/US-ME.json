@@ -479,6 +479,30 @@
         "retrieved_at": "2026-11-21T16:54:39.185231+00:00",
         "sha256": "588c5c4b36f707c5786f400507456f8d962e2b50934dc2f55c99d2533a7f3031"
       }
+    },
+    "US-ME:general_contract_limitations:b6efbfce321f": {
+      "category": "general_contract_limitations",
+      "title": "Me. Rev. Stat. tit. 14, § 752",
+      "url": "https://legislature.maine.gov/statutes/14/title14sec752.html",
+      "locator": "Me. Rev. Stat. tit. 14, § 752",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:38:40.158486+00:00",
+        "sha256": "0069d0fa956ed2a7aabe5fe2f99a5fbfe8fefc9eeb9c957609af14edaff0c0bd"
+      }
+    },
+    "US-ME:wrongful_death_limitations:e3c1f96472f5": {
+      "category": "wrongful_death_limitations",
+      "title": "Me. Rev. Stat. tit. 18-C, § 2-807(2), timing clause",
+      "url": "https://legislature.maine.gov/statutes/18-C/title18-Csec2-807.html",
+      "locator": "Me. Rev. Stat. tit. 18-C, § 2-807(2), timing clause",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:38:40.224698+00:00",
+        "sha256": "b964d00744330e10b1686ef20b5bd2a7739b7702a86cd7c06e9529fe36befa52"
+      }
     }
   },
   "court_directory": [
@@ -870,6 +894,30 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Maine Legislature Revisor of Statutes, Article 2 Sales, § 2-725, text preceding history"
+    },
+    "a5b2baccd9119992e6fbf4956618e3": {
+      "source_id": "US-ME:general_contract_limitations:b6efbfce321f",
+      "authority_type": "statute",
+      "citation": "Me. Rev. Stat. tit. 14, § 752",
+      "text": "All civil actions shall be commenced within 6 years after the cause of action accrues and not afterwards, except actions on a judgment or decree of any court of record of the United States, or of any state, or of a justice of the peace in this State, and except as otherwise specially provided.",
+      "text_sha256": "06d32b803495ec74c2f3ddceb0e8e36da3161898c314946292e69e41139b1e2c",
+      "publisher_sha256": "0069d0fa956ed2a7aabe5fe2f99a5fbfe8fefc9eeb9c957609af14edaff0c0bd",
+      "retrieved_at": "2026-11-21T17:38:40.158486+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Maine Revisor of Statutes § 752, bounded statutory text from October 5, 2026 extraction"
+    },
+    "c9ec446965daa9a350f449fa1ff61b": {
+      "source_id": "US-ME:wrongful_death_limitations:e3c1f96472f5",
+      "authority_type": "statute",
+      "citation": "Me. Rev. Stat. tit. 18-C, § 2-807(2), timing clause",
+      "text": "An action under this section must be commenced within 3 years after the decedent's death, except that if the decedent's death is caused by a homicide, the action may be commenced within 6 years of the date the personal representative or special administrator of the decedent discovers that there is a just cause of action against the person who caused the homicide.",
+      "text_sha256": "90df44ada0646e5c3afd18e0b8547d2598c69d207e3ea139758d90c82edc4213",
+      "publisher_sha256": "b964d00744330e10b1686ef20b5bd2a7739b7702a86cd7c06e9529fe36befa52",
+      "retrieved_at": "2026-11-21T17:38:40.224698+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Maine Revisor of Statutes § 2-807(2), bounded timing text; subsection (4) separately concerns government claims"
     }
   },
   "fault_allocation": {

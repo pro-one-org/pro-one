@@ -374,6 +374,30 @@
         "retrieved_at": "2026-11-20T18:35:16.744966+00:00",
         "sha256": "9447add5bbd46d5a876ed9726aae19dba49873aba8a35435ccf5b9945452912d"
       }
+    },
+    "US-HI:general_contract_limitations:c002cb0fb2cf": {
+      "category": "general_contract_limitations",
+      "title": "Haw. Rev. Stat. § 657-1(1)",
+      "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0657/HRS_0657-0001.htm",
+      "locator": "Haw. Rev. Stat. § 657-1(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:38:38.764244+00:00",
+        "sha256": "b2de2c6f6a9aaeb341db96b22493a108cd4034b122e02e7575ed4eb2f54f6218"
+      }
+    },
+    "US-HI:wrongful_death_limitations:0ee167906c52": {
+      "category": "wrongful_death_limitations",
+      "title": "Haw. Rev. Stat. § 663-3(b), final sentence",
+      "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0663/HRS_0663-0003.htm",
+      "locator": "Haw. Rev. Stat. § 663-3(b), final sentence",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:38:38.803275+00:00",
+        "sha256": "09f48d94c9c3111cf9cfbf931e4cc9846a2b9fe48e986cbf4ff915b5a16a94b2"
+      }
     }
   },
   "court_directory": [
@@ -629,6 +653,30 @@
       "retrieved_at": "2026-11-20T18:35:16.744966+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "09b23c5f0602a14219fd8d852fba2c": {
+      "source_id": "US-HI:general_contract_limitations:c002cb0fb2cf",
+      "authority_type": "statute",
+      "citation": "Haw. Rev. Stat. § 657-1(1)",
+      "text": "The following actions shall be commenced within six years next after the cause of action accrued, and not after: (1) Actions for the recovery of any debt founded upon any contract, obligation, or liability, excepting such as are brought upon the judgment or decree of a court; excepting further that actions for the recovery of any debt founded upon any contract, obligation, or liability made pursuant to chapter 577A shall be governed by chapter 577A;",
+      "text_sha256": "dea7e65a794276934b6cf4b8baa062c6323c50d43968c5c81095ba3500721074",
+      "publisher_sha256": "b2de2c6f6a9aaeb341db96b22493a108cd4034b122e02e7575ed4eb2f54f6218",
+      "retrieved_at": "2026-11-21T17:38:38.764244+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Hawaii Legislature HRS § 657-1, lead-in and paragraph (1)"
+    },
+    "5b77c50d591f298effc2834b41804e": {
+      "source_id": "US-HI:wrongful_death_limitations:0ee167906c52",
+      "authority_type": "statute",
+      "citation": "Haw. Rev. Stat. § 663-3(b), final sentence",
+      "text": "Any action brought under this section shall be commenced within two years from the date of death of the injured person, except as otherwise provided.",
+      "text_sha256": "a4f673472975a449c93dd4f4017e5de07ea4997d3f0cb2fdb007e9ffa9f96d40",
+      "publisher_sha256": "09f48d94c9c3111cf9cfbf931e4cc9846a2b9fe48e986cbf4ff915b5a16a94b2",
+      "retrieved_at": "2026-11-21T17:38:38.803275+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Hawaii Legislature HRS § 663-3(b), last sentence"
     }
   },
   "fault_allocation": {

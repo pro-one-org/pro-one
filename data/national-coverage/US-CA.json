@@ -564,6 +564,42 @@
         "retrieved_at": "2026-11-21T16:22:58.680508+00:00",
         "sha256": "cd58b0a0ccdeb8debbc55dafa988c50c3428b59e398603eda1325a9cf25ca676"
       }
+    },
+    "US-CA:written_contract_limitations:e091e63efedc": {
+      "category": "written_contract_limitations",
+      "title": "Cal. Civ. Proc. Code § 337(a)",
+      "url": "https://web.archive.org/web/20260611042344id_/https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=337.",
+      "locator": "Cal. Civ. Proc. Code § 337(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:38:42.359248+00:00",
+        "sha256": "3f822a8bc5ae4666498219012ef2578a83c89c75662a8e29742e7b6dfc464bb6"
+      }
+    },
+    "US-CA:oral_contract_limitations:376e4adcc8dd": {
+      "category": "oral_contract_limitations",
+      "title": "Cal. Civ. Proc. Code § 339(1)",
+      "url": "https://web.archive.org/web/20260611042344id_/https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=339.",
+      "locator": "Cal. Civ. Proc. Code § 339(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:38:41.650117+00:00",
+        "sha256": "23a7d18931b179acf4fc30db3a51c0d126d42b38528f8007068e63fb5f021765"
+      }
+    },
+    "US-CA:debt_limitations:547d63bc06ed": {
+      "category": "debt_limitations",
+      "title": "Cal. Civ. Proc. Code § 337(d)",
+      "url": "https://web.archive.org/web/20260611042344id_/https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=337.",
+      "locator": "Cal. Civ. Proc. Code § 337(d)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:38:42.359248+00:00",
+        "sha256": "3f822a8bc5ae4666498219012ef2578a83c89c75662a8e29742e7b6dfc464bb6"
+      }
     }
   },
   "court_directory": [
@@ -1040,6 +1076,48 @@
       "language": "en",
       "edition": "California Legislature archive captured December 4, 2025",
       "publisher_member": "California Legislature archived article 3, section 415.50 (December 4, 2025 capture)"
+    },
+    "12eec558a0e5e6e9463db15c29aa2f": {
+      "source_id": "US-CA:written_contract_limitations:e091e63efedc",
+      "authority_type": "statute",
+      "citation": "Cal. Civ. Proc. Code § 337(a)",
+      "text": "Within four years: (a) An action upon any contract, obligation or liability founded upon an instrument in writing, except as provided in Section 336a; provided, that the time within which any action for a money judgment for the balance due upon an obligation for the payment of which a deed of trust or mortgage with power of sale upon real property or any interest therein was given as security, following the exercise of the power of sale in such deed of trust or mortgage, may be brought shall not extend beyond three months after the time of sale under such deed of trust or mortgage.",
+      "text_sha256": "e19098cdb266097e3331aa42732f99c4064460c14daafb7771ceef526180dcd2",
+      "publisher_sha256": "3f822a8bc5ae4666498219012ef2578a83c89c75662a8e29742e7b6dfc464bb6",
+      "retrieved_at": "2026-11-21T17:38:42.359248+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "California Legislature code publication archived June 11, 2026",
+      "publisher_member": "California Legislature statutory section 337(a), replayed from June 11, 2026 capture",
+      "effective_from": "2019-01-01"
+    },
+    "ca794f3c04aed3278a6c3076b58485": {
+      "source_id": "US-CA:oral_contract_limitations:376e4adcc8dd",
+      "authority_type": "statute",
+      "citation": "Cal. Civ. Proc. Code § 339(1)",
+      "text": "Within two years: 1. An action upon a contract, obligation or liability not founded upon an instrument of writing, except as provided in Section 2725 of the Commercial Code or subdivision 2 of Section 337 of this code; or an action founded upon a contract, obligation or liability, evidenced by a certificate, or abstract or guaranty of title of real property, or by a policy of title insurance; provided, that the cause of action upon a contract, obligation or liability evidenced by a certificate, or abstract or guaranty of title of real property or policy of title insurance shall not be deemed to have accrued until the discovery of the loss or damage suffered by the aggrieved party thereunder.",
+      "text_sha256": "c13ffe09e5cbcae39a5487e76b401e985b399ee12e71045b4156513772356314",
+      "publisher_sha256": "23a7d18931b179acf4fc30db3a51c0d126d42b38528f8007068e63fb5f021765",
+      "retrieved_at": "2026-11-21T17:38:41.650117+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "California Legislature code publication archived June 11, 2026",
+      "publisher_member": "California Legislature statutory section 339(1), replayed from June 11, 2026 capture",
+      "effective_from": "1997-01-01"
+    },
+    "d0e3cae91deeb59d8efae186aefcac": {
+      "source_id": "US-CA:debt_limitations:547d63bc06ed",
+      "authority_type": "statute",
+      "citation": "Cal. Civ. Proc. Code § 337(d)",
+      "text": "(d) When the period in which an action must be commenced under this section has run, a person shall not bring suit or initiate an arbitration or other legal proceeding to collect the debt. The period in which an action may be commenced under this section shall only be extended pursuant to Section 360.",
+      "text_sha256": "3ba7adc2fbcefc4d10bd5bead821b440e39efab17b652efe9edb40406081d9ca",
+      "publisher_sha256": "3f822a8bc5ae4666498219012ef2578a83c89c75662a8e29742e7b6dfc464bb6",
+      "retrieved_at": "2026-11-21T17:38:42.359248+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "California Legislature code publication archived June 11, 2026",
+      "publisher_member": "California Legislature statutory section 337(d), replayed from June 11, 2026 capture",
+      "effective_from": "2019-01-01"
     }
   },
   "fault_allocation": {
