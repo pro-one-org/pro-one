@@ -87,6 +87,20 @@ class NationalCoverageTests(unittest.TestCase):
             self.assertNotIn(topic, shell["procedure_evidence"])
             self.assertEqual((shell["readiness"], shell["execution"]), ("blocked", "disabled"))
 
+    def test_minnesota_contract_pleading_retains_nominal_damages_qualification(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Minnesota", legal_area="contracts",
+                               topics=["contract_breach"], authority_types=["opinion"],
+                               authority_status="historical")
+        documents = [provider.fetch(key) for key in provider.search(query)]
+        park, = [doc for doc in documents if "Park Nicollet Clinic" in doc.source["citation"]["preferred_citation"]]
+        self.assertIn("conditions precedent", park.text)
+        self.assertIn("but see Sloggy", park.text)
+        self.assertFalse(provider.search(query.model_copy(update={"topics": ["accepted_goods_damages"]})))
+        self.assertFalse(provider.search(query.model_copy(update={
+            "authority_status": "current", "authority_as_of": "2026-11-21",
+        })))
+
     def test_enacted_contract_limitation_references_keep_tolling_conditions(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Arkansas", legal_area="contracts",

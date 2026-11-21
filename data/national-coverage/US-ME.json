@@ -503,6 +503,18 @@
         "retrieved_at": "2026-11-21T17:38:40.224698+00:00",
         "sha256": "b964d00744330e10b1686ef20b5bd2a7739b7702a86cd7c06e9529fe36befa52"
       }
+    },
+    "US-ME:contract_breach:15e5e1d287ef": {
+      "category": "contract_breach",
+      "title": "Wuestenberg v. Rancourt, 2020 ME 25, ¶ 17",
+      "url": "https://www.courts.maine.gov/courts/sjc/lawcourt/2020/20me025.pdf",
+      "locator": "Wuestenberg v. Rancourt, 2020 ME 25, ¶ 17",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:37:21.652321+00:00",
+        "sha256": "795b57659796ebee47ed50c9b28efd3a6ed61067cef58215c7bfc07ecb01e62a"
+      }
     }
   },
   "court_directory": [
@@ -918,6 +930,23 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Maine Revisor of Statutes § 2-807(2), bounded timing text; subsection (4) separately concerns government claims"
+    },
+    "28eb46661dd54dcf873d716f253eac": {
+      "source_id": "US-ME:contract_breach:15e5e1d287ef",
+      "authority_type": "opinion",
+      "citation": "Wuestenberg v. Rancourt, 2020 ME 25, ¶ 17",
+      "text": "To obtain relief for a breach of contract, the plaintiff must “demonstrate that the defendant breached a material term of the contract, and that the breach caused the plaintiff to suffer damages. Similarly, the question of whether there has been a breach of contract is a question of fact.” Tobin v. Barter, 2014 ME 51, ¶ 10, 89 A.3d 1088 (quotation marks omitted).",
+      "text_sha256": "5640e0e97f618c948a2a51d521b495508354d3032adf42379b95b2f14a1c885c",
+      "publisher_sha256": "795b57659796ebee47ed50c9b28efd3a6ed61067cef58215c7bfc07ecb01e62a",
+      "retrieved_at": "2026-11-21T22:37:21.652321+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion issued 2020-02-25",
+      "court": "Maine Supreme Judicial Court",
+      "publisher_member": "Maine Supreme Judicial Court PDF p. 10, paragraph 17; material breach, causation and damages",
+      "decision_date": "2020-02-25",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a judgment after a bench trial on claims related to the sale of a house; the court affirmed denial of the breach claim concerning a mediation clause."
     }
   },
   "fault_allocation": {

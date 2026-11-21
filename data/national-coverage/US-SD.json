@@ -396,6 +396,18 @@
         "retrieved_at": "2026-11-21T17:26:29.488062+00:00",
         "sha256": "5a214b00452721ff819c4f18191c4c504a0e41653bc5873c7a6c64e48d2487a0"
       }
+    },
+    "US-SD:general_contract_damages:95e2aad9f6bb": {
+      "category": "general_contract_damages",
+      "title": "S.D. Codified Laws § 21-2-1",
+      "url": "https://sdlegislature.gov/api/Statutes/21-2-1.html",
+      "locator": "S.D. Codified Laws § 21-2-1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:39:51.931518+00:00",
+        "sha256": "83ffb8e15a56f38b2c314c1e9a0834f4782d4a21c6e60ba95730815c10011c47"
+      }
     }
   },
   "court_directory": [
@@ -679,6 +691,17 @@
       "edition": "South Dakota 2005 Session Laws chapter 287",
       "publisher_member": "South Dakota 2005 Session Laws chapter 287, Rule 05-01 provision on other cases, subsection (8)",
       "effective_from": "2005-02-25"
+    },
+    "7829b4ee08c878a80183bbf1caf730": {
+      "source_id": "US-SD:general_contract_damages:95e2aad9f6bb",
+      "authority_type": "statute",
+      "citation": "S.D. Codified Laws § 21-2-1",
+      "text": "For the breach of an obligation arising from contract, the measure of damages, except where otherwise expressly provided by this code, is the amount which will compensate the party aggrieved for all the detriment proximately caused thereby, or which, in the ordinary course of things, would be likely to result therefrom. No damages can be recovered for a breach of contract which are not clearly ascertainable in both their nature and their origin.",
+      "text_sha256": "fc82a1912d98da21a6bc6382ca3e469b356136744bdfe7ca826a08c08c53d94d",
+      "publisher_sha256": "83ffb8e15a56f38b2c314c1e9a0834f4782d4a21c6e60ba95730815c10011c47",
+      "retrieved_at": "2026-11-21T22:39:51.931518+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

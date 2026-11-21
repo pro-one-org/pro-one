@@ -439,6 +439,30 @@
         "retrieved_at": "2026-11-21T22:25:36.797466+00:00",
         "sha256": "2d704bb4d8b09b196f44760a76ec01fb39546cb46a285d1eae3a87eeb76a71d1"
       }
+    },
+    "US-MN:contract_breach:7e9637f859ae": {
+      "category": "contract_breach",
+      "title": "Park Nicollet Clinic v. Hamann, No. A10-0658, slip op. at 7-8 & n.5 (Minn. Dec. 7, 2011)",
+      "url": "https://mn.gov/web/prod/static/lawlib/live/archive/supct/1112/OPA100658-1207.pdf",
+      "locator": "Park Nicollet Clinic v. Hamann, No. A10-0658, slip op. at 7-8 & n.5 (Minn. Dec. 7, 2011)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:37:22.054515+00:00",
+        "sha256": "13892d36e11fcc1eedf4ee883f3b5c858b6d4c2fb2b437d585aed8d47bd2e051"
+      }
+    },
+    "US-MN:consumer_public_interest:515c03ce9c0a": {
+      "category": "consumer_public_interest",
+      "title": "Curtis v. Altria Grp., Inc., No. A10-0215, slip op. at 13, 16 n.6 (Minn. May 30, 2012)",
+      "url": "https://mn.gov/web/prod/static/lawlib/live/archive/supct/1205/OPA100215-0530.pdf",
+      "locator": "Curtis v. Altria Grp., Inc., No. A10-0215, slip op. at 13, 16 n.6 (Minn. May 30, 2012)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:37:21.967028+00:00",
+        "sha256": "bc1c8148bb5004d40189f9b684f578a2702f9a434b9f7783438fc59a08e9b620"
+      }
     }
   },
   "court_directory": [
@@ -755,6 +779,40 @@
       "language": "en",
       "edition": "2026 Minnesota Statutes",
       "publisher_member": "Minnesota Revisor 2026 codification; statutory text subject to subdivision 1, public-benefit case law, and other applicability limits"
+    },
+    "a6b7f2e8227aa1e8d5b831ae3e1dbf": {
+      "source_id": "US-MN:contract_breach:7e9637f859ae",
+      "authority_type": "opinion",
+      "citation": "Park Nicollet Clinic v. Hamann, No. A10-0658, slip op. at 7-8 & n.5 (Minn. Dec. 7, 2011)",
+      "text": "In order to state a claim for breach of contract, the plaintiff must show (1) formation of a contract, (2) performance by plaintiff of any conditions precedent to his right to demand performance by the defendant, and (3) breach of the contract by defendant. Briggs Transp. Co. v. Ranzenberger, 299 Minn. 127, 129, 217 N.W.2d 198, 200 (1974). We have recognized that the plaintiff may not have to allege that the breach caused damages in order to state a claim for breach of contract. See Burns v. Jordan, 43 Minn. 25, 26, 44 N.W. 523, 524 (1890) (determining that where a counterclaim alleged a breach of contract, the court did not need to consider the damages alleged to determine if a claim had been stated because “[t]he answer sufficiently allege[d] a breach of the contract, and upon that alone the defendants are entitled to nominal damages” (citations omitted)); but see Sloggy v. Crescent Creamery Co., 72 Minn. 316, 75 N.W. 225 (1898) (affirming dismissal of a breach of contract claim because the complaint alleged only nominal damages). In any event, the complaint does allege that Hamann suffered damages in April 2005 as a result of Park Nicollet’s breach.",
+      "text_sha256": "f3bd555cf408a76634d9c307013213562509d6651da782617ba1ed8c279ac587",
+      "publisher_sha256": "13892d36e11fcc1eedf4ee883f3b5c858b6d4c2fb2b437d585aed8d47bd2e051",
+      "retrieved_at": "2026-11-21T22:37:22.054515+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion issued 2011-12-07",
+      "court": "Minnesota Supreme Court",
+      "publisher_member": "Minnesota Supreme Court slip opinion pp. 7-8, text and footnote 5; pleading elements and qualified discussion of nominal damages",
+      "decision_date": "2011-12-07",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal following dismissal of employment-policy claims as time-barred; the court held accrual occurred when the policy was repudiated as alleged and reversed the appellate judgment."
+    },
+    "ed2c15b89b358e7d6d807d7cc09ad4": {
+      "source_id": "US-MN:consumer_public_interest:515c03ce9c0a",
+      "authority_type": "opinion",
+      "citation": "Curtis v. Altria Grp., Inc., No. A10-0215, slip op. at 13, 16 n.6 (Minn. May 30, 2012)",
+      "text": "Consequently, we reaffirm our holding in Ly that subdivision 3a authorizes a private litigant injured by a violation of the laws set forth in subdivision 1 to bring a lawsuit seeking the relief described in the statute, provided the private litigant establishes that its lawsuit satisfies the public benefit requirement. Ly, 615 N.W.2d at 314. We conclude that the right of respondents to bring a lawsuit under subdivision 3a is limited by the role and duties of the State AG to enforce the laws enumerated in subdivision 1. Specifically, the scope of respondents’ rights under subdivision 3a is no broader than the authority of the State AG under section 8.31. Moreover, the private litigant must establish that its subdivision 3a claims satisfy the public benefit requirement. Finally, the rights of the State AG to bring a specific lawsuit are superior to the right of a private litigant to bring the same lawsuit. Because they are alternative arguments, a decision by the court that Philip Morris prevails on one argument renders a decision on the other argument dictum. We conclude that the case may be easily resolved on the release of claims argument, and therefore we decide the case on that basis. Thus, we assume without deciding that respondents’ subdivision 3a consumer protection claims satisfy the public benefit requirement and turn to the release argument raised by Philip Morris.",
+      "text_sha256": "cd6cb2195bd904c4d03233a3f25159105f3a2c32700b3831c7c06fcb83f01306",
+      "publisher_sha256": "bc1c8148bb5004d40189f9b684f578a2702f9a434b9f7783438fc59a08e9b620",
+      "retrieved_at": "2026-11-21T22:37:21.967028+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion issued 2012-05-30",
+      "court": "Minnesota Supreme Court",
+      "publisher_member": "Minnesota Supreme Court slip opinion pp. 13 and 16 n.6; separated excerpts on the public benefit requirement and issue left undecided",
+      "decision_date": "2012-05-30",
+      "opinion_role": "majority",
+      "procedural_posture": "Consumer class action alleging deceptive marketing; the court reaffirmed the public-benefit requirement and resolved the appeal on a prior release without deciding whether the plaintiffs satisfied that requirement."
     }
   },
   "fault_allocation": {

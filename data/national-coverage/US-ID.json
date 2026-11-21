@@ -395,6 +395,18 @@
         "retrieved_at": "2026-11-20T17:46:43.842919+00:00",
         "sha256": "b579afa03abc467a8b6c789b1d46d12254d3e72171a83cc8f62c32f23eec50ca"
       }
+    },
+    "US-ID:contract_breach:d952a9f81fc6": {
+      "category": "contract_breach",
+      "title": "Espinosa v. State Farm Fire & Cas. Co., No. 52790, slip op. at 14 (Idaho Oct. 6, 2026)",
+      "url": "https://api.isc.idaho.gov/uploads/Documents/ISC/Civil/2026/1791295466834-52790.pdf",
+      "locator": "Espinosa v. State Farm Fire & Cas. Co., No. 52790, slip op. at 14 (Idaho Oct. 6, 2026)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:37:22.183432+00:00",
+        "sha256": "1af198c83d8600ffee3ea6395952c8ab7288c57245ff4cffe8b100eb8c92a9c0"
+      }
     }
   },
   "court_directory": [
@@ -652,6 +664,23 @@
       "decision_date": "2020-10-05",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from summary judgment in a negligence action for injuries incurred when a vehicle struck pedestrians in a store parking lot. The court reversed and remanded."
+    },
+    "ab0aaa777c280cbddf050a9e30e167": {
+      "source_id": "US-ID:contract_breach:d952a9f81fc6",
+      "authority_type": "opinion",
+      "citation": "Espinosa v. State Farm Fire & Cas. Co., No. 52790, slip op. at 14 (Idaho Oct. 6, 2026)",
+      "text": "“To establish a breach of contract, one must prove the following elements: ‘(a) the existence of the contract, (b) the breach of the contract, (c) the breach caused damages, and (d) the amount of those damages.’” York v. Kemper Nw., Inc., 177 Idaho 1, ___, 584 P.3d 1, 8–9 (2026) (quoting Mosell Equities, LLC v. Berryhill & Co., 154 Idaho 269, 278, 297 P.3d 232, 241 (2013)).",
+      "text_sha256": "dd316a2f89a57e88e12cdab8ce8c9cf131c5eb073094947094145c89c6ae2fa8",
+      "publisher_sha256": "1af198c83d8600ffee3ea6395952c8ab7288c57245ff4cffe8b100eb8c92a9c0",
+      "retrieved_at": "2026-11-21T22:37:22.183432+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion issued 2026-10-06",
+      "court": "Idaho Supreme Court",
+      "publisher_member": "Idaho Supreme Court slip opinion p. 14, Part B; general elements as applied to insurance obligations",
+      "decision_date": "2026-10-06",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in an insurance coverage dispute; the court affirmed summary judgment on the breach claims."
     }
   },
   "fault_allocation": {

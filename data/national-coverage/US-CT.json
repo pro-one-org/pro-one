@@ -575,6 +575,18 @@
         "retrieved_at": "2026-11-21T16:34:57.807728+00:00",
         "sha256": "29bd29d8f82067f1a90cfffa4b5e1ba158aafe60a3bcd979838f464ad7f60329"
       }
+    },
+    "US-CT:contract_breach:d38672b08b60": {
+      "category": "contract_breach",
+      "title": "AGW Sono Partners, LLC v. Downtown Soho, LLC, 343 Conn. 309, 322–23 (2022)",
+      "url": "https://www.jud.ct.gov/lawjournal/Docs/CTReports/2022/20/cr343_8345.pdf",
+      "locator": "AGW Sono Partners, LLC v. Downtown Soho, LLC, 343 Conn. 309, 322–23 (2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:39:52.120899+00:00",
+        "sha256": "e34899cd34b355a8cfd5292a6daf826dc9ddd6032905392bb8699d6c34c4bb9a"
+      }
     }
   },
   "court_directory": [
@@ -1021,6 +1033,23 @@
       "language": "en",
       "edition": "Connecticut General Statutes, 2025 revision",
       "publisher_member": "Connecticut General Assembly 2025 revision, § 52-581"
+    },
+    "6c7a1d2ab43446012cb1bbc5312a31": {
+      "source_id": "US-CT:contract_breach:d38672b08b60",
+      "authority_type": "opinion",
+      "citation": "AGW Sono Partners, LLC v. Downtown Soho, LLC, 343 Conn. 309, 322–23 (2022)",
+      "text": "‘‘The elements of a breach of contract claim are the formation of an agreement, performance by one party, breach of the agreement by the other party, and damages. . . . The interpretation of definitive contract language is a question of law over which our review is plenary. . . . By contrast, the trial court’s factual findings as to whether and by whom a contract has been breached are subject to the clearly erroneous standard of review and, if supported by evidence in the record, are not to be disturbed on appeal.’’ (Citations omitted; internal quotation marks omitted.) CCT Communications, Inc. v. Zone Telecom, Inc., 327 Conn. 114, 133, 172 A.3d 1228 (2017).",
+      "text_sha256": "783362c16d71463aee1a07ee1d24f8a61e350fc8f1e7aa35ad58c90ba5287e02",
+      "publisher_sha256": "e34899cd34b355a8cfd5292a6daf826dc9ddd6032905392bb8699d6c34c4bb9a",
+      "retrieved_at": "2026-11-21T22:39:52.120899+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion issued 2022-05-10",
+      "court": "Connecticut Supreme Court",
+      "publisher_member": "Connecticut Reports pp. 322-323, opinion Part I; breach elements and standards of appellate review",
+      "decision_date": "2022-05-10",
+      "opinion_role": "majority",
+      "procedural_posture": "Commercial lease dispute following a bench trial; the court rejected the special defenses and ordered a new damages hearing."
     }
   },
   "fault_allocation": {

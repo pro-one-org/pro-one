@@ -731,6 +731,18 @@
         "retrieved_at": "2026-11-20T16:01:53.143207+00:00",
         "sha256": "d1aef373b1951d06f865945fab8d933880f263461a333f73eeaa9920fb04e62c"
       }
+    },
+    "US-MI:contract_breach:adf03e0f9a4f": {
+      "category": "contract_breach",
+      "title": "Miller-Davis Co. v. Ahrens Constr., Inc., 495 Mich. 161, 178 (2014)",
+      "url": "https://www.courts.michigan.gov/siteassets/case-documents/uploads/opinions/final/SCt/20140415_S145052_103_miller-davis-op.pdf",
+      "locator": "Miller-Davis Co. v. Ahrens Constr., Inc., 495 Mich. 161, 178 (2014)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:37:21.592720+00:00",
+        "sha256": "610141c305c378f5988e482715c5419391fe23aa439b724d1733c469659ec428"
+      }
     }
   },
   "court_directory": [
@@ -1432,6 +1444,23 @@
       "publisher_path": "1002172",
       "text": "(F) Setting Aside Dismissal. A court may set aside the dismissal of the action as to a defendant under subrule (E) only on stipulation of the parties or when all of the following conditions are met: (1) within the time provided in subrule (D), service of process was in fact made on the dismissed defendant, or the defendant submitted to the court's jurisdiction; (2) proof of service of process was filed or the failure to file is excused for good cause shown; (3) the motion to set aside the dismissal was filed within 28 days after notice of the order of dismissal was given, or, if notice of dismissal was not given, the motion was promptly filed after the plaintiff learned of the dismissal.",
       "text_sha256": "c1c6128f353dc6cc22cbf822770feddc1f310c576f518f5f2b4cdd3e7058cff6"
+    },
+    "3c4b5a38a08d7b763fc81d680dab0c": {
+      "source_id": "US-MI:contract_breach:adf03e0f9a4f",
+      "authority_type": "opinion",
+      "citation": "Miller-Davis Co. v. Ahrens Constr., Inc., 495 Mich. 161, 178 (2014)",
+      "text": "A party asserting a breach of contract must establish by a preponderance of the evidence that (1) there was a contract (2) which the other party breached (3) thereby resulting in damages to the party claiming breach.",
+      "text_sha256": "6f6f6b48be1136faf953c24989902b3a28b7477edc5b4c79107aac8d08a87204",
+      "publisher_sha256": "610141c305c378f5988e482715c5419391fe23aa439b724d1733c469659ec428",
+      "retrieved_at": "2026-11-21T22:37:21.592720+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion issued 2014-04-15",
+      "court": "Michigan Supreme Court",
+      "publisher_member": "Michigan Supreme Court PDF p. 18, slip opinion p. 15; breach elements in majority opinion",
+      "decision_date": "2014-04-15",
+      "opinion_role": "majority",
+      "procedural_posture": "Construction subcontract dispute on review after a bench trial; the court reversed the rejection of the contractor’s contractual indemnity claim and remanded."
     }
   },
   "fault_allocation": {
