@@ -1,0 +1,757 @@
+{
+  "jurisdiction": "US-IA",
+  "version": "1",
+  "sources": {
+    "US-IA:statutes:4421cd4a7174": {
+      "category": "statutes",
+      "title": "Iowa State Code",
+      "url": "http://www.legis.iowa.gov/law",
+      "directory": "codes",
+      "locator": "Iowa"
+    },
+    "US-IA:constitution:a395670b9867": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.legis.iowa.gov/law/statutory/constitution",
+      "directory": "codes",
+      "locator": "Iowa"
+    },
+    "US-IA:legislature:954b671c572a": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.legis.iowa.gov/",
+      "directory": "codes",
+      "locator": "Iowa"
+    },
+    "US-IA:labor_agency:b8157c774dab": {
+      "category": "labor_agency",
+      "title": "www.iowadivisionoflabor.gov",
+      "url": "http://www.iowadivisionoflabor.gov",
+      "directory": "labor",
+      "locator": "Iowa"
+    },
+    "US-IA:commercial_code:a16d1e298d38": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "https://www.legis.iowa.gov/law/iowaCode/sections?codeChapter=554",
+      "directory": "ucc",
+      "locator": "Iowa"
+    },
+    "US-IA:civil_rules:466efa708127": {
+      "category": "civil_rules",
+      "title": "Civil Procedure - Subtitle 3",
+      "url": "https://www.legis.iowa.gov/docs/ACO/CourtRulesChapter/1.pdf",
+      "directory": "procedure",
+      "locator": "Iowa"
+    },
+    "US-IA:consumer_agency:caa3f0441a1d": {
+      "category": "consumer_agency",
+      "title": "Iowa (IA)",
+      "url": "https://www.iowaattorneygeneral.gov/about-us/divisions/consumer-protection",
+      "directory": "consumer",
+      "locator": "Iowa (IA)"
+    },
+    "US-IA:judiciary:faaf68fe5fa2": {
+      "category": "judiciary",
+      "title": "Judicial Branch",
+      "url": "http://www.iowacourts.gov/",
+      "directory": "doj-IA",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-IA:court_directory:ffd71e774fa6": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://www.iowacourts.gov/About_the_Courts/Supreme_Court/",
+      "directory": "doj-IA",
+      "locator": "Supreme Court"
+    },
+    "US-IA:court_directory:68b6c647d065": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "http://www.iowacourts.gov/About_the_Courts/Court_of_Appeals/",
+      "directory": "doj-IA",
+      "locator": "Court of Appeals"
+    },
+    "US-IA:court_directory:1aa49a9d2cbd": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "http://www.iowacourts.gov/About_the_Courts/District_Courts/",
+      "directory": "doj-IA",
+      "locator": "District Courts"
+    },
+    "US-IA:court_rules:cf4018ccb871": {
+      "category": "court_rules",
+      "title": "Court Rules",
+      "url": "https://www.legis.iowa.gov/law/courtRules",
+      "directory": "doj-IA",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-IA:forms:8b701f13cfc5": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "http://www.iowacourts.gov/Court_Rules__Forms/Overview/",
+      "directory": "doj-IA",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-IA:constitution:1f79a3f5540b": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.legis.iowa.gov/law/statutory/constitution",
+      "directory": "doj-IA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-IA:statutes:0f3b53462c45": {
+      "category": "statutes",
+      "title": "Code and Acts",
+      "url": "https://www.legis.iowa.gov/law",
+      "directory": "doj-IA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-IA:statutes:c7b03b22fb51": {
+      "category": "statutes",
+      "title": "Iowa Code Archive",
+      "url": "https://www.legis.iowa.gov/archives/code",
+      "directory": "doj-IA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-IA:regulations:da1fca81b7f0": {
+      "category": "regulations",
+      "title": "Administrative Code",
+      "url": "https://www.legis.iowa.gov/law/administrativeRules/agencies",
+      "directory": "doj-IA",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-IA:pi_limitations:cd90c7072f38": {
+      "category": "pi_limitations",
+      "title": "Iowa Code § 614.1(2)",
+      "url": "https://www.legis.iowa.gov/docs/code/614.1.pdf",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.legis.iowa.gov/docs/code/614.1.pdf",
+        "retrieved_at": "2026-11-17T19:33:57.174874+00:00",
+        "http_status": "200",
+        "sha256": "d67a4e99292c1311a0a4f737db8885ab07e9f3b884a96f34a0c17563c53bfc6a",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IA:written_contract_limitations:cd90c7072f38": {
+      "category": "written_contract_limitations",
+      "title": "Iowa Code § 614.1(5)(a)",
+      "url": "https://www.legis.iowa.gov/docs/code/614.1.pdf",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.legis.iowa.gov/docs/code/614.1.pdf",
+        "retrieved_at": "2026-11-17T19:33:57.174874+00:00",
+        "http_status": "200",
+        "sha256": "d67a4e99292c1311a0a4f737db8885ab07e9f3b884a96f34a0c17563c53bfc6a",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IA:oral_contract_limitations:cd90c7072f38": {
+      "category": "oral_contract_limitations",
+      "title": "Iowa Code § 614.1(4)",
+      "url": "https://www.legis.iowa.gov/docs/code/614.1.pdf",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.legis.iowa.gov/docs/code/614.1.pdf",
+        "retrieved_at": "2026-11-17T19:33:57.174874+00:00",
+        "http_status": "200",
+        "sha256": "d67a4e99292c1311a0a4f737db8885ab07e9f3b884a96f34a0c17563c53bfc6a",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IA:small_claims:5d98ec8f631c": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.iowacourts.gov/faq/small-claims-filing-a-petition",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.iowacourts.gov/faq/small-claims-filing-a-petition",
+        "retrieved_at": "2026-11-17T19:42:46.630285+00:00",
+        "http_status": "200",
+        "sha256": "42dd38211731e96ed06a59c225ddf83d0e269d66822e822726da8c3062625df9",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IA:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    },
+    "US-IA:fault:131094f0aeb0": {
+      "category": "fault",
+      "title": "Fault allocation research publication",
+      "url": "https://www.legis.iowa.gov/docs/code/2025/668.1.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.legis.iowa.gov/docs/code/2025/668.1.pdf",
+        "retrieved_at": "2026-11-17T19:42:49.866909+00:00",
+        "http_status": "200",
+        "sha256": "2588488745a8286ba0825e43f852e64c85102edf8a7c26e83cd1082f3082beec",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IA:deposit:0cee3e632cf7": {
+      "category": "deposit",
+      "title": "Residential tenancy publication",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/562A.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.legis.iowa.gov/docs/code/2026/562A.pdf",
+        "retrieved_at": "2026-11-17T19:42:50.812715+00:00",
+        "http_status": "200",
+        "sha256": "f0605fd44e8c7bb0905b0bc31802a2a7e8bed0cbd0b287a9db1ae5f8dad57692",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IA:wageLaw:86f6199d03c9": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://www.legis.iowa.gov/docs/code/2025/91A.html",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.legis.iowa.gov/docs/code/2025/91A.html",
+        "retrieved_at": "2026-11-17T19:42:50.456096+00:00",
+        "http_status": "200",
+        "sha256": "d532fa3c6756f49085314f0e4dfdd19e4cf4fd8b74570a7b87b41eea7d3584bd",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IA:debtLaw:9a2d17aebc58": {
+      "category": "debtLaw",
+      "title": "Debt collection publication",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/537.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.legis.iowa.gov/docs/code/2026/537.pdf",
+        "retrieved_at": "2026-11-17T19:42:50.817038+00:00",
+        "http_status": "200",
+        "sha256": "8ce4f416985a27f5e268255129c08d09f0786a83586066c67186d30cc394ca61",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IA:negligence:41c01a04be71": {
+      "category": "negligence",
+      "title": "Negligence research publication",
+      "url": "https://www.iowacourts.gov/courtcases/14742/embed/CourtAppealsOpinion",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.iowacourts.gov/courtcases/14742/embed/CourtAppealsOpinion",
+        "retrieved_at": "2026-11-17T19:42:45.967504+00:00",
+        "http_status": "200",
+        "sha256": "4377d766318d4d736833f047fbd0a21297b6773755bd482d9cee15401d45d349",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IA:fault:f3b39ea29516": {
+      "category": "fault",
+      "title": "Iowa Code § 668.3(1)(a)",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/668.pdf",
+      "directory": null,
+      "locator": "Iowa Code § 668.3(1)(a)",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:33.379562+00:00",
+        "sha256": "80828e7f7cd84a4ebc8f4716490387326e8c17d01eb784a4cf9238d5c2cc98a4"
+      }
+    },
+    "US-IA:consumerLaw:fadc69e21a18": {
+      "title": "Iowa Code ch. 714H (private actions); § 714.16 (AG)",
+      "category": "consumerLaw",
+      "url": "https://www.legis.iowa.gov/docs/code/714H.1.pdf",
+      "directory": "consumer_statutes_index",
+      "locator": "Iowa Code ch. 714H (private actions); § 714.16 (AG)",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-IA:contract_formation:50f4964511a8": {
+      "category": "contract_formation",
+      "title": "Iowa Code § 554.2204",
+      "url": "https://www.legis.iowa.gov/docs/code/2025/554.html",
+      "locator": "Iowa Code § 554.2204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:37.322821+00:00",
+        "sha256": "fb0e626421a62ffcc6a4f51f7965c34bc3d0535fbb09f5643dc3273cb5bc78b9"
+      }
+    },
+    "US-IA:contract_damages:a03ce538f3e4": {
+      "category": "contract_damages",
+      "title": "Iowa Code § 554.2714",
+      "url": "https://www.legis.iowa.gov/docs/code/2025/554.html",
+      "locator": "Iowa Code § 554.2714",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:37.322821+00:00",
+        "sha256": "fb0e626421a62ffcc6a4f51f7965c34bc3d0535fbb09f5643dc3273cb5bc78b9"
+      }
+    },
+    "US-IA:wageLaw:9d5d4f8a6ffc": {
+      "category": "wageLaw",
+      "title": "Iowa Code § 91A.3(1)",
+      "url": "https://www.legis.iowa.gov/docs/code/2025/91A.3.pdf",
+      "locator": "Iowa Code § 91A.3(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:21:42.650683+00:00",
+        "sha256": "b1b1d823adb918ce08e0363490edf26a58a1b941e89baf3fbc570434090a79ef"
+      }
+    },
+    "US-IA:deposit:c90de55d38ee": {
+      "category": "deposit",
+      "title": "Iowa Code § 562A.12(1)",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/562A.12.pdf",
+      "locator": "Iowa Code § 562A.12(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:21:42.677424+00:00",
+        "sha256": "00de83376b558e8ccd56efc7bedc5a8e4447f9ef4d41644cd2434a21b954e43b"
+      }
+    },
+    "US-IA:debtLaw:668645835631": {
+      "category": "debtLaw",
+      "title": "Iowa Code § 537.7103(1)(a)–(b)",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/537.7103.pdf",
+      "locator": "Iowa Code § 537.7103(1)(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:21:42.677424+00:00",
+        "sha256": "e67441d3bcdde354a6e275b3663d587532f849ae880ffc483555ea1b0651dd79"
+      }
+    },
+    "US-IA:negligence_elements:555ec4b2bf29": {
+      "category": "negligence_elements",
+      "title": "Pollow v. Estate of Studebaker, No. 18-1633 (Iowa Ct. App. Apr. 29, 2020)",
+      "url": "https://www.iowacourts.gov/courtcases/8961/embed/CourtAppealsOpinion",
+      "locator": "Pollow v. Estate of Studebaker, No. 18-1633 (Iowa Ct. App. Apr. 29, 2020)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T13:54:39.226365+00:00",
+        "sha256": "aed59490a546a986a3e6cbcfc05b7baec7f2ea4c89f0cc10a0777f5e8f72a2c6"
+      }
+    },
+    "US-IA:consumerLaw:fda8f70d6946": {
+      "category": "consumerLaw",
+      "title": "Iowa Code § 714.16(2)(a), first sentence",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/714.16.pdf",
+      "locator": "Iowa Code § 714.16(2)(a), first sentence",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:43.479744+00:00",
+        "sha256": "ecd0c9f5006f6ebf4d9ad76ab7827720b11a1d2e0a79e3f9e6144714299cf06f"
+      }
+    },
+    "US-IA:pi_limitations:29a0f0c3b199": {
+      "category": "pi_limitations",
+      "title": "Iowa Code § 614.1(2)",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/614.1.pdf",
+      "locator": "Iowa Code § 614.1(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:20.910554+00:00",
+        "sha256": "d67a4e99292c1311a0a4f737db8885ab07e9f3b884a96f34a0c17563c53bfc6a"
+      }
+    },
+    "US-IA:written_contract_limitations:2d10689988d6": {
+      "category": "written_contract_limitations",
+      "title": "Iowa Code § 614.1(5)",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/614.1.pdf",
+      "locator": "Iowa Code § 614.1(5)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:20.910554+00:00",
+        "sha256": "d67a4e99292c1311a0a4f737db8885ab07e9f3b884a96f34a0c17563c53bfc6a"
+      }
+    },
+    "US-IA:oral_contract_limitations:fb02b474ec03": {
+      "category": "oral_contract_limitations",
+      "title": "Iowa Code § 614.1(4)",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/614.1.pdf",
+      "locator": "Iowa Code § 614.1(4)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:20.910554+00:00",
+        "sha256": "d67a4e99292c1311a0a4f737db8885ab07e9f3b884a96f34a0c17563c53bfc6a"
+      }
+    },
+    "US-IA:contract_breach:8157d420fba6": {
+      "category": "contract_breach",
+      "title": "5th and Walnut Parking LLC v. City of Des Moines, No. 24-1886 (Iowa June 12, 2026, amended Aug. 24, 2026)",
+      "url": "https://www.iowacourts.gov/courtcases/26031/embed/SupremeCourtOpinion",
+      "locator": "5th and Walnut Parking LLC v. City of Des Moines, No. 24-1886 (Iowa June 12, 2026, amended Aug. 24, 2026)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:39:39.534255+00:00",
+        "sha256": "6c607422c05df44c5a938e74040da9a6eabe2a3416167fca410f4049829a660a"
+      }
+    },
+    "US-IA:tolling:d8b4ff464f0c": {
+      "category": "tolling",
+      "title": "Iowa Code § 614.8(1)–(2)",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/614.8.pdf",
+      "locator": "Iowa Code § 614.8(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:18:09.937023+00:00",
+        "sha256": "990d286decab02318a36890513fd9690745520a4fc09def0cebcadf2258a9119"
+      }
+    },
+    "US-IA:service:811cbbfc3cb4": {
+      "category": "service",
+      "title": "Iowa R. Civ. P. 1.305(1)",
+      "url": "https://www.legis.iowa.gov/docs/ACO/CourtRulesChapter/07-31-2026.1.pdf",
+      "locator": "Iowa R. Civ. P. 1.305(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:54.208218+00:00",
+        "sha256": "ae6ecf5e9a558a4f80cd0e63a5bc3229fb7681ecd5946a4ca8fbe1773f7c56b6"
+      }
+    },
+    "US-IA:commencement:1cd6f2981c76": {
+      "category": "commencement",
+      "title": "Iowa R. Civ. P. 1.301(1)",
+      "url": "https://www.legis.iowa.gov/docs/ACO/CourtRulesChapter/07-31-2026.1.pdf",
+      "locator": "Iowa R. Civ. P. 1.301(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:54.208218+00:00",
+        "sha256": "ae6ecf5e9a558a4f80cd0e63a5bc3229fb7681ecd5946a4ca8fbe1773f7c56b6"
+      }
+    },
+    "US-IA:small_claims:b0e1577bead1": {
+      "category": "small_claims",
+      "title": "Iowa Code § 631.1(1)",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/631.1.pdf",
+      "locator": "Iowa Code § 631.1(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:29.386673+00:00",
+        "sha256": "54937e2e8e80553cd2956fa0efc0465108f0a0214d46310d58f5db4df3a56a70"
+      }
+    },
+    "US-IA:response:8ca416f3734e": {
+      "category": "response",
+      "title": "Iowa R. Civ. P. 1.303(1)–(3) (time for motion or answer)",
+      "url": "https://www.legis.iowa.gov/docs/ACO/CourtRulesChapter/09-30-2026.1.pdf",
+      "locator": "Iowa R. Civ. P. 1.303(1)–(3) (time for motion or answer)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:40:43.165942+00:00",
+        "sha256": "ae6ecf5e9a558a4f80cd0e63a5bc3229fb7681ecd5946a4ca8fbe1773f7c56b6"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-IA:court:d6bc272c5ddf",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-IA:court_directory:ffd71e774fa6"
+    },
+    {
+      "id": "US-IA:court:57335225bf10",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-IA:court_directory:68b6c647d065"
+    },
+    {
+      "id": "US-IA:court:76e63dd31bce",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-IA:court_directory:1aa49a9d2cbd"
+    },
+    {
+      "id": "US-IA:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-IA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Iowa Code § 614.1(2)",
+      "source_id": "US-IA:pi_limitations:cd90c7072f38",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Iowa Code § 614.1(5)(a)",
+      "source_id": "US-IA:written_contract_limitations:cd90c7072f38",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Iowa Code § 614.1(4)",
+      "source_id": "US-IA:oral_contract_limitations:cd90c7072f38",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Iowa Code § 562A.27. Noncompliance with rental agreement—failure to pay rent—violation of federal regulation; Iowa Code § 562A.32. Remedy after termination",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Iowa Code ch. 714H (private actions); § 714.16 (AG)",
+      "source_id": "US-IA:consumerLaw:fadc69e21a18",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "6bfc73a64a49ce7a625745edd8e44c": {
+      "citation": "Iowa Code § 668.3(1)(a)",
+      "source_id": "US-IA:fault:f3b39ea29516",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "1. a. Contributory fault shall not bar recovery in an action by a claimant to recover damages for fault resulting in death or in injury to person or property unless the claimant bears a greater percentage of fault than the combined percentage of fault attributed to the defendants, third-party defendants and persons who have been released pursuant to section 668.7 , but any damages allowed shall be diminished in proportion to the amount of fault attributable to the claimant.",
+      "text_sha256": "a8b55e85aea72fb077a9acfafeeaf529e9cffea29a3c24a9e00a31e652fbe85a",
+      "publisher_sha256": "80828e7f7cd84a4ebc8f4716490387326e8c17d01eb784a4cf9238d5c2cc98a4",
+      "retrieved_at": "2026-11-17T20:50:33.379562+00:00",
+      "currentness": "unresolved"
+    },
+    "419a82cf73423ee71512bb94d6df57": {
+      "source_id": "US-IA:contract_formation:50f4964511a8",
+      "authority_type": "statute",
+      "citation": "Iowa Code § 554.2204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "fb0e626421a62ffcc6a4f51f7965c34bc3d0535fbb09f5643dc3273cb5bc78b9",
+      "retrieved_at": "2026-11-18T15:14:37.322821+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 codification"
+    },
+    "d30e3835dda9f7f4ddadaa1fb69fab": {
+      "source_id": "US-IA:contract_damages:a03ce538f3e4",
+      "authority_type": "statute",
+      "citation": "Iowa Code § 554.2714",
+      "text": "Where the buyer has accepted goods and given notification (section 554.2607, subsection 3) the buyer may recover as damages for any nonconformity of tender the loss resulting in the ordinary course of events from the seller’s breach as determined in any manner which is reasonable. 2. The measure of damages for breach of warranty is the difference at the time and place of acceptance between the value of the goods accepted and the value they would have had if they had been as warranted, unless special circumstances show proximate damages of a different amount.",
+      "text_sha256": "5726f230507a75cc688943ddc4a8e450eb22d7c5e7039987b57f7fbf6e7594bd",
+      "publisher_sha256": "fb0e626421a62ffcc6a4f51f7965c34bc3d0535fbb09f5643dc3273cb5bc78b9",
+      "retrieved_at": "2026-11-18T15:14:37.322821+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 codification"
+    },
+    "4a2d6a77adc8e22fa271ac6cec6e32": {
+      "source_id": "US-IA:wageLaw:9d5d4f8a6ffc",
+      "authority_type": "statute",
+      "citation": "Iowa Code § 91A.3(1)",
+      "text": "An employer shall pay all wages due its employees, less any lawful deductions specified in section 91A .5 , at least in monthly , semimonthly , or biweekly installments on regular paydays which are at consistent intervals from each other and which are designated in advance by the employer . However , if any of these wages due its employees are determined on a commission basis, the employer may , upon agreement with the employee, pay only a credit against such wages. If such credit is paid, the employer shall, at regular intervals, pay any difference between a credit paid against wages determined on a commission basis and such wages actually earned on a commission basis. These regular intervals shall not be separated by more than twelve months. A regular payday shall not be more than twelve days, excluding Sundays and legal holidays, after the end of the period in which the wages were earned. An employer and employee may , upon written agreement which shall be maintained as a record, vary the provisions of this subsection .",
+      "text_sha256": "97c6ed82ef6ea7ada129bc9bf091a3a0cc6082bd35e886ac1130c1d38f6d9786",
+      "publisher_sha256": "b1b1d823adb918ce08e0363490edf26a58a1b941e89baf3fbc570434090a79ef",
+      "retrieved_at": "2026-11-18T20:21:42.650683+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Iowa Code 2025"
+    },
+    "c7db18de9d7f3d55e9d92632c544b4": {
+      "source_id": "US-IA:deposit:c90de55d38ee",
+      "authority_type": "statute",
+      "citation": "Iowa Code § 562A.12(1)",
+      "text": "A landlord shall not demand or receive as a security deposit an amount or value in excess of two months’ rent.",
+      "text_sha256": "138ace73a2498ae6bcf340a15e795bfb584fa7c79ec1a163dfc9c6c04d02493b",
+      "publisher_sha256": "00de83376b558e8ccd56efc7bedc5a8e4447f9ef4d41644cd2434a21b954e43b",
+      "retrieved_at": "2026-11-18T20:21:42.677424+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Iowa Code 2026"
+    },
+    "2ce2f88c31890ce59d181300a5cb13": {
+      "source_id": "US-IA:debtLaw:668645835631",
+      "authority_type": "statute",
+      "citation": "Iowa Code § 537.7103(1)(a)–(b)",
+      "text": "A debt collector shall not collect or attempt to collect a debt by means of an illegal threat, coercion or attempt to coerce. The conduct described in each of the following paragraphs is an illegal threat, coercion or attempt to coerce within the meaning of this subsection : a. The use, or express or implicit threat of use, of force, violence or other criminal means, to cause harm to a person or to property of a person. b. The false accusation or threat to falsely accuse a person of fraud or any other crime.",
+      "text_sha256": "a21f39428d3f582132bfc472d081f24c9fb6d6f3f0eb14c5a6ce44668d3263e5",
+      "publisher_sha256": "e67441d3bcdde354a6e275b3663d587532f849ae880ffc483555ea1b0651dd79",
+      "retrieved_at": "2026-11-18T20:21:42.677424+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Iowa Code 2026"
+    },
+    "01ff40fae06aefd0d3e78657beb85e": {
+      "source_id": "US-IA:negligence_elements:555ec4b2bf29",
+      "authority_type": "opinion",
+      "citation": "Pollow v. Estate of Studebaker, No. 18-1633 (Iowa Ct. App. Apr. 29, 2020)",
+      "text": "In order to succeed on a negligence claim, a claimant must prove “existence of a duty to conform to a standard of conduct to protect others, failure to conform to that standard , proximate cause, and damages.” Hartig v. Francois, 562 N.W.2d 427, 429 (Iowa 1997).",
+      "text_sha256": "b39862633b530ed8ebdc275203043119234d3b84242f4f933d2aeea7a19ae921",
+      "publisher_sha256": "aed59490a546a986a3e6cbcfc05b7baec7f2ea4c89f0cc10a0777f5e8f72a2c6",
+      "retrieved_at": "2026-11-19T13:54:39.226365+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2020-04-29",
+      "court": "Court of Appeals of Iowa",
+      "decision_date": "2020-04-29",
+      "opinion_role": "majority",
+      "procedural_posture": "Affirmed denial of motion for new trial."
+    },
+    "9a84aa290bdac776d13aa63a3cf3fd": {
+      "source_id": "US-IA:consumerLaw:fda8f70d6946",
+      "authority_type": "statute",
+      "citation": "Iowa Code § 714.16(2)(a), first sentence",
+      "text": "a. The act, use or employment by a person of an unfair practice, deception, fraud, false pretense, false promise, or misrepresentation, or the concealment, suppression, or omission of a material fact with intent that others rely upon the concealment, suppression, or omission, in connection with the lease, sale, or advertisement of any merchandise or the solicitation of contributions for charitable purposes, whether or not a person has in fact been misled, deceived, or damaged, is an unlawful practice.",
+      "text_sha256": "0fd2744fd838c59ebe0aa4283040c84b2e2b7786687d71732784a474c907b5a3",
+      "publisher_sha256": "ecd0c9f5006f6ebf4d9ad76ab7827720b11a1d2e0a79e3f9e6144714299cf06f",
+      "retrieved_at": "2026-11-19T19:26:43.479744+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Iowa Code 2026"
+    },
+    "7c9f6022c73f96238246c6dc7c7ff1": {
+      "source_id": "US-IA:pi_limitations:29a0f0c3b199",
+      "authority_type": "statute",
+      "citation": "Iowa Code § 614.1(2)",
+      "text": "2. Injuries to person or reputation — relative rights — statute penalty . Those founded on injuries to the person or reputation, including injuries to relative rights, whether based on contract or tort, or for a statute penalty , within two years.",
+      "text_sha256": "889e07d01a35284e43af851378d99065d6de20893afc8bc2dfad2e48268687b6",
+      "publisher_sha256": "d67a4e99292c1311a0a4f737db8885ab07e9f3b884a96f34a0c17563c53bfc6a",
+      "retrieved_at": "2026-11-19T19:31:20.910554+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Iowa Code 2026"
+    },
+    "98ce895c33bdd154d77f71a7f43cf2": {
+      "source_id": "US-IA:written_contract_limitations:2d10689988d6",
+      "authority_type": "statute",
+      "citation": "Iowa Code § 614.1(5)",
+      "text": "5. W ritten contracts — judgments of courts not of record — recovery of real property and rent. a. Except as provided in paragraph “b” , those founded on written contracts, or on judgments of any courts except those provided for in subsection 6 , and those brought for the recovery of real property , within ten years. b. Those founded on claims for rent, within five years.",
+      "text_sha256": "ba73aea73d108d12b67369afd7e6b05a31b9763ebebcc86b5d60c05dba8cd5cc",
+      "publisher_sha256": "d67a4e99292c1311a0a4f737db8885ab07e9f3b884a96f34a0c17563c53bfc6a",
+      "retrieved_at": "2026-11-19T19:31:20.910554+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Iowa Code 2026"
+    },
+    "948fb44351973f1acff7952b9bc540": {
+      "source_id": "US-IA:oral_contract_limitations:fb02b474ec03",
+      "authority_type": "statute",
+      "citation": "Iowa Code § 614.1(4)",
+      "text": "4. Unwritten contracts — injuries to property — fraud — other actions. Those founded on unwritten contracts, those brought for injuries to property , or for relief on the ground of fraud in cases heretofore solely cognizable in a court of chancery , and all other actions not otherwise provided for in this respect, within five years, except as provided by subsections 8 and 10 .",
+      "text_sha256": "866701a7fcd892f74d8a541599a168f470a0d8d4eea72661dbff5c9199b8d77d",
+      "publisher_sha256": "d67a4e99292c1311a0a4f737db8885ab07e9f3b884a96f34a0c17563c53bfc6a",
+      "retrieved_at": "2026-11-19T19:31:20.910554+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Iowa Code 2026"
+    },
+    "4e1f730f0b97bf65367feb07b2f6d1": {
+      "source_id": "US-IA:contract_breach:8157d420fba6",
+      "authority_type": "opinion",
+      "citation": "5th and Walnut Parking LLC v. City of Des Moines, No. 24-1886 (Iowa June 12, 2026, amended Aug. 24, 2026)",
+      "text": "To succeed on a breach of contract claim, the claimant must prove the following: (1) [T]he existence of a contract; (2) the terms and conditions of the contract; (3) that it has performed all the terms and conditions required under the contract; (4) the defendant’s breach of the contract in some particular way; and (5) that plaintiff has suff ered damages as a result of the breach. Molo Oil Co. v. River City Ford Truck Sales, Inc., 578 N.W.2d 222, 224 (Iowa 1998).",
+      "text_sha256": "8345961eeb4b21089a74bad16b7035cfe69dc7b42a3a9dbb7756af5f3bd16bcc",
+      "publisher_sha256": "6c607422c05df44c5a938e74040da9a6eabe2a3416167fca410f4049829a660a",
+      "retrieved_at": "2026-11-19T19:39:39.534255+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Amended August 24, 2026",
+      "court": "Supreme Court of Iowa",
+      "decision_date": "2026-06-12",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal and cross-appeal from money judgment on a real estate project."
+    },
+    "e1d532b988d6912e915711bcbd2585": {
+      "source_id": "US-IA:tolling:d8b4ff464f0c",
+      "authority_type": "statute",
+      "citation": "Iowa Code § 614.8(1)–(2)",
+      "text": "1. The times limited for actions in this chapter , or chapter 216 , 669 , or 670 , except those brought for penalties and forfeitures, are extended in favor of persons with mental illness, so that they shall have one year from and after the termination of the disability within which to file a complaint pursuant to chapter 216 , to make a claim pursuant to chapter 669 , or to otherwise commence an action. 2. Except as provided in section 614.1, subsection 9 , the times limited for actions in this chapter , or chapter 216 , 659A , 669 , or 670 , except those brought for penalties and forfeitures, are extended in favor of minors, so that they shall have one year from and after attainment of majority within which to file a complaint pursuant to chapter 216 , to make a claim pursuant to chapter 669 , or to otherwise commence an action.",
+      "text_sha256": "655053c6ef256c5146da20f5cc9470d064789ab4cb1ebe5fcd6d8d9f9b4ab66d",
+      "publisher_sha256": "990d286decab02318a36890513fd9690745520a4fc09def0cebcadf2258a9119",
+      "retrieved_at": "2026-11-20T15:18:09.937023+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2026 Iowa Code"
+    },
+    "b74e23b3e617387ddbd6f9559ceb44": {
+      "source_id": "US-IA:service:811cbbfc3cb4",
+      "authority_type": "court_rule",
+      "citation": "Iowa R. Civ. P. 1.305(1)",
+      "text": "1.305(1) Upon any individual who has attained majority and who has not been adjudged incompetent, either by taking the individual’s signed, dated acknowledgment of service endorsed on the notice, or by serving the individual personally; or by serving, at the individual’s dwelling house or usual place of abode, any person residing therein who is at least 18 years old, but if such place is a rooming house, hotel, club or apartment building, a copy may be delivered to such person who resides with the individual or is either a member of the individual’s family or the manager or proprietor of such place; or upon the individual’s spouse at a place other than the individual’s dwelling house or usual place of abode if probable cause exists to believe that the spouse lives at the individual’s dwelling house or usual place of abode.",
+      "text_sha256": "3346d98f3e0322495d3610b38faea7ca85df850f9bbad68778c3ae985214cb61",
+      "publisher_sha256": "ae6ecf5e9a558a4f80cd0e63a5bc3229fb7681ecd5946a4ca8fbe1773f7c56b6",
+      "retrieved_at": "2026-11-20T16:01:54.208218+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Iowa Judicial Branch Chapter 1 court rules archive retrieved from July 31, 2026 release",
+      "court": "Iowa District Court"
+    },
+    "19f5fa2551f1aec1ac915e236a6f39": {
+      "source_id": "US-IA:commencement:1cd6f2981c76",
+      "authority_type": "court_rule",
+      "citation": "Iowa R. Civ. P. 1.301(1)",
+      "text": "1.301(1) For all purposes, a civil action is commenced by filing a petition with the court. The date of filing shall determine whether an action has been commenced within the time allowed by statutes for limitation of actions, even though the limitation may inhere in the statute creating the remedy.",
+      "text_sha256": "32efe9d1e7aa03586e51fa0175924fea9de7dfb0164e70578075b040bec58099",
+      "publisher_sha256": "ae6ecf5e9a558a4f80cd0e63a5bc3229fb7681ecd5946a4ca8fbe1773f7c56b6",
+      "retrieved_at": "2026-11-20T16:01:54.208218+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Iowa Judicial Branch Chapter 1 court rules archive retrieved from July 31, 2026 release",
+      "court": "Iowa District Court"
+    },
+    "1b40ca35d667733e50846154bddedd": {
+      "source_id": "US-IA:small_claims:b0e1577bead1",
+      "authority_type": "statute",
+      "citation": "Iowa Code § 631.1(1)",
+      "text": "1. The following actions or claims are small claims and shall be commenced, heard and determined as provided in this chapter: a. A civil action for a money judgment where the amount in controversy is five thousand dollars or less for actions commenced before July 1, 2018, exclusive of interest and costs. b. A civil action for a money judgment where the amount in controversy is six thousand five hundred dollars or less for actions commenced on or after July 1, 2018, exclusive of interest and costs.",
+      "text_sha256": "586d1ee524e512a73b5cc050f0b3412e628516752fd70473379e85cdb386b4b4",
+      "publisher_sha256": "54937e2e8e80553cd2956fa0efc0465108f0a0214d46310d58f5db4df3a56a70",
+      "retrieved_at": "2026-11-20T16:16:29.386673+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2026 Iowa Code",
+      "court": "Iowa District Court sitting in small claims"
+    },
+    "2d3441a78ba3f28b5c58ee27f64ffb": {
+      "source_id": "US-IA:response:8ca416f3734e",
+      "authority_type": "court_rule",
+      "citation": "Iowa R. Civ. P. 1.303(1)–(3) (time for motion or answer)",
+      "text": "1.303(1) Unless otherwise provided, the defendant, respondent, or other party shall serve, and within a reasonable time thereafter file, a motion or answer within 20 days after the service of the original notice and petition upon such party. 1.303(2) Any statute of Iowa which specifically requires response by a particular party, or in a particular action, within a specified time, shall govern the time for serving, and within a reasonable time thereafter filing, a motion or answer in such cases. 1.303(3) A defendant, respondent, or other party served in a manner prescribed by an order of court shall serve, and within a reasonable time thereafter file, a motion or answer on or before the date fixed.",
+      "text_sha256": "9d05eea9622038977d2490382ad519639d11840cac31557f80fe8636a0b64048",
+      "publisher_sha256": "ae6ecf5e9a558a4f80cd0e63a5bc3229fb7681ecd5946a4ca8fbe1773f7c56b6",
+      "retrieved_at": "2026-11-20T18:40:43.165942+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Iowa courts applying the ordinary civil rules",
+      "edition": "Iowa Rules of Civil Procedure chapter PDF dated September 30, 2026"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "6bfc73a64a49ce7a625745edd8e44c",
+    "source_id": "US-IA:fault:f3b39ea29516",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

@@ -1,0 +1,584 @@
+{
+  "jurisdiction": "US-VT",
+  "version": "1",
+  "sources": {
+    "US-VT:statutes:1c516682787e": {
+      "category": "statutes",
+      "title": "Vermont Statutes",
+      "url": "http://legislature.vermont.gov/statutes",
+      "directory": "codes",
+      "locator": "Vermont"
+    },
+    "US-VT:constitution:ec24f81d9ec4": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://legislature.vermont.gov/statutes/constitution-of-the-state-of-vermont/",
+      "directory": "codes",
+      "locator": "Vermont"
+    },
+    "US-VT:legislature:949aea6a298d": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://legislature.vermont.gov",
+      "directory": "codes",
+      "locator": "Vermont"
+    },
+    "US-VT:labor_agency:7f24b10b377e": {
+      "category": "labor_agency",
+      "title": "www.labor.vermont.gov",
+      "url": "http://www.labor.vermont.gov/",
+      "directory": "labor",
+      "locator": "Vermont"
+    },
+    "US-VT:commercial_code:d7dbbf61fa58": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "https://legislature.vermont.gov/statutes/title/09A",
+      "directory": "ucc",
+      "locator": "Vermont"
+    },
+    "US-VT:civil_rules:88af66cf8a25": {
+      "category": "civil_rules",
+      "title": "Court Procedure",
+      "url": "https://legislature.vermont.gov/statutes/chapter/12/001",
+      "directory": "procedure",
+      "locator": "Vermont"
+    },
+    "US-VT:consumer_agency:d6287c3dad44": {
+      "category": "consumer_agency",
+      "title": "Vermont (VT)",
+      "url": "https://ago.vermont.gov/cap",
+      "directory": "consumer",
+      "locator": "Vermont (VT)"
+    },
+    "US-VT:judiciary:6856ce2ee069": {
+      "category": "judiciary",
+      "title": "Vermont Judiciary",
+      "url": "http://www.vermontjudiciary.org/",
+      "directory": "doj-VT",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-VT:judiciary:17bd6ab68102": {
+      "category": "judiciary",
+      "title": "Opinions, Decisions, and Order Library",
+      "url": "https://www.vermontjudiciary.org/opinions-decisions?f%5B0%5D=court_division_opinions_library%3A7&f%5B1%5D=court_division_opinions_library%3A7",
+      "directory": "doj-VT",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-VT:court_directory:657030435d5c": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://www.vermontjudiciary.org/GTC/supreme/default.aspx",
+      "directory": "doj-VT",
+      "locator": "Supreme Court"
+    },
+    "US-VT:opinions:77ecb5f54ef8": {
+      "category": "opinions",
+      "title": "Supreme Court Published Opinions by Date",
+      "url": "https://www.vermontjudiciary.org/supreme-court/published-opinions-and-entry-orders",
+      "directory": "doj-VT",
+      "locator": "State and Local Courts / Supreme Court"
+    },
+    "US-VT:court_directory:291bced48a9a": {
+      "category": "court_directory",
+      "title": "Superior Court Divisions",
+      "url": "https://www.vermontjudiciary.org/court-divisions",
+      "directory": "doj-VT",
+      "locator": "Superior Court Divisions"
+    },
+    "US-VT:forms:aacbf872c597": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "http://www.vermontjudiciary.org/MasterPages/Court-FormsIndex.aspx",
+      "directory": "doj-VT",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-VT:constitution:64200aae88ae": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://legislature.vermont.gov/statutes/constitution-of-the-state-of-vermont/",
+      "directory": "doj-VT",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-VT:statutes:8e197a03daf1": {
+      "category": "statutes",
+      "title": "Statutes Online",
+      "url": "http://legislature.vermont.gov/statutes/",
+      "directory": "doj-VT",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-VT:pi_limitations:ea575ac77f66": {
+      "category": "pi_limitations",
+      "title": "12 V.S.A. § 512(4)",
+      "url": "https://legislature.vermont.gov/statutes/section/12/023/00512",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://legislature.vermont.gov/statutes/section/12/023/00512",
+        "retrieved_at": "2026-11-17T19:34:02.316745+00:00",
+        "http_status": "200",
+        "sha256": "b267d2007fc73a550b01c5c9f8c5f59ce698d3acfc87ef3e94e14b985dfab3fd",
+        "health": "manual_review_required"
+      }
+    },
+    "US-VT:written_contract_limitations:f0763d17ada9": {
+      "category": "written_contract_limitations",
+      "title": "12 V.S.A. § 511",
+      "url": "https://legislature.vermont.gov/statutes/section/12/023/00511",
+      "directory": null,
+      "locator": "12 V.S.A. § 511",
+      "observation": {
+        "requested_url": "https://legislature.vermont.gov/statutes/section/12/023/00511",
+        "retrieved_at": "2026-11-17T19:34:02.572203+00:00",
+        "http_status": "200",
+        "sha256": "705f8f2347d549881163169d5c6844a29d413cf0a1569594ce72167be5ad5464",
+        "health": "healthy"
+      }
+    },
+    "US-VT:oral_contract_limitations:f0763d17ada9": {
+      "category": "oral_contract_limitations",
+      "title": "12 V.S.A. § 511",
+      "url": "https://legislature.vermont.gov/statutes/section/12/023/00511",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://legislature.vermont.gov/statutes/section/12/023/00511",
+        "retrieved_at": "2026-11-17T19:34:02.572203+00:00",
+        "http_status": "200",
+        "sha256": "705f8f2347d549881163169d5c6844a29d413cf0a1569594ce72167be5ad5464",
+        "health": "manual_review_required"
+      }
+    },
+    "US-VT:small_claims:d5fbcd5fa147": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.vermontjudiciary.org/sites/default/files/documents/Small%20Claims%20Booklet%20-%20October2019.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.vermontjudiciary.org/sites/default/files/documents/Small%20Claims%20Booklet%20-%20October2019.pdf",
+        "retrieved_at": "2026-11-17T19:43:10.316511+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-VT:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 29"
+    },
+    "US-VT:deposit:d858bf1c9e66": {
+      "category": "deposit",
+      "title": "9 V.S.A. § 4461",
+      "url": "https://legislature.vermont.gov/statutes/section/09/137/04461",
+      "directory": null,
+      "locator": "9 V.S.A. § 4461"
+    },
+    "US-VT:fault:056cae38d9ed": {
+      "category": "fault",
+      "title": "12 V.S.A. § 1036",
+      "url": "https://legislature.vermont.gov/statutes/fullchapter/12/027",
+      "directory": null,
+      "locator": "12 V.S.A. § 1036",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:36.870958+00:00",
+        "sha256": "a19f9377154e38284412d3bf95cefccdae573963968e7e0d5c76c2e5ec5333e5"
+      }
+    },
+    "US-VT:consumerLaw:7ef4b7b2eafb": {
+      "title": "9 V.S.A. § 2451 et seq.",
+      "category": "consumerLaw",
+      "url": "https://legislature.vermont.gov/statutes/section/09/063/02451",
+      "directory": "consumer_statutes_index",
+      "locator": "9 V.S.A. § 2451 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-VT:consumerLaw:512d2fa5571a": {
+      "category": "consumerLaw",
+      "title": "9 V.S.A. § 2453(a)",
+      "url": "https://legislature.vermont.gov/statutes/section/09/063/02453",
+      "locator": "9 V.S.A. § 2453(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:58.568863+00:00",
+        "sha256": "4a8f7bb70c77d8bc001fa479e705523f42399d42448c4260eed92bdce781e80c"
+      }
+    },
+    "US-VT:contract_formation:717f8d4e7c23": {
+      "category": "contract_formation",
+      "title": "9A V.S.A. § 2-204",
+      "url": "https://legislature.vermont.gov/statutes/section/09a/002/00204",
+      "locator": "9A V.S.A. § 2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:36.782693+00:00",
+        "sha256": "d6bae211ff5ab41f4913d42672342bb89ee0e71e13bd3fc5526d31906134765f"
+      }
+    },
+    "US-VT:wageLaw:722767d5ea87": {
+      "category": "wageLaw",
+      "title": "21 V.S.A. § 342(a)",
+      "url": "https://legislature.vermont.gov/statutes/section/21/005/00342",
+      "locator": "21 V.S.A. § 342(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:11:01.853177+00:00",
+        "sha256": "a79e3e523379c302a4064bd344a1914e08d5c1b40eadff16d4e8c41004d83a58"
+      }
+    },
+    "US-VT:small_claims:893e5e3585ea": {
+      "category": "small_claims",
+      "title": "12 V.S.A. § 5531",
+      "url": "https://legislature.vermont.gov/statutes/section/12/187/05531",
+      "locator": "12 V.S.A. § 5531",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:17:29.882679+00:00",
+        "sha256": "4cdd61faade161008cce1acd7d293eeedf645e292f9eaf5bec2dc45de05651d4"
+      }
+    },
+    "US-VT:pi_limitations:751041f46150": {
+      "category": "pi_limitations",
+      "title": "12 V.S.A. § 512",
+      "url": "https://legislature.vermont.gov/statutes/section/12/023/00512",
+      "locator": "12 V.S.A. § 512",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:23.862555+00:00",
+        "sha256": "9f874b276e120f758f075dc02c88ade9d0e6b4c43b8e8a0cfdd87e659c176b55"
+      }
+    },
+    "US-VT:tolling:aa1169e10b37": {
+      "category": "tolling",
+      "title": "12 V.S.A. § 551(a)–(b)",
+      "url": "https://legislature.vermont.gov/statutes/section/12/023/00551",
+      "locator": "12 V.S.A. § 551(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:18:10.521949+00:00",
+        "sha256": "c9431fbc63f9524b9ca484abd0d03930b9a7955ba7853ddbdad7bdd0b4743bcd"
+      }
+    },
+    "US-VT:debtLaw:df28b4604a0b": {
+      "category": "debtLaw",
+      "title": "2009 Vt. Acts & Resolves No. 55, § 11 (8 V.S.A. § 14304)",
+      "url": "https://legislature.vermont.gov/Documents/2010/Docs/ACTS/ACT055/ACT055%20As%20Enacted.pdf",
+      "locator": "2009 Vt. Acts & Resolves No. 55, § 11 (8 V.S.A. § 14304)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:39:37.693130+00:00",
+        "sha256": "fb50ab5954ff6a96c73a3a1b6fd7cc7d139d70bdfeaa14a378df82c41c08fa92"
+      }
+    },
+    "US-VT:response:966f6f35c1b3": {
+      "category": "response",
+      "title": "Vt. R. Civ. P. 12(a)(1)",
+      "url": "https://www.vtcourts.gov/sites/default/files/documents/PROMULGATED%20Civil%20Day%20is%20Day.pdf",
+      "locator": "Vt. R. Civ. P. 12(a)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:37:48.914679+00:00",
+        "sha256": "a7ec99c310e4e9b74e7a582c5bad00db3e6b0c04b33dbfd623b07580870f1a71"
+      }
+    },
+    "US-VT:postmotion_response:503f2f198fb9": {
+      "category": "postmotion_response",
+      "title": "Vt. R. Civ. P. 12(a)(3)",
+      "url": "https://www.vtcourts.gov/sites/default/files/documents/PROMULGATED%20Civil%20Day%20is%20Day.pdf",
+      "locator": "Vt. R. Civ. P. 12(a)(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:37:48.914679+00:00",
+        "sha256": "a7ec99c310e4e9b74e7a582c5bad00db3e6b0c04b33dbfd623b07580870f1a71"
+      }
+    },
+    "US-VT:negligence_elements:8b09bc42b097": {
+      "category": "negligence_elements",
+      "title": "Driscoll v. Wright Cut and Clean, LLC, 2024 VT 49, ¶ 7",
+      "url": "https://www.vtcourts.gov/sites/default/files/documents/op23-347.pdf",
+      "locator": "Driscoll v. Wright Cut and Clean, LLC, 2024 VT 49, ¶ 7",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:18:02.093262+00:00",
+        "sha256": "ebb8f5a019f9315989a589f220c7b0e0bc91f500eada31e9b5f5e733ea377c20"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-VT:court:5079aeebabaf",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-VT:court_directory:657030435d5c"
+    },
+    {
+      "id": "US-VT:court:1501f6455cd5",
+      "name": "Superior Court Divisions",
+      "level": "trial_directory",
+      "source_id": "US-VT:court_directory:291bced48a9a"
+    },
+    {
+      "id": "US-VT:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-VT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-VT:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-VT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-VT:court:d9bcb339204e",
+      "name": "Family",
+      "level": "general_trial",
+      "source_id": "US-VT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-VT:court:4f54b582f9f0",
+      "name": "Probate",
+      "level": "limited_trial",
+      "source_id": "US-VT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-VT:court:b8b23a5c5780",
+      "name": "Environmental",
+      "level": "limited_trial",
+      "source_id": "US-VT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-VT:court:f37bb82a94cf",
+      "name": "Judicial Bureau",
+      "level": "limited_trial",
+      "source_id": "US-VT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "12 V.S.A. § 512(4)",
+      "source_id": "US-VT:pi_limitations:ea575ac77f66",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "12 V.S.A. § 511",
+      "source_id": "US-VT:written_contract_limitations:f0763d17ada9",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "12 V.S.A. § 511",
+      "source_id": "US-VT:oral_contract_limitations:f0763d17ada9",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Vt. Stat. tit. 9, §4467 Termination of tenancy; notice; Vt. Stat. tit. 9, §4467 Termination of tenancy; notice; Vt. Stat. tit. 9, §4467 Termination of tenancy; notice; Vt. Stat. tit. 10, §6237 Evictions; E.O. 20-59. (No. 01-20) [Declaration of State of Emergency in Response to COVID-19 and National Guard Call-Out; No. 101. An act relating to establishing a moratorium on ejectment and foreclosure actions during the COVID-19 emergency. (S. 333)",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "9 V.S.A. § 2451 et seq.",
+      "source_id": "US-VT:consumerLaw:7ef4b7b2eafb",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "e5b229e67943bf9e61bd39438a8166": {
+      "citation": "12 V.S.A. § 511",
+      "source_id": "US-VT:written_contract_limitations:f0763d17ada9",
+      "authority_type": "statute",
+      "text": "A civil action, except one brought upon the judgment or decree of a court of record of the United States or of this or some other state, and except as otherwise provided, shall be commenced within six years after the cause of action accrues and not thereafter.",
+      "text_sha256": "eea45df4f6dfa7caebebe74ff5493851b526160248411f56b871e1a7f5b2466b",
+      "publisher_sha256": "705f8f2347d549881163169d5c6844a29d413cf0a1569594ce72167be5ad5464",
+      "retrieved_at": "2026-11-17T19:34:02.572203+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "4b151ea20a4801fdb1d12c08f9ee31": {
+      "citation": "9 V.S.A. § 4461",
+      "source_id": "US-VT:deposit:d858bf1c9e66",
+      "authority_type": "statute",
+      "text": "(c) A landlord shall return the security deposit along with a written statement itemizing any deductions to a tenant within 14 days from the date on which the landlord discovers that the tenant vacated or abandoned the dwelling unit or the date the tenant vacated the dwelling unit, provided the landlord received notice from the tenant of that date. In the case of the seasonal occupancy and rental of a dwelling unit not intended as a primary residence, the security deposit and written statement shall be returned within 60 days.",
+      "text_sha256": "5e11dfaf09799b9fa23c6f1597a582b49dd6e0bd479810f5b6b1415ab9aee073",
+      "publisher_sha256": "ff3ec21d34b84645e16484af4b7c59ef65c0d22c9bedc8e4307c8a05235c9f7a",
+      "retrieved_at": "2026-11-17T19:42:03.898494+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "887bb256eb1fa1fb72bdaf9273fcb8": {
+      "citation": "12 V.S.A. § 1036",
+      "source_id": "US-VT:fault:056cae38d9ed",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "§ 1036. Contributory and comparative negligence (a) Contributory negligence shall not bar recovery in an action by any plaintiff, or the plaintiff’s legal representative, to recover damages for negligence resulting in death, personal injury, or property damage, if the negligence was not greater than the causal total negligence of the defendant or defendants, but the damage shall be diminished by general verdict in proportion to the amount of negligence attributed to the plaintiff. Where recovery is allowed against more than one defendant, each defendant shall be liable for that proportion of the total dollar amount awarded as damages in the ratio of the amount of the defendant’s causal negligence to the amount of causal negligence attributed to all defendants against whom recovery is allowed. (b) Contributory and comparative negligence shall be prohibited as a defense to limit a plaintiff’s recovery for damages in an action for a negligence claim relating to a sexual act as defined in 13 V.S.A. § 3251 or sexual conduct as defined in 13 V.S.A. § 2821.",
+      "text_sha256": "9981aba0120e2dd3353d9fe8b226466cb84d07fe1a682a2edcbe4bc05d6163e5",
+      "publisher_sha256": "a19f9377154e38284412d3bf95cefccdae573963968e7e0d5c76c2e5ec5333e5",
+      "retrieved_at": "2026-11-17T20:50:36.870958+00:00",
+      "currentness": "unresolved"
+    },
+    "67f98f5cd249f69210305cbdbde9ce": {
+      "source_id": "US-VT:consumerLaw:512d2fa5571a",
+      "authority_type": "statute",
+      "citation": "9 V.S.A. § 2453(a)",
+      "text": "(a) Unfair methods of competition in commerce and unfair or deceptive acts or practices in commerce are hereby declared unlawful.",
+      "text_sha256": "5ce4cdc5cf6971b1ad3dbc83315353961d9d7819d6050ef21f1acfae1c8a5493",
+      "publisher_sha256": "4a8f7bb70c77d8bc001fa479e705523f42399d42448c4260eed92bdce781e80c",
+      "retrieved_at": "2026-11-17T21:03:58.568863+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "9a49c93f2d9050d1671ee167a86468": {
+      "source_id": "US-VT:contract_formation:717f8d4e7c23",
+      "authority_type": "statute",
+      "citation": "9A V.S.A. § 2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "d6bae211ff5ab41f4913d42672342bb89ee0e71e13bd3fc5526d31906134765f",
+      "retrieved_at": "2026-11-18T15:14:36.782693+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "3011688fd4c33d792b3ccf61dfd99c": {
+      "source_id": "US-VT:wageLaw:722767d5ea87",
+      "authority_type": "statute",
+      "citation": "21 V.S.A. § 342(a)",
+      "text": "(a)(1) Any employer that is doing business within the State shall pay each week, in lawful money or checks, the wages earned by each employee to a day not more than six days prior to the date of payment. (2) Notwithstanding subdivision (1) of this subsection, any employer having one or more employees that is doing business within the State may either: (A) after giving notice to each employee, pay biweekly or semimonthly, in lawful money or checks, each employee the wages earned by the employee to a day not more than six days prior to the date of payment; or (B) pursuant to the terms of a collective bargaining agreement pay any employee who is subject to that agreement the wages earned by the employee to a day not more than 13 days prior to the date of payment. (3)(A) An employee of a school district or supervisory union may elect in writing to have a set amount or set percentage of the employee’s after-tax wages withheld by the school district in a district-held bank account each pay period. The percentage or amount withheld shall be determined by the employee. (B) At the option of the employee, the school district or supervisory union shall disburse the funds to the employee in either a single payment at the time the employee receives the employee’s final paycheck of the school year or in equal weekly or biweekly sums beginning at the end of the school year. (C)(i) The school district or supervisory union shall disburse funds from the account in any sum as requested by the employee and, at the end of the school year or at the employee’s option over the course of the period between the current and next school year, or upon separation from employment, shall remit to the employee any remaining funds, including interest earnings, held in the account. (ii) For employees in a bargaining unit organized pursuant to either chapter 22 of this title or 16 V.S.A. chapter 57, the school district or supervisory union shall implement this election in a manner consistent with the provisions of this subdivision and as determined through negotiations under those chapters. (iii) For employees not in a bargaining unit, the school district or supervisory union shall determine the manner in which to implement the provisions of this subdivision (C).",
+      "text_sha256": "2bba2aa067c692f788aa62010d5fe1a847dbb5497ace4d70d60b6c75d11f0d12",
+      "publisher_sha256": "a79e3e523379c302a4064bd344a1914e08d5c1b40eadff16d4e8c41004d83a58",
+      "retrieved_at": "2026-11-19T14:11:01.853177+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "34b5dcfd6076a19b4fa8c105a65624": {
+      "source_id": "US-VT:small_claims:893e5e3585ea",
+      "authority_type": "statute",
+      "citation": "12 V.S.A. § 5531",
+      "text": "(a) The Supreme Court, pursuant to section 1 of this title, shall make rules under this chapter applicable to such Court providing for a simple, informal, and inexpensive procedure for the determination, according to the rules of substantive law, of actions of a civil nature of which they have jurisdiction, other than actions for slander or libel and in which the plaintiff does not claim as debt or damage more than $10,000.00. Small claims proceedings shall be limited in accord with this chapter and the procedures made available under those rules. The procedure shall not be exclusive but shall be alternative to the formal procedure begun by the filing of a complaint. (b) Parties may not request claims for relief other than money damages under this chapter. Nor may parties split a claim in excess of $10,000.00 into two or more claims under this chapter. (c) In small claims actions where the plaintiff makes a claim for relief greater than $3,500.00, the defendant shall have the right to request a special assignment of a judicial officer. Upon making this request, a Superior judge or a member of the Vermont bar appointed pursuant to 4 V.S.A. § 22(b) shall be assigned to hear the action. (d) Venue in small claims actions shall be governed by section 402 of this title. (e) Notwithstanding this section or any other provision of law, the small claims court shall not have jurisdiction over actions for collection of any debt greater than $5,000.00 arising out of: (1) a consumer credit transaction as defined in 15 U.S.C. § 1679a; or (2) medical debt as defined in 18 V.S.A. § 9481.",
+      "text_sha256": "da70b9f33e1dcaafe489f249896e68adaad5a0b996afc72158c2142a40a14c83",
+      "publisher_sha256": "4cdd61faade161008cce1acd7d293eeedf645e292f9eaf5bec2dc45de05651d4",
+      "retrieved_at": "2026-11-19T19:17:29.882679+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Vermont Superior Court"
+    },
+    "b9ea4aab03aede72a19867fdaaae19": {
+      "source_id": "US-VT:pi_limitations:751041f46150",
+      "authority_type": "statute",
+      "citation": "12 V.S.A. § 512",
+      "text": "Actions for the following causes shall be commenced within three years after the cause of action accrues, and not after: (1) assault and battery; (2) false imprisonment; (3) slander and libel; (4) except as otherwise provided in this chapter, injuries to the person suffered by the act or default of another person, provided that the cause of action shall be deemed to accrue as of the date of the discovery of the injury; (5) damage to personal property suffered by the act or default of another.",
+      "text_sha256": "c49a152e93080d527c83a8f5a8040a915ccbda50fbea6b520ba7a74fa546d8ca",
+      "publisher_sha256": "9f874b276e120f758f075dc02c88ade9d0e6b4c43b8e8a0cfdd87e659c176b55",
+      "retrieved_at": "2026-11-19T19:31:23.862555+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "3a29c407806d2feaa7abd76e7dc0d2": {
+      "source_id": "US-VT:tolling:aa1169e10b37",
+      "authority_type": "statute",
+      "citation": "12 V.S.A. § 551(a)–(b)",
+      "text": "(a) When a person entitled to bring an action specified in this chapter is a minor, lacks capacity to protect his or her interests due to a mental condition or psychiatric disability, or is imprisoned at the time the cause of action accrues, such person may bring such action within the times in this chapter respectively limited, after the disability is removed. (b) If a person entitled to bring an action specified in this chapter becomes unable to protect his or her interests due to a mental condition or psychiatric disability after the cause of action accrues but before the statute has run, the time during which the person is unable to protect his or her interests due to a mental condition or psychiatric disability shall not be taken as a part of the time limited for the commencement of the action.",
+      "text_sha256": "2ed3ad5c945720239d695b1322f6359cefbda3deaa2bc099e252518a68066854",
+      "publisher_sha256": "c9431fbc63f9524b9ca484abd0d03930b9a7955ba7853ddbdad7bdd0b4743bcd",
+      "retrieved_at": "2026-11-20T15:18:10.521949+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Vermont Statutes Online including actions of the 2026 session"
+    },
+    "b691f1f9f6400dd755bf09caf8b61e": {
+      "source_id": "US-VT:debtLaw:df28b4604a0b",
+      "authority_type": "statute",
+      "citation": "2009 Vt. Acts & Resolves No. 55, § 11 (8 V.S.A. § 14304)",
+      "text": "(a) A credit card company or its creditor or collection agency shall not contact a card holder regarding a debt, late fee, or other charge once informed that the card holder is disputing the debt, late fee, or other charge; is represented by legal counsel in the dispute; and the card holder has provided the credit card company or its creditor or collection agency with the name, address, and telephone number of the legal counsel. (b) A credit card company or its creditor or collection agency that violates subsection (a) of this section shall be fined not more than $10,000.00. (c) Each violation of subsection (a) of this section shall be considered a separate offense.",
+      "text_sha256": "27a0ed5a0fe1038762a975bbf0ddeda1e42581180d77a72b120704b6116f0d3f",
+      "publisher_sha256": "fb50ab5954ff6a96c73a3a1b6fd7cc7d139d70bdfeaa14a378df82c41c08fa92",
+      "retrieved_at": "2026-11-20T18:39:37.693130+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Vermont enacted Act No. 55, § 11 (effective July 1, 2009)",
+      "effective_from": "2009-07-01"
+    },
+    "58c7813d11952bcac59d7cef4b5096": {
+      "source_id": "US-VT:response:966f6f35c1b3",
+      "authority_type": "court_rule",
+      "citation": "Vt. R. Civ. P. 12(a)(1)",
+      "text": "(1) A defendant shall serve an answer (A) within 21 days after being served with the summons and complaint, unless the court directs otherwise when service of process is made pursuant to an order of court under Rule 4(d) or 4(g), and provided that a defendant served pursuant to Rule 4(e), 4(f), or 4(k) outside the continental United States or Canada may serve an answer at any time within 49 days after such service; or (B) if service of the summons has been timely waived on request under Rule 4(l), within 60 days after the date when the request for waiver was sent, or within 90 days if the defendant was addressed outside any state or territory of the United States.",
+      "text_sha256": "123cf044dc4002de8191e2d007fd8899c50b6af22f8f05e1b05f8ce47fc49f08",
+      "publisher_sha256": "a7ec99c310e4e9b74e7a582c5bad00db3e6b0c04b33dbfd623b07580870f1a71",
+      "retrieved_at": "2026-11-21T03:37:48.914679+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Vermont Supreme Court civil timing amendments effective January 1, 2018",
+      "effective_from": "2018-01-01"
+    },
+    "874acc8d7a152ad5a4c4b0774d48f7": {
+      "source_id": "US-VT:postmotion_response:503f2f198fb9",
+      "authority_type": "court_rule",
+      "citation": "Vt. R. Civ. P. 12(a)(3)",
+      "text": "(3) Unless a different time is fixed by court order, the service of a motion permitted under this rule alters these periods of time as follows: (A) if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within 14 days after notice of the court’s action; or (B) if the court grants a motion for a more definite statement the responsive pleading shall be served within 14 days after the service of the more definite statement.",
+      "text_sha256": "6dcbb6914573ee65948e836998aa5b3152ae2ebb1696a60a026f56e60926ba51",
+      "publisher_sha256": "a7ec99c310e4e9b74e7a582c5bad00db3e6b0c04b33dbfd623b07580870f1a71",
+      "retrieved_at": "2026-11-21T03:37:48.914679+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Vermont Supreme Court civil timing amendments effective January 1, 2018",
+      "effective_from": "2018-01-01"
+    },
+    "128b6c2f20a320450d62e4f978f226": {
+      "source_id": "US-VT:negligence_elements:8b09bc42b097",
+      "authority_type": "opinion",
+      "citation": "Driscoll v. Wright Cut and Clean, LLC, 2024 VT 49, ¶ 7",
+      "text": "To survive judgment as a matter of law in a negligence claim, the plaintiff must produce sufficient evidence of (1) “a legal duty owed by defendant to plaintiff,” (2) “a breach of that duty,” (3) an “actual injury to the plaintiff,” and (4) “a causal link between the breach and the injury.” Zukatis v. Perry, 165 Vt. 298, 301, 682 A.2d 964, 966 (1996).",
+      "text_sha256": "471468a0a2b4b24ce174c3a1d59082509a95fbf74cae63fb0e01335724a37bba",
+      "publisher_sha256": "ebb8f5a019f9315989a589f220c7b0e0bc91f500eada31e9b5f5e733ea377c20",
+      "retrieved_at": "2026-11-21T04:18:02.093262+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2024-08-02",
+      "court": "Vermont Supreme Court",
+      "decision_date": "2024-08-02",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from judgment as a matter of law at trial on a negligence claim arising from a vehicle collision.",
+      "publisher_member": "court opinion PDF p. 4"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "887bb256eb1fa1fb72bdaf9273fcb8",
+    "source_id": "US-VT:fault:056cae38d9ed",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

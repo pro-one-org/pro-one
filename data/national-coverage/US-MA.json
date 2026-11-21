@@ -1,0 +1,659 @@
+{
+  "jurisdiction": "US-MA",
+  "version": "1",
+  "sources": {
+    "US-MA:statutes:78dc108363c3": {
+      "category": "statutes",
+      "title": "General Laws of Massachusetts",
+      "url": "http://malegislature.gov/Laws/GeneralLaws/Search",
+      "directory": "codes",
+      "locator": "Massachusetts"
+    },
+    "US-MA:constitution:7c308bbb7206": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://malegislature.gov/Laws/Constitution",
+      "directory": "doj-MA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MA:legislature:fa0955e7432b": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://malegislature.gov/",
+      "directory": "codes",
+      "locator": "Massachusetts"
+    },
+    "US-MA:labor_agency:21e6bb6ecc27": {
+      "category": "labor_agency",
+      "title": "www.mass.gov/orgs/executive-office-of-labor-and-workforce-development",
+      "url": "https://www.mass.gov/orgs/executive-office-of-labor-and-workforce-development",
+      "directory": "labor",
+      "locator": "Massachusetts"
+    },
+    "US-MA:commercial_code:e0f1426beed8": {
+      "category": "commercial_code",
+      "title": "Commercial Law",
+      "url": "https://malegislature.gov/laws/generallaws/parti/titlexv/chapter106",
+      "directory": "ucc",
+      "locator": "Massachusetts"
+    },
+    "US-MA:civil_rules:928130c0c348": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "https://www.mass.gov/law-library/massachusetts-rules-of-civil-procedure",
+      "directory": "procedure",
+      "locator": "Massachusetts"
+    },
+    "US-MA:consumer_agency:95a9090df565": {
+      "category": "consumer_agency",
+      "title": "Massachusetts (MA)",
+      "url": "https://www.mass.gov/orgs/office-of-consumer-affairs-and-business-regulation",
+      "directory": "consumer",
+      "locator": "Massachusetts (MA)"
+    },
+    "US-MA:judiciary:7923f1ab542d": {
+      "category": "judiciary",
+      "title": "Judicial Branch",
+      "url": "https://www.mass.gov/orgs/massachusetts-court-system",
+      "directory": "doj-MA",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-MA:judiciary:727ddec1bb14": {
+      "category": "judiciary",
+      "title": "Supreme Court, Court of Appeals, and Superior Court Decisions",
+      "url": "http://www.socialaw.com/slips.htm?sid=120",
+      "directory": "doj-MA",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-MA:court_directory:a30720ef6b26": {
+      "category": "court_directory",
+      "title": "Supreme Judicial Court",
+      "url": "http://www.mass.gov/courts/sjc",
+      "directory": "doj-MA",
+      "locator": "Supreme Judicial Court"
+    },
+    "US-MA:court_directory:93e7ec81c850": {
+      "category": "court_directory",
+      "title": "Appeals Court",
+      "url": "http://www.mass.gov/courts/court-info/appealscourt/",
+      "directory": "doj-MA",
+      "locator": "Appeals Court"
+    },
+    "US-MA:court_directory:89f99b827ddd": {
+      "category": "court_directory",
+      "title": "Trial Court",
+      "url": "https://www.mass.gov/orgs/executive-office-of-the-trial-court",
+      "directory": "doj-MA",
+      "locator": "Trial Court"
+    },
+    "US-MA:court_directory:0f7a62f3440a": {
+      "category": "court_directory",
+      "title": "Trial Court Law Libraries",
+      "url": "http://www.mass.gov/courts/case-legal-res/law-lib/",
+      "directory": "doj-MA",
+      "locator": "Trial Court Law Libraries"
+    },
+    "US-MA:forms:7b84bde465f2": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://www.mass.gov/topics/court-forms",
+      "directory": "doj-MA",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-MA:statutes:f239c9f9b739": {
+      "category": "statutes",
+      "title": "General Laws",
+      "url": "https://malegislature.gov/Laws/GeneralLaws",
+      "directory": "doj-MA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MA:statutes:056a51a2a97e": {
+      "category": "statutes",
+      "title": "Session Laws",
+      "url": "https://malegislature.gov/Laws/SessionLaws",
+      "directory": "doj-MA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MA:regulations:aa5ecd66b9a2": {
+      "category": "regulations",
+      "title": "State Publications and Regulations Division",
+      "url": "https://www.sec.state.ma.us/divisions/pubs-regs/pubs-regs.htm",
+      "directory": "doj-MA",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-MA:regulations:135bb660d12c": {
+      "category": "regulations",
+      "title": "Code of Massachusetts Regulations",
+      "url": "https://www.mass.gov/code-of-massachusetts-regulations-cmr",
+      "directory": "doj-MA",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-MA:pi_limitations:f5d1a2006371": {
+      "category": "pi_limitations",
+      "title": "Mass. Gen. Laws ch. 260, § 2A",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleV/Chapter260/Section2A",
+      "directory": null,
+      "locator": "Mass. Gen. Laws ch. 260, § 2A",
+      "observation": {
+        "requested_url": "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleV/Chapter260/Section2A",
+        "retrieved_at": "2026-11-17T19:33:58.264182+00:00",
+        "http_status": "200",
+        "sha256": "2f26d703c5cbb6709840f24061f8552abd333f5253040985af2ff5df0886aab1",
+        "health": "healthy"
+      }
+    },
+    "US-MA:written_contract_limitations:e11da4007b18": {
+      "category": "written_contract_limitations",
+      "title": "Mass. Gen. Laws ch. 260, § 2",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleV/Chapter260/Section2",
+      "directory": null,
+      "locator": "Mass. Gen. Laws ch. 260, § 2",
+      "observation": {
+        "requested_url": "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleV/Chapter260/Section2",
+        "retrieved_at": "2026-11-17T19:33:58.361147+00:00",
+        "http_status": "200",
+        "sha256": "6942a7dfc0b5f47819934bc51de4b2ca366255d74fa79983cf81d478a60def7d",
+        "health": "healthy"
+      }
+    },
+    "US-MA:oral_contract_limitations:e11da4007b18": {
+      "category": "oral_contract_limitations",
+      "title": "M.G.L. c. 260, § 2",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleV/Chapter260/Section2",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleV/Chapter260/Section2",
+        "retrieved_at": "2026-11-17T19:33:58.361147+00:00",
+        "http_status": "200",
+        "sha256": "6942a7dfc0b5f47819934bc51de4b2ca366255d74fa79983cf81d478a60def7d",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MA:small_claims:b62a8f3633b9": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.mass.gov/lists/small-claims-court-forms",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.mass.gov/lists/small-claims-court-forms",
+        "retrieved_at": "2026-11-17T19:42:52.082524+00:00",
+        "http_status": "200",
+        "sha256": "d16d1b113823851f2679e89cfb1eeef9d0f38576aa4e3f3cef6b1edd78ecdcc0",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MA:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    },
+    "US-MA:debtLaw:48762a1990e1": {
+      "category": "debtLaw",
+      "title": "Debt collection publication",
+      "url": "https://www.mass.gov/info-details/fair-debt-collection",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.mass.gov/info-details/fair-debt-collection",
+        "retrieved_at": "2026-11-17T19:42:53.014111+00:00",
+        "http_status": "200",
+        "sha256": "ca874cbf01730ba23faeda8e88c7ea7277bbb6b4df3d32c43931160abfcd35f4",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MA:contract:684b1315dc88": {
+      "category": "contract",
+      "title": "Contract research publication",
+      "url": "https://www.mass.gov/doc/superior-court-model-civil-jury-instructions-contract-claims-pdf/download",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.mass.gov/doc/superior-court-model-civil-jury-instructions-contract-claims-pdf/download",
+        "retrieved_at": "2026-11-17T19:42:51.862935+00:00",
+        "http_status": "200",
+        "sha256": "86ed5ab214295db105a5a2e62e673de9231afd4f954631819863d0e622f53b34",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MA:negligence:cc7c092f6a8f": {
+      "category": "negligence",
+      "title": "Negligence research publication",
+      "url": "https://www.mass.gov/lists/civil-model-jury-instructions-for-use-in-the-district-court",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.mass.gov/lists/civil-model-jury-instructions-for-use-in-the-district-court",
+        "retrieved_at": "2026-11-17T19:42:52.031709+00:00",
+        "http_status": "200",
+        "sha256": "6186f26d1c9cf121d1ef14afbb934589ca0727c5bbbadca2b4cc5ee70402f940",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MA:commencement:ccc6df24c423": {
+      "category": "commencement",
+      "title": "Mass. R. Civ. P. 3",
+      "url": "https://www.mass.gov/rules-of-civil-procedure/civil-procedure-rule-3-commencement-of-action",
+      "directory": null,
+      "locator": "Mass. R. Civ. P. 3",
+      "language": "en",
+      "publisher_role": "official_rule_publication",
+      "observation": {
+        "health": "retained_snapshot",
+        "retrieved_at": "2026-11-17T20:14:26.711025+00:00",
+        "sha256": "6aa5b31a8e535a80d3d7104f4d6de50eac629cb6cd00a2984a4b052a45bbf3c9"
+      }
+    },
+    "US-MA:fault:169d777bb89e": {
+      "category": "fault",
+      "title": "Mass. Gen. Laws ch. 231, § 85",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleII/Chapter231/Section85",
+      "directory": null,
+      "locator": "Mass. Gen. Laws ch. 231, § 85",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:34.378546+00:00",
+        "sha256": "122c50b90f52c60a5979acf3b10682155f117dbea98cc4ae92ba6b9e30fa3c92"
+      }
+    },
+    "US-MA:consumerLaw:274b7b77d4a9": {
+      "title": "Mass. Gen. Laws ch. 93A",
+      "category": "consumerLaw",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXV/Chapter93A/Section1",
+      "directory": "consumer_statutes_index",
+      "locator": "Mass. Gen. Laws ch. 93A",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-MA:consumerLaw:ad30ed6b77ad": {
+      "category": "consumerLaw",
+      "title": "Mass. Gen. Laws ch. 93A, § 2(a)",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXV/Chapter93A/Section2",
+      "locator": "Mass. Gen. Laws ch. 93A, § 2(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:54.301867+00:00",
+        "sha256": "0b1803584382163cebc024e43348dbbe0ae653ac35e78d96fd185439809d3a82"
+      }
+    },
+    "US-MA:contract_formation:6cdeff8ed71b": {
+      "category": "contract_formation",
+      "title": "Mass. Gen. Laws ch. 106, § 2-204",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXV/Chapter106/Article2/Section2-204",
+      "locator": "Mass. Gen. Laws ch. 106, § 2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:30.286769+00:00",
+        "sha256": "d39f144c8ef9789b5641379fde6a8cfe0229c05d3a1d50fa788ff33752dba819"
+      }
+    },
+    "US-MA:wageLaw:3cbf75e58a18": {
+      "category": "wageLaw",
+      "title": "Mass. Gen. Laws ch. 149, § 148, first paragraph",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/Parti/Titlexxi/Chapter149/Section148",
+      "locator": "Mass. Gen. Laws ch. 149, § 148, first paragraph",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:55.472282+00:00",
+        "sha256": "c8d2c1eb5382ac594b5b025d411b6ecb3ddcd7cf6779d07906f094e0f7de9ddf"
+      }
+    },
+    "US-MA:deposit:20799ff6f74d": {
+      "category": "deposit",
+      "title": "Mass. Gen. Laws ch. 186, § 15B(1)(b)",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15b",
+      "locator": "Mass. Gen. Laws ch. 186, § 15B(1)(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:20:35.889124+00:00",
+        "sha256": "8f9ce4e1aa743b7ba363f9788e9cce8bb87029889ef9e6df7fe34061a8cd360f"
+      }
+    },
+    "US-MA:debtLaw:91d5c63f34b8": {
+      "category": "debtLaw",
+      "title": "Mass. Gen. Laws ch. 93, § 24A",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXV/Chapter93/Section24a",
+      "locator": "Mass. Gen. Laws ch. 93, § 24A",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:23:24.052052+00:00",
+        "sha256": "f843d89255886f5afd8ef36a549e37273406ad7f53956ef7d305403cd109d332"
+      }
+    },
+    "US-MA:response:60849a91234c": {
+      "category": "response",
+      "title": "Mass. R. Civ. P. 12(a)",
+      "url": "https://www.mass.gov/rules-of-civil-procedure/civil-procedure-rule-12-defenses-and-objections-when-and-how-presented-by-pleading-or-motion-motion-for-judgment-on-pleadings",
+      "locator": "Mass. R. Civ. P. 12(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:42:59.578439+00:00",
+        "sha256": "e0a94f51ff78dcb706d4674ec9c0a3cb31d6723e371e0df5c2e5c065a6c18f8d"
+      }
+    },
+    "US-MA:service:9bd4da59e8e1": {
+      "category": "service",
+      "title": "Mass. R. Civ. P. 4(d)(1)",
+      "url": "https://www.mass.gov/rules-of-civil-procedure/civil-procedure-rule-4-process",
+      "locator": "Mass. R. Civ. P. 4(d)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:04.563685+00:00",
+        "sha256": "72ab1b0cc8114df583b30bd3f102a62835834ea8479e069b57a619491a74fa1e"
+      }
+    },
+    "US-MA:small_claims:65d7c2445a59": {
+      "category": "small_claims",
+      "title": "Mass. Gen. Laws ch. 218, § 21, first paragraph excerpt",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleI/Chapter218/Section21",
+      "locator": "Mass. Gen. Laws ch. 218, § 21, first paragraph excerpt",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:29.925156+00:00",
+        "sha256": "a3ec820ead338d41a1c1998912366376306d9f5d7168c43c5ea13a1a7c72de55"
+      }
+    },
+    "US-MA:negligence_elements:db54864d87bf": {
+      "category": "negligence_elements",
+      "title": "Jupin v. Kask, 447 Mass. 141, 146 (2006)",
+      "url": "https://web.archive.org/web/20210625094150id_/https://masscases.com/cases/sjc/447/447mass141.html",
+      "locator": "Jupin v. Kask, 447 Mass. 141, 146 (2006)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:24:20.802753+00:00",
+        "sha256": "c407937393dd5ff7f4eb444859187f1b014349bae3613ed8880d5472ea30c8c9"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-MA:court:2bac4330f8a3",
+      "name": "Supreme Judicial Court",
+      "level": "highest_directory",
+      "source_id": "US-MA:court_directory:a30720ef6b26"
+    },
+    {
+      "id": "US-MA:court:dbf9d862b625",
+      "name": "Appeals Court",
+      "level": "appellate_directory",
+      "source_id": "US-MA:court_directory:93e7ec81c850"
+    },
+    {
+      "id": "US-MA:court:3cb6f8f0a4d5",
+      "name": "Trial Court",
+      "level": "trial_directory",
+      "source_id": "US-MA:court_directory:89f99b827ddd"
+    },
+    {
+      "id": "US-MA:court:051b3b335d91",
+      "name": "Trial Court Law Libraries",
+      "level": "trial_directory",
+      "source_id": "US-MA:court_directory:0f7a62f3440a"
+    },
+    {
+      "id": "US-MA:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-MA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MA:court:3c9c83e81fef",
+      "name": "District",
+      "level": "limited_trial",
+      "source_id": "US-MA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MA:court:b2fbf62c5136",
+      "name": "Probate & Family",
+      "level": "limited_trial",
+      "source_id": "US-MA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MA:court:d693956e904d",
+      "name": "Juvenile",
+      "level": "limited_trial",
+      "source_id": "US-MA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MA:court:ae409c6c3854",
+      "name": "Housing",
+      "level": "limited_trial",
+      "source_id": "US-MA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MA:court:a2a7eb4830d0",
+      "name": "Boston Municipal",
+      "level": "limited_trial",
+      "source_id": "US-MA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MA:court:6d1dbfbecb2e",
+      "name": "Land",
+      "level": "limited_trial",
+      "source_id": "US-MA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "M.G.L. c. 260, § 2A",
+      "source_id": "US-MA:pi_limitations:f5d1a2006371",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "M.G.L. c. 260, § 2",
+      "source_id": "US-MA:written_contract_limitations:e11da4007b18",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "M.G.L. c. 260, § 2",
+      "source_id": "US-MA:oral_contract_limitations:e11da4007b18",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Mass. Gen. Laws ch. 186 § 11. Determination of lease for nonpayment of rent.; Mass. Gen. Laws ch. 239 § 1A. Land or tenements used for residential purposes; action by lessor under this chapter to recover possession; conditions and restrictions.",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Mass. Gen. Laws ch. 93A",
+      "source_id": "US-MA:consumerLaw:274b7b77d4a9",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "d4b6310725049d934157837b6571f6": {
+      "citation": "Mass. Gen. Laws ch. 260, § 2A",
+      "source_id": "US-MA:pi_limitations:f5d1a2006371",
+      "authority_type": "statute",
+      "text": "Section 2A. Except as otherwise provided, actions of tort, actions of contract to recover for personal injuries, and actions of replevin, shall be commenced only within three years next after the cause of action accrues.",
+      "text_sha256": "6fbd090e1cc2794c35dc1d4224a3a132af61fdf486de4ef9f3bffd991e3e1b77",
+      "publisher_sha256": "2f26d703c5cbb6709840f24061f8552abd333f5253040985af2ff5df0886aab1",
+      "retrieved_at": "2026-11-17T19:33:58.264182+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "8647f61e64a27a2a64f4067abc8fd8": {
+      "citation": "Mass. Gen. Laws ch. 260, § 2",
+      "source_id": "US-MA:written_contract_limitations:e11da4007b18",
+      "authority_type": "statute",
+      "text": "Section 2. Actions of contract, other than those to recover for personal injuries, founded upon contracts or liabilities, express or implied, except actions limited by section one or actions upon judgments or decrees of courts of record of the United States or of this or of any other state of the United States, shall, except as otherwise provided, be commenced only within six years next after the cause of action accrues.",
+      "text_sha256": "48515650cb4411d89fd565cb3b211a09036d68004d4da648af0a4e13ea1ba9fe",
+      "publisher_sha256": "6942a7dfc0b5f47819934bc51de4b2ca366255d74fa79983cf81d478a60def7d",
+      "retrieved_at": "2026-11-17T19:33:58.361147+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "7fd5e68372a5edd622b541357bba2c": {
+      "source_id": "US-MA:commencement:ccc6df24c423",
+      "citation": "Mass. R. Civ. P. 3",
+      "authority_type": "court_rule",
+      "language": "en",
+      "text": "Rule 3 A civil action is commenced by (1) mailing to the clerk of the proper court by certified or registered mail a complaint and an entry fee prescribed by law, (2) filing such complaint and an entry fee with such clerk, or (3) submitting the complaint to the court through the court’s electronic filing system accompanied by electronic payment of the entry fee pursuant to the Massachusetts Rules of Electronic Filing. Actions brought pursuant to G.L. c. 185 for registration or confirmation shall be commenced by filing a surveyor’s plan and complaint on a form furnished by the Land Court. Waiver of the entry fee on the ground of indigency may be sought in accordance with G.L. c. 261, § 27C.",
+      "text_sha256": "48d7fffcb3b368e9e8747b1325026b8d3677d6d59dcb5048d42cc5f31ca35b70",
+      "publisher_sha256": "6aa5b31a8e535a80d3d7104f4d6de50eac629cb6cd00a2984a4b052a45bbf3c9",
+      "retrieved_at": "2026-11-17T20:14:26.711025+00:00",
+      "currentness": "unresolved"
+    },
+    "0283d5930050a86dec49d8271c357c": {
+      "citation": "Mass. Gen. Laws ch. 231, § 85",
+      "source_id": "US-MA:fault:169d777bb89e",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "Section 85. Contributory negligence shall not bar recovery in any action by any person or legal representative to recover damages for negligence resulting in death or in injury to person or property, if such negligence was not greater than the total amount of negligence attributable to the person or persons against whom recovery is sought, but any damages allowed shall be diminished in proportion to the amount of negligence attributable to the person for whose injury, damage or death recovery is made. In determining by what amount the plaintiff's damages shall be diminished in such a case, the negligence of each plaintiff shall be compared to the total negligence of all persons against whom recovery is sought. The combined total of the plaintiff's negligence taken together with all of the negligence of all defendants shall equal one hundred per cent. The violation of a criminal statute, ordinance or regulation by a plaintiff which contributed to said injury, death or damage, shall be considered as evidence of negligence of that plaintiff, but the violation of said statute, ordinance or regulation shall not as a matter of law and for that reason alone, serve to bar a plaintiff from recovery. The defense of assumption of risk is hereby abolished in all actions hereunder. The burden of alleging and proving negligence which serves to diminish a plaintiff's damages or bar recovery under this section shall be upon the person who seeks to establish such negligence, and the plaintiff shall be presumed to have been in the exercise of due care.",
+      "text_sha256": "94278e872f854d3648688278c857abf01af22ed52c4949e001e907a2ded96500",
+      "publisher_sha256": "122c50b90f52c60a5979acf3b10682155f117dbea98cc4ae92ba6b9e30fa3c92",
+      "retrieved_at": "2026-11-17T20:50:34.378546+00:00",
+      "currentness": "unresolved"
+    },
+    "00a4ade654b2ddc2dee312f9f8b45e": {
+      "source_id": "US-MA:consumerLaw:ad30ed6b77ad",
+      "authority_type": "statute",
+      "citation": "Mass. Gen. Laws ch. 93A, § 2(a)",
+      "text": "Section 2. (a) Unfair methods of competition and unfair or deceptive acts or practices in the conduct of any trade or commerce are hereby declared unlawful.",
+      "text_sha256": "5257c6715ce31c9f2dcec7be30f63a2962ba972054856be0bcf1684ebe372ec5",
+      "publisher_sha256": "0b1803584382163cebc024e43348dbbe0ae653ac35e78d96fd185439809d3a82",
+      "retrieved_at": "2026-11-17T21:03:54.301867+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "2208e296f3ba17cf6c145a32a6842f": {
+      "source_id": "US-MA:contract_formation:6cdeff8ed71b",
+      "authority_type": "statute",
+      "citation": "Mass. Gen. Laws ch. 106, § 2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "d39f144c8ef9789b5641379fde6a8cfe0229c05d3a1d50fa788ff33752dba819",
+      "retrieved_at": "2026-11-18T15:14:30.286769+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "24f99b1a0b6a10edfd1ee8fcacf4d7": {
+      "source_id": "US-MA:wageLaw:3cbf75e58a18",
+      "authority_type": "statute",
+      "citation": "Mass. Gen. Laws ch. 149, § 148, first paragraph",
+      "text": "Section 148. Every person having employees in his service shall pay weekly or bi-weekly each such employee the wages earned by him to within six days of the termination of the pay period during which the wages were earned if employed for five or six days in a calendar week, or to within seven days of the termination of the pay period during which the wages were earned if such employee is employed seven days in a calendar week, or in the case of an employee who has worked for a period of less than five days, hereinafter called a casual employee, shall, within seven days after the termination of such period, pay the wages earned by such casual employee during such period, but any employee leaving his employment shall be paid in full on the following regular pay day, and, in the absence of a regular pay day, on the following Saturday; and any employee discharged from such employment shall be paid in full on the day of his discharge, or in Boston as soon as the laws requiring pay rolls, bills and accounts to be certified shall have been complied with; and the commonwealth, its departments, officers, boards and commissions shall so pay every mechanic, workman and laborer employed by it or them, and every person employed in any other capacity by it or them in any penal or charitable institution, and every county and city shall so pay every employee engaged in its business the wages or salary earned by him, unless such mechanic, workman, laborer or employee requests in writing to be paid in a different manner; and every town shall so pay each employee engaged in its business if so required by him; but an employee absent from his regular place of labor at a time fixed for payment shall be paid thereafter on demand; provided, however, that the department of telecommunications and energy, after hearing, may authorize a railroad corporation or a parlor or sleeping car corporation to pay the wages of any of its employees less frequently than weekly, if such employees prefer less frequent payments, and if their interests and the interests of the public will not suffer thereby; and provided, further, that employees engaged in a bona fide executive, administrative or professional capacity as determined by the attorney general and employees whose salaries are regularly paid on a weekly basis or at a weekly rate for a work week of substantially the same number of hours from week to week may be paid bi-weekly or semi-monthly unless such employee elects at his own option to be paid monthly; and provided, further, that employees engaged in agricultural work may be paid their wages monthly; in either case, however, failure by a railroad corporation or a parlor or sleeping car corporation to pay its employees their wages as authorized by the said department, or by an employer of employees engaged in agricultural work to pay monthly the wages of his or her employees, shall be deemed a violation of this section; and provided, further, that an employer may make payment of wages prior to the time that they are required to be paid under the provisions of this section, and such wages together with any wages already earned and due under this section, if any, may be paid weekly, bi-weekly, or semi-monthly to a salaried employee, but in no event shall wages remain unpaid by an employer for more than six days from the termination of the pay period in which such wages were earned by the employee. For the purposes of this section the words salaried employee shall mean any employee whose remuneration is on a weekly, bi-weekly, semi-monthly, monthly or annual basis, even though deductions or increases may be made in a particular pay period. The word ''wages'' shall include any holiday or vacation payments due an employee under an oral or written agreement. An employer, when paying an employee his wage, shall furnish to such employee a suitable pay slip, check stub or envelope showing the name of the employer, the name of the employee, the day, month, year, number of hours worked, and hourly rate, and the amounts of deductions or increases made for the pay period.",
+      "text_sha256": "97afe3366de7bfe4f3184e4d199b861aa6381ee5886994c140270ccbc16739a3",
+      "publisher_sha256": "c8d2c1eb5382ac594b5b025d411b6ecb3ddcd7cf6779d07906f094e0f7de9ddf",
+      "retrieved_at": "2026-11-19T14:10:55.472282+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "f03dcf893d09c3a57c918c92380e55": {
+      "source_id": "US-MA:deposit:20799ff6f74d",
+      "authority_type": "statute",
+      "citation": "Mass. Gen. Laws ch. 186, § 15B(1)(b)",
+      "text": "(b) At or prior to the commencement of any tenancy, no lessor or agent of the lessor may require a tenant or prospective tenant to pay, to the lessor or to an agent of the lessor, any amount in excess of the following: (i) rent for the first full month of occupancy; and, (ii) rent for the last full month of occupancy calculated at the same rate as the first month; and, (iii) a security deposit equal to the first month's rent provided that such security deposit is deposited as required by subsection (3) and that the tenant is given the statement of condition as required by subsection (2); provided, however, that the executive office of housing and livable communities may promulgate regulations to authorize a lessor and a tenant or prospective tenant to agree to the payment of a fee in lieu of payment of a security deposit; provided further, that any such regulations shall: (A) require the lessor to utilize a fee collected to waive a security deposit to cover for unpaid rent or unit damage that applies to the tenant's lease; (B) require that a fee so collected be: (I) entirely or partially non-refundable; provided, however, that the lessor shall disclose that the fee is non-refundable in the lease; provided further, that the tenant shall agree to the fee and acknowledge that the tenant understand that it is entirely or partially non-refundable, as the case may be, in writing; and (II) a recurring monthly fee, or payable upon any schedule and in an amount that the lessor and tenant agree upon, as authorized by the executive office; (C) limit the total sum of the fee or recurring payments, regardless of the duration of the lease and any extensions thereto, to an amount not to exceed 1 month's rent; (D) require that the fee be made optional for both the tenant and the lessor and that the tenant be permitted to choose to pay a full security deposit rather than the fee; (E) require a lessor who offers such a fee in lieu of security deposit: (I) to offer the option of a fee in lieu of a security deposit to every prospective tenant whose application for occupancy has been approved, regardless of income, race, gender, gender identity, disability, sexual orientation, immigration status, size of household or credit score; and (II) not to consider such factors and categories when setting the amount of the fee; and (F) allow a tenant who agrees to pay a fee to waive a security deposit to opt-out of the obligation to pay such fee if such tenant pays the security deposit that would otherwise be in effect for the tenant's apartment on the day the tenant chooses to opt-out of such fee; provided further, that the sum of fees paid to waive a security deposit and the payment of the security deposit shall not exceed, in total, the amount of 1 month's rent; and provided further, that the executive office shall consult with the office of the attorney general prior to promulgating regulations authorizing a fee in lieu of a security deposit under this section; and, (iv) the purchase and installation cost for a key and lock.",
+      "text_sha256": "e0f520a12f59b52e84769a0b2f79508449503d27262094b8c820f6bc128b3d70",
+      "publisher_sha256": "8f9ce4e1aa743b7ba363f9788e9cce8bb87029889ef9e6df7fe34061a8cd360f",
+      "retrieved_at": "2026-11-19T19:20:35.889124+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2025-08-01",
+      "edition": "Text effective August 1, 2025 under 2025 Mass. Acts ch. 9"
+    },
+    "dbcd0e9fb0438f7cbae2b34fe9538c": {
+      "source_id": "US-MA:debtLaw:91d5c63f34b8",
+      "authority_type": "statute",
+      "citation": "Mass. Gen. Laws ch. 93, § 24A",
+      "text": "No person shall directly or indirectly engage in the commonwealth in the business of a debt collector, or engage in the commonwealth in soliciting the right to collect or receive payment for another of an account, bill or other indebtedness, or advertise for or solicit in print the right to collect or receive payment for another of an account, bill or other indebtedness, without first obtaining from the commissioner a license to carry on the business, nor unless the person or the person for whom he or it may be acting as agent has on file with the state treasurer a good and sufficient bond. (b) A person shall not directly or indirectly engage in the commonwealth in the business of a third party loan servicer without registering with the commissioner. A registrant shall not be required to comply with sections 24F to 27, inclusive. (c) This section shall not apply to a bank as defined in section 1 of chapter 167, a national banking association, federal savings bank, federal savings and loan association, federal credit union, or any bank, trust company, savings bank, savings and loan association or credit union organized under the laws of any other state of the United States, or any subsidiary of the above; but except as provided herein, this section shall apply to a subsidiary or affiliate, as defined by the commissioner, of an exempted entity and of a bank holding company established in accordance with state or federal law. The commissioner may adopt, amend or repeal rules and regulations, to aid in the administration and enforcement of this chapter. (d) The commissioner may from time to time establish regulations pertaining to the conduct of the business of a debt collector or a third party loan servicer as he considers necessary. (e) A student loan servicer licensed under chapter 93L who is engaged solely in the activities of a student loan servicer shall not be required to: (i) obtain a debt collector license pursuant to subsection (a); or (ii) register as a third party loan servicer pursuant to subsection (b); provided, however, that if a student loan servicer acts, represents, operates or holds itself out as a third party loan servicer or debt collector outside of the scope of said chapter 93L, the student loan servicer shall register as a third party loan servicer or obtain a debt collector license, or both, as appropriate. A licensed student loan servicer who engages in third party loan servicing activities or debt collection activities within the scope of said chapter 93L shall comply with all state and federal laws and regulations governing third party loan servicers and debt collection when acting in such capacity.",
+      "text_sha256": "c5c39916c09e0ef6abf77cbaf0937cc3b65ce60673a5337f919ae6202e0d2686",
+      "publisher_sha256": "f843d89255886f5afd8ef36a549e37273406ad7f53956ef7d305403cd109d332",
+      "retrieved_at": "2026-11-19T19:23:24.052052+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "0bb8e04bedccdec4c9c6c94462cdc3": {
+      "source_id": "US-MA:response:60849a91234c",
+      "authority_type": "court_rule",
+      "citation": "Mass. R. Civ. P. 12(a)",
+      "text": "(a) When presented (1) After service upon him of any pleading requiring a responsive pleading, a party shall serve such responsive pleading within 20 days unless otherwise directed by order of the court. (2) The service of a motion permitted under this rule alters this period of time as follows, unless a different time is fixed by order of the court: (i) if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within 10 days after notice of the court's action; (ii) if the court grants a motion for a more definite statement, the responsive pleading shall be served within 10 days after the service of the more definite statement.",
+      "text_sha256": "83420bf076fa7ae576d341bad420e9d334cd9cf24bf16e4d686a9d9b50f2ebec",
+      "publisher_sha256": "e0a94f51ff78dcb706d4674ec9c0a3cb31d6723e371e0df5c2e5c065a6c18f8d",
+      "retrieved_at": "2026-11-19T19:42:59.578439+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Massachusetts trial courts governed by the civil rules"
+    },
+    "6e0db6bcee7d1d5e1146d669ace5e6": {
+      "source_id": "US-MA:service:9bd4da59e8e1",
+      "authority_type": "court_rule",
+      "citation": "Mass. R. Civ. P. 4(d)(1)",
+      "text": "(1) Upon an individual by delivering a copy of the summons and of the complaint to him personally; or by leaving copies thereof at his last and usual place of abode; or by delivering a copy of the summons and of the complaint to an agent authorized by appointment or by statute to receive service of process, provided that any further notice required by such statute be given. If the person authorized to serve process makes return that after diligent search he can find neither the defendant, nor defendant's last and usual abode, nor any agent upon whom service may be made in compliance with this subsection, the court may on application of the plaintiff issue an order of notice in the manner and form prescribed by law.",
+      "text_sha256": "194a867f609d6140712fb4bfbab8217934d4381d8aec0159d6c756ca5ddb26e4",
+      "publisher_sha256": "72ab1b0cc8114df583b30bd3f102a62835834ea8479e069b57a619491a74fa1e",
+      "retrieved_at": "2026-11-20T15:21:04.563685+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Massachusetts trial courts governed by the civil rules"
+    },
+    "b3aea82eaec05245feda8fd7d56469": {
+      "source_id": "US-MA:small_claims:65d7c2445a59",
+      "authority_type": "statute",
+      "citation": "Mass. Gen. Laws ch. 218, § 21, first paragraph excerpt",
+      "text": "There shall be within the district court department and the Boston municipal court department a simple, informal and inexpensive procedure, hereinafter called the procedure, for the determination, according to the rules of substantive law, of claims in the nature of contract or tort, other than slander and libel, in which the plaintiff does not claim as debt or damages more than $7,000; provided, however, that a city or town may bring an action under section 35 of chapter 60 for the collection of unpaid taxes on personal property in any amount or any other action which shall not exceed $15,000; and provided further, that said dollar limitation shall not apply to an action for property damage caused by a motor vehicle, and for a review of judgments upon such claims when justice so requires. The procedure shall not be exclusive, but shall be alternative to the formal procedure for civil actions begun by summons and complaint.",
+      "text_sha256": "b7cc1e247a71e49b7383bb292a348030b7d3a4edf07cb765408fd48183f9caea",
+      "publisher_sha256": "a3ec820ead338d41a1c1998912366376306d9f5d7168c43c5ea13a1a7c72de55",
+      "retrieved_at": "2026-11-20T16:16:29.925156+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Massachusetts District Court and Boston Municipal Court departments"
+    },
+    "25e8c757c6b1609a26bc3c44e52a09": {
+      "source_id": "US-MA:negligence_elements:db54864d87bf",
+      "authority_type": "opinion",
+      "citation": "Jupin v. Kask, 447 Mass. 141, 146 (2006)",
+      "text": "To prevail on a negligence claim, a plaintiff must prove that the defendant owed the plaintiff a duty of reasonable care, that the defendant breached this duty, that damage resulted, and that there was a causal relation between the breach of the duty and the damage. See J.R. Nolan & L.J. Sartorio, Tort Law § 11.1 (3d ed. 2005).",
+      "text_sha256": "04390ecd45f973e05a3a01c2127f25b74f8c52f81d0ee2b8f12142bf1198d4b4",
+      "publisher_sha256": "c407937393dd5ff7f4eb444859187f1b014349bae3613ed8880d5472ea30c8c9",
+      "retrieved_at": "2026-11-21T04:24:20.802753+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2006-06-30",
+      "court": "Supreme Judicial Court of Massachusetts",
+      "decision_date": "2006-06-30",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of summary judgment in a wrongful-death and survival suit involving a property owner’s asserted duty of reasonable care.",
+      "publisher_member": "Massachusetts Reports text published by the Commonwealth Trial Court Law Libraries, p. 146"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "0283d5930050a86dec49d8271c357c",
+    "source_id": "US-MA:fault:169d777bb89e",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

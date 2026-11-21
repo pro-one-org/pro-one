@@ -15,6 +15,9 @@ from app.generation import GenerationService
 from app.legal_research import GeneralLegalResearchService
 from app.models.base import GenerationConfig
 from app.models.testing import TEST_MODEL, testing_registry
+from app.jurisdictions import NAME_PATTERN as STATE_NAME_PATTERN, NAME_SCOPES as STATE_NAME_SCOPES, possible_tribal_scope
+from app.jurisdictions import registry
+from app.national_coverage import coverage
 from app.national_corpus import AuthorityType, identity
 from app.procedural_authority import ProceduralAuthorityProvider, load_catalog
 from app.procedural_models import Key, Record, Scope
@@ -24,23 +27,6 @@ from app.research_synthesis import ResearchSynthesisService
 CHOICE_DOMAIN = b"pro-one/procedural-choice/v1"
 DEVELOPMENT_CHOICE_KEY = secrets.token_bytes(32)
 BLOCKED_CLASSIFICATIONS = {"strategy_legal_judgment", "reserved_legal_act"}
-US_STATE_NAMES = {
-    "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas", "CA": "California",
-    "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware", "DC": "District of Columbia",
-    "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho", "IL": "Illinois",
-    "IN": "Indiana", "IA": "Iowa", "KS": "Kansas", "KY": "Kentucky", "LA": "Louisiana",
-    "ME": "Maine", "MD": "Maryland", "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota",
-    "MS": "Mississippi", "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada",
-    "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York",
-    "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio", "OK": "Oklahoma", "OR": "Oregon",
-    "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina", "SD": "South Dakota",
-    "TN": "Tennessee", "TX": "Texas", "UT": "Utah", "VT": "Vermont", "VA": "Virginia",
-    "WA": "Washington", "WV": "West Virginia", "WI": "Wisconsin", "WY": "Wyoming",
-}
-STATE_NAME_SCOPES = {name.casefold(): f"US-{code}" for code, name in US_STATE_NAMES.items()}
-STATE_NAME_PATTERN = re.compile(
-    r"\b(?:" + "|".join(map(re.escape, sorted(STATE_NAME_SCOPES, key=len, reverse=True))) + r")\b", re.I,
-)
 FACT_QUESTIONS = {
     "forum": "What court are you considering, or what court is named on the document?",
     "document_type": "What is the full title on the court papers? If this is a summons, was a complaint included?",
@@ -166,6 +152,14 @@ def infer_subject(message):
     if re.search(r"\b(?:serve|served|serving|service|process server)\b", message, re.I) and re.search(
             r"\b(?:complaint|summons|process|civil)\b", message, re.I):
         return "service"
+    if re.search(r"\b(?:small[- ]claims?|conciliation court)\b", message, re.I):
+        return "small_claims"
+    if re.search(r"\b(?:commence|start|begin)\b.{0,35}\b(?:civil action|civil case|lawsuit)\b", message, re.I):
+        return "commencement"
+    if re.search(r"\b(?:filing fees?|court fees?)\b", message, re.I):
+        return "fees"
+    if re.search(r"\b(?:e[- ]?filing|electronic filing|electronically fil(?:e|ing))\b", message, re.I):
+        return "e_filing"
     if re.search(r"\b(?:slip\w*|fell|fall|trip\w*)\b", message, re.I) and re.search(
             r"\b(?:pay|payment|compensat\w*|reimburse\w*|damages|money)\b", message, re.I):
         return "compensation"
@@ -197,9 +191,17 @@ class ProceduralResearchService:
             return self.result("reserved_legal_act", classification="reserved_legal_act")
         if re.search(r"\b(?:choose|pick|decide)\b.{0,55}\b(?:for me|on my behalf)\b", request.message, re.I):
             return self.result("legal_judgment_required", classification="strategy_legal_judgment")
+        if possible_tribal_scope(request.message):
+            return self.result("tribal_jurisdiction_analysis_required")
         named = infer_jurisdiction(request.message)
         if len(named) > 1 or (named and request.jurisdiction and request.jurisdiction not in named):
             return self.result("jurisdiction_confirmation_required")
+        if not request.jurisdiction and named:
+            # Residence alone supplies no governing-law or territorial forum selection.
+            without_residence = re.sub(r"\b(?:live|reside|am staying) in\s+(" + STATE_NAME_PATTERN.pattern + ")",
+                                       "", request.message, flags=re.I)
+            if not infer_jurisdiction(without_residence):
+                return self.result("jurisdiction_confirmation_required")
         jurisdiction = request.jurisdiction or next(iter(named), None)
         subject = infer_subject(request.message)
         if jurisdiction is None:
@@ -215,7 +217,23 @@ class ProceduralResearchService:
                               or subject != "compensation" and not any(request.forum in self.catalog.paths[key].forums for key in options)):
             return self.result("wrong_forum", jurisdiction=jurisdiction)
         if not options:
-            return self.result("outside_bounded_coverage", jurisdiction=jurisdiction)
+            national = coverage(jurisdiction) if jurisdiction in registry() else {}
+            cells = national.get("cells", {})
+            selectors = cells.get(f"procedure.{subject}", {}).get("passage_selectors", ())
+            references = []
+            for selector in selectors:
+                passage = national["passages"][selector]
+                if request.authority_type and request.authority_type != passage["authority_type"]:
+                    continue
+                source = national["sources"][passage["source_id"]]
+                references.append({
+                    "passage_selector": selector, "citation": passage["citation"], "url": source["url"],
+                    "court": passage.get("court"), "currentness": passage["currentness"],
+                    "current_as_of": passage.get("current_as_of"),
+                })
+            return self.result("outside_bounded_coverage", jurisdiction=jurisdiction,
+                               national_coverage=cells, reference_authorities=references[:8],
+                               local_requirements="local_rule_required")
         if not request.selected_path and (request.choice_token or request.stage):
             return self.result("explicit_choice_required", jurisdiction=jurisdiction)
         # Only a user-originated choice referencing this response can enter a path.

@@ -1,0 +1,694 @@
+{
+  "jurisdiction": "US-NH",
+  "version": "1",
+  "sources": {
+    "US-NH:statutes:59a59137d51c": {
+      "category": "statutes",
+      "title": "Revised Statutes",
+      "url": "http://gencourt.state.nh.us/rsa/html/indexes/default.html",
+      "directory": "doj-NH",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NH:constitution:232218fa083a": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.nh.gov/glance/constitution.htm",
+      "directory": "codes",
+      "locator": "New Hampshire"
+    },
+    "US-NH:legislature:3ad16558c702": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://gencourt.state.nh.us/",
+      "directory": "codes",
+      "locator": "New Hampshire"
+    },
+    "US-NH:labor_agency:6d72e87ef25b": {
+      "category": "labor_agency",
+      "title": "dol.nh.gov",
+      "url": "https://dol.nh.gov",
+      "directory": "labor",
+      "locator": "New Hampshire"
+    },
+    "US-NH:commercial_code:16d8b3c85d39": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://www.gencourt.state.nh.us/rsa/html/NHTOC/NHTOC-XXXIV-A-382-A.htm",
+      "directory": "ucc",
+      "locator": "New Hampshire"
+    },
+    "US-NH:civil_rules:5e90b05d31bb": {
+      "category": "civil_rules",
+      "title": "Proceedings in Court",
+      "url": "http://www.gencourt.state.nh.us/rsa/html/NHTOC/NHTOC-LIII.htm",
+      "directory": "procedure",
+      "locator": "New Hampshire"
+    },
+    "US-NH:consumer_agency:a938b6e52ac4": {
+      "category": "consumer_agency",
+      "title": "New Hampshire (NH)",
+      "url": "https://www.doj.nh.gov/citizens/consumer-protection-antitrust-bureau",
+      "directory": "consumer",
+      "locator": "New Hampshire (NH)"
+    },
+    "US-NH:judiciary:664651efee56": {
+      "category": "judiciary",
+      "title": "Judicial Branch",
+      "url": "http://www.courts.state.nh.us/",
+      "directory": "doj-NH",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-NH:court_directory:a2e1a95ee258": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://www.courts.state.nh.us/supreme/index.htm",
+      "directory": "doj-NH",
+      "locator": "Supreme Court"
+    },
+    "US-NH:court_directory:9344ce2d9574": {
+      "category": "court_directory",
+      "title": "Superior Court",
+      "url": "http://www.courts.state.nh.us/superior/index.htm",
+      "directory": "doj-NH",
+      "locator": "Superior Court"
+    },
+    "US-NH:court_directory:51610bff7ce6": {
+      "category": "court_directory",
+      "title": "Probate Court",
+      "url": "http://www.courts.state.nh.us/probate/index.htm",
+      "directory": "doj-NH",
+      "locator": "Probate Court"
+    },
+    "US-NH:court_directory:2dc8b875adfc": {
+      "category": "court_directory",
+      "title": "District Court",
+      "url": "http://www.courts.state.nh.us/district/index.htm",
+      "directory": "doj-NH",
+      "locator": "District Court"
+    },
+    "US-NH:constitution:23ebd4484bc6": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.nh.gov/glance/state-constitution",
+      "directory": "doj-NH",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NH:regulations:e432d29b4de9": {
+      "category": "regulations",
+      "title": "Administrative Rules and Register",
+      "url": "https://www.gencourt.state.nh.us/rules/",
+      "directory": "doj-NH",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-NH:pi_limitations:a667c045ad43": {
+      "category": "pi_limitations",
+      "title": "N.H. Rev. Stat. Ann. § 508:4, I",
+      "url": "https://gc.nh.gov/rsa/html/LII/508/508-4.htm",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://gc.nh.gov/rsa/html/LII/508/508-4.htm",
+        "retrieved_at": "2026-11-17T19:33:59.791105+00:00",
+        "http_status": "200",
+        "sha256": "1f5b13bbdcd9c43705cb5870eae1bb79687892be50da71b1a95b85e2795d868b",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NH:written_contract_limitations:a667c045ad43": {
+      "category": "written_contract_limitations",
+      "title": "N.H. Rev. Stat. Ann. § 508:4, I",
+      "url": "https://gc.nh.gov/rsa/html/LII/508/508-4.htm",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://gc.nh.gov/rsa/html/LII/508/508-4.htm",
+        "retrieved_at": "2026-11-17T19:33:59.791105+00:00",
+        "http_status": "200",
+        "sha256": "1f5b13bbdcd9c43705cb5870eae1bb79687892be50da71b1a95b85e2795d868b",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NH:oral_contract_limitations:a667c045ad43": {
+      "category": "oral_contract_limitations",
+      "title": "N.H. Rev. Stat. Ann. § 508:4, I",
+      "url": "https://gc.nh.gov/rsa/html/LII/508/508-4.htm",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://gc.nh.gov/rsa/html/LII/508/508-4.htm",
+        "retrieved_at": "2026-11-17T19:33:59.791105+00:00",
+        "http_status": "200",
+        "sha256": "1f5b13bbdcd9c43705cb5870eae1bb79687892be50da71b1a95b85e2795d868b",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NH:small_claims:b023f5d2baec": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2021-06/filingintoexistingsmallclaims.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2021-06/filingintoexistingsmallclaims.pdf",
+        "retrieved_at": "2026-11-17T19:42:37.988754+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-NH:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 28"
+    },
+    "US-NH:fault:c1c38019662c": {
+      "category": "fault",
+      "title": "N.H. RSA 507:7-d",
+      "url": "https://gc.nh.gov/rsa/html/lii/507/507-7-d.htm",
+      "directory": null,
+      "locator": "N.H. RSA 507:7-d"
+    },
+    "US-NH:deposit:1eb757fe282e": {
+      "category": "deposit",
+      "title": "N.H. RSA 540-A:7",
+      "url": "https://gc.nh.gov/rsa/html/LV/540-A/540-A-7.htm",
+      "directory": null,
+      "locator": "N.H. RSA 540-A:7"
+    },
+    "US-NH:wageLaw:c770ed7a9776": {
+      "category": "wageLaw",
+      "title": "N.H. RSA 275:44",
+      "url": "https://gc.nh.gov/rsa/html/XXIII/275/275-44.htm",
+      "directory": null,
+      "locator": "N.H. RSA 275:44"
+    },
+    "US-NH:debtLaw:cd95697b25af": {
+      "category": "debtLaw",
+      "title": "N.H. RSA 358-C:2",
+      "url": "https://gc.nh.gov/rsa/html/xxxi/358-c/358-c-mrg.htm",
+      "directory": null,
+      "locator": "N.H. RSA 358-C:2"
+    },
+    "US-NH:consumerLaw:b37da46fd302": {
+      "title": "N.H. Rev. Stat. § 358-A",
+      "category": "consumerLaw",
+      "url": "https://www.gencourt.state.nh.us/rsa/html/XXXI/358-A/358-A-mrg.htm",
+      "directory": "consumer_statutes_index",
+      "locator": "N.H. Rev. Stat. § 358-A",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-NH:consumerLaw:8a7726970759": {
+      "category": "consumerLaw",
+      "title": "N.H. RSA 358-A:2 (opening provision)",
+      "url": "https://gc.nh.gov/rsa/html/XXXI/358-A/358-A-2.htm",
+      "locator": "N.H. RSA 358-A:2 (opening provision)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:56.706339+00:00",
+        "sha256": "1c822d1ca51f3599428b159c63fcb93ac9fab36cfccc0e9b6d3c8dcc1220762e"
+      }
+    },
+    "US-NH:contract_formation:e090f3108580": {
+      "category": "contract_formation",
+      "title": "N.H. RSA 382-A:2-204",
+      "url": "https://gc.nh.gov/rsa/html/XXXIV-A/382-A/382-A-2-204.htm",
+      "locator": "N.H. RSA 382-A:2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:31.254360+00:00",
+        "sha256": "fb345fd66147b50af12bfbe5d0ce75cea9a1e6d7072f27311b56edc63d96f497"
+      }
+    },
+    "US-NH:wageLaw:e093846dfc49": {
+      "category": "wageLaw",
+      "title": "N.H. Rev. Stat. § 275:44",
+      "url": "https://gc.nh.gov/rsa/html/XXIII/275/275-44.htm",
+      "locator": "N.H. Rev. Stat. § 275:44",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:57.476871+00:00",
+        "sha256": "8b9be9f75e4fd4ff52bb91d805bde298989c9cf95a6770663b07d3fa551b0c90"
+      }
+    },
+    "US-NH:pi_limitations:c8b00151a468": {
+      "category": "pi_limitations",
+      "title": "N.H. Rev. Stat. § 508:4, I",
+      "url": "https://gc.nh.gov/rsa/html/LII/508/508-4.htm",
+      "locator": "N.H. Rev. Stat. § 508:4, I",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:22.022518+00:00",
+        "sha256": "1f5b13bbdcd9c43705cb5870eae1bb79687892be50da71b1a95b85e2795d868b"
+      }
+    },
+    "US-NH:small_claims:bd2b3659534a": {
+      "category": "small_claims",
+      "title": "N.H. Rev. Stat. § 503:1",
+      "url": "https://gc.nh.gov/rsa/html/LI/503/503-1.htm",
+      "locator": "N.H. Rev. Stat. § 503:1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:29.981694+00:00",
+        "sha256": "735815069f9196a3f49e07051e7497bd06836c1ebb1b904f3c0f6483dbd58bd4"
+      }
+    },
+    "US-NH:commencement:bf0992779cd5": {
+      "category": "commencement",
+      "title": "N.H. Super. Ct. R. 4(a)–(b) (February 2025 archive)",
+      "url": "https://web.archive.org/web/20250217063714id_/https://www.courts.nh.gov/rules-superior-court-state-new-hampshire#page-id-4296",
+      "locator": "N.H. Super. Ct. R. 4(a)–(b) (February 2025 archive)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:08:50.883305+00:00",
+        "sha256": "e7a284523ab329e9fb191c708c5912198e663c305e57232a7d7001400fbea197"
+      }
+    },
+    "US-NH:service:62a3539eba80": {
+      "category": "service",
+      "title": "N.H. Super. Ct. R. 4(c)–(d) (February 2025 archive)",
+      "url": "https://web.archive.org/web/20250217063714id_/https://www.courts.nh.gov/rules-superior-court-state-new-hampshire#page-id-4296",
+      "locator": "N.H. Super. Ct. R. 4(c)–(d) (February 2025 archive)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:08:50.883305+00:00",
+        "sha256": "e7a284523ab329e9fb191c708c5912198e663c305e57232a7d7001400fbea197"
+      }
+    },
+    "US-NH:response:2bbd7c2f1f08": {
+      "category": "response",
+      "title": "N.H. Super. Ct. R. 4(e) (February 2025 archive)",
+      "url": "https://web.archive.org/web/20250217063714id_/https://www.courts.nh.gov/rules-superior-court-state-new-hampshire#page-id-4296",
+      "locator": "N.H. Super. Ct. R. 4(e) (February 2025 archive)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:08:50.883305+00:00",
+        "sha256": "e7a284523ab329e9fb191c708c5912198e663c305e57232a7d7001400fbea197"
+      }
+    },
+    "US-NH:pleading_contents:ddc6b5acccc6": {
+      "category": "pleading_contents",
+      "title": "N.H. Super. Ct. R. 8(a) (February 2025 archive)",
+      "url": "https://web.archive.org/web/20250217063714id_/https://www.courts.nh.gov/rules-superior-court-state-new-hampshire#page-id-4316",
+      "locator": "N.H. Super. Ct. R. 8(a) (February 2025 archive)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:08:50.883305+00:00",
+        "sha256": "e7a284523ab329e9fb191c708c5912198e663c305e57232a7d7001400fbea197"
+      }
+    },
+    "US-NH:response:54b833588e51": {
+      "category": "response",
+      "title": "N.H. Super. Ct. R. 9(a)–(b) (February 2025 archive)",
+      "url": "https://web.archive.org/web/20250217063714id_/https://www.courts.nh.gov/rules-superior-court-state-new-hampshire#page-id-4321",
+      "locator": "N.H. Super. Ct. R. 9(a)–(b) (February 2025 archive)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:08:50.883305+00:00",
+        "sha256": "e7a284523ab329e9fb191c708c5912198e663c305e57232a7d7001400fbea197"
+      }
+    },
+    "US-NH:answer_contents:d51769c9c10d": {
+      "category": "answer_contents",
+      "title": "N.H. Super. Ct. R. 9(c)–(d) (February 2025 archive)",
+      "url": "https://web.archive.org/web/20250217063714id_/https://www.courts.nh.gov/rules-superior-court-state-new-hampshire#page-id-4321",
+      "locator": "N.H. Super. Ct. R. 9(c)–(d) (February 2025 archive)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:08:50.883305+00:00",
+        "sha256": "e7a284523ab329e9fb191c708c5912198e663c305e57232a7d7001400fbea197"
+      }
+    },
+    "US-NH:response:bab291f6c649": {
+      "category": "response",
+      "title": "N.H. Super. Ct. R. 9(e) (February 2025 archive)",
+      "url": "https://web.archive.org/web/20250217063714id_/https://www.courts.nh.gov/rules-superior-court-state-new-hampshire#page-id-4321",
+      "locator": "N.H. Super. Ct. R. 9(e) (February 2025 archive)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:08:50.883305+00:00",
+        "sha256": "e7a284523ab329e9fb191c708c5912198e663c305e57232a7d7001400fbea197"
+      }
+    },
+    "US-NH:answer_contents:8846db8cd6f2": {
+      "category": "answer_contents",
+      "title": "N.H. Super. Ct. R. 17(a)–(b) (February 2025 archive)",
+      "url": "https://web.archive.org/web/20250217063714id_/https://www.courts.nh.gov/rules-superior-court-state-new-hampshire#page-id-4371",
+      "locator": "N.H. Super. Ct. R. 17(a)–(b) (February 2025 archive)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:08:50.883305+00:00",
+        "sha256": "e7a284523ab329e9fb191c708c5912198e663c305e57232a7d7001400fbea197"
+      }
+    },
+    "US-NH:negligence_elements:512172c09a92": {
+      "category": "negligence_elements",
+      "title": "Christen v. Fiesta Shows, Inc., 170 N.H. 372, 375 (2017)",
+      "url": "https://cases.justia.com/new-hampshire/supreme-court/2017-2016-0528.pdf?ts=1507122376",
+      "locator": "Christen v. Fiesta Shows, Inc., 170 N.H. 372, 375 (2017)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:27:26.513512+00:00",
+        "sha256": "d5e50419759ab96bff8349fea2bfc1c06e95d8fc7c582f5c3d0f1b48f11f28b1"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-NH:court:f135c41b8306",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-NH:court_directory:a2e1a95ee258"
+    },
+    {
+      "id": "US-NH:court:a75c3372d4af",
+      "name": "Superior Court",
+      "level": "trial_directory",
+      "source_id": "US-NH:court_directory:9344ce2d9574"
+    },
+    {
+      "id": "US-NH:court:2877a101f3cf",
+      "name": "Probate Court",
+      "level": "trial_directory",
+      "source_id": "US-NH:court_directory:51610bff7ce6"
+    },
+    {
+      "id": "US-NH:court:c4802801e90f",
+      "name": "District Court",
+      "level": "trial_directory",
+      "source_id": "US-NH:court_directory:2dc8b875adfc"
+    },
+    {
+      "id": "US-NH:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-NH:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NH:court:3c9c83e81fef",
+      "name": "District",
+      "level": "limited_trial",
+      "source_id": "US-NH:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NH:court:4f54b582f9f0",
+      "name": "Probate",
+      "level": "limited_trial",
+      "source_id": "US-NH:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "N.H. Rev. Stat. Ann. § 508:4, I",
+      "source_id": "US-NH:pi_limitations:a667c045ad43",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "N.H. Rev. Stat. Ann. § 508:4, I",
+      "source_id": "US-NH:written_contract_limitations:a667c045ad43",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "N.H. Rev. Stat. Ann. § 508:4, I",
+      "source_id": "US-NH:oral_contract_limitations:a667c045ad43",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "N.H. Rev. Stat. § 540-A:2  General prohibition",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "N.H. Rev. Stat. § 358-A",
+      "source_id": "US-NH:consumerLaw:b37da46fd302",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "80bd68ccc5907afd6ed0450b613626": {
+      "citation": "N.H. RSA 507:7-d",
+      "source_id": "US-NH:fault:c1c38019662c",
+      "authority_type": "statute",
+      "text": "Contributory fault shall not bar recovery in an action by any plaintiff or plaintiff's legal representative, to recover damages in tort for death, personal injury or property damage, if such fault was not greater than the fault of the defendant, or the defendants in the aggregate if recovery is allowed against more than one defendant, but the damages awarded shall be diminished in proportion to the amount of fault attributed to the plaintiff by general verdict. The burden of proof as to the existence or amount of fault attributable to a party shall rest upon the party making such allegation.",
+      "text_sha256": "babcedd914a1ec962aa884931e170208343ae1699c927c9ea2f083c4b92e79ef",
+      "publisher_sha256": "5813ca734e6fb8c2938642280ce299c52511ad73891ab46b3f39b312bcb357e4",
+      "retrieved_at": "2026-11-17T19:41:55.101377+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "210e784adba65caf1cf129b0a8e77b": {
+      "citation": "N.H. RSA 540-A:7",
+      "source_id": "US-NH:deposit:1eb757fe282e",
+      "authority_type": "statute",
+      "text": "I. Except as provided in RSA 540-A:6, IV(c), a landlord shall return a security deposit to a tenant and pay the interest due, if any, within 30 days from the termination of the tenancy. If there are any damages to the premises, excluding reasonable wear and tear, the landlord may deduct the costs of repair from the security deposit. The landlord shall provide the tenant with a written, itemized list of any damages for which the landlord claims the tenant is liable, which shall indicate with particularity the nature of any repair necessary to correct any damage and satisfactory evidence that repair necessary to correct these damages has been or will be completed. Satisfactory evidence may include, but not be limited to, receipts for purchased repair materials and labor estimates, bills or invoices indicating the actual or estimated cost thereof.",
+      "text_sha256": "bcfddd3a9e5ed4192f53fe4e30de3b682a5c7560cfda9cda043c4ca50574dde4",
+      "publisher_sha256": "d4c7612d60e9d8f1969474c42b1bd5b60df3ac8860bcec0b3561abd4af0a8737",
+      "retrieved_at": "2026-11-17T19:41:54.912235+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "cb743a250cec3fea05489ff4beb7a8": {
+      "citation": "N.H. RSA 275:44",
+      "source_id": "US-NH:wageLaw:c770ed7a9776",
+      "authority_type": "statute",
+      "text": "I. Whenever an employer discharges an employee, the employer shall pay the employee's wages in full within 72 hours. II. Whenever an employee quits or resigns, the employer shall pay the employee's wages no later than the next regular payday, as provided under RSA 275:43, either through the regular pay channels or by mail if requested by the employee, except that if the employee gives at least one pay period's notice of intention to quit the employer shall pay all wages earned by the employee within 72 hours.",
+      "text_sha256": "729206e14a5f585f2d032705c74cd62b2b29d0d1990c26793bc37ac3d255e56a",
+      "publisher_sha256": "8b9be9f75e4fd4ff52bb91d805bde298989c9cf95a6770663b07d3fa551b0c90",
+      "retrieved_at": "2026-11-17T19:41:55.008981+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "ec7ff83b64329aaf719b5133c203cb": {
+      "citation": "N.H. RSA 358-C:2",
+      "source_id": "US-NH:debtLaw:cd95697b25af",
+      "authority_type": "statute",
+      "text": "No debt collector shall collect or attempt to collect a debt in an unfair, deceptive or unreasonable manner as defined in this chapter.",
+      "text_sha256": "9ea1e81441a8fb75a2f46eec670deb000bdb8f5f5ded1ce38422b536ebc1f8fb",
+      "publisher_sha256": "c524d7702147242b887305d85df4af05dcd861654e85ef9bc42f0def8d5f9ecd",
+      "retrieved_at": "2026-11-17T19:41:55.155449+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "0662d502a128551aa4f5221724383b": {
+      "source_id": "US-NH:consumerLaw:8a7726970759",
+      "authority_type": "statute",
+      "citation": "N.H. RSA 358-A:2 (opening provision)",
+      "text": "It shall be unlawful for any person to use any unfair method of competition or any unfair or deceptive act or practice in the conduct of any trade or commerce within this state.",
+      "text_sha256": "43c836136fe435f66642da5b91a9324a57e5aacfbc7d4b551a20a3563084861b",
+      "publisher_sha256": "1c822d1ca51f3599428b159c63fcb93ac9fab36cfccc0e9b6d3c8dcc1220762e",
+      "retrieved_at": "2026-11-17T21:03:56.706339+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "25b2af66f3d426df2cf75d2d2cf585": {
+      "source_id": "US-NH:contract_formation:e090f3108580",
+      "authority_type": "statute",
+      "citation": "N.H. RSA 382-A:2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "fb345fd66147b50af12bfbe5d0ce75cea9a1e6d7072f27311b56edc63d96f497",
+      "retrieved_at": "2026-11-18T15:14:31.254360+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "691930edcd32016bc7b39123f00737": {
+      "source_id": "US-NH:wageLaw:e093846dfc49",
+      "authority_type": "statute",
+      "citation": "N.H. Rev. Stat. § 275:44",
+      "text": "I. Whenever an employer discharges an employee, the employer shall pay the employee's wages in full within 72 hours. II. Whenever an employee quits or resigns, the employer shall pay the employee's wages no later than the next regular payday, as provided under RSA 275:43, either through the regular pay channels or by mail if requested by the employee, except that if the employee gives at least one pay period's notice of intention to quit the employer shall pay all wages earned by the employee within 72 hours. III. When work of an employee is suspended as a result of a labor dispute, or when an employee for any reason whatsoever is laid off, the employer shall pay in full to such employee not later than the next regular payday, as designated under RSA 275:43, either through the regular pay channels or by mail if requested by the employee, wages earned at the time of suspension or layoff. IV. If an employer willfully and without good cause fails to pay an employee wages as required under paragraphs I, II or III of this section, such employer shall be additionally liable to the employee for liquidated damages in the amount of 10 percent of the unpaid wages for each day except Sunday and legal holidays upon which such failure continues after the day upon which payment is required or in an amount equal to the unpaid wages, whichever is smaller; except that, for the purpose of such liquidated damages such failure shall not be deemed to continue after the date of filing of a petition in bankruptcy with respect to the employer if he is adjudicated bankrupt upon such petition. V. Regardless of the reason for an employee's termination of employment the employer shall pay to the appropriate administrator or other designated officials all wages in the nature of hourly health and welfare fund or pension fund contributions due with respect to such employee at the time of the next succeeding payment date applicable to such contributions.",
+      "text_sha256": "654c60a56e40d2a736dd26e07d73d92b8f65895247fa9f4b97017882a0131e96",
+      "publisher_sha256": "8b9be9f75e4fd4ff52bb91d805bde298989c9cf95a6770663b07d3fa551b0c90",
+      "retrieved_at": "2026-11-19T14:10:57.476871+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "9d623e30bb0fad476926c2081f7b15": {
+      "source_id": "US-NH:pi_limitations:c8b00151a468",
+      "authority_type": "statute",
+      "citation": "N.H. Rev. Stat. § 508:4, I",
+      "text": "I. Except as otherwise provided by law, all personal actions, except actions for slander or libel, may be brought only within 3 years of the act or omission complained of, except that when the injury and its causal relationship to the act or omission were not discovered and could not reasonably have been discovered at the time of the act or omission, the action shall be commenced within 3 years of the time the plaintiff discovers, or in the exercise of reasonable diligence should have discovered, the injury and its causal relationship to the act or omission complained of.",
+      "text_sha256": "fbc088cc18d38af99549693f78f0cddb0832b06712a99759d4e1c28911161ed2",
+      "publisher_sha256": "1f5b13bbdcd9c43705cb5870eae1bb79687892be50da71b1a95b85e2795d868b",
+      "retrieved_at": "2026-11-19T19:31:22.022518+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "83162816c73c35c78a64cf7bcf1ffa": {
+      "source_id": "US-NH:small_claims:bd2b3659534a",
+      "authority_type": "statute",
+      "citation": "N.H. Rev. Stat. § 503:1",
+      "text": "I. A small claim is any right of action not involving the title to real estate in which the debt or damages, exclusive of interest and costs, does not exceed $10,000. II. Any person may file a small claims action as provided in this chapter, unless trial by jury is claimed by the plaintiff when the debt or damages exceed $1,500 or when the defendant claims trial by jury as provided in paragraph III. III. When the debt or damages claimed exceed $1,500, a defendant may claim trial by jury by filing a written request within 5 business days of the filing of the application and statement of the claim under RSA 503:3 or within such additional time as the municipal or district court may for good cause allow. If such a request is filed, the case shall be transferred at once to the superior court in the county in which the town or district is located and heard and tried as if originally entered in the superior court. The original entry fee shall be paid by the plaintiff, but is recoverable as a cost if the plaintiff prevails. The small claims transfer fee shall be paid by the defendant, but is recoverable as a cost if the defendant prevails. IV. When the amount of debt or damages exceeds $5,000 and no claim is made for trial by jury under paragraph III, the parties to the action shall be required to participate in a mediation program in the district courts approved by the office of mediation and arbitration established under RSA 490-E. If mediation of such action does not result in resolution of the action, the case shall be presented to the judge under oath.",
+      "text_sha256": "6caedc13f1a7b95236f7060f38b979ac9a7b942553326685e3da0488446438c2",
+      "publisher_sha256": "735815069f9196a3f49e07051e7497bd06836c1ebb1b904f3c0f6483dbd58bd4",
+      "retrieved_at": "2026-11-20T16:16:29.981694+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "New Hampshire courts governed by RSA Chapter 503"
+    },
+    "900888a2ee3d08bb761ceb64157acd": {
+      "source_id": "US-NH:commencement:bf0992779cd5",
+      "authority_type": "court_rule",
+      "citation": "N.H. Super. Ct. R. 4(a)–(b) (February 2025 archive)",
+      "text": "(a) There shall be one form of action to be known as a “civil action.” (b) To initiate a civil action, including an action authorized by law to be initiated by writ or petition, the plaintiff files with the court: (i) the Complaint; (ii) an Appearance (indicating the plaintiff’s representative by name, address, email address, telephone number, and New Hampshire Bar Association identification number); and (iii) either the filing fee or a motion to waive the filing fee. See Rule 201. For purposes of complying with the statute of limitations or analogous time limit, an action shall be deemed commenced on the date the Complaint is filed.",
+      "text_sha256": "a8b86f445b4f62e6507a50ff9b50ced1c1db160877bc418e6aab519c81c34519",
+      "publisher_sha256": "e7a284523ab329e9fb191c708c5912198e663c305e57232a7d7001400fbea197",
+      "retrieved_at": "2026-11-21T04:08:50.883305+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Hampshire Judicial Branch Superior Court rules archived February 17, 2025",
+      "court": "New Hampshire Superior Court",
+      "publisher_member": "Rule 4(a)–(b) in the archived Superior Court rules"
+    },
+    "af817d265ff1f9ce423382cd38bf57": {
+      "source_id": "US-NH:service:62a3539eba80",
+      "authority_type": "court_rule",
+      "citation": "N.H. Super. Ct. R. 4(c)–(d) (February 2025 archive)",
+      "text": "(c) Upon receipt of the Complaint and, if the filing fee is not waived, the filing fee, the court will process the action and provide plaintiff with the completed Summons for service. The Summons will identify: (i) the date the Complaint is filed; (ii) the court-ordered deadline for service; and (iii) a hearing date, if appropriate. Plaintiff will cause the Summons together with a copy of the Complaint to be served on defendant no later than the court-ordered deadline for service, service to be made as specified in RSA 510, or as otherwise allowed by law. Proof of service shall be filed with the court within 21 days of the court-ordered deadline for service. If a defendant is not served within the court-ordered deadline for service, the court shall dismiss the action with or without prejudice, as justice may require. (d) In all cases of notice by publication where the time may be fixed by the court, the order shall be for publication in some newspaper or newspapers named by the court in general or special orders, once a week for 3 successive weeks. The last publication shall not be later than the time fixed by the court.",
+      "text_sha256": "a3d75b6446ca928f3a97c5a675dcd55be9a02cd99ad16b7b1ecff27e6230b6c6",
+      "publisher_sha256": "e7a284523ab329e9fb191c708c5912198e663c305e57232a7d7001400fbea197",
+      "retrieved_at": "2026-11-21T04:08:50.883305+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Hampshire Judicial Branch Superior Court rules archived February 17, 2025",
+      "court": "New Hampshire Superior Court",
+      "publisher_member": "Rule 4(c)–(d) in the archived Superior Court rules"
+    },
+    "956709dcb25d052a7d087e97643447": {
+      "source_id": "US-NH:response:2bbd7c2f1f08",
+      "authority_type": "court_rule",
+      "citation": "N.H. Super. Ct. R. 4(e) (February 2025 archive)",
+      "text": "(e) Appearances and Answers are due within 30 days of the date the defendant is served with the Summons and Complaint.",
+      "text_sha256": "1ae542a466bc003779f3764af480ffc57ac63b3607a392674c8ff7329470e397",
+      "publisher_sha256": "e7a284523ab329e9fb191c708c5912198e663c305e57232a7d7001400fbea197",
+      "retrieved_at": "2026-11-21T04:08:50.883305+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Hampshire Judicial Branch Superior Court rules archived February 17, 2025",
+      "court": "New Hampshire Superior Court",
+      "publisher_member": "Rule 4(e) in the archived Superior Court rules"
+    },
+    "09cc5cf0571b8af0e4c3900a222f7a": {
+      "source_id": "US-NH:pleading_contents:ddc6b5acccc6",
+      "authority_type": "court_rule",
+      "citation": "N.H. Super. Ct. R. 8(a) (February 2025 archive)",
+      "text": "(a) Except as may be more specifically provided by these rules in respect of specific actions, a pleading which sets forth a claim for relief, whether an original claim, counterclaim, cross-claim or third-party claim, shall contain a statement of the material facts known to the pleading party on which the claim is based, showing that the pleader is entitled to relief, and a demand for judgment for the relief to which the pleader claims entitlement; provided, however, that in any personal action a pleading shall not allege the amount of damages claimed, but shall state only that the damages claimed are within the jurisdictional limits of the court. Relief in the alternative or of several different types may be demanded.",
+      "text_sha256": "ff1add90a212245d0a7fc72077ca056bd2e05780edcb4b31ac601b2e17719fa6",
+      "publisher_sha256": "e7a284523ab329e9fb191c708c5912198e663c305e57232a7d7001400fbea197",
+      "retrieved_at": "2026-11-21T04:08:50.883305+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Hampshire Judicial Branch Superior Court rules archived February 17, 2025",
+      "court": "New Hampshire Superior Court",
+      "publisher_member": "Rule 8(a) in the archived Superior Court rules"
+    },
+    "1c8df842358450ed1c39522cdf722c": {
+      "source_id": "US-NH:response:54b833588e51",
+      "authority_type": "court_rule",
+      "citation": "N.H. Super. Ct. R. 9(a)–(b) (February 2025 archive)",
+      "text": "(a) An Answer or other responsive pleading shall be filed with the court within 30 days after the person filing said pleading has been served with the pleading to which the Answer or response is made. It shall state in short and plain terms the pleader's defenses to each claim asserted and shall admit or deny the allegations upon which the adverse party relies. If the party is without knowledge or information sufficient to form a belief as to the truth of an allegation, the party shall so state and this has the effect of a denial. Denials shall fairly meet the substance of the allegations denied. A pleader who intends in good faith to deny only a part or a qualification of an allegation shall specify so much of it as is true and material and deny only the remainder. The pleader may not generally deny all the allegations but shall make the denials as specific denials of designated allegations or paragraphs. An Answer, to the effect that an allegation is neither admitted nor denied, will be deemed an admission. All facts well alleged in the Complaint and not denied or explained in the Answer, will be held to be admitted. In addition, within the same 30 days, the person filing an Answer or other responsive pleading shall also file an appearance in accordance with Rule 17. No attorney, non-attorney representative or self-represented party will be heard until his or her Appearance is so entered. (b) Instead of an Answer, a person responding to a pleading to which a response is required may, within 30 days after the person has been served with the pleading to which the Answer or response is required file a Motion to Dismiss. If a Motion to Dismiss is submitted and denied, an Answer must be filed within 30 days after the date on the Notice of the Decision finally denying the motion; provided, however, that if a Motion to Dismiss which challenges the court’s personal jurisdiction, the sufficiency of process and/or the sufficiency of service of process is filed, an Answer must be filed within the time specified in section (e) of this rule.",
+      "text_sha256": "acc2c9e3b943bb7c723b2440e4dc072565c6dd1d4774cc42b71ffbe0724e0b99",
+      "publisher_sha256": "e7a284523ab329e9fb191c708c5912198e663c305e57232a7d7001400fbea197",
+      "retrieved_at": "2026-11-21T04:08:50.883305+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Hampshire Judicial Branch Superior Court rules archived February 17, 2025",
+      "court": "New Hampshire Superior Court",
+      "publisher_member": "Rule 9(a)–(b) in the archived Superior Court rules"
+    },
+    "d5c81388ece530a13dad2967878ce1": {
+      "source_id": "US-NH:answer_contents:d51769c9c10d",
+      "authority_type": "court_rule",
+      "citation": "N.H. Super. Ct. R. 9(c)–(d) (February 2025 archive)",
+      "text": "(c) To preserve the right to a jury trial, a defendant entitled to a trial by jury must indicate his or her request for a jury trial upon the first page of the Answer at the time of filing. Failure to request a jury trial in accordance with this rule shall constitute a waiver by the defendant thereof. (d) Failure to plead as affirmative defenses or file a Motion to Dismiss based on affirmative defenses, including the statute of limitations, within the time allowed in section (b) of this rule will constitute waiver of such defenses. Affirmative defenses include the following: (1) accord and satisfaction; (2) arbitration and award; (3) assumption of risk; (4) contributory negligence; (5) duress; (6) estoppel; (7) failure of consideration; (8) fraud; (9) illegality; (10) injury by fellow servant; (11) laches; (12) license; (13) payment; (14) release; (15) res judicata; (16) statute of frauds; (17) statute of limitations; and (18) waiver.",
+      "text_sha256": "c95b25bdc90a94d8f4e6da009dc23270f3e4b28ec0c67babd45f3ab4fbec0393",
+      "publisher_sha256": "e7a284523ab329e9fb191c708c5912198e663c305e57232a7d7001400fbea197",
+      "retrieved_at": "2026-11-21T04:08:50.883305+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Hampshire Judicial Branch Superior Court rules archived February 17, 2025",
+      "court": "New Hampshire Superior Court",
+      "publisher_member": "Rule 9(c)–(d) in the archived Superior Court rules"
+    },
+    "0c6ad73333507b44a4fd8097b2be8c": {
+      "source_id": "US-NH:response:bab291f6c649",
+      "authority_type": "court_rule",
+      "citation": "N.H. Super. Ct. R. 9(e) (February 2025 archive)",
+      "text": "(e) A party does not waive the right to file a Motion to Dismiss challenging the court's personal jurisdiction, sufficiency of process and/or sufficiency of service of process by filing an Answer or other pleadings or motions addressing other issues. However, a party who wishes to challenge the court's personal jurisdiction, sufficiency of process, and/or sufficiency of service of process must do so in a Motion to Dismiss filed within 30 days after he or she is served. If a party fails to do so within this time period, he or she will be deemed to have waived the challenge. If the trial court denies the Motion to Dismiss: (1) The party will be deemed to have waived the challenge if the party does not seek review of the denial by the supreme court within 30 days of the clerk's final written notice of the trial court's decision. If the party does not seek review of the denial by the supreme court, the party must file an Answer within 30 days of the clerk's final written notice of the trial court's decision. (2) If the party appeals the denial, and the supreme court declines the appeal, the party must file an Answer within 30 days after the date of the supreme court's final written notice declining the appeal. The supreme court's declining to accept the appeal does not preclude a party who has complied with this section from challenging the trial court's ruling on personal jurisdiction, sufficiency of process and/or sufficiency of service of process in an appeal from a final judgment of the trial court. (3) If the supreme court accepts the appeal and rejects the party's challenge, the party must file an Answer within 30 days after the date of the supreme court's final decision rejecting the challenge.",
+      "text_sha256": "3a0abf4d8da9db1aae9b1c3bc64469261a578a9fbdfa265eaa14a6c0a9fbf3e8",
+      "publisher_sha256": "e7a284523ab329e9fb191c708c5912198e663c305e57232a7d7001400fbea197",
+      "retrieved_at": "2026-11-21T04:08:50.883305+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Hampshire Judicial Branch Superior Court rules archived February 17, 2025",
+      "court": "New Hampshire Superior Court",
+      "publisher_member": "Rule 9(e) in the archived Superior Court rules"
+    },
+    "3dc7d62176bd75c02185eee082e27a": {
+      "source_id": "US-NH:answer_contents:8846db8cd6f2",
+      "authority_type": "court_rule",
+      "citation": "N.H. Super. Ct. R. 17(a)–(b) (February 2025 archive)",
+      "text": "(a) An Appearance in an action shall be made by filing a typed or handwritten Appearance form containing the name, street address, mailing address, email address, New Hampshire Bar Association member identification number, and telephone number of the person entering the Appearance, and the complete name, street address, and telephone number of the party on whose behalf the Appearance is filed. If counsel includes all of the foregoing information in a complaint, answer or motion to dismiss, that pleading will be considered his or her appearance, and a separate appearance need not be filed. (b) A party who chooses to represent himself or herself must file an Appearance and shall state in the Appearance that the party is choosing to represent himself or herself. The failure of a self-represented party to file an Appearance in conformity with this rule shall result in a conditional default or other order as justice requires. The clerk shall be notified of any changes of address of any of the parties.",
+      "text_sha256": "3f31ce9039bc681bca664a15d5e3f9e7cfa27c7d2ca8df836a9137f240fec6a5",
+      "publisher_sha256": "e7a284523ab329e9fb191c708c5912198e663c305e57232a7d7001400fbea197",
+      "retrieved_at": "2026-11-21T04:08:50.883305+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Hampshire Judicial Branch Superior Court rules archived February 17, 2025",
+      "court": "New Hampshire Superior Court",
+      "publisher_member": "Rule 17(a)–(b) in the archived Superior Court rules"
+    },
+    "0ce476e31447e6e514028e3c2319d3": {
+      "source_id": "US-NH:negligence_elements:512172c09a92",
+      "authority_type": "opinion",
+      "citation": "Christen v. Fiesta Shows, Inc., 170 N.H. 372, 375 (2017)",
+      "text": "To recover for negligence, a plaintiff must show that the defendant owes a duty to the plaintiff and that the defendant’s breach of that duty caused the plaintiff’s injuries. Manchenton v. Auto Leasing Corp., 135 N.H. 298, 304 (1992). Absent a duty, there is no negligence. Walls v. Oxford Management Co., 137 N.H. 653, 656 (1993).",
+      "text_sha256": "9f7a994f5e52f7429fb8642e650618ad31977b252a4144770f674178a12dcffa",
+      "publisher_sha256": "d5e50419759ab96bff8349fea2bfc1c06e95d8fc7c582f5c3d0f1b48f11f28b1",
+      "retrieved_at": "2026-11-21T04:27:26.513512+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2017-10-04",
+      "court": "New Hampshire Supreme Court",
+      "decision_date": "2017-10-04",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment on whether a carnival operator owed a duty in a wrongful-death negligence action.",
+      "publisher_member": "Court-issued slip opinion, PDF p. 3"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "80bd68ccc5907afd6ed0450b613626",
+    "source_id": "US-NH:fault:c1c38019662c",
+    "currentness": "unresolved",
+    "qualification": "Refer to the quoted provision for allocation, exceptions and applicability."
+  }
+}

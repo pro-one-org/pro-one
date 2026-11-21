@@ -1,0 +1,702 @@
+{
+  "jurisdiction": "US-WV",
+  "version": "1",
+  "sources": {
+    "US-WV:statutes:007c7a2b9db3": {
+      "category": "statutes",
+      "title": "Code",
+      "url": "http://www.legis.state.wv.us/WVCODE/Code.cfm",
+      "directory": "doj-WV",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-WV:constitution:a461eecb876d": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.legis.state.wv.us/WVCODE/WV_CON.cfm",
+      "directory": "doj-WV",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-WV:legislature:47175ffafeef": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.legis.state.wv.us/index.cfm",
+      "directory": "codes",
+      "locator": "West Virginia"
+    },
+    "US-WV:labor_agency:ff633750c1d2": {
+      "category": "labor_agency",
+      "title": "labor.wv.gov",
+      "url": "https://labor.wv.gov/",
+      "directory": "labor",
+      "locator": "West Virginia"
+    },
+    "US-WV:commercial_code:ae15d37928e8": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://www.legis.state.wv.us/wvcode/Code.cfm?chap=46&art=1",
+      "directory": "ucc",
+      "locator": "West Virginia"
+    },
+    "US-WV:civil_rules:663c337e2449": {
+      "category": "civil_rules",
+      "title": "Actions, Suits and Arbitration",
+      "url": "http://www.legis.state.wv.us/WVCODE/Code.cfm?chap=55&art=1",
+      "directory": "procedure",
+      "locator": "West Virginia"
+    },
+    "US-WV:civil_rules:6c479fa72b26": {
+      "category": "civil_rules",
+      "title": "Pleading and Practice",
+      "url": "http://www.legis.state.wv.us/WVCODE/Code.cfm?chap=56&art=1",
+      "directory": "procedure",
+      "locator": "West Virginia"
+    },
+    "US-WV:civil_rules:17227612d29d": {
+      "category": "civil_rules",
+      "title": "Evidence and Witness",
+      "url": "http://www.legis.state.wv.us/WVCODE/Code.cfm?chap=57&art=1",
+      "directory": "procedure",
+      "locator": "West Virginia"
+    },
+    "US-WV:consumer_agency:c1bb4cee31cf": {
+      "category": "consumer_agency",
+      "title": "West Virginia (WV)",
+      "url": "https://ago.wv.gov/consumerprotection/pages/default.aspx",
+      "directory": "consumer",
+      "locator": "West Virginia (WV)"
+    },
+    "US-WV:judiciary:bda8dc661e5b": {
+      "category": "judiciary",
+      "title": "Judicial System",
+      "url": "https://www.courtswv.gov/",
+      "directory": "doj-WV",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-WV:court_directory:762efa0d13e5": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "http://www.courtswv.gov/lower-courts/circuit-courts.html",
+      "directory": "doj-WV",
+      "locator": "Circuit Courts"
+    },
+    "US-WV:court_directory:c1cc914c930f": {
+      "category": "court_directory",
+      "title": "Family Courts",
+      "url": "http://www.courtswv.gov/lower-courts/family-courts.html",
+      "directory": "doj-WV",
+      "locator": "Family Courts"
+    },
+    "US-WV:court_directory:cc0b9df751ae": {
+      "category": "court_directory",
+      "title": "Magistrate Courts",
+      "url": "http://www.courtswv.gov/lower-courts/magistrate-courts.html",
+      "directory": "doj-WV",
+      "locator": "Magistrate Courts"
+    },
+    "US-WV:court_directory:dccd4cbe47f3": {
+      "category": "court_directory",
+      "title": "Legislature's Court of Claims",
+      "url": "http://www.wvlegislature.gov/Joint/courtofclaims.cfm",
+      "directory": "doj-WV",
+      "locator": "Legislature's Court of Claims"
+    },
+    "US-WV:regulations:962a29f67b09": {
+      "category": "regulations",
+      "title": "Code of State Rules (Administrative Code)",
+      "url": "https://apps.sos.wv.gov/adlaw/csr/",
+      "directory": "doj-WV",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-WV:regulations:74394ba5e433": {
+      "category": "regulations",
+      "title": "State Register",
+      "url": "https://apps.sos.wv.gov/adlaw/registers/",
+      "directory": "doj-WV",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-WV:pi_limitations:945eb02348de": {
+      "category": "pi_limitations",
+      "title": "W. Va. Code § 55-2-12",
+      "url": "https://code.wvlegislature.gov/55-2-12/",
+      "directory": null,
+      "locator": "W. Va. Code § 55-2-12",
+      "observation": {
+        "requested_url": "https://code.wvlegislature.gov/55-2-12/",
+        "retrieved_at": "2026-11-17T19:34:03.185232+00:00",
+        "http_status": "200",
+        "sha256": "d35b06e1e0d12627fd88a684e4104988fdfd652073b526e8e1e95c8baf3cdf0b",
+        "health": "healthy"
+      }
+    },
+    "US-WV:written_contract_limitations:34e613a78a48": {
+      "category": "written_contract_limitations",
+      "title": "W. Va. Code § 55-2-6",
+      "url": "https://code.wvlegislature.gov/55-2-6/",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://code.wvlegislature.gov/55-2-6/",
+        "retrieved_at": "2026-11-17T19:34:03.067348+00:00",
+        "http_status": "200",
+        "sha256": "c2d6fc87b347de10a0c72859f3c68680cc08e80956720c8b0ceca1094cfac3ac",
+        "health": "manual_review_required"
+      }
+    },
+    "US-WV:oral_contract_limitations:34e613a78a48": {
+      "category": "oral_contract_limitations",
+      "title": "W. Va. Code § 55-2-6",
+      "url": "https://code.wvlegislature.gov/55-2-6/",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://code.wvlegislature.gov/55-2-6/",
+        "retrieved_at": "2026-11-17T19:34:03.067348+00:00",
+        "http_status": "200",
+        "sha256": "c2d6fc87b347de10a0c72859f3c68680cc08e80956720c8b0ceca1094cfac3ac",
+        "health": "manual_review_required"
+      }
+    },
+    "US-WV:small_claims:82db8474fd24": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.courtswv.gov/public-resources/court-forms/",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.courtswv.gov/public-resources/court-forms/",
+        "retrieved_at": "2026-11-17T19:42:41.390576+00:00",
+        "http_status": "200",
+        "sha256": "e3da86cb772ff5ffc39a37d8f3517a8f213cff5af20f90be92e747c696d9f952",
+        "health": "manual_review_required"
+      }
+    },
+    "US-WV:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 30"
+    },
+    "US-WV:commencement:3d10d489ede0": {
+      "category": "commencement",
+      "title": "W. Va. R. Civ. P. 3",
+      "url": "https://www.courtswv.gov/sites/default/pubfilesmnt/2025-01/West%20Virginia%20Rules%20of%20Civil%20Procedure.pdf",
+      "directory": null,
+      "locator": "W. Va. R. Civ. P. 3",
+      "language": "en",
+      "publisher_role": "official_rule_publication",
+      "observation": {
+        "health": "retained_snapshot",
+        "retrieved_at": "2026-11-17T20:14:22.334501+00:00",
+        "sha256": "0ee05eb2712a88f1e98eba5414a7d1c8bb0612b4b95d77b5222a39fb9dfb64dd"
+      }
+    },
+    "US-WV:fault:e61417b28dd7": {
+      "category": "fault",
+      "title": "W. Va. Code § 55-7-13c(c)",
+      "url": "https://code.wvlegislature.gov/55-7-13c/",
+      "directory": null,
+      "locator": "W. Va. Code § 55-7-13c(c)",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:39.471656+00:00",
+        "sha256": "0c5f40e58aab8c276572d96adacce22ed309e75c4d0c00302fe12e4cbb629c03"
+      }
+    },
+    "US-WV:consumerLaw:28b30b03b9df": {
+      "title": "W. Va. Code § 46A-6-101 et seq.",
+      "category": "consumerLaw",
+      "url": "https://code.wvlegislature.gov/46A-6-101/",
+      "directory": "consumer_statutes_index",
+      "locator": "W. Va. Code § 46A-6-101 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-WV:contract_formation:97df05fecf64": {
+      "category": "contract_formation",
+      "title": "W. Va. Code § 46-2-204",
+      "url": "https://code.wvlegislature.gov/46-2-204/",
+      "locator": "W. Va. Code § 46-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:37.587210+00:00",
+        "sha256": "af8328e6be699d394ba63e6f2572f54ef7d58a7392c48d26cea9a4b89ef43c15"
+      }
+    },
+    "US-WV:response:11a9ac6b5629": {
+      "category": "response",
+      "title": "W. Va. R. Civ. P. 12(a)(1)(A)",
+      "url": "https://www.courtswv.gov/sites/default/pubfilesmnt/2025-01/West%20Virginia%20Rules%20of%20Civil%20Procedure.pdf",
+      "locator": "W. Va. R. Civ. P. 12(a)(1)(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:14:22.334501+00:00",
+        "sha256": "0ee05eb2712a88f1e98eba5414a7d1c8bb0612b4b95d77b5222a39fb9dfb64dd"
+      }
+    },
+    "US-WV:service:968c26417455": {
+      "category": "service",
+      "title": "W. Va. R. Civ. P. 4(c)(1)",
+      "url": "https://www.courtswv.gov/sites/default/pubfilesmnt/2025-01/West%20Virginia%20Rules%20of%20Civil%20Procedure.pdf",
+      "locator": "W. Va. R. Civ. P. 4(c)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:14:22.334501+00:00",
+        "sha256": "0ee05eb2712a88f1e98eba5414a7d1c8bb0612b4b95d77b5222a39fb9dfb64dd"
+      }
+    },
+    "US-WV:negligence_elements:bbac2ad8afc0": {
+      "category": "negligence_elements",
+      "title": "Hersh v. E-T Enterprises, Ltd. Partnership, No. 12-0106 (W. Va. Nov. 12, 2013)",
+      "url": "https://www.courtswv.gov/sites/default/pubfilesmnt/2023-12/12-0106.pdf",
+      "locator": "Hersh v. E-T Enterprises, Ltd. Partnership, No. 12-0106 (W. Va. Nov. 12, 2013)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T13:54:45.910999+00:00",
+        "sha256": "2b6f64f1dbbf6ea03f3684af860ea6b67bdcd396d8eb655f9700aec8d60e8eca"
+      }
+    },
+    "US-WV:wageLaw:71258cee4616": {
+      "category": "wageLaw",
+      "title": "W. Va. Code § 21-5-4(b)",
+      "url": "https://code.wvlegislature.gov/21-5-4/",
+      "locator": "W. Va. Code § 21-5-4(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:11:02.826931+00:00",
+        "sha256": "c260e281da109aba2dfa3cc541b6dbaeeb84f6f87c2c30c80b8e208ad9da9b48"
+      }
+    },
+    "US-WV:consumerLaw:3f839e703c1f": {
+      "category": "consumerLaw",
+      "title": "W. Va. Code § 46A-6-104",
+      "url": "https://code.wvlegislature.gov/46A-6-104/",
+      "locator": "W. Va. Code § 46A-6-104",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:45.748550+00:00",
+        "sha256": "26fcbb1e36879e31e2162db6e1acea7ae07911d6ebeeea70d4db9e58e25c8775"
+      }
+    },
+    "US-WV:contract_breach:74e99c8c8c60": {
+      "category": "contract_breach",
+      "title": "Carbon Energy Corp. v. Shonk Land Co., LLC, No. 24-ICA-154 (W. Va. ICA May 22, 2025)",
+      "url": "https://www.courtswv.gov/sites/default/pubfilesmnt/2025-05/24-ICA-154%20Opinion.pdf",
+      "locator": "Carbon Energy Corp. v. Shonk Land Co., LLC, No. 24-ICA-154 (W. Va. ICA May 22, 2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:39:42.051835+00:00",
+        "sha256": "4f03c5aaaf86589f3947de6695b0f4c0da10a56019c937a9cff5f3cf439bc57d"
+      }
+    },
+    "US-WV:debtLaw:5d2f64a6bb9b": {
+      "category": "debtLaw",
+      "title": "State ex rel. Morrisey v. Copper Beech Townhome Cmtys. Twenty-Six, LLC, No. 17-0228, slip op. at 8",
+      "url": "https://www.courtswv.gov/sites/default/pubfilesmnt/2023-12/17-0228.pdf",
+      "locator": "State ex rel. Morrisey v. Copper Beech Townhome Cmtys. Twenty-Six, LLC, No. 17-0228, slip op. at 8",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:25:20.298901+00:00",
+        "sha256": "068304aa1d9ca2efb9368149becc5fcd5ef85dfa4a05c6e6be992640b6583679"
+      }
+    },
+    "US-WV:debtLaw:d11b79d0ac38": {
+      "category": "debtLaw",
+      "title": "State ex rel. Morrisey v. Copper Beech Townhome Cmtys. Twenty-Six, LLC, No. 17-0228, slip op. at 23",
+      "url": "https://www.courtswv.gov/sites/default/pubfilesmnt/2023-12/17-0228.pdf",
+      "locator": "State ex rel. Morrisey v. Copper Beech Townhome Cmtys. Twenty-Six, LLC, No. 17-0228, slip op. at 23",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:25:20.298901+00:00",
+        "sha256": "068304aa1d9ca2efb9368149becc5fcd5ef85dfa4a05c6e6be992640b6583679"
+      }
+    },
+    "US-WV:debtLaw:a61409876850": {
+      "category": "debtLaw",
+      "title": "State ex rel. Morrisey v. Copper Beech Townhome Cmtys. Twenty-Six, LLC, No. 17-0228, slip op. at 23 n.14",
+      "url": "https://www.courtswv.gov/sites/default/pubfilesmnt/2023-12/17-0228.pdf",
+      "locator": "State ex rel. Morrisey v. Copper Beech Townhome Cmtys. Twenty-Six, LLC, No. 17-0228, slip op. at 23 n.14",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:25:20.298901+00:00",
+        "sha256": "068304aa1d9ca2efb9368149becc5fcd5ef85dfa4a05c6e6be992640b6583679"
+      }
+    },
+    "US-WV:small_claims:fbbb85811d8d": {
+      "category": "small_claims",
+      "title": "W. Va. R. Civ. P. for Magis. Cts. 2",
+      "url": "https://www.courtswv.gov/legal-community/court-rules/rules-of-civil-procedure-for-magistrate-court",
+      "locator": "W. Va. R. Civ. P. for Magis. Cts. 2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:25:20.350474+00:00",
+        "sha256": "334142bce03658aa0bb8751a75598050b3bc8df4a136d1d5eed3fe17ae575115"
+      }
+    },
+    "US-WV:small_claims:17362dcec951": {
+      "category": "small_claims",
+      "title": "W. Va. R. Civ. P. for Magis. Cts. 3",
+      "url": "https://www.courtswv.gov/legal-community/court-rules/rules-of-civil-procedure-for-magistrate-court",
+      "locator": "W. Va. R. Civ. P. for Magis. Cts. 3",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:25:20.350474+00:00",
+        "sha256": "334142bce03658aa0bb8751a75598050b3bc8df4a136d1d5eed3fe17ae575115"
+      }
+    },
+    "US-WV:small_claims:0f74596e6749": {
+      "category": "small_claims",
+      "title": "W. Va. R. Civ. P. for Magis. Cts. 4(a)-(b)",
+      "url": "https://www.courtswv.gov/legal-community/court-rules/rules-of-civil-procedure-for-magistrate-court",
+      "locator": "W. Va. R. Civ. P. for Magis. Cts. 4(a)-(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:25:20.350474+00:00",
+        "sha256": "334142bce03658aa0bb8751a75598050b3bc8df4a136d1d5eed3fe17ae575115"
+      }
+    },
+    "US-WV:deposit:d77c0005eb8f": {
+      "category": "deposit",
+      "title": "Pinkard v. McIntyre, No. 23-ICA-456, slip op. at 3",
+      "url": "https://www.courtswv.gov/sites/default/pubfilesmnt/2024-10/23-ICA-456_MD.pdf",
+      "locator": "Pinkard v. McIntyre, No. 23-ICA-456, slip op. at 3",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:25:20.310057+00:00",
+        "sha256": "fe986ec022b7f1c89c16c124ecc406f1ad929c98c829e3a58ef98012c9382faf"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-WV:court:cd1d9ea43e81",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-WV:court_directory:762efa0d13e5"
+    },
+    {
+      "id": "US-WV:court:9bb976ab67cf",
+      "name": "Family Courts",
+      "level": "trial_directory",
+      "source_id": "US-WV:court_directory:c1cc914c930f"
+    },
+    {
+      "id": "US-WV:court:15765de0b2b5",
+      "name": "Magistrate Courts",
+      "level": "trial_directory",
+      "source_id": "US-WV:court_directory:cc0b9df751ae"
+    },
+    {
+      "id": "US-WV:court:9c19f8784ed5",
+      "name": "Legislature's Court of Claims",
+      "level": "trial_directory",
+      "source_id": "US-WV:court_directory:dccd4cbe47f3"
+    },
+    {
+      "id": "US-WV:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-WV:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-WV:court:44949d940273",
+      "name": "Magistrate",
+      "level": "limited_trial",
+      "source_id": "US-WV:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-WV:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-WV:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-WV:court:6946571becdd",
+      "name": "Family",
+      "level": "limited_trial",
+      "source_id": "US-WV:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "W. Va. Code § 55-2-12(b)",
+      "source_id": "US-WV:pi_limitations:945eb02348de",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "W. Va. Code § 55-2-6",
+      "source_id": "US-WV:written_contract_limitations:34e613a78a48",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "W. Va. Code § 55-2-6",
+      "source_id": "US-WV:oral_contract_limitations:34e613a78a48",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "W. Va. Code § 55-3A-1. Petition for summary relief for wrongful occupation of residential rental property",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "W. Va. Code § 46A-6-101 et seq.",
+      "source_id": "US-WV:consumerLaw:28b30b03b9df",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "baeae5b5554e3faacc20868946a9b9": {
+      "citation": "W. Va. Code § 55-2-12",
+      "source_id": "US-WV:pi_limitations:945eb02348de",
+      "authority_type": "statute",
+      "text": "Every personal action for which no limitation is otherwise prescribed shall be brought: (a) Within two years next after the right to bring the same shall have accrued, if it be for damage to property; (b) within two years next after the right to bring the same shall have accrued if it be for damages for personal injuries; and (c) within one year next after the right to bring the same shall have accrued if it be for any other matter of such nature that, in case a party die, it could not have been brought at common law by or against his personal representative.",
+      "text_sha256": "fc8c97743a06f262fba72850450addaeea56ef91210e12cb61a15aa62955721b",
+      "publisher_sha256": "d35b06e1e0d12627fd88a684e4104988fdfd652073b526e8e1e95c8baf3cdf0b",
+      "retrieved_at": "2026-11-17T19:34:03.185232+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "6d76b6a53b6a5b86159c97896d5f82": {
+      "source_id": "US-WV:commencement:3d10d489ede0",
+      "citation": "W. Va. R. Civ. P. 3",
+      "authority_type": "court_rule",
+      "language": "en",
+      "text": "Rule 3. Commencing an action. (a) A civil action is commenced by filing a complaint with the court. For a complaint naming more than one individual plaintiff not related by marriage, a derivative or fiduciary relationship, each plaintiff shall be assigned a separate civil action number and be docketed as a separate civil action and be charged a separate fee by the clerk of a circuit court. (b) Every complaint shall be accompanied by a completed civil case information statement, or the electronic equivalent, in the form prescribed by the Supreme Court of Appeals.",
+      "text_sha256": "39495b3e71285bd240a1ede9c76cbe47adc409328a17fea19e8c06c751f2e44b",
+      "publisher_sha256": "0ee05eb2712a88f1e98eba5414a7d1c8bb0612b4b95d77b5222a39fb9dfb64dd",
+      "retrieved_at": "2026-11-17T20:14:22.334501+00:00",
+      "currentness": "unresolved"
+    },
+    "5fa9c5ae27c2b416cddb492174fa23": {
+      "citation": "W. Va. Code § 55-7-13c(c)",
+      "source_id": "US-WV:fault:e61417b28dd7",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "(c) Any fault chargeable to the plaintiff shall not bar recovery by the plaintiff unless the plaintiff's fault is greater than the combined fault of all other persons responsible for the total amount of damages, if any, to be awarded. If the plaintiff's fault is less than the combined fault of all other persons, the plaintiff's recovery shall be reduced in proportion to the plaintiff's degree of fault.",
+      "text_sha256": "fb00d2d0e739db49300b1f5cbeb569a6476f2f03009d5175df64fe89c20be6a1",
+      "publisher_sha256": "0c5f40e58aab8c276572d96adacce22ed309e75c4d0c00302fe12e4cbb629c03",
+      "retrieved_at": "2026-11-17T20:50:39.471656+00:00",
+      "currentness": "unresolved"
+    },
+    "f47b8a50b8363786d0cb22d0fffb47": {
+      "source_id": "US-WV:contract_formation:97df05fecf64",
+      "authority_type": "statute",
+      "citation": "W. Va. Code § 46-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "af8328e6be699d394ba63e6f2572f54ef7d58a7392c48d26cea9a4b89ef43c15",
+      "retrieved_at": "2026-11-18T15:14:37.587210+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "584c773fcf0566e171c14687ae5739": {
+      "source_id": "US-WV:response:11a9ac6b5629",
+      "authority_type": "court_rule",
+      "citation": "W. Va. R. Civ. P. 12(a)(1)(A)",
+      "text": "(1) In general. Unless another time is specified by this rule or a statute, the time for serving a responsive pleading is as follows: (A) A defendant shall serve an answer within 30 days after being served with the summons and complaint. Every answer shall be accompanied by a completed civil case information statement in the form prescribed by the Supreme Court of Appeals as required by Rule 3(b).",
+      "text_sha256": "6a52f3eed6f983e8dff9579e1db249c748418a2f335c0a122454be85b5ee27fd",
+      "publisher_sha256": "0ee05eb2712a88f1e98eba5414a7d1c8bb0612b4b95d77b5222a39fb9dfb64dd",
+      "retrieved_at": "2026-11-17T20:14:22.334501+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "7adaef092e1f0fc6489d56afb30851": {
+      "source_id": "US-WV:service:968c26417455",
+      "authority_type": "court_rule",
+      "citation": "W. Va. R. Civ. P. 4(c)(1)",
+      "text": "(c) Service. (1) In general . A summons shall be served with a copy of the complaint. The plaintiff is responsible for having the summons and complaint served within the time allowed by Rule 4(i) and shall furnish the necessary copies to the person who makes service.",
+      "text_sha256": "0954ebeba3b97680ec3713b814b49ebdb390de8629588438eb2ba41230d3ca03",
+      "publisher_sha256": "0ee05eb2712a88f1e98eba5414a7d1c8bb0612b4b95d77b5222a39fb9dfb64dd",
+      "retrieved_at": "2026-11-17T20:14:22.334501+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "2e24bfd90b50ddfabd6d9409d7e2bb": {
+      "source_id": "US-WV:negligence_elements:bbac2ad8afc0",
+      "authority_type": "opinion",
+      "citation": "Hersh v. E-T Enterprises, Ltd. Partnership, No. 12-0106 (W. Va. Nov. 12, 2013)",
+      "text": "In a negligence suit, a plaintiff is required to show four basic elements: duty, breach, causation, and damages.",
+      "text_sha256": "b6035f7c69b40fa036956693eaa471e4f6a587c9dd733860f53e9a74728c4157",
+      "publisher_sha256": "2b6f64f1dbbf6ea03f3684af860ea6b67bdcd396d8eb655f9700aec8d60e8eca",
+      "retrieved_at": "2026-11-19T13:54:45.910999+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2013-11-12",
+      "court": "Supreme Court of Appeals of West Virginia",
+      "decision_date": "2013-11-12",
+      "opinion_role": "majority",
+      "procedural_posture": "Reversed summary judgment in premises liability action."
+    },
+    "d77d2bab13c471443c354d43ea928a": {
+      "source_id": "US-WV:wageLaw:71258cee4616",
+      "authority_type": "statute",
+      "citation": "W. Va. Code § 21-5-4(b)",
+      "text": "(b) Whenever a person, firm, or corporation discharges an employee, or whenever an employee quits or resigns from employment, the person, firm or corporation shall pay the employee’s wages due for work that the employee performed prior to the separation of employment on or before the next regular payday on which the wages would otherwise be due and payable: Provided, That fringe benefits, as defined in section one of this article, that are provided an employee pursuant to an agreement between the employee and employer and that are due, but pursuant to the terms of the agreement, are to be paid at a future date or upon additional conditions which are ascertainable are not subject to this subsection and are not payable on or before the next regular payday, but shall be paid according to the terms of the agreement. For purposes of this section, “business day” means any day other than Saturday, Sunday, or any legal holiday as set forth in §2-2-1 of this code.",
+      "text_sha256": "42f2f39c33c4b339d835bde34867780d92421e5e1698677ff6a14c601e93dccd",
+      "publisher_sha256": "c260e281da109aba2dfa3cc541b6dbaeeb84f6f87c2c30c80b8e208ad9da9b48",
+      "retrieved_at": "2026-11-19T14:11:02.826931+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "0224969253b88130ec03d2480d8382": {
+      "source_id": "US-WV:consumerLaw:3f839e703c1f",
+      "authority_type": "statute",
+      "citation": "W. Va. Code § 46A-6-104",
+      "text": "Unfair methods of competition and unfair or deceptive acts or practices in the conduct of any trade or commerce are hereby declared unlawful.",
+      "text_sha256": "d9724ec8ba7d7cbd951b81c03cce7fab764c296b26eb16baf60e626e6fbce7ab",
+      "publisher_sha256": "26fcbb1e36879e31e2162db6e1acea7ae07911d6ebeeea70d4db9e58e25c8775",
+      "retrieved_at": "2026-11-19T19:26:45.748550+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "0b4fc4edd378006f2e504b33022fc2": {
+      "source_id": "US-WV:contract_breach:74e99c8c8c60",
+      "authority_type": "opinion",
+      "citation": "Carbon Energy Corp. v. Shonk Land Co., LLC, No. 24-ICA-154 (W. Va. ICA May 22, 2025)",
+      "text": "To establish a breach of contract claim, three elements must be presented. “A claim for breach of contract requires proof of the formation of a contract, a breach of the terms of that contract, and resulting damages.” Sneberger v. Morrison, 235 W. Va. 654, 669, 776 S.E.2d 156, 171 (2015).",
+      "text_sha256": "ee53637207b69417c4111b9ad4474124ca937c5c1411597269a2c3dfbbce013d",
+      "publisher_sha256": "4f03c5aaaf86589f3947de6695b0f4c0da10a56019c937a9cff5f3cf439bc57d",
+      "retrieved_at": "2026-11-19T19:39:42.051835+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2025-05-22",
+      "court": "Intermediate Court of Appeals of West Virginia",
+      "decision_date": "2025-05-22",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a circuit court judgment. Affirmed and reversed in part."
+    },
+    "30b8ff110a6296ca4eccff66997bb1": {
+      "source_id": "US-WV:debtLaw:5d2f64a6bb9b",
+      "authority_type": "opinion",
+      "citation": "State ex rel. Morrisey v. Copper Beech Townhome Cmtys. Twenty-Six, LLC, No. 17-0228, slip op. at 8",
+      "text": "The debt collection provisions are set forth in article 2 of the CCPA, W.Va. Code §§ 46A-2-122 to -129a. The debt collection provisions state that “[n]o debt collector shall use any fraudulent, deceptive or misleading representation or means to collect . . . claims[.]” W.Va. Code § 46A-2-127. Additionally, W.Va. Code § 46A-2-128 provides that “[n]o debt collector may use unfair or unconscionable means to collect or attempt to collect any claim.”",
+      "text_sha256": "cf68067262ece5a81e9a89cf8eaaec9731eb2fa52b875f103e0392b81ebaf81a",
+      "publisher_sha256": "068304aa1d9ca2efb9368149becc5fcd5ef85dfa4a05c6e6be992640b6583679",
+      "retrieved_at": "2026-11-20T23:25:20.298901+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2017-10-12",
+      "court": "Supreme Court of Appeals of West Virginia",
+      "decision_date": "2017-10-12",
+      "opinion_role": "majority",
+      "procedural_posture": "Circuit court certified a question about fees under a residential lease. The court addressed the statutory debt and deceptive practices provisions in that setting."
+    },
+    "1e106cdb404b898dcc69cf5b3ea6a8": {
+      "source_id": "US-WV:debtLaw:d11b79d0ac38",
+      "authority_type": "opinion",
+      "citation": "State ex rel. Morrisey v. Copper Beech Townhome Cmtys. Twenty-Six, LLC, No. 17-0228, slip op. at 23",
+      "text": "hold that the debt collection provisions, W.Va. Code §§ 46A-2-122 to -129a, and deceptive practices provisions, W.Va. Code §§ 46A-6-101 to -106, both contained in the West Virginia Consumer Credit and Protection Act, do not apply to and regulate the fees a landlord may charge to a tenant pursuant to a lease of residential real property.",
+      "text_sha256": "452dc01539c2e51ba86e4959fac2f4d8e587423a0c0ea519145ba451800c1545",
+      "publisher_sha256": "068304aa1d9ca2efb9368149becc5fcd5ef85dfa4a05c6e6be992640b6583679",
+      "retrieved_at": "2026-11-20T23:25:20.298901+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2017-10-12",
+      "court": "Supreme Court of Appeals of West Virginia",
+      "decision_date": "2017-10-12",
+      "opinion_role": "majority",
+      "procedural_posture": "Circuit court certified a question about fees under a residential lease. The court addressed the statutory debt and deceptive practices provisions in that setting."
+    },
+    "74963e6dbcf1d090fb8b44cff477ef": {
+      "source_id": "US-WV:debtLaw:a61409876850",
+      "authority_type": "opinion",
+      "citation": "State ex rel. Morrisey v. Copper Beech Townhome Cmtys. Twenty-Six, LLC, No. 17-0228, slip op. at 23 n.14",
+      "text": "Our answer to the certified question includes the following caveat—the CCPA does not generally apply to the relationship between a landlord and tenant under a lease for residential real property. However, according to the explicit language contained in W.Va. Code § 46A-6-109(a), written lease agreements “for the rental of space to be occupied for residential purposes,” are required to be written according to the plain language requirements of that statute.",
+      "text_sha256": "94cabbe7cb9bdef755fa94cc9306ac9e37bc6c3182f9450c2e8bbd80763c0072",
+      "publisher_sha256": "068304aa1d9ca2efb9368149becc5fcd5ef85dfa4a05c6e6be992640b6583679",
+      "retrieved_at": "2026-11-20T23:25:20.298901+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2017-10-12",
+      "court": "Supreme Court of Appeals of West Virginia",
+      "decision_date": "2017-10-12",
+      "opinion_role": "majority",
+      "procedural_posture": "Circuit court certified a question about fees under a residential lease. The court addressed the statutory debt and deceptive practices provisions in that setting."
+    },
+    "e81e93e14db493645a16023f67d917": {
+      "source_id": "US-WV:small_claims:fbbb85811d8d",
+      "authority_type": "court_rule",
+      "citation": "W. Va. R. Civ. P. for Magis. Cts. 2",
+      "text": "A civil action is commenced by filing a complaint with the magistrate assistant, magistrate clerk, or magistrate deputy clerk. A complaint shall contain: (a) A short and plain statement of the claim showing that the plaintiff is entitled to relief; and (b) A demand for judgment for the relief the plaintiff seeks.",
+      "text_sha256": "629a9d336bfc84e9f31fc4011894cd59bb81b098ff063caab88130f657a8ae20",
+      "publisher_sha256": "334142bce03658aa0bb8751a75598050b3bc8df4a136d1d5eed3fe17ae575115",
+      "retrieved_at": "2026-11-20T23:25:20.350474+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "97ca5eff37beddd15c215436b5de36": {
+      "source_id": "US-WV:small_claims:17362dcec951",
+      "authority_type": "court_rule",
+      "citation": "W. Va. R. Civ. P. for Magis. Cts. 3",
+      "text": "The summons and complaint in civil actions shall be served upon the defendant in the same manner as is provided by Rule 4 of the Rules of Civil Procedure for Trial Courts of Record.",
+      "text_sha256": "cc6d4a8d3c28ee704bf175aff2a04e6e4df00440442e4e4ab2806673fa21537e",
+      "publisher_sha256": "334142bce03658aa0bb8751a75598050b3bc8df4a136d1d5eed3fe17ae575115",
+      "retrieved_at": "2026-11-20T23:25:20.350474+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "33131047fcff1996754d9568a0c734": {
+      "source_id": "US-WV:small_claims:0f74596e6749",
+      "authority_type": "court_rule",
+      "citation": "W. Va. R. Civ. P. for Magis. Cts. 4(a)-(b)",
+      "text": "(a) Filing and service. — An answer to a complaint shall be filed by the defendant with the magistrate assistant, magistrate clerk, or deputy clerk. The defendant shall serve a copy of the answer upon the plaintiff in the manner set forth in Rule 8. (b) Time. — The answer shall be filed and served by the defendant: (1) Within 20 days after service of the summons and complaint; or (2) If service of the summons and complaint is made upon an agent or attorney in fact authorized to accept service upon the defendant, within 30 days after service; or (3) Not later than the date specified in an order of publication; or (4) In cases of unlawful entry and detainer and wrongful occupation of residential rental property, within 5 days after service of the summons and complaint.",
+      "text_sha256": "610d3b27858949f772d97f5a1db2c2fc11a512b8d15f85ec48efe9251d0ea2cc",
+      "publisher_sha256": "334142bce03658aa0bb8751a75598050b3bc8df4a136d1d5eed3fe17ae575115",
+      "retrieved_at": "2026-11-20T23:25:20.350474+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "cdc8302337e0d41722d4314100dddf": {
+      "source_id": "US-WV:deposit:d77c0005eb8f",
+      "authority_type": "opinion",
+      "citation": "Pinkard v. McIntyre, No. 23-ICA-456, slip op. at 3",
+      "text": "West Virginia Code § 37-6A-2 requires any security deposit held by the landlord, minus any deductions for damages or other charges, to be delivered to the tenant, along with an itemization of any such damages or other charges. Following the bench trial, the circuit court concluded that Mr. McIntyre diligently worked on calculating the exact itemization amounts of damages, that the failure to timely provide the itemization was not willful or in bad faith, and that the total damages exceeded the security deposit. Ms. Pinkard, on appeal, has provided no evidence that these findings of fact are clearly wrong. Therefore, we cannot find that the circuit court abused its discretion in determining she failed to prove she is entitled to relief.",
+      "text_sha256": "2c37ac5b3bdbe457704afe24e31e825c687180f28f9ddff8aac8798bfabc50b7",
+      "publisher_sha256": "fe986ec022b7f1c89c16c124ecc406f1ad929c98c829e3a58ef98012c9382faf",
+      "retrieved_at": "2026-11-20T23:25:20.310057+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Memorandum decision of 2024-10-28",
+      "court": "Intermediate Court of Appeals of West Virginia",
+      "decision_date": "2024-10-28",
+      "opinion_role": "majority",
+      "procedural_posture": "Memorandum decision after a residential security deposit bench trial. The panel reviewed the particular itemization, findings, and absence of bad faith."
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "5fa9c5ae27c2b416cddb492174fa23",
+    "source_id": "US-WV:fault:e61417b28dd7",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

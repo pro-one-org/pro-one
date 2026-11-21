@@ -1,0 +1,635 @@
+{
+  "jurisdiction": "US-CO",
+  "version": "1",
+  "sources": {
+    "US-CO:statutes:c72fd9131241": {
+      "category": "statutes",
+      "title": "Colorado Revised Statutes and Constitution",
+      "url": "http://www.lexisnexis.com/hottopics/Colorado/",
+      "directory": "codes",
+      "locator": "Colorado"
+    },
+    "US-CO:legislature:c60313d7de18": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.leg.state.co.us/clics/cslFrontPages.nsf/HomeSplash?OpenForm",
+      "directory": "codes",
+      "locator": "Colorado"
+    },
+    "US-CO:labor_agency:92a088d44caa": {
+      "category": "labor_agency",
+      "title": "cdle.colorado.gov/dlss",
+      "url": "https://cdle.colorado.gov/dlss",
+      "directory": "labor",
+      "locator": "Colorado"
+    },
+    "US-CO:business_registration:2b920b72efb9": {
+      "category": "business_registration",
+      "title": "Colorado Secretary of State",
+      "url": "https://www.coloradosos.gov/pubs/business/businessHome.html",
+      "directory": "business",
+      "locator": "Colorado"
+    },
+    "US-CO:commercial_code:0ca1b78c1c7d": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code-Title 4",
+      "url": "http://www.lexisnexis.com/hottopics/colorado/",
+      "directory": "ucc",
+      "locator": "Colorado"
+    },
+    "US-CO:civil_rules:d54e7a0441e4": {
+      "category": "civil_rules",
+      "title": "Colorado (searchable index)",
+      "url": "https://advance.lexis.com/documentpage/?pdmfid=1000516&crid=fd031ff4-7fc0-4e08-90e9-c6e0353524f0&nodeid=AANAABAADAAI&nodepath=%2FROOT%2FAAN%2FAANAAB%2FAANAABAAD%2FAANAABAADAAI&level=4&haschildren=&populated=false&title=13-2-108.+Rules+of+civil+procedure&config=014FJAAyNGJkY2Y4Zi1mNjgyLTRkN2YtYmE4OS03NTYzNzYzOTg0OGEKAFBvZENhdGFsb2d592qv2Kywlf8caKqYROP5&pddocfullpath=%2Fshared%2Fdocument%2Fstatutes-legislation%2Furn%3AcontentItem%3A5YWF-4WD1-FFMK-M3XF-00008-00&ecomp=f38_9kk&prid=7649e7b1-f946-433a-8654-8b93cd2c750d",
+      "directory": "procedure",
+      "locator": "Colorado"
+    },
+    "US-CO:consumer_agency:3ef791667e74": {
+      "category": "consumer_agency",
+      "title": "Colorado (CO)",
+      "url": "https://coag.gov/office-sections/consumer-protection/",
+      "directory": "consumer",
+      "locator": "Colorado (CO)"
+    },
+    "US-CO:judiciary:7a08f72865f5": {
+      "category": "judiciary",
+      "title": "Colorado Courts",
+      "url": "http://www.courts.state.co.us/",
+      "directory": "doj-CO",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-CO:judiciary:6e7c9d7d5d08": {
+      "category": "judiciary",
+      "title": "Map of the Judicial Districts of Colorado",
+      "url": "http://www.courts.state.co.us/Courts/Map.cfm",
+      "directory": "doj-CO",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-CO:court_directory:ac5d8b4ec36d": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://www.coloradosupremecourt.com/",
+      "directory": "doj-CO",
+      "locator": "Supreme Court"
+    },
+    "US-CO:court_directory:edf98fa475c5": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "http://www.courts.state.co.us/Courts/Court_Of_Appeals/Index.cfm",
+      "directory": "doj-CO",
+      "locator": "Court of Appeals"
+    },
+    "US-CO:court_directory:263cd0a4ec03": {
+      "category": "court_directory",
+      "title": "Trial Courts",
+      "url": "http://www.courts.state.co.us/Courts/District/Choose.cfm",
+      "directory": "doj-CO",
+      "locator": "Trial Courts"
+    },
+    "US-CO:court_directory:b0487040493a": {
+      "category": "court_directory",
+      "title": "Water Courts",
+      "url": "http://www.courts.state.co.us/Courts/Water/Index.cfm",
+      "directory": "doj-CO",
+      "locator": "Water Courts"
+    },
+    "US-CO:forms:a1d5b947b852": {
+      "category": "forms",
+      "title": "Court of Appeals Forms and Policies",
+      "url": "http://www.courts.state.co.us/Forms/Index.cfm",
+      "directory": "doj-CO",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-CO:statutes:55bd17fb7d4b": {
+      "category": "statutes",
+      "title": "Session Laws",
+      "url": "https://leg.colorado.gov/agencies/office-legislative-legal-services/session-laws-archive",
+      "directory": "doj-CO",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-CO:regulations:969f0a39867c": {
+      "category": "regulations",
+      "title": "Rules and Regulations Promulgated by Executive Departments",
+      "url": "https://www.sos.state.co.us/CCR/Welcome.do",
+      "directory": "doj-CO",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-CO:pi_limitations:0e4bc6464030": {
+      "category": "pi_limitations",
+      "title": "Colo. Rev. Stat. § 13-80-102(1)(a)",
+      "url": "https://leg.colorado.gov/laws/colorado-revised-statutes",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://leg.colorado.gov/laws/colorado-revised-statutes",
+        "retrieved_at": "2026-11-17T19:33:55.447389+00:00",
+        "http_status": "200",
+        "sha256": "50a3df4293b9d7d709e876c0630c8228ad22ec7287dbcabe407f9af875e13486",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CO:written_contract_limitations:0e4bc6464030": {
+      "category": "written_contract_limitations",
+      "title": "Colo. Rev. Stat. § 13-80-101(1)(a)",
+      "url": "https://leg.colorado.gov/laws/colorado-revised-statutes",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://leg.colorado.gov/laws/colorado-revised-statutes",
+        "retrieved_at": "2026-11-17T19:33:55.447389+00:00",
+        "http_status": "200",
+        "sha256": "50a3df4293b9d7d709e876c0630c8228ad22ec7287dbcabe407f9af875e13486",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CO:oral_contract_limitations:0e4bc6464030": {
+      "category": "oral_contract_limitations",
+      "title": "Colo. Rev. Stat. § 13-80-101(1)(a)",
+      "url": "https://leg.colorado.gov/laws/colorado-revised-statutes",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://leg.colorado.gov/laws/colorado-revised-statutes",
+        "retrieved_at": "2026-11-17T19:33:55.447389+00:00",
+        "http_status": "200",
+        "sha256": "50a3df4293b9d7d709e876c0630c8228ad22ec7287dbcabe407f9af875e13486",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CO:small_claims:e5c41d46df80": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.coloradojudicial.gov/self-help-forms?form_category=457",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.coloradojudicial.gov/self-help-forms?form_category=457",
+        "retrieved_at": "2026-11-17T19:42:38.014995+00:00",
+        "http_status": "200",
+        "sha256": "94d4f010c37f84f302452259f8ddd8df4239c717d549f90cd981b0001c3d4169",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CO:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 26"
+    },
+    "US-CO:fault:c6bf22d87b5b": {
+      "category": "fault",
+      "title": "Fault allocation research publication",
+      "url": "https://www.coloradojudicial.gov/sites/default/files/2024-06/Chapter%209.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.coloradojudicial.gov/sites/default/files/2024-06/Chapter%209.pdf",
+        "retrieved_at": "2026-11-17T19:42:36.398411+00:00",
+        "http_status": "200",
+        "sha256": "05b233bd5ec2ae1bd9a1f9b0a7d329282f9835de6b30ee48a34d0cb0835e6e66",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CO:negligence:40176a427f13": {
+      "category": "negligence",
+      "title": "Negligence research publication",
+      "url": "https://www.coloradojudicial.gov/pattern-civil-jury-instructions-committee",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.coloradojudicial.gov/pattern-civil-jury-instructions-committee",
+        "retrieved_at": "2026-11-17T19:42:35.945997+00:00",
+        "http_status": "200",
+        "sha256": "ea2c7a299b3b9a0fcb4b0cd3e1e0ee975511bed7d6d827182295307ef17d2e21",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CO:consumerLaw:6e4f6aa0debc": {
+      "title": "Colo. Rev. Stat. § 6-1-101 et seq.",
+      "category": "consumerLaw",
+      "url": "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2024-title-06.pdf",
+      "directory": "consumer_statutes_index",
+      "locator": "Colo. Rev. Stat. § 6-1-101 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-CO:contract_formation:083fd29499e7": {
+      "category": "contract_formation",
+      "title": "Colo. Rev. Stat. § 4-2-204",
+      "url": "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2014-title-04.pdf",
+      "locator": "Colo. Rev. Stat. § 4-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:29.669421+00:00",
+        "sha256": "d4d69c6e2b319313e667492927a6740914f47de5a53c5722e9185c02a879102b"
+      }
+    },
+    "US-CO:contract_damages:3278769f8196": {
+      "category": "contract_damages",
+      "title": "Colo. Rev. Stat. § 4-2-714",
+      "url": "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2014-title-04.pdf",
+      "locator": "Colo. Rev. Stat. § 4-2-714",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:29.669421+00:00",
+        "sha256": "d4d69c6e2b319313e667492927a6740914f47de5a53c5722e9185c02a879102b"
+      }
+    },
+    "US-CO:negligence_elements:e5d1bd52a221": {
+      "category": "negligence_elements",
+      "title": "Raleigh v. Performance Plumbing, No. 04SC695 (Colo. Feb. 21, 2006)",
+      "url": "https://www.coloradojudicial.gov/sites/default/files/2024-05/04SC695.pdf",
+      "locator": "Raleigh v. Performance Plumbing, No. 04SC695 (Colo. Feb. 21, 2006)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T13:54:36.491435+00:00",
+        "sha256": "722b11c1b7f1ad8bf39fdb1cc613c950b28ffa028e5fce9e3dccab9d9b33a824"
+      }
+    },
+    "US-CO:fault:3f3dffa88b1a": {
+      "category": "fault",
+      "title": "Westin Operator, LLC v. Groh, 2015 CO 25, n.9",
+      "url": "https://www.coloradojudicial.gov/sites/default/files/2024-05/13SC382.pdf",
+      "locator": "Westin Operator, LLC v. Groh, 2015 CO 25, n.9",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T18:57:49.194584+00:00",
+        "sha256": "48327080891855d7b1107a5ee94622da15904257fb16dbe412a25367f230d991"
+      }
+    },
+    "US-CO:commencement:4aabeaf1f886": {
+      "category": "commencement",
+      "title": "Colo. R. Civ. P. 3(a)",
+      "url": "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2023-court-rules.pdf",
+      "locator": "Colo. R. Civ. P. 3(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:46:19.362728+00:00",
+        "sha256": "07a0129954b015ff26ed4774e5979408d05631a78fff9967ee0a56f5622347e7"
+      }
+    },
+    "US-CO:pi_limitations:6ff9716e9549": {
+      "category": "pi_limitations",
+      "title": "Colo. Rev. Stat. § 13-80-102(1)(a)",
+      "url": "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2024-title-13.pdf",
+      "locator": "Colo. Rev. Stat. § 13-80-102(1)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:34:31.983334+00:00",
+        "sha256": "1e6004c382b54d4e5741e57a172df232c2639a299451c5ed5f793831ab7981aa"
+      }
+    },
+    "US-CO:consumerLaw:68a7f3a4337c": {
+      "category": "consumerLaw",
+      "title": "Colo. Rev. Stat. § 6-1-105(1)(a)–(e)",
+      "url": "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2024-title-06.pdf",
+      "locator": "Colo. Rev. Stat. § 6-1-105(1)(a)–(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:20:53.900546+00:00",
+        "sha256": "560ff6d64b5afdf2a3bc5ac917a392269d16270a029b252ff8f7957deb38b423"
+      }
+    },
+    "US-CO:debtLaw:3220fede0a65": {
+      "category": "debtLaw",
+      "title": "Colo. Rev. Stat. § 5-16-106 (2023)",
+      "url": "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2023-title-05.pdf",
+      "locator": "Colo. Rev. Stat. § 5-16-106 (2023)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:26:27.643132+00:00",
+        "sha256": "16837b1c7dfa704a12935c1bd403e0a3242c20ab69f513ca3f0b094bf849734e"
+      }
+    },
+    "US-CO:wageLaw:a4414922fb5e": {
+      "category": "wageLaw",
+      "title": "Colo. Rev. Stat. § 8-4-109(1)(a)–(b) (2024)",
+      "url": "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2024-title-08.pdf",
+      "locator": "Colo. Rev. Stat. § 8-4-109(1)(a)–(b) (2024)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:37:35.427630+00:00",
+        "sha256": "89aa1dc1621cc1a0ac1a25a1c0d3c4df30e7064f35d17b7559da498606af9f04"
+      }
+    },
+    "US-CO:deposit:b95a5ef4f22f": {
+      "category": "deposit",
+      "title": "Colo. H.B. 25-1249, § 3 (Colo. Rev. Stat. § 38-12-103(1)(a))",
+      "url": "https://leg.colorado.gov/bill_files/40829/download",
+      "locator": "Colo. H.B. 25-1249, § 3 (Colo. Rev. Stat. § 38-12-103(1)(a))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:21:55.148269+00:00",
+        "sha256": "b6a26aff3ae01fb4910f1e3b4726f351f8f73c49cf637e6232492cf2e49406a3"
+      }
+    },
+    "US-CO:response:06aacd38e750": {
+      "category": "response",
+      "title": "Colo. R. Civ. P. 12(a)(1) (Rule Change 2024(08))",
+      "url": "https://www.coloradojudicial.gov/sites/default/files/2024-05/Rule%20Change%202024%2808%29.pdf",
+      "locator": "Colo. R. Civ. P. 12(a)(1) (Rule Change 2024(08))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:40:42.159461+00:00",
+        "sha256": "54604116264f7d15be39a099500d2d3b2e76adda1bc3632039081493e94701b5"
+      }
+    },
+    "US-CO:small_claims:473e3e6d3a6f": {
+      "category": "small_claims",
+      "title": "Colo. Rev. Stat. § 13-6-403(1)–(2) (2026 edition, small-claims jurisdiction)",
+      "url": "https://olls.info/crs/crs2026-title-13.htm",
+      "locator": "Colo. Rev. Stat. § 13-6-403(1)–(2) (2026 edition, small-claims jurisdiction)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:36:55.263428+00:00",
+        "sha256": "16a31770d5018a405ed16e685c94adf71ddd74e6a50156a0919466125dd6c8a5"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-CO:court:f822a5377f47",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-CO:court_directory:ac5d8b4ec36d"
+    },
+    {
+      "id": "US-CO:court:ea22b4b57f19",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-CO:court_directory:edf98fa475c5"
+    },
+    {
+      "id": "US-CO:court:c6520b43db43",
+      "name": "Trial Courts",
+      "level": "trial_directory",
+      "source_id": "US-CO:court_directory:263cd0a4ec03"
+    },
+    {
+      "id": "US-CO:court:4247f74a07b8",
+      "name": "Water Courts",
+      "level": "trial_directory",
+      "source_id": "US-CO:court_directory:b0487040493a"
+    },
+    {
+      "id": "US-CO:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-CO:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-CO:court:f808f9ac00ce",
+      "name": "Denver Probate",
+      "level": "general_trial",
+      "source_id": "US-CO:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-CO:court:92f249354501",
+      "name": "Denver Juvenile",
+      "level": "general_trial",
+      "source_id": "US-CO:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-CO:court:7f0c4124a47c",
+      "name": "Water",
+      "level": "general_trial",
+      "source_id": "US-CO:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-CO:court:09753adaaaf9",
+      "name": "County",
+      "level": "limited_trial",
+      "source_id": "US-CO:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-CO:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-CO:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Colo. Rev. Stat. § 13-80-102(1)(a)",
+      "source_id": "US-CO:pi_limitations:0e4bc6464030",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Colo. Rev. Stat. § 13-80-101(1)(a)",
+      "source_id": "US-CO:written_contract_limitations:0e4bc6464030",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Colo. Rev. Stat. § 13-80-101(1)(a)",
+      "source_id": "US-CO:oral_contract_limitations:0e4bc6464030",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Colo. Rev. Stat. § 13-40-104. Unlawful detention defined",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Colo. Rev. Stat. § 6-1-101 et seq.",
+      "source_id": "US-CO:consumerLaw:6e4f6aa0debc",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "3efd815bc50192716814db97c87fd1": {
+      "source_id": "US-CO:contract_formation:083fd29499e7",
+      "authority_type": "statute",
+      "citation": "Colo. Rev. Stat. § 4-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "d4d69c6e2b319313e667492927a6740914f47de5a53c5722e9185c02a879102b",
+      "retrieved_at": "2026-11-18T15:14:29.669421+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2014 codification"
+    },
+    "f0ea553e8e677bd407b7ad943d4a5a": {
+      "source_id": "US-CO:contract_damages:3278769f8196",
+      "authority_type": "statute",
+      "citation": "Colo. Rev. Stat. § 4-2-714",
+      "text": "Where the buyer has accepted goods and given notification (subsection (3) of section 4-2-607), he may recover as damages for any nonconformity of tender the loss resulting in the ordinary course of events from the seller's breach as determined in any manner which is reasonable. (2) The measure of damages for breach of warranty is the difference at the time and place of acceptance between the value of the goods accepted and the value they would have had if they had been as warranted, unless special circumstances show proximate damages of a different amount.",
+      "text_sha256": "e88394c062f7721abd4bce399aa30ce8acc64d696030d5f4b1768355e7a0cf38",
+      "publisher_sha256": "d4d69c6e2b319313e667492927a6740914f47de5a53c5722e9185c02a879102b",
+      "retrieved_at": "2026-11-18T15:14:29.669421+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2014 codification"
+    },
+    "cb2e053b4071593362c5663cb8c4e5": {
+      "source_id": "US-CO:negligence_elements:e5d1bd52a221",
+      "authority_type": "opinion",
+      "citation": "Raleigh v. Performance Plumbing, No. 04SC695 (Colo. Feb. 21, 2006)",
+      "text": "Appropriately formulated and applied, tort principles adopted pursuant to the common law or legislative enactment are meant to deter and sanction conduct that results in victim injury and to remedy victim injury, in circumstances where the defendant owes a duty of care, defendant breaches the duty, that breach is the proximate cause of the plaintiff’s injuries, and damages result. See, e.g., Bayer v. Crested Butte Mountain Resorts, 960 P.2d 70, 80 (Colo. 1998).",
+      "text_sha256": "ff561023233f4e731c0ba64c7571135e8d56839f349e740908489bc018912fd9",
+      "publisher_sha256": "722b11c1b7f1ad8bf39fdb1cc613c950b28ffa028e5fce9e3dccab9d9b33a824",
+      "retrieved_at": "2026-11-19T13:54:36.491435+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2006-02-21",
+      "court": "Supreme Court of Colorado",
+      "decision_date": "2006-02-21",
+      "opinion_role": "majority",
+      "procedural_posture": "Certiorari on negligent hiring and respondeat superior claims."
+    },
+    "addf4e2a966b9f009fb48577879d68": {
+      "source_id": "US-CO:fault:3f3dffa88b1a",
+      "authority_type": "opinion",
+      "citation": "Westin Operator, LLC v. Groh, 2015 CO 25, n.9",
+      "text": "The statute provides that a plaintiff’s contributory negligence does not bar recovery in a negligence action provided that “such negligence was not as great as the negligence of the person against whom recovery is sought.” § 13 -21-111(1). But it limits recovery in that “any damages allowed shall be diminished in proportion to the amount of negligence attributable to the person for whose injury, damage, or death recovery is made.” Id.",
+      "text_sha256": "284dba0232b8ba2d62c34b17e69203b6266793041e6eb5f759faa6da6dcfa860",
+      "publisher_sha256": "48327080891855d7b1107a5ee94622da15904257fb16dbe412a25367f230d991",
+      "retrieved_at": "2026-11-19T18:57:49.194584+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2015-04-13",
+      "court": "Supreme Court of Colorado",
+      "decision_date": "2015-04-13",
+      "opinion_role": "majority",
+      "procedural_posture": "Certiorari review of summary judgment on negligence-related claims."
+    },
+    "d62304f00a9e7f9d5310b7e17af85d": {
+      "source_id": "US-CO:commencement:4aabeaf1f886",
+      "authority_type": "court_rule",
+      "citation": "Colo. R. Civ. P. 3(a)",
+      "text": "(a) How Commenced. A civil action is commenced (1) by filing a complaint with the court, or (2) by service of a summons and complaint. If the action is commenced by the service of a summons and complaint, the complaint must be filed within 14 days after service. If the complaint is not filed within 14 days, the service of summons shall be deemed to be ineffective and void without notice. In such case the court may, in its discretion, tax a reasonable sum in favor of the defendant to compensate the defendant for expense and inconvenience, including attorney’s fees, to be paid by the plaintiff or his attorney. The 14 day filing requirement may be expressly waived by a defendant and shall be deemed waived upon the filing of a responsive pleading or motion to the complaint without reserving the issue.",
+      "text_sha256": "f55ca8a5f93420722b3c33d495052a07f4fae5cc851a91224448f130a099b773",
+      "publisher_sha256": "07a0129954b015ff26ed4774e5979408d05631a78fff9967ee0a56f5622347e7",
+      "retrieved_at": "2026-11-18T20:46:19.362728+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2023 Colorado Rules of Civil Procedure",
+      "court": "Colorado District Court"
+    },
+    "307917646f6a8e9d6bb10adf4d34a4": {
+      "source_id": "US-CO:pi_limitations:6ff9716e9549",
+      "authority_type": "statute",
+      "citation": "Colo. Rev. Stat. § 13-80-102(1)(a)",
+      "text": "(1) The following civil actions, regardless of the theory upon which suit is brought, or against whom suit is brought, must be commenced within two years after the cause of action accrues, and not thereafter: (a) Tort actions, including but not limited to actions for negligence, trespass, malicious abuse of process, malicious prosecution, outrageous conduct, interference with relationships, and tortious breach of contract; except that this paragraph (a) does not apply to any tort action arising out of the use or operation of a motor vehicle as set forth in section 13-80-101 (1)(n);",
+      "text_sha256": "ea7db28749813b15cd559f1edbedefaef841a441ede80161504c6ef91c1154a5",
+      "publisher_sha256": "1e6004c382b54d4e5741e57a172df232c2639a299451c5ed5f793831ab7981aa",
+      "retrieved_at": "2026-11-20T15:34:31.983334+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Colorado Revised Statutes 2024 unofficial printout"
+    },
+    "bdb78cc24cce4c2d66237b13b42993": {
+      "source_id": "US-CO:consumerLaw:68a7f3a4337c",
+      "authority_type": "statute",
+      "citation": "Colo. Rev. Stat. § 6-1-105(1)(a)–(e)",
+      "text": "(1) A person engages in a deceptive trade practice when, in the course of the person's business, vocation, or occupation, the person: (a) Either knowingly or recklessly passes off goods, services, or property as those of another; (b) Either knowingly or recklessly makes a false representation as to the source, sponsorship, approval, or certification of goods, services, or property; (c) Either knowingly or recklessly makes a false representation as to affiliation, connection, or association with or certification by another; (d) Uses deceptive representations or designations of geographic origin in connection with goods or services; (e) Either knowingly or recklessly makes a false representation as to the characteristics, ingredients, uses, benefits, alterations, or quantities of goods, food, services, or property or a false representation as to the sponsorship, approval, status, affiliation, or connection of a person therewith;",
+      "text_sha256": "76c01f82cf2be7d236d6bead0298cdc98f554d65a1c207d67e6a169aca045a8d",
+      "publisher_sha256": "560ff6d64b5afdf2a3bc5ac917a392269d16270a029b252ff8f7957deb38b423",
+      "retrieved_at": "2026-11-20T16:20:53.900546+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Colorado Revised Statutes 2024 unofficial printout"
+    },
+    "f616d88b78b0a390e5616c5065131c": {
+      "source_id": "US-CO:debtLaw:3220fede0a65",
+      "authority_type": "statute",
+      "citation": "Colo. Rev. Stat. § 5-16-106 (2023)",
+      "text": "(1) A debt collector or collection agency shall not engage in any conduct the natural consequence of which is to harass, oppress, or abuse any person in connection with the collection of a debt, including, but not limited to, the following conduct: (a) The use or threat of use of violence or other criminal means to harm the physical person, reputation, or property of any person; (b) The use of obscene or profane language or language the natural consequence of which is to abuse the hearer or reader; (c) The publication of a list of consumers who allegedly refuse to pay debts, except to a consumer reporting agency or to persons meeting the requirements of 15 U.S.C. sec. 1681b (a)(3) and section 5-18-104 (1)(c); (d) The advertisement for sale of any debt to coerce payment of the debt or agreeing to do so for the purpose of solicitation of claims; (e) Causing a telephone to ring or engaging any person in telephone conversation repeatedly or continuously with intent to annoy, abuse, or harass any person at the called number; (f) Except as provided in section 5-16-104, the placement of telephone calls without meaningful disclosure of the caller's identity within the first sixty seconds after the other party to the call is identified as the debtor.",
+      "text_sha256": "c478f7520e639a2336710bb33b9a97652700a671d5b4e93d08e5cb93d1a32bfd",
+      "publisher_sha256": "16837b1c7dfa704a12935c1bd403e0a3242c20ab69f513ca3f0b094bf849734e",
+      "retrieved_at": "2026-11-20T17:26:27.643132+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Colorado Revised Statutes 2023 uncertified printout"
+    },
+    "64a2fe4a157324229421c46abdec90": {
+      "source_id": "US-CO:wageLaw:a4414922fb5e",
+      "authority_type": "statute",
+      "citation": "Colo. Rev. Stat. § 8-4-109(1)(a)–(b) (2024)",
+      "text": "(1) (a) When an interruption in the employer-employee relationship by volition of the employer occurs, the wages or compensation for labor or service earned, vested, determinable, and unpaid at the time of such discharge is due and payable immediately. If at such time the employer's accounting unit, responsible for the drawing of payroll checks, is not regularly scheduled to be operational, then the wages due the separated employee shall be made available to the employee no later than six hours after the start of such employer's accounting unit's next regular workday; except that, if the accounting unit is located off the work site, the employer shall deliver the check for wages due the separated employee no later than twenty-four hours after the start of such employer's accounting unit's next regular workday to one of the following locations selected by the employer: (I) The work site; (II) The employer's local office; or (III) The employee's last-known mailing address. (b) When an employee quits or resigns such employee's employment, the wages or compensation shall become due and payable upon the next regular payday. When a separation of employment occurs, the employer shall make the separated employee's check for wages due available at one of the following locations selected by the employer: (I) The work site; (II) The employer's local office; or (III) The employee's last-known mailing address. (c) If an employer has made the employee's wages or compensation available at the work site or at the employer's local office under paragraph (a) or (b) of this subsection (1), and the employee has not received the wages or compensation within sixty days after the wages or compensation were due, the employer shall mail the employee's check for wages or compensation due to the employee's last-known mailing address.",
+      "text_sha256": "5ae621a0c6dfce2c045316abb2a5f8e9fbc93da6aae47fbe6546933240d387a2",
+      "publisher_sha256": "89aa1dc1621cc1a0ac1a25a1c0d3c4df30e7064f35d17b7559da498606af9f04",
+      "retrieved_at": "2026-11-20T17:37:35.427630+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2024 Colorado Revised Statutes uncertified printout"
+    },
+    "e81abc20e73226d9e3414608f201dc": {
+      "source_id": "US-CO:deposit:b95a5ef4f22f",
+      "authority_type": "statute",
+      "citation": "Colo. H.B. 25-1249, § 3 (Colo. Rev. Stat. § 38-12-103(1)(a))",
+      "text": "(1) (a) A landlord shall, within thirty days after the termination of a lease or surrender of a premises, whichever occurs last, return to the tenant the full security deposit deposited with the landlord by the tenant, unless the lease agreement specifies a longer period of time, but not to exceed sixty days. A landlord shall not retain the security deposit to cover normal wear and tear or for any damage or defective condition that preexisted the tenancy. If a tenant terminates the lease pursuant to section 38-12-402 (2)(a) and provides the documentation required pursuant to section 38-12-402 (2)(a.5), the tenant is not liable for damage to the dwelling unit caused by the responsible party or during the course of an incident of unlawful sexual behavior, stalking, domestic violence, or domestic abuse, and any amount of money that the landlord retains from the security deposit must comply with section 38-12-402 (2)(b). In the event that actual cause exists for retaining any portion of the security deposit, the landlord shall provide the tenant with a written statement listing the exact reasons for the retention of any portion of the security deposit. When the landlord delivers the statement, the landlord shall also deliver the difference between any sum deposited and the amount retained, along with any relevant documentation required by subsection (8) of this section. A landlord is deemed to have complied with this requirement by sending the statement, any required payment, and any required documentation to the last-known address of the tenant or to any email address for the tenant that the landlord has actual notice of by sending any required payment to the tenant in accordance with subsection (10) of this section.",
+      "text_sha256": "ad1390c8b70e4cf82e2a01fc3056a0516d308c24e4f96463e828ae9e642cf6cb",
+      "publisher_sha256": "b6a26aff3ae01fb4910f1e3b4726f351f8f73c49cf637e6232492cf2e49406a3",
+      "retrieved_at": "2026-11-20T18:21:55.148269+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Colorado signed H.B. 25-1249, § 3 (operative branch because H.B. 25-1168 became law)",
+      "effective_from": "2026-01-01"
+    },
+    "dafdaeaa171caffa1670c593fab876": {
+      "source_id": "US-CO:response:06aacd38e750",
+      "authority_type": "court_rule",
+      "citation": "Colo. R. Civ. P. 12(a)(1) (Rule Change 2024(08))",
+      "text": "(a) When Presented. (1) A defendant shall file his answer or other response within 21 days after the service of the summons and complaint, except as otherwise provided by rule or statute. The filing of a motion permitted under this Rule alters these periods of time, as follows: (A) if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleadings shall be filed within 14 days after notice of the court's action; (B) if the court grants a motion for a more definite statement, or for a statement in separate counts or defenses, the responsive pleadings shall be filed within 14 days after the service of the more definite statement or amended pleading.",
+      "text_sha256": "32913775968c98a7f5e5095ad69541ad9dd307be23e273198983f80eebcc0ff6",
+      "publisher_sha256": "54604116264f7d15be39a099500d2d3b2e76adda1bc3632039081493e94701b5",
+      "retrieved_at": "2026-11-20T18:40:42.159461+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Colorado Supreme Court Rule Change 2024(08), adopted and effective May 2, 2024",
+      "court": "Colorado courts applying the ordinary civil rules",
+      "effective_from": "2024-05-02"
+    },
+    "6d514d17bbb3cd4d1294ab78de7832": {
+      "source_id": "US-CO:small_claims:473e3e6d3a6f",
+      "authority_type": "statute",
+      "citation": "Colo. Rev. Stat. § 13-6-403(1)–(2) (2026 edition, small-claims jurisdiction)",
+      "text": "(1) (a) The small claims court has concurrent original jurisdiction with the county and district courts in all civil actions in which the debt, damage, or value of the personal property claimed by either the plaintiff or the defendant, exclusive of interest and costs, does not exceed seven thousand five hundred dollars, including such civil penalties as may be provided by law. By way of further example, and not limitation, the small claims court has jurisdiction to hear and determine actions in tort and assess damages in tort actions not to exceed seven thousand five hundred dollars. (b) The small claims court division also has concurrent original jurisdiction with the county and district courts in actions where a party seeks: (I) To enforce rights and responsibilities arising under the declaration, bylaws, covenants, or other governing documents of a unit owners' association, as defined in section 38-33.3-103 (3), in relation to disputes arising from assessments, fines, or fees owed to the unit owners' association and for which the amount at issue does not exceed seven thousand five hundred dollars, exclusive of interest and costs. (II) To enforce a restrictive covenant on residential property and the amount required to comply with the covenant does not exceed seven thousand five hundred dollars, exclusive of interest and costs; (III) Replevin if the value of the property sought does not exceed seven thousand five hundred dollars; and (IV) To enforce a contract by specific performance or to disaffirm, avoid, or rescind a contract and the amount at issue does not exceed seven thousand five hundred dollars. (2) The small claims court has only that jurisdiction specifically conferred upon it by law, as provided in subsection (1) of this section. In particular, it does not have jurisdiction over the following matters: (a) Those matters excluded from county court jurisdiction under section 13-6-105 (1); (b) Actions involving claims of defamation by libel or slander; (c) Actions of forcible entry, forcible detainer, or unlawful detainer; (d) and (e) (Deleted by amendment, L. 2001, p. 1512, § 2, effective September 1, 2001.) (f) Actions brought or defended on behalf of a class; (g) Actions requesting or involving prejudgment remedies; (h) Actions involving injunctive relief, except as required to: (I) Enforce rights or responsibilities arising under the declaration, bylaws, covenants, or other governing documents of a unit owners' association, as defined in section 38-33.3-103 (3), and including actions seeking declaratory relief; (II) Enforce restrictive covenants on residential property; (III) Enforce the provisions of section 6-1-702.5; (IV) Accomplish replevin; and (V) Enter judgments in actions where a party seeks to enforce a contract by specific performance or to disaffirm, avoid, or rescind a contract; (i) Traffic violations and other criminal matters; or (j) Awards of body executions.",
+      "text_sha256": "9306b385a8d09bad08455f645864e9f398b93d775d35e803af34d22a91da8cbc",
+      "publisher_sha256": "16a31770d5018a405ed16e685c94adf71ddd74e6a50156a0919466125dd6c8a5",
+      "retrieved_at": "2026-11-20T22:36:55.263428+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Colorado Revised Statutes 2026 edition, Title 13"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_50",
+    "source_id": "US-CO:fault:3f3dffa88b1a",
+    "passage_selector": "addf4e2a966b9f009fb48577879d68",
+    "currentness": "historical",
+    "qualification": "The opinion quotes the threshold and proportional reduction in Colo. Rev. Stat. § 13-21-111(1)."
+  }
+}

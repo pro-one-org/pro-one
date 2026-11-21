@@ -153,6 +153,48 @@ class ProceduralIntelligenceTests(unittest.TestCase):
         self.assertEqual("invalid_stage", result["status"])
         self.assertNotIn("requirements", result)
 
+    def test_national_response_authority_is_a_scoped_reference(self):
+        service = self.service()
+        message = "I received a summons and complaint in Alaska."
+        result = service.respond(ProceduralRequest(message=message))
+        self.assertEqual("outside_bounded_coverage", result["status"])
+        self.assertFalse(result["external_action_allowed"])
+        reference, = result["reference_authorities"]
+        self.assertEqual("Alaska R. Civ. P. 12(a)", reference["citation"])
+        self.assertEqual("Alaska Superior Court", reference["court"])
+        self.assertEqual("unresolved", reference["currentness"])
+        self.assertNotIn("due_date", result)
+        other = service.respond(ProceduralRequest(message=message, jurisdiction="US-TX"))
+        self.assertNotIn("reference_authorities", other)
+        excluded = service.respond(ProceduralRequest(message=message, authority_type="statute"))
+        self.assertEqual([], excluded["reference_authorities"])
+
+    def test_new_york_small_claims_reference_identifies_the_city_court(self):
+        result = self.service().respond(ProceduralRequest(message="What are the small claims rules in New York?"))
+        self.assertEqual("outside_bounded_coverage", result["status"])
+        reference, = result["reference_authorities"]
+        self.assertEqual("Civil Court of the City of New York", reference["court"])
+        self.assertEqual("unresolved", reference["currentness"])
+        self.assertFalse(result["external_action_allowed"])
+
+    def test_wisconsin_filing_topics_return_dated_references_only(self):
+        service = self.service()
+        for message, count, citation in (
+                ("What are the filing fees in Wisconsin Circuit Court?", 1, "Wis. Stat. § 814.61(1)(a)"),
+                ("What are the e-filing rules in Wisconsin Circuit Court?", 6, "Wis. Stat. § 801.18(3)(b)")):
+            with self.subTest(message=message):
+                result = service.respond(ProceduralRequest(message=message))
+                self.assertEqual("outside_bounded_coverage", result["status"])
+                self.assertFalse(result["external_action_allowed"])
+                self.assertNotIn("choice_token", result)
+                references = result["reference_authorities"]
+                self.assertEqual(count, len(references))
+                self.assertIn(citation, {row["citation"] for row in references})
+                for row in references:
+                    self.assertEqual("Wisconsin Circuit Court", row["court"])
+                    self.assertEqual("current_as_of", row["currentness"])
+                    self.assertEqual("2026-11-04", row["current_as_of"])
+
     def test_prerequisite_cannot_be_skipped_by_requested_stage(self):
         result = self.choose(FALL, "va_litigation", stage="service", forum="va_circuit", facts=FORUM_FACTS)
         self.assertEqual("prerequisite_missing", result["status"])

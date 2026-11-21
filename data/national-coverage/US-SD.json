@@ -1,0 +1,665 @@
+{
+  "jurisdiction": "US-SD",
+  "version": "1",
+  "sources": {
+    "US-SD:statutes:65d4e5e95677": {
+      "category": "statutes",
+      "title": "South Dakota Codified Laws",
+      "url": "http://sdlegislature.gov/statutes/Codified_Laws/",
+      "directory": "codes",
+      "locator": "South Dakota"
+    },
+    "US-SD:constitution:2b3c30b9577f": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://sdlegislature.gov/Statutes/Constitution/",
+      "directory": "codes",
+      "locator": "South Dakota"
+    },
+    "US-SD:legislature:d9e23dbb0852": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://sdlegislature.gov/",
+      "directory": "codes",
+      "locator": "South Dakota"
+    },
+    "US-SD:labor_agency:b85abbc5b5c9": {
+      "category": "labor_agency",
+      "title": "www.dlr.sd.gov",
+      "url": "http://www.dlr.sd.gov/",
+      "directory": "labor",
+      "locator": "South Dakota"
+    },
+    "US-SD:commercial_code:3f937343653e": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://legis.state.sd.us/statutes/DisplayStatute.aspx?Type=Statute&Statute=57A",
+      "directory": "ucc",
+      "locator": "South Dakota"
+    },
+    "US-SD:civil_rules:e86731ab9322": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "http://legis.state.sd.us/statutes/DisplayStatute.aspx?Type=Statute&Statute=15",
+      "directory": "procedure",
+      "locator": "South Dakota"
+    },
+    "US-SD:consumer_agency:8a4318ef1122": {
+      "category": "consumer_agency",
+      "title": "South Dakota (SD)",
+      "url": "https://consumer.sd.gov/",
+      "directory": "consumer",
+      "locator": "South Dakota (SD)"
+    },
+    "US-SD:judiciary:c73f9db7c09b": {
+      "category": "judiciary",
+      "title": "Judicial System",
+      "url": "http://ujs.sd.gov/",
+      "directory": "doj-SD",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-SD:judiciary:7e1cbaac52a6": {
+      "category": "judiciary",
+      "title": "Statewide Case Record Search",
+      "url": "https://ujslawhelp.sd.gov/recordsearch.aspx",
+      "directory": "doj-SD",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-SD:court_directory:57dbb4213de0": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://ujs.sd.gov/Supreme_Court/default.aspx",
+      "directory": "doj-SD",
+      "locator": "Supreme Court"
+    },
+    "US-SD:court_directory:ae060a707b5b": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "http://ujs.sd.gov/Circuit_Court/default.aspx",
+      "directory": "doj-SD",
+      "locator": "Circuit Courts"
+    },
+    "US-SD:court_directory:7f4300e72da3": {
+      "category": "court_directory",
+      "title": "Small Claims Court",
+      "url": "http://ujs.sd.gov/Small_Claims/",
+      "directory": "doj-SD",
+      "locator": "Small Claims Court"
+    },
+    "US-SD:forms:f6a941757528": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "https://ujslawhelp.sd.gov/onlineforms.aspx",
+      "directory": "doj-SD",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-SD:statutes:cf78308af09d": {
+      "category": "statutes",
+      "title": "Codified Laws",
+      "url": "http://sdlegislature.gov/Statutes/Codified_Laws/default.aspx",
+      "directory": "doj-SD",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-SD:constitution:c11c7895a25f": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://sdlegislature.gov/Statutes/Constitution/default.aspx",
+      "directory": "doj-SD",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-SD:statutes:44b94622970e": {
+      "category": "statutes",
+      "title": "Session Laws",
+      "url": "http://sdlegislature.gov/Statutes/Session_Laws/Archive.aspx?Session=2017",
+      "directory": "doj-SD",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-SD:pi_limitations:6a5ee5e2f932": {
+      "category": "pi_limitations",
+      "title": "SDCL § 15-2-14(3)",
+      "url": "https://sdlegislature.gov/Statutes/15-2-14",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://sdlegislature.gov/Statutes/15-2-14",
+        "retrieved_at": "2026-11-17T19:34:01.414630+00:00",
+        "http_status": "200",
+        "sha256": "603d94196c4231431bfae66a818425b9dc03fcb690187f6e7bf7f441a354195c",
+        "health": "manual_review_required"
+      }
+    },
+    "US-SD:written_contract_limitations:17c2d3348b16": {
+      "category": "written_contract_limitations",
+      "title": "SDCL § 15-2-13(1)",
+      "url": "https://sdlegislature.gov/Statutes/15-2-13",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://sdlegislature.gov/Statutes/15-2-13",
+        "retrieved_at": "2026-11-17T19:34:01.336885+00:00",
+        "http_status": "200",
+        "sha256": "603d94196c4231431bfae66a818425b9dc03fcb690187f6e7bf7f441a354195c",
+        "health": "manual_review_required"
+      }
+    },
+    "US-SD:oral_contract_limitations:17c2d3348b16": {
+      "category": "oral_contract_limitations",
+      "title": "SDCL § 15-2-13(1)",
+      "url": "https://sdlegislature.gov/Statutes/15-2-13",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://sdlegislature.gov/Statutes/15-2-13",
+        "retrieved_at": "2026-11-17T19:34:01.336885+00:00",
+        "http_status": "200",
+        "sha256": "603d94196c4231431bfae66a818425b9dc03fcb690187f6e7bf7f441a354195c",
+        "health": "manual_review_required"
+      }
+    },
+    "US-SD:small_claims:73541579a44b": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://ujs.sd.gov/self-help/pro-se-forms/small-claims-forms/",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://ujs.sd.gov/self-help/pro-se-forms/small-claims-forms/",
+        "retrieved_at": "2026-11-17T19:42:33.165669+00:00",
+        "http_status": "200",
+        "sha256": "85e49ce260a965b770553cb3d8108abe2bfa15a55735755fac79288bf1a7ebf2",
+        "health": "manual_review_required"
+      }
+    },
+    "US-SD:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 29"
+    },
+    "US-SD:small_claim_form:c2f5404c9757": {
+      "category": "small_claim_form",
+      "title": "UJS-008 Plaintiff's Statement of Claim",
+      "url": "https://ujs.sd.gov/files/ujs-008-plaintiffs-statement-of-claim/",
+      "directory": null,
+      "locator": "UJS-008"
+    },
+    "US-SD:fault:bd75836f8936": {
+      "category": "fault",
+      "title": "SDCL § 20-9-2",
+      "url": "https://sdlegislature.gov/api/Statutes/20-9-2.html",
+      "directory": null,
+      "locator": "SDCL § 20-9-2",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:35.759839+00:00",
+        "sha256": "5f0a68ddcfc8698c508e97cd689838ba45e831a28924a7d5f1f2f3548c0d209c"
+      }
+    },
+    "US-SD:consumerLaw:88b675058a95": {
+      "title": "S.D. Codified Laws ch. 37-24",
+      "category": "consumerLaw",
+      "url": "https://sdlegislature.gov/api/Statutes/37-24.html",
+      "directory": "consumer_statutes_index",
+      "locator": "S.D. Codified Laws ch. 37-24",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-SD:consumerLaw:3b1c48ede3cc": {
+      "category": "consumerLaw",
+      "title": "SDCL § 37-24-6(1)",
+      "url": "https://sdlegislature.gov/api/Statutes/37-24-6.html",
+      "locator": "SDCL § 37-24-6(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:58.195016+00:00",
+        "sha256": "248d548adff9bf5d7d4fa655064387bc289d1b016cb568b30e2f19419cff744b"
+      }
+    },
+    "US-SD:contract_formation:b2ded3d83c29": {
+      "category": "contract_formation",
+      "title": "SDCL § 57A-2-204",
+      "url": "https://sdlegislature.gov/api/Statutes/57A-2-204.html",
+      "locator": "SDCL § 57A-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:39.153130+00:00",
+        "sha256": "9ca05fee83959506eed195f86b960aa8b0062d3f6393f8bce400b2291d6f6551"
+      }
+    },
+    "US-SD:wageLaw:26e6a20f943c": {
+      "category": "wageLaw",
+      "title": "SDCL § 60-11-9",
+      "url": "https://sdlegislature.gov/api/Statutes/60-11-9.html",
+      "locator": "SDCL § 60-11-9",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T19:42:29.354013+00:00",
+        "sha256": "47424fdd70965aa3c427a99b3611e02b9acf7adda330ca4cea6d4374c3f7a197"
+      }
+    },
+    "US-SD:commencement:c5f84d25996a": {
+      "category": "commencement",
+      "title": "SDCL § 15-6-3",
+      "url": "https://sdlegislature.gov/api/Statutes/15-6-3.html",
+      "locator": "SDCL § 15-6-3",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:02:16.517447+00:00",
+        "sha256": "0da20a996e7fbd908d1e0cd0b0a50669bf2f8f8a733d81ee2be36bad2f34eec2"
+      }
+    },
+    "US-SD:commencement:a5bb16df1783": {
+      "category": "commencement",
+      "title": "SDCL § 15-2-30",
+      "url": "https://sdlegislature.gov/api/Statutes/15-2-30.html",
+      "locator": "SDCL § 15-2-30",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:02:16.517447+00:00",
+        "sha256": "e238dea566a03074adb3dab751d82864ecb220b43c633bc4f9a067ade6d2467f"
+      }
+    },
+    "US-SD:pi_limitations:2775070735b7": {
+      "category": "pi_limitations",
+      "title": "SDCL § 15-2-14",
+      "url": "https://sdlegislature.gov/api/Statutes/15-2-14.html",
+      "locator": "SDCL § 15-2-14",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:23.516198+00:00",
+        "sha256": "f56477102ef1f3dcb56023feec50f901882759daac13768d8792e25ef8617a81"
+      }
+    },
+    "US-SD:general_contract_limitations:b37f0098faf2": {
+      "category": "general_contract_limitations",
+      "title": "SDCL § 15-2-13(1)",
+      "url": "https://sdlegislature.gov/api/Statutes/15-2-13.html",
+      "locator": "SDCL § 15-2-13(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:35:42.819984+00:00",
+        "sha256": "31522165f59292d57ee6bb231e8f2579d38c23c3608ad9794231507f3cdbe9a2"
+      }
+    },
+    "US-SD:response:37f35efeee02": {
+      "category": "response",
+      "title": "SDCL § 15-6-12(a)",
+      "url": "https://sdlegislature.gov/api/Statutes/15-6-12(a).html",
+      "locator": "SDCL § 15-6-12(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:43:00.395175+00:00",
+        "sha256": "1ba10e3c3b739764550125119ccd1b08940563837abfd6905722f67ae6ff9420"
+      }
+    },
+    "US-SD:deposit:8801bec9048a": {
+      "category": "deposit",
+      "title": "S.D. Codified Laws § 43-32-24 (version incorporating 2026 S.D. Sess. Laws ch. 179)",
+      "url": "https://sdlegislature.gov/api/Statutes/43-32.html?all=true",
+      "locator": "S.D. Codified Laws § 43-32-24 (version incorporating 2026 S.D. Sess. Laws ch. 179)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:24:17.612218+00:00",
+        "sha256": "5bfb260f37ace0cc434cd9a9e6d442ce90957b981133e868dc10781f21b655be"
+      }
+    },
+    "US-SD:small_claims:f52690fd33ef": {
+      "category": "small_claims",
+      "title": "S.D. Codified Laws § 16-12C-13 (uncontested clerk-magistrate jurisdiction)",
+      "url": "https://sdlegislature.gov/api/Statutes/16-12C.html?all=true",
+      "locator": "S.D. Codified Laws § 16-12C-13 (uncontested clerk-magistrate jurisdiction)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:24:17.524122+00:00",
+        "sha256": "383ccd37b11fead6031f3015f96cfac366d10a89ffa466064a666e70676daf16"
+      }
+    },
+    "US-SD:debtLaw:8b877d4bdf81": {
+      "category": "debtLaw",
+      "title": "SDCL § 54-4-77",
+      "url": "https://sdlegislature.gov/api/Statutes/54-4.html?all=true",
+      "locator": "SDCL § 54-4-77",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:47:12.456875+00:00",
+        "sha256": "18c9b453df64d0009032b13c10bceaa77938b7fb6fc3da142704973020d067f9"
+      }
+    },
+    "US-SD:negligence_duty:33818645172b": {
+      "category": "negligence_duty",
+      "title": "SDCL § 20-9-1",
+      "url": "https://sdlegislature.gov/api/Statutes/20-9-1.html?all=true",
+      "locator": "SDCL § 20-9-1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:59:01.430186+00:00",
+        "sha256": "ea1a6a2e052b86d94abcfedd1004c49bb42f64273354c0c74d2c1ad22ee0e30a"
+      }
+    },
+    "US-SD:negligence_causation:accf9dcb94e8": {
+      "category": "negligence_causation",
+      "title": "SDCL § 20-9-1.1",
+      "url": "https://sdlegislature.gov/api/Statutes/20-9-1.html?all=true",
+      "locator": "SDCL § 20-9-1.1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:59:01.430186+00:00",
+        "sha256": "ea1a6a2e052b86d94abcfedd1004c49bb42f64273354c0c74d2c1ad22ee0e30a"
+      }
+    },
+    "US-SD:tort_damages:00a51b740b43": {
+      "category": "tort_damages",
+      "title": "SDCL § 21-3-1",
+      "url": "https://sdlegislature.gov/api/Statutes/21-3-1.html?all=true",
+      "locator": "SDCL § 21-3-1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:59:01.354712+00:00",
+        "sha256": "d8922e00fbe0e03df6a325d7a26f65f0ba7a37492298c438e27379145641f3d3"
+      }
+    },
+    "US-SD:negligence_elements:8cee02f06ac3": {
+      "category": "negligence_elements",
+      "title": "Stensland v. Harding County, 2015 S.D. 91, ¶ 11",
+      "url": "https://ujs.sd.gov/media/vw4dv1d0/27288.pdf",
+      "locator": "Stensland v. Harding County, 2015 S.D. 91, ¶ 11",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:32:46.179170+00:00",
+        "sha256": "9ba49418e2cfc714df40c91e43274f85338be82de069a2b25f2d0cffba87e917"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-SD:court:b5beae039c9b",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-SD:court_directory:57dbb4213de0"
+    },
+    {
+      "id": "US-SD:court:3f7fdb39198a",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-SD:court_directory:ae060a707b5b"
+    },
+    {
+      "id": "US-SD:court:fdbed6b9940a",
+      "name": "Small Claims Court",
+      "level": "trial_directory",
+      "source_id": "US-SD:court_directory:7f4300e72da3"
+    },
+    {
+      "id": "US-SD:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-SD:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-SD:court:44949d940273",
+      "name": "Magistrate",
+      "level": "limited_trial",
+      "source_id": "US-SD:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "SDCL § 15-2-14(3)",
+      "source_id": "US-SD:pi_limitations:6a5ee5e2f932",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "SDCL § 15-2-13(1)",
+      "source_id": "US-SD:written_contract_limitations:17c2d3348b16",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "SDCL § 15-2-13(1)",
+      "source_id": "US-SD:oral_contract_limitations:17c2d3348b16",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "S.D. Codified Laws § 21-16-1. Grounds for maintenance of action.; S.D. Codified Laws § 43-32-18. Termination of lease by landlord before end of agreed term--Use of premises by tenant contrary to agreement--Neglect of tenant to make repairs.; S.D. Codified Laws § 43-32-36. Eviction for false claims of disability requiring service animal or fraudulent documentation—Damages.",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "S.D. Codified Laws ch. 37-24",
+      "source_id": "US-SD:consumerLaw:88b675058a95",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "forms": {
+    "US-SD:form:UJS-008": {
+      "title": "UJS-008 Plaintiff's Statement of Claim",
+      "publisher_identifier": "UJS-008",
+      "source_id": "US-SD:small_claim_form:c2f5404c9757",
+      "index_source_id": "US-SD:small_claims:73541579a44b",
+      "index_sha256": "85e49ce260a965b770553cb3d8108abe2bfa15a55735755fac79288bf1a7ebf2",
+      "court_scope": "small_claims",
+      "mandatory": "review_required",
+      "revision": null,
+      "last_observed": "2026-11-17T19:42:33.165669+00:00",
+      "automated_completion": "disabled"
+    }
+  },
+  "passages": {
+    "42ae0fd26869204e6e64376d078846": {
+      "citation": "SDCL § 20-9-2",
+      "source_id": "US-SD:fault:bd75836f8936",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "In all actions brought to recover damages for injuries to a person or to that person's property caused by the negligence of another, the fact that the plaintiff may have been guilty of contributory negligence does not bar a recovery when the contributory negligence of the plaintiff was slight in comparison with the negligence of the defendant, but in such case, the damages shall be reduced in proportion to the amount of plaintiff's contributory negligence. Notwithstanding Woods vs. City of Crooks, 559 N.W.2d 558 (SD 1997), the determination of whether the contributory negligence of the plaintiff was slight in comparison with the negligence of the defendant shall be made without disclosing any determination of percentage of plaintiff's fault by special interrogatory.",
+      "text_sha256": "7bebdbcd9be8bdb860f08b47f6d4a2be5bc1a8c793982b3f2af28e9e25193bdc",
+      "publisher_sha256": "5f0a68ddcfc8698c508e97cd689838ba45e831a28924a7d5f1f2f3548c0d209c",
+      "retrieved_at": "2026-11-17T20:50:35.759839+00:00",
+      "currentness": "unresolved"
+    },
+    "23a580a8751dabe367650c11307dc6": {
+      "source_id": "US-SD:consumerLaw:3b1c48ede3cc",
+      "authority_type": "statute",
+      "citation": "SDCL § 37-24-6(1)",
+      "text": "It is a deceptive act or practice for any person to: (1) Knowingly act, use, or employ any deceptive act or practice, fraud, false pretense, false promises, or misrepresentation or to conceal, suppress, or omit any material fact in connection with the sale or advertisement of any merchandise or the solicitation of contributions for charitable purposes, regardless of whether any person has in fact been misled, deceived, or damaged thereby;",
+      "text_sha256": "f1258b52f1677e311412ebc5e2a0afa2ce2a1e57ff793dd8abee3e55c9e67a7b",
+      "publisher_sha256": "248d548adff9bf5d7d4fa655064387bc289d1b016cb568b30e2f19419cff744b",
+      "retrieved_at": "2026-11-17T21:03:58.195016+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "e434b967c7585d000423589a02c2b8": {
+      "source_id": "US-SD:contract_formation:b2ded3d83c29",
+      "authority_type": "statute",
+      "citation": "SDCL § 57A-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "9ca05fee83959506eed195f86b960aa8b0062d3f6393f8bce400b2291d6f6551",
+      "retrieved_at": "2026-11-18T15:14:39.153130+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "16fd675035cb377eabb1395e5e6993": {
+      "source_id": "US-SD:wageLaw:26e6a20f943c",
+      "authority_type": "statute",
+      "citation": "SDCL § 60-11-9",
+      "text": "Every employer shall pay all wages due to employees at least once each calendar month unless otherwise provided by law, or on regular agreed pay days designated in advance by the employer, in lawful money of the United States. An employer may pay wages by check, cash, or direct deposit to the employee's bank account, unless an employer and employee agree to another form of payment.",
+      "text_sha256": "451e67da20403cfd04044723d25380e78edc432499c195cc4b07f2cdb314c84d",
+      "publisher_sha256": "47424fdd70965aa3c427a99b3611e02b9acf7adda330ca4cea6d4374c3f7a197",
+      "retrieved_at": "2026-11-17T19:42:29.354013+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "270266238e5d9c2966273016540b61": {
+      "source_id": "US-SD:commencement:c5f84d25996a",
+      "authority_type": "court_rule",
+      "citation": "SDCL § 15-6-3",
+      "text": "A civil action is commenced as provided in §§ 15-2-30 and 15-2-31.",
+      "text_sha256": "c094884193d043303f75921178017a650aa606b867b1deca0b9d1086d013da50",
+      "publisher_sha256": "0da20a996e7fbd908d1e0cd0b0a50669bf2f8f8a733d81ee2be36bad2f34eec2",
+      "retrieved_at": "2026-11-19T19:02:16.517447+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "South Dakota Circuit Court"
+    },
+    "8e7ec9f0392993fcdd4d2d9c830750": {
+      "source_id": "US-SD:commencement:a5bb16df1783",
+      "authority_type": "statute",
+      "citation": "SDCL § 15-2-30",
+      "text": "An action is commenced as to each defendant when the summons is served on him, or on a codefendant who is a joint contractor or otherwise united in interest with him.",
+      "text_sha256": "2fa000878e047a8a9ae0baf6eece622e2106f73b2433e70ca5c60df1f630500d",
+      "publisher_sha256": "e238dea566a03074adb3dab751d82864ecb220b43c633bc4f9a067ade6d2467f",
+      "retrieved_at": "2026-11-19T19:02:16.517447+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "b8a1372929e7e32252a90b639bff44": {
+      "source_id": "US-SD:pi_limitations:2775070735b7",
+      "authority_type": "statute",
+      "citation": "SDCL § 15-2-14",
+      "text": "Except where, in special cases, a different limitation is prescribed by statute, the following civil actions other than for the recovery of real property can be commenced only within three years after the cause of action shall have accrued: (1) An action against a sheriff, coroner, or constable upon a liability incurred by the doing of an act in his official capacity and in virtue of his office, or by the omission of an official duty, including the nonpayment of money collected upon an execution. But this subdivision shall not apply to an action for an escape; (2) An action upon a statute for a penalty or forfeiture where the action is given to the party aggrieved, or to such party and the state except where the statute imposing it prescribes a different limitation; (3) An action for personal injury.",
+      "text_sha256": "d51c987db53128e28eb3437faa10ae92ee01e54bee3390b87cdf03e817682d91",
+      "publisher_sha256": "f56477102ef1f3dcb56023feec50f901882759daac13768d8792e25ef8617a81",
+      "retrieved_at": "2026-11-19T19:31:23.516198+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "ab4ea4f2df4d96a468407548667f1e": {
+      "source_id": "US-SD:general_contract_limitations:b37f0098faf2",
+      "authority_type": "statute",
+      "citation": "SDCL § 15-2-13(1)",
+      "text": "Except where, in special cases, a different limitation is prescribed by statute, the following civil actions other than for the recovery of real property can be commenced only within six years after the cause of action shall have accrued: (1) An action upon a contract, obligation, or liability, express or implied, excepting those mentioned in §§ 15-2-6 to 15-2-8, inclusive, and subdivisions 15-2-15(3) and (4);",
+      "text_sha256": "d1604b9165644a11369581e6744e312297b8c4240a4b5334b2a80ba18e10865c",
+      "publisher_sha256": "31522165f59292d57ee6bb231e8f2579d38c23c3608ad9794231507f3cdbe9a2",
+      "retrieved_at": "2026-11-19T19:35:42.819984+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "b3dd53ac2e86b6c0966b9eec8c8b2a": {
+      "source_id": "US-SD:response:37f35efeee02",
+      "authority_type": "court_rule",
+      "citation": "SDCL § 15-6-12(a)",
+      "text": "A defendant shall serve the answer within thirty days after the service of the complaint upon defendant, except when otherwise provided by statute or rule. A party served with a pleading stating a cross-claim shall serve an answer within twenty days after the service. The plaintiff shall serve a reply to a counterclaim in the answer within twenty days after service of the answer or, if a reply is ordered by the court, within twenty days after service of the order, unless the order otherwise directs. The service of a motion permitted under § 15-6-12 alters these periods of time as follows, unless a different time is fixed by order of the court: (1) If the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within ten days after notice of the court's action; (2) If the court grants a motion for a more definite statement, the responsive pleading shall be served within ten days after the service of the more definite statement; (3) If an appeal is taken from an order sustaining a motion to dismiss and such order is thereafter reversed, the responsive pleading shall be served within twenty days after the judgment or order of reversal is filed in the trial court.",
+      "text_sha256": "35d7bd1f41254fd7e91c0306fb1f0e5039818d4bf28e9f4769f9f39c1f40dce1",
+      "publisher_sha256": "1ba10e3c3b739764550125119ccd1b08940563837abfd6905722f67ae6ff9420",
+      "retrieved_at": "2026-11-19T19:43:00.395175+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "South Dakota Circuit Court"
+    },
+    "bd83cce09cf079730d911f9b2618cf": {
+      "source_id": "US-SD:deposit:8801bec9048a",
+      "authority_type": "statute",
+      "citation": "S.D. Codified Laws § 43-32-24 (version incorporating 2026 S.D. Sess. Laws ch. 179)",
+      "text": "Every lessor of residential premises shall, within twenty-one days after the termination of the tenancy and receipt of the tenant's mailing address or delivery instructions, return the security deposit described in § 43-32-6.1 to the tenant or furnish to the tenant a written statement showing the specific reason for withholding the deposit, or any portion of the deposit. The lessor may withhold from the deposit only the amounts reasonably necessary to: (1) Remedy tenant defaults in the payment of: (a) Rent; and(b) Other funds due to the landlord pursuant to an agreement; and(2) Restore the premises to their condition at the commencement of the tenancy, ordinary wear and tear excepted. Within forty-five days after termination of the tenancy, upon request of the lessee, the lessor must provide the lessee with an itemized accounting of any deposit withheld. Any lessor of residential premises who fails to comply with this section forfeits all rights to withhold any portion of the deposit. The bad faith retention of a deposit, or any portion of a deposit, by a lessor of residential premises, in violation of this section, or the bad faith failure to provide the written statement or itemized accounting, as required by this section, subjects the lessor to punitive damages not to exceed two hundred dollars.",
+      "text_sha256": "1667b3656974c629ff1597aa72ea4257ac2d463b8e2f627640a8f77f0457382e",
+      "publisher_sha256": "5bfb260f37ace0cc434cd9a9e6d442ce90957b981133e868dc10781f21b655be",
+      "retrieved_at": "2026-11-20T18:24:17.612218+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "80b7907dfac4f8300f5dfcbdb4d90a": {
+      "source_id": "US-SD:small_claims:f52690fd33ef",
+      "authority_type": "statute",
+      "citation": "S.D. Codified Laws § 16-12C-13 (uncontested clerk-magistrate jurisdiction)",
+      "text": "A magistrate court with a clerk magistrate presiding has concurrent jurisdiction with the circuit courts, in noncontested civil actions or noncontested small claims proceedings where the amount of money or damage does not exceed twelve thousand dollars, to take the necessary evidence and to enter a judgment.",
+      "text_sha256": "0da3dda6e720ed11373bfc517fb7a50f4befef3a1f024d389b00a9dc1a70af52",
+      "publisher_sha256": "383ccd37b11fead6031f3015f96cfac366d10a89ffa466064a666e70676daf16",
+      "retrieved_at": "2026-11-20T18:24:17.524122+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "091cfa3b6a26cbfb8f6ecda75fc3de": {
+      "source_id": "US-SD:debtLaw:8b877d4bdf81",
+      "authority_type": "statute",
+      "citation": "SDCL § 54-4-77",
+      "text": "No person employed by a licensee to collect or attempt to collect any debt owed or due or asserted to be owed or due may: (1) Harass, oppress, or abuse a borrower by: (a) Using any threat of violence or harm; (b) Publishing a list of names of borrowers who refuse to pay their debts absent providing such information to credit reporting companies; (c) Using obscene or profane language; or (d) Repeatedly using the phone with the intent to annoy borrowers; (2) Use any false statement when attempting to collect a debt by falsely: (a) Claiming to be an attorney or government representative; (b) Claiming that the borrower has committed a crime; (c) Representing that the licensee operates or any person employed by the licensee works for a credit reporting company; (d) Representing the amount the borrower owes; (e) Representing the nature and character of any forms sent to the borrower in order to collect a debt; (f) Indicating that the borrower will be arrested if the debt isn't paid; (g) Using a company name; (h) Indicating that the licensee will seize, garnish, attach, or sell a borrower's property or wages unless the licensee is permitted by law to take the action and the licensee intends to do so; (i) Indicating that legal action will be taken against the borrower, if doing so would be illegal or if the licensee does not intend to take the action; (3) Give false credit information about the borrower to anyone, including a credit reporting company; (4) Attempt to collect any interest, fee, or other charge on top of the amount a borrower owes unless the contract that created the debt or state law allows the charge; (5) Deposit a post-dated check early; (6) Take or threaten to take the borrower's property unless it can be done legally; or (7) Cause misleading information to be transmitted to users of caller identification technologies or otherwise block or misrepresent the identity of the caller or entity as described in subdivision 37-24-6 (16).",
+      "text_sha256": "62151256b3dac5ce599ecee3b5079a25f3eda0cdb3e05f56f4be1e114640d3b4",
+      "publisher_sha256": "18c9b453df64d0009032b13c10bceaa77938b7fb6fc3da142704973020d067f9",
+      "retrieved_at": "2026-11-20T22:47:12.456875+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "d0b9068ff68cf2ded440dccb5a9be5": {
+      "source_id": "US-SD:negligence_duty:33818645172b",
+      "authority_type": "statute",
+      "citation": "SDCL § 20-9-1",
+      "text": "Every person is responsible for injury to the person, property, or rights of another caused by his willful acts or caused by his want of ordinary care or skill, subject in the latter cases to the defense of contributory negligence.",
+      "text_sha256": "1e4693d80e69843f639a3a8df3beef686cc9d591eddd661d7b743f7ed09812c1",
+      "publisher_sha256": "ea1a6a2e052b86d94abcfedd1004c49bb42f64273354c0c74d2c1ad22ee0e30a",
+      "retrieved_at": "2026-11-20T22:59:01.430186+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "4b8db764aabc6f484767ed256f54b8": {
+      "source_id": "US-SD:negligence_causation:accf9dcb94e8",
+      "authority_type": "statute",
+      "citation": "SDCL § 20-9-1.1",
+      "text": "The Legislature finds that in those actions founded upon an alleged want of ordinary care or skill the conduct of the responsible party must be shown to have been the proximate cause of the injury complained of. The Legislature also finds that the application of the so called loss of chance doctrine in such cases improperly alters or eliminates the requirement of proximate causation. Therefore, the rule in Jorgenson v. Vener, 2000 SD 87, 616 N.W. 2d 366 (2000) is hereby abrogated.",
+      "text_sha256": "300be743ec772f740ad05615cfb06ff037fb7b8597c431783b747eff310ef750",
+      "publisher_sha256": "ea1a6a2e052b86d94abcfedd1004c49bb42f64273354c0c74d2c1ad22ee0e30a",
+      "retrieved_at": "2026-11-20T22:59:01.430186+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "1bfea9d0a02f6d600ef29c3c5a274f": {
+      "source_id": "US-SD:tort_damages:00a51b740b43",
+      "authority_type": "statute",
+      "citation": "SDCL § 21-3-1",
+      "text": "For the breach of an obligation not arising from contract, the measure of damages, except where otherwise expressly provided by this code, is the amount which will compensate for all the detriment proximately caused thereby, whether it could have been anticipated or not.",
+      "text_sha256": "ce7233424873b85ec6dbf60f14c1480c059e7c6008453319a8d34697d9cd14cd",
+      "publisher_sha256": "d8922e00fbe0e03df6a325d7a26f65f0ba7a37492298c438e27379145641f3d3",
+      "retrieved_at": "2026-11-20T22:59:01.354712+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "f061b2f65f4d3e98ed42a85598eb61": {
+      "source_id": "US-SD:negligence_elements:8cee02f06ac3",
+      "authority_type": "opinion",
+      "citation": "Stensland v. Harding County, 2015 S.D. 91, ¶ 11",
+      "text": "The terms “negligence” and “liability” have been used loosely in these prior cases. “Negligence” can be used in at least two different ways. It may be referring to “the failure to exercise the standard of care that a reasonably prudent person would have exercised in a similar situation.” Negligence, Black’s Law Dictionary (10th ed. 2014). It may also refer to the “tort grounded in this failure, usually expressed in terms of the following elements: duty, breach of duty, causation, and damages.” Id. These prior statements should not be understood to mean that all of the elements of negligence have been met once negligence per se is established. “Negligence as a matter of law” or “Negligence per se” is not necessarily referring to the four elements constituting the tort of negligence.",
+      "text_sha256": "f292b569d0d0f80eb54bf7e88b5a4bb88f0d1f91f27b1e613ce82cd6c9d42f8e",
+      "publisher_sha256": "9ba49418e2cfc714df40c91e43274f85338be82de069a2b25f2d0cffba87e917",
+      "retrieved_at": "2026-11-21T03:32:46.179170+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court slip opinion of 2015-11-24",
+      "court": "Supreme Court of South Dakota",
+      "decision_date": "2015-11-24",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal after a negligence trial. The court distinguished negligence per se from proof of the full tort."
+    }
+  },
+  "fault_allocation": {
+    "regime": "other_state_specific",
+    "passage_selector": "42ae0fd26869204e6e64376d078846",
+    "source_id": "US-SD:fault:bd75836f8936",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

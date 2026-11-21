@@ -1,0 +1,515 @@
+{
+  "jurisdiction": "US-KY",
+  "version": "1",
+  "sources": {
+    "US-KY:statutes:99aacae0b0f4": {
+      "category": "statutes",
+      "title": "Revised Statutes",
+      "url": "https://legislature.ky.gov/Law/Statutes/Pages/default.aspx",
+      "directory": "doj-KY",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-KY:constitution:fa689ad6aaa0": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://apps.legislature.ky.gov/law/constitution",
+      "directory": "doj-KY",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-KY:legislature:bf8c4df05d1b": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "https://legislature.ky.gov/Pages/index.aspx",
+      "directory": "codes",
+      "locator": "Kentucky"
+    },
+    "US-KY:labor_agency:fe2720e7ce69": {
+      "category": "labor_agency",
+      "title": "elc.ky.gov",
+      "url": "https://elc.ky.gov/Pages/index.aspx",
+      "directory": "labor",
+      "locator": "Kentucky"
+    },
+    "US-KY:commercial_code:81db735be52a": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code- TITLE XXIX",
+      "url": "https://apps.legislature.ky.gov/law/statutes/index.aspx",
+      "directory": "ucc",
+      "locator": "Kentucky"
+    },
+    "US-KY:civil_rules:eb038ee8f3cf": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "https://govt.westlaw.com/kyrules/Browse/Home/Kentucky/KentuckyCourtRules/KentuckyStatutesCourtRules?guid=N2C3C8B00A79211DAAB1DC31F8EB14563&transitionType=CategoryPageItem&contextData=(sc.Default)",
+      "directory": "procedure",
+      "locator": "Kentucky"
+    },
+    "US-KY:consumer_agency:260893fb7bb9": {
+      "category": "consumer_agency",
+      "title": "Kentucky (KY)",
+      "url": "https://www.ag.ky.gov/about/Office-Divisions/OCP/Pages/default.aspx",
+      "directory": "consumer",
+      "locator": "Kentucky (KY)"
+    },
+    "US-KY:judiciary:459b40293a3b": {
+      "category": "judiciary",
+      "title": "Courts",
+      "url": "https://courts.ky.gov/courts/Pages/default.aspx",
+      "directory": "doj-KY",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-KY:court_directory:cfcb0b765c51": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://kycourts.gov/Courts/Supreme-Court/Pages/default.aspx",
+      "directory": "doj-KY",
+      "locator": "Supreme Court"
+    },
+    "US-KY:court_directory:1c10c289c94b": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "https://kycourts.gov/Courts/Court-of-Appeals/Pages/default.aspx",
+      "directory": "doj-KY",
+      "locator": "Court of Appeals"
+    },
+    "US-KY:court_directory:4b5a5de060df": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "https://kycourts.gov/Courts/Circuit-Court/Pages/default.aspx",
+      "directory": "doj-KY",
+      "locator": "Circuit Courts"
+    },
+    "US-KY:court_directory:aab9c501bba4": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "https://kycourts.gov/Courts/District-Court/Pages/default.aspx",
+      "directory": "doj-KY",
+      "locator": "District Courts"
+    },
+    "US-KY:forms:442ccb0eff86": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://kycourts.gov/Legal-Forms/Pages/default.aspx",
+      "directory": "doj-KY",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-KY:regulations:3227b14b4b3f": {
+      "category": "regulations",
+      "title": "Administrative Regulations",
+      "url": "https://apps.legislature.ky.gov/committees/statutory/Admin_Regs/minutes_all.html",
+      "directory": "doj-KY",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-KY:pi_limitations:ffd0fc99aa2e": {
+      "category": "pi_limitations",
+      "title": "KRS 413.140",
+      "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=58050",
+      "directory": null,
+      "locator": "KRS 413.140",
+      "observation": {
+        "requested_url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=58050",
+        "retrieved_at": "2026-11-17T19:33:57.481985+00:00",
+        "http_status": "200",
+        "sha256": "8c5a4cae5dbf648ec3e1194fcd63cf8d61b418174eeb1f08d330528ce87d12f6",
+        "health": "healthy"
+      }
+    },
+    "US-KY:written_contract_limitations:c1b4d8ff45da": {
+      "category": "written_contract_limitations",
+      "title": "KRS 413.160",
+      "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=43544",
+      "directory": null,
+      "locator": "KRS 413.160",
+      "observation": {
+        "requested_url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=43544",
+        "retrieved_at": "2026-11-17T19:33:57.569065+00:00",
+        "http_status": "200",
+        "sha256": "65e6331dbeddeddda4c472260970beee2e8f7ce84da0f9b746307035894523c3",
+        "health": "healthy"
+      }
+    },
+    "US-KY:oral_contract_limitations:1050ec189bc2": {
+      "category": "oral_contract_limitations",
+      "title": "KRS 413.120(1)",
+      "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=44670",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=44670",
+        "retrieved_at": "2026-11-17T19:33:57.369159+00:00",
+        "http_status": "200",
+        "sha256": "8c50f9c592ea9e49672d52d1612d0a73fe19b4d622c2f2cf97f0c30d5f8f7f51",
+        "health": "manual_review_required"
+      }
+    },
+    "US-KY:small_claims:8409fa5bec72": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.kycourts.gov/Legal-Help/Documents/P-6_Small_Claims_Handbook.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.kycourts.gov/Legal-Help/Documents/P-6_Small_Claims_Handbook.pdf",
+        "retrieved_at": "2026-11-17T19:42:47.113967+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-KY:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    },
+    "US-KY:wageLaw:df65e75e3813": {
+      "category": "wageLaw",
+      "title": "KRS 337.385",
+      "url": "https://apps.legislature.ky.gov/Law/statutes/statute.aspx?id=55338",
+      "directory": null,
+      "locator": "KRS 337.385"
+    },
+    "US-KY:fault:aa7878471fe8": {
+      "category": "fault",
+      "title": "KRS 411.182",
+      "url": "https://apps.legislature.ky.gov/law/Statutes/statute.aspx?id=17782",
+      "directory": null,
+      "locator": "KRS 411.182",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:33.594435+00:00",
+        "sha256": "9939ea05212a4dc743c070477e3f19fe087ede19ca29de40169e02697e653f1d"
+      }
+    },
+    "US-KY:consumerLaw:9bb0d68f61c1": {
+      "title": "Ky. Rev. Stat. § 367.110 et seq.",
+      "category": "consumerLaw",
+      "url": "https://apps.legislature.ky.gov/law/statutes/chapter.aspx?id=39092",
+      "directory": "consumer_statutes_index",
+      "locator": "Ky. Rev. Stat. § 367.110 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-KY:contract_formation:01ee0cab779f": {
+      "category": "contract_formation",
+      "title": "KRS 355.2-204",
+      "url": "https://apps.legislature.ky.gov/law/Statutes/statute.aspx?id=33254",
+      "locator": "KRS 355.2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:25.998152+00:00",
+        "sha256": "4845f69ec235b9daa638740eff2df7608a40040f551219aca80a9ea4e4355217"
+      }
+    },
+    "US-KY:wageLaw:9e7597c822cf": {
+      "category": "wageLaw",
+      "title": "KRS § 337.020",
+      "url": "https://apps.legislature.ky.gov/law/Statutes/statute.aspx?id=32046",
+      "locator": "KRS § 337.020",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:54.256412+00:00",
+        "sha256": "0d60f63939fa181ab397298ebd53c6e297ca91d9bcac3603a7ccb5c558c8ed91"
+      }
+    },
+    "US-KY:consumerLaw:3ae7dceeb152": {
+      "category": "consumerLaw",
+      "title": "KRS § 367.170",
+      "url": "https://apps.legislature.ky.gov/LAW/STATUTES/statute.aspx?id=34914",
+      "locator": "KRS § 367.170",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:43.238034+00:00",
+        "sha256": "626ddce01660f1fbfabce102f8169709ace8fe50c608be1d1b035ee889e5c19b"
+      }
+    },
+    "US-KY:deposit:e0944330c868": {
+      "category": "deposit",
+      "title": "Ky. Rev. Stat. § 383.500 (local adoption of residential landlord–tenant act)",
+      "url": "https://apps.legislature.ky.gov/Law/statutes/statute.aspx?id=35717",
+      "locator": "Ky. Rev. Stat. § 383.500 (local adoption of residential landlord–tenant act)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:03:08.900584+00:00",
+        "sha256": "d52c648e9efd92d8dd95d594c8868c95c672b34f1c41964829b9e7a2096e793a"
+      }
+    },
+    "US-KY:deposit:cb8665a98b53": {
+      "category": "deposit",
+      "title": "Ky. Rev. Stat. § 383.580(1)–(4) (local adoption under § 383.500 required)",
+      "url": "https://apps.legislature.ky.gov/law/Statutes/statute.aspx?id=35733",
+      "locator": "Ky. Rev. Stat. § 383.580(1)–(4) (local adoption under § 383.500 required)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:54:37.043183+00:00",
+        "sha256": "27987bf3424ab9fbc83ff3dbef4f0cf1736e8a3791266f461d3007dfb74070d8"
+      }
+    },
+    "US-KY:debtLaw:82b8a838fae8": {
+      "category": "debtLaw",
+      "title": "2025 Ky. Acts ch. 55, § 1 (KRS 190.100(1)(d), motor-vehicle installment collections)",
+      "url": "https://apps.legislature.ky.gov/law/acts/25RS/documents/0055.pdf",
+      "locator": "2025 Ky. Acts ch. 55, § 1 (KRS 190.100(1)(d), motor-vehicle installment collections)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:29:47.597993+00:00",
+        "sha256": "729be7b10fa2d077e83482cae588748d0566ebbd1996116165e1047dc56c1ffc"
+      }
+    },
+    "US-KY:small_claims:ae5ec8302daa": {
+      "category": "small_claims",
+      "title": "Ky. Rev. Stat. § 24A.230 (subject-matter jurisdiction in small claims)",
+      "url": "https://apps.legislature.ky.gov/LAW/STATUTES/statute.aspx?id=39856",
+      "locator": "Ky. Rev. Stat. § 24A.230 (subject-matter jurisdiction in small claims)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:31:56.863241+00:00",
+        "sha256": "5458c55733ac254fc4bdfa42ced35b671d1e0e9b8c8f74d810acbfd5ec0fcc94"
+      }
+    },
+    "US-KY:negligence_elements:02bb1476f066": {
+      "category": "negligence_elements",
+      "title": "Phelps v. Bluegrass Hospitality Management, LLC, 630 S.W.3d 623 (Ky. 2021)",
+      "url": "https://appellatepublic.kycourts.net/api/api/v1/publicaccessdocuments/2748ce1a21c2c056e4d9885660de7e59d80979bd773083707b8131fc3fca2263/download",
+      "locator": "Phelps v. Bluegrass Hospitality Management, LLC, 630 S.W.3d 623 (Ky. 2021)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:52:02.706636+00:00",
+        "sha256": "8100c66042b789c2b86d5fdf2851ea0905a5f9a8e6a1e6549fd4c3c2cbad6152"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-KY:court:4abae2be330b",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-KY:court_directory:cfcb0b765c51"
+    },
+    {
+      "id": "US-KY:court:d3988ff48eb8",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-KY:court_directory:1c10c289c94b"
+    },
+    {
+      "id": "US-KY:court:95cda9ff9174",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-KY:court_directory:4b5a5de060df"
+    },
+    {
+      "id": "US-KY:court:d692a4909ae3",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-KY:court_directory:aab9c501bba4"
+    },
+    {
+      "id": "US-KY:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-KY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-KY:court:3c9c83e81fef",
+      "name": "District",
+      "level": "limited_trial",
+      "source_id": "US-KY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "KRS 413.140(1)(a)",
+      "source_id": "US-KY:pi_limitations:ffd0fc99aa2e",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "KRS 413.160",
+      "source_id": "US-KY:written_contract_limitations:c1b4d8ff45da",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "KRS 413.120(1)",
+      "source_id": "US-KY:oral_contract_limitations:1050ec189bc2",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Ky. Rev. Stat. § 383.200. Definitions of forcible entry and detainer.; Ky. Rev. Stat. § 383.660. Tenant's noncompliance with rental agreement -- Failure to pay rent.; Ky. Rev. Stat. § 383.660. Tenant's noncompliance with rental agreement -- Failure to pay rent.",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Ky. Rev. Stat. § 367.110 et seq.",
+      "source_id": "US-KY:consumerLaw:9bb0d68f61c1",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "5a7886e45780eff9eeb0444e858be6": {
+      "citation": "KRS 413.140",
+      "source_id": "US-KY:pi_limitations:ffd0fc99aa2e",
+      "authority_type": "statute",
+      "text": "413.140 Actions to be brought within one year. (1) The following actions shall be commenced within one (1) year after the cause of action accrued: (a) An action for an injury to the person of the plaintiff, or of her husband, his wife, child, ward, apprentice, or servant;",
+      "text_sha256": "0e2b3861d9d1729790455e567e472a6c38c436d3af13020ec245009c1c6537e7",
+      "publisher_sha256": "8c5a4cae5dbf648ec3e1194fcd63cf8d61b418174eeb1f08d330528ce87d12f6",
+      "retrieved_at": "2026-11-17T19:33:57.481985+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "b2a19060b397c9151b873af6c1c3d9": {
+      "citation": "KRS 413.160",
+      "source_id": "US-KY:written_contract_limitations:c1b4d8ff45da",
+      "authority_type": "statute",
+      "text": "413.160 Actions upon written contract or not provided for by statute -- Ten-year limitation. An action upon a written contract executed after July 15, 2014, unless otherwise provided by statute, and an action for relief not provided for by statute can only be commenced within ten (10) years after the cause of action accrued.",
+      "text_sha256": "5a691ae6421d61aa16c4310089ea3f5e48164bd7a7f6442255506bb312949ace",
+      "publisher_sha256": "65e6331dbeddeddda4c472260970beee2e8f7ce84da0f9b746307035894523c3",
+      "retrieved_at": "2026-11-17T19:33:57.569065+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "9ae41e9bd91ede686e1f39d36ae764": {
+      "citation": "KRS 337.385",
+      "source_id": "US-KY:wageLaw:df65e75e3813",
+      "authority_type": "statute",
+      "text": "(1) Except as provided in subsection (3) of this section, any employer who pays any employee less than wag es and overtime compensation to which such employee is entitled under or by virtue of KRS 337.020 to 337.285 shall be liable to such employee affected for the full amount of such wages and overtime compensation, less any amount actually paid to such employ ee by the employer, for an additional equal amount as liquidated damages, and for costs and such reasonable attorney's fees as may be allowed by the court.",
+      "text_sha256": "9fd2b01d11ac6009f029c551f5294eccb4f7b108ce677d0660ee8c2a7cbc15f8",
+      "publisher_sha256": "2ece3377951fcd848779a7f62958ec6d9f31a42fa627bf71318b999f14dff797",
+      "retrieved_at": "2026-11-17T19:41:32.510695+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "bf5158710073d186ed670573e8d225": {
+      "citation": "KRS 411.182",
+      "source_id": "US-KY:fault:aa7878471fe8",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "411.182 Allocation of fault in tort actions -- Award of damages -- Effect of release. (1) In all tort actions, including products liability actions, involving fault of more than one (1) party to the action, including third -party defendants and persons who hav e been released under subsection (4) of this section, the court, unless otherwise agreed by all parties, shall instruct the jury to answer interrogatories or, if there is no jury, shall make findings indicating: (a) The amount of damages each claimant woul d be entitled to recover if contributory fault is disregarded; and (b) The percentage of the total fault of all the parties to each claim that is allocated to each claimant, defendant, third -party defendant, and person who has been released from liability under subsection (4) of this section. (2) In determining the percentages of fault, the trier of fact shall consider both the nature of the conduct of each party at fault and the extent of the causal relation between the conduct and the damages claimed. (3) The court shall determine the award of damages to each claimant in accordance with the findings, subject to any reduction under subsection (4) of this section, and shall determine and state in the judgment each party's equitable share of the obligation to each claimant in accordance with the respective percentages of fault. (4) A release, covenant not to sue, or similar agreement entered into by a claimant and a person liable, shall discharge that person from all liability for contribution, but it shall not be considered to discharge any other persons liable upon the same claim unless it so provides. However, the claim of the releasing person against other persons shall be reduced by the amount of the released persons' equitable share of the obligation, determined in accordance with the provisions of this section.",
+      "text_sha256": "6f9db4f41f427be0a0b2651518f8ed87079fb2d1ff0aea8debdd8d03ad3d9248",
+      "publisher_sha256": "9939ea05212a4dc743c070477e3f19fe087ede19ca29de40169e02697e653f1d",
+      "retrieved_at": "2026-11-17T20:50:33.594435+00:00",
+      "currentness": "unresolved"
+    },
+    "190a081a2d4a67755f13947cef8cbc": {
+      "source_id": "US-KY:contract_formation:01ee0cab779f",
+      "authority_type": "statute",
+      "citation": "KRS 355.2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "4845f69ec235b9daa638740eff2df7608a40040f551219aca80a9ea4e4355217",
+      "retrieved_at": "2026-11-18T15:14:25.998152+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "375da4cdc9cc956d49de8902c3b34f": {
+      "source_id": "US-KY:wageLaw:9e7597c822cf",
+      "authority_type": "statute",
+      "citation": "KRS § 337.020",
+      "text": "Every employer doing business in this state shall, as often as semimonthly, pay to each of its employees all wages or salary earned to a day not more than eighteen (18) days prior to the date of that payment. Any employee who is absent at the time fixed fo r payment, or who, for any other reason, is not paid at that time, shall be paid thereafter at any time upon six (6) days' demand. No employer subject to this section shall, by any means, secure exemption from it. Every such employee shall have a right of action against any such employer for the full amount of his wages due on each regular pay day. The provisions of this section do not apply to those individuals defined in KRS 337.010(2)(a)2.",
+      "text_sha256": "0917c6800649463b0bd621d9a20f04060259c01b5c73ba2922610088e5a5ff83",
+      "publisher_sha256": "0d60f63939fa181ab397298ebd53c6e297ca91d9bcac3603a7ccb5c558c8ed91",
+      "retrieved_at": "2026-11-19T14:10:54.256412+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "0151d85effaa94613fab1e8577aec1": {
+      "source_id": "US-KY:consumerLaw:3ae7dceeb152",
+      "authority_type": "statute",
+      "citation": "KRS § 367.170",
+      "text": "(1) Unfair, false, misleading, or deceptive acts or practices in the conduct of any trade or commerce are hereby declared unlawful. (2) For the purposes of this section, unfair shall be construed to mean unconscionable.",
+      "text_sha256": "d1ca22dfdfabbdb69cff6342c88595e6b6dea48c7c476a8ba543f001155e9d01",
+      "publisher_sha256": "626ddce01660f1fbfabce102f8169709ace8fe50c608be1d1b035ee889e5c19b",
+      "retrieved_at": "2026-11-19T19:26:43.238034+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "10c16c55ce00d108debe4d8902555d": {
+      "source_id": "US-KY:deposit:e0944330c868",
+      "authority_type": "statute",
+      "citation": "Ky. Rev. Stat. § 383.500 (local adoption of residential landlord–tenant act)",
+      "text": "The General Assembly hereby authorizes cities, counties and urban -county governments to enact the provisions of the Uniform Residential Landlord and Tenant Act as set forth in KRS 383.505 to 383.705. If adopted, these provisions shall be adopted in their entirety and without amendment. No other ordinance shall be enacted by a city, county or urban - county government which relates to the subjects embraced in KRS 383.505 to 383.705.",
+      "text_sha256": "5936270608f136888e14e731b23478826e8966adba97e0163b6af23ba6d2d19b",
+      "publisher_sha256": "d52c648e9efd92d8dd95d594c8868c95c672b34f1c41964829b9e7a2096e793a",
+      "retrieved_at": "2026-11-20T18:03:08.900584+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "b7c007957b3126520515de9c0fba28": {
+      "source_id": "US-KY:deposit:cb8665a98b53",
+      "authority_type": "statute",
+      "citation": "Ky. Rev. Stat. § 383.580(1)–(4) (local adoption under § 383.500 required)",
+      "text": "(1) All landlords of residential property requiring security deposits prior to occupancy shall be required to deposit all tenants' security deposits in an account used only for that purpose, in any bank or other lending institution subject to regulation by the Commonwealth of Kentucky or any agency of the United States government. Prospective tenants shall be informed of the location of the separate account and the account number. (2) Prior to tendering any consideration deemed to be a security deposit, the prospective tenant shall be presented with a comprehensive listing of any then-existing damage to the unit which would be the basis for a charge against the security deposit and the estimated dollar cost of repairing such damage. The tenant shall have the right to inspect the premises to ascertain the accuracy of such listing prior to taking occupancy. The landlord and the tenant shall sign the listing, which signatures shall be conclusive evidence of the accuracy of such listing, but shall not be construed to be conclusive to latent defects. If the tenant shall refuse to sign such listing, he shall state specifically in writing the items on the list to which he dissents, and shall sign such statement of dissent. (3) At the termination of occupancy, the landlord shall inspect the premises and compile a comprehensive listing of any damage to the unit which is the basis for any charge against the security deposit and the estimated dollar cost of repairing such damage. The tenant shall then have the right to inspect the premises to ascertain the accuracy of such listing. The landlord and the tenant shall sign the listing, which signatures shall be conclusive evidence of the accuracy of such listing. If the tenant shall refuse to sign such listing, he shall state specifically in writing the items on the list to which he dissents, and shall sign such statement of dissent. (4) No landlord shall be entitled to retain any portion of a security deposit if the security deposit was not deposited in a separate account as required by subsection (1) of this section and if the initial and final damage listings required by subsections (2) and (3) of this section are not provided.",
+      "text_sha256": "3991ace9d8ddb82f4ae197453624b1697d103512a37eb4e00de132e2ae151b2a",
+      "publisher_sha256": "27987bf3424ab9fbc83ff3dbef4f0cf1736e8a3791266f461d3007dfb74070d8",
+      "retrieved_at": "2026-11-20T17:54:37.043183+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "f09e34ec7264fa3be466bb70540ca4": {
+      "source_id": "US-KY:debtLaw:82b8a838fae8",
+      "authority_type": "statute",
+      "citation": "2025 Ky. Acts ch. 55, § 1 (KRS 190.100(1)(d), motor-vehicle installment collections)",
+      "text": "(d) 1. The holder of a retail installment contract may collect a delinquency and collection charge in an amount not in excess of five percent (5%) of each installment or fifteen dollars ($15), whichever is greater, for each installment in arrears for a period not less than: a. Three (3) days for installment periods that are less than twenty-eight (28) days; or b. Ten (10) days for installment periods that are twenty-eight (28) days or longer. 2. In addition to such delinquency and collection charge, the retail installment contract may provide for the payment of reasonable attorneys' fees where such contract is referred to an attorney not a salaried employee of the holder of the contract for collection, plus the court costs.",
+      "text_sha256": "c1b8b8f7d66bb0b5d3761eac5c27b09749e5a08b6c4b31c43da54ac9630be1f3",
+      "publisher_sha256": "729be7b10fa2d077e83482cae588748d0566ebbd1996116165e1047dc56c1ffc",
+      "retrieved_at": "2026-11-20T22:29:47.597993+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Kentucky enacted 2025 Acts chapter 55"
+    },
+    "d064485d21ac86a9dff22e03341275": {
+      "source_id": "US-KY:small_claims:ae5ec8302daa",
+      "authority_type": "statute",
+      "citation": "Ky. Rev. Stat. § 24A.230 (subject-matter jurisdiction in small claims)",
+      "text": "(1) The small claims division shall have jurisdiction, concurrent with that of the District Court, in all civil actions, other than libel, slander, alienation of affections, malicious prosecution and abuse of process actions, when the amount of money or damages or the value of the personal property claimed does not exceed two thousand five hundred dollars ($2,500) exclusive of interest and costs. (2) The division may also be used in civil matters when the plaintiff seeks to disaffirm, avoid, or rescind a contract or agreement for the purchase of goods or services not in excess of two thousand five hundred dollars ($2,500) exclusive of interest and costs. (3) The division shall have authority to grant appropriate relief, except no prejudgment actions for attachment, garnishment, replevin or other provisional remedy may be filed in the division.",
+      "text_sha256": "451e982f00b5df9de731e7e7e73877de328b76256d0a62da982650af20e379e1",
+      "publisher_sha256": "5458c55733ac254fc4bdfa42ced35b671d1e0e9b8c8f74d810acbfd5ec0fcc94",
+      "retrieved_at": "2026-11-20T22:31:56.863241+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2011-06-08"
+    },
+    "d6b55fad693809525d1c5ddb7a07c0": {
+      "source_id": "US-KY:negligence_elements:02bb1476f066",
+      "authority_type": "opinion",
+      "citation": "Phelps v. Bluegrass Hospitality Management, LLC, 630 S.W.3d 623 (Ky. 2021)",
+      "text": "The basic elements of a negligence claim are: “duty, breach, causation, damages.”",
+      "text_sha256": "a2f1fc6f0c0ddcb955332270ca9f9fe437e524551a815335ac5019ee7b5057bc",
+      "publisher_sha256": "8100c66042b789c2b86d5fdf2851ea0905a5f9a8e6a1e6549fd4c3c2cbad6152",
+      "retrieved_at": "2026-11-20T22:52:02.706636+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2021-09-30",
+      "court": "Supreme Court of Kentucky",
+      "decision_date": "2021-09-30",
+      "opinion_role": "majority",
+      "procedural_posture": "Discretionary review of summary judgment in a restaurant slip-and-fall action. The court discussed the general negligence elements and examined the proof of breach in a premises claim."
+    }
+  },
+  "fault_allocation": {
+    "regime": "other_state_specific",
+    "passage_selector": "bf5158710073d186ed670573e8d225",
+    "source_id": "US-KY:fault:aa7878471fe8",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

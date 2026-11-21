@@ -1,0 +1,655 @@
+{
+  "jurisdiction": "US-AR",
+  "version": "1",
+  "sources": {
+    "US-AR:statutes:d7c6bc22a087": {
+      "category": "statutes",
+      "title": "Arkansas Code",
+      "url": "http://www.lexisnexis.com/hottopics/arcode/Default.asp",
+      "directory": "codes",
+      "locator": "Arkansas"
+    },
+    "US-AR:constitution:d7c6bc22a087": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.lexisnexis.com/hottopics/arcode/Default.asp",
+      "directory": "codes",
+      "locator": "Arkansas"
+    },
+    "US-AR:legislature:ec519ca8ccad": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.arkleg.state.ar.us/assembly/2015/2015R/Pages/Home.aspx",
+      "directory": "codes",
+      "locator": "Arkansas"
+    },
+    "US-AR:labor_agency:51cb5b6dc6bf": {
+      "category": "labor_agency",
+      "title": "www.labor.arkansas.gov",
+      "url": "https://www.labor.arkansas.gov/",
+      "directory": "labor",
+      "locator": "Arkansas"
+    },
+    "US-AR:business_registration:62a5263b35ad": {
+      "category": "business_registration",
+      "title": "Arkansas Secretary of State",
+      "url": "https://www.sos.arkansas.gov/business-commercial-services-bcs",
+      "directory": "business",
+      "locator": "Arkansas"
+    },
+    "US-AR:commercial_code:5965eb0d8ace": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code-Title 4, Subtitle 1",
+      "url": "https://www.lexisnexis.com/hottopics/arcode/",
+      "directory": "ucc",
+      "locator": "Arkansas"
+    },
+    "US-AR:civil_rules:5965eb0d8ace": {
+      "category": "civil_rules",
+      "title": "Civil Procedure Generally-Title 16, Subtitle 5",
+      "url": "https://www.lexisnexis.com/hottopics/arcode/",
+      "directory": "procedure",
+      "locator": "Arkansas"
+    },
+    "US-AR:consumer_agency:a54b7e8a8df9": {
+      "category": "consumer_agency",
+      "title": "Arkansas (AR)",
+      "url": "https://arkansasag.gov/divisions/public-protection/consumer-protection/",
+      "directory": "consumer",
+      "locator": "Arkansas (AR)"
+    },
+    "US-AR:judiciary:e99e368799aa": {
+      "category": "judiciary",
+      "title": "Judiciary Homepage",
+      "url": "https://www.arcourts.gov/",
+      "directory": "doj-AR",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-AR:court_directory:55b5a424c7e3": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.arcourts.gov/courts/supreme-court",
+      "directory": "doj-AR",
+      "locator": "Supreme Court"
+    },
+    "US-AR:court_directory:5e281bce1f71": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "https://www.arcourts.gov/courts/court-of-appeals",
+      "directory": "doj-AR",
+      "locator": "Court of Appeals"
+    },
+    "US-AR:court_directory:52fd13ab0239": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "https://www.arcourts.gov/courts/circuit-courts",
+      "directory": "doj-AR",
+      "locator": "Circuit Courts"
+    },
+    "US-AR:court_directory:586268837efe": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "https://www.arcourts.gov/courts/district-courts",
+      "directory": "doj-AR",
+      "locator": "District Courts"
+    },
+    "US-AR:court_directory:749f7818fb57": {
+      "category": "court_directory",
+      "title": "City Courts",
+      "url": "https://www.arcourts.gov/content/city-courts",
+      "directory": "doj-AR",
+      "locator": "City Courts"
+    },
+    "US-AR:court_directory:d5acd8ef7211": {
+      "category": "court_directory",
+      "title": "Drug Court",
+      "url": "https://www.arcourts.gov/courts/circuit-courts/drug-court-programs",
+      "directory": "doj-AR",
+      "locator": "Drug Court"
+    },
+    "US-AR:court_rules:0322455cc450": {
+      "category": "court_rules",
+      "title": "Court Rules",
+      "url": "https://opinions.arcourts.gov/ark/cr/en/nav_date.do",
+      "directory": "doj-AR",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-AR:forms:e1488efffab3": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://www.arcourts.gov/forms-and-publications/court-forms",
+      "directory": "doj-AR",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-AR:forms:641f3a55aed0": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "https://www.arcourts.gov/forms-and-publications",
+      "directory": "doj-AR",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-AR:statutes:94476fd4e249": {
+      "category": "statutes",
+      "title": "Code of Arkansas",
+      "url": "https://www.arkleg.state.ar.us/ArkansasLaw/",
+      "directory": "doj-AR",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-AR:regulations:e54acc58f3b3": {
+      "category": "regulations",
+      "title": "The Arkansas Register",
+      "url": "https://www.sos.arkansas.gov/rules-regulations/arkansas-register/",
+      "directory": "doj-AR",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-AR:pi_limitations:167166aa1173": {
+      "category": "pi_limitations",
+      "title": "Ark. Code Ann. § 16-56-105",
+      "url": "https://arkleg.state.ar.us/",
+      "directory": "limitations",
+      "locator": "personalInjury"
+    },
+    "US-AR:written_contract_limitations:167166aa1173": {
+      "category": "written_contract_limitations",
+      "title": "Ark. Code Ann. § 16-56-111",
+      "url": "https://arkleg.state.ar.us/",
+      "directory": "limitations",
+      "locator": "writtenContract"
+    },
+    "US-AR:oral_contract_limitations:167166aa1173": {
+      "category": "oral_contract_limitations",
+      "title": "Ark. Code Ann. § 16-56-105(1), (3)",
+      "url": "https://arkleg.state.ar.us/",
+      "directory": "limitations",
+      "locator": "oralContract"
+    },
+    "US-AR:small_claims:87dbc87f25f3": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://arcourts.gov/courts/district-courts",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://arcourts.gov/courts/district-courts",
+        "retrieved_at": "2026-11-17T19:41:33.541163+00:00",
+        "http_status": "200",
+        "sha256": "845b472a8f88e4619ad1bb39f830d71d327ac29587e68aae8b11e0e236989213",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AR:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 26"
+    },
+    "US-AR:consumerLaw:2fbdc9bc7092": {
+      "title": "Ark. Code Ann. § 4-88-101 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.arkleg.state.ar.us/ArkansasLaw/ArkansasCode/",
+      "directory": "consumer_statutes_index",
+      "locator": "Ark. Code Ann. § 4-88-101 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-AR:automated_contract_formation:d8f1d9eb7dc0": {
+      "category": "automated_contract_formation",
+      "title": "Ark. Acts 2001, Act 905, § 14",
+      "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2001%2FPublic%2FACT905.pdf",
+      "locator": "Ark. Acts 2001, Act 905, § 14",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:43:21.496850+00:00",
+        "sha256": "3d87b91edc42d471c6efae71ab726e908a3df2b8c05bf2fc42c87b58fd348a24"
+      }
+    },
+    "US-AR:fault:02a012887ade": {
+      "category": "fault",
+      "title": "1991 Ark. Acts 663, § 1 (Ark. Code Ann. § 16-64-122(a)–(b))",
+      "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F1991%2FPublic%2F663.pdf",
+      "locator": "1991 Ark. Acts 663, § 1 (Ark. Code Ann. § 16-64-122(a)–(b))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:25:15.606937+00:00",
+        "sha256": "6794209744e891e3fb7537e942b70de1c296c5da319a531da5c2b395af278f46"
+      }
+    },
+    "US-AR:fault:8d259b378465": {
+      "category": "fault",
+      "title": "2023 Ark. Acts 354, § 2 (Ark. Code Ann. § 16-118-109(g))",
+      "url": "https://arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2023R%2FPublic%2FACT354.pdf",
+      "locator": "2023 Ark. Acts 354, § 2 (Ark. Code Ann. § 16-118-109(g))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:25:15.746813+00:00",
+        "sha256": "e4d506b2e9f50ee6ce25d3730fedf87831bb8d31a4d6a6abeb8ab89bc18a15bd"
+      }
+    },
+    "US-AR:pi_limitations:ed4cbd23e1c1": {
+      "category": "pi_limitations",
+      "title": "Shelter Mutual Insurance Co. v. Nash, 357 Ark. 581 (2004)",
+      "url": "https://opinions.arcourts.gov/ark/supremecourt/en/item/262881/index.do?iframe=true",
+      "locator": "Shelter Mutual Insurance Co. v. Nash, 357 Ark. 581 (2004)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:49:45.764807+00:00",
+        "sha256": "d986fcbd85a0fc2b2030bb6b4d7c66c6bcbfd9329d000e5b4662c8a54ce7fc76"
+      }
+    },
+    "US-AR:contract_formation:9ef844c5754c": {
+      "category": "contract_formation",
+      "title": "The Money Place, LLC v. Barnes, 349 Ark. 411 (2002)",
+      "url": "https://opinions.arcourts.gov/ark/supremecourt/en/item/247256/index.do?iframe=true",
+      "locator": "The Money Place, LLC v. Barnes, 349 Ark. 411 (2002)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:49:46.354046+00:00",
+        "sha256": "400e727b671ca1a90880fd2544f84610d03df71971e1e91591b8763fc24610cb"
+      }
+    },
+    "US-AR:consumerLaw:e8f2f161f102": {
+      "category": "consumerLaw",
+      "title": "1995 Ark. Acts 1306, § 1 (Ark. Code Ann. § 4-88-107(a)(1)–(2))",
+      "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F1995%2FPublic%2F1306.pdf",
+      "locator": "1995 Ark. Acts 1306, § 1 (Ark. Code Ann. § 4-88-107(a)(1)–(2))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:20:53.908577+00:00",
+        "sha256": "c5449bb2ef008293c0294f6e0de42f8530e177daa556cd6ba4d7170c3f501b37"
+      }
+    },
+    "US-AR:wageLaw:1cf648e00ff7": {
+      "category": "wageLaw",
+      "title": "2019 Ark. Acts 853, § 7 (Ark. Code Ann. § 11-4-405)",
+      "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2019R%2FPublic%2FACT853.pdf",
+      "locator": "2019 Ark. Acts 853, § 7 (Ark. Code Ann. § 11-4-405)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:42:34.458091+00:00",
+        "sha256": "0513291ba2f254c1deb92f09a2e5937bc14f69d02941167369392dcad7de3029"
+      }
+    },
+    "US-AR:response:7254802ac817": {
+      "category": "response",
+      "title": "Ark. R. Civ. P. 12(a)(1) (2018 Ark. 239)",
+      "url": "https://opinions.arcourts.gov/ark/supremecourt/en/item/311758/index.do?iframe=true",
+      "locator": "Ark. R. Civ. P. 12(a)(1) (2018 Ark. 239)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:48:14.184406+00:00",
+        "sha256": "b6b45efc7e068301f4ef208e9c6e7e9d3f95617c08dc2bf199692ce85dbf120f"
+      }
+    },
+    "US-AR:negligence_elements:2c85a83bfbf5": {
+      "category": "negligence_elements",
+      "title": "Summerfield v. Southeastern Freight Lines, Inc., 2024 Ark. App. 326",
+      "url": "https://opinions.arcourts.gov/ark/courtofappeals/en/item/522807/index.do?iframe=true",
+      "locator": "Summerfield v. Southeastern Freight Lines, Inc., 2024 Ark. App. 326",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:54:38.655753+00:00",
+        "sha256": "309d3162c479b8e5b2c501fb90f7f2b0b4deca0eb160efd1a17701e33adeb440"
+      }
+    },
+    "US-AR:debtLaw:f93fdcc364cf": {
+      "category": "debtLaw",
+      "title": "Ark. Code Ann. § 17-24-101",
+      "url": "https://labor.arkansas.gov/wp-content/uploads/ASBCA-statute-Ark-FDCPA-rev-2023.pdf",
+      "locator": "Ark. Code Ann. § 17-24-101",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:15:50.257783+00:00",
+        "sha256": "6f001e0a0ad4350bca31401305e569d436aef5706031da7d1b3bc73855ebbb3d"
+      }
+    },
+    "US-AR:debtLaw:c39cedb6d31d": {
+      "category": "debtLaw",
+      "title": "Ark. Code Ann. § 17-24-301",
+      "url": "https://labor.arkansas.gov/wp-content/uploads/ASBCA-statute-Ark-FDCPA-rev-2023.pdf",
+      "locator": "Ark. Code Ann. § 17-24-301",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:15:50.257783+00:00",
+        "sha256": "6f001e0a0ad4350bca31401305e569d436aef5706031da7d1b3bc73855ebbb3d"
+      }
+    },
+    "US-AR:debtLaw:dfb5da6db307": {
+      "category": "debtLaw",
+      "title": "Ark. Code Ann. § 17-24-507(a), (b)(1)",
+      "url": "https://labor.arkansas.gov/wp-content/uploads/ASBCA-statute-Ark-FDCPA-rev-2023.pdf",
+      "locator": "Ark. Code Ann. § 17-24-507(a), (b)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:15:50.257783+00:00",
+        "sha256": "6f001e0a0ad4350bca31401305e569d436aef5706031da7d1b3bc73855ebbb3d"
+      }
+    },
+    "US-AR:small_claims:894f4427a413": {
+      "category": "small_claims",
+      "title": "Ark. Dist. Ct. R. 10(a)(1)",
+      "url": "https://opinions.arcourts.gov/ark/supremecourt/en/260210/1/document.do",
+      "locator": "Ark. Dist. Ct. R. 10(a)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:35:28.850797+00:00",
+        "sha256": "5f602446dc536fdec3e9b897bd381c2b6501208ff208c13e1a741d7b25aedf8d"
+      }
+    },
+    "US-AR:small_claims:18cc27e4abc0": {
+      "category": "small_claims",
+      "title": "Ark. Dist. Ct. R. 10(a)(1), summons and notice to defendant",
+      "url": "https://opinions.arcourts.gov/ark/supremecourt/en/260210/1/document.do",
+      "locator": "Ark. Dist. Ct. R. 10(a)(1), summons and notice to defendant",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:35:28.850797+00:00",
+        "sha256": "5f602446dc536fdec3e9b897bd381c2b6501208ff208c13e1a741d7b25aedf8d"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-AR:court:b12bf227704f",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-AR:court_directory:55b5a424c7e3"
+    },
+    {
+      "id": "US-AR:court:f24d45f831f5",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-AR:court_directory:5e281bce1f71"
+    },
+    {
+      "id": "US-AR:court:b4bdfca3b6b4",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-AR:court_directory:52fd13ab0239"
+    },
+    {
+      "id": "US-AR:court:d3e87deb5798",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-AR:court_directory:586268837efe"
+    },
+    {
+      "id": "US-AR:court:8905d3cc81aa",
+      "name": "City Courts",
+      "level": "trial_directory",
+      "source_id": "US-AR:court_directory:749f7818fb57"
+    },
+    {
+      "id": "US-AR:court:bdf91e7771f7",
+      "name": "Drug Court",
+      "level": "trial_directory",
+      "source_id": "US-AR:court_directory:d5acd8ef7211"
+    },
+    {
+      "id": "US-AR:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-AR:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-AR:court:3c9c83e81fef",
+      "name": "District",
+      "level": "limited_trial",
+      "source_id": "US-AR:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-AR:court:c4a7a7b35c28",
+      "name": "City",
+      "level": "limited_trial",
+      "source_id": "US-AR:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Ark. Code Ann. § 16-56-105",
+      "source_id": "US-AR:pi_limitations:167166aa1173",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Ark. Code Ann. § 16-56-111",
+      "source_id": "US-AR:written_contract_limitations:167166aa1173",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Ark. Code Ann. § 16-56-105(1), (3)",
+      "source_id": "US-AR:oral_contract_limitations:167166aa1173",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Ark. Code § 18-17-201. Territorial application",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Ark. Code Ann. § 4-88-101 et seq.",
+      "source_id": "US-AR:consumerLaw:2fbdc9bc7092",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "18272de2d3b69b289dfcec178e4bf2": {
+      "source_id": "US-AR:automated_contract_formation:d8f1d9eb7dc0",
+      "authority_type": "statute",
+      "citation": "Ark. Acts 2001, Act 905, § 14",
+      "text": "In an automated transaction, the following rules apply: (1) A contract may be formed by the interaction of electronic agents of the parties, even if no individual was aware of or reviewed the electronic agents’ actions or the resulting terms and agreements. (2) A contract may be formed by the interaction of an electronic agent and an individual, acting on the individual’s own behalf or for another person, including by an interaction in which the individual performs actions that the individual is free to refuse to perform and which the individual knows or has reason to know will cause the electronic agent to complete the transaction or performance. (3) The terms of the contract are determined by the substantive law applicable to it.",
+      "text_sha256": "04e3492db94d21f10eabb3e5f0b480425d0885c1b51f1a9fb519074706835579",
+      "publisher_sha256": "3d87b91edc42d471c6efae71ab726e908a3df2b8c05bf2fc42c87b58fd348a24",
+      "retrieved_at": "2026-11-18T20:43:21.496850+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Approved March 19, 2001"
+    },
+    "5db561d6edffbb01fe6df51f6f5985": {
+      "source_id": "US-AR:fault:02a012887ade",
+      "authority_type": "statute",
+      "citation": "1991 Ark. Acts 663, § 1 (Ark. Code Ann. § 16-64-122(a)–(b))",
+      "text": "(a) In all actions for damages for personal injuries or wrongful death or injury to property in which recovery is predicated upon fault, liability shall be determined by comparing the fault chargeable to a claiming party with the fault chargeable to the party or parties from whom the claiming party seeks to recover damages. (b)(1) If the fault chargeable to a party claiming damages is of a lesser degree than the fault chargeable to the party or parties from whom the claiming party seeks to recover damages, then the claiming party is entitled to recover the amount of his damages after they have been diminished in proportion to the degree of his own fault. (2) If the fault chargeable to a party claiming damages is equal to or greater in degree than any fault chargeable to the party or parties from whom the claiming party seeks to recover damages, then the claiming party is not entitled to recover such damages.",
+      "text_sha256": "036a77571bdb8d3a2c157a475c4f3a2d937b727ec3185cc15f75fa5cacfedc6a",
+      "publisher_sha256": "6794209744e891e3fb7537e942b70de1c296c5da319a531da5c2b395af278f46",
+      "retrieved_at": "2026-11-20T15:25:15.606937+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "1991 Arkansas Acts"
+    },
+    "b213f0c14241bdd350f8f2938d7d8b": {
+      "source_id": "US-AR:fault:8d259b378465",
+      "authority_type": "statute",
+      "citation": "2023 Ark. Acts 354, § 2 (Ark. Code Ann. § 16-118-109(g))",
+      "text": "(g) In a civil action brought under this section: (1) Fault of a victim of human trafficking shall not be apportioned against the victim of human trafficking; and (2) The comparative fault provisions under § 16-64-122 do not apply.",
+      "text_sha256": "c6e83faf35729d31cf3c1deccdaf896225f3b93e66a8d5d7447f77e4e32ef209",
+      "publisher_sha256": "e4d506b2e9f50ee6ce25d3730fedf87831bb8d31a4d6a6abeb8ab89bc18a15bd",
+      "retrieved_at": "2026-11-20T15:25:15.746813+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2023 Arkansas Acts"
+    },
+    "13a33fbb3d9d0d49784dab1562e7ec": {
+      "source_id": "US-AR:pi_limitations:ed4cbd23e1c1",
+      "authority_type": "opinion",
+      "citation": "Shelter Mutual Insurance Co. v. Nash, 357 Ark. 581 (2004)",
+      "text": "An action for personal injury, however, must be brought within three years after the cause of action accrues. Ark. Code Ann. § 16-56-105 (Supp. 2001).",
+      "text_sha256": "891a47561dbfe6fcce8699c229727f70cc9d1e4cac35625a87ac1f30f288b281",
+      "publisher_sha256": "d986fcbd85a0fc2b2030bb6b4d7c66c6bcbfd9329d000e5b4662c8a54ce7fc76",
+      "retrieved_at": "2026-11-20T15:49:45.764807+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court-reported opinion of 2004-06-03",
+      "court": "Supreme Court of Arkansas",
+      "decision_date": "2004-06-03",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of a certified question arising in an underinsured motorist contract dispute. The court distinguished personal-injury and written-contract statutes."
+    },
+    "4b2cb3ccfd87171a80e2b5399f9779": {
+      "source_id": "US-AR:contract_formation:9ef844c5754c",
+      "authority_type": "opinion",
+      "citation": "The Money Place, LLC v. Barnes, 349 Ark. 411 (2002)",
+      "text": "The essential elements of a contract are (1) competent parties, (2) subject matter, (3) legal consideration, (4) mutual agreement, and (5) mutual obligations.",
+      "text_sha256": "755ae746c45a3a409db9e622ffabe449b422437447742fb077ebdcf6b489139a",
+      "publisher_sha256": "400e727b671ca1a90880fd2544f84610d03df71971e1e91591b8763fc24610cb",
+      "retrieved_at": "2026-11-20T15:49:46.354046+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court-reported opinion of 2002-06-20",
+      "court": "Supreme Court of Arkansas",
+      "decision_date": "2002-06-20",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from denial of a motion to compel arbitration. The court discussed ordinary formation elements in reviewing the asserted agreement."
+    },
+    "b1a77d1762bc9da3dcb7342ae6ad13": {
+      "source_id": "US-AR:consumerLaw:e8f2f161f102",
+      "authority_type": "statute",
+      "citation": "1995 Ark. Acts 1306, § 1 (Ark. Code Ann. § 4-88-107(a)(1)–(2))",
+      "text": "(a) Deceptive and unconscionable trade practices made unlawful and prohibited by this chapter include, but are not limited to, the following: (1) Knowingly making a false representation as to the characteristics, ingredients, uses, benefits, alterations, source, sponsorship, approval, or certification of goods or services, or as to whether goods are original or new, or of a particular standard, quality, grade, style, or model; (2) Disparaging the goods, services, or business of another by false or misleading representation of fact;",
+      "text_sha256": "9363791a7a9edd7f145291f10fb3aecbbdadd85f59ae2e472b756a5ec3a5607c",
+      "publisher_sha256": "c5449bb2ef008293c0294f6e0de42f8530e177daa556cd6ba4d7170c3f501b37",
+      "retrieved_at": "2026-11-20T16:20:53.908577+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "1995 Arkansas Acts"
+    },
+    "4c768853ab5d0525c9cfc7856fa28c": {
+      "source_id": "US-AR:wageLaw:1cf648e00ff7",
+      "authority_type": "statute",
+      "citation": "2019 Ark. Acts 853, § 7 (Ark. Code Ann. § 11-4-405)",
+      "text": "An employer that discharges an employee is required to pay all wages due by the next regular payday. (b) An employer that fails to make the payment required under subsection (a) of this section within seven (7) days of the next regular payday shall owe the employee double the wages due.",
+      "text_sha256": "8762042d84e00602ae2ff0a88b0d6a97a1349eedca4c07449570d92caee09ba9",
+      "publisher_sha256": "0513291ba2f254c1deb92f09a2e5937bc14f69d02941167369392dcad7de3029",
+      "retrieved_at": "2026-11-20T17:42:34.458091+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2019 enacted Arkansas Acts text"
+    },
+    "2c9bbd692eae3cbd8b2c000d5f5148": {
+      "source_id": "US-AR:response:7254802ac817",
+      "authority_type": "court_rule",
+      "citation": "Ark. R. Civ. P. 12(a)(1) (2018 Ark. 239)",
+      "text": "(1) A defendant shall file his or her answer within 30 days after the service of summons and complaint upon him or her. A defendant served by warning order under Rule 4(g)(3) or (4) shall file an answer within 30 days from the date of first publication or posting of the warning order. A defendant incarcerated in any jail, penitentiary, or other correctional facility in this state shall file an answer within 60 days after service. A party served with a pleading stating a cross-claim or counterclaim against him or her shall file an answer or reply thereto within 30 days after service upon the party. The court may, upon motion of a party, extend the time for filing any responsive pleading.",
+      "text_sha256": "f188cd29587c890ab3b5afac61e49943d4628f84c340e9b1e379de509cdd15d7",
+      "publisher_sha256": "b6b45efc7e068301f4ef208e9c6e7e9d3f95617c08dc2bf199692ce85dbf120f",
+      "retrieved_at": "2026-11-20T17:48:14.184406+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas Supreme Court order adopting rule text effective January 1, 2019",
+      "effective_from": "2019-01-01"
+    },
+    "ce9502740e5d3388919fcb89ed414d": {
+      "source_id": "US-AR:negligence_elements:2c85a83bfbf5",
+      "authority_type": "opinion",
+      "citation": "Summerfield v. Southeastern Freight Lines, Inc., 2024 Ark. App. 326",
+      "text": "To prevail on a claim of negligence, a plaintiff “must prove that the defendant owed a duty to the plaintiff, that the defendant breached the duty, and that the breach was the proximate cause of the plaintiff’s injuries.” Duran v. Sw. Ark. Elec. Coop. Corp., 2018 Ark. 33, at 6, 537 S.W.3d 722, 726.",
+      "text_sha256": "43853ea3bc9ec4842092d6f0390ae61dfa4094c3c9ba67f98276798b564280ad",
+      "publisher_sha256": "309d3162c479b8e5b2c501fb90f7f2b0b4deca0eb160efd1a17701e33adeb440",
+      "retrieved_at": "2026-11-20T17:54:38.655753+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2024-05-22",
+      "court": "Arkansas Court of Appeals",
+      "decision_date": "2024-05-22",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a grant of summary judgment on negligence claims arising from a collision with a tractor trailer. The court affirmed."
+    },
+    "6d32b87d97661ca7d0ff6c7a9f2a6e": {
+      "source_id": "US-AR:debtLaw:f93fdcc364cf",
+      "authority_type": "statute",
+      "citation": "Ark. Code Ann. § 17-24-101",
+      "text": "As used in this chapter, unless the context otherwise requires, “collection agency” means any person, partnership, corporation, association, limited liability corporation, or firm that: (1) Engages in the collection of delinquent accounts, bills, or other forms of indebtedness owed or due or asserted to be owed or due to another; (2) Uses a fictitious name or any name other than its own to collect its own accounts receivable; (3) Solicits claims for collection; or (4) Purchases and attempts to collect delinquent accounts or bills.",
+      "text_sha256": "628a34b59e0336b2e08825e3a9af21196af00456de0df9fb95c6a0be61119e41",
+      "publisher_sha256": "6f001e0a0ad4350bca31401305e569d436aef5706031da7d1b3bc73855ebbb3d",
+      "retrieved_at": "2026-11-20T23:15:50.257783+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas State Board of Collection Agencies code compilation, through the 2023 session"
+    },
+    "1c5a3e3f3f45c6bdddfdca09c38a90": {
+      "source_id": "US-AR:debtLaw:c39cedb6d31d",
+      "authority_type": "statute",
+      "citation": "Ark. Code Ann. § 17-24-301",
+      "text": "Unless licensed by the State Board of Collection Agencies under this subchapter it is unlawful to: (1) Engage in the collection of delinquent accounts, bills, or other forms of indebtedness; (2) Use a fictitious name or any name other than their own in the collection of their own accounts receivable; (3) Solicit claims for collection; or (4) Purchase and attempt to collect delinquent accounts or bills.",
+      "text_sha256": "282a87ac029e52afe4d806762b177c600072a1656ac101584f5a0c74a4a85443",
+      "publisher_sha256": "6f001e0a0ad4350bca31401305e569d436aef5706031da7d1b3bc73855ebbb3d",
+      "retrieved_at": "2026-11-20T23:15:50.257783+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas State Board of Collection Agencies code compilation, through the 2023 session"
+    },
+    "89b707dbd4572468414e882d1ed2ea": {
+      "source_id": "US-AR:debtLaw:dfb5da6db307",
+      "authority_type": "statute",
+      "citation": "Ark. Code Ann. § 17-24-507(a), (b)(1)",
+      "text": "(a) A debt collector may not use unfair or unconscionable means to collect or attempt to collect a debt. (b) Without limiting the general application of subsection (a) of this section, the following actions of a debt collector violate this section: (1) The collection of an amount, including interest, a fee, a charge, or an expense incidental to the principal obligation unless the amount is expressly authorized by the agreement creating the debt or permitted by law;",
+      "text_sha256": "cfc7e5e3aa5337ede8ae02434185cc3beb69ab55ed3d3fb161cc76ab9b95f644",
+      "publisher_sha256": "6f001e0a0ad4350bca31401305e569d436aef5706031da7d1b3bc73855ebbb3d",
+      "retrieved_at": "2026-11-20T23:15:50.257783+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas State Board of Collection Agencies code compilation, through the 2023 session"
+    },
+    "8085d256d1f1a3baca9819834f21c5": {
+      "source_id": "US-AR:small_claims:894f4427a413",
+      "authority_type": "court_rule",
+      "citation": "Ark. Dist. Ct. R. 10(a)(1)",
+      "text": "Actions in the small claims division of district court shall be commenced whenever the claimant or the personal representative of a deceased claimant shall file with the clerk of the court a claim in substantially the following form:",
+      "text_sha256": "0b3bd0c3e723747f0106cb7fc3154424b7ffc0e9967d338e85fea4f6873a9ec9",
+      "publisher_sha256": "5f602446dc536fdec3e9b897bd381c2b6501208ff208c13e1a741d7b25aedf8d",
+      "retrieved_at": "2026-11-21T03:35:28.850797+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas Supreme Court per curiam, 2011 Ark. 250, effective July 1, 2011",
+      "court": "Arkansas District Courts",
+      "effective_from": "2011-07-01"
+    },
+    "aa19ef275c4dc3e8e7be87e39c3050": {
+      "source_id": "US-AR:small_claims:18cc27e4abc0",
+      "authority_type": "court_rule",
+      "citation": "Ark. Dist. Ct. R. 10(a)(1), summons and notice to defendant",
+      "text": "You are hereby warned to file a written answer with the clerk of this court within thirty (30) days after you receive this claim and forward a copy to the plaintiff at the address above or a default judgment may be entered against you.",
+      "text_sha256": "f861346592d782a7a75309bc48a4a01d121005c9a8da095e04129b1e2282635f",
+      "publisher_sha256": "5f602446dc536fdec3e9b897bd381c2b6501208ff208c13e1a741d7b25aedf8d",
+      "retrieved_at": "2026-11-21T03:35:28.850797+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas Supreme Court per curiam, 2011 Ark. 250, effective July 1, 2011",
+      "court": "Arkansas District Courts",
+      "effective_from": "2011-07-01"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_50",
+    "source_id": "US-AR:fault:02a012887ade",
+    "passage_selector": "5db561d6edffbb01fe6df51f6f5985",
+    "currentness": "historical",
+    "qualification": "This enacted version compared the claimant’s fault with the party or parties from whom the claimant sought recovery. The later 2023 enactment added a separate rule for the civil action under Ark. Code Ann. § 16-118-109."
+  }
+}

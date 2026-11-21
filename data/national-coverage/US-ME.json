@@ -1,0 +1,858 @@
+{
+  "jurisdiction": "US-ME",
+  "version": "1",
+  "sources": {
+    "US-ME:statutes:26155c0a39e3": {
+      "category": "statutes",
+      "title": "Maine Revised Statutes",
+      "url": "http://janus.state.me.us/legis/statutes/",
+      "directory": "codes",
+      "locator": "Maine"
+    },
+    "US-ME:constitution:b7bc781b9d45": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://janus.state.me.us/legis/const/",
+      "directory": "codes",
+      "locator": "Maine"
+    },
+    "US-ME:legislature:c9fcdd6fde5f": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://legislature.maine.gov/",
+      "directory": "codes",
+      "locator": "Maine"
+    },
+    "US-ME:labor_agency:63a60520305d": {
+      "category": "labor_agency",
+      "title": "www.maine.gov/labor",
+      "url": "https://www.maine.gov/labor/",
+      "directory": "labor",
+      "locator": "Maine"
+    },
+    "US-ME:commercial_code:349d24375d50": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://www.mainelegislature.org/legis/statutes/11/title11ch0sec0.html",
+      "directory": "ucc",
+      "locator": "Maine"
+    },
+    "US-ME:civil_rules:a1299d5bdd6b": {
+      "category": "civil_rules",
+      "title": "Court Procedure-- Civil",
+      "url": "http://www.mainelegislature.org/legis/statutes/14/title14ch0sec0.html",
+      "directory": "procedure",
+      "locator": "Maine"
+    },
+    "US-ME:consumer_agency:2660f23f62eb": {
+      "category": "consumer_agency",
+      "title": "Maine (ME)",
+      "url": "https://www.maine.gov/ag/consumer/index.shtml",
+      "directory": "consumer",
+      "locator": "Maine (ME)"
+    },
+    "US-ME:judiciary:dc02312bf9e8": {
+      "category": "judiciary",
+      "title": "Judicial Branch",
+      "url": "https://www.courts.maine.gov/",
+      "directory": "doj-ME",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-ME:court_directory:ac1b1435819a": {
+      "category": "court_directory",
+      "title": "Supreme Judicial Court",
+      "url": "http://www.courts.state.me.us/maine_courts/supreme/index.shtml",
+      "directory": "doj-ME",
+      "locator": "Supreme Judicial Court"
+    },
+    "US-ME:opinions:df0013e8e9c6": {
+      "category": "opinions",
+      "title": "Supreme Court Decisions, Orders, Rule Amendments",
+      "url": "http://www.cleaves.org/supreme.htm",
+      "directory": "doj-ME",
+      "locator": "State and Local Courts / Supreme Court"
+    },
+    "US-ME:court_directory:e4b559873298": {
+      "category": "court_directory",
+      "title": "Superior Court",
+      "url": "http://www.courts.state.me.us/maine_courts/superior/index.shtml",
+      "directory": "doj-ME",
+      "locator": "Superior Court"
+    },
+    "US-ME:court_directory:9c1b3e352e1d": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "http://www.courts.state.me.us/maine_courts/district/index.shtml",
+      "directory": "doj-ME",
+      "locator": "District Courts"
+    },
+    "US-ME:forms:f515a90121cf": {
+      "category": "forms",
+      "title": "Forms and Fees",
+      "url": "https://www.courts.maine.gov/forms/index.html",
+      "directory": "doj-ME",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-ME:constitution:b4b1f8757b45": {
+      "category": "constitution",
+      "title": "Constitution, Statutes and Session Laws of Maine",
+      "url": "https://legislature.maine.gov/ros/maine-constitution-statutes-and-law/9574",
+      "directory": "doj-ME",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-ME:statutes:f551ffc8b9ad": {
+      "category": "statutes",
+      "title": "Law and Legislative Digital Library",
+      "url": "https://www.maine.gov/legis/lawlib/lldl/lldlhome.htm",
+      "directory": "doj-ME",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-ME:pi_limitations:96e4f7b1da76": {
+      "category": "pi_limitations",
+      "title": "14 M.R.S. § 752",
+      "url": "https://legislature.maine.gov/statutes/14/title14sec752.html",
+      "directory": null,
+      "locator": "14 M.R.S. § 752",
+      "observation": {
+        "requested_url": "https://legislature.maine.gov/statutes/14/title14sec752.html",
+        "retrieved_at": "2026-11-17T19:33:57.904323+00:00",
+        "http_status": "200",
+        "sha256": "0069d0fa956ed2a7aabe5fe2f99a5fbfe8fefc9eeb9c957609af14edaff0c0bd",
+        "health": "healthy"
+      }
+    },
+    "US-ME:written_contract_limitations:96e4f7b1da76": {
+      "category": "written_contract_limitations",
+      "title": "14 M.R.S. § 752",
+      "url": "https://legislature.maine.gov/statutes/14/title14sec752.html",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://legislature.maine.gov/statutes/14/title14sec752.html",
+        "retrieved_at": "2026-11-17T19:33:57.904323+00:00",
+        "http_status": "200",
+        "sha256": "0069d0fa956ed2a7aabe5fe2f99a5fbfe8fefc9eeb9c957609af14edaff0c0bd",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ME:oral_contract_limitations:96e4f7b1da76": {
+      "category": "oral_contract_limitations",
+      "title": "14 M.R.S. § 752",
+      "url": "https://legislature.maine.gov/statutes/14/title14sec752.html",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://legislature.maine.gov/statutes/14/title14sec752.html",
+        "retrieved_at": "2026-11-17T19:33:57.904323+00:00",
+        "http_status": "200",
+        "sha256": "0069d0fa956ed2a7aabe5fe2f99a5fbfe8fefc9eeb9c957609af14edaff0c0bd",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ME:small_claims:a854b269cebc": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.courts.maine.gov/help/guides/sc-guide-2026.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.courts.maine.gov/help/guides/sc-guide-2026.pdf",
+        "retrieved_at": "2026-11-17T19:42:37.259105+00:00",
+        "http_status": "200",
+        "sha256": "ef9d5e36c980dc5f2317f5d181cdd8c5409101fc99a5762497c91f2afaf93f6e",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ME:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    },
+    "US-ME:fault:e602808291ba": {
+      "category": "fault",
+      "title": "14 M.R.S. § 156",
+      "url": "https://www.legislature.maine.gov/statutes/14/title14sec156.html",
+      "directory": null,
+      "locator": "14 M.R.S. § 156"
+    },
+    "US-ME:deposit:a18878c0785f": {
+      "category": "deposit",
+      "title": "Residential tenancy publication",
+      "url": "https://legislature.maine.gov/statutes/14/title14ch710-A.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://legislature.maine.gov/statutes/14/title14ch710-A.pdf",
+        "retrieved_at": "2026-11-17T19:42:03.310386+00:00",
+        "http_status": "200",
+        "sha256": "99b33d17a770e97921fefd576d8f400d4924ea719c9379f06dc0a44d9aa4dede",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ME:wageLaw:a8c89723688e": {
+      "category": "wageLaw",
+      "title": "26 M.R.S. § 621-A",
+      "url": "https://www.legislature.maine.gov/legis/statutes/26/title26sec621-A.html",
+      "directory": null,
+      "locator": "26 M.R.S. § 621-A"
+    },
+    "US-ME:consumerLaw:56ff9a5131c3": {
+      "category": "consumerLaw",
+      "title": "5 M.R.S. § 207",
+      "url": "https://legislature.maine.gov/statutes/5/title5ch10.pdf",
+      "directory": null,
+      "locator": "5 M.R.S. § 207"
+    },
+    "US-ME:commencement:5016b7dc6716": {
+      "category": "commencement",
+      "title": "Me. R. Civ. P. 3",
+      "url": "https://www.courts.maine.gov/rules/text/mr_civ_p_only_2026-06-01.pdf",
+      "directory": null,
+      "locator": "Me. R. Civ. P. 3",
+      "language": "en",
+      "publisher_role": "official_rule_publication",
+      "observation": {
+        "health": "retained_snapshot",
+        "retrieved_at": "2026-11-17T20:14:17.739999+00:00",
+        "sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0"
+      }
+    },
+    "US-ME:consumerLaw:790587a56d61": {
+      "title": "5 M.R.S. § 205-A et seq.",
+      "category": "consumerLaw",
+      "url": "https://legislature.maine.gov/statutes/5/title5sec206.html",
+      "directory": "consumer_statutes_index",
+      "locator": "5 M.R.S. § 205-A et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-ME:contract_formation:1bb204676004": {
+      "category": "contract_formation",
+      "title": "11 M.R.S. § 2-204",
+      "url": "https://legislature.maine.gov/legis/statutes/11/title11sec2-204.html",
+      "locator": "11 M.R.S. § 2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:30.513400+00:00",
+        "sha256": "e5d73c3838e8a27d7b696658b29ba4b6b3af39389f308af21893a2ad88631048"
+      }
+    },
+    "US-ME:service:9f018fb2f6d7": {
+      "category": "service",
+      "title": "Me. R. Civ. P. 4(d)(1)",
+      "url": "https://www.courts.maine.gov/rules/text/mr_civ_p_only_2026-06-01.pdf",
+      "locator": "Me. R. Civ. P. 4(d)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
+        "sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0"
+      }
+    },
+    "US-ME:response:bf6a167ca784": {
+      "category": "response",
+      "title": "Me. R. Civ. P. 12(a)",
+      "url": "https://www.courts.maine.gov/rules/text/mr_civ_p_only_2026-06-01.pdf",
+      "locator": "Me. R. Civ. P. 12(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
+        "sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0"
+      }
+    },
+    "US-ME:small_claims:fae6ae1f0cdb": {
+      "category": "small_claims",
+      "title": "14 M.R.S. § 7482, first paragraph",
+      "url": "https://legislature.maine.gov/statutes/14/title14sec7482.html",
+      "locator": "14 M.R.S. § 7482, first paragraph",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:29.885821+00:00",
+        "sha256": "ca5bcc13fb4732cbb086d16a77dd5b452f947aecd3f529a4fe62219becd6cc19"
+      }
+    },
+    "US-ME:deposit:7c63d4f11ad9": {
+      "category": "deposit",
+      "title": "Me. Rev. Stat. tit. 14, § 6033(2)–(3)",
+      "url": "https://legislature.maine.gov/statutes/14/title14sec6033.html",
+      "locator": "Me. Rev. Stat. tit. 14, § 6033(2)–(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:17.162832+00:00",
+        "sha256": "f7b27a670f5288235670110ef7661d0d4740294056c7f14edb498ffcbf6e5f44"
+      }
+    },
+    "US-ME:fault:15d129a1ef82": {
+      "category": "fault",
+      "title": "Me. Rev. Stat. tit. 14, § 156",
+      "url": "https://legislature.maine.gov/statutes/14/title14sec156.docx",
+      "locator": "Me. Rev. Stat. tit. 14, § 156",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:43:48.776555+00:00",
+        "sha256": "ce14c76f73c543f0202e0a2d34f183f658f9ef2795d60017e4f89f30d6eb32d4"
+      }
+    },
+    "US-ME:pi_limitations:9e93d719e332": {
+      "category": "pi_limitations",
+      "title": "Me. Rev. Stat. tit. 14, § 752",
+      "url": "https://legislature.maine.gov/statutes/14/title14sec752.docx",
+      "locator": "Me. Rev. Stat. tit. 14, § 752",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:43:48.034890+00:00",
+        "sha256": "c73441fa4fe364fb89f730b7c485e7e9cf6d746a5a4521136c4f6c33190a350e"
+      }
+    },
+    "US-ME:tolling:76978c696eff": {
+      "category": "tolling",
+      "title": "Me. Rev. Stat. tit. 14, § 853",
+      "url": "https://legislature.maine.gov/statutes/14/title14sec853.docx",
+      "locator": "Me. Rev. Stat. tit. 14, § 853",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:43:48.041014+00:00",
+        "sha256": "a6c92dc7c60f52f03ad73c0ba796dae284b9dfb18e02efc7982d24e401e259c3"
+      }
+    },
+    "US-ME:accrual:ceb650657e15": {
+      "category": "accrual",
+      "title": "Me. Rev. Stat. tit. 14, § 859",
+      "url": "https://legislature.maine.gov/statutes/14/title14sec859.docx",
+      "locator": "Me. Rev. Stat. tit. 14, § 859",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:43:48.470302+00:00",
+        "sha256": "55a9f8b6f15a35eb122a4a9a84a38e803aa44a0776c5fac90699f8025a3d5e87"
+      }
+    },
+    "US-ME:habitability:43c02d6441c6": {
+      "category": "habitability",
+      "title": "Me. Rev. Stat. tit. 14, § 6021(2)–(3)",
+      "url": "https://legislature.maine.gov/statutes/14/title14sec6021.docx",
+      "locator": "Me. Rev. Stat. tit. 14, § 6021(2)–(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:43:48.390575+00:00",
+        "sha256": "d6e96bf456b1bb5274f4be3c23c6a15da309d98fb57e314ad2e457aece1c88ff"
+      }
+    },
+    "US-ME:deposit:c41c14defb74": {
+      "category": "deposit",
+      "title": "Me. Rev. Stat. tit. 14, § 6033(2)–(3)",
+      "url": "https://legislature.maine.gov/statutes/14/title14sec6033.docx",
+      "locator": "Me. Rev. Stat. tit. 14, § 6033(2)–(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:43:48.007842+00:00",
+        "sha256": "a83cbc353c28ae8882c0dfe8acde24e82911c904ea84aa31a45ad7a30e2183da"
+      }
+    },
+    "US-ME:small_claims:52eeed8d04f2": {
+      "category": "small_claims",
+      "title": "Me. Rev. Stat. tit. 14, § 7482",
+      "url": "https://legislature.maine.gov/statutes/14/title14sec7482.docx",
+      "locator": "Me. Rev. Stat. tit. 14, § 7482",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:43:48.417931+00:00",
+        "sha256": "9d60189712832c8e31f3dc2689fdfce26d3d7704d6ab9c1447f3e2ffbcaa9e68"
+      }
+    },
+    "US-ME:small_claims:e8a3c3599ab2": {
+      "category": "small_claims",
+      "title": "Me. Rev. Stat. tit. 14, § 7483",
+      "url": "https://legislature.maine.gov/statutes/14/title14sec7483.docx",
+      "locator": "Me. Rev. Stat. tit. 14, § 7483",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:43:48.431676+00:00",
+        "sha256": "3078872e76e68dfb45cce1569bd953236f33dbaba5eeb7c61c219b4dc080b8cb"
+      }
+    },
+    "US-ME:consumerLaw:efd134ce21c9": {
+      "category": "consumerLaw",
+      "title": "Me. Rev. Stat. tit. 5, § 207",
+      "url": "https://legislature.maine.gov/statutes/5/title5sec207.docx",
+      "locator": "Me. Rev. Stat. tit. 5, § 207",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:43:48.809913+00:00",
+        "sha256": "ad9dd65489af711ed6ab0f76af20ce290e0f0fb74ed667b1812901850a22b40e"
+      }
+    },
+    "US-ME:consumer_private_action:95aa5c97f399": {
+      "category": "consumer_private_action",
+      "title": "Me. Rev. Stat. tit. 5, § 213(1)–(2)",
+      "url": "https://legislature.maine.gov/statutes/5/title5sec213.docx",
+      "locator": "Me. Rev. Stat. tit. 5, § 213(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:43:48.815917+00:00",
+        "sha256": "4ec3129c8e0fef1d2d7342b2109dac1283dc86e6611674b364dde1fac34d9921"
+      }
+    },
+    "US-ME:wageLaw:a2dc96a38854": {
+      "category": "wageLaw",
+      "title": "Me. Rev. Stat. tit. 26, § 621-A(1)–(2)",
+      "url": "https://legislature.maine.gov/statutes/26/title26sec621-A.docx",
+      "locator": "Me. Rev. Stat. tit. 26, § 621-A(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:43:48.851631+00:00",
+        "sha256": "ef2da2bd9585238c7ce2b69654d30281227f0c8bf4474f98dcdafdfbd82b586a"
+      }
+    },
+    "US-ME:wage_enforcement:b44e102cbf02": {
+      "category": "wage_enforcement",
+      "title": "Me. Rev. Stat. tit. 26, § 626",
+      "url": "https://legislature.maine.gov/statutes/26/title26sec626.docx",
+      "locator": "Me. Rev. Stat. tit. 26, § 626",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:43:49.351279+00:00",
+        "sha256": "9d1b1821ce1272724f7f809e77231b1a03f78455a2bf78f043f79cb1dfef6c60"
+      }
+    },
+    "US-ME:debtLaw:7ea29c069023": {
+      "category": "debtLaw",
+      "title": "Me. Rev. Stat. tit. 32, § 11013(1)",
+      "url": "https://legislature.maine.gov/statutes/32/title32sec11013.docx",
+      "locator": "Me. Rev. Stat. tit. 32, § 11013(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:43:49.241225+00:00",
+        "sha256": "4df9b72e9635910dd40b643afcaa2ccfb06c5daa0b90b1a957c3fdfcf2c7c45c"
+      }
+    },
+    "US-ME:debtLaw:79943b5d7692": {
+      "category": "debtLaw",
+      "title": "Me. Rev. Stat. tit. 32, § 11014",
+      "url": "https://legislature.maine.gov/statutes/32/title32sec11014.docx",
+      "locator": "Me. Rev. Stat. tit. 32, § 11014",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:43:49.188164+00:00",
+        "sha256": "28c7bb356b6bc0d398c2e5a4e701c851b8d36d813b7fe73a4eaab9c525fdec5e"
+      }
+    },
+    "US-ME:negligence_elements:93a69a2e4a19": {
+      "category": "negligence_elements",
+      "title": "Murdock v. Thorne, 2017 ME 136, ¶ 11 (corrected July 25, 2017)",
+      "url": "https://www.courts.maine.gov/courts/sjc/lawcourt/2017/17me136co.pdf",
+      "locator": "Murdock v. Thorne, 2017 ME 136, ¶ 11 (corrected July 25, 2017)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:40:12.375184+00:00",
+        "sha256": "81f7ed1022cd6f17243c4f65df443f137b1fc27b3fc8f3bc5b089328dfb8de85"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-ME:court:b5051d16d543",
+      "name": "Supreme Judicial Court",
+      "level": "highest_directory",
+      "source_id": "US-ME:court_directory:ac1b1435819a"
+    },
+    {
+      "id": "US-ME:court:deb3d69596a6",
+      "name": "Superior Court",
+      "level": "trial_directory",
+      "source_id": "US-ME:court_directory:e4b559873298"
+    },
+    {
+      "id": "US-ME:court:45b7fa1b68f6",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-ME:court_directory:9c1b3e352e1d"
+    },
+    {
+      "id": "US-ME:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-ME:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-ME:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-ME:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-ME:court:4f54b582f9f0",
+      "name": "Probate",
+      "level": "limited_trial",
+      "source_id": "US-ME:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "14 M.R.S. § 752",
+      "source_id": "US-ME:pi_limitations:96e4f7b1da76",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "14 M.R.S. § 752",
+      "source_id": "US-ME:written_contract_limitations:96e4f7b1da76",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "14 M.R.S. § 752",
+      "source_id": "US-ME:oral_contract_limitations:96e4f7b1da76",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Me. Rev. Stat. tit. 14, § 6001. Availability of remedy",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "5 M.R.S. § 205-A et seq.",
+      "source_id": "US-ME:consumerLaw:790587a56d61",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "9dee2e5c30d67278a74dfbface80dd": {
+      "citation": "14 M.R.S. § 752",
+      "source_id": "US-ME:pi_limitations:96e4f7b1da76",
+      "authority_type": "statute",
+      "text": "All civil actions shall be commenced within 6 years after the cause of action accrues and not afterwards, except actions on a judgment or decree of any court of record of the United States, or of any state, or of a justice of the peace in this State, and except as otherwise specially provided.",
+      "text_sha256": "06d32b803495ec74c2f3ddceb0e8e36da3161898c314946292e69e41139b1e2c",
+      "publisher_sha256": "0069d0fa956ed2a7aabe5fe2f99a5fbfe8fefc9eeb9c957609af14edaff0c0bd",
+      "retrieved_at": "2026-11-17T19:33:57.904323+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "3be5c40580c94d74ce98f50ff677bf": {
+      "citation": "14 M.R.S. § 156",
+      "source_id": "US-ME:fault:e602808291ba",
+      "authority_type": "statute",
+      "text": "When any person suffers death or damage as a result partly of that person's own fault and partly of the fault of any other person or persons, a claim in respect of that death or damage may not be defeated by reason of the fault of the person suffering the damage, but the damages recoverable in respect thereof must be reduced to such extent as the jury thinks just and equitable having regard to the claimant's share in the responsibility for the damage. [PL 1999, c. 633, §1 (AMD); PL 1999, c. 633, §3 (AFF).] When damages are recoverable by any person by virtue of this section, subject to such reduction as is mentioned, the court shall instruct the jury to find and record the total damages that would have been recoverable if the claimant had not been at fault, and further instruct the jury to reduce the total damages by dollars and cents, and not by percentage, to the extent considered just and equitable, having regard to the claimant's share in the responsibility for the damages, and instruct the jury to return both amounts with the knowledge that the lesser figure is the final verdict in the case. [PL 1999, c. 633, §1 (AMD); PL 1999, c. 633, §3 (AFF).] Fault means negligence, breach of statutory duty or other act or omission that gives rise to a liability in tort or would, apart from this section, give rise to the defense of contributory negligence. [PL 1999, c. 633, §1 (AMD); PL 1999, c. 633, §3 (AFF).] If such claimant is found by the jury to be equally at fault, the claimant may not recover. [PL 1999, c. 633, §1 (AMD); PL 1999, c. 633, §3 (AFF).]",
+      "text_sha256": "8cac4849b3a2cd6f3a4a01bf08d1ee9d5df262902306ce0ae1a735ed6abeb19c",
+      "publisher_sha256": "9daee217a9c5256ff4c425bad0082533d7dc74294bae1d28cadec3ce8440c2b0",
+      "retrieved_at": "2026-11-17T19:42:51.278312+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "e3c4ad62ee2c43f68b20d2122b9f4c": {
+      "citation": "26 M.R.S. § 621-A",
+      "source_id": "US-ME:wageLaw:a8c89723688e",
+      "authority_type": "statute",
+      "text": "1. Minimum frequency and full payment. At regular intervals not to exceed 16 days, every employer must pay in full all wages earned by each employee, except members of the family of the employer and salaried employees. Each payment must include all wages earned to within 8 days of the payment date. Payments that fall on a day when the business is regularly closed must be paid no later than the following business day. An employee who is absent from work at a time fixed for payment must be paid as if the employee was not absent. For purposes of this subsection, \"members of the family of the employer\" and \"salaried employees\" have the same meanings as described in section 663, subsection 3, paragraphs J and K, respectively.",
+      "text_sha256": "b376b8442ea46a7ca366c5e30baa919fb5926914b947bbcdf40fcd16c8ba99f4",
+      "publisher_sha256": "02da9697343ca4b3f862ef81b931b47125a1ea830c2375b282e4271da7c2de7d",
+      "retrieved_at": "2026-11-17T19:42:51.050941+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "b113f60a50326193acb99295569d72": {
+      "citation": "5 M.R.S. § 207",
+      "source_id": "US-ME:consumerLaw:56ff9a5131c3",
+      "authority_type": "statute",
+      "text": "Unfair methods of competition and unfair or deceptive acts or practices in the conduct of any trade or commerce are declared unlawful.",
+      "text_sha256": "5a886a7a52fed4ff38d3556edaf237caf5912005521c82f1dbab3f74b9599159",
+      "publisher_sha256": "e65749a80dd680f29f3b960692cc77cedadba2fa59ba4e02e6ffc805567d602c",
+      "retrieved_at": "2026-11-17T19:42:03.401162+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "d0d68a2a21bdbea1bafeb750997843": {
+      "source_id": "US-ME:commencement:5016b7dc6716",
+      "citation": "Me. R. Civ. P. 3",
+      "authority_type": "court_rule",
+      "language": "en",
+      "text": "Except as otherwise provided in these rules, a civil action is commenced in one of two ways: (a) Service. A civil action may be commenced by the service of a summons, complaint, and notice regarding Electronic Service . If so commenced, the complaint must be filed with the court within 20 days after completion of service of the summons, complaint, and notice regarding Electronic Service. (b) Filing. A civil action may be commenced by filing a complaint with the court. If so commenced , the return of service shall be filed with the court within 90 days after the filing of the complaint. If the complaint or the return of service is not timely filed, the action may be dismissed on motion and notice, and in such case the court may, in its discretion, if it shall be of the opinion that the action was vexatiously commenced, tax a reasonable attorney fee as costs in favor of the defendant, to be recovered of the plaintiff or the plaintiff’s attorney.",
+      "text_sha256": "2ec5788e563b9efeb13f902d650c6b7c4bfda376520f282bdf5605ed631e828b",
+      "publisher_sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0",
+      "retrieved_at": "2026-11-17T20:14:17.739999+00:00",
+      "currentness": "unresolved"
+    },
+    "65b5e2e295710401d0a24a9f6ff697": {
+      "source_id": "US-ME:contract_formation:1bb204676004",
+      "authority_type": "statute",
+      "citation": "11 M.R.S. § 2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "e5d73c3838e8a27d7b696658b29ba4b6b3af39389f308af21893a2ad88631048",
+      "retrieved_at": "2026-11-18T15:14:30.513400+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "5f879262d81397907b4455f3cde0d8": {
+      "source_id": "US-ME:service:9f018fb2f6d7",
+      "authority_type": "court_rule",
+      "citation": "Me. R. Civ. P. 4(d)(1)",
+      "text": "(d) Summons: Personal Service. The summons, complaint, and notice regarding Electronic Service shall be served together. Personal service within the state shall be made as follows: (1) Upon an individual other than a minor or an incompetent person, by delivering a copy of the summons, complaint, and notice regarding Electronic Service to the individual personally or by leaving copies thereof at the individual’s dwelling house or usual place of abode with some person of suitable age and discretion then residing therein or by delivering a copy of the summons, complaint, and notice regarding Electronic Service to an agent authorized by appointment or by law to receive service of process, provided that if the agent is one designated by statute to receive service, such further notice as the statute requires shall be given. The court, on motion, upon a showing that service as prescribed above cannot be made with due diligence, may order service to be made pursuant to subdivision (g) of this rule.",
+      "text_sha256": "c7a5f310c3836263e60563970cd6ad712e8d814fafc9a135a87ec186caa908d6",
+      "publisher_sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0",
+      "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Maine Rules of Civil Procedure edition including amendments effective June 1, 2026",
+      "court": "Maine courts governed by the Civil Rules"
+    },
+    "972fd0270e80c3d6968df5bd7372ae": {
+      "source_id": "US-ME:response:bf6a167ca784",
+      "authority_type": "court_rule",
+      "citation": "Me. R. Civ. P. 12(a)",
+      "text": "(a) When Presented. A defendant shall serve that defendant’s answer within 20 days after the service of the summons, complaint, and notice regarding Electronic Service upon that defendant, unless the court directs otherwise when service of process is made pursuant to an order of court under Rule 4(d) or 4(g), and provided that a defendant served pursuant to Rule 4(e), 4(f), or 4(j) outside the Continental United States or Canada may serve the answer at any time within 50 days after such service. A party who is served with a pleading stating a cross-claim against that party shall serve an answer thereto within 20 days after the service upon that party. The plaintiff shall serve a reply to a counterclaim in the answer within 20 days after service of the answer or, if a reply is ordered by the court, within 20 days after service of the order, unless the order otherwise directs. The service of a motion permitted under this rule alters these periods of time as follows, unless a different time is fixed by order of the court: (1) if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within 10 days after notice of the court’s action; (2) if the court grants a motion for a more definite statement the responsive pleading shall be served within 10 days after the service of the more definite statement.",
+      "text_sha256": "c144f071265d0ee4735b5b2cfd1952908eb6a080386ddb9681210aae12662adb",
+      "publisher_sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0",
+      "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Maine Rules of Civil Procedure edition including amendments effective June 1, 2026",
+      "court": "Maine courts governed by the Civil Rules"
+    },
+    "3a046e255dedb7855c62e110a31ec8": {
+      "source_id": "US-ME:small_claims:fae6ae1f0cdb",
+      "authority_type": "statute",
+      "citation": "14 M.R.S. § 7482, first paragraph",
+      "text": "Notwithstanding the total amount of a debt or contract, a \"small claim\" means a right of action cognizable by a court if the debt or damage does not exceed $10,000 exclusive of interest and costs. It does not include an action involving the title to real estate.",
+      "text_sha256": "9939bd8ed7fb886f2c2e75ce3d2dfd4ba9f7dac9cffa3294fedda20012fc3093",
+      "publisher_sha256": "ca5bcc13fb4732cbb086d16a77dd5b452f947aecd3f529a4fe62219becd6cc19",
+      "retrieved_at": "2026-11-20T16:16:29.885821+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Maine District Court sitting in small claims"
+    },
+    "cdc5790da9573c2bafb15a0393e4e2": {
+      "source_id": "US-ME:deposit:7c63d4f11ad9",
+      "authority_type": "statute",
+      "citation": "Me. Rev. Stat. tit. 14, § 6033(2)–(3)",
+      "text": "2. Return; time; retention. A landlord shall return to a tenant the full security deposit deposited with the landlord by the tenant or, if there is actual cause for retaining the security deposit or any portion of it, the landlord shall provide the tenant with a written statement itemizing the reasons for the retention of the security deposit or any portion of it: A. In the case of a written rental agreement, within the time, not to exceed 30 days, stated in the agreement; and B. In the case of a tenancy at will, within 21 days after the termination of the tenancy or the surrender and acceptance of the premises, whichever occurs later. The written statement itemizing the reasons for the retention of any portion of the security deposit must be accompanied by a full payment of the difference between the security deposit and the amount retained. Reasons for which a landlord may retain the security deposit or a portion of the security deposit include, but are not limited to, covering the costs of storing and disposing of unclaimed property, nonpayment of rent and nonpayment of utility charges that the tenant was required to pay directly to the landlord. The landlord is deemed to have complied with this section by mailing the statement and any payment required to the last known address of the tenant. 3. Penalty. If a landlord fails to provide a written statement or to return the security deposit within the time specified in subsection 2, the landlord shall forfeit his right to withhold any portion of the security deposit.",
+      "text_sha256": "852092b9abf460ed888efbacf419ef2a737a00ddca39955b9b1d690c02817728",
+      "publisher_sha256": "f7b27a670f5288235670110ef7661d0d4740294056c7f14edb498ffcbf6e5f44",
+      "retrieved_at": "2026-11-20T16:35:17.162832+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "2c744af4dbc819b4129d41c361f50d": {
+      "source_id": "US-ME:fault:15d129a1ef82",
+      "authority_type": "statute",
+      "citation": "Me. Rev. Stat. tit. 14, § 156",
+      "text": "When any person suffers death or damage as a result partly of that person's own fault and partly of the fault of any other person or persons, a claim in respect of that death or damage may not be defeated by reason of the fault of the person suffering the damage, but the damages recoverable in respect thereof must be reduced to such extent as the jury thinks just and equitable having regard to the claimant's share in the responsibility for the damage. When damages are recoverable by any person by virtue of this section, subject to such reduction as is mentioned, the court shall instruct the jury to find and record the total damages that would have been recoverable if the claimant had not been at fault, and further instruct the jury to reduce the total damages by dollars and cents, and not by percentage, to the extent considered just and equitable, having regard to the claimant's share in the responsibility for the damages, and instruct the jury to return both amounts with the knowledge that the lesser figure is the final verdict in the case. Fault means negligence, breach of statutory duty or other act or omission that gives rise to a liability in tort or would, apart from this section, give rise to the defense of contributory negligence. If such claimant is found by the jury to be equally at fault, the claimant may not recover. In a case involving multiparty defendants, each defendant is jointly and severally liable to the plaintiff for the full amount of the plaintiff's damages. However, any defendant has the right through the use of special interrogatories to request of the jury the percentage of fault contributed by each defendant. If a defendant is released by the plaintiff under an agreement that precludes the plaintiff from collecting against remaining parties that portion of any damages attributable to the released defendant's share of responsibility, then the following rules apply. 1. General rule. The released defendant is entitled to be dismissed with prejudice from the case. The dismissal bars all related claims for contribution assertable by remaining parties against the released defendant. 2. Post-dismissal procedures. The trial court must preserve for the remaining parties a fair opportunity to adjudicate the liability of the released and dismissed defendant. Remaining parties may conduct discovery against a released and dismissed defendant and invoke evidentiary rules at trial as if the released and dismissed defendant were still a party. 3. Binding effect. To apportion responsibility in the pending action for claims that were included in the settlement and presented at trial, a finding on the issue of the released and dismissed defendant's liability binds all parties to the suit, but such a finding has no binding effect in other actions relating to other damage claims.",
+      "text_sha256": "a791e744aec3822dd5f15d21224ac2fc631cfd2a40769d903417c54e8a22727d",
+      "publisher_sha256": "ce14c76f73c543f0202e0a2d34f183f658f9ef2795d60017e4f89f30d6eb32d4",
+      "retrieved_at": "2026-11-20T16:43:48.776555+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Revisor’s 132nd Legislature Second Regular Session compilation, current through October 1, 2026"
+    },
+    "155c1e7e66081c444a36788da10e85": {
+      "source_id": "US-ME:pi_limitations:9e93d719e332",
+      "authority_type": "statute",
+      "citation": "Me. Rev. Stat. tit. 14, § 752",
+      "text": "All civil actions shall be commenced within 6 years after the cause of action accrues and not afterwards, except actions on a judgment or decree of any court of record of the United States, or of any state, or of a justice of the peace in this State, and except as otherwise specially provided.",
+      "text_sha256": "06d32b803495ec74c2f3ddceb0e8e36da3161898c314946292e69e41139b1e2c",
+      "publisher_sha256": "c73441fa4fe364fb89f730b7c485e7e9cf6d746a5a4521136c4f6c33190a350e",
+      "retrieved_at": "2026-11-20T16:43:48.034890+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Revisor’s 132nd Legislature Second Regular Session compilation, current through October 1, 2026"
+    },
+    "a5f88531d6a64ee1c740a377c447ca": {
+      "source_id": "US-ME:tolling:76978c696eff",
+      "authority_type": "statute",
+      "citation": "Me. Rev. Stat. tit. 14, § 853",
+      "text": "If a person entitled to bring any of the actions under sections 752 to 754, including section 752‑C, and under sections 851 and 852 and Title 24, section 2902 and, until July 1, 2017, Title 24, section 2902‑B is a minor, mentally ill, imprisoned or without the limits of the United States when the cause of action accrues, the action may be brought within the times limited herein after the disability is removed.",
+      "text_sha256": "d3799f0aa898c0ad7f299a485e036c3124e21fbbf3bf1ed96e4570595c0bb3de",
+      "publisher_sha256": "a6c92dc7c60f52f03ad73c0ba796dae284b9dfb18e02efc7982d24e401e259c3",
+      "retrieved_at": "2026-11-20T16:43:48.041014+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Revisor’s 132nd Legislature Second Regular Session compilation, current through October 1, 2026"
+    },
+    "5bdf8f6a87c1dc7a49517e5f8a5d39": {
+      "source_id": "US-ME:accrual:ceb650657e15",
+      "authority_type": "statute",
+      "citation": "Me. Rev. Stat. tit. 14, § 859",
+      "text": "If a person, liable to any action mentioned, fraudulently conceals the cause thereof from the person entitled thereto, or if a fraud is committed which entitles any person to an action, the action may be commenced at any time within 6 years after the person entitled thereto discovers that he has just cause of action, except as provided in section 3580.",
+      "text_sha256": "f5a7e07f3274a22049e4e320cd70829f8f5480baa5b2f71e41064f156069f276",
+      "publisher_sha256": "55a9f8b6f15a35eb122a4a9a84a38e803aa44a0776c5fac90699f8025a3d5e87",
+      "retrieved_at": "2026-11-20T16:43:48.470302+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Revisor’s 132nd Legislature Second Regular Session compilation, current through October 1, 2026"
+    },
+    "dc7aac29f555cea1d8b1c272773f9f": {
+      "source_id": "US-ME:habitability:43c02d6441c6",
+      "authority_type": "statute",
+      "citation": "Me. Rev. Stat. tit. 14, § 6021(2)–(3)",
+      "text": "2. Implied warranty of fitness for human habitation. In any written or oral agreement for rental of a dwelling unit, the landlord shall be deemed to covenant and warrant that the dwelling unit is fit for human habitation. 3. Complaints. If a condition exists in a dwelling unit which renders the dwelling unit unfit for human habitation, then a tenant may file a complaint against the landlord in the District Court or Superior Court. The complaint shall state that: A. A condition, which shall be described, endangers or materially impairs the health or safety of the tenants; B. The condition was not caused by the tenant or another person acting under his control; C. Written notice of the condition without unreasonable delay, was given to the landlord or to the person who customarily collects rent on behalf of the landlord; D. The landlord unreasonably failed under the circumstances to take prompt, effective steps to repair or remedy the condition; and E. The tenant was current in rental payments owing to the landlord at the time written notice was given. The notice requirement of paragraph C may be satisfied by actual notice to the person who customarily collects rents on behalf of the landlord.",
+      "text_sha256": "4bf3c0a9d00c34244d2341eeae5a777fde715bbbb0d6509250e190a5f165bee5",
+      "publisher_sha256": "d6e96bf456b1bb5274f4be3c23c6a15da309d98fb57e314ad2e457aece1c88ff",
+      "retrieved_at": "2026-11-20T16:43:48.390575+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Revisor’s 132nd Legislature Second Regular Session compilation, current through October 1, 2026"
+    },
+    "2eaa7a94b25f50a2f2752ab753f3ed": {
+      "source_id": "US-ME:deposit:c41c14defb74",
+      "authority_type": "statute",
+      "citation": "Me. Rev. Stat. tit. 14, § 6033(2)–(3)",
+      "text": "2. Return; time; retention. A landlord shall return to a tenant the full security deposit deposited with the landlord by the tenant or, if there is actual cause for retaining the security deposit or any portion of it, the landlord shall provide the tenant with a written statement itemizing the reasons for the retention of the security deposit or any portion of it: A. In the case of a written rental agreement, within the time, not to exceed 30 days, stated in the agreement; and B. In the case of a tenancy at will, within 21 days after the termination of the tenancy or the surrender and acceptance of the premises, whichever occurs later. The written statement itemizing the reasons for the retention of any portion of the security deposit must be accompanied by a full payment of the difference between the security deposit and the amount retained. Reasons for which a landlord may retain the security deposit or a portion of the security deposit include, but are not limited to, covering the costs of storing and disposing of unclaimed property, nonpayment of rent and nonpayment of utility charges that the tenant was required to pay directly to the landlord. The landlord is deemed to have complied with this section by mailing the statement and any payment required to the last known address of the tenant. 3. Penalty. If a landlord fails to provide a written statement or to return the security deposit within the time specified in subsection 2, the landlord shall forfeit his right to withhold any portion of the security deposit.",
+      "text_sha256": "852092b9abf460ed888efbacf419ef2a737a00ddca39955b9b1d690c02817728",
+      "publisher_sha256": "a83cbc353c28ae8882c0dfe8acde24e82911c904ea84aa31a45ad7a30e2183da",
+      "retrieved_at": "2026-11-20T16:43:48.007842+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Revisor’s 132nd Legislature Second Regular Session compilation, current through October 1, 2026"
+    },
+    "2a840ee78c41c8e6ed807a61019bb9": {
+      "source_id": "US-ME:small_claims:52eeed8d04f2",
+      "authority_type": "statute",
+      "citation": "Me. Rev. Stat. tit. 14, § 7482",
+      "text": "Notwithstanding the total amount of a debt or contract, a \"small claim\" means a right of action cognizable by a court if the debt or damage does not exceed $10,000 exclusive of interest and costs. It does not include an action involving the title to real estate. Effective July 1, 1997 and every 4 years after that date, the joint standing committee of the Legislature having jurisdiction over judiciary matters shall review the monetary limit on small claims actions and the Judicial Department shall periodically provide information and comments on the monetary limit on small claims actions to that committee.",
+      "text_sha256": "9747e9f882e71e86abdf81d756d671e4dd54fd71bbe6f9212c4003123cd361ec",
+      "publisher_sha256": "9d60189712832c8e31f3dc2689fdfce26d3d7704d6ab9c1447f3e2ffbcaa9e68",
+      "retrieved_at": "2026-11-20T16:43:48.417931+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Revisor’s 132nd Legislature Second Regular Session compilation, current through October 1, 2026"
+    },
+    "3fd407362a25bd55344da3e4401da9": {
+      "source_id": "US-ME:small_claims:e8a3c3599ab2",
+      "authority_type": "statute",
+      "citation": "Me. Rev. Stat. tit. 14, § 7483",
+      "text": "A small claim shall be brought in the division of the District Court where the transaction occurred, where the defendant resides, where the defendant has a place of business or, if the defendant is a corporation or partnership, where its registered agent resides.",
+      "text_sha256": "53aa298582a069eb8ef1b31fb408986f71c5ee60c4ddde0844f7ace1d1aceab8",
+      "publisher_sha256": "3078872e76e68dfb45cce1569bd953236f33dbaba5eeb7c61c219b4dc080b8cb",
+      "retrieved_at": "2026-11-20T16:43:48.431676+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Revisor’s 132nd Legislature Second Regular Session compilation, current through October 1, 2026"
+    },
+    "0915cde5755a0b9a9d3e3df870abe1": {
+      "source_id": "US-ME:consumerLaw:efd134ce21c9",
+      "authority_type": "statute",
+      "citation": "Me. Rev. Stat. tit. 5, § 207",
+      "text": "Unfair methods of competition and unfair or deceptive acts or practices in the conduct of any trade or commerce are declared unlawful. 1. Intent. It is the intent of the Legislature that in construing this section the courts will be guided by the interpretations given by the Federal Trade Commission and the Federal Courts to Section 45(a)(1) of the Federal Trade Commission Act (15 United States Code 45(a)(1)), as from time to time amended. 2. Rules and regulations. The Attorney General may make rules and regulations interpreting this section. Such rules and regulations shall not be inconsistent with the rules, regulations and decisions of the Federal Trade Commission and the Federal Courts interpreting the provisions of 15 U.S.C. 45(a)(1) (The Federal Trade Commission Act) as from time to time amended. Evidence of a violation of a rule or regulation made by the Attorney General shall constitute prima facie evidence of an act or practice declared to be unlawful by this chapter in any action thereafter brought under this chapter.",
+      "text_sha256": "71b0c910564ae4f8e42dc575434950b5a166f5e50d1c347f8537ade15e9570b8",
+      "publisher_sha256": "ad9dd65489af711ed6ab0f76af20ce290e0f0fb74ed667b1812901850a22b40e",
+      "retrieved_at": "2026-11-20T16:43:48.809913+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Revisor’s 132nd Legislature Second Regular Session compilation, current through October 1, 2026"
+    },
+    "4ff28d21761e51509ce8dc31d447b9": {
+      "source_id": "US-ME:consumer_private_action:95aa5c97f399",
+      "authority_type": "statute",
+      "citation": "Me. Rev. Stat. tit. 5, § 213(1)–(2)",
+      "text": "1. Court action. Any person who purchases or leases goods, services or property, real or personal, primarily for personal, family or household purposes and thereby suffers any loss of money or property, real or personal, as a result of the use or employment by another person of a method, act or practice declared unlawful by section 207 or by any rule or regulation issued under section 207, subsection 2 may bring an action either in the Superior Court or District Court for actual damages, restitution and for such other equitable relief, including an injunction, as the court determines to be necessary and proper. There is a right to trial by jury in any action brought in Superior Court under this section. 1-A. Settlement offer. At least 30 days prior to the filing of an action for damages, a written demand for relief, identifying the claimant and reasonably describing the unfair and deceptive act or practice relied upon and the injuries suffered, must be mailed or delivered to any prospective respondent at the respondent's last known address. A person receiving a demand for relief, or otherwise a party to any litigation arising from the claim that is the subject of the court action, may make a written tender of settlement or, if a court action has been filed, an offer of judgment. If the judgment obtained in court by a claimant is not more favorable than any rejected tender of settlement or offer of judgment, the claimant may not recover attorney's fees or costs incurred after the more favorable tender of settlement or offer of judgment. The demand requirement of this subsection does not apply if the claim is asserted by way of counterclaim or cross claim. 2. Fees and costs. If the court finds, in any action commenced under this section that there has been a violation of section 207, the petitioner shall, in addition to other relief provided for by this section and irrespective of the amount in controversy, be awarded reasonable attorney's fees and costs incurred in connection with said action.",
+      "text_sha256": "8c830d83f0ce537764d558b1302ee1b04bbf50d29f66fd7c0e2f28b0d0bb68d5",
+      "publisher_sha256": "4ec3129c8e0fef1d2d7342b2109dac1283dc86e6611674b364dde1fac34d9921",
+      "retrieved_at": "2026-11-20T16:43:48.815917+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Revisor’s 132nd Legislature Second Regular Session compilation, current through October 1, 2026"
+    },
+    "8de855f31fdcf4d321d33f1e637b02": {
+      "source_id": "US-ME:wageLaw:a2dc96a38854",
+      "authority_type": "statute",
+      "citation": "Me. Rev. Stat. tit. 26, § 621-A(1)–(2)",
+      "text": "1. Minimum frequency and full payment. At regular intervals not to exceed 16 days, every employer must pay in full all wages earned by each employee, except members of the family of the employer and salaried employees. Each payment must include all wages earned to within 8 days of the payment date. Payments that fall on a day when the business is regularly closed must be paid no later than the following business day. An employee who is absent from work at a time fixed for payment must be paid as if the employee was not absent. For purposes of this subsection, \"members of the family of the employer\" and \"salaried employees\" have the same meanings as described in section 663, subsection 3, paragraphs J and K, respectively. 2. Regular payment required. Wages must be paid on an established day or date at regular intervals made known to the employee. The interval may not be increased without written notice to the employee at least 30 days in advance of the increase.",
+      "text_sha256": "c968c052f9190cc3fe83fd04de6cbe130a4411a841b671d9ec345bad15bc5dd3",
+      "publisher_sha256": "ef2da2bd9585238c7ce2b69654d30281227f0c8bf4474f98dcdafdfbd82b586a",
+      "retrieved_at": "2026-11-20T16:43:48.851631+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Revisor’s 132nd Legislature Second Regular Session compilation, current through October 1, 2026"
+    },
+    "062d0671ed59257ab4b98bdfbd6028": {
+      "source_id": "US-ME:wage_enforcement:b44e102cbf02",
+      "authority_type": "statute",
+      "citation": "Me. Rev. Stat. tit. 26, § 626",
+      "text": "An employee leaving employment must be paid in full no later than the employee's next established payday. Any overcompensation may be withheld if authorized under section 635 and any loan or advance against future earnings or wages may be deducted if evidenced by a statement in writing signed by the employee. Whenever the terms of employment or the employer's established practice includes provisions for paid vacations, vacation pay on cessation of employment has the same status as wages earned. All unused paid vacation accrued pursuant to the employer's vacation policy on and after January 1, 2023 must be paid to the employee on cessation of employment unless the employee is employed by an employer with 10 or fewer employees or by a public employer. If the employee’s employment is governed by a collective bargaining agreement that includes provisions addressing payment of vacation pay upon cessation of employment, the collective bargaining agreement supersedes this paragraph. For purposes of this section, the term \"employee\" means any person who performs services for another in return for compensation, but does not include an independent contractor. For purposes of this subchapter, a reasonable time means the earlier of either the next day on which employees would regularly be paid or a day not more than 2 weeks after the day on which the demand is made. In any action for unpaid wages brought under this subchapter, the employer may not deduct as a setoff or counterclaim any money allegedly due the employer as compensation for damages caused to the employer's property by the employee, or any money allegedly owed to the employer by the employee, notwithstanding any procedural rules regarding counteractions, provided that any overcompensation may be withheld if authorized under section 635 and any loan or advance against future earnings or wages may be deducted if evidenced by a statement in writing signed by the employee, and that nothing in this section may be construed to limit or restrict in any way any rights that the employer has to recover, by a separate legal action, any money owed the employer by the employee. An action for unpaid wages under this section may be brought by the affected employee or employees or by the Department of Labor on behalf of the employee or employees. An employer found in violation of this section is liable for the amount of unpaid wages and all accrued vacation pay that must be paid to the employee or employees on cessation of employment pursuant to this section. In addition, the judgment rendered in favor of the employee or employees must include a reasonable rate of interest, an additional amount equal to twice the amount of those unpaid wages and that accrued vacation pay as liquidated damages and costs of suit, including a reasonable attorney's fee. Within 2 weeks after the sale of a business, the seller of the business shall pay employees of that business any wages earned while employed by the seller. If the terms of employment or the employer's established practice includes provisions for paid vacations, vacation pay on cessation of employment has the same status as wages earned. All unused paid vacation accrued pursuant to the employer's vacation policy on and after January 1, 2023 must be paid to the employees on cessation of employment unless the employer has 10 or fewer employees or is a public employer. If the employees' employment is governed by a collective bargaining agreement that includes provisions addressing payment of vacation pay upon cessation of employment, the collective bargaining agreement supersedes this paragraph. The seller of a business may comply with the provisions of this paragraph through a specific agreement with the buyer in which the buyer agrees to pay any wages earned by employees through employment with the seller and to honor any paid vacation earned under the seller's vacation policy. For the purposes of this section, \"public employer\" means the State, a county, a municipality, the University of Maine System, the Maine Community College System, a school administrative unit and any other political body or its political or administrative subdivision.",
+      "text_sha256": "f8976dff2691c3ebf1c6bb5afce9e727d63228fd94703fdde72dbf98bd44bf97",
+      "publisher_sha256": "9d1b1821ce1272724f7f809e77231b1a03f78455a2bf78f043f79cb1dfef6c60",
+      "retrieved_at": "2026-11-20T16:43:49.351279+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Revisor’s 132nd Legislature Second Regular Session compilation, current through October 1, 2026"
+    },
+    "dc82484d079d04cb985f0cfeaed6b8": {
+      "source_id": "US-ME:debtLaw:7ea29c069023",
+      "authority_type": "statute",
+      "citation": "Me. Rev. Stat. tit. 32, § 11013(1)",
+      "text": "1. Harassment or abuse. A debt collector may not engage in any conduct, the natural consequence of which is to harass, oppress or abuse any person in connection with the collection of a debt. Without limiting the general application of this subsection, the following conduct is a violation of this section: A. The use or threat of use of violence or other criminal means to harm the physical person, reputation or property of any person; B. The use of obscene or profane language, or language the natural consequence of which is to abuse the hearer or reader; C. The publication of a list of consumers who allegedly refuse to pay debts, except to a consumer reporting agency or to persons meeting the requirements of Title 10, chapter 209‑B; D. The advertisement for sale of any debt to coerce payment of the debt; E. Causing a telephone to ring or engaging any person in telephone conversation repeatedly or continuously with intent to annoy, abuse or harass any person at the called number; F. Except as provided in section 11011, the placement of telephone calls without meaningful disclosure of the caller's identity; and G. The use of \"shame cards,\" \"shame automobiles\" or similar devices.",
+      "text_sha256": "b3edec283e911f5ffe3449d3029034d1b3985e7b25dd331360c790e7be71e4bb",
+      "publisher_sha256": "4df9b72e9635910dd40b643afcaa2ccfb06c5daa0b90b1a957c3fdfcf2c7c45c",
+      "retrieved_at": "2026-11-20T16:43:49.241225+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Revisor’s 132nd Legislature Second Regular Session compilation, current through October 1, 2026"
+    },
+    "9e1f13a6c95d91d5858523130cbdd8": {
+      "source_id": "US-ME:debtLaw:79943b5d7692",
+      "authority_type": "statute",
+      "citation": "Me. Rev. Stat. tit. 32, § 11014",
+      "text": "1. Written notice. Within 5 days after the initial communication with a consumer in connection with the collection of any debt, a debt collector shall, unless the following information is contained in the initial communication or the consumer has paid the debt, send the consumer a written notice containing: A. The amount of the debt; B. The name of the creditor to whom the debt is owed; C. A statement that unless the consumer, within 30 days after receipt of the notice, disputes the validity of the debt or any portion of the debt, the debt will be assumed to be valid by the debt collector; D. A statement that if the consumer notifies the debt collector in writing within the 30-day period that the debt, or any portion of the debt, is disputed, the debt collector will obtain verification of the debt or a copy of a judgment against the consumer and a copy of the verification or judgment will be mailed to the consumer by the debt collector; and E. A statement that, upon the consumer's written request within the 30-day period, the debt collector will provide the consumer with the name and address of the original creditor, if different from the current creditor. 2. Cease collection. If the consumer notifies the debt collector in writing within the 30-day period described in subsection 1 that the debt, or any portion of the debt, is disputed or that the consumer requests the name and address of the original creditor, the debt collector shall cease collection of the debt or any disputed portion of the debt, until the debt collector obtains verification of the debt or a copy of the judgment, or the name and address of the original creditor, and a copy of the verification or judgment, or name and address of the original creditor, is mailed to the consumer by the debt collector. 2-A. Economic abuse. If the consumer provides documentation to the debt collector as set forth in Title 14, section 6001, subsection 6, paragraph H that the debt or any portion of the debt is the result of economic abuse as defined in Title 19‑A, section 4102, subsection 5, the debt collector shall cease collection of the debt or any disputed portion of the debt owed by the consumer subjected to economic abuse. 3. Liability. The failure of a consumer to dispute the validity of a debt under this section may not be construed by any court as an admission of liability by the consumer.",
+      "text_sha256": "d17dbe2fa9e740514c7dd52a9fa17eec1f3fff632497d6b8d3a7277bc0423d34",
+      "publisher_sha256": "28c7bb356b6bc0d398c2e5a4e701c851b8d36d813b7fe73a4eaab9c525fdec5e",
+      "retrieved_at": "2026-11-20T16:43:49.188164+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Revisor’s 132nd Legislature Second Regular Session compilation, current through October 1, 2026"
+    },
+    "23f846cc3b6171a021db81a2218787": {
+      "source_id": "US-ME:negligence_elements:93a69a2e4a19",
+      "authority_type": "opinion",
+      "citation": "Murdock v. Thorne, 2017 ME 136, ¶ 11 (corrected July 25, 2017)",
+      "text": "A prima facie case of negligence requires a plaintiff to establish four elements: duty, breach, causation, and damages.",
+      "text_sha256": "fb5e8182564e4befb6d73e18a338f56c5707fe1e38741026a5b7ba85187bd975",
+      "publisher_sha256": "81f7ed1022cd6f17243c4f65df443f137b1fc27b3fc8f3bc5b089328dfb8de85",
+      "retrieved_at": "2026-11-20T17:40:12.375184+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2017-06-27",
+      "court": "Maine Supreme Judicial Court",
+      "procedural_posture": "Appeal from summary judgment in a motor-vehicle negligence action involving a signal from another driver. The court affirmed based on causation.",
+      "opinion_role": "majority",
+      "decision_date": "2017-06-27"
+    }
+  },
+  "fault_allocation": {
+    "regime": "other_state_specific",
+    "passage_selector": "2c744af4dbc819b4129d41c361f50d",
+    "source_id": "US-ME:fault:15d129a1ef82",
+    "currentness": "unresolved",
+    "qualification": "The rule contains an equal-fault bar, a just-and-equitable reduction stated in dollars and cents, and separate provisions for released defendants and multiple parties."
+  }
+}

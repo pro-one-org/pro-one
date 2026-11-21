@@ -12,11 +12,11 @@ from app.corpus import passage_relationship_errors
 from app.legal_research import GeneralLegalResearchService, evidence_errors
 from app.matter_models import Target
 from app.matter_state import EVENT_FIELDS, OPTIONAL_EVENT_FIELDS, PARTY_FIELDS, MatterError, projection
-from app.procedural_research import US_STATE_NAMES
+from app.jurisdictions import registry
 
 
 CATALOG = TypeAdapter(tuple[LegalTheory, ...])
-INACTIVE = {"historical", "superseded", "repealed", "proposed"}
+INACTIVE = {"historical", "superseded", "repealed", "proposed", "review_required", "future_effective"}
 
 
 def fingerprint(value):
@@ -130,7 +130,7 @@ class ClaimCatalog:
                     or any((row.jurisdiction, row.kind, row.legal_area)
                            != (first.jurisdiction, first.kind, first.legal_area) for row in group)):
                 raise ValueError("invalid_theory_version_identity")
-            if first.jurisdiction != "US" and first.jurisdiction[3:] not in US_STATE_NAMES:
+            if first.jurisdiction not in registry():
                 raise ValueError("invalid_theory_jurisdiction")
             for theory in group:
                 related = versions.get(theory.related_theory, ())
@@ -148,8 +148,11 @@ class ClaimCatalog:
         self.active = {key: group[-1] for key, group in versions.items()}
 
     def research(self, theory, settings=None, law_as_of=None, *, packages=None):
-        query = ResearchMatter(country="US", sovereign="federal" if theory.jurisdiction == "US" else "state",
-                               state=US_STATE_NAMES.get(theory.jurisdiction[3:]), legal_area=theory.legal_area,
+        if theory.authority_as_of is not None and theory.authority_as_of != law_as_of:
+            return {}, (), ()
+        owner = registry()[theory.jurisdiction]
+        query = ResearchMatter(country="US", sovereign=owner.kind,
+                               state=owner.name if owner.kind != "federal" else None, legal_area=theory.legal_area,
                                topics=list(theory.topics), authority_status="current" if law_as_of else "unresolved",
                                authority_as_of=law_as_of.isoformat() if law_as_of else None)
         packages = {} if packages is None else packages
@@ -191,7 +194,7 @@ class ClaimCatalog:
     def validate(self):
         packages = {}
         for theory in self.versions:
-            bindings, _, _ = self.research(theory, packages=packages)
+            bindings, _, _ = self.research(theory, law_as_of=theory.authority_as_of, packages=packages)
             if set(bindings) != {element.id for element in theory.elements}:
                 raise ValueError(f"unbound_catalog_authority:{theory.id}:{theory.version}")
 

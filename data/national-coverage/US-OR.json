@@ -1,0 +1,658 @@
+{
+  "jurisdiction": "US-OR",
+  "version": "1",
+  "sources": {
+    "US-OR:statutes:11843e19968c": {
+      "category": "statutes",
+      "title": "Oregon Revised Statutes",
+      "url": "http://www.oregonlegislature.gov/bills_laws/Pages/ORS.aspx",
+      "directory": "codes",
+      "locator": "Oregon"
+    },
+    "US-OR:constitution:cee8aef619a0": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.oregonlegislature.gov/bills_laws/Pages/OrConst.aspx",
+      "directory": "codes",
+      "locator": "Oregon"
+    },
+    "US-OR:legislature:fa6c5309dfda": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.oregonlegislature.gov/",
+      "directory": "codes",
+      "locator": "Oregon"
+    },
+    "US-OR:labor_agency:004b3de49505": {
+      "category": "labor_agency",
+      "title": "www.oregon.gov/boli",
+      "url": "http://www.oregon.gov/boli",
+      "directory": "labor",
+      "locator": "Oregon"
+    },
+    "US-OR:commercial_code:06bcecac3ba3": {
+      "category": "commercial_code",
+      "title": "General Provisions for Uniform Commercial Code",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors071.html",
+      "directory": "ucc",
+      "locator": "Oregon"
+    },
+    "US-OR:civil_rules:21de2d05bbac": {
+      "category": "civil_rules",
+      "title": "Procedure in Civil Proceedings-(see Chapters 12-36)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/Pages/ORS.aspx",
+      "directory": "procedure",
+      "locator": "Oregon"
+    },
+    "US-OR:consumer_agency:c5cf0d9b9190": {
+      "category": "consumer_agency",
+      "title": "Oregon (OR)",
+      "url": "https://www.doj.state.or.us/consumer-protection/",
+      "directory": "consumer",
+      "locator": "Oregon (OR)"
+    },
+    "US-OR:judiciary:79002a795822": {
+      "category": "judiciary",
+      "title": "Oregon Judicial Department",
+      "url": "https://www.courts.oregon.gov/Pages/default.aspx",
+      "directory": "doj-OR",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-OR:judiciary:22b179d68854": {
+      "category": "judiciary",
+      "title": "Court Opinions",
+      "url": "http://willamettelawonline.com/category/orsupreme/",
+      "directory": "doj-OR",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-OR:court_directory:36e84a666e74": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://courts.oregon.gov/Supreme/Pages/index.aspx",
+      "directory": "doj-OR",
+      "locator": "Supreme Court"
+    },
+    "US-OR:opinions:0fb87f450512": {
+      "category": "opinions",
+      "title": "Supreme Court Opinions (State of Oregon Digital Collection)",
+      "url": "https://cdm17027.contentdm.oclc.org/digital/collection/p17027coll3",
+      "directory": "doj-OR",
+      "locator": "State and Local Courts / Supreme Court"
+    },
+    "US-OR:court_directory:9198af8080ae": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "http://courts.oregon.gov/COA/Pages/index.aspx",
+      "directory": "doj-OR",
+      "locator": "Court of Appeals"
+    },
+    "US-OR:opinions:7480b15ac444": {
+      "category": "opinions",
+      "title": "Court of Appeals Opinions (State of Oregon Digital Collection)",
+      "url": "https://cdm17027.contentdm.oclc.org/digital/collection/p17027coll5",
+      "directory": "doj-OR",
+      "locator": "State and Local Courts / Courts of Appeal"
+    },
+    "US-OR:court_directory:9b9f45bcd6fc": {
+      "category": "court_directory",
+      "title": "Tax Court",
+      "url": "http://courts.oregon.gov/Tax/",
+      "directory": "doj-OR",
+      "locator": "Tax Court"
+    },
+    "US-OR:court_directory:81df62691eb3": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "https://www.courts.oregon.gov/courts/Pages/default.aspx",
+      "directory": "doj-OR",
+      "locator": "Circuit Courts"
+    },
+    "US-OR:forms:d9d10384bebd": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "http://www.courts.oregon.gov/forms/Pages/default.aspx",
+      "directory": "doj-OR",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-OR:forms:904b07695bfd": {
+      "category": "forms",
+      "title": "Tax Court Forms",
+      "url": "http://courts.oregon.gov/Tax/Pages/forms.aspx",
+      "directory": "doj-OR",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-OR:constitution:628c592b208b": {
+      "category": "constitution",
+      "title": "Oregon Constitution",
+      "url": "https://www.oregonlegislature.gov/bills_laws/Pages/OreConstAdmission.aspx",
+      "directory": "doj-OR",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-OR:statutes:958b4a9ec04b": {
+      "category": "statutes",
+      "title": "Bills and Laws",
+      "url": "https://www.oregonlegislature.gov/bills_laws",
+      "directory": "doj-OR",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-OR:pi_limitations:e26e5e69b107": {
+      "category": "pi_limitations",
+      "title": "Or. Rev. Stat. § 12.110(1)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors012.html",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.oregonlegislature.gov/bills_laws/ors/ors012.html",
+        "retrieved_at": "2026-11-17T19:34:02.277299+00:00",
+        "http_status": "200",
+        "sha256": "b8962dadbebcce63dbb6b1a1bfa9c9244f904dddaad59ecf63b4cb4b180b2410",
+        "health": "manual_review_required"
+      }
+    },
+    "US-OR:written_contract_limitations:e26e5e69b107": {
+      "category": "written_contract_limitations",
+      "title": "Or. Rev. Stat. § 12.080(1)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors012.html",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.oregonlegislature.gov/bills_laws/ors/ors012.html",
+        "retrieved_at": "2026-11-17T19:34:02.277299+00:00",
+        "http_status": "200",
+        "sha256": "b8962dadbebcce63dbb6b1a1bfa9c9244f904dddaad59ecf63b4cb4b180b2410",
+        "health": "manual_review_required"
+      }
+    },
+    "US-OR:oral_contract_limitations:e26e5e69b107": {
+      "category": "oral_contract_limitations",
+      "title": "Or. Rev. Stat. § 12.080(1)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors012.html",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.oregonlegislature.gov/bills_laws/ors/ors012.html",
+        "retrieved_at": "2026-11-17T19:34:02.277299+00:00",
+        "http_status": "200",
+        "sha256": "b8962dadbebcce63dbb6b1a1bfa9c9244f904dddaad59ecf63b4cb4b180b2410",
+        "health": "manual_review_required"
+      }
+    },
+    "US-OR:small_claims:a0356dbaab93": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.courts.oregon.gov/forms/Pages/small-claims.aspx",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.courts.oregon.gov/forms/Pages/small-claims.aspx",
+        "retrieved_at": "2026-11-17T19:42:38.440951+00:00",
+        "http_status": "503",
+        "sha256": null,
+        "health": "unreachable"
+      }
+    },
+    "US-OR:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 29"
+    },
+    "US-OR:commencement:8f5b2fab8947": {
+      "category": "commencement",
+      "title": "ORCP 3",
+      "url": "https://www.oregonlegislature.gov/bills_laws/SiteAssets/ORCP.html",
+      "directory": null,
+      "locator": "ORCP 3",
+      "language": "en",
+      "publisher_role": "official_rule_publication",
+      "observation": {
+        "health": "retained_snapshot",
+        "retrieved_at": "2026-11-17T20:14:55.256641+00:00",
+        "sha256": "e55957b95b25f21142acfca62e8a6c9521b79b7362289f0b308fedf6aa0b602c"
+      }
+    },
+    "US-OR:fault:2f3d5d9647fb": {
+      "category": "fault",
+      "title": "ORS 31.600(1)–(2)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors031.html",
+      "directory": null,
+      "locator": "ORS 31.600(1)–(2)",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:37.254817+00:00",
+        "sha256": "db9df4c8ed9ac4412024bb6b8b619b704c0518e5484382ca2b296457c0076ed9"
+      }
+    },
+    "US-OR:consumerLaw:a591ad70d515": {
+      "title": "Or. Rev. Stat. § 646.605 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors646.html",
+      "directory": "consumer_statutes_index",
+      "locator": "Or. Rev. Stat. § 646.605 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-OR:contract_formation:1355b258190b": {
+      "category": "contract_formation",
+      "title": "ORS 72.2040",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors072.html",
+      "locator": "ORS 72.2040",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:37.546103+00:00",
+        "sha256": "75fa9e40a5b90935877e6bf3fd672ff458077fb9cdc148ebf22c02d93f7c0bb6"
+      }
+    },
+    "US-OR:contract_damages:9eef42d552c5": {
+      "category": "contract_damages",
+      "title": "ORS 72.7140",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors072.html",
+      "locator": "ORS 72.7140",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:37.546103+00:00",
+        "sha256": "75fa9e40a5b90935877e6bf3fd672ff458077fb9cdc148ebf22c02d93f7c0bb6"
+      }
+    },
+    "US-OR:wageLaw:000d5de02c85": {
+      "category": "wageLaw",
+      "title": "ORS § 652.120",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors652.html",
+      "locator": "ORS § 652.120",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:11:09.105638+00:00",
+        "sha256": "a24238e77679b4e89d752458a871962f39b203f793df3802d8c50ae47919d3e6"
+      }
+    },
+    "US-OR:debtLaw:170efebe5dcf": {
+      "category": "debtLaw",
+      "title": "ORS § 646.639(2)(a)–(e)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors646.html",
+      "locator": "ORS § 646.639(2)(a)–(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:23:32.550981+00:00",
+        "sha256": "dfede44588217a24bea040748cd3a7bd4cbd566ced2d8f1dca65e70dda0f1e6e"
+      }
+    },
+    "US-OR:pi_limitations:fb19d57b41f1": {
+      "category": "pi_limitations",
+      "title": "ORS § 12.110(1)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors012.html",
+      "locator": "ORS § 12.110(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:23.293234+00:00",
+        "sha256": "b8962dadbebcce63dbb6b1a1bfa9c9244f904dddaad59ecf63b4cb4b180b2410"
+      }
+    },
+    "US-OR:general_contract_limitations:c802cd6a2e34": {
+      "category": "general_contract_limitations",
+      "title": "ORS § 12.080(1)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors012.html",
+      "locator": "ORS § 12.080(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:23.293234+00:00",
+        "sha256": "b8962dadbebcce63dbb6b1a1bfa9c9244f904dddaad59ecf63b4cb4b180b2410"
+      }
+    },
+    "US-OR:response:2ffe5f89ff10": {
+      "category": "response",
+      "title": "ORCP 15 A–B",
+      "url": "https://www.oregonlegislature.gov/bills_laws/SiteAssets/ORCP.html",
+      "locator": "ORCP 15 A–B",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:43:10.820517+00:00",
+        "sha256": "e55957b95b25f21142acfca62e8a6c9521b79b7362289f0b308fedf6aa0b602c"
+      }
+    },
+    "US-OR:service:3b61e198da24": {
+      "category": "service",
+      "title": "ORCP 7 D(3)(a)(i)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/SiteAssets/ORCP.html",
+      "locator": "ORCP 7 D(3)(a)(i)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:12.167609+00:00",
+        "sha256": "e55957b95b25f21142acfca62e8a6c9521b79b7362289f0b308fedf6aa0b602c"
+      }
+    },
+    "US-OR:small_claims:da248185a60e": {
+      "category": "small_claims",
+      "title": "ORS § 46.405",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors046.html",
+      "locator": "ORS § 46.405",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:28.957878+00:00",
+        "sha256": "b870c9b691b060ea61a87882543e2a8be89e30ef8733089d22ed4d1408642bdd"
+      }
+    },
+    "US-OR:consumerLaw:caf807249bef": {
+      "category": "consumerLaw",
+      "title": "ORS § 646.608(1)(a)–(e)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors646.html",
+      "locator": "ORS § 646.608(1)(a)–(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:20:57.461285+00:00",
+        "sha256": "dfede44588217a24bea040748cd3a7bd4cbd566ced2d8f1dca65e70dda0f1e6e"
+      }
+    },
+    "US-OR:deposit:eff96897711f": {
+      "category": "deposit",
+      "title": "ORS § 90.300(12)–(13) (2025)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors090.html",
+      "locator": "ORS § 90.300(12)–(13) (2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:26.675326+00:00",
+        "sha256": "6c2a386474edbd2c36f6c713156688ed4f16e7336feea23268002a16b29f60bc"
+      }
+    },
+    "US-OR:negligence_elements:e9d1ad20f680": {
+      "category": "negligence_elements",
+      "title": "Stone v. Witt, 374 Or. 524, 526 (2025)",
+      "url": "https://cases.justia.com/oregon/supreme-court/2025-s071097.pdf?ts=1765470484",
+      "locator": "Stone v. Witt, 374 Or. 524, 526 (2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:26:23.334930+00:00",
+        "sha256": "a31e8fb239d49f9e50ccc70a7b3cce15c79279c874e6d2ab1fa2f98e004d8244"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-OR:court:7c2b99f48094",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-OR:court_directory:36e84a666e74"
+    },
+    {
+      "id": "US-OR:court:43506991f6e4",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-OR:court_directory:9198af8080ae"
+    },
+    {
+      "id": "US-OR:court:377a6e307544",
+      "name": "Tax Court",
+      "level": "trial_directory",
+      "source_id": "US-OR:court_directory:9b9f45bcd6fc"
+    },
+    {
+      "id": "US-OR:court:8af72ce8b0c9",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-OR:court_directory:81df62691eb3"
+    },
+    {
+      "id": "US-OR:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-OR:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-OR:court:808814dfffdd",
+      "name": "Tax",
+      "level": "general_trial",
+      "source_id": "US-OR:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-OR:court:09753adaaaf9",
+      "name": "County",
+      "level": "limited_trial",
+      "source_id": "US-OR:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-OR:court:0b3db1cdefd8",
+      "name": "Justice",
+      "level": "limited_trial",
+      "source_id": "US-OR:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-OR:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-OR:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Or. Rev. Stat. § 12.110(1)",
+      "source_id": "US-OR:pi_limitations:e26e5e69b107",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Or. Rev. Stat. § 12.080(1)",
+      "source_id": "US-OR:written_contract_limitations:e26e5e69b107",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Or. Rev. Stat. § 12.080(1)",
+      "source_id": "US-OR:oral_contract_limitations:e26e5e69b107",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Or. Rev. Stat. § 90.392 Termination of tenancy for cause; tenant right to cure violation.; Or. Rev. Stat. Ch. 13, § 5. Definitions; prohibited conduct; notice; remedies; Or. Rev. Stat. Ch. 13, § 3. Definitions; prohibited actions; notice; application of payments; remedies",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Or. Rev. Stat. § 646.605 et seq.",
+      "source_id": "US-OR:consumerLaw:a591ad70d515",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "5514f30522e09093bac96faf4dd5dc": {
+      "source_id": "US-OR:commencement:8f5b2fab8947",
+      "citation": "ORCP 3",
+      "authority_type": "court_rule",
+      "language": "en",
+      "text": "RULE 3 Commencement of action. Other than for purposes of statutes of limitations, an action shall be commenced by filing a complaint with the clerk of the court.",
+      "text_sha256": "40fa1f941a2d120743ee02e34e2744bb036d823ae14564ce406da5c48cad6ea6",
+      "publisher_sha256": "e55957b95b25f21142acfca62e8a6c9521b79b7362289f0b308fedf6aa0b602c",
+      "retrieved_at": "2026-11-17T20:14:55.256641+00:00",
+      "currentness": "unresolved"
+    },
+    "b7d5a7b87c08da5b59b86741eb5074": {
+      "citation": "ORS 31.600(1)–(2)",
+      "source_id": "US-OR:fault:2f3d5d9647fb",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "(1) Contributory negligence shall not bar recovery in an action by any person or the legal representative of the person to recover damages for death or injury to person or property if the fault attributable to the claimant was not greater than the combined fault of all persons specified in subsection (2) of this section, but any damages allowed shall be diminished in the proportion to the percentage of fault attributable to the claimant. This section is not intended to create or abolish any defense. (2) The trier of fact shall compare the fault of the claimant with the fault of any party against whom recovery is sought, the fault of third party defendants who are liable in tort to the claimant, and the fault of any person with whom the claimant has settled. The failure of a claimant to make a direct claim against a third party defendant does not affect the requirement that the fault of the third party defendant be considered by the trier of fact under this subsection. Except for persons who have settled with the claimant, there shall be no comparison of fault with any person: (a) Who is immune from liability to the claimant; (b) Who is not subject to the jurisdiction of the court; or (c) Who is not subject to action because the claim is barred by a statute of limitation or statute of ultimate repose.",
+      "text_sha256": "da5f12f3eb448591b796d3405ec87619970da610a72092cf1249e77011eaee05",
+      "publisher_sha256": "db9df4c8ed9ac4412024bb6b8b619b704c0518e5484382ca2b296457c0076ed9",
+      "retrieved_at": "2026-11-17T20:50:37.254817+00:00",
+      "currentness": "unresolved"
+    },
+    "066d07480ec1415560523fb4449714": {
+      "source_id": "US-OR:contract_formation:1355b258190b",
+      "authority_type": "statute",
+      "citation": "ORS 72.2040",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "75fa9e40a5b90935877e6bf3fd672ff458077fb9cdc148ebf22c02d93f7c0bb6",
+      "retrieved_at": "2026-11-18T15:14:37.546103+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "30b4e7bf0c9d0e1a534f94f8946ecd": {
+      "source_id": "US-OR:contract_damages:9eef42d552c5",
+      "authority_type": "statute",
+      "citation": "ORS 72.7140",
+      "text": "Where the buyer has accepted goods and given notification as provided in ORS 72.6070 (3) the buyer may recover as damages for any nonconformity of tender the loss resulting in the ordinary course of events from the seller’s breach as determined in any manner which is reasonable. (2) The measure of damages for breach of warranty is the difference at the time and place of acceptance between the value of the goods accepted and the value they would have had if they had been as warranted, unless special circumstances show proximate damages of a different amount.",
+      "text_sha256": "7858e93242887cd8bb62ad0d5dcf224f51c7dfd1944702f8a9fa6fa361dea03a",
+      "publisher_sha256": "75fa9e40a5b90935877e6bf3fd672ff458077fb9cdc148ebf22c02d93f7c0bb6",
+      "retrieved_at": "2026-11-18T15:14:37.546103+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "bd5d7175be9eba112f53a3e8f6fb51": {
+      "source_id": "US-OR:wageLaw:000d5de02c85",
+      "authority_type": "statute",
+      "citation": "ORS § 652.120",
+      "text": "(1) Every employer shall establish and maintain a regular payday, at which date the employer shall pay all employees the wages due and owing to them. (2) Payday may not extend beyond a period of 35 days from the time that the employees entered upon their work, or from the date of the last regular payday. (3) This section does not prevent the employer from establishing and maintaining paydays at more frequent intervals. (4) This section does not prevent any employer from entering into a written agreement, prior to the rendering of any services, and mutually satisfactory with the employer’s employees, as to the payment of wages at a future date. (5) When an employer has notice that an employee has not been paid the full amount the employee is owed on a regular payday and there is no dispute between the employer and the employee regarding the amount of the unpaid wages: (a) If the unpaid amount is less than five percent of the employee’s gross wages due on the regular payday, the employer shall pay the employee the unpaid amount no later than the next regular payday; or (b) If the unpaid amount is five percent or more of the employee’s gross wages due on the regular payday, the employer shall pay the employee the unpaid amount within three days after the employer has notice of the unpaid amount, excluding Saturdays, Sundays and holidays.",
+      "text_sha256": "524aa968283ee09e815809889d7a775c0d4135fabf403124f488c269a1f1b7aa",
+      "publisher_sha256": "a24238e77679b4e89d752458a871962f39b203f793df3802d8c50ae47919d3e6",
+      "retrieved_at": "2026-11-19T14:11:09.105638+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "f0393adf4d4faadf955b9900da93c9": {
+      "source_id": "US-OR:debtLaw:170efebe5dcf",
+      "authority_type": "statute",
+      "citation": "ORS § 646.639(2)(a)–(e)",
+      "text": "(2) A debt collector engages in an unlawful collection practice if the debt collector, while collecting or attempting to collect a debt, does any of the following: (a) Uses or threatens to use force or violence to cause physical harm to a debtor or to the debtor’s family or property. (b) Threatens arrest or criminal prosecution. (c) Threatens to seize, attach or sell a debtor’s property if doing so requires a court order and the debt collector does not disclose that seizing, attaching or selling the debtor’s property requires prior court proceedings. (d) Uses profane, obscene or abusive language in communicating with a debtor or the debtor’s family. (e) Communicates with a debtor or any member of the debtor’s family repeatedly or continuously or at times known to be inconvenient to the debtor or any member of the debtor’s family and with intent to harass or annoy the debtor or any member of the debtor’s family.",
+      "text_sha256": "f1e42daa4c11456c962c37758adb7bcc2cb6c25b93a885819788c0ee9e2adc21",
+      "publisher_sha256": "dfede44588217a24bea040748cd3a7bd4cbd566ced2d8f1dca65e70dda0f1e6e",
+      "retrieved_at": "2026-11-19T19:23:32.550981+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "9c1ce2365c1993a1dc7822a1241d71": {
+      "source_id": "US-OR:pi_limitations:fb19d57b41f1",
+      "authority_type": "statute",
+      "citation": "ORS § 12.110(1)",
+      "text": "(1) An action for assault, battery, false imprisonment, or for any injury to the person or rights of another, not arising on contract, and not especially enumerated in this chapter, shall be commenced within two years; provided, that in an action at law based upon fraud or deceit, the limitation shall be deemed to commence only from the discovery of the fraud or deceit.",
+      "text_sha256": "e619246e6d02442cd1ad3d03710a42ec94db6d1464eadaf8548722363205909f",
+      "publisher_sha256": "b8962dadbebcce63dbb6b1a1bfa9c9244f904dddaad59ecf63b4cb4b180b2410",
+      "retrieved_at": "2026-11-19T19:31:23.293234+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "31ffb59ec0d58aba77d6c88680798b": {
+      "source_id": "US-OR:general_contract_limitations:c802cd6a2e34",
+      "authority_type": "statute",
+      "citation": "ORS § 12.080(1)",
+      "text": "(1) An action upon a contract or liability, express or implied, excepting those mentioned in ORS 12.070, 12.110 and 12.135 and except as otherwise provided in ORS 72.7250;",
+      "text_sha256": "28b697f8eefe39af9b6ab221a7715378eb6336992ab062a3a1db263cf01d257c",
+      "publisher_sha256": "b8962dadbebcce63dbb6b1a1bfa9c9244f904dddaad59ecf63b4cb4b180b2410",
+      "retrieved_at": "2026-11-19T19:31:23.293234+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "3d62947e4c172c3d01466deb0dd7bf": {
+      "source_id": "US-OR:response:2ffe5f89ff10",
+      "authority_type": "court_rule",
+      "citation": "ORCP 15 A–B",
+      "text": "15 A Time for filing motions and pleadings. An answer to a complaint or to a third-party complaint, or a motion responsive to either pleading, must be filed with the clerk within the time required by Rule 7 C(2) to appear and defend. If the summons is served by publication, the defendant must appear and defend within 30 days of the date of first publication. A reply to a counterclaim, a reply to assert affirmative allegations in avoidance of defenses alleged in an answer, or a motion responsive to either of those pleadings must be filed within 30 days from the date of service of the counterclaim or answer. An answer to a cross-claim or a motion responsive to a cross-claim must be filed within 30 days from the date of service of the cross-claim. B Pleading after motion. B(1) If the court denies a motion, any responsive pleading required must be filed within 10 days after service of the order, unless the order otherwise directs. B(2) If the court grants a motion and an amended pleading is allowed or required, that pleading must be filed within 10 days after service of the order, unless the order otherwise directs.",
+      "text_sha256": "22a3958b04388d4c08869decb4e0bae1b0c6ebb9fcd0e7b75ec6a26847a999ab",
+      "publisher_sha256": "e55957b95b25f21142acfca62e8a6c9521b79b7362289f0b308fedf6aa0b602c",
+      "retrieved_at": "2026-11-19T19:43:10.820517+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Oregon Rules of Civil Procedure 2025",
+      "court": "Oregon Circuit Court"
+    },
+    "fc1414bde19929b8c813e069acf813": {
+      "source_id": "US-OR:service:3b61e198da24",
+      "authority_type": "court_rule",
+      "citation": "ORCP 7 D(3)(a)(i)",
+      "text": "D(3)(a)(i) Generally. On an individual defendant, by personal delivery of true copies of the summons and the complaint to the defendant or other person authorized by appointment or law to receive service of summons on behalf of the defendant, by substituted service, or by office service. Service may also be made on an individual defendant or other person authorized to receive service to whom neither subparagraph D(3)(a)(ii) nor D(3)(a)(iii) of this rule applies by a mailing made in accordance with paragraph D(2)(d) of this rule provided the defendant or other person authorized to receive service signs a receipt for the certified, registered, or express mailing, in which case service shall be complete on the date on which the defendant signs a receipt for the mailing.",
+      "text_sha256": "9c716288b9cbaf8546239b57515fd79bdf392db1a6a112c43f4700da28742ff2",
+      "publisher_sha256": "e55957b95b25f21142acfca62e8a6c9521b79b7362289f0b308fedf6aa0b602c",
+      "retrieved_at": "2026-11-20T15:21:12.167609+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Oregon Rules of Civil Procedure (2025)",
+      "court": "Oregon Circuit Court"
+    },
+    "96346a704396d616439678fef10050": {
+      "source_id": "US-OR:small_claims:da248185a60e",
+      "authority_type": "statute",
+      "citation": "ORS § 46.405",
+      "text": "46.405 Small claims department; jurisdiction. (1) Except as provided in subsection (6) of this section, each circuit court shall have a small claims department. (2) Except as provided in this section, all actions for the recovery of money, damages, specific personal property, or any penalty or forfeiture must be commenced and prosecuted in the small claims department if the amount or value claimed in the action does not exceed $750. (3) Except as provided in this section, an action for the recovery of money, damages, specific personal property, or any penalty or forfeiture may be commenced and prosecuted in the small claims department if the amount or value claimed in the action does not exceed $10,000. (4)(a) Class actions may not be commenced and prosecuted in the small claims department. (b) An action by an adult in custody, as defined in ORS 30.642, against another adult in custody may not be commenced and prosecuted in the small claims department. (5) Actions providing for statutory attorney fees in which the amount or value claimed does not exceed $750 may be commenced and prosecuted in the small claims department or may be commenced and prosecuted in the regular department of the circuit court. This subsection does not apply to an action based on contract for which attorney fees are authorized under ORS 20.082. (6) If a circuit court is located in the same city as a justice court, the circuit court need not have a small claims department if the circuit court and the justice court enter into an intergovernmental agreement that provides that only the justice court will operate a small claims department. If an intergovernmental agreement is entered into under this subsection, the agreement must establish appropriate procedures for referring small claims cases to the justice court.",
+      "text_sha256": "34851c1671c58109cf9e3b06900f7cf20db88dfbcd41c5ebad69d7d72aaa5efb",
+      "publisher_sha256": "b870c9b691b060ea61a87882543e2a8be89e30ef8733089d22ed4d1408642bdd",
+      "retrieved_at": "2026-11-20T16:16:28.957878+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 Oregon Revised Statutes",
+      "court": "Oregon Circuit Court Small Claims Department"
+    },
+    "e51cbb64e9431997b503a679219577": {
+      "source_id": "US-OR:consumerLaw:caf807249bef",
+      "authority_type": "statute",
+      "citation": "ORS § 646.608(1)(a)–(e)",
+      "text": "(1) A person engages in an unlawful practice if in the course of the person’s business, vocation or occupation the person does any of the following: (a) Passes off real estate, goods or services as the real estate, goods or services of another. (b) Causes likelihood of confusion or of misunderstanding as to the source, sponsorship, approval, or certification of real estate, goods or services. (c) Causes likelihood of confusion or of misunderstanding as to affiliation, connection, or association with, or certification by, another. (d) Uses deceptive representations or designations of geographic origin in connection with real estate, goods or services. (e) Represents that real estate, goods or services have sponsorship, approval, characteristics, ingredients, uses, benefits, quantities or qualities that the real estate, goods or services do not have or that a person has a sponsorship, approval, status, qualification, affiliation, or connection that the person does not have.",
+      "text_sha256": "8925762e9ad23a910d6537ae9c54e09b2564701521ea4373526e3807aa2ad103",
+      "publisher_sha256": "dfede44588217a24bea040748cd3a7bd4cbd566ced2d8f1dca65e70dda0f1e6e",
+      "retrieved_at": "2026-11-20T16:20:57.461285+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 Oregon Revised Statutes"
+    },
+    "088ae5d1e8176e894d6f5ef285f1a2": {
+      "source_id": "US-OR:deposit:eff96897711f",
+      "authority_type": "statute",
+      "citation": "ORS § 90.300(12)–(13) (2025)",
+      "text": "(12) In order to claim all or part of any prepaid rent or security deposit, within 31 days after the tenancy terminates and the tenant delivers possession the landlord shall give to the tenant a written accounting that states specifically the basis or bases of the claim. The landlord shall give a separate accounting for security deposits and for prepaid rent. (13) The landlord shall return to the tenant the security deposit or prepaid rent or the portion of the security deposit or prepaid rent that the landlord does not claim in the manner provided by subsections (11) and (12) of this section not later than 31 days after the tenancy terminates and the tenant delivers possession to the landlord. If agreed to by both parties in an addendum executed after the tenancy begins and the tenant has occupied the premises, the landlord may return any amount due under this subsection electronically to a bank account or other financial institution designated by the tenant.",
+      "text_sha256": "76a76675556783cda473fb28ff9536da0fd765c196cbc2848190363ace4a8b26",
+      "publisher_sha256": "6c2a386474edbd2c36f6c713156688ed4f16e7336feea23268002a16b29f60bc",
+      "retrieved_at": "2026-11-20T16:35:26.675326+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 Oregon Revised Statutes"
+    },
+    "dd1dca6dd001fdb3ce1fd5fe9f4d40": {
+      "source_id": "US-OR:negligence_elements:e9d1ad20f680",
+      "authority_type": "opinion",
+      "citation": "Stone v. Witt, 374 Or. 524, 526 (2025)",
+      "text": "The longstanding rule of common-law negligence in Oregon is that “liability for harm actually resulting from [a] defendant’s conduct depends on whether that conduct unreasonably created a foreseeable risk to a protected interest of the kind of harm that befell the plaintiff,” which is what plaintiff has alleged in this case. Fazzolari v. Portland School Dist. No. 1J, 303 Or 1, 17, 734 P2d 1326 (1987). Plaintiff’s allegations thus state a claim for ordinary negligence liability that does not depend on the existence of a special relationship between a defendant and the injured party.",
+      "text_sha256": "12c31ee98ac36ae328db24eec9a2bf9b3f5556eae855bc684749cb492e292401",
+      "publisher_sha256": "a31e8fb239d49f9e50ccc70a7b3cce15c79279c874e6d2ab1fa2f98e004d8244",
+      "retrieved_at": "2026-11-21T04:26:23.334930+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2025-12-11",
+      "court": "Oregon Supreme Court",
+      "decision_date": "2025-12-11",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of dismissal of ordinary negligence claims brought on behalf of a third party against medical providers and a pharmacy.",
+      "publisher_member": "Oregon Reports advance publication, printed p. 526; verified against Oregon State Law Library item 16317"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "b7d5a7b87c08da5b59b86741eb5074",
+    "source_id": "US-OR:fault:2f3d5d9647fb",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

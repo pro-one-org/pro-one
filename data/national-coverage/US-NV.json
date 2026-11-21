@@ -1,0 +1,672 @@
+{
+  "jurisdiction": "US-NV",
+  "version": "1",
+  "sources": {
+    "US-NV:statutes:f6b3c65d1ad9": {
+      "category": "statutes",
+      "title": "Nevada Revised Statutes",
+      "url": "http://leg.state.nv.us/law1.cfm",
+      "directory": "codes",
+      "locator": "Nevada"
+    },
+    "US-NV:constitution:680064730f4d": {
+      "category": "constitution",
+      "title": "Nevada Constitution",
+      "url": "http://www.leg.state.nv.us/Const/NVConst.html",
+      "directory": "doj-NV",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NV:legislature:de843b6b833e": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://leg.state.nv.us/",
+      "directory": "codes",
+      "locator": "Nevada"
+    },
+    "US-NV:labor_agency:014e3254f686": {
+      "category": "labor_agency",
+      "title": "labor.nv.gov",
+      "url": "http://labor.nv.gov/",
+      "directory": "labor",
+      "locator": "Nevada"
+    },
+    "US-NV:commercial_code:7d0beae25e81": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://www.leg.state.nv.us/NRS/NRS-104.html",
+      "directory": "ucc",
+      "locator": "Nevada"
+    },
+    "US-NV:commercial_code:39437b2ba3b1": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code- Additional Articles",
+      "url": "http://www.leg.state.nv.us/NRS/NRS-104A.html",
+      "directory": "ucc",
+      "locator": "Nevada"
+    },
+    "US-NV:civil_rules:82a3b27dd22f": {
+      "category": "civil_rules",
+      "title": "Justice Courts and Civil Procedure",
+      "url": "http://www.leg.state.nv.us/NRS/Index.cfm",
+      "directory": "procedure",
+      "locator": "Nevada"
+    },
+    "US-NV:consumer_agency:7a5c58663716": {
+      "category": "consumer_agency",
+      "title": "Nevada (NV)",
+      "url": "https://ag.nv.gov/About/Consumer_Protection/Bureau_of_Consumer_Protection/",
+      "directory": "consumer",
+      "locator": "Nevada (NV)"
+    },
+    "US-NV:judiciary:98a7da68b2e9": {
+      "category": "judiciary",
+      "title": "Nevada Judiciary",
+      "url": "https://nvcourts.gov/",
+      "directory": "doj-NV",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-NV:court_directory:98a7da68b2e9": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://nvcourts.gov/",
+      "directory": "doj-NV",
+      "locator": "Supreme Court"
+    },
+    "US-NV:court_rules:577c6fa92f55": {
+      "category": "court_rules",
+      "title": "Court Rules",
+      "url": "http://www.leg.state.nv.us/COURTRULES/",
+      "directory": "doj-NV",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-NV:statutes:90e09169f406": {
+      "category": "statutes",
+      "title": "Revised Statutes Search",
+      "url": "http://search.leg.state.nv.us/NRS/NRS.html",
+      "directory": "doj-NV",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NV:statutes:283d3d0a2ea1": {
+      "category": "statutes",
+      "title": "Revised Statutes Browse",
+      "url": "http://www.leg.state.nv.us/NRS/",
+      "directory": "doj-NV",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NV:regulations:d85e58131ee7": {
+      "category": "regulations",
+      "title": "Administrative Code Search",
+      "url": "http://search.leg.state.nv.us/NAC/NAC.html",
+      "directory": "doj-NV",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-NV:regulations:96fca3cb6da7": {
+      "category": "regulations",
+      "title": "Administrative Code Browse",
+      "url": "http://www.leg.state.nv.us/NAC/",
+      "directory": "doj-NV",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-NV:regulations:907d0dc18039": {
+      "category": "regulations",
+      "title": "Register Search",
+      "url": "http://search.leg.state.nv.us/Register/Register.html",
+      "directory": "doj-NV",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-NV:regulations:c9c93dfaa6cb": {
+      "category": "regulations",
+      "title": "Register Browse",
+      "url": "http://www.leg.state.nv.us/register/",
+      "directory": "doj-NV",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-NV:pi_limitations:34f82f4d76cf": {
+      "category": "pi_limitations",
+      "title": "Nev. Rev. Stat. § 11.190(4)(e)",
+      "url": "https://www.leg.state.nv.us/NRS/NRS-011.html#NRS011Sec190",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.leg.state.nv.us/NRS/NRS-011.html",
+        "retrieved_at": "2026-11-17T19:33:59.751169+00:00",
+        "http_status": "200",
+        "sha256": "e21bdde020606c1ae00134b3739ae29c6ed5817d47c6295a47e1239a25a31d83",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NV:written_contract_limitations:34f82f4d76cf": {
+      "category": "written_contract_limitations",
+      "title": "Nev. Rev. Stat. § 11.190(1)(b)",
+      "url": "https://www.leg.state.nv.us/NRS/NRS-011.html#NRS011Sec190",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.leg.state.nv.us/NRS/NRS-011.html",
+        "retrieved_at": "2026-11-17T19:33:59.751169+00:00",
+        "http_status": "200",
+        "sha256": "e21bdde020606c1ae00134b3739ae29c6ed5817d47c6295a47e1239a25a31d83",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NV:oral_contract_limitations:34f82f4d76cf": {
+      "category": "oral_contract_limitations",
+      "title": "Nev. Rev. Stat. § 11.190(2)(c)",
+      "url": "https://www.leg.state.nv.us/NRS/NRS-011.html#NRS011Sec190",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.leg.state.nv.us/NRS/NRS-011.html",
+        "retrieved_at": "2026-11-17T19:33:59.751169+00:00",
+        "http_status": "200",
+        "sha256": "e21bdde020606c1ae00134b3739ae29c6ed5817d47c6295a47e1239a25a31d83",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NV:small_claims:60474239c723": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://nvcourts.gov/aoc/discover_nevada_justice/discover_nevada_justice_articles/small_claims_court",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://nvcourts.gov/aoc/discover_nevada_justice/discover_nevada_justice_articles/small_claims_court",
+        "retrieved_at": "2026-11-17T19:42:23.708316+00:00",
+        "http_status": "000",
+        "sha256": null,
+        "health": "unreachable"
+      }
+    },
+    "US-NV:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 28"
+    },
+    "US-NV:deposit:60f06d6f11e4": {
+      "category": "deposit",
+      "title": "Residential tenancy publication",
+      "url": "https://www.leg.state.nv.us/nrs/NRS-118A.html",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.leg.state.nv.us/nrs/NRS-118A.html",
+        "retrieved_at": "2026-11-17T19:42:48.807587+00:00",
+        "http_status": "200",
+        "sha256": "388d0c493c7783ed38d48574dce1fcffd0d6b70781e9b97e4eabc6430d94e98e",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NV:debtLaw:292b6f13c377": {
+      "category": "debtLaw",
+      "title": "Debt collection publication",
+      "url": "https://www.leg.state.nv.us/NRS/NRS-649.html",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.leg.state.nv.us/NRS/NRS-649.html",
+        "retrieved_at": "2026-11-17T19:42:48.992900+00:00",
+        "http_status": "200",
+        "sha256": "665709e6a9ac2e7a860b62b2e967417122c9484f59bc0970999d190fbd788896",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NV:consumerLaw:781e3f0cc5d3": {
+      "category": "consumerLaw",
+      "title": "Consumer protection publication",
+      "url": "https://www.leg.state.nv.us/Division/Legal/LawLibrary/NRs/NRS-598.html",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.leg.state.nv.us/Division/Legal/LawLibrary/NRs/NRS-598.html",
+        "retrieved_at": "2026-11-17T19:42:48.491590+00:00",
+        "http_status": "200",
+        "sha256": "c9ce1ce2687dc7a9ece7a0f13b1a0e893da9f00c67031554cb237bc2011a7f76",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NV:commencement:ee4d83b80f13": {
+      "category": "commencement",
+      "title": "Nev. R. Civ. P. 3",
+      "url": "https://www.leg.state.nv.us/courtrules/nrcp.html",
+      "directory": null,
+      "locator": "Nev. R. Civ. P. 3",
+      "language": "en",
+      "publisher_role": "official_rule_publication",
+      "observation": {
+        "health": "retained_snapshot",
+        "retrieved_at": "2026-11-17T20:14:25.244018+00:00",
+        "sha256": "99812c5ef90fa83a0b5ded17bb4f1649316b2e1c3cc48c9e91eaca63e2479065"
+      }
+    },
+    "US-NV:fault:2c2122cc907b": {
+      "category": "fault",
+      "title": "NRS 41.141(1)",
+      "url": "https://www.leg.state.nv.us/Nrs/NRS-041.html",
+      "directory": null,
+      "locator": "NRS 41.141(1)",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:35.281890+00:00",
+        "sha256": "2f43bf05571a5c9df32060cd6419ae18e4b82ee277a6c8d404699140989ab786"
+      }
+    },
+    "US-NV:consumerLaw:51fee8a2d66b": {
+      "title": "Nev. Rev. Stat. § 598.0903 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.leg.state.nv.us/nrs/nrs-041.html#NRS041Sec600",
+      "directory": "consumer_statutes_index",
+      "locator": "Nev. Rev. Stat. § 598.0903 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-NV:contract_formation:6166364556d7": {
+      "category": "contract_formation",
+      "title": "NRS 104.2204",
+      "url": "https://www.leg.state.nv.us/Nrs/NRS-104.html",
+      "locator": "NRS 104.2204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:31.059769+00:00",
+        "sha256": "1b54fb3a52b86d9034cb0b2ab53fa05cce7bd18f4aec38a4716477c0c25a4898"
+      }
+    },
+    "US-NV:response:61312e40369c": {
+      "category": "response",
+      "title": "Nev. R. Civ. P. 12(a)(1)(A)",
+      "url": "https://www.leg.state.nv.us/courtrules/nrcp.html",
+      "locator": "Nev. R. Civ. P. 12(a)(1)(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:14:25.244018+00:00",
+        "sha256": "99812c5ef90fa83a0b5ded17bb4f1649316b2e1c3cc48c9e91eaca63e2479065"
+      }
+    },
+    "US-NV:service:724318dad321": {
+      "category": "service",
+      "title": "Nev. R. Civ. P. 4(c)(2)–(3)",
+      "url": "https://www.leg.state.nv.us/courtrules/nrcp.html",
+      "locator": "Nev. R. Civ. P. 4(c)(2)–(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:14:25.244018+00:00",
+        "sha256": "99812c5ef90fa83a0b5ded17bb4f1649316b2e1c3cc48c9e91eaca63e2479065"
+      }
+    },
+    "US-NV:contract_damages:f6e59d3af29b": {
+      "category": "contract_damages",
+      "title": "NRS 104.2714",
+      "url": "https://www.leg.state.nv.us/Nrs/NRS-104.html",
+      "locator": "NRS 104.2714",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:31.059769+00:00",
+        "sha256": "1b54fb3a52b86d9034cb0b2ab53fa05cce7bd18f4aec38a4716477c0c25a4898"
+      }
+    },
+    "US-NV:deposit:b4d8782c09f9": {
+      "category": "deposit",
+      "title": "Nev. Rev. Stat. § 118A.242(1)",
+      "url": "https://www.leg.state.nv.us/nrs/NRS-118A.html",
+      "locator": "Nev. Rev. Stat. § 118A.242(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T19:42:48.807587+00:00",
+        "sha256": "388d0c493c7783ed38d48574dce1fcffd0d6b70781e9b97e4eabc6430d94e98e"
+      }
+    },
+    "US-NV:habitability:f8c8b0085850": {
+      "category": "habitability",
+      "title": "Nev. Rev. Stat. § 118A.290(1)",
+      "url": "https://www.leg.state.nv.us/nrs/NRS-118A.html",
+      "locator": "Nev. Rev. Stat. § 118A.290(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T19:42:48.807587+00:00",
+        "sha256": "388d0c493c7783ed38d48574dce1fcffd0d6b70781e9b97e4eabc6430d94e98e"
+      }
+    },
+    "US-NV:debtLaw:a0e923d5588d": {
+      "category": "debtLaw",
+      "title": "Nev. Rev. Stat. § 649.075(1)",
+      "url": "https://www.leg.state.nv.us/NRS/NRS-649.html",
+      "locator": "Nev. Rev. Stat. § 649.075(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T19:42:48.992900+00:00",
+        "sha256": "665709e6a9ac2e7a860b62b2e967417122c9484f59bc0970999d190fbd788896"
+      }
+    },
+    "US-NV:wageLaw:443fca0f21a8": {
+      "category": "wageLaw",
+      "title": "Nev. Rev. Stat. § 608.020",
+      "url": "https://www.leg.state.nv.us/nrs/nrs-608.html",
+      "locator": "Nev. Rev. Stat. § 608.020",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:59.756416+00:00",
+        "sha256": "f01f40be28236feb7f04086bb4215786f2f11850e2f7ece99e2800c051f886f9"
+      }
+    },
+    "US-NV:consumerLaw:98f1b517eec3": {
+      "category": "consumerLaw",
+      "title": "Nev. Rev. Stat. § 598.0915(1)–(4)",
+      "url": "https://www.leg.state.nv.us/NRS/NRS-598.html",
+      "locator": "Nev. Rev. Stat. § 598.0915(1)–(4)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:45.087882+00:00",
+        "sha256": "c9ce1ce2687dc7a9ece7a0f13b1a0e893da9f00c67031554cb237bc2011a7f76"
+      }
+    },
+    "US-NV:pi_limitations:7905f4de4e2d": {
+      "category": "pi_limitations",
+      "title": "Nev. Rev. Stat. § 11.190(4)(a)–(e)",
+      "url": "https://www.leg.state.nv.us/NRS/NRS-011.html",
+      "locator": "Nev. Rev. Stat. § 11.190(4)(a)–(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:22.077873+00:00",
+        "sha256": "e21bdde020606c1ae00134b3739ae29c6ed5817d47c6295a47e1239a25a31d83"
+      }
+    },
+    "US-NV:written_contract_limitations:9cb09e8f0ae6": {
+      "category": "written_contract_limitations",
+      "title": "Nev. Rev. Stat. § 11.190(1)",
+      "url": "https://www.leg.state.nv.us/NRS/NRS-011.html",
+      "locator": "Nev. Rev. Stat. § 11.190(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:35:43.096131+00:00",
+        "sha256": "e21bdde020606c1ae00134b3739ae29c6ed5817d47c6295a47e1239a25a31d83"
+      }
+    },
+    "US-NV:small_claims:952bc214c3cb": {
+      "category": "small_claims",
+      "title": "Nev. Rev. Stat. § 73.010(1)–(2) (justice-court small claims)",
+      "url": "https://www.leg.state.nv.us/NRs/NRS-073.html",
+      "locator": "Nev. Rev. Stat. § 73.010(1)–(2) (justice-court small claims)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:32:56.185377+00:00",
+        "sha256": "da3d1dd76e90895e39f9a4345bd75c93d19f75ec7292aa25b56ee9516089c140"
+      }
+    },
+    "US-NV:negligence_elements:c6be98b8d39c": {
+      "category": "negligence_elements",
+      "title": "Klasch v. Walgreen Co., 127 Nev. 832, 837, 264 P.3d 1155, 1158 (2011)",
+      "url": "https://cases.justia.com/nevada/supreme-court/54805.pdf?ts=1462391281",
+      "locator": "Klasch v. Walgreen Co., 127 Nev. 832, 837, 264 P.3d 1155, 1158 (2011)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:27:26.733130+00:00",
+        "sha256": "1740d1109bb1ef1a1b59ec8ee1cc69fdf8a5acc1aa4a737af5d699756f11ab5f"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-NV:court:fce668e71fef",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-NV:court_directory:98a7da68b2e9"
+    },
+    {
+      "id": "US-NV:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-NV:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NV:court:0b3db1cdefd8",
+      "name": "Justice",
+      "level": "limited_trial",
+      "source_id": "US-NV:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NV:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-NV:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Nev. Rev. Stat. § 11.190(4)(e)",
+      "source_id": "US-NV:pi_limitations:34f82f4d76cf",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Nev. Rev. Stat. § 11.190(1)(b)",
+      "source_id": "US-NV:written_contract_limitations:34f82f4d76cf",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Nev. Rev. Stat. § 11.190(2)(c)",
+      "source_id": "US-NV:oral_contract_limitations:34f82f4d76cf",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Nev. Rev. Stat. § 40.2545. Unlawful detainer: sealing of eviction case court file under certain circumstances; notice to surrender must not be made available for public inspection",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Nev. Rev. Stat. § 598.0903 et seq.",
+      "source_id": "US-NV:consumerLaw:51fee8a2d66b",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "0ebfeb732d1808c0f185b2861fcab0": {
+      "source_id": "US-NV:commencement:ee4d83b80f13",
+      "citation": "Nev. R. Civ. P. 3",
+      "authority_type": "court_rule",
+      "language": "en",
+      "text": "Rule 3. Commencing an Action A civil action is commenced by filing a complaint with the court.",
+      "text_sha256": "403ae9d28c182ba9c09c3d9ae3c8ef9c40ae80a845659a183685d0b1d2908a33",
+      "publisher_sha256": "99812c5ef90fa83a0b5ded17bb4f1649316b2e1c3cc48c9e91eaca63e2479065",
+      "retrieved_at": "2026-11-17T20:14:25.244018+00:00",
+      "currentness": "unresolved"
+    },
+    "0ef92d5eef0e92c3bdd52c0ed41b33": {
+      "citation": "NRS 41.141(1)",
+      "source_id": "US-NV:fault:2c2122cc907b",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "In any action to recover damages for death or injury to persons or for injury to property in which comparative negligence is asserted as a defense, the comparative negligence of the plaintiff or the plaintiff’s decedent does not bar a recovery if that negligence was not greater than the negligence or gross negligence of the parties to the action against whom recovery is sought.",
+      "text_sha256": "ded824085a289e44e8558191d1f26b07754a534b8f4b8816ecc81a5b56acd00c",
+      "publisher_sha256": "2f43bf05571a5c9df32060cd6419ae18e4b82ee277a6c8d404699140989ab786",
+      "retrieved_at": "2026-11-17T20:50:35.281890+00:00",
+      "currentness": "unresolved"
+    },
+    "e71c1b3e2bee5dbbc3daac3e9d714b": {
+      "source_id": "US-NV:contract_formation:6166364556d7",
+      "authority_type": "statute",
+      "citation": "NRS 104.2204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "1b54fb3a52b86d9034cb0b2ab53fa05cce7bd18f4aec38a4716477c0c25a4898",
+      "retrieved_at": "2026-11-18T15:14:31.059769+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "c73e9fdb8417c650b23c8d9be76acb": {
+      "source_id": "US-NV:response:61312e40369c",
+      "authority_type": "court_rule",
+      "citation": "Nev. R. Civ. P. 12(a)(1)(A)",
+      "text": "(1) In General. Unless another time is specified by Rule 4.2(c)(3)(E), this rule, or a statute, the time for serving a responsive pleading is as follows: (A) A defendant must serve an answer: (i) within 21 days after being served with the summons and complaint; or (ii) if the defendant has timely waived service under Rule 4.1, within 60 days after the request for a waiver was sent, or within 90 days after the request for a waiver was sent to the defendant outside of the United States.",
+      "text_sha256": "d94a81dc38b408015cec07669b42c2378e1c8a012f8beb9379f25c07b463d05b",
+      "publisher_sha256": "99812c5ef90fa83a0b5ded17bb4f1649316b2e1c3cc48c9e91eaca63e2479065",
+      "retrieved_at": "2026-11-17T20:14:25.244018+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "d7eb6372e1a1eeff32f9f2023c410f": {
+      "source_id": "US-NV:service:724318dad321",
+      "authority_type": "court_rule",
+      "citation": "Nev. R. Civ. P. 4(c)(2)–(3)",
+      "text": "(2) Service With a Copy of the Complaint. A summons must be served with a copy of the complaint. The plaintiff must furnish the necessary copies to the person who makes service. (3) By Whom. The summons and complaint may be served by the sheriff, or a deputy sheriff, of the county where the defendant is found or by any person who is at least 18 years old and not a party to the action.",
+      "text_sha256": "36308ab9a42da69f8bf53631a9f8f712ae3b3593cb0ae0703022424fb3005f5b",
+      "publisher_sha256": "99812c5ef90fa83a0b5ded17bb4f1649316b2e1c3cc48c9e91eaca63e2479065",
+      "retrieved_at": "2026-11-17T20:14:25.244018+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "3a2c37fc4d865b748aaec441495919": {
+      "source_id": "US-NV:contract_damages:f6e59d3af29b",
+      "authority_type": "statute",
+      "citation": "NRS 104.2714",
+      "text": "Where the buyer has accepted goods and given notification (subsection 3 of NRS 104.2607) the buyer may recover as damages for any nonconformity of tender the loss resulting in the ordinary course of events from the seller’s breach as determined in any manner which is reasonable. 2. The measure of damages for breach of warranty is the difference at the time and place of acceptance between the value of the goods accepted and the value they would have had if they had been as warranted, unless special circumstances show proximate damages of a different amount.",
+      "text_sha256": "2e11d50e55467c1aa69d01aa837171fe6c4c5de993d97ce9235fb5ef81921cfa",
+      "publisher_sha256": "1b54fb3a52b86d9034cb0b2ab53fa05cce7bd18f4aec38a4716477c0c25a4898",
+      "retrieved_at": "2026-11-18T15:14:31.059769+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "57c2c3b8ccc5468e45e35c93510310": {
+      "source_id": "US-NV:deposit:b4d8782c09f9",
+      "authority_type": "statute",
+      "citation": "Nev. Rev. Stat. § 118A.242(1)",
+      "text": "1. The landlord may not demand or receive a security deposit or a surety bond, or a combination thereof, including the last month’s rent, whose total amount or value exceeds 3 months’ periodic rent.",
+      "text_sha256": "f3b615fb30bf0478040b713467e343d6244b800e91a1b6c9994d7c78c7c4dd1b",
+      "publisher_sha256": "388d0c493c7783ed38d48574dce1fcffd0d6b70781e9b97e4eabc6430d94e98e",
+      "retrieved_at": "2026-11-17T19:42:48.807587+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 Nevada Revised Statutes"
+    },
+    "03db47888ad16c03834d3b71c25f9c": {
+      "source_id": "US-NV:habitability:f8c8b0085850",
+      "authority_type": "statute",
+      "citation": "Nev. Rev. Stat. § 118A.290(1)",
+      "text": "1. The landlord shall at all times during the tenancy maintain the dwelling unit in a habitable condition. A dwelling unit is not habitable if it violates provisions of housing or health codes concerning the health, safety, sanitation or fitness for habitation of the dwelling unit or if it substantially lacks: (a) Effective waterproofing and weather protection of the roof and exterior walls, including windows and doors. (b) Plumbing facilities which conformed to applicable law when installed and which are maintained in good working order. (c) A water supply approved under applicable law, which is: (1) Under the control of the tenant or landlord and is capable of producing hot and cold running water; (2) Furnished to appropriate fixtures; and (3) Connected to a sewage disposal system approved under applicable law and maintained in good working order to the extent that the system can be controlled by the landlord. (d) Adequate heating facilities which conformed to applicable law when installed and are maintained in good working order. (e) Electrical lighting, outlets, wiring and electrical equipment which conformed to applicable law when installed and are maintained in good working order. (f) An adequate number of appropriate receptacles for garbage and rubbish in clean condition and good repair at the commencement of the tenancy. The landlord shall arrange for the removal of garbage and rubbish from the premises unless the parties by written agreement provide otherwise. (g) Building, grounds, appurtenances and all other areas under the landlord’s control at the time of the commencement of the tenancy in every part clean, sanitary and reasonably free from all accumulations of debris, filth, rubbish, garbage, rodents, insects and vermin. (h) Floors, walls, ceilings, stairways and railings maintained in good repair. (i) Ventilating, air-conditioning and other facilities and appliances, including elevators, maintained in good repair if supplied or required to be supplied by the landlord.",
+      "text_sha256": "0ec6877d32ed77ba1379b0bda5829bb5adf4f67ebf4e25b9701bc3746a13a366",
+      "publisher_sha256": "388d0c493c7783ed38d48574dce1fcffd0d6b70781e9b97e4eabc6430d94e98e",
+      "retrieved_at": "2026-11-17T19:42:48.807587+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 Nevada Revised Statutes"
+    },
+    "a1428ea609a75c1870c0d215950783": {
+      "source_id": "US-NV:debtLaw:a0e923d5588d",
+      "authority_type": "statute",
+      "citation": "Nev. Rev. Stat. § 649.075(1)",
+      "text": "1. Except as otherwise provided in this section, a person shall not engage in the business of a collection agency within this State without having first applied for and obtained a license as a collection agency from the Commissioner.",
+      "text_sha256": "896c7fd1ddcaf1c8b2d41ad53222a7b8bcc1acf0f5950a89b25c7961191e812c",
+      "publisher_sha256": "665709e6a9ac2e7a860b62b2e967417122c9484f59bc0970999d190fbd788896",
+      "retrieved_at": "2026-11-17T19:42:48.992900+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 Nevada Revised Statutes"
+    },
+    "488a6b8c6b36809d7ee2e7c6b151e7": {
+      "source_id": "US-NV:wageLaw:443fca0f21a8",
+      "authority_type": "statute",
+      "citation": "Nev. Rev. Stat. § 608.020",
+      "text": "1. Whenever an employer discharges an employee, the wages and compensation earned and unpaid at the time of such discharge shall become due and payable immediately. 2. Whenever an employer places an employee on a nonworking status, the wages earned and unpaid at the time the employee is placed on nonworking status are due and payable immediately. 3. As used in this section, “nonworking status” means the temporary layoff of an employee by the employer whereby the employee remains employed and may be called back to work by the employer at a future date. The term does not include an employee who an employer: (a) Places on suspension pending an investigation relating to employment; (b) Places on suspension pursuant to a disciplinary action relating to employment; (c) Places on-call for available work; or (d) Approves to take a leave of absence.",
+      "text_sha256": "e66698b53c8d64b538876742de82d86c6c7c99cd4372d3eeb1996d4afe9d56de",
+      "publisher_sha256": "f01f40be28236feb7f04086bb4215786f2f11850e2f7ece99e2800c051f886f9",
+      "retrieved_at": "2026-11-19T14:10:59.756416+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "e24d450014231926949f53e2b5eee6": {
+      "source_id": "US-NV:consumerLaw:98f1b517eec3",
+      "authority_type": "statute",
+      "citation": "Nev. Rev. Stat. § 598.0915(1)–(4)",
+      "text": "A person engages in a “deceptive trade practice” if, in the course of his or her business or occupation, he or she: 1. Knowingly passes off goods or services for sale or lease as those of another person. 2. Knowingly makes a false representation as to the source, sponsorship, approval or certification of goods or services for sale or lease. 3. Knowingly makes a false representation as to affiliation, connection, association with or certification by another person. 4. Uses deceptive representations or designations of geographic origin in connection with goods or services for sale or lease.",
+      "text_sha256": "670821ea550508c56940377edb0205926a73d7b70e8c32a8a7d218fbc292c78e",
+      "publisher_sha256": "c9ce1ce2687dc7a9ece7a0f13b1a0e893da9f00c67031554cb237bc2011a7f76",
+      "retrieved_at": "2026-11-19T19:26:45.087882+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 Nevada Revised Statutes"
+    },
+    "d229c611716dc2f78235444d800e3f": {
+      "source_id": "US-NV:pi_limitations:7905f4de4e2d",
+      "authority_type": "statute",
+      "citation": "Nev. Rev. Stat. § 11.190(4)(a)–(e)",
+      "text": "4. Within 2 years: (a) An action against a sheriff, coroner or constable upon liability incurred by acting in his or her official capacity and in virtue of his or her office, or by the omission of an official duty, including the nonpayment of money collected upon an execution. (b) An action upon a statute for a penalty or forfeiture, where the action is given to a person or the State, or both, except when the statute imposing it prescribes a different limitation. (c) An action for libel, slander, assault, battery, false imprisonment or seduction. (d) An action against a sheriff or other officer for the escape of a prisoner arrested or imprisoned on civil process. (e) Except as otherwise provided in NRS 11.215 or 11.217, an action to recover damages for injuries to a person or for the death of a person caused by the wrongful act or neglect of another. The provisions of this paragraph relating to an action to recover damages for injuries to a person apply only to causes of action which accrue after March 20, 1951.",
+      "text_sha256": "ffb9856cbcee50c4bb707efac7a523458e5900aa6eddfd2ad02c68eebca05619",
+      "publisher_sha256": "e21bdde020606c1ae00134b3739ae29c6ed5817d47c6295a47e1239a25a31d83",
+      "retrieved_at": "2026-11-19T19:31:22.077873+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "87d737db535961c532f3bf28ae0091": {
+      "source_id": "US-NV:written_contract_limitations:9cb09e8f0ae6",
+      "authority_type": "statute",
+      "citation": "Nev. Rev. Stat. § 11.190(1)",
+      "text": "1. Within 6 years: (a) Except as otherwise provided in NRS 62B.420 and 176.275, an action upon a judgment or decree of any court of the United States, or of any state or territory within the United States, or the renewal thereof. (b) An action upon a contract, obligation or liability founded upon an instrument in writing, except those mentioned in the preceding sections of this chapter.",
+      "text_sha256": "416cbf30363fc1cf54d6bfcca4e38f79786387c7cf4a1c0b8b848492341a9c83",
+      "publisher_sha256": "e21bdde020606c1ae00134b3739ae29c6ed5817d47c6295a47e1239a25a31d83",
+      "retrieved_at": "2026-11-19T19:35:43.096131+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "e99e86a9eb9a18a0e8945460dcac3c": {
+      "source_id": "US-NV:small_claims:952bc214c3cb",
+      "authority_type": "statute",
+      "citation": "Nev. Rev. Stat. § 73.010(1)–(2) (justice-court small claims)",
+      "text": "1. A justice of the peace has jurisdiction and may proceed as provided in this chapter and by rules of court in all cases arising in the justice court for the recovery of money only, where the amount claimed does not exceed $10,000. 2. An action brought pursuant to this chapter must be filed in one of the following townships as the proper venue for the action: (a) The township in which the defendant named is a resident, does business or is employed at the time the cause of action arose or at the time the complaint is filed; or (b) In addition to any township described in paragraph (a): (1) In a case involving injury to the person or property, the township where the injury was committed. (2) In a case involving a person who has contracted to perform an obligation at, or relating to, a particular place, the township in which the obligation is or was to be performed. For the purposes of this subparagraph, the township in which the obligation is incurred shall be deemed to be the township in which the obligation is or was to be performed, unless there is a special contract to the contrary.",
+      "text_sha256": "98762daf5476f4c03fc903c7b15558bf17d00e1686c742fe49f87b74333e230b",
+      "publisher_sha256": "da3d1dd76e90895e39f9a4345bd75c93d19f75ec7292aa25b56ee9516089c140",
+      "retrieved_at": "2026-11-20T18:32:56.185377+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Nevada 2025 NRS Chapter 73 publication, revised April 15, 2026"
+    },
+    "9df04c3750e66a04adbbf23817bfaf": {
+      "source_id": "US-NV:negligence_elements:c6be98b8d39c",
+      "authority_type": "opinion",
+      "citation": "Klasch v. Walgreen Co., 127 Nev. 832, 837, 264 P.3d 1155, 1158 (2011)",
+      "text": "To prevail on a negligence claim, a plaintiff must establish four elements: (1) the existence of a duty of care, (2) breach of that duty, (3) legal causation, and (4) damages.",
+      "text_sha256": "7c6a48a4cf7c86c307469ef92f7914426e962e467314b72604ac01ad28451316",
+      "publisher_sha256": "1740d1109bb1ef1a1b59ec8ee1cc69fdf8a5acc1aa4a737af5d699756f11ab5f",
+      "retrieved_at": "2026-11-21T04:27:26.733130+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2011-11-23",
+      "court": "Supreme Court of Nevada",
+      "decision_date": "2011-11-23",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in a wrongful-death negligence action concerning the scope of a pharmacist’s duty.",
+      "publisher_member": "Filed court-issued Advance Opinion 74, printed p. 7, visual transcription"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "0ef92d5eef0e92c3bdd52c0ed41b33",
+    "source_id": "US-NV:fault:2c2122cc907b",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

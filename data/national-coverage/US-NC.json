@@ -1,0 +1,711 @@
+{
+  "jurisdiction": "US-NC",
+  "version": "1",
+  "sources": {
+    "US-NC:statutes:2a6668160afd": {
+      "category": "statutes",
+      "title": "General Statutes",
+      "url": "http://www.ncleg.net/gascripts/statutes/Statutes.asp",
+      "directory": "codes",
+      "locator": "North Carolina"
+    },
+    "US-NC:constitution:200cd55896e9": {
+      "category": "constitution",
+      "title": "Constitution (General Assembly)",
+      "url": "http://www.ncga.state.nc.us/Legislation/constitution/ncconstitution.html",
+      "directory": "doj-NC",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NC:legislature:123394a142d4": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.ncleg.net/",
+      "directory": "codes",
+      "locator": "North Carolina"
+    },
+    "US-NC:labor_agency:9fe58eb17fd7": {
+      "category": "labor_agency",
+      "title": "www.labor.nc.gov",
+      "url": "http://www.labor.nc.gov/",
+      "directory": "labor",
+      "locator": "North Carolina"
+    },
+    "US-NC:commercial_code:00b2d5361682": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://www.ncga.state.nc.us/gascripts/Statutes/StatutesTOC.pl?Chapter=0025",
+      "directory": "ucc",
+      "locator": "North Carolina"
+    },
+    "US-NC:civil_rules:b34797fea297": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "http://www.ncga.state.nc.us/gascripts/Statutes/StatutesTOC.pl?Chapter=0001",
+      "directory": "procedure",
+      "locator": "North Carolina"
+    },
+    "US-NC:civil_rules:f4e7b6f48d63": {
+      "category": "civil_rules",
+      "title": "Rules of Civil Procedure",
+      "url": "http://www.ncga.state.nc.us/gascripts/Statutes/StatutesTOC.pl?Chapter=0001A",
+      "directory": "procedure",
+      "locator": "North Carolina"
+    },
+    "US-NC:consumer_agency:ac11bba1dbbc": {
+      "category": "consumer_agency",
+      "title": "North Carolina (NC)",
+      "url": "https://ncdoj.gov/protecting-consumers/",
+      "directory": "consumer",
+      "locator": "North Carolina (NC)"
+    },
+    "US-NC:judiciary:f09670aaa2e6": {
+      "category": "judiciary",
+      "title": "Judicial Branch",
+      "url": "https://www.nccourts.gov/",
+      "directory": "doj-NC",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-NC:judiciary:2284a5652bd4": {
+      "category": "judiciary",
+      "title": "North Carolina Practice",
+      "url": "http://law.duke.edu/lib/researchguides/ncprac/",
+      "directory": "doj-NC",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-NC:court_directory:c49d1102b4e2": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.nccourts.gov/courts/supreme-court",
+      "directory": "doj-NC",
+      "locator": "Supreme Court"
+    },
+    "US-NC:court_directory:dba8fa18454a": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "https://www.nccourts.gov/courts/court-of-appeals",
+      "directory": "doj-NC",
+      "locator": "Court of Appeals"
+    },
+    "US-NC:court_directory:c7e25cca1367": {
+      "category": "court_directory",
+      "title": "Business Court",
+      "url": "http://www.ncbusinesscourt.net/",
+      "directory": "doj-NC",
+      "locator": "Business Court"
+    },
+    "US-NC:court_directory:82368f2efd11": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "https://www.nccourts.gov/courts/district-court",
+      "directory": "doj-NC",
+      "locator": "District Courts"
+    },
+    "US-NC:court_directory:2dfd510d462a": {
+      "category": "court_directory",
+      "title": "Small Claims Courts",
+      "url": "https://www.nccourts.gov/courts/small-claims-court",
+      "directory": "doj-NC",
+      "locator": "Small Claims Courts"
+    },
+    "US-NC:court_directory:4b54b0d73bd2": {
+      "category": "court_directory",
+      "title": "Recovery Courts",
+      "url": "https://www.nccourts.gov/courts/recovery-courts",
+      "directory": "doj-NC",
+      "locator": "Recovery Courts"
+    },
+    "US-NC:court_directory:eded759ef883": {
+      "category": "court_directory",
+      "title": "Superior Courts",
+      "url": "https://www.nccourts.gov/courts/superior-court",
+      "directory": "doj-NC",
+      "locator": "Superior Courts"
+    },
+    "US-NC:forms:d43bd804c7fe": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://www.nccourts.gov/documents/forms",
+      "directory": "doj-NC",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-NC:constitution:120561863b33": {
+      "category": "constitution",
+      "title": "Constitution (State Library)",
+      "url": "http://ncpedia.org/government/nc-constitution-history",
+      "directory": "doj-NC",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NC:statutes:f63b411fd347": {
+      "category": "statutes",
+      "title": "Session Laws",
+      "url": "http://www.ncga.state.nc.us/gascripts/EnactedLegislation/ELTOC.pl?sType=Law",
+      "directory": "doj-NC",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NC:statutes:295ddb4a6ca5": {
+      "category": "statutes",
+      "title": "General Statutes",
+      "url": "http://www.ncga.state.nc.us/gascripts/Statutes/Statutes.asp",
+      "directory": "doj-NC",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NC:regulations:cbf776a67277": {
+      "category": "regulations",
+      "title": "Administrative Code and Rules",
+      "url": "http://reports.oah.state.nc.us/ncac.asp",
+      "directory": "doj-NC",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-NC:regulations:36f4a01da6fa": {
+      "category": "regulations",
+      "title": "Register",
+      "url": "http://www.oah.state.nc.us/rules/register/",
+      "directory": "doj-NC",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-NC:pi_limitations:388a071ecd47": {
+      "category": "pi_limitations",
+      "title": "N.C. Gen. Stat. § 1-52(16)",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_1/GS_1-52.html",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_1/GS_1-52.html",
+        "retrieved_at": "2026-11-17T19:34:00.010753+00:00",
+        "http_status": "200",
+        "sha256": "213613bb0ccda0f9864f2658fc753cd7123dd96380ade9e55bc590e8b0ca76d7",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NC:written_contract_limitations:388a071ecd47": {
+      "category": "written_contract_limitations",
+      "title": "N.C. Gen. Stat. § 1-52",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_1/GS_1-52.html",
+      "directory": null,
+      "locator": "N.C. Gen. Stat. § 1-52",
+      "observation": {
+        "requested_url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_1/GS_1-52.html",
+        "retrieved_at": "2026-11-17T19:34:00.010753+00:00",
+        "http_status": "200",
+        "sha256": "213613bb0ccda0f9864f2658fc753cd7123dd96380ade9e55bc590e8b0ca76d7",
+        "health": "healthy"
+      }
+    },
+    "US-NC:oral_contract_limitations:388a071ecd47": {
+      "category": "oral_contract_limitations",
+      "title": "N.C. Gen. Stat. § 1-52(1)",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_1/GS_1-52.html",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_1/GS_1-52.html",
+        "retrieved_at": "2026-11-17T19:34:00.010753+00:00",
+        "http_status": "200",
+        "sha256": "213613bb0ccda0f9864f2658fc753cd7123dd96380ade9e55bc590e8b0ca76d7",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NC:small_claims:34315eb01a91": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.nccourts.gov/help-topics/lawsuits-and-small-claims/small-claims",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.nccourts.gov/help-topics/lawsuits-and-small-claims/small-claims",
+        "retrieved_at": "2026-11-17T19:42:52.708503+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-NC:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 28"
+    },
+    "US-NC:consumerLaw:0dfc5a4d2b6b": {
+      "title": "N.C. Gen. Stat. § 75-1.1 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_75/GS_75-1.1.html",
+      "directory": "consumer_statutes_index",
+      "locator": "N.C. Gen. Stat. § 75-1.1 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-NC:consumerLaw:d0a50d9c9ccc": {
+      "category": "consumerLaw",
+      "title": "N.C. Gen. Stat. § 75-1.1",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_75/GS_75-1.1.html",
+      "locator": "N.C. Gen. Stat. § 75-1.1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:56.927503+00:00",
+        "sha256": "3e596dc1eef68d15611f1882dfb3488586573195cedffa66576e15ad78b4e568"
+      }
+    },
+    "US-NC:contract_formation:dd4f61fc5a13": {
+      "category": "contract_formation",
+      "title": "N.C. Gen. Stat. § 25-2-204",
+      "url": "https://house.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_25/GS_25-2-204.html",
+      "locator": "N.C. Gen. Stat. § 25-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:32.280469+00:00",
+        "sha256": "3e27589378c291581fd4df425aab41a5290eeedf942a5a4a9cce84a6a8787f6b"
+      }
+    },
+    "US-NC:commencement:c493fd4bde8a": {
+      "category": "commencement",
+      "title": "N.C. Gen. Stat. § 1A-1, Rule 3(a)",
+      "url": "https://library.ncleg.gov/EnactedLegislation/Statutes/PDF/BySection/Chapter_1A/GS_1A-1%2C_Rule_3.pdf",
+      "locator": "N.C. Gen. Stat. § 1A-1, Rule 3(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:42.409078+00:00",
+        "sha256": "ce40b1a18e84f47017014bbfa32b07924af906b9cee5c6fbd4f4a48ba362b17c"
+      }
+    },
+    "US-NC:wageLaw:f28dee4012ec": {
+      "category": "wageLaw",
+      "title": "N.C. Gen. Stat. § 95-25.6",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_95/Article_2A.html",
+      "locator": "N.C. Gen. Stat. § 95-25.6",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:59.222394+00:00",
+        "sha256": "2ccb4cc40c6e07e5ebd711804fdb19fe68a20254b3d0754cb4e109aa3d74c74d"
+      }
+    },
+    "US-NC:debtLaw:661c326ca90f": {
+      "category": "debtLaw",
+      "title": "N.C. Gen. Stat. § 75-51",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_75/GS_75-51.html",
+      "locator": "N.C. Gen. Stat. § 75-51",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:23:23.020264+00:00",
+        "sha256": "d97af296a3f018a3c5183006f967856815b29478efc26854189f382c7b2c3d98"
+      }
+    },
+    "US-NC:pi_limitations:73954290e3a3": {
+      "category": "pi_limitations",
+      "title": "N.C. Gen. Stat. § 1-52",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_1/GS_1-52.html",
+      "locator": "N.C. Gen. Stat. § 1-52",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:22.203850+00:00",
+        "sha256": "213613bb0ccda0f9864f2658fc753cd7123dd96380ade9e55bc590e8b0ca76d7"
+      }
+    },
+    "US-NC:general_contract_limitations:6969e173f58e": {
+      "category": "general_contract_limitations",
+      "title": "N.C. Gen. Stat. § 1-52(1)",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_1/GS_1-52.html",
+      "locator": "N.C. Gen. Stat. § 1-52(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:22.203850+00:00",
+        "sha256": "213613bb0ccda0f9864f2658fc753cd7123dd96380ade9e55bc590e8b0ca76d7"
+      }
+    },
+    "US-NC:response:460107101bf2": {
+      "category": "response",
+      "title": "N.C. Gen. Stat. § 1A-1, Rule 12(a)",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_1A/GS_1A-1%2C_Rule_12.html",
+      "locator": "N.C. Gen. Stat. § 1A-1, Rule 12(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:42:59.369086+00:00",
+        "sha256": "66b74dd17ca270f745fd33151226fdbafa9497a1dd1222e9c50f2590c1a7d8ae"
+      }
+    },
+    "US-NC:service:1b3cda53682a": {
+      "category": "service",
+      "title": "N.C. Gen. Stat. § 1A-1, Rule 4(j)(1)",
+      "url": "https://www.ncleg.gov/enactedlegislation/statutes/html/bysection/chapter_1a/gs_1a-1%2C_rule_4.html",
+      "locator": "N.C. Gen. Stat. § 1A-1, Rule 4(j)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:02.946874+00:00",
+        "sha256": "86be095fe77ef7fca0ff3db9cef136d79009c2766214cfc00c04b8afbbc84569"
+      }
+    },
+    "US-NC:deposit:366e3db6acbe": {
+      "category": "deposit",
+      "title": "N.C. Gen. Stat. § 42-52",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_42/GS_42-52.html",
+      "locator": "N.C. Gen. Stat. § 42-52",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:17.787738+00:00",
+        "sha256": "930d266be2161621da6feb7845f90e30955fe580112f3d1fe5d8c8a0c161a095"
+      }
+    },
+    "US-NC:fault:db9fc7f53eee": {
+      "category": "fault",
+      "title": "Jones v. J. Kim Hatcher Insurance Agencies, Inc., No. 264A23 (N.C. May 23, 2025)",
+      "url": "https://appellate.nccourts.org/opinions/?c=1&pdf=44743",
+      "locator": "Jones v. J. Kim Hatcher Insurance Agencies, Inc., No. 264A23 (N.C. May 23, 2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:22:59.111835+00:00",
+        "sha256": "508f6e2be78db2437949b9d122d2908c7fe905f48d1ffea438bf6165f1c22dac"
+      }
+    },
+    "US-NC:small_claims:dbdf131661ef": {
+      "category": "small_claims",
+      "title": "N.C. Gen. Stat. § 7A-210 (small-claim action defined)",
+      "url": "https://www3.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_7A/GS_7A-210.html",
+      "locator": "N.C. Gen. Stat. § 7A-210 (small-claim action defined)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:32:56.018633+00:00",
+        "sha256": "a90f5c7e067bb86d8e5a61f68b977aa4aaaac2760bd480fce5d84c9277ccfdec"
+      }
+    },
+    "US-NC:small_claims:c7cfc8cb1ac0": {
+      "category": "small_claims",
+      "title": "N.C. Gen. Stat. § 7A-217 (personal jurisdiction in magistrate small claims)",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/PDF/BySection/Chapter_7A/GS_7A-217.pdf",
+      "locator": "N.C. Gen. Stat. § 7A-217 (personal jurisdiction in magistrate small claims)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:32:56.185377+00:00",
+        "sha256": "de40e1eb69dd470adce78e85d4dd04c467653f168200b5430c7c841b71786798"
+      }
+    },
+    "US-NC:small_claims:ec2253c800b4": {
+      "category": "small_claims",
+      "title": "N.C. Gen. Stat. § 7A-218 (answer in magistrate small claims)",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/PDF/BySection/Chapter_7A/GS_7A-218.pdf",
+      "locator": "N.C. Gen. Stat. § 7A-218 (answer in magistrate small claims)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:32:56.098226+00:00",
+        "sha256": "e67aef8b4edff756adf8418aa6a1c70d82dc6505c20253e86fd9e49624d9b0c5"
+      }
+    },
+    "US-NC:negligence_elements:d0c9d6699fcb": {
+      "category": "negligence_elements",
+      "title": "McClease v. Dover Volunteer Fire Department, 260 N.C. App. 81, 85 (2018)",
+      "url": "https://appellate.nccourts.org/opinions/?c=2&pdf=36690",
+      "locator": "McClease v. Dover Volunteer Fire Department, 260 N.C. App. 81, 85 (2018)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:28:23.761092+00:00",
+        "sha256": "f8c91ba8df274716a43e273a56e5128015a9d273a20cf20f51cce1e0bb05f9aa"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-NC:court:8effd91c84ad",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-NC:court_directory:c49d1102b4e2"
+    },
+    {
+      "id": "US-NC:court:d32098993834",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-NC:court_directory:dba8fa18454a"
+    },
+    {
+      "id": "US-NC:court:1d741963d22a",
+      "name": "Business Court",
+      "level": "trial_directory",
+      "source_id": "US-NC:court_directory:c7e25cca1367"
+    },
+    {
+      "id": "US-NC:court:d6bb2a14f996",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-NC:court_directory:82368f2efd11"
+    },
+    {
+      "id": "US-NC:court:2fd8c9914f83",
+      "name": "Small Claims Courts",
+      "level": "trial_directory",
+      "source_id": "US-NC:court_directory:2dfd510d462a"
+    },
+    {
+      "id": "US-NC:court:019011fc685a",
+      "name": "Recovery Courts",
+      "level": "trial_directory",
+      "source_id": "US-NC:court_directory:4b54b0d73bd2"
+    },
+    {
+      "id": "US-NC:court:a7d24c021a20",
+      "name": "Superior Courts",
+      "level": "trial_directory",
+      "source_id": "US-NC:court_directory:eded759ef883"
+    },
+    {
+      "id": "US-NC:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-NC:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NC:court:3c9c83e81fef",
+      "name": "District",
+      "level": "limited_trial",
+      "source_id": "US-NC:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "N.C. Gen. Stat. § 1-52(16)",
+      "source_id": "US-NC:pi_limitations:388a071ecd47",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "N.C. Gen. Stat. § 1-52(1)",
+      "source_id": "US-NC:written_contract_limitations:388a071ecd47",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "N.C. Gen. Stat. § 1-52(1)",
+      "source_id": "US-NC:oral_contract_limitations:388a071ecd47",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "N.C. Gen. Stat. § 42-38. Application",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "N.C. Gen. Stat. § 75-1.1 et seq.",
+      "source_id": "US-NC:consumerLaw:0dfc5a4d2b6b",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "c34ebb921a30de115a3d13bf75acfe": {
+      "citation": "N.C. Gen. Stat. § 1-52",
+      "source_id": "US-NC:written_contract_limitations:388a071ecd47",
+      "authority_type": "statute",
+      "text": "(1) Upon a contract, obligation or liability arising out of a contract, express or implied, except those mentioned in the preceding sections or in G.S. 1-53(1). (1a) Upon the official bond of a public officer.",
+      "text_sha256": "addf6d5d2610ed074837a5774b3bdd703b9395a0d47c99743326b44610fc8d1f",
+      "publisher_sha256": "213613bb0ccda0f9864f2658fc753cd7123dd96380ade9e55bc590e8b0ca76d7",
+      "retrieved_at": "2026-11-17T19:34:00.010753+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "283907fcd1d39a8d9241e013ca2405": {
+      "source_id": "US-NC:consumerLaw:d0a50d9c9ccc",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 75-1.1",
+      "text": "(a) Unfair methods of competition in or affecting commerce, and unfair or deceptive acts or practices in or affecting commerce, are declared unlawful.",
+      "text_sha256": "d8185a8b42742993498c7695250fb00a14c68837980f7fee1d03af7b490d53ad",
+      "publisher_sha256": "3e596dc1eef68d15611f1882dfb3488586573195cedffa66576e15ad78b4e568",
+      "retrieved_at": "2026-11-17T21:03:56.927503+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "10fe7664584dd798eb248f702f36e2": {
+      "source_id": "US-NC:contract_formation:dd4f61fc5a13",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 25-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "3e27589378c291581fd4df425aab41a5290eeedf942a5a4a9cce84a6a8787f6b",
+      "retrieved_at": "2026-11-18T15:14:32.280469+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "107c9ee5dd438fe8c582ce3628eb3d": {
+      "source_id": "US-NC:commencement:c493fd4bde8a",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 1A-1, Rule 3(a)",
+      "text": "(a) A civil action is commenced by filing a complaint with the court. The clerk shall enter the date of filing on the original complaint, and such entry shall be prima facie evidence of the date of filing. A civil action may also be commenced by the issuance of a summons when (1) A person makes application to the court stating the nature and purpose of his action and requesting permission to file his complaint within 20 days and (2) The court makes an order stating the nature and purpose of the action and granting the requested permission. The summons and the court's order shall be served in accordance with the provisions of Rule 4. When the complaint is filed it shall be served in accordance with the provisions of Rule 4 or by registered mail if the plaintiff so elects. If the complaint is not filed within the period specified in the clerk's order, the action shall abate. If electronic filing is available in the county of filing, attorneys shall file in accordance with Rule 5 of the General Rules of Practice for the Superior and District Courts. If electronic filing is available in the county of filing, self‑represented litigants who are appropriately registered in the electronic filing system may file electronically in accordance with Rule 5 of the General Rules of Practice for the Superior and District Courts.",
+      "text_sha256": "9711830224e2552d1f87037f89b1dda1de6d043af4ff6d376e66d8ef38e2c2c8",
+      "publisher_sha256": "ce40b1a18e84f47017014bbfa32b07924af906b9cee5c6fbd4f4a48ba362b17c",
+      "retrieved_at": "2026-11-18T20:45:42.409078+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "2f266acbe1bf62ef3ae1a676a02e79": {
+      "source_id": "US-NC:wageLaw:f28dee4012ec",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 95-25.6",
+      "text": "Every employer shall pay every employee all wages and tips accruing to the employee on the regular payday. Pay periods may be daily, weekly, bi-weekly, semi-monthly, or monthly. Wages based upon bonuses, commissions, or other forms of calculation may be paid as infrequently as annually if prescribed in advance.",
+      "text_sha256": "e524c23875d80378518cad7eda2e1ff10689ebea8ef55c0a91cfd95b2228d3ff",
+      "publisher_sha256": "2ccb4cc40c6e07e5ebd711804fdb19fe68a20254b3d0754cb4e109aa3d74c74d",
+      "retrieved_at": "2026-11-19T14:10:59.222394+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "f7f9affec99a0ed418705c89e8f415": {
+      "source_id": "US-NC:debtLaw:661c326ca90f",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 75-51",
+      "text": "No debt collector shall collect or attempt to collect any debt alleged to be due and owing from a consumer by means of any unfair threat, coercion, or attempt to coerce. Such unfair acts include, but are not limited to, the following: (1) Using or threatening to use violence or any illegal means to cause harm to the person, reputation or property of any person. (2) Falsely accusing or threatening to accuse any person of fraud or any crime, or of any conduct that would tend to cause disgrace, contempt or ridicule. (3) Making or threatening to make false accusations to another person, including any credit reporting agency, that a consumer has not paid, or has willfully refused to pay a just debt. (4) Threatening to sell or assign, or to refer to another for collection, the debt of the consumer with an attending representation that the result of such sale, assignment or reference would be that the consumer would lose any defense to the debt or would be subjected to harsh, vindictive, or abusive collection attempts. (5) Representing that nonpayment of an alleged debt may result in the arrest of any person. (6) Representing that nonpayment of an alleged debt may result in the seizure, garnishment, attachment, or sale of any property or wages unless such action is in fact contemplated by the debt collector and permitted by law. (7) Threatening to take any action not in fact taken in the usual course of business, unless it can be shown that such threatened action was actually intended to be taken in the particular case in which the threat was made. (8) Threatening to take any action not permitted by law.",
+      "text_sha256": "07ac8a49ec558178c986d8f1adbe8060aa718f602054f835448983048962dbab",
+      "publisher_sha256": "d97af296a3f018a3c5183006f967856815b29478efc26854189f382c7b2c3d98",
+      "retrieved_at": "2026-11-19T19:23:23.020264+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "b00113ee02332079f4ebed15fc24e7": {
+      "source_id": "US-NC:pi_limitations:73954290e3a3",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 1-52",
+      "text": "Within three years an action - (1) Upon a contract, obligation or liability arising out of a contract, express or implied, except those mentioned in the preceding sections or in G.S. 1-53(1). (1a) Upon the official bond of a public officer. (2) Upon a liability created by statute, either state or federal, unless some other time is mentioned in the statute creating it. (3) For trespass upon real property. When the trespass is a continuing one, the action shall be commenced within three years from the original trespass, and not thereafter. (4) For taking, detaining, converting or injuring any goods or chattels, including action for their specific recovery. (5) For criminal conversation, or for any other injury to the person or rights of another, not arising on contract and not hereafter enumerated, except as provided by G.S. 1-17(d) and (e). (6) Against the sureties of any executor, administrator, collector or guardian on the official bond of their principal; within three years after the breach thereof complained of. (7) Against bail; within three years after judgment against the principal; but bail may discharge himself by a surrender of the principal, at any time before final judgment against the bail. (8) For fees due to a clerk, sheriff or other officer, by the judgment of a court; within three years from the entry of the judgment, or the issuing of the last execution thereon. (9) For relief on the ground of fraud or mistake; the cause of action shall not be deemed to have accrued until the discovery by the aggrieved party of the facts constituting the fraud or mistake. (10) Repealed by Session Laws 1977, c. 886, s. 1. (11) For the recovery of any amount under and by virtue of the provisions of the Fair Labor Standards Act of 1938 and amendments thereto, said act being an act of Congress. (12) Upon a claim for loss covered by an insurance policy that is subject to the three-year limitation contained in G.S. 58-44-16. (13) Against a public officer, for a trespass, under color of his office. (14) An action under Chapter 75B of the General Statutes, the action in regard to a continuing violation accrues at the time of the latest violation. (15) For the recovery of taxes paid as provided in G.S. 105-381 or for the recovery of an unlawful fee, charge, or exaction collected by a county, municipality, or other unit of local government for water or sewer service or water and sewer service. (16) Unless otherwise provided by law, for personal injury or physical damage to claimant's property, the cause of action, except in causes of actions referred to in G.S. 1-15(c), shall not accrue until bodily harm to the claimant or physical damage to his property becomes apparent or ought reasonably to have become apparent to the claimant, whichever event first occurs. Except as provided in G.S. 130A-26.3 or G.S. 1-17(d) and (e), no cause of action shall accrue more than 10 years from the last act or omission of the defendant giving rise to the cause of action. (17) Against a public utility, electric or telephone membership corporation, or a municipality for damages or for compensation for right-of-way or use of any lands for a utility service line or lines to serve one or more customers or members unless an inverse condemnation action or proceeding is commenced within three years after the utility service line has been constructed or by October 1, 1984, whichever is later. (18) Against any professional land surveyor as defined in G.S. 89C-3(9) or any person acting under the surveyor's supervision and control for physical damage or economic or monetary loss due to negligence or a deficiency in the performance of surveying or platting. A cause of action for physical damage under this subdivision shall be deemed to accrue at the time of the occurrence of the physical damage giving rise to the cause of action. All actions under this subdivision shall commence within seven years from the specific last act or omission of the professional land surveyor or any person acting under the surveyor's supervision and control giving rise to the cause of action. For purposes of this subdivision, \"surveying and platting\" means boundary surveys, topographical surveys, surveys of property lines, and any other measurement or surveying of real property and the consequent graphic representation thereof. (19) For assault, battery, or false imprisonment, except as provided by G.S. 1-17(d) and (e). Notwithstanding this subdivision, a plaintiff may file a civil action within two years of the date of a criminal conviction for a related felony sexual offense against a defendant for claims related to sexual abuse suffered while the plaintiff was under 18 years of age. (20) Upon a liability for a civil penalty, civil assessment, or civil fine imposed pursuant to Chapter 20 of the General Statutes.",
+      "text_sha256": "f8dac3bee7f686fe71cdcbdf7269e14fc6fa99e9eb443a6e2a333f75c218959d",
+      "publisher_sha256": "213613bb0ccda0f9864f2658fc753cd7123dd96380ade9e55bc590e8b0ca76d7",
+      "retrieved_at": "2026-11-19T19:31:22.203850+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "a4722e808c13b862ec97894df82395": {
+      "source_id": "US-NC:general_contract_limitations:6969e173f58e",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 1-52(1)",
+      "text": "Within three years an action - (1) Upon a contract, obligation or liability arising out of a contract, express or implied, except those mentioned in the preceding sections or in G.S. 1-53(1).",
+      "text_sha256": "f87929daa6d25dbc139ca490ec99581edfde9ab4a9fa55ee9db762fb1f773960",
+      "publisher_sha256": "213613bb0ccda0f9864f2658fc753cd7123dd96380ade9e55bc590e8b0ca76d7",
+      "retrieved_at": "2026-11-19T19:31:22.203850+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "193fff657f5f2a9b40dcfa660581b3": {
+      "source_id": "US-NC:response:460107101bf2",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 1A-1, Rule 12(a)",
+      "text": "(a) (1) When Presented. - A defendant shall serve his answer within 30 days after service of the summons and complaint upon him. A party served with a pleading stating a crossclaim against him shall serve an answer thereto within 30 days after service upon him. The plaintiff shall serve his reply to a counterclaim in the answer within 30 days after service of the answer or, if a reply is ordered by the court, within 30 days after service of the order, unless the order otherwise directs. Service of a motion permitted under this rule alters these periods of time as follows, unless a different time is fixed by order of the court: a. The responsive pleading shall be served within 20 days after notice of the court's action in ruling on the motion or postponing its disposition until the trial on the merits; b. If the court grants a motion for a more definite statement, the responsive pleading shall be served within 20 days after service of the more definite statement. (2) Cases Removed to United States District Court. - Upon the filing in a district court of the United States of a petition for the removal of a civil action or proceeding from a court in this State and the filing of a copy of the petition in the State court, the State court shall proceed no further therein unless and until the case is remanded. If it shall be finally determined in the United States courts that the action or proceeding was not removable or was improperly removed, or for other reason should be remanded, and a final order is entered remanding the action or proceeding to the State court, the defendant or defendants, or any other party who would have been permitted or required to file a pleading had the proceedings to remove not been instituted, shall have 30 days after the filing in such State court of a certified copy of the order of remand to file motions and to answer or otherwise plead.",
+      "text_sha256": "28deb81a509a81f4b2c6011fd426cda57665798bc655b9f01ffd75ca2b1f1d73",
+      "publisher_sha256": "66b74dd17ca270f745fd33151226fdbafa9497a1dd1222e9c50f2590c1a7d8ae",
+      "retrieved_at": "2026-11-19T19:42:59.369086+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "North Carolina Superior and District Courts"
+    },
+    "115c911963aca97e7d0d3323f51969": {
+      "source_id": "US-NC:service:1b3cda53682a",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 1A-1, Rule 4(j)(1)",
+      "text": "(1) Natural Person. - Except as provided in subdivision (2) below, upon a natural person by one of the following: a. By delivering a copy of the summons and of the complaint to the natural person or by leaving copies thereof at the defendant's dwelling house or usual place of abode with some person of suitable age and discretion then residing therein. b. By delivering a copy of the summons and of the complaint to an agent authorized by appointment or by law to be served or to accept service of process or by serving process upon such agent or the party in a manner specified by any statute. c. By mailing a copy of the summons and of the complaint, registered or certified mail, return receipt requested, addressed to the party to be served, and delivering to the addressee. d. By depositing with a designated delivery service authorized pursuant to 26 U.S.C. § 7502(f)(2) a copy of the summons and complaint, addressed to the party to be served, delivering to the addressee, and obtaining a delivery receipt. As used in this sub-subdivision, \"delivery receipt\" includes an electronic or facsimile receipt. e. By mailing a copy of the summons and of the complaint by signature confirmation as provided by the United States Postal Service, addressed to the party to be served, and delivering to the addressee.",
+      "text_sha256": "cdf180376a88f1aa18fca86c5d24b0d4047114242cab2310607034803a474a77",
+      "publisher_sha256": "86be095fe77ef7fca0ff3db9cef136d79009c2766214cfc00c04b8afbbc84569",
+      "retrieved_at": "2026-11-20T15:21:02.946874+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "North Carolina Superior and District Courts"
+    },
+    "570b24b314cdd87bd3325114cb4d68": {
+      "source_id": "US-NC:deposit:366e3db6acbe",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 42-52",
+      "text": "Upon termination of the tenancy, money held by the landlord as security may be applied as permitted in G.S. 42-51 or, if not so applied, shall be refunded to the tenant. In either case the landlord in writing shall itemize any damage and mail or deliver same to the tenant, together with the balance of the security deposit, no later than 30 days after termination of the tenancy and delivery of possession of the premises to the landlord. If the extent of the landlord's claim against the security deposit cannot be determined within 30 days, the landlord shall provide the tenant with an interim accounting no later than 30 days after termination of the tenancy and delivery of possession of the premises to the landlord and shall provide a final accounting within 60 days after termination of the tenancy and delivery of possession of the premises to the landlord. If the tenant's address is unknown the landlord shall apply the deposit as permitted in G.S. 42-51 after a period of 30 days and the landlord shall hold the balance of the deposit for collection by the tenant for at least six months. The landlord may not withhold as damages part of the security deposit for conditions that are due to normal wear and tear nor may the landlord retain an amount from the security deposit which exceeds his actual damages.",
+      "text_sha256": "63f6926c9d9a2cde04b0f0055c70be95074e9c421374483c8dfb042eb3e38c3b",
+      "publisher_sha256": "930d266be2161621da6feb7845f90e30955fe580112f3d1fe5d8c8a0c161a095",
+      "retrieved_at": "2026-11-20T16:35:17.787738+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "cfdc80d4b1b07848acdf271488d93d": {
+      "source_id": "US-NC:fault:db9fc7f53eee",
+      "authority_type": "opinion",
+      "citation": "Jones v. J. Kim Hatcher Insurance Agencies, Inc., No. 264A23 (N.C. May 23, 2025)",
+      "text": "See Sorrells v. M.Y.B. Hosp. Ventures, 332 N.C. 645, 648 (1992) (“[A] plaintiff’s contributory negligence is a bar to recovery from a defendant who commits an act of ordinary negligence.”). To establish contributory negligence as an affirmative defense, a defendant must prove that the “plaintiff could have avoided injury by exercising reasonable care.” Cullen, 386 N.C. at 377. Whether a plaintiff exercised reasonable care, in turn, depends on whether he “conform[ed] to an objective standard of behavior —the care an ordinarily prudent person would exercise under the same or similar circumstances to avoid injury.” Id. (quoting Smith v. Fiber Controls Corp., 300 N.C. 669, 673 (1980)).",
+      "text_sha256": "0aa7eb6e839bdb878209c1ad6e452f68ee5716d5fc6914c47a7b359026abffa1",
+      "publisher_sha256": "508f6e2be78db2437949b9d122d2908c7fe905f48d1ffea438bf6165f1c22dac",
+      "retrieved_at": "2026-11-20T17:22:59.111835+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2025-05-23",
+      "court": "Supreme Court of North Carolina",
+      "decision_date": "2025-05-23",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a divided intermediate appellate decision reviewing dismissal of an insurance-agent negligence claim. The majority analyzed the pleading-stage defense of contributory negligence."
+    },
+    "e4dd69e487fb5c03fbad0e058630eb": {
+      "source_id": "US-NC:small_claims:dbdf131661ef",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 7A-210 (small-claim action defined)",
+      "text": "For purposes of this Article a small claim action is a civil action wherein: (1) The amount in controversy, computed in accordance with G.S. 7A-243, does not exceed ten thousand dollars ($10,000); and (2) The only principal relief prayed is monetary, or the recovery of specific personal property, or summary ejectment, or any combination of the foregoing in properly joined claims; and (3) The plaintiff has requested assignment to a magistrate in the manner provided in this Article. The seeking of the ancillary remedy of claim and delivery or an order from the clerk of superior court for the relinquishment of property subject to a lien pursuant to G.S 44A-4(a) does not prevent an action otherwise qualifying as a small claim under this Article from so qualifying.",
+      "text_sha256": "c88a3438416b319280afa080795199ee792c00b09d400cd701ed3a8c5d9af4ed",
+      "publisher_sha256": "a90f5c7e067bb86d8e5a61f68b977aa4aaaac2760bd480fce5d84c9277ccfdec",
+      "retrieved_at": "2026-11-20T18:32:56.018633+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "6b228c462cb44e8a493850776938dd": {
+      "source_id": "US-NC:small_claims:c7cfc8cb1ac0",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 7A-217 (personal jurisdiction in magistrate small claims)",
+      "text": "When by order or rule a small claim action is assigned to a magistrate, the court may obtain jurisdiction over the person of the defendant by the following methods: (1) By delivering a copy of the summons and of the complaint to the defendant or by leaving copies thereof at the defendant's dwelling house or usual place of abode with some person of suitable age and discretion then residing therein. When the defendant is under any legal disability, the defendant may be subjected to personal jurisdiction only by personal service of process in the manner provided by G.S. 1A‑1, Rule 4(j)(2). (2) When the defendant is not under any legal disability, the defendant may be served by registered or certified mail, signature confirmation, or designated delivery service as provided in G.S. 1A‑1, Rule 4(j). Proof of service is as provided in G.S. 1A‑1, Rule 4(j2). (3) When the defendant is under no legal disability, the defendant may be subjected to the jurisdiction of the court over the person of the defendant by written acceptance of service or by voluntary appearance. (4) In summary ejectment cases only, service as provided in G.S. 42‑29 is also authorized.",
+      "text_sha256": "22284213e62dd57613526acc7638e2510640cc9e82bb0ae5a4737661472a153e",
+      "publisher_sha256": "de40e1eb69dd470adce78e85d4dd04c467653f168200b5430c7c841b71786798",
+      "retrieved_at": "2026-11-20T18:32:56.185377+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "679454b0dca8657672bf4f2887704f": {
+      "source_id": "US-NC:small_claims:ec2253c800b4",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 7A-218 (answer in magistrate small claims)",
+      "text": "At any time prior to the time set for trial, the defendant may file a written answer admitting or denying all or any of the allegations in the complaint, or pleading new matter in avoidance. No particular form is required, but it is sufficient if in a form to enable a person of common understanding to know the nature of the defense intended. A general denial of all the allegations of the complaint is permissible. Failure of defendant to file a written answer after being subjected to the jurisdiction of the court over his person constitutes a general denial.",
+      "text_sha256": "0d765f84691903a6b8d232135043a73de49a81fb54a5a4ed060c75c5886826b2",
+      "publisher_sha256": "e67aef8b4edff756adf8418aa6a1c70d82dc6505c20253e86fd9e49624d9b0c5",
+      "retrieved_at": "2026-11-20T18:32:56.098226+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "fc68dd8cf798f5baef0231f57abdcb": {
+      "source_id": "US-NC:negligence_elements:d0c9d6699fcb",
+      "authority_type": "opinion",
+      "citation": "McClease v. Dover Volunteer Fire Department, 260 N.C. App. 81, 85 (2018)",
+      "text": "It is well established that in order to establish a prima facie case of negligence against the defendant, the plaintiff must demonstrate that “(1) the defendant owed the plaintiff a duty of care; (2) the defendant’s conduct breached that duty; (3) the breach was the actual and proximate cause of the plaintiff’s injury; and (4) plaintiff suffered damages as a result of the injury.”",
+      "text_sha256": "9df37e5f89c9884d24fc365f2850df351aaa14f068a66403c96ceabb12abf2f2",
+      "publisher_sha256": "f8c91ba8df274716a43e273a56e5128015a9d273a20cf20f51cce1e0bb05f9aa",
+      "retrieved_at": "2026-11-21T04:28:23.761092+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2018-06-19",
+      "court": "North Carolina Court of Appeals",
+      "decision_date": "2018-06-19",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment on negligence and emotional-distress claims stemming from a fire department response.",
+      "publisher_member": "Court-issued slip opinion PDF p. 8; North Carolina Court of Appeals Reports p. 85"
+    }
+  },
+  "fault_allocation": {
+    "regime": "contributory",
+    "source_id": "US-NC:fault:db9fc7f53eee",
+    "passage_selector": "cfdc80d4b1b07848acdf271488d93d",
+    "currentness": "historical",
+    "qualification": "Historical majority discussion of the affirmative defense to ordinary negligence. The same opinion analyzes pleading-stage treatment and gross negligence separately."
+  }
+}

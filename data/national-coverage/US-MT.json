@@ -1,0 +1,685 @@
+{
+  "jurisdiction": "US-MT",
+  "version": "1",
+  "sources": {
+    "US-MT:statutes:6830239ae55b": {
+      "category": "statutes",
+      "title": "Montana Code",
+      "url": "https://leg.mt.gov/bills/mca/index.html",
+      "directory": "codes",
+      "locator": "Montana"
+    },
+    "US-MT:constitution:755f87245bc2": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://leg.mt.gov/bills/mca_toc/Constitution.htm",
+      "directory": "codes",
+      "locator": "Montana"
+    },
+    "US-MT:legislature:4be3735a7f85": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "https://leg.mt.gov/",
+      "directory": "codes",
+      "locator": "Montana"
+    },
+    "US-MT:labor_agency:3266875e3fd9": {
+      "category": "labor_agency",
+      "title": "www.dli.mt.gov",
+      "url": "http://www.dli.mt.gov/",
+      "directory": "labor",
+      "locator": "Montana"
+    },
+    "US-MT:commercial_code:2433f054240c": {
+      "category": "commercial_code",
+      "title": "See Trade and Commerce Chapters 1-9",
+      "url": "https://leg.mt.gov/bills/mca/title_0300/chapters_index.html",
+      "directory": "ucc",
+      "locator": "Montana"
+    },
+    "US-MT:civil_rules:bce052c98aa2": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "https://leg.mt.gov/bills/mca/title_0250/chapters_index.html",
+      "directory": "procedure",
+      "locator": "Montana"
+    },
+    "US-MT:consumer_agency:575ae38cd617": {
+      "category": "consumer_agency",
+      "title": "Montana (MT)",
+      "url": "https://dojmt.gov/office-of-consumer-protection/",
+      "directory": "consumer",
+      "locator": "Montana (MT)"
+    },
+    "US-MT:judiciary:d9fcc510f68a": {
+      "category": "judiciary",
+      "title": "Montana Judicial Branch",
+      "url": "https://courts.mt.gov/",
+      "directory": "doj-MT",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-MT:judiciary:c3c1ae92a0ea": {
+      "category": "judiciary",
+      "title": "Legal Research Guides",
+      "url": "https://courts.mt.gov/Library/LibraryCollections/LegalResearchGuides",
+      "directory": "doj-MT",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-MT:judiciary:bcdb374e101b": {
+      "category": "judiciary",
+      "title": "Legal Information",
+      "url": "http://www.law.cornell.edu/states/montana",
+      "directory": "doj-MT",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-MT:court_directory:7b9c91b76e7a": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://courts.mt.gov/courts/supreme",
+      "directory": "doj-MT",
+      "locator": "Supreme Court"
+    },
+    "US-MT:court_directory:1893a3c1d610": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "https://courts.mt.gov/courts/dcourt",
+      "directory": "doj-MT",
+      "locator": "District Courts"
+    },
+    "US-MT:court_directory:56c83888da39": {
+      "category": "court_directory",
+      "title": "Water Court",
+      "url": "https://courts.mt.gov/courts/water/",
+      "directory": "doj-MT",
+      "locator": "Water Court"
+    },
+    "US-MT:court_directory:9c764e541ff9": {
+      "category": "court_directory",
+      "title": "Workers' Compensation Court",
+      "url": "http://wcc.dli.mt.gov/",
+      "directory": "doj-MT",
+      "locator": "Workers' Compensation Court"
+    },
+    "US-MT:court_directory:b310f1bf4045": {
+      "category": "court_directory",
+      "title": "Courts of Limited Jurisdiction",
+      "url": "http://courts.mt.gov/courts/lcourt",
+      "directory": "doj-MT",
+      "locator": "Courts of Limited Jurisdiction"
+    },
+    "US-MT:forms:ad40e26d9f5a": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://www.mtd.uscourts.gov/forms",
+      "directory": "doj-MT",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-MT:constitution:967777ae01e4": {
+      "category": "constitution",
+      "title": "Montana Constitution",
+      "url": "https://mca.legmt.gov/bills/mca/title_0000/chapters_index.html",
+      "directory": "doj-MT",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MT:statutes:41a697c8883d": {
+      "category": "statutes",
+      "title": "Code Annotated",
+      "url": "https://mca.legmt.gov/bills/mca/index.html",
+      "directory": "doj-MT",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MT:regulations:d08a7b77b98c": {
+      "category": "regulations",
+      "title": "Administrative Register and Rules Information",
+      "url": "http://sos.mt.gov/ARM/index.asp",
+      "directory": "doj-MT",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-MT:pi_limitations:ce0ddf053375": {
+      "category": "pi_limitations",
+      "title": "MCA § 27-2-204",
+      "url": "https://mca.legmt.gov/bills/mca/title_0270/chapter_0020/part_0020/section_0040/0270-0020-0020-0040.html",
+      "directory": null,
+      "locator": "MCA § 27-2-204",
+      "observation": {
+        "requested_url": "https://mca.legmt.gov/bills/mca/title_0270/chapter_0020/part_0020/section_0040/0270-0020-0020-0040.html",
+        "retrieved_at": "2026-11-17T19:33:59.217362+00:00",
+        "http_status": "200",
+        "sha256": "b48baf022f371e55a3c4b0a837faf4aed2c9bdbf1bd8e7fdc958d6c61476f393",
+        "health": "healthy"
+      }
+    },
+    "US-MT:written_contract_limitations:364e321ffc37": {
+      "category": "written_contract_limitations",
+      "title": "Mont. Code Ann. § 27-2-202(1)",
+      "url": "https://mca.legmt.gov/bills/mca/title_0270/chapter_0020/part_0020/section_0020/0270-0020-0020-0020.html",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://mca.legmt.gov/bills/mca/title_0270/chapter_0020/part_0020/section_0020/0270-0020-0020-0020.html",
+        "retrieved_at": "2026-11-17T19:33:59.212158+00:00",
+        "http_status": "200",
+        "sha256": "ba2b270b3c2a4f76d4867b5796be1f7ea3fb107e1db4443410e5ddf7aa9ac51b",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MT:oral_contract_limitations:364e321ffc37": {
+      "category": "oral_contract_limitations",
+      "title": "Mont. Code Ann. § 27-2-202(2)",
+      "url": "https://mca.legmt.gov/bills/mca/title_0270/chapter_0020/part_0020/section_0020/0270-0020-0020-0020.html",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://mca.legmt.gov/bills/mca/title_0270/chapter_0020/part_0020/section_0020/0270-0020-0020-0020.html",
+        "retrieved_at": "2026-11-17T19:33:59.212158+00:00",
+        "http_status": "200",
+        "sha256": "ba2b270b3c2a4f76d4867b5796be1f7ea3fb107e1db4443410e5ddf7aa9ac51b",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MT:small_claims:a5a110a0c1dc": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://courts.mt.gov/courts/lcourt/benchbook/SmallClaims",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://courts.mt.gov/courts/lcourt/benchbook/SmallClaims",
+        "retrieved_at": "2026-11-17T19:41:48.648815+00:00",
+        "http_status": "200",
+        "sha256": "f54d21fd6551a783f44c29ede12d02b8aa5216014ea86dfc06cd2abe6375e393",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MT:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 28"
+    },
+    "US-MT:small_claim_form:30bb4b674297": {
+      "category": "small_claim_form",
+      "title": "Complaint/Order and Notice to Defendant",
+      "url": "https://courts.mt.gov/external/lcourt/benchbook/sc/sc-004.docx",
+      "directory": null,
+      "locator": "SC-004"
+    },
+    "US-MT:fault:17939b546741": {
+      "category": "fault",
+      "title": "MCA § 27-1-702",
+      "url": "https://mca.legmt.gov/bills/mca/title_0270/chapter_0010/part_0070/section_0020/0270-0010-0070-0020.html",
+      "directory": null,
+      "locator": "MCA § 27-1-702",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:40.355757+00:00",
+        "sha256": "161756fd270339f202a3d221be0c2ec044e8dbc2a0dc912228a0ab2095a3a0f4"
+      }
+    },
+    "US-MT:consumerLaw:35a7c4868e38": {
+      "title": "Mont. Code Ann. § 30-14-101 et seq.",
+      "category": "consumerLaw",
+      "url": "https://archive.legmt.gov/bills/mca/title_0300/chapter_0140/part_0010/section_0020/0300-0140-0010-0020.html",
+      "directory": "consumer_statutes_index",
+      "locator": "Mont. Code Ann. § 30-14-101 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-MT:contract_formation:f0ee52a69134": {
+      "category": "contract_formation",
+      "title": "MCA § 30-2-204",
+      "url": "https://mca.legmt.gov/bills/mca/title_0300/chapter_0020/part_0020/section_0040/0300-0020-0020-0040.html",
+      "locator": "MCA § 30-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:33:47.760630+00:00",
+        "sha256": "94190ebd9569528f5eb10e04f7cf9458d88268a53a83f8e54e21e1b4576f8fae"
+      }
+    },
+    "US-MT:negligence_duty:319745715197": {
+      "category": "negligence_duty",
+      "title": "MCA § 27-1-701",
+      "url": "https://mca.legmt.gov/bills/mca/title_0270/chapter_0010/part_0070/section_0010/0270-0010-0070-0010.html",
+      "locator": "MCA § 27-1-701",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:34:37.043629+00:00",
+        "sha256": "256e7ac0d14cc435519711917528036d1ebfde05e1048f116382bfee026143d2"
+      }
+    },
+    "US-MT:wageLaw:2b7b28c33f50": {
+      "category": "wageLaw",
+      "title": "MCA § 39-3-204",
+      "url": "https://mca.legmt.gov/bills/mca/title_0390/chapter_0030/part_0020/section_0040/0390-0030-0020-0040.html",
+      "locator": "MCA § 39-3-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:34:37.602720+00:00",
+        "sha256": "f82909685c043bd2d744c33100be0e04f69af0ea579fdb1dd414182fdff0e7aa"
+      }
+    },
+    "US-MT:deposit:fc15fac19eee": {
+      "category": "deposit",
+      "title": "MCA § 70-25-201(4)",
+      "url": "https://mca.legmt.gov/bills/mca/title_0700/chapter_0250/part_0020/section_0010/0700-0250-0020-0010.html",
+      "locator": "MCA § 70-25-201(4)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:34:37.982300+00:00",
+        "sha256": "70f1e07e0e7e31660049f3a34d4b779c48318e7b6c34da89da955c1d8af721c7"
+      }
+    },
+    "US-MT:commencement:8ad62558be74": {
+      "category": "commencement",
+      "title": "Mont. Justice & City Ct. R. Civ. P. 2",
+      "url": "https://mca.legmt.gov/bills/mca/title_0250/chapter_0230/part_0010/section_0020/0250-0230-0010-0020.html",
+      "locator": "Mont. Justice & City Ct. R. Civ. P. 2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:41.409292+00:00",
+        "sha256": "b5ee9a7cabffea4b4a8f4fa34ab20caa96097f560bbf85a72fdec73b08bc5b14"
+      }
+    },
+    "US-MT:consumerLaw:cb27c0a400c3": {
+      "category": "consumerLaw",
+      "title": "Mont. Code Ann. § 30-14-103",
+      "url": "https://mca.legmt.gov/bills/mca/title_0300/chapter_0140/part_0010/section_0030/0300-0140-0010-0030.html",
+      "locator": "Mont. Code Ann. § 30-14-103",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:44.652796+00:00",
+        "sha256": "82567a86a0da7907ad621de112a6b51b9ec766e00158f9950368b50473508505"
+      }
+    },
+    "US-MT:debtLaw:f5de759d2930": {
+      "category": "debtLaw",
+      "title": "2003 Mont. Laws ch. 308, § 1 (Mont. Code § 32-5-301(4), past-due loan charges)",
+      "url": "https://archive.legmt.gov/content/publications/sales/2003_sess_laws_vol_2.pdf",
+      "locator": "2003 Mont. Laws ch. 308, § 1 (Mont. Code § 32-5-301(4), past-due loan charges)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:29:53.200211+00:00",
+        "sha256": "ee29f32ec911c800dda89a385bfef620437bbb401c809f88e5354d1cbf6a2505"
+      }
+    },
+    "US-MT:response:b2e256163c47": {
+      "category": "response",
+      "title": "Mont. R. Civ. P. 12(a)(1)(A)",
+      "url": "https://juddocumentservice.mt.gov/getDocByCTrackId?DocId=162730",
+      "locator": "Mont. R. Civ. P. 12(a)(1)(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:55:41.620213+00:00",
+        "sha256": "2ac047415072639773e28f6601fd0520a96319a42e7a23920bad06839490e4df"
+      }
+    },
+    "US-MT:postmotion_response:a029a7f55e1c": {
+      "category": "postmotion_response",
+      "title": "Mont. R. Civ. P. 12(a)(4)",
+      "url": "https://juddocumentservice.mt.gov/getDocByCTrackId?DocId=162730",
+      "locator": "Mont. R. Civ. P. 12(a)(4)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:55:41.620213+00:00",
+        "sha256": "2ac047415072639773e28f6601fd0520a96319a42e7a23920bad06839490e4df"
+      }
+    },
+    "US-MT:small_claims:c8226e0429d1": {
+      "category": "small_claims",
+      "title": "Mont. Code Ann. § 25-35-502",
+      "url": "https://mca.legmt.gov/bills/mca/title_0250/chapter_0350/part_0050/section_0020/0250-0350-0050-0020.html",
+      "locator": "Mont. Code Ann. § 25-35-502",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:12:28.825631+00:00",
+        "sha256": "b86baac79d80045a384f52558d137126799efa71144d3fc5751d56a5eda29311"
+      }
+    },
+    "US-MT:negligence_duty:81fb0ac1c7ac": {
+      "category": "negligence_duty",
+      "title": "Mont. Code Ann. § 27-1-701",
+      "url": "https://mca.legmt.gov/bills/mca/title_0270/chapter_0010/part_0070/section_0010/0270-0010-0070-0010.html",
+      "locator": "Mont. Code Ann. § 27-1-701",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:15:49.797828+00:00",
+        "sha256": "fa2a565c1410074809e6b5efa49bb63b64afa753a86ab9286af401c89aea4e59"
+      }
+    },
+    "US-MT:negligence_elements:e0e274d7a521": {
+      "category": "negligence_elements",
+      "title": "Faulconbridge v. State, 2006 MT 198, ¶ 77",
+      "url": "https://courts.mt.gov/external/SOR/SCt/04-592.pdf",
+      "locator": "Faulconbridge v. State, 2006 MT 198, ¶ 77",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:30:07.175551+00:00",
+        "sha256": "8f2ee9c6b9c71d3ec99f460c80bd7365ce7723a87d06822068212d6dfe39cef6"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-MT:court:39a426a804ba",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-MT:court_directory:7b9c91b76e7a"
+    },
+    {
+      "id": "US-MT:court:f755f36c488f",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-MT:court_directory:1893a3c1d610"
+    },
+    {
+      "id": "US-MT:court:327d00928841",
+      "name": "Water Court",
+      "level": "trial_directory",
+      "source_id": "US-MT:court_directory:56c83888da39"
+    },
+    {
+      "id": "US-MT:court:d78e89de7f1a",
+      "name": "Workers' Compensation Court",
+      "level": "trial_directory",
+      "source_id": "US-MT:court_directory:9c764e541ff9"
+    },
+    {
+      "id": "US-MT:court:a4f88d199b1e",
+      "name": "Courts of Limited Jurisdiction",
+      "level": "trial_directory",
+      "source_id": "US-MT:court_directory:b310f1bf4045"
+    },
+    {
+      "id": "US-MT:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-MT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MT:court:85cbaf4e41b3",
+      "name": "Workers’ Compensation",
+      "level": "general_trial",
+      "source_id": "US-MT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MT:court:7f0c4124a47c",
+      "name": "Water",
+      "level": "general_trial",
+      "source_id": "US-MT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MT:court:130cafc44268",
+      "name": "Justice of the Peace",
+      "level": "limited_trial",
+      "source_id": "US-MT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MT:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-MT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MT:court:c4a7a7b35c28",
+      "name": "City",
+      "level": "limited_trial",
+      "source_id": "US-MT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Mont. Code Ann. § 27-2-204(1)",
+      "source_id": "US-MT:pi_limitations:ce0ddf053375",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Mont. Code Ann. § 27-2-202(1)",
+      "source_id": "US-MT:written_contract_limitations:364e321ffc37",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Mont. Code Ann. § 27-2-202(2)",
+      "source_id": "US-MT:oral_contract_limitations:364e321ffc37",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Mont. Code § 70-24-104. Exclusions from application of chapter; Mont. Code § 70-24-107. Territorial application",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Mont. Code Ann. § 30-14-101 et seq.",
+      "source_id": "US-MT:consumerLaw:35a7c4868e38",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "d928b8dfa6a98ff4060a139d08d41a": {
+      "citation": "MCA § 27-2-204",
+      "source_id": "US-MT:pi_limitations:ce0ddf053375",
+      "authority_type": "statute",
+      "text": "27-2-204. (Temporary) Tort actions -- general and personal injury. (1) Except as provided in 27-2-216, the period prescribed for the commencement of an action upon a liability not founded upon an instrument in writing is within 3 years.",
+      "text_sha256": "79e5f0618246f074d3ef90061958cce9824f38e899a26bb3300a185e585e1fa8",
+      "publisher_sha256": "b48baf022f371e55a3c4b0a837faf4aed2c9bdbf1bd8e7fdc958d6c61476f393",
+      "retrieved_at": "2026-11-17T19:33:59.217362+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "32c15ff53a40053e89a571b047aa64": {
+      "citation": "MCA § 27-1-702",
+      "source_id": "US-MT:fault:17939b546741",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "Contributory negligence does not bar recovery in an action by a person or the person's legal representative to recover damages for negligence resulting in death or injury to the person or property if the contributory negligence was not greater than the negligence of the person or the combined negligence of all persons against whom recovery is sought, but any damages allowed must be diminished in the proportion to the percentage of negligence attributable to the person recovering. (Terminates on occurrence of contingency--sec. 11(2), Ch. 429, L. 1997.) 27-1-702. (Effective on occurrence of contingency) Comparative fault -- extent to which contributory fault bars recovery in action for damages. Contributory fault does not bar recovery in an action by a person or a person's legal representative to recover tort damages for death of a person or injury to a person or property if the contributory fault was not greater than the fault of the defendant or the combined fault of all defendants and nonparties, but damages allowed must be diminished in proportion to the percentage of fault attributable to the person recovering.",
+      "text_sha256": "e580fc5fac4dcfc01afb2f10244ba3dab7f5899402a4e8e791641ccd9afe210a",
+      "publisher_sha256": "161756fd270339f202a3d221be0c2ec044e8dbc2a0dc912228a0ab2095a3a0f4",
+      "retrieved_at": "2026-11-17T20:50:40.355757+00:00",
+      "currentness": "unresolved"
+    },
+    "4219103af49d3ccb9373552dc18275": {
+      "source_id": "US-MT:contract_formation:f0ee52a69134",
+      "authority_type": "statute",
+      "citation": "MCA § 30-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "94190ebd9569528f5eb10e04f7cf9458d88268a53a83f8e54e21e1b4576f8fae",
+      "retrieved_at": "2026-11-18T15:33:47.760630+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Montana Code Annotated 2025"
+    },
+    "a78cc247d760cd21b242c5e00a3fe2": {
+      "source_id": "US-MT:negligence_duty:319745715197",
+      "authority_type": "statute",
+      "citation": "MCA § 27-1-701",
+      "text": "Except as otherwise provided by law, each person is responsible not only for the results of the person's willful acts but also for an injury occasioned to another by the person's want of ordinary care or skill in the management of the person's property or person except so far as the person has willfully or by want of ordinary care brought the injury upon the person.",
+      "text_sha256": "6d42d5c49f6b7e7eff20b4af71f5778173620c4348c87d110fab1906b0010104",
+      "publisher_sha256": "256e7ac0d14cc435519711917528036d1ebfde05e1048f116382bfee026143d2",
+      "retrieved_at": "2026-11-18T15:34:37.043629+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Montana Code Annotated 2025"
+    },
+    "d6d48294a2053e237d450f150939a0": {
+      "source_id": "US-MT:wageLaw:2b7b28c33f50",
+      "authority_type": "statute",
+      "citation": "MCA § 39-3-204",
+      "text": "(1) Except as provided in subsections (2) and (3), every employer of labor in the state of Montana shall pay to each employee the wages earned by the employee in lawful money of the United States or checks on banks convertible into cash on demand at the full face value of the checks, and a person for whom labor has been performed may not withhold from any employee any wages earned or unpaid for a longer period than 10 business days after the wages are due and payable, except as provided in 39-3-205. However, reasonable deductions may be made for board, room, and other incidentals supplied by the employer, whenever the deductions are a part of the conditions of employment, or as otherwise provided for by law. (2) Wages may be paid to the employee by electronic funds transfer or similar means of direct deposit if the employee has consented in writing or electronically, if a record is retained, to be paid in this manner. However, an employee may not be required to use electronic funds transfer or similar means of direct deposit as a method for payment of wages. (3) If an employee submits a timesheet after the employer's established deadline for processing employee timesheets for a particular time period and the employer does not pay the employee within the 10-day period provided for in subsection (1), the employer may pay the employee the wages due in the ensuing pay period. An employer may not withhold payment of the employee's wages beyond the next ensuing pay period. If there is not an established time period or time when wages are due and payable, the pay period is presumed to be semimonthly in length.",
+      "text_sha256": "0a072ebc410779d537d8d8ba56bfba061639f0ff40c245b4ed92bf4fc53eac80",
+      "publisher_sha256": "f82909685c043bd2d744c33100be0e04f69af0ea579fdb1dd414182fdff0e7aa",
+      "retrieved_at": "2026-11-18T15:34:37.602720+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Montana Code Annotated 2025"
+    },
+    "877bd69346cb710ba1af154e8f5e21": {
+      "source_id": "US-MT:deposit:fc15fac19eee",
+      "authority_type": "statute",
+      "citation": "MCA § 70-25-201(4)",
+      "text": "(4) A person may not deduct or withhold from the security deposit any amount for purposes other than those set forth in this section.",
+      "text_sha256": "74226caed0b641d4e2c57c2a64d4b39672025b416d4bf503b8d2a6cf58704635",
+      "publisher_sha256": "70f1e07e0e7e31660049f3a34d4b779c48318e7b6c34da89da955c1d8af721c7",
+      "retrieved_at": "2026-11-18T15:34:37.982300+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Montana Code Annotated 2025"
+    },
+    "9a5752a3547ff230d7db3f53e79333": {
+      "source_id": "US-MT:commencement:8ad62558be74",
+      "authority_type": "court_rule",
+      "citation": "Mont. Justice & City Ct. R. Civ. P. 2",
+      "text": "(a) A civil action is begun by filing a complaint with the justice or city court. A concise written statement of the cause of action is considered a complaint. A person as defined in Rule 4(A)(1) may file individually or through an attorney. All others, as defined in Rules (4)(A) 2, 3, 4, and 5, must file through an attorney. The individual or the attorney must sign the complaint. Other requirements for the complaint are set out in Rule 7. (b) Filing Fees. Before a complaint will be filed and an action commenced, the plaintiff must pay the filing fee specified by statute. However, indigent parties may request a waiver of this requirement as set forth in M.C.A. 25-10-404 and, if the waiver is granted, may proceed without prepaying the filing fee.",
+      "text_sha256": "9c60f41f3b1ac36bf6042835186e026108b3294d14e514213691c30501ef3e5c",
+      "publisher_sha256": "b5ee9a7cabffea4b4a8f4fa34ab20caa96097f560bbf85a72fdec73b08bc5b14",
+      "retrieved_at": "2026-11-18T20:45:41.409292+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Montana Code Annotated 2025",
+      "court": "Montana Justice and City Courts"
+    },
+    "28dde5abbcf1c4226ba22d5c8bee2e": {
+      "source_id": "US-MT:consumerLaw:cb27c0a400c3",
+      "authority_type": "statute",
+      "citation": "Mont. Code Ann. § 30-14-103",
+      "text": "Unfair methods of competition and unfair or deceptive acts or practices in the conduct of any trade or commerce are unlawful.",
+      "text_sha256": "ebb1a2ffad64033b72bea48b839bcb57bc538451cba6e5cc4727f0f93fb69bf6",
+      "publisher_sha256": "82567a86a0da7907ad621de112a6b51b9ec766e00158f9950368b50473508505",
+      "retrieved_at": "2026-11-19T19:26:44.652796+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Montana Code Annotated 2025"
+    },
+    "41b20fd3d8bc810f00d8a69534a063": {
+      "source_id": "US-MT:debtLaw:f5de759d2930",
+      "authority_type": "statute",
+      "citation": "2003 Mont. Laws ch. 308, § 1 (Mont. Code § 32-5-301(4), past-due loan charges)",
+      "text": "(4) If the contract so provides, the additional charge for any amount past due according to the original terms of the contract, whether by reason of default or extension agreement, may be the greater of 5% of the amount past due or $15, and that amount may be charged only once.",
+      "text_sha256": "1dcb891c6e8bba3f49d684a449cbf0ee40d425fb86b1997957af9e0cc0325337",
+      "publisher_sha256": "ee29f32ec911c800dda89a385bfef620437bbb401c809f88e5354d1cbf6a2505",
+      "retrieved_at": "2026-11-20T22:29:53.200211+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Montana enacted 2003 Session Laws chapter 308"
+    },
+    "af914e2a125f5c16e4e9938d002efb": {
+      "source_id": "US-MT:response:b2e256163c47",
+      "authority_type": "court_rule",
+      "citation": "Mont. R. Civ. P. 12(a)(1)(A)",
+      "text": "(1) In General. Unless another time is specified by this rule or a statute, the time for serving a responsive pleading is as follows: (A) A defendant must serve an answer within 21 days after being served with the summons and complaint, unless the court orders otherwise under Rule 4(c)(2)(C).",
+      "text_sha256": "432cf3ce79098827c2349aeb0877d4ce4e0fc39303fccf103ecf5df2777a0205",
+      "publisher_sha256": "2ac047415072639773e28f6601fd0520a96319a42e7a23920bad06839490e4df",
+      "retrieved_at": "2026-11-20T22:55:41.620213+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Montana Supreme Court AF 07-0157 rules attachment effective July 1, 2017",
+      "court": "Montana District Court"
+    },
+    "d1ec8776155ff86b4ca00caa7dea1f": {
+      "source_id": "US-MT:postmotion_response:a029a7f55e1c",
+      "authority_type": "court_rule",
+      "citation": "Mont. R. Civ. P. 12(a)(4)",
+      "text": "(4) Effect of a Motion. Unless the court sets a different time, serving a motion under this rule alters these periods as follows: (A) if the court denies the motion or postpones its disposition until trial, the responsive pleading must be served within 14 days after notice of the court’s action; or (B) if the court grants a motion for a more definite statement, the responsive pleading must be served within 14 days after the more definite statement is served.",
+      "text_sha256": "b28fcb42501e5a80e0b8917840d387bb4374d28fdb76bf0ac94613ff8e828ff2",
+      "publisher_sha256": "2ac047415072639773e28f6601fd0520a96319a42e7a23920bad06839490e4df",
+      "retrieved_at": "2026-11-20T22:55:41.620213+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Montana Supreme Court AF 07-0157 rules attachment effective July 1, 2017",
+      "court": "Montana District Court"
+    },
+    "f2dbef60ebd624c04c6c216e41c6b2": {
+      "source_id": "US-MT:small_claims:c8226e0429d1",
+      "authority_type": "statute",
+      "citation": "Mont. Code Ann. § 25-35-502",
+      "text": "(1) The small claims court has jurisdiction over all actions for the recovery of money or specific personal property when the amount claimed does not exceed $7,000, exclusive of costs, and the defendant can be served within the county where the action is commenced. (2) The small claims court has jurisdiction over an interpleader under 25-35-508 in which the amount claimed does not exceed $7,000.",
+      "text_sha256": "2598655ade3d550af62253e653c3cb79b423b8e7e18c198cfa37e6941a4bc1f7",
+      "publisher_sha256": "b86baac79d80045a384f52558d137126799efa71144d3fc5751d56a5eda29311",
+      "retrieved_at": "2026-11-20T23:12:28.825631+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Montana Code Annotated 2025",
+      "court": "Montana Justice Court"
+    },
+    "33f7c252f423572421d5e1a25b651a": {
+      "source_id": "US-MT:negligence_duty:81fb0ac1c7ac",
+      "authority_type": "statute",
+      "citation": "Mont. Code Ann. § 27-1-701",
+      "text": "Except as otherwise provided by law, each person is responsible not only for the results of the person's willful acts but also for an injury occasioned to another by the person's want of ordinary care or skill in the management of the person's property or person except so far as the person has willfully or by want of ordinary care brought the injury upon the person.",
+      "text_sha256": "6d42d5c49f6b7e7eff20b4af71f5778173620c4348c87d110fab1906b0010104",
+      "publisher_sha256": "fa2a565c1410074809e6b5efa49bb63b64afa753a86ab9286af401c89aea4e59",
+      "retrieved_at": "2026-11-20T23:15:49.797828+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Montana Code Annotated 2025"
+    },
+    "0bfdd80be776ed7f40099b62282638": {
+      "source_id": "US-MT:negligence_elements:e0e274d7a521",
+      "authority_type": "opinion",
+      "citation": "Faulconbridge v. State, 2006 MT 198, ¶ 77",
+      "text": "A plaintiff has the burden to prove duty, breach, causation and damages to recover under a negligence claim in Montana. Barr v. Great Falls Intern. Airport, 2005 MT 36, ¶ 41, 326 Mont. 93, ¶ 41, 107 P.3d 471, ¶ 41. The defendant may raise several defenses to a negligence action, including the defense that the plaintiff failed to prove that the defendant caused the damage to the plaintiff.",
+      "text_sha256": "f0833601a8c76e28d8749a13185b63b04cbec9eb7c1c206563858f0e42425e26",
+      "publisher_sha256": "8f2ee9c6b9c71d3ec99f460c80bd7365ce7723a87d06822068212d6dfe39cef6",
+      "retrieved_at": "2026-11-21T03:30:07.175551+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2006-08-22",
+      "court": "Supreme Court of Montana",
+      "decision_date": "2006-08-22",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal and conditional cross-appeal after a defense verdict in a wrongful death and survivorship action."
+    }
+  },
+  "forms": {
+    "US-MT:form:SC-004": {
+      "title": "Complaint/Order and Notice to Defendant",
+      "publisher_identifier": "SC-004",
+      "source_id": "US-MT:small_claim_form:30bb4b674297",
+      "index_source_id": "US-MT:small_claims:a5a110a0c1dc",
+      "index_sha256": "f54d21fd6551a783f44c29ede12d02b8aa5216014ea86dfc06cd2abe6375e393",
+      "court_scope": "small_claims",
+      "mandatory": "review_required",
+      "revision": null,
+      "last_observed": "2026-11-17T19:41:48.648815+00:00",
+      "automated_completion": "disabled"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "32c15ff53a40053e89a571b047aa64",
+    "source_id": "US-MT:fault:17939b546741",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

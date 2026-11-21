@@ -1,0 +1,616 @@
+{
+  "jurisdiction": "US-KS",
+  "version": "1",
+  "sources": {
+    "US-KS:statutes:b8619bcd6e25": {
+      "category": "statutes",
+      "title": "Kansas Statutes",
+      "url": "http://www.kslegislature.org/li/b2015_16/statute/",
+      "directory": "codes",
+      "locator": "Kansas"
+    },
+    "US-KS:constitution:c2b166f6265d": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.kslib.info/constitution",
+      "directory": "codes",
+      "locator": "Kansas"
+    },
+    "US-KS:legislature:b9c2275b34aa": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.kslegislature.org/li",
+      "directory": "codes",
+      "locator": "Kansas"
+    },
+    "US-KS:labor_agency:d02130657512": {
+      "category": "labor_agency",
+      "title": "www.dol.ks.gov",
+      "url": "http://www.dol.ks.gov/",
+      "directory": "labor",
+      "locator": "Kansas"
+    },
+    "US-KS:commercial_code:7a6abba637c0": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://www.kslegislature.org/li/b2019_20/statute/084_000_0000_chapter/",
+      "directory": "ucc",
+      "locator": "Kansas"
+    },
+    "US-KS:civil_rules:987c4dbc7edf": {
+      "category": "civil_rules",
+      "title": "Procedure, Civil",
+      "url": "http://www.kslegislature.org/li/b2019_20/statute/060_000_0000_chapter/060_002_0000_article/",
+      "directory": "procedure",
+      "locator": "Kansas"
+    },
+    "US-KS:consumer_agency:0ab7d768195e": {
+      "category": "consumer_agency",
+      "title": "Kansas (KS)",
+      "url": "https://www.ag.ks.gov/divisions/public-protection/consumer-protection",
+      "directory": "consumer",
+      "locator": "Kansas (KS)"
+    },
+    "US-KS:judiciary:56ed1b503a27": {
+      "category": "judiciary",
+      "title": "Kansas Judicial Branch",
+      "url": "https://www.kscourts.gov/",
+      "directory": "doj-KS",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-KS:judiciary:3bd1e617c1aa": {
+      "category": "judiciary",
+      "title": "Kansas Judicial Council",
+      "url": "http://www.kansasjudicialcouncil.org/",
+      "directory": "doj-KS",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-KS:court_directory:eb378e0d2e42": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.kscourts.gov/about-the-courts/supreme-court.html",
+      "directory": "doj-KS",
+      "locator": "Supreme Court"
+    },
+    "US-KS:court_directory:46896e0b220e": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "https://www.kscourts.gov/about-the-courts/district-courts.html",
+      "directory": "doj-KS",
+      "locator": "District Courts"
+    },
+    "US-KS:court_directory:5a08a9f502b2": {
+      "category": "court_directory",
+      "title": "Municipal Courts",
+      "url": "https://www.kscourts.gov/about-the-courts/municipal-courts.html",
+      "directory": "doj-KS",
+      "locator": "Municipal Courts"
+    },
+    "US-KS:forms:5fde257adaeb": {
+      "category": "forms",
+      "title": "Forms (Kansas Judicial Council)",
+      "url": "http://www.kansasjudicialcouncil.org/legal-forms",
+      "directory": "doj-KS",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-KS:constitution:43bbb33fd8aa": {
+      "category": "constitution",
+      "title": "Kansas Constitution",
+      "url": "https://library.ks.gov/agencies/government-information/",
+      "directory": "doj-KS",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-KS:statutes:0a6bafd1d8ee": {
+      "category": "statutes",
+      "title": "Statutes",
+      "url": "http://www.kslegislature.org/li/",
+      "directory": "doj-KS",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-KS:regulations:852542968891": {
+      "category": "regulations",
+      "title": "Kansas Register",
+      "url": "https://sos.ks.gov/publications/kansas-register.html",
+      "directory": "doj-KS",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-KS:regulations:01d8e17d6d8a": {
+      "category": "regulations",
+      "title": "Administrative Regulations",
+      "url": "https://www.sos.ks.gov/publications/pubs_kar.aspx",
+      "directory": "doj-KS",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-KS:pi_limitations:f79a46694d85": {
+      "category": "pi_limitations",
+      "title": "K.S.A. § 60-513(a)(4)",
+      "url": "https://www.ksrevisor.org/statutes/chapters/ch60/060_005_0013.html",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.ksrevisor.org/statutes/chapters/ch60/060_005_0013.html",
+        "retrieved_at": "2026-11-17T19:33:56.936839+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-KS:written_contract_limitations:cd0e6b94267f": {
+      "category": "written_contract_limitations",
+      "title": "K.S.A. § 60-511(1)",
+      "url": "https://www.ksrevisor.org/statutes/chapters/ch60/060_005_0011.html",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.ksrevisor.org/statutes/chapters/ch60/060_005_0011.html",
+        "retrieved_at": "2026-11-17T19:33:56.991543+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-KS:oral_contract_limitations:4e0e99d4b85b": {
+      "category": "oral_contract_limitations",
+      "title": "K.S.A. § 60-512(1)",
+      "url": "https://www.ksrevisor.org/statutes/chapters/ch60/060_005_0012.html",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.ksrevisor.org/statutes/chapters/ch60/060_005_0012.html",
+        "retrieved_at": "2026-11-17T19:33:57.483995+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-KS:small_claims:0be4ef6b395f": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.kansasjudicialcouncil.org/sites/default/files/SC%20Plaintiff%20Instruction%20Sheet%20%287-2024%29.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.kansasjudicialcouncil.org/sites/default/files/SC%20Plaintiff%20Instruction%20Sheet%20%287-2024%29.pdf",
+        "retrieved_at": "2026-11-17T19:42:47.360537+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-KS:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    },
+    "US-KS:fault:ccfc9752ccfc": {
+      "category": "fault",
+      "title": "Kan. Stat. Ann. § 60-258a(a)",
+      "url": "https://www.ksrevisor.gov/statutes/chapters/ch60/060_002_0058a.html",
+      "directory": null,
+      "locator": "Kan. Stat. Ann. § 60-258a(a)",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:34.573766+00:00",
+        "sha256": "0c876cf92bdd8eab5cab10f182d85eaf80ae5b2c7fb26f58b8854344bd0dd5b1"
+      }
+    },
+    "US-KS:consumerLaw:9e6b2a2f1df3": {
+      "title": "Kan. Stat. Ann. § 50-623 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.ksrevisor.org/statutes/chapters/ch50/050_006_0034.html",
+      "directory": "consumer_statutes_index",
+      "locator": "Kan. Stat. Ann. § 50-623 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-KS:consumerLaw:d201776113c1": {
+      "category": "consumerLaw",
+      "title": "Kan. Stat. Ann. § 50-626(a)",
+      "url": "https://www.ksrevisor.gov/statutes/chapters/ch50/050_006_0026.html",
+      "locator": "Kan. Stat. Ann. § 50-626(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:53.528899+00:00",
+        "sha256": "2da2ef1327726beb5983c1c03d7422baeee0469bfbe1a811db307bdb87c7de76"
+      }
+    },
+    "US-KS:contract_formation:065dfd9f3920": {
+      "category": "contract_formation",
+      "title": "Kan. Stat. Ann. § 84-2-204",
+      "url": "https://ksrevisor.gov/statutes/chapters/ch84/084_002_0204.html",
+      "locator": "Kan. Stat. Ann. § 84-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:27.083017+00:00",
+        "sha256": "87af5b911114b37cf42aa7650c74cf8935386ebdaf4c3350e316536dba82cbb9"
+      }
+    },
+    "US-KS:commencement:5c63c9ec890e": {
+      "category": "commencement",
+      "title": "Kan. Stat. § 60-203",
+      "url": "https://www.kslegislature.gov/media/statute/060_000_0000_chapter/060_002_0000_article/060_002_0003_section/060_002_0003_k.pdf",
+      "locator": "Kan. Stat. § 60-203",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:38.956797+00:00",
+        "sha256": "a368d2a6ea22e4feb308eb5ab6537bd9104bb797df6e2ea6faea5d4be5b4515f"
+      }
+    },
+    "US-KS:wageLaw:0e7dc2a5ce52": {
+      "category": "wageLaw",
+      "title": "K.S.A. § 44-315(a)",
+      "url": "https://ksrevisor.gov/statutes/chapters/ch44/044_003_0015.html",
+      "locator": "K.S.A. § 44-315(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:53.790252+00:00",
+        "sha256": "03489397ae79367538f9644d89e97e0b361634da04f47dd60dec0ae408f41cf1"
+      }
+    },
+    "US-KS:pi_limitations:1ee7ba18daf1": {
+      "category": "pi_limitations",
+      "title": "K.S.A. § 60-513(a)–(b)",
+      "url": "https://ksrevisor.gov/statutes/chapters/ch60/060_005_0013.html",
+      "locator": "K.S.A. § 60-513(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:22.560368+00:00",
+        "sha256": "17089bc3ab37f6fc936ee4609318f39c568688764c4fc8df00bc4286d84e823c"
+      }
+    },
+    "US-KS:response:2401a1141018": {
+      "category": "response",
+      "title": "K.S.A. § 60-212(a)",
+      "url": "https://ksrevisor.gov/statutes/chapters/ch60/060_002_0012.html",
+      "locator": "K.S.A. § 60-212(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:43:00.938707+00:00",
+        "sha256": "1d2022e29e94aa4a93eee4c5c575c39c71c27b30d39e2dde55b14902d5a5e8e9"
+      }
+    },
+    "US-KS:service:468484206cce": {
+      "category": "service",
+      "title": "K.S.A. § 60-304(a)",
+      "url": "https://www.kslegislature.gov/li_2024s/b2023_24/statute/060_000_0000_chapter/060_003_0000_article/060_003_0004_section/060_003_0004_k/",
+      "locator": "K.S.A. § 60-304(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:03.506816+00:00",
+        "sha256": "5263aa47c5576c5b0456a8c8bbdd41ff5662bd92128dab7a63a7c82535dae540"
+      }
+    },
+    "US-KS:deposit:e6f4ebe88a37": {
+      "category": "deposit",
+      "title": "Kan. Stat. Ann. § 58-2550(b)",
+      "url": "https://www.kslegislature.gov/b2025_26/laws/058_000_0000_chapter/058_025_0000_article/058_025_0050_section/058_025_0050_k/",
+      "locator": "Kan. Stat. Ann. § 58-2550(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:16.377438+00:00",
+        "sha256": "6eaa8d13f3fcdf390f4b263f46de1955b9954915942e6cf9a113aa2327be3b66"
+      }
+    },
+    "US-KS:negligence_elements:2f388fdd39a1": {
+      "category": "negligence_elements",
+      "title": "Montgomery v. Saleh, Nos. 117,518 & 117,519 (Kan. Ct. App. Mar. 30, 2018)",
+      "url": "https://kscourts.gov/KSCourts/media/KsCourts/Opinions/117518.pdf?ext=.pdf",
+      "locator": "Montgomery v. Saleh, Nos. 117,518 & 117,519 (Kan. Ct. App. Mar. 30, 2018)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:11:12.525567+00:00",
+        "sha256": "c8218f663f95aa0de409c70b6e089ff6eb43de7029a09f5d8c7cd86a40fd8634"
+      }
+    },
+    "US-KS:negligence_causation:713760ded024": {
+      "category": "negligence_causation",
+      "title": "Montgomery v. Saleh, Nos. 117,518 & 117,519 (Kan. June 26, 2020)",
+      "url": "https://kscourts.gov/KSCourts/media/KsCourts/Opinions/117518_1.pdf?ext=.pdf",
+      "locator": "Montgomery v. Saleh, Nos. 117,518 & 117,519 (Kan. June 26, 2020)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:12:28.033535+00:00",
+        "sha256": "b8b6d937e6dd23e9266f34d5c1d360e8750dab2f500b070941737a3e3a80f6ed"
+      }
+    },
+    "US-KS:debtLaw:a8e3793e42bb": {
+      "category": "debtLaw",
+      "title": "Kan. Stat. Ann. § 16a-5-108(1)–(4) (consumer credit unconscionability)",
+      "url": "https://ksrevisor.gov/statutes/chapters/ch16a/016a_005_0108.html",
+      "locator": "Kan. Stat. Ann. § 16a-5-108(1)–(4) (consumer credit unconscionability)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:29:53.581959+00:00",
+        "sha256": "9c216646fbdd1cac76718a4ee2f72cae545047ab16597921e5c598cbce6db756"
+      }
+    },
+    "US-KS:debt_private_action:1507a286ef2b": {
+      "category": "debt_private_action",
+      "title": "Kan. Stat. Ann. § 16a-5-201(1) (specified consumer-credit violations)",
+      "url": "https://ksrevisor.gov/statutes/chapters/ch16a/016a_005_0201.html",
+      "locator": "Kan. Stat. Ann. § 16a-5-201(1) (specified consumer-credit violations)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:29:53.598273+00:00",
+        "sha256": "0cdcf838290824affbc24f13831a2520e431ab5995dc0f5e18af1224e653d9d4"
+      }
+    },
+    "US-KS:small_claims:88a7762ac603": {
+      "category": "small_claims",
+      "title": "K.S.A. § 61-2703(a)",
+      "url": "https://www.kslegislature.gov/b2025_26/laws/061_000_0000_chapter/061_027_0000_article/061_027_0003_section/061_027_0003_k/",
+      "locator": "K.S.A. § 61-2703(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:12:28.568917+00:00",
+        "sha256": "815e12bf3de64e69dfac46df964e22c4933f7c261edfe85e56ebc1bb82b5875e"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-KS:court:bdb6f5796b75",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-KS:court_directory:eb378e0d2e42"
+    },
+    {
+      "id": "US-KS:court:9c5a12186d9c",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-KS:court_directory:46896e0b220e"
+    },
+    {
+      "id": "US-KS:court:a453a39f6ec5",
+      "name": "Municipal Courts",
+      "level": "trial_directory",
+      "source_id": "US-KS:court_directory:5a08a9f502b2"
+    },
+    {
+      "id": "US-KS:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-KS:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-KS:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-KS:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "K.S.A. § 60-513(a)(4)",
+      "source_id": "US-KS:pi_limitations:f79a46694d85",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "K.S.A. § 60-511(1)",
+      "source_id": "US-KS:written_contract_limitations:cd0e6b94267f",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "K.S.A. § 60-512(1)",
+      "source_id": "US-KS:oral_contract_limitations:4e0e99d4b85b",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Kan. Stat. § 58-25,120. Material noncompliance by tenant; notice; termination of rental agreement; limitations; nonpayment of rent; remedies",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Kan. Stat. Ann. § 50-623 et seq.",
+      "source_id": "US-KS:consumerLaw:9e6b2a2f1df3",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "38f0918ec1922f7f86082fcc2b170f": {
+      "citation": "Kan. Stat. Ann. § 60-258a(a)",
+      "source_id": "US-KS:fault:ccfc9752ccfc",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "(a) Effect of contributory negligence. The contributory negligence of a party in a civil action does not bar that party or its legal representative from recovering damages for negligence resulting in death, personal injury, property damage or economic loss, if that party's negligence was less than the causal negligence of the party or parties against whom a claim is made, but the award of damages to that party must be reduced in proportion to the amount of negligence attributed to that party. If a party claims damages for a decedent's wrongful death, the negligence of the decedent, if any, must be imputed to that party.",
+      "text_sha256": "5fe68cd46c13d37cf43163d15b0313e46eebfe4c0e135ea9dcd351d953d489e9",
+      "publisher_sha256": "0c876cf92bdd8eab5cab10f182d85eaf80ae5b2c7fb26f58b8854344bd0dd5b1",
+      "retrieved_at": "2026-11-17T20:50:34.573766+00:00",
+      "currentness": "unresolved"
+    },
+    "2d9f212447a6acef5540d8205f4025": {
+      "source_id": "US-KS:consumerLaw:d201776113c1",
+      "authority_type": "statute",
+      "citation": "Kan. Stat. Ann. § 50-626(a)",
+      "text": "(a) No supplier shall engage in any deceptive act or practice in connection with a consumer transaction.",
+      "text_sha256": "cb30a01769ec9628e4a6cfb27e0a96a404159f0764d0083134fa8d846f4917ea",
+      "publisher_sha256": "2da2ef1327726beb5983c1c03d7422baeee0469bfbe1a811db307bdb87c7de76",
+      "retrieved_at": "2026-11-17T21:03:53.528899+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "3830259133367a67e4ef5ff5756ea4": {
+      "source_id": "US-KS:contract_formation:065dfd9f3920",
+      "authority_type": "statute",
+      "citation": "Kan. Stat. Ann. § 84-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "87af5b911114b37cf42aa7650c74cf8935386ebdaf4c3350e316536dba82cbb9",
+      "retrieved_at": "2026-11-18T15:14:27.083017+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "43883b9ff5a5b03dee3bb543546c23": {
+      "source_id": "US-KS:commencement:5c63c9ec890e",
+      "authority_type": "statute",
+      "citation": "Kan. Stat. § 60-203",
+      "text": "(a) Time of commencement . A civil action is commenced at the time of: (1) Filing a petition with the court, if service of process is obtained or the first publication is made for service by publication within 90 days after the petition is filed, except that the court may extend that time an additional 30 days upon a showing of good cause by the plaintiff; or (2) service of process or first publication, if service of process or first publication is not made within the time specified by paragraph (1). (b) Curing invalid service . If service of process or first publication purports to have been made but is later adjudicated to have been invalid due to an irregularity in form or procedure or a defect in making service, the action is considered to have been commenced at the applicable time under subsection (a) if valid service is obtained or first publication is made within 90 days after that adjudication, except that the court may extend that time an additional 30 days upon a showing of good cause by the plaintiff. (c) Entry of appearance . The filing of an entry of appearance has the same effect as service. Written contact with the court by a defendant, or an attorney for the defendant invoking protection for the defendant under the servicemembers civil relief act (50 U.S.C. § 501 et seq.), and amendments thereto, is not an entry of appearance. (d) Electronic filing . As used in this section, filing a petition with the court includes receipt by the court of a petition by electronic means complying with supreme court rules.",
+      "text_sha256": "0d8af36ca3736d517d22dfa8819614886af5367942a3db89ed6f4d4cb7ef8755",
+      "publisher_sha256": "a368d2a6ea22e4feb308eb5ab6537bd9104bb797df6e2ea6faea5d4be5b4515f",
+      "retrieved_at": "2026-11-18T20:45:38.956797+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 Kansas Statutes"
+    },
+    "d84f1310a51dfc8bc2acea57d9f4d3": {
+      "source_id": "US-KS:wageLaw:0e7dc2a5ce52",
+      "authority_type": "statute",
+      "citation": "K.S.A. § 44-315(a)",
+      "text": "(a) Whenever an employer discharges an employee or whenever an employee quits or resigns, the employer shall pay the employee's earned wages not later than the next regular payday upon which he or she would have been paid if still employed as provided under K.S.A. 44-314 either through the regular pay channels or by mail postmarked within the deadlines herein specified if requested by the employee.",
+      "text_sha256": "df644776ae5cc57941fd68666e35e26ca64108c8822630cfb173894c89bb0712",
+      "publisher_sha256": "03489397ae79367538f9644d89e97e0b361634da04f47dd60dec0ae408f41cf1",
+      "retrieved_at": "2026-11-19T14:10:53.790252+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "ddfbfa92d1e0b4e00285462f598bab": {
+      "source_id": "US-KS:pi_limitations:1ee7ba18daf1",
+      "authority_type": "statute",
+      "citation": "K.S.A. § 60-513(a)–(b)",
+      "text": "(a) The following actions shall be brought within two years: (1) An action for trespass upon real property. (2) An action for taking, detaining or injuring personal property, including actions for the specific recovery thereof. (3) An action for relief on the ground of fraud, but the cause of action shall not be deemed to have accrued until the fraud is discovered. (4) An action for injury to the rights of another, not arising on contract, and not herein enumerated. (5) An action for wrongful death. (6) An action to recover for an ionizing radiation injury as provided in K.S.A. 60-513a, 60-513b and 60-513c, and amendments thereto. (7) An action arising out of the rendering of or failure to render professional services by a health care provider, not arising on contract. (b) Except as provided in subsections (c) and (d), the causes of action listed in subsection (a) shall not be deemed to have accrued until the act giving rise to the cause of action first causes substantial injury, or, if the fact of injury is not reasonably ascertainable until some time after the initial act, then the period of limitation shall not commence until the fact of injury becomes reasonably ascertainable to the injured party, but in no event shall an action be commenced more than 10 years beyond the time of the act giving rise to the cause of action.",
+      "text_sha256": "3b483eb146e29c0a837c97ddcb2e9abfdcddf32c44da5abc1ec9e4767d13611c",
+      "publisher_sha256": "17089bc3ab37f6fc936ee4609318f39c568688764c4fc8df00bc4286d84e823c",
+      "retrieved_at": "2026-11-19T19:31:22.560368+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "c24a4890c9ede12818de36ea66e347": {
+      "source_id": "US-KS:response:2401a1141018",
+      "authority_type": "statute",
+      "citation": "K.S.A. § 60-212(a)",
+      "text": "(a) Time to serve a responsive pleading. (1) In general. Unless otherwise provided by law, the time for serving a responsive pleading is as follows: (A) A defendant must serve an answer: (i) Within 21 days after being served with the summons and petition; or (ii) within the time fixed in the notice when service is by publication, which must not be less than 41 days from the time the notice is first published; (B) a party must serve an answer to a counterclaim or crossclaim within 21 days after being served with the pleading that states the counterclaim or crossclaim; and (C) a party must serve a reply to an answer within 21 days after being served with an order to reply, unless the order specifies a different time. (2) Effect of a motion. Unless the court sets a different time, serving a motion under this section alters these periods as follows: (A) If the court denies the motion or postpones its disposition until trial, the responsive pleading must be served within 14 days after notice of the court's action; or (B) if the court grants a motion for a more definite statement, the responsive pleading must be served within 14 days after the more definite statement is served.",
+      "text_sha256": "d7f9c0582d741b829ea6fd95c040d5fd9991f540300e4f9923063c8857eeee6a",
+      "publisher_sha256": "1d2022e29e94aa4a93eee4c5c575c39c71c27b30d39e2dde55b14902d5a5e8e9",
+      "retrieved_at": "2026-11-19T19:43:00.938707+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Kansas District Court"
+    },
+    "fdf32efbf2d494e1fd4580b1b96eca": {
+      "source_id": "US-KS:service:468484206cce",
+      "authority_type": "statute",
+      "citation": "K.S.A. § 60-304(a)",
+      "text": "(a) Individual. On an individual other than a minor or a disabled person, by serving the individual or by serving an agent authorized by appointment or by law to receive service of process. If the agent is one designated by statute to receive service, such further notice as the statute requires must be given. Service by return receipt delivery must be addressed to an individual at the individual's dwelling or usual place of abode and to an authorized agent at the agent's usual or designated address. If the sheriff, party or party's attorney files a return of service stating that the return receipt delivery to the individual at the individual's dwelling or usual place of abode was refused or unclaimed and that a business address is known for the individual, the sheriff, party or party's attorney may complete service by return receipt delivery, addressed to the individual at the individual's business address.",
+      "text_sha256": "dafc2c91be75d3eb03baa518f448b1ada2d280b180ab78633e43dab5b52e9bd5",
+      "publisher_sha256": "5263aa47c5576c5b0456a8c8bbdd41ff5662bd92128dab7a63a7c82535dae540",
+      "retrieved_at": "2026-11-20T15:21:03.506816+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Kansas Legislature 2024 Special Session statutory publication",
+      "court": "Kansas District Court"
+    },
+    "15ff0464e34d2aec16a398f27de33f": {
+      "source_id": "US-KS:deposit:e6f4ebe88a37",
+      "authority_type": "statute",
+      "citation": "Kan. Stat. Ann. § 58-2550(b)",
+      "text": "(b) Upon termination of the tenancy, any security deposit held by the landlord may be applied to the payment of accrued rent and the amount of damages which the landlord has suffered by reason of the tenant's noncompliance with K.S.A. 58-2555, and amendments thereto, and the rental agreement, all as itemized by the landlord in a written notice delivered to the tenant. If the landlord proposes to retain any portion of the security deposit for expenses, damages or other legally allowable charges under the provisions of the rental agreement, other than rent, the landlord shall return the balance of the security deposit to the tenant within 14 days after the determination of the amount of such expenses, damages or other charges, but in no event to exceed 30 days after termination of the tenancy, delivery of possession and demand by the tenant. If the tenant does not make such demand within 30 days after termination of the tenancy, the landlord shall mail that portion of the security deposit due the tenant to the tenant's last known address.",
+      "text_sha256": "c38294b31fbd6aee1da74873e8daa85885892969da344ca5e0aa2054f275a4af",
+      "publisher_sha256": "6eaa8d13f3fcdf390f4b263f46de1955b9954915942e6cf9a113aa2327be3b66",
+      "retrieved_at": "2026-11-20T16:35:16.377438+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "017180d7f4fbb1f64c6e530222f2af": {
+      "source_id": "US-KS:negligence_elements:2f388fdd39a1",
+      "authority_type": "opinion",
+      "citation": "Montgomery v. Saleh, Nos. 117,518 & 117,519 (Kan. Ct. App. Mar. 30, 2018)",
+      "text": "The well-known essential elements of an action sounding in tort are duty, breach, causation, and damages. Summary judgment is appropriate if the defendant can establish the absence of evidence necessary to support an essential element of a plaintiff's case. Kuxhausen v. Tillman Partners, 291 Kan. 314, 318, 241 P.3d 75 (2010). When a plaintiff lacks evidence to establish an essential element of a claim, there can be no genuine issue of material fact because the complete failure of proof concerning an essential element of the plaintiff's case renders all other facts immaterial. Crooks v. Greene, 12 Kan. App. 2d 62, 64-65, 736 P.2d 78 (1987).",
+      "text_sha256": "3a439c976353e9cda3f8212480a8b7c33b754e28ae2b508f73d37c9b1b19a24c",
+      "publisher_sha256": "c8218f663f95aa0de409c70b6e089ff6eb43de7029a09f5d8c7cd86a40fd8634",
+      "retrieved_at": "2026-11-20T18:11:12.525567+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2018-03-30",
+      "court": "Kansas Court of Appeals",
+      "decision_date": "2018-03-30",
+      "procedural_posture": "Cross-appeals from summary judgment in consolidated negligence actions involving a police pursuit. The court affirmed in part, reversed in part, and remanded. The Kansas Supreme Court affirmed the appellate judgment in 2020.",
+      "opinion_role": "majority"
+    },
+    "b82bc59fd28e10081a37b8dd976d9c": {
+      "source_id": "US-KS:negligence_causation:713760ded024",
+      "authority_type": "opinion",
+      "citation": "Montgomery v. Saleh, Nos. 117,518 & 117,519 (Kan. June 26, 2020)",
+      "text": "Whether a causal connection exists between a breached duty and the plaintiffs' injuries is a question of fact. Yount v. Deibert, 282 Kan. 619, 624, 147 P.3d 1065 (2006). We have defined proximate cause as a cause that \"in natural and continuous sequence, unbroken by an efficient intervening cause, produces the injury and without which the injury would not have occurred, the injury being the natural and probable consequence of the wrongful act.\" Puckett v. Mt. Carmel Regional Medical Center, 290 Kan. 406, 420, 228 P.3d 1048 (2010). Proximate cause has two components: causation in fact and legal causation. Causation in fact means a cause-and-effect relationship exists between a party's conduct and the resulting harm. Legal causation means a party's conduct might foreseeably create a risk of harm and cause or contribute to the resulting harm. Drouhard-Nordhus v. Rosenquist, 301 Kan. 618, 623, 345 P.3d 281 (2015).",
+      "text_sha256": "82da11c597e0a0eddc6d199a317847421c5984107db855d55433674a030c0c78",
+      "publisher_sha256": "b8b6d937e6dd23e9266f34d5c1d360e8750dab2f500b070941737a3e3a80f6ed",
+      "retrieved_at": "2026-11-20T18:12:28.033535+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2020-06-26",
+      "court": "Supreme Court of Kansas",
+      "decision_date": "2020-06-26",
+      "procedural_posture": "Review of the appellate judgment concerning summary judgment in consolidated police-pursuit negligence cases. The court affirmed the appellate judgment and remanded.",
+      "opinion_role": "majority"
+    },
+    "e818aaaa79fe5ab8acfa6f53bbb5a1": {
+      "source_id": "US-KS:debtLaw:a8e3793e42bb",
+      "authority_type": "statute",
+      "citation": "Kan. Stat. Ann. § 16a-5-108(1)–(4) (consumer credit unconscionability)",
+      "text": "(1) The unconscionability of an act or practice is a question for the trier of fact. (2) With respect to a consumer credit transaction, if the trier of fact finds: (a) The agreement was unconscionable at the time it was made, or was induced by unconscionable conduct, the court may refuse to enforce the agreement; or (b) any clause of the agreement was unconscionable at the time it was made, the court may refuse to enforce the agreement, may enforce the remainder of the agreement without the unconscionable clause or may so limit the application of any unconscionable clause as to avoid any unconscionable result. (3) If it is claimed or appears to the trier of fact that the agreement or any clause thereof may be unconscionable the parties shall be afforded a reasonable opportunity to present evidence as to its setting, purpose, and effect to aid the court in making the determination. (4) A charge or practice expressly permitted by this act shall not be unconscionable.",
+      "text_sha256": "64c6a1d5206f75ceda7ca6f758a91b2394bff95c2aaf6b878799ec91be7524c7",
+      "publisher_sha256": "9c216646fbdd1cac76718a4ee2f72cae545047ab16597921e5c598cbce6db756",
+      "retrieved_at": "2026-11-20T18:29:53.581959+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2025-01-01"
+    },
+    "4bbb589afc07e7fdbf15a7ab0ac3b0": {
+      "source_id": "US-KS:debt_private_action:1507a286ef2b",
+      "authority_type": "statute",
+      "citation": "Kan. Stat. Ann. § 16a-5-201(1) (specified consumer-credit violations)",
+      "text": "(1) If a creditor has violated the provisions of this act applying to collection of excess charges or enforcement of rights, restrictions on interests in land as security, limitations on the schedule of payments or loan terms for supervised loans, attorney's fees, security in sales and leases, assignments of earnings, authorizations to confess judgment, certain negotiable instruments prohibited, assignees subject to defenses, credit card issuer subject to defenses, or limitations on default charges, the consumer may recover actual damages and except for a class action a penalty in an amount determined by the court not less than $100 nor more than $1,000. With respect to violations arising from sales or loans made pursuant to open-end credit, no action pursuant to this subsection may be brought more than two years after the violations occurred. With respect to violations arising from other consumer transactions, no action pursuant to this subsection may be brought more than one year after the due date of the last scheduled payment of the agreement.",
+      "text_sha256": "4d6ebabfe44706942c8159d34074dbf522a0ca037cc9cea227a30ecc202297c7",
+      "publisher_sha256": "0cdcf838290824affbc24f13831a2520e431ab5995dc0f5e18af1224e653d9d4",
+      "retrieved_at": "2026-11-20T18:29:53.598273+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "2e3e30458dccc19a958b9f3fefbdef": {
+      "source_id": "US-KS:small_claims:88a7762ac603",
+      "authority_type": "statute",
+      "citation": "K.S.A. § 61-2703(a)",
+      "text": "(a) \"Small claim\" means a claim for the recovery of money or personal property, where the amount claimed or the value of the property sought does not exceed $10,000, exclusive of interest, costs and any damages awarded pursuant to K.S.A. 60-2610, and amendments thereto. In actions of replevin, the verified petition fixing the value of the property shall be determinative of the value of the property for jurisdictional purposes. A small claim shall not include: (1) An assigned claim; (2) a claim based on an obligation or indebtedness allegedly owed to a person other than the person filing the claim, where the person filing the claim is not a full-time employee or officer of the person to whom the obligation or indebtedness is allegedly owed; or (3) a claim obtained through subrogation.",
+      "text_sha256": "8206db739e376bdba38e5ae97293fa0e6893ed410e3a41570803f0bdecbf2049",
+      "publisher_sha256": "815e12bf3de64e69dfac46df964e22c4933f7c261edfe85e56ebc1bb82b5875e",
+      "retrieved_at": "2026-11-20T23:12:28.568917+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "2026 Kansas Statutes",
+      "court": "Kansas District Court",
+      "effective_from": "2024-07-01"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_50",
+    "passage_selector": "38f0918ec1922f7f86082fcc2b170f",
+    "source_id": "US-KS:fault:ccfc9752ccfc",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

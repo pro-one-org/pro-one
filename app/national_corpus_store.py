@@ -275,7 +275,46 @@ class SQLiteNormalizedCorpus:
                 result["supersession"] = self.supersession(result["version_id"], query.as_of)
         return results
 
+    def applicable_version(self, jurisdiction, authority_type, citation, on):
+        """Resolve a single evidenced version for an incident date, or explain the gap.
+
+        End dates are exclusive. A dated observation only establishes that date.
+        An open-ended historical record cannot establish applicability indefinitely.
+        """
+        rows = self.connection.execute(
+            """SELECT DISTINCT v.* FROM corpus_versions v JOIN corpus_citations c
+               ON c.version_id=v.version_id
+               WHERE v.jurisdiction=? AND v.authority_type=? AND c.citation=?""",
+            (jurisdiction, authority_type, citation_key(citation)),
+        ).fetchall()
+        if not rows:
+            return {"status": "unsupported_authority", "version_id": None}
+        eligible = []
+        unresolved = False
+        day = on.isoformat()
+        for row in rows:
+            version = json.loads(row["payload"])
+            start, end = version.get("effective_from"), version.get("effective_until")
+            repeal = version.get("repealed_on")
+            if (start and day < start) or (end and day >= end) or (repeal and day >= repeal):
+                continue
+            if self.supersession(row["version_id"], on):
+                continue
+            status = version["currentness"]
+            dated = status in {"current", "current_as_of"} and version.get("current_as_of") == day
+            interval = status in {"historical", "superseded", "repealed"} and start and (end or repeal)
+            if dated or interval:
+                eligible.append(row["version_id"])
+            elif status in {"unresolved", "review_required"}:
+                unresolved = True
+        if len(eligible) == 1 and not unresolved:
+            return {"status": "applicable_on_date", "version_id": eligible[0]}
+        return {"status": "version_conflict" if eligible else "currentness_unresolved", "version_id": None}
+
     def supersession(self, version_id, as_of):
+        if not self.connection.execute(
+                "SELECT 1 FROM sqlite_master WHERE type='table' AND name='corpus_supersessions'").fetchone():
+            return None
         row = self.connection.execute("""
             SELECT change.*, previous.version_id AS earlier_version,
                    later.version_id AS later_version, rule.version_id AS rule_version
@@ -361,6 +400,17 @@ class SQLiteNormalizedCorpus:
             WHERE (l.version_id=? AND r.version_id=?) OR (l.version_id=? AND r.version_id=?)
             """, (left_version, right_version, right_version, left_version))
         return [row[0] for row in rows]
+
+    def check_retained_versions(self):
+        pairs = self.connection.execute("""
+            SELECT a.version_id, b.version_id FROM corpus_versions a
+            JOIN corpus_versions b ON a.authority_id=b.authority_id AND a.version_id<b.version_id
+                AND a.jurisdiction=b.jurisdiction AND a.authority_type=b.authority_type
+            ORDER BY a.version_id, b.version_id
+        """).fetchall()
+        for left, right in pairs:
+            if not self.identity_checks(left, right):
+                self.check_identity(left, right)
 
     def stats(self, *, include_relationships=False):
         totals = dict(self.connection.execute("""

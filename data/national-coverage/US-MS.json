@@ -1,0 +1,619 @@
+{
+  "jurisdiction": "US-MS",
+  "version": "1",
+  "sources": {
+    "US-MS:statutes:40666b7d6fe8": {
+      "category": "statutes",
+      "title": "Mississippi Code and Constitution",
+      "url": "http://www.lexisnexis.com/hottopics/mscode/",
+      "directory": "codes",
+      "locator": "Mississippi"
+    },
+    "US-MS:legislature:ff3c13defcf2": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.legislature.ms.gov/",
+      "directory": "codes",
+      "locator": "Mississippi"
+    },
+    "US-MS:labor_agency:4c6233c22e25": {
+      "category": "labor_agency",
+      "title": "www.mdes.ms.gov",
+      "url": "http://www.mdes.ms.gov/",
+      "directory": "labor",
+      "locator": "Mississippi"
+    },
+    "US-MS:commercial_code:c0b7202038bc": {
+      "category": "commercial_code",
+      "title": "Regulation of Trade, Commerce and Investments",
+      "url": "https://law.justia.com/codes/mississippi/2017/title-75/index.html",
+      "directory": "ucc",
+      "locator": "Mississippi"
+    },
+    "US-MS:civil_rules:6e0fc77394a1": {
+      "category": "civil_rules",
+      "title": "Civil Practice and Procedures",
+      "url": "https://law.justia.com/codes/mississippi/2017/title-11/index.html",
+      "directory": "procedure",
+      "locator": "Mississippi"
+    },
+    "US-MS:consumer_agency:030a5f4fcfc2": {
+      "category": "consumer_agency",
+      "title": "Mississippi (MS)",
+      "url": "https://attorneygenerallynnfitch.com/divisions/consumer-protection/",
+      "directory": "consumer",
+      "locator": "Mississippi (MS)"
+    },
+    "US-MS:judiciary:b9dc34157992": {
+      "category": "judiciary",
+      "title": "Judiciary",
+      "url": "https://courts.ms.gov/",
+      "directory": "doj-MS",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-MS:constitution:a2f0db57b636": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.sos.state.ms.us/ed_pubs/constitution/constitution.asp",
+      "directory": "doj-MS",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MS:regulations:f6dda7eef6a2": {
+      "category": "regulations",
+      "title": "Administrative Code and Bulletin",
+      "url": "https://www.sos.ms.gov/adminsearch/default.aspx?current_page=Bulletin",
+      "directory": "doj-MS",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-MS:pi_limitations:f22c6dd7c5cc": {
+      "category": "pi_limitations",
+      "title": "Miss. Code Ann. § 15-1-49(1)",
+      "url": "https://www.legislature.ms.gov/",
+      "directory": "limitations",
+      "locator": "personalInjury"
+    },
+    "US-MS:written_contract_limitations:f22c6dd7c5cc": {
+      "category": "written_contract_limitations",
+      "title": "Miss. Code Ann. § 15-1-49(1)",
+      "url": "https://www.legislature.ms.gov/",
+      "directory": "limitations",
+      "locator": "writtenContract"
+    },
+    "US-MS:oral_contract_limitations:f22c6dd7c5cc": {
+      "category": "oral_contract_limitations",
+      "title": "Miss. Code Ann. § 15-1-29",
+      "url": "https://www.legislature.ms.gov/",
+      "directory": "limitations",
+      "locator": "oralContract"
+    },
+    "US-MS:small_claims:3a3a50911c08": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://courts.ms.gov/research/rules/msrulesofcourt/Rules%20of%20Justice%20Court.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://courts.ms.gov/research/rules/msrulesofcourt/Rules%20of%20Justice%20Court.pdf",
+        "retrieved_at": "2026-11-17T19:41:47.955324+00:00",
+        "http_status": "200",
+        "sha256": "dad4e46551b0203187f003c0258ae2399af57a0ed7f4f6502cf76ece76cddbc5",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MS:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    },
+    "US-MS:commencement:590b22aa5df5": {
+      "category": "commencement",
+      "title": "Miss. R. Civ. P. 3",
+      "url": "https://courts.ms.gov/research/rules/msrulesofcourt/2026-07-01%20Rules%20of%20Civil%20Procedure%20with%20Advisory%20Committee%20Notes%20%28with%20Forms%206-8%20attached%29.pdf",
+      "directory": null,
+      "locator": "Miss. R. Civ. P. 3",
+      "language": "en",
+      "publisher_role": "official_rule_publication",
+      "observation": {
+        "health": "retained_snapshot",
+        "retrieved_at": "2026-11-17T20:14:00.019290+00:00",
+        "sha256": "b85e6543980b7f3a7d2d3623d9ec538d9aabec651a30a6589c87424ea6116095"
+      }
+    },
+    "US-MS:consumerLaw:2c0c0a61e073": {
+      "title": "Miss. Code Ann. § 75-24-1 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.sos.ms.gov/communications-publications/mississippi-law",
+      "directory": "consumer_statutes_index",
+      "locator": "Miss. Code Ann. § 75-24-1 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-MS:response:56bfd3e7d961": {
+      "category": "response",
+      "title": "Miss. R. Civ. P. 12(a)",
+      "url": "https://courts.ms.gov/research/rules/msrulesofcourt/2026-07-01%20Rules%20of%20Civil%20Procedure%20with%20Advisory%20Committee%20Notes%20%28with%20Forms%206-8%20attached%29.pdf",
+      "locator": "Miss. R. Civ. P. 12(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:14:00.019290+00:00",
+        "sha256": "b85e6543980b7f3a7d2d3623d9ec538d9aabec651a30a6589c87424ea6116095"
+      }
+    },
+    "US-MS:contract_formation:e25610aa00c7": {
+      "category": "contract_formation",
+      "title": "Gulf Coast Hospice LLC v. LHC Group Inc., No. 2017-CA-01634-SCT, ¶ 35 (Miss. June 6, 2019)",
+      "url": "https://courts.ms.gov/images/Opinions/CO138112.pdf",
+      "locator": "Gulf Coast Hospice LLC v. LHC Group Inc., No. 2017-CA-01634-SCT, ¶ 35 (Miss. June 6, 2019)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:31:26.168376+00:00",
+        "sha256": "084da13bb59927713f4f1a66a97ebd3ce6ce2e52ab041f068b444be243ac23c2"
+      }
+    },
+    "US-MS:fault:35f65da6679a": {
+      "category": "fault",
+      "title": "Smith v. Church Mutual Insurance Co., No. 2016-IA-01060-SCT, ¶ 22 (Miss. Aug. 2, 2018)",
+      "url": "https://courts.ms.gov/images/Opinions/CO131947.pdf",
+      "locator": "Smith v. Church Mutual Insurance Co., No. 2016-IA-01060-SCT, ¶ 22 (Miss. Aug. 2, 2018)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T18:56:02.174507+00:00",
+        "sha256": "911a17e3345ca7e4e67b3f2c0d6fd52af78a61ef95190bb6d14f4a10cdccc1a7"
+      }
+    },
+    "US-MS:pi_limitations:af0482fd0377": {
+      "category": "pi_limitations",
+      "title": "Unruh v. Johnson, No. 2024-IA-00028-SCT, ¶ 33 (Miss. Mar. 13, 2025)",
+      "url": "https://courts.ms.gov/images/Opinions/CO182630.pdf",
+      "locator": "Unruh v. Johnson, No. 2024-IA-00028-SCT, ¶ 33 (Miss. Mar. 13, 2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:43:51.597737+00:00",
+        "sha256": "f8d621a027439b430b6253bd730850fb911f3e8621ede4175a7c65f4c4c16100"
+      }
+    },
+    "US-MS:consumerLaw:3fb8ec049f31": {
+      "category": "consumerLaw",
+      "title": "State ex rel. Fitch v. Yazaki North America, Inc., No. 2019-CA-00094-SCT, ¶ 17 (Miss. Apr. 30, 2020)",
+      "url": "https://courts.ms.gov/images/Opinions/CO145452.pdf",
+      "locator": "State ex rel. Fitch v. Yazaki North America, Inc., No. 2019-CA-00094-SCT, ¶ 17 (Miss. Apr. 30, 2020)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:20:54.639108+00:00",
+        "sha256": "03849ec8ca3dd99ef48b9d5dcd33e6bc414df4e134e14015f035990400ea55ad"
+      }
+    },
+    "US-MS:deposit:69004f7049eb": {
+      "category": "deposit",
+      "title": "Miss. S.B. 2461, § 10 (2022) (Miss. Code § 89-8-13(4))",
+      "url": "https://billstatus.ls.state.ms.us/documents/2022/pdf/SB/2400-2499/SB2461SG.pdf",
+      "locator": "Miss. S.B. 2461, § 10 (2022) (Miss. Code § 89-8-13(4))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:16:58.858913+00:00",
+        "sha256": "858eb91bf518ae3e37ff64411fe0b11a31d94156d91c446235f43584382332c6"
+      }
+    },
+    "US-MS:wage_preemption:b49932cd6aea": {
+      "category": "wage_preemption",
+      "title": "2013 Miss. H.B. 141, § 1(1) (local minimum wage and leave mandates)",
+      "url": "https://billstatus.ls.state.ms.us/documents/2013/pdf/HB/0100-0199/HB0141SG.pdf",
+      "locator": "2013 Miss. H.B. 141, § 1(1) (local minimum wage and leave mandates)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:39:55.766698+00:00",
+        "sha256": "d3fcda1c2aceb4cba59b0b498f9a26236e16540c3f1de8b794a78fe700fff213"
+      }
+    },
+    "US-MS:debtLaw:dc1bf1848285": {
+      "category": "debtLaw",
+      "title": "Miss. Code Ann. § 75-67-127(3)",
+      "url": "https://dbcf.ms.gov/wp-content/uploads/2020/06/Small-Loan-Regulatory-Law-and-Consumer-Alt-Inst-Loan-Act-PDF.pdf",
+      "locator": "Miss. Code Ann. § 75-67-127(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:02:15.044135+00:00",
+        "sha256": "2616951a3ae9d116e2ff03b0f7cdf800928aefaf4576f2beea0bbf24da7ad3d2"
+      }
+    },
+    "US-MS:debtLaw:3b6e6a342cab": {
+      "category": "debtLaw",
+      "title": "Miss. Code Ann. § 75-67-619(6), as amended by 2025 S.B. 2495 § 2",
+      "url": "https://billstatus.ls.state.ms.us/documents/2025/html/SB/2400-2499/SB2495SG.htm",
+      "locator": "Miss. Code Ann. § 75-67-619(6), as amended by 2025 S.B. 2495 § 2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:02:14.886645+00:00",
+        "sha256": "a79037a4b29ba27db39ad62fcbdeec881c831992359e488585b023c642b700db"
+      }
+    },
+    "US-MS:small_claims:1869d21cdf58": {
+      "category": "small_claims",
+      "title": "Miss. R. Just. Ct. 12(a)-(b)",
+      "url": "https://courts.ms.gov/research/rules/msrulesofcourt/Rules%20of%20Justice%20Court.pdf",
+      "locator": "Miss. R. Just. Ct. 12(a)-(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:36:44.788676+00:00",
+        "sha256": "dad4e46551b0203187f003c0258ae2399af57a0ed7f4f6502cf76ece76cddbc5"
+      }
+    },
+    "US-MS:small_claims:17911056e665": {
+      "category": "small_claims",
+      "title": "Miss. R. Just. Ct. 14(a)-(b)",
+      "url": "https://courts.ms.gov/research/rules/msrulesofcourt/Rules%20of%20Justice%20Court.pdf",
+      "locator": "Miss. R. Just. Ct. 14(a)-(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:36:44.788676+00:00",
+        "sha256": "dad4e46551b0203187f003c0258ae2399af57a0ed7f4f6502cf76ece76cddbc5"
+      }
+    },
+    "US-MS:small_claims:09970d6daf2f": {
+      "category": "small_claims",
+      "title": "Miss. R. Just. Ct. 14(d)(1)",
+      "url": "https://courts.ms.gov/research/rules/msrulesofcourt/Rules%20of%20Justice%20Court.pdf",
+      "locator": "Miss. R. Just. Ct. 14(d)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:36:44.788676+00:00",
+        "sha256": "dad4e46551b0203187f003c0258ae2399af57a0ed7f4f6502cf76ece76cddbc5"
+      }
+    },
+    "US-MS:small_claims:8333c9c31cc8": {
+      "category": "small_claims",
+      "title": "Miss. R. Just. Ct. 14(d)(2)",
+      "url": "https://courts.ms.gov/research/rules/msrulesofcourt/Rules%20of%20Justice%20Court.pdf",
+      "locator": "Miss. R. Just. Ct. 14(d)(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:36:44.788676+00:00",
+        "sha256": "dad4e46551b0203187f003c0258ae2399af57a0ed7f4f6502cf76ece76cddbc5"
+      }
+    },
+    "US-MS:small_claims:587ac7f4d2b9": {
+      "category": "small_claims",
+      "title": "Miss. R. Just. Ct. 23(a)",
+      "url": "https://courts.ms.gov/research/rules/msrulesofcourt/Rules%20of%20Justice%20Court.pdf",
+      "locator": "Miss. R. Just. Ct. 23(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:36:44.788676+00:00",
+        "sha256": "dad4e46551b0203187f003c0258ae2399af57a0ed7f4f6502cf76ece76cddbc5"
+      }
+    },
+    "US-MS:negligence_elements:9e1cff2fa787": {
+      "category": "negligence_elements",
+      "title": "Sanderson Farms, Inc. v. McCullough, 212 So. 3d 69, ¶ 17 (Miss. 2017)",
+      "url": "https://cases.justia.com/mississippi/supreme-court/2017-2015-ia-00854-sct.pdf?ts=1486063931",
+      "locator": "Sanderson Farms, Inc. v. McCullough, 212 So. 3d 69, ¶ 17 (Miss. 2017)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:27:26.667964+00:00",
+        "sha256": "e278eaa6aca3f1527081e82f7316d64bc01816ac7eddd326a43e2a862a5e3588"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-MS:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-MS:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MS:court:1ea33477d484",
+      "name": "Chancery",
+      "level": "limited_trial",
+      "source_id": "US-MS:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MS:court:09753adaaaf9",
+      "name": "County",
+      "level": "limited_trial",
+      "source_id": "US-MS:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MS:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-MS:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MS:court:0b3db1cdefd8",
+      "name": "Justice",
+      "level": "limited_trial",
+      "source_id": "US-MS:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Miss. Code Ann. § 15-1-49(1)",
+      "source_id": "US-MS:pi_limitations:f22c6dd7c5cc",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Miss. Code Ann. § 15-1-49(1)",
+      "source_id": "US-MS:written_contract_limitations:f22c6dd7c5cc",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Miss. Code Ann. § 15-1-29",
+      "source_id": "US-MS:oral_contract_limitations:f22c6dd7c5cc",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Miss. Code § 89-8-13. Right to terminate tenancy for breach; notice of breach; return of prepaid rent and security; disposition of tenant’s abandoned personal property.",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Miss. Code Ann. § 75-24-1 et seq.",
+      "source_id": "US-MS:consumerLaw:2c0c0a61e073",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "9181ca305541842428e54084a39530": {
+      "source_id": "US-MS:commencement:590b22aa5df5",
+      "citation": "Miss. R. Civ. P. 3",
+      "authority_type": "court_rule",
+      "language": "en",
+      "text": "A civil action is commenced by filing a complaint with the court. A costs deposit shall be made with the filing of the complaint, such deposit to be in the amount required by law and rules of the court.. (b) Proceeding In Forma Pauperis. A party may proceed in forma pauperis in accordance with sections 11-53-17 and 11-53-19 of the Mississippi Code Annotated. The court may, however, on the motion of any party, on the motion of the clerk of the court, or on its own initiative, examine the affiant as to the facts and circumstances of his pauperism.",
+      "text_sha256": "e827c95673a933fa5fbebf3c95424ec68975c55ea02cfe3e9775b7a55ffa1ba9",
+      "publisher_sha256": "b85e6543980b7f3a7d2d3623d9ec538d9aabec651a30a6589c87424ea6116095",
+      "retrieved_at": "2026-11-17T20:14:00.019290+00:00",
+      "currentness": "unresolved"
+    },
+    "522e4e734043fa068e7a45dba76f7c": {
+      "source_id": "US-MS:response:56bfd3e7d961",
+      "authority_type": "court_rule",
+      "citation": "Miss. R. Civ. P. 12(a)",
+      "text": "(a) When Presented. A defendant shall serve his answer within thirty days after the service of the summons and complaint upon him or within such time as is directed pursuant to Rule 4. A party served with a pleading stating a cross-claim against him shall serve an answer thereto within thirty days after the service upon him. The plaintiff shall serve his answer to a counterclaim within thirty days after service of the counterclaim. If a reply is ordered by the court, the reply shall be served within thirty days after service of the order, unless the order otherwise directs. The service of a motion permitted under this rule alters these periods of time as follows, unless a different time is fixed by order of the court: (1) if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within ten days after notice of the court’s action; (2) if the court grants a motion for a more definite statement, the responsive pleading shall be served within ten days after the service of the more definite statement. The times stated under this subparagraph may be extended, once only, for a period not to exceed ten days, upon the written stipulation of counsel filed in the records of the action.",
+      "text_sha256": "7f69f0b6c1f0605f223f6e804ba896e5df4256bb92a80e91c48234f964b938fe",
+      "publisher_sha256": "b85e6543980b7f3a7d2d3623d9ec538d9aabec651a30a6589c87424ea6116095",
+      "retrieved_at": "2026-11-17T20:14:00.019290+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "05b41a48f33b29fc22a4a7399bb0a4": {
+      "source_id": "US-MS:contract_formation:e25610aa00c7",
+      "authority_type": "opinion",
+      "citation": "Gulf Coast Hospice LLC v. LHC Group Inc., No. 2017-CA-01634-SCT, ¶ 35 (Miss. June 6, 2019)",
+      "text": "“It is, of course, a basic principle of the law of contracts that a contract is not formed between the parties absent the essential elements of offer, acceptance, and consideration.” Lagniappe Logistics, Inc. v. Buras, 199 So. 3d 675, 677 (¶ 7) (Miss. 2016) (quoting Whiting v. Univ. of S. Miss., 62 So. 3d 907, 915 (¶ 14) (Miss. 2011), overruled on other grounds by Springer v. Ausbern Constr. Co., Inc., 231 So. 3d 980 (Miss. 2017)). “The elements of a contract are (1) two or more contracting parties, (2) consideration, (3) an agreement that is sufficiently definite, (4) parties with legal capacity to make a contract, (5) mutual assent, and (6) no legal prohibition precluding contract formation.” GGNSC Batesville, LLC v. Johnson, 109 So. 3d 562, 565 (¶ 6) (Miss. 2013) (emphasis omitted) (quoting Adams Cmty. Care Ctr., LLC v. Reed, 37 So. 3d 1155, 1158 (¶ 7) (Miss. 2010)).",
+      "text_sha256": "b280104f272be27f0d54aa666b77febfbe609f64d31ce7e2ea927bf7217be959",
+      "publisher_sha256": "084da13bb59927713f4f1a66a97ebd3ce6ce2e52ab041f068b444be243ac23c2",
+      "retrieved_at": "2026-11-18T20:31:26.168376+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2019-06-06",
+      "court": "Supreme Court of Mississippi",
+      "decision_date": "2019-06-06",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from Harrison County Circuit Court; judgment affirmed."
+    },
+    "765346092c4b10b7cf61516ef7ec28": {
+      "source_id": "US-MS:fault:35f65da6679a",
+      "authority_type": "opinion",
+      "citation": "Smith v. Church Mutual Insurance Co., No. 2016-IA-01060-SCT, ¶ 22 (Miss. Aug. 2, 2018)",
+      "text": "Additionally, Mississippi applies a pure comparative-fault scheme, while Tennessee uses a modified comparative-fault scheme. Compare Miss. Code Ann. § 11-7-15 (Rev. 2004), with McIntyre v. Balentine, 833 S.W.2d 52, 57 (Tenn. 1992) (abrogating contributory-negligence scheme and adopting “a system of modified comparative fault”).",
+      "text_sha256": "ec61cca4c07da9bceac3e5213ad7c8fb5b376bd7f3f4f875852efe9e617b20c9",
+      "publisher_sha256": "911a17e3345ca7e4e67b3f2c0d6fd52af78a61ef95190bb6d14f4a10cdccc1a7",
+      "retrieved_at": "2026-11-19T18:56:02.174507+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2018-08-02",
+      "court": "Supreme Court of Mississippi",
+      "decision_date": "2018-08-02",
+      "opinion_role": "majority",
+      "procedural_posture": "Interlocutory appeal in a personal injury action involving a choice of law."
+    },
+    "60006899947b92f7a128c5a97e604a": {
+      "source_id": "US-MS:pi_limitations:af0482fd0377",
+      "authority_type": "opinion",
+      "citation": "Unruh v. Johnson, No. 2024-IA-00028-SCT, ¶ 33 (Miss. Mar. 13, 2025)",
+      "text": "Under Mississippi Code Section 15-1-49, negligence claims generally are subject to a three-year statute of limitations. GEICO Cas. Co. v. Stapleton , 315 So. 3d 464, 469 (¶ 16) (Miss. 2021) (citing Miss. Code Ann. § 15-1-49(1) (Rev. 2019)).",
+      "text_sha256": "cfe48244eb9268ee14fe7f93f0d8d26d22bf5795cdcfabd6401a2e2878bb8b33",
+      "publisher_sha256": "f8d621a027439b430b6253bd730850fb911f3e8621ede4175a7c65f4c4c16100",
+      "retrieved_at": "2026-11-20T15:43:51.597737+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2025-03-13",
+      "court": "Supreme Court of Mississippi",
+      "decision_date": "2025-03-13",
+      "opinion_role": "majority",
+      "procedural_posture": "Interlocutory appeal in a personal injury case. The court considered service, the requested extension, and the applicable ordinary negligence limitations period."
+    },
+    "1d3240371fd08ea9acadf302df213a": {
+      "source_id": "US-MS:consumerLaw:3fb8ec049f31",
+      "authority_type": "opinion",
+      "citation": "State ex rel. Fitch v. Yazaki North America, Inc., No. 2019-CA-00094-SCT, ¶ 17 (Miss. Apr. 30, 2020)",
+      "text": "Section 75-24-5(1) of the MCPA prohibits “[u]nfair methods of competition affecting commerce and unfair or deceptive trade practices affecting commerce . . . .” Miss. Code Ann. § 75-24-5(1) (Rev. 2016).",
+      "text_sha256": "f87724a872ff3d9e73ac5db93238c32da0798ef43a08801509bd6dbe951d6f03",
+      "publisher_sha256": "03849ec8ca3dd99ef48b9d5dcd33e6bc414df4e134e14015f035990400ea55ad",
+      "retrieved_at": "2026-11-20T16:20:54.639108+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2020-04-30",
+      "court": "Supreme Court of Mississippi",
+      "decision_date": "2020-04-30",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissal of an Attorney General enforcement action arising from alleged price fixing. The quoted statutory language is from the 2016 edition."
+    },
+    "1a59ca7d4fb8147c280bff5c7db1e0": {
+      "source_id": "US-MS:deposit:69004f7049eb",
+      "authority_type": "statute",
+      "citation": "Miss. S.B. 2461, § 10 (2022) (Miss. Code § 89-8-13(4))",
+      "text": "(4) If the rental agreement is terminated, the landlord shall return all prepaid and unearned rent and security recoverable by the tenant under Section 89-8-21.",
+      "text_sha256": "9ad20be8893802e8cbdf56632f32303a967b20bfd5f754ec53dd8bd656380fcc",
+      "publisher_sha256": "858eb91bf518ae3e37ff64411fe0b11a31d94156d91c446235f43584382332c6",
+      "retrieved_at": "2026-11-20T18:16:58.858913+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Mississippi S.B. 2461 as signed April 21, 2022",
+      "effective_from": "2022-04-21"
+    },
+    "32b0583b2d82359a8773d99a48df26": {
+      "source_id": "US-MS:wage_preemption:b49932cd6aea",
+      "authority_type": "statute",
+      "citation": "2013 Miss. H.B. 141, § 1(1) (local minimum wage and leave mandates)",
+      "text": "(1) No county, board of supervisors of a county, municipality or governing authority of a municipality is authorized to establish a mandatory, minimum living wage rate, minimum number of vacation or sick days, whether paid or unpaid, that would regulate how a private employer pays its employees. Each county, board of supervisors of a county, municipality or governing authority of a municipality shall be prohibited from establishing a mandatory, minimum living wage rate, minimum number of vacation or sick days, whether paid or unpaid, that would regulate how a private employer pays its employees.",
+      "text_sha256": "8d3b0de49329fa1390978f714897da070ada1fff283dcff09476773e64865635",
+      "publisher_sha256": "d3fcda1c2aceb4cba59b0b498f9a26236e16540c3f1de8b794a78fe700fff213",
+      "retrieved_at": "2026-11-20T22:39:55.766698+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Mississippi enacted H.B. 141, effective July 1, 2013",
+      "effective_from": "2013-07-01"
+    },
+    "00244bfc9536d57bfb547fedada9ca": {
+      "source_id": "US-MS:debtLaw:dc1bf1848285",
+      "authority_type": "statute",
+      "citation": "Miss. Code Ann. § 75-67-127(3)",
+      "text": "(3) Any contract of loan in the making or collection of which any provision of this section shall have been violated, either knowingly or without the exercise of due care to prevent the same, shall be void and the licensee shall have no right to collect or receive any principal, charges or recompense whatsoever.",
+      "text_sha256": "a69b60d525b5e4127812b5b5d99fd778be386120b3287ba63f74c8422fd4c9b5",
+      "publisher_sha256": "2616951a3ae9d116e2ff03b0f7cdf800928aefaf4576f2beea0bbf24da7ad3d2",
+      "retrieved_at": "2026-11-20T23:02:15.044135+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Mississippi Department of Banking and Consumer Finance Small Loan Regulatory Law compilation (2016)",
+      "effective_from": "1974-07-01"
+    },
+    "2d2f291e9a4743e964b59132a4ae31": {
+      "source_id": "US-MS:debtLaw:3b6e6a342cab",
+      "authority_type": "statute",
+      "citation": "Miss. Code Ann. § 75-67-619(6), as amended by 2025 S.B. 2495 § 2",
+      "text": "(6) In the event an account holder is in default under the terms of a credit availability agreement for more than sixty (60) days, the licensee may charge and collect from the account holder the following fees in connection with any such default, provided that such fees are clearly disclosed in the credit availability agreement: (a) If the licensee is required to employ a third party, including an attorney, to collect on the account the licensee may: (i) If the credit availability agreement so provides, charge and collect a reasonable collection fee and attorney's fee; and (ii) If the credit availability agreement so provides, shall be entitled to recover from the account holder all court costs incurred and to recover any court-awarded damages, including those incurred on appeal. (b) If applicable, the licensee may charge and collect from the account holder any fees and costs relating to the repossession and sale of collateral, including, but not limited to, fees and costs associated with the repossession, storage, preparation for sale and sale of collateral.",
+      "text_sha256": "9cc6cec9ee0bcc7f3dc8e85f03ad7e0e594c08667f7f5faed0cde9b0c7f0cf6e",
+      "publisher_sha256": "a79037a4b29ba27db39ad62fcbdeec881c831992359e488585b023c642b700db",
+      "retrieved_at": "2026-11-20T23:02:14.886645+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Mississippi 2025 S.B. 2495 approved March 12, 2025",
+      "effective_from": "2025-07-01"
+    },
+    "3a3060c8f8e1c6075cafb55218feb2": {
+      "source_id": "US-MS:small_claims:1869d21cdf58",
+      "authority_type": "court_rule",
+      "citation": "Miss. R. Just. Ct. 12(a)-(b)",
+      "text": "(a) A civil action is commenced by filing the complaint with the court. The complaint shall state the evidence of the debt, statement of account, or other basis for the civil action and make a specific demand for damages and/or other relief allowed by law. If a claim is founded on an account or other written instrument, a copy thereof should be attached to or filed with the complaint unless sufficient justification for its omission is stated in the complaint. The plaintiff may file a single complaint against multiple defendants if it is alleged that each of them is liable on the claim. (b) Exceptions. The following civil actions require a sworn complaint: (1) Evictions (Miss. Code Ann. § 89-7-29); (2) Replevin (Miss. Code Ann. § 11-37-101); (3) Distress for rents (Miss. Code Ann. § 89-7-57); (4) Unlawful entry and detainer (Miss. Code Ann. § 11-25-5); and (5) Any other civil action requiring a sworn complaint by statutory procedures.",
+      "text_sha256": "d081bd8aaa0c2cbb1a99926f6f5267db76dc4d9698a719d47bc72cc3c02434b2",
+      "publisher_sha256": "dad4e46551b0203187f003c0258ae2399af57a0ed7f4f6502cf76ece76cddbc5",
+      "retrieved_at": "2026-11-21T03:36:44.788676+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Mississippi Rules of Justice Court compilation listing amendments effective July 1, 2020",
+      "court": "Mississippi Justice Courts"
+    },
+    "097fa3bccc64229983d02ab110f569": {
+      "source_id": "US-MS:small_claims:17911056e665",
+      "authority_type": "court_rule",
+      "citation": "Miss. R. Just. Ct. 14(a)-(b)",
+      "text": "(a) Service of process defined. Service of process for civil actions in justice court means serving a true copy of the summons and complaint upon the defendant in accordance with this rule. (b) Issuance of summons and form. Summons shall be issued by the justice court clerk. Any summons issued under this rule shall name the court and the parties; be directed to the defendant; state the name and address of the plaintiff’s attorney or, if unrepresented, of the plaintiff; state the date and time within which the defendant must appear and defend; notify the defendant that a failure to appear and defend may result in a default judgment against the defendant for the relief demanded in the complaint; be signed and dated by the justice court clerk; and bear the court’s seal.",
+      "text_sha256": "d00045afefa5aa08cf455da4e8e2880a1db031637cc1b08dc6978ecf9eaf0940",
+      "publisher_sha256": "dad4e46551b0203187f003c0258ae2399af57a0ed7f4f6502cf76ece76cddbc5",
+      "retrieved_at": "2026-11-21T03:36:44.788676+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Mississippi Rules of Justice Court compilation listing amendments effective July 1, 2020",
+      "court": "Mississippi Justice Courts"
+    },
+    "57776ea682db09e83146d851a5125e": {
+      "source_id": "US-MS:small_claims:09970d6daf2f",
+      "authority_type": "court_rule",
+      "citation": "Miss. R. Just. Ct. 14(d)(1)",
+      "text": "(1) Personal service. The constable shall deliver a true copy of the summons and complaint to the defendant or to an agent authorized by appointment or by law to receive process. Service shall be deemed complete upon the date of service.",
+      "text_sha256": "e938b9a47d66d4570a30626d5a25e7457f778f8291fd13f2e43a54825c3c9cec",
+      "publisher_sha256": "dad4e46551b0203187f003c0258ae2399af57a0ed7f4f6502cf76ece76cddbc5",
+      "retrieved_at": "2026-11-21T03:36:44.788676+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Mississippi Rules of Justice Court compilation listing amendments effective July 1, 2020",
+      "court": "Mississippi Justice Courts"
+    },
+    "d50a6f2998b2a57216f6459aa0bee6": {
+      "source_id": "US-MS:small_claims:8333c9c31cc8",
+      "authority_type": "court_rule",
+      "citation": "Miss. R. Just. Ct. 14(d)(2)",
+      "text": "(2) Service upon a family member. If service under paragraph (d)(1) cannot be made with reasonable diligence, then the constable shall deliver a true copy of the summons and complaint at the defendant’s usual place of abode with the defendant’s spouse or some other person of the defendant’s family above the age of sixteen (16) years, and within three (3) days thereafter, by mailing a true copy of the summons and complaint, by first class mail, postage prepaid, to the defendant at the address where the true copy of the summons and complaint were properly delivered. Service shall be deemed complete on the 10th day after the mailing.",
+      "text_sha256": "c5d451dfdcf6e2bf760af1c20d080aa384cb3745ce2ca761c82914625c3f176f",
+      "publisher_sha256": "dad4e46551b0203187f003c0258ae2399af57a0ed7f4f6502cf76ece76cddbc5",
+      "retrieved_at": "2026-11-21T03:36:44.788676+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Mississippi Rules of Justice Court compilation listing amendments effective July 1, 2020",
+      "court": "Mississippi Justice Courts"
+    },
+    "a48750f38cdce813a3431eba46da37": {
+      "source_id": "US-MS:small_claims:587ac7f4d2b9",
+      "authority_type": "court_rule",
+      "citation": "Miss. R. Just. Ct. 23(a)",
+      "text": "(a) When the defendant fails to appear for trial. If the defendant has been given proper notice of the date and time of trial but fails to appear, and the plaintiff appears, then the judge may enter a default judgment against the defendant provided: (1) there is a factual basis to support the claim; and (2) the judgment is not different in kind from or does not exceed the amount of that demanded in the complaint.",
+      "text_sha256": "30ead115367d12ad78f740ece94070743ce2a88809b9a4c8787663f5a48a47bd",
+      "publisher_sha256": "dad4e46551b0203187f003c0258ae2399af57a0ed7f4f6502cf76ece76cddbc5",
+      "retrieved_at": "2026-11-21T03:36:44.788676+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Mississippi Rules of Justice Court compilation listing amendments effective July 1, 2020",
+      "court": "Mississippi Justice Courts"
+    },
+    "7560e25642cbea3ca7749dc9f1273f": {
+      "source_id": "US-MS:negligence_elements:9e1cff2fa787",
+      "authority_type": "opinion",
+      "citation": "Sanderson Farms, Inc. v. McCullough, 212 So. 3d 69, ¶ 17 (Miss. 2017)",
+      "text": "Alternatively, to prevail on a claim of negligence, the “plaintiff must establish by a preponderance of the evidence each of the elements of negligence: duty, breach, causation and injury.” Miss. Dep’t of Mental Health v. Hall, 936 So. 2d 917, 922 (Miss. 2006) (quoting Miss. Dep’t of Transp. v. Cargile, 847 So. 2d 258, 262 (Miss. 2003), overruled on other grounds by Miss. Transp. Comm’n v. Montgomery, 80 So. 3d 789 (Miss. 2012)). Further, the plaintiff must show “a causal connection between the breach and the [injury], such that the breach is the proximate cause of the [injury].” Double Quick v. Lymas, 50 So. 3d 292, 298 (Miss. 2010).",
+      "text_sha256": "e630a0a4b6fbc7013ffef7d899b9267c575292631065364d1f75fc971d3ea4fc",
+      "publisher_sha256": "e278eaa6aca3f1527081e82f7316d64bc01816ac7eddd326a43e2a862a5e3588",
+      "retrieved_at": "2026-11-21T04:27:26.667964+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2017-02-02",
+      "court": "Supreme Court of Mississippi",
+      "decision_date": "2017-02-02",
+      "opinion_role": "majority",
+      "procedural_posture": "Interlocutory review of denial of summary judgment where the court assessed whether the facts supported negligence or an intentional tort.",
+      "publisher_member": "Court-issued opinion PDF p. 10, paragraph 17"
+    }
+  },
+  "fault_allocation": {
+    "regime": "pure_comparative",
+    "source_id": "US-MS:fault:35f65da6679a",
+    "passage_selector": "765346092c4b10b7cf61516ef7ec28",
+    "currentness": "historical",
+    "qualification": "This historical statement describes Mississippi law in a choice-of-law analysis and does not establish the law that applies to a new case."
+  }
+}

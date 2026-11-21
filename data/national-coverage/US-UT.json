@@ -1,0 +1,622 @@
+{
+  "jurisdiction": "US-UT",
+  "version": "1",
+  "sources": {
+    "US-UT:statutes:9bfc42fcb719": {
+      "category": "statutes",
+      "title": "Utah Code",
+      "url": "https://le.utah.gov/xcode/code.html",
+      "directory": "codes",
+      "locator": "Utah"
+    },
+    "US-UT:constitution:9c9d64245575": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://le.utah.gov/xcode/constitution.html",
+      "directory": "codes",
+      "locator": "Utah"
+    },
+    "US-UT:legislature:55e07408b694": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://le.utah.gov/",
+      "directory": "codes",
+      "locator": "Utah"
+    },
+    "US-UT:labor_agency:977ecfd4a613": {
+      "category": "labor_agency",
+      "title": "www.laborcommission.utah.gov",
+      "url": "http://www.laborcommission.utah.gov/",
+      "directory": "labor",
+      "locator": "Utah"
+    },
+    "US-UT:commercial_code:18715a2691a2": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "https://le.utah.gov/xcode/Title70A/70A.html",
+      "directory": "ucc",
+      "locator": "Utah"
+    },
+    "US-UT:civil_rules:750c5d8e4a04": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "https://www.utcourts.gov/resources/rules/urcp/index.htm",
+      "directory": "procedure",
+      "locator": "Utah"
+    },
+    "US-UT:consumer_agency:da29f5bc4d2e": {
+      "category": "consumer_agency",
+      "title": "Utah (UT)",
+      "url": "https://dcp.utah.gov/",
+      "directory": "consumer",
+      "locator": "Utah (UT)"
+    },
+    "US-UT:judiciary:b559b4dfdd0b": {
+      "category": "judiciary",
+      "title": "Utah Courts",
+      "url": "http://www.utcourts.gov/",
+      "directory": "doj-UT",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-UT:court_directory:6d5aa6ca9425": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.utcourts.gov/en/courts/court-types/appellate-courts/supreme.html",
+      "directory": "doj-UT",
+      "locator": "Supreme Court"
+    },
+    "US-UT:court_directory:6638f219d32d": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "https://www.utcourts.gov/en/courts/court-types/appellate-courts/coa.html",
+      "directory": "doj-UT",
+      "locator": "Court of Appeals"
+    },
+    "US-UT:court_directory:d3db4a1645c2": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "https://www.utcourts.gov/en/courts/court-types/dist.html",
+      "directory": "doj-UT",
+      "locator": "District Courts"
+    },
+    "US-UT:court_directory:511b906979f8": {
+      "category": "court_directory",
+      "title": "Juvenile Courts",
+      "url": "https://www.utcourts.gov/en/courts/court-types/juv.html",
+      "directory": "doj-UT",
+      "locator": "Juvenile Courts"
+    },
+    "US-UT:court_directory:1cc473e4d675": {
+      "category": "court_directory",
+      "title": "Justice Courts",
+      "url": "https://www.utcourts.gov/en/courts/court-types/just.html",
+      "directory": "doj-UT",
+      "locator": "Justice Courts"
+    },
+    "US-UT:forms:f53385415f01": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://www.utcourts.gov/en/forms/forms/court-forms.html",
+      "directory": "doj-UT",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-UT:constitution:f896951f282d": {
+      "category": "constitution",
+      "title": "Utah Code and Constitution",
+      "url": "https://le.utah.gov/Documents/code_const.htm",
+      "directory": "doj-UT",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-UT:pi_limitations:9f82f0a66a37": {
+      "category": "pi_limitations",
+      "title": "Utah Code § 78B-2-307(4)",
+      "url": "https://le.utah.gov/xcode/Title78B/Chapter2/78B-2-S307.html",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://le.utah.gov/xcode/Title78B/Chapter2/78B-2-S307.html",
+        "retrieved_at": "2026-11-17T19:34:01.639083+00:00",
+        "http_status": "200",
+        "sha256": "abc848c748793102ff98f23551fd5fe656e54cdecce4e2eaed803108a26f1e49",
+        "health": "manual_review_required"
+      }
+    },
+    "US-UT:written_contract_limitations:5df1a84725e5": {
+      "category": "written_contract_limitations",
+      "title": "Utah Code § 78B-2-309(1)(b)",
+      "url": "https://le.utah.gov/xcode/Title78B/Chapter2/78B-2-S309.html",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://le.utah.gov/xcode/Title78B/Chapter2/78B-2-S309.html",
+        "retrieved_at": "2026-11-17T19:34:01.699301+00:00",
+        "http_status": "200",
+        "sha256": "9c2de4b05e020c733803f2a1534b8c26b598d25e53770a98e4df28c7e51e3ea8",
+        "health": "manual_review_required"
+      }
+    },
+    "US-UT:oral_contract_limitations:9f82f0a66a37": {
+      "category": "oral_contract_limitations",
+      "title": "Utah Code § 78B-2-307(1)(a)",
+      "url": "https://le.utah.gov/xcode/Title78B/Chapter2/78B-2-S307.html",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://le.utah.gov/xcode/Title78B/Chapter2/78B-2-S307.html",
+        "retrieved_at": "2026-11-17T19:34:01.639083+00:00",
+        "http_status": "200",
+        "sha256": "abc848c748793102ff98f23551fd5fe656e54cdecce4e2eaed803108a26f1e49",
+        "health": "manual_review_required"
+      }
+    },
+    "US-UT:small_claims:70d1b995510d": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.utcourts.gov/en/self-help/case-categories/consumer/small-claims.html",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.utcourts.gov/en/self-help/case-categories/consumer/small-claims.html",
+        "retrieved_at": "2026-11-17T19:43:09.953002+00:00",
+        "http_status": "406",
+        "sha256": null,
+        "health": "manual_review_required"
+      }
+    },
+    "US-UT:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 29"
+    },
+    "US-UT:commencement:6b08396dfa72": {
+      "category": "commencement",
+      "title": "Utah R. Civ. P. 3(a)",
+      "url": "https://legacy.utcourts.gov/rules/viewall.php?chapter=01&type=URCP",
+      "directory": null,
+      "locator": "Utah R. Civ. P. 3(a)",
+      "language": "en",
+      "publisher_role": "official_rule_publication",
+      "observation": {
+        "health": "retained_snapshot",
+        "retrieved_at": "2026-11-17T20:14:06.970687+00:00",
+        "sha256": "7cc4be87525e9869fb2c7d4b635d667aa3010723ed187050e3c0f7043a02b9b8"
+      }
+    },
+    "US-UT:fault:106d58d09095": {
+      "category": "fault",
+      "title": "Utah Code § 78B-5-818",
+      "url": "https://le.utah.gov/xcode/Title78B/Chapter5/C78B-5-S818_1800010118000101.pdf",
+      "directory": null,
+      "locator": "Utah Code § 78B-5-818",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:36.057708+00:00",
+        "sha256": "d319d63f4c92ec50110872bf997470d21359c66f431f6580c8946e2da0b0f5c8"
+      }
+    },
+    "US-UT:consumerLaw:d1b18d2274fc": {
+      "title": "Utah Code § 13-11-1 et seq.",
+      "category": "consumerLaw",
+      "url": "https://le.utah.gov/xcode/Title13/C13_1800010118000101.pdf",
+      "directory": "consumer_statutes_index",
+      "locator": "Utah Code § 13-11-1 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-UT:contract_formation:92d7342ac769": {
+      "category": "contract_formation",
+      "title": "Utah Code § 70A-2-204",
+      "url": "https://le.utah.gov/xcode/Title70A/Chapter2/C70A-2_1800010118000101.pdf",
+      "locator": "Utah Code § 70A-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:33.702908+00:00",
+        "sha256": "159729e5c447c8dc0de674de36674d318bb451b6859afd2be39bed6bcf606b43"
+      }
+    },
+    "US-UT:service:50fe939bd0bb": {
+      "category": "service",
+      "title": "Utah R. Civ. P. 4(d)(1) (personal service)",
+      "url": "https://legacy.utcourts.gov/rules/viewall.php?chapter=01&type=URCP",
+      "locator": "Utah R. Civ. P. 4(d)(1) (personal service)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:14:06.970687+00:00",
+        "sha256": "7cc4be87525e9869fb2c7d4b635d667aa3010723ed187050e3c0f7043a02b9b8"
+      }
+    },
+    "US-UT:contract_damages:f60d29c5c816": {
+      "category": "contract_damages",
+      "title": "Utah Code § 70A-2-714",
+      "url": "https://le.utah.gov/xcode/Title70A/Chapter2/C70A-2_1800010118000101.pdf",
+      "locator": "Utah Code § 70A-2-714",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:33.702908+00:00",
+        "sha256": "159729e5c447c8dc0de674de36674d318bb451b6859afd2be39bed6bcf606b43"
+      }
+    },
+    "US-UT:consumerLaw:36784f3b7143": {
+      "category": "consumerLaw",
+      "title": "Utah Code § 13-11-4(1)",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter11/C13-11-S4_2026050620260506.html",
+      "locator": "Utah Code § 13-11-4(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:45.505086+00:00",
+        "sha256": "12f11ba7d0df24246b2d87cfbf73d13f74773dbec2d8eea85916beb97787391b"
+      }
+    },
+    "US-UT:tolling:03a269bafb84": {
+      "category": "tolling",
+      "title": "Utah Code § 78B-2-108(1)–(3)",
+      "url": "https://le.utah.gov/xcode/Title78B/Chapter2/C78B-2-S108_2021050520210505.html",
+      "locator": "Utah Code § 78B-2-108(1)–(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:18:09.519894+00:00",
+        "sha256": "ea284e30bb04ebf6de4277dc985bd377c4ac3f0f8a809e999b54f2ea81261d9c"
+      }
+    },
+    "US-UT:pi_limitations:9d95f00dde13": {
+      "category": "pi_limitations",
+      "title": "Utah Code § 78B-2-307",
+      "url": "https://le.utah.gov/xcode/Title78B/Chapter2/C78B-2-S307_2023050320230503.pdf",
+      "locator": "Utah Code § 78B-2-307",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:34:30.406686+00:00",
+        "sha256": "7d49d030e6f0445ed7b1a75637e6aed0b13bc975a8498baa16fd1a789f3f5370"
+      }
+    },
+    "US-UT:small_claims:b376482e58d4": {
+      "category": "small_claims",
+      "title": "Utah Code § 78A-8-102(1)",
+      "url": "https://le.utah.gov/xcode/Title78A/Chapter8/C78A-8-S102_2022050420220504.pdf",
+      "locator": "Utah Code § 78A-8-102(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:28.470787+00:00",
+        "sha256": "0d565f5579dc5ea29f8cf3502a93edea1f03bbbf07606329affd50083ff3cd2c"
+      }
+    },
+    "US-UT:response:7016f16e2e8e": {
+      "category": "response",
+      "title": "Utah R. Civ. P. 12(a)(1)",
+      "url": "https://legacy.utcourts.gov/rules/view.php?type=urcp&rule=12",
+      "locator": "Utah R. Civ. P. 12(a)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:41:36.881162+00:00",
+        "sha256": "eac41de30f9068242c7af2f52660bef6216c285c7c6d30858797cae5ebdd114f"
+      }
+    },
+    "US-UT:debtLaw:108e403a6998": {
+      "category": "debtLaw",
+      "title": "Utah Code § 12-1-11(2) (2020 compilation)",
+      "url": "https://le.utah.gov/xcode/Title12/C12_1800010118000101.pdf",
+      "locator": "Utah Code § 12-1-11(2) (2020 compilation)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:27:34.065959+00:00",
+        "sha256": "842320e1bad149d4d074b09d0a2329dd567a2ee4eb724424ebcd68d743956c13"
+      }
+    },
+    "US-UT:deposit:8746cadb919f": {
+      "category": "deposit",
+      "title": "Utah Code § 57-17-3(1)–(2)",
+      "url": "https://le.utah.gov/xcode/Title57/Chapter17/C57-17_1800010118000101.pdf",
+      "locator": "Utah Code § 57-17-3(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:27:34.359207+00:00",
+        "sha256": "8c38da28e243fc5cb2ac38d016dd93d5bea159a6cf8af689e5117bf3df36de34"
+      }
+    },
+    "US-UT:wageLaw:701488bdf29f": {
+      "category": "wageLaw",
+      "title": "Utah Code § 34-28-3(1)",
+      "url": "https://le.utah.gov/xcode/Title34/Chapter28/C34-28-S3_2014040320140513.pdf",
+      "locator": "Utah Code § 34-28-3(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:37:34.516604+00:00",
+        "sha256": "923b2f5dd5bd0e8df50d37aae90561b8405504ac2a6be9008727a4be14bffa18"
+      }
+    },
+    "US-UT:negligence_elements:dbb2f11d7c7f": {
+      "category": "negligence_elements",
+      "title": "McCollin v. J.D.F. Properties, LLC, 2014 UT App 75, ¶ 10",
+      "url": "https://cases.justia.com/utah/court-of-appeals-published/2014-20120783-ca.pdf?ts=1397158523",
+      "locator": "McCollin v. J.D.F. Properties, LLC, 2014 UT App 75, ¶ 10",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:26:58.415194+00:00",
+        "sha256": "02d1dfa0e0e8d6e002849bea425ef760ba5b6459dcb8b1ee972b792e2311b085"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-UT:court:44c073195bab",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-UT:court_directory:6d5aa6ca9425"
+    },
+    {
+      "id": "US-UT:court:5b9b8f6df9fc",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-UT:court_directory:6638f219d32d"
+    },
+    {
+      "id": "US-UT:court:14e696f2a04b",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-UT:court_directory:d3db4a1645c2"
+    },
+    {
+      "id": "US-UT:court:378dc07e21e2",
+      "name": "Juvenile Courts",
+      "level": "trial_directory",
+      "source_id": "US-UT:court_directory:511b906979f8"
+    },
+    {
+      "id": "US-UT:court:7a1677b84b0c",
+      "name": "Justice Courts",
+      "level": "trial_directory",
+      "source_id": "US-UT:court_directory:1cc473e4d675"
+    },
+    {
+      "id": "US-UT:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-UT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-UT:court:0b3db1cdefd8",
+      "name": "Justice",
+      "level": "limited_trial",
+      "source_id": "US-UT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-UT:court:d693956e904d",
+      "name": "Juvenile",
+      "level": "limited_trial",
+      "source_id": "US-UT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Utah Code § 78B-2-307(4)",
+      "source_id": "US-UT:pi_limitations:9f82f0a66a37",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Utah Code § 78B-2-309(1)(b)",
+      "source_id": "US-UT:written_contract_limitations:5df1a84725e5",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Utah Code § 78B-2-307(1)(a)",
+      "source_id": "US-UT:oral_contract_limitations:9f82f0a66a37",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Utah Code § 57-22-2. Definitions.",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Utah Code § 13-11-1 et seq.",
+      "source_id": "US-UT:consumerLaw:d1b18d2274fc",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "2d69b5a05f60478bd41cc41af42bb0": {
+      "source_id": "US-UT:commencement:6b08396dfa72",
+      "citation": "Utah R. Civ. P. 3(a)",
+      "authority_type": "court_rule",
+      "language": "en",
+      "text": "(a) How commenced. A civil action is commenced (1) by filing a complaint with the court, or (2) by service of a summons together with a copy of the complaint in accordance with Rule 4. If the action is commenced by the service of a summons and a copy of the complaint, then the complaint, the summons and proof of service, must be filed within ten days of such service. If, in a case commenced under paragraph (a)(2) of this rule, the complaint, summons and proof of service are not filed within ten days of service, the action commenced shall be deemed dismissed and the court shall have no further jurisdiction thereof. If a check or other form of payment tendered as a filing fee is dishonored, the party shall pay the fee by cash or cashier's check within 10 days after notification by the court. Dishonor of a check or other form of payment does not affect the validity of the filing, but may be grounds for such sanctions as the court deems appropriate, which may include dismissal of the action and the award of costs and attorney fees.",
+      "text_sha256": "e859739b6d3a2c570dc91ac7ee6e2b95390f21c28d012dbaf7f32abf8687075a",
+      "publisher_sha256": "7cc4be87525e9869fb2c7d4b635d667aa3010723ed187050e3c0f7043a02b9b8",
+      "retrieved_at": "2026-11-17T20:14:06.970687+00:00",
+      "currentness": "unresolved"
+    },
+    "6e1134ec6760a157c37ef7bc0e8f05": {
+      "citation": "Utah Code § 78B-5-818",
+      "source_id": "US-UT:fault:106d58d09095",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "78B-5-818 Comparative negligence. (1) The fault of a person seeking recovery may not alone bar recovery by that person. (2) A person seeking recovery may recover from any defendant or group of defendants whose fault, combined with the fault of persons immune from suit and nonparties to whom fault is allocated, exceeds the fault of the person seeking recovery prior to any reallocation of fault made under Subsection 78B-5-819(2). (3) No defendant is liable to any person seeking recovery for any amount in excess of the proportion of fault attributed to that defendant under Section 78B-5-819. (4) (a) The fact finder may, and when requested by a party shall, allocate the percentage or proportion of fault attributable to each person seeking recovery, to each defendant, to any person immune from suit, and to any other person identified under Subsection 78B-5-821(4) for whom there is a factual and legal basis to allocate fault. In the case of a motor vehicle accident involving an unidentified motor vehicle, the existence of the vehicle shall be proven by clear and convincing evidence which may consist solely of one person's testimony. (b) Any fault allocated to a person immune from suit is considered only to accurately determine the fault of the person seeking recovery and a defendant and may not subject the person immune from suit to any liability, based on the allocation of fault, in this or any other action.",
+      "text_sha256": "12bcba4d7dd8aa5e1b46040471ed4de631a801ba4471cd8001edcef435a8f7b1",
+      "publisher_sha256": "d319d63f4c92ec50110872bf997470d21359c66f431f6580c8946e2da0b0f5c8",
+      "retrieved_at": "2026-11-17T20:50:36.057708+00:00",
+      "currentness": "unresolved"
+    },
+    "6977b28f113b4e78de464a00fecc1f": {
+      "source_id": "US-UT:contract_formation:92d7342ac769",
+      "authority_type": "statute",
+      "citation": "Utah Code § 70A-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "159729e5c447c8dc0de674de36674d318bb451b6859afd2be39bed6bcf606b43",
+      "retrieved_at": "2026-11-18T15:14:33.702908+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "0b96aaa65d931279b26028a62c5edc": {
+      "source_id": "US-UT:service:50fe939bd0bb",
+      "authority_type": "court_rule",
+      "citation": "Utah R. Civ. P. 4(d)(1) (personal service)",
+      "text": "(1) Personal service. The summons and complaint may be served by any person 18 years of age or older at the time of service and not a party to the action or a party's attorney. If the person to be served refuses to accept a copy of the summons and complaint, service is sufficient if the person serving them states the name of the process and offers to deliver them.",
+      "text_sha256": "83c2156d7f9102724858c96d68ef0bea7a41caa00575b074a15d3e89ef0463ed",
+      "publisher_sha256": "7cc4be87525e9869fb2c7d4b635d667aa3010723ed187050e3c0f7043a02b9b8",
+      "retrieved_at": "2026-11-17T20:14:06.970687+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "0a5514f7f922e54b7390860b3f667e": {
+      "source_id": "US-UT:contract_damages:f60d29c5c816",
+      "authority_type": "statute",
+      "citation": "Utah Code § 70A-2-714",
+      "text": "Where the buyer has accepted goods and given notification (Subsection (3) of Section 70A-2-607) he may recover as damages for any nonconformity of tender the loss resulting in the ordinary course of events from the seller's breach as determined in any manner which is reasonable. (2) The measure of damages for breach of warranty is the difference at the time and place of acceptance between the value of the goods accepted and the value they would have had if they had been as warranted, unless special circumstances show proximate damages of a different amount.",
+      "text_sha256": "10733b4a1bf8d131b7f3e60dcdd8a727063ff8d50d9ca659f8b179fed68b5eb9",
+      "publisher_sha256": "159729e5c447c8dc0de674de36674d318bb451b6859afd2be39bed6bcf606b43",
+      "retrieved_at": "2026-11-18T15:14:33.702908+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "0e477d509c2be785e46f468635795f": {
+      "source_id": "US-UT:consumerLaw:36784f3b7143",
+      "authority_type": "statute",
+      "citation": "Utah Code § 13-11-4(1)",
+      "text": "(1) A supplier that engages in a deceptive act or practice in connection with a consumer transaction violates this chapter, whether the deceptive act or practice occurs before, during, or after the transaction.",
+      "text_sha256": "95cbfb551e128044ed6343a4a6ab91b854efb9d84b52910611a69ae2b5c0d89a",
+      "publisher_sha256": "12f11ba7d0df24246b2d87cfbf73d13f74773dbec2d8eea85916beb97787391b",
+      "retrieved_at": "2026-11-19T19:26:45.505086+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2026-05-06"
+    },
+    "8b827408e9c3100150edde16e08c7d": {
+      "source_id": "US-UT:tolling:03a269bafb84",
+      "authority_type": "statute",
+      "citation": "Utah Code § 78B-2-108(1)–(3)",
+      "text": "(1) An individual may not bring a cause of action while the individual is: (a) under 18 years old; or (b) mentally incompetent without a legal guardian. (2) During the time that an individual is underage or mentally incompetent, the statute of limitations for a cause of action other than for the recovery of real property may not run. (3) A cause of action under this section includes any claim: (a) for general or special damages; or (b) for which a parent or legal guardian of an individual described in Subsection (1) may be financially responsible for the payment of general or special damages.",
+      "text_sha256": "e956ed0e6a9a82b78c8f10956a670725ec129d1c9128f366e403141af6028a82",
+      "publisher_sha256": "ea284e30bb04ebf6de4277dc985bd377c4ac3f0f8a809e999b54f2ea81261d9c",
+      "retrieved_at": "2026-11-20T15:18:09.519894+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2021-05-05"
+    },
+    "cc4c30de7529b552a68ed67baeac6e": {
+      "source_id": "US-UT:pi_limitations:9d95f00dde13",
+      "authority_type": "statute",
+      "citation": "Utah Code § 78B-2-307",
+      "text": "An action may be brought within four years: (1) after the last charge is made or the last payment is received: (a) upon a contract, obligation, or liability not founded upon an instrument in writing; (b) on an open store account for any goods, wares, or merchandise; or (c) on an open account for work, labor or services rendered, or materials furnished; (2) for a claim for relief or a cause of action under the following sections of Title 25, Chapter 6, Uniform Voidable Transactions Act: (a) Subsection 25-6-202(1)(a), except in specific situations where the time for action is limited to one year under Section 25-6-305; (b) Subsection 25-6-202(1)(b); or (c) Subsection 25-6-203(1); (3) for a claim involving personal property damage to the aggrieved party's motor vehicle, as defined in Section 41-6a-102, or personal property from an accident involving a motor vehicle; and (4) for relief not otherwise provided for by law.",
+      "text_sha256": "e760321df847f51c33dfdd577dde7e51042b4c35a8d381ea2f8ce68e9243d160",
+      "publisher_sha256": "7d49d030e6f0445ed7b1a75637e6aed0b13bc975a8498baa16fd1a789f3f5370",
+      "retrieved_at": "2026-11-20T15:34:30.406686+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2023-05-03"
+    },
+    "f7c0364f0bc83a5ce32ce8774d323f": {
+      "source_id": "US-UT:small_claims:b376482e58d4",
+      "authority_type": "statute",
+      "citation": "Utah Code § 78A-8-102(1)",
+      "text": "(1) A small claims action is a civil action: (a) for the recovery of money when: (i) the amount claimed does not exceed: (A) on or after May 4, 2022, through December 31, 2024, $15,000 including attorney fees but exclusive of court costs and interest; (B) on or after January 1, 2025, through December 31, 2029, $20,000 including attorney fees but exclusive of court costs and interest; and (C) on or after January 1, 2030, $25,000 including attorney fees but exclusive of court costs and interest; and (ii) the defendant resides or the action of indebtedness was incurred within the jurisdiction of the court in which the action is to be maintained; or (b) involving interpleader under Rule 22 of the Utah Rules of Civil Procedure, in which the amount claimed does not exceed the amount described in Subsection (1)(a)(i).",
+      "text_sha256": "7626eff12cf4bf1eb9f3d30c8ae59b87851af54147d0fc0e2575990839c068d8",
+      "publisher_sha256": "0d565f5579dc5ea29f8cf3502a93edea1f03bbbf07606329affd50083ff3cd2c",
+      "retrieved_at": "2026-11-20T16:16:28.470787+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Utah Code version effective May 4, 2022",
+      "court": "Utah small-claims courts governed by Title 78A, Chapter 8",
+      "effective_from": "2022-05-04"
+    },
+    "f78a2952d55fe1e755d6e0ab9e421a": {
+      "source_id": "US-UT:response:7016f16e2e8e",
+      "authority_type": "court_rule",
+      "citation": "Utah R. Civ. P. 12(a)(1)",
+      "text": "(1) Unless otherwise provided by statute or order of the court, a defendant must file and serve an answer within 21 days after the service of the summons and complaint within the state and within 30 days after service of the summons and complaint outside the state. A party served with a crossclaim must file and serve an answer to the crossclaim within 21 days after service. The plaintiff must file and serve an answer to a counterclaim within 21 days after service of the counterclaim, unless the court orders otherwise. The service of a motion under this rule alters these periods of time as follows, unless a different time is ordered by the court, but a motion directed to fewer than all of the claims in a pleading does not affect the time for responding to the remaining claims: (A) If the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading must be served within 14 days after notice of the court's action; (B) If the court grants a motion for a more definite statement, the responsive pleading must be served within 14 days after the service of the more definite statement.",
+      "text_sha256": "94aff6b9e649e3d274584303ff79a6544b7a84f27075c5c587a024d47a224b36",
+      "publisher_sha256": "eac41de30f9068242c7af2f52660bef6216c285c7c6d30858797cae5ebdd114f",
+      "retrieved_at": "2026-11-20T16:41:36.881162+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2024-05-01"
+    },
+    "1a6e5f7abfd074ebaa5ccb96cda862": {
+      "source_id": "US-UT:debtLaw:108e403a6998",
+      "authority_type": "statute",
+      "citation": "Utah Code § 12-1-11(2) (2020 compilation)",
+      "text": "(2) (a) A creditor may require a debtor to pay a collection fee in addition to any other amount owed to the creditor for a debt if: (i) imposing a collection fee on the debtor or in relation to the debt is not prohibited or otherwise restricted by another federal or state law; (ii) the creditor contracts with a third party debt collection agency or licensed attorney to collect the debt; (iii) the third party debt collection agency with which the creditor contracts is registered under this title; (iv) there is a written agreement between the creditor and the debtor that: (A) creates the debt; and (B) provides for the imposition of the collection fee in accordance with this section; and (v) the obligation to pay the collection fee is imposed at the time of assignment of the debt to a third party debt collection agency or licensed attorney in accordance with an agreement described in Subsection (2)(a)(iv). (b) The creditor shall establish the amount of the collection fee imposed under this Subsection (2), except that the amount may not exceed the lesser of: (i) the actual amount a creditor is required to pay a third party debt collection agency or licensed attorney, regardless of whether that amount is a specific dollar amount or a percentage of the principal amount owed to the creditor for a debt; or (ii) 40% of the principal amount owed to the creditor for a debt. (c) An obligation to pay a collection fee imposed under this Subsection (2) is in addition to any obligation to pay attorney fees that may otherwise exist.",
+      "text_sha256": "439e65d747b00f0ef01de69a8b765b42796aaa95ee6d4632234b92fe67cca738",
+      "publisher_sha256": "842320e1bad149d4d074b09d0a2329dd567a2ee4eb724424ebcd68d743956c13",
+      "retrieved_at": "2026-11-20T17:27:34.065959+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Utah Legislature compilation reflecting the stated 2020 amendment"
+    },
+    "33e0c32957fa955d97cddaa5d8b7c0": {
+      "source_id": "US-UT:deposit:8746cadb919f",
+      "authority_type": "statute",
+      "citation": "Utah Code § 57-17-3(1)–(2)",
+      "text": "(1) Upon termination of a tenancy, the owner or the owner's agent may apply property or money held as a deposit toward the payment of rent, damages to the premises beyond reasonable wear and tear, other costs and fees provided for in the contract, or cleaning of the unit. (2) No later than 30 days after the day on which a renter vacates and returns possession of a rental property to the owner or the owner's agent, the owner or the owner's agent shall mail or deliver to the renter at the renter's last known address or electronically to the renter by a means provided to the owner or owner's agent by the renter: (a) the balance of any deposit; (b) the balance of any prepaid rent; and (c) if the owner or the owner's agent made any deductions from the deposit or prepaid rent, a written notice that itemizes and explains the reason for each deduction.",
+      "text_sha256": "82abe071a72b70cfd4f8ed921ba0d59a9159023841bbdac5bf6222eb4fc58ff7",
+      "publisher_sha256": "8c38da28e243fc5cb2ac38d016dd93d5bea159a6cf8af689e5117bf3df36de34",
+      "retrieved_at": "2026-11-20T17:27:34.359207+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "75e55368c4d2114f6797fae1878d81": {
+      "source_id": "US-UT:wageLaw:701488bdf29f",
+      "authority_type": "statute",
+      "citation": "Utah Code § 34-28-3(1)",
+      "text": "(1) (a) An employer shall pay the wages earned by an employee at regular intervals, but in periods no longer than semimonthly on days to be designated in advance by the employer as the regular payday. (b) An employer shall pay for services rendered during a pay period within 10 days after the close of that pay period. (c) If a payday falls on a Saturday, Sunday, or legal holiday, an employer shall pay wages earned during the pay period on the day preceding the Saturday, Sunday, or legal holiday. (d) If an employer hires an employee on a yearly salary basis, the employer may pay the employee on a monthly basis by paying on or before the seventh of the month following the month for which services are rendered. (e) Wages shall be paid in full to an employee: (i) in lawful money of the United States; (ii) by a check or draft on a depository institution, as defined in Section 7-1-103, that is convertible into cash on demand at full face value; or (iii) by electronic transfer to the depository institution designated by the employee.",
+      "text_sha256": "0d3206ba91c1dbcfbe98ae70d1def4828b81b11c5822767f67abff3d5f0d33e9",
+      "publisher_sha256": "923b2f5dd5bd0e8df50d37aae90561b8405504ac2a6be9008727a4be14bffa18",
+      "retrieved_at": "2026-11-20T17:37:34.516604+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Utah Code statutory version effective May 13, 2014",
+      "effective_from": "2014-05-13"
+    },
+    "39c9d06dc25f72716b60be563834c8": {
+      "source_id": "US-UT:negligence_elements:dbb2f11d7c7f",
+      "authority_type": "opinion",
+      "citation": "McCollin v. J.D.F. Properties, LLC, 2014 UT App 75, ¶ 10",
+      "text": "If McCollin believed his claim sounded in negligence, he needed to argue that his ‚damage to real property‛ claim was actually a negligence cause of action, articulate the elements of that cause of action, and demonstrate with record evidence that genuine issues of material fact existed on each of those elements. However, McCollin’s opposition did not even reference the elements of a negligence cause of action—duty, breach, causation, and damages. See Williams v. Melby, 699 P.2d 723, 726 (Utah 1985).",
+      "text_sha256": "d282c755f21e290da07880b82f186529958e7e4b6fdf8bacb0b05a90e37a4362",
+      "publisher_sha256": "02d1dfa0e0e8d6e002849bea425ef760ba5b6459dcb8b1ee972b792e2311b085",
+      "retrieved_at": "2026-11-21T04:26:58.415194+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2014-04-10",
+      "court": "Utah Court of Appeals",
+      "decision_date": "2014-04-10",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment on a property damage claim the plaintiff contended sounded in negligence.",
+      "publisher_member": "Court-issued opinion PDF pp. 4–5, paragraph 10"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_50",
+    "passage_selector": "6e1134ec6760a157c37ef7bc0e8f05",
+    "source_id": "US-UT:fault:106d58d09095",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

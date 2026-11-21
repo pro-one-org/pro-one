@@ -1,0 +1,93 @@
+{
+  "jurisdiction": "US-MP",
+  "version": "1",
+  "sources": {
+    "US-MP:statutes:5edc13b63486": {
+      "category": "statutes",
+      "title": "Commonwealth Code",
+      "url": "http://cnmilaw.org/frames/CommonwealthCode.html",
+      "directory": "codes",
+      "locator": "Northern Mariana Islands"
+    },
+    "US-MP:constitution:6c3ae1f6c34a": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://cnmilaw.org/cons.php#gsc.tab=0",
+      "directory": "codes",
+      "locator": "Northern Mariana Islands"
+    },
+    "US-MP:legislature:159b715848ef": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.cnmileg.gov.mp/",
+      "directory": "codes",
+      "locator": "Northern Mariana Islands"
+    },
+    "US-MP:labor_agency:423d9b2de1f1": {
+      "category": "labor_agency",
+      "title": "www.marianaslabor.net",
+      "url": "https://www.marianaslabor.net",
+      "directory": "labor",
+      "locator": "Commonwealth of the Northern Mariana Islands"
+    },
+    "US-MP:business_registration:de870455b287": {
+      "category": "business_registration",
+      "title": "CNMI Department of Commerce",
+      "url": "https://commerce.gov.mp/",
+      "directory": "business",
+      "locator": "Northern Mariana Islands"
+    },
+    "US-MP:consumer_agency:b3feb20fe283": {
+      "category": "consumer_agency",
+      "title": "Northern Mariana Islands (MP)",
+      "url": "https://www.cnmioag.org/divisions/consumer-protection/",
+      "directory": "consumer",
+      "locator": "Northern Mariana Islands (MP)"
+    },
+    "US-MP:judiciary:a265ec1f6166": {
+      "category": "judiciary",
+      "title": "Commonwealth Judiciary",
+      "url": "https://www.nmijudiciary.gov/",
+      "directory": null,
+      "locator": "Publisher resource"
+    },
+    "US-MP:small_claims:655e91ce6d77": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.nmijudiciary.gov/court-forms",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.nmijudiciary.gov/court-forms",
+        "retrieved_at": "2026-11-17T19:42:54.139370+00:00",
+        "http_status": "200",
+        "sha256": "60ec93a844b390e37db660827c7b3e189896c72a54c87b998fddb76fb0bae3b3",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MP:statutes:9b3205da2d47": {
+      "category": "statutes",
+      "title": "Commonwealth Law Revision Commission",
+      "url": "https://cnmilaw.org/",
+      "directory": null,
+      "locator": "Publisher resource"
+    },
+    "US-MP:court_rules:566d333d6583": {
+      "category": "court_rules",
+      "title": "Appellate Rules",
+      "url": "https://www.nmijudiciary.gov/appellate-rules",
+      "directory": null,
+      "locator": "Publisher resource"
+    }
+  },
+  "court_directory": [],
+  "citation_leads": [
+    {
+      "category": "eviction",
+      "citation": "2 N. Mar. I. Code § 40204. Causes for Removal of Tenants.",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ]
+}

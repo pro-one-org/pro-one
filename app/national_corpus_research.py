@@ -6,6 +6,7 @@ import sqlite3
 
 from app.authority import AuthorityDocument, AuthorityUnavailable, evidence_passage, normalized_source, proposed_review
 from app.courtlistener_authority import extract_passages
+from app.jurisdictions import SUBNATIONAL_NAMES, registry
 from app.national_corpus import CorpusError, CorpusQuery, fingerprint
 from app.national_corpus_providers import PROVIDERS
 from app.national_corpus_store import SQLiteNormalizedCorpus
@@ -14,7 +15,7 @@ from app.research_planning import LegalResearchPlanner
 from app.retrieval import tokens
 
 
-STATE_CODES = {"Virginia": "VA", "Maryland": "MD", "Florida": "FL", "New York": "NY", "California": "CA"}
+STATE_CODES = {name: code for code, name in SUBNATIONAL_NAMES.items()}
 SOURCE_TYPES = {"statute": "statute", "regulation": "regulation", "opinion": "court_opinion",
                 "court_rule": "court_rule", "constitution": "constitution", "register_document": "other"}
 FAMILY_PRIORITY = ("statute", "regulation", "opinion", "constitution", "court_rule", "register_document")
@@ -32,12 +33,15 @@ class NormalizedAuthorityProvider:
         self.documents = {}
 
     def search(self, matter, limit=6):
+        self.documents.clear()
         if matter.country != "US":
             return []
         if matter.sovereign == "federal" and matter.state is None:
             scope = "US"
-        elif matter.sovereign == "state" and matter.state in STATE_CODES:
+        elif matter.sovereign in {"state", "district", "territory"} and matter.state in STATE_CODES:
             scope = "US-" + STATE_CODES[matter.state]
+            if registry()[scope].kind != matter.sovereign:
+                return []
         else:
             return []
         try:
@@ -45,7 +49,6 @@ class NormalizedAuthorityProvider:
             as_of = date.fromisoformat(matter.authority_as_of) if matter.authority_as_of else None
         except ValueError:
             return []
-        self.documents.clear()
         try:
             with SQLiteNormalizedCorpus(self.path, read_only=True) as store:
                 self._collect(store, matter, scope, plan, as_of, min(6, limit))

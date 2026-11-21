@@ -1,0 +1,721 @@
+{
+  "jurisdiction": "US-RI",
+  "version": "1",
+  "sources": {
+    "US-RI:statutes:74aac0710330": {
+      "category": "statutes",
+      "title": "General Laws of Rhode Island",
+      "url": "http://www.rilin.state.ri.us/Statutes/Statutes.html",
+      "directory": "doj-RI",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-RI:constitution:6b9f31290e32": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.rilin.state.ri.us/RiConstitution/Pages/constintro.aspx",
+      "directory": "codes",
+      "locator": "Rhode Island"
+    },
+    "US-RI:legislature:b89425a37322": {
+      "category": "legislature",
+      "title": "General Assembly",
+      "url": "http://www.rilin.state.ri.us/Pages/Default.aspx",
+      "directory": "codes",
+      "locator": "Rhode Island"
+    },
+    "US-RI:labor_agency:074d4aeb960e": {
+      "category": "labor_agency",
+      "title": "www.dlt.ri.gov",
+      "url": "http://www.dlt.ri.gov",
+      "directory": "labor",
+      "locator": "Rhode Island"
+    },
+    "US-RI:commercial_code:ead5090c48aa": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://webserver.rilin.state.ri.us/Statutes/TITLE6A/INDEX.HTM",
+      "directory": "ucc",
+      "locator": "Rhode Island"
+    },
+    "US-RI:civil_rules:fec08a8374b0": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "http://webserver.rilin.state.ri.us/Statutes/TITLE9/INDEX.HTM",
+      "directory": "procedure",
+      "locator": "Rhode Island"
+    },
+    "US-RI:consumer_agency:87f73aba2e9a": {
+      "category": "consumer_agency",
+      "title": "Rhode Island (RI)",
+      "url": "https://riag.ri.gov/consumerprotection",
+      "directory": "consumer",
+      "locator": "Rhode Island (RI)"
+    },
+    "US-RI:judiciary:8d05d2dced0e": {
+      "category": "judiciary",
+      "title": "Judiciary",
+      "url": "https://www.courts.ri.gov/Pages/default.aspx",
+      "directory": "doj-RI",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-RI:judiciary:6f26af96b203": {
+      "category": "judiciary",
+      "title": "Court Records and Hearings Search (Judicial Public Portal)",
+      "url": "https://publicportal.courts.ri.gov/PublicPortal",
+      "directory": "doj-RI",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-RI:court_directory:cb7ae8baa8f0": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.courts.ri.gov/Courts/SupremeCourt/Pages/default.aspx",
+      "directory": "doj-RI",
+      "locator": "Supreme Court"
+    },
+    "US-RI:court_directory:25334aff826d": {
+      "category": "court_directory",
+      "title": "Superior Court",
+      "url": "https://www.courts.ri.gov/Courts/SuperiorCourt/Pages/default.aspx",
+      "directory": "doj-RI",
+      "locator": "Superior Court"
+    },
+    "US-RI:court_directory:92519945ad8c": {
+      "category": "court_directory",
+      "title": "District Court",
+      "url": "https://www.courts.ri.gov/Courts/districtcourt/Pages/default.aspx",
+      "directory": "doj-RI",
+      "locator": "District Court"
+    },
+    "US-RI:court_directory:19d6fc34f246": {
+      "category": "court_directory",
+      "title": "Workers' Compensation Court",
+      "url": "https://www.courts.ri.gov/Courts/workerscompensationcourt/Pages/default.aspx",
+      "directory": "doj-RI",
+      "locator": "Workers' Compensation Court"
+    },
+    "US-RI:court_directory:7a100c9a10c6": {
+      "category": "court_directory",
+      "title": "Family Court",
+      "url": "https://www.courts.ri.gov/Courts/FamilyCourt/Pages/default.aspx",
+      "directory": "doj-RI",
+      "locator": "Family Court"
+    },
+    "US-RI:court_directory:6c9e0c050a47": {
+      "category": "court_directory",
+      "title": "Rhode Island Traffic Tribunal",
+      "url": "https://www.courts.ri.gov/Courts/traffictribunal/Pages/default.aspx",
+      "directory": "doj-RI",
+      "locator": "Rhode Island Traffic Tribunal"
+    },
+    "US-RI:forms:8d443bc9a8db": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://www.courts.ri.gov/Pages/forms.aspx",
+      "directory": "doj-RI",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-RI:forms:d73fe238846c": {
+      "category": "forms",
+      "title": "Probate Forms",
+      "url": "https://www.sos.ri.gov/divisions/business-services/probate-forms/",
+      "directory": "doj-RI",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-RI:constitution:08ef26485a96": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://webserver.rilin.state.ri.us/RiConstitution/",
+      "directory": "doj-RI",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-RI:regulations:2c08b574b609": {
+      "category": "regulations",
+      "title": "Rules and Regulations",
+      "url": "http://sos.ri.gov/divisions/open-government/state/rules-and-regulations",
+      "directory": "doj-RI",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-RI:pi_limitations:bc91e3e49fa8": {
+      "category": "pi_limitations",
+      "title": "R.I. Gen. Laws § 9-1-14",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE9/9-1/9-1-14.htm",
+      "directory": null,
+      "locator": "R.I. Gen. Laws § 9-1-14",
+      "observation": {
+        "requested_url": "https://webserver.rilegislature.gov/Statutes/TITLE9/9-1/9-1-14.htm",
+        "retrieved_at": "2026-11-17T19:34:00.989909+00:00",
+        "http_status": "200",
+        "sha256": "74027ad3173d8356154cc4dbf19d892f6bfcc9ceba2bfbbc4767d6dcb677d62b",
+        "health": "healthy"
+      }
+    },
+    "US-RI:written_contract_limitations:8bc1dc64f9db": {
+      "category": "written_contract_limitations",
+      "title": "R.I. Gen. Laws § 9-1-13",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE9/9-1/9-1-13.htm",
+      "directory": null,
+      "locator": "R.I. Gen. Laws § 9-1-13",
+      "observation": {
+        "requested_url": "https://webserver.rilegislature.gov/Statutes/TITLE9/9-1/9-1-13.htm",
+        "retrieved_at": "2026-11-17T19:34:01.004205+00:00",
+        "http_status": "200",
+        "sha256": "db5dd5e49359d908696402dacc479fe10c44d742bdb4f890197df8838deccdfb",
+        "health": "healthy"
+      }
+    },
+    "US-RI:oral_contract_limitations:8bc1dc64f9db": {
+      "category": "oral_contract_limitations",
+      "title": "R.I. Gen. Laws § 9-1-13(a)",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE9/9-1/9-1-13.htm",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://webserver.rilegislature.gov/Statutes/TITLE9/9-1/9-1-13.htm",
+        "retrieved_at": "2026-11-17T19:34:01.004205+00:00",
+        "http_status": "200",
+        "sha256": "db5dd5e49359d908696402dacc479fe10c44d742bdb4f890197df8838deccdfb",
+        "health": "manual_review_required"
+      }
+    },
+    "US-RI:small_claims:2da9e67285a8": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.courts.ri.gov/Forms/Small%20Claims%20Lawsuit%20-%20Complaint%20%28Self-represented%20Litigant%20-%20With%20Instructions%29.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.courts.ri.gov/Forms/Small%20Claims%20Lawsuit%20-%20Complaint%20%28Self-represented%20Litigant%20-%20With%20Instructions%29.pdf",
+        "retrieved_at": "2026-11-17T19:42:38.696221+00:00",
+        "http_status": "200",
+        "sha256": "e1000a04c56d2a5c6e4df1472cb7892743d78bac685811fbaeb4276dc1a6b36d",
+        "health": "manual_review_required"
+      }
+    },
+    "US-RI:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 29"
+    },
+    "US-RI:deposit:744a4e7c9150": {
+      "category": "deposit",
+      "title": "Residential tenancy publication",
+      "url": "https://www.courts.ri.gov/Courts/districtcourt/Documents/Handbook.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.courts.ri.gov/Courts/districtcourt/Documents/Handbook.pdf",
+        "retrieved_at": "2026-11-17T19:42:40.177945+00:00",
+        "http_status": "200",
+        "sha256": "7256d09ef225ac69eea5548114aaf1eeb872ea77cbb0dc8d63a78f824ec589e2",
+        "health": "manual_review_required"
+      }
+    },
+    "US-RI:commencement:4fa7283c0e85": {
+      "category": "commencement",
+      "title": "R.I. Super. R. Civ. P. 3",
+      "url": "https://www.courts.ri.gov/Courts/superiorcourt/Documents/SuperiorCourtRulesOfCivilProcedure.pdf",
+      "directory": null,
+      "locator": "R.I. Super. R. Civ. P. 3",
+      "language": "en",
+      "publisher_role": "official_rule_publication",
+      "observation": {
+        "health": "retained_snapshot",
+        "retrieved_at": "2026-11-17T20:14:20.957417+00:00",
+        "sha256": "01dea708aa73f7816bd816f6ae5d29701b38e5b0571d8c2e1ea01e17acc700f6"
+      }
+    },
+    "US-RI:commencement:ab765588d91e": {
+      "category": "commencement",
+      "title": "R.I. Dist. Ct. R. Civ. P. 3",
+      "url": "https://www.courts.ri.gov/Courts/districtcourt/Documents/District_Civil_Rules.pdf",
+      "directory": null,
+      "locator": "R.I. Dist. Ct. R. Civ. P. 3",
+      "language": "en",
+      "publisher_role": "official_rule_publication",
+      "observation": {
+        "health": "retained_snapshot",
+        "retrieved_at": "2026-11-17T20:14:21.035638+00:00",
+        "sha256": "916161d04e3905bbcb735933c78a5531d98177a5149d95cb3be9d5c564cd8e55"
+      }
+    },
+    "US-RI:fault:15ce5d5d01d4": {
+      "category": "fault",
+      "title": "R.I. Gen. Laws § 9-20-4",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE9/9-20/9-20-4.htm",
+      "directory": null,
+      "locator": "R.I. Gen. Laws § 9-20-4",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:39.805248+00:00",
+        "sha256": "66e7bd2443f3d817866c1dc57de8fe1c952fb6d8f8d74b50d19830e17dd6e690"
+      }
+    },
+    "US-RI:consumerLaw:5a0a245d300c": {
+      "title": "R.I. Gen. Laws § 6-13.1-1 et seq.",
+      "category": "consumerLaw",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE6/6-13.1/6-13.1-1.htm",
+      "directory": "consumer_statutes_index",
+      "locator": "R.I. Gen. Laws § 6-13.1-1 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-RI:contract_formation:4a9d82285f6e": {
+      "category": "contract_formation",
+      "title": "R.I. Gen. Laws § 6A-2-204",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE6A/6A-2/6A-2-204.htm",
+      "locator": "R.I. Gen. Laws § 6A-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:38.911127+00:00",
+        "sha256": "d1b056f3083a4b4b7dce6efba389a8316714f9e8a10bc1fb734dc1190af8f329"
+      }
+    },
+    "US-RI:response:35453209dcf8": {
+      "category": "response",
+      "title": "R.I. Super. R. Civ. P. 12(a)(1)",
+      "url": "https://www.courts.ri.gov/Courts/superiorcourt/Documents/SuperiorCourtRulesOfCivilProcedure.pdf",
+      "locator": "R.I. Super. R. Civ. P. 12(a)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:14:20.957417+00:00",
+        "sha256": "01dea708aa73f7816bd816f6ae5d29701b38e5b0571d8c2e1ea01e17acc700f6"
+      }
+    },
+    "US-RI:negligence_elements:0abfe6ccae71": {
+      "category": "negligence_elements",
+      "title": "Berard v. HCP, Inc., No. 2012-164-Appeal (R.I. May 15, 2013)",
+      "url": "https://www.courts.ri.gov/Opinions/12-164.pdf",
+      "locator": "Berard v. HCP, Inc., No. 2012-164-Appeal (R.I. May 15, 2013)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T13:54:49.760549+00:00",
+        "sha256": "238c02cdf4b36b388a94f49f46e74865508770fe06ec523177f719a3073d8802"
+      }
+    },
+    "US-RI:wageLaw:c01cd25a6010": {
+      "category": "wageLaw",
+      "title": "R.I. Gen. Laws § 28-14-4",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE28/28-14/28-14-4.htm",
+      "locator": "R.I. Gen. Laws § 28-14-4",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:11:00.982302+00:00",
+        "sha256": "af61c1b904e75c8ea149e0d5003a54be89556a90400c7ffe27c58e18381e9b2b"
+      }
+    },
+    "US-RI:consumerLaw:ede3f29feba0": {
+      "category": "consumerLaw",
+      "title": "R.I. Gen. Laws § 6-13.1-2",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE6/6-13.1/6-13.1-2.htm",
+      "locator": "R.I. Gen. Laws § 6-13.1-2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:45.321855+00:00",
+        "sha256": "d4ac04745a1079b62d2be0b71ad147b6f8a7d7c8fd4f28aa977c5b4dfc855f96"
+      }
+    },
+    "US-RI:service:7e92b8c0ad67": {
+      "category": "service",
+      "title": "R.I. Super. R. Civ. P. 4(e)(intro.), (e)(1)",
+      "url": "https://www.courts.ri.gov/Courts/superiorcourt/Documents/SuperiorCourtRulesOfCivilProcedure.pdf",
+      "locator": "R.I. Super. R. Civ. P. 4(e)(intro.), (e)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.714345+00:00",
+        "sha256": "01dea708aa73f7816bd816f6ae5d29701b38e5b0571d8c2e1ea01e17acc700f6"
+      }
+    },
+    "US-RI:deposit:bdcfb8ea0677": {
+      "category": "deposit",
+      "title": "R.I. Gen. Laws § 34-18-19(a)–(c)",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE34/34-18/34-18-19.htm",
+      "locator": "R.I. Gen. Laws § 34-18-19(a)–(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:54:37.294605+00:00",
+        "sha256": "1d6fc4042865d649f3d5fe621e3067a1264104e51a7d9672af991d58b0b3a8de"
+      }
+    },
+    "US-RI:debtLaw:07f44869d518": {
+      "category": "debtLaw",
+      "title": "R.I. Gen. Laws § 19-14.9-8 (unfair debt collection practices)",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE19/19-14.9/19-14.9-8.HTM",
+      "locator": "R.I. Gen. Laws § 19-14.9-8 (unfair debt collection practices)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:29:53.641813+00:00",
+        "sha256": "cfc02f0d531e68bd49c319e68d1160ecdbf8ba7a489d2a20f211d5cc3108269a"
+      }
+    },
+    "US-RI:debtLaw:5eae442d65e3": {
+      "category": "debtLaw",
+      "title": "R.I. Gen. Laws § 19-14.9-5(1)–(3) (debt collection communications)",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE19/19-14.9/19-14.9-5.HTM",
+      "locator": "R.I. Gen. Laws § 19-14.9-5(1)–(3) (debt collection communications)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:29:53.760781+00:00",
+        "sha256": "e3836e7db9711d8c0964b41417c0e488194b49708d6e3d6b80a9b02d804c2884"
+      }
+    },
+    "US-RI:small_claims:1487f09a97e1": {
+      "category": "small_claims",
+      "title": "R.I. Gen. Laws § 10-16-1 (covered small and consumer claims)",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE10/10-16/10-16-1.htm",
+      "locator": "R.I. Gen. Laws § 10-16-1 (covered small and consumer claims)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:32:56.255418+00:00",
+        "sha256": "1d1fc9f0cb6f4e9f6a53a7470665af485eec9458e48bf87466993254787c9aa3"
+      }
+    },
+    "US-RI:small_claims:8a25720c2a58": {
+      "category": "small_claims",
+      "title": "R.I. Gen. Laws § 10-16-3 (small and consumer claims venue and rules)",
+      "url": "https://webserver.rilegislature.gov/Statutes/TITLE10/10-16/10-16-3.htm",
+      "locator": "R.I. Gen. Laws § 10-16-3 (small and consumer claims venue and rules)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:32:56.299457+00:00",
+        "sha256": "32dcbca48c020e4e265696a568939d089fc7fa1cf78369715ec967b5ab17ea0d"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-RI:court:f0b5db8d3bff",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-RI:court_directory:cb7ae8baa8f0"
+    },
+    {
+      "id": "US-RI:court:90900e54b56d",
+      "name": "Superior Court",
+      "level": "trial_directory",
+      "source_id": "US-RI:court_directory:25334aff826d"
+    },
+    {
+      "id": "US-RI:court:b65a734cf243",
+      "name": "District Court",
+      "level": "trial_directory",
+      "source_id": "US-RI:court_directory:92519945ad8c"
+    },
+    {
+      "id": "US-RI:court:a0010f6f0b12",
+      "name": "Workers' Compensation Court",
+      "level": "trial_directory",
+      "source_id": "US-RI:court_directory:19d6fc34f246"
+    },
+    {
+      "id": "US-RI:court:fb853b49f5e9",
+      "name": "Family Court",
+      "level": "trial_directory",
+      "source_id": "US-RI:court_directory:7a100c9a10c6"
+    },
+    {
+      "id": "US-RI:court:321fa150774d",
+      "name": "Rhode Island Traffic Tribunal",
+      "level": "trial_directory",
+      "source_id": "US-RI:court_directory:6c9e0c050a47"
+    },
+    {
+      "id": "US-RI:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-RI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-RI:court:b11065887313",
+      "name": "Workers’ Compensation",
+      "level": "limited_trial",
+      "source_id": "US-RI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-RI:court:3c9c83e81fef",
+      "name": "District",
+      "level": "limited_trial",
+      "source_id": "US-RI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-RI:court:6946571becdd",
+      "name": "Family",
+      "level": "limited_trial",
+      "source_id": "US-RI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-RI:court:4f54b582f9f0",
+      "name": "Probate",
+      "level": "limited_trial",
+      "source_id": "US-RI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-RI:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-RI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-RI:court:92974132b0b3",
+      "name": "Traffic Tribunal",
+      "level": "limited_trial",
+      "source_id": "US-RI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "R.I. Gen. Laws § 9-1-14(b)",
+      "source_id": "US-RI:pi_limitations:bc91e3e49fa8",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "R.I. Gen. Laws § 9-1-13(a)",
+      "source_id": "US-RI:written_contract_limitations:8bc1dc64f9db",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "R.I. Gen. Laws § 9-1-13(a)",
+      "source_id": "US-RI:oral_contract_limitations:8bc1dc64f9db",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "R.I. Gen. Laws § 34-18-7. Application; R.I. Gen. Laws § 34-18-8. Exclusions from application of chapter; R.I. Gen. Laws § 34-18-9. Jurisdiction",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "R.I. Gen. Laws § 6-13.1-1 et seq.",
+      "source_id": "US-RI:consumerLaw:5a0a245d300c",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "9866df35fa31bee0fa331f25ddfa10": {
+      "citation": "R.I. Gen. Laws § 9-1-14",
+      "source_id": "US-RI:pi_limitations:bc91e3e49fa8",
+      "authority_type": "statute",
+      "text": "(b) Actions for injuries to the person shall be commenced and sued within three (3) years next after the cause of action shall accrue, and not after, except as provided for otherwise in subsection (c) herein. Notwithstanding anything herein, any claim based on sexual abuse or exploitation of a child shall be governed by § 9-1-51.",
+      "text_sha256": "2b51313a062d2c40e4ade6c801b4ff482acacf7157a0b818c0a1502ad3c68009",
+      "publisher_sha256": "74027ad3173d8356154cc4dbf19d892f6bfcc9ceba2bfbbc4767d6dcb677d62b",
+      "retrieved_at": "2026-11-17T19:34:00.989909+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "5e0f46f4a750614eb58abbd15d18ae": {
+      "citation": "R.I. Gen. Laws § 9-1-13",
+      "source_id": "US-RI:written_contract_limitations:8bc1dc64f9db",
+      "authority_type": "statute",
+      "text": "(a) Except as otherwise specially provided, all civil actions shall be commenced within ten (10) years next after the cause of action shall accrue, and not after.",
+      "text_sha256": "c13f19a982d5561fa07a4929592c157842fbd6ee1334ffc689cb960312c8d3dc",
+      "publisher_sha256": "db5dd5e49359d908696402dacc479fe10c44d742bdb4f890197df8838deccdfb",
+      "retrieved_at": "2026-11-17T19:34:01.004205+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "13abb3e8f5d640cba376316f0b2c76": {
+      "source_id": "US-RI:commencement:4fa7283c0e85",
+      "citation": "R.I. Super. R. Civ. P. 3",
+      "authority_type": "court_rule",
+      "language": "en",
+      "text": "3. Commencement of Action. — A civil action is commenced by the filing of a complaint and all other required documents together with the fees prescribed by law. Incarcerated individuals, attorneys who are granted a waiver pursuant to Art. X, Rule 3(c) of the Rhode Island Supreme Court Rules Governing Electronic Filing, and self- represented litigants who do not elect to electronically file pursuant to Art. X, Rule 3(b) may deposit the complaint and all other required documents with said fee in the mail addressed to the clerk or file the documents at the clerk's office.",
+      "text_sha256": "b45a3d73478c75756051fc6bcf262801638787ad919f2a303035b877f664fc46",
+      "publisher_sha256": "01dea708aa73f7816bd816f6ae5d29701b38e5b0571d8c2e1ea01e17acc700f6",
+      "retrieved_at": "2026-11-17T20:14:20.957417+00:00",
+      "currentness": "unresolved",
+      "court": "Rhode Island Superior Court"
+    },
+    "d7a5cfc8ee00362055e447bf5990fc": {
+      "source_id": "US-RI:commencement:ab765588d91e",
+      "citation": "R.I. Dist. Ct. R. Civ. P. 3",
+      "authority_type": "court_rule",
+      "language": "en",
+      "text": "3. Commencement of Action. — A civil action is commenced by the filing of a complaint and all other required documents together with the fees prescribed by law. Incarcerated individuals, attorneys who are granted a waiver pursuant to Art. X, Rule 3(c) of the Rhode Island Supreme Court Rules Governing Electronic Filing, and self- represented litigants who do not elect to electronically file pursuant to Art. X, Rule 3(b) may deposit the complaint and all other required documents with said fee in the mail addressed to the clerk or file the documents at the clerk's office.",
+      "text_sha256": "b45a3d73478c75756051fc6bcf262801638787ad919f2a303035b877f664fc46",
+      "publisher_sha256": "916161d04e3905bbcb735933c78a5531d98177a5149d95cb3be9d5c564cd8e55",
+      "retrieved_at": "2026-11-17T20:14:21.035638+00:00",
+      "currentness": "unresolved",
+      "court": "Rhode Island District Court"
+    },
+    "3a68bb159de716fad21952eb8e11e5": {
+      "citation": "R.I. Gen. Laws § 9-20-4",
+      "source_id": "US-RI:fault:15ce5d5d01d4",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "In all actions hereafter brought for personal injuries, or where personal injuries have resulted in death, or for injury to property, the fact that the person injured, or the owner of the property or person having control over the property, may not have been in the exercise of due care or the fact that the danger or defect was open and obvious shall not bar a recovery, but damages shall be diminished by the finder of fact in proportion to the amount of negligence attributable to the person injured, or the owner of the property or the person having control over the property.",
+      "text_sha256": "90b1c83328f950708c4f2ec12db39cb4acc54c3faf95687bcd59d71f1e295f6f",
+      "publisher_sha256": "66e7bd2443f3d817866c1dc57de8fe1c952fb6d8f8d74b50d19830e17dd6e690",
+      "retrieved_at": "2026-11-17T20:50:39.805248+00:00",
+      "currentness": "unresolved"
+    },
+    "121eafb248163694056a9f675360ba": {
+      "source_id": "US-RI:contract_formation:4a9d82285f6e",
+      "authority_type": "statute",
+      "citation": "R.I. Gen. Laws § 6A-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "d1b056f3083a4b4b7dce6efba389a8316714f9e8a10bc1fb734dc1190af8f329",
+      "retrieved_at": "2026-11-18T15:14:38.911127+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "50c365bc3e0849d510aeb0b08a987f": {
+      "source_id": "US-RI:response:35453209dcf8",
+      "authority_type": "court_rule",
+      "citation": "R.I. Super. R. Civ. P. 12(a)(1)",
+      "text": "(a) When Presented. (1) A defendant shall serve an answer: (A) Within twenty (20) days after the service of the summons, complaint, Language Assistance Notice, and all other required documents upon the defendant, unless the court directs otherwise when service of process is made pursuant to an order of court. Where service upon a defendant is made by publication of an order of notice, a defendant shall serve an answer within twenty (20) days after the last publication of said order of notice, or (B) If service of the summons has been timely waived on request under Rule 4(d), within sixty (60) days after the date when the request for waiver was sent, or within ninety (90) days after that date if the defendant was addressed outside the United States.",
+      "text_sha256": "afd4ba68701c6e4e198cf867700d11bd49bbcc50b0a31713edbaa26324b49b29",
+      "publisher_sha256": "01dea708aa73f7816bd816f6ae5d29701b38e5b0571d8c2e1ea01e17acc700f6",
+      "retrieved_at": "2026-11-17T20:14:20.957417+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Rhode Island Superior Court"
+    },
+    "5d42bbf3ffa7a588cd767e499198ea": {
+      "source_id": "US-RI:negligence_elements:0abfe6ccae71",
+      "authority_type": "opinion",
+      "citation": "Berard v. HCP, Inc., No. 2012-164-Appeal (R.I. May 15, 2013)",
+      "text": "In setting forth a negligence claim, “ a plaintiff must establish a legally cognizable duty owed by a defendant to a plaintiff, a breach of that duty, proximate causation between the conduct and the resulting injury, and the actual loss or damage. ” Holley, 968 A.2d at 274 (quoting Willis v. Omar , 954 A.2d 126, 129 (R.I. 2008)).",
+      "text_sha256": "f3b2b6931b0595918e9195cfd5d0fab857240c7b0d40340c39fffe44e0192a3b",
+      "publisher_sha256": "238c02cdf4b36b388a94f49f46e74865508770fe06ec523177f719a3073d8802",
+      "retrieved_at": "2026-11-19T13:54:49.760549+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2013-05-15",
+      "court": "Supreme Court of Rhode Island",
+      "decision_date": "2013-05-15",
+      "opinion_role": "majority",
+      "procedural_posture": "Negligence appeal from Kent County Superior Court."
+    },
+    "e6fd3fe9a95257f7244de9fe3249c5": {
+      "source_id": "US-RI:wageLaw:c01cd25a6010",
+      "authority_type": "statute",
+      "citation": "R.I. Gen. Laws § 28-14-4",
+      "text": "(a) Whenever an employee separates or is separated from the payroll of an employer, the unpaid wages or compensation of the employee shall become due on the next regular payday and payable at the usual place of payment. (b) Whenever an employee separates or is separated from the payroll of an employer after completing at least one year of service, any vacation pay accrued or awarded by collective bargaining, written or verbal company policy, or any other written or verbal agreement between the employer and employee shall become wages and payable in full or on a prorated basis with all other due wages on the next regular payday for the employee. (c) Whenever an employer separates an employee from the payroll as a result of the employer liquidating the business, merging the business, disposing the business, or removing the business out of state, all wages become immediately due and payable within twenty-four (24) hours of the time of separation at the usual place of payment. Additionally, if the employee has completed at least one year of service with the employer, holiday pay, vacation pay in full or on a prorated basis, and insurance benefits due the employee under a collective bargaining agreement, company policy, or other agreement between the employer and employee shall be considered as unpaid wages due and payable within twenty-four (24) hours of the time of separation at the usual place of payment.",
+      "text_sha256": "58a56a6804efb6c79334e7ff9c11274e72517559625bae192e44f4de093ce90e",
+      "publisher_sha256": "af61c1b904e75c8ea149e0d5003a54be89556a90400c7ffe27c58e18381e9b2b",
+      "retrieved_at": "2026-11-19T14:11:00.982302+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "96cc600d8ff31a729b5d791509f272": {
+      "source_id": "US-RI:consumerLaw:ede3f29feba0",
+      "authority_type": "statute",
+      "citation": "R.I. Gen. Laws § 6-13.1-2",
+      "text": "Unfair methods of competition and unfair or deceptive acts or practices in the conduct of any trade or commerce are declared unlawful.",
+      "text_sha256": "5a886a7a52fed4ff38d3556edaf237caf5912005521c82f1dbab3f74b9599159",
+      "publisher_sha256": "d4ac04745a1079b62d2be0b71ad147b6f8a7d7c8fd4f28aa977c5b4dfc855f96",
+      "retrieved_at": "2026-11-19T19:26:45.321855+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "41a96d17474046722448247d451ac7": {
+      "source_id": "US-RI:service:7e92b8c0ad67",
+      "authority_type": "court_rule",
+      "citation": "R.I. Super. R. Civ. P. 4(e)(intro.), (e)(1)",
+      "text": "(e) Summons: Personal Service. The summons, complaint, Language Assistance Notice, and all other required documents shall be served together. The plaintiff shall furnish the person making service with such copies as are necessary. Service shall be made as follows: (1) Upon an individual from whom a waiver has not been obtained and filed, other than an incompetent person, by delivering a copy of the summons, complaint, Language Assistance Notice, and all other required documents to the individual personally or by leaving copies thereof at the individual's dwelling house or usual place of abode with some person of suitable age and discretion then residing therein or by delivering a copy of the summons, complaint, Language Assistance Notice, and all other required documents to an agent authorized by appointment or by law to receive service of process, provided that if the agent is one designated by statute to receive service, such further notice as the statute requires shall be given.",
+      "text_sha256": "627371cb8e7f30024ec588c7377bdaee166dc9e056b12f5d07e2e6153ad5ef5f",
+      "publisher_sha256": "01dea708aa73f7816bd816f6ae5d29701b38e5b0571d8c2e1ea01e17acc700f6",
+      "retrieved_at": "2026-11-20T16:01:53.714345+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Rhode Island Superior Court Rules of Civil Procedure, February 2024",
+      "court": "Rhode Island Superior Court"
+    },
+    "63705ae06e3dc0f8ab40f49feff261": {
+      "source_id": "US-RI:deposit:bdcfb8ea0677",
+      "authority_type": "statute",
+      "citation": "R.I. Gen. Laws § 34-18-19(a)–(c)",
+      "text": "(a) A landlord may not demand or receive a security deposit, however denominated, in an amount or value in excess of one month’s periodic rent. (b) Upon termination of the tenancy, the amount of security deposit due to the tenant shall be the entire amount given by the tenant as a security deposit, minus any amount of unpaid accrued rent, the amount due, if any, for reasonable cleaning expenses, the amount due, if any, for reasonable trash disposal expenses and the amount of physical damages to the premises, other than ordinary wear and tear, that the landlord has suffered by reason of the tenant’s noncompliance with § 34-18-24, all as itemized by the landlord in a written notice delivered to the tenant. The landlord shall deliver the notice, together with the amount of the security deposit due to the tenant, within twenty (20) days after the later of either termination of the tenancy, delivery of possession, or the tenant’s providing the landlord with a forwarding address for the purpose of receiving the security deposit. (c) If the landlord fails to comply with subsection (b), the tenant may recover the amount due him or her, together with damages in an amount equal to twice the amount wrongfully withheld, and reasonable attorney fees.",
+      "text_sha256": "dfaa9ff9b390668df54bf66b02fa621651fa7a69a1a92f7fa46f93072289475c",
+      "publisher_sha256": "1d6fc4042865d649f3d5fe621e3067a1264104e51a7d9672af991d58b0b3a8de",
+      "retrieved_at": "2026-11-20T17:54:37.294605+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "948ef24d3301f06c9c42bf33151821": {
+      "source_id": "US-RI:debtLaw:07f44869d518",
+      "authority_type": "statute",
+      "citation": "R.I. Gen. Laws § 19-14.9-8 (unfair debt collection practices)",
+      "text": "A debt collector may not use unfair or unconscionable means to collect or attempt to collect any debt. Such unfair or unconscionable means shall include, but not be limited to: (a) Collecting any amount (including any interest, fee, charge, or expense incidental to the principal obligation) unless such amount is expressly authorized by the agreement creating the debt or permitted by law; (b) Publishing, or causing to be published, for general circulation, the name of a consumer or any lists of consumers, or threatening to do so; (c) Requesting or demanding from a consumer a postdated check, draft, order for withdrawal, or other similar instrument in payment for the debt or any portion thereof, or negotiating such instrument before the due date of the instrument; (d) Depositing, or threatening to deposit, any postdated check or other postdated payment instrument prior to the date on such check or instrument; (e) Causing charges to be made to any person for communications by concealment of the true purpose of the communication. Such charges include, but are not limited to, collect telephone calls and fees. However, this section shall not prohibit a debt collector from communicating with a consumer by way of a consumer’s wireless telephone; (f) Taking, or threatening to take, any nonjudicial action to effect dispossession or disablement of property if: (1) There is no present right to possession of the property claimed as collateral through an enforceable security interest; (2) There is no present intention to take possession of the property; (3) The property is exempt by law from such dispossession or disablement; (g) Communicating with a consumer regarding a debt by post card; (h) Using any language or symbol, other than the debt collector’s address, on any envelope when communicating with a consumer by use of the mails or by telegram, except that a debt collector may use his/her business name if such name does not indicate that he/she is in the debt collection business; (i) Representing that an existing obligation of a consumer may be increased by the addition of attorney’s fees, investigation fees, service fees, or any other fees or charges, if in fact such fees or charges may not legally be added to the existing obligation; (j) Soliciting or obtaining any written statement or acknowledgment in any form containing an affirmation of any obligation by a consumer who has been adjudicated bankrupt, without clearly and conspicuously disclosing the nature and consequences of such affirmation; (k) Reporting to a consumer reporting agency on its transactions or experiences with a consumer in the debt collector’s name. However, a debt collector may, with the express written authorization of the creditor, report to a consumer reporting agency in the creditor’s name.",
+      "text_sha256": "2370d6c03d1bd52a6e038c755da6718ef88a565fa296a5912b58c2b7e1020ec7",
+      "publisher_sha256": "cfc02f0d531e68bd49c319e68d1160ecdbf8ba7a489d2a20f211d5cc3108269a",
+      "retrieved_at": "2026-11-20T18:29:53.641813+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "8811571e69d16076dfd309a1750631": {
+      "source_id": "US-RI:debtLaw:5eae442d65e3",
+      "authority_type": "statute",
+      "citation": "R.I. Gen. Laws § 19-14.9-5(1)–(3) (debt collection communications)",
+      "text": "(1) Without the prior consent of the consumer given directly to the debt collector or the express permission of a court of competent jurisdiction, a debt collector may not communicate with a consumer in connection with the collection of any debt: (a) At any unusual time or place or a time or place known or which should be known to be inconvenient to the consumer. In the absence of knowledge of circumstances to the contrary, a debt collector shall assume that the convenient time for communicating with a consumer is after 8 o’clock A.M. and before 9 o’clock P.M. local time at the consumer’s location; (b) If the debt collector knows the consumer is represented by an attorney with respect to such debt and has knowledge of, or can readily ascertain, such attorney’s name and address, unless the attorney fails to respond within a reasonable period of time to a communication from the debt collector or unless the attorney consents to direct communication with the consumer; or (c) At the consumer’s place of employment if the debt collector knows or has reason to know that the consumer’s employer prohibits the consumer from receiving such communication. (2) Except as provided in § 19-14.9-4, without the prior consent of the consumer given directly to the debt collector, or the express permission of a court of competent jurisdiction, or as reasonably necessary to effectuate a postjudgment judicial remedy, a debt collector may not communicate, in connection with the collection of any debt, with any person other than the consumer, his/her attorney, a consumer reporting agency if otherwise permitted by law, the creditor, the attorney of the creditor, or the attorney of the debt collector. (3) If a consumer notifies a debt collector in writing that the consumer refuses to pay a debt or that the consumer wishes the debt collector to cease further communication with the consumer, the debt collector shall not communicate further with the consumer with respect to such debt, except: (a) To advise the consumer that the debt collector’s further efforts are being terminated; (b) To notify the consumer that the debt collector or creditor may invoke specified remedies that are ordinarily invoked by such debt collector or creditor; or (c) Where applicable, to notify the consumer that the debt collector or creditor intends to invoke a specified remedy. (4) If such notice from the consumer pursuant to subsection (3) of this section is made by mail, notification shall be complete upon receipt. (5) For the purpose of this section, the term “consumer” shall also include the consumer’s spouse, parent (if the consumer is a minor), guardian, executor, or administrator.",
+      "text_sha256": "27d0300b1165c534324cee1e6a8176d72f14e4fa1dfd5971e3444cd5fbca753f",
+      "publisher_sha256": "e3836e7db9711d8c0964b41417c0e488194b49708d6e3d6b80a9b02d804c2884",
+      "retrieved_at": "2026-11-20T18:29:53.760781+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2023-06-27"
+    },
+    "187eba9c325ac29bb54874f89de087": {
+      "source_id": "US-RI:small_claims:1487f09a97e1",
+      "authority_type": "statute",
+      "citation": "R.I. Gen. Laws § 10-16-1 (covered small and consumer claims)",
+      "text": "In all ex contractu civil actions and in any action to recover the amount of any tax for money only not in excess of five thousand dollars ($5,000) exclusive of interest and costs, and in all actions or suits to recover damages resulting from a retail sale of tangible personal property to a member of the general public or from services rendered to a member of the general public in which the plaintiff seeks to recover an amount of money only not in excess of five thousand dollars ($5,000) exclusive of interest and costs, and in all actions or suits based upon a negotiable instrument involving an amount of money only not in excess of five thousand dollars ($5,000) exclusive of interest and costs, the procedure shall, at the plaintiff’s election, shown by his or her waiver of appeal, be as provided by this chapter.",
+      "text_sha256": "f13fb49794747f49d807b89d5c70ee28d11c11d027a8a4204e9f60f48eb58b21",
+      "publisher_sha256": "1d1fc9f0cb6f4e9f6a53a7470665af485eec9458e48bf87466993254787c9aa3",
+      "retrieved_at": "2026-11-20T18:32:56.255418+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "a01b64ec01d0f9d486037bb45ee953": {
+      "source_id": "US-RI:small_claims:8a25720c2a58",
+      "authority_type": "statute",
+      "citation": "R.I. Gen. Laws § 10-16-3 (small and consumer claims venue and rules)",
+      "text": "The venue of actions under this chapter shall be the same as in ordinary civil actions, except cases wherein the plaintiff is a corporation, in which event the action must be brought in the division of the district court wherein the defendant resides. If the defendant resides outside the state, then the venue shall be the same as in other civil actions. The laws relating to practice in ordinary civil actions in the district court, which are applicable to this procedure, and not inconsistent with the provisions of this chapter, shall apply to cases under this procedure.",
+      "text_sha256": "010663111ab0ec26f41d5b650d786a2be6073ecf2e462f19a03b8998340b886a",
+      "publisher_sha256": "32dcbca48c020e4e265696a568939d089fc7fa1cf78369715ec967b5ab17ea0d",
+      "retrieved_at": "2026-11-20T18:32:56.299457+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    }
+  },
+  "fault_allocation": {
+    "regime": "pure_comparative",
+    "passage_selector": "3a68bb159de716fad21952eb8e11e5",
+    "source_id": "US-RI:fault:15ce5d5d01d4",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "jurisdiction": "US-GU",
+  "version": "1",
+  "sources": {
+    "US-GU:statutes:a147adc992b3": {
+      "category": "statutes",
+      "title": "Guam Code Annotated",
+      "url": "http://www.guamcourts.org/CompilerofLaws/index.html",
+      "directory": "codes",
+      "locator": "Guam"
+    },
+    "US-GU:labor_agency:ec5594f9e2b6": {
+      "category": "labor_agency",
+      "title": "www.dol.guam.gov",
+      "url": "http://www.dol.guam.gov/",
+      "directory": "labor",
+      "locator": "Guam"
+    },
+    "US-GU:small_claims:57dd29a7ebef": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.guamcourts.org/Rules-of-Procedure/images/Local%20Rules%2020231016_control.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.guamcourts.org/Rules-of-Procedure/images/Local%20Rules%2020231016_control.pdf",
+        "retrieved_at": "2026-11-17T19:42:44.853838+00:00",
+        "http_status": "000",
+        "sha256": null,
+        "health": "unreachable"
+      }
+    },
+    "US-GU:statutes:58153fc70351": {
+      "category": "statutes",
+      "title": "Guam Compiler of Laws",
+      "url": "https://www.guamcourts.org/CompilerofLaws/",
+      "directory": null,
+      "locator": "Publisher resource"
+    },
+    "US-GU:civil_rules:58a3fd35519e": {
+      "category": "civil_rules",
+      "title": "Judiciary of Guam rules of procedure",
+      "url": "https://www.guamcourts.org/Rules-of-Procedure/images/GRCP%2020240401_Control.pdf",
+      "directory": null,
+      "locator": "Publisher resource"
+    },
+    "US-GU:judiciary:6fc305afdf7b": {
+      "category": "judiciary",
+      "title": "Judiciary of Guam",
+      "url": "https://www.guamcourts.org/",
+      "directory": null,
+      "locator": "Publisher resource"
+    }
+  },
+  "court_directory": [],
+  "citation_leads": [
+    {
+      "category": "eviction",
+      "citation": "21 Guam Code Ann. § 48101. Application; 7 Guam Code Ann. § 4207. Jurisdiction over housing claims",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ]
+}

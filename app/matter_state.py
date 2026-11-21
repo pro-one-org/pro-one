@@ -2,6 +2,7 @@
 from collections import defaultdict
 from datetime import datetime
 
+from app.jurisdictions import CONNECTION_FIELDS
 from app.matter_ingest import FACT_FIELDS, MONTH_DATE, MONTHS, grounded_rows
 from app.matter_models import DocumentSource, ExternalSource, Gap, InferenceSource, Target, Temporal, UserSource
 from app.procedural_research import FACT_QUESTIONS, MatterFacts
@@ -260,6 +261,14 @@ def projection(matter):
                           "superseded": tuple(row.id for row in grouped[target] if row.id in superseded),
                           "question_template": gaps[target].question if target in gaps else None,
                           "conflicts": tuple(conflicts) if target.field not in INDEPENDENT else ()}
+    target = Target(field="jurisdiction")
+    explicit = result.get(target)
+    connections = [fact for key, fact in result.items() if key.field in CONNECTION_FIELDS]
+    if explicit and explicit["preferred"] and connections:
+        candidates = {fact["preferred"].value for fact in connections if fact["preferred"]}
+        candidates.add(explicit["preferred"].value)
+        if len(candidates) > 1 or any(fact["status"] in {"conflicting", "disputed"} for fact in connections):
+            result[target] = {**explicit, "status": "conflicting", "preferred": None, "confirmed": False}
     return result
 
 

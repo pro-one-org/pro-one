@@ -1,0 +1,652 @@
+{
+  "jurisdiction": "US-OH",
+  "version": "1",
+  "sources": {
+    "US-OH:statutes:8e8c3fd192e0": {
+      "category": "statutes",
+      "title": "Revised Code",
+      "url": "http://codes.ohio.gov/orc",
+      "directory": "doj-OH",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-OH:constitution:dce6221e870d": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.legislature.ohio.gov/laws/ohio-constitution",
+      "directory": "codes",
+      "locator": "Ohio"
+    },
+    "US-OH:legislature:0c4caf7ddf7e": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.legislature.ohio.gov",
+      "directory": "codes",
+      "locator": "Ohio"
+    },
+    "US-OH:labor_agency:95b7963e7020": {
+      "category": "labor_agency",
+      "title": "com.ohio.gov",
+      "url": "https://www.com.ohio.gov/",
+      "directory": "labor",
+      "locator": "Ohio"
+    },
+    "US-OH:commercial_code:907a6059ea97": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://codes.ohio.gov/orc/13",
+      "directory": "ucc",
+      "locator": "Ohio"
+    },
+    "US-OH:consumer_agency:c7deb3b514bb": {
+      "category": "consumer_agency",
+      "title": "Ohio (OH)",
+      "url": "https://www.ohioattorneygeneral.gov/about-ag/service-divisions/consumer-protection",
+      "directory": "consumer",
+      "locator": "Ohio (OH)"
+    },
+    "US-OH:judiciary:3ca0d3cc6c6a": {
+      "category": "judiciary",
+      "title": "Supreme Court",
+      "url": "https://www.supremecourt.ohio.gov/",
+      "directory": "doj-OH",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-OH:court_directory:8a3fc59814c7": {
+      "category": "court_directory",
+      "title": "District Courts of Appeal",
+      "url": "https://www.supremecourt.ohio.gov/courts/judicial-system/ohio-court-of-appeals/",
+      "directory": "doj-OH",
+      "locator": "District Courts of Appeal"
+    },
+    "US-OH:opinions:3aec5157edd2": {
+      "category": "opinions",
+      "title": "Recent Court Decisions",
+      "url": "https://clevelandlawlibrary.org/Public/Decision/Decision.html",
+      "directory": "doj-OH",
+      "locator": "State and Local Courts / Courts of Appeal"
+    },
+    "US-OH:court_directory:85d245c127c9": {
+      "category": "court_directory",
+      "title": "Municipal Courts and Codes",
+      "url": "https://clevelandlawlibrary.org/Public/Misc/Muni_Ct.html",
+      "directory": "doj-OH",
+      "locator": "Municipal Courts and Codes"
+    },
+    "US-OH:constitution:1d68d5b50297": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://codes.ohio.gov/ohio-constitution",
+      "directory": "doj-OH",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-OH:regulations:2e921e856c5c": {
+      "category": "regulations",
+      "title": "Administrative Code",
+      "url": "http://codes.ohio.gov/oac",
+      "directory": "doj-OH",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-OH:regulations:7e5e48c5cca2": {
+      "category": "regulations",
+      "title": "Register",
+      "url": "http://www.registerofohio.state.oh.us/",
+      "directory": "doj-OH",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-OH:pi_limitations:7450be076c37": {
+      "category": "pi_limitations",
+      "title": "Ohio Rev. Code § 2305.10",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-2305.10",
+      "directory": null,
+      "locator": "Ohio Rev. Code § 2305.10",
+      "observation": {
+        "requested_url": "https://codes.ohio.gov/ohio-revised-code/section-2305.10",
+        "retrieved_at": "2026-11-17T19:34:00.335807+00:00",
+        "http_status": "200",
+        "sha256": "f12bd9cd517ef3a90bc14b366c59c405be8d556f3d27bd03ab68b0863533f1bf",
+        "health": "healthy"
+      }
+    },
+    "US-OH:written_contract_limitations:e5f6fe37817f": {
+      "category": "written_contract_limitations",
+      "title": "Ohio Rev. Code § 2305.06",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-2305.06",
+      "directory": null,
+      "locator": "Ohio Rev. Code § 2305.06",
+      "observation": {
+        "requested_url": "https://codes.ohio.gov/ohio-revised-code/section-2305.06",
+        "retrieved_at": "2026-11-17T19:34:00.264789+00:00",
+        "http_status": "200",
+        "sha256": "d0f5d9642a11b0eca27a42ce6899cc1b4ec4c65dd9ec106e4f0660b90be81c5b",
+        "health": "healthy"
+      }
+    },
+    "US-OH:oral_contract_limitations:a2186f17fd1b": {
+      "category": "oral_contract_limitations",
+      "title": "Ohio Rev. Code § 2305.07",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-2305.07",
+      "directory": null,
+      "locator": "Ohio Rev. Code § 2305.07",
+      "observation": {
+        "requested_url": "https://codes.ohio.gov/ohio-revised-code/section-2305.07",
+        "retrieved_at": "2026-11-17T19:34:00.298855+00:00",
+        "http_status": "200",
+        "sha256": "856e6db30a16555cc100fc2ba187d93cb5c34f533d64771966b551fa49942bee",
+        "health": "healthy"
+      }
+    },
+    "US-OH:small_claims:006993e965e3": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://codes.ohio.gov/ohio-revised-code/chapter-1925",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://codes.ohio.gov/ohio-revised-code/chapter-1925",
+        "retrieved_at": "2026-11-17T19:41:37.726705+00:00",
+        "http_status": "200",
+        "sha256": "7cb68c079eddb4f992b74a9e780120b4845d9bce0d9eaafebf5482b394b0d2b4",
+        "health": "manual_review_required"
+      }
+    },
+    "US-OH:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 28"
+    },
+    "US-OH:negligence:010ba30d86b2": {
+      "category": "negligence",
+      "title": "Negligence research publication",
+      "url": "https://www.supremecourt.ohio.gov/rod/docs/PDF/4/2017/2017-Ohio-1069.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.supremecourt.ohio.gov/rod/docs/PDF/4/2017/2017-Ohio-1069.pdf",
+        "retrieved_at": "2026-11-17T19:43:09.477074+00:00",
+        "http_status": "200",
+        "sha256": "9bfbccbbe0dad883a60e35362b9d819d577b0a98b24315a7f8976b2e6c7d09d7",
+        "health": "manual_review_required"
+      }
+    },
+    "US-OH:fault:4f738f54c0fc": {
+      "category": "fault",
+      "title": "Ohio Rev. Code § 2315.33",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-2315.33",
+      "directory": null,
+      "locator": "Ohio Rev. Code § 2315.33",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:35.338278+00:00",
+        "sha256": "0f85da8d28741f8cd614e7c742398973da7299ae4d7c8d98810c01c8152f037c"
+      }
+    },
+    "US-OH:consumerLaw:d35c9e2a3aef": {
+      "title": "Ohio Rev. Code § 1345.01 et seq.",
+      "category": "consumerLaw",
+      "url": "https://codes.ohio.gov/ohio-revised-code/chapter-1345",
+      "directory": "consumer_statutes_index",
+      "locator": "Ohio Rev. Code § 1345.01 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-OH:consumerLaw:bd52e6614fad": {
+      "category": "consumerLaw",
+      "title": "Ohio Rev. Code § 1345.02(A)",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-1345.02",
+      "locator": "Ohio Rev. Code § 1345.02(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:57.062986+00:00",
+        "sha256": "ef80fc6c16729687f67d27e84694c78156b58a09e3f4aae3dd39d44e217ea6d7"
+      }
+    },
+    "US-OH:contract_formation:6f277ed6e1ed": {
+      "category": "contract_formation",
+      "title": "Ohio Rev. Code § 1302.07",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-1302.07",
+      "locator": "Ohio Rev. Code § 1302.07",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:31.872172+00:00",
+        "sha256": "ad5d5dc933793afd8730a309da72bb0bcf3ad6ec98eaf52d762324c328f5a985"
+      }
+    },
+    "US-OH:commencement:8bbfc8bb5eb3": {
+      "category": "commencement",
+      "title": "Ohio Civ. R. 3(A)",
+      "url": "https://www.supremecourt.ohio.gov/docs/LegalResources/Rules/civil/CivilProcedure.pdf",
+      "locator": "Ohio Civ. R. 3(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:46:32.705237+00:00",
+        "sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040"
+      }
+    },
+    "US-OH:wageLaw:e08fd54a5666": {
+      "category": "wageLaw",
+      "title": "Ohio Rev. Code § 4113.15(A)",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-4113.15",
+      "locator": "Ohio Rev. Code § 4113.15(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:59.913261+00:00",
+        "sha256": "efcd8ee475d00ea86424ebd95798940eb52b2cacdd52be966bb107e395f6c66d"
+      }
+    },
+    "US-OH:contract_breach:39d4ca8d3505": {
+      "category": "contract_breach",
+      "title": "Quincy Communication v. Patrick, 2021-Ohio-1736, ¶ 10",
+      "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/1/2021/2021-Ohio-1736.pdf",
+      "locator": "Quincy Communication v. Patrick, 2021-Ohio-1736, ¶ 10",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:39:46.886724+00:00",
+        "sha256": "63edf00c58b592f1ad49f18c4efb9e31e55e1ca00eafc8cf00a0d84fa6aabce4"
+      }
+    },
+    "US-OH:accrual:7a8acc1d100c": {
+      "category": "accrual",
+      "title": "Ohio Rev. Code § 2305.10(B)(1)",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-2305.10",
+      "locator": "Ohio Rev. Code § 2305.10(B)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:18:10.286884+00:00",
+        "sha256": "f12bd9cd517ef3a90bc14b366c59c405be8d556f3d27bd03ab68b0863533f1bf"
+      }
+    },
+    "US-OH:negligence_elements:0612feae8114": {
+      "category": "negligence_elements",
+      "title": "Madden v. Production Concrete, Inc., 2013-Ohio-5393",
+      "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/10/2013/2013-ohio-5393.pdf",
+      "locator": "Madden v. Production Concrete, Inc., 2013-Ohio-5393",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:27:31.439601+00:00",
+        "sha256": "82cc222844f60e7aa6ca77707ce645ec49119b773e198365c15279697569602f"
+      }
+    },
+    "US-OH:small_claims:d94d8d5f0a29": {
+      "category": "small_claims",
+      "title": "Ohio Rev. Code § 1925.02(A)",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-1925.02",
+      "locator": "Ohio Rev. Code § 1925.02(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:29.527565+00:00",
+        "sha256": "3e2d83cf0d1785496fd3c23e6212c1340509965080c6476f3cafdfc90595328e"
+      }
+    },
+    "US-OH:deposit:f5fe0c6d7176": {
+      "category": "deposit",
+      "title": "Ohio Rev. Code § 5321.16(B)–(C)",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-5321.16",
+      "locator": "Ohio Rev. Code § 5321.16(B)–(C)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:18.758588+00:00",
+        "sha256": "48f00165db31bde6fa13353f9f46718dde55b774105f3bc053acdf264b34b6b6"
+      }
+    },
+    "US-OH:response:20a67f1515f4": {
+      "category": "response",
+      "title": "Ohio Civ.R. 12(A)",
+      "url": "https://www.supremecourt.ohio.gov/docs/LegalResources/Rules/civil/CivilProcedure.pdf",
+      "locator": "Ohio Civ.R. 12(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:42:37.557891+00:00",
+        "sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040"
+      }
+    },
+    "US-OH:commencement:5a1f4764d920": {
+      "category": "commencement",
+      "title": "Ohio Civ.R. 3(A)",
+      "url": "https://www.supremecourt.ohio.gov/docs/LegalResources/Rules/civil/CivilProcedure.pdf",
+      "locator": "Ohio Civ.R. 3(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:42:37.557891+00:00",
+        "sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040"
+      }
+    },
+    "US-OH:debtLaw:41b5d79471a9": {
+      "category": "debtLaw",
+      "title": "Ohio Rev. Code § 1319.12(B)–(C)",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-1319.12",
+      "locator": "Ohio Rev. Code § 1319.12(B)–(C)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:26:27.175815+00:00",
+        "sha256": "96b7b83e0b0c4a1e766c4bab196913272131d3017bad1882d6d12e0a3cc02648"
+      }
+    },
+    "US-OH:debt_forum:6cbd5d6432b9": {
+      "category": "debt_forum",
+      "title": "Ohio Rev. Code § 1319.12(D)–(E)",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-1319.12",
+      "locator": "Ohio Rev. Code § 1319.12(D)–(E)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:26:27.175815+00:00",
+        "sha256": "96b7b83e0b0c4a1e766c4bab196913272131d3017bad1882d6d12e0a3cc02648"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-OH:court:1d0115542dd4",
+      "name": "District Courts of Appeal",
+      "level": "appellate_directory",
+      "source_id": "US-OH:court_directory:8a3fc59814c7"
+    },
+    {
+      "id": "US-OH:court:bbd6164de065",
+      "name": "Municipal Courts and Codes",
+      "level": "trial_directory",
+      "source_id": "US-OH:court_directory:85d245c127c9"
+    },
+    {
+      "id": "US-OH:court:3fe628f13bfa",
+      "name": "Common Pleas",
+      "level": "general_trial",
+      "source_id": "US-OH:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-OH:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-OH:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-OH:court:09753adaaaf9",
+      "name": "County",
+      "level": "limited_trial",
+      "source_id": "US-OH:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-OH:court:8f8fb4459bde",
+      "name": "Claims",
+      "level": "limited_trial",
+      "source_id": "US-OH:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-OH:court:bce59d8d8e77",
+      "name": "Mayor’s",
+      "level": "limited_trial",
+      "source_id": "US-OH:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Ohio Rev. Code § 2305.10(A)",
+      "source_id": "US-OH:pi_limitations:7450be076c37",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Ohio Rev. Code § 2305.06",
+      "source_id": "US-OH:written_contract_limitations:e5f6fe37817f",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Ohio Rev. Code § 2305.07(A)",
+      "source_id": "US-OH:oral_contract_limitations:a2186f17fd1b",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Ohio Rev. Code § 1923.01. Jurisdiction in forcible entry and detainer action; definitions",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Ohio Rev. Code § 1345.01 et seq.",
+      "source_id": "US-OH:consumerLaw:d35c9e2a3aef",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "d6dda3ebac254446aa312e2a030ec2": {
+      "citation": "Ohio Rev. Code § 2305.10",
+      "source_id": "US-OH:pi_limitations:7450be076c37",
+      "authority_type": "statute",
+      "text": "(A) Except as provided in division (C) or (E) of this section, an action based on a product liability claim and an action for bodily injury or injuring personal property shall be brought within two years after the cause of action accrues. Except as provided in divisions",
+      "text_sha256": "2f3524a06ce2b202008e174bd65db9207991f1d5e188f9dd4ef6f236124ea921",
+      "publisher_sha256": "f12bd9cd517ef3a90bc14b366c59c405be8d556f3d27bd03ab68b0863533f1bf",
+      "retrieved_at": "2026-11-17T19:34:00.335807+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "c26806b2cfc01e6579d9e13d8bf8b6": {
+      "citation": "Ohio Rev. Code § 2305.06",
+      "source_id": "US-OH:written_contract_limitations:e5f6fe37817f",
+      "authority_type": "statute",
+      "text": "Except as provided in sections 126.301, 1302.98, 1303.16, 1345.10, and 2305.04 and division (B) of section 2305.041 of the Revised Code, an action upon a specialty or an agreement, contract, or promise in writing shall be brought within six years after the cause of action accrued.",
+      "text_sha256": "4c1dc4fb1daf79924c9b8d5951308281e6350911e6405438fcd6a09da8579872",
+      "publisher_sha256": "d0f5d9642a11b0eca27a42ce6899cc1b4ec4c65dd9ec106e4f0660b90be81c5b",
+      "retrieved_at": "2026-11-17T19:34:00.264789+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "77663923be03ddba281c6124afdddc": {
+      "citation": "Ohio Rev. Code § 2305.07",
+      "source_id": "US-OH:oral_contract_limitations:a2186f17fd1b",
+      "authority_type": "statute",
+      "text": "(A) Except as provided in sections 126.301 and 1302.98 of the Revised Code, an action upon a contract not in writing, express or implied, shall be brought within four years after the cause of action accrued.",
+      "text_sha256": "c50b3355bbaf413af4b02ac95ecd3c8b16db9cb4bfafc8508af3ba5feecbb801",
+      "publisher_sha256": "856e6db30a16555cc100fc2ba187d93cb5c34f533d64771966b551fa49942bee",
+      "retrieved_at": "2026-11-17T19:34:00.298855+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "30aa1a685232be390fb6ccca94da19": {
+      "citation": "Ohio Rev. Code § 2315.33",
+      "source_id": "US-OH:fault:4f738f54c0fc",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "The contributory fault of a person does not bar the person as plaintiff from recovering damages that have directly and proximately resulted from the tortious conduct of one or more other persons, if the contributory fault of the plaintiff was not greater than the combined tortious conduct of all other persons from whom the plaintiff seeks recovery in this action and of all other persons from whom the plaintiff does not seek recovery in this action. The court shall diminish any compensatory damages recoverable by the plaintiff by an amount that is proportionately equal to the percentage of tortious conduct of the plaintiff as determined pursuant to section 2315.34 of the Revised Code.",
+      "text_sha256": "451d3347ee46371fa380023d95f83f19625fa3c99239e9917376558114c8aa17",
+      "publisher_sha256": "0f85da8d28741f8cd614e7c742398973da7299ae4d7c8d98810c01c8152f037c",
+      "retrieved_at": "2026-11-17T20:50:35.338278+00:00",
+      "currentness": "unresolved"
+    },
+    "9af84e5480da080a36a49107028651": {
+      "source_id": "US-OH:consumerLaw:bd52e6614fad",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 1345.02(A)",
+      "text": "(A) No supplier shall commit an unfair or deceptive act or practice in connection with a consumer transaction. Such an unfair or deceptive act or practice by a supplier violates this section whether it occurs before, during, or after the transaction.",
+      "text_sha256": "d45a8d122b9148bf99771b57b8cc28a157fe2eaa261daacf86a1955801128fb2",
+      "publisher_sha256": "ef80fc6c16729687f67d27e84694c78156b58a09e3f4aae3dd39d44e217ea6d7",
+      "retrieved_at": "2026-11-17T21:03:57.062986+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "fa2a4fb13a43b57a7b9b63992161f6": {
+      "source_id": "US-OH:contract_formation:6f277ed6e1ed",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 1302.07",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "ad5d5dc933793afd8730a309da72bb0bcf3ad6ec98eaf52d762324c328f5a985",
+      "retrieved_at": "2026-11-18T15:14:31.872172+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "7a13e11e10af4080ccc3148b504963": {
+      "source_id": "US-OH:commencement:8bbfc8bb5eb3",
+      "authority_type": "court_rule",
+      "citation": "Ohio Civ. R. 3(A)",
+      "text": "A civil action is commenced by filing a complaint with the court, if service is obtained within one year from such filing upon a named defendant, or upon an incorrectly named defendant whose name is later corrected pursuant to Civ.R. 15(C), or upon a defen dant identified by a fictitious name whose name is later corrected pursuant to Civ.R. 15(D).",
+      "text_sha256": "29355f099e8d6617d6ab1d49d900e7ad6703f65f26e85093ca8534e87a39554a",
+      "publisher_sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040",
+      "retrieved_at": "2026-11-18T20:46:32.705237+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Ohio Court of Common Pleas"
+    },
+    "997468083d52adb5fd526ad47fa7b2": {
+      "source_id": "US-OH:wageLaw:e08fd54a5666",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 4113.15(A)",
+      "text": "(A) Every employer doing business in this state shall, on or before the first day of each month, pay all its employees the wages earned by them during the first half of the preceding month ending with the fifteenth day thereof, and shall, on or before the fifteenth day of each month, pay such employees the wages earned by them during the last half of the preceding calendar month. If at any time of payment an employee is absent from the employee's regular place of labor and does not receive payment of wages through an authorized representative, such person shall be entitled to said payment at any time thereafter upon demand upon the proper paymaster at the place where such wages are usually paid and where such pay is due. This section does not prohibit the daily or weekly payment of wages. The use of a longer time lapse that is customary to a given trade, profession or occupation, or establishment of a different time lapse by written contract or by operation of law.",
+      "text_sha256": "71399c9bd67f1a7ab01bb5211d41fa6beded5c60ac304317f1858b643ad157d7",
+      "publisher_sha256": "efcd8ee475d00ea86424ebd95798940eb52b2cacdd52be966bb107e395f6c66d",
+      "retrieved_at": "2026-11-19T14:10:59.913261+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "5d3354415c2ab12bd22546b10bf5eb": {
+      "source_id": "US-OH:contract_breach:39d4ca8d3505",
+      "authority_type": "opinion",
+      "citation": "Quincy Communication v. Patrick, 2021-Ohio-1736, ¶ 10",
+      "text": "The elements of a breach-of-contract claim are a contract, the plaintiff’s performance, a breach by the defendant, and damages. White v. Pitman , 2020-Ohio-3957, 156 N.E.3d 1026, ¶ 37 (1st Dist.).",
+      "text_sha256": "9cd9811d4a8e341c5ed9c2c4f366c9b8b9b2aa93be5b068fc74ec6df47e3539c",
+      "publisher_sha256": "63edf00c58b592f1ad49f18c4efb9e31e55e1ca00eafc8cf00a0d84fa6aabce4",
+      "retrieved_at": "2026-11-19T19:39:46.886724+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2021-05-21",
+      "court": "Ohio First District Court of Appeals",
+      "decision_date": "2021-05-21",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a municipal court judgment. Affirmed."
+    },
+    "6f2983ed0dafc79de13e0d861827cf": {
+      "source_id": "US-OH:accrual:7a8acc1d100c",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 2305.10(B)(1)",
+      "text": "(B)(1) For purposes of division (A) of this section, a cause of action for bodily injury that is not described in division (B)(2), (3), (4), or (5) of this section and that is caused by exposure to hazardous or toxic chemicals, ethical drugs, or ethical medical devices accrues upon the date on which the plaintiff is informed by competent medical authority that the plaintiff has an injury that is related to the exposure, or upon the date on which by the exercise of reasonable diligence the plaintiff should have known that the plaintiff has an injury that is related to the exposure, whichever date occurs first.",
+      "text_sha256": "85116ef4434034e746453ac00a83048d8d8685d3dc6dc1731207a93be76f9e7c",
+      "publisher_sha256": "f12bd9cd517ef3a90bc14b366c59c405be8d556f3d27bd03ab68b0863533f1bf",
+      "retrieved_at": "2026-11-20T15:18:10.286884+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2006-08-03"
+    },
+    "9e4b604cb4bc20fe936d2f9ec7bfb8": {
+      "source_id": "US-OH:negligence_elements:0612feae8114",
+      "authority_type": "opinion",
+      "citation": "Madden v. Production Concrete, Inc., 2013-Ohio-5393",
+      "text": "The elements of a claim of negligence are: (1) the existence of a legal duty owing from the defendant to the plaintiff; (2) the defendant's breach of that duty; and (3) injury to the plaintiff proximately resulting from such failure.",
+      "text_sha256": "7f3143cab2d9b168b43b15ae20e7b9aeb8a38a5da533ce8e1dde11c25a0adf5f",
+      "publisher_sha256": "82cc222844f60e7aa6ca77707ce645ec49119b773e198365c15279697569602f",
+      "retrieved_at": "2026-11-20T15:27:31.439601+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2013-12-10",
+      "court": "Ohio Tenth District Court of Appeals",
+      "decision_date": "2013-12-10",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in a personal injury action arising from an excavation collapse."
+    },
+    "3c4d613d47256c7695a161738973d3": {
+      "source_id": "US-OH:small_claims:d94d8d5f0a29",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 1925.02(A)",
+      "text": "(A)(1) Except as provided in division (A)(2) of this section, a small claims division established under section 1925.01 of the Revised Code has jurisdiction in civil actions for the recovery of taxes and money only, for amounts not exceeding six thousand dollars, exclusive of interest and costs. (2)(a) A small claims division does not have jurisdiction in any of the following: (i) Libel, slander, replevin, malicious prosecution, and abuse of process actions; (ii) Actions on any claim brought by an assignee or agent, except a claim to recover taxes that is filed by any authorized employee of a political subdivision or any authorized officer or employee of the state or a claim filed by a person designated under section 1925.18 of the Revised Code to act as the representative of a prosecuting attorney; (iii) Actions for the recovery of punitive or exemplary damages. (b) Division (A)(2)(a) of this section does not exclude either of the following: (i) Actions for the recovery of damages specifically authorized by division (B) of either section 1345.09 or 1345.48 of the Revised Code from the jurisdiction of a small claims division; (ii) The filing or defense of an action by the holder of a security agreement or retail installment contract, purchased by the holder for the holder's portfolio of investments, provided that the holder is not an assignee for the purpose of collection. (3) The territorial jurisdiction and venue of a small claims division are concurrent with that of the respective court under its procedures in ordinary civil actions. Jurisdiction over the person of a defendant may not be obtained by any form of published or substituted service or warrant of attorney.",
+      "text_sha256": "1f17c051559bd144202299bb8ea27119930691f778fb21e1667063607d8bd86b",
+      "publisher_sha256": "3e2d83cf0d1785496fd3c23e6212c1340509965080c6476f3cafdfc90595328e",
+      "retrieved_at": "2026-11-20T16:16:29.527565+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Ohio courts with a statutory small-claims division",
+      "effective_from": "2025-04-09"
+    },
+    "51da8721d73171810b6dadad68d53d": {
+      "source_id": "US-OH:deposit:f5fe0c6d7176",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 5321.16(B)–(C)",
+      "text": "(B) Upon termination of the rental agreement any property or money held by the landlord as a security deposit may be applied to the payment of past due rent and to the payment of the amount of damages that the landlord has suffered by reason of the tenant's noncompliance with section 5321.05 of the Revised Code or the rental agreement. Any deduction from the security deposit shall be itemized and identified by the landlord in a written notice delivered to the tenant together with the amount due, within thirty days after termination of the rental agreement and delivery of possession. The tenant shall provide the landlord in writing with a forwarding address or new address to which the written notice and amount due from the landlord may be sent. If the tenant fails to provide the landlord with the forwarding or new address as required, the tenant shall not be entitled to damages or attorneys fees under division (C) of this section. (C) If the landlord fails to comply with division (B) of this section, the tenant may recover the property and money due him, together with damages in an amount equal to the amount wrongfully withheld, and reasonable attorneys fees.",
+      "text_sha256": "a37497d4daf77e3d9b195006cdef79959e3408dc9058e79daf3ef31d5a8621e8",
+      "publisher_sha256": "48f00165db31bde6fa13353f9f46718dde55b774105f3bc053acdf264b34b6b6",
+      "retrieved_at": "2026-11-20T16:35:18.758588+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1974-11-04"
+    },
+    "e1809675b3a0483f03a157d563d5cc": {
+      "source_id": "US-OH:response:20a67f1515f4",
+      "authority_type": "court_rule",
+      "citation": "Ohio Civ.R. 12(A)",
+      "text": "(A) When answer presented (1) Generally The defendant shall serve his answer within twenty-eight days after service of the summons and complaint upon him; if service of notice has been made by publication, he shall serve his answer within twenty-eight days after the completion of service by publication. (2) Other responses and motions A party served with a pleading stating a cross-claim against him shall serve an answer thereto within twenty-eight days after the service upon him. The plaintiff shall serve his reply to a counterclaim in the answer within twenty-eight days after service of the answer or, if a reply is ordered by the court, within twenty-eight days after service of the order, unless the order otherwise directs. The service of a motion permitted under this rule alters these periods of time as follows, unless a different time is fixed by order of the court: (a) if the court denies the motion, a responsive pleading, delayed because of service of the motion, shall be served within fourteen days after notice of the court's action; (b) if the court grants a motion, a responsive pleading, delayed because of service of the motion, shall be served within fourteen days after service of the pleading which complies with the court's order.",
+      "text_sha256": "272b921cb586747f051a24e65132639e603422df60196b9a7a47af6025245366",
+      "publisher_sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040",
+      "retrieved_at": "2026-11-20T16:42:37.557891+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "5117ddce690d4f8c3ef3f1bf2591c9": {
+      "source_id": "US-OH:commencement:5a1f4764d920",
+      "authority_type": "court_rule",
+      "citation": "Ohio Civ.R. 3(A)",
+      "text": "(A) Commencement A civil action is commenced by filing a complaint with the court, if service is obtained within one year from such filing upon a named defendant, or upon an incorrectly named defendant whose name is later corrected pursuant to Civ.R. 15(C), or upon a defendant identified by a fictitious name whose name is later corrected pursuant to Civ.R. 15(D).",
+      "text_sha256": "0fbd97d5258fa318fe1d84dded7fbaa22a87260b3651c504158030846d2592d4",
+      "publisher_sha256": "49201001c188b1545e68567cdfdcfd011d0840b4811d74b5ab4c4be83c74e040",
+      "retrieved_at": "2026-11-20T16:42:37.557891+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "e3db4f4664137ea00206f0d1d2d27a": {
+      "source_id": "US-OH:debtLaw:41b5d79471a9",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 1319.12(B)–(C)",
+      "text": "(B) A collection agency with a place of business in this state may take assignment of another person's accounts, bills, or other evidences of indebtedness in its own name for the purpose of billing, collecting, or filing suit in its own name as the real party in interest. (C) No collection agency shall commence litigation for the collection of an assigned account, bill, or other evidence of indebtedness unless it has taken the assignment in accordance with all of the following requirements: (1) The assignment was voluntary, properly executed, and acknowledged by the person transferring title to the collection agency. (2) The collection agency did not require the assignment as a condition to listing the account, bill, or other evidence of indebtedness with the collection agency for collection. (3) The assignment was manifested by a written agreement separate from and in addition to any document intended for the purpose of listing the account, bill, or other evidence of indebtedness with the collection agency. The written agreement shall state the effective date of the assignment and the consideration paid or given, if any, for the assignment and shall expressly authorize the collection agency to refer the assigned account, bill, or other evidence of indebtedness to an attorney admitted to the practice of law in this state for the commencement of litigation. The written agreement also shall disclose that the collection agency may consolidate, for purposes of filing an action, the assigned account, bill, or other evidence of indebtedness with those of other creditors against an individual debtor or co-debtors. (4) Upon the effective date of the assignment to the collection agency, the creditor's account maintained by the collection agency in connection with the assigned account, bill, or other evidence of indebtedness was canceled.",
+      "text_sha256": "9ab98b5043e5b8f05dfdee1227334ff8d73b11ecd516ca1066f8df8ebb263533",
+      "publisher_sha256": "96b7b83e0b0c4a1e766c4bab196913272131d3017bad1882d6d12e0a3cc02648",
+      "retrieved_at": "2026-11-20T17:26:27.175815+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2018-03-23"
+    },
+    "cf5c6918cda44f9f540a7a27baaa08": {
+      "source_id": "US-OH:debt_forum:6cbd5d6432b9",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 1319.12(D)–(E)",
+      "text": "(D) A collection agency shall commence litigation for the collection of an assigned account, bill, or other evidence of indebtedness in a court of competent jurisdiction located in the county in which the debtor resides, or in the case of co-debtors, a county in which at least one of the co-debtors resides. (E) No collection agency shall commence any litigation authorized by this section unless the agency appears by an attorney admitted to the practice of law in this state.",
+      "text_sha256": "98b095785f5372d04dfd79cde694df4c9d22e7aea19736e0f5b0c734d562a456",
+      "publisher_sha256": "96b7b83e0b0c4a1e766c4bab196913272131d3017bad1882d6d12e0a3cc02648",
+      "retrieved_at": "2026-11-20T17:26:27.175815+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2018-03-23"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "30aa1a685232be390fb6ccca94da19",
+    "source_id": "US-OH:fault:4f738f54c0fc",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

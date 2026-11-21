@@ -1,0 +1,641 @@
+{
+  "jurisdiction": "US-HI",
+  "version": "1",
+  "sources": {
+    "US-HI:statutes:4f7aaa0c59e4": {
+      "category": "statutes",
+      "title": "Hawaii Revised Statutes",
+      "url": "https://www.capitol.hawaii.gov/docs/HRS.htm",
+      "directory": "codes",
+      "locator": "Hawaii"
+    },
+    "US-HI:constitution:eac3163fa8eb": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://lrbhawaii.org/con/",
+      "directory": "codes",
+      "locator": "Hawaii"
+    },
+    "US-HI:legislature:0d3464bfe4af": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.capitol.hawaii.gov/house.aspx",
+      "directory": "codes",
+      "locator": "Hawaii"
+    },
+    "US-HI:labor_agency:b0d91bcf2bf2": {
+      "category": "labor_agency",
+      "title": "www.labor.hawaii.gov",
+      "url": "http://www.labor.hawaii.gov/",
+      "directory": "labor",
+      "locator": "Hawaii"
+    },
+    "US-HI:commercial_code:9aa83987c3be": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://www.capitol.hawaii.gov/hrscurrent/Vol11_Ch0476-0490/HRS0490/HRS_0490-.htm",
+      "directory": "ucc",
+      "locator": "Hawaii"
+    },
+    "US-HI:civil_rules:2b18fd3c6a4c": {
+      "category": "civil_rules",
+      "title": "Civil Remedies and Defenses and Special Proceedings",
+      "url": "http://www.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0651/HRS_0651-.htm",
+      "directory": "procedure",
+      "locator": "Hawaii"
+    },
+    "US-HI:consumer_agency:b7a4eae0a755": {
+      "category": "consumer_agency",
+      "title": "Hawaii (HI)",
+      "url": "https://cca.hawaii.gov/ocp/",
+      "directory": "consumer",
+      "locator": "Hawaii (HI)"
+    },
+    "US-HI:judiciary:22385cd8827e": {
+      "category": "judiciary",
+      "title": "Hawaii State Judiciary",
+      "url": "http://www.courts.state.hi.us/",
+      "directory": "doj-HI",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-HI:court_directory:7631297300ed": {
+      "category": "court_directory",
+      "title": "Supreme Court of Hawaii",
+      "url": "https://www.courts.state.hi.us/courts/supreme/hawaii_supreme_court",
+      "directory": "doj-HI",
+      "locator": "Supreme Court of Hawaii"
+    },
+    "US-HI:court_directory:f4ffeb91c5c3": {
+      "category": "court_directory",
+      "title": "Intermediate Court of Appeals",
+      "url": "https://www.courts.state.hi.us/courts/appeals/intermediate_court_of_appeals",
+      "directory": "doj-HI",
+      "locator": "Intermediate Court of Appeals"
+    },
+    "US-HI:court_directory:382cbbee01c1": {
+      "category": "court_directory",
+      "title": "Land and Tax Appeal Courts",
+      "url": "http://www.courts.state.hi.us/courts/landtax/land_and_tax_appeal_courts",
+      "directory": "doj-HI",
+      "locator": "Land and Tax Appeal Courts"
+    },
+    "US-HI:court_directory:28aaf5641843": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "http://www.courts.state.hi.us/courts/circuit/circuit_courts",
+      "directory": "doj-HI",
+      "locator": "Circuit Courts"
+    },
+    "US-HI:court_directory:fa51882acba9": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "http://www.courts.state.hi.us/courts/district/district_courts",
+      "directory": "doj-HI",
+      "locator": "District Courts"
+    },
+    "US-HI:court_directory:a8089c84745f": {
+      "category": "court_directory",
+      "title": "Family Courts",
+      "url": "http://www.courts.state.hi.us/courts/family/family_courts",
+      "directory": "doj-HI",
+      "locator": "Family Courts"
+    },
+    "US-HI:forms:1afe05e2fe92": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "http://www.courts.state.hi.us/self-help/courts/forms/court_forms",
+      "directory": "doj-HI",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-HI:constitution:5c659f6b2230": {
+      "category": "constitution",
+      "title": "Hawaii Constitution",
+      "url": "https://lrb.hawaii.gov/constitution",
+      "directory": "doj-HI",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-HI:statutes:7705793a123e": {
+      "category": "statutes",
+      "title": "Revised Statutes, Bills, and Legislative Documents",
+      "url": "https://www.capitol.hawaii.gov/documentdirectories.aspx",
+      "directory": "doj-HI",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-HI:pi_limitations:57f7eb463907": {
+      "category": "pi_limitations",
+      "title": "Haw. Rev. Stat. § 657-7",
+      "url": "https://www.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0657/HRS_0657-0007.htm",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0657/HRS_0657-0007.htm",
+        "retrieved_at": "2026-11-17T19:33:55.628033+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-HI:written_contract_limitations:a89665f68c95": {
+      "category": "written_contract_limitations",
+      "title": "Haw. Rev. Stat. § 657-1(1)",
+      "url": "https://www.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0657/HRS_0657-0001.htm",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0657/HRS_0657-0001.htm",
+        "retrieved_at": "2026-11-17T19:33:55.557448+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-HI:oral_contract_limitations:a89665f68c95": {
+      "category": "oral_contract_limitations",
+      "title": "Haw. Rev. Stat. § 657-1(1)",
+      "url": "https://www.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0657/HRS_0657-0001.htm",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0657/HRS_0657-0001.htm",
+        "retrieved_at": "2026-11-17T19:33:55.557448+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-HI:small_claims:8e113fb880a2": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.courts.state.hi.us/small_claims",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.courts.state.hi.us/small_claims",
+        "retrieved_at": "2026-11-17T19:42:40.480665+00:00",
+        "http_status": "200",
+        "sha256": "3bcc2c93329e8fdbf7fe7f669518e8135a94fcc9763b0db8cc7db84790698578",
+        "health": "manual_review_required"
+      }
+    },
+    "US-HI:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 26"
+    },
+    "US-HI:wageLaw:a2a1025b8946": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://labor.hawaii.gov/wsd/unpaid-wages/",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://labor.hawaii.gov/wsd/unpaid-wages/",
+        "retrieved_at": "2026-11-17T19:42:00.975319+00:00",
+        "http_status": "200",
+        "sha256": "b1e3d6a4c2a1cc18354158de84b11260cd8c6df4f95d4fb04da550902b2a44fa",
+        "health": "manual_review_required"
+      }
+    },
+    "US-HI:fault:214876141e1f": {
+      "category": "fault",
+      "title": "Haw. Rev. Stat. § 663-31(a)",
+      "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0663/HRS_0663-0031.htm",
+      "directory": null,
+      "locator": "Haw. Rev. Stat. § 663-31(a)",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:33.257382+00:00",
+        "sha256": "d7c666e6b2af18266d46f5f72234074d3d7c9f7ebf9883cc9320bf58673e75ee"
+      }
+    },
+    "US-HI:consumerLaw:cc8a7adaf621": {
+      "title": "Haw. Rev. Stat. § 480-1 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.capitol.hawaii.gov/hrscurrent/Vol11_Ch0476-0490/HRS0480/HRS_0480-0002.htm",
+      "directory": "consumer_statutes_index",
+      "locator": "Haw. Rev. Stat. § 480-1 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-HI:consumerLaw:8c81e1f5234e": {
+      "category": "consumerLaw",
+      "title": "Haw. Rev. Stat. § 480-2(a)",
+      "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol11_Ch0476-0490/HRS0480/HRS_0480-0002.htm",
+      "locator": "Haw. Rev. Stat. § 480-2(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:51.931418+00:00",
+        "sha256": "f8b20c527cf15825b8d76914cb164885098c7ce58cbfc59dc4615b1d05681542"
+      }
+    },
+    "US-HI:contract_formation:7584497236b2": {
+      "category": "contract_formation",
+      "title": "Haw. Rev. Stat. § 490:2-204",
+      "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol11_Ch0476-0490/HRS0490/HRS_0490-0002-0204.htm",
+      "locator": "Haw. Rev. Stat. § 490:2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:38.712693+00:00",
+        "sha256": "c3e25312213992e9c14db0e8600dba2fe84b77351bace8f304221ad4f614e785"
+      }
+    },
+    "US-HI:commencement:96af7fb055aa": {
+      "category": "commencement",
+      "title": "Haw. R. Civ. P. 3",
+      "url": "https://www.courts.state.hi.us/wp-content/uploads/2024/09/hrcp_ada.pdf",
+      "locator": "Haw. R. Civ. P. 3",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:58.834498+00:00",
+        "sha256": "e74747393544ab0c36f0f3db12bf460db86c2995dd7e3ac3dfef00a9643a384a"
+      }
+    },
+    "US-HI:wageLaw:912721875084": {
+      "category": "wageLaw",
+      "title": "Haw. Rev. Stat. § 388-2",
+      "url": "https://data.capitol.hawaii.gov/sessions/session2017/HRS-Chapter-PDF%27s/HRS_0388.pdf",
+      "locator": "Haw. Rev. Stat. § 388-2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:53.644552+00:00",
+        "sha256": "0d9d8dff8af32500e4a04bf5f939ccbd2403f28a46f727d9a27f9643e252c2ad"
+      }
+    },
+    "US-HI:service:70db2b1f2445": {
+      "category": "service",
+      "title": "Haw. R. Civ. P. 4(c)",
+      "url": "https://www.courts.state.hi.us/wp-content/uploads/2024/09/hrcp_ada.pdf",
+      "locator": "Haw. R. Civ. P. 4(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:58.834498+00:00",
+        "sha256": "e74747393544ab0c36f0f3db12bf460db86c2995dd7e3ac3dfef00a9643a384a"
+      }
+    },
+    "US-HI:response:bdec0caac404": {
+      "category": "response",
+      "title": "Haw. R. Civ. P. 12(a)",
+      "url": "https://www.courts.state.hi.us/wp-content/uploads/2024/09/hrcp_ada.pdf",
+      "locator": "Haw. R. Civ. P. 12(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:58.834498+00:00",
+        "sha256": "e74747393544ab0c36f0f3db12bf460db86c2995dd7e3ac3dfef00a9643a384a"
+      }
+    },
+    "US-HI:pi_limitations:2d79a64d0936": {
+      "category": "pi_limitations",
+      "title": "Haw. Rev. Stat. § 657-7",
+      "url": "https://data.capitol.hawaii.gov/sessions/session2017/HRS-Chapter-PDF%27s/HRS_0657.pdf",
+      "locator": "Haw. Rev. Stat. § 657-7",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:21.302815+00:00",
+        "sha256": "949c0f595ea050ef495098121f7b5a776086265e452881e2b0e76edca5a4b373"
+      }
+    },
+    "US-HI:small_claims:d1156d2b988b": {
+      "category": "small_claims",
+      "title": "Haw. Rev. Stat. § 633-27",
+      "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol13_Ch0601-0676/HRS0633/HRS_0633-0027.htm",
+      "locator": "Haw. Rev. Stat. § 633-27",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:29.432489+00:00",
+        "sha256": "42ae7b738cb00fdd1ed1b26609bff5be8534d9b58c504fdd22b45c02f823632f"
+      }
+    },
+    "US-HI:negligence_elements:bd0452d04b9c": {
+      "category": "negligence_elements",
+      "title": "Molfino v. Yuen, No. SCWC-10-0000150 (Haw. Nov. 13, 2014)",
+      "url": "https://www.courts.state.hi.us/docs/opin_ord/sct/2014/November/SCWC-10-0000150.pdf",
+      "locator": "Molfino v. Yuen, No. SCWC-10-0000150 (Haw. Nov. 13, 2014)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:12:28.237074+00:00",
+        "sha256": "e6ad43857748e803629d82d9830273e53def9b002feb0ba1f684d073de3acecc"
+      }
+    },
+    "US-HI:deposit:9d53b41287a4": {
+      "category": "deposit",
+      "title": "Haw. Rev. Stat. § 521-44(c)–(d)",
+      "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol12_Ch0501-0588/HRS0521/HRS_0521-0044.htm",
+      "locator": "Haw. Rev. Stat. § 521-44(c)–(d)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:21:54.111047+00:00",
+        "sha256": "ae922259fe854bdf5825060ee99b8b68495e9051afd0b1275987a65ae0f9dc89"
+      }
+    },
+    "US-HI:debtLaw:4392663849c4": {
+      "category": "debtLaw",
+      "title": "Haw. Rev. Stat. § 480D-3 (prohibited consumer-debt collection practices)",
+      "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol11_Ch0476-0490/HRS0480D/HRS_0480D-0003.htm",
+      "locator": "Haw. Rev. Stat. § 480D-3 (prohibited consumer-debt collection practices)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:35:16.700829+00:00",
+        "sha256": "addf57f4011639110b842282f12c09aacd3ee44dd7b1e055aac38258df31c57a"
+      }
+    },
+    "US-HI:debtLaw:47842d699f5f": {
+      "category": "debtLaw",
+      "title": "Haw. Rev. Stat. § 480D-2 (consumer debt and covered debt collectors)",
+      "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol11_Ch0476-0490/HRS0480D/HRS_0480D-0002.htm",
+      "locator": "Haw. Rev. Stat. § 480D-2 (consumer debt and covered debt collectors)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:35:16.708624+00:00",
+        "sha256": "66f08df72868870842e60cd296116e72d6ab99826b58d4fc52f1bfe12293797f"
+      }
+    },
+    "US-HI:debtLaw:a26865420a71": {
+      "category": "debtLaw",
+      "title": "Haw. Rev. Stat. § 443B-19 (collection agency unfair or unconscionable means)",
+      "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol10_Ch0436-0474/HRS0443B/HRS_0443B-0019.htm",
+      "locator": "Haw. Rev. Stat. § 443B-19 (collection agency unfair or unconscionable means)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:35:16.744966+00:00",
+        "sha256": "9447add5bbd46d5a876ed9726aae19dba49873aba8a35435ccf5b9945452912d"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-HI:court:ef8dc041901c",
+      "name": "Supreme Court of Hawaii",
+      "level": "highest_directory",
+      "source_id": "US-HI:court_directory:7631297300ed"
+    },
+    {
+      "id": "US-HI:court:a257d035542e",
+      "name": "Intermediate Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-HI:court_directory:f4ffeb91c5c3"
+    },
+    {
+      "id": "US-HI:court:061d7d2af052",
+      "name": "Land and Tax Appeal Courts",
+      "level": "trial_directory",
+      "source_id": "US-HI:court_directory:382cbbee01c1"
+    },
+    {
+      "id": "US-HI:court:31b6f0f4a057",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-HI:court_directory:28aaf5641843"
+    },
+    {
+      "id": "US-HI:court:a814224d39de",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-HI:court_directory:fa51882acba9"
+    },
+    {
+      "id": "US-HI:court:fa45616aafa9",
+      "name": "Family Courts",
+      "level": "trial_directory",
+      "source_id": "US-HI:court_directory:a8089c84745f"
+    },
+    {
+      "id": "US-HI:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-HI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-HI:court:3c9c83e81fef",
+      "name": "District",
+      "level": "limited_trial",
+      "source_id": "US-HI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Haw. Rev. Stat. § 657-7",
+      "source_id": "US-HI:pi_limitations:57f7eb463907",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Haw. Rev. Stat. § 657-1(1)",
+      "source_id": "US-HI:written_contract_limitations:a89665f68c95",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Haw. Rev. Stat. § 657-1(1)",
+      "source_id": "US-HI:oral_contract_limitations:a89665f68c95",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Haw. Rev. Stat. § 521-74. Retaliatory evictions and rent increases prohibited.; Haw. Rev. Stat. § 521-41. Landlord to supply possession of dwelling unit.; Haw. Rev. Stat. § 666-1. Summary possession on termination or forfeiture of lease.",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Haw. Rev. Stat. § 480-1 et seq.",
+      "source_id": "US-HI:consumerLaw:cc8a7adaf621",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "91f5bae2ad0d0cc93bceddc108ddb9": {
+      "citation": "Haw. Rev. Stat. § 663-31(a)",
+      "source_id": "US-HI:fault:214876141e1f",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "(a) Contributory negligence shall not bar recovery in any action by any person or the person's legal representative to recover damages for negligence resulting in death or in injury to person or property, if such negligence was not greater than the negligence of the person or in the case of more than one person, the aggregate negligence of such persons against whom recovery is sought, but any damages allowed shall be diminished in proportion to the amount of negligence attributable to the person for whose injury, damage or death recovery is made.",
+      "text_sha256": "d5dea9f29a90aee8e50671756adc095dfb3f652e13888657112f47160cc9b1b8",
+      "publisher_sha256": "d7c666e6b2af18266d46f5f72234074d3d7c9f7ebf9883cc9320bf58673e75ee",
+      "retrieved_at": "2026-11-17T20:50:33.257382+00:00",
+      "currentness": "unresolved"
+    },
+    "9dd525d196fd7a0df048b884940cf3": {
+      "source_id": "US-HI:consumerLaw:8c81e1f5234e",
+      "authority_type": "statute",
+      "citation": "Haw. Rev. Stat. § 480-2(a)",
+      "text": "(a) Unfair methods of competition and unfair or deceptive acts or practices in the conduct of any trade or commerce are unlawful.",
+      "text_sha256": "0139439c2738294f644cea3fdbf1e07ebc3808bf83e8dfed6bf98986c662b3aa",
+      "publisher_sha256": "f8b20c527cf15825b8d76914cb164885098c7ce58cbfc59dc4615b1d05681542",
+      "retrieved_at": "2026-11-17T21:03:51.931418+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "456012dda871ccfee76d5c9d91842d": {
+      "source_id": "US-HI:contract_formation:7584497236b2",
+      "authority_type": "statute",
+      "citation": "Haw. Rev. Stat. § 490:2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "c3e25312213992e9c14db0e8600dba2fe84b77351bace8f304221ad4f614e785",
+      "retrieved_at": "2026-11-18T15:14:38.712693+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "64689116d4e51bfd75500289b954d2": {
+      "source_id": "US-HI:commencement:96af7fb055aa",
+      "authority_type": "court_rule",
+      "citation": "Haw. R. Civ. P. 3",
+      "text": "A civil action is commenced by filing a complaint with the court.",
+      "text_sha256": "4345c2469f24d6e60fd993cb2587c8049f27a75270937dfa9b4748be88f154d9",
+      "publisher_sha256": "e74747393544ab0c36f0f3db12bf460db86c2995dd7e3ac3dfef00a9643a384a",
+      "retrieved_at": "2026-11-18T20:45:58.834498+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Hawaii Circuit Court"
+    },
+    "97ff3c9e731684bf3a4965c7e98659": {
+      "source_id": "US-HI:wageLaw:912721875084",
+      "authority_type": "statute",
+      "citation": "Haw. Rev. Stat. § 388-2",
+      "text": "(a) Every employer shall pay all wages due to the employer's employees at least twice during each calendar month, on regular paydays designated in advance by the employer, in lawful money of the United States, with checks convertible into cash on demand at full face value thereof, by direct deposit to the employee's account at a federally insured depository institution as provided in subsection (d), or by other means as provided in section 388-5.7; provided that when a majority of an employer's employees or a majority of the employees in a collective bargaining unit recognized by an employer or established by law elect, in a secret ballot election under procedures approved by the director of labor and industrial relations, to be paid once a month on a regularly scheduled basis, the employees shall be paid on such monthly basis. The elections shall not be held more frequently than once in every two years and each election shall be valid for a period of two years. (b) The earned wages of all employees shall be due and payable within seven days after the end of each pay period. (c) The director may, upon application showing good and sufficient reasons, permit an employer to: (1) Establish regular paydays less frequently than semimonthly; provided that the employee shall be paid in full at least once each calendar month on a regularly established schedule; or (2) Pay earned wages within fifteen days after the end of each pay period. (d) An employer may pay wages due to the employer's employees by direct deposit to the employee's account at a financial institution; provided that: (1) The employee has voluntarily authorized, in writing or via electronic signature, the direct deposit to the account and financial institution of the employee's choice; (2) The deposits and accounts of the financial institution selected are insured by the Federal Deposit Insurance Corporation or any other comparable federal or state agency; (3) The employee may cancel the direct deposit at any time with reasonable notice; (4) The employer shall provide a pay statement as required under section 388-7(4); (5) No employee shall be required to pay any costs or fees for the direct deposit of wages into the employee's account; and (6) No employee may be disciplined or otherwise penalized for authorizing or refusing to authorize the direct deposit of wages.",
+      "text_sha256": "599044f13fd2a00006fe3564af872d69042e1ad39d3dd0065347fa637a1757bf",
+      "publisher_sha256": "0d9d8dff8af32500e4a04bf5f939ccbd2403f28a46f727d9a27f9643e252c2ad",
+      "retrieved_at": "2026-11-19T14:10:53.644552+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Hawaii Legislature archive, 2017 session"
+    },
+    "9c39068141798683788e80d6a0cecb": {
+      "source_id": "US-HI:service:70db2b1f2445",
+      "authority_type": "court_rule",
+      "citation": "Haw. R. Civ. P. 4(c)",
+      "text": "(c) Same: By whom served. Service of al l process shall be made: (1) anywhere in the State by the sheriff or the sheriff's deputy, by some other person specially appointed by the court for that purpose, or by any person who is not a party and is not less than 18 years of age; or (2) in any county by the chief of police or the chief's duly authorized subordinate. A subpoena, however, may be served as provided in Rule 45.",
+      "text_sha256": "f497272593dcafb0b6fb81d5d2ace99f3cf438789b30ae7e109ae430d2bd548f",
+      "publisher_sha256": "e74747393544ab0c36f0f3db12bf460db86c2995dd7e3ac3dfef00a9643a384a",
+      "retrieved_at": "2026-11-18T20:45:58.834498+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Hawaii Circuit Court"
+    },
+    "07a79c942cca863e96f046d662ec33": {
+      "source_id": "US-HI:response:bdec0caac404",
+      "authority_type": "court_rule",
+      "citation": "Haw. R. Civ. P. 12(a)",
+      "text": "(a) When presented. (1) A defendant shall serve an answer withi n 20 days after being served with the summons and complaint, except when service is made under Rule 4(c) and a different time is prescribed in an order of court under a statute or rule of court. (2) A party served with a pleading stating a cross-claim against that party shall serve an answer thereto within 20 days after being served. The plaintiff shall serve a reply to a counter -claim in the answer within 20 days after service of the answer or, if a reply is ordered by the court, within 20 days after service of the order, unless the order otherwise directs. (3) The service of a motion permitted under this rule alters these periods of time as follows, unless a different time is fixed by order of the court: (A) if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within 10 days after notice of the court's action; (B) if the court grants a motion for a mor e definite statement the responsive pleading shall be served within 10 days after the service of the more definite statement.",
+      "text_sha256": "ee4fbe3be0158eeb83d0249f6f117319eaed738b110d6e131a76d48b64b2d9ef",
+      "publisher_sha256": "e74747393544ab0c36f0f3db12bf460db86c2995dd7e3ac3dfef00a9643a384a",
+      "retrieved_at": "2026-11-18T20:45:58.834498+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Hawaii Circuit Court"
+    },
+    "de8e4d5fe7befe60449759fa31ef32": {
+      "source_id": "US-HI:pi_limitations:2d79a64d0936",
+      "authority_type": "statute",
+      "citation": "Haw. Rev. Stat. § 657-7",
+      "text": "Actions for the recovery of compensation for damage or injury to persons or property shall be instituted within two years after the cause of action accrued, and not after, except as provided in section 657-13.",
+      "text_sha256": "4fec815e4ca698689d765137f5b59c6d78c0db1111770fc103716da2b9f9c38b",
+      "publisher_sha256": "949c0f595ea050ef495098121f7b5a776086265e452881e2b0e76edca5a4b373",
+      "retrieved_at": "2026-11-19T19:31:21.302815+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Hawaii Legislature archive, 2017 session"
+    },
+    "435fed4b4f3f84fe6455cbeb2eef8b": {
+      "source_id": "US-HI:small_claims:d1156d2b988b",
+      "authority_type": "statute",
+      "citation": "Haw. Rev. Stat. § 633-27",
+      "text": "(a) All district courts, except as otherwise provided, shall exercise jurisdiction conferred by this chapter, and while sitting in the exercise of that jurisdiction, shall be known and referred to as the small claims division of the district court; provided that the jurisdiction of the court when sitting as a small claims division of the district court shall be confined to: (1) Cases for the recovery of money only where the amount claimed does not exceed $5,000 exclusive of interest and costs, except as provided by section 633‑30; (2) Cases involving disagreement between landlord and tenant about the security deposit in a residential landlord-tenant relationship; and (3) Cases for the return of leased or rented personal property worth less than $5,000 where the amount claimed owed for that lease or rental is less than $5,000 exclusive of interest and costs. This chapter shall not abridge or affect the jurisdiction of the district courts under paragraphs (1) and (3) to determine cases under the ordinary procedures of the court, it being optional with the plaintiff in the cases to elect the procedure of the small claims division of the district court or the ordinary procedures, as provided by rule of court. No case filed in the small claims division after December 31, 1991, shall be removed from the small claims division to be heard under the ordinary procedures of the district court unless the removal is agreed to by the plaintiff. In cases arising under paragraph (2), the jurisdiction of the small claims division of the district court shall be exclusive; provided that the district court, having jurisdiction over a civil action involving summary possession, shall have concurrent jurisdiction with the small claims division of the district court over any security deposit dispute between landlord and tenant in a residential landlord-tenant relationship. This subsection shall not abrogate or supersede sections 604-5, 633-30, and 633-31. (b) Actions shall be commenced in the small claims division of the district court of the judicial circuit in which the defendant or a majority of the defendants reside or the claim for relief arose, unless service cannot be made on all of the defendants in that circuit, in which case action may be commenced in any circuit in which all of the defendants can be served; provided that actions arising under paragraph (2) of subsection (a) of this section shall be commenced in the circuit wherein the rental premises are situated. (c) The small claims division of the district court may grant monetary relief and equitable relief except that: (1) Monetary relief shall not include punitive damages; and (2) Except as specifically provided in section 633-8, equitable relief shall be granted only as between parties to a landlord-tenant disagreement pursuant to chapter 521, and shall be limited to orders to repair, replace, refund, reform, and rescind. (d) Class actions are prohibited in the small claims division of the district court.",
+      "text_sha256": "c8e3c116177d73bfcad59269fc49ed3120be6aa4947635a54f3e4c1720ed0b8f",
+      "publisher_sha256": "42ae7b738cb00fdd1ed1b26609bff5be8534d9b58c504fdd22b45c02f823632f",
+      "retrieved_at": "2026-11-20T16:16:29.432489+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Hawaii District Court Small Claims Division"
+    },
+    "87939fb2b9614d94ac31948c196c08": {
+      "source_id": "US-HI:negligence_elements:bd0452d04b9c",
+      "authority_type": "opinion",
+      "citation": "Molfino v. Yuen, No. SCWC-10-0000150 (Haw. Nov. 13, 2014)",
+      "text": "In order to prevail on a negligence claim, a plaintiff is required to prove all four of the necessary elements of negligence: (1) A duty, or obligation, recognized by the law, requiring the defendant to conform to a certain standard of conduct, for the protection of others against unreasonable risks; (2) A failure on the defendant’s part to conform to the standard required: a breach of the duty; (3) A reasonably close causal connection between the conduct and the resulting injury; and (4) Actual loss or damage resulting to the interests of another.",
+      "text_sha256": "77cc009c63ceadb789d1fd3f5cdb22716b1a124e1c83dd9fe270d6bb629f735a",
+      "publisher_sha256": "e6ad43857748e803629d82d9830273e53def9b002feb0ba1f684d073de3acecc",
+      "retrieved_at": "2026-11-20T18:12:28.237074+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2014-11-13",
+      "court": "Supreme Court of Hawaiʻi",
+      "decision_date": "2014-11-13",
+      "procedural_posture": "Certiorari review of summary judgment on a negligence claim about county maintenance of property records.",
+      "opinion_role": "majority"
+    },
+    "dd15719bfba6b8864af7ce6f340fd3": {
+      "source_id": "US-HI:deposit:9d53b41287a4",
+      "authority_type": "statute",
+      "citation": "Haw. Rev. Stat. § 521-44(c)–(d)",
+      "text": "(c) At the termination of a rental agreement in which the landlord required and received a security deposit if the landlord proposes to retain any amount of the security deposit for any of the purposes specified in subsection (a), the landlord shall so notify the tenant, in writing, unless the tenant had wrongfully quit the dwelling unit, together with the particulars of and grounds for the retention, including written evidence of the costs of remedying tenant defaults, such as estimates or invoices for material and services or of the costs of cleaning, such as receipts for supplies and equipment or charges for cleaning services. The security deposit, or the portion of the security deposit remaining after the landlord has claimed and retained amounts authorized under this section, if any, shall be returned to the tenant not later than fourteen days after the termination of the rental agreement. If the landlord does not furnish the tenant with the written notice and other information required by this subsection, within fourteen days after the termination of the rental agreement, the landlord shall not be entitled to retain the security deposit or any part of it, and the landlord shall return the entire amount of the security deposit to the tenant. A return of the security deposit or the furnishing of the written notice and other required information in compliance with the requirements of this subsection shall be presumptively proven if mailed to the tenant, at an address supplied to the landlord by the tenant, with acceptable proof of mailing and postmarked before midnight of the fourteenth day after the date of the termination of the rental agreement or if there is an acknowledgment by the tenant of receipt within the fourteen-day limit. All actions for the recovery of a landlord's complete or partial retention of the security deposit shall be instituted not later than one year after termination of the rental agreement. (d) For the purposes of this section if a tenant is absent from the dwelling unit for a continuous period of twenty days or more without written notice to the landlord the tenant shall be deemed to have wrongfully quit the dwelling unit; provided that the tenant shall not be considered to be absent from the dwelling unit without notice to the landlord during any period for which the landlord has received payment of rent. In addition to any other right or remedy the landlord has with respect to such a tenant the landlord may retain the entire amount of any security deposit the landlord has received from or on behalf of such tenant.",
+      "text_sha256": "03020bb7c7e27a094765ab9ce773ab5c17ec8cee8a3d141a53fcc3f91adff867",
+      "publisher_sha256": "ae922259fe854bdf5825060ee99b8b68495e9051afd0b1275987a65ae0f9dc89",
+      "retrieved_at": "2026-11-20T18:21:54.111047+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "8144f2d5d76c1dc921e2d47473d5b0": {
+      "source_id": "US-HI:debtLaw:4392663849c4",
+      "authority_type": "statute",
+      "citation": "Haw. Rev. Stat. § 480D-3 (prohibited consumer-debt collection practices)",
+      "text": "It shall be a prohibited practice for any debt collector to engage in any of the following practices while collecting a consumer debt: (1) To threaten the use of violence or other criminal means to cause harm to the physical person, reputation, or property of any person; (2) To falsely accuse or threaten to falsely accuse any person of fraud or any other criminal conduct; (3) To make false accusations or threaten to make false accusations, to another person, including any credit reporting agency, that a debt has not been paid; (4) To threaten that nonpayment of a debt will result in the arrest of any person; (5) To threaten to turn over the collection of the debt to a person who will engage in practices prohibited by this section; (6) To threaten to sell or assign the debt with statements that, or implying that, the sale or assignment will cause the debtor to lose a defense or legal right as a result of the sale or assignment; (7) To use profane or obscene language that is intended to abuse the hearer or reader; (8) To disclose, publish, or communicate any false and material information relating to the indebtedness; (9) To represent that an existing obligation may be increased by attorney's fees, investigation fees, service fees, and other fees or charges when in fact the fees or charges may not legally be added to the existing obligations; (10) To seek or obtain any statement or acknowledgment that the debt was incurred for necessities of life when in fact the debt was not so incurred; or (11) To collect or attempt to collect any interest, charge, fee, or expense incidental to the debt unless the additions are authorized by the agreement or by law.",
+      "text_sha256": "51bc4cac5d9d115d69ab79f0f6ff7ca9e2e7afb47ffaf6d954bcf773251d451e",
+      "publisher_sha256": "addf57f4011639110b842282f12c09aacd3ee44dd7b1e055aac38258df31c57a",
+      "retrieved_at": "2026-11-20T18:35:16.700829+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "dbe34fc515153f3d449036a397f8fb": {
+      "source_id": "US-HI:debtLaw:47842d699f5f",
+      "authority_type": "statute",
+      "citation": "Haw. Rev. Stat. § 480D-2 (consumer debt and covered debt collectors)",
+      "text": "\"Consumer debt\" means any debt of a natural person incurred primarily for personal, family, or household purposes. \"Debt\" means any obligation or alleged obligation of a person to pay money arising out of any transaction, whether or not the obligation has been reduced to judgment. \"Debt collector\" means any person, who is not a collection agency regulated pursuant to chapter 443B, and who in the regular course of business collects or attempts to collect consumer debts owed or due or asserted to be owed or due to the collector.",
+      "text_sha256": "e582ca776a7363cfe9ee25739513c63de7b03016ed7de95dc4d58235c3206a72",
+      "publisher_sha256": "66f08df72868870842e60cd296116e72d6ab99826b58d4fc52f1bfe12293797f",
+      "retrieved_at": "2026-11-20T18:35:16.708624+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "fd60f1e2d3b142f53fc128b45482a3": {
+      "source_id": "US-HI:debtLaw:a26865420a71",
+      "authority_type": "statute",
+      "citation": "Haw. Rev. Stat. § 443B-19 (collection agency unfair or unconscionable means)",
+      "text": "No collection agency shall use unfair or unconscionable means to collect or attempt to collect any claim in any of the following ways: (1) The seeking or obtaining of any written statement or acknowledgment in any form that a debtor or alleged debtor's obligation is one incurred for necessities of life where the original obligation was not in fact incurred for these necessities; (2) The seeking or obtaining of any written statement or acknowledgment in any form containing an affirmation of any obligation by a debtor or alleged debtor who has been declared bankrupt, without clearly disclosing the nature and consequences of the affirmation and the fact that the debtor or alleged debtor is not legally obligated to make the affirmation; (3) The collection of or the attempt to collect from a debtor or alleged debtor all or any part of the collection agency's fees or charges for services rendered; (4) The collection of or the attempt to collect any interest or other charge, fee, or expense incidental to the principal obligation unless the interest or incidental fee, charge, or expense is expressly authorized by the agreement creating the obligation and legally chargeable to the debtor or alleged debtor; or unless the interest or incidental fee, charge, or expense is expressly authorized by law; and (5) Any communication with a debtor or alleged debtor whenever it appears that the debtor or alleged debtor is represented by an attorney and the attorney's name and address are known.",
+      "text_sha256": "304ea1c4783033b53354a1e800b32502d09354b50274d0a9a6ece4538f65e931",
+      "publisher_sha256": "9447add5bbd46d5a876ed9726aae19dba49873aba8a35435ccf5b9945452912d",
+      "retrieved_at": "2026-11-20T18:35:16.744966+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "91f5bae2ad0d0cc93bceddc108ddb9",
+    "source_id": "US-HI:fault:214876141e1f",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

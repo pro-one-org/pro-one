@@ -1,0 +1,667 @@
+{
+  "jurisdiction": "US-OK",
+  "version": "1",
+  "sources": {
+    "US-OK:statutes:0157f3b9b9e3": {
+      "category": "statutes",
+      "title": "Oklahoma State Statutes",
+      "url": "http://www.oscn.net/applications/oscn/index.asp?ftdb=STOKST&level=1",
+      "directory": "codes",
+      "locator": "Oklahoma"
+    },
+    "US-OK:constitution:c3ecd398bed9": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.oscn.net/applications/oscn/index.asp?ftdb=STOKCN&level=1",
+      "directory": "codes",
+      "locator": "Oklahoma"
+    },
+    "US-OK:legislature:4d71ea885a6d": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.oklegislature.gov/",
+      "directory": "codes",
+      "locator": "Oklahoma"
+    },
+    "US-OK:labor_agency:09fb4f9cafe2": {
+      "category": "labor_agency",
+      "title": "www.oklahoma.gov/labor",
+      "url": "https://oklahoma.gov/labor.html",
+      "directory": "labor",
+      "locator": "Oklahoma"
+    },
+    "US-OK:commercial_code:c891efe9cbd7": {
+      "category": "commercial_code",
+      "title": "Commercial Code",
+      "url": "http://webserver1.lsb.state.ok.us/OK_Statutes/CompleteTitles/os12A.rtf",
+      "directory": "ucc",
+      "locator": "Oklahoma"
+    },
+    "US-OK:civil_rules:34a4ba35feea": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "http://webserver1.lsb.state.ok.us/OK_Statutes/CompleteTitles/os12.rtf",
+      "directory": "procedure",
+      "locator": "Oklahoma"
+    },
+    "US-OK:consumer_agency:38f60df3670d": {
+      "category": "consumer_agency",
+      "title": "Oklahoma (OK)",
+      "url": "https://oklahoma.gov/oag/about/divisions/cpu.html",
+      "directory": "consumer",
+      "locator": "Oklahoma (OK)"
+    },
+    "US-OK:judiciary:2769bf2ea835": {
+      "category": "judiciary",
+      "title": "Oklahoma Courts Network",
+      "url": "https://www.oscn.net/applications/oscn/start.asp",
+      "directory": "doj-OK",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-OK:judiciary:a1aac4435ed9": {
+      "category": "judiciary",
+      "title": "Court Rules",
+      "url": "https://www.oscn.net/applications/oscn/index.asp?ftdb=STOKRU&level=1",
+      "directory": "doj-OK",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-OK:judiciary:8f7664e9eb8e": {
+      "category": "judiciary",
+      "title": "Civil and Criminal Jury Instructions",
+      "url": "https://www.oscn.net/applications/oscn/index.asp?ftdb=STOKJU&level=1",
+      "directory": "doj-OK",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-OK:judiciary:b262b88482b4": {
+      "category": "judiciary",
+      "title": "OSCN Case Search",
+      "url": "https://www.oscn.net/dockets/search.aspx#all",
+      "directory": "doj-OK",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-OK:court_directory:c5d317ed0984": {
+      "category": "court_directory",
+      "title": "Supreme Court and Civil Court of Appeals",
+      "url": "https://www.oscn.net/oscn/schome/start.htm",
+      "directory": "doj-OK",
+      "locator": "Supreme Court and Civil Court of Appeals"
+    },
+    "US-OK:court_directory:60589d96b415": {
+      "category": "court_directory",
+      "title": "Court of Criminal Appeals",
+      "url": "http://www.okcca.net/",
+      "directory": "doj-OK",
+      "locator": "Court of Criminal Appeals"
+    },
+    "US-OK:opinions:e42760bc8eb5": {
+      "category": "opinions",
+      "title": "Indian Territory Court Decisions",
+      "url": "https://www.oscn.net/applications/oscn/index.asp?ftdb=FDCSIT&level=1",
+      "directory": "doj-OK",
+      "locator": "State and Local Courts / Local/Lower Courts"
+    },
+    "US-OK:court_directory:ca25fe054519": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "https://www.oscn.net/applications/oscn/start.asp?viewType=COURTS",
+      "directory": "doj-OK",
+      "locator": "District Courts"
+    },
+    "US-OK:forms:864511c949c9": {
+      "category": "forms",
+      "title": "Legal Forms",
+      "url": "https://www.oscn.net/static/forms/start.asp",
+      "directory": "doj-OK",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-OK:forms:f74d6a50e475": {
+      "category": "forms",
+      "title": "Supreme Court Forms",
+      "url": "https://www.oscn.net/static/forms/scforms.asp",
+      "directory": "doj-OK",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-OK:forms:3f1b6cb4b772": {
+      "category": "forms",
+      "title": "Court of Criminal Appeals Forms",
+      "url": "https://www.oscn.net/static/forms/ccaforms.asp",
+      "directory": "doj-OK",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-OK:constitution:9adbea74e48b": {
+      "category": "constitution",
+      "title": "Oklahoma Constitution",
+      "url": "https://www.oklegislature.gov/ok_constitution.html",
+      "directory": "doj-OK",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-OK:statutes:1398685fa09b": {
+      "category": "statutes",
+      "title": "Statutes (Browse)",
+      "url": "https://www.oscn.net/applications/oscn/index.asp?ftdb=STOKST&level=1",
+      "directory": "doj-OK",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-OK:statutes:14cbf6ce0e2e": {
+      "category": "statutes",
+      "title": "Statutes (Search)",
+      "url": "https://www.oklegislature.gov/osStatuesTitle.aspx",
+      "directory": "doj-OK",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-OK:regulations:cb16c0a65bd1": {
+      "category": "regulations",
+      "title": "Administrative Code and Register",
+      "url": "https://rules.ok.gov/code",
+      "directory": "doj-OK",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-OK:pi_limitations:b47f18ffbbdc": {
+      "category": "pi_limitations",
+      "title": "Okla. Stat. tit. 12, § 95(A)(3)",
+      "url": "https://www.oscn.net/applications/oscn/index.asp?ftdb=STOKST12&level=1",
+      "directory": "limitations",
+      "locator": "personalInjury"
+    },
+    "US-OK:written_contract_limitations:b47f18ffbbdc": {
+      "category": "written_contract_limitations",
+      "title": "Okla. Stat. tit. 12, § 95(A)(1)",
+      "url": "https://www.oscn.net/applications/oscn/index.asp?ftdb=STOKST12&level=1",
+      "directory": "limitations",
+      "locator": "writtenContract"
+    },
+    "US-OK:oral_contract_limitations:b47f18ffbbdc": {
+      "category": "oral_contract_limitations",
+      "title": "Okla. Stat. tit. 12, § 95(A)(2)",
+      "url": "https://www.oscn.net/applications/oscn/index.asp?ftdb=STOKST12&level=1",
+      "directory": "limitations",
+      "locator": "oralContract"
+    },
+    "US-OK:small_claims:36a40d6fc1a1": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.oscn.net/applications/oscn/deliverdocument.asp?citeid=438809",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.oscn.net/applications/oscn/deliverdocument.asp?citeid=438809",
+        "retrieved_at": "2026-11-17T19:42:56.745185+00:00",
+        "http_status": "200",
+        "sha256": "ef11f2943cad8c98c36d637df452da8f67d79178783bef0e4091fc5ac81801b2",
+        "health": "manual_review_required"
+      }
+    },
+    "US-OK:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 28"
+    },
+    "US-OK:fault:55bfbdecb41d": {
+      "category": "fault",
+      "title": "Fault allocation research publication",
+      "url": "https://www.oscn.net/applications/oscn/DeliverDocument.asp?CiteID=74059",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.oscn.net/applications/oscn/DeliverDocument.asp?CiteID=74059",
+        "retrieved_at": "2026-11-17T19:42:56.115277+00:00",
+        "http_status": "200",
+        "sha256": "0747f405e87c3b105cd1e1918fd3f785e76b6e36a4d5a7cc6a97a07647f80ecb",
+        "health": "manual_review_required"
+      }
+    },
+    "US-OK:deposit:9353ddb410a6": {
+      "category": "deposit",
+      "title": "Residential tenancy publication",
+      "url": "https://www.oscn.net/applications/oscn/deliverdocument.asp?citeid=71767",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.oscn.net/applications/oscn/deliverdocument.asp?citeid=71767",
+        "retrieved_at": "2026-11-17T19:42:57.006939+00:00",
+        "http_status": "200",
+        "sha256": "90602d9a582201eed3118f103e8d09fedae16b5c6c56bd49c3554b1b50698222",
+        "health": "manual_review_required"
+      }
+    },
+    "US-OK:wageLaw:dbd5e90ac4c7": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://oklahoma.gov/labor/workplace-rights/wage-hour/faqs---wage-and-hour.html",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://oklahoma.gov/labor/workplace-rights/wage-hour/faqs---wage-and-hour.html",
+        "retrieved_at": "2026-11-17T19:42:19.451196+00:00",
+        "http_status": "200",
+        "sha256": "4445fdb684c016f4e5c7500316143d20cb32291669bb431aac0b7ace65c55ae8",
+        "health": "manual_review_required"
+      }
+    },
+    "US-OK:fault:c5d0cc690cdd": {
+      "category": "fault",
+      "title": "Okla. Stat. tit. 23, § 13",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os23.pdf",
+      "directory": null,
+      "locator": "Okla. Stat. tit. 23, § 13",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:38.843448+00:00",
+        "sha256": "2aa8239ae37628ca67b517a9a4ea35bd5d7c6c6c9a5d10891774875b0348c841"
+      }
+    },
+    "US-OK:consumerLaw:716d40a4ca23": {
+      "title": "Okla. Stat. tit. 15 § 751 et seq.",
+      "category": "consumerLaw",
+      "url": "https://oksenate.gov/sites/default/files/2019-12/os15.pdf",
+      "directory": "consumer_statutes_index",
+      "locator": "Okla. Stat. tit. 15 § 751 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-OK:contract_formation:bb0d3ff0a422": {
+      "category": "contract_formation",
+      "title": "Okla. Stat. tit. 12A, § 2-204",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os12A.pdf",
+      "locator": "Okla. Stat. tit. 12A, § 2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:40.851015+00:00",
+        "sha256": "96d558afd31b77cb055be7ce20bd66930dd0daf323e0728bf3559953527575a8"
+      }
+    },
+    "US-OK:contract_damages:bc0c1e97e5fa": {
+      "category": "contract_damages",
+      "title": "Okla. Stat. tit. 12A, § 2-714",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os12A.pdf",
+      "locator": "Okla. Stat. tit. 12A, § 2-714",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:40.851015+00:00",
+        "sha256": "96d558afd31b77cb055be7ce20bd66930dd0daf323e0728bf3559953527575a8"
+      }
+    },
+    "US-OK:negligence_elements:3265fa3d5e1f": {
+      "category": "negligence_elements",
+      "title": "Dirickson v. Mings, 1996 OK 2, ¶ 7",
+      "url": "https://www.oscn.net/applications/oscn/DeliverDocument.asp?CiteID=4426",
+      "locator": "Dirickson v. Mings, 1996 OK 2, ¶ 7",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:29:40.020548+00:00",
+        "sha256": "4508e2871be4121fe78a2f99dbae61e69df3fc438831f13bae69b33b1d50679e"
+      }
+    },
+    "US-OK:pi_limitations:efd2d92bcd8d": {
+      "category": "pi_limitations",
+      "title": "Okla. Stat. tit. 12, § 95(A)(3)",
+      "url": "https://www.oscn.net/applications/oscn/DeliverDocument.asp?citeid=480528",
+      "locator": "Okla. Stat. tit. 12, § 95(A)(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:34:30.366584+00:00",
+        "sha256": "10b29cdc5bfe60ddf96e8c364f24f20c560344c24fd7ea26e3f9bfb6446f7e2a"
+      }
+    },
+    "US-OK:pi_limitations:6129d861a953": {
+      "category": "pi_limitations",
+      "title": "Okla. Stat. tit. 12, § 95(A)(3)",
+      "url": "https://www.oscn.net/applications/oscn/DeliverDocument.asp?CiteID=439150",
+      "locator": "Okla. Stat. tit. 12, § 95(A)(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:40:19.184815+00:00",
+        "sha256": "a0176467f9e0b54a37151b386244b49935440afad82b104274a9678344be5366"
+      }
+    },
+    "US-OK:consumerLaw:a0bf98492f10": {
+      "category": "consumerLaw",
+      "title": "Okla. Stat. tit. 15, § 753(1)–(5)",
+      "url": "https://www.oscn.net/applications/oscn/deliverdocument.asp?citeid=436245",
+      "locator": "Okla. Stat. tit. 15, § 753(1)–(5)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:20:54.659965+00:00",
+        "sha256": "6d5dbd85aa840465cf2de863b640a03a7a771398787c624d9edc753d4e25a9f5"
+      }
+    },
+    "US-OK:deposit:fe04efcbc246": {
+      "category": "deposit",
+      "title": "Okla. Stat. tit. 41, § 115(B)",
+      "url": "https://oksenate.gov/sites/default/files/2019-12/os41.pdf",
+      "locator": "Okla. Stat. tit. 41, § 115(B)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:17.575803+00:00",
+        "sha256": "d4dc2f8191ec32b910b65f98bae1353d3f3cbf8b71edf75a80e87022445e72bd"
+      }
+    },
+    "US-OK:wageLaw:632f5dc253de": {
+      "category": "wageLaw",
+      "title": "Okla. Stat. tit. 40, § 165.3(A)–(B)",
+      "url": "https://oksenate.gov/sites/default/files/2019-12/os40.pdf",
+      "locator": "Okla. Stat. tit. 40, § 165.3(A)–(B)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:27:35.114115+00:00",
+        "sha256": "0792c2e7714eae1611479043c9fd58bdcccf51ee55799a84f0ef7f1b7dd3ae7b"
+      }
+    },
+    "US-OK:small_claims:5f455af8b91f": {
+      "category": "small_claims",
+      "title": "Okla. Stat. tit. 12, § 1751(A) (actions within small claims procedure)",
+      "url": "https://www.oscn.net/applications/oscn/deliverdocument.asp?citeid=438809",
+      "locator": "Okla. Stat. tit. 12, § 1751(A) (actions within small claims procedure)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:32:56.487792+00:00",
+        "sha256": "ef11f2943cad8c98c36d637df452da8f67d79178783bef0e4091fc5ac81801b2"
+      }
+    },
+    "US-OK:debt_forum:b1be561fdcce": {
+      "category": "debt_forum",
+      "title": "Okla. Stat. tit. 12, § 1751(B) (small-claims limits on collectors and assignees)",
+      "url": "https://www.oscn.net/applications/oscn/deliverdocument.asp?citeid=438809",
+      "locator": "Okla. Stat. tit. 12, § 1751(B) (small-claims limits on collectors and assignees)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:32:56.487792+00:00",
+        "sha256": "ef11f2943cad8c98c36d637df452da8f67d79178783bef0e4091fc5ac81801b2"
+      }
+    },
+    "US-OK:debtLaw:a34838bebf14": {
+      "category": "debtLaw",
+      "title": "Okla. Stat. tit. 14A, § 5-108 (consumer sales, leases and loans)",
+      "url": "https://www.oscn.net/applications/oscn/deliverdocument.asp?citeid=65902",
+      "locator": "Okla. Stat. tit. 14A, § 5-108 (consumer sales, leases and loans)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:39:37.725444+00:00",
+        "sha256": "6490bf14ff38e910308d5dfb78d40dbff1d9315fd9c9db1a20e4c7b131e73522"
+      }
+    },
+    "US-OK:response:344dcefab5cb": {
+      "category": "response",
+      "title": "Okla. Stat. tit. 12, § 2012(A) (time and reservations for pleadings)",
+      "url": "https://www.oscn.net/applications/oscn/DeliverDocument.asp?CiteID=94873",
+      "locator": "Okla. Stat. tit. 12, § 2012(A) (time and reservations for pleadings)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:31:57.123801+00:00",
+        "sha256": "c1d70bf0c72f1c64ced651fa801139f103827c7f8f1b920ae6d4faa5e55729bf"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-OK:court:55fd3cb8b58a",
+      "name": "Supreme Court and Civil Court of Appeals",
+      "level": "highest_directory",
+      "source_id": "US-OK:court_directory:c5d317ed0984"
+    },
+    {
+      "id": "US-OK:court:fc8ab3e0a256",
+      "name": "Court of Criminal Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-OK:court_directory:60589d96b415"
+    },
+    {
+      "id": "US-OK:court:59003059c177",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-OK:court_directory:ca25fe054519"
+    },
+    {
+      "id": "US-OK:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-OK:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-OK:court:f957fe2a410f",
+      "name": "Municipal Not of Record",
+      "level": "limited_trial",
+      "source_id": "US-OK:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-OK:court:1673d6466e72",
+      "name": "Municipal of Record",
+      "level": "limited_trial",
+      "source_id": "US-OK:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-OK:court:b11065887313",
+      "name": "Workers’ Compensation",
+      "level": "limited_trial",
+      "source_id": "US-OK:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-OK:court:b756b6558275",
+      "name": "Tax Review",
+      "level": "limited_trial",
+      "source_id": "US-OK:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Okla. Stat. tit. 12, § 95(A)(3)",
+      "source_id": "US-OK:pi_limitations:b47f18ffbbdc",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Okla. Stat. tit. 12, § 95(A)(1)",
+      "source_id": "US-OK:written_contract_limitations:b47f18ffbbdc",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Okla. Stat. tit. 12, § 95(A)(2)",
+      "source_id": "US-OK:oral_contract_limitations:b47f18ffbbdc",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Okla. Stat. tit. 12 § 1148.2. Powers of Court; Okla. Stat. tit. 41 § 132. Tenant’s failure to comply with rental agreement or perform duties—Rights and duties of landlord",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Okla. Stat. tit. 15 § 751 et seq.",
+      "source_id": "US-OK:consumerLaw:716d40a4ca23",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "7e32e199f442b5cff4feee4043a2d0": {
+      "citation": "Okla. Stat. tit. 23, § 13",
+      "source_id": "US-OK:fault:c5d0cc690cdd",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "In all actions hereafter brought, whether arising before or after the effective date of this act, for negligence resulting in personal injuries or wrongful death, or injury to property, contributory negligence shall not bar a recovery, unless any negligence of the person so injured, damaged or killed, is of greater degree than any negligence of the person, firm or corporation causing such damage, or unless any negligence of the person so injured, damaged or killed, is of greater degree than Oklahoma Statutes - Title 23. Damages Page 9 the combined negligence of any persons, firms or corporations causing such damage.",
+      "text_sha256": "d21b27b9186cbd2273a2ebbb538ff84851f3451d0fc25c7b536dcf622d5ae2be",
+      "publisher_sha256": "2aa8239ae37628ca67b517a9a4ea35bd5d7c6c6c9a5d10891774875b0348c841",
+      "retrieved_at": "2026-11-17T20:50:38.843448+00:00",
+      "currentness": "unresolved"
+    },
+    "92142a1d8957058527168056cb1315": {
+      "source_id": "US-OK:contract_formation:bb0d3ff0a422",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 12A, § 2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "96d558afd31b77cb055be7ce20bd66930dd0daf323e0728bf3559953527575a8",
+      "retrieved_at": "2026-11-18T15:14:40.851015+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "e5e528a6e0a8c66bb8c35769728dc9": {
+      "source_id": "US-OK:contract_damages:bc0c1e97e5fa",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 12A, § 2-714",
+      "text": "(1) Where the buyer has accepted goods and given notification (subsection (3) of Section 2-607) he may recover as damages for any nonconformity of tender the loss resulting in the ordinary course of events from the seller's breach as determined in any manner which is reasonable. (2) The measure of damages for breach of warranty is the difference at the time and place of acceptance between the value of the goods accepted and the value they would have had if they had been as warranted, unless special circumstances show proximate damages of a different amount.",
+      "text_sha256": "15ecd0b85da6a3c1f59ac66486602922f5a4d04b748b3b8c6c780dee4af0542a",
+      "publisher_sha256": "96d558afd31b77cb055be7ce20bd66930dd0daf323e0728bf3559953527575a8",
+      "retrieved_at": "2026-11-18T15:14:40.851015+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "ceff70bb4aaefe35ba18d8c5ddbce1": {
+      "source_id": "US-OK:negligence_elements:3265fa3d5e1f",
+      "authority_type": "opinion",
+      "citation": "Dirickson v. Mings, 1996 OK 2, ¶ 7",
+      "text": "The elements of negligence are (1) the existence of a duty on the part of a defendant to protect the plaintiff from injury; (2) a violation of that duty; and (3) injury proximately resulting from the violation.",
+      "text_sha256": "44db4406e1929d172e9d5ed564964c1497bceda35db7ff45cb19b6ddec01272d",
+      "publisher_sha256": "4508e2871be4121fe78a2f99dbae61e69df3fc438831f13bae69b33b1d50679e",
+      "retrieved_at": "2026-11-20T15:29:40.020548+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 1996-01-16",
+      "court": "Supreme Court of Oklahoma",
+      "decision_date": "1996-01-16",
+      "opinion_role": "majority",
+      "procedural_posture": "Certiorari review of summary judgment arising from a motor-vehicle collision."
+    },
+    "17e52cb828939f2c9642f5c37112a4": {
+      "source_id": "US-OK:pi_limitations:efd2d92bcd8d",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 12, § 95(A)(3)",
+      "text": "3. Within two (2) years: An action for trespass upon real property; an action for taking, detaining, or injuring personal property, including actions for the specific recovery of personal property; an action for injury to the rights of another, not arising on contract, and not hereinafter enumerated; an action for relief on the ground of fraud - the cause of action in such case shall not be deemed to have accrued until the discovery of the fraud;",
+      "text_sha256": "e3d08ca17b1ca20f0ecb2ab5c7b6a942fe1d7836c4de84838553847887c341d9",
+      "publisher_sha256": "10b29cdc5bfe60ddf96e8c364f24f20c560344c24fd7ea26e3f9bfb6446f7e2a",
+      "retrieved_at": "2026-11-20T15:34:30.366584+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Oklahoma publisher’s version superseded November 1, 2017",
+      "effective_until": "2017-11-01"
+    },
+    "83053a0ecf1161abd40bd038191e4f": {
+      "source_id": "US-OK:pi_limitations:6129d861a953",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 12, § 95(A)(3)",
+      "text": "3. Within two (2) years: An action for trespass upon real property; an action for taking, detaining, or injuring personal property, including actions for the specific recovery of personal property; an action for injury to the rights of another, not arising on contract, and not hereinafter enumerated; an action for relief on the ground of fraud - the cause of action in such case shall not be deemed to have accrued until the discovery of the fraud;",
+      "text_sha256": "e3d08ca17b1ca20f0ecb2ab5c7b6a942fe1d7836c4de84838553847887c341d9",
+      "publisher_sha256": "a0176467f9e0b54a37151b386244b49935440afad82b104274a9678344be5366",
+      "retrieved_at": "2026-11-20T15:40:19.184815+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2017-11-01",
+      "edition": "OSCN section publication citing 2017 Oklahoma Acts chapters 221 and 378"
+    },
+    "e238266c127b36e11cd992bc4a7bee": {
+      "source_id": "US-OK:consumerLaw:a0bf98492f10",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 15, § 753(1)–(5)",
+      "text": "A person engages in a practice which is declared to be unlawful and deemed a Class D1 felony offense under the Oklahoma Consumer Protection Act when, in the course of the person's business, the person: 1. Represents, knowingly or with reason to know, that the subject of a consumer transaction is of a particular make or brand, when it is of another; 2. Makes a false or misleading representation, knowingly or with reason to know, as to the source, sponsorship, approval, or certification of the subject of a consumer transaction; 3. Makes a false or misleading representation, knowingly or with reason to know, as to affiliation, connection, association with, or certification by another; 4. Makes a false or misleading representation or designation, knowingly or with reason to know, of the geographic origin of the subject of a consumer transaction; 5. Makes a false representation, knowingly or with reason to know, as to the characteristics, ingredients, uses, benefits, alterations, or quantities of the subject of a consumer transaction or a false representation as to the sponsorship, approval, status, affiliation or connection of a person therewith;",
+      "text_sha256": "e2af6419e5a4a8c0d7d087a1617751e50b7bc468c002e90236e23267e84f7837",
+      "publisher_sha256": "6d5dbd85aa840465cf2de863b640a03a7a771398787c624d9edc753d4e25a9f5",
+      "retrieved_at": "2026-11-20T16:20:54.659965+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2026-01-01"
+    },
+    "afdcd8d1a57e942c61588a2772726f": {
+      "source_id": "US-OK:deposit:fe04efcbc246",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 41, § 115(B)",
+      "text": "B. Upon termination of the tenancy, any security deposit held by the landlord may be applied to the payment of accrued rent and the amount of damages which the landlord has suffered by reason of the tenant's noncompliance with this act and the rental agreement, all as itemized by the landlord in a written statement delivered by mail to be by return receipt requested and to be signed for by any person of statutory service age at such address or in person to the tenant if he can reasonably be found. If the landlord proposes to retain any portion of the security deposit for rent, damages or other legally allowable charges under the provisions of this act or the rental agreement, the landlord shall return the balance of the security deposit without interest to the tenant within forty-five (45) days after the termination of tenancy, delivery of possession and written demand by the tenant. If the tenant does not make such written demand of such deposit within six (6) months after termination of the tenancy, the deposit reverts to the landlord in consideration of the costs and burden of maintaining the escrow account, and the interest of the tenant in that deposit terminates at that time.",
+      "text_sha256": "59731b93d778bec7b492cb6533dec10eb64e40042ad174a46c6d0f951c0b8cff",
+      "publisher_sha256": "d4dc2f8191ec32b910b65f98bae1353d3f3cbf8b71edf75a80e87022445e72bd",
+      "retrieved_at": "2026-11-20T16:35:17.575803+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "464eeca16c69410e3582b04513b738": {
+      "source_id": "US-OK:wageLaw:632f5dc253de",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 40, § 165.3(A)–(B)",
+      "text": "A. Whenever an employee's employment terminates, the employer shall pay the employee's wages in full, less offsets and less any amount over which a bona fide disagreement exists, as defined by Section 165.1 of this title, at the next regular designated payday established for the pay period in which the work was performed either through the regular pay channels or by certified mail postmarked within the deadlines herein specified if requested by the employee, unless provided otherwise by a collective bargaining agreement that covers the employee. B. If an employer fails to pay an employee wages as required under subsection A of this section, such employer shall be additionally liable to the employee for liquidated damages in the amount of two percent (2%) of the unpaid wages for each day upon which such failure shall continue after the day the wages were earned and due if the employer willfully withheld wages over which there was no bona fide disagreement; or in an amount equal to the unpaid wages, whichever is smaller; provided, however, that for the purpose of such liquidated damages such failure shall not be deemed to continue after the date of the filing of a petition in bankruptcy with respect to the employer if he thereafter shall have been adjudicated bankrupt upon such petition.",
+      "text_sha256": "438533acb53baca074f0a31e151d89d63bfb23f5c89907c6b77073b9a74fec88",
+      "publisher_sha256": "0792c2e7714eae1611479043c9fd58bdcccf51ee55799a84f0ef7f1b7dd3ae7b",
+      "retrieved_at": "2026-11-20T17:27:35.114115+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2005-11-01"
+    },
+    "8b83b1ee383db7f4d99d69485e5829": {
+      "source_id": "US-OK:small_claims:5f455af8b91f",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 12, § 1751(A) (actions within small claims procedure)",
+      "text": "A. The following suits may be brought under the small claims procedure: 1. Actions for the recovery of money based on contract or tort, including subrogation claims, but excluding libel or slander, in which the amount sought to be recovered, exclusive of attorney fees and other court costs, does not exceed Ten Thousand Dollars ($10,000.00); 2. Actions to replevy personal property the value of which does not exceed Ten Thousand Dollars ($10,000.00). If the claims for possession of personal property and to recover money are pled in the alternative, the joinder of claims is permissible if neither the value of the property nor the total amount of money sought to be recovered, exclusive of attorney fees and other costs, exceeds Ten Thousand Dollars ($10,000.00); and 3. Actions in the nature of interpleader, as provided for in Section 2022 of this title, in which the value of the money which is the subject of such action does not exceed Ten Thousand Dollars ($10,000.00).",
+      "text_sha256": "2e99ecffc2d4e8bb393bdb9023c543f29dba7a740fce15204815f07a7ba8b3fe",
+      "publisher_sha256": "ef11f2943cad8c98c36d637df452da8f67d79178783bef0e4091fc5ac81801b2",
+      "retrieved_at": "2026-11-20T18:32:56.487792+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "b8b3f896f5ef2379330e55da9bb580": {
+      "source_id": "US-OK:debt_forum:b1be561fdcce",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 12, § 1751(B) (small-claims limits on collectors and assignees)",
+      "text": "B. No action may be brought under the small claims procedure by any collection agency, collection agent, or assignee of a claim, except that an action may be brought against an insurer or third-party administrator by a health care provider as that term is defined in Section 6552 of Title 36 of the Oklahoma Statutes, who is an assignee of benefits available under an accident and health insurance policy, trust, plan, or contract.",
+      "text_sha256": "2250596155e25265cf2c251c30c91cbfaed14c241b8632a8e6dbff025791f99d",
+      "publisher_sha256": "ef11f2943cad8c98c36d637df452da8f67d79178783bef0e4091fc5ac81801b2",
+      "retrieved_at": "2026-11-20T18:32:56.487792+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "72d41ddbe8d0635c3ee09e5e57e11e": {
+      "source_id": "US-OK:debtLaw:a34838bebf14",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 14A, § 5-108 (consumer sales, leases and loans)",
+      "text": "(1) With respect to a consumer credit sale, consumer lease, or consumer loan, if the court as a matter of law finds the agreement or any clause of the agreement to have been unconscionable at the time it was made the court may refuse to enforce the agreement, or it may enforce the remainder of the agreement without the unconscionable clause, or it may so limit the application of any unconscionable clause as to avoid any unconscionable result. (2) If it is claimed or appears to the court that the agreement or any clause thereof may be unconscionable the parties shall be afforded a reasonable opportunity to present evidence as to its setting, purpose, and effect to aid the court in making the determination. (3) For the purposes of this section, a charge or practice expressly permitted by this act is not in itself unconscionable.",
+      "text_sha256": "e229d376f7dfefc4345dbc33a0840f8d90f604ac6f46cf31ce5c5518da0792de",
+      "publisher_sha256": "6490bf14ff38e910308d5dfb78d40dbff1d9315fd9c9db1a20e4c7b131e73522",
+      "retrieved_at": "2026-11-20T18:39:37.725444+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1969-07-01"
+    },
+    "1501029b14820b2acf68afd4b5d3b4": {
+      "source_id": "US-OK:response:344dcefab5cb",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 12, § 2012(A) (time and reservations for pleadings)",
+      "text": "A. WHEN PRESENTED. 1. Unless a different time is prescribed by law, a defendant shall serve an answer: a. within twenty (20) days after the service of the summons and petition upon the defendant, b. within twenty (20) days after the service of the summons and petition upon the defendant, or within the last day for answering if applicable; provided, a defendant may file a reservation of time which shall extend the time to respond twenty (20) days from the last date for answering. The filing of such a reservation of time waives defenses of paragraphs 2, 3, 4, 5, 6, and 9 of subsection B of this section. 2. A party served with a pleading stating a cross-claim against that party shall serve an answer thereto within twenty (20) days after the service upon the party. 3. The plaintiff shall serve a reply to a counterclaim in the answer within twenty (20) days after service of the answer or, if a reply is ordered by the court, within twenty (20) days after service of the order, unless the order otherwise directs. 4. The party requesting a summons to be issued or filing a counter-claim or cross-claim may elect to have the answer served within thirty-five (35) days in lieu of the twenty (20) days set forth in this section. 5. The service of a motion permitted under this section or a motion for summary judgment alters these periods of time as follows: if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within twenty (20) days after notice of the court's action, unless a different time is fixed by order of the court.",
+      "text_sha256": "69c71b8d682ec0f15fb79936013e9af005598835d44415db01b952d249d099ee",
+      "publisher_sha256": "c1d70bf0c72f1c64ced651fa801139f103827c7f8f1b920ae6d4faa5e55729bf",
+      "retrieved_at": "2026-11-20T22:31:57.123801+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "7e32e199f442b5cff4feee4043a2d0",
+    "source_id": "US-OK:fault:c5d0cc690cdd",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

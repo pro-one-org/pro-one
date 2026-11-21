@@ -1,0 +1,733 @@
+{
+  "jurisdiction": "US-LA",
+  "version": "1",
+  "sources": {
+    "US-LA:statutes:68c1cfd511f9": {
+      "category": "statutes",
+      "title": "Louisiana Codes and Revised Statutes",
+      "url": "http://www.legis.la.gov/legis/LawSearch.aspx",
+      "directory": "codes",
+      "locator": "Louisiana"
+    },
+    "US-LA:constitution:5cc5b8fcfdc6": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://senate.legis.state.la.us/Documents/Constitution/",
+      "directory": "codes",
+      "locator": "Louisiana"
+    },
+    "US-LA:legislature:c7438549a200": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.legis.la.gov/legis/home.aspx",
+      "directory": "codes",
+      "locator": "Louisiana"
+    },
+    "US-LA:labor_agency:9f4dead1725c": {
+      "category": "labor_agency",
+      "title": "www.laworks.net/",
+      "url": "https://www.laworks.net/",
+      "directory": "labor",
+      "locator": "Louisiana"
+    },
+    "US-LA:commercial_code:61cd48d61073": {
+      "category": "commercial_code",
+      "title": "TITLE 14 - COMMERCIAL LAWS",
+      "url": "https://legis.la.gov/Legis/Laws_Toc.aspx?folder=75&level=Parent",
+      "directory": "ucc",
+      "locator": "Louisiana"
+    },
+    "US-LA:civil_rules:56f4a53c5c48": {
+      "category": "civil_rules",
+      "title": "Title 13",
+      "url": "http://www.legis.la.gov/legis/Laws_Toc.aspx?folder=75&level=Parent",
+      "directory": "procedure",
+      "locator": "Louisiana"
+    },
+    "US-LA:consumer_agency:076aad0c7c11": {
+      "category": "consumer_agency",
+      "title": "Louisiana (LA)",
+      "url": "https://www.ag.state.la.us/Division/PublicProtection#consumer-protection",
+      "directory": "consumer",
+      "locator": "Louisiana (LA)"
+    },
+    "US-LA:judiciary:f1054a866eb8": {
+      "category": "judiciary",
+      "title": "Judiciary",
+      "url": "https://www.louisiana.gov/government/judicial-branch/",
+      "directory": "doj-LA",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-LA:court_directory:aa767486d398": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://www.lasc.org/",
+      "directory": "doj-LA",
+      "locator": "Supreme Court"
+    },
+    "US-LA:court_directory:d566df5e67b7": {
+      "category": "court_directory",
+      "title": "First Circuit Court of Appeals",
+      "url": "https://www.la-fcca.org/",
+      "directory": "doj-LA",
+      "locator": "First Circuit Court of Appeals"
+    },
+    "US-LA:court_directory:17feea65c432": {
+      "category": "court_directory",
+      "title": "Second Circuit Court of Appeals",
+      "url": "https://www.la2nd.org/",
+      "directory": "doj-LA",
+      "locator": "Second Circuit Court of Appeals"
+    },
+    "US-LA:court_directory:9e0266a99c93": {
+      "category": "court_directory",
+      "title": "Third Circuit Court of Appeals",
+      "url": "https://www.la3circuit.org/",
+      "directory": "doj-LA",
+      "locator": "Third Circuit Court of Appeals"
+    },
+    "US-LA:court_directory:7a680f1c3c5c": {
+      "category": "court_directory",
+      "title": "Fourth Circuit Court of Appeals",
+      "url": "https://www.la4th.org/",
+      "directory": "doj-LA",
+      "locator": "Fourth Circuit Court of Appeals"
+    },
+    "US-LA:court_directory:895c29029f33": {
+      "category": "court_directory",
+      "title": "Fifth Circuit Court of Appeals",
+      "url": "https://www.fifthcircuit.org/",
+      "directory": "doj-LA",
+      "locator": "Fifth Circuit Court of Appeals"
+    },
+    "US-LA:constitution:fdbc9c9d6673": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://legis.la.gov/legis/Laws_Toc.aspx?folder=72",
+      "directory": "doj-LA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-LA:constitution:58d08298a4bd": {
+      "category": "constitution",
+      "title": "Louisiana's Constitutions: Home",
+      "url": "https://lasc.libguides.com/Louisiana-Constitutions",
+      "directory": "doj-LA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-LA:statutes:5b9e5c1ecee4": {
+      "category": "statutes",
+      "title": "Louisiana Laws Search",
+      "url": "http://www.legis.la.gov/legis/lawsearch.aspx",
+      "directory": "doj-LA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-LA:regulations:fdeb9ed7ab5f": {
+      "category": "regulations",
+      "title": "Administrative Code",
+      "url": "http://www.doa.la.gov/Pages/osr/lac/Code.aspx",
+      "directory": "doj-LA",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-LA:regulations:3a20f54bff8b": {
+      "category": "regulations",
+      "title": "Louisiana Register",
+      "url": "http://www.doa.la.gov/Pages/osr/reg/register.aspx",
+      "directory": "doj-LA",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-LA:pi_limitations:8e7ca76d79d3": {
+      "category": "pi_limitations",
+      "title": "La. Civ. Code art. 3493.1",
+      "url": "https://legis.la.gov/legis/Law.aspx?d=1386443",
+      "directory": null,
+      "locator": "La. Civ. Code art. 3493.1",
+      "observation": {
+        "requested_url": "https://legis.la.gov/legis/Law.aspx?d=1386443",
+        "retrieved_at": "2026-11-17T19:33:57.780060+00:00",
+        "http_status": "200",
+        "sha256": "ed56dc3a73e6d8ce2a1cd8c250a431e52d5e4f5ddb6b05298dc63fdc17570600",
+        "health": "healthy"
+      }
+    },
+    "US-LA:written_contract_limitations:cf232adcc953": {
+      "category": "written_contract_limitations",
+      "title": "La. Civ. Code art. 3499",
+      "url": "https://legis.la.gov/legis/Law.aspx?d=110525",
+      "directory": null,
+      "locator": "La. Civ. Code art. 3499",
+      "observation": {
+        "requested_url": "https://legis.la.gov/legis/Law.aspx?d=110525",
+        "retrieved_at": "2026-11-17T19:33:57.715987+00:00",
+        "http_status": "200",
+        "sha256": "f39ce14401ccf9dc5e4d5282a0583e7d0fd5da3203197fa85fef3633fce5ca62",
+        "health": "healthy"
+      }
+    },
+    "US-LA:oral_contract_limitations:cf232adcc953": {
+      "category": "oral_contract_limitations",
+      "title": "La. Civ. Code art. 3499",
+      "url": "https://legis.la.gov/legis/Law.aspx?d=110525",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://legis.la.gov/legis/Law.aspx?d=110525",
+        "retrieved_at": "2026-11-17T19:33:57.715987+00:00",
+        "http_status": "200",
+        "sha256": "f39ce14401ccf9dc5e4d5282a0583e7d0fd5da3203197fa85fef3633fce5ca62",
+        "health": "manual_review_required"
+      }
+    },
+    "US-LA:small_claims:8023183efdad": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.lasc.org/rules/City_Parish/Uniform_Forms_for_City_Parish_Courts.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.lasc.org/rules/City_Parish/Uniform_Forms_for_City_Parish_Courts.pdf",
+        "retrieved_at": "2026-11-17T19:42:47.696528+00:00",
+        "http_status": "200",
+        "sha256": "7cc66111e6027e16510c773faecc6a44248968dd67dda509251c0972754e61ce",
+        "health": "manual_review_required"
+      }
+    },
+    "US-LA:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    },
+    "US-LA:fault:b6c8ac710079": {
+      "category": "fault",
+      "title": "La. Civ. Code art. 2323",
+      "url": "https://legis.la.gov/Legis/law.aspx?d=109387",
+      "directory": null,
+      "locator": "La. Civ. Code art. 2323",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:33.943744+00:00",
+        "sha256": "13975d87a3b941bb3bb8513a6a222c68e8df7d23db7675be0f66dfd6f373ce61"
+      }
+    },
+    "US-LA:consumerLaw:a431c9a5ba43": {
+      "title": "La. Rev. Stat. § 51:1401 et seq.",
+      "category": "consumerLaw",
+      "url": "https://legis.la.gov/legis/Law.aspx?d=104033",
+      "directory": "consumer_statutes_index",
+      "locator": "La. Rev. Stat. § 51:1401 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-LA:consumer_private_action:30d4f2a07c96": {
+      "category": "consumer_private_action",
+      "title": "La. Rev. Stat. § 51:1409",
+      "url": "https://legis.la.gov/legis/Law.aspx?d=104033",
+      "locator": "La. Rev. Stat. § 51:1409",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:53.829987+00:00",
+        "sha256": "9020060853b5b748e9017f14cbd93aaf5955e6339ea2e24dd42a693e686c265c"
+      }
+    },
+    "US-LA:contract_formation:57d69a23fa6d": {
+      "category": "contract_formation",
+      "title": "La. Civ. Code art. 1927",
+      "url": "https://legis.la.gov/legis/Law.aspx?d=109174",
+      "locator": "La. Civ. Code art. 1927",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:27.724462+00:00",
+        "sha256": "acc78f03d639389cedcb6e2b7e3c8349dd046242769764f553fbd4ef71bc2c4a"
+      }
+    },
+    "US-LA:commencement:96259b1ad526": {
+      "category": "commencement",
+      "title": "La. Code Civ. Proc. art. 421",
+      "url": "https://legis.la.gov/legis/Law.aspx?d=111936",
+      "locator": "La. Code Civ. Proc. art. 421",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:39.640681+00:00",
+        "sha256": "dcdfa50ecaa2b35757a200fbe703e0573440bd31c53b1b641c4b9b179c90dd7e"
+      }
+    },
+    "US-LA:wageLaw:133888de69c2": {
+      "category": "wageLaw",
+      "title": "La. R.S. § 23:631(A)",
+      "url": "https://www.legis.la.gov/legis/Law.aspx?d=83945",
+      "locator": "La. R.S. § 23:631(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:55.090746+00:00",
+        "sha256": "f2dd143d3a369ef419a6e8c57d9650280f064eeba548d3511e59ebf3436be97f"
+      }
+    },
+    "US-LA:deposit:c237de0ac11c": {
+      "category": "deposit",
+      "title": "La. R.S. § 9:3251",
+      "url": "https://legis.la.gov/legis/LawPrint.aspx?d=107468",
+      "locator": "La. R.S. § 9:3251",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:20:34.464178+00:00",
+        "sha256": "7d2aa7728bc461147a1a4460078c84750b32b60030f0ca6bb93680c1331e7183"
+      }
+    },
+    "US-LA:consumerLaw:fc4f028b733c": {
+      "category": "consumerLaw",
+      "title": "La. R.S. § 51:1405(A)",
+      "url": "https://legis.la.gov/Legis/LawPrint.aspx?d=104029",
+      "locator": "La. R.S. § 51:1405(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:43.477236+00:00",
+        "sha256": "0dd3549fb04c9fb352eb5d9cda6766cfb4ca3d16bb271f5e2df952e033b24f8d"
+      }
+    },
+    "US-LA:response:58326e03ceb8": {
+      "category": "response",
+      "title": "La. Code Civ. Proc. art. 1001",
+      "url": "https://www.legis.la.gov/Legis/LawPrint.aspx?d=111105",
+      "locator": "La. Code Civ. Proc. art. 1001",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:43:00.095595+00:00",
+        "sha256": "1ecb90fa1b16610d422de0193045fbafc7ee642f0aa9ed1c17618ebcdad5a1e9"
+      }
+    },
+    "US-LA:negligence_elements:20ebeb35ef78": {
+      "category": "negligence_elements",
+      "title": "Pinsonneault v. Merchants & Farmers Bank & Trust Co., No. 01-C-2217 (La. Apr. 3, 2002)",
+      "url": "https://www.lasc.org/opinions/2002/01c2217.opn.pdf",
+      "locator": "Pinsonneault v. Merchants & Farmers Bank & Trust Co., No. 01-C-2217 (La. Apr. 3, 2002)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:27:29.873138+00:00",
+        "sha256": "c0e6c564549cba013bcf8cdce169342c0635969455eea91640409efd5c452fc5"
+      }
+    },
+    "US-LA:service:772fae109aed": {
+      "category": "service",
+      "title": "La. Code Civ. Proc. art. 1232",
+      "url": "https://www.legis.la.gov/legis/Law.aspx?d=111154",
+      "locator": "La. Code Civ. Proc. art. 1232",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.100404+00:00",
+        "sha256": "6097d41ea78bc7636e8f53923359d2ad353f703d1a907cfd18ae85f26828405c"
+      }
+    },
+    "US-LA:debtLaw:ef6aefe6aeb7": {
+      "category": "debtLaw",
+      "title": "La. Rev. Stat. § 9:3562",
+      "url": "https://legis.la.gov/Legis/Law.aspx?d=107679",
+      "locator": "La. Rev. Stat. § 9:3562",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:26:26.383444+00:00",
+        "sha256": "a0edacb6bd832dc6e3eca009785e5836febd45f239c70c801f6ffa7e60953eb9"
+      }
+    },
+    "US-LA:small_claims:52ab86ff2ba3": {
+      "category": "small_claims",
+      "title": "La. Rev. Stat. § 13:5202(A)–(E)",
+      "url": "https://legis.la.gov/Legis/Law.aspx?d=77961",
+      "locator": "La. Rev. Stat. § 13:5202(A)–(E)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:05:10.877521+00:00",
+        "sha256": "b1210232944b06af9e895d8f3a823c2cda86b651e7162893e180c86f5ee729d0"
+      }
+    },
+    "US-LA:small_claims:b462a4b712bb": {
+      "category": "small_claims",
+      "title": "La. Rev. Stat. § 13:5204(A)–(D) (small-claims service and transfer notice)",
+      "url": "https://www.legis.la.gov/Legis/Law.aspx?d=77963",
+      "locator": "La. Rev. Stat. § 13:5204(A)–(D) (small-claims service and transfer notice)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:32:56.662705+00:00",
+        "sha256": "452dba6b3f68fd9f6212491481629606feecc5fa8bb27a61118922a30c769745"
+      }
+    },
+    "US-LA:contract_breach:a2b5813dec43": {
+      "category": "contract_breach",
+      "title": "La. Civ. Code art. 1994",
+      "url": "https://www.legis.la.gov/legis/Law.aspx?d=109248",
+      "locator": "La. Civ. Code art. 1994",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:39:55.345374+00:00",
+        "sha256": "47c9f4280536d5b665f438c8b4d8e29202f0cab04d0de3b618f301a25f001a4d"
+      }
+    },
+    "US-LA:general_contract_damages:95ce34554eb4": {
+      "category": "general_contract_damages",
+      "title": "La. Civ. Code art. 1995",
+      "url": "https://legis.la.gov/legis/Law.aspx?d=109249",
+      "locator": "La. Civ. Code art. 1995",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:39:55.392831+00:00",
+        "sha256": "4ca80a7bf060d9046b7899bd0e635af25b334e56d41043eef0a5d5060984ed28"
+      }
+    },
+    "US-LA:general_contract_damages:c8d14820ed40": {
+      "category": "general_contract_damages",
+      "title": "La. Civ. Code art. 1996",
+      "url": "https://legis.la.gov/legis/Law.aspx?d=109250",
+      "locator": "La. Civ. Code art. 1996",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:39:55.437822+00:00",
+        "sha256": "4eb4db891eb0276260030391af003b930f69f010c35e1d7cd4500e4bc1e51d04"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-LA:court:6d37c2f79bed",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-LA:court_directory:aa767486d398"
+    },
+    {
+      "id": "US-LA:court:02356f9ab9f5",
+      "name": "First Circuit Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-LA:court_directory:d566df5e67b7"
+    },
+    {
+      "id": "US-LA:court:81024643c8a9",
+      "name": "Second Circuit Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-LA:court_directory:17feea65c432"
+    },
+    {
+      "id": "US-LA:court:438887555be3",
+      "name": "Third Circuit Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-LA:court_directory:9e0266a99c93"
+    },
+    {
+      "id": "US-LA:court:cf3af5005151",
+      "name": "Fourth Circuit Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-LA:court_directory:7a680f1c3c5c"
+    },
+    {
+      "id": "US-LA:court:50babf398863",
+      "name": "Fifth Circuit Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-LA:court_directory:895c29029f33"
+    },
+    {
+      "id": "US-LA:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-LA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-LA:court:c49ee6246d85",
+      "name": "Juvenile & Family",
+      "level": "general_trial",
+      "source_id": "US-LA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-LA:court:130cafc44268",
+      "name": "Justice of the Peace",
+      "level": "limited_trial",
+      "source_id": "US-LA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-LA:court:bce59d8d8e77",
+      "name": "Mayor’s",
+      "level": "limited_trial",
+      "source_id": "US-LA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-LA:court:741d2c8cd279",
+      "name": "City & Parish",
+      "level": "limited_trial",
+      "source_id": "US-LA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "La. Civ. Code art. 3493.1",
+      "source_id": "US-LA:pi_limitations:8e7ca76d79d3",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "La. Civ. Code art. 3499",
+      "source_id": "US-LA:written_contract_limitations:cf232adcc953",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "La. Civ. Code art. 3499",
+      "source_id": "US-LA:oral_contract_limitations:cf232adcc953",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "La. Code of Civil Proc. Art. 4731. Rule to show cause why possession should not be delivered; abandonment of premises",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "La. Rev. Stat. § 51:1401 et seq.",
+      "source_id": "US-LA:consumerLaw:a431c9a5ba43",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "b2fafd32b59dee350e89694d4c50ac": {
+      "citation": "La. Civ. Code art. 3493.1",
+      "source_id": "US-LA:pi_limitations:8e7ca76d79d3",
+      "authority_type": "statute",
+      "text": "Delictual actions are subject to a liberative prescription of two years. This prescription commences to run from the day that injury or damage is sustained. It does not run against minors or interdicts in actions involving permanent disability and brought pursuant to the Louisiana Products Liability Act or state law governing product liability actions in effect at the time of the injury or damage.",
+      "text_sha256": "786d4600b615740239781a98eccd8b28bac5a11f20832b7eb22e1e67670471e9",
+      "publisher_sha256": "ed56dc3a73e6d8ce2a1cd8c250a431e52d5e4f5ddb6b05298dc63fdc17570600",
+      "retrieved_at": "2026-11-17T19:33:57.780060+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "7688a23a282650833e671f14adf570": {
+      "citation": "La. Civ. Code art. 3499",
+      "source_id": "US-LA:written_contract_limitations:cf232adcc953",
+      "authority_type": "statute",
+      "text": "Unless otherwise provided by legislation, a personal action is subject to a liberative prescription of ten years.",
+      "text_sha256": "17944e940cc2b7e1da3d889c73028fcd0bf44cb9d8d767aa12423bf238c5839c",
+      "publisher_sha256": "f39ce14401ccf9dc5e4d5282a0583e7d0fd5da3203197fa85fef3633fce5ca62",
+      "retrieved_at": "2026-11-17T19:33:57.715987+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "fa32f55038ba2f8c88ad0e24188a70": {
+      "citation": "La. Civ. Code art. 2323",
+      "source_id": "US-LA:fault:b6c8ac710079",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "Art. 2323. Comparative fault A.(1) In any action for damages where a person suffers injury, death, or loss, the degree or percentage of fault attributable to all persons causing or contributing to the injury, death, or loss shall be determined, regardless of whether the person is a party to the action or a nonparty, and regardless of the person's insolvency, ability to pay, immunity by statute, including but not limited to the provisions of R.S. 23:1032, or that the other person's identity is not known or reasonably ascertainable. (2) If a person suffers injury, death, or loss partly as the result of his own negligence and partly as a result of the fault of another person or persons, then the following shall apply: (a) If the degree or percentage of negligence attributable to the person suffering injury, death, or loss is equal to or greater than fifty-one percent, then the person suffering injury, death, or loss shall not be entitled to recover damages. (b) If the degree or percentage of negligence attributable to the person suffering injury, death, or loss is less than fifty-one percent, then the amount of damages recoverable shall be reduced in proportion to the degree or percentage of negligence attributable to the person suffering the injury, death, or loss. B. The provisions of Paragraph A shall apply to any claim for recovery of damages for injury, death, or loss asserted under any law or legal doctrine or theory of liability, regardless of the basis of liability. C. Notwithstanding the provisions of Paragraphs A and B, if a person suffers injury, death, or loss as a result partly of his own negligence and partly as a result of the fault of an intentional tortfeasor, his claim for recovery of damages shall not be reduced. D. In cases where the issue of comparative fault is submitted to the jury, the jury shall be instructed on the effect of this Article.",
+      "text_sha256": "97448e4645fb71230c55750dc40a823f540cce09285d561f9037794cf37d8e96",
+      "publisher_sha256": "13975d87a3b941bb3bb8513a6a222c68e8df7d23db7675be0f66dfd6f373ce61",
+      "retrieved_at": "2026-11-17T20:50:33.943744+00:00",
+      "currentness": "unresolved"
+    },
+    "9e95656d226ba868907b4858b03978": {
+      "source_id": "US-LA:consumer_private_action:30d4f2a07c96",
+      "authority_type": "statute",
+      "citation": "La. Rev. Stat. § 51:1409",
+      "text": "§1409. Private actions A. Any person who suffers any ascertainable loss of money or movable property, corporeal or incorporeal, as a result of the use or employment by another person of an unfair or deceptive method, act, or practice declared unlawful by R.S. 51:1405, may bring an action individually but not in a representative capacity to recover actual damages. If the court finds the unfair or deceptive method, act, or practice was knowingly used, after being put on notice by the attorney general, the court shall award three times the actual damages sustained. In the event that damages are awarded under this Section, the court shall award to the person bringing such action reasonable attorney fees and costs. Upon a finding by the court that an action under this Section was groundless and brought in bad faith or for purposes of harassment, the court may award to the defendant reasonable attorney fees and costs. B. Upon commencement of any action brought under Subsection A of this Section, the plaintiff's attorney shall mail a copy of the petition to the attorney general, and, upon entry of any judgment or decree in the action, shall mail a copy of such judgment or decree to the attorney general, but failure to conform with this Subsection shall not affect any of plaintiff's rights under this Section. C. Any permanent injunction, judgment or order of the court made under R.S. 51:1407 and 1408 shall be prima facie evidence in an action brought under this Section that the respondent used or employed a method, act or practice declared unlawful by R.S. 51:1405 or by rule or regulation promulgated pursuant thereto; provided, however, that this Subsection shall not apply to consent orders or voluntary assurances of compliance. D. If any person is enjoined from the use of any method, act, or practice or enters into a voluntary compliance agreement accepted by the attorney general under the provisions of this Chapter, such person shall have a right of action to enjoin competing businesses engaged in like practices. E. The action provided by this Section shall be subject to a liberative prescription of one year running from the time of the transaction or act which gave rise to this right of action.",
+      "text_sha256": "2c883392a4fe0cc0a2bfed3eaa50a1b6c2bb07fa6857c152dab268344fdceaca",
+      "publisher_sha256": "9020060853b5b748e9017f14cbd93aaf5955e6339ea2e24dd42a693e686c265c",
+      "retrieved_at": "2026-11-17T21:03:53.829987+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "0f80107dd478e9f52a88c17792b946": {
+      "source_id": "US-LA:contract_formation:57d69a23fa6d",
+      "authority_type": "statute",
+      "citation": "La. Civ. Code art. 1927",
+      "text": "A contract is formed by the consent of the parties established through offer and acceptance. Unless the law prescribes a certain formality for the intended contract, offer and acceptance may be made orally, in writing, or by action or inaction that under the circumstances is clearly indicative of consent. Unless otherwise specified in the offer, there need not be conformity between the manner in which the offer is made and the manner in which the acceptance is made.",
+      "text_sha256": "fbbd8d41054aaadbcee1f3bf3b88018f05679c30d500fa95cba6e5827d39a841",
+      "publisher_sha256": "acc78f03d639389cedcb6e2b7e3c8349dd046242769764f553fbd4ef71bc2c4a",
+      "retrieved_at": "2026-11-18T15:14:27.724462+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "36154c050c0e6be5805d1cbaf13bc6": {
+      "source_id": "US-LA:commencement:96259b1ad526",
+      "authority_type": "statute",
+      "citation": "La. Code Civ. Proc. art. 421",
+      "text": "A civil action is a demand for the enforcement of a legal right. It is commenced by the filing of a pleading presenting the demand to a court of competent jurisdiction. Amicable demand is not a condition precedent to a civil action, unless specifically required by law.",
+      "text_sha256": "6f9a22da09681437f75e50869c3f5b51ee37779833866a7b4cc7a1342682a435",
+      "publisher_sha256": "dcdfa50ecaa2b35757a200fbe703e0573440bd31c53b1b641c4b9b179c90dd7e",
+      "retrieved_at": "2026-11-18T20:45:39.640681+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "24c8f805374b28ec00565eb69e58ac": {
+      "source_id": "US-LA:wageLaw:133888de69c2",
+      "authority_type": "statute",
+      "citation": "La. R.S. § 23:631(A)",
+      "text": "A.(1)(a) Upon the discharge of any laborer or other employee of any kind whatever, it shall be the duty of the person employing such laborer or other employee to pay the amount then due under the terms of employment, whether the employment is by the hour, day, week, or month, on or before the next regular payday or no later than fifteen days following the date of discharge, whichever occurs first. (b) Upon the resignation of any laborer or other employee of any kind whatever, it shall be the duty of the person employing such laborer or other employee to pay the amount then due under the terms of employment, whether the employment is by the hour, day, week, or month, on or before the next regular payday for the pay cycle during which the employee was working at the time of separation or no later than fifteen days following the date of resignation, whichever occurs first. (2) Payment shall be made at the place and in the manner which has been customary during the employment, except that payment may be made via United States mail to the laborer or other employee, provided postage has been prepaid and the envelope properly addressed with the employee's or laborer's current address as shown in the employer's records. In the event payment is made by mail the employer shall be deemed to have made such payment when it is mailed. The timeliness of the mailing may be shown by an official United States postmark or other official documentation from the United States Postal Service. (3) The provisions of this Subsection shall not apply when there is a collective bargaining agreement between the employer and the laborer or other employee which provides otherwise.",
+      "text_sha256": "f9c1ab0f255ea27c60771512e919c7dcab4b8e7fdecd56ca2fd7c5bf9c3ae9c5",
+      "publisher_sha256": "f2dd143d3a369ef419a6e8c57d9650280f064eeba548d3511e59ebf3436be97f",
+      "retrieved_at": "2026-11-19T14:10:55.090746+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "f31f3d3b6e96499bb6009a644ca777": {
+      "source_id": "US-LA:deposit:c237de0ac11c",
+      "authority_type": "statute",
+      "citation": "La. R.S. § 9:3251",
+      "text": "A. Any advance or deposit of money furnished by a tenant or lessee to a landlord or lessor to secure the performance of any part of a written or oral lease or rental agreement shall be returned to the tenant or lessee of residential or dwelling premises within one month after the lease shall terminate. However, the landlord or lessor may retain all or any portion of the advance or deposit which is reasonably necessary to remedy a default of the tenant or to remedy unreasonable wear to the premises. If any portion of an advance or deposit is retained by a landlord or lessor, he shall forward to the tenant or lessee, within one month after the date the tenancy terminates or within fifteen days after the date that is one month after the tenancy terminates, an itemized statement accounting for the proceeds which are retained and giving the reasons therefor. The tenant shall furnish the lessor a forwarding address at the termination of the lease, to which such statements may be sent. B. In the event of a transfer of the lessor's interest in the leased premises during the term of a lease, the transferor shall also transfer to his successor in interest the sum deposited as security for performance of the lease and the transferor shall then be relieved of further liability with respect to the security deposit. The transferee shall be responsible for the return of the lessee's deposit at the termination of the lease, as set forth in Subsection A of this Section. C. Paragraph A of this Section shall not apply when the tenant abandons the premises, either without giving notice as required or prior to the termination of the lease.",
+      "text_sha256": "454068a3f4de3beece5d9a734f3204c71e1279fce339f22a1dc7c7597e2b1f0a",
+      "publisher_sha256": "7d2aa7728bc461147a1a4460078c84750b32b60030f0ca6bb93680c1331e7183",
+      "retrieved_at": "2026-11-19T19:20:34.464178+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "bfc85692178f006ad7ca0ecbaf5fff": {
+      "source_id": "US-LA:consumerLaw:fc4f028b733c",
+      "authority_type": "statute",
+      "citation": "La. R.S. § 51:1405(A)",
+      "text": "A. Unfair methods of competition and unfair or deceptive acts or practices in the conduct of any trade or commerce are hereby declared unlawful.",
+      "text_sha256": "f53fe3e5172116ffb65edecce9e0ea88ea842b0ced13d2f7de0d46e998df0ec7",
+      "publisher_sha256": "0dd3549fb04c9fb352eb5d9cda6766cfb4ca3d16bb271f5e2df952e033b24f8d",
+      "retrieved_at": "2026-11-19T19:26:43.477236+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "f1ef1249ba1a1bff28aae20ecab0fd": {
+      "source_id": "US-LA:response:58326e03ceb8",
+      "authority_type": "statute",
+      "citation": "La. Code Civ. Proc. art. 1001",
+      "text": "A. A defendant shall file his answer within twenty-one days after service of citation upon him, except as otherwise provided by law. If the plaintiff files and serves a discovery request with his petition, the defendant shall file his answer to the petition within thirty days after service of citation and service of discovery request. B. When an exception is filed prior to answer and is overruled or referred to the merits, or is sustained and an amendment of the petition ordered, the answer shall be filed within fifteen days after the exception is overruled or referred to the merits, or fifteen days after service of the amended petition. C. The court may grant additional time for answering.",
+      "text_sha256": "0f1c901fc0ff51564acb45ea892b1fc90bffada5fe1d2385036b3969afbe38cb",
+      "publisher_sha256": "1ecb90fa1b16610d422de0193045fbafc7ee642f0aa9ed1c17618ebcdad5a1e9",
+      "retrieved_at": "2026-11-19T19:43:00.095595+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Louisiana District Court"
+    },
+    "038b254f307d001ab254082a29eb7e": {
+      "source_id": "US-LA:negligence_elements:20ebeb35ef78",
+      "authority_type": "opinion",
+      "citation": "Pinsonneault v. Merchants & Farmers Bank & Trust Co., No. 01-C-2217 (La. Apr. 3, 2002)",
+      "text": "In order for liability to attach under a duty-risk analysis, a plaintiff must prove five separate elements: (1) the defendant had a duty to conform his or her conduct to a specific standard of care (the duty element); (2) the defendant failed to conform his or her conduct to the appropriate standard of care (the breach of duty element); (3) the defendant’s substandard conduct was a cause-in-fact of the plaintiff’s injuries (the cause-in-fact element); (4) the defendant’s substandard conduct was a legal cause of the plaintiff’s injuries (the scope of protection element); and (5) actual damages (the damage element).",
+      "text_sha256": "892e0e423b4ebd3f9774c6bd66e0c6ff578b8343566f82c964ef47e5ed2a260b",
+      "publisher_sha256": "c0e6c564549cba013bcf8cdce169342c0635969455eea91640409efd5c452fc5",
+      "retrieved_at": "2026-11-20T15:27:29.873138+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2002-04-03",
+      "court": "Supreme Court of Louisiana",
+      "decision_date": "2002-04-03",
+      "opinion_role": "majority",
+      "procedural_posture": "Certiorari review of a negligence judgment concerning bank security. The court applied the Civil Code article 2315 duty-risk analysis."
+    },
+    "6ef45b9708f0e6f4b7cd5084a3d7e0": {
+      "source_id": "US-LA:service:772fae109aed",
+      "authority_type": "statute",
+      "citation": "La. Code Civ. Proc. art. 1232",
+      "text": "Personal service is made when a proper officer tenders the citation or other process to the person to be served.",
+      "text_sha256": "41ea0eafeb7f0ae2daf892af7c267280ab5212242b809d3217b5f507945c39fc",
+      "publisher_sha256": "6097d41ea78bc7636e8f53923359d2ad353f703d1a907cfd18ae85f26828405c",
+      "retrieved_at": "2026-11-20T16:01:53.100404+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Louisiana District Court"
+    },
+    "c500aaf3c678250d02e2b7f3a508a2": {
+      "source_id": "US-LA:debtLaw:ef6aefe6aeb7",
+      "authority_type": "statute",
+      "citation": "La. Rev. Stat. § 9:3562",
+      "text": "Except as otherwise provided by law or this section, the creditor, including, but not limited to the creditor in a consumer credit transaction, shall not contact any person other than an extender of credit or credit reporting agency who is not living, residing, or present in the household of the debtor regarding the debtor's obligation to pay a debt. (1) Notwithstanding R.S. 9:3513 the debtor may waive the benefits of this section at any time by giving consent, provided such consent is given at a time subsequent to the date the debt arises. (2) The creditor may contact any person without the debtor's consent: (a) To ascertain information bearing on a debtor's credit worthiness, credit standing, credit capacity, character, general reputation, personal characteristics or mode of living which is used or expected to be used or collected in whole or in part for the purpose of serving as a factor in establishing the debtor's eligibility for credit or insurance provided such contacts are not designed to collect a delinquent debt, or (b) To ascertain the whereabouts of the debtor when the creditor has reason to believe the debtor has changed his employment or has moved from his last known address. (3) If the debtor has defaulted on his promise to pay, and if he has given specific notice in writing by registered or certified mail, instructing the creditor to cease further contacts with the debtor in regard to the indebtedness, the creditor shall thereafter limit mail contacts to one notice per month so long as the notice is not designed to threaten action not otherwise permitted by law. If the debtor has instructed the creditor to cease further contact, as heretofore provided, the creditor may make a maximum of four personal contacts with the debtor for the purpose of settling the obligation provided such contacts are not designed to threaten action not otherwise permitted by law. (4) This section shall not prohibit the extender of credit from (a) contacting any person in order to discover property belonging to the debtor that may be seized to satisfy a debt that has been reduced to judgment; (b) making amicable demand and filing suit on the debt; or (c) contacting persons related to the debtor if permission is specifically given in writing at the time the debt arises or at any time thereafter, provided that such contacts are reasonable. (5) This section shall not limit a debtor's right to bring an action for damages provided by Article 2315 of the Louisiana Civil Code. (6) Notwithstanding the provisions of Paragraph (3), when the extender of credit has filed suit and obtained judgment he shall be permitted to resume contacts with the consumer against whom judgment has been obtained.",
+      "text_sha256": "658c45af23bfaa5cc2acce5e40155e3af4693649e7e37379247ca3b001d2484d",
+      "publisher_sha256": "a0edacb6bd832dc6e3eca009785e5836febd45f239c70c801f6ffa7e60953eb9",
+      "retrieved_at": "2026-11-20T17:26:26.383444+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "5eb6350265d14955cefd3eda47f324": {
+      "source_id": "US-LA:small_claims:52ab86ff2ba3",
+      "authority_type": "statute",
+      "citation": "La. Rev. Stat. § 13:5202(A)–(E)",
+      "text": "A. A small claims division shall be a court not of record and shall have civil subject matter jurisdiction in cases where the amount in dispute does not exceed five thousand dollars, exclusive of interest, court costs, attorney fees, or penalties, whether provided by agreement or by law, provided that not more than ten parties plaintiff shall be joined in the same action pursuant to Article 463 of the Code of Civil Procedure and that there shall be no class certification pursuant to Articles 591 through 597 of the Code of Civil Procedure. B. A small claims division shall have authority to grant any appropriate relief, including money damages and equitable relief. Injunctions and restraining orders shall not issue from a small claims division, except to arrest the execution of its own writ. Class actions, summary proceedings, and executory proceedings shall be prohibited. C. The judges and clerks of the respective courts shall serve as the judges and clerks of the small claims divisions, except that an attorney appointed by the judges may serve as arbitrator as hereinafter provided. D. Each court may by court rule establish mass filing limitations on all parties filing claims in the small claims divisions. E. In the City Court of East St. Tammany, the small claims division shall have civil subject matter jurisdiction in cases where the amount in dispute is the same as the amount established for civil jurisdiction in a justice of the peace court, exclusive of interest, court costs, attorney fees, or penalties, whether provided by agreement or by law, provided that not more than ten parties plaintiff shall be joined in the same action pursuant to Code of Civil Procedure Article 463, and there shall be no class certification pursuant to Code of Civil Procedure Articles 591 through 597.",
+      "text_sha256": "4987080e21e611998611845a9f988543f0994b83c9deddf20961d7a0a0bbfc2a",
+      "publisher_sha256": "b1210232944b06af9e895d8f3a823c2cda86b651e7162893e180c86f5ee729d0",
+      "retrieved_at": "2026-11-20T18:05:10.877521+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2020-06-11"
+    },
+    "8eec93ccf7b8727538ac462015f61c": {
+      "source_id": "US-LA:small_claims:b462a4b712bb",
+      "authority_type": "statute",
+      "citation": "La. Rev. Stat. § 13:5204(A)–(D) (small-claims service and transfer notice)",
+      "text": "A. Service of citation or other process shall be by certified mail, with return receipt requested. However, should the receipt not be returned, or, if requested by a party filing the pleading who pays the service charge therefor, or if required by local court rule, service of pleadings may be made in accordance with the Louisiana Code of Civil Procedure. B. Notwithstanding any other provision of law to the contrary, each citation or other process shall contain a notice which provides substantially as follows: \"ATTENTION! THIS LAWSUIT IS FILED IN THE SMALL CLAIMS COURT. THE ORDINARY RULES OF EVIDENCE DO NOT APPLY IN SMALL CLAIMS COURT. IF YOU LOSE IN SMALL CLAIMS COURT, YOU HAVE NO RIGHT TO APPEAL THE COURT'S DECISION. YOU MAY HAVE THIS CASE TRANSFERRED TO THE REGULAR CIVIL COURT IF YOU WISH. TO DO SO, YOU MUST FILE A WRITTEN NOTICE WITH THE CLERK OF THE SMALL CLAIMS COURT AND PAY THE APPROPRIATE TRANSFER FEE WITHIN TEN (10) DAYS OF RECEIVING THIS LETTER. IF YOU ARE UNSURE OF WHAT TO DO, YOU SHOULD TALK WITH AN ATTORNEY ABOUT IT IMMEDIATELY.\" C.(1) If the properly addressed certified mail return receipt reply form is signed by the addressee/defendant, then service shall be considered as personal service. (2) If the properly addressed certified mail return receipt reply form is signed by a person other than the defendant then service shall be considered as domiciliary service. (3) If the properly addressed certified mail return receipt reply form is returned and marked \"refused\" or \"unclaimed\" by the addressee then service is regarded as tendered and shall be considered as domiciliary service. D. If service of the citation and original petition is made by domiciliary service as provided herein, service of the notice of judgment shall be made as provided by law, except if the certified mail is marked \"unclaimed\" or \"refused\", service of the notice of judgment shall be made by the sheriff, marshal, or constable having jurisdiction.",
+      "text_sha256": "c12a13d89140d9b912ba33f144ef5b80104ca80661407fd644d2f79122783493",
+      "publisher_sha256": "452dba6b3f68fd9f6212491481629606feecc5fa8bb27a61118922a30c769745",
+      "retrieved_at": "2026-11-20T18:32:56.662705+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "a7c9cb86c16c34f98c3bd40cbe00cd": {
+      "source_id": "US-LA:contract_breach:a2b5813dec43",
+      "authority_type": "statute",
+      "citation": "La. Civ. Code art. 1994",
+      "text": "An obligor is liable for the damages caused by his failure to perform a conventional obligation. A failure to perform results from nonperformance, defective performance, or delay in performance.",
+      "text_sha256": "74ac5845645d1a10af5dced780ce2fcd44ae0cb43e7e610b8e25d4730ed98b3a",
+      "publisher_sha256": "47c9f4280536d5b665f438c8b4d8e29202f0cab04d0de3b618f301a25f001a4d",
+      "retrieved_at": "2026-11-20T22:39:55.345374+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1985-01-01"
+    },
+    "ccd98a52ece2c2386e4737c71cafe7": {
+      "source_id": "US-LA:general_contract_damages:95ce34554eb4",
+      "authority_type": "statute",
+      "citation": "La. Civ. Code art. 1995",
+      "text": "Damages are measured by the loss sustained by the obligee and the profit of which he has been deprived.",
+      "text_sha256": "96a7edbcbc6796b2c764d87a3c9e333a874e726e509ea9b65f6de347884548c7",
+      "publisher_sha256": "4ca80a7bf060d9046b7899bd0e635af25b334e56d41043eef0a5d5060984ed28",
+      "retrieved_at": "2026-11-20T22:39:55.392831+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1985-01-01"
+    },
+    "417462e942d37054d89121a4696acc": {
+      "source_id": "US-LA:general_contract_damages:c8d14820ed40",
+      "authority_type": "statute",
+      "citation": "La. Civ. Code art. 1996",
+      "text": "An obligor in good faith is liable only for the damages that were foreseeable at the time the contract was made.",
+      "text_sha256": "1e79409104ee29ec470363946511f2c0540b751c2b34890bff5ea660908e7ca9",
+      "publisher_sha256": "4eb4db891eb0276260030391af003b930f69f010c35e1d7cd4500e4bc1e51d04",
+      "retrieved_at": "2026-11-20T22:39:55.437822+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1985-01-01"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "fa32f55038ba2f8c88ad0e24188a70",
+    "source_id": "US-LA:fault:b6c8ac710079",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

@@ -44,6 +44,12 @@ jobs:
           python -B scripts/claim_engine.py validate
           python -B scripts/legal_action_os.py validate
 
+      - name: Replay national publisher evidence and check jurisdiction boundaries
+        run: |
+          python -B scripts/national_coverage.py validate
+          python -B scripts/national_coverage.py benchmark
+          python -B scripts/benchmark_national_coverage.py
+
       - name: Evaluate claim analysis with offline matter and model fixtures
         run: python -B -m unittest discover -s tests -p test_claim_engine.py -v
 
@@ -105,6 +111,9 @@ jobs:
               assert readiness['release_approved'] is False
           with urllib.request.urlopen('http://127.0.0.1:8000/capabilities') as response:
               assert len(json.load(response)['capabilities']) == 4
+          with urllib.request.urlopen('http://127.0.0.1:8000/api/coverage') as response:
+              coverage = json.load(response)
+              assert coverage['jurisdictions'] == 57 and coverage['execution'] == 'disabled'
           with urllib.request.urlopen('http://127.0.0.1:8000/openapi.json') as response:
               paths = json.load(response)['paths']
               assert all(path in paths for path in ('/research/evidence', '/research/compare', '/research/procedure', '/matters'))

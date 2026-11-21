@@ -22,7 +22,8 @@ from app.matter_service import ImportedRecord, MatterService, records_by_id
 from app.matter_state import MatterError, procedural_facts, projection, snapshot
 from app.matter_store import MatterNotFound, MatterStore, RevisionConflict, now
 from app.procedural_models import Key, Scope
-from app.procedural_research import ProceduralRequest, ProceduralResearchService, US_STATE_NAMES
+from app.procedural_research import ProceduralRequest, ProceduralResearchService
+from app.jurisdictions import registry
 
 
 class CreateMatter(Record):
@@ -239,8 +240,11 @@ def router(settings, repository, generation):
                 return {"status": "matter_scope_requires_confirmation", "revision": matter.revision}
             scope = jurisdiction.value
             scope = TypeAdapter(Scope).validate_python(scope)
-            request_data = ResearchMatter(country="US", sovereign="federal" if scope == "US" else "state",
-                                          state=US_STATE_NAMES.get(scope[3:]), legal_area=body.area, topics=list(body.topics))
+            owner = registry().get(scope)
+            if owner is None:
+                return {"status": "matter_scope_requires_confirmation", "revision": matter.revision}
+            request_data = ResearchMatter(country="US", sovereign=owner.kind,
+                                          state=owner.name if scope != "US" else None, legal_area=body.area, topics=list(body.topics))
             research_service = GeneralLegalResearchService(repository, config)
             try:
                 result = research_service.assemble(request_data)
