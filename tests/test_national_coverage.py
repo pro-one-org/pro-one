@@ -23,6 +23,18 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_wage_agency_authority_stays_scoped_to_the_publisher_and_claim_route(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="North Dakota", legal_area="employment", authority_status="unresolved",
+                               topics=["wage_agency_claim"])
+        key, = provider.search(query)
+        doc = provider.fetch(key)
+        self.assertIn("within two years from the date the wages are due", doc.text)
+        self.assertIn("assigning employee", doc.text)
+        michigan, = provider.search(query.model_copy(update={"state": "Michigan"}))
+        self.assertIn("within 12 months after the alleged violation", provider.fetch(michigan).text)
+        self.assertFalse(provider.search(query.model_copy(update={"topics": ["wage_limitations"]})))
+
     def test_ohio_written_contract_limitation_keeps_both_authenticated_versions(self):
         provider = LegislativeExcerpts("US-OH")
         versions = {}

@@ -635,6 +635,54 @@
         "retrieved_at": "2026-11-21T03:46:50.328644+00:00",
         "sha256": "ea864da51a12cd0728a20740a5e70589f032e5ed5b42c4a06dbafebe72a3f4d9"
       }
+    },
+    "US-MI:labor_agency:0bff4ae629e8": {
+      "category": "labor_agency",
+      "title": "Mich. Comp. Laws § 408.481(1)",
+      "url": "https://www.legislature.mi.gov/documents/mcl/pdf/mcl-408-481.pdf",
+      "locator": "Mich. Comp. Laws § 408.481(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:05:41.407539+00:00",
+        "sha256": "ebc34f535f687e89bedc92fd675776058578024a9da653f310e88e62e2971653"
+      }
+    },
+    "US-MI:wage_enforcement:54687be54023": {
+      "category": "wage_enforcement",
+      "title": "Mich. Comp. Laws § 408.488",
+      "url": "https://www.legislature.mi.gov/documents/mcl/pdf/mcl-408-488.pdf",
+      "locator": "Mich. Comp. Laws § 408.488",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:05:35.244378+00:00",
+        "sha256": "3a9454b53df7fec096e0bb3fa5e4883b6940bd8159c0f87399f00a0ef0a96e0e"
+      }
+    },
+    "US-MI:consumer_private_action:34487498748f": {
+      "category": "consumer_private_action",
+      "title": "Mich. Comp. Laws § 445.911(1)",
+      "url": "https://www.legislature.mi.gov/documents/mcl/pdf/mcl-445-911.pdf",
+      "locator": "Mich. Comp. Laws § 445.911(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:05:35.670052+00:00",
+        "sha256": "ee5006dfd1897e71bb35971292c74e579d02c28cc1ec55534ca533ffde3a53b1"
+      }
+    },
+    "US-MI:consumer_remedies:8e0d733e13de": {
+      "category": "consumer_remedies",
+      "title": "Mich. Comp. Laws § 445.911(2)–(3)",
+      "url": "https://www.legislature.mi.gov/documents/mcl/pdf/mcl-445-911.pdf",
+      "locator": "Mich. Comp. Laws § 445.911(2)–(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:05:35.670052+00:00",
+        "sha256": "ee5006dfd1897e71bb35971292c74e579d02c28cc1ec55534ca533ffde3a53b1"
+      }
     }
   },
   "court_directory": [
@@ -1231,6 +1279,54 @@
       "publisher_path": "a365cb3933f9cdbb972c585580bcf52fcbac9389e71ee0c2320677b28a98b7ce",
       "edition": "Michigan Compiled Laws through PA 114 of 2026",
       "effective_from": "2026-09-21"
+    },
+    "7d80462a19d299bee38d473b51a723": {
+      "source_id": "US-MI:labor_agency:0bff4ae629e8",
+      "authority_type": "statute",
+      "citation": "Mich. Comp. Laws § 408.481(1)",
+      "text": "(1) An employee who believes that his or her employer has violated this act may file a written complaint with the department within 12 months after the alleged violation. A complaint filed under section 13(2) shall be filed within 30 days after the alleged violation occurs. Bilingual complaint forms shall be provided by the department in those areas where substantial numbers of non-English speaking employees are employed.",
+      "text_sha256": "bc041a0f9a80c6415fe4ea30cc0201e3214ebd01ea9f94de0c262d2fe1c4632f",
+      "publisher_sha256": "ebc34f535f687e89bedc92fd675776058578024a9da653f310e88e62e2971653",
+      "retrieved_at": "2026-11-21T17:05:41.407539+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Michigan Legislature statutory PDF, § 408.481(1)"
+    },
+    "eb30f147fbe879c35b2c7de9bb32ea": {
+      "source_id": "US-MI:wage_enforcement:54687be54023",
+      "authority_type": "statute",
+      "citation": "Mich. Comp. Laws § 408.488",
+      "text": "(1) The department shall order an employer who violates section 2, 3, 4, 5, 6, 7, or 8 to pay the following: (a) Wages due to the employee. (b) Fringe benefits due to or on the behalf of the employee in accordance with the terms set forth in the written contract or written policy. (c) A penalty at the rate of 10% annually on the wages and fringe benefits due beginning at the time the employer is notified that a complaint has been filed and ending when payment is made. (2) The department may order an employer who violates section 2, 3, 4, 5, 6, 7, or 8 to pay to the employee exemplary damages of not more than twice the amount of the wages and fringe benefits which were due, if the violation is flagrant or repeated. (3) The department may order an employer who violates section 2, 3, 4, 5, 6, 7, or 8 to pay attorney costs, hearing costs, and transcript costs. (4) The department may assess a civil penalty of not more than $1,000.00 against an employer who violates this act, which civil penalty shall be credited to the general fund of this state.",
+      "text_sha256": "d5aa819119aac0b34e52bd370d8f5eae4688687625ac73c60a72c86f9ace2be9",
+      "publisher_sha256": "3a9454b53df7fec096e0bb3fa5e4883b6940bd8159c0f87399f00a0ef0a96e0e",
+      "retrieved_at": "2026-11-21T17:05:35.244378+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Michigan Legislature statutory PDF, § 408.488"
+    },
+    "3b7e8e9b52c44a97d1c285e0deb0b9": {
+      "source_id": "US-MI:consumer_private_action:34487498748f",
+      "authority_type": "statute",
+      "citation": "Mich. Comp. Laws § 445.911(1)",
+      "text": "(1) Whether or not a person seeks damages or has an adequate remedy at law, a person may bring an action to do either or both of the following: (a) Obtain a declaratory judgment that a method, act, or practice is unlawful under section 3. (b) Enjoin in accordance with the principles of equity a person who is engaging or is about to engage in a method, act, or practice that is unlawful under section 3.",
+      "text_sha256": "41d3d8a721d4a65956cf4d2c0086a6a29d35ec64b67bd24cadc2e2376817b191",
+      "publisher_sha256": "ee5006dfd1897e71bb35971292c74e579d02c28cc1ec55534ca533ffde3a53b1",
+      "retrieved_at": "2026-11-21T17:05:35.670052+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Michigan Legislature statutory PDF, § 445.911(1)"
+    },
+    "228710c856f7610f078fc0593df2e0": {
+      "source_id": "US-MI:consumer_remedies:8e0d733e13de",
+      "authority_type": "statute",
+      "citation": "Mich. Comp. Laws § 445.911(2)–(3)",
+      "text": "(2) Except in a class action or as otherwise provided in subsection (3), a person who suffers loss as a result of a violation of this act may bring an action to recover actual damages or $250.00, whichever is greater, together with reasonable attorney fees. (3) Except in a class action, a person who suffers a loss as a result of a violation of section 3l may bring an action to recover actual damages or $5,000.00, whichever is greater, together with reasonable attorney fees. In an action brought under this subsection, the court may, in its discretion, award punitive damages.",
+      "text_sha256": "302d99e2cac5cf2694ec11e70c79f84b678bd932216196649a905cf562f0f022",
+      "publisher_sha256": "ee5006dfd1897e71bb35971292c74e579d02c28cc1ec55534ca533ffde3a53b1",
+      "retrieved_at": "2026-11-21T17:05:35.670052+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Michigan Legislature statutory PDF, § 445.911(2)–(3)"
     }
   },
   "fault_allocation": {

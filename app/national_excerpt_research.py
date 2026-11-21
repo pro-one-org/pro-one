@@ -33,6 +33,7 @@ SUBJECTS = {
     "eviction_summons": ("landlord_tenant", "eviction_summons"),
     "tenancy_notice": ("landlord_tenant", "tenancy_notice"),
     "wageLaw": ("employment", "wage_payment"),
+    "labor_agency": ("employment", "wage_agency_claim"),
     "sales_commissions": ("employment", "sales_commissions"),
     "wage_separation": ("employment", "wage_separation"),
     "wage_enforcement": ("employment", "wage_enforcement"),
