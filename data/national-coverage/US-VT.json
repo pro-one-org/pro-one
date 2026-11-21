@@ -317,6 +317,54 @@
         "retrieved_at": "2026-11-21T04:18:02.093262+00:00",
         "sha256": "ebb8f5a019f9315989a589f220c7b0e0bc91f500eada31e9b5f5e733ea377c20"
       }
+    },
+    "US-VT:commencement:2f292a1ac38f": {
+      "category": "commencement",
+      "title": "Doe v. Camacho, 2024 VT 72, ¶ 22",
+      "url": "https://www.vtcourts.gov/sites/default/files/documents/op23-325.pdf",
+      "locator": "Doe v. Camacho, 2024 VT 72, ¶ 22",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:20:50.936938+00:00",
+        "sha256": "fcc99b38c51caf64ee86ff23dcb0208ac6186f1d051cd2f5ff930e0727c23222"
+      }
+    },
+    "US-VT:service_time_limit:f6961846dd65": {
+      "category": "service_time_limit",
+      "title": "Doe v. Camacho, 2024 VT 72, ¶ 3",
+      "url": "https://www.vtcourts.gov/sites/default/files/documents/op23-325.pdf",
+      "locator": "Doe v. Camacho, 2024 VT 72, ¶ 3",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:20:50.936938+00:00",
+        "sha256": "fcc99b38c51caf64ee86ff23dcb0208ac6186f1d051cd2f5ff930e0727c23222"
+      }
+    },
+    "US-VT:service:afdf840ad603": {
+      "category": "service",
+      "title": "Doe v. Camacho, 2024 VT 72, ¶ 9",
+      "url": "https://www.vtcourts.gov/sites/default/files/documents/op23-325.pdf",
+      "locator": "Doe v. Camacho, 2024 VT 72, ¶ 9",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:20:50.936938+00:00",
+        "sha256": "fcc99b38c51caf64ee86ff23dcb0208ac6186f1d051cd2f5ff930e0727c23222"
+      }
+    },
+    "US-VT:service_proof:3274e5c08317": {
+      "category": "service_proof",
+      "title": "Doe v. Camacho, 2024 VT 72, ¶ 23",
+      "url": "https://www.vtcourts.gov/sites/default/files/documents/op23-325.pdf",
+      "locator": "Doe v. Camacho, 2024 VT 72, ¶ 23",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:20:50.936938+00:00",
+        "sha256": "fcc99b38c51caf64ee86ff23dcb0208ac6186f1d051cd2f5ff930e0727c23222"
+      }
     }
   },
   "court_directory": [
@@ -572,6 +620,74 @@
       "opinion_role": "majority",
       "procedural_posture": "Appeal from judgment as a matter of law at trial on a negligence claim arising from a vehicle collision.",
       "publisher_member": "court opinion PDF p. 4"
+    },
+    "6fb545940eecffd5b99095fd760229": {
+      "source_id": "US-VT:commencement:2f292a1ac38f",
+      "authority_type": "opinion",
+      "citation": "Doe v. Camacho, 2024 VT 72, ¶ 22",
+      "text": "More fundamentally, however, Rule 3 unambiguously requires that a plaintiff who commences an action by filing a complaint serve all defendants within sixty days, and nothing in Rule 4 contemplates that service on the State is service on an individual defendant who was or is employed by the State where the State has yet to enter an appearance on that defendant’s behalf. See V.R.C.P. 3(a); V.R.C.P. 4.",
+      "text_sha256": "bfbf76bed18968600c1544c6bc5e6ef38659fdcdf84b07e6d7929f2917df16ce",
+      "publisher_sha256": "fcc99b38c51caf64ee86ff23dcb0208ac6186f1d051cd2f5ff930e0727c23222",
+      "retrieved_at": "2026-11-21T17:20:50.936938+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported opinion issued 2024-11-08",
+      "court": "Vermont Supreme Court",
+      "publisher_member": "Official Vermont Supreme Court opinion p. 12, ¶ 22, filing branch only",
+      "decision_date": "2024-11-08",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from civil-division dismissal of a second complaint as time-barred; the supreme court affirmed after rejecting the savings-statute and equitable-tolling arguments."
+    },
+    "8f8bce5f49711f3ca99e8f1cab3727": {
+      "source_id": "US-VT:service_time_limit:f6961846dd65",
+      "authority_type": "opinion",
+      "citation": "Doe v. Camacho, 2024 VT 72, ¶ 3",
+      "text": "Under the Vermont Rules of Civil Procedure, plaintiff was required to serve copies of the summons and complaint on the defendants within sixty days—by August 22, 2022. V.R.C.P. 3(a) (providing that where action commenced by filing complaint with the court, “summons and complaint must be served upon the defendant within 60 days after the filing of the complaint”); V.R.C.P. 6(a)(1)(C) (providing that where last day of time period “is a Saturday, Sunday, or legal holiday, the period continues to run until the end of the next day that is not a Saturday, Sunday, or legal holiday”).",
+      "text_sha256": "f812d401ad74fe9fbcad4f74ac5a458f1b92dc92f0171f445f3411b92d07d13d",
+      "publisher_sha256": "fcc99b38c51caf64ee86ff23dcb0208ac6186f1d051cd2f5ff930e0727c23222",
+      "retrieved_at": "2026-11-21T17:20:50.936938+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported opinion issued 2024-11-08",
+      "court": "Vermont Supreme Court",
+      "publisher_member": "Official Vermont Supreme Court opinion p. 3, ¶ 3, original case after filing and weekend computation",
+      "decision_date": "2024-11-08",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from civil-division dismissal of a second complaint as time-barred; the supreme court affirmed after rejecting the savings-statute and equitable-tolling arguments."
+    },
+    "25bb5bbd088c6b4d73f64d8610ac41": {
+      "source_id": "US-VT:service:afdf840ad603",
+      "authority_type": "opinion",
+      "citation": "Doe v. Camacho, 2024 VT 72, ¶ 9",
+      "text": "The investigator left the papers with defendant’s mother in reliance on Vermont Rule of Civil Procedure 4, which provides that service may be made on an individual by leaving copies of the summons and complaint “at the individual’s dwelling house or usual place of abode with some person of suitable age and discretion then residing therein.” V.R.C.P. 4(d)(1), (e).",
+      "text_sha256": "ebd9ad5b0bca2d61543d70bae9714dd6cb98eb7ee6fb103a1b67a46dcee76247",
+      "publisher_sha256": "fcc99b38c51caf64ee86ff23dcb0208ac6186f1d051cd2f5ff930e0727c23222",
+      "retrieved_at": "2026-11-21T17:20:50.936938+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported opinion issued 2024-11-08",
+      "court": "Vermont Supreme Court",
+      "publisher_member": "Official Vermont Supreme Court opinion p. 5, ¶ 9, Rule 4 abode method",
+      "decision_date": "2024-11-08",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from civil-division dismissal of a second complaint as time-barred; the supreme court affirmed after rejecting the savings-statute and equitable-tolling arguments."
+    },
+    "ed96f0e1b21291c1c4cd6f2e5da17d": {
+      "source_id": "US-VT:service_proof:3274e5c08317",
+      "authority_type": "opinion",
+      "citation": "Doe v. Camacho, 2024 VT 72, ¶ 23",
+      "text": "The requirement of timely service and the requirement to file proof of that timely service are separate obligations. Though the plaintiff must, “within the time during which the person served must respond to the process, file the proof of service with the court,” any “[f]ailure to make proof of service shall not affect the validity of the service.” V.R.C.P. 4(i).",
+      "text_sha256": "bb2363ba20f1b1b4e74ee41ab5543938e73a2cec6243beb59e7f95872f74e24d",
+      "publisher_sha256": "fcc99b38c51caf64ee86ff23dcb0208ac6186f1d051cd2f5ff930e0727c23222",
+      "retrieved_at": "2026-11-21T17:20:50.936938+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported opinion issued 2024-11-08",
+      "court": "Vermont Supreme Court",
+      "publisher_member": "Official Vermont Supreme Court opinion p. 12, ¶ 23, Rule 4(i) proof distinguished from completed service",
+      "decision_date": "2024-11-08",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from civil-division dismissal of a second complaint as time-barred; the supreme court affirmed after rejecting the savings-statute and equitable-tolling arguments."
     }
   },
   "fault_allocation": {

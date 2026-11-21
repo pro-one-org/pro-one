@@ -23,6 +23,19 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_wyoming_commencement_preserves_conditional_refiling(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Wyoming", legal_area="civil_procedure",
+                               topics=["commencement"], authority_status="historical")
+        key, = provider.search(query)
+        text = provider.fetch(key).text
+        self.assertIn("except when an action has been dismissed pursuant to Rule 4(w)", text)
+        self.assertIn("if service is obtained within 90 days of the applicable statute of limitations", text)
+        self.assertNotIn(key, provider.search(query.model_copy(update={"topics": ["service_time_limit"]})))
+        self.assertNotIn(key, provider.search(query.model_copy(update={"state": "Vermont"})))
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                  "authority_as_of": "2026-11-21"})))
+
     def test_mississippi_service_time_does_not_supply_a_response_deadline(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Mississippi", legal_area="civil_procedure",

@@ -401,6 +401,18 @@
         "retrieved_at": "2026-11-21T16:38:28.370677+00:00",
         "sha256": "61d75752c378124b42e00d72f6dee51fd7a548f0727e3d2e2835e1150213c95c"
       }
+    },
+    "US-MO:commencement:cbb8462da0a5": {
+      "category": "commencement",
+      "title": "Bray v. Sexton, 534 S.W.3d 418 (Mo. App. E.D. 2017)",
+      "url": "https://www.courts.mo.gov/file/ED/Opinion_ED105372.pdf",
+      "locator": "Bray v. Sexton, 534 S.W.3d 418 (Mo. App. E.D. 2017)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:21:50.676633+00:00",
+        "sha256": "7293e5b7f864dd591b1d5ba146828364b511655ac0ecfba149fc4857caa24882"
+      }
     }
   },
   "court_directory": [
@@ -707,6 +719,23 @@
       "language": "en",
       "publisher_member": "Missouri Revisor of Statutes, version effective August 28, 2019, subsection (5)",
       "effective_from": "2019-08-28"
+    },
+    "56a25bfb718c2815b6521564c62280": {
+      "source_id": "US-MO:commencement:cbb8462da0a5",
+      "authority_type": "opinion",
+      "citation": "Bray v. Sexton, 534 S.W.3d 418 (Mo. App. E.D. 2017)",
+      "text": "In contrast, the Missouri Supreme Court has directly addressed the requirements of the post-1972 version of Rule 53.01 and the question of what steps are required under the Rule for the commencement of a general civil action. The Supreme Court has held that Rule 53.01, in its current and applicable form, “only requires the filing of a petition with the court to commence [an] action.” Bailey v. Innovative Management & Inv., Inc., 890 S.W.2d 648, 650 (Mo. banc 1994); Ostermueller v. Potter, 868 S.W.2d 110, 111 (Mo. banc 1993); see Rule 53.01 (providing that “[a] civil action is commenced by filing a petition with the court”).",
+      "text_sha256": "a929c6050682cdddbb5f165e2e90b6f47e063af1d831b37a254bd07488e538da",
+      "publisher_sha256": "7293e5b7f864dd591b1d5ba146828364b511655ac0ecfba149fc4857caa24882",
+      "retrieved_at": "2026-11-21T17:21:50.676633+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported opinion issued 2017-12-05",
+      "court": "Missouri Court of Appeals, Eastern District",
+      "publisher_member": "Missouri Court of Appeals slip opinion ED105372 p. 7, general Rule 53.01 standard cited in mechanic’s-lien appeal",
+      "decision_date": "2017-12-05",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissal of mechanic’s-lien enforcement claim; appellate court applied the amended commencement rule and reversed and remanded."
     }
   },
   "fault_allocation": {

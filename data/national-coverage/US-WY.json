@@ -351,6 +351,18 @@
         "retrieved_at": "2026-11-21T04:18:06.104743+00:00",
         "sha256": "a98e17e3ed3b721b5baa74e5be61a4782dc5b2976e38ebdf86efeba7b7ebc1d4"
       }
+    },
+    "US-WY:commencement:49469742ef95": {
+      "category": "commencement",
+      "title": "Wyo. R. Civ. P. 3 (effective June 1, 2022)",
+      "url": "https://www.wyocourts.gov/app/uploads/2025/01/Order-WRCP-3-16-40.1-1.pdf",
+      "locator": "Wyo. R. Civ. P. 3 (effective June 1, 2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:20:50.733110+00:00",
+        "sha256": "521cc3d421d2287fbba1f58b015e43817e623e239bb340f9709a57627db1fd84"
+      }
     }
   },
   "court_directory": [
@@ -624,6 +636,21 @@
       "opinion_role": "majority",
       "procedural_posture": "Appeal from summary judgment in a negligence claim arising from an injury while closing a railroad car’s dump doors.",
       "publisher_member": "court opinion PDF p. 4"
+    },
+    "330f34c80d06741ca28367f7b6fa7b": {
+      "source_id": "US-WY:commencement:49469742ef95",
+      "authority_type": "court_rule",
+      "citation": "Wyo. R. Civ. P. 3 (effective June 1, 2022)",
+      "text": "A civil action is commenced by filing a complaint with the court, except when an action has been dismissed pursuant to Rule 4(w). When an action has been dismissed pursuant to Rule 4(w) and a new action is filed, it is commenced by filing a complaint with the court if service is obtained within 90 days of the applicable statute of limitations.",
+      "text_sha256": "e706fb037e9c917f25908be7145e67373ed88f5cf1d57ed8fc725721721fc2d8",
+      "publisher_sha256": "521cc3d421d2287fbba1f58b015e43817e623e239bb340f9709a57627db1fd84",
+      "retrieved_at": "2026-11-21T17:20:50.733110+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Order of March 15, 2022, effective June 1, 2022",
+      "court": "Wyoming district courts governed by the Wyoming Rules of Civil Procedure",
+      "publisher_member": "Wyoming Supreme Court order signed March 15, 2022, PDF p. 2; Rule 3 text",
+      "effective_from": "2022-06-01"
     }
   },
   "fault_allocation": {

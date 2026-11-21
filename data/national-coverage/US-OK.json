@@ -404,6 +404,42 @@
         "retrieved_at": "2026-11-20T22:31:57.123801+00:00",
         "sha256": "c1d70bf0c72f1c64ced651fa801139f103827c7f8f1b920ae6d4faa5e55729bf"
       }
+    },
+    "US-OK:commencement:77d40920a23d": {
+      "category": "commencement",
+      "title": "Okla. Stat. tit. 12, § 2003",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os12.pdf",
+      "locator": "Okla. Stat. tit. 12, § 2003",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:20:51.918816+00:00",
+        "sha256": "191d2eda87ab84e24a2338f82975c015019e7c55d7b34f18582469f75fdfb4c4"
+      }
+    },
+    "US-OK:summons_issuance:d0b508e64484": {
+      "category": "summons_issuance",
+      "title": "Okla. Stat. tit. 12, § 2004(A)–(B)",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os12.pdf",
+      "locator": "Okla. Stat. tit. 12, § 2004(A)–(B)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:20:51.918816+00:00",
+        "sha256": "191d2eda87ab84e24a2338f82975c015019e7c55d7b34f18582469f75fdfb4c4"
+      }
+    },
+    "US-OK:service:b08906470e61": {
+      "category": "service",
+      "title": "Okla. Stat. tit. 12, § 2004(C)(1)(c)(1)",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os12.pdf",
+      "locator": "Okla. Stat. tit. 12, § 2004(C)(1)(c)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:20:51.918816+00:00",
+        "sha256": "191d2eda87ab84e24a2338f82975c015019e7c55d7b34f18582469f75fdfb4c4"
+      }
     }
   },
   "court_directory": [
@@ -655,6 +691,43 @@
       "retrieved_at": "2026-11-20T22:31:57.123801+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "64b62ae989e86f7e23ce07dd08b746": {
+      "source_id": "US-OK:commencement:77d40920a23d",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 12, § 2003",
+      "text": "A civil action is commenced by filing a petition with the court.",
+      "text_sha256": "059ca54afd2ac076d671f347843954f26add73e13f277e5d012fcdf6b1033106",
+      "publisher_sha256": "191d2eda87ab84e24a2338f82975c015019e7c55d7b34f18582469f75fdfb4c4",
+      "retrieved_at": "2026-11-21T17:20:51.918816+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Oklahoma Legislature Title 12 official compilation p. 437, § 2003; session citation carries November 1, 1984 effective date",
+      "effective_from": "1984-11-01"
+    },
+    "e9bd1de1c91a9b1fc7facb905c05f9": {
+      "source_id": "US-OK:summons_issuance:d0b508e64484",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 12, § 2004(A)–(B)",
+      "text": "A. SUMMONS: ISSUANCE. Upon filing of the petition, the clerk shall forthwith issue a summons. Upon request of the plaintiff separate or additional summons shall issue against any defendants. B. SUMMONS: FORM. 1. The summons shall be signed by the clerk, be under the seal of the court, contain the name of the court and the names of the parties, be directed to the defendant, state the name and address of the plaintiff's attorney, if any, otherwise, the plaintiff's address, and the time within which these rules require the defendant to appear and defend, and shall notify the defendant that in case of failure to appear, judgment by default will be rendered against the defendant for the relief demanded in the petition. 2. A judgment by default shall not be different in kind from or exceed in amount that prayed for in either the demand for judgment or in cases not sounding in contract in a notice which has been given the party against whom default judgment is sought. Except as to a party against whom a judgment is entered by default, every final judgment shall grant the relief to which the party in whose favor it is rendered is entitled, even if the party has not demanded such relief in his or her pleadings.",
+      "text_sha256": "0a3398bf8a863a61992e670922f451acd7b9446b3decd297a08cda0a8fa5dfdd",
+      "publisher_sha256": "191d2eda87ab84e24a2338f82975c015019e7c55d7b34f18582469f75fdfb4c4",
+      "retrieved_at": "2026-11-21T17:20:51.918816+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Oklahoma Legislature Title 12 official compilation p. 441, § 2004(A)–(B)"
+    },
+    "00840e1a25d303ae1b7c88d1d161b7": {
+      "source_id": "US-OK:service:b08906470e61",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 12, § 2004(C)(1)(c)(1)",
+      "text": "(1) upon an individual other than an infant who is less than fifteen (15) years of age or an incompetent person, by delivering a copy of the summons and of the petition personally or by leaving copies thereof at the person's dwelling house or usual place of abode with some person then residing therein who is fifteen (15) years of age or older, by delivering a copy of the summons and of the petition to an agent authorized by appointment or by law to receive service of process, or by delivering a copy of the summons and of the petition personally or by leaving copies thereof at an agreed meeting place with some person then residing at the person's dwelling house or usual place of abode",
+      "text_sha256": "b5acf98736febc49f08ab5e3976235ffd38542493ca934b4823209bceaf2cabc",
+      "publisher_sha256": "191d2eda87ab84e24a2338f82975c015019e7c55d7b34f18582469f75fdfb4c4",
+      "retrieved_at": "2026-11-21T17:20:51.918816+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Oklahoma Legislature Title 12 official compilation p. 442, § 2004(C)(1)(c)(1)"
     }
   },
   "fault_allocation": {
