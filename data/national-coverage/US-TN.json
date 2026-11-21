@@ -398,6 +398,18 @@
         "retrieved_at": "2026-11-21T16:38:32.549144+00:00",
         "sha256": "1f68fb108d981e328412c6ea0117601b13c6e16fb2696a376b39e109bc2b50f2"
       }
+    },
+    "US-TN:service_time_limit:db40fa2f3057": {
+      "category": "service_time_limit",
+      "title": "Tenn. R. Civ. P. 3, service and reissuance (2016 Christenberry quotation)",
+      "url": "https://web.archive.org/web/20170215185856id_/https://tncourts.gov/sites/default/files/christenberry.opn_.final_.pdf",
+      "locator": "Tenn. R. Civ. P. 3, service and reissuance (2016 Christenberry quotation)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:32.549144+00:00",
+        "sha256": "1f68fb108d981e328412c6ea0117601b13c6e16fb2696a376b39e109bc2b50f2"
+      }
     }
   },
   "court_directory": [
@@ -774,6 +786,20 @@
       "edition": "Tennessee Rule 4.01 as quoted by the Tennessee Court of Appeals on January 14, 2016",
       "court": "Tennessee courts governed by the Tennessee Rules of Civil Procedure",
       "publisher_member": "Tennessee Court of Appeals, Christenberry v. Christenberry, Jan. 14, 2016, slip op. p. 7, rule quoted in opinion"
+    },
+    "430169efc35b8b1dd7a66b1236ed6d": {
+      "source_id": "US-TN:service_time_limit:db40fa2f3057",
+      "authority_type": "court_rule",
+      "citation": "Tenn. R. Civ. P. 3, service and reissuance (2016 Christenberry quotation)",
+      "text": "If process remains unissued for 90 days or is not served within 90 days from issuance, regardless of the reason, the plaintiff cannot rely upon the original commencement to toll the running of a statute of limitations unless the plaintiff continues the action by obtaining issuance of new process within one year from issuance of the previous process or, if no process is issued, within one year of the filing of the complaint.",
+      "text_sha256": "a8f7bdfa64b40e1379fc7ae7dcae2c04b95dc568b157c9ef9236bf5274ed2f34",
+      "publisher_sha256": "1f68fb108d981e328412c6ea0117601b13c6e16fb2696a376b39e109bc2b50f2",
+      "retrieved_at": "2026-11-21T16:38:32.549144+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Tennessee Rule 3 as quoted by the Tennessee Court of Appeals on January 14, 2016",
+      "court": "Tennessee courts governed by the Tennessee Rules of Civil Procedure",
+      "publisher_member": "Tennessee Court of Appeals, Christenberry v. Christenberry, January 14, 2016, slip op. p. 6, last sentence of quoted Rule 3"
     }
   },
   "fault_allocation": {

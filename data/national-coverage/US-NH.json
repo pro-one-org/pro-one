@@ -367,6 +367,18 @@
         "retrieved_at": "2026-11-21T04:27:26.513512+00:00",
         "sha256": "d5e50419759ab96bff8349fea2bfc1c06e95d8fc7c582f5c3d0f1b48f11f28b1"
       }
+    },
+    "US-NH:service_time_limit:927088fa78dc": {
+      "category": "service_time_limit",
+      "title": "N.H. Super. Ct. R. 4(c) (February 2025 archive)",
+      "url": "https://web.archive.org/web/20250217063714id_/https://www.courts.nh.gov/rules-superior-court-state-new-hampshire#page-id-4296",
+      "locator": "N.H. Super. Ct. R. 4(c) (February 2025 archive)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:08:50.883305+00:00",
+        "sha256": "e7a284523ab329e9fb191c708c5912198e663c305e57232a7d7001400fbea197"
+      }
     }
   },
   "court_directory": [
@@ -682,6 +694,20 @@
       "opinion_role": "majority",
       "procedural_posture": "Appeal from summary judgment on whether a carnival operator owed a duty in a wrongful-death negligence action.",
       "publisher_member": "Court-issued slip opinion, PDF p. 3"
+    },
+    "9e119add4ce453b8fb3b391bc4816f": {
+      "source_id": "US-NH:service_time_limit:927088fa78dc",
+      "authority_type": "court_rule",
+      "citation": "N.H. Super. Ct. R. 4(c) (February 2025 archive)",
+      "text": "The Summons will identify: (i) the date the Complaint is filed; (ii) the court-ordered deadline for service; and (iii) a hearing date, if appropriate. Plaintiff will cause the Summons together with a copy of the Complaint to be served on defendant no later than the court-ordered deadline for service, service to be made as specified in RSA 510, or as otherwise allowed by law. Proof of service shall be filed with the court within 21 days of the court-ordered deadline for service. If a defendant is not served within the court-ordered deadline for service, the court shall dismiss the action with or without prejudice, as justice may require.",
+      "text_sha256": "dc6d9686ef6e6bd171e37986e0625d81a6dd05909edb613d3832291cc874af3b",
+      "publisher_sha256": "e7a284523ab329e9fb191c708c5912198e663c305e57232a7d7001400fbea197",
+      "retrieved_at": "2026-11-21T04:08:50.883305+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Hampshire Judicial Branch Superior Court rules archived February 17, 2025",
+      "court": "New Hampshire Superior Court",
+      "publisher_member": "New Hampshire Judicial Branch archived Superior Court Rule 4(c), deadline specified by the court and separate time for filing proof"
     }
   },
   "fault_allocation": {

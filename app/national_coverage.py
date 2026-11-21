@@ -42,7 +42,7 @@ CAPABILITIES = {
     "deadlines": {"pi_limitations": ("pi_limitations",), "wrongful_death_limitations": ("wrongful_death_limitations",),
                   "accrual": ("accrual",), "tolling": ("tolling",),
                   "contract_limitations": ("written_contract_limitations", "oral_contract_limitations", "general_contract_limitations"),
-                  "initial_response": ("response",), "service": ("service",)},
+                  "initial_response": ("response",), "service": ("service_time_limit",)},
     "forms": {"forms_index": ("forms",), "complaint": ("complaint_form",), "answer": ("answer_form",),
               "summons": ("summons_form",), "cover_sheet": ("cover_sheet_form",), "small_claim": ("small_claim_form",)},
 }

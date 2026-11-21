@@ -23,6 +23,15 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_service_deadline_coverage_requires_timing_evidence(self):
+        colorado = coverage("US-CO")["cells"]
+        self.assertTrue(colorado["procedure.service"]["passage_selectors"])
+        self.assertFalse(colorado["deadlines.service"]["passage_selectors"])
+        wyoming = coverage("US-WY")
+        timing, = wyoming["cells"]["deadlines.service"]["passage_selectors"]
+        self.assertIn("Time Limit for Service", wyoming["passages"][timing]["text"])
+        self.assertNotIn(timing, wyoming["cells"]["procedure.service"]["passage_selectors"])
+
     def test_delaware_contract_limitations_keep_exceptions_and_account_accrual(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Delaware", legal_area="contracts",
