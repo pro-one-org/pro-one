@@ -941,6 +941,7 @@ class NationalCoverageTests(unittest.TestCase):
         publisher_editions = {
             ("US-DC", date(2026, 4, 29)): "D.C. Council codified XML publication, current through April 29, 2026.",
             ("US-DE", date(2023, 1, 10)): "Court of Common Pleas Civil Rules. Current as of January 10, 2023.",
+            ("US-WA", date(2024, 7, 12)): "Revised Code of Washington, certified July 12, 2024.",
             ("US-WI", date(2026, 11, 4)): "Published and certified",
             ("US-MI", date(2026, 11, 18)): "Michigan Supreme Court Rules Chapter 2.",
             ("US-MI", date(2024, 9, 1)): "Michigan Supreme Court Rules Chapter 4.",

@@ -1944,5 +1944,47 @@
       "op": "element",
       "element": "wrongful_death_filing_reference"
     }
+  },
+  {
+    "id": "wa_consumer_public_interest_reference",
+    "version": "v1",
+    "jurisdiction": "US-WA",
+    "legal_area": "consumer",
+    "kind": "entitlement",
+    "label": "Public-interest element of a Washington consumer claim",
+    "plain_language_label": "How the alleged practice could affect the public",
+    "authority_as_of": "2024-07-12",
+    "topics": [
+      "consumer_public_interest"
+    ],
+    "matter_types": [
+      "consumer"
+    ],
+    "limitations": [
+      "This reference addresses the public-interest element of a private action alleging an unfair or deceptive act or practice under RCW 19.86.020.",
+      "The enacting legislation applies to causes of action accruing on or after July 26, 2009. Review the applicable edition, all other elements and applicable exceptions separately."
+    ],
+    "elements": [
+      {
+        "id": "public_interest_showing",
+        "label": "Statutory grounds for a public-interest showing",
+        "description": "Identify any allegedly violated statute that incorporates the Consumer Protection Act or specifically declares a public-interest impact, and any evidence of actual or potential injury to other people.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-4e55d829c6f20a208fac324ec07d3fb811982ea88b71d15b3f66434a931bd64e-p1",
+            "source_id": "corpus-4e55d829c6f20a208fac324ec07d3fb811982ea88b71d15b3f66434a931bd64e",
+            "source_type": "statute",
+            "source_version": "Revised Code of Washington, certified July 12, 2024.",
+            "excerpt_hash": "sha256:fee63dccbe4bda45ab3b7a53601aa860adc274efaba430ac40503a2a89178e46"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "public_interest_showing"
+    }
   }
 ]

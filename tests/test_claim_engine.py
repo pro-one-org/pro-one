@@ -89,6 +89,19 @@ class ClaimTests(unittest.TestCase):
             for day in (None, date(2026, 4, 28), date(2026, 4, 30)):
                 self.assertFalse(catalog.research(theory, law_as_of=day)[0])
 
+    def test_washington_consumer_reference_is_date_and_topic_limited(self):
+        catalog = self.engine.catalog
+        theory = catalog.active["wa_consumer_public_interest_reference"]
+        self.assertIn(theory, available(catalog, "US-WA", "consumer"))
+        self.assertNotIn(theory, available(catalog, "US-DC", "consumer"))
+        self.assertNotIn(theory, available(catalog, "US-WA", "personal_injury"))
+        bindings, _, _ = catalog.research(theory, law_as_of=date(2024, 7, 12))
+        self.assertEqual(set(bindings), {"public_interest_showing"})
+        self.assertEqual([row["citation"] for row in bindings["public_interest_showing"]],
+                         ["Wash. Rev. Code § 19.86.093"])
+        for day in (None, date(2024, 7, 11), date(2024, 7, 13)):
+            self.assertFalse(catalog.research(theory, law_as_of=day)[0])
+
     def test_wisconsin_collection_claim_preserves_scope_and_spouse_qualification(self):
         catalog = self.engine.catalog
         theory = catalog.active["wi_collection_nonexistent_right"]
