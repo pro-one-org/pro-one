@@ -309,6 +309,30 @@
         "retrieved_at": "2026-11-21T03:59:02.784617+00:00",
         "sha256": "f648326d5612de7ff6263709976314cfaf7b77b0a23b3c5e1b35b6da0327d8d8"
       }
+    },
+    "US-MD:response:79dbd7fdf5ef": {
+      "category": "response",
+      "title": "Md. Rule 2-321(b)(1)–(6) (January 2004 amendment)",
+      "url": "https://web.archive.org/web/20250502164211id_/https://www.mdcourts.gov/sites/default/files/import/rules/rodocs/152ro.pdf",
+      "locator": "Md. Rule 2-321(b)(1)–(6) (January 2004 amendment)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:10:31.113974+00:00",
+        "sha256": "b63ecd63d184d617b8c745d76a0b0cabc158d96ccbb3e028d8192c56fef7cea8"
+      }
+    },
+    "US-MD:response:f46ec4ad20f5": {
+      "category": "response",
+      "title": "Md. Rule 3-307(a)–(b) (January 2004 amendment)",
+      "url": "https://web.archive.org/web/20250502164211id_/https://www.mdcourts.gov/sites/default/files/import/rules/rodocs/152ro.pdf",
+      "locator": "Md. Rule 3-307(a)–(b) (January 2004 amendment)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:10:31.113974+00:00",
+        "sha256": "b63ecd63d184d617b8c745d76a0b0cabc158d96ccbb3e028d8192c56fef7cea8"
+      }
     }
   },
   "court_directory": [
@@ -512,6 +536,36 @@
       "opinion_role": "majority",
       "procedural_posture": "Certiorari before appellate argument to review a defense judgment on a jury verdict in a personal-injury action.",
       "publisher_member": "original court opinion, PDF p. 16"
+    },
+    "3e7e65365234e06b9a67d5c07570ce": {
+      "source_id": "US-MD:response:79dbd7fdf5ef",
+      "authority_type": "court_rule",
+      "citation": "Md. Rule 2-321(b)(1)–(6) (January 2004 amendment)",
+      "text": "(b) Exceptions (1) A defendant who is served with an original pleading outside of the State but within the United States shall file an answer within 60 days after being served. (2) A defendant who is served with an original pleading by publication or posting, pursuant to Rule 2-122, shall file an answer within the time specified in the notice. (3) A person who is required by statute of this State to have a resident agent and who is served with an original pleading by service upon the State Department of Assessments and Taxation, the Insurance Commissioner, or some other agency of the State authorized by statute to receive process shall file an answer within 60 days after being served. (4) The United States or an officer or agency of the United States served with an original pleading pursuant to Rule 2-124 (m) or (n) shall file an answer within 60 days after being served. (5) A defendant who is served with an original pleading outside of the United States shall file an answer within 90 days after being served. (6) If rules for special proceedings, or statutes of this State or of the United States, provide for a different time to answer, the answer shall be filed as provided by those rules or statutes.",
+      "text_sha256": "ac203d1a3b2f545080c44bcb919abc30daef49c07732bfc3826aad9d2712ef96",
+      "publisher_sha256": "b63ecd63d184d617b8c745d76a0b0cabc158d96ccbb3e028d8192c56fef7cea8",
+      "retrieved_at": "2026-11-21T04:10:31.113974+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Maryland Court of Appeals Rules Order filed November 12, 2003, effective January 1, 2004",
+      "court": "Maryland Circuit Courts",
+      "effective_from": "2004-01-01",
+      "publisher_member": "printed pp. 35–36"
+    },
+    "09ca3f3e0a6e7fae7a5baaf86e6c48": {
+      "source_id": "US-MD:response:f46ec4ad20f5",
+      "authority_type": "court_rule",
+      "citation": "Md. Rule 3-307(a)–(b) (January 2004 amendment)",
+      "text": "(a) To be Filed with Court - When Service Not Required The defendant, including a counter-defendant, cross-defendant, and third-party defendant, shall file with the court a notice of intention to defend which may include any explanation or ground of defense. When the defendant is represented by an attorney, the notice shall be served in accordance with Rule 1-321. A defendant not represented by an attorney need not serve the notice on any party. (b) Time for Filing (1) Generally Except as provided by subsection (b)(2) of this Rule, the notice shall be filed within 15 days after service of the complaint, counterclaim, cross-claim, or third-party claim. (2) Exceptions A defendant shall file the notice within 60 days after being served if the defendant is: (A) served outside of the State; (B) a person who is required by statute of this State to have a resident agent and who is served by service upon the State Department of Assessments and Taxation, the Insurance Commissioner, or some other agency of the State authorized by statute to receive process; or (C) the United States or an officer or agency of the United States served pursuant to Rule 3-124 (m) or (n).",
+      "text_sha256": "7649c442d11680359826c93aa125e15228b0a13a02f69354279253779ef0da7e",
+      "publisher_sha256": "b63ecd63d184d617b8c745d76a0b0cabc158d96ccbb3e028d8192c56fef7cea8",
+      "retrieved_at": "2026-11-21T04:10:31.113974+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Maryland Court of Appeals Rules Order filed November 12, 2003, effective January 1, 2004",
+      "court": "District Court of Maryland",
+      "effective_from": "2004-01-01",
+      "publisher_member": "printed pp. 116–117"
     }
   },
   "fault_allocation": {

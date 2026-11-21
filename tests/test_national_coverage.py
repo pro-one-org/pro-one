@@ -396,6 +396,54 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertFalse(provider.search(dc.model_copy(update={"sovereign": "state"})))
         self.assertFalse(provider.search(dc.model_copy(update={"court": "District of Columbia Superior Court, Small Claims and Conciliation Branch"})))
 
+    def test_maryland_answer_exceptions_and_intention_to_defend_are_tribunal_specific(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Maryland", legal_area="civil_procedure",
+                               topics=["initial_response"], authority_types=["court_rule"],
+                               authority_status="historical", court="Maryland Circuit Courts")
+        key, = provider.search(query)
+        circuit = provider.fetch(key).text
+        self.assertIn("within 90 days", circuit)
+        self.assertIn("within the time specified in the notice", circuit)
+        self.assertNotIn("notice of intention to defend", circuit)
+        key, = provider.search(query.model_copy(update={"court": "District Court of Maryland"}))
+        district = provider.fetch(key).text
+        self.assertIn("notice of intention to defend", district)
+        self.assertIn("the notice shall be filed within 15 days", district)
+        self.assertIn("the notice within 60 days", district)
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current", "authority_as_of": "2026-11-20"})))
+
+    def test_new_hampshire_rulebook_retains_initial_and_motion_response_triggers(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="New Hampshire", legal_area="civil_procedure",
+                               topics=["initial_response"], authority_types=["court_rule"],
+                               authority_status="historical", court="New Hampshire Superior Court")
+        excerpts = [provider.fetch(key).text for key in provider.search(query)]
+        self.assertEqual(len(excerpts), 3)
+        for text in ("served with the Summons and Complaint", "shall also file an appearance",
+                     "if the supreme court accepts the appeal and rejects the party's challenge"):
+            self.assertTrue(any(text.casefold() in excerpt.casefold() for excerpt in excerpts), text)
+        self.assertFalse(provider.search(query.model_copy(update={"court": "New Hampshire Circuit Court"})))
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current", "authority_as_of": "2026-11-20"})))
+
+    def test_new_mexico_compilation_preserves_service_and_response_scope(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="New Mexico", legal_area="civil_procedure",
+                               topics=["initial_response"], authority_types=["court_rule"],
+                               authority_status="unresolved", court="New Mexico District Courts")
+        key, = provider.search(query)
+        response = provider.fetch(key).text
+        self.assertIn("thirty (30) days after the service of the summons and complaint", response)
+        self.assertIn("ten (10) days after the service of the more definite statement", response)
+        service = query.model_copy(update={"topics": ["service_of_process"]})
+        excerpts = [provider.fetch(key).text for key in provider.search(service)]
+        electronic, = [text for text in excerpts if "Service by social media, e-mail and text message" in text]
+        self.assertIn("showing by affidavit or other sworn testimony", electronic)
+        self.assertIn("the court may authorize", electronic)
+        for court in ("New Mexico Magistrate Courts", "Bernalillo County Metropolitan Court"):
+            self.assertFalse(provider.search(service.model_copy(update={"court": court})))
+        self.assertFalse(provider.search(service.model_copy(update={"authority_status": "current", "authority_as_of": "2026-11-20"})))
+
     def test_automated_transaction_enactment_is_scoped_and_historical(self):
         query = ResearchMatter(country="US", state="Arkansas", legal_area="contracts",
                                topics=["automated_contract_formation"], authority_types=["statute"],
