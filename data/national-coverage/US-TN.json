@@ -410,6 +410,18 @@
         "retrieved_at": "2026-11-21T16:38:32.549144+00:00",
         "sha256": "1f68fb108d981e328412c6ea0117601b13c6e16fb2696a376b39e109bc2b50f2"
       }
+    },
+    "US-TN:general_contract_limitations:1c11e6a2eee4": {
+      "category": "general_contract_limitations",
+      "title": "Deutsche Bank National Trust Co. v. Lee, No. M2018-01479-COA-R3-CV (Tenn. Ct. App. June 13, 2019)",
+      "url": "https://web.archive.org/web/20230226012250id_/https://www.tncourts.gov/sites/default/files/deutschebankv.lee_.opn_.pdf",
+      "locator": "Deutsche Bank National Trust Co. v. Lee, No. M2018-01479-COA-R3-CV (Tenn. Ct. App. June 13, 2019)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:05.064190+00:00",
+        "sha256": "5160a636ee485a4c1ac0d7407447f14aef7d15eaf50ade8fa38d72d4ad8e1994"
+      }
     }
   },
   "court_directory": [
@@ -800,6 +812,23 @@
       "edition": "Tennessee Rule 3 as quoted by the Tennessee Court of Appeals on January 14, 2016",
       "court": "Tennessee courts governed by the Tennessee Rules of Civil Procedure",
       "publisher_member": "Tennessee Court of Appeals, Christenberry v. Christenberry, January 14, 2016, slip op. p. 6, last sentence of quoted Rule 3"
+    },
+    "b67f5fda527ac4fd687ed674405cf3": {
+      "source_id": "US-TN:general_contract_limitations:1c11e6a2eee4",
+      "authority_type": "opinion",
+      "citation": "Deutsche Bank National Trust Co. v. Lee, No. M2018-01479-COA-R3-CV (Tenn. Ct. App. June 13, 2019)",
+      "text": "The statute of limitations for “[a]ctions on contracts not otherwise expressly provided for” is six years. Tenn. Code Ann. § 28-3-109(a)(3). Chapter 28 of the Tennessee Code does not otherwise expressly provide for actions regarding promissory notes. “As it pertains to an installment note, the law is well settled that the cause of action accrues on each installment when it becomes due, and that the statutory period begins to run from that moment on that installment.” Consumer Credit Union v. Hite, 801 S.W.2d 822, 824 (Tenn. Ct. App. 1990).",
+      "text_sha256": "d87e272e79c2ab92838063b3cd517275c3821a922d3c48d40c4a4b8390b88c05",
+      "publisher_sha256": "5160a636ee485a4c1ac0d7407447f14aef7d15eaf50ade8fa38d72d4ad8e1994",
+      "retrieved_at": "2026-11-21T17:43:05.064190+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported opinion issued 2019-06-13",
+      "court": "Tennessee Court of Appeals",
+      "publisher_member": "Tennessee Court of Appeals issued opinion p. 7, general rule and accrual for installment notes",
+      "decision_date": "2019-06-13",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from judgment on breach of a promissory note; the appellate court reviewed the limitations defense in an installment-payment dispute."
     }
   },
   "fault_allocation": {

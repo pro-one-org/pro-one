@@ -430,6 +430,42 @@
         "retrieved_at": "2026-11-18T20:45:46.201127+00:00",
         "sha256": "ced9775a0b20feb4f88d5c935b64024e81924ccaca61428d6d050cf2380b1c24"
       }
+    },
+    "US-SC:general_contract_limitations:a2f70fc0e8d6": {
+      "category": "general_contract_limitations",
+      "title": "S.C. Code Ann. § 15-3-530(1)",
+      "url": "https://www.scstatehouse.gov/Archives/CodeofLaws2024/t15c003.php",
+      "locator": "S.C. Code Ann. § 15-3-530(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:01.961529+00:00",
+        "sha256": "3db72132a1123420b1837e793a4273a3edba05b1d052318f8ecdbb9d9314a893"
+      }
+    },
+    "US-SC:wrongful_death_limitations:5029ab3509d3": {
+      "category": "wrongful_death_limitations",
+      "title": "S.C. Code Ann. § 15-3-530(6)",
+      "url": "https://www.scstatehouse.gov/Archives/CodeofLaws2024/t15c003.php",
+      "locator": "S.C. Code Ann. § 15-3-530(6)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:01.961529+00:00",
+        "sha256": "3db72132a1123420b1837e793a4273a3edba05b1d052318f8ecdbb9d9314a893"
+      }
+    },
+    "US-SC:written_contract_limitations:67e45b2dfe1d": {
+      "category": "written_contract_limitations",
+      "title": "S.C. Code Ann. § 15-3-520",
+      "url": "https://www.scstatehouse.gov/Archives/CodeofLaws2024/t15c003.php",
+      "locator": "S.C. Code Ann. § 15-3-520",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:01.961529+00:00",
+        "sha256": "3db72132a1123420b1837e793a4273a3edba05b1d052318f8ecdbb9d9314a893"
+      }
     }
   },
   "court_directory": [
@@ -733,6 +769,45 @@
       "language": "en",
       "court": "South Carolina Circuit Court",
       "publisher_member": "South Carolina Judicial Branch Rule 3(a), service conditions for commencement"
+    },
+    "c635a5cb3b1f447a7017811162b9dd": {
+      "source_id": "US-SC:general_contract_limitations:a2f70fc0e8d6",
+      "authority_type": "statute",
+      "citation": "S.C. Code Ann. § 15-3-530(1)",
+      "text": "Within three years: (1) an action upon a contract, obligation, or liability, express or implied, excepting those provided for in Section 15-3-520;",
+      "text_sha256": "f7db864898ee99789babd45b855afd5dc79066f1cb3df49e0a91dd26a841dfbf",
+      "publisher_sha256": "3db72132a1123420b1837e793a4273a3edba05b1d052318f8ecdbb9d9314a893",
+      "retrieved_at": "2026-11-21T17:43:01.961529+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "South Carolina Code of Laws, 2024 archive",
+      "publisher_member": "South Carolina General Assembly archived 2024 Code of Laws, § 15-3-530(1)"
+    },
+    "5557a327de11fd500ce535b7cfe209": {
+      "source_id": "US-SC:wrongful_death_limitations:5029ab3509d3",
+      "authority_type": "statute",
+      "citation": "S.C. Code Ann. § 15-3-530(6)",
+      "text": "Within three years: (6) an action under Sections 15-51-10 to 15-51-60 for death by wrongful act, the period to begin to run upon the death of the person on account of whose death the action is brought;",
+      "text_sha256": "9a860413184d59382a557a1e23fdcc9ded5b989e2d224ac8e92a803d00bc9861",
+      "publisher_sha256": "3db72132a1123420b1837e793a4273a3edba05b1d052318f8ecdbb9d9314a893",
+      "retrieved_at": "2026-11-21T17:43:01.961529+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "South Carolina Code of Laws, 2024 archive",
+      "publisher_member": "South Carolina General Assembly archived 2024 Code of Laws, § 15-3-530(6)"
+    },
+    "d610c53aedb967065f96400c11d414": {
+      "source_id": "US-SC:written_contract_limitations:67e45b2dfe1d",
+      "authority_type": "statute",
+      "citation": "S.C. Code Ann. § 15-3-520",
+      "text": "Within twenty years: (a) an action upon a bond or other contract in writing secured by a mortgage of real property; (b) an action upon a sealed instrument, other than a sealed note and personal bond for the payment of money only whereon the period of limitation is the same as prescribed in Section 15-3-530, except that a sealed contract for sale or an offer to buy or sell goods whereon the period of limitation is the same as prescribed in Section 36-2-725.",
+      "text_sha256": "f128d503d2098ad46231fffd7d4e7ed8c262d86ed97d8bd1dad12792029291e4",
+      "publisher_sha256": "3db72132a1123420b1837e793a4273a3edba05b1d052318f8ecdbb9d9314a893",
+      "retrieved_at": "2026-11-21T17:43:01.961529+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "South Carolina Code of Laws, 2024 archive",
+      "publisher_member": "South Carolina General Assembly archived 2024 Code of Laws, § 15-3-520"
     }
   },
   "fault_allocation": {

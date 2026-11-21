@@ -429,6 +429,30 @@
         "retrieved_at": "2026-11-21T17:14:59.329541+00:00",
         "sha256": "6659e5f341e595ebfcc82eb0b54055676741e81a3f333185871f7babf7159e3d"
       }
+    },
+    "US-MS:written_contract_limitations:fa4aeb3b7507": {
+      "category": "written_contract_limitations",
+      "title": "Levens v. Campbell, 733 So. 2d 753 (Miss. 1999), ¶ 15",
+      "url": "https://courts.ms.gov/images/Opinions/Conv6471.pdf",
+      "locator": "Levens v. Campbell, 733 So. 2d 753 (Miss. 1999), ¶ 15",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:44:26.090679+00:00",
+        "sha256": "7276b8a3d5b2bf578a05fec51aed109a01ce451e6f11e072906faecd84997a0d"
+      }
+    },
+    "US-MS:oral_contract_limitations:e3d737dd4c08": {
+      "category": "oral_contract_limitations",
+      "title": "Hall v. Dillard, No. 97-CA-01232-COA (Miss. Ct. App. Apr. 6, 1999), n.3",
+      "url": "https://courts.ms.gov/images/Opinions/Conv7128.pdf",
+      "locator": "Hall v. Dillard, No. 97-CA-01232-COA (Miss. Ct. App. Apr. 6, 1999), n.3",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:03.156454+00:00",
+        "sha256": "7246600617147757c140191a2ef5337b11af045bc9f9e67dbfc60f36ee6268a1"
+      }
     }
   },
   "court_directory": [
@@ -867,6 +891,40 @@
       "edition": "Mississippi 2004 First Extraordinary Session H.B. 13, applies to cases filed from September 1, 2004",
       "publisher_member": "Mississippi Legislature 2004 First Extraordinary Session H.B. 13, enrolled § 1, subsections (1)–(3)",
       "effective_from": "2004-09-01"
+    },
+    "74d914c50d441d164a68f19e528f84": {
+      "source_id": "US-MS:written_contract_limitations:fa4aeb3b7507",
+      "authority_type": "opinion",
+      "citation": "Levens v. Campbell, 733 So. 2d 753 (Miss. 1999), ¶ 15",
+      "text": "Miss. Code Ann. § 15-1-29 states in pertinent part that, \"an unwritten contract of employment shall be commenced within one (1) year next after the cause of such action accrued, and not after.\" Miss. Code Ann. § 15-1-29 (1995). On written contracts, however, there is a three year limitations period. See Miss. Code Ann. § 15-1-49 (1995).",
+      "text_sha256": "da3b49d399f10399b10185bba30975e586835376d500314e31aa3a65f91c6f64",
+      "publisher_sha256": "7276b8a3d5b2bf578a05fec51aed109a01ce451e6f11e072906faecd84997a0d",
+      "retrieved_at": "2026-11-21T17:44:26.090679+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported opinion issued 1999-01-21",
+      "court": "Supreme Court of Mississippi",
+      "publisher_member": "Mississippi Supreme Court opinion PDF p. 4, paragraph 15, written contract and unwritten employment contract context",
+      "decision_date": "1999-01-21",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment on employment and tortious-interference claims; the supreme court affirmed on substantive grounds after rejecting the time bar."
+    },
+    "dde3e199e574145376f75f1f318189": {
+      "source_id": "US-MS:oral_contract_limitations:e3d737dd4c08",
+      "authority_type": "opinion",
+      "citation": "Hall v. Dillard, No. 97-CA-01232-COA (Miss. Ct. App. Apr. 6, 1999), n.3",
+      "text": "3. Section 15-1-29 (Rev. 1995), limitations applicable to actions on accounts and unwritten contracts, states, in part that: [A]ctions on an open account or account stated not acknowledged in writing, signed by the debtor, and on any unwritten contract, express or implied, shall be commenced within three (3) years next after the cause of such action accrued, and not after, except that an action based on an unwritten contract of employment shall be commenced within one (1) year after the cause of such action accrued, and not after.",
+      "text_sha256": "7c580651cd874ba94e5fe39c0cce30d0a6d12aab1862ab5e067a5d02dc04a1b2",
+      "publisher_sha256": "7246600617147757c140191a2ef5337b11af045bc9f9e67dbfc60f36ee6268a1",
+      "retrieved_at": "2026-11-21T17:43:03.156454+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported opinion issued 1999-04-06",
+      "court": "Mississippi Court of Appeals",
+      "publisher_member": "Mississippi Court of Appeals majority opinion PDF p. 9, note 3, partial quotation of § 15-1-29",
+      "decision_date": "1999-04-06",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal after corporate dissolution and division of shareholder assets; the opinion quotes the unwritten-contract statute in separately addressing a limitations argument."
     }
   },
   "fault_allocation": {

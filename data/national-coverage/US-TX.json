@@ -598,6 +598,42 @@
         "retrieved_at": "2026-11-20T17:37:34.328557+00:00",
         "sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a"
       }
+    },
+    "US-TX:general_contract_limitations:86357fb12e4b": {
+      "category": "general_contract_limitations",
+      "title": "Tex. Civ. Prac. & Rem. Code § 16.051",
+      "url": "https://tcss.legis.texas.gov/resources/CP/pdf/CP.16.pdf",
+      "locator": "Tex. Civ. Prac. & Rem. Code § 16.051",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:02.519206+00:00",
+        "sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce"
+      }
+    },
+    "US-TX:debt_limitations:72ef03deab2f": {
+      "category": "debt_limitations",
+      "title": "Tex. Civ. Prac. & Rem. Code § 16.004(a)",
+      "url": "https://tcss.legis.texas.gov/resources/CP/pdf/CP.16.pdf",
+      "locator": "Tex. Civ. Prac. & Rem. Code § 16.004(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:02.519206+00:00",
+        "sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce"
+      }
+    },
+    "US-TX:wrongful_death_limitations:0293f5ef0d49": {
+      "category": "wrongful_death_limitations",
+      "title": "Tex. Civ. Prac. & Rem. Code § 16.003(b)",
+      "url": "https://tcss.legis.texas.gov/resources/CP/pdf/CP.16.pdf",
+      "locator": "Tex. Civ. Prac. & Rem. Code § 16.003(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:02.519206+00:00",
+        "sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce"
+      }
     }
   },
   "court_directory": [
@@ -1031,6 +1067,42 @@
       "language": "en",
       "court": "Texas Justice Court",
       "edition": "Texas Supreme Court civil rules compilation listed as last amended October 1, 2026"
+    },
+    "9916c68ef3de92c4e89662e5f707df": {
+      "source_id": "US-TX:general_contract_limitations:86357fb12e4b",
+      "authority_type": "statute",
+      "citation": "Tex. Civ. Prac. & Rem. Code § 16.051",
+      "text": "Every action for which there is no express limitations period, except an action for the recovery of real property, must be brought not later than four years after the day the cause of action accrues.",
+      "text_sha256": "670e3d7558650e9691e85ac4280f9bf8724340e08be29c81f13c141192f4f939",
+      "publisher_sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce",
+      "retrieved_at": "2026-11-21T17:43:02.519206+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 25, Tex. Civ. Prac. & Rem. Code § 16.051, statutory text"
+    },
+    "323a0227d00df5842af0c8b9ffae5f": {
+      "source_id": "US-TX:debt_limitations:72ef03deab2f",
+      "authority_type": "statute",
+      "citation": "Tex. Civ. Prac. & Rem. Code § 16.004(a)",
+      "text": "(a) A person must bring suit on the following actions not later than four years after the day the cause of action accrues: (1) specific performance of a contract for the conveyance of real property; (2) penalty or damages on the penal clause of a bond to convey real property; (3) debt; (4) fraud; or (5) breach of fiduciary duty.",
+      "text_sha256": "fae49836faf5bbb2cc5fefd70081fab310bc7d2bfb5139828410e1ecb26760b8",
+      "publisher_sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce",
+      "retrieved_at": "2026-11-21T17:43:02.519206+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 2–3, Tex. Civ. Prac. & Rem. Code § 16.004(a), statutory text"
+    },
+    "27658d3423364d728e9c8e2b0ec2c6": {
+      "source_id": "US-TX:wrongful_death_limitations:0293f5ef0d49",
+      "authority_type": "statute",
+      "citation": "Tex. Civ. Prac. & Rem. Code § 16.003(b)",
+      "text": "(b) A person must bring suit not later than two years after the day the cause of action accrues in an action for injury resulting in death. The cause of action accrues on the death of the injured person.",
+      "text_sha256": "5e4ebf9bc92e6b765fa6262b6326cd870167574c04e1c0d1d91f9fdc296477df",
+      "publisher_sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce",
+      "retrieved_at": "2026-11-21T17:43:02.519206+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 2, Tex. Civ. Prac. & Rem. Code § 16.003(b), statutory text"
     }
   },
   "fault_allocation": {

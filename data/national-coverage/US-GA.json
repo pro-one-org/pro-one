@@ -353,6 +353,18 @@
         "retrieved_at": "2026-11-21T17:26:29.661940+00:00",
         "sha256": "f56dc1a564430d836f882f6dced995ab59a870d88d04710d9fd613f3fb1dfee2"
       }
+    },
+    "US-GA:written_contract_limitations:c4c291c4ec2a": {
+      "category": "written_contract_limitations",
+      "title": "SunTrust Bank v. Venable, 299 Ga. 655 (2016)",
+      "url": "https://cases.justia.com/georgia/supreme-court/2016-s16g0664.pdf",
+      "locator": "SunTrust Bank v. Venable, 299 Ga. 655 (2016)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:02.288502+00:00",
+        "sha256": "e024e8c4735be21166e38c1db2604981c78eb584dd28be463c780f2ed74ccc1a"
+      }
     }
   },
   "court_directory": [
@@ -665,6 +677,23 @@
       "decision_date": "2025-07-31",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from dismissal of negligence complaint; appellate court reversed and distinguished completed service from later filing proof."
+    },
+    "2cb83545f9919b4c36b65fbaa4c869": {
+      "source_id": "US-GA:written_contract_limitations:c4c291c4ec2a",
+      "authority_type": "opinion",
+      "citation": "SunTrust Bank v. Venable, 299 Ga. 655 (2016)",
+      "text": "OCGA § 9-3-24 sets out a general six year period of limitation applicable in actions on a simple written contract. It provides, in pertinent part, that [a]ll actions upon simple contracts in writing shall be brought within six years after the same become due and payable. However, this Code section shall not apply to actions for the breach of contracts for the sale of goods under Article 2 of Title 11. OCGA § 9-3-24.",
+      "text_sha256": "0e6b7765ec252ac10884f0e17751c32346c5d822180e464963b8a06a87027df0",
+      "publisher_sha256": "e024e8c4735be21166e38c1db2604981c78eb584dd28be463c780f2ed74ccc1a",
+      "retrieved_at": "2026-11-21T17:43:02.288502+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported opinion issued 2016-09-12",
+      "court": "Supreme Court of Georgia",
+      "publisher_member": "Georgia Supreme Court issued opinion p. 3, general written-contract rule and sale-of-goods carve-out quoted by the court",
+      "decision_date": "2016-09-12",
+      "opinion_role": "majority",
+      "procedural_posture": "Certiorari on the limitations period for a motor vehicle deficiency claim. The supreme court affirmed reversal of summary judgment because the sale-of-goods limitations period applied."
     }
   },
   "fault_allocation": {

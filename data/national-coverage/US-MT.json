@@ -381,6 +381,30 @@
         "retrieved_at": "2026-11-21T17:24:50.914842+00:00",
         "sha256": "261cf3037f2e3510f742c91ef5b22bdf72713ac0cf8481682aad6e5e7be77129"
       }
+    },
+    "US-MT:written_contract_limitations:31f0b4659826": {
+      "category": "written_contract_limitations",
+      "title": "Mont. Code Ann. § 27-2-202(1)",
+      "url": "https://mca.legmt.gov/bills/mca/title_0270/chapter_0020/part_0020/section_0020/0270-0020-0020-0020.html",
+      "locator": "Mont. Code Ann. § 27-2-202(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:02.381551+00:00",
+        "sha256": "21f64cdb51eacf39c7833b68e925a7ac213d386d48eb6b08ef59921541b212b9"
+      }
+    },
+    "US-MT:oral_contract_limitations:9cef08909af1": {
+      "category": "oral_contract_limitations",
+      "title": "Mont. Code Ann. § 27-2-202(2)",
+      "url": "https://mca.legmt.gov/bills/mca/title_0270/chapter_0020/part_0020/section_0020/0270-0020-0020-0020.html",
+      "locator": "Mont. Code Ann. § 27-2-202(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:02.381551+00:00",
+        "sha256": "21f64cdb51eacf39c7833b68e925a7ac213d386d48eb6b08ef59921541b212b9"
+      }
     }
   },
   "court_directory": [
@@ -685,6 +709,32 @@
       "edition": "Montana Legislature 2012 court rule publication",
       "court": "Montana district courts governed by the Montana Rules of Civil Procedure",
       "publisher_member": "Montana Legislature 2012 Court Rules Title 25, Chapter 20, PDF p. 21, Rule 4(e)"
+    },
+    "256c1fdfe4df82a10711376fcb3dfe": {
+      "source_id": "US-MT:written_contract_limitations:31f0b4659826",
+      "authority_type": "statute",
+      "citation": "Mont. Code Ann. § 27-2-202(1)",
+      "text": "(1) The period prescribed for the commencement of an action on any contract, covenant, obligation, or liability founded on an instrument in writing is within 6 years.",
+      "text_sha256": "ca66da2edd88289be1a688e0cff2182315d011c08436f252f1ea118ba7546e74",
+      "publisher_sha256": "21f64cdb51eacf39c7833b68e925a7ac213d386d48eb6b08ef59921541b212b9",
+      "retrieved_at": "2026-11-21T17:43:02.381551+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Montana Code Annotated 2025; 2025 Ch. 174 applicability verified",
+      "publisher_member": "Montana Legislature 2025 MCA § 27-2-202(1); 2025 Ch. 174 § 3 addresses filings on or after October 1, 2025"
+    },
+    "a3d155e1014d6d5051ae5ccd665b58": {
+      "source_id": "US-MT:oral_contract_limitations:9cef08909af1",
+      "authority_type": "statute",
+      "citation": "Mont. Code Ann. § 27-2-202(2)",
+      "text": "(2) The period prescribed for the commencement of an action on a contract, account, or promise not founded on an instrument in writing is within 5 years.",
+      "text_sha256": "2e279a2a078f81b9cdd378c4d5ca8eb845af31eb9f5cfcf51c25efa8f1203e7a",
+      "publisher_sha256": "21f64cdb51eacf39c7833b68e925a7ac213d386d48eb6b08ef59921541b212b9",
+      "retrieved_at": "2026-11-21T17:43:02.381551+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Montana Code Annotated 2025; 2025 Ch. 174 applicability verified",
+      "publisher_member": "Montana Legislature 2025 MCA § 27-2-202(2); 2025 Ch. 174 § 3 addresses filings on or after October 1, 2025"
     }
   },
   "forms": {

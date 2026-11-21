@@ -23,6 +23,18 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_new_jersey_contract_limit_preserves_governing_exceptions(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="New Jersey", legal_area="contracts",
+                               topics=["contract_limitations"], authority_status="historical")
+        key, = provider.search(query)
+        text = provider.fetch(key).text
+        self.assertIn("not under seal", text)
+        self.assertIn("contract for sale governed by N.J.S.12A:2-725", text)
+        self.assertIn("owners comprise a majority of the board", text)
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                  "authority_as_of": "2026-11-21"})))
+
     def test_maryland_wrongful_death_timing_retains_statutory_exceptions(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Maryland", legal_area="torts",

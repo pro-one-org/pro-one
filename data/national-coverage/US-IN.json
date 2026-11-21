@@ -619,6 +619,18 @@
         "retrieved_at": "2026-11-21T04:21:03.062526+00:00",
         "sha256": "a74a79abd5a209d8bab5c0e07cb97481061796c3353c252cac164a60fd3c8de2"
       }
+    },
+    "US-IN:oral_contract_limitations:eb91f3134e32": {
+      "category": "oral_contract_limitations",
+      "title": "Sollers Point Co. v. L.M. Zeller, No. 19A-CC-1156 (Ind. Ct. App. Mar. 23, 2020), ¶ 17",
+      "url": "https://public.courts.in.gov/Decisions/api/Document/Opinion?Id=poMFe-Q-yhjcaHaxg0mgYY2DaUEFT-b25xRXyggCH6hF7-xTPFXb0ZfNLv3fn8n20",
+      "locator": "Sollers Point Co. v. L.M. Zeller, No. 19A-CC-1156 (Ind. Ct. App. Mar. 23, 2020), ¶ 17",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:44:26.245338+00:00",
+        "sha256": "fb5f914f01137bd18c296f2bdf2146a89f427b3cd7fe9b8f9ed16a3b270fbf68"
+      }
     }
   },
   "court_directory": [
@@ -1273,6 +1285,23 @@
       "edition": "Indiana Senate Enrolled Act 169, signed March 5, 2026; section 97 effective July 1, 2026",
       "effective_from": "2026-07-01",
       "publisher_member": "printed pp. 84 and 253–255"
+    },
+    "bc9d6e29f917e5a16bdce624a93daa": {
+      "source_id": "US-IN:oral_contract_limitations:eb91f3134e32",
+      "authority_type": "opinion",
+      "citation": "Sollers Point Co. v. L.M. Zeller, No. 19A-CC-1156 (Ind. Ct. App. Mar. 23, 2020), ¶ 17",
+      "text": "[17] The trial court here concluded that the six-year statute of limitations for actions on unwritten contracts found in Indiana Code section 34-11-2-7 applied. This statute provides: “The following actions must be commenced within six (6) years after the cause of action accrues: . . . (1) Actions on accounts and contracts not in writing[.]”",
+      "text_sha256": "f583006a06a2f54c5708846fbaeedaf1e220a79bebfa33e1e1a1bd2514aa524f",
+      "publisher_sha256": "fb5f914f01137bd18c296f2bdf2146a89f427b3cd7fe9b8f9ed16a3b270fbf68",
+      "retrieved_at": "2026-11-21T17:44:26.245338+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported opinion issued 2020-03-23",
+      "court": "Indiana Court of Appeals",
+      "publisher_member": "Indiana Court of Appeals issued opinion p. 11, ¶ 17, unwritten contracts and accounts",
+      "decision_date": "2020-03-23",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal in an account and payment dispute; the appellate court addressed the statutory limitations and alternative accrual arguments."
     }
   },
   "fault_allocation": {

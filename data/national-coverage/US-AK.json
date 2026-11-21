@@ -480,6 +480,42 @@
         "retrieved_at": "2026-11-21T16:33:04.101771+00:00",
         "sha256": "49121b867dd56877a3154d98ce61972f30380c56a1ffe3ef07f922cc658c1721"
       }
+    },
+    "US-AK:general_contract_limitations:3e01f2a6f39d": {
+      "category": "general_contract_limitations",
+      "title": "Alaska Stat. § 09.10.053",
+      "url": "https://www.akleg.gov/statutesPDF/Title-9.pdf",
+      "locator": "Alaska Stat. § 09.10.053",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:02.010761+00:00",
+        "sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f"
+      }
+    },
+    "US-AK:written_contract_limitations:329bb0bee288": {
+      "category": "written_contract_limitations",
+      "title": "Alaska Stat. § 09.10.040(a)",
+      "url": "https://www.akleg.gov/statutesPDF/Title-9.pdf",
+      "locator": "Alaska Stat. § 09.10.040(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:02.010761+00:00",
+        "sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f"
+      }
+    },
+    "US-AK:wrongful_death_limitations:6af737c15524": {
+      "category": "wrongful_death_limitations",
+      "title": "Alaska Stat. § 09.55.580(a), opening sentences",
+      "url": "https://www.akleg.gov/statutesPDF/Title-9.pdf",
+      "locator": "Alaska Stat. § 09.55.580(a), opening sentences",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:02.010761+00:00",
+        "sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f"
+      }
     }
   },
   "court_directory": [
@@ -744,6 +780,42 @@
       "language": "en",
       "court": "Alaska District Court, small claims",
       "publisher_member": "Alaska Court System District Court Rules, printed p. 3, Rule 10(a)"
+    },
+    "5ec81817134cf1869bfbd2049bf8ac": {
+      "source_id": "US-AK:general_contract_limitations:3e01f2a6f39d",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 09.10.053",
+      "text": "Unless the action is commenced within three years, a person may not bring an action upon a contract or liability, express or implied, except as provided in AS 09.10.040, or as otherwise provided by law, or, except if the provisions of this section are waived by contract.",
+      "text_sha256": "d1636d6e5745e24e0d315adea9418dd226de674a4dd3aa3550598b069f232913",
+      "publisher_sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f",
+      "retrieved_at": "2026-11-21T17:43:02.010761+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 5, Alaska Stat. § 09.10.053, statutory text"
+    },
+    "baa71e0395284dee07ec9f7a11dc63": {
+      "source_id": "US-AK:written_contract_limitations:329bb0bee288",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 09.10.040(a)",
+      "text": "(a) A person may not bring an action upon a judgment or decree of a court of the United States, or of a state or territory within the United States, and an action may not be brought upon a sealed instrument, unless the action is commenced within 10 years.",
+      "text_sha256": "16b5752ec072fe59eb1faa316179236a0fcd0aa7c4408f96505488e34fb3008f",
+      "publisher_sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f",
+      "retrieved_at": "2026-11-21T17:43:02.010761+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 5, Alaska Stat. § 09.10.040(a), statutory text"
+    },
+    "7d7206844b0638dcf9c94355943450": {
+      "source_id": "US-AK:wrongful_death_limitations:6af737c15524",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 09.55.580(a), opening sentences",
+      "text": "(a) Except as provided under (f) of this section and AS 09.65.145, when the death of a person is caused by the wrongful act or omission of another, the personal representatives of the former may maintain an action therefor against the latter, if the former might have maintained an action, had the person lived, against the latter for an injury done by the same act or omission. The action shall be commenced within two years after the death, and the damages therein shall be the damages the court or jury may consider fair and just.",
+      "text_sha256": "678bc3c8a612bcf7cd215e96a0503ec414ad90146b8028b67e2c3a76b2960dde",
+      "publisher_sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f",
+      "retrieved_at": "2026-11-21T17:43:02.010761+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 145, Alaska Stat. § 09.55.580(a), opening sentences, statutory text"
     }
   },
   "fault_allocation": {
