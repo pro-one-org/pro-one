@@ -365,6 +365,42 @@
         "retrieved_at": "2026-11-21T22:23:10.455672+00:00",
         "sha256": "8886e2f336220727f3143ffb5087b546ef16ba86e0154a8035970e14aefb71e3"
       }
+    },
+    "US-NY:consumer_agency:7789bc75de1c": {
+      "category": "consumer_agency",
+      "title": "N.Y. Gen. Bus. Law § 349(b)–(c)",
+      "url": "https://www.nysenate.gov/legislation/laws/GBS/349",
+      "locator": "N.Y. Gen. Bus. Law § 349(b)–(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:25:36.534412+00:00",
+        "sha256": "7179e5041c4cb345e39874c3f0f410f2475a525f6313bae78fb3e4f8d02f1d76"
+      }
+    },
+    "US-NY:consumer_private_action:d7deca62f6af": {
+      "category": "consumer_private_action",
+      "title": "N.Y. Gen. Bus. Law § 349(h)",
+      "url": "https://www.nysenate.gov/legislation/laws/GBS/349",
+      "locator": "N.Y. Gen. Bus. Law § 349(h)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:25:36.534412+00:00",
+        "sha256": "7179e5041c4cb345e39874c3f0f410f2475a525f6313bae78fb3e4f8d02f1d76"
+      }
+    },
+    "US-NY:consumer_exceptions:38fbef1bd38b": {
+      "category": "consumer_exceptions",
+      "title": "N.Y. Gen. Bus. Law § 349(d)–(e)",
+      "url": "https://www.nysenate.gov/legislation/laws/GBS/349",
+      "locator": "N.Y. Gen. Bus. Law § 349(d)–(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:25:36.534412+00:00",
+        "sha256": "7179e5041c4cb345e39874c3f0f410f2475a525f6313bae78fb3e4f8d02f1d76"
+      }
     }
   },
   "court_directory": [
@@ -686,6 +722,42 @@
       "language": "en",
       "publisher_member": "New York Senate Open Legislation revision dated December 13, 2024; subsection (2) version marked effective until June 15, 2034",
       "effective_until": "2034-06-15"
+    },
+    "c3d4eff578a391584b451d6b3ddc34": {
+      "source_id": "US-NY:consumer_agency:7789bc75de1c",
+      "authority_type": "statute",
+      "citation": "N.Y. Gen. Bus. Law § 349(b)–(c)",
+      "text": "(b) (1) Whenever the attorney general shall believe from evidence satisfactory to the attorney general that any person, including but not limited to an individual, firm, corporation, company, partnership or association, or agent or employee thereof, has engaged in or is about to engage in any of the acts or practices stated to be unfair, deceptive, or abusive, the attorney general may bring an action or proceeding in the name and on behalf of the people of the state of New York to enjoin such unlawful acts or practices and to obtain restitution of any moneys or property obtained directly or indirectly by any such unlawful acts or practices. In such action or proceeding, preliminary relief may be granted under article sixty-three of the civil practice law and rules. (2) The attorney general may bring such an action or proceeding against any person conducting any business, trade or commerce or furnishing a service in this state, whether or not the person is without the state. The attorney general may also bring such an action or proceeding against any person within the state conducting any business, trade, or commerce or furnishing a service, whether or not the business, trade, commerce, or service is conducted or furnished without the state. (c) Before commencing an action or proceeding pursuant to this section, the attorney general shall be required to give the person against whom such action or proceeding is contemplated notice by certified mail and an opportunity to show in writing within ten calendar days after receipt of notice why an action or proceeding should not be instituted against such person, unless the attorney general shall find, in any case in which the attorney general seeks preliminary relief, that to give such notice and opportunity is not in the public interest.",
+      "text_sha256": "0f8b3c80e5724b8884f1c849273f3479cffa9c97d00c495cd2f5eaeda823e256",
+      "publisher_sha256": "7179e5041c4cb345e39874c3f0f410f2475a525f6313bae78fb3e4f8d02f1d76",
+      "retrieved_at": "2026-11-21T22:25:36.534412+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New York Senate Open Legislation revision dated April 3, 2026, following 2025 chapter 708 and 2026 chapter 94; revision date identifies the publication"
+    },
+    "8ffd2cf26309fb511f9ffaa0eb5053": {
+      "source_id": "US-NY:consumer_private_action:d7deca62f6af",
+      "authority_type": "statute",
+      "citation": "N.Y. Gen. Bus. Law § 349(h)",
+      "text": "(h) In addition to the right of action granted to the attorney general pursuant to this section, any person who has been injured by reason of any deceptive act or deceptive practice made unlawful by this section may bring an action in such person's own name to enjoin such deceptive act or deceptive practice, an action to recover such person's actual damages or fifty dollars, whichever is greater, or both such actions. The court may, in its discretion, increase the award of damages to an amount not to exceed three times the actual damages up to one thousand dollars, if the court finds the defendant willfully or knowingly violated this section. The court may award reasonable attorney's fees to a prevailing plaintiff.",
+      "text_sha256": "ff1873200627a3becc21d7dadab5e479acb96846a6d09e4458d0e3dc36abb819",
+      "publisher_sha256": "7179e5041c4cb345e39874c3f0f410f2475a525f6313bae78fb3e4f8d02f1d76",
+      "retrieved_at": "2026-11-21T22:25:36.534412+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New York Senate Open Legislation revision dated April 3, 2026, following 2025 chapter 708 and 2026 chapter 94; revision date identifies the publication"
+    },
+    "cdaa11d38f017b5f55f4044caf589b": {
+      "source_id": "US-NY:consumer_exceptions:38fbef1bd38b",
+      "authority_type": "statute",
+      "citation": "N.Y. Gen. Bus. Law § 349(d)–(e)",
+      "text": "(d) In any action or proceeding brought pursuant to this section it shall be a complete defense that the act or practice is, or if in interstate commerce would be, subject to and complies with the rules and regulations of, and the statutes administered by, the federal trade commission or any official department, division, commission or agency of the United States as such rules, regulations or statutes are interpreted by the federal trade commission or such department, division, commission or agency or the federal courts. (e) Nothing in this section shall apply to any television or radio broadcasting station or to any publisher or printer of a newspaper, magazine or other form of printed advertising, who broadcasts, publishes, or prints the advertisement.",
+      "text_sha256": "ee71c4358fac2fb21915e14a483b9a8fd2ea1c82bce3e29d3360de3cec0a2551",
+      "publisher_sha256": "7179e5041c4cb345e39874c3f0f410f2475a525f6313bae78fb3e4f8d02f1d76",
+      "retrieved_at": "2026-11-21T22:25:36.534412+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New York Senate Open Legislation revision dated April 3, 2026, following 2025 chapter 708 and 2026 chapter 94; revision date identifies the publication"
     }
   },
   "fault_allocation": {

@@ -56,6 +56,37 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertNotEqual(notice, limitations)
         self.assertIn("after the furnishing of notice", provider.fetch(limitations).text)
 
+    def test_new_york_consumer_research_distinguishes_private_and_attorney_general_scope(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="New York", legal_area="consumer",
+                               topics=["private_action"], authority_status="unresolved")
+        private, = provider.search(query)
+        self.assertIn("injured by reason of any deceptive act or deceptive practice", provider.fetch(private).text)
+        agency, = provider.search(query.model_copy(update={"topics": ["consumer_agency_enforcement"]}))
+        self.assertIn("unfair, deceptive, or abusive", provider.fetch(agency).text)
+        self.assertNotEqual(agency, private)
+        self.assertFalse(provider.search(query.model_copy(update={
+            "authority_status": "current", "authority_as_of": "2026-04-03",
+        })))
+
+    def test_oregon_debt_pleading_and_judgment_evidence_are_review_only(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Oregon", legal_area="consumer_debt",
+                               topics=["debt_pleading"], authority_status="historical")
+        key, = provider.search(query)
+        self.assertIn("on the debt buyer’s behalf", provider.fetch(key).text)
+        actions = {action["action_type"]: action for action in coverage("US-OR")["action_shells"]}
+        for action, topic, subsection in (
+            ("complaint", "debt_pleading", "646A.670(1)"),
+            ("answer", "debt_judgment_proof", "646A.670(2)"),
+        ):
+            shell = actions[action]
+            evidence, = shell["review_evidence"][topic]
+            self.assertIn(subsection, evidence["citation"])
+            self.assertEqual(evidence["currentness"], "historical")
+            self.assertNotIn(topic, shell["procedure_evidence"])
+            self.assertEqual((shell["readiness"], shell["execution"]), ("blocked", "disabled"))
+
     def test_enacted_contract_limitation_references_keep_tolling_conditions(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Arkansas", legal_area="contracts",

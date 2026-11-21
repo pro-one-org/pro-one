@@ -51,6 +51,7 @@ SUBJECTS = {
     "consumer_private_action": ("consumer", "private_action"),
     "consumer_public_interest": ("consumer", "consumer_public_interest"),
     "consumer_remedies": ("consumer", "consumer_remedies"),
+    "consumer_exceptions": ("consumer", "consumer_exceptions"),
     "consumer_limitations": ("consumer", "consumer_limitations"),
     "consumer_pre_suit_notice": ("consumer", "consumer_pre_suit_notice"),
     "debtLaw": ("consumer_debt", "debt_collection"),

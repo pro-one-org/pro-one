@@ -552,6 +552,18 @@
         "retrieved_at": "2026-11-21T17:05:34.203639+00:00",
         "sha256": "9f19189433402e2504818983dccb7ea96b84cf56ed39af8aa8ac52160ddf4432"
       }
+    },
+    "US-ND:consumer_limitations:2264d5c3d0c2": {
+      "category": "consumer_limitations",
+      "title": "N.D. Cent. Code § 51-15-12",
+      "url": "https://ndlegis.gov/cencode/t51c15.pdf",
+      "locator": "N.D. Cent. Code § 51-15-12",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:25:36.875730+00:00",
+        "sha256": "9f19189433402e2504818983dccb7ea96b84cf56ed39af8aa8ac52160ddf4432"
+      }
     }
   },
   "court_directory": [
@@ -994,6 +1006,18 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "North Dakota Legislative Branch, Century Code, § 51-15-09"
+    },
+    "22e2e737e0985456065773d50e0a6d": {
+      "source_id": "US-ND:consumer_limitations:2264d5c3d0c2",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 51-15-12",
+      "text": "Notwithstanding chapter 28-01, an action for relief under this chapter is barred if the claim is not commenced within four years after the claim for relief accrues. The period of limitation for a claim for relief may not be deemed to have accrued until the aggrieved party discovers the facts constituting the violation of this chapter.",
+      "text_sha256": "4a6c1c0334bd142763c21d8f34964d2583d1eed9891c2b1e9b4cf500975b943d",
+      "publisher_sha256": "9f19189433402e2504818983dccb7ea96b84cf56ed39af8aa8ac52160ddf4432",
+      "retrieved_at": "2026-11-21T22:25:36.875730+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Dakota Legislative Branch, chapter 51-15 PDF p. 4; claim for relief accrual and discovery"
     }
   },
   "fault_allocation": {
