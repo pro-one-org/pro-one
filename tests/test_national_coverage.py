@@ -23,6 +23,45 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_dc_code_verification_binds_publication_date_subsection_and_jurisdiction(self):
+        record = manifest("US-DC")
+        wage = next(row for row in record["passages"].values() if row["citation"] == "D.C. Code § 32-1308(c)")
+        url = record["sources"][wage["source_id"]]["url"]
+        with self.assertRaisesRegex(ValueError, "certified_excerpt_or_date_mismatch"):
+            certified_basis("US-DC", url, wage["publisher_sha256"], wage["publisher_path"], wage["citation"],
+                            wage["text"].replace("within 3 years", "within 2 years"))
+        with self.assertRaisesRegex(ValueError, "invalid_certified_publication"):
+            certified_basis("US-DC", url, wage["publisher_sha256"], wage["publisher_path"],
+                            "D.C. Code § 16-2702", wage["text"])
+
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="District of Columbia", sovereign="district", legal_area="employment",
+                               topics=["wage_limitations"], authority_status="current", authority_as_of="2026-04-29")
+        key, = provider.search(query)
+        doc = provider.fetch(key)
+        self.assertIn("if the violation is continuous", doc.text)
+        self.assertIn("actual or constructive notice", doc.text)
+        self.assertEqual(doc.source["corpus_provenance"]["current_as_of"], "2026-04-29")
+        for change in ({"authority_as_of": "2026-04-30"}, {"state": "Maryland", "sovereign": "state"},
+                       {"sovereign": "federal"}, {"topics": ["wage_payment"]}):
+            self.assertFalse(provider.search(query.model_copy(update=change)))
+
+    def test_dc_debt_complaint_and_judgment_requirements_remain_separate(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="District of Columbia", sovereign="district", legal_area="consumer_debt",
+                               topics=["debt_pleading"], authority_status="current", authority_as_of="2026-04-29")
+        complaint, = provider.search(query)
+        text = provider.fetch(complaint).text
+        self.assertIn("last four digits", text)
+        self.assertIn("You might have income or resources", text)
+        self.assertIn("current phone number or numbers", text)
+        proof, = provider.search(query.model_copy(update={"topics": ["debt_judgment_proof"]}))
+        self.assertNotEqual(complaint, proof)
+        self.assertIn("prior to entry of a default or summary judgment", provider.fetch(proof).text)
+        shell = next(row for row in coverage("US-DC")["action_shells"] if row["action_type"] == "complaint")
+        self.assertEqual(shell["readiness"], "blocked")
+        self.assertEqual(shell["execution"], "disabled")
+
     def test_florida_contract_limitation_passages_keep_duration_and_scope_separate(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Florida", legal_area="contracts",
@@ -700,6 +739,7 @@ class NationalCoverageTests(unittest.TestCase):
 
     def test_exact_publication_replay_rejects_invented_or_changed_text(self):
         publisher_editions = {
+            ("US-DC", date(2026, 4, 29)): "D.C. Council codified XML publication, current through April 29, 2026.",
             ("US-DE", date(2023, 1, 10)): "Court of Common Pleas Civil Rules. Current as of January 10, 2023.",
             ("US-WI", date(2026, 11, 4)): "Published and certified",
             ("US-MI", date(2026, 11, 18)): "Michigan Supreme Court Rules Chapter 2.",

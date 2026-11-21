@@ -9,11 +9,39 @@ from itertools import takewhile
 import json
 import re
 from urllib.parse import urlsplit
+from xml.etree import ElementTree
 
 from app.jurisdictions import ROOT
 
 
-CERTIFIED_TYPES = {"US-WI": "statute", "US-MI": "court_rule", "US-IN": "court_rule", "US-DE": "court_rule"}
+CERTIFIED_TYPES = {
+    "US-WI": "statute", "US-MI": "court_rule", "US-IN": "court_rule", "US-DE": "court_rule", "US-DC": "statute",
+}
+DC_CODE_ROOT = ("https://raw.githubusercontent.com/DCCouncil/law-xml-codified/"
+                "6231fae42de60c3c498548c489b0ca84ef60353a/us/dc/council/code/")
+DC_CODE_NAMESPACE = {"dc": "https://code.dccouncil.us/schemas/dc-library"}
+DC_CODE_INDEX_DIGEST = "3ed269628b4a6251a05b54014ac05c7ed9a5ab685f99aad1d289251a444ffa83"
+DC_CODE_SECTION_DIGESTS = {
+    "12-301": "f5c090634e28f9d8972bd7b0ffcdb6a7aa6f1e4ae1ac6a743a8927f750c2b0fd",
+    "16-2702": "61133924975cd7716f8702995a7795224cbf2aa5ff21c764374fda6a6920d208",
+    "28-3814": "25912889f044e37848acad8057226d8260b436e7a332fb5ecd5072a82995b30f",
+    "28-3905": "fc1e3afd2361b0f70a66b031c3f97ae6f318184ce3992cee678feb274c153300",
+    "32-1308": "895851bd01a6f605bdc6acf29dfb3e6f5d9b0bf1b8cdd10fe3d2d4fb4aefcdc7",
+    "42-3502.17": "d512c41f105199af558518962c19abcdb81725a7f937d79c9e72f7c40d9cdc24",
+}
+DC_CODE_PASSAGES = {
+    "12-301(a)(7)": ("12-301", ("[(a)]", "(7)")),
+    "16-2702": ("16-2702", ()),
+    "28-3814(o)": ("28-3814", ("(o)",)),
+    "28-3814(q)": ("28-3814", ("(q)",)),
+    "28-3814(s)": ("28-3814", ("(s)",)),
+    "28-3905(k)(1)(A)": ("28-3905", ("(k)", "(1)", "(A)")),
+    "28-3905(k)(2)": ("28-3905", ("(k)", "(2)")),
+    "32-1308(a)(1)(A)": ("32-1308", ("(a)", "(1)", "(A)")),
+    "32-1308(c)": ("32-1308", ("(c)",)),
+    "42-3502.17(b)": ("42-3502.17", ("(b)",)),
+    "42-3502.17(c)": ("42-3502.17", ("(c)",)),
+}
 INDIANA_RULES_ROOT = "https://rules.incourts.gov/Content/"
 INDIANA_RULESETS = {"trial": "Indiana Rules of Trial Procedure", "small-claims": "Indiana Small Claims Rules"}
 MICHIGAN_RULES_BOOK = (
@@ -375,6 +403,63 @@ def delaware_common_pleas_basis(url, digest, path, citation, quote):
     return date(2023, 1, 10), f"{title}. Current as of {edition[0]}."
 
 
+def dc_code_text(node):
+    if node is None:
+        return ""
+    ns = DC_CODE_NAMESPACE["dc"]
+    if any(child.tag not in {f"{{{ns}}}cite", f"{{{ns}}}em"} for child in node.iter() if child is not node):
+        raise ValueError("certified_version_requires_effective_date_review")
+    return " ".join("".join(node.itertext()).split())
+
+
+def dc_code_paragraph(node):
+    ns = DC_CODE_NAMESPACE
+    if node.get("placeholder"):
+        raise ValueError("certified_version_requires_effective_date_review")
+    return " ".join(part for part in (
+        dc_code_text(node.find("dc:num", ns)), *(dc_code_text(text) for text in node.findall("dc:text", ns)),
+        *(dc_code_paragraph(child) for child in node.findall("dc:para", ns)),
+    ) if part)
+
+
+def dc_code_passage(digest, section, selectors):
+    ns = DC_CODE_NAMESPACE
+    root = ElementTree.fromstring(retained_publisher_bytes(digest, "xml"))
+    if root.get("containing-doc") != "D.C. Code" or root.findtext("dc:num", namespaces=ns) != section:
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    if not selectors:
+        return dc_code_text(root.find("dc:text", ns))
+    scope = root
+    for selector in selectors:
+        matches = [node for node in scope.findall("dc:para", ns) if node.findtext("dc:num", namespaces=ns) == selector]
+        if len(matches) != 1:
+            raise ValueError("certified_excerpt_or_date_mismatch")
+        scope = matches[0]
+    excerpt = dc_code_paragraph(scope)
+    if section == "12-301":
+        # The lead-in carries the general exception and accrual condition for (a)(7).
+        lead = root.find("dc:para/dc:text", ns)
+        excerpt = f"{dc_code_text(lead)} {excerpt}"
+    return excerpt
+
+
+def dc_code_basis(url, digest, index_digest, citation, quote):
+    prefix = "D.C. Code § "
+    spec = DC_CODE_PASSAGES.get(citation.removeprefix(prefix))
+    if not citation.startswith(prefix) or not spec or index_digest != DC_CODE_INDEX_DIGEST:
+        raise ValueError("invalid_certified_publication")
+    section, selectors = spec
+    title = section.split("-", 1)[0]
+    if url != f"{DC_CODE_ROOT}titles/{title}/sections/{section}.xml" or digest != DC_CODE_SECTION_DIGESTS[section]:
+        raise ValueError("invalid_certified_publication")
+    index = ElementTree.fromstring(retained_publisher_bytes(index_digest, "xml"))
+    recency = index.find("dc:meta/dc:recency", DC_CODE_NAMESPACE)
+    if (index.get("id") != "D.C. Code" or recency is None or recency.get("through") != "2026-04-29"
+            or not quote or quote != dc_code_passage(digest, section, selectors)):
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    return date(2026, 4, 29), "D.C. Council codified XML publication, current through April 29, 2026."
+
+
 @lru_cache(maxsize=96)
 def certified_basis(scope, url, digest, path, citation, quote):
     if scope == "US-MI":
@@ -385,6 +470,8 @@ def certified_basis(scope, url, digest, path, citation, quote):
         return indiana_basis(url, digest, path, citation, quote)
     if scope == "US-DE":
         return delaware_common_pleas_basis(url, digest, path, citation, quote)
+    if scope == "US-DC":
+        return dc_code_basis(url, digest, path, citation, quote)
     endpoint = urlsplit(url)
     if (scope != "US-WI" or endpoint.scheme != "https" or endpoint.netloc != "docs.legis.wisconsin.gov"
             or not citation.startswith("Wis. Stat. § ") or not path.startswith(endpoint.path + "/")):
