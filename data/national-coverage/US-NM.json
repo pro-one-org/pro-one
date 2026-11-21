@@ -471,6 +471,18 @@
         "retrieved_at": "2026-11-21T04:14:00.370441+00:00",
         "sha256": "6ea117573daeb6aaa573b3e8a88ddb6b168f38c2e689226d9fd87d8739daaa6b"
       }
+    },
+    "US-NM:written_contract_limitations:950d0b984bd2": {
+      "category": "written_contract_limitations",
+      "title": "N.M. Stat. Ann. § 37-1-3(A) (2015 N.M. Laws ch. 91)",
+      "url": "https://www.nmlegis.gov/Sessions/15%20Regular/final/SB0107.pdf",
+      "locator": "N.M. Stat. Ann. § 37-1-3(A) (2015 N.M. Laws ch. 91)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:55:58.527552+00:00",
+        "sha256": "b981a8ae3636b45a1bba3f269a14fe06b95f61bde69bc2836bdccdb1f09fa403"
+      }
     }
   },
   "court_directory": [
@@ -931,6 +943,19 @@
       "publisher_member": "New Mexico Compilation Commission, Article 2, Rule 1-004(L)",
       "edition": "Amendment S-1-RCR-2023-00009 applies to actions filed on or after December 31, 2025",
       "effective_from": "2025-12-31"
+    },
+    "3a3761e9ade8fa83146eeea303660d": {
+      "source_id": "US-NM:written_contract_limitations:950d0b984bd2",
+      "authority_type": "statute",
+      "citation": "N.M. Stat. Ann. § 37-1-3(A) (2015 N.M. Laws ch. 91)",
+      "text": "A. Actions founded upon any bond, promissory note, bill of exchange or other contract in writing shall be brought within six years. If the payee of any bond, promissory note, bill of exchange or other contract in writing enters into any contract or agreement in writing to defer the payment thereof, or contracts or agrees not to assert any claim against the payor or against the assets of the payor until the happening of some contingency, the time during the period from the execution of the contract or agreement and the happening of the contingency shall not be included in computing the six-year period of limitation provided in this subsection.",
+      "text_sha256": "521c9579c1cc0dbf159f21eedd03e48f2586cff673f81b97cad7947657fce08a",
+      "publisher_sha256": "b981a8ae3636b45a1bba3f269a14fe06b95f61bde69bc2836bdccdb1f09fa403",
+      "retrieved_at": "2026-11-21T21:55:58.527552+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Mexico 2015 Session Laws chapter 91, governor signed April 8, 2015",
+      "publisher_member": "Publisher PDF p. 1, N.M. Stat. Ann. § 37-1-3(A) (2015 N.M. Laws ch. 91), statutory text"
     }
   },
   "fault_allocation": {

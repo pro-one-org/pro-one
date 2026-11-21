@@ -468,6 +468,18 @@
         "retrieved_at": "2026-11-21T16:50:37.631038+00:00",
         "sha256": "1fffab0dc170dccf74d55d572eb770ed6e31210b3689c71d4d1d7fd864d6e79e"
       }
+    },
+    "US-AR:written_contract_limitations:b4817268ea38": {
+      "category": "written_contract_limitations",
+      "title": "1997 Ark. Acts 1164, § 2 (Ark. Code Ann. § 16-56-111)",
+      "url": "https://arkleg.state.ar.us/Home/FTPDocument?path=%2FActs%2F1997%2FPublic%2F1164.pdf",
+      "locator": "1997 Ark. Acts 1164, § 2 (Ark. Code Ann. § 16-56-111)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:55:58.319749+00:00",
+        "sha256": "d01efad748453a0b6706b3400590cb30bc13b1b05f496dc99d8394992e1070d3"
+      }
     }
   },
   "court_directory": [
@@ -883,6 +895,19 @@
       "court": "Arkansas Circuit Courts",
       "publisher_member": "Arkansas Supreme Court adopted Rule 4, printed pp. 10; adoption date at p. 1",
       "effective_from": "2019-01-01"
+    },
+    "a3b8c42e213e02fbdc821b56fef50c": {
+      "source_id": "US-AR:written_contract_limitations:b4817268ea38",
+      "authority_type": "statute",
+      "citation": "1997 Ark. Acts 1164, § 2 (Ark. Code Ann. § 16-56-111)",
+      "text": "Actions to enforce written obligations, duties, or rights, except those to which Arkansas Code Annotated § 4-4-111 is applicable, shall be commenced within five (5) years after the cause of action shall accrue. However, partial payment or written acknowledgment of default shall toll this statute of limitations.",
+      "text_sha256": "260a4f84ff23abeb3f7f768749b217a6ab49af98eda5307deb6ed7dce0bd6bcb",
+      "publisher_sha256": "d01efad748453a0b6706b3400590cb30bc13b1b05f496dc99d8394992e1070d3",
+      "retrieved_at": "2026-11-21T21:55:58.319749+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas 1997 Act 1164, approved April 8, 1997",
+      "publisher_member": "Publisher PDF p. 3, 1997 Ark. Acts 1164, § 2 (Ark. Code Ann. § 16-56-111), statutory text"
     }
   },
   "fault_allocation": {

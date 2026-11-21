@@ -23,6 +23,18 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_enacted_contract_limitation_references_keep_tolling_conditions(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Arkansas", legal_area="contracts",
+                               topics=["written_contract_limitations"], authority_status="historical")
+        arkansas, = provider.search(query)
+        self.assertIn("partial payment or written acknowledgment of default", provider.fetch(arkansas).text)
+        new_mexico, = provider.search(query.model_copy(update={"state": "New Mexico"}))
+        self.assertNotEqual(arkansas, new_mexico)
+        text = provider.fetch(new_mexico).text
+        self.assertIn("agreement in writing to defer the payment", text)
+        self.assertIn("the happening of the contingency", text)
+
     def test_new_jersey_contract_limit_preserves_governing_exceptions(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="New Jersey", legal_area="contracts",
