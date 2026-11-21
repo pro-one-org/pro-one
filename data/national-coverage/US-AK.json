@@ -516,6 +516,42 @@
         "retrieved_at": "2026-11-21T17:43:02.010761+00:00",
         "sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f"
       }
+    },
+    "US-AK:consumer_private_action:ba3dc9414dec": {
+      "category": "consumer_private_action",
+      "title": "Alaska Stat. § 45.50.531(a)",
+      "url": "https://www.akleg.gov/statutesPDF/Title-45.pdf",
+      "locator": "Alaska Stat. § 45.50.531(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:24.975636+00:00",
+        "sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb"
+      }
+    },
+    "US-AK:consumer_limitations:5f2e61b25059": {
+      "category": "consumer_limitations",
+      "title": "Alaska Stat. § 45.50.531(f)",
+      "url": "https://www.akleg.gov/statutesPDF/Title-45.pdf",
+      "locator": "Alaska Stat. § 45.50.531(f)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:24.975636+00:00",
+        "sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb"
+      }
+    },
+    "US-AK:consumer_agency:28dbb96e35bf": {
+      "category": "consumer_agency",
+      "title": "Alaska Stat. § 45.50.501(a)",
+      "url": "https://www.akleg.gov/statutesPDF/Title-45.pdf",
+      "locator": "Alaska Stat. § 45.50.501(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:24.975636+00:00",
+        "sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb"
+      }
     }
   },
   "court_directory": [
@@ -816,6 +852,42 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Publisher PDF p. 145, Alaska Stat. § 09.55.580(a), opening sentences, statutory text"
+    },
+    "9fe4433469ff0be82e5504f3009211": {
+      "source_id": "US-AK:consumer_private_action:ba3dc9414dec",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 45.50.531(a)",
+      "text": "(a) A person who suffers an ascertainable loss of money or property as a result of another person's act or practice declared unlawful by AS 45.50.471 may bring a civil action to recover for each unlawful act or practice three times the actual damages or $500, whichever is greater. The court may provide other relief it considers necessary and proper. Nothing in this subsection prevents a person who brings an action under this subsection from pursuing other remedies available under other law, including common law.",
+      "text_sha256": "a7a08b11869d7c49ee5510583fe112eed63a4b2d9ef20099e6052110d02ef0a9",
+      "publisher_sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb",
+      "retrieved_at": "2026-11-21T21:58:24.975636+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 420, Alaska Stat. § 45.50.531(a), statutory text"
+    },
+    "ce76a6202ea1c1392d3b6ef2d940cf": {
+      "source_id": "US-AK:consumer_limitations:5f2e61b25059",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 45.50.531(f)",
+      "text": "(f) A person may not commence an action under this section more than two years after the person discovers or reasonably should have discovered that the loss resulted from an act or practice declared unlawful by AS 45.50.471.",
+      "text_sha256": "dcdac25f53dd5b9ae7ca81312a39ff38f7efddbdbe3a5a4ec00edeaccfedf3c6",
+      "publisher_sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb",
+      "retrieved_at": "2026-11-21T21:58:24.975636+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 420, Alaska Stat. § 45.50.531(f), statutory text"
+    },
+    "e5693bdb0d2fd5bd06aa275e13d0fe": {
+      "source_id": "US-AK:consumer_agency:28dbb96e35bf",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 45.50.501(a)",
+      "text": "(a) When the attorney general has reason to believe that a person has used, is using, or is about to use an act or practice declared unlawful in AS 45.50.471, and that proceedings would be in the public interest, the attorney general may bring an action in the name of the state against the person to restrain by injunction the use of the act or practice. The action may be brought in the superior court in the judicial district in which the person resides or is doing business or has the person's principal place of business in the state, or, with the consent of the parties, in any other judicial district in the state.",
+      "text_sha256": "bf9b33ee31feee11190b9af1960aae411ee1a6da7c113337a7f9e1ba1f3150c6",
+      "publisher_sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb",
+      "retrieved_at": "2026-11-21T21:58:24.975636+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 419, Alaska Stat. § 45.50.501(a), statutory text"
     }
   },
   "fault_allocation": {

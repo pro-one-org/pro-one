@@ -23,6 +23,21 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_consumer_enforcement_and_notice_have_distinct_research_topics(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="South Carolina", legal_area="consumer",
+                               topics=["consumer_agency_enforcement"], authority_status="unresolved")
+        enforcement, = provider.search(query)
+        self.assertIn("in the name of the State", provider.fetch(enforcement).text)
+        self.assertNotIn(enforcement, provider.search(query.model_copy(update={"topics": ["private_action"]})))
+
+        wyoming = query.model_copy(update={"state": "Wyoming", "topics": ["consumer_pre_suit_notice"]})
+        notice, = provider.search(wyoming)
+        self.assertIn("notice in writing to the alleged violator", provider.fetch(notice).text)
+        limitations, = provider.search(wyoming.model_copy(update={"topics": ["consumer_limitations"]}))
+        self.assertNotEqual(notice, limitations)
+        self.assertIn("after the furnishing of notice", provider.fetch(limitations).text)
+
     def test_enacted_contract_limitation_references_keep_tolling_conditions(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Arkansas", legal_area="contracts",

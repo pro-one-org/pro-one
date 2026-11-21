@@ -391,6 +391,42 @@
         "retrieved_at": "2026-11-21T17:38:38.366595+00:00",
         "sha256": "1f5b13bbdcd9c43705cb5870eae1bb79687892be50da71b1a95b85e2795d868b"
       }
+    },
+    "US-NH:consumer_private_action:ff54dd091db7": {
+      "category": "consumer_private_action",
+      "title": "N.H. Rev. Stat. Ann. § 358-A:10(I, first sentence)",
+      "url": "https://www.gc.nh.gov/rsa/html/XXXI/358-A/358-A-10.htm",
+      "locator": "N.H. Rev. Stat. Ann. § 358-A:10(I, first sentence)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:24.769114+00:00",
+        "sha256": "2c7254e71a9539215009e7d52bcb09c058d39856e0add6894f41910f64e73082"
+      }
+    },
+    "US-NH:consumer_remedies:5be1a455bb44": {
+      "category": "consumer_remedies",
+      "title": "N.H. Rev. Stat. Ann. § 358-A:10(I, remedies)",
+      "url": "https://www.gc.nh.gov/rsa/html/XXXI/358-A/358-A-10.htm",
+      "locator": "N.H. Rev. Stat. Ann. § 358-A:10(I, remedies)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:24.769114+00:00",
+        "sha256": "2c7254e71a9539215009e7d52bcb09c058d39856e0add6894f41910f64e73082"
+      }
+    },
+    "US-NH:consumer_agency:b66ff442e565": {
+      "category": "consumer_agency",
+      "title": "N.H. Rev. Stat. Ann. § 358-A:4(III)(a), enforcement excerpt",
+      "url": "https://www.gc.nh.gov/rsa/html/XXXI/358-A/358-A-4.htm",
+      "locator": "N.H. Rev. Stat. Ann. § 358-A:4(III)(a), enforcement excerpt",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:24.771123+00:00",
+        "sha256": "de03cf8eedb3cfa986d54e924a3e8784c0c83eff4518eb321b59239eecc28d25"
+      }
     }
   },
   "court_directory": [
@@ -733,6 +769,44 @@
       "language": "en",
       "publisher_member": "New Hampshire General Court RSA § 508:4(I), general personal actions and discovery rule",
       "effective_from": "1986-07-01"
+    },
+    "8925a75e0df72d921312ee5ec7662b": {
+      "source_id": "US-NH:consumer_private_action:ff54dd091db7",
+      "authority_type": "statute",
+      "citation": "N.H. Rev. Stat. Ann. § 358-A:10(I, first sentence)",
+      "text": "I. Any person injured by another's use of any method, act or practice declared unlawful under this chapter may bring an action for damages and for such equitable relief, including an injunction, as the court deems necessary and proper.",
+      "text_sha256": "5badfffa1bf3ae44711d077ffa4f20407da6665d0360e2a2700a2618e8f88e3c",
+      "publisher_sha256": "2c7254e71a9539215009e7d52bcb09c058d39856e0add6894f41910f64e73082",
+      "retrieved_at": "2026-11-21T21:58:24.769114+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New Hampshire General Court RSA 358-A:10, paragraph I",
+      "effective_from": "1994-07-26"
+    },
+    "3fe666324859945b345c343ecbf890": {
+      "source_id": "US-NH:consumer_remedies:5be1a455bb44",
+      "authority_type": "statute",
+      "citation": "N.H. Rev. Stat. Ann. § 358-A:10(I, remedies)",
+      "text": "If the court finds for the plaintiff, recovery shall be in the amount of actual damages or $1,000, whichever is greater. If the court finds that the use of the method of competition or the act or practice was a willful or knowing violation of this chapter, it shall award as much as 3 times, but not less than 2 times, such amount. In addition, a prevailing plaintiff shall be awarded the costs of the suit and reasonable attorney's fees, as determined by the court. Any attempted waiver of the right to the damages set forth in this paragraph shall be void and unenforceable. Injunctive relief shall be available to private individuals under this chapter without bond, subject to the discretion of the court.",
+      "text_sha256": "f94044894ee0c43015ee211fd0859965020d4d4cab881c6dfe22e4a34f30c2e4",
+      "publisher_sha256": "2c7254e71a9539215009e7d52bcb09c058d39856e0add6894f41910f64e73082",
+      "retrieved_at": "2026-11-21T21:58:24.769114+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New Hampshire General Court RSA 358-A:10, paragraph I",
+      "effective_from": "1994-07-26"
+    },
+    "245b48879557f1f1438d8c5414e8ba": {
+      "source_id": "US-NH:consumer_agency:b66ff442e565",
+      "authority_type": "statute",
+      "citation": "N.H. Rev. Stat. Ann. § 358-A:4(III)(a), enforcement excerpt",
+      "text": "Whenever the attorney general has reason to believe that trade or commerce declared unlawful by this chapter has been, is being or is about to be conducted by any person, the attorney general may bring an action in the name of the state against such person to restrain by temporary or permanent injunction the use of such trade or commerce and may petition the court for an order of restitution of money or property to any person or class of persons injured thereby. The action may be brought in the superior court of the county in which the person allegedly in violation of this chapter resides or in which the principal place of business is located, or, with the consent of the parties or if the person is a nonresident and has no place of business within the state, in the superior court of Merrimack county.",
+      "text_sha256": "5c458ee04eb0012cfcb2bd333c57cb2b79cd7ebc640a07443770ff81d4b85927",
+      "publisher_sha256": "de03cf8eedb3cfa986d54e924a3e8784c0c83eff4518eb321b59239eecc28d25",
+      "retrieved_at": "2026-11-21T21:58:24.771123+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New Hampshire General Court RSA 358-A:4, attorney general civil action and venue"
     }
   },
   "fault_allocation": {

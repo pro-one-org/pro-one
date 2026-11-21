@@ -408,6 +408,30 @@
         "retrieved_at": "2026-11-21T17:38:38.366595+00:00",
         "sha256": "3fe810c6ae0a475c41d095ee6d6e8950f993365572327f06834310e2bcc8c911"
       }
+    },
+    "US-KS:consumer_private_action:8967dbb99bd7": {
+      "category": "consumer_private_action",
+      "title": "Kan. Stat. Ann. § 50-634(a)–(b)",
+      "url": "https://kslegislature.gov/media/statute/050_000_0000_chapter/050_006_0000_article/050_006_0034_section/050_006_0034_k.pdf",
+      "locator": "Kan. Stat. Ann. § 50-634(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:26.258973+00:00",
+        "sha256": "ec35b0e19839048ec385dcce1f0bcda13284dae3205cab9329c64e468b8ecb25"
+      }
+    },
+    "US-KS:consumer_remedies:6f94aee0dbd8": {
+      "category": "consumer_remedies",
+      "title": "Kan. Stat. Ann. § 50-634(c)–(e)",
+      "url": "https://kslegislature.gov/media/statute/050_000_0000_chapter/050_006_0000_article/050_006_0034_section/050_006_0034_k.pdf",
+      "locator": "Kan. Stat. Ann. § 50-634(c)–(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:26.258973+00:00",
+        "sha256": "ec35b0e19839048ec385dcce1f0bcda13284dae3205cab9329c64e468b8ecb25"
+      }
     }
   },
   "court_directory": [
@@ -706,6 +730,32 @@
       "language": "en",
       "edition": "Kansas Legislature 2025 statutes",
       "publisher_member": "Publisher PDF p. 1, Kan. Stat. Ann. § 60-604, statutory text"
+    },
+    "ae06ab8cafe319fe7d402d969d4045": {
+      "source_id": "US-KS:consumer_private_action:8967dbb99bd7",
+      "authority_type": "statute",
+      "citation": "Kan. Stat. Ann. § 50-634(a)–(b)",
+      "text": "(a) Whether a consumer seeks or is entitled to damages or otherwise has an adequate remedy at law or in equity, a consumer aggrieved by an alleged violation of this act may bring an action to: (1) Obtain a declaratory judgment that an act or practice violates this act; or (2) enjoin or obtain a restraining order against a supplier who has violated, is violating or is likely to violate this act. (b) A consumer who is aggrieved by a violation of this act may recover, but not in a class action, damages or a civil penalty as provided in subsection (a) of K.S.A. 50-636 and amendments thereto, whichever is greater.",
+      "text_sha256": "50f6e80b4a62a60d3862b2bfbb5357358fa1c97a7675b82359eb6d49e54a1217",
+      "publisher_sha256": "ec35b0e19839048ec385dcce1f0bcda13284dae3205cab9329c64e468b8ecb25",
+      "retrieved_at": "2026-11-21T21:58:26.258973+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Kansas Legislature 2025 statutes",
+      "publisher_member": "Publisher PDF p. 1, Kan. Stat. Ann. § 50-634(a)–(b), statutory text"
+    },
+    "094aeef84d92145dcbb36489f08150": {
+      "source_id": "US-KS:consumer_remedies:6f94aee0dbd8",
+      "authority_type": "statute",
+      "citation": "Kan. Stat. Ann. § 50-634(c)–(e)",
+      "text": "(c) Whether a consumer seeks or is entitled to recover damages or has an adequate remedy at law, a consumer may bring a class action for declaratory judgment, an injunction and appropriate ancillary relief, except damages, against an act or practice that violates this act. (d) A consumer who suffers loss as a result of a violation of this act may bring a class action for the damages caused by an act or practice: (1) Violating any of the acts or practices specifically proscribed in K.S.A. 50-626, 50-627 and 50-640, and amendments thereto, or (2) declared to violate K.S.A. 50-626 or 50-627, and amendments thereto, by a final judgment of any district court or the supreme court of this state that was either officially reported or made available for public dissemination under subsection (a)(3) of K.S.A. 50- 630 and amendments thereto by the attorney general 10 days before the consumer transactions on which the action is based, or (3) with respect to a supplier who agreed to it, was prohibited specifically by the terms of a consent judgment which became final before the consumer transactions on which the action is based. (e) Except for services performed by the office of the attorney general or the office of a county or district attorney, the court may award to the prevailing party reasonable attorney fees, including those on appeal, limited to the work reasonably performed if: (1) The consumer complaining of the act or practice that violates this act has brought or maintained an action the consumer knew to be groundless and the prevailing party is the supplier; or a supplier has committed an act or practice that violates this act and the prevailing party is the consumer; and (2) an action under this section has been terminated by a judgment, or settled.",
+      "text_sha256": "43cbe9f355068f61e1f0223eb81a455361f50c9cc8f35535b25529f82998019d",
+      "publisher_sha256": "ec35b0e19839048ec385dcce1f0bcda13284dae3205cab9329c64e468b8ecb25",
+      "retrieved_at": "2026-11-21T21:58:26.258973+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Kansas Legislature 2025 statutes",
+      "publisher_member": "Publisher PDF p. 1, Kan. Stat. Ann. § 50-634(c)–(e), statutory text"
     }
   },
   "fault_allocation": {

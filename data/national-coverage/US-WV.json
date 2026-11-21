@@ -427,6 +427,30 @@
         "retrieved_at": "2026-11-21T17:38:59.812577+00:00",
         "sha256": "dc3b8b5f3b6c12040983a9d3fe19bafd15876cc18d9de774f37483c86b9a706c"
       }
+    },
+    "US-WV:consumer_private_action:5d6e95912dc7": {
+      "category": "consumer_private_action",
+      "title": "W. Va. Code § 46A-6-106(a)–(b)",
+      "url": "https://web.archive.org/web/20251208065121id_/https://code.wvlegislature.gov/46a-6-106/",
+      "locator": "W. Va. Code § 46A-6-106(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:46.513575+00:00",
+        "sha256": "264db556d5f43deb425dbbe8fd33e6a813e581e8c79125f3be08c92b1bf94f91"
+      }
+    },
+    "US-WV:wage_enforcement:0ac7241d6dc3": {
+      "category": "wage_enforcement",
+      "title": "W. Va. Code § 21-5-12",
+      "url": "https://web.archive.org/web/20251115232233id_/https://code.wvlegislature.gov/21-5-12/",
+      "locator": "W. Va. Code § 21-5-12",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:46.654407+00:00",
+        "sha256": "0b22805e636853aa7f3d24a3a40c9b13d927c21a1c2e0fed5a38b199025a5a57"
+      }
     }
   },
   "court_directory": [
@@ -790,6 +814,32 @@
       "language": "en",
       "edition": "West Virginia Legislature Code archive, December 14, 2025",
       "publisher_member": "West Virginia Legislature archived statutory text, subsection (c), nonresident and joinder conditions"
+    },
+    "83c6d2df603331104ccd0e94917334": {
+      "source_id": "US-WV:consumer_private_action:5d6e95912dc7",
+      "authority_type": "statute",
+      "citation": "W. Va. Code § 46A-6-106(a)–(b)",
+      "text": "(a) Subject to subsection (b) of this section, any person who purchases or leases goods or services and thereby suffers an ascertainable loss of money or property, real or personal, as a result of the use or employment by another person of a method, act, or practice prohibited or declared to be unlawful by the provisions of this article may bring an action in the circuit court of the county in which the seller or lessor resides or has his or her principal place of business or is doing business, or as provided for in §46A-1-1 and §46A-1-2 of this code, to recover actual damages or $200, whichever is greater. The court may, in its discretion, provide such equitable relief it considers necessary or proper. Any party to an action for damages under this subsection has the right to demand a jury trial. (b) An award of damages in an action pursuant to subsection (a) of this section may not be made without proof that the person seeking damages suffered an actual out-of-pocket loss that was proximately caused by a violation of this article. If a person seeking to recover damages for a violation of this article alleges that an affirmative misrepresentation is the basis for his or her claim then he or she must prove that the deceptive act or practice caused him or her to enter into the transaction that resulted in his or her damages. If a person seeking to recover damages for a violation of this article alleges that the concealment or omission of information is the basis for his or her claim, then he or she must prove that the person’s loss was proximately caused by the concealment or omission.",
+      "text_sha256": "2370972cc47fe134978007e7784fce283281af33a94cfb13b1eef296c84833f9",
+      "publisher_sha256": "264db556d5f43deb425dbbe8fd33e6a813e581e8c79125f3be08c92b1bf94f91",
+      "retrieved_at": "2026-11-21T21:58:46.513575+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "West Virginia Legislature Code archive, December 8, 2025",
+      "publisher_member": "West Virginia Legislature statutory text archived December 8, 2025"
+    },
+    "3379ce422737b3768f8f82e1c693f2": {
+      "source_id": "US-WV:wage_enforcement:0ac7241d6dc3",
+      "authority_type": "statute",
+      "citation": "W. Va. Code § 21-5-12",
+      "text": "(a) Any person whose wages have not been paid in accord with this article, or the commissioner or his designated representative, upon the request of such person, may bring any legal action necessary to collect a claim under this article. With the consent of the employee, the commissioner shall have the power to settle and adjust any claim to the same extent as might the employee. (b) The court in any action brought under this article may, in the event that any judgment is awarded to the plaintiff or plaintiffs, assess costs of the action, including reasonable attorney fees against the defendant. Such attorney fees in the case of actions brought under this section by the commissioner shall be remitted by the commissioner to the treasurer of the state. The commissioner shall not be required to pay the filing fee or other costs or fees of any nature or to file bond or other security of any nature in connection with such action or with proceedings supplementary thereto, or as a condition precedent to the availability to the commissioner of any process in aid of such action or proceedings. The commissioner shall have power to join various claimants in one claim or lien, and in case of suit to join them in one cause of action.",
+      "text_sha256": "4878133e08c3594b47b593637d00c58c1a77cf92f1e76ddddd8abd7fe85ae270",
+      "publisher_sha256": "0b22805e636853aa7f3d24a3a40c9b13d927c21a1c2e0fed5a38b199025a5a57",
+      "retrieved_at": "2026-11-21T21:58:46.654407+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "West Virginia Legislature Code archive, November 15, 2025",
+      "publisher_member": "West Virginia Legislature statutory text archived November 15, 2025"
     }
   },
   "fault_allocation": {
