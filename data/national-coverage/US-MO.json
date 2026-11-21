@@ -341,6 +341,30 @@
         "retrieved_at": "2026-11-21T03:32:46.538131+00:00",
         "sha256": "8c3d20e2f65101032a27cf0d767d43d2c1b5107f20406b638a78b7d3cd7514a6"
       }
+    },
+    "US-MO:response:93bf953c315b": {
+      "category": "response",
+      "title": "McFall v. Hogan, No. ED112561, slip op. at 4 (Rule 55.25)",
+      "url": "https://www.courts.mo.gov/file.jsp?id=217016",
+      "locator": "McFall v. Hogan, No. ED112561, slip op. at 4 (Rule 55.25)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:40:36.571198+00:00",
+        "sha256": "3b97cdb7c0a00edd7c34115b019c2a01a8739f8fb22189353a3331712d449140"
+      }
+    },
+    "US-MO:service_proof:9c3d6f8cae8c": {
+      "category": "service_proof",
+      "title": "McFall v. Hogan, No. ED112561, slip op. at 4 (Rules 54.20 and 54.22)",
+      "url": "https://www.courts.mo.gov/file.jsp?id=217016",
+      "locator": "McFall v. Hogan, No. ED112561, slip op. at 4 (Rules 54.20 and 54.22)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:40:36.571198+00:00",
+        "sha256": "3b97cdb7c0a00edd7c34115b019c2a01a8739f8fb22189353a3331712d449140"
+      }
     }
   },
   "court_directory": [
@@ -576,6 +600,38 @@
       "decision_date": "2024-06-25",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from judgment on the pleadings for claims of negligent hiring, retention, and supervision. The court stated the generally applicable elements."
+    },
+    "f460c5feaf6269cdb6e40fed2b0c73": {
+      "source_id": "US-MO:response:93bf953c315b",
+      "authority_type": "opinion",
+      "citation": "McFall v. Hogan, No. ED112561, slip op. at 4 (Rule 55.25)",
+      "text": "A defendant is required to file an answer within thirty days of service of the summons and petition, and failure to do so may result in a default judgment. Rule 55.25; Rule 74.05(a).",
+      "text_sha256": "3363e534215c47d585a6984bcc6107cb0502129d0b232cf268656a5814071ad3",
+      "publisher_sha256": "3b97cdb7c0a00edd7c34115b019c2a01a8739f8fb22189353a3331712d449140",
+      "retrieved_at": "2026-11-21T03:40:36.571198+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Missouri appellate slip opinion of 2025-01-28 applying 2024 rules",
+      "court": "Missouri Court of Appeals, Eastern District",
+      "decision_date": "2025-01-28",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from an order setting aside default judgment. The panel evaluated when the summons and petition had been personally served."
+    },
+    "dbb893bb2d0237302c04f650b5798d": {
+      "source_id": "US-MO:service_proof:9c3d6f8cae8c",
+      "authority_type": "opinion",
+      "citation": "McFall v. Hogan, No. ED112561, slip op. at 4 (Rules 54.20 and 54.22)",
+      "text": "Special process servers, such as the one Plaintiff used in this case, are required by Rule 54.20(a)(2) to “make affidavit as to the time, place and manner of service.” A return of service may be filed with the trial court, in its discretion, at any time as proof that the defendant was served. Rule 54.22(a).",
+      "text_sha256": "e17015a54513d37658f4b81f1a442f49477fe93f724f1587d70ea1ec030e3f3c",
+      "publisher_sha256": "3b97cdb7c0a00edd7c34115b019c2a01a8739f8fb22189353a3331712d449140",
+      "retrieved_at": "2026-11-21T03:40:36.571198+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Missouri appellate slip opinion of 2025-01-28 applying 2024 rules",
+      "court": "Missouri Court of Appeals, Eastern District",
+      "decision_date": "2025-01-28",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from an order setting aside default judgment. The panel evaluated when the summons and petition had been personally served."
     }
   },
   "fault_allocation": {

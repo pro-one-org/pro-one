@@ -190,6 +190,20 @@ class NationalCoverageTests(unittest.TestCase):
                        {"state": "Maryland"}):
             self.assertFalse(provider.search(query.model_copy(update=change)))
 
+    def test_indiana_debt_pleading_preserves_assignment_proof_and_foreclosure_exception(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Indiana", legal_area="consumer_debt",
+                               topics=["debt_pleading"], authority_types=["court_rule"],
+                               authority_status="current", authority_as_of="2026-08-01")
+        docs = {doc.source["citation"]["preferred_citation"]: doc.text
+                for doc in map(provider.fetch, provider.search(query))}
+        self.assertIn("chronological listing of the names of all prior owners", docs["Ind. Trial R. 9.2(A)"])
+        self.assertIn("Subsection (2) does not apply to mortgage foreclosures", docs["Ind. Trial R. 9.2(A)"])
+        self.assertIn("first responsive pleading or prior motion", docs["Ind. Trial R. 9.2(F)"])
+        for change in ({"authority_as_of": "2026-07-31"}, {"authority_as_of": "2026-08-02"},
+                       {"topics": ["debt_response"]}, {"state": "Ohio"}):
+            self.assertFalse(provider.search(query.model_copy(update=change)))
+
     def test_california_response_statutes_keep_triggers_and_form_revision_separate(self):
         provider = RetainedLegislativeResearch()
         matter = ResearchMatter(country="US", state="California", legal_area="civil_procedure",
