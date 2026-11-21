@@ -441,6 +441,30 @@
         "retrieved_at": "2026-11-21T16:33:08.846730+00:00",
         "sha256": "c56a2717fb2c50e823d1ca8b68e251028a074d69cfa0e8edef1675a11764edb6"
       }
+    },
+    "US-IL:oral_contract_limitations:8994c20a3e73": {
+      "category": "oral_contract_limitations",
+      "title": "735 ILCS 5/13-205 (February 2025 capture)",
+      "url": "https://web.archive.org/web/20250226145013id_/https://www.ilga.gov/ftp/ILCS/Ch%200735/Act%200005/073500050K13-205.html",
+      "locator": "735 ILCS 5/13-205 (February 2025 capture)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:55:54.997370+00:00",
+        "sha256": "3b3faa37ee2391c4906bf3c6a95a05073c24656edd917074e3dcf664d71a55cd"
+      }
+    },
+    "US-IL:written_contract_limitations:61056a4010bf": {
+      "category": "written_contract_limitations",
+      "title": "735 ILCS 5/13-206 (February 2025 capture)",
+      "url": "https://web.archive.org/web/20250226162541id_/https://www.ilga.gov/ftp/ILCS/Ch%200735/Act%200005/073500050K13-206.html",
+      "locator": "735 ILCS 5/13-206 (February 2025 capture)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:55:54.453374+00:00",
+        "sha256": "c5d8fa0c1ab784fa63ff16726c9116897fe086df162d5b415c12f47713c83cce"
+      }
     }
   },
   "court_directory": [
@@ -788,6 +812,33 @@
       "language": "en",
       "edition": "Illinois General Assembly FTP archive captured February 25, 2025",
       "publisher_member": "Illinois General Assembly statutory FTP archive, § 2(d)–(f), checked against P.A. 103-514, PDF pp. 4–5"
+    },
+    "9bffea2243e08e03ea5810f53d0c99": {
+      "source_id": "US-IL:oral_contract_limitations:8994c20a3e73",
+      "authority_type": "statute",
+      "citation": "735 ILCS 5/13-205 (February 2025 capture)",
+      "text": "Except as provided in Section 2-725 of the \"Uniform Commercial Code\", approved July 31, 1961, as amended, and Section 11-13 of \"The Illinois Public Aid Code\", approved April 11, 1967, as amended, actions on unwritten contracts, expressed or implied, or on awards of arbitration, or to recover damages for an injury done to property, real or personal, or to recover the possession of personal property or damages for the detention or conversion thereof, and all civil actions not otherwise provided for, shall be commenced within 5 years next after the cause of action accrued.",
+      "text_sha256": "7103c0fe6a61ed7659d1de835204711dda2339ba9c43abafec28d8e105799b63",
+      "publisher_sha256": "3b3faa37ee2391c4906bf3c6a95a05073c24656edd917074e3dcf664d71a55cd",
+      "retrieved_at": "2026-11-21T16:55:54.997370+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois General Assembly FTP archive captured February 26, 2025",
+      "publisher_member": "Illinois General Assembly FTP statutory archive, section 13-205; historical compilation"
+    },
+    "db7cdf01cc6688fd653d67f6917eea": {
+      "source_id": "US-IL:written_contract_limitations:61056a4010bf",
+      "authority_type": "statute",
+      "citation": "735 ILCS 5/13-206 (February 2025 capture)",
+      "text": "Except as provided in Section 2-725 of the \"Uniform Commercial Code\", actions on bonds, promissory notes, bills of exchange, written leases, written contracts, or other evidences of indebtedness in writing and actions brought under the Illinois Wage Payment and Collection Act shall be commenced within 10 years next after the cause of action accrued; but if any payment or new promise to pay has been made, in writing, on any bond, note, bill, lease, contract, or other written evidence of indebtedness, within or after the period of 10 years, then an action may be commenced thereon at any time within 10 years after the time of such payment or promise to pay. For purposes of this Section, with regard to promissory notes dated on or after the effective date of this amendatory Act of 1997, a cause of action on a promissory note payable at a definite date accrues on the due date or date stated in the promissory note or the date upon which the promissory note is accelerated. With respect to a demand promissory note dated on or after the effective date of this amendatory Act of 1997, if a demand for payment is made to the maker of the demand promissory note, an action to enforce the obligation of a party to pay the demand promissory note must be commenced within 10 years after the demand. An action to enforce a demand promissory note is barred if neither principal nor interest on the demand promissory note has been paid for a continuous period of 10 years and no demand for payment has been made to the maker during that period.",
+      "text_sha256": "c5cf7974ac89c064e156e205b63cac8504a78daf59a6b2f1dccd0130677660c8",
+      "publisher_sha256": "c5d8fa0c1ab784fa63ff16726c9116897fe086df162d5b415c12f47713c83cce",
+      "retrieved_at": "2026-11-21T16:55:54.453374+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois General Assembly FTP archive captured February 26, 2025",
+      "publisher_member": "Illinois General Assembly FTP statutory archive, section 13-206; historical compilation",
+      "effective_from": "2007-08-16"
     }
   },
   "fault_allocation": {

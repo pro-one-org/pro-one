@@ -377,6 +377,30 @@
         "retrieved_at": "2026-11-20T23:40:49.771262+00:00",
         "sha256": "7f779711dd371d869606113cbbc31d7e22a88ea3967e2e352c47f1679331480e"
       }
+    },
+    "US-PA:oral_contract_limitations:02dfb2664d61": {
+      "category": "oral_contract_limitations",
+      "title": "42 Pa. Cons. Stat. § 5525(a)(3)",
+      "url": "https://web.archive.org/web/20260514062253id_/https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/42/00.055..HTM",
+      "locator": "42 Pa. Cons. Stat. § 5525(a)(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:54:39.173718+00:00",
+        "sha256": "58dae8a1a66ef762fa8e0ccea1c853407badfda59a5a7b5d391131debefa7414"
+      }
+    },
+    "US-PA:written_contract_limitations:bbd52d110392": {
+      "category": "written_contract_limitations",
+      "title": "42 Pa. Cons. Stat. § 5525(a)(8)",
+      "url": "https://web.archive.org/web/20260514062253id_/https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/42/00.055..HTM",
+      "locator": "42 Pa. Cons. Stat. § 5525(a)(8)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:54:39.173718+00:00",
+        "sha256": "58dae8a1a66ef762fa8e0ccea1c853407badfda59a5a7b5d391131debefa7414"
+      }
     }
   },
   "court_directory": [
@@ -702,6 +726,32 @@
       "decision_date": "2026-02-04",
       "opinion_role": "majority",
       "procedural_posture": "Published panel opinion affirming summary judgment in a personal injury action arising from an alleged dangerous condition on a road."
+    },
+    "233afb87578c57d12aedd948ee4772": {
+      "source_id": "US-PA:oral_contract_limitations:02dfb2664d61",
+      "authority_type": "statute",
+      "citation": "42 Pa. Cons. Stat. § 5525(a)(3)",
+      "text": "(a) General rule.-- Except as provided for in subsection (b), the following actions and proceedings must be commenced within four years: (3) An action upon an express contract not founded upon an instrument in writing.",
+      "text_sha256": "ff533182b5b82acbeebd3b1725af0c1d4417ab1ab0d464ea1925d3912b2daba1",
+      "publisher_sha256": "58dae8a1a66ef762fa8e0ccea1c853407badfda59a5a7b5d391131debefa7414",
+      "retrieved_at": "2026-11-21T16:54:39.173718+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Pennsylvania General Assembly archive captured May 14, 2026",
+      "publisher_member": "Pennsylvania General Assembly chapter 55, § 5525(a)(3) with subdivision (a) lead-in"
+    },
+    "7f9355bec5db081af7d7387787010a": {
+      "source_id": "US-PA:written_contract_limitations:bbd52d110392",
+      "authority_type": "statute",
+      "citation": "42 Pa. Cons. Stat. § 5525(a)(8)",
+      "text": "(a) General rule.-- Except as provided for in subsection (b), the following actions and proceedings must be commenced within four years: (8) An action upon a contract, obligation or liability founded upon a writing not specified in paragraph (7), under seal or otherwise, except an action subject to another limitation specified in this subchapter.",
+      "text_sha256": "92db4201a2911da9fac730dc56a0cb172dc63da36bbbb0243a3f6b8a45c3bf51",
+      "publisher_sha256": "58dae8a1a66ef762fa8e0ccea1c853407badfda59a5a7b5d391131debefa7414",
+      "retrieved_at": "2026-11-21T16:54:39.173718+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Pennsylvania General Assembly archive captured May 14, 2026",
+      "publisher_member": "Pennsylvania General Assembly chapter 55, § 5525(a)(8) with subdivision (a) lead-in"
     }
   },
   "fault_allocation": {

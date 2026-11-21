@@ -20,6 +20,8 @@ SUBJECTS = {
     "written_contract_limitations": ("contracts", "written_contract_limitations"),
     "oral_contract_limitations": ("contracts", "oral_contract_limitations"),
     "general_contract_limitations": ("contracts", "contract_limitations"),
+    "sales_contract_limitations": ("contracts", "sales_contract_limitations"),
+    "contract_accrual": ("contracts", "contract_accrual"),
     "fault": ("torts", "fault_allocation"),
     "joint_several_liability": ("torts", "joint_several_liability"),
     "tortfeasor_contribution": ("torts", "tortfeasor_contribution"),

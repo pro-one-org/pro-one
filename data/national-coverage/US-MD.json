@@ -393,6 +393,18 @@
         "retrieved_at": "2026-11-21T16:50:42.385209+00:00",
         "sha256": "b63ecd63d184d617b8c745d76a0b0cabc158d96ccbb3e028d8192c56fef7cea8"
       }
+    },
+    "US-MD:service:0810bd0e8081": {
+      "category": "service",
+      "title": "Conwell Law LLC v. Tung, 221 Md. App. 481, 500 (2015)",
+      "url": "https://web.archive.org/web/20250617141014id_/https://www.mdcourts.gov/data/opinions/cosa/2015/0476s13.pdf",
+      "locator": "Conwell Law LLC v. Tung, 221 Md. App. 481, 500 (2015)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:54:43.901197+00:00",
+        "sha256": "310aff987f01fba0fdb12deddaa93a5b0d34186e49c1d8b30b9673b66a978b7d"
+      }
     }
   },
   "court_directory": [
@@ -702,6 +714,23 @@
       "court": "District Court of Maryland",
       "publisher_member": "Maryland Court of Appeals 152nd rules order, printed p. 99, Rule 3-101(c)",
       "effective_from": "2004-01-01"
+    },
+    "a5f5fbf1fa681e5b9ef4c479a2aa2d": {
+      "source_id": "US-MD:service:0810bd0e8081",
+      "authority_type": "opinion",
+      "citation": "Conwell Law LLC v. Tung, 221 Md. App. 481, 500 (2015)",
+      "text": "Effective service under Rule 2-121(a) requires delivery of “a copy of the summons, complaint, and all other papers filed with it.” Md. Rule 2-121(a) (emphasis added). Delivery of the Non-Confidential Complaint did not satisfy this rule because that version of the complaint was not the complete version of the complaint filed with the court.",
+      "text_sha256": "26d38e160cbaea1ec87c201500abe7cd2780a6e791e18ab15f608e18900f13ff",
+      "publisher_sha256": "310aff987f01fba0fdb12deddaa93a5b0d34186e49c1d8b30b9673b66a978b7d",
+      "retrieved_at": "2026-11-21T16:54:43.901197+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported Maryland Court of Special Appeals opinion, February 25, 2015",
+      "court": "Court of Special Appeals of Maryland",
+      "publisher_member": "Court opinion pp. 17–18, Part A.1, complete complaint requirement",
+      "decision_date": "2015-02-25",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissal; the appellate court affirmed the dismissal as to Tung for insufficient service."
     }
   },
   "fault_allocation": {

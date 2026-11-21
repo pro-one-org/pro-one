@@ -381,6 +381,42 @@
         "retrieved_at": "2026-11-21T16:22:56.848123+00:00",
         "sha256": "54604116264f7d15be39a099500d2d3b2e76adda1bc3632039081493e94701b5"
       }
+    },
+    "US-CO:general_contract_limitations:78abbe319073": {
+      "category": "general_contract_limitations",
+      "title": "Colo. Rev. Stat. § 13-80-101(1)(a)",
+      "url": "https://olls.info/crs/crs2026-title-13.htm",
+      "locator": "Colo. Rev. Stat. § 13-80-101(1)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:55:52.405186+00:00",
+        "sha256": "16a31770d5018a405ed16e685c94adf71ddd74e6a50156a0919466125dd6c8a5"
+      }
+    },
+    "US-CO:debt_limitations:37ce4421c525": {
+      "category": "debt_limitations",
+      "title": "Colo. Rev. Stat. § 13-80-103.5(1)(a)",
+      "url": "https://olls.info/crs/crs2026-title-13.htm",
+      "locator": "Colo. Rev. Stat. § 13-80-103.5(1)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:55:52.405186+00:00",
+        "sha256": "16a31770d5018a405ed16e685c94adf71ddd74e6a50156a0919466125dd6c8a5"
+      }
+    },
+    "US-CO:contract_accrual:74bcb053ef4c": {
+      "category": "contract_accrual",
+      "title": "Colo. Rev. Stat. § 13-80-108(6)",
+      "url": "https://olls.info/crs/crs2026-title-13.htm",
+      "locator": "Colo. Rev. Stat. § 13-80-108(6)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:55:52.405186+00:00",
+        "sha256": "16a31770d5018a405ed16e685c94adf71ddd74e6a50156a0919466125dd6c8a5"
+      }
     }
   },
   "court_directory": [
@@ -677,6 +713,42 @@
       "court": "Colorado District Courts",
       "publisher_member": "Colorado Supreme Court signed Rule Change 2024(08), PDF p. 2, Rule 4(c)(2); adoption at PDF p. 8",
       "effective_from": "2024-05-02"
+    },
+    "2ad476c6b35fc3d2c7822747c6d5da": {
+      "source_id": "US-CO:general_contract_limitations:78abbe319073",
+      "authority_type": "statute",
+      "citation": "Colo. Rev. Stat. § 13-80-101(1)(a)",
+      "text": "(1) The following civil actions, regardless of the theory upon which suit is brought, or against whom suit is brought, shall be commenced within three years after the cause of action accrues, and not thereafter: (a) All contract actions, including personal contracts and actions under the \"Uniform Commercial Code\", except as otherwise provided in section 13-80-103.5;",
+      "text_sha256": "0aa3e6d60ca598cc78e966d8ec0fd5d2134a09677165359745295422c51abd2a",
+      "publisher_sha256": "16a31770d5018a405ed16e685c94adf71ddd74e6a50156a0919466125dd6c8a5",
+      "retrieved_at": "2026-11-21T16:55:52.405186+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Colorado Office of Legislative Legal Services, 2026 Colorado Revised Statutes, Title 13, § 13-80-101(1)(a)"
+    },
+    "00d8fd57e937eb6bec436f770772ec": {
+      "source_id": "US-CO:debt_limitations:37ce4421c525",
+      "authority_type": "statute",
+      "citation": "Colo. Rev. Stat. § 13-80-103.5(1)(a)",
+      "text": "(1) The following actions shall be commenced within six years after the cause of action accrues and not thereafter: (a) All actions to recover a liquidated debt or an unliquidated, determinable amount of money due to the person bringing the action, all actions for the enforcement of rights set forth in any instrument securing the payment of or evidencing any debt, and all actions of replevin to recover the possession of personal property encumbered under any instrument securing any debt; except that actions to recover pursuant to section 38-35-124.5 (3), C.R.S., shall be commenced within one year;",
+      "text_sha256": "0e901a32f2fd8c3c721a9fe3c482aca54752e43bafbb29d8793680d0be271725",
+      "publisher_sha256": "16a31770d5018a405ed16e685c94adf71ddd74e6a50156a0919466125dd6c8a5",
+      "retrieved_at": "2026-11-21T16:55:52.405186+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Colorado Office of Legislative Legal Services, 2026 Colorado Revised Statutes, Title 13, § 13-80-103.5(1)(a)"
+    },
+    "623656fcb93b3b95ae9554f0b22233": {
+      "source_id": "US-CO:contract_accrual:74bcb053ef4c",
+      "authority_type": "statute",
+      "citation": "Colo. Rev. Stat. § 13-80-108(6)",
+      "text": "(6) A cause of action for breach of any express or implied contract, agreement, warranty, or trust shall be considered to accrue on the date the breach is discovered or should have been discovered by the exercise of reasonable diligence.",
+      "text_sha256": "15741765b5bff49ef418eb47427c3d0f1dca5fd41b72bf5cf501d57acbd85557",
+      "publisher_sha256": "16a31770d5018a405ed16e685c94adf71ddd74e6a50156a0919466125dd6c8a5",
+      "retrieved_at": "2026-11-21T16:55:52.405186+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Colorado Office of Legislative Legal Services, 2026 Colorado Revised Statutes, Title 13, § 13-80-108(6)"
     }
   },
   "fault_allocation": {

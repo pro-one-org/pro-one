@@ -23,6 +23,19 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_colorado_contract_accrual_and_debt_exceptions_use_separate_topics(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Colorado", legal_area="contracts", authority_status="unresolved",
+                               topics=["contract_accrual"])
+        accrual, = provider.search(query)
+        self.assertIn("breach is discovered or should have been discovered", provider.fetch(accrual).text)
+        limitations, = provider.search(query.model_copy(update={"topics": ["contract_limitations"]}))
+        self.assertNotEqual(accrual, limitations)
+        self.assertIn("except as otherwise provided in section 13-80-103.5", provider.fetch(limitations).text)
+        debt, = provider.search(query.model_copy(update={"legal_area": "consumer_debt", "topics": ["debt_limitations"]}))
+        self.assertIn("a liquidated debt or an unliquidated, determinable amount", provider.fetch(debt).text)
+        self.assertFalse(provider.search(query.model_copy(update={"legal_area": "torts"})))
+
     def test_maryland_refiling_rules_keep_the_receiving_court_and_trigger_separate(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Maryland", legal_area="civil_procedure", authority_status="historical",
