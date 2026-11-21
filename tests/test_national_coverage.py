@@ -168,6 +168,29 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertIn(small_claim["citation"], small_citations)
         self.assertNotIn(response["citation"], small_citations)
 
+    def test_michigan_statute_currentness_requires_matching_enactment_and_compilation(self):
+        record = manifest("US-MI")
+        deposit = next(row for row in record["passages"].values()
+                       if row["citation"] == "Mich. Comp. Laws § 554.609(3)")
+        fees = next(row for row in record["passages"].values()
+                    if row["citation"] == "Mich. Comp. Laws § 554.633(1)(o)")
+        url = record["sources"][deposit["source_id"]]["url"]
+        for act, quote in ((fees["publisher_path"], deposit["text"]),
+                           (deposit["publisher_path"], deposit["text"].replace("10 days", "30 days"))):
+            with self.assertRaisesRegex(ValueError, "certified_excerpt_or_date_mismatch"):
+                certified_basis("US-MI", url, deposit["publisher_sha256"], act, deposit["citation"], quote)
+
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Michigan", legal_area="landlord_tenant",
+                               topics=["security_deposit"], authority_types=["statute"],
+                               authority_status="current", authority_as_of="2026-11-16")
+        docs = {doc.source["citation"]["preferred_citation"]: doc.text
+                for doc in map(provider.fetch, provider.search(query))}
+        self.assertIn("within 10 days after mailing the notice of damages", docs[deposit["citation"]])
+        self.assertNotIn(fees["citation"], docs)
+        for change in ({"authority_as_of": "2026-11-17"}, {"state": "Wisconsin"}):
+            self.assertFalse(provider.search(query.model_copy(update=change)))
+
     def test_delaware_common_pleas_certification_binds_court_date_and_text(self):
         record = manifest("US-DE")
         row = next(item for item in record["passages"].values()
@@ -451,6 +474,8 @@ class NationalCoverageTests(unittest.TestCase):
             ("US-WI", date(2026, 11, 4)): "Published and certified",
             ("US-MI", date(2026, 11, 18)): "Michigan Supreme Court Rules Chapter 2.",
             ("US-MI", date(2024, 9, 1)): "Michigan Supreme Court Rules Chapter 4.",
+            ("US-MI", date(2026, 10, 25)): "Michigan Compiled Laws Complete Through PA 114 of 2026.",
+            ("US-MI", date(2026, 11, 16)): "Michigan Compiled Laws Complete Through PA 114 of 2026.",
             ("US-IN", date(2026, 8, 1)): "Indiana Rules of Trial Procedure.",
             ("US-IN", date(2025, 1, 1)): "Indiana Small Claims Rules.",
         }

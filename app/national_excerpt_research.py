@@ -23,6 +23,7 @@ SUBJECTS = {
     "joint_several_liability": ("torts", "joint_several_liability"),
     "tortfeasor_contribution": ("torts", "tortfeasor_contribution"),
     "deposit": ("landlord_tenant", "security_deposit"),
+    "rent_payment_fees": ("landlord_tenant", "rent_payment_fees"),
     "habitability": ("landlord_tenant", "habitability"),
     "eviction": ("landlord_tenant", "eviction_procedure"),
     "tenancy_notice": ("landlord_tenant", "tenancy_notice"),

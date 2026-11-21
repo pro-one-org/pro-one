@@ -20,6 +20,11 @@ MICHIGAN_RULES_BOOK = (
     "https://www.courts.michigan.gov/siteassets/rules-instructions-administrative-orders/"
     "michigan-court-rules/michigan-court-rules-responsive-html5.zip/Michigan_Court_Rules/"
 )
+MICHIGAN_STATUTES_ROOT = "https://www.legislature.mi.gov/documents/mcl/pdf/"
+MICHIGAN_STATUTE_EDITIONS = {
+    "554.609": ("MCL-554-609.pdf", "102", "9", date(2026, 11, 16)),
+    "554.633": ("mcl-554-633.pdf", "103", "3", date(2026, 10, 25)),
+}
 DELAWARE_COMMON_PLEAS_PATH = "/forms/download.aspx?id=176248"
 DELAWARE_COMMON_PLEAS_DIGEST = "89f788cd80dae047959e9cc98e2a6fdf83c4ec7d51fc339198f9c2fd7f1fad7e"
 DELAWARE_COMMON_PLEAS_RULES = {
@@ -50,6 +55,80 @@ def retained_publisher_bytes(digest, extension):
     if sha256(raw).hexdigest() != digest:
         raise ValueError("certified_publisher_hash_mismatch")
     return raw
+
+
+def certified_authority_type(scope, url):
+    if scope == "US-MI" and url.startswith(MICHIGAN_STATUTES_ROOT):
+        return "statute"
+    return CERTIFIED_TYPES[scope]
+
+
+class EnactedActParagraphs(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.active = None
+        self.paragraphs = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "p":
+            self.active = dict(attrs).get("class", ""), []
+
+    def handle_data(self, data):
+        if self.active:
+            self.active[1].append(data)
+
+    def handle_endtag(self, tag):
+        if tag == "p" and self.active:
+            kind, parts = self.active
+            self.paragraphs.append((kind, " ".join("".join(parts).split())))
+            self.active = None
+
+
+def michigan_statute_basis(url, digest, act_digest, citation, quote):
+    from pypdf import PdfReader
+
+    match = re.fullmatch(r"Mich\. Comp\. Laws § (554\.609\([1-4]\)|554\.633(?:\(1\)\(o\)|\(3\)))", citation)
+    if not match:
+        raise ValueError("invalid_certified_publication")
+    section, _, subsection = match[1].partition("(")
+    filename, act, enacted_section, day = MICHIGAN_STATUTE_EDITIONS[section]
+    if url != MICHIGAN_STATUTES_ROOT + filename:
+        raise ValueError("invalid_certified_publication")
+    parser = EnactedActParagraphs()
+    parser.feed(retained_publisher_bytes(act_digest, "html").decode("cp1252"))
+    parser.close()
+    paragraphs = {value: kind for kind, value in parser.paragraphs}
+    head = " ".join(value for _, value in parser.paragraphs[:7])
+    if (head != f"Act No. {act} Public Acts of 2026 Approved by the Governor September 21, 2026 "
+                "Filed with the Secretary of State September 21, 2026 EFFECTIVE DATE: September 21, 2026"
+            or paragraphs.get("This act is ordered to take immediate effect.") != "EnrollImmediateEffect"
+            or not any(kind == "EnrollTitle" and f"(MCL {section})" in value
+                       for kind, value in parser.paragraphs)):
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    prefix = f"Sec. {enacted_section}. "
+    marker = "(" + subsection.rsplit("(", 1)[-1] + " "
+    candidates = [value.removeprefix(prefix) for kind, value in parser.paragraphs
+                  if kind.startswith("StatuteCxSp") and value.removeprefix(prefix).startswith(marker)]
+    if candidates != [quote]:
+        raise ValueError("certified_excerpt_or_date_mismatch")
+
+    pages = PdfReader(BytesIO(retained_publisher_bytes(digest, "pdf")), strict=True).pages
+    bodies = []
+    edition = "Michigan Compiled Laws Complete Through PA 114 of 2026"
+    rendered = day.strftime("%A, %B %d, %Y")
+    for index, page in enumerate(pages, 1):
+        text = " ".join(page.extract_text().split())
+        footer = f"Rendered {rendered} Page {index} of {len(pages)} {edition}Courtesy of legislature.mi.gov"
+        if not text.endswith(footer):
+            raise ValueError("certified_excerpt_or_date_mismatch")
+        bodies.append(text.removesuffix(footer).strip())
+    body, history, notes = " ".join(bodies).partition(" History: ")
+    normalize = str.maketrans("‘’“”", "''\"\"")
+    if (not history or f"{section} " not in body.partition(prefix)[0]
+            or not re.search(rf"Am\. 2026, Act {act}, Imd\. Eff\. Sept\. 21, 2026(?: Popular Name: .*)?$", notes)
+            or quote.translate(normalize) not in body.partition(prefix)[2].translate(normalize)):
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    return day, f"{edition}. Rendered {rendered}. Public Act {act} took immediate effect September 21, 2026."
 
 
 class PublicationText(HTMLParser):
@@ -299,6 +378,8 @@ def delaware_common_pleas_basis(url, digest, path, citation, quote):
 @lru_cache(maxsize=96)
 def certified_basis(scope, url, digest, path, citation, quote):
     if scope == "US-MI":
+        if certified_authority_type(scope, url) == "statute":
+            return michigan_statute_basis(url, digest, path, citation, quote)
         return michigan_basis(url, digest, path, citation, quote)
     if scope == "US-IN":
         return indiana_basis(url, digest, path, citation, quote)
