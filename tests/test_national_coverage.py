@@ -88,7 +88,9 @@ class NationalCoverageTests(unittest.TestCase):
         remedies, = provider.search(query.model_copy(update={"topics": ["consumer_remedies"]}))
         self.assertIn("personal, family, household, or agricultural purposes", provider.fetch(remedies).text)
         self.assertNotEqual(public, remedies)
-        self.assertFalse(provider.search(query.model_copy(update={"state": "Iowa"})))
+        iowa, = provider.search(query.model_copy(update={"state": "Iowa"}))
+        self.assertNotEqual(public, iowa)
+        self.assertIn("Iowa Code § 714.16(7)", provider.fetch(iowa).source["citation"]["preferred_citation"])
 
     def test_new_york_consumer_research_distinguishes_private_and_attorney_general_scope(self):
         provider = RetainedLegislativeResearch()
@@ -136,6 +138,29 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertEqual(evidence["court"], "Texas Justice Court")
         self.assertNotIn("debt_response", shell["procedure_evidence"])
         self.assertEqual((shell["readiness"], shell["execution"]), ("blocked", "disabled"))
+
+    def test_new_york_debt_response_keeps_the_two_court_branches_separate(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="New York", legal_area="consumer_debt", topics=["debt_response"],
+                               court="Civil Court of the City of New York", authority_status="unresolved")
+        city, = provider.search(query)
+        self.assertIn("after proof of service is filed with the clerk", provider.fetch(city).text)
+        outside, = provider.search(query.model_copy(update={"court": "City Courts Outside the City of New York"}))
+        self.assertIn("after service is complete", provider.fetch(outside).text)
+        self.assertNotEqual(city, outside)
+        self.assertFalse(provider.search(query.model_copy(update={"court": "New York Town and Village Justice Courts"})))
+
+    def test_dc_consumer_enforcement_snapshot_and_later_codification_remain_distinct(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="District of Columbia", sovereign="district",
+                               legal_area="consumer", topics=["consumer_agency_enforcement"],
+                               authority_status="current", authority_as_of="2026-04-29")
+        prior, = provider.search(query)
+        self.assertNotIn("Dissolving an entity", provider.fetch(prior).text)
+        self.assertFalse(provider.search(query.model_copy(update={"authority_as_of": "2026-11-21"})))
+        later, = provider.search(query.model_copy(update={"authority_status": "unresolved", "authority_as_of": None}))
+        self.assertIn("Dissolving an entity", provider.fetch(later).text)
+        self.assertNotEqual(prior, later)
 
     def test_minnesota_contract_pleading_retains_nominal_damages_qualification(self):
         provider = RetainedLegislativeResearch()

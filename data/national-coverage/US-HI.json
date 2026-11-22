@@ -446,6 +446,18 @@
         "retrieved_at": "2026-11-21T23:01:23.993083+00:00",
         "sha256": "1156b9a104fe43a8389cc981a55d493fb6972f4ff1beeb1a1b71a3caac93612b"
       }
+    },
+    "US-HI:consumer_agency:27da5c83d52a": {
+      "category": "consumer_agency",
+      "title": "Haw. Rev. Stat. § 480-20(a)–(c)",
+      "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol11_Ch0476-0490/HRS0480/HRS_0480-0020.htm",
+      "locator": "Haw. Rev. Stat. § 480-20(a)–(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:49:55.443968+00:00",
+        "sha256": "e39d9605b86325f4e889d5c3039f012d76096c5fe60ab0e90d853e14b4c2dba4"
+      }
     }
   },
   "court_directory": [
@@ -774,6 +786,18 @@
       "language": "en",
       "court": "Hawaiʻi District Court",
       "publisher_member": "District Court rule on time for proof of original service"
+    },
+    "003c573fa8b993b8919f93433d3262": {
+      "source_id": "US-HI:consumer_agency:27da5c83d52a",
+      "authority_type": "statute",
+      "citation": "Haw. Rev. Stat. § 480-20(a)–(c)",
+      "text": "(a) The attorney general shall enforce the criminal and civil provisions of this chapter. The county attorney, or prosecuting attorney of any county shall investigate and report suspected violations of this chapter to the attorney general. (b) Whenever this chapter authorizes or requires the attorney general to commence any action or proceeding, including proceedings under section 480-18, the attorney general may require the county attorney, corporation counsel, or prosecuting attorney of any county, holding office in the circuit where the action or proceeding is to be commenced or maintained, to maintain the action or proceeding under the direction of the attorney general. (c) The director of the office of consumer protection shall have concurrent jurisdiction with the attorney general to enforce the civil provisions of this chapter with regard to violations of section 480-2.",
+      "text_sha256": "3023830604af031b441c19893812fd4c7b1bf56d095a09f31302af0448b4c921",
+      "publisher_sha256": "e39d9605b86325f4e889d5c3039f012d76096c5fe60ab0e90d853e14b4c2dba4",
+      "retrieved_at": "2026-11-22T03:49:55.443968+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Hawaii Legislature, Attorney General and Office of Consumer Protection jurisdiction; concurrent civil authority for § 480-2."
     }
   },
   "fault_allocation": {

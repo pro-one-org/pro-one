@@ -479,6 +479,30 @@
         "retrieved_at": "2026-11-21T22:06:55.159890+00:00",
         "sha256": "b9a80a86c4b087e860b8f99dabf55a4c9a0bcbc3041b7de1096dd1e54b880d15"
       }
+    },
+    "US-DC:consumer_agency:4a10593da407": {
+      "category": "consumer_agency",
+      "title": "D.C. Code § 28-3909(a), (a-1)",
+      "url": "https://code.dccouncil.gov/us/dc/council/code/sections/28-3909",
+      "locator": "D.C. Code § 28-3909(a), (a-1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:49:55.161046+00:00",
+        "sha256": "45ab18182c9bc6c51820f62f99c7e83845cc194c0995c959e26a58232a0a4793"
+      }
+    },
+    "US-DC:consumer_agency:0902f7fb2612": {
+      "category": "consumer_agency",
+      "title": "D.C. Code § 28-3909(a)",
+      "url": "https://raw.githubusercontent.com/DCCouncil/law-xml-codified/6231fae42de60c3c498548c489b0ca84ef60353a/us/dc/council/code/titles/28/sections/28-3909.xml",
+      "locator": "D.C. Code § 28-3909(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:49:55.205022+00:00",
+        "sha256": "b249ec765dc52c34f0e4a7b25db66a5fd7ba3914f25a4a953c9bda120e0b72f2"
+      }
     }
   },
   "court_directory": [
@@ -929,6 +953,35 @@
       "edition": "District of Columbia Superior Court Rules of Civil Procedure, 2025 compilation",
       "court": "Superior Court of the District of Columbia, Civil Division",
       "publisher_member": "District of Columbia Courts 2025 Civil Procedure rules, PDF p. 11, acknowledgment and proof with exceptions"
+    },
+    "86b5e366e4f6d1e2a78d6d7561f2c5": {
+      "source_id": "US-DC:consumer_agency:4a10593da407",
+      "authority_type": "statute",
+      "citation": "D.C. Code § 28-3909(a), (a-1)",
+      "text": "(a) Notwithstanding any provision of law to the contrary, if the Attorney General for the District of Columbia has reason to believe that any person has used, is using, or intends to use any method, act, or practice in violation of [§§] 28-3803 , 28-3805 , 28-3807 , 28-3810 , 28-3811 , 28-3812 , 28-3814 , 28-3817 , 28-3818 , 28-3819 , 28-3820 , 28-3851 , 28-3852 , 28-3852.01, 28-3852.02, or 28-3904 , and if it is in the public interest, the Attorney General, in the name of the District of Columbia, may bring an action in the Superior Court of the District of Columbia to obtain a temporary or permanent injunction: (1) Prohibiting the use of the method, act, or practice; (2) Requiring the violator to take affirmative action, including the restitution of money or property; (3) Freezing, where appropriate, the alleged violator's assets to ensure adequate funds are available to pay restitution, damages, and penalties; (4) Placing an entity in receivership; or (5) Dissolving an entity. (a-1) In any action under this section, the Attorney General shall not be required to prove damages and the injunction shall be issued without bond.",
+      "text_sha256": "fba31acd9ea236070b6b8154cc5baffa6d49a5e94a179918e454756125fdb334",
+      "publisher_sha256": "45ab18182c9bc6c51820f62f99c7e83845cc194c0995c959e26a58232a0a4793",
+      "retrieved_at": "2026-11-22T03:49:55.161046+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Superior Court of the District of Columbia",
+      "publisher_member": "D.C. Law Library codified text after D.C. Laws 26-187 and 26-189; the amendatory notes identify D.C. Law 26-172's separate unimplemented provision."
+    },
+    "bd0e783a4c1a197a7cb3305cf2049b": {
+      "source_id": "US-DC:consumer_agency:0902f7fb2612",
+      "authority_type": "statute",
+      "citation": "D.C. Code § 28-3909(a)",
+      "text": "(a) Notwithstanding any provision of law to the contrary, if the Attorney General for the District of Columbia has reason to believe that any person is using or intends to use any method, act, or practice in violation of section 28-3803, 28-3805, 28-3807, 28-3810, 28-3811, 28-3812, 28-3814, 28-3817, 28-3818, 28-3819, 28-3851, 28-3852, [28-3852.01], [28-3852.02], or 28-3904, and if it is in the public interest, the Attorney General, in the name of the District of Columbia, may bring an action in the Superior Court of the District of Columbia to obtain a temporary or permanent injunction prohibiting the use of the method, act, or practice and requiring the violator to take affirmative action, including the restitution of money or property. In any action under this section, the Attorney General shall not be required to prove damages and the injunction shall be issued without bond.",
+      "text_sha256": "c220972112f435df50117045fbd3225260c8ad5beb6c1102037b5f05fcf3fedd",
+      "publisher_sha256": "b249ec765dc52c34f0e4a7b25db66a5fd7ba3914f25a4a953c9bda120e0b72f2",
+      "retrieved_at": "2026-11-22T03:49:55.205022+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Superior Court of the District of Columbia",
+      "current_as_of": "2026-04-29",
+      "publisher_path": "3ed269628b4a6251a05b54014ac05c7ed9a5ab685f99aad1d289251a444ffa83",
+      "edition": "D.C. Council codified XML publication, current through April 29, 2026.",
+      "publisher_member": "April 29, 2026 Council edition before the fall 2026 amendments; date-specific public injunction and restitution authority."
     }
   },
   "fault_allocation": {

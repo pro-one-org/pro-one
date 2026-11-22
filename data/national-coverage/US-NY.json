@@ -485,6 +485,42 @@
         "retrieved_at": "2026-11-22T03:40:07.994747+00:00",
         "sha256": "8ac689cd967abfc22e6bcdbe113b5eaf2161fa5a349535f447909d982d252a61"
       }
+    },
+    "US-NY:debt_response:790d7ed860fd": {
+      "category": "debt_response",
+      "title": "N.Y. Uniform City Ct. Act § 402(a)–(b)",
+      "url": "https://www.nysenate.gov/legislation/laws/UCT/402",
+      "locator": "N.Y. Uniform City Ct. Act § 402(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:56:22.211597+00:00",
+        "sha256": "eb0d50f31e2dd6f3c02c0dd150b8dbeb20ebbbaebc27b803c8afa6069d36f135"
+      }
+    },
+    "US-NY:debt_response:acce59dd5d1c": {
+      "category": "debt_response",
+      "title": "N.Y. City Civ. Ct. Act § 402(a)–(b)",
+      "url": "https://www.nysenate.gov/legislation/laws/CCA/402",
+      "locator": "N.Y. City Civ. Ct. Act § 402(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:56:22.212405+00:00",
+        "sha256": "5b1cfc4ca5164110b33098e1c4b18bd0e8c9bd2513b461887b077f5ce57f5e5e"
+      }
+    },
+    "US-NY:justice_court_response:6e784ff7390d": {
+      "category": "justice_court_response",
+      "title": "N.Y. Uniform Just. Ct. Act § 402(a)–(c)",
+      "url": "https://www.nysenate.gov/legislation/laws/UJC/402",
+      "locator": "N.Y. Uniform Just. Ct. Act § 402(a)–(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:56:22.229649+00:00",
+        "sha256": "3c32c53856a001a8fbbfb330f4d4529329c452a657cf2520742cb2c5628eb855"
+      }
     }
   },
   "court_directory": [
@@ -928,6 +964,45 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "New York State Senate, parties permitted to complain, limits on confidentiality and employer recordkeeping ramifications."
+    },
+    "faeed44d1064954ba262a5e9bd5c6d": {
+      "source_id": "US-NY:debt_response:790d7ed860fd",
+      "authority_type": "statute",
+      "citation": "N.Y. Uniform City Ct. Act § 402(a)–(b)",
+      "text": "(a) If the summons is personally delivered to the defendant within the county, it shall require him to appear and answer within ten days after its service. (b) If the summons is served: (1) by delivery to a person, including an actual or statutory designee, other than the defendant; or (2) outside the county; or (3) by publication; or (4) by any means other than personal delivery to the defendant within the county, it shall provide that the defendant must appear and answer within thirty days after service is complete.",
+      "text_sha256": "02f04fd0a6ac9f628dee8bf8e52b6cb821b6827b0a885816812d232c3320919f",
+      "publisher_sha256": "eb0d50f31e2dd6f3c02c0dd150b8dbeb20ebbbaebc27b803c8afa6069d36f135",
+      "retrieved_at": "2026-11-22T03:56:22.211597+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "City Courts Outside the City of New York",
+      "publisher_member": "City Court outside New York City. Personal delivery within the county and other service triggers stay distinct. Court guidance identifies this rule for covered debt cases."
+    },
+    "fa8cf03c8b3f313c519de2438fdf4f": {
+      "source_id": "US-NY:debt_response:acce59dd5d1c",
+      "authority_type": "statute",
+      "citation": "N.Y. City Civ. Ct. Act § 402(a)–(b)",
+      "text": "(a) If the summons is personally delivered to the defendant within the city of New York, it shall require him to appear and answer within twenty days after its service. (b) If the summons is served by any means other than personal delivery to the defendant within the city of New York, it shall provide that the defendant must appear and answer within thirty days after proof of service is filed with the clerk.",
+      "text_sha256": "3db96ed69fb13a3094fbaaf2b5b926da6c52ebabf7c0840d899d2d03fea1962f",
+      "publisher_sha256": "5b1cfc4ca5164110b33098e1c4b18bd0e8c9bd2513b461887b077f5ce57f5e5e",
+      "retrieved_at": "2026-11-22T03:56:22.212405+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Civil Court of the City of New York",
+      "publisher_member": "New York City Civil Court. Personal delivery within the city and filing of proof in other cases stay distinct. Court guidance identifies these branches for covered debt cases."
+    },
+    "ec4849aaab21edae30f6b062dfb1ca": {
+      "source_id": "US-NY:justice_court_response:6e784ff7390d",
+      "authority_type": "statute",
+      "citation": "N.Y. Uniform Just. Ct. Act § 402(a)–(c)",
+      "text": "(a) If the summons is personally delivered to the defendant, it shall require him to appear and answer on a day not less than six nor more than thirty days after its service. (b) If the summons is served: 1. by delivery to a person, including an actual or statutory designee, other than the defendant; or 2. by publication; or 3. by any means other than personal delivery to the defendant, it shall provide that the defendant must appear and answer on a day not less than six nor more than thirty days after service is complete. (c) The specific return day of the summons shall be determined by rule, or, in the absence of rule, by inquiry of the court, and shall not be set forth in the summons until so ascertained by the plaintiff.",
+      "text_sha256": "269870691791fee73511619e65ea5944b4e5da64992057610c14fa2c054f35f6",
+      "publisher_sha256": "3c32c53856a001a8fbbfb330f4d4529329c452a657cf2520742cb2c5628eb855",
+      "retrieved_at": "2026-11-22T03:56:22.229649+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "New York Town and Village Justice Courts",
+      "publisher_member": "Town or village Justice Court return day within the statutory range, determined by rule or by the specific court."
     }
   },
   "fault_allocation": {

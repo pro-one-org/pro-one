@@ -403,6 +403,18 @@
         "retrieved_at": "2026-11-21T22:06:49.611701+00:00",
         "sha256": "f80068943efdb67eb6045a470ff494f5153605abcc8b530d3bfa2ad88d2c185c"
       }
+    },
+    "US-NE:consumer_agency:c32500d3e531": {
+      "category": "consumer_agency",
+      "title": "Neb. Rev. Stat. § 59-1608(1)–(2)",
+      "url": "https://nebraskalegislature.gov/laws/laws-index/chap59-full.html",
+      "locator": "Neb. Rev. Stat. § 59-1608(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:49:55.396641+00:00",
+        "sha256": "a4e1f9266b6085858fab8f14f2218f572f4f617ff7f4b6faaf7f2b0a779609e1"
+      }
     }
   },
   "court_directory": [
@@ -706,6 +718,18 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Nebraska Legislature statutory text, § 25-217(2)–(3); commencement defined in subsection (1)"
+    },
+    "96fdb7d8ad9edb9186dc7d29f9fc86": {
+      "source_id": "US-NE:consumer_agency:c32500d3e531",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 59-1608(1)–(2)",
+      "text": "(1) The Attorney General may bring an action in the name of the state against any person to restrain and prevent the doing of any act prohibited by the Consumer Protection Act. The prevailing party may, in the discretion of the court, recover the costs of such action including a reasonable attorney's fee. (2) The court may make such additional orders or judgments as may be necessary to restore to any person in interest any money or property, real or personal, which may have been acquired by means of any act prohibited in the Consumer Protection Act.",
+      "text_sha256": "745f4a2f44a4e3f9ebf3f3ad3de0bf3c26b66f72ad62b3aa1cb32f7b9d23b971",
+      "publisher_sha256": "a4e1f9266b6085858fab8f14f2218f572f4f617ff7f4b6faaf7f2b0a779609e1",
+      "retrieved_at": "2026-11-22T03:49:55.396641+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Nebraska Legislature, public injunction, costs and restitution under the Consumer Protection Act."
     }
   },
   "fault_allocation": {
