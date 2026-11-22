@@ -23,6 +23,17 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_maine_dated_response_is_scoped_and_review_only(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Maine", legal_area="civil_procedure",
+                               topics=["initial_response"], authority_status="current", authority_as_of="2026-06-01")
+        key, = provider.search(query)
+        self.assertIn("within 50 days after such service", provider.fetch(key).text)
+        self.assertFalse(provider.search(query.model_copy(update={"authority_as_of": "2026-11-21"})))
+        self.assertFalse(provider.search(query.model_copy(update={"state": "New Hampshire"})))
+        shell, = [row for row in coverage("US-ME")["action_shells"] if row["action_type"] == "answer"]
+        self.assertEqual((shell["readiness"], shell["execution"]), ("blocked", "disabled"))
+
     def test_washington_certified_pdf_binds_section_text_and_publisher_date(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Washington", legal_area="consumer",
@@ -86,6 +97,22 @@ class NationalCoverageTests(unittest.TestCase):
             self.assertEqual(evidence["currentness"], "historical")
             self.assertNotIn(topic, shell["procedure_evidence"])
             self.assertEqual((shell["readiness"], shell["execution"]), ("blocked", "disabled"))
+
+    def test_texas_debt_response_preserves_court_and_service_branches(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Texas", legal_area="consumer_debt", topics=["debt_response"],
+                               court="Texas Justice Court", authority_status="unresolved")
+        key, = provider.search(query)
+        text = provider.fetch(key).text
+        self.assertIn("14th day after the day the defendant was served", text)
+        self.assertIn("42nd day after the day the citation was issued", text)
+        self.assertFalse(provider.search(query.model_copy(update={"court": "Texas District Court"})))
+        self.assertFalse(provider.search(query.model_copy(update={"state": "New Mexico"})))
+        shell, = [row for row in coverage("US-TX")["action_shells"] if row["action_type"] == "answer"]
+        evidence, = shell["review_evidence"]["debt_response"]
+        self.assertEqual(evidence["court"], "Texas Justice Court")
+        self.assertNotIn("debt_response", shell["procedure_evidence"])
+        self.assertEqual((shell["readiness"], shell["execution"]), ("blocked", "disabled"))
 
     def test_minnesota_contract_pleading_retains_nominal_damages_qualification(self):
         provider = RetainedLegislativeResearch()
@@ -1145,6 +1172,8 @@ class NationalCoverageTests(unittest.TestCase):
         publisher_editions = {
             ("US-DC", date(2026, 4, 29)): "D.C. Council codified XML publication, current through April 29, 2026.",
             ("US-DE", date(2023, 1, 10)): "Court of Common Pleas Civil Rules. Current as of January 10, 2023.",
+            ("US-ME", date(2026, 6, 1)): "Maine Rules of Civil Procedure Only (without advisory notes), "
+                                       "as effective June 1, 2026.",
             ("US-WA", date(2024, 7, 12)): "Revised Code of Washington, certified July 12, 2024.",
             ("US-WI", date(2026, 11, 4)): "Published and certified",
             ("US-MI", date(2026, 11, 18)): "Michigan Supreme Court Rules Chapter 2.",

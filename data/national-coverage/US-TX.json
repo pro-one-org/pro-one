@@ -670,6 +670,66 @@
         "retrieved_at": "2026-11-22T03:08:04.437051+00:00",
         "sha256": "939fc9cc605fae555ab235a2d1a0e6e6125d6ae19c442afdc2922f10666d504b"
       }
+    },
+    "US-TX:debt_forum:8778c627a77c": {
+      "category": "debt_forum",
+      "title": "Tex. R. Civ. P. 500.3(b)",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "locator": "Tex. R. Civ. P. 500.3(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:03:09.364611+00:00",
+        "sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a"
+      }
+    },
+    "US-TX:debt_response:8a8dc5875c5e": {
+      "category": "debt_response",
+      "title": "Tex. R. Civ. P. 502.5(d)–(e) (Part V debt claims via Rule 500.3(b))",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "locator": "Tex. R. Civ. P. 502.5(d)–(e) (Part V debt claims via Rule 500.3(b))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:03:09.364611+00:00",
+        "sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a"
+      }
+    },
+    "US-TX:debt_pleading:fd2885196973": {
+      "category": "debt_pleading",
+      "title": "Tex. R. Civ. P. 508.2",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "locator": "Tex. R. Civ. P. 508.2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:03:09.364611+00:00",
+        "sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a"
+      }
+    },
+    "US-TX:debt_judgment_proof:4f424c522025": {
+      "category": "debt_judgment_proof",
+      "title": "Tex. R. Civ. P. 508.3(a), (b)(1)–(3)",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "locator": "Tex. R. Civ. P. 508.3(a), (b)(1)–(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:03:09.364611+00:00",
+        "sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a"
+      }
+    },
+    "US-TX:eviction:74ec6165b263": {
+      "category": "eviction",
+      "title": "Tex. S.B. 38, 89th Leg., R.S., ch. 960, §§ 17–18 (2025)",
+      "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00038F.HTM",
+      "locator": "Tex. S.B. 38, 89th Leg., R.S., ch. 960, §§ 17–18 (2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:18:27.728115+00:00",
+        "sha256": "75d3b367a1853848b2f9622d5dd8edddbc9470bc65c0ce9e4e73d6277e76681a"
+      }
     }
   },
   "court_directory": [
@@ -1181,6 +1241,72 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Texas Legislature Property Code; repair and notice conditions and tenant-caused exceptions"
+    },
+    "4a16ef478f31d6928db4011bfae441": {
+      "source_id": "US-TX:debt_forum:8778c627a77c",
+      "authority_type": "court_rule",
+      "citation": "Tex. R. Civ. P. 500.3(b)",
+      "text": "A debt claim case is a lawsuit brought to recover a debt by an assignee of a claim, a debt collector or collection agency, a financial institution, or a person or entity primarily engaged in the business of lending money at interest. The claim can be for no more than $20,000, excluding statutory interest and court costs but including attorney fees, if any. Debt claim cases in justice court are governed by Rules 500-507 and 508 of Part V of the Rules of Civil Procedure. To the extent of any conflict between Rule 508 and the rest of Part V, Rule 508 applies.",
+      "text_sha256": "21ea08375b1966561fca9d7c49a2dafd7c1a1d4e02d8ea0b1cea7ae5d8f2d06d",
+      "publisher_sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a",
+      "retrieved_at": "2026-11-20T18:03:09.364611+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Texas Justice Court",
+      "publisher_member": "Part V, Texas justice-court debt classification; Rule 508 controls conflicts with the otherwise applicable Rules 500–507."
+    },
+    "9bac9622f10f42ec4b46759760cae0": {
+      "source_id": "US-TX:debt_response:8a8dc5875c5e",
+      "authority_type": "court_rule",
+      "citation": "Tex. R. Civ. P. 502.5(d)–(e) (Part V debt claims via Rule 500.3(b))",
+      "text": "(d) Due Date. Unless the defendant is served by publication, the defendant’s answer is due by the end of the 14th day after the day the defendant was served with the citation and petition, but (1) if the 14th day is a Saturday, Sunday, or legal holiday, the answer is due on the next day that is not a Saturday, Sunday, or legal holiday; and (2) if the 14th day falls on a day during which the court is closed before 5:00 p.m., the answer is due on the court’s next business day. (e) Due Date When Defendant Served by Publication. If a defendant is served by publication, the defendant’s answer is due by the end of the 42nd day after the day the citation was issued, but (1) if the 42nd day is a Saturday, Sunday, or legal holiday, the answer is due on the next day that is not a Saturday, Sunday, or legal holiday; and (2) if the 42nd day falls on a day during which the court is closed before 5:00 p.m., the answer is due on the court’s next business day.",
+      "text_sha256": "983e63c7ac5c8eb092108863a40a642bf5f45e84aab92f5385bbe30c4004e5c6",
+      "publisher_sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a",
+      "retrieved_at": "2026-11-20T18:03:09.364611+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Texas Justice Court",
+      "publisher_member": "Justice-court timing applied to debt cases by Rule 500.3(b). Publication runs from citation issuance; the otherwise applicable branch runs from service. Both have court-closure provisions."
+    },
+    "ac6a3017817bb5e1966aabcebe6902": {
+      "source_id": "US-TX:debt_pleading:fd2885196973",
+      "authority_type": "court_rule",
+      "citation": "Tex. R. Civ. P. 508.2",
+      "text": "RULE 508.2. PETITION (a) Contents. In addition to the information required by Rule 502.2, a petition filed in a lawsuit governed by this rule must contain the following information: (1) Credit Accounts. In a claim based upon a credit card, revolving credit, or open account, the petition must state: (A) the account name or credit card name; (B) the account number (which may be masked); (C) the date of issue or origination of the account, if known; (D) the date of charge-off or breach of the account, if known; (E) the amount owed as of a date certain; and (F) whether the plaintiff seeks ongoing interest. (2) Personal and Business Loans. In a claim based upon a promissory note or other promise to pay a specific amount as of a date certain, the petition must state: (A) the date and amount of the original loan; (B) whether the repayment of the debt was accelerated, if known; (C) the date final payment was due; (D) the amount due as of the final payment date; (E) the amount owed as of a date certain; and (F) whether plaintiff seeks ongoing interest. (3) Ongoing Interest. If a plaintiff seeks ongoing interest, the petition must state: (A) the effective interest rate claimed; (B) whether the interest rate is based upon contract or statute; and (C) the dollar amount of interest claimed as of a date certain. (4) Assigned Debt. If the debt that is the subject of the claim has been assigned or transferred, the petition must state: (A) that the debt claim has been transferred or assigned; (B) the date of the transfer or assignment; (C) the name of any prior holders of the debt; and (D) the name or a description of the original creditor.",
+      "text_sha256": "d355941ced468c3803c9da04262e41dd3b035565b9e3a109ece86bf4342e0fff",
+      "publisher_sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a",
+      "retrieved_at": "2026-11-20T18:03:09.364611+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Texas Justice Court",
+      "publisher_member": "Justice-court debt petitions for credit accounts, promissory notes, other credit agreements, and assigned debt."
+    },
+    "470e70d1f134f01e073bae2d543752": {
+      "source_id": "US-TX:debt_judgment_proof:4f424c522025",
+      "authority_type": "court_rule",
+      "citation": "Tex. R. Civ. P. 508.3(a), (b)(1)–(3)",
+      "text": "RULE 508.3. DEFAULT JUDGMENT (a) Generally. If the defendant does not file an answer to a claim by the answer date or otherwise appear in the case, the judge must promptly render a default judgment upon the plaintiff’s proof of the amount of damages. A default judgment must comply with Rule 505.1. When a default judgment is signed, the clerk must comply with Rule 503.1(d) and immediately mail written notice of the judgment to the defendant at the address provided by the plaintiff. (b) Proof of the Amount of Damages. (1) Evidence Must Be Served or Submitted. Evidence of plaintiff ’s damages must either be attached to the petition and served on the defendant or submitted to the court after defendant’s failure to answer by the answer date. (2) Form of Evidence. Evidence of plaintiff ’s damages may be offered in a sworn statement or in live testimony. The evidence offered may include documentary evidence. (3) Establishment of the Amount of Damages. The amount of damages is established by evidence: (A) that the account or loan was issued to the defendant and the defendant is obligated to pay it; (B) that the account was closed or the defendant breached the terms of the account or loan agreement; (C) of the amount due on the account or loan as of a date certain after all payment credits and offsets have been applied; and (D) that the plaintiff owns the account or loan and, if applicable, how the plaintiff acquired the account or loan.",
+      "text_sha256": "78164d2feb704943047054d6a957f4b7c02115668eda43f1b1bdf3a8df5e630b",
+      "publisher_sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a",
+      "retrieved_at": "2026-11-20T18:03:09.364611+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Texas Justice Court",
+      "publisher_member": "Justice-court debt default, proof submission and proof of the amount of damages; excludes the separately enumerated sworn-document conditions."
+    },
+    "54d546dfb252ec367b64634091f41f": {
+      "source_id": "US-TX:eviction:74ec6165b263",
+      "authority_type": "statute",
+      "citation": "Tex. S.B. 38, 89th Leg., R.S., ch. 960, §§ 17–18 (2025)",
+      "text": "SECTION 17. The changes in law made by this Act apply only to an eviction suit in which the petition is filed on or after January 1, 2026. An eviction suit in which the petition is filed before January 1, 2026, is governed by the law as it existed immediately before January 1, 2026, and that law is continued in effect for that purpose. SECTION 18. (a) Except as provided by Subsection (b) of this section, this Act takes effect January 1, 2026. (b) Section 16 of this Act takes effect September 1, 2025.",
+      "text_sha256": "accfa41f81db49117b1b2fe9867a6a28ff18ab026cfcd81821c03186604e6d0d",
+      "publisher_sha256": "75d3b367a1853848b2f9622d5dd8edddbc9470bc65c0ce9e4e73d6277e76681a",
+      "retrieved_at": "2026-11-22T03:18:27.728115+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Texas 89th Legislature, Regular Session, enrolled S.B. 38",
+      "publisher_member": "Enrolled act, transition for eviction petitions filed before or on January 1, 2026, with a separate Section 16 effective date.",
+      "effective_from": "2026-01-01"
     }
   },
   "fault_allocation": {

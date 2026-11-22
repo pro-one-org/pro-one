@@ -743,6 +743,18 @@
         "retrieved_at": "2026-11-21T22:37:21.592720+00:00",
         "sha256": "610141c305c378f5988e482715c5419391fe23aa439b724d1733c469659ec428"
       }
+    },
+    "US-MI:debt_forum:50621075419c": {
+      "category": "debt_forum",
+      "title": "Mich. Comp. Laws § 600.8407(1)",
+      "url": "https://www.legislature.mi.gov/documents/mcl/pdf/mcl-600-8407.pdf",
+      "locator": "Mich. Comp. Laws § 600.8407(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:18:42.417085+00:00",
+        "sha256": "cae5582dcd005e848f0d7a7256d1aef05818ee0b1ff4af51d5042e81bae4b60f"
+      }
     }
   },
   "court_directory": [
@@ -1461,6 +1473,19 @@
       "decision_date": "2014-04-15",
       "opinion_role": "majority",
       "procedural_posture": "Construction subcontract dispute on review after a bench trial; the court reversed the rejection of the contractor’s contractual indemnity claim and remanded."
+    },
+    "65d78da0942ce8a4732406c603f50b": {
+      "source_id": "US-MI:debt_forum:50621075419c",
+      "authority_type": "statute",
+      "citation": "Mich. Comp. Laws § 600.8407(1)",
+      "text": "(1) A claim shall not be filed or prosecuted in the small claims division by an assignee of a claim or by a third party beneficiary under a third party beneficiary contract.",
+      "text_sha256": "f477180475ceedbd9f3a9140aa37f071c578a4930445ca717b6d37930fcaf7fe",
+      "publisher_sha256": "cae5582dcd005e848f0d7a7256d1aef05818ee0b1ff4af51d5042e81bae4b60f",
+      "retrieved_at": "2026-11-22T03:18:42.417085+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Michigan District Court, Small Claims Division",
+      "publisher_member": "Michigan Legislature, compiled through PA 114 of 2026, rendered November 19, 2026. Filing and prosecution restrictions for assignees and third-party beneficiaries in the small claims division."
     }
   },
   "fault_allocation": {

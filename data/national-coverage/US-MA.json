@@ -471,6 +471,42 @@
         "retrieved_at": "2026-11-22T03:08:04.000696+00:00",
         "sha256": "167232feedcbc8620f4cc0372a04d3f7a2de5b5300f93a2399df99a19cc47c16"
       }
+    },
+    "US-MA:debt_pleading:34b2c0949cc0": {
+      "category": "debt_pleading",
+      "title": "Mass. R. Civ. P. 8.1(a)–(c)",
+      "url": "https://www.mass.gov/rules-of-civil-procedure/civil-procedure-rule-81-special-requirements-for-certain-consumer-debts",
+      "locator": "Mass. R. Civ. P. 8.1(a)–(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:18:27.198985+00:00",
+        "sha256": "3c33297eb870d02c6cdf65707bd43de2048f98c14fc3a146b8f9c6e704b0de1f"
+      }
+    },
+    "US-MA:debt_judgment_proof:47419b804ada": {
+      "category": "debt_judgment_proof",
+      "title": "Mass. R. Civ. P. 55.1(a)–(c)",
+      "url": "https://www.mass.gov/rules-of-civil-procedure/civil-procedure-rule-551-special-requirements-for-defaults-and-default-judgments-for-certain-consumer-debts",
+      "locator": "Mass. R. Civ. P. 55.1(a)–(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:18:27.246917+00:00",
+        "sha256": "fc2cada51abd572cd2877e1b659303e338c45c189c7544691579beff9fa6d556"
+      }
+    },
+    "US-MA:debt_pleading:89148df80012": {
+      "category": "debt_pleading",
+      "title": "Mass. Unif. Small Claims R. 2(b)",
+      "url": "https://www.mass.gov/trial-court-rules/uniform-small-claims-rule-2-filing-a-statement-of-claim",
+      "locator": "Mass. Unif. Small Claims R. 2(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:18:27.318178+00:00",
+        "sha256": "6d70e6f8b76e85d390378e8727dcb45bd748e4aa321d1e58653c35c1522fb786"
+      }
     }
   },
   "court_directory": [
@@ -837,6 +873,45 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Massachusetts General Court; summary-process forum and writ provisions, subject to court-specific statutes and rules"
+    },
+    "e7e778a09d647f5be76c3bd5de0ee7": {
+      "source_id": "US-MA:debt_pleading:34b2c0949cc0",
+      "authority_type": "court_rule",
+      "citation": "Mass. R. Civ. P. 8.1(a)–(c)",
+      "text": "(a) Definitions As used in this rule, the following definitions shall apply: (1) “Action” means a proceeding where the plaintiff seeks to collect a debt incurred pursuant to a revolving credit agreement. (2) “Charge-off” means the treatment of a receivable balance as a loss or expense because payment is unlikely. (3) “Debt” means any obligation or alleged obligation to pay money arising out of a transaction in which the money, personal property, insurance, or services which are the subject of the transaction are primarily for personal, family, or household purposes. Debt shall not include obligations to pay money arising out of a loan secured by real property. (4) “Original creditor” means the person or entity first owed the debt. (5) “Revolving credit agreement” means an agreement pursuant to which the consumer may purchase, at retail, goods or services or merchandise certificates on credit from time to time and under the terms of which a finance charge is to be computed in relation to the consumer’s balance from time to time. (b) Special requirements In any action as defined in subdivision (a)(1) of this rule involving a debt as defined in (a)(3) , the plaintiff shall file simultaneously with the complaint the affidavits, documentation, and certification provided for in subdivisions (c)-(f) of this rule. The affidavits, documentation, and certification shall be served on the defendant with the complaint. (c) Affidavit regarding debt An affidavit disclosing the following information with particularity: (1) The name, position, and employer of the affiant; (2) The name of the current owner of the debt; (3) The name of the original creditor, including the name under which the original creditor did business with the defendant, if different; (4) For debt arising from a credit card sponsored or co-sponsored by a retailer, the name of the sponsoring or co-sponsoring retailer; (5) The last four digits of the account number(s) assigned by the original creditor; (6) The amount and date of the defendant’s last payment, if any, or a representation by the affiant that no payment has been made; (7) The date of charge-off; (8) The amount of the debt on the date of charge-off; (9) For the portion of the debt incurred after the date of charge-off, an itemization of the debt (broken down by principal, interest, fees, or other charges) and the method of calculating such principal, interest, fees, or other charges; (10) A chronological listing of the names of all prior owners of the debt and the date of each transfer of ownership of the debt, beginning with the original creditor; and (11) An attestation that the affiant personally reviewed records sufficient to establish the information requested in this subdivision (c).",
+      "text_sha256": "78e2145035bd1ff523e6db1eab675aaaee748630744a239a2bfff53959c6a38f",
+      "publisher_sha256": "3c33297eb870d02c6cdf65707bd43de2048f98c14fc3a146b8f9c6e704b0de1f",
+      "retrieved_at": "2026-11-22T03:18:27.198985+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Massachusetts courts governed by the Rules of Civil Procedure",
+      "publisher_member": "Defined revolving-credit collection actions; excludes real-property-secured loans. Remaining affidavits and certifications are addressed separately in subdivisions (d)–(f)."
+    },
+    "86ddf6e42944fdae3730affed3d96f": {
+      "source_id": "US-MA:debt_judgment_proof:47419b804ada",
+      "authority_type": "court_rule",
+      "citation": "Mass. R. Civ. P. 55.1(a)–(c)",
+      "text": "(a) Applicability In addition to the requirements of Rule 55 , the provisions of this rule shall apply to the entry of default for failure to appear or otherwise defend and to the entry of judgment after default in all actions subject to the requirements of Rule 8.1 . (b) Default (1) Affidavit required When requesting a default, or upon request of the clerk for the purpose of entering a default, counsel for the plaintiff shall sign, serve, and file an affidavit stating that (i) counsel has personally reviewed the documentation filed and served pursuant to Rule 8.1 ; (ii) the documentation meets all requirements of Rule 8.1(c)-(f) (with any exceptions specifically stated); and (iii) the documentation establishes the plaintiff’s entitlement to judgment in the amount claimed by the plaintiff. A self-represented plaintiff shall sign, serve, and file an affidavit with the same content. In entering a default, the clerk may rely upon the affidavit. (2) Non-entry of default If the plaintiff has not complied with the requirements of Rule 8.1 and subdivision (b)(1) of this rule, the clerk shall not enter a default against the defendant and shall so notify the parties. The court shall dismiss the complaint without prejudice on or after the 30th day after the date of notice by the clerk unless the plaintiff shows cause, with notice to the defendant, why the complaint should not be dismissed. (c) Judgment No default judgment against the defendant shall enter unless the clerk (if under Rule 55(b)(1) ) or court (if under Rule 55(b)(2) ) determines that the documentation filed and served by the plaintiff pursuant to Rule 8.1 and the affidavit pursuant to subdivision (b)(1) of this rule establish the plaintiff’s entitlement to judgment in the amount claimed by the plaintiff. In entering a default judgment, the clerk or court may rely upon the affidavit pursuant to subdivision (b)(1) of this rule.",
+      "text_sha256": "b20b361ca5d10984728d0938b00a7c649b65c1a50b572a7d8e1685622a3cdb71",
+      "publisher_sha256": "fc2cada51abd572cd2877e1b659303e338c45c189c7544691579beff9fa6d556",
+      "retrieved_at": "2026-11-22T03:18:27.246917+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Massachusetts courts governed by the Rules of Civil Procedure",
+      "publisher_member": "Default and judgment in Rule 8.1 actions. The 30-day provision runs from the clerk's notice of non-entry and concerns dismissal."
+    },
+    "4b88e7e2a8d16b3d1d6f0d061473ec": {
+      "source_id": "US-MA:debt_pleading:89148df80012",
+      "authority_type": "court_rule",
+      "citation": "Mass. Unif. Small Claims R. 2(b)",
+      "text": "(b) Additional requirements for plaintiffs in trade or commerce or pursuing assigned debt Any plaintiff pursuing a claim incurred in the course of plaintiff’s trade or commerce, or pursuing a claim for assigned debt, shall file along with the Statement of Small Claim form the Verification of Defendant’s Address form, certifying that he or she has verified the defendant’s mailing address in the manner set forth therein. The form need not be served on the defendant. Any such plaintiff shall include the following information in the description of claim in the Statement of Small Claim form when the claim is filed with the court: (1) The name of the original creditor (if different from plaintiff’s); (2) The last four digits of the account number assigned by the original creditor, if any; and (3) The amount and date of the defendant’s last payment, if any. If the plaintiff fails to comply with this section and the defendant does not appear at the scheduled trial, no default judgment shall be entered for the plaintiff and the claim shall be dismissed without prejudice.",
+      "text_sha256": "20f0e4056bd3be14f3f3fe7dad49bf30dff535f4d9c043772329ba0936487b7b",
+      "publisher_sha256": "6d70e6f8b76e85d390378e8727dcb45bd748e4aa321d1e58653c35c1522fb786",
+      "retrieved_at": "2026-11-22T03:18:27.318178+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Massachusetts small claims proceedings",
+      "publisher_member": "Small claims arising in a plaintiff's trade or commerce or involving assigned debt."
     }
   },
   "fault_allocation": {

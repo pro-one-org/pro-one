@@ -16,7 +16,7 @@ from app.jurisdictions import ROOT
 
 CERTIFIED_TYPES = {
     "US-WI": "statute", "US-MI": "court_rule", "US-IN": "court_rule", "US-DE": "court_rule", "US-DC": "statute",
-    "US-WA": "statute",
+    "US-WA": "statute", "US-ME": "court_rule",
 }
 WASHINGTON_RCW_ROOT = "https://lawfilesext.leg.wa.gov/law/RCWArchive/2026/pdf/"
 WASHINGTON_RCW_SECTIONS = {
@@ -92,6 +92,22 @@ DELAWARE_PDF_SPACING = {
     " th e Court": " the Court", " relief ,": " relief,", " third -party": " third-party",
     " deni ed": " denied", " th e averments": " the averments", " ord er": " order",
     " tri al": " trial", " cross -claim": " cross-claim", " a ffidavit": " affidavit",
+}
+MAINE_RULEBOOK_PATH = "text/mr_civ_p_only_2026-06-01.pdf"
+MAINE_RULEBOOK_DIGEST = "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0"
+MAINE_RULES_INDEX_DIGEST = "e153851c48b778afde11f331dc91ea49fa91a02ad0cc3cf038d5627126d45f01"
+MAINE_COMMENCEMENT = (12, "Except as otherwise provided in these rules,", None)
+MAINE_RULES = {
+    "3": MAINE_COMMENCEMENT,
+    "3(a)–(b) (service and return timing)": MAINE_COMMENCEMENT,
+    "4(c)(1) (mail acknowledgment timing)": (13, "If no acknowledgment of service under this paragraph",
+                                             "(2) By a sheriff"),
+    "4(d)(1)": (14, "(d) Summons: Personal Service.", "(2) Upon a minor"),
+    "12(a)": (45, "(a) When Presented.", "(b) How Presented."),
+}
+MAINE_PDF_SPACING = {
+    "usu al": "usual", "proces s,": "process,", "defendant ’s": "defendant’s",
+    "summons ,": "summons,", "party w ho": "party who", "cross -claim": "cross-claim",
 }
 
 
@@ -427,6 +443,43 @@ def delaware_common_pleas_basis(url, digest, path, citation, quote):
     return date(2023, 1, 10), f"{title}. Current as of {edition[0]}."
 
 
+@lru_cache(maxsize=1)
+def maine_rulebook_pages():
+    from pypdf import PdfReader
+
+    pages = PdfReader(BytesIO(retained_publisher_bytes(MAINE_RULEBOOK_DIGEST, "pdf")), strict=True).pages
+    cover = " ".join(pages[0].extract_text().split())
+    if not cover.startswith("Last reviewed and edited May 14, 2026 Includes amendments effective June 1, 2026 "
+                            "MAINE RULES OF CIVIL PROCEDURE "):
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    return {page: " ".join(pages[page].extract_text().split()) for page, *_ in MAINE_RULES.values()}
+
+
+def maine_rulebook_basis(url, digest, path, citation, quote):
+    prefix = "Me. R. Civ. P. "
+    spec = MAINE_RULES.get(citation.removeprefix(prefix))
+    if (not citation.startswith(prefix) or not spec
+            or url != "https://www.courts.maine.gov/rules/" + MAINE_RULEBOOK_PATH
+            or digest != MAINE_RULEBOOK_DIGEST or path != MAINE_RULES_INDEX_DIGEST):
+        raise ValueError("invalid_certified_publication")
+    title = "Maine Rules of Civil Procedure Only (without advisory notes)"
+    index_entry = f'<a href="{MAINE_RULEBOOK_PATH}">{title}</a> (as effective June 1, 2026)'
+    page, start, end = spec
+    body = maine_rulebook_pages()[page]
+    if retained_publication(path).count(index_entry) != 1 or body.count(start) != 1:
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    text = start + body.split(start, 1)[1]
+    if end:
+        text, boundary, _ = text.partition(end)
+        if not boundary:
+            raise ValueError("certified_excerpt_or_date_mismatch")
+    for split_word, printed_word in MAINE_PDF_SPACING.items():
+        text = text.replace(split_word, printed_word)
+    if text.strip() != quote:
+        raise ValueError("certified_excerpt_or_date_mismatch")
+    return date(2026, 6, 1), f"{title}, as effective June 1, 2026."
+
+
 def dc_code_text(node):
     if node is None:
         return ""
@@ -519,6 +572,8 @@ def certified_basis(scope, url, digest, path, citation, quote):
         return indiana_basis(url, digest, path, citation, quote)
     if scope == "US-DE":
         return delaware_common_pleas_basis(url, digest, path, citation, quote)
+    if scope == "US-ME":
+        return maine_rulebook_basis(url, digest, path, citation, quote)
     if scope == "US-DC":
         return dc_code_basis(url, digest, path, citation, quote)
     if scope == "US-WA":
