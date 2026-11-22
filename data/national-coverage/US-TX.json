@@ -646,6 +646,30 @@
         "retrieved_at": "2026-11-21T22:34:35.934965+00:00",
         "sha256": "37d9bfc7d1d7b8f2fcffd53219da8ff4b4293e89e205c352b484b0cdce814a22"
       }
+    },
+    "US-TX:eviction:7ecc7affb4a8": {
+      "category": "eviction",
+      "title": "Tex. Prop. Code § 24.004",
+      "url": "https://tcss.legis.texas.gov/resources/PR/pdf/PR.24.pdf",
+      "locator": "Tex. Prop. Code § 24.004",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:08:04.413193+00:00",
+        "sha256": "15cf4a5c017639f3e43eb6dd5b51e4646edda26558e35058cf509f016c3af056"
+      }
+    },
+    "US-TX:habitability:30f76be4f68a": {
+      "category": "habitability",
+      "title": "Tex. Prop. Code § 92.052",
+      "url": "https://tcss.legis.texas.gov/resources/PR/pdf/PR.92.pdf",
+      "locator": "Tex. Prop. Code § 92.052",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:08:04.437051+00:00",
+        "sha256": "939fc9cc605fae555ab235a2d1a0e6e6125d6ae19c442afdc2922f10666d504b"
+      }
     }
   },
   "court_directory": [
@@ -1132,6 +1156,31 @@
       "decision_date": "2020-07-14",
       "opinion_role": "majority",
       "procedural_posture": "Appeal from summary judgment in an automobile personal-injury case; the court affirmed on limitations after examining unexplained gaps in service efforts."
+    },
+    "22c5866825e84b706781031df1e55c": {
+      "source_id": "US-TX:eviction:7ecc7affb4a8",
+      "authority_type": "statute",
+      "citation": "Tex. Prop. Code § 24.004",
+      "text": "(a) Except as provided by Subsection (b), a justice court in the precinct in which the real property is located has jurisdiction in an eviction suit. Eviction suits include forcible entry and detainer and forcible detainer suits. A justice court has jurisdiction to issue a writ of possession under this chapter. (b) A justice court does not have jurisdiction in a forcible entry and detainer or forcible detainer suit and shall dismiss the suit if the defendant files a sworn statement alleging the suit is based on a deed executed in violation of Chapter 21A, Business & Commerce Code. (c) A justice court in which a petition is filed under Section 24.00505 must adjudicate the right to actual possession of the premises. The justice court may not adjudicate title to the premises. Counterclaims and the joinder of suits against third parties are not permitted in eviction suits. This subsection does not preclude a claim that may not be asserted under this subsection from being brought in a separate suit in a court of proper jurisdiction.",
+      "text_sha256": "c43547bc697fb824e1ed4f808c37f7aa0c1592d9f1dc49998e3f933477116052",
+      "publisher_sha256": "15cf4a5c017639f3e43eb6dd5b51e4646edda26558e35058cf509f016c3af056",
+      "retrieved_at": "2026-11-22T03:08:04.413193+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Texas Legislature Property Code; 2025 SB 38 § 17 applies the changes to petitions filed on or after January 1, 2026 and preserves prior law for earlier petitions",
+      "effective_from": "2026-01-01"
+    },
+    "3d9c9fca1480db3bc1d43a9ad28372": {
+      "source_id": "US-TX:habitability:30f76be4f68a",
+      "authority_type": "statute",
+      "citation": "Tex. Prop. Code § 92.052",
+      "text": "(a) A landlord shall make a diligent effort to repair or remedy a condition if: (1) the tenant specifies the condition in a notice to the person to whom or to the place where rent is normally paid; (2) the tenant is not delinquent in the payment of rent at the time notice is given; and (3) the condition: (A) materially affects the physical health or safety of an ordinary tenant; or (B) arises from the landlord’s failure to provide and maintain in good operating condition a device to supply hot water of a minimum temperature of 120 degrees Fahrenheit. (b) Unless the condition was caused by normal wear and tear, the landlord does not have a duty during the lease term or a renewal or extension to repair or remedy a condition caused by: (1) the tenant; (2) a lawful occupant in the tenant’s dwelling; (3) a member of the tenant’s family; or (4) a guest or invitee of the tenant. (c) This subchapter does not require the landlord: (1) to furnish utilities from a utility company if as a practical matter the utility lines of the company are not reasonably available; or (2) to furnish security guards. (d) The tenant’s notice under Subsection (a) must be in writing only if the tenant’s lease is in writing and requires written notice.",
+      "text_sha256": "686b7d5d7614616bfebaf9f94f8d4ea8f1712c2adc7ab4aec05c088c2c5ac662",
+      "publisher_sha256": "939fc9cc605fae555ab235a2d1a0e6e6125d6ae19c442afdc2922f10666d504b",
+      "retrieved_at": "2026-11-22T03:08:04.437051+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Texas Legislature Property Code; repair and notice conditions and tenant-caused exceptions"
     }
   },
   "fault_allocation": {

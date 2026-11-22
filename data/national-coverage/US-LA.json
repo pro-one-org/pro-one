@@ -434,6 +434,18 @@
         "retrieved_at": "2026-11-21T23:01:23.645761+00:00",
         "sha256": "9d16813805ba02c32ecd21c977e426f9c213ec786c5bbb945f1936541833e80d"
       }
+    },
+    "US-LA:general_contract_damages:e0ea54101f97": {
+      "category": "general_contract_damages",
+      "title": "La. Civ. Code art. 1997",
+      "url": "https://www.legis.la.gov/legis/Law.aspx?d=109251",
+      "locator": "La. Civ. Code art. 1997",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:05:44.077416+00:00",
+        "sha256": "c6875666098b801dcac0608f0f6b441ccb52171575acecc6b1b0f1d06c05564f"
+      }
     }
   },
   "court_directory": [
@@ -796,6 +808,19 @@
       "edition": "2026 Regular Session Act No. 36 enrolled text",
       "publisher_member": "Louisiana State Legislature, enrolled Act 36, page 3; bill history records signing and August 1 effective date",
       "effective_from": "2026-08-01"
+    },
+    "f775b9b289319db304cd1bdcb490f5": {
+      "source_id": "US-LA:general_contract_damages:e0ea54101f97",
+      "authority_type": "statute",
+      "citation": "La. Civ. Code art. 1997",
+      "text": "An obligor in bad faith is liable for all the damages, foreseeable or not, that are a direct consequence of his failure to perform.",
+      "text_sha256": "cc808c177b0e31ca89212b039de3dd633b43ee22d1882eb2c319f6fe63b15da8",
+      "publisher_sha256": "c6875666098b801dcac0608f0f6b441ccb52171575acecc6b1b0f1d06c05564f",
+      "retrieved_at": "2026-11-22T03:05:44.077416+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Louisiana State Legislature, bad-faith obligor and direct consequences",
+      "effective_from": "1985-01-01"
     }
   },
   "fault_allocation": {

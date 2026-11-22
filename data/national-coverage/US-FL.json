@@ -565,6 +565,30 @@
         "retrieved_at": "2026-11-21T22:20:29.573965+00:00",
         "sha256": "1abfeb3a26f54871ed635a4038cf4f0504bef9a51305d3adfda20996f9090161"
       }
+    },
+    "US-FL:eviction:a4e967b51172": {
+      "category": "eviction",
+      "title": "Fla. Stat. § 83.59(1)–(3) (2026 ed.)",
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&StatuteYear=2026&URL=0000-0099%2F0083%2FSections%2F0083.59.html",
+      "locator": "Fla. Stat. § 83.59(1)–(3) (2026 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:08:03.947264+00:00",
+        "sha256": "de0ee26dbb6dbe0cc90a682a4832d7d63081912564d74ed5259729c6061c94cd"
+      }
+    },
+    "US-FL:habitability:c7772a6f53bc": {
+      "category": "habitability",
+      "title": "Fla. Stat. § 83.51(1) (2026 ed.)",
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&StatuteYear=2026&URL=0000-0099%2F0083%2FSections%2F0083.51.html",
+      "locator": "Fla. Stat. § 83.51(1) (2026 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:08:03.931746+00:00",
+        "sha256": "d11e6575858ac4befe07525f48065aee977db2f13e7a83e1638fb07a9113393f"
+      }
     }
   },
   "court_directory": [
@@ -1008,6 +1032,32 @@
       "language": "en",
       "edition": "2026 Florida Statutes",
       "publisher_member": "Florida Senate 2026 statutes; waiver and partial-payment rules, including subsidized rent qualification"
+    },
+    "7a0a1a62dd43b2b19d34106284f6af": {
+      "source_id": "US-FL:eviction:a4e967b51172",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 83.59(1)–(3) (2026 ed.)",
+      "text": "(1) If the rental agreement is terminated and the tenant does not vacate the premises, the landlord may recover possession of the dwelling unit as provided in this section. (2) A landlord, the landlord’s attorney, or the landlord’s agent, applying for the removal of a tenant, shall file in the county court of the county where the premises are situated a complaint describing the dwelling unit and stating the facts that authorize its recovery. A landlord’s agent is not permitted to take any action other than the initial filing of the complaint, unless the landlord’s agent is an attorney. The landlord is entitled to the summary procedure provided in s. 51.011 , and the court shall advance the cause on the calendar. (3) The landlord shall not recover possession of a dwelling unit except: (a) In an action for possession under subsection (2) or other civil action in which the issue of right of possession is determined; (b) When the tenant has surrendered possession of the dwelling unit to the landlord; (c) When the tenant has abandoned the dwelling unit. In the absence of actual knowledge of abandonment, it shall be presumed that the tenant has abandoned the dwelling unit if he or she is absent from the premises for a period of time equal to one-half the time for periodic rental payments. However, this presumption does not apply if the rent is current or the tenant has notified the landlord, in writing, of an intended absence; or (d) When the last remaining tenant of a dwelling unit is deceased, personal property remains on the premises, rent is unpaid, at least 60 days have elapsed following the date of death, and the landlord has not been notified in writing of the existence of a probate estate or of the name and address of a personal representative. This paragraph does not apply to a dwelling unit used in connection with a federally administered or regulated housing program, including programs under s. 202, s. 221(d)(3) and (4), s. 236, or s. 8 of the National Housing Act, as amended.",
+      "text_sha256": "6741a77d6ec75fb7afbae86da74e3434d0fdcb6a98063b78c0ab934ae9e11db0",
+      "publisher_sha256": "de0ee26dbb6dbe0cc90a682a4832d7d63081912564d74ed5259729c6061c94cd",
+      "retrieved_at": "2026-11-22T03:08:03.947264+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2026 Florida Statutes",
+      "publisher_member": "Part II, Residential Tenancies; possession proceeding and statutory exceptions"
+    },
+    "b385825a14f5ee0f3564fc96669c2c": {
+      "source_id": "US-FL:habitability:c7772a6f53bc",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 83.51(1) (2026 ed.)",
+      "text": "(1) The landlord at all times during the tenancy shall: (a) Comply with the requirements of applicable building, housing, and health codes; or (b) Where there are no applicable building, housing, or health codes, maintain the roofs, windows, doors, floors, steps, porches, exterior walls, foundations, and all other structural components in good repair and capable of resisting normal forces and loads and the plumbing in reasonable working condition. The landlord, at commencement of the tenancy, must ensure that screens are installed in a reasonable condition. Thereafter, the landlord must repair damage to screens once annually, when necessary, until termination of the rental agreement. The landlord is not required to maintain a mobile home or other structure owned by the tenant. The landlord’s obligations under this subsection may be altered or modified in writing with respect to a single-family home or duplex.",
+      "text_sha256": "ac47693f06b430a76923497e82203f0572ba2366c0e586456734836d8e419298",
+      "publisher_sha256": "d11e6575858ac4befe07525f48065aee977db2f13e7a83e1638fb07a9113393f",
+      "retrieved_at": "2026-11-22T03:08:03.931746+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2026 Florida Statutes",
+      "publisher_member": "Part II, Residential Tenancies; maintenance and qualifications for single-family homes and duplexes"
     }
   },
   "fault_allocation": {

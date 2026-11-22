@@ -10,7 +10,7 @@ from pydantic import ValidationError
 
 from app.capabilities import ResearchMatter
 from app.national_certifications import certified_basis
-from app.coverage_audit import build, retained_observations
+from app.coverage_audit import build, retained_observations, state_baseline
 from app.coverage_health import check
 from app.jurisdictions import jurisdiction_id, possible_tribal_scope, registry, tribal_registry
 from app.main import app
@@ -200,8 +200,23 @@ class NationalCoverageTests(unittest.TestCase):
                                                                   "authority_as_of": "2026-11-21"})))
         complaint = next(shell for shell in coverage("US-LA")["action_shells"] if shell["action_type"] == "complaint")
         self.assertEqual(len(complaint["review_evidence"]["service_time_limit"]), 3)
+        fee_evidence, = [row for row in complaint["review_evidence"]["service_time_limit"]
+                         if row["citation"] == "La. Code Civ. Proc. art. 1201(D)–(F)"]
+        self.assertEqual(fee_evidence["effective_from"], "2026-08-01")
+        self.assertEqual(fee_evidence["currentness"], "unresolved")
         self.assertNotIn("service_time_limit", complaint["procedure_evidence"])
         self.assertEqual((complaint["readiness"], complaint["execution"]), ("blocked", "disabled"))
+
+    def test_baseline_separates_sale_of_goods_and_general_contract_damages(self):
+        damages = state_baseline()["contract.damages"]
+        by_category = damages["by_authority_category"]
+        self.assertIn("US-MO", by_category["contract_damages"]["with_passages"])
+        self.assertIn("US-MO", by_category["sale_price_recovery"]["with_passages"])
+        self.assertIn("US-WA", by_category["general_contract_damages"]["with_passages"])
+        category_passages = Counter()
+        for category in by_category.values():
+            category_passages.update(category["passages"])
+        self.assertEqual(category_passages, damages["passages"])
 
     def test_maryland_district_summons_versions_preserve_renewal_change(self):
         provider = RetainedLegislativeResearch()

@@ -555,6 +555,30 @@
         "retrieved_at": "2026-11-21T22:54:46.614804+00:00",
         "sha256": "a00e1d48297e45049699535c456e361c116cb3e104c3da8a20472d4348b8b604"
       }
+    },
+    "US-VA:eviction:c4ba442609a4": {
+      "category": "eviction",
+      "title": "Va. Code § 8.01-126(B) (possession and summons excerpt)",
+      "url": "https://law.lis.virginia.gov/vacode/title8.01/chapter3/section8.01-126/",
+      "locator": "Va. Code § 8.01-126(B) (possession and summons excerpt)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:08:03.992289+00:00",
+        "sha256": "a2507e49b0c85646eee8e7f4da3e04bd246306f1bdd0efe0b47a333a2633fb10"
+      }
+    },
+    "US-VA:habitability:88b3c0765191": {
+      "category": "habitability",
+      "title": "Va. Code § 55.1-1220(A)(1)–(4), (B)–(D)",
+      "url": "https://law.lis.virginia.gov/vacode/title55.1/chapter12/section55.1-1220/",
+      "locator": "Va. Code § 55.1-1220(A)(1)–(4), (B)–(D)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:08:04.120882+00:00",
+        "sha256": "7de899fa9983168c6c919295e177141814baabb862c3617481e96ecd1baecb67"
+      }
     }
   },
   "court_directory": [
@@ -955,6 +979,31 @@
       "decision_date": "2006-01-13",
       "opinion_role": "majority",
       "procedural_posture": "Appeal after jury verdict; affirmed in part, reversed in part and remanded for reconsideration of attorney fees."
+    },
+    "5fca5a5c50772096d7cbb7474c7a59": {
+      "source_id": "US-VA:eviction:c4ba442609a4",
+      "authority_type": "statute",
+      "citation": "Va. Code § 8.01-126(B) (possession and summons excerpt)",
+      "text": "B. In any case when possession of any house, land or tenement is unlawfully detained by the person in possession thereof, the landlord, his agent, attorney, or other person, entitled to the possession may present to a magistrate or a clerk or judge of a general district court a statement under oath of the facts which authorize the removal of the tenant or other person in possession, describing such premises; and thereupon such magistrate, clerk or judge shall issue his summons against the person or persons named in such affidavit. The process issued upon any such summons issued by a magistrate, clerk or judge may be served as provided in § 8.01-293 , 8.01-296 , or 8.01-299 . When issued by a magistrate it may be returned to and the case heard and determined by the judge of a general district court. If the summons for unlawful detainer is filed to terminate a tenancy pursuant to the Virginia Residential Landlord and Tenant Act (§ 55.1-1200 et seq.), the initial hearing on such summons shall occur as soon as practicable, but not more than 21 days from the date of filing. If the case cannot be heard within 21 days from the date of filing, the initial hearing shall be held as soon as practicable, but in no event later than 30 days after the date of the filing. If the plaintiff requests that the initial hearing be set on a date later than 21 days from the date of filing, the initial hearing shall be set on a date the plaintiff is available that is also available for the court. Such summons shall be served at least 10 days before the return day thereof.",
+      "text_sha256": "c072d92ccc2db6cc6cb372a7365f5e78c9e5b8015cabbd01c52000eee524762a",
+      "publisher_sha256": "a2507e49b0c85646eee8e7f4da3e04bd246306f1bdd0efe0b47a333a2633fb10",
+      "retrieved_at": "2026-11-22T03:08:03.992289+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Virginia LIS, version effective until July 1, 2027; excludes separately displayed future version",
+      "effective_until": "2027-07-01"
+    },
+    "e31a5ca3e9c5422a265e218b05cb23": {
+      "source_id": "US-VA:habitability:88b3c0765191",
+      "authority_type": "statute",
+      "citation": "Va. Code § 55.1-1220(A)(1)–(4), (B)–(D)",
+      "text": "A. The landlord shall: 1. Comply with the requirements of applicable building and housing codes materially affecting health and safety; 2. Make all repairs and do whatever is necessary to put and keep the premises in a fit and habitable condition; 3. Keep all common areas shared by two or more dwelling units of a multifamily premises in a clean and structurally safe condition; 4. Maintain in good and safe working order and condition all electrical, plumbing, sanitary, heating, ventilating, air-conditioning, and other facilities and appliances, including elevators, supplied or required to be supplied by him; […] B. The landlord shall perform the duties imposed by subsection A in accordance with law; however, the landlord shall only be liable for the tenant's actual damages proximately caused by the landlord's failure to exercise ordinary care. C. If the duty imposed by subdivision A 1 is greater than any duty imposed by any other subdivision of that subsection, the landlord's duty shall be determined by reference to subdivision A 1. D. The landlord and tenant may agree in writing that the tenant perform the landlord's duties specified in subdivisions A 3, 6, and 7 and also specified repairs, maintenance tasks, alterations, and remodeling, but only if the transaction is entered into in good faith and not for the purpose of evading the obligations of the landlord and if the agreement does not diminish or affect the obligation of the landlord to other tenants in the premises.",
+      "text_sha256": "e043e4846d9d72f3ab52f10c761bf201144bcf779a5804957c645da03f3a4ecf",
+      "publisher_sha256": "7de899fa9983168c6c919295e177141814baabb862c3617481e96ecd1baecb67",
+      "retrieved_at": "2026-11-22T03:08:04.120882+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Virginia LIS; core duty, damages, code priority and limitations on delegation"
     }
   },
   "fault_allocation": {

@@ -500,6 +500,30 @@
         "retrieved_at": "2026-11-21T17:20:51.918816+00:00",
         "sha256": "191d2eda87ab84e24a2338f82975c015019e7c55d7b34f18582469f75fdfb4c4"
       }
+    },
+    "US-OK:general_contract_damages:041c1c91475e": {
+      "category": "general_contract_damages",
+      "title": "Okla. Stat. tit. 23, § 23-21",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os23.pdf",
+      "locator": "Okla. Stat. tit. 23, § 23-21",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:38.843448+00:00",
+        "sha256": "2aa8239ae37628ca67b517a9a4ea35bd5d7c6c6c9a5d10891774875b0348c841"
+      }
+    },
+    "US-OK:general_contract_damages:06971e92c44c": {
+      "category": "general_contract_damages",
+      "title": "Okla. Stat. tit. 23, § 23-22",
+      "url": "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os23.pdf",
+      "locator": "Okla. Stat. tit. 23, § 23-22",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:38.843448+00:00",
+        "sha256": "2aa8239ae37628ca67b517a9a4ea35bd5d7c6c6c9a5d10891774875b0348c841"
+      }
     }
   },
   "court_directory": [
@@ -849,6 +873,30 @@
       "language": "en",
       "publisher_member": "Publisher PDF p. 70, Okla. Stat. tit. 12, § 139, statutory text",
       "effective_from": "2011-11-01"
+    },
+    "d7fa1965213178f6e1007bb9cb3419": {
+      "source_id": "US-OK:general_contract_damages:041c1c91475e",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 23, § 23-21",
+      "text": "For the breach of an obligation arising from contract, the measure of damages, except where otherwise expressly provided by this chapter, is the amount which will compensate the party aggrieved for all the detriment proximately caused thereby, or which, in the ordinary course of things, would be likely to result therefrom. No damages can be recovered for a breach of contract, which are not clearly ascertainable in both their nature and origin.",
+      "text_sha256": "a53c3c67c3a464da8bb780c35a9f8299f9dea727ebaf070bc2c3c928f3370511",
+      "publisher_sha256": "2aa8239ae37628ca67b517a9a4ea35bd5d7c6c6c9a5d10891774875b0348c841",
+      "retrieved_at": "2026-11-17T20:50:38.843448+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Oklahoma Legislature Title 23 publication; text followed separately by historic revision notation"
+    },
+    "37bfa370293a19768a8ce5c9bc2e05": {
+      "source_id": "US-OK:general_contract_damages:06971e92c44c",
+      "authority_type": "statute",
+      "citation": "Okla. Stat. tit. 23, § 23-22",
+      "text": "The detriment caused by the breach of an obligation to pay money only is deemed to be the amount due by the terms of the obligation, with interest thereon.",
+      "text_sha256": "01125b86cfb14b74f92d7a46764064bbcfb9f337aed4825c365dddc37d94af3d",
+      "publisher_sha256": "2aa8239ae37628ca67b517a9a4ea35bd5d7c6c6c9a5d10891774875b0348c841",
+      "retrieved_at": "2026-11-17T20:50:38.843448+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Oklahoma Legislature Title 23 publication; text followed separately by historic revision notation"
     }
   },
   "fault_allocation": {

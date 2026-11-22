@@ -511,6 +511,30 @@
         "retrieved_at": "2026-11-21T22:43:31.992315+00:00",
         "sha256": "8df806be2dbc4ef87173750931c20b3436816dc0f79b31c4a7e8447cfc5a81bc"
       }
+    },
+    "US-MN:habitability:fa18782a5bb3": {
+      "category": "habitability",
+      "title": "Minn. Stat. § 504B.161, subd. 1(a)(1)–(2) (2026 ed.)",
+      "url": "https://www.revisor.mn.gov/statutes/2026/cite/504B/pdf",
+      "locator": "Minn. Stat. § 504B.161, subd. 1(a)(1)–(2) (2026 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:08:06.058152+00:00",
+        "sha256": "f5368e9a2f9d4a37be26a60beb77c0e4725cb0fcba9d4152e787956707f4da11"
+      }
+    },
+    "US-MN:eviction:0276b76729e2": {
+      "category": "eviction",
+      "title": "Minn. Stat. § 504B.321, subd. 1 (2026 ed.)",
+      "url": "https://www.revisor.mn.gov/statutes/2026/cite/504B/pdf",
+      "locator": "Minn. Stat. § 504B.321, subd. 1 (2026 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:08:06.058152+00:00",
+        "sha256": "f5368e9a2f9d4a37be26a60beb77c0e4725cb0fcba9d4152e787956707f4da11"
+      }
     }
   },
   "court_directory": [
@@ -913,6 +937,32 @@
       "language": "en",
       "edition": "2026 Minnesota Statutes",
       "publisher_member": "Minnesota Revisor 2026 dated-version publication; discharged employees, written demand, payment and penalty conditions"
+    },
+    "589d5c6946b169ee5b46a873860bfc": {
+      "source_id": "US-MN:habitability:fa18782a5bb3",
+      "authority_type": "statute",
+      "citation": "Minn. Stat. § 504B.161, subd. 1(a)(1)–(2) (2026 ed.)",
+      "text": "(a) In every lease or license of residential premises, the landlord or licensor covenants: (1) that the premises and all common areas are fit for the use intended by the parties; (2) to keep the premises and all common areas in reasonable repair during the term of the lease or license, including services and conditions listed in section 504B.381, subdivision 1, and extermination of insects, rodents, vermin, or other pests on the premises, except when the disrepair has been caused by the willful, malicious, or irresponsible conduct of the tenant or licensee or a person under the direction or control of the tenant or licensee;",
+      "text_sha256": "b696b90b6f12b7f7fafcc8b981a96d449a8165d5dfef0371e272e56c05071964",
+      "publisher_sha256": "f5368e9a2f9d4a37be26a60beb77c0e4725cb0fcba9d4152e787956707f4da11",
+      "retrieved_at": "2026-11-22T03:08:06.058152+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Minnesota Statutes 2026, Chapter 504B",
+      "publisher_member": "Residential fitness, repair and common areas, including tenant-caused disrepair qualification"
+    },
+    "ebf6b0260360c1163b1de13aece26a": {
+      "source_id": "US-MN:eviction:0276b76729e2",
+      "authority_type": "statute",
+      "citation": "Minn. Stat. § 504B.321, subd. 1 (2026 ed.)",
+      "text": "(a) To bring an eviction action, the person complaining shall file a complaint with the court, stating the full name and date of birth of the person against whom the complaint is made, unless it is not known, describing the premises of which possession is claimed, stating the facts which authorize the recovery of possession, and asking for recovery thereof. (b) The lack of the full name and date of birth of the person against whom the complaint is made does not deprive the court of jurisdiction or make the complaint invalid. (c) The appearance shall be not less than seven nor more than 14 days from the day of issuing the summons, except as provided by subdivision 2. (d) If applicable, the person filing a complaint must attach a copy of the written notice described in subdivision 1a. The court shall dismiss an action without prejudice for failure to provide a notice as described in subdivision 1a and grant an expungement of the eviction case court file.",
+      "text_sha256": "6eb4ee94659c78914128746e2de73cb2dbcc2a6063f2dc5cf3925a8706bd614c",
+      "publisher_sha256": "f5368e9a2f9d4a37be26a60beb77c0e4725cb0fcba9d4152e787956707f4da11",
+      "retrieved_at": "2026-11-22T03:08:06.058152+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Minnesota Statutes 2026, Chapter 504B",
+      "publisher_member": "Eviction complaint, summons and notice attachment; subdivisions 1a and 2 remain separate"
     }
   },
   "fault_allocation": {

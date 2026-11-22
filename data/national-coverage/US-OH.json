@@ -536,6 +536,18 @@
         "retrieved_at": "2026-11-21T22:23:11.580663+00:00",
         "sha256": "a22b37b9796de55b2daf3f7fc252168b971856c10d84cc7868f5545d65aa6c43"
       }
+    },
+    "US-OH:eviction:aee34b631026": {
+      "category": "eviction",
+      "title": "Ohio Rev. Code § 1923.02(A)(1)–(2)",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-1923.02",
+      "locator": "Ohio Rev. Code § 1923.02(A)(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:08:05.873230+00:00",
+        "sha256": "c8d0c6a4d9ac8698a04f7154817352ab11796fa56f8b77aeb2cbac995c52fba3"
+      }
     }
   },
   "court_directory": [
@@ -1036,6 +1048,19 @@
       "language": "en",
       "publisher_member": "Ohio Laws Chapter 1923; pre-action notice, delivery, required residential warning and statutory exceptions",
       "effective_from": "2007-10-18"
+    },
+    "c6757e5e9d4b8f6d1f1d0c89422c50": {
+      "source_id": "US-OH:eviction:aee34b631026",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 1923.02(A)(1)–(2)",
+      "text": "(A) Proceedings under this chapter may be had as follows: (1) Against tenants or manufactured home park residents holding over their terms; (2) Against tenants or manufactured home park residents in possession under an oral tenancy, who are in default in the payment of rent as provided in division (B) of this section;",
+      "text_sha256": "1fee9d119e7d2642f67d081ac7f2e1e54a95946f1e78068d1f3a77aef6cd0ecb",
+      "publisher_sha256": "c8d0c6a4d9ac8698a04f7154817352ab11796fa56f8b77aeb2cbac995c52fba3",
+      "retrieved_at": "2026-11-22T03:08:05.873230+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Ohio Laws, selected tenancy and oral-tenancy grounds; (B) supplies the referenced qualification",
+      "effective_from": "2023-10-03"
     }
   },
   "fault_allocation": {

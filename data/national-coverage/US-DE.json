@@ -515,6 +515,30 @@
         "retrieved_at": "2026-11-20T23:04:36.889247+00:00",
         "sha256": "89f788cd80dae047959e9cc98e2a6fdf83c4ec7d51fc339198f9c2fd7f1fad7e"
       }
+    },
+    "US-DE:contract_breach:dcff13824b58": {
+      "category": "contract_breach",
+      "title": "VLIW Tech., LLC v. Hewlett-Packard Co., 840 A.2d 606, 612 (Del. 2003)",
+      "url": "https://courts.delaware.gov/Opinions/Download.aspx?id=37120",
+      "locator": "VLIW Tech., LLC v. Hewlett-Packard Co., 840 A.2d 606, 612 (Del. 2003)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:10:54.912695+00:00",
+        "sha256": "d653dba13347b5cf88829d9c4fbfba5ea0b3701809b6e4a2de938292d5b2db0b"
+      }
+    },
+    "US-DE:general_contract_damages:c8f36e76d5aa": {
+      "category": "general_contract_damages",
+      "title": "Duncan v. Theratx, Inc., 775 A.2d 1019, 1022 (Del. 2001)",
+      "url": "https://courts.delaware.gov/Opinions/Download.aspx?id=21360",
+      "locator": "Duncan v. Theratx, Inc., 775 A.2d 1019, 1022 (Del. 2001)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:10:54.916767+00:00",
+        "sha256": "e44e474a41015c23225d67f882db46357ff040de09ec06f9a21b9220373427e5"
+      }
     }
   },
   "court_directory": [
@@ -948,6 +972,40 @@
       "publisher_path": "cef6dd44e36af0920ab0fb259f0eac247d7390a857853b4d19ce5de3ec674120",
       "edition": "Court of Common Pleas Civil Rules. Current as of January 10, 2023.",
       "publisher_member": "Court of Common Pleas civil rules PDF p. 6, Rule 4(j)"
+    },
+    "2816e69e56f45864e5e881827eba90": {
+      "source_id": "US-DE:contract_breach:dcff13824b58",
+      "authority_type": "opinion",
+      "citation": "VLIW Tech., LLC v. Hewlett-Packard Co., 840 A.2d 606, 612 (Del. 2003)",
+      "text": "In order to survive a motion to dismiss for failure to state a breach of contract claim, the plaintiff must demonstrate: first, the existence of the contract, whether express or implied; second, the breach of an obligation imposed by that contract; and third, the resultant damage to the plaintiff.",
+      "text_sha256": "528a901b72be9f79ab38212e9e839e4576568094156b2a894a4711c338fb7a94",
+      "publisher_sha256": "d653dba13347b5cf88829d9c4fbfba5ea0b3701809b6e4a2de938292d5b2db0b",
+      "retrieved_at": "2026-11-22T03:10:54.912695+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "December 19, 2003 en banc opinion",
+      "court": "Supreme Court of Delaware",
+      "decision_date": "2003-12-19",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissal of licensing-agreement claims under Rule 12(b)(6); reversed and remanded.",
+      "publisher_member": "Slip opinion pages 10–11, breach-of-contract pleading"
+    },
+    "ced19a76464ff726cd3539cd00abdf": {
+      "source_id": "US-DE:general_contract_damages:c8f36e76d5aa",
+      "authority_type": "opinion",
+      "citation": "Duncan v. Theratx, Inc., 775 A.2d 1019, 1022 (Del. 2001)",
+      "text": "Expectation damages thus require the breaching promisor to compensate the promisee for the promisee’s reasonable expectation of the value of the breached contract, and, hence, what the promisee lost.",
+      "text_sha256": "6a8fc484ea03a34f56251e2c4042724af090d50361996d353fbdcdc00892dcb1",
+      "publisher_sha256": "e44e474a41015c23225d67f882db46357ff040de09ec06f9a21b9220373427e5",
+      "retrieved_at": "2026-11-22T03:10:54.916767+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "June 1, 2001 certified-question opinion",
+      "court": "Supreme Court of Delaware",
+      "decision_date": "2001-06-01",
+      "opinion_role": "majority",
+      "procedural_posture": "Answer to a certified question from the Eleventh Circuit about damages for a suspension of stock registration.",
+      "publisher_member": "General expectation principle in a certified-question opinion; fact-specific computation addressed separately"
     }
   },
   "fault_allocation": {

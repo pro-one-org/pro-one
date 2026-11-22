@@ -1,5 +1,5 @@
 """Reproducible offline acquisition, health and gap reports for the national catalog."""
-from collections import Counter
+from collections import Counter, defaultdict
 from pathlib import Path
 
 from app.jurisdictions import ROOT, registry
@@ -52,10 +52,21 @@ def state_baseline():
         row = coverage(scope)
         for key, cell in row["cells"].items():
             report = domains.setdefault(key, {"passages": Counter(), "capability_statuses": Counter(), "coverage_depth": Counter(),
-                                               "with_passages": [], "without_passages": []})
+                                               "with_passages": [], "without_passages": [], "by_authority_category": {}})
             selectors = set(cell.get("passage_selectors", ()))
+            by_category = defaultdict(Counter)
             for selector in selectors:
-                report["passages"][row["passages"][selector]["currentness"]] += 1
+                passage = row["passages"][selector]
+                currentness = passage["currentness"]
+                category = row["sources"][passage["source_id"]]["category"]
+                report["passages"][currentness] += 1
+                by_category[category][currentness] += 1
+            for category, counts in sorted(by_category.items()):
+                category_report = report["by_authority_category"].setdefault(
+                    category, {"passages": Counter(), "with_passages": []}
+                )
+                category_report["passages"].update(counts)
+                category_report["with_passages"].append(scope)
             report["capability_statuses"][cell["status"]] += 1
             report["coverage_depth"][cell["coverage_depth"]] += 1
             report["with_passages" if selectors else "without_passages"].append(scope)

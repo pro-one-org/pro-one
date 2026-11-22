@@ -459,6 +459,18 @@
         "retrieved_at": "2026-11-20T15:21:04.563685+00:00",
         "sha256": "72ab1b0cc8114df583b30bd3f102a62835834ea8479e069b57a619491a74fa1e"
       }
+    },
+    "US-MA:eviction:76e8450d02a3": {
+      "category": "eviction",
+      "title": "Mass. Gen. Laws ch. 239, § 2",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleIII/Chapter239/Section2",
+      "locator": "Mass. Gen. Laws ch. 239, § 2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:08:04.000696+00:00",
+        "sha256": "167232feedcbc8620f4cc0372a04d3f7a2de5b5300f93a2399df99a19cc47c16"
+      }
     }
   },
   "court_directory": [
@@ -813,6 +825,18 @@
       "retrieved_at": "2026-11-20T15:21:04.563685+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "27f5b7797fae74fc7276b35f297863": {
+      "source_id": "US-MA:eviction:76e8450d02a3",
+      "authority_type": "statute",
+      "citation": "Mass. Gen. Laws ch. 239, § 2",
+      "text": "Such person may bring an action in the superior court in the county in which the land lies if the plaintiff seeks money damages and there is no reasonable likelihood that recovery by the plaintiff will be less than or equal to $25,000, or such other amount as is ordered from time to time by the supreme judicial court. Where multiple damages are allowed by law, the amount of single damages claimed shall control. Such person may bring an action in the district court in the judicial district in which the land lies. Such person may bring the action by a writ in the form of an original summons to the defendant to answer to the claim of the plaintiff that the defendant is in possession of the land or tenements in question, describing them, which he holds unlawfully against the right of the plaintiff, and, if rent and use and occupation is claimed, that the defendant owed rent and use and occupation in the amount stated; but, subject to the approval of the supreme judicial court, the judge of the housing court of the city of Boston shall determine the form of the writ in the actions brought in his court. Failure to claim rent and use and occupation in the action shall not bar a subsequent action therefor. The defendant named in a summary process summons and complaint shall not include any minors, and any such minors' names so included shall be expunged from any court record and electronic docket entry.",
+      "text_sha256": "45c20761286b4f32f95411b6be8ea5a3dbedfd6ad09e79bf057bbb81253bcf38",
+      "publisher_sha256": "167232feedcbc8620f4cc0372a04d3f7a2de5b5300f93a2399df99a19cc47c16",
+      "retrieved_at": "2026-11-22T03:08:04.000696+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Massachusetts General Court; summary-process forum and writ provisions, subject to court-specific statutes and rules"
     }
   },
   "fault_allocation": {

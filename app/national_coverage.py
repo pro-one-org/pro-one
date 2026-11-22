@@ -136,6 +136,8 @@ def action_shells(scope):
             "passage_selector": selector, "source_id": passage["source_id"],
             "citation": passage["citation"], "court": passage.get("court"),
             "currentness": passage["currentness"], "current_as_of": passage.get("current_as_of"),
+            "effective_from": passage.get("effective_from"), "effective_until": passage.get("effective_until"),
+            "edition": passage.get("edition"),
         })
     return [{
         "id": f"{scope[3:].lower()}_{kind}_reference", "jurisdiction": scope, "version": record["version"],

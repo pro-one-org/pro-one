@@ -449,6 +449,18 @@
         "retrieved_at": "2026-11-22T03:00:50.081863+00:00",
         "sha256": "a5044ff38b43bd0119f6d7254bae484455fcf97ade3fd32118e5b99658def037"
       }
+    },
+    "US-MO:contract_breach:82a4df75489f": {
+      "category": "contract_breach",
+      "title": "CBAM, LLC v. Alps Acquisitions, LLC, No. ED113496, slip op. at 18 (Mo. Ct. App. May 26, 2026)",
+      "url": "https://www.courts.mo.gov/file/ED/Opinion_ED113496.pdf",
+      "locator": "CBAM, LLC v. Alps Acquisitions, LLC, No. ED113496, slip op. at 18 (Mo. Ct. App. May 26, 2026)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:05:43.958913+00:00",
+        "sha256": "d6da300d8eacbc7ec8a819976b4ff409e55332923d507e190c68a0943a4bfb3a"
+      }
     }
   },
   "court_directory": [
@@ -816,6 +828,23 @@
       "edition": "March 5, 2008 circuit rules publication",
       "court": "Missouri 42nd Judicial Circuit",
       "publisher_member": "Printed page 6; local extension under Rule 54.21"
+    },
+    "a7ac64a23784a2fe565818b5dbeb32": {
+      "source_id": "US-MO:contract_breach:82a4df75489f",
+      "authority_type": "opinion",
+      "citation": "CBAM, LLC v. Alps Acquisitions, LLC, No. ED113496, slip op. at 18 (Mo. Ct. App. May 26, 2026)",
+      "text": "In an action for breach of contract, the plaintiff must establish: (1) the existence and terms of a contract; (2) the plaintiff’s performance or tender of performance under the contract; (3) the defendant’s breach of the contract; and (4) damages suffered by the plaintiff. TNT Amusements, Inc. v. BFC Enters., Inc., 613 S.W.3d 403, 408 (Mo. App. E.D. 2020).",
+      "text_sha256": "d1d6e31613b47cee87745f8a16276efc7c40bd7142f1ec638b0b45e3bbd3561d",
+      "publisher_sha256": "d6da300d8eacbc7ec8a819976b4ff409e55332923d507e190c68a0943a4bfb3a",
+      "retrieved_at": "2026-11-22T03:05:43.958913+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "May 26, 2026 appellate opinion",
+      "court": "Missouri Court of Appeals, Eastern District",
+      "decision_date": "2026-05-26",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal after bench trial on a failed real-estate sale; affirmed, with contractual attorney fees awarded on appeal.",
+      "publisher_member": "Slip opinion page 18; general contract elements in a land-sale dispute"
     }
   },
   "fault_allocation": {

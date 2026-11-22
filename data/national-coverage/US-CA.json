@@ -624,6 +624,42 @@
         "retrieved_at": "2026-11-21T22:06:50.432753+00:00",
         "sha256": "19a66fe2850232588e685a2f622e519d4e7602dd42c14ac893995d4cda387d34"
       }
+    },
+    "US-CA:eviction:d893051fb450": {
+      "category": "eviction",
+      "title": "Cal. Code Civ. Proc. § 1161(1)",
+      "url": "https://downloads.leginfo.legislature.ca.gov/pubinfo_2025.zip",
+      "locator": "Cal. Code Civ. Proc. § 1161(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:06:30.120888+00:00",
+        "sha256": "31034691a5dc7e589a7b8f23e5d8302a6f92005f1f5ed91132bf2cf1acb90668"
+      }
+    },
+    "US-CA:general_contract_damages:77e199ca9a35": {
+      "category": "general_contract_damages",
+      "title": "Cal. Civ. Code § 3301",
+      "url": "https://downloads.leginfo.legislature.ca.gov/pubinfo_2025.zip",
+      "locator": "Cal. Civ. Code § 3301",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:06:31.517787+00:00",
+        "sha256": "4ed8a3f20c445632dd832a06691e5b09cbb359eb237634c527c15a22343bd772"
+      }
+    },
+    "US-CA:habitability:2118dc4e13e9": {
+      "category": "habitability",
+      "title": "Cal. Civ. Code § 1941.1(a)(1)–(4) (excerpt)",
+      "url": "https://downloads.leginfo.legislature.ca.gov/pubinfo_2025.zip",
+      "locator": "Cal. Civ. Code § 1941.1(a)(1)–(4) (excerpt)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:06:32.928975+00:00",
+        "sha256": "2ac915cf98ff43a8df521bb5aee356f2ab5214020ef966f0d018081772da02e2"
+      }
     }
   },
   "court_directory": [
@@ -1170,6 +1206,56 @@
       "edition": "California Rules of Court, 2026 web publication",
       "court": "California superior courts governed by the California Rules of Court",
       "publisher_member": "California Judicial Branch 2026 Rules of Court, Rule 3.110(e)–(f), extensions and order to show cause"
+    },
+    "4ee19279e94d6b9e2241e53c6a6f0c": {
+      "source_id": "US-CA:eviction:d893051fb450",
+      "authority_type": "statute",
+      "citation": "Cal. Code Civ. Proc. § 1161(1)",
+      "text": "A tenant of real property, for a term less than life, or the executor or administrator of the tenant’s estate heretofore qualified and now acting or hereafter to be qualified and act, is guilty of unlawful detainer: 1. When the tenant continues in possession, in person or by subtenant, of the property, or any part thereof, after the expiration of the term for which it is let to the tenant; provided the expiration is of a nondefault nature however brought about without the permission of the landlord, or the successor in estate of the landlord, if applicable; including the case where the person to be removed became the occupant of the premises as a servant, employee, agent, or licensee and the relation of master and servant, or employer and employee, or principal and agent, or licensor and licensee, has been lawfully terminated or the time fixed for occupancy by the agreement between the parties has expired; but nothing in this subdivision shall be construed as preventing the removal of the occupant in any other lawful manner; but in case of a tenancy at will, it shall first be terminated by notice, as prescribed in the Civil Code.",
+      "text_sha256": "66f77f9c220b48658361e7f82177185783f8d360ab29dd8b9114b85ad1056302",
+      "publisher_sha256": "31034691a5dc7e589a7b8f23e5d8302a6f92005f1f5ed91132bf2cf1acb90668",
+      "retrieved_at": "2026-11-22T03:06:30.120888+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "LAW_SECTION_TBL_4680.lob",
+      "effective_from": "2025-02-01",
+      "publisher_archive_etag": "\"4d06606a-6605e05841b00\"",
+      "publisher_section_id": "CCP1161.20242876",
+      "publisher_history": "Amended (as added by Stats. 2020, Ch. 37, Sec. 16) by Stats. 2024, Ch. 287, Sec. 6.   (SB 611)   Effective January 1, 2025.   Operative February 1, 2025, by its own provisions.",
+      "edition": "California Legislative Counsel PUBINFO archive, modified November 16, 2026"
+    },
+    "e6b06c9fd50a64202cc2405851a287": {
+      "source_id": "US-CA:general_contract_damages:77e199ca9a35",
+      "authority_type": "statute",
+      "citation": "Cal. Civ. Code § 3301",
+      "text": "No damages can be recovered for a breach of contract which are not clearly ascertainable in both their nature and origin.",
+      "text_sha256": "877638545820efaaa09b9960997f5fc537dee16c55a5ea2b92a944bf13c574c3",
+      "publisher_sha256": "4ed8a3f20c445632dd832a06691e5b09cbb359eb237634c527c15a22343bd772",
+      "retrieved_at": "2026-11-22T03:06:31.517787+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "LAW_SECTION_TBL_24420.lob",
+      "publisher_archive_etag": "\"4d06606a-6605e05841b00\"",
+      "publisher_section_id": "CIV3301.1872",
+      "publisher_history": "Enacted 1872.",
+      "edition": "California Legislative Counsel PUBINFO archive, modified November 16, 2026"
+    },
+    "7287d3f3d7104e590edc033eb1093e": {
+      "source_id": "US-CA:habitability:2118dc4e13e9",
+      "authority_type": "statute",
+      "citation": "Cal. Civ. Code § 1941.1(a)(1)–(4) (excerpt)",
+      "text": "(a) A dwelling shall be deemed untenantable for purposes of Section 1941 if it substantially lacks any of the following affirmative standard characteristics or is a residential unit described in Section 17920.3 or 17920.10 of the Health and Safety Code: (1) Effective waterproofing and weather protection of roof and exterior walls, including unbroken windows and doors. (2) Plumbing or gas facilities that conformed to applicable law in effect at the time of installation, maintained in good working order. (3) A water supply approved under applicable law that is under the control of the tenant, capable of producing hot and cold running water, or a system that is under the control of the landlord, that produces hot and cold running water, furnished to appropriate fixtures, and connected to a sewage disposal system approved under applicable law. (4) Heating facilities that conformed with applicable law at the time of installation, maintained in good working order.",
+      "text_sha256": "07a8f9df6db59523aef44a2369df0a6c6b0fadb0795259a58f7d42001bbf6791",
+      "publisher_sha256": "2ac915cf98ff43a8df521bb5aee356f2ab5214020ef966f0d018081772da02e2",
+      "retrieved_at": "2026-11-22T03:06:32.928975+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "LAW_SECTION_TBL_24491.lob",
+      "effective_from": "2026-01-01",
+      "publisher_archive_etag": "\"4d06606a-6605e05841b00\"",
+      "publisher_section_id": "CIV1941.1.20253421",
+      "publisher_history": "Amended by Stats. 2025, Ch. 342, Sec. 1.   (AB 628)   Effective January 1, 2026.",
+      "edition": "California Legislative Counsel PUBINFO archive, modified November 16, 2026"
     }
   },
   "fault_allocation": {
