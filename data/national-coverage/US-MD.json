@@ -477,6 +477,30 @@
         "retrieved_at": "2026-11-22T03:30:44.467774+00:00",
         "sha256": "26f9393c1a43cc8fcc38b73379eea94af9786b7aecbebdb18139b5b78c0c16b7"
       }
+    },
+    "US-MD:labor_agency:71d644b0d839": {
+      "category": "labor_agency",
+      "title": "Md. Code, Lab. & Empl. § 3-507.1(a)–(c)",
+      "url": "https://mgaleg.maryland.gov/2026RS/Statute_Web/gle/3-507.1.pdf",
+      "locator": "Md. Code, Lab. & Empl. § 3-507.1(a)–(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:40:08.037084+00:00",
+        "sha256": "8e3066add50223b421735377f20904784a24a6758a2241417ddb738716766596"
+      }
+    },
+    "US-MD:wage_enforcement:26f890a78296": {
+      "category": "wage_enforcement",
+      "title": "Md. Code, Lab. & Empl. § 3-507.2(a)–(b)",
+      "url": "https://mgaleg.maryland.gov/2026RS/Statute_Web/gle/3-507.2.pdf",
+      "locator": "Md. Code, Lab. & Empl. § 3-507.2(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:40:08.037084+00:00",
+        "sha256": "8a8651aca348fefe60014c745434049d2f5af0658bbebac4daa21c1b51210bd7"
+      }
     }
   },
   "court_directory": [
@@ -882,6 +906,30 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Maryland General Assembly 2026 Regular Session statutory publication, injunction, seven-day notice and court relief."
+    },
+    "757e02835908553aa0e3c866d72962": {
+      "source_id": "US-MD:labor_agency:71d644b0d839",
+      "authority_type": "statute",
+      "citation": "Md. Code, Lab. & Empl. § 3-507.1(a)–(c)",
+      "text": "(a) On receipt of a complaint for failure to pay wages that do not exceed $5,000, the Commissioner shall: (1) send a copy of the complaint to the employer alleged to have failed to pay wages; and (2) require a written response to the complaint within 15 days. (b) (1) The Commissioner: (i) shall review the complaint and any response to it; and (ii) may investigate the claim. (2) On the basis of the review and any investigation, the Commissioner may: (i) issue an order to pay wages under subsection (c) of this section if the Commissioner determines that this subtitle has been violated; or (ii) dismiss the claim. (c) (1) The Commissioner may issue an order to pay wages that: (i) describes the alleged violation; (ii) directs payment of wages to the complainant; and (iii) if appropriate, orders the payment of interest at the rate of 5% per year accruing from the date the wages are owed. (2) The Commissioner shall send the order to pay wages to the complainant and to the employer at the employer’s last known business address by both regular mail and certified mail, return receipt requested. (3) Within 30 days after receipt of the order to pay wages, the employer may request a de novo administrative hearing, which shall be conducted in accordance with Title 10, Subtitle 2 of the State Government Article. (4) On receipt of a request for a hearing, the Commissioner shall schedule a hearing. (5) If a hearing is not requested, the order to pay wages shall become a final order of the Commissioner. (6) (i) If a petition for review is not filed within 30 days of the issuance of the final order, the Commissioner may proceed in District Court of the county where the employer resides or has a place of business to enforce payment. (ii) In a proceeding under this subsection, the Commissioner is entitled to judgment in the amount of the order to pay wages and any interest due on a showing that: 1. the order to pay wages and interest, if any, was assessed against the employer; 2. no appeal is pending; 3. the ordered wages and interest, if any, are wholly or partly unpaid; and 4. the employer was duly served with a copy of the order to pay wages and interest, if any, in accordance with this section.",
+      "text_sha256": "4e55bf05659465f1887bbb692624b7858ee4decb6d94fa90871bfc3b7016b8c9",
+      "publisher_sha256": "8e3066add50223b421735377f20904784a24a6758a2241417ddb738716766596",
+      "retrieved_at": "2026-11-22T03:40:08.037084+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Maryland General Assembly 2026 Regular Session publication. Commissioner’s complaint, determination and de novo hearing process for qualifying amounts."
+    },
+    "cf3f0593bc04b7668aacf0252ddcf0": {
+      "source_id": "US-MD:wage_enforcement:26f890a78296",
+      "authority_type": "statute",
+      "citation": "Md. Code, Lab. & Empl. § 3-507.2(a)–(b)",
+      "text": "(a) Notwithstanding any remedy available under § 3–507 of this subtitle, if an employer fails to pay an employee in accordance with § 3–502 or § 3–505 of this subtitle, after 2 weeks have elapsed from the date on which the employer is required to have paid the wages, the employee may bring an action against the employer to recover the unpaid wages. (b) If, in an action under subsection (a) of this section, a court finds that an employer withheld the wage of an employee in violation of this subtitle and not as a result of a bona fide dispute, the court may award the employee an amount not exceeding 3 times the wage, and reasonable counsel fees and other costs.",
+      "text_sha256": "ff4558e5d12787da9b160ea665260aa31a2a3f9550879bfe953d2a017a3ce309",
+      "publisher_sha256": "8a8651aca348fefe60014c745434049d2f5af0658bbebac4daa21c1b51210bd7",
+      "retrieved_at": "2026-11-22T03:40:08.037084+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Maryland General Assembly 2026 Regular Session publication. Private recovery for specified wage-payment violations, and enhanced relief when no bona fide dispute exists."
     }
   },
   "fault_allocation": {

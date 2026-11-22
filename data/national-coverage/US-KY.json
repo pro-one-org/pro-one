@@ -418,6 +418,30 @@
         "retrieved_at": "2026-11-21T23:06:14.327449+00:00",
         "sha256": "8d57ba92763199e8114245634ab6050821caa088f5ddce1df741b5af5525aa57"
       }
+    },
+    "US-KY:consumer_agency:0250955d3708": {
+      "category": "consumer_agency",
+      "title": "Ky. Rev. Stat. § 367.190",
+      "url": "https://apps.legislature.ky.gov/LAW/STATUTES/statute.aspx?id=34919",
+      "locator": "Ky. Rev. Stat. § 367.190",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:38:54.253024+00:00",
+        "sha256": "c9ab79a22fdb4ac464b8bb4c0cbb7e684554863e78b4982e6a1246f7bc55906c"
+      }
+    },
+    "US-KY:labor_agency:9acf1d52a75c": {
+      "category": "labor_agency",
+      "title": "Ky. Rev. Stat. § 337.385(4)",
+      "url": "https://apps.legislature.ky.gov/law/Statutes/statute.aspx?id=55338",
+      "locator": "Ky. Rev. Stat. § 337.385(4)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:40:08.039985+00:00",
+        "sha256": "2ece3377951fcd848779a7f62958ec6d9f31a42fa627bf71318b999f14dff797"
+      }
     }
   },
   "court_directory": [
@@ -779,6 +803,30 @@
       "language": "en",
       "publisher_member": "Kentucky General Assembly, nonresident service through Secretary of State; mailing and deemed service on return",
       "effective_from": "2024-07-15"
+    },
+    "5e545a40c966d11ae677dd9aa389c2": {
+      "source_id": "US-KY:consumer_agency:0250955d3708",
+      "authority_type": "statute",
+      "citation": "Ky. Rev. Stat. § 367.190",
+      "text": "(1) Whenever the Attorney General has reason to believe that any person is using, has used, or is about to use any method, act or practice declared by KRS 367.170 to be unlawful, and that proceedings would be in the public interest, he may immediately move in the name of the Commonwealth in a Circuit Court for a restraining order or temporary or permanent injunction to prohibit the use of such method, act or practice. The action may be brought in the Circuit Court of the county in which such person resides or h as his principal place of business or in the Circuit Court of the county in which the method, act or practice declared by KRS 367.170 to be unlawful has been committed or is about to be committed; or with consent of the parties may be brought in the Franklin Circuit Court. (2) Upon application of the Attorney General, a restraining order shall be granted whenever it reasonably appears that any person will suffer immediate harm, loss or injury from a method, act or practice prohibited by KRS 367.170. If the defendant moves for the dissolution of a restraining order issued under this section, the court shall hold a hearing within five (5) business days of the date of service of the defendant's motion to dissolve, unless a delay in hearing the cause is requested by, or otherwise caused by the defendant. If such a hearing is not held within five (5) business days, the restraining order will automatically be dissolved. (3) In order to obtain a temporary or permanent injunction, it shall not be necessary to allege or prove that an adequate remedy at law does not exist. Further, it shall not be necessary to allege or prove that irreparable injury, loss or damage will result if the injunctive relief is denied.",
+      "text_sha256": "cd5f88448bf1962e2bef813acee184ee3a7814ead3b6987f37a2b8c58372af7e",
+      "publisher_sha256": "c9ab79a22fdb4ac464b8bb4c0cbb7e684554863e78b4982e6a1246f7bc55906c",
+      "retrieved_at": "2026-11-22T03:38:54.253024+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Kentucky Legislature, public restraining orders and injunctions, including expedited hearing and its exception."
+    },
+    "7e8d16471c8745d26ee390414b8f1d": {
+      "source_id": "US-KY:labor_agency:9acf1d52a75c",
+      "authority_type": "statute",
+      "citation": "Ky. Rev. Stat. § 337.385(4)",
+      "text": "(4) At the written request of any employee paid less than the amount to which he or she is entitled under the provisions of KRS 337.020 to 337.285, the commissioner may take an assignment of such wage claim in trust for the assigning employee and may bring any legal action necessary to collect such claim, and the employer shall be required to pay the costs and such reasonable attorney's fees as may be allowed by the court. The commissioner in case of suit shall have power to join various claimants against the same employer in one (1) action.",
+      "text_sha256": "ac44fe2bed8553093b6c9ba85c61d572e12e67fe8519aa3e109d6db816b11a7c",
+      "publisher_sha256": "2ece3377951fcd848779a7f62958ec6d9f31a42fa627bf71318b999f14dff797",
+      "retrieved_at": "2026-11-22T03:40:08.039985+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Kentucky Legislature, optional assignment in trust at employee’s written request under specified wage statutes."
     }
   },
   "fault_allocation": {

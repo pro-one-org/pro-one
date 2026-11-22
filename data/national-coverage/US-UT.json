@@ -456,6 +456,18 @@
         "retrieved_at": "2026-11-21T22:57:51.044597+00:00",
         "sha256": "5823e4a53f0e6f569a22cfedf96bf610ae0c4719ad9e9014f6bd8da2361fa9f9"
       }
+    },
+    "US-UT:consumer_agency:144240d1c4d8": {
+      "category": "consumer_agency",
+      "title": "Utah Code § 13-11-17(1)",
+      "url": "https://le.utah.gov/xcode/Title13/Chapter11/C13-11_1800010118000101.pdf",
+      "locator": "Utah Code § 13-11-17(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:38:54.326741+00:00",
+        "sha256": "63da97de17e1d164fee13d7ea2d36331c6d43a09848d7f7a7edf2e9c070bc4ee"
+      }
     }
   },
   "court_directory": [
@@ -832,6 +844,18 @@
       "language": "en",
       "effective_from": "2023-11-01",
       "publisher_member": "Utah Courts legacy rules publication, version effective November 1, 2023"
+    },
+    "f97fc5f5d08d5798981722381d69bf": {
+      "source_id": "US-UT:consumer_agency:144240d1c4d8",
+      "authority_type": "statute",
+      "citation": "Utah Code § 13-11-17(1)",
+      "text": "(1) The division may bring an action in a court with jurisdiction to: (a) obtain a declaratory judgment that an act or practice violates this chapter; (b) enjoin, in accordance with the principles of equity, a supplier that has violated, is violating, or is otherwise likely to violate this chapter; (c) order disgorgement of money or any thing of value received in violation of this chapter; (d) recover, for each violation, restitution for actual damages, or obtain relief under Subsection (2)(b), on behalf of impacted consumers; and (e) obtain a fine in an amount determined after considering the factors in Subsection (6).",
+      "text_sha256": "7e366fda9ecfbe3fcb645aae12e016c3f73f02dde40314935aeb648e3effa7fd",
+      "publisher_sha256": "63da97de17e1d164fee13d7ea2d36331c6d43a09848d7f7a7edf2e9c070bc4ee",
+      "retrieved_at": "2026-11-22T03:38:54.326741+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Utah Legislature, authority of the division to pursue identified public remedies."
     }
   },
   "fault_allocation": {

@@ -1014,6 +1014,18 @@
         "retrieved_at": "2026-11-21T22:15:24.015211+00:00",
         "sha256": "46b5426884546975d997291fd55bbc874cf81b62f0a08e584aebee3dba4e6591"
       }
+    },
+    "US-WI:consumer_agency:b0a0fda960e9": {
+      "category": "consumer_agency",
+      "title": "Wis. Stat. § 100.18(11)(d)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/100/18",
+      "locator": "Wis. Stat. § 100.18(11)(d)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:38:54.344148+00:00",
+        "sha256": "c5ea40eb8ef1d61f44275f1815ad064395956018ca4e2ccb2efe714107016e0d"
+      }
     }
   },
   "court_directory": [
@@ -2016,6 +2028,21 @@
       "language": "en",
       "current_as_of": "2026-11-04",
       "publisher_path": "/statutes/statutes/801/02/2",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "d648491021c25de8fe7f94a2e54a17": {
+      "source_id": "US-WI:consumer_agency:b0a0fda960e9",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 100.18(11)(d)",
+      "text": "The department or the department of justice, after consulting with the department, or any district attorney, upon informing the department, may commence an action in circuit court in the name of the state to restrain by temporary or permanent injunction any violation of this section. The court may in its discretion, prior to entry of final judgment, make such orders or judgments as may be necessary to restore to any person any pecuniary loss suffered because of the acts or practices involved in the action, provided proof thereof is submitted to the satisfaction of the court.",
+      "text_sha256": "03af8bd0c94ca5ee5d20f8e658ea938a55efff1c67a92a3e5c632d5188b21192",
+      "publisher_sha256": "c5ea40eb8ef1d61f44275f1815ad064395956018ca4e2ccb2efe714107016e0d",
+      "retrieved_at": "2026-11-22T03:38:54.344148+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "publisher_member": "Wisconsin Legislative Reference Bureau, injunction and restitution authority of specified public officials.",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/100/18/11/d",
       "edition": "Wisconsin Statutes certified November 4, 2026"
     }
   },

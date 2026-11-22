@@ -31,8 +31,20 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertIn("within 50 days after such service", provider.fetch(key).text)
         self.assertFalse(provider.search(query.model_copy(update={"authority_as_of": "2026-11-21"})))
         self.assertFalse(provider.search(query.model_copy(update={"state": "New Hampshire"})))
+        filing, = provider.search(query.model_copy(update={"topics": ["electronic_filing"]}))
+        self.assertIn("unless the court provides otherwise through an administrative order", provider.fetch(filing).text)
         shell, = [row for row in coverage("US-ME")["action_shells"] if row["action_type"] == "answer"]
         self.assertEqual((shell["readiness"], shell["execution"]), ("blocked", "disabled"))
+
+    def test_arizona_wage_agency_claim_has_distinct_topic_and_scope(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Arizona", legal_area="employment",
+                               topics=["wage_agency_claim"], authority_status="unresolved")
+        key, = provider.search(query)
+        document = provider.fetch(key)
+        self.assertIn("does not exceed $12,000", document.text)
+        self.assertIn("within one year of the accrual of such claim", document.text)
+        self.assertNotIn(key, provider.search(query.model_copy(update={"topics": ["wage_payment"]})))
 
     def test_washington_certified_pdf_binds_section_text_and_publisher_date(self):
         provider = RetainedLegislativeResearch()

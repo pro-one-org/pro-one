@@ -573,6 +573,30 @@
         "retrieved_at": "2026-11-21T22:48:23.537074+00:00",
         "sha256": "16a31770d5018a405ed16e685c94adf71ddd74e6a50156a0919466125dd6c8a5"
       }
+    },
+    "US-CO:consumer_agency:cd4f7b6f9f38": {
+      "category": "consumer_agency",
+      "title": "Colo. Rev. Stat. § 6-1-110(1)",
+      "url": "https://olls.info/crs/crs2026-title-06.htm",
+      "locator": "Colo. Rev. Stat. § 6-1-110(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:38:54.292285+00:00",
+        "sha256": "c2019a08bc8ece69a2a12816232916e7adbc448f0c8e426f66ca92d64278904a"
+      }
+    },
+    "US-CO:labor_agency:2d8026f15e04": {
+      "category": "labor_agency",
+      "title": "Colo. Rev. Stat. § 8-4-111(1)(a)",
+      "url": "https://olls.info/crs/crs2026-title-08.htm",
+      "locator": "Colo. Rev. Stat. § 8-4-111(1)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:40:08.148436+00:00",
+        "sha256": "80be0b305002b6f76bd65e1225c1cc0a20793a40d2e9e636279d943e5cf2d6be"
+      }
     }
   },
   "court_directory": [
@@ -1084,6 +1108,30 @@
       "edition": "Colorado Revised Statutes 2026",
       "publisher_member": "Court determination and invitee, licensee, trespasser and landowner definitions",
       "effective_from": "2022-04-07"
+    },
+    "cf9427445c327769921b2cfbd8d971": {
+      "source_id": "US-CO:consumer_agency:cd4f7b6f9f38",
+      "authority_type": "statute",
+      "citation": "Colo. Rev. Stat. § 6-1-110(1)",
+      "text": "(1) Whenever the attorney general or a district attorney has cause to believe that a person has engaged in or is engaging in a deceptive trade practice described in this article 1, the attorney general or district attorney may apply for and obtain, in an action in the appropriate district court of this state, a temporary restraining order or injunction, or both, pursuant to the Colorado rules of civil procedure, prohibiting the person from continuing the practices, or engaging therein, or doing any act in furtherance thereof. The court may make such orders or judgments as may be necessary to prevent the use or employment by the person of any such deceptive trade practice or that may be necessary to completely compensate or restore to the original position of any person injured by means of any such practice or to prevent any unjust enrichment by any person through the use or employment of a deceptive trade practice.",
+      "text_sha256": "6799c1726bdfed68cfeb610355571e85e6e9007973e507d96cceba92f24e1811",
+      "publisher_sha256": "c2019a08bc8ece69a2a12816232916e7adbc448f0c8e426f66ca92d64278904a",
+      "retrieved_at": "2026-11-22T03:38:54.292285+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Colorado Office of Legislative Legal Services, 2026 Title 6, public action and restitution."
+    },
+    "ae8fcd51a3ea2366368694bd8f9284": {
+      "source_id": "US-CO:labor_agency:2d8026f15e04",
+      "authority_type": "statute",
+      "citation": "Colo. Rev. Stat. § 8-4-111(1)(a)",
+      "text": "(1) (a) (I) It is the duty of the director to: (A) Inquire diligently for any violation of this article 4; (B) Institute the actions for penalties or fines provided for in this article 4 in such cases as the director deems proper; and (C) Enforce generally the provisions of this article 4. (II) The director may establish an administrative procedure to receive complaints and adjudicate claims for nonpayment of wages or compensation of: (A) Seven thousand five hundred dollars or less for claims filed through June 30, 2026; (B) Thirteen thousand dollars or less for claims filed from July 1, 2026, through December 31, 2027; and (C) An amount that the director specifies in rule by January 1, 2028, and by rule for every other year thereafter. Such amount must be equal to the amount in the previous calendar year increased by one thousand dollars or a higher amount if such higher amount is necessary to adjust for inflation. Inflation is measured by the annual percentage change in the United States department of labor's bureau of labor statistics consumer price index, or a successor index, for Denver-Aurora-Lakewood for all items paid for by urban consumers. (III) The procedures established pursuant to subsection (1)(a)(II) of this section may include claims of employees where no interruption of the employer-employee relationship has occurred. (IV) The penalties and fines established by section 8-4-109 (3) apply to actions instituted by the director or adjudicated after a complaint was received under this article 4 when no interruption of the employer-employee relationship has occurred.",
+      "text_sha256": "ae57aa5f37a88ad0ba2dcde2d733cda126b5ffa63a93fdaf6cbc88f55773ef5b",
+      "publisher_sha256": "80be0b305002b6f76bd65e1225c1cc0a20793a40d2e9e636279d943e5cf2d6be",
+      "retrieved_at": "2026-11-22T03:40:08.148436+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Colorado Office of Legislative Legal Services 2026 Title 8. Differing claim caps by filing period, including later rulemaking."
     }
   },
   "fault_allocation": {

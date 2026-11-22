@@ -551,6 +551,54 @@
         "retrieved_at": "2026-11-22T03:30:44.903455+00:00",
         "sha256": "b81f4923f76fbce2866c12ab7ffdfd63c56068dc3613e648e9ece575c5f55d0a"
       }
+    },
+    "US-ME:summons_contents:c1a8171ee39c": {
+      "category": "summons_contents",
+      "title": "Me. R. Civ. P. 4(a)",
+      "url": "https://www.courts.maine.gov/rules/text/mr_civ_p_only_2026-06-01.pdf",
+      "locator": "Me. R. Civ. P. 4(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
+        "sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0"
+      }
+    },
+    "US-ME:summons_issuance:1d703e2bf34c": {
+      "category": "summons_issuance",
+      "title": "Me. R. Civ. P. 4(b)",
+      "url": "https://www.courts.maine.gov/rules/text/mr_civ_p_only_2026-06-01.pdf",
+      "locator": "Me. R. Civ. P. 4(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
+        "sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0"
+      }
+    },
+    "US-ME:e_filing:ed2e64c10cf4": {
+      "category": "e_filing",
+      "title": "Me. R. Civ. P. 5(k)",
+      "url": "https://www.courts.maine.gov/rules/text/mr_civ_p_only_2026-06-01.pdf",
+      "locator": "Me. R. Civ. P. 5(k)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
+        "sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0"
+      }
+    },
+    "US-ME:pleading_contents:91e84a4c1506": {
+      "category": "pleading_contents",
+      "title": "Me. R. Civ. P. 8(a)",
+      "url": "https://www.courts.maine.gov/rules/text/mr_civ_p_only_2026-06-01.pdf",
+      "locator": "Me. R. Civ. P. 8(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
+        "sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0"
+      }
     }
   },
   "court_directory": [
@@ -1033,6 +1081,70 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Maine Legislature section PDF, public action, notice requirements and affidavit exception. Scope and currentness require further review."
+    },
+    "4c11a6b696580024de7c4496ecf4c2": {
+      "source_id": "US-ME:summons_contents:c1a8171ee39c",
+      "authority_type": "court_rule",
+      "citation": "Me. R. Civ. P. 4(a)",
+      "text": "(a) Summons: Form. The summons shall bear the signature or facsimile signature of the clerk; be under the seal of the court; contain the name of the court and the names of the parties; be directed to the defendant; state the name and address, including email address, of the plaintiff’s attorney and the time within which these rules require the defendant to appear and defend; and shall notify the defendant that in case of failure to do so judgment by default may be rendered against the defendant for the relief demanded in the complaint.",
+      "text_sha256": "300f1ea6c6e5bd4975b6c23cd6370d1cfd859bd066c31f1688ea7417dfa580b5",
+      "publisher_sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0",
+      "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "edition": "Maine Rules of Civil Procedure Only (without advisory notes), as effective June 1, 2026.",
+      "court": "Maine courts governed by the Civil Rules, subject to Rule 81",
+      "current_as_of": "2026-06-01",
+      "publisher_path": "e153851c48b778afde11f331dc91ea49fa91a02ad0cc3cf038d5627126d45f01",
+      "publisher_member": "Summons content; distinguish issuance and service."
+    },
+    "ce7b38e3fb93b8b4391a1f4473f635": {
+      "source_id": "US-ME:summons_issuance:1d703e2bf34c",
+      "authority_type": "court_rule",
+      "citation": "Me. R. Civ. P. 4(b)",
+      "text": "(b) Same: Issuance. The summons may be procured in blank from the clerk and shall be filled out by the plaintiff’s attorney as provided in subdivision (a) of this rule. The plaintiff’s attorney shall deliver to the person who is to make service the original summons upon which to make return of service and a copy of the summons, complaint, and notice regarding Electronic Service for service upon the defendant. The notice regarding Electronic Service shall instruct parties who are represented by counsel that they are subject to the requirements of Electronic Service under Rule 5; shall notify unrepresented parties of their right to opt in to Electronic Service, including the technological requirements to opt in; and shall provide them with instructions for opting in.",
+      "text_sha256": "146fbf80d4705984069e4a297bda737948b99348bd95400bbde9c4b71fa999ae",
+      "publisher_sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0",
+      "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "edition": "Maine Rules of Civil Procedure Only (without advisory notes), as effective June 1, 2026.",
+      "court": "Maine courts governed by the Civil Rules, subject to Rule 81",
+      "current_as_of": "2026-06-01",
+      "publisher_path": "e153851c48b778afde11f331dc91ea49fa91a02ad0cc3cf038d5627126d45f01",
+      "publisher_member": "General plaintiff-attorney issuance text; Electronic Service notice requirements."
+    },
+    "a950dab8370d547c8053effca55c8d": {
+      "source_id": "US-ME:e_filing:ed2e64c10cf4",
+      "authority_type": "court_rule",
+      "citation": "Me. R. Civ. P. 5(k)",
+      "text": "(k) Methods of Filing. (1) “Paper filing” means filing a paper document in a clerk’s office. When paper filing is required, no filing by electronic means is permitted without express authorization in an administrative order or other court order. (2) The term “electronic filing” means electronic transmission of a document in electronic form to the court through the electronic filing system. When using the court’s electronic filing system, the filing party must comply with the requirements of the Maine Rules of Electronic Court Systems unless the court provides otherwise through an administrative order.",
+      "text_sha256": "1c42d87e075f54a3674168df680b77ee6b71872471b33419a2001220c4587498",
+      "publisher_sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0",
+      "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "edition": "Maine Rules of Civil Procedure Only (without advisory notes), as effective June 1, 2026.",
+      "court": "Maine courts governed by the Civil Rules, subject to Rule 81",
+      "current_as_of": "2026-06-01",
+      "publisher_path": "e153851c48b778afde11f331dc91ea49fa91a02ad0cc3cf038d5627126d45f01",
+      "publisher_member": "Methods of filing, subject to court authorization and Maine Rules of Electronic Court Systems."
+    },
+    "6f54572a7247d29c1469afcc72c71f": {
+      "source_id": "US-ME:pleading_contents:91e84a4c1506",
+      "authority_type": "court_rule",
+      "citation": "Me. R. Civ. P. 8(a)",
+      "text": "(a) Claims for Relief. A pleading which sets forth a claim for relief, whether an original claim, counterclaim, cross-claim, or third-party claim, shall contain (1) a short and plain statement of the claim showing that the pleader is entitled to relief, and (2) a demand for judgment for the relief which the pleader seeks. Relief in the alternative or of several different types may be demanded.",
+      "text_sha256": "db534e9dfaca12b63ef2426e373dcb55db7b3680a7f005c11e5a1b3a5928a7cc",
+      "publisher_sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0",
+      "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "edition": "Maine Rules of Civil Procedure Only (without advisory notes), as effective June 1, 2026.",
+      "court": "Maine courts governed by the Civil Rules, subject to Rule 81",
+      "current_as_of": "2026-06-01",
+      "publisher_path": "e153851c48b778afde11f331dc91ea49fa91a02ad0cc3cf038d5627126d45f01",
+      "publisher_member": "Claims for relief, including counterclaims and cross-claims."
     }
   },
   "fault_allocation": {

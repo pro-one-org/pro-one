@@ -473,6 +473,18 @@
         "retrieved_at": "2026-11-22T03:18:27.238140+00:00",
         "sha256": "6dd1e90bdfe4ac013a25a116e32a75eb11feaa7777acedc675307aa9156b6135"
       }
+    },
+    "US-NY:labor_agency:e00847f0321c": {
+      "category": "labor_agency",
+      "title": "N.Y. Lab. Law § 196-a(a)",
+      "url": "https://www.nysenate.gov/legislation/laws/LAB/196-A",
+      "locator": "N.Y. Lab. Law § 196-a(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:40:07.994747+00:00",
+        "sha256": "8ac689cd967abfc22e6bcdbe113b5eaf2161fa5a349535f447909d982d252a61"
+      }
     }
   },
   "court_directory": [
@@ -904,6 +916,18 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Consumer credit complaint information and attached written instrument or qualifying revolving-credit charge-off statement."
+    },
+    "b80b5b62127899f51551d839eee172": {
+      "source_id": "US-NY:labor_agency:e00847f0321c",
+      "authority_type": "statute",
+      "citation": "N.Y. Lab. Law § 196-a(a)",
+      "text": "(a) Any employee; person or organization acting on the employee's behalf; or the recognized and certified collective bargaining agent acting on the employee's behalf, may file with the commissioner a complaint regarding a violation of this article, article five, seven, nineteen, or nineteen-A of this chapter for an investigation of such complaint and statement setting the appropriate remedy, if any. The commissioner shall keep the names of employees that are the subject of an investigation confidential until such time that disclosure is necessary for resolution of an investigation or a complaint. Failure of an employer to keep adequate records or provide statements of wages to employees as required under this chapter, in addition to exposing such employer to penalties authorized under subdivision one of section two hundred eighteen of this chapter, shall not operate as a bar to filing of a complaint by an employee. In such a case the employer in violation shall bear the burden of proving that the complaining employee was paid wages, benefits and wage supplements.",
+      "text_sha256": "6699f7d5956e41a2cf1fdba55b65000531c81b34060f1c8248ef6517755f88cf",
+      "publisher_sha256": "8ac689cd967abfc22e6bcdbe113b5eaf2161fa5a349535f447909d982d252a61",
+      "retrieved_at": "2026-11-22T03:40:07.994747+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New York State Senate, parties permitted to complain, limits on confidentiality and employer recordkeeping ramifications."
     }
   },
   "fault_allocation": {

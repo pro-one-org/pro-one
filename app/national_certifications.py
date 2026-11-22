@@ -100,14 +100,19 @@ MAINE_COMMENCEMENT = (12, "Except as otherwise provided in these rules,", None)
 MAINE_RULES = {
     "3": MAINE_COMMENCEMENT,
     "3(a)–(b) (service and return timing)": MAINE_COMMENCEMENT,
+    "4(a)": (13, "(a) Summons: Form.", "(b) Same: Issuance."),
+    "4(b)": (13, "(b) Same: Issuance.", "(c) Service."),
     "4(c)(1) (mail acknowledgment timing)": (13, "If no acknowledgment of service under this paragraph",
                                              "(2) By a sheriff"),
     "4(d)(1)": (14, "(d) Summons: Personal Service.", "(2) Upon a minor"),
+    "5(k)": (35, "(k) Methods of Filing.", "RULE 6. TIME"),
+    "8(a)": (40, "(a) Claims for Relief.", "(b) Defenses; Form of Denials."),
     "12(a)": (45, "(a) When Presented.", "(b) How Presented."),
 }
 MAINE_PDF_SPACING = {
     "usu al": "usual", "proces s,": "process,", "defendant ’s": "defendant’s",
     "summons ,": "summons,", "party w ho": "party who", "cross -claim": "cross-claim",
+    "counsel t hat": "counsel that",
 }
 
 

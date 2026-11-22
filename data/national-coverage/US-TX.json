@@ -754,6 +754,18 @@
         "retrieved_at": "2026-11-22T03:34:45.876814+00:00",
         "sha256": "f55c1543e30f91fa238637a7d3baf7bfd7229f6d872449789fed4384f09676a9"
       }
+    },
+    "US-TX:labor_agency:9cba69278e99": {
+      "category": "labor_agency",
+      "title": "Tex. Lab. Code § 61.051(a)–(e)",
+      "url": "https://www.twc.texas.gov/sites/default/files/ui/docs/chapter-61-payment-of-wages-twc.pdf",
+      "locator": "Tex. Lab. Code § 61.051(a)–(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:45:16.647080+00:00",
+        "sha256": "482539c03d980edfc0c40f56e683d4f9a38b5cb1344b51bd72969129a19a73d9"
+      }
     }
   },
   "court_directory": [
@@ -1365,6 +1377,18 @@
       "decision_date": "2022-01-14",
       "opinion_role": "majority",
       "procedural_posture": "Petition for review after a contract damages jury verdict; reversed in part, affirmed in part, rendered in part and remanded."
+    },
+    "d7e024080cfb9f04c52cbb0bd68bdc": {
+      "source_id": "US-TX:labor_agency:9cba69278e99",
+      "authority_type": "statute",
+      "citation": "Tex. Lab. Code § 61.051(a)–(e)",
+      "text": "(a) An employee who is not paid wages as prescribed by this chapter may file a wage claim with the commission in accordance with this subchapter. (b) A wage claim must be filed in a manner and on a form prescribed by the commission and must be verified by the employee. (c) A wage claim must be filed not later than the 180th day after the date the wages claimed became due for payment. The 180-day deadline is a matter of jurisdiction. (d) The employee may file the wage claim: (1) in person at an office of the commission; (2) by mailing the claim to an address designated by the commission; (3) by faxing the claim to a fax number designated by the commission; (4) electronically in a manner designated by the commission by rule; or (5) by any other means adopted by the commission by rule. (e) The commission shall ensure that employees are notified of an employee's ability to request from the commission a wage claim form in either language described by Section 61.006.",
+      "text_sha256": "b7f9db413d6f42b57725d660e0a7f971db60e43f414bf6d9b582c1505ee9a233",
+      "publisher_sha256": "482539c03d980edfc0c40f56e683d4f9a38b5cb1344b51bd72969129a19a73d9",
+      "retrieved_at": "2026-11-22T03:45:16.647080+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Texas Workforce Commission’s statutory reprint, pages 13–14. Verified form, covered work, agency jurisdiction, and authorized filing methods. Live channel availability requires separate confirmation."
     }
   },
   "fault_allocation": {

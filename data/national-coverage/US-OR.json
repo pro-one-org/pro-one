@@ -616,6 +616,18 @@
         "retrieved_at": "2026-11-21T22:06:51.881004+00:00",
         "sha256": "b8962dadbebcce63dbb6b1a1bfa9c9244f904dddaad59ecf63b4cb4b180b2410"
       }
+    },
+    "US-OR:consumer_agency:8131a2bb3a45": {
+      "category": "consumer_agency",
+      "title": "Or. Rev. Stat. § 646.632(1)",
+      "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors646.html",
+      "locator": "Or. Rev. Stat. § 646.632(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:39:00.879821+00:00",
+        "sha256": "dfede44588217a24bea040748cd3a7bd4cbd566ced2d8f1dca65e70dda0f1e6e"
+      }
     }
   },
   "court_directory": [
@@ -1146,6 +1158,18 @@
       "language": "en",
       "edition": "Oregon Revised Statutes 2025 edition",
       "publisher_member": "Oregon Legislature 2025 statute; specified involuntary dismissals, actual notice, one refiling and retained defenses"
+    },
+    "58934518e1d76ef0f8cc42099b9aad": {
+      "source_id": "US-OR:consumer_agency:8131a2bb3a45",
+      "authority_type": "statute",
+      "citation": "Or. Rev. Stat. § 646.632(1)",
+      "text": "(1) Except as provided in ORS 646.633, a prosecuting attorney who has probable cause to believe that a person is engaging in, has engaged in, or is about to engage in an unlawful trade practice may bring suit in the name of the State of Oregon in the appropriate court to restrain such person from engaging in the alleged unlawful trade practice.",
+      "text_sha256": "4044977a4e801d0f2bfac6de6a3215f89c675016f4edcead40c03a5f59917a71",
+      "publisher_sha256": "dfede44588217a24bea040748cd3a7bd4cbd566ced2d8f1dca65e70dda0f1e6e",
+      "retrieved_at": "2026-11-22T03:39:00.879821+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Oregon Legislative Counsel statutory publication, prosecuting attorney’s action subject to ORS 646.633."
     }
   },
   "fault_allocation": {

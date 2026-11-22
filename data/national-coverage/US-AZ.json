@@ -348,6 +348,30 @@
         "retrieved_at": "2026-11-18T20:45:33.808787+00:00",
         "sha256": "022194c52c2c51ff885f5dba4d43af7789052509f43c7295713d2c57064c64a8"
       }
+    },
+    "US-AZ:consumer_agency:c3a24618b32e": {
+      "category": "consumer_agency",
+      "title": "Ariz. Rev. Stat. § 44-1528(A)",
+      "url": "https://www.azleg.gov/ars/44/01528.htm",
+      "locator": "Ariz. Rev. Stat. § 44-1528(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:38:54.555493+00:00",
+        "sha256": "35ca94c3cc19c989b97048afc7a5199cef57f79bcb595d689cf5d217ef860569"
+      }
+    },
+    "US-AZ:labor_agency:bcc30e1ed2d1": {
+      "category": "labor_agency",
+      "title": "Ariz. Rev. Stat. § 23-356(A)",
+      "url": "https://www.azleg.gov/ars/23/00356.htm",
+      "locator": "Ariz. Rev. Stat. § 23-356(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:40:08.143925+00:00",
+        "sha256": "624f60a82dc3be472acd355152d2216ca7e7946506b62cdc84b8005582739908"
+      }
     }
   },
   "court_directory": [
@@ -632,6 +656,31 @@
       "court": "Arizona courts governed by the Arizona Rules of Civil Procedure",
       "publisher_member": "Arizona Supreme Court order R-16-0010, filed September 2, 2016, PDF p. 38, Ariz. R. Civ. P. 4(i) (R-16-0010), rule text only",
       "effective_from": "2017-01-01"
+    },
+    "d26c583245c1d96401327595d880a3": {
+      "source_id": "US-AZ:consumer_agency:c3a24618b32e",
+      "authority_type": "statute",
+      "citation": "Ariz. Rev. Stat. § 44-1528(A)",
+      "text": "A. Following an investigation made pursuant to section 44-1524 and when it appears to the attorney general that a person has engaged in or is engaging in any practice declared to be unlawful by this article, the attorney general may seek and obtain in an action in a court of competent jurisdiction an injunction prohibiting the person from continuing the practices or engaging in the practice or doing any acts in furtherance of the practice after notice as is required by the rules of civil procedure. The court may make such orders or judgments as may be necessary to: 1. Prevent the use or employment by a person of any unlawful practices. 2. Restore to any person in interest any monies or property, real or personal, which may have been acquired by means of any practice in this article declared to be unlawful, including the appointment of a receiver. 3. Require that any profits, gain, gross receipts or other benefit obtained by means of any practice in this article declared to be unlawful be disgorged and paid to the state for deposit in the consumer remediation subaccount of the consumer restitution and remediation revolving fund established by section 44-1531.02. 4. Prohibit a person found to have violated this article from engaging in a specified trade or occupation.",
+      "text_sha256": "223af8dc6695909d7d3c626564b1ecf8b4e22238b265af390af94c642a2ee761",
+      "publisher_sha256": "35ca94c3cc19c989b97048afc7a5199cef57f79bcb595d689cf5d217ef860569",
+      "retrieved_at": "2026-11-22T03:38:54.555493+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Arizona Legislature, Attorney General injunction following investigation and distinct categories of court relief."
+    },
+    "2021a9de0e25526d4b88a03ba25971": {
+      "source_id": "US-AZ:labor_agency:bcc30e1ed2d1",
+      "authority_type": "statute",
+      "citation": "Ariz. Rev. Stat. § 23-356(A)",
+      "text": "A. Instead of proceeding under section 23-355, an employee may file a written claim with the department for unpaid wages against an employer if the amount of such wages does not exceed $12,000 and if such claim is filed within one year of the accrual of such claim.",
+      "text_sha256": "d3a164768f9c6fcd84dfe956401202a84f15b65aafa84833ed264cada179eeb7",
+      "publisher_sha256": "624f60a82dc3be472acd355152d2216ca7e7946506b62cdc84b8005582739908",
+      "retrieved_at": "2026-11-22T03:40:08.143925+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Arizona Legislature, statutory wage complaint up to $12,000 with one-year accrual condition, as amended by 2025 Ch. 38.",
+      "effective_from": "2025-09-26"
     }
   },
   "fault_allocation": {
