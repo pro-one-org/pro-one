@@ -441,6 +441,30 @@
         "retrieved_at": "2026-11-21T17:38:38.455077+00:00",
         "sha256": "702083ebe982970a86bba72dc4ebeaf382e21e7bfbe7c4864a92310c5ba4b8fa"
       }
+    },
+    "US-MD:service_time_limit:bf8a72e12708": {
+      "category": "service_time_limit",
+      "title": "Md. Rule 3-113",
+      "url": "https://web.archive.org/web/20251127022208id_/https://www.mdcourts.gov/sites/default/files/rules/order/ro211.pdf",
+      "locator": "Md. Rule 3-113",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:01:31.198695+00:00",
+        "sha256": "78067dc19a9d68f5759234c5b49f67213ff1fd4c27b99b6e1e714cbfb7194248"
+      }
+    },
+    "US-MD:service_time_limit:04e8c5f32bf9": {
+      "category": "service_time_limit",
+      "title": "Md. Rule 3-113",
+      "url": "https://web.archive.org/web/20250712224349id_/https://www.mdcourts.gov/sites/default/files/rules/order/ro214.pdf",
+      "locator": "Md. Rule 3-113",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:01:28.221408+00:00",
+        "sha256": "5585d2f5f650c64c6558a884d194ca9eb0d2d93d5849b825546339fe220f9d6c"
+      }
     }
   },
   "court_directory": [
@@ -803,6 +827,37 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Maryland General Assembly statutory text, § 3-904(g)"
+    },
+    "687f55b6eac86cef0fea57f6aa5676": {
+      "source_id": "US-MD:service_time_limit:bf8a72e12708",
+      "authority_type": "court_rule",
+      "citation": "Md. Rule 3-113",
+      "text": "A summons is effective for service only if served within 60 days after the date it is issued. A summons not served within that time shall be dormant, renewable only on written request of the plaintiff.",
+      "text_sha256": "618f423e89fff1633d39a6bf4fb43f9a0e2c71535d156de69e468b8d31a5c0c6",
+      "publisher_sha256": "78067dc19a9d68f5759234c5b49f67213ff1fd4c27b99b6e1e714cbfb7194248",
+      "retrieved_at": "2026-11-22T03:01:31.198695+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Maryland 211th Rules Order of September 30, 2022",
+      "court": "District Court of Maryland",
+      "publisher_member": "Printed page 24, excluding struck 30-day language; applies to actions begun on or after the effective date and, insofar as practicable, then-pending actions",
+      "effective_from": "2023-01-01",
+      "effective_until": "2023-07-01"
+    },
+    "33e6ca42c2ad5d4365bb3370d8caf8": {
+      "source_id": "US-MD:service_time_limit:04e8c5f32bf9",
+      "authority_type": "court_rule",
+      "citation": "Md. Rule 3-113",
+      "text": "(a) Generally A summons is effective for service only if served within 60 days after the date it is issued. A summons not served within that time shall be dormant, renewable only on written request of the plaintiff. […] (b) Judgment on Affidavit – Military Service Affidavit A request for renewal of a summons in an action seeking judgment on affidavit pursuant to Rule 3-306 shall be accompanied by either (1) a statement that there has been no change to the information provided in the most recently filed military service affidavit or (2) a supplemental military service affidavit in compliance with § 3931 of the Servicemembers Civil Relief Act, 50 U.S.C. §§ 3901 et seq.",
+      "text_sha256": "3c5cfbedfb8322cd339f7ff278d53f2dd98260cabb6c1cacec3077d766823cb3",
+      "publisher_sha256": "5585d2f5f650c64c6558a884d194ca9eb0d2d93d5849b825546339fe220f9d6c",
+      "retrieved_at": "2026-11-22T03:01:28.221408+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Maryland 214th Rules Order of April 21, 2023",
+      "court": "District Court of Maryland",
+      "publisher_member": "Printed page 66; applies to actions begun on or after July 1, 2023 and, insofar as practicable, then-pending actions; separate judgment-on-affidavit requirement",
+      "effective_from": "2023-07-01"
     }
   },
   "fault_allocation": {

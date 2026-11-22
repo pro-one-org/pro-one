@@ -449,6 +449,18 @@
         "retrieved_at": "2026-11-21T23:01:23.438402+00:00",
         "sha256": "a06b6ad2df731ea0fcb797e633784f6695b8ee18d9b53ad014b116332887b4da"
       }
+    },
+    "US-PA:service_time_limit:a20d2539436f": {
+      "category": "service_time_limit",
+      "title": "Ferraro v. Patterson-Erie Corp., 313 A.3d 987 (Pa. 2024) (service diligence)",
+      "url": "https://www.pacourts.us/assets/opinions/Supreme/out/J-54-2023mo%20-%20105914276263727865.pdf?cb=1",
+      "locator": "Ferraro v. Patterson-Erie Corp., 313 A.3d 987 (Pa. 2024) (service diligence)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T23:06:14.591721+00:00",
+        "sha256": "74c1c2c4105f72fdf14599359449f8825141eea71be807c78ce719ca4b80c23c"
+      }
     }
   },
   "court_directory": [
@@ -851,6 +863,23 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Pennsylvania Code, Rule 404 lead-in; permitted methods and treaty conditions appear separately in the rule"
+    },
+    "999de447a78cb041b1da795eb67f35": {
+      "source_id": "US-PA:service_time_limit:a20d2539436f",
+      "authority_type": "opinion",
+      "citation": "Ferraro v. Patterson-Erie Corp., 313 A.3d 987 (Pa. 2024) (service diligence)",
+      "text": "We have never held that any notice to a defendant of the pendency of a lawsuit is a substitute for service of process and we refuse to do so here. Our allowance of a deviation from strict compliance with our service rules when notice is imparted to the defendant is tied to a good faith effort to comply with the Rules. In McCreesh, we did not detach notice to the defendant of the pendency of a lawsuit from service of process. The McCreesh plaintiff incorrectly believed that certified mail to the defendant would effectuate service of process both in fact and by analogy of certified mail delivery to service by a competent adult. Here, Ferraro’s counsel understood that the private process server could not effectuate service of process under the Rule. As a result of the operation of Rule 126(a), we do not demand strict compliance with the service of process rules. Gussom clearly announced the balance between the relaxed enforcement of our rules pertaining to service of process and their purpose of providing notice to the defendant and the protections intended by statutes of limitations. When a plaintiff makes diligent but technically improper efforts to timely serve process whereby a defendant receives actual notice during the period of the statute of limitations that a lawsuit has been filed against it, the plaintiff will not be punished by dismissal of the complaint for technical non-compliance with the Rules of Civil Procedure. Gussom, 247 A.3d at 1057.",
+      "text_sha256": "7ee72a37f13fc1b9ff8ce3fb9af10bdf61fb487f5c5321d1c2c752b03d79c1f1",
+      "publisher_sha256": "74c1c2c4105f72fdf14599359449f8825141eea71be807c78ce719ca4b80c23c",
+      "retrieved_at": "2026-11-21T23:06:14.591721+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "April 25, 2024 majority slip opinion",
+      "court": "Supreme Court of Pennsylvania",
+      "publisher_member": "Slip opinion page 37; discusses the duty of diligence and limits on actual-notice arguments",
+      "decision_date": "2024-04-25",
+      "opinion_role": "majority",
+      "procedural_posture": "Interlocutory appeal in a premises-negligence action; reversed the Superior Court order affirming denial of judgment on the pleadings."
     }
   },
   "fault_allocation": {

@@ -419,6 +419,30 @@
         "retrieved_at": "2026-11-21T17:44:26.185109+00:00",
         "sha256": "1f0e0b15eff4336a260f3994a8f1a4926d8c36348b4a4773e9d52462b1e6962d"
       }
+    },
+    "US-NJ:service_time_limit:ae6a6175b964": {
+      "category": "service_time_limit",
+      "title": "N.J. Ct. R. 4:4-1 (summons issuance timing)",
+      "url": "https://web.archive.org/web/20220105233115id_/https://www.njcourts.gov/attorneys/assets/rules/r4-4.pdf",
+      "locator": "N.J. Ct. R. 4:4-1 (summons issuance timing)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:26:31.106547+00:00",
+        "sha256": "3589c5d101e6d964837c3c645a5e003cefba9c5a4f5a5020a1baaf2ee34322d2"
+      }
+    },
+    "US-NJ:service_time_limit:71bac0e6f48a": {
+      "category": "service_time_limit",
+      "title": "N.J. Ct. R. 4:4-4(c) (optional mailed service timing)",
+      "url": "https://web.archive.org/web/20220105233115id_/https://www.njcourts.gov/attorneys/assets/rules/r4-4.pdf",
+      "locator": "N.J. Ct. R. 4:4-4(c) (optional mailed service timing)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:26:31.106547+00:00",
+        "sha256": "3589c5d101e6d964837c3c645a5e003cefba9c5a4f5a5020a1baaf2ee34322d2"
+      }
     }
   },
   "court_directory": [
@@ -743,6 +767,33 @@
       "edition": "New Jersey P.L. 2021, c. 379, approved January 18, 2022",
       "publisher_member": "New Jersey Legislature approved P.L. 2021, c. 379 § 1, effective upon approval January 18, 2022",
       "effective_from": "2022-01-18"
+    },
+    "1be8106266443ad0e4adbafe245b18": {
+      "source_id": "US-NJ:service_time_limit:ae6a6175b964",
+      "authority_type": "court_rule",
+      "citation": "N.J. Ct. R. 4:4-1 (summons issuance timing)",
+      "text": "The plaintiff, plaintiff's attorney or the clerk of the court may issue the summons. If a summons is not issued within 15 days from the date of the Track Assignment Notice, the action may be dismissed in accordance with R. 4:37-2(a). Separate or additional summonses may issue against any defendants.",
+      "text_sha256": "5edc30a3bf0181f54b62422f5b92031ef0f8e403be1fccc1ae3fc88eff0c58cb",
+      "publisher_sha256": "3589c5d101e6d964837c3c645a5e003cefba9c5a4f5a5020a1baaf2ee34322d2",
+      "retrieved_at": "2026-11-21T17:26:31.106547+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Jersey Courts Rule 4:4 publication, January 5, 2022 archive capture",
+      "publisher_member": "Archived original New Jersey Courts PDF, Rule 4:4-1",
+      "effective_from": "2002-09-03"
+    },
+    "73df8900a700b82092be6ee80b4d90": {
+      "source_id": "US-NJ:service_time_limit:71bac0e6f48a",
+      "authority_type": "court_rule",
+      "citation": "N.J. Ct. R. 4:4-4(c) (optional mailed service timing)",
+      "text": "(c) Optional Mailed Service. Where personal service is required to be made pursuant to paragraph (a) of this rule, service, in lieu of personal service, may be made by registered, certified or ordinary mail, provided, however, that such service shall be effective for obtaining in personam jurisdiction only if the defendant answers the complaint or otherwise appears in response thereto, and provided further that default shall not be entered against a defendant who fails to answer or appear in response thereto. This prohibition against entry of default shall not apply to mailed service authorized by any other provision of these rules. If defendant does not answer or appear within 60 days following mailed service, service shall be made as is otherwise prescribed by this rule, and the time prescribed by R. 4:4-1 for issuance of the summons shall then begin to run anew.",
+      "text_sha256": "a63d092bf2ff670511ff048ca0286d2f57e5ebd9e61c646447e3cddc0d746d4e",
+      "publisher_sha256": "3589c5d101e6d964837c3c645a5e003cefba9c5a4f5a5020a1baaf2ee34322d2",
+      "retrieved_at": "2026-11-21T17:26:31.106547+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Jersey Courts Rule 4:4 publication, January 5, 2022 archive capture",
+      "publisher_member": "Archived original New Jersey Courts PDF, Rule 4:4-4(c)"
     }
   },
   "fault_allocation": {

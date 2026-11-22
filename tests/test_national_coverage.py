@@ -203,6 +203,24 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertNotIn("service_time_limit", complaint["procedure_evidence"])
         self.assertEqual((complaint["readiness"], complaint["execution"]), ("blocked", "disabled"))
 
+    def test_maryland_district_summons_versions_preserve_renewal_change(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Maryland", court="District Court of Maryland",
+                               legal_area="civil_procedure", topics=["service_time_limit"],
+                               authority_status="historical")
+        documents = [provider.fetch(key) for key in provider.search(query)]
+        by_effective_date = {document.source["dates"]["effective_from"]: document for document in documents}
+        older = by_effective_date["2023-01-01"]
+        later = by_effective_date["2023-07-01"]
+        self.assertEqual(older.source["dates"]["effective_through"], "2023-07-01")
+        for document in (older, later):
+            self.assertIn("within 60 days after the date it is issued", document.text)
+        self.assertNotIn("supplemental military service affidavit", older.text)
+        self.assertIn("supplemental military service affidavit", later.text)
+        self.assertFalse(provider.search(query.model_copy(update={"court": "Maryland Circuit Courts"})))
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                  "authority_as_of": "2026-11-21"})))
+
     def test_pennsylvania_service_timing_distinguishes_location_and_reissuance(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Pennsylvania", legal_area="civil_procedure",

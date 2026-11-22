@@ -425,6 +425,30 @@
         "retrieved_at": "2026-11-21T17:24:47.621279+00:00",
         "sha256": "acc450b381d3a936c0d83c4e927ffb1ea310219428b07308a4ca9edb2b2fa769"
       }
+    },
+    "US-MO:service_time_limit:7245fcf75a19": {
+      "category": "service_time_limit",
+      "title": "Mo. Rev. Stat. § 506.160(1), (3) (publication timing)",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=506.160",
+      "locator": "Mo. Rev. Stat. § 506.160(1), (3) (publication timing)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T23:06:14.435105+00:00",
+        "sha256": "2d683f0985b82f33fb25b1b7dcb3bdc32ec2f8c552cd8291ea95d44bc6363127"
+      }
+    },
+    "US-MO:service_time_limit:e2897f9ff1e6": {
+      "category": "service_time_limit",
+      "title": "Mo. 42d Jud. Cir. Local R. 4.2 (service extension)",
+      "url": "https://www.courts.mo.gov/file/42nd_LCR.pdf",
+      "locator": "Mo. 42d Jud. Cir. Local R. 4.2 (service extension)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:00:50.081863+00:00",
+        "sha256": "a5044ff38b43bd0119f6d7254bae484455fcf97ade3fd32118e5b99658def037"
+      }
     }
   },
   "court_directory": [
@@ -765,6 +789,33 @@
       "decision_date": "2023-09-12",
       "opinion_role": "majority",
       "procedural_posture": "Writ of prohibition made permanent because attempted service at the relator’s Alabama workplace through human resources did not confer personal jurisdiction."
+    },
+    "7cb9a7a1f1d469bb87a02383ee78b3": {
+      "source_id": "US-MO:service_time_limit:7245fcf75a19",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 506.160(1), (3) (publication timing)",
+      "text": "1. Service by mail or by publication shall be allowed in all cases affecting a fund, will, trust estate, specific property, or any interest therein, or any res or status within the jurisdiction of the court, or in any special proceedings in which notice by mail or by publication is authorized, including but not limited to actions to quiet title and actions to ascertain and determine title to real estate. If the defendant so served does not appear, judgment may be rendered affecting said property, res or status within the jurisdiction of the court as to said defendant, but such service shall not warrant a general judgment against such defendant. […] Such notice shall be published at least once each week for four consecutive weeks in some newspaper of general circulation published in the county where suit is instituted, if there be such newspaper published there, which the plaintiff or his attorney of record may designate; if no such newspaper be published in such county, then in some such paper published in this state, which the plaintiff or his attorney of record may designate as most likely to give notice to the defendant or defendants to be notified. If the present known address of the defendant is given, the clerk shall within ten days after said order of publication mail a copy of the notice to each defendant whose address has been stated in the affidavit or verified petition. The clerk shall file a certificate certifying that copies of the notice have been mailed as required by this section, in all cases where the present known address has been given, and such certificates shall be conclusive and binding upon the parties.",
+      "text_sha256": "e1692b2398be63cb53a1a492089578343522ec8b8bb332c2f47aea36e32674a8",
+      "publisher_sha256": "2d683f0985b82f33fb25b1b7dcb3bdc32ec2f8c552cd8291ea95d44bc6363127",
+      "retrieved_at": "2026-11-21T23:06:14.435105+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Missouri Revisor, codified statute identifying 1945 effective date; limited publication and mailing provision; effect of later court rules unresolved",
+      "effective_from": "1945-08-28"
+    },
+    "805b0bf486bebe2ab1a6fc479cdb5e": {
+      "source_id": "US-MO:service_time_limit:e2897f9ff1e6",
+      "authority_type": "court_rule",
+      "citation": "Mo. 42d Jud. Cir. Local R. 4.2 (service extension)",
+      "text": "Pursuant to Supreme Court Rule 54.21, if process is not served in any civil case within 30 days after its date of issue, time for service is herewith extended an additional 30 days in said case and this shall be deemed an order of Court so directing.",
+      "text_sha256": "a2fe69cffe6cf4d3fb9f57ebb2ecb86f065b719e365127381c92c31aaa101bd4",
+      "publisher_sha256": "a5044ff38b43bd0119f6d7254bae484455fcf97ade3fd32118e5b99658def037",
+      "retrieved_at": "2026-11-22T03:00:50.081863+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "March 5, 2008 circuit rules publication",
+      "court": "Missouri 42nd Judicial Circuit",
+      "publisher_member": "Printed page 6; local extension under Rule 54.21"
     }
   },
   "fault_allocation": {

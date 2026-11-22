@@ -406,6 +406,18 @@
         "retrieved_at": "2026-11-21T17:27:08.618786+00:00",
         "sha256": "76a2c94e3191233461862c3f49aa367e4563a380aefc8dbc19bbf6d8ca33be1e"
       }
+    },
+    "US-KY:service_time_limit:2f0794ce148b": {
+      "category": "service_time_limit",
+      "title": "Ky. Rev. Stat. § 454.210(3)(c)",
+      "url": "https://apps.legislature.ky.gov/law/Statutes/statute.aspx?id=55339",
+      "locator": "Ky. Rev. Stat. § 454.210(3)(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T23:06:14.327449+00:00",
+        "sha256": "8d57ba92763199e8114245634ab6050821caa088f5ddce1df741b5af5525aa57"
+      }
     }
   },
   "court_directory": [
@@ -754,6 +766,19 @@
       "edition": "Kentucky Supreme Court Amended Order 2025-02",
       "court": "Kentucky courts subject to the Administrative Rules of Practice and Procedure for Electronic Filing",
       "publisher_member": "Kentucky Supreme Court Amended Order 2025-02, pp. 16–17, service of process for supported eFiled cases, subsection (4)(a)"
+    },
+    "89a9554c0a0c7f4ff02cabcd87c593": {
+      "source_id": "US-KY:service_time_limit:2f0794ce148b",
+      "authority_type": "statute",
+      "citation": "Ky. Rev. Stat. § 454.210(3)(c)",
+      "text": "(c) The Secretary of State shall, within seven (7) days of receipt thereof in his or her office, mail a copy of the summons and complaint to the defendant at the address given in the complaint. The letter shall be posted by certified mail, return receipt requested, and shall bear the return address of the Secretary of State. The clerk shall make the usual return to the court, and in addition the Secretary of State shall make a return to the court showing that the acts contemplated by this statute have been performed, and shall attach to his or her return the registry receipt, if any. Summons shall be deemed to be served on the return of the Secretary of State and the action shall proceed as provided in the Rules of Civil Procedure.",
+      "text_sha256": "87c8ee1ff06838eb23297f9afd1ae43d20ef1bd900465c7975000a49dcc31575",
+      "publisher_sha256": "8d57ba92763199e8114245634ab6050821caa088f5ddce1df741b5af5525aa57",
+      "retrieved_at": "2026-11-21T23:06:14.327449+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Kentucky General Assembly, nonresident service through Secretary of State; mailing and deemed service on return",
+      "effective_from": "2024-07-15"
     }
   },
   "fault_allocation": {
