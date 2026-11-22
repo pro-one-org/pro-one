@@ -392,6 +392,18 @@
         "retrieved_at": "2026-11-20T18:32:56.299457+00:00",
         "sha256": "32dcbca48c020e4e265696a568939d089fc7fa1cf78369715ec967b5ab17ea0d"
       }
+    },
+    "US-RI:service_time_limit:ae8ff4591ce8": {
+      "category": "service_time_limit",
+      "title": "R.I. Super. R. Civ. P. 4(l)",
+      "url": "https://www.courts.ri.gov/Courts/superiorcourt/Documents/SuperiorCourtRulesOfCivilProcedure.pdf",
+      "locator": "R.I. Super. R. Civ. P. 4(l)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.714345+00:00",
+        "sha256": "01dea708aa73f7816bd816f6ae5d29701b38e5b0571d8c2e1ea01e17acc700f6"
+      }
     }
   },
   "court_directory": [
@@ -709,6 +721,19 @@
       "retrieved_at": "2026-11-20T18:32:56.299457+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "af1f94adf073ce80d4350815309083": {
+      "source_id": "US-RI:service_time_limit:ae8ff4591ce8",
+      "authority_type": "court_rule",
+      "citation": "R.I. Super. R. Civ. P. 4(l)",
+      "text": "(l) Summons: Time Limit for Service. If service of the summons, complaint, Language Assistance Notice, and all other required documents is not made upon a defendant within one hundred and twenty (120) days after the commencement of the action the court upon motion or on its own initiative after notice to the plaintiff, shall dismiss the action without prejudice as to that defendant or direct that service be effected within a specified time; provided that if the plaintiff shows good cause for the failure, the court shall extend the time for service for an appropriate period. This subdivision does not apply to service in a foreign country pursuant to subdivision (g).",
+      "text_sha256": "6b094dacbc7f8939556c1c00a39bd00a6d733f48fc6799c90e179eeb49c63b97",
+      "publisher_sha256": "01dea708aa73f7816bd816f6ae5d29701b38e5b0571d8c2e1ea01e17acc700f6",
+      "retrieved_at": "2026-11-20T16:01:53.714345+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Rhode Island Superior Court Rules of Civil Procedure, February 2024 compilation",
+      "court": "Rhode Island Superior Court"
     }
   },
   "fault_allocation": {

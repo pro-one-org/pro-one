@@ -416,6 +416,18 @@
         "retrieved_at": "2026-11-21T04:27:26.733130+00:00",
         "sha256": "1740d1109bb1ef1a1b59ec8ee1cc69fdf8a5acc1aa4a737af5d699756f11ab5f"
       }
+    },
+    "US-NV:service_time_limit:5378ae642bc8": {
+      "category": "service_time_limit",
+      "title": "Nev. R. Civ. P. 4(e)(1)–(4)",
+      "url": "https://www.leg.state.nv.us/courtrules/nrcp.html",
+      "locator": "Nev. R. Civ. P. 4(e)(1)–(4)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:14:25.244018+00:00",
+        "sha256": "99812c5ef90fa83a0b5ded17bb4f1649316b2e1c3cc48c9e91eaca63e2479065"
+      }
     }
   },
   "court_directory": [
@@ -660,6 +672,19 @@
       "opinion_role": "majority",
       "procedural_posture": "Appeal from summary judgment in a wrongful-death negligence action concerning the scope of a pharmacist’s duty.",
       "publisher_member": "Filed court-issued Advance Opinion 74, printed p. 7, visual transcription"
+    },
+    "c5e071342efeaf3203bc61770d1e80": {
+      "source_id": "US-NV:service_time_limit:5378ae642bc8",
+      "authority_type": "court_rule",
+      "citation": "Nev. R. Civ. P. 4(e)(1)–(4)",
+      "text": "(e) Time Limit for Service. (1) In General. The summons and complaint must be served upon a defendant no later than 120 days after the complaint is filed, unless the court grants an extension of time under this rule. (2) Dismissal. If service of the summons and complaint is not made upon a defendant before the 120-day service period—or any extension thereof—expires, the court must dismiss the action, without prejudice, as to that defendant upon motion or upon the court’s own order to show cause. (3) Timely Motion to Extend Time. If a plaintiff files a motion for an extension of time before the 120-day service period—or any extension thereof—expires and shows that good cause exists for granting an extension of the service period, the court must extend the service period and set a reasonable date by which service should be made. (4) Failure to Make Timely Motion to Extend Time. If a plaintiff files a motion for an extension of time after the 120-day service period—or any extension thereof—expires, the court must first determine whether good cause exists for the plaintiff’s failure to timely file the motion for an extension before the court considers whether good cause exists for granting an extension of the service period. If the plaintiff shows that good cause exists for the plaintiff’s failure to timely file the motion and for granting an extension of the service period, the court must extend the time for service and set a reasonable date by which service should be made.",
+      "text_sha256": "da5c8c8b415f51b542616d6dfcbe76d62f10f597452e105dde5a3fb61abe8875",
+      "publisher_sha256": "99812c5ef90fa83a0b5ded17bb4f1649316b2e1c3cc48c9e91eaca63e2479065",
+      "retrieved_at": "2026-11-17T20:14:25.244018+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Nevada Legislature rules publication; timely and untimely motions to extend",
+      "effective_from": "2019-03-01"
     }
   },
   "fault_allocation": {

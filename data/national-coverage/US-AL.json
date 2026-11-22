@@ -484,6 +484,18 @@
         "retrieved_at": "2026-11-21T17:44:26.370078+00:00",
         "sha256": "630e2f4a9c85b506a3f7d422c3230e8c816ded748b4d431e3ae5f4c0b7176f87"
       }
+    },
+    "US-AL:service_time_limit:4f778915f61d": {
+      "category": "service_time_limit",
+      "title": "Ala. R. Civ. P. 4(b)",
+      "url": "https://judicial.alabama.gov/docs/rules/ARCVP_10242008.pdf",
+      "locator": "Ala. R. Civ. P. 4(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T23:02:24.712333+00:00",
+        "sha256": "d9210818c3253fe6eb3ce9d474c8b878b3d0779d18908b0bb847595049df99f7"
+      }
     }
   },
   "court_directory": [
@@ -907,6 +919,20 @@
       "decision_date": "2023-09-29",
       "opinion_role": "majority",
       "procedural_posture": "Consolidated appeals from proceedings over assets, including a breach claim concerning loan repayment. The supreme court affirmed the May 2022 judgment on the contract issue."
+    },
+    "953cd2a80450c66e53dfcc7e1b4756": {
+      "source_id": "US-AL:service_time_limit:4f778915f61d",
+      "authority_type": "court_rule",
+      "citation": "Ala. R. Civ. P. 4(b)",
+      "text": "(b) Time Limit for Service. If service of the summons and complaint is not made upon a defendant within 120 days after the filing of the complaint, the court, upon motion or on its own initiative, after at least fourteen (14) days' notice to the plaintiff, may dismiss the action without prejudice as to the defendant upon whom service was not made or direct that service be effected within a specified time; provided, however, that if the plaintiff shows good cause for the failure to serve the defendant, the court shall extend the time for service for an appropriate period. This subdivision does not apply to fictitious-party practice pursuant to Rule 9(h) or to service in a foreign country.",
+      "text_sha256": "307a51d6e3373a91941d0825e1cb72483b16badc64d9341c9814d487df4780a7",
+      "publisher_sha256": "d9210818c3253fe6eb3ce9d474c8b878b3d0779d18908b0bb847595049df99f7",
+      "retrieved_at": "2026-11-21T23:02:24.712333+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Alabama Supreme Court order of October 24, 2008",
+      "publisher_member": "Promulgating order, Appendix B; fictitious-party and foreign-service scope",
+      "effective_from": "2008-10-24"
     }
   },
   "fault_allocation": {

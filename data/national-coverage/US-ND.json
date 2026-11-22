@@ -564,6 +564,42 @@
         "retrieved_at": "2026-11-21T22:25:36.875730+00:00",
         "sha256": "9f19189433402e2504818983dccb7ea96b84cf56ed39af8aa8ac52160ddf4432"
       }
+    },
+    "US-ND:service_time_limit:fd54af182ecb": {
+      "category": "service_time_limit",
+      "title": "N.D. R. Civ. P. 4(d)(2)(G)",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcivp/4",
+      "locator": "N.D. R. Civ. P. 4(d)(2)(G)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:03.597898+00:00",
+        "sha256": "374fdd92b4d2794ffc09bdd961d32f3c143183d8d6db3b8ba2b82c744ee999f0"
+      }
+    },
+    "US-ND:service_time_limit:2699d883a77e": {
+      "category": "service_time_limit",
+      "title": "N.D. R. Civ. P. 4(e)(3)–(6)",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcivp/4",
+      "locator": "N.D. R. Civ. P. 4(e)(3)–(6)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:03.597898+00:00",
+        "sha256": "374fdd92b4d2794ffc09bdd961d32f3c143183d8d6db3b8ba2b82c744ee999f0"
+      }
+    },
+    "US-ND:service_time_limit:9c5a7b66f541": {
+      "category": "service_time_limit",
+      "title": "N.D. R. Civ. P. 4(g)",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcivp/4",
+      "locator": "N.D. R. Civ. P. 4(g)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:03.597898+00:00",
+        "sha256": "374fdd92b4d2794ffc09bdd961d32f3c143183d8d6db3b8ba2b82c744ee999f0"
+      }
     }
   },
   "court_directory": [
@@ -1018,6 +1054,42 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "North Dakota Legislative Branch, chapter 51-15 PDF p. 4; claim for relief accrual and discovery"
+    },
+    "ff2f84636ddb0770593d1345594d1d": {
+      "source_id": "US-ND:service_time_limit:fd54af182ecb",
+      "authority_type": "court_rule",
+      "citation": "N.D. R. Civ. P. 4(d)(2)(G)",
+      "text": "(G) Serving an Agent Not Authorized to Receive Process. If service is made on an agent who is not expressly authorized by appointment or by law to receive service of process on behalf of the defendant, a copy of the summons and complaint must be mailed or delivered via a third-party commercial carrier to the defendant with return receipt requested not later than ten days after service by depositing a copy of the summons and complaint, with postage or shipping prepaid, in a post office or with a commercial carrier in this state and directed to the defendant to be served at the defendant's last reasonably ascertainable address.",
+      "text_sha256": "5c3a32fe2aa5c349a0307890d06a51fcdff33105c5b20c802b7f25daf816adf3",
+      "publisher_sha256": "374fdd92b4d2794ffc09bdd961d32f3c143183d8d6db3b8ba2b82c744ee999f0",
+      "retrieved_at": "2026-11-20T15:21:03.597898+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Dakota Court System Rule 4; subsection-specific service conditions"
+    },
+    "185a07000c85d750a9195f4bfaa06c": {
+      "source_id": "US-ND:service_time_limit:2699d883a77e",
+      "authority_type": "court_rule",
+      "citation": "N.D. R. Civ. P. 4(e)(3)–(6)",
+      "text": "(3) Number of Publications. Service of the summons by publication may be made by publishing the summons three times, once each week for three successive weeks, in a newspaper published in the county where the action is pending. If no newspaper is published in that county, publication may be made in a newspaper having a general circulation in the county. (4) Mailing or Delivering Summons and Complaint. A copy of the summons and complaint, at any time after the filing of the declaration for publication and no later than 14 days after the first publication of the summons, must be deposited in a post office or with a third-party commercial carrier, postage or shipping prepaid, and directed to the defendant at the defendant's last reasonably ascertainable address. (5) Personal Service Outside State is Equivalent to Publication. After the declaration for publication and the complaint in the action are filed, personal service of the summons and complaint on the defendant out of state is equivalent to and has the same force and effect as the publication and mailing or delivery provided for in paragraphs (e)(3) and (4). (6) Time When First Publication or Service Outside State Must Be Made. The first publication of the summons, or personal service of the summons and complaint on the defendant outside the state, must be made within 60 days after the filing of the declaration for publication. If not made, the action is considered discontinued as to any defendant not served within that time.",
+      "text_sha256": "64f0bd047ee396e1124b5850e2d0be5834b3df78c70b825e52ba436663f6e617",
+      "publisher_sha256": "374fdd92b4d2794ffc09bdd961d32f3c143183d8d6db3b8ba2b82c744ee999f0",
+      "retrieved_at": "2026-11-20T15:21:03.597898+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Dakota Court System Rule 4; subsection-specific service conditions"
+    },
+    "3693781bbd8a4ad6a06c1b265026c0": {
+      "source_id": "US-ND:service_time_limit:9c5a7b66f541",
+      "authority_type": "court_rule",
+      "citation": "N.D. R. Civ. P. 4(g)",
+      "text": "(g) When Service by Publication or Outside State Complete. Service by publication is complete fifteen days after the first publication of the summons. Personal service of the summons and complaint upon the defendant outside the state is complete fifteen days after the date of service.",
+      "text_sha256": "2b9857133082b6674e6bd0223137e777aeab34fc65f19832a8496f3114ab33d4",
+      "publisher_sha256": "374fdd92b4d2794ffc09bdd961d32f3c143183d8d6db3b8ba2b82c744ee999f0",
+      "retrieved_at": "2026-11-20T15:21:03.597898+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Dakota Court System Rule 4; subsection-specific service conditions"
     }
   },
   "fault_allocation": {

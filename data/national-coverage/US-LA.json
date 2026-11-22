@@ -422,6 +422,18 @@
         "retrieved_at": "2026-11-21T22:57:50.036099+00:00",
         "sha256": "0e9e1ccd12b021c376117d2debf9a812978c7fc5718f80a2455d9a345b394e22"
       }
+    },
+    "US-LA:service_time_limit:f852b191ad23": {
+      "category": "service_time_limit",
+      "title": "2026 La. Acts No. 36, § 2 (SB 475)",
+      "url": "https://www.legis.la.gov/legis/ViewDocument.aspx?d=1475522",
+      "locator": "2026 La. Acts No. 36, § 2 (SB 475)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T23:01:23.645761+00:00",
+        "sha256": "9d16813805ba02c32ecd21c977e426f9c213ec786c5bbb945f1936541833e80d"
+      }
     }
   },
   "court_directory": [
@@ -770,6 +782,20 @@
       "language": "en",
       "effective_from": "2026-08-01",
       "publisher_member": "Louisiana State Legislature codified article; Act 36 of 2026 (SB 475) is prospective only under section 2"
+    },
+    "367c62cfd9d19434d7f4ee53594b88": {
+      "source_id": "US-LA:service_time_limit:f852b191ad23",
+      "authority_type": "statute",
+      "citation": "2026 La. Acts No. 36, § 2 (SB 475)",
+      "text": "Section 2. The provisions of this Act shall have prospective application only.",
+      "text_sha256": "3417254a0667eb86e2f019e819687a09da861c565e165eceb597f60d6256a5e7",
+      "publisher_sha256": "9d16813805ba02c32ecd21c977e426f9c213ec786c5bbb945f1936541833e80d",
+      "retrieved_at": "2026-11-21T23:01:23.645761+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2026 Regular Session Act No. 36 enrolled text",
+      "publisher_member": "Louisiana State Legislature, enrolled Act 36, page 3; bill history records signing and August 1 effective date",
+      "effective_from": "2026-08-01"
     }
   },
   "fault_allocation": {

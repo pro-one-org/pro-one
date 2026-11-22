@@ -631,6 +631,30 @@
         "retrieved_at": "2026-11-21T17:44:26.245338+00:00",
         "sha256": "fb5f914f01137bd18c296f2bdf2146a89f427b3cd7fe9b8f9ed16a3b270fbf68"
       }
+    },
+    "US-IN:service_time_limit:1117bb76c716": {
+      "category": "service_time_limit",
+      "title": "Ind. Trial R. 4.13(C) (publication intervals)",
+      "url": "https://rules.incourts.gov/Content/trial/rule4-13/current.htm",
+      "locator": "Ind. Trial R. 4.13(C) (publication intervals)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T23:01:23.388668+00:00",
+        "sha256": "df040340bec7a70c3868c25d1c4612ce618452900c01838a7efe55c9fc6cd5d6"
+      }
+    },
+    "US-IN:service_time_limit:4d347d482126": {
+      "category": "service_time_limit",
+      "title": "Ind. Trial R. 4.1(C) (returned-mail notice)",
+      "url": "https://rules.incourts.gov/Content/trial/rule4-1/current.htm",
+      "locator": "Ind. Trial R. 4.1(C) (returned-mail notice)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T23:01:23.402474+00:00",
+        "sha256": "6a43acf975b87e062068c1fe6a07b66e80cb945c0dfc295ede2536df12739e86"
+      }
     }
   },
   "court_directory": [
@@ -1302,6 +1326,31 @@
       "decision_date": "2020-03-23",
       "opinion_role": "majority",
       "procedural_posture": "Appeal in an account and payment dispute; the appellate court addressed the statutory limitations and alternative accrual arguments."
+    },
+    "4e19c318bdd9d4abf6e9a07d46c216": {
+      "source_id": "US-IN:service_time_limit:1117bb76c716",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 4.13(C) (publication intervals)",
+      "text": "(C) Publication of summons. The summons shall be published three [3] times by the clerk or person making it, the first publication promptly and each two [2] succeeding publications at least seven [7] and not more than fourteen [14] days after the prior publication, in a newspaper authorized by law to publish notices, and published in the county where the complaint or action is filed, where the res is located, or where the defendant resides or where he was known last to reside. If no newspaper is published in the county, then the summons shall be published in the county in this state nearest thereto in which any such paper may be printed, or in a place specially ordered by the court. The person seeking the service or his attorney may designate any qualified newspaper, and if he fails to do so, the selection may be made by the clerk.",
+      "text_sha256": "2522256db86cb0a248d81298fe422d7889dec47c36f9823dc560ff1b3e6fccd1",
+      "publisher_sha256": "df040340bec7a70c3868c25d1c4612ce618452900c01838a7efe55c9fc6cd5d6",
+      "retrieved_at": "2026-11-21T23:01:23.388668+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Indiana Supreme Court rule; publication intervals for otherwise authorized publication"
+    },
+    "67a4998bef3694934ca55832c76dfc": {
+      "source_id": "US-IN:service_time_limit:4d347d482126",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 4.1(C) (returned-mail notice)",
+      "text": "(C) Duty to Notify Court. When service is predicated upon mail, if the mailed copy is returned for any reason prior to entry of judgment or within thirty days thereafter, the party relying upon service must file notice with the court.",
+      "text_sha256": "dd1373a8039dfb812b03158d2f5470dc4683c4fad780eca5bf193927b924186c",
+      "publisher_sha256": "6a43acf975b87e062068c1fe6a07b66e80cb945c0dfc295ede2536df12739e86",
+      "retrieved_at": "2026-11-21T23:01:23.402474+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Indiana Supreme Court rule; notification upon returned mailed copy, not a general service cutoff",
+      "effective_from": "2026-01-01"
     }
   },
   "fault_allocation": {

@@ -434,6 +434,18 @@
         "retrieved_at": "2026-11-21T21:58:25.149247+00:00",
         "sha256": "1a68a272b3acd5be5315ddacedbaf9e1c7bc9ce7b32c11eda9d0054c8f77d819"
       }
+    },
+    "US-HI:service_time_limit:eb20a537616c": {
+      "category": "service_time_limit",
+      "title": "Haw. Dist. Ct. R. Civ. P. 4(g) (proof of service timing)",
+      "url": "https://www.courts.state.hi.us/wp-content/uploads/2024/09/dcrcp_ada.htm",
+      "locator": "Haw. Dist. Ct. R. Civ. P. 4(g) (proof of service timing)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T23:01:23.993083+00:00",
+        "sha256": "1156b9a104fe43a8389cc981a55d493fb6972f4ff1beeb1a1b71a3caac93612b"
+      }
     }
   },
   "court_directory": [
@@ -749,6 +761,19 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Hawaii Legislature HRS § 388-10(a), employee remedy and separate special-fund penalty"
+    },
+    "1e831cb50d522d1ee5079703f9a71b": {
+      "source_id": "US-HI:service_time_limit:eb20a537616c",
+      "authority_type": "court_rule",
+      "citation": "Haw. Dist. Ct. R. Civ. P. 4(g) (proof of service timing)",
+      "text": "The person serving the process shall make proof of service thereof to the court promptly and in any event within the time during which the person served must respond to process. When service is made by any person specially appointed by the court, or by an authorized process server, that person shall make affidavit of such service.",
+      "text_sha256": "a8660d07c0e9d5487d4fe523579a6026871719d96d593cbba03124c9ecee82f4",
+      "publisher_sha256": "1156b9a104fe43a8389cc981a55d493fb6972f4ff1beeb1a1b71a3caac93612b",
+      "retrieved_at": "2026-11-21T23:01:23.993083+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Hawaiʻi District Court",
+      "publisher_member": "District Court rule on time for proof of original service"
     }
   },
   "fault_allocation": {

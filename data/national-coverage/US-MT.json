@@ -405,6 +405,18 @@
         "retrieved_at": "2026-11-21T17:43:02.381551+00:00",
         "sha256": "21f64cdb51eacf39c7833b68e925a7ac213d386d48eb6b08ef59921541b212b9"
       }
+    },
+    "US-MT:service_time_limit:ee26b7c54e78": {
+      "category": "service_time_limit",
+      "title": "Mont. R. Civ. P. 4(t)(1)–(2)",
+      "url": "https://courts.mt.gov/external/rules/civ_proc.pdf",
+      "locator": "Mont. R. Civ. P. 4(t)(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:55:40.309254+00:00",
+        "sha256": "7502442cb52ec026409c735276d06de6149553d5d01b8586f4610f0f14cceeda"
+      }
     }
   },
   "court_directory": [
@@ -735,6 +747,18 @@
       "language": "en",
       "edition": "Montana Code Annotated 2025; 2025 Ch. 174 applicability verified",
       "publisher_member": "Montana Legislature 2025 MCA § 27-2-202(2); 2025 Ch. 174 § 3 addresses filings on or after October 1, 2025"
+    },
+    "87e3b2790c8e2149f0b42c4cee762e": {
+      "source_id": "US-MT:service_time_limit:ee26b7c54e78",
+      "authority_type": "court_rule",
+      "citation": "Mont. R. Civ. P. 4(t)(1)–(2)",
+      "text": "(t) Time Limit for Issuance and Service of Process. (1) A plaintiff must accomplish service within three years after filing a complaint. Absent an appearance by defendant(s), the court, upon motion or on its own initiative, must dismiss an action without prejudice if the plaintiff fails to do so. (2) A plaintiff who names a fictitious defendant in the complaint pursuant to section 25-5-103 may, within three years of filing the original complaint, amend the complaint to substitute a real defendant for the fictitious defendant. The three-year time period set forth in Rule 4(t)(1) begins to run as to the newly identified defendant from the date of the filing of the original complaint.",
+      "text_sha256": "094537959abbb2b3d1c9ef0c84453d18e73d6df19c83164776c9a0784a4ab0fc",
+      "publisher_sha256": "7502442cb52ec026409c735276d06de6149553d5d01b8586f4610f0f14cceeda",
+      "retrieved_at": "2026-11-20T22:55:40.309254+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Montana Judicial Branch rules compilation; appearance and fictitious-defendant qualifications"
     }
   },
   "forms": {

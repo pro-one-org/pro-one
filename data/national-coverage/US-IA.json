@@ -466,6 +466,18 @@
         "retrieved_at": "2026-11-20T18:40:43.165942+00:00",
         "sha256": "ae6ecf5e9a558a4f80cd0e63a5bc3229fb7681ecd5946a4ca8fbe1773f7c56b6"
       }
+    },
+    "US-IA:service_time_limit:055eb7b3eeed": {
+      "category": "service_time_limit",
+      "title": "Iowa R. Civ. P. 1.302(5)",
+      "url": "https://www.legis.iowa.gov/docs/ACO/CourtRulesChapter/07-31-2026.1.pdf",
+      "locator": "Iowa R. Civ. P. 1.302(5)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:54.208218+00:00",
+        "sha256": "ae6ecf5e9a558a4f80cd0e63a5bc3229fb7681ecd5946a4ca8fbe1773f7c56b6"
+      }
     }
   },
   "court_directory": [
@@ -745,6 +757,19 @@
       "language": "en",
       "court": "Iowa courts applying the ordinary civil rules",
       "edition": "Iowa Rules of Civil Procedure chapter PDF dated September 30, 2026"
+    },
+    "c37bfd2da065e62006d54405784426": {
+      "source_id": "US-IA:service_time_limit:055eb7b3eeed",
+      "authority_type": "court_rule",
+      "citation": "Iowa R. Civ. P. 1.302(5)",
+      "text": "1.302(5) If service of the original notice is not made upon the defendant, respondent, or other party to be served within 90 days after filing the petition, the court, upon motion or its own initiative after notice to the party filing the petition, shall dismiss the action without prejudice as to that defendant, respondent, or other party to be served or direct an alternate time or manner of service. If the party filing the papers shows good cause for the failure of service, the court shall extend the time for service for an appropriate period.",
+      "text_sha256": "6baef0f1b74dc6623536e69cfb173dbaec3bac611158c09610a3ccb159e8e94d",
+      "publisher_sha256": "ae6ecf5e9a558a4f80cd0e63a5bc3229fb7681ecd5946a4ca8fbe1773f7c56b6",
+      "retrieved_at": "2026-11-20T16:01:54.208218+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Iowa Court Rules, July 31, 2026 archive, Chapter 1",
+      "publisher_member": "Chapter 1, Rule 1.302; subrule (3) expressly excludes small claims from that subrule"
     }
   },
   "fault_allocation": {

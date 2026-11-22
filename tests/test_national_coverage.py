@@ -194,12 +194,28 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertIn("except summary and executory proceedings", request)
         self.assertIn("whichever period is longer", fees)
         self.assertIn("litigants permitted to litigate without the payment of costs", fees)
+        historical, = provider.search(query.model_copy(update={"authority_status": "historical"}))
+        self.assertIn("prospective application only", provider.fetch(historical).text)
         self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
                                                                   "authority_as_of": "2026-11-21"})))
         complaint = next(shell for shell in coverage("US-LA")["action_shells"] if shell["action_type"] == "complaint")
-        self.assertEqual(len(complaint["review_evidence"]["service_time_limit"]), 2)
+        self.assertEqual(len(complaint["review_evidence"]["service_time_limit"]), 3)
         self.assertNotIn("service_time_limit", complaint["procedure_evidence"])
         self.assertEqual((complaint["readiness"], complaint["execution"]), ("blocked", "disabled"))
+
+    def test_pennsylvania_service_timing_distinguishes_location_and_reissuance(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Pennsylvania", legal_area="civil_procedure",
+                               topics=["service_time_limit"], authority_status="unresolved")
+        documents = [provider.fetch(key) for key in provider.search(query)]
+        by_citation = {document.source["citation"]["preferred_citation"]: document.text for document in documents}
+        self.assertIn("within the Commonwealth within 30 days", by_citation["Pa. R. Civ. P. 401(a)"])
+        self.assertIn("outside the Commonwealth within ninety days",
+                      by_citation["Pa. R. Civ. P. 404 (outside-Commonwealth timing)"])
+        self.assertIn("only if the writ or complaint has not been served on any defendant",
+                      by_citation["Pa. R. Civ. P. 401(b)(1)–(2)"])
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                  "authority_as_of": "2026-11-21"})))
 
     def test_michigan_certified_summons_timing_stays_in_blocked_review(self):
         provider = RetainedLegislativeResearch()
@@ -1015,10 +1031,12 @@ class NationalCoverageTests(unittest.TestCase):
             with self.subTest(state=state, citation=citation):
                 query = ResearchMatter(country="US", state=state, legal_area="civil_procedure",
                                        topics=["service_time_limit"], authority_status=status, authority_as_of=day)
-                documents = [provider.fetch(key) for key in provider.search(query)]
+                selectors = provider.search(query)
+                documents = [provider.fetch(key) for key in selectors]
                 match, = [doc for doc in documents if citation in doc.source["citation"]["preferred_citation"]]
                 self.assertIn(condition, match.text)
-                self.assertEqual(provider.search(query.model_copy(update={"state": "Alabama"})), [])
+                other_selectors = provider.search(query.model_copy(update={"state": "Alabama"}))
+                self.assertTrue(set(selectors).isdisjoint(other_selectors))
 
     def test_tenancy_notice_keeps_publisher_version_limits_and_local_requirements(self):
         provider = RetainedLegislativeResearch()
