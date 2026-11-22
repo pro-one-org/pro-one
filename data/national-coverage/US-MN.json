@@ -535,6 +535,30 @@
         "retrieved_at": "2026-11-22T03:08:06.058152+00:00",
         "sha256": "f5368e9a2f9d4a37be26a60beb77c0e4725cb0fcba9d4152e787956707f4da11"
       }
+    },
+    "US-MN:consumer_agency:4c38bab9e924": {
+      "category": "consumer_agency",
+      "title": "Minn. Stat. § 325F.70, subd. 1",
+      "url": "https://www.revisor.mn.gov/statutes/cite/325F.70",
+      "locator": "Minn. Stat. § 325F.70, subd. 1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:30:05.746922+00:00",
+        "sha256": "d2d16f2662022fb0e624f46abc78a9885e2a2dd9561d2bada19c08312bb9f95a"
+      }
+    },
+    "US-MN:consumer_remedies:e3f814701333": {
+      "category": "consumer_remedies",
+      "title": "Minn. Stat. § 325F.70, subd. 3",
+      "url": "https://www.revisor.mn.gov/statutes/cite/325F.70",
+      "locator": "Minn. Stat. § 325F.70, subd. 3",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:30:05.746922+00:00",
+        "sha256": "d2d16f2662022fb0e624f46abc78a9885e2a2dd9561d2bada19c08312bb9f95a"
+      }
     }
   },
   "court_directory": [
@@ -963,6 +987,30 @@
       "language": "en",
       "edition": "Minnesota Statutes 2026, Chapter 504B",
       "publisher_member": "Eviction complaint, summons and notice attachment; subdivisions 1a and 2 remain separate"
+    },
+    "40493be1f9cd8fe90a2325939f4e5c": {
+      "source_id": "US-MN:consumer_agency:4c38bab9e924",
+      "authority_type": "statute",
+      "citation": "Minn. Stat. § 325F.70, subd. 1",
+      "text": "Subdivision 1. Injunction. The attorney general or any county attorney may institute a civil action in the name of the state in the district court for an injunction prohibiting any violation of sections 325F.68 to 325F.70 . The court, upon proper proof that defendant has engaged in a practice made enjoinable by section 325F.69 , may enjoin the future commission of such practice. It shall be no defense to such an action that the state may have adequate remedies at law.",
+      "text_sha256": "885a2e38cf1437ab37eea4482b0541554248d2df4e397e8fb9a55f7eece8893d",
+      "publisher_sha256": "d2d16f2662022fb0e624f46abc78a9885e2a2dd9561d2bada19c08312bb9f95a",
+      "retrieved_at": "2026-11-22T03:30:05.746922+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Minnesota Revisor of Statutes, injunction by Attorney General or county attorney against covered consumer fraud."
+    },
+    "5766a6b0fe425104920097db50e93f": {
+      "source_id": "US-MN:consumer_remedies:e3f814701333",
+      "authority_type": "statute",
+      "citation": "Minn. Stat. § 325F.70, subd. 3",
+      "text": "Subd. 3. Private enforcement. (a) In addition to the remedies otherwise provided by law, a consumer injured by a violation of sections 325F.68 to 325F.70 , in connection with a sale of merchandise for personal, family, household, or agricultural purposes, may bring a civil action and recover damages, together with costs and disbursements, including costs of investigation and reasonable attorney fees, and receive other equitable relief as determined by the court. An action brought under this section benefits the public. (b) For the purposes of this subdivision: (1) \"consumer\" means a natural person or family farmer; (2) \"family farmer\" means a person or persons operating a family farm; and (3) \"family farm\" has the meaning given in section 116B.02, subdivision 6 .",
+      "text_sha256": "45848cbebab7c3c9b2920e6d353791a0c91d8a57e530f0cbd57edfe659bb2ab7",
+      "publisher_sha256": "d2d16f2662022fb0e624f46abc78a9885e2a2dd9561d2bada19c08312bb9f95a",
+      "retrieved_at": "2026-11-22T03:30:05.746922+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Minnesota Revisor of Statutes, defined consumer sales and private recovery of damages, fees and equitable relief."
     }
   },
   "fault_allocation": {

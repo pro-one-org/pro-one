@@ -507,6 +507,18 @@
         "retrieved_at": "2026-11-22T03:18:27.318178+00:00",
         "sha256": "6d70e6f8b76e85d390378e8727dcb45bd748e4aa321d1e58653c35c1522fb786"
       }
+    },
+    "US-MA:consumer_agency:f44a761efc02": {
+      "category": "consumer_agency",
+      "title": "Mass. Gen. Laws ch. 93A, § 4 (first paragraph)",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXV/Chapter93A/Section4",
+      "locator": "Mass. Gen. Laws ch. 93A, § 4 (first paragraph)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:30:44.560550+00:00",
+        "sha256": "6ffef1a2df0c413388ad751ca0a03a8de09c9261ba89e35bb65348909935dd22"
+      }
     }
   },
   "court_directory": [
@@ -912,6 +924,18 @@
       "language": "en",
       "court": "Massachusetts small claims proceedings",
       "publisher_member": "Small claims arising in a plaintiff's trade or commerce or involving assigned debt."
+    },
+    "dc7746117ccbacc112f51e17212aba": {
+      "source_id": "US-MA:consumer_agency:f44a761efc02",
+      "authority_type": "statute",
+      "citation": "Mass. Gen. Laws ch. 93A, § 4 (first paragraph)",
+      "text": "Whenever the attorney general has reason to believe that any person is using or is about to use any method, act, or practice declared by section two to be unlawful, and that proceedings would be in the public interest, he may bring an action in the name of the commonwealth against such person to restrain by temporary restraining order or preliminary or permanent injunction the use of such method, act or practice. The action may be brought in the superior court of the county in which such person resides or has his principal place of business, or the action may be brought in the superior court of Suffolk county with the consent of the parties or if the person has no place of business within the commonwealth. If more than one person is joined as a defendant, such action may be brought in the superior court of the county where any one defendant resides or has his principal place of business, or in Suffolk county. Said court may issue temporary restraining orders or preliminary or permanent injunctions and make such other orders or judgments as may be necessary to restore to any person who has suffered any ascertainable loss by reason of the use or employment of such unlawful method, act or practice any moneys or property, real or personal, which may have been acquired by means of such method, act, or practice. If the court finds that a person has employed any method, act or practice which he knew or should have known to be in violation of said section two, the court may require such person to pay to the commonwealth a civil penalty of not more than five thousand dollars for each such violation and also may require the said person to pay the reasonable costs of investigation and litigation of such violation, including reasonable attorneys' fees. If the court finds any method, act, or practice unlawful with regard to any security or any contract of sale of a commodity for future delivery as defined in section two, the court may issue such orders or judgments as may be necessary to restore any person who has suffered any ascertainable loss of any moneys or property, real or personal, or up to three but not less than two times that amount if the court finds that the use of the act or practice was a willful violation of said section two, a civil penalty to be paid to the commonwealth of not more than five thousand dollars for each such violation, and also may require said person to pay the reasonable costs of investigation and litigation of such violation, including reasonable attorneys fees.",
+      "text_sha256": "907cbd57d6eeaf66c077f125051262c28f986ce3e54f6234ece9a84bfc85bddd",
+      "publisher_sha256": "6ffef1a2df0c413388ad751ca0a03a8de09c9261ba89e35bb65348909935dd22",
+      "retrieved_at": "2026-11-22T03:30:44.560550+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Massachusetts General Court, public injunction, venue and court-ordered relief under the first paragraph. Pre-action notice follows separately."
     }
   },
   "fault_allocation": {

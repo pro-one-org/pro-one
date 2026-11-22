@@ -548,6 +548,18 @@
         "retrieved_at": "2026-11-22T03:08:05.873230+00:00",
         "sha256": "c8d0c6a4d9ac8698a04f7154817352ab11796fa56f8b77aeb2cbac995c52fba3"
       }
+    },
+    "US-OH:consumer_agency:3477b283b1ca": {
+      "category": "consumer_agency",
+      "title": "Ohio Rev. Code § 1345.07(A)",
+      "url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/13/1345/1345.07/4-6-2017/1345.07-4-6-2017.pdf",
+      "locator": "Ohio Rev. Code § 1345.07(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:30:05.967330+00:00",
+        "sha256": "92de9f2ee8c84e58bb7126897a47d21ad2f5207a514b7a5412e22f4817b929bf"
+      }
     }
   },
   "court_directory": [
@@ -1061,6 +1073,20 @@
       "language": "en",
       "publisher_member": "Ohio Laws, selected tenancy and oral-tenancy grounds; (B) supplies the referenced qualification",
       "effective_from": "2023-10-03"
+    },
+    "48370822b4a204fca818f40b94ca1b": {
+      "source_id": "US-OH:consumer_agency:3477b283b1ca",
+      "authority_type": "statute",
+      "citation": "Ohio Rev. Code § 1345.07(A)",
+      "text": "(A) If the attorney general, by the attorney general's own inquiries or as a result of complaints, has reasonable cause to believe that a supplier has engaged or is engaging in an act or practice that violates this chapter, and that the action would be in the public interest, the attorney general may bring any of the following: (1) An action to obtain a declaratory judgment that the act or practice violates section 1345.02, 1345.03, or 1345.031 of the Revised Code; (2)(a) An action, with notice as required by Civil Rule 65, to obtain a temporary restraining order, preliminary injunction, or permanent injunction to restrain the act or practice. If the attorney general shows by a preponderance of the evidence that the supplier has violated or is violating section 1345.02, 1345.03, or 1345.031 of the Revised Code, the court may issue a temporary restraining order, preliminary injunction, or permanent injunction to restrain and prevent the act or practice. (b)(i) Except as provided in division (A)(2)(b)(ii) of this section, on motion of the attorney general, or on its own motion, the court may impose a civil penalty of not more than five thousand dollars for each day of violation of a temporary restraining order, preliminary injunction, or permanent injunction issued under this section, if the supplier received notice of the action. The civil penalties shall be paid as provided in division (G) of this section. (ii) If the court issues under this section a temporary restraining order, preliminary injunction, or permanent injunction to restrain and prevent an act or practice that is a violation of section 1345.02 and division (A) of section 1349.81 of the Revised Code, on motion of the attorney general, or on its own motion, the court may impose a civil penalty of not less than five thousand dollars and not more than fifteen thousand dollars for each day of violation of the temporary restraining order, preliminary injunction, or permanent injunction, if the supplier received notice of the action. The civil penalties shall be paid as provided in division (G) of this section. (c) Upon the commencement of an action under division (A)(2) of this section against a supplier who operates under a license, permit, certificate, commission, or other authorization issued by the supreme court or by a board, commission, department, division, or other agency of this state, the attorney general shall immediately notify the supreme court or agency that such an action has been commenced against the supplier. (3) A class action under Civil Rule 23, as amended, on behalf of consumers who have engaged in consumer transactions in this state for damage caused by: (a) An act or practice enumerated in division (B), (D), or (G) of section 1345.02 of the Revised Code; (b) Violation of a rule adopted under division (B)(2) of section 1345.05 of the Revised Code before the consumer transaction on which the action is based; (c) An act or practice determined by a court of this state to violate section 1345.02, 1345.03, or 1345.031 of the Revised Code and committed after the decision containing the determination has been made available for public inspection under division (A)(3) of section 1345.05 of the Revised Code.",
+      "text_sha256": "4188ccc5cf3fd7881bf9128d152d56f2502ec16fa4d6dfa368e73a6b33ee0469",
+      "publisher_sha256": "92de9f2ee8c84e58bb7126897a47d21ad2f5207a514b7a5412e22f4817b929bf",
+      "retrieved_at": "2026-11-22T03:30:05.967330+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Ohio Legislative Service Commission authenticated April 6, 2017 version",
+      "publisher_member": "Ohio Legislative Service Commission authenticated version effective April 6, 2017; public remedies under subdivision (A).",
+      "effective_from": "2017-04-06"
     }
   },
   "fault_allocation": {

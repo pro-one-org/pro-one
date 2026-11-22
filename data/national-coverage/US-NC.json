@@ -426,6 +426,18 @@
         "retrieved_at": "2026-11-20T15:21:02.946874+00:00",
         "sha256": "86be095fe77ef7fca0ff3db9cef136d79009c2766214cfc00c04b8afbbc84569"
       }
+    },
+    "US-NC:consumer_agency:033e7c050cd5": {
+      "category": "consumer_agency",
+      "title": "N.C. Gen. Stat. § 75-15.2",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_75/GS_75-15.2.html",
+      "locator": "N.C. Gen. Stat. § 75-15.2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:30:05.657365+00:00",
+        "sha256": "4e9d59e2e890a4d13d342b065e542d6eb23801cffe1b57b630111247fab562ec"
+      }
     }
   },
   "court_directory": [
@@ -724,6 +736,18 @@
       "language": "en",
       "court": "North Carolina Superior and District Courts",
       "publisher_member": "North Carolina General Assembly Rule 4(c)-(f); return, extensions, tax foreclosure and foreign service qualifications, discontinuance, renewed commencement and date of multiple summonses"
+    },
+    "53b4de15cd1d9dafe32a8ebdd998d3": {
+      "source_id": "US-NC:consumer_agency:033e7c050cd5",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 75-15.2",
+      "text": "In any suit instituted by the Attorney General, in which the defendant is found to have violated G.S. 75-1.1 and the acts or practices which constituted the violation were, when committed, knowingly violative of a statute, the court may, in its discretion, impose a civil penalty against the defendant of up to five thousand dollars ($5,000) for each violation. In any action brought by the Attorney General pursuant to this Chapter in which it is shown that an action or practice when committed was specifically prohibited by a court order, the Court may, in its discretion, impose a civil penalty of up to five thousand dollars ($5,000) for each violation. Civil penalties may be imposed in a new action or by motion in an earlier action, whether or not such earlier action has been concluded. In determining the amount of the civil penalty, the court shall consider all relevant circumstances, including, but not limited to, the extent of the harm caused by the conduct constituting a violation, the nature and persistence of such conduct, the length of time over which the conduct occurred, the assets, liabilities, and net worth of the person, whether corporate or individual, and any corrective action taken by the defendant. The clear proceeds of penalties so assessed shall be remitted to the Civil Penalty and Forfeiture Fund in accordance with G.S. 115C-457.2.",
+      "text_sha256": "159de99b7d31cc575d0e518bd6bbe1aaafb942a28543d078c283164bd0fb0a58",
+      "publisher_sha256": "4e9d59e2e890a4d13d342b065e542d6eb23801cffe1b57b630111247fab562ec",
+      "retrieved_at": "2026-11-22T03:30:05.657365+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Carolina General Assembly, Attorney General actions and conditions for civil penalties."
     }
   },
   "fault_allocation": {

@@ -579,6 +579,18 @@
         "retrieved_at": "2026-11-22T03:08:04.120882+00:00",
         "sha256": "7de899fa9983168c6c919295e177141814baabb862c3617481e96ecd1baecb67"
       }
+    },
+    "US-VA:consumer_agency:2ad9747f0caf": {
+      "category": "consumer_agency",
+      "title": "Va. Code § 59.1-203(A)–(C)",
+      "url": "https://law.lis.virginia.gov/vacode/title59.1/chapter17/section59.1-203/",
+      "locator": "Va. Code § 59.1-203(A)–(C)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:30:05.714686+00:00",
+        "sha256": "dfc84393ca790f84357c6558fab558c5957f057d5597676991e46c7238da0278"
+      }
     }
   },
   "court_directory": [
@@ -1004,6 +1016,18 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Virginia LIS; core duty, damages, code priority and limitations on delegation"
+    },
+    "67993f3b56d9e80c8215aed6bcc756": {
+      "source_id": "US-VA:consumer_agency:2ad9747f0caf",
+      "authority_type": "statute",
+      "citation": "Va. Code § 59.1-203(A)–(C)",
+      "text": "A. Notwithstanding any other provisions of law to the contrary, the Attorney General, any attorney for the Commonwealth, or the attorney for any city, county, or town may cause an action to be brought in the appropriate circuit court in the name of the Commonwealth, or of the county, city, or town to enjoin any violation of § 59.1-200 or 59.1-200.1 . The circuit court having jurisdiction may enjoin such violations notwithstanding the existence of an adequate remedy at law. In any action under this section, it shall not be necessary that damages be proved. B. Unless the Attorney General, any attorney for the Commonwealth, or the attorney for any county, city, or town determines that a person subject to the provisions of this chapter intends to depart from this Commonwealth or to remove his property herefrom, or to conceal himself or his property herein, or on a reasonable determination that irreparable harm may occur if immediate action is not taken, he shall, before initiating any legal proceedings as provided in this section, give notice in writing that such proceedings are contemplated, and allow such person a reasonable opportunity to appear before said attorney and show that a violation did not occur or execute an assurance of voluntary compliance, as provided in § 59.1-202 . C. The circuit courts are authorized to issue temporary or permanent injunctions to restrain and prevent violations of § 59.1-200 or 59.1-200.1 .",
+      "text_sha256": "cbc3897d892e37812238ef42f7666971c83270ad13c00c53c8109df505e670ef",
+      "publisher_sha256": "dfc84393ca790f84357c6558fab558c5957f057d5597676991e46c7238da0278",
+      "retrieved_at": "2026-11-22T03:30:05.714686+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Virginia Legislative Information System, public injunction by specified state and local attorneys with pre-action notice exceptions."
     }
   },
   "fault_allocation": {

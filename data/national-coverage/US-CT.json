@@ -623,6 +623,18 @@
         "retrieved_at": "2026-11-18T20:45:34.053179+00:00",
         "sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5"
       }
+    },
+    "US-CT:consumer_agency:9e0925d4bbae": {
+      "category": "consumer_agency",
+      "title": "Conn. Gen. Stat. § 42-110m(a)",
+      "url": "https://www.cga.ct.gov/current/pub/chap_735a.htm",
+      "locator": "Conn. Gen. Stat. § 42-110m(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:30:44.560550+00:00",
+        "sha256": "670245dbbeca6b25d41fb16906546308e7c5a214c6a67ccde76c28deca00c796"
+      }
     }
   },
   "court_directory": [
@@ -1122,6 +1134,19 @@
       "currentness": "historical",
       "language": "en",
       "edition": "Connecticut General Statutes, revised to January 1, 2025"
+    },
+    "bc7df552a8aacb8995f0608e446164": {
+      "source_id": "US-CT:consumer_agency:9e0925d4bbae",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 42-110m(a)",
+      "text": "(a) Whenever the commissioner has reason to believe that any person has been engaged or is engaged in an alleged violation of any provision of this chapter said commissioner may proceed as provided in sections 42-110d and 42-110e or may request the Attorney General to apply in the name of the state of Connecticut to the Superior Court for an order temporarily or permanently restraining and enjoining the continuance of such act or acts or for an order directing restitution and the appointment of a receiver in appropriate instances, or both. Proof of public interest or public injury shall not be required in any action brought pursuant to section 42-110d , section 42-110e or this section. Such action may include an application to enforce any term of an assurance of voluntary compliance accepted under section 42-110j . The court may award the relief applied for or so much as it may deem proper including reasonable attorney's fees, accounting and such other relief as may be granted in equity. In such action the commissioner shall be responsible for all necessary investigative support.",
+      "text_sha256": "04a2f77edf25e3bdb8ac6698313849f682f96653692dc23d1c2a76e3617c8505",
+      "publisher_sha256": "670245dbbeca6b25d41fb16906546308e7c5a214c6a67ccde76c28deca00c796",
+      "retrieved_at": "2026-11-22T03:30:44.560550+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Connecticut General Assembly codification of court relief and enforcement of assurances. Review the 2026 supplement for changes to other sections including 42-110d and 42-110j.",
+      "effective_from": "2024-06-04"
     }
   },
   "fault_allocation": {

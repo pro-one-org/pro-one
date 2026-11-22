@@ -755,6 +755,18 @@
         "retrieved_at": "2026-11-22T03:18:42.417085+00:00",
         "sha256": "cae5582dcd005e848f0d7a7256d1aef05818ee0b1ff4af51d5042e81bae4b60f"
       }
+    },
+    "US-MI:consumer_agency:9edfa85a6c82": {
+      "category": "consumer_agency",
+      "title": "Mich. Comp. Laws § 445.905(1)–(2)",
+      "url": "https://legislature.mi.gov/Laws/MCL?objectName=mcl-445-905",
+      "locator": "Mich. Comp. Laws § 445.905(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:30:06.401921+00:00",
+        "sha256": "5ba4645bf47f8a47c77ed81341b22140505bc7c259e7ac863e5e71c8e552c9e5"
+      }
     }
   },
   "court_directory": [
@@ -1486,6 +1498,19 @@
       "language": "en",
       "court": "Michigan District Court, Small Claims Division",
       "publisher_member": "Michigan Legislature, compiled through PA 114 of 2026, rendered November 19, 2026. Filing and prosecution restrictions for assignees and third-party beneficiaries in the small claims division."
+    },
+    "fe27af82193abe81383c894dfcc097": {
+      "source_id": "US-MI:consumer_agency:9edfa85a6c82",
+      "authority_type": "statute",
+      "citation": "Mich. Comp. Laws § 445.905(1)–(2)",
+      "text": "(1) If the attorney general has probable cause to believe that a person has engaged, is engaging, or is about to engage in a method, act, or practice that is unlawful under section 3, and gives notice pursuant to this section, the attorney general may bring an action in accordance with principles of equity to restrain the defendant by temporary or permanent injunction from engaging in the method, act, or practice. The action may be brought in the circuit court of the county where the defendant is established or conducts business or, if the defendant is not established in this state, in the circuit court of Ingham County. The court may award costs to the prevailing party. Except as otherwise provided in this section, for persistent and knowing violation of section 3 the court may assess the defendant a civil fine of not more than $25,000.00. For a violation of section 3(1)(kk), each performance or production is a separate violation. For a violation of section 3l, the court may assess the defendant a civil fine of not more than $1,000.00 per violation. Each day a violation of section 3l occurs counts as a separate violation. (2) Unless waived by the court on good cause shown not less than 10 days before the commencement of an action under this section, the attorney general shall notify the person of his or her intended action and give the person an opportunity to cease and desist from the alleged unlawful method, act, or practice or to confer with the attorney general in person, by counsel, or by other representative as to the proposed action before the proposed filing date. The notice may be given to the person by mail, postage prepaid, to his or her usual place of business or, if the person does not have a usual place of business, to his or her last known address, or, if the person is a corporation, only to a resident agent who is designated to receive service of process or to an officer of the corporation.",
+      "text_sha256": "fa869ce24ff607b19561c7b8347fb019a096e1ecef2be9397d75df425b821ab7",
+      "publisher_sha256": "5ba4645bf47f8a47c77ed81341b22140505bc7c259e7ac863e5e71c8e552c9e5",
+      "retrieved_at": "2026-11-22T03:30:06.401921+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Michigan Legislature, public injunction, statutory pre-action notice and court waiver, venue and civil fine distinctions.",
+      "effective_from": "2021-04-01"
     }
   },
   "fault_allocation": {

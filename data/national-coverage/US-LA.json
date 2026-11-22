@@ -446,6 +446,18 @@
         "retrieved_at": "2026-11-22T03:05:44.077416+00:00",
         "sha256": "c6875666098b801dcac0608f0f6b441ccb52171575acecc6b1b0f1d06c05564f"
       }
+    },
+    "US-LA:consumer_agency:c94dec9f626a": {
+      "category": "consumer_agency",
+      "title": "La. Rev. Stat. § 51:1407(A)",
+      "url": "https://www.legis.la.gov/Legis/Law.aspx?d=104031",
+      "locator": "La. Rev. Stat. § 51:1407(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:30:05.812260+00:00",
+        "sha256": "e478b09576a40b6ac3cdd7197a6052d48a8e4c39bae10c90c85deced50711efc"
+      }
     }
   },
   "court_directory": [
@@ -821,6 +833,18 @@
       "language": "en",
       "publisher_member": "Louisiana State Legislature, bad-faith obligor and direct consequences",
       "effective_from": "1985-01-01"
+    },
+    "14fa35aaee58938a5b7a04449696cb": {
+      "source_id": "US-LA:consumer_agency:c94dec9f626a",
+      "authority_type": "statute",
+      "citation": "La. Rev. Stat. § 51:1407(A)",
+      "text": "A. Whenever the attorney general has reason to believe that any person is using, has used, or is about to use any method, act, or practice declared by R.S. 51:1405 to be unlawful, he may bring an action for injunctive relief in the name of the state against such person to restrain and enjoin the use of such method, act, or practice. The action may be brought in the district court having civil jurisdiction in any parish in which such person resides, or is domiciled or has his principal place of business, or in any parish in which such person did business, or, with consent of the parties, may be brought in the district court of the parish where the state capitol is located. In the event these district courts are not operational due to a declared state of emergency, the action shall be brought in an operating judicial court located closest in geographic distance to the Nineteenth Judicial District Court in the parish of East Baton Rouge. In the event that such person was located outside of the state, but was soliciting in the state by mail, telephone, or any electronic communication, the action may be brought in the district court having civil jurisdiction in the parish in which the contact was made. It being against the public policy of the state of Louisiana to allow a contractual selection of venue or jurisdiction contrary to the provisions of the Louisiana Code of Civil Procedure, no provision of any contract which purports to waive these provisions of venue, or to waive or select venue or jurisdiction in advance of the filing of any civil action, may be enforced against any plaintiff in an action brought in these courts. These courts are authorized to issue temporary restraining orders or preliminary and permanent injunctions to restrain and enjoin violations of this Chapter, and such restraining orders or injunctions shall be issued without bond.",
+      "text_sha256": "5f620eac9f48999e10358a7f7e2f97a8bb0c9e696dfc5c2a45bca2ddae24e4ea",
+      "publisher_sha256": "e478b09576a40b6ac3cdd7197a6052d48a8e4c39bae10c90c85deced50711efc",
+      "retrieved_at": "2026-11-22T03:30:05.812260+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Louisiana State Legislature, public injunction authority, statutory venue and emergency conditions."
     }
   },
   "fault_allocation": {

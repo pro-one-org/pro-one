@@ -477,6 +477,30 @@
         "retrieved_at": "2026-11-21T22:15:24.441146+00:00",
         "sha256": "cb991c7fc3c0ca89efe11919bc5202be32b24f493dc76fe03ab7e814c89057ce"
       }
+    },
+    "US-IL:contract_breach:08f7968ed97d": {
+      "category": "contract_breach",
+      "title": "Green v. Trinity Int’l Univ., 344 Ill. App. 3d 1079 (2003)",
+      "url": "https://www.illinoiscourts.gov/Resources/4149abb2-8d44-458f-856a-3547ed3dda2a/2021208.htm",
+      "locator": "Green v. Trinity Int’l Univ., 344 Ill. App. 3d 1079 (2003)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:33:29.916565+00:00",
+        "sha256": "3e89523ca47ba3ccfcde5769b38a3df0ac1bc83e9297fbd82ff2964668d25921"
+      }
+    },
+    "US-IL:general_contract_damages:10d3cbe1e1b5": {
+      "category": "general_contract_damages",
+      "title": "J.B. Esker & Sons, Inc. v. Cle-Pa’s P’ship, No. 5-99-0811 (Ill. App. Ct. Oct. 10, 2001)",
+      "url": "https://www.illinoiscourts.gov/Resources/45130ad0-9a49-4a5a-a7ac-d649f332aa03/5990811.htm",
+      "locator": "J.B. Esker & Sons, Inc. v. Cle-Pa’s P’ship, No. 5-99-0811 (Ill. App. Ct. Oct. 10, 2001)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:34:45.789718+00:00",
+        "sha256": "3e5fee7b05d3d0f0ecee08c21144b10adb7f840de6c1f7dd240d37ac0b32d5d0"
+      }
     }
   },
   "court_directory": [
@@ -866,6 +890,40 @@
       "court": "Illinois trial courts governed by the Illinois Supreme Court Rules",
       "publisher_member": "Illinois Supreme Court published Rule 103, PDF p. 1, reasonable diligence with defendant-specific dismissal consequences",
       "effective_from": "2007-07-01"
+    },
+    "ef36e48800a0bdc90310eae212049f": {
+      "source_id": "US-IL:contract_breach:08f7968ed97d",
+      "authority_type": "opinion",
+      "citation": "Green v. Trinity Int’l Univ., 344 Ill. App. 3d 1079 (2003)",
+      "text": "The elements of a cause of action for breach of contract include: (1) an offer and acceptance, (2) consideration, (3) definite and certain contractual terms, (4) the plaintiff's performance of his contractual obligations, (5) the defendant's breach of the contract, and (6) damages resulting from the breach. Barille v. Sears Roebuck & Co. , 289 Ill. App. 3d 171, 175 (1997).",
+      "text_sha256": "ccdefd4b726bd5ef59abd1cdf9720cb08ae74d613cdc32afc6ee7efbc5ae30f5",
+      "publisher_sha256": "3e89523ca47ba3ccfcde5769b38a3df0ac1bc83e9297fbd82ff2964668d25921",
+      "retrieved_at": "2026-11-22T03:33:29.916565+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "December 19, 2003 appellate opinion",
+      "court": "Illinois Appellate Court, Second District",
+      "publisher_member": "Second District opinion, general elements in the challenge to the sufficiency of the plaintiff’s pleading.",
+      "decision_date": "2003-12-19",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissal of contract and tort claims arising from university employment; affirmed in part, reversed in part and remanded."
+    },
+    "38180b9858dca456b336db2eeec50b": {
+      "source_id": "US-IL:general_contract_damages:10d3cbe1e1b5",
+      "authority_type": "opinion",
+      "citation": "J.B. Esker & Sons, Inc. v. Cle-Pa’s P’ship, No. 5-99-0811 (Ill. App. Ct. Oct. 10, 2001)",
+      "text": "The goal of awarding compensatory damages is to place the aggrieved party in the same position it would have been in had the contract been performed. Illiana Machine & Manufacturing Corp. v. Duro-Chrome Corp. , 152 Ill. App. 3d 764, 768, 504 N.E.2d 974, 976 (1987). Shifting the payment of expert witness fees to the breaching party would place the prevailing party in the position it would have been in had the other terms of the contract been performed. See McCarthy v. U.S.I. Corp. , 678 A.2d 48, 54 (Me. 1996).",
+      "text_sha256": "f8870ded0f2b69618ecf18867631b8c16f9daab7d96062783c61cfc9d636203f",
+      "publisher_sha256": "3e5fee7b05d3d0f0ecee08c21144b10adb7f840de6c1f7dd240d37ac0b32d5d0",
+      "retrieved_at": "2026-11-22T03:34:45.789718+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "October 10, 2001 appellate slip opinion",
+      "court": "Illinois Appellate Court, Fifth District",
+      "publisher_member": "Fifth District slip opinion, contract compensatory principle explained when assessing contractual litigation expenses.",
+      "decision_date": "2001-10-10",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal in a construction-contract and mechanic’s lien dispute, including whether expert fees are recoverable under the contract."
     }
   },
   "fault_allocation": {

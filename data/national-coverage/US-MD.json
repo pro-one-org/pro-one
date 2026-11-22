@@ -465,6 +465,18 @@
         "retrieved_at": "2026-11-22T03:01:28.221408+00:00",
         "sha256": "5585d2f5f650c64c6558a884d194ca9eb0d2d93d5849b825546339fe220f9d6c"
       }
+    },
+    "US-MD:consumer_agency:ea2de70dd7f1": {
+      "category": "consumer_agency",
+      "title": "Md. Code, Com. Law § 13-406(a)–(c)",
+      "url": "https://mgaleg.maryland.gov/2026RS/Statute_Web/gcl/13-406.pdf",
+      "locator": "Md. Code, Com. Law § 13-406(a)–(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:30:44.467774+00:00",
+        "sha256": "26f9393c1a43cc8fcc38b73379eea94af9786b7aecbebdb18139b5b78c0c16b7"
+      }
     }
   },
   "court_directory": [
@@ -858,6 +870,18 @@
       "court": "District Court of Maryland",
       "publisher_member": "Printed page 66; applies to actions begun on or after July 1, 2023 and, insofar as practicable, then-pending actions; separate judgment-on-affidavit requirement",
       "effective_from": "2023-07-01"
+    },
+    "782c880fe10ba52a8430b0c6d2df5d": {
+      "source_id": "US-MD:consumer_agency:ea2de70dd7f1",
+      "authority_type": "statute",
+      "citation": "Md. Code, Com. Law § 13-406(a)–(c)",
+      "text": "(a) The Attorney General may seek an injunction to prohibit a person who has engaged or is engaging in a violation of this title from continuing or engaging in the violation. (b) The Attorney General shall serve notice of the general relief sought on the alleged violator at least seven days before the action for an injunction is filed. (c) The court may enter any order of judgment necessary to: (1) Prevent the use by a person of any prohibited practice; (2) Restore to a person any money or real or personal property acquired from him by means of any prohibited practice; or (3) Appoint a receiver in case of willful violation of this title.",
+      "text_sha256": "bea4c70fd0600bfe38c258a32c3ba548abbf67b94f2c717772420f980f39894b",
+      "publisher_sha256": "26f9393c1a43cc8fcc38b73379eea94af9786b7aecbebdb18139b5b78c0c16b7",
+      "retrieved_at": "2026-11-22T03:30:44.467774+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Maryland General Assembly 2026 Regular Session statutory publication, injunction, seven-day notice and court relief."
     }
   },
   "fault_allocation": {

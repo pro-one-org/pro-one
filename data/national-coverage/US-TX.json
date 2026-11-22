@@ -730,6 +730,30 @@
         "retrieved_at": "2026-11-22T03:18:27.728115+00:00",
         "sha256": "75d3b367a1853848b2f9622d5dd8edddbc9470bc65c0ce9e4e73d6277e76681a"
       }
+    },
+    "US-TX:contract_breach:7a98287a118b": {
+      "category": "contract_breach",
+      "title": "Messer v. Hereford Logistics & Commodity Co., No. 07-20-00007-CV (Tex. App.—Amarillo June 19, 2020)",
+      "url": "https://www.txcourts.gov/media/1447821/07-20-00007-cv-opinion.pdf",
+      "locator": "Messer v. Hereford Logistics & Commodity Co., No. 07-20-00007-CV (Tex. App.—Amarillo June 19, 2020)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:33:29.897966+00:00",
+        "sha256": "c38f00ea5a1167259f434c85ba347a006806cdd37fb32ddefe2e35257df4173a"
+      }
+    },
+    "US-TX:general_contract_damages:dadcbe32fb19": {
+      "category": "general_contract_damages",
+      "title": "Signature Indus. Servs., LLC v. Int’l Paper Co., 638 S.W.3d 179, 183 (Tex. 2022)",
+      "url": "https://www.txcourts.gov/media/1453476/200396.pdf",
+      "locator": "Signature Indus. Servs., LLC v. Int’l Paper Co., 638 S.W.3d 179, 183 (Tex. 2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:34:45.876814+00:00",
+        "sha256": "f55c1543e30f91fa238637a7d3baf7bfd7229f6d872449789fed4384f09676a9"
+      }
     }
   },
   "court_directory": [
@@ -1307,6 +1331,40 @@
       "edition": "Texas 89th Legislature, Regular Session, enrolled S.B. 38",
       "publisher_member": "Enrolled act, transition for eviction petitions filed before or on January 1, 2026, with a separate Section 16 effective date.",
       "effective_from": "2026-01-01"
+    },
+    "94b1fb62699c483a89e0a804e8768a": {
+      "source_id": "US-TX:contract_breach:7a98287a118b",
+      "authority_type": "opinion",
+      "citation": "Messer v. Hereford Logistics & Commodity Co., No. 07-20-00007-CV (Tex. App.—Amarillo June 19, 2020)",
+      "text": "The four essential elements of a breach-of-contract cause of action are as follows: (1) existence of a valid contract between the parties; (2) the plaintiff’s performance or tender of performance; (3) the defendant’s breach; and (4) the plaintiff’s damage as a result of that breach. Esty v. Beal Bank S.S.B., 298 S.W.3d 280, 299 (Tex. App.—Dallas 2009, no pet.); Valero Mktg. & Supply Co. v. Kalama Int’l, L.L.C., 51 S.W.3d 345, 351 (Tex. App. —Houston [1st Dist.] 2001, no pet.); Aquila Sw. Pipeline, Inc. v. Harmony Exploration, Inc., 48 S.W.3d 225, 235 (Tex. App.—San Antonio 2001, pet. denied).",
+      "text_sha256": "528b7744905edcdd69ec4e59caccec60619e49a9c80038f77d0f5187f608be9f",
+      "publisher_sha256": "c38f00ea5a1167259f434c85ba347a006806cdd37fb32ddefe2e35257df4173a",
+      "retrieved_at": "2026-11-22T03:33:29.897966+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "June 19, 2020 appellate memorandum opinion",
+      "court": "Texas Court of Appeals, Seventh District",
+      "publisher_member": "Seventh District civil memorandum opinion, breach elements in an appeal from no-evidence summary judgment.",
+      "decision_date": "2020-06-19",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from no-evidence summary judgment for defendants on the contract claim; affirmed."
+    },
+    "766c9060f31cbf0d2e72dbfbd539b9": {
+      "source_id": "US-TX:general_contract_damages:dadcbe32fb19",
+      "authority_type": "opinion",
+      "citation": "Signature Indus. Servs., LLC v. Int’l Paper Co., 638 S.W.3d 179, 183 (Tex. 2022)",
+      "text": "Texas law requires that consequential damages be both (1) foreseeable at the time of contracting, and (2) calculable with reasonable certainty. Phillips v. Carlton Energy Grp., LLC , 475 S.W.3d 265, 279 (Tex. 2015); Stuart v. Bayless, 964 S.W.2d 920, 921 (Tex. 1998). Applying these bedrock principles of contract law, we conclude that neither the jury’s award of $56.3 million nor the court of appeals’ reduced allowance of $12.4 million can stand. A catastrophic decline in the plaintiff company’s overall market value was not, at the time of contracting, a consequence of breach foreseeable to the defendant. Nor was a decline in the accounting measure of the plaintiff company’s “book value” a reasonably certain way to measure its damages. Because legally insufficient evidence supported the award of consequential damages and the plaintiff advances no valid theory of consequential damages in this Court, we render judgment against the plaintiff on that point.",
+      "text_sha256": "2f616c1b58096ba876d8e21fdc87e7cd13413ee7967cd5b93502526786d24074",
+      "publisher_sha256": "f55c1543e30f91fa238637a7d3baf7bfd7229f6d872449789fed4384f09676a9",
+      "retrieved_at": "2026-11-22T03:34:45.876814+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "January 14, 2022 Texas Supreme Court opinion",
+      "court": "Supreme Court of Texas",
+      "publisher_member": "Supreme Court opinion pages 2–3, foreseeability at formation and reasonable certainty for consequential damages.",
+      "decision_date": "2022-01-14",
+      "opinion_role": "majority",
+      "procedural_posture": "Petition for review after a contract damages jury verdict; reversed in part, affirmed in part, rendered in part and remanded."
     }
   },
   "fault_allocation": {

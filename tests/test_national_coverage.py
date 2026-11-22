@@ -67,6 +67,17 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertNotEqual(notice, limitations)
         self.assertIn("after the furnishing of notice", provider.fetch(limitations).text)
 
+    def test_minnesota_private_relief_is_distinct_from_public_injunctions(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Minnesota", legal_area="consumer",
+                               topics=["consumer_agency_enforcement"], authority_status="unresolved")
+        public, = provider.search(query)
+        self.assertIn("the attorney general or any county attorney", provider.fetch(public).text.lower())
+        remedies, = provider.search(query.model_copy(update={"topics": ["consumer_remedies"]}))
+        self.assertIn("personal, family, household, or agricultural purposes", provider.fetch(remedies).text)
+        self.assertNotEqual(public, remedies)
+        self.assertFalse(provider.search(query.model_copy(update={"state": "Iowa"})))
+
     def test_new_york_consumer_research_distinguishes_private_and_attorney_general_scope(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="New York", legal_area="consumer",
