@@ -1,0 +1,886 @@
+{
+  "jurisdiction": "US-MO",
+  "version": "1",
+  "sources": {
+    "US-MO:statutes:32d610221df1": {
+      "category": "statutes",
+      "title": "Revised Statutes",
+      "url": "https://revisor.mo.gov/main/Home.aspx",
+      "directory": "doj-MO",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MO:constitution:29bc4805768e": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.sos.mo.gov/pubs/constitution",
+      "directory": "codes",
+      "locator": "Missouri"
+    },
+    "US-MO:legislature:0a0920afebfd": {
+      "category": "legislature",
+      "title": "General Assembly",
+      "url": "https://www.mo.gov/government/legislative-branch/",
+      "directory": "codes",
+      "locator": "Missouri"
+    },
+    "US-MO:labor_agency:bf1cd432b2de": {
+      "category": "labor_agency",
+      "title": "www.labor.mo.gov",
+      "url": "http://www.labor.mo.gov/",
+      "directory": "labor",
+      "locator": "Missouri"
+    },
+    "US-MO:commercial_code:3630a8bab309": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://revisor.mo.gov/main/OneChapter.aspx?chapter=400",
+      "directory": "ucc",
+      "locator": "Missouri"
+    },
+    "US-MO:civil_rules:04ecb21b8ded": {
+      "category": "civil_rules",
+      "title": "Civil Procedure and Limitations",
+      "url": "http://revisor.mo.gov/main/Home.aspx#T35",
+      "directory": "procedure",
+      "locator": "Missouri"
+    },
+    "US-MO:consumer_agency:8768ca62ec50": {
+      "category": "consumer_agency",
+      "title": "Missouri (MO)",
+      "url": "https://ago.mo.gov/civil-division/consumer",
+      "directory": "consumer",
+      "locator": "Missouri (MO)"
+    },
+    "US-MO:judiciary:1e35d4b824fb": {
+      "category": "judiciary",
+      "title": "Judiciary",
+      "url": "http://www.courts.mo.gov/",
+      "directory": "doj-MO",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-MO:court_directory:cff46dab0e67": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.courts.mo.gov/page.jsp?id=27",
+      "directory": "doj-MO",
+      "locator": "Supreme Court"
+    },
+    "US-MO:court_directory:04f28e82619a": {
+      "category": "court_directory",
+      "title": "Supreme Court Historical Database",
+      "url": "http://s1.sos.mo.gov/records/archives/archivesdb/supremecourt/",
+      "directory": "doj-MO",
+      "locator": "Supreme Court Historical Database"
+    },
+    "US-MO:court_directory:a5f8550b0e56": {
+      "category": "court_directory",
+      "title": "Appellate Courts",
+      "url": "http://www.courts.mo.gov/page.jsp?id=261",
+      "directory": "doj-MO",
+      "locator": "Appellate Courts"
+    },
+    "US-MO:court_directory:0c6c06cc8673": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "http://www.courts.mo.gov/page.jsp?id=321",
+      "directory": "doj-MO",
+      "locator": "Circuit Courts"
+    },
+    "US-MO:forms:1c520d4352f9": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "http://www.courts.mo.gov/page.jsp?id=103116",
+      "directory": "doj-MO",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-MO:constitution:d859db71ad9e": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.sos.mo.gov/pubs/constitution.asp",
+      "directory": "doj-MO",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MO:regulations:7d8481b62c3b": {
+      "category": "regulations",
+      "title": "Code of State Regulations",
+      "url": "http://www.sos.mo.gov/adrules/csr/csr.asp",
+      "directory": "doj-MO",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-MO:regulations:1d8343c8d05b": {
+      "category": "regulations",
+      "title": "Register",
+      "url": "http://www.sos.mo.gov/adrules/moreg/moreg.asp",
+      "directory": "doj-MO",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-MO:pi_limitations:8d881d62360d": {
+      "category": "pi_limitations",
+      "title": "Mo. Rev. Stat. § 516.120(4)",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=516.120",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://revisor.mo.gov/main/OneSection.aspx?section=516.120",
+        "retrieved_at": "2026-11-17T19:33:58.604667+00:00",
+        "http_status": "200",
+        "sha256": "5fd66250f582988023487b848f9ad62208b6e43f55f8d781f1b27509a8eb4fdd",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MO:written_contract_limitations:67915c1b5980": {
+      "category": "written_contract_limitations",
+      "title": "Mo. Rev. Stat. § 516.110(1)",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=516.110",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://revisor.mo.gov/main/OneSection.aspx?section=516.110",
+        "retrieved_at": "2026-11-17T19:33:59.646848+00:00",
+        "http_status": "200",
+        "sha256": "7f1027564f618904f2913770fcef8c2680083539fd57fb0e02d84902e5f8ef77",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MO:oral_contract_limitations:8d881d62360d": {
+      "category": "oral_contract_limitations",
+      "title": "Mo. Rev. Stat. § 516.120(1)",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=516.120",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://revisor.mo.gov/main/OneSection.aspx?section=516.120",
+        "retrieved_at": "2026-11-17T19:33:58.604667+00:00",
+        "http_status": "200",
+        "sha256": "5fd66250f582988023487b848f9ad62208b6e43f55f8d781f1b27509a8eb4fdd",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MO:small_claims:b1046dcf40d8": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.courts.mo.gov/hosted/circuit13/forms/Civil/CIVIL_SmallClaimsCourtHandbook.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.courts.mo.gov/hosted/circuit13/forms/Civil/CIVIL_SmallClaimsCourtHandbook.pdf",
+        "retrieved_at": "2026-11-17T19:42:37.813593+00:00",
+        "http_status": "200",
+        "sha256": "eb644cf6d891e0425c5c336119e2fffbb6bd6e7fa4b970c48ab270bd80843397",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MO:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    },
+    "US-MO:consumerLaw:970d2ab2aabc": {
+      "title": "Mo. Rev. Stat. § 407.010 et seq.",
+      "category": "consumerLaw",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=407.010",
+      "directory": "consumer_statutes_index",
+      "locator": "Mo. Rev. Stat. § 407.010 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-MO:contract_formation:5307caee0e92": {
+      "category": "contract_formation",
+      "title": "Mo. Rev. Stat. § 400.2-204",
+      "url": "https://www.revisor.mo.gov/main/OneSection.aspx?section=400.2-204",
+      "locator": "Mo. Rev. Stat. § 400.2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:32.001787+00:00",
+        "sha256": "91dfb8004d81844ee492c0f55edf67352d4a3bb6e9ec8b298fd5c6ed6fc9016e"
+      }
+    },
+    "US-MO:wageLaw:ed92685062f6": {
+      "category": "wageLaw",
+      "title": "Mo. Rev. Stat. § 290.110",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?bid=&section=290.110",
+      "locator": "Mo. Rev. Stat. § 290.110",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:56.350230+00:00",
+        "sha256": "6f10d8dfe9edcdeb0f53873ee15402a3695306ffff4a1f84d09197a0195884fb"
+      }
+    },
+    "US-MO:consumerLaw:a5211939e0e3": {
+      "category": "consumerLaw",
+      "title": "Mo. Rev. Stat. § 407.020(1)",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=407.020",
+      "locator": "Mo. Rev. Stat. § 407.020(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:44.302791+00:00",
+        "sha256": "20a13074b3884f6d905affe172e5f1cde8d868ceb9c83291490f1ef9c8893011"
+      }
+    },
+    "US-MO:pi_limitations:ee6dcba543bf": {
+      "category": "pi_limitations",
+      "title": "Mo. Rev. Stat. § 516.120",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=516.120",
+      "locator": "Mo. Rev. Stat. § 516.120",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:21.580666+00:00",
+        "sha256": "3695f73e648b32205241b1d918c09bb8bc17a6aa86ba718b1460537b4d9c34cc"
+      }
+    },
+    "US-MO:written_contract_limitations:7bded41c62c1": {
+      "category": "written_contract_limitations",
+      "title": "Mo. Rev. Stat. § 516.110(1)",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=516.110",
+      "locator": "Mo. Rev. Stat. § 516.110(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:35:42.205333+00:00",
+        "sha256": "99c10fd7a3b116a7f08b4905a09bfa5d416f03d4ad1e5b829a6aaa3de50184d0"
+      }
+    },
+    "US-MO:small_claims:83235bcfff8b": {
+      "category": "small_claims",
+      "title": "Mo. Rev. Stat. § 482.305",
+      "url": "https://www.revisor.mo.gov/main/OneSection.aspx?bid=26829&section=482.305",
+      "locator": "Mo. Rev. Stat. § 482.305",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:29.780669+00:00",
+        "sha256": "c91990fef227edbbb7ecba25445268c992fd025b56a4a39d51bf0c2bae0a1703"
+      }
+    },
+    "US-MO:deposit:049d8cd8f863": {
+      "category": "deposit",
+      "title": "Mo. Rev. Stat. § 535.300(3)",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=535.300",
+      "locator": "Mo. Rev. Stat. § 535.300(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:17.529331+00:00",
+        "sha256": "d44830a3c333f93d10ebd047118e290aa9ecf042ace42b97b89ee426ba7c0038"
+      }
+    },
+    "US-MO:fault:212f37efb988": {
+      "category": "fault",
+      "title": "Mo. Rev. Stat. § 537.765(1)–(2)",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=537.765",
+      "locator": "Mo. Rev. Stat. § 537.765(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:41:35.357241+00:00",
+        "sha256": "296f60f733e521c7215527c174eceae43fb95db38daca4ad5160e6e6c3160c0b"
+      }
+    },
+    "US-MO:joint_several_liability:38283b104f44": {
+      "category": "joint_several_liability",
+      "title": "Mo. Rev. Stat. § 537.067",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=537.067",
+      "locator": "Mo. Rev. Stat. § 537.067",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:41:35.699966+00:00",
+        "sha256": "e6e9580190e46334b9ca43e1fbc4ab70f57fa2b3d951b8cd0c52ae8838b5eace"
+      }
+    },
+    "US-MO:debtLaw:3ca963ac8565": {
+      "category": "debtLaw",
+      "title": "Mo. Rev. Stat. § 408.330(1) (retail time or charge agreement collection fees)",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=408.330",
+      "locator": "Mo. Rev. Stat. § 408.330(1) (retail time or charge agreement collection fees)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:35:16.571755+00:00",
+        "sha256": "a377578c1ad6ca01ceca1ebc204c499c057236fc37976bfa77a6bad7966a046d"
+      }
+    },
+    "US-MO:contract_damages:c5db2b35da32": {
+      "category": "contract_damages",
+      "title": "Mo. Rev. Stat. § 400.2-714",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=400.2-714",
+      "locator": "Mo. Rev. Stat. § 400.2-714",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:39:55.404839+00:00",
+        "sha256": "4bd68ec5cdd50e5783cac5351218225d83842af4151f081d174d1f94670265ee"
+      }
+    },
+    "US-MO:sale_price_recovery:ec3f4654fd36": {
+      "category": "sale_price_recovery",
+      "title": "Mo. Rev. Stat. § 400.2-709",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?bid=22339&section=400.2-709",
+      "locator": "Mo. Rev. Stat. § 400.2-709",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:39:55.695835+00:00",
+        "sha256": "646b94f5ba3c99b921578254e529c9a3107f6b7bc0dd5fc84f88cf2165b80099"
+      }
+    },
+    "US-MO:negligence_elements:320df21c60e6": {
+      "category": "negligence_elements",
+      "title": "Campbell v. Baxter Int’l, Inc., No. ED112259, slip op. at 7",
+      "url": "https://www.courts.mo.gov/file.jsp?id=209179",
+      "locator": "Campbell v. Baxter Int’l, Inc., No. ED112259, slip op. at 7",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:32:46.538131+00:00",
+        "sha256": "8c3d20e2f65101032a27cf0d767d43d2c1b5107f20406b638a78b7d3cd7514a6"
+      }
+    },
+    "US-MO:response:93bf953c315b": {
+      "category": "response",
+      "title": "McFall v. Hogan, No. ED112561, slip op. at 4 (Rule 55.25)",
+      "url": "https://www.courts.mo.gov/file.jsp?id=217016",
+      "locator": "McFall v. Hogan, No. ED112561, slip op. at 4 (Rule 55.25)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:40:36.571198+00:00",
+        "sha256": "3b97cdb7c0a00edd7c34115b019c2a01a8739f8fb22189353a3331712d449140"
+      }
+    },
+    "US-MO:service_proof:9c3d6f8cae8c": {
+      "category": "service_proof",
+      "title": "McFall v. Hogan, No. ED112561, slip op. at 4 (Rules 54.20 and 54.22)",
+      "url": "https://www.courts.mo.gov/file.jsp?id=217016",
+      "locator": "McFall v. Hogan, No. ED112561, slip op. at 4 (Rules 54.20 and 54.22)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:40:36.571198+00:00",
+        "sha256": "3b97cdb7c0a00edd7c34115b019c2a01a8739f8fb22189353a3331712d449140"
+      }
+    },
+    "US-MO:venue:482cc6c8a80e": {
+      "category": "venue",
+      "title": "Mo. Rev. Stat. § 508.010(2)",
+      "url": "https://www.revisor.mo.gov/main/OneSection.aspx?bid=47727&section=508.010",
+      "locator": "Mo. Rev. Stat. § 508.010(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:28.370677+00:00",
+        "sha256": "61d75752c378124b42e00d72f6dee51fd7a548f0727e3d2e2835e1150213c95c"
+      }
+    },
+    "US-MO:venue:821a823796d5": {
+      "category": "venue",
+      "title": "Mo. Rev. Stat. § 508.010(4)",
+      "url": "https://www.revisor.mo.gov/main/OneSection.aspx?bid=47727&section=508.010",
+      "locator": "Mo. Rev. Stat. § 508.010(4)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:28.370677+00:00",
+        "sha256": "61d75752c378124b42e00d72f6dee51fd7a548f0727e3d2e2835e1150213c95c"
+      }
+    },
+    "US-MO:venue:e76d554a9286": {
+      "category": "venue",
+      "title": "Mo. Rev. Stat. § 508.010(5)",
+      "url": "https://www.revisor.mo.gov/main/OneSection.aspx?bid=47727&section=508.010",
+      "locator": "Mo. Rev. Stat. § 508.010(5)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:28.370677+00:00",
+        "sha256": "61d75752c378124b42e00d72f6dee51fd7a548f0727e3d2e2835e1150213c95c"
+      }
+    },
+    "US-MO:commencement:cbb8462da0a5": {
+      "category": "commencement",
+      "title": "Bray v. Sexton, 534 S.W.3d 418 (Mo. App. E.D. 2017)",
+      "url": "https://www.courts.mo.gov/file/ED/Opinion_ED105372.pdf",
+      "locator": "Bray v. Sexton, 534 S.W.3d 418 (Mo. App. E.D. 2017)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:21:50.676633+00:00",
+        "sha256": "7293e5b7f864dd591b1d5ba146828364b511655ac0ecfba149fc4857caa24882"
+      }
+    },
+    "US-MO:service:cb720f8cdaa0": {
+      "category": "service",
+      "title": "State ex rel. Phillip-Smith v. Stelzer, No. ED111912 (Mo. App. E.D. Sept. 12, 2023)",
+      "url": "https://www.courts.mo.gov/file/ED/Opinion_ED111912.pdf",
+      "locator": "State ex rel. Phillip-Smith v. Stelzer, No. ED111912 (Mo. App. E.D. Sept. 12, 2023)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:24:47.621279+00:00",
+        "sha256": "acc450b381d3a936c0d83c4e927ffb1ea310219428b07308a4ca9edb2b2fa769"
+      }
+    },
+    "US-MO:service_time_limit:7245fcf75a19": {
+      "category": "service_time_limit",
+      "title": "Mo. Rev. Stat. § 506.160(1), (3) (publication timing)",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=506.160",
+      "locator": "Mo. Rev. Stat. § 506.160(1), (3) (publication timing)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T23:06:14.435105+00:00",
+        "sha256": "2d683f0985b82f33fb25b1b7dcb3bdc32ec2f8c552cd8291ea95d44bc6363127"
+      }
+    },
+    "US-MO:service_time_limit:e2897f9ff1e6": {
+      "category": "service_time_limit",
+      "title": "Mo. 42d Jud. Cir. Local R. 4.2 (service extension)",
+      "url": "https://www.courts.mo.gov/file/42nd_LCR.pdf",
+      "locator": "Mo. 42d Jud. Cir. Local R. 4.2 (service extension)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:00:50.081863+00:00",
+        "sha256": "a5044ff38b43bd0119f6d7254bae484455fcf97ade3fd32118e5b99658def037"
+      }
+    },
+    "US-MO:contract_breach:82a4df75489f": {
+      "category": "contract_breach",
+      "title": "CBAM, LLC v. Alps Acquisitions, LLC, No. ED113496, slip op. at 18 (Mo. Ct. App. May 26, 2026)",
+      "url": "https://www.courts.mo.gov/file/ED/Opinion_ED113496.pdf",
+      "locator": "CBAM, LLC v. Alps Acquisitions, LLC, No. ED113496, slip op. at 18 (Mo. Ct. App. May 26, 2026)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:05:43.958913+00:00",
+        "sha256": "d6da300d8eacbc7ec8a819976b4ff409e55332923d507e190c68a0943a4bfb3a"
+      }
+    },
+    "US-MO:contract_accrual:20925b2c3274": {
+      "category": "contract_accrual",
+      "title": "Smock v. Associated Electric Cooperative, Inc., No. WD81326, slip op. at 6 (Mo. Ct. App. 2018)",
+      "url": "https://www.courts.mo.gov/file/WD/Opinion_WD81326.pdf",
+      "locator": "Smock v. Associated Electric Cooperative, Inc., No. WD81326, slip op. at 6 (Mo. Ct. App. 2018)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:19:07.111071+00:00",
+        "sha256": "06eb3a2bd41c7fc707dee68fe8b6e9b91f3f041f521c5cc531f1073953efb9c3"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-MO:court:ccde27e1f85e",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-MO:court_directory:cff46dab0e67"
+    },
+    {
+      "id": "US-MO:court:5552a1f98d9f",
+      "name": "Supreme Court Historical Database",
+      "level": "highest_directory",
+      "source_id": "US-MO:court_directory:04f28e82619a"
+    },
+    {
+      "id": "US-MO:court:979bd40bfa18",
+      "name": "Appellate Courts",
+      "level": "appellate_directory",
+      "source_id": "US-MO:court_directory:a5f8550b0e56"
+    },
+    {
+      "id": "US-MO:court:9e667d6ce06c",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-MO:court_directory:0c6c06cc8673"
+    },
+    {
+      "id": "US-MO:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-MO:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MO:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-MO:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Mo. Rev. Stat. § 516.120(4)",
+      "source_id": "US-MO:pi_limitations:8d881d62360d",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Mo. Rev. Stat. § 516.110(1)",
+      "source_id": "US-MO:written_contract_limitations:67915c1b5980",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Mo. Rev. Stat. § 516.120(1)",
+      "source_id": "US-MO:oral_contract_limitations:8d881d62360d",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Mo. Rev. Stat. § 213.040 Unlawfulhousingpractices--discriminationinhousing--sufficient compliance with other standards--local government compliance--construction of law--housingfor older persons, defined--conviction for controlled substances, effect--religious organizations, effect of; Mo. Rev. Stat. § 441.740 Immediate eviction ordered, when--immediate removal ordered, when",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Mo. Rev. Stat. § 407.010 et seq.",
+      "source_id": "US-MO:consumerLaw:970d2ab2aabc",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "f95aed47bb291123a4f8ffb1668897": {
+      "source_id": "US-MO:contract_formation:5307caee0e92",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 400.2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "91dfb8004d81844ee492c0f55edf67352d4a3bb6e9ec8b298fd5c6ed6fc9016e",
+      "retrieved_at": "2026-11-18T15:14:32.001787+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "19b124ef9b6eb90f15811d7788c523": {
+      "source_id": "US-MO:wageLaw:ed92685062f6",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 290.110",
+      "text": "Whenever any person, firm or corporation doing business in this state shall discharge, with or without cause, or refuse to further employ any servant or employee thereof, the unpaid wages of the servant or employee then earned at the contract rate, without abatement or deduction, shall be and become due and payable on the day of the discharge or refusal to longer employ and the servant or employee may request in writing of his foreman or the keeper of his time to have the money due him, or a valid check therefor, sent to any station or office where a regular agent is kept; and if the money or a valid check therefor, does not reach the station or office within seven days from the date it is so requested, then as a penalty for such nonpayment the wages of the servant or employee shall continue from the date of the discharge or refusal to further employ, at the same rate until paid; provided, such wages shall not continue more than sixty days. This section shall not apply in the case of an employee whose remuneration for work is based primarily on commissions and whose duties include collection of accounts, care of a stock or merchandise and similar activities and where an audit is necessary or customary in order to determine the net amount due.",
+      "text_sha256": "b879a55db1f2614c60274bbfbffb75b4f986bbd603992d56cfaf1d04f96ad3e6",
+      "publisher_sha256": "6f10d8dfe9edcdeb0f53873ee15402a3695306ffff4a1f84d09197a0195884fb",
+      "retrieved_at": "2026-11-19T14:10:56.350230+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "d36b6fb6f45728b2190779f3ba6136": {
+      "source_id": "US-MO:consumerLaw:a5211939e0e3",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 407.020(1)",
+      "text": "1. The act, use or employment by any person of any deception, fraud, false pretense, false promise, misrepresentation, unfair practice or the concealment, suppression, or omission of any material fact in connection with the sale or advertisement of any merchandise in trade or commerce or the solicitation of any funds for any charitable purpose, as defined in section 407.453, in or from the state of Missouri, is declared to be an unlawful practice. The use by any person, in connection with the sale or advertisement of any merchandise in trade or commerce or the solicitation of any funds for any charitable purpose, as defined in section 407.453, in or from the state of Missouri of the fact that the attorney general has approved any filing required by this chapter as the approval, sanction or endorsement of any activity, project or action of such person, is declared to be an unlawful practice. Any act, use or employment declared unlawful by this subsection violates this subsection whether committed before, during or after the sale, advertisement or solicitation.",
+      "text_sha256": "784dd7a7f023f4f728948cb160450f28327be8f7e766304ce5c85eca51fed03d",
+      "publisher_sha256": "20a13074b3884f6d905affe172e5f1cde8d868ceb9c83291490f1ef9c8893011",
+      "retrieved_at": "2026-11-19T19:26:44.302791+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2020-08-28"
+    },
+    "60dc337260037c1e27fcadd6173b12": {
+      "source_id": "US-MO:pi_limitations:ee6dcba543bf",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 516.120",
+      "text": "Within five years: (1) All actions upon contracts, obligations or liabilities, express or implied, except those mentioned in section 516.110, and except upon judgments or decrees of a court of record, and except where a different time is herein limited; (2) An action upon a liability created by a statute other than a penalty or forfeiture; (3) An action for trespass on real estate; (4) An action for taking, detaining or injuring any goods or chattels, including actions for the recovery of specific personal property, or for any other injury to the person or rights of another, not arising on contract and not herein otherwise enumerated; (5) An action for relief on the ground of fraud, the cause of action in such case to be deemed not to have accrued until the discovery by the aggrieved party, at any time within ten years, of the facts constituting the fraud.",
+      "text_sha256": "0d444e766292745718a05861c22a9cc32e45bf0850d4b41074ab91db38d8c758",
+      "publisher_sha256": "3695f73e648b32205241b1d918c09bb8bc17a6aa86ba718b1460537b4d9c34cc",
+      "retrieved_at": "2026-11-19T19:31:21.580666+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "de416f28968ec8b981313a7645069b": {
+      "source_id": "US-MO:written_contract_limitations:7bded41c62c1",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 516.110(1)",
+      "text": "Within ten years: (1) An action upon any writing, whether sealed or unsealed, for the payment of money or property;",
+      "text_sha256": "ed624685af7b950ae93c9996f5883ce7e827aa17b8ba39562d50663ff4049688",
+      "publisher_sha256": "99c10fd7a3b116a7f08b4905a09bfa5d416f03d4ad1e5b829a6aaa3de50184d0",
+      "retrieved_at": "2026-11-19T19:35:42.205333+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "28a74349ad5ce41922e963c92f4a5a": {
+      "source_id": "US-MO:small_claims:83235bcfff8b",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 482.305",
+      "text": "When sitting as a small claims court, the judge shall have original jurisdiction of all civil cases, whether tort or contract, where the amount in controversy does not exceed five thousand dollars, exclusive of interest or costs, or as provided in this chapter.",
+      "text_sha256": "e392b07b3b41560da05b0ffa703ca5baebd6c6b83f574ceb5bee8f7165e694bf",
+      "publisher_sha256": "c91990fef227edbbb7ecba25445268c992fd025b56a4a39d51bf0c2bae0a1703",
+      "retrieved_at": "2026-11-20T16:16:29.780669+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Missouri Small Claims Court",
+      "effective_from": "2011-08-28"
+    },
+    "dd4ba898b4a538ff7ef4c77bf88e5f": {
+      "source_id": "US-MO:deposit:049d8cd8f863",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 535.300(3)",
+      "text": "3. Within thirty days after the date of termination of the tenancy, the landlord shall: (1) Return the full amount of the security deposit; or (2) Furnish to the tenant a written itemized list of the damages for which the security deposit or any portion thereof is withheld, along with the balance of the security deposit. The landlord shall have complied with this subsection by mailing such statement and any payment to the last known address of the tenant.",
+      "text_sha256": "a78965f312a9f7225b1152a9ca0f2fbaddb97ef4eefd49cc851a39349ce627aa",
+      "publisher_sha256": "d44830a3c333f93d10ebd047118e290aa9ecf042ace42b97b89ee426ba7c0038",
+      "retrieved_at": "2026-11-20T16:35:17.529331+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2018-08-28"
+    },
+    "dddc21139735982e55afe5ac8d9b96": {
+      "source_id": "US-MO:fault:212f37efb988",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 537.765(1)–(2)",
+      "text": "1. Contributory fault, as a complete bar to plaintiff's recovery in a products liability claim, is abolished. The doctrine of pure comparative fault shall apply to products liability claims as provided in this section. 2. Defendant may plead and prove the fault of the plaintiff as an affirmative defense. Any fault chargeable to the plaintiff shall diminish proportionately the amount awarded as compensatory damages but shall not bar recovery.",
+      "text_sha256": "b1395af1cb7ca300192eb0aa1f0815a213014d337e393d48f628d997fce95db5",
+      "publisher_sha256": "296f60f733e521c7215527c174eceae43fb95db38daca4ad5160e6e6c3160c0b",
+      "retrieved_at": "2026-11-20T16:41:35.357241+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1987-07-01"
+    },
+    "d339a7f2bf8144aceb9bb165d3e02e": {
+      "source_id": "US-MO:joint_several_liability:38283b104f44",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 537.067",
+      "text": "1. In all tort actions for damages, if a defendant is found to bear fifty-one percent or more of fault, then such defendant shall be jointly and severally liable for the amount of the judgment rendered against the defendants. If a defendant is found to bear less than fifty-one percent of fault, then the defendant shall only be responsible for the percentage of the judgment for which the defendant is determined to be responsible by the trier of fact; except that, a party is responsible for the fault of another defendant or for payment of the proportionate share of another defendant if any of the following applies: (1) The other defendant was acting as an employee of the party; (2) The party's liability for the fault of another person arises out of a duty created by the federal Employers' Liability Act, 45 U.S.C. Section 51. 2. The defendants shall only be severally liable for the percentage of punitive damages for which fault is attributed to such defendant by the trier of fact. 3. In all tort actions, no party may disclose to the trier of fact the impact of this section.",
+      "text_sha256": "16bbf4c289563553d11d277dc28283a519a437f8b4639b161724fd2d0f19fab1",
+      "publisher_sha256": "e6e9580190e46334b9ca43e1fbc4ab70f57fa2b3d951b8cd0c52ae8838b5eace",
+      "retrieved_at": "2026-11-20T16:41:35.699966+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2005-08-28"
+    },
+    "3621e80e545b9c872941103fd7beb2": {
+      "source_id": "US-MO:debtLaw:3ca963ac8565",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 408.330(1) (retail time or charge agreement collection fees)",
+      "text": "1. If a retail time contract or a retail charge agreement so provides, the holder thereof may charge and collect: (1) A premium for insurance in lieu of charges for perfecting a security interest required by the lender if the premium does not exceed the fees which would otherwise be payable; (2) Charges assessed by any institution for processing a refused instrument plus a handling fee of not more than fifteen dollars; (3) A delinquency and collection charge on each installment in default for a period of not less than ten days in an amount not to exceed ten dollars or five dollars when the monthly installment is less than twenty-five dollars; or (4) Interest on each delinquent payment thereunder at a rate which will not exceed the highest lawful contract rate. In addition to such delinquency charge, the contract may provide for the payment of attorney fees not exceeding fifteen percent of the amount due and payable under such contract where such contract is referred for collection to an attorney not a salaried employee of the holder of the contract and for court costs.",
+      "text_sha256": "dfc855eec380b95c37fe002437305cbb5fa374c779a2cabdf943a4949715d57b",
+      "publisher_sha256": "a377578c1ad6ca01ceca1ebc204c499c057236fc37976bfa77a6bad7966a046d",
+      "retrieved_at": "2026-11-20T18:35:16.571755+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2017-08-28"
+    },
+    "6d6d607eac1e14bc0dbc6c7ca30110": {
+      "source_id": "US-MO:contract_damages:c5db2b35da32",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 400.2-714",
+      "text": "(1) Where the buyer has accepted goods and given notification (subsection (3) of section 400.2-607) he may recover as damages for any nonconformity of tender the loss resulting in the ordinary course of events from the seller's breach as determined in any manner which is reasonable. (2) The measure of damages for breach of warranty is the difference at the time and place of acceptance between the value of the goods accepted and the value they would have had if they had been as warranted, unless special circumstances show proximate damages of a different amount. (3) In a proper case any incidental and consequential damages under section 400.2-715 may also be recovered.",
+      "text_sha256": "4ed45d35117bebac4cb2f7cc9a8f4875a62592b8cc94916c7c5249d19683f531",
+      "publisher_sha256": "4bd68ec5cdd50e5783cac5351218225d83842af4151f081d174d1f94670265ee",
+      "retrieved_at": "2026-11-20T22:39:55.404839+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1963-08-28"
+    },
+    "51bb24fffef532c0459eaeb4916102": {
+      "source_id": "US-MO:sale_price_recovery:ec3f4654fd36",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 400.2-709",
+      "text": "(1) When the buyer fails to pay the price as it becomes due the seller may recover, together with any incidental damages under section 400.2-710, the price (a) of goods accepted or of conforming goods lost or damaged within a commercially reasonable time after risk of their loss has passed to the buyer; and (b) of goods identified to the contract if the seller is unable after reasonable effort to resell them at a reasonable price or the circumstances reasonably indicate that such effort will be unavailing. (2) Where the seller sues for the price he must hold for the buyer any goods which have been identified to the contract and are still in his control except that if resale becomes possible he may resell them at any time prior to the collection of the judgment. The net proceeds of any such resale must be credited to the buyer and payment of the judgment entitles him to any goods not resold. (3) After the buyer has wrongfully rejected or revoked acceptance of the goods or has failed to make a payment due or has repudiated (section 400.2-610), a seller who is held not entitled to the price under this section shall nevertheless be awarded damages for nonacceptance under section 400.2-708.",
+      "text_sha256": "71be32604e587dafe462143d7f15938eea308362d5f9d0b5dfe0e61db8facd38",
+      "publisher_sha256": "646b94f5ba3c99b921578254e529c9a3107f6b7bc0dd5fc84f88cf2165b80099",
+      "retrieved_at": "2026-11-20T22:39:55.695835+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1963-08-28"
+    },
+    "dd0367376344bd90982488c30e330a": {
+      "source_id": "US-MO:negligence_elements:320df21c60e6",
+      "authority_type": "opinion",
+      "citation": "Campbell v. Baxter Int’l, Inc., No. ED112259, slip op. at 7",
+      "text": "The claims at issue in this case – negligent hiring, negligent retention, and negligent supervision – are all negligence actions, and the general elements of negligence are: (1) a legal duty owed to the plaintiff by the defendant; (2) a breach of that duty by the defendant; (3) proximate cause; and (4) injury to the plaintiff. See Thornburg v. Federal Express Corp., 62 S.W.3d 421, 427 (Mo. App. W.D. 2001). All claims of negligence require the plaintiff to prove the defendant’s actions were the proximate cause of the plaintiff’s injury.",
+      "text_sha256": "aaef7ad157ec803e2eab1148edbd1e1a0c35854384782a53dbf5e85f034978a0",
+      "publisher_sha256": "8c3d20e2f65101032a27cf0d767d43d2c1b5107f20406b638a78b7d3cd7514a6",
+      "retrieved_at": "2026-11-21T03:32:46.538131+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2024-06-25",
+      "court": "Missouri Court of Appeals, Eastern District",
+      "decision_date": "2024-06-25",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from judgment on the pleadings for claims of negligent hiring, retention, and supervision. The court stated the generally applicable elements."
+    },
+    "f460c5feaf6269cdb6e40fed2b0c73": {
+      "source_id": "US-MO:response:93bf953c315b",
+      "authority_type": "opinion",
+      "citation": "McFall v. Hogan, No. ED112561, slip op. at 4 (Rule 55.25)",
+      "text": "A defendant is required to file an answer within thirty days of service of the summons and petition, and failure to do so may result in a default judgment. Rule 55.25; Rule 74.05(a).",
+      "text_sha256": "3363e534215c47d585a6984bcc6107cb0502129d0b232cf268656a5814071ad3",
+      "publisher_sha256": "3b97cdb7c0a00edd7c34115b019c2a01a8739f8fb22189353a3331712d449140",
+      "retrieved_at": "2026-11-21T03:40:36.571198+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Missouri appellate slip opinion of 2025-01-28 applying 2024 rules",
+      "court": "Missouri Court of Appeals, Eastern District",
+      "decision_date": "2025-01-28",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from an order setting aside default judgment. The panel evaluated when the summons and petition had been personally served."
+    },
+    "dbb893bb2d0237302c04f650b5798d": {
+      "source_id": "US-MO:service_proof:9c3d6f8cae8c",
+      "authority_type": "opinion",
+      "citation": "McFall v. Hogan, No. ED112561, slip op. at 4 (Rules 54.20 and 54.22)",
+      "text": "Special process servers, such as the one Plaintiff used in this case, are required by Rule 54.20(a)(2) to “make affidavit as to the time, place and manner of service.” A return of service may be filed with the trial court, in its discretion, at any time as proof that the defendant was served. Rule 54.22(a).",
+      "text_sha256": "e17015a54513d37658f4b81f1a442f49477fe93f724f1587d70ea1ec030e3f3c",
+      "publisher_sha256": "3b97cdb7c0a00edd7c34115b019c2a01a8739f8fb22189353a3331712d449140",
+      "retrieved_at": "2026-11-21T03:40:36.571198+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Missouri appellate slip opinion of 2025-01-28 applying 2024 rules",
+      "court": "Missouri Court of Appeals, Eastern District",
+      "decision_date": "2025-01-28",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from an order setting aside default judgment. The panel evaluated when the summons and petition had been personally served."
+    },
+    "9544631bdc691f0bc59e9c2f0f054e": {
+      "source_id": "US-MO:venue:482cc6c8a80e",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 508.010(2)",
+      "text": "2. In all actions in which there is no count alleging a tort, venue shall be determined as follows: (1) When the defendant is a resident of the state, either in the county within which the defendant resides, or in the county within which the plaintiff resides, and the defendant may be found; (2) When there are several defendants, and they reside in different counties, the suit may be brought in any such county; (3) When there are several defendants, some residents and others nonresidents of the state, suit may be brought in any county in this state in which any defendant resides; (4) When all the defendants are nonresidents of the state, suit may be brought in any county in this state, provided there is personal jurisdiction over each defendant, independent of each other defendant.",
+      "text_sha256": "d97caca3a67063fff22acffdec0ff14c771e6e896665b09d5b6e4fa3dbd33c1d",
+      "publisher_sha256": "61d75752c378124b42e00d72f6dee51fd7a548f0727e3d2e2835e1150213c95c",
+      "retrieved_at": "2026-11-21T16:38:28.370677+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Missouri Revisor of Statutes, version effective August 28, 2019, subsection (2)",
+      "effective_from": "2019-08-28"
+    },
+    "f53d459f3311c94b8ea910bc03e06e": {
+      "source_id": "US-MO:venue:821a823796d5",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 508.010(4)",
+      "text": "4. Notwithstanding any other provision of law, in all actions in which there is any count alleging a tort and in which the plaintiff was first injured in the state of Missouri, venue shall be in the county where the plaintiff was first injured by the acts or conduct alleged in the action.",
+      "text_sha256": "5bb1f26a597adb2f2b1923bb386a9b0d2f3847b088860225408e0bba2aecd9e8",
+      "publisher_sha256": "61d75752c378124b42e00d72f6dee51fd7a548f0727e3d2e2835e1150213c95c",
+      "retrieved_at": "2026-11-21T16:38:28.370677+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Missouri Revisor of Statutes, version effective August 28, 2019, subsection (4)",
+      "effective_from": "2019-08-28"
+    },
+    "a404540945e920e4959e4f8e09be49": {
+      "source_id": "US-MO:venue:e76d554a9286",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 508.010(5)",
+      "text": "5. Notwithstanding any other provision of law, in all actions in which there is any count alleging a tort and in which the plaintiff was first injured outside the state of Missouri, venue as to that individual plaintiff shall be determined as follows: (1) If the defendant is a corporation, then venue shall be in any county where a defendant corporation's registered agent is located or, if the plaintiff's principal place of residence was in the state of Missouri on the date the plaintiff was first injured, then venue may be in the county of the plaintiff's principal place of residence on the date the plaintiff was first injured; (2) If the defendant is an individual, then venue shall be in the county where the defendant has his or her principal place of residence in the state of Missouri, which for venue purposes shall be deemed to be that of his or her employer corporation if any count alleges conduct in the course and scope of his or her employment with that corporation, or, if the plaintiff's principal place of residence was in the state of Missouri on the date the plaintiff was first injured, then venue as to that individual plaintiff may be in the county containing the plaintiff's principal place of residence on the date the plaintiff was first injured; (3) Notwithstanding subdivisions (1) and (2) of this subsection, if the plaintiff was first injured in a foreign country in connection with any railroad operations therein and any defendant is a: (a) Corporation that, either directly or through its subsidiaries, wholly owns or operates the foreign railroad; or (b) Wholly owned subsidiary of a corporation that, either directly or through its subsidiaries, wholly owns or operates the foreign railroad; ­­ ­ then venue shall exclusively be in the county where any such defendant corporation's registered agent is located, regardless of venue as to any other defendant or, if the plaintiff's principal place of residence was in the state of Missouri on the date the plaintiff was first injured, then venue may be in the county of the plaintiff's principal place of residence on the date the plaintiff was first injured.",
+      "text_sha256": "bd1e50fabf197b271772031c62a32ef5894396ffe2758a50aaa60b52d1c47ff3",
+      "publisher_sha256": "61d75752c378124b42e00d72f6dee51fd7a548f0727e3d2e2835e1150213c95c",
+      "retrieved_at": "2026-11-21T16:38:28.370677+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Missouri Revisor of Statutes, version effective August 28, 2019, subsection (5)",
+      "effective_from": "2019-08-28"
+    },
+    "56a25bfb718c2815b6521564c62280": {
+      "source_id": "US-MO:commencement:cbb8462da0a5",
+      "authority_type": "opinion",
+      "citation": "Bray v. Sexton, 534 S.W.3d 418 (Mo. App. E.D. 2017)",
+      "text": "In contrast, the Missouri Supreme Court has directly addressed the requirements of the post-1972 version of Rule 53.01 and the question of what steps are required under the Rule for the commencement of a general civil action. The Supreme Court has held that Rule 53.01, in its current and applicable form, “only requires the filing of a petition with the court to commence [an] action.” Bailey v. Innovative Management & Inv., Inc., 890 S.W.2d 648, 650 (Mo. banc 1994); Ostermueller v. Potter, 868 S.W.2d 110, 111 (Mo. banc 1993); see Rule 53.01 (providing that “[a] civil action is commenced by filing a petition with the court”).",
+      "text_sha256": "a929c6050682cdddbb5f165e2e90b6f47e063af1d831b37a254bd07488e538da",
+      "publisher_sha256": "7293e5b7f864dd591b1d5ba146828364b511655ac0ecfba149fc4857caa24882",
+      "retrieved_at": "2026-11-21T17:21:50.676633+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported opinion issued 2017-12-05",
+      "court": "Missouri Court of Appeals, Eastern District",
+      "publisher_member": "Missouri Court of Appeals slip opinion ED105372 p. 7, general Rule 53.01 standard cited in mechanic’s-lien appeal",
+      "decision_date": "2017-12-05",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissal of mechanic’s-lien enforcement claim; appellate court applied the amended commencement rule and reversed and remanded."
+    },
+    "892eaec33186afabc20b474993946d": {
+      "source_id": "US-MO:service:cb720f8cdaa0",
+      "authority_type": "opinion",
+      "citation": "State ex rel. Phillip-Smith v. Stelzer, No. ED111912 (Mo. App. E.D. Sept. 12, 2023)",
+      "text": "Rule 54.14 provides that when personal service is made outside of Missouri, service must be made by an individual authorized to serve process in civil actions within the state where the service is being made, and service must be made as provided in Rule 54.13(b). To properly serve process on an individual, a copy of the summons and petition must be delivered to that person: (1) individually; (2) at the person’s usual place of abode with a resident who is at least 18 years old; or (3) to an authorized agent. Rule 54.13(b)(1).",
+      "text_sha256": "01e7c1fdc093d79f79e8805ec151b260ac6e9a6911136d05249046dacc5207e3",
+      "publisher_sha256": "acc450b381d3a936c0d83c4e927ffb1ea310219428b07308a4ca9edb2b2fa769",
+      "retrieved_at": "2026-11-21T17:24:47.621279+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported opinion issued 2023-09-12",
+      "court": "Missouri Court of Appeals, Eastern District",
+      "publisher_member": "Missouri Court of Appeals issued opinion p. 4, Missouri Rules 54.14 and 54.13(b)(1) applied to out-of-state service",
+      "decision_date": "2023-09-12",
+      "opinion_role": "majority",
+      "procedural_posture": "Writ of prohibition made permanent because attempted service at the relator’s Alabama workplace through human resources did not confer personal jurisdiction."
+    },
+    "7cb9a7a1f1d469bb87a02383ee78b3": {
+      "source_id": "US-MO:service_time_limit:7245fcf75a19",
+      "authority_type": "statute",
+      "citation": "Mo. Rev. Stat. § 506.160(1), (3) (publication timing)",
+      "text": "1. Service by mail or by publication shall be allowed in all cases affecting a fund, will, trust estate, specific property, or any interest therein, or any res or status within the jurisdiction of the court, or in any special proceedings in which notice by mail or by publication is authorized, including but not limited to actions to quiet title and actions to ascertain and determine title to real estate. If the defendant so served does not appear, judgment may be rendered affecting said property, res or status within the jurisdiction of the court as to said defendant, but such service shall not warrant a general judgment against such defendant. […] Such notice shall be published at least once each week for four consecutive weeks in some newspaper of general circulation published in the county where suit is instituted, if there be such newspaper published there, which the plaintiff or his attorney of record may designate; if no such newspaper be published in such county, then in some such paper published in this state, which the plaintiff or his attorney of record may designate as most likely to give notice to the defendant or defendants to be notified. If the present known address of the defendant is given, the clerk shall within ten days after said order of publication mail a copy of the notice to each defendant whose address has been stated in the affidavit or verified petition. The clerk shall file a certificate certifying that copies of the notice have been mailed as required by this section, in all cases where the present known address has been given, and such certificates shall be conclusive and binding upon the parties.",
+      "text_sha256": "e1692b2398be63cb53a1a492089578343522ec8b8bb332c2f47aea36e32674a8",
+      "publisher_sha256": "2d683f0985b82f33fb25b1b7dcb3bdc32ec2f8c552cd8291ea95d44bc6363127",
+      "retrieved_at": "2026-11-21T23:06:14.435105+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Missouri Revisor, codified statute identifying 1945 effective date; limited publication and mailing provision; effect of later court rules unresolved",
+      "effective_from": "1945-08-28"
+    },
+    "805b0bf486bebe2ab1a6fc479cdb5e": {
+      "source_id": "US-MO:service_time_limit:e2897f9ff1e6",
+      "authority_type": "court_rule",
+      "citation": "Mo. 42d Jud. Cir. Local R. 4.2 (service extension)",
+      "text": "Pursuant to Supreme Court Rule 54.21, if process is not served in any civil case within 30 days after its date of issue, time for service is herewith extended an additional 30 days in said case and this shall be deemed an order of Court so directing.",
+      "text_sha256": "a2fe69cffe6cf4d3fb9f57ebb2ecb86f065b719e365127381c92c31aaa101bd4",
+      "publisher_sha256": "a5044ff38b43bd0119f6d7254bae484455fcf97ade3fd32118e5b99658def037",
+      "retrieved_at": "2026-11-22T03:00:50.081863+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "March 5, 2008 circuit rules publication",
+      "court": "Missouri 42nd Judicial Circuit",
+      "publisher_member": "Printed page 6; local extension under Rule 54.21"
+    },
+    "a7ac64a23784a2fe565818b5dbeb32": {
+      "source_id": "US-MO:contract_breach:82a4df75489f",
+      "authority_type": "opinion",
+      "citation": "CBAM, LLC v. Alps Acquisitions, LLC, No. ED113496, slip op. at 18 (Mo. Ct. App. May 26, 2026)",
+      "text": "In an action for breach of contract, the plaintiff must establish: (1) the existence and terms of a contract; (2) the plaintiff’s performance or tender of performance under the contract; (3) the defendant’s breach of the contract; and (4) damages suffered by the plaintiff. TNT Amusements, Inc. v. BFC Enters., Inc., 613 S.W.3d 403, 408 (Mo. App. E.D. 2020).",
+      "text_sha256": "d1d6e31613b47cee87745f8a16276efc7c40bd7142f1ec638b0b45e3bbd3561d",
+      "publisher_sha256": "d6da300d8eacbc7ec8a819976b4ff409e55332923d507e190c68a0943a4bfb3a",
+      "retrieved_at": "2026-11-22T03:05:43.958913+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "May 26, 2026 appellate opinion",
+      "court": "Missouri Court of Appeals, Eastern District",
+      "decision_date": "2026-05-26",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal after bench trial on a failed real-estate sale; affirmed, with contractual attorney fees awarded on appeal.",
+      "publisher_member": "Slip opinion page 18; general contract elements in a land-sale dispute"
+    },
+    "bf8d3a5d428332e89d6ecc0f10f2c9": {
+      "source_id": "US-MO:contract_accrual:20925b2c3274",
+      "citation": "Smock v. Associated Electric Cooperative, Inc., No. WD81326, slip op. at 6 (Mo. Ct. App. 2018)",
+      "text": "Accrual takes place not “when the wrong is done or the technical breach of contract or duty occurs, but when the damage resulting therefrom is sustained and is capable of ascertainment.” § 516.100. “Damage is capable of ascertainment when it can be discovered or is made known, even if its extent remains unknown.” D’Arcy, 129 S.W.3d at 29.",
+      "text_sha256": "08acf5059cab00d736e59d4a30dc8cb789e75c52bc517e385e4806be7cdb5b64",
+      "publisher_sha256": "06eb3a2bd41c7fc707dee68fe8b6e9b91f3f041f521c5cc531f1073953efb9c3",
+      "retrieved_at": "2026-11-23T21:19:07.111071+00:00",
+      "language": "en",
+      "authority_type": "opinion",
+      "currentness": "historical",
+      "edition": "Court-published opinion, modified December 18, 2018",
+      "court": "Missouri Court of Appeals, Western District",
+      "decision_date": "2018-11-13",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment on limitations in an easement-related contract and tort action.",
+      "scope_notes": "Applies Missouri section 516.100 to ascertainable damage. Review claim-specific exceptions and the period applicable to the form of obligation."
+    }
+  },
+  "fault_allocation": {
+    "regime": "pure_comparative",
+    "source_id": "US-MO:fault:212f37efb988",
+    "passage_selector": "dddc21139735982e55afe5ac8d9b96",
+    "currentness": "unresolved",
+    "qualification": "The statute expressly applies to products liability. The retained subsections address compensatory damages and the affirmative defense, and subsection (3) limits qualifying fault. Ordinary negligence requires independent authority."
+  }
+}

@@ -1,0 +1,940 @@
+{
+  "jurisdiction": "US-SC",
+  "version": "1",
+  "sources": {
+    "US-SC:statutes:dc83ae434d2a": {
+      "category": "statutes",
+      "title": "Code of Laws",
+      "url": "http://www.scstatehouse.gov/code/statmast.php",
+      "directory": "codes",
+      "locator": "South Carolina"
+    },
+    "US-SC:constitution:f20757aeea87": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.scstatehouse.gov/scconstitution/scconst.php",
+      "directory": "codes",
+      "locator": "South Carolina"
+    },
+    "US-SC:legislature:c511b4d5a423": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.scstatehouse.gov/index.php",
+      "directory": "codes",
+      "locator": "South Carolina"
+    },
+    "US-SC:labor_agency:c945203739b5": {
+      "category": "labor_agency",
+      "title": "llr.sc.gov/",
+      "url": "https://llr.sc.gov/",
+      "directory": "labor",
+      "locator": "South Carolina"
+    },
+    "US-SC:commercial_code:94552df38d79": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://www.scstatehouse.gov/code/t36c011.php",
+      "directory": "ucc",
+      "locator": "South Carolina"
+    },
+    "US-SC:civil_rules:a1898ad811e0": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "http://www.scstatehouse.gov/code/title15.php",
+      "directory": "procedure",
+      "locator": "South Carolina"
+    },
+    "US-SC:consumer_agency:ea8580eba9dd": {
+      "category": "consumer_agency",
+      "title": "South Carolina (SC)",
+      "url": "https://consumer.sc.gov/",
+      "directory": "consumer",
+      "locator": "South Carolina (SC)"
+    },
+    "US-SC:judiciary:433ee577418e": {
+      "category": "judiciary",
+      "title": "Judicial Branch",
+      "url": "https://www.sccourts.org/",
+      "directory": "doj-SC",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-SC:judiciary:1af606732ab5": {
+      "category": "judiciary",
+      "title": "Judicial Branch Opinion Search",
+      "url": "https://www.sccourts.org/opinions-orders/opinions/opinion-search/",
+      "directory": "doj-SC",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-SC:judiciary:bc2e2510dc7f": {
+      "category": "judiciary",
+      "title": "Advance Sheets",
+      "url": "https://www.sccourts.org/opinions-orders/advance-sheets/",
+      "directory": "doj-SC",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-SC:court_directory:4bf6183a0a42": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.sccourts.org/supreme/",
+      "directory": "doj-SC",
+      "locator": "Supreme Court"
+    },
+    "US-SC:opinions:3c8bc7a0d97e": {
+      "category": "opinions",
+      "title": "Supreme Court Opinions",
+      "url": "https://www.sccourts.org/opinions-orders/opinions/published-opinions/supreme-court/",
+      "directory": "doj-SC",
+      "locator": "State and Local Courts / Supreme Court"
+    },
+    "US-SC:court_directory:fda706284b14": {
+      "category": "court_directory",
+      "title": "South Carolina Court of Appeals",
+      "url": "https://www.sccourts.org/appeals/",
+      "directory": "doj-SC",
+      "locator": "South Carolina Court of Appeals"
+    },
+    "US-SC:opinions:15d5fe790d40": {
+      "category": "opinions",
+      "title": "Court of Appeals Opinions",
+      "url": "https://www.sccourts.org/opinions-orders/opinions/published-opinions/court-of-appeals/",
+      "directory": "doj-SC",
+      "locator": "State and Local Courts / Courts of Appeal"
+    },
+    "US-SC:court_directory:c2adf09ece43": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "https://www.sccourts.org/courts/trial-courts/circuit-court/",
+      "directory": "doj-SC",
+      "locator": "Circuit Courts"
+    },
+    "US-SC:court_directory:7f3e1203a8a5": {
+      "category": "court_directory",
+      "title": "Family Courts",
+      "url": "http://www.sccourts.org/familyCourt/",
+      "directory": "doj-SC",
+      "locator": "Family Courts"
+    },
+    "US-SC:court_directory:7449e18ea4f2": {
+      "category": "court_directory",
+      "title": "Probate Courts",
+      "url": "http://www.sccourts.org/probateCourt/",
+      "directory": "doj-SC",
+      "locator": "Probate Courts"
+    },
+    "US-SC:court_directory:6ff7f69c8e43": {
+      "category": "court_directory",
+      "title": "Magistrates Court",
+      "url": "http://www.sccourts.org/magistrateCourt/",
+      "directory": "doj-SC",
+      "locator": "Magistrates Court"
+    },
+    "US-SC:court_directory:ff29db8441c8": {
+      "category": "court_directory",
+      "title": "Charleston County Courts",
+      "url": "https://clerkofcourt.charlestoncounty.org/",
+      "directory": "doj-SC",
+      "locator": "Charleston County Courts"
+    },
+    "US-SC:forms:0e7303dc0209": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "http://www.sccourts.org/forms/",
+      "directory": "doj-SC",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-SC:forms:e8c5169e2e43": {
+      "category": "forms",
+      "title": "Charleston County Court Forms",
+      "url": "https://www.charlestoncounty.org/departments/clerk-of-court/forms.php#go",
+      "directory": "doj-SC",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-SC:constitution:d6799a396c2a": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.scstatehouse.gov/scconstitution/scconst.php",
+      "directory": "doj-SC",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-SC:statutes:06f9e405dce0": {
+      "category": "statutes",
+      "title": "Code of Laws",
+      "url": "https://www.scstatehouse.gov/code/statmast.php",
+      "directory": "doj-SC",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-SC:regulations:f9298451c908": {
+      "category": "regulations",
+      "title": "Code of Regulations",
+      "url": "https://www.scstatehouse.gov/coderegs/statmast.php",
+      "directory": "doj-SC",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-SC:regulations:701487b2624c": {
+      "category": "regulations",
+      "title": "State Register",
+      "url": "https://www.scstatehouse.gov/state_register.php",
+      "directory": "doj-SC",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-SC:pi_limitations:7da72fb70ade": {
+      "category": "pi_limitations",
+      "title": "S.C. Code § 15-3-530(5)",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.scstatehouse.gov/code/t15c003.php",
+        "retrieved_at": "2026-11-17T19:34:00.985892+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-SC:written_contract_limitations:7da72fb70ade": {
+      "category": "written_contract_limitations",
+      "title": "S.C. Code § 15-3-530(1)",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.scstatehouse.gov/code/t15c003.php",
+        "retrieved_at": "2026-11-17T19:34:00.985892+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-SC:oral_contract_limitations:7da72fb70ade": {
+      "category": "oral_contract_limitations",
+      "title": "S.C. Code § 15-3-530(1)",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.scstatehouse.gov/code/t15c003.php",
+        "retrieved_at": "2026-11-17T19:34:00.985892+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-SC:small_claims:8f6830a3ee23": {
+      "category": "small_claims",
+      "title": "Summary court civil procedure",
+      "url": "https://www.scstatehouse.gov/code/t22c003.php",
+      "directory": null,
+      "locator": "Publisher resource"
+    },
+    "US-SC:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 29"
+    },
+    "US-SC:wageLaw:ab6bbc50b61a": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://www.scstatehouse.gov/code/t41c010",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.scstatehouse.gov/code/t41c010",
+        "retrieved_at": "2026-11-17T19:43:06.970483+00:00",
+        "http_status": "200",
+        "sha256": "618d3e12990fbae124919734d199173e28a7bde113861b10b11dc338046f161a",
+        "health": "manual_review_required"
+      }
+    },
+    "US-SC:consumerLaw:0b6b786a8fb2": {
+      "category": "consumerLaw",
+      "title": "S.C. Code § 39-5-20",
+      "url": "https://www.scstatehouse.gov/Archives/CodeofLaws2018/t39c005",
+      "directory": null,
+      "locator": "S.C. Code § 39-5-20"
+    },
+    "US-SC:consumerLaw:79c108c55ebc": {
+      "title": "S.C. Code § 39-5-10 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.scstatehouse.gov/code/t39c005.php",
+      "directory": "consumer_statutes_index",
+      "locator": "S.C. Code § 39-5-10 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-SC:consumerLaw:4cb74b476065": {
+      "category": "consumerLaw",
+      "title": "S.C. Code § 39-5-20",
+      "url": "https://www.scstatehouse.gov/code/t39c005",
+      "directory": null,
+      "locator": "S.C. Code § 39-5-20",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:06:27.866203+00:00",
+        "sha256": "8a5faf02c17cdb9456e004774cb91811e77f3b6c94a42cda96d20f8973900c00"
+      }
+    },
+    "US-SC:contract_formation:82e2f2a00fcb": {
+      "category": "contract_formation",
+      "title": "S.C. Code § 36-2-204",
+      "url": "https://www.scstatehouse.gov/code/t36c002",
+      "locator": "S.C. Code § 36-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:32.481170+00:00",
+        "sha256": "a9dded040ef7b53901e1f121acc42e2585c097dc6d08a5596975ac923bbaf020"
+      }
+    },
+    "US-SC:contract_damages:cfe6a8599e5a": {
+      "category": "contract_damages",
+      "title": "S.C. Code § 36-2-714",
+      "url": "https://www.scstatehouse.gov/code/t36c002",
+      "locator": "S.C. Code § 36-2-714",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:32.481170+00:00",
+        "sha256": "a9dded040ef7b53901e1f121acc42e2585c097dc6d08a5596975ac923bbaf020"
+      }
+    },
+    "US-SC:commencement:1ed1bff7bcf2": {
+      "category": "commencement",
+      "title": "S.C. R. Civ. P. 3(a)",
+      "url": "https://www.sccourts.org/resources/judicial-community/court-rules/civil/rule-3/",
+      "locator": "S.C. R. Civ. P. 3(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:46.201127+00:00",
+        "sha256": "ced9775a0b20feb4f88d5c935b64024e81924ccaca61428d6d050cf2380b1c24"
+      }
+    },
+    "US-SC:negligence_elements:d3ed32050476": {
+      "category": "negligence_elements",
+      "title": "Bergstrom v. Palmetto Health Alliance, Op. No. 3552 (S.C. Ct. App. Sept. 30, 2002)",
+      "url": "https://www.sccourts.org/media/opinions/htmlfiles/coa/3552.htm",
+      "locator": "Bergstrom v. Palmetto Health Alliance, Op. No. 3552 (S.C. Ct. App. Sept. 30, 2002)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T13:54:45.047992+00:00",
+        "sha256": "f54e3f32ea8d9ba33a057936cf11645a23751d86c4b6d9f3b1f01f875eae9739"
+      }
+    },
+    "US-SC:wageLaw:399c5f644332": {
+      "category": "wageLaw",
+      "title": "S.C. Code § 41-10-50",
+      "url": "https://www.scstatehouse.gov/code/t41c010",
+      "locator": "S.C. Code § 41-10-50",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T19:43:06.970483+00:00",
+        "sha256": "618d3e12990fbae124919734d199173e28a7bde113861b10b11dc338046f161a"
+      }
+    },
+    "US-SC:response:4b67c1ccfe81": {
+      "category": "response",
+      "title": "S.C. R. Civ. P. 12(a)",
+      "url": "https://www.sccourts.org/resources/judicial-community/court-rules/civil/rule-12/",
+      "locator": "S.C. R. Civ. P. 12(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:42:59.195878+00:00",
+        "sha256": "a7f7cd9bdf5835437a297483c4c0c0af7bc30d44ad8070214b57db3b29ea847a"
+      }
+    },
+    "US-SC:fault:532a4af3124d": {
+      "category": "fault",
+      "title": "Berberich v. Jack, Opinion No. 26955 (S.C. Apr. 4, 2011)",
+      "url": "https://www.sccourts.org/media/opinions/HTMLFiles/SC/26955.htm",
+      "locator": "Berberich v. Jack, Opinion No. 26955 (S.C. Apr. 4, 2011)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:12:10.872912+00:00",
+        "sha256": "92214099e3459e3d5e8a644a0a3ba0104b58094ed113d3b15b9575f43dce5d4c"
+      }
+    },
+    "US-SC:service:563f48f7e185": {
+      "category": "service",
+      "title": "S.C. R. Civ. P. 4(d)(1)",
+      "url": "https://www.sccourts.org/resources/judicial-community/court-rules/civil/rule-4/",
+      "locator": "S.C. R. Civ. P. 4(d)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:02.672289+00:00",
+        "sha256": "983116fcd457aa6c78bc790bea063885b55d801d87e06df8d3a5077151345eac"
+      }
+    },
+    "US-SC:pi_limitations:13becc09cbca": {
+      "category": "pi_limitations",
+      "title": "S.C. Code § 15-3-530(5)",
+      "url": "https://www.scstatehouse.gov/code/t15c003?section=15-3-530",
+      "locator": "S.C. Code § 15-3-530(5)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:34:30.240295+00:00",
+        "sha256": "357478cdedb194c9a8d4384e5e305d7eca7eb420557985270d05122db40be127"
+      }
+    },
+    "US-SC:deposit:b735ab1a7761": {
+      "category": "deposit",
+      "title": "S.C. Code § 27-40-410(a)–(b)",
+      "url": "https://www.scstatehouse.gov/code/t27c040",
+      "locator": "S.C. Code § 27-40-410(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:57:54.267724+00:00",
+        "sha256": "61faf4a26101dac9a2208b54787d2c5b448ebf0c908b824f820a68203a09a95f"
+      }
+    },
+    "US-SC:debtLaw:83dc1bd112bb": {
+      "category": "debtLaw",
+      "title": "S.C. Code § 37-5-108(1)",
+      "url": "https://www.scstatehouse.gov/code/t37c005",
+      "locator": "S.C. Code § 37-5-108(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:01:54.679945+00:00",
+        "sha256": "ceafdf641e45fc58394744abc5e8d564c326c55991b9221db868acc51bd39fbb"
+      }
+    },
+    "US-SC:small_claims:60e7c17b807f": {
+      "category": "small_claims",
+      "title": "S.C. Code Ann. § 22-3-10(1)-(2)",
+      "url": "https://www.scstatehouse.gov/Archives/CodeofLaws2024/t22c003",
+      "locator": "S.C. Code Ann. § 22-3-10(1)-(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:12:28.583044+00:00",
+        "sha256": "9273f2cf86343b0c545645560e9e6c8f5cb3266a20ccddb4830c57c1db71fd1c"
+      }
+    },
+    "US-SC:service_time_limit:e00b691c63ac": {
+      "category": "service_time_limit",
+      "title": "S.C. R. Civ. P. 3(a)(1)–(2)",
+      "url": "https://www.sccourts.org/resources/judicial-community/court-rules/civil/rule-3/",
+      "locator": "S.C. R. Civ. P. 3(a)(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:46.201127+00:00",
+        "sha256": "ced9775a0b20feb4f88d5c935b64024e81924ccaca61428d6d050cf2380b1c24"
+      }
+    },
+    "US-SC:general_contract_limitations:a2f70fc0e8d6": {
+      "category": "general_contract_limitations",
+      "title": "S.C. Code Ann. § 15-3-530(1)",
+      "url": "https://www.scstatehouse.gov/Archives/CodeofLaws2024/t15c003.php",
+      "locator": "S.C. Code Ann. § 15-3-530(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:01.961529+00:00",
+        "sha256": "3db72132a1123420b1837e793a4273a3edba05b1d052318f8ecdbb9d9314a893"
+      }
+    },
+    "US-SC:wrongful_death_limitations:5029ab3509d3": {
+      "category": "wrongful_death_limitations",
+      "title": "S.C. Code Ann. § 15-3-530(6)",
+      "url": "https://www.scstatehouse.gov/Archives/CodeofLaws2024/t15c003.php",
+      "locator": "S.C. Code Ann. § 15-3-530(6)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:01.961529+00:00",
+        "sha256": "3db72132a1123420b1837e793a4273a3edba05b1d052318f8ecdbb9d9314a893"
+      }
+    },
+    "US-SC:written_contract_limitations:67e45b2dfe1d": {
+      "category": "written_contract_limitations",
+      "title": "S.C. Code Ann. § 15-3-520",
+      "url": "https://www.scstatehouse.gov/Archives/CodeofLaws2024/t15c003.php",
+      "locator": "S.C. Code Ann. § 15-3-520",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:01.961529+00:00",
+        "sha256": "3db72132a1123420b1837e793a4273a3edba05b1d052318f8ecdbb9d9314a893"
+      }
+    },
+    "US-SC:consumer_private_action:14643bee7139": {
+      "category": "consumer_private_action",
+      "title": "S.C. Code Ann. § 39-5-140(a), first sentence",
+      "url": "https://www.scstatehouse.gov/code/t39c005.php",
+      "locator": "S.C. Code Ann. § 39-5-140(a), first sentence",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:26.260973+00:00",
+        "sha256": "8a5faf02c17cdb9456e004774cb91811e77f3b6c94a42cda96d20f8973900c00"
+      }
+    },
+    "US-SC:consumer_remedies:968e72a3c506": {
+      "category": "consumer_remedies",
+      "title": "S.C. Code Ann. § 39-5-140(a), remedies",
+      "url": "https://www.scstatehouse.gov/code/t39c005.php",
+      "locator": "S.C. Code Ann. § 39-5-140(a), remedies",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:26.260973+00:00",
+        "sha256": "8a5faf02c17cdb9456e004774cb91811e77f3b6c94a42cda96d20f8973900c00"
+      }
+    },
+    "US-SC:consumer_remedies:77f6fc803663": {
+      "category": "consumer_remedies",
+      "title": "S.C. Code Ann. § 39-5-140(d)",
+      "url": "https://www.scstatehouse.gov/code/t39c005.php",
+      "locator": "S.C. Code Ann. § 39-5-140(d)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:26.260973+00:00",
+        "sha256": "8a5faf02c17cdb9456e004774cb91811e77f3b6c94a42cda96d20f8973900c00"
+      }
+    },
+    "US-SC:consumer_limitations:b85590cbf51b": {
+      "category": "consumer_limitations",
+      "title": "S.C. Code Ann. § 39-5-150",
+      "url": "https://www.scstatehouse.gov/code/t39c005.php",
+      "locator": "S.C. Code Ann. § 39-5-150",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:26.260973+00:00",
+        "sha256": "8a5faf02c17cdb9456e004774cb91811e77f3b6c94a42cda96d20f8973900c00"
+      }
+    },
+    "US-SC:consumer_agency:d5d71396e8d3": {
+      "category": "consumer_agency",
+      "title": "S.C. Code Ann. § 39-5-50",
+      "url": "https://www.scstatehouse.gov/code/t39c005.php",
+      "locator": "S.C. Code Ann. § 39-5-50",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:26.260973+00:00",
+        "sha256": "8a5faf02c17cdb9456e004774cb91811e77f3b6c94a42cda96d20f8973900c00"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-SC:court:406cd8b1c8cb",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-SC:court_directory:4bf6183a0a42"
+    },
+    {
+      "id": "US-SC:court:651c91cc84b8",
+      "name": "South Carolina Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-SC:court_directory:fda706284b14"
+    },
+    {
+      "id": "US-SC:court:afd5b207030b",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-SC:court_directory:c2adf09ece43"
+    },
+    {
+      "id": "US-SC:court:25c6acda7e80",
+      "name": "Family Courts",
+      "level": "trial_directory",
+      "source_id": "US-SC:court_directory:7f3e1203a8a5"
+    },
+    {
+      "id": "US-SC:court:fbc6950ebe7e",
+      "name": "Probate Courts",
+      "level": "trial_directory",
+      "source_id": "US-SC:court_directory:7449e18ea4f2"
+    },
+    {
+      "id": "US-SC:court:fd12629be78e",
+      "name": "Magistrates Court",
+      "level": "trial_directory",
+      "source_id": "US-SC:court_directory:6ff7f69c8e43"
+    },
+    {
+      "id": "US-SC:court:3ca8c9628c2b",
+      "name": "Charleston County Courts",
+      "level": "trial_directory",
+      "source_id": "US-SC:court_directory:ff29db8441c8"
+    },
+    {
+      "id": "US-SC:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-SC:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-SC:court:6946571becdd",
+      "name": "Family",
+      "level": "limited_trial",
+      "source_id": "US-SC:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-SC:court:44949d940273",
+      "name": "Magistrate",
+      "level": "limited_trial",
+      "source_id": "US-SC:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-SC:court:4f54b582f9f0",
+      "name": "Probate",
+      "level": "limited_trial",
+      "source_id": "US-SC:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-SC:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-SC:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "S.C. Code § 15-3-530(5)",
+      "source_id": "US-SC:pi_limitations:7da72fb70ade",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "S.C. Code § 15-3-530(1)",
+      "source_id": "US-SC:written_contract_limitations:7da72fb70ade",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "S.C. Code § 15-3-530(1)",
+      "source_id": "US-SC:oral_contract_limitations:7da72fb70ade",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "S.C. Code § 27-40-110. Territorial application",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "S.C. Code § 39-5-10 et seq.",
+      "source_id": "US-SC:consumerLaw:79c108c55ebc",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "932e7f8a958ff21f1e47b0270a07b5": {
+      "citation": "S.C. Code § 39-5-20",
+      "source_id": "US-SC:consumerLaw:0b6b786a8fb2",
+      "authority_type": "statute",
+      "text": "(a) Unfair methods of competition and unfair or deceptive acts or practices in the conduct of any trade or commerce are hereby declared unlawful. (b) It is the intent of the legislature that in construing paragraph (a) of this section the courts will be guided by the interpretations given by the Federal Trade Commission and the Federal Courts to Section 5(a) (1) of the Federal Trade Commission Act (15 U.S.C. 45(a)(1)), as from time to time amended.",
+      "text_sha256": "9540d95bbd624bc5437265c6c7f49e36408cc40098cdc73589728a7677da736a",
+      "publisher_sha256": "5d59d752058185c071e8f7b90e1873c98cea59f9419928bf9e7421850183bf7a",
+      "retrieved_at": "2026-11-17T19:43:06.726355+00:00",
+      "language": "en",
+      "currentness": "historical",
+      "edition": "2018 archived Code of Laws"
+    },
+    "91f9eaf41e148e122e90217aa3a0c5": {
+      "citation": "S.C. Code § 39-5-20",
+      "source_id": "US-SC:consumerLaw:4cb74b476065",
+      "authority_type": "statute",
+      "text": "(a) Unfair methods of competition and unfair or deceptive acts or practices in the conduct of any trade or commerce are hereby declared unlawful. (b) It is the intent of the legislature that in construing paragraph (a) of this section the courts will be guided by the interpretations given by the Federal Trade Commission and the Federal Courts to Section 5(a) (1) of the Federal Trade Commission Act (15 U.S.C. 45(a)(1)), as from time to time amended.",
+      "text_sha256": "9540d95bbd624bc5437265c6c7f49e36408cc40098cdc73589728a7677da736a",
+      "publisher_sha256": "8a5faf02c17cdb9456e004774cb91811e77f3b6c94a42cda96d20f8973900c00",
+      "retrieved_at": "2026-11-18T15:06:27.866203+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "3e9b344b00b9d44bca71ca65dbd1ca": {
+      "source_id": "US-SC:contract_formation:82e2f2a00fcb",
+      "authority_type": "statute",
+      "citation": "S.C. Code § 36-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "a9dded040ef7b53901e1f121acc42e2585c097dc6d08a5596975ac923bbaf020",
+      "retrieved_at": "2026-11-18T15:14:32.481170+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "a44315e776488c0db0978bd2744433": {
+      "source_id": "US-SC:contract_damages:cfe6a8599e5a",
+      "authority_type": "statute",
+      "citation": "S.C. Code § 36-2-714",
+      "text": "Where the buyer has accepted goods and given notification (subsection (3) of SECTION 36-2-607) he may recover as damages for any nonconformity of tender the loss resulting in the ordinary course of events from the seller's breach as determined in any manner which is reasonable. (2) The measure of damages for breach of warranty is the difference at the time and place of acceptance between the value of the goods accepted and the value they would have had if they had been as warranted, unless special circumstances show proximate damages of a different amount.",
+      "text_sha256": "a85629d289bd11974e14c30a97ab6d6aa767e6ee726bd8998e1e22744fe891de",
+      "publisher_sha256": "a9dded040ef7b53901e1f121acc42e2585c097dc6d08a5596975ac923bbaf020",
+      "retrieved_at": "2026-11-18T15:14:32.481170+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "a5a443ef8351bd62a35c3bb7faf9a0": {
+      "source_id": "US-SC:commencement:1ed1bff7bcf2",
+      "authority_type": "court_rule",
+      "citation": "S.C. R. Civ. P. 3(a)",
+      "text": "(a) Commencement of civil action. A civil action is commenced when the summons and complaint are filed with the clerk of court if: (1) the summons and complaint are served within the statute of limitations in any manner prescribed by law; or (2) if not served within the statute of limitations, actual service must be accomplished not later than one hundred twenty days after filing.",
+      "text_sha256": "56fc851dd6a72ff944c01e7962c8ab048473640ee0e3a57a6eb9240e6c1f6705",
+      "publisher_sha256": "ced9775a0b20feb4f88d5c935b64024e81924ccaca61428d6d050cf2380b1c24",
+      "retrieved_at": "2026-11-18T20:45:46.201127+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "South Carolina Circuit Court"
+    },
+    "6492fe95e1715609ab3aaff51bf246": {
+      "source_id": "US-SC:negligence_elements:d3ed32050476",
+      "authority_type": "opinion",
+      "citation": "Bergstrom v. Palmetto Health Alliance, Op. No. 3552 (S.C. Ct. App. Sept. 30, 2002)",
+      "text": "In order to establish a claim for negligence, the plaintiff must prove the following elements: (1) a duty of care owed by the defendant to the plaintiff; (2) a breach of that duty by the defendant’s negligent act or omission; (3) resulting in damages to the plaintiff; and (4) the damages proximately resulted from the breach of duty. Thomasko v. Poole, 349 S.C. 7, 561 S.E.2d 597 (2002).",
+      "text_sha256": "cb8b75ddde874d9f19c16834a2e01891dd9227639f7cf9be154d719ad0829aee",
+      "publisher_sha256": "f54e3f32ea8d9ba33a057936cf11645a23751d86c4b6d9f3b1f01f875eae9739",
+      "retrieved_at": "2026-11-19T13:54:45.047992+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2002-09-30",
+      "court": "South Carolina Court of Appeals",
+      "decision_date": "2002-09-30",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from circuit court in hospital negligence action; affirmed."
+    },
+    "d3e87c690e85a7952e79473b4e07c4": {
+      "source_id": "US-SC:wageLaw:399c5f644332",
+      "authority_type": "statute",
+      "citation": "S.C. Code § 41-10-50",
+      "text": "When an employer separates an employee from the payroll for any reason, the employer shall pay all wages due to the employee within forty-eight hours of the time of separation or the next regular payday which may not exceed thirty days.",
+      "text_sha256": "5299146ff0d6e66a61d18684f2948cc2e3e6a836a99a9131359dc8b10444c85a",
+      "publisher_sha256": "618d3e12990fbae124919734d199173e28a7bde113861b10b11dc338046f161a",
+      "retrieved_at": "2026-11-17T19:43:06.970483+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "1d6603e7a23c92ab260d4651134320": {
+      "source_id": "US-SC:response:4b67c1ccfe81",
+      "authority_type": "court_rule",
+      "citation": "S.C. R. Civ. P. 12(a)",
+      "text": "(a) When Presented. A defendant shall serve his answer within 30 days after the service of the complaint upon him, unless the Court directs otherwise when service of process is made pursuant to Rule 4(e), and provided further that the State of South Carolina shall answer or otherwise respond to an application for post-conviction relief within 60 days after service of the application, if it arises out of a guilty plea, and 90 days if it arises out of a trial. A party served with a pleading stating a cross-claim against him shall serve an answer thereto within 30 days after the service upon him. The plaintiff shall serve his reply to a counterclaim in the answer within 30 days after service of the answer or, if a reply is ordered by the court, within 30 days after service of the order, unless the order otherwise directs. The service of a motion permitted under this rule alters these periods of time as follows, unless a different time is fixed by order of the Court: (1) if the Court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within 15 days after notice of the Court's action; (2) if the Court grants a motion for a more definite statement the responsive pleading shall be served within 15 days after the service of the more definite statement, and a responsive pleading, if necessary, shall be served within 15 days after notice of the court's action on a motion to strike. Note: This Rule 12(a) is identical to the Federal Rule except that it changes the time to answer from 20 to 30 days, and the time to plead after motion denied from 10 to 15 days. No other changes in State practice are affected by the Rule. Note to 1986 Amendment: The amendment to Rule 12(a)(2) sets the time for response after a motion to strike at 15 days, which is the same time set for pleading after a successful motion for a more definite statement. Note to 1995 Amendment: Rule 12(a) is amended to provide special time periods for the State to respond to applications for post-conviction relief because the thirty day time period for civil litigation is often extended so that the State may obtain a transcript of the proceeding before responding.",
+      "text_sha256": "66090ada2c5fe6a69fc6cdf06c099bf176043919e928d40f902393dd55f7aca9",
+      "publisher_sha256": "a7f7cd9bdf5835437a297483c4c0c0af7bc30d44ad8070214b57db3b29ea847a",
+      "retrieved_at": "2026-11-19T19:42:59.195878+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "South Carolina Circuit Court"
+    },
+    "c44b1c5dcabe769e4c7222f2371292": {
+      "source_id": "US-SC:fault:532a4af3124d",
+      "authority_type": "opinion",
+      "citation": "Berberich v. Jack, Opinion No. 26955 (S.C. Apr. 4, 2011)",
+      "text": "In Nelson, this Court stated that, under comparative negligence \"a plaintiff in a negligence action may recover damages if his or her negligence is not greater than that of the defendant.\" Id. at 245, 399 S.E.2d at 784. \"The amount of the plaintiff's recovery shall be reduced in proportion to the amount of his or her negligence.\" Id.",
+      "text_sha256": "66d52ff9d2f9efa0c310f84b58a4d17db3cf5df3fbea85ee82867ec3356afbf0",
+      "publisher_sha256": "92214099e3459e3d5e8a644a0a3ba0104b58094ed113d3b15b9575f43dce5d4c",
+      "retrieved_at": "2026-11-20T15:12:10.872912+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2011-04-04",
+      "court": "Supreme Court of South Carolina",
+      "decision_date": "2011-04-04",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a circuit court judgment in a negligence case concerning jury instructions."
+    },
+    "47a5cc6536893b2936b919be04e874": {
+      "source_id": "US-SC:service:563f48f7e185",
+      "authority_type": "court_rule",
+      "citation": "S.C. R. Civ. P. 4(d)(1)",
+      "text": "(d)(1) Individuals. Upon an individual other than a minor under the age of 14 years or an incompetent person, by delivering a copy of the summons and complaint to him personally or by leaving copies thereof at his dwelling house or usual place of abode with some person of suitable age and discretion then residing therein, or by delivering a copy to an agent authorized by appointment or by law to receive service of process.",
+      "text_sha256": "9d0f411d3b098e9a9ad084d5e4c76cfd08c565522ff34e8338a6995530dccfb8",
+      "publisher_sha256": "983116fcd457aa6c78bc790bea063885b55d801d87e06df8d3a5077151345eac",
+      "retrieved_at": "2026-11-20T15:21:02.672289+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "South Carolina Circuit Court"
+    },
+    "73b631d5471c5acaa693c9c0a6f07a": {
+      "source_id": "US-SC:pi_limitations:13becc09cbca",
+      "authority_type": "statute",
+      "citation": "S.C. Code § 15-3-530(5)",
+      "text": "SECTION 15-3-530. Three years. Within three years: (1) an action upon a contract, obligation, or liability, express or implied, excepting those provided for in Section 15-3-520; (2) an action upon a liability created by statute other than a penalty or forfeiture; (3) an action for trespass upon or damage to real property; (4) an action for taking, detaining, or injuring any goods or chattels including an action for the specific recovery of personal property; (5) an action for assault, battery, or any injury to the person or rights of another, not arising on contract and not enumerated by law, and those provided for in Section 15-3-545;",
+      "text_sha256": "4bb119a3177ff6195f42a7b3b5e3395acaceaba00ba55e3839c8b2b4b758a728",
+      "publisher_sha256": "357478cdedb194c9a8d4384e5e305d7eca7eb420557985270d05122db40be127",
+      "retrieved_at": "2026-11-20T15:34:30.240295+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "5ff5c895fbdb34e2045bd89387532c": {
+      "source_id": "US-SC:deposit:b735ab1a7761",
+      "authority_type": "statute",
+      "citation": "S.C. Code § 27-40-410(a)–(b)",
+      "text": "(a) Upon termination of the tenancy, property or money held by the landlord as security must be returned less amounts withheld by the landlord for accrued rent and damages which the landlord has suffered by reason of the tenant's noncompliance with Section 27-40-510. Any deduction from the security/rental deposit must be itemized by the landlord in a written notice to the tenant together with the amount due, if any, within thirty days after termination of the tenancy and delivery of possession and demand by the tenant, whichever is later. The tenant shall provide the landlord in writing with a forwarding address or new address to which the written notice and amount due from the landlord may be sent. If the tenant fails to provide the landlord with the forwarding or new address, the tenant is not entitled to damages under this subsection provided the landlord (1) had no notice of the tenant's whereabouts and (2) mailed the written notice and amount due, if any, to the tenant's last known address. (b) If the landlord fails to return to the tenant any prepaid rent or security/rental deposit with the notice required to be sent by the landlord pursuant to subsection (a), the tenant may recover the property and money in an amount equal to three times the amount wrongfully withheld and reasonable attorney's fees.",
+      "text_sha256": "7195f27c174bd459b37900398b879589b3de2faa08646a71ed3023d0995728a6",
+      "publisher_sha256": "61faf4a26101dac9a2208b54787d2c5b448ebf0c908b824f820a68203a09a95f",
+      "retrieved_at": "2026-11-20T17:57:54.267724+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "bcddb36c11a00609c68d7b687457c5": {
+      "source_id": "US-SC:debtLaw:83dc1bd112bb",
+      "authority_type": "statute",
+      "citation": "S.C. Code § 37-5-108(1)",
+      "text": "(1) With respect to a transaction that is, gives rise to, or leads the debtor to believe will give rise to, a consumer credit transaction, if the court as a matter of law finds: (a) the agreement or transaction to have been unconscionable at the time it was made, or to have been induced by unconscionable conduct, the court may refuse to enforce the agreement; or (b) any term or part of the agreement or transaction to have been unconscionable at the time it was made, the court may refuse to enforce the agreement, enforce the remainder of the agreement without the unconscionable term or part, or so limit the application of any unconscionable term or part as to avoid any unconscionable result and award the consumer any actual damages he has sustained.",
+      "text_sha256": "1682f624168a2b5c5f1e9c5a59a474a3cfbe694887cf7d243083979ac103e889",
+      "publisher_sha256": "ceafdf641e45fc58394744abc5e8d564c326c55991b9221db868acc51bd39fbb",
+      "retrieved_at": "2026-11-20T18:01:54.679945+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "bc2e121bbf68e94c19215760c1d244": {
+      "source_id": "US-SC:small_claims:60e7c17b807f",
+      "authority_type": "statute",
+      "citation": "S.C. Code Ann. § 22-3-10(1)-(2)",
+      "text": "Magistrates have concurrent civil jurisdiction in the following cases: (1) in actions arising on contracts for the recovery of money only, if the sum claimed does not exceed seven thousand five hundred dollars; (2) in actions for damages for injury to rights pertaining to the person or personal or real property, if the damages claimed do not exceed seven thousand five hundred dollars;",
+      "text_sha256": "59026ff40c164323a105f9b421996ad0d222db78e5d893ce8589b30b55d53f80",
+      "publisher_sha256": "9273f2cf86343b0c545645560e9e6c8f5cb3266a20ccddb4830c57c1db71fd1c",
+      "retrieved_at": "2026-11-20T23:12:28.583044+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "South Carolina 2024 archived Code of Laws",
+      "court": "South Carolina Magistrates Court"
+    },
+    "8340c245407bdd8399ccdd13472a52": {
+      "source_id": "US-SC:service_time_limit:e00b691c63ac",
+      "authority_type": "court_rule",
+      "citation": "S.C. R. Civ. P. 3(a)(1)–(2)",
+      "text": "(a) Commencement of civil action. A civil action is commenced when the summons and complaint are filed with the clerk of court if: (1) the summons and complaint are served within the statute of limitations in any manner prescribed by law; or (2) if not served within the statute of limitations, actual service must be accomplished not later than one hundred twenty days after filing.",
+      "text_sha256": "56fc851dd6a72ff944c01e7962c8ab048473640ee0e3a57a6eb9240e6c1f6705",
+      "publisher_sha256": "ced9775a0b20feb4f88d5c935b64024e81924ccaca61428d6d050cf2380b1c24",
+      "retrieved_at": "2026-11-18T20:45:46.201127+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "South Carolina Circuit Court",
+      "publisher_member": "South Carolina Judicial Branch Rule 3(a), service conditions for commencement"
+    },
+    "c635a5cb3b1f447a7017811162b9dd": {
+      "source_id": "US-SC:general_contract_limitations:a2f70fc0e8d6",
+      "authority_type": "statute",
+      "citation": "S.C. Code Ann. § 15-3-530(1)",
+      "text": "Within three years: (1) an action upon a contract, obligation, or liability, express or implied, excepting those provided for in Section 15-3-520;",
+      "text_sha256": "f7db864898ee99789babd45b855afd5dc79066f1cb3df49e0a91dd26a841dfbf",
+      "publisher_sha256": "3db72132a1123420b1837e793a4273a3edba05b1d052318f8ecdbb9d9314a893",
+      "retrieved_at": "2026-11-21T17:43:01.961529+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "South Carolina Code of Laws, 2024 archive",
+      "publisher_member": "South Carolina General Assembly archived 2024 Code of Laws, § 15-3-530(1)"
+    },
+    "5557a327de11fd500ce535b7cfe209": {
+      "source_id": "US-SC:wrongful_death_limitations:5029ab3509d3",
+      "authority_type": "statute",
+      "citation": "S.C. Code Ann. § 15-3-530(6)",
+      "text": "Within three years: (6) an action under Sections 15-51-10 to 15-51-60 for death by wrongful act, the period to begin to run upon the death of the person on account of whose death the action is brought;",
+      "text_sha256": "9a860413184d59382a557a1e23fdcc9ded5b989e2d224ac8e92a803d00bc9861",
+      "publisher_sha256": "3db72132a1123420b1837e793a4273a3edba05b1d052318f8ecdbb9d9314a893",
+      "retrieved_at": "2026-11-21T17:43:01.961529+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "South Carolina Code of Laws, 2024 archive",
+      "publisher_member": "South Carolina General Assembly archived 2024 Code of Laws, § 15-3-530(6)"
+    },
+    "d610c53aedb967065f96400c11d414": {
+      "source_id": "US-SC:written_contract_limitations:67e45b2dfe1d",
+      "authority_type": "statute",
+      "citation": "S.C. Code Ann. § 15-3-520",
+      "text": "Within twenty years: (a) an action upon a bond or other contract in writing secured by a mortgage of real property; (b) an action upon a sealed instrument, other than a sealed note and personal bond for the payment of money only whereon the period of limitation is the same as prescribed in Section 15-3-530, except that a sealed contract for sale or an offer to buy or sell goods whereon the period of limitation is the same as prescribed in Section 36-2-725.",
+      "text_sha256": "f128d503d2098ad46231fffd7d4e7ed8c262d86ed97d8bd1dad12792029291e4",
+      "publisher_sha256": "3db72132a1123420b1837e793a4273a3edba05b1d052318f8ecdbb9d9314a893",
+      "retrieved_at": "2026-11-21T17:43:01.961529+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "South Carolina Code of Laws, 2024 archive",
+      "publisher_member": "South Carolina General Assembly archived 2024 Code of Laws, § 15-3-520"
+    },
+    "eb759a0298e5b052f4c518db7536d2": {
+      "source_id": "US-SC:consumer_private_action:14643bee7139",
+      "authority_type": "statute",
+      "citation": "S.C. Code Ann. § 39-5-140(a), first sentence",
+      "text": "(a) Any person who suffers any ascertainable loss of money or property, real or personal, as a result of the use or employment by another person of an unfair or deceptive method, act or practice declared unlawful by Section 39-5-20 may bring an action individually, but not in a representative capacity, to recover actual damages.",
+      "text_sha256": "0a3b19151992970a468734530f9523bd5cab0d84cf11b4f196adc08a656c4e72",
+      "publisher_sha256": "8a5faf02c17cdb9456e004774cb91811e77f3b6c94a42cda96d20f8973900c00",
+      "retrieved_at": "2026-11-21T21:58:26.260973+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "South Carolina General Assembly unannotated code, § 39-5-140(a), first sentence"
+    },
+    "41a91c9354cae2f1064636d273be76": {
+      "source_id": "US-SC:consumer_remedies:968e72a3c506",
+      "authority_type": "statute",
+      "citation": "S.C. Code Ann. § 39-5-140(a), remedies",
+      "text": "If the court finds that the use or employment of the unfair or deceptive method, act or practice was a willful or knowing violation of Section 39-5-20, the court shall award three times the actual damages sustained and may provide such other relief as it deems necessary or proper. Upon the finding by the court of a violation of this article, the court shall award to the person bringing such action under this section reasonable attorney's fees and costs.",
+      "text_sha256": "2252742f45ab2dc07ddaaaf517575ac17cff251dd771fb70a662f7288745a592",
+      "publisher_sha256": "8a5faf02c17cdb9456e004774cb91811e77f3b6c94a42cda96d20f8973900c00",
+      "retrieved_at": "2026-11-21T21:58:26.260973+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "South Carolina General Assembly unannotated code, § 39-5-140(a), remedies"
+    },
+    "21b00769c0636d315cb7ba721651d2": {
+      "source_id": "US-SC:consumer_remedies:77f6fc803663",
+      "authority_type": "statute",
+      "citation": "S.C. Code Ann. § 39-5-140(d)",
+      "text": "(d) For the purposes of this section, a willful violation occurs when the party committing the violation knew or should have known that his conduct was a violation of Section 39-5-20.",
+      "text_sha256": "55a028309bf0e7d8c530ffd5421810947496680fc2d08ef5df328723a3fc4da1",
+      "publisher_sha256": "8a5faf02c17cdb9456e004774cb91811e77f3b6c94a42cda96d20f8973900c00",
+      "retrieved_at": "2026-11-21T21:58:26.260973+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "South Carolina General Assembly unannotated code, § 39-5-140(d)"
+    },
+    "312285fecf9480323a043c2f1eb648": {
+      "source_id": "US-SC:consumer_limitations:b85590cbf51b",
+      "authority_type": "statute",
+      "citation": "S.C. Code Ann. § 39-5-150",
+      "text": "No action may be brought under this article more than three years after discovery of the unlawful conduct which is the subject of the suit.",
+      "text_sha256": "53b7ea07cac1096e4526f0d6fa5e0b32704801b1e171d2c94eeeb54bb3f758d5",
+      "publisher_sha256": "8a5faf02c17cdb9456e004774cb91811e77f3b6c94a42cda96d20f8973900c00",
+      "retrieved_at": "2026-11-21T21:58:26.260973+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "South Carolina General Assembly unannotated code, § 39-5-150"
+    },
+    "54622c78c78d2e49e2510caa7347b1": {
+      "source_id": "US-SC:consumer_agency:d5d71396e8d3",
+      "authority_type": "statute",
+      "citation": "S.C. Code Ann. § 39-5-50",
+      "text": "(a) Whenever the Attorney General has reasonable cause to believe that any person is using, has used or is about to use any method, act or practice declared by Section 39-5-20 to be unlawful, and that proceedings would be in the public interest, he may bring an action in the name of the State against such person to restrain by temporary restraining order, temporary injunction or permanent injunction the use of such method, act or practice. Unless the Attorney General determines in writing that the purposes of this article will be substantially impaired by delay in instituting legal proceedings, he shall, at least three days before instituting any legal proceedings as provided in this section, give notice to the person against whom proceedings are contemplated and give such person an opportunity to present reasons to the Attorney General why such proceedings should not be instituted. The action may be brought in the court of common pleas in the county in which such person resides, has his principal place of business or conducts or transacts business. The courts are authorized to issue orders and injunctions to restrain and prevent violations of this article, and such orders and injunctions shall be issued without bond. Whenever any permanent injunction is issued by such court in connection with any action which has become final, reasonable costs shall be awarded to the State. (b) The court may make such additional orders or judgments as may be necessary to restore to any person who has suffered any ascertainable loss by reason of the use or employment of such unlawful method, act or practice, any moneys or property, real or personal, which may have been acquired by means of any practice declared to be unlawful in this article, including the revocation of a license or certificate authorizing that person to engage in business in this State, provided the order declaring the practice to have been unlawful has become final.",
+      "text_sha256": "b862353e59c1b4bce5af85e75b2684c31677181e489074adf585c4a07be6d555",
+      "publisher_sha256": "8a5faf02c17cdb9456e004774cb91811e77f3b6c94a42cda96d20f8973900c00",
+      "retrieved_at": "2026-11-21T21:58:26.260973+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "South Carolina General Assembly unannotated code, attorney general enforcement and notice"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "source_id": "US-SC:fault:532a4af3124d",
+    "passage_selector": "c44b1c5dcabe769e4c7222f2371292",
+    "currentness": "historical",
+    "qualification": "The cited discussion concerns ordinary negligence. The opinion separately analyzes reckless, willful and wanton conduct."
+  }
+}

@@ -1,0 +1,945 @@
+{
+  "jurisdiction": "US-AL",
+  "version": "1",
+  "sources": {
+    "US-AL:statutes:0c885c814123": {
+      "category": "statutes",
+      "title": "Code of Alabama 1975",
+      "url": "http://alisondb.legislature.state.al.us/alison/codeofalabama/1975/coatoc.htm",
+      "directory": "codes",
+      "locator": "Alabama"
+    },
+    "US-AL:constitution:c55ad4968de8": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://alisondb.legislature.state.al.us/ALISON_LCC/CodeOfAlabama/Constitution/1901/toc.htm",
+      "directory": "codes",
+      "locator": "Alabama"
+    },
+    "US-AL:legislature:1ce8bb830496": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://alisondb.legislature.state.al.us/alison/alisonlogin.aspx?SESSIONOID=1065",
+      "directory": "codes",
+      "locator": "Alabama"
+    },
+    "US-AL:labor_agency:140bc6e27554": {
+      "category": "labor_agency",
+      "title": "www.labor.alabama.gov",
+      "url": "http://www.labor.alabama.gov/",
+      "directory": "labor",
+      "locator": "Alabama"
+    },
+    "US-AL:business_registration:24c19dac17ae": {
+      "category": "business_registration",
+      "title": "Alabama Secretary of State",
+      "url": "http://sos.alabama.gov/business-services",
+      "directory": "business",
+      "locator": "Alabama"
+    },
+    "US-AL:commercial_code:4a012bdb5da1": {
+      "category": "commercial_code",
+      "title": "Title 7, Commercial Code",
+      "url": "http://alisondb.legislature.state.al.us/alison/CodeOfAlabama/1975/3997.htm",
+      "directory": "ucc",
+      "locator": "Alabama"
+    },
+    "US-AL:civil_rules:e791c1231b4c": {
+      "category": "civil_rules",
+      "title": "Rules of Civil Procedure",
+      "url": "https://judicial.alabama.gov/library/CivilProcedure",
+      "directory": "procedure",
+      "locator": "Alabama"
+    },
+    "US-AL:consumer_agency:dcab7ed88a0a": {
+      "category": "consumer_agency",
+      "title": "Alabama (AL)",
+      "url": "https://www.alabamaag.gov/consumer-complaint/",
+      "directory": "consumer",
+      "locator": "Alabama (AL)"
+    },
+    "US-AL:judiciary:ab1446a2240b": {
+      "category": "judiciary",
+      "title": "Alabama Judicial System",
+      "url": "http://judicial.alabama.gov/",
+      "directory": "doj-AL",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-AL:court_directory:a8ff8ef214bd": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://judicial.alabama.gov/Appellate/SupremeCourt",
+      "directory": "doj-AL",
+      "locator": "Supreme Court"
+    },
+    "US-AL:opinions:b0e67def7d89": {
+      "category": "opinions",
+      "title": "Supreme Court Decisions and Opinions (Alabama Sup. Ct.)",
+      "url": "https://judicial.alabama.gov/decision/supremecourtdecisions",
+      "directory": "doj-AL",
+      "locator": "State and Local Courts / Supreme Court"
+    },
+    "US-AL:court_directory:b291a4f28379": {
+      "category": "court_directory",
+      "title": "Appellate Courts",
+      "url": "http://judicial.alabama.gov/Appellate/Index",
+      "directory": "doj-AL",
+      "locator": "Appellate Courts"
+    },
+    "US-AL:court_directory:3f2d378e78c7": {
+      "category": "court_directory",
+      "title": "Court of Civil Appeals",
+      "url": "http://judicial.alabama.gov/Appellate/CivilAppeals",
+      "directory": "doj-AL",
+      "locator": "Court of Civil Appeals"
+    },
+    "US-AL:court_directory:872d4c1fd13b": {
+      "category": "court_directory",
+      "title": "Court of Criminal Appeals",
+      "url": "http://judicial.alabama.gov/Appellate/CriminalAppeals",
+      "directory": "doj-AL",
+      "locator": "Court of Criminal Appeals"
+    },
+    "US-AL:forms:748c8315522f": {
+      "category": "forms",
+      "title": "Court Forms (Administrative Office of Courts)",
+      "url": "http://eforms.alacourt.gov/default.aspx",
+      "directory": "doj-AL",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-AL:constitution:497beea07fe2": {
+      "category": "constitution",
+      "title": "Alabama Constitution",
+      "url": "https://alison.legislature.state.al.us/constitution",
+      "directory": "doj-AL",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-AL:statutes:6f2a6f65fd23": {
+      "category": "statutes",
+      "title": "Code of Alabama",
+      "url": "https://alison.legislature.state.al.us/code-of-alabama",
+      "directory": "doj-AL",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-AL:pi_limitations:4f021ef2fb38": {
+      "category": "pi_limitations",
+      "title": "Ala. Code § 6-2-38(l)",
+      "url": "https://alison.legislature.state.al.us/code-of-alabama?section=6-2-38",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://alison.legislature.state.al.us/code-of-alabama?section=6-2-38",
+        "retrieved_at": "2026-11-17T19:33:54.959908+00:00",
+        "http_status": "200",
+        "sha256": "688759f9da1b9973e62d6bffdbb7ebb9dca1a424c4bc3225c9e15a1582095b9c",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AL:written_contract_limitations:4e21331ad0d3": {
+      "category": "written_contract_limitations",
+      "title": "Ala. Code § 6-2-34(4)",
+      "url": "https://alison.legislature.state.al.us/code-of-alabama?section=6-2-34",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://alison.legislature.state.al.us/code-of-alabama?section=6-2-34",
+        "retrieved_at": "2026-11-17T19:33:54.663709+00:00",
+        "http_status": "200",
+        "sha256": "3d82c2b5a27df5e350c9dfbf58f02ef10ee247c40044ff8490282d1b96c80b59",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AL:oral_contract_limitations:4e21331ad0d3": {
+      "category": "oral_contract_limitations",
+      "title": "Ala. Code § 6-2-34(9)",
+      "url": "https://alison.legislature.state.al.us/code-of-alabama?section=6-2-34",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://alison.legislature.state.al.us/code-of-alabama?section=6-2-34",
+        "retrieved_at": "2026-11-17T19:33:54.663709+00:00",
+        "http_status": "200",
+        "sha256": "3d82c2b5a27df5e350c9dfbf58f02ef10ee247c40044ff8490282d1b96c80b59",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AL:small_claims:29b5524bf55f": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://eforms.alacourt.gov/small-claims/",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://eforms.alacourt.gov/small-claims/",
+        "retrieved_at": "2026-11-17T19:41:54.174035+00:00",
+        "http_status": "200",
+        "sha256": "756d7a78ee12fc6c53c84b7834a409880aec824894822571561b90bc8fb03c47",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AL:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 26"
+    },
+    "US-AL:deposit:79b0fd85bacd": {
+      "category": "deposit",
+      "title": "Residential tenancy publication",
+      "url": "https://mobile.alacourt.gov/media/ccmhtoa0/universal-residential-landlord-and-tenant-act.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://mobile.alacourt.gov/media/ccmhtoa0/universal-residential-landlord-and-tenant-act.pdf",
+        "retrieved_at": "2026-11-17T19:42:06.120767+00:00",
+        "http_status": "200",
+        "sha256": "80d713b68b23b2a0f135dce7ba26dfa49e0121a5ba18a17b126880160e3e5d16",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AL:small_claim_form:d699289cd7f5": {
+      "category": "small_claim_form",
+      "title": "Statement of Claim (Complaint) - General",
+      "url": "https://eforms.alacourt.gov/media/fhjeaxgw/sm-1-statement-of-claim-complaint-general.pdf",
+      "directory": null,
+      "locator": "SM-01"
+    },
+    "US-AL:answer_form:76ea2314e846": {
+      "category": "answer_form",
+      "title": "Defendant's Answer",
+      "url": "https://eforms.alacourt.gov/media/df4mch23/sm-3-defendant-s-answer.pdf",
+      "directory": null,
+      "locator": "SM-03"
+    },
+    "US-AL:consumerLaw:5061a64ca349": {
+      "title": "Ala. Code § 8-19-1 et seq.",
+      "category": "consumerLaw",
+      "url": "https://alison.legislature.state.al.us/code-of-alabama?section=8-19-1",
+      "directory": "consumer_statutes_index",
+      "locator": "Ala. Code § 8-19-1 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-AL:contract_formation:5bfbcc70d374": {
+      "category": "contract_formation",
+      "title": "The Gardens at Glenlakes Property Owners Association, Inc. v. Baldwin County Sewer Service, LLC, No. 1150563, slip op. at 16 (Ala. Sept. 23, 2016)",
+      "url": "https://acis.alabama.gov/displaydocs.cfm?event=4QJ0LUCMJ&no=761343",
+      "locator": "The Gardens at Glenlakes Property Owners Association, Inc. v. Baldwin County Sewer Service, LLC, No. 1150563, slip op. at 16 (Ala. Sept. 23, 2016)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:40:12.134192+00:00",
+        "sha256": "300d29ee6270597cdb8a74d933b09f39364fe8a7617a6b6466560ef440c92393"
+      }
+    },
+    "US-AL:commencement:a6fb5170ff73": {
+      "category": "commencement",
+      "title": "Ala. R. Civ. P. 3(a)",
+      "url": "https://judicial.alabama.gov/docs/library/rules/cv3.pdf",
+      "locator": "Ala. R. Civ. P. 3(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:37:41.556335+00:00",
+        "sha256": "ac10bc5d5d6fb427a732f34eae5a851731a0c0915b74214b3b4798104bacc422"
+      }
+    },
+    "US-AL:service:3e533347353b": {
+      "category": "service",
+      "title": "Ala. R. Civ. P. 4(a)(1)",
+      "url": "https://judicial.alabama.gov/docs/library/rules/cv4.pdf",
+      "locator": "Ala. R. Civ. P. 4(a)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:37:43.917466+00:00",
+        "sha256": "2232a67deb0e6e9e5a3634a45ea3730a3c02762af5088be21644799f926c93ac"
+      }
+    },
+    "US-AL:response:2fd040d0d109": {
+      "category": "response",
+      "title": "Ala. R. Civ. P. 12(a)",
+      "url": "https://judicial.alabama.gov/docs/library/rules/cv12.pdf",
+      "locator": "Ala. R. Civ. P. 12(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:37:41.648522+00:00",
+        "sha256": "e64171d2ad5a7c624bfe8420110bef2eccc6972efb5c82460e571b7b219b1617"
+      }
+    },
+    "US-AL:negligence_elements:8a6fef5893b2": {
+      "category": "negligence_elements",
+      "title": "Haddan v. Norfolk Southern Railway Co., No. 1190976 (Ala. Feb. 4, 2022)",
+      "url": "https://acis.alabama.gov/displaydocs.cfm?event=6990L7U1P&no=1118640",
+      "locator": "Haddan v. Norfolk Southern Railway Co., No. 1190976 (Ala. Feb. 4, 2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T13:54:39.848819+00:00",
+        "sha256": "c39385b07f8aa09f05a68990def2b935e171f80a66083451d164ea3fb32c5e86"
+      }
+    },
+    "US-AL:contract_breach:e8537641e810": {
+      "category": "contract_breach",
+      "title": "Coffman v. Snead Hydraulic & Supply, LLC, Nos. 2200446 and 2200452 (Ala. Civ. App. Feb. 11, 2022)",
+      "url": "https://acis.alabama.gov/displaydocs.cfm?event=69G0OUG81&no=1119717",
+      "locator": "Coffman v. Snead Hydraulic & Supply, LLC, Nos. 2200446 and 2200452 (Ala. Civ. App. Feb. 11, 2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:39:45.925274+00:00",
+        "sha256": "0198105ad04851844b1ef832dbc78351f633c49896445f5be796183eb2be41a5"
+      }
+    },
+    "US-AL:fault:cd68a9f56605": {
+      "category": "fault",
+      "title": "Imperial Aluminum-Scottsboro, LLC v. Taylor, No. 1171133 (Ala. Sept. 20, 2019)",
+      "url": "https://acis.alabama.gov/displaydocs.cfm?event=5L00KSPGV&no=970661",
+      "locator": "Imperial Aluminum-Scottsboro, LLC v. Taylor, No. 1171133 (Ala. Sept. 20, 2019)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:12:11.967547+00:00",
+        "sha256": "587d12ea547e84db8d1ff9a08e162f23dbf7a575adb84d8a243359de2d9e3c13"
+      }
+    },
+    "US-AL:pi_limitations:6b652dc01487": {
+      "category": "pi_limitations",
+      "title": "Ex parte Integra LifeSciences Corp., No. 1170692 (Ala. Aug. 24, 2018)",
+      "url": "https://acis.alabama.gov/displaydocs.cfm?event=5A20M5B1B&no=894318",
+      "locator": "Ex parte Integra LifeSciences Corp., No. 1170692 (Ala. Aug. 24, 2018)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:34:31.810396+00:00",
+        "sha256": "d46c9f7d5c405714e9a5902398ce9020dda74e0cb66f6ce2aa1e8595ce54b733"
+      }
+    },
+    "US-AL:consumerLaw:cfd26370704a": {
+      "category": "consumerLaw",
+      "title": "2021 Ala. Acts 349, § 1 (Ala. Code § 8-19-5(1)–(4))",
+      "url": "https://alison.legislature.state.al.us/files/pdf/SearchableInstruments/2021RS/PrintFiles/SB164-Enr.pdf",
+      "locator": "2021 Ala. Acts 349, § 1 (Ala. Code § 8-19-5(1)–(4))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:29:32.742648+00:00",
+        "sha256": "6eadd3c59badcf58fbbe18f09d11060fec52a596f10c5ef6793de71c50b5b398"
+      }
+    },
+    "US-AL:deposit:b2b131bd62fc": {
+      "category": "deposit",
+      "title": "Ala. Act 2014-279, § 1 (Ala. Code § 35-9A-201(a)–(d))",
+      "url": "https://alison.legislature.state.al.us/files/pdf/SearchableInstruments/2014RS/PrintFiles/SB291-Enr.pdf",
+      "locator": "Ala. Act 2014-279, § 1 (Ala. Code § 35-9A-201(a)–(d))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:57:54.087002+00:00",
+        "sha256": "0017851f280518dd876ddc5665092b053b92a38c8d811bb42960f3a7c7991baf"
+      }
+    },
+    "US-AL:wage_enforcement:dfa132d48d70": {
+      "category": "wage_enforcement",
+      "title": "Ala. Act 2019-519, § 2(a)–(c) (equal-pay protections and remedies)",
+      "url": "https://alison.legislature.state.al.us/files/pdf/SearchableInstruments/2019RS/PrintFiles/HB225-Enr.pdf",
+      "locator": "Ala. Act 2019-519, § 2(a)–(c) (equal-pay protections and remedies)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:16:58.765782+00:00",
+        "sha256": "254a04c7463356abae3c982378eeeee283e40c7282fa4eb5795414ab64860c0b"
+      }
+    },
+    "US-AL:small_claims:fb2146b08a4a": {
+      "category": "small_claims",
+      "title": "Ala. Small Cl. R. A (scope and unlawful-detainer exclusion)",
+      "url": "https://judicial.alabama.gov/docs/library/rules/sma.pdf",
+      "locator": "Ala. Small Cl. R. A (scope and unlawful-detainer exclusion)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:36:54.432876+00:00",
+        "sha256": "7505d51ffd50b8c7acad3d003c8f6b054a3d25951e1ad4e32385988bbb05ed71"
+      }
+    },
+    "US-AL:small_claims:c8bc5f0c90fa": {
+      "category": "small_claims",
+      "title": "Ala. Small Cl. R. D (process in small claims)",
+      "url": "https://judicial.alabama.gov/docs/library/rules/smd.pdf",
+      "locator": "Ala. Small Cl. R. D (process in small claims)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:36:54.738012+00:00",
+        "sha256": "34e235314aa1a5757cbeb8a39a810fc23a9161d48fc3e147ac1559d68497efaa"
+      }
+    },
+    "US-AL:small_claims:2bad12d1377d": {
+      "category": "small_claims",
+      "title": "Ala. Small Cl. R. E (time computation in small claims)",
+      "url": "https://judicial.alabama.gov/docs/library/rules/sme.pdf",
+      "locator": "Ala. Small Cl. R. E (time computation in small claims)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:36:54.656683+00:00",
+        "sha256": "1377903673e85733adcbb1cc640373bb044cd49575f106a5609990a173912403"
+      }
+    },
+    "US-AL:wage_preemption:3fd5c5f29d49": {
+      "category": "wage_preemption",
+      "title": "Ala. Act 2016-18, § 2(b)–(c) (local wage and employment benefit mandates)",
+      "url": "https://alison.legislature.state.al.us/files/pdf/SearchableInstruments/2016RS/PrintFiles/HB174-Enr.pdf",
+      "locator": "Ala. Act 2016-18, § 2(b)–(c) (local wage and employment benefit mandates)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:39:55.679252+00:00",
+        "sha256": "ded816776a4dcacad06302f5d12ed65eae6a2b4cddd3a289daa4efadc216ebea"
+      }
+    },
+    "US-AL:debtLaw:4002a3920eac": {
+      "category": "debtLaw",
+      "title": "Ala. Code § 5-19-8",
+      "url": "https://banking.alabama.gov/wp-content/uploads/2023/08/AL_MC_Act.pdf",
+      "locator": "Ala. Code § 5-19-8",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:15:49.664426+00:00",
+        "sha256": "8199ad6549783bb5f96fccda093eb1c11e7f2914770890c1883e9d3465b30fc9"
+      }
+    },
+    "US-AL:debtLaw:174fa31d998b": {
+      "category": "debtLaw",
+      "title": "Ala. Code § 5-19-10",
+      "url": "https://banking.alabama.gov/wp-content/uploads/2023/08/AL_MC_Act.pdf",
+      "locator": "Ala. Code § 5-19-10",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:15:49.664426+00:00",
+        "sha256": "8199ad6549783bb5f96fccda093eb1c11e7f2914770890c1883e9d3465b30fc9"
+      }
+    },
+    "US-AL:sales_commissions:0bb224af29a9": {
+      "category": "sales_commissions",
+      "title": "1994 Ala. Acts No. 94-686, § 1 (Ala. Code § 8-24-1(1)-(4))",
+      "url": "https://archive.org/download/alabama-acts-1994_v2/1994_v2.pdf",
+      "locator": "1994 Ala. Acts No. 94-686, § 1 (Ala. Code § 8-24-1(1)-(4))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:56:07.395078+00:00",
+        "sha256": "5a6710a6b623501cd8d6c0a587f87ccb7aa6992cd6f4488434a5d2b8b14606ee"
+      }
+    },
+    "US-AL:sales_commissions:c6314240b7b0": {
+      "category": "sales_commissions",
+      "title": "1994 Ala. Acts No. 94-686, § 1 (Ala. Code § 8-24-2(a)-(c))",
+      "url": "https://archive.org/download/alabama-acts-1994_v2/1994_v2.pdf",
+      "locator": "1994 Ala. Acts No. 94-686, § 1 (Ala. Code § 8-24-2(a)-(c))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:56:07.395078+00:00",
+        "sha256": "5a6710a6b623501cd8d6c0a587f87ccb7aa6992cd6f4488434a5d2b8b14606ee"
+      }
+    },
+    "US-AL:sales_commissions:a7c20ce4a8a4": {
+      "category": "sales_commissions",
+      "title": "1994 Ala. Acts No. 94-686, § 1 (Ala. Code § 8-24-3)",
+      "url": "https://archive.org/download/alabama-acts-1994_v2/1994_v2.pdf",
+      "locator": "1994 Ala. Acts No. 94-686, § 1 (Ala. Code § 8-24-3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:56:07.395078+00:00",
+        "sha256": "5a6710a6b623501cd8d6c0a587f87ccb7aa6992cd6f4488434a5d2b8b14606ee"
+      }
+    },
+    "US-AL:sales_commissions:7bf751b62915": {
+      "category": "sales_commissions",
+      "title": "1994 Ala. Acts No. 94-686, § 1 (Ala. Code § 8-24-5(a))",
+      "url": "https://archive.org/download/alabama-acts-1994_v2/1994_v2.pdf",
+      "locator": "1994 Ala. Acts No. 94-686, § 1 (Ala. Code § 8-24-5(a))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:56:07.395078+00:00",
+        "sha256": "5a6710a6b623501cd8d6c0a587f87ccb7aa6992cd6f4488434a5d2b8b14606ee"
+      }
+    },
+    "US-AL:general_contract_limitations:23917808b3af": {
+      "category": "general_contract_limitations",
+      "title": "Daily v. Esser, No. SC-2022-0672 (Ala. Sept. 29, 2023), corrected Nov. 5, 2024",
+      "url": "https://publicportal-api.alappeals.gov/courts/68f021c4-6a44-4735-9a76-5360b2e8af13/cms/case/223A1FA5-6E98-434D-BBE9-7D17710238A5/docketentrydocuments/DA239CDE-C849-48BB-AE95-550423A08389",
+      "locator": "Daily v. Esser, No. SC-2022-0672 (Ala. Sept. 29, 2023), corrected Nov. 5, 2024",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:44:26.370078+00:00",
+        "sha256": "630e2f4a9c85b506a3f7d422c3230e8c816ded748b4d431e3ae5f4c0b7176f87"
+      }
+    },
+    "US-AL:service_time_limit:4f778915f61d": {
+      "category": "service_time_limit",
+      "title": "Ala. R. Civ. P. 4(b)",
+      "url": "https://judicial.alabama.gov/docs/rules/ARCVP_10242008.pdf",
+      "locator": "Ala. R. Civ. P. 4(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T23:02:24.712333+00:00",
+        "sha256": "d9210818c3253fe6eb3ce9d474c8b878b3d0779d18908b0bb847595049df99f7"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-AL:court:364e30e7f9d7",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-AL:court_directory:a8ff8ef214bd"
+    },
+    {
+      "id": "US-AL:court:aca75cc088f4",
+      "name": "Appellate Courts",
+      "level": "appellate_directory",
+      "source_id": "US-AL:court_directory:b291a4f28379"
+    },
+    {
+      "id": "US-AL:court:399439ea7a6b",
+      "name": "Court of Civil Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-AL:court_directory:3f2d378e78c7"
+    },
+    {
+      "id": "US-AL:court:0cf422c8f472",
+      "name": "Court of Criminal Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-AL:court_directory:872d4c1fd13b"
+    },
+    {
+      "id": "US-AL:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-AL:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-AL:court:3c9c83e81fef",
+      "name": "District",
+      "level": "limited_trial",
+      "source_id": "US-AL:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-AL:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-AL:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-AL:court:4f54b582f9f0",
+      "name": "Probate",
+      "level": "limited_trial",
+      "source_id": "US-AL:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Ala. Code § 6-2-38(l)",
+      "source_id": "US-AL:pi_limitations:4f021ef2fb38",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Ala. Code § 6-2-34(4)",
+      "source_id": "US-AL:written_contract_limitations:4e21331ad0d3",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Ala. Code § 6-2-34(9)",
+      "source_id": "US-AL:oral_contract_limitations:4e21331ad0d3",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Ala. Code § 35-9A-141. Definitions.",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Ala. Code § 8-19-1 et seq.",
+      "source_id": "US-AL:consumerLaw:5061a64ca349",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "forms": {
+    "US-AL:form:SM-01": {
+      "title": "Statement of Claim (Complaint) - General",
+      "publisher_identifier": "SM-01",
+      "source_id": "US-AL:small_claim_form:d699289cd7f5",
+      "index_source_id": "US-AL:small_claims:29b5524bf55f",
+      "index_sha256": "756d7a78ee12fc6c53c84b7834a409880aec824894822571561b90bc8fb03c47",
+      "court_scope": "small_claims",
+      "mandatory": "review_required",
+      "revision": null,
+      "last_observed": "2026-11-17T19:41:54.174035+00:00",
+      "automated_completion": "disabled"
+    },
+    "US-AL:form:SM-03": {
+      "title": "Defendant's Answer",
+      "publisher_identifier": "SM-03",
+      "source_id": "US-AL:answer_form:76ea2314e846",
+      "index_source_id": "US-AL:small_claims:29b5524bf55f",
+      "index_sha256": "756d7a78ee12fc6c53c84b7834a409880aec824894822571561b90bc8fb03c47",
+      "court_scope": "small_claims",
+      "mandatory": "review_required",
+      "revision": null,
+      "last_observed": "2026-11-17T19:41:54.174035+00:00",
+      "automated_completion": "disabled"
+    }
+  },
+  "passages": {
+    "f1f10b843582283150bba2ff2af673": {
+      "source_id": "US-AL:contract_formation:5bfbcc70d374",
+      "authority_type": "opinion",
+      "citation": "The Gardens at Glenlakes Property Owners Association, Inc. v. Baldwin County Sewer Service, LLC, No. 1150563, slip op. at 16 (Ala. Sept. 23, 2016)",
+      "text": "Even though a manifestation of intention is intended to be understood as an offer, it cannot be accepted so as to form a contract unless the terms of the contract are reasonably certain.' 17A Am. Jur. 2d Contracts § 183 (2004). 'The terms of a contract are reasonably certain if they provide a basis for determining the existence of a breach and for giving an appropriate remedy.' Id. (emphasis added). See also Smith, 263 Ala. at 249, 82 So. 2d at 203.\" White Sands Group, L.L.C. v. PRS II, LLC, 998 So. 2d 1042, 1051 (Ala. 2008).",
+      "text_sha256": "f9e747c9c03c42902bd5a576fb405e84f3201fd037ff464050c7e58b7ca50fef",
+      "publisher_sha256": "300d29ee6270597cdb8a74d933b09f39364fe8a7617a6b6466560ef440c92393",
+      "retrieved_at": "2026-11-18T20:40:12.134192+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2016-09-23",
+      "court": "Supreme Court of Alabama",
+      "decision_date": "2016-09-23",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from judgment of Baldwin Circuit Court. Reversed and remanded."
+    },
+    "7ebea83f39744b0e669be3886aa035": {
+      "source_id": "US-AL:commencement:a6fb5170ff73",
+      "authority_type": "court_rule",
+      "citation": "Ala. R. Civ. P. 3(a)",
+      "text": "(a) Filing the Complaint. A civil action is commenced by filing a complaint with the court.",
+      "text_sha256": "4bc67e27ffbc002872dfc97e9702a3cc81c8e4af07cb9ecb99385548b61aec7f",
+      "publisher_sha256": "ac10bc5d5d6fb427a732f34eae5a851731a0c0915b74214b3b4798104bacc422",
+      "retrieved_at": "2026-11-18T20:37:41.556335+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alabama Circuit Court"
+    },
+    "e50f3f5ba0031b13b40934f0d7c9a8": {
+      "source_id": "US-AL:service:3e533347353b",
+      "authority_type": "court_rule",
+      "citation": "Ala. R. Civ. P. 4(a)(1)",
+      "text": "(1) Issuance. Upon the filing of the complaint, or other document required to be served in the manner of an original complaint, the clerk shall forthwith issue the required summons or other process for service upon each defendant. Upon request of the plaintiff separate or additional summons shall issue at any time against any defendant.",
+      "text_sha256": "6418fd38633bc14d8abf5948786c3752f31fd708e8451e2f0304d9fa5b32c91f",
+      "publisher_sha256": "2232a67deb0e6e9e5a3634a45ea3730a3c02762af5088be21644799f926c93ac",
+      "retrieved_at": "2026-11-18T20:37:43.917466+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alabama Circuit Court"
+    },
+    "9d5cf78602c2ababf2ca799ece2cb2": {
+      "source_id": "US-AL:response:2fd040d0d109",
+      "authority_type": "court_rule",
+      "citation": "Ala. R. Civ. P. 12(a)",
+      "text": "(a) When presented. A defendant shall serve an answer within thirty (30) days after the service of the summons and complaint upon that defendant except when service is made by publication and a different time is prescribed under the applicable procedure. A party served with a pleading stating a cross-claim against that party shall serve an answer thereto within thirty (30) days after the service upon that party. The plaintiff shall serve a reply to a counterclaim in the answer within thirty (30) days after serv ice of the answer or, if a reply is ordered by the court, within thirty (30) days after service of the order, unless the order otherwise directs. The service of a motion permitted under this rule alters these periods to time as follows, unless a different time is fixed by order of the court: (1) if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within ten (10) days after notice of the court’s action; (2) if the court grants a motion for a more definite statement the responsive pleading shall be served within ten (10) days after the service of the more definite statement. Proceedings to modify, cite for contempt, or similar motions in divorce proceedings shall not be considered as original pleadings within the meaning of this rule.",
+      "text_sha256": "0dc07ca00058031579dec7631d93dfca3a10c9d33d93c3f32267185789f6fe30",
+      "publisher_sha256": "e64171d2ad5a7c624bfe8420110bef2eccc6972efb5c82460e571b7b219b1617",
+      "retrieved_at": "2026-11-18T20:37:41.648522+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alabama Circuit Court"
+    },
+    "596b23600ec5e55d217fa2cfb170a6": {
+      "source_id": "US-AL:negligence_elements:8a6fef5893b2",
+      "authority_type": "opinion",
+      "citation": "Haddan v. Norfolk Southern Railway Co., No. 1190976 (Ala. Feb. 4, 2022)",
+      "text": "To prevail on a negligence claim, a plaintiff must prove that the defendant owed the plaintiff a legal duty, that the defendant breached that duty, that the plaintiff suffered a loss or injury, that the defendant's breach was an actual cause of the injury, and that the defendant's breach was a proximate cause of the injury.",
+      "text_sha256": "ef130146359297d93de1d847001a84494beef65e957c8735003737ce37562841",
+      "publisher_sha256": "c39385b07f8aa09f05a68990def2b935e171f80a66083451d164ea3fb32c5e86",
+      "retrieved_at": "2026-11-19T13:54:39.848819+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2022-02-04",
+      "court": "Supreme Court of Alabama",
+      "decision_date": "2022-02-04",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in railroad negligence action."
+    },
+    "370e37fa83516775b8a1e8248f3256": {
+      "source_id": "US-AL:contract_breach:e8537641e810",
+      "authority_type": "opinion",
+      "citation": "Coffman v. Snead Hydraulic & Supply, LLC, Nos. 2200446 and 2200452 (Ala. Civ. App. Feb. 11, 2022)",
+      "text": "The elements of a breach-of-contract claim under Alabama law are (1) a valid contract binding the parties; (2) the plaintiffs' performance under the contract; (3) the defendant's nonperformance; and (4) resulting damages.' \"",
+      "text_sha256": "eeec045db77b5cf68c04ec2bff1a956f1febc64056d90a4e7470a7208b4c070d",
+      "publisher_sha256": "0198105ad04851844b1ef832dbc78351f633c49896445f5be796183eb2be41a5",
+      "retrieved_at": "2026-11-19T19:39:45.925274+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2022-02-11",
+      "court": "Alabama Court of Civil Appeals",
+      "decision_date": "2022-02-11",
+      "opinion_role": "majority",
+      "procedural_posture": "Circuit court contract appeals. One appeal dismissed and the other reversed and remanded."
+    },
+    "579d88a0d023df3828b20e26ab4fe9": {
+      "source_id": "US-AL:fault:cd68a9f56605",
+      "authority_type": "opinion",
+      "citation": "Imperial Aluminum-Scottsboro, LLC v. Taylor, No. 1171133 (Ala. Sept. 20, 2019)",
+      "text": "Contributory negligence is an affirmative and complete defense to a claim based on negligence. In order to establish contributory negligence, the defendant bears the burden of proving that the plaintiff 1) had knowledge of the dangerous condition; 2) had an appreciation of the danger under the surrounding circumstances; and 3) failed to exercise reasonable care, by placing himself in the way of danger.\"",
+      "text_sha256": "b97c49382aac092e070f6959e062c11dab0bb762aaa6d369fc9b247d7c88bec1",
+      "publisher_sha256": "587d12ea547e84db8d1ff9a08e162f23dbf7a575adb84d8a243359de2d9e3c13",
+      "retrieved_at": "2026-11-20T15:12:11.967547+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2019-09-20",
+      "court": "Supreme Court of Alabama",
+      "decision_date": "2019-09-20",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a circuit court judgment on a spoliation claim. The court considered contributory negligence in the underlying negligence action."
+    },
+    "eaf42a17895263af7c4ef32d25a23a": {
+      "source_id": "US-AL:pi_limitations:6b652dc01487",
+      "authority_type": "opinion",
+      "citation": "Ex parte Integra LifeSciences Corp., No. 1170692 (Ala. Aug. 24, 2018)",
+      "text": "Section 6-2-38(l), Ala. Code 1975, provides that \"[a]ll actions for any injury to the person or rights of another not arising from contract ... must be brought within two years.\" The statute of limitations begins to run when the cause of action accrues, which this Court has held is the date the first legal injury occurs. See, e.g., McWilliams v. Union Pacific Res. Co., 569 So. 2d 702, 703-04 (Ala. 1990).",
+      "text_sha256": "c138f62dbda2eefa4b14101b76586573a59872f46c9944bb5d9a90327d5ec7bc",
+      "publisher_sha256": "d46c9f7d5c405714e9a5902398ce9020dda74e0cb66f6ce2aa1e8595ce54b733",
+      "retrieved_at": "2026-11-20T15:34:31.810396+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2018-08-24",
+      "court": "Supreme Court of Alabama",
+      "decision_date": "2018-08-24",
+      "opinion_role": "majority",
+      "procedural_posture": "Mandamus review of a motion to dismiss. The court applied the limitation to a products-liability claim and separately addressed an asserted breach of warranty."
+    },
+    "7a7d7696ea3fe5738486c99e235d55": {
+      "source_id": "US-AL:consumerLaw:cfd26370704a",
+      "authority_type": "statute",
+      "citation": "2021 Ala. Acts 349, § 1 (Ala. Code § 8-19-5(1)–(4))",
+      "text": "The following deceptive acts or practices in the conduct of any trade or commerce are hereby declared to be unlawful: \"(1) Passing off goods or services as those of another, provided that this section shall not prohibit the private labeling of goods or services. \"(2) Causing confusion or misunderstanding as to the source, sponsorship, approval, or certification of goods or services. \"(3) Causing confusion or misunderstanding as to the affiliation, connection, or association with, or certification by another, provided that this section shall not prohibit the private labeling of goods or services. \"(4) Using deceptive representations or designations of geographic origin in connection with goods or services.",
+      "text_sha256": "042c487ff88003cf2f9e3a0198de426575a801459f4fad8225932c6e5d2918aa",
+      "publisher_sha256": "6eadd3c59badcf58fbbe18f09d11060fec52a596f10c5ef6793de71c50b5b398",
+      "retrieved_at": "2026-11-20T16:29:32.742648+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2021 legislative enrolled text, matched to the Secretary of State’s enacted Act 2021-349",
+      "effective_from": "2021-08-01"
+    },
+    "a530ac7efd000efb40788c9efa03f5": {
+      "source_id": "US-AL:deposit:b2b131bd62fc",
+      "authority_type": "statute",
+      "citation": "Ala. Act 2014-279, § 1 (Ala. Code § 35-9A-201(a)–(d))",
+      "text": "(a) A landlord may not demand or receive money as security, in an amount in excess of one month's periodic rent, except for pets, changes to the premises, or increased liability risks to the landlord or premises, for tenant's obligations under a rental agreement. (b) Upon termination of the tenancy, money held by the landlord as security may be applied to the payment of accrued rent and the amount of damages that the landlord has suffered by reason of the tenant's noncompliance with Section 35-9A-301 all as itemized by the landlord in a written notice delivered to the tenant together with the amount due 60 days after termination of the tenancy and delivery of possession. (c) If the landlord does not refund the entire deposit, the landlord, within the 60-day period, shall provide the tenant an itemized list of amounts withheld. (d) Upon vacating the premises, the tenant shall provide to the landlord a valid forwarding address, in writing, to which the deposit or itemized accounting, or both, may be mailed. If the tenant fails to provide a valid forwarding address, the landlord shall mail, by first class mail, the deposit or itemized accounting, or both, to the last known address of the tenant or, if none, to the tenant at the address of the property. Any deposit unclaimed by the tenant as well as any check outstanding shall be forfeited by the tenant after a period of 90 days.",
+      "text_sha256": "f4ec45a530f3a8c98507752389bebb36bdfaa3bb258a34ec9910ef605f7d0084",
+      "publisher_sha256": "0017851f280518dd876ddc5665092b053b92a38c8d811bb42960f3a7c7991baf",
+      "retrieved_at": "2026-11-20T17:57:54.087002+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Alabama Act 2014-279 (effective July 1, 2014)",
+      "effective_from": "2014-07-01"
+    },
+    "13ffa1e97bbd02bb54a2b6e826fefd": {
+      "source_id": "US-AL:wage_enforcement:dfa132d48d70",
+      "authority_type": "statute",
+      "citation": "Ala. Act 2019-519, § 2(a)–(c) (equal-pay protections and remedies)",
+      "text": "(a) An employer, including the state or any of its political subdivisions, including public bodies, may not pay any of its employees at wage rates less than the rates paid to employees of another sex or race for equal work within the same establishment on jobs the performance of which requires equal skill, effort, education, experience, and responsibility, and performance under similar working conditions, except where the payment is made pursuant to any of the following: (1) A seniority system. (2) A merit system. (3) A system that measures earnings by quantity or quality of production. (4) A differential based on any factor other than sex or race. (b) An employer shall not refuse to interview, hire, promote, or employ an applicant for employment, or retaliate against an applicant for employment because the applicant does not provide wage history. Wage history means the wages paid to an applicant for employment by the applicant's current or former employer. (c) Any employer who violates subsection (a) or (b) is liable to the employee affected in an amount equal to the wages, and interest thereon, of which the employee is deprived by reason of the violation, or any other relief warranted.",
+      "text_sha256": "6dfaeedc411b8d4b8661a2cb7e2a9e5b17e181d00e302e6bd317e911d8cab219",
+      "publisher_sha256": "254a04c7463356abae3c982378eeeee283e40c7282fa4eb5795414ab64860c0b",
+      "retrieved_at": "2026-11-20T18:16:58.765782+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Alabama Clarke-Figures Equal Pay Act (effective September 1, 2019)",
+      "effective_from": "2019-09-01"
+    },
+    "22e1c9eb28ed8988b14d7a7dfd1e36": {
+      "source_id": "US-AL:small_claims:fb2146b08a4a",
+      "authority_type": "court_rule",
+      "citation": "Ala. Small Cl. R. A (scope and unlawful-detainer exclusion)",
+      "text": "These rules govern procedure in cases in the district courts. They are to be known and cited as the “Alabama Small Claims Rules.” They shall be construed to secure the just, speedy and inexpensive determination of every case. All small claims court cases shall be conducted in such manner as to do substantial justice between the parties according to the rules of substantive law and, in the administration of these rules, and particularly Rule “N” hereof, the court shall make such accommodation to parties not represented by an attorney as is necessary to serve the ends of justice and the court, in its discretion, may explore claims and/or defenses not raised by the parties. These rules shall not be applicable to actions of unlawful detainer pursuant to Title 6, Chapter 6 or Title 35, Chapter 9, Code of Alabama 1975. Actions of unlawful detainer shall be filed on the regular district court docket and shall be governed by the Alabama Rules of Civil Procedure with district court modifications.",
+      "text_sha256": "4f7f67468e902de14cce5cbf1d2685c373c9bcdeacea1c24d5225f38a6946431",
+      "publisher_sha256": "7505d51ffd50b8c7acad3d003c8f6b054a3d25951e1ad4e32385988bbb05ed71",
+      "retrieved_at": "2026-11-20T22:36:54.432876+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Alabama Small Claims Rule A, amendment effective October 9, 1980",
+      "court": "Alabama district court small-claims division",
+      "effective_from": "1980-10-09"
+    },
+    "7d2e158c7581620997ff7cb5cf1f5d": {
+      "source_id": "US-AL:small_claims:c8bc5f0c90fa",
+      "authority_type": "court_rule",
+      "citation": "Ala. Small Cl. R. D (process in small claims)",
+      "text": "All service of process shall be made as provided in the Alabama Rules of Civil Procedure.",
+      "text_sha256": "bf85a3aa60266a799223260d4b8b33a361449d2899d3a6ddfee0fd28cf400e1d",
+      "publisher_sha256": "34e235314aa1a5757cbeb8a39a810fc23a9161d48fc3e147ac1559d68497efaa",
+      "retrieved_at": "2026-11-20T22:36:54.738012+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Alabama Small Claims Rule D, amendment effective June 7, 2012",
+      "court": "Alabama district court small-claims division",
+      "effective_from": "2012-06-07"
+    },
+    "565ad65eb0a585d76a3ef162b3bd96": {
+      "source_id": "US-AL:small_claims:2bad12d1377d",
+      "authority_type": "court_rule",
+      "citation": "Ala. Small Cl. R. E (time computation in small claims)",
+      "text": "All time periods shall be measured by starting to count on the first day after the complaint was served on the defendant or on the first day after the judgment was entered or on the first day after any other event happens which by these rules starts the running of a time period. If the last day is anything other than a working week day, then the last day is not considered to have arrived until the next working week day thereafter has arrived.",
+      "text_sha256": "b30e0cb175dc86de5f7b6ec427759520f933560ce06a0551a57a802ec988d67d",
+      "publisher_sha256": "1377903673e85733adcbb1cc640373bb044cd49575f106a5609990a173912403",
+      "retrieved_at": "2026-11-20T22:36:54.656683+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alabama district court small-claims division"
+    },
+    "b5673233e8646762d08b518cb44554": {
+      "source_id": "US-AL:wage_preemption:3fd5c5f29d49",
+      "authority_type": "statute",
+      "citation": "Ala. Act 2016-18, § 2(b)–(c) (local wage and employment benefit mandates)",
+      "text": "(b) A county, municipality, or any other political subdivision of this state shall not enact or administer any ordinance, policy, rule, or other mandate requiring an employer to provide any employee, class of employees, or independent contractor with any employment benefit, including, but not limited to, paid or unpaid leave, vacation, wage, or work schedule, that is not required by state or federal law, and shall not require an employer to compensate an employee, class of employees, or independent contractor for any vacation or other form of leave for which state or federal law does not require the employee, class of employees, or independent contractor to be compensated. (c) Any ordinance, policy, rule, or other mandate of a county, municipality, or any other political subdivision of this state that is inconsistent with this section is void.",
+      "text_sha256": "b3e42e8302e4bfb50932eb4f3c7ab161190cca91d7e2c85c133fe4ce5a35a26f",
+      "publisher_sha256": "ded816776a4dcacad06302f5d12ed65eae6a2b4cddd3a289daa4efadc216ebea",
+      "retrieved_at": "2026-11-20T22:39:55.679252+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Alabama enacted Act 2016-18, effective February 25, 2016",
+      "effective_from": "2016-02-25"
+    },
+    "b4dbf8174f8069fd5e29bef0e01339": {
+      "source_id": "US-AL:debtLaw:4002a3920eac",
+      "authority_type": "statute",
+      "citation": "Ala. Code § 5-19-8",
+      "text": "With respect to a consumer credit sale, an assignee of the rights of the seller is subject to all claims and defenses of the buyer against the seller arising out of the sale, notwithstanding an agreement to the contrary, but the assignee's liability under this section may not exceed the amount owing to the assignee at the time the claim or defense is asserted against the assignee. Rights of the buyer under this section can only be asserted as a matter of defense to or setoff against a claim by the assignee.",
+      "text_sha256": "2075eb6199883a6b5e8381236f56eed2a480ceb508b70ca9f2112baf25c61d99",
+      "publisher_sha256": "8199ad6549783bb5f96fccda093eb1c11e7f2914770890c1883e9d3465b30fc9",
+      "retrieved_at": "2026-11-20T23:15:49.664426+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "ca4f595c40106252d6e101f7e90ac2": {
+      "source_id": "US-AL:debtLaw:174fa31d998b",
+      "authority_type": "statute",
+      "citation": "Ala. Code § 5-19-10",
+      "text": "A contract for a consumer credit transaction with an original amount financed not exceeding three hundred dollars ($300) may not provide for payment by the debtor of attorney's fees after default by the debtor. A contract for a consumer credit transaction with an original amount financed exceeding three hundred dollars ($300) may provide for the payment by the debtor of reasonable attorney's fees not exceeding 15 percent of the unpaid debt after default and referral of the contract to an attorney who is not a salaried employee of the creditor. An open-end credit plan may not provide for attorney's fees when the unpaid balance does not exceed three hundred dollars ($300), but may provide for reasonable attorney's fees after default by the debtor when the unpaid balance exceeds three hundred dollars ($300). In a consumer credit transaction contract where the original amount financed exceeds ten thousand dollars ($10,000) or the credit transaction is secured by real property, the creditor may require the payment by the debtor of attorney's fees prior to default by the debtor in connection with the closing of, amendment to, or modification of the credit transaction, provided that the attorney is not a salaried employee of the creditor.",
+      "text_sha256": "66fd482958ff7f6ac7e6e149f13ba6c3c7bc1bd9a7eb7b1c6a8eab5a4f289676",
+      "publisher_sha256": "8199ad6549783bb5f96fccda093eb1c11e7f2914770890c1883e9d3465b30fc9",
+      "retrieved_at": "2026-11-20T23:15:49.664426+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "0faab495103613caa0ff4877f90b57": {
+      "source_id": "US-AL:sales_commissions:0bb224af29a9",
+      "authority_type": "statute",
+      "citation": "1994 Ala. Acts No. 94-686, § 1 (Ala. Code § 8-24-1(1)-(4))",
+      "text": "(1) COMMISSION. Compensation accruing to a sales representative for payment by a principal, the rate of which is expressed as a percentage of the dollar amount of certain orders or sales. (2) PRINCIPAL. Any person who does all of the following: a. Engages in the business of manufacturing, producing, importing, or distributing a product or products for sale to customers who purchase the product or products for resale. b. Utilizes sales representatives to solicit orders for the product or products. c. Compensates the sales representatives, in whole or in part, by commission. (3) SALES REPRESENTATIVE. Any person who engages in the business of soliciting, on behalf of a principal, orders for the purchase at wholesale of the product or products of the principal, but does not include a person who places orders or purchases for his or her own account for resale, or a person engaged in home solicitation sales. (4) TERMINATION. The end of services performed by the sales representative for the principal, whether by discharge, resignation, or expiration of a contract.",
+      "text_sha256": "bd10925b0878492c86a259b5566d42746bab701514ccec02d46aec0e18c730cf",
+      "publisher_sha256": "5a6710a6b623501cd8d6c0a587f87ccb7aa6992cd6f4488434a5d2b8b14606ee",
+      "retrieved_at": "2026-11-21T03:56:07.395078+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Acts of Alabama 1994, vol. 2, Act 94-686, effective May 3, 1994",
+      "effective_from": "1994-05-03",
+      "publisher_member": "printed pp. 1319–1321"
+    },
+    "ee2859b7ade2f1e48af5a5b814c840": {
+      "source_id": "US-AL:sales_commissions:c6314240b7b0",
+      "authority_type": "statute",
+      "citation": "1994 Ala. Acts No. 94-686, § 1 (Ala. Code § 8-24-2(a)-(c))",
+      "text": "(a) The terms of the contract between the principal and sales representative shall determine when a commission is due. (b) If the time when the commission is due cannot be determined by a contract between the principal and sales representative, the past practices between the parties shall control, or if there are no past practices, the custom and usage prevalent in this state for the business that is the subject of the relationship between the parties shall control. (c) All commissions that are due at the time of termination of a contract between a sales representative and principal shall be paid within thirty days after the date of termination. Commissions that become due after the termination date shall be paid within thirty days after the date on which the commissions become due.",
+      "text_sha256": "1940651eabeb4eccfc2383a730be97e72a2c29e36eb10092aa7efa4ad5978de9",
+      "publisher_sha256": "5a6710a6b623501cd8d6c0a587f87ccb7aa6992cd6f4488434a5d2b8b14606ee",
+      "retrieved_at": "2026-11-21T03:56:07.395078+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Acts of Alabama 1994, vol. 2, Act 94-686, effective May 3, 1994",
+      "effective_from": "1994-05-03",
+      "publisher_member": "printed pp. 1319–1321"
+    },
+    "07b4ecf1d046c5b38ec16d35597ad5": {
+      "source_id": "US-AL:sales_commissions:a7c20ce4a8a4",
+      "authority_type": "statute",
+      "citation": "1994 Ala. Acts No. 94-686, § 1 (Ala. Code § 8-24-3)",
+      "text": "A principal who fails to pay a commission as required by Section 8-24-2 is liable to the sales representative in a civil action for three times the damages sustained by the sales representative plus reasonable attorney’s fees and court costs.",
+      "text_sha256": "e69c3678186fdec71806ff86e67dc2401c319bbc4e79a92027c453317100d61e",
+      "publisher_sha256": "5a6710a6b623501cd8d6c0a587f87ccb7aa6992cd6f4488434a5d2b8b14606ee",
+      "retrieved_at": "2026-11-21T03:56:07.395078+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Acts of Alabama 1994, vol. 2, Act 94-686, effective May 3, 1994",
+      "effective_from": "1994-05-03",
+      "publisher_member": "printed pp. 1319–1321"
+    },
+    "b7485751579969a2b94eaad69be081": {
+      "source_id": "US-AL:sales_commissions:7bf751b62915",
+      "authority_type": "statute",
+      "citation": "1994 Ala. Acts No. 94-686, § 1 (Ala. Code § 8-24-5(a))",
+      "text": "(a) This chapter may not be waived, whether by express waiver or by any provision in a contract attempting to make the contract or agreement subject to the laws of another state. A waiver of any provision of this chapter is void.",
+      "text_sha256": "e37ba434b5b6657f8c3e66849d2dbb1df0060e783ccaf8a6e8898b82886567e3",
+      "publisher_sha256": "5a6710a6b623501cd8d6c0a587f87ccb7aa6992cd6f4488434a5d2b8b14606ee",
+      "retrieved_at": "2026-11-21T03:56:07.395078+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Acts of Alabama 1994, vol. 2, Act 94-686, effective May 3, 1994",
+      "effective_from": "1994-05-03",
+      "publisher_member": "printed pp. 1319–1321"
+    },
+    "ffcde5b327cde414c43ff97578eef8": {
+      "source_id": "US-AL:general_contract_limitations:23917808b3af",
+      "authority_type": "opinion",
+      "citation": "Daily v. Esser, No. SC-2022-0672 (Ala. Sept. 29, 2023), corrected Nov. 5, 2024",
+      "text": "In AC, Inc. v. Baker, 622 So. 2d 331, 333 (Ala. 1993), this Court stated that \"[t]he statute of limitations for a claim based on a contract is six years. Ala. Code 1975, § 6-2-34(9). This six-year period begins to run when the contract is breached. Stephens v. Creel, 429 So. 2d 278, 280 (Ala. 1983); Lipscomb v. Tucker, 294 Ala. 246, 258, 314 So. 2d 840, 850 (1975).\"",
+      "text_sha256": "03959e12bb8bd3760e326e04ac43ad6feb0b855244117e3ba8eb2a2e43af47b2",
+      "publisher_sha256": "630e2f4a9c85b506a3f7d422c3230e8c816ded748b4d431e3ae5f4c0b7176f87",
+      "retrieved_at": "2026-11-21T17:44:26.370078+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported opinion issued 2023-09-29",
+      "court": "Supreme Court of Alabama",
+      "publisher_member": "Alabama Supreme Court corrected opinion p. 81, main opinion on breach-of-contract limitations",
+      "decision_date": "2023-09-29",
+      "opinion_role": "majority",
+      "procedural_posture": "Consolidated appeals from proceedings over assets, including a breach claim concerning loan repayment. The supreme court affirmed the May 2022 judgment on the contract issue."
+    },
+    "953cd2a80450c66e53dfcc7e1b4756": {
+      "source_id": "US-AL:service_time_limit:4f778915f61d",
+      "authority_type": "court_rule",
+      "citation": "Ala. R. Civ. P. 4(b)",
+      "text": "(b) Time Limit for Service. If service of the summons and complaint is not made upon a defendant within 120 days after the filing of the complaint, the court, upon motion or on its own initiative, after at least fourteen (14) days' notice to the plaintiff, may dismiss the action without prejudice as to the defendant upon whom service was not made or direct that service be effected within a specified time; provided, however, that if the plaintiff shows good cause for the failure to serve the defendant, the court shall extend the time for service for an appropriate period. This subdivision does not apply to fictitious-party practice pursuant to Rule 9(h) or to service in a foreign country.",
+      "text_sha256": "307a51d6e3373a91941d0825e1cb72483b16badc64d9341c9814d487df4780a7",
+      "publisher_sha256": "d9210818c3253fe6eb3ce9d474c8b878b3d0779d18908b0bb847595049df99f7",
+      "retrieved_at": "2026-11-21T23:02:24.712333+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Alabama Supreme Court order of October 24, 2008",
+      "publisher_member": "Promulgating order, Appendix B; fictitious-party and foreign-service scope",
+      "effective_from": "2008-10-24"
+    }
+  },
+  "fault_allocation": {
+    "regime": "contributory",
+    "source_id": "US-AL:fault:cd68a9f56605",
+    "passage_selector": "579d88a0d023df3828b20e26ab4fe9",
+    "currentness": "historical",
+    "qualification": "The opinion quotes Alabama’s affirmative defense and its elements."
+  }
+}

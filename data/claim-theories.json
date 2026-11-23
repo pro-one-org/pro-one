@@ -509,5 +509,1542 @@
         ]
       }
     ]
+  },
+  {
+    "id": "nh_comparative_fault",
+    "version": "v1",
+    "jurisdiction": "US-NH",
+    "legal_area": "torts",
+    "kind": "defense",
+    "label": "Comparative fault in a tort action",
+    "plain_language_label": "Comparative fault in a tort action",
+    "topics": [
+      "fault_allocation"
+    ],
+    "matter_types": [
+      "personal_injury"
+    ],
+    "limitations": [
+      "This issue has a bounded statutory passage. Governing edition, exceptions, additional conditions and remedies require review. No deadline is calculated."
+    ],
+    "elements": [
+      {
+        "id": "comparative_fault",
+        "label": "Comparative fault in a tort action",
+        "description": "The provision compares plaintiff fault with defendant fault and addresses aggregation when recovery is allowed against more than one defendant.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-fdcbafc718586ad87c761aa031de3f64ab34dd62be4d484e08e59d7f512f3c46-p1",
+            "source_id": "corpus-fdcbafc718586ad87c761aa031de3f64ab34dd62be4d484e08e59d7f512f3c46",
+            "source_type": "statute",
+            "source_version": "publisher capture 2026-11-17",
+            "excerpt_hash": "sha256:babcedd914a1ec962aa884931e170208343ae1699c927c9ea2f083c4b92e79ef"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "comparative_fault"
+    }
+  },
+  {
+    "id": "nh_deposit_return",
+    "version": "v1",
+    "jurisdiction": "US-NH",
+    "legal_area": "landlord_tenant",
+    "kind": "entitlement",
+    "label": "Return of a residential security deposit",
+    "plain_language_label": "Return of a residential security deposit",
+    "topics": [
+      "security_deposit"
+    ],
+    "matter_types": [
+      "landlord_tenant"
+    ],
+    "limitations": [
+      "This issue has a bounded statutory passage. Governing edition, exceptions, additional conditions and remedies require review. No deadline is calculated."
+    ],
+    "elements": [
+      {
+        "id": "deposit_return",
+        "label": "Return of a residential security deposit",
+        "description": "The provision addresses return after termination and distinguishes repair costs from reasonable wear and tear.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-2f1f0bdd103aea1e60e07208ed85d7fefc1dc2a1c7730e49f40ed7f3c2fb0cf1-p1",
+            "source_id": "corpus-2f1f0bdd103aea1e60e07208ed85d7fefc1dc2a1c7730e49f40ed7f3c2fb0cf1",
+            "source_type": "statute",
+            "source_version": "publisher capture 2026-11-17",
+            "excerpt_hash": "sha256:bcfddd3a9e5ed4192f53fe4e30de3b682a5c7560cfda9cda043c4ca50574dde4"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "deposit_return"
+    }
+  },
+  {
+    "id": "vt_deposit_accounting",
+    "version": "v1",
+    "jurisdiction": "US-VT",
+    "legal_area": "landlord_tenant",
+    "kind": "entitlement",
+    "label": "Return and accounting for deductions",
+    "plain_language_label": "Return and accounting for deductions",
+    "topics": [
+      "security_deposit"
+    ],
+    "matter_types": [
+      "landlord_tenant"
+    ],
+    "limitations": [
+      "This issue has a bounded statutory passage. Governing edition, exceptions, additional conditions and remedies require review. No deadline is calculated."
+    ],
+    "elements": [
+      {
+        "id": "deposit_accounting",
+        "label": "Return and accounting for deductions",
+        "description": "The provision addresses return of the deposit and an itemized statement, with a separate rule for seasonal occupancy.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-b8faae36ebeffc77f9bd3600214a606e9446427c046d1d70cb5b41cbc224fabc-p1",
+            "source_id": "corpus-b8faae36ebeffc77f9bd3600214a606e9446427c046d1d70cb5b41cbc224fabc",
+            "source_type": "statute",
+            "source_version": "publisher capture 2026-11-17",
+            "excerpt_hash": "sha256:5e11dfaf09799b9fa23c6f1597a582b49dd6e0bd479810f5b6b1415ab9aee073"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "deposit_accounting"
+    }
+  },
+  {
+    "id": "md_pay_period",
+    "version": "v1",
+    "jurisdiction": "US-MD",
+    "legal_area": "employment",
+    "kind": "entitlement",
+    "label": "Regular pay periods",
+    "plain_language_label": "Regular pay periods",
+    "topics": [
+      "wage_payment"
+    ],
+    "matter_types": [
+      "wage"
+    ],
+    "limitations": [
+      "This issue has a bounded statutory passage. Governing edition, exceptions, additional conditions and remedies require review. No deadline is calculated."
+    ],
+    "elements": [
+      {
+        "id": "pay_period",
+        "label": "Regular pay periods",
+        "description": "The payment frequency provision expressly distinguishes certain administrative, executive and professional employees.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-09d2a7fbeb0ccb1b22e4abc8fcd677b5e6b1fe664547b7c24671487dcf14b63d-p1",
+            "source_id": "corpus-09d2a7fbeb0ccb1b22e4abc8fcd677b5e6b1fe664547b7c24671487dcf14b63d",
+            "source_type": "statute",
+            "source_version": "publisher capture 2026-11-17",
+            "excerpt_hash": "sha256:da4ac0070bc4ebcb1b27384ecce5ddbd6ddf26af61e21aea8070f5da91e6c0e9"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "pay_period"
+    }
+  },
+  {
+    "id": "nh_separation_pay",
+    "version": "v1",
+    "jurisdiction": "US-NH",
+    "legal_area": "employment",
+    "kind": "entitlement",
+    "label": "Pay following separation from employment",
+    "plain_language_label": "Pay following separation from employment",
+    "topics": [
+      "wage_payment"
+    ],
+    "matter_types": [
+      "wage"
+    ],
+    "limitations": [
+      "This issue has a bounded statutory passage. Governing edition, exceptions, additional conditions and remedies require review. No deadline is calculated."
+    ],
+    "elements": [
+      {
+        "id": "separation_pay",
+        "label": "Pay following separation from employment",
+        "description": "The provision distinguishes discharge from resignation when identifying the time for payment.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-d48d7d9bb34bc7564c29969d6e5373bab33e8c7791bed2933f96172b950c6ea3-p1",
+            "source_id": "corpus-d48d7d9bb34bc7564c29969d6e5373bab33e8c7791bed2933f96172b950c6ea3",
+            "source_type": "statute",
+            "source_version": "publisher capture 2026-11-17",
+            "excerpt_hash": "sha256:729206e14a5f585f2d032705c74cd62b2b29d0d1990c26793bc37ac3d255e56a"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "separation_pay"
+    }
+  },
+  {
+    "id": "sc_unfair_trade",
+    "version": "v1",
+    "jurisdiction": "US-SC",
+    "legal_area": "consumer",
+    "kind": "claim",
+    "label": "Unfair or deceptive conduct in trade or commerce",
+    "plain_language_label": "Unfair or deceptive conduct in trade or commerce",
+    "topics": [
+      "unfair_practices"
+    ],
+    "matter_types": [
+      "consumer"
+    ],
+    "limitations": [
+      "This issue has a bounded statutory passage. Governing edition, exceptions, additional conditions and remedies require review. No deadline is calculated."
+    ],
+    "elements": [
+      {
+        "id": "unfair_trade",
+        "label": "Unfair or deceptive conduct in trade or commerce",
+        "description": "The quoted prohibition concerns conduct in trade or commerce and directs courts to federal interpretations. Private enforcement and remedies require separate authority.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-b819a723c7ec94ec2f494f27b53dc875aefbc688bd8e34d536a6fe2c4a6e2541-p1",
+            "source_id": "corpus-b819a723c7ec94ec2f494f27b53dc875aefbc688bd8e34d536a6fe2c4a6e2541",
+            "source_type": "statute",
+            "source_version": "publisher capture 2026-11-18",
+            "excerpt_hash": "sha256:9540d95bbd624bc5437265c6c7f49e36408cc40098cdc73589728a7677da736a"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "unfair_trade"
+    }
+  },
+  {
+    "id": "me_unlawful_conduct",
+    "version": "v1",
+    "jurisdiction": "US-ME",
+    "legal_area": "consumer",
+    "kind": "claim",
+    "label": "Unfair or deceptive acts in trade or commerce",
+    "plain_language_label": "Unfair or deceptive acts in trade or commerce",
+    "topics": [
+      "unfair_practices"
+    ],
+    "matter_types": [
+      "consumer"
+    ],
+    "limitations": [
+      "This issue has a bounded statutory passage. Governing edition, exceptions, additional conditions and remedies require review. No deadline is calculated."
+    ],
+    "elements": [
+      {
+        "id": "unlawful_conduct",
+        "label": "Unfair or deceptive acts in trade or commerce",
+        "description": "The quoted provision prohibits unfair methods of competition and unfair or deceptive conduct in trade or commerce. Private enforcement requires separate authority.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-e97b29e4e183a6779f5c5d8d02f3c390b12a99cd4ea75e1be4f2c3c4d47c8658-p1",
+            "source_id": "corpus-e97b29e4e183a6779f5c5d8d02f3c390b12a99cd4ea75e1be4f2c3c4d47c8658",
+            "source_type": "statute",
+            "source_version": "publisher capture 2026-11-17",
+            "excerpt_hash": "sha256:5a886a7a52fed4ff38d3556edaf237caf5912005521c82f1dbab3f74b9599159"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "unlawful_conduct"
+    }
+  },
+  {
+    "id": "nh_collection_conduct",
+    "version": "v1",
+    "jurisdiction": "US-NH",
+    "legal_area": "consumer_debt",
+    "kind": "defense",
+    "label": "Prohibited collection conduct",
+    "plain_language_label": "Prohibited collection conduct",
+    "topics": [
+      "debt_collection"
+    ],
+    "matter_types": [
+      "consumer_debt"
+    ],
+    "limitations": [
+      "This issue has a bounded statutory passage. Governing edition, exceptions, additional conditions and remedies require review. No deadline is calculated."
+    ],
+    "elements": [
+      {
+        "id": "collection_conduct",
+        "label": "Prohibited collection conduct",
+        "description": "Collection or attempted collection by a debt collector must be assessed under the chapter’s definitions of unfair, deceptive or unreasonable conduct.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-295d1c8a7c25f8971c88e6bda0625e1f00212ed15def6035dd3fd65fb61dad11-p1",
+            "source_id": "corpus-295d1c8a7c25f8971c88e6bda0625e1f00212ed15def6035dd3fd65fb61dad11",
+            "source_type": "statute",
+            "source_version": "publisher capture 2026-11-17",
+            "excerpt_hash": "sha256:9ea1e81441a8fb75a2f46eec670deb000bdb8f5f5ded1ce38422b536ebc1f8fb"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "collection_conduct"
+    }
+  },
+  {
+    "id": "la_delictual_prescription",
+    "version": "v1",
+    "jurisdiction": "US-LA",
+    "legal_area": "torts",
+    "kind": "bar",
+    "label": "Liberative prescription for delictual actions",
+    "plain_language_label": "Liberative prescription for delictual actions",
+    "topics": [
+      "limitations"
+    ],
+    "matter_types": [
+      "personal_injury"
+    ],
+    "limitations": [
+      "This issue has a bounded statutory passage. Governing edition, exceptions, additional conditions and remedies require review. No deadline is calculated."
+    ],
+    "elements": [
+      {
+        "id": "delictual_prescription",
+        "label": "Liberative prescription for delictual actions",
+        "description": "The article ties commencement of prescription to sustained injury or damage and includes a provision for specified product liability actions.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-e7fbab60323993fc04c1b6e405d07bbc3edb853287da336b13156d42e6aa7bc1-p1",
+            "source_id": "corpus-e7fbab60323993fc04c1b6e405d07bbc3edb853287da336b13156d42e6aa7bc1",
+            "source_type": "statute",
+            "source_version": "publisher capture 2026-11-17",
+            "excerpt_hash": "sha256:786d4600b615740239781a98eccd8b28bac5a11f20832b7eb22e1e67670471e9"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "delictual_prescription"
+    }
+  },
+  {
+    "id": "oh_written_contract_reference",
+    "version": "v1",
+    "jurisdiction": "US-OH",
+    "legal_area": "contracts",
+    "kind": "bar",
+    "label": "Timing reference for a written agreement",
+    "plain_language_label": "Timing reference for a written agreement",
+    "topics": [
+      "written_contract_limitations"
+    ],
+    "matter_types": [
+      "contract"
+    ],
+    "limitations": [
+      "This issue has a bounded statutory passage. Governing edition, exceptions, additional conditions and remedies require review. No deadline is calculated."
+    ],
+    "elements": [
+      {
+        "id": "written_contract_reference",
+        "label": "Timing reference for a written agreement",
+        "description": "The statute addresses a specialty or a written agreement, contract or promise, subject to its express cross-references.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-4ede9f65a66bf011fc62559a63c947cfd48b0dfef320ce8b1466209b955919b9-p1",
+            "source_id": "corpus-4ede9f65a66bf011fc62559a63c947cfd48b0dfef320ce8b1466209b955919b9",
+            "source_type": "statute",
+            "source_version": "publisher capture 2026-11-17",
+            "excerpt_hash": "sha256:4c1dc4fb1daf79924c9b8d5951308281e6350911e6405438fcd6a09da8579872"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "written_contract_reference"
+    }
+  },
+  {
+    "id": "ma_tort_reference",
+    "version": "v1",
+    "jurisdiction": "US-MA",
+    "legal_area": "torts",
+    "kind": "bar",
+    "label": "Tort and personal injury timing reference",
+    "plain_language_label": "Tort and personal injury timing reference",
+    "topics": [
+      "limitations"
+    ],
+    "matter_types": [
+      "personal_injury"
+    ],
+    "limitations": [
+      "This issue has a bounded statutory passage. Governing edition, exceptions, additional conditions and remedies require review. No deadline is calculated."
+    ],
+    "elements": [
+      {
+        "id": "tort_reference",
+        "label": "Tort and personal injury timing reference",
+        "description": "The provision includes actions of tort and actions of contract to recover for personal injuries and expressly allows other legal provisions to govern.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-7ab8c8183ac8efca4d2e0a7c59645e6c5b18778836384e6f77ae0a60eab0ad93-p1",
+            "source_id": "corpus-7ab8c8183ac8efca4d2e0a7c59645e6c5b18778836384e6f77ae0a60eab0ad93",
+            "source_type": "statute",
+            "source_version": "publisher capture 2026-11-17",
+            "excerpt_hash": "sha256:6fbd090e1cc2794c35dc1d4224a3a132af61fdf486de4ef9f3bffd991e3e1b77"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "tort_reference"
+    }
+  },
+  {
+    "id": "az_written_debt_reference",
+    "version": "v1",
+    "jurisdiction": "US-AZ",
+    "legal_area": "contracts",
+    "kind": "bar",
+    "label": "Written debt limitations reference",
+    "plain_language_label": "Written debt limitations reference",
+    "topics": [
+      "written_contract_limitations"
+    ],
+    "matter_types": [
+      "contract"
+    ],
+    "limitations": [
+      "This issue has a bounded statutory passage. Governing edition, exceptions, additional conditions and remedies require review. No deadline is calculated."
+    ],
+    "elements": [
+      {
+        "id": "written_debt_reference",
+        "label": "Written debt limitations reference",
+        "description": "The statute conditions its written-debt provision on the type of instrument evidencing the debt.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-68532f42d11b4112b1d5684ea92ddf9bce2c4b5e0e92eacb666c70227b6bd17e-p1",
+            "source_id": "corpus-68532f42d11b4112b1d5684ea92ddf9bce2c4b5e0e92eacb666c70227b6bd17e",
+            "source_type": "statute",
+            "source_version": "publisher capture 2026-11-17",
+            "excerpt_hash": "sha256:f351d3ce7ec84e3411925eb0a6a385d2e617c215cc73739c0830565448858787"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "written_debt_reference"
+    }
+  },
+  {
+    "id": "id_written_obligation",
+    "version": "v1",
+    "jurisdiction": "US-ID",
+    "legal_area": "contracts",
+    "kind": "bar",
+    "label": "Obligations founded on a written instrument",
+    "plain_language_label": "Obligations founded on a written instrument",
+    "topics": [
+      "written_contract_limitations"
+    ],
+    "matter_types": [
+      "contract"
+    ],
+    "limitations": [
+      "This issue has a bounded statutory passage. Governing edition, exceptions, additional conditions and remedies require review. No deadline is calculated."
+    ],
+    "elements": [
+      {
+        "id": "written_obligation",
+        "label": "Obligations founded on a written instrument",
+        "description": "The section addresses an obligation, contract or liability founded on a written instrument and expressly excepts actions in the name or for the benefit of the state.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-323d7550aeeddd4cf5735e0a3ce2acced22d1c2a5e100a3a0515fc1295b1eb89-p1",
+            "source_id": "corpus-323d7550aeeddd4cf5735e0a3ce2acced22d1c2a5e100a3a0515fc1295b1eb89",
+            "source_type": "statute",
+            "source_version": "publisher capture 2026-11-17",
+            "excerpt_hash": "sha256:91a44cef636a96b28c806d7e17de6c625abf6e6303a1d5c864b217da52a86c21"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "written_obligation"
+    }
+  },
+  {
+    "id": "ri_injury_reference",
+    "version": "v1",
+    "jurisdiction": "US-RI",
+    "legal_area": "torts",
+    "kind": "bar",
+    "label": "Timing reference for injuries to the person",
+    "plain_language_label": "Timing reference for injuries to the person",
+    "topics": [
+      "limitations"
+    ],
+    "matter_types": [
+      "personal_injury"
+    ],
+    "limitations": [
+      "This issue has a bounded statutory passage. Governing edition, exceptions, additional conditions and remedies require review. No deadline is calculated."
+    ],
+    "elements": [
+      {
+        "id": "injury_reference",
+        "label": "Timing reference for injuries to the person",
+        "description": "The subsection addresses injuries to the person and refers to separate treatment for specified claims including childhood sexual abuse.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-f386d871f935100a79bd1f4a2152a75d6961da399ec53e16f3ba2e71f7c2cbd1-p1",
+            "source_id": "corpus-f386d871f935100a79bd1f4a2152a75d6961da399ec53e16f3ba2e71f7c2cbd1",
+            "source_type": "statute",
+            "source_version": "publisher capture 2026-11-17",
+            "excerpt_hash": "sha256:2b51313a062d2c40e4ade6c801b4ff482acacf7157a0b818c0a1502ad3c68009"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "injury_reference"
+    }
+  },
+  {
+    "id": "ky_written_contract_reference",
+    "version": "v1",
+    "jurisdiction": "US-KY",
+    "legal_area": "contracts",
+    "kind": "bar",
+    "label": "Timing reference for a written contract",
+    "plain_language_label": "Timing reference for a written contract",
+    "topics": [
+      "written_contract_limitations"
+    ],
+    "matter_types": [
+      "contract"
+    ],
+    "limitations": [
+      "This issue has a bounded statutory passage. Governing edition, exceptions, additional conditions and remedies require review. No deadline is calculated."
+    ],
+    "elements": [
+      {
+        "id": "written_contract_reference",
+        "label": "Timing reference for a written contract",
+        "description": "The quoted statutory text distinguishes a written contract executed after July 15, 2014 and expressly allows other statutes to apply.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-c134e0466558a0a42411f921b1ecfa31785e20d22cff4d4415529f825f14987a-p1",
+            "source_id": "corpus-c134e0466558a0a42411f921b1ecfa31785e20d22cff4d4415529f825f14987a",
+            "source_type": "statute",
+            "source_version": "publisher capture 2026-11-17",
+            "excerpt_hash": "sha256:5a691ae6421d61aa16c4310089ea3f5e48164bd7a7f6442255506bb312949ace"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "written_contract_reference"
+    }
+  },
+  {
+    "id": "ca_accepted_goods_damages",
+    "version": "v1",
+    "jurisdiction": "US-CA",
+    "legal_area": "contracts",
+    "kind": "remedy",
+    "label": "Buyer damages for nonconforming accepted goods",
+    "plain_language_label": "Buyer damages for nonconforming accepted goods",
+    "topics": [
+      "accepted_goods_damages"
+    ],
+    "matter_types": [
+      "contract"
+    ],
+    "limitations": [
+      "Section 2714 addresses accepted goods and incorporates notice under section 2607(3). The measure of warranty damages, special circumstances and any incidental or consequential loss require review. No damages are calculated."
+    ],
+    "elements": [
+      {
+        "id": "accepted_goods",
+        "label": "Acceptance of goods",
+        "description": "Identify which goods the buyer accepted.",
+        "kind": "requirement",
+        "authority": [
+          {
+            "passage_id": "corpus-5e7d2094d7d3b10405c131754d72db14c3c2801f62de73219e0458ea0e8f9fd5-p1",
+            "source_id": "corpus-5e7d2094d7d3b10405c131754d72db14c3c2801f62de73219e0458ea0e8f9fd5",
+            "source_type": "statute",
+            "source_version": "California Legislative Counsel PUBINFO, archive modified November 16, 2026",
+            "excerpt_hash": "sha256:aff9d7ee64af7ebdf2bfaf4ef3c0cc34c5cd6620e7f5fb2e8df2e784b984d2dd"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "notice",
+        "label": "Notification of breach",
+        "description": "Identify notice given under section 2607(3), including its content and timing.",
+        "kind": "requirement",
+        "authority": [
+          {
+            "passage_id": "corpus-5e7d2094d7d3b10405c131754d72db14c3c2801f62de73219e0458ea0e8f9fd5-p1",
+            "source_id": "corpus-5e7d2094d7d3b10405c131754d72db14c3c2801f62de73219e0458ea0e8f9fd5",
+            "source_type": "statute",
+            "source_version": "California Legislative Counsel PUBINFO, archive modified November 16, 2026",
+            "excerpt_hash": "sha256:aff9d7ee64af7ebdf2bfaf4ef3c0cc34c5cd6620e7f5fb2e8df2e784b984d2dd"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "nonconformity",
+        "label": "Nonconformity of tender",
+        "description": "Identify how the tender differed from the contractual obligation.",
+        "kind": "requirement",
+        "authority": [
+          {
+            "passage_id": "corpus-5e7d2094d7d3b10405c131754d72db14c3c2801f62de73219e0458ea0e8f9fd5-p1",
+            "source_id": "corpus-5e7d2094d7d3b10405c131754d72db14c3c2801f62de73219e0458ea0e8f9fd5",
+            "source_type": "statute",
+            "source_version": "California Legislative Counsel PUBINFO, archive modified November 16, 2026",
+            "excerpt_hash": "sha256:aff9d7ee64af7ebdf2bfaf4ef3c0cc34c5cd6620e7f5fb2e8df2e784b984d2dd"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "resulting_loss",
+        "label": "Loss resulting from breach",
+        "description": "Identify the loss resulting in the ordinary course of events and a reasonable basis for determining it.",
+        "kind": "requirement",
+        "authority": [
+          {
+            "passage_id": "corpus-5e7d2094d7d3b10405c131754d72db14c3c2801f62de73219e0458ea0e8f9fd5-p1",
+            "source_id": "corpus-5e7d2094d7d3b10405c131754d72db14c3c2801f62de73219e0458ea0e8f9fd5",
+            "source_type": "statute",
+            "source_version": "California Legislative Counsel PUBINFO, archive modified November 16, 2026",
+            "excerpt_hash": "sha256:aff9d7ee64af7ebdf2bfaf4ef3c0cc34c5cd6620e7f5fb2e8df2e784b984d2dd"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "all",
+      "operands": [
+        {
+          "op": "element",
+          "element": "accepted_goods"
+        },
+        {
+          "op": "element",
+          "element": "notice"
+        },
+        {
+          "op": "element",
+          "element": "nonconformity"
+        },
+        {
+          "op": "element",
+          "element": "resulting_loss"
+        }
+      ]
+    }
+  },
+  {
+    "id": "nj_consumer_loss_action",
+    "version": "v1",
+    "jurisdiction": "US-NJ",
+    "legal_area": "consumer",
+    "kind": "claim",
+    "label": "Private action for ascertainable consumer loss",
+    "plain_language_label": "Private action for ascertainable consumer loss",
+    "topics": [
+      "private_action"
+    ],
+    "matter_types": [
+      "consumer"
+    ],
+    "limitations": [
+      "This provision requires review of the underlying unlawful practice, applicable edition and forum. The amount of damages and any entitlement to fees require separate analysis."
+    ],
+    "elements": [
+      {
+        "id": "unlawful_practice",
+        "label": "Unlawful practice by another person",
+        "description": "Identify the specific method, act or practice alleged to be unlawful under the referenced legislation.",
+        "kind": "requirement",
+        "authority": [
+          {
+            "passage_id": "corpus-b7fa5116d5a048f1f567bcdb739ad264517c071b80a17794464102a63203a138-p1",
+            "source_id": "corpus-b7fa5116d5a048f1f567bcdb739ad264517c071b80a17794464102a63203a138",
+            "source_type": "statute",
+            "source_version": "New Jersey General and Permanent Statutes, updated through P.L.2026, c.70, and J.R.2",
+            "excerpt_hash": "sha256:f61e9f85fed5818ac59a0faa89c9a90fd01fe6934d40fa556efa5208c6c663eb"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "ascertainable_loss",
+        "label": "Ascertainable loss of money or property",
+        "description": "Identify the loss of money or property, real or personal.",
+        "kind": "requirement",
+        "authority": [
+          {
+            "passage_id": "corpus-b7fa5116d5a048f1f567bcdb739ad264517c071b80a17794464102a63203a138-p1",
+            "source_id": "corpus-b7fa5116d5a048f1f567bcdb739ad264517c071b80a17794464102a63203a138",
+            "source_type": "statute",
+            "source_version": "New Jersey General and Permanent Statutes, updated through P.L.2026, c.70, and J.R.2",
+            "excerpt_hash": "sha256:f61e9f85fed5818ac59a0faa89c9a90fd01fe6934d40fa556efa5208c6c663eb"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "causal_connection",
+        "label": "Causal connection",
+        "description": "Identify how the unlawful practice caused that ascertainable loss.",
+        "kind": "requirement",
+        "authority": [
+          {
+            "passage_id": "corpus-b7fa5116d5a048f1f567bcdb739ad264517c071b80a17794464102a63203a138-p1",
+            "source_id": "corpus-b7fa5116d5a048f1f567bcdb739ad264517c071b80a17794464102a63203a138",
+            "source_type": "statute",
+            "source_version": "New Jersey General and Permanent Statutes, updated through P.L.2026, c.70, and J.R.2",
+            "excerpt_hash": "sha256:f61e9f85fed5818ac59a0faa89c9a90fd01fe6934d40fa556efa5208c6c663eb"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "all",
+      "operands": [
+        {
+          "op": "element",
+          "element": "unlawful_practice"
+        },
+        {
+          "op": "element",
+          "element": "ascertainable_loss"
+        },
+        {
+          "op": "element",
+          "element": "causal_connection"
+        }
+      ]
+    }
+  },
+  {
+    "id": "wi_wages_due",
+    "version": "v1",
+    "jurisdiction": "US-WI",
+    "legal_area": "employment",
+    "kind": "claim",
+    "label": "Employee action for wages due",
+    "plain_language_label": "Employee action for wages due",
+    "authority_as_of": "2026-11-04",
+    "topics": [
+      "wage_enforcement"
+    ],
+    "matter_types": [
+      "wage"
+    ],
+    "limitations": [
+      "Section 109.03(5) cross-references other provisions concerning increased wages and liens. Additional remedies, exclusions, wage amounts and venue require review."
+    ],
+    "elements": [
+      {
+        "id": "wage_enforcement",
+        "label": "Employee action for wages due",
+        "description": "Identify the wages due from the employer on a regular payday under section 109.03.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-fe53b00fe3e8b71e8357e15976dc9c76c48f2aaf1eb8ab73c4401ffac7651728-p1",
+            "source_id": "corpus-fe53b00fe3e8b71e8357e15976dc9c76c48f2aaf1eb8ab73c4401ffac7651728",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:df8c2e229608cac079ce1365ed3cbab6feb241afb676ddad10347907a1dd0efa",
+            "source_type": "statute"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "wage_enforcement"
+    }
+  },
+  {
+    "id": "wi_comparative_negligence",
+    "version": "v1",
+    "jurisdiction": "US-WI",
+    "legal_area": "torts",
+    "kind": "defense",
+    "label": "Separate comparison of causal negligence",
+    "plain_language_label": "Separate comparison of causal negligence",
+    "authority_as_of": "2026-11-04",
+    "topics": [
+      "fault_allocation"
+    ],
+    "matter_types": [
+      "personal_injury"
+    ],
+    "limitations": [
+      "Subsection (1) addresses separate comparison, proportional reduction and allocation among defendants. Other subsections and case-specific exceptions require review."
+    ],
+    "elements": [
+      {
+        "id": "fault_allocation",
+        "label": "Separate comparison of causal negligence",
+        "description": "Compare the claimant’s causal negligence separately with that of each person against whom recovery is sought.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-13e87f76c593971705559533418e2d156da269b455129a2412839b364d9f8528-p1",
+            "source_id": "corpus-13e87f76c593971705559533418e2d156da269b455129a2412839b364d9f8528",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:86f7a2c4b4786b03452c4e5dc046404fb9031087175ddad0501424974135834c",
+            "source_type": "statute"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "fault_allocation"
+    }
+  },
+  {
+    "id": "wi_residential_landlord_repairs",
+    "version": "v1",
+    "jurisdiction": "US-WI",
+    "legal_area": "landlord_tenant",
+    "kind": "entitlement",
+    "label": "Landlord repair duties in a residential tenancy",
+    "plain_language_label": "Landlord repair duties in a residential tenancy",
+    "authority_as_of": "2026-11-04",
+    "topics": [
+      "habitability"
+    ],
+    "matter_types": [
+      "landlord_tenant"
+    ],
+    "limitations": [
+      "This development definition covers retained duties for landlord-controlled parts of the premises and equipment needed for agreed tenant services.",
+      "Tenant-caused repairs, obligations to other tenants and casualty damage require separate factual review under the cited qualifications. Local housing codes, other repair duties and remedies require additional authority."
+    ],
+    "elements": [
+      {
+        "id": "residential_tenancy",
+        "label": "Residential tenancy",
+        "description": "Determine whether the premises are held under a residential tenancy.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-a91851c77102bcd8cc12fa417a7d8a036219521e864357f6df179d51f9a76d42-p1",
+            "source_id": "corpus-a91851c77102bcd8cc12fa417a7d8a036219521e864357f6df179d51f9a76d42",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:31c1dee5136ed759728065f754f9dab375e34edbf1cbed8f219686711e05265b"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "controlled_premises",
+        "label": "Condition of landlord-controlled areas",
+        "description": "Identify which parts of the premises the landlord controls and whether those areas are in a reasonable state of repair.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-9c22b1a2b6206330856d68a649684f12fd6bebcc727485c3166d4f57d732f141-p1",
+            "source_id": "corpus-9c22b1a2b6206330856d68a649684f12fd6bebcc727485c3166d4f57d732f141",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:91ecb31cf8929d3a43aa1a9836cf162c658f031e58cbb0161e9ed4fd547db4e5"
+          },
+          {
+            "passage_id": "corpus-09acdcf04698ad9b174fe9f4729064695c66812900ee67db048fc38279f499e4-p1",
+            "source_id": "corpus-09acdcf04698ad9b174fe9f4729064695c66812900ee67db048fc38279f499e4",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:ea8d5003d3f40f590d920a57294d25ca5e7450dc730306d33391bdf32feb30b2",
+            "role": "qualifies"
+          },
+          {
+            "passage_id": "corpus-da9fca80a9a4a2b9d633169bf6d901da7bbb2ff110ea6719f27b161790e6782d-p1",
+            "source_id": "corpus-da9fca80a9a4a2b9d633169bf6d901da7bbb2ff110ea6719f27b161790e6782d",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:1812957cb70548dc63b3ce34d700aae0f13dd42827278734208c024c3cd1a7a7",
+            "role": "qualifies"
+          },
+          {
+            "passage_id": "corpus-4519dbee29fb9c3e1d15b2378854c9a44a39405a233ee3b76facc8db63050e58-p1",
+            "source_id": "corpus-4519dbee29fb9c3e1d15b2378854c9a44a39405a233ee3b76facc8db63050e58",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:ee0267a83bdf0bc80dc8327d1d3d63535fe4f04f219e2244d5b251fc0bd2a48f",
+            "role": "qualifies"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "agreed_service_equipment",
+        "label": "Equipment necessary to furnish agreed services",
+        "description": "Determine whether the landlord controls equipment necessary for a service the landlord expressly or impliedly agreed to provide and whether the equipment is in a reasonable state of repair.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-699a16e41a2e28088d8a9b9196a4726f06c26648cf2bfa1b092bcf645b56796f-p1",
+            "source_id": "corpus-699a16e41a2e28088d8a9b9196a4726f06c26648cf2bfa1b092bcf645b56796f",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:a31f27bd96d3274606864b32e17e3fc4a8cc81cf9a55f37efb17f1110a298fb4"
+          },
+          {
+            "passage_id": "corpus-09acdcf04698ad9b174fe9f4729064695c66812900ee67db048fc38279f499e4-p1",
+            "source_id": "corpus-09acdcf04698ad9b174fe9f4729064695c66812900ee67db048fc38279f499e4",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:ea8d5003d3f40f590d920a57294d25ca5e7450dc730306d33391bdf32feb30b2",
+            "role": "qualifies"
+          },
+          {
+            "passage_id": "corpus-da9fca80a9a4a2b9d633169bf6d901da7bbb2ff110ea6719f27b161790e6782d-p1",
+            "source_id": "corpus-da9fca80a9a4a2b9d633169bf6d901da7bbb2ff110ea6719f27b161790e6782d",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:1812957cb70548dc63b3ce34d700aae0f13dd42827278734208c024c3cd1a7a7",
+            "role": "qualifies"
+          },
+          {
+            "passage_id": "corpus-4519dbee29fb9c3e1d15b2378854c9a44a39405a233ee3b76facc8db63050e58-p1",
+            "source_id": "corpus-4519dbee29fb9c3e1d15b2378854c9a44a39405a233ee3b76facc8db63050e58",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:ee0267a83bdf0bc80dc8327d1d3d63535fe4f04f219e2244d5b251fc0bd2a48f",
+            "role": "qualifies"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "all",
+      "operands": [
+        {
+          "op": "element",
+          "element": "residential_tenancy"
+        },
+        {
+          "op": "any",
+          "operands": [
+            {
+              "op": "element",
+              "element": "controlled_premises"
+            },
+            {
+              "op": "element",
+              "element": "agreed_service_equipment"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "wi_deceptive_public_representation",
+    "version": "v1",
+    "jurisdiction": "US-WI",
+    "legal_area": "consumer",
+    "kind": "claim",
+    "label": "Pecuniary loss from a deceptive public representation",
+    "plain_language_label": "Pecuniary loss from a deceptive public representation",
+    "authority_as_of": "2026-11-04",
+    "topics": [
+      "unfair_practices",
+      "private_action"
+    ],
+    "matter_types": [
+      "consumer"
+    ],
+    "limitations": [
+      "The definition covers a private statutory claim for pecuniary loss allegedly caused by a violation of the identified public-representation provision. The meaning of public, case-specific exceptions, separate injunction claims, remedies and filing limitations require additional review."
+    ],
+    "elements": [
+      {
+        "id": "public_representation",
+        "label": "Representation to the public with a covered purpose",
+        "description": "Identify the representation made to the public in Wisconsin and the covered sale, transaction, or other statutory purpose.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-4f5affd1841bd32a54f6f748f111a5d361c5743fc51a8ba1c573e887d05f4c21-p1",
+            "source_id": "corpus-4f5affd1841bd32a54f6f748f111a5d361c5743fc51a8ba1c573e887d05f4c21",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:8bb4a6c9b5bf088aa641898328468838056fa0e0be5ee607de63c56c1e5b9b73"
+          },
+          {
+            "passage_id": "corpus-4f5affd1841bd32a54f6f748f111a5d361c5743fc51a8ba1c573e887d05f4c21-p2",
+            "source_id": "corpus-4f5affd1841bd32a54f6f748f111a5d361c5743fc51a8ba1c573e887d05f4c21",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:75187e24114afa43f21ccdab09e886c53b83860f92af8b34f588d935d6f308e8"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "deceptive_factual_statement",
+        "label": "Untrue, deceptive or misleading factual statement",
+        "description": "Identify the assertion, representation or statement of fact alleged to be untrue, deceptive or misleading.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-4f5affd1841bd32a54f6f748f111a5d361c5743fc51a8ba1c573e887d05f4c21-p1",
+            "source_id": "corpus-4f5affd1841bd32a54f6f748f111a5d361c5743fc51a8ba1c573e887d05f4c21",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:8bb4a6c9b5bf088aa641898328468838056fa0e0be5ee607de63c56c1e5b9b73"
+          },
+          {
+            "passage_id": "corpus-4f5affd1841bd32a54f6f748f111a5d361c5743fc51a8ba1c573e887d05f4c21-p2",
+            "source_id": "corpus-4f5affd1841bd32a54f6f748f111a5d361c5743fc51a8ba1c573e887d05f4c21",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:75187e24114afa43f21ccdab09e886c53b83860f92af8b34f588d935d6f308e8"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "resulting_pecuniary_loss",
+        "label": "Pecuniary loss caused by the violation",
+        "description": "Identify a pecuniary loss and the factual link between the alleged statutory violation and that loss.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-e1abbc2b481b21748f27117c06ec6e4feace4d1726bfd00ce1635dc214b43fd2-p1",
+            "source_id": "corpus-e1abbc2b481b21748f27117c06ec6e4feace4d1726bfd00ce1635dc214b43fd2",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:f94abf12ccd961092433b3aed02d5a534b3988d6c1ba37f9295627adf9831ad3"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "all",
+      "operands": [
+        {
+          "op": "element",
+          "element": "public_representation"
+        },
+        {
+          "op": "element",
+          "element": "deceptive_factual_statement"
+        },
+        {
+          "op": "element",
+          "element": "resulting_pecuniary_loss"
+        }
+      ]
+    }
+  },
+  {
+    "id": "wi_pay_upon_employment_separation",
+    "version": "v1",
+    "jurisdiction": "US-WI",
+    "legal_area": "employment",
+    "kind": "entitlement",
+    "label": "Pay upon separation from employment",
+    "plain_language_label": "Pay upon separation from employment",
+    "authority_as_of": "2026-11-04",
+    "topics": [
+      "wage_separation"
+    ],
+    "matter_types": [
+      "wage"
+    ],
+    "limitations": [
+      "The two statutory provisions cover distinct separation circumstances. Worker classification, contractual terms, the cause of separation and payroll facts require review. The ordinary separation provision cross-references subsection (1), including payment-frequency exceptions. No due date or recovery is calculated."
+    ],
+    "elements": [
+      {
+        "id": "resignation_or_discharge",
+        "label": "Pay after resignation or discharge",
+        "description": "Check whether the employee quit or was discharged and whether the commission-sales or definite-term contract qualifications apply. Identify the established payroll schedule and the requirements in subsection (1).",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-43d66f1e5cb85a3532c43fe0a8d007766f73221bd606ab254af45e92b4dcbc15-p1",
+            "source_id": "corpus-43d66f1e5cb85a3532c43fe0a8d007766f73221bd606ab254af45e92b4dcbc15",
+            "source_type": "statute",
+            "source_version": "Certified Wisconsin Statutes as of November 4, 2026",
+            "excerpt_hash": "sha256:bcbf2b4e19da1c42707ba820f8ca4a72c3cf9d9f64fe8e0e03f07794366f0d12"
+          }
+        ],
+        "fields": []
+      },
+      {
+        "id": "business_change",
+        "label": "Pay after a covered business change",
+        "description": "Check whether a merger, liquidation, disposition, cessation of operations or relocation caused the employee’s separation and identify the unpaid wages and the employer or successor involved.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-6d9f1936f730a2e7b35fd8b6f8f85b067dba4f630a378655830d3e73e1fa2039-p1",
+            "source_id": "corpus-6d9f1936f730a2e7b35fd8b6f8f85b067dba4f630a378655830d3e73e1fa2039",
+            "source_type": "statute",
+            "source_version": "Certified Wisconsin Statutes as of November 4, 2026",
+            "excerpt_hash": "sha256:5607848d8bdab97f3816be95884b9f1f110becec2d27da4362d3cf86ba9bd4e2"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "any",
+      "operands": [
+        {
+          "op": "element",
+          "element": "resignation_or_discharge"
+        },
+        {
+          "op": "element",
+          "element": "business_change"
+        }
+      ]
+    }
+  },
+  {
+    "id": "wi_collection_nonexistent_right",
+    "version": "v1",
+    "jurisdiction": "US-WI",
+    "legal_area": "consumer_debt",
+    "kind": "claim",
+    "label": "Debt collection involving a claimed right that does not exist",
+    "plain_language_label": "Debt collection involving a claimed right that does not exist",
+    "authority_as_of": "2026-11-04",
+    "topics": [
+      "debt_collection",
+      "debt_private_action"
+    ],
+    "matter_types": [
+      "consumer_debt"
+    ],
+    "limitations": [
+      "This definition covers the identified Wisconsin statutory claim on the certified edition date.",
+      "Review the legal basis of the claimed right and whether the collector knew or had reason to know it did not exist.",
+      "Case-specific exceptions, limitations, remedies and any penalty calculation require separate review."
+    ],
+    "elements": [
+      {
+        "id": "covered_collection",
+        "label": "Collection of a covered alleged debt",
+        "description": "Identify the underlying consumer transaction, the agreement to defer payment and the person engaged in collection.",
+        "authority": [
+          {
+            "passage_id": "corpus-d269b222419e5664a1bb219e8d077260e921dd193dae7af29e81fb8fcf1a991d-p1",
+            "source_id": "corpus-d269b222419e5664a1bb219e8d077260e921dd193dae7af29e81fb8fcf1a991d",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:c828ed6ea9a62a3f63409bbb9f4babbe97a9f367b791a550d977f1252ced7b7c"
+          },
+          {
+            "passage_id": "corpus-5b798bd76d25f4a6b13718e2a69baf8d4f792558955b51a1a2559961acf622e7-p1",
+            "source_id": "corpus-5b798bd76d25f4a6b13718e2a69baf8d4f792558955b51a1a2559961acf622e7",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:3e03c04d1b122230b3d9ada4b83495e87b6210e680d55e82b0a26c13332854d2",
+            "role": "qualifies"
+          },
+          {
+            "passage_id": "corpus-7cee211f5bc710b0b6ae3ebfabdeb60bc81d4e6c39b439ed9b3731db0581a4d2-p1",
+            "source_id": "corpus-7cee211f5bc710b0b6ae3ebfabdeb60bc81d4e6c39b439ed9b3731db0581a4d2",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:de1cbe8abc38632d99d09ccaa4f3f7a74d0f3b1d2d8b4083bc9f3e969a7bdb13",
+            "role": "qualifies"
+          }
+        ],
+        "kind": "condition",
+        "fields": []
+      },
+      {
+        "id": "unenforceable_right",
+        "label": "Assertion or attempted enforcement of a right",
+        "description": "Identify the right claimed or sought or threatened to be enforced, whether it existed and whether the collector knew or had reason to know it did not exist.",
+        "authority": [
+          {
+            "passage_id": "corpus-2db8280515577b01f2bc36069ac0b1d92fd45dde3816f2a055c4b884dabff692-p1",
+            "source_id": "corpus-2db8280515577b01f2bc36069ac0b1d92fd45dde3816f2a055c4b884dabff692",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:a531ed15f0b7236298b9c3be5cc65819e936ff58a7f791e9856d4657be579a99"
+          },
+          {
+            "passage_id": "corpus-d269b222419e5664a1bb219e8d077260e921dd193dae7af29e81fb8fcf1a991d-p1",
+            "source_id": "corpus-d269b222419e5664a1bb219e8d077260e921dd193dae7af29e81fb8fcf1a991d",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:c828ed6ea9a62a3f63409bbb9f4babbe97a9f367b791a550d977f1252ced7b7c",
+            "role": "qualifies"
+          },
+          {
+            "passage_id": "corpus-4d04afe8cea4e73058817bdb0d4606f19dae33e03b24d1bdb042ab511d27c2d5-p1",
+            "source_id": "corpus-4d04afe8cea4e73058817bdb0d4606f19dae33e03b24d1bdb042ab511d27c2d5",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:51ef80d4cc3a907fa3dd9f9b47ce06579355da9ae2f1ad8ab4c7191de578d8a2",
+            "role": "qualifies"
+          }
+        ],
+        "kind": "condition",
+        "fields": []
+      },
+      {
+        "id": "resulting_injury",
+        "label": "Injury caused by the alleged violation",
+        "description": "Identify the injury alleged and the factual connection to the collection conduct.",
+        "authority": [
+          {
+            "passage_id": "corpus-825e15796f420dc17bf16cc3a22bbdadc92e6eeeb9874ea14d7bd4512ac81e7f-p1",
+            "source_id": "corpus-825e15796f420dc17bf16cc3a22bbdadc92e6eeeb9874ea14d7bd4512ac81e7f",
+            "source_type": "statute",
+            "source_version": "Wisconsin Statutes certified November 4, 2026",
+            "excerpt_hash": "sha256:45b61d1b10db6d93433e7d8770b631f9b3202e2581600bc585e557b773a46c72"
+          }
+        ],
+        "kind": "condition",
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "all",
+      "operands": [
+        {
+          "op": "element",
+          "element": "covered_collection"
+        },
+        {
+          "op": "element",
+          "element": "unenforceable_right"
+        },
+        {
+          "op": "element",
+          "element": "resulting_injury"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dc_consumer_private_action_reference",
+    "version": "v1",
+    "jurisdiction": "US-DC",
+    "legal_area": "consumer",
+    "kind": "entitlement",
+    "label": "Consumer access to a private action",
+    "plain_language_label": "Consumer access to a private action",
+    "authority_as_of": "2026-04-29",
+    "topics": [
+      "private_action",
+      "consumer_remedies"
+    ],
+    "matter_types": [
+      "consumer"
+    ],
+    "limitations": [
+      "The statutory excerpts support review of an individual consumer action for the selected edition date.",
+      "Review the specific District law allegedly violated, claimant status, exceptions and prerequisites before assessing any claim or remedy."
+    ],
+    "elements": [
+      {
+        "id": "consumer_trade_practice",
+        "label": "Consumer access to a private action",
+        "description": "Identify the individual consumer, the trade practice and the District law the conduct allegedly violated.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-022774773e0b29228fea2dfdadafcefa527bee34b6b403f7ac15c892759f1651-p1",
+            "source_id": "corpus-022774773e0b29228fea2dfdadafcefa527bee34b6b403f7ac15c892759f1651",
+            "source_type": "statute",
+            "source_version": "D.C. Council XML, current through April 29, 2026",
+            "excerpt_hash": "sha256:b20c4595fb9ba24711af6f5afef0cd88658eb7a5a2441372f5dbf1dcb73d9bba"
+          },
+          {
+            "passage_id": "corpus-7ec79df3bf5a64aa4132337f3fbff22bb871dd906e677ae157248c38d44f6577-p1",
+            "source_id": "corpus-7ec79df3bf5a64aa4132337f3fbff22bb871dd906e677ae157248c38d44f6577",
+            "source_type": "statute",
+            "source_version": "D.C. Council XML, current through April 29, 2026",
+            "excerpt_hash": "sha256:6adebd0c51df2fee402a13fafeb56e762f6fc1619ce1f51062a528e4bef06cd3",
+            "role": "qualifies"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "consumer_trade_practice"
+    }
+  },
+  {
+    "id": "dc_security_deposit_ordinary_wear",
+    "version": "v1",
+    "jurisdiction": "US-DC",
+    "legal_area": "landlord_tenant",
+    "kind": "defense",
+    "label": "Ordinary wear and tear in a security deposit dispute",
+    "plain_language_label": "Ordinary wear and tear in a security deposit dispute",
+    "authority_as_of": "2026-04-29",
+    "topics": [
+      "security_deposit"
+    ],
+    "matter_types": [
+      "landlord_tenant"
+    ],
+    "limitations": [
+      "The statute supplies a bounded rule on withholding replacement value and the meaning of ordinary wear and tear for the selected edition date.",
+      "Review the lease, condition of the premises, disputed charge and applicable remedies."
+    ],
+    "elements": [
+      {
+        "id": "ordinary_wear_and_tear",
+        "label": "Ordinary wear and tear in a security deposit dispute",
+        "description": "Identify the withheld replacement charge and evidence showing whether the condition resulted from ordinary use or from fault, accident or abuse.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-0bc292bfc27857fafc9ab35f20ef7a1f29ca1093b296bc4c9ad5f820e99fec7c-p1",
+            "source_id": "corpus-0bc292bfc27857fafc9ab35f20ef7a1f29ca1093b296bc4c9ad5f820e99fec7c",
+            "source_type": "statute",
+            "source_version": "D.C. Council XML, current through April 29, 2026",
+            "excerpt_hash": "sha256:a3a31a9f48f502ef34993d87212956fe18c4fd8a20a2d55bec14e56213cdad14"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "ordinary_wear_and_tear"
+    }
+  },
+  {
+    "id": "dc_wrongful_death_timing_reference",
+    "version": "v1",
+    "jurisdiction": "US-DC",
+    "legal_area": "torts",
+    "kind": "bar",
+    "label": "Timing reference for a District wrongful-death action",
+    "plain_language_label": "Timing reference for a District wrongful-death action",
+    "authority_as_of": "2026-04-29",
+    "topics": [
+      "wrongful_death_limitations"
+    ],
+    "matter_types": [
+      "wrongful_death"
+    ],
+    "limitations": [
+      "This reference addresses actions under the District wrongful-death chapter for the selected edition date.",
+      "Confirm the applicable edition, possible exceptions, representative capacity and case facts. The engine provides no calculated deadline."
+    ],
+    "elements": [
+      {
+        "id": "wrongful_death_filing_reference",
+        "label": "Timing reference for a District wrongful-death action",
+        "description": "Identify the decedent’s date of death and the personal representative who would bring the action under this chapter.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-61d4a29b2a89e4e232e1e83ad4b14f769413f2390dffe678f36b1419aa5e8751-p1",
+            "source_id": "corpus-61d4a29b2a89e4e232e1e83ad4b14f769413f2390dffe678f36b1419aa5e8751",
+            "source_type": "statute",
+            "source_version": "D.C. Council XML, current through April 29, 2026",
+            "excerpt_hash": "sha256:feba52f6012eb14fa5fe308f90ae9cabba93aad26ea3c05d7574889f1b5909df"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "wrongful_death_filing_reference"
+    }
+  },
+  {
+    "id": "wa_consumer_public_interest_reference",
+    "version": "v1",
+    "jurisdiction": "US-WA",
+    "legal_area": "consumer",
+    "kind": "entitlement",
+    "label": "Public-interest element of a Washington consumer claim",
+    "plain_language_label": "How the alleged practice could affect the public",
+    "authority_as_of": "2024-07-12",
+    "topics": [
+      "consumer_public_interest"
+    ],
+    "matter_types": [
+      "consumer"
+    ],
+    "limitations": [
+      "This reference addresses the public-interest element of a private action alleging an unfair or deceptive act or practice under RCW 19.86.020.",
+      "The enacting legislation applies to causes of action accruing on or after July 26, 2009. Review the applicable edition, all other elements and applicable exceptions separately."
+    ],
+    "elements": [
+      {
+        "id": "public_interest_showing",
+        "label": "Statutory grounds for a public-interest showing",
+        "description": "Identify any allegedly violated statute that incorporates the Consumer Protection Act or specifically declares a public-interest impact, and any evidence of actual or potential injury to other people.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-4e55d829c6f20a208fac324ec07d3fb811982ea88b71d15b3f66434a931bd64e-p1",
+            "source_id": "corpus-4e55d829c6f20a208fac324ec07d3fb811982ea88b71d15b3f66434a931bd64e",
+            "source_type": "statute",
+            "source_version": "Revised Code of Washington, certified July 12, 2024.",
+            "excerpt_hash": "sha256:fee63dccbe4bda45ab3b7a53601aa860adc274efaba430ac40503a2a89178e46"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "public_interest_showing"
+    }
+  },
+  {
+    "id": "wa_wage_rebate_or_underpayment_remedy_reference",
+    "version": "v1",
+    "jurisdiction": "US-WA",
+    "legal_area": "employment",
+    "kind": "remedy",
+    "label": "Washington wage rebate or underpayment remedy",
+    "plain_language_label": "Review of additional damages for a wage rebate or intentional underpayment",
+    "authority_as_of": "2024-07-12",
+    "topics": [
+      "wage_enforcement",
+      "wage_withholding",
+      "wage_withholding_exceptions"
+    ],
+    "matter_types": [
+      "wage"
+    ],
+    "limitations": [
+      "RCW 49.52.070 applies to the conduct described in RCW 49.52.050(1) and (2). Review any applicable authorization under RCW 49.52.060 and whether the employee knowingly submitted to the violation.",
+      "Review the applicable edition, party capacity, wage obligation and case facts before assessing or calculating any remedy."
+    ],
+    "elements": [
+      {
+        "id": "rebate_or_intentional_underpayment_review",
+        "label": "Statutory conditions for the wage remedy",
+        "description": "Identify whether the alleged conduct involves collection of a wage rebate or willful underpayment with intent to deprive, the legal basis of wages owed, any applicable authorization, and any evidence of knowing submission.",
+        "kind": "condition",
+        "authority": [
+          {
+            "passage_id": "corpus-3e0556aaf5957f565b4eadc28c80205191634c39904ce3306ac7a45b41739c10-p1",
+            "source_id": "corpus-3e0556aaf5957f565b4eadc28c80205191634c39904ce3306ac7a45b41739c10",
+            "source_type": "statute",
+            "source_version": "Revised Code of Washington, certified July 12, 2024.",
+            "excerpt_hash": "sha256:fabeb9446af1308dee50a908a703154fd02bf602c54bbb48a5f843f29c64c085"
+          },
+          {
+            "passage_id": "corpus-6bbf10a2af6d32cd75d4bdae50f46d14af347a0f578ffefd26ea7df3029a6828-p1",
+            "source_id": "corpus-6bbf10a2af6d32cd75d4bdae50f46d14af347a0f578ffefd26ea7df3029a6828",
+            "source_type": "statute",
+            "source_version": "Revised Code of Washington, certified July 12, 2024.",
+            "excerpt_hash": "sha256:4dcee6f9585e09b7be69fec46d9b683833e023c291fb16015d171211dbf1f891",
+            "role": "qualifies"
+          },
+          {
+            "passage_id": "corpus-c3e07492691792d7f50383106d34131426e9e1863bf2ac9d1634e06b00ce2d5f-p1",
+            "source_id": "corpus-c3e07492691792d7f50383106d34131426e9e1863bf2ac9d1634e06b00ce2d5f",
+            "source_type": "statute",
+            "source_version": "Revised Code of Washington, certified July 12, 2024.",
+            "excerpt_hash": "sha256:e53449442258cdd20497e8de4ad01e0929cab3739a9f1933817bd393b27b7cb8",
+            "role": "qualifies"
+          }
+        ],
+        "fields": []
+      }
+    ],
+    "logic": {
+      "op": "element",
+      "element": "rebate_or_intentional_underpayment_review"
+    }
   }
 ]

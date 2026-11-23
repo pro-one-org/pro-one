@@ -1,0 +1,1534 @@
+{
+  "jurisdiction": "US-TX",
+  "version": "1",
+  "sources": {
+    "US-TX:statutes:cd5b530a25fa": {
+      "category": "statutes",
+      "title": "Texas Codes and Statutes",
+      "url": "http://www.statutes.legis.state.tx.us/",
+      "directory": "codes",
+      "locator": "Texas"
+    },
+    "US-TX:constitution:4de4fbd9d6ae": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.constitution.legis.state.tx.us/",
+      "directory": "codes",
+      "locator": "Texas"
+    },
+    "US-TX:legislature:c06e8a811131": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.legis.state.tx.us/",
+      "directory": "codes",
+      "locator": "Texas"
+    },
+    "US-TX:labor_agency:d6ad2c1b2692": {
+      "category": "labor_agency",
+      "title": "www.twc.texas.gov/",
+      "url": "https://www.twc.texas.gov/",
+      "directory": "labor",
+      "locator": "Texas"
+    },
+    "US-TX:commercial_code:db1e4e3d5919": {
+      "category": "commercial_code",
+      "title": "Business and Commerce Code",
+      "url": "http://www.statutes.legis.state.tx.us?link=BC",
+      "directory": "ucc",
+      "locator": "Texas"
+    },
+    "US-TX:civil_rules:79c4c8500341": {
+      "category": "civil_rules",
+      "title": "Civil Practice and Remedies Code",
+      "url": "http://www.statutes.legis.state.tx.us?link=CP",
+      "directory": "procedure",
+      "locator": "Texas"
+    },
+    "US-TX:consumer_agency:f4a090e6cec5": {
+      "category": "consumer_agency",
+      "title": "Texas (TX)",
+      "url": "https://www.texasattorneygeneral.gov/consumer-protection",
+      "directory": "consumer",
+      "locator": "Texas (TX)"
+    },
+    "US-TX:judiciary:910596ce2bbd": {
+      "category": "judiciary",
+      "title": "Texas Courts Online",
+      "url": "https://www.txcourts.gov/",
+      "directory": "doj-TX",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-TX:judiciary:0d2ed8dca161": {
+      "category": "judiciary",
+      "title": "Court Activity and Reporting and Directory System",
+      "url": "https://www.txcourts.gov/oca",
+      "directory": "doj-TX",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-TX:judiciary:062959357d74": {
+      "category": "judiciary",
+      "title": "Judical Directory",
+      "url": "https://card.txcourts.gov/DirectorySearch.aspx",
+      "directory": "doj-TX",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-TX:court_directory:cace054335eb": {
+      "category": "court_directory",
+      "title": "Texas Supreme Court",
+      "url": "https://www.txcourts.gov/supreme",
+      "directory": "doj-TX",
+      "locator": "Texas Supreme Court"
+    },
+    "US-TX:court_directory:bfb877954bfc": {
+      "category": "court_directory",
+      "title": "Third Court of Appeals (Austin)",
+      "url": "https://www.txcourts.gov/3rdcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Third Court of Appeals (Austin)"
+    },
+    "US-TX:court_directory:1ce37e1ff81d": {
+      "category": "court_directory",
+      "title": "Fourth Court of Appeals (San Antonio)",
+      "url": "https://www.txcourts.gov/4thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Fourth Court of Appeals (San Antonio)"
+    },
+    "US-TX:court_directory:fd970d38517d": {
+      "category": "court_directory",
+      "title": "Fifth Court of Appeals (Dallas)",
+      "url": "https://www.txcourts.gov/5thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Fifth Court of Appeals (Dallas)"
+    },
+    "US-TX:court_directory:d8a8d027c3b7": {
+      "category": "court_directory",
+      "title": "Sixth Court of Appeals (Texarkana)",
+      "url": "https://www.txcourts.gov/6thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Sixth Court of Appeals (Texarkana)"
+    },
+    "US-TX:court_directory:50a1f1e6f6a0": {
+      "category": "court_directory",
+      "title": "Seventh Court of Appeals (Amarillo)",
+      "url": "https://www.txcourts.gov/7thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Seventh Court of Appeals (Amarillo)"
+    },
+    "US-TX:court_directory:2339930e0f58": {
+      "category": "court_directory",
+      "title": "Eighth Court of Appeals (El Paso)",
+      "url": "https://www.txcourts.gov/8thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Eighth Court of Appeals (El Paso)"
+    },
+    "US-TX:court_directory:480649e59804": {
+      "category": "court_directory",
+      "title": "Ninth Court of Appeals (Beaumont)",
+      "url": "https://www.txcourts.gov/9thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Ninth Court of Appeals (Beaumont)"
+    },
+    "US-TX:court_directory:e2b46f9b9402": {
+      "category": "court_directory",
+      "title": "Tenth Court of Appeals (Waco)",
+      "url": "https://www.txcourts.gov/10thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Tenth Court of Appeals (Waco)"
+    },
+    "US-TX:court_directory:6ba3c126fe2a": {
+      "category": "court_directory",
+      "title": "Eleventh Court of Appeals (Eastland)",
+      "url": "https://www.txcourts.gov/11thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Eleventh Court of Appeals (Eastland)"
+    },
+    "US-TX:court_directory:cd0bb2c055f2": {
+      "category": "court_directory",
+      "title": "Twelfth Court of Appeals (Tyler)",
+      "url": "https://www.txcourts.gov/12thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Twelfth Court of Appeals (Tyler)"
+    },
+    "US-TX:court_directory:e6a7ead13393": {
+      "category": "court_directory",
+      "title": "Thirteenth Court of Appeals (Corpus Christi)",
+      "url": "https://www.txcourts.gov/13thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Thirteenth Court of Appeals (Corpus Christi)"
+    },
+    "US-TX:court_directory:653fcee8f731": {
+      "category": "court_directory",
+      "title": "Fourteenth Court of Appeals (Houston)",
+      "url": "https://www.txcourts.gov/14thcoa.aspx",
+      "directory": "doj-TX",
+      "locator": "Fourteenth Court of Appeals (Houston)"
+    },
+    "US-TX:court_directory:971e15ae0337": {
+      "category": "court_directory",
+      "title": "Trial Courts",
+      "url": "https://www.txcourts.gov/courts/overview/about-texas-courts/trial-courts.aspx",
+      "directory": "doj-TX",
+      "locator": "Trial Courts"
+    },
+    "US-TX:court_directory:222d3903f3e2": {
+      "category": "court_directory",
+      "title": "Municipal Courts Education Center",
+      "url": "http://www.tmcec.com/",
+      "directory": "doj-TX",
+      "locator": "Municipal Courts Education Center"
+    },
+    "US-TX:court_directory:9ca4a2810fef": {
+      "category": "court_directory",
+      "title": "Justice of the Peace Courts",
+      "url": "https://ballotpedia.org/Texas_Justice_of_the_Peace_Courts",
+      "directory": "doj-TX",
+      "locator": "Justice of the Peace Courts"
+    },
+    "US-TX:forms:672172fd8227": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "https://www.txcourts.gov/rules-forms/forms.aspx",
+      "directory": "doj-TX",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-TX:constitution:9ba91226ab6f": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://statutes.capitol.texas.gov/",
+      "directory": "doj-TX",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-TX:constitution:d72e36174f5c": {
+      "category": "constitution",
+      "title": "Constitutional Amendments",
+      "url": "https://lrl.texas.gov/legis/constAmends/lrlhome.cfm",
+      "directory": "doj-TX",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-TX:statutes:9ba91226ab6f": {
+      "category": "statutes",
+      "title": "Statutes",
+      "url": "https://statutes.capitol.texas.gov/",
+      "directory": "doj-TX",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-TX:statutes:70b182e0909b": {
+      "category": "statutes",
+      "title": "Laws and Resolutions Archive",
+      "url": "http://texinfo.library.unt.edu/sessionlaws/",
+      "directory": "doj-TX",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-TX:statutes:e2d4fb15e1a4": {
+      "category": "statutes",
+      "title": "Gammel's The Laws of Texas",
+      "url": "http://texinfo.library.unt.edu/lawsoftexas/",
+      "directory": "doj-TX",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-TX:regulations:daa46eff389a": {
+      "category": "regulations",
+      "title": "Administrative Code",
+      "url": "http://www.sos.state.tx.us/tac/index.shtml",
+      "directory": "doj-TX",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-TX:regulations:1bec4ffb6409": {
+      "category": "regulations",
+      "title": "Register",
+      "url": "http://www.sos.state.tx.us/texreg/index.shtml",
+      "directory": "doj-TX",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-TX:regulations:e60079a41096": {
+      "category": "regulations",
+      "title": "Archived Texas Register",
+      "url": "http://texinfo.library.unt.edu/texasregister/",
+      "directory": "doj-TX",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-TX:pi_limitations:8ea4e32455f7": {
+      "category": "pi_limitations",
+      "title": "Tex. Civ. Prac. & Rem. Code § 16.003(a)",
+      "url": "https://statutes.capitol.texas.gov/Docs/CP/htm/CP.16.htm#16.003",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://statutes.capitol.texas.gov/Docs/CP/htm/CP.16.htm",
+        "retrieved_at": "2026-11-17T19:34:02.809119+00:00",
+        "http_status": "200",
+        "sha256": "dbfba8a96dc3cd584157ca66aaafdf67e0ed15dd5a0c8a58f3d4bd0f109fc646",
+        "health": "manual_review_required"
+      }
+    },
+    "US-TX:written_contract_limitations:f25c8e3be43e": {
+      "category": "written_contract_limitations",
+      "title": "Tex. Civ. Prac. & Rem. Code §§ 16.004(a)(3), 16.051",
+      "url": "https://statutes.capitol.texas.gov/Docs/CP/htm/CP.16.htm#16.004",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://statutes.capitol.texas.gov/Docs/CP/htm/CP.16.htm",
+        "retrieved_at": "2026-11-17T19:34:02.809119+00:00",
+        "http_status": "200",
+        "sha256": "dbfba8a96dc3cd584157ca66aaafdf67e0ed15dd5a0c8a58f3d4bd0f109fc646",
+        "health": "manual_review_required"
+      }
+    },
+    "US-TX:oral_contract_limitations:f25c8e3be43e": {
+      "category": "oral_contract_limitations",
+      "title": "Tex. Civ. Prac. & Rem. Code §§ 16.004(a)(3), 16.051",
+      "url": "https://statutes.capitol.texas.gov/Docs/CP/htm/CP.16.htm#16.004",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://statutes.capitol.texas.gov/Docs/CP/htm/CP.16.htm",
+        "retrieved_at": "2026-11-17T19:34:02.809119+00:00",
+        "http_status": "200",
+        "sha256": "dbfba8a96dc3cd584157ca66aaafdf67e0ed15dd5a0c8a58f3d4bd0f109fc646",
+        "health": "manual_review_required"
+      }
+    },
+    "US-TX:small_claims:b15115ec3eae": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://guides.sll.texas.gov/small-claims/legal-forms",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://guides.sll.texas.gov/small-claims/legal-forms",
+        "retrieved_at": "2026-11-17T19:41:56.368530+00:00",
+        "http_status": "200",
+        "sha256": "537f4a62dd04474d19e4be882276f310000f038615d5666dda1e6861dd1b0733",
+        "health": "manual_review_required"
+      }
+    },
+    "US-TX:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 29"
+    },
+    "US-TX:deposit:3e87864ece1d": {
+      "category": "deposit",
+      "title": "Residential tenancy publication",
+      "url": "https://guides.sll.texas.gov/landlord-tenant-law/security-deposits",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://guides.sll.texas.gov/landlord-tenant-law/security-deposits",
+        "retrieved_at": "2026-11-17T19:41:56.259163+00:00",
+        "http_status": "200",
+        "sha256": "14b72271a41249770ae134b778656e610aa8fb2fc2a094a67c7b15efd156d257",
+        "health": "manual_review_required"
+      }
+    },
+    "US-TX:consumerLaw:1183b44bdff1": {
+      "category": "consumerLaw",
+      "title": "Consumer protection publication",
+      "url": "https://guides.sll.texas.gov/consumer-protection/deceptive-practices",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://guides.sll.texas.gov/consumer-protection/deceptive-practices",
+        "retrieved_at": "2026-11-17T19:41:56.296825+00:00",
+        "http_status": "200",
+        "sha256": "b0effb0424090d64d885d84c2445bdd965fd16080548a2640dd6f57e40494b18",
+        "health": "manual_review_required"
+      }
+    },
+    "US-TX:consumerLaw:7ba5bad089c1": {
+      "title": "Tex. Bus. & Com. Code § 17.41 et seq.",
+      "category": "consumerLaw",
+      "url": "https://statutes.capitol.texas.gov/Docs/BC/htm/BC.17.htm",
+      "directory": "consumer_statutes_index",
+      "locator": "Tex. Bus. & Com. Code § 17.41 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-TX:fault:e38dca8bf7e8": {
+      "category": "fault",
+      "title": "Tex. Civ. Prac. & Rem. Code § 33.001",
+      "url": "https://tcss.legis.texas.gov/resources/CP/pdf/CP.33.pdf",
+      "directory": null,
+      "locator": "Tex. Civ. Prac. & Rem. Code § 33.001",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:50.594134+00:00",
+        "sha256": "884e293055350901b242356073665b86b875edc77ca8534369009acf90c7762f"
+      }
+    },
+    "US-TX:contract_formation:19f18af64b2d": {
+      "category": "contract_formation",
+      "title": "Tex. Bus. & Com. Code § 2.204",
+      "url": "https://tcss.legis.texas.gov/resources/BC/pdf/BC.2.pdf",
+      "locator": "Tex. Bus. & Com. Code § 2.204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:39.879882+00:00",
+        "sha256": "a3afca2ca685f9c18edc631babf27140e321fe3460a73cffd97497a1dba2c1f3"
+      }
+    },
+    "US-TX:contract_damages:7f1b8d4eea0f": {
+      "category": "contract_damages",
+      "title": "Tex. Bus. & Com. Code § 2.714",
+      "url": "https://tcss.legis.texas.gov/resources/BC/pdf/BC.2.pdf",
+      "locator": "Tex. Bus. & Com. Code § 2.714",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:39.879882+00:00",
+        "sha256": "a3afca2ca685f9c18edc631babf27140e321fe3460a73cffd97497a1dba2c1f3"
+      }
+    },
+    "US-TX:commencement:e60e51166a6e": {
+      "category": "commencement",
+      "title": "Tex. R. Civ. P. 22",
+      "url": "https://www.txcourts.gov/media/1462349/texas-rules-of-civil-procedure.pdf",
+      "locator": "Tex. R. Civ. P. 22",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:47.983754+00:00",
+        "sha256": "5428d16df065d6c5bd8b746576ee74b27ec67b36dd09ed03738a3c7ed370d3d3"
+      }
+    },
+    "US-TX:service:c2d5cb3d22a9": {
+      "category": "service",
+      "title": "Tex. R. Civ. P. 103",
+      "url": "https://www.txcourts.gov/media/1462349/texas-rules-of-civil-procedure.pdf",
+      "locator": "Tex. R. Civ. P. 103",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:47.983754+00:00",
+        "sha256": "5428d16df065d6c5bd8b746576ee74b27ec67b36dd09ed03738a3c7ed370d3d3"
+      }
+    },
+    "US-TX:negligence_elements:10ce201fa206": {
+      "category": "negligence_elements",
+      "title": "Lakeside Village Homeowners Association, Inc. v. Belanger, No. 08-15-00214-CV (Tex. App. June 14, 2017)",
+      "url": "https://dev-search.txcourts.gov/SearchMedia.aspx?DT=Opinion&MediaID=6030c305-6ed1-473e-a764-9be883f59a77&MediaVersionID=1f69fd72-0cca-4ebf-83b8-f690c69cf9b7&coa=coa08",
+      "locator": "Lakeside Village Homeowners Association, Inc. v. Belanger, No. 08-15-00214-CV (Tex. App. June 14, 2017)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:27:32.089519+00:00",
+        "sha256": "bb3afad1d274688672eadb49115eabef8e66234b79ee59b99479ca3e35a87f96"
+      }
+    },
+    "US-TX:pi_limitations:a80c0ab9ca1d": {
+      "category": "pi_limitations",
+      "title": "Rodriguez v. Crowell, No. 08-07-00269-CV (Tex. App. Dec. 22, 2009)",
+      "url": "https://dev-search.txcourts.gov/SearchMedia.aspx?DT=Opinion&MediaID=d6db779b-6461-4397-820e-a2faa495c7ed&MediaVersionID=0bbf64c5-f5fa-4097-bbf9-dca2015c679d&coa=coa08",
+      "locator": "Rodriguez v. Crowell, No. 08-07-00269-CV (Tex. App. Dec. 22, 2009)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:43:52.036794+00:00",
+        "sha256": "3bb849217b25f716a2c55d1bddb08a9e3f2225e3641497ab8f0954ab71f62ab5"
+      }
+    },
+    "US-TX:consumerLaw:9c1f49160c75": {
+      "category": "consumerLaw",
+      "title": "Vuong v. Luk, No. 01-11-00178-CV (Tex. App. Dec. 19, 2013)",
+      "url": "https://dev-search.txcourts.gov/SearchMedia.aspx?DT=Opinion&MediaID=a12c8196-0215-4b4b-a856-29295b7df1d1&MediaVersionID=a650697e-2345-466f-a227-ee44c6d21d57&coa=coa01",
+      "locator": "Vuong v. Luk, No. 01-11-00178-CV (Tex. App. Dec. 19, 2013)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:20:55.174282+00:00",
+        "sha256": "bed17ce7abbd12a61edf95c54e3a70050d328115cb2a3586cd092ec934383ad2"
+      }
+    },
+    "US-TX:debtLaw:7117aeb254ac": {
+      "category": "debtLaw",
+      "title": "Tex. Fin. Code § 392.304",
+      "url": "https://tcss.legis.texas.gov/resources/FI/htm/FI.392.htm",
+      "locator": "Tex. Fin. Code § 392.304",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:27:34.392272+00:00",
+        "sha256": "8a8abe29a707675d776874238f04944e84564d5032d54bb7f881d2af6294cd53"
+      }
+    },
+    "US-TX:debt_limitations:e83a62c91cd7": {
+      "category": "debt_limitations",
+      "title": "Tex. Fin. Code § 392.307(a)–(d)",
+      "url": "https://tcss.legis.texas.gov/resources/FI/htm/FI.392.htm",
+      "locator": "Tex. Fin. Code § 392.307(a)–(d)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:27:34.392272+00:00",
+        "sha256": "8a8abe29a707675d776874238f04944e84564d5032d54bb7f881d2af6294cd53"
+      }
+    },
+    "US-TX:deposit:31c070aa56bb": {
+      "category": "deposit",
+      "title": "Tex. Prop. Code § 92.103",
+      "url": "https://tcss.legis.texas.gov/resources/PR/htm/PR.92.htm",
+      "locator": "Tex. Prop. Code § 92.103",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:27:34.643327+00:00",
+        "sha256": "e4269dac3944639774c143e0d47b65b5bc12f5f3cb02a134f9abe67e05732df7"
+      }
+    },
+    "US-TX:deposit:8c2a298c8eae": {
+      "category": "deposit",
+      "title": "Tex. Prop. Code § 92.104",
+      "url": "https://tcss.legis.texas.gov/resources/PR/htm/PR.92.htm",
+      "locator": "Tex. Prop. Code § 92.104",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:27:34.643327+00:00",
+        "sha256": "e4269dac3944639774c143e0d47b65b5bc12f5f3cb02a134f9abe67e05732df7"
+      }
+    },
+    "US-TX:deposit:ec1f50d6b53c": {
+      "category": "deposit",
+      "title": "Tex. Prop. Code § 92.107",
+      "url": "https://tcss.legis.texas.gov/resources/PR/htm/PR.92.htm",
+      "locator": "Tex. Prop. Code § 92.107",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:27:34.643327+00:00",
+        "sha256": "e4269dac3944639774c143e0d47b65b5bc12f5f3cb02a134f9abe67e05732df7"
+      }
+    },
+    "US-TX:wageLaw:796401151002": {
+      "category": "wageLaw",
+      "title": "Tex. Lab. Code § 61.014",
+      "url": "https://tcss.legis.texas.gov/resources/LA/htm/LA.61.htm",
+      "locator": "Tex. Lab. Code § 61.014",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:27:34.689028+00:00",
+        "sha256": "c0ff9a21bb18ac0113e15db772e5f0abb6fa3f147c84594e0435e741f66d3ff6"
+      }
+    },
+    "US-TX:wage_enforcement:3bc921f4ec00": {
+      "category": "wage_enforcement",
+      "title": "Tex. Lab. Code § 61.051(a)–(c)",
+      "url": "https://tcss.legis.texas.gov/resources/LA/htm/LA.61.htm",
+      "locator": "Tex. Lab. Code § 61.051(a)–(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:27:34.689028+00:00",
+        "sha256": "c0ff9a21bb18ac0113e15db772e5f0abb6fa3f147c84594e0435e741f66d3ff6"
+      }
+    },
+    "US-TX:response:bb62ca896e0d": {
+      "category": "response",
+      "title": "Tex. R. Civ. P. 99(b)",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "locator": "Tex. R. Civ. P. 99(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:37:34.328557+00:00",
+        "sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a"
+      }
+    },
+    "US-TX:service:8567b3adbc8f": {
+      "category": "service",
+      "title": "Tex. R. Civ. P. 106(a)",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "locator": "Tex. R. Civ. P. 106(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:37:34.328557+00:00",
+        "sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a"
+      }
+    },
+    "US-TX:small_claims:e752d09b1cd1": {
+      "category": "small_claims",
+      "title": "Tex. R. Civ. P. 500.1(a)",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "locator": "Tex. R. Civ. P. 500.1(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:37:34.328557+00:00",
+        "sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a"
+      }
+    },
+    "US-TX:debt_forum:30391e7fe131": {
+      "category": "debt_forum",
+      "title": "Tex. R. Civ. P. 500.1(b)",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "locator": "Tex. R. Civ. P. 500.1(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:37:34.328557+00:00",
+        "sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a"
+      }
+    },
+    "US-TX:habitability:2dd0f19e9488": {
+      "category": "habitability",
+      "title": "Tex. R. Civ. P. 500.1(c)",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "locator": "Tex. R. Civ. P. 500.1(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:37:34.328557+00:00",
+        "sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a"
+      }
+    },
+    "US-TX:justice_court_response:5503f5fa0ef6": {
+      "category": "justice_court_response",
+      "title": "Tex. R. Civ. P. 502.5(d)–(e)",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "locator": "Tex. R. Civ. P. 502.5(d)–(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:37:34.328557+00:00",
+        "sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a"
+      }
+    },
+    "US-TX:general_contract_limitations:86357fb12e4b": {
+      "category": "general_contract_limitations",
+      "title": "Tex. Civ. Prac. & Rem. Code § 16.051",
+      "url": "https://tcss.legis.texas.gov/resources/CP/pdf/CP.16.pdf",
+      "locator": "Tex. Civ. Prac. & Rem. Code § 16.051",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:02.519206+00:00",
+        "sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce"
+      }
+    },
+    "US-TX:debt_limitations:72ef03deab2f": {
+      "category": "debt_limitations",
+      "title": "Tex. Civ. Prac. & Rem. Code § 16.004(a)",
+      "url": "https://tcss.legis.texas.gov/resources/CP/pdf/CP.16.pdf",
+      "locator": "Tex. Civ. Prac. & Rem. Code § 16.004(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:02.519206+00:00",
+        "sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce"
+      }
+    },
+    "US-TX:wrongful_death_limitations:0293f5ef0d49": {
+      "category": "wrongful_death_limitations",
+      "title": "Tex. Civ. Prac. & Rem. Code § 16.003(b)",
+      "url": "https://tcss.legis.texas.gov/resources/CP/pdf/CP.16.pdf",
+      "locator": "Tex. Civ. Prac. & Rem. Code § 16.003(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:02.519206+00:00",
+        "sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce"
+      }
+    },
+    "US-TX:service_time_limit:cb8091261219": {
+      "category": "service_time_limit",
+      "title": "Farris v. Evans, No. 01-20-00165-CV, slip op. at 5–6 (Tex. App. July 14, 2020)",
+      "url": "https://www.txcourts.gov/media/1448850/200165f.pdf",
+      "locator": "Farris v. Evans, No. 01-20-00165-CV, slip op. at 5–6 (Tex. App. July 14, 2020)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:34:35.934965+00:00",
+        "sha256": "37d9bfc7d1d7b8f2fcffd53219da8ff4b4293e89e205c352b484b0cdce814a22"
+      }
+    },
+    "US-TX:eviction:7ecc7affb4a8": {
+      "category": "eviction",
+      "title": "Tex. Prop. Code § 24.004",
+      "url": "https://tcss.legis.texas.gov/resources/PR/pdf/PR.24.pdf",
+      "locator": "Tex. Prop. Code § 24.004",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:08:04.413193+00:00",
+        "sha256": "15cf4a5c017639f3e43eb6dd5b51e4646edda26558e35058cf509f016c3af056"
+      }
+    },
+    "US-TX:habitability:30f76be4f68a": {
+      "category": "habitability",
+      "title": "Tex. Prop. Code § 92.052",
+      "url": "https://tcss.legis.texas.gov/resources/PR/pdf/PR.92.pdf",
+      "locator": "Tex. Prop. Code § 92.052",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:08:04.437051+00:00",
+        "sha256": "939fc9cc605fae555ab235a2d1a0e6e6125d6ae19c442afdc2922f10666d504b"
+      }
+    },
+    "US-TX:debt_forum:8778c627a77c": {
+      "category": "debt_forum",
+      "title": "Tex. R. Civ. P. 500.3(b)",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "locator": "Tex. R. Civ. P. 500.3(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:03:09.364611+00:00",
+        "sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a"
+      }
+    },
+    "US-TX:debt_response:8a8dc5875c5e": {
+      "category": "debt_response",
+      "title": "Tex. R. Civ. P. 502.5(d)–(e) (Part V debt claims via Rule 500.3(b))",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "locator": "Tex. R. Civ. P. 502.5(d)–(e) (Part V debt claims via Rule 500.3(b))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:03:09.364611+00:00",
+        "sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a"
+      }
+    },
+    "US-TX:debt_pleading:fd2885196973": {
+      "category": "debt_pleading",
+      "title": "Tex. R. Civ. P. 508.2",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "locator": "Tex. R. Civ. P. 508.2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:03:09.364611+00:00",
+        "sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a"
+      }
+    },
+    "US-TX:debt_judgment_proof:4f424c522025": {
+      "category": "debt_judgment_proof",
+      "title": "Tex. R. Civ. P. 508.3(a), (b)(1)–(3)",
+      "url": "https://www.txcourts.gov/media/1463426/texas-rules-of-civil-procedure.pdf",
+      "locator": "Tex. R. Civ. P. 508.3(a), (b)(1)–(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:03:09.364611+00:00",
+        "sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a"
+      }
+    },
+    "US-TX:eviction:74ec6165b263": {
+      "category": "eviction",
+      "title": "Tex. S.B. 38, 89th Leg., R.S., ch. 960, §§ 17–18 (2025)",
+      "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00038F.HTM",
+      "locator": "Tex. S.B. 38, 89th Leg., R.S., ch. 960, §§ 17–18 (2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:18:27.728115+00:00",
+        "sha256": "75d3b367a1853848b2f9622d5dd8edddbc9470bc65c0ce9e4e73d6277e76681a"
+      }
+    },
+    "US-TX:contract_breach:7a98287a118b": {
+      "category": "contract_breach",
+      "title": "Messer v. Hereford Logistics & Commodity Co., No. 07-20-00007-CV (Tex. App.—Amarillo June 19, 2020)",
+      "url": "https://www.txcourts.gov/media/1447821/07-20-00007-cv-opinion.pdf",
+      "locator": "Messer v. Hereford Logistics & Commodity Co., No. 07-20-00007-CV (Tex. App.—Amarillo June 19, 2020)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:33:29.897966+00:00",
+        "sha256": "c38f00ea5a1167259f434c85ba347a006806cdd37fb32ddefe2e35257df4173a"
+      }
+    },
+    "US-TX:general_contract_damages:dadcbe32fb19": {
+      "category": "general_contract_damages",
+      "title": "Signature Indus. Servs., LLC v. Int’l Paper Co., 638 S.W.3d 179, 183 (Tex. 2022)",
+      "url": "https://www.txcourts.gov/media/1453476/200396.pdf",
+      "locator": "Signature Indus. Servs., LLC v. Int’l Paper Co., 638 S.W.3d 179, 183 (Tex. 2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:34:45.876814+00:00",
+        "sha256": "f55c1543e30f91fa238637a7d3baf7bfd7229f6d872449789fed4384f09676a9"
+      }
+    },
+    "US-TX:labor_agency:9cba69278e99": {
+      "category": "labor_agency",
+      "title": "Tex. Lab. Code § 61.051(a)–(e)",
+      "url": "https://www.twc.texas.gov/sites/default/files/ui/docs/chapter-61-payment-of-wages-twc.pdf",
+      "locator": "Tex. Lab. Code § 61.051(a)–(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:45:16.647080+00:00",
+        "sha256": "482539c03d980edfc0c40f56e683d4f9a38b5cb1344b51bd72969129a19a73d9"
+      }
+    },
+    "US-TX:premises:9a2ae27a7976": {
+      "category": "premises",
+      "title": "Austin v. Kroger Tex., L.P., 465 S.W.3d 193 (Tex. 2015) (exceptions)",
+      "url": "https://dev-search.txcourts.gov/SearchMedia.aspx?DT=OPINION&MediaID=3a4e8f17-b70d-407b-b2e8-03ac24c3a77a&MediaVersionID=e7e0cde6-b5bc-4a88-b4ec-decd7b21bfb2&coa=cossup",
+      "locator": "Austin v. Kroger Tex., L.P., 465 S.W.3d 193 (Tex. 2015) (exceptions)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:59:26.470090+00:00",
+        "sha256": "9e34eae681c95e1522f1786986071f3961dab3d4ae6e574abd7483d5ba098281"
+      }
+    },
+    "US-TX:tolling:ef80ee046c3b": {
+      "category": "tolling",
+      "title": "Tex. Civ. Prac. & Rem. Code § 16.001",
+      "url": "https://tcss.legis.texas.gov/resources/CP/pdf/CP.16.pdf",
+      "locator": "Tex. Civ. Prac. & Rem. Code § 16.001",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:52:16.902935+00:00",
+        "sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce"
+      }
+    },
+    "US-TX:accrual:26e9fef80e2c": {
+      "category": "accrual",
+      "title": "Tex. Civ. Prac. & Rem. Code § 16.0031",
+      "url": "https://tcss.legis.texas.gov/resources/CP/pdf/CP.16.pdf",
+      "locator": "Tex. Civ. Prac. & Rem. Code § 16.0031",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:52:16.902935+00:00",
+        "sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce"
+      }
+    },
+    "US-TX:general_contract_damages:a60ec6e88148": {
+      "category": "general_contract_damages",
+      "title": "Signature Indus. Servs., LLC v. Int'l Paper Co., No. 20-0396, slip op. at 6–7 (Tex. 2022)",
+      "url": "https://www.txcourts.gov/media/1453476/200396.pdf",
+      "locator": "Signature Indus. Servs., LLC v. Int'l Paper Co., No. 20-0396, slip op. at 6–7 (Tex. 2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T20:36:08.995327+00:00",
+        "sha256": "f55c1543e30f91fa238637a7d3baf7bfd7229f6d872449789fed4384f09676a9"
+      }
+    },
+    "US-TX:general_contract_damages:991633ba646a": {
+      "category": "general_contract_damages",
+      "title": "Signature Indus. Servs., LLC v. Int'l Paper Co., No. 20-0396, slip op. at 8 (Tex. 2022)",
+      "url": "https://www.txcourts.gov/media/1453476/200396.pdf",
+      "locator": "Signature Indus. Servs., LLC v. Int'l Paper Co., No. 20-0396, slip op. at 8 (Tex. 2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T20:36:08.995327+00:00",
+        "sha256": "f55c1543e30f91fa238637a7d3baf7bfd7229f6d872449789fed4384f09676a9"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-TX:court:ed65acfb9683",
+      "name": "Texas Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-TX:court_directory:cace054335eb"
+    },
+    {
+      "id": "US-TX:court:791aae998d97",
+      "name": "Third Court of Appeals (Austin)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:bfb877954bfc"
+    },
+    {
+      "id": "US-TX:court:6991bc21849b",
+      "name": "Fourth Court of Appeals (San Antonio)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:1ce37e1ff81d"
+    },
+    {
+      "id": "US-TX:court:d490e009bdb7",
+      "name": "Fifth Court of Appeals (Dallas)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:fd970d38517d"
+    },
+    {
+      "id": "US-TX:court:37bead0170a0",
+      "name": "Sixth Court of Appeals (Texarkana)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:d8a8d027c3b7"
+    },
+    {
+      "id": "US-TX:court:bc076b28e7f0",
+      "name": "Seventh Court of Appeals (Amarillo)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:50a1f1e6f6a0"
+    },
+    {
+      "id": "US-TX:court:e31a06709453",
+      "name": "Eighth Court of Appeals (El Paso)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:2339930e0f58"
+    },
+    {
+      "id": "US-TX:court:552a7d2e788d",
+      "name": "Ninth Court of Appeals (Beaumont)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:480649e59804"
+    },
+    {
+      "id": "US-TX:court:a9de7061a10e",
+      "name": "Tenth Court of Appeals (Waco)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:e2b46f9b9402"
+    },
+    {
+      "id": "US-TX:court:554ea6582639",
+      "name": "Eleventh Court of Appeals (Eastland)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:6ba3c126fe2a"
+    },
+    {
+      "id": "US-TX:court:91ebb02cfc89",
+      "name": "Twelfth Court of Appeals (Tyler)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:cd0bb2c055f2"
+    },
+    {
+      "id": "US-TX:court:3654e35f2163",
+      "name": "Thirteenth Court of Appeals (Corpus Christi)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:e6a7ead13393"
+    },
+    {
+      "id": "US-TX:court:3de6a886827c",
+      "name": "Fourteenth Court of Appeals (Houston)",
+      "level": "appellate_directory",
+      "source_id": "US-TX:court_directory:653fcee8f731"
+    },
+    {
+      "id": "US-TX:court:a9c476231efc",
+      "name": "Trial Courts",
+      "level": "trial_directory",
+      "source_id": "US-TX:court_directory:971e15ae0337"
+    },
+    {
+      "id": "US-TX:court:f7c9eae62261",
+      "name": "Municipal Courts Education Center",
+      "level": "trial_directory",
+      "source_id": "US-TX:court_directory:222d3903f3e2"
+    },
+    {
+      "id": "US-TX:court:6473970afac7",
+      "name": "Justice of the Peace Courts",
+      "level": "trial_directory",
+      "source_id": "US-TX:court_directory:9ca4a2810fef"
+    },
+    {
+      "id": "US-TX:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-TX:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-TX:court:a19a9ba124c8",
+      "name": "County-level",
+      "level": "limited_trial",
+      "source_id": "US-TX:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-TX:court:130cafc44268",
+      "name": "Justice of the Peace",
+      "level": "limited_trial",
+      "source_id": "US-TX:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-TX:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-TX:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Tex. Civ. Prac. & Rem. Code § 16.003(a)",
+      "source_id": "US-TX:pi_limitations:8ea4e32455f7",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Tex. Civ. Prac. & Rem. Code §§ 16.004(a)(3), 16.051",
+      "source_id": "US-TX:written_contract_limitations:f25c8e3be43e",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Tex. Civ. Prac. & Rem. Code §§ 16.004(a)(3), 16.051",
+      "source_id": "US-TX:oral_contract_limitations:f25c8e3be43e",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Tex. Property Code § 24.002. Forcible Detainer.",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Tex. Bus. & Com. Code § 17.41 et seq.",
+      "source_id": "US-TX:consumerLaw:7ba5bad089c1",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "4974a9d050712beb6e5241b048806d": {
+      "source_id": "US-TX:fault:e38dca8bf7e8",
+      "citation": "Tex. Civ. Prac. & Rem. Code § 33.001",
+      "authority_type": "statute",
+      "text": "In an action to which this chapter applies, a claimant may not recover damages if his percentage of responsibility is greater than 50 percent.",
+      "text_sha256": "4dbc6dd73e344326317680380731ce375d920e4c996cca295353be00076a63ad",
+      "publisher_sha256": "884e293055350901b242356073665b86b875edc77ca8534369009acf90c7762f",
+      "retrieved_at": "2026-11-17T21:03:50.594134+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "965abeaf08d264b282ed0eec2d2d0a": {
+      "source_id": "US-TX:contract_formation:19f18af64b2d",
+      "authority_type": "statute",
+      "citation": "Tex. Bus. & Com. Code § 2.204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "a3afca2ca685f9c18edc631babf27140e321fe3460a73cffd97497a1dba2c1f3",
+      "retrieved_at": "2026-11-18T15:14:39.879882+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "a4f3861800c50a46bd369c16d756ee": {
+      "source_id": "US-TX:contract_damages:7f1b8d4eea0f",
+      "authority_type": "statute",
+      "citation": "Tex. Bus. & Com. Code § 2.714",
+      "text": "Where the buyer has accepted goods and given notification (Subsection (c) of Section 2.607) he may recover as damages for any non-conformity of tender the loss resulting in the ordinary course of events from the seller ’s breach as determined in any manner which is reasonable. (b)AAThe measure of damages for breach of warranty is the difference at the time and place of acceptance between the value of the goods accepted and the value they would have had if they had been as warranted, unless special circumstances show proximate damages of a different amount.",
+      "text_sha256": "3a627f8da7d5b9d9ae5f13dbc89860c064c5eef01671a8e5684ce426328656fd",
+      "publisher_sha256": "a3afca2ca685f9c18edc631babf27140e321fe3460a73cffd97497a1dba2c1f3",
+      "retrieved_at": "2026-11-18T15:14:39.879882+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "405569aabe8cdd47dda13a0d9c65de": {
+      "source_id": "US-TX:commencement:e60e51166a6e",
+      "authority_type": "court_rule",
+      "citation": "Tex. R. Civ. P. 22",
+      "text": "A civil suit in the district or county court shall be commenced by a petition filed in the office of the clerk.",
+      "text_sha256": "7ba58e8ebecad80290cbd23acbfc9d7fd396a3e6f5114da67ff618b49004f90c",
+      "publisher_sha256": "5428d16df065d6c5bd8b746576ee74b27ec67b36dd09ed03738a3c7ed370d3d3",
+      "retrieved_at": "2026-11-18T20:45:47.983754+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Texas District and County Courts"
+    },
+    "7dd878c6acfa2a902158a392304053": {
+      "source_id": "US-TX:service:c2d5cb3d22a9",
+      "authority_type": "court_rule",
+      "citation": "Tex. R. Civ. P. 103",
+      "text": "Process including citation and other notices, writs, orders, and other papers issued by the court may be served anywhere by (1) any sheriff or constable or other person authorized by law, (2) any person authorized by law or by written order of the court who is not less than eighteen years of age, or (3) any person certified by the Judicial Branch Certification Commission. Service by registered or certified mail and citation by publication must, if requested, be made by the clerk of the court in which the case is pending. But no person who is a party to or interested in the outcome of a suit may serve any process in that suit, and, unless otherwise authorized by a written court order, only a sheriff or constable may serve a citation in an action of forcible entry and detainer, a writ that requires the actual taking of possession of a person, property or thing, or process requiring that an enforcement action be physically enforced by the person delivery the process. The order authorizing a person to serve pr ocess may be made without written motion and no fee may be imposed for issuance of such order.",
+      "text_sha256": "6107f4a4ecd7f7e4dfe371c5ba3ce94792103207bed3280ced95884ac05b93f0",
+      "publisher_sha256": "5428d16df065d6c5bd8b746576ee74b27ec67b36dd09ed03738a3c7ed370d3d3",
+      "retrieved_at": "2026-11-18T20:45:47.983754+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Texas District and County Courts"
+    },
+    "fb09a78b05ed22242a6d1048b7d1f9": {
+      "source_id": "US-TX:negligence_elements:10ce201fa206",
+      "authority_type": "opinion",
+      "citation": "Lakeside Village Homeowners Association, Inc. v. Belanger, No. 08-15-00214-CV (Tex. App. June 14, 2017)",
+      "text": "The elements of negligence are the existence of a legal duty, breach of that duty, and damages proximately caused by the breach. Gharda USA, Inc. v. Control Solutions, Inc. , 464 S.W.3d 338, 352 (Tex. 2015); IHS Cedars Treatment Ctr. of DeSoto, Tex., Inc. v. Mason , 143 S.W.3d 794, 798 (Tex. 2004)(citation omitted). The components of proximate cause are cause in fact and foreseeability. Doe v. Boys Clubs of Greater Dallas, Inc. , 907 S.W.2d 472, 478 (Tex. 1995); Travis v. City of Mesquite , 830 S.W.2d 94, 98 (Tex. 1992). These elements cannot be established by mere conjecture, guess, or speculation. McClure v. Allied Stores of Tex., Inc., 608 S.W.2d 901, 903 (Tex. 1980); Farley v. MM Cattle Co. , 529 S.W.2d 751, 755 (Tex. 1975).",
+      "text_sha256": "d6f6d065f1fa9c967e35d97f4dec85df6587b2d98aff6b4fca874e79cceb03d6",
+      "publisher_sha256": "bb3afad1d274688672eadb49115eabef8e66234b79ee59b99479ca3e35a87f96",
+      "retrieved_at": "2026-11-20T15:27:32.089519+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2017-06-14",
+      "court": "Texas Eighth District Court of Appeals",
+      "decision_date": "2017-06-14",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a judgment on townhome owners’ claims against an association and property management companies."
+    },
+    "895e6ad079ed7fe423d8a9a6fecae1": {
+      "source_id": "US-TX:pi_limitations:a80c0ab9ca1d",
+      "authority_type": "opinion",
+      "citation": "Rodriguez v. Crowell, No. 08-07-00269-CV (Tex. App. Dec. 22, 2009)",
+      "text": "A plaintiff must commence a suit for personal injuries within two years after the day the cause of action accrues. See Tex.Civ.Prac.&Rem.Code Ann. § 16.003(a)(Vernon Supp. 2009). Because the accrual date is not defined by statute, the courts are charged with the responsibility of articulating the rules governing accrual. See, e.g., S.V. v. R.V., 933 S.W.2d 1, 4 (Tex. 1996); see also Developments in the Law: Statutes of Limitations, 63 Harv. L.Rev. 1177, 1185 (1950). In most cases, a cause of action accrues when a wrongful act causes an injury, regardless of when the plaintiff learns of that injury or whether all resulting damages have yet to occur. See S.V., 933 S.W.2d at 4. However, in those rare cases when the nature of the injury incurred is inherently undiscoverable and the evidence of injury is objectively verifiable,” the Texas Supreme Court applies a judicially crafted exception to the general rule of accrual, known as the discovery rule.",
+      "text_sha256": "6897807977d9fc0f156a7d7cf554e387b78409862fb8a7fe7f38d6e62e30874b",
+      "publisher_sha256": "3bb849217b25f716a2c55d1bddb08a9e3f2225e3641497ab8f0954ab71f62ab5",
+      "retrieved_at": "2026-11-20T15:43:52.036794+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2009-12-22",
+      "court": "Texas Eighth District Court of Appeals",
+      "decision_date": "2009-12-22",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of summary judgment on limitations in a negligence and premises liability action involving latent occupational disease."
+    },
+    "a8d9dbd5adc8d8d7666bab33d3b449": {
+      "source_id": "US-TX:consumerLaw:9c1f49160c75",
+      "authority_type": "opinion",
+      "citation": "Vuong v. Luk, No. 01-11-00178-CV (Tex. App. Dec. 19, 2013)",
+      "text": "The subsections provide that false, misleading, or deceptive acts or practices include: (2) causing confusion or misunderstanding as to the source, sponsorship, approval, or certification of goods or services; . . . (5) representing that goods or services have sponsorship, approval, characteristics, ingredients, uses, benefits, or quantities which they do not have or that a person has a sponsorship, approval, status, affiliation, or connection which he does not; . . . (12) representing that an agreement confers or involves rights, remedies, or obligations which it does not have or involve, or which are prohibited by law; . . . (20) representing that a guarantee or warranty confers or involves rights or remedies which it does not have or involve . . . ; [and] (24) failing to disclose information concerning goods or services which was known at the time of the transaction if such failure 17 to disclose such information was intended to induce the consumer into a transaction into which the consumer would not have entered had the information been disclosed. Id. § 17.46(b)(2), (5), (12), (20), and (24).",
+      "text_sha256": "3c668bc4d8b661d447d1c165fc8838abeb89031f93e5c4aacefe71bf20dee9ce",
+      "publisher_sha256": "bed17ce7abbd12a61edf95c54e3a70050d328115cb2a3586cd092ec934383ad2",
+      "retrieved_at": "2026-11-20T16:20:55.174282+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2013-12-19",
+      "court": "Texas First District Court of Appeals",
+      "decision_date": "2013-12-19",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a judgment in a dispute about professional services and a business transaction. The opinion quotes selected enumerated DTPA practices."
+    },
+    "2e595f67f4bfe6ed42c738d55e3181": {
+      "source_id": "US-TX:debtLaw:7117aeb254ac",
+      "authority_type": "statute",
+      "citation": "Tex. Fin. Code § 392.304",
+      "text": "(a) Except as otherwise provided by this section, in debt collection or obtaining information concerning a consumer, a debt collector may not use a fraudulent, deceptive, or misleading representation that employs the following practices: (1) using a name other than the: (A) true business or professional name or the true personal or legal name of the debt collector while engaged in debt collection; or (B) name appearing on the face of the credit card while engaged in the collection of a credit card debt; (2) failing to maintain a list of all business or professional names known to be used or formerly used by persons collecting consumer debts or attempting to collect consumer debts for the debt collector; (3) representing falsely that the debt collector has information or something of value for the consumer in order to solicit or discover information about the consumer; (4) failing to disclose clearly in any communication with the debtor the name of the person to whom the debt has been assigned or is owed when making a demand for money; (5) in the case of a third-party debt collector, failing to disclose, except in a formal pleading made in connection with a legal action: (A) that the communication is an attempt to collect a debt and that any information obtained will be used for that purpose, if the communication is the initial written or oral communication between the third-party debt collector and the debtor; or (B) that the communication is from a debt collector, if the communication is a subsequent written or oral communication between the third-party debt collector and the debtor; (6) using a written communication that fails to indicate clearly the name of the debt collector and the debt collector's street address or post office box and telephone number if the written notice refers to a delinquent consumer debt; (7) using a written communication that demands a response to a place other than the debt collector's or creditor's street address or post office box; (8) misrepresenting the character, extent, or amount of a consumer debt, or misrepresenting the consumer debt's status in a judicial or governmental proceeding; (9) representing falsely that a debt collector is vouched for, bonded by, or affiliated with, or is an instrumentality, agent, or official of, this state or an agency of federal, state, or local government; (10) using, distributing, or selling a written communication that simulates or is represented falsely to be a document authorized, issued, or approved by a court, an official, a governmental agency, or any other governmental authority or that creates a false impression about the communication's source, authorization, or approval; (11) using a seal, insignia, or design that simulates that of a governmental agency; (12) representing that a consumer debt may be increased by the addition of attorney's fees, investigation fees, service fees, or other charges if a written contract or statute does not authorize the additional fees or charges; (13) representing that a consumer debt will definitely be increased by the addition of attorney's fees, investigation fees, service fees, or other charges if the award of the fees or charges is subject to judicial discretion; (14) representing falsely the status or nature of the services rendered by the debt collector or the debt collector's business; (15) using a written communication that violates the United States postal laws and regulations; (16) using a communication that purports to be from an attorney or law firm if it is not; (17) representing that a consumer debt is being collected by an attorney if it is not; (18) representing that a consumer debt is being collected by an independent, bona fide organization engaged in the business of collecting past due accounts when the debt is being collected by a subterfuge organization under the control and direction of the person who is owed the debt; or (19) using any other false representation or deceptive means to collect a debt or obtain information concerning a consumer. (b) Subsection (a)(4) does not apply to a person servicing or collecting real property first lien mortgage loans or credit card debts. (c) Subsection (a)(6) does not require a debt collector to disclose the names and addresses of employees of the debt collector. (d) Subsection (a)(7) does not require a response to the address of an employee of a debt collector. (e) Subsection (a)(18) does not prohibit a creditor from owning or operating a bona fide debt collection agency.",
+      "text_sha256": "c8feb7cf8ce62a9b5580be3d5661d1b670990baf012967ef75899115f5bb15dc",
+      "publisher_sha256": "8a8abe29a707675d776874238f04944e84564d5032d54bb7f881d2af6294cd53",
+      "retrieved_at": "2026-11-20T17:27:34.392272+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2004-01-11"
+    },
+    "6273aec6d9f126d0286ca140e5441c": {
+      "source_id": "US-TX:debt_limitations:e83a62c91cd7",
+      "authority_type": "statute",
+      "citation": "Tex. Fin. Code § 392.307(a)–(d)",
+      "text": "(a) In this section: (1) \"Charged-off debt\" means a consumer debt that a creditor has determined to be a loss or expense to the creditor instead of an asset. (2) \"Debt buyer\" means a person who purchases or otherwise acquires a consumer debt from a creditor or other subsequent owner of the consumer debt, regardless of whether the person collects the consumer debt, hires a third party to collect the consumer debt, or hires an attorney to pursue collection litigation in connection with the consumer debt. The term does not include: (A) a person who acquires in-default or charged-off debt that is incidental to the purchase of a portfolio that predominantly consists of consumer debt that has not been charged off; or (B) a check services company that acquires the right to collect on a paper or electronic negotiable instrument, including an Automated Clearing House (ACH) authorization to debit an account that has not been processed. (b) Unless otherwise expressly provided, this section prevails to the extent of any conflict between this section and any other law of this state. (c) A debt buyer may not, directly or indirectly, commence an action against or initiate arbitration with a consumer to collect a consumer debt after the expiration of the applicable limitations period provided by Section 16.004, Civil Practice and Remedies Code, or Section 3.118, Business & Commerce Code. (d) If an action to collect a consumer debt is barred under Subsection (c), the cause of action is not revived by a payment of the consumer debt, an oral or written reaffirmation of the consumer debt, or any other activity on the consumer debt.",
+      "text_sha256": "27530a60332ca00606faa8806c97d6052944b0ecdefa3deccb33ef433eccce9f",
+      "publisher_sha256": "8a8abe29a707675d776874238f04944e84564d5032d54bb7f881d2af6294cd53",
+      "retrieved_at": "2026-11-20T17:27:34.392272+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2019-09-01"
+    },
+    "b2381fa0fca15b225aea81d884a25c": {
+      "source_id": "US-TX:deposit:31c070aa56bb",
+      "authority_type": "statute",
+      "citation": "Tex. Prop. Code § 92.103",
+      "text": "(a) Except as provided by Section 92.107, the landlord shall refund a security deposit to the tenant on or before the 30th day after the date the tenant surrenders the premises. (b) A requirement that a tenant give advance notice of surrender as a condition for refunding the security deposit is effective only if the requirement is underlined or is printed in conspicuous bold print in the lease. (c) The tenant's claim to the security deposit takes priority over the claim of any creditor of the landlord, including a trustee in bankruptcy.",
+      "text_sha256": "efd6b737108496a7df8f53ddfa9b840d372d146f85e1e681e0145b22e2ca875b",
+      "publisher_sha256": "e4269dac3944639774c143e0d47b65b5bc12f5f3cb02a134f9abe67e05732df7",
+      "retrieved_at": "2026-11-20T17:27:34.643327+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1996-01-01"
+    },
+    "f4bacdb48d86f146ec947cbb9dff0a": {
+      "source_id": "US-TX:deposit:8c2a298c8eae",
+      "authority_type": "statute",
+      "citation": "Tex. Prop. Code § 92.104",
+      "text": "(a) Before returning a security deposit, the landlord may deduct from the deposit damages and charges for which the tenant is legally liable under the lease or as a result of breaching the lease. (b) The landlord may not retain any portion of a security deposit to cover normal wear and tear. (c) If the landlord retains all or part of a security deposit under this section, the landlord shall give to the tenant the balance of the security deposit, if any, together with a written description and itemized list of all deductions. The landlord is not required to give the tenant a description and itemized list of deductions if: (1) the tenant owes rent when he surrenders possession of the premises; and (2) there is no controversy concerning the amount of rent owed.",
+      "text_sha256": "2eb88632eb0c7b5150b7d67907f9752f531732264cbc7db155c304de77d10962",
+      "publisher_sha256": "e4269dac3944639774c143e0d47b65b5bc12f5f3cb02a134f9abe67e05732df7",
+      "retrieved_at": "2026-11-20T17:27:34.643327+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1984-01-01"
+    },
+    "5407946dc360a5416cea911715b641": {
+      "source_id": "US-TX:deposit:ec1f50d6b53c",
+      "authority_type": "statute",
+      "citation": "Tex. Prop. Code § 92.107",
+      "text": "(a) The landlord is not obligated to return a tenant's security deposit or give the tenant a written description of damages and charges until the tenant gives the landlord a written statement of the tenant's forwarding address for the purpose of refunding the security deposit. (b) The tenant does not forfeit the right to a refund of the security deposit or the right to receive a description of damages and charges merely for failing to give a forwarding address to the landlord.",
+      "text_sha256": "c43ccfbe81908427e5e0bd8f14e217e66ec4a60424eb7e40f8b08c930388aec0",
+      "publisher_sha256": "e4269dac3944639774c143e0d47b65b5bc12f5f3cb02a134f9abe67e05732df7",
+      "retrieved_at": "2026-11-20T17:27:34.643327+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1984-01-01"
+    },
+    "3e05ab9dc42d711a2cbf13cf077b98": {
+      "source_id": "US-TX:wageLaw:796401151002",
+      "authority_type": "statute",
+      "citation": "Tex. Lab. Code § 61.014",
+      "text": "(a) An employer shall pay in full an employee who is discharged from employment not later than the sixth day after the date the employee is discharged. (b) An employer shall pay in full an employee who leaves employment other than by discharge not later than the next regularly scheduled payday.",
+      "text_sha256": "f8f094cb6f3aabedde77b04f51d733e3a2d924c510d5da36dc8618330b6f0784",
+      "publisher_sha256": "c0ff9a21bb18ac0113e15db772e5f0abb6fa3f147c84594e0435e741f66d3ff6",
+      "retrieved_at": "2026-11-20T17:27:34.689028+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1993-09-01"
+    },
+    "9728efb5c1301bd9e10e8ff9cf109a": {
+      "source_id": "US-TX:wage_enforcement:3bc921f4ec00",
+      "authority_type": "statute",
+      "citation": "Tex. Lab. Code § 61.051(a)–(c)",
+      "text": "(a) An employee who is not paid wages as prescribed by this chapter may file a wage claim with the commission in accordance with this subchapter. (b) A wage claim must be filed in a manner and on a form prescribed by the commission and must be verified by the employee. (c) A wage claim must be filed not later than the 180th day after the date the wages claimed became due for payment. The 180-day deadline is a matter of jurisdiction.",
+      "text_sha256": "f8fcc7a40820d050342744a208c3d8515819f356798565a91fcbda8237360c0a",
+      "publisher_sha256": "c0ff9a21bb18ac0113e15db772e5f0abb6fa3f147c84594e0435e741f66d3ff6",
+      "retrieved_at": "2026-11-20T17:27:34.689028+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2017-09-01"
+    },
+    "21b67f46e1057a07877b1788e01651": {
+      "source_id": "US-TX:response:bb62ca896e0d",
+      "authority_type": "court_rule",
+      "citation": "Tex. R. Civ. P. 99(b)",
+      "text": "b. Form. The citation shall (1) be styled \"The State of Texas,\" (2) be signed by the clerk under seal of court, (3) contain name and location of the court, (4) show date of filing of the petition, (5) show date of issuance of citation, (6) show file number, (7) show names of parties, (8) be directed to the defendant, (9) show the name and address of attorney for plaintiff, otherwise the address of plaintiff, (10) contain the time within which these rules require the defendant to file a written answer with the clerk who issued citation, (11) contain address of the clerk, (12) notify the defendant that in case of failure of defendant to file and answer, judgment by default may be rendered for the relief demanded in the petition, and (13) notify the defendant that the defendant may be required to make initial disclosures. The citation shall direct the defendant to file a written answer to the plaintiff's petition on or before 10:00 a.m. on the Monday next after the expiration of twenty days after the date of service thereof. The requirement of subsections 10, 12, and 13 of this section shall be in the form set forth in section c of this rule.",
+      "text_sha256": "d3c17736d0043a6b0bd7c32a192afaf2fbe3fc5693923f523ad9b77ea4fec6c5",
+      "publisher_sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a",
+      "retrieved_at": "2026-11-20T17:37:34.328557+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Texas district and county courts",
+      "edition": "Texas Supreme Court civil rules compilation listed as last amended October 1, 2026"
+    },
+    "dde49ae8f8e4314f93acee47d5792a": {
+      "source_id": "US-TX:service:8567b3adbc8f",
+      "authority_type": "court_rule",
+      "citation": "Tex. R. Civ. P. 106(a)",
+      "text": "(a) Unless the citation or court order otherwise directs, the citation must be served by: (1) delivering to the defendant, in person, a copy of the citation, showing the delivery date, and of the petition; or (2) mailing to the defendant by registered or certified mail, return receipt requested, a copy of the citation and of the petition.",
+      "text_sha256": "7962ba3c89550d50cb5de9e1459ba0a8247a6a189b38e9013842bfe6207f07fc",
+      "publisher_sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a",
+      "retrieved_at": "2026-11-20T17:37:34.328557+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Texas district and county courts",
+      "edition": "Texas Supreme Court civil rules compilation listed as last amended October 1, 2026"
+    },
+    "f80732ac59c59e8ede0f8be8cc2e6c": {
+      "source_id": "US-TX:small_claims:e752d09b1cd1",
+      "authority_type": "court_rule",
+      "citation": "Tex. R. Civ. P. 500.1(a)",
+      "text": "(a) Small Claims Case. A small claims case is a lawsuit brought for the recovery of money damages, civil penalties, personal property, or other relief allowed by law. The claim can be for no more than $20,000, excluding statutory interest and court costs but including attorney fees, if any. Small claims cases are governed by Rules 500-507 of Part V of the Rules of Civil Procedure.",
+      "text_sha256": "c4cd44367897fb92d340fe8a63277c619480b658295c214d41a906f124e43261",
+      "publisher_sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a",
+      "retrieved_at": "2026-11-20T17:37:34.328557+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Texas Justice Court",
+      "edition": "Texas Supreme Court civil rules compilation listed as last amended October 1, 2026"
+    },
+    "b2e52ece6814cee778ee7e6e664beb": {
+      "source_id": "US-TX:debt_forum:30391e7fe131",
+      "authority_type": "court_rule",
+      "citation": "Tex. R. Civ. P. 500.1(b)",
+      "text": "(b) Debt Claim Case. A debt claim case is a lawsuit brought to recover a debt by an assignee of a claim, a debt collector or collection agency, a financial institution, or a person or entity primarily engaged in the business of lending money at interest. The claim can be for no more than $20,000, excluding statutory interest and court costs but including attorney fees, if any. Debt claim cases in justice court are governed by Rules 500-507 and 508 of Part V of the Rules of Civil Procedure. To the extent of any conflict between Rule 508 and the rest of Part V, Rule 508 applies.",
+      "text_sha256": "33a661ce11aa29036d620dcc020043aa7cabecfaff015e8ad0dfcb188f124edd",
+      "publisher_sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a",
+      "retrieved_at": "2026-11-20T17:37:34.328557+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Texas Justice Court",
+      "edition": "Texas Supreme Court civil rules compilation listed as last amended October 1, 2026"
+    },
+    "d0e9fe66f8304b2d02e2dc4dd7cdd3": {
+      "source_id": "US-TX:habitability:2dd0f19e9488",
+      "authority_type": "court_rule",
+      "citation": "Tex. R. Civ. P. 500.1(c)",
+      "text": "(c) Repair and Remedy Case. A repair and remedy case is a lawsuit filed by a residential tenant under Chapter 92, Subchapter B of the Texas Property Code to enforce the landlord’s duty to repair or remedy a condition materially affecting the physical health or safety of an ordinary tenant. The relief sought can be for no more than $20,000, excluding statutory interest and court costs but including attorney fees, if any. Repair and remedy cases are governed by Rules 500-507 and 509 of Part V of the Rules of Civil Procedure. To the extent of any conflict between Rule 509 and the rest of Part V, Rule 509 applies.",
+      "text_sha256": "58341fbb7827dbe77fa561d070a82cf3c723362cee08646136eeaed31986d319",
+      "publisher_sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a",
+      "retrieved_at": "2026-11-20T17:37:34.328557+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Texas Justice Court",
+      "edition": "Texas Supreme Court civil rules compilation listed as last amended October 1, 2026"
+    },
+    "ba8bcf01205504e5f95bfa75008123": {
+      "source_id": "US-TX:justice_court_response:5503f5fa0ef6",
+      "authority_type": "court_rule",
+      "citation": "Tex. R. Civ. P. 502.5(d)–(e)",
+      "text": "(d) Due Date. Unless the defendant is served by publication, the defendant’s answer is due by the end of the 14th day after the day the defendant was served with the citation and petition, but (1) if the 14th day is a Saturday, Sunday, or legal holiday, the answer is due on the next day that is not a Saturday, Sunday, or legal holiday; and (2) if the 14th day falls on a day during which the court is closed before 5:00 p.m., the answer is due on the court’s next business day. (e) Due Date When Defendant Served by Publication. If a defendant is served by publication, the defendant’s answer is due by the end of the 42nd day after the day the citation was issued, but (1) if the 42nd day is a Saturday, Sunday, or legal holiday, the answer is due on the next day that is not a Saturday, Sunday, or legal holiday; and (2) if the 42nd day falls on a day during which the court is closed before 5:00 p.m., the answer is due on the court’s next business day.",
+      "text_sha256": "983e63c7ac5c8eb092108863a40a642bf5f45e84aab92f5385bbe30c4004e5c6",
+      "publisher_sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a",
+      "retrieved_at": "2026-11-20T17:37:34.328557+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Texas Justice Court",
+      "edition": "Texas Supreme Court civil rules compilation listed as last amended October 1, 2026"
+    },
+    "9916c68ef3de92c4e89662e5f707df": {
+      "source_id": "US-TX:general_contract_limitations:86357fb12e4b",
+      "authority_type": "statute",
+      "citation": "Tex. Civ. Prac. & Rem. Code § 16.051",
+      "text": "Every action for which there is no express limitations period, except an action for the recovery of real property, must be brought not later than four years after the day the cause of action accrues.",
+      "text_sha256": "670e3d7558650e9691e85ac4280f9bf8724340e08be29c81f13c141192f4f939",
+      "publisher_sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce",
+      "retrieved_at": "2026-11-21T17:43:02.519206+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 25, Tex. Civ. Prac. & Rem. Code § 16.051, statutory text"
+    },
+    "323a0227d00df5842af0c8b9ffae5f": {
+      "source_id": "US-TX:debt_limitations:72ef03deab2f",
+      "authority_type": "statute",
+      "citation": "Tex. Civ. Prac. & Rem. Code § 16.004(a)",
+      "text": "(a) A person must bring suit on the following actions not later than four years after the day the cause of action accrues: (1) specific performance of a contract for the conveyance of real property; (2) penalty or damages on the penal clause of a bond to convey real property; (3) debt; (4) fraud; or (5) breach of fiduciary duty.",
+      "text_sha256": "fae49836faf5bbb2cc5fefd70081fab310bc7d2bfb5139828410e1ecb26760b8",
+      "publisher_sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce",
+      "retrieved_at": "2026-11-21T17:43:02.519206+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 2–3, Tex. Civ. Prac. & Rem. Code § 16.004(a), statutory text"
+    },
+    "27658d3423364d728e9c8e2b0ec2c6": {
+      "source_id": "US-TX:wrongful_death_limitations:0293f5ef0d49",
+      "authority_type": "statute",
+      "citation": "Tex. Civ. Prac. & Rem. Code § 16.003(b)",
+      "text": "(b) A person must bring suit not later than two years after the day the cause of action accrues in an action for injury resulting in death. The cause of action accrues on the death of the injured person.",
+      "text_sha256": "5e4ebf9bc92e6b765fa6262b6326cd870167574c04e1c0d1d91f9fdc296477df",
+      "publisher_sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce",
+      "retrieved_at": "2026-11-21T17:43:02.519206+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 2, Tex. Civ. Prac. & Rem. Code § 16.003(b), statutory text"
+    },
+    "b3b47f9c782a0340796d5463e8091c": {
+      "source_id": "US-TX:service_time_limit:cb8091261219",
+      "authority_type": "opinion",
+      "citation": "Farris v. Evans, No. 01-20-00165-CV, slip op. at 5–6 (Tex. App. July 14, 2020)",
+      "text": "If a plaintiff files his petition within the limitations period, but obtains service on the defendant outside of the limitations period, such service is valid only if the plaintiff exercised “diligence” in procuring service. Ashley v. Hawkins, 293 S.W.3d 175, 179 (Tex. 2009); see also Proulx v. Wells, 235 S.W.3d 213, 215 (Tex. 2007) (holding that “a timely filed suit will not interrupt the running of limitations unless the plaintiff exercises due diligence in the issuance and service of citation”). If a plaintiff diligently effects service after the expiration of the limitations period, the date of service relates back to the date of filing. Proulx, 235 S.W.3d at 215. If a defendant affirmatively pleads the defense of limitations and shows that service occurred after the limitations deadline, the burden shifts to the plaintiff to prove diligence. Ashley, 293 S.W.3d at 179; Proulx, 235 S.W.3d at 216. The plaintiff then must present evidence regarding the efforts made to serve the defendant and “explain every lapse in effort or period of delay.” Proulx, 235 S.W.3d at 216. “[T]he relevant inquiry is whether the plaintiff acted as an ordinarily prudent person would have acted under the same or similar circumstances and was diligent up until the time the defendant was served.” Id. The question of the plaintiff’s diligence in obtaining service is generally one of fact to be determined by examining the time it took to secure citation, service, or both, and the type of effort or lack of effort the plaintiff expended in procuring service. Id. However, a plaintiff’s explanation of his efforts to obtain service may demonstrate a lack of diligence as a matter of law when one or more lapses between service efforts are unexplained or patently unreasonable. Id.",
+      "text_sha256": "7f1b81761c4c5acd488974e58d5718e9d1b0b82afa4a786de4e4febcb5466f2a",
+      "publisher_sha256": "37d9bfc7d1d7b8f2fcffd53219da8ff4b4293e89e205c352b484b0cdce814a22",
+      "retrieved_at": "2026-11-21T22:34:35.934965+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Memorandum opinion issued July 14, 2020",
+      "court": "Texas First Court of Appeals",
+      "publisher_member": "Texas First Court of Appeals PDF pp. 5-6, Part B; relation back and diligence after limitations",
+      "decision_date": "2020-07-14",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in an automobile personal-injury case; the court affirmed on limitations after examining unexplained gaps in service efforts."
+    },
+    "22c5866825e84b706781031df1e55c": {
+      "source_id": "US-TX:eviction:7ecc7affb4a8",
+      "authority_type": "statute",
+      "citation": "Tex. Prop. Code § 24.004",
+      "text": "(a) Except as provided by Subsection (b), a justice court in the precinct in which the real property is located has jurisdiction in an eviction suit. Eviction suits include forcible entry and detainer and forcible detainer suits. A justice court has jurisdiction to issue a writ of possession under this chapter. (b) A justice court does not have jurisdiction in a forcible entry and detainer or forcible detainer suit and shall dismiss the suit if the defendant files a sworn statement alleging the suit is based on a deed executed in violation of Chapter 21A, Business & Commerce Code. (c) A justice court in which a petition is filed under Section 24.00505 must adjudicate the right to actual possession of the premises. The justice court may not adjudicate title to the premises. Counterclaims and the joinder of suits against third parties are not permitted in eviction suits. This subsection does not preclude a claim that may not be asserted under this subsection from being brought in a separate suit in a court of proper jurisdiction.",
+      "text_sha256": "c43547bc697fb824e1ed4f808c37f7aa0c1592d9f1dc49998e3f933477116052",
+      "publisher_sha256": "15cf4a5c017639f3e43eb6dd5b51e4646edda26558e35058cf509f016c3af056",
+      "retrieved_at": "2026-11-22T03:08:04.413193+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Texas Legislature Property Code; 2025 SB 38 § 17 applies the changes to petitions filed on or after January 1, 2026 and preserves prior law for earlier petitions",
+      "effective_from": "2026-01-01"
+    },
+    "3d9c9fca1480db3bc1d43a9ad28372": {
+      "source_id": "US-TX:habitability:30f76be4f68a",
+      "authority_type": "statute",
+      "citation": "Tex. Prop. Code § 92.052",
+      "text": "(a) A landlord shall make a diligent effort to repair or remedy a condition if: (1) the tenant specifies the condition in a notice to the person to whom or to the place where rent is normally paid; (2) the tenant is not delinquent in the payment of rent at the time notice is given; and (3) the condition: (A) materially affects the physical health or safety of an ordinary tenant; or (B) arises from the landlord’s failure to provide and maintain in good operating condition a device to supply hot water of a minimum temperature of 120 degrees Fahrenheit. (b) Unless the condition was caused by normal wear and tear, the landlord does not have a duty during the lease term or a renewal or extension to repair or remedy a condition caused by: (1) the tenant; (2) a lawful occupant in the tenant’s dwelling; (3) a member of the tenant’s family; or (4) a guest or invitee of the tenant. (c) This subchapter does not require the landlord: (1) to furnish utilities from a utility company if as a practical matter the utility lines of the company are not reasonably available; or (2) to furnish security guards. (d) The tenant’s notice under Subsection (a) must be in writing only if the tenant’s lease is in writing and requires written notice.",
+      "text_sha256": "686b7d5d7614616bfebaf9f94f8d4ea8f1712c2adc7ab4aec05c088c2c5ac662",
+      "publisher_sha256": "939fc9cc605fae555ab235a2d1a0e6e6125d6ae19c442afdc2922f10666d504b",
+      "retrieved_at": "2026-11-22T03:08:04.437051+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Texas Legislature Property Code; repair and notice conditions and tenant-caused exceptions"
+    },
+    "4a16ef478f31d6928db4011bfae441": {
+      "source_id": "US-TX:debt_forum:8778c627a77c",
+      "authority_type": "court_rule",
+      "citation": "Tex. R. Civ. P. 500.3(b)",
+      "text": "A debt claim case is a lawsuit brought to recover a debt by an assignee of a claim, a debt collector or collection agency, a financial institution, or a person or entity primarily engaged in the business of lending money at interest. The claim can be for no more than $20,000, excluding statutory interest and court costs but including attorney fees, if any. Debt claim cases in justice court are governed by Rules 500-507 and 508 of Part V of the Rules of Civil Procedure. To the extent of any conflict between Rule 508 and the rest of Part V, Rule 508 applies.",
+      "text_sha256": "21ea08375b1966561fca9d7c49a2dafd7c1a1d4e02d8ea0b1cea7ae5d8f2d06d",
+      "publisher_sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a",
+      "retrieved_at": "2026-11-20T18:03:09.364611+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Texas Justice Court",
+      "publisher_member": "Part V, Texas justice-court debt classification; Rule 508 controls conflicts with the otherwise applicable Rules 500–507."
+    },
+    "9bac9622f10f42ec4b46759760cae0": {
+      "source_id": "US-TX:debt_response:8a8dc5875c5e",
+      "authority_type": "court_rule",
+      "citation": "Tex. R. Civ. P. 502.5(d)–(e) (Part V debt claims via Rule 500.3(b))",
+      "text": "(d) Due Date. Unless the defendant is served by publication, the defendant’s answer is due by the end of the 14th day after the day the defendant was served with the citation and petition, but (1) if the 14th day is a Saturday, Sunday, or legal holiday, the answer is due on the next day that is not a Saturday, Sunday, or legal holiday; and (2) if the 14th day falls on a day during which the court is closed before 5:00 p.m., the answer is due on the court’s next business day. (e) Due Date When Defendant Served by Publication. If a defendant is served by publication, the defendant’s answer is due by the end of the 42nd day after the day the citation was issued, but (1) if the 42nd day is a Saturday, Sunday, or legal holiday, the answer is due on the next day that is not a Saturday, Sunday, or legal holiday; and (2) if the 42nd day falls on a day during which the court is closed before 5:00 p.m., the answer is due on the court’s next business day.",
+      "text_sha256": "983e63c7ac5c8eb092108863a40a642bf5f45e84aab92f5385bbe30c4004e5c6",
+      "publisher_sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a",
+      "retrieved_at": "2026-11-20T18:03:09.364611+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Texas Justice Court",
+      "publisher_member": "Justice-court timing applied to debt cases by Rule 500.3(b). Publication runs from citation issuance; the otherwise applicable branch runs from service. Both have court-closure provisions."
+    },
+    "ac6a3017817bb5e1966aabcebe6902": {
+      "source_id": "US-TX:debt_pleading:fd2885196973",
+      "authority_type": "court_rule",
+      "citation": "Tex. R. Civ. P. 508.2",
+      "text": "RULE 508.2. PETITION (a) Contents. In addition to the information required by Rule 502.2, a petition filed in a lawsuit governed by this rule must contain the following information: (1) Credit Accounts. In a claim based upon a credit card, revolving credit, or open account, the petition must state: (A) the account name or credit card name; (B) the account number (which may be masked); (C) the date of issue or origination of the account, if known; (D) the date of charge-off or breach of the account, if known; (E) the amount owed as of a date certain; and (F) whether the plaintiff seeks ongoing interest. (2) Personal and Business Loans. In a claim based upon a promissory note or other promise to pay a specific amount as of a date certain, the petition must state: (A) the date and amount of the original loan; (B) whether the repayment of the debt was accelerated, if known; (C) the date final payment was due; (D) the amount due as of the final payment date; (E) the amount owed as of a date certain; and (F) whether plaintiff seeks ongoing interest. (3) Ongoing Interest. If a plaintiff seeks ongoing interest, the petition must state: (A) the effective interest rate claimed; (B) whether the interest rate is based upon contract or statute; and (C) the dollar amount of interest claimed as of a date certain. (4) Assigned Debt. If the debt that is the subject of the claim has been assigned or transferred, the petition must state: (A) that the debt claim has been transferred or assigned; (B) the date of the transfer or assignment; (C) the name of any prior holders of the debt; and (D) the name or a description of the original creditor.",
+      "text_sha256": "d355941ced468c3803c9da04262e41dd3b035565b9e3a109ece86bf4342e0fff",
+      "publisher_sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a",
+      "retrieved_at": "2026-11-20T18:03:09.364611+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Texas Justice Court",
+      "publisher_member": "Justice-court debt petitions for credit accounts, promissory notes, other credit agreements, and assigned debt."
+    },
+    "470e70d1f134f01e073bae2d543752": {
+      "source_id": "US-TX:debt_judgment_proof:4f424c522025",
+      "authority_type": "court_rule",
+      "citation": "Tex. R. Civ. P. 508.3(a), (b)(1)–(3)",
+      "text": "RULE 508.3. DEFAULT JUDGMENT (a) Generally. If the defendant does not file an answer to a claim by the answer date or otherwise appear in the case, the judge must promptly render a default judgment upon the plaintiff’s proof of the amount of damages. A default judgment must comply with Rule 505.1. When a default judgment is signed, the clerk must comply with Rule 503.1(d) and immediately mail written notice of the judgment to the defendant at the address provided by the plaintiff. (b) Proof of the Amount of Damages. (1) Evidence Must Be Served or Submitted. Evidence of plaintiff ’s damages must either be attached to the petition and served on the defendant or submitted to the court after defendant’s failure to answer by the answer date. (2) Form of Evidence. Evidence of plaintiff ’s damages may be offered in a sworn statement or in live testimony. The evidence offered may include documentary evidence. (3) Establishment of the Amount of Damages. The amount of damages is established by evidence: (A) that the account or loan was issued to the defendant and the defendant is obligated to pay it; (B) that the account was closed or the defendant breached the terms of the account or loan agreement; (C) of the amount due on the account or loan as of a date certain after all payment credits and offsets have been applied; and (D) that the plaintiff owns the account or loan and, if applicable, how the plaintiff acquired the account or loan.",
+      "text_sha256": "78164d2feb704943047054d6a957f4b7c02115668eda43f1b1bdf3a8df5e630b",
+      "publisher_sha256": "bd9d874a40e3fdd9a25a675daad31de2fa3db30acea44d80d3e3362c9d4e178a",
+      "retrieved_at": "2026-11-20T18:03:09.364611+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Texas Justice Court",
+      "publisher_member": "Justice-court debt default, proof submission and proof of the amount of damages; excludes the separately enumerated sworn-document conditions."
+    },
+    "54d546dfb252ec367b64634091f41f": {
+      "source_id": "US-TX:eviction:74ec6165b263",
+      "authority_type": "statute",
+      "citation": "Tex. S.B. 38, 89th Leg., R.S., ch. 960, §§ 17–18 (2025)",
+      "text": "SECTION 17. The changes in law made by this Act apply only to an eviction suit in which the petition is filed on or after January 1, 2026. An eviction suit in which the petition is filed before January 1, 2026, is governed by the law as it existed immediately before January 1, 2026, and that law is continued in effect for that purpose. SECTION 18. (a) Except as provided by Subsection (b) of this section, this Act takes effect January 1, 2026. (b) Section 16 of this Act takes effect September 1, 2025.",
+      "text_sha256": "accfa41f81db49117b1b2fe9867a6a28ff18ab026cfcd81821c03186604e6d0d",
+      "publisher_sha256": "75d3b367a1853848b2f9622d5dd8edddbc9470bc65c0ce9e4e73d6277e76681a",
+      "retrieved_at": "2026-11-22T03:18:27.728115+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Texas 89th Legislature, Regular Session, enrolled S.B. 38",
+      "publisher_member": "Enrolled act, transition for eviction petitions filed before or on January 1, 2026, with a separate Section 16 effective date.",
+      "effective_from": "2026-01-01"
+    },
+    "94b1fb62699c483a89e0a804e8768a": {
+      "source_id": "US-TX:contract_breach:7a98287a118b",
+      "authority_type": "opinion",
+      "citation": "Messer v. Hereford Logistics & Commodity Co., No. 07-20-00007-CV (Tex. App.—Amarillo June 19, 2020)",
+      "text": "The four essential elements of a breach-of-contract cause of action are as follows: (1) existence of a valid contract between the parties; (2) the plaintiff’s performance or tender of performance; (3) the defendant’s breach; and (4) the plaintiff’s damage as a result of that breach. Esty v. Beal Bank S.S.B., 298 S.W.3d 280, 299 (Tex. App.—Dallas 2009, no pet.); Valero Mktg. & Supply Co. v. Kalama Int’l, L.L.C., 51 S.W.3d 345, 351 (Tex. App. —Houston [1st Dist.] 2001, no pet.); Aquila Sw. Pipeline, Inc. v. Harmony Exploration, Inc., 48 S.W.3d 225, 235 (Tex. App.—San Antonio 2001, pet. denied).",
+      "text_sha256": "528b7744905edcdd69ec4e59caccec60619e49a9c80038f77d0f5187f608be9f",
+      "publisher_sha256": "c38f00ea5a1167259f434c85ba347a006806cdd37fb32ddefe2e35257df4173a",
+      "retrieved_at": "2026-11-22T03:33:29.897966+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "June 19, 2020 appellate memorandum opinion",
+      "court": "Texas Court of Appeals, Seventh District",
+      "publisher_member": "Seventh District civil memorandum opinion, breach elements in an appeal from no-evidence summary judgment.",
+      "decision_date": "2020-06-19",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from no-evidence summary judgment for defendants on the contract claim; affirmed."
+    },
+    "766c9060f31cbf0d2e72dbfbd539b9": {
+      "source_id": "US-TX:general_contract_damages:dadcbe32fb19",
+      "authority_type": "opinion",
+      "citation": "Signature Indus. Servs., LLC v. Int’l Paper Co., 638 S.W.3d 179, 183 (Tex. 2022)",
+      "text": "Texas law requires that consequential damages be both (1) foreseeable at the time of contracting, and (2) calculable with reasonable certainty. Phillips v. Carlton Energy Grp., LLC , 475 S.W.3d 265, 279 (Tex. 2015); Stuart v. Bayless, 964 S.W.2d 920, 921 (Tex. 1998). Applying these bedrock principles of contract law, we conclude that neither the jury’s award of $56.3 million nor the court of appeals’ reduced allowance of $12.4 million can stand. A catastrophic decline in the plaintiff company’s overall market value was not, at the time of contracting, a consequence of breach foreseeable to the defendant. Nor was a decline in the accounting measure of the plaintiff company’s “book value” a reasonably certain way to measure its damages. Because legally insufficient evidence supported the award of consequential damages and the plaintiff advances no valid theory of consequential damages in this Court, we render judgment against the plaintiff on that point.",
+      "text_sha256": "2f616c1b58096ba876d8e21fdc87e7cd13413ee7967cd5b93502526786d24074",
+      "publisher_sha256": "f55c1543e30f91fa238637a7d3baf7bfd7229f6d872449789fed4384f09676a9",
+      "retrieved_at": "2026-11-22T03:34:45.876814+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "January 14, 2022 Texas Supreme Court opinion",
+      "court": "Supreme Court of Texas",
+      "publisher_member": "Supreme Court opinion pages 2–3, foreseeability at formation and reasonable certainty for consequential damages.",
+      "decision_date": "2022-01-14",
+      "opinion_role": "majority",
+      "procedural_posture": "Petition for review after a contract damages jury verdict; reversed in part, affirmed in part, rendered in part and remanded."
+    },
+    "d7e024080cfb9f04c52cbb0bd68bdc": {
+      "source_id": "US-TX:labor_agency:9cba69278e99",
+      "authority_type": "statute",
+      "citation": "Tex. Lab. Code § 61.051(a)–(e)",
+      "text": "(a) An employee who is not paid wages as prescribed by this chapter may file a wage claim with the commission in accordance with this subchapter. (b) A wage claim must be filed in a manner and on a form prescribed by the commission and must be verified by the employee. (c) A wage claim must be filed not later than the 180th day after the date the wages claimed became due for payment. The 180-day deadline is a matter of jurisdiction. (d) The employee may file the wage claim: (1) in person at an office of the commission; (2) by mailing the claim to an address designated by the commission; (3) by faxing the claim to a fax number designated by the commission; (4) electronically in a manner designated by the commission by rule; or (5) by any other means adopted by the commission by rule. (e) The commission shall ensure that employees are notified of an employee's ability to request from the commission a wage claim form in either language described by Section 61.006.",
+      "text_sha256": "b7f9db413d6f42b57725d660e0a7f971db60e43f414bf6d9b582c1505ee9a233",
+      "publisher_sha256": "482539c03d980edfc0c40f56e683d4f9a38b5cb1344b51bd72969129a19a73d9",
+      "retrieved_at": "2026-11-22T03:45:16.647080+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Texas Workforce Commission’s statutory reprint, pages 13–14. Verified form, covered work, agency jurisdiction, and authorized filing methods. Live channel availability requires separate confirmation."
+    },
+    "1af1aeadf5243535068d92b97fe4bf": {
+      "source_id": "US-TX:premises:9a2ae27a7976",
+      "authority_type": "opinion",
+      "citation": "Austin v. Kroger Tex., L.P., 465 S.W.3d 193 (Tex. 2015) (exceptions)",
+      "text": "Today we reaffirm the general rule while clarifying and confirming the existence of two exceptions that the Court has recognized when the landowner’s provision of an otherwise adequate warning is legally insufficient to make the premises reasonably safe. The first exception may arise when a dangerous condition results from the foreseeable criminal activity of third parties. We will refer to this as the criminal-activity exception. The second exception may arise when the invitee necessarily must use the unreasonably dangerous premises, and despite the invitee’s awareness and appreciation of the dangers, the invitee is incapable of taking precautions that will adequately reduce the risk. We will refer to this as the necessary-use exception. In cases involving these exceptions, we have held that the obviousness of the danger and the invitee’s appreciation of it may be relevant to a landowner’s defense based on the invitee’s proportionate responsibility, but they do not relieve the landowner of its duty to make the premises reasonably safe.",
+      "text_sha256": "542019d185a9f68733f5fbabc923e3a5e359c0bd2c8d1ecbce0845c852538d75",
+      "publisher_sha256": "9e34eae681c95e1522f1786986071f3961dab3d4ae6e574abd7483d5ba098281",
+      "retrieved_at": "2026-11-22T03:59:26.470090+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Supreme Court of Texas opinion issued 2015-06-12",
+      "court": "Supreme Court of Texas",
+      "publisher_member": "Supreme Court majority Part III, limited criminal-activity and necessary-use exceptions to the ordinarily sufficient-warning rule.",
+      "decision_date": "2015-06-12",
+      "opinion_role": "majority",
+      "procedural_posture": "Answered a Fifth Circuit certified question in an employee’s premises claim involving a nonsubscribing employer."
+    },
+    "0b865d9fc46d75eb64a93edb29ad1b": {
+      "source_id": "US-TX:tolling:ef80ee046c3b",
+      "authority_type": "statute",
+      "citation": "Tex. Civ. Prac. & Rem. Code § 16.001",
+      "text": "(a) For the purposes of this subchapter, a person is under a legal disability if the person is: (1) younger than 18 years of age, regardless of whether the person is married; or (2) of unsound mind. (b) If a person entitled to bring a personal action is under a legal disability when the cause of action accrues, the time of the disability is not included in a limitations period. (c) A person may not tack one legal disability to another to extend a limitations period. (d) A disability that arises after a limitations period starts does not suspend the running of the period.",
+      "text_sha256": "2e5db384711f9511a3f55fba2d930eb95580bc3b61fb0c3c8deb9087d8212314",
+      "publisher_sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce",
+      "retrieved_at": "2026-11-23T15:52:16.902935+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1987-09-01"
+    },
+    "712975b953ff9ac8659474c6acb217": {
+      "source_id": "US-TX:accrual:26e9fef80e2c",
+      "authority_type": "statute",
+      "citation": "Tex. Civ. Prac. & Rem. Code § 16.0031",
+      "text": "(a) In an action for personal injury or death resulting from an asbestos-related injury, as defined by Section 90.001, the cause of action accrues for purposes of Section 16.003 on the earlier of the following dates: (1) the date of the exposed person’s death; or (2) the date that the claimant serves on a defendant a report complying with Section 90.003 or 90.010(f). (b) In an action for personal injury or death resulting from a silica-related injury, as defined by Section 90.001, the cause of action accrues for purposes of Section 16.003 on the earlier of the following dates: (1) the date of the exposed person’s death; or (2) the date that the claimant serves on a defendant a report complying with Section 90.004 or 90.010(f).",
+      "text_sha256": "3c6da0ef0b8671b7a7f8ef651c2f6e68e228dccbb75412ffccf3afae177dc760",
+      "publisher_sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce",
+      "retrieved_at": "2026-11-23T15:52:16.902935+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2005-09-01"
+    },
+    "e653035485eb0ea50c59aeb197d398": {
+      "source_id": "US-TX:general_contract_damages:a60ec6e88148",
+      "citation": "Signature Indus. Servs., LLC v. Int'l Paper Co., No. 20-0396, slip op. at 6–7 (Tex. 2022)",
+      "text": "Damages for breach of contract may include both direct and consequential damages. Dallas/Fort Worth Int’l Airport Bd. v. Vizant Techs., LLC, 576 S.W.3d 362, 373 (Tex. 2019). Direct damages often include restoration of “the benefit of a plaintiff’s bargain.” Quigley v. Bennett, 227 S.W.3d 51, 56 (Tex. 2007) (Brister, J., concurring). Consequential damages, on the other hand, compensate the plaintiff for foreseeable losses that were caused by the breach but were not a necessary consequence of it. Stuart v. Bayless, 964 S.W.2d 920, 921 (Tex. 1998). From at least the time of Hadley v. Baxendale, 9 Exch. 341, 156 Eng. Rep. 145 (1854), the widely recognized rule has been that consequential damages “are not recoverable unless the parties contemplated at the time they made the contract that such damages would be a probable result of the breach.” Stuart, 964 S.W.2d at 921. We call this requirement “foreseeability.” Basic Cap. Mgmt., Inc. v. Dynex Com., Inc., 348 S.W.3d 894, 901 (Tex. 2011). A foreseeable loss may either follow predictably from the breach “in the ordinary course of events” or arise from “special circumstances” that the party in breach “had reason to know.” Id. at 902. A loss that is not the “probable” consequence of the breach, from the breaching party’s perspective at the time of contracting, is not foreseeable. Mead v. Johnson Grp., Inc., 615 S.W.2d 685, 687 (Tex. 1981)",
+      "text_sha256": "7c14b9e1c2fee98ff72d98011cac75433a4f72ed0cdfa3b187ce840ce53be442",
+      "publisher_sha256": "f55c1543e30f91fa238637a7d3baf7bfd7229f6d872449789fed4384f09676a9",
+      "retrieved_at": "2026-11-23T20:36:08.995327+00:00",
+      "language": "en",
+      "authority_type": "opinion",
+      "edition": "Published slip opinion of 2022-01-14",
+      "court": "Supreme Court of Texas",
+      "decision_date": "2022-01-14",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of a contract damages verdict, including rejection of consequential company-value losses.",
+      "currentness": "historical"
+    },
+    "0063209a09a50d98c9c8a3518129d2": {
+      "source_id": "US-TX:general_contract_damages:991633ba646a",
+      "citation": "Signature Indus. Servs., LLC v. Int'l Paper Co., No. 20-0396, slip op. at 8 (Tex. 2022)",
+      "text": "Apart from foreseeability, consequential damages must also be “proved with reasonable certainty.” Phillips v. Carlton Energy Grp., LLC, 475 S.W.3d 265, 278 (Tex. 2015). “Proof need not be exact, but neither can it be speculative.” Id. The losses must be “susceptible of being established by proof to that degree of certainty which the law demands.” Sw. Battery Corp. v. Owen, 115 S.W.2d 1097, 1099 (Tex. 1938).",
+      "text_sha256": "1d4d68b168b36caf518e77083312fa2c1772a41415f6722a8a24b46c48b41e90",
+      "publisher_sha256": "f55c1543e30f91fa238637a7d3baf7bfd7229f6d872449789fed4384f09676a9",
+      "retrieved_at": "2026-11-23T20:36:08.995327+00:00",
+      "language": "en",
+      "authority_type": "opinion",
+      "edition": "Published slip opinion of 2022-01-14",
+      "court": "Supreme Court of Texas",
+      "decision_date": "2022-01-14",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of the proof of consequential damages after a jury verdict.",
+      "currentness": "historical"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "4974a9d050712beb6e5241b048806d",
+    "source_id": "US-TX:fault:e38dca8bf7e8",
+    "currentness": "unresolved",
+    "qualification": "The provision applies to actions within Chapter 33. Applicability and exceptions require separate review."
+  }
+}

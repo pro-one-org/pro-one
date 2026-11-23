@@ -1,0 +1,806 @@
+{
+  "jurisdiction": "US-NJ",
+  "version": "1",
+  "sources": {
+    "US-NJ:statutes:159edec86acc": {
+      "category": "statutes",
+      "title": "New Jersey Statutes",
+      "url": "https://lis.njleg.state.nj.us/nxt/gateway.dll?f=templates&fn=default.htm&vid=Publish:10.1048/Enu",
+      "directory": "codes",
+      "locator": "New Jersey",
+      "observation": {
+        "requested_url": "https://lis.njleg.state.nj.us/nxt/gateway.dll?f=templates&fn=default.htm&vid=Publish:10.1048/Enu",
+        "retrieved_at": "2026-11-17T19:33:59.832225+00:00",
+        "http_status": "200",
+        "sha256": "167cb4af1cff5db866b8fb48b3e400383040216880e432d21c16010593f7a6ee",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NJ:constitution:382d43f665d3": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.njleg.state.nj.us/lawsconstitution/consearch.asp",
+      "directory": "codes",
+      "locator": "New Jersey"
+    },
+    "US-NJ:legislature:f2b03885b066": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.njleg.state.nj.us/",
+      "directory": "codes",
+      "locator": "New Jersey"
+    },
+    "US-NJ:labor_agency:d54cc9dba303": {
+      "category": "labor_agency",
+      "title": "https://www.nj.gov/labor/",
+      "url": "https://www.nj.gov/labor/",
+      "directory": "labor",
+      "locator": "New Jersey"
+    },
+    "US-NJ:commercial_code:e12f7aa6ee74": {
+      "category": "commercial_code",
+      "title": "Commerce and Navigation Title 12",
+      "url": "https://law.justia.com/codes/new-jersey/2018/title-12/index.html",
+      "directory": "ucc",
+      "locator": "New Jersey"
+    },
+    "US-NJ:commercial_code:61e8eca25ea0": {
+      "category": "commercial_code",
+      "title": "Commercial Transactions Title 12A",
+      "url": "https://law.justia.com/codes/new-jersey/2018/title-12a/index.html",
+      "directory": "ucc",
+      "locator": "New Jersey"
+    },
+    "US-NJ:civil_rules:cab3f0450d23": {
+      "category": "civil_rules",
+      "title": "Administration of Civil and Criminal Justice",
+      "url": "https://law.justia.com/codes/new-jersey/2018/title-2a/index.html",
+      "directory": "procedure",
+      "locator": "New Jersey"
+    },
+    "US-NJ:consumer_agency:3848d1cd7e17": {
+      "category": "consumer_agency",
+      "title": "New Jersey (NJ)",
+      "url": "https://www.njconsumeraffairs.gov/",
+      "directory": "consumer",
+      "locator": "New Jersey (NJ)"
+    },
+    "US-NJ:judiciary:f85b77d09e6f": {
+      "category": "judiciary",
+      "title": "Judiciary",
+      "url": "http://www.judiciary.state.nj.us/",
+      "directory": "doj-NJ",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-NJ:court_directory:a56eb5a92999": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.njcourts.gov/courts/supreme",
+      "directory": "doj-NJ",
+      "locator": "Supreme Court"
+    },
+    "US-NJ:court_directory:ef6e5b8ef09c": {
+      "category": "court_directory",
+      "title": "Appellate Court",
+      "url": "https://www.njcourts.gov/courts/appellate",
+      "directory": "doj-NJ",
+      "locator": "Appellate Court"
+    },
+    "US-NJ:court_directory:ce9a7accbc7a": {
+      "category": "court_directory",
+      "title": "Tax Court",
+      "url": "https://www.njcourts.gov/courts/tax",
+      "directory": "doj-NJ",
+      "locator": "Tax Court"
+    },
+    "US-NJ:opinions:0d585d5e94e3": {
+      "category": "opinions",
+      "title": "Supreme, Appellate, and Tax Court Opinions",
+      "url": "https://njlaw.rutgers.edu/collections/courts/",
+      "directory": "doj-NJ",
+      "locator": "State and Local Courts / Local/Lower Courts"
+    },
+    "US-NJ:court_directory:ac022195baa7": {
+      "category": "court_directory",
+      "title": "Trial Courts",
+      "url": "https://www.njcourts.gov/courts/scco",
+      "directory": "doj-NJ",
+      "locator": "Trial Courts"
+    },
+    "US-NJ:court_directory:17c89adbbd37": {
+      "category": "court_directory",
+      "title": "Municipal Courts",
+      "url": "https://www.njcourts.gov/courts/municipal",
+      "directory": "doj-NJ",
+      "locator": "Municipal Courts"
+    },
+    "US-NJ:forms:d2d3ab2767d3": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "https://www.njcourts.gov/self-help/forms",
+      "directory": "doj-NJ",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-NJ:constitution:3ebd6c45fd0f": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.njleg.state.nj.us/constitution",
+      "directory": "doj-NJ",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NJ:constitution:19617802d896": {
+      "category": "constitution",
+      "title": "Historical Laws, Constitutions and Charters",
+      "url": "http://www.njstatelib.org/research_library/legal_resources/historical_laws/",
+      "directory": "doj-NJ",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NJ:statutes:81c0cb40dd94": {
+      "category": "statutes",
+      "title": "Statutes",
+      "url": "https://lis.njleg.state.nj.us/nxt/gateway.dll/statutes/1?f=templates&fn=default.htm&vid=Publish:10.1048/Enu",
+      "directory": "doj-NJ",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NJ:statutes:7e63dd1708bc": {
+      "category": "statutes",
+      "title": "Chapter Laws",
+      "url": "https://www.njleg.state.nj.us/chapter-laws",
+      "directory": "doj-NJ",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NJ:statutes:991dd2f67745": {
+      "category": "statutes",
+      "title": "Session Laws from Rutgers Law Library",
+      "url": "https://njlaw.rutgers.edu/collections/njleg/",
+      "directory": "doj-NJ",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NJ:pi_limitations:159edec86acc": {
+      "category": "pi_limitations",
+      "title": "N.J. Stat. Ann. § 2A:14-2(a)",
+      "url": "https://lis.njleg.state.nj.us/nxt/gateway.dll?f=templates&fn=default.htm&vid=Publish:10.1048/Enu",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://lis.njleg.state.nj.us/nxt/gateway.dll?f=templates&fn=default.htm&vid=Publish:10.1048/Enu",
+        "retrieved_at": "2026-11-17T19:33:59.832225+00:00",
+        "http_status": "200",
+        "sha256": "167cb4af1cff5db866b8fb48b3e400383040216880e432d21c16010593f7a6ee",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NJ:written_contract_limitations:159edec86acc": {
+      "category": "written_contract_limitations",
+      "title": "N.J. Stat. Ann. § 2A:14-1(a)",
+      "url": "https://lis.njleg.state.nj.us/nxt/gateway.dll?f=templates&fn=default.htm&vid=Publish:10.1048/Enu",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://lis.njleg.state.nj.us/nxt/gateway.dll?f=templates&fn=default.htm&vid=Publish:10.1048/Enu",
+        "retrieved_at": "2026-11-17T19:33:59.832225+00:00",
+        "http_status": "200",
+        "sha256": "167cb4af1cff5db866b8fb48b3e400383040216880e432d21c16010593f7a6ee",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NJ:oral_contract_limitations:159edec86acc": {
+      "category": "oral_contract_limitations",
+      "title": "N.J. Stat. Ann. § 2A:14-1(a)",
+      "url": "https://lis.njleg.state.nj.us/nxt/gateway.dll?f=templates&fn=default.htm&vid=Publish:10.1048/Enu",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://lis.njleg.state.nj.us/nxt/gateway.dll?f=templates&fn=default.htm&vid=Publish:10.1048/Enu",
+        "retrieved_at": "2026-11-17T19:33:59.832225+00:00",
+        "http_status": "200",
+        "sha256": "167cb4af1cff5db866b8fb48b3e400383040216880e432d21c16010593f7a6ee",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NJ:small_claims:adf92591e5cd": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.njcourts.gov/sites/default/files/forms/11482_small_claims_faq.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.njcourts.gov/sites/default/files/forms/11482_small_claims_faq.pdf",
+        "retrieved_at": "2026-11-17T19:42:53.496365+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-NJ:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 28"
+    },
+    "US-NJ:consumerLaw:c92ae9267670": {
+      "title": "N.J. Stat. Ann. § 56:8-1 et seq.",
+      "category": "consumerLaw",
+      "url": "https://lis.njleg.state.nj.us/nxt/gateway.dll/statutes/1/2797",
+      "directory": "consumer_statutes_index",
+      "locator": "N.J. Stat. Ann. § 56:8-1 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-NJ:contract_formation:877df8ab311c": {
+      "category": "contract_formation",
+      "title": "N.J. Stat. § 12A:2-204",
+      "url": "https://pub.njleg.gov/statutes/STATUTES-TEXT.zip",
+      "locator": "N.J. Stat. § 12A:2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:25:57.373832+00:00",
+        "sha256": "ea3a82fbcfee5128f423537ae935393f538c5524e6d932f42533e85e6dfd0d42"
+      }
+    },
+    "US-NJ:fault:b53e1a40c338": {
+      "category": "fault",
+      "title": "N.J. Stat. § 2A:15-5.1",
+      "url": "https://pub.njleg.gov/statutes/STATUTES-TEXT.zip",
+      "locator": "N.J. Stat. § 2A:15-5.1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:25:57.373832+00:00",
+        "sha256": "ea3a82fbcfee5128f423537ae935393f538c5524e6d932f42533e85e6dfd0d42"
+      }
+    },
+    "US-NJ:consumerLaw:db86190479ae": {
+      "category": "consumerLaw",
+      "title": "N.J. Stat. § 56:8-2",
+      "url": "https://pub.njleg.gov/statutes/STATUTES-TEXT.zip",
+      "locator": "N.J. Stat. § 56:8-2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:25:57.373832+00:00",
+        "sha256": "ea3a82fbcfee5128f423537ae935393f538c5524e6d932f42533e85e6dfd0d42"
+      }
+    },
+    "US-NJ:consumer_private_action:fd3b26ed3636": {
+      "category": "consumer_private_action",
+      "title": "N.J. Stat. § 56:8-19",
+      "url": "https://pub.njleg.gov/statutes/STATUTES-TEXT.zip",
+      "locator": "N.J. Stat. § 56:8-19",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:25:57.373832+00:00",
+        "sha256": "ea3a82fbcfee5128f423537ae935393f538c5524e6d932f42533e85e6dfd0d42"
+      }
+    },
+    "US-NJ:wageLaw:61ac01e73419": {
+      "category": "wageLaw",
+      "title": "N.J. Stat. § 34:11-4.2",
+      "url": "https://pub.njleg.gov/statutes/STATUTES-TEXT.zip",
+      "locator": "N.J. Stat. § 34:11-4.2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:25:57.373832+00:00",
+        "sha256": "ea3a82fbcfee5128f423537ae935393f538c5524e6d932f42533e85e6dfd0d42"
+      }
+    },
+    "US-NJ:deposit:2857057ae673": {
+      "category": "deposit",
+      "title": "N.J. Stat. § 46:8-21.2",
+      "url": "https://pub.njleg.gov/statutes/STATUTES-TEXT.zip",
+      "locator": "N.J. Stat. § 46:8-21.2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:25:57.373832+00:00",
+        "sha256": "ea3a82fbcfee5128f423537ae935393f538c5524e6d932f42533e85e6dfd0d42"
+      }
+    },
+    "US-NJ:contract_damages:bdc4c43055d2": {
+      "category": "contract_damages",
+      "title": "N.J. Stat. § 12A:2-714",
+      "url": "https://pub.njleg.gov/statutes/STATUTES-TEXT.zip",
+      "locator": "N.J. Stat. § 12A:2-714",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:25:57.373832+00:00",
+        "sha256": "ea3a82fbcfee5128f423537ae935393f538c5524e6d932f42533e85e6dfd0d42"
+      }
+    },
+    "US-NJ:pi_limitations:e60b1e6619d6": {
+      "category": "pi_limitations",
+      "title": "N.J. Stat. § 2A:14-2",
+      "url": "https://pub.njleg.gov/statutes/STATUTES-TEXT.zip",
+      "locator": "N.J. Stat. § 2A:14-2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:25:57.373832+00:00",
+        "sha256": "ea3a82fbcfee5128f423537ae935393f538c5524e6d932f42533e85e6dfd0d42"
+      }
+    },
+    "US-NJ:debtLaw:4ebd03c2646d": {
+      "category": "debtLaw",
+      "title": "N.J. Stat. § 45:18-1",
+      "url": "https://pub.njleg.gov/statutes/STATUTES-TEXT.zip",
+      "locator": "N.J. Stat. § 45:18-1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:25:57.373832+00:00",
+        "sha256": "ea3a82fbcfee5128f423537ae935393f538c5524e6d932f42533e85e6dfd0d42"
+      }
+    },
+    "US-NJ:small_claims:5ec1101886b4": {
+      "category": "small_claims",
+      "title": "N.J. Ct. R. 6:1-2(a)(2) (July 2022 amendment)",
+      "url": "https://web.archive.org/web/20221207061839id_/https://www.njcourts.gov/sites/default/files/notices/2022/05/n220511d.pdf",
+      "locator": "N.J. Ct. R. 6:1-2(a)(2) (July 2022 amendment)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:59:02.197564+00:00",
+        "sha256": "4df2bb0a4be882f163bc66098f72243e968de2382056cc9ae0c6e8536db3d78e"
+      }
+    },
+    "US-NJ:response:1026e926636c": {
+      "category": "response",
+      "title": "N.J. Ct. R. 4:6-1(a)–(d) (January 2022 archive)",
+      "url": "https://web.archive.org/web/20220126232318id_/https://www.njcourts.gov/attorneys/assets/rules/r4-6.pdf",
+      "locator": "N.J. Ct. R. 4:6-1(a)–(d) (January 2022 archive)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:05:27.496652+00:00",
+        "sha256": "abf44f144362c9239470730e6cfb320812b8d9eec69a9983cc68f5c0301b02b7"
+      }
+    },
+    "US-NJ:response:3d4d1f4c86cf": {
+      "category": "response",
+      "title": "N.J. Ct. R. 6:3-1 (January 2022 archive)",
+      "url": "https://web.archive.org/web/20220127164558id_/https://www.njcourts.gov/attorneys/assets/rules/r6-3.pdf",
+      "locator": "N.J. Ct. R. 6:3-1 (January 2022 archive)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:05:27.284347+00:00",
+        "sha256": "87faf0e709046d377a54399a77b8b870b3fa7bc34332206647c84e1e347e9b5b"
+      }
+    },
+    "US-NJ:negligence_elements:57893df7367c": {
+      "category": "negligence_elements",
+      "title": "Townsend v. Pierre, 221 N.J. 36, 51 (2015)",
+      "url": "https://civiljusticenj.org/wp-content/uploads/2015/03/15Mar12_TownsendV.Pierre.pdf",
+      "locator": "Townsend v. Pierre, 221 N.J. 36, 51 (2015)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:26:58.498926+00:00",
+        "sha256": "b228b2908128564772b0a80f2f412e9d01c388a8367d6c6b2d877834200f04a7"
+      }
+    },
+    "US-NJ:commencement:bdaebb1b3d54": {
+      "category": "commencement",
+      "title": "W.S. v. Hildreth, No. A-46-21, slip op. at 16 (N.J. 2023)",
+      "url": "https://web.archive.org/web/20240616090729id_/https://www.njcourts.gov/system/files/court-opinions/2023/a_46_21.pdf",
+      "locator": "W.S. v. Hildreth, No. A-46-21, slip op. at 16 (N.J. 2023)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:31.575304+00:00",
+        "sha256": "62867723d73c82d2bcfec136c1828a781907482fcbef369b67e5ec0a6caa7a79"
+      }
+    },
+    "US-NJ:service:fb22ea622587": {
+      "category": "service",
+      "title": "N.J. Ct. R. 4:4-4(a)(1) (January 2022 publication)",
+      "url": "https://web.archive.org/web/20220105233115id_/https://www.njcourts.gov/attorneys/assets/rules/r4-4.pdf",
+      "locator": "N.J. Ct. R. 4:4-4(a)(1) (January 2022 publication)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:26:31.106547+00:00",
+        "sha256": "3589c5d101e6d964837c3c645a5e003cefba9c5a4f5a5020a1baaf2ee34322d2"
+      }
+    },
+    "US-NJ:general_contract_limitations:72a217562fb2": {
+      "category": "general_contract_limitations",
+      "title": "N.J. Stat. Ann. § 2A:14-1 (P.L. 2021, c. 379)",
+      "url": "https://pub.njleg.gov/bills/2020/PL21/379_.HTM",
+      "locator": "N.J. Stat. Ann. § 2A:14-1 (P.L. 2021, c. 379)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:44:26.185109+00:00",
+        "sha256": "1f0e0b15eff4336a260f3994a8f1a4926d8c36348b4a4773e9d52462b1e6962d"
+      }
+    },
+    "US-NJ:service_time_limit:ae6a6175b964": {
+      "category": "service_time_limit",
+      "title": "N.J. Ct. R. 4:4-1 (summons issuance timing)",
+      "url": "https://web.archive.org/web/20220105233115id_/https://www.njcourts.gov/attorneys/assets/rules/r4-4.pdf",
+      "locator": "N.J. Ct. R. 4:4-1 (summons issuance timing)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:26:31.106547+00:00",
+        "sha256": "3589c5d101e6d964837c3c645a5e003cefba9c5a4f5a5020a1baaf2ee34322d2"
+      }
+    },
+    "US-NJ:service_time_limit:71bac0e6f48a": {
+      "category": "service_time_limit",
+      "title": "N.J. Ct. R. 4:4-4(c) (optional mailed service timing)",
+      "url": "https://web.archive.org/web/20220105233115id_/https://www.njcourts.gov/attorneys/assets/rules/r4-4.pdf",
+      "locator": "N.J. Ct. R. 4:4-4(c) (optional mailed service timing)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:26:31.106547+00:00",
+        "sha256": "3589c5d101e6d964837c3c645a5e003cefba9c5a4f5a5020a1baaf2ee34322d2"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-NJ:court:5f3a5d4bbb2c",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-NJ:court_directory:a56eb5a92999"
+    },
+    {
+      "id": "US-NJ:court:cb0ce62f679b",
+      "name": "Appellate Court",
+      "level": "appellate_directory",
+      "source_id": "US-NJ:court_directory:ef6e5b8ef09c"
+    },
+    {
+      "id": "US-NJ:court:69d9d71c957b",
+      "name": "Tax Court",
+      "level": "trial_directory",
+      "source_id": "US-NJ:court_directory:ce9a7accbc7a"
+    },
+    {
+      "id": "US-NJ:court:ce4ca5ec1aed",
+      "name": "Trial Courts",
+      "level": "trial_directory",
+      "source_id": "US-NJ:court_directory:ac022195baa7"
+    },
+    {
+      "id": "US-NJ:court:1bffc9c5587a",
+      "name": "Municipal Courts",
+      "level": "trial_directory",
+      "source_id": "US-NJ:court_directory:17c89adbbd37"
+    },
+    {
+      "id": "US-NJ:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-NJ:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NJ:court:78eab5a37cfb",
+      "name": "Tax",
+      "level": "limited_trial",
+      "source_id": "US-NJ:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NJ:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-NJ:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "N.J. Stat. Ann. § 2A:14-2(a)",
+      "source_id": "US-NJ:pi_limitations:159edec86acc",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "N.J. Stat. Ann. § 2A:14-1(a)",
+      "source_id": "US-NJ:written_contract_limitations:159edec86acc",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "N.J. Stat. Ann. § 2A:14-1(a)",
+      "source_id": "US-NJ:oral_contract_limitations:159edec86acc",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "N.J. Stat 2A:18-61.1 Grounds for removal of tenants; N.J. Stat 2A:42-10.13 Application of act to rental premises for dwelling purposes; N.J. Stat 2A:18-60 Removal of proceedings into Law Division",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "N.J. Stat. Ann. § 56:8-1 et seq.",
+      "source_id": "US-NJ:consumerLaw:c92ae9267670",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "68e7fcea1c44775ae50837b52c858c": {
+      "source_id": "US-NJ:contract_formation:877df8ab311c",
+      "authority_type": "statute",
+      "citation": "N.J. Stat. § 12A:2-204",
+      "text": "(1) A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract. (2) An agreement sufficient to constitute a contract for sale may be found even though the moment of its making is undetermined. (3) Even though one or more terms are left open a contract for sale does not fail for indefiniteness if the parties have intended to make a contract and there is a reasonably certain basis for giving an appropriate remedy.",
+      "text_sha256": "cf5ee0c0598f4c3a25b47430afc7181d7b44e7a5be9b2c265cb5c7387d18e8e8",
+      "publisher_sha256": "ea3a82fbcfee5128f423537ae935393f538c5524e6d932f42533e85e6dfd0d42",
+      "retrieved_at": "2026-11-18T20:25:57.373832+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "New Jersey General and Permanent Statutes, updated through P.L.2026, c.70, and J.R.2",
+      "publisher_member": "STATUTES.TXT",
+      "publisher_member_sha256": "f8e745637279aa59f6c02035332683370ebae016d8cc34e3d90e34721e03e48f"
+    },
+    "406abf7ccc726d8e515fa6f934fb10": {
+      "source_id": "US-NJ:fault:b53e1a40c338",
+      "authority_type": "statute",
+      "citation": "N.J. Stat. § 2A:15-5.1",
+      "text": "Contributory negligence shall not bar recovery in an action by any person or his legal representative to recover damages for negligence resulting in death or injury to person or property, if such negligence was not greater than the negligence of the person against whom recovery is sought or was not greater than the combined negligence of the persons against whom recovery is sought. Any damages sustained shall be diminished by the percentage sustained of negligence attributable to the person recovering.",
+      "text_sha256": "bfa6ec528c9c49c5d683e1a3ff890acd11d95cc12467df571a4709604a4c7ec3",
+      "publisher_sha256": "ea3a82fbcfee5128f423537ae935393f538c5524e6d932f42533e85e6dfd0d42",
+      "retrieved_at": "2026-11-18T20:25:57.373832+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "New Jersey General and Permanent Statutes, updated through P.L.2026, c.70, and J.R.2",
+      "publisher_member": "STATUTES.TXT",
+      "publisher_member_sha256": "f8e745637279aa59f6c02035332683370ebae016d8cc34e3d90e34721e03e48f"
+    },
+    "091463213b4961fb294827950654dc": {
+      "source_id": "US-NJ:consumerLaw:db86190479ae",
+      "authority_type": "statute",
+      "citation": "N.J. Stat. § 56:8-2",
+      "text": "2. The act, use or employment by any person of any commercial practice that is unconscionable or abusive, deception, fraud, false pretense, false promise, misrepresentation, or the knowing, concealment, suppression, or omission of any material fact with intent that others rely upon such concealment, suppression or omission, in connection with the sale or advertisement of any merchandise or real estate, or with the subsequent performance of such person as aforesaid, whether or not any person has in fact been misled, deceived or damaged thereby, is declared to be an unlawful practice; provided, however, that nothing herein contained shall apply to the owner or publisher of newspapers, magazines, publications or printed matter wherein such advertisement appears, or to the owner or operator of a radio or television station which disseminates such advertisement when the owner, publisher, or operator has no knowledge of the intent, design or purpose of the advertiser.",
+      "text_sha256": "d955a32b9100e12b455568affb91d74e97bb264a740945f01adcdb58b6593373",
+      "publisher_sha256": "ea3a82fbcfee5128f423537ae935393f538c5524e6d932f42533e85e6dfd0d42",
+      "retrieved_at": "2026-11-18T20:25:57.373832+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "New Jersey General and Permanent Statutes, updated through P.L.2026, c.70, and J.R.2",
+      "publisher_member": "STATUTES.TXT",
+      "publisher_member_sha256": "f8e745637279aa59f6c02035332683370ebae016d8cc34e3d90e34721e03e48f"
+    },
+    "24c7cdaede8dd3e4b16c69336a887a": {
+      "source_id": "US-NJ:consumer_private_action:fd3b26ed3636",
+      "authority_type": "statute",
+      "citation": "N.J. Stat. § 56:8-19",
+      "text": "7. Any person who suffers any ascertainable loss of moneys or property, real or personal, as a result of the use or employment by another person of any method, act, or practice declared unlawful under this act or the act hereby amended and supplemented may bring an action or assert a counterclaim therefor in any court of competent jurisdiction. In any action under this section the court shall, in addition to any other appropriate legal or equitable relief, award threefold the damages sustained by any person in interest. In all actions under this section, including those brought by the Attorney General, the court shall also award reasonable attorneys' fees, filing fees and reasonable costs of suit.",
+      "text_sha256": "f61e9f85fed5818ac59a0faa89c9a90fd01fe6934d40fa556efa5208c6c663eb",
+      "publisher_sha256": "ea3a82fbcfee5128f423537ae935393f538c5524e6d932f42533e85e6dfd0d42",
+      "retrieved_at": "2026-11-18T20:25:57.373832+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "New Jersey General and Permanent Statutes, updated through P.L.2026, c.70, and J.R.2",
+      "publisher_member": "STATUTES.TXT",
+      "publisher_member_sha256": "f8e745637279aa59f6c02035332683370ebae016d8cc34e3d90e34721e03e48f"
+    },
+    "5b0d98a783c8eca9050ed6b1585c08": {
+      "source_id": "US-NJ:wageLaw:61ac01e73419",
+      "authority_type": "statute",
+      "citation": "N.J. Stat. § 34:11-4.2",
+      "text": "2. Except as otherwise provided by law, every employer shall pay the full amount of wages due to his employees at least twice during each calendar month, on regular paydays designated in advance by the employer, in lawful money of the United States or with checks on banks where suitable arrangements are made for the cashing of such checks by employees without difficulty and for the full amount for which they are drawn. An employer may establish regular paydays less frequently than semimonthly for bona fide executive, supervisory and other special classifications of employees provided that the employee shall be paid in full at least once each calendar month on a regularly established schedule. If a regular payday falls on a nonwork day, that is, a day on which the workplace of an employee is not open for business, payment shall be made on the immediately preceding work day, except where it is otherwise provided for in a collective bargaining agreement. The end of the pay period for which payment is made on a regular payday shall be not more than 10 working days before such regular payday, provided that if the regular payday falls on a nonwork day payment shall be made on the preceding work day.",
+      "text_sha256": "36028c2bb10a85aba411b58a6267a4317f46730b56073d3f86c21798009fdb19",
+      "publisher_sha256": "ea3a82fbcfee5128f423537ae935393f538c5524e6d932f42533e85e6dfd0d42",
+      "retrieved_at": "2026-11-18T20:25:57.373832+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "New Jersey General and Permanent Statutes, updated through P.L.2026, c.70, and J.R.2",
+      "publisher_member": "STATUTES.TXT",
+      "publisher_member_sha256": "f8e745637279aa59f6c02035332683370ebae016d8cc34e3d90e34721e03e48f"
+    },
+    "8b9c604e5d1a8710846370ec55ee85": {
+      "source_id": "US-NJ:deposit:2857057ae673",
+      "authority_type": "statute",
+      "citation": "N.J. Stat. § 46:8-21.2",
+      "text": "4. An owner or lessee may not require more than a sum equal to 1 1/2 times 1 month's rental according to the terms of contract, lease, or agreement as a security for the use or rental of real property used for dwelling purposes. Whenever an owner or lessee collects from a tenant an additional amount of security deposit, the amount collected annually as additional security shall not be greater than 10 percent of the current security deposit.",
+      "text_sha256": "4eebf1e55189058a87ad01ff4a1ccb79ec457def3aaa2cacecfdd76cdfd84ff2",
+      "publisher_sha256": "ea3a82fbcfee5128f423537ae935393f538c5524e6d932f42533e85e6dfd0d42",
+      "retrieved_at": "2026-11-18T20:25:57.373832+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "New Jersey General and Permanent Statutes, updated through P.L.2026, c.70, and J.R.2",
+      "publisher_member": "STATUTES.TXT",
+      "publisher_member_sha256": "f8e745637279aa59f6c02035332683370ebae016d8cc34e3d90e34721e03e48f"
+    },
+    "bf7827b574e47532e5a4e67e86ad56": {
+      "source_id": "US-NJ:contract_damages:bdc4c43055d2",
+      "authority_type": "statute",
+      "citation": "N.J. Stat. § 12A:2-714",
+      "text": "(1) Where the buyer has accepted goods and given notification (subsection (3) of 12A:2-607) he may recover as damages for any non-conformity of tender the loss resulting in the ordinary course of events from the seller's breach as determined in any manner which is reasonable. (2) The measure of damages for breach of warranty is the difference at the time and place of acceptance between the value of the goods accepted and the value they would have had if they had been as warranted, unless special circumstances show proximate damages of a different amount. (3) In a proper case any incidental and consequential damages under the next section may also be recovered.",
+      "text_sha256": "84c155e644c10791159f1c3697e3b546b0c44200b92becc0fc6d760e37ac8d16",
+      "publisher_sha256": "ea3a82fbcfee5128f423537ae935393f538c5524e6d932f42533e85e6dfd0d42",
+      "retrieved_at": "2026-11-18T20:25:57.373832+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "New Jersey General and Permanent Statutes, updated through P.L.2026, c.70, and J.R.2",
+      "publisher_member": "STATUTES.TXT",
+      "publisher_member_sha256": "f8e745637279aa59f6c02035332683370ebae016d8cc34e3d90e34721e03e48f"
+    },
+    "204fbc48c33a837932da8f888d8d55": {
+      "source_id": "US-NJ:pi_limitations:e60b1e6619d6",
+      "authority_type": "statute",
+      "citation": "N.J. Stat. § 2A:14-2",
+      "text": "a. Except as otherwise provided by law, every action at law for an injury to the person caused by the wrongful act, neglect or default of any person within this State shall be commenced within two years next after the cause of any such action shall have accrued; except that an action by or on behalf of a minor that has accrued for medical malpractice for injuries sustained at birth shall be commenced prior to the minor's 13th birthday. b. In the event that an action by or on behalf of a minor that has accrued for medical malpractice for injuries sustained at birth is not commenced by the minor's parent or guardian prior to the minor's 12th birthday, the minor or a person 18 years of age or older designated by the minor to act on the minor's behalf may commence such an action. For this purpose, the minor or designated person may petition the court for the appointment of a guardian ad litem to act on the minor's behalf. amended 2004, c.17, s.3; 2019, c.120, s.1.",
+      "text_sha256": "f52c5e7c104554fdd824307857fc0eea122a72cd0aecc786d6151df1873cbf37",
+      "publisher_sha256": "ea3a82fbcfee5128f423537ae935393f538c5524e6d932f42533e85e6dfd0d42",
+      "retrieved_at": "2026-11-18T20:25:57.373832+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "New Jersey General and Permanent Statutes, updated through P.L.2026, c.70, and J.R.2",
+      "publisher_member": "STATUTES.TXT",
+      "publisher_member_sha256": "f8e745637279aa59f6c02035332683370ebae016d8cc34e3d90e34721e03e48f"
+    },
+    "6f481c07591ed90d567052c5a2a7e6": {
+      "source_id": "US-NJ:debtLaw:4ebd03c2646d",
+      "authority_type": "statute",
+      "citation": "N.J. Stat. § 45:18-1",
+      "text": "No person shall conduct a collection agency, collection bureau or collection office in this state, or engage therein in the business of collecting or receiving payment for others of any account, bill or other indebtedness, or engage therein in the business of soliciting the right to collect or receive payment for another of any account, bill or other indebtedness, or advertise for or solicit in print the right to collect or receive payment for another of any account, bill or other indebtedness, unless such person, or the person for whom he may be acting as agent has on file with the secretary of state sufficient bond as hereinafter specified.",
+      "text_sha256": "141a0a3ab21b1a103c1ae5c1c72ac2a17f4213e337ff0977076102ba2af112a3",
+      "publisher_sha256": "ea3a82fbcfee5128f423537ae935393f538c5524e6d932f42533e85e6dfd0d42",
+      "retrieved_at": "2026-11-18T20:25:57.373832+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "New Jersey General and Permanent Statutes, updated through P.L.2026, c.70, and J.R.2",
+      "publisher_member": "STATUTES.TXT",
+      "publisher_member_sha256": "f8e745637279aa59f6c02035332683370ebae016d8cc34e3d90e34721e03e48f"
+    },
+    "5eea29839cb5eaaae49c231780f7c9": {
+      "source_id": "US-NJ:small_claims:5ec1101886b4",
+      "authority_type": "court_rule",
+      "citation": "N.J. Ct. R. 6:1-2(a)(2) (July 2022 amendment)",
+      "text": "(2) Small claims actions, which are defined as all actions in contract and tort (exclusive of professional malpractice, probate, and matters cognizable in the Family Division or Tax Court) and actions between a landlord and tenant for rent, return of all or part of a security deposit, or money damages, when the amount in dispute, including any applicable penalties, does not exceed, exclusive of costs, the sum of $5,000. The Small Claims Section may provide such ancillary equitable relief as may be necessary to effect a complete remedy. Actions in lieu of prerogative writs and actions in which the primary relief sought is equitable in nature are excluded from the Small Claims Section;",
+      "text_sha256": "6290f4e44df84e99857612b495ed34de7980e89c4ef82819c399e69c975d4e45",
+      "publisher_sha256": "4df2bb0a4be882f163bc66098f72243e968de2382056cc9ae0c6e8536db3d78e",
+      "retrieved_at": "2026-11-21T03:59:02.197564+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Jersey Supreme Court order of May 10, 2022, effective July 1, 2022",
+      "court": "New Jersey Superior Court, Law Division, Special Civil Part, Small Claims Section",
+      "effective_from": "2022-07-01",
+      "publisher_member": "signed order PDF p. 2 and adopted text PDF pp. 5–6"
+    },
+    "3620856ed688f6204add5a5e0aaad8": {
+      "source_id": "US-NJ:response:1026e926636c",
+      "authority_type": "court_rule",
+      "citation": "N.J. Ct. R. 4:6-1(a)–(d) (January 2022 archive)",
+      "text": "(a) Time; Presentation. Except as otherwise provided by Rules 4:7-5(c) (crossclaims), 4:8-1(b) (third-party joinder), 4:9-1 (answer to amended complaint), and 4:64-1(i) (governmental answer in foreclosure actions), the defendant shall serve an answer, including therein any counterclaim, within 35 days after service of the summons and complaint on that defendant. If service is made as provided by court order, pursuant to R. 4:4-4(b)(3), the time for service of the answer may be specified therein. Service of the answer shall be complete as provided by R. 1:5-4. A party served with a pleading stating a counterclaim or crossclaim against that party shall serve an answer thereto within 35 days after the service upon that party. A reply to an answer, where permitted, shall be served within 20 days after service of the answer. (b) Time; Effect of Certain Motions. Unless the court fixes a different time period, the time periods prescribed in paragraph (a) of this rule are altered by the filing and service of a motion under R. 4:6 or for summary judgment under R. 4:46 or R. 4:69-2 as follows: (1) if the motion is denied in whole or part or its disposition postponed until trial, the responsive pleading shall be served within 10 days after notice of the court's action; (2) if a motion for a more definite statement is granted, the responsive pleadings shall be served within 10 days after the service of such statement. If notice is given a nonresident party demanding security for costs and the nonresident gives notice of the filing of the bond or the making of the deposit, the party making the demand shall then have the same time to plead as may have remained at the time of the service of the notice demanding the security. (c) Time; Extension by Consent. The time for service of a responsive pleading may be enlarged for a period not exceeding 60 days by the written consent of the parties, which shall be filed with the responsive pleading within said 60-day period. Further enlargements shall be allowed only on notice by court order, on good cause shown therefor. (d) Certificate of Service. The party filing the responsive pleading or the party's attorney shall certify thereon, or in an acknowledgment, proof or certificate of service, that the pleading was served within the time period allowed by R. 4:6 or other rule specified in the certificate.",
+      "text_sha256": "dea93c8f425023429fbba30f5a17c31f4fb5cdd0d300dfc872848658fae4457a",
+      "publisher_sha256": "abf44f144362c9239470730e6cfb320812b8d9eec69a9983cc68f5c0301b02b7",
+      "retrieved_at": "2026-11-21T04:05:27.496652+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Jersey judiciary rule PDF archived January 26, 2022",
+      "court": "New Jersey Superior Court, Law Division, Civil Part",
+      "publisher_member": "publisher rule PDF p. 1"
+    },
+    "24a8c77b2a9a84e2dee38585d65170": {
+      "source_id": "US-NJ:response:3d4d1f4c86cf",
+      "authority_type": "court_rule",
+      "citation": "N.J. Ct. R. 6:3-1 (January 2022 archive)",
+      "text": "Except as otherwise provided by R. 6:3-4 (joinder in landlord and tenant actions), the following rules shall apply to the Special Civil Part: R. 4:2 (form and commencement of action); R. 4:3-3 (change of venue in the Superior Court), provided, however, that in Special Civil Part actions a change of venue may be ordered by the Assignment Judge of the county in which venue is laid or the Assignment Judge's designee; R. 4:5 to R. 4:9, inclusive (pleadings and motions); R. 4:26 to R. 4:34, inclusive (parties); and R. 4:52 (injunctions as applicable in landlord/tenant actions); provided, however, that, in Special Civil Part actions (1) a defendant who is served with process whether within or outside this State shall serve an answer including therein any counterclaim within 35 days after completion of service; (2) extension of time for response by consent provided by R. 4:6-1(c) shall not apply; (3) the 90-day periods prescribed by R. 4:6-3 (defenses raised by motion), R. 4:7-5(c) (cross claims), and R. 4:8-1(a) (third party complaints) shall each be reduced to 30 days; (4) the 45-day period prescribed by R. 4:8-1(b) (amended complaint asserting claims against third party defendant) shall be reduced to 30 days; (5) an appearance by a defendant appearing pro se shall be deemed an answer; (6) no answer shall be permitted in summary actions between landlord and tenant, summary ejectment and unlawful entry and detainer actions or in actions in the Small Claims Section; (7) if it becomes apparent that the name of any party listed in the pleadings is incorrect, the court, at any time prior to judgment on its own motion or the motion of any party and consistent with due process of law, may correct the error, but following judgment such errors may be corrected only on motion with notice to all parties; (8) a defendant who is served with an amended complaint pursuant to R. 4:9-1 shall plead in response within 35 days after the completion of service; and (9) the double-spacing and type-size requirements of R. 1:4-9 do not apply.",
+      "text_sha256": "f18733d755c05a1c3405208830e2772f1c7750a0882a145b3720272e3a8968bf",
+      "publisher_sha256": "87faf0e709046d377a54399a77b8b870b3fa7bc34332206647c84e1e347e9b5b",
+      "retrieved_at": "2026-11-21T04:05:27.284347+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Jersey judiciary rule PDF archived January 27, 2022",
+      "court": "New Jersey Superior Court, Law Division, Special Civil Part",
+      "publisher_member": "publisher rule PDF p. 1",
+      "effective_from": "2016-09-01"
+    },
+    "6a8c2bc0e612a5bd7d380b8d31af2f": {
+      "source_id": "US-NJ:negligence_elements:57893df7367c",
+      "authority_type": "opinion",
+      "citation": "Townsend v. Pierre, 221 N.J. 36, 51 (2015)",
+      "text": "To sustain a cause of action for negligence, a plaintiff must establish four elements: “‘(1) a duty of care, (2) a breach of that duty, (3) proximate cause, and (4) actual damages.’”",
+      "text_sha256": "372e6d4437f391be9bb31fded28905a7c4ba6fc393dca85191d9bbdc9cdc306d",
+      "publisher_sha256": "b228b2908128564772b0a80f2f412e9d01c388a8367d6c6b2d877834200f04a7",
+      "retrieved_at": "2026-11-21T04:26:58.498926+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2015-03-12",
+      "court": "Supreme Court of New Jersey",
+      "decision_date": "2015-03-12",
+      "opinion_role": "majority",
+      "procedural_posture": "Certification to review exclusion of expert causation testimony and summary judgment in a wrongful-death negligence action.",
+      "publisher_member": "Court-issued slip opinion in the original packet, PDF p. 17, majority opinion after the clerk syllabus"
+    },
+    "ca544a55ccd66894ca8e36249bf65b": {
+      "source_id": "US-NJ:commencement:bdaebb1b3d54",
+      "authority_type": "opinion",
+      "citation": "W.S. v. Hildreth, No. A-46-21, slip op. at 16 (N.J. 2023)",
+      "text": "Pursuant to Rule 4:2-2, “[a] civil action is commenced by filing a complaint with the court.” Neither a notice of claim nor a motion for leave to file a late notice of claim constitutes a complaint.",
+      "text_sha256": "e02570117092246b5a745e98364b3c146bba69f46a68fe6e9044b06d27d195d2",
+      "publisher_sha256": "62867723d73c82d2bcfec136c1828a781907482fcbef369b67e5ec0a6caa7a79",
+      "retrieved_at": "2026-11-21T16:38:31.575304+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Jersey Supreme Court slip opinion issued January 18, 2023",
+      "court": "Supreme Court of New Jersey",
+      "publisher_member": "Court opinion, printed p. 16 (PDF p. 19), Part III",
+      "decision_date": "2023-01-18",
+      "opinion_role": "unanimous",
+      "procedural_posture": "Interlocutory review of denial of motion to dismiss under the Tort Claims Act; affirmance and remand."
+    },
+    "4aa487d20ff4c31cc1160fe904e9e4": {
+      "source_id": "US-NJ:service:fb22ea622587",
+      "authority_type": "court_rule",
+      "citation": "N.J. Ct. R. 4:4-4(a)(1) (January 2022 publication)",
+      "text": "(a) Primary Method of Obtaining In Personam Jurisdiction. The primary method of obtaining in personam jurisdiction over a defendant in this State is by causing the summons and complaint to be personally served within this State pursuant to R. 4:4-3, as follows: (1) Upon a competent individual of the age of 14 or over, by delivering a copy of the summons and complaint to the individual personally, or by leaving a copy thereof at the individual's dwelling place or usual place of abode with a competent member of the household of the age of 14 or over then residing therein, or by delivering a copy thereof to a person authorized by appointment or by law to receive service of process on the individual's behalf;",
+      "text_sha256": "54e56648f791a84881c4a9fc1901e457a1272224d440a4396115ab3828668ebb",
+      "publisher_sha256": "3589c5d101e6d964837c3c645a5e003cefba9c5a4f5a5020a1baaf2ee34322d2",
+      "retrieved_at": "2026-11-21T17:26:31.106547+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Jersey Judiciary rule publication archived January 5, 2022",
+      "court": "New Jersey Superior Court governed by Part IV rules",
+      "publisher_member": "Judiciary rule PDF pp. 2–3, archived January 5, 2022, opening of Rule 4:4-4(a) and subsection (a)(1)"
+    },
+    "5410ac1d163a95cd5bb1bfb9b23554": {
+      "source_id": "US-NJ:general_contract_limitations:72a217562fb2",
+      "authority_type": "statute",
+      "citation": "N.J. Stat. Ann. § 2A:14-1 (P.L. 2021, c. 379)",
+      "text": "a. Every action at law for trespass to real property, for any tortious injury to real or personal property, for taking, detaining, or converting personal property, for replevin of goods or chattels, for any tortious injury to the rights of another not stated in N.J.S.2A:14-2 and N.J.S.2A:14-3, or for recovery upon a contractual claim or liability, express or implied, not under seal, or upon an account other than one which concerns the trade or merchandise between merchant and merchant, their factors, agents and servants, shall be commenced within six years next after the cause of any such action shall have accrued. b. This section shall not apply to any action for breach of any contract for sale governed by N.J.S.12A:2-725. c. The period of time for the filing of a claim by a condominium association, cooperative corporation, or other planned real estate development association against a developer or any person acting through, on behalf of or at the behest of the developer under subsection a. of this section, shall be tolled until an election is held and the owners comprise a majority of the board pursuant to paragraph (3) of subsection a. of section 5 of P.L.1993, c.30 (C.45:22A-47), or subsection d. of section 2 of P.L.1979, c.157 (C.46:8B-12.1). Any cause of action involving a condominium, cooperative, or other planned real estate development under the provisions of subsection a. of this section that has not been subject to a final judgment dismissing the claim as of the effective date of P.L.2021, c.379 shall be subject to the terms of this subsection.",
+      "text_sha256": "00af0d48062cd26859b1149fa194b8db3a208a09e2a628884f6b07e45a3fe426",
+      "publisher_sha256": "1f0e0b15eff4336a260f3994a8f1a4926d8c36348b4a4773e9d52462b1e6962d",
+      "retrieved_at": "2026-11-21T17:44:26.185109+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Jersey P.L. 2021, c. 379, approved January 18, 2022",
+      "publisher_member": "New Jersey Legislature approved P.L. 2021, c. 379 § 1, effective upon approval January 18, 2022",
+      "effective_from": "2022-01-18"
+    },
+    "1be8106266443ad0e4adbafe245b18": {
+      "source_id": "US-NJ:service_time_limit:ae6a6175b964",
+      "authority_type": "court_rule",
+      "citation": "N.J. Ct. R. 4:4-1 (summons issuance timing)",
+      "text": "The plaintiff, plaintiff's attorney or the clerk of the court may issue the summons. If a summons is not issued within 15 days from the date of the Track Assignment Notice, the action may be dismissed in accordance with R. 4:37-2(a). Separate or additional summonses may issue against any defendants.",
+      "text_sha256": "5edc30a3bf0181f54b62422f5b92031ef0f8e403be1fccc1ae3fc88eff0c58cb",
+      "publisher_sha256": "3589c5d101e6d964837c3c645a5e003cefba9c5a4f5a5020a1baaf2ee34322d2",
+      "retrieved_at": "2026-11-21T17:26:31.106547+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Jersey Courts Rule 4:4 publication, January 5, 2022 archive capture",
+      "publisher_member": "Archived original New Jersey Courts PDF, Rule 4:4-1",
+      "effective_from": "2002-09-03"
+    },
+    "73df8900a700b82092be6ee80b4d90": {
+      "source_id": "US-NJ:service_time_limit:71bac0e6f48a",
+      "authority_type": "court_rule",
+      "citation": "N.J. Ct. R. 4:4-4(c) (optional mailed service timing)",
+      "text": "(c) Optional Mailed Service. Where personal service is required to be made pursuant to paragraph (a) of this rule, service, in lieu of personal service, may be made by registered, certified or ordinary mail, provided, however, that such service shall be effective for obtaining in personam jurisdiction only if the defendant answers the complaint or otherwise appears in response thereto, and provided further that default shall not be entered against a defendant who fails to answer or appear in response thereto. This prohibition against entry of default shall not apply to mailed service authorized by any other provision of these rules. If defendant does not answer or appear within 60 days following mailed service, service shall be made as is otherwise prescribed by this rule, and the time prescribed by R. 4:4-1 for issuance of the summons shall then begin to run anew.",
+      "text_sha256": "a63d092bf2ff670511ff048ca0286d2f57e5ebd9e61c646447e3cddc0d746d4e",
+      "publisher_sha256": "3589c5d101e6d964837c3c645a5e003cefba9c5a4f5a5020a1baaf2ee34322d2",
+      "retrieved_at": "2026-11-21T17:26:31.106547+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "New Jersey Courts Rule 4:4 publication, January 5, 2022 archive capture",
+      "publisher_member": "Archived original New Jersey Courts PDF, Rule 4:4-4(c)"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "source_id": "US-NJ:fault:b53e1a40c338",
+    "passage_selector": "406abf7ccc726d8e515fa6f934fb10",
+    "currentness": "unresolved",
+    "qualification": "The statute compares claimant negligence with the person’s negligence or the combined negligence of the persons against whom recovery is sought. Equal negligence is permitted. Damages are reduced proportionally."
+  }
+}

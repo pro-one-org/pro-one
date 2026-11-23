@@ -1,0 +1,1161 @@
+{
+  "jurisdiction": "US-NY",
+  "version": "1",
+  "sources": {
+    "US-NY:statutes:ace451b65fde": {
+      "category": "statutes",
+      "title": "New York Consolidated Laws",
+      "url": "http://public.leginfo.state.ny.us/lawssrch.cgi?NVLWO:",
+      "directory": "codes",
+      "locator": "New York"
+    },
+    "US-NY:constitution:45de4dc7ccf3": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.dos.ny.gov/info/constitution.htm",
+      "directory": "codes",
+      "locator": "New York"
+    },
+    "US-NY:legislature:d92f75b643ad": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://public.leginfo.state.ny.us/",
+      "directory": "codes",
+      "locator": "New York"
+    },
+    "US-NY:labor_agency:0948dfdc97f3": {
+      "category": "labor_agency",
+      "title": "www.labor.ny.gov",
+      "url": "http://www.labor.ny.gov/",
+      "directory": "labor",
+      "locator": "New York"
+    },
+    "US-NY:commercial_code:962e594d2abf": {
+      "category": "commercial_code",
+      "title": "UCC",
+      "url": "https://www.nysenate.gov/legislation/laws/UCC",
+      "directory": "ucc",
+      "locator": "New York"
+    },
+    "US-NY:civil_rules:1e58346be91f": {
+      "category": "civil_rules",
+      "title": "CVP, Civil Practice Law & Rules",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP",
+      "directory": "procedure",
+      "locator": "New York"
+    },
+    "US-NY:consumer_agency:2c3b9a603e22": {
+      "category": "consumer_agency",
+      "title": "New York (NY)",
+      "url": "https://dos.ny.gov/consumer-protection",
+      "directory": "consumer",
+      "locator": "New York (NY)"
+    },
+    "US-NY:judiciary:c333fb450c7b": {
+      "category": "judiciary",
+      "title": "State Unified Court System",
+      "url": "https://www.nycourts.gov/",
+      "directory": "doj-NY",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-NY:court_directory:146f064b6f83": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "http://www.courts.state.ny.us/ctapps/",
+      "directory": "doj-NY",
+      "locator": "Court of Appeals"
+    },
+    "US-NY:court_directory:23d9d7ea4c7d": {
+      "category": "court_directory",
+      "title": "Court of Claims",
+      "url": "http://www.nyscourtofclaims.state.ny.us/",
+      "directory": "doj-NY",
+      "locator": "Court of Claims"
+    },
+    "US-NY:court_directory:08a20d52fc89": {
+      "category": "court_directory",
+      "title": "New York City Courts",
+      "url": "https://www.nycourts.gov/new-york-city-courts",
+      "directory": "doj-NY",
+      "locator": "New York City Courts"
+    },
+    "US-NY:court_directory:41f5c4547237": {
+      "category": "court_directory",
+      "title": "City, Town and Village Courts",
+      "url": "http://www.nycourts.gov/courts/townandvillage/",
+      "directory": "doj-NY",
+      "locator": "City, Town and Village Courts"
+    },
+    "US-NY:forms:54a4095d6425": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://www.nycourts.gov/forms/",
+      "directory": "doj-NY",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-NY:constitution:5e884c870794": {
+      "category": "constitution",
+      "title": "Constitution,",
+      "url": "https://www.nysenate.gov/legislation/laws/CNS",
+      "directory": "doj-NY",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NY:statutes:0a43e66e63e5": {
+      "category": "statutes",
+      "title": "Consolidated and Unconsolidated Laws",
+      "url": "https://www.nysenate.gov/legislation/laws/all",
+      "directory": "doj-NY",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NY:regulations:d0dfc0f85ae1": {
+      "category": "regulations",
+      "title": "State Register",
+      "url": "http://www.dos.ny.gov/info/register.htm",
+      "directory": "doj-NY",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-NY:pi_limitations:ba1e5c214e0f": {
+      "category": "pi_limitations",
+      "title": "N.Y. C.P.L.R. § 214(5)",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/214",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.nysenate.gov/legislation/laws/CVP/214",
+        "retrieved_at": "2026-11-17T19:33:59.847728+00:00",
+        "http_status": "200",
+        "sha256": "0244764c782a973dc6245c5513dfdc05d87c1ae87b04078de5f1f277455b722d",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NY:written_contract_limitations:7de544da597c": {
+      "category": "written_contract_limitations",
+      "title": "N.Y. C.P.L.R. § 213(2)",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/213",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.nysenate.gov/legislation/laws/CVP/213",
+        "retrieved_at": "2026-11-17T19:33:59.892150+00:00",
+        "http_status": "200",
+        "sha256": "948824446cfbcaab22960b2aaf179298846b8c59bc948c0d4e102d452e57b727",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NY:oral_contract_limitations:7de544da597c": {
+      "category": "oral_contract_limitations",
+      "title": "N.Y. C.P.L.R. § 213(2)",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/213",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.nysenate.gov/legislation/laws/CVP/213",
+        "retrieved_at": "2026-11-17T19:33:59.892150+00:00",
+        "http_status": "200",
+        "sha256": "948824446cfbcaab22960b2aaf179298846b8c59bc948c0d4e102d452e57b727",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NY:small_claims:b389e43ebf52": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.nycourts.gov/new-york-city-small-claims-court/nyc-small-claims-forms",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.nycourts.gov/new-york-city-small-claims-court/nyc-small-claims-forms",
+        "retrieved_at": "2026-11-17T19:42:54.535317+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-NY:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 28"
+    },
+    "US-NY:fault:8d0e072334d2": {
+      "category": "fault",
+      "title": "N.Y. CPLR 1411",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/1411",
+      "directory": null,
+      "locator": "N.Y. CPLR 1411",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:35.153837+00:00",
+        "sha256": "8e22857d706801cf6bdbcf8bdb3340ab2ed61845c63febd4b7f89715eed8834e"
+      }
+    },
+    "US-NY:consumerLaw:e7ef6034d27d": {
+      "title": "N.Y. Gen. Bus. Law § 349 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.nysenate.gov/legislation/laws/GBS/349",
+      "directory": "consumer_statutes_index",
+      "locator": "N.Y. Gen. Bus. Law § 349 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-NY:contract_formation:fa8a1cfeb8d9": {
+      "category": "contract_formation",
+      "title": "N.Y. U.C.C. § 2-204",
+      "url": "https://www.nysenate.gov/legislation/laws/UCC/2-204",
+      "locator": "N.Y. U.C.C. § 2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:31.473014+00:00",
+        "sha256": "032f9a123f8b35b617534fa8aeecdd2845ffdba3abfec6f1991ae26b1ec93610"
+      }
+    },
+    "US-NY:commencement:26481f94bedb": {
+      "category": "commencement",
+      "title": "N.Y. CPLR 304",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/304",
+      "locator": "N.Y. CPLR 304",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:52.057836+00:00",
+        "sha256": "cc80bb63eca7f05b0495ba9072f297ab3fa21fba56e250fd1adfb590698d12f4"
+      }
+    },
+    "US-NY:small_claims:04b6983c0db1": {
+      "category": "small_claims",
+      "title": "N.Y.C. Civil Court Act § 1801",
+      "url": "https://www.nysenate.gov/legislation/laws/CCA/1801",
+      "locator": "N.Y.C. Civil Court Act § 1801",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:17:29.362293+00:00",
+        "sha256": "501820e82bf3bfd2e29eea4d72e01dc919d94c9a8bde06a0789cdd132065db63"
+      }
+    },
+    "US-NY:consumerLaw:6b8b7996ce9e": {
+      "category": "consumerLaw",
+      "title": "N.Y. Gen. Bus. Law § 349(a)",
+      "url": "https://www.nysenate.gov/legislation/laws/GBS/349",
+      "locator": "N.Y. Gen. Bus. Law § 349(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:45.145872+00:00",
+        "sha256": "642b7f983fcc19eba8ebb0760b749a38dadaac2572ca75f9eb146a84a1101a1f"
+      }
+    },
+    "US-NY:pi_limitations:c751287f58e8": {
+      "category": "pi_limitations",
+      "title": "N.Y. CPLR 214",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/214",
+      "locator": "N.Y. CPLR 214",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:22.174933+00:00",
+        "sha256": "57d787694ac254ec9f7c1ef444273362e6210d2c0744b78cf87c38501b1b6f96"
+      }
+    },
+    "US-NY:general_contract_limitations:9b00ebb749e2": {
+      "category": "general_contract_limitations",
+      "title": "N.Y. CPLR 213(1)–(2)",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/213",
+      "locator": "N.Y. CPLR 213(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:35:41.909786+00:00",
+        "sha256": "4e9787e9bcf9a4025761956ea622ba2facfcacf33228279c871df019c4701811"
+      }
+    },
+    "US-NY:response:7c480b070e2f": {
+      "category": "response",
+      "title": "N.Y. CPLR 320(a)",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/320",
+      "locator": "N.Y. CPLR 320(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:42:59.508864+00:00",
+        "sha256": "9dccb65ef5691a52436883305cd5bfac24dea988675c488dad9c1d945ebcd9a3"
+      }
+    },
+    "US-NY:service:2db664050016": {
+      "category": "service",
+      "title": "N.Y. CPLR 308",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/308",
+      "locator": "N.Y. CPLR 308",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:02.583732+00:00",
+        "sha256": "26966a415ad0e72a488eaa0266ab8ce2fe7b65138827fa9e7c1e2d75d5aecdda"
+      }
+    },
+    "US-NY:wageLaw:585fafc9bdd3": {
+      "category": "wageLaw",
+      "title": "N.Y. Lab. Law § 191(1)(a)(i)",
+      "url": "https://www.nysenate.gov/legislation/laws/LAB/191",
+      "locator": "N.Y. Lab. Law § 191(1)(a)(i)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:37:34.210071+00:00",
+        "sha256": "75da18789ae67c33332cc6bbfeb3b3646451385e60a29895efb32790e285c5cf"
+      }
+    },
+    "US-NY:deposit:53a1773ce149": {
+      "category": "deposit",
+      "title": "N.Y. Gen. Oblig. Law § 7-108(1-a), introductory scope and paragraphs (a), (e)–(g)",
+      "url": "https://www.nysenate.gov/legislation/laws/GOB/7-108",
+      "locator": "N.Y. Gen. Oblig. Law § 7-108(1-a), introductory scope and paragraphs (a), (e)–(g)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:54:37.125228+00:00",
+        "sha256": "2f425dff410a73b30cb3f4f7e9ee3d846faa91432e1d38efdee06a9b464a086b"
+      }
+    },
+    "US-NY:debtLaw:2b271cb25470": {
+      "category": "debtLaw",
+      "title": "N.Y. C.P.L.R. § 214-i (consumer credit transactions, nonrevival)",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/214-I",
+      "locator": "N.Y. C.P.L.R. § 214-i (consumer credit transactions, nonrevival)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:32:56.432673+00:00",
+        "sha256": "8e50c2d56b5960e3680f5da7d66c5b2cf03ce158313e280256bf57c74e40ffd6"
+      }
+    },
+    "US-NY:negligence_elements:8cb27ad60330": {
+      "category": "negligence_elements",
+      "title": "Evarts v. Pyro Engineering, Inc., 2014 NY Slip Op 02996, 117 A.D.3d 1148, 1150",
+      "url": "https://web.archive.org/web/20250419191430id_/https://www.nycourts.gov/REPORTER/3dseries/2014/2014_02996.htm",
+      "locator": "Evarts v. Pyro Engineering, Inc., 2014 NY Slip Op 02996, 117 A.D.3d 1148, 1150",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:21:01.617255+00:00",
+        "sha256": "4f3fc75d0f9c84da7eeca678f1c9847facb6c89a26971d8b8ecbe9babe730198"
+      }
+    },
+    "US-NY:service_time_limit:4ba8d081ba68": {
+      "category": "service_time_limit",
+      "title": "N.Y. C.P.L.R. 306-b",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/306-B",
+      "locator": "N.Y. C.P.L.R. 306-b",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:06:51.049371+00:00",
+        "sha256": "2f729e9ece944dced37bc5a96a28780028b565d8d175fc82a2bf1e6ede5f5508"
+      }
+    },
+    "US-NY:tenancy_notice:976658c064e8": {
+      "category": "tenancy_notice",
+      "title": "N.Y. Real Prop. Acts. Law § 711(2) (version effective until June 15, 2034)",
+      "url": "https://www.nysenate.gov/legislation/laws/RPA/711",
+      "locator": "N.Y. Real Prop. Acts. Law § 711(2) (version effective until June 15, 2034)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:23:10.455672+00:00",
+        "sha256": "8886e2f336220727f3143ffb5087b546ef16ba86e0154a8035970e14aefb71e3"
+      }
+    },
+    "US-NY:consumer_agency:7789bc75de1c": {
+      "category": "consumer_agency",
+      "title": "N.Y. Gen. Bus. Law § 349(b)–(c)",
+      "url": "https://www.nysenate.gov/legislation/laws/GBS/349",
+      "locator": "N.Y. Gen. Bus. Law § 349(b)–(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:25:36.534412+00:00",
+        "sha256": "7179e5041c4cb345e39874c3f0f410f2475a525f6313bae78fb3e4f8d02f1d76"
+      }
+    },
+    "US-NY:consumer_private_action:d7deca62f6af": {
+      "category": "consumer_private_action",
+      "title": "N.Y. Gen. Bus. Law § 349(h)",
+      "url": "https://www.nysenate.gov/legislation/laws/GBS/349",
+      "locator": "N.Y. Gen. Bus. Law § 349(h)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:25:36.534412+00:00",
+        "sha256": "7179e5041c4cb345e39874c3f0f410f2475a525f6313bae78fb3e4f8d02f1d76"
+      }
+    },
+    "US-NY:consumer_exceptions:38fbef1bd38b": {
+      "category": "consumer_exceptions",
+      "title": "N.Y. Gen. Bus. Law § 349(d)–(e)",
+      "url": "https://www.nysenate.gov/legislation/laws/GBS/349",
+      "locator": "N.Y. Gen. Bus. Law § 349(d)–(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:25:36.534412+00:00",
+        "sha256": "7179e5041c4cb345e39874c3f0f410f2475a525f6313bae78fb3e4f8d02f1d76"
+      }
+    },
+    "US-NY:wage_enforcement:af73a17111e7": {
+      "category": "wage_enforcement",
+      "title": "N.Y. Lab. Law § 198(1-a)",
+      "url": "https://www.nysenate.gov/legislation/laws/LAB/198",
+      "locator": "N.Y. Lab. Law § 198(1-a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:43:31.874127+00:00",
+        "sha256": "53f4eb60d2b2cea614a7a136e3a84532eb78c489bf88acaa1cd9bc9a14b9be18"
+      }
+    },
+    "US-NY:wage_limitations:709623cff189": {
+      "category": "wage_limitations",
+      "title": "N.Y. Lab. Law § 198(3)",
+      "url": "https://www.nysenate.gov/legislation/laws/LAB/198",
+      "locator": "N.Y. Lab. Law § 198(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:43:31.874127+00:00",
+        "sha256": "53f4eb60d2b2cea614a7a136e3a84532eb78c489bf88acaa1cd9bc9a14b9be18"
+      }
+    },
+    "US-NY:tolling:61b019faa95b": {
+      "category": "tolling",
+      "title": "N.Y. C.P.L.R. 208(a)",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/208",
+      "locator": "N.Y. C.P.L.R. 208(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:48:23.297010+00:00",
+        "sha256": "2be2f45da510b10c562c46419ba5ae56a48e76c7d5e3adf195245eda72751a91"
+      }
+    },
+    "US-NY:debt_forum:e1fba1ee47d0": {
+      "category": "debt_forum",
+      "title": "N.Y. C.P.L.R. 503(f)",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/503",
+      "locator": "N.Y. C.P.L.R. 503(f)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:18:27.238140+00:00",
+        "sha256": "7f4a32960cde6c63bcbfe53dbc785bfd365d352d0f3345c56803cee5e1858011"
+      }
+    },
+    "US-NY:debt_forum:e2e1fae300e7": {
+      "category": "debt_forum",
+      "title": "N.Y. City Civ. Ct. Act § 301",
+      "url": "https://www.nysenate.gov/legislation/laws/CCA/301",
+      "locator": "N.Y. City Civ. Ct. Act § 301",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:18:27.246917+00:00",
+        "sha256": "f06e5751e93b4a6e7e4b15e901c53ad243a04cc0f49abc3dc46d649fd472a904"
+      }
+    },
+    "US-NY:debt_pleading:6db51f26fdba": {
+      "category": "debt_pleading",
+      "title": "N.Y. C.P.L.R. 3016(j)",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/3016",
+      "locator": "N.Y. C.P.L.R. 3016(j)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:18:27.238140+00:00",
+        "sha256": "6dd1e90bdfe4ac013a25a116e32a75eb11feaa7777acedc675307aa9156b6135"
+      }
+    },
+    "US-NY:labor_agency:e00847f0321c": {
+      "category": "labor_agency",
+      "title": "N.Y. Lab. Law § 196-a(a)",
+      "url": "https://www.nysenate.gov/legislation/laws/LAB/196-A",
+      "locator": "N.Y. Lab. Law § 196-a(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:40:07.994747+00:00",
+        "sha256": "8ac689cd967abfc22e6bcdbe113b5eaf2161fa5a349535f447909d982d252a61"
+      }
+    },
+    "US-NY:debt_response:790d7ed860fd": {
+      "category": "debt_response",
+      "title": "N.Y. Uniform City Ct. Act § 402(a)–(b)",
+      "url": "https://www.nysenate.gov/legislation/laws/UCT/402",
+      "locator": "N.Y. Uniform City Ct. Act § 402(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:56:22.211597+00:00",
+        "sha256": "eb0d50f31e2dd6f3c02c0dd150b8dbeb20ebbbaebc27b803c8afa6069d36f135"
+      }
+    },
+    "US-NY:debt_response:acce59dd5d1c": {
+      "category": "debt_response",
+      "title": "N.Y. City Civ. Ct. Act § 402(a)–(b)",
+      "url": "https://www.nysenate.gov/legislation/laws/CCA/402",
+      "locator": "N.Y. City Civ. Ct. Act § 402(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:56:22.212405+00:00",
+        "sha256": "5b1cfc4ca5164110b33098e1c4b18bd0e8c9bd2513b461887b077f5ce57f5e5e"
+      }
+    },
+    "US-NY:justice_court_response:6e784ff7390d": {
+      "category": "justice_court_response",
+      "title": "N.Y. Uniform Just. Ct. Act § 402(a)–(c)",
+      "url": "https://www.nysenate.gov/legislation/laws/UJC/402",
+      "locator": "N.Y. Uniform Just. Ct. Act § 402(a)–(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:56:22.229649+00:00",
+        "sha256": "3c32c53856a001a8fbbfb330f4d4529329c452a657cf2520742cb2c5628eb855"
+      }
+    },
+    "US-NY:fault:daab6c3a5c05": {
+      "category": "fault",
+      "title": "2026 N.Y. Laws ch. 58, pt. EE, § 4",
+      "url": "https://www.nysenate.gov/legislation/bills/2025/A10008/amendment/C",
+      "locator": "2026 N.Y. Laws ch. 58, pt. EE, § 4",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:13:27.696126+00:00",
+        "sha256": "5de2a1c0a2736e90824850015ee1e9f0bd5b3936c36cdd16ed2b52452b837df0"
+      }
+    },
+    "US-NY:fault:c9128d5534eb": {
+      "category": "fault",
+      "title": "N.Y. CPLR 1411",
+      "url": "https://www.nysenate.gov/legislation/bills/2025/A10008/amendment/C",
+      "locator": "N.Y. CPLR 1411",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:13:27.696126+00:00",
+        "sha256": "5de2a1c0a2736e90824850015ee1e9f0bd5b3936c36cdd16ed2b52452b837df0"
+      }
+    },
+    "US-NY:accrual:8f7142992ad9": {
+      "category": "accrual",
+      "title": "N.Y. CPLR 214-c(2)–(6)",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/214-C",
+      "locator": "N.Y. CPLR 214-c(2)–(6)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:19:51.526706+00:00",
+        "sha256": "8167d0f210a6097afaf6f09727e4ddedba8b9c649594dd3f25b1d4401e2cb069"
+      }
+    },
+    "US-NY:small_claims:88122e07dcf4": {
+      "category": "small_claims",
+      "title": "N.Y.C. Civil Court Act § 1803(a)",
+      "url": "https://www.nysenate.gov/legislation/laws/CCA/1803",
+      "locator": "N.Y.C. Civil Court Act § 1803(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T20:42:09.068763+00:00",
+        "sha256": "43418e9aa79ec2030ebbd310c655f6ee8a2ac2bd180a6d90e6e51c298730133c"
+      }
+    },
+    "US-NY:small_claim_form:83a7ca4b820a": {
+      "category": "small_claim_form",
+      "title": "Statement of Claim (Small Claims)",
+      "url": "https://webfiles.nycourts.gov/public/2026-04/civ-sc-50.pdf",
+      "locator": "Statement of Claim (Small Claims)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:46:19.488563+00:00",
+        "sha256": "348e3117b09df5d583b3011331abed4628a38d2eab327edf8bbabb4cd1cfbe39",
+        "capture_url": "https://legacypdf.blob.core.usgovcloudapi.net/public/2026-04/civ-sc-50.pdf"
+      }
+    },
+    "US-NY:small_claim_form_index:f1c6454fca5b": {
+      "category": "small_claim_form_index",
+      "title": "Civil Court of the City of New York, Small Claims Part, small-claims filing instructions",
+      "url": "https://webfiles.nycourts.gov/public/2026-04/instructionsforfiling.pdf",
+      "locator": "Civil Court of the City of New York, Small Claims Part, small-claims filing instructions",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:48:34.854222+00:00",
+        "sha256": "e65f35b78cf6093fe4255a2895f849392c45b9980604d025f336166de90da622",
+        "capture_url": "https://legacypdf.blob.core.usgovcloudapi.net/public/2026-04/instructionsforfiling.pdf"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-NY:court:019166d38a56",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-NY:court_directory:146f064b6f83"
+    },
+    {
+      "id": "US-NY:court:9bbffa5eef08",
+      "name": "Court of Claims",
+      "level": "trial_directory",
+      "source_id": "US-NY:court_directory:23d9d7ea4c7d"
+    },
+    {
+      "id": "US-NY:court:458646662f03",
+      "name": "New York City Courts",
+      "level": "trial_directory",
+      "source_id": "US-NY:court_directory:08a20d52fc89"
+    },
+    {
+      "id": "US-NY:court:87cd21528fbb",
+      "name": "City, Town and Village Courts",
+      "level": "trial_directory",
+      "source_id": "US-NY:court_directory:41f5c4547237"
+    },
+    {
+      "id": "US-NY:court:ad8c892080d6",
+      "name": "Supreme",
+      "level": "general_trial",
+      "source_id": "US-NY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NY:court:774c517dcaa1",
+      "name": "County",
+      "level": "general_trial",
+      "source_id": "US-NY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NY:court:47bb6deb1044",
+      "name": "Claims",
+      "level": "general_trial",
+      "source_id": "US-NY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NY:court:8865e09f4724",
+      "name": "Surrogates’",
+      "level": "limited_trial",
+      "source_id": "US-NY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NY:court:6946571becdd",
+      "name": "Family",
+      "level": "limited_trial",
+      "source_id": "US-NY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NY:court:3c9c83e81fef",
+      "name": "District",
+      "level": "limited_trial",
+      "source_id": "US-NY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NY:court:c4a7a7b35c28",
+      "name": "City",
+      "level": "limited_trial",
+      "source_id": "US-NY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NY:court:fc34dcbe3861",
+      "name": "NYC Civil",
+      "level": "limited_trial",
+      "source_id": "US-NY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NY:court:fe0e6e988743",
+      "name": "NYC Criminal",
+      "level": "limited_trial",
+      "source_id": "US-NY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NY:court:0d81a8d52547",
+      "name": "Town & Village Justice",
+      "level": "limited_trial",
+      "source_id": "US-NY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "N.Y. C.P.L.R. § 214(5)",
+      "source_id": "US-NY:pi_limitations:ba1e5c214e0f",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "N.Y. C.P.L.R. § 213(2)",
+      "source_id": "US-NY:written_contract_limitations:7de544da597c",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "N.Y. C.P.L.R. § 213(2)",
+      "source_id": "US-NY:oral_contract_limitations:7de544da597c",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "N.Y. Real Prop. Acts. Law § 711. Grounds where landlord-tenant relationship exists",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "N.Y. Gen. Bus. Law § 349 et seq.",
+      "source_id": "US-NY:consumerLaw:e7ef6034d27d",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "6284fbf2e45eeac83a62d9ede67a68": {
+      "citation": "N.Y. CPLR 1411",
+      "source_id": "US-NY:fault:8d0e072334d2",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "(a) Except as provided in subsection (b) of this section, in any action to recover damages for personal injury, injury to property, or wrongful death, the culpable conduct attributable to the claimant or to the decedent, including contributory negligence or assumption of risk, shall not bar recovery. The amount of damages otherwise recoverable shall be diminished in the proportion which the culpable conduct attributable to the claimant or decedent bears to the culpable conduct which caused the damages. (b) In any action to recover damages for personal injury subject to article fifty-one of the insurance law, the culpable conduct attributable to the claimant shall bar recovery if the culpable conduct attributable to the claimant is greater than the culpable conduct of the person against whom recovery is sought or is greater than the combined culpable conduct of the persons against whom recovery is sought.",
+      "text_sha256": "442063ddeed4e06493d0a1fc452f23e9e9a08b55bb3749ca89aefdf147f670dc",
+      "publisher_sha256": "8e22857d706801cf6bdbcf8bdb3340ab2ed61845c63febd4b7f89715eed8834e",
+      "retrieved_at": "2026-11-17T20:50:35.153837+00:00",
+      "currentness": "unresolved",
+      "effective_from": "2026-05-26",
+      "publisher_history": "NY Senate revision date May 29, 2026. Chapter 58 part EE §§ 3–4 was signed May 26, 2026, and applies to actions and proceedings commenced on or after May 26, 2026."
+    },
+    "f8bd4c9e7a2f3fb5040aa03f09290b": {
+      "source_id": "US-NY:contract_formation:fa8a1cfeb8d9",
+      "authority_type": "statute",
+      "citation": "N.Y. U.C.C. § 2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "032f9a123f8b35b617534fa8aeecdd2845ffdba3abfec6f1991ae26b1ec93610",
+      "retrieved_at": "2026-11-18T15:14:31.473014+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "2f41aca3fd3253d20c8d12b5b05cc6": {
+      "source_id": "US-NY:commencement:26481f94bedb",
+      "authority_type": "statute",
+      "citation": "N.Y. CPLR 304",
+      "text": "(a) An action is commenced by filing a summons and complaint or summons with notice in accordance with rule twenty-one hundred two of this chapter. A special proceeding is commenced by filing a petition in accordance with rule twenty-one hundred two of this chapter. Where a court finds that circumstances prevent immediate filing, the signing of an order requiring the subsequent filing at a specific time and date not later than five days thereafter shall commence the action. (b) Notwithstanding any other provision of law, such filing may be accomplished by facsimile transmission or electronic means, as defined in subdivision (f) of rule twenty-one hundred three of this chapter, where and in the manner authorized by the chief administrator of the courts by rule. (c) For purposes of this section, and for purposes of section two hundred three of this chapter and section three hundred six-a of this article, filing shall mean the delivery of the summons with notice, summons and complaint or petition to the clerk of the court in the county in which the action or special proceeding is brought or any other person designated by the clerk of the court for that purpose. At the time of filing, the filed papers shall be date stamped by the clerk of the court who shall file them and maintain a record of the date of the filing and who shall return forthwith a date stamped copy, together with an index number, to the filing party, except where filing is by electronic means. Such filing shall not be accepted unless any fee required as specified in section eight thousand eighteen of this chapter has been paid. Where filing is by electronic means, any fee required shall be paid in the time and manner authorized by the chief administrator of the court by rule. (d) Where filing is by facsimile transmission, the clerk of the court need only return a date stamped copy of the first page of the papers initiating the lawsuit, together with the index number. (e) Where filing is by electronic means, the clerk shall, in accordance with rules promulgated by the chief administrator, forthwith notify the filing party of the index number and the date and time of filing. (f) A confirmation record produced by the filing party's facsimile machine or computer and an affidavit of filing by the filing party, shall be prima facie evidence that the filing party transmitted documents consistent with the date, time and place appearing on the confirmation record.",
+      "text_sha256": "d54ab7006a4853e70f5b15dc07c6189826b6bc0cef8552f56b26d5b0ef97b9ec",
+      "publisher_sha256": "cc80bb63eca7f05b0495ba9072f297ab3fa21fba56e250fd1adfb590698d12f4",
+      "retrieved_at": "2026-11-18T20:45:52.057836+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "4a5686da4e40a14918ba99e7a70627": {
+      "source_id": "US-NY:small_claims:04b6983c0db1",
+      "authority_type": "statute",
+      "citation": "N.Y.C. Civil Court Act § 1801",
+      "text": "The term \"small claim\" or \"small claims\" as used in this act shall mean and include any cause of action for money only not in excess of ten thousand dollars exclusive of interest and costs, or any action commenced by a party aggrieved by an arbitration award rendered pursuant to part 137 of the rules of the chief administrator of the courts (22 NYCRR Part 137) in which the amount in dispute does not exceed ten thousand dollars, provided that the defendant either resides, or has an office for the transaction of business or a regular employment within the city of New York, or where claimant is a tenant or lessee of real property owned by the defendant and the claim relates to such tenancy or lease, and such real property is situated within the city of New York.",
+      "text_sha256": "3e1a8a55dcdf152d29e7c82fc867ccfd2abb79a928255a5cb7ef65acaa0ba83b",
+      "publisher_sha256": "501820e82bf3bfd2e29eea4d72e01dc919d94c9a8bde06a0789cdd132065db63",
+      "retrieved_at": "2026-11-19T19:17:29.362293+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Civil Court of the City of New York"
+    },
+    "3d9788583f7aa9f17c0fa9b192dbc4": {
+      "source_id": "US-NY:consumerLaw:6b8b7996ce9e",
+      "authority_type": "statute",
+      "citation": "N.Y. Gen. Bus. Law § 349(a)",
+      "text": "(a) Unfair, deceptive, or abusive acts or practices in the conduct of any business, trade or commerce or in the furnishing of any service in this state are hereby declared unlawful. For the purposes of this section: (1) An act or practice is unfair when it causes or is likely to cause substantial injury which is not reasonably avoidable and is not outweighed by countervailing benefits to consumers or to competition. The term \"substantial injury\" as used in this subdivision shall have the same meaning as the term \"substantial injury\" in the federal trade commission act, 15 U.S.C. Section 41 et seq. (2) An act or practice is abusive when: (i) it materially interferes with the ability of a person to understand a term or condition of a product or service; or (ii) it takes unreasonable advantage of: (A) a lack of understanding on the part of a person of the material risks, costs, or conditions of a product or service; (B) the inability of a person to protect such person's interests in selecting or using a product or service; or (C) the reasonable reliance by a person on a person engaging in the act or practice to act in the relying person's interests.",
+      "text_sha256": "e474058b89c7a9f076403e1587e6cd66770e169cc0bfd08fbcb74ada136e4678",
+      "publisher_sha256": "642b7f983fcc19eba8ebb0760b749a38dadaac2572ca75f9eb146a84a1101a1f",
+      "retrieved_at": "2026-11-19T19:26:45.145872+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "bf401048b292879943a0c3d3b57bcc": {
+      "source_id": "US-NY:pi_limitations:c751287f58e8",
+      "authority_type": "statute",
+      "citation": "N.Y. CPLR 214",
+      "text": "The following actions must be commenced within three years: 1. an action against a sheriff, constable or other officer for the non-payment of money collected upon an execution; 2. an action to recover upon a liability, penalty or forfeiture created or imposed by statute except as provided in sections 213 and 215; 3. an action to recover a chattel or damages for the taking or detaining of a chattel; 4. an action to recover damages for an injury to property except as provided in section 214-c; 5. an action to recover damages for a personal injury except as provided in sections 214-b, 214-c, 214-i and 215; 6. an action to recover damages for malpractice, other than medical, dental or podiatric malpractice, regardless of whether the underlying theory is based in contract or tort; and 7. an action to annul a marriage on the ground of fraud; the time within which the action must be commenced shall be computed from the time the plaintiff discovered the facts constituting the fraud, but if the plaintiff is a person other than the spouse whose consent was obtained by fraud, the time within which the action must be commenced shall be computed from the time, if earlier, that that spouse discovered the facts constituting the fraud.",
+      "text_sha256": "d87cf87da039f43a4a64e519ef6bf1b7929414b18e01d91d8082ba9f9bc58ab1",
+      "publisher_sha256": "57d787694ac254ec9f7c1ef444273362e6210d2c0744b78cf87c38501b1b6f96",
+      "retrieved_at": "2026-11-19T19:31:22.174933+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "a89303538eef251ef9d9369bc38f93": {
+      "source_id": "US-NY:general_contract_limitations:9b00ebb749e2",
+      "authority_type": "statute",
+      "citation": "N.Y. CPLR 213(1)–(2)",
+      "text": "The following actions must be commenced within six years: 1. an action for which no limitation is specifically prescribed by law; 2. an action upon a contractual obligation or liability, express or implied, except as provided in section two hundred thirteen-a or two hundred fourteen-i of this article or article 2 of the uniform commercial code or article 36-B of the general business law;",
+      "text_sha256": "40ebb9aa1f1a534be7689b2ea0ba822e6a3e00696906f0cdf116e5cb5859eea1",
+      "publisher_sha256": "4e9787e9bcf9a4025761956ea622ba2facfcacf33228279c871df019c4701811",
+      "retrieved_at": "2026-11-19T19:35:41.909786+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "07f0eb132784751c2506f3bef1a765": {
+      "source_id": "US-NY:response:7c480b070e2f",
+      "authority_type": "statute",
+      "citation": "N.Y. CPLR 320(a)",
+      "text": "(a) Requirement of appearance. The defendant appears by serving an answer or a notice of appearance, or by making a motion which has the effect of extending the time to answer. An appearance shall be made within twenty days after service of the summons, except that if the summons was served on the defendant by delivering it to an official of the state authorized to receive service in his behalf or if it was served pursuant to section 303, subdivision two, three, four or five of section 308, or sections 313, 314 or 315, the appearance shall be made within thirty days after service is complete. If the complaint is not served with the summons, the time to appear may be extended as provided in subdivision (b) of section 3012.",
+      "text_sha256": "e604e2de4774d51753c194aca3d6dd58da85b75d4ac4c415f0fe1c22fa491205",
+      "publisher_sha256": "9dccb65ef5691a52436883305cd5bfac24dea988675c488dad9c1d945ebcd9a3",
+      "retrieved_at": "2026-11-19T19:42:59.508864+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "New York courts governed by the CPLR"
+    },
+    "4c015c6159486a790f9a5d7efd0476": {
+      "source_id": "US-NY:service:2db664050016",
+      "authority_type": "statute",
+      "citation": "N.Y. CPLR 308",
+      "text": "Personal service upon a natural person shall be made by any of the following methods: 1. by delivering the summons within the state to the person to be served; or 2. by delivering the summons within the state to a person of suitable age and discretion at the actual place of business, dwelling place or usual place of abode of the person to be served and by either mailing the summons to the person to be served at his or her last known residence or by mailing the summons by first class mail to the person to be served at his or her actual place of business in an envelope bearing the legend \"personal and confidential\" and not indicating on the outside thereof, by return address or otherwise, that the communication is from an attorney or concerns an action against the person to be served, such delivery and mailing to be effected within twenty days of each other; proof of such service shall be filed with the clerk of the court designated in the summons within twenty days of either such delivery or mailing, whichever is effected later; service shall be complete ten days after such filing; proof of service shall identify such person of suitable age and discretion and state the date, time and place of service, except in matrimonial actions where service hereunder may be made pursuant to an order made in accordance with the provisions of subdivision a of section two hundred thirty-two of the domestic relations law; or 3. by delivering the summons within the state to the agent for service of the person to be served as designated under rule 318, except in matrimonial actions where service hereunder may be made pursuant to an order made in accordance with the provisions of subdivision a of section two hundred thirty-two of the domestic relations law; 4. where service under paragraphs one and two cannot be made with due diligence, by affixing the summons to the door of either the actual place of business, dwelling place or usual place of abode within the state of the person to be served and by either mailing the summons to such person at his or her last known residence or by mailing the summons by first class mail to the person to be served at his or her actual place of business in an envelope bearing the legend \"personal and confidential\" and not indicating on the outside thereof, by return address or otherwise, that the communication is from an attorney or concerns an action against the person to be served, such affixing and mailing to be effected within twenty days of each other; proof of such service shall be filed with the clerk of the court designated in the summons within twenty days of either such affixing or mailing, whichever is effected later; service shall be complete ten days after such filing, except in matrimonial actions where service hereunder may be made pursuant to an order made in accordance with the provisions of subdivision a of section two hundred thirty-two of the domestic relations law; 5. in such manner as the court, upon motion without notice, directs, if service is impracticable under paragraphs one, two and four of this section. 6. For purposes of this section, \"actual place of business\" shall include any location that the defendant, through regular solicitation or advertisement, has held out as its place of business.",
+      "text_sha256": "c4013e4cb7d61a5408365710f24cb1514d9ccfcac06e6e42d496d20fbfb5fb40",
+      "publisher_sha256": "26966a415ad0e72a488eaa0266ab8ce2fe7b65138827fa9e7c1e2d75d5aecdda",
+      "retrieved_at": "2026-11-20T15:21:02.583732+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "New York courts governed by the CPLR",
+      "edition": "NY Senate Open Legislation revision labeled September 22, 2014"
+    },
+    "f00d44b60656d49919221f9d62ffe0": {
+      "source_id": "US-NY:wageLaw:585fafc9bdd3",
+      "authority_type": "statute",
+      "citation": "N.Y. Lab. Law § 191(1)(a)(i)",
+      "text": "(i) A manual worker shall be paid weekly and not later than seven calendar days after the end of the week in which the wages are earned; provided however that a manual worker employed by an employer authorized by the commissioner pursuant to subparagraph (ii) of this paragraph or by a non-profitmaking organization shall be paid in accordance with the agreed terms of employment, but not less frequently than semi-monthly.",
+      "text_sha256": "7a358c3e4572c6d39209a7fd19ded9baa2871b02115bcb59b71c4facf460ba42",
+      "publisher_sha256": "75da18789ae67c33332cc6bbfeb3b3646451385e60a29895efb32790e285c5cf",
+      "retrieved_at": "2026-11-20T17:37:34.210071+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "c5b2067b5fa348c1d56fa8b6602d75": {
+      "source_id": "US-NY:deposit:53a1773ce149",
+      "authority_type": "statute",
+      "citation": "N.Y. Gen. Oblig. Law § 7-108(1-a), introductory scope and paragraphs (a), (e)–(g)",
+      "text": "1-a. Except in dwelling units subject to the city rent and rehabilitation law or the emergency housing rent control law, continuing care retirement communities licensed pursuant to article forty-six or forty-six-A of the public health law, assisted living providers licensed pursuant to article forty-six-B of the public health law, adult care facilities licensed pursuant to article seven of the social services law, senior residential communities that have submitted an offering plan to the attorney general, or not-for-profit independent retirement communities that offer personal emergency response, housekeeping, transportation and meals to their residents: (a) No deposit or advance shall exceed the amount of one month's rent, unless the deposit or advance is for a seasonal use dwelling unit as provided for in subdivisions four and five of this section, or unless the deposit or advance is for an owner-occupied cooperative apartment as provided for in subdivision six of this section. […] (e) Within fourteen days after the tenant has vacated the premises, the landlord shall provide the tenant with an itemized statement indicating the basis for the amount of the deposit retained, if any, and shall return any remaining portion of the deposit to the tenant. If a landlord fails to provide the tenant with the statement and deposit within fourteen days, the landlord shall forfeit any right to retain any portion of the deposit. (f) In any action or proceeding disputing the amount of any amount of the deposit retained, the landlord shall bear the burden of proof as to the reasonableness of the amount retained. (g) Any person who violates the provisions of this subdivision shall be liable for actual damages, provided a person found to have willfully violated this subdivision shall be liable for punitive damages of up to twice the amount of the deposit or advance.",
+      "text_sha256": "c8a716990b1bce65561a4410fef7afb2bf1c952c5e37b07f761cd59d696d8fec",
+      "publisher_sha256": "2f425dff410a73b30cb3f4f7e9ee3d846faa91432e1d38efdee06a9b464a086b",
+      "retrieved_at": "2026-11-20T17:54:37.125228+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "500888ea4c06e63ba91c990c62a240": {
+      "source_id": "US-NY:debtLaw:2b271cb25470",
+      "authority_type": "statute",
+      "citation": "N.Y. C.P.L.R. § 214-i (consumer credit transactions, nonrevival)",
+      "text": "An action arising out of a consumer credit transaction where a purchaser, borrower or debtor is a defendant must be commenced within three years, except as provided in section two hundred thirteen-a of this article or article 2 of the uniform commercial code or article 36-B of the general business law. Notwithstanding any other provision of law, when the applicable limitations period expires, any subsequent payment toward, written or oral affirmation of or other activity on the debt does not revive or extend the limitations period.",
+      "text_sha256": "bbba7cd4bcac3ef4b3b50727bf870268edb719ee7eb49d83ae8ab88a2ac2ecba",
+      "publisher_sha256": "8e50c2d56b5960e3680f5da7d66c5b2cf03ce158313e280256bf57c74e40ffd6",
+      "retrieved_at": "2026-11-20T18:32:56.432673+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "New York Senate revision dated April 8, 2022, consumer-credit provision"
+    },
+    "7ac7f6d1a48ac900c093067a9414d5": {
+      "source_id": "US-NY:negligence_elements:8cb27ad60330",
+      "authority_type": "opinion",
+      "citation": "Evarts v. Pyro Engineering, Inc., 2014 NY Slip Op 02996, 117 A.D.3d 1148, 1150",
+      "text": "To establish a prima facie case of negligence, the plaintiff is required to demonstrate that the defendant owed a duty to him or her, that the defendant breached that duty and that such breach was a proximate cause of the injuries sustained (see Ortega v Liberty Holdings, LLC, 111 AD3d 904, 906 [2013]; Merchants Mut. Ins. Co. v Quality Signs of Middletown, 110 AD3d 1042, 1043 [2013]).",
+      "text_sha256": "732e6db797250a351a857d3cc91e57e3ddcd72ec4c1d060c88fd384b4440d2e9",
+      "publisher_sha256": "4f3fc75d0f9c84da7eeca678f1c9847facb6c89a26971d8b8ecbe9babe730198",
+      "retrieved_at": "2026-11-21T04:21:01.617255+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2014-05-01",
+      "court": "New York Supreme Court, Appellate Division, Third Department",
+      "decision_date": "2014-05-01",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from partial summary judgment dismissing claims arising from a premature pyrotechnic detonation.",
+      "publisher_member": "New York State Law Reporting Bureau corrected publication, 117 A.D.3d at 1150"
+    },
+    "7b1b4a5c43782c7fbb70e5a79a1640": {
+      "source_id": "US-NY:service_time_limit:4ba8d081ba68",
+      "authority_type": "statute",
+      "citation": "N.Y. C.P.L.R. 306-b",
+      "text": "Service of the summons and complaint, summons with notice, or petition with a notice of petition or order to show cause shall be made within one hundred twenty days after the commencement of the action or proceeding, provided that in an action or proceeding, except a proceeding commenced under the election law, where the applicable statute of limitations is four months or less, service shall be made not later than fifteen days after the date on which the applicable statute of limitations expires. If service is not made upon a defendant within the time provided in this section, the court, upon motion, shall dismiss the action without prejudice as to that defendant, or upon good cause shown or in the interest of justice, extend the time for service.",
+      "text_sha256": "bf875009077e12cded216246052454be4ddd3e411813df3c0c3e7bbfa13a38a2",
+      "publisher_sha256": "2f729e9ece944dced37bc5a96a28780028b565d8d175fc82a2bf1e6ede5f5508",
+      "retrieved_at": "2026-11-21T22:06:51.049371+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New York Senate Open Legislation CPLR 306-b, selected publication revision dated April 24, 2026"
+    },
+    "8540664e4c47d92bc6c3782da6c7f4": {
+      "source_id": "US-NY:tenancy_notice:976658c064e8",
+      "authority_type": "statute",
+      "citation": "N.Y. Real Prop. Acts. Law § 711(2) (version effective until June 15, 2034)",
+      "text": "2. The tenant has defaulted in the payment of rent, pursuant to the agreement under which the premises are held, and a written demand of the rent has been made with at least fourteen days' notice requiring, in the alternative, the payment of the rent, or the possession of the premises, has been served upon the tenant as prescribed in section seven hundred thirty-five of this article. The fourteen-day notice shall append or contain the notice required pursuant to section two hundred thirty-one-c of the real property law, which shall state the following: (i) if the premises are or are not subject to article six-A of the real property law, the \"good cause eviction law\", and if the premises are exempt, such notice shall state why the premises are exempt from such law; (ii) if the landlord is not renewing the lease for a unit subject to article six-A of the real property law, the lawful basis for such non-renewal; and (iii) if the landlord is increasing the rent upon an existing lease of a unit subject to article six-A of the real property law above the applicable local rent standard, as defined in subdivision eight of section two hundred eleven of the real property law, the justification for such increase. Any person succeeding to the landlord's interest in the premises may proceed under this subdivision for rent due such person's predecessor in interest if such person has a right thereto. Where a tenant dies during the term of the lease and rent due has not been paid and the apartment is occupied by a person with a claim to possession, a proceeding may be commenced naming the occupants of the apartment seeking a possessory judgment only as against the estate. Entry of such a judgment shall be without prejudice to the possessory claims of the occupants, and any warrant issued shall not be effective as against the occupants.",
+      "text_sha256": "21938ff7f15d09d43fbc143b3a7b3e97935c5aaeca06abf958cc094d0869feb7",
+      "publisher_sha256": "8886e2f336220727f3143ffb5087b546ef16ba86e0154a8035970e14aefb71e3",
+      "retrieved_at": "2026-11-21T22:23:10.455672+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New York Senate Open Legislation revision dated December 13, 2024; subsection (2) version marked effective until June 15, 2034",
+      "effective_until": "2034-06-15"
+    },
+    "c3d4eff578a391584b451d6b3ddc34": {
+      "source_id": "US-NY:consumer_agency:7789bc75de1c",
+      "authority_type": "statute",
+      "citation": "N.Y. Gen. Bus. Law § 349(b)–(c)",
+      "text": "(b) (1) Whenever the attorney general shall believe from evidence satisfactory to the attorney general that any person, including but not limited to an individual, firm, corporation, company, partnership or association, or agent or employee thereof, has engaged in or is about to engage in any of the acts or practices stated to be unfair, deceptive, or abusive, the attorney general may bring an action or proceeding in the name and on behalf of the people of the state of New York to enjoin such unlawful acts or practices and to obtain restitution of any moneys or property obtained directly or indirectly by any such unlawful acts or practices. In such action or proceeding, preliminary relief may be granted under article sixty-three of the civil practice law and rules. (2) The attorney general may bring such an action or proceeding against any person conducting any business, trade or commerce or furnishing a service in this state, whether or not the person is without the state. The attorney general may also bring such an action or proceeding against any person within the state conducting any business, trade, or commerce or furnishing a service, whether or not the business, trade, commerce, or service is conducted or furnished without the state. (c) Before commencing an action or proceeding pursuant to this section, the attorney general shall be required to give the person against whom such action or proceeding is contemplated notice by certified mail and an opportunity to show in writing within ten calendar days after receipt of notice why an action or proceeding should not be instituted against such person, unless the attorney general shall find, in any case in which the attorney general seeks preliminary relief, that to give such notice and opportunity is not in the public interest.",
+      "text_sha256": "0f8b3c80e5724b8884f1c849273f3479cffa9c97d00c495cd2f5eaeda823e256",
+      "publisher_sha256": "7179e5041c4cb345e39874c3f0f410f2475a525f6313bae78fb3e4f8d02f1d76",
+      "retrieved_at": "2026-11-21T22:25:36.534412+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New York Senate Open Legislation revision dated April 3, 2026, following 2025 chapter 708 and 2026 chapter 94; revision date identifies the publication"
+    },
+    "8ffd2cf26309fb511f9ffaa0eb5053": {
+      "source_id": "US-NY:consumer_private_action:d7deca62f6af",
+      "authority_type": "statute",
+      "citation": "N.Y. Gen. Bus. Law § 349(h)",
+      "text": "(h) In addition to the right of action granted to the attorney general pursuant to this section, any person who has been injured by reason of any deceptive act or deceptive practice made unlawful by this section may bring an action in such person's own name to enjoin such deceptive act or deceptive practice, an action to recover such person's actual damages or fifty dollars, whichever is greater, or both such actions. The court may, in its discretion, increase the award of damages to an amount not to exceed three times the actual damages up to one thousand dollars, if the court finds the defendant willfully or knowingly violated this section. The court may award reasonable attorney's fees to a prevailing plaintiff.",
+      "text_sha256": "ff1873200627a3becc21d7dadab5e479acb96846a6d09e4458d0e3dc36abb819",
+      "publisher_sha256": "7179e5041c4cb345e39874c3f0f410f2475a525f6313bae78fb3e4f8d02f1d76",
+      "retrieved_at": "2026-11-21T22:25:36.534412+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New York Senate Open Legislation revision dated April 3, 2026, following 2025 chapter 708 and 2026 chapter 94; revision date identifies the publication"
+    },
+    "cdaa11d38f017b5f55f4044caf589b": {
+      "source_id": "US-NY:consumer_exceptions:38fbef1bd38b",
+      "authority_type": "statute",
+      "citation": "N.Y. Gen. Bus. Law § 349(d)–(e)",
+      "text": "(d) In any action or proceeding brought pursuant to this section it shall be a complete defense that the act or practice is, or if in interstate commerce would be, subject to and complies with the rules and regulations of, and the statutes administered by, the federal trade commission or any official department, division, commission or agency of the United States as such rules, regulations or statutes are interpreted by the federal trade commission or such department, division, commission or agency or the federal courts. (e) Nothing in this section shall apply to any television or radio broadcasting station or to any publisher or printer of a newspaper, magazine or other form of printed advertising, who broadcasts, publishes, or prints the advertisement.",
+      "text_sha256": "ee71c4358fac2fb21915e14a483b9a8fd2ea1c82bce3e29d3360de3cec0a2551",
+      "publisher_sha256": "7179e5041c4cb345e39874c3f0f410f2475a525f6313bae78fb3e4f8d02f1d76",
+      "retrieved_at": "2026-11-21T22:25:36.534412+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New York Senate Open Legislation revision dated April 3, 2026, following 2025 chapter 708 and 2026 chapter 94; revision date identifies the publication"
+    },
+    "a9390366cb947739eac20249b13a48": {
+      "source_id": "US-NY:wage_enforcement:af73a17111e7",
+      "authority_type": "statute",
+      "citation": "N.Y. Lab. Law § 198(1-a)",
+      "text": "1-a. On behalf of any employee paid less than the wage to which they are entitled under the provisions of this article, the commissioner may bring any legal action necessary, including administrative action, to collect such claim and as part of such legal action, in addition to any other remedies and penalties otherwise available under this article, the commissioner shall assess against the employer the full amount of any such underpayment, and an additional amount as liquidated damages, unless the employer proves a good faith basis for believing that its underpayment of wages was in compliance with the law. Liquidated damages shall be calculated by the commissioner as no more than one hundred percent of the total amount of wages found to be due, except such liquidated damages may be up to three hundred percent of the total amount of the wages found to be due for a willful violation of section one hundred ninety-four of this article. In any action instituted in the courts upon a wage claim by an employee or the commissioner in which the employee prevails, the court shall allow such employee to recover the full amount of any underpayment, all reasonable attorney's fees, prejudgment interest as required under the civil practice law and rules, and, unless the employer proves a good faith basis to believe that its underpayment of wages was in compliance with the law, an additional amount as liquidated damages equal to one hundred percent of the total amount of the wages found to be due, except such liquidated damages may be up to three hundred percent of the total amount of the wages found to be due for a willful violation of section one hundred ninety-four of this article. Notwithstanding the provisions of this subdivision, liquidated damages shall not be applicable to violations of paragraph a of subdivision one of section one hundred ninety-one of this article where the employer paid the employee wages on a regular payday, no less frequently than semi-monthly. Such violations shall be subject to damages as follows: (i) no more than one hundred percent of the lost interest found to be due for the delayed payment of wages calculated using a daily interest rate for each day payment is late based on the annual rate of interest then in effect, as prescribed by the superintendent of financial services pursuant to section fourteen-a of the banking law for the employer's first violation; or (ii) for conduct occurring after the effective date of this paragraph, liquidated damages equal to one hundred percent of the total amount of wages found to be due in violation of paragraph a of subdivision one of section one hundred ninety-one of this article for any employer who, after the effective date of this paragraph, has been subject to one or more previous findings and orders for violations of paragraph a of subdivision one of section one hundred ninety-one of this article for which no proceeding for administrative or judicial review as provided in this chapter is pending and the time for initiation of such proceeding shall have expired and relating to employees performing the same work. For purposes of this subdivision, an order shall mean a single final order or determination made by the commissioner or a court of competent jurisdiction, regardless of the number of employees or the time period that was subject to such order.",
+      "text_sha256": "637372d45e93d1151c24910badd7c49477adc495c9f544c19df9038b1de1e09f",
+      "publisher_sha256": "53f4eb60d2b2cea614a7a136e3a84532eb78c489bf88acaa1cd9bc9a14b9be18",
+      "retrieved_at": "2026-11-21T22:43:31.874127+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New York Senate codified revision May 16, 2025; text verified against S3006-C Part U, pp. 53-54, signed May 9, 2025 as chapter 56. Part U applies to causes pending or commenced on or after May 9, 2025; subdivision preserves additional conduct and order timing conditions.",
+      "effective_from": "2025-05-09"
+    },
+    "9c63fa9b1d1ecdf503e93ecdee5a5b": {
+      "source_id": "US-NY:wage_limitations:709623cff189",
+      "authority_type": "statute",
+      "citation": "N.Y. Lab. Law § 198(3)",
+      "text": "3. Notwithstanding any other provision of law, an action to recover upon a liability imposed by this article must be commenced within six years. The statute of limitations shall be tolled from the date an employee files a complaint with the commissioner or the commissioner commences an investigation, whichever is earlier, until an order to comply issued by the commissioner becomes final, or where the commissioner does not issue an order, until the date on which the commissioner notifies the complainant that the investigation has concluded. Investigation by the commissioner shall not be a prerequisite to nor a bar against a person bringing a civil action under this section. All employees shall have the right to recover full wages, benefits and wage supplements and liquidated damages accrued during the six years previous to the commencing of such action, whether such action is instituted by the employee or by the commissioner. There is no exception to liability under this section for the unauthorized failure to pay wages, benefits or wage supplements.",
+      "text_sha256": "0981571119cbcc801e9262a876f2aa85b0ec5b7ce9c32a09e41da90c71115645",
+      "publisher_sha256": "53f4eb60d2b2cea614a7a136e3a84532eb78c489bf88acaa1cd9bc9a14b9be18",
+      "retrieved_at": "2026-11-21T22:43:31.874127+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New York Senate codified revision May 16, 2025; Article 6 limitations, tolling dependent on investigation and agency dispositions"
+    },
+    "6c64b1f96cc5ef87f93cdbb50769e8": {
+      "source_id": "US-NY:tolling:61b019faa95b",
+      "authority_type": "statute",
+      "citation": "N.Y. C.P.L.R. 208(a)",
+      "text": "(a) If a person entitled to commence an action is under a disability because of infancy or insanity at the time the cause of action accrues, and the time otherwise limited for commencing the action is three years or more and expires no later than three years after the disability ceases, or the person under the disability dies, the time within which the action must be commenced shall be extended to three years after the disability ceases or the person under the disability dies, whichever event first occurs; if the time otherwise limited is less than three years, the time shall be extended by the period of disability. The time within which the action must be commenced shall not be extended by this provision beyond ten years after the cause of action accrues, except, in any action other than for medical, dental or podiatric malpractice, where the person was under a disability due to infancy. This section shall not apply to an action to recover a penalty or forfeiture, or against a sheriff or other officer for an escape.",
+      "text_sha256": "4592554564d70988e3bc0f50eb1708f7e331cb5225f3b789d2cb37712dfb7e32",
+      "publisher_sha256": "2be2f45da510b10c562c46419ba5ae56a48e76c7d5e3adf195245eda72751a91",
+      "retrieved_at": "2026-11-21T22:48:23.297010+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New York Senate Open Legislation February 15, 2019 revision; disability at accrual, maximum and malpractice qualification; separate subsection (b) omitted"
+    },
+    "d6f5c140d1d9168e96784100c9ca4e": {
+      "source_id": "US-NY:debt_forum:e1fba1ee47d0",
+      "authority_type": "statute",
+      "citation": "N.Y. C.P.L.R. 503(f)",
+      "text": "(f) Consumer credit transaction. In an action arising out of a consumer credit transaction where a purchaser, borrower or debtor is a defendant, the place of trial shall be the residence of a defendant, if one resides within the state or the county where such transaction took place, if it is within the state, or, in other cases, as set forth in subdivision (a).",
+      "text_sha256": "ffbb892fd0e3dcb2cfd7a1018c117fded00c2618cb9efd6bd319b6b670723457",
+      "publisher_sha256": "7f4a32960cde6c63bcbfe53dbc785bfd365d352d0f3345c56803cee5e1858011",
+      "retrieved_at": "2026-11-22T03:18:27.238140+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Place of trial in qualifying consumer credit transactions; residual venue under subdivision (a)."
+    },
+    "e6352b317acd7b383d22c4afa114bb": {
+      "source_id": "US-NY:debt_forum:e2e1fae300e7",
+      "authority_type": "statute",
+      "citation": "N.Y. City Civ. Ct. Act § 301",
+      "text": "§ 301. Transitory actions; venue. An action, other than a real property action, shall be brought: (a) in an action arising out of a consumer credit transaction where a purchaser, borrower, or a debtor is a defendant, if a defendant resides in the city of New York, or if such transaction took place therein, in the county in which a defendant resides at the commencement thereof or in the county in which such transaction took place, and in all other cases, in the county in which one of the parties resides at the commencement thereof; or (b) if no party resides in the city of New York, in the county in which one of the parties has regular employment or a place for the regular transaction of business; or (c) if no party has such employment or place of business within the city of New York, in the county in which the cause of action arose; or (d) if none of the foregoing are applicable, in any county.",
+      "text_sha256": "1c2461c8a19599ddd9b691c945c0fc3dc17b3e70283cfa10a4bac97f5dba0211",
+      "publisher_sha256": "f06e5751e93b4a6e7e4b15e901c53ad243a04cc0f49abc3dc46d649fd472a904",
+      "retrieved_at": "2026-11-22T03:18:27.246917+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Civil Court of the City of New York",
+      "publisher_member": "NYC Civil Court transitory-action venue hierarchy including covered consumer credit actions."
+    },
+    "18ac42f597811f71d2d6a642660e1d": {
+      "source_id": "US-NY:debt_pleading:6db51f26fdba",
+      "authority_type": "statute",
+      "citation": "N.Y. C.P.L.R. 3016(j)",
+      "text": "(j) Consumer credit transactions. In an action arising out of a consumer credit transaction where a purchaser, borrower or debtor is a defendant, the contract or other written instrument on which the action is based shall be attached to the complaint, however, for the purposes of this section, if the account was a revolving credit account, the charge-off statement may be attached to the complaint instead of the contract or other written instrument, and the following information shall be set forth in the complaint: (1) The name of the original creditor; (2) The last four digits of the account number printed on the most recent monthly statement recording a purchase transaction, last payment or balance transfer; (3) The date and amount of the last payment or, if no payment was made, a statement that the purchaser, borrower or debtor made no payment on the account; (4) If the complaint contains a cause of action based on an account stated, the date on or about which the final statement of account was provided to the defendant; (5) (A) Except as provided in subparagraph (B) of this paragraph, an itemization of the amount sought, by (i) principal; (ii) finance charge or charges; (iii) fees imposed by the original creditor; (iv) collection costs; (v) attorney's fees; (vi) interest; and (vii) any other fees and charges. (B) If the account was a revolving credit account, an itemization of the amount sought, by: (i) the total amount of the debt due as of charge-off; (ii) the total amount of interest accrued since charge-off; (iii) the total amount of non-interest charges or fees accrued since charge-off; and (iv) the total amount of payments and/or credits made on the debt since charge-off; (6) The account balance printed on the most recent monthly statement recording a purchase transaction, last payment or balance transfer; (7) (A) Whether the plaintiff is the original creditor. (B) If the plaintiff is not the original creditor, the complaint shall also state (i) the date on which the debt was sold or assigned to the plaintiff; (ii) the name of each previous owner of the account from the original creditor to the plaintiff and the date on which the debt was assigned to that owner by the original creditor or subsequent owner; and (iii) the amount due at the time of the sale or assignment of the debt by the original creditor; and (8) Any matters required to be stated with particularity pursuant to rule 3015 of this article.",
+      "text_sha256": "b65a6c51c5ae8228c9a941f52c2c43b5ccae0df597cd2f21113202612e25431b",
+      "publisher_sha256": "6dd1e90bdfe4ac013a25a116e32a75eb11feaa7777acedc675307aa9156b6135",
+      "retrieved_at": "2026-11-22T03:18:27.238140+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Consumer credit complaint information and attached written instrument or qualifying revolving-credit charge-off statement."
+    },
+    "b80b5b62127899f51551d839eee172": {
+      "source_id": "US-NY:labor_agency:e00847f0321c",
+      "authority_type": "statute",
+      "citation": "N.Y. Lab. Law § 196-a(a)",
+      "text": "(a) Any employee; person or organization acting on the employee's behalf; or the recognized and certified collective bargaining agent acting on the employee's behalf, may file with the commissioner a complaint regarding a violation of this article, article five, seven, nineteen, or nineteen-A of this chapter for an investigation of such complaint and statement setting the appropriate remedy, if any. The commissioner shall keep the names of employees that are the subject of an investigation confidential until such time that disclosure is necessary for resolution of an investigation or a complaint. Failure of an employer to keep adequate records or provide statements of wages to employees as required under this chapter, in addition to exposing such employer to penalties authorized under subdivision one of section two hundred eighteen of this chapter, shall not operate as a bar to filing of a complaint by an employee. In such a case the employer in violation shall bear the burden of proving that the complaining employee was paid wages, benefits and wage supplements.",
+      "text_sha256": "6699f7d5956e41a2cf1fdba55b65000531c81b34060f1c8248ef6517755f88cf",
+      "publisher_sha256": "8ac689cd967abfc22e6bcdbe113b5eaf2161fa5a349535f447909d982d252a61",
+      "retrieved_at": "2026-11-22T03:40:07.994747+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "New York State Senate, parties permitted to complain, limits on confidentiality and employer recordkeeping ramifications."
+    },
+    "faeed44d1064954ba262a5e9bd5c6d": {
+      "source_id": "US-NY:debt_response:790d7ed860fd",
+      "authority_type": "statute",
+      "citation": "N.Y. Uniform City Ct. Act § 402(a)–(b)",
+      "text": "(a) If the summons is personally delivered to the defendant within the county, it shall require him to appear and answer within ten days after its service. (b) If the summons is served: (1) by delivery to a person, including an actual or statutory designee, other than the defendant; or (2) outside the county; or (3) by publication; or (4) by any means other than personal delivery to the defendant within the county, it shall provide that the defendant must appear and answer within thirty days after service is complete.",
+      "text_sha256": "02f04fd0a6ac9f628dee8bf8e52b6cb821b6827b0a885816812d232c3320919f",
+      "publisher_sha256": "eb0d50f31e2dd6f3c02c0dd150b8dbeb20ebbbaebc27b803c8afa6069d36f135",
+      "retrieved_at": "2026-11-22T03:56:22.211597+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "City Courts Outside the City of New York",
+      "publisher_member": "City Court outside New York City. Personal delivery within the county and other service triggers stay distinct. Court guidance identifies this rule for covered debt cases."
+    },
+    "fa8cf03c8b3f313c519de2438fdf4f": {
+      "source_id": "US-NY:debt_response:acce59dd5d1c",
+      "authority_type": "statute",
+      "citation": "N.Y. City Civ. Ct. Act § 402(a)–(b)",
+      "text": "(a) If the summons is personally delivered to the defendant within the city of New York, it shall require him to appear and answer within twenty days after its service. (b) If the summons is served by any means other than personal delivery to the defendant within the city of New York, it shall provide that the defendant must appear and answer within thirty days after proof of service is filed with the clerk.",
+      "text_sha256": "3db96ed69fb13a3094fbaaf2b5b926da6c52ebabf7c0840d899d2d03fea1962f",
+      "publisher_sha256": "5b1cfc4ca5164110b33098e1c4b18bd0e8c9bd2513b461887b077f5ce57f5e5e",
+      "retrieved_at": "2026-11-22T03:56:22.212405+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Civil Court of the City of New York",
+      "publisher_member": "New York City Civil Court. Personal delivery within the city and filing of proof in other cases stay distinct. Court guidance identifies these branches for covered debt cases."
+    },
+    "ec4849aaab21edae30f6b062dfb1ca": {
+      "source_id": "US-NY:justice_court_response:6e784ff7390d",
+      "authority_type": "statute",
+      "citation": "N.Y. Uniform Just. Ct. Act § 402(a)–(c)",
+      "text": "(a) If the summons is personally delivered to the defendant, it shall require him to appear and answer on a day not less than six nor more than thirty days after its service. (b) If the summons is served: 1. by delivery to a person, including an actual or statutory designee, other than the defendant; or 2. by publication; or 3. by any means other than personal delivery to the defendant, it shall provide that the defendant must appear and answer on a day not less than six nor more than thirty days after service is complete. (c) The specific return day of the summons shall be determined by rule, or, in the absence of rule, by inquiry of the court, and shall not be set forth in the summons until so ascertained by the plaintiff.",
+      "text_sha256": "269870691791fee73511619e65ea5944b4e5da64992057610c14fa2c054f35f6",
+      "publisher_sha256": "3c32c53856a001a8fbbfb330f4d4529329c452a657cf2520742cb2c5628eb855",
+      "retrieved_at": "2026-11-22T03:56:22.229649+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "New York Town and Village Justice Courts",
+      "publisher_member": "Town or village Justice Court return day within the statutory range, determined by rule or by the specific court."
+    },
+    "001a32510c024ee12a7c7dfaa23d6d": {
+      "source_id": "US-NY:fault:daab6c3a5c05",
+      "authority_type": "session_law",
+      "citation": "2026 N.Y. Laws ch. 58, pt. EE, § 4",
+      "text": "§ 4. This act shall take effect immediately and shall be applicable to all actions and proceedings commenced on or after such date.",
+      "text_sha256": "ae8b1f2282eb85b16eb17444dfe74351a746dae94b11bb6e60eb4bc5c99af9f0",
+      "publisher_sha256": "5de2a1c0a2736e90824850015ee1e9f0bd5b3936c36cdd16ed2b52452b837df0",
+      "retrieved_at": "2026-11-23T16:13:27.696126+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Signed New York chapter law, May 26, 2026",
+      "effective_from": "2026-05-26",
+      "publisher_member": "Signed A10008-C Part EE § 4, past the replacement CPLR 1411 text. NYDFS Circular Letter No. 3 (2026) confirms the commencement-date application."
+    },
+    "1f1228228210a337a36bd086443a60": {
+      "source_id": "US-NY:fault:c9128d5534eb",
+      "authority_type": "statute",
+      "citation": "N.Y. CPLR 1411",
+      "text": "In any action to recover damages for personal injury, injury to property, or wrongful death, the culpable conduct attributable to the claimant or to the decedent, including contributory negligence or assumption of risk, shall not bar recovery, but the amount of damages otherwise recoverable shall be diminished in the proportion which the culpable conduct attributable to the claimant or decedent bears to the culpable conduct which caused the damages.",
+      "text_sha256": "3baa23d65909218a21e0b5471ee88c4ec28157da1e2056b10295e139c8b8da52",
+      "publisher_sha256": "5de2a1c0a2736e90824850015ee1e9f0bd5b3936c36cdd16ed2b52452b837df0",
+      "retrieved_at": "2026-11-23T16:13:27.696126+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Text in force before the 2026 Part EE amendment",
+      "effective_until": "2026-05-26",
+      "publisher_member": "A10008-C, Part EE § 3. Pre-amendment text reconstructed from the signed bill's brackets and unchanged text. Part EE § 4 uses the action commencement date."
+    },
+    "87930c0b9f7cf87ad6083873e228d9": {
+      "source_id": "US-NY:accrual:8f7142992ad9",
+      "authority_type": "statute",
+      "citation": "N.Y. CPLR 214-c(2)–(6)",
+      "text": "2. Notwithstanding the provisions of section 214, the three year period within which an action to recover damages for personal injury or injury to property caused by the latent effects of exposure to any substance or combination of substances, in any form, upon or within the body or upon or within property must be commenced shall be computed from the date of discovery of the injury by the plaintiff or from the date when through the exercise of reasonable diligence such injury should have been discovered by the plaintiff, whichever is earlier. 3. For the purposes of sections fifty-e and fifty-i of the general municipal law, section thirty-eight hundred thirteen of the education law and the provisions of any general, special or local law or charter requiring as a condition precedent to commencement of an action or special proceeding that a notice of claim be filed or presented within a specified period of time after the claim or action accrued, a claim or action for personal injury or injury to property caused by the latent effects of exposure to any substance or combination of substances, in any form, upon or within the body or upon or within property shall be deemed to have accrued on the date of discovery of the injury by the plaintiff or on the date when through the exercise of reasonable diligence the injury should have been discovered, whichever is earlier. 4. Notwithstanding the provisions of subdivisions two and three of this section, where the discovery of the cause of the injury is alleged to have occurred less than five years after discovery of the injury or when with reasonable diligence such injury should have been discovered, whichever is earlier, an action may be commenced or a claim filed within one year of such discovery of the cause of the injury; provided, however, if any such action is commenced or claim filed after the period in which it would otherwise have been authorized pursuant to subdivision two or three of this section the plaintiff or claimant shall be required to allege and prove that technical, scientific or medical knowledge and information sufficient to ascertain the cause of his injury had not been discovered, identified or determined prior to the expiration of the period within which the action or claim would have been authorized and that he has otherwise satisfied the requirements of subdivisions two and three of this section. 5. This section shall not be applicable to any action for medical or dental malpractice. 6. This section shall be applicable to acts, omissions or failures occurring prior to, on or after July first, nineteen hundred eighty-six, except that this section shall not be applicable to any act, omission or failure: (a) which occurred prior to July first, nineteen hundred eighty-six, and (b) which caused or contributed to an injury that either was discovered or through the exercise of reasonable diligence should have been discovered prior to such date, and (c) an action for which was or would have been barred because the applicable period of limitation had expired prior to such date.",
+      "text_sha256": "1a7ee5e02249dd0fe7eda650093e043f0435788a5e7a429af5932d5e3416facf",
+      "publisher_sha256": "8167d0f210a6097afaf6f09727e4ddedba8b9c649594dd3f25b1d4401e2cb069",
+      "retrieved_at": "2026-11-23T16:19:51.526706+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "9f9e62ed7f3b295f87ec0627d7dce5": {
+      "source_id": "US-NY:small_claims:88122e07dcf4",
+      "authority_type": "statute",
+      "citation": "N.Y.C. Civil Court Act § 1803(a)",
+      "text": "(a) Small claims shall be commenced upon the payment by the claimant of a filing fee of fifteen dollars for claims in the amount of one thousand dollars or less and twenty dollars for claims in the amount of more than one thousand dollars, without the service of a summons and, except by special order of the court, without the service of any pleading other than a statement of his cause of action by the claimant or someone in his behalf to the clerk, who shall reduce the same to a concise, written form and record it in a docket kept especially for such purpose. Such procedure shall provide for the sending of notice of such claim by ordinary first class mail and certified mail with return receipt requested to the party complained against (1) at his residence, if he resides within the city of New York, and his residence is known to the claimant, (2) at his office or place of regular employment within the city of New York if he does not reside therein or his residence within the city of New York is not known to the claimant, or (3) where claimant is or was a tenant or lessee of real property owned by the defendant and the claim relates to such tenancy or lease and the notice of claim cannot be sent under paragraph one or two of this subdivision, at any place in the state where plaintiff may mail or otherwise deliver rent. If, after the expiration of twenty-one days, such ordinary first class mailing has not been returned as undeliverable, the party complained against shall be presumed to have received notice of such claim. Such notice shall include a clear description of the procedure for filing a counterclaim, pursuant to subdivision (c) of this section. Such procedure shall further provide for an early hearing upon and determination of such claim. No filing fee, however, shall be demanded or received on small claims of employees who shall comply with § 1912 (a) of this act which is hereby made applicable, except that necessary mailing costs shall be paid.",
+      "text_sha256": "2dccfa1b2d2ee84834db24760b921cf2f90e9a8ed7385afa122d1da84bf418e7",
+      "publisher_sha256": "43418e9aa79ec2030ebbd310c655f6ee8a2ac2bd180a6d90e6e51c298730133c",
+      "retrieved_at": "2026-11-23T20:42:09.068763+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Civil Court of the City of New York",
+      "scope_notes": "New York City Civil Court small-claims commencement under Article 18. The Senate labels the rendition as its July 7, 2023 revision. The statute addresses the statement to the clerk and the fee, notice and employee exception. It does not name CIV-SC-50 or establish that the paper form is mandatory for every filing channel."
+    }
+  },
+  "fault_allocation": {
+    "regime": "other_state_specific",
+    "passage_selector": "6284fbf2e45eeac83a62d9ede67a68",
+    "source_id": "US-NY:fault:8d0e072334d2",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  },
+  "forms": {
+    "US-NY:form:CIV-SC-50": {
+      "title": "Statement of Claim (Small Claims)",
+      "publisher_identifier": "CIV-SC-50",
+      "source_id": "US-NY:small_claim_form:83a7ca4b820a",
+      "index_source_id": "US-NY:small_claim_form_index:f1c6454fca5b",
+      "index_sha256": "e65f35b78cf6093fe4255a2895f849392c45b9980604d025f336166de90da622",
+      "court_scope": "Civil Court of the City of New York, Small Claims Part",
+      "mandatory": "required_for_stated_scope",
+      "revision": "2022-04-22",
+      "last_observed": "2026-11-23T21:46:19.488563+00:00",
+      "automated_completion": "disabled",
+      "form_sha256": "348e3117b09df5d583b3011331abed4628a38d2eab327edf8bbabb4cd1cfbe39",
+      "action_type": "small_claim",
+      "requirement_passage_selector": "9f9e62ed7f3b295f87ec0627d7dce5",
+      "applicability": "Paper statement for an eligible claimant who lives outside NYC and files by mail in NYC Civil Court Small Claims Part. Confirm the proper county and filing packet with the clerk. The court instructions specify CIV-SC-50 (red ink), signature, the applicable fee or exception, and a return envelope. Other filing channels, commercial claims and courts outside NYC require separate review."
+    }
+  }
+}

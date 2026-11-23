@@ -223,6 +223,31 @@ class ActionApiTests(unittest.TestCase):
         context = self.choose(context, path="va_response", message="I received a summons and complaint in Virginia.")
         return context, event
 
+    def test_withdrawn_authority_stales_snapshot_readiness_and_document(self):
+        context = self.starting_complaint()
+        analysis = self.analyze(context)
+        readiness = self.readiness(context, analysis)
+        document = self.package(context, readiness)
+        self.assertEqual(readiness["claim_status"], "satisfied")
+        original = ClaimCatalog.research
+
+        def withdrawn(catalog, theory, *args, **kwargs):
+            bindings, exact, limits = original(catalog, theory, *args, **kwargs)
+            if theory.id == analysis["theories"][0]["id"]:
+                bindings = {}
+            return bindings, exact, limits
+
+        with patch.object(ClaimCatalog, "research", withdrawn):
+            prior = self.request(context, "GET", "/claim-analysis/" + analysis["analysis_id"])
+            self.assertNotEqual(prior["freshness"], "latest_snapshot")
+            changed = self.request(context, "GET", "/readiness/" + readiness["artifact_id"])
+            self.assertEqual(changed["freshness"], "stale")
+            self.assertIn("claim_analysis_changed", changed["stale_reasons"])
+            package = self.request(context, "GET", "/action-documents/" + document["artifact_id"])
+            self.assertEqual(package["freshness"], "stale")
+            self.assertEqual(package["displayed_digest"], document["displayed_digest"])
+            self.package(context, readiness, 409)
+
     def deadline(self, context, event=None, **overrides):
         return self.request(context, "POST", "/deadlines/evaluate", {
             "revision": context[2]["revision"], "rule_id": RESPONSE, "event_id": event, **overrides,

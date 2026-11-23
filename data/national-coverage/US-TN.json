@@ -1,0 +1,841 @@
+{
+  "jurisdiction": "US-TN",
+  "version": "1",
+  "sources": {
+    "US-TN:statutes:c4b7141a4dbc": {
+      "category": "statutes",
+      "title": "Tennessee Code & Constitution",
+      "url": "http://www.lexisnexis.com/hottopics/tncode/",
+      "directory": "codes",
+      "locator": "Tennessee"
+    },
+    "US-TN:legislature:e7ac5cb813d3": {
+      "category": "legislature",
+      "title": "General Assembly",
+      "url": "http://www.capitol.tn.gov/",
+      "directory": "codes",
+      "locator": "Tennessee"
+    },
+    "US-TN:labor_agency:320e87ddb2e9": {
+      "category": "labor_agency",
+      "title": "www.tn.gov/workforce",
+      "url": "https://www.tn.gov/workforce",
+      "directory": "labor",
+      "locator": "Tennessee"
+    },
+    "US-TN:commercial_code:c4b7141a4dbc": {
+      "category": "commercial_code",
+      "title": "Code and Statutes (Title 1)",
+      "url": "http://www.lexisnexis.com/hottopics/tncode/",
+      "directory": "ucc",
+      "locator": "Tennessee"
+    },
+    "US-TN:civil_rules:c4b7141a4dbc": {
+      "category": "civil_rules",
+      "title": "Civil Procedure in General Sessions Courts",
+      "url": "http://www.lexisnexis.com/hottopics/tncode/",
+      "directory": "procedure",
+      "locator": "Tennessee"
+    },
+    "US-TN:consumer_agency:26d97e6f1d49": {
+      "category": "consumer_agency",
+      "title": "Tennessee (TN)",
+      "url": "https://www.tn.gov/attorneygeneral/working-for-tennessee/consumer-affairs.html",
+      "directory": "consumer",
+      "locator": "Tennessee (TN)"
+    },
+    "US-TN:judiciary:37db4ea50978": {
+      "category": "judiciary",
+      "title": "Tennessee Courts",
+      "url": "https://tncourts.gov/",
+      "directory": "doj-TN",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-TN:court_directory:d8a0b9dc2fa4": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://tncourts.gov/courts/supreme-court",
+      "directory": "doj-TN",
+      "locator": "Supreme Court"
+    },
+    "US-TN:opinions:25b24cc97533": {
+      "category": "opinions",
+      "title": "Supreme Court Opinions",
+      "url": "https://tncourts.gov/courts/supreme-court/opinions",
+      "directory": "doj-TN",
+      "locator": "State and Local Courts / Supreme Court"
+    },
+    "US-TN:opinions:34553164fb9e": {
+      "category": "opinions",
+      "title": "Court of Appeals Opinions 1990 to current",
+      "url": "https://www.tncourts.gov/opinionsview/all",
+      "directory": "doj-TN",
+      "locator": "State and Local Courts / Courts of Appeal"
+    },
+    "US-TN:opinions:bd8ee4507fd6": {
+      "category": "opinions",
+      "title": "Court of Criminal Appeals Opinions",
+      "url": "https://tncourts.gov/courts/court-criminal-appeals/opinions",
+      "directory": "doj-TN",
+      "locator": "State and Local Courts / Courts of Appeal"
+    },
+    "US-TN:forms:70b21bc53c7c": {
+      "category": "forms",
+      "title": "Forms and Publications",
+      "url": "https://tncourts.gov/forms-publications",
+      "directory": "doj-TN",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-TN:constitution:2d032e564f9b": {
+      "category": "constitution",
+      "title": "Code and Constitution (Tennessee Courts, provided by Lexis)",
+      "url": "https://www.tncourts.gov/Tennessee Code",
+      "directory": "doj-TN",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-TN:regulations:487524d0ab6e": {
+      "category": "regulations",
+      "title": "Rules and Regulations",
+      "url": "http://sos.tn.gov/effective-rules",
+      "directory": "doj-TN",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-TN:regulations:3c78b56743df": {
+      "category": "regulations",
+      "title": "Administrative Register",
+      "url": "http://sos.tn.gov/products/division-publications/administrative-register",
+      "directory": "doj-TN",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-TN:pi_limitations:587650053bce": {
+      "category": "pi_limitations",
+      "title": "Tenn. Code Ann. § 28-3-104(a)(1)",
+      "url": "https://www.capitol.tn.gov/",
+      "directory": "limitations",
+      "locator": "personalInjury"
+    },
+    "US-TN:written_contract_limitations:587650053bce": {
+      "category": "written_contract_limitations",
+      "title": "Tenn. Code Ann. § 28-3-109(a)(3)",
+      "url": "https://www.capitol.tn.gov/",
+      "directory": "limitations",
+      "locator": "writtenContract"
+    },
+    "US-TN:oral_contract_limitations:587650053bce": {
+      "category": "oral_contract_limitations",
+      "title": "Tenn. Code Ann. § 28-3-109(a)(3)",
+      "url": "https://www.capitol.tn.gov/",
+      "directory": "limitations",
+      "locator": "oralContract"
+    },
+    "US-TN:small_claims:1c7f8928842c": {
+      "category": "small_claims",
+      "title": "General Sessions Courts",
+      "url": "https://www.ctas.tennessee.edu/eli/jurisdiction-general-sessions-court",
+      "directory": null,
+      "locator": "Publisher resource"
+    },
+    "US-TN:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 29"
+    },
+    "US-TN:consumerLaw:84c7b2c829ed": {
+      "title": "Tenn. Code Ann. § 47-18-101 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.tn.gov/attorneygeneral/working-for-tennessee/consumer/consumer-resources.html",
+      "directory": "consumer_statutes_index",
+      "locator": "Tenn. Code Ann. § 47-18-101 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-TN:automated_contract_formation:0cdd4d7a90a8": {
+      "category": "automated_contract_formation",
+      "title": "2001 Tenn. Pub. Acts, ch. 72, § 14",
+      "url": "https://sharetngov.s3.amazonaws.com/sos/acts/102/pub/pc0072.pdf",
+      "locator": "2001 Tenn. Pub. Acts, ch. 72, § 14",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:42:58.076453+00:00",
+        "sha256": "56a019bc47663657f293ac9d4f1c50a4d5f4865bc8c433eb80b4d18cdd453cf0"
+      }
+    },
+    "US-TN:pi_limitations:d48319c355e2": {
+      "category": "pi_limitations",
+      "title": "2015 Tenn. Pub. Acts ch. 388, §§ 1–2 (adopted Senate Amendment 1)",
+      "url": "https://capitol.tn.gov/Bills/109/Amend/SA0351.pdf",
+      "locator": "2015 Tenn. Pub. Acts ch. 388, §§ 1–2 (adopted Senate Amendment 1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:47:20.105805+00:00",
+        "sha256": "638d2586e0c9bf01357ab47e727455b58347f891d6eaaaf6adb68f77a1c3ffd2"
+      },
+      "supporting_publications": [
+        {
+          "role": "legislative_passage_history",
+          "url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB0463&ga=109",
+          "retrieved_at": "2026-11-20T15:47:20.326632+00:00",
+          "sha256": "b048e806e5628f2ce1f1b3f6781eed7c5474fef908ce2fa852c8baaca540fa75"
+        }
+      ]
+    },
+    "US-TN:consumerLaw:b73eae3074e5": {
+      "category": "consumerLaw",
+      "title": "2011 Tenn. Pub. Acts ch. 510 (adopted Senate Amendment 1, §§ 14–15)",
+      "url": "https://capitol.tn.gov/Bills/107/Amend/SA0360.pdf",
+      "locator": "2011 Tenn. Pub. Acts ch. 510 (adopted Senate Amendment 1, §§ 14–15)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:30:24.951368+00:00",
+        "sha256": "26c257b8296189a6adbfbb84dbea3bed8acfedb5c8bfcf177910077440d29214"
+      }
+    },
+    "US-TN:consumer_private_action:a683b317e367": {
+      "category": "consumer_private_action",
+      "title": "2011 Tenn. Pub. Acts ch. 510 (adopted Senate Amendment 2, amendments to §§ 47-18-104(b) and 47-18-109(a)(1))",
+      "url": "https://capitol.tn.gov/Bills/107/Amend/SA0361.pdf",
+      "locator": "2011 Tenn. Pub. Acts ch. 510 (adopted Senate Amendment 2, amendments to §§ 47-18-104(b) and 47-18-109(a)(1))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:30:24.722069+00:00",
+        "sha256": "320ac1ed6052c5041e14ea1f323c2c459808c895e443e6251daba044da586f52"
+      }
+    },
+    "US-TN:fault:923fcb0264d1": {
+      "category": "fault",
+      "title": "2011 Tenn. Pub. Acts ch. 510 (adopted Senate Amendment 1, § 10, Tenn. Code § 29-39-102(b))",
+      "url": "https://capitol.tn.gov/Bills/107/Amend/SA0360.pdf",
+      "locator": "2011 Tenn. Pub. Acts ch. 510 (adopted Senate Amendment 1, § 10, Tenn. Code § 29-39-102(b))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:30:24.951368+00:00",
+        "sha256": "26c257b8296189a6adbfbb84dbea3bed8acfedb5c8bfcf177910077440d29214"
+      }
+    },
+    "US-TN:wageLaw:07febd5c57cb": {
+      "category": "wageLaw",
+      "title": "1999 Tenn. Pub. Acts ch. 32, § 1 (Tenn. Code § 50-2-103(a))",
+      "url": "https://www.capitol.tn.gov/Bills/101/Chapter/PC0032.pdf",
+      "locator": "1999 Tenn. Pub. Acts ch. 32, § 1 (Tenn. Code § 50-2-103(a))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:48:14.426874+00:00",
+        "sha256": "bedc25ac86974798cd8feb9f4c51101bdb0ea11a23fd1dd6e8d4bc93a549f48b"
+      }
+    },
+    "US-TN:electronic_transaction_consent:339cb407b8ab": {
+      "category": "electronic_transaction_consent",
+      "title": "2001 Tenn. Pub. Acts ch. 72, § 5(b)-(c)",
+      "url": "https://capitol.tn.gov/Bills/102/Chapter/PC0072.pdf",
+      "locator": "2001 Tenn. Pub. Acts ch. 72, § 5(b)-(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:09:56.202871+00:00",
+        "sha256": "f94c0c95ec768ea0cafbef8a3b8900c7d2d43bb7dd42724638bed74feffcf47b"
+      }
+    },
+    "US-TN:electronic_contract_form:81ef04611457": {
+      "category": "electronic_contract_form",
+      "title": "2001 Tenn. Pub. Acts ch. 72, § 7",
+      "url": "https://capitol.tn.gov/Bills/102/Chapter/PC0072.pdf",
+      "locator": "2001 Tenn. Pub. Acts ch. 72, § 7",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:09:56.202871+00:00",
+        "sha256": "f94c0c95ec768ea0cafbef8a3b8900c7d2d43bb7dd42724638bed74feffcf47b"
+      }
+    },
+    "US-TN:debtLaw:419c78a33019": {
+      "category": "debtLaw",
+      "title": "1998 Tenn. Pub. Acts ch. 843, § 1 (Tenn. Code § 62-20-115(b)(2))",
+      "url": "https://capitol.tn.gov/Bills/100/Chapter/PC0843.pdf",
+      "locator": "1998 Tenn. Pub. Acts ch. 843, § 1 (Tenn. Code § 62-20-115(b)(2))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:11:00.818776+00:00",
+        "sha256": "303d2755d9c720ea3d660457e7ab5ba03cadb6bfa26e2239d38b8a06acdfed99"
+      }
+    },
+    "US-TN:deposit:91363a91ad04": {
+      "category": "deposit",
+      "title": "2011 Tenn. Pub. Acts ch. 272, § 6, inspection right and notice (Tenn. Code § 66-28-301(b)(1)(A))",
+      "url": "https://capitol.tn.gov/Bills/107/Amend/HA0302.pdf",
+      "locator": "2011 Tenn. Pub. Acts ch. 272, § 6, inspection right and notice (Tenn. Code § 66-28-301(b)(1)(A))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:09:56.234366+00:00",
+        "sha256": "062e0386287ed3d8ff12b1778b07eefc0a646c3930c4b995772ef5dd4f9e13da"
+      }
+    },
+    "US-TN:deposit:c8ea301aa62a": {
+      "category": "deposit",
+      "title": "2011 Tenn. Pub. Acts ch. 272, § 6, inspection exceptions (Tenn. Code § 66-28-301(b)(2))",
+      "url": "https://capitol.tn.gov/Bills/107/Amend/HA0302.pdf",
+      "locator": "2011 Tenn. Pub. Acts ch. 272, § 6, inspection exceptions (Tenn. Code § 66-28-301(b)(2))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:09:56.234366+00:00",
+        "sha256": "062e0386287ed3d8ff12b1778b07eefc0a646c3930c4b995772ef5dd4f9e13da"
+      }
+    },
+    "US-TN:deposit:1bb3ee4392f2": {
+      "category": "deposit",
+      "title": "2011 Tenn. Pub. Acts ch. 272, § 16 (adopted HA0307)",
+      "url": "https://capitol.tn.gov/Bills/107/Amend/HA0307.pdf",
+      "locator": "2011 Tenn. Pub. Acts ch. 272, § 16 (adopted HA0307)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:09:56.202871+00:00",
+        "sha256": "437c3ca5ff71914699856712432fcb38441902c185e191cd3ea62bd7aa091f89"
+      }
+    },
+    "US-TN:small_claims:7a61c8028a18": {
+      "category": "small_claims",
+      "title": "2006 Tenn. Pub. Acts ch. 722, § 1 (Tenn. Code Ann. § 16-15-501(d))",
+      "url": "https://www.capitol.tn.gov/Bills/104/Chapter/PC0722.pdf",
+      "locator": "2006 Tenn. Pub. Acts ch. 722, § 1 (Tenn. Code Ann. § 16-15-501(d))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:30:27.854347+00:00",
+        "sha256": "532f27b4f633ebca8b29e662415963d1ad69c5657922f0c4974e0faffeb8e5cc"
+      }
+    },
+    "US-TN:contract_formation:05ce14f41625": {
+      "category": "contract_formation",
+      "title": "Westfall v. Brentwood Service Group, Inc., No. E2000-01086-COA-R3-CV, slip op. at 6 (Tenn. Ct. App. Nov. 17, 2000)",
+      "url": "https://web.archive.org/web/20170210091126id_/https://www.tncourts.gov/sites/default/files/OPINIONS/TCA/PDF/004/WestfallLO.pdf",
+      "locator": "Westfall v. Brentwood Service Group, Inc., No. E2000-01086-COA-R3-CV, slip op. at 6 (Tenn. Ct. App. Nov. 17, 2000)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:59:01.906484+00:00",
+        "sha256": "75b47ca07f502c00d47737250f746d68d6fbbdd635eadbb8c60491e4f7e6a0ae"
+      }
+    },
+    "US-TN:contract_formation:a8ea4813c7a3": {
+      "category": "contract_formation",
+      "title": "Mathews Partners, LLC v. Lemme, No. M2008-01036-COA-R3-CV, slip op. at 8 (Tenn. Ct. App. Oct. 2, 2009)",
+      "url": "https://web.archive.org/web/20170222014614id_/https://www.tncourts.gov/sites/default/files/OPINIONS/TCA/PDF/094/Mathews%20Partners%20v%20Lucianna%20Lemme%20OPN.pdf",
+      "locator": "Mathews Partners, LLC v. Lemme, No. M2008-01036-COA-R3-CV, slip op. at 8 (Tenn. Ct. App. Oct. 2, 2009)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:59:01.952864+00:00",
+        "sha256": "0ff2f108b725cfd6845c1b62bc7efda50d5fbdeaf7625e5b3a691a05133298d4"
+      }
+    },
+    "US-TN:response:743ce9f4de02": {
+      "category": "response",
+      "title": "Tenn. R. Civ. P. 12.01 (March 2025 archive)",
+      "url": "https://web.archive.org/web/20250309052812id_/https://www.tncourts.gov/rules/rules-civil-procedure/1201",
+      "locator": "Tenn. R. Civ. P. 12.01 (March 2025 archive)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:05:30.817419+00:00",
+        "sha256": "075418f0678f1fa3ac62fa98e78ef04b2977d4751eb9b27be378df97a55c2091"
+      }
+    },
+    "US-TN:negligence_elements:17a8aa9b52aa": {
+      "category": "negligence_elements",
+      "title": "Brown v. Hugo, No. W2005-01356-COA-R3-CV, slip op. at 4 (Tenn. Ct. App. June 27, 2006)",
+      "url": "https://web.archive.org/web/20170221095643id_/https://www.tncourts.gov/sites/default/files/OPINIONS/TCA/PDF/062/BrownBettyGopn.pdf",
+      "locator": "Brown v. Hugo, No. W2005-01356-COA-R3-CV, slip op. at 4 (Tenn. Ct. App. June 27, 2006)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:18:05.272531+00:00",
+        "sha256": "913316d465ae3984ede9c5dc12e241b4e7cabd59cc4e7acf8b01ead48e89debe"
+      }
+    },
+    "US-TN:commencement:72ab1a47ce32": {
+      "category": "commencement",
+      "title": "Tenn. R. Civ. P. 3 (2016 Christenberry quotation)",
+      "url": "https://web.archive.org/web/20170215185856id_/https://tncourts.gov/sites/default/files/christenberry.opn_.final_.pdf",
+      "locator": "Tenn. R. Civ. P. 3 (2016 Christenberry quotation)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:32.549144+00:00",
+        "sha256": "1f68fb108d981e328412c6ea0117601b13c6e16fb2696a376b39e109bc2b50f2"
+      }
+    },
+    "US-TN:summons_issuance:e60262d967b5": {
+      "category": "summons_issuance",
+      "title": "Tenn. R. Civ. P. 4.01(1) (2016 Christenberry quotation)",
+      "url": "https://web.archive.org/web/20170215185856id_/https://tncourts.gov/sites/default/files/christenberry.opn_.final_.pdf",
+      "locator": "Tenn. R. Civ. P. 4.01(1) (2016 Christenberry quotation)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:32.549144+00:00",
+        "sha256": "1f68fb108d981e328412c6ea0117601b13c6e16fb2696a376b39e109bc2b50f2"
+      }
+    },
+    "US-TN:service:f79d9dec5263": {
+      "category": "service",
+      "title": "Tenn. R. Civ. P. 4.01(2) (2016 Christenberry quotation)",
+      "url": "https://web.archive.org/web/20170215185856id_/https://tncourts.gov/sites/default/files/christenberry.opn_.final_.pdf",
+      "locator": "Tenn. R. Civ. P. 4.01(2) (2016 Christenberry quotation)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:32.549144+00:00",
+        "sha256": "1f68fb108d981e328412c6ea0117601b13c6e16fb2696a376b39e109bc2b50f2"
+      }
+    },
+    "US-TN:service_time_limit:db40fa2f3057": {
+      "category": "service_time_limit",
+      "title": "Tenn. R. Civ. P. 3, service and reissuance (2016 Christenberry quotation)",
+      "url": "https://web.archive.org/web/20170215185856id_/https://tncourts.gov/sites/default/files/christenberry.opn_.final_.pdf",
+      "locator": "Tenn. R. Civ. P. 3, service and reissuance (2016 Christenberry quotation)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:32.549144+00:00",
+        "sha256": "1f68fb108d981e328412c6ea0117601b13c6e16fb2696a376b39e109bc2b50f2"
+      }
+    },
+    "US-TN:general_contract_limitations:1c11e6a2eee4": {
+      "category": "general_contract_limitations",
+      "title": "Deutsche Bank National Trust Co. v. Lee, No. M2018-01479-COA-R3-CV (Tenn. Ct. App. June 13, 2019)",
+      "url": "https://web.archive.org/web/20230226012250id_/https://www.tncourts.gov/sites/default/files/deutschebankv.lee_.opn_.pdf",
+      "locator": "Deutsche Bank National Trust Co. v. Lee, No. M2018-01479-COA-R3-CV (Tenn. Ct. App. June 13, 2019)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:05.064190+00:00",
+        "sha256": "5160a636ee485a4c1ac0d7407447f14aef7d15eaf50ade8fa38d72d4ad8e1994"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-TN:court:d37d505c22b5",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-TN:court_directory:d8a0b9dc2fa4"
+    },
+    {
+      "id": "US-TN:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-TN:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-TN:court:87dc2e5d520b",
+      "name": "Chancery",
+      "level": "general_trial",
+      "source_id": "US-TN:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-TN:court:b10063c6db65",
+      "name": "Criminal",
+      "level": "general_trial",
+      "source_id": "US-TN:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-TN:court:6c5bd59f8a48",
+      "name": "Probate",
+      "level": "general_trial",
+      "source_id": "US-TN:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-TN:court:d693956e904d",
+      "name": "Juvenile",
+      "level": "limited_trial",
+      "source_id": "US-TN:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-TN:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-TN:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-TN:court:db9501db91ac",
+      "name": "General Sessions",
+      "level": "limited_trial",
+      "source_id": "US-TN:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Tenn. Code Ann. § 28-3-104(a)(1)",
+      "source_id": "US-TN:pi_limitations:587650053bce",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Tenn. Code Ann. § 28-3-109(a)(3)",
+      "source_id": "US-TN:written_contract_limitations:587650053bce",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Tenn. Code Ann. § 28-3-109(a)(3)",
+      "source_id": "US-TN:oral_contract_limitations:587650053bce",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Tenn. Code § 29-15-101. Alternative actions.; Tenn. Code § 66-7-109. Notice of termination by landlord.; Tenn. Code § 66-28-505. Noncompliance by tenant —Failure to pay rent.",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Tenn. Code Ann. § 47-18-101 et seq.",
+      "source_id": "US-TN:consumerLaw:84c7b2c829ed",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "227a670c0d4e066587addeb6420ee4": {
+      "source_id": "US-TN:automated_contract_formation:0cdd4d7a90a8",
+      "authority_type": "statute",
+      "citation": "2001 Tenn. Pub. Acts, ch. 72, § 14",
+      "text": "In an automated transaction, the following rules apply: (1) A contract may be formed by the interaction of electronic agents of the parties, even if no individual was aware of or reviewed the electronic agents' actions or the resulting terms and agreements. (2) A contract may be formed by the interaction of an electronic agent and an individual, acting on the individual's own behalf or for another person, including by an interaction in which the individual performs actions that the individual is free to refuse to perform and which the individual knows or has reason to know will cause the electronic agent to complete the transaction or performance. (3) The terms of the contract are determined by the substantive law applicable to it.",
+      "text_sha256": "28f7e49bb52fd562f031118d0cdce197721fc349c0c5dcc23728a39c435c187a",
+      "publisher_sha256": "56a019bc47663657f293ac9d4f1c50a4d5f4865bc8c433eb80b4d18cdd453cf0",
+      "retrieved_at": "2026-11-18T20:42:58.076453+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Approved April 11, 2001"
+    },
+    "4a5c8e4929cef5428063a7c86101d0": {
+      "source_id": "US-TN:pi_limitations:d48319c355e2",
+      "authority_type": "statute",
+      "citation": "2015 Tenn. Pub. Acts ch. 388, §§ 1–2 (adopted Senate Amendment 1)",
+      "text": "(a) (1) Except as provided in subdivision (a)(2), the following actions shall be commenced within one (1) year after the cause of action accrued: (A) Actions for libel, injuries to the person, false imprisonment, malicious prosecution, or breach of marriage promise; (B) Civil actions for compensatory or punitive damages, or both, brought under the federal civil rights statutes; and (C) Actions for statutory penalties. (2) A cause of action listed in subdivision (a)(1) shall be commenced within two (2) years after the cause of action accrued, if: (A) Criminal charges are brought against any person alleged to have caused or contributed to the injury; (B) The conduct, transaction, or occurrence that gives rise to the cause of action for civil damages is the subject of a criminal prosecution commenced within one (1) year by: (i) A law enforcement officer; (ii) A district attorney general; or (iii) A grand jury; and (C) The cause of action is brought by the person injured by the criminal conduct against the party prosecuted for such conduct. (3) This subsection (a) shall be strictly construed. SECTION 2. This act shall take effect July 1, 2015, the public welfare requiring it, and shall apply to causes of action accruing on or after that date.",
+      "text_sha256": "dda3aacf4d682d6391527a986f4e534b370a3eab0ec9c6ec79192743c20141af",
+      "publisher_sha256": "638d2586e0c9bf01357ab47e727455b58347f891d6eaaaf6adb68f77a1c3ffd2",
+      "retrieved_at": "2026-11-20T15:47:20.105805+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2015 enrolled Senate Bill 463 as amended, verified in the legislative passage history",
+      "effective_from": "2015-07-01"
+    },
+    "cdc2b4131ad73cccf8d5e97ca7f922": {
+      "source_id": "US-TN:consumerLaw:b73eae3074e5",
+      "authority_type": "statute",
+      "citation": "2011 Tenn. Pub. Acts ch. 510 (adopted Senate Amendment 1, §§ 14–15)",
+      "text": "SECTION 14. Tennessee Code Annotated, Section 47-18-109, is amended by adding the following language as a new, appropriately designated subsection: ( ) No private right of action shall be commenced under this section for any alleged unfair or deceptive act or practice involving the marketing or sale of a security as defined in the Tennessee Securities Act, § 48-2-102(17). SECTION 15. Tennessee Code Annotated, Section 47-18-104, is amended by adding the following language at the end of subdivision (b)(27): provided, however, that enforcement of this subdivision (b)(27) is vested exclusively in the office of the Attorney General and Reporter and the director of the division.",
+      "text_sha256": "b14f8e1aa19e7d3284c8a23f73ec2cee799536641ecfd3299da68cafa1ad9cd8",
+      "publisher_sha256": "26c257b8296189a6adbfbb84dbea3bed8acfedb5c8bfcf177910077440d29214",
+      "retrieved_at": "2026-11-20T16:30:24.951368+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2011 enrolled House Bill 2008 as amended, verified in the legislative passage history",
+      "effective_from": "2011-10-01"
+    },
+    "dcbfc66cfa6aa119cc3e0c33bfcb64": {
+      "source_id": "US-TN:consumer_private_action:a683b317e367",
+      "authority_type": "statute",
+      "citation": "2011 Tenn. Pub. Acts ch. 510 (adopted Senate Amendment 2, amendments to §§ 47-18-104(b) and 47-18-109(a)(1))",
+      "text": "SECTION ___. Tennessee Code Annotated, Section §47-18-104(b) is amended by deleting the language “Without limiting the scope of subsection (a), the” and substituiting instead the language “The”. SECTION ___. Tennessee Code Annotated, Section 47-18-109(a)(1) is amended by inserting the language “described in §47-18-104(b) and” before the language “declared to be unlawful by this part”.",
+      "text_sha256": "99f6031ef984981743e6d4ee0629496e60a1d299d9cf06a57eaf6e725b080eb6",
+      "publisher_sha256": "320ac1ed6052c5041e14ea1f323c2c459808c895e443e6251daba044da586f52",
+      "retrieved_at": "2026-11-20T16:30:24.722069+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2011 enrolled House Bill 2008 as amended, verified in the legislative passage history",
+      "effective_from": "2011-10-01"
+    },
+    "fde66c034a80b5bfea857de2e0810e": {
+      "source_id": "US-TN:fault:923fcb0264d1",
+      "authority_type": "statute",
+      "citation": "2011 Tenn. Pub. Acts ch. 510 (adopted Senate Amendment 1, § 10, Tenn. Code § 29-39-102(b))",
+      "text": "(b) If multiple defendants are found liable under the principle of comparative fault, the amount of all noneconomic damages, not to exceed seven hundred fifty thousand dollars ($750,000) for each injured plaintiff, shall be apportioned among the defendants based upon the percentage of fault for each defendant, so long as the plaintiff’s comparative fault (or in a wrongful death action, the fault of the decedent) is not equal to or greater than fifty percent (50%), in which case recovery for any damages is barred.",
+      "text_sha256": "15113784d8237d1791f98ec1b3a6840d80b221611a9d14d3d465f023c79a3fa0",
+      "publisher_sha256": "26c257b8296189a6adbfbb84dbea3bed8acfedb5c8bfcf177910077440d29214",
+      "retrieved_at": "2026-11-20T16:30:24.951368+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2011 enrolled House Bill 2008 as amended, verified in the legislative passage history",
+      "effective_from": "2011-10-01"
+    },
+    "d43767f0fc4e7cd75e95a25c4b9292": {
+      "source_id": "US-TN:wageLaw:07febd5c57cb",
+      "authority_type": "statute",
+      "citation": "1999 Tenn. Pub. Acts ch. 32, § 1 (Tenn. Code § 50-2-103(a))",
+      "text": "For the purposes of this subsection, the final wages of an employee who quits or is discharged shall include any vacation pay or other compensatory time that is owed to the employee by virtue of company policy or labor agreement. This act does not mandate employers to provide vacations, either paid or unpaid, nor does it require that employers establish written vacation pay policies.",
+      "text_sha256": "50b56f3e242e6e50cae021edf8297579a0a9cc0b46481a331727b16df0c3cd13",
+      "publisher_sha256": "bedc25ac86974798cd8feb9f4c51101bdb0ea11a23fd1dd6e8d4bc93a549f48b",
+      "retrieved_at": "2026-11-20T17:48:14.426874+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Tennessee enacted Public Chapter 32 of 1999",
+      "effective_from": "1999-07-01"
+    },
+    "e038997ab2a29ab941e618204b9b78": {
+      "source_id": "US-TN:electronic_transaction_consent:339cb407b8ab",
+      "authority_type": "statute",
+      "citation": "2001 Tenn. Pub. Acts ch. 72, § 5(b)-(c)",
+      "text": "(b) This act applies only to transactions between parties each of which has agreed to conduct transactions by electronic means. Whether the parties agree to conduct a transaction by electronic means is determined from the context and surrounding circumstances, including the parties' conduct. (c) A party that agrees to conduct a transaction by electronic means may refuse to conduct other transactions by electronic means. The right granted by this subsection may not be waived by agreement.",
+      "text_sha256": "a4eadf9babe9d6ac6f148f847d08939c01faa81c92a21a976bb89e8ccace9cc4",
+      "publisher_sha256": "f94c0c95ec768ea0cafbef8a3b8900c7d2d43bb7dd42724638bed74feffcf47b",
+      "retrieved_at": "2026-11-20T23:09:56.202871+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Tennessee enacted Public Chapter 72 of 2001",
+      "effective_from": "2001-07-01"
+    },
+    "ccab2081328f52e8c4f19f2b0d0afa": {
+      "source_id": "US-TN:electronic_contract_form:81ef04611457",
+      "authority_type": "statute",
+      "citation": "2001 Tenn. Pub. Acts ch. 72, § 7",
+      "text": "(a) A record or signature may not be denied legal effect or enforceability solely because it is in electronic form. (b) A contract may not be denied legal effect or enforceability solely because an electronic record was used in its formation. (c) If a law requires a record to be in writing, an electronic record satisfies the law. (d) If a law requires a signature, an electronic signature satisfies the law.",
+      "text_sha256": "9d65a112b5f621a4ca6958d8727292ae79ae2e0b1f113e550589323b5dd87ad8",
+      "publisher_sha256": "f94c0c95ec768ea0cafbef8a3b8900c7d2d43bb7dd42724638bed74feffcf47b",
+      "retrieved_at": "2026-11-20T23:09:56.202871+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Tennessee enacted Public Chapter 72 of 2001",
+      "effective_from": "2001-07-01"
+    },
+    "e556f6329d3209aa630097712417c2": {
+      "source_id": "US-TN:debtLaw:419c78a33019",
+      "authority_type": "statute",
+      "citation": "1998 Tenn. Pub. Acts ch. 843, § 1 (Tenn. Code § 62-20-115(b)(2))",
+      "text": "(2) Collecting or attempting to collect from the debtor any fee, commission or other compensation not provided by law for collection services rendered to a client, except that a collection service may recover from debtors reasonable charges imposed by banks for processing insufficient fund checks provided such charges do not exceed nine dollars ($9.00) per check.",
+      "text_sha256": "1f4f3d4fea09801e8e294282c4de54409bab8791371a6437934aedaacaacdbd3",
+      "publisher_sha256": "303d2755d9c720ea3d660457e7ab5ba03cadb6bfa26e2239d38b8a06acdfed99",
+      "retrieved_at": "2026-11-20T23:11:00.818776+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Tennessee enacted Public Chapter 843 of 1998",
+      "effective_from": "1998-04-29"
+    },
+    "283cc09c1e0a5df087f6970a1fe8b4": {
+      "source_id": "US-TN:deposit:91363a91ad04",
+      "authority_type": "statute",
+      "citation": "2011 Tenn. Pub. Acts ch. 272, § 6, inspection right and notice (Tenn. Code § 66-28-301(b)(1)(A))",
+      "text": "(b) Except as otherwise provided in subdivision (b)(2)(B), the tenant shall have the right to inspect the premises to determine the tenant’s liability for physical damages that are the basis for any charge against the security deposit. An inspection of the premises to determine the tenant's liability for physical damages that are the basis for any charge against the security deposit and the landlord’s estimated costs to repair such damage shall be conducted as follows: (1) (A) Upon request by the landlord for a tenant to vacate or within five (5) days after receipt by the landlord of written notice of the tenant's intent to vacate, the landlord may provide notice to the tenant of the tenant's right to be present at the inspection of the premises. Such notice may advise the tenant that the tenant may request a time of inspection to be set by the landlord during normal working hours. The landlord may require the inspection to be after the tenant has completely vacated the premises and is ready to surrender possession and return all means of access to the entire premises; provided, that the inspection shall be either on the day the tenant completely vacates the premises or within four (4) calendar days of the tenant vacating the premises. If the landlord provides written notice of the tenant's right to be present at the landlord's inspection and the tenant schedules an inspection, but fails to attend such inspection, the tenant waives the right to contest any damages found by the landlord as a result of such inspection by the landlord; provided that notice of the tenant’s waiver upon such circumstances is set out in the rental agreement.",
+      "text_sha256": "65989c59c14640003b19c5bb4e22efe035ed646dac9d789100c6c4786e52f024",
+      "publisher_sha256": "062e0386287ed3d8ff12b1778b07eefc0a646c3930c4b995772ef5dd4f9e13da",
+      "retrieved_at": "2026-11-20T23:09:56.234366+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Tennessee Public Chapter 272 of 2011, adopted House Amendments HA0302 and HA0307",
+      "effective_from": "2011-10-01"
+    },
+    "a3eead8869bfe6837b39fc1e4435cf": {
+      "source_id": "US-TN:deposit:c8ea301aa62a",
+      "authority_type": "statute",
+      "citation": "2011 Tenn. Pub. Acts ch. 272, § 6, inspection exceptions (Tenn. Code § 66-28-301(b)(2))",
+      "text": "(2) (A) If the tenant has acted in any manner set out in subdivisions (b)(2)(B)(i) – (vi), the landlord may inspect the premises and compile a comprehensive listing of any presently ascertainable damage to the unit that is the basis for any charge against the security deposit and the estimated dollar cost of repairing the damage without providing the tenant an opportunity to inspect the premises; provided, that the landlord provides a written copy, sent by certificate of mailing to the tenant, of the listing of any damages and estimated cost of repairs to the tenant upon the tenant's written request. (B) The tenant shall not have a right to inspect the premises as provided in this section if the tenant has: (i) Vacated the rental premises without giving written notice; (ii) Abandoned the premises; (iii) Been judicially removed from the premises; (iv) Not contacted the landlord after the landlord's notice of right to mutual inspection of the premises; (v) Failed to appear at the arranged time of inspection as provided in subdivision (b)(1); or (vi) If the tenant has not requested a mutual inspection pursuant to subsection (b) or is otherwise inaccessible to the landlord.",
+      "text_sha256": "f3fb2639f1709026ce193149b0406dc9f57ef577473fb4cdc4cd761d820818e6",
+      "publisher_sha256": "062e0386287ed3d8ff12b1778b07eefc0a646c3930c4b995772ef5dd4f9e13da",
+      "retrieved_at": "2026-11-20T23:09:56.234366+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Tennessee Public Chapter 272 of 2011, adopted House Amendments HA0302 and HA0307",
+      "effective_from": "2011-10-01"
+    },
+    "aa122af137a3417c1ec4c1e155b987": {
+      "source_id": "US-TN:deposit:1bb3ee4392f2",
+      "authority_type": "statute",
+      "citation": "2011 Tenn. Pub. Acts ch. 272, § 16 (adopted HA0307)",
+      "text": "SECTION 16. This act shall take effect October 1, 2011, the public welfare requiring it, and shall apply to rental agreements entered into on or after the effective date of this act.",
+      "text_sha256": "1539cf55daa0026d3586e5fff52ad8d502be6d43892077bf055d0aed46fef064",
+      "publisher_sha256": "437c3ca5ff71914699856712432fcb38441902c185e191cd3ea62bd7aa091f89",
+      "retrieved_at": "2026-11-20T23:09:56.202871+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Tennessee Public Chapter 272 of 2011, adopted House Amendments HA0302 and HA0307",
+      "effective_from": "2011-10-01"
+    },
+    "c6b4d3fb21e4f0881951e117205596": {
+      "source_id": "US-TN:small_claims:7a61c8028a18",
+      "authority_type": "statute",
+      "citation": "2006 Tenn. Pub. Acts ch. 722, § 1 (Tenn. Code Ann. § 16-15-501(d))",
+      "text": "(1) The jurisdiction of courts of general sessions, where they have been created, shall extend to the sum of twenty-five thousand dollars ($25,000) in all civil cases, both law and equity; provided, that this section shall not apply to cases of forcible entry and detainer, wherein the court shall have unlimited original jurisdiction; and provided further, that this section shall not apply to actions to recover personal property wherein the court shall have unlimited original jurisdiction including jurisdiction to award an alternative money judgment; and general sessions judges shall have jurisdiction to issue restraining orders and to enforce the penalty provisions for violation of such restraining orders. (2) For the purpose of calculating whether a judgment entered by a court of general sessions is within or exceeds the monetary jurisdictional limits established for such courts by this subsection, the following amounts shall not be included: (A) Any amount awarded for attorney fees; (B) Any court costs assessed by the court; and (C) Any discretionary costs assessed by the court.",
+      "text_sha256": "e598b85c33eaf9a0216724a2edb04a598b51e05546ee6db872bc5f114b9121eb",
+      "publisher_sha256": "532f27b4f633ebca8b29e662415963d1ad69c5657922f0c4974e0faffeb8e5cc",
+      "retrieved_at": "2026-11-20T23:30:27.854347+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Tennessee Public Acts 2006, ch. 722, effective September 1, 2006",
+      "effective_from": "2006-09-01"
+    },
+    "5b69bde28e3da29c4ce5dcc6024ac5": {
+      "source_id": "US-TN:contract_formation:05ce14f41625",
+      "authority_type": "opinion",
+      "citation": "Westfall v. Brentwood Service Group, Inc., No. E2000-01086-COA-R3-CV, slip op. at 6 (Tenn. Ct. App. Nov. 17, 2000)",
+      "text": "“Under general principles of contract law, a contract must result from a meeting of the minds of the parties in mutual assent to the terms.” Sweeten v. Trade Envelopes, Inc., 938 S.W.2d 383, 386 (Tenn. 1996) (internal quotations omitted). Acceptance of an offer must be exactly and precisely in accord with the terms of the offer. Ray v. Thomas, 232 S.W.2d 32, 35 (Tenn. 1950). If an offeree assents to an offer, but only with conditions or with varied terms, there is no acceptance, but rather the expression constitutes a rejection of the original offer and initiation of a new offer.",
+      "text_sha256": "f6c0e677c874370ed3aff3a9bec312aa82e1dbf016fb267f263776d7a0d4b113",
+      "publisher_sha256": "75b47ca07f502c00d47737250f746d68d6fbbdd635eadbb8c60491e4f7e6a0ae",
+      "retrieved_at": "2026-11-21T03:59:01.906484+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2000-11-17",
+      "court": "Court of Appeals of Tennessee",
+      "decision_date": "2000-11-17",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal after a bench trial over post-employment commissions and an asserted noncompetition agreement.",
+      "publisher_member": "original court opinion, PDF p. 6"
+    },
+    "7f854086c7cf744179e5a1f47f90d9": {
+      "source_id": "US-TN:contract_formation:a8ea4813c7a3",
+      "authority_type": "opinion",
+      "citation": "Mathews Partners, LLC v. Lemme, No. M2008-01036-COA-R3-CV, slip op. at 8 (Tenn. Ct. App. Oct. 2, 2009)",
+      "text": "To be enforced, a contract “must result from a meeting of the minds of the parties in mutual assent to the terms, must be based upon a sufficient consideration, free from fraud or undue influence, not against public policy and sufficiently definite.” Staubach Retail Services-Southeast, Inc. v. H.G. Hill Realty Co., 160 S.W.3d 521, 524 (Tenn. 2005) (citing Doe v. HCA Health Servs. of Tenn., Inc., 46 S.W.3d 191, 196 (Tenn. 2001). “In determining mutuality of assent, courts must apply an objective standard based upon the parties’ manifestations.” Id. (citing T.R. Mills Contractors, Inc. V. WRH Enters., LLC, 93 S.W.3d 861, 866 (Tenn. Ct. App. 2002).",
+      "text_sha256": "8e9782799f1439d5d3d4f59772c64d786116463c2469f0cbe3c1e9c1ddce5b79",
+      "publisher_sha256": "0ff2f108b725cfd6845c1b62bc7efda50d5fbdeaf7625e5b3a691a05133298d4",
+      "retrieved_at": "2026-11-21T03:59:01.952864+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2009-10-02",
+      "court": "Court of Appeals of Tennessee",
+      "decision_date": "2009-10-02",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in a dispute over an exclusive listing agreement and a broker commission.",
+      "publisher_member": "original court opinion, PDF p. 8"
+    },
+    "d83918ea46ffba88de95be2fa61f38": {
+      "source_id": "US-TN:response:743ce9f4de02",
+      "authority_type": "court_rule",
+      "citation": "Tenn. R. Civ. P. 12.01 (March 2025 archive)",
+      "text": "A defendant shall serve an answer within thirty (30) days after the service of the summons and complaint upon him. A party served with a pleading stating a cross-claim against such party shall serve an answer thereto within thirty (30) days after the service upon him or her. The plaintiff shall serve a reply to a counterclaim in the answer within thirty (30) days after service of the answer, or, if a reply is ordered by the court, within thirty (30) days after service of the order, unless the order otherwise directs. The service of a motion permitted under this rule alters these periods of time as follows, unless a different time is fixed by order of the court: (1) if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within fifteen (15) days after notice of the court's action; (2) if the court grants a motion for a more definite statement the responsive pleading shall be served within fifteen (15) days after the service of the more definite statement.",
+      "text_sha256": "bf33b937ab78f219e3e62c8b424eeda24988c968022cfcfe53c0701f86530263",
+      "publisher_sha256": "075418f0678f1fa3ac62fa98e78ef04b2977d4751eb9b27be378df97a55c2091",
+      "retrieved_at": "2026-11-21T04:05:30.817419+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Tennessee judiciary Rule 12.01 archived March 9, 2025",
+      "court": "Tennessee trial courts governed by the Rules of Civil Procedure",
+      "publisher_member": "publisher Rule 12.01 text",
+      "effective_from": "1999-07-01"
+    },
+    "71254084902282120802e2227b33e5": {
+      "source_id": "US-TN:negligence_elements:17a8aa9b52aa",
+      "authority_type": "opinion",
+      "citation": "Brown v. Hugo, No. W2005-01356-COA-R3-CV, slip op. at 4 (Tenn. Ct. App. June 27, 2006)",
+      "text": "In an action for negligence, the plaintiff must prove five elements: (1) a duty of care owed to the plaintiff by the defendant; (2) conduct by the defendant constituting breach of that duty; (3) injury or loss to the plaintiff; (4) that the defendant’s conduct was the cause in fact of the plaintiff’s injury; and (5) that the defendant’s conduct was the proximate or legal cause of the injury.",
+      "text_sha256": "5cafe455e20fbebe2c3be613579b8cd7479b931c2f5df2f75a23bc592e8e8657",
+      "publisher_sha256": "913316d465ae3984ede9c5dc12e241b4e7cabd59cc4e7acf8b01ead48e89debe",
+      "retrieved_at": "2026-11-21T04:18:05.272531+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2006-06-27",
+      "court": "Court of Appeals of Tennessee",
+      "decision_date": "2006-06-27",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a defense verdict in an automobile negligence action.",
+      "publisher_member": "court opinion PDF p. 4"
+    },
+    "aa4dfe30e75d712867e72084eb84ab": {
+      "source_id": "US-TN:commencement:72ab1a47ce32",
+      "authority_type": "court_rule",
+      "citation": "Tenn. R. Civ. P. 3 (2016 Christenberry quotation)",
+      "text": "All civil actions are commenced by filing a complaint with the clerk of the court. An action is commenced within the meaning of any statute of limitations upon such filing of a complaint, whether process be issued or not issued and whether process be returned served or unserved. If process remains unissued for 90 days or is not served within 90 days from issuance, regardless of the reason, the plaintiff cannot rely upon the original commencement to toll the running of a statute of limitations unless the plaintiff continues the action by obtaining issuance of new process within one year from issuance of the previous process or, if no process is issued, within one year of the filing of the complaint.",
+      "text_sha256": "ffa78383ac62578629520733e663d91a3d8b4ee5fc0955bbb240ffcee922dcde",
+      "publisher_sha256": "1f68fb108d981e328412c6ea0117601b13c6e16fb2696a376b39e109bc2b50f2",
+      "retrieved_at": "2026-11-21T16:38:32.549144+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Tennessee Rule 3 as quoted by the Tennessee Court of Appeals on January 14, 2016",
+      "court": "Tennessee courts governed by the Tennessee Rules of Civil Procedure",
+      "publisher_member": "Tennessee Court of Appeals, Christenberry v. Christenberry, Jan. 14, 2016, slip op. p. 6, rule quoted in opinion"
+    },
+    "712fc61e2c6d53df8d94d7fd3bfbca": {
+      "source_id": "US-TN:summons_issuance:e60262d967b5",
+      "authority_type": "court_rule",
+      "citation": "Tenn. R. Civ. P. 4.01(1) (2016 Christenberry quotation)",
+      "text": "(1) Upon the filing of the complaint the clerk of the court wherein the complaint is filed shall forthwith issue the required summons and cause it, with necessary copies of the complaint and summons, to be delivered for service to any person authorized to serve process. This person shall serve the summons, and the return indorsed thereon shall be proof of the time and manner of service. A summons may be issued for service in any county against any defendant, and separate or additional summonses may be issued against any defendant upon request of plaintiff. Nothing in this rule shall affect existing laws with respect to venue.",
+      "text_sha256": "97ffba441d84bffcf08b1447cc716a4a1f65922dbdaea49da711fcc47c1e9a10",
+      "publisher_sha256": "1f68fb108d981e328412c6ea0117601b13c6e16fb2696a376b39e109bc2b50f2",
+      "retrieved_at": "2026-11-21T16:38:32.549144+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Tennessee Rule 4.01 as quoted by the Tennessee Court of Appeals on January 14, 2016",
+      "court": "Tennessee courts governed by the Tennessee Rules of Civil Procedure",
+      "publisher_member": "Tennessee Court of Appeals, Christenberry v. Christenberry, Jan. 14, 2016, slip op. p. 7, rule quoted in opinion"
+    },
+    "940138887ad8d265899e556a0a4eae": {
+      "source_id": "US-TN:service:f79d9dec5263",
+      "authority_type": "court_rule",
+      "citation": "Tenn. R. Civ. P. 4.01(2) (2016 Christenberry quotation)",
+      "text": "(2) A summons and complaint may be served by any person who is not a party and is not less than 18 years of age. The process server must be identified by name and address on the return.",
+      "text_sha256": "e02b49da2b761f3447af89ebe509a477018e731c0475610584eaf25a4ae0e35f",
+      "publisher_sha256": "1f68fb108d981e328412c6ea0117601b13c6e16fb2696a376b39e109bc2b50f2",
+      "retrieved_at": "2026-11-21T16:38:32.549144+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Tennessee Rule 4.01 as quoted by the Tennessee Court of Appeals on January 14, 2016",
+      "court": "Tennessee courts governed by the Tennessee Rules of Civil Procedure",
+      "publisher_member": "Tennessee Court of Appeals, Christenberry v. Christenberry, Jan. 14, 2016, slip op. p. 7, rule quoted in opinion"
+    },
+    "430169efc35b8b1dd7a66b1236ed6d": {
+      "source_id": "US-TN:service_time_limit:db40fa2f3057",
+      "authority_type": "court_rule",
+      "citation": "Tenn. R. Civ. P. 3, service and reissuance (2016 Christenberry quotation)",
+      "text": "If process remains unissued for 90 days or is not served within 90 days from issuance, regardless of the reason, the plaintiff cannot rely upon the original commencement to toll the running of a statute of limitations unless the plaintiff continues the action by obtaining issuance of new process within one year from issuance of the previous process or, if no process is issued, within one year of the filing of the complaint.",
+      "text_sha256": "a8f7bdfa64b40e1379fc7ae7dcae2c04b95dc568b157c9ef9236bf5274ed2f34",
+      "publisher_sha256": "1f68fb108d981e328412c6ea0117601b13c6e16fb2696a376b39e109bc2b50f2",
+      "retrieved_at": "2026-11-21T16:38:32.549144+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Tennessee Rule 3 as quoted by the Tennessee Court of Appeals on January 14, 2016",
+      "court": "Tennessee courts governed by the Tennessee Rules of Civil Procedure",
+      "publisher_member": "Tennessee Court of Appeals, Christenberry v. Christenberry, January 14, 2016, slip op. p. 6, last sentence of quoted Rule 3"
+    },
+    "b67f5fda527ac4fd687ed674405cf3": {
+      "source_id": "US-TN:general_contract_limitations:1c11e6a2eee4",
+      "authority_type": "opinion",
+      "citation": "Deutsche Bank National Trust Co. v. Lee, No. M2018-01479-COA-R3-CV (Tenn. Ct. App. June 13, 2019)",
+      "text": "The statute of limitations for “[a]ctions on contracts not otherwise expressly provided for” is six years. Tenn. Code Ann. § 28-3-109(a)(3). Chapter 28 of the Tennessee Code does not otherwise expressly provide for actions regarding promissory notes. “As it pertains to an installment note, the law is well settled that the cause of action accrues on each installment when it becomes due, and that the statutory period begins to run from that moment on that installment.” Consumer Credit Union v. Hite, 801 S.W.2d 822, 824 (Tenn. Ct. App. 1990).",
+      "text_sha256": "d87e272e79c2ab92838063b3cd517275c3821a922d3c48d40c4a4b8390b88c05",
+      "publisher_sha256": "5160a636ee485a4c1ac0d7407447f14aef7d15eaf50ade8fa38d72d4ad8e1994",
+      "retrieved_at": "2026-11-21T17:43:05.064190+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported opinion issued 2019-06-13",
+      "court": "Tennessee Court of Appeals",
+      "publisher_member": "Tennessee Court of Appeals issued opinion p. 7, general rule and accrual for installment notes",
+      "decision_date": "2019-06-13",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from judgment on breach of a promissory note; the appellate court reviewed the limitations defense in an installment-payment dispute."
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_50",
+    "source_id": "US-TN:fault:923fcb0264d1",
+    "passage_selector": "fde66c034a80b5bfea857de2e0810e",
+    "currentness": "historical",
+    "qualification": "Historical civil damages enactment. The passage expressly addresses multiple liable defendants and the 50 percent recovery bar. The retained provision does not establish the rule for all other claim contexts."
+  }
+}

@@ -1,0 +1,1198 @@
+{
+  "jurisdiction": "US-ND",
+  "version": "1",
+  "sources": {
+    "US-ND:statutes:325f928b7bd5": {
+      "category": "statutes",
+      "title": "Century Code",
+      "url": "http://www.legis.nd.gov/general-information/north-dakota-century-code",
+      "directory": "codes",
+      "locator": "North Dakota"
+    },
+    "US-ND:constitution:646f7f954ae1": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.legis.nd.gov/constitution",
+      "directory": "codes",
+      "locator": "North Dakota"
+    },
+    "US-ND:legislature:4cb02324f367": {
+      "category": "legislature",
+      "title": "Legislative Assembly",
+      "url": "http://www.legis.nd.gov/",
+      "directory": "codes",
+      "locator": "North Dakota"
+    },
+    "US-ND:labor_agency:bc37ffdb7b4f": {
+      "category": "labor_agency",
+      "title": "www.nd.gov/labor",
+      "url": "http://www.nd.gov/labor/",
+      "directory": "labor",
+      "locator": "North Dakota"
+    },
+    "US-ND:commercial_code:6e64c54a3982": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://www.legis.nd.gov/cencode/t41.html",
+      "directory": "ucc",
+      "locator": "North Dakota"
+    },
+    "US-ND:civil_rules:3fd367602653": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "http://www.legis.nd.gov/cencode/t28.html",
+      "directory": "procedure",
+      "locator": "North Dakota"
+    },
+    "US-ND:consumer_agency:1a550fcedc40": {
+      "category": "consumer_agency",
+      "title": "North Dakota (ND)",
+      "url": "https://attorneygeneral.nd.gov/consumer-resources/",
+      "directory": "consumer",
+      "locator": "North Dakota (ND)",
+      "observation": {
+        "requested_url": "https://attorneygeneral.nd.gov/consumer-resources/",
+        "retrieved_at": "2026-11-17T19:41:35.219548+00:00",
+        "http_status": "200",
+        "sha256": "1d0156a5d7216d581a3216aa879666123dcce86840fe967f76e84d6f7e53dd11",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ND:judiciary:41af70cef065": {
+      "category": "judiciary",
+      "title": "Judicial System",
+      "url": "https://www.ndcourts.gov/",
+      "directory": "doj-ND",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-ND:court_directory:8bb8d1d5ab0d": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.ndcourts.gov/supreme-court",
+      "directory": "doj-ND",
+      "locator": "Supreme Court"
+    },
+    "US-ND:court_directory:a570b99e1ae4": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "https://www.ndcourts.gov/district-court",
+      "directory": "doj-ND",
+      "locator": "District Courts",
+      "observation": {
+        "requested_url": "https://www.ndcourts.gov/district-court",
+        "retrieved_at": "2026-11-17T19:43:07.612598+00:00",
+        "http_status": "000",
+        "sha256": null,
+        "health": "unreachable"
+      }
+    },
+    "US-ND:forms:542d6c39d0ae": {
+      "category": "forms",
+      "title": "Civil Procedure Forms",
+      "url": "https://www.ndcourts.gov/legal-self-help/general-use-forms",
+      "directory": "doj-ND",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-ND:forms:c1e3265f14c1": {
+      "category": "forms",
+      "title": "Criminal Procedure Forms",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcrimp/appendix",
+      "directory": "doj-ND",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-ND:forms:2026f652128f": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "https://www.ndcourts.gov/legal-self-help",
+      "directory": "doj-ND",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-ND:constitution:2f6d6bd5906e": {
+      "category": "constitution",
+      "title": "Constitution and Laws",
+      "url": "http://www.lawmoose.com/index.cfm?Action=library.&Topic=WI180317",
+      "directory": "doj-ND",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-ND:regulations:364a7e050425": {
+      "category": "regulations",
+      "title": "Administrative Code, Rules, and Notices",
+      "url": "https://ndlegis.gov/agency-rules/north-dakota-administrative-code/index.html",
+      "directory": "doj-ND",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-ND:pi_limitations:9c8a4658898e": {
+      "category": "pi_limitations",
+      "title": "N.D. Cent. Code § 28-01-16(5)",
+      "url": "https://www.ndlegis.gov/cencode/t28c01.pdf#nameddest=28-01-16",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.ndlegis.gov/cencode/t28c01.pdf",
+        "retrieved_at": "2026-11-17T19:34:04.201354+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-ND:written_contract_limitations:9c8a4658898e": {
+      "category": "written_contract_limitations",
+      "title": "N.D. Cent. Code § 28-01-16(1)",
+      "url": "https://www.ndlegis.gov/cencode/t28c01.pdf#nameddest=28-01-16",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.ndlegis.gov/cencode/t28c01.pdf",
+        "retrieved_at": "2026-11-17T19:34:04.201354+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-ND:oral_contract_limitations:9c8a4658898e": {
+      "category": "oral_contract_limitations",
+      "title": "N.D. Cent. Code § 28-01-16(1)",
+      "url": "https://www.ndlegis.gov/cencode/t28c01.pdf#nameddest=28-01-16",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.ndlegis.gov/cencode/t28c01.pdf",
+        "retrieved_at": "2026-11-17T19:34:04.201354+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-ND:small_claims:5455cf68b07a": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.ndcourts.gov/legal-self-help/small-claims",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.ndcourts.gov/legal-self-help/small-claims",
+        "retrieved_at": "2026-11-17T19:42:54.366728+00:00",
+        "http_status": "200",
+        "sha256": "d68537640a658bc4c63882f22a0087468e7f79dffefdc8f1c96c305057203aa2",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ND:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 28"
+    },
+    "US-ND:fault:8f7384b8f891": {
+      "category": "fault",
+      "title": "N.D. Cent. Code § 32-03.2-02",
+      "url": "https://ndlegis.gov/prod/cencode/t32c03-2.pdf",
+      "directory": null,
+      "locator": "N.D. Cent. Code § 32-03.2-02",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:36.168980+00:00",
+        "sha256": "e56939f921bc3303492815f28d2479ac7693aa1cb56ac2eb2a7116c6eb521679"
+      }
+    },
+    "US-ND:consumerLaw:176bc364e1d5": {
+      "title": "N.D.C.C. § 51-15-01 et seq.",
+      "category": "consumerLaw",
+      "url": "https://ndlegis.gov/cencode/t51c15.pdf",
+      "directory": "consumer_statutes_index",
+      "locator": "N.D.C.C. § 51-15-01 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-ND:contract_formation:ba3e041ca594": {
+      "category": "contract_formation",
+      "title": "N.D. Cent. Code § 41-02-11",
+      "url": "https://ndlegis.gov/prod/cencode/t41c02.pdf",
+      "locator": "N.D. Cent. Code § 41-02-11",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:32.696982+00:00",
+        "sha256": "7c2e8b6e26c0870a8fb08995ddfabfe1fc2cab407df956e3129f54a9604cde67"
+      }
+    },
+    "US-ND:contract_damages:5b8b9a2b750f": {
+      "category": "contract_damages",
+      "title": "N.D. Cent. Code § 41-02-93",
+      "url": "https://ndlegis.gov/prod/cencode/t41c02.pdf",
+      "locator": "N.D. Cent. Code § 41-02-93",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:32.696982+00:00",
+        "sha256": "7c2e8b6e26c0870a8fb08995ddfabfe1fc2cab407df956e3129f54a9604cde67"
+      }
+    },
+    "US-ND:commencement:c9ae882cd38d": {
+      "category": "commencement",
+      "title": "N.D.R.Civ.P. 3",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcivp/3",
+      "locator": "N.D.R.Civ.P. 3",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:21:42.109148+00:00",
+        "sha256": "4a0f9b7e1b8be3a38f92ea0ef7c8c1ca05755c66962f38b195b8f2a4c18ae0da"
+      }
+    },
+    "US-ND:wageLaw:e32c19fa48fd": {
+      "category": "wageLaw",
+      "title": "N.D. Cent. Code § 34-14-02",
+      "url": "https://ndlegis.gov/cencode/t34c14.pdf",
+      "locator": "N.D. Cent. Code § 34-14-02",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:59.048563+00:00",
+        "sha256": "7ba4a2ec6deaccd33e33a33a6ee525936ca81bfdb9369ba4d942c55909830df6"
+      }
+    },
+    "US-ND:consumerLaw:375909d03624": {
+      "category": "consumerLaw",
+      "title": "N.D. Cent. Code § 51-15-02",
+      "url": "https://ndlegis.gov/cencode/t51c15.pdf",
+      "locator": "N.D. Cent. Code § 51-15-02",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:45.010669+00:00",
+        "sha256": "9f19189433402e2504818983dccb7ea96b84cf56ed39af8aa8ac52160ddf4432"
+      }
+    },
+    "US-ND:pi_limitations:43e2adf9bac1": {
+      "category": "pi_limitations",
+      "title": "N.D. Cent. Code § 28-01-16",
+      "url": "https://ndlegis.gov/cencode/t28c01.pdf",
+      "locator": "N.D. Cent. Code § 28-01-16",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:22.777444+00:00",
+        "sha256": "0e812b146e5c18aecc4c4d2c9cfcb015cc1d8109bea93db8e74ed5bade078364"
+      }
+    },
+    "US-ND:general_contract_limitations:6a4f48881f76": {
+      "category": "general_contract_limitations",
+      "title": "N.D. Cent. Code § 28-01-16(1)",
+      "url": "https://ndlegis.gov/cencode/t28c01.pdf",
+      "locator": "N.D. Cent. Code § 28-01-16(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:35:43.375301+00:00",
+        "sha256": "0e812b146e5c18aecc4c4d2c9cfcb015cc1d8109bea93db8e74ed5bade078364"
+      }
+    },
+    "US-ND:response:17388d03e1b6": {
+      "category": "response",
+      "title": "N.D.R.Civ.P. 12(a)",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcivp/12",
+      "locator": "N.D.R.Civ.P. 12(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:43:00.407066+00:00",
+        "sha256": "e116736fb940981ce48ac5c3a33a7f68a6c68a7aebddf2034944c38cbfbf3c59"
+      }
+    },
+    "US-ND:service:f6de086b4b8f": {
+      "category": "service",
+      "title": "N.D.R.Civ.P. 4(d)(2)(A)",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcivp/4",
+      "locator": "N.D.R.Civ.P. 4(d)(2)(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:03.597898+00:00",
+        "sha256": "374fdd92b4d2794ffc09bdd961d32f3c143183d8d6db3b8ba2b82c744ee999f0"
+      }
+    },
+    "US-ND:small_claims:41d654db062f": {
+      "category": "small_claims",
+      "title": "N.D. Cent. Code § 27-08.1-01(1)",
+      "url": "https://ndlegis.gov/prod/cencode/t27c08-1.pdf",
+      "locator": "N.D. Cent. Code § 27-08.1-01(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:29.521693+00:00",
+        "sha256": "e325e53f03eafa6259eaa96482bdd3653e74610257958e7095237c9a0b9c78eb"
+      }
+    },
+    "US-ND:deposit:129d70da3d60": {
+      "category": "deposit",
+      "title": "N.D. Cent. Code § 47-16-07.1(3)",
+      "url": "https://ndlegis.gov/prod/cencode/t47c16.pdf",
+      "locator": "N.D. Cent. Code § 47-16-07.1(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:17.275448+00:00",
+        "sha256": "fcefb7c8434ad80e2e9644eec141b299f05b7b4bffa0517c8f607e51375b91b0"
+      }
+    },
+    "US-ND:debtLaw:011ba533f21c": {
+      "category": "debtLaw",
+      "title": "N.D. Cent. Code § 13-05-06.3 (regulated collection conduct)",
+      "url": "https://ndlegis.gov/prod/cencode/t13c05.pdf",
+      "locator": "N.D. Cent. Code § 13-05-06.3 (regulated collection conduct)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:29:53.967603+00:00",
+        "sha256": "48197b21fe9ac3aadfc568b32637c1dc079149f538a3c643f63791de0f7c58ba"
+      }
+    },
+    "US-ND:negligence_duty:17e3edfec8a3": {
+      "category": "negligence_duty",
+      "title": "N.D. Cent. Code § 9-10-06",
+      "url": "https://ndlegis.gov/cencode/t09c10.pdf",
+      "locator": "N.D. Cent. Code § 9-10-06",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:15:49.805282+00:00",
+        "sha256": "18483a275f1d44e54da31a06035744a0882e9a1d8c4c61df97ccaaa2f1422d24"
+      }
+    },
+    "US-ND:negligence_elements:bd85a7356436": {
+      "category": "negligence_elements",
+      "title": "Schmidt v. Hess Corp., 2024 ND 72, ¶ 6",
+      "url": "https://web.archive.org/web/20240519124232id_/https://www.ndcourts.gov/supreme-court/opinions/156541",
+      "locator": "Schmidt v. Hess Corp., 2024 ND 72, ¶ 6",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:18:03.703378+00:00",
+        "sha256": "343af08796820a929a1abeeefbd03c290907ad32a80023f091c197ecb2a90f6c"
+      }
+    },
+    "US-ND:summons_issuance:4a3049c8fa38": {
+      "category": "summons_issuance",
+      "title": "N.D. R. Civ. P. 4(c)",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcivp/4",
+      "locator": "N.D. R. Civ. P. 4(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:05:31.680822+00:00",
+        "sha256": "b01d6a37f6e76466f83748346e45bd189bb7d15a0ab7ec77701516244abafabe"
+      }
+    },
+    "US-ND:service:7502abb129b5": {
+      "category": "service",
+      "title": "N.D. R. Civ. P. 4(d)(1)",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcivp/4",
+      "locator": "N.D. R. Civ. P. 4(d)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:05:31.680822+00:00",
+        "sha256": "b01d6a37f6e76466f83748346e45bd189bb7d15a0ab7ec77701516244abafabe"
+      }
+    },
+    "US-ND:service:ecbac318f3c0": {
+      "category": "service",
+      "title": "N.D. R. Civ. P. 4(d)(2)(A)",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcivp/4",
+      "locator": "N.D. R. Civ. P. 4(d)(2)(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:05:31.680822+00:00",
+        "sha256": "b01d6a37f6e76466f83748346e45bd189bb7d15a0ab7ec77701516244abafabe"
+      }
+    },
+    "US-ND:service_business_entity:ee96d8a4de81": {
+      "category": "service_business_entity",
+      "title": "N.D. R. Civ. P. 4(d)(2)(D)",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcivp/4",
+      "locator": "N.D. R. Civ. P. 4(d)(2)(D)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:05:31.680822+00:00",
+        "sha256": "b01d6a37f6e76466f83748346e45bd189bb7d15a0ab7ec77701516244abafabe"
+      }
+    },
+    "US-ND:service_proof:0c98858bf71f": {
+      "category": "service_proof",
+      "title": "N.D. R. Civ. P. 4(i)",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcivp/4",
+      "locator": "N.D. R. Civ. P. 4(i)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:05:31.680822+00:00",
+        "sha256": "b01d6a37f6e76466f83748346e45bd189bb7d15a0ab7ec77701516244abafabe"
+      }
+    },
+    "US-ND:calendar:a08830e97909": {
+      "category": "calendar",
+      "title": "N.D. R. Civ. P. 6(a)",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcivp/6",
+      "locator": "N.D. R. Civ. P. 6(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:05:31.747718+00:00",
+        "sha256": "45610186901875baf7bc19998ac2e21514cc943bcb8843e056d4765a577fa245"
+      }
+    },
+    "US-ND:postmotion_response:68d3a7b6a894": {
+      "category": "postmotion_response",
+      "title": "N.D. R. Civ. P. 12(a)(2)",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcivp/12",
+      "locator": "N.D. R. Civ. P. 12(a)(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:05:31.779346+00:00",
+        "sha256": "1b66956a567a2ca471d56d214f2dce0ec2f8e2f5557a0dca9fe2ac814a422da9"
+      }
+    },
+    "US-ND:venue:47bb0625b131": {
+      "category": "venue",
+      "title": "N.D. Cent. Code § 28-04-05",
+      "url": "https://ndlegis.gov/prod/cencode/t28c04.pdf",
+      "locator": "N.D. Cent. Code § 28-04-05",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:05:32.333333+00:00",
+        "sha256": "3f6886b465bd7c70efe0eade584598c534fd930db1074f72460f2814a39a8519"
+      }
+    },
+    "US-ND:wrongful_death_limitations:e2595296e7c1": {
+      "category": "wrongful_death_limitations",
+      "title": "N.D. Cent. Code § 28-01-18(4)",
+      "url": "https://ndlegis.gov/prod/cencode/t28c01.pdf",
+      "locator": "N.D. Cent. Code § 28-01-18(4)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:05:30.977456+00:00",
+        "sha256": "0e812b146e5c18aecc4c4d2c9cfcb015cc1d8109bea93db8e74ed5bade078364"
+      }
+    },
+    "US-ND:tolling:288a5a468c3b": {
+      "category": "tolling",
+      "title": "N.D. Cent. Code § 28-01-24",
+      "url": "https://ndlegis.gov/prod/cencode/t28c01.pdf",
+      "locator": "N.D. Cent. Code § 28-01-24",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:05:30.977456+00:00",
+        "sha256": "0e812b146e5c18aecc4c4d2c9cfcb015cc1d8109bea93db8e74ed5bade078364"
+      }
+    },
+    "US-ND:habitability:a3dad9c265db": {
+      "category": "habitability",
+      "title": "N.D. Cent. Code § 47-16-13.1",
+      "url": "https://ndlegis.gov/cencode/t47c16.pdf",
+      "locator": "N.D. Cent. Code § 47-16-13.1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:05:33.537492+00:00",
+        "sha256": "fcefb7c8434ad80e2e9644eec141b299f05b7b4bffa0517c8f607e51375b91b0"
+      }
+    },
+    "US-ND:tenant_remedies:cbf1e8517bf1": {
+      "category": "tenant_remedies",
+      "title": "N.D. Cent. Code § 47-16-13.6",
+      "url": "https://ndlegis.gov/cencode/t47c16.pdf",
+      "locator": "N.D. Cent. Code § 47-16-13.6",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:05:33.537492+00:00",
+        "sha256": "fcefb7c8434ad80e2e9644eec141b299f05b7b4bffa0517c8f607e51375b91b0"
+      }
+    },
+    "US-ND:labor_agency:830cb85642c3": {
+      "category": "labor_agency",
+      "title": "N.D. Cent. Code § 34-14-09",
+      "url": "https://ndlegis.gov/cencode/t34c14.pdf",
+      "locator": "N.D. Cent. Code § 34-14-09",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:05:33.251510+00:00",
+        "sha256": "7ba4a2ec6deaccd33e33a33a6ee525936ca81bfdb9369ba4d942c55909830df6"
+      }
+    },
+    "US-ND:wage_enforcement:60c80e450bb8": {
+      "category": "wage_enforcement",
+      "title": "N.D. Cent. Code § 34-14-09.1",
+      "url": "https://ndlegis.gov/cencode/t34c14.pdf",
+      "locator": "N.D. Cent. Code § 34-14-09.1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:05:33.251510+00:00",
+        "sha256": "7ba4a2ec6deaccd33e33a33a6ee525936ca81bfdb9369ba4d942c55909830df6"
+      }
+    },
+    "US-ND:consumer_remedies:deaa93c95ed0": {
+      "category": "consumer_remedies",
+      "title": "N.D. Cent. Code § 51-15-09",
+      "url": "https://ndlegis.gov/cencode/t51c15.pdf",
+      "locator": "N.D. Cent. Code § 51-15-09",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:05:34.203639+00:00",
+        "sha256": "9f19189433402e2504818983dccb7ea96b84cf56ed39af8aa8ac52160ddf4432"
+      }
+    },
+    "US-ND:consumer_limitations:2264d5c3d0c2": {
+      "category": "consumer_limitations",
+      "title": "N.D. Cent. Code § 51-15-12",
+      "url": "https://ndlegis.gov/cencode/t51c15.pdf",
+      "locator": "N.D. Cent. Code § 51-15-12",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:25:36.875730+00:00",
+        "sha256": "9f19189433402e2504818983dccb7ea96b84cf56ed39af8aa8ac52160ddf4432"
+      }
+    },
+    "US-ND:service_time_limit:fd54af182ecb": {
+      "category": "service_time_limit",
+      "title": "N.D. R. Civ. P. 4(d)(2)(G)",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcivp/4",
+      "locator": "N.D. R. Civ. P. 4(d)(2)(G)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:03.597898+00:00",
+        "sha256": "374fdd92b4d2794ffc09bdd961d32f3c143183d8d6db3b8ba2b82c744ee999f0"
+      }
+    },
+    "US-ND:service_time_limit:2699d883a77e": {
+      "category": "service_time_limit",
+      "title": "N.D. R. Civ. P. 4(e)(3)–(6)",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcivp/4",
+      "locator": "N.D. R. Civ. P. 4(e)(3)–(6)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:03.597898+00:00",
+        "sha256": "374fdd92b4d2794ffc09bdd961d32f3c143183d8d6db3b8ba2b82c744ee999f0"
+      }
+    },
+    "US-ND:service_time_limit:9c5a7b66f541": {
+      "category": "service_time_limit",
+      "title": "N.D. R. Civ. P. 4(g)",
+      "url": "https://www.ndcourts.gov/legal-resources/rules/ndrcivp/4",
+      "locator": "N.D. R. Civ. P. 4(g)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:03.597898+00:00",
+        "sha256": "374fdd92b4d2794ffc09bdd961d32f3c143183d8d6db3b8ba2b82c744ee999f0"
+      }
+    },
+    "US-ND:general_contract_damages:caae04d1fc98": {
+      "category": "general_contract_damages",
+      "title": "N.D. Cent. Code § 32-03-09",
+      "url": "https://ndlegis.gov/cencode/t32c03.pdf",
+      "locator": "N.D. Cent. Code § 32-03-09",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:05:44.238230+00:00",
+        "sha256": "5f8866177568efe0d0864eafd3937a47a41ee69ad1d7c4b0b2f02da6638c09a1"
+      }
+    },
+    "US-ND:general_contract_damages:842ca1fd611b": {
+      "category": "general_contract_damages",
+      "title": "N.D. Cent. Code § 32-03-36",
+      "url": "https://ndlegis.gov/cencode/t32c03.pdf",
+      "locator": "N.D. Cent. Code § 32-03-36",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:05:44.238230+00:00",
+        "sha256": "5f8866177568efe0d0864eafd3937a47a41ee69ad1d7c4b0b2f02da6638c09a1"
+      }
+    },
+    "US-ND:general_contract_damages:7b405be4d571": {
+      "category": "general_contract_damages",
+      "title": "N.D. Cent. Code § 32-03-38",
+      "url": "https://ndlegis.gov/cencode/t32c03.pdf",
+      "locator": "N.D. Cent. Code § 32-03-38",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:05:44.238230+00:00",
+        "sha256": "5f8866177568efe0d0864eafd3937a47a41ee69ad1d7c4b0b2f02da6638c09a1"
+      }
+    },
+    "US-ND:consumer_agency:3026b64fd4b1": {
+      "category": "consumer_agency",
+      "title": "N.D. Cent. Code § 51-15-07, first two paragraphs",
+      "url": "https://ndlegis.gov/cencode/t51c15.pdf",
+      "locator": "N.D. Cent. Code § 51-15-07, first two paragraphs",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:25:36.875730+00:00",
+        "sha256": "9f19189433402e2504818983dccb7ea96b84cf56ed39af8aa8ac52160ddf4432"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-ND:court:ac635657c1be",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-ND:court_directory:8bb8d1d5ab0d"
+    },
+    {
+      "id": "US-ND:court:4b843bf3a4b1",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-ND:court_directory:a570b99e1ae4"
+    },
+    {
+      "id": "US-ND:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-ND:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-ND:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-ND:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "N.D. Cent. Code § 28-01-16(5)",
+      "source_id": "US-ND:pi_limitations:9c8a4658898e",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "N.D. Cent. Code § 28-01-16(1)",
+      "source_id": "US-ND:written_contract_limitations:9c8a4658898e",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "N.D. Cent. Code § 28-01-16(1)",
+      "source_id": "US-ND:oral_contract_limitations:9c8a4658898e",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "N.D. Cent. Code § 47-16-13.1. Landlord obligations",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "N.D.C.C. § 51-15-01 et seq.",
+      "source_id": "US-ND:consumerLaw:176bc364e1d5",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "78fdedd1f65a5874a57cf5f076a1da": {
+      "citation": "N.D. Cent. Code § 32-03.2-02",
+      "source_id": "US-ND:fault:8f7384b8f891",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "Modified comparative fault. Contributory fault does not bar recovery in an action by any person to recover damages for death or injury to person or property unless the fault was as great as the combined fault of all other persons who contribute to the injury, but any damages allowed must be diminished in proportion to the amount of contributing fault attributable to the person recovering. The court may, and when requested by any party, shall direct the jury to find separate special verdicts determining the amount of damages and the percentage of fault attributable to each person, whether or not a party, who contributed to the injury. The court shall then reduce the amount of such damages in proportion to the amount of fault attributable to the person recovering.",
+      "text_sha256": "6ece7e2560f8e16e4f00adf9d1f075a5cbc3467b42f29514b447007c7d9db672",
+      "publisher_sha256": "e56939f921bc3303492815f28d2479ac7693aa1cb56ac2eb2a7116c6eb521679",
+      "retrieved_at": "2026-11-17T20:50:36.168980+00:00",
+      "currentness": "unresolved"
+    },
+    "333d58598e05dead366e72b96c1b04": {
+      "source_id": "US-ND:contract_formation:ba3e041ca594",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 41-02-11",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "7c2e8b6e26c0870a8fb08995ddfabfe1fc2cab407df956e3129f54a9604cde67",
+      "retrieved_at": "2026-11-18T15:14:32.696982+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "c1a58a613e54ceb3d9d6bd0c43c7cb": {
+      "source_id": "US-ND:contract_damages:5b8b9a2b750f",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 41-02-93",
+      "text": "When the buyer has accepted goods and given notification (subsection 3 of section 41-02-70), the buyer may recover as damages for any nonconformity of tender the loss resulting in the ordinary course of events from the seller's breach as determined in any manner which is reasonable. 2. The measure of damages for breach of warranty is the difference at the time and place of acceptance between the value of the goods accepted and the value they would have had if they had been as warranted, unless special circumstances show proximate damages of a different amount.",
+      "text_sha256": "e479a8e4e2d211c512a9c1d20a017942a31a4754c0bc5cf2d2315d9017e12a46",
+      "publisher_sha256": "7c2e8b6e26c0870a8fb08995ddfabfe1fc2cab407df956e3129f54a9604cde67",
+      "retrieved_at": "2026-11-18T15:14:32.696982+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "a8dd73511a30b296753e4ecbc73efb": {
+      "source_id": "US-ND:commencement:c9ae882cd38d",
+      "authority_type": "court_rule",
+      "citation": "N.D.R.Civ.P. 3",
+      "text": "A civil action is commenced by the service of a summons.",
+      "text_sha256": "b216a9742b55660f2093557b65975d061a6c0fa66c0caf673965b0133328a1b0",
+      "publisher_sha256": "4a0f9b7e1b8be3a38f92ea0ef7c8c1ca05755c66962f38b195b8f2a4c18ae0da",
+      "retrieved_at": "2026-11-18T20:21:42.109148+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "North Dakota District Court"
+    },
+    "19864a1d941986639a6dd1c2de70ae": {
+      "source_id": "US-ND:wageLaw:e32c19fa48fd",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 34-14-02",
+      "text": "Every employer shall pay all wages due to employees at least once each calendar month on regular agreed paydays designated in advance by the employer. Wages must be paid in lawful money of the United States; with checks, as that item is used in chapter 41 -03, drawn on banks or credit unions convenient to the place of employment; with direct deposit in the financial institution of the employee's choice; or, at the election of the employee when offered by the employer, by delivery to the employee of a stored value card that meets the requirements of this section. A stored value card that is used by an employer to pay wages must be issued by a federally insured bank or credit union. The value of the funds underlying a stored value card that is used by an employer to pay wages must be a deposit that is insured by the federal deposit insurance corporation or national credit union administration. Before paying wages by delivering a stored value card to an employee, an employer must have deposited with the issuer funds in an amount at least equal to the wages due from the employer to each employee whose wages are being paid through a stored value card and any account fees that are charged to the employer by the issuer.",
+      "text_sha256": "ac87b230aa0f35ce7daed093a6efe684119b5c23c9056bcaac2bcbc573d629a0",
+      "publisher_sha256": "7ba4a2ec6deaccd33e33a33a6ee525936ca81bfdb9369ba4d942c55909830df6",
+      "retrieved_at": "2026-11-19T14:10:59.048563+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "17626bd80123e4c8d047a4c4b9611e": {
+      "source_id": "US-ND:consumerLaw:375909d03624",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 51-15-02",
+      "text": "The act, use, or employment by any person of any deceptive act or practice, fraud, false pretense, false promise, or misrepresentation, with the intent that others rely thereon in connection with the sale or advertisement of any merchandise, whether or not any person has in fact been misled, deceived, or damaged thereby, is declared to be an unlawful practice. The act, use, or employment by any person of any act or practice, in connection with the sale or advertisement of any merchandise, which is unconscionable or which causes or is likely to cause substantial injury to a person which is not reasonably avoidable by the injured person and not outweighed by countervailing benefits to consumers or to competition, is declared to be an unlawful practice.",
+      "text_sha256": "a0a89a1ebbbf52e0ee2da82cc931e18ee7a7c63d51ad6150cb3f50fe6493a404",
+      "publisher_sha256": "9f19189433402e2504818983dccb7ea96b84cf56ed39af8aa8ac52160ddf4432",
+      "retrieved_at": "2026-11-19T19:26:45.010669+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "00ffaec913311366c4c98372690649": {
+      "source_id": "US-ND:pi_limitations:43e2adf9bac1",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 28-01-16",
+      "text": "The following actions must be commenced within six years after the claim for relief has accrued: 1. An action upon a contract, obligation, or liability, express or implied, subject to the provisions of sections 28-01-15 and 41-02-104. 2. An action upon a liability created by statute, other than a penalty or forfeiture, when not otherwise expressly provided. 3. An action for trespass upon real property. 4. An action for taking, detaining, or injuring any goods or chattels, including actions for the specific recovery of personal property. 5. An action for criminal conversation or for any other injury to the person or rights of another not arising upon contract, when not otherwise expressly provided. 6. An action for relief on the ground of fraud in all cases both at law and in equity, the claim for relief in such case not to be deemed to have accrued until the discovery by the aggrieved party of the facts constituting the fraud.",
+      "text_sha256": "f9705187feae5384eb17ed208f54301d31d511808aef80d07409d04254644efe",
+      "publisher_sha256": "0e812b146e5c18aecc4c4d2c9cfcb015cc1d8109bea93db8e74ed5bade078364",
+      "retrieved_at": "2026-11-19T19:31:22.777444+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "d7533d6ec0d6852d528b8e3e92e750": {
+      "source_id": "US-ND:general_contract_limitations:6a4f48881f76",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 28-01-16(1)",
+      "text": "The following actions must be commenced within six years after the claim for relief has accrued: 1. An action upon a contract, obligation, or liability, express or implied, subject to the provisions of sections 28-01-15 and 41-02-104.",
+      "text_sha256": "4334ac34d52e8738baf19d23f7481a54309e0a4526dc025747b1cb8344217173",
+      "publisher_sha256": "0e812b146e5c18aecc4c4d2c9cfcb015cc1d8109bea93db8e74ed5bade078364",
+      "retrieved_at": "2026-11-19T19:35:43.375301+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "9d16f0f0a99d175531078c0fd8d1b1": {
+      "source_id": "US-ND:response:17388d03e1b6",
+      "authority_type": "court_rule",
+      "citation": "N.D.R.Civ.P. 12(a)",
+      "text": "(a) Time to serve a responsive pleading. (1) In General. Unless another time is specified by this rule or a statute, the time for serving a responsive pleading is: (A) a defendant must serve an answer within 21 days after being served with the summons and complaint; (B) a party must serve an answer to a counterclaim or crossclaim within 21 days after being served with the pleading that states the counterclaim or crossclaim; (C) a party must serve a reply to an answer within 21 days after being served with an order to reply, unless the order specifies a different time. (2) Effect of a Motion. Unless the court sets a different time, serving a motion under this rule alters these periods as follows: (A) if the court denies the motion or postpones its disposition until trial, the responsive pleading must be served within 14 days after notice of the court's action; (B) if the court grants a motion for a more definite statement, the responsive pleading must be served within 14 days after the more definite statement is served.",
+      "text_sha256": "78795c5e9ba4ab73a8fb94c7a806409b0b5c49ecad2ce6a343a04407c102310b",
+      "publisher_sha256": "e116736fb940981ce48ac5c3a33a7f68a6c68a7aebddf2034944c38cbfbf3c59",
+      "retrieved_at": "2026-11-19T19:43:00.407066+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "North Dakota District Court"
+    },
+    "9a9b2b7c8b94dfdef4ebf407fed0f5": {
+      "source_id": "US-ND:service:f6de086b4b8f",
+      "authority_type": "court_rule",
+      "citation": "N.D.R.Civ.P. 4(d)(2)(A)",
+      "text": "(A) Serving an Individual Fourteen Years of Age and Older. Service must be made on an individual 14 or more years of age by: (i) delivering a copy of the summons to the individual personally; (ii) leaving a copy of the summons at the individual's dwelling or usual place of residence in the presence of a person of suitable age and discretion who resides there; (iii) delivering, at the office of the process server, a copy of the summons to the individual's spouse if the spouses reside together; (iv) delivering a copy of the summons to the individual's agent authorized by appointment or by law to receive service of process; or (v) any form of mail or third-party commercial delivery addressed to the individual to be served and requiring a signed receipt and resulting in delivery to that individual.",
+      "text_sha256": "2647e6706227b8168b9d10a3b68105536cb8399ed0d2ecc08ccabe7f136de9d3",
+      "publisher_sha256": "374fdd92b4d2794ffc09bdd961d32f3c143183d8d6db3b8ba2b82c744ee999f0",
+      "retrieved_at": "2026-11-20T15:21:03.597898+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "North Dakota District Court"
+    },
+    "5c34ce66aec44019cf32f115b2bd0b": {
+      "source_id": "US-ND:small_claims:41d654db062f",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 27-08.1-01(1)",
+      "text": "1. All judges of the district courts may exercise the jurisdiction conferred by this chapter, and while sitting in the exercise of that jurisdiction must be known and referred to as the \"small claims court\". The jurisdiction of this court is confined to cases for recovery of money, a tenant's claim for civil damages under subsection 9 of section 47-10-28, or the cancellation of any agreement involving material fraud, deception, misrepresentation, or false promise, when the value of the agreement or the amount claimed by the plaintiff or the defendant does not exceed fifteen thousand dollars.",
+      "text_sha256": "bf821b8a4647d16b39496e1b4fb82932f8e74f0c9c0d53ba5fbde0bbcc3b8dc8",
+      "publisher_sha256": "e325e53f03eafa6259eaa96482bdd3653e74610257958e7095237c9a0b9c78eb",
+      "retrieved_at": "2026-11-20T16:16:29.521693+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "North Dakota District Court sitting as Small Claims Court"
+    },
+    "8abd52bb5cc640cfeb13fb66531cce": {
+      "source_id": "US-ND:deposit:129d70da3d60",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 47-16-07.1(3)",
+      "text": "3. A lessor may apply security deposit money and accrued interest upon termination of a lease towards: a. Any damages the lessor has suffered by reason of deteriorations or injuries to the real property or dwelling by the lessee's pet or through the negligence of the lessee or the lessee's guest. b. Any unpaid rent. c. The costs of cleaning or other repairs which were the responsibility of the lessee, and which are necessary to return the dwelling unit to its original state when the lessee took possession, reasonable wear and tear excepted. Application of any portion of a security deposit not paid to the lessee upon termination of the lease must be itemized by the lessor. Such itemization together with the amount due must be delivered or mailed to the lessee at the last address furnished lessor, along with a written notice within thirty days after termination of the lease and delivery of possession by the lessee. The notice must contain a statement of any amount still due the lessor or the refund due the lessee. A lessor is not required to pay interest on security deposits if the period of occupancy was less than nine months in duration. Any amounts not claimed from the lessor by the lessee within one year of the termination of the lease agreement are subject to the reporting requirements of section 47-30.2-04.",
+      "text_sha256": "65a51511eb350291d11793be162b9d201a2f3ba286c625d1c443199b4d7be9c8",
+      "publisher_sha256": "fcefb7c8434ad80e2e9644eec141b299f05b7b4bffa0517c8f607e51375b91b0",
+      "retrieved_at": "2026-11-20T16:35:17.275448+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "de8f75317670ce322d4d05737a2e42": {
+      "source_id": "US-ND:debtLaw:011ba533f21c",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 13-05-06.3 (regulated collection conduct)",
+      "text": "It is a violation of this chapter for a person or individual subject to this chapter to: 1. Negligently make any false statement or knowingly make any omission of material fact in connection with any information, reports, or applications filed with the department or another governmental agency. 2. Collect, charge, attempt to collect or charge, or use or propose any agreement purporting to collect or charge any fee prohibited by this chapter. 3. Fail to truthfully account for moneys belonging to or collected from another.",
+      "text_sha256": "6cbfebed307f59515cda887cf66da4743e4a149b4211361abf2179f4d70419d7",
+      "publisher_sha256": "48197b21fe9ac3aadfc568b32637c1dc079149f538a3c643f63791de0f7c58ba",
+      "retrieved_at": "2026-11-20T18:29:53.967603+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "f3256c888d0c781030bf7aac6ce3b6": {
+      "source_id": "US-ND:negligence_duty:17e3edfec8a3",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 9-10-06",
+      "text": "A person is responsible not only for the result of the person's willful acts but also for an injury occasioned to another by the person's want of ordinary care or skill in the management of the person's property or self. The extent of the liability in such cases is defined by sections 32-03-01 through 32-03-18.",
+      "text_sha256": "1302ca0b95b836ab7b8eb91b02599e219bdbe514960a0eb9fa0e55d6dd811f78",
+      "publisher_sha256": "18483a275f1d44e54da31a06035744a0882e9a1d8c4c61df97ccaaa2f1422d24",
+      "retrieved_at": "2026-11-20T23:15:49.805282+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "822024b30126986e10306434ee77bd": {
+      "source_id": "US-ND:negligence_elements:bd85a7356436",
+      "authority_type": "opinion",
+      "citation": "Schmidt v. Hess Corp., 2024 ND 72, ¶ 6",
+      "text": "To prove negligence, a plaintiff must establish the existence of a duty, breach of that duty, and an injury proximately caused by the breach of duty. Bjerk, 2018 ND 124, ¶ 10.",
+      "text_sha256": "aea351415d9b12be9eb4c584375f07bc03997d57767bad46f98cb9266c9b1d8b",
+      "publisher_sha256": "343af08796820a929a1abeeefbd03c290907ad32a80023f091c197ecb2a90f6c",
+      "retrieved_at": "2026-11-21T04:18:03.703378+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2024-04-19",
+      "court": "Supreme Court of North Dakota",
+      "decision_date": "2024-04-19",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of summary judgments on a negligence claim for injuries suffered by an independent contractor’s employee.",
+      "publisher_member": "court opinion PDF p. 4"
+    },
+    "bdef3e435fb47a9d0416c36e09da5e": {
+      "source_id": "US-ND:summons_issuance:4a3049c8fa38",
+      "authority_type": "court_rule",
+      "citation": "N.D. R. Civ. P. 4(c)",
+      "text": "(c) Process. (1) Contents of Summons. The summons must: (A) specify the venue of the court in which the action is brought; (B) contain the title of the action specifying the names of the parties; (C) be directed to the defendant; (D) It must state the time within which these rules require the defendant to appear and defend; (E) notify the defendant that, if the defendant fails to appear and defend, default judgment will be rendered against the defendant for the relief demanded in the complaint; and (F) be dated and subscribed by the plaintiff or the plaintiff's attorney and include the post office address of the plaintiff or plaintiff's attorney. (G) If the action involves real estate and service is by publication, include the additional information required by Rule 4(e)(8). (2) Copy of Complaint. A copy of the complaint must be served with the summons, except when service is by publication under Rule 4(e).",
+      "text_sha256": "29d2b4b16df0b5cf65556f5f67fd6648df0a542f062181a76ae0a98f6cd0c96d",
+      "publisher_sha256": "b01d6a37f6e76466f83748346e45bd189bb7d15a0ab7ec77701516244abafabe",
+      "retrieved_at": "2026-11-21T17:05:31.680822+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "North Dakota Supreme Court rule publication effective 2024-03-01",
+      "court": "North Dakota District Courts",
+      "publisher_member": "North Dakota Supreme Court, rule 4(c)",
+      "effective_from": "2024-03-01"
+    },
+    "68d94115151a328e54232763713626": {
+      "source_id": "US-ND:service:7502abb129b5",
+      "authority_type": "court_rule",
+      "citation": "N.D. R. Civ. P. 4(d)(1)",
+      "text": "(d) Personal Service. (1) By Whom. Service of all process may be made: (A) within the state by any person of legal age and not a party to nor interested in the action; and (B) outside the state by any person who may make service under the law of this state or under the law of the place where service is made, or by a person who is designated by a court of this state.",
+      "text_sha256": "c03bbce92fc3ee7e5ef6259f48a454f77859b624ae60c9de5537a28e0fffd033",
+      "publisher_sha256": "b01d6a37f6e76466f83748346e45bd189bb7d15a0ab7ec77701516244abafabe",
+      "retrieved_at": "2026-11-21T17:05:31.680822+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "North Dakota Supreme Court rule publication effective 2024-03-01",
+      "court": "North Dakota District Courts",
+      "publisher_member": "North Dakota Supreme Court, rule 4(d)(1)",
+      "effective_from": "2024-03-01"
+    },
+    "f0f33d7e49b3c7dddd0fefecb009b7": {
+      "source_id": "US-ND:service:ecbac318f3c0",
+      "authority_type": "court_rule",
+      "citation": "N.D. R. Civ. P. 4(d)(2)(A)",
+      "text": "(A) Serving an Individual Fourteen Years of Age and Older. Service must be made on an individual 14 or more years of age by: (i) delivering a copy of the summons to the individual personally; (ii) leaving a copy of the summons at the individual's dwelling or usual place of residence in the presence of a person of suitable age and discretion who resides there; (iii) delivering, at the office of the process server, a copy of the summons to the individual's spouse if the spouses reside together; (iv) delivering a copy of the summons to the individual's agent authorized by appointment or by law to receive service of process; or (v) any form of mail or third-party commercial delivery addressed to the individual to be served and requiring a signed receipt and resulting in delivery to that individual.",
+      "text_sha256": "2647e6706227b8168b9d10a3b68105536cb8399ed0d2ecc08ccabe7f136de9d3",
+      "publisher_sha256": "b01d6a37f6e76466f83748346e45bd189bb7d15a0ab7ec77701516244abafabe",
+      "retrieved_at": "2026-11-21T17:05:31.680822+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "North Dakota Supreme Court rule publication effective 2024-03-01",
+      "court": "North Dakota District Courts",
+      "publisher_member": "North Dakota Supreme Court, rule 4(d)(2)(A)",
+      "effective_from": "2024-03-01"
+    },
+    "6a8ecefbec4eb78743588ae3978dbf": {
+      "source_id": "US-ND:service_business_entity:ee96d8a4de81",
+      "authority_type": "court_rule",
+      "citation": "N.D. R. Civ. P. 4(d)(2)(D)",
+      "text": "(D) Serving a Corporation, Partnership, or Association. Service must be made on a domestic or foreign corporation or on a partnership or other unincorporated association, by: (i) delivering a copy of the summons to an officer, director, superintendent or managing or general agent, or partner, or associate, or to an agent authorized by appointment or by law to receive service of process on its behalf, or to one who acted as an agent for the defendant with respect to the matter on which the plaintiff's claim is based and who was an agent of the defendant at the time of service; (ii) if the sheriff's return indicates no person upon whom service may be made can be found in the county, then service may be made by leaving a copy of the summons at any office of the domestic or foreign corporation, partnership, or unincorporated association within this state with the person in charge of the office; or (iii) any form of mail or third-party commercial delivery addressed to any of the foregoing persons and requiring a signed receipt and resulting in delivery to that person.",
+      "text_sha256": "3b04bf399b249f57b4ebd131f0f811c88c0ef23d2a3b8f5b242e7ea039153df8",
+      "publisher_sha256": "b01d6a37f6e76466f83748346e45bd189bb7d15a0ab7ec77701516244abafabe",
+      "retrieved_at": "2026-11-21T17:05:31.680822+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "North Dakota Supreme Court rule publication effective 2024-03-01",
+      "court": "North Dakota District Courts",
+      "publisher_member": "North Dakota Supreme Court, rule 4(d)(2)(D)",
+      "effective_from": "2024-03-01"
+    },
+    "80d8f6e39f6e546a47f92409960b8e": {
+      "source_id": "US-ND:service_proof:0c98858bf71f",
+      "authority_type": "court_rule",
+      "citation": "N.D. R. Civ. P. 4(i)",
+      "text": "(i) Proof of Service. Proof of service of the summons and of the complaint or notice, if any, accompanying the summons or of other process, must be made as follows: (1) if served by the sheriff or other officer, by the officer's certificate of service; (2) if served by any other person, by the server's declaration of service; (3) if served by publication, by a declaration made as provided in N.D.C.C. § 31-04-06 and a declaration of that a copy of the summons and complaint has been deposited in a post office or with a third-party commercial carrier, postage or shipping prepaid, and directed to the defendant at the defendant's last reasonably ascertainable address; (4) in any other case of service by mail or delivery via a third-party commercial carrier resulting in delivery under paragraph (d)(2) or (d)(3), by a declaration of mailing or a declaration of delivery of a copy of the summons and complaint or other process, with return receipt attached; or (5) by the written admission of the defendant.",
+      "text_sha256": "bf4207dc99e4a8c3ff75e20b5a1d1be8903847aaeb4ebc39cc8d8287d2b3d7bc",
+      "publisher_sha256": "b01d6a37f6e76466f83748346e45bd189bb7d15a0ab7ec77701516244abafabe",
+      "retrieved_at": "2026-11-21T17:05:31.680822+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "North Dakota Supreme Court rule publication effective 2024-03-01",
+      "court": "North Dakota District Courts",
+      "publisher_member": "North Dakota Supreme Court, rule 4(i)",
+      "effective_from": "2024-03-01"
+    },
+    "0036e7dab275f9647c1e49a9aea227": {
+      "source_id": "US-ND:calendar:a08830e97909",
+      "authority_type": "court_rule",
+      "citation": "N.D. R. Civ. P. 6(a)",
+      "text": "(a) Computing Time. The following rules apply in computing any time period specified in these rules, or in any local rule, court order, or statute that does not specify a method of computing time. (1) Period Stated in Days or a Longer Unit. When the period is stated in days or a longer unit of time: (A) exclude the day of the event that triggers the period; (B) count every day, including intermediate Saturdays, Sundays, and legal holidays; and (C) include the last day of the period, but if the last day is a Saturday, Sunday, or legal holiday, the period continues to run until the end of the next day that is not a Saturday, Sunday, or legal holiday. (2) Period Stated in Hours. When the period is stated in hours: (A) begin counting immediately on the occurrence of the event that triggers the period; (B) count every hour, including hours during intermediate Saturdays, Sundays, and legal holidays; and (C) if the period would end on a Saturday, Sunday, or legal holiday, the period continues to run until the same time on the next day that is not a Saturday, Sunday, or legal holiday. (3) Inaccessibility of the Clerk's Office. Unless the court orders otherwise, if the clerk's office is inaccessible: (A) on the last day for filing under Rule 6(a)(1), then the time for filing is extended to the first accessible day that is not a Saturday, Sunday, or legal holiday; or (B) during the last hour for filing under Rule 6(a)(2), then the time for filing is extended to the same time on the first accessible day that is not a Saturday, Sunday, or legal holiday. (4) \"Last Day\" Defined. Unless a different time is set by a statute, local rule, or court order, the last day ends: (A) for electronic filing, at midnight in the court's time zone; and (B) for filing by other means, when the clerk's office is scheduled to close. (5) \"Next Day\" Defined. The \"next day\" is determined by continuing to count forward when the period is measured after an event and backward when measured before an event. (6) \"Legal Holiday\" Defined. As used in this rule, \"legal holiday\" means a day set aside as a holiday under N.D.C.C. §§ 1-03-01, 1-03-02 and 1-03-02.1.",
+      "text_sha256": "5caef698c96e65bdbdecd9265e4debd36a2f90fe26c4114acba37a9fdbe4f6af",
+      "publisher_sha256": "45610186901875baf7bc19998ac2e21514cc943bcb8843e056d4765a577fa245",
+      "retrieved_at": "2026-11-21T17:05:31.747718+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "North Dakota Supreme Court rule publication effective 2018-03-01",
+      "court": "North Dakota District Courts",
+      "publisher_member": "North Dakota Supreme Court, rule 6(a)",
+      "effective_from": "2018-03-01"
+    },
+    "8cd75031a1755f62b5c621f80206cc": {
+      "source_id": "US-ND:postmotion_response:68d3a7b6a894",
+      "authority_type": "court_rule",
+      "citation": "N.D. R. Civ. P. 12(a)(2)",
+      "text": "(2) Effect of a Motion. Unless the court sets a different time, serving a motion under this rule alters these periods as follows: (A) if the court denies the motion or postpones its disposition until trial, the responsive pleading must be served within 14 days after notice of the court's action; (B) if the court grants a motion for a more definite statement, the responsive pleading must be served within 14 days after the more definite statement is served.",
+      "text_sha256": "d6a30fe7c01ab858e668b9a267fd9c0bc1988af5d08fdf47d018876811b5c68f",
+      "publisher_sha256": "1b66956a567a2ca471d56d214f2dce0ec2f8e2f5557a0dca9fe2ac814a422da9",
+      "retrieved_at": "2026-11-21T17:05:31.779346+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "North Dakota Supreme Court rule publication effective 2011-03-01",
+      "court": "North Dakota District Courts",
+      "publisher_member": "North Dakota Supreme Court, rule 12(a)(2)",
+      "effective_from": "2011-03-01"
+    },
+    "1de23033755525d018049606971722": {
+      "source_id": "US-ND:venue:47bb0625b131",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 28-04-05",
+      "text": "In all other cases, except as provided in section 28-04-03.1, and subject to the power of the court to change the place of trial as provided by sections 28-04-09 and 28-04-10, the action must be brought in the county in which the defendant or one of the defendants resides at the time of the commencement of the action. If that county is attached to another county for judicial purposes, the action must be brought in the latter county. If none of the defendants reside in the state, the action either must be brought in the county in which the plaintiff or one of the plaintiffs resides or in the county in which the cause of action arose.",
+      "text_sha256": "7808f1ef86059913ef8d290fe55a331fbefe9f8334ec6d41fe46e59406f5cc5b",
+      "publisher_sha256": "3f6886b465bd7c70efe0eade584598c534fd930db1074f72460f2814a39a8519",
+      "retrieved_at": "2026-11-21T17:05:32.333333+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Dakota Legislative Branch, Century Code, § 28-04-05"
+    },
+    "f8a8221f08e58c21cae0946b9bbbc5": {
+      "source_id": "US-ND:wrongful_death_limitations:e2595296e7c1",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 28-01-18(4)",
+      "text": "Except as provided in section 28-01-25.2, the following actions must be commenced within two years after the claim for relief has accrued: 4. An action for injuries done to the person of another, when death ensues from such injuries, and the claim for relief must be deemed to have accrued at the time of the death of the party injured; provided, however, that when death ensues as the result of malpractice, the claim for relief is deemed to have accrued at the time of the discovery of the malpractice. However, the limitation will not be extended beyond six years of the act or omission of alleged malpractice by a nondiscovery thereof unless discovery was prevented by the fraudulent conduct of the physician or hospital.",
+      "text_sha256": "df506205934d294e215ab1b5da030e96cecf0fd6a2fed2f783ab053fb1fff87a",
+      "publisher_sha256": "0e812b146e5c18aecc4c4d2c9cfcb015cc1d8109bea93db8e74ed5bade078364",
+      "retrieved_at": "2026-11-21T17:05:30.977456+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Dakota Legislative Branch, Century Code, § 28-01-18(4)"
+    },
+    "09c47566b35597b414c9dace2a4d7b": {
+      "source_id": "US-ND:tolling:288a5a468c3b",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 28-01-24",
+      "text": "When, by fraud or fraudulent concealment, a party against whom a claim for relief exists prevents the person in whose favor such claim for relief exists from obtaining knowledge thereof, the latter may commence an action within one year from the time the claim for relief is discovered by the latter or might have been discovered by the latter in the exercise of diligence. Such fraud or fraudulent concealment must be established to the satisfaction of the court or jury, as the case may be, by a fair preponderance of the evidence.",
+      "text_sha256": "78a1733e85118f29ffa7fb9de013ce2f1aadd1a89a093ef5bcf6e7445e9aac78",
+      "publisher_sha256": "0e812b146e5c18aecc4c4d2c9cfcb015cc1d8109bea93db8e74ed5bade078364",
+      "retrieved_at": "2026-11-21T17:05:30.977456+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Dakota Legislative Branch, Century Code, § 28-01-24"
+    },
+    "2a64c3e9fcebf3a928328889835199": {
+      "source_id": "US-ND:habitability:a3dad9c265db",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 47-16-13.1",
+      "text": "1. A landlord of a residential dwelling unit shall: a. Comply with the requirements of applicable building and housing codes materially affecting health and safety. b. Make all repairs and do whatever is necessary to put and keep the premises in a fit and habitable condition. c. Keep all common areas of the premises in a clean and safe condition. d. Maintain in good and safe working order and condition all electrical, plumbing, sanitary, heating, ventilating, air-conditioning, and other facilities and appliances, including elevators, supplied or required to be supplied by the landlord. e. Provide and maintain appropriate receptacles and conveniences for the removal of ashes, garbage, rubbish, and other waste incidental to the occupancy of the dwelling unit and arrange for their removal. f. Supply running water and reasonable amounts of hot water at all times and reasonable heat, except if the building that includes the dwelling unit is not required by law to be equipped for that purpose or if the dwelling unit is so constructed that heat or hot water is generated by an installation within the exclusive control of the tenant and supplied by a direct public utility connection or if the water or heat is unavailable due to supply failure by a public utility. 2. In case of noncompliance with the requirements of subdivisions b through f of subsection 1, a reasonable time shall be allowed to remedy such noncompliance. 3. If the duty imposed by subdivision a of subsection 1 is greater than any duty imposed by any other subdivision of that subsection, the landlord's duty shall be determined by reference to subdivision a of subsection 1. 4. The landlord and tenant of a single-family residence may agree in writing that the tenant perform the landlord's duties specified in subdivisions e and f of subsection 1 and also specified repairs, maintenance tasks, alterations, and remodeling, but only if the transaction is entered into in good faith. 5. The landlord and tenant of any dwelling unit other than a single-family residence may agree that the tenant is to perform specified repairs, maintenance tasks, alterations, or remodeling only if: a. The agreement of the parties is entered into in good faith and is set forth in a separate writing signed by the parties and supported by adequate consideration. b. The work is not necessary to cure noncompliance with subdivision e of subsection 1. c. The agreement does not diminish or affect the obligation of the landlord to other tenants in the premises. 6. The landlord may not treat performance of the separate agreement described in subsection 4 as a condition to any obligation or performance of any rental agreement.",
+      "text_sha256": "84d0738804efb8e00fcfaca1fcb6c6d5e1da560e1e2fc389e28d20a148216169",
+      "publisher_sha256": "fcefb7c8434ad80e2e9644eec141b299f05b7b4bffa0517c8f607e51375b91b0",
+      "retrieved_at": "2026-11-21T17:05:33.537492+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Dakota Legislative Branch, Century Code, § 47-16-13.1"
+    },
+    "f57878c67f09b4838fcce82131e74f": {
+      "source_id": "US-ND:tenant_remedies:cbf1e8517bf1",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 47-16-13.6",
+      "text": "Any right or action provided by sections 47-16-13.1 through 47-16-13.6 is enforceable by action and the court may award reasonable attorney's fees to the prevailing party.",
+      "text_sha256": "20a9b59f19cdad28aebd29ff1b6835c82f8e4661ff37d3d8e7684b786ee7398c",
+      "publisher_sha256": "fcefb7c8434ad80e2e9644eec141b299f05b7b4bffa0517c8f607e51375b91b0",
+      "retrieved_at": "2026-11-21T17:05:33.537492+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Dakota Legislative Branch, Century Code, § 47-16-13.6"
+    },
+    "28b7c8021d446349737fe4a43b9d39": {
+      "source_id": "US-ND:labor_agency:830cb85642c3",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 34-14-09",
+      "text": "1. An employee may file with the department a claim for wages due under this chapter or under chapter 34-06 if the filing is made within two years from the date the wages are due and the amount of the wages claimed due is at least one hundred twenty-five dollars but not more than fifteen thousand dollars. For purposes of this section, wages are due at each regular payday immediately following the work period during which wages were earned. If the department denies the claim for wages due because the amount claimed is less than one hundred twenty-five dollars, the department shall inform the claimant of the opportunity for the claimant to pursue the claim in small claims court under chapter 27-08.1. If the department denies the claim for wages due because the amount claimed is more than fifteen thousand dollars, the department shall inform the claimant of the opportunity for the claimant to pursue the claim in district court under chapter 27-05. 2. If the labor commissioner determines wages have not been paid and that the unpaid wages constitute an enforceable claim, the commissioner, upon request of the employee, may take an assignment in trust for the wages or a claim for liquidated damages in amounts the commissioner deems valid and enforceable without being bound by the technical rules respecting the validity of any assignments and may bring any legal action necessary to collect the claim. With the consent of the assigning employee at the time of the assignment, the commissioner may settle and adjust the claim to the same extent as the assigning employee. 3. The limitation of action under section 34-01-13 is tolled by the filing of a claim with the commissioner until the commissioner determines the claim is not enforceable or the commissioner reassigns the claim to the employee.",
+      "text_sha256": "b185234584010a2ea622fe2bffb45271268cd76a562a1d2286e5e03ddfc4f376",
+      "publisher_sha256": "7ba4a2ec6deaccd33e33a33a6ee525936ca81bfdb9369ba4d942c55909830df6",
+      "retrieved_at": "2026-11-21T17:05:33.251510+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Dakota Legislative Branch, Century Code, § 34-14-09"
+    },
+    "25b7c5e421d60fbcc92ef1dd08806f": {
+      "source_id": "US-ND:wage_enforcement:60c80e450bb8",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 34-14-09.1",
+      "text": "In addition to the employee's right to recover unpaid wages as provided in this chapter, every employee is entitled to recover from the employee's employer: 1. Interest on the unpaid wages from the date the wages are due until payment is made in full at the rate as established by section 47-14-09; and 2. An amount equal to: a. Double the employee's unpaid wages, if, within one year preceding the date such wages are due, the employer has, on separate occasions, been subject to, and found liable for, two previous wage claims under the provisions of this chapter; or b. Treble the employee's unpaid wages, if, within one year preceding the date such wages are due, the employer has, on separate occasions, been subject to, and found liable for, three or more previous wage claims under the provisions of this chapter. The provisions of this section do not apply to wage claims arising under the Railway Labor Act [Pub. L. 69-257; 44 Stat. 577; 45 U.S.C. 151 et seq.] or to wage claims arising under contested application of collective bargaining agreements.",
+      "text_sha256": "a22f861b01084910f1a711b306ebaace20c3bb6c4a90b760009c86341c8ed8fe",
+      "publisher_sha256": "7ba4a2ec6deaccd33e33a33a6ee525936ca81bfdb9369ba4d942c55909830df6",
+      "retrieved_at": "2026-11-21T17:05:33.251510+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Dakota Legislative Branch, Century Code, § 34-14-09.1"
+    },
+    "0608ba85eff7fbad01c15ccc245f80": {
+      "source_id": "US-ND:consumer_remedies:deaa93c95ed0",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 51-15-09",
+      "text": "Except as provided in section 51-15-02.3, this chapter does not bar any claim for relief by any person against any person who has acquired any moneys or property by means of any practice declared to be unlawful in this chapter. If the court finds the defendant knowingly committed the conduct, the court may order that the person commencing the action recover up to three times the actual damages proven and the court must order that the person commencing the action recover costs, disbursements, and actual reasonable attorney's fees incurred in the action.",
+      "text_sha256": "e7252347bbff77eead1558c916b5a80ed80aa84a88fe7a37cee63a8fb97ffd9b",
+      "publisher_sha256": "9f19189433402e2504818983dccb7ea96b84cf56ed39af8aa8ac52160ddf4432",
+      "retrieved_at": "2026-11-21T17:05:34.203639+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Dakota Legislative Branch, Century Code, § 51-15-09"
+    },
+    "22e2e737e0985456065773d50e0a6d": {
+      "source_id": "US-ND:consumer_limitations:2264d5c3d0c2",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 51-15-12",
+      "text": "Notwithstanding chapter 28-01, an action for relief under this chapter is barred if the claim is not commenced within four years after the claim for relief accrues. The period of limitation for a claim for relief may not be deemed to have accrued until the aggrieved party discovers the facts constituting the violation of this chapter.",
+      "text_sha256": "4a6c1c0334bd142763c21d8f34964d2583d1eed9891c2b1e9b4cf500975b943d",
+      "publisher_sha256": "9f19189433402e2504818983dccb7ea96b84cf56ed39af8aa8ac52160ddf4432",
+      "retrieved_at": "2026-11-21T22:25:36.875730+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Dakota Legislative Branch, chapter 51-15 PDF p. 4; claim for relief accrual and discovery"
+    },
+    "ff2f84636ddb0770593d1345594d1d": {
+      "source_id": "US-ND:service_time_limit:fd54af182ecb",
+      "authority_type": "court_rule",
+      "citation": "N.D. R. Civ. P. 4(d)(2)(G)",
+      "text": "(G) Serving an Agent Not Authorized to Receive Process. If service is made on an agent who is not expressly authorized by appointment or by law to receive service of process on behalf of the defendant, a copy of the summons and complaint must be mailed or delivered via a third-party commercial carrier to the defendant with return receipt requested not later than ten days after service by depositing a copy of the summons and complaint, with postage or shipping prepaid, in a post office or with a commercial carrier in this state and directed to the defendant to be served at the defendant's last reasonably ascertainable address.",
+      "text_sha256": "5c3a32fe2aa5c349a0307890d06a51fcdff33105c5b20c802b7f25daf816adf3",
+      "publisher_sha256": "374fdd92b4d2794ffc09bdd961d32f3c143183d8d6db3b8ba2b82c744ee999f0",
+      "retrieved_at": "2026-11-20T15:21:03.597898+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Dakota Court System Rule 4; subsection-specific service conditions"
+    },
+    "185a07000c85d750a9195f4bfaa06c": {
+      "source_id": "US-ND:service_time_limit:2699d883a77e",
+      "authority_type": "court_rule",
+      "citation": "N.D. R. Civ. P. 4(e)(3)–(6)",
+      "text": "(3) Number of Publications. Service of the summons by publication may be made by publishing the summons three times, once each week for three successive weeks, in a newspaper published in the county where the action is pending. If no newspaper is published in that county, publication may be made in a newspaper having a general circulation in the county. (4) Mailing or Delivering Summons and Complaint. A copy of the summons and complaint, at any time after the filing of the declaration for publication and no later than 14 days after the first publication of the summons, must be deposited in a post office or with a third-party commercial carrier, postage or shipping prepaid, and directed to the defendant at the defendant's last reasonably ascertainable address. (5) Personal Service Outside State is Equivalent to Publication. After the declaration for publication and the complaint in the action are filed, personal service of the summons and complaint on the defendant out of state is equivalent to and has the same force and effect as the publication and mailing or delivery provided for in paragraphs (e)(3) and (4). (6) Time When First Publication or Service Outside State Must Be Made. The first publication of the summons, or personal service of the summons and complaint on the defendant outside the state, must be made within 60 days after the filing of the declaration for publication. If not made, the action is considered discontinued as to any defendant not served within that time.",
+      "text_sha256": "64f0bd047ee396e1124b5850e2d0be5834b3df78c70b825e52ba436663f6e617",
+      "publisher_sha256": "374fdd92b4d2794ffc09bdd961d32f3c143183d8d6db3b8ba2b82c744ee999f0",
+      "retrieved_at": "2026-11-20T15:21:03.597898+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Dakota Court System Rule 4; subsection-specific service conditions"
+    },
+    "3693781bbd8a4ad6a06c1b265026c0": {
+      "source_id": "US-ND:service_time_limit:9c5a7b66f541",
+      "authority_type": "court_rule",
+      "citation": "N.D. R. Civ. P. 4(g)",
+      "text": "(g) When Service by Publication or Outside State Complete. Service by publication is complete fifteen days after the first publication of the summons. Personal service of the summons and complaint upon the defendant outside the state is complete fifteen days after the date of service.",
+      "text_sha256": "2b9857133082b6674e6bd0223137e777aeab34fc65f19832a8496f3114ab33d4",
+      "publisher_sha256": "374fdd92b4d2794ffc09bdd961d32f3c143183d8d6db3b8ba2b82c744ee999f0",
+      "retrieved_at": "2026-11-20T15:21:03.597898+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Dakota Court System Rule 4; subsection-specific service conditions"
+    },
+    "db613137af4953f6b62379635d1c1f": {
+      "source_id": "US-ND:general_contract_damages:caae04d1fc98",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 32-03-09",
+      "text": "For the breach of an obligation arising from contract, the measure of damages, except when otherwise expressly provided by the laws of this state, is the amount which will compensate the party aggrieved for all the detriment proximately caused thereby or which in the ordinary course of things would be likely to result therefrom. No damages can be recovered for a breach of contract if they are not clearly ascertainable in both their nature and origin.",
+      "text_sha256": "2f7dac3ade9559dd936faa03cf80b1b1b23be9021d4ceb3d7c0011ebe1b3a37b",
+      "publisher_sha256": "5f8866177568efe0d0864eafd3937a47a41ee69ad1d7c4b0b2f02da6638c09a1",
+      "retrieved_at": "2026-11-22T03:05:44.238230+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Dakota Legislative Branch, Century Code Chapter 32-03"
+    },
+    "0a1f6a50f302a7a4aff022862d941c": {
+      "source_id": "US-ND:general_contract_damages:842ca1fd611b",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 32-03-36",
+      "text": "Notwithstanding the provisions of this chapter, no person can recover a greater amount in damages for the breach of an obligation than the person could have gained by the full performance thereof on both sides, except in the cases wherein exemplary damages or penal damages are authorized, and in the case specified in section 36-21-13.",
+      "text_sha256": "b2c0212e2284e0c8ffdee0113acb03ff69b831a899e588d3f85af85f55406646",
+      "publisher_sha256": "5f8866177568efe0d0864eafd3937a47a41ee69ad1d7c4b0b2f02da6638c09a1",
+      "retrieved_at": "2026-11-22T03:05:44.238230+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Dakota Legislative Branch, Century Code Chapter 32-03"
+    },
+    "b91b5ba247649ad46562215b4869b5": {
+      "source_id": "US-ND:general_contract_damages:7b405be4d571",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 32-03-38",
+      "text": "When a breach of duty has caused no appreciable detriment to the party affected, the party may recover nominal damages.",
+      "text_sha256": "4af8bc07e19fbb7ab9975420adec8ca273c6224522a58852b8e05b25429e4b05",
+      "publisher_sha256": "5f8866177568efe0d0864eafd3937a47a41ee69ad1d7c4b0b2f02da6638c09a1",
+      "retrieved_at": "2026-11-22T03:05:44.238230+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Dakota Legislative Branch, Century Code Chapter 32-03"
+    },
+    "c7f0b0562f998cc416796c7e84ea41": {
+      "source_id": "US-ND:consumer_agency:3026b64fd4b1",
+      "authority_type": "statute",
+      "citation": "N.D. Cent. Code § 51-15-07, first two paragraphs",
+      "text": "Whenever it appears to the attorney general that a person has engaged in, or is engaging in, any practice declared to be unlawful by this chapter, or by other provisions of law, including chapter 50-22, 51-13, 51-14, 51-16.1, or 51-18, the attorney general may seek and obtain in an action in a district court an injunction prohibiting that person from continuing the unlawful practice or engaging in the unlawful practice or doing any act in furtherance of the unlawful practice after appropriate notice to that person. The notice must state generally the relief sought and be served at least ten days before the hearing of the action. The court may make an order or judgment as may be necessary to prevent the use or employment by a person of any unlawful practices, or which may be necessary to restore to any person in interest any money, or property that may have been acquired by means of any practice in this chapter, or in other provisions of law, including chapter 50 -22, 51 -13, 51 -14, 51 -16.1, or 51 -18, declared to be unlawful, including the appointment of a receiver. When it appears to the attorney general that a person has engaged in, or is engaging in, a practice declared to be unlawful by this chapter, or by other provisions of law, including chapter 50-22, 51 -13, 51 -14, 51 -16.1, or 51 -18, and that the person is about to conceal assets or oneself or leave the state, the attorney general may apply to the district court, ex parte, for an order appointing a receiver of the assets of that person. Upon a showing made by affidavit or other evidence that the person has engaged in, or is engaging in, a practice declared to be unlawful by this chapter and that the person is about to conceal assets or oneself or leave the state, the court shall order the appointment of a receiver to receive the assets of the person.",
+      "text_sha256": "87c4f78efb90e1f87c0c2d0c9eb5ec38b008601ecb3dce4b6f1e4f19168a11fe",
+      "publisher_sha256": "9f19189433402e2504818983dccb7ea96b84cf56ed39af8aa8ac52160ddf4432",
+      "retrieved_at": "2026-11-21T22:25:36.875730+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "North Dakota Legislative Branch, public injunction and receiver process. Ten-day notice runs before the hearing."
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_50",
+    "passage_selector": "78fdedd1f65a5874a57cf5f076a1da",
+    "source_id": "US-ND:fault:8f7384b8f891",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

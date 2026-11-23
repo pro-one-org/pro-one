@@ -1,0 +1,1021 @@
+{
+  "jurisdiction": "US-IL",
+  "version": "1",
+  "sources": {
+    "US-IL:statutes:bafca56e4120": {
+      "category": "statutes",
+      "title": "Compiled Statutes",
+      "url": "http://www.ilga.gov/legislation/ilcs/ilcs.asp",
+      "directory": "doj-IL",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-IL:constitution:4b247e3cd51b": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.ilga.gov/commission/lrb/conmain.htm",
+      "directory": "codes",
+      "locator": "Illinois"
+    },
+    "US-IL:constitution:d2cf41aa3307": {
+      "category": "constitution",
+      "title": "Record of Proceedings, Sixth Illinois Constitutional Convention",
+      "url": "http://www.ilga.gov/commission/lru/lru_home.html",
+      "directory": "codes",
+      "locator": "Illinois"
+    },
+    "US-IL:constitution:1574a7967729": {
+      "category": "constitution",
+      "title": "Previous Illinois Constitutions - Documents from the State Library",
+      "url": "http://www.idaillinois.org/cdm4/browse.php",
+      "directory": "codes",
+      "locator": "Illinois"
+    },
+    "US-IL:labor_agency:f6c8b2a1218d": {
+      "category": "labor_agency",
+      "title": "www.labor.illinois.gov",
+      "url": "https://labor.illinois.gov/",
+      "directory": "labor",
+      "locator": "Illinois"
+    },
+    "US-IL:commercial_code:18ec8503b7b6": {
+      "category": "commercial_code",
+      "title": "Commercial Code",
+      "url": "http://www.ilga.gov/legislation/ilcs/ilcs2.asp?ChapterID=66",
+      "directory": "ucc",
+      "locator": "Illinois"
+    },
+    "US-IL:civil_rules:9f583a943476": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "http://www.ilga.gov/legislation/ilcs/ilcs2.asp?ChapterID=56",
+      "directory": "procedure",
+      "locator": "Illinois"
+    },
+    "US-IL:consumer_agency:bf75ae118a64": {
+      "category": "consumer_agency",
+      "title": "Illinois (IL)",
+      "url": "https://illinoisattorneygeneral.gov/consumer-protection/",
+      "directory": "consumer",
+      "locator": "Illinois (IL)"
+    },
+    "US-IL:judiciary:dd9aed4784a7": {
+      "category": "judiciary",
+      "title": "State Judiciary",
+      "url": "http://www.state.il.us/court/",
+      "directory": "doj-IL",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-IL:court_directory:7b0eb8ac625b": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.illinoiscourts.gov/courts/supreme-court/",
+      "directory": "doj-IL",
+      "locator": "Supreme Court"
+    },
+    "US-IL:court_directory:b237f6c531d1": {
+      "category": "court_directory",
+      "title": "Appellate Courts",
+      "url": "https://www.illinoiscourts.gov/courts/circuit-court/chief-judges-and-administrative-staff/?t=appellate",
+      "directory": "doj-IL",
+      "locator": "Appellate Courts"
+    },
+    "US-IL:court_directory:a1869d5d96ca": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "https://www.illinoiscourts.gov/courts/circuit-court/",
+      "directory": "doj-IL",
+      "locator": "Circuit Courts"
+    },
+    "US-IL:forms:fe9f725a3dca": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "https://www.illinoiscourts.gov/forms/forms.asp",
+      "directory": "doj-IL",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-IL:constitution:9fc0a154e501": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.ilga.gov/commission/lrb/conent.htm",
+      "directory": "doj-IL",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-IL:regulations:c5ac1b906201": {
+      "category": "regulations",
+      "title": "Administrative Code",
+      "url": "http://www.ilga.gov/commission/jcar/admincode/titles.html",
+      "directory": "doj-IL",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-IL:pi_limitations:e67337acca6b": {
+      "category": "pi_limitations",
+      "title": "735 ILCS 5/13-202",
+      "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/073500050K13-202.htm",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/073500050K13-202.htm",
+        "retrieved_at": "2026-11-17T19:33:56.119266+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-IL:written_contract_limitations:8b458d4ed3ba": {
+      "category": "written_contract_limitations",
+      "title": "735 ILCS 5/13-206",
+      "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/073500050K13-206.htm",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/073500050K13-206.htm",
+        "retrieved_at": "2026-11-17T19:33:56.162187+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-IL:oral_contract_limitations:302706782c60": {
+      "category": "oral_contract_limitations",
+      "title": "735 ILCS 5/13-205",
+      "url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/073500050K13-205.htm",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.ilga.gov/Documents/legislation/ilcs/documents/073500050K13-205.htm",
+        "retrieved_at": "2026-11-17T19:33:56.218751+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-IL:small_claims:08bd54c9354b": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.illinoiscourts.gov/documents-and-forms/approved-forms/circuit-forms/small-claims-complaint/",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.illinoiscourts.gov/documents-and-forms/approved-forms/circuit-forms/small-claims-complaint/",
+        "retrieved_at": "2026-11-17T19:42:44.990219+00:00",
+        "http_status": "200",
+        "sha256": "a9e8cc1981ff0c4444d82340eeccecbe973430a4c43d9bb7b03e808ac1a93a47",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IL:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    },
+    "US-IL:fault:68b9db09e9b5": {
+      "category": "fault",
+      "title": "Fault allocation research publication",
+      "url": "https://idoi.illinois.gov/consumers/consumerinsurance/comparative-negligence.html",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://idoi.illinois.gov/consumers/consumerinsurance/comparative-negligence.html",
+        "retrieved_at": "2026-11-17T19:41:56.848952+00:00",
+        "http_status": "200",
+        "sha256": "b32c9e6d591957bd61aaf8dfbf8d1e07ceba67f7189b30cd96fd3294b67b74a4",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IL:wageLaw:2bc4fa5a7d9d": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://labor.illinois.gov/laws-rules/fls/wage-payment-collection.html",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://labor.illinois.gov/laws-rules/fls/wage-payment-collection.html",
+        "retrieved_at": "2026-11-17T19:41:59.796441+00:00",
+        "http_status": "200",
+        "sha256": "02b3efd5aecb28c78ae0f5b103da87afb0da600a280604eb39ea92e833dfd010",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IL:small_claim_form:40c38eca00a0": {
+      "category": "small_claim_form",
+      "title": "Small Claims Complaint",
+      "url": "https://ilcourtsaudio.blob.core.windows.net/antilles-resources/resources/5156dafd-8e60-4afb-ba88-e5b188b73dfd/SMC%20Complaint.pdf",
+      "directory": null,
+      "locator": "Small Claims Complaint"
+    },
+    "US-IL:consumerLaw:9895ce055c52": {
+      "title": "815 ILCS 505",
+      "category": "consumerLaw",
+      "url": "https://www.ilga.gov/Legislation/ILCS/Articles?ActID=2356&ChapterID=67&Chapter=BUSINESS%20TRANSACTIONS&MajorTopic=BUSINESS%20AND%20EMPLOYMENT",
+      "directory": "consumer_statutes_index",
+      "locator": "815 ILCS 505",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-IL:contract_formation:2b00abec022c": {
+      "category": "contract_formation",
+      "title": "Rose v. Mavrakis, No. 1-03-1064 (Ill. App. Ct. Sept. 30, 2003)",
+      "url": "https://www.illinoiscourts.gov/Resources/b2880933-70d8-4630-9532-c1b8d7049a09/1031064.htm",
+      "locator": "Rose v. Mavrakis, No. 1-03-1064 (Ill. App. Ct. Sept. 30, 2003)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:40:11.091373+00:00",
+        "sha256": "59af8673f2721f2f6e41af974602ae5adad943be9ec721c30189e05e52bb114a"
+      }
+    },
+    "US-IL:eviction:50fc56d4b3d5": {
+      "category": "eviction",
+      "title": "Ill. Sup. Ct. R. 139(a)–(b) (July 17, 2020)",
+      "url": "https://www.illinoiscourts.gov/resources/ad68a856-c4f9-4789-8e71-738a1ec785b2/071720.pdf",
+      "locator": "Ill. Sup. Ct. R. 139(a)–(b) (July 17, 2020)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:37:43.367369+00:00",
+        "sha256": "565d1a623937002d32c8432437df307e1d8e9a31df58794415c6c214f12793f9"
+      }
+    },
+    "US-IL:fault:fbd9d5fc8926": {
+      "category": "fault",
+      "title": "Merca v. Rhodes, 2011 IL App (1st) 102234, ¶ 45",
+      "url": "https://www.illinoiscourts.gov/Resources/bda9eadc-39cd-4778-84c5-9f6d318dfe14/1102234.pdf",
+      "locator": "Merca v. Rhodes, 2011 IL App (1st) 102234, ¶ 45",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:12:11.014534+00:00",
+        "sha256": "b819500b4668285ca53bbdf29dd41d49ae83b747923ccb9468c928049769cbc0"
+      }
+    },
+    "US-IL:pi_limitations:acbf28f6b220": {
+      "category": "pi_limitations",
+      "title": "Merritt v. Randall Painting Co., No. 1-99-4171 (Ill. App. Ct. June 22, 2000)",
+      "url": "https://www.illinoiscourts.gov/Resources/132171af-62bf-4b84-9fe8-5937878a2f88/1994171.htm",
+      "locator": "Merritt v. Randall Painting Co., No. 1-99-4171 (Ill. App. Ct. June 22, 2000)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:43:51.280071+00:00",
+        "sha256": "ae85320cbdaee0f2fbc550e6ec4ec1740d3e1a953bed0e0fc76c1a40e996192c"
+      }
+    },
+    "US-IL:consumerLaw:5f677262bce0": {
+      "category": "consumerLaw",
+      "title": "McIntosh v. Walgreens Boots Alliance, Inc., 2019 IL 123626, ¶ 20",
+      "url": "https://www.illinoiscourts.gov/Resources/064ffe94-8514-4172-9262-62c63dbbe26b/123626.pdf",
+      "locator": "McIntosh v. Walgreens Boots Alliance, Inc., 2019 IL 123626, ¶ 20",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:20:54.354931+00:00",
+        "sha256": "4570b68959941da1ea2ede78e7659a68c6194045fd704bae3167d3a0e0f61d40"
+      }
+    },
+    "US-IL:response:a6abcad02bc8": {
+      "category": "response",
+      "title": "Ill. Sup. Ct. R. 181(a)",
+      "url": "https://ilcourtsaudio.blob.core.windows.net/antilles-resources/resources/7ae8a196-2a43-4484-9666-43098da60282/S_Ct_Rules_full.pdf",
+      "locator": "Ill. Sup. Ct. R. 181(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:41:35.644150+00:00",
+        "sha256": "6dc52c9989ba52e0273c1e1f27422bf49c2380662a2631227f18c1efcb7eae60"
+      }
+    },
+    "US-IL:negligence_elements:cc98bce4d377": {
+      "category": "negligence_elements",
+      "title": "Monson v. City of Danville, 2018 IL 122486, ¶ 23",
+      "url": "https://www.illinoiscourts.gov/Resources/0a24574c-c592-4617-b5d8-4614d48c3f1c/122486.pdf",
+      "locator": "Monson v. City of Danville, 2018 IL 122486, ¶ 23",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:40:12.738153+00:00",
+        "sha256": "4310628f41474d80184f5161f8801d96cbad24d0dea0fd411720239e534a4ba7"
+      }
+    },
+    "US-IL:deposit:e0e847ede169": {
+      "category": "deposit",
+      "title": "Illinois P.A. 103-0224, § 5 (765 ILCS 710/1(a))",
+      "url": "https://ftp.ilga.gov/Public%20Acts/103/103-0224.htm",
+      "locator": "Illinois P.A. 103-0224, § 5 (765 ILCS 710/1(a))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:57:55.077078+00:00",
+        "sha256": "e51a95c09daa949fccf2c15d4fb9b65459d3685fa9589c842622df68bb41ff0f"
+      }
+    },
+    "US-IL:wageLaw:7a50e1d6b01d": {
+      "category": "wageLaw",
+      "title": "Illinois P.A. 103-0201, § 30 (820 ILCS 115/3)",
+      "url": "https://ftp.ilga.gov/Public%20Acts/103/103-0201.htm",
+      "locator": "Illinois P.A. 103-0201, § 30 (820 ILCS 115/3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:57:55.082889+00:00",
+        "sha256": "9b34e43c2f7aa154bb635a747faf8aee13a17aa64f7567b425f40f42f8a4e97e"
+      }
+    },
+    "US-IL:debtLaw:052ead97b491": {
+      "category": "debtLaw",
+      "title": "Illinois P.A. 104-0149, § 10 (205 ILCS 740/9.1, location-information communications)",
+      "url": "https://ftp.ilga.gov/Public%20Acts/104/104-0149.htm",
+      "locator": "Illinois P.A. 104-0149, § 10 (205 ILCS 740/9.1, location-information communications)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:35:16.988176+00:00",
+        "sha256": "67085d04d4bc7bac655f114a6c7048b0a82bdd9f8290a6c2d5a199f646513637"
+      }
+    },
+    "US-IL:small_claims:f1114bae7bfc": {
+      "category": "small_claims",
+      "title": "Ill. Sup. Ct. R. 281",
+      "url": "https://www.illinoiscourts.gov/resources/7e33f8da-3efb-48b2-8c20-1257037e97ec/file",
+      "locator": "Ill. Sup. Ct. R. 281",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:12:48.997856+00:00",
+        "sha256": "965cb78d591aa5d3c7e71d3978bd70a39073fa766eef7676205930618550a3db"
+      }
+    },
+    "US-IL:small_claims:c32e8b336e24": {
+      "category": "small_claims",
+      "title": "Ill. Sup. Ct. R. 282(a)",
+      "url": "https://www.illinoiscourts.gov/resources/0b9c3467-f08d-4fe4-a69a-31ea7052e0df/file",
+      "locator": "Ill. Sup. Ct. R. 282(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:12:49.037758+00:00",
+        "sha256": "12a243ce73e46e85d5af8b58eda652adb3218c8fc94ebe85462c29ff1ece096d"
+      }
+    },
+    "US-IL:small_claims:ff727e043e0e": {
+      "category": "small_claims",
+      "title": "Ill. Sup. Ct. R. 284",
+      "url": "https://www.illinoiscourts.gov/resources/4263eadc-0108-4bbc-a04d-ef48a321a609/file",
+      "locator": "Ill. Sup. Ct. R. 284",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:12:48.998861+00:00",
+        "sha256": "cbcb910bd6873de3c90b9f82c733aebab721bfef20f5e89320524bf73d7859ce"
+      }
+    },
+    "US-IL:venue:c707997cb697": {
+      "category": "venue",
+      "title": "735 ILCS 5/2-101 (general venue clause)",
+      "url": "https://web.archive.org/web/20251019152449id_/https://www.ilga.gov/documents/legislation/ilcs/documents/073500050K2-101.htm",
+      "locator": "735 ILCS 5/2-101 (general venue clause)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:24:44.859797+00:00",
+        "sha256": "fac43a61dc24af1653db2c99383d19416553064828666716af926bdd5dd9ecb5"
+      }
+    },
+    "US-IL:commencement:deb80b27d455": {
+      "category": "commencement",
+      "title": "735 ILCS 5/2-201(a)",
+      "url": "https://web.archive.org/web/20260121142440id_/https://www.ilga.gov/documents/legislation/ilcs/documents/073500050K2-201.htm",
+      "locator": "735 ILCS 5/2-201(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:24:45.984438+00:00",
+        "sha256": "13621a4d9d725e701c3bd498cafe190dda6e46597f263be28346ef8c601da82d"
+      }
+    },
+    "US-IL:service:d8013f621014": {
+      "category": "service",
+      "title": "Ill. Sup. Ct. R. 102(a)–(c) (April 2023 ed.)",
+      "url": "https://www.illinoiscourts.gov/resources/d890ef39-a2b2-4b43-8014-500f5c3826f3/file",
+      "locator": "Ill. Sup. Ct. R. 102(a)–(c) (April 2023 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:24:43.637839+00:00",
+        "sha256": "1581052308cf6ec48ec4cba4605efc195830724110ce7758b69426600a38b228"
+      }
+    },
+    "US-IL:service_proof:913a9156818c": {
+      "category": "service_proof",
+      "title": "Ill. Sup. Ct. R. 102(d) (April 2023 ed.)",
+      "url": "https://www.illinoiscourts.gov/resources/d890ef39-a2b2-4b43-8014-500f5c3826f3/file",
+      "locator": "Ill. Sup. Ct. R. 102(d) (April 2023 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:24:43.637839+00:00",
+        "sha256": "1581052308cf6ec48ec4cba4605efc195830724110ce7758b69426600a38b228"
+      }
+    },
+    "US-IL:response:7b7f1228ee09": {
+      "category": "response",
+      "title": "Ill. Sup. Ct. R. 101(d) (April 2023 ed.)",
+      "url": "https://www.illinoiscourts.gov/resources/4f5ab89a-4f26-459c-b5b5-da8f155ee5d7/file",
+      "locator": "Ill. Sup. Ct. R. 101(d) (April 2023 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:24:43.609356+00:00",
+        "sha256": "59c07c1008cecb69476e0bfc633445d67342c7716d98b9fdb913b3f472a896c0"
+      }
+    },
+    "US-IL:wrongful_death_limitations:a634f4b9fd9b": {
+      "category": "wrongful_death_limitations",
+      "title": "740 ILCS 180/2(d)–(f) (P.A. 103-514 compilation)",
+      "url": "https://web.archive.org/web/20250225150044id_/https://www.ilga.gov/ftp/ILCS/Ch%200740/Act%200180/074001800K2.html",
+      "locator": "740 ILCS 180/2(d)–(f) (P.A. 103-514 compilation)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:08.846730+00:00",
+        "sha256": "c56a2717fb2c50e823d1ca8b68e251028a074d69cfa0e8edef1675a11764edb6"
+      }
+    },
+    "US-IL:oral_contract_limitations:8994c20a3e73": {
+      "category": "oral_contract_limitations",
+      "title": "735 ILCS 5/13-205 (February 2025 capture)",
+      "url": "https://web.archive.org/web/20250226145013id_/https://www.ilga.gov/ftp/ILCS/Ch%200735/Act%200005/073500050K13-205.html",
+      "locator": "735 ILCS 5/13-205 (February 2025 capture)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:55:54.997370+00:00",
+        "sha256": "3b3faa37ee2391c4906bf3c6a95a05073c24656edd917074e3dcf664d71a55cd"
+      }
+    },
+    "US-IL:written_contract_limitations:61056a4010bf": {
+      "category": "written_contract_limitations",
+      "title": "735 ILCS 5/13-206 (February 2025 capture)",
+      "url": "https://web.archive.org/web/20250226162541id_/https://www.ilga.gov/ftp/ILCS/Ch%200735/Act%200005/073500050K13-206.html",
+      "locator": "735 ILCS 5/13-206 (February 2025 capture)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:55:54.453374+00:00",
+        "sha256": "c5d8fa0c1ab784fa63ff16726c9116897fe086df162d5b415c12f47713c83cce"
+      }
+    },
+    "US-IL:service_time_limit:247af470ca56": {
+      "category": "service_time_limit",
+      "title": "Ill. Sup. Ct. R. 103(b) (2007 amendment)",
+      "url": "https://www.illinoiscourts.gov/resources/bcfa3230-741a-4d4c-a131-f4e8099cfe19/file",
+      "locator": "Ill. Sup. Ct. R. 103(b) (2007 amendment)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:15:24.441146+00:00",
+        "sha256": "cb991c7fc3c0ca89efe11919bc5202be32b24f493dc76fe03ab7e814c89057ce"
+      }
+    },
+    "US-IL:contract_breach:08f7968ed97d": {
+      "category": "contract_breach",
+      "title": "Green v. Trinity Int’l Univ., 344 Ill. App. 3d 1079 (2003)",
+      "url": "https://www.illinoiscourts.gov/Resources/4149abb2-8d44-458f-856a-3547ed3dda2a/2021208.htm",
+      "locator": "Green v. Trinity Int’l Univ., 344 Ill. App. 3d 1079 (2003)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:33:29.916565+00:00",
+        "sha256": "3e89523ca47ba3ccfcde5769b38a3df0ac1bc83e9297fbd82ff2964668d25921"
+      }
+    },
+    "US-IL:general_contract_damages:10d3cbe1e1b5": {
+      "category": "general_contract_damages",
+      "title": "J.B. Esker & Sons, Inc. v. Cle-Pa’s P’ship, No. 5-99-0811 (Ill. App. Ct. Oct. 10, 2001)",
+      "url": "https://www.illinoiscourts.gov/Resources/45130ad0-9a49-4a5a-a7ac-d649f332aa03/5990811.htm",
+      "locator": "J.B. Esker & Sons, Inc. v. Cle-Pa’s P’ship, No. 5-99-0811 (Ill. App. Ct. Oct. 10, 2001)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:34:45.789718+00:00",
+        "sha256": "3e5fee7b05d3d0f0ecee08c21144b10adb7f840de6c1f7dd240d37ac0b32d5d0"
+      }
+    },
+    "US-IL:tolling:a4bffb5b5557": {
+      "category": "tolling",
+      "title": "Giles v. Parks, 2018 IL App (1st) 163152, ¶ 15",
+      "url": "https://www.illinoiscourts.gov/Resources/52fdd82f-1666-49ee-9f0b-3bec6d19614c/1163152.pdf",
+      "locator": "Giles v. Parks, 2018 IL App (1st) 163152, ¶ 15",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:50:29.700805+00:00",
+        "sha256": "40c2f85fb038835f1ba5f16f4f42ade5e303eab3520a62901e93f99cda023484"
+      }
+    },
+    "US-IL:tolling:c54c035cdc45": {
+      "category": "tolling",
+      "title": "Zayed v. Clark Manor Convalescent Center, Inc., 2019 IL App (1st) 181552, ¶¶ 29–30",
+      "url": "https://www.illinoiscourts.gov/Resources/09d595f7-da2c-4ea4-b9b4-5001e1337434/1181552.pdf",
+      "locator": "Zayed v. Clark Manor Convalescent Center, Inc., 2019 IL App (1st) 181552, ¶¶ 29–30",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:50:29.783227+00:00",
+        "sha256": "1a5706e8838efcf8fb2f013c01a1983921c7994f5188ecf438492274ba65f672"
+      }
+    },
+    "US-IL:premises:65c9f1989297": {
+      "category": "premises",
+      "title": "Bruns v. City of Centralia, 2014 IL 116998, ¶ 22",
+      "url": "https://www.illinoiscourts.gov/Resources/b0a6ce2b-1c67-4c3a-86b1-49e600fd7a38/116998.pdf",
+      "locator": "Bruns v. City of Centralia, 2014 IL 116998, ¶ 22",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T20:46:03.135765+00:00",
+        "sha256": "4b6ca52894fa2078b224a6c5c08e76b730921ef91c3640120cb4d9884792deac"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-IL:court:c79f8d5ca832",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-IL:court_directory:7b0eb8ac625b"
+    },
+    {
+      "id": "US-IL:court:35efe5251ff8",
+      "name": "Appellate Courts",
+      "level": "appellate_directory",
+      "source_id": "US-IL:court_directory:b237f6c531d1"
+    },
+    {
+      "id": "US-IL:court:89229cf7df51",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-IL:court_directory:a1869d5d96ca"
+    },
+    {
+      "id": "US-IL:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-IL:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "735 ILCS 5/13-202",
+      "source_id": "US-IL:pi_limitations:e67337acca6b",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "735 ILCS 5/13-206",
+      "source_id": "US-IL:written_contract_limitations:8b458d4ed3ba",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "735 ILCS 5/13-205",
+      "source_id": "US-IL:oral_contract_limitations:302706782c60",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Executive Order 2020-72 (COVID-19 Executive Order No. 68); 735 Ill. Comp. Stat. 5/9-209 Demand for rent – eviction action; 735 Ill. Comp. Stat. 5/9-210 Notice to quit; 765 Ill. Comp. Stat. 742/10 Exceptions",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "815 ILCS 505",
+      "source_id": "US-IL:consumerLaw:9895ce055c52",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "forms": {
+    "US-IL:form:Small Claims Complaint": {
+      "title": "Small Claims Complaint",
+      "publisher_identifier": "Small Claims Complaint",
+      "source_id": "US-IL:small_claim_form:40c38eca00a0",
+      "index_source_id": "US-IL:small_claims:08bd54c9354b",
+      "index_sha256": "a9e8cc1981ff0c4444d82340eeccecbe973430a4c43d9bb7b03e808ac1a93a47",
+      "court_scope": "small_claims",
+      "mandatory": "review_required",
+      "revision": null,
+      "last_observed": "2026-11-17T19:42:44.990219+00:00",
+      "automated_completion": "disabled"
+    }
+  },
+  "passages": {
+    "6d7b74aa881fcc2910cfb44a66f2e2": {
+      "source_id": "US-IL:contract_formation:2b00abec022c",
+      "authority_type": "opinion",
+      "citation": "Rose v. Mavrakis, No. 1-03-1064 (Ill. App. Ct. Sept. 30, 2003)",
+      "text": "Although some terms of a contract may be missing or left to be agreed upon, the parties' failure to agree upon an essential term of a contract indicates that the mutual assent required to make a contract is lacking and, thus, there is no enforceable contract. Trittipo v. O'Brien, 204 Ill. App. 3d 662, 672, 561 N.E.2d 1201 (1990). The lack of nonessential details, however, will not render a contract unenforceable. First National Bank of Oak Lawn v. Minke, 99 Ill. App. 3d 10, 14, 425 N.E.2d 11 (1981).",
+      "text_sha256": "8db6f109f93123b50eed69cf29dfb9d91f30089aed75ddcd2a0387f8d296dab8",
+      "publisher_sha256": "59af8673f2721f2f6e41af974602ae5adad943be9ec721c30189e05e52bb114a",
+      "retrieved_at": "2026-11-18T20:40:11.091373+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2003-09-30",
+      "court": "Appellate Court of Illinois, First District",
+      "decision_date": "2003-09-30",
+      "opinion_role": "unanimous",
+      "procedural_posture": "Appeal from order enforcing oral settlement. Affirmed and remanded."
+    },
+    "6cf4edde72b9cf32b34bd5df763bb4": {
+      "source_id": "US-IL:eviction:50fc56d4b3d5",
+      "authority_type": "court_rule",
+      "citation": "Ill. Sup. Ct. R. 139(a)–(b) (July 17, 2020)",
+      "text": "(a) App licability of the Rule. This Rule supplements , but does not replace , the requirements set forth in article IX of the Code of Civil Procedure (735 ILCS 5/9-1 01 et seq .) and applies only to eviction actions filed on or after the effective date of July 17, 2020. (b) Supporting Documents for Eviction Complaints. ( 1) At the time of filing , the plaintiff shall attach a copy of the eviction notice or demand upon which the action is based , including any affida vits or other proof of service , to the eviction comp laint. If the plaintiff does not have the eviction notice or demand , the plaintiff may attach an affidavit instead , using the standardized form approved for use by the Illinois Supreme Court. (2) When an eviction action is based on a breach of a written lease and brought pursuant to section 9-210 of the Code of Civil Procedure (735 ILCS 5/9-210) , the plaintiff shall also attach a copy of the lease, or the relevant portions of the lease, to the eviction complaint at the time of filing. If the plaintiff does not have the lease or if there is no written lease, the plaintiff may attach an affidavit instead, using the standardized form approved for use by the Illinois Supreme Court.",
+      "text_sha256": "a2a0206a2e6652f5599bedf150c7def68a5f4bf65662cb5421044d8cffb999ff",
+      "publisher_sha256": "565d1a623937002d32c8432437df307e1d8e9a31df58794415c6c214f12793f9",
+      "retrieved_at": "2026-11-18T20:37:43.367369+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Supreme Court order M.R. 3140, July 17, 2020",
+      "court": "Illinois Circuit Court"
+    },
+    "c514fc03864b70416099306052de79": {
+      "source_id": "US-IL:fault:fbd9d5fc8926",
+      "authority_type": "opinion",
+      "citation": "Merca v. Rhodes, 2011 IL App (1st) 102234, ¶ 45",
+      "text": "Section 2-1116 of the Code of Civil Procedure (735 ILCS 5/2-1116 (West 2008)) bars a plaintiff whose contributory negligence is more “than 50% of the proximate cause of the injury or damage for which recovery is sought” from recovering any damages.",
+      "text_sha256": "7f6b7cc3922f9cec05d517150e24a9c37f1cc35a7ddd440f3aebc2ddc2539d9e",
+      "publisher_sha256": "b819500b4668285ca53bbdf29dd41d49ae83b747923ccb9468c928049769cbc0",
+      "retrieved_at": "2026-11-20T15:12:11.014534+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2011-09-30",
+      "court": "Illinois Appellate Court, First District",
+      "decision_date": "2011-09-30",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in a wrongful death action arising from a pedestrian collision."
+    },
+    "2e9cba99d6e2b4021ca1aa9fca8991": {
+      "source_id": "US-IL:pi_limitations:acbf28f6b220",
+      "authority_type": "opinion",
+      "citation": "Merritt v. Randall Painting Co., No. 1-99-4171 (Ill. App. Ct. June 22, 2000)",
+      "text": "Because the plaintiff failed to allege any facts in her complaint or provide any affidavit to establish that her injury was the result of an act or omission in the design, planning, supervision, observation, or management of construction, or construction of an improvement to real property, the four-year limitation provided in section 13-214(a) of the Code is inapplicable. Estate of Herington v. County of Woodford, 250 Ill. App. 3d 870, 874-75, 620 N.E.2d 463 (1993). As such, her action is governed by the two-year statute of limitations set forth in section 13-202 of the Code, and was properly dismissed by the trial court as time-barred.",
+      "text_sha256": "5ca6ed9552cc6b89488a841ff374fa0e0308f52ecf29361db5fb954c0e3b9e10",
+      "publisher_sha256": "ae85320cbdaee0f2fbc550e6ec4ec1740d3e1a953bed0e0fc76c1a40e996192c",
+      "retrieved_at": "2026-11-20T15:43:51.280071+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2000-06-22",
+      "court": "Illinois Appellate Court, First District",
+      "decision_date": "2000-06-22",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of dismissal of a personal injury suit. The court applied the general statute after analyzing the potential construction statute exception."
+    },
+    "b7a334d3c92750995e91456c1c40bf": {
+      "source_id": "US-IL:consumerLaw:5f677262bce0",
+      "authority_type": "opinion",
+      "citation": "McIntosh v. Walgreens Boots Alliance, Inc., 2019 IL 123626, ¶ 20",
+      "text": "Section 2 of the statute provides that it is unlawful to engage in “unfair or deceptive acts or practices, including but not limited to the use or employment of any deception, fraud, false pretense, false promise, misrepresentation or the concealment, suppression or omission of any material fact, with intent that others rely upon the concealment, suppression or omission of such material fact *** in the conduct of any trade or commerce.” 815 ILCS 505/2 (West 2014).",
+      "text_sha256": "eda7fba440529a0acbf4f13edf3425bb9010806e9284d94dbcd5f9aedfab72db",
+      "publisher_sha256": "4570b68959941da1ea2ede78e7659a68c6194045fd704bae3167d3a0e0f61d40",
+      "retrieved_at": "2026-11-20T16:20:54.354931+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2019-06-20",
+      "court": "Supreme Court of Illinois",
+      "decision_date": "2019-06-20",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of the dismissal of an action under the Illinois Consumer Fraud Act involving the collection of a bottled-water tax."
+    },
+    "d4a4dba926625689a26326f959b0b7": {
+      "source_id": "US-IL:response:a6abcad02bc8",
+      "authority_type": "court_rule",
+      "citation": "Ill. Sup. Ct. R. 181(a)",
+      "text": "(a) When Summons Requires Appearance Within 30 Days After Service. When the summons requires appearance within 30 days after service, exclusive of the day of service (see Rule 101(d)), the 30-day period shall be computed from the day the copy of the summons is left with the person designated by law and not from the day a copy is mailed, in case mailing is also required. The defendant may make his or her appearance by filing a motion within the 30-day period, in which instance an answer or another appropriate motion shall be filed within the time the court directs in the order disposing of the motion. If the defendant’s appearance is made in some other manner, nevertheless his or her answer or appropriate motion shall be filed on or before the last day on which he or she was required to appear.",
+      "text_sha256": "6d0a84401cc6ce4cbfafdbafa3e88acb80714066efd662de57f1bc807e489f13",
+      "publisher_sha256": "6dc52c9989ba52e0273c1e1f27422bf49c2380662a2631227f18c1efcb7eae60",
+      "retrieved_at": "2026-11-20T16:41:35.644150+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2020-07-17"
+    },
+    "57053a5da360d5c42632b61ee7edae": {
+      "source_id": "US-IL:negligence_elements:cc98bce4d377",
+      "authority_type": "opinion",
+      "citation": "Monson v. City of Danville, 2018 IL 122486, ¶ 23",
+      "text": "It is the plaintiff’s burden to allege and prove all of the elements of a negligence claim, including a duty owed by the defendant, a breach of that duty, and that the breach was the proximate cause of the plaintiff’s injuries. First Springfield Bank & Trust v. Galman, 188 Ill. 2d 252, 256 (1999).",
+      "text_sha256": "5a72dd5451002efddbeb9d928a9fa29a7277a8ccf186a132905f50f6aa3c0329",
+      "publisher_sha256": "4310628f41474d80184f5161f8801d96cbad24d0dea0fd411720239e534a4ba7",
+      "retrieved_at": "2026-11-20T17:40:12.738153+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2018-08-02",
+      "court": "Supreme Court of Illinois",
+      "procedural_posture": "Appeal from summary judgment on a municipal sidewalk injury claim. The court separately considered statutory notice and immunity.",
+      "opinion_role": "majority",
+      "decision_date": "2018-08-02"
+    },
+    "798d7db0d5c3e7d9fa2dbd3b90f401": {
+      "source_id": "US-IL:deposit:e0e847ede169",
+      "authority_type": "statute",
+      "citation": "Illinois P.A. 103-0224, § 5 (765 ILCS 710/1(a))",
+      "text": "(a) Except as provided in subsection (b), a lessor of residential real property who has received a security deposit from a lessee to secure the payment of rent or to compensate for damage to the leased premises may not withhold any part of that deposit as reimbursement for property damage unless the lessor has, within 30 days of the date that the lessee vacated the leased premises or within 30 days of the date the lessee's right of possession ends, whichever is later, furnished to the lessee, by personal delivery, by postmarked mail directed to his or her last known address, or by electronic mail to a verified electronic mail address provided by the lessee, an itemized statement of the damage allegedly caused to the leased premises and the estimated or actual cost for repairing or replacing each item on that statement, attaching the paid receipts, or copies thereof, for the repair or replacement. If the lessor utilizes his or her own labor to repair or replace any damage or damaged items caused by the lessee, the lessor may include the reasonable cost of his or her labor to repair or replace such damage or damaged items. If estimated cost is given, the lessor shall furnish to the lessee, delivered in person or by postmarked mail directed to the last known address of the lessee or another address provided by the lessee, paid receipts, or copies thereof, within 30 days from the date the statement showing estimated cost was furnished to the lessee, as required by this Section. If a written lease specifies the cost for cleaning, repair, or replacement of any component of the leased premises or any component of the building or common areas that, if damaged, will not be replaced, the lessor may withhold the dollar amount specified in the lease. Costs specified in a written lease shall be for damage beyond normal wear and tear and reasonable to restore the leased premises to the same condition as at the time the lease began. The itemized statement shall reference the dollar amount specified in the written lease associated with the specific building component or amenity and include a copy of the applicable portion of the lease. Deductions for costs or values not specified in the lease shall otherwise comply with the requirements of this Section. If no such statement and receipts, or copies thereof, are furnished to the lessee as required by this Section, the lessor shall return the security deposit in full within 45 days of the date that the lessee vacated the premises, delivered in person or by postmarked mail directed to the last known address of the lessee or another address provided by the lessee. If the lessee fails to provide the lessor with a mailing address or electronic mail address, the lessor shall not be held liable for any damages or penalties as a result of the lessee's failure to provide an address.",
+      "text_sha256": "c75612039de5168c705b5185e8f4c87f5c99e69ae615bc24b63a0f5804f9508c",
+      "publisher_sha256": "e51a95c09daa949fccf2c15d4fb9b65459d3685fa9589c842622df68bb41ff0f",
+      "retrieved_at": "2026-11-20T17:57:55.077078+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Public Act 103-0224 (effective January 1, 2024)",
+      "effective_from": "2024-01-01"
+    },
+    "cef12c09025931953ece992be5d0e8": {
+      "source_id": "US-IL:wageLaw:7a50e1d6b01d",
+      "authority_type": "statute",
+      "citation": "Illinois P.A. 103-0201, § 30 (820 ILCS 115/3)",
+      "text": "Sec. 3. Every employer shall be required, at least semi-monthly, to pay every employee all wages earned during the semi-monthly pay period. Wages of executive, administrative and professional employees, as defined in the Federal Fair Labor Standards Act of 1939, may be paid once a month. Commissions may be paid once a month. At the request of a person employed by an employment or labor placement agency which, in the ordinary course of business, makes daily wage payments to employees, the agency shall hold the daily wages and make either weekly or semi-monthly payments. Upon the written request of the employee, the wage shall be paid in a single check representing the wages earned during the period, either weekly or semi-monthly, designated by the employee in accordance with Section 4 of this Act. Employment and labor placement agencies that make daily wage payments shall provide written notification to all daily wage payment employees of the right to request weekly or semi-monthly checks. The employer may provide this notice by conspicuously posting the notice at the location where the wages are received by the daily wage employees. Every employer with employees who do not regularly report to a physical workplace, such as employees who work remotely or travel for work, shall also provide the summary and notice by email to its employees or conspicuous posting on the employer's website or intranet site, if such site is regularly used by the employer to communicate work-related information to employees and is able to be regularly accessed by all employees, freely and without interference.",
+      "text_sha256": "11f05c9b700a2cd1df4d6dd7f442c207853a85e3333ea887b7b57ad822eb1c9f",
+      "publisher_sha256": "9b34e43c2f7aa154bb635a747faf8aee13a17aa64f7567b425f40f42f8a4e97e",
+      "retrieved_at": "2026-11-20T17:57:55.082889+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Public Act 103-0201 (effective January 1, 2024)",
+      "effective_from": "2024-01-01"
+    },
+    "16a9b7717d5ec0d4814ebb4e47f6eb": {
+      "source_id": "US-IL:debtLaw:052ead97b491",
+      "authority_type": "statute",
+      "citation": "Illinois P.A. 104-0149, § 10 (205 ILCS 740/9.1, location-information communications)",
+      "text": "Any collection agency communicating with any person other than the debtor for the purpose of acquiring location information about the debtor shall: (1) identify himself or herself, state that he or she is confirming or correcting location information concerning the consumer, and, only if expressly requested, identify his or her employer; (2) not state that the consumer owes any debt; (3) not communicate with any person more than once unless requested to do so by the person or unless the collection agency reasonably believes that the earlier response of the person is erroneous or incomplete and that the person now has correct or complete location information; (4) not communicate by postcard; (5) not use any language or symbol on any envelope or in the contents of any communication effected by mail or telegram that indicates that the collection agency is in the debt collection business or that the communication relates to the collection of a debt; and (6) not communicate with any person other than the debtor's attorney after the collection agency knows the debtor is represented by an attorney with regard to the subject debt and has knowledge of or can readily ascertain the attorney's name and address, unless the attorney fails to respond within a reasonable period of time, not less than 30 days, to communication from the collection agency. This Section applies to a collection agency or debt buyer only when engaged in the collection of consumer debt.",
+      "text_sha256": "b11a3b7410b232d786e0375f13a0b55da84cc6662df93ff7f182f016385f7cef",
+      "publisher_sha256": "67085d04d4bc7bac655f114a6c7048b0a82bdd9f8290a6c2d5a199f646513637",
+      "retrieved_at": "2026-11-20T18:35:16.988176+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Public Act 104-0149 (2025 enacted text)"
+    },
+    "3af8da9d717d886705f1e4417e25d9": {
+      "source_id": "US-IL:small_claims:f1114bae7bfc",
+      "authority_type": "court_rule",
+      "citation": "Ill. Sup. Ct. R. 281",
+      "text": "For the purpose of the application of Rules 281 through 288, a small claim is a civil action based on either tort or contract for money not in excess of $10,000, exclusive of interest and costs. The order entered December 6, 2005, amending Rule 281 and effective January 1, 2006, shall apply only to cases filed after such effective date.",
+      "text_sha256": "c27eede7d6c18bd10de719887f5679d03b6c3e9f2fc38d6575d134c6a4723c92",
+      "publisher_sha256": "965cb78d591aa5d3c7e71d3978bd70a39073fa766eef7676205930618550a3db",
+      "retrieved_at": "2026-11-20T23:12:48.997856+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Supreme Court published rule as amended effective 2022-01-01",
+      "court": "Illinois Circuit Court",
+      "effective_from": "2022-01-01"
+    },
+    "07f5d3ae531e057a3bef2daf55e5fb": {
+      "source_id": "US-IL:small_claims:c32e8b336e24",
+      "authority_type": "court_rule",
+      "citation": "Ill. Sup. Ct. R. 282(a)",
+      "text": "(a) Commencement of Actions. An action on a small claim may be commenced by paying to the clerk of the court the required filing fee and filing a short and simple complaint setting forth (1) plaintiff’s name, residence address, e-mail address (required for attorneys only), and telephone number, (2) defendant’s name and place of residence, or place of business or regular employment, and (3) the nature and amount of the plaintiff’s claim, giving dates and other relevant information. If the claim is based upon a written instrument, a copy thereof or of so much of it as is relevant must be copied in or attached to the original and all copies of the complaint, unless the plaintiff attaches to the complaint an affidavit stating facts showing that the instrument is unavailable to him.",
+      "text_sha256": "acb415838d716141f39f2134c944b5462a9e536f3677a6c6067c4ac29efdc359",
+      "publisher_sha256": "12a243ce73e46e85d5af8b58eda652adb3218c8fc94ebe85462c29ff1ece096d",
+      "retrieved_at": "2026-11-20T23:12:49.037758+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Supreme Court published rule as amended effective 2018-01-01",
+      "court": "Illinois Circuit Court",
+      "effective_from": "2018-01-01"
+    },
+    "9f2fa8aad3dc18e2c752e0b81cf1e9": {
+      "source_id": "US-IL:small_claims:ff727e043e0e",
+      "authority_type": "court_rule",
+      "citation": "Ill. Sup. Ct. R. 284",
+      "text": "Unless otherwise provided by circuit court rule, at the request of the plaintiff and in lieu of personal service, service in small claims may be made within the state as follows: (a) For each defendant to be served the plaintiff shall pay to the clerk of the court a fee of $2, plus the cost of mailing, and file a summons containing an affidavit setting forth the defendant’s last known mailing address. (b) The clerk forthwith shall mail to the defendant, at the address appearing in the affidavit, the copy of the summons and complaint, certified or registered mail, return receipt requested, showing to whom delivered and the date and address of delivery. United States Postal Service electronic return receipt may be utilized in lieu of paper receipts. The summons and complaint shall be mailed on a “restricted delivery” basis when service is directed to a natural person. The envelope and return receipt shall bear the return address of the clerk, and the return receipt shall include the docket number of the case. The receipt for certified or registered mail shall state the name and address of the addressee, and the date of mailing, and shall be filed by the clerk. (c) The return receipt, when returned to the clerk, shall be filed by the clerk. If the receipt shows delivery at least 21 days before the day for appearance, the receipt shall constitute proof of service. (d) The clerk shall note the fact of service in a permanent record.",
+      "text_sha256": "2d4947ccb4ad1e919a288f231e7d19e79af491a1aedefece7ad0b677d671135c",
+      "publisher_sha256": "cbcb910bd6873de3c90b9f82c733aebab721bfef20f5e89320524bf73d7859ce",
+      "retrieved_at": "2026-11-20T23:12:48.998861+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Supreme Court published rule as amended effective 2023-04-20",
+      "court": "Illinois Circuit Court",
+      "effective_from": "2023-04-20"
+    },
+    "6eb55715afd29e0e3bc2451dbbd942": {
+      "source_id": "US-IL:venue:c707997cb697",
+      "authority_type": "statute",
+      "citation": "735 ILCS 5/2-101 (general venue clause)",
+      "text": "Except as otherwise provided in this Act, every action must be commenced (1) in the county of residence of any defendant who is joined in good faith and with probable cause for the purpose of obtaining a judgment against him or her and not solely for the purpose of fixing venue in that county, or (2) in the county in which the transaction or some part thereof occurred out of which the cause of action arose.",
+      "text_sha256": "caf38a57b5438192dbb855da3a4ba479ea06aba0348605cde98b3d98f2b6b352",
+      "publisher_sha256": "fac43a61dc24af1653db2c99383d19416553064828666716af926bdd5dd9ecb5",
+      "retrieved_at": "2026-11-21T16:24:44.859797+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois General Assembly archive captured October 19, 2025",
+      "publisher_member": "Illinois General Assembly archived section 2-101, first operative sentence, October 19, 2025 capture"
+    },
+    "72b7d35f77a72f7749b997dccce0b0": {
+      "source_id": "US-IL:commencement:deb80b27d455",
+      "authority_type": "statute",
+      "citation": "735 ILCS 5/2-201(a)",
+      "text": "(a) Every action, unless otherwise expressly provided by statute, shall be commenced by the filing of a complaint. The clerk shall issue summons upon request of the plaintiff. The form and substance of the summons, and of all other process, and the issuance of alias process, and the service of copies of pleadings shall be according to rules.",
+      "text_sha256": "ab373080354ed44f68a38148c967e9b7193bf98cd5e570c4e7520f977b528ed4",
+      "publisher_sha256": "13621a4d9d725e701c3bd498cafe190dda6e46597f263be28346ef8c601da82d",
+      "retrieved_at": "2026-11-21T16:24:45.984438+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois General Assembly archive captured January 21, 2026",
+      "publisher_member": "Illinois General Assembly archived section 2-201(a), January 21, 2026 capture"
+    },
+    "e711e8fb354522863c131199e949e4": {
+      "source_id": "US-IL:service:d8013f621014",
+      "authority_type": "court_rule",
+      "citation": "Ill. Sup. Ct. R. 102(a)–(c) (April 2023 ed.)",
+      "text": "(a) Placement for Service. Promptly upon issuance, summons (together with copies of the complaint as required by Rule 104) shall be placed for service with the sheriff or other officer or person authorized to serve process. (b) When Service Must Be Made. No summons in the form provided in paragraph (d) of Rule 101 may be served later than 30 days after its date. A summons in the form provided in paragraph (b)(1) of Rule 101 may not be served later than 21 days before the day for appearance. A summons in the form provided in paragraph (b)(2) or (b)(3) of Rule 101 may not be served later than three days before the day of appearance. (c) Indorsement Showing Date of Service. The officer or other person making service of summons shall indorse the date of service upon the copy left with the defendant/respondent or other person. Failure to indorse the date of service does not affect the validity of service.",
+      "text_sha256": "13a732144b59f3d5394f5d9556ed09b7e767d0d3ab67e680e8f4bf4e8e64cbac",
+      "publisher_sha256": "1581052308cf6ec48ec4cba4605efc195830724110ce7758b69426600a38b228",
+      "retrieved_at": "2026-11-21T16:24:43.637839+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Supreme Court Rule 102, April 24, 2023 edition",
+      "court": "Illinois Circuit Courts",
+      "publisher_member": "Illinois Supreme Court Rules, Rule 102, p. 1, subsections (a)–(c)",
+      "effective_from": "2023-04-24"
+    },
+    "10e4c5be41947a5eb4eee76cabc2ce": {
+      "source_id": "US-IL:service_proof:913a9156818c",
+      "authority_type": "court_rule",
+      "citation": "Ill. Sup. Ct. R. 102(d) (April 2023 ed.)",
+      "text": "(d) Return. The officer or person making service shall make a return by filing proof of service immediately after service on all defendants/respondents has been had, and, in any event, shall make a return: (1) in the case of a summons in the form provided in Rule 101(b)(1), not less than 21 days before the day of appearance; (2) in the case of a summons in the form provided in Rule 101(b)(2) or (b)(3), not less than 3 days before that day; (3) in other cases, immediately after the last day fixed for service. If there is more than one defendant/respondent, the proof of service may be filed immediately after service on each defendant/respondent. The proof of service need not state whether a copy of the complaint was served. A party who has placed a summons with an officer or other person who is authorized to serve process, but who does not have access to the court filing system, shall file the proof of service obtained from the officer. Failure to return the summons or file proof of service does not invalidate the summons or the service thereof, if had.",
+      "text_sha256": "717378ce86fec38182b87771cb52ebdcc707da9be0e311ca6ab22d99a96c28df",
+      "publisher_sha256": "1581052308cf6ec48ec4cba4605efc195830724110ce7758b69426600a38b228",
+      "retrieved_at": "2026-11-21T16:24:43.637839+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Supreme Court Rule 102, April 24, 2023 edition",
+      "court": "Illinois Circuit Courts",
+      "publisher_member": "Illinois Supreme Court Rules, Rule 102, p. 1, subsection (d)",
+      "effective_from": "2023-04-24"
+    },
+    "c7d75d4ccd82f8bceaa9434058ddaa": {
+      "source_id": "US-IL:response:7b7f1228ee09",
+      "authority_type": "court_rule",
+      "citation": "Ill. Sup. Ct. R. 101(d) (April 2023 ed.)",
+      "text": "(d) Summons Requiring Appearance Within 30 Days After Service. In all other cases the summons shall require each defendant to file his answer or otherwise file his appearance within 30 days after service, exclusive of the day of service (see Rule 181(a)), and shall be prepared by utilizing, or substantially adopting the appearance and content of, the form provided in the Article II Forms Appendix.",
+      "text_sha256": "3cfe406f59c64598625e23c09d8172363825d2e174c7cd27570fc0f2b9a18f08",
+      "publisher_sha256": "59c07c1008cecb69476e0bfc633445d67342c7716d98b9fdb913b3f472a896c0",
+      "retrieved_at": "2026-11-21T16:24:43.609356+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Supreme Court Rule 101, April 20, 2023 edition",
+      "court": "Illinois Circuit Courts",
+      "publisher_member": "Illinois Supreme Court Rules, Rule 101, p. 2, subsection (d), residual cases governed by Rule 181(a)",
+      "effective_from": "2023-04-20"
+    },
+    "79d97ea9d7decdf00c9596322d1114": {
+      "source_id": "US-IL:wrongful_death_limitations:a634f4b9fd9b",
+      "authority_type": "statute",
+      "citation": "740 ILCS 180/2(d)–(f) (P.A. 103-514 compilation)",
+      "text": "(d) Except as otherwise provided in subsection (e) of this Section, every such action shall be commenced within 2 years after the death of such person but an action against a defendant arising from a crime committed by the defendant in whose name an escrow account was established under the \"Criminal Victims' Escrow Account Act\" shall be commenced within 2 years after the establishment of such account. (e) An action may be brought within 5 years after the date of the death if the death is the result of violent intentional conduct or within one year after the final disposition of the criminal case if the defendant is charged with: (1) first degree murder under Section 9-1 of the Criminal Code of 2012; (2) intentional homicide of an unborn child under Section 9-1.2 of the Criminal Code of 2012; (3) second degree murder under Section 9-2 of the Criminal Code of 2012; (4) voluntary manslaughter of an unborn child under Section 9-2.1 of the Criminal Code of 2012; (5) involuntary manslaughter or reckless homicide under Section 9-3 of the Criminal Code of 2012; (6) involuntary manslaughter or reckless homicide of an unborn child under Section 9-3.2 of the Criminal Code of 2012; or (7) drug-induced homicide under Section 9-3.3 of the Criminal Code of 2012. This subsection extends the statute of limitations only against the individual who allegedly committed a violent intentional act or was the defendant charged with a crime listed in this subsection. It does not extend the statute of limitations against any other person or entity. The changes to this Section made by this amendatory Act of the 99th General Assembly apply to causes of action arising on or after the effective date of this amendatory Act of the 99th General Assembly. (f) For the purposes of this Section 2, next of kin includes an adopting parent and an adopted child, and they shall be treated as a natural parent and a natural child, respectively. However, if a person entitled to recover benefits under this Act, is, at the time the cause of action accrued, within the age of 18 years, he or she may cause such action to be brought within 2 years after attainment of the age of 18.",
+      "text_sha256": "bc70cee2942016b90c3008bf0cacbe7341d0e4da6ef03072e933955b8a28d422",
+      "publisher_sha256": "c56a2717fb2c50e823d1ca8b68e251028a074d69cfa0e8edef1675a11764edb6",
+      "retrieved_at": "2026-11-21T16:33:08.846730+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois General Assembly FTP archive captured February 25, 2025",
+      "publisher_member": "Illinois General Assembly statutory FTP archive, § 2(d)–(f), checked against P.A. 103-514, PDF pp. 4–5"
+    },
+    "9bffea2243e08e03ea5810f53d0c99": {
+      "source_id": "US-IL:oral_contract_limitations:8994c20a3e73",
+      "authority_type": "statute",
+      "citation": "735 ILCS 5/13-205 (February 2025 capture)",
+      "text": "Except as provided in Section 2-725 of the \"Uniform Commercial Code\", approved July 31, 1961, as amended, and Section 11-13 of \"The Illinois Public Aid Code\", approved April 11, 1967, as amended, actions on unwritten contracts, expressed or implied, or on awards of arbitration, or to recover damages for an injury done to property, real or personal, or to recover the possession of personal property or damages for the detention or conversion thereof, and all civil actions not otherwise provided for, shall be commenced within 5 years next after the cause of action accrued.",
+      "text_sha256": "7103c0fe6a61ed7659d1de835204711dda2339ba9c43abafec28d8e105799b63",
+      "publisher_sha256": "3b3faa37ee2391c4906bf3c6a95a05073c24656edd917074e3dcf664d71a55cd",
+      "retrieved_at": "2026-11-21T16:55:54.997370+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois General Assembly FTP archive captured February 26, 2025",
+      "publisher_member": "Illinois General Assembly FTP statutory archive, section 13-205; historical compilation"
+    },
+    "db7cdf01cc6688fd653d67f6917eea": {
+      "source_id": "US-IL:written_contract_limitations:61056a4010bf",
+      "authority_type": "statute",
+      "citation": "735 ILCS 5/13-206 (February 2025 capture)",
+      "text": "Except as provided in Section 2-725 of the \"Uniform Commercial Code\", actions on bonds, promissory notes, bills of exchange, written leases, written contracts, or other evidences of indebtedness in writing and actions brought under the Illinois Wage Payment and Collection Act shall be commenced within 10 years next after the cause of action accrued; but if any payment or new promise to pay has been made, in writing, on any bond, note, bill, lease, contract, or other written evidence of indebtedness, within or after the period of 10 years, then an action may be commenced thereon at any time within 10 years after the time of such payment or promise to pay. For purposes of this Section, with regard to promissory notes dated on or after the effective date of this amendatory Act of 1997, a cause of action on a promissory note payable at a definite date accrues on the due date or date stated in the promissory note or the date upon which the promissory note is accelerated. With respect to a demand promissory note dated on or after the effective date of this amendatory Act of 1997, if a demand for payment is made to the maker of the demand promissory note, an action to enforce the obligation of a party to pay the demand promissory note must be commenced within 10 years after the demand. An action to enforce a demand promissory note is barred if neither principal nor interest on the demand promissory note has been paid for a continuous period of 10 years and no demand for payment has been made to the maker during that period.",
+      "text_sha256": "c5cf7974ac89c064e156e205b63cac8504a78daf59a6b2f1dccd0130677660c8",
+      "publisher_sha256": "c5d8fa0c1ab784fa63ff16726c9116897fe086df162d5b415c12f47713c83cce",
+      "retrieved_at": "2026-11-21T16:55:54.453374+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois General Assembly FTP archive captured February 26, 2025",
+      "publisher_member": "Illinois General Assembly FTP statutory archive, section 13-206; historical compilation",
+      "effective_from": "2007-08-16"
+    },
+    "a058c895a0b34024f4641eb2780765": {
+      "source_id": "US-IL:service_time_limit:247af470ca56",
+      "authority_type": "court_rule",
+      "citation": "Ill. Sup. Ct. R. 103(b) (2007 amendment)",
+      "text": "(b) Dismissal for Lack of Diligence. If the plaintiff fails to exercise reasonable diligence to obtain service on a defendant prior to the expiration of the applicable statute of limitations, the action as to that defendant may be dismissed without prejudice. If the failure to exercise reasonable diligence to obtain service on a defendant occurs after the expiration of the applicable statute of limitations, the dismissal shall be with prejudice as to that defendant only and shall not bar any claim against any other party based on vicarious liability for that dismissed defendant’s conduct. The dismissal may be made on the application of any party or on the court’s own motion. In considering the exercise of reasonable diligence, the court shall review the totality of the circumstances, including both lack of reasonable diligence in any previous case voluntarily dismissed or dismissed for want of prosecution, and the exercise of reasonable diligence in obtaining service in any case refiled under section 13-217 of the Code of Civil Procedure.",
+      "text_sha256": "3e1cd4a1cb09f85d87a285eba609abed24a3c6e880ef66c7c5ac2d6bf18b985b",
+      "publisher_sha256": "cb991c7fc3c0ca89efe11919bc5202be32b24f493dc76fe03ab7e814c89057ce",
+      "retrieved_at": "2026-11-21T22:15:24.441146+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Supreme Court Rule 103 as amended June 5, 2007",
+      "court": "Illinois trial courts governed by the Illinois Supreme Court Rules",
+      "publisher_member": "Illinois Supreme Court published Rule 103, PDF p. 1, reasonable diligence with defendant-specific dismissal consequences",
+      "effective_from": "2007-07-01"
+    },
+    "ef36e48800a0bdc90310eae212049f": {
+      "source_id": "US-IL:contract_breach:08f7968ed97d",
+      "authority_type": "opinion",
+      "citation": "Green v. Trinity Int’l Univ., 344 Ill. App. 3d 1079 (2003)",
+      "text": "The elements of a cause of action for breach of contract include: (1) an offer and acceptance, (2) consideration, (3) definite and certain contractual terms, (4) the plaintiff's performance of his contractual obligations, (5) the defendant's breach of the contract, and (6) damages resulting from the breach. Barille v. Sears Roebuck & Co. , 289 Ill. App. 3d 171, 175 (1997).",
+      "text_sha256": "ccdefd4b726bd5ef59abd1cdf9720cb08ae74d613cdc32afc6ee7efbc5ae30f5",
+      "publisher_sha256": "3e89523ca47ba3ccfcde5769b38a3df0ac1bc83e9297fbd82ff2964668d25921",
+      "retrieved_at": "2026-11-22T03:33:29.916565+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "December 19, 2003 appellate opinion",
+      "court": "Illinois Appellate Court, Second District",
+      "publisher_member": "Second District opinion, general elements in the challenge to the sufficiency of the plaintiff’s pleading.",
+      "decision_date": "2003-12-19",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissal of contract and tort claims arising from university employment; affirmed in part, reversed in part and remanded."
+    },
+    "38180b9858dca456b336db2eeec50b": {
+      "source_id": "US-IL:general_contract_damages:10d3cbe1e1b5",
+      "authority_type": "opinion",
+      "citation": "J.B. Esker & Sons, Inc. v. Cle-Pa’s P’ship, No. 5-99-0811 (Ill. App. Ct. Oct. 10, 2001)",
+      "text": "The goal of awarding compensatory damages is to place the aggrieved party in the same position it would have been in had the contract been performed. Illiana Machine & Manufacturing Corp. v. Duro-Chrome Corp. , 152 Ill. App. 3d 764, 768, 504 N.E.2d 974, 976 (1987). Shifting the payment of expert witness fees to the breaching party would place the prevailing party in the position it would have been in had the other terms of the contract been performed. See McCarthy v. U.S.I. Corp. , 678 A.2d 48, 54 (Me. 1996).",
+      "text_sha256": "f8870ded0f2b69618ecf18867631b8c16f9daab7d96062783c61cfc9d636203f",
+      "publisher_sha256": "3e5fee7b05d3d0f0ecee08c21144b10adb7f840de6c1f7dd240d37ac0b32d5d0",
+      "retrieved_at": "2026-11-22T03:34:45.789718+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "October 10, 2001 appellate slip opinion",
+      "court": "Illinois Appellate Court, Fifth District",
+      "publisher_member": "Fifth District slip opinion, contract compensatory principle explained when assessing contractual litigation expenses.",
+      "decision_date": "2001-10-10",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal in a construction-contract and mechanic’s lien dispute, including whether expert fees are recoverable under the contract."
+    },
+    "265daeda06f937d4d261de05a79b0e": {
+      "source_id": "US-IL:tolling:a4bffb5b5557",
+      "authority_type": "opinion",
+      "citation": "Giles v. Parks, 2018 IL App (1st) 163152, ¶ 15",
+      "text": "The statute dealing with legal disability is specific to and only applies to the person suffering from the disability. Section 13-211 states that “[i]f the person entitled to bring an action” is under a legal disability, then “he or she may bring the action within 2 years after the *** disability is removed.” (Emphases added). Id. § 13-211. The statute contemplates both that the disability be removed at some point and that the injured party bring the action that would otherwise be time barred. Id. The statute does not contemplate a representative bringing any action at all, let alone an action two years after the disability is removed. Fess v. Parke, Davis & Co., 113 Ill. App. 3d 133, 135 (1983) (the person under a disability, and “only that person[,] may bring an action within two years after the disability is removed”); see also Swider v. Holy Cross Hospital, 146 Ill. App. 3d 740, 742 (1986).",
+      "text_sha256": "993f6b454d1955fe21a6ccc81809c7688b3a3e2ec549d0f278dc2c81c2069125",
+      "publisher_sha256": "40c2f85fb038835f1ba5f16f4f42ade5e303eab3520a62901e93f99cda023484",
+      "retrieved_at": "2026-11-23T15:50:29.700805+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Official Reports, February 5, 2018",
+      "court": "Illinois Appellate Court, First District, First Division",
+      "decision_date": "2018-02-05",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissal of a survival action. A different First District division disagreed in Zayed."
+    },
+    "d3d53e52e9f9a11a8d0ccc5957f05d": {
+      "source_id": "US-IL:tolling:c54c035cdc45",
+      "authority_type": "opinion",
+      "citation": "Zayed v. Clark Manor Convalescent Center, Inc., 2019 IL App (1st) 181552, ¶¶ 29–30",
+      "text": "Section 13-209 provides that a representative may commence an action either “before the expiration of the time limited for commencement” —which, in the case of a disabled person, includes two years after he or she is no longer under a disability—or “one year from his or her death, whichever date is later.” Two years is obviously later than one year, so the two-year limit applies in this case. ¶ 30 Interpreting the two rules together, as we are required to do, there is no conflict between them, and the deceased’s representative had two years from the date of death to file this action, which she did.",
+      "text_sha256": "ad68271a0c7efd77c37e76286dc86c44c41b473dddae53aec8fcda3d741cb9ce",
+      "publisher_sha256": "1a5706e8838efcf8fb2f013c01a1983921c7994f5188ecf438492274ba65f672",
+      "retrieved_at": "2026-11-23T15:50:29.783227+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Official Reports, September 26, 2019",
+      "court": "Illinois Appellate Court, First District, Fourth Division",
+      "decision_date": "2019-09-26",
+      "opinion_role": "majority",
+      "procedural_posture": "Reversal of dismissal of a survival action. The panel expressly disagreed with Giles."
+    },
+    "c0f786d111c0c888df66f21f3e0c9d": {
+      "source_id": "US-IL:premises:65c9f1989297",
+      "citation": "Bruns v. City of Centralia, 2014 IL 116998, ¶ 22",
+      "text": "Preliminarily, we note that the distraction exception will only apply where evidence exists from which a court can infer that plaintiff was actually distracted. See Sollami, 201 Ill. 2d at 16-17 (distraction exception did not apply to open and obvious danger of “rocket-jumping” on trampoline because no evidence was presented tending to show that the plaintiff was distracted); Bucheleres, 171 Ill. 2d at 452-53 (declining to apply distraction exception where the “record does not indicate that plaintiffs in the instant cases were distracted or forgetful of the lake’s existence when they decided to dive off the seawalls”). Accord Belluomini, 346 Ill. App. 3d at 695; True v. Greenwood Manor West, Inc., 316 Ill. App. 3d 676, 680 (2000). Here, the only distraction identified by plaintiff is that her attention was fixed on the door and steps of the clinic. Although the record supports that plaintiff was, in fact, looking in that direction, rather than at the defective sidewalk, we conclude that the mere fact of looking elsewhere does not constitute a distraction.",
+      "text_sha256": "45df7a0524bd370e305ff0d8d9333a1ce6a79ded2987bda9fb6ff5b21fc4ea4e",
+      "publisher_sha256": "4b6ca52894fa2078b224a6c5c08e76b730921ef91c3640120cb4d9884792deac",
+      "retrieved_at": "2026-11-23T20:46:03.135765+00:00",
+      "language": "en",
+      "authority_type": "opinion",
+      "currentness": "historical",
+      "court": "Supreme Court of Illinois",
+      "decision_date": "2014-09-18",
+      "opinion_role": "majority",
+      "edition": "Court-published opinion of 2014-09-18",
+      "scope_notes": "Distraction exception to the open-and-obvious rule in a sidewalk-defect negligence action on summary judgment. Subsequent treatment has not been verified.",
+      "procedural_posture": "Review of summary judgment in a municipal sidewalk-defect negligence action."
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "source_id": "US-IL:fault:fbd9d5fc8926",
+    "passage_selector": "c514fc03864b70416099306052de79",
+    "currentness": "historical",
+    "qualification": "This opinion discusses the bar in the 2008 version of 735 ILCS 5/2-1116."
+  }
+}

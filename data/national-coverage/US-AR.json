@@ -1,0 +1,920 @@
+{
+  "jurisdiction": "US-AR",
+  "version": "1",
+  "sources": {
+    "US-AR:statutes:d7c6bc22a087": {
+      "category": "statutes",
+      "title": "Arkansas Code",
+      "url": "http://www.lexisnexis.com/hottopics/arcode/Default.asp",
+      "directory": "codes",
+      "locator": "Arkansas"
+    },
+    "US-AR:constitution:d7c6bc22a087": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.lexisnexis.com/hottopics/arcode/Default.asp",
+      "directory": "codes",
+      "locator": "Arkansas"
+    },
+    "US-AR:legislature:ec519ca8ccad": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.arkleg.state.ar.us/assembly/2015/2015R/Pages/Home.aspx",
+      "directory": "codes",
+      "locator": "Arkansas"
+    },
+    "US-AR:labor_agency:51cb5b6dc6bf": {
+      "category": "labor_agency",
+      "title": "www.labor.arkansas.gov",
+      "url": "https://www.labor.arkansas.gov/",
+      "directory": "labor",
+      "locator": "Arkansas"
+    },
+    "US-AR:business_registration:62a5263b35ad": {
+      "category": "business_registration",
+      "title": "Arkansas Secretary of State",
+      "url": "https://www.sos.arkansas.gov/business-commercial-services-bcs",
+      "directory": "business",
+      "locator": "Arkansas"
+    },
+    "US-AR:commercial_code:5965eb0d8ace": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code-Title 4, Subtitle 1",
+      "url": "https://www.lexisnexis.com/hottopics/arcode/",
+      "directory": "ucc",
+      "locator": "Arkansas"
+    },
+    "US-AR:civil_rules:5965eb0d8ace": {
+      "category": "civil_rules",
+      "title": "Civil Procedure Generally-Title 16, Subtitle 5",
+      "url": "https://www.lexisnexis.com/hottopics/arcode/",
+      "directory": "procedure",
+      "locator": "Arkansas"
+    },
+    "US-AR:consumer_agency:a54b7e8a8df9": {
+      "category": "consumer_agency",
+      "title": "Arkansas (AR)",
+      "url": "https://arkansasag.gov/divisions/public-protection/consumer-protection/",
+      "directory": "consumer",
+      "locator": "Arkansas (AR)"
+    },
+    "US-AR:judiciary:e99e368799aa": {
+      "category": "judiciary",
+      "title": "Judiciary Homepage",
+      "url": "https://www.arcourts.gov/",
+      "directory": "doj-AR",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-AR:court_directory:55b5a424c7e3": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.arcourts.gov/courts/supreme-court",
+      "directory": "doj-AR",
+      "locator": "Supreme Court"
+    },
+    "US-AR:court_directory:5e281bce1f71": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "https://www.arcourts.gov/courts/court-of-appeals",
+      "directory": "doj-AR",
+      "locator": "Court of Appeals"
+    },
+    "US-AR:court_directory:52fd13ab0239": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "https://www.arcourts.gov/courts/circuit-courts",
+      "directory": "doj-AR",
+      "locator": "Circuit Courts"
+    },
+    "US-AR:court_directory:586268837efe": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "https://www.arcourts.gov/courts/district-courts",
+      "directory": "doj-AR",
+      "locator": "District Courts"
+    },
+    "US-AR:court_directory:749f7818fb57": {
+      "category": "court_directory",
+      "title": "City Courts",
+      "url": "https://www.arcourts.gov/content/city-courts",
+      "directory": "doj-AR",
+      "locator": "City Courts"
+    },
+    "US-AR:court_directory:d5acd8ef7211": {
+      "category": "court_directory",
+      "title": "Drug Court",
+      "url": "https://www.arcourts.gov/courts/circuit-courts/drug-court-programs",
+      "directory": "doj-AR",
+      "locator": "Drug Court"
+    },
+    "US-AR:court_rules:0322455cc450": {
+      "category": "court_rules",
+      "title": "Court Rules",
+      "url": "https://opinions.arcourts.gov/ark/cr/en/nav_date.do",
+      "directory": "doj-AR",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-AR:forms:e1488efffab3": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://www.arcourts.gov/forms-and-publications/court-forms",
+      "directory": "doj-AR",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-AR:forms:641f3a55aed0": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "https://www.arcourts.gov/forms-and-publications",
+      "directory": "doj-AR",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-AR:statutes:94476fd4e249": {
+      "category": "statutes",
+      "title": "Code of Arkansas",
+      "url": "https://www.arkleg.state.ar.us/ArkansasLaw/",
+      "directory": "doj-AR",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-AR:regulations:e54acc58f3b3": {
+      "category": "regulations",
+      "title": "The Arkansas Register",
+      "url": "https://www.sos.arkansas.gov/rules-regulations/arkansas-register/",
+      "directory": "doj-AR",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-AR:pi_limitations:167166aa1173": {
+      "category": "pi_limitations",
+      "title": "Ark. Code Ann. § 16-56-105",
+      "url": "https://arkleg.state.ar.us/",
+      "directory": "limitations",
+      "locator": "personalInjury"
+    },
+    "US-AR:written_contract_limitations:167166aa1173": {
+      "category": "written_contract_limitations",
+      "title": "Ark. Code Ann. § 16-56-111",
+      "url": "https://arkleg.state.ar.us/",
+      "directory": "limitations",
+      "locator": "writtenContract"
+    },
+    "US-AR:oral_contract_limitations:167166aa1173": {
+      "category": "oral_contract_limitations",
+      "title": "Ark. Code Ann. § 16-56-105(1), (3)",
+      "url": "https://arkleg.state.ar.us/",
+      "directory": "limitations",
+      "locator": "oralContract"
+    },
+    "US-AR:small_claims:87dbc87f25f3": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://arcourts.gov/courts/district-courts",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://arcourts.gov/courts/district-courts",
+        "retrieved_at": "2026-11-17T19:41:33.541163+00:00",
+        "http_status": "200",
+        "sha256": "845b472a8f88e4619ad1bb39f830d71d327ac29587e68aae8b11e0e236989213",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AR:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 26"
+    },
+    "US-AR:consumerLaw:2fbdc9bc7092": {
+      "title": "Ark. Code Ann. § 4-88-101 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.arkleg.state.ar.us/ArkansasLaw/ArkansasCode/",
+      "directory": "consumer_statutes_index",
+      "locator": "Ark. Code Ann. § 4-88-101 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-AR:automated_contract_formation:d8f1d9eb7dc0": {
+      "category": "automated_contract_formation",
+      "title": "Ark. Acts 2001, Act 905, § 14",
+      "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2001%2FPublic%2FACT905.pdf",
+      "locator": "Ark. Acts 2001, Act 905, § 14",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:43:21.496850+00:00",
+        "sha256": "3d87b91edc42d471c6efae71ab726e908a3df2b8c05bf2fc42c87b58fd348a24"
+      }
+    },
+    "US-AR:fault:02a012887ade": {
+      "category": "fault",
+      "title": "1991 Ark. Acts 663, § 1 (Ark. Code Ann. § 16-64-122(a)–(b))",
+      "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F1991%2FPublic%2F663.pdf",
+      "locator": "1991 Ark. Acts 663, § 1 (Ark. Code Ann. § 16-64-122(a)–(b))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:25:15.606937+00:00",
+        "sha256": "6794209744e891e3fb7537e942b70de1c296c5da319a531da5c2b395af278f46"
+      }
+    },
+    "US-AR:fault:8d259b378465": {
+      "category": "fault",
+      "title": "2023 Ark. Acts 354, § 2 (Ark. Code Ann. § 16-118-109(g))",
+      "url": "https://arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2023R%2FPublic%2FACT354.pdf",
+      "locator": "2023 Ark. Acts 354, § 2 (Ark. Code Ann. § 16-118-109(g))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:25:15.746813+00:00",
+        "sha256": "e4d506b2e9f50ee6ce25d3730fedf87831bb8d31a4d6a6abeb8ab89bc18a15bd"
+      }
+    },
+    "US-AR:pi_limitations:ed4cbd23e1c1": {
+      "category": "pi_limitations",
+      "title": "Shelter Mutual Insurance Co. v. Nash, 357 Ark. 581 (2004)",
+      "url": "https://opinions.arcourts.gov/ark/supremecourt/en/item/262881/index.do?iframe=true",
+      "locator": "Shelter Mutual Insurance Co. v. Nash, 357 Ark. 581 (2004)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:49:45.764807+00:00",
+        "sha256": "d986fcbd85a0fc2b2030bb6b4d7c66c6bcbfd9329d000e5b4662c8a54ce7fc76"
+      }
+    },
+    "US-AR:contract_formation:9ef844c5754c": {
+      "category": "contract_formation",
+      "title": "The Money Place, LLC v. Barnes, 349 Ark. 411 (2002)",
+      "url": "https://opinions.arcourts.gov/ark/supremecourt/en/item/247256/index.do?iframe=true",
+      "locator": "The Money Place, LLC v. Barnes, 349 Ark. 411 (2002)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:49:46.354046+00:00",
+        "sha256": "400e727b671ca1a90880fd2544f84610d03df71971e1e91591b8763fc24610cb"
+      }
+    },
+    "US-AR:consumerLaw:e8f2f161f102": {
+      "category": "consumerLaw",
+      "title": "1995 Ark. Acts 1306, § 1 (Ark. Code Ann. § 4-88-107(a)(1)–(2))",
+      "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F1995%2FPublic%2F1306.pdf",
+      "locator": "1995 Ark. Acts 1306, § 1 (Ark. Code Ann. § 4-88-107(a)(1)–(2))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:20:53.908577+00:00",
+        "sha256": "c5449bb2ef008293c0294f6e0de42f8530e177daa556cd6ba4d7170c3f501b37"
+      }
+    },
+    "US-AR:wageLaw:1cf648e00ff7": {
+      "category": "wageLaw",
+      "title": "2019 Ark. Acts 853, § 7 (Ark. Code Ann. § 11-4-405)",
+      "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2019R%2FPublic%2FACT853.pdf",
+      "locator": "2019 Ark. Acts 853, § 7 (Ark. Code Ann. § 11-4-405)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:42:34.458091+00:00",
+        "sha256": "0513291ba2f254c1deb92f09a2e5937bc14f69d02941167369392dcad7de3029"
+      }
+    },
+    "US-AR:response:7254802ac817": {
+      "category": "response",
+      "title": "Ark. R. Civ. P. 12(a)(1) (2018 Ark. 239)",
+      "url": "https://opinions.arcourts.gov/ark/supremecourt/en/item/311758/index.do?iframe=true",
+      "locator": "Ark. R. Civ. P. 12(a)(1) (2018 Ark. 239)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:48:14.184406+00:00",
+        "sha256": "b6b45efc7e068301f4ef208e9c6e7e9d3f95617c08dc2bf199692ce85dbf120f"
+      }
+    },
+    "US-AR:negligence_elements:2c85a83bfbf5": {
+      "category": "negligence_elements",
+      "title": "Summerfield v. Southeastern Freight Lines, Inc., 2024 Ark. App. 326",
+      "url": "https://opinions.arcourts.gov/ark/courtofappeals/en/item/522807/index.do?iframe=true",
+      "locator": "Summerfield v. Southeastern Freight Lines, Inc., 2024 Ark. App. 326",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:54:38.655753+00:00",
+        "sha256": "309d3162c479b8e5b2c501fb90f7f2b0b4deca0eb160efd1a17701e33adeb440"
+      }
+    },
+    "US-AR:debtLaw:f93fdcc364cf": {
+      "category": "debtLaw",
+      "title": "Ark. Code Ann. § 17-24-101",
+      "url": "https://labor.arkansas.gov/wp-content/uploads/ASBCA-statute-Ark-FDCPA-rev-2023.pdf",
+      "locator": "Ark. Code Ann. § 17-24-101",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:15:50.257783+00:00",
+        "sha256": "6f001e0a0ad4350bca31401305e569d436aef5706031da7d1b3bc73855ebbb3d"
+      }
+    },
+    "US-AR:debtLaw:c39cedb6d31d": {
+      "category": "debtLaw",
+      "title": "Ark. Code Ann. § 17-24-301",
+      "url": "https://labor.arkansas.gov/wp-content/uploads/ASBCA-statute-Ark-FDCPA-rev-2023.pdf",
+      "locator": "Ark. Code Ann. § 17-24-301",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:15:50.257783+00:00",
+        "sha256": "6f001e0a0ad4350bca31401305e569d436aef5706031da7d1b3bc73855ebbb3d"
+      }
+    },
+    "US-AR:debtLaw:dfb5da6db307": {
+      "category": "debtLaw",
+      "title": "Ark. Code Ann. § 17-24-507(a), (b)(1)",
+      "url": "https://labor.arkansas.gov/wp-content/uploads/ASBCA-statute-Ark-FDCPA-rev-2023.pdf",
+      "locator": "Ark. Code Ann. § 17-24-507(a), (b)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:15:50.257783+00:00",
+        "sha256": "6f001e0a0ad4350bca31401305e569d436aef5706031da7d1b3bc73855ebbb3d"
+      }
+    },
+    "US-AR:small_claims:894f4427a413": {
+      "category": "small_claims",
+      "title": "Ark. Dist. Ct. R. 10(a)(1)",
+      "url": "https://opinions.arcourts.gov/ark/supremecourt/en/260210/1/document.do",
+      "locator": "Ark. Dist. Ct. R. 10(a)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:35:28.850797+00:00",
+        "sha256": "5f602446dc536fdec3e9b897bd381c2b6501208ff208c13e1a741d7b25aedf8d"
+      }
+    },
+    "US-AR:small_claims:18cc27e4abc0": {
+      "category": "small_claims",
+      "title": "Ark. Dist. Ct. R. 10(a)(1), summons and notice to defendant",
+      "url": "https://opinions.arcourts.gov/ark/supremecourt/en/260210/1/document.do",
+      "locator": "Ark. Dist. Ct. R. 10(a)(1), summons and notice to defendant",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:35:28.850797+00:00",
+        "sha256": "5f602446dc536fdec3e9b897bd381c2b6501208ff208c13e1a741d7b25aedf8d"
+      }
+    },
+    "US-AR:deposit:9e898f26d603": {
+      "category": "deposit",
+      "title": "2009 Ark. Acts 559, § 1 (Ark. Code § 18-16-305)",
+      "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2009%2FPublic%2FACT559.pdf",
+      "locator": "2009 Ark. Acts 559, § 1 (Ark. Code § 18-16-305)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:31:19.992043+00:00",
+        "sha256": "4cd16be6edcb5f5582f4ee3a36f1f207a8d639750bc68b869e753d49df7094b0"
+      }
+    },
+    "US-AR:deposit:934ebdb1ce5e": {
+      "category": "deposit",
+      "title": "2009 Ark. Acts 559, § 2 (Ark. Code § 18-17-501)",
+      "url": "https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2009%2FPublic%2FACT559.pdf",
+      "locator": "2009 Ark. Acts 559, § 2 (Ark. Code § 18-17-501)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:31:19.992043+00:00",
+        "sha256": "4cd16be6edcb5f5582f4ee3a36f1f207a8d639750bc68b869e753d49df7094b0"
+      }
+    },
+    "US-AR:commencement:43ef5b20fad0": {
+      "category": "commencement",
+      "title": "Ark. R. Civ. P. 3(a)–(b) (2015 Ark. 89 republication)",
+      "url": "https://cases.justia.com/arkansas/supreme-court/2015-2015-ark-89.pdf?ts=1424977223",
+      "locator": "Ark. R. Civ. P. 3(a)–(b) (2015 Ark. 89 republication)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:30.577576+00:00",
+        "sha256": "aa6e22ae78144e39acfe65e4fa3172ec5a742973ef882fb33b6329e3842b246b"
+      }
+    },
+    "US-AR:summons_issuance:598668dfe170": {
+      "category": "summons_issuance",
+      "title": "Ark. R. Civ. P. 4(a)–(b) (2018 Ark. 239)",
+      "url": "https://cases.justia.com/arkansas/supreme-court/2018-2018-ark-239.pdf?ts=1529598835",
+      "locator": "Ark. R. Civ. P. 4(a)–(b) (2018 Ark. 239)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:50:37.631038+00:00",
+        "sha256": "1fffab0dc170dccf74d55d572eb770ed6e31210b3689c71d4d1d7fd864d6e79e"
+      }
+    },
+    "US-AR:service:645773b0dd5c": {
+      "category": "service",
+      "title": "Ark. R. Civ. P. 4(c) (2018 Ark. 239)",
+      "url": "https://cases.justia.com/arkansas/supreme-court/2018-2018-ark-239.pdf?ts=1529598835",
+      "locator": "Ark. R. Civ. P. 4(c) (2018 Ark. 239)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:50:37.631038+00:00",
+        "sha256": "1fffab0dc170dccf74d55d572eb770ed6e31210b3689c71d4d1d7fd864d6e79e"
+      }
+    },
+    "US-AR:service_proof:8236c6c7ebf3": {
+      "category": "service_proof",
+      "title": "Ark. R. Civ. P. 4(d) (2018 Ark. 239)",
+      "url": "https://cases.justia.com/arkansas/supreme-court/2018-2018-ark-239.pdf?ts=1529598835",
+      "locator": "Ark. R. Civ. P. 4(d) (2018 Ark. 239)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:50:37.631038+00:00",
+        "sha256": "1fffab0dc170dccf74d55d572eb770ed6e31210b3689c71d4d1d7fd864d6e79e"
+      }
+    },
+    "US-AR:service:eac9b83dc5d9": {
+      "category": "service",
+      "title": "Ark. R. Civ. P. 4(f)(1) (2018 Ark. 239)",
+      "url": "https://cases.justia.com/arkansas/supreme-court/2018-2018-ark-239.pdf?ts=1529598835",
+      "locator": "Ark. R. Civ. P. 4(f)(1) (2018 Ark. 239)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:50:37.631038+00:00",
+        "sha256": "1fffab0dc170dccf74d55d572eb770ed6e31210b3689c71d4d1d7fd864d6e79e"
+      }
+    },
+    "US-AR:service_business_entity:147f7045c206": {
+      "category": "service_business_entity",
+      "title": "Ark. R. Civ. P. 4(f)(5)–(6) (2018 Ark. 239)",
+      "url": "https://cases.justia.com/arkansas/supreme-court/2018-2018-ark-239.pdf?ts=1529598835",
+      "locator": "Ark. R. Civ. P. 4(f)(5)–(6) (2018 Ark. 239)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:50:37.631038+00:00",
+        "sha256": "1fffab0dc170dccf74d55d572eb770ed6e31210b3689c71d4d1d7fd864d6e79e"
+      }
+    },
+    "US-AR:service_time_limit:b64d4bad37cd": {
+      "category": "service_time_limit",
+      "title": "Ark. R. Civ. P. 4(i) (2018 Ark. 239)",
+      "url": "https://cases.justia.com/arkansas/supreme-court/2018-2018-ark-239.pdf?ts=1529598835",
+      "locator": "Ark. R. Civ. P. 4(i) (2018 Ark. 239)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:50:37.631038+00:00",
+        "sha256": "1fffab0dc170dccf74d55d572eb770ed6e31210b3689c71d4d1d7fd864d6e79e"
+      }
+    },
+    "US-AR:written_contract_limitations:b4817268ea38": {
+      "category": "written_contract_limitations",
+      "title": "1997 Ark. Acts 1164, § 2 (Ark. Code Ann. § 16-56-111)",
+      "url": "https://arkleg.state.ar.us/Home/FTPDocument?path=%2FActs%2F1997%2FPublic%2F1164.pdf",
+      "locator": "1997 Ark. Acts 1164, § 2 (Ark. Code Ann. § 16-56-111)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:55:58.319749+00:00",
+        "sha256": "d01efad748453a0b6706b3400590cb30bc13b1b05f496dc99d8394992e1070d3"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-AR:court:b12bf227704f",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-AR:court_directory:55b5a424c7e3"
+    },
+    {
+      "id": "US-AR:court:f24d45f831f5",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-AR:court_directory:5e281bce1f71"
+    },
+    {
+      "id": "US-AR:court:b4bdfca3b6b4",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-AR:court_directory:52fd13ab0239"
+    },
+    {
+      "id": "US-AR:court:d3e87deb5798",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-AR:court_directory:586268837efe"
+    },
+    {
+      "id": "US-AR:court:8905d3cc81aa",
+      "name": "City Courts",
+      "level": "trial_directory",
+      "source_id": "US-AR:court_directory:749f7818fb57"
+    },
+    {
+      "id": "US-AR:court:bdf91e7771f7",
+      "name": "Drug Court",
+      "level": "trial_directory",
+      "source_id": "US-AR:court_directory:d5acd8ef7211"
+    },
+    {
+      "id": "US-AR:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-AR:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-AR:court:3c9c83e81fef",
+      "name": "District",
+      "level": "limited_trial",
+      "source_id": "US-AR:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-AR:court:c4a7a7b35c28",
+      "name": "City",
+      "level": "limited_trial",
+      "source_id": "US-AR:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Ark. Code Ann. § 16-56-105",
+      "source_id": "US-AR:pi_limitations:167166aa1173",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Ark. Code Ann. § 16-56-111",
+      "source_id": "US-AR:written_contract_limitations:167166aa1173",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Ark. Code Ann. § 16-56-105(1), (3)",
+      "source_id": "US-AR:oral_contract_limitations:167166aa1173",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Ark. Code § 18-17-201. Territorial application",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Ark. Code Ann. § 4-88-101 et seq.",
+      "source_id": "US-AR:consumerLaw:2fbdc9bc7092",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "18272de2d3b69b289dfcec178e4bf2": {
+      "source_id": "US-AR:automated_contract_formation:d8f1d9eb7dc0",
+      "authority_type": "statute",
+      "citation": "Ark. Acts 2001, Act 905, § 14",
+      "text": "In an automated transaction, the following rules apply: (1) A contract may be formed by the interaction of electronic agents of the parties, even if no individual was aware of or reviewed the electronic agents’ actions or the resulting terms and agreements. (2) A contract may be formed by the interaction of an electronic agent and an individual, acting on the individual’s own behalf or for another person, including by an interaction in which the individual performs actions that the individual is free to refuse to perform and which the individual knows or has reason to know will cause the electronic agent to complete the transaction or performance. (3) The terms of the contract are determined by the substantive law applicable to it.",
+      "text_sha256": "04e3492db94d21f10eabb3e5f0b480425d0885c1b51f1a9fb519074706835579",
+      "publisher_sha256": "3d87b91edc42d471c6efae71ab726e908a3df2b8c05bf2fc42c87b58fd348a24",
+      "retrieved_at": "2026-11-18T20:43:21.496850+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Approved March 19, 2001"
+    },
+    "5db561d6edffbb01fe6df51f6f5985": {
+      "source_id": "US-AR:fault:02a012887ade",
+      "authority_type": "statute",
+      "citation": "1991 Ark. Acts 663, § 1 (Ark. Code Ann. § 16-64-122(a)–(b))",
+      "text": "(a) In all actions for damages for personal injuries or wrongful death or injury to property in which recovery is predicated upon fault, liability shall be determined by comparing the fault chargeable to a claiming party with the fault chargeable to the party or parties from whom the claiming party seeks to recover damages. (b)(1) If the fault chargeable to a party claiming damages is of a lesser degree than the fault chargeable to the party or parties from whom the claiming party seeks to recover damages, then the claiming party is entitled to recover the amount of his damages after they have been diminished in proportion to the degree of his own fault. (2) If the fault chargeable to a party claiming damages is equal to or greater in degree than any fault chargeable to the party or parties from whom the claiming party seeks to recover damages, then the claiming party is not entitled to recover such damages.",
+      "text_sha256": "036a77571bdb8d3a2c157a475c4f3a2d937b727ec3185cc15f75fa5cacfedc6a",
+      "publisher_sha256": "6794209744e891e3fb7537e942b70de1c296c5da319a531da5c2b395af278f46",
+      "retrieved_at": "2026-11-20T15:25:15.606937+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "1991 Arkansas Acts"
+    },
+    "b213f0c14241bdd350f8f2938d7d8b": {
+      "source_id": "US-AR:fault:8d259b378465",
+      "authority_type": "statute",
+      "citation": "2023 Ark. Acts 354, § 2 (Ark. Code Ann. § 16-118-109(g))",
+      "text": "(g) In a civil action brought under this section: (1) Fault of a victim of human trafficking shall not be apportioned against the victim of human trafficking; and (2) The comparative fault provisions under § 16-64-122 do not apply.",
+      "text_sha256": "c6e83faf35729d31cf3c1deccdaf896225f3b93e66a8d5d7447f77e4e32ef209",
+      "publisher_sha256": "e4d506b2e9f50ee6ce25d3730fedf87831bb8d31a4d6a6abeb8ab89bc18a15bd",
+      "retrieved_at": "2026-11-20T15:25:15.746813+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2023 Arkansas Acts"
+    },
+    "13a33fbb3d9d0d49784dab1562e7ec": {
+      "source_id": "US-AR:pi_limitations:ed4cbd23e1c1",
+      "authority_type": "opinion",
+      "citation": "Shelter Mutual Insurance Co. v. Nash, 357 Ark. 581 (2004)",
+      "text": "An action for personal injury, however, must be brought within three years after the cause of action accrues. Ark. Code Ann. § 16-56-105 (Supp. 2001).",
+      "text_sha256": "891a47561dbfe6fcce8699c229727f70cc9d1e4cac35625a87ac1f30f288b281",
+      "publisher_sha256": "d986fcbd85a0fc2b2030bb6b4d7c66c6bcbfd9329d000e5b4662c8a54ce7fc76",
+      "retrieved_at": "2026-11-20T15:49:45.764807+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court-reported opinion of 2004-06-03",
+      "court": "Supreme Court of Arkansas",
+      "decision_date": "2004-06-03",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of a certified question arising in an underinsured motorist contract dispute. The court distinguished personal-injury and written-contract statutes."
+    },
+    "4b2cb3ccfd87171a80e2b5399f9779": {
+      "source_id": "US-AR:contract_formation:9ef844c5754c",
+      "authority_type": "opinion",
+      "citation": "The Money Place, LLC v. Barnes, 349 Ark. 411 (2002)",
+      "text": "The essential elements of a contract are (1) competent parties, (2) subject matter, (3) legal consideration, (4) mutual agreement, and (5) mutual obligations.",
+      "text_sha256": "755ae746c45a3a409db9e622ffabe449b422437447742fb077ebdcf6b489139a",
+      "publisher_sha256": "400e727b671ca1a90880fd2544f84610d03df71971e1e91591b8763fc24610cb",
+      "retrieved_at": "2026-11-20T15:49:46.354046+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court-reported opinion of 2002-06-20",
+      "court": "Supreme Court of Arkansas",
+      "decision_date": "2002-06-20",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from denial of a motion to compel arbitration. The court discussed ordinary formation elements in reviewing the asserted agreement."
+    },
+    "b1a77d1762bc9da3dcb7342ae6ad13": {
+      "source_id": "US-AR:consumerLaw:e8f2f161f102",
+      "authority_type": "statute",
+      "citation": "1995 Ark. Acts 1306, § 1 (Ark. Code Ann. § 4-88-107(a)(1)–(2))",
+      "text": "(a) Deceptive and unconscionable trade practices made unlawful and prohibited by this chapter include, but are not limited to, the following: (1) Knowingly making a false representation as to the characteristics, ingredients, uses, benefits, alterations, source, sponsorship, approval, or certification of goods or services, or as to whether goods are original or new, or of a particular standard, quality, grade, style, or model; (2) Disparaging the goods, services, or business of another by false or misleading representation of fact;",
+      "text_sha256": "9363791a7a9edd7f145291f10fb3aecbbdadd85f59ae2e472b756a5ec3a5607c",
+      "publisher_sha256": "c5449bb2ef008293c0294f6e0de42f8530e177daa556cd6ba4d7170c3f501b37",
+      "retrieved_at": "2026-11-20T16:20:53.908577+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "1995 Arkansas Acts"
+    },
+    "4c768853ab5d0525c9cfc7856fa28c": {
+      "source_id": "US-AR:wageLaw:1cf648e00ff7",
+      "authority_type": "statute",
+      "citation": "2019 Ark. Acts 853, § 7 (Ark. Code Ann. § 11-4-405)",
+      "text": "An employer that discharges an employee is required to pay all wages due by the next regular payday. (b) An employer that fails to make the payment required under subsection (a) of this section within seven (7) days of the next regular payday shall owe the employee double the wages due.",
+      "text_sha256": "8762042d84e00602ae2ff0a88b0d6a97a1349eedca4c07449570d92caee09ba9",
+      "publisher_sha256": "0513291ba2f254c1deb92f09a2e5937bc14f69d02941167369392dcad7de3029",
+      "retrieved_at": "2026-11-20T17:42:34.458091+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2019 enacted Arkansas Acts text"
+    },
+    "2c9bbd692eae3cbd8b2c000d5f5148": {
+      "source_id": "US-AR:response:7254802ac817",
+      "authority_type": "court_rule",
+      "citation": "Ark. R. Civ. P. 12(a)(1) (2018 Ark. 239)",
+      "text": "(1) A defendant shall file his or her answer within 30 days after the service of summons and complaint upon him or her. A defendant served by warning order under Rule 4(g)(3) or (4) shall file an answer within 30 days from the date of first publication or posting of the warning order. A defendant incarcerated in any jail, penitentiary, or other correctional facility in this state shall file an answer within 60 days after service. A party served with a pleading stating a cross-claim or counterclaim against him or her shall file an answer or reply thereto within 30 days after service upon the party. The court may, upon motion of a party, extend the time for filing any responsive pleading.",
+      "text_sha256": "f188cd29587c890ab3b5afac61e49943d4628f84c340e9b1e379de509cdd15d7",
+      "publisher_sha256": "b6b45efc7e068301f4ef208e9c6e7e9d3f95617c08dc2bf199692ce85dbf120f",
+      "retrieved_at": "2026-11-20T17:48:14.184406+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas Supreme Court order adopting rule text effective January 1, 2019",
+      "effective_from": "2019-01-01"
+    },
+    "ce9502740e5d3388919fcb89ed414d": {
+      "source_id": "US-AR:negligence_elements:2c85a83bfbf5",
+      "authority_type": "opinion",
+      "citation": "Summerfield v. Southeastern Freight Lines, Inc., 2024 Ark. App. 326",
+      "text": "To prevail on a claim of negligence, a plaintiff “must prove that the defendant owed a duty to the plaintiff, that the defendant breached the duty, and that the breach was the proximate cause of the plaintiff’s injuries.” Duran v. Sw. Ark. Elec. Coop. Corp., 2018 Ark. 33, at 6, 537 S.W.3d 722, 726.",
+      "text_sha256": "43853ea3bc9ec4842092d6f0390ae61dfa4094c3c9ba67f98276798b564280ad",
+      "publisher_sha256": "309d3162c479b8e5b2c501fb90f7f2b0b4deca0eb160efd1a17701e33adeb440",
+      "retrieved_at": "2026-11-20T17:54:38.655753+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2024-05-22",
+      "court": "Arkansas Court of Appeals",
+      "decision_date": "2024-05-22",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a grant of summary judgment on negligence claims arising from a collision with a tractor trailer. The court affirmed."
+    },
+    "6d32b87d97661ca7d0ff6c7a9f2a6e": {
+      "source_id": "US-AR:debtLaw:f93fdcc364cf",
+      "authority_type": "statute",
+      "citation": "Ark. Code Ann. § 17-24-101",
+      "text": "As used in this chapter, unless the context otherwise requires, “collection agency” means any person, partnership, corporation, association, limited liability corporation, or firm that: (1) Engages in the collection of delinquent accounts, bills, or other forms of indebtedness owed or due or asserted to be owed or due to another; (2) Uses a fictitious name or any name other than its own to collect its own accounts receivable; (3) Solicits claims for collection; or (4) Purchases and attempts to collect delinquent accounts or bills.",
+      "text_sha256": "628a34b59e0336b2e08825e3a9af21196af00456de0df9fb95c6a0be61119e41",
+      "publisher_sha256": "6f001e0a0ad4350bca31401305e569d436aef5706031da7d1b3bc73855ebbb3d",
+      "retrieved_at": "2026-11-20T23:15:50.257783+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas State Board of Collection Agencies code compilation, through the 2023 session"
+    },
+    "1c5a3e3f3f45c6bdddfdca09c38a90": {
+      "source_id": "US-AR:debtLaw:c39cedb6d31d",
+      "authority_type": "statute",
+      "citation": "Ark. Code Ann. § 17-24-301",
+      "text": "Unless licensed by the State Board of Collection Agencies under this subchapter it is unlawful to: (1) Engage in the collection of delinquent accounts, bills, or other forms of indebtedness; (2) Use a fictitious name or any name other than their own in the collection of their own accounts receivable; (3) Solicit claims for collection; or (4) Purchase and attempt to collect delinquent accounts or bills.",
+      "text_sha256": "282a87ac029e52afe4d806762b177c600072a1656ac101584f5a0c74a4a85443",
+      "publisher_sha256": "6f001e0a0ad4350bca31401305e569d436aef5706031da7d1b3bc73855ebbb3d",
+      "retrieved_at": "2026-11-20T23:15:50.257783+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas State Board of Collection Agencies code compilation, through the 2023 session"
+    },
+    "89b707dbd4572468414e882d1ed2ea": {
+      "source_id": "US-AR:debtLaw:dfb5da6db307",
+      "authority_type": "statute",
+      "citation": "Ark. Code Ann. § 17-24-507(a), (b)(1)",
+      "text": "(a) A debt collector may not use unfair or unconscionable means to collect or attempt to collect a debt. (b) Without limiting the general application of subsection (a) of this section, the following actions of a debt collector violate this section: (1) The collection of an amount, including interest, a fee, a charge, or an expense incidental to the principal obligation unless the amount is expressly authorized by the agreement creating the debt or permitted by law;",
+      "text_sha256": "cfc7e5e3aa5337ede8ae02434185cc3beb69ab55ed3d3fb161cc76ab9b95f644",
+      "publisher_sha256": "6f001e0a0ad4350bca31401305e569d436aef5706031da7d1b3bc73855ebbb3d",
+      "retrieved_at": "2026-11-20T23:15:50.257783+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas State Board of Collection Agencies code compilation, through the 2023 session"
+    },
+    "8085d256d1f1a3baca9819834f21c5": {
+      "source_id": "US-AR:small_claims:894f4427a413",
+      "authority_type": "court_rule",
+      "citation": "Ark. Dist. Ct. R. 10(a)(1)",
+      "text": "Actions in the small claims division of district court shall be commenced whenever the claimant or the personal representative of a deceased claimant shall file with the clerk of the court a claim in substantially the following form:",
+      "text_sha256": "0b3bd0c3e723747f0106cb7fc3154424b7ffc0e9967d338e85fea4f6873a9ec9",
+      "publisher_sha256": "5f602446dc536fdec3e9b897bd381c2b6501208ff208c13e1a741d7b25aedf8d",
+      "retrieved_at": "2026-11-21T03:35:28.850797+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas Supreme Court per curiam, 2011 Ark. 250, effective July 1, 2011",
+      "court": "Arkansas District Courts",
+      "effective_from": "2011-07-01"
+    },
+    "aa19ef275c4dc3e8e7be87e39c3050": {
+      "source_id": "US-AR:small_claims:18cc27e4abc0",
+      "authority_type": "court_rule",
+      "citation": "Ark. Dist. Ct. R. 10(a)(1), summons and notice to defendant",
+      "text": "You are hereby warned to file a written answer with the clerk of this court within thirty (30) days after you receive this claim and forward a copy to the plaintiff at the address above or a default judgment may be entered against you.",
+      "text_sha256": "f861346592d782a7a75309bc48a4a01d121005c9a8da095e04129b1e2282635f",
+      "publisher_sha256": "5f602446dc536fdec3e9b897bd381c2b6501208ff208c13e1a741d7b25aedf8d",
+      "retrieved_at": "2026-11-21T03:35:28.850797+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas Supreme Court per curiam, 2011 Ark. 250, effective July 1, 2011",
+      "court": "Arkansas District Courts",
+      "effective_from": "2011-07-01"
+    },
+    "a4b872b98317cfb6595e53faa0259b": {
+      "source_id": "US-AR:deposit:9e898f26d603",
+      "authority_type": "statute",
+      "citation": "2009 Ark. Acts 559, § 1 (Ark. Code § 18-16-305)",
+      "text": "(a)(1) Within sixty (60) days of termination of the tenancy, property or money held by the landlord as security shall be returned to the tenant. (2) However, the money may be applied to the payment of accrued unpaid rent and any damages which the landlord has suffered by reason of the tenant's noncompliance with the rental agreement, all as itemized by the landlord in a written notice delivered to the tenant, together with the remainder of the amount due sixty (60) days after termination of the tenancy and delivery of possession by the tenant. (b)(1) The landlord shall be deemed to have complied with subsection (a) of this section by mailing via first class mail the written notice and any payment required to the last known address of the tenant. (2) If the letter containing the payment is returned to the landlord and if the landlord is unable to locate the tenant after reasonable effort, then the payment shall become the property of the landlord one hundred eighty (180) days from the date the payment was mailed.",
+      "text_sha256": "e1a5f2848b5e3cd3ff8c4b19ffd0976f8d32ffb1fe447a77cfa4c8783e927767",
+      "publisher_sha256": "4cd16be6edcb5f5582f4ee3a36f1f207a8d639750bc68b869e753d49df7094b0",
+      "retrieved_at": "2026-11-21T04:31:19.992043+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Act 559 of 2009, approved March 24, 2009, effective July 31, 2009",
+      "effective_from": "2009-07-31",
+      "publisher_member": "enacted Act 559, PDF pp. 1–2; visual review of additions and deletions"
+    },
+    "424e62bfbaaccdf600d18c4f3a608b": {
+      "source_id": "US-AR:deposit:934ebdb1ce5e",
+      "authority_type": "statute",
+      "citation": "2009 Ark. Acts 559, § 2 (Ark. Code § 18-17-501)",
+      "text": "Section 18-16-301 et seq. shall determine: (1) Whether a security deposit is required under this chapter; and (2) The rights, duties, and remedies of a landlord and tenant concerning a security deposit.",
+      "text_sha256": "a86dcf61a82805c8e530011e5caaba310e7a932f869f9d8de884067b7d7e87a8",
+      "publisher_sha256": "4cd16be6edcb5f5582f4ee3a36f1f207a8d639750bc68b869e753d49df7094b0",
+      "retrieved_at": "2026-11-21T04:31:19.992043+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Act 559 of 2009, approved March 24, 2009, effective July 31, 2009",
+      "effective_from": "2009-07-31",
+      "publisher_member": "enacted Act 559, PDF pp. 1–2; visual review of additions and deletions"
+    },
+    "0552d609897180a4bac4d120c67565": {
+      "source_id": "US-AR:commencement:43ef5b20fad0",
+      "authority_type": "court_rule",
+      "citation": "Ark. R. Civ. P. 3(a)–(b) (2015 Ark. 89 republication)",
+      "text": "(a) Commencement. A civil action is commenced by filing a complaint with the clerk of the court, who shall note thereon the date and precise time of filing. (b) Clerk. The term “clerk of the court” as used in these rules means the circuit clerk and, with respect to probate matters, any county clerk who serves as ex officio clerk of the probate division of the circuit court pursuant to Ark. Code Ann. § 14-14-502(b)(2)(B). In counties where the county clerk serves as the ex officio clerk of any division of the circuit court, the filing requirement shall be satisfied when the complaint is filed with either the circuit clerk or the county clerk.",
+      "text_sha256": "a708c99b9a4da5d0f14b94ae27df0d1996bf010545a58e49b0f8cfec62dd139e",
+      "publisher_sha256": "aa6e22ae78144e39acfe65e4fa3172ec5a742973ef882fb33b6329e3842b246b",
+      "retrieved_at": "2026-11-21T16:38:30.577576+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas Supreme Court Rule 3 republication, February 26, 2015",
+      "court": "Arkansas Circuit Courts",
+      "publisher_member": "Arkansas Supreme Court per curiam, February 26, 2015, PDF p. 2; excludes conditional medical-claim amendment"
+    },
+    "f722e820f27f30c6a47952d23c1214": {
+      "source_id": "US-AR:summons_issuance:598668dfe170",
+      "authority_type": "court_rule",
+      "citation": "Ark. R. Civ. P. 4(a)–(b) (2018 Ark. 239)",
+      "text": "(a) Issuance of Summons. Immediately on the filing of the complaint, the clerk shall issue a summons to the plaintiff or the plaintiff’s attorney, who shall deliver it for service to a person authorized by subdivision (c) of this rule to serve process. (b) Form of Summons. The summons shall be styled in the name of the court and issued under its seal, dated and signed by the clerk or a deputy clerk, and directed from the State of Arkansas to the defendant to be served. It shall contain: (1) in its caption, the names of the plaintiff and defendant or, if there are multiple parties, the names of the plaintiff and defendant listed first in the complaint; (2) the address of the defendant to be served, if known; (3) the name and address of the plaintiff’s attorney, if any, otherwise the address of the plaintiff; (4) the time within which these rules require that the defendant to be served must appear, file a responsive pleading or motion, and defend; and (5) notice that the defendant’s failure to appear, respond, and defend within the time allowed may result in entry of judgment by default against the defendant for the relief demanded in the complaint.",
+      "text_sha256": "82b23db99eef400e6a52c43c2ad7189f601128d979a1a964a2baa60f06493c75",
+      "publisher_sha256": "1fffab0dc170dccf74d55d572eb770ed6e31210b3689c71d4d1d7fd864d6e79e",
+      "retrieved_at": "2026-11-21T16:50:37.631038+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas Supreme Court Rule 4 adopted June 21, 2018, effective January 1, 2019",
+      "court": "Arkansas Circuit Courts",
+      "publisher_member": "Arkansas Supreme Court adopted Rule 4, printed pp. 2; adoption date at p. 1",
+      "effective_from": "2019-01-01"
+    },
+    "002bffa41f2494e26096aebc1115f6": {
+      "source_id": "US-AR:service:645773b0dd5c",
+      "authority_type": "court_rule",
+      "citation": "Ark. R. Civ. P. 4(c) (2018 Ark. 239)",
+      "text": "(c) Process: Defined; By Whom Served. (1) For purposes of this rule, the term “process” means the summons and a copy of the complaint, which shall be served together. The plaintiff or the plaintiff’s attorney shall furnish the person making service with as many copies as are necessary. (2) The following persons are authorized to serve process: (A) the sheriff of the county where the service is to be made, or his or her deputy, unless the sheriff is a party to the action; (B) any person appointed pursuant to Administrative Order No. 20 for the purpose of serving summons by either the court in which the action is filed or a court in the 3 county in which service is to be made; (C) any person authorized to serve process under the law of the place outside this state where service is made; and (D) in the event of service by mail or commercial delivery company pursuant to subdivision (g)(1) and (2) of this rule, the plaintiff or an attorney of record for the plaintiff.",
+      "text_sha256": "972b582e721d6e30d25c3646a0de61b8d0ed30959e91047e8c25bedce5d266e0",
+      "publisher_sha256": "1fffab0dc170dccf74d55d572eb770ed6e31210b3689c71d4d1d7fd864d6e79e",
+      "retrieved_at": "2026-11-21T16:50:37.631038+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas Supreme Court Rule 4 adopted June 21, 2018, effective January 1, 2019",
+      "court": "Arkansas Circuit Courts",
+      "publisher_member": "Arkansas Supreme Court adopted Rule 4, printed pp. 2–3; adoption date at p. 1",
+      "effective_from": "2019-01-01"
+    },
+    "300c8278a3d2aecc5a529259d04fd0": {
+      "source_id": "US-AR:service_proof:8236c6c7ebf3",
+      "authority_type": "court_rule",
+      "citation": "Ark. R. Civ. P. 4(d) (2018 Ark. 239)",
+      "text": "(d) Proof of Service. The person effecting service shall make proof of service to the clerk within the time during which the person served must respond to the summons. Failure to make proof of service, however, shall not affect the validity of service. (1) Proof of service may be made by executing a certificate of service contained in the same document as the summons. If service is made by a person other than a sheriff or his or her deputy, the certificate shall be sworn. If service has been by mail or commercial delivery company, the person making service shall attach a return receipt, envelope, affidavit, acknowledgment, or other writing required by subdivision (g)(1) and (2) of this rule. (2) If service is made by warning order, proof of service shall be made as provided in subdivision (g)(3) of this rule. (3) Proof of service in a foreign country, if effected pursuant to the provisions of a treaty or convention as provided in subdivision (h)(4) of this rule, shall be made in accordance with the applicable treaty or convention.",
+      "text_sha256": "9fc351b23c90f78d59d8ae56ed0510b6863cfab1efd56e8f3ddd5ce1102f91e5",
+      "publisher_sha256": "1fffab0dc170dccf74d55d572eb770ed6e31210b3689c71d4d1d7fd864d6e79e",
+      "retrieved_at": "2026-11-21T16:50:37.631038+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas Supreme Court Rule 4 adopted June 21, 2018, effective January 1, 2019",
+      "court": "Arkansas Circuit Courts",
+      "publisher_member": "Arkansas Supreme Court adopted Rule 4, printed pp. 3; adoption date at p. 1",
+      "effective_from": "2019-01-01"
+    },
+    "5f4e578d87670a6e67cb2fb371e765": {
+      "source_id": "US-AR:service:eac9b83dc5d9",
+      "authority_type": "court_rule",
+      "citation": "Ark. R. Civ. P. 4(f)(1) (2018 Ark. 239)",
+      "text": "(f) Personal Service Inside the State. Service of process shall be made inside the state as follows: (1) Natural Persons. If the defendant is a natural person at least 18 years of age or emancipated by court order, by: (A) delivering a copy of the process to the defendant personally, or if he or she refuses to receive it after the process server makes his or her purpose clear, by leaving the papers in close proximity to the defendant; 4 (B) leaving the process with any member of the defendant’s family at least 18 years of age at a place where the defendant resides; or (C) delivering the process to an agent authorized by appointment or by law to receive service of summons on the defendant’s behalf.",
+      "text_sha256": "9063d43546e8e2f9e95f35d6f4af015ff79e7a29195afbf2bf0d1ea84c0f268b",
+      "publisher_sha256": "1fffab0dc170dccf74d55d572eb770ed6e31210b3689c71d4d1d7fd864d6e79e",
+      "retrieved_at": "2026-11-21T16:50:37.631038+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas Supreme Court Rule 4 adopted June 21, 2018, effective January 1, 2019",
+      "court": "Arkansas Circuit Courts",
+      "publisher_member": "Arkansas Supreme Court adopted Rule 4, printed pp. 3–4; adoption date at p. 1",
+      "effective_from": "2019-01-01"
+    },
+    "d827b769fbed9d53b7e39ff30fec18": {
+      "source_id": "US-AR:service_business_entity:147f7045c206",
+      "authority_type": "court_rule",
+      "citation": "Ark. R. Civ. P. 4(f)(5)–(6) (2018 Ark. 239)",
+      "text": "(5) Corporations. Service on any corporation, including nonprofit corporations, professional corporations, and cooperatives, shall be on its registered agent for service of process, or the agent’s secretary or assistant; any officer of the corporation, or the officer’s secretary or assistant; a managing or general agent of the corporation, or the agent’s secretary or assistant; any agent authorized by appointment or by law to receive service of process; or as provided by an applicable statute. (6) Limited Liability Companies. Service on a limited liability company shall be on its registered agent for service of process, or the agent’s secretary or assistant; a manager of a limited liability company in which management is vested in managers rather than members, or the manager’s secretary or assistant; a member of a limited liability company in which management is vested in the members or in which management is vested in managers and there are no managers, or that member’s secretary or assistant; a managing or general agent of the limited liability company, or the agent’s secretary or assistant; any agent authorized by appointment or by law to receive service of process; or as provided by an applicable statute.",
+      "text_sha256": "fdc9b85cf12cada01422d6db643be3237040bf54ba152b3879d52a124d3adf41",
+      "publisher_sha256": "1fffab0dc170dccf74d55d572eb770ed6e31210b3689c71d4d1d7fd864d6e79e",
+      "retrieved_at": "2026-11-21T16:50:37.631038+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas Supreme Court Rule 4 adopted June 21, 2018, effective January 1, 2019",
+      "court": "Arkansas Circuit Courts",
+      "publisher_member": "Arkansas Supreme Court adopted Rule 4, printed pp. 4–5; adoption date at p. 1",
+      "effective_from": "2019-01-01"
+    },
+    "1d378034a698e1d3168b76e1172839": {
+      "source_id": "US-AR:service_time_limit:b64d4bad37cd",
+      "authority_type": "court_rule",
+      "citation": "Ark. R. Civ. P. 4(i) (2018 Ark. 239)",
+      "text": "(i) Time Limit for Service. (1) If service of process is not made on a defendant within 120 days after the filing of the complaint or within the time period established by an extension granted pursuant to paragraph (2), the action shall be dismissed as to that defendant without prejudice on motion or on the court’s initiative. If service is by mail or by commercial delivery company pursuant to subdivision (g)(1) and (2) of this rule, service shall be deemed to have been made for purposes of this subdivision on the date that the process was accepted or refused. (2) The court, on written motion and a showing of good cause, may extend the time for service if the motion is made within 120 days of the filing of the suit or within the time period established by a previous extension. To be effective, an order granting an extension must be entered within 30 days after the motion to extend is filed, by the end of the 120-day period, or by the end of the period established by the previous extension, whichever date is later. (3) This subdivision shall not apply to service in a foreign country pursuant to subdivision (h) of this rule or to complaints filed against unknown tortfeasors.",
+      "text_sha256": "74573dbcdd1f0fae9bd4236726d792ff6614ec30b75f415715b689c25b7538ce",
+      "publisher_sha256": "1fffab0dc170dccf74d55d572eb770ed6e31210b3689c71d4d1d7fd864d6e79e",
+      "retrieved_at": "2026-11-21T16:50:37.631038+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas Supreme Court Rule 4 adopted June 21, 2018, effective January 1, 2019",
+      "court": "Arkansas Circuit Courts",
+      "publisher_member": "Arkansas Supreme Court adopted Rule 4, printed pp. 10; adoption date at p. 1",
+      "effective_from": "2019-01-01"
+    },
+    "a3b8c42e213e02fbdc821b56fef50c": {
+      "source_id": "US-AR:written_contract_limitations:b4817268ea38",
+      "authority_type": "statute",
+      "citation": "1997 Ark. Acts 1164, § 2 (Ark. Code Ann. § 16-56-111)",
+      "text": "Actions to enforce written obligations, duties, or rights, except those to which Arkansas Code Annotated § 4-4-111 is applicable, shall be commenced within five (5) years after the cause of action shall accrue. However, partial payment or written acknowledgment of default shall toll this statute of limitations.",
+      "text_sha256": "260a4f84ff23abeb3f7f768749b217a6ab49af98eda5307deb6ed7dce0bd6bcb",
+      "publisher_sha256": "d01efad748453a0b6706b3400590cb30bc13b1b05f496dc99d8394992e1070d3",
+      "retrieved_at": "2026-11-21T21:55:58.319749+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Arkansas 1997 Act 1164, approved April 8, 1997",
+      "publisher_member": "Publisher PDF p. 3, 1997 Ark. Acts 1164, § 2 (Ark. Code Ann. § 16-56-111), statutory text"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_50",
+    "source_id": "US-AR:fault:02a012887ade",
+    "passage_selector": "5db561d6edffbb01fe6df51f6f5985",
+    "currentness": "historical",
+    "qualification": "This enacted version compared the claimant’s fault with the party or parties from whom the claimant sought recovery. The later 2023 enactment added a separate rule for the civil action under Ark. Code Ann. § 16-118-109."
+  }
+}

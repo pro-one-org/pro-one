@@ -1,0 +1,1003 @@
+{
+  "jurisdiction": "US-WY",
+  "version": "1",
+  "sources": {
+    "US-WY:statutes:482b831fb14e": {
+      "category": "statutes",
+      "title": "Wyoming Statutes and Constitution",
+      "url": "https://www.wyoleg.gov/StateStatutes/StatutesConstitution",
+      "directory": "codes",
+      "locator": "Wyoming"
+    },
+    "US-WY:constitution:89f5edef1263": {
+      "category": "constitution",
+      "title": "Wyoming Statutes Annotated and Constitution",
+      "url": "http://www.lexisnexis.com/hottopics/wystatutes/",
+      "directory": "codes",
+      "locator": "Wyoming"
+    },
+    "US-WY:legislature:eaffbb02cd25": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://legisweb.state.wy.us",
+      "directory": "codes",
+      "locator": "Wyoming"
+    },
+    "US-WY:labor_agency:c9338961f240": {
+      "category": "labor_agency",
+      "title": "dws.wyo.gov",
+      "url": "https://dws.wyo.gov/",
+      "directory": "labor",
+      "locator": "Wyoming"
+    },
+    "US-WY:commercial_code:8df828c1729a": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "https://wyoleg.gov/statutes/compress/title341.pdf",
+      "directory": "ucc",
+      "locator": "Wyoming"
+    },
+    "US-WY:civil_rules:e969b0985d81": {
+      "category": "civil_rules",
+      "title": "Code of Civil Procedure",
+      "url": "https://wyoleg.gov/statutes/compress/title1.pdf",
+      "directory": "procedure",
+      "locator": "Wyoming"
+    },
+    "US-WY:consumer_agency:cf5414bd8b23": {
+      "category": "consumer_agency",
+      "title": "Wyoming (WY)",
+      "url": "https://ag.wyo.gov/law-office-division/consumer-protection-and-antitrust-unit",
+      "directory": "consumer",
+      "locator": "Wyoming (WY)"
+    },
+    "US-WY:judiciary:d56b5735c133": {
+      "category": "judiciary",
+      "title": "Wyoming Judicial Branch",
+      "url": "https://www.courts.state.wy.us/",
+      "directory": "doj-WY",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-WY:court_directory:d8b74aeadbb9": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.courts.state.wy.us/supreme-court/",
+      "directory": "doj-WY",
+      "locator": "Supreme Court"
+    },
+    "US-WY:court_directory:d1d97dcc0acb": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "https://www.courts.state.wy.us/district-courts/",
+      "directory": "doj-WY",
+      "locator": "District Courts"
+    },
+    "US-WY:court_directory:003da5c3dca6": {
+      "category": "court_directory",
+      "title": "Chancery Court",
+      "url": "https://www.courts.state.wy.us/chancery-court/",
+      "directory": "doj-WY",
+      "locator": "Chancery Court"
+    },
+    "US-WY:court_directory:c5912983d17a": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "https://www.courts.state.wy.us/circuit-courts/",
+      "directory": "doj-WY",
+      "locator": "Circuit Courts"
+    },
+    "US-WY:forms:f3957b82f974": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://www.wyocourts.gov/self-help-forms//",
+      "directory": "doj-WY",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-WY:constitution:ebab1de63186": {
+      "category": "constitution",
+      "title": "Wyoming Constitution and Statutes",
+      "url": "https://wyoleg.gov/stateStatutes/StateStatutes",
+      "directory": "doj-WY",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-WY:pi_limitations:619ad730fe8d": {
+      "category": "pi_limitations",
+      "title": "Wyo. Stat. § 1-3-105(a)(iv)(C)",
+      "url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+        "retrieved_at": "2026-11-17T19:34:05.998948+00:00",
+        "http_status": "200",
+        "sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f",
+        "health": "manual_review_required"
+      }
+    },
+    "US-WY:written_contract_limitations:619ad730fe8d": {
+      "category": "written_contract_limitations",
+      "title": "Wyo. Stat. § 1-3-105(a)(i)",
+      "url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+        "retrieved_at": "2026-11-17T19:34:05.998948+00:00",
+        "http_status": "200",
+        "sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f",
+        "health": "manual_review_required"
+      }
+    },
+    "US-WY:oral_contract_limitations:619ad730fe8d": {
+      "category": "oral_contract_limitations",
+      "title": "Wyo. Stat. § 1-3-105(a)(ii)(A)",
+      "url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+        "retrieved_at": "2026-11-17T19:34:05.998948+00:00",
+        "http_status": "200",
+        "sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f",
+        "health": "manual_review_required"
+      }
+    },
+    "US-WY:small_claims:2daa3ef8cfe3": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.wyocourts.gov/legal-help-by-topic/small-claims/",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.wyocourts.gov/legal-help-by-topic/small-claims/",
+        "retrieved_at": "2026-11-17T19:43:10.936275+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-WY:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 30"
+    },
+    "US-WY:fault:7dd5d5aac4a7": {
+      "category": "fault",
+      "title": "Wyo. Stat. § 1-1-109(b)",
+      "url": "https://wyoleg.gov/statutes/compress/title01.pdf?preview=true&site_id=756",
+      "directory": null,
+      "locator": "Wyo. Stat. § 1-1-109(b)",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:39.607321+00:00",
+        "sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f"
+      }
+    },
+    "US-WY:consumerLaw:1a42b7129492": {
+      "title": "Wyo. Stat. § 40-12-101 et seq.",
+      "category": "consumerLaw",
+      "url": "https://wyoleg.gov/statutes/compress/title40.pdf",
+      "directory": "consumer_statutes_index",
+      "locator": "Wyo. Stat. § 40-12-101 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-WY:contract_formation:bb9519a6e806": {
+      "category": "contract_formation",
+      "title": "Wyo. Stat. § 34.1-2-204",
+      "url": "https://wyoleg.gov/statutes/compress/title34.1.pdf?source=post_page---------------------------",
+      "locator": "Wyo. Stat. § 34.1-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:43.627059+00:00",
+        "sha256": "6fd5bb045cd623e57eb199fb587d897d8b3a4d01152fb6092e369445ef977344"
+      }
+    },
+    "US-WY:contract_damages:49d852c62de9": {
+      "category": "contract_damages",
+      "title": "Wyo. Stat. § 34.1-2-714",
+      "url": "https://wyoleg.gov/statutes/compress/title34.1.pdf?source=post_page---------------------------",
+      "locator": "Wyo. Stat. § 34.1-2-714",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:43.627059+00:00",
+        "sha256": "6fd5bb045cd623e57eb199fb587d897d8b3a4d01152fb6092e369445ef977344"
+      }
+    },
+    "US-WY:pi_limitations:cc7fb91c5d07": {
+      "category": "pi_limitations",
+      "title": "Wyo. Stat. § 1-3-105(a)(iv)",
+      "url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+      "locator": "Wyo. Stat. § 1-3-105(a)(iv)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:34:32.332793+00:00",
+        "sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f"
+      }
+    },
+    "US-WY:consumerLaw:201e2631b170": {
+      "category": "consumerLaw",
+      "title": "Wyo. Stat. § 40-12-105(a)(i)–(v)",
+      "url": "https://wyoleg.gov/statutes/compress/title40.pdf",
+      "locator": "Wyo. Stat. § 40-12-105(a)(i)–(v)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:20:53.716678+00:00",
+        "sha256": "2a7e997e4a18abb2eb8cc0f0a50f2ec030c338d9edbba3e82958399f05c1e301"
+      }
+    },
+    "US-WY:wageLaw:21937312747e": {
+      "category": "wageLaw",
+      "title": "Wyo. Stat. § 27-4-104(a)",
+      "url": "https://wyoleg.gov/statutes/compress/title27.pdf",
+      "locator": "Wyo. Stat. § 27-4-104(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:37:35.494990+00:00",
+        "sha256": "c131a406d44bf2e556500c4ca8de7ccc3c6334cdc4d02c5e31ceabc25293b47a"
+      }
+    },
+    "US-WY:deposit:1777e20b220c": {
+      "category": "deposit",
+      "title": "Wyo. Stat. § 1-21-1208(a)",
+      "url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+      "locator": "Wyo. Stat. § 1-21-1208(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:54:38.210871+00:00",
+        "sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f"
+      }
+    },
+    "US-WY:small_claims:ca089794ff4e": {
+      "category": "small_claims",
+      "title": "2021 Wyo. Sess. Laws ch. 67, §§ 1–3 (Wyo. Stat. § 1-5-104(b), small-claims venue)",
+      "url": "https://wyoleg.gov/2021/SessionLaws.pdf",
+      "locator": "2021 Wyo. Sess. Laws ch. 67, §§ 1–3 (Wyo. Stat. § 1-5-104(b), small-claims venue)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:35:18.757350+00:00",
+        "sha256": "9fc78340f22946c0c121a845832f529855ba81b35b85c38747f7df8976d912ee"
+      }
+    },
+    "US-WY:response:43b93176b7f5": {
+      "category": "response",
+      "title": "Wyo. R. Civ. P. 12(a)(1)(A)",
+      "url": "https://www.wyocourts.gov/app/uploads/2025/01/WY-Rules-of-Civ.-Procedure-Eff.-9-21-26.pdf",
+      "locator": "Wyo. R. Civ. P. 12(a)(1)(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:52:46.124545+00:00",
+        "sha256": "a22efdb9680278b9c4fb388eefaf65fb7136cf2e8a95347c9811d32d4bd42adb"
+      }
+    },
+    "US-WY:postmotion_response:0767f6e97018": {
+      "category": "postmotion_response",
+      "title": "Wyo. R. Civ. P. 12(a)(2)",
+      "url": "https://www.wyocourts.gov/app/uploads/2025/01/WY-Rules-of-Civ.-Procedure-Eff.-9-21-26.pdf",
+      "locator": "Wyo. R. Civ. P. 12(a)(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:52:46.124545+00:00",
+        "sha256": "a22efdb9680278b9c4fb388eefaf65fb7136cf2e8a95347c9811d32d4bd42adb"
+      }
+    },
+    "US-WY:civil_rules:c534b580029f": {
+      "category": "civil_rules",
+      "title": "Wyo. R. Civ. P. 1",
+      "url": "https://www.wyocourts.gov/app/uploads/2025/01/WY-Rules-of-Civ.-Procedure-Eff.-9-21-26.pdf",
+      "locator": "Wyo. R. Civ. P. 1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:52:46.124545+00:00",
+        "sha256": "a22efdb9680278b9c4fb388eefaf65fb7136cf2e8a95347c9811d32d4bd42adb"
+      }
+    },
+    "US-WY:summons_issuance:84f3bce2e0d8": {
+      "category": "summons_issuance",
+      "title": "Wyo. R. Civ. P. 4(b)",
+      "url": "https://www.wyocourts.gov/app/uploads/2025/01/WY-Rules-of-Civ.-Procedure-Eff.-9-21-26.pdf",
+      "locator": "Wyo. R. Civ. P. 4(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:52:46.124545+00:00",
+        "sha256": "a22efdb9680278b9c4fb388eefaf65fb7136cf2e8a95347c9811d32d4bd42adb"
+      }
+    },
+    "US-WY:debtLaw:07c190602fe7": {
+      "category": "debtLaw",
+      "title": "Wyo. Stat. Ann. § 33-11-102",
+      "url": "https://wyoleg.gov/statutes/2025/title33.pdf",
+      "locator": "Wyo. Stat. Ann. § 33-11-102",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:55:55.695321+00:00",
+        "sha256": "3c428d58067c1df7e6dfdc74ccebd1f43cf98a78509714e63de3421d7ce3fd92"
+      }
+    },
+    "US-WY:debtLaw:652f521a5c66": {
+      "category": "debtLaw",
+      "title": "Wyo. Stat. Ann. § 33-11-101(b)",
+      "url": "https://wyoleg.gov/statutes/2025/title33.pdf",
+      "locator": "Wyo. Stat. Ann. § 33-11-101(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:55:55.695321+00:00",
+        "sha256": "3c428d58067c1df7e6dfdc74ccebd1f43cf98a78509714e63de3421d7ce3fd92"
+      }
+    },
+    "US-WY:negligence_elements:f7b199bbdee7": {
+      "category": "negligence_elements",
+      "title": "Glenn v. Union Pacific Railroad Co., 2008 WY 16, ¶ 7",
+      "url": "https://web.archive.org/web/20240525204930id_/https://documents.courts.state.wy.us/Opinions/2008WY16.pdf",
+      "locator": "Glenn v. Union Pacific Railroad Co., 2008 WY 16, ¶ 7",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:18:06.104743+00:00",
+        "sha256": "a98e17e3ed3b721b5baa74e5be61a4782dc5b2976e38ebdf86efeba7b7ebc1d4"
+      }
+    },
+    "US-WY:commencement:49469742ef95": {
+      "category": "commencement",
+      "title": "Wyo. R. Civ. P. 3 (effective June 1, 2022)",
+      "url": "https://www.wyocourts.gov/app/uploads/2025/01/Order-WRCP-3-16-40.1-1.pdf",
+      "locator": "Wyo. R. Civ. P. 3 (effective June 1, 2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:20:50.733110+00:00",
+        "sha256": "521cc3d421d2287fbba1f58b015e43817e623e239bb340f9709a57627db1fd84"
+      }
+    },
+    "US-WY:service:1c3bf8ee7980": {
+      "category": "service",
+      "title": "Wyo. R. Civ. P. 4(e) (August 2024 ed.)",
+      "url": "https://www.wyocourts.gov/app/uploads/2025/01/Wyoming-Rules-of-Civil-Procedure-August-2024.pdf",
+      "locator": "Wyo. R. Civ. P. 4(e) (August 2024 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:24:47.127847+00:00",
+        "sha256": "11cab58c83c13c1b54823da45bb5ad003ad43324fced3f4cbfc6543500b3ebbd"
+      }
+    },
+    "US-WY:service_time_limit:4ecd4a9a83c6": {
+      "category": "service_time_limit",
+      "title": "Wyo. R. Civ. P. 4(w) (August 2024 ed.)",
+      "url": "https://www.wyocourts.gov/app/uploads/2025/01/Wyoming-Rules-of-Civil-Procedure-August-2024.pdf",
+      "locator": "Wyo. R. Civ. P. 4(w) (August 2024 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:24:47.127847+00:00",
+        "sha256": "11cab58c83c13c1b54823da45bb5ad003ad43324fced3f4cbfc6543500b3ebbd"
+      }
+    },
+    "US-WY:written_contract_limitations:70faa0a054b3": {
+      "category": "written_contract_limitations",
+      "title": "Wyo. Stat. § 1-3-105(a)(i)",
+      "url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+      "locator": "Wyo. Stat. § 1-3-105(a)(i)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:31:04.475277+00:00",
+        "sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f"
+      }
+    },
+    "US-WY:oral_contract_limitations:78aa0880f671": {
+      "category": "oral_contract_limitations",
+      "title": "Wyo. Stat. § 1-3-105(a)(ii)(A)",
+      "url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+      "locator": "Wyo. Stat. § 1-3-105(a)(ii)(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:31:04.475277+00:00",
+        "sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f"
+      }
+    },
+    "US-WY:general_contract_limitations:58eb8c16aab8": {
+      "category": "general_contract_limitations",
+      "title": "Wyo. Stat. § 1-3-105(a)(iii)",
+      "url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+      "locator": "Wyo. Stat. § 1-3-105(a)(iii)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:31:04.475277+00:00",
+        "sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f"
+      }
+    },
+    "US-WY:wrongful_death_limitations:7a76a5d194d2": {
+      "category": "wrongful_death_limitations",
+      "title": "Wyo. Stat. § 1-38-102(d)",
+      "url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+      "locator": "Wyo. Stat. § 1-38-102(d)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:31:04.475277+00:00",
+        "sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f"
+      }
+    },
+    "US-WY:venue:c3344625c0c6": {
+      "category": "venue",
+      "title": "Wyo. Stat. § 1-5-107",
+      "url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+      "locator": "Wyo. Stat. § 1-5-107",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:31:04.475277+00:00",
+        "sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f"
+      }
+    },
+    "US-WY:venue:d7104a6ccd01": {
+      "category": "venue",
+      "title": "Wyo. Stat. § 1-5-108",
+      "url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+      "locator": "Wyo. Stat. § 1-5-108",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:31:04.475277+00:00",
+        "sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f"
+      }
+    },
+    "US-WY:venue:03224c44a1b4": {
+      "category": "venue",
+      "title": "Wyo. Stat. § 1-5-109",
+      "url": "https://wyoleg.gov/statutes/compress/title01.pdf",
+      "locator": "Wyo. Stat. § 1-5-109",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:31:04.475277+00:00",
+        "sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f"
+      }
+    },
+    "US-WY:consumer_private_action:657e2c9de3c3": {
+      "category": "consumer_private_action",
+      "title": "Wyo. Stat. § 40-12-108(a)",
+      "url": "https://wyoleg.gov/statutes/compress/title40.pdf",
+      "locator": "Wyo. Stat. § 40-12-108(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:25.928602+00:00",
+        "sha256": "2a7e997e4a18abb2eb8cc0f0a50f2ec030c338d9edbba3e82958399f05c1e301"
+      }
+    },
+    "US-WY:consumer_remedies:8afa651d93e4": {
+      "category": "consumer_remedies",
+      "title": "Wyo. Stat. § 40-12-108(b)",
+      "url": "https://wyoleg.gov/statutes/compress/title40.pdf",
+      "locator": "Wyo. Stat. § 40-12-108(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:25.928602+00:00",
+        "sha256": "2a7e997e4a18abb2eb8cc0f0a50f2ec030c338d9edbba3e82958399f05c1e301"
+      }
+    },
+    "US-WY:consumer_pre_suit_notice:65ef502a0800": {
+      "category": "consumer_pre_suit_notice",
+      "title": "Wyo. Stat. § 40-12-109, notice provisions",
+      "url": "https://wyoleg.gov/statutes/compress/title40.pdf",
+      "locator": "Wyo. Stat. § 40-12-109, notice provisions",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:25.928602+00:00",
+        "sha256": "2a7e997e4a18abb2eb8cc0f0a50f2ec030c338d9edbba3e82958399f05c1e301"
+      }
+    },
+    "US-WY:consumer_limitations:52c1d3cfe130": {
+      "category": "consumer_limitations",
+      "title": "Wyo. Stat. § 40-12-109, final sentence",
+      "url": "https://wyoleg.gov/statutes/compress/title40.pdf",
+      "locator": "Wyo. Stat. § 40-12-109, final sentence",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:25.928602+00:00",
+        "sha256": "2a7e997e4a18abb2eb8cc0f0a50f2ec030c338d9edbba3e82958399f05c1e301"
+      }
+    },
+    "US-WY:consumer_agency:3807952eca6b": {
+      "category": "consumer_agency",
+      "title": "Wyo. Stat. § 40-12-106",
+      "url": "https://www.wyoleg.gov/statutes/compress/Title40.pdf",
+      "locator": "Wyo. Stat. § 40-12-106",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:38:55.256124+00:00",
+        "sha256": "2a7e997e4a18abb2eb8cc0f0a50f2ec030c338d9edbba3e82958399f05c1e301"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-WY:court:3078a9bd4d48",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-WY:court_directory:d8b74aeadbb9"
+    },
+    {
+      "id": "US-WY:court:a04963e6115b",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-WY:court_directory:d1d97dcc0acb"
+    },
+    {
+      "id": "US-WY:court:2a1be35d383a",
+      "name": "Chancery Court",
+      "level": "trial_directory",
+      "source_id": "US-WY:court_directory:003da5c3dca6"
+    },
+    {
+      "id": "US-WY:court:0fe623dabc24",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-WY:court_directory:c5912983d17a"
+    },
+    {
+      "id": "US-WY:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-WY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-WY:court:16009b20d3aa",
+      "name": "Circuit",
+      "level": "limited_trial",
+      "source_id": "US-WY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-WY:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-WY:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Wyo. Stat. § 1-3-105(a)(iv)(C)",
+      "source_id": "US-WY:pi_limitations:619ad730fe8d",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Wyo. Stat. § 1-3-105(a)(i)",
+      "source_id": "US-WY:written_contract_limitations:619ad730fe8d",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Wyo. Stat. § 1-3-105(a)(ii)(A)",
+      "source_id": "US-WY:oral_contract_limitations:619ad730fe8d",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Wyo. Stat. § 1-21-1001. Jurisdiction of circuit courts",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Wyo. Stat. § 40-12-101 et seq.",
+      "source_id": "US-WY:consumerLaw:1a42b7129492",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "4f0279820e3e29ac76bd9a48816d9f": {
+      "citation": "Wyo. Stat. § 1-1-109(b)",
+      "source_id": "US-WY:fault:7dd5d5aac4a7",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "(b) Contributory fault shall not bar a recovery in an action by any claimant or the claimant's legal representative to recover damages for wrongful death or injury to person or property, if the contributory fault of the claimant is not more than fifty percent (50%) of the total fault of all actors. Any damages allowed shall be diminished in proportion to the amount of fault attributed to the claimant.",
+      "text_sha256": "29ebd196cd035040e47e47973149ece0efdc7ec2e1460def49785c7025cbf237",
+      "publisher_sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f",
+      "retrieved_at": "2026-11-17T20:50:39.607321+00:00",
+      "currentness": "unresolved"
+    },
+    "1c4f5edf5d0488e5b15162192c463e": {
+      "source_id": "US-WY:contract_formation:bb9519a6e806",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. § 34.1-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "6fd5bb045cd623e57eb199fb587d897d8b3a4d01152fb6092e369445ef977344",
+      "retrieved_at": "2026-11-18T15:14:43.627059+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "9055811c4e6a3086a2d63d31862a27": {
+      "source_id": "US-WY:contract_damages:49d852c62de9",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. § 34.1-2-714",
+      "text": "Where the buyer has accepted goods and given notification (section 34.1-2-607) he may recover as damages for any nonconformity of tender the loss resulting in the ordinary course of events from the seller's breach as determined in any manner which is reasonable. (b) The measure of damages for breach of warranty is the difference at the time and place of acceptance between the value of the goods accepted and the value they would have had if they had been as warranted, unless special circumstances show proximate damages of a different amount.",
+      "text_sha256": "c29b75fc0eaa6ea8b392a503c774ae7bb463fa37bfd22922cf1103294066811b",
+      "publisher_sha256": "6fd5bb045cd623e57eb199fb587d897d8b3a4d01152fb6092e369445ef977344",
+      "retrieved_at": "2026-11-18T15:14:43.627059+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "ecb2ac26f4fe18eb292dd4bded69bc": {
+      "source_id": "US-WY:pi_limitations:cc7fb91c5d07",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. § 1-3-105(a)(iv)",
+      "text": "(iv) Within four (4) years, an action for: (A) Trespass upon real property; (B) The recovery of personal property or for taking, detaining or injuring personal property; (C) An injury to the rights of the plaintiff, not arising on contract and not herein enumerated; and (D) For relief on the ground of fraud.",
+      "text_sha256": "a4f68a7d2090f731984e23064473b0eada1a9269671cf3c74928a0bb5eb6cc2a",
+      "publisher_sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f",
+      "retrieved_at": "2026-11-20T15:34:32.332793+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "b5bbdbbe84f1271bebf5b4a3fe09b3": {
+      "source_id": "US-WY:consumerLaw:201e2631b170",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. § 40-12-105(a)(i)–(v)",
+      "text": "(a) A person engages in a deceptive trade practice unlawful under this act when, in the course of his business and in connection with a consumer transaction, he knowingly: (i) Represents that merchandise has a source, origin, sponsorship, approval, accessories or uses it does not have; (ii) Represents that he has a sponsorship, approval or affiliation he does not have; (iii) Represents that merchandise is of a particular standard, grade, style or model, if it is not; (iv) Represents that merchandise is available to the consumer for a reason that does not exist; (v) Represents that merchandise has been supplied in accordance with a previous representation, if it has not; except that this subsection does not apply to merchandise supplied to the recipient by mistake or merchandise of equal or greater value supplied as a reasonably equivalent substitute for unavailable merchandise previously ordered by the recipient;",
+      "text_sha256": "5028572729291c5941d8a6f15c39393fe84af2f26a3b44d5c76bbbe64b4cd2b7",
+      "publisher_sha256": "2a7e997e4a18abb2eb8cc0f0a50f2ec030c338d9edbba3e82958399f05c1e301",
+      "retrieved_at": "2026-11-20T16:20:53.716678+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "b90f661ae04b9d801ad8af2d851850": {
+      "source_id": "US-WY:wageLaw:21937312747e",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. § 27-4-104(a)",
+      "text": "(a) Whenever an employee quits service or is discharged, the employee shall be paid whatever wages are due him in lawful money of the United States of America, or by check or draft which can be cashed at a bank, no later than the employer's usual practice on regularly scheduled payroll dates or at a time specified under the terms of a collective bargaining agreement between the employer and the employee. The employer may offset from any monies due the employee as wages, any sums due the employer from the employee which have been incurred by the employee during his employment. This section does not apply to the earnings of a sales agent employed on a commission basis and having custody of accounts, money or goods of his principal where the net amount due the agent may not be determinable except after an audit or verification of sales, accounts, funds or stocks.",
+      "text_sha256": "f6d6e1351e04e52f863cda186271e6814398cd07db8bae96af045b024ccd497a",
+      "publisher_sha256": "c131a406d44bf2e556500c4ca8de7ccc3c6334cdc4d02c5e31ceabc25293b47a",
+      "retrieved_at": "2026-11-20T17:37:35.494990+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "f1ec142a73d706af5925a293437629": {
+      "source_id": "US-WY:deposit:1777e20b220c",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. § 1-21-1208(a)",
+      "text": "(a) Upon termination of the rental agreement, property or money held as a deposit may be applied by the owner or his agent to the payment of accrued rent, damages to the residential rental unit beyond reasonable wear and tear, the cost to clean the unit to the condition at the beginning of the rental agreement and to other costs provided by any contract. The balance of any deposit and prepaid rent and a written itemization of any deductions from the deposit together with reasons therefor, shall be delivered or mailed without interest to the renter within thirty (30) days after termination of the rental agreement or within fifteen (15) days after receipt of the renter's new mailing address, whichever is later. If there is damage to the residential rental unit, this period shall be extended by thirty (30) days. The renter shall within thirty (30) days of termination of the rental agreement, notify the owner or designated agent of the location where payment and notice may be made or mailed.",
+      "text_sha256": "bf68d8d22c5a8370a33ed317faaa813e1f642e13bc3c184c93166d5b6e2f9fd2",
+      "publisher_sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f",
+      "retrieved_at": "2026-11-20T17:54:38.210871+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "3cec83609bf8f1be8d82db49477707": {
+      "source_id": "US-WY:small_claims:ca089794ff4e",
+      "authority_type": "statute",
+      "citation": "2021 Wyo. Sess. Laws ch. 67, §§ 1–3 (Wyo. Stat. § 1-5-104(b), small-claims venue)",
+      "text": "(b) Actions for small claims proceedings under W.S. 1-21-201 through 1-21-205 may be brought in the county where the cause of action or some part thereof arose.",
+      "text_sha256": "f3ede8e7de47c25d805746502aa046669873efdbeba3f3de5adff92a66c2fd2e",
+      "publisher_sha256": "9fc78340f22946c0c121a845832f529855ba81b35b85c38747f7df8976d912ee",
+      "retrieved_at": "2026-11-20T18:35:18.757350+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Wyoming 2021 Session Laws ch. 67, suits initially brought on or after July 1, 2021",
+      "effective_from": "2021-07-01"
+    },
+    "7f10b7a9817eb48a5bae1f447dd77c": {
+      "source_id": "US-WY:response:43b93176b7f5",
+      "authority_type": "court_rule",
+      "citation": "Wyo. R. Civ. P. 12(a)(1)(A)",
+      "text": "(1) In General. — Unless another time is specified by this rule or a state statute, the time for serving a responsive pleading is as follows: (A) A defendant must serve an answer: (i) within 20 days after being served with the summons and complaint; (ii) within 30 days after being served with the summons and complaint if service is made outside the State of Wyoming; (iii) within 30 days after the last day of publication; or (iv) if it has timely waived service under Rule 4(d), within 60 days after the request for a waiver was sent, or within 90 days after it was sent to the defendant outside any judicial district of the United States.",
+      "text_sha256": "800aef02dafc470969ad54ecaafd9aac4f698dabafd5a8bd60fa9a644c32011b",
+      "publisher_sha256": "a22efdb9680278b9c4fb388eefaf65fb7136cf2e8a95347c9811d32d4bd42adb",
+      "retrieved_at": "2026-11-20T22:52:46.124545+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Wyoming Judicial Branch civil rules compilation containing changes effective September 21, 2026",
+      "court": "Wyoming District Court",
+      "effective_from": "2017-03-01"
+    },
+    "d90a433f8d382a8ee0fcbad3067c26": {
+      "source_id": "US-WY:postmotion_response:0767f6e97018",
+      "authority_type": "court_rule",
+      "citation": "Wyo. R. Civ. P. 12(a)(2)",
+      "text": "(2) Effect of a Motion. — Unless the court sets a different time, serving a motion under this rule alters these periods as follows: (A) if the court denies the motion or postpones its disposition until trial, the responsive pleading must be served within 14 days after notice of the court’s action; or (B) if the court grants a motion for a more definite statement, the responsive pleading must be served within 14 days after the more definite statement is served.",
+      "text_sha256": "ad784d54c898c1957d0190d7901911979ce5c51400def0c2ec22c9a34a489365",
+      "publisher_sha256": "a22efdb9680278b9c4fb388eefaf65fb7136cf2e8a95347c9811d32d4bd42adb",
+      "retrieved_at": "2026-11-20T22:52:46.124545+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Wyoming Judicial Branch civil rules compilation containing changes effective September 21, 2026",
+      "court": "Wyoming District Court",
+      "effective_from": "2017-03-01"
+    },
+    "81b85f36820c5e9fd88dd84b150d7f": {
+      "source_id": "US-WY:civil_rules:c534b580029f",
+      "authority_type": "court_rule",
+      "citation": "Wyo. R. Civ. P. 1",
+      "text": "These rules govern the procedure in all civil actions and proceedings in the State of Wyoming courts, except for actions and proceedings in the chancery court and other exceptions stated in Rule 81. They should be construed, administered, and employed by the court and the parties to secure the just, speedy, and inexpensive determination of every action and proceeding.",
+      "text_sha256": "0df0bc2c5bfcd24506c504d7715016a065e03a922280709c3f6ca40053ddaaef",
+      "publisher_sha256": "a22efdb9680278b9c4fb388eefaf65fb7136cf2e8a95347c9811d32d4bd42adb",
+      "retrieved_at": "2026-11-20T22:52:46.124545+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Wyoming Judicial Branch civil rules compilation containing changes effective September 21, 2026",
+      "court": "Wyoming District Court",
+      "effective_from": "2022-01-01"
+    },
+    "8c70a6f01e99bc01d4ed4cd8556794": {
+      "source_id": "US-WY:summons_issuance:84f3bce2e0d8",
+      "authority_type": "court_rule",
+      "citation": "Wyo. R. Civ. P. 4(b)",
+      "text": "(b) Issuance. — On or after filing the complaint, the plaintiff may present a summons to the clerk for signature and seal. If the summons is properly completed, the clerk must sign, seal, and issue it to the plaintiff for service on the defendant. A summons — or a copy of a summons that is addressed to multiple defendants — must be issued for each defendant to be served.",
+      "text_sha256": "8d60c58cb239afc442574e4ccdf6159b694039227a2b0c3097c9e230ad65d542",
+      "publisher_sha256": "a22efdb9680278b9c4fb388eefaf65fb7136cf2e8a95347c9811d32d4bd42adb",
+      "retrieved_at": "2026-11-20T22:52:46.124545+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Wyoming Judicial Branch civil rules compilation containing changes effective September 21, 2026",
+      "court": "Wyoming District Court",
+      "effective_from": "2026-09-21"
+    },
+    "97039fc339314f114c2a510e0398e6": {
+      "source_id": "US-WY:debtLaw:07c190602fe7",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. Ann. § 33-11-102",
+      "text": "No person shall conduct a collection agency or act as a debt collector or solicitor within this state without first having obtained a license as provided in this act, except that a debt collector or solicitor acting in the course of his employment for a collection agency licensed in Wyoming is not required to have an individual license.",
+      "text_sha256": "00683bdb3c562a01a3e068ab954bea7fb3db15e99cded35e6d9f94d8e8e6211b",
+      "publisher_sha256": "3c428d58067c1df7e6dfdc74ccebd1f43cf98a78509714e63de3421d7ce3fd92",
+      "retrieved_at": "2026-11-20T22:55:55.695321+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Wyoming Legislature 2025 archived Statutes, Title 33"
+    },
+    "b1988f4a19e24ed45461cd919c5f6a": {
+      "source_id": "US-WY:debtLaw:652f521a5c66",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. Ann. § 33-11-101(b)",
+      "text": "(b) The term \"collection agency\" does not include: (i) Any officer or employee of a creditor while collecting debts for and in the name of the creditor; (ii) Any officer or employee of the United States or of any state, to the extent that collecting or attempting to collect a debt is in the performance of his official duties; (iii) Any person while serving or attempting to serve legal process on another person in connection with the judicial enforcement of any debt; (iv) Any person whose principal business is the making of loans or the servicing of debt, and who acts as a loan correspondent, seller or servicing agent for the owner or holder of a debt which is secured by a mortgage on real property, whether or not the debt is also secured by an interest in personal property; (v) Any person whose collection activities are carried on in the true name of the creditor, and are confined to the operation of a business other than a collection agency, including but not limited to banks, trust companies, savings and loan associations, abstract companies doing an escrow business, real estate brokers, attorneys, insurance companies, credit unions or loan or finance companies; (vi) Any person whose business is the servicing of credit card debt; (vii) Any person engaged solely in the collection of one (1) or more business debts; or (viii) Any licensed attorney acting in an attorney-client relationship with the creditor, and who conducts the collection in the true name of the client.",
+      "text_sha256": "392023f09d64a7507c53856cbfc68df51384e14d380ad2d85c6bc51af5f5d9e5",
+      "publisher_sha256": "3c428d58067c1df7e6dfdc74ccebd1f43cf98a78509714e63de3421d7ce3fd92",
+      "retrieved_at": "2026-11-20T22:55:55.695321+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Wyoming Legislature 2025 archived Statutes, Title 33"
+    },
+    "7aed30fae88fa857aa4ba50f73a228": {
+      "source_id": "US-WY:negligence_elements:f7b199bbdee7",
+      "authority_type": "opinion",
+      "citation": "Glenn v. Union Pacific Railroad Co., 2008 WY 16, ¶ 7",
+      "text": "In Natrona County v. Blake, 2003 WY 170, ¶ 6, 81 P.3d 948, 951 (Wyo. 2003), we listed the following elements of a negligence claim: (1) The defendant owed the plaintiff a duty to conform to a specified standard of care, (2) the defendant breached the duty of care, (3) the defendant’s breach of the duty of care proximately caused injury to the plaintiff, and (4) the injury sustained by the plaintiff is compensable by money damages.",
+      "text_sha256": "3601d3798a427fc669eed29a988161e08c6082e273ddb5e4c46288b67afd869a",
+      "publisher_sha256": "a98e17e3ed3b721b5baa74e5be61a4782dc5b2976e38ebdf86efeba7b7ebc1d4",
+      "retrieved_at": "2026-11-21T04:18:06.104743+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2008-02-08",
+      "court": "Supreme Court of Wyoming",
+      "decision_date": "2008-02-08",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in a negligence claim arising from an injury while closing a railroad car’s dump doors.",
+      "publisher_member": "court opinion PDF p. 4"
+    },
+    "330f34c80d06741ca28367f7b6fa7b": {
+      "source_id": "US-WY:commencement:49469742ef95",
+      "authority_type": "court_rule",
+      "citation": "Wyo. R. Civ. P. 3 (effective June 1, 2022)",
+      "text": "A civil action is commenced by filing a complaint with the court, except when an action has been dismissed pursuant to Rule 4(w). When an action has been dismissed pursuant to Rule 4(w) and a new action is filed, it is commenced by filing a complaint with the court if service is obtained within 90 days of the applicable statute of limitations.",
+      "text_sha256": "e706fb037e9c917f25908be7145e67373ed88f5cf1d57ed8fc725721721fc2d8",
+      "publisher_sha256": "521cc3d421d2287fbba1f58b015e43817e623e239bb340f9709a57627db1fd84",
+      "retrieved_at": "2026-11-21T17:20:50.733110+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Order of March 15, 2022, effective June 1, 2022",
+      "court": "Wyoming district courts governed by the Wyoming Rules of Civil Procedure",
+      "publisher_member": "Wyoming Supreme Court order signed March 15, 2022, PDF p. 2; Rule 3 text",
+      "effective_from": "2022-06-01"
+    },
+    "89553b11b249e042756e462736fec7": {
+      "source_id": "US-WY:service:1c3bf8ee7980",
+      "authority_type": "court_rule",
+      "citation": "Wyo. R. Civ. P. 4(e) (August 2024 ed.)",
+      "text": "(e) Serving an Individual Within the United States. — An individual other than a person under 14 years of age or an incompetent person may be served within the United States: (1) by delivering a copy of the summons and of the complaint to the individual personally, (2) by leaving copies thereof at the individual’s dwelling house or usual place of abode with some person over the age of 14 years then residing therein, (3) at the defendant’s usual place of business with an employee of the defendant then in charge of such place of business, or (4) by delivering a copy of the summons and of the complaint to an agent authorized by appointment or by law to receive service of process.",
+      "text_sha256": "17ad15c7630d67c6a5d296dab2e54d41d8a21c6e52f82dc80e41466ef2ee0e66",
+      "publisher_sha256": "11cab58c83c13c1b54823da45bb5ad003ad43324fced3f4cbfc6543500b3ebbd",
+      "retrieved_at": "2026-11-21T17:24:47.127847+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Wyoming Judicial Branch Rules of Civil Procedure, August 2024 edition",
+      "court": "Wyoming district courts governed by the Wyoming Rules of Civil Procedure",
+      "publisher_member": "Wyoming Judicial Branch August 2024 compilation p. 6, Rule 4(e); excludes annotations"
+    },
+    "d8f4cd80701fce7a7820940c10d048": {
+      "source_id": "US-WY:service_time_limit:4ecd4a9a83c6",
+      "authority_type": "court_rule",
+      "citation": "Wyo. R. Civ. P. 4(w) (August 2024 ed.)",
+      "text": "(w) Time Limit for Service. — If a defendant is not served within 90 days after the complaint is filed, the court — on motion or on its own after notice to the plaintiff — must dismiss the action without prejudice against that defendant or order that service be made within a specified time. But if the plaintiff shows good cause for the failure, the court must extend the time for service for an appropriate period. This subdivision (w) does not apply to service in a foreign country under Rule 4(f).",
+      "text_sha256": "7a00664f42cf257914e820619d660c3529752f6b55522a88377e1aa4ce92b6fb",
+      "publisher_sha256": "11cab58c83c13c1b54823da45bb5ad003ad43324fced3f4cbfc6543500b3ebbd",
+      "retrieved_at": "2026-11-21T17:24:47.127847+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Wyoming Judicial Branch Rules of Civil Procedure, August 2024 edition",
+      "court": "Wyoming district courts governed by the Wyoming Rules of Civil Procedure",
+      "publisher_member": "Wyoming Judicial Branch August 2024 compilation p. 12, Rule 4(w); excludes annotations"
+    },
+    "2ff831c3cca88c53ea63a0ca562591": {
+      "source_id": "US-WY:written_contract_limitations:70faa0a054b3",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. § 1-3-105(a)(i)",
+      "text": "(a) Civil actions other than for the recovery of real property can only be brought within the following periods after the cause of action accrues: (i) Within ten (10) years, an action upon a specialty or any contract, agreement or promise in writing;",
+      "text_sha256": "c67cf65078e63c1cef2a01ec7198bdb9307fdd527c73ca50f3f2b1e8174b9490",
+      "publisher_sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f",
+      "retrieved_at": "2026-11-21T17:31:04.475277+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 35, Wyo. Stat. § 1-3-105(a)(i), statutory text"
+    },
+    "a1a33232c991f0baf95c43b7c23f6a": {
+      "source_id": "US-WY:oral_contract_limitations:78aa0880f671",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. § 1-3-105(a)(ii)(A)",
+      "text": "(a) Civil actions other than for the recovery of real property can only be brought within the following periods after the cause of action accrues: (ii) Within eight (8) years, an action: (A) Upon a contract not in writing, either express or implied;",
+      "text_sha256": "b487713510b3446610e2aaca9044016fcd36be5861087940dcd442533f7eff2a",
+      "publisher_sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f",
+      "retrieved_at": "2026-11-21T17:31:04.475277+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 35, Wyo. Stat. § 1-3-105(a)(ii)(A), statutory text"
+    },
+    "c7f57b55f47e220eddbdbdf8430b47": {
+      "source_id": "US-WY:general_contract_limitations:58eb8c16aab8",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. § 1-3-105(a)(iii)",
+      "text": "(iii) Within five (5) years after the debtor establishes residence in Wyoming, an action on a foreign claim, judgment or contract, express or implied, contracted or incurred and accrued before the debtor became a resident of Wyoming;",
+      "text_sha256": "e5a37066056e4da40a91cb836a7b93a263f42590d34149062b657f0cf66dcd3e",
+      "publisher_sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f",
+      "retrieved_at": "2026-11-21T17:31:04.475277+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 35, Wyo. Stat. § 1-3-105(a)(iii), statutory text"
+    },
+    "e43f88c278ae472dcec4677aded5a9": {
+      "source_id": "US-WY:wrongful_death_limitations:7a76a5d194d2",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. § 1-38-102(d)",
+      "text": "(d) An action for wrongful death shall be commenced within two (2) years after the death of the decedent.",
+      "text_sha256": "51d5da107bd399d1dc09fb0bd4b99e6ad60392cea2a9910ccf08b13afe5656a6",
+      "publisher_sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f",
+      "retrieved_at": "2026-11-21T17:31:04.475277+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 304, Wyo. Stat. § 1-38-102(d), statutory text"
+    },
+    "806f55bc6467bfc620be133010b3f1": {
+      "source_id": "US-WY:venue:c3344625c0c6",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. § 1-5-107",
+      "text": "An action, other than one (1) of those mentioned in W.S. 1-5-101 through 1-5-104, against a nonresident of this state or a foreign corporation, whether or not codefendants reside in Wyoming, may be brought in any county where the cause of action arose or where the plaintiff resides.",
+      "text_sha256": "239e7ad63d26df7797f1625a3ac9433c4cbebab3ca3554fb4f143d2d5062cb14",
+      "publisher_sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f",
+      "retrieved_at": "2026-11-21T17:31:04.475277+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 42, Wyo. Stat. § 1-5-107, statutory text"
+    },
+    "126f76a5301bfa1b094547374798c3": {
+      "source_id": "US-WY:venue:d7104a6ccd01",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. § 1-5-108",
+      "text": "Every action not otherwise provided for in this chapter shall be brought in the county in which a defendant resides or may be summoned, except actions against an executor, administrator, guardian or trustee, which may be brought in the county where he was appointed or resides. If the action involves two (2) or more defendants, the action may be brought against all defendants in any county in which one (1) of the defendants resides or may be summoned.",
+      "text_sha256": "03bc0235e3d409e33e345a50cad3f2935d3b569aca9e87028ac3f2736e65f57e",
+      "publisher_sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f",
+      "retrieved_at": "2026-11-21T17:31:04.475277+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 42, Wyo. Stat. § 1-5-108, statutory text"
+    },
+    "687fc362bbf87e36723bff9bad4cbe": {
+      "source_id": "US-WY:venue:03224c44a1b4",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. § 1-5-109",
+      "text": "An action for personal injuries or wrongful death may be brought in the county in which the cause of action arose or in the county in which the defendant resides or may be summoned.",
+      "text_sha256": "abd8909c4eef873f3bc628f919ea35a670263f51c0363290d12feaa245db93af",
+      "publisher_sha256": "44b895e013260515acaedb4ba103fb746bf53e73c973d533ea66a98067433a9f",
+      "retrieved_at": "2026-11-21T17:31:04.475277+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 42, Wyo. Stat. § 1-5-109, statutory text"
+    },
+    "2e31f4396aa0dda6e2bcc786a929e6": {
+      "source_id": "US-WY:consumer_private_action:657e2c9de3c3",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. § 40-12-108(a)",
+      "text": "(a) A person relying upon an uncured unlawful deceptive trade practice may bring an action under this act for the damages he has actually suffered as a consumer as a result of such unlawful deceptive trade practice.",
+      "text_sha256": "c12200b1d651b0e4e5fbaf2c24a7ade2b301a7896da321d6ffac81398d2f1027",
+      "publisher_sha256": "2a7e997e4a18abb2eb8cc0f0a50f2ec030c338d9edbba3e82958399f05c1e301",
+      "retrieved_at": "2026-11-21T21:58:25.928602+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 72, Wyo. Stat. § 40-12-108(a), statutory text"
+    },
+    "833f2da085cba4b3a3740111873af3": {
+      "source_id": "US-WY:consumer_remedies:8afa651d93e4",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. § 40-12-108(b)",
+      "text": "(b) Any person who is entitled to bring an action under subsection (a) of this section on his own behalf against an alleged violator of this act for damages for an unlawful deceptive trade practice may bring a class action against such person on behalf of any class of persons of which he is a member and which has been damaged by such unlawful deceptive trade practice, subject to and pursuant to the Wyoming Rules of Civil Procedure governing class actions, except as herein expressly provided. If the court determines that actual damages have been suffered by reason of the unlawful deceptive trade practice, the court shall award reasonable attorney's fees to the plaintiffs in a class action under this subsection, provided that such fees shall be determined by the amount of time reasonably expended by the attorney for the plaintiffs and not by the amount of the judgment. Any monies or property recovered in a class action under this subsection which cannot, with due diligence, be restored to consumers within one (1) year after judgment becomes final shall be returned to the party depositing the same.",
+      "text_sha256": "f125e1cb2e3f52979976a7eed8567b1bd234c3dd20939f69ef1f37d64276eb69",
+      "publisher_sha256": "2a7e997e4a18abb2eb8cc0f0a50f2ec030c338d9edbba3e82958399f05c1e301",
+      "retrieved_at": "2026-11-21T21:58:25.928602+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 72–73, Wyo. Stat. § 40-12-108(b), statutory text"
+    },
+    "56efdfb7ec204cd94904722360b87d": {
+      "source_id": "US-WY:consumer_pre_suit_notice:65ef502a0800",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. § 40-12-109, notice provisions",
+      "text": "No action may be brought under this act, except under W.S. 40-12-106, unless the consumer bringing the action gives within the following time limits notice in writing to the alleged violator of the act, (a) within one (1) year after the initial discovery of the unlawful deceptive trade practice, (b) within two (2) years following such consumer transaction, whichever occurs first, and unless the unlawful deceptive trade practice becomes an uncured unlawful deceptive trade practice as defined in this act. The notice required under this section shall state fully the nature of the alleged unlawful deceptive trade practice and the actual damage suffered therefrom.",
+      "text_sha256": "0e6e918f381f5a101612a81fb906a63df6449a07779b07a372907957cf18cb17",
+      "publisher_sha256": "2a7e997e4a18abb2eb8cc0f0a50f2ec030c338d9edbba3e82958399f05c1e301",
+      "retrieved_at": "2026-11-21T21:58:25.928602+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 73, Wyo. Stat. § 40-12-109, notice provisions, statutory text"
+    },
+    "69f94a4d64acd91b9e8de9d05b0c98": {
+      "source_id": "US-WY:consumer_limitations:52c1d3cfe130",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. § 40-12-109, final sentence",
+      "text": "No action may be brought under this act, except under W.S. 40-12-106, unless said action is initiated within one (1) year after the furnishing of notice as required under this section.",
+      "text_sha256": "b449088d27f9f449f98222a2c8e6a578066f6bd3aa4b4d5633ba5adc4d9e6672",
+      "publisher_sha256": "2a7e997e4a18abb2eb8cc0f0a50f2ec030c338d9edbba3e82958399f05c1e301",
+      "retrieved_at": "2026-11-21T21:58:25.928602+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 73, Wyo. Stat. § 40-12-109, final sentence, statutory text"
+    },
+    "ffa7e5b631f9003b0e612cafcbeb91": {
+      "source_id": "US-WY:consumer_agency:3807952eca6b",
+      "authority_type": "statute",
+      "citation": "Wyo. Stat. § 40-12-106",
+      "text": "Whenever the enforcing authority has reasonable cause to believe that any person has engaged in, is engaging in, or is about to engage in any practice which is unlawful under W.S. 40-12-104 or 40-12-105, and that proceedings would be in the public interest, he may bring an action in the name of this state against such person to restrain by temporary restraining order or preliminary or permanent injunction the use of such practice. The action may be brought in the district court of the county in which the person resides or has his principal place of business or in the district court of Laramie county, Wyoming. The district court may issue temporary restraining orders, including ex parte temporary restraining orders, or preliminary or permanent injunctions, in accordance with the principles of equity, to restrain and prevent violations of this act. The court may make such additional orders or judgments as are necessary to compensate identifiable persons for actual damages or restoration of money or property, real or personal, which may have been acquired by means or any act or practice restrained.",
+      "text_sha256": "34b9627297f91e041c7e3cb9e2cc5a07096ebd4b4d5706333955bce446c3950e",
+      "publisher_sha256": "2a7e997e4a18abb2eb8cc0f0a50f2ec030c338d9edbba3e82958399f05c1e301",
+      "retrieved_at": "2026-11-22T03:38:55.256124+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Wyoming Legislature, Title 40 publication, public-interest enforcement, venue and restoration or compensation."
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "4f0279820e3e29ac76bd9a48816d9f",
+    "source_id": "US-WY:fault:7dd5d5aac4a7",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

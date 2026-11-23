@@ -1,0 +1,892 @@
+{
+  "jurisdiction": "US-PA",
+  "version": "1",
+  "sources": {
+    "US-PA:statutes:5c9c03f36030": {
+      "category": "statutes",
+      "title": "Pennsylvania Statutes and Constitution",
+      "url": "http://government.westlaw.com/linkedslice/default.asp?SP=pac-1000",
+      "directory": "codes",
+      "locator": "Pennsylvania"
+    },
+    "US-PA:constitution:3c55186fe19f": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=00&div=0&chpt=1",
+      "directory": "codes",
+      "locator": "Pennsylvania"
+    },
+    "US-PA:legislature:8dfb5767b380": {
+      "category": "legislature",
+      "title": "General Assembly",
+      "url": "http://www.legis.state.pa.us/",
+      "directory": "codes",
+      "locator": "Pennsylvania"
+    },
+    "US-PA:labor_agency:f17e1e125210": {
+      "category": "labor_agency",
+      "title": "https://www.pa.gov/agencies/dli",
+      "url": "https://www.pa.gov/agencies/dli",
+      "directory": "labor",
+      "locator": "Pennsylvania"
+    },
+    "US-PA:civil_rules:ec59e2b5e61d": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "http://www.pacode.com/secure/data/231/231toc.html",
+      "directory": "procedure",
+      "locator": "Pennsylvania"
+    },
+    "US-PA:consumer_agency:566a9fea45ea": {
+      "category": "consumer_agency",
+      "title": "Pennsylvania (PA)",
+      "url": "https://www.attorneygeneral.gov/protect-yourself/consumer-advisories/",
+      "directory": "consumer",
+      "locator": "Pennsylvania (PA)"
+    },
+    "US-PA:judiciary:74d6304746b2": {
+      "category": "judiciary",
+      "title": "Unified Judicial System",
+      "url": "https://ujsportal.pacourts.us/",
+      "directory": "doj-PA",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-PA:judiciary:591c9d1a7ccc": {
+      "category": "judiciary",
+      "title": "court opinions and postings",
+      "url": "https://www.pacourts.us/courts/supreme-court/court-opinions/",
+      "directory": "doj-PA",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-PA:court_directory:2bcb3d1a7fd3": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.pacourts.us/courts/supreme-court/",
+      "directory": "doj-PA",
+      "locator": "Supreme Court"
+    },
+    "US-PA:court_directory:549d4f115bb0": {
+      "category": "court_directory",
+      "title": "Superior Court",
+      "url": "https://www.pacourts.us/courts/superior-court/",
+      "directory": "doj-PA",
+      "locator": "Superior Court"
+    },
+    "US-PA:court_directory:158341c8c089": {
+      "category": "court_directory",
+      "title": "Common Pleas Courts",
+      "url": "https://www.pacourts.us/courts/courts-of-common-pleas/",
+      "directory": "doj-PA",
+      "locator": "Common Pleas Courts"
+    },
+    "US-PA:court_directory:f12126c9f0b8": {
+      "category": "court_directory",
+      "title": "Minor Courts",
+      "url": "https://www.pacourts.us/courts/minor-courts/",
+      "directory": "doj-PA",
+      "locator": "Minor Courts"
+    },
+    "US-PA:court_directory:aa92e82ca18f": {
+      "category": "court_directory",
+      "title": "Philadelphia Municipal Courts",
+      "url": "https://www.courts.phila.gov/municipal/",
+      "directory": "doj-PA",
+      "locator": "Philadelphia Municipal Courts"
+    },
+    "US-PA:constitution:0d175c5051e8": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=0",
+      "directory": "doj-PA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-PA:statutes:967bfd316e7b": {
+      "category": "statutes",
+      "title": "Session Laws",
+      "url": "https://www.palrb.gov/",
+      "directory": "doj-PA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-PA:regulations:29a2d47948ee": {
+      "category": "regulations",
+      "title": "Pennsylvania Code (of Regulations)",
+      "url": "https://www.pacodeandbulletin.gov/Home/Pacode",
+      "directory": "doj-PA",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-PA:pi_limitations:8ad70fb0439d": {
+      "category": "pi_limitations",
+      "title": "42 Pa.C.S. § 5524(2)",
+      "url": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=HTM&ttl=42&div=0&chapter=55&section=24&subsctn=0",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=HTM&ttl=42&div=0&chapter=55&section=24&subsctn=0",
+        "retrieved_at": "2026-11-17T19:34:00.766190+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-PA:written_contract_limitations:d00e9a59b83a": {
+      "category": "written_contract_limitations",
+      "title": "42 Pa.C.S. § 5525(a)(8)",
+      "url": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=HTM&ttl=42&div=0&chapter=55&section=25&subsctn=0",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=HTM&ttl=42&div=0&chapter=55&section=25&subsctn=0",
+        "retrieved_at": "2026-11-17T19:34:00.545556+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-PA:oral_contract_limitations:d00e9a59b83a": {
+      "category": "oral_contract_limitations",
+      "title": "42 Pa.C.S. § 5525(a)(3)",
+      "url": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=HTM&ttl=42&div=0&chapter=55&section=25&subsctn=0",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.palegis.us/statutes/consolidated/view-statute?txtType=HTM&ttl=42&div=0&chapter=55&section=25&subsctn=0",
+        "retrieved_at": "2026-11-17T19:34:00.545556+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-PA:small_claims:9c5084f88396": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.pacourts.us/forms/for-the-public",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.pacourts.us/forms/for-the-public",
+        "retrieved_at": "2026-11-17T19:43:05.580301+00:00",
+        "http_status": "200",
+        "sha256": "9347468bbd64695db3ec4b351380271ef21db4d9c8155b7090e30bbe208797f5",
+        "health": "manual_review_required"
+      }
+    },
+    "US-PA:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 29"
+    },
+    "US-PA:consumerLaw:c825c0e931df": {
+      "title": "73 P.S. § 201-1 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/1968/0/0387..HTM",
+      "directory": "consumer_statutes_index",
+      "locator": "73 P.S. § 201-1 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-PA:contract_formation:a36c3152f580": {
+      "category": "contract_formation",
+      "title": "Glover v. Junior, No. 9 EAP 2024, slip op. at 23 (Pa. Mar. 20, 2025)",
+      "url": "https://www.pacourts.us/assets/opinions/Supreme/out/J-50-2024mo%20-%20106309294303879268.pdf",
+      "locator": "Glover v. Junior, No. 9 EAP 2024, slip op. at 23 (Pa. Mar. 20, 2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:40:10.884333+00:00",
+        "sha256": "fa9a1539ea27ab8a9dab5ae55b9f1c0efcf8cf62050ba87d652f681e0f63397d"
+      }
+    },
+    "US-PA:fault:1deb88482607": {
+      "category": "fault",
+      "title": "Roverano v. John Crane, Inc., Nos. 26 and 27 EAP 2018 (Pa. Feb. 19, 2020)",
+      "url": "https://www.pacourts.us/assets/opinions/Supreme/out/j-10a-2019mo%20-%2010434040095151580.pdf",
+      "locator": "Roverano v. John Crane, Inc., Nos. 26 and 27 EAP 2018 (Pa. Feb. 19, 2020)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T18:57:48.976320+00:00",
+        "sha256": "a46e093f7c4d708e02a3f9467300473ff898970030796c21793310f8159f6239"
+      }
+    },
+    "US-PA:commencement:7aba154e4032": {
+      "category": "commencement",
+      "title": "231 Pa. Code Rule 1007",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/231/chapter1000/s1007.html",
+      "locator": "231 Pa. Code Rule 1007",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:02:16.517447+00:00",
+        "sha256": "80a147b441174e9c820f0b3193a72904329775394799ecdb207e1778e4bd0541"
+      }
+    },
+    "US-PA:response:1200c936a18e": {
+      "category": "response",
+      "title": "231 Pa. Code Rule 1026(a)",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/231/chapter1000/s1026.html",
+      "locator": "231 Pa. Code Rule 1026(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:42:59.773135+00:00",
+        "sha256": "36698c2bb03961ca951c29f27ad7ef96329a1158636832a4d171c0c5fd26dc85"
+      }
+    },
+    "US-PA:service:ddf3c7115cf5": {
+      "category": "service",
+      "title": "231 Pa. Code Rule 402(a)",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/231/chapter400/s402.html",
+      "locator": "231 Pa. Code Rule 402(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:21:03.127415+00:00",
+        "sha256": "f403e3ec6bce46386edb1552ae97892bd7e4f04edb249e4f59d2b10f2b28ca81"
+      }
+    },
+    "US-PA:wrongful_death_limitations:b79986ffd003": {
+      "category": "wrongful_death_limitations",
+      "title": "Wygant v. General Electric Co., 2015 PA Super 56",
+      "url": "https://www.pacourts.us/assets/opinions/Superior/out/J-A35041-14o%20-%201021468483249865.pdf?cb=1",
+      "locator": "Wygant v. General Electric Co., 2015 PA Super 56",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:34:32.474689+00:00",
+        "sha256": "47c37f10f8c597f564ffca1c3bf3ef95a97befede97a7234e9fad973d532c7d3"
+      }
+    },
+    "US-PA:pi_limitations:fa1925704605": {
+      "category": "pi_limitations",
+      "title": "Dubose v. Quinlan, Nos. 21 and 22 EAP 2016, n.3 (Pa. Nov. 22, 2017)",
+      "url": "https://www.pacourts.us/assets/opinions/Supreme/out/Majority%20Opinion%20%20Affirmed%20%2010332878727765858.pdf",
+      "locator": "Dubose v. Quinlan, Nos. 21 and 22 EAP 2016, n.3 (Pa. Nov. 22, 2017)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:43:51.231256+00:00",
+        "sha256": "6a0c67d134c65001da6f87257442eb8b1bfc26832983431ea5e0696d40981f21"
+      }
+    },
+    "US-PA:consumerLaw:bd518d8c885c": {
+      "category": "consumerLaw",
+      "title": "Gregg v. Ameriprise Financial, Inc., No. 29 WAP 2019 (Pa. Feb. 17, 2021)",
+      "url": "https://www.pacourts.us/assets/opinions/Supreme/out/j-31-2020mo%20-%20104690395127764804.pdf",
+      "locator": "Gregg v. Ameriprise Financial, Inc., No. 29 WAP 2019 (Pa. Feb. 17, 2021)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:22:38.296808+00:00",
+        "sha256": "fd6d368933e4da9b9fb14b429e6dbabfa167e8431df6e29f3b852588256b4e50"
+      }
+    },
+    "US-PA:wageLaw:1416faa8bec3": {
+      "category": "wageLaw",
+      "title": "43 P.S. § 260.3(a) (Wage Payment and Collection Law § 3(a))",
+      "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/dli/documents/documents/regulations/llc/wpclaw.pdf",
+      "locator": "43 P.S. § 260.3(a) (Wage Payment and Collection Law § 3(a))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:41:00.166923+00:00",
+        "sha256": "7a4b984415b9c878c0996992faa729eb1d582317c9d70d3be30b868276540a2a"
+      }
+    },
+    "US-PA:deposit:f08239148216": {
+      "category": "deposit",
+      "title": "Nitardy v. Chabot, 2018 PA Super 255",
+      "url": "https://www.pacourts.us/assets/opinions/Superior/out/Opinion%20%20AffirmedVacatedRemanded%20%2010369901642044227.pdf?cb=1",
+      "locator": "Nitardy v. Chabot, 2018 PA Super 255",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:20:49.817299+00:00",
+        "sha256": "d99120cf975bccf75d905e732e5e6949244e7da57fc87016f4a38b3a1230b1ac"
+      }
+    },
+    "US-PA:debtLaw:871ec58af51a": {
+      "category": "debtLaw",
+      "title": "Matteo v. EOS USA, Inc., 2023 PA Super 51, slip op. at 16",
+      "url": "https://www.pacourts.us/assets/opinions/Superior/out/J-A06036-23o.pdf",
+      "locator": "Matteo v. EOS USA, Inc., 2023 PA Super 51, slip op. at 16",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:30:27.848552+00:00",
+        "sha256": "43dbdca9cc54715e9ab265e67e11239bc84c416273880f5de2c8478e1ab3e1cd"
+      }
+    },
+    "US-PA:small_claims:fc452edab657": {
+      "category": "small_claims",
+      "title": "Pa. R. Civ. P. M.D.J. 303",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/246/chapter300/246_0300.pdf",
+      "locator": "Pa. R. Civ. P. M.D.J. 303",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:31:13.418668+00:00",
+        "sha256": "d759fad237cb7f4e5688ffcc0a6158e28b587402add1c777e2804616f8002521"
+      }
+    },
+    "US-PA:small_claims:f83a137ea622": {
+      "category": "small_claims",
+      "title": "Pa. R. Civ. P. M.D.J. 305(a)",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/246/chapter300/246_0300.pdf",
+      "locator": "Pa. R. Civ. P. M.D.J. 305(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:31:13.418668+00:00",
+        "sha256": "d759fad237cb7f4e5688ffcc0a6158e28b587402add1c777e2804616f8002521"
+      }
+    },
+    "US-PA:small_claims:dd37ac6598f4": {
+      "category": "small_claims",
+      "title": "Pa. R. Civ. P. M.D.J. 307(1)",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/246/chapter300/246_0300.pdf",
+      "locator": "Pa. R. Civ. P. M.D.J. 307(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:31:13.418668+00:00",
+        "sha256": "d759fad237cb7f4e5688ffcc0a6158e28b587402add1c777e2804616f8002521"
+      }
+    },
+    "US-PA:negligence_elements:043b69c736d7": {
+      "category": "negligence_elements",
+      "title": "Harris v. Hutchinson Sportsmen’s Club, 2026 PA Super 21, slip op. at 14",
+      "url": "https://www.pacourts.us/assets/opinions/Superior/out/J-A02020-26o%20-%20106668446345858497.pdf?cb=1",
+      "locator": "Harris v. Hutchinson Sportsmen’s Club, 2026 PA Super 21, slip op. at 14",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:40:49.771262+00:00",
+        "sha256": "7f779711dd371d869606113cbbc31d7e22a88ea3967e2e352c47f1679331480e"
+      }
+    },
+    "US-PA:premises:a3af9875e184": {
+      "category": "premises",
+      "title": "Harris v. Hutchinson Sportsmen’s Club, 2026 PA Super 21, slip op. at 15",
+      "url": "https://www.pacourts.us/assets/opinions/Superior/out/J-A02020-26o%20-%20106668446345858497.pdf?cb=1",
+      "locator": "Harris v. Hutchinson Sportsmen’s Club, 2026 PA Super 21, slip op. at 15",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:40:49.771262+00:00",
+        "sha256": "7f779711dd371d869606113cbbc31d7e22a88ea3967e2e352c47f1679331480e"
+      }
+    },
+    "US-PA:oral_contract_limitations:02dfb2664d61": {
+      "category": "oral_contract_limitations",
+      "title": "42 Pa. Cons. Stat. § 5525(a)(3)",
+      "url": "https://web.archive.org/web/20260514062253id_/https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/42/00.055..HTM",
+      "locator": "42 Pa. Cons. Stat. § 5525(a)(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:54:39.173718+00:00",
+        "sha256": "58dae8a1a66ef762fa8e0ccea1c853407badfda59a5a7b5d391131debefa7414"
+      }
+    },
+    "US-PA:written_contract_limitations:bbd52d110392": {
+      "category": "written_contract_limitations",
+      "title": "42 Pa. Cons. Stat. § 5525(a)(8)",
+      "url": "https://web.archive.org/web/20260514062253id_/https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/42/00.055..HTM",
+      "locator": "42 Pa. Cons. Stat. § 5525(a)(8)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:54:39.173718+00:00",
+        "sha256": "58dae8a1a66ef762fa8e0ccea1c853407badfda59a5a7b5d391131debefa7414"
+      }
+    },
+    "US-PA:service_time_limit:2f1553cfb444": {
+      "category": "service_time_limit",
+      "title": "Pa. R. Civ. P. 401(a)",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/231/chapter400/s401.html",
+      "locator": "Pa. R. Civ. P. 401(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T23:01:23.420201+00:00",
+        "sha256": "4044847dca5596dedd37fbc9b12fd2ff5709790e6c352571b4f58de0e31e7fed"
+      }
+    },
+    "US-PA:service_time_limit:a24e32b88e02": {
+      "category": "service_time_limit",
+      "title": "Pa. R. Civ. P. 401(b)(1)–(2)",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/231/chapter400/s401.html",
+      "locator": "Pa. R. Civ. P. 401(b)(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T23:01:23.420201+00:00",
+        "sha256": "4044847dca5596dedd37fbc9b12fd2ff5709790e6c352571b4f58de0e31e7fed"
+      }
+    },
+    "US-PA:service_time_limit:c724f892820b": {
+      "category": "service_time_limit",
+      "title": "Pa. R. Civ. P. 401(b)(3)–(5)",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/231/chapter400/s401.html",
+      "locator": "Pa. R. Civ. P. 401(b)(3)–(5)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T23:01:23.420201+00:00",
+        "sha256": "4044847dca5596dedd37fbc9b12fd2ff5709790e6c352571b4f58de0e31e7fed"
+      }
+    },
+    "US-PA:service_time_limit:25539229fd32": {
+      "category": "service_time_limit",
+      "title": "Pa. R. Civ. P. 404 (outside-Commonwealth timing)",
+      "url": "https://www.pacodeandbulletin.gov/secure/pacode/data/231/chapter400/s404.html",
+      "locator": "Pa. R. Civ. P. 404 (outside-Commonwealth timing)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T23:01:23.438402+00:00",
+        "sha256": "a06b6ad2df731ea0fcb797e633784f6695b8ee18d9b53ad014b116332887b4da"
+      }
+    },
+    "US-PA:service_time_limit:a20d2539436f": {
+      "category": "service_time_limit",
+      "title": "Ferraro v. Patterson-Erie Corp., 313 A.3d 987 (Pa. 2024) (service diligence)",
+      "url": "https://www.pacourts.us/assets/opinions/Supreme/out/J-54-2023mo%20-%20105914276263727865.pdf?cb=1",
+      "locator": "Ferraro v. Patterson-Erie Corp., 313 A.3d 987 (Pa. 2024) (service diligence)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T23:06:14.591721+00:00",
+        "sha256": "74c1c2c4105f72fdf14599359449f8825141eea71be807c78ce719ca4b80c23c"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-PA:court:9cebe6e3a4b7",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-PA:court_directory:2bcb3d1a7fd3"
+    },
+    {
+      "id": "US-PA:court:bc562392834b",
+      "name": "Superior Court",
+      "level": "appellate_directory",
+      "source_id": "US-PA:court_directory:549d4f115bb0"
+    },
+    {
+      "id": "US-PA:court:38a0e84767f4",
+      "name": "Common Pleas Courts",
+      "level": "trial_directory",
+      "source_id": "US-PA:court_directory:158341c8c089"
+    },
+    {
+      "id": "US-PA:court:a6de0b955e5c",
+      "name": "Minor Courts",
+      "level": "trial_directory",
+      "source_id": "US-PA:court_directory:f12126c9f0b8"
+    },
+    {
+      "id": "US-PA:court:dfd0550debc9",
+      "name": "Philadelphia Municipal Courts",
+      "level": "trial_directory",
+      "source_id": "US-PA:court_directory:aa92e82ca18f"
+    },
+    {
+      "id": "US-PA:court:3fe628f13bfa",
+      "name": "Common Pleas",
+      "level": "general_trial",
+      "source_id": "US-PA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-PA:court:1edc7a31c8d1",
+      "name": "Philadelphia Municipal",
+      "level": "limited_trial",
+      "source_id": "US-PA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-PA:court:e2ccea8919b9",
+      "name": "Magisterial District Judge",
+      "level": "limited_trial",
+      "source_id": "US-PA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-PA:court:26bf679c2acf",
+      "name": "Philadelphia Traffic",
+      "level": "limited_trial",
+      "source_id": "US-PA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "42 Pa.C.S. § 5524(2)",
+      "source_id": "US-PA:pi_limitations:8ad70fb0439d",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "42 Pa.C.S. § 5525(a)(8)",
+      "source_id": "US-PA:written_contract_limitations:d00e9a59b83a",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "42 Pa.C.S. § 5525(a)(3)",
+      "source_id": "US-PA:oral_contract_limitations:d00e9a59b83a",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "68 PA. Cons. Stat. § 250.501. Notice to quit",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "73 P.S. § 201-1 et seq.",
+      "source_id": "US-PA:consumerLaw:c825c0e931df",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "ad108775f4ad9df81862a3cd47c997": {
+      "source_id": "US-PA:contract_formation:a36c3152f580",
+      "authority_type": "opinion",
+      "citation": "Glover v. Junior, No. 9 EAP 2024, slip op. at 23 (Pa. Mar. 20, 2025)",
+      "text": "General acquiescence to a course of conduct is not sufficient “mutual assent” to establish an oral contract; the parties must each know the terms of the contract and they must both assent to those terms, i.e., there must be an “offer” and an “acceptance” as defined by our common law contract principles.",
+      "text_sha256": "2361bd90a0988e38d3d0306c6772b50c0e9f1f01979285d7e6b8abfd31b0af4c",
+      "publisher_sha256": "fa9a1539ea27ab8a9dab5ae55b9f1c0efcf8cf62050ba87d652f681e0f63397d",
+      "retrieved_at": "2026-11-18T20:40:10.884333+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2025-03-20",
+      "court": "Supreme Court of Pennsylvania",
+      "decision_date": "2025-03-20",
+      "opinion_role": "majority",
+      "procedural_posture": "Parentage appeal. The court affirmed on the ground of intent-based parentage."
+    },
+    "8a0025acf6d1ff898eba6b9a092d4f": {
+      "source_id": "US-PA:fault:1deb88482607",
+      "authority_type": "opinion",
+      "citation": "Roverano v. John Crane, Inc., Nos. 26 and 27 EAP 2018 (Pa. Feb. 19, 2020)",
+      "text": "(a) General rule.--In all actions brought to recover damages for negligence resulting in death or injury to person or property, the fact that the plaintiff may have been guilty of contributory negligence shall not bar a recovery by the plaintiff or his legal representative where such negligence was not greater than the causal negl igence of the defendant or defendants against whom recovery is sought, but any damages sustained by the plaintiff shall be diminished in proportion to the amount of negligence attributed to the plaintiff.",
+      "text_sha256": "79ead704bfc07601ffb26d05e4511329b4a992db8ae76f5a016adecc7e4a82e3",
+      "publisher_sha256": "a46e093f7c4d708e02a3f9467300473ff898970030796c21793310f8159f6239",
+      "retrieved_at": "2026-11-19T18:57:48.976320+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2020-02-19",
+      "court": "Supreme Court of Pennsylvania",
+      "decision_date": "2020-02-19",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal concerning allocation in asbestos strict-liability litigation."
+    },
+    "b61af7070d51da2afde0ada0df7236": {
+      "source_id": "US-PA:commencement:7aba154e4032",
+      "authority_type": "court_rule",
+      "citation": "231 Pa. Code Rule 1007",
+      "text": "An action may be commenced by filing with the prothonotary: (1) a praecipe for a writ of summons, or (2) a complaint. Official Note For the form of the writ of summons, see Rule 1351. See Rule 205.5 governing the requirement for filing a cover sheet with the pleading commencing the action. Rule 2005(b) does not authorize the filing of a praecipe for a writ of summons if an unknown defendant is to be identified by a Doe designation.",
+      "text_sha256": "c60bea32018f4107ac2fbae2f582152401c85f5024100363877397455f4d725a",
+      "publisher_sha256": "80a147b441174e9c820f0b3193a72904329775394799ecdb207e1778e4bd0541",
+      "retrieved_at": "2026-11-19T19:02:16.517447+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Pennsylvania Court of Common Pleas",
+      "effective_from": "2019-04-01"
+    },
+    "b52c38abb3ca7fb3ab37109994a2bd": {
+      "source_id": "US-PA:response:1200c936a18e",
+      "authority_type": "court_rule",
+      "citation": "231 Pa. Code Rule 1026(a)",
+      "text": "(a) Except as provided by Rule 1042.4 or by subdivision (b) of this rule, every pleading subsequent to the complaint shall be filed within twenty days after service of the preceding pleading, but no pleading need be filed unless the preceding pleading contains a notice to defend or is endorsed with a notice to plead.",
+      "text_sha256": "63dd0dd817e0d5bfb6b0f051c668766f2decbf84825cefd7be0a6d8f180652ea",
+      "publisher_sha256": "36698c2bb03961ca951c29f27ad7ef96329a1158636832a4d171c0c5fd26dc85",
+      "retrieved_at": "2026-11-19T19:42:59.773135+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Pennsylvania Court of Common Pleas"
+    },
+    "2f43030b53cdeab6ba9216f6a5ca70": {
+      "source_id": "US-PA:service:ddf3c7115cf5",
+      "authority_type": "court_rule",
+      "citation": "231 Pa. Code Rule 402(a)",
+      "text": "(a) Original process may be served (1) by handing a copy to the defendant; or (2) by handing a copy (i) at the residence of the defendant to an adult member of the family with whom he resides; but if no adult member of the family is found, then to an adult person in charge of such residence; or (ii) at the residence of the defendant to the clerk or manager of the hotel, inn, apartment house, boarding house or other place of lodging at which he resides; or (iii) at any office or usual place of business of the defendant to his agent or to the person for the time being in charge thereof.",
+      "text_sha256": "dacb2385fe8c2fe5f6a720c5d15434fccb439c481d5f30daebfc0fd8743d9663",
+      "publisher_sha256": "f403e3ec6bce46386edb1552ae97892bd7e4f04edb249e4f59d2b10f2b28ca81",
+      "retrieved_at": "2026-11-20T15:21:03.127415+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Pennsylvania Court of Common Pleas"
+    },
+    "f5a94afb296dc31736b56919c3143c": {
+      "source_id": "US-PA:wrongful_death_limitations:b79986ffd003",
+      "authority_type": "opinion",
+      "citation": "Wygant v. General Electric Co., 2015 PA Super 56",
+      "text": "Generally, 42 Pa.C.S. § 5502(a) supplies the commencement date for limitations periods under § 5524(2), and provides that the two-year period is computed “ from the time the cause of action accrued.” The accrual date for a survival action is the date of the tort; a wrongful death action generally accrues when the cause of action can be maintained to a successful conclusion, i.e., the date of death. See Matharu v. Muir , 29 A.3d 375, 383 (Pa.Super. 2011). However, 42 Pa.C.S. § 5502(b) provides that the §5502(a) accrual date “may be made more specifically applicable to particular classes of matters by general rules defining the acts, omissions or events from which the limitation shall be computed. ” Section 5524(8) is the type of rule contemplated in 42 Pa.C.S. § 5502(b) because the legislature has specifically defined the event from which the statute of limitations for asbestos claims is to be computed. The statutory language, on its face, indicates that the legislature intended to measure the time for commencing all asbestos-related actions, including wrongful death actions, from the date of formal diagnosis or from the date when the affected person knew or should have known with the exercise of reasonable diligence of the asbestos-related injury.",
+      "text_sha256": "d8d6f6f2d2ea5b3ec99e09e65b184aa14e42ec960845c739517d4f2f770f344d",
+      "publisher_sha256": "47c37f10f8c597f564ffca1c3bf3ef95a97befede97a7234e9fad973d532c7d3",
+      "retrieved_at": "2026-11-20T15:34:32.474689+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2015-03-19",
+      "court": "Superior Court of Pennsylvania",
+      "decision_date": "2015-03-19",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissal of wrongful-death claims involving asbestos exposure. The opinion distinguishes general accrual from a special asbestos limitation."
+    },
+    "2e42fe8b1ffb987bb26b337b9fb46c": {
+      "source_id": "US-PA:pi_limitations:fa1925704605",
+      "authority_type": "opinion",
+      "citation": "Dubose v. Quinlan, Nos. 21 and 22 EAP 2016, n.3 (Pa. Nov. 22, 2017)",
+      "text": "42 Pa.C.S. § 5524 provides a two-year statute of limitations for personal injury actions: § 5524. Two year limitation The following actions and proceedings must be commenced within two years: . . . (2) An action to recover damages for injuries to the person or for the death of an individual caused by the wrongful act or neglect or unlawful violence or negligence of another. 42 Pa.C.S. § 5524(2).",
+      "text_sha256": "115979e549b0017fcf440ecc665683ba10361e5d31eb7b352fefc012d8630a9f",
+      "publisher_sha256": "6a0c67d134c65001da6f87257442eb8b1bfc26832983431ea5e0696d40981f21",
+      "retrieved_at": "2026-11-20T15:43:51.231256+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2017-11-22",
+      "court": "Supreme Court of Pennsylvania",
+      "decision_date": "2017-11-22",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal by allowance in a medical professional liability survival action. The majority reproduced the ordinary statute and applied the specific medical professional liability provision."
+    },
+    "0c9b607d93660ab6d23e89f125af39": {
+      "source_id": "US-PA:consumerLaw:bd518d8c885c",
+      "authority_type": "opinion",
+      "citation": "Gregg v. Ameriprise Financial, Inc., No. 29 WAP 2019 (Pa. Feb. 17, 2021)",
+      "text": "Apparently dissatisfied with this restrictive interpretation, in 1996, the General Assembly expanded the unlawful conduct barred by the catch-all provision so as also to prohibit deceptive conduct. The resulting iteration bars “engaging in any other fraudulent or deceptive conduct which creates a likelihood of confusion or of misunderstanding.” 73 P.S. § 201-2(4)(xxi) (1996).",
+      "text_sha256": "d5602a4d9ad0a9364c53e198be6d403dae5c6bfd73ebf25e3091db333e4baf71",
+      "publisher_sha256": "fd6d368933e4da9b9fb14b429e6dbabfa167e8431df6e29f3b852588256b4e50",
+      "retrieved_at": "2026-11-20T16:22:38.296808+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2021-02-17",
+      "court": "Supreme Court of Pennsylvania",
+      "decision_date": "2021-02-17",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of judgment in a private consumer action based on insurance and investment sales. The court considered the 1996 amendment to the consumer statute."
+    },
+    "5f7cca4caeda06aae5fa595aebd666": {
+      "source_id": "US-PA:wageLaw:1416faa8bec3",
+      "authority_type": "statute",
+      "citation": "43 P.S. § 260.3(a) (Wage Payment and Collection Law § 3(a))",
+      "text": "(a) Wages other than fringe benefits and wage supplements. Every employer shall pay all wages, other than fringe benefits and wage supplements, due to his employes on regular paydays designated in advance by the employer. Overtime wages may be considered as wages earned and payable in the next succeeding pay period. All wages, other than fringe benefits and wage supplements, earned in any pay period shall be due and payable within the number of days after the expiration of said pay period as provided in a written contract of employment or, if not so specified, within the standard time lapse customary in the trade or within 15 days from the end of such pay period. The wages shall be paid in lawful money of the United States or check, except that deductions provided by law, or as authorized by regulation of the Department of Labor and Industry for the convenience of the employe, may be made including deductions of contributions to employe benefit plans which are subject to the Employee Retirement Income Security Act of 1974, 29 U.S.C. §1001 et seq.",
+      "text_sha256": "1ddf65bc68594d7549bdac056176fcd19cf7571c2f62186c6698c3c35b8541c8",
+      "publisher_sha256": "7a4b984415b9c878c0996992faa729eb1d582317c9d70d3be30b868276540a2a",
+      "retrieved_at": "2026-11-20T17:41:00.166923+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "54ebbf788db3fa31d402068ce35634": {
+      "source_id": "US-PA:deposit:f08239148216",
+      "authority_type": "opinion",
+      "citation": "Nitardy v. Chabot, 2018 PA Super 255",
+      "text": "Since the Act requires that the landlord return the security deposit less the “actual damages” to the property, the “written list of any damages” must be specific enough so that the landlord can value the “actual damages” and notify the tenant of the basis for deducting amounts from the security deposit.",
+      "text_sha256": "a2b51cc881852546feea516d020edefaf7cc6a5f269b4eeb8e7a1a03951f8d74",
+      "publisher_sha256": "d99120cf975bccf75d905e732e5e6949244e7da57fc87016f4a38b3a1230b1ac",
+      "retrieved_at": "2026-11-20T23:20:49.817299+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2018-09-14",
+      "court": "Superior Court of Pennsylvania",
+      "decision_date": "2018-09-14",
+      "opinion_role": "majority",
+      "procedural_posture": "Landlord appeal after a nonjury trial. The panel addressed the adequacy of the list of damages used to deduct from a residential security deposit."
+    },
+    "54cfdfe28effcd090681834747fde7": {
+      "source_id": "US-PA:debtLaw:871ec58af51a",
+      "authority_type": "opinion",
+      "citation": "Matteo v. EOS USA, Inc., 2023 PA Super 51, slip op. at 16",
+      "text": "a violation of the FDCPA constitutes an unfair or deceptive debt collection act or practice under FCEUA. See 73 P.S. § 2270.4(a). However, the FCEUA does not have its own private cause of action. Instead, pursuant to the enforcement and penalties provision of Section 2270.5 of the FCEUA, “If a debt collector or creditor engages in an unfair or deceptive debt collection act or practice under this act, it shall constitute a violation of the [UTPCPL].” 73 P.S. § 2270.5(a) (emphases added). In other words, if a debt collector violates the FDCPA, it is an unfair or deceptive debt collection act under the FCEUA, which is a violation of the UTPCPL.",
+      "text_sha256": "4478ac38ea5a2040f678b92c4bfa76af2ad2479292762a9a3ed19aee55b2c82a",
+      "publisher_sha256": "43dbdca9cc54715e9ab265e67e11239bc84c416273880f5de2c8478e1ab3e1cd",
+      "retrieved_at": "2026-11-20T23:30:27.848552+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2023-03-30",
+      "court": "Superior Court of Pennsylvania",
+      "decision_date": "2023-03-30",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal in a putative class case from an order sustaining preliminary objections. The panel addressed enforcement of the state debt collection statute through the UTPCPL."
+    },
+    "7f48d95deb73559802984871ae4180": {
+      "source_id": "US-PA:small_claims:f83a137ea622",
+      "authority_type": "court_rule",
+      "citation": "Pa. R. Civ. P. M.D.J. 305(a)",
+      "text": "The magisterial district judge, at the time the complaint is filed, shall: (a) Set a hearing date which shall be not less than 12 or more than 60 days from the date the complaint is filed.",
+      "text_sha256": "3c845c06603b4b0c2bd655b27e9b5c3551cded3517b2759423fef9b76a82d1f2",
+      "publisher_sha256": "d759fad237cb7f4e5688ffcc0a6158e28b587402add1c777e2804616f8002521",
+      "retrieved_at": "2026-11-20T23:31:13.418668+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "9a1035d1d2e202883cfd00349b2d21": {
+      "source_id": "US-PA:small_claims:dd37ac6598f4",
+      "authority_type": "court_rule",
+      "citation": "Pa. R. Civ. P. M.D.J. 307(1)",
+      "text": "Service shall be made at least ten days before the hearing, in the following manner: (1) A copy of the complaint for each defendant shall be delivered by the magisterial district judge for service to the sheriff of, or any certified constable in, the county in which the magisterial district of the magisterial district judge is situated. If this service is not available to the magisterial district judge, service may be made by any certified constable of the Commonwealth. If the complaint is delivered for service to the sheriff and service is to be made in a county other than the one in which the magisterial district of the magisterial district judge is situated, the sheriff shall deputize the sheriff of the county in which service is to be made. A certified constable may serve the complaint anywhere in the Commonwealth.",
+      "text_sha256": "1e9c05877f4c22c4d56e86b77c297fbb62151387c6b8211f48148c1d64c3a55a",
+      "publisher_sha256": "d759fad237cb7f4e5688ffcc0a6158e28b587402add1c777e2804616f8002521",
+      "retrieved_at": "2026-11-20T23:31:13.418668+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "4660de701430b16bb6729216a52235": {
+      "source_id": "US-PA:small_claims:fc452edab657",
+      "authority_type": "court_rule",
+      "citation": "Pa. R. Civ. P. M.D.J. 303",
+      "text": "An action shall be commenced by the filing of a complaint.",
+      "text_sha256": "34143d5bf21563278c51cc24c8553a81362bb90781810c74c826af24e7a65d5f",
+      "publisher_sha256": "d759fad237cb7f4e5688ffcc0a6158e28b587402add1c777e2804616f8002521",
+      "retrieved_at": "2026-11-20T23:31:13.418668+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "0bd20db68840f1d769a0aa92af5e55": {
+      "source_id": "US-PA:negligence_elements:043b69c736d7",
+      "authority_type": "opinion",
+      "citation": "Harris v. Hutchinson Sportsmen’s Club, 2026 PA Super 21, slip op. at 14",
+      "text": "To establish a viable cause of action for negligence, the plaintiff must demonstrate the following four elements: (1) a duty or obligation recognized by the law that requires an actor to conform his actions to a standard of conduct for the protection of others against unreasonable risks; (2) failure on the part of the defendant to conform to that standard of conduct, i.e., a breach of duty; (3) a reasonably close causal connection between the breach of duty and the injury sustained; and (4) actual loss or damages that result from the breach. Shellenberger, 288 A.3d at 906 (citation omitted).",
+      "text_sha256": "499e2bb8f373bf8baf729a7f460bf65d58351f175d78a86116da80ecea34d8c3",
+      "publisher_sha256": "7f779711dd371d869606113cbbc31d7e22a88ea3967e2e352c47f1679331480e",
+      "retrieved_at": "2026-11-20T23:40:49.771262+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2026-02-04",
+      "court": "Superior Court of Pennsylvania",
+      "decision_date": "2026-02-04",
+      "opinion_role": "majority",
+      "procedural_posture": "Published panel opinion affirming summary judgment in a personal injury action arising from an alleged dangerous condition on a road."
+    },
+    "bbf7d23eb2f116ece5a84449d11972": {
+      "source_id": "US-PA:premises:a3af9875e184",
+      "authority_type": "opinion",
+      "citation": "Harris v. Hutchinson Sportsmen’s Club, 2026 PA Super 21, slip op. at 15",
+      "text": "However, our Supreme Court has recognized that a possessor of land “is not liable to his invitees for physical harm caused to them by any activity or condition on the land whose danger is known or obvious to them, unless the possessor should anticipate the harm despite such knowledge or obviousness.” Carrender v. Fitterer, 469 A.2d 120, 123 (Pa. 1983) (quoting Restatement (Second) of Torts § 343A).",
+      "text_sha256": "43d56f20dc699e472d866b06f530019952f3e03b2a8cf096143fcaa715be9d0c",
+      "publisher_sha256": "7f779711dd371d869606113cbbc31d7e22a88ea3967e2e352c47f1679331480e",
+      "retrieved_at": "2026-11-20T23:40:49.771262+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2026-02-04",
+      "court": "Superior Court of Pennsylvania",
+      "decision_date": "2026-02-04",
+      "opinion_role": "majority",
+      "procedural_posture": "Published panel opinion affirming summary judgment in a personal injury action arising from an alleged dangerous condition on a road."
+    },
+    "233afb87578c57d12aedd948ee4772": {
+      "source_id": "US-PA:oral_contract_limitations:02dfb2664d61",
+      "authority_type": "statute",
+      "citation": "42 Pa. Cons. Stat. § 5525(a)(3)",
+      "text": "(a) General rule.-- Except as provided for in subsection (b), the following actions and proceedings must be commenced within four years: (3) An action upon an express contract not founded upon an instrument in writing.",
+      "text_sha256": "ff533182b5b82acbeebd3b1725af0c1d4417ab1ab0d464ea1925d3912b2daba1",
+      "publisher_sha256": "58dae8a1a66ef762fa8e0ccea1c853407badfda59a5a7b5d391131debefa7414",
+      "retrieved_at": "2026-11-21T16:54:39.173718+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Pennsylvania General Assembly archive captured May 14, 2026",
+      "publisher_member": "Pennsylvania General Assembly chapter 55, § 5525(a)(3) with subdivision (a) lead-in"
+    },
+    "7f9355bec5db081af7d7387787010a": {
+      "source_id": "US-PA:written_contract_limitations:bbd52d110392",
+      "authority_type": "statute",
+      "citation": "42 Pa. Cons. Stat. § 5525(a)(8)",
+      "text": "(a) General rule.-- Except as provided for in subsection (b), the following actions and proceedings must be commenced within four years: (8) An action upon a contract, obligation or liability founded upon a writing not specified in paragraph (7), under seal or otherwise, except an action subject to another limitation specified in this subchapter.",
+      "text_sha256": "92db4201a2911da9fac730dc56a0cb172dc63da36bbbb0243a3f6b8a45c3bf51",
+      "publisher_sha256": "58dae8a1a66ef762fa8e0ccea1c853407badfda59a5a7b5d391131debefa7414",
+      "retrieved_at": "2026-11-21T16:54:39.173718+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Pennsylvania General Assembly archive captured May 14, 2026",
+      "publisher_member": "Pennsylvania General Assembly chapter 55, § 5525(a)(8) with subdivision (a) lead-in"
+    },
+    "84b904b85a3821bf13acf524ef06f5": {
+      "source_id": "US-PA:service_time_limit:2f1553cfb444",
+      "authority_type": "court_rule",
+      "citation": "Pa. R. Civ. P. 401(a)",
+      "text": "(a) Original process shall be served within the Commonwealth within 30 days after the issuance of the writ or the filing of the complaint.",
+      "text_sha256": "430e68285ed0465e1e071dde1563dde8f230a3d43f17c28ebbfc322011f20be1",
+      "publisher_sha256": "4044847dca5596dedd37fbc9b12fd2ff5709790e6c352571b4f58de0e31e7fed",
+      "retrieved_at": "2026-11-21T23:01:23.420201+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Pennsylvania Code, statewide civil rules; currentness and case-specific diligence require separate review",
+      "effective_from": "2022-04-01"
+    },
+    "b76112fb8cea196eeca4c0f91c06d3": {
+      "source_id": "US-PA:service_time_limit:a24e32b88e02",
+      "authority_type": "court_rule",
+      "citation": "Pa. R. Civ. P. 401(b)(1)–(2)",
+      "text": "(b)(1) If service within the Commonwealth is not made within the time prescribed by subdivision (a) of this rule or outside the Commonwealth within the time prescribed by Rule 404, the prothonotary upon praecipe and upon presentation of the original process, or a copy thereof, shall continue its validity by designating the writ as reissued or the complaint as reinstated. (2) A writ may be reissued or a complaint reinstated at any time and any number of times. A new party defendant may be named in a reissued writ or a reinstated complaint only if the writ or complaint has not been served on any defendant.",
+      "text_sha256": "3214d526da2af04d3f6764fdd8da1ff521fbee8ba2fd15673fd5430fe615b26a",
+      "publisher_sha256": "4044847dca5596dedd37fbc9b12fd2ff5709790e6c352571b4f58de0e31e7fed",
+      "retrieved_at": "2026-11-21T23:01:23.420201+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Pennsylvania Code, statewide civil rules; currentness and case-specific diligence require separate review",
+      "effective_from": "2022-04-01"
+    },
+    "9cd8893974ed5042bb60027ae90908": {
+      "source_id": "US-PA:service_time_limit:c724f892820b",
+      "authority_type": "court_rule",
+      "citation": "Pa. R. Civ. P. 401(b)(3)–(5)",
+      "text": "(3) A substituted writ may be issued or a substituted complaint filed upon praecipe stating that the former writ or complaint has been lost or destroyed. (4) A reissued, reinstated, or substituted writ or complaint shall be served within the applicable time prescribed by subdivision (a) of this rule or by Rule 404 after reissuance, reinstatement, or substitution. (5) If an action is commenced by writ of summons and a complaint is thereafter filed, the plaintiff, instead of reissuing the writ, may treat the complaint as alternative original process and as the equivalent for all purposes of a reissued writ, reissued as of the date of the filing of the complaint. Thereafter the writ may be reissued, or the complaint may be reinstated as the equivalent of a reissuance of the writ, and the plaintiff may use either the reissued writ or the reinstated complaint as alternative original process.",
+      "text_sha256": "0e482fb669896fe2d78a0c197f6ab6906fd2f8219d6c08907a02bb2d34d351fc",
+      "publisher_sha256": "4044847dca5596dedd37fbc9b12fd2ff5709790e6c352571b4f58de0e31e7fed",
+      "retrieved_at": "2026-11-21T23:01:23.420201+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Pennsylvania Code, statewide civil rules; currentness and case-specific diligence require separate review",
+      "effective_from": "2022-04-01"
+    },
+    "f6d5c7a5d54d323ea2cbbbedebca8d": {
+      "source_id": "US-PA:service_time_limit:25539229fd32",
+      "authority_type": "court_rule",
+      "citation": "Pa. R. Civ. P. 404 (outside-Commonwealth timing)",
+      "text": "Original process shall be served outside the Commonwealth within ninety days of the issuance of the writ or the filing of the complaint or the reissuance or the reinstatement thereof:",
+      "text_sha256": "cb76f0130f553cd3fffd6b5e90475e2fe961b42ec7daa22b767e163a05af3ede",
+      "publisher_sha256": "a06b6ad2df731ea0fcb797e633784f6695b8ee18d9b53ad014b116332887b4da",
+      "retrieved_at": "2026-11-21T23:01:23.438402+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Pennsylvania Code, Rule 404 lead-in; permitted methods and treaty conditions appear separately in the rule"
+    },
+    "999de447a78cb041b1da795eb67f35": {
+      "source_id": "US-PA:service_time_limit:a20d2539436f",
+      "authority_type": "opinion",
+      "citation": "Ferraro v. Patterson-Erie Corp., 313 A.3d 987 (Pa. 2024) (service diligence)",
+      "text": "We have never held that any notice to a defendant of the pendency of a lawsuit is a substitute for service of process and we refuse to do so here. Our allowance of a deviation from strict compliance with our service rules when notice is imparted to the defendant is tied to a good faith effort to comply with the Rules. In McCreesh, we did not detach notice to the defendant of the pendency of a lawsuit from service of process. The McCreesh plaintiff incorrectly believed that certified mail to the defendant would effectuate service of process both in fact and by analogy of certified mail delivery to service by a competent adult. Here, Ferraro’s counsel understood that the private process server could not effectuate service of process under the Rule. As a result of the operation of Rule 126(a), we do not demand strict compliance with the service of process rules. Gussom clearly announced the balance between the relaxed enforcement of our rules pertaining to service of process and their purpose of providing notice to the defendant and the protections intended by statutes of limitations. When a plaintiff makes diligent but technically improper efforts to timely serve process whereby a defendant receives actual notice during the period of the statute of limitations that a lawsuit has been filed against it, the plaintiff will not be punished by dismissal of the complaint for technical non-compliance with the Rules of Civil Procedure. Gussom, 247 A.3d at 1057.",
+      "text_sha256": "7ee72a37f13fc1b9ff8ce3fb9af10bdf61fb487f5c5321d1c2c752b03d79c1f1",
+      "publisher_sha256": "74c1c2c4105f72fdf14599359449f8825141eea71be807c78ce719ca4b80c23c",
+      "retrieved_at": "2026-11-21T23:06:14.591721+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "April 25, 2024 majority slip opinion",
+      "court": "Supreme Court of Pennsylvania",
+      "publisher_member": "Slip opinion page 37; discusses the duty of diligence and limits on actual-notice arguments",
+      "decision_date": "2024-04-25",
+      "opinion_role": "majority",
+      "procedural_posture": "Interlocutory appeal in a premises-negligence action; reversed the Superior Court order affirming denial of judgment on the pleadings."
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "source_id": "US-PA:fault:1deb88482607",
+    "passage_selector": "8a0025acf6d1ff898eba6b9a092d4f",
+    "currentness": "historical",
+    "qualification": "The opinion reproduces 42 Pa.C.S. § 7102(a). Its discussion of asbestos strict-liability apportionment is separate."
+  }
+}

@@ -18,6 +18,9 @@ EvidenceKind = Literal[
 PartyRole = Literal["user", "business_involved", "potential_defendant", "owner", "operator", "witness", "insurer", "other"]
 EntityType = Literal["individual", "business", "government", "insurer", "unknown"]
 FieldName = Literal[
+    "residence_jurisdiction", "incident_jurisdiction", "work_jurisdiction", "employer_jurisdiction",
+    "property_jurisdiction", "contract_formation_jurisdiction", "contract_performance_jurisdiction",
+    "defendant_jurisdiction", "filing_jurisdiction", "agency_jurisdiction",
     "jurisdiction", "matter_type", "goal", "brand", "legal_name", "alias", "property_owner",
     "operator", "registry_id", "entity_type", "registered_agent", "self_name", "hazard", "warning_sign", "injury", "employee_notice",
     "hazard_duration", "visit_purpose", "condition_visibility", "hazard_origin", "fall_mechanism",

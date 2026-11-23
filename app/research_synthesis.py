@@ -209,7 +209,7 @@ class ResearchSynthesisService:
                 if link.relationship == "supports":
                     if source["source_type"] not in {"court_opinion", "statute", "regulation", "court_rule", "constitution", "official_self_help", "agency_guidance"}:
                         invalid = True
-                    if source.get("corpus_provenance", {}).get("currentness") in {"historical", "proposed", "superseded", "repealed"}:
+                    if source.get("corpus_provenance", {}).get("currentness") in {"historical", "proposed", "superseded", "repealed", "review_required", "future_effective"}:
                         invalid = True
                 entry[{"supports": "support_cases", "qualifies": "qualifying_cases", "conflicts": "conflicting_cases"}[link.relationship]].append(source["id"])
                 binding = {"passage": passage["id"], "source": source["id"],

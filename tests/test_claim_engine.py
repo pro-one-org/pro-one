@@ -11,7 +11,7 @@ from uuid import uuid4
 from fastapi.testclient import TestClient
 
 from app.capabilities import ResearchMatter
-from app.claim_catalog import ClaimCatalog, authority_binding
+from app.claim_catalog import ClaimCatalog, authority_binding, available
 from app.claim_mapping import validate_mappings
 from app.claim_models import AnalyzeClaim, LegalTheory
 from app.claim_service import ClaimService
@@ -58,6 +58,82 @@ class ClaimTests(unittest.TestCase):
 
     def statement(self, matter, text, **scope):
         return self.ledger.statement(matter, text, **scope)[0]
+
+    def test_wisconsin_claims_replay_only_for_the_certified_date(self):
+        catalog = self.engine.catalog
+        for key in ("wi_wages_due", "wi_comparative_negligence", "wi_residential_landlord_repairs",
+                    "wi_deceptive_public_representation", "wi_pay_upon_employment_separation",
+                    "wi_collection_nonexistent_right"):
+            theory = catalog.active[key]
+            bound, _, _ = catalog.research(theory, law_as_of=date(2026, 11, 4))
+            self.assertEqual(set(bound), {element.id for element in theory.elements})
+            for rows in bound.values():
+                for row in rows:
+                    self.assertEqual(row["currentness"]["as_of"], "2026-11-04")
+            for day in (None, date(2026, 11, 3), date(2026, 11, 5)):
+                self.assertFalse(catalog.research(theory, law_as_of=day)[0])
+
+    def test_dc_theories_require_the_verified_edition_and_their_matter_types(self):
+        catalog = self.engine.catalog
+        for matter_type, key, citation in (
+            ("consumer", "dc_consumer_private_action_reference", "D.C. Code § 28-3905(k)(1)(A)"),
+            ("landlord_tenant", "dc_security_deposit_ordinary_wear", "D.C. Code § 42-3502.17(c)"),
+            ("wrongful_death", "dc_wrongful_death_timing_reference", "D.C. Code § 16-2702"),
+        ):
+            theory = catalog.active[key]
+            self.assertIn(theory, available(catalog, "US-DC", matter_type))
+            self.assertNotIn(theory, available(catalog, "US-MD", matter_type))
+            self.assertNotIn(theory, available(catalog, "US-DC", "personal_injury"))
+            bindings, _, _ = catalog.research(theory, law_as_of=date(2026, 4, 29))
+            self.assertIn(citation, {ref["citation"] for rows in bindings.values() for ref in rows})
+            for day in (None, date(2026, 4, 28), date(2026, 4, 30)):
+                self.assertFalse(catalog.research(theory, law_as_of=day)[0])
+
+    def test_washington_consumer_reference_is_date_and_topic_limited(self):
+        catalog = self.engine.catalog
+        theory = catalog.active["wa_consumer_public_interest_reference"]
+        self.assertIn(theory, available(catalog, "US-WA", "consumer"))
+        self.assertNotIn(theory, available(catalog, "US-DC", "consumer"))
+        self.assertNotIn(theory, available(catalog, "US-WA", "personal_injury"))
+        bindings, _, _ = catalog.research(theory, law_as_of=date(2024, 7, 12))
+        self.assertEqual(set(bindings), {"public_interest_showing"})
+        self.assertEqual([row["citation"] for row in bindings["public_interest_showing"]],
+                         ["Wash. Rev. Code § 19.86.093"])
+        for day in (None, date(2024, 7, 11), date(2024, 7, 13)):
+            self.assertFalse(catalog.research(theory, law_as_of=day)[0])
+
+    def test_washington_wage_remedy_binds_required_qualifications(self):
+        catalog = self.engine.catalog
+        theory = catalog.active["wa_wage_rebate_or_underpayment_remedy_reference"]
+        self.assertIn(theory, available(catalog, "US-WA", "wage"))
+        self.assertNotIn(theory, available(catalog, "US-WI", "wage"))
+        self.assertFalse(catalog.research(theory, law_as_of=date(2024, 7, 13))[0])
+        bindings, _, _ = catalog.research(theory, law_as_of=date(2024, 7, 12))
+        rows = bindings["rebate_or_intentional_underpayment_review"]
+        self.assertEqual(
+            {row["citation"] for row in rows if row["relationship"] == "qualifies"},
+            {"Wash. Rev. Code § 49.52.050", "Wash. Rev. Code § 49.52.060"},
+        )
+
+    def test_wisconsin_collection_claim_preserves_scope_and_spouse_qualification(self):
+        catalog = self.engine.catalog
+        theory = catalog.active["wi_collection_nonexistent_right"]
+        bindings, _, _ = catalog.research(theory, law_as_of=date(2026, 11, 4))
+        self.assertEqual(
+            {row["citation"] for row in bindings["unenforceable_right"] if row["relationship"] == "qualifies"},
+            {"Wis. Stat. § 427.104(1)(intro.)", "Wis. Stat. § 427.104(2)"},
+        )
+
+    def test_wisconsin_landlord_repair_elements_require_their_qualifying_passages(self):
+        catalog = self.engine.catalog
+        theory = catalog.active["wi_residential_landlord_repairs"]
+        day = date(2026, 11, 4)
+        bindings, _, _ = catalog.research(theory, law_as_of=day)
+        for element in ("controlled_premises", "agreed_service_equipment"):
+            self.assertEqual(
+                {row["citation"] for row in bindings[element] if row["relationship"] == "qualifies"},
+                {"Wis. Stat. § 704.07(2)(a)(intro.)", "Wis. Stat. § 704.07(2)(b)", "Wis. Stat. § 704.07(2)(c)"},
+            )
 
     def upload(self, matter, text, kind, **scope):
         return self.ledger.upload(matter, text.encode(), "text/plain", kind, **scope)[0]

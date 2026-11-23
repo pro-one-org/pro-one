@@ -18,6 +18,7 @@ from app.claim_store import ClaimStore
 from app.matter_models import Target
 from app.matter_state import MatterError, projection
 from app.matter_store import MatterNotFound, RevisionConflict, now
+from app.national_coverage import action_shells
 from app.procedural_authority import load_catalog
 
 
@@ -64,6 +65,7 @@ class ActionService:
         fields = projection(matter)
         scope = fields.get(Target(field="jurisdiction"), {}).get("preferred")
         return {"matter_revision": matter.revision, "actions": self.definitions(fields),
+                "reference_actions": action_shells(scope.value) if scope else [],
                 "deadline_rules": [row for row in self.catalog.deadlines.values()
                                    if scope and row.jurisdiction == scope.value], "external_execution": "disabled"}
 

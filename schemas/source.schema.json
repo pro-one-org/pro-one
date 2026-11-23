@@ -36,7 +36,7 @@
         "version_key": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
         "artifact_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
         "locator": {"type": "string", "minLength": 1},
-        "currentness": {"enum": ["unresolved", "current_as_of", "historical", "repealed", "superseded", "proposed"]},
+        "currentness": {"enum": ["unresolved", "current_as_of", "historical", "repealed", "superseded", "proposed", "review_required", "future_effective"]},
         "current_as_of": {"type": ["string", "null"], "format": "date"},
         "currentness_basis": {"type": ["string", "null"]},
         "refresh_supported": {"type": "boolean"},

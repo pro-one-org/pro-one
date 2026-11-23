@@ -1,0 +1,1363 @@
+{
+  "jurisdiction": "US-IN",
+  "version": "1",
+  "sources": {
+    "US-IN:statutes:216cc9cd36fd": {
+      "category": "statutes",
+      "title": "Indiana Code",
+      "url": "http://iga.in.gov/legislative/laws/2019/ic/titles/001",
+      "directory": "codes",
+      "locator": "Indiana"
+    },
+    "US-IN:constitution:5ceb5786fe38": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://iga.in.gov/legislative/laws/const/",
+      "directory": "doj-IN",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-IN:legislature:ecd68c6821e2": {
+      "category": "legislature",
+      "title": "General Assembly",
+      "url": "http://iga.in.gov/",
+      "directory": "codes",
+      "locator": "Indiana"
+    },
+    "US-IN:labor_agency:962c407b7600": {
+      "category": "labor_agency",
+      "title": "www.in.gov/dol",
+      "url": "http://www.in.gov/dol",
+      "directory": "labor",
+      "locator": "Indiana"
+    },
+    "US-IN:commercial_code:104d07f25781": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://iga.in.gov/legislative/laws/2020/ic/titles/026#26-1",
+      "directory": "ucc",
+      "locator": "Indiana"
+    },
+    "US-IN:civil_rules:cb509c1eeab2": {
+      "category": "civil_rules",
+      "title": "Civil Procedure",
+      "url": "http://iga.in.gov/legislative/laws/2020/ic/titles/034",
+      "directory": "procedure",
+      "locator": "Indiana"
+    },
+    "US-IN:consumer_agency:c39799eec13f": {
+      "category": "consumer_agency",
+      "title": "Indiana (IN)",
+      "url": "https://www.in.gov/attorneygeneral/consumer-protection-division/",
+      "directory": "consumer",
+      "locator": "Indiana (IN)"
+    },
+    "US-IN:judiciary:ce03abfcd02b": {
+      "category": "judiciary",
+      "title": "State Judiciary",
+      "url": "http://www.in.gov/judiciary/",
+      "directory": "doj-IN",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-IN:court_directory:4be054c70173": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://www.in.gov/judiciary/supreme/",
+      "directory": "doj-IN",
+      "locator": "Supreme Court"
+    },
+    "US-IN:court_directory:aed95b1f63f1": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "http://www.in.gov/judiciary/appeals/",
+      "directory": "doj-IN",
+      "locator": "Court of Appeals"
+    },
+    "US-IN:court_directory:8d25a8cd5c84": {
+      "category": "court_directory",
+      "title": "Tax Court",
+      "url": "http://www.in.gov/judiciary/tax/",
+      "directory": "doj-IN",
+      "locator": "Tax Court"
+    },
+    "US-IN:forms:e073af7614d2": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://indianalegalhelp.org/landing-page-updated/",
+      "directory": "doj-IN",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-IN:statutes:548d48cbce31": {
+      "category": "statutes",
+      "title": "Code",
+      "url": "https://iga.in.gov/legislative/laws/current/ic/",
+      "directory": "doj-IN",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-IN:statutes:6aadc16144f5": {
+      "category": "statutes",
+      "title": "Non-Code Statutes",
+      "url": "https://iga.in.gov/legislative/laws/noncode/",
+      "directory": "doj-IN",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-IN:regulations:7acc28082dbe": {
+      "category": "regulations",
+      "title": "Administrative Code",
+      "url": "http://www.in.gov/legislative/iac/",
+      "directory": "doj-IN",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-IN:regulations:0f43a409fd39": {
+      "category": "regulations",
+      "title": "Register",
+      "url": "http://www.in.gov/legislative/iac/irtoc.htm",
+      "directory": "doj-IN",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-IN:pi_limitations:864cb5f29739": {
+      "category": "pi_limitations",
+      "title": "Ind. Code § 34-11-2-4(a)",
+      "url": "https://iga.in.gov/laws/2025/ic/titles/34#34-11-2-4",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://iga.in.gov/laws/2025/ic/titles/34",
+        "retrieved_at": "2026-11-17T19:33:56.506459+00:00",
+        "http_status": "200",
+        "sha256": "4cc9b45ba54c259c5584a0c05a308f3811c78361a4dc5935e2911ecdc0bd16d2",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IN:written_contract_limitations:9b17db38356b": {
+      "category": "written_contract_limitations",
+      "title": "Ind. Code §§ 34-11-2-11, 34-11-2-9",
+      "url": "https://iga.in.gov/laws/2025/ic/titles/34#34-11-2-11",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://iga.in.gov/laws/2025/ic/titles/34",
+        "retrieved_at": "2026-11-17T19:33:56.506459+00:00",
+        "http_status": "200",
+        "sha256": "4cc9b45ba54c259c5584a0c05a308f3811c78361a4dc5935e2911ecdc0bd16d2",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IN:oral_contract_limitations:dff69a311aef": {
+      "category": "oral_contract_limitations",
+      "title": "Ind. Code § 34-11-2-7(1)",
+      "url": "https://iga.in.gov/laws/2025/ic/titles/34#34-11-2-7",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://iga.in.gov/laws/2025/ic/titles/34",
+        "retrieved_at": "2026-11-17T19:33:56.506459+00:00",
+        "http_status": "200",
+        "sha256": "4cc9b45ba54c259c5584a0c05a308f3811c78361a4dc5935e2911ecdc0bd16d2",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IN:small_claims:96b132e0898f": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.in.gov/courts/files/small-claims-manual.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.in.gov/courts/files/small-claims-manual.pdf",
+        "retrieved_at": "2026-11-17T19:42:45.685909+00:00",
+        "http_status": "200",
+        "sha256": "027759e0937d962751428e7ac4c68cba93322ed4385d45125cd103274e33976d",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IN:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    },
+    "US-IN:wageLaw:5356f9338a4c": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://www.in.gov/dol/wage-and-hour/wage-and-hour-home",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.in.gov/dol/wage-and-hour/wage-and-hour-home",
+        "retrieved_at": "2026-11-17T19:42:46.532284+00:00",
+        "http_status": "200",
+        "sha256": "fdfd33c24b2915f77710057392426b148a4e6637fff93ab38efb54232c0b0d8d",
+        "health": "manual_review_required"
+      }
+    },
+    "US-IN:consumerLaw:5d32e1d4379f": {
+      "title": "Ind. Code § 24-5-0.5",
+      "category": "consumerLaw",
+      "url": "https://iga.in.gov/laws/2025/ic/titles/24#24-5-0.5",
+      "directory": "consumer_statutes_index",
+      "locator": "Ind. Code § 24-5-0.5",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-IN:contract_formation:242e3aa726b1": {
+      "category": "contract_formation",
+      "title": "Teachers Credit Union v. Cripe, No. 24A-PL-698, ¶ 17 (Ind. Ct. App. Dec. 13, 2024)",
+      "url": "https://public.courts.in.gov/Decisions/api/Document/Opinion?Id=upwm4C_OH_iJlmECtk93nxXUq0bmQ2yqxamm_TUoUiRgYf1amzw2T36zx7dlWWLg0",
+      "locator": "Teachers Credit Union v. Cripe, No. 24A-PL-698, ¶ 17 (Ind. Ct. App. Dec. 13, 2024)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:31:28.092951+00:00",
+        "sha256": "0649b5c227b691bd165208034482ea08d649bf44186a5e594aa4caf474430789"
+      }
+    },
+    "US-IN:commencement:23ba97cb5daa": {
+      "category": "commencement",
+      "title": "Ind. Trial Rule 3",
+      "url": "https://rules.incourts.gov/Content/trial/rule3/current.htm",
+      "locator": "Ind. Trial Rule 3",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:37.949038+00:00",
+        "sha256": "47fa6ac872713f4367b7badc078ed406907ed23c021d65af219302d624a65eae"
+      }
+    },
+    "US-IN:service:3dc98fb46370": {
+      "category": "service",
+      "title": "Ind. Trial Rule 4(B)",
+      "url": "https://rules.incourts.gov/Content/trial/rule4/current.htm",
+      "locator": "Ind. Trial Rule 4(B)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:55.679956+00:00",
+        "sha256": "666be6fa8c14dd74f460558e8b398df7abc9d83e37ae5e995d523e1ee27f1b75"
+      }
+    },
+    "US-IN:response:ef3c46fed72e": {
+      "category": "response",
+      "title": "Ind. Trial Rule 12(A)",
+      "url": "https://rules.incourts.gov/Content/trial/rule12/current.htm",
+      "locator": "Ind. Trial Rule 12(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:55.864619+00:00",
+        "sha256": "28d81afa2685b7f2f9d8a25e1d232b9b54b0a52e4b92cd9ff67f11acaa7f409b"
+      }
+    },
+    "US-IN:fault:ec846fef5b5e": {
+      "category": "fault",
+      "title": "Ludwig v. Flaherty & Collins, Inc., No. 25A-CT-941, ¶ 11 (Ind. Ct. App. Mar. 16, 2026)",
+      "url": "https://public.courts.in.gov/Decisions/api/Document/Opinion?Id=O5e2N4TgWFZc3xrL-ulBho5tCFDP1iYKI73Al-RGtcGezeRHiZn9BtTnz--u8VWR0",
+      "locator": "Ludwig v. Flaherty & Collins, Inc., No. 25A-CT-941, ¶ 11 (Ind. Ct. App. Mar. 16, 2026)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:12:11.636524+00:00",
+        "sha256": "6d6cb3d3deabc0a6391c68b1f022db1e5dddbb5e8e36c1d6e1fc73793d9e18b9"
+      }
+    },
+    "US-IN:pi_limitations:56bb950dd98d": {
+      "category": "pi_limitations",
+      "title": "William F. Braun Milk Hauling, Inc. v. Malanoski, No. 22A-CT-333, ¶ 10 (Ind. Ct. App. July 27, 2022)",
+      "url": "https://public.courts.in.gov/Decisions/api/Document/Opinion?Id=6PFq8Esh38CyEDWoREftx-zPlq3mdYR2wfpNiyRSHIsoH1Tw-SwG33Lb5YUW973c0",
+      "locator": "William F. Braun Milk Hauling, Inc. v. Malanoski, No. 22A-CT-333, ¶ 10 (Ind. Ct. App. July 27, 2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:40:19.160559+00:00",
+        "sha256": "88fef303bb9377bc494d802aeb06b5726e11346d84ff903f68b6f3d0d18f7932"
+      }
+    },
+    "US-IN:consumerLaw:b78b589a8db3": {
+      "category": "consumerLaw",
+      "title": "State v. TikTok Inc., Nos. 23A-PL-3110 and 23A-PL-3111, ¶ 31 (Ind. Ct. App. Sept. 30, 2024)",
+      "url": "https://public.courts.in.gov/Decisions/api/Document/Opinion?Id=bzvctIEa1piP7LQm6TLz7kDoOE5nIfsoQfx7RRvU4lRD-S32bDI_5fdu6BM3PbvO0",
+      "locator": "State v. TikTok Inc., Nos. 23A-PL-3110 and 23A-PL-3111, ¶ 31 (Ind. Ct. App. Sept. 30, 2024)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:22:38.321090+00:00",
+        "sha256": "43ebd4fd61184cb62f099e305fae32a058173d8996a996c9b367412656b96ae9"
+      }
+    },
+    "US-IN:wageLaw:35dde3eaf07c": {
+      "category": "wageLaw",
+      "title": "Mitchell v. Universal Solutions of North Carolina, Inc., No. 29A02-0411-CV-931 (Ind. Ct. App. Feb. 28, 2006)",
+      "url": "https://public.courts.in.gov/Decisions/api/Document/Opinion?Id=h7fjNWK42IrA6LU6T8F0niVJiDmJksDG_sdjYVcD15GCYVukJJ1-WomrMH17diFy0",
+      "locator": "Mitchell v. Universal Solutions of North Carolina, Inc., No. 29A02-0411-CV-931 (Ind. Ct. App. Feb. 28, 2006)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:51:44.195344+00:00",
+        "sha256": "7cd6d8af84670dfa937bc1cdb48c494026dbab141bcc6a8e3ab817d7f9d1abd4"
+      }
+    },
+    "US-IN:service:eb1c3ac42fd4": {
+      "category": "service",
+      "title": "Ind. Trial R. 4.1(A)",
+      "url": "https://rules.incourts.gov/Content/trial/rule4-1/current.htm",
+      "locator": "Ind. Trial R. 4.1(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:05:10.675085+00:00",
+        "sha256": "6a43acf975b87e062068c1fe6a07b66e80cb945c0dfc295ede2536df12739e86"
+      }
+    },
+    "US-IN:service:6ebbde82c3f0": {
+      "category": "service",
+      "title": "Ind. Trial R. 4.1(B)",
+      "url": "https://rules.incourts.gov/Content/trial/rule4-1/current.htm",
+      "locator": "Ind. Trial R. 4.1(B)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:05:10.675085+00:00",
+        "sha256": "6a43acf975b87e062068c1fe6a07b66e80cb945c0dfc295ede2536df12739e86"
+      }
+    },
+    "US-IN:calendar:4e01aa1896ae": {
+      "category": "calendar",
+      "title": "Ind. Trial R. 6(A)",
+      "url": "https://rules.incourts.gov/Content/trial/rule6/current.htm",
+      "locator": "Ind. Trial R. 6(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:05:10.938337+00:00",
+        "sha256": "7affe39da4c4da3b3de690f2e4e7fa477b41f66b23b985b5cd970fbf87f43342"
+      }
+    },
+    "US-IN:response:03fee8f1983d": {
+      "category": "response",
+      "title": "Ind. Trial R. 6(B)",
+      "url": "https://rules.incourts.gov/Content/trial/rule6/current.htm",
+      "locator": "Ind. Trial R. 6(B)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:05:10.938337+00:00",
+        "sha256": "7affe39da4c4da3b3de690f2e4e7fa477b41f66b23b985b5cd970fbf87f43342"
+      }
+    },
+    "US-IN:response:e4816139029a": {
+      "category": "response",
+      "title": "Ind. Trial R. 6(D)",
+      "url": "https://rules.incourts.gov/Content/trial/rule6/current.htm",
+      "locator": "Ind. Trial R. 6(D)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:05:10.938337+00:00",
+        "sha256": "7affe39da4c4da3b3de690f2e4e7fa477b41f66b23b985b5cd970fbf87f43342"
+      }
+    },
+    "US-IN:response:205a35d3a4ef": {
+      "category": "response",
+      "title": "Ind. Trial R. 6(G)",
+      "url": "https://rules.incourts.gov/Content/trial/rule6/current.htm",
+      "locator": "Ind. Trial R. 6(G)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:05:10.938337+00:00",
+        "sha256": "7affe39da4c4da3b3de690f2e4e7fa477b41f66b23b985b5cd970fbf87f43342"
+      }
+    },
+    "US-IN:small_claims:3353eacfcf79": {
+      "category": "small_claims",
+      "title": "Ind. Small Claims R. 2(A)",
+      "url": "https://rules.incourts.gov/Content/small-claims/rule2/current.htm",
+      "locator": "Ind. Small Claims R. 2(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:05:10.981460+00:00",
+        "sha256": "138c3b4c097c55de67ee34d7e8baeb26a807cdc8d228881a7b1c82731a91a27b"
+      }
+    },
+    "US-IN:small_claims:dffcf3a02ff7": {
+      "category": "small_claims",
+      "title": "Ind. Small Claims R. 3(A)",
+      "url": "https://rules.incourts.gov/Content/small-claims/rule3/current.htm",
+      "locator": "Ind. Small Claims R. 3(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:05:11.107016+00:00",
+        "sha256": "dd1a6935a8642c713ca0d89a603521c6f330c220876bd179d37ea3978dda4e48"
+      }
+    },
+    "US-IN:small_claims:47a4d0df01e5": {
+      "category": "small_claims",
+      "title": "Ind. Small Claims R. 4(A)",
+      "url": "https://rules.incourts.gov/Content/small-claims/rule4/current.htm",
+      "locator": "Ind. Small Claims R. 4(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:05:11.174633+00:00",
+        "sha256": "e638220f4db721c4c9343e71adcde61dfc4a7975ab592919dfddad48886a859e"
+      }
+    },
+    "US-IN:small_claims:c67bb8f9214a": {
+      "category": "small_claims",
+      "title": "Ind. Small Claims R. 4(C)",
+      "url": "https://rules.incourts.gov/Content/small-claims/rule4/current.htm",
+      "locator": "Ind. Small Claims R. 4(C)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:05:11.174633+00:00",
+        "sha256": "e638220f4db721c4c9343e71adcde61dfc4a7975ab592919dfddad48886a859e"
+      }
+    },
+    "US-IN:deposit:412f2ff9c6f4": {
+      "category": "deposit",
+      "title": "Wang v. Sun, No. 22A-SC-1473, ¶ 23 (Ind. Ct. App. June 23, 2023)",
+      "url": "https://public.courts.in.gov/Decisions/api/Document/Opinion?Id=lg1RQHfURjPKh0UZHaTg2rLELnpnGSfoSmVk-ydJE5KM7Cx0tRLyZdHH4pSP8Jxu0",
+      "locator": "Wang v. Sun, No. 22A-SC-1473, ¶ 23 (Ind. Ct. App. June 23, 2023)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:21:54.266785+00:00",
+        "sha256": "59cc747b25f94cd4673ccbda1af01530841ef85bdc9eb7ac6934d5af2d5b2961"
+      }
+    },
+    "US-IN:negligence_elements:d741a7210371": {
+      "category": "negligence_elements",
+      "title": "J.B. Hunt Transp., Inc. v. Guardianship of Zak, No. 45A03-1506-CT-670, ¶ 46 (Ind. Ct. App. Aug. 18, 2016)",
+      "url": "https://public.courts.in.gov/Decisions/api/Document/Opinion?Id=GEGVwCaFBmDYaXO7ILv32sYyyC4G-dbuXRRxzMniC_hnNlUKEZ1xckUri4kLqUh-0",
+      "locator": "J.B. Hunt Transp., Inc. v. Guardianship of Zak, No. 45A03-1506-CT-670, ¶ 46 (Ind. Ct. App. Aug. 18, 2016)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:42:12.589388+00:00",
+        "sha256": "b20bbf290b972c9acb1a1118585ebf131ba0d5ec2ce2fd9f36b7529dc5471cf3"
+      }
+    },
+    "US-IN:summons_issuance:427b85251267": {
+      "category": "summons_issuance",
+      "title": "Ind. Trial R. 4(C)",
+      "url": "https://rules.incourts.gov/Content/trial/rule4/current.htm",
+      "locator": "Ind. Trial R. 4(C)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:42:28.689803+00:00",
+        "sha256": "666be6fa8c14dd74f460558e8b398df7abc9d83e37ae5e995d523e1ee27f1b75"
+      }
+    },
+    "US-IN:summons_issuance:cd86c289eef3": {
+      "category": "summons_issuance",
+      "title": "Ind. Trial R. 4(E)",
+      "url": "https://rules.incourts.gov/Content/trial/rule4/current.htm",
+      "locator": "Ind. Trial R. 4(E)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:42:28.689803+00:00",
+        "sha256": "666be6fa8c14dd74f460558e8b398df7abc9d83e37ae5e995d523e1ee27f1b75"
+      }
+    },
+    "US-IN:service_business_entity:3cc99bb59405": {
+      "category": "service_business_entity",
+      "title": "Ind. Trial R. 4.6(A)",
+      "url": "https://rules.incourts.gov/Content/trial/rule4-6/current.htm",
+      "locator": "Ind. Trial R. 4.6(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:42:28.597672+00:00",
+        "sha256": "ae921323d068db261271cb86890168545e25c34ccb4c3ec1da8e0e363af9942b"
+      }
+    },
+    "US-IN:service_business_entity:8bd911499e48": {
+      "category": "service_business_entity",
+      "title": "Ind. Trial R. 4.6(B)",
+      "url": "https://rules.incourts.gov/Content/trial/rule4-6/current.htm",
+      "locator": "Ind. Trial R. 4.6(B)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:42:28.597672+00:00",
+        "sha256": "ae921323d068db261271cb86890168545e25c34ccb4c3ec1da8e0e363af9942b"
+      }
+    },
+    "US-IN:service_business_entity:92a8390aa319": {
+      "category": "service_business_entity",
+      "title": "Ind. Trial R. 4.6(C)",
+      "url": "https://rules.incourts.gov/Content/trial/rule4-6/current.htm",
+      "locator": "Ind. Trial R. 4.6(C)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:42:28.597672+00:00",
+        "sha256": "ae921323d068db261271cb86890168545e25c34ccb4c3ec1da8e0e363af9942b"
+      }
+    },
+    "US-IN:service_proof:6f51d08eec49": {
+      "category": "service_proof",
+      "title": "Ind. Trial R. 4.15(A)",
+      "url": "https://rules.incourts.gov/Content/trial/rule4-15/current.htm",
+      "locator": "Ind. Trial R. 4.15(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:42:28.680029+00:00",
+        "sha256": "0ccd7929136c340c9892369fab9ce745a1ceab8a956fa43d224e4b0138512f52"
+      }
+    },
+    "US-IN:service_proof:a062f98eeabe": {
+      "category": "service_proof",
+      "title": "Ind. Trial R. 4.15(B)",
+      "url": "https://rules.incourts.gov/Content/trial/rule4-15/current.htm",
+      "locator": "Ind. Trial R. 4.15(B)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:42:28.680029+00:00",
+        "sha256": "0ccd7929136c340c9892369fab9ce745a1ceab8a956fa43d224e4b0138512f52"
+      }
+    },
+    "US-IN:pleading_contents:5d29f3b04ca1": {
+      "category": "pleading_contents",
+      "title": "Ind. Trial R. 8(A)",
+      "url": "https://rules.incourts.gov/Content/trial/rule8/current.htm",
+      "locator": "Ind. Trial R. 8(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:42:28.829341+00:00",
+        "sha256": "af7b3b4cd8b36e04602c9dd9791b461516baf24ef403253b9e1a7d574edc6e2c"
+      }
+    },
+    "US-IN:answer_contents:b7742a6292de": {
+      "category": "answer_contents",
+      "title": "Ind. Trial R. 8(B)",
+      "url": "https://rules.incourts.gov/Content/trial/rule8/current.htm",
+      "locator": "Ind. Trial R. 8(B)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:42:28.829341+00:00",
+        "sha256": "af7b3b4cd8b36e04602c9dd9791b461516baf24ef403253b9e1a7d574edc6e2c"
+      }
+    },
+    "US-IN:answer_contents:84bb72be2ba4": {
+      "category": "answer_contents",
+      "title": "Ind. Trial R. 8(C)",
+      "url": "https://rules.incourts.gov/Content/trial/rule8/current.htm",
+      "locator": "Ind. Trial R. 8(C)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:42:28.829341+00:00",
+        "sha256": "af7b3b4cd8b36e04602c9dd9791b461516baf24ef403253b9e1a7d574edc6e2c"
+      }
+    },
+    "US-IN:answer_contents:d2d4ff3fa3ce": {
+      "category": "answer_contents",
+      "title": "Ind. Trial R. 8(D)",
+      "url": "https://rules.incourts.gov/Content/trial/rule8/current.htm",
+      "locator": "Ind. Trial R. 8(D)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:42:28.829341+00:00",
+        "sha256": "af7b3b4cd8b36e04602c9dd9791b461516baf24ef403253b9e1a7d574edc6e2c"
+      }
+    },
+    "US-IN:debt_pleading:2b35b3905638": {
+      "category": "debt_pleading",
+      "title": "Ind. Trial R. 9.2(A)",
+      "url": "https://rules.incourts.gov/Content/trial/rule9-2/current.htm",
+      "locator": "Ind. Trial R. 9.2(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:42:28.980510+00:00",
+        "sha256": "31b36edff29b28af56b5a05fd22fe5360aa9657d8071d5bcf1e9637df26c45b3"
+      }
+    },
+    "US-IN:debt_pleading:c9b2357d6944": {
+      "category": "debt_pleading",
+      "title": "Ind. Trial R. 9.2(F)",
+      "url": "https://rules.incourts.gov/Content/trial/rule9-2/current.htm",
+      "locator": "Ind. Trial R. 9.2(F)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:42:28.980510+00:00",
+        "sha256": "31b36edff29b28af56b5a05fd22fe5360aa9657d8071d5bcf1e9637df26c45b3"
+      }
+    },
+    "US-IN:amended_pleading_response:3710fd12c15e": {
+      "category": "amended_pleading_response",
+      "title": "Ind. Trial R. 15(A)",
+      "url": "https://rules.incourts.gov/Content/trial/rule15/current.htm",
+      "locator": "Ind. Trial R. 15(A)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:42:28.879084+00:00",
+        "sha256": "c71f6972adfec122ebda4cee898a237289b9f93e00e503651f50ea8ff5f35fda"
+      }
+    },
+    "US-IN:debtLaw:8be732181797": {
+      "category": "debtLaw",
+      "title": "2026 Ind. Acts P.L. 115, § 97 (Ind. Code § 37-2-7-12)",
+      "url": "https://web.archive.org/web/20261103012311id_/https://iga.in.gov/pdf-documents/124/2026/senate/bills/SB0169/SB0169.04.ENRH.pdf",
+      "locator": "2026 Ind. Acts P.L. 115, § 97 (Ind. Code § 37-2-7-12)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:21:03.062526+00:00",
+        "sha256": "a74a79abd5a209d8bab5c0e07cb97481061796c3353c252cac164a60fd3c8de2"
+      }
+    },
+    "US-IN:oral_contract_limitations:eb91f3134e32": {
+      "category": "oral_contract_limitations",
+      "title": "Sollers Point Co. v. L.M. Zeller, No. 19A-CC-1156 (Ind. Ct. App. Mar. 23, 2020), ¶ 17",
+      "url": "https://public.courts.in.gov/Decisions/api/Document/Opinion?Id=poMFe-Q-yhjcaHaxg0mgYY2DaUEFT-b25xRXyggCH6hF7-xTPFXb0ZfNLv3fn8n20",
+      "locator": "Sollers Point Co. v. L.M. Zeller, No. 19A-CC-1156 (Ind. Ct. App. Mar. 23, 2020), ¶ 17",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:44:26.245338+00:00",
+        "sha256": "fb5f914f01137bd18c296f2bdf2146a89f427b3cd7fe9b8f9ed16a3b270fbf68"
+      }
+    },
+    "US-IN:service_time_limit:1117bb76c716": {
+      "category": "service_time_limit",
+      "title": "Ind. Trial R. 4.13(C) (publication intervals)",
+      "url": "https://rules.incourts.gov/Content/trial/rule4-13/current.htm",
+      "locator": "Ind. Trial R. 4.13(C) (publication intervals)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T23:01:23.388668+00:00",
+        "sha256": "df040340bec7a70c3868c25d1c4612ce618452900c01838a7efe55c9fc6cd5d6"
+      }
+    },
+    "US-IN:service_time_limit:4d347d482126": {
+      "category": "service_time_limit",
+      "title": "Ind. Trial R. 4.1(C) (returned-mail notice)",
+      "url": "https://rules.incourts.gov/Content/trial/rule4-1/current.htm",
+      "locator": "Ind. Trial R. 4.1(C) (returned-mail notice)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T23:01:23.402474+00:00",
+        "sha256": "6a43acf975b87e062068c1fe6a07b66e80cb945c0dfc295ede2536df12739e86"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-IN:court:21dae6017880",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-IN:court_directory:4be054c70173"
+    },
+    {
+      "id": "US-IN:court:93d435347a67",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-IN:court_directory:aed95b1f63f1"
+    },
+    {
+      "id": "US-IN:court:242c904c1981",
+      "name": "Tax Court",
+      "level": "trial_directory",
+      "source_id": "US-IN:court_directory:8d25a8cd5c84"
+    },
+    {
+      "id": "US-IN:court:62b7cc2e89f8",
+      "name": "Superior and Circuit",
+      "level": "general_trial",
+      "source_id": "US-IN:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-IN:court:6c5bd59f8a48",
+      "name": "Probate",
+      "level": "general_trial",
+      "source_id": "US-IN:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-IN:court:09753adaaaf9",
+      "name": "County",
+      "level": "limited_trial",
+      "source_id": "US-IN:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-IN:court:f459b48d194d",
+      "name": "City and Town",
+      "level": "limited_trial",
+      "source_id": "US-IN:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-IN:court:02f16578caa3",
+      "name": "Small Claims/Marion County",
+      "level": "limited_trial",
+      "source_id": "US-IN:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Ind. Code § 34-11-2-4(a)",
+      "source_id": "US-IN:pi_limitations:864cb5f29739",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Ind. Code §§ 34-11-2-11, 34-11-2-9",
+      "source_id": "US-IN:written_contract_limitations:9b17db38356b",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Ind. Code § 34-11-2-7(1)",
+      "source_id": "US-IN:oral_contract_limitations:dff69a311aef",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Ind. Code § 32-31-5-6 Landlord prohibited from interfering with access, possession, or essential services; unit entry by landlord",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Ind. Code § 24-5-0.5",
+      "source_id": "US-IN:consumerLaw:5d32e1d4379f",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "bb286762ae5d998dd422a4af14f52c": {
+      "source_id": "US-IN:contract_formation:242e3aa726b1",
+      "authority_type": "opinion",
+      "citation": "Teachers Credit Union v. Cripe, No. 24A-PL-698, ¶ 17 (Ind. Ct. App. Dec. 13, 2024)",
+      "text": "“[A]n arbitration agreement, as with a typical contract, requires ‘offer, acceptance of the offer and consideration.’” Land 1, 218 N.E.3d at 1287 (quoting Reitenour v. M/I Homes of Ind., L.P., 176 N.E.3d 505, 510-11 (Ind. Ct. App. 2021)).",
+      "text_sha256": "6b931e0a88641e1bbe8b1f6009d28d209aa204159562d3f2e92f4c56cd773cc4",
+      "publisher_sha256": "0649b5c227b691bd165208034482ea08d649bf44186a5e594aa4caf474430789",
+      "retrieved_at": "2026-11-18T20:31:28.092951+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2024-12-13",
+      "court": "Court of Appeals of Indiana",
+      "decision_date": "2024-12-13",
+      "opinion_role": "unanimous",
+      "procedural_posture": "Appeal from denial of a motion to compel arbitration and dismiss the complaint; affirmed."
+    },
+    "036adde652717d353b97780f2f001f": {
+      "source_id": "US-IN:commencement:23ba97cb5daa",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial Rule 3",
+      "text": "A civil action is commenced by filing with the court a complaint or such equivalent pleading or document as may be specified by statute, by payment of the prescribed filing fee or filing an order waiving the filing fee, and, where service of process is required, by furnishing to the clerk as many copies of the complaint and summons as are necessary.",
+      "text_sha256": "79536e84dc8e12278fbf187b8f64c14fdb0464c564c2c992d154cff11911d6eb",
+      "publisher_sha256": "47fa6ac872713f4367b7badc078ed406907ed23c021d65af219302d624a65eae",
+      "retrieved_at": "2026-11-18T20:45:37.949038+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana trial courts",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2002-04-01"
+    },
+    "01912429b60859a199e51b5ad0913f": {
+      "source_id": "US-IN:service:3dc98fb46370",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial Rule 4(B)",
+      "text": "(B) Preparation of summons and praecipe. Contemporaneously with the filing of the complaint or equivalent pleading, the person seeking service or his attorney shall furnish to the clerk as many copies of the complaint and summons as are necessary. The clerk shall examine, date, sign, and affix his seal to the summons and thereupon issue and deliver the papers to the appropriate person for service. Affidavits, requests, and any other information relating to the summons and its service as required or permitted by these rules shall be included in a praecipe attached to or entered upon the summons. Such praecipe shall be deemed to be a part of the summons for purposes of these rules. Separate or additional summons shall, as provided by these rules, be issued by the clerk at any time upon proper request of the person seeking service or his attorney.",
+      "text_sha256": "ade46cb36ea314300af0a242cb8702cba11ab6c809be37d4a5562f3406aaae2c",
+      "publisher_sha256": "666be6fa8c14dd74f460558e8b398df7abc9d83e37ae5e995d523e1ee27f1b75",
+      "retrieved_at": "2026-11-18T20:45:55.679956+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana trial courts",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2019-01-01"
+    },
+    "3fc8653847bc2c6f7c25e5a5843f9c": {
+      "source_id": "US-IN:response:ef3c46fed72e",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial Rule 12(A)",
+      "text": "(A) When presented. The time allowed for the presentation of defenses and objections in a motion or responsive pleading is computed as set forth in this rule. Filing a motion permitted under this rule alters the time for filing a responsive pleading as follows, unless a different time is fixed by the court: (1) if the court does not grant the motion, the responsive pleading must be filed within ten days of the order; (2) if the court grants the motion and corrective action is permitted, an amended pleading taking the corrective action must be filed within ten days of the order, and the responsive pleading must be filed within ten days thereafter.",
+      "text_sha256": "91a60d60bbf0ade84dd7ab203294079f052f8a807379913dab744fe7e9f70194",
+      "publisher_sha256": "28d81afa2685b7f2f9d8a25e1d232b9b54b0a52e4b92cd9ff67f11acaa7f409b",
+      "retrieved_at": "2026-11-18T20:45:55.864619+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana trial courts",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2026-07-01"
+    },
+    "34f89a8f86d8e17f94b2ecb7dcca0b": {
+      "source_id": "US-IN:fault:ec846fef5b5e",
+      "authority_type": "opinion",
+      "citation": "Ludwig v. Flaherty & Collins, Inc., No. 25A-CT-941, ¶ 11 (Ind. Ct. App. Mar. 16, 2026)",
+      "text": "If the jury finds the plaintiff more than fifty percent at fault, it must “return a verdict for the defendant and no further deliberation of the jury is required.” I.C. § 34-51-2-7(b)(2).",
+      "text_sha256": "3f049fe369139fa04668f8d7347fb947bd54c79a03c7a1a23287d745029c734d",
+      "publisher_sha256": "6d6cb3d3deabc0a6391c68b1f022db1e5dddbb5e8e36c1d6e1fc73793d9e18b9",
+      "retrieved_at": "2026-11-20T15:12:11.636524+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2026-03-16",
+      "court": "Court of Appeals of Indiana",
+      "decision_date": "2026-03-16",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a defense verdict in a premises negligence case."
+    },
+    "026729fda00ffc474530003038950b": {
+      "source_id": "US-IN:pi_limitations:56bb950dd98d",
+      "authority_type": "opinion",
+      "citation": "William F. Braun Milk Hauling, Inc. v. Malanoski, No. 22A-CT-333, ¶ 10 (Ind. Ct. App. July 27, 2022)",
+      "text": "Ind. Code § 34-11-2-4 provides that an action for injury to person or personal property must be commenced within two years after the cause of action accrues.",
+      "text_sha256": "8cba6c82bae6588c83dc173c31715c0f0252192b47dfd908435cfc05747d32d5",
+      "publisher_sha256": "88fef303bb9377bc494d802aeb06b5726e11346d84ff903f68b6f3d0d18f7932",
+      "retrieved_at": "2026-11-20T15:40:19.160559+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2022-07-27",
+      "court": "Court of Appeals of Indiana",
+      "decision_date": "2022-07-27",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from denial of summary judgment in a personal-injury action. The court separately considered the scope of pandemic tolling orders."
+    },
+    "5dc20aed39004801967db21fa8fdd9": {
+      "source_id": "US-IN:consumerLaw:b78b589a8db3",
+      "authority_type": "opinion",
+      "citation": "State v. TikTok Inc., Nos. 23A-PL-3110 and 23A-PL-3111, ¶ 31 (Ind. Ct. App. Sept. 30, 2024)",
+      "text": "Indiana Code section 24-5-0.5-3(a) (“section 3(a)”) states the relevant operative language of the DCSA: A supplier may not commit an unfair, abusive, or deceptive act, omission, or practice in connection with a consumer transaction. Such an act, omission, or practice by a supplier is a violation of this chapter whether it occurs before, during, or after the transaction. An act, omission, or practice prohibited by this section includes both implicit and explicit misrepresentations.",
+      "text_sha256": "b7b7463245a42622b0b8b76545e244da58bef954c44bb8af68601ce28b533904",
+      "publisher_sha256": "43ebd4fd61184cb62f099e305fae32a058173d8996a996c9b367412656b96ae9",
+      "retrieved_at": "2026-11-20T16:22:38.321090+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2024-09-30",
+      "court": "Court of Appeals of Indiana",
+      "decision_date": "2024-09-30",
+      "opinion_role": "majority",
+      "procedural_posture": "Joint appeals from dismissals of two Attorney General actions under the Deceptive Consumer Sales Act. The court quoted the operative statute in the dispute."
+    },
+    "a61a7af012a5823e67ff75456deaaf": {
+      "source_id": "US-IN:wageLaw:35dde3eaf07c",
+      "authority_type": "opinion",
+      "citation": "Mitchell v. Universal Solutions of North Carolina, Inc., No. 29A02-0411-CV-931 (Ind. Ct. App. Feb. 28, 2006)",
+      "text": "Indiana Code § 22-2-5-1, sometimes referred to as the Wage Payment Statute, contains three distinct regulations: “(1) employee’s wages must be paid in money; (2) if requested, employers must pay employees semi-monthly or bi-weekly; and (3) employees, upon separation from employment, must be paid the amount due them at their next and usual payday (unless their whereabouts are unknown).”",
+      "text_sha256": "e2dc48893976cf8aee8dc1f2b913d59c4ad111939ef2fe1767960d196fababa6",
+      "publisher_sha256": "7cd6d8af84670dfa937bc1cdb48c494026dbab141bcc6a8e3ab817d7f9d1abd4",
+      "retrieved_at": "2026-11-20T17:51:44.195344+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2006-02-28",
+      "court": "Court of Appeals of Indiana",
+      "decision_date": "2006-02-28",
+      "opinion_role": "majority",
+      "procedural_posture": "Consolidated appeal from summary judgments about accrued vacation pay and bonuses. The published opinion summarized the wage-payment statute applicable in those disputes."
+    },
+    "7af2f55222e107e7210f0156833c8c": {
+      "source_id": "US-IN:service:eb1c3ac42fd4",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 4.1(A)",
+      "text": "Service may be made upon an individual, or an individual acting in a representative capacity, by: (1) sending a copy of the summons and complaint by registered or certified mail or other public means by which a written acknowledgment of receipt may be requested and obtained to his residence, place of business or employment with return receipt requested and returned showing receipt of the letter; or (2) delivering a copy of the summons and complaint to him personally; or (3) leaving a copy of the summons and complaint at his dwelling house or usual place of abode; or (4) serving his agent as provided by rule, statute or valid agreement.",
+      "text_sha256": "8f00c3c6f9095f13a77efd172c5c464cefabdb70d64765cfe15f3c941dd7330e",
+      "publisher_sha256": "6a43acf975b87e062068c1fe6a07b66e80cb945c0dfc295ede2536df12739e86",
+      "retrieved_at": "2026-11-20T18:05:10.675085+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Rules of Trial Procedure",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2026-01-01"
+    },
+    "e01075ffb416428c6c4443d6fa62ca": {
+      "source_id": "US-IN:service:6ebbde82c3f0",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 4.1(B)",
+      "text": "When service is made under subdivision (A)(3) or (A)(4), the person making the service also must send by first class mail, a copy of the summons and the complaint to the address on the summons of the person being served, and this fact must be shown upon the return.",
+      "text_sha256": "abb83294c0d1fc0895904794481ede9d4985e4e284b0e9655e2dcb9a1bc2f1a8",
+      "publisher_sha256": "6a43acf975b87e062068c1fe6a07b66e80cb945c0dfc295ede2536df12739e86",
+      "retrieved_at": "2026-11-20T18:05:10.675085+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Rules of Trial Procedure",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2026-01-01"
+    },
+    "043ff3adb9745a8a35c880a0bda478": {
+      "source_id": "US-IN:calendar:4e01aa1896ae",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 6(A)",
+      "text": "In computing any period of time prescribed or allowed by these rules, by order of the court, or by any applicable statute, the day of the act, event, or default from which the designated period of time begins to run shall not be included. The last day of the period so computed is to be included unless it is: (1) a Saturday, (2) a Sunday, (3) a legal holiday as defined by state statute, or (4) a day the office in which the act is to be done is closed during regular business hours. In any event, the period runs until the end of the next day that is not a Saturday, a Sunday, a legal holiday, or a day on which the office is closed. When the period of time allowed is less than seven days, intermediate Saturdays, Sundays, legal holidays, and days on which the office is closed must be excluded from the computations.",
+      "text_sha256": "29a63fcaa5d204ac64055b002dc4aeaeb106e590284daf15cc3f94c2b8636750",
+      "publisher_sha256": "7affe39da4c4da3b3de690f2e4e7fa477b41f66b23b985b5cd970fbf87f43342",
+      "retrieved_at": "2026-11-20T18:05:10.938337+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Rules of Trial Procedure",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2026-07-01"
+    },
+    "680723b5b4a8847c2499e44a2f62a2": {
+      "source_id": "US-IN:response:03fee8f1983d",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 6(B)",
+      "text": "A party may receive one automatic thirty-day enlargement of time to respond to a complaint or other pleading by filing a notice with the court. The notice must include the date when the response was initially due and the date to which time is enlarged. If the party files the notice on or before the original due date, the enlargement is granted without a written order by the court.",
+      "text_sha256": "3c8f31bb2f91c85960160b29d7b453b743c269672043c295c5da9787c58bd64d",
+      "publisher_sha256": "7affe39da4c4da3b3de690f2e4e7fa477b41f66b23b985b5cd970fbf87f43342",
+      "retrieved_at": "2026-11-20T18:05:10.938337+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Rules of Trial Procedure",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2026-07-01"
+    },
+    "3a7562c0b7fe3653a96421573a8f46": {
+      "source_id": "US-IN:response:e4816139029a",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 6(D)",
+      "text": "Except as otherwise provided in these rules or ordered by the court, the following times apply: (1) Pleadings. A response to a pleading must be filed within twenty days after service of the pleading. (2) Motions. A response to a motion must be filed within twenty days after service. Any reply must be filed within fourteen days after service of the response. These deadlines do not apply to motions to continue under Rule 7, summary judgment motions under Rule 56, motions to correct error under Rule 59, and motions filed under Rule 60(B). Filing a motion under Rule 12 alters the time for filing a responsive pleading as provided in Rule 12(A).",
+      "text_sha256": "2ddd37d23f48d976d9cb1f8238ff7f3453d45880c492e274ec969fdf4e6be8c8",
+      "publisher_sha256": "7affe39da4c4da3b3de690f2e4e7fa477b41f66b23b985b5cd970fbf87f43342",
+      "retrieved_at": "2026-11-20T18:05:10.938337+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Rules of Trial Procedure",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2026-07-01"
+    },
+    "a43e27ad9d3b5716a39a4d3280a9ff": {
+      "source_id": "US-IN:response:205a35d3a4ef",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 6(G)",
+      "text": "Whenever a party has the right or is required to do some act or take some proceedings within a prescribed period after the service of a notice or other paper and the notice or paper is served by United States mail, three days must be added to the prescribed period.",
+      "text_sha256": "39a86edd7594f026aee2ff256874714509ebcfca687633ecd04718f75c9c4a13",
+      "publisher_sha256": "7affe39da4c4da3b3de690f2e4e7fa477b41f66b23b985b5cd970fbf87f43342",
+      "retrieved_at": "2026-11-20T18:05:10.938337+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Rules of Trial Procedure",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2026-07-01"
+    },
+    "cd65cd72f81de2ad0b1ffe8ae19e5e": {
+      "source_id": "US-IN:small_claims:3353eacfcf79",
+      "authority_type": "court_rule",
+      "citation": "Ind. Small Claims R. 2(A)",
+      "text": "(1) An action under these rules shall be commenced by the filing of an unverified notice of claim in a court of competent jurisdiction and by payment of the prescribed filing fee or filing an order waiving the filing fee. (2) A plaintiff filing an action under these rules waives the excess of the plaintiff’s claim over the jurisdictional maximum of the small claims court or docket in which the case is decided, and the plaintiff may not later bring a separate action for the remainder of such claim.",
+      "text_sha256": "d917cfdf3774ac7b20666a081b61bda066ef86991f191fa098a7d1b35e04a0f1",
+      "publisher_sha256": "138c3b4c097c55de67ee34d7e8baeb26a807cdc8d228881a7b1c82731a91a27b",
+      "retrieved_at": "2026-11-20T18:05:10.981460+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Small Claims Rules",
+      "current_as_of": "2025-01-01",
+      "publisher_path": "9c04a4fb31dea283659c8e9bad22a9b47f99ec4ceacbe5a6eee1b15db219a02a",
+      "edition": "Indiana Small Claims Rules. Updated, Effective January 1, 2025.",
+      "effective_from": "2022-01-01"
+    },
+    "f2c3457260d4ed55e8e7924341b4b5": {
+      "source_id": "US-IN:small_claims:dffcf3a02ff7",
+      "authority_type": "court_rule",
+      "citation": "Ind. Small Claims R. 3(A)",
+      "text": "For the purpose of service the notice of claim shall also be considered to be the summons. A copy of the notice of claim shall be served upon each defendant. Service may be made by sending a copy by certified mail with return receipt requested, or by delivering a copy to the defendant personally, or by leaving a copy at the defendant's dwelling house or usual place of abode, or in any other manner provided in Trial Rules 4.1 through 4.16. Whenever service is made by leaving a copy at defendant's dwelling house or usual place of abode, the person making the service also shall send by first class mail a copy of the notice of claim to the last known address of the person being served.",
+      "text_sha256": "4c0ad25bc01a5bc9a7787d2c3befdf369ad4dae600448c6acb1b9461cf465c35",
+      "publisher_sha256": "dd1a6935a8642c713ca0d89a603521c6f330c220876bd179d37ea3978dda4e48",
+      "retrieved_at": "2026-11-20T18:05:11.107016+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Small Claims Rules",
+      "current_as_of": "2025-01-01",
+      "publisher_path": "9c04a4fb31dea283659c8e9bad22a9b47f99ec4ceacbe5a6eee1b15db219a02a",
+      "edition": "Indiana Small Claims Rules. Updated, Effective January 1, 2025.",
+      "effective_from": "2011-01-01"
+    },
+    "73ff3338e459d503810d4bf4c3dc72": {
+      "source_id": "US-IN:small_claims:47a4d0df01e5",
+      "authority_type": "court_rule",
+      "citation": "Ind. Small Claims R. 4(A)",
+      "text": "All defenses shall be deemed at issue without responsive pleadings, but this provision shall not alter the burden of proof.",
+      "text_sha256": "0bf1c0512fc6d9fdee432e011540b6e45e17625f9e52d6812e64e79354910720",
+      "publisher_sha256": "e638220f4db721c4c9343e71adcde61dfc4a7975ab592919dfddad48886a859e",
+      "retrieved_at": "2026-11-20T18:05:11.174633+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Small Claims Rules",
+      "current_as_of": "2025-01-01",
+      "publisher_path": "9c04a4fb31dea283659c8e9bad22a9b47f99ec4ceacbe5a6eee1b15db219a02a",
+      "edition": "Indiana Small Claims Rules. Updated, Effective January 1, 2025.",
+      "effective_from": "2022-01-01"
+    },
+    "348093b7ad3cd070c763d595f70aa5": {
+      "source_id": "US-IN:small_claims:c67bb8f9214a",
+      "authority_type": "court_rule",
+      "citation": "Ind. Small Claims R. 4(C)",
+      "text": "Notwithstanding any statute to the contrary, a defendant may request a jury trial by submitting a written request to the court within ten (10) days after receipt of the notice of claim. No statement of facts supporting the request or verification of the request is required. The party requesting a jury trial shall pay the clerk the additional amount required by statute to transfer the claim to the plenary docket or, in the Marion Small Claims Court, the filing fee necessary to file a case in the appropriate court of the county. Unless filed within ten (10) days after receipt of the notice of claim the right to a jury trial is waived. Once a jury trial request has been granted, it may not be withdrawn without the consent of the other party or parties.",
+      "text_sha256": "8874383cbce76d40335e6d3af72e1508ea6cb58278f0b4a755a36bfa59393dbd",
+      "publisher_sha256": "e638220f4db721c4c9343e71adcde61dfc4a7975ab592919dfddad48886a859e",
+      "retrieved_at": "2026-11-20T18:05:11.174633+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Small Claims Rules",
+      "current_as_of": "2025-01-01",
+      "publisher_path": "9c04a4fb31dea283659c8e9bad22a9b47f99ec4ceacbe5a6eee1b15db219a02a",
+      "edition": "Indiana Small Claims Rules. Updated, Effective January 1, 2025.",
+      "effective_from": "2022-01-01"
+    },
+    "69b2cb80942b8bccca47e696d68aeb": {
+      "source_id": "US-IN:deposit:412f2ff9c6f4",
+      "authority_type": "opinion",
+      "citation": "Wang v. Sun, No. 22A-SC-1473, ¶ 23 (Ind. Ct. App. June 23, 2023)",
+      "text": "(a) Upon termination of a rental agreement, a landlord shall return to the tenant the security deposit minus any amount applied to: (1) the payment of accrued rent; (2) the amount of damages that the landlord has suffered or will reasonably suffer by reason of the tenant’s noncompliance with law or the rental agreement; and (3) unpaid utility or sewer charges that the tenant is obligated to pay under the rental agreement; all as itemized by the landlord with the amount due in a written notice that is delivered to the tenant not more than forty-five (45) days after termination of the rental agreement and delivery of possession. . . . (b) If a landlord fails to comply with subsection (a), a tenant may recover all of the security deposit due the tenant and reasonable attorney’s fees.",
+      "text_sha256": "5223aee3188c467f1684ef851f6d14587d6c58d71a739da47e5dba78c00e897c",
+      "publisher_sha256": "59cc747b25f94cd4673ccbda1af01530841ef85bdc9eb7ac6934d5af2d5b2961",
+      "retrieved_at": "2026-11-20T18:21:54.266785+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2023-06-23",
+      "court": "Court of Appeals of Indiana",
+      "decision_date": "2023-06-23",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal and cross-appeal from a small-claims judgment on both parties’ rental-agreement claims. The court affirmed in part and reversed in part."
+    },
+    "2d808d7a1062c0c0a002ae940a937c": {
+      "source_id": "US-IN:negligence_elements:d741a7210371",
+      "authority_type": "opinion",
+      "citation": "J.B. Hunt Transp., Inc. v. Guardianship of Zak, No. 45A03-1506-CT-670, ¶ 46 (Ind. Ct. App. Aug. 18, 2016)",
+      "text": "To prevail on a claim of negligence, a plaintiff is required to prove: (1) a duty owed by the defendant to the plaintiff; (2) a breach of that duty by the defendant; and (3) an injury to the plaintiff proximately caused by the breach. E.g., Florio v. Tilley, 875 N.E.2d 253, 255 (Ind. Ct. App. 2007).",
+      "text_sha256": "0a40bc6f8f1d272c488445847bc0f3dceb384e476770670ede367913fb1a43f0",
+      "publisher_sha256": "b20bbf290b972c9acb1a1118585ebf131ba0d5ec2ce2fd9f36b7529dc5471cf3",
+      "retrieved_at": "2026-11-20T18:42:12.589388+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2016-08-18",
+      "court": "Court of Appeals of Indiana",
+      "decision_date": "2016-08-18",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a negligence judgment arising from a commercial-truck collision on a highway."
+    },
+    "18965079d1769e6a0e95744051346f": {
+      "source_id": "US-IN:summons_issuance:427b85251267",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 4(C)",
+      "text": "The summons shall contain: (1) The name and address of the person on whom the service is to be effected; (2) The name, street address, and telephone number of the court and the cause number assigned to the case; (3) The title of the case as shown by the complaint, but, if there are multiple parties, the title may be shortened to include only the first named plaintiff and defendant with an appropriate indication that there are additional parties; (4) The name, address, and telephone number of the attorney for the person seeking service; (5) The time within which these rules require the person being served to respond, and a clear statement that in case of his failure to do so, judgment by default may be rendered against him for the relief demanded in the complaint. The summons may also contain any additional information which will facilitate proper service.",
+      "text_sha256": "80e135c08c5fdd0f3da4883c493f40da5fa172d12465f7b5fa73e5e3f76cc283",
+      "publisher_sha256": "666be6fa8c14dd74f460558e8b398df7abc9d83e37ae5e995d523e1ee27f1b75",
+      "retrieved_at": "2026-11-21T03:42:28.689803+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Rules of Trial Procedure",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2019-01-01"
+    },
+    "d8cde58363e357a61319e43b056edd": {
+      "source_id": "US-IN:summons_issuance:cd86c289eef3",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 4(E)",
+      "text": "The summons and complaint shall be served together unless otherwise ordered by the court. When service of summons is made by publication, the complaint shall not be published. When jurisdiction over a party is dependent upon service of process by publication or by his appearance, summons and complaint shall be deemed to have been served at the end of the day of last required publication in the case of service by publication, and at the time of appearance in jurisdiction acquired by appearance. Whenever the summons and complaint are not served or published together, the summons shall contain the full, unabbreviated title of the case.",
+      "text_sha256": "acc500edcb5b2063a30220efdffa73b0748dd98e418e780f714791c5338f16db",
+      "publisher_sha256": "666be6fa8c14dd74f460558e8b398df7abc9d83e37ae5e995d523e1ee27f1b75",
+      "retrieved_at": "2026-11-21T03:42:28.689803+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Rules of Trial Procedure",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2019-01-01"
+    },
+    "695d661ecf94dfa0f88f2a81bf8563": {
+      "source_id": "US-IN:service_business_entity:3cc99bb59405",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 4.6(A)",
+      "text": "Service upon an organization may be made as follows: (1) In the case of a domestic or foreign organization upon an executive officer thereof, or if there is an agent appointed or deemed by law to have been appointed to receive service, then upon such agent. (2) In the case of a partnership, upon a general partner thereof. (3) In the case of a state governmental organization upon the executive officer thereof and also upon the Attorney General. (4) In the case of a local governmental organization, upon the executive thereof and upon the attorney for the local governmental organization. (5) When, in subsections (3) and (4) of this subdivision, a governmental representative is named as a party in his individual name or in such name along with his official title, then also upon such representative.",
+      "text_sha256": "65244f2c73cee51bcf5b91f9a2482117e80e3660c07925a728ce6b46129eac8d",
+      "publisher_sha256": "ae921323d068db261271cb86890168545e25c34ccb4c3ec1da8e0e363af9942b",
+      "retrieved_at": "2026-11-21T03:42:28.597672+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Rules of Trial Procedure",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2026-01-01"
+    },
+    "e2aeb89b00c00096f99265fd0dd337": {
+      "source_id": "US-IN:service_business_entity:8bd911499e48",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 4.6(B)",
+      "text": "Service under subdivision (A) must be made on the proper person in the manner provided by these rules for service upon individuals, but service must not knowingly be directed to the person’s residence or place of abode, unless the address is furnished under the requirements of a statute or valid agreement, or unless an affidavit on or attached to the summons states that service in another manner is impractical. A registered agent that has consented to service by electronic means may be served in such a manner.",
+      "text_sha256": "6ae1342874dc21404765616fb222732e15960c7c609562e34ef006a8c3dfc86c",
+      "publisher_sha256": "ae921323d068db261271cb86890168545e25c34ccb4c3ec1da8e0e363af9942b",
+      "retrieved_at": "2026-11-21T03:42:28.597672+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Rules of Trial Procedure",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2026-01-01"
+    },
+    "f450cae00dff64fff34398ca87a6e4": {
+      "source_id": "US-IN:service_business_entity:92a8390aa319",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 4.6(C)",
+      "text": "When shown upon an affidavit or in the return, that service upon an organization cannot be made as provided in subdivision (A) or (B) of this rule, service may be made by leaving a copy of the summons and complaint at any office of such organization located within this state with the person in charge of such office.",
+      "text_sha256": "222e31a54064fb0b3dd12e435653af4f705e6835f903e8f5a21dd7cc917ade7e",
+      "publisher_sha256": "ae921323d068db261271cb86890168545e25c34ccb4c3ec1da8e0e363af9942b",
+      "retrieved_at": "2026-11-21T03:42:28.597672+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Rules of Trial Procedure",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2026-01-01"
+    },
+    "1476cc7adf1fc112895d29c4e76651": {
+      "source_id": "US-IN:service_proof:6f51d08eec49",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 4.15(A)",
+      "text": "The person making service shall promptly make his return upon or attach it to a copy of the summons which shall be delivered to the clerk. The return shall be signed by the person making it, and shall include a statement: (1) that service was made upon the person as required by law and the time, place, and manner thereof; (2) if service was not made, the particular manner in which it was thwarted in terms of fact or in terms of law; (3) such other information as is expressly required by these rules.",
+      "text_sha256": "c86e4e8b2e172454e5c652a5f49d7ae6f51bcd1aa0bad11f93db066b3604a55f",
+      "publisher_sha256": "0ccd7929136c340c9892369fab9ce745a1ceab8a956fa43d224e4b0138512f52",
+      "retrieved_at": "2026-11-21T03:42:28.680029+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Rules of Trial Procedure",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "1970-01-01"
+    },
+    "f222a82503b229ee6410487b17592e": {
+      "source_id": "US-IN:service_proof:a062f98eeabe",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 4.15(B)",
+      "text": "The return, along with the summons to which it is attached or is a part, the praecipe for summons, affidavits furnished with the summons or praecipe for summons, and all other affidavits permitted by these rules shall be filed by the clerk with the pleadings and other papers in the case and thereupon shall become a part of the record, and have such evidentiary effect as is now provided by law. Copies of such record shall be admissible in all actions and proceedings and may be entered in any public records when certified over the signature of the clerk or his deputy and the clerk’s seal.",
+      "text_sha256": "85b14edaa0b579965cf5ad073124e60df9bc04462c2a53c1fa8f3cfd0daef573",
+      "publisher_sha256": "0ccd7929136c340c9892369fab9ce745a1ceab8a956fa43d224e4b0138512f52",
+      "retrieved_at": "2026-11-21T03:42:28.680029+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Rules of Trial Procedure",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "1970-01-01"
+    },
+    "429e6b41cf29bb923a53fc91b574ac": {
+      "source_id": "US-IN:pleading_contents:5d29f3b04ca1",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 8(A)",
+      "text": "To state a claim for relief, whether an original claim, counterclaim, cross-claim, or third-party claim, a pleading must contain: (1) a short and plain statement of the claim showing that the pleader is entitled to relief, and (2) a demand for relief to which the pleader deems entitled. Relief in the alternative or of several different types may be demanded. However, in any complaint seeking damages for personal injury or death, or seeking punitive damages, no dollar amount or figure shall be included in the demand.",
+      "text_sha256": "2e7a848ee61a1c5d80bce5a4dca5d6e124c1396d27cc342279777005788fb4b0",
+      "publisher_sha256": "af7b3b4cd8b36e04602c9dd9791b461516baf24ef403253b9e1a7d574edc6e2c",
+      "retrieved_at": "2026-11-21T03:42:28.829341+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Rules of Trial Procedure",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2026-08-01"
+    },
+    "52547fb948cb732a6d3deeb418e23e": {
+      "source_id": "US-IN:answer_contents:b7742a6292de",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 8(B)",
+      "text": "A responsive pleading must state in short and plain terms the pleader’s defenses to each claim asserted and must admit or controvert the averments set forth in the preceding pleading. If in good faith the pleader intends to deny all the averments in the preceding pleading, the pleader may do so by general denial subject to the provisions of Rule 11 or Rule 11.1, as applicable. If the pleader does not intend a general denial, the pleader may: (1) specifically deny designated averments or paragraphs; or (2) generally deny all averments except such designated averments and paragraphs as he expressly admits. If he lacks knowledge or information sufficient to form a belief as to the truth of an averment, he shall so state and his statement shall be considered a denial. If in good faith a pleader intends to deny only a part or a qualification of an averment, he shall specify so much of it as is true and material and deny the remainder. All denials shall fairly meet the substance of the averments denied. This rule shall have no application to uncontested actions for divorce, or to answers required to be filed by clerks or guardians ad litem.",
+      "text_sha256": "dc6fea97213b69837b185eddde1685205d3283122f601a0d61d8581d7f198805",
+      "publisher_sha256": "af7b3b4cd8b36e04602c9dd9791b461516baf24ef403253b9e1a7d574edc6e2c",
+      "retrieved_at": "2026-11-21T03:42:28.829341+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Rules of Trial Procedure",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2026-08-01"
+    },
+    "379a33a82751615a0dc06e411eb352": {
+      "source_id": "US-IN:answer_contents:84bb72be2ba4",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 8(C)",
+      "text": "A responsive pleading shall set forth affirmatively and carry the burden of proving: accord and satisfaction, arbitration and award, discharge in bankruptcy, duress, estoppel, failure of consideration, fraud, illegality, injury by fellow servant, laches, license, payment, release, res judicata, statute of frauds, statute of limitations, waiver, lack of jurisdiction over the subject-matter, lack of jurisdiction over the person, improper venue, insufficiency of process or service of process, the same action pending in another state court of this state, and any other matter constituting an avoidance, matter of abatement, or affirmative defense. A party required to affirmatively plead any matters, including matters formerly required to be pleaded affirmatively by reply, shall have the burden of proving such matters. The burden of proof imposed by this or any other provision of these rules is subject to the rules of evidence or any statute fixing a different rule. If the pleading mistakenly designates a defense as a counterclaim or a counterclaim as a defense, the court shall treat the pleading as if there had been a proper designation.",
+      "text_sha256": "74cda58a57bd1a548de5bfc1e54a69e714dedc68be655962e6025ab522c0f54a",
+      "publisher_sha256": "af7b3b4cd8b36e04602c9dd9791b461516baf24ef403253b9e1a7d574edc6e2c",
+      "retrieved_at": "2026-11-21T03:42:28.829341+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Rules of Trial Procedure",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2026-08-01"
+    },
+    "81b944deec414bb812bb6b93afaa09": {
+      "source_id": "US-IN:answer_contents:d2d4ff3fa3ce",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 8(D)",
+      "text": "Averments in a pleading to which a responsive pleading is required, except those pertaining to amount of damages, are admitted when not denied in the responsive pleading. Averments in a pleading to which no responsive pleading is required or permitted shall be taken as denied or avoided.",
+      "text_sha256": "07c816750ba31a56c24f78f58cee5b2ce391135674ccc46b9fdde8b556594cdd",
+      "publisher_sha256": "af7b3b4cd8b36e04602c9dd9791b461516baf24ef403253b9e1a7d574edc6e2c",
+      "retrieved_at": "2026-11-21T03:42:28.829341+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Rules of Trial Procedure",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2026-08-01"
+    },
+    "46228a67fc5be4ed4d09ab24df1665": {
+      "source_id": "US-IN:debt_pleading:2b35b3905638",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 9.2(A)",
+      "text": "When any pleading allowed by these rules is founded on a written instrument, the original, or a copy thereof, shall be included in or filed with the pleading. Such instrument, whether copied in the pleadings or not, shall be taken as part of the record. Further, (1) if the claim: (a) arises out of a written contract, a copy shall be attached; however, the fact that a copy of such contract is not in the custody of the plaintiff shall not bar the filing of the claim; or (b) is on an account, an Affidavit of Debt, in a form substantially similar to Appendix A-2 shall be attached; (2) in addition to the requirements set forth above in subsection (1), if the plaintiff is not the original creditor, and the claim arises from a debt that is primarily for personal, family, or household purposes, the plaintiff shall provide an Affidavit of Debt that shall have attached as one or more Exhibits which shall include: (a) a copy of the contract or other writing evidencing the original debt, which shall contain a signature of the defendant. If a claim is based on credit card or other debt and no such signed writing evidencing the original debt ever existed, then copies of documents generated when the debt was incurred or the credit card was actually used shall be attached; and (b) a chronological listing of the names of all prior owners of the debt and the date of each transfer of ownership of the debt, beginning with the name of the original creditor; and (c) a certified or other properly authenticated copy of the bill of sale or other document that transferred ownership of the debt to the plaintiff. (d) Subsection (2) does not apply to mortgage foreclosures.",
+      "text_sha256": "4bc787748709355db432658f6cd59e266f33aea403272f178bdb2c9ab1579520",
+      "publisher_sha256": "31b36edff29b28af56b5a05fd22fe5360aa9657d8071d5bcf1e9637df26c45b3",
+      "retrieved_at": "2026-11-21T03:42:28.980510+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Rules of Trial Procedure",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2026-08-01"
+    },
+    "4592f7fc07b2d6d751f3412d9c4c04": {
+      "source_id": "US-IN:debt_pleading:c9b2357d6944",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 9.2(F)",
+      "text": "Non-compliance with the provisions of this rule requiring a written instrument or an Affidavit of Debt to be included with the pleading may be raised by the first responsive pleading or prior motion of a party. The court, in its sound discretion, may order compliance, the reasons for non-compliance to be added to the pleadings, or allow the action to continue without further pleading. Amendments to correct the omission of a required written instrument, an assignment or indorsement thereof, the omission of a denial of the execution of a written instrument as permitted or required by this rule, or an Affidavit of Debt shall be governed by Rule 15, except as provided by subdivision (A) of this rule.",
+      "text_sha256": "ef5c784401a9f0ece6462fceebfa786b29f61f2d147406c7f66c6cf43a122c81",
+      "publisher_sha256": "31b36edff29b28af56b5a05fd22fe5360aa9657d8071d5bcf1e9637df26c45b3",
+      "retrieved_at": "2026-11-21T03:42:28.980510+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Rules of Trial Procedure",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2026-08-01"
+    },
+    "9d42250fe4870b69276868114e693b": {
+      "source_id": "US-IN:amended_pleading_response:3710fd12c15e",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 15(A)",
+      "text": "A party may amend his pleading once as a matter of course at any time before a responsive pleading is served or, if the pleading is one to which no responsive pleading is permitted, and the action has not been placed upon the trial calendar, he may so amend it at any time within thirty [30] days after it is served. Otherwise a party may amend his pleading only by leave of court or by written consent of the adverse party; and leave shall be given when justice so requires. A party shall plead in response to an amended pleading within the time remaining for response to the original pleading or within twenty [20] days after service of the amended pleading, whichever period may be the longer, unless the court otherwise orders.",
+      "text_sha256": "f42563ea97f5f697654fdd20d1a68ec8258a745ce596e808091078ff2a353c6c",
+      "publisher_sha256": "c71f6972adfec122ebda4cee898a237289b9f93e00e503651f50ea8ff5f35fda",
+      "retrieved_at": "2026-11-21T03:42:28.879084+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Indiana courts applying the Rules of Trial Procedure",
+      "current_as_of": "2026-08-01",
+      "publisher_path": "301dc55e54fbf80230fb5a5bf744bb6147e6ed3935199b1e55af5bfef77f1d06",
+      "edition": "Indiana Rules of Trial Procedure. Updated, Effective August 1, 2026.",
+      "effective_from": "2002-04-01"
+    },
+    "8c8fc4e67d13f2ef6fbe5d15123f46": {
+      "source_id": "US-IN:debtLaw:8be732181797",
+      "authority_type": "statute",
+      "citation": "2026 Ind. Acts P.L. 115, § 97 (Ind. Code § 37-2-7-12)",
+      "text": "Sec. 12. (a) The department may bring a civil action to restrain a creditor or a person acting in behalf of a creditor from engaging in a course of: (1) making or enforcing unconscionable terms or provisions of consumer credit sales, consumer leases, or consumer loans; (2) fraudulent or unconscionable conduct in inducing debtors to enter into consumer credit sales, consumer leases, or consumer loans; or (3) fraudulent or unconscionable conduct in the collection of debts arising from consumer credit sales, consumer leases, or consumer loans. (b) In an action brought pursuant to this section the court may grant relief only if it finds: (1) that the respondent has made unconscionable agreements or has engaged or is likely to engage in a course of fraudulent or unconscionable conduct; (2) that the agreements or conduct of the respondent has caused or is likely to cause injury to consumers; and (3) that the respondent has been able to cause or will be able to cause the injury primarily because the transactions involved are credit transactions. (c) In applying this section, consideration shall be given to each of the following factors, among others: (1) belief by the creditor at the time consumer credit sales, consumer leases, or consumer loans are made that there was no reasonable probability of payment in full of the obligation by the debtor; (2) in the case of consumer credit sales or consumer leases, knowledge by the seller or lessor at the time of the sale or lease of the inability of the buyer or lessee to receive substantial benefits from the property or services sold or leased; (3) in the case of consumer credit sales or consumer leases, gross disparity between the price of the property or services sold or leased and the value of the property or services measured by the price at which similar property or services are readily obtainable in credit transactions by like buyers or lessees; (4) the fact that the creditor contracted for or received separate charges for insurance with respect to consumer credit sales or consumer loans with the effect of making the sales or loans, considered as a whole, unconscionable; and (5) the fact that the respondent has knowingly taken advantage of the inability of the debtor reasonably to protect the debtor's interests by reason of physical or mental infirmities, ignorance, illiteracy or inability to understand the language of the agreement, or similar factors. (d) In an action brought pursuant to this section, a charge or practice expressly permitted by this article is not in itself unconscionable.",
+      "text_sha256": "a7897c4d6143a97e93bb0dfacac8b7584784fb0d5e61408c554220b304a1f43e",
+      "publisher_sha256": "a74a79abd5a209d8bab5c0e07cb97481061796c3353c252cac164a60fd3c8de2",
+      "retrieved_at": "2026-11-21T04:21:03.062526+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Indiana Senate Enrolled Act 169, signed March 5, 2026; section 97 effective July 1, 2026",
+      "effective_from": "2026-07-01",
+      "publisher_member": "printed pp. 84 and 253–255"
+    },
+    "bc9d6e29f917e5a16bdce624a93daa": {
+      "source_id": "US-IN:oral_contract_limitations:eb91f3134e32",
+      "authority_type": "opinion",
+      "citation": "Sollers Point Co. v. L.M. Zeller, No. 19A-CC-1156 (Ind. Ct. App. Mar. 23, 2020), ¶ 17",
+      "text": "[17] The trial court here concluded that the six-year statute of limitations for actions on unwritten contracts found in Indiana Code section 34-11-2-7 applied. This statute provides: “The following actions must be commenced within six (6) years after the cause of action accrues: . . . (1) Actions on accounts and contracts not in writing[.]”",
+      "text_sha256": "f583006a06a2f54c5708846fbaeedaf1e220a79bebfa33e1e1a1bd2514aa524f",
+      "publisher_sha256": "fb5f914f01137bd18c296f2bdf2146a89f427b3cd7fe9b8f9ed16a3b270fbf68",
+      "retrieved_at": "2026-11-21T17:44:26.245338+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported opinion issued 2020-03-23",
+      "court": "Indiana Court of Appeals",
+      "publisher_member": "Indiana Court of Appeals issued opinion p. 11, ¶ 17, unwritten contracts and accounts",
+      "decision_date": "2020-03-23",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal in an account and payment dispute; the appellate court addressed the statutory limitations and alternative accrual arguments."
+    },
+    "4e19c318bdd9d4abf6e9a07d46c216": {
+      "source_id": "US-IN:service_time_limit:1117bb76c716",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 4.13(C) (publication intervals)",
+      "text": "(C) Publication of summons. The summons shall be published three [3] times by the clerk or person making it, the first publication promptly and each two [2] succeeding publications at least seven [7] and not more than fourteen [14] days after the prior publication, in a newspaper authorized by law to publish notices, and published in the county where the complaint or action is filed, where the res is located, or where the defendant resides or where he was known last to reside. If no newspaper is published in the county, then the summons shall be published in the county in this state nearest thereto in which any such paper may be printed, or in a place specially ordered by the court. The person seeking the service or his attorney may designate any qualified newspaper, and if he fails to do so, the selection may be made by the clerk.",
+      "text_sha256": "2522256db86cb0a248d81298fe422d7889dec47c36f9823dc560ff1b3e6fccd1",
+      "publisher_sha256": "df040340bec7a70c3868c25d1c4612ce618452900c01838a7efe55c9fc6cd5d6",
+      "retrieved_at": "2026-11-21T23:01:23.388668+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Indiana Supreme Court rule; publication intervals for otherwise authorized publication"
+    },
+    "67a4998bef3694934ca55832c76dfc": {
+      "source_id": "US-IN:service_time_limit:4d347d482126",
+      "authority_type": "court_rule",
+      "citation": "Ind. Trial R. 4.1(C) (returned-mail notice)",
+      "text": "(C) Duty to Notify Court. When service is predicated upon mail, if the mailed copy is returned for any reason prior to entry of judgment or within thirty days thereafter, the party relying upon service must file notice with the court.",
+      "text_sha256": "dd1373a8039dfb812b03158d2f5470dc4683c4fad780eca5bf193927b924186c",
+      "publisher_sha256": "6a43acf975b87e062068c1fe6a07b66e80cb945c0dfc295ede2536df12739e86",
+      "retrieved_at": "2026-11-21T23:01:23.402474+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Indiana Supreme Court rule; notification upon returned mailed copy, not a general service cutoff",
+      "effective_from": "2026-01-01"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "source_id": "US-IN:fault:ec846fef5b5e",
+    "passage_selector": "34f89a8f86d8e17f94b2ecb7dcca0b",
+    "currentness": "historical",
+    "qualification": "The opinion applies Ind. Code § 34-51-2-7(b)(2) in a private premises negligence case. Claims governed by distinct statutes are outside the retained excerpt."
+  }
+}

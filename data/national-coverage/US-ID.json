@@ -1,0 +1,781 @@
+{
+  "jurisdiction": "US-ID",
+  "version": "1",
+  "sources": {
+    "US-ID:statutes:b8bd0ebd8bce": {
+      "category": "statutes",
+      "title": "Idaho Statutes",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/",
+      "directory": "codes",
+      "locator": "Idaho"
+    },
+    "US-ID:constitution:b81d5b138612": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://legislature.idaho.gov/statutesrules/idconst/",
+      "directory": "codes",
+      "locator": "Idaho"
+    },
+    "US-ID:legislature:65ecc1283b72": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "https://legislature.idaho.gov/",
+      "directory": "codes",
+      "locator": "Idaho"
+    },
+    "US-ID:labor_agency:dbef7bd50479": {
+      "category": "labor_agency",
+      "title": "www.labor.idaho.gov",
+      "url": "http://www.labor.idaho.gov/",
+      "directory": "labor",
+      "locator": "Idaho"
+    },
+    "US-ID:commercial_code:847694a30d64": {
+      "category": "commercial_code",
+      "title": "Commercial Transactions",
+      "url": "http://legislature.idaho.gov/statutesrules/idstat/Title28/",
+      "directory": "ucc",
+      "locator": "Idaho"
+    },
+    "US-ID:civil_rules:d2f7640819b4": {
+      "category": "civil_rules",
+      "title": "Proceedings in Civil Actions in Courts of Record",
+      "url": "http://legislature.idaho.gov/statutesrules/idstat/Title5/",
+      "directory": "procedure",
+      "locator": "Idaho"
+    },
+    "US-ID:consumer_agency:8c12799daa4a": {
+      "category": "consumer_agency",
+      "title": "Idaho (ID)",
+      "url": "https://www.ag.idaho.gov/consumer-protection/",
+      "directory": "consumer",
+      "locator": "Idaho (ID)",
+      "observation": {
+        "requested_url": "https://www.ag.idaho.gov/consumer-protection/",
+        "retrieved_at": "2026-11-17T19:42:35.160390+00:00",
+        "http_status": "200",
+        "sha256": "118da851dd98c39d12c63197db554bc71f5cf39681482fd2e513aea79197958f",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ID:judiciary:2add8bad6697": {
+      "category": "judiciary",
+      "title": "Idaho State Judiciary",
+      "url": "https://www.isc.idaho.gov/",
+      "directory": "doj-ID",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-ID:court_directory:2add8bad6697": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://www.isc.idaho.gov/",
+      "directory": "doj-ID",
+      "locator": "Supreme Court"
+    },
+    "US-ID:court_directory:3399a812cabc": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "https://isc.idaho.gov/appeals-court/handbook",
+      "directory": "doj-ID",
+      "locator": "Court of Appeals"
+    },
+    "US-ID:court_directory:429dd790f3a5": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "https://isc.idaho.gov/about-the-courts/idaho-district-court",
+      "directory": "doj-ID",
+      "locator": "District Courts"
+    },
+    "US-ID:forms:0fdfe81b7014": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://courtselfhelp.idaho.gov/Forms",
+      "directory": "doj-ID",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-ID:regulations:b27b93d463a0": {
+      "category": "regulations",
+      "title": "Administrative Code",
+      "url": "https://adminrules.idaho.gov/current-rules/",
+      "directory": "doj-ID",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-ID:pi_limitations:c4313a5ebb6e": {
+      "category": "pi_limitations",
+      "title": "Idaho Code § 5-219(4)",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title5/T5CH2/SECT5-219/",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://legislature.idaho.gov/statutesrules/idstat/Title5/T5CH2/SECT5-219/",
+        "retrieved_at": "2026-11-17T19:33:57.395542+00:00",
+        "http_status": "200",
+        "sha256": "2d618dcd3bfe1dc3d0873c4afac0fa06deb40829d7c070bc73a87f0bad624cc6",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ID:written_contract_limitations:95d28668b4b5": {
+      "category": "written_contract_limitations",
+      "title": "Idaho Code § 5-216",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title5/T5CH2/SECT5-216/",
+      "directory": null,
+      "locator": "Idaho Code § 5-216",
+      "observation": {
+        "requested_url": "https://legislature.idaho.gov/statutesrules/idstat/Title5/T5CH2/SECT5-216/",
+        "retrieved_at": "2026-11-17T19:33:57.131589+00:00",
+        "http_status": "200",
+        "sha256": "ae0846f198d634ff30253d8a1a33aa311cf4f17f41fd81f4586d6c3a590f80ac",
+        "health": "healthy"
+      }
+    },
+    "US-ID:oral_contract_limitations:69cf8e101094": {
+      "category": "oral_contract_limitations",
+      "title": "Idaho Code § 5-217",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title5/T5CH2/SECT5-217/",
+      "directory": null,
+      "locator": "Idaho Code § 5-217",
+      "observation": {
+        "requested_url": "https://legislature.idaho.gov/statutesrules/idstat/Title5/T5CH2/SECT5-217/",
+        "retrieved_at": "2026-11-17T19:33:57.110131+00:00",
+        "http_status": "200",
+        "sha256": "e867f4505530fa9232738bae137becd2a4abce0ed37621a131aec87d0d43d206",
+        "health": "healthy"
+      }
+    },
+    "US-ID:small_claims:0ed041317c45": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://courtselfhelp.idaho.gov/Forms/Claims",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://courtselfhelp.idaho.gov/Forms/Claims",
+        "retrieved_at": "2026-11-17T19:41:49.302366+00:00",
+        "http_status": "200",
+        "sha256": "d3f88872594dcc283e290022a48577e952f8a76be1b035cbeaec610221db24f5",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ID:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 26"
+    },
+    "US-ID:deposit:4e2f80b4b9a2": {
+      "category": "deposit",
+      "title": "Residential tenancy publication",
+      "url": "https://www.ag.idaho.gov/content/uploads/2026/07/LandlordTenant.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.ag.idaho.gov/content/uploads/2026/07/LandlordTenant.pdf",
+        "retrieved_at": "2026-11-17T19:42:36.008752+00:00",
+        "http_status": "200",
+        "sha256": "f228fcd506febc702bb2d15cbf166a7cf2a89a7ad29f4b2e5912f4a111cfd9e9",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ID:wageLaw:9b2a4a59899e": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://www.labor.idaho.gov/laws-and-guidance/wage-and-hour/",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.labor.idaho.gov/laws-and-guidance/wage-and-hour/",
+        "retrieved_at": "2026-11-17T19:42:50.078038+00:00",
+        "http_status": "200",
+        "sha256": "251554c8eadc9362460855e3e85ffc1be0e63043cd6117c4bce1933365d7f318",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ID:debtLaw:4ab7ce50203a": {
+      "category": "debtLaw",
+      "title": "Debt collection publication",
+      "url": "https://www.finance.idaho.gov/financial-literacy-tip-of-the-week-idaho-department-of-finance-encourages-consumers-to-verify-licensing-when-seeking-help-with-tax-related-or-other-debt/",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.finance.idaho.gov/financial-literacy-tip-of-the-week-idaho-department-of-finance-encourages-consumers-to-verify-licensing-when-seeking-help-with-tax-related-or-other-debt/",
+        "retrieved_at": "2026-11-17T19:42:45.250877+00:00",
+        "http_status": "200",
+        "sha256": "01c91acae15c3c3200760ba9dd967428ece6b0a6217bb86f1f6fcdbf46f264d3",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ID:consumerLaw:8c12799daa4a": {
+      "category": "consumerLaw",
+      "title": "Consumer protection publication",
+      "url": "https://www.ag.idaho.gov/consumer-protection/",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.ag.idaho.gov/consumer-protection/",
+        "retrieved_at": "2026-11-17T19:42:35.160390+00:00",
+        "http_status": "200",
+        "sha256": "118da851dd98c39d12c63197db554bc71f5cf39681482fd2e513aea79197958f",
+        "health": "manual_review_required"
+      }
+    },
+    "US-ID:fault:e42a54e830ed": {
+      "category": "fault",
+      "title": "Idaho Code § 6-801",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title6/T6CH8/SECT6-801/",
+      "directory": null,
+      "locator": "Idaho Code § 6-801",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:40.987973+00:00",
+        "sha256": "7c2d94e86c2eb09ae62376af79dc66b220199fc55a12f79230ce58a457e6b92e"
+      }
+    },
+    "US-ID:consumerLaw:5734a7b95edb": {
+      "title": "Idaho Code § 48-601 et seq.",
+      "category": "consumerLaw",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title48/T48CH6/SECT48-602/",
+      "directory": "consumer_statutes_index",
+      "locator": "Idaho Code § 48-601 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-ID:contract_formation:de1cc66ebe56": {
+      "category": "contract_formation",
+      "title": "Idaho Code § 28-2-204",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title28/T28CH2/SECT28-2-204/",
+      "locator": "Idaho Code § 28-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:39.421965+00:00",
+        "sha256": "51d82e0854f64ff8fa693e380e3cea23738ce38a2983765c283a9ae3cc51ecb4"
+      }
+    },
+    "US-ID:deposit:7bd14db79305": {
+      "category": "deposit",
+      "title": "Idaho Code § 6-321",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title6/T6CH3/SECT6-321/",
+      "locator": "Idaho Code § 6-321",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:20:36.456738+00:00",
+        "sha256": "e00a978c1536f6f9a998fd77a00054bd16f94ed35b2ad4a9052073566c3bfc7e"
+      }
+    },
+    "US-ID:consumerLaw:7f530516681e": {
+      "category": "consumerLaw",
+      "title": "Idaho Code § 48-603(1)–(4)",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title48/T48CH6/SECT48-603/",
+      "locator": "Idaho Code § 48-603(1)–(4)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:45.220392+00:00",
+        "sha256": "248610f022e014cb33daf304f57cf61791e8cd1be6af7f324d0d987783bd1b61"
+      }
+    },
+    "US-ID:pi_limitations:b6ca62528c45": {
+      "category": "pi_limitations",
+      "title": "Idaho Code § 5-219",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title5/T5CH2/SECT5-219/",
+      "locator": "Idaho Code § 5-219",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:23.384864+00:00",
+        "sha256": "e59f0be003f4fd3ac125a5d20251b764d9c480a2c4f5d9af61f7c12141e43b34"
+      }
+    },
+    "US-ID:written_contract_limitations:aa4fb57d384c": {
+      "category": "written_contract_limitations",
+      "title": "Idaho Code § 5-216",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title5/T5CH2/SECT5-216/",
+      "locator": "Idaho Code § 5-216",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:35:42.535404+00:00",
+        "sha256": "3450771b225e181dc81136765810e57598cecef2e2ea11a72f07100b5d7c3a59"
+      }
+    },
+    "US-ID:oral_contract_limitations:dffacfe4c5fc": {
+      "category": "oral_contract_limitations",
+      "title": "Idaho Code § 5-217",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title5/T5CH2/SECT5-217/",
+      "locator": "Idaho Code § 5-217",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:35:42.518165+00:00",
+        "sha256": "c113a5ba7e421992fa6d958103377397371fe2dd3790dc66906d636870820110"
+      }
+    },
+    "US-ID:service:0f0f0c97f6ee": {
+      "category": "service",
+      "title": "Idaho R. Civ. P. 4(d)(1)",
+      "url": "https://isc.idaho.gov/rules-procedure/ircp",
+      "locator": "Idaho R. Civ. P. 4(d)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:55.611634+00:00",
+        "sha256": "8d790600ff3e504fbba4d6ccad4e824497b0919a50c44725b629381b95dbf19f"
+      }
+    },
+    "US-ID:commencement:c00907921f39": {
+      "category": "commencement",
+      "title": "Idaho R. Civ. P. 3(b)",
+      "url": "https://isc.idaho.gov/rules-procedure/ircp",
+      "locator": "Idaho R. Civ. P. 3(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:55.611634+00:00",
+        "sha256": "8d790600ff3e504fbba4d6ccad4e824497b0919a50c44725b629381b95dbf19f"
+      }
+    },
+    "US-ID:response:66a10541a37c": {
+      "category": "response",
+      "title": "Idaho R. Civ. P. 12(a)(1)–(2)",
+      "url": "https://isc.idaho.gov/rules-procedure/ircp",
+      "locator": "Idaho R. Civ. P. 12(a)(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:55.611634+00:00",
+        "sha256": "8d790600ff3e504fbba4d6ccad4e824497b0919a50c44725b629381b95dbf19f"
+      }
+    },
+    "US-ID:small_claims:b2d9119a8d21": {
+      "category": "small_claims",
+      "title": "Idaho Code § 1-2301",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/title1/t1ch23/sect1-2301/",
+      "locator": "Idaho Code § 1-2301",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:31.851875+00:00",
+        "sha256": "4a1b0907345e638a23295771796149d294bbcf039009657f2b30cf12daa46fbe"
+      }
+    },
+    "US-ID:debtLaw:f5d74a910813": {
+      "category": "debtLaw",
+      "title": "Idaho Code § 26-2229A(1)–(4)",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title26/T26CH22/SECT26-2229A/",
+      "locator": "Idaho Code § 26-2229A(1)–(4)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:26:29.016733+00:00",
+        "sha256": "31ddbaa7ad10fe39628b6d291735d4b616f84c48821d532d3322c412722ac6e0"
+      }
+    },
+    "US-ID:wageLaw:0ce555540269": {
+      "category": "wageLaw",
+      "title": "Idaho Code § 45-606(1)–(2)",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title45/T45CH6/SECT45-606/",
+      "locator": "Idaho Code § 45-606(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:27:37.194426+00:00",
+        "sha256": "91956eb26a3c17fcdd3ff423db8d07106467d8442a5eaf19553f6bc4984de353"
+      }
+    },
+    "US-ID:negligence_elements:254ba433a6ab": {
+      "category": "negligence_elements",
+      "title": "Oswald v. Costco Wholesale Corp., No. 47261 (Idaho Oct. 5, 2020)",
+      "url": "https://api.isc.idaho.gov/uploads/Documents/ISC/Civil/2020/1775503785943-oswaldmyers.pdf",
+      "locator": "Oswald v. Costco Wholesale Corp., No. 47261 (Idaho Oct. 5, 2020)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:46:43.842919+00:00",
+        "sha256": "b579afa03abc467a8b6c789b1d46d12254d3e72171a83cc8f62c32f23eec50ca"
+      }
+    },
+    "US-ID:contract_breach:d952a9f81fc6": {
+      "category": "contract_breach",
+      "title": "Espinosa v. State Farm Fire & Cas. Co., No. 52790, slip op. at 14 (Idaho Oct. 6, 2026)",
+      "url": "https://api.isc.idaho.gov/uploads/Documents/ISC/Civil/2026/1791295466834-52790.pdf",
+      "locator": "Espinosa v. State Farm Fire & Cas. Co., No. 52790, slip op. at 14 (Idaho Oct. 6, 2026)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:37:22.183432+00:00",
+        "sha256": "1af198c83d8600ffee3ea6395952c8ab7288c57245ff4cffe8b100eb8c92a9c0"
+      }
+    },
+    "US-ID:service_time_limit:e915a5114dd1": {
+      "category": "service_time_limit",
+      "title": "Idaho R. Civ. P. 4(b)(2)",
+      "url": "https://isc.idaho.gov/rules-procedure/ircp",
+      "locator": "Idaho R. Civ. P. 4(b)(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:55.611634+00:00",
+        "sha256": "8d790600ff3e504fbba4d6ccad4e824497b0919a50c44725b629381b95dbf19f"
+      }
+    },
+    "US-ID:small_claim_form:91e322bd7fa4": {
+      "category": "small_claim_form",
+      "title": "Idaho Rules for Small Claims Actions Rule 2 (plaintiff complaint form)",
+      "url": "https://isc.idaho.gov/rules-procedure/irsca",
+      "locator": "Idaho Rules for Small Claims Actions Rule 2 (plaintiff complaint form)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:58:59.306731+00:00",
+        "sha256": "4f232f925476fb58bf0cf1d2401fe7b3b8e87e3c6b719bfc122fca986a5e88ef"
+      }
+    },
+    "US-ID:small_claim_form:645eb2ba549b": {
+      "category": "small_claim_form",
+      "title": "Claim (Small Claims)",
+      "url": "https://courtselfhelp.idaho.gov/docs/forms/CAO_SC_1-2.pdf",
+      "locator": "CAO SC 1-2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:58:58.991366+00:00",
+        "sha256": "d1d9abd8fa0d7e064dd9d4d28627b0068e2ccb3d46a3ad82f650adef1b1efa59"
+      }
+    },
+    "US-ID:small_claims:11ab88e12392": {
+      "category": "small_claims",
+      "title": "Idaho Supreme Court small-claims rules, approved forms link",
+      "url": "https://isc.idaho.gov/rules-procedure/irsca",
+      "locator": "CAO SC 1-2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:58:59.306731+00:00",
+        "sha256": "4f232f925476fb58bf0cf1d2401fe7b3b8e87e3c6b719bfc122fca986a5e88ef"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-ID:court:35a4b0b86174",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-ID:court_directory:2add8bad6697"
+    },
+    {
+      "id": "US-ID:court:bab196c71fd0",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-ID:court_directory:3399a812cabc"
+    },
+    {
+      "id": "US-ID:court:80111707e241",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-ID:court_directory:429dd790f3a5"
+    },
+    {
+      "id": "US-ID:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-ID:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-ID:court:e0af3b333e19",
+      "name": "Magistrate’s Division",
+      "level": "limited_trial",
+      "source_id": "US-ID:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Idaho Code § 5-219(4)",
+      "source_id": "US-ID:pi_limitations:c4313a5ebb6e",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Idaho Code § 5-216",
+      "source_id": "US-ID:written_contract_limitations:95d28668b4b5",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Idaho Code § 5-217",
+      "source_id": "US-ID:oral_contract_limitations:69cf8e101094",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Idaho Code § 6-303. Unlawful detainer defined",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Idaho Code § 48-601 et seq.",
+      "source_id": "US-ID:consumerLaw:5734a7b95edb",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "818449be80f0eccc8d071cd85e37ac": {
+      "citation": "Idaho Code § 5-216",
+      "source_id": "US-ID:written_contract_limitations:95d28668b4b5",
+      "authority_type": "statute",
+      "text": "5-216. Action on written contract. Within five (5) years: An action upon any contract, obligation or liability founded upon an instrument in writing. The limitations prescribed by this section shall never apply to actions in the name or for the benefit of the state and shall never be asserted nor interposed as a defense to any action in the name or for the benefit of the state although such limitations may have become fully operative as a defense prior to the adoption of this amendment.",
+      "text_sha256": "91a44cef636a96b28c806d7e17de6c625abf6e6303a1d5c864b217da52a86c21",
+      "publisher_sha256": "ae0846f198d634ff30253d8a1a33aa311cf4f17f41fd81f4586d6c3a590f80ac",
+      "retrieved_at": "2026-11-17T19:33:57.131589+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "aaf84ed5f67205bce7b87dbdf15b8c": {
+      "citation": "Idaho Code § 5-217",
+      "source_id": "US-ID:oral_contract_limitations:69cf8e101094",
+      "authority_type": "statute",
+      "text": "5-217. Action on oral contract. Within four (4) years: An action upon a contract, obligation or liability not founded upon an instrument of writing.",
+      "text_sha256": "00ab63cee053c4f0308711168e2d0832f506e1fa1b32552143bf3fcc3d305516",
+      "publisher_sha256": "e867f4505530fa9232738bae137becd2a4abce0ed37621a131aec87d0d43d206",
+      "retrieved_at": "2026-11-17T19:33:57.110131+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "493595a89f22b1e17003b1ea51411d": {
+      "citation": "Idaho Code § 6-801",
+      "source_id": "US-ID:fault:e42a54e830ed",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "Contributory negligence or comparative responsibility shall not bar recovery in an action by any person or his legal representative to recover damages for negligence, gross negligence or comparative responsibility resulting in death or in injury to person or property, if such negligence or comparative responsibility was not as great as the negligence, gross negligence or comparative responsibility of the person against whom recovery is sought, but any damages allowed shall be diminished in the proportion to the amount of negligence or comparative responsibility attributable to the person recovering. Nothing contained herein shall create any new legal theory, cause of action, or legal defense.",
+      "text_sha256": "ec88d9e98002cdd060f9758578a1ca20b9f256973bfcf6aee5cc307cd2182b3a",
+      "publisher_sha256": "7c2d94e86c2eb09ae62376af79dc66b220199fc55a12f79230ce58a457e6b92e",
+      "retrieved_at": "2026-11-17T20:50:40.987973+00:00",
+      "currentness": "unresolved"
+    },
+    "5b8917404e4cc9f1959332170ddb98": {
+      "source_id": "US-ID:contract_formation:de1cc66ebe56",
+      "authority_type": "statute",
+      "citation": "Idaho Code § 28-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "51d82e0854f64ff8fa693e380e3cea23738ce38a2983765c283a9ae3cc51ecb4",
+      "retrieved_at": "2026-11-18T15:14:39.421965+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "cb117c84bb4dd91bed699d28b7ea22": {
+      "source_id": "US-ID:deposit:7bd14db79305",
+      "authority_type": "statute",
+      "citation": "Idaho Code § 6-321",
+      "text": "Amounts deposited by a tenant with a landlord for any purpose other than the payment of rent shall be deemed security deposits. Upon termination of a lease or rental agreement and surrender of the premises by the tenant all amounts held by the landlord as a security deposit shall be refunded to the tenant, except amounts necessary to cover the contingencies specified in the deposit arrangement. The landlord shall not retain any part of a security deposit to cover normal wear and tear. \"Normal wear and tear\" means that deterioration which occurs based upon the use for which the rental unit is intended and without negligence, carelessness, accident, or misuse or abuse of the premises or contents by the tenant or members of his household, or their invitees or guests. (2) Refunds shall be made within twenty-one (21) days if no time is fixed by agreement and, in any event, within thirty (30) days after surrender of the premises by the tenant. Any refunds in an amount less than the full amount deposited by the tenant shall be accompanied by a signed statement itemizing the amounts lawfully retained by the landlord, the purpose for the amounts retained, and a detailed list of expenditures made from the deposit. (3) If security deposits have been made as to a particular rental or lease property, and the property changes ownership during a tenancy, the new owner shall be liable for refund of the deposits. (4) A security deposit for a residential rental premises that is managed by a third-party manager of a landlord shall be maintained in a separate account at a federally insured financial institution. Such account shall be maintained separate from the third-party agent’s operating account. The requirements of this subsection shall not apply to a property owner, managers who have common members or principals of the property owner entity, a real estate licensee, or a nonprofit business organization as established under chapter 30, title 30, Idaho Code.",
+      "text_sha256": "f805ee659a90aa4893a1f0ff7018c09c7c1f61495ef859ce9db779cfee45aacc",
+      "publisher_sha256": "e00a978c1536f6f9a998fd77a00054bd16f94ed35b2ad4a9052073566c3bfc7e",
+      "retrieved_at": "2026-11-19T19:20:36.456738+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "7f6c335e415359812f24a0fb3491d5": {
+      "source_id": "US-ID:consumerLaw:7f530516681e",
+      "authority_type": "statute",
+      "citation": "Idaho Code § 48-603(1)–(4)",
+      "text": "The following unfair methods of competition and unfair or deceptive acts or practices in the conduct of any trade or commerce are hereby declared to be unlawful, where a person knows, or in the exercise of due care should know, that he has in the past, or is: (1) Passing off goods or services as those of another; (2) Causing likelihood of confusion or of misunderstanding as to the source, sponsorship, approval, or certification of goods or services; (3) Causing likelihood of confusion or of misunderstanding as to affiliation, connection, or association with, or certification by, another; (4) Using deceptive representations or designations of geographic origin in connection with goods or services;",
+      "text_sha256": "e34dec32ffa0007c9a1642aa71213f9f9e304207e350b4bd090f39cbb456bf20",
+      "publisher_sha256": "248610f022e014cb33daf304f57cf61791e8cd1be6af7f324d0d987783bd1b61",
+      "retrieved_at": "2026-11-19T19:26:45.220392+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "8596da5839ae74d1edad510363d1ab": {
+      "source_id": "US-ID:pi_limitations:b6ca62528c45",
+      "authority_type": "statute",
+      "citation": "Idaho Code § 5-219",
+      "text": "Within two (2) years: 1. An action against a sheriff, coroner or constable, upon the liability incurred by the doing of an act in his official capacity, and in virtue of his office, or by the omission of an official duty, including the nonpayment of money collected upon an execution. 2. An action upon a statute for a penalty or forfeiture, where the action is given to an individual, or to an individual and the state, except when the statute imposing it prescribes a different limitation. 3. An action upon a statute or upon an undertaking in a criminal action for a forfeiture or penalty to a county or to the people of the state. 4. An action to recover damages for professional malpractice, or for an injury to the person, or for the death of one caused by the wrongful act or neglect of another, including any such action arising from breach of an implied warranty or implied covenant; provided, however, when the action is for damages arising out of the placement and inadvertent, accidental or unintentional leaving of any foreign object in the body of any person by reason of the professional malpractice of any hospital, physician or other person or institution practicing any of the healing arts or when the fact of damage has, for the purpose of escaping responsibility therefor, been fraudulently and knowingly concealed from the injured party by an alleged wrongdoer standing at the time of the wrongful act, neglect or breach in a professional or commercial relationship with the injured party, the same shall be deemed to accrue when the injured party knows or in the exercise of reasonable care should have been put on inquiry regarding the condition or matter complained of; but in all other actions, whether arising from professional malpractice or otherwise, the cause of action shall be deemed to have accrued as of the time of the occurrence, act or omission complained of, and the limitation period shall not be extended by reason of any continuing consequences or damages resulting therefrom or any continuing professional or commercial relationship between the injured party and the alleged wrongdoer, and, provided further, that an action within the foregoing foreign object or fraudulent concealment exceptions must be commenced within one (1) year following the date of accrual as aforesaid or two (2) years following the occurrence, act or omission complained of, whichever is later. The term \"professional malpractice\" as used herein refers to wrongful acts or omissions in the performance of professional services by any person, firm, association, entity or corporation licensed to perform such services under the law of the state of Idaho. This subsection shall not affect the application of section 5-243, Idaho Code, except as to actions arising from professional malpractice. Neither shall this subsection be deemed or construed to amend, or repeal section 5-241, Idaho Code. 5. An action for libel, slander, assault, battery, false imprisonment or seduction. 6. An action against a sheriff or other officer for the escape of a prisoner arrested or imprisoned on civil process.",
+      "text_sha256": "a7c8819a5a3ed5c501a79111649eac18e33e495714f841e415a6449ed3135ebb",
+      "publisher_sha256": "e59f0be003f4fd3ac125a5d20251b764d9c480a2c4f5d9af61f7c12141e43b34",
+      "retrieved_at": "2026-11-19T19:31:23.384864+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "dad8632a38e70389cbdf999e170821": {
+      "source_id": "US-ID:written_contract_limitations:aa4fb57d384c",
+      "authority_type": "statute",
+      "citation": "Idaho Code § 5-216",
+      "text": "Within five (5) years: An action upon any contract, obligation or liability founded upon an instrument in writing. The limitations prescribed by this section shall never apply to actions in the name or for the benefit of the state and shall never be asserted nor interposed as a defense to any action in the name or for the benefit of the state although such limitations may have become fully operative as a defense prior to the adoption of this amendment.",
+      "text_sha256": "2d779822011057e80ed2dda1c13e72a00dc889e47f1e39396a3f1fa147d9e43d",
+      "publisher_sha256": "3450771b225e181dc81136765810e57598cecef2e2ea11a72f07100b5d7c3a59",
+      "retrieved_at": "2026-11-19T19:35:42.535404+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "4d2d4e948ec409aa250a9e49d36a44": {
+      "source_id": "US-ID:oral_contract_limitations:dffacfe4c5fc",
+      "authority_type": "statute",
+      "citation": "Idaho Code § 5-217",
+      "text": "Within four (4) years: An action upon a contract, obligation or liability not founded upon an instrument of writing.",
+      "text_sha256": "0e94f6f013828d07c2b4be2173cc9f7aa6bd634c459dd4146b31417e93a1f44b",
+      "publisher_sha256": "c113a5ba7e421992fa6d958103377397371fe2dd3790dc66906d636870820110",
+      "retrieved_at": "2026-11-19T19:35:42.518165+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "8f1ae57f2bbc05bbf9c2ff85e4d179": {
+      "source_id": "US-ID:service:0f0f0c97f6ee",
+      "authority_type": "court_rule",
+      "citation": "Idaho R. Civ. P. 4(d)(1)",
+      "text": "(1) Service on Individuals. An individual, other than a person under age 14 or an incompetent person, may be served doing any of the following: (A) delivering a copy of the summons and of the complaint to the individual personally; (B) leaving a copy of each at the individual’s dwelling or usual place of abode with someone at least 18 years old who resides there; or (C) delivering a copy of each to an agent authorized by appointment or by law to receive service of process.",
+      "text_sha256": "abb773f88d0c3f5b761e07f80867ee333d536a3a370c2694d0b84a2facdd94d8",
+      "publisher_sha256": "8d790600ff3e504fbba4d6ccad4e824497b0919a50c44725b629381b95dbf19f",
+      "retrieved_at": "2026-11-20T16:01:55.611634+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Idaho District Court"
+    },
+    "7787803e992fe28502b0ca0190d086": {
+      "source_id": "US-ID:commencement:c00907921f39",
+      "authority_type": "court_rule",
+      "citation": "Idaho R. Civ. P. 3(b)",
+      "text": "(b) Filing of Action. A civil action must be commenced by filing a complaint, petition or application with the court.",
+      "text_sha256": "493c5b3201e3b8b4ff6cb05cbd514245b1904f2953b65975864d910bac519fbc",
+      "publisher_sha256": "8d790600ff3e504fbba4d6ccad4e824497b0919a50c44725b629381b95dbf19f",
+      "retrieved_at": "2026-11-20T16:01:55.611634+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Idaho District Court"
+    },
+    "56963d16a4dc5b898bc1cdc43892b0": {
+      "source_id": "US-ID:response:66a10541a37c",
+      "authority_type": "court_rule",
+      "citation": "Idaho R. Civ. P. 12(a)(1)–(2)",
+      "text": "(a) Time to Serve a Responsive Pleading. (1) In General. Unless another time is specified by rule or statute, the time for serving a responsive pleading is as follows: (A) a defendant must serve an answer within 21 days after being served with the summons and complaint; (B) a party must serve an answer to a counterclaim or crossclaim within 21 days after being served with the pleading that states the counterclaim or crossclaim; (C) a party must serve a reply to an answer 21 days after being served with an order to reply, unless the court specifies a different time. (2) Effect of a Motion. Unless the court sets a different time, serving a motion under this rule alters these periods as follows: (A) if the court denies the motion or postpones its disposition until trial, the responsive pleading must be served within 14 days after notice of the court's action; or (B) if the court grants a motion for a more definite statement, the responsive pleading must be served within 14 days after the more definite statement is served.",
+      "text_sha256": "5bf70919d943da3bd0119ab47e609189ad9b1e91ebe46a93551e84f3bf03a213",
+      "publisher_sha256": "8d790600ff3e504fbba4d6ccad4e824497b0919a50c44725b629381b95dbf19f",
+      "retrieved_at": "2026-11-20T16:01:55.611634+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Idaho District Court"
+    },
+    "52429b10975ee1bb1d4761f9f1e12c": {
+      "source_id": "US-ID:small_claims:b2d9119a8d21",
+      "authority_type": "statute",
+      "citation": "Idaho Code § 1-2301",
+      "text": "In every magistrate’s division of the district court of this state, the district court may create and organize a \"Small Claims Department of the Magistrate’s Division,\" which shall have jurisdiction in cases for the recovery of money where the amount of each claim does not exceed fifteen thousand dollars ($15,000), and in cases for the recovery of personal property where the value of the property does not exceed fifteen thousand dollars ($15,000); provided however, that the small claims department shall not award punitive damages or damages for pain or suffering in any proceeding. Any action brought in a small claims department of the magistrate’s division shall be brought in the magistrate’s division in the county where the defendant resides or the county where the cause of action arose. A defendant may request a change of venue if an action is brought in an improper county.",
+      "text_sha256": "e105e5b13fd7411c308aeeee837bc03545ad9579a833ba5e2d52b608bddd7a1c",
+      "publisher_sha256": "4a1b0907345e638a23295771796149d294bbcf039009657f2b30cf12daa46fbe",
+      "retrieved_at": "2026-11-20T16:16:31.851875+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Idaho District Court Magistrate Division Small Claims Department"
+    },
+    "ed99cf12710e055e4ac2a3c47cc97b": {
+      "source_id": "US-ID:debtLaw:f5d74a910813",
+      "authority_type": "statute",
+      "citation": "Idaho Code § 26-2229A(1)–(4)",
+      "text": "(1) Every licensee or person required to be licensed under this chapter and its agents shall deal openly, fairly, and honestly without deception in the conduct of its business activities in this state under this chapter. (2) When not inconsistent with the statutes of this state, the provisions of the federal fair debt collection practices act, 15 U.S.C. 1692 et seq., as amended, may be enforced by the director against collection agencies licensed or required to be licensed under the provisions of this chapter. (3) In every instance where a collection agency licensee has a managerial or financial interest in a creditor client, or where a creditor client has a managerial or financial interest in a collection agency licensee, disclosure of such interest must be made on each and every contact with a debtor in seeking to make a collection of any account, claim, or other indebtedness. (4) No collection agency licensee, or collection agency required to be licensed under this chapter, or agent of such collection agency shall collect or attempt to collect any interest or other charges, fees, or expenses incidental to the principal obligation unless such interest or incidental fees, charges, or expenses: (a) Are expressly authorized by statute; (b) Are allowed by court ruling against the debtor; (c) Are expressly authorized by the agreement creating the debt, except as otherwise prohibited by law. Provided, however, that no person shall collect any attorney’s fees or litigation costs unless such attorney’s fees or litigation costs are reasonable, are for actual attorney services performed, and are limited to those costs actually incurred; (d) Have been judicially determined; (e) Are provided for in a written form agreement that is signed by both the debtor and the licensee and has the prior approval of the director with respect to the terms of the agreement and amounts of the fees, interest, charges, and expenses; or (f) Reasonably relate to the actual cost associated with processing a demand draft or other form of electronic payment on behalf of a debtor for a debt payment, provided that the debtor has preauthorized the method of payment and has been notified in advance that such payment may be made by reasonable alternative means that will not result in additional charges, fees, or expenses to the debtor.",
+      "text_sha256": "9c38f5f9334c303af323497d1a66f5828cefad4458f11e14c72303925fa09d94",
+      "publisher_sha256": "31ddbaa7ad10fe39628b6d291735d4b616f84c48821d532d3322c412722ac6e0",
+      "retrieved_at": "2026-11-20T17:26:29.016733+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "cad8356709d138a44c763a2d095908": {
+      "source_id": "US-ID:wageLaw:0ce555540269",
+      "authority_type": "statute",
+      "citation": "Idaho Code § 45-606(1)–(2)",
+      "text": "(1) Upon layoff, or upon termination of employment by either the employer or employee, the employer shall pay or make available at the usual place of payment all wages then due the employee by the earlier of the next regularly scheduled payday or within ten (10) days of such layoff or termination, weekends and holidays excluded. However, if the employee makes written request upon the employer for earlier payment of wages, all wages then due the employee shall be paid within forty-eight (48) hours of the receipt of such request, weekends and holidays excluded. (2) Unless exempt from the minimum wage requirements of chapter 15, title 44, Idaho Code, employees who are not being paid on an hourly or salary basis must be paid at least the applicable minimum wage for all hours worked in the pay period immediately preceding layoff or termination from employment. The minimum wage payment shall be made within the same time limitations provided for in subsection (1) of this section. Any additional wages owed to employees shall be paid by the next regularly schedule payday.",
+      "text_sha256": "0e1b38f25b736bbe1bdd27120ca791af4a7aae73547c69e99ac04b0dc88ca83f",
+      "publisher_sha256": "91956eb26a3c17fcdd3ff423db8d07106467d8442a5eaf19553f6bc4984de353",
+      "retrieved_at": "2026-11-20T17:27:37.194426+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "327839bf9e8cd723dcb0d465750127": {
+      "source_id": "US-ID:negligence_elements:254ba433a6ab",
+      "authority_type": "opinion",
+      "citation": "Oswald v. Costco Wholesale Corp., No. 47261 (Idaho Oct. 5, 2020)",
+      "text": "A common-law action for negligence requires the plaintiffs to prove “(1) a duty, recognized by law, requiring the defendant to conform to a certain standard of conduct; (2) a breach of that duty; (3) a causal connection between the defendant’s conduct and the resulting injury; and (4) actual loss or damage.” Brooks v. Wal-Mart Stores, Inc., 164 Idaho 22, 27, 423 P.3d 443, 448 (2018) (quoting Griffith v. JumpTime Meridian, LLC, 161 Idaho 913, 915, 393 P.3d 573, 575 (2017)).",
+      "text_sha256": "285b62f86f10a18cdfcc11af5ed4a31a06b198da775bce238867afaa8b4f7a15",
+      "publisher_sha256": "b579afa03abc467a8b6c789b1d46d12254d3e72171a83cc8f62c32f23eec50ca",
+      "retrieved_at": "2026-11-20T17:46:43.842919+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2020-10-05",
+      "court": "Supreme Court of Idaho",
+      "decision_date": "2020-10-05",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in a negligence action for injuries incurred when a vehicle struck pedestrians in a store parking lot. The court reversed and remanded."
+    },
+    "ab0aaa777c280cbddf050a9e30e167": {
+      "source_id": "US-ID:contract_breach:d952a9f81fc6",
+      "authority_type": "opinion",
+      "citation": "Espinosa v. State Farm Fire & Cas. Co., No. 52790, slip op. at 14 (Idaho Oct. 6, 2026)",
+      "text": "“To establish a breach of contract, one must prove the following elements: ‘(a) the existence of the contract, (b) the breach of the contract, (c) the breach caused damages, and (d) the amount of those damages.’” York v. Kemper Nw., Inc., 177 Idaho 1, ___, 584 P.3d 1, 8–9 (2026) (quoting Mosell Equities, LLC v. Berryhill & Co., 154 Idaho 269, 278, 297 P.3d 232, 241 (2013)).",
+      "text_sha256": "dd316a2f89a57e88e12cdab8ce8c9cf131c5eb073094947094145c89c6ae2fa8",
+      "publisher_sha256": "1af198c83d8600ffee3ea6395952c8ab7288c57245ff4cffe8b100eb8c92a9c0",
+      "retrieved_at": "2026-11-21T22:37:22.183432+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion issued 2026-10-06",
+      "court": "Idaho Supreme Court",
+      "publisher_member": "Idaho Supreme Court slip opinion p. 14, Part B; general elements as applied to insurance obligations",
+      "decision_date": "2026-10-06",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in an insurance coverage dispute; the court affirmed summary judgment on the breach claims."
+    },
+    "a4052d84a07968a73e056665320b64": {
+      "source_id": "US-ID:service_time_limit:e915a5114dd1",
+      "authority_type": "court_rule",
+      "citation": "Idaho R. Civ. P. 4(b)(2)",
+      "text": "If a defendant is not served within 182 days after the complaint is filed, the court, on motion or on its own after 14 days’ notice to the plaintiff, must dismiss the action without prejudice against that defendant. But if the plaintiff shows good cause for the failure, the court must extend the time for service for an appropriate period.",
+      "text_sha256": "8026899e2c414423f9d088de2baeba50bf2fb432baf0677ca76384733e8742b6",
+      "publisher_sha256": "8d790600ff3e504fbba4d6ccad4e824497b0919a50c44725b629381b95dbf19f",
+      "retrieved_at": "2026-11-20T16:01:55.611634+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "76d4c656315f30fd50256fb4821681": {
+      "source_id": "US-ID:small_claim_form:91e322bd7fa4",
+      "authority_type": "court_rule",
+      "citation": "Idaho Rules for Small Claims Actions Rule 2 (plaintiff complaint form)",
+      "text": "The court must provide to all persons interested in filing a small claims action approved “Complaint” and “Answer” forms, as well as “Instructions” on how to file an answer. The approved forms can be found at https://courtselfhelp.idaho.gov/Forms/claims. The plaintiff must use the court approved complaint form and pay the filing fee.",
+      "text_sha256": "36d2c679c1d8083442077421c9e54b27a553a0938622b14be6b1191914e1cc46",
+      "publisher_sha256": "4f232f925476fb58bf0cf1d2401fe7b3b8e87e3c6b719bfc122fca986a5e88ef",
+      "retrieved_at": "2026-11-23T15:58:59.306731+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_50",
+    "passage_selector": "493595a89f22b1e17003b1ea51411d",
+    "source_id": "US-ID:fault:e42a54e830ed",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  },
+  "forms": {
+    "US-ID:form:CAO SC 1-2": {
+      "title": "Claim (Small Claims)",
+      "publisher_identifier": "CAO SC 1-2",
+      "source_id": "US-ID:small_claim_form:645eb2ba549b",
+      "index_source_id": "US-ID:small_claims:11ab88e12392",
+      "index_sha256": "4f232f925476fb58bf0cf1d2401fe7b3b8e87e3c6b719bfc122fca986a5e88ef",
+      "court_scope": "Idaho District Court Small Claims Department",
+      "mandatory": "required_for_stated_scope",
+      "revision": "2016-07-01",
+      "last_observed": "2026-11-23T15:58:58.991366+00:00",
+      "automated_completion": "disabled",
+      "form_sha256": "d1d9abd8fa0d7e064dd9d4d28627b0068e2ccb3d46a3ad82f650adef1b1efa59",
+      "action_type": "small_claim",
+      "requirement_passage_selector": "76d4c656315f30fd50256fb4821681",
+      "applicability": "Plaintiff initiating an Idaho district court small-claims action. The standardized claim contains money and personal-property paths."
+    }
+  }
+}

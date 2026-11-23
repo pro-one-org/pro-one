@@ -13,7 +13,7 @@ class ResearchMatter(BaseModel):
     model_config = ConfigDict(extra="forbid", strict=True)
     country: str | None = Field(default=None, min_length=2, max_length=2)
     state: str | None = Field(default=None, min_length=1, max_length=80)
-    sovereign: str = Field(default="state", pattern="^(state|federal|unknown)$")
+    sovereign: str = Field(default="state", pattern="^(state|federal|district|territory|unknown)$")
     legal_area: str | None = Field(default=None, min_length=1, max_length=80)
     topics: list[str] = Field(default_factory=list, max_length=12)
     user_posture: str | None = Field(default=None, max_length=120)
@@ -24,7 +24,7 @@ class ResearchMatter(BaseModel):
     authority_types: list[Literal["statute", "regulation", "opinion", "constitution", "court_rule", "register_document"]] = Field(
         default_factory=list, max_length=6,
     )
-    authority_status: Literal["unresolved", "historical", "current", "current_as_of", "proposed", "superseded", "repealed"] = "unresolved"
+    authority_status: Literal["unresolved", "historical", "current", "current_as_of", "proposed", "superseded", "repealed", "future_effective", "review_required"] = "unresolved"
     authority_as_of: str | None = Field(default=None, pattern=r"^\d{4}-\d{2}-\d{2}$")
 
 

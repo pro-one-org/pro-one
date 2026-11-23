@@ -1,0 +1,1056 @@
+{
+  "jurisdiction": "US-AK",
+  "version": "1",
+  "sources": {
+    "US-AK:statutes:fd1b6d977639": {
+      "category": "statutes",
+      "title": "Alaska Statutes",
+      "url": "http://www.legis.state.ak.us/folhome.htm",
+      "directory": "codes",
+      "locator": "Alaska"
+    },
+    "US-AK:constitution:db7dd4ffbce0": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.legis.state.ak.us/basis/folio.asp",
+      "directory": "codes",
+      "locator": "Alaska"
+    },
+    "US-AK:legislature:0f4a8d3e2c4b": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://w3.legis.state.ak.us/index.php",
+      "directory": "codes",
+      "locator": "Alaska"
+    },
+    "US-AK:labor_agency:6894b83ba356": {
+      "category": "labor_agency",
+      "title": "www.labor.state.ak.us",
+      "url": "http://www.labor.state.ak.us/",
+      "directory": "labor",
+      "locator": "Alaska"
+    },
+    "US-AK:business_registration:144a77e6045e": {
+      "category": "business_registration",
+      "title": "Alaska Department of Commerce, Community, and Economic Development",
+      "url": "https://www.commerce.alaska.gov/web/cbpl/Corporations/ReservingRegisteringBusinessName.aspx",
+      "directory": "business",
+      "locator": "Alaska"
+    },
+    "US-AK:commercial_code:6f328e00fc06": {
+      "category": "commercial_code",
+      "title": "Trade and Commerce",
+      "url": "http://www.akleg.gov/basis/statutes.asp#45",
+      "directory": "ucc",
+      "locator": "Alaska",
+      "observation": {
+        "requested_url": "https://www.akleg.gov/basis/statutes.asp",
+        "retrieved_at": "2026-11-17T19:33:54.693632+00:00",
+        "http_status": "200",
+        "sha256": "0ecf4b6a51b874f539a3286f64c780ed868f752a5e82a57e1a4213c24ca45ff9",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AK:civil_rules:0498fe192d65": {
+      "category": "civil_rules",
+      "title": "Code of Civil Procedure",
+      "url": "http://www.akleg.gov/basis/statutes.asp#09",
+      "directory": "procedure",
+      "locator": "Alaska",
+      "observation": {
+        "requested_url": "https://www.akleg.gov/basis/statutes.asp",
+        "retrieved_at": "2026-11-17T19:33:54.693632+00:00",
+        "http_status": "200",
+        "sha256": "0ecf4b6a51b874f539a3286f64c780ed868f752a5e82a57e1a4213c24ca45ff9",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AK:consumer_agency:ff19a953d86f": {
+      "category": "consumer_agency",
+      "title": "Alaska (AK)",
+      "url": "https://www.law.alaska.gov/department/civil/consumer/cpindex.html",
+      "directory": "consumer",
+      "locator": "Alaska (AK)"
+    },
+    "US-AK:judiciary:a645a98b8e71": {
+      "category": "judiciary",
+      "title": "Alaska Court System",
+      "url": "http://www.courts.alaska.gov/",
+      "directory": "doj-AK",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-AK:opinions:2f931e13a27b": {
+      "category": "opinions",
+      "title": "Supreme Court Slip Opinions",
+      "url": "https://appellate-records.courts.alaska.gov/CMSPublic/Home/Opinions?isCOA=False",
+      "directory": "doj-AK",
+      "locator": "State and Local Courts / Supreme Court"
+    },
+    "US-AK:opinions:a969905c06ff": {
+      "category": "opinions",
+      "title": "Supreme Court Memorandum Opinions",
+      "url": "https://appellate-records.courts.alaska.gov/CMSPublic/Home/MOJOpinions?isCOA=False",
+      "directory": "doj-AK",
+      "locator": "State and Local Courts / Supreme Court"
+    },
+    "US-AK:court_directory:7ca61b53f910": {
+      "category": "court_directory",
+      "title": "Alaska Appellate Courts",
+      "url": "http://courts.alaska.gov/appellate/index.htm",
+      "directory": "doj-AK",
+      "locator": "Alaska Appellate Courts"
+    },
+    "US-AK:court_directory:47a835075c34": {
+      "category": "court_directory",
+      "title": "Trial Courts",
+      "url": "http://www.courts.alaska.gov/trialcourts/index.htm",
+      "directory": "doj-AK",
+      "locator": "Trial Courts"
+    },
+    "US-AK:forms:d60d5bcd7a25": {
+      "category": "forms",
+      "title": "Appellate Forms",
+      "url": "http://www.courts.alaska.gov/appellate/index.htm#forms",
+      "directory": "doj-AK",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-AK:forms:6d4ea14df0d3": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "http://courts.alaska.gov/forms/index.htm",
+      "directory": "doj-AK",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-AK:constitution:2a467e8da979": {
+      "category": "constitution",
+      "title": "Alaska Constitution",
+      "url": "https://ltgov.alaska.gov/information/alaskas-constitution/",
+      "directory": "doj-AK",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-AK:regulations:957fa0b0f6b1": {
+      "category": "regulations",
+      "title": "Administrative Code",
+      "url": "https://www.akleg.gov/basis/aac.asp",
+      "directory": "doj-AK",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-AK:regulations:b886d09563c5": {
+      "category": "regulations",
+      "title": "Regulatory Commission of Alaska Orders",
+      "url": "http://rca.alaska.gov/RCAWeb/RCALibrary/SearchByType.aspx",
+      "directory": "doj-AK",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-AK:regulations:b5ff2d12119c": {
+      "category": "regulations",
+      "title": "Regulations",
+      "url": "http://www.labor.state.ak.us/wc/legaldir.htm",
+      "directory": "doj-AK",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-AK:pi_limitations:277cfc7a64ea": {
+      "category": "pi_limitations",
+      "title": "Alaska Stat. § 09.10.070(a)",
+      "url": "https://www.akleg.gov/basis/statutes.asp#09.10.070",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.akleg.gov/basis/statutes.asp",
+        "retrieved_at": "2026-11-17T19:33:54.693632+00:00",
+        "http_status": "200",
+        "sha256": "0ecf4b6a51b874f539a3286f64c780ed868f752a5e82a57e1a4213c24ca45ff9",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AK:written_contract_limitations:d4cca08fc3db": {
+      "category": "written_contract_limitations",
+      "title": "Alaska Stat. § 09.10.053",
+      "url": "https://www.akleg.gov/basis/statutes.asp#09.10.053",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.akleg.gov/basis/statutes.asp",
+        "retrieved_at": "2026-11-17T19:33:54.693632+00:00",
+        "http_status": "200",
+        "sha256": "0ecf4b6a51b874f539a3286f64c780ed868f752a5e82a57e1a4213c24ca45ff9",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AK:oral_contract_limitations:d4cca08fc3db": {
+      "category": "oral_contract_limitations",
+      "title": "Alaska Stat. § 09.10.053",
+      "url": "https://www.akleg.gov/basis/statutes.asp#09.10.053",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.akleg.gov/basis/statutes.asp",
+        "retrieved_at": "2026-11-17T19:33:54.693632+00:00",
+        "http_status": "200",
+        "sha256": "0ecf4b6a51b874f539a3286f64c780ed868f752a5e82a57e1a4213c24ca45ff9",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AK:small_claims:8d9a492aa71e": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://public.courts.alaska.gov/web/forms/index2.htm",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://public.courts.alaska.gov/web/forms/index2.htm",
+        "retrieved_at": "2026-11-17T19:42:25.384230+00:00",
+        "http_status": "200",
+        "sha256": "40597b382b7512bdf1863bc45b6c1dd200161d4b84ed8d1f1a82453c6f9dabe4",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AK:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 26"
+    },
+    "US-AK:deposit:82290795da85": {
+      "category": "deposit",
+      "title": "Residential tenancy publication",
+      "url": "https://law.alaska.gov/pdf/consumer/LandlordTenant_web.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://law.alaska.gov/pdf/consumer/LandlordTenant_web.pdf",
+        "retrieved_at": "2026-11-17T19:42:06.305190+00:00",
+        "http_status": "200",
+        "sha256": "cd8d6b1f3bc3f56b05a18847249aae86285eb16d954cd96652f4721725b42998",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AK:wageLaw:3510eb2af0a5": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://www.akleg.gov/statutesPDF/Title-23.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://www.akleg.gov/statutesPDF/Title-23.pdf",
+        "retrieved_at": "2026-11-17T19:42:34.060323+00:00",
+        "http_status": "200",
+        "sha256": "3957ea138984d5c12646a05c5fa9beeb8c965437fd847d09864dc8f44f760547",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AK:debtLaw:e01413310250": {
+      "category": "debtLaw",
+      "title": "Debt collection publication",
+      "url": "https://law.state.ak.us/department/civil/consumer/debt.html",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://law.state.ak.us/department/civil/consumer/debt.html",
+        "retrieved_at": "2026-11-17T19:42:02.138551+00:00",
+        "http_status": "200",
+        "sha256": "b9f05b6ba9455c8ed763417821405b9801e532450587fde39602e6acaf09ddff",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AK:consumerLaw:30fcdca56688": {
+      "category": "consumerLaw",
+      "title": "Consumer protection publication",
+      "url": "https://law.alaska.gov/department/civil/Consumer/cp-alaska.html",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://law.alaska.gov/department/civil/Consumer/cp-alaska.html",
+        "retrieved_at": "2026-11-17T19:42:00.993783+00:00",
+        "http_status": "200",
+        "sha256": "84539e4abfac974bf293e6e237441c801b89095a79e77d84aeb2aa8e3bc2962c",
+        "health": "manual_review_required"
+      }
+    },
+    "US-AK:fault:b7c635c68da1": {
+      "category": "fault",
+      "title": "Alaska Stat. § 09.17.060",
+      "url": "https://www.akleg.gov/statutesPDF/Title-9.pdf",
+      "directory": null,
+      "locator": "Alaska Stat. § 09.17.060",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:32.390483+00:00",
+        "sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f"
+      }
+    },
+    "US-AK:consumerLaw:9da123b123e8": {
+      "title": "AS 45.50.471 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.akleg.gov/basis/statutes.asp#45.50.531",
+      "directory": "consumer_statutes_index",
+      "locator": "AS 45.50.471 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-AK:contract_formation:b3efcb7df114": {
+      "category": "contract_formation",
+      "title": "AS 45.02.204",
+      "url": "https://www.akleg.gov/statutesPDF/Title-45.pdf",
+      "locator": "AS 45.02.204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:38.100170+00:00",
+        "sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb"
+      }
+    },
+    "US-AK:contract_damages:4893c68eff84": {
+      "category": "contract_damages",
+      "title": "AS 45.02.714",
+      "url": "https://www.akleg.gov/statutesPDF/Title-45.pdf",
+      "locator": "AS 45.02.714",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:38.100170+00:00",
+        "sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb"
+      }
+    },
+    "US-AK:commencement:705182a88cdf": {
+      "category": "commencement",
+      "title": "Alaska R. Civ. P. 3(a)",
+      "url": "https://courts.alaska.gov/rules/docs/civ.pdf",
+      "locator": "Alaska R. Civ. P. 3(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:45.439868+00:00",
+        "sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb"
+      }
+    },
+    "US-AK:wageLaw:4cc7a88c27e2": {
+      "category": "wageLaw",
+      "title": "Alaska Stat. § 23.05.140(a)–(b)",
+      "url": "https://www.akleg.gov/statutesPDF/Title-23.pdf",
+      "locator": "Alaska Stat. § 23.05.140(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T19:42:34.060323+00:00",
+        "sha256": "3957ea138984d5c12646a05c5fa9beeb8c965437fd847d09864dc8f44f760547"
+      }
+    },
+    "US-AK:response:83281eeed9e4": {
+      "category": "response",
+      "title": "Alaska R. Civ. P. 12(a)",
+      "url": "https://courts.alaska.gov/rules/docs/civ.pdf",
+      "locator": "Alaska R. Civ. P. 12(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:45.439868+00:00",
+        "sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb"
+      }
+    },
+    "US-AK:pi_limitations:fae681f483ed": {
+      "category": "pi_limitations",
+      "title": "Alaska Stat. § 09.10.070(a)",
+      "url": "https://www.akleg.gov/statutesPDF/Title-9.pdf",
+      "locator": "Alaska Stat. § 09.10.070(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:34:30.890765+00:00",
+        "sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f"
+      }
+    },
+    "US-AK:small_claims:115c05be1ba1": {
+      "category": "small_claims",
+      "title": "Alaska Stat. § 22.15.040(a)–(b)",
+      "url": "https://www.akleg.gov/statutesPDF/Title-22.pdf",
+      "locator": "Alaska Stat. § 22.15.040(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:29.910572+00:00",
+        "sha256": "4952e89f4c67e338ab24ef1e012a0ad6a65701f09c97b770a08120e1c26d4d25"
+      }
+    },
+    "US-AK:consumerLaw:8b2aeefbd0e6": {
+      "category": "consumerLaw",
+      "title": "Alaska Stat. § 45.50.471(a)–(b)(2)",
+      "url": "https://www.akleg.gov/statutesPDF/Title-45.pdf",
+      "locator": "Alaska Stat. § 45.50.471(a)–(b)(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:20:52.510567+00:00",
+        "sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb"
+      }
+    },
+    "US-AK:negligence_elements:a955d15d16f6": {
+      "category": "negligence_elements",
+      "title": "Kelly v. Municipality of Anchorage, Opinion No. 6653 (Alaska Mar. 2, 2012)",
+      "url": "https://courts.alaska.gov/media/outreach/ops/sp-6653.pdf",
+      "locator": "Kelly v. Municipality of Anchorage, Opinion No. 6653 (Alaska Mar. 2, 2012)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:40:13.579125+00:00",
+        "sha256": "a6010baf45eef5daf8ac97f1c5bdefc7b1b16af0d9f3e5029cc701541957da1f"
+      }
+    },
+    "US-AK:deposit:d474aeba4ae4": {
+      "category": "deposit",
+      "title": "Alaska Stat. § 34.03.070(a)–(b), (g)–(h)",
+      "url": "https://www.akleg.gov/statutesPDF/Title-34.pdf",
+      "locator": "Alaska Stat. § 34.03.070(a)–(b), (g)–(h)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:57:54.083516+00:00",
+        "sha256": "83cec8fab79a503771ed3be0ac4b43042136bf10d4d7d3d4cb5f6c3105c84f96"
+      }
+    },
+    "US-AK:debtLaw:6e2c6ba98659": {
+      "category": "debtLaw",
+      "title": "Alaska Stat. § 08.24.090(a)–(c) (collection agency licensing and exemptions)",
+      "url": "https://www.commerce.alaska.gov/web/Portals/5/pub/CollectionStatutes.pdf",
+      "locator": "Alaska Stat. § 08.24.090(a)–(c) (collection agency licensing and exemptions)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:29:48.565486+00:00",
+        "sha256": "23dc205309f7c99789a0cb5321531cc80a913aac14ac6d5cdc9ae333cf4b2ca6"
+      }
+    },
+    "US-AK:venue:71e246c50838": {
+      "category": "venue",
+      "title": "Alaska R. Civ. P. 3(b)–(g)",
+      "url": "https://courts.alaska.gov/rules/docs/civ.pdf",
+      "locator": "Alaska R. Civ. P. 3(b)–(g)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:23:01.188644+00:00",
+        "sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb"
+      }
+    },
+    "US-AK:service:219da268e35f": {
+      "category": "service",
+      "title": "Alaska R. Civ. P. 4(d)(1)",
+      "url": "https://courts.alaska.gov/rules/docs/civ.pdf",
+      "locator": "Alaska R. Civ. P. 4(d)(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:23:01.188644+00:00",
+        "sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb"
+      }
+    },
+    "US-AK:service_business_entity:eafee514f439": {
+      "category": "service_business_entity",
+      "title": "Alaska R. Civ. P. 4(d)(4)",
+      "url": "https://courts.alaska.gov/rules/docs/civ.pdf",
+      "locator": "Alaska R. Civ. P. 4(d)(4)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:23:01.188644+00:00",
+        "sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb"
+      }
+    },
+    "US-AK:small_claims:c82da3cc2f2a": {
+      "category": "small_claims",
+      "title": "Alaska Dist. Ct. R. Civ. P. 8(a)–(c)",
+      "url": "https://courts.alaska.gov/rules/docs/dciv.pdf",
+      "locator": "Alaska Dist. Ct. R. Civ. P. 8(a)–(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:04.101771+00:00",
+        "sha256": "49121b867dd56877a3154d98ce61972f30380c56a1ffe3ef07f922cc658c1721"
+      }
+    },
+    "US-AK:small_claims:49c3d9e5b154": {
+      "category": "small_claims",
+      "title": "Alaska Dist. Ct. R. Civ. P. 10(a)",
+      "url": "https://courts.alaska.gov/rules/docs/dciv.pdf",
+      "locator": "Alaska Dist. Ct. R. Civ. P. 10(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:04.101771+00:00",
+        "sha256": "49121b867dd56877a3154d98ce61972f30380c56a1ffe3ef07f922cc658c1721"
+      }
+    },
+    "US-AK:general_contract_limitations:3e01f2a6f39d": {
+      "category": "general_contract_limitations",
+      "title": "Alaska Stat. § 09.10.053",
+      "url": "https://www.akleg.gov/statutesPDF/Title-9.pdf",
+      "locator": "Alaska Stat. § 09.10.053",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:02.010761+00:00",
+        "sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f"
+      }
+    },
+    "US-AK:written_contract_limitations:329bb0bee288": {
+      "category": "written_contract_limitations",
+      "title": "Alaska Stat. § 09.10.040(a)",
+      "url": "https://www.akleg.gov/statutesPDF/Title-9.pdf",
+      "locator": "Alaska Stat. § 09.10.040(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:02.010761+00:00",
+        "sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f"
+      }
+    },
+    "US-AK:wrongful_death_limitations:6af737c15524": {
+      "category": "wrongful_death_limitations",
+      "title": "Alaska Stat. § 09.55.580(a), opening sentences",
+      "url": "https://www.akleg.gov/statutesPDF/Title-9.pdf",
+      "locator": "Alaska Stat. § 09.55.580(a), opening sentences",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:02.010761+00:00",
+        "sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f"
+      }
+    },
+    "US-AK:consumer_private_action:ba3dc9414dec": {
+      "category": "consumer_private_action",
+      "title": "Alaska Stat. § 45.50.531(a)",
+      "url": "https://www.akleg.gov/statutesPDF/Title-45.pdf",
+      "locator": "Alaska Stat. § 45.50.531(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:24.975636+00:00",
+        "sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb"
+      }
+    },
+    "US-AK:consumer_limitations:5f2e61b25059": {
+      "category": "consumer_limitations",
+      "title": "Alaska Stat. § 45.50.531(f)",
+      "url": "https://www.akleg.gov/statutesPDF/Title-45.pdf",
+      "locator": "Alaska Stat. § 45.50.531(f)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:24.975636+00:00",
+        "sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb"
+      }
+    },
+    "US-AK:consumer_agency:28dbb96e35bf": {
+      "category": "consumer_agency",
+      "title": "Alaska Stat. § 45.50.501(a)",
+      "url": "https://www.akleg.gov/statutesPDF/Title-45.pdf",
+      "locator": "Alaska Stat. § 45.50.501(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T21:58:24.975636+00:00",
+        "sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb"
+      }
+    },
+    "US-AK:service_time_limit:d294f36c8897": {
+      "category": "service_time_limit",
+      "title": "Alaska R. Civ. P. 4(j), court rules compilation",
+      "url": "https://courts.alaska.gov/rules/docs/civ.pdf",
+      "locator": "Alaska R. Civ. P. 4(j), court rules compilation",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:45.439868+00:00",
+        "sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb"
+      }
+    },
+    "US-AK:contract_breach:ef0274fed189": {
+      "category": "contract_breach",
+      "title": "Alaska Civil Pattern Jury Instruction 24.00A (2022)",
+      "url": "https://courts.alaska.gov/CVPJI/docs/24.00A.docx",
+      "locator": "Alaska Civil Pattern Jury Instruction 24.00A (2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:08:22.991909+00:00",
+        "sha256": "e7bcbdd19626cf51bb996029c74669650ce11eea2d6abdd29b5e97e7a8f91bb7"
+      }
+    },
+    "US-AK:contract_formation:11f4c4e2d3bc": {
+      "category": "contract_formation",
+      "title": "Alaska Civil Pattern Jury Instruction 24.01A (2022)",
+      "url": "https://courts.alaska.gov/CVPJI/docs/24.01A.docx",
+      "locator": "Alaska Civil Pattern Jury Instruction 24.01A (2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:08:22.968374+00:00",
+        "sha256": "5d647128e74aa8d625b17dbf919e639d92611babb09746b5823533493e34b06f"
+      }
+    },
+    "US-AK:general_contract_damages:21bf70f5103f": {
+      "category": "general_contract_damages",
+      "title": "Alaska Civil Pattern Jury Instruction 24.09A (2022)",
+      "url": "https://courts.alaska.gov/CVPJI/docs/24.09A.docx",
+      "locator": "Alaska Civil Pattern Jury Instruction 24.09A (2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:08:22.975366+00:00",
+        "sha256": "12a9e5d2e55963f351f98b47cb3451dd4e55484dddd3157f432e003e03a28125"
+      }
+    },
+    "US-AK:premises:046072584ea6": {
+      "category": "premises",
+      "title": "Alaska Civil Pattern Jury Instruction 06.01 (2019)",
+      "url": "https://courts.alaska.gov/CVPJI/docs/06.01.docx",
+      "locator": "Alaska Civil Pattern Jury Instruction 06.01 (2019)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:09:36.968664+00:00",
+        "sha256": "e052c20193a4900c76d10eb561cf082630f9949c617511ce22839b58828da0d8"
+      }
+    },
+    "US-AK:premises:2839bf895de7": {
+      "category": "premises",
+      "title": "Alaska Civil Pattern Jury Instruction 06.02 (2019)",
+      "url": "https://courts.alaska.gov/CVPJI/docs/06.02.docx",
+      "locator": "Alaska Civil Pattern Jury Instruction 06.02 (2019)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:09:36.968664+00:00",
+        "sha256": "fb043d0acba9909bf00659084158d21a29fe0df96611da9479344252b39dd329"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-AK:court:54a9d48a4fe8",
+      "name": "Alaska Appellate Courts",
+      "level": "appellate_directory",
+      "source_id": "US-AK:court_directory:7ca61b53f910"
+    },
+    {
+      "id": "US-AK:court:04dd87ea6bac",
+      "name": "Trial Courts",
+      "level": "trial_directory",
+      "source_id": "US-AK:court_directory:47a835075c34"
+    },
+    {
+      "id": "US-AK:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-AK:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Alaska Stat. § 09.10.070(a)",
+      "source_id": "US-AK:pi_limitations:277cfc7a64ea",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Alaska Stat. § 09.10.053",
+      "source_id": "US-AK:written_contract_limitations:d4cca08fc3db",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Alaska Stat. § 09.10.053",
+      "source_id": "US-AK:oral_contract_limitations:d4cca08fc3db",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Alaska Stat. § 09.45.100. Notice to quit",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "AS 45.50.471 et seq.",
+      "source_id": "US-AK:consumerLaw:9da123b123e8",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "56ca0d7bb5d2990f41fadcf312dd52": {
+      "citation": "Alaska Stat. § 09.17.060",
+      "source_id": "US-AK:fault:b7c635c68da1",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "Sec. 09.17.060. Effect of contributory fault. In an action based on fault seeking to recover damages for injury or death to a person or harm to property, contributory fault chargeable to the claimant diminishes proportionately the amount awarded as compensatory damages for the injury attributable to the claimant's contributory fault, but does not bar recovery.",
+      "text_sha256": "05742af37461fc99f7642d4102afab779d6f0bbb3053171749313678d4c6208c",
+      "publisher_sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f",
+      "retrieved_at": "2026-11-17T20:50:32.390483+00:00",
+      "currentness": "unresolved"
+    },
+    "7ed6b84dafbee3c41038337e7a2e0e": {
+      "source_id": "US-AK:contract_formation:b3efcb7df114",
+      "authority_type": "statute",
+      "citation": "AS 45.02.204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties that recognizes the existence of the contract.",
+      "text_sha256": "db3e1e80f2c25d4ddc606cd23764cddcc8bf21b5ee3d4064212a56d630d6ce9d",
+      "publisher_sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb",
+      "retrieved_at": "2026-11-18T15:14:38.100170+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "71c4bd060800823fb471b17054d665": {
+      "source_id": "US-AK:contract_damages:4893c68eff84",
+      "authority_type": "statute",
+      "citation": "AS 45.02.714",
+      "text": "If the buyer has accepted goods and given notification (AS 45.02.607(c)), the buyer may recover as damages for a nonconformity of tender the loss resulting in the ordinary course of events from the seller's breach as determined in a reasonable manner. (b) The measure of damages for breach of warranty is the difference at the time and place of acceptance between the value of the goods accepted and the value they would have had if they had been as warranted, unless special circumstances show proximate damages of a different amount.",
+      "text_sha256": "75afdd2352e8b506f6a665e5f3a79a32229380f4e52e7aeebeaa727a03dbec69",
+      "publisher_sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb",
+      "retrieved_at": "2026-11-18T15:14:38.100170+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "d092f273d2bcdd8f9597e9691dfd48": {
+      "source_id": "US-AK:commencement:705182a88cdf",
+      "authority_type": "court_rule",
+      "citation": "Alaska R. Civ. P. 3(a)",
+      "text": "(a) A civil action is commenced by filing a complaint with the court . The complaint, in order to be accepted for filing, must be accompanied by a completed case description on a form provided by the clerk of court. Unless filing by fax or electronic mail where authorized, the complaint shall also be accompanied by an envel ope addressed to the plaintiff with sufficient postage to mail the envelope and all summonses tha t will be issued in the case.",
+      "text_sha256": "38f339b2cf67e4fe89abaaff35fc9813e847131dff5104eae45db0aaefb6d901",
+      "publisher_sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb",
+      "retrieved_at": "2026-11-18T20:45:45.439868+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska Superior Court"
+    },
+    "f3c0211135825209f5c256b30c2afc": {
+      "source_id": "US-AK:wageLaw:4cc7a88c27e2",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 23.05.140(a)–(b)",
+      "text": "(a) An employee and employer may agree in an annual initial contract of employment to monthly pay periods when the employer shall pay the employee for all labor performed or services rendered. Otherwise, the employer shall establish monthly or semi-monthly pay periods, at the election of the employee. (b) If the employment is terminated, all wages, salaries, or other compensation for labor or services become due immediately and shall be paid within the time required by this subsection at the place where the employee is usually paid or at a location agreed upon by the employer and employee. If the employment is terminated by the employer, regardless of the cause for the termination, payment is due within three working days after the termination. If the employment is terminated by the employee, payment is due at the next regular pay day that is at least three days after the employer received notice of the employee's termination of services.",
+      "text_sha256": "92df782ac91135ac387d4412003cdef056e7807feb02616ed2065408e51b9981",
+      "publisher_sha256": "3957ea138984d5c12646a05c5fa9beeb8c965437fd847d09864dc8f44f760547",
+      "retrieved_at": "2026-11-17T19:42:34.060323+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "4ff98e78a4a8cec9a1abb253563456": {
+      "source_id": "US-AK:response:83281eeed9e4",
+      "authority_type": "court_rule",
+      "citation": "Alaska R. Civ. P. 12(a)",
+      "text": "(a) When Presented. A defendant shall serve an answer within 20 days after the service of the summons and complaint upon that defendant, unless ot herwise directed when service of process is made pursuant to Rule 4(e). A party served with a pleading stating a cross -claim against that part y shall serve an answer thereto within 20 days after the service upon that party. The plaintiff shall serve a reply to a counterclaim in the answer within 20 days after service of the answer or, if a reply is ordered by the court, within 20 days after service of the order, unless the order otherwise directs. The state or an officer or agency thereof shall serve an ans wer to the complaint or to a cross-claim, or a reply to a counterclaim, within 40 days after the service upon the attorney general of the plea ding in which the claim is asserted. A non -governmental party shall s erve an answer to the complaint or to a cross -claim, or a reply to a counterclaim within 40 days after service upon an officer or agency of the state appointed, authorized, or designated as agent to receive service for such party pursuant to statute. An individual in a foreign country who is served w ith a summons and complaint under subsection (d)(13) of Rule 4 shall serve an answer to the complaint or to a cross -claim, or a reply to a counterclaim, within 40 days after service upon that individual. The service of a m otion permitted under this rule al ters these periods of time as fol lows, unless a different time is fixed by order of the court: (1) if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within 10 days after notic e of the court’s action; (2) if the court grants a motion for a more definite statement the responsive pleading shall be served within 10 days after the service of the more definite statement.",
+      "text_sha256": "6c551a3240c29d233f1ca425a0fdc3dde3bc7225a473c207bb84361ca3fee9ae",
+      "publisher_sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb",
+      "retrieved_at": "2026-11-18T20:45:45.439868+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska Superior Court"
+    },
+    "cdd7b3fd035eabca156db8e0494782": {
+      "source_id": "US-AK:pi_limitations:fae681f483ed",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 09.10.070(a)",
+      "text": "(a) Except as otherwise provided by law, a person may not bring an action (1) for libel, slander, assault, battery, seduction, or false imprisonment, (2) for personal injury or death, or injury to the rights of another not arising on contract and not specifically provided otherwise; (3) for taking, detaining, or injuring personal property, including an action for its specific recovery; (4) upon a statute for a forfeiture or penalty to the state; or (5) upon a liability created by statute, other than a penalty or forfeiture; unless the action is commenced within two years of the accrual of the cause of action.",
+      "text_sha256": "9987164072efc6b48f1535178a31a79ffa6c5d17fa33ab91fdbd4e16fb2089aa",
+      "publisher_sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f",
+      "retrieved_at": "2026-11-20T15:34:30.890765+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "4d9ff3eb4363b6228ea5b13c92dd2c": {
+      "source_id": "US-AK:small_claims:115c05be1ba1",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 22.15.040(a)–(b)",
+      "text": "(a) Except as otherwise provided in this subsection, when a claim for relief does not exceed $10,000, exclusive of costs, interest, and attorney fees, and request is so made, the district judge or magistrate shall hear the action as a small claim unless important or unusual points of law are involved or the state is a defendant. The Department of Labor and Workforce Development may bring an action as a small claim under this subsection for the payment of wages under AS 23.05.220 in an amount not to exceed $20,000, exclusive of costs, interest, and attorney fees. The supreme court shall prescribe the procedural rules and standard forms to assure simplicity and the expeditious handling of small claims. (b) All potential small claim litigants shall be informed if mediation, conciliation, and arbitration services are available as an alternative to litigation.",
+      "text_sha256": "5507e18536302cdc356c031f15b58d3dc10b3555cbb0a814063c8ff848f36e36",
+      "publisher_sha256": "4952e89f4c67e338ab24ef1e012a0ad6a65701f09c97b770a08120e1c26d4d25",
+      "retrieved_at": "2026-11-20T16:16:29.910572+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska District Court"
+    },
+    "3547d481e434893db7f91d89dcbe37": {
+      "source_id": "US-AK:consumerLaw:8b2aeefbd0e6",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 45.50.471(a)–(b)(2)",
+      "text": "(a) Unfair methods of competition and unfair or deceptive acts or practices in the conduct of trade or commerce are declared to be unlawful. (b) The terms “unfair methods of competition” and “unfair or deceptive acts or practices” include the following acts: (1) fraudulently conveying or transferring goods or services by representing them to be those of another; (2) falsely representing or designating the geographic origin of goods or services;",
+      "text_sha256": "f89bf5bbec8db1d7b59eb1ab6d120a50d052df93869ab5b49f59fb9ee515dca1",
+      "publisher_sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb",
+      "retrieved_at": "2026-11-20T16:20:52.510567+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "7d46e974e40cfc4ecdb964d021c45d": {
+      "source_id": "US-AK:negligence_elements:a955d15d16f6",
+      "authority_type": "opinion",
+      "citation": "Kelly v. Municipality of Anchorage, Opinion No. 6653 (Alaska Mar. 2, 2012)",
+      "text": "In order to succeed on a negligence claim, a plaintiff must prove duty, breach of duty, causation, and harm.",
+      "text_sha256": "437668365be5ddd02ad7b1ab20f98a26aa57ffba6a7ab7c16158c720079a587d",
+      "publisher_sha256": "a6010baf45eef5daf8ac97f1c5bdefc7b1b16af0d9f3e5029cc701541957da1f",
+      "retrieved_at": "2026-11-20T17:40:13.579125+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2012-03-02",
+      "court": "Supreme Court of Alaska",
+      "procedural_posture": "Appeal from summary judgment for a municipality following a fall into an uncovered valve box.",
+      "opinion_role": "majority",
+      "decision_date": "2012-03-02"
+    },
+    "4ca6053c0071e144cd752f8234bddf": {
+      "source_id": "US-AK:deposit:d474aeba4ae4",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 34.03.070(a)–(b), (g)–(h)",
+      "text": "(a) Except as provided in (h) of this section, a landlord may not demand or receive prepaid rent or a security deposit, however denominated, in an amount or value in excess of two months' periodic rent. This section does not apply to rental units where the rent exceeds $2,000 a month. (b) Upon termination of the tenancy, property or money held by the landlord as prepaid rent or as a security deposit may be applied to the payment of accrued rent and the amount of damages that the landlord has suffered by reason of the tenant's noncompliance with AS 34.03.120. The accrued rent and damages must be itemized by the landlord in a written notice mailed to the tenant's last known address within the time limit prescribed by (g) of this section, together with the amount due the tenant. In this subsection, “damages” (1) means deterioration of the premises and, if applicable, of the contents of the premises; (2) does not include deterioration (A) that is the result of normal wear and tear; (B) caused by the landlord's failure to prepare for expected conditions or by the landlord's failure to comply with an obligation of the landlord imposed by this chapter. […] (g) If the landlord or tenant gives notice that complies with AS 34.03.290, the landlord shall mail the written notice and refund required by (b) of this section within 14 days after the tenancy is terminated and possession is delivered by the tenant, except the landlord shall have 30 days after the tenancy is terminated to mail the refund if costs are deducted for damages that the landlord has suffered because of the tenant's noncompliance with AS 34.03.120. If the tenant does not give notice that complies with AS 34.03.290, the landlord shall mail the written notice and refund required by (b) of this section within 30 days after the tenancy is terminated, possession is delivered by the tenant, or the landlord becomes aware that the dwelling unit is abandoned. If the landlord does not know the mailing address of the tenant, but knows or has reason to know how to contact the tenant to give the notice required by (b) of this section, the landlord shall make a reasonable effort to deliver the notice and refund to the tenant. (h) Notwithstanding the limitation on the amount of prepaid rent or security deposit in (a) of this section, a landlord may demand or receive an additional security deposit from a tenant who has a pet on the premises that is not a service animal. The additional security deposit (1) may not exceed the periodic rent for one month; and (2) shall be accounted for separately from prepaid rent or a security deposit received under (a) of this section and may be applied only to the amount of damages that are directly related to the pet of the tenant.",
+      "text_sha256": "1abca6f4acc0e80e152c99c32b47fb2c9f8a1e22464d3e05562125457f1d8148",
+      "publisher_sha256": "83cec8fab79a503771ed3be0ac4b43042136bf10d4d7d3d4cb5f6c3105c84f96",
+      "retrieved_at": "2026-11-20T17:57:54.083516+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "a528a6e5eb2d18aac354c48779cc14": {
+      "source_id": "US-AK:debtLaw:6e2c6ba98659",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 08.24.090(a)–(c) (collection agency licensing and exemptions)",
+      "text": "Sec. 08.24.090. License required. (a) A person other than a collection agency licensed and authorized under this chapter may not for compensation (1) conduct a collection agency business in this state; (2) collect claims for others in this state; (3) solicit the right to collect or receive payment of a claim for another; (4) advertise or solicit either in print, by letter, in person or otherwise, the right to collect or receive payment of a claim for another; (5) seek to make collection or obtain payment of a claim on behalf of another. (b) This chapter does not apply to the following when engaged in the regular course of their respective businesses: (1) attorneys at law; (2) persons regularly employed on a regular wage or salary in the capacity of credit men or a similar capacity, except as an independent contractor; (3) banks, including trust departments of banks, fiduciaries and financing and lending institutions; (4) common carriers, (5) title insurers and abstract companies while doing an escrow business; (6) licensed real estate brokers; (7) employees of licensees under this chapter; (8) substation payment offices employed by or serving as independent contractors for public utilities. (c) A violation of this section is a misdemeanor punishable by imprisonment in a jail for not to exceed one year, or by a fine of not more than $1,000, or by both.",
+      "text_sha256": "f35c3fb0a842480f4d628a4d8d231726e4cd4d50c7d60dff486df1d65b6ac4a6",
+      "publisher_sha256": "23dc205309f7c99789a0cb5321531cc80a913aac14ac6d5cdc9ae333cf4b2ca6",
+      "retrieved_at": "2026-11-20T22:29:48.565486+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Alaska agency publication of collection statutes, May 2022"
+    },
+    "2cbfbfb0a05fb38ee955c8e4366bf5": {
+      "source_id": "US-AK:venue:71e246c50838",
+      "authority_type": "court_rule",
+      "citation": "Alaska R. Civ. P. 3(b)–(g)",
+      "text": "(b) All actions in ejectment, for recovery of possession, for quieting title, for partition, or for the enforcement of liens upon real property shall be commenced in the superior court in the judicial district in which the real property, or any part of it affected by the action, is situated. Such actions may also be commenced in the venue district in which the real property is located if the superior court in the district accepts such cases for filing. (c) If, in a civil action other than one specified in (b) of this rule, a defendant can be personally served within a judicial district of the State of Alaska, the action may be commenced either in: (1) the judicial district in which the claim arose; or (2) a judicial district where the defendant may be personally served; or (3) a venue district where the claim arose if the superior court in the district accepts such cases for filing. (d) Subject to a change of venue motion under AS 22.10.040, a trial and any hearings in an action shall be conducted in a venue district within the judicial district at a location which would best serve the convenience of the parties and witnesses. (e) Actions in cases not otherwise covered under this rule may be commenced in any judicial district of the state. (f) Failure to make timely objection to improper venue waives the venue requirements of this rule. (g) Venue districts as used in this rule refer to the districts referenced in the venue map described in Criminal Rule 18.",
+      "text_sha256": "4771a3ddb8bd0e5942f07c0d9f6dd0eefafd16c00676fa2db0f32ecf437b98d8",
+      "publisher_sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb",
+      "retrieved_at": "2026-11-21T16:23:01.188644+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska Superior Court and Alaska District Court insofar as applicable",
+      "publisher_member": "Alaska Court System Fall 2026 civil rules, printed p. 18, Rule 3(b)–(g)"
+    },
+    "a1d25f5e8343295f3a1995550951da": {
+      "source_id": "US-AK:service:219da268e35f",
+      "authority_type": "court_rule",
+      "citation": "Alaska R. Civ. P. 4(d)(1)",
+      "text": "(d) Summons—Personal Service. The summons and complaint shall be served together. The plaintiff shall furnish the person making service with such copies as are necessary. Service shall be made as follows: (1) Individuals. Upon an individual other than an infant or an incompetent person, by delivering a copy of the summons and of the complaint to the individual personally, or by leaving copies thereof at the individual’s dwelling house or usual place of abode with some person of suitable age and discretion then residing therein, or by delivering a copy of the summons and of the complaint to an agent authorized by appointment or by law to receive service of process.",
+      "text_sha256": "46e84fbc910f8b7577fe8fde3bbc29f373c64b7ff00e9292f43f13da9e790130",
+      "publisher_sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb",
+      "retrieved_at": "2026-11-21T16:23:01.188644+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska Superior Court and Alaska District Court insofar as applicable",
+      "publisher_member": "Alaska Court System Fall 2026 civil rules, printed p. 19, Rule 4(d) introduction and (1)"
+    },
+    "d1e2ddf2b479d1965c7bd2f2d65458": {
+      "source_id": "US-AK:service_business_entity:eafee514f439",
+      "authority_type": "court_rule",
+      "citation": "Alaska R. Civ. P. 4(d)(4)",
+      "text": "(4) Corporations or Limited Liability Companies. Upon a domestic or foreign corporation or limited liability company, by delivering a copy of the summons and of the complaint to a managing member, an officer, a managing or general agent, or to any other agent authorized by appointment or by law to receive service of process.",
+      "text_sha256": "be945e3c4e28d2946a889997b5286c9a64c74861874f51bc500337480a3ccf5a",
+      "publisher_sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb",
+      "retrieved_at": "2026-11-21T16:23:01.188644+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska Superior Court and Alaska District Court insofar as applicable",
+      "publisher_member": "Alaska Court System Fall 2026 civil rules, printed p. 20, Rule 4(d)(4)"
+    },
+    "00e3d3f1ad803ebeadd367bc6d62cb": {
+      "source_id": "US-AK:small_claims:c82da3cc2f2a",
+      "authority_type": "court_rule",
+      "citation": "Alaska Dist. Ct. R. Civ. P. 8(a)–(c)",
+      "text": "(a) The following procedure applies to a small claim action: (1) When all parties elect small claims procedure, a small claim action, as defined by AS 22.15.040, is governed by: (A) this Part (Part II of the District Court Rules of Civil Procedure, Small Claims Rules); (B) applicable portions of Civil Rules 5, 5.1, 5.3, and 6; and ES OF CIVIL PROCEDURE Rule 10 3 (C) other rules specifically referenced in this Part (Part II of the District Court Rules of Civil Procedure, Small Claims Rules). (2) When the parties do not elect small claim procedure, a small claim action is governed by Part I of the District Court Rules of Civil Procedure. (b) A party having a claim or claims exceeding the maximum amount of a small claim as defined by AS 22.15.040 may waive the right to recover the excess amount and elect to proceed under this Part II, by filing a written waiver of the excess amount. (c) Actions to foreclose or enforce statutory, common law or possessory liens and actions for recovery of real property may not be brought as small claims actions. The court may, on its own motion, order the rules in Part I to apply in any other action when important or difficult questions of fact or law are involved.",
+      "text_sha256": "845dafa36437feb62df1602b3a4c9fe896760d85e853d5e58173851eaa5fc668",
+      "publisher_sha256": "49121b867dd56877a3154d98ce61972f30380c56a1ffe3ef07f922cc658c1721",
+      "retrieved_at": "2026-11-21T16:33:04.101771+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska District Court, small claims",
+      "publisher_member": "Alaska Court System District Court Rules, printed p. 3, Rule 8; excludes post-rule editorial note"
+    },
+    "cc701e41445d97ad40dd32ce3a0bf3": {
+      "source_id": "US-AK:small_claims:49c3d9e5b154",
+      "authority_type": "court_rule",
+      "citation": "Alaska Dist. Ct. R. Civ. P. 10(a)",
+      "text": "(a) A small claim action is commenced by filing a complaint on the form provided by the Alaska court system. The complaint is a short, plain written statement showing the nature of the claim for relief, signed by the plaintiff. The complaint shall contain a statement that the plaintiff elects to have the claim treated as a small claim and waives the right to jury trial and the right to proceed formally. A complaint which does not contain a waiver of the right to jury trial and formal proceedings is governed by Part I of the District Court Rules of Civil Procedure. The plaintiff’s mailing address shall be shown on the complaint. In a debt collection case, the complaint must designate a person authorized to discuss the case on behalf of the plaintiff and include that person’s name, phone number, mailing address, and email address. When the complaint is based upon a written document, the document or a copy of it shall be attached to the complaint.",
+      "text_sha256": "4977e497036c6b21a9e1ac34c6ab24e8b7b5116877ea0ecaf7d6663e44a44fad",
+      "publisher_sha256": "49121b867dd56877a3154d98ce61972f30380c56a1ffe3ef07f922cc658c1721",
+      "retrieved_at": "2026-11-21T16:33:04.101771+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska District Court, small claims",
+      "publisher_member": "Alaska Court System District Court Rules, printed p. 3, Rule 10(a)"
+    },
+    "5ec81817134cf1869bfbd2049bf8ac": {
+      "source_id": "US-AK:general_contract_limitations:3e01f2a6f39d",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 09.10.053",
+      "text": "Unless the action is commenced within three years, a person may not bring an action upon a contract or liability, express or implied, except as provided in AS 09.10.040, or as otherwise provided by law, or, except if the provisions of this section are waived by contract.",
+      "text_sha256": "d1636d6e5745e24e0d315adea9418dd226de674a4dd3aa3550598b069f232913",
+      "publisher_sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f",
+      "retrieved_at": "2026-11-21T17:43:02.010761+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 5, Alaska Stat. § 09.10.053, statutory text"
+    },
+    "baa71e0395284dee07ec9f7a11dc63": {
+      "source_id": "US-AK:written_contract_limitations:329bb0bee288",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 09.10.040(a)",
+      "text": "(a) A person may not bring an action upon a judgment or decree of a court of the United States, or of a state or territory within the United States, and an action may not be brought upon a sealed instrument, unless the action is commenced within 10 years.",
+      "text_sha256": "16b5752ec072fe59eb1faa316179236a0fcd0aa7c4408f96505488e34fb3008f",
+      "publisher_sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f",
+      "retrieved_at": "2026-11-21T17:43:02.010761+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 5, Alaska Stat. § 09.10.040(a), statutory text"
+    },
+    "7d7206844b0638dcf9c94355943450": {
+      "source_id": "US-AK:wrongful_death_limitations:6af737c15524",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 09.55.580(a), opening sentences",
+      "text": "(a) Except as provided under (f) of this section and AS 09.65.145, when the death of a person is caused by the wrongful act or omission of another, the personal representatives of the former may maintain an action therefor against the latter, if the former might have maintained an action, had the person lived, against the latter for an injury done by the same act or omission. The action shall be commenced within two years after the death, and the damages therein shall be the damages the court or jury may consider fair and just.",
+      "text_sha256": "678bc3c8a612bcf7cd215e96a0503ec414ad90146b8028b67e2c3a76b2960dde",
+      "publisher_sha256": "c4e3709d5e3c1303b3b5ee42dfb87f22a10e2adba72b7abcc966485a4071638f",
+      "retrieved_at": "2026-11-21T17:43:02.010761+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 145, Alaska Stat. § 09.55.580(a), opening sentences, statutory text"
+    },
+    "9fe4433469ff0be82e5504f3009211": {
+      "source_id": "US-AK:consumer_private_action:ba3dc9414dec",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 45.50.531(a)",
+      "text": "(a) A person who suffers an ascertainable loss of money or property as a result of another person's act or practice declared unlawful by AS 45.50.471 may bring a civil action to recover for each unlawful act or practice three times the actual damages or $500, whichever is greater. The court may provide other relief it considers necessary and proper. Nothing in this subsection prevents a person who brings an action under this subsection from pursuing other remedies available under other law, including common law.",
+      "text_sha256": "a7a08b11869d7c49ee5510583fe112eed63a4b2d9ef20099e6052110d02ef0a9",
+      "publisher_sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb",
+      "retrieved_at": "2026-11-21T21:58:24.975636+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 420, Alaska Stat. § 45.50.531(a), statutory text"
+    },
+    "ce76a6202ea1c1392d3b6ef2d940cf": {
+      "source_id": "US-AK:consumer_limitations:5f2e61b25059",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 45.50.531(f)",
+      "text": "(f) A person may not commence an action under this section more than two years after the person discovers or reasonably should have discovered that the loss resulted from an act or practice declared unlawful by AS 45.50.471.",
+      "text_sha256": "dcdac25f53dd5b9ae7ca81312a39ff38f7efddbdbe3a5a4ec00edeaccfedf3c6",
+      "publisher_sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb",
+      "retrieved_at": "2026-11-21T21:58:24.975636+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 420, Alaska Stat. § 45.50.531(f), statutory text"
+    },
+    "e5693bdb0d2fd5bd06aa275e13d0fe": {
+      "source_id": "US-AK:consumer_agency:28dbb96e35bf",
+      "authority_type": "statute",
+      "citation": "Alaska Stat. § 45.50.501(a)",
+      "text": "(a) When the attorney general has reason to believe that a person has used, is using, or is about to use an act or practice declared unlawful in AS 45.50.471, and that proceedings would be in the public interest, the attorney general may bring an action in the name of the state against the person to restrain by injunction the use of the act or practice. The action may be brought in the superior court in the judicial district in which the person resides or is doing business or has the person's principal place of business in the state, or, with the consent of the parties, in any other judicial district in the state.",
+      "text_sha256": "bf9b33ee31feee11190b9af1960aae411ee1a6da7c113337a7f9e1ba1f3150c6",
+      "publisher_sha256": "e607d53c6afc76a47802e2599b1962e6cef1bf9976d354b61d39d8d1df20cedb",
+      "retrieved_at": "2026-11-21T21:58:24.975636+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Publisher PDF p. 419, Alaska Stat. § 45.50.501(a), statutory text"
+    },
+    "5d054eb7e28392e8faf28003beda65": {
+      "source_id": "US-AK:service_time_limit:d294f36c8897",
+      "authority_type": "court_rule",
+      "citation": "Alaska R. Civ. P. 4(j), court rules compilation",
+      "text": "(j) Summons—Time Limit for Service. The clerk shall review each pending case 120 days after filing of the complaint to determine whether all defendants have been served. If any defendant has not been served, the clerk shall send notice to the plaintiff to show good cause in writing why service on that defendant is not complete. If good cause is not shown within 30 days after distribution of the notice, the court shall dismiss without prejudice the action as to that defendant. The clerk may enter the dismissal if the plaintiff has not opposed dismissal. If the court finds good cause why service has not been made, the court shall establish a new deadline by which plaintiff must file proof of service or proof that plaintiff has made diligent efforts to serve.",
+      "text_sha256": "19145ef6d6c6a7234d3b82b8ebbf54518e9876f07398ff800caa4dc03fa264b7",
+      "publisher_sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb",
+      "retrieved_at": "2026-11-18T20:45:45.439868+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Alaska Court System civil rules compilation retained in November 2026",
+      "court": "Alaska courts governed by the Alaska Rules of Civil Procedure",
+      "publisher_member": "Alaska Court System civil rules compilation retained in November 2026, PDF p. 22, Alaska R. Civ. P. 4(j), court rules compilation, rule text only"
+    },
+    "9bb44d11988f57a1fb842c6f7edfa3": {
+      "source_id": "US-AK:contract_breach:ef0274fed189",
+      "authority_type": "court_instruction",
+      "citation": "Alaska Civil Pattern Jury Instruction 24.00A (2022)",
+      "text": "[Plaintiff] claims that [he she it] had a contract with [defendant], and that [defendant] breached the contract. [Plaintiff] is seeking an award of damages for [defendant’s] breach of the contract. In order to find in favor of [plaintiff] on this claim, you must decide that it is more likely true than not true that: There was a contract between [plaintiff] and [defendant]; and [Defendant] breached the contract. If you decide that both elements of this claim are more likely true than not true, your verdict on this claim must be in favor of [plaintiff], and you must determine the amount of the damages to be awarded to [plaintiff]. Otherwise, your verdict on this claim must be in favor of [defendant].",
+      "text_sha256": "82a4fe7a8a014f294c038d2a14dbe558089210dd77bf9b9017777a5e2a904321",
+      "publisher_sha256": "e7bcbdd19626cf51bb996029c74669650ce11eea2d6abdd29b5e97e7a8f91bb7",
+      "retrieved_at": "2026-11-23T16:08:22.991909+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska Court System",
+      "edition": "Civil Pattern Jury Instructions, article revision 2022",
+      "publisher_member": "word/document.xml, main instruction"
+    },
+    "34a81cf656fb835fff352467e53808": {
+      "source_id": "US-AK:contract_formation:11f4c4e2d3bc",
+      "authority_type": "court_instruction",
+      "citation": "Alaska Civil Pattern Jury Instruction 24.01A (2022)",
+      "text": "[Plaintiff] claims that [he she it] entered into a contract with [defendant]. [Defendant] denies that the parties entered into a contract. In order to find that [names] entered into a contract, you must find that each of the following statements is more likely true than not true: [Name] made an offer to [name] that included all of the important terms of a proposed agreement; [Name] accepted [name’s] offer through words or conduct that were clear and definite; Under the terms of the agreement, each party gave something of value, or promised to give something of value, in exchange for what the other party gave or promised; and Both [name] and [name] intended to be bound by their agreement. A party’s intent to be bound by an agreement is determined by that party’s words or conduct, as the words or conduct would be interpreted by a reasonable person. A party’s unexpressed intent cannot be considered when determining whether that party intended to be bound by an agreement. If you decide that all four of these statements are more likely true than not true, then there was a contract between [plaintiff and defendant]. If you do not find that all four of these statements are more likely true than not true, [plaintiff] and [defendant] did not enter into a contract.",
+      "text_sha256": "acb5e94080a22e7c4ece6b029b4eca20cb17a09c961a5e591890fd507c57c36c",
+      "publisher_sha256": "5d647128e74aa8d625b17dbf919e639d92611babb09746b5823533493e34b06f",
+      "retrieved_at": "2026-11-23T16:08:22.968374+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska Court System",
+      "edition": "Civil Pattern Jury Instructions, article revision 2022",
+      "publisher_member": "word/document.xml, main instruction"
+    },
+    "77fe43933cd1c8d88afb14b9a4e99d": {
+      "source_id": "US-AK:general_contract_damages:21bf70f5103f",
+      "authority_type": "court_instruction",
+      "citation": "Alaska Civil Pattern Jury Instruction 24.09A (2022)",
+      "text": "If you find in favor of [plaintiff] on [his her its] claim for breach of contract, you must decide how much money, if any, will fairly compensate [plaintiff] for a financial loss caused by [defendant’s] breach of the contract. This compensation is called compensatory damages. The purpose of an award of compensatory damages is to put [plaintiff] in the same financial position that [he she it] would have been in if [defendant] had fully performed [his her its] obligations under the contract. To award compensatory damages to [plaintiff] for [defendant’s] breach of contract, you must find that it is more likely true than not true that: [Defendant’s] breach of the contract caused [plaintiff’s] financial loss; and When [plaintiff] and [defendant] entered into the contract, [defendant] knew or could have reasonably foreseen that this financial loss would be a probable result if [defendant] breached the contract. A financial loss from breach of a contract is reasonably foreseeable if either: the loss follows in the ordinary course of events from the breach; or the loss follows from special circumstances that the party had reason to know about when the parties entered into the contract. (3)[Plaintiff] has established the amount of [his her its] financial loss with reasonable certainty. An award of compensatory damages must be based on evidence, and not on speculation, guesswork or conjecture. If you decide that these requirements for an award of compensatory damages have not been met, you cannot award compensatory damages to [plaintiff]. Instead, you must award [plaintiff] nominal damages. In a moment, I will instruct you regarding an award of nominal damages.",
+      "text_sha256": "ff2944fbe57f0e38cf4fad928d53888fe4726eb929dc5dc4916223af276d811e",
+      "publisher_sha256": "12a9e5d2e55963f351f98b47cb3451dd4e55484dddd3157f432e003e03a28125",
+      "retrieved_at": "2026-11-23T16:08:22.975366+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska Court System",
+      "edition": "Civil Pattern Jury Instructions, article revision 2022",
+      "publisher_member": "word/document.xml, main instruction"
+    },
+    "5b2ff125641a5716410e8857aeb84f": {
+      "source_id": "US-AK:premises:046072584ea6",
+      "authority_type": "court_instruction",
+      "citation": "Alaska Civil Pattern Jury Instruction 06.01 (2019)",
+      "text": "LANDOWNER LIABILITY - IMPROVED PROPERTY. [A landowner] [A property owner] is negligent if the owner fails to exercise reasonable care to guard against unreasonable risks created by a dangerous condition on the property. A person can be negligent by acting or failing to act. A person is negligent if he or she does something that a reasonably careful person would not do in the same situation, or fails to do something that a reasonably careful person would do in the same situation. The law does not require exceptional caution or skill, only reasonable care.",
+      "text_sha256": "76e63280235184fd7fab6829c0e1774f4dbf1d6f0461890c59c5b28c0178a194",
+      "publisher_sha256": "e052c20193a4900c76d10eb561cf082630f9949c617511ce22839b58828da0d8",
+      "retrieved_at": "2026-11-23T16:09:36.968664+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska Court System",
+      "edition": "Civil Pattern Jury Instructions, article revision 2019",
+      "publisher_member": "word/document.xml, main instruction"
+    },
+    "8150443582516a2995df79e0d1dbda": {
+      "source_id": "US-AK:premises:2839bf895de7",
+      "authority_type": "court_instruction",
+      "citation": "Alaska Civil Pattern Jury Instruction 06.02 (2019)",
+      "text": "LANDOWNER LIABILITY - ELEMENTS WHEN THE LANDOWNER’S LIABILITY IS LIMITED BY AS 09.65.200 (LIABILITY FOR INJURIES OCCURRING ON UNIMPROVED LAND). Plaintiff claims that [he][she] was harmed because of the defendant’s failure to follow the standard of conduct that governs owners of land. In order to find in favor of the plaintiff on this claim, you must decide that each of the following elements is more likely true than not true: 1.The defendant failed to guard against unreasonable risks created by a dangerous condition on the property. 2.The defendant’s failure constituted gross negligence, reckless misconduct, or intentional misconduct. This element is not established if the defendant engaged in conduct that constituted only ordinary negligence. In a moment, I will explain each of these terms. 3.The plaintiff was harmed; and 4.The defendant’s failure was a substantial factor in causing the plaintiff’s harm. Ordinary negligence is the failure to use reasonable care, which is the amount of care that a reasonably careful person would use in the same situation.",
+      "text_sha256": "14d111932e09d99e343be7ee33f37b04adbf34a5bdce45f26e4c1f376f639ce3",
+      "publisher_sha256": "fb043d0acba9909bf00659084158d21a29fe0df96611da9479344252b39dd329",
+      "retrieved_at": "2026-11-23T16:09:36.968664+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska Court System",
+      "edition": "Civil Pattern Jury Instructions, article revision 2019",
+      "publisher_member": "word/document.xml, main instruction"
+    }
+  },
+  "fault_allocation": {
+    "regime": "pure_comparative",
+    "passage_selector": "56ca0d7bb5d2990f41fadcf312dd52",
+    "source_id": "US-AK:fault:b7c635c68da1",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

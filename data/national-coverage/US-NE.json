@@ -1,0 +1,770 @@
+{
+  "jurisdiction": "US-NE",
+  "version": "1",
+  "sources": {
+    "US-NE:statutes:bab98dfd84de": {
+      "category": "statutes",
+      "title": "Nebraska Statutes",
+      "url": "https://nebraskalegislature.gov/laws/browse-statutes.php",
+      "directory": "codes",
+      "locator": "Nebraska"
+    },
+    "US-NE:constitution:6ffe28027df8": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://nebraskalegislature.gov/laws/browse-constitution.php",
+      "directory": "codes",
+      "locator": "Nebraska"
+    },
+    "US-NE:legislature:11362e05b139": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "https://nebraskalegislature.gov/",
+      "directory": "codes",
+      "locator": "Nebraska"
+    },
+    "US-NE:labor_agency:f88ede704d19": {
+      "category": "labor_agency",
+      "title": "www.dol.nebraska.gov",
+      "url": "http://www.dol.nebraska.gov/",
+      "directory": "labor",
+      "locator": "Nebraska"
+    },
+    "US-NE:civil_rules:ead32e61c958": {
+      "category": "civil_rules",
+      "title": "Courts; Civil Procedure",
+      "url": "http://nebraskalegislature.gov/laws/browse-chapters.php?chapter=25",
+      "directory": "procedure",
+      "locator": "Nebraska"
+    },
+    "US-NE:consumer_agency:8514041e3fbb": {
+      "category": "consumer_agency",
+      "title": "Nebraska (NE)",
+      "url": "https://protectthegoodlife.nebraska.gov/",
+      "directory": "consumer",
+      "locator": "Nebraska (NE)"
+    },
+    "US-NE:judiciary:0e59e1b34f8b": {
+      "category": "judiciary",
+      "title": "Judiciary",
+      "url": "http://www.supremecourt.ne.gov/",
+      "directory": "doj-NE",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-NE:court_directory:26d8f7e22a48": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://supremecourt.nebraska.gov/courts/supreme-court",
+      "directory": "doj-NE",
+      "locator": "Supreme Court"
+    },
+    "US-NE:court_directory:20b26d2e74be": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "https://supremecourt.nebraska.gov/courts/court-appeals",
+      "directory": "doj-NE",
+      "locator": "Court of Appeals"
+    },
+    "US-NE:court_directory:40883c4c0d0f": {
+      "category": "court_directory",
+      "title": "District Courts",
+      "url": "https://supremecourt.nebraska.gov/courts/district-court",
+      "directory": "doj-NE",
+      "locator": "District Courts"
+    },
+    "US-NE:court_directory:98ddcd568f3d": {
+      "category": "court_directory",
+      "title": "County Courts",
+      "url": "https://supremecourt.nebraska.gov/courts/county-court",
+      "directory": "doj-NE",
+      "locator": "County Courts"
+    },
+    "US-NE:court_directory:7d4c0b4248fa": {
+      "category": "court_directory",
+      "title": "Workers' Compensation Court",
+      "url": "https://www.newcc.gov/",
+      "directory": "doj-NE",
+      "locator": "Workers' Compensation Court"
+    },
+    "US-NE:court_directory:3129c489330e": {
+      "category": "court_directory",
+      "title": "Juvenile Courts",
+      "url": "https://supremecourt.nebraska.gov/courts/separate-juvenile-courts",
+      "directory": "doj-NE",
+      "locator": "Juvenile Courts"
+    },
+    "US-NE:forms:731fee6f1da4": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "https://supremecourt.nebraska.gov/forms?field_language_tid=288",
+      "directory": "doj-NE",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-NE:constitution:2becde25c1dc": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.nebraskalegislature.gov/laws/browse-constitution.php",
+      "directory": "doj-NE",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NE:statutes:e799ce3b8499": {
+      "category": "statutes",
+      "title": "Revised Statutes",
+      "url": "http://www.nebraskalegislature.gov/laws/browse-statutes.php",
+      "directory": "doj-NE",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NE:statutes:6488598eca80": {
+      "category": "statutes",
+      "title": "Bills and Laws Search",
+      "url": "http://www.nebraskalegislature.gov/bills/intro.php",
+      "directory": "doj-NE",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-NE:regulations:40fe618912e7": {
+      "category": "regulations",
+      "title": "Rules and Regulations",
+      "url": "http://www.sos.state.ne.us/dyindex.html#boxingName",
+      "directory": "doj-NE",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-NE:pi_limitations:0b6415b2a000": {
+      "category": "pi_limitations",
+      "title": "Neb. Rev. Stat. § 25-207(3)",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-207",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-207",
+        "retrieved_at": "2026-11-17T19:33:59.373696+00:00",
+        "http_status": "200",
+        "sha256": "d041c681f04a617152e12a4d71493a6ffba3b587c023648fd8f9891f9850cd43",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NE:written_contract_limitations:0b77e2211cc0": {
+      "category": "written_contract_limitations",
+      "title": "Neb. Rev. Stat. § 25-205(1)",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-205",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-205",
+        "retrieved_at": "2026-11-17T19:33:59.472380+00:00",
+        "http_status": "200",
+        "sha256": "0bfb26248843c6181bc4b739e675bec922b721dc96e7ad6797756f7238ce1822",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NE:oral_contract_limitations:d043ae7ef388": {
+      "category": "oral_contract_limitations",
+      "title": "Neb. Rev. Stat. § 25-206",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-206",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-206",
+        "retrieved_at": "2026-11-17T19:33:59.515803+00:00",
+        "http_status": "200",
+        "sha256": "7ac9e3a93a0e4ead3dfbc18b55e3b451f807140e384045defff360ce9e3c0b75",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NE:small_claims:ffa0737dce31": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://nebraskajudicial.gov/administration/self-represented-litigant-resources/small-claims",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://nebraskajudicial.gov/administration/self-represented-litigant-resources/small-claims",
+        "retrieved_at": "2026-11-17T19:42:13.806145+00:00",
+        "http_status": "200",
+        "sha256": "387c957aca4fcfe0534ef1a943436da61876465efac97d963351cddf2b8235a5",
+        "health": "manual_review_required"
+      }
+    },
+    "US-NE:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 28"
+    },
+    "US-NE:fault:c9852be1156d": {
+      "category": "fault",
+      "title": "Neb. Rev. Stat. § 25-21,185.09",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-21%2C185.09",
+      "directory": null,
+      "locator": "Neb. Rev. Stat. § 25-21,185.09",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:34.865618+00:00",
+        "sha256": "ab80e7e5f93bf4b3c007903ea43bb44bed91923e6bce3b13a7869955f137d918"
+      }
+    },
+    "US-NE:consumerLaw:ed81bf4566d7": {
+      "title": "Neb. Rev. Stat. § 59-1601 et seq.",
+      "category": "consumerLaw",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=59-1601",
+      "directory": "consumer_statutes_index",
+      "locator": "Neb. Rev. Stat. § 59-1601 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-NE:contract_formation:dd2920f6fe1a": {
+      "category": "contract_formation",
+      "title": "Neb. U.C.C. § 2-204",
+      "url": "https://www.nebraskalegislature.gov/laws/ucc.php?code=2-204",
+      "locator": "Neb. U.C.C. § 2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:31.580089+00:00",
+        "sha256": "a9400b3a95f3e7926f4ce91b97373dd3d4eb29b77c2d59fc1bd6553c8b42fa1a"
+      }
+    },
+    "US-NE:commencement:c36ea1e1007d": {
+      "category": "commencement",
+      "title": "Neb. Rev. Stat. § 25-501",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=s2505001000",
+      "locator": "Neb. Rev. Stat. § 25-501",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:41.958036+00:00",
+        "sha256": "7652a4530bb0f15b7ff59a37ed47d48887c72f7493ae4545697b584aa5da7798"
+      }
+    },
+    "US-NE:negligence_elements:913f7e8b2f0e": {
+      "category": "negligence_elements",
+      "title": "Lewison v. Renner, 298 Neb. 654 (2018)",
+      "url": "https://www.nebraska.gov/apps-courts-epub/public/viewCertified?docId=N00010444PUB",
+      "locator": "Lewison v. Renner, 298 Neb. 654 (2018)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T13:54:55.817726+00:00",
+        "sha256": "fcc6ea577e5c92b62048bef16c1c17853d8e60bfae505b1599628f1a0d772b3c"
+      }
+    },
+    "US-NE:wageLaw:6eb230eb51fb": {
+      "category": "wageLaw",
+      "title": "Neb. Rev. Stat. § 48-1230(1)",
+      "url": "https://www.nebraskalegislature.gov/laws/statutes.php?statute=48-1230",
+      "locator": "Neb. Rev. Stat. § 48-1230(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:56.888263+00:00",
+        "sha256": "2cc67f7ae7b822c5b5040bdb3be73c14a590186afb91aa12c3e7109c910405bc"
+      }
+    },
+    "US-NE:small_claims:ac9d70dc1d32": {
+      "category": "small_claims",
+      "title": "Neb. Rev. Stat. § 25-2802",
+      "url": "https://www.nebraskalegislature.gov/laws/statutes.php?print=true&statute=25-2802",
+      "locator": "Neb. Rev. Stat. § 25-2802",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:17:29.479431+00:00",
+        "sha256": "f40f81a09a83ae5201815901ed2caaa75fd976d936aff548066f50446d7d9a0c"
+      }
+    },
+    "US-NE:pi_limitations:061f5c2fa9fd": {
+      "category": "pi_limitations",
+      "title": "Neb. Rev. Stat. § 25-207",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-207",
+      "locator": "Neb. Rev. Stat. § 25-207",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:21.900751+00:00",
+        "sha256": "00f4b632566ae75b7dde93d4a984ae45ce1488832bd5934d093761a726005d8c"
+      }
+    },
+    "US-NE:written_contract_limitations:be0f2953bc15": {
+      "category": "written_contract_limitations",
+      "title": "Neb. Rev. Stat. § 25-205(1)–(2)",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?print=true&statute=25-205",
+      "locator": "Neb. Rev. Stat. § 25-205(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:35:41.484993+00:00",
+        "sha256": "dbfff532762b445786e04d1be0293dd4bf694365852d7d3bd800e72c88adb544"
+      }
+    },
+    "US-NE:oral_contract_limitations:fd95510ed5ed": {
+      "category": "oral_contract_limitations",
+      "title": "Neb. Rev. Stat. § 25-206",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?print=true&statute=25-206",
+      "locator": "Neb. Rev. Stat. § 25-206",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:35:41.762457+00:00",
+        "sha256": "79cb106cb75173b5f5424bd436aedd237b6aea708445fb7a701a329d81ad85fe"
+      }
+    },
+    "US-NE:consumerLaw:b20c6d0c9ced": {
+      "category": "consumerLaw",
+      "title": "Neb. Rev. Stat. § 59-1602",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=59-1602",
+      "locator": "Neb. Rev. Stat. § 59-1602",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:20:52.892896+00:00",
+        "sha256": "7a4fadd42b7b50500006cf294156a0607dedd2be1da36024192563848563ee9b"
+      }
+    },
+    "US-NE:deposit:05a31fbc93e5": {
+      "category": "deposit",
+      "title": "Neb. Rev. Stat. § 76-1416(2)",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=s7614016000",
+      "locator": "Neb. Rev. Stat. § 76-1416(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:16.327970+00:00",
+        "sha256": "05b66149715f9957045edad6c19ad25d45cdb9e432cc4456f2fab375deb64dd0"
+      }
+    },
+    "US-NE:debtLaw:b6a1422b2965": {
+      "category": "debtLaw",
+      "title": "Neb. Rev. Stat. § 45-601 (collection agency licensing scope)",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=45-601",
+      "locator": "Neb. Rev. Stat. § 45-601 (collection agency licensing scope)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:29:53.432666+00:00",
+        "sha256": "333aba3dd9e50ea0cc569a92a15b929ef69c83ba95bd0af00f67682e96915ab3"
+      }
+    },
+    "US-NE:debtLaw:34e8c76486b8": {
+      "category": "debtLaw",
+      "title": "Neb. Rev. Stat. § 45-602(2)–(3) (licensed collection agency scope and exclusions)",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=45-602",
+      "locator": "Neb. Rev. Stat. § 45-602(2)–(3) (licensed collection agency scope and exclusions)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:35:17.063918+00:00",
+        "sha256": "9a109fa07a22f645134c118f7c10b14dff3e8fa50abc5082bf150f8e534cee79"
+      }
+    },
+    "US-NE:response:e4b9aef97e7f": {
+      "category": "response",
+      "title": "Neb. Ct. R. Pldg. § 6-1112(a) (time to plead or move)",
+      "url": "https://nebraskajudicial.gov/book/export/html/24475",
+      "locator": "Neb. Ct. R. Pldg. § 6-1112(a) (time to plead or move)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:42:12.471453+00:00",
+        "sha256": "4c15d19c613858e0544cac7f79b2854e3c57cf4d4a8a483fd3d981f1af7336b6"
+      }
+    },
+    "US-NE:service:3c0f29f6aae2": {
+      "category": "service",
+      "title": "Neb. Rev. Stat. § 25-505.01",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-505.01",
+      "locator": "Neb. Rev. Stat. § 25-505.01",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:24:47.519703+00:00",
+        "sha256": "3d5402361b6fba4b65da01c900ef1e04c537592bf4bb1461fda0c1c81bf4cdb0"
+      }
+    },
+    "US-NE:summons_contents:0e78b6e6e197": {
+      "category": "summons_contents",
+      "title": "Neb. Rev. Stat. § 25-504.01",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-504.01",
+      "locator": "Neb. Rev. Stat. § 25-504.01",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:24:48.209114+00:00",
+        "sha256": "2c333edd14254e605b65d5576995c06d6fc8a7c2ad27da214b3b5d066f4563be"
+      }
+    },
+    "US-NE:service_time_limit:5a3a3342e805": {
+      "category": "service_time_limit",
+      "title": "Neb. Rev. Stat. § 25-217(2)–(3)",
+      "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=25-217",
+      "locator": "Neb. Rev. Stat. § 25-217(2)–(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:06:49.611701+00:00",
+        "sha256": "f80068943efdb67eb6045a470ff494f5153605abcc8b530d3bfa2ad88d2c185c"
+      }
+    },
+    "US-NE:consumer_agency:c32500d3e531": {
+      "category": "consumer_agency",
+      "title": "Neb. Rev. Stat. § 59-1608(1)–(2)",
+      "url": "https://nebraskalegislature.gov/laws/laws-index/chap59-full.html",
+      "locator": "Neb. Rev. Stat. § 59-1608(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:49:55.396641+00:00",
+        "sha256": "a4e1f9266b6085858fab8f14f2218f572f4f617ff7f4b6faaf7f2b0a779609e1"
+      }
+    },
+    "US-NE:general_contract_damages:ea0a3d215b8b": {
+      "category": "general_contract_damages",
+      "title": "TNT Cattle Co. v. Fife, 304 Neb. 890, 922 (2020)",
+      "url": "https://www.nebraska.gov/apps-courts-epub/public/viewCertified?docId=N00012129PUB",
+      "locator": "TNT Cattle Co. v. Fife, 304 Neb. 890, 922 (2020)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:39:41.809907+00:00",
+        "sha256": "b7be9ff5060571eb30394831e239d53d5393039e4b2d6833279c2a119ba6a2f1"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-NE:court:e70d17217ff1",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-NE:court_directory:26d8f7e22a48"
+    },
+    {
+      "id": "US-NE:court:b47ed66ee865",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-NE:court_directory:20b26d2e74be"
+    },
+    {
+      "id": "US-NE:court:7ee2b3f5043b",
+      "name": "District Courts",
+      "level": "trial_directory",
+      "source_id": "US-NE:court_directory:40883c4c0d0f"
+    },
+    {
+      "id": "US-NE:court:cf9659861036",
+      "name": "County Courts",
+      "level": "trial_directory",
+      "source_id": "US-NE:court_directory:98ddcd568f3d"
+    },
+    {
+      "id": "US-NE:court:808d2d23c693",
+      "name": "Workers' Compensation Court",
+      "level": "trial_directory",
+      "source_id": "US-NE:court_directory:7d4c0b4248fa"
+    },
+    {
+      "id": "US-NE:court:75d77653d9a6",
+      "name": "Juvenile Courts",
+      "level": "trial_directory",
+      "source_id": "US-NE:court_directory:3129c489330e"
+    },
+    {
+      "id": "US-NE:court:5d3caec6d2e2",
+      "name": "District",
+      "level": "general_trial",
+      "source_id": "US-NE:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NE:court:ce79a4218d1c",
+      "name": "Separate Juvenile",
+      "level": "limited_trial",
+      "source_id": "US-NE:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NE:court:09753adaaaf9",
+      "name": "County",
+      "level": "limited_trial",
+      "source_id": "US-NE:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-NE:court:b11065887313",
+      "name": "Workers’ Compensation",
+      "level": "limited_trial",
+      "source_id": "US-NE:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Neb. Rev. Stat. § 25-207(3)",
+      "source_id": "US-NE:pi_limitations:0b6415b2a000",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Neb. Rev. Stat. § 25-205(1)",
+      "source_id": "US-NE:written_contract_limitations:0b77e2211cc0",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Neb. Rev. Stat. § 25-206",
+      "source_id": "US-NE:oral_contract_limitations:d043ae7ef388",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Neb. Rev. Stat. § 76-1407. Jurisdiction; territorial application; Neb. Rev. Stat. § 76-1410. Terms, defined; Neb. Rev. Stat. § 76-1408. Exclusions from application of sections; Neb. Rev. Stat. § 76-1440. Action for possession; Neb. Rev. Stat. § 76-1453. Purposes; construction",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Neb. Rev. Stat. § 59-1601 et seq.",
+      "source_id": "US-NE:consumerLaw:ed81bf4566d7",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "dd12643ed906b4af5b2c4ecbd93c72": {
+      "citation": "Neb. Rev. Stat. § 25-21,185.09",
+      "source_id": "US-NE:fault:c9852be1156d",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "Any contributory negligence chargeable to the claimant shall diminish proportionately the amount awarded as damages for an injury attributable to the claimant's contributory negligence but shall not bar recovery, except that if the contributory negligence of the claimant is equal to or greater than the total negligence of all persons against whom recovery is sought, the claimant shall be totally barred from recovery. The jury shall be instructed on the effects of the allocation of negligence.",
+      "text_sha256": "3bd5aa466d078ffb2d354fe1daaf3aa484e49fa37bb4bf9ebd93ed63be878031",
+      "publisher_sha256": "ab80e7e5f93bf4b3c007903ea43bb44bed91923e6bce3b13a7869955f137d918",
+      "retrieved_at": "2026-11-17T20:50:34.865618+00:00",
+      "currentness": "unresolved"
+    },
+    "a23cd0469b4aafeab0fccd6183c288": {
+      "source_id": "US-NE:contract_formation:dd2920f6fe1a",
+      "authority_type": "statute",
+      "citation": "Neb. U.C.C. § 2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "a9400b3a95f3e7926f4ce91b97373dd3d4eb29b77c2d59fc1bd6553c8b42fa1a",
+      "retrieved_at": "2026-11-18T15:14:31.580089+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "56fa718205fac6bb7646e7148ef432": {
+      "source_id": "US-NE:commencement:c36ea1e1007d",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 25-501",
+      "text": "A civil action must be commenced by filing a complaint in the office of the clerk of a proper court.",
+      "text_sha256": "7589516bee653e84ef6ea24ffc827e20fcdcdf0e30c8dc341a8b799362b63d91",
+      "publisher_sha256": "7652a4530bb0f15b7ff59a37ed47d48887c72f7493ae4545697b584aa5da7798",
+      "retrieved_at": "2026-11-18T20:45:41.958036+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "e9b82ef68508a28692145ca63bc1bc": {
+      "source_id": "US-NE:negligence_elements:913f7e8b2f0e",
+      "authority_type": "opinion",
+      "citation": "Lewison v. Renner, 298 Neb. 654 (2018)",
+      "text": "To prevail in any negligence action, a plaintiff must show a legal duty owed by the defendant to the plaintiff, a breach of such duty, causation, and resulting damages.",
+      "text_sha256": "0c2aed76a0ffd54cadb0edc88950b3f583a39e4806af21e68b1a068793d979b7",
+      "publisher_sha256": "fcc6ea577e5c92b62048bef16c1c17853d8e60bfae505b1599628f1a0d772b3c",
+      "retrieved_at": "2026-11-19T13:54:55.817726+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2018-01-12",
+      "court": "Nebraska Supreme Court",
+      "decision_date": "2018-01-12",
+      "opinion_role": "majority",
+      "procedural_posture": "Affirmed denial of a new trial after an automobile collision."
+    },
+    "f9df50fde802f6cf8e4b6af0130f79": {
+      "source_id": "US-NE:wageLaw:6eb230eb51fb",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 48-1230(1)",
+      "text": "(1) Except as otherwise provided in this section, each employer shall pay all wages due its employees on regular days designated by the employer or agreed upon by the employer and employee. Thirty days' written notice shall be given to an employee before regular paydays are altered by an employer. An employer may deduct, withhold, or divert a portion of an employee's wages only when the employer is required to or may do so by state or federal law or by order of a court of competent jurisdiction or the employer has a written agreement with the employee to deduct, withhold, or divert.",
+      "text_sha256": "8963de7494928f585f47562ace568591a0f556d10058be1ba2eb8d0dcccf18d3",
+      "publisher_sha256": "2cc67f7ae7b822c5b5040bdb3be73c14a590186afb91aa12c3e7109c910405bc",
+      "retrieved_at": "2026-11-19T14:10:56.888263+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "7a47f7d3ec9007df7ae0d6110d75f6": {
+      "source_id": "US-NE:small_claims:ac9d70dc1d32",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 25-2802",
+      "text": "(1) The Small Claims Court shall have subject matter jurisdiction in all civil actions of any type when the amount of money or damages or the value of the personal property claimed does not exceed the jurisdictional amount specified in subsection (4) of this section, exclusive of interest and costs. (2) The Small Claims Court shall have subject matter jurisdiction in civil matters when the plaintiff seeks to disaffirm, avoid, or rescind a contract or agreement for the purchase of goods or services not in excess of the jurisdictional amount specified in subsection (4) of this section, exclusive of interest and costs. (3) The Small Claims Court shall have jurisdiction when the party defendant or his or her agent resides or is doing business within the county or when the cause of action arose within the county. (4) The jurisdictional amount is six thousand dollars from July 1, 2024, through June 30, 2025. The jurisdictional amount is seven thousand five hundred dollars beginning July 1, 2025.",
+      "text_sha256": "78cd1ad22648069d6f518c653c77ff9024767c04d1945c16c421533a476d1ffa",
+      "publisher_sha256": "f40f81a09a83ae5201815901ed2caaa75fd976d936aff548066f50446d7d9a0c",
+      "retrieved_at": "2026-11-19T19:17:29.479431+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Nebraska County Court"
+    },
+    "888a7f46fa1475a0d02feb53f51372": {
+      "source_id": "US-NE:pi_limitations:061f5c2fa9fd",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 25-207",
+      "text": "The following actions can only be brought within four years: (1) An action for trespass upon real property; (2) an action for taking, detaining or injuring personal property, including actions for the specific recovery of personal property; (3) an action for an injury to the rights of the plaintiff, not arising on contract, and not hereinafter enumerated; and (4) an action for relief on the ground of fraud, but the cause of action in such case shall not be deemed to have accrued until the discovery of the fraud, except as provided in sections 30-2206 and 76-288 to 76-298.",
+      "text_sha256": "c4dbd9d770b8e008f266d495053ec55f1a38c10c633dc182bb823791f90a931e",
+      "publisher_sha256": "00f4b632566ae75b7dde93d4a984ae45ce1488832bd5934d093761a726005d8c",
+      "retrieved_at": "2026-11-19T19:31:21.900751+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "6fe4866946ce08d51868f553542c7f": {
+      "source_id": "US-NE:written_contract_limitations:be0f2953bc15",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 25-205(1)–(2)",
+      "text": "(1) Except as provided in subsection (2) of this section, an action upon a specialty, or any agreement, contract, or promise in writing, or foreign judgment, can only be brought within five years. No action at law or equity may be brought or maintained attacking the validity or enforceability of or to rescind or declare void and uncollectible any written contract entered into pursuant to, in compliance with, or in reliance on, a statute of the State of Nebraska which has been or hereafter is held to be unconstitutional by the Supreme Court of Nebraska where such holding is the basis for such action, unless such action be brought or maintained within one year from the effective date of such decision. The provisions hereof shall not operate to extend the time in which to bring any action or to revive any action now barred by reason of the operation of any previously existing limitation provision. (2) An action to recover collateral (a) the possession and ownership of which a debtor has in any manner transferred to another person and (b) which was used as security for payment pursuant to an agreement, contract, or promise in writing which covers farm products as described in section 9-102, Uniform Commercial Code, or farm products which become inventory of a person engaged in farming, shall be brought within eighteen months from the date possession and ownership of such collateral was transferred.",
+      "text_sha256": "a2e7d12c67683014e6dd40103b89f4204eb59d310e355f3dc5d03191c55249bb",
+      "publisher_sha256": "dbfff532762b445786e04d1be0293dd4bf694365852d7d3bd800e72c88adb544",
+      "retrieved_at": "2026-11-19T19:35:41.484993+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "ae628ddff526e301fb1b37514240e2": {
+      "source_id": "US-NE:oral_contract_limitations:fd95510ed5ed",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 25-206",
+      "text": "An action upon a contract, not in writing, expressed or implied, or an action upon a liability created by statute, other than a forfeiture or penalty, can only be brought within four years.",
+      "text_sha256": "01c94d647d021dde873b07f5d61803ca8fe12245ab2d958bb407a2cdee7766c6",
+      "publisher_sha256": "79cb106cb75173b5f5424bd436aedd237b6aea708445fb7a701a329d81ad85fe",
+      "retrieved_at": "2026-11-19T19:35:41.762457+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "079880e4c41bac7cc1aa9c5127399b": {
+      "source_id": "US-NE:consumerLaw:b20c6d0c9ced",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 59-1602",
+      "text": "Unfair methods of competition and unfair or deceptive acts or practices in the conduct of any trade or commerce shall be unlawful.",
+      "text_sha256": "5d70efecf3b50d2cfd14019c3faae129fdf3e0de2c5d42778904bd743a2aacaf",
+      "publisher_sha256": "7a4fadd42b7b50500006cf294156a0607dedd2be1da36024192563848563ee9b",
+      "retrieved_at": "2026-11-20T16:20:52.892896+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "eeec2f7879711533736dc7197423bd": {
+      "source_id": "US-NE:deposit:05a31fbc93e5",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 76-1416(2)",
+      "text": "(2) Upon termination of the tenancy, property or money held by the landlord as prepaid rent and security may be applied to the payment of rent and the amount of damages which the landlord has suffered by reason of the tenant's noncompliance with the rental agreement or section 76-1421. The balance, if any, and a written itemization shall be delivered or mailed to the tenant within fourteen days after the date of termination of the tenancy. If no mailing address or instructions are provided by the tenant to the landlord, the landlord shall mail, by first-class mail, the balance of the security deposit to be returned, if any, and a written itemization of the amount of the security deposit not returned to the tenant's last-known mailing address. If the mailing is returned as undeliverable, or if the returned balance of the security deposit remains outstanding for one year, it shall be considered abandoned property to be reported and paid to the State Treasurer in accordance with the Uniform Disposition of Unclaimed Property Act.",
+      "text_sha256": "05c15d21af620494944ef30add4290dd1ae3798c9664d381d2098a2328df9952",
+      "publisher_sha256": "05b66149715f9957045edad6c19ad25d45cdb9e432cc4456f2fab375deb64dd0",
+      "retrieved_at": "2026-11-20T16:35:16.327970+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "4d0301bd076182bdae48bcbfc5b6c8": {
+      "source_id": "US-NE:debtLaw:b6a1422b2965",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 45-601 (collection agency licensing scope)",
+      "text": "Sections 45-601 to 45-622 shall be known and may be cited as the Collection Agency Act. No person, firm, corporation, or association shall conduct or operate a collection agency or do a collection agency business as defined in the act until he, she, or it has secured a license as provided in the act. Any person, firm, corporation, or association conducting or operating such a collection agency or doing such a collection agency business without a license shall be guilty of a Class III misdemeanor for each day that such unlawful business is conducted. Any officer or agent of a firm, corporation, or association who personally participates in any violation of the act shall be guilty of a Class III misdemeanor. Nothing contained in this section shall be construed to require a regular employee of a collection agency duly licensed as such in this state to procure a collection agency license. Nothing in the act shall be construed to prohibit a person, firm, corporation, or association regulated as a collection agency in another state and residing in another state from communicating with a debtor in this state.",
+      "text_sha256": "a1cb2ef50d0f91a797467db99108d891dfc0127cb0fdcecf9bc2831cac5c0ed0",
+      "publisher_sha256": "333aba3dd9e50ea0cc569a92a15b929ef69c83ba95bd0af00f67682e96915ab3",
+      "retrieved_at": "2026-11-20T18:29:53.432666+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "4f3c75622cf854e4d5b593821f21fd": {
+      "source_id": "US-NE:debtLaw:34e8c76486b8",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 45-602(2)–(3) (licensed collection agency scope and exclusions)",
+      "text": "(2) Collection agency means and includes: (a) All persons, firms, corporations, and associations directly or indirectly engaged in soliciting, from more than one person, firm, corporation, or association, claims of any kind owed or due or asserted to be owed or due such solicited person, firm, corporation, or association, and all persons, firms, corporations, and associations directly or indirectly engaged in asserting, enforcing, or prosecuting such claims; (b) Any person, firm, corporation, or association which, in attempting to collect or in collecting his, her, or its own accounts or claims, uses a fictitious name or any name other than his, her, or its own name which would indicate to the debtor that a third person is collecting or attempting to collect such account or claim; and (c) Any person, firm, corporation, or association which attempts to or does give away or sell to any person, firm, corporation, or association, other than one licensed under the act, any system or series of letters or forms for use in the collection of accounts or claims which assert or indicate, directly or indirectly, that the claim or account is being asserted or collected by any other person, firm, corporation, or association other than the creditor or owner of the claim or demand; (3) Collection agency does not mean or include (a) regular employees of a single creditor, (b) banks, (c) trust companies, (d) savings and loan associations, (e) building and loan associations, (f) abstract companies doing an escrow business, (g) duly licensed real estate brokers and agents when the claims or accounts being handled by such broker or agent are related to or are in connection with such brokers' or agents' regular real estate business, (h) express and telegraph companies subject to public regulation and supervision, (i) attorneys at law handling claims and collections in their own names and not operating a collection agency under the management of a layperson, (j) any person, firm, corporation, or association handling claims, accounts, or collections under an order or orders of any court, or (k) a person, firm, corporation, or association which, for valuable consideration, purchases accounts, claims, or demands of another and then, in such purchaser's own name, proceeds to assert or collect such accounts, claims, or demands; and",
+      "text_sha256": "50f4647d8e9bd226736931f946b42bd966945739657dfd4e359f9eb49c03bc45",
+      "publisher_sha256": "9a109fa07a22f645134c118f7c10b14dff3e8fa50abc5082bf150f8e534cee79",
+      "retrieved_at": "2026-11-20T18:35:17.063918+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "294b9fdcaa5c660d0a17c3c6694340": {
+      "source_id": "US-NE:response:e4b9aef97e7f",
+      "authority_type": "court_rule",
+      "citation": "Neb. Ct. R. Pldg. § 6-1112(a) (time to plead or move)",
+      "text": "(a) When Presented. (1) A defendant shall serve an answer within 30 days after being served with the summons and complaint or completion of service by publication. (2) A party served with a pleading stating a cross-claim against that party shall serve an answer thereto within 30 days after being served. A plaintiff shall serve a reply to a counterclaim in the answer within 30 days after being served with the answer, or, if a reply is ordered by the court, within 15 days after service of the order, unless the order otherwise directs. (3) [Reserved] (4) Unless a different time is fixed by court order, the service of a motion permitted under this rule alters these periods of time as follows: (A) if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within 20 days after notice of the court's action; or (B) if the court grants a motion for a more definite statement, the responsive pleading shall be served within 20 days after the service of the more definite statement.",
+      "text_sha256": "ade36e77eed5f036a78ca7d107ddc96a69d1205136a3861392e1bba73479e01b",
+      "publisher_sha256": "4c15d19c613858e0544cac7f79b2854e3c57cf4d4a8a483fd3d981f1af7336b6",
+      "retrieved_at": "2026-11-20T18:42:12.471453+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Nebraska courts applying the Rules of Pleading in Civil Cases"
+    },
+    "90c4fa4e49d2650ce20194b2265d6d": {
+      "source_id": "US-NE:service:3c0f29f6aae2",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 25-505.01",
+      "text": "(1) Unless otherwise limited by statute or by the court, a plaintiff may elect to have service made by any of the following methods: (a) Personal service which shall be made by leaving the summons with the individual to be served; (b) Residence service which shall be made by leaving the summons at the usual place of residence of the individual to be served, with some person of suitable age and discretion residing therein; (c) Certified mail service which shall be made by (i) within ten days of issuance, sending the summons to the defendant by certified mail with a return receipt requested showing to whom and where delivered and the date of delivery, and (ii) filing with the court proof of service with the signed receipt attached; or (d) Designated delivery service which shall be made by (i) within ten days of issuance, sending the summons by a designated delivery service to the defendant, (ii) obtaining a signed delivery receipt showing to whom and where delivered and the date of delivery, and (iii) filing with the court proof of service with a copy of the signed delivery receipt attached. As used in this subdivision, a designated delivery service means a delivery service designated as such pursuant to 26 U.S.C. 7502(f) and a signed delivery receipt includes an electronic or facsimile receipt with an image of the recipient's signature. (2) Failure to make service by the method elected by the plaintiff does not affect the validity of the service. (3) The State Court Administrator shall maintain on the website of the Supreme Court a list of designated delivery services.",
+      "text_sha256": "ad60f7e9be73f5fdd411737b29e50056b03873bff23f6f20d17e7873dd12dfa4",
+      "publisher_sha256": "3d5402361b6fba4b65da01c900ef1e04c537592bf4bb1461fda0c1c81bf4cdb0",
+      "retrieved_at": "2026-11-21T17:24:47.519703+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Nebraska Legislature statutory section 25-505.01; excludes annotations"
+    },
+    "af4114da77ee0a68fff638865ad385": {
+      "source_id": "US-NE:summons_contents:0e78b6e6e197",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 25-504.01",
+      "text": "A copy of the complaint shall be served with the summons, except when service is by publication. The plaintiff shall deliver to the clerk sufficient copies of the complaint at the time it is filed.",
+      "text_sha256": "0872a3474cced96a2c7c86f65eb523054af3ff8531af50b5aef0de0a2846de5f",
+      "publisher_sha256": "2c333edd14254e605b65d5576995c06d6fc8a7c2ad27da214b3b5d066f4563be",
+      "retrieved_at": "2026-11-21T17:24:48.209114+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Nebraska Legislature statutory section 25-504.01; excludes annotations"
+    },
+    "83a9176312e937d4d949780b70785b": {
+      "source_id": "US-NE:service_time_limit:5a3a3342e805",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 25-217(2)–(3)",
+      "text": "(2) Each defendant in the action must be properly served within one hundred eighty days of the commencement of the action. If the action is stayed or enjoined during the one-hundred-eighty-day period, then any defendant who was not properly served before the action was stayed or enjoined must be properly served within ninety days after the stay or injunction is terminated or modified so as to allow the action to proceed. (3) If any defendant is not properly served within the time specified by subsection (2) of this section then the action against that defendant is dismissed by operation of law. The dismissal is without prejudice and becomes effective on the day after the time for service expires.",
+      "text_sha256": "33be829724a944595b1964bab0c8b544a5272d1dddecbac2808d857944856e90",
+      "publisher_sha256": "f80068943efdb67eb6045a470ff494f5153605abcc8b530d3bfa2ad88d2c185c",
+      "retrieved_at": "2026-11-21T22:06:49.611701+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Nebraska Legislature statutory text, § 25-217(2)–(3); commencement defined in subsection (1)"
+    },
+    "96fdb7d8ad9edb9186dc7d29f9fc86": {
+      "source_id": "US-NE:consumer_agency:c32500d3e531",
+      "authority_type": "statute",
+      "citation": "Neb. Rev. Stat. § 59-1608(1)–(2)",
+      "text": "(1) The Attorney General may bring an action in the name of the state against any person to restrain and prevent the doing of any act prohibited by the Consumer Protection Act. The prevailing party may, in the discretion of the court, recover the costs of such action including a reasonable attorney's fee. (2) The court may make such additional orders or judgments as may be necessary to restore to any person in interest any money or property, real or personal, which may have been acquired by means of any act prohibited in the Consumer Protection Act.",
+      "text_sha256": "745f4a2f44a4e3f9ebf3f3ad3de0bf3c26b66f72ad62b3aa1cb32f7b9d23b971",
+      "publisher_sha256": "a4e1f9266b6085858fab8f14f2218f572f4f617ff7f4b6faaf7f2b0a779609e1",
+      "retrieved_at": "2026-11-22T03:49:55.396641+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Nebraska Legislature, public injunction, costs and restitution under the Consumer Protection Act."
+    },
+    "474c858674157ba087b5b91ce86adc": {
+      "source_id": "US-NE:general_contract_damages:ea0a3d215b8b",
+      "authority_type": "opinion",
+      "citation": "TNT Cattle Co. v. Fife, 304 Neb. 890, 922 (2020)",
+      "text": "In a breach of contract case, the ultimate objective of a damages award is to put the injured party in the same position the injured party would have occupied if the contract had been performed, that is, to make the injured party whole. One injured by a breach of contract is entitled to recover all its damages, including the gains prevented as well as the losses sustained, provided the damages are reasonably certain and such as might be expected to follow the breach. While damages need not be proved with mathematical certainty, neither can they be established by evidence which is speculative and conjectural. Uncertainty as to the fact of whether damages were sustained at all is fatal to recovery, but uncertainty to amount is not if the evidence furnishes a reasonably certain factual basis for computation of the probable loss.",
+      "text_sha256": "f5a9a56e539b82f7f4414feb385971b4e410ac5a150c9e1fd55e11a47df34a22",
+      "publisher_sha256": "b7be9ff5060571eb30394831e239d53d5393039e4b2d6833279c2a119ba6a2f1",
+      "retrieved_at": "2026-11-19T19:39:41.809907+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Certified Nebraska Reports, January 31, 2020",
+      "court": "Nebraska Supreme Court",
+      "decision_date": "2020-01-31",
+      "opinion_role": "majority",
+      "procedural_posture": "Appellate review of judgment after a bench trial over an oral farm lease, including contract damages."
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_50",
+    "passage_selector": "dd12643ed906b4af5b2c4ecbd93c72",
+    "source_id": "US-NE:fault:c9852be1156d",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

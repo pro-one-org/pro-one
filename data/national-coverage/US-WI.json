@@ -1,0 +1,2113 @@
+{
+  "jurisdiction": "US-WI",
+  "version": "1",
+  "sources": {
+    "US-WI:statutes:6ce7a5dca7b2": {
+      "category": "statutes",
+      "title": "Wisconsin Statutes",
+      "url": "http://www.legis.state.wi.us/rsb/stats.html",
+      "directory": "codes",
+      "locator": "Wisconsin"
+    },
+    "US-WI:constitution:ee1e8a9035ad": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.legis.state.wi.us/rsb/2wiscon.html",
+      "directory": "codes",
+      "locator": "Wisconsin"
+    },
+    "US-WI:legislature:e1fbb7b32f17": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://legis.wisconsin.gov/",
+      "directory": "codes",
+      "locator": "Wisconsin"
+    },
+    "US-WI:labor_agency:422d69d25bf8": {
+      "category": "labor_agency",
+      "title": "dwd.wisconsin.gov",
+      "url": "https://dwd.wisconsin.gov/",
+      "directory": "labor",
+      "locator": "Wisconsin"
+    },
+    "US-WI:commercial_code:c10807bfd00a": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code (Chapters 401-411)",
+      "url": "http://docs.legis.wisconsin.gov/statutes/prefaces/toc",
+      "directory": "ucc",
+      "locator": "Wisconsin"
+    },
+    "US-WI:civil_rules:c10807bfd00a": {
+      "category": "civil_rules",
+      "title": "Civil Procedure (Chapters 801-847)",
+      "url": "http://docs.legis.wisconsin.gov/statutes/prefaces/toc",
+      "directory": "procedure",
+      "locator": "Wisconsin"
+    },
+    "US-WI:consumer_agency:c3a79daf4a93": {
+      "category": "consumer_agency",
+      "title": "Wisconsin (WI)",
+      "url": "https://datcp.wi.gov/Pages/Programs_Services/ConsumerProtection.aspx",
+      "directory": "consumer",
+      "locator": "Wisconsin (WI)"
+    },
+    "US-WI:judiciary:144748f8f16d": {
+      "category": "judiciary",
+      "title": "Court System",
+      "url": "http://www.wicourts.gov/",
+      "directory": "doj-WI",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-WI:court_directory:ed1bc35b2b54": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://www.wicourts.gov/courts/supreme/index.htm",
+      "directory": "doj-WI",
+      "locator": "Supreme Court"
+    },
+    "US-WI:court_directory:5230275b7abf": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "http://www.wicourts.gov/courts/appeals/index.htm",
+      "directory": "doj-WI",
+      "locator": "Court of Appeals"
+    },
+    "US-WI:court_directory:84fe33228579": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "http://www.wicourts.gov/courts/circuit/index.htm",
+      "directory": "doj-WI",
+      "locator": "Circuit Courts"
+    },
+    "US-WI:court_directory:6d383616cf0a": {
+      "category": "court_directory",
+      "title": "Municipal Courts",
+      "url": "http://www.wicourts.gov/courts/municipal/index.htm",
+      "directory": "doj-WI",
+      "locator": "Municipal Courts"
+    },
+    "US-WI:court_directory:9534b09dce75": {
+      "category": "court_directory",
+      "title": "Court System Directories",
+      "url": "https://www.wicourts.gov/contact/directories.htm",
+      "directory": "doj-WI",
+      "locator": "Court System Directories"
+    },
+    "US-WI:forms:d3001de5c157": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "http://www.wicourts.gov/forms1/index.htm",
+      "directory": "doj-WI",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-WI:forms:5a88b7998497": {
+      "category": "forms",
+      "title": "Court of Appeals Forms",
+      "url": "http://www.wicourts.gov/forms1/appeals.htm",
+      "directory": "doj-WI",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-WI:forms:83acaf408b60": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "http://wilawlibrary.gov/topics/wiforms.php",
+      "directory": "doj-WI",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-WI:constitution:d9233852efbc": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://docs.legis.wisconsin.gov/constitution",
+      "directory": "doj-WI",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-WI:statutes:726fb730c03c": {
+      "category": "statutes",
+      "title": "Statutes",
+      "url": "https://docs.legis.wisconsin.gov/statutes",
+      "directory": "doj-WI",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-WI:regulations:16c282558682": {
+      "category": "regulations",
+      "title": "Administrative Code and Register",
+      "url": "https://docs.legis.wisconsin.gov/code",
+      "directory": "doj-WI",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-WI:pi_limitations:a89fb6009660": {
+      "category": "pi_limitations",
+      "title": "Wis. Stat. § 893.54(1m)(a)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/v/54",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/v/54",
+        "retrieved_at": "2026-11-17T19:34:05.848111+00:00",
+        "http_status": "200",
+        "sha256": "bf3cc4dda04bf46158a0092188030b3a216bdeb4e71d33731988e5e6502714bd",
+        "health": "manual_review_required"
+      }
+    },
+    "US-WI:written_contract_limitations:24e8eab97bde": {
+      "category": "written_contract_limitations",
+      "title": "Wis. Stat. § 893.43(1)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/iv/43",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/iv/43",
+        "retrieved_at": "2026-11-17T19:34:05.399197+00:00",
+        "http_status": "200",
+        "sha256": "f0747c61b6f7fd8b0bc995db4b1d8961e82a9a56bea01dc91f9f8fb973dfd470",
+        "health": "manual_review_required"
+      }
+    },
+    "US-WI:oral_contract_limitations:24e8eab97bde": {
+      "category": "oral_contract_limitations",
+      "title": "Wis. Stat. § 893.43(1)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/iv/43",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/iv/43",
+        "retrieved_at": "2026-11-17T19:34:05.399197+00:00",
+        "http_status": "200",
+        "sha256": "f0747c61b6f7fd8b0bc995db4b1d8961e82a9a56bea01dc91f9f8fb973dfd470",
+        "health": "manual_review_required"
+      }
+    },
+    "US-WI:small_claims:8418a4a8c3a6": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.wicourts.gov/forms1/circuit/ccform.jsp?FormName=SC-500",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.wicourts.gov/forms1/circuit/ccform.jsp?FormName=SC-500",
+        "retrieved_at": "2026-11-17T19:43:10.913309+00:00",
+        "http_status": "200",
+        "sha256": "8aee17d9dc30607adf5815753a74ae1d48748f0e3f8b7dc8091aa01104257089",
+        "health": "manual_review_required"
+      }
+    },
+    "US-WI:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 30"
+    },
+    "US-WI:wageLaw:a8e519e91376": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://dwd.wisconsin.gov/er/labor-standards/wages-deductions/payment-collection",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://dwd.wisconsin.gov/er/labor-standards/wages-deductions/payment-collection",
+        "retrieved_at": "2026-11-17T19:41:53.817621+00:00",
+        "http_status": "200",
+        "sha256": "b84d093de934029c187103a8aca466d8eda088d5bf0811b4c61dc457bae82f84",
+        "health": "manual_review_required"
+      }
+    },
+    "US-WI:consumerLaw:694f8e4f6540": {
+      "category": "consumerLaw",
+      "title": "Consumer protection publication",
+      "url": "https://datcp.wi.gov/Pages/About_Us/BCPApplicableLaws.aspx",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://datcp.wi.gov/Pages/About_Us/BCPApplicableLaws.aspx",
+        "retrieved_at": "2026-11-17T19:41:52.123492+00:00",
+        "http_status": "200",
+        "sha256": "774f5aacdb1661415d239626075d7cf4ce81fc6d34373c1b499af541c3f6a8e1",
+        "health": "manual_review_required"
+      }
+    },
+    "US-WI:consumerLaw:c7eedd2e885d": {
+      "title": "Wis. Stat. § 100.18",
+      "category": "consumerLaw",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/100/18",
+      "directory": "consumer_statutes_index",
+      "locator": "Wis. Stat. § 100.18",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-WI:contract_formation:7412e5b21a00": {
+      "category": "contract_formation",
+      "title": "Wis. Stat. § 402.204(1)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/402/ii/204",
+      "locator": "Wis. Stat. § 402.204(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:33:50.203744+00:00",
+        "sha256": "a5589c1a94f177267b2571515e52ace51cbb505fcb7120304d6a824fbddba4e1"
+      }
+    },
+    "US-WI:wage_enforcement:6449d10a3cb0": {
+      "category": "wage_enforcement",
+      "title": "Wis. Stat. § 109.03(5)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/109/03",
+      "locator": "Wis. Stat. § 109.03(5)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:34:37.296261+00:00",
+        "sha256": "cddec0e25ef779c1551e00cc20a02223dc40b618fdcecc25266675305ab89cbe"
+      }
+    },
+    "US-WI:deposit:f0cca8769b8b": {
+      "category": "deposit",
+      "title": "Wis. Stat. § 704.28(3)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/704/28",
+      "locator": "Wis. Stat. § 704.28(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:34:37.385063+00:00",
+        "sha256": "99e104e115d6ab1e9807a6e702c2a1e9ef2286a89256a4bdbaa7c620349b3eaa"
+      }
+    },
+    "US-WI:debtLaw:32c0a96bc26e": {
+      "category": "debtLaw",
+      "title": "Wis. Stat. § 427.104(2)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/427/104",
+      "locator": "Wis. Stat. § 427.104(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:34:36.512731+00:00",
+        "sha256": "dc47d4fdf7bf2b2f3b6e1549ffc5d3d2af2aeca851926490a36d0fa0db394846"
+      }
+    },
+    "US-WI:response:116890ab0f48": {
+      "category": "response",
+      "title": "Wis. Stat. § 802.06(1)(a)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/802/06",
+      "locator": "Wis. Stat. § 802.06(1)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:34:38.347396+00:00",
+        "sha256": "bfa72105507646181e88714e930eb442527023f848e06155ad15a55c72ddbc65"
+      }
+    },
+    "US-WI:fault:4541084e4c55": {
+      "category": "fault",
+      "title": "Wis. Stat. § 895.045(1)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/895/i/045",
+      "locator": "Wis. Stat. § 895.045(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:36:53.408345+00:00",
+        "sha256": "4b6e83e7f0c00276c3fd02fa4e9140085989e4c85d47feeaac93e54e75625b83"
+      }
+    },
+    "US-WI:commencement:8245bd4f7cb8": {
+      "category": "commencement",
+      "title": "Wis. Stat. § 801.02(1)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/801/02",
+      "locator": "Wis. Stat. § 801.02(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:55.516690+00:00",
+        "sha256": "46b5426884546975d997291fd55bbc874cf81b62f0a08e584aebee3dba4e6591"
+      }
+    },
+    "US-WI:consumerLaw:dee27fe3385f": {
+      "category": "consumerLaw",
+      "title": "Wis. Stat. § 100.18(1)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/100/18",
+      "locator": "Wis. Stat. § 100.18(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:07:30.073902+00:00",
+        "sha256": "c5ea40eb8ef1d61f44275f1815ad064395956018ca4e2ccb2efe714107016e0d"
+      }
+    },
+    "US-WI:consumer_private_action:493257048e4f": {
+      "category": "consumer_private_action",
+      "title": "Wis. Stat. § 100.18(11)(b)2.",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/100/18",
+      "locator": "Wis. Stat. § 100.18(11)(b)2.",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:07:30.073902+00:00",
+        "sha256": "c5ea40eb8ef1d61f44275f1815ad064395956018ca4e2ccb2efe714107016e0d"
+      }
+    },
+    "US-WI:habitability:60dc978b8833": {
+      "category": "habitability",
+      "title": "Wis. Stat. § 704.07(2)(a)(intro.)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/704/07",
+      "locator": "Wis. Stat. § 704.07(2)(a)(intro.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:07:29.019137+00:00",
+        "sha256": "98587c9726218a62f74008c247219679c04e4479cdbd1133b3573e1ff00dbc1a"
+      }
+    },
+    "US-WI:habitability:1b1b19023c4c": {
+      "category": "habitability",
+      "title": "Wis. Stat. § 704.07(2)(a)1.",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/704/07",
+      "locator": "Wis. Stat. § 704.07(2)(a)1.",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:07:29.019137+00:00",
+        "sha256": "98587c9726218a62f74008c247219679c04e4479cdbd1133b3573e1ff00dbc1a"
+      }
+    },
+    "US-WI:habitability:3eb8147526ee": {
+      "category": "habitability",
+      "title": "Wis. Stat. § 704.07(2)(a)2.",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/704/07",
+      "locator": "Wis. Stat. § 704.07(2)(a)2.",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:07:29.019137+00:00",
+        "sha256": "98587c9726218a62f74008c247219679c04e4479cdbd1133b3573e1ff00dbc1a"
+      }
+    },
+    "US-WI:service:cc7b362a03ad": {
+      "category": "service",
+      "title": "Wis. Stat. § 801.11(1)(intro.)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/801/11",
+      "locator": "Wis. Stat. § 801.11(1)(intro.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:07:30.040195+00:00",
+        "sha256": "7853ec44d9149379a1572ee3064dcabebff5c1932ed1ace0f18f81c6626bbd7f"
+      }
+    },
+    "US-WI:service:04e2b542e947": {
+      "category": "service",
+      "title": "Wis. Stat. § 801.11(1)(a)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/801/11",
+      "locator": "Wis. Stat. § 801.11(1)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:07:30.040195+00:00",
+        "sha256": "7853ec44d9149379a1572ee3064dcabebff5c1932ed1ace0f18f81c6626bbd7f"
+      }
+    },
+    "US-WI:small_claims:feffebc10c98": {
+      "category": "small_claims",
+      "title": "Wis. Stat. § 799.01(1)(a)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/799/01",
+      "locator": "Wis. Stat. § 799.01(1)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:07:30.071317+00:00",
+        "sha256": "a539ed47704b09783e21641d5f825a77ca5870069c7d5c17066ccae923ba9c0b"
+      }
+    },
+    "US-WI:venue:9d4033fbddb8": {
+      "category": "venue",
+      "title": "Wis. Stat. § 801.50(2)(a)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/801/50",
+      "locator": "Wis. Stat. § 801.50(2)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:07:29.806662+00:00",
+        "sha256": "32cbeadbf35091b6744c3556f1e631f416c6da8d0fdddd97b2362879439d1041"
+      }
+    },
+    "US-WI:contract_damages:dee4288e3c19": {
+      "category": "contract_damages",
+      "title": "Wis. Stat. § 402.714(1)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/402/vii/714",
+      "locator": "Wis. Stat. § 402.714(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:07:30.825716+00:00",
+        "sha256": "a92d22cff34e6a9d60268f999ecbf6b17d7cadf57c11a43bc9703c60e3bca110"
+      }
+    },
+    "US-WI:contract_damages:1e0026d2c2f6": {
+      "category": "contract_damages",
+      "title": "Wis. Stat. § 402.714(2)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/402/vii/714",
+      "locator": "Wis. Stat. § 402.714(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:07:30.825716+00:00",
+        "sha256": "a92d22cff34e6a9d60268f999ecbf6b17d7cadf57c11a43bc9703c60e3bca110"
+      }
+    },
+    "US-WI:contract_damages:64ada33639bf": {
+      "category": "contract_damages",
+      "title": "Wis. Stat. § 402.714(3)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/402/vii/714",
+      "locator": "Wis. Stat. § 402.714(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:07:30.825716+00:00",
+        "sha256": "a92d22cff34e6a9d60268f999ecbf6b17d7cadf57c11a43bc9703c60e3bca110"
+      }
+    },
+    "US-WI:tenancy_notice:afc18c4e35bc": {
+      "category": "tenancy_notice",
+      "title": "Wis. Stat. § 704.17(2)(a)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/704/17",
+      "locator": "Wis. Stat. § 704.17(2)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:07:31.356155+00:00",
+        "sha256": "5e6605de6a9b0e6b08ab15d2fe4ed1c679a338beda2a91fdff04c6592737bf84"
+      }
+    },
+    "US-WI:pi_limitations:fb42aa31d052": {
+      "category": "pi_limitations",
+      "title": "Wis. Stat. § 893.54(1m)(intro.)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/v/54",
+      "locator": "Wis. Stat. § 893.54(1m)(intro.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:28.592484+00:00",
+        "sha256": "bf3cc4dda04bf46158a0092188030b3a216bdeb4e71d33731988e5e6502714bd"
+      }
+    },
+    "US-WI:pi_limitations:a71a9c5b8ec3": {
+      "category": "pi_limitations",
+      "title": "Wis. Stat. § 893.54(1m)(a)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/v/54",
+      "locator": "Wis. Stat. § 893.54(1m)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:28.592484+00:00",
+        "sha256": "bf3cc4dda04bf46158a0092188030b3a216bdeb4e71d33731988e5e6502714bd"
+      }
+    },
+    "US-WI:wrongful_death_limitations:a7ac766893ce": {
+      "category": "wrongful_death_limitations",
+      "title": "Wis. Stat. § 893.54(2m)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/v/54",
+      "locator": "Wis. Stat. § 893.54(2m)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:28.592484+00:00",
+        "sha256": "bf3cc4dda04bf46158a0092188030b3a216bdeb4e71d33731988e5e6502714bd"
+      }
+    },
+    "US-WI:general_contract_limitations:a2e2b485cd9c": {
+      "category": "general_contract_limitations",
+      "title": "Wis. Stat. § 893.43(1)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/iv/43",
+      "locator": "Wis. Stat. § 893.43(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:35:43.285618+00:00",
+        "sha256": "f0747c61b6f7fd8b0bc995db4b1d8961e82a9a56bea01dc91f9f8fb973dfd470"
+      }
+    },
+    "US-WI:general_contract_limitations:91687d8a5b93": {
+      "category": "general_contract_limitations",
+      "title": "Wis. Stat. § 893.43(2)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/893/iv/43",
+      "locator": "Wis. Stat. § 893.43(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:35:43.285618+00:00",
+        "sha256": "f0747c61b6f7fd8b0bc995db4b1d8961e82a9a56bea01dc91f9f8fb973dfd470"
+      }
+    },
+    "US-WI:negligence_elements:eaabcd7b2f39": {
+      "category": "negligence_elements",
+      "title": "Hoida, Inc. v. M&I Midstate Bank, 2006 WI 69, ¶ 23",
+      "url": "https://www.wicourts.gov/sc/opinion/DisplayDocument.pdf?content=pdf&seqNo=25525",
+      "locator": "Hoida, Inc. v. M&I Midstate Bank, 2006 WI 69, ¶ 23",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:29:40.322652+00:00",
+        "sha256": "6cb6795c7a2653c469138a5d4eca28d27556621a6ab7b09d47d7df4cc3567fad"
+      }
+    },
+    "US-WI:habitability:a4b606f2767a": {
+      "category": "habitability",
+      "title": "Wis. Stat. § 704.07(1)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/704/07",
+      "locator": "Wis. Stat. § 704.07(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:07:29.019137+00:00",
+        "sha256": "98587c9726218a62f74008c247219679c04e4479cdbd1133b3573e1ff00dbc1a"
+      }
+    },
+    "US-WI:habitability:b4583a4a1a6d": {
+      "category": "habitability",
+      "title": "Wis. Stat. § 704.07(2)(b)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/704/07",
+      "locator": "Wis. Stat. § 704.07(2)(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:07:29.019137+00:00",
+        "sha256": "98587c9726218a62f74008c247219679c04e4479cdbd1133b3573e1ff00dbc1a"
+      }
+    },
+    "US-WI:habitability:29676931a5da": {
+      "category": "habitability",
+      "title": "Wis. Stat. § 704.07(2)(c)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/704/07",
+      "locator": "Wis. Stat. § 704.07(2)(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:07:29.019137+00:00",
+        "sha256": "98587c9726218a62f74008c247219679c04e4479cdbd1133b3573e1ff00dbc1a"
+      }
+    },
+    "US-WI:e_filing:926ba58d3e2b": {
+      "category": "e_filing",
+      "title": "Wis. Stat. § 801.18(3)(a)(intro.)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/801/18",
+      "locator": "Wis. Stat. § 801.18(3)(a)(intro.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:56:55.366634+00:00",
+        "sha256": "5d120f15916b752b0fd04cbe3555500ac2ce574c6eb871662cabb849a643bfab"
+      }
+    },
+    "US-WI:e_filing:962e2a46ea13": {
+      "category": "e_filing",
+      "title": "Wis. Stat. § 801.18(3)(a)1.",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/801/18",
+      "locator": "Wis. Stat. § 801.18(3)(a)1.",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:56:55.366634+00:00",
+        "sha256": "5d120f15916b752b0fd04cbe3555500ac2ce574c6eb871662cabb849a643bfab"
+      }
+    },
+    "US-WI:e_filing:d9aeefbc2a24": {
+      "category": "e_filing",
+      "title": "Wis. Stat. § 801.18(3)(a)2.",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/801/18",
+      "locator": "Wis. Stat. § 801.18(3)(a)2.",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:56:55.366634+00:00",
+        "sha256": "5d120f15916b752b0fd04cbe3555500ac2ce574c6eb871662cabb849a643bfab"
+      }
+    },
+    "US-WI:e_filing:a2142be7cd43": {
+      "category": "e_filing",
+      "title": "Wis. Stat. § 801.18(3)(a)3.",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/801/18",
+      "locator": "Wis. Stat. § 801.18(3)(a)3.",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:56:55.366634+00:00",
+        "sha256": "5d120f15916b752b0fd04cbe3555500ac2ce574c6eb871662cabb849a643bfab"
+      }
+    },
+    "US-WI:e_filing:bcbe7812d95d": {
+      "category": "e_filing",
+      "title": "Wis. Stat. § 801.18(3)(b)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/801/18",
+      "locator": "Wis. Stat. § 801.18(3)(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:56:55.366634+00:00",
+        "sha256": "5d120f15916b752b0fd04cbe3555500ac2ce574c6eb871662cabb849a643bfab"
+      }
+    },
+    "US-WI:e_filing:ec1a57512e94": {
+      "category": "e_filing",
+      "title": "Wis. Stat. § 801.18(3)(c)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/801/18",
+      "locator": "Wis. Stat. § 801.18(3)(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:56:55.366634+00:00",
+        "sha256": "5d120f15916b752b0fd04cbe3555500ac2ce574c6eb871662cabb849a643bfab"
+      }
+    },
+    "US-WI:fees:12dee82a4194": {
+      "category": "fees",
+      "title": "Wis. Stat. § 814.61(1)(a)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/814/ii/61",
+      "locator": "Wis. Stat. § 814.61(1)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:57:42.721769+00:00",
+        "sha256": "1d99351cf19196a285d599f5e2de74fe93e05559b34b600f3178f00ed802b77d"
+      }
+    },
+    "US-WI:wageLaw:fa7c9ba46eed": {
+      "category": "wageLaw",
+      "title": "Wis. Stat. § 109.01(2)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/109",
+      "locator": "Wis. Stat. § 109.01(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:31:43.160381+00:00",
+        "sha256": "234875a608a4f33dcdac9786b4fe586ab75dd8e9b50cc0c426d012e4f3fa2644"
+      }
+    },
+    "US-WI:wageLaw:72f03a586fd5": {
+      "category": "wageLaw",
+      "title": "Wis. Stat. § 109.01(3)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/109",
+      "locator": "Wis. Stat. § 109.01(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:31:43.160381+00:00",
+        "sha256": "234875a608a4f33dcdac9786b4fe586ab75dd8e9b50cc0c426d012e4f3fa2644"
+      }
+    },
+    "US-WI:wageLaw:d84a4431dd72": {
+      "category": "wageLaw",
+      "title": "Wis. Stat. § 109.03(1)(intro.)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/109",
+      "locator": "Wis. Stat. § 109.03(1)(intro.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:31:43.160381+00:00",
+        "sha256": "234875a608a4f33dcdac9786b4fe586ab75dd8e9b50cc0c426d012e4f3fa2644"
+      }
+    },
+    "US-WI:wageLaw:f8b66871ca24": {
+      "category": "wageLaw",
+      "title": "Wis. Stat. § 109.03(1)(a)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/109",
+      "locator": "Wis. Stat. § 109.03(1)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:31:43.160381+00:00",
+        "sha256": "234875a608a4f33dcdac9786b4fe586ab75dd8e9b50cc0c426d012e4f3fa2644"
+      }
+    },
+    "US-WI:wageLaw:0c97f922dfa8": {
+      "category": "wageLaw",
+      "title": "Wis. Stat. § 109.03(1)(b)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/109",
+      "locator": "Wis. Stat. § 109.03(1)(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:31:43.160381+00:00",
+        "sha256": "234875a608a4f33dcdac9786b4fe586ab75dd8e9b50cc0c426d012e4f3fa2644"
+      }
+    },
+    "US-WI:wageLaw:b0d42abb475d": {
+      "category": "wageLaw",
+      "title": "Wis. Stat. § 109.03(1)(c)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/109",
+      "locator": "Wis. Stat. § 109.03(1)(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:31:43.160381+00:00",
+        "sha256": "234875a608a4f33dcdac9786b4fe586ab75dd8e9b50cc0c426d012e4f3fa2644"
+      }
+    },
+    "US-WI:wageLaw:19a9c5527e5b": {
+      "category": "wageLaw",
+      "title": "Wis. Stat. § 109.03(1)(d)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/109",
+      "locator": "Wis. Stat. § 109.03(1)(d)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:31:43.160381+00:00",
+        "sha256": "234875a608a4f33dcdac9786b4fe586ab75dd8e9b50cc0c426d012e4f3fa2644"
+      }
+    },
+    "US-WI:wageLaw:67133dee5f00": {
+      "category": "wageLaw",
+      "title": "Wis. Stat. § 109.03(1)(e)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/109",
+      "locator": "Wis. Stat. § 109.03(1)(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:31:43.160381+00:00",
+        "sha256": "234875a608a4f33dcdac9786b4fe586ab75dd8e9b50cc0c426d012e4f3fa2644"
+      }
+    },
+    "US-WI:wage_separation:b2873ab5af3a": {
+      "category": "wage_separation",
+      "title": "Wis. Stat. § 109.03(2)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/109",
+      "locator": "Wis. Stat. § 109.03(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:31:43.160381+00:00",
+        "sha256": "234875a608a4f33dcdac9786b4fe586ab75dd8e9b50cc0c426d012e4f3fa2644"
+      }
+    },
+    "US-WI:wage_separation:8974d69452bb": {
+      "category": "wage_separation",
+      "title": "Wis. Stat. § 109.03(4)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/109",
+      "locator": "Wis. Stat. § 109.03(4)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:31:43.160381+00:00",
+        "sha256": "234875a608a4f33dcdac9786b4fe586ab75dd8e9b50cc0c426d012e4f3fa2644"
+      }
+    },
+    "US-WI:debt_private_action:9aee732174e6": {
+      "category": "debt_private_action",
+      "title": "Wis. Stat. § 427.105(1)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/427/105",
+      "locator": "Wis. Stat. § 427.105(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:49:01.870009+00:00",
+        "sha256": "41e56a5bf3c27b86b63b07335e332dee3d4d7eeb2dcb9860163efb2dd8e6849d"
+      }
+    },
+    "US-WI:debtLaw:ca13879f838e": {
+      "category": "debtLaw",
+      "title": "Wis. Stat. § 427.103(2)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/427/103",
+      "locator": "Wis. Stat. § 427.103(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:49:01.820767+00:00",
+        "sha256": "94cd05159f4a335586b6ce76edc4668f5607ef80b8b93dd7335018133d7c6869"
+      }
+    },
+    "US-WI:debtLaw:03eab54a63dc": {
+      "category": "debtLaw",
+      "title": "Wis. Stat. § 427.103(3)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/427/103",
+      "locator": "Wis. Stat. § 427.103(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:49:01.820767+00:00",
+        "sha256": "94cd05159f4a335586b6ce76edc4668f5607ef80b8b93dd7335018133d7c6869"
+      }
+    },
+    "US-WI:debt_cure_notice:7dfa7f40121c": {
+      "category": "debt_cure_notice",
+      "title": "Wis. Stat. § 425.104(1)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/425/i/104",
+      "locator": "Wis. Stat. § 425.104(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:47:11.800439+00:00",
+        "sha256": "8d76cc48ed3786f4c9427f7c557697d826cdf3419d94c03ae2dcead1184ab125"
+      }
+    },
+    "US-WI:debt_cure_notice:dbcbf638e2eb": {
+      "category": "debt_cure_notice",
+      "title": "Wis. Stat. § 425.104(2)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/425/i/104",
+      "locator": "Wis. Stat. § 425.104(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:47:11.800439+00:00",
+        "sha256": "8d76cc48ed3786f4c9427f7c557697d826cdf3419d94c03ae2dcead1184ab125"
+      }
+    },
+    "US-WI:debt_cure_notice:e582405c07a8": {
+      "category": "debt_cure_notice",
+      "title": "Wis. Stat. § 425.105(1)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/425/i/105",
+      "locator": "Wis. Stat. § 425.105(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:47:11.699656+00:00",
+        "sha256": "2bdd3b011d2864cb632d40ce18eec4bc7bf1c2c9ca6d0ba52b3fd8f985ec2c0c"
+      }
+    },
+    "US-WI:debt_cure_notice:6d93fc9a4031": {
+      "category": "debt_cure_notice",
+      "title": "Wis. Stat. § 425.105(2)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/425/i/105",
+      "locator": "Wis. Stat. § 425.105(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:47:11.699656+00:00",
+        "sha256": "2bdd3b011d2864cb632d40ce18eec4bc7bf1c2c9ca6d0ba52b3fd8f985ec2c0c"
+      }
+    },
+    "US-WI:debtLaw:deef7cba0ab4": {
+      "category": "debtLaw",
+      "title": "Wis. Stat. § 427.104(1)(intro.)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/427/104",
+      "locator": "Wis. Stat. § 427.104(1)(intro.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:47:11.722186+00:00",
+        "sha256": "dc47d4fdf7bf2b2f3b6e1549ffc5d3d2af2aeca851926490a36d0fa0db394846"
+      }
+    },
+    "US-WI:debtLaw:b7911537f010": {
+      "category": "debtLaw",
+      "title": "Wis. Stat. § 427.104(1)(j)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/427/104",
+      "locator": "Wis. Stat. § 427.104(1)(j)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:47:11.722186+00:00",
+        "sha256": "dc47d4fdf7bf2b2f3b6e1549ffc5d3d2af2aeca851926490a36d0fa0db394846"
+      }
+    },
+    "US-WI:debt_harassment:7061a5396690": {
+      "category": "debt_harassment",
+      "title": "Wis. Stat. § 427.104(1)(g)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/427/104",
+      "locator": "Wis. Stat. § 427.104(1)(g)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:47:11.722186+00:00",
+        "sha256": "dc47d4fdf7bf2b2f3b6e1549ffc5d3d2af2aeca851926490a36d0fa0db394846"
+      }
+    },
+    "US-WI:debt_cure_exceptions:329489b0b1f4": {
+      "category": "debt_cure_exceptions",
+      "title": "Wis. Stat. § 425.205(6)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/425/ii/205",
+      "locator": "Wis. Stat. § 425.205(6)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:49:01.818495+00:00",
+        "sha256": "376a9068de185017f53fa912f636cbbc07c26ae42e02f95fa5f987777a8fa92e"
+      }
+    },
+    "US-WI:debt_cure_prior_defaults:c71689ccb732": {
+      "category": "debt_cure_prior_defaults",
+      "title": "Wis. Stat. § 425.105(3)(intro.)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/425/i/105",
+      "locator": "Wis. Stat. § 425.105(3)(intro.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:47:11.699656+00:00",
+        "sha256": "2bdd3b011d2864cb632d40ce18eec4bc7bf1c2c9ca6d0ba52b3fd8f985ec2c0c"
+      }
+    },
+    "US-WI:debt_cure_prior_defaults:2c21ec3e35bf": {
+      "category": "debt_cure_prior_defaults",
+      "title": "Wis. Stat. § 425.105(3)(a)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/425/i/105",
+      "locator": "Wis. Stat. § 425.105(3)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:47:11.699656+00:00",
+        "sha256": "2bdd3b011d2864cb632d40ce18eec4bc7bf1c2c9ca6d0ba52b3fd8f985ec2c0c"
+      }
+    },
+    "US-WI:debt_cure_prior_defaults:287e9929fa65": {
+      "category": "debt_cure_prior_defaults",
+      "title": "Wis. Stat. § 425.105(3)(b)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/425/i/105",
+      "locator": "Wis. Stat. § 425.105(3)(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:47:11.699656+00:00",
+        "sha256": "2bdd3b011d2864cb632d40ce18eec4bc7bf1c2c9ca6d0ba52b3fd8f985ec2c0c"
+      }
+    },
+    "US-WI:debt_cure_prior_defaults:75ec95d5db7a": {
+      "category": "debt_cure_prior_defaults",
+      "title": "Wis. Stat. § 425.105(3)(c)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/425/i/105",
+      "locator": "Wis. Stat. § 425.105(3)(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:47:11.699656+00:00",
+        "sha256": "2bdd3b011d2864cb632d40ce18eec4bc7bf1c2c9ca6d0ba52b3fd8f985ec2c0c"
+      }
+    },
+    "US-WI:debt_cure_exceptions:2adcc91c6a70": {
+      "category": "debt_cure_exceptions",
+      "title": "Wis. Stat. § 425.105(3m)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/425/i/105",
+      "locator": "Wis. Stat. § 425.105(3m)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:47:11.699656+00:00",
+        "sha256": "2bdd3b011d2864cb632d40ce18eec4bc7bf1c2c9ca6d0ba52b3fd8f985ec2c0c"
+      }
+    },
+    "US-WI:debt_cure_exceptions:074a33bad011": {
+      "category": "debt_cure_exceptions",
+      "title": "Wis. Stat. § 425.105(4)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/425/i/105",
+      "locator": "Wis. Stat. § 425.105(4)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:47:11.699656+00:00",
+        "sha256": "2bdd3b011d2864cb632d40ce18eec4bc7bf1c2c9ca6d0ba52b3fd8f985ec2c0c"
+      }
+    },
+    "US-WI:debt_cure_exceptions:87719796d104": {
+      "category": "debt_cure_exceptions",
+      "title": "Wis. Stat. § 425.103(2)(bm)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/425/i/103",
+      "locator": "Wis. Stat. § 425.103(2)(bm)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:47:11.727697+00:00",
+        "sha256": "885db3d45e381eba1705b902b57256399d6fae28e06c7ef545edddd78cd91033"
+      }
+    },
+    "US-WI:service_time_limit:2622237ee341": {
+      "category": "service_time_limit",
+      "title": "Wis. Stat. § 801.02(2)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/801/02",
+      "locator": "Wis. Stat. § 801.02(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:15:24.015211+00:00",
+        "sha256": "46b5426884546975d997291fd55bbc874cf81b62f0a08e584aebee3dba4e6591"
+      }
+    },
+    "US-WI:consumer_agency:b0a0fda960e9": {
+      "category": "consumer_agency",
+      "title": "Wis. Stat. § 100.18(11)(d)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/100/18",
+      "locator": "Wis. Stat. § 100.18(11)(d)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:38:54.344148+00:00",
+        "sha256": "c5ea40eb8ef1d61f44275f1815ad064395956018ca4e2ccb2efe714107016e0d"
+      }
+    },
+    "US-WI:accrual:69d58799a98d": {
+      "category": "accrual",
+      "title": "Christ v. Exxon Mobil Corp., 2015 WI 58, ¶¶ 5–6",
+      "url": "https://www.wicourts.gov/sc/opinion/DisplayDocument.pdf?content=pdf&seqNo=143482",
+      "locator": "Christ v. Exxon Mobil Corp., 2015 WI 58, ¶¶ 5–6",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:20:02.068396+00:00",
+        "sha256": "1c43811a3ed2e2dfb288cbe3de47de0a0269483190045082f599a75e57dca3e1"
+      }
+    },
+    "US-WI:premises:bb19836e7532": {
+      "category": "premises",
+      "title": "Rosario v. Acuity, 2007 WI App 194, ¶ 12",
+      "url": "https://www.wicourts.gov/ca/opinion/DisplayDocument.pdf?content=pdf&seqNo=29585",
+      "locator": "Rosario v. Acuity, 2007 WI App 194, ¶ 12",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:02:56.436198+00:00",
+        "sha256": "8c0dfdfffce82058f3d948b135e47ad80b1c97cd12da6a0cb8fe35f37137cad1"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-WI:court:66e3f18e1935",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-WI:court_directory:ed1bc35b2b54"
+    },
+    {
+      "id": "US-WI:court:2fbbafaeaf8a",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-WI:court_directory:5230275b7abf"
+    },
+    {
+      "id": "US-WI:court:9e5c506dd312",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-WI:court_directory:84fe33228579"
+    },
+    {
+      "id": "US-WI:court:ca6d60ee4177",
+      "name": "Municipal Courts",
+      "level": "trial_directory",
+      "source_id": "US-WI:court_directory:6d383616cf0a"
+    },
+    {
+      "id": "US-WI:court:9279123ee7c4",
+      "name": "Court System Directories",
+      "level": "trial_directory",
+      "source_id": "US-WI:court_directory:9534b09dce75"
+    },
+    {
+      "id": "US-WI:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-WI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-WI:court:786757bbdf47",
+      "name": "Municipal",
+      "level": "limited_trial",
+      "source_id": "US-WI:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Wis. Stat. § 893.54(1m)(a)",
+      "source_id": "US-WI:pi_limitations:a89fb6009660",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Wis. Stat. § 893.43(1)",
+      "source_id": "US-WI:written_contract_limitations:24e8eab97bde",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Wis. Stat. § 893.43(1)",
+      "source_id": "US-WI:oral_contract_limitations:24e8eab97bde",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Wis. Stat. § 799.40. Eviction actions",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Wis. Stat. § 100.18",
+      "source_id": "US-WI:consumerLaw:c7eedd2e885d",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "718302f502fd75f6926f5628a762f4": {
+      "source_id": "US-WI:contract_formation:7412e5b21a00",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 402.204(1)",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "a5589c1a94f177267b2571515e52ace51cbb505fcb7120304d6a824fbddba4e1",
+      "retrieved_at": "2026-11-18T15:33:50.203744+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "publisher_path": "/statutes/statutes/402/ii/204/1",
+      "current_as_of": "2026-11-04",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "49a78bb6b0def4e1859c0574147fca": {
+      "source_id": "US-WI:wage_enforcement:6449d10a3cb0",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 109.03(5)",
+      "text": "Except as provided in sub. (1), no employer may by special contract with employees or by any other means secure exemption from this section. Each employee shall have a right of action against any employer for the full amount of the employee’s wages due on each regular pay day as provided in this section and for increased wages as provided in s. 109.11 (2), in any court of competent jurisdiction. An employee may bring an action against an employer under this subsection without first filing a wage claim with the department under s. 109.09 (1). An employee who brings an action against an employer under this subsection shall have a lien upon all property of the employer, real or personal, located in this state as described in s. 109.09 (2).",
+      "text_sha256": "df8c2e229608cac079ce1365ed3cbab6feb241afb676ddad10347907a1dd0efa",
+      "publisher_sha256": "cddec0e25ef779c1551e00cc20a02223dc40b618fdcecc25266675305ab89cbe",
+      "retrieved_at": "2026-11-18T15:34:37.296261+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "publisher_path": "/statutes/statutes/109/03/5",
+      "current_as_of": "2026-11-04",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "2e3193920c7860f770070a4cbdbfec": {
+      "source_id": "US-WI:deposit:f0cca8769b8b",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 704.28(3)",
+      "text": "This section does not authorize a landlord to withhold any amount from a security deposit for normal wear and tear, or for other damages or losses for which the tenant cannot reasonably be held responsible under applicable law.",
+      "text_sha256": "8af87331954c442821698ef894b00c138cc6194040fe579cac59d85952206355",
+      "publisher_sha256": "99e104e115d6ab1e9807a6e702c2a1e9ef2286a89256a4bdbaa7c620349b3eaa",
+      "retrieved_at": "2026-11-18T15:34:37.385063+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "publisher_path": "/statutes/statutes/704/28/3",
+      "current_as_of": "2026-11-04",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "50ea054a6fb99b4798c5d591e1b8a6": {
+      "source_id": "US-WI:debtLaw:32c0a96bc26e",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 427.104(2)",
+      "text": "If a debt collector is not otherwise in violation of sub. (1) (j) with respect to a consumer credit transaction with a debtor, it is not a violation of this section to send a billing statement or other notice of account to, or to collect the amount due on the account from, the spouse of that debtor, if notice to the debtor’s spouse is provided under s. 766.56.",
+      "text_sha256": "51ef80d4cc3a907fa3dd9f9b47ce06579355da9ae2f1ad8ab4c7191de578d8a2",
+      "publisher_sha256": "dc47d4fdf7bf2b2f3b6e1549ffc5d3d2af2aeca851926490a36d0fa0db394846",
+      "retrieved_at": "2026-11-18T15:34:36.512731+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "publisher_path": "/statutes/statutes/427/104/2",
+      "current_as_of": "2026-11-04",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "e17b66bcb9e22832e2f6d62d6a0f63": {
+      "source_id": "US-WI:response:116890ab0f48",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 802.06(1)(a)",
+      "text": "Except when a court dismisses an action or special proceeding under s. 802.05 (4), a defendant shall serve an answer within 20 days after the service of the complaint upon the defendant. If a guardian ad litem is appointed for a defendant, the guardian ad litem shall have 20 days after appointment to serve the answer. A party served with a pleading stating a cross claim against the party shall serve an answer thereto within 20 days after the service upon the party. The plaintiff shall serve a reply to a counterclaim in the answer within 20 days after service of the answer. The state or an agency of the state or an officer, employee, or agent of the state shall serve an answer to the complaint or to a cross claim or a reply to a counterclaim within 45 days after service of the pleading in which the claim is asserted. If any pleading is ordered by the court, it shall be served within 20 days after service of the order, unless the order otherwise directs. If a defendant in the action is an insurance company, or if any cause of action raised in the original pleading, cross claim, or counterclaim is founded in tort, the periods of time to serve a reply or answer shall be 45 days. The service of a motion permitted under sub. (2) alters these periods of time as follows, unless a different time is fixed by order of the court: if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleading shall be served within 10 days after notice of the court’s action; or if the court grants a motion for a more definite statement, the responsive pleading shall be served within 10 days after the service of the more definite statement.",
+      "text_sha256": "14e5c6984c3ae050faac9448d14321e28c2d72c5bdc6f32e03ba2e5f3c44bda8",
+      "publisher_sha256": "bfa72105507646181e88714e930eb442527023f848e06155ad15a55c72ddbc65",
+      "retrieved_at": "2026-11-18T15:34:38.347396+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "publisher_path": "/statutes/statutes/802/06/1/a",
+      "current_as_of": "2026-11-04",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "cffe4e72856f9d68bf3c27d6b7b2ff": {
+      "source_id": "US-WI:fault:4541084e4c55",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 895.045(1)",
+      "text": "Contributory negligence does not bar recovery in an action by any person or the person’s legal representative to recover damages for negligence resulting in death or in injury to person or property, if that negligence was not greater than the negligence of the person against whom recovery is sought, but any damages allowed shall be diminished in the proportion to the amount of negligence attributed to the person recovering. The negligence of the plaintiff shall be measured separately against the negligence of each person found to be causally negligent. The liability of each person found to be causally negligent whose percentage of causal negligence is less than 51 percent is limited to the percentage of the total causal negligence attributed to that person. A person found to be causally negligent whose percentage of causal negligence is 51 percent or more shall be jointly and severally liable for the damages allowed.",
+      "text_sha256": "86f7a2c4b4786b03452c4e5dc046404fb9031087175ddad0501424974135834c",
+      "publisher_sha256": "4b6e83e7f0c00276c3fd02fa4e9140085989e4c85d47feeaac93e54e75625b83",
+      "retrieved_at": "2026-11-18T15:36:53.408345+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "publisher_path": "/statutes/statutes/895/i/045/1",
+      "current_as_of": "2026-11-04",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "3babb1d2b21006018ba1e9a5806359": {
+      "source_id": "US-WI:commencement:8245bd4f7cb8",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 801.02(1)",
+      "text": "A civil action in which a personal judgment is sought is commenced as to any defendant when a summons and a complaint naming the person as defendant are filed with the court, provided service of an authenticated copy of the summons and of the complaint is made upon the defendant under this chapter within 90 days after filing.",
+      "text_sha256": "682c4285c1934b2bf8008b5db692ff8f88947139cdf26c62b38c32aa5a0d42a8",
+      "publisher_sha256": "46b5426884546975d997291fd55bbc874cf81b62f0a08e584aebee3dba4e6591",
+      "retrieved_at": "2026-11-18T20:45:55.516690+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/801/02/1",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "d86d11ae7f94d2d2d8a62a81d2ae9a": {
+      "source_id": "US-WI:consumerLaw:dee27fe3385f",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 100.18(1)",
+      "text": "No person, firm, corporation or association, or agent or employee thereof, with intent to sell, distribute, increase the consumption of or in any wise dispose of any real estate, merchandise, securities, employment, service, or anything offered by such person, firm, corporation or association, or agent or employee thereof, directly or indirectly, to the public for sale, hire, use or other distribution, or with intent to induce the public in any manner to enter into any contract or obligation relating to the purchase, sale, hire, use or lease of any real estate, merchandise, securities, employment or service, shall make, publish, disseminate, circulate, or place before the public, or cause, directly or indirectly, to be made, published, disseminated, circulated, or placed before the public, in this state, in a newspaper, magazine or other publication, or in the form of a book, notice, handbill, poster, bill, circular, pamphlet, letter, sign, placard, card, label, or over any radio or television station, or in any other way similar or dissimilar to the foregoing, an advertisement, announcement, statement or representation of any kind to the public relating to such purchase, sale, hire, use or lease of such real estate, merchandise, securities, service or employment or to the terms or conditions thereof, which advertisement, announcement, statement or representation contains any assertion, representation or statement of fact which is untrue, deceptive or misleading.",
+      "text_sha256": "46b0d15b4e870b0cd565eecf176e2a903ebb3432115a7f9fe3fb1b3c134c7d0f",
+      "publisher_sha256": "c5ea40eb8ef1d61f44275f1815ad064395956018ca4e2ccb2efe714107016e0d",
+      "retrieved_at": "2026-11-19T19:07:30.073902+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/100/18/1",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "e85c6dd0d6b1a812a32aa535d1296f": {
+      "source_id": "US-WI:consumer_private_action:493257048e4f",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 100.18(11)(b)2.",
+      "text": "Any person suffering pecuniary loss because of a violation of this section by any other person may sue in any court of competent jurisdiction and shall recover such pecuniary loss, together with costs, including reasonable attorney fees, except that no attorney fees may be recovered from a person licensed under ch. 452 while that person is engaged in real estate practice, as defined in s. 452.01 (6). Any person suffering pecuniary loss because of a violation by any other person of any injunction issued under this section may sue for damages therefor in any court of competent jurisdiction and shall recover twice the amount of such pecuniary loss, together with costs, including reasonable attorney fees, except that no attorney fees may be recovered from a person licensed under ch. 452 while that person is engaged in real estate practice, as defined in s. 452.01 (6).",
+      "text_sha256": "f94abf12ccd961092433b3aed02d5a534b3988d6c1ba37f9295627adf9831ad3",
+      "publisher_sha256": "c5ea40eb8ef1d61f44275f1815ad064395956018ca4e2ccb2efe714107016e0d",
+      "retrieved_at": "2026-11-19T19:07:30.073902+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/100/18/11/b/2",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "49d88aa83cc2124da8405b49517b40": {
+      "source_id": "US-WI:habitability:60dc978b8833",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 704.07(2)(a)(intro.)",
+      "text": "Except for repairs made necessary by the negligence of, or improper use of the premises by, the tenant, the landlord has a duty to do all of the following:",
+      "text_sha256": "ea8d5003d3f40f590d920a57294d25ca5e7450dc730306d33391bdf32feb30b2",
+      "publisher_sha256": "98587c9726218a62f74008c247219679c04e4479cdbd1133b3573e1ff00dbc1a",
+      "retrieved_at": "2026-11-19T19:07:29.019137+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/704/07/2/a",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "3e9c70b831177c181a760f8732bd5a": {
+      "source_id": "US-WI:habitability:1b1b19023c4c",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 704.07(2)(a)1.",
+      "text": "Keep in a reasonable state of repair portions of the premises over which the landlord maintains control.",
+      "text_sha256": "91ecb31cf8929d3a43aa1a9836cf162c658f031e58cbb0161e9ed4fd547db4e5",
+      "publisher_sha256": "98587c9726218a62f74008c247219679c04e4479cdbd1133b3573e1ff00dbc1a",
+      "retrieved_at": "2026-11-19T19:07:29.019137+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/704/07/2/a/1",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "6711060b74150f8ad93434751a1596": {
+      "source_id": "US-WI:habitability:3eb8147526ee",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 704.07(2)(a)2.",
+      "text": "Keep in a reasonable state of repair all equipment under the landlord’s control necessary to supply services that the landlord has expressly or impliedly agreed to furnish to the tenant, such as heat, water, elevator, or air conditioning.",
+      "text_sha256": "a31f27bd96d3274606864b32e17e3fc4a8cc81cf9a55f37efb17f1110a298fb4",
+      "publisher_sha256": "98587c9726218a62f74008c247219679c04e4479cdbd1133b3573e1ff00dbc1a",
+      "retrieved_at": "2026-11-19T19:07:29.019137+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/704/07/2/a/2",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "6e2f532e746e15276fd227e2d1c18f": {
+      "source_id": "US-WI:service:cc7b362a03ad",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 801.11(1)(intro.)",
+      "text": "Natural person. Except as provided in sub. (2) upon a natural person:",
+      "text_sha256": "8211f3c3a1c07e3e10820cf97606a1146ce46b1cd07b4a1daf35e6dbe9fc73a1",
+      "publisher_sha256": "7853ec44d9149379a1572ee3064dcabebff5c1932ed1ace0f18f81c6626bbd7f",
+      "retrieved_at": "2026-11-19T19:07:30.040195+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/801/11/1",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "3802706ced7dc93af71d41e3f5e79c": {
+      "source_id": "US-WI:service:04e2b542e947",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 801.11(1)(a)",
+      "text": "By personally serving the summons upon the defendant either within or without this state.",
+      "text_sha256": "b5d2f359b26066948eec6f54e0986763bc8ed7769488ea6d01193ae23ed159ca",
+      "publisher_sha256": "7853ec44d9149379a1572ee3064dcabebff5c1932ed1ace0f18f81c6626bbd7f",
+      "retrieved_at": "2026-11-19T19:07:30.040195+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/801/11/1/a",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "4faa327d747dda2a77bfd1f5058306": {
+      "source_id": "US-WI:small_claims:feffebc10c98",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 799.01(1)(a)",
+      "text": "Eviction actions. Actions for eviction as defined in s. 799.40 regardless of the amount of rent claimed therein.",
+      "text_sha256": "911d0f7235978079db7cca70ed26064a65773d54355fa7796c1444de40976d15",
+      "publisher_sha256": "a539ed47704b09783e21641d5f825a77ca5870069c7d5c17066ccae923ba9c0b",
+      "retrieved_at": "2026-11-19T19:07:30.071317+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/799/01/1/a",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "e0d54b0094366772f1cf8b06afc985": {
+      "source_id": "US-WI:venue:9d4033fbddb8",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 801.50(2)(a)",
+      "text": "In the county where the claim arose;",
+      "text_sha256": "a57f6eca4954481f0e2dbfcb4cb84731e4649a7e308f766897cd306069be2903",
+      "publisher_sha256": "32cbeadbf35091b6744c3556f1e631f416c6da8d0fdddd97b2362879439d1041",
+      "retrieved_at": "2026-11-19T19:07:29.806662+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/801/50/2/a",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "7b345b87593b52804f6a9dd2e148c4": {
+      "source_id": "US-WI:contract_damages:dee4288e3c19",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 402.714(1)",
+      "text": "Where the buyer has accepted goods and given notification (s. 402.607 (3)) the buyer may recover as damages for any nonconformity of tender the loss resulting in the ordinary course of events from the seller’s breach as determined in any manner which is reasonable.",
+      "text_sha256": "e1f9a121051b32f73b65a01a485c17a474ae4ccb4eb62cba5af92277a91139fc",
+      "publisher_sha256": "a92d22cff34e6a9d60268f999ecbf6b17d7cadf57c11a43bc9703c60e3bca110",
+      "retrieved_at": "2026-11-19T19:07:30.825716+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/402/vii/714/1",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "33d2f9845485e3ccbae5e16b3da77d": {
+      "source_id": "US-WI:contract_damages:1e0026d2c2f6",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 402.714(2)",
+      "text": "The measure of damages for breach of warranty is the difference at the time and place of acceptance between the value of the goods accepted and the value they would have had if they had been as warranted, unless special circumstances show proximate damages of a different amount.",
+      "text_sha256": "f3e7022595ae592818eeed4593825edc92b249d6fa454a59cf06af47c1683669",
+      "publisher_sha256": "a92d22cff34e6a9d60268f999ecbf6b17d7cadf57c11a43bc9703c60e3bca110",
+      "retrieved_at": "2026-11-19T19:07:30.825716+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/402/vii/714/2",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "642dbc9bbdfd47817de639b3ddbf94": {
+      "source_id": "US-WI:contract_damages:64ada33639bf",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 402.714(3)",
+      "text": "In a proper case any incidental and consequential damages under s. 402.715 may also be recovered.",
+      "text_sha256": "c9e36dc1cc878bbdf36fe4a685987dcb798dded258257da4b29fbd54eb0637c2",
+      "publisher_sha256": "a92d22cff34e6a9d60268f999ecbf6b17d7cadf57c11a43bc9703c60e3bca110",
+      "retrieved_at": "2026-11-19T19:07:30.825716+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/402/vii/714/3",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "620c3a153fc8bfbfb4e9c02d768b77": {
+      "source_id": "US-WI:tenancy_notice:afc18c4e35bc",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 704.17(2)(a)",
+      "text": "If a tenant under a lease for a term of one year or less, or a year-to-year tenant, fails to pay any installment of rent when due, the tenant’s tenancy is terminated if the landlord gives the tenant notice requiring the tenant to pay rent or vacate on or before a date at least 5 days after the giving of the notice and if the tenant fails to pay accordingly. If a tenant has been given such a notice and has paid the rent on or before the specified date, or been permitted by the landlord to remain in possession contrary to such notice, and if within one year of any prior default in payment of rent for which notice was given the tenant fails to pay a subsequent installment of rent on time, the tenant’s tenancy is terminated if the landlord, while the tenant is in default in payment of rent, gives the tenant notice to vacate on or before a date at least 14 days after the giving of the notice.",
+      "text_sha256": "c9c1e1aea21813c2297ac160ca7f0e42ed32ecd7723d060404b85a146ced8933",
+      "publisher_sha256": "5e6605de6a9b0e6b08ab15d2fe4ed1c679a338beda2a91fdff04c6592737bf84",
+      "retrieved_at": "2026-11-19T19:07:31.356155+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/704/17/2/a",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "fc39881d715010abd8e2de5d2276b1": {
+      "source_id": "US-WI:pi_limitations:fb42aa31d052",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 893.54(1m)(intro.)",
+      "text": "Except as provided in sub. (2m), the following actions shall be commenced within 3 years or be barred:",
+      "text_sha256": "e72413c780f58bc257868edb2e88c95aba7852017dc29177b43750cd255ca8b6",
+      "publisher_sha256": "bf3cc4dda04bf46158a0092188030b3a216bdeb4e71d33731988e5e6502714bd",
+      "retrieved_at": "2026-11-19T19:31:28.592484+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/893/v/54/1m",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "b760263217e436e92150ad92d6efd8": {
+      "source_id": "US-WI:pi_limitations:a71a9c5b8ec3",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 893.54(1m)(a)",
+      "text": "An action to recover damages for injuries to the person, including an action to recover damages for injuries to the person caused or sustained by or arising from an accident involving a motor vehicle.",
+      "text_sha256": "d33cf978dd84c89894a98161430350e6a47301403ba42fdb80d0a3b83411e68e",
+      "publisher_sha256": "bf3cc4dda04bf46158a0092188030b3a216bdeb4e71d33731988e5e6502714bd",
+      "retrieved_at": "2026-11-19T19:31:28.592484+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/893/v/54/1m/a",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "a1616c7febbf58b1d47a6cb4d6d3d4": {
+      "source_id": "US-WI:wrongful_death_limitations:a7ac766893ce",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 893.54(2m)",
+      "text": "An action brought to recover damages for death caused by the wrongful act, neglect, or default of another and arising from an accident involving a motor vehicle shall be commenced within 2 years after the cause of action accrues or be barred.",
+      "text_sha256": "e6626001af1a36dc9271c1aec030572fb78a07b0c9fc4d8210842b60126c5704",
+      "publisher_sha256": "bf3cc4dda04bf46158a0092188030b3a216bdeb4e71d33731988e5e6502714bd",
+      "retrieved_at": "2026-11-19T19:31:28.592484+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/893/v/54/2m",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "f3d761387b34fac6a708191de324f5": {
+      "source_id": "US-WI:general_contract_limitations:a2e2b485cd9c",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 893.43(1)",
+      "text": "Except as provided in sub. (2), an action upon any contract, obligation, or liability, express or implied, including an action to recover fees for professional services, except those mentioned in s. 893.40, shall be commenced within 6 years after the cause of action accrues or be barred.",
+      "text_sha256": "b467ff0eafa03b0e568c9fc615b5959450e80a18775bf29fc595a19b6ada4066",
+      "publisher_sha256": "f0747c61b6f7fd8b0bc995db4b1d8961e82a9a56bea01dc91f9f8fb973dfd470",
+      "retrieved_at": "2026-11-19T19:35:43.285618+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/893/iv/43/1",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "5aa815c118046dc1be4b34060c56f2": {
+      "source_id": "US-WI:general_contract_limitations:91687d8a5b93",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 893.43(2)",
+      "text": "An action upon a motor vehicle insurance policy described in s. 632.32 (1) shall be commenced within 3 years after the cause of action accrues or be barred. A cause of action involving underinsured motorist coverage, as defined in s. 632.32 (2) (d), or uninsured motorist coverage, as defined in s. 632.32 (2) (f), accrues on the date there is final resolution of the underlying cause of action by the injured party against the tortfeasor.",
+      "text_sha256": "55024a460e3b1280b3b99b5a2d9a5d8ff01fd28c692aedca9c2058c64c14f3c4",
+      "publisher_sha256": "f0747c61b6f7fd8b0bc995db4b1d8961e82a9a56bea01dc91f9f8fb973dfd470",
+      "retrieved_at": "2026-11-19T19:35:43.285618+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/893/iv/43/2",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "c7a3d4bd78a297fbd944bf78919006": {
+      "source_id": "US-WI:negligence_elements:eaabcd7b2f39",
+      "authority_type": "opinion",
+      "citation": "Hoida, Inc. v. M&I Midstate Bank, 2006 WI 69, ¶ 23",
+      "text": "We require a plaintiff to plead facts, which if proved true, would establish the following four elements: \"(1) the existence of a duty of care on the part of the defendant, (2) a breach of that duty of care, (3) a causal connection between the defendant's breach of the duty of care and the plaintiff's injury, and (4) actual loss or damage resulting from the [breach].\"",
+      "text_sha256": "a20d17e56936de1422391ec80ef2b2d4375ee21019815dae6cdd79ca35ba8346",
+      "publisher_sha256": "6cb6795c7a2653c469138a5d4eca28d27556621a6ab7b09d47d7df4cc3567fad",
+      "retrieved_at": "2026-11-20T15:29:40.322652+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2006-06-13",
+      "court": "Supreme Court of Wisconsin",
+      "decision_date": "2006-06-13",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of judgment on negligence claims against a lender and title company."
+    },
+    "87f50b92b187f2451018a2db7f69de": {
+      "source_id": "US-WI:habitability:a4b606f2767a",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 704.07(1)",
+      "text": "This section applies to any nonresidential tenancy if there is no contrary provision in writing signed by both parties and to all residential tenancies. An agreement to waive the requirements of this section in a residential tenancy, including an agreement in a rental agreement, is void. Nothing in this section is intended to affect rights and duties arising under other provisions of the statutes.",
+      "text_sha256": "31c1dee5136ed759728065f754f9dab375e34edbf1cbed8f219686711e05265b",
+      "publisher_sha256": "98587c9726218a62f74008c247219679c04e4479cdbd1133b3573e1ff00dbc1a",
+      "retrieved_at": "2026-11-19T19:07:29.019137+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/704/07/1",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "82defac45c55733e7cb1a1841bd96a": {
+      "source_id": "US-WI:habitability:b4583a4a1a6d",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 704.07(2)(b)",
+      "text": "If the premises are part of a building, other parts of which are occupied by one or more other tenants, negligence or improper use by one tenant does not relieve the landlord from the landlord’s duty as to the other tenants to make repairs as provided in par. (a).",
+      "text_sha256": "1812957cb70548dc63b3ce34d700aae0f13dd42827278734208c024c3cd1a7a7",
+      "publisher_sha256": "98587c9726218a62f74008c247219679c04e4479cdbd1133b3573e1ff00dbc1a",
+      "retrieved_at": "2026-11-19T19:07:29.019137+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/704/07/2/b",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "5bec6677b01efe386992a22a3c4b78": {
+      "source_id": "US-WI:habitability:29676931a5da",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 704.07(2)(c)",
+      "text": "If the premises are damaged by fire, water or other casualty, not the result of the negligence or intentional act of the landlord, this subsection is inapplicable and either sub. (3) or (4) governs.",
+      "text_sha256": "ee0267a83bdf0bc80dc8327d1d3d63535fe4f04f219e2244d5b251fc0bd2a48f",
+      "publisher_sha256": "98587c9726218a62f74008c247219679c04e4479cdbd1133b3573e1ff00dbc1a",
+      "retrieved_at": "2026-11-19T19:07:29.019137+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/704/07/2/c",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "d7ecb84025e6ca9b641692eed605e1": {
+      "source_id": "US-WI:e_filing:926ba58d3e2b",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 801.18(3)(a)(intro.)",
+      "text": "The following individuals shall register for access to the electronic filing system prior to filing documents in circuit court:",
+      "text_sha256": "a3f36b8115f4fee4998964578398758d63f1afc8d9f0ca7c64d16977b3c564dc",
+      "publisher_sha256": "5d120f15916b752b0fd04cbe3555500ac2ce574c6eb871662cabb849a643bfab",
+      "retrieved_at": "2026-11-20T15:56:55.366634+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Wisconsin Circuit Court",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/801/18/3/a",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "a8627698885b3cf8b7032f46792a8e": {
+      "source_id": "US-WI:e_filing:962e2a46ea13",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 801.18(3)(a)1.",
+      "text": "Licensed Wisconsin attorneys.",
+      "text_sha256": "6c95b15c8607edf436ab67406e17335f170b85502b4e9fe465f6eb005cbdc304",
+      "publisher_sha256": "5d120f15916b752b0fd04cbe3555500ac2ce574c6eb871662cabb849a643bfab",
+      "retrieved_at": "2026-11-20T15:56:55.366634+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Wisconsin Circuit Court",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/801/18/3/a/1",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "6bc220703889c7c48933a101f6945b": {
+      "source_id": "US-WI:e_filing:d9aeefbc2a24",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 801.18(3)(a)2.",
+      "text": "Attorneys appearing under SCR 10.03 (4).",
+      "text_sha256": "d797ec243e8e01a704981aee776a4c1fbecd36b2a7f0e6412c6a1c38c5b0d1cb",
+      "publisher_sha256": "5d120f15916b752b0fd04cbe3555500ac2ce574c6eb871662cabb849a643bfab",
+      "retrieved_at": "2026-11-20T15:56:55.366634+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Wisconsin Circuit Court",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/801/18/3/a/2",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "48bdb0af5e1d9cb791bdd399dbde7f": {
+      "source_id": "US-WI:e_filing:a2142be7cd43",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 801.18(3)(a)3.",
+      "text": "High-volume filing agents.",
+      "text_sha256": "d3ac969c925a4b530d4233e6fe997f4d7261012d5274962711839d5b08847b5b",
+      "publisher_sha256": "5d120f15916b752b0fd04cbe3555500ac2ce574c6eb871662cabb849a643bfab",
+      "retrieved_at": "2026-11-20T15:56:55.366634+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Wisconsin Circuit Court",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/801/18/3/a/3",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "044b004bc16db6366dff29638fc167": {
+      "source_id": "US-WI:e_filing:bcbe7812d95d",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 801.18(3)(b)",
+      "text": "Parties who are not subject to par. (a) may voluntarily register to use the electronic filing system.",
+      "text_sha256": "7cc566153b496c89c6dcacf852d4f958ec4ae835cb8ba0029c8dc68994fe1564",
+      "publisher_sha256": "5d120f15916b752b0fd04cbe3555500ac2ce574c6eb871662cabb849a643bfab",
+      "retrieved_at": "2026-11-20T15:56:55.366634+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Wisconsin Circuit Court",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/801/18/3/b",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "88b26eb1561b6986b0b3c4f84c6934": {
+      "source_id": "US-WI:e_filing:ec1a57512e94",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 801.18(3)(c)",
+      "text": "Except as otherwise provided by law, a party not subject to par. (a) who does not choose to participate in the electronic filing system under par. (b) shall file, serve, and receive paper documents by traditional methods.",
+      "text_sha256": "ef018c865138441b2d3a064bd212c780294e394a9ad7901ae964711f88d63b85",
+      "publisher_sha256": "5d120f15916b752b0fd04cbe3555500ac2ce574c6eb871662cabb849a643bfab",
+      "retrieved_at": "2026-11-20T15:56:55.366634+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Wisconsin Circuit Court",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/801/18/3/c",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "a3bb2a465d95ce6fa1f6f493dc89fd": {
+      "source_id": "US-WI:fees:12dee82a4194",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 814.61(1)(a)",
+      "text": "Except as provided under pars. (c), (d), and (e), at the commencement of all civil actions and special proceedings not specified in ss. 814.62 to 814.66, $130. Of the fees received by the clerk under this paragraph, the county treasurer shall pay $47 to the secretary of administration for deposit in the general fund and shall retain the balance for the use of the county. The secretary of administration shall credit $15 of the $47 to the appropriation under s. 20.680 (2) (j).",
+      "text_sha256": "e6bfa132479053d1b3e96b24ec2454b2e2e464fa190fd400a15e3719462546b3",
+      "publisher_sha256": "1d99351cf19196a285d599f5e2de74fe93e05559b34b600f3178f00ed802b77d",
+      "retrieved_at": "2026-11-20T15:57:42.721769+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "court": "Wisconsin Circuit Court",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/814/ii/61/1/a",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "b41e4a1d5e4818aec16f6f67a7aeee": {
+      "source_id": "US-WI:wageLaw:fa7c9ba46eed",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 109.01(2)",
+      "text": "Except as provided in ss. 109.07 (1) (d) and 109.075 (1) (c), “employer” means any person engaged in any activity, enterprise or business employing one or more persons within the state, including the state and its political subdivisions and charitable, nonprofit or tax-exempt organizations and institutions.",
+      "text_sha256": "9049715d590da8a8d2e83d075ab813ce9fa478233783b982612a4a5358de9fab",
+      "publisher_sha256": "234875a608a4f33dcdac9786b4fe586ab75dd8e9b50cc0c426d012e4f3fa2644",
+      "retrieved_at": "2026-11-20T17:31:43.160381+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/109/01/2",
+      "edition": "Certified Wisconsin Statutes as of November 4, 2026"
+    },
+    "97d423549068e45ee2a94f023c026e": {
+      "source_id": "US-WI:wageLaw:72f03a586fd5",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 109.01(3)",
+      "text": "“Wage” or “wages” mean remuneration payable to an employee for personal services, including salaries, commissions, holiday and vacation pay, overtime pay, severance pay or dismissal pay, supplemental unemployment benefit plan payments when required under a binding collective bargaining agreement, bonuses and any other similar advantages agreed upon between the employer and the employee or provided by the employer to the employees as an established policy.",
+      "text_sha256": "993930683a95b44306fd7a698836fb7e484b19cccb48ee3f980dd52ecd9a10c7",
+      "publisher_sha256": "234875a608a4f33dcdac9786b4fe586ab75dd8e9b50cc0c426d012e4f3fa2644",
+      "retrieved_at": "2026-11-20T17:31:43.160381+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/109/01/3",
+      "edition": "Certified Wisconsin Statutes as of November 4, 2026"
+    },
+    "6ac60cc3ee9fd47cf7a12d7d0bcd70": {
+      "source_id": "US-WI:wageLaw:d84a4431dd72",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 109.03(1)(intro.)",
+      "text": "Required frequency of payments. Every employer shall as often as monthly pay to every employee engaged in the employer’s business, except those employees engaged in logging operations and farm labor, all wages earned by the employee to a day not more than 31 days prior to the date of payment. Employees engaged in logging operations and farm labor shall be paid all earned wages no less often than at regular quarterly intervals. Any employee who is absent at the time fixed for payment or who for any other reason is not paid at that time shall be paid thereafter at any time upon 6 days’ demand. The required frequency of wage payments provided in this subsection does not apply to any of the following:",
+      "text_sha256": "aaf98bf754bc52ceba3bdf1d5a1f2a942d231a732e2c518465c1040836aa3bc2",
+      "publisher_sha256": "234875a608a4f33dcdac9786b4fe586ab75dd8e9b50cc0c426d012e4f3fa2644",
+      "retrieved_at": "2026-11-20T17:31:43.160381+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/109/03/1",
+      "edition": "Certified Wisconsin Statutes as of November 4, 2026"
+    },
+    "bfa37390b31acf6cefd30c0616ed2b": {
+      "source_id": "US-WI:wageLaw:f8b66871ca24",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 109.03(1)(a)",
+      "text": "(a) Employees covered under a valid collective bargaining agreement establishing a different frequency for wage payments, including deferred payments exercised at the option of employees.",
+      "text_sha256": "039e6e63a6e9433b7e534c8035cf500975aa3dfe38b5bc07adf140ccbb0fd1cc",
+      "publisher_sha256": "234875a608a4f33dcdac9786b4fe586ab75dd8e9b50cc0c426d012e4f3fa2644",
+      "retrieved_at": "2026-11-20T17:31:43.160381+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/109/03/1/a",
+      "edition": "Certified Wisconsin Statutes as of November 4, 2026"
+    },
+    "867a3a9f0ee9e79cf3a6a3e2610dbd": {
+      "source_id": "US-WI:wageLaw:0c97f922dfa8",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 109.03(1)(b)",
+      "text": "(b) School district employees, cooperative educational service agency employees, and private school employees who voluntarily request payment over a 12-month period for personal services performed during the school year, unless, with respect to private school employees, the employees are covered under a valid collective bargaining agreement which precludes this method of payment.",
+      "text_sha256": "9d6741ac4699b4add8a7f954b345beedd1031dcd0b361f0fc779eecf617b6a23",
+      "publisher_sha256": "234875a608a4f33dcdac9786b4fe586ab75dd8e9b50cc0c426d012e4f3fa2644",
+      "retrieved_at": "2026-11-20T17:31:43.160381+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/109/03/1/b",
+      "edition": "Certified Wisconsin Statutes as of November 4, 2026"
+    },
+    "ef3e0c2f0eca76e23c71a7d8fc9af5": {
+      "source_id": "US-WI:wageLaw:b0d42abb475d",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 109.03(1)(c)",
+      "text": "(c) Employees of the University of Wisconsin System other than university staff, as defined in s. 36.05 (15).",
+      "text_sha256": "1b532f105f9cef99ace44da421803fb3e6d0d648e6edf1433fd5749e49972504",
+      "publisher_sha256": "234875a608a4f33dcdac9786b4fe586ab75dd8e9b50cc0c426d012e4f3fa2644",
+      "retrieved_at": "2026-11-20T17:31:43.160381+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/109/03/1/c",
+      "edition": "Certified Wisconsin Statutes as of November 4, 2026"
+    },
+    "495db08fb3d382276c612bf4126b77": {
+      "source_id": "US-WI:wageLaw:19a9c5527e5b",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 109.03(1)(d)",
+      "text": "(d) Employees who receive compensatory time off under s. 103.025 in lieu of overtime compensation.",
+      "text_sha256": "945fdcdf6d0e71352495188c65e7fd66c3067f51756e02f6a14a307fe33dc76e",
+      "publisher_sha256": "234875a608a4f33dcdac9786b4fe586ab75dd8e9b50cc0c426d012e4f3fa2644",
+      "retrieved_at": "2026-11-20T17:31:43.160381+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/109/03/1/d",
+      "edition": "Certified Wisconsin Statutes as of November 4, 2026"
+    },
+    "58a8fc0a920f4d3c8449070fd939d1": {
+      "source_id": "US-WI:wageLaw:67133dee5f00",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 109.03(1)(e)",
+      "text": "(e) A part-time fire fighter or a part-time emergency medical services practitioner, as defined in s. 256.01 (5), who is a member of a volunteer fire department or emergency medical services program maintained by a county, city, village, or town or of a volunteer fire company organized under ch. 181 or ch. 213 and who, by agreement between the fire fighter or emergency medical services practitioner and the entity employing the fire fighter or emergency medical services practitioner, is paid at regular intervals, but no less often than annually.",
+      "text_sha256": "17598fd3055c1c68b0fce1ea6d0202c7f5f33ef20c181154f2d5e34d47fea7bf",
+      "publisher_sha256": "234875a608a4f33dcdac9786b4fe586ab75dd8e9b50cc0c426d012e4f3fa2644",
+      "retrieved_at": "2026-11-20T17:31:43.160381+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/109/03/1/e",
+      "edition": "Certified Wisconsin Statutes as of November 4, 2026"
+    },
+    "a9d0830e90d6d7d580a4b91c681e5c": {
+      "source_id": "US-WI:wage_separation:b2873ab5af3a",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 109.03(2)",
+      "text": "Payment to discharged or resigned employees. Any employee, except a sales agent employed on a commission basis, not having a written contract for a definite period, who quits employment or who is discharged from employment shall be paid in full by no later than the date on which the employee regularly would have been paid under the employer’s established payroll schedule or the date of payment required under sub. (1), whichever is earlier.",
+      "text_sha256": "bcbf2b4e19da1c42707ba820f8ca4a72c3cf9d9f64fe8e0e03f07794366f0d12",
+      "publisher_sha256": "234875a608a4f33dcdac9786b4fe586ab75dd8e9b50cc0c426d012e4f3fa2644",
+      "retrieved_at": "2026-11-20T17:31:43.160381+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/109/03/2",
+      "edition": "Certified Wisconsin Statutes as of November 4, 2026"
+    },
+    "43c85ab293003f109d8691d36931a9": {
+      "source_id": "US-WI:wage_separation:8974d69452bb",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 109.03(4)",
+      "text": "Payment to certain separated employees. Whenever an employee is separated from the payroll of an employer as a result of the employer merging, liquidating or otherwise disposing of the business, ceasing business operations in whole or in part, or relocating all or part of the business to another area within or without the state, the employer, or the successors in interest of the employer, shall pay all unpaid wages to the employee at the usual place of payment within 24 hours of the time of separation.",
+      "text_sha256": "5607848d8bdab97f3816be95884b9f1f110becec2d27da4362d3cf86ba9bd4e2",
+      "publisher_sha256": "234875a608a4f33dcdac9786b4fe586ab75dd8e9b50cc0c426d012e4f3fa2644",
+      "retrieved_at": "2026-11-20T17:31:43.160381+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/109/03/4",
+      "edition": "Certified Wisconsin Statutes as of November 4, 2026"
+    },
+    "4af432c71c02e3dcd379ad36536de3": {
+      "source_id": "US-WI:debt_private_action:9aee732174e6",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 427.105(1)",
+      "text": "(1) A person injured by violation of this chapter may recover actual damages and the penalty provided in s. 425.304; but notwithstanding any other law actual damages shall include damages caused by emotional distress or mental anguish with or without accompanying physical injury proximately caused by a violation of this chapter.",
+      "text_sha256": "45b61d1b10db6d93433e7d8770b631f9b3202e2581600bc585e557b773a46c72",
+      "publisher_sha256": "41e56a5bf3c27b86b63b07335e332dee3d4d7eeb2dcb9860163efb2dd8e6849d",
+      "retrieved_at": "2026-11-20T22:49:01.870009+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/427/105/1",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "99d24ca96f7ef73f2229db222e9d62": {
+      "source_id": "US-WI:debtLaw:ca13879f838e",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 427.103(2)",
+      "text": "(2) “Debt collection” means any action, conduct or practice of soliciting claims for collection or in the collection of claims owed or due or alleged to be owed or due a merchant by a customer.",
+      "text_sha256": "3e03c04d1b122230b3d9ada4b83495e87b6210e680d55e82b0a26c13332854d2",
+      "publisher_sha256": "94cd05159f4a335586b6ce76edc4668f5607ef80b8b93dd7335018133d7c6869",
+      "retrieved_at": "2026-11-20T22:49:01.820767+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/427/103/2",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "ee08e64795e33955b9296dc85a2c8e": {
+      "source_id": "US-WI:debtLaw:03eab54a63dc",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 427.103(3)",
+      "text": "(3) “Debt collector” means any person engaging, directly or indirectly, in debt collection, and includes any person who sells, or offers to sell, forms represented to be a collection system, device or scheme, intended or calculated to be used to collect claims. The term does not include a printing company engaging in the printing and sale of forms.",
+      "text_sha256": "de1cbe8abc38632d99d09ccaa4f3f7a74d0f3b1d2d8b4083bc9f3e969a7bdb13",
+      "publisher_sha256": "94cd05159f4a335586b6ce76edc4668f5607ef80b8b93dd7335018133d7c6869",
+      "retrieved_at": "2026-11-20T22:49:01.820767+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/427/103/3",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "d4265730195c939e7580d025ba40d2": {
+      "source_id": "US-WI:debt_cure_exceptions:329489b0b1f4",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 425.205(6)",
+      "text": "(6) Action pursuant to this section may be commenced at any time after the customer is in default, but the return day of process may not be set prior to the expiration of the period for cure of the default by the customer (s. 425.105), if applicable.",
+      "text_sha256": "00d30a454651259e5c015c02a8ef98cfff834cc88462cbc72ad3587e292934bf",
+      "publisher_sha256": "376a9068de185017f53fa912f636cbbc07c26ae42e02f95fa5f987777a8fa92e",
+      "retrieved_at": "2026-11-20T22:49:01.818495+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/425/ii/205/6",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "095c7b8962ba2beb4600e09a476e24": {
+      "source_id": "US-WI:debt_cure_notice:7dfa7f40121c",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 425.104(1)",
+      "text": "(1) A merchant who believes that a customer is in default may give the customer written notice of the alleged default and, if applicable, of the customer’s right to cure any such default (s. 425.105).",
+      "text_sha256": "0c42abc3ee792639c6969bce81d57c0bd5a75a055fe5364853ea687771330dbb",
+      "publisher_sha256": "8d76cc48ed3786f4c9427f7c557697d826cdf3419d94c03ae2dcead1184ab125",
+      "retrieved_at": "2026-11-20T22:47:11.800439+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/425/i/104/1",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "a15d5f21cd604e767b47aabaaac973": {
+      "source_id": "US-WI:debt_cure_notice:dbcbf638e2eb",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 425.104(2)",
+      "text": "(2) Any notice given under this section shall contain the name, address and telephone number of the creditor, a brief identification of the consumer credit transaction, a statement of the nature of the alleged default and a clear statement of the total payment, including an itemization of any delinquency charges, or other performance necessary to cure the alleged default, the exact date by which the amount must be paid or performance tendered and the name, address and telephone number of the person to whom any payment must be made, if other than the creditor.",
+      "text_sha256": "52b3f70768ee849963063bd605b50eb2fc55934bee688512bcba1fa8428e7e8d",
+      "publisher_sha256": "8d76cc48ed3786f4c9427f7c557697d826cdf3419d94c03ae2dcead1184ab125",
+      "retrieved_at": "2026-11-20T22:47:11.800439+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/425/i/104/2",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "fb93fc468c18d14635aba484285966": {
+      "source_id": "US-WI:debt_cure_notice:e582405c07a8",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 425.105(1)",
+      "text": "(1) A merchant may not accelerate the maturity of a consumer credit transaction, commence any action except as provided in s. 425.205 (6), or demand or take possession of collateral or goods subject to a consumer lease other than by accepting a voluntary surrender thereof (s. 425.204), unless the merchant believes the customer to be in default (s. 425.103), and then only upon the expiration of 15 days after a notice is given pursuant to s. 425.104 if the customer has the right to cure under this section.",
+      "text_sha256": "b3cfa2fe06d9e8e556eef476b2d111402cb6ebd8f3a37a3c26d93becb3f89df5",
+      "publisher_sha256": "2bdd3b011d2864cb632d40ce18eec4bc7bf1c2c9ca6d0ba52b3fd8f985ec2c0c",
+      "retrieved_at": "2026-11-20T22:47:11.699656+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/425/i/105/1",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "5a87dffd5a066eb5ac31c4c22f5a0b": {
+      "source_id": "US-WI:debt_cure_notice:6d93fc9a4031",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 425.105(2)",
+      "text": "(2) Except as provided in subs. (3) and (3m), for 15 days after such notice is given, a customer may cure a default under a consumer credit transaction by tendering the amount of all unpaid installments due at the time of the tender, without acceleration, plus any unpaid delinquency or deferral charges, and by tendering performance necessary to cure any default other than nonpayment of amounts due. The act of curing a default restores to the customer the customer’s rights under the agreement as though no default had occurred.",
+      "text_sha256": "6f1e1e45e59593a9782a2560ecd18681e0b2f0ec5aa50928faef54c8b880f4b4",
+      "publisher_sha256": "2bdd3b011d2864cb632d40ce18eec4bc7bf1c2c9ca6d0ba52b3fd8f985ec2c0c",
+      "retrieved_at": "2026-11-20T22:47:11.699656+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/425/i/105/2",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "c010e338124ac06856cbaa9b2e3210": {
+      "source_id": "US-WI:debt_cure_prior_defaults:c71689ccb732",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 425.105(3)(intro.)",
+      "text": "(3) A right to cure shall not exist if the following occurred twice during the preceding 12 months:",
+      "text_sha256": "ff6a8f86b72689c51aee173f025aaea7a27c37dca7ce7f9cf700437db647e069",
+      "publisher_sha256": "2bdd3b011d2864cb632d40ce18eec4bc7bf1c2c9ca6d0ba52b3fd8f985ec2c0c",
+      "retrieved_at": "2026-11-20T22:47:11.699656+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/425/i/105/3",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "96fd04eec80c25bcada6dd06405bfa": {
+      "source_id": "US-WI:debt_cure_prior_defaults:2c21ec3e35bf",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 425.105(3)(a)",
+      "text": "(a) The customer was in default on the same transaction or open-end credit plan;",
+      "text_sha256": "d61b3202d5fb5c621dda0b47f5db0a1130b02d695bafc70c07c4f4d1c3f810ad",
+      "publisher_sha256": "2bdd3b011d2864cb632d40ce18eec4bc7bf1c2c9ca6d0ba52b3fd8f985ec2c0c",
+      "retrieved_at": "2026-11-20T22:47:11.699656+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/425/i/105/3/a",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "16e12be7948f8e0be7e92556c08e0f": {
+      "source_id": "US-WI:debt_cure_prior_defaults:287e9929fa65",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 425.105(3)(b)",
+      "text": "(b) The creditor gave the customer notice of the right to cure such previous default in accordance with s. 425.104; and",
+      "text_sha256": "8c03f44f37dc770f4ca0ae2e79fdeee0c5fc6328617e13f74bb6160d4e881d0b",
+      "publisher_sha256": "2bdd3b011d2864cb632d40ce18eec4bc7bf1c2c9ca6d0ba52b3fd8f985ec2c0c",
+      "retrieved_at": "2026-11-20T22:47:11.699656+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/425/i/105/3/b",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "691d350d573f260be1a951a3e10f32": {
+      "source_id": "US-WI:debt_cure_prior_defaults:75ec95d5db7a",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 425.105(3)(c)",
+      "text": "(c) The customer cured the previous default.",
+      "text_sha256": "038d27ecdf0de07a8e1ac0d4069651485640df841b4f0d852c2e1442499918d1",
+      "publisher_sha256": "2bdd3b011d2864cb632d40ce18eec4bc7bf1c2c9ca6d0ba52b3fd8f985ec2c0c",
+      "retrieved_at": "2026-11-20T22:47:11.699656+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/425/i/105/3/c",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "a5daa1b096651f67491748fdcc1b22": {
+      "source_id": "US-WI:debt_cure_exceptions:2adcc91c6a70",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 425.105(3m)",
+      "text": "(3m) A right to cure shall not exist with respect to a default specified under s. 425.103 (2) (bm).",
+      "text_sha256": "2846ff26790ab982c4155a24d809d3dffe50c7941ea972ae3bd84f4c018dfed0",
+      "publisher_sha256": "2bdd3b011d2864cb632d40ce18eec4bc7bf1c2c9ca6d0ba52b3fd8f985ec2c0c",
+      "retrieved_at": "2026-11-20T22:47:11.699656+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/425/i/105/3m",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "cf62dfca2925c0c4ab61dfe9773ee5": {
+      "source_id": "US-WI:debt_cure_exceptions:074a33bad011",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 425.105(4)",
+      "text": "(4) With respect to consumer credit transactions in which the creditor has a security interest in, and possession of, instruments or documents, as each is defined in s. 409.102 (1), which threaten to decline speedily in value, this section does not restrict the creditor’s rights to dispose of such property pursuant to subch. VI of ch. 409 and the terms of the creditor’s security agreement.",
+      "text_sha256": "6448ea746c1ac2994087e07c3423a12b97e3c51af49c11097d0fade86274ce85",
+      "publisher_sha256": "2bdd3b011d2864cb632d40ce18eec4bc7bf1c2c9ca6d0ba52b3fd8f985ec2c0c",
+      "retrieved_at": "2026-11-20T22:47:11.699656+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/425/i/105/4",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "25d57530588a03b2396ddabef84de9": {
+      "source_id": "US-WI:debt_cure_exceptions:87719796d104",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 425.103(2)(bm)",
+      "text": "(bm) With respect to a motor vehicle consumer lease or a consumer credit sale of a motor vehicle, making a material false statement in the customer’s credit application that precedes the consumer credit transaction; or",
+      "text_sha256": "8427f5423cadca58e0b0a034284b4b230567c55d947f1b260062e76b73297ee0",
+      "publisher_sha256": "885db3d45e381eba1705b902b57256399d6fae28e06c7ef545edddd78cd91033",
+      "retrieved_at": "2026-11-20T22:47:11.727697+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/425/i/103/2/bm",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "37ba944d20822ca3a085f87844c7bd": {
+      "source_id": "US-WI:debtLaw:deef7cba0ab4",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 427.104(1)(intro.)",
+      "text": "(1) In attempting to collect an alleged debt arising from a consumer credit transaction or other consumer transaction, including a transaction primarily for an agricultural purpose, where there is an agreement to defer payment, a debt collector may not:",
+      "text_sha256": "c828ed6ea9a62a3f63409bbb9f4babbe97a9f367b791a550d977f1252ced7b7c",
+      "publisher_sha256": "dc47d4fdf7bf2b2f3b6e1549ffc5d3d2af2aeca851926490a36d0fa0db394846",
+      "retrieved_at": "2026-11-20T22:47:11.722186+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/427/104/1",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "a9668867123dc63c4c2b09364e2d8d": {
+      "source_id": "US-WI:debt_harassment:7061a5396690",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 427.104(1)(g)",
+      "text": "(g) Communicate with the customer or a person related to the customer with such frequency or at such unusual hours or in such a manner as can reasonably be expected to threaten or harass the customer;",
+      "text_sha256": "abe7c2b4864605c9f680fb57f1ba6c4cbe08fc122ad9d4d5573e42f9e721aa5a",
+      "publisher_sha256": "dc47d4fdf7bf2b2f3b6e1549ffc5d3d2af2aeca851926490a36d0fa0db394846",
+      "retrieved_at": "2026-11-20T22:47:11.722186+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/427/104/1/g",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "1ab27537637269dea5711070a04e82": {
+      "source_id": "US-WI:debtLaw:b7911537f010",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 427.104(1)(j)",
+      "text": "(j) Claim, or attempt or threaten to enforce a right with knowledge or reason to know that the right does not exist;",
+      "text_sha256": "a531ed15f0b7236298b9c3be5cc65819e936ff58a7f791e9856d4657be579a99",
+      "publisher_sha256": "dc47d4fdf7bf2b2f3b6e1549ffc5d3d2af2aeca851926490a36d0fa0db394846",
+      "retrieved_at": "2026-11-20T22:47:11.722186+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/427/104/1/j",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "1054f0e41ff6ea7456b7a861bf2b7f": {
+      "source_id": "US-WI:service_time_limit:2622237ee341",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 801.02(2)",
+      "text": "A civil action in which only an in rem or quasi in rem judgment is sought is commenced as to any defendant when a summons and a complaint are filed with the court, provided service of an authenticated copy of the summons and of either the complaint or a notice of object of action under s. 801.12 is made upon the defendant under this chapter within 90 days after filing.",
+      "text_sha256": "4192dedb8910fb8e94a55d5cd1154e3823eddcce53c37238b6de2f7097a67298",
+      "publisher_sha256": "46b5426884546975d997291fd55bbc874cf81b62f0a08e584aebee3dba4e6591",
+      "retrieved_at": "2026-11-21T22:15:24.015211+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/801/02/2",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "d648491021c25de8fe7f94a2e54a17": {
+      "source_id": "US-WI:consumer_agency:b0a0fda960e9",
+      "authority_type": "statute",
+      "citation": "Wis. Stat. § 100.18(11)(d)",
+      "text": "The department or the department of justice, after consulting with the department, or any district attorney, upon informing the department, may commence an action in circuit court in the name of the state to restrain by temporary or permanent injunction any violation of this section. The court may in its discretion, prior to entry of final judgment, make such orders or judgments as may be necessary to restore to any person any pecuniary loss suffered because of the acts or practices involved in the action, provided proof thereof is submitted to the satisfaction of the court.",
+      "text_sha256": "03af8bd0c94ca5ee5d20f8e658ea938a55efff1c67a92a3e5c632d5188b21192",
+      "publisher_sha256": "c5ea40eb8ef1d61f44275f1815ad064395956018ca4e2ccb2efe714107016e0d",
+      "retrieved_at": "2026-11-22T03:38:54.344148+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "publisher_member": "Wisconsin Legislative Reference Bureau, injunction and restitution authority of specified public officials.",
+      "current_as_of": "2026-11-04",
+      "publisher_path": "/statutes/statutes/100/18/11/d",
+      "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "bea4456ec1b59ae6033e4f74280304": {
+      "source_id": "US-WI:accrual:69d58799a98d",
+      "authority_type": "opinion",
+      "citation": "Christ v. Exxon Mobil Corp., 2015 WI 58, ¶¶ 5–6",
+      "text": "We agree with the plaintiffs and hold that the discovery rule permits the accrual of both survival claims and wrongful death claims after the date of the decedent's death. In the absence of a legislatively created rule to the contrary, claims accrue when there is a \"claim capable of present enforcement, a suable party against whom it may be enforced, and a party who has a present right to enforce it.\" Emp'rs Ins. of Wausau v. Smith, 154 Wis. 2d 199, 231, 453 N.W.2d 856 (1990) (quoting Barry v. Minahan, 127 Wis. 570, 573, 107 N.W. 488 (1906)). These criteria are not met \"until the plaintiff discovers, or in the exercise of reasonable diligence should have discovered, not only the fact of injury but also that the injury was probably caused by the defendant's conduct or product.\" Borello v. U.S. Oil Co., 130 Wis. 2d 397, 411, 388 N.W.2d 140 (1986). See also Carlson v. Pepin Cnty., 167 Wis. 2d 345, 352-53, 481 N.W.2d 498 (Ct. App. 1992) (\"Under the discovery rule, a cause of action accrues when the plaintiff discovered or, in the exercise of reasonable diligence, should have discovered his injury, its nature, its cause and the identity of the allegedly responsible defendant.\"). ¶6 In the circumstances of this case, the applicable statute of limitations began to run when the survival claims and wrongful death claims were discovered, provided that the plaintiffs are able to show that they exercised reasonable diligence in investigating and discovering their claims.",
+      "text_sha256": "3c0112b8e967b81dfeb6f1104bdebfce1cba54d1135e8e0cf5bb323cc0761065",
+      "publisher_sha256": "1c43811a3ed2e2dfb288cbe3de47de0a0269483190045082f599a75e57dca3e1",
+      "retrieved_at": "2026-11-23T16:20:02.068396+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Official published slip opinion of June 23, 2015",
+      "court": "Wisconsin Supreme Court",
+      "decision_date": "2015-06-23",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of summary judgment involving wrongful-death and survival claims arising from alleged benzene exposure."
+    },
+    "7154bf0c277e573131baad7b801732": {
+      "source_id": "US-WI:premises:bb19836e7532",
+      "citation": "Rosario v. Acuity, 2007 WI App 194, ¶ 12",
+      "text": "A property owner must have actual or constructive notice of the defect to be liable for an unsafe condition associated with the structure of the building. Pettric v. Gridley Dairy Co., 202 Wis. 289, 293, 232 N.W. 595 (1930). The general rule is that constructive notice is chargeable only where the hazard has existed for a sufficient length of time to allow the vigilant owner … the opportunity to discover and remedy the situation. The length of time viewed as sufficient varies according to the nature of the business, the nature of the defect, and the public policy involved. May v. Skelley Oil Co., 83 Wis. 2d 30, 36-37, 264 N.W.2d 574 (1978).",
+      "text_sha256": "f8e9525f0e7a5606303c41c8bc91f084ed50f020993e958f115ceb255c7f0dd5",
+      "publisher_sha256": "8c0dfdfffce82058f3d948b135e47ad80b1c97cd12da6a0cb8fe35f37137cad1",
+      "retrieved_at": "2026-11-23T21:02:56.436198+00:00",
+      "language": "en",
+      "authority_type": "opinion",
+      "currentness": "historical",
+      "edition": "Court-published opinion of 2007-07-10",
+      "court": "Wisconsin Court of Appeals",
+      "decision_date": "2007-07-10",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in a safe-place and negligence action.",
+      "scope_notes": "Notice for an unsafe condition associated with the structure of a public building. Structural defects and ordinary negligence require separate analysis."
+    }
+  },
+  "fault_allocation": {
+    "regime": "other_state_specific",
+    "source_id": "US-WI:fault:4541084e4c55",
+    "passage_selector": "cffe4e72856f9d68bf3c27d6b7b2ff",
+    "currentness": "current_as_of",
+    "qualification": "Subsection (1) compares causal negligence separately against each person. Subsections (2) and (3) address separate circumstances."
+  }
+}

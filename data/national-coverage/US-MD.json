@@ -1,0 +1,1040 @@
+{
+  "jurisdiction": "US-MD",
+  "version": "1",
+  "sources": {
+    "US-MD:statutes:b8367033c56b": {
+      "category": "statutes",
+      "title": "Maryland Statutes",
+      "url": "http://mgaleg.maryland.gov/webmga/frmStatutes.aspx",
+      "directory": "codes",
+      "locator": "Maryland"
+    },
+    "US-MD:constitution:6f563a533cca": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://mgaleg.maryland.gov/Pubs/LegisLegal/2015-constitution-maryland-us.pdf",
+      "directory": "codes",
+      "locator": "Maryland"
+    },
+    "US-MD:legislature:6745967e3b59": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://mgaleg.maryland.gov/webmga/",
+      "directory": "codes",
+      "locator": "Maryland"
+    },
+    "US-MD:labor_agency:d1901ae64c8b": {
+      "category": "labor_agency",
+      "title": "www.labor.maryland.gov",
+      "url": "https://www.labor.maryland.gov",
+      "directory": "labor",
+      "locator": "Maryland"
+    },
+    "US-MD:commercial_code:3650f95eb4dc": {
+      "category": "commercial_code",
+      "title": "Searchable Index- See Commercial Law Title 1",
+      "url": "http://www.lexisnexis.com/hottopics/mdcode/",
+      "directory": "ucc",
+      "locator": "Maryland"
+    },
+    "US-MD:civil_rules:3650f95eb4dc": {
+      "category": "civil_rules",
+      "title": "Searchable Index- See Generally Maryland Rules",
+      "url": "http://www.lexisnexis.com/hottopics/mdcode/",
+      "directory": "procedure",
+      "locator": "Maryland"
+    },
+    "US-MD:consumer_agency:706ece3db64a": {
+      "category": "consumer_agency",
+      "title": "Maryland (MD)",
+      "url": "https://www.marylandattorneygeneral.gov/Pages/CPD/default.aspx",
+      "directory": "consumer",
+      "locator": "Maryland (MD)"
+    },
+    "US-MD:judiciary:28bfc8471d6d": {
+      "category": "judiciary",
+      "title": "Judicial Branch",
+      "url": "http://www.courts.state.md.us/",
+      "directory": "doj-MD",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-MD:court_directory:47e60c816c66": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "http://www.courts.state.md.us/coappeals/",
+      "directory": "doj-MD",
+      "locator": "Court of Appeals"
+    },
+    "US-MD:court_directory:1583b337208d": {
+      "category": "court_directory",
+      "title": "Circuit Courts",
+      "url": "http://www.courts.state.md.us/circuit/",
+      "directory": "doj-MD",
+      "locator": "Circuit Courts"
+    },
+    "US-MD:court_directory:9a9a209f9613": {
+      "category": "court_directory",
+      "title": "District Court",
+      "url": "http://www.courts.state.md.us/district/index.html",
+      "directory": "doj-MD",
+      "locator": "District Court"
+    },
+    "US-MD:court_directory:c88b04ef53fa": {
+      "category": "court_directory",
+      "title": "Tax Court",
+      "url": "https://taxcourt.maryland.gov/",
+      "directory": "doj-MD",
+      "locator": "Tax Court"
+    },
+    "US-MD:forms:116b0e8047bf": {
+      "category": "forms",
+      "title": "Maryland Court Forms Finder",
+      "url": "http://www.courts.state.md.us/courtforms/index.html",
+      "directory": "doj-MD",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-MD:forms:8add94d84a3f": {
+      "category": "forms",
+      "title": "Tax Court Forms",
+      "url": "https://taxcourt.maryland.gov/PetitionForms.shtml",
+      "directory": "doj-MD",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-MD:constitution:2c806b600b55": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://msa.maryland.gov/msa/mdmanual/43const/html/const.html",
+      "directory": "doj-MD",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MD:statutes:4503c0d698ef": {
+      "category": "statutes",
+      "title": "Statutes",
+      "url": "http://mgaleg.maryland.gov/webmga/frmStatutes.aspx?pid=statpage&tab=subject5",
+      "directory": "doj-MD",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MD:statutes:a8399fb5d8d1": {
+      "category": "statutes",
+      "title": "Session Laws from the Maryland State Archives",
+      "url": "http://aomol.msa.maryland.gov/html/laws.html",
+      "directory": "doj-MD",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-MD:regulations:fd05fa3eb3c6": {
+      "category": "regulations",
+      "title": "Code of Maryland Regulations",
+      "url": "https://dsd.maryland.gov/Pages/COMARHome.aspx",
+      "directory": "doj-MD",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-MD:regulations:1d2484a66f7b": {
+      "category": "regulations",
+      "title": "Maryland Register Online",
+      "url": "https://dsd.maryland.gov/Pages/MDRegister.aspx",
+      "directory": "doj-MD",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-MD:pi_limitations:d751546e8e10": {
+      "category": "pi_limitations",
+      "title": "Md. Code, Courts & Judicial Proceedings § 5-101",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&section=5-101&enactments=false",
+      "directory": null,
+      "locator": "Md. Code, Courts & Judicial Proceedings § 5-101",
+      "observation": {
+        "requested_url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&section=5-101&enactments=false",
+        "retrieved_at": "2026-11-17T19:33:57.967038+00:00",
+        "http_status": "200",
+        "sha256": "9b0d24980d89b383a21b33f73d2cd51299524d5c3780282c68c0712fee9bea74",
+        "health": "healthy"
+      }
+    },
+    "US-MD:written_contract_limitations:d751546e8e10": {
+      "category": "written_contract_limitations",
+      "title": "Md. Code, Cts. & Jud. Proc. § 5-101",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&section=5-101&enactments=false",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&section=5-101&enactments=false",
+        "retrieved_at": "2026-11-17T19:33:57.967038+00:00",
+        "http_status": "200",
+        "sha256": "9b0d24980d89b383a21b33f73d2cd51299524d5c3780282c68c0712fee9bea74",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MD:oral_contract_limitations:d751546e8e10": {
+      "category": "oral_contract_limitations",
+      "title": "Md. Code, Cts. & Jud. Proc. § 5-101",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&section=5-101&enactments=false",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&section=5-101&enactments=false",
+        "retrieved_at": "2026-11-17T19:33:57.967038+00:00",
+        "http_status": "200",
+        "sha256": "9b0d24980d89b383a21b33f73d2cd51299524d5c3780282c68c0712fee9bea74",
+        "health": "manual_review_required"
+      }
+    },
+    "US-MD:small_claims:b0fce44a5779": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.mdcourts.gov/legalhelp/smallclaims",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.mdcourts.gov/legalhelp/smallclaims",
+        "retrieved_at": "2026-11-17T19:42:52.451948+00:00",
+        "http_status": "403",
+        "sha256": null,
+        "health": "access_denied"
+      }
+    },
+    "US-MD:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 27"
+    },
+    "US-MD:wageLaw:2d16f46a0577": {
+      "category": "wageLaw",
+      "title": "Md. Code, Labor and Employment § 3-502",
+      "url": "https://mgaleg.maryland.gov/2024RS/Statute_Web/gle/3-502.pdf",
+      "directory": null,
+      "locator": "Md. Code, Labor and Employment § 3-502"
+    },
+    "US-MD:consumerLaw:891a872ca8c1": {
+      "title": "Md. Code, Com. Law § 13-101 et seq.",
+      "category": "consumerLaw",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=13-101",
+      "directory": "consumer_statutes_index",
+      "locator": "Md. Code, Com. Law § 13-101 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-MD:contract_formation:72c673554849": {
+      "category": "contract_formation",
+      "title": "Md. Code, Commercial Law § 2-204",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&enactments=false&section=2-204",
+      "locator": "Md. Code, Commercial Law § 2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:27.306699+00:00",
+        "sha256": "ec357550d15410089f4ac896e3dfc74ada191f709797db2c6d69aba0aed25246"
+      }
+    },
+    "US-MD:wageLaw:d78b54e793eb": {
+      "category": "wageLaw",
+      "title": "Md. Code, Lab. & Empl. § 3-502(a)–(b)",
+      "url": "https://mgaleg.maryland.gov/2026RS/Statute_Web/gle/3-502.pdf",
+      "locator": "Md. Code, Lab. & Empl. § 3-502(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:54.573666+00:00",
+        "sha256": "88922fa20282b3776e13c44e65981f14ddc6a1d0776fc64aefd5794986194e27"
+      }
+    },
+    "US-MD:small_claims:d652a5846ed5": {
+      "category": "small_claims",
+      "title": "Md. Code, Cts. & Jud. Proc. § 4-405",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&section=4-405",
+      "locator": "Md. Code, Cts. & Jud. Proc. § 4-405",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:17:30.188587+00:00",
+        "sha256": "5f3830af48820efe88eec6e69264362b0b3494f26949281a8bb7e6bae91f6e36"
+      }
+    },
+    "US-MD:consumerLaw:482b69421a8d": {
+      "category": "consumerLaw",
+      "title": "Md. Code, Com. Law § 13-303",
+      "url": "https://mgaleg.maryland.gov/2026RS/Statute_Web/gcl/13-303.pdf",
+      "locator": "Md. Code, Com. Law § 13-303",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:44.004548+00:00",
+        "sha256": "0ef0fb336124b2397eaeba8efd437e607c1c784f3b8817c3bb73403a1f0fa36e"
+      }
+    },
+    "US-MD:tortfeasor_contribution:e218a8a0b098": {
+      "category": "tortfeasor_contribution",
+      "title": "Md. Code, Cts. & Jud. Proc. § 3-1402",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&section=3-1402",
+      "locator": "Md. Code, Cts. & Jud. Proc. § 3-1402",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:22:59.400123+00:00",
+        "sha256": "5cd192c2e3bdb0fe6117ab68f8d5bbe16ecd0cd5b6663ae03174f9a527f54a94"
+      }
+    },
+    "US-MD:debtLaw:cf8572790b84": {
+      "category": "debtLaw",
+      "title": "Md. Code, Com. Law § 14-202",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-202",
+      "locator": "Md. Code, Com. Law § 14-202",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:26:26.151122+00:00",
+        "sha256": "bf5103610234513cb4a6a24e49fdc34ab3e227ee9615f3ed6f1b7440dd09c48d"
+      }
+    },
+    "US-MD:deposit:a04b93a84dad": {
+      "category": "deposit",
+      "title": "Md. Code, Real Property § 8-203(e)",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=grp&enactments=false&section=8-203",
+      "locator": "Md. Code, Real Property § 8-203(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:54:36.964736+00:00",
+        "sha256": "32db53d903e079527f1f4ce930cd9b1f060a94ba4f283a7193b5dea43ef76c1e"
+      }
+    },
+    "US-MD:fault:cdc1a3347df3": {
+      "category": "fault",
+      "title": "Coleman v. Soccer Ass’n of Columbia, 432 Md. 679, slip op. at 15 (2013)",
+      "url": "https://web.archive.org/web/20240726051643id_/https://www.mdcourts.gov/data/opinions/coa/2013/9a12.pdf",
+      "locator": "Coleman v. Soccer Ass’n of Columbia, 432 Md. 679, slip op. at 15 (2013)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T03:59:02.784617+00:00",
+        "sha256": "f648326d5612de7ff6263709976314cfaf7b77b0a23b3c5e1b35b6da0327d8d8"
+      }
+    },
+    "US-MD:response:79dbd7fdf5ef": {
+      "category": "response",
+      "title": "Md. Rule 2-321(b)(1)–(6) (January 2004 amendment)",
+      "url": "https://web.archive.org/web/20250502164211id_/https://www.mdcourts.gov/sites/default/files/import/rules/rodocs/152ro.pdf",
+      "locator": "Md. Rule 2-321(b)(1)–(6) (January 2004 amendment)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:10:31.113974+00:00",
+        "sha256": "b63ecd63d184d617b8c745d76a0b0cabc158d96ccbb3e028d8192c56fef7cea8"
+      }
+    },
+    "US-MD:response:f46ec4ad20f5": {
+      "category": "response",
+      "title": "Md. Rule 3-307(a)–(b) (January 2004 amendment)",
+      "url": "https://web.archive.org/web/20250502164211id_/https://www.mdcourts.gov/sites/default/files/import/rules/rodocs/152ro.pdf",
+      "locator": "Md. Rule 3-307(a)–(b) (January 2004 amendment)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:10:31.113974+00:00",
+        "sha256": "b63ecd63d184d617b8c745d76a0b0cabc158d96ccbb3e028d8192c56fef7cea8"
+      }
+    },
+    "US-MD:negligence_elements:e136d94b51e3": {
+      "category": "negligence_elements",
+      "title": "Bel Air Carpet, Inc. v. Korey Homes Building Group, LLC, No. 1006, Sept. Term 2019, slip op. at 16 (Md. Ct. Spec. App. Jan. 28, 2021)",
+      "url": "https://web.archive.org/web/20250310005118id_/https://www.mdcourts.gov/data/opinions/cosa/2021/1006s19.pdf",
+      "locator": "Bel Air Carpet, Inc. v. Korey Homes Building Group, LLC, No. 1006, Sept. Term 2019, slip op. at 16 (Md. Ct. Spec. App. Jan. 28, 2021)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:18:04.466484+00:00",
+        "sha256": "973ec6257f37b97948ee520c607e1f1e9b7f461c5223c854206a0025519ac897"
+      }
+    },
+    "US-MD:commencement:e04a32800627": {
+      "category": "commencement",
+      "title": "Md. Rule 2-101(a) (November 2003 order)",
+      "url": "https://web.archive.org/web/20250502164211id_/https://www.mdcourts.gov/sites/default/files/import/rules/rodocs/152ro.pdf",
+      "locator": "Md. Rule 2-101(a) (November 2003 order)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:50:42.385209+00:00",
+        "sha256": "b63ecd63d184d617b8c745d76a0b0cabc158d96ccbb3e028d8192c56fef7cea8"
+      }
+    },
+    "US-MD:refiling_after_dismissal:4f428826fe27": {
+      "category": "refiling_after_dismissal",
+      "title": "Md. Rule 2-101(b) (November 2003 order)",
+      "url": "https://web.archive.org/web/20250502164211id_/https://www.mdcourts.gov/sites/default/files/import/rules/rodocs/152ro.pdf",
+      "locator": "Md. Rule 2-101(b) (November 2003 order)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:50:42.385209+00:00",
+        "sha256": "b63ecd63d184d617b8c745d76a0b0cabc158d96ccbb3e028d8192c56fef7cea8"
+      }
+    },
+    "US-MD:refiling_after_dismissal:960c17f5f6a1": {
+      "category": "refiling_after_dismissal",
+      "title": "Md. Rule 2-101(c) (November 2003 order)",
+      "url": "https://web.archive.org/web/20250502164211id_/https://www.mdcourts.gov/sites/default/files/import/rules/rodocs/152ro.pdf",
+      "locator": "Md. Rule 2-101(c) (November 2003 order)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:50:42.385209+00:00",
+        "sha256": "b63ecd63d184d617b8c745d76a0b0cabc158d96ccbb3e028d8192c56fef7cea8"
+      }
+    },
+    "US-MD:refiling_after_dismissal:995686b510a6": {
+      "category": "refiling_after_dismissal",
+      "title": "Md. Rule 3-101(c) (November 2003 order)",
+      "url": "https://web.archive.org/web/20250502164211id_/https://www.mdcourts.gov/sites/default/files/import/rules/rodocs/152ro.pdf",
+      "locator": "Md. Rule 3-101(c) (November 2003 order)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:50:42.385209+00:00",
+        "sha256": "b63ecd63d184d617b8c745d76a0b0cabc158d96ccbb3e028d8192c56fef7cea8"
+      }
+    },
+    "US-MD:service:0810bd0e8081": {
+      "category": "service",
+      "title": "Conwell Law LLC v. Tung, 221 Md. App. 481, 500 (2015)",
+      "url": "https://web.archive.org/web/20250617141014id_/https://www.mdcourts.gov/data/opinions/cosa/2015/0476s13.pdf",
+      "locator": "Conwell Law LLC v. Tung, 221 Md. App. 481, 500 (2015)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:54:43.901197+00:00",
+        "sha256": "310aff987f01fba0fdb12deddaa93a5b0d34186e49c1d8b30b9673b66a978b7d"
+      }
+    },
+    "US-MD:general_contract_limitations:98b45052fab0": {
+      "category": "general_contract_limitations",
+      "title": "Md. Code, Cts. & Jud. Proc. § 5-101",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&enactments=false&section=5-101",
+      "locator": "Md. Code, Cts. & Jud. Proc. § 5-101",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:38:38.428539+00:00",
+        "sha256": "a9e8a7e8c8dd673b6bb1990c99a6b81df407ba7dc9d0226df046638bba7078ae"
+      }
+    },
+    "US-MD:written_contract_limitations:34a50bfe74b3": {
+      "category": "written_contract_limitations",
+      "title": "Md. Code, Cts. & Jud. Proc. § 5-102",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&enactments=false&section=5-102",
+      "locator": "Md. Code, Cts. & Jud. Proc. § 5-102",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:38:38.444714+00:00",
+        "sha256": "8b788d0f2eca9bc1d01c97c4d99d0e55d4c030ce9df55b3d2c2d126d2031e145"
+      }
+    },
+    "US-MD:wrongful_death_limitations:0352e001f41a": {
+      "category": "wrongful_death_limitations",
+      "title": "Md. Code, Cts. & Jud. Proc. § 3-904(g)",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcj&enactments=false&section=3-904",
+      "locator": "Md. Code, Cts. & Jud. Proc. § 3-904(g)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:38:38.455077+00:00",
+        "sha256": "702083ebe982970a86bba72dc4ebeaf382e21e7bfbe7c4864a92310c5ba4b8fa"
+      }
+    },
+    "US-MD:service_time_limit:bf8a72e12708": {
+      "category": "service_time_limit",
+      "title": "Md. Rule 3-113",
+      "url": "https://web.archive.org/web/20251127022208id_/https://www.mdcourts.gov/sites/default/files/rules/order/ro211.pdf",
+      "locator": "Md. Rule 3-113",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:01:31.198695+00:00",
+        "sha256": "78067dc19a9d68f5759234c5b49f67213ff1fd4c27b99b6e1e714cbfb7194248"
+      }
+    },
+    "US-MD:service_time_limit:04e8c5f32bf9": {
+      "category": "service_time_limit",
+      "title": "Md. Rule 3-113",
+      "url": "https://web.archive.org/web/20250712224349id_/https://www.mdcourts.gov/sites/default/files/rules/order/ro214.pdf",
+      "locator": "Md. Rule 3-113",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:01:28.221408+00:00",
+        "sha256": "5585d2f5f650c64c6558a884d194ca9eb0d2d93d5849b825546339fe220f9d6c"
+      }
+    },
+    "US-MD:consumer_agency:ea2de70dd7f1": {
+      "category": "consumer_agency",
+      "title": "Md. Code, Com. Law § 13-406(a)–(c)",
+      "url": "https://mgaleg.maryland.gov/2026RS/Statute_Web/gcl/13-406.pdf",
+      "locator": "Md. Code, Com. Law § 13-406(a)–(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:30:44.467774+00:00",
+        "sha256": "26f9393c1a43cc8fcc38b73379eea94af9786b7aecbebdb18139b5b78c0c16b7"
+      }
+    },
+    "US-MD:labor_agency:71d644b0d839": {
+      "category": "labor_agency",
+      "title": "Md. Code, Lab. & Empl. § 3-507.1(a)–(c)",
+      "url": "https://mgaleg.maryland.gov/2026RS/Statute_Web/gle/3-507.1.pdf",
+      "locator": "Md. Code, Lab. & Empl. § 3-507.1(a)–(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:40:08.037084+00:00",
+        "sha256": "8e3066add50223b421735377f20904784a24a6758a2241417ddb738716766596"
+      }
+    },
+    "US-MD:wage_enforcement:26f890a78296": {
+      "category": "wage_enforcement",
+      "title": "Md. Code, Lab. & Empl. § 3-507.2(a)–(b)",
+      "url": "https://mgaleg.maryland.gov/2026RS/Statute_Web/gle/3-507.2.pdf",
+      "locator": "Md. Code, Lab. & Empl. § 3-507.2(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:40:08.037084+00:00",
+        "sha256": "8a8651aca348fefe60014c745434049d2f5af0658bbebac4daa21c1b51210bd7"
+      }
+    },
+    "US-MD:habitability:e899e375b768": {
+      "category": "habitability",
+      "title": "Md. Code, Real Prop. § 8-211(c)–(e)",
+      "url": "https://mgaleg.maryland.gov/2026RS/Statute_Web/grp/8-211.pdf",
+      "locator": "Md. Code, Real Prop. § 8-211(c)–(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T04:03:03.737204+00:00",
+        "sha256": "6851e9e4228f83512e571c709c429b1eedf349bc83f6ddf720b4ebe29f4ad896"
+      }
+    },
+    "US-MD:tenancy_notice:e60cbba6c93c": {
+      "category": "tenancy_notice",
+      "title": "Md. Code, Real Prop. § 8-211(f)–(g)",
+      "url": "https://mgaleg.maryland.gov/2026RS/Statute_Web/grp/8-211.pdf",
+      "locator": "Md. Code, Real Prop. § 8-211(f)–(g)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T04:03:03.737204+00:00",
+        "sha256": "6851e9e4228f83512e571c709c429b1eedf349bc83f6ddf720b4ebe29f4ad896"
+      }
+    },
+    "US-MD:eviction:c8181894e828": {
+      "category": "eviction",
+      "title": "Md. Code, Real Prop. § 8-401(a), (b)(1) and (2) introductory text",
+      "url": "https://mgaleg.maryland.gov/2026RS/Statute_Web/grp/8-401.pdf",
+      "locator": "Md. Code, Real Prop. § 8-401(a), (b)(1) and (2) introductory text",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T04:03:03.739216+00:00",
+        "sha256": "2eef8ffb719c64b1d09463c22c8aa9faa657eb445ff5a1d2af0ffdbe90ada38c"
+      }
+    },
+    "US-MD:tenancy_notice:7e6f97d12b38": {
+      "category": "tenancy_notice",
+      "title": "Md. Code, Real Prop. § 8-401(c)",
+      "url": "https://mgaleg.maryland.gov/2026RS/Statute_Web/grp/8-401.pdf",
+      "locator": "Md. Code, Real Prop. § 8-401(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T04:03:03.739216+00:00",
+        "sha256": "2eef8ffb719c64b1d09463c22c8aa9faa657eb445ff5a1d2af0ffdbe90ada38c"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-MD:court:ec122365bf76",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-MD:court_directory:47e60c816c66"
+    },
+    {
+      "id": "US-MD:court:facc060ddf3c",
+      "name": "Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-MD:court_directory:1583b337208d"
+    },
+    {
+      "id": "US-MD:court:7bbc63693e7e",
+      "name": "District Court",
+      "level": "trial_directory",
+      "source_id": "US-MD:court_directory:9a9a209f9613"
+    },
+    {
+      "id": "US-MD:court:7230a7b278e1",
+      "name": "Tax Court",
+      "level": "trial_directory",
+      "source_id": "US-MD:court_directory:c88b04ef53fa"
+    },
+    {
+      "id": "US-MD:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-MD:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MD:court:3c9c83e81fef",
+      "name": "District",
+      "level": "limited_trial",
+      "source_id": "US-MD:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-MD:court:388a78e13f43",
+      "name": "Orphan’s",
+      "level": "limited_trial",
+      "source_id": "US-MD:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Md. Code, Cts. & Jud. Proc. § 5-101",
+      "source_id": "US-MD:pi_limitations:d751546e8e10",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Md. Code, Cts. & Jud. Proc. § 5-101",
+      "source_id": "US-MD:written_contract_limitations:d751546e8e10",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Md. Code, Cts. & Jud. Proc. § 5-101",
+      "source_id": "US-MD:oral_contract_limitations:d751546e8e10",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Md. Code, Real Property § 8A-101. Definitions; Md. Code, Real Property § 8-401. Nonpayment of rent",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Md. Code, Com. Law § 13-101 et seq.",
+      "source_id": "US-MD:consumerLaw:891a872ca8c1",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "b849952ff2cdca764969147958b75e": {
+      "citation": "Md. Code, Courts & Judicial Proceedings § 5-101",
+      "source_id": "US-MD:pi_limitations:d751546e8e10",
+      "authority_type": "statute",
+      "text": "A civil action at law shall be filed within three years from the date it accrues unless another provision of the Code provides a different period of time within which an action shall be commenced.",
+      "text_sha256": "8a5ad4f7f83de56966e74fe94c5540bf4c9b87c3ee2527ac65eea3d213f19e71",
+      "publisher_sha256": "9b0d24980d89b383a21b33f73d2cd51299524d5c3780282c68c0712fee9bea74",
+      "retrieved_at": "2026-11-17T19:33:57.967038+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "d32f25383a8eb57efec7d8525cf9f8": {
+      "citation": "Md. Code, Labor and Employment § 3-502",
+      "source_id": "US-MD:wageLaw:2d16f46a0577",
+      "authority_type": "statute",
+      "text": "(a) (1) Each employer: (i) shall set regular pay periods; and (ii) except as provided in paragraph (2) of this subsection, shall pay each employee at least once in every 2 weeks or twice in each month. (2) An employer may pay an administrative, executive, or professional employee less frequently than required under paragraph (1)(ii) of this subsection.",
+      "text_sha256": "da4ac0070bc4ebcb1b27384ecce5ddbd6ddf26af61e21aea8070f5da91e6c0e9",
+      "publisher_sha256": "60c9791a738c7acae49090dd9fa7c7b9f83240d2b90323ef141f6b5cea065231",
+      "retrieved_at": "2026-11-17T19:42:03.930259+00:00",
+      "language": "en",
+      "currentness": "unresolved"
+    },
+    "3ae3282c7c494c0799d118be5b8b10": {
+      "source_id": "US-MD:contract_formation:72c673554849",
+      "authority_type": "statute",
+      "citation": "Md. Code, Commercial Law § 2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "ec357550d15410089f4ac896e3dfc74ada191f709797db2c6d69aba0aed25246",
+      "retrieved_at": "2026-11-18T15:14:27.306699+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "797a1469bb9dda2167a2c4dab62b34": {
+      "source_id": "US-MD:wageLaw:d78b54e793eb",
+      "authority_type": "statute",
+      "citation": "Md. Code, Lab. & Empl. § 3-502(a)–(b)",
+      "text": "(a) (1) Each employer: (i) shall set regular pay periods; and (ii) except as provided in paragraph (2) of this subsection, shall pay each employee at least once in every 2 weeks or twice in each month. (2) An employer may pay an administrative, executive, or professional employee less frequently than required under paragraph (1)(ii) of this subsection. (b) If the regular payday of an employee is a nonworkday, an employer shall pay the employee on the preceding workday.",
+      "text_sha256": "e4eafbc5c37415a7a9869d7a8e375b213a6babab573d6d99e1d501b8d38ab20e",
+      "publisher_sha256": "88922fa20282b3776e13c44e65981f14ddc6a1d0776fc64aefd5794986194e27",
+      "retrieved_at": "2026-11-19T14:10:54.573666+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "05ca878c64e1e298d24589fd9054b1": {
+      "source_id": "US-MD:small_claims:d652a5846ed5",
+      "authority_type": "statute",
+      "citation": "Md. Code, Cts. & Jud. Proc. § 4-405",
+      "text": "The District Court has exclusive jurisdiction over a small claim action, which, for purposes of this section, means a civil action for money in which the amount claimed does not exceed $5,000 exclusive of interest, costs, and attorney’s fees, if attorney’s fees are recoverable by law or contract; and landlord tenant action under §§ 8-401 and 8-402 of the Real Property Article, in which the amount of rent claimed does not exceed $5,000 exclusive of interest and costs.",
+      "text_sha256": "6522c47dab6a3c66eeaf8e4b1d60bbb5ab1c2b4b8c42fc58690bf69dcbb136f5",
+      "publisher_sha256": "5f3830af48820efe88eec6e69264362b0b3494f26949281a8bb7e6bae91f6e36",
+      "retrieved_at": "2026-11-19T19:17:30.188587+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "District Court of Maryland"
+    },
+    "60e946979a241788007d5af747ecc6": {
+      "source_id": "US-MD:consumerLaw:482b69421a8d",
+      "authority_type": "statute",
+      "citation": "Md. Code, Com. Law § 13-303",
+      "text": "A person may not engage in any unfair, abusive, or deceptive trade practice, as defined in this subtitle or as further defined by the Division, in: (1) The sale, lease, rental, loan, or bailment of any consumer goods, consumer realty, or consumer services; (2) The offer for sale, lease, rental, loan, or bailment of consumer goods, consumer realty, or consumer services; (3) The offer for sale of course credit or other educational services; (4) The extension of consumer credit; (5) The collection of consumer debts; or (6) The purchase or offer for purchase of consumer goods or consumer realty from a consumer by a merchant whose business includes paying off consumer debt in connection with the purchase of any consumer goods or consumer realty from a consumer.",
+      "text_sha256": "2b09f381faa440c688518f5856e541773d0d6b9d832dd9dcb01fa5b612b2fece",
+      "publisher_sha256": "0ef0fb336124b2397eaeba8efd437e607c1c784f3b8817c3bb73403a1f0fa36e",
+      "retrieved_at": "2026-11-19T19:26:44.004548+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "00cea44902301507e9d5ec50b819aa": {
+      "source_id": "US-MD:tortfeasor_contribution:e218a8a0b098",
+      "authority_type": "statute",
+      "citation": "Md. Code, Cts. & Jud. Proc. § 3-1402",
+      "text": "(a) The right of contribution exists among joint tort-feasors. (b) A joint tort-feasor is not entitled to a money judgment for contribution until the joint tort-feasor has by payment discharged the common liability or has paid more than a pro rata share of the common liability. (c) A joint tort-feasor who enters into a settlement with the injured person is not entitled to recover contribution from another joint tort-feasor whose liability to the injured person is not extinguished by the settlement.",
+      "text_sha256": "3f8f39e56a883460f005fbeb4fadf3a5600ab62fdf04ff6abffa7e44c3aaf074",
+      "publisher_sha256": "5cd192c2e3bdb0fe6117ab68f8d5bbe16ecd0cd5b6663ae03174f9a527f54a94",
+      "retrieved_at": "2026-11-20T17:22:59.400123+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "27278219bb9e15ddae79ab12cb08b4": {
+      "source_id": "US-MD:debtLaw:cf8572790b84",
+      "authority_type": "statute",
+      "citation": "Md. Code, Com. Law § 14-202",
+      "text": "In collecting or attempting to collect an alleged debt a collector may not: (1) Use or threaten force or violence; (2) Threaten criminal prosecution, unless the transaction involved the violation of a criminal statute; (3) Disclose or threaten to disclose information which affects the debtor’s reputation for credit worthiness with knowledge that the information is false; (4) Except as permitted by statute, contact a person’s employer with respect to a delinquent indebtedness before obtaining final judgment against the debtor; (5) Except as permitted by statute, disclose or threaten to disclose to a person other than the debtor or his spouse or, if the debtor is a minor, his parent, information which affects the debtor’s reputation, whether or not for credit worthiness, with knowledge that the other person does not have a legitimate business need for the information; (6) Communicate with the debtor or a person related to him with the frequency, at the unusual hours, or in any other manner as reasonably can be expected to abuse or harass the debtor; (7) Use obscene or grossly abusive language in communicating with the debtor or a person related to him; (8) Claim, attempt, or threaten to enforce a right with knowledge that the right does not exist; (9) Use a communication which simulates legal or judicial process or gives the appearance of being authorized, issued, or approved by a government, governmental agency, or lawyer when it is not; (10) Engage in unlicensed debt collection activity in violation of the Maryland Collection Agency Licensing Act; or (11) Engage in any conduct that violates §§ 804 through 812 of the federal Fair Debt Collection Practices Act.",
+      "text_sha256": "ed57ca76c9099cbeec0d4eae1839246f90ab2fbadb5ba462f8fd775429eeb532",
+      "publisher_sha256": "bf5103610234513cb4a6a24e49fdc34ab3e227ee9615f3ed6f1b7440dd09c48d",
+      "retrieved_at": "2026-11-20T17:26:26.151122+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "803ff7128a01cf5ac2e535eb613543": {
+      "source_id": "US-MD:deposit:a04b93a84dad",
+      "authority_type": "statute",
+      "citation": "Md. Code, Real Property § 8-203(e)",
+      "text": "(e) (1) Within 45 days after the end of the tenancy, the landlord shall return the security deposit to the tenant together with simple interest which has accrued at the daily U.S. Treasury yield curve rate for 1 year, as of the first business day of each year, or 1.5% a year, whichever is greater, less any damages rightfully withheld. (2) (i) Except as provided in subparagraph (ii) of this paragraph, interest shall accrue at monthly intervals from the day the tenant gives the landlord the security deposit. Interest is not compounded. (ii) No interest is due or payable: 1. Unless the landlord has held the security deposit for at least 6 months; or 2. For any period less than a full month. (3) Interest shall be payable only on security deposits of $50 or more. (4) If the landlord, without a reasonable basis, fails to return any part of the security deposit, plus accrued interest, within 45 days after the termination of the tenancy, the tenant has an action of up to threefold of the withheld amount, plus reasonable attorney’s fees.",
+      "text_sha256": "627d6f1947a621c4d05846ab79fbd117ade6be26c445283e7f9a321d91b66b65",
+      "publisher_sha256": "32db53d903e079527f1f4ce930cd9b1f060a94ba4f283a7193b5dea43ef76c1e",
+      "retrieved_at": "2026-11-20T17:54:36.964736+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "87571f990906f47c38c633674d3a9a": {
+      "source_id": "US-MD:fault:cdc1a3347df3",
+      "authority_type": "opinion",
+      "citation": "Coleman v. Soccer Ass’n of Columbia, 432 Md. 679, slip op. at 15 (2013)",
+      "text": "For this Court to change the common law and abrogate the contributory negligence defense in negligence actions, in the face of the General Assembly’s repeated refusal to do so, would be totally inconsistent with the Court’s long-standing jurisprudence.",
+      "text_sha256": "8f0a291aca9eb4ba266ee25062b54bbda4e47bf881da51028a744cc8974ba450",
+      "publisher_sha256": "f648326d5612de7ff6263709976314cfaf7b77b0a23b3c5e1b35b6da0327d8d8",
+      "retrieved_at": "2026-11-21T03:59:02.784617+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2013-07-09",
+      "court": "Court of Appeals of Maryland",
+      "decision_date": "2013-07-09",
+      "opinion_role": "majority",
+      "procedural_posture": "Certiorari before appellate argument to review a defense judgment on a jury verdict in a personal-injury action.",
+      "publisher_member": "original court opinion, PDF p. 16"
+    },
+    "3e7e65365234e06b9a67d5c07570ce": {
+      "source_id": "US-MD:response:79dbd7fdf5ef",
+      "authority_type": "court_rule",
+      "citation": "Md. Rule 2-321(b)(1)–(6) (January 2004 amendment)",
+      "text": "(b) Exceptions (1) A defendant who is served with an original pleading outside of the State but within the United States shall file an answer within 60 days after being served. (2) A defendant who is served with an original pleading by publication or posting, pursuant to Rule 2-122, shall file an answer within the time specified in the notice. (3) A person who is required by statute of this State to have a resident agent and who is served with an original pleading by service upon the State Department of Assessments and Taxation, the Insurance Commissioner, or some other agency of the State authorized by statute to receive process shall file an answer within 60 days after being served. (4) The United States or an officer or agency of the United States served with an original pleading pursuant to Rule 2-124 (m) or (n) shall file an answer within 60 days after being served. (5) A defendant who is served with an original pleading outside of the United States shall file an answer within 90 days after being served. (6) If rules for special proceedings, or statutes of this State or of the United States, provide for a different time to answer, the answer shall be filed as provided by those rules or statutes.",
+      "text_sha256": "ac203d1a3b2f545080c44bcb919abc30daef49c07732bfc3826aad9d2712ef96",
+      "publisher_sha256": "b63ecd63d184d617b8c745d76a0b0cabc158d96ccbb3e028d8192c56fef7cea8",
+      "retrieved_at": "2026-11-21T04:10:31.113974+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Maryland Court of Appeals Rules Order filed November 12, 2003, effective January 1, 2004",
+      "court": "Maryland Circuit Courts",
+      "effective_from": "2004-01-01",
+      "publisher_member": "printed pp. 35–36"
+    },
+    "09ca3f3e0a6e7fae7a5baaf86e6c48": {
+      "source_id": "US-MD:response:f46ec4ad20f5",
+      "authority_type": "court_rule",
+      "citation": "Md. Rule 3-307(a)–(b) (January 2004 amendment)",
+      "text": "(a) To be Filed with Court - When Service Not Required The defendant, including a counter-defendant, cross-defendant, and third-party defendant, shall file with the court a notice of intention to defend which may include any explanation or ground of defense. When the defendant is represented by an attorney, the notice shall be served in accordance with Rule 1-321. A defendant not represented by an attorney need not serve the notice on any party. (b) Time for Filing (1) Generally Except as provided by subsection (b)(2) of this Rule, the notice shall be filed within 15 days after service of the complaint, counterclaim, cross-claim, or third-party claim. (2) Exceptions A defendant shall file the notice within 60 days after being served if the defendant is: (A) served outside of the State; (B) a person who is required by statute of this State to have a resident agent and who is served by service upon the State Department of Assessments and Taxation, the Insurance Commissioner, or some other agency of the State authorized by statute to receive process; or (C) the United States or an officer or agency of the United States served pursuant to Rule 3-124 (m) or (n).",
+      "text_sha256": "7649c442d11680359826c93aa125e15228b0a13a02f69354279253779ef0da7e",
+      "publisher_sha256": "b63ecd63d184d617b8c745d76a0b0cabc158d96ccbb3e028d8192c56fef7cea8",
+      "retrieved_at": "2026-11-21T04:10:31.113974+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Maryland Court of Appeals Rules Order filed November 12, 2003, effective January 1, 2004",
+      "court": "District Court of Maryland",
+      "effective_from": "2004-01-01",
+      "publisher_member": "printed pp. 116–117"
+    },
+    "64bef02195d0a19bc4103f9bbcc848": {
+      "source_id": "US-MD:negligence_elements:e136d94b51e3",
+      "authority_type": "opinion",
+      "citation": "Bel Air Carpet, Inc. v. Korey Homes Building Group, LLC, No. 1006, Sept. Term 2019, slip op. at 16 (Md. Ct. Spec. App. Jan. 28, 2021)",
+      "text": "To sustain a cause of action for negligence in Maryland, a plaintiff must allege: (1) the defendant was under a duty to protect the plaintiff from harm; (2) a breach of that duty; (3) a causal relationship between the breach and the harm; and 4) the damages suffered.",
+      "text_sha256": "c43265fd5326f2d689466b14e0c2844280278b113f4c805de5b68a30852b2eb9",
+      "publisher_sha256": "973ec6257f37b97948ee520c607e1f1e9b7f461c5223c854206a0025519ac897",
+      "retrieved_at": "2026-11-21T04:18:04.466484+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2021-01-28",
+      "court": "Court of Special Appeals of Maryland",
+      "decision_date": "2021-01-28",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissal of a negligence claim against a lender in a construction-payment dispute.",
+      "publisher_member": "court opinion PDF p. 19"
+    },
+    "16ea8eeeccbdfffa8604547dacf6b8": {
+      "source_id": "US-MD:commencement:e04a32800627",
+      "authority_type": "court_rule",
+      "citation": "Md. Rule 2-101(a) (November 2003 order)",
+      "text": "(a) Generally A civil action is commenced by filing a complaint with a court.",
+      "text_sha256": "3db643862f7e406882fba671849ad803fba688832a1e0215360113f97ef37b4e",
+      "publisher_sha256": "b63ecd63d184d617b8c745d76a0b0cabc158d96ccbb3e028d8192c56fef7cea8",
+      "retrieved_at": "2026-11-21T16:50:42.385209+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Maryland Court of Appeals rules order of November 12, 2003, effective January 1, 2004",
+      "court": "Maryland Circuit Courts",
+      "publisher_member": "Maryland Court of Appeals 152nd rules order, printed p. 15, Rule 2-101(a)"
+    },
+    "d7616e3f63327ff5641374a8278c8e": {
+      "source_id": "US-MD:refiling_after_dismissal:4f428826fe27",
+      "authority_type": "court_rule",
+      "citation": "Md. Rule 2-101(b) (November 2003 order)",
+      "text": "(b) After Certain Dismissals by a United States District Court or a Court of Another State Except as otherwise provided by statute, if an action is filed in a United States District Court or a court of another state within the period of limitations prescribed by Maryland law and that court enters an order of dismissal (1) for lack of jurisdiction, (2) because the court declines to exercise jurisdiction, or (3) because the action is barred by the statute of limitations required to be applied by that court, an action filed in a circuit court within 30 days after the entry of the order of dismissal shall be treated as timely filed in this State.",
+      "text_sha256": "894ca90b6c84a92ce73247d6652170d939b6b61bd3bb0ec1d267b219b29c5fdf",
+      "publisher_sha256": "b63ecd63d184d617b8c745d76a0b0cabc158d96ccbb3e028d8192c56fef7cea8",
+      "retrieved_at": "2026-11-21T16:50:42.385209+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Maryland Court of Appeals rules order of November 12, 2003, effective January 1, 2004",
+      "court": "Maryland Circuit Courts",
+      "publisher_member": "Maryland Court of Appeals 152nd rules order, printed p. 15, Rule 2-101(b), excluding struck deletion text",
+      "effective_from": "2004-01-01"
+    },
+    "77a3737708f5d6c533bb53e5a2255d": {
+      "source_id": "US-MD:refiling_after_dismissal:960c17f5f6a1",
+      "authority_type": "court_rule",
+      "citation": "Md. Rule 2-101(c) (November 2003 order)",
+      "text": "(c) After Dismissal by the District Court of Maryland for Lack of Subject Matter Jurisdiction If an action is filed in the District Court of Maryland within the period of limitations prescribed by Maryland law and the District Court dismisses the action for lack of subject matter jurisdiction, an action filed in a circuit court within 30 days after the entry of the order of dismissal shall be treated as timely filed in the circuit court.",
+      "text_sha256": "ee8db098966a0dc70968411bd21e06cb9d575b6996b01f889ca52a3b46e38325",
+      "publisher_sha256": "b63ecd63d184d617b8c745d76a0b0cabc158d96ccbb3e028d8192c56fef7cea8",
+      "retrieved_at": "2026-11-21T16:50:42.385209+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Maryland Court of Appeals rules order of November 12, 2003, effective January 1, 2004",
+      "court": "Maryland Circuit Courts",
+      "publisher_member": "Maryland Court of Appeals 152nd rules order, printed p. 16, Rule 2-101(c)",
+      "effective_from": "2004-01-01"
+    },
+    "59fab032b17f130fc8e578f66b52ee": {
+      "source_id": "US-MD:refiling_after_dismissal:995686b510a6",
+      "authority_type": "court_rule",
+      "citation": "Md. Rule 3-101(c) (November 2003 order)",
+      "text": "(c) After Dismissal by the Circuit Court for Lack of Subject Matter Jurisdiction If an action is filed in the circuit court within the period of limitations prescribed by Maryland law and the circuit court dismisses the action for lack of subject matter jurisdiction, an action filed in the District Court of Maryland within 30 days after the entry of the order of dismissal shall be treated as timely filed in the District Court.",
+      "text_sha256": "568abd9aa77dd6fabbe4827a2e51c0bcdeafc2465b40625e65cff9a550f60473",
+      "publisher_sha256": "b63ecd63d184d617b8c745d76a0b0cabc158d96ccbb3e028d8192c56fef7cea8",
+      "retrieved_at": "2026-11-21T16:50:42.385209+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Maryland Court of Appeals rules order of November 12, 2003, effective January 1, 2004",
+      "court": "District Court of Maryland",
+      "publisher_member": "Maryland Court of Appeals 152nd rules order, printed p. 99, Rule 3-101(c)",
+      "effective_from": "2004-01-01"
+    },
+    "a5f5fbf1fa681e5b9ef4c479a2aa2d": {
+      "source_id": "US-MD:service:0810bd0e8081",
+      "authority_type": "opinion",
+      "citation": "Conwell Law LLC v. Tung, 221 Md. App. 481, 500 (2015)",
+      "text": "Effective service under Rule 2-121(a) requires delivery of “a copy of the summons, complaint, and all other papers filed with it.” Md. Rule 2-121(a) (emphasis added). Delivery of the Non-Confidential Complaint did not satisfy this rule because that version of the complaint was not the complete version of the complaint filed with the court.",
+      "text_sha256": "26d38e160cbaea1ec87c201500abe7cd2780a6e791e18ab15f608e18900f13ff",
+      "publisher_sha256": "310aff987f01fba0fdb12deddaa93a5b0d34186e49c1d8b30b9673b66a978b7d",
+      "retrieved_at": "2026-11-21T16:54:43.901197+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported Maryland Court of Special Appeals opinion, February 25, 2015",
+      "court": "Court of Special Appeals of Maryland",
+      "publisher_member": "Court opinion pp. 17–18, Part A.1, complete complaint requirement",
+      "decision_date": "2015-02-25",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissal; the appellate court affirmed the dismissal as to Tung for insufficient service."
+    },
+    "5c8c8fa6d19ddfb298c5fb13481261": {
+      "source_id": "US-MD:general_contract_limitations:98b45052fab0",
+      "authority_type": "statute",
+      "citation": "Md. Code, Cts. & Jud. Proc. § 5-101",
+      "text": "A civil action at law shall be filed within three years from the date it accrues unless another provision of the Code provides a different period of time within which an action shall be commenced.",
+      "text_sha256": "8a5ad4f7f83de56966e74fe94c5540bf4c9b87c3ee2527ac65eea3d213f19e71",
+      "publisher_sha256": "a9e8a7e8c8dd673b6bb1990c99a6b81df407ba7dc9d0226df046638bba7078ae",
+      "retrieved_at": "2026-11-21T17:38:38.428539+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Maryland General Assembly statutory text, § 5-101"
+    },
+    "532b065ea1a3df35ce723e5e71c1d7": {
+      "source_id": "US-MD:written_contract_limitations:34a50bfe74b3",
+      "authority_type": "statute",
+      "citation": "Md. Code, Cts. & Jud. Proc. § 5-102",
+      "text": "(a) An action on one of the following specialties shall be filed within 12 years after the cause of action accrues, or within 12 years from the date of the death of the last to die of the principal debtor or creditor, whichever is sooner: (1) Promissory note or other instrument under seal; (2) Bond except a public officer’s bond; (3) Judgment; (4) Recognizance; (5) Contract under seal; or (6) Any other specialty. (b) A payment of principal or interest on a specialty suspends the operation of this section as to the specialty for three years after the date of payment. (c) This section does not apply to: (1) A specialty taken for the use of the State; (2) A deed of trust, mortgage, or promissory note that has been signed under seal and secures or is secured by owner–occupied residential property, as defined in § 7–105.1 of the Real Property Article; or (3) A contract, including a contract under seal, or a promissory note or other instrument under seal that is: (i) Related to an obligation of a consumer to pay consumer debt, as defined in § 5–1201 of this title, that arises from hospital services, as defined in § 19–201 of the Health – General Article; and (ii) Between a consumer and a hospital, as defined in § 19–301 of the Health – General Article.",
+      "text_sha256": "1fa270c0ccfd53d9e85ae6bb90503734ea784d3091154c1c882d7b3701975cc6",
+      "publisher_sha256": "8b788d0f2eca9bc1d01c97c4d99d0e55d4c030ce9df55b3d2c2d126d2031e145",
+      "retrieved_at": "2026-11-21T17:38:38.444714+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Maryland General Assembly statutory text, § 5-102"
+    },
+    "8099401a254076da716eeadee0501b": {
+      "source_id": "US-MD:wrongful_death_limitations:0352e001f41a",
+      "authority_type": "statute",
+      "citation": "Md. Code, Cts. & Jud. Proc. § 3-904(g)",
+      "text": "(g) (1) Except as provided in paragraph (2) or (3) of this subsection, an action under this subtitle shall be filed within three years after the death of the injured person. (2) (i) In this paragraph, “occupational disease” means a disease caused by exposure to any toxic substance in the person’s workplace and contracted by a person in the course of the person’s employment. (ii) If an occupational disease was a cause of a person’s death, an action shall be filed: 1. Within 10 years of the time of death; or 2. Within 3 years of the date when the cause of death was discovered, whichever is the shorter. (3) (i) This paragraph applies only to a wrongful death cause of action arising from conduct that would constitute a criminal homicide under State or federal law. (ii) If knowledge of a cause of action or the identity of a person whose wrongful act contributed to a homicide is kept from a party by the conduct of an adverse party or an accessory or accomplice of an adverse party: 1. The cause of action shall be deemed to accrue at the time the party discovered or should have discovered by the exercise of ordinary diligence the homicide and the identity of the person who contributed to the homicide; 2. A presumption shall exist that the party should have discovered by the exercise of ordinary diligence the identity of the person who contributed to the homicide after: A. A charging document is filed against the person alleged to have participated in the homicide; and B. The charging document is unsealed and available to the public; and 3. An action under this subtitle shall be filed within 3 years after the date that the cause of action accrues.",
+      "text_sha256": "c6a7e53cb301ac29e6043cdeee1e1a5e35b853f6b487870816b940490b97976c",
+      "publisher_sha256": "702083ebe982970a86bba72dc4ebeaf382e21e7bfbe7c4864a92310c5ba4b8fa",
+      "retrieved_at": "2026-11-21T17:38:38.455077+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Maryland General Assembly statutory text, § 3-904(g)"
+    },
+    "687f55b6eac86cef0fea57f6aa5676": {
+      "source_id": "US-MD:service_time_limit:bf8a72e12708",
+      "authority_type": "court_rule",
+      "citation": "Md. Rule 3-113",
+      "text": "A summons is effective for service only if served within 60 days after the date it is issued. A summons not served within that time shall be dormant, renewable only on written request of the plaintiff.",
+      "text_sha256": "618f423e89fff1633d39a6bf4fb43f9a0e2c71535d156de69e468b8d31a5c0c6",
+      "publisher_sha256": "78067dc19a9d68f5759234c5b49f67213ff1fd4c27b99b6e1e714cbfb7194248",
+      "retrieved_at": "2026-11-22T03:01:31.198695+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Maryland 211th Rules Order of September 30, 2022",
+      "court": "District Court of Maryland",
+      "publisher_member": "Printed page 24, excluding struck 30-day language; applies to actions begun on or after the effective date and, insofar as practicable, then-pending actions",
+      "effective_from": "2023-01-01",
+      "effective_until": "2023-07-01"
+    },
+    "33e6ca42c2ad5d4365bb3370d8caf8": {
+      "source_id": "US-MD:service_time_limit:04e8c5f32bf9",
+      "authority_type": "court_rule",
+      "citation": "Md. Rule 3-113",
+      "text": "(a) Generally A summons is effective for service only if served within 60 days after the date it is issued. A summons not served within that time shall be dormant, renewable only on written request of the plaintiff. […] (b) Judgment on Affidavit – Military Service Affidavit A request for renewal of a summons in an action seeking judgment on affidavit pursuant to Rule 3-306 shall be accompanied by either (1) a statement that there has been no change to the information provided in the most recently filed military service affidavit or (2) a supplemental military service affidavit in compliance with § 3931 of the Servicemembers Civil Relief Act, 50 U.S.C. §§ 3901 et seq.",
+      "text_sha256": "3c5cfbedfb8322cd339f7ff278d53f2dd98260cabb6c1cacec3077d766823cb3",
+      "publisher_sha256": "5585d2f5f650c64c6558a884d194ca9eb0d2d93d5849b825546339fe220f9d6c",
+      "retrieved_at": "2026-11-22T03:01:28.221408+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Maryland 214th Rules Order of April 21, 2023",
+      "court": "District Court of Maryland",
+      "publisher_member": "Printed page 66; applies to actions begun on or after July 1, 2023 and, insofar as practicable, then-pending actions; separate judgment-on-affidavit requirement",
+      "effective_from": "2023-07-01"
+    },
+    "782c880fe10ba52a8430b0c6d2df5d": {
+      "source_id": "US-MD:consumer_agency:ea2de70dd7f1",
+      "authority_type": "statute",
+      "citation": "Md. Code, Com. Law § 13-406(a)–(c)",
+      "text": "(a) The Attorney General may seek an injunction to prohibit a person who has engaged or is engaging in a violation of this title from continuing or engaging in the violation. (b) The Attorney General shall serve notice of the general relief sought on the alleged violator at least seven days before the action for an injunction is filed. (c) The court may enter any order of judgment necessary to: (1) Prevent the use by a person of any prohibited practice; (2) Restore to a person any money or real or personal property acquired from him by means of any prohibited practice; or (3) Appoint a receiver in case of willful violation of this title.",
+      "text_sha256": "bea4c70fd0600bfe38c258a32c3ba548abbf67b94f2c717772420f980f39894b",
+      "publisher_sha256": "26f9393c1a43cc8fcc38b73379eea94af9786b7aecbebdb18139b5b78c0c16b7",
+      "retrieved_at": "2026-11-22T03:30:44.467774+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Maryland General Assembly 2026 Regular Session statutory publication, injunction, seven-day notice and court relief."
+    },
+    "757e02835908553aa0e3c866d72962": {
+      "source_id": "US-MD:labor_agency:71d644b0d839",
+      "authority_type": "statute",
+      "citation": "Md. Code, Lab. & Empl. § 3-507.1(a)–(c)",
+      "text": "(a) On receipt of a complaint for failure to pay wages that do not exceed $5,000, the Commissioner shall: (1) send a copy of the complaint to the employer alleged to have failed to pay wages; and (2) require a written response to the complaint within 15 days. (b) (1) The Commissioner: (i) shall review the complaint and any response to it; and (ii) may investigate the claim. (2) On the basis of the review and any investigation, the Commissioner may: (i) issue an order to pay wages under subsection (c) of this section if the Commissioner determines that this subtitle has been violated; or (ii) dismiss the claim. (c) (1) The Commissioner may issue an order to pay wages that: (i) describes the alleged violation; (ii) directs payment of wages to the complainant; and (iii) if appropriate, orders the payment of interest at the rate of 5% per year accruing from the date the wages are owed. (2) The Commissioner shall send the order to pay wages to the complainant and to the employer at the employer’s last known business address by both regular mail and certified mail, return receipt requested. (3) Within 30 days after receipt of the order to pay wages, the employer may request a de novo administrative hearing, which shall be conducted in accordance with Title 10, Subtitle 2 of the State Government Article. (4) On receipt of a request for a hearing, the Commissioner shall schedule a hearing. (5) If a hearing is not requested, the order to pay wages shall become a final order of the Commissioner. (6) (i) If a petition for review is not filed within 30 days of the issuance of the final order, the Commissioner may proceed in District Court of the county where the employer resides or has a place of business to enforce payment. (ii) In a proceeding under this subsection, the Commissioner is entitled to judgment in the amount of the order to pay wages and any interest due on a showing that: 1. the order to pay wages and interest, if any, was assessed against the employer; 2. no appeal is pending; 3. the ordered wages and interest, if any, are wholly or partly unpaid; and 4. the employer was duly served with a copy of the order to pay wages and interest, if any, in accordance with this section.",
+      "text_sha256": "4e55bf05659465f1887bbb692624b7858ee4decb6d94fa90871bfc3b7016b8c9",
+      "publisher_sha256": "8e3066add50223b421735377f20904784a24a6758a2241417ddb738716766596",
+      "retrieved_at": "2026-11-22T03:40:08.037084+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Maryland General Assembly 2026 Regular Session publication. Commissioner’s complaint, determination and de novo hearing process for qualifying amounts."
+    },
+    "cf3f0593bc04b7668aacf0252ddcf0": {
+      "source_id": "US-MD:wage_enforcement:26f890a78296",
+      "authority_type": "statute",
+      "citation": "Md. Code, Lab. & Empl. § 3-507.2(a)–(b)",
+      "text": "(a) Notwithstanding any remedy available under § 3–507 of this subtitle, if an employer fails to pay an employee in accordance with § 3–502 or § 3–505 of this subtitle, after 2 weeks have elapsed from the date on which the employer is required to have paid the wages, the employee may bring an action against the employer to recover the unpaid wages. (b) If, in an action under subsection (a) of this section, a court finds that an employer withheld the wage of an employee in violation of this subtitle and not as a result of a bona fide dispute, the court may award the employee an amount not exceeding 3 times the wage, and reasonable counsel fees and other costs.",
+      "text_sha256": "ff4558e5d12787da9b160ea665260aa31a2a3f9550879bfe953d2a017a3ce309",
+      "publisher_sha256": "8a8651aca348fefe60014c745434049d2f5af0658bbebac4daa21c1b51210bd7",
+      "retrieved_at": "2026-11-22T03:40:08.037084+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Maryland General Assembly 2026 Regular Session publication. Private recovery for specified wage-payment violations, and enhanced relief when no bona fide dispute exists."
+    },
+    "57949db1a122ab26c01aa417b804d2": {
+      "source_id": "US-MD:habitability:e899e375b768",
+      "authority_type": "statute",
+      "citation": "Md. Code, Real Prop. § 8-211(c)–(e)",
+      "text": "(c) (1) Except as provided in paragraph (2) of this subsection, this section applies to all residential dwelling units leased for the purpose of human habitation within the State whether they are: (i) Publicly or privately owned; or (ii) Single or multiple units. (2) This section does not apply to farm tenancies. (d) This section provides a remedy and imposes an obligation on landlords to repair and eliminate conditions and defects which constitute, or if not promptly corrected will constitute, a fire hazard or a serious and substantial threat to the life, health, or safety of occupants, including: (1) Lack of heat, light, electricity, or hot or cold running water, except where the tenant is responsible for the payment of the utilities and the lack thereof is the direct result of the tenant’s failure to pay the charges; (2) Lack of adequate sewage disposal facilities; (3) Infestation of rodents in two or more dwelling units; (4) The existence of any structural defect which presents a serious and substantial threat to the physical safety of the occupants; or (5) The existence of any condition which presents a health or fire hazard to the dwelling unit. (e) (1) This section does not apply to a landlord’s failure to repair and eliminate minor defects or, in those locations governed by such codes, housing code violations of a nondangerous nature. (2) There is a rebuttable presumption that the following conditions, when they do not present a serious and substantial threat to the life, health, and safety of the occupants, are not covered by this section: (i) Any defect which merely reduces the aesthetic value of the leased premises, such as the lack of fresh paint, rugs, carpets, paneling, or other decorative amenities; (ii) Small cracks in the walls, floors, or ceilings; (iii) The absence of linoleum or tile on the floors, provided that they are otherwise safe and structurally sound; or (iv) The absence of air conditioning.",
+      "text_sha256": "cebfb14a6399e9098426b475e7ceb7a96c0b2786b3f8410402abf9a84b8826bd",
+      "publisher_sha256": "6851e9e4228f83512e571c709c429b1eedf349bc83f6ddf720b4ebe29f4ad896",
+      "retrieved_at": "2026-11-22T04:03:03.737204+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Maryland General Assembly 2026 Regular Session publication. Serious conditions, farm-tenancy exclusion and minor-condition presumptions."
+    },
+    "70a8cf0bd82128b81d82c374abbdc9": {
+      "source_id": "US-MD:tenancy_notice:e60cbba6c93c",
+      "authority_type": "statute",
+      "citation": "Md. Code, Real Prop. § 8-211(f)–(g)",
+      "text": "(f) (1) In order to employ the remedies provided by this section, the tenant shall notify the landlord of the existence of the defects or conditions. (2) Notice shall be given by: (i) A written communication sent by certified mail listing the asserted conditions or defects; (ii) Actual notice of the defects or conditions; or (iii) A written violation, condemnation or other notice from an appropriate State, county, municipal, or local government agency stating the asserted conditions or defects. (g) (1) The landlord has a reasonable time after receipt of notice in which to make the repairs or correct the conditions. (2) The length of time deemed to be reasonable is a question of fact for the court, taking into account the severity of the defects or conditions and the danger which they present to the occupants. (3) There is a rebuttable presumption that a period in excess of 30 days from receipt of notice is unreasonable.",
+      "text_sha256": "b71e1b1a23bee2ba53d76123061c82abda22e5d619727200a0d05e25d0417d61",
+      "publisher_sha256": "6851e9e4228f83512e571c709c429b1eedf349bc83f6ddf720b4ebe29f4ad896",
+      "retrieved_at": "2026-11-22T04:03:03.737204+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Maryland General Assembly 2026 Regular Session publication. Notice alternatives and rebuttable presumption for time to repair."
+    },
+    "a6e1007d2b8001d8d14e99a10fb038": {
+      "source_id": "US-MD:eviction:c8181894e828",
+      "authority_type": "statute",
+      "citation": "Md. Code, Real Prop. § 8-401(a), (b)(1) and (2) introductory text",
+      "text": "(a) Whenever the tenant or tenants fail to pay the rent when due and payable, it shall be lawful for the landlord to have again and repossess the premises in accordance with this section. (b) (1) Whenever any landlord shall desire to repossess any premises to which the landlord is entitled under the provisions of subsection (a) of this section, the landlord or the landlord’s duly qualified agent or attorney shall ensure that the landlord has completed the procedures required under subsection (c) of this section. (2) Subject to § 8–406 of this subtitle and after completing the procedures required under subsection (c) of this section, a landlord or the landlord’s duly qualified agent or attorney may file the landlord’s written complaint under oath or affirmation, in the District Court of the county wherein the property is situated:",
+      "text_sha256": "1f27d7dfa253cb10138eb763ae059acc8451b48f1676e0070cfebe0abdc15820",
+      "publisher_sha256": "2eef8ffb719c64b1d09463c22c8aa9faa657eb445ff5a1d2af0ffdbe90ada38c",
+      "retrieved_at": "2026-11-22T04:03:03.739216+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "District Court of Maryland",
+      "publisher_member": "Maryland General Assembly 2026 Regular Session publication. Nonpayment possession and complaint routing, subject to § 8-406 and subsection (c)."
+    },
+    "724d746c4a8770a9ea30fe39a755c0": {
+      "source_id": "US-MD:tenancy_notice:7e6f97d12b38",
+      "authority_type": "statute",
+      "citation": "Md. Code, Real Prop. § 8-401(c)",
+      "text": "(c) (1) Before a landlord may file a complaint under this section, the landlord shall provide to the tenant a written notice of the landlord’s intent to file a claim in the District Court against the tenant to recover possession of the residential premises if the tenant does not cure within 10 days after the written notice is provided to the tenant. (2) (i) The written notice required under paragraph (1) of this subsection shall be in a form created by the Maryland Judiciary and notice shall occur when the notice is: 1. Sent by first–class mail, certificate of mailing; 2. Affixed to the door of the premises; or 3. If elected by the tenant, sent by electronic delivery in at least one of the following forms: A. An e–mail message; B. A text message; or C. Through an electronic tenant portal. (ii) Electronic notice under subparagraph (i)3 of this paragraph shall provide the landlord with proof of the transmission of the notice. (3) (i) A complaint for repossession filed in accordance with this section shall include a statement that states and affirms the date on which the landlord provided the notice required under paragraph (1) of this subsection. (ii) A tenant may challenge assertions made by a landlord under this paragraph, and the court may dismiss the landlord’s complaint on a showing of sufficient cause.",
+      "text_sha256": "55c1f9cc0d93e0d346b24e07590ce16a28f5846b098b93724a948aff766a5dda",
+      "publisher_sha256": "2eef8ffb719c64b1d09463c22c8aa9faa657eb445ff5a1d2af0ffdbe90ada38c",
+      "retrieved_at": "2026-11-22T04:03:03.739216+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "District Court of Maryland",
+      "publisher_member": "Maryland General Assembly 2026 Regular Session publication. Residential failure-to-pay rent notice, Judiciary form and proof requirements."
+    }
+  },
+  "fault_allocation": {
+    "regime": "contributory",
+    "source_id": "US-MD:fault:cdc1a3347df3",
+    "passage_selector": "87571f990906f47c38c633674d3a9a",
+    "currentness": "historical",
+    "qualification": "The majority retained the common-law contributory negligence defense in 2013. The passage does not establish subsequent treatment, exceptions, or statutory modifications."
+  }
+}

@@ -1,0 +1,1189 @@
+{
+  "jurisdiction": "US-CT",
+  "version": "1",
+  "sources": {
+    "US-CT:statutes:07ce012e5334": {
+      "category": "statutes",
+      "title": "General Statutes of Connecticut",
+      "url": "https://www.cga.ct.gov/current/pub/titles.htm",
+      "directory": "codes",
+      "locator": "Connecticut"
+    },
+    "US-CT:constitution:680b2db9a5f0": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "https://www.cga.ct.gov/asp/Content/constitutions/CTConstitution.htm",
+      "directory": "codes",
+      "locator": "Connecticut"
+    },
+    "US-CT:legislature:6a3a23523cc8": {
+      "category": "legislature",
+      "title": "General Assembly",
+      "url": "https://www.cga.ct.gov",
+      "directory": "codes",
+      "locator": "Connecticut"
+    },
+    "US-CT:labor_agency:7d25cd0a268e": {
+      "category": "labor_agency",
+      "title": "www.ct.gov/dol",
+      "url": "http://www.ct.gov/dol",
+      "directory": "labor",
+      "locator": "Connecticut"
+    },
+    "US-CT:business_registration:9d9522f60e77": {
+      "category": "business_registration",
+      "title": "Connecticut Secretary of State",
+      "url": "https://www.concord-sots.ct.gov/CONCORD/NewBusinessFormation/BusinessRegistrationTool.jsp?pInquiry=false",
+      "directory": "business",
+      "locator": "Connecticut"
+    },
+    "US-CT:commercial_code:b457e88a776a": {
+      "category": "commercial_code",
+      "title": "Uniform Commercial Code",
+      "url": "http://www.cga.ct.gov/current/pub/title_42a.htm",
+      "directory": "ucc",
+      "locator": "Connecticut"
+    },
+    "US-CT:civil_rules:049304d9840d": {
+      "category": "civil_rules",
+      "title": "Civil Process, Service and Time for Return",
+      "url": "http://www.cga.ct.gov/current/pub/chap_896.htm",
+      "directory": "procedure",
+      "locator": "Connecticut"
+    },
+    "US-CT:consumer_agency:90404594ec5b": {
+      "category": "consumer_agency",
+      "title": "Connecticut (CT)",
+      "url": "https://portal.ct.gov/dcp",
+      "directory": "consumer",
+      "locator": "Connecticut (CT)"
+    },
+    "US-CT:judiciary:40513dbd8c69": {
+      "category": "judiciary",
+      "title": "Judicial Branch",
+      "url": "https://www.jud.ct.gov/",
+      "directory": "doj-CT",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-CT:court_directory:7638e5c0cebd": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://jud.ct.gov/supremecourt/",
+      "directory": "doj-CT",
+      "locator": "Supreme Court"
+    },
+    "US-CT:court_directory:9162720aa65f": {
+      "category": "court_directory",
+      "title": "Appellate Court",
+      "url": "http://jud.ct.gov/appellatecourt/",
+      "directory": "doj-CT",
+      "locator": "Appellate Court"
+    },
+    "US-CT:court_directory:298396278e2a": {
+      "category": "court_directory",
+      "title": "Superior Court",
+      "url": "https://www.jud.ct.gov/external/super/",
+      "directory": "doj-CT",
+      "locator": "Superior Court"
+    },
+    "US-CT:court_directory:c9362edf9673": {
+      "category": "court_directory",
+      "title": "Probate Court",
+      "url": "http://www.ctprobate.gov/",
+      "directory": "doj-CT",
+      "locator": "Probate Court"
+    },
+    "US-CT:forms:e3b48a48432d": {
+      "category": "forms",
+      "title": "Forms",
+      "url": "http://www.jud.ct.gov/webforms/",
+      "directory": "doj-CT",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-CT:constitution:bd15b928f4d9": {
+      "category": "constitution",
+      "title": "Constitution and History",
+      "url": "https://www.cga.ct.gov/asp/menu/cgastatutes.asp",
+      "directory": "doj-CT",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-CT:statutes:b20e40a28821": {
+      "category": "statutes",
+      "title": "Statutes",
+      "url": "http://www.cga.ct.gov/lco/statutes.asp",
+      "directory": "doj-CT",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-CT:regulations:cc8dff79690a": {
+      "category": "regulations",
+      "title": "State Register and Manual",
+      "url": "http://portal.ct.gov/SOTS/Register-Manual/Register-Manual/Welcome-to-the-Register-and-Manual",
+      "directory": "doj-CT",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-CT:regulations:b5a4bbf93fff": {
+      "category": "regulations",
+      "title": "eRegulations",
+      "url": "https://eregulations.ct.gov/eRegsPortal/",
+      "directory": "doj-CT",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-CT:pi_limitations:515ac977187a": {
+      "category": "pi_limitations",
+      "title": "Conn. Gen. Stat. § 52-584",
+      "url": "https://www.cga.ct.gov/current/pub/chap_926.htm#sec_52-584",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.cga.ct.gov/current/pub/chap_926.htm",
+        "retrieved_at": "2026-11-17T19:33:56.045083+00:00",
+        "http_status": "200",
+        "sha256": "29bd29d8f82067f1a90cfffa4b5e1ba158aafe60a3bcd979838f464ad7f60329",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CT:written_contract_limitations:8b82844dcc78": {
+      "category": "written_contract_limitations",
+      "title": "Conn. Gen. Stat. § 52-576(a)",
+      "url": "https://www.cga.ct.gov/current/pub/chap_926.htm#sec_52-576",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.cga.ct.gov/current/pub/chap_926.htm",
+        "retrieved_at": "2026-11-17T19:33:56.045083+00:00",
+        "http_status": "200",
+        "sha256": "29bd29d8f82067f1a90cfffa4b5e1ba158aafe60a3bcd979838f464ad7f60329",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CT:oral_contract_limitations:9a6665759917": {
+      "category": "oral_contract_limitations",
+      "title": "Conn. Gen. Stat. § 52-581",
+      "url": "https://www.cga.ct.gov/current/pub/chap_926.htm#sec_52-581",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.cga.ct.gov/current/pub/chap_926.htm",
+        "retrieved_at": "2026-11-17T19:33:56.045083+00:00",
+        "http_status": "200",
+        "sha256": "29bd29d8f82067f1a90cfffa4b5e1ba158aafe60a3bcd979838f464ad7f60329",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CT:small_claims:020bc8f6d7c0": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://jud.ct.gov/external/super/E-services/efile/How_DoIFile_New_SmClaims_Case.pdf",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://jud.ct.gov/external/super/E-services/efile/How_DoIFile_New_SmClaims_Case.pdf",
+        "retrieved_at": "2026-11-17T19:41:57.282734+00:00",
+        "http_status": "301",
+        "sha256": null,
+        "health": "redirected"
+      }
+    },
+    "US-CT:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 26"
+    },
+    "US-CT:wageLaw:8ca6435c482f": {
+      "category": "wageLaw",
+      "title": "Wage and hour publication",
+      "url": "https://portal.ct.gov/dol/divisions/wage-and-workplace-standards/wage-and-hour",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://portal.ct.gov/dol/divisions/wage-and-workplace-standards/wage-and-hour",
+        "retrieved_at": "2026-11-17T19:42:32.074680+00:00",
+        "http_status": "200",
+        "sha256": "81f51a8597093f092498a3f963fdfec70d88289814f7fd4bc2fd1593ac8ce6e4",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CT:debtLaw:33d6e73c0061": {
+      "category": "debtLaw",
+      "title": "Debt collection publication",
+      "url": "https://portal.ct.gov/DOB/Consumer-Credit-Licensing-Info/Consumer-Credit-Licensing-Information/Collection-Agency-Licensing-Information",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://portal.ct.gov/DOB/Consumer-Credit-Licensing-Info/Consumer-Credit-Licensing-Information/Collection-Agency-Licensing-Information",
+        "retrieved_at": "2026-11-17T19:42:24.043374+00:00",
+        "http_status": "200",
+        "sha256": "43a33c6e33547942740235f99924da678d2470571f0e962af5a27f78306f77d6",
+        "health": "manual_review_required"
+      }
+    },
+    "US-CT:fault:33b05f66ddff": {
+      "category": "fault",
+      "title": "Conn. Gen. Stat. § 52-572h(b)",
+      "url": "https://www.cga.ct.gov/2025/pub/chap_925.htm",
+      "directory": null,
+      "locator": "Conn. Gen. Stat. § 52-572h(b)",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:32.783493+00:00",
+        "sha256": "13c746baac0113d9968df4063b8fd30d7883ef86e0d109ae276acc77b439e7e5"
+      }
+    },
+    "US-CT:consumerLaw:21e24ce915e0": {
+      "title": "Conn. Gen. Stat. § 42-110a et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.cga.ct.gov/current/pub/chap_735a.htm",
+      "directory": "consumer_statutes_index",
+      "locator": "Conn. Gen. Stat. § 42-110a et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-CT:consumerLaw:b833f7dbb849": {
+      "category": "consumerLaw",
+      "title": "Conn. Gen. Stat. § 42-110b(a)",
+      "url": "https://www.cga.ct.gov/current/pub/chap_735a.htm",
+      "locator": "Conn. Gen. Stat. § 42-110b(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T21:03:51.350640+00:00",
+        "sha256": "670245dbbeca6b25d41fb16906546308e7c5a214c6a67ccde76c28deca00c796"
+      }
+    },
+    "US-CT:contract_formation:3dffa641c276": {
+      "category": "contract_formation",
+      "title": "Conn. Gen. Stat. § 42a-2-204",
+      "url": "https://www.cga.ct.gov/2025/pub/art_002.htm",
+      "locator": "Conn. Gen. Stat. § 42a-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:26.543556+00:00",
+        "sha256": "eccbb0d711a42bfa6b23924391a796a784b42f2818a626fed4514b9900e3dab8"
+      }
+    },
+    "US-CT:contract_damages:353707f163a7": {
+      "category": "contract_damages",
+      "title": "Conn. Gen. Stat. § 42a-2-714",
+      "url": "https://www.cga.ct.gov/2025/pub/art_002.htm",
+      "locator": "Conn. Gen. Stat. § 42a-2-714",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:26.543556+00:00",
+        "sha256": "eccbb0d711a42bfa6b23924391a796a784b42f2818a626fed4514b9900e3dab8"
+      }
+    },
+    "US-CT:wageLaw:68977cad0702": {
+      "category": "wageLaw",
+      "title": "Conn. Gen. Stat. § 31-71c",
+      "url": "https://cga.ct.gov/current/PUB/chap_558.htm",
+      "locator": "Conn. Gen. Stat. § 31-71c",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T14:10:56.026660+00:00",
+        "sha256": "ed6642bd9e7b553dea4399e6c18b777f0b529906d8378556eb220e6cd8471692"
+      }
+    },
+    "US-CT:commencement:372d17565ec7": {
+      "category": "commencement",
+      "title": "Conn. Gen. Stat. § 52-45a",
+      "url": "https://prdext2.cga.ct.gov/2025/pub/chap_896.htm",
+      "locator": "Conn. Gen. Stat. § 52-45a",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:34.053179+00:00",
+        "sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5"
+      }
+    },
+    "US-CT:pi_limitations:1c9023a415fb": {
+      "category": "pi_limitations",
+      "title": "Conn. Gen. Stat. § 52-584",
+      "url": "https://www.cga.ct.gov/2025/pub/chap_926.htm",
+      "locator": "Conn. Gen. Stat. § 52-584",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:20.736451+00:00",
+        "sha256": "29bd29d8f82067f1a90cfffa4b5e1ba158aafe60a3bcd979838f464ad7f60329"
+      }
+    },
+    "US-CT:deposit:3d126073195f": {
+      "category": "deposit",
+      "title": "Conn. Gen. Stat. § 47a-21(d)(1)–(2)",
+      "url": "https://cga.ct.gov/current/pub/chap_831.htm",
+      "locator": "Conn. Gen. Stat. § 47a-21(d)(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:17.050995+00:00",
+        "sha256": "f8033276d6563ccdf4a8ee34b498405ec3090519f48ce97b0eb0845103c99a22"
+      }
+    },
+    "US-CT:debtLaw:64aa8c86b1ee": {
+      "category": "debtLaw",
+      "title": "Conn. Gen. Stat. § 36a-646 (2025)",
+      "url": "https://www.cga.ct.gov/2025/pub/chap_669.htm",
+      "locator": "Conn. Gen. Stat. § 36a-646 (2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:26:26.809560+00:00",
+        "sha256": "2e249d87b267658dda0f0660b905932de802aa09b85723773d05476399821dc4"
+      }
+    },
+    "US-CT:negligence_elements:226bacb57abd": {
+      "category": "negligence_elements",
+      "title": "Roux v. Coffey, 230 Conn. App. 130, 139 (2025)",
+      "url": "https://www.jud.ct.gov/lawjournal/Docs/Appellate/2025/3/ap230_8629.pdf",
+      "locator": "Roux v. Coffey, 230 Conn. App. 130, 139 (2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:11:12.702520+00:00",
+        "sha256": "a596f1aa946c36d8ce3b376894c4754ba8a8ba37f68fe2b35f662215d81ba664"
+      }
+    },
+    "US-CT:response:a6f4a4b92c3f": {
+      "category": "response",
+      "title": "Kaye v. Housman, 184 Conn. App. 437 (2018) (quoting Practice Book § 10-8)",
+      "url": "https://www.jud.ct.gov/external/supapp/Cases/AROap/AP184/184AP437.pdf",
+      "locator": "Kaye v. Housman, 184 Conn. App. 437 (2018) (quoting Practice Book § 10-8)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:29:01.421868+00:00",
+        "sha256": "ad9515f4242d029ed00b6a0e9299595917d8505f155f3bdc7480b535422cbfa6"
+      }
+    },
+    "US-CT:small_claims:32d2d4920681": {
+      "category": "small_claims",
+      "title": "Conn. Gen. Stat. § 51-15(d) (2025, small-claims monetary scope and exceptions)",
+      "url": "https://www.cga.ct.gov/2025/pub/chap_870.htm",
+      "locator": "Conn. Gen. Stat. § 51-15(d) (2025, small-claims monetary scope and exceptions)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:36:54.102400+00:00",
+        "sha256": "711abd246b895b297afea915d50f74ad0a846b78ff5fe70360286bc31a20af2e"
+      }
+    },
+    "US-CT:service:9b025b5b7b3a": {
+      "category": "service",
+      "title": "Conn. Gen. Stat. § 52-54",
+      "url": "https://www.cga.ct.gov/current/pub/chap_896.htm",
+      "locator": "Conn. Gen. Stat. § 52-54",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:22:56.694411+00:00",
+        "sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5"
+      }
+    },
+    "US-CT:service:2f9fda83cba5": {
+      "category": "service",
+      "title": "Conn. Gen. Stat. § 52-57(a)",
+      "url": "https://www.cga.ct.gov/current/pub/chap_896.htm",
+      "locator": "Conn. Gen. Stat. § 52-57(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:22:56.694411+00:00",
+        "sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5"
+      }
+    },
+    "US-CT:service_business_entity:7585a17c66b1": {
+      "category": "service_business_entity",
+      "title": "Conn. Gen. Stat. § 52-57(c)",
+      "url": "https://www.cga.ct.gov/current/pub/chap_896.htm",
+      "locator": "Conn. Gen. Stat. § 52-57(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:22:56.694411+00:00",
+        "sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5"
+      }
+    },
+    "US-CT:summons_issuance:3b9d759ccbf7": {
+      "category": "summons_issuance",
+      "title": "Conn. Practice Book § 8-1(a) (2026 ed.)",
+      "url": "https://www.jud.ct.gov/publications/PracticeBook/PB.pdf",
+      "locator": "Conn. Practice Book § 8-1(a) (2026 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:23:08.401292+00:00",
+        "sha256": "bb406ab49314de7f6b49f5de43e1b2e354465bb70ce52ecc37412ec058db69d6"
+      }
+    },
+    "US-CT:habitability:1e46c166910c": {
+      "category": "habitability",
+      "title": "Conn. Gen. Stat. § 47a-7(a)–(b)",
+      "url": "https://www.cga.ct.gov/2025/pub/chap_830.htm",
+      "locator": "Conn. Gen. Stat. § 47a-7(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:02.748960+00:00",
+        "sha256": "1bf22fd9fbafb365abd04305885777f7e02a5d61faf6be3390427421054479e1"
+      }
+    },
+    "US-CT:habitability:96bc223fbc68": {
+      "category": "habitability",
+      "title": "Conn. Gen. Stat. § 47a-7(c)–(d)",
+      "url": "https://www.cga.ct.gov/2025/pub/chap_830.htm",
+      "locator": "Conn. Gen. Stat. § 47a-7(c)–(d)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:02.748960+00:00",
+        "sha256": "1bf22fd9fbafb365abd04305885777f7e02a5d61faf6be3390427421054479e1"
+      }
+    },
+    "US-CT:tenant_remedies:7d7d971d2b16": {
+      "category": "tenant_remedies",
+      "title": "Conn. Gen. Stat. § 47a-12",
+      "url": "https://www.cga.ct.gov/2025/pub/chap_830.htm",
+      "locator": "Conn. Gen. Stat. § 47a-12",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:02.748960+00:00",
+        "sha256": "1bf22fd9fbafb365abd04305885777f7e02a5d61faf6be3390427421054479e1"
+      }
+    },
+    "US-CT:tenant_remedies:a4ff124aecd2": {
+      "category": "tenant_remedies",
+      "title": "Conn. Gen. Stat. § 47a-13",
+      "url": "https://www.cga.ct.gov/2025/pub/chap_830.htm",
+      "locator": "Conn. Gen. Stat. § 47a-13",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:02.748960+00:00",
+        "sha256": "1bf22fd9fbafb365abd04305885777f7e02a5d61faf6be3390427421054479e1"
+      }
+    },
+    "US-CT:consumer_private_action:45a0ebd6c997": {
+      "category": "consumer_private_action",
+      "title": "Conn. Gen. Stat. § 42-110g(a)",
+      "url": "https://www.cga.ct.gov/2025/pub/chap_735a.htm",
+      "locator": "Conn. Gen. Stat. § 42-110g(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:02.616680+00:00",
+        "sha256": "670245dbbeca6b25d41fb16906546308e7c5a214c6a67ccde76c28deca00c796"
+      }
+    },
+    "US-CT:consumer_remedies:3af27059de2e": {
+      "category": "consumer_remedies",
+      "title": "Conn. Gen. Stat. § 42-110g(d)",
+      "url": "https://www.cga.ct.gov/2025/pub/chap_735a.htm",
+      "locator": "Conn. Gen. Stat. § 42-110g(d)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:02.616680+00:00",
+        "sha256": "670245dbbeca6b25d41fb16906546308e7c5a214c6a67ccde76c28deca00c796"
+      }
+    },
+    "US-CT:consumer_limitations:c0cc48176ebc": {
+      "category": "consumer_limitations",
+      "title": "Conn. Gen. Stat. § 42-110g(f)",
+      "url": "https://www.cga.ct.gov/2025/pub/chap_735a.htm",
+      "locator": "Conn. Gen. Stat. § 42-110g(f)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:02.616680+00:00",
+        "sha256": "670245dbbeca6b25d41fb16906546308e7c5a214c6a67ccde76c28deca00c796"
+      }
+    },
+    "US-CT:wage_enforcement:3ef67a727068": {
+      "category": "wage_enforcement",
+      "title": "Conn. Gen. Stat. § 31-72",
+      "url": "https://www.cga.ct.gov/2025/pub/chap_558.htm",
+      "locator": "Conn. Gen. Stat. § 31-72",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:02.687272+00:00",
+        "sha256": "ed6642bd9e7b553dea4399e6c18b777f0b529906d8378556eb220e6cd8471692"
+      }
+    },
+    "US-CT:wrongful_death_limitations:6f86ac3178e9": {
+      "category": "wrongful_death_limitations",
+      "title": "Conn. Gen. Stat. § 52-555(a)–(b)",
+      "url": "https://www.cga.ct.gov/2025/pub/chap_925.htm",
+      "locator": "Conn. Gen. Stat. § 52-555(a)–(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:02.747957+00:00",
+        "sha256": "13c746baac0113d9968df4063b8fd30d7883ef86e0d109ae276acc77b439e7e5"
+      }
+    },
+    "US-CT:wage_limitations:07ae24c299bc": {
+      "category": "wage_limitations",
+      "title": "Conn. Gen. Stat. § 52-596",
+      "url": "https://www.cga.ct.gov/2025/pub/chap_926.htm",
+      "locator": "Conn. Gen. Stat. § 52-596",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:34:57.807728+00:00",
+        "sha256": "29bd29d8f82067f1a90cfffa4b5e1ba158aafe60a3bcd979838f464ad7f60329"
+      }
+    },
+    "US-CT:tolling:f3d1a05e1f3e": {
+      "category": "tolling",
+      "title": "Conn. Gen. Stat. § 52-595",
+      "url": "https://www.cga.ct.gov/2025/pub/chap_926.htm",
+      "locator": "Conn. Gen. Stat. § 52-595",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:34:57.807728+00:00",
+        "sha256": "29bd29d8f82067f1a90cfffa4b5e1ba158aafe60a3bcd979838f464ad7f60329"
+      }
+    },
+    "US-CT:general_contract_limitations:5ff86734eeb1": {
+      "category": "general_contract_limitations",
+      "title": "Conn. Gen. Stat. § 52-576 (2025 rev.)",
+      "url": "https://www.cga.ct.gov/2025/pub/chap_926.htm",
+      "locator": "Conn. Gen. Stat. § 52-576 (2025 rev.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:34:57.807728+00:00",
+        "sha256": "29bd29d8f82067f1a90cfffa4b5e1ba158aafe60a3bcd979838f464ad7f60329"
+      }
+    },
+    "US-CT:oral_contract_limitations:a728d7cd0550": {
+      "category": "oral_contract_limitations",
+      "title": "Conn. Gen. Stat. § 52-581 (2025 rev.)",
+      "url": "https://www.cga.ct.gov/2025/pub/chap_926.htm",
+      "locator": "Conn. Gen. Stat. § 52-581 (2025 rev.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:34:57.807728+00:00",
+        "sha256": "29bd29d8f82067f1a90cfffa4b5e1ba158aafe60a3bcd979838f464ad7f60329"
+      }
+    },
+    "US-CT:contract_breach:d38672b08b60": {
+      "category": "contract_breach",
+      "title": "AGW Sono Partners, LLC v. Downtown Soho, LLC, 343 Conn. 309, 322–23 (2022)",
+      "url": "https://www.jud.ct.gov/lawjournal/Docs/CTReports/2022/20/cr343_8345.pdf",
+      "locator": "AGW Sono Partners, LLC v. Downtown Soho, LLC, 343 Conn. 309, 322–23 (2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:39:52.120899+00:00",
+        "sha256": "e34899cd34b355a8cfd5292a6daf826dc9ddd6032905392bb8699d6c34c4bb9a"
+      }
+    },
+    "US-CT:service_time_limit:c4c1a3e9411b": {
+      "category": "service_time_limit",
+      "title": "Conn. Gen. Stat. § 52-46 (2025 ed.)",
+      "url": "https://prdext2.cga.ct.gov/2025/pub/chap_896.htm",
+      "locator": "Conn. Gen. Stat. § 52-46 (2025 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:34.053179+00:00",
+        "sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5"
+      }
+    },
+    "US-CT:service_time_limit:782b331fbe78": {
+      "category": "service_time_limit",
+      "title": "Conn. Gen. Stat. § 52-46a (2025 ed.)",
+      "url": "https://prdext2.cga.ct.gov/2025/pub/chap_896.htm",
+      "locator": "Conn. Gen. Stat. § 52-46a (2025 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:34.053179+00:00",
+        "sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5"
+      }
+    },
+    "US-CT:service_time_limit:64a82bf679bf": {
+      "category": "service_time_limit",
+      "title": "Conn. Gen. Stat. § 52-48 (2025 ed.)",
+      "url": "https://prdext2.cga.ct.gov/2025/pub/chap_896.htm",
+      "locator": "Conn. Gen. Stat. § 52-48 (2025 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T20:45:34.053179+00:00",
+        "sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5"
+      }
+    },
+    "US-CT:consumer_agency:9e0925d4bbae": {
+      "category": "consumer_agency",
+      "title": "Conn. Gen. Stat. § 42-110m(a)",
+      "url": "https://www.cga.ct.gov/current/pub/chap_735a.htm",
+      "locator": "Conn. Gen. Stat. § 42-110m(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:30:44.560550+00:00",
+        "sha256": "670245dbbeca6b25d41fb16906546308e7c5a214c6a67ccde76c28deca00c796"
+      }
+    },
+    "US-CT:summons_form:cbbef2c6b7d5": {
+      "category": "summons_form",
+      "title": "Connecticut Judicial Branch Civil Summons, JD-CV-1",
+      "url": "https://www.jud.ct.gov/webforms/forms/cv001.pdf",
+      "locator": "JD-CV-1 (Rev. 8-26), pp. 1–2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T20:58:25.226933+00:00",
+        "sha256": "5086e419aff51e7a6c5b2dd40573e7c76aa4ebda00aa69879ded4c55ea407c59"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-CT:court:6a3a7e215097",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-CT:court_directory:7638e5c0cebd"
+    },
+    {
+      "id": "US-CT:court:f782f97a38f5",
+      "name": "Appellate Court",
+      "level": "appellate_directory",
+      "source_id": "US-CT:court_directory:9162720aa65f"
+    },
+    {
+      "id": "US-CT:court:bb308ce2b2e3",
+      "name": "Superior Court",
+      "level": "trial_directory",
+      "source_id": "US-CT:court_directory:298396278e2a"
+    },
+    {
+      "id": "US-CT:court:0ee7c9e1bb68",
+      "name": "Probate Court",
+      "level": "trial_directory",
+      "source_id": "US-CT:court_directory:c9362edf9673"
+    },
+    {
+      "id": "US-CT:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-CT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-CT:court:4f54b582f9f0",
+      "name": "Probate",
+      "level": "limited_trial",
+      "source_id": "US-CT:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Conn. Gen. Stat. § 52-584",
+      "source_id": "US-CT:pi_limitations:515ac977187a",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Conn. Gen. Stat. § 52-576(a)",
+      "source_id": "US-CT:written_contract_limitations:8b82844dcc78",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Conn. Gen. Stat. § 52-581",
+      "source_id": "US-CT:oral_contract_limitations:9a6665759917",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Conn. Gen. Stat. § 47a-15. Noncompliance by tenant. Remedy of breach by tenant. Landlord's remedies",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Conn. Gen. Stat. § 42-110a et seq.",
+      "source_id": "US-CT:consumerLaw:21e24ce915e0",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "8786e92c49f51e503c389e8550bdde": {
+      "citation": "Conn. Gen. Stat. § 52-572h(b)",
+      "source_id": "US-CT:fault:33b05f66ddff",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "(b) In causes of action based on negligence, contributory negligence shall not bar recovery in an action by any person or the person's legal representative to recover damages resulting from personal injury, wrongful death or damage to property if the negligence was not greater than the combined negligence of the person or persons against whom recovery is sought including settled or released persons under subsection (n) of this section. The economic or noneconomic damages allowed shall be diminished in the proportion of the percentage of negligence attributable to the person recovering which percentage shall be determined pursuant to subsection (f) of this section.",
+      "text_sha256": "4a93fc8317e27cefe46464c14a5ffded23e0dfd4d2615a66972c5d3a695e2105",
+      "publisher_sha256": "13c746baac0113d9968df4063b8fd30d7883ef86e0d109ae276acc77b439e7e5",
+      "retrieved_at": "2026-11-17T20:50:32.783493+00:00",
+      "currentness": "historical",
+      "edition": "2025 publication"
+    },
+    "619dbd2c06c8fe77c7a5464d9e7420": {
+      "source_id": "US-CT:consumerLaw:b833f7dbb849",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 42-110b(a)",
+      "text": "(a) No person shall engage in unfair methods of competition and unfair or deceptive acts or practices in the conduct of any trade or commerce.",
+      "text_sha256": "3927ad5a3cde297117ea097f498687c657a949d6d41a9bb935e2443fba4440dc",
+      "publisher_sha256": "670245dbbeca6b25d41fb16906546308e7c5a214c6a67ccde76c28deca00c796",
+      "retrieved_at": "2026-11-17T21:03:51.350640+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "8ddb1518d2bb0500d7123fe875c324": {
+      "source_id": "US-CT:contract_formation:3dffa641c276",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 42a-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "eccbb0d711a42bfa6b23924391a796a784b42f2818a626fed4514b9900e3dab8",
+      "retrieved_at": "2026-11-18T15:14:26.543556+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 codification"
+    },
+    "a0a5523980771428391f7cef7b496e": {
+      "source_id": "US-CT:contract_damages:353707f163a7",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 42a-2-714",
+      "text": "Where the buyer has accepted goods and given notification as provided in subsection (3) of section 42a-2-607 he may recover as damages for any nonconformity of tender the loss resulting in the ordinary course of events from the seller's breach as determined in any manner which is reasonable. (2) The measure of damages for breach of warranty is the difference at the time and place of acceptance between the value of the goods accepted and the value they would have had if they had been as warranted, unless special circumstances show proximate damages of a different amount.",
+      "text_sha256": "0b5ddc7592e3695e2ffda38a4e9ddf888cbc524fbeadf31ab7d1e8a043505a95",
+      "publisher_sha256": "eccbb0d711a42bfa6b23924391a796a784b42f2818a626fed4514b9900e3dab8",
+      "retrieved_at": "2026-11-18T15:14:26.543556+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 codification"
+    },
+    "532fb893c4b1aa2eae00568df501c3": {
+      "source_id": "US-CT:wageLaw:68977cad0702",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 31-71c",
+      "text": "(a) Whenever an employee voluntarily terminates his employment, the employer shall pay the employee's wages in full not later than the next regular pay day, as designated under section 31-71b, either through the regular payment channels or by mail. (b) Whenever an employer discharges an employee, the employer shall pay the employee's wages in full not later than the business day next succeeding the date of such discharge. (c) When work of any employee is suspended as a result of a labor dispute, or when an employee for any reason is laid off, the employer shall pay in full to such employee the wages earned by him not later than the next regular pay day, as designated under section 31-71b.",
+      "text_sha256": "35c13a3c523d2107b596e5f0228e5d3aaa7a4af555d1ed3de3462ff1f6deb016",
+      "publisher_sha256": "ed6642bd9e7b553dea4399e6c18b777f0b529906d8378556eb220e6cd8471692",
+      "retrieved_at": "2026-11-19T14:10:56.026660+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "05fe0932d00b1a46397b42103bad4d": {
+      "source_id": "US-CT:commencement:372d17565ec7",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 52-45a",
+      "text": "Civil actions shall be commenced by legal process consisting of a writ of summons or attachment, describing the parties, the court to which it is returnable, the return day, the date and place for the filing of an appearance and information required by the Office of the Chief Court Administrator. The writ shall be accompanied by the plaintiff's complaint. The writ may run into any judicial district and shall be signed by a commissioner of the Superior Court or a judge or clerk of the court to which it is returnable.",
+      "text_sha256": "bf9abd6564d3c619af826fc6baeddd92aadc4e4ad8f1e190772df8719ea99417",
+      "publisher_sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5",
+      "retrieved_at": "2026-11-18T20:45:34.053179+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes 2025"
+    },
+    "a567932ef9ec337db2c48e6fa3d7bf": {
+      "source_id": "US-CT:pi_limitations:1c9023a415fb",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 52-584",
+      "text": "No action to recover damages for injury to the person, or to real or personal property, caused by negligence, or by reckless or wanton misconduct, or by malpractice of a physician, surgeon, dentist, podiatrist, chiropractor, advanced practice registered nurse, hospital or sanatorium, shall be brought but within two years from the date when the injury is first sustained or discovered or in the exercise of reasonable care should have been discovered, and except that no such action may be brought more than three years from the date of the act or omission complained of, except that a counterclaim may be interposed in any such action any time before the pleadings in such action are finally closed.",
+      "text_sha256": "ddbd8cc195212f35857187d604bfe3626eb759454c2209db3961136396a8d1ce",
+      "publisher_sha256": "29bd29d8f82067f1a90cfffa4b5e1ba158aafe60a3bcd979838f464ad7f60329",
+      "retrieved_at": "2026-11-19T19:31:20.736451+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes 2025"
+    },
+    "c2b903dd783cba987b41dbb68cc4a0": {
+      "source_id": "US-CT:deposit:3d126073195f",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 47a-21(d)(1)–(2)",
+      "text": "(1) Not later than the time specified in subdivision (2) of this subsection, the person who is the landlord at the time a tenancy is terminated, other than a rent receiver, shall pay to the tenant or former tenant: (A) The amount of any security deposit that was deposited by the tenant with the person who was landlord at the time such security deposit was deposited less the value of any damages that any person who was a landlord of such premises at any time during the tenancy of such tenant has suffered as a result of such tenant's failure to comply with such tenant's obligations; and (B) any accrued interest. If the landlord at the time of termination of a tenancy is a rent receiver, such rent receiver shall return security deposits in accordance with the provisions of subdivision (3) of this subsection. (2) Upon termination of a tenancy, any tenant may notify the landlord in writing of such tenant's forwarding address. Not later than twenty-one days after termination of a tenancy or fifteen days after receiving written notification of such tenant's forwarding address, whichever is later, each landlord other than a rent receiver shall deliver to the tenant or former tenant at such forwarding address either (A) the full amount of the security deposit paid by such tenant plus accrued interest, or (B) the balance of such security deposit and accrued interest after deduction for any damages suffered by such landlord by reason of such tenant's failure to comply with such tenant's obligations, together with a written statement itemizing the nature and amount of such damages. Any landlord who violates any provision of this subsection shall be liable for twice the amount of any security deposit paid by such tenant, except that, if the only violation is the failure to deliver the accrued interest, such landlord shall be liable for ten dollars or twice the amount of the accrued interest, whichever is greater.",
+      "text_sha256": "42ab4d37804babea0118de79d1c99c54556abc997706eb63cbc161a917667c92",
+      "publisher_sha256": "f8033276d6563ccdf4a8ee34b498405ec3090519f48ce97b0eb0845103c99a22",
+      "retrieved_at": "2026-11-20T16:35:17.050995+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "f897551207c16119fe7d8d43d1ef1d": {
+      "source_id": "US-CT:debtLaw:64aa8c86b1ee",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 36a-646 (2025)",
+      "text": "No creditor shall use any abusive, harassing, fraudulent, deceptive or misleading representation, device or practice to collect or attempt to collect any debt.",
+      "text_sha256": "1711fb8d5ff644c680bf41489ac456814d30eab4bfc886d0864c6555a30767f5",
+      "publisher_sha256": "2e249d87b267658dda0f0660b905932de802aa09b85723773d05476399821dc4",
+      "retrieved_at": "2026-11-20T17:26:26.809560+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 Connecticut General Statutes compilation"
+    },
+    "1289e192f9caaf314aa9d58133118e": {
+      "source_id": "US-CT:negligence_elements:226bacb57abd",
+      "authority_type": "opinion",
+      "citation": "Roux v. Coffey, 230 Conn. App. 130, 139 (2025)",
+      "text": "The following legal principles are applicable. ‘‘[A] cause of action in negligence is comprised of four elements: duty; breach of that duty; causation; and actual injury. . . . Whether a duty exists is a question of law for the court, and only if the court finds that such a duty exists does the trier of fact consider whether that duty was breached. . . . If a court determines, as a matter of law, that a defendant owes no duty to a plaintiff, the plaintiff cannot recover in negligence from the defendant. . . . Duty is a legal conclusion about relationships between individuals, made after the fact, and imperative to a negligence cause of action. The nature of the duty, and the specific persons to whom it is owed, are determined by the circumstances surrounding the conduct of the individual. . . . Foreseeability is a critical factor in the analysis, because no duty exists unless an ordinary person in the defendant’s position, knowing what the defendant knew or should have known, would anticipate that harm of the general nature of that suffered was likely to result . . . . Our law makes clear that foreseeability alone, however, does not automatically give rise to a duty of care . . . . A further inquiry must be made, for we recognize that duty is not sacrosanct in itself . . . but is only an expression of the sum total of those considerations of policy [that] lead the law to say that the plaintiff is entitled to protection. . . . The final step in the duty inquiry, then, is to make a determination of the fundamental policy of the law, as to whether the defendant’s responsibility should extend to such results.’’",
+      "text_sha256": "0f611c2f3850830c012f44062844e9fb56a79dc3c15295074a4bc97ab922d611",
+      "publisher_sha256": "a596f1aa946c36d8ce3b376894c4754ba8a8ba37f68fe2b35f662215d81ba664",
+      "retrieved_at": "2026-11-20T18:11:12.702520+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2025-01-14",
+      "court": "Appellate Court of Connecticut",
+      "decision_date": "2025-01-14",
+      "procedural_posture": "Appeal from a judgment following a motion to strike negligence and public nuisance claims concerning the roadway design. The court affirmed.",
+      "opinion_role": "majority"
+    },
+    "07a0cf759add76c2e11ac1ee443bcd": {
+      "source_id": "US-CT:response:a6f4a4b92c3f",
+      "authority_type": "opinion",
+      "citation": "Kaye v. Housman, 184 Conn. App. 437 (2018) (quoting Practice Book § 10-8)",
+      "text": "Practice Book § 10-8, titled ‘‘Time to Plead,’’ provides in relevant part: ‘‘Commencing on the return day of the writ, summons and complaint in civil actions, pleadings . . . shall advance within thirty days from the return day, and any subsequent pleadings . . . shall advance at least one step within each successive period of thirty days from the preceding pleading . . . .’’",
+      "text_sha256": "37bf867c9176f464e16ec184ad0e2cb097af698e4718567b9a6b4f6445c93979",
+      "publisher_sha256": "ad9515f4242d029ed00b6a0e9299595917d8505f155f3bdc7480b535422cbfa6",
+      "retrieved_at": "2026-11-20T18:29:01.421868+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2018-09-18",
+      "court": "Appellate Court of Connecticut",
+      "decision_date": "2018-09-18",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal after a motion to strike a matter from the hearing-in-damages list in a landlord’s unpaid-rent action. The appellate court reversed and remanded."
+    },
+    "c921e411ad86c8d60fcb8bf0ae32d7": {
+      "source_id": "US-CT:small_claims:32d2d4920681",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 51-15(d) (2025, small-claims monetary scope and exceptions)",
+      "text": "The procedure for the hearing and determination of small claims as the same may be prescribed, from time to time, by the judges of the Superior Court shall be used in all small claims sessions of the court. The small claims procedure shall only be applicable to (1) all actions claiming money damages not in excess of five thousand dollars, except such procedure shall not be applicable to actions of libel and slander, and (2) actions claiming loss or damages not in excess of fifteen thousand dollars sustained by reason of (A) performance of, or offer to perform, home improvement, as defined in section 20-419, by a contractor holding a certificate under chapter 400, or (B) a contract for new home construction with a new home construction contractor holding a certificate under chapter 399a. If an action is brought in the small claims session by a tenant pursuant to subsection (g) of section 47a-21 to reclaim any part of a security deposit which may be due, the judicial authority hearing the action may award to the tenant the damages authorized by subsection (d) of said section and, if authorized by the rental agreement or any provision of the general statutes, costs, notwithstanding that the amount of such damages and costs, in the aggregate, exceeds the jurisdictional monetary limit established by subdivision (1) of this subsection. If a motion is filed to transfer a small claims matter to the regular docket in the court, the moving party shall pay the fee prescribed by section 52-259. The Attorney General or an assistant attorney general, or the head of any state agency or his or her authorized representative, while acting in his or her official capacity shall not be required to pay any small claims court fee. There shall be no charge for copies of service on defendants in small claims matters.",
+      "text_sha256": "29a59ad63340613e5ee99af04f2c32956f76cf39e49ec7b73968d5a0436f3923",
+      "publisher_sha256": "711abd246b895b297afea915d50f74ad0a846b78ff5fe70360286bc31a20af2e",
+      "retrieved_at": "2026-11-20T22:36:54.102400+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes 2025 edition"
+    },
+    "1bdd0177c8a022bfb1c4274f3f8871": {
+      "source_id": "US-CT:service:9b025b5b7b3a",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 52-54",
+      "text": "The service of a writ of summons shall be made by the officer reading it and the complaint accompanying it in the hearing of the defendant or by leaving an attested copy thereof with him or at his usual place of abode. When service is made by leaving an attested copy at the defendant's usual place of abode, the officer making service shall note in his return the address at which such attested copy was left.",
+      "text_sha256": "edcb5ee9543f35437cd4cf1308a548810732ca1d5dcab620ca23bd46bf4fbca9",
+      "publisher_sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5",
+      "retrieved_at": "2026-11-21T16:22:56.694411+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Connecticut General Assembly, ch. 896 § 52-54, operative text preceding history"
+    },
+    "c328a1f534c561030a346532d950ab": {
+      "source_id": "US-CT:service:2f9fda83cba5",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 52-57(a)",
+      "text": "(a) Except as otherwise provided, process in any civil action shall be served by leaving a true and attested copy of it, including the declaration or complaint, with the defendant, or at his usual place of abode, in this state.",
+      "text_sha256": "504e7280d30942518ba31971c1bc8e226c65c46a74ae1a0006bcdca65a4e4307",
+      "publisher_sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5",
+      "retrieved_at": "2026-11-21T16:22:56.694411+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Connecticut General Assembly, ch. 896 § 52-57(a)"
+    },
+    "9fe749a2cad977dbcc16e25947b741": {
+      "source_id": "US-CT:service_business_entity:7585a17c66b1",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 52-57(c)",
+      "text": "(c) In actions against a private corporation, service of process shall be made either upon the president, the vice president, an assistant vice president, the secretary, the assistant secretary, the treasurer, the assistant treasurer, the cashier, the assistant cashier, the teller or the assistant teller or its general or managing agent or manager or upon any director resident in this state, or the person in charge of the business of the corporation or upon any person who is at the time of service in charge of the office of the corporation in the town in which its principal office or place of business is located. In actions against a private corporation established under the laws of any other state, any foreign country or the United States, service of process may be made upon any of the aforesaid officers or agents, or upon the agent of the corporation appointed pursuant to section 33-922 .",
+      "text_sha256": "79208946750530f00ff554a5bdf4bc640ca4873ef149ad38883ac8dabf0fe4cc",
+      "publisher_sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5",
+      "retrieved_at": "2026-11-21T16:22:56.694411+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Connecticut General Assembly, ch. 896 § 52-57(c)"
+    },
+    "1e69225f87ea29fbe1670bfbb1cc63": {
+      "source_id": "US-CT:summons_issuance:3b9d759ccbf7",
+      "authority_type": "court_rule",
+      "citation": "Conn. Practice Book § 8-1(a) (2026 ed.)",
+      "text": "(a) Process in civil actions shall be a writ of summons or attachment, describing the parties, the court to which it is returnable and the time and place of appearance, and shall be accompanied by the plaintiff’s complaint. Such writ may run into any judicial district or geographical area and shall be signed by a Commissioner of the Superior Court or a judge or clerk of the court to which it is returnable. Except in those actions and proceedings indicated below, the writ of summons shall be on a form substantially in compliance with the following Judicial Branch forms prescribed by the chief court administrator: Form JD-FM-3 in family actions, Form JD-HM-32 in summary process actions, and Form JD-CV-1 in other civil actions, as such forms shall from time to time be amended. Any person proceeding without the assistance of counsel shall sign the complaint and present the complaint and proposed writ of summons to the clerk; the clerk shall review the proposed writ of summons and, unless it is defective as to form, shall sign it.",
+      "text_sha256": "1775637bc2b9a31bf2b5b4eec0b485c49dec66049273155984f7f4b9257ba102",
+      "publisher_sha256": "bb406ab49314de7f6b49f5de43e1b2e354465bb70ce52ecc37412ec058db69d6",
+      "retrieved_at": "2026-11-21T16:23:08.401292+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Connecticut Superior Court",
+      "publisher_member": "Official 2026 Connecticut Practice Book, printed p. 191, § 8-1(a)",
+      "effective_from": "2014-01-01"
+    },
+    "8de53ae1fefe6653e750ebdee016d8": {
+      "source_id": "US-CT:habitability:1e46c166910c",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 47a-7(a)–(b)",
+      "text": "(a) A landlord shall: (1) Comply with the requirements of chapter 368o and all applicable building and housing codes materially affecting health and safety of both the state or any political subdivision thereof; (2) make all repairs and do whatever is necessary to put and keep the premises in a fit and habitable condition, except where the premises are intentionally rendered unfit or uninhabitable by the tenant, a member of his family or other person on the premises with his consent, in which case such duty shall be the responsibility of the tenant; (3) keep all common areas of the premises in a clean and safe condition; (4) maintain in good and safe working order and condition all electrical, plumbing, sanitary, heating, ventilating and other facilities and appliances and elevators, supplied or required to be supplied by him; (5) provide and maintain appropriate receptacles for the removal of ashes, garbage, rubbish and other waste incidental to the occupancy of the dwelling unit and arrange for their removal; and (6) supply running water and reasonable amounts of hot water at all times and reasonable heat except if the building which includes the dwelling unit is not required by law to be equipped for that purpose or if the dwelling unit is so constructed that heat or hot water is generated by an installation within the exclusive control of the tenant or supplied by a direct public utility connection. (b) If any provision of any municipal ordinance, building code or fire code requires a greater duty of the landlord than is imposed under subsection (a) of this section, then such provision of such ordinance or code shall take precedence over the provision requiring such lesser duty in said subsection.",
+      "text_sha256": "4964b989f8ce7ff34c45db2a562fec6c5dfe2fa041b9d2948fcf6970a00dcf34",
+      "publisher_sha256": "1bf22fd9fbafb365abd04305885777f7e02a5d61faf6be3390427421054479e1",
+      "retrieved_at": "2026-11-21T16:33:02.748960+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes, 2025 revision",
+      "publisher_member": "Connecticut General Assembly 2025 revision, § 47a-7(a)–(b)"
+    },
+    "7fe4cb22bd581f7d69369bf63f6f25": {
+      "source_id": "US-CT:habitability:96bc223fbc68",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 47a-7(c)–(d)",
+      "text": "(c) The landlord and tenant of a single-family residence may agree in writing that the tenant perform the landlord's duties specified in subdivisions (5) and (6) of subsection (a) and also specified repairs, maintenance tasks, alterations, or remodeling, provided the transaction is entered into in good faith and not for the purpose of evading the obligations of the landlord. (d) The landlord and tenant of a dwelling unit other than a single-family residence may agree that the tenant is to perform specified repairs, maintenance tasks, alterations or remodeling if (1) the agreement of the parties is entered into in good faith; (2) the agreement is in writing; (3) the work is not necessary to cure noncompliance with subdivisions (1) and (2) of subsection (a) of this section; and (4) the agreement does not diminish or affect the obligation of the landlord to other tenants in the premises.",
+      "text_sha256": "8c03d855cf911eebe7587377a7272dce36504b98d8a8ad85224758636add8431",
+      "publisher_sha256": "1bf22fd9fbafb365abd04305885777f7e02a5d61faf6be3390427421054479e1",
+      "retrieved_at": "2026-11-21T16:33:02.748960+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes, 2025 revision",
+      "publisher_member": "Connecticut General Assembly 2025 revision, § 47a-7(c)–(d)"
+    },
+    "9562c8bb71fdf5860acd690bdf2d05": {
+      "source_id": "US-CT:tenant_remedies:7d7d971d2b16",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 47a-12",
+      "text": "(a) If there is a material noncompliance by the landlord with the rental agreement or a noncompliance with section 47a-7 which materially affects health and safety, the tenant may deliver a written notice to the landlord specifying the acts and omissions constituting the breach. If the breach is not remedied within fifteen days after receipt of the notice, the rental agreement shall terminate on such date. If substantially the same act or omission which constituted a prior noncompliance of which notice was given, recurs within six months of the first act of noncompliance, the tenant may terminate the rental agreement upon at least fourteen days written notice specifying (1) the date the breach complained of occurred and (2) the date the tenant intends to terminate the rental agreement by vacating the premises, which date shall be within thirty days of such breach. (b) The tenant may not terminate the rental agreement under subsection (a) of this section for a condition caused by the wilful or negligent act or omission of such tenant, a member of his family, or other person on the premises with his consent. (c) This section shall apply only to leases in which the term of the tenancy is more than one month. (d) Nothing in this section shall in any way restrict the tenant's use of other remedies available to him.",
+      "text_sha256": "8ef90344b517a7dd331887b95f29de4c1ae23bc010e04762c30ef28a4cb30611",
+      "publisher_sha256": "1bf22fd9fbafb365abd04305885777f7e02a5d61faf6be3390427421054479e1",
+      "retrieved_at": "2026-11-21T16:33:02.748960+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes, 2025 revision",
+      "publisher_member": "Connecticut General Assembly 2025 revision, § 47a-12"
+    },
+    "f1d7013e4f462b5fb1d9f93793cca2": {
+      "source_id": "US-CT:tenant_remedies:a4ff124aecd2",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 47a-13",
+      "text": "(a) If the landlord is required to supply heat, running water, hot water, electricity, gas or other essential service, and if the landlord fails to supply such essential service and the failure is not caused by conditions beyond the landlord's control, the tenant may give notice to the landlord specifying the breach and may elect to (1) procure reasonable amounts of heat, hot water, running water, electric, gas or other essential service during the period of the landlord's noncompliance and deduct the actual and reasonable cost of such service from the rent; or (2) procure reasonable substitute housing during the period of the landlord's noncompliance if the landlord fails to supply such service within forty-eight hours of such breach, except if the breach is the failure to provide the same service and such breach recurs within six months, the tenant may secure substitute housing immediately; or (3) if the failure to supply such service is wilful, the tenant may terminate the rental agreement and recover an amount not more than two months' periodic rent or double the actual damages sustained by him, whichever is greater. If the rental agreement is terminated, the landlord shall return all security and prepaid rent and interest required pursuant to section 47a-22, recoverable under section 47a-21. (b) If the tenant elects to procure substitute housing as provided in subdivision (2) of subsection (a) of this section, rent otherwise owed to the landlord shall abate for the period of the landlord's noncompliance. In addition, the tenant may recover the actual costs of such substitute housing, but in no event shall the tenant recover more than an amount equal to the amount of rent abated under this subsection. In any cause of action or defense to any action arising under subsection (a) of this section, the tenant may recover reasonable attorney's fees. (c) Rights of the tenant under this section do not arise (1) until the tenant has given reasonable written or oral notice to the landlord or (2) if the condition was caused by the wilful or negligent act or omission of the tenant, a member of his family or other person on the premises with his consent. (d) For the purposes of this section, “tenant” includes each resident of a mobile manufactured home park, as defined in section 21-64, including a resident who owns his own home, and “landlord” includes a “licensee” and an “owner” of a mobile manufactured home park, as defined in section 21-64.",
+      "text_sha256": "3f033c43c83815dc10b2247d5041f35cf9e33ab4e7d50cdaa34bb1c0abe752b7",
+      "publisher_sha256": "1bf22fd9fbafb365abd04305885777f7e02a5d61faf6be3390427421054479e1",
+      "retrieved_at": "2026-11-21T16:33:02.748960+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes, 2025 revision",
+      "publisher_member": "Connecticut General Assembly 2025 revision, § 47a-13"
+    },
+    "9c728f3381a65fc4127a76a4cd8c63": {
+      "source_id": "US-CT:consumer_private_action:45a0ebd6c997",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 42-110g(a)",
+      "text": "(a) Any person who suffers any ascertainable loss of money or property, real or personal, as a result of the use or employment of a method, act or practice prohibited by section 42-110b, may bring an action in the judicial district in which the plaintiff or defendant resides or has his principal place of business or is doing business, to recover actual damages. Proof of public interest or public injury shall not be required in any action brought under this section. The court may, in its discretion, award punitive damages and may provide such equitable relief as it deems necessary or proper.",
+      "text_sha256": "d847616efacd3b24ae21b162399e74e0c51aaf75fa05b1c4071d5e2e9ce8f583",
+      "publisher_sha256": "670245dbbeca6b25d41fb16906546308e7c5a214c6a67ccde76c28deca00c796",
+      "retrieved_at": "2026-11-21T16:33:02.616680+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes, 2025 revision",
+      "publisher_member": "Connecticut General Assembly 2025 revision, § 42-110g(a)"
+    },
+    "2b8dd65a895b4a0b7113d159f48b5a": {
+      "source_id": "US-CT:consumer_remedies:3af27059de2e",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 42-110g(d)",
+      "text": "(d) In any action brought by a person under this section, the court may award, to the plaintiff, in addition to the relief provided in this section, costs and reasonable attorneys' fees based on the work reasonably performed by an attorney and not on the amount of recovery. In a class action in which there is no monetary recovery, but other relief is granted on behalf of a class, the court may award, to the plaintiff, in addition to other relief provided in this section, costs and reasonable attorneys' fees. In any action brought under this section, the court may, in its discretion, order, in addition to damages or in lieu of damages, injunctive or other equitable relief.",
+      "text_sha256": "a1b71c7e9e5a25558c82bac30d44065fe0f254a964b1e8a7db8f29fc75885e76",
+      "publisher_sha256": "670245dbbeca6b25d41fb16906546308e7c5a214c6a67ccde76c28deca00c796",
+      "retrieved_at": "2026-11-21T16:33:02.616680+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes, 2025 revision",
+      "publisher_member": "Connecticut General Assembly 2025 revision, § 42-110g(d)"
+    },
+    "0fa2da8b655a19b41357eb90707105": {
+      "source_id": "US-CT:consumer_limitations:c0cc48176ebc",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 42-110g(f)",
+      "text": "(f) An action under this section may not be brought more than three years after the occurrence of a violation of this chapter.",
+      "text_sha256": "6d921c4ba1a944cdc65678145fd9536af03a3c47a89e16d2f5db9d4dec050e4f",
+      "publisher_sha256": "670245dbbeca6b25d41fb16906546308e7c5a214c6a67ccde76c28deca00c796",
+      "retrieved_at": "2026-11-21T16:33:02.616680+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes, 2025 revision",
+      "publisher_member": "Connecticut General Assembly 2025 revision, § 42-110g(f)"
+    },
+    "f90ccdc2cfc0fb4c67a226bb33076b": {
+      "source_id": "US-CT:wage_enforcement:3ef67a727068",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 31-72",
+      "text": "When any employer fails to pay an employee wages in accordance with the provisions of sections 31-71a to 31-71i, inclusive, or fails to compensate an employee in accordance with section 31-76k or where an employee or a labor organization representing an employee institutes an action to enforce an arbitration award which requires an employer to make an employee whole or to make payments to an employee welfare fund, such employee or labor organization shall recover, in a civil action, (1) twice the full amount of such wages, with costs and such reasonable attorney's fees as may be allowed by the court, or (2) if the employer establishes that the employer had a good faith belief that the underpayment of wages was in compliance with law, the full amount of such wages or compensation, with costs and such reasonable attorney's fees as may be allowed by the court. Any agreement between an employee and his or her employer for payment of wages other than as specified in said sections shall be no defense to such action. The Labor Commissioner may collect the full amount of any such unpaid wages, payments due to an employee welfare fund or such arbitration award, as well as interest calculated in accordance with the provisions of section 31-265 from the date the wages or payment should have been received, had payment been made in a timely manner. In addition, the Labor Commissioner may bring any legal action necessary to recover twice the full amount of unpaid wages, payments due to an employee welfare fund or arbitration award, and the employer shall be required to pay the costs and such reasonable attorney's fees as may be allowed by the court. The commissioner shall distribute any wages, arbitration awards or payments due to an employee welfare fund collected pursuant to this section to the appropriate person.",
+      "text_sha256": "8b4713cc0a3cd9be8b18cb28185d6b59ed4dc0104b3d1604c71eeb57a6aa215e",
+      "publisher_sha256": "ed6642bd9e7b553dea4399e6c18b777f0b529906d8378556eb220e6cd8471692",
+      "retrieved_at": "2026-11-21T16:33:02.687272+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes, 2025 revision",
+      "publisher_member": "Connecticut General Assembly 2025 revision, § 31-72"
+    },
+    "83930179a06335893eddde7bd09d76": {
+      "source_id": "US-CT:wrongful_death_limitations:6f86ac3178e9",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 52-555(a)–(b)",
+      "text": "(a) In any action surviving to or brought by an executor or administrator for injuries resulting in death, whether instantaneous or otherwise, such executor or administrator may recover from the party legally at fault for such injuries just damages together with the cost of reasonably necessary medical, hospital and nursing services, and including funeral expenses, provided no action shall be brought to recover such damages and disbursements but within two years from the date of death, and except that no such action may be brought more than five years from the date of the act or omission complained of. (b) Notwithstanding the provisions of subsection (a) of this section, an action may be brought under this section at any time after the date of the act or omission complained of if the party legally at fault for such injuries resulting in death has been convicted or found not guilty by reason of mental disease or defect of a violation of section 53a-54a, 53a-54b, 53a-54c, 53a-54d, 53a-55 or 53a-55a with respect to such death.",
+      "text_sha256": "d632556e95e6fcf1dc50a746585b1b2b389c637a02b6abe34a027451622f1a5b",
+      "publisher_sha256": "13c746baac0113d9968df4063b8fd30d7883ef86e0d109ae276acc77b439e7e5",
+      "retrieved_at": "2026-11-21T16:33:02.747957+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes, 2025 revision",
+      "publisher_member": "Connecticut General Assembly 2025 revision, § 52-555(a)–(b)"
+    },
+    "3f731d4672ce063618227f974a4eb7": {
+      "source_id": "US-CT:wage_limitations:07ae24c299bc",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 52-596",
+      "text": "No action for the payment of remuneration for employment payable periodically shall be brought but within two years after the right of action accrues, except that this limitation shall be tolled upon the filing with the Labor Commissioner of a complaint of failure to pay wages pursuant to the provisions of chapter 558.",
+      "text_sha256": "809185d54d48e32f68e8f7b7e03fa7e6a374e95e130993058dce5922794e9109",
+      "publisher_sha256": "29bd29d8f82067f1a90cfffa4b5e1ba158aafe60a3bcd979838f464ad7f60329",
+      "retrieved_at": "2026-11-21T16:34:57.807728+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes, 2025 revision",
+      "publisher_member": "Connecticut General Assembly 2025 revision, § 52-596"
+    },
+    "442c0068996c1b8512917491d20f41": {
+      "source_id": "US-CT:tolling:f3d1a05e1f3e",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 52-595",
+      "text": "If any person, liable to an action by another, fraudulently conceals from him the existence of the cause of such action, such cause of action shall be deemed to accrue against such person so liable therefor at the time when the person entitled to sue thereon first discovers its existence.",
+      "text_sha256": "edd408ed91afb58653bae8782cdf89b776f33863129878e6d8b971823a54de24",
+      "publisher_sha256": "29bd29d8f82067f1a90cfffa4b5e1ba158aafe60a3bcd979838f464ad7f60329",
+      "retrieved_at": "2026-11-21T16:34:57.807728+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes, 2025 revision",
+      "publisher_member": "Connecticut General Assembly 2025 revision, § 52-595"
+    },
+    "d69ca015636fb408e6b20bbc585737": {
+      "source_id": "US-CT:general_contract_limitations:5ff86734eeb1",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 52-576 (2025 rev.)",
+      "text": "(a) No action for an account, or on any simple or implied contract, or on any contract in writing, shall be brought but within six years after the right of action accrues, except as provided in subsection (b) of this section. (b) Any person legally incapable of bringing any such action at the accruing of the right of action may sue at any time within three years after becoming legally capable of bringing the action. (c) The provisions of this section shall not apply to actions upon judgments of any court of the United States or of any court of any state within the United States, or to any cause of action governed by article 2 of title 42a.",
+      "text_sha256": "16104355d91ca960263ad47fb1f25baa4204cadc26ef6877642954d9527082bf",
+      "publisher_sha256": "29bd29d8f82067f1a90cfffa4b5e1ba158aafe60a3bcd979838f464ad7f60329",
+      "retrieved_at": "2026-11-21T16:34:57.807728+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes, 2025 revision",
+      "publisher_member": "Connecticut General Assembly 2025 revision, § 52-576"
+    },
+    "731a3dd50f0e2ea0072e99a4a4d3e2": {
+      "source_id": "US-CT:oral_contract_limitations:a728d7cd0550",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 52-581 (2025 rev.)",
+      "text": "(a) No action founded upon any express contract or agreement which is not reduced to writing, or of which some note or memorandum is not made in writing and signed by the party to be charged therewith or his agent, shall be brought but within three years after the right of action accrues. (b) This section shall not apply to causes of action governed by article 2 of title 42a.",
+      "text_sha256": "c2cfa2b30f93e1da24715d24d9bc529b4ead4b98a69e26e5cda9ed1c5e8f1c63",
+      "publisher_sha256": "29bd29d8f82067f1a90cfffa4b5e1ba158aafe60a3bcd979838f464ad7f60329",
+      "retrieved_at": "2026-11-21T16:34:57.807728+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes, 2025 revision",
+      "publisher_member": "Connecticut General Assembly 2025 revision, § 52-581"
+    },
+    "6c7a1d2ab43446012cb1bbc5312a31": {
+      "source_id": "US-CT:contract_breach:d38672b08b60",
+      "authority_type": "opinion",
+      "citation": "AGW Sono Partners, LLC v. Downtown Soho, LLC, 343 Conn. 309, 322–23 (2022)",
+      "text": "‘‘The elements of a breach of contract claim are the formation of an agreement, performance by one party, breach of the agreement by the other party, and damages. . . . The interpretation of definitive contract language is a question of law over which our review is plenary. . . . By contrast, the trial court’s factual findings as to whether and by whom a contract has been breached are subject to the clearly erroneous standard of review and, if supported by evidence in the record, are not to be disturbed on appeal.’’ (Citations omitted; internal quotation marks omitted.) CCT Communications, Inc. v. Zone Telecom, Inc., 327 Conn. 114, 133, 172 A.3d 1228 (2017).",
+      "text_sha256": "783362c16d71463aee1a07ee1d24f8a61e350fc8f1e7aa35ad58c90ba5287e02",
+      "publisher_sha256": "e34899cd34b355a8cfd5292a6daf826dc9ddd6032905392bb8699d6c34c4bb9a",
+      "retrieved_at": "2026-11-21T22:39:52.120899+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion issued 2022-05-10",
+      "court": "Connecticut Supreme Court",
+      "publisher_member": "Connecticut Reports pp. 322-323, opinion Part I; breach elements and standards of appellate review",
+      "decision_date": "2022-05-10",
+      "opinion_role": "majority",
+      "procedural_posture": "Commercial lease dispute following a bench trial; the court rejected the special defenses and ordered a new damages hearing."
+    },
+    "baffcda248aecec8d514bc30e45df7": {
+      "source_id": "US-CT:service_time_limit:c4c1a3e9411b",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 52-46 (2025 ed.)",
+      "text": "Civil process, if returnable to the Supreme Court, shall be served at least thirty days, inclusive, before the day of the sitting of the court, and, if returnable to the Superior Court, at least twelve days, inclusive, before such day.",
+      "text_sha256": "f75ccbe674ce60ae89038af0da217ef67f96a99765266e8ee3d142193afc4e35",
+      "publisher_sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5",
+      "retrieved_at": "2026-11-18T20:45:34.053179+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes, revised to January 1, 2025"
+    },
+    "0b6e39553310cad2efc6a6dfbc580e": {
+      "source_id": "US-CT:service_time_limit:782b331fbe78",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 52-46a (2025 ed.)",
+      "text": "Process in civil actions returnable to the Supreme Court shall be returned to its clerk at least twenty days before the return day and, if returnable to the Superior Court, except process in summary process actions and petitions for parentage and support, to the clerk of such court at least six days before the return day.",
+      "text_sha256": "38fab05292e309342ac732674c4323e00fb4a4d29a270e2921cfdbc4bb0d4d1f",
+      "publisher_sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5",
+      "retrieved_at": "2026-11-18T20:45:34.053179+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes, revised to January 1, 2025"
+    },
+    "574c9ee8dc84f4a0f957e1e132f2a2": {
+      "source_id": "US-CT:service_time_limit:64a82bf679bf",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 52-48 (2025 ed.)",
+      "text": "(a) Process in civil actions, including transfers and applications for relief or removal, but not including summary process actions, brought to the Superior Court may be made returnable on any Tuesday in any month. The return day in any summary process action may be any week day, Monday through Saturday, except a holiday. (b) All process shall be made returnable not later than two months after the date of the process and shall designate the place where court is to be held.",
+      "text_sha256": "b74034bfe7c9cfdcc77685e4fbc10f00023a97be0c659f2e1ca66f9213582dae",
+      "publisher_sha256": "979a9aff2b2c3ba0679cf699e12fdd7bf0372e677a89cf32ec337e0c709573e5",
+      "retrieved_at": "2026-11-18T20:45:34.053179+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Connecticut General Statutes, revised to January 1, 2025"
+    },
+    "bc7df552a8aacb8995f0608e446164": {
+      "source_id": "US-CT:consumer_agency:9e0925d4bbae",
+      "authority_type": "statute",
+      "citation": "Conn. Gen. Stat. § 42-110m(a)",
+      "text": "(a) Whenever the commissioner has reason to believe that any person has been engaged or is engaged in an alleged violation of any provision of this chapter said commissioner may proceed as provided in sections 42-110d and 42-110e or may request the Attorney General to apply in the name of the state of Connecticut to the Superior Court for an order temporarily or permanently restraining and enjoining the continuance of such act or acts or for an order directing restitution and the appointment of a receiver in appropriate instances, or both. Proof of public interest or public injury shall not be required in any action brought pursuant to section 42-110d , section 42-110e or this section. Such action may include an application to enforce any term of an assurance of voluntary compliance accepted under section 42-110j . The court may award the relief applied for or so much as it may deem proper including reasonable attorney's fees, accounting and such other relief as may be granted in equity. In such action the commissioner shall be responsible for all necessary investigative support.",
+      "text_sha256": "04a2f77edf25e3bdb8ac6698313849f682f96653692dc23d1c2a76e3617c8505",
+      "publisher_sha256": "670245dbbeca6b25d41fb16906546308e7c5a214c6a67ccde76c28deca00c796",
+      "retrieved_at": "2026-11-22T03:30:44.560550+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Connecticut General Assembly codification of court relief and enforcement of assurances. Review the 2026 supplement for changes to other sections including 42-110d and 42-110j.",
+      "effective_from": "2024-06-04"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "8786e92c49f51e503c389e8550bdde",
+    "source_id": "US-CT:fault:33b05f66ddff",
+    "currentness": "historical",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  },
+  "forms": {
+    "US-CT:form:JD-CV-1": {
+      "title": "Civil Summons",
+      "publisher_identifier": "JD-CV-1",
+      "source_id": "US-CT:summons_form:cbbef2c6b7d5",
+      "index_source_id": "US-CT:summons_issuance:3b9d759ccbf7",
+      "index_sha256": "bb406ab49314de7f6b49f5de43e1b2e354465bb70ce52ecc37412ec058db69d6",
+      "court_scope": "Connecticut Superior Court",
+      "mandatory": "substantially_similar_form_required",
+      "revision": "2026-08",
+      "last_observed": "2026-11-23T20:58:25.226933+00:00",
+      "automated_completion": "disabled",
+      "form_sha256": "5086e419aff51e7a6c5b2dd40573e7c76aa4ebda00aa69879ded4c55ea407c59",
+      "action_type": "complaint",
+      "requirement_passage_selector": "1e69225f87ea29fbe1670bfbb1cc63",
+      "applicability": "Writ of summons accompanying the complaint in an ordinary Connecticut Superior Court civil action. Review Practice Book § 8-1(b)–(d) and the form's second page. Exclusions include family proceedings, summary process, entry and detainer, housing code enforcement, name changes, arbitration proceedings, probate or administrative appeals, and requests for attachment, garnishment or replevy. For a self-represented plaintiff, the clerk signs the summons. After service by a proper officer, the form directs filing of the originals and the officer's return."
+    }
+  }
+}

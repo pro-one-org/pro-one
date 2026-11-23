@@ -1,0 +1,1289 @@
+{
+  "jurisdiction": "US-FL",
+  "version": "1",
+  "sources": {
+    "US-FL:statutes:6c9947ea19f8": {
+      "category": "statutes",
+      "title": "Statutes",
+      "url": "http://www.leg.state.fl.us/Statutes/index.cfm",
+      "directory": "doj-FL",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-FL:constitution:72b434d186da": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.leg.state.fl.us/statutes/index.cfm?mode=constitution&submenu=3",
+      "directory": "codes",
+      "locator": "Florida"
+    },
+    "US-FL:legislature:55895e455f86": {
+      "category": "legislature",
+      "title": "Legislature",
+      "url": "http://www.leg.state.fl.us/Welcome/index.cfm",
+      "directory": "codes",
+      "locator": "Florida"
+    },
+    "US-FL:labor_agency:26126996f5fd": {
+      "category": "labor_agency",
+      "title": "www.myfloridalicense.com/DBPR/",
+      "url": "http://www.myfloridalicense.com/DBPR/",
+      "directory": "labor",
+      "locator": "Florida"
+    },
+    "US-FL:commercial_code:d00042fd2110": {
+      "category": "commercial_code",
+      "title": "Commercial Relations",
+      "url": "http://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Index&Title_Request=XXXIX#TitleXXXIX",
+      "directory": "ucc",
+      "locator": "Florida"
+    },
+    "US-FL:civil_rules:90974d3bc1a4": {
+      "category": "civil_rules",
+      "title": "Civil Practice and Procedure",
+      "url": "http://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Index&Title_Request=VI#TitleVI",
+      "directory": "procedure",
+      "locator": "Florida"
+    },
+    "US-FL:consumer_agency:f18f4f04962b": {
+      "category": "consumer_agency",
+      "title": "Florida (FL)",
+      "url": "https://www.fdacs.gov/Divisions-Offices/Consumer-Services",
+      "directory": "consumer",
+      "locator": "Florida (FL)"
+    },
+    "US-FL:judiciary:211cff2552e8": {
+      "category": "judiciary",
+      "title": "Florida State Courts",
+      "url": "https://www.flcourts.gov/",
+      "directory": "doj-FL",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-FL:court_directory:bc697e02075c": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "https://supremecourt.flcourts.gov/",
+      "directory": "doj-FL",
+      "locator": "Supreme Court"
+    },
+    "US-FL:opinions:eca0db356f78": {
+      "category": "opinions",
+      "title": "Supreme Court Briefs and Opinions",
+      "url": "http://library.law.fsu.edu/Digital-Collections/flsupct/index.html",
+      "directory": "doj-FL",
+      "locator": "State and Local Courts / Supreme Court"
+    },
+    "US-FL:court_directory:5a648e95c975": {
+      "category": "court_directory",
+      "title": "District Courts of Appeal",
+      "url": "https://www.flcourts.gov/Courts-System/Court-Structure/District-Courts-of-Appeal",
+      "directory": "doj-FL",
+      "locator": "District Courts of Appeal"
+    },
+    "US-FL:court_directory:b0a9c9d885d6": {
+      "category": "court_directory",
+      "title": "First District Court of Appeals",
+      "url": "https://1dca.flcourts.gov/",
+      "directory": "doj-FL",
+      "locator": "First District Court of Appeals"
+    },
+    "US-FL:court_directory:a03e44e7415c": {
+      "category": "court_directory",
+      "title": "Second District Court of Appeals",
+      "url": "https://2dca.flcourts.gov/",
+      "directory": "doj-FL",
+      "locator": "Second District Court of Appeals"
+    },
+    "US-FL:court_directory:f4bdecb2085c": {
+      "category": "court_directory",
+      "title": "Third District Court of Appeals",
+      "url": "https://3dca.flcourts.gov/",
+      "directory": "doj-FL",
+      "locator": "Third District Court of Appeals"
+    },
+    "US-FL:court_directory:4a1d033d6aa8": {
+      "category": "court_directory",
+      "title": "Fourth District Court of Appeals",
+      "url": "https://4dca.flcourts.gov/",
+      "directory": "doj-FL",
+      "locator": "Fourth District Court of Appeals"
+    },
+    "US-FL:court_directory:2b4798dff5a8": {
+      "category": "court_directory",
+      "title": "Fifth District Court of Appeals",
+      "url": "https://5dca.flcourts.gov/",
+      "directory": "doj-FL",
+      "locator": "Fifth District Court of Appeals"
+    },
+    "US-FL:court_directory:c7045054d5de": {
+      "category": "court_directory",
+      "title": "Trial Courts: Circuit Courts",
+      "url": "https://www.flcourts.gov/Courts-System/Court-Structure/Trial-Courts-Circuit",
+      "directory": "doj-FL",
+      "locator": "Trial Courts: Circuit Courts"
+    },
+    "US-FL:court_directory:f7359b1d0ed7": {
+      "category": "court_directory",
+      "title": "Trial Courts: County",
+      "url": "https://www.flcourts.gov/Florida-Courts/Trial-Courts-County",
+      "directory": "doj-FL",
+      "locator": "Trial Courts: County"
+    },
+    "US-FL:court_rules:6397c021626b": {
+      "category": "court_rules",
+      "title": "Rules of Procedure from the State Bar",
+      "url": "http://www.floridabar.org/tfb/tfblegalres.nsf/d64b801203bc919485256709006a561c/e1a89a0dc5248d1785256b2f006cccee?opendocument",
+      "directory": "doj-FL",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-FL:forms:95406dbc7bc7": {
+      "category": "forms",
+      "title": "Florida Family Law Forms",
+      "url": "https://www.flcourts.gov/Services/Family-Courts/domestic-relations-court-resources/family-law-forms",
+      "directory": "doj-FL",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-FL:constitution:79c74a747c1d": {
+      "category": "constitution",
+      "title": "Florida Constitution",
+      "url": "http://www.leg.state.fl.us/Statutes/index.cfm?Mode=Constitution&Submenu=3&Tab=statutes",
+      "directory": "doj-FL",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-FL:statutes:826ae14df0f6": {
+      "category": "statutes",
+      "title": "Laws of Florida",
+      "url": "http://www.leg.state.fl.us/Statutes/index.cfm?Mode=Laws%20of%20Florida&Submenu=4&Tab=statutes",
+      "directory": "doj-FL",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-FL:statutes:a1dea8572b49": {
+      "category": "statutes",
+      "title": "Law",
+      "url": "https://ufdc.ufl.edu/flaw1",
+      "directory": "doj-FL",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-FL:regulations:3129aeb0873e": {
+      "category": "regulations",
+      "title": "Administrative Code",
+      "url": "https://www.flrules.org/Default.asp",
+      "directory": "doj-FL",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-FL:pi_limitations:0bf89d304631": {
+      "category": "pi_limitations",
+      "title": "Fla. Stat. § 95.11(5)(a)",
+      "url": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0095/Sections/0095.11.html",
+      "directory": "limitations",
+      "locator": "personalInjury",
+      "observation": {
+        "requested_url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0095/Sections/0095.11.html",
+        "retrieved_at": "2026-11-17T19:33:55.552231+00:00",
+        "http_status": "200",
+        "sha256": "90da2dfbeff11b3c2a3f357a614bfaba9dcc5cb85f28df4cc74785b6cf7ce4a8",
+        "health": "manual_review_required"
+      }
+    },
+    "US-FL:written_contract_limitations:0bf89d304631": {
+      "category": "written_contract_limitations",
+      "title": "Fla. Stat. § 95.11(2)(b)",
+      "url": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0095/Sections/0095.11.html",
+      "directory": "limitations",
+      "locator": "writtenContract",
+      "observation": {
+        "requested_url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0095/Sections/0095.11.html",
+        "retrieved_at": "2026-11-17T19:33:55.552231+00:00",
+        "http_status": "200",
+        "sha256": "90da2dfbeff11b3c2a3f357a614bfaba9dcc5cb85f28df4cc74785b6cf7ce4a8",
+        "health": "manual_review_required"
+      }
+    },
+    "US-FL:oral_contract_limitations:0bf89d304631": {
+      "category": "oral_contract_limitations",
+      "title": "Fla. Stat. § 95.11(3)(j)",
+      "url": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0095/Sections/0095.11.html",
+      "directory": "limitations",
+      "locator": "oralContract",
+      "observation": {
+        "requested_url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0095/Sections/0095.11.html",
+        "retrieved_at": "2026-11-17T19:33:55.552231+00:00",
+        "http_status": "200",
+        "sha256": "90da2dfbeff11b3c2a3f357a614bfaba9dcc5cb85f28df4cc74785b6cf7ce4a8",
+        "health": "manual_review_required"
+      }
+    },
+    "US-FL:small_claims:7e38c45c7dc2": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://www.flcourts.gov/Courts-System/florida-courts-help/other-resources/Small-Claims?r=seo%3Fr%3Dseo",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://www.flcourts.gov/Courts-System/florida-courts-help/other-resources/Small-Claims?r=seo%3Fr%3Dseo",
+        "retrieved_at": "2026-11-17T19:42:42.686472+00:00",
+        "http_status": "200",
+        "sha256": "e369d7225e8e77c8ccbaa11c23e559f1f7e391c8c3d04ac4b005584bf3e80810",
+        "health": "manual_review_required"
+      }
+    },
+    "US-FL:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 26"
+    },
+    "US-FL:fault:826a11fa4bd3": {
+      "category": "fault",
+      "title": "Fla. Stat. § 768.81(6)",
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm/Ch0322/index.cfm?App_mode=Display_Statute&Search_String=&URL=0700-0799%2F0768%2FSections%2F0768.81.html",
+      "directory": null,
+      "locator": "Fla. Stat. § 768.81(6)",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:32.798686+00:00",
+        "sha256": "af7c149bf511152e462914eac4d4b0f4545ff60a724e5dc1bb2be08b235f18b5"
+      }
+    },
+    "US-FL:consumerLaw:795e6f10de87": {
+      "title": "Fla. Stat. § 501.201 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0501/Sections/0501.202.html",
+      "directory": "consumer_statutes_index",
+      "locator": "Fla. Stat. § 501.201 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-FL:contract_formation:f496f1f81c03": {
+      "category": "contract_formation",
+      "title": "Fla. Stat. § 672.204",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699%2F0672%2FSections%2F0672.204.html",
+      "locator": "Fla. Stat. § 672.204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:25.507098+00:00",
+        "sha256": "18c51189c1b2a23bc7603bf94c78f167b70285c6928a893efcc25f3ee940894e"
+      }
+    },
+    "US-FL:debtLaw:93f2421ea4db": {
+      "category": "debtLaw",
+      "title": "Fla. Stat. § 559.72",
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0559/Sections/0559.72.html",
+      "locator": "Fla. Stat. § 559.72",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:23:23.543325+00:00",
+        "sha256": "8fae15c346065573514f1bce74a46405d09e3e9dc99ee3c50b04844128c1cd60"
+      }
+    },
+    "US-FL:consumerLaw:556f1bb71ec6": {
+      "category": "consumerLaw",
+      "title": "Fla. Stat. § 501.204",
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0501/Sections/0501.204.html",
+      "locator": "Fla. Stat. § 501.204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:26:42.955422+00:00",
+        "sha256": "f7a3507701ba62a3114666e31fb0fab64ec2537924eaab09542a0699278bbbe4"
+      }
+    },
+    "US-FL:pi_limitations:499e2b8cfe58": {
+      "category": "pi_limitations",
+      "title": "Fla. Stat. § 95.11(5)(a)",
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0095/Sections/0095.11.html",
+      "locator": "Fla. Stat. § 95.11(5)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:31:20.499305+00:00",
+        "sha256": "0147a0490694fc10a6b237aeb32fc78b65160a7675b149b948783db100c55c9a"
+      }
+    },
+    "US-FL:contract_breach:8c057d291b99": {
+      "category": "contract_breach",
+      "title": "Grove Isle Association, Inc. v. Grove Isle Associates, LLLP, No. 3D10-2312 (Fla. 3d DCA Mar. 26, 2014)",
+      "url": "https://flcourts-media.flcourts.gov/content/download/454246/opinion/Opinion_10-2312.pdf",
+      "locator": "Grove Isle Association, Inc. v. Grove Isle Associates, LLLP, No. 3D10-2312 (Fla. 3d DCA Mar. 26, 2014)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:39:39.450411+00:00",
+        "sha256": "449efcd3f289ccaafd01ccc5230a5ab0cf8c38eabf7ebee09c92aa90aa94f3d3"
+      }
+    },
+    "US-FL:negligence_elements:774fc5a82654": {
+      "category": "negligence_elements",
+      "title": "Sierra Orlando Properties, Ltd. v. Allen, No. 6D2023-2448 (Fla. 6th DCA Aug. 22, 2025)",
+      "url": "https://flcourts-media.flcourts.gov/content/download/2456353/opinion/Opinion_2023-2448.pdf",
+      "locator": "Sierra Orlando Properties, Ltd. v. Allen, No. 6D2023-2448 (Fla. 6th DCA Aug. 22, 2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:29:39.596725+00:00",
+        "sha256": "0ccbaa2ee5fc67b458d20a5e6093ad650f74e87b35e44a924e7190ed902837ea"
+      }
+    },
+    "US-FL:service:1f57d555bbe6": {
+      "category": "service",
+      "title": "Fla. Stat. § 48.031(1)(a)",
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0048/Sections/0048.031.html",
+      "locator": "Fla. Stat. § 48.031(1)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:01:53.748032+00:00",
+        "sha256": "2818cd61cf570ce1682e339270b8da81383ba7f2e662139784fab4ff53e2c87b"
+      }
+    },
+    "US-FL:small_claims:ff34550cfc72": {
+      "category": "small_claims",
+      "title": "Fla. Sm. Cl. R. 7.010(b) (scope sentence)",
+      "url": "https://flcourts-media.flcourts.gov/content/download/2470505/opinion/Opinion_SC2024-1765.pdf",
+      "locator": "Fla. Sm. Cl. R. 7.010(b) (scope sentence)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:16:28.940021+00:00",
+        "sha256": "ce5d6837482abf31278e1198760d6955b8648bd6407e1280c65b5269052e731c"
+      }
+    },
+    "US-FL:deposit:923945328605": {
+      "category": "deposit",
+      "title": "Fla. Stat. § 83.49(3)(a)",
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0083/Sections/0083.49.html",
+      "locator": "Fla. Stat. § 83.49(3)(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:35:16.842201+00:00",
+        "sha256": "22f8337df3bfa596706fbf606c001b03dc7834e6de781879a2a910195a52f3d4"
+      }
+    },
+    "US-FL:wageLaw:45b27080bba7": {
+      "category": "wageLaw",
+      "title": "Fla. Const. art. X, § 24(c)",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?submenu=3",
+      "locator": "Fla. Const. art. X, § 24(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:51:44.469893+00:00",
+        "sha256": "b41032dc1bd2b887e94f1f319498c04c7ccdd6dc0f56cc337c1dce2a0ca37efa"
+      }
+    },
+    "US-FL:wage_enforcement:eb6bede41704": {
+      "category": "wage_enforcement",
+      "title": "Fla. Const. art. X, § 24(e)",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?submenu=3",
+      "locator": "Fla. Const. art. X, § 24(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:51:44.469893+00:00",
+        "sha256": "b41032dc1bd2b887e94f1f319498c04c7ccdd6dc0f56cc337c1dce2a0ca37efa"
+      }
+    },
+    "US-FL:response:9dc41654a70a": {
+      "category": "response",
+      "title": "Fla. R. Civ. P. 1.140(a) (No. 93,726)",
+      "url": "https://flcourts-media.flcourts.gov/content/download/421008/4552437/op93726.pdf",
+      "locator": "Fla. R. Civ. P. 1.140(a) (No. 93,726)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:15:33.925207+00:00",
+        "sha256": "5d6d4520e4bc09d187df2b08193597ab0f8411e6044e3c03027575e64bc2532e"
+      }
+    },
+    "US-FL:commencement:d308e10e05f6": {
+      "category": "commencement",
+      "title": "Fla. R. Civ. P. 1.050 (August 2024 ed.)",
+      "url": "https://web.archive.org/web/20251024180332id_/https://www-media.floridabar.org/uploads/2024/08/Civil-Procedure-Rules-08-29-24.pdf",
+      "locator": "Fla. R. Civ. P. 1.050 (August 2024 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:08.739297+00:00",
+        "sha256": "1f1ea731fb2fed59ffaadf57f70a7da85881828d1b7b61b76cf7be7b3574da76"
+      }
+    },
+    "US-FL:venue:00fd95eeeb75": {
+      "category": "venue",
+      "title": "Fla. Stat. § 47.011",
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&StatuteYear=2026&URL=0000-0099%2F0047%2F0047.html",
+      "locator": "Fla. Stat. § 47.011",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:28.384601+00:00",
+        "sha256": "507cfecabea626393d9f80e15763595bb8da0ebef107785d6a2ffe88acf788df"
+      }
+    },
+    "US-FL:venue:da207065593c": {
+      "category": "venue",
+      "title": "Fla. Stat. § 47.051",
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&StatuteYear=2026&URL=0000-0099%2F0047%2F0047.html",
+      "locator": "Fla. Stat. § 47.051",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:28.384601+00:00",
+        "sha256": "507cfecabea626393d9f80e15763595bb8da0ebef107785d6a2ffe88acf788df"
+      }
+    },
+    "US-FL:written_contract_limitations:d83adde4653a": {
+      "category": "written_contract_limitations",
+      "title": "Fla. Stat. § 95.11(2)(b)",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&StatuteYear=2026&URL=0000-0099%2F0095%2FSections%2F0095.11.html",
+      "locator": "Fla. Stat. § 95.11(2)(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:29.188691+00:00",
+        "sha256": "3b60b9746b8b80e6d291a318d754aef330c3baad3976836a7dbc9566aa89396a"
+      }
+    },
+    "US-FL:oral_contract_limitations:7a08f7f4fde5": {
+      "category": "oral_contract_limitations",
+      "title": "Fla. Stat. § 95.11(3)(j)",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&StatuteYear=2026&URL=0000-0099%2F0095%2FSections%2F0095.11.html",
+      "locator": "Fla. Stat. § 95.11(3)(j)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:29.188691+00:00",
+        "sha256": "3b60b9746b8b80e6d291a318d754aef330c3baad3976836a7dbc9566aa89396a"
+      }
+    },
+    "US-FL:wage_limitations:1a258b141bc2": {
+      "category": "wage_limitations",
+      "title": "Fla. Stat. § 95.11(5)(d)",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&StatuteYear=2026&URL=0000-0099%2F0095%2FSections%2F0095.11.html",
+      "locator": "Fla. Stat. § 95.11(5)(d)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:29.188691+00:00",
+        "sha256": "3b60b9746b8b80e6d291a318d754aef330c3baad3976836a7dbc9566aa89396a"
+      }
+    },
+    "US-FL:wrongful_death_limitations:8ffe9cbea3ad": {
+      "category": "wrongful_death_limitations",
+      "title": "Fla. Stat. § 95.11(5)(e)",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&StatuteYear=2026&URL=0000-0099%2F0095%2FSections%2F0095.11.html",
+      "locator": "Fla. Stat. § 95.11(5)(e)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:29.188691+00:00",
+        "sha256": "3b60b9746b8b80e6d291a318d754aef330c3baad3976836a7dbc9566aa89396a"
+      }
+    },
+    "US-FL:accrual:55fd2e460f32": {
+      "category": "accrual",
+      "title": "Fla. Stat. § 95.031 introductory text and (1)",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&StatuteYear=2026&URL=0000-0099%2F0095%2FSections%2F0095.031.html",
+      "locator": "Fla. Stat. § 95.031 introductory text and (1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:28.597041+00:00",
+        "sha256": "96e20aa135842109c0c6a4317fd6adc82c777b22e724e6aedbacb5c3953a6e82"
+      }
+    },
+    "US-FL:consumer_private_action:cd816877de64": {
+      "category": "consumer_private_action",
+      "title": "Fla. Stat. § 501.211(1)",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&StatuteYear=2026&URL=0500-0599%2F0501%2FSections%2F0501.211.html",
+      "locator": "Fla. Stat. § 501.211(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:28.344420+00:00",
+        "sha256": "339274bbeab2fe5955d076c36d40e0ab996576dd42745f2722bf5fe124efc8c7"
+      }
+    },
+    "US-FL:consumer_remedies:8f2b3f2a3c66": {
+      "category": "consumer_remedies",
+      "title": "Fla. Stat. § 501.211(2)",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&StatuteYear=2026&URL=0500-0599%2F0501%2FSections%2F0501.211.html",
+      "locator": "Fla. Stat. § 501.211(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:38:28.344420+00:00",
+        "sha256": "339274bbeab2fe5955d076c36d40e0ab996576dd42745f2722bf5fe124efc8c7"
+      }
+    },
+    "US-FL:service_time_limit:fae54a476ed3": {
+      "category": "service_time_limit",
+      "title": "Fla. R. Civ. P. 1.070(j) (August 2024 ed.)",
+      "url": "https://web.archive.org/web/20251024180332id_/https://www-media.floridabar.org/uploads/2024/08/Civil-Procedure-Rules-08-29-24.pdf",
+      "locator": "Fla. R. Civ. P. 1.070(j) (August 2024 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T16:33:08.739297+00:00",
+        "sha256": "1f1ea731fb2fed59ffaadf57f70a7da85881828d1b7b61b76cf7be7b3574da76"
+      }
+    },
+    "US-FL:tenancy_notice:54916dffaff2": {
+      "category": "tenancy_notice",
+      "title": "Fla. Stat. § 83.56(3)",
+      "url": "https://www.flsenate.gov/Laws/Statutes/2026/83.56",
+      "locator": "Fla. Stat. § 83.56(3)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:20:29.573965+00:00",
+        "sha256": "1abfeb3a26f54871ed635a4038cf4f0504bef9a51305d3adfda20996f9090161"
+      }
+    },
+    "US-FL:tenancy_notice:c8c929f71321": {
+      "category": "tenancy_notice",
+      "title": "Fla. Stat. § 83.56(4)",
+      "url": "https://www.flsenate.gov/Laws/Statutes/2026/83.56",
+      "locator": "Fla. Stat. § 83.56(4)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:20:29.573965+00:00",
+        "sha256": "1abfeb3a26f54871ed635a4038cf4f0504bef9a51305d3adfda20996f9090161"
+      }
+    },
+    "US-FL:tenancy_notice:ec1f82d08996": {
+      "category": "tenancy_notice",
+      "title": "Fla. Stat. § 83.56(5)",
+      "url": "https://www.flsenate.gov/Laws/Statutes/2026/83.56",
+      "locator": "Fla. Stat. § 83.56(5)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:20:29.573965+00:00",
+        "sha256": "1abfeb3a26f54871ed635a4038cf4f0504bef9a51305d3adfda20996f9090161"
+      }
+    },
+    "US-FL:eviction:a4e967b51172": {
+      "category": "eviction",
+      "title": "Fla. Stat. § 83.59(1)–(3) (2026 ed.)",
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&StatuteYear=2026&URL=0000-0099%2F0083%2FSections%2F0083.59.html",
+      "locator": "Fla. Stat. § 83.59(1)–(3) (2026 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:08:03.947264+00:00",
+        "sha256": "de0ee26dbb6dbe0cc90a682a4832d7d63081912564d74ed5259729c6061c94cd"
+      }
+    },
+    "US-FL:habitability:c7772a6f53bc": {
+      "category": "habitability",
+      "title": "Fla. Stat. § 83.51(1) (2026 ed.)",
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&StatuteYear=2026&URL=0000-0099%2F0083%2FSections%2F0083.51.html",
+      "locator": "Fla. Stat. § 83.51(1) (2026 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:08:03.931746+00:00",
+        "sha256": "d11e6575858ac4befe07525f48065aee977db2f13e7a83e1638fb07a9113393f"
+      }
+    },
+    "US-FL:consumer_agency:3493ab9e4c74": {
+      "category": "consumer_agency",
+      "title": "Fla. Stat. § 501.207(1)–(2)",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&StatuteYear=2026&URL=0500-0599%2F0501%2FSections%2F0501.207.html",
+      "locator": "Fla. Stat. § 501.207(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:30:05.744585+00:00",
+        "sha256": "c5d0bef02ee10943868d7cdabd9f8897046f9034833f7a9060ede1eadaf97d1a"
+      }
+    },
+    "US-FL:consumer_agency:ff31e846af47": {
+      "category": "consumer_agency",
+      "title": "Fla. Stat. § 501.203(2)",
+      "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&StatuteYear=2026&URL=0500-0599%2F0501%2FSections%2F0501.203.html",
+      "locator": "Fla. Stat. § 501.203(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:33:29.786536+00:00",
+        "sha256": "e99856164b3a9b100b5566ea7fbf87e7d18842ef7e545df7650df2b9fd150bff"
+      }
+    },
+    "US-FL:cover_sheet_form:ae204a37d5ec": {
+      "category": "cover_sheet_form",
+      "title": "Florida Civil Procedure Form 1.997 (cover-sheet filing instruction)",
+      "url": "https://www.jud12.flcourts.org/Portals/0/Documents/Divisions/Civil/Forms/Civil-Cover-Sheet.pdf?ver=JoMJi1ZbwaOuuCfFoio6ig%3D%3D",
+      "locator": "Florida Civil Procedure Form 1.997 (cover-sheet filing instruction)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:23:43.042670+00:00",
+        "sha256": "1b6872b6bdcdb1f47f00b3bef18f347fe4eb300f6081aaa8c9c381000d2a33b4"
+      }
+    },
+    "US-FL:cover_sheet_form:a00a90c8b60a": {
+      "category": "cover_sheet_form",
+      "title": "Civil Cover Sheet",
+      "url": "https://www.jud12.flcourts.org/Portals/0/Documents/Divisions/Civil/Forms/Civil-Cover-Sheet.pdf?ver=JoMJi1ZbwaOuuCfFoio6ig%3D%3D",
+      "locator": "1.997",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:23:43.042670+00:00",
+        "sha256": "1b6872b6bdcdb1f47f00b3bef18f347fe4eb300f6081aaa8c9c381000d2a33b4"
+      }
+    },
+    "US-FL:forms:bd88c1e13da5": {
+      "category": "forms",
+      "title": "Florida Judicial Branch civil filing form instructions",
+      "url": "https://www.jud12.flcourts.org/Portals/0/Documents/Divisions/Civil/Forms/Civil-Cover-Sheet.pdf?ver=JoMJi1ZbwaOuuCfFoio6ig%3D%3D",
+      "locator": "1.997",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:23:43.042670+00:00",
+        "sha256": "1b6872b6bdcdb1f47f00b3bef18f347fe4eb300f6081aaa8c9c381000d2a33b4"
+      }
+    },
+    "US-FL:general_contract_damages:d61ddf24da86": {
+      "category": "general_contract_damages",
+      "title": "Perera v. Diolife LLC, No. 4D18-892, slip op. at 7 (Fla. 4th DCA June 12, 2019)",
+      "url": "https://flcourts-media.flcourts.gov/content/download/591788/opinion/Opinion_18-0892.pdf",
+      "locator": "Perera v. Diolife LLC, No. 4D18-892, slip op. at 7 (Fla. 4th DCA June 12, 2019)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T20:36:08.939190+00:00",
+        "sha256": "bb7181599e607e96a7480f4913bfa4f1a75d9126b8eb3404c09e6f50ce777a29"
+      }
+    },
+    "US-FL:premises:43f8af3249e1": {
+      "category": "premises",
+      "title": "Fla. Stat. § 768.0755",
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm/Ch0456/index.cfm?App_mode=Display_Statute&URL=0700-0799%2F0768%2FSections%2F0768.0755.html",
+      "locator": "Fla. Stat. § 768.0755",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:02:34.361895+00:00",
+        "sha256": "dd9bb65cff47d2a64ab6a963de1278f5605106cdb8a5143a2ab6c6ee8932d2e3"
+      }
+    },
+    "US-FL:premises:ba2b35adeab0": {
+      "category": "premises",
+      "title": "Fla. Stat. § 768.075",
+      "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0700-0799%2F0768%2FSections%2F0768.075.html",
+      "locator": "Fla. Stat. § 768.075",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:02:33.959392+00:00",
+        "sha256": "302dc2b43ec01b8413541987fd40b1f3839dd5d2a6e04a80c08f25f7f5070615"
+      }
+    },
+    "US-FL:contract_formation:a337190ac442": {
+      "category": "contract_formation",
+      "title": "Fla. Std. Jury Instr. (Cont. & Bus.) 416.3 (2013 adoption)",
+      "url": "https://supremecourt.flcourts.gov/content/download/243069/file/sc12-1931.pdf",
+      "locator": "Fla. Std. Jury Instr. (Cont. & Bus.) 416.3 (2013 adoption)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:55:14.506571+00:00",
+        "sha256": "efefb7127ce1402e1657d160db53f1d688da656505e4759015391617b65053c1"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-FL:court:f48e431f054d",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-FL:court_directory:bc697e02075c"
+    },
+    {
+      "id": "US-FL:court:26d18f5b6780",
+      "name": "District Courts of Appeal",
+      "level": "appellate_directory",
+      "source_id": "US-FL:court_directory:5a648e95c975"
+    },
+    {
+      "id": "US-FL:court:e9125e000c6c",
+      "name": "First District Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-FL:court_directory:b0a9c9d885d6"
+    },
+    {
+      "id": "US-FL:court:9b694bf439cc",
+      "name": "Second District Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-FL:court_directory:a03e44e7415c"
+    },
+    {
+      "id": "US-FL:court:32833ed59c12",
+      "name": "Third District Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-FL:court_directory:f4bdecb2085c"
+    },
+    {
+      "id": "US-FL:court:2ba6eedb3048",
+      "name": "Fourth District Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-FL:court_directory:4a1d033d6aa8"
+    },
+    {
+      "id": "US-FL:court:0c644396d502",
+      "name": "Fifth District Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-FL:court_directory:2b4798dff5a8"
+    },
+    {
+      "id": "US-FL:court:4aa27e6a46a8",
+      "name": "Trial Courts: Circuit Courts",
+      "level": "trial_directory",
+      "source_id": "US-FL:court_directory:c7045054d5de"
+    },
+    {
+      "id": "US-FL:court:6b168deff907",
+      "name": "Trial Courts: County",
+      "level": "trial_directory",
+      "source_id": "US-FL:court_directory:f7359b1d0ed7"
+    },
+    {
+      "id": "US-FL:court:2ae93a61837b",
+      "name": "Circuit",
+      "level": "general_trial",
+      "source_id": "US-FL:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-FL:court:09753adaaaf9",
+      "name": "County",
+      "level": "limited_trial",
+      "source_id": "US-FL:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "Fla. Stat. § 95.11(5)(a)",
+      "source_id": "US-FL:pi_limitations:0bf89d304631",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "Fla. Stat. § 95.11(2)(b)",
+      "source_id": "US-FL:written_contract_limitations:0bf89d304631",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "Fla. Stat. § 95.11(3)(j)",
+      "source_id": "US-FL:oral_contract_limitations:0bf89d304631",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Fla. Stat. § 34.011. Jurisdiction in landlord and tenant case",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "Fla. Stat. § 501.201 et seq.",
+      "source_id": "US-FL:consumerLaw:795e6f10de87",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "bafe9f02e02a7a481a2649f0453e13": {
+      "citation": "Fla. Stat. § 768.81(6)",
+      "source_id": "US-FL:fault:826a11fa4bd3",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "(6) GREATER PERCENTAGE OF FAULT.—In a negligence action to which this section applies, any party found to be greater than 50 percent at fault for his or her own harm may not recover any damages. This subsection does not apply to an action for damages for personal injury or wrongful death arising out of medical negligence pursuant to chapter 766.",
+      "text_sha256": "ae7d9f4e5b5d6a89ae93c0c7dc137b30f059d73c3635650713ea3ceb852d4492",
+      "publisher_sha256": "af7c149bf511152e462914eac4d4b0f4545ff60a724e5dc1bb2be08b235f18b5",
+      "retrieved_at": "2026-11-17T20:50:32.798686+00:00",
+      "currentness": "unresolved"
+    },
+    "4b454d786f7aa94a29ceda6f5abe0d": {
+      "source_id": "US-FL:contract_formation:f496f1f81c03",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 672.204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "18c51189c1b2a23bc7603bf94c78f167b70285c6928a893efcc25f3ee940894e",
+      "retrieved_at": "2026-11-18T15:14:25.507098+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "6e49cdeda3b496f9c3c14964c6ccc2": {
+      "source_id": "US-FL:debtLaw:93f2421ea4db",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 559.72",
+      "text": "In collecting consumer debts, a person may not:(1) Simulate in any manner a law enforcement officer or a representative of any governmental agency. (2) Use or threaten force or violence. (3) Tell a debtor who disputes a consumer debt that she or he or any person employing her or him will disclose to another, orally or in writing, directly or indirectly, information affecting the debtor’s reputation for credit worthiness without also informing the debtor that the existence of the dispute will also be disclosed as required by subsection (6). (4) Communicate or threaten to communicate with a debtor’s employer before obtaining final judgment against the debtor, unless the debtor gives her or his permission in writing to contact her or his employer or acknowledges in writing the existence of the debt after the debt has been placed for collection. However, this does not prohibit a person from telling the debtor that her or his employer will be contacted if a final judgment is obtained. (5) Disclose to a person other than the debtor or her or his family information affecting the debtor’s reputation, whether or not for credit worthiness, with knowledge or reason to know that the other person does not have a legitimate business need for the information or that the information is false. (6) Disclose information concerning the existence of a debt known to be reasonably disputed by the debtor without disclosing that fact. If a disclosure is made before such dispute has been asserted and written notice is received from the debtor that any part of the debt is disputed, and if such dispute is reasonable, the person who made the original disclosure must reveal upon the request of the debtor within 30 days the details of the dispute to each person to whom disclosure of the debt without notice of the dispute was made within the preceding 90 days. (7) Willfully communicate with the debtor or any member of her or his family with such frequency as can reasonably be expected to harass the debtor or her or his family, or willfully engage in other conduct which can reasonably be expected to abuse or harass the debtor or any member of her or his family. (8) Use profane, obscene, vulgar, or willfully abusive language in communicating with the debtor or any member of her or his family. (9) Claim, attempt, or threaten to enforce a debt when such person knows that the debt is not legitimate, or assert the existence of some other legal right when such person knows that the right does not exist. (10) Use a communication that simulates in any manner legal or judicial process or that gives the appearance of being authorized, issued, or approved by a government, governmental agency, or attorney at law, when it is not. (11) Communicate with a debtor under the guise of an attorney by using the stationery of an attorney or forms or instruments that only attorneys are authorized to prepare. (12) Orally communicate with a debtor in a manner that gives the false impression or appearance that such person is or is associated with an attorney. (13) Advertise or threaten to advertise for sale any debt as a means to enforce payment except under court order or when acting as an assignee for the benefit of a creditor. (14) Publish or post, threaten to publish or post, or cause to be published or posted before the general public individual names or any list of names of debtors, commonly known as a deadbeat list, for the purpose of enforcing or attempting to enforce collection of consumer debts. (15) Refuse to provide adequate identification of herself or himself or her or his employer or other entity whom she or he represents if requested to do so by a debtor from whom she or he is collecting or attempting to collect a consumer debt. (16) Mail any communication to a debtor in an envelope or postcard with words typed, written, or printed on the outside of the envelope or postcard calculated to embarrass the debtor. An example of this would be an envelope addressed to “Deadbeat, Jane Doe” or “Deadbeat, John Doe.” (17) Communicate with the debtor between the hours of 9 p.m. and 8 a.m. in the debtor’s time zone without the prior consent of the debtor. This subsection does not apply to an e-mail communication that is sent to an e-mail address and that otherwise complies with this section.(a) The person may presume that the time a telephone call is received conforms to the local time zone assigned to the area code of the number called, unless the person reasonably believes that the debtor’s telephone is located in a different time zone. (b) If, such as with toll-free numbers, an area code is not assigned to a specific geographic area, the person may presume that the time a telephone call is received conforms to the local time zone of the debtor’s last known place of residence, unless the person reasonably believes that the debtor’s telephone is located in a different time zone. (18) Communicate with a debtor if the person knows that the debtor is represented by an attorney with respect to such debt and has knowledge of, or can readily ascertain, such attorney’s name and address, unless the debtor’s attorney fails to respond within 30 days to a communication from the person, unless the debtor’s attorney consents to a direct communication with the debtor, or unless the debtor initiates the communication. (19) Cause a debtor to be charged for communications by concealing the true purpose of the communication, including collect telephone calls and telegram fees.",
+      "text_sha256": "b132a3c29121c14d768888e3af1d907dce969f1a5685bd0a90670578c14ef93a",
+      "publisher_sha256": "8fae15c346065573514f1bce74a46405d09e3e9dc99ee3c50b04844128c1cd60",
+      "retrieved_at": "2026-11-19T19:23:23.543325+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "9eb205871bdc01ab063e396d9af441": {
+      "source_id": "US-FL:consumerLaw:556f1bb71ec6",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 501.204",
+      "text": "(1) Unfair methods of competition, unconscionable acts or practices, and unfair or deceptive acts or practices in the conduct of any trade or commerce are hereby declared unlawful. (2) It is the intent of the Legislature that, in construing subsection (1), due consideration and great weight shall be given to the interpretations of the Federal Trade Commission and the federal courts relating to s. 5(a)(1) of the Federal Trade Commission Act, 15 U.S.C. s. 45(a)(1) as of July 1, 2017.",
+      "text_sha256": "b96ce12f55c9d32658a0b112bd4818cac13e262077756faeae7f89dbd8be31dd",
+      "publisher_sha256": "f7a3507701ba62a3114666e31fb0fab64ec2537924eaab09542a0699278bbbe4",
+      "retrieved_at": "2026-11-19T19:26:42.955422+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "bc34b04878d28acdf85040203872b1": {
+      "source_id": "US-FL:pi_limitations:499e2b8cfe58",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 95.11(5)(a)",
+      "text": "(5) WITHIN TWO YEARS.—(a) An action founded on negligence.",
+      "text_sha256": "67f4ab3c675f7a097d44f28ec8864290f47a718370b61235b67c6b5a748af28a",
+      "publisher_sha256": "0147a0490694fc10a6b237aeb32fc78b65160a7675b149b948783db100c55c9a",
+      "retrieved_at": "2026-11-19T19:31:20.499305+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "993dee34f11bb435a75161fd113fee": {
+      "source_id": "US-FL:contract_breach:8c057d291b99",
+      "authority_type": "opinion",
+      "citation": "Grove Isle Association, Inc. v. Grove Isle Associates, LLLP, No. 3D10-2312 (Fla. 3d DCA Mar. 26, 2014)",
+      "text": "“The elements of a breach of contract action are: (1) a valid contract; (2) a material breach; and (3) damages.” Schiffman v. Schiffman, 47 So. 3d 925, 927 (Fla. 3d DCA 2010) (quoting Abbott Labs., Inc. v. Gen. Elec. Capital, 765 So. 2d 737, 740 (Fla. 5th DCA 2000)).",
+      "text_sha256": "a1849dbcc710a9556a209348f837104d1ec6a891b2898c6db818aca3eb6b65c2",
+      "publisher_sha256": "449efcd3f289ccaafd01ccc5230a5ab0cf8c38eabf7ebee09c92aa90aa94f3d3",
+      "retrieved_at": "2026-11-19T19:39:39.450411+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2014-03-26",
+      "court": "Florida Third District Court of Appeal",
+      "decision_date": "2014-03-26",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissal with prejudice of condominium association claims. Reversed and remanded."
+    },
+    "d011d74b8f7537e69a2f380e3453ee": {
+      "source_id": "US-FL:negligence_elements:774fc5a82654",
+      "authority_type": "opinion",
+      "citation": "Sierra Orlando Properties, Ltd. v. Allen, No. 6D2023-2448 (Fla. 6th DCA Aug. 22, 2025)",
+      "text": "“[T]o succeed on a claim of negligence , a plaintiff must establish the four elements of duty, breach, proximate causation, and damages.”",
+      "text_sha256": "e65f4489fda3692ad7a1b2e4fb3d3103e5ed1d0b6c362850e39d4b749d158e17",
+      "publisher_sha256": "0ccbaa2ee5fc67b458d20a5e6093ad650f74e87b35e44a924e7190ed902837ea",
+      "retrieved_at": "2026-11-20T15:29:39.596725+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2025-08-22",
+      "court": "Florida Sixth District Court of Appeal",
+      "decision_date": "2025-08-22",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from a final premises liability judgment. Reversed for improper denial of directed verdict."
+    },
+    "53c09e090680b867f5370c8b7ed159": {
+      "source_id": "US-FL:service:1f57d555bbe6",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 48.031(1)(a)",
+      "text": "(1)(a) Service of original process is made by delivering a copy of it to the person to be served with a copy of the complaint, petition, or other initial pleading or paper or by leaving the copies at his or her usual place of abode with any person residing therein who is 15 years of age or older and informing the person of their contents. Minors who are or have been married shall be served as provided in this section.",
+      "text_sha256": "0c3ed083dd6e911c1a03a2209e1bcaf8c98d49bff5ce365607b5cc7d9f249647",
+      "publisher_sha256": "2818cd61cf570ce1682e339270b8da81383ba7f2e662139784fab4ff53e2c87b",
+      "retrieved_at": "2026-11-20T16:01:53.748032+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Florida civil proceedings governed by Chapter 48"
+    },
+    "66832caad19bccb05b24c17c8e6af0": {
+      "source_id": "US-FL:small_claims:ff34550cfc72",
+      "authority_type": "court_rule",
+      "citation": "Fla. Sm. Cl. R. 7.010(b) (scope sentence)",
+      "text": "(b) Scope. These rules are applicable to all actions of a civil nature in the county courts which contain a demand for money or property, the value of which does not exceed $8,000 exclusive of costs, interest, and attorneys’ fees.",
+      "text_sha256": "25752b7d4b94466bbdc51aae994b6df3bdd67ced86d3d519f6e32dfd9e25f894",
+      "publisher_sha256": "ce5d6837482abf31278e1198760d6955b8648bd6407e1280c65b5269052e731c",
+      "retrieved_at": "2026-11-20T16:16:28.940021+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Florida Supreme Court rule order SC2024-1765, adopted October 23, 2025",
+      "court": "Florida County Court",
+      "effective_from": "2026-01-01"
+    },
+    "55c3bb60df2c8150cd6e23fc80e287": {
+      "source_id": "US-FL:deposit:923945328605",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 83.49(3)(a)",
+      "text": "(a) Upon the vacating of the premises for termination of the rental agreement, if the landlord does not intend to impose a claim on the security deposit, the landlord must return the security deposit, together with interest if otherwise required, within 15 days after the termination of the rental agreement. If the landlord intends to impose a claim on the deposit, the landlord must, within 30 days after the termination of the rental agreement, provide the tenant written notice by certified mail to the tenant’s last known mailing address or by e-mail in accordance with s. 83.505 of his or her intention to impose a claim on the deposit and the reason for imposing the claim. The written notice must contain a statement in substantially the following form: This is a notice of my intention to impose a claim for damages in the amount of upon your security deposit, due to . It is sent to you as required by s. 83.49(3), Florida Statutes. You are hereby notified that you must object in writing to this deduction from your security deposit within 15 days after the time you receive this notice or I will be authorized to deduct my claim from your security deposit. Your objection must be sent to (landlord’s address) . If the landlord fails to give the required written notice within the 30-day period, he or she forfeits the right to impose a claim upon the security deposit and may not seek a setoff against the deposit but may file an action for damages after returning the security deposit to the tenant.",
+      "text_sha256": "b046df6a654f9a4c19e3396819843eb66990dbc928b8cc77e582cb6f729d727f",
+      "publisher_sha256": "22f8337df3bfa596706fbf606c001b03dc7834e6de781879a2a910195a52f3d4",
+      "retrieved_at": "2026-11-20T16:35:16.842201+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "6204525df68d8f0f8242aaf8bf7539": {
+      "source_id": "US-FL:wageLaw:45b27080bba7",
+      "authority_type": "constitution",
+      "citation": "Fla. Const. art. X, § 24(c)",
+      "text": "(c) MINIMUM WAGE. Employers shall pay Employees Wages no less than the Minimum Wage for all hours worked in Florida. Six months after enactment, the Minimum Wage shall be established at an hourly rate of $6.15. Effective September 30th, 2021, the existing state Minimum Wage shall increase to $10.00 per hour, and then increase each September 30th thereafter by $1.00 per hour, until the Minimum Wage reaches $15.00 per hour on September 30th, 2026. On September 30th of 2027 and on each following September 30th, the state Agency for Workforce Innovation shall calculate an adjusted Minimum Wage rate by increasing the current Minimum Wage rate by the rate of inflation during the twelve months prior to each September 1st using the consumer price index for urban wage earners and clerical workers, CPI-W, or a successor index as calculated by the United States Department of Labor. Each adjusted Minimum Wage rate calculated shall be published and take effect on the following January 1st. For tipped Employees meeting eligibility requirements for the tip credit under the FLSA, Employers may credit towards satisfaction of the Minimum Wage tips up to the amount of the allowable FLSA tip credit in 2003.",
+      "text_sha256": "7684b74d4d1687968a74fc7a5cb1bc483834567f00e23b70b4537efa49313c82",
+      "publisher_sha256": "b41032dc1bd2b887e94f1f319498c04c7ccdd6dc0f56cc337c1dce2a0ca37efa",
+      "retrieved_at": "2026-11-20T17:51:44.469893+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "44105a733c3460992e22270c2d6b0f": {
+      "source_id": "US-FL:wage_enforcement:eb6bede41704",
+      "authority_type": "constitution",
+      "citation": "Fla. Const. art. X, § 24(e)",
+      "text": "(e) ENFORCEMENT. Persons aggrieved by a violation of this amendment may bring a civil action in a court of competent jurisdiction against an Employer or person violating this amendment and, upon prevailing, shall recover the full amount of any back wages unlawfully withheld plus the same amount as liquidated damages, and shall be awarded reasonable attorney’s fees and costs. In addition, they shall be entitled to such legal or equitable relief as may be appropriate to remedy the violation including, without limitation, reinstatement in employment and/or injunctive relief. Any Employer or other person found liable for willfully violating this amendment shall also be subject to a fine payable to the state in the amount of $1000.00 for each violation. The state attorney general or other official designated by the state legislature may also bring a civil action to enforce this amendment. Actions to enforce this amendment shall be subject to a statute of limitations of four years or, in the case of willful violations, five years. Such actions may be brought as a class action pursuant to Rule 1.220 of the Florida Rules of Civil Procedure.",
+      "text_sha256": "385b49f5e091ca4d493881c4fb3fd011d4e7d726f47323e5e163fd5c09289cd0",
+      "publisher_sha256": "b41032dc1bd2b887e94f1f319498c04c7ccdd6dc0f56cc337c1dce2a0ca37efa",
+      "retrieved_at": "2026-11-20T17:51:44.469893+00:00",
+      "currentness": "unresolved",
+      "language": "en"
+    },
+    "861df288bd95d9192d477bff42f994": {
+      "source_id": "US-FL:response:9dc41654a70a",
+      "authority_type": "court_rule",
+      "citation": "Fla. R. Civ. P. 1.140(a) (No. 93,726)",
+      "text": "(a) When Presented. (1) A defendant shall serve an answer within 20 days after service of original process and the initial pleading on the defendant, or not later than the date fixed in a notice by publication. A party served with a pleading stating a cross-claim against that party shall serve an answer to it within 20 days after service on that party. The plaintiff shall serve an answer to a counterclaim within 20 days after service of the counterclaim. If a reply is required, the reply shall be served within 20 days after service of the answer. (2) The service of a motion under this rule, except a motion for judgment on the pleadings or a motion to strike under subdivision (f), alters these periods of time so that if the court denies the motion or postpones its disposition until the trial on the merits, the responsive pleadings shall be served within 10 days after notice of the court's action or, if the court grants a motion for a more definite statement, the responsive pleadings shall be served within 10 days after service of the more definite statement unless a different time is fixed by the court in either case. (3) If the court permits or requires an amended or responsive pleading or a more definite statement, the pleading or statement shall be served within 10 days after notice of the court's action. Responses to the pleadings or statements shall be served within 10 days of service of the pleadings or statements.",
+      "text_sha256": "2349886edfd8eca6a1462180404f7e4a5654c7bcb304f8b4fc5f8fafb72e5aba",
+      "publisher_sha256": "5d6d4520e4bc09d187df2b08193597ab0f8411e6044e3c03027575e64bc2532e",
+      "retrieved_at": "2026-11-20T18:15:33.925207+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Florida Supreme Court order No. 93,726 (effective October 1, 1998)",
+      "court": "Florida courts applying the Rules of Civil Procedure",
+      "effective_from": "1998-10-01"
+    },
+    "6eca117296367b2c7f5dafb1ecdaab": {
+      "source_id": "US-FL:commencement:d308e10e05f6",
+      "authority_type": "court_rule",
+      "citation": "Fla. R. Civ. P. 1.050 (August 2024 ed.)",
+      "text": "Every action of a civil nature shall be deemed commenced when the complaint or petition is filed except that ancillary proceedings shall be deemed commenced when the writ is issued or the pleading setting forth the claim of the party initiating the action is filed.",
+      "text_sha256": "0cc21134e2fff3da8891a2607a5fca0857ceae238f1e586274b69bbdac752604",
+      "publisher_sha256": "1f1ea731fb2fed59ffaadf57f70a7da85881828d1b7b61b76cf7be7b3574da76",
+      "retrieved_at": "2026-11-21T16:33:08.739297+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Florida Bar Civil Procedure Rules, August 29, 2024 edition",
+      "court": "Florida Circuit and County Courts governed by the Florida Rules of Civil Procedure",
+      "publisher_member": "Florida Bar Civil Procedure Rules, August 29, 2024 edition, p. 17"
+    },
+    "b177bec37587c0d5ad245c6824a830": {
+      "source_id": "US-FL:venue:00fd95eeeb75",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 47.011",
+      "text": "Actions shall be brought only in the county where the defendant resides, where the cause of action accrued, or where the property in litigation is located. This section shall not apply to actions against nonresidents.",
+      "text_sha256": "2df0f4953596f80e430a289f2b758bf1765b343344ef62d13a5807ea2e78686b",
+      "publisher_sha256": "507cfecabea626393d9f80e15763595bb8da0ebef107785d6a2ffe88acf788df",
+      "retrieved_at": "2026-11-21T16:38:28.384601+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Florida Legislature Online Sunshine, 2026 Florida Statutes, § 47.011"
+    },
+    "21110204b6db3814380ce467702b1d": {
+      "source_id": "US-FL:venue:da207065593c",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 47.051",
+      "text": "Actions against domestic corporations shall be brought only in the county where such corporation has, or usually keeps, an office for transaction of its customary business, where the cause of action accrued, or where the property in litigation is located. Actions against foreign corporations doing business in this state shall be brought in a county where such corporation has an agent or other representative, where the cause of action accrued, or where the property in litigation is located.",
+      "text_sha256": "fc8d5a9ef8f3ea6988c7f115590a5fca3267b71e5bc3768544622f4bffb9ed90",
+      "publisher_sha256": "507cfecabea626393d9f80e15763595bb8da0ebef107785d6a2ffe88acf788df",
+      "retrieved_at": "2026-11-21T16:38:28.384601+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Florida Legislature Online Sunshine, 2026 Florida Statutes, § 47.051"
+    },
+    "944bed800058694dbc5b3c056db15d": {
+      "source_id": "US-FL:written_contract_limitations:d83adde4653a",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 95.11(2)(b)",
+      "text": "(2) WITHIN FIVE YEARS.—(b) A legal or equitable action on a contract, obligation, or liability founded on a written instrument, except for an action to enforce a claim against a payment bond, which shall be governed by the applicable provisions of paragraph (6)(e), s. 255.05(10), s. 337.18(1), or s. 713.23(1)(e), and except for an action for a deficiency judgment governed by paragraph (6)(g).",
+      "text_sha256": "b258d2a4d829ea3b0621e9dee9de6ac4461ea6792e641ff65e55ce4da3fe0488",
+      "publisher_sha256": "3b60b9746b8b80e6d291a318d754aef330c3baad3976836a7dbc9566aa89396a",
+      "retrieved_at": "2026-11-21T16:38:29.188691+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Florida Legislature Online Sunshine, 2026 Florida Statutes, § 95.11(2)(b), with governing subsection heading"
+    },
+    "6bae9a701653c5eab7836ab6c28ff0": {
+      "source_id": "US-FL:oral_contract_limitations:7a08f7f4fde5",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 95.11(3)(j)",
+      "text": "(3) WITHIN FOUR YEARS.—(j) A legal or equitable action on a contract, obligation, or liability not founded on a written instrument, including an action for the sale and delivery of goods, wares, and merchandise, and on store accounts.",
+      "text_sha256": "db2b708a454ed1fd81c96d1483e9fc5522964fda052b9c748787967d1b651663",
+      "publisher_sha256": "3b60b9746b8b80e6d291a318d754aef330c3baad3976836a7dbc9566aa89396a",
+      "retrieved_at": "2026-11-21T16:38:29.188691+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Florida Legislature Online Sunshine, 2026 Florida Statutes, § 95.11(3)(j), with governing subsection heading"
+    },
+    "c6be5df726b2f0693af19d75946e44": {
+      "source_id": "US-FL:wage_limitations:1a258b141bc2",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 95.11(5)(d)",
+      "text": "(5) WITHIN TWO YEARS.—(d) An action to recover wages or overtime or damages or penalties concerning payment of wages and overtime.",
+      "text_sha256": "d54b6a8288740a630e0d8ad77cc5500a28fcf5619a1a68538e7db450521718bf",
+      "publisher_sha256": "3b60b9746b8b80e6d291a318d754aef330c3baad3976836a7dbc9566aa89396a",
+      "retrieved_at": "2026-11-21T16:38:29.188691+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Florida Legislature Online Sunshine, 2026 Florida Statutes, § 95.11(5)(d), with governing subsection heading"
+    },
+    "9e372c46b70fc8efd736990ceda2d3": {
+      "source_id": "US-FL:wrongful_death_limitations:8ffe9cbea3ad",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 95.11(5)(e)",
+      "text": "(5) WITHIN TWO YEARS.—(e) An action for wrongful death.",
+      "text_sha256": "74a096751e10f273553bb39241204f23f67ec28c7cac25c9c0ba75644fa09cb0",
+      "publisher_sha256": "3b60b9746b8b80e6d291a318d754aef330c3baad3976836a7dbc9566aa89396a",
+      "retrieved_at": "2026-11-21T16:38:29.188691+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Florida Legislature Online Sunshine, 2026 Florida Statutes, § 95.11(5)(e), with governing subsection heading"
+    },
+    "49743b24ad7d5819734f672c238c81": {
+      "source_id": "US-FL:accrual:55fd2e460f32",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 95.031 introductory text and (1)",
+      "text": "Except as provided in subsection (2) and in s. 95.051 and elsewhere in these statutes, the time within which an action shall be begun under any statute of limitations runs from the time the cause of action accrues. (1) A cause of action accrues when the last element constituting the cause of action occurs. For the purposes of this chapter, the last element constituting a cause of action on an obligation or liability founded on a negotiable or nonnegotiable note payable on demand or after date with no specific maturity date specified in the note, and the last element constituting a cause of action against any endorser, guarantor, or other person secondarily liable on any such obligation or liability founded on any such note, is the first written demand for payment, notwithstanding that the endorser, guarantor, or other person secondarily liable has executed a separate writing evidencing such liability.",
+      "text_sha256": "684b9687b662bff8e2dece69906f0e4b602ac81b97e72e78df1808c7e05f2330",
+      "publisher_sha256": "96e20aa135842109c0c6a4317fd6adc82c777b22e724e6aedbacb5c3953a6e82",
+      "retrieved_at": "2026-11-21T16:38:28.597041+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Florida Legislature Online Sunshine, 2026 Florida Statutes, § 95.031 introductory text and subsection (1)"
+    },
+    "aacaeb4bb459c1a51debf512375fd9": {
+      "source_id": "US-FL:consumer_private_action:cd816877de64",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 501.211(1)",
+      "text": "(1) Without regard to any other remedy or relief to which a person is entitled, anyone aggrieved by a violation of this part may bring an action to obtain a declaratory judgment that an act or practice violates this part and to enjoin a person who has violated, is violating, or is otherwise likely to violate this part.",
+      "text_sha256": "0831f4740e4726241e30c354ec45241fc20a70cd468dd50641942012f88e5800",
+      "publisher_sha256": "339274bbeab2fe5955d076c36d40e0ab996576dd42745f2722bf5fe124efc8c7",
+      "retrieved_at": "2026-11-21T16:38:28.344420+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Florida Legislature Online Sunshine, 2026 Florida Statutes, § 501.211(1)"
+    },
+    "b0fdc7ccd67f1562963b8fca2c653f": {
+      "source_id": "US-FL:consumer_remedies:8f2b3f2a3c66",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 501.211(2)",
+      "text": "(2) In any action brought by a person who has suffered a loss as a result of a violation of this part, such person may recover actual damages, plus attorney’s fees and court costs as provided in s. 501.2105. However, damages, fees, or costs are not recoverable under this section against a retailer who has, in good faith, engaged in the dissemination of claims of a manufacturer or wholesaler without actual knowledge that it violated this part.",
+      "text_sha256": "a4d5735daf4b79ec27347442c8c4c94c84070b2cc4d19e1321443a958ac7b590",
+      "publisher_sha256": "339274bbeab2fe5955d076c36d40e0ab996576dd42745f2722bf5fe124efc8c7",
+      "retrieved_at": "2026-11-21T16:38:28.344420+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Florida Legislature Online Sunshine, 2026 Florida Statutes, § 501.211(2)"
+    },
+    "374bea972214350036fe8f613b4838": {
+      "source_id": "US-FL:service_time_limit:fae54a476ed3",
+      "authority_type": "court_rule",
+      "citation": "Fla. R. Civ. P. 1.070(j) (August 2024 ed.)",
+      "text": "(j) Summons; Time Limit. If service of the initial process and initial pleading is not made on a defendant within 120 days after filing of the initial pleading directed to that defendant the court, on its own initiative after notice or on motion, must direct that service be effected within a specified time or must dismiss the action without prejudice or drop that defendant as a party; provided that if the plaintiff shows good cause or excusable neglect for the failure, the court must extend the time for service for an appropriate period. When a motion for leave to amend with the attached proposed amended complaint is filed, the 120-day period for service of amended complaints on the new party or parties will begin on the entry of an order granting leave to amend. A dismissal under this subdivision will not be considered a voluntary dismissal or operate as an adjudication on the merits under rule 1.420(a)(1).",
+      "text_sha256": "0fd7bb07aed2d797c900d2c0476afdf43f1c47db3739b0d0bb58d37eb3ae49b3",
+      "publisher_sha256": "1f1ea731fb2fed59ffaadf57f70a7da85881828d1b7b61b76cf7be7b3574da76",
+      "retrieved_at": "2026-11-21T16:33:08.739297+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Florida Bar civil rules publication, August 29, 2024",
+      "court": "Florida Circuit and County Courts governed by the Florida Rules of Civil Procedure",
+      "publisher_member": "Florida Bar civil rules publication, August 29, 2024, PDF p. 25, Fla. R. Civ. P. 1.070(j) (August 2024 ed.), rule text only"
+    },
+    "5e13e8ab1ee5836de28c49ed6085be": {
+      "source_id": "US-FL:tenancy_notice:54916dffaff2",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 83.56(3)",
+      "text": "(3) If the tenant fails to pay rent when due and the default continues for 3 days, excluding Saturday, Sunday, and legal holidays, after delivery of written demand by the landlord for payment of the rent or possession of the premises, the landlord may terminate the rental agreement. Legal holidays for the purpose of this section shall be court-observed holidays only.",
+      "text_sha256": "303e906df3005d525299b38aefc7e553a78b04347ea71130371c751376e0ff97",
+      "publisher_sha256": "1abfeb3a26f54871ed635a4038cf4f0504bef9a51305d3adfda20996f9090161",
+      "retrieved_at": "2026-11-21T22:20:29.573965+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2026 Florida Statutes",
+      "publisher_member": "Florida Senate 2026 statutes; nonpayment demand and court holidays; statutory form text excluded"
+    },
+    "ac13f0b0eecf17c9995abbd5d72150": {
+      "source_id": "US-FL:tenancy_notice:c8c929f71321",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 83.56(4)",
+      "text": "(4) The delivery of the written notices required by subsections (1)-(3) shall be by mailing, delivering a true copy thereof, e-mailing in accordance with s. 83.505 , or, if the tenant is absent from the premises, by leaving a copy thereof at the residence. The notice requirements of subsections (1)-(3) may not be waived in the rental agreement.",
+      "text_sha256": "aa70a3e1b70dda31195ef4a48e83a87795dd1f5980e159454ed728b9e7aa4ea5",
+      "publisher_sha256": "1abfeb3a26f54871ed635a4038cf4f0504bef9a51305d3adfda20996f9090161",
+      "retrieved_at": "2026-11-21T22:20:29.573965+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2026 Florida Statutes",
+      "publisher_member": "Florida Senate 2026 statutes; authorized notice delivery and nonwaiver of notice requirements"
+    },
+    "1b25afb3c6fdd6fd53e856e9586d65": {
+      "source_id": "US-FL:tenancy_notice:ec1f82d08996",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 83.56(5)",
+      "text": "(5)(a) If the landlord accepts rent with actual knowledge of a noncompliance by the tenant or accepts performance by the tenant of any other provision of the rental agreement that is at variance with its provisions, or if the tenant pays rent with actual knowledge of a noncompliance by the landlord or accepts performance by the landlord of any other provision of the rental agreement that is at variance with its provisions, the landlord or tenant waives his or her right to terminate the rental agreement or to bring a civil action for that noncompliance, but not for any subsequent or continuing noncompliance. However, a landlord does not waive the right to terminate the rental agreement or to bring a civil action for that noncompliance by accepting partial rent for the period. If partial rent is accepted after posting the notice for nonpayment, the landlord must: 1. Provide the tenant with a receipt stating the date and amount received and the agreed-upon date and balance of rent due before filing an action for possession; 2. Place the amount of partial rent accepted from the tenant in the registry of the court upon filing the action for possession; or 3. Post a new 3-day notice reflecting the new amount due. (b) Any tenant who wishes to defend against an action by the landlord for possession of the unit for noncompliance of the rental agreement or of relevant statutes must comply with s. 83.60 (2). The court may not set a date for mediation or trial unless the provisions of s. 83.60 (2) have been met, but must enter a default judgment for removal of the tenant with a writ of possession to issue immediately if the tenant fails to comply with s. 83.60 (2). (c) This subsection does not apply to that portion of rent subsidies received from a local, state, or national government or an agency of local, state, or national government; however, waiver will occur if an action has not been instituted within 45 days after the landlord obtains actual knowledge of the noncompliance.",
+      "text_sha256": "5ede5798af96f8e43a6dc181ccbc13214905b8533c9db027024d0a8371fcae6c",
+      "publisher_sha256": "1abfeb3a26f54871ed635a4038cf4f0504bef9a51305d3adfda20996f9090161",
+      "retrieved_at": "2026-11-21T22:20:29.573965+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2026 Florida Statutes",
+      "publisher_member": "Florida Senate 2026 statutes; waiver and partial-payment rules, including subsidized rent qualification"
+    },
+    "7a0a1a62dd43b2b19d34106284f6af": {
+      "source_id": "US-FL:eviction:a4e967b51172",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 83.59(1)–(3) (2026 ed.)",
+      "text": "(1) If the rental agreement is terminated and the tenant does not vacate the premises, the landlord may recover possession of the dwelling unit as provided in this section. (2) A landlord, the landlord’s attorney, or the landlord’s agent, applying for the removal of a tenant, shall file in the county court of the county where the premises are situated a complaint describing the dwelling unit and stating the facts that authorize its recovery. A landlord’s agent is not permitted to take any action other than the initial filing of the complaint, unless the landlord’s agent is an attorney. The landlord is entitled to the summary procedure provided in s. 51.011 , and the court shall advance the cause on the calendar. (3) The landlord shall not recover possession of a dwelling unit except: (a) In an action for possession under subsection (2) or other civil action in which the issue of right of possession is determined; (b) When the tenant has surrendered possession of the dwelling unit to the landlord; (c) When the tenant has abandoned the dwelling unit. In the absence of actual knowledge of abandonment, it shall be presumed that the tenant has abandoned the dwelling unit if he or she is absent from the premises for a period of time equal to one-half the time for periodic rental payments. However, this presumption does not apply if the rent is current or the tenant has notified the landlord, in writing, of an intended absence; or (d) When the last remaining tenant of a dwelling unit is deceased, personal property remains on the premises, rent is unpaid, at least 60 days have elapsed following the date of death, and the landlord has not been notified in writing of the existence of a probate estate or of the name and address of a personal representative. This paragraph does not apply to a dwelling unit used in connection with a federally administered or regulated housing program, including programs under s. 202, s. 221(d)(3) and (4), s. 236, or s. 8 of the National Housing Act, as amended.",
+      "text_sha256": "6741a77d6ec75fb7afbae86da74e3434d0fdcb6a98063b78c0ab934ae9e11db0",
+      "publisher_sha256": "de0ee26dbb6dbe0cc90a682a4832d7d63081912564d74ed5259729c6061c94cd",
+      "retrieved_at": "2026-11-22T03:08:03.947264+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2026 Florida Statutes",
+      "publisher_member": "Part II, Residential Tenancies; possession proceeding and statutory exceptions"
+    },
+    "b385825a14f5ee0f3564fc96669c2c": {
+      "source_id": "US-FL:habitability:c7772a6f53bc",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 83.51(1) (2026 ed.)",
+      "text": "(1) The landlord at all times during the tenancy shall: (a) Comply with the requirements of applicable building, housing, and health codes; or (b) Where there are no applicable building, housing, or health codes, maintain the roofs, windows, doors, floors, steps, porches, exterior walls, foundations, and all other structural components in good repair and capable of resisting normal forces and loads and the plumbing in reasonable working condition. The landlord, at commencement of the tenancy, must ensure that screens are installed in a reasonable condition. Thereafter, the landlord must repair damage to screens once annually, when necessary, until termination of the rental agreement. The landlord is not required to maintain a mobile home or other structure owned by the tenant. The landlord’s obligations under this subsection may be altered or modified in writing with respect to a single-family home or duplex.",
+      "text_sha256": "ac47693f06b430a76923497e82203f0572ba2366c0e586456734836d8e419298",
+      "publisher_sha256": "d11e6575858ac4befe07525f48065aee977db2f13e7a83e1638fb07a9113393f",
+      "retrieved_at": "2026-11-22T03:08:03.931746+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2026 Florida Statutes",
+      "publisher_member": "Part II, Residential Tenancies; maintenance and qualifications for single-family homes and duplexes"
+    },
+    "9766fb1bed4aa401a51e3014e5e67a": {
+      "source_id": "US-FL:consumer_agency:3493ab9e4c74",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 501.207(1)–(2)",
+      "text": "(1) The enforcing authority may bring: (a) An action to obtain a declaratory judgment that an act or practice violates this part. (b) An action to enjoin any person who has violated, is violating, or is otherwise likely to violate, this part. (c) An action on behalf of one or more consumers or governmental entities for the actual damages caused by an act or practice in violation of this part. However, damages are not recoverable under this section against a retailer who has in good faith engaged in the dissemination of claims of a manufacturer or wholesaler without actual knowledge that it violated this part. (2) Before bringing an action under paragraph (1)(a) or paragraph (1)(c), the head of the enforcing authority shall review the matter and determine if an enforcement action serves the public interest. This determination shall be made in writing, but shall not be subject to the provisions of chapter 120.",
+      "text_sha256": "9567f54e9d528bc83f95c96225e61ae906dbc4e7e04c2534066d8531a17a6ccf",
+      "publisher_sha256": "c5d0bef02ee10943868d7cdabd9f8897046f9034833f7a9060ede1eadaf97d1a",
+      "retrieved_at": "2026-11-22T03:30:05.744585+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "2026 Florida Statutes, authorized public enforcement actions and written public-interest determination for specified actions."
+    },
+    "0f43c2714146af9f7e453cce3d7b95": {
+      "source_id": "US-FL:consumer_agency:ff31e846af47",
+      "authority_type": "statute",
+      "citation": "Fla. Stat. § 501.203(2)",
+      "text": "(2) “Enforcing authority” means the office of the state attorney if a violation of this part occurs in or affects the judicial circuit under the office’s jurisdiction. “Enforcing authority” means the Department of Legal Affairs if the violation occurs in or affects more than one judicial circuit or if the office of the state attorney defers to the department in writing, or fails to act upon a violation within 90 days after a written complaint has been filed with the state attorney.",
+      "text_sha256": "f24208b6f675ba154985a568f73b9ee80720168093023b132ba247b98010c938",
+      "publisher_sha256": "e99856164b3a9b100b5566ea7fbf87e7d18842ef7e545df7650df2b9fd150bff",
+      "retrieved_at": "2026-11-22T03:33:29.786536+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "2026 Florida Statutes, office of the state attorney and Department of Legal Affairs allocation."
+    },
+    "979abc3fd6aac63a0e8f83323f7ae5": {
+      "source_id": "US-FL:cover_sheet_form:ae204a37d5ec",
+      "authority_type": "court_instruction",
+      "citation": "Florida Civil Procedure Form 1.997 (cover-sheet filing instruction)",
+      "text": "The civil cover sheet and the information contained in it neither replace nor supplement the filing and service of pleadings or other documents as required by law. This form must be filed by the plaintiff or petitioner with the Clerk of Court for the purpose of reporting uniform data pursuant to section 25.075, Florida Statutes.",
+      "text_sha256": "af4c1649d46651cd60200960e386c748469b96329294f7907b3f7cdb0d435bff",
+      "publisher_sha256": "1b6872b6bdcdb1f47f00b3bef18f347fe4eb300f6081aaa8c9c381000d2a33b4",
+      "retrieved_at": "2026-11-23T16:23:43.042670+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Florida Judicial Branch"
+    },
+    "71281c48ab2f45b0dd1a8b5e34694e": {
+      "source_id": "US-FL:general_contract_damages:d61ddf24da86",
+      "citation": "Perera v. Diolife LLC, No. 4D18-892, slip op. at 7 (Fla. 4th DCA June 12, 2019)",
+      "text": "But, in a breach of contract action, “[a] non-breaching party is entitled to recover the benefit of its bargain under a contract.” Nat’l Educ. Ctrs., Inc. v. Kirkland, 635 So. 2d 33, 34 (Fla. 4th DCA 1993). “[T]he goal of damages is to place the injured party in the same position in which it would have been had the breach not occurred.” Tucker v. John Galt Ins. Agency Corp., 743 So. 2d 108, 111 (Fla. 4th DCA 1999).",
+      "text_sha256": "9ff001af04e2ad68de954e7dfffb8c07cb4ba903f298820312ce7a1801ac3fc8",
+      "publisher_sha256": "bb7181599e607e96a7480f4913bfa4f1a75d9126b8eb3404c09e6f50ce777a29",
+      "retrieved_at": "2026-11-23T20:36:08.939190+00:00",
+      "language": "en",
+      "authority_type": "opinion",
+      "edition": "Published slip opinion of 2019-06-12",
+      "court": "Florida Fourth District Court of Appeal",
+      "decision_date": "2019-06-12",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal involving the damages and mitigation treatment of a purchase agreement.",
+      "currentness": "historical"
+    },
+    "72e38cc912ad4dfca55a676ce360cb": {
+      "source_id": "US-FL:premises:43f8af3249e1",
+      "citation": "Fla. Stat. § 768.0755",
+      "text": "(1) If a person slips and falls on a transitory foreign substance in a business establishment, the injured person must prove that the business establishment had actual or constructive knowledge of the dangerous condition and should have taken action to remedy it. Constructive knowledge may be proven by circumstantial evidence showing that: (a) The dangerous condition existed for such a length of time that, in the exercise of ordinary care, the business establishment should have known of the condition; or (b) The condition occurred with regularity and was therefore foreseeable. (2) This section does not affect any common-law duty of care owed by a person or entity in possession or control of a business premises.",
+      "text_sha256": "3b5c62294decf0e0259343882d0a8fba7034ad938bf3dfac9f0c7cd7ee165a4d",
+      "publisher_sha256": "dd9bb65cff47d2a64ab6a963de1278f5605106cdb8a5143a2ab6c6ee8932d2e3",
+      "retrieved_at": "2026-11-23T21:02:34.361895+00:00",
+      "language": "en",
+      "authority_type": "statute",
+      "currentness": "unresolved",
+      "edition": "Online Sunshine 2026 Florida Statutes",
+      "scope_notes": "Transitory foreign substance slip-and-fall in a business establishment. The statute preserves the separate common-law duty of a possessor or controller of the premises."
+    },
+    "02f2a7c45f3b6f3e2f4e968f7dac98": {
+      "source_id": "US-FL:premises:ba2b35adeab0",
+      "citation": "Fla. Stat. § 768.075",
+      "text": "(1) A person or organization owning or controlling an interest in real property, or an agent of such person or organization, shall not be held liable for any civil damages for death of or injury or damage to a trespasser upon the property when such trespasser was under the influence of alcoholic beverages with a blood-alcohol level of 0.08 percent or higher, when such trespasser was under the influence of any chemical substance set forth in s. 877.111 , when such trespasser was illegally under the influence of any substance controlled under chapter 893, or if the trespasser is affected by any of the aforesaid substances to the extent that her or his normal faculties are impaired. However, the person or organization owning or controlling the interest in real property shall not be immune from liability if gross negligence or intentional misconduct on the part of such person or organization or agent thereof is a proximate cause of the death of or injury or damage to the trespasser. (2) A person or organization owning or controlling an interest in real property, or an agent of such person or organization, is not liable for any civil damages for the death of or injury or damage to any discovered or undiscovered trespasser, except as provided in paragraphs (3)(a), (b), and (c), and regardless of whether the trespasser was intoxicated or otherwise impaired. (3)(a) As used in this subsection, the term: 1. “Invitation” means that the visitor entering the premises has an objectively reasonable belief that he or she has been invited or is otherwise welcome on that portion of the real property where injury occurs. 2. “Discovered trespasser” means a person who enters real property without invitation, either express or implied, and whose actual physical presence was detected, within 24 hours preceding the accident, by the person or organization owning or controlling an interest in real property or to whose actual physical presence the person or organization owning or controlling an interest in real property was alerted by a reliable source within 24 hours preceding the accident. The status of a person who enters real property shall not be elevated to that of an invitee, unless the person or organization owning or controlling an interest in real property has issued an express invitation to enter the property or has manifested a clear intent to hold the property open to use by persons pursuing purposes such as those pursued by the person whose status is at issue. 3. “Undiscovered trespasser” means a person who enters property without invitation, either express or implied, and whose actual physical presence was not detected, within 24 hours preceding the accident, by the person or organization owning or controlling an interest in real property. (b) To avoid liability to undiscovered trespassers, a person or organization owning or controlling an interest in real property must refrain from intentional misconduct that proximately causes injury to the undiscovered trespasser, but has no duty to warn of dangerous conditions. To avoid liability to discovered trespassers, a person or organization owning or controlling an interest in real property must refrain from gross negligence or intentional misconduct that proximately causes injury to the discovered trespasser, and must warn the trespasser of dangerous conditions that are known to the person or organization owning or controlling an interest in real property but that are not readily observable by others. (c) This subsection shall not be interpreted or construed to alter the common law as it pertains to the “attractive nuisance doctrine.” (4) A person or organization owning or controlling an interest in real property, or an agent of such person or organization, shall not be held liable for negligence that results in the death of, injury to, or damage to a person who is attempting to commit a felony or who is engaged in the commission of a felony on the property.",
+      "text_sha256": "fa12e25f994ec7ec33e3fd5ff4d7ce7becf508f5673d83088868ba27c5d50a95",
+      "publisher_sha256": "302dc2b43ec01b8413541987fd40b1f3839dd5d2a6e04a80c08f25f7f5070615",
+      "retrieved_at": "2026-11-23T21:02:33.959392+00:00",
+      "language": "en",
+      "authority_type": "statute",
+      "currentness": "unresolved",
+      "edition": "Online Sunshine 2026 Florida Statutes",
+      "scope_notes": "Trespasser-specific immunity, duties, definitions and exceptions. The statute does not supply the duty to an invitee."
+    },
+    "b15a56146e9a25499cf486fddb6055": {
+      "source_id": "US-FL:contract_formation:a337190ac442",
+      "citation": "Fla. Std. Jury Instr. (Cont. & Bus.) 416.3 (2013 adoption)",
+      "text": "(Claimant) claims that the parties entered into a contract. To prove that a contract was created, (claimant) must prove all of the following: 1. The essential contract terms were clear enough that the parties could understand what each was required to do; 2. The parties agreed to give each other something of value. [A promise to do something or not to do something may have value]; and 3. The parties agreed to the essential terms of the contract. When you examine whether the parties agreed to the essential terms of the contract, ask yourself if, under the circumstances, a reasonable person would conclude, from the words and conduct of each party, that there was an agreement. The making of a contract depends only on what the parties said or did. You may not consider the parties’ thoughts or unspoken intentions. Note: If neither offer nor acceptance is contested, then element #3 should not be given. If (Claimant) did not prove all of the above, then a contract was not created.",
+      "text_sha256": "ed2c31ccaa3941cf3fe311ca2998f2d8edb1c8c73f9f8f63969af72d6f1cd3d4",
+      "publisher_sha256": "efefb7127ce1402e1657d160db53f1d688da656505e4759015391617b65053c1",
+      "retrieved_at": "2026-11-23T21:55:14.506571+00:00",
+      "language": "en",
+      "authority_type": "court_instruction",
+      "currentness": "historical",
+      "effective_from": "2013-06-06",
+      "edition": "Florida Supreme Court SC12-1931, June 6, 2013",
+      "court": "Florida civil jury trials",
+      "scope_notes": "Contested ordinary formation. The authorized historical instruction addresses definite terms, value exchanged and observable assent. The note on use limits the instruction to genuinely disputed issues. Later amendments and subsequent treatment remain unverified."
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_51",
+    "passage_selector": "bafe9f02e02a7a481a2649f0453e13",
+    "source_id": "US-FL:fault:826a11fa4bd3",
+    "currentness": "unresolved",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  },
+  "forms": {
+    "US-FL:form:1.997": {
+      "title": "Civil Cover Sheet",
+      "publisher_identifier": "1.997",
+      "source_id": "US-FL:cover_sheet_form:a00a90c8b60a",
+      "index_source_id": "US-FL:forms:bd88c1e13da5",
+      "index_sha256": "1b6872b6bdcdb1f47f00b3bef18f347fe4eb300f6081aaa8c9c381000d2a33b4",
+      "court_scope": "Florida Judicial Branch",
+      "mandatory": "required_for_stated_scope",
+      "revision": null,
+      "last_observed": "2026-11-23T16:23:43.042670+00:00",
+      "automated_completion": "disabled",
+      "form_sha256": "1b6872b6bdcdb1f47f00b3bef18f347fe4eb300f6081aaa8c9c381000d2a33b4",
+      "action_type": "complaint",
+      "requirement_passage_selector": "979abc3fd6aac63a0e8f83323f7ae5",
+      "applicability": "Plaintiff or petitioner initiating a Florida civil action for which the uniform reporting cover sheet is required. Check the court, case type and applicable version."
+    }
+  }
+}

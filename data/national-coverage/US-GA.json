@@ -1,0 +1,806 @@
+{
+  "jurisdiction": "US-GA",
+  "version": "1",
+  "sources": {
+    "US-GA:statutes:382bea98dc53": {
+      "category": "statutes",
+      "title": "Georgia Code",
+      "url": "https://law.justia.com/codes/georgia/",
+      "directory": "codes",
+      "locator": "Georgia"
+    },
+    "US-GA:constitution:896fd6b9d9b2": {
+      "category": "constitution",
+      "title": "Constitution",
+      "url": "http://www.senate.ga.gov/Documents/gaconstitution.pdf",
+      "directory": "codes",
+      "locator": "Georgia"
+    },
+    "US-GA:legislature:8a371fdbbeb7": {
+      "category": "legislature",
+      "title": "General Assembly",
+      "url": "http://www.legis.ga.gov/en-US/default.aspx",
+      "directory": "codes",
+      "locator": "Georgia"
+    },
+    "US-GA:labor_agency:8d54953272ec": {
+      "category": "labor_agency",
+      "title": "www.dol.georgia.gov",
+      "url": "https://dol.georgia.gov/",
+      "directory": "labor",
+      "locator": "Georgia"
+    },
+    "US-GA:commercial_code:7398ac0fabc7": {
+      "category": "commercial_code",
+      "title": "Commercial Code-Title 11",
+      "url": "https://www.lexisnexis.com/hottopics/gacode/",
+      "directory": "ucc",
+      "locator": "Georgia"
+    },
+    "US-GA:civil_rules:7398ac0fabc7": {
+      "category": "civil_rules",
+      "title": "Civil Practice- Title 9",
+      "url": "https://www.lexisnexis.com/hottopics/gacode/",
+      "directory": "procedure",
+      "locator": "Georgia"
+    },
+    "US-GA:consumer_agency:e4b44cda4499": {
+      "category": "consumer_agency",
+      "title": "Georgia (GA)",
+      "url": "https://consumer.georgia.gov/",
+      "directory": "consumer",
+      "locator": "Georgia (GA)"
+    },
+    "US-GA:judiciary:a5b54c7fa0b8": {
+      "category": "judiciary",
+      "title": "Georgia Judicial Branch",
+      "url": "http://georgiacourts.gov/",
+      "directory": "doj-GA",
+      "locator": "State and Local Courts / State Judiciary"
+    },
+    "US-GA:court_directory:323fd759c257": {
+      "category": "court_directory",
+      "title": "Supreme Court",
+      "url": "http://www.gasupreme.us/",
+      "directory": "doj-GA",
+      "locator": "Supreme Court"
+    },
+    "US-GA:court_directory:bc5324a81fcf": {
+      "category": "court_directory",
+      "title": "Court of Appeals",
+      "url": "https://www.gaappeals.us/",
+      "directory": "doj-GA",
+      "locator": "Court of Appeals"
+    },
+    "US-GA:forms:49c1a2991ddd": {
+      "category": "forms",
+      "title": "Court Forms",
+      "url": "https://www.gasupreme.us/rules/",
+      "directory": "doj-GA",
+      "locator": "State and Local Courts / Court Forms and Administration"
+    },
+    "US-GA:constitution:dcbb4237dbd7": {
+      "category": "constitution",
+      "title": "Constitution of the State of Georgia",
+      "url": "https://sos.ga.gov/sites/default/files/2022-02/state_constitution.pdf",
+      "directory": "doj-GA",
+      "locator": "Legislature and Laws / Laws, Codes and Statutes"
+    },
+    "US-GA:regulations:4444047087b0": {
+      "category": "regulations",
+      "title": "Rules and Regulations of the State of Georgia",
+      "url": "https://rules.sos.ga.gov/Home.aspx",
+      "directory": "doj-GA",
+      "locator": "State Executive and Regulatory Information / Regulations"
+    },
+    "US-GA:pi_limitations:10bc8c5387b0": {
+      "category": "pi_limitations",
+      "title": "O.C.G.A. § 9-3-33",
+      "url": "https://www.legis.ga.gov/",
+      "directory": "limitations",
+      "locator": "personalInjury"
+    },
+    "US-GA:written_contract_limitations:10bc8c5387b0": {
+      "category": "written_contract_limitations",
+      "title": "O.C.G.A. § 9-3-24",
+      "url": "https://www.legis.ga.gov/",
+      "directory": "limitations",
+      "locator": "writtenContract"
+    },
+    "US-GA:oral_contract_limitations:10bc8c5387b0": {
+      "category": "oral_contract_limitations",
+      "title": "O.C.G.A. § 9-3-25",
+      "url": "https://www.legis.ga.gov/",
+      "directory": "limitations",
+      "locator": "oralContract"
+    },
+    "US-GA:small_claims:a852fabe7666": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://georgiamagistratecouncil.com/forms/",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://georgiamagistratecouncil.com/forms/",
+        "retrieved_at": "2026-11-17T19:41:56.062827+00:00",
+        "http_status": "200",
+        "sha256": "8372539ec1a5fcd46e77ca1b9f97b7b21240ca6f6c3dc05105d7f8cb740fd9b1",
+        "health": "manual_review_required"
+      }
+    },
+    "US-GA:court_directory:bjs_2004": {
+      "category": "court_directory",
+      "title": "State Court Organization, 2004",
+      "url": "https://bjs.ojp.gov/content/pub/pdf/sco04.pdf",
+      "directory": "bjs_sco_2004",
+      "locator": "Table 3, PDF page 26"
+    },
+    "US-GA:deposit:eff673d9ae52": {
+      "category": "deposit",
+      "title": "Residential tenancy publication",
+      "url": "https://georgiacourts.gov/wp-content/uploads/2024/02/2-15-21_ga_landlord_tenant_handbook.pdf",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://georgiacourts.gov/wp-content/uploads/2024/02/2-15-21_ga_landlord_tenant_handbook.pdf",
+        "retrieved_at": "2026-11-17T19:41:56.024709+00:00",
+        "http_status": "200",
+        "sha256": "c46f1a4c7a03805b823d3ca9a13d474a7babe398e9ae3ab0427611f146405406",
+        "health": "manual_review_required"
+      }
+    },
+    "US-GA:debtLaw:4d874a3517ec": {
+      "category": "debtLaw",
+      "title": "Debt collection publication",
+      "url": "https://dbf.georgia.gov/debt-collection",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://dbf.georgia.gov/debt-collection",
+        "retrieved_at": "2026-11-17T19:41:50.684124+00:00",
+        "http_status": "200",
+        "sha256": "95951da50a793402591b0af00d033dd28cdfe4b7920ea02ef79e42aea98d99bb",
+        "health": "manual_review_required"
+      }
+    },
+    "US-GA:consumerLaw:acbc4f41097a": {
+      "category": "consumerLaw",
+      "title": "Consumer protection publication",
+      "url": "https://consumer.georgia.gov/organization/about-us/statutes-we-enforce",
+      "directory": null,
+      "locator": "Publisher resource; section and applicability require review",
+      "observation": {
+        "requested_url": "https://consumer.georgia.gov/organization/about-us/statutes-we-enforce",
+        "retrieved_at": "2026-11-17T19:41:38.070800+00:00",
+        "http_status": "200",
+        "sha256": "454c14e3a0e882342e8b0513e44436b72223e69e2786d05e711f45145c0b93a0",
+        "health": "manual_review_required"
+      }
+    },
+    "US-GA:fault:7adbad27dfab": {
+      "category": "fault",
+      "title": "O.C.G.A. § 51-12-33(g)",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t51-%28v39%29-pdf.pdf",
+      "directory": null,
+      "locator": "O.C.G.A. § 51-12-33(g)",
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-17T20:50:34.067833+00:00",
+        "sha256": "9104a04c683d8ee006f80ffc59a6f2d127734ee2939e86489bc42feda00a98c0"
+      }
+    },
+    "US-GA:consumerLaw:20e37ea56918": {
+      "title": "O.C.G.A. § 10-1-390 et seq.",
+      "category": "consumerLaw",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t10-%28v8%29-2024-pdf.pdf",
+      "directory": "consumer_statutes_index",
+      "locator": "O.C.G.A. § 10-1-390 et seq.",
+      "publisher_role": "discovery_link",
+      "content_status": "section_verification_required"
+    },
+    "US-GA:contract_formation:b8903af49e39": {
+      "category": "contract_formation",
+      "title": "O.C.G.A. § 11-2-204",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t11-%28v9%29-2022-pdf.pdf",
+      "locator": "O.C.G.A. § 11-2-204",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-18T15:14:31.286212+00:00",
+        "sha256": "ad397fccbf21994357afda463fca395efe9ecdb8c1a50948888b771f8b4c5695"
+      }
+    },
+    "US-GA:pi_limitations:b29eac731acf": {
+      "category": "pi_limitations",
+      "title": "Omstead v. BPG Inspection, LLC, 319 Ga. 512 (2024)",
+      "url": "https://www.gasupreme.us/wp-content/uploads/2024/06/s23g0771.pdf",
+      "locator": "Omstead v. BPG Inspection, LLC, 319 Ga. 512 (2024)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:45:44.675321+00:00",
+        "sha256": "d616fc634107bc6cbbe1ee37ec1c90d751db338cd597d40171efe624071386bc"
+      }
+    },
+    "US-GA:consumerLaw:70deb7cadee9": {
+      "category": "consumerLaw",
+      "title": "O.C.G.A. § 10-1-393(a) (2025 Supp.)",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t10-%28v8%29-pdf.pdf",
+      "locator": "O.C.G.A. § 10-1-393(a) (2025 Supp.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T16:29:35.191438+00:00",
+        "sha256": "f1fc4f45d8c665b3180be42133721febeabd59a03153409291b8f6cc2a2f82c9"
+      }
+    },
+    "US-GA:wageLaw:36e79acb90ca": {
+      "category": "wageLaw",
+      "title": "O.C.G.A. § 34-7-2(b) (2025 Supp.)",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t34-%28v26%29-pdf.pdf",
+      "locator": "O.C.G.A. § 34-7-2(b) (2025 Supp.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T17:48:14.858573+00:00",
+        "sha256": "fbb5a8d0f75f1ce65d020b875a57c31f1ad66e959e69cb8832aae92e01dffecb"
+      }
+    },
+    "US-GA:deposit:750e10c4ee25": {
+      "category": "deposit",
+      "title": "Georgia H.B. 404, §§ 4, 6 (2024) (O.C.G.A. § 44-7-30.1)",
+      "url": "https://gov.georgia.gov/document/2024-signed-legislation/hb-404/download",
+      "locator": "Georgia H.B. 404, §§ 4, 6 (2024) (O.C.G.A. § 44-7-30.1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:01:54.708216+00:00",
+        "sha256": "dbea79f04278558d5377e36b7da21d8ee6fe832fcc317371abb041a2f221d1d8"
+      }
+    },
+    "US-GA:premises:009c2653d6fb": {
+      "category": "premises",
+      "title": "Georgia CVS Pharmacy, LLC v. Carmichael, 316 Ga. 718 (2023) (third-party criminal conduct)",
+      "url": "https://www.gasupreme.us/wp-content/uploads/2023/06/s22g0527.pdf",
+      "locator": "Georgia CVS Pharmacy, LLC v. Carmichael, 316 Ga. 718 (2023) (third-party criminal conduct)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T18:43:05.115389+00:00",
+        "sha256": "e7ab491a703cd9b7ae1f27904215bf7dfcd651a4f000c55011c2c8d5fdeff5f2"
+      }
+    },
+    "US-GA:response:be1154eafa18": {
+      "category": "response",
+      "title": "O.C.G.A. § 9-11-12(a) (2025 Supp.)",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t9-ch11-%28v7%29-pdf.pdf",
+      "locator": "O.C.G.A. § 9-11-12(a) (2025 Supp.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:30:36.575817+00:00",
+        "sha256": "77fea3e8736b9826570a59f287fd3310bf2fbe632e16265f9af58a4a538ce2b0"
+      }
+    },
+    "US-GA:small_claims:65ebe4aad96d": {
+      "category": "small_claims",
+      "title": "O.C.G.A. § 15-10-2(a)(5) (2025 Supp., magistrate civil jurisdiction)",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t15-ch1-11a-%28v13%29-pdf.pdf",
+      "locator": "O.C.G.A. § 15-10-2(a)(5) (2025 Supp., magistrate civil jurisdiction)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T22:30:36.564800+00:00",
+        "sha256": "d86fd6e4449f7a6256b61c6e74daab8df843da6114118de244bbfad4d7df0971"
+      }
+    },
+    "US-GA:debtLaw:7e51e1bda312": {
+      "category": "debtLaw",
+      "title": "2020 Ga. S.B. 462 § 2 (O.C.G.A. § 7-3-33)",
+      "url": "https://gov.georgia.gov/document/2020-signed-legislation/sb-462/download",
+      "locator": "2020 Ga. S.B. 462 § 2 (O.C.G.A. § 7-3-33)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:19:11.585233+00:00",
+        "sha256": "0eaa1e2ae364b0fe9d130bcd679c0d77bea0c12a810589d3a476a1cd68797305"
+      }
+    },
+    "US-GA:debtLaw:d9c76904431c": {
+      "category": "debtLaw",
+      "title": "2020 Ga. S.B. 462 § 10",
+      "url": "https://gov.georgia.gov/document/2020-signed-legislation/sb-462/download",
+      "locator": "2020 Ga. S.B. 462 § 10",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T23:19:11.585233+00:00",
+        "sha256": "0eaa1e2ae364b0fe9d130bcd679c0d77bea0c12a810589d3a476a1cd68797305"
+      }
+    },
+    "US-GA:negligence_elements:e64bd6b1898f": {
+      "category": "negligence_elements",
+      "title": "Rasnick v. Krishna Hospitality, Inc., 289 Ga. 565, 566 (2011)",
+      "url": "https://cases.justia.com/georgia/supreme-court/s10g0971.pdf?ts=1462331176",
+      "locator": "Rasnick v. Krishna Hospitality, Inc., 289 Ga. 565, 566 (2011)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T04:26:23.304898+00:00",
+        "sha256": "29953b4d36a17cb4adab64bd1b13853d57a4b5c2729bb07c2c2a7d47c06a933e"
+      }
+    },
+    "US-GA:commencement:17c7d036b8e9": {
+      "category": "commencement",
+      "title": "Ga. Code Ann. § 9-11-3(a)–(b) (2025 supp.)",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t9-ch11-%28v7%29-pdf.pdf",
+      "locator": "Ga. Code Ann. § 9-11-3(a)–(b) (2025 supp.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:20:51.052658+00:00",
+        "sha256": "77fea3e8736b9826570a59f287fd3310bf2fbe632e16265f9af58a4a538ce2b0"
+      }
+    },
+    "US-GA:service:8b1828fc798a": {
+      "category": "service",
+      "title": "Perry v. Peterson, No. A25A1075 (Ga. Ct. App. July 31, 2025)",
+      "url": "https://cases.justia.com/georgia/court-of-appeals/2025-a25a1075.pdf",
+      "locator": "Perry v. Peterson, No. A25A1075 (Ga. Ct. App. July 31, 2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:26:29.661940+00:00",
+        "sha256": "f56dc1a564430d836f882f6dced995ab59a870d88d04710d9fd613f3fb1dfee2"
+      }
+    },
+    "US-GA:written_contract_limitations:c4c291c4ec2a": {
+      "category": "written_contract_limitations",
+      "title": "SunTrust Bank v. Venable, 299 Ga. 655 (2016)",
+      "url": "https://cases.justia.com/georgia/supreme-court/2016-s16g0664.pdf",
+      "locator": "SunTrust Bank v. Venable, 299 Ga. 655 (2016)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T17:43:02.288502+00:00",
+        "sha256": "e024e8c4735be21166e38c1db2604981c78eb584dd28be463c780f2ed74ccc1a"
+      }
+    },
+    "US-GA:consumer_private_action:61c881ddf98f": {
+      "category": "consumer_private_action",
+      "title": "Ga. Code Ann. § 10-1-399(a)",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t10-%28v8%29-pdf.pdf",
+      "locator": "Ga. Code Ann. § 10-1-399(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:25:37.001604+00:00",
+        "sha256": "f1fc4f45d8c665b3180be42133721febeabd59a03153409291b8f6cc2a2f82c9"
+      }
+    },
+    "US-GA:consumer_pre_suit_notice:ce1805a4004a": {
+      "category": "consumer_pre_suit_notice",
+      "title": "Ga. Code Ann. § 10-1-399(b)",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t10-%28v8%29-pdf.pdf",
+      "locator": "Ga. Code Ann. § 10-1-399(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:25:37.001604+00:00",
+        "sha256": "f1fc4f45d8c665b3180be42133721febeabd59a03153409291b8f6cc2a2f82c9"
+      }
+    },
+    "US-GA:consumer_remedies:d8415a92adde": {
+      "category": "consumer_remedies",
+      "title": "Ga. Code Ann. § 10-1-399(c)",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t10-%28v8%29-pdf.pdf",
+      "locator": "Ga. Code Ann. § 10-1-399(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:25:37.001604+00:00",
+        "sha256": "f1fc4f45d8c665b3180be42133721febeabd59a03153409291b8f6cc2a2f82c9"
+      }
+    },
+    "US-GA:service_time_limit:44d7e59e4563": {
+      "category": "service_time_limit",
+      "title": "Ga. Code Ann. § 9-11-4(c) (2015 publication)",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/joint-features-document-library/t9-ch11-%28v7%29-2015-pdf.pdf",
+      "locator": "Ga. Code Ann. § 9-11-4(c) (2015 publication)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-21T22:34:37.159275+00:00",
+        "sha256": "3e6a3f858b0696ef6942ed8968a3ccc180982c658e356c346692227c3a814b0b"
+      }
+    }
+  },
+  "court_directory": [
+    {
+      "id": "US-GA:court:d4c7d9e38709",
+      "name": "Supreme Court",
+      "level": "highest_directory",
+      "source_id": "US-GA:court_directory:323fd759c257"
+    },
+    {
+      "id": "US-GA:court:ecfcdd7dac58",
+      "name": "Court of Appeals",
+      "level": "appellate_directory",
+      "source_id": "US-GA:court_directory:bc5324a81fcf"
+    },
+    {
+      "id": "US-GA:court:e19119663b83",
+      "name": "Superior",
+      "level": "general_trial",
+      "source_id": "US-GA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-GA:court:d693956e904d",
+      "name": "Juvenile",
+      "level": "limited_trial",
+      "source_id": "US-GA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-GA:court:55ec5f9ad527",
+      "name": "Civil",
+      "level": "limited_trial",
+      "source_id": "US-GA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-GA:court:08cdac991e72",
+      "name": "State",
+      "level": "limited_trial",
+      "source_id": "US-GA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-GA:court:4f54b582f9f0",
+      "name": "Probate",
+      "level": "limited_trial",
+      "source_id": "US-GA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-GA:court:44949d940273",
+      "name": "Magistrate",
+      "level": "limited_trial",
+      "source_id": "US-GA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-GA:court:b64ec230b54e",
+      "name": "Municipal/of Columbus",
+      "level": "limited_trial",
+      "source_id": "US-GA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-GA:court:fe8a35c19c9e",
+      "name": "County Recorder’s",
+      "level": "limited_trial",
+      "source_id": "US-GA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    },
+    {
+      "id": "US-GA:court:c9e82b0c94e9",
+      "name": "Municipal/City of Atlanta",
+      "level": "limited_trial",
+      "source_id": "US-GA:court_directory:bjs_2004",
+      "edition": "2004",
+      "currentness": "historical"
+    }
+  ],
+  "citation_leads": [
+    {
+      "category": "pi_limitations",
+      "citation": "O.C.G.A. § 9-3-33",
+      "source_id": "US-GA:pi_limitations:10bc8c5387b0",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "written_contract_limitations",
+      "citation": "O.C.G.A. § 9-3-24",
+      "source_id": "US-GA:written_contract_limitations:10bc8c5387b0",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "oral_contract_limitations",
+      "citation": "O.C.G.A. § 9-3-25",
+      "source_id": "US-GA:oral_contract_limitations:10bc8c5387b0",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "eviction",
+      "citation": "Ga. Code § 44-7-10. Delivery of possession",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    },
+    {
+      "category": "consumerLaw",
+      "citation": "O.C.G.A. § 10-1-390 et seq.",
+      "source_id": "US-GA:consumerLaw:20e37ea56918",
+      "directory": "consumer_statutes_index",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "e28d84cee4570b6d057333050cc7ad": {
+      "citation": "O.C.G.A. § 51-12-33(g)",
+      "source_id": "US-GA:fault:7adbad27dfab",
+      "authority_type": "statute",
+      "language": "en",
+      "text": "(g) Notwithstanding the provisions of this Code section or any other provisions of law which might be construed to the contrary , the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible for the injury or damages claimed.",
+      "text_sha256": "c3b5d71b3b020305e8923679a5062fc7e9ea0ec5b4ed005aeba295e969972107",
+      "publisher_sha256": "9104a04c683d8ee006f80ffc59a6f2d127734ee2939e86489bc42feda00a98c0",
+      "retrieved_at": "2026-11-17T20:50:34.067833+00:00",
+      "currentness": "historical",
+      "edition": "2025 Supplement"
+    },
+    "344ab9322beddc6378993233d86a75": {
+      "source_id": "US-GA:contract_formation:b8903af49e39",
+      "authority_type": "statute",
+      "citation": "O.C.G.A. § 11-2-204",
+      "text": "A contract for sale of goods may be made in any manner sufficient to show agreement, including conduct by both parties which recognizes the existence of such a contract.",
+      "text_sha256": "9c77be9f087223530e0d86a71047d66373e3a4889718dffe0aff6b1ded1679b9",
+      "publisher_sha256": "ad397fccbf21994357afda463fca395efe9ecdb8c1a50948888b771f8b4c5695",
+      "retrieved_at": "2026-11-18T15:14:31.286212+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2022 publication"
+    },
+    "4ac1cbf615bc910ba53cc25c342db0": {
+      "source_id": "US-GA:pi_limitations:b29eac731acf",
+      "authority_type": "opinion",
+      "citation": "Omstead v. BPG Inspection, LLC, 319 Ga. 512 (2024)",
+      "text": "As relevant here, Omstead asserts a claim for wrongful death, which “does not accrue until the death occurs[.]” Williams v. Ga. Dept. of Human Resources, 272 Ga. 624, 626 (532 SE2d 401) (2000). See OCGA § 9-3-33 (“[A]ctions for injuries to the person shall be brought within two years after the right of action accrues[.]”).",
+      "text_sha256": "86dac1021d8633b02bef2444f3d9fade6764409244153b86c6e28e5bb832e2f1",
+      "publisher_sha256": "d616fc634107bc6cbbe1ee37ec1c90d751db338cd597d40171efe624071386bc",
+      "retrieved_at": "2026-11-20T15:45:44.675321+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2024-06-11",
+      "court": "Supreme Court of Georgia",
+      "decision_date": "2024-06-11",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of a wrongful-death claim involving a contractually shortened limitation. The court quoted the ordinary statutory period and enforced the separate contractual term in this case."
+    },
+    "d811a4a1341d0b1139990145482032": {
+      "source_id": "US-GA:consumerLaw:70deb7cadee9",
+      "authority_type": "statute",
+      "citation": "O.C.G.A. § 10-1-393(a) (2025 Supp.)",
+      "text": "(a) Unfair or deceptive acts or practices in the conduct of consumer transactions and consumer acts or practices in trade or commerce are declared unlawful.",
+      "text_sha256": "ce2fd9a95b5ef0382caab14c80c9a63b9db2d99a65251bd25cff4e6e94aa9437",
+      "publisher_sha256": "f1fc4f45d8c665b3180be42133721febeabd59a03153409291b8f6cc2a2f82c9",
+      "retrieved_at": "2026-11-20T16:29:35.191438+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 Georgia Code supplement incorporating the 2025 regular session"
+    },
+    "7e0b3ff14e93ba781544b0f8eef48e": {
+      "source_id": "US-GA:wageLaw:36e79acb90ca",
+      "authority_type": "statute",
+      "citation": "O.C.G.A. § 34-7-2(b) (2025 Supp.)",
+      "text": "(b) Every person, firm, or corporation, including steam and electric railroads, but not including farming, sawmill, and turpentine industries, employing skilled or unskilled wageworkers in manual, mechanical, or clerical labor, including all employees except officials, superintendents, or other heads or subheads of departments who may be employed by the month or year at stipulated salaries, shall, upon the discretion of such person, firm, or corporation, make wage and salary payments to such employees or to their authorized representatives: (1) By lawful money of the United States; (2) By check; (3) By credit to a payroll card account; or (4) With the consent of the employee, by authorization of electronic credit transfer to his or her account with a bank, trust company, or other financial institution authorized by the United States or one of the several states to receive deposits in the United States. Such payments shall be made on such dates during the month as may be decided upon by such person, firm, or corporation; provided, however, that the dates so selected shall be such that the month will be divided into at least two equal periods; and provided, further, that the payments made on each such date shall in every case correspond to the full net amount of wages or earnings due the employees for the period for which the payment is made.",
+      "text_sha256": "9a0ac586d2a800d662d0294eecaf36f0d93bbb3063d82a93478983c4bd5fcdcb",
+      "publisher_sha256": "fbb5a8d0f75f1ce65d020b875a57c31f1ad66e959e69cb8832aae92e01dffecb",
+      "retrieved_at": "2026-11-20T17:48:14.858573+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2025 Georgia Code supplement incorporating the 2025 regular session",
+      "effective_from": "2019-05-06"
+    },
+    "d72518801d9fc23ce93d0b5ed5870d": {
+      "source_id": "US-GA:deposit:750e10c4ee25",
+      "authority_type": "statute",
+      "citation": "Georgia H.B. 404, §§ 4, 6 (2024) (O.C.G.A. § 44-7-30.1)",
+      "text": "“44-7-30.1. No landlord shall demand or receive a security deposit in an amount that exceeds the equivalent of two months’ rent.” […] This Act shall apply to residential lease agreements that are entered into or renewed on or after July 1, 2024.",
+      "text_sha256": "4294821a813a95039152be73bedd6eb0a8cb67bdd997b5b37d85b1f54f2446a5",
+      "publisher_sha256": "dbea79f04278558d5377e36b7da21d8ee6fe832fcc317371abb041a2f221d1d8",
+      "retrieved_at": "2026-11-20T18:01:54.708216+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Georgia enrolled and signed Safe at Home Act (2024)",
+      "effective_from": "2024-07-01"
+    },
+    "0ece64899795f89b1001c553fe9d95": {
+      "source_id": "US-GA:premises:009c2653d6fb",
+      "authority_type": "opinion",
+      "citation": "Georgia CVS Pharmacy, LLC v. Carmichael, 316 Ga. 718 (2023) (third-party criminal conduct)",
+      "text": "As a general rule, in order to recover on a premises liability claim arising from third-party criminal conduct, a plaintiff must present evidence of a duty, a breach of that duty, causation, and damages. See Goldstein, Garber & Salama, LLC v. J. B., 300 Ga. 840, 841-842 (1) (797 SE2d 87) (2017); Lau’s Corp., 261 Ga. at 492. In our first question to the parties, we asked whether and how the concept of reasonable foreseeability informs each of these elements — that is, whether reasonable foreseeability is part of the plaintiff’s burden to prove the elements of duty, breach, and causation. We hold that the reasonable foreseeability of third-party criminal conduct is properly considered as part of a proprietor’s duty to exercise ordinary care in keeping the premises and approaches safe under OCGA § 51-3-1 although considerations of foreseeability also inform other elements of a premises liability claim, as we will discuss below.",
+      "text_sha256": "d9c381b97a71c4fd2c0bfd964166770682e57aefadc3c2874cd4840f26c0dbad",
+      "publisher_sha256": "e7ab491a703cd9b7ae1f27904215bf7dfcd651a4f000c55011c2c8d5fdeff5f2",
+      "retrieved_at": "2026-11-20T18:43:05.115389+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2023-06-29",
+      "court": "Supreme Court of Georgia",
+      "decision_date": "2023-06-29",
+      "opinion_role": "majority",
+      "procedural_posture": "Consolidated certiorari review concerning premises liability for third-party criminal conduct. The judgment in Carmichael was affirmed."
+    },
+    "49a576aedfc4a1e46d0972f4f147ad": {
+      "source_id": "US-GA:response:be1154eafa18",
+      "authority_type": "statute",
+      "citation": "O.C.G.A. § 9-11-12(a) (2025 Supp.)",
+      "text": "(a) When answer presented. (1) Except as provided in paragraph (2) of this subsection, a defendant shall serve an answer within 30 days after the service of the summons and complaint upon the defendant, unless otherwise provided by statute. A cross-claim or counterclaim shall not require an answer, unless one is required by order of the court, and shall automatically stand denied. (2) Unless the court sets a different time, serving a motion under this Code section alters the time for serving an answer pursuant to paragraph (1) of this subsection as follows: (A) If the court denies the motion or postpones its disposition until trial, the answer shall be served within 15 days after notice of the court’s action; or (B) If the court grants a motion for a more definite statement, the answer shall be served within 15 days after the more definite statement is served.",
+      "text_sha256": "37b1d7660c39130049851eb2d0d5c11da9a55f4c2a8e4f329d0ffb4fb0a52206",
+      "publisher_sha256": "77fea3e8736b9826570a59f287fd3310bf2fbe632e16265f9af58a4a538ce2b0",
+      "retrieved_at": "2026-11-20T22:30:36.575817+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Georgia Code supplement incorporating the 2025 regular session"
+    },
+    "a92e1817773fa830a552bb914fc83e": {
+      "source_id": "US-GA:small_claims:65ebe4aad96d",
+      "authority_type": "statute",
+      "citation": "O.C.G.A. § 15-10-2(a)(5) (2025 Supp., magistrate civil jurisdiction)",
+      "text": "(5) The trial of civil claims including garnishment and attachment in which exclusive jurisdiction is not vested in the superior court and the amount demanded or the value of the property claimed does not exceed $15,000.00, provided that no prejudgment attachment may be granted;",
+      "text_sha256": "c1dc5f420e0b50c4c9dfa4e178b34a9d90f99a54b8dcb952e781bfd60d70c0e4",
+      "publisher_sha256": "d86fd6e4449f7a6256b61c6e74daab8df843da6114118de244bbfad4d7df0971",
+      "retrieved_at": "2026-11-20T22:30:36.564800+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Georgia Code supplement incorporating the 2025 regular session"
+    },
+    "c15473406392d0ed12622f6f9a213c": {
+      "source_id": "US-GA:debtLaw:7e51e1bda312",
+      "authority_type": "statute",
+      "citation": "2020 Ga. S.B. 462 § 2 (O.C.G.A. § 7-3-33)",
+      "text": "No licensee or employee or agent thereof shall willfully use any unreasonable collection tactics. Unreasonable collection tactics shall include, but not be limited to, any conduct by the licensee or any employee or agent thereof which: (1) Causes the borrower or any member of his or her family to suffer bodily injury or physical harm; (2) Constitutes a willful or intentional trespass by force of the borrower's home or personal property without process of law; (3) Holds up the borrower to public ridicule or unreasonably degrades the borrower in the presence of neighbors or business associates; (4) Involves use of printed material which simulates or resembles a summons, warrant, or other legal process; or (5) Although otherwise lawful, occurs at an unreasonable hour of the night. Attempts to make collections by means of personal visits, telephone calls, and the like shall be deemed to occur at an unreasonable hour of the night if they occur between the hours of 10:00 P.M. and 5:00 A.M.",
+      "text_sha256": "9f6accb7439b630c517185629a617cfc21d1e72d8d407790be7abbb2ff271806",
+      "publisher_sha256": "0eaa1e2ae364b0fe9d130bcd679c0d77bea0c12a810589d3a476a1cd68797305",
+      "retrieved_at": "2026-11-20T23:19:11.585233+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Georgia enacted S.B. 462 (2020), Georgia Installment Loan Act"
+    },
+    "e73cc2140120ab04ed527ce4ae78d2": {
+      "source_id": "US-GA:debtLaw:d9c76904431c",
+      "authority_type": "statute",
+      "citation": "2020 Ga. S.B. 462 § 10",
+      "text": "This Act shall apply to all installment loan agreements entered into on and after July 1, 2020.",
+      "text_sha256": "2a47a4e04e5b71307fbab54b00f773d3dfff035b6f7cd17da176dadd0b28c09e",
+      "publisher_sha256": "0eaa1e2ae364b0fe9d130bcd679c0d77bea0c12a810589d3a476a1cd68797305",
+      "retrieved_at": "2026-11-20T23:19:11.585233+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Georgia enacted S.B. 462 (2020), Georgia Installment Loan Act"
+    },
+    "a16b9f3307ea488412ef04025089e9": {
+      "source_id": "US-GA:negligence_elements:e64bd6b1898f",
+      "authority_type": "opinion",
+      "citation": "Rasnick v. Krishna Hospitality, Inc., 289 Ga. 565, 566 (2011)",
+      "text": "In order to have a viable negligence action, a plaintiff must satisfy the elements of the tort, namely, the existence of a duty on the part of the defendant, a breach of that duty, causation of the alleged injury, and damages resulting from the alleged breach of the duty. John Crane, Inc. v. Jones, 278 Ga. 747, 751 (604 SE2d 822) (2004).",
+      "text_sha256": "e23f645ed39bc7e635fe049fec0cba035724e943b0d892988311ec53de588cc7",
+      "publisher_sha256": "29953b4d36a17cb4adab64bd1b13853d57a4b5c2729bb07c2c2a7d47c06a933e",
+      "retrieved_at": "2026-11-21T04:26:23.304898+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion of 2011-07-05",
+      "court": "Supreme Court of Georgia",
+      "decision_date": "2011-07-05",
+      "opinion_role": "majority",
+      "procedural_posture": "Certiorari to review summary judgment in a wrongful-death action concerning an innkeeper’s alleged affirmative duty.",
+      "publisher_member": "Court-issued opinion PDF pp. 3–4, excluding the intervening footnote"
+    },
+    "4b3e2945b883ef31d725c37475bc95": {
+      "source_id": "US-GA:commencement:17c7d036b8e9",
+      "authority_type": "statute",
+      "citation": "Ga. Code Ann. § 9-11-3(a)–(b) (2025 supp.)",
+      "text": "(a) A civil action is commenced by filing a complaint with the court. (b) At the time of filing the complaint for a civil action in superior court or state court, the plaintiff shall file the appropriate civil case filing form with the clerk of the court. The form shall contain complete information and shall be substantially in the form prescribed by the Judicial Council of Georgia. The filing of the complaint shall not be delayed for the filing of the case filing form. If, after a civil action has been filed, the court presiding over the civil action decides that the civil case filing form has not been filed or has been filed incorrectly, the court shall require the plaintiff to file the civil case filing form or an amended form. In no case shall the failure to accurately complete the civil case filing form required by this Code section provide a basis to dismiss a civil action.",
+      "text_sha256": "f2e9461872d4396bd12854e438d7e638b4deae2efabd9628469d8bc2154fd820",
+      "publisher_sha256": "77fea3e8736b9826570a59f287fd3310bf2fbe632e16265f9af58a4a538ce2b0",
+      "retrieved_at": "2026-11-21T17:20:51.052658+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Georgia General Assembly Civil Practice Act 2025 Supplement",
+      "publisher_member": "Georgia General Assembly Civil Practice Act 2025 supplement PDF p. 7; enacted text only",
+      "effective_from": "2018-01-01"
+    },
+    "e2a7666c66355c40405c9c00884b93": {
+      "source_id": "US-GA:service:8b1828fc798a",
+      "authority_type": "opinion",
+      "citation": "Perry v. Peterson, No. A25A1075 (Ga. Ct. App. July 31, 2025)",
+      "text": "Under OCGA § 9-11-4 (e), service of process — or the method by which a defendant is provided with a summons and complaint — on an individual defendant such as Pearson, occurs when a person of the type identified in OCGA § 9-11-4 (c) personally provides the summons and complaint to the defendant, leaves the summons and complaint at the defendant’s dwelling with a person of suitable age and discretion who also resides at the dwelling, or delivers the summons and complaint to an agent authorized by appointment or by law to receive service of process on behalf of the defendant.",
+      "text_sha256": "b678606bd04e2a0a987d337d6036359c43a3c6b3bbb1201f8a16279a701e328d",
+      "publisher_sha256": "f56dc1a564430d836f882f6dced995ab59a870d88d04710d9fd613f3fb1dfee2",
+      "retrieved_at": "2026-11-21T17:26:29.661940+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported opinion issued 2025-07-31",
+      "court": "Court of Appeals of Georgia",
+      "publisher_member": "Georgia Court of Appeals issued opinion p. 6, division 1, individual service under § 9-11-4(e)(7)",
+      "decision_date": "2025-07-31",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissal of negligence complaint; appellate court reversed and distinguished completed service from later filing proof."
+    },
+    "2cb83545f9919b4c36b65fbaa4c869": {
+      "source_id": "US-GA:written_contract_limitations:c4c291c4ec2a",
+      "authority_type": "opinion",
+      "citation": "SunTrust Bank v. Venable, 299 Ga. 655 (2016)",
+      "text": "OCGA § 9-3-24 sets out a general six year period of limitation applicable in actions on a simple written contract. It provides, in pertinent part, that [a]ll actions upon simple contracts in writing shall be brought within six years after the same become due and payable. However, this Code section shall not apply to actions for the breach of contracts for the sale of goods under Article 2 of Title 11. OCGA § 9-3-24.",
+      "text_sha256": "0e6b7765ec252ac10884f0e17751c32346c5d822180e464963b8a06a87027df0",
+      "publisher_sha256": "e024e8c4735be21166e38c1db2604981c78eb584dd28be463c780f2ed74ccc1a",
+      "retrieved_at": "2026-11-21T17:43:02.288502+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Reported opinion issued 2016-09-12",
+      "court": "Supreme Court of Georgia",
+      "publisher_member": "Georgia Supreme Court issued opinion p. 3, general written-contract rule and sale-of-goods carve-out quoted by the court",
+      "decision_date": "2016-09-12",
+      "opinion_role": "majority",
+      "procedural_posture": "Certiorari on the limitations period for a motor vehicle deficiency claim. The supreme court affirmed reversal of summary judgment because the sale-of-goods limitations period applied."
+    },
+    "8ef019b74955627451414b7bd6d7e9": {
+      "source_id": "US-GA:consumer_private_action:61c881ddf98f",
+      "authority_type": "statute",
+      "citation": "Ga. Code Ann. § 10-1-399(a)",
+      "text": "(a) Except as otherwise provided, any person who suffers injury or damages as a result of a violation of Chapter 5B of this title, as a result of consumer acts or practices in violation of this part, as a result of office supply transactions in violation of this part or whose business or property has been injured or damaged as a result of such violations may bring an action individually, but not in a representative capacity, against the person or persons engaged in such violations under the rules of civil procedure to seek equitable injunctive relief and to recover his or her general and exemplary damages sustained as a consequence thereof in any court having jurisdiction over the defendant; provided, however, that exemplary damages shall be awarded only in cases of intentional violation. Notwithstanding any other provisions of law, a debtor seeking equitable relief to redress an injury resulting from a violation of paragraph (20) of subsection (b) of Code Section 10-1-393, upon facts alleged showing a likelihood of success on the merits, may not, within the discretion of the court, be required to make a tender. Nothing in this subsection or paragraph (20) of subsection (b) of Code Section 10-1-393 shall be construed to interfere with the obligation of the debtor to a lender who is not in violation of paragraph (20) of subsection (b) of Code Section 10-1-393. A claim under this Code section may also be asserted as a defense, setoff, cross-claim, or counterclaim or third-party claim against such person.",
+      "text_sha256": "db99353a225e42166a2fd148e17d2526adb5a71eb137584224512313011a49be",
+      "publisher_sha256": "f1fc4f45d8c665b3180be42133721febeabd59a03153409291b8f6cc2a2f82c9",
+      "retrieved_at": "2026-11-21T22:25:37.001604+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Georgia Code 2025 Supplement",
+      "publisher_member": "Georgia General Assembly Title 10 2025 supplement, PDF pp. 54-55; private action, individual capacity and specialized debtor provisos"
+    },
+    "2840f8bc13347f6c7a06bbb4fbf64d": {
+      "source_id": "US-GA:consumer_pre_suit_notice:ce1805a4004a",
+      "authority_type": "statute",
+      "citation": "Ga. Code Ann. § 10-1-399(b)",
+      "text": "(b) At least 30 days prior to the filing of any such action, a written demand for relief, identifying the claimant and reasonably describing the unfair or deceptive act or practice relied upon and the injury suffered, shall be delivered to any prospective respondent. Any person receiving such a demand for relief who, within 30 days of the delivering of the demand for relief, makes a written tender of settlement which is rejected by the claimant may, in any subsequent action, file the written tender and an affidavit concerning this rejection and thereby limit any recovery to the relief tendered if the court finds that the relief tendered was reasonable in relation to the injury actually suffered by the petitioner. The demand requirements of this subsection shall not apply if the prospective respondent does not maintain a place of business or does not keep assets within the state. The 30 day requirement of this subsection shall not apply to a debtor seeking a temporary restraining order to redress or prevent an injury resulting from a violation of paragraph (20) of subsection (b) of Code Section 10-1-393, provided that said debtor gives, or attempts to give the written demand required by this subsection at least 24 hours in advance of the time set for the hearing of the application for the temporary restraining order. Such respondent may otherwise employ the provisions of this Code section by making a written offer of relief and paying the rejected tender into court as soon as practicable after receiving notice of an action commenced under this Code section. All written tenders of settlement such as described in this subsection shall be presumed to be offered without prejudice in compromise of a disputed matter.",
+      "text_sha256": "4f80f209cbaf12b2f80587cd8898f78514ee7c6a52999e49c119100821e0df2e",
+      "publisher_sha256": "f1fc4f45d8c665b3180be42133721febeabd59a03153409291b8f6cc2a2f82c9",
+      "retrieved_at": "2026-11-21T22:25:37.001604+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Georgia Code 2025 Supplement",
+      "publisher_member": "Georgia General Assembly Title 10 2025 supplement, PDF p. 55; demand, exceptions, reasonable settlement tender and temporary-order notice"
+    },
+    "7811cedbb5016b21e71c5844360b6a": {
+      "source_id": "US-GA:consumer_remedies:d8415a92adde",
+      "authority_type": "statute",
+      "citation": "Ga. Code Ann. § 10-1-399(c)",
+      "text": "(c) Subject to subsection (b) of this Code section, a court shall award three times actual damages for an intentional violation.",
+      "text_sha256": "99353ebb56e5d04e05a036ec2964a827c211f7ee2be19714fcb81e6ddd8e494f",
+      "publisher_sha256": "f1fc4f45d8c665b3180be42133721febeabd59a03153409291b8f6cc2a2f82c9",
+      "retrieved_at": "2026-11-21T22:25:37.001604+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Georgia Code 2025 Supplement",
+      "publisher_member": "Georgia General Assembly Title 10 2025 supplement, PDF p. 55; intentional violation with subsection (b) qualification"
+    },
+    "39390f2d1b6455a7572a835eb88622": {
+      "source_id": "US-GA:service_time_limit:44d7e59e4563",
+      "authority_type": "statute",
+      "citation": "Ga. Code Ann. § 9-11-4(c) (2015 publication)",
+      "text": "When service is to be made within this state, the person making such service shall make the service within five days from the time of receiving the summons and complaint; but failure to make service within the five-day period will not invalidate a later service.",
+      "text_sha256": "5527d024be387b93460534a17871b533654385a054c21e230512c503b061a2b6",
+      "publisher_sha256": "3e6a3f858b0696ef6942ed8968a3ccc180982c658e356c346692227c3a814b0b",
+      "retrieved_at": "2026-11-21T22:34:37.159275+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Georgia General Assembly Civil Practice Act 2015 publication",
+      "publisher_member": "Georgia General Assembly Civil Practice Act, PDF p. 20, last paragraph of subsection (c); server receipt and effect of later service"
+    }
+  },
+  "fault_allocation": {
+    "regime": "modified_comparative_50",
+    "passage_selector": "e28d84cee4570b6d057333050cc7ad",
+    "source_id": "US-GA:fault:7adbad27dfab",
+    "currentness": "historical",
+    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  }
+}

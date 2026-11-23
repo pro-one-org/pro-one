@@ -1,0 +1,100 @@
+{
+  "jurisdiction": "US-VI",
+  "version": "1",
+  "sources": {
+    "US-VI:statutes:b8195acbf52f": {
+      "category": "statutes",
+      "title": "Virgin Islands Code",
+      "url": "https://www.vivote.gov/resources/virgin-islands-code",
+      "directory": "codes",
+      "locator": "Virgin Islands"
+    },
+    "US-VI:labor_agency:df59f9c0b0ad": {
+      "category": "labor_agency",
+      "title": "www.vidol.gov",
+      "url": "http://www.vidol.gov/",
+      "directory": "labor",
+      "locator": "Virgin Islands"
+    },
+    "US-VI:consumer_agency:acd09a0582fe": {
+      "category": "consumer_agency",
+      "title": "U.S. Virgin Islands (VI)",
+      "url": "https://www.dlca.vi.gov/consumeraffairs/",
+      "directory": "consumer",
+      "locator": "U.S. Virgin Islands (VI)"
+    },
+    "US-VI:judiciary:a1c1062e1826": {
+      "category": "judiciary",
+      "title": "Judiciary of the Virgin Islands",
+      "url": "https://www.vicourts.org/",
+      "directory": null,
+      "locator": "Publisher resource"
+    },
+    "US-VI:small_claims:252436baeec4": {
+      "category": "small_claims",
+      "title": "Small civil claims research source",
+      "url": "https://superior.vicourts.org/office_of_the_clerk/small_claims_division/small_claims_forms",
+      "directory": null,
+      "locator": "Publisher page selected for review",
+      "observation": {
+        "requested_url": "https://superior.vicourts.org/office_of_the_clerk/small_claims_division/small_claims_forms",
+        "retrieved_at": "2026-11-17T19:42:32.760506+00:00",
+        "http_status": "200",
+        "sha256": "1c17a059a5c76da3f3e7e3b562fd87ed7eb02fe42506a77ea96561f1ad8ead6c",
+        "health": "manual_review_required"
+      }
+    },
+    "US-VI:statutes:de7878443ade": {
+      "category": "statutes",
+      "title": "Legislature of the Virgin Islands",
+      "url": "https://legvi.org/",
+      "directory": null,
+      "locator": "Publisher resource"
+    },
+    "US-VI:civil_rules:9f64dac8bc72": {
+      "category": "civil_rules",
+      "title": "Superior Court rules",
+      "url": "https://superior.vicourts.org/court_rules",
+      "directory": null,
+      "locator": "Publisher resource"
+    },
+    "US-VI:commencement:c63a35373401": {
+      "category": "commencement",
+      "title": "V.I. R. Civ. P. 3",
+      "url": "https://www.vicourts.org/common/pages/GetFile.ashx?key=gM7rAJQx",
+      "directory": null,
+      "locator": "V.I. R. Civ. P. 3",
+      "language": "en",
+      "publisher_role": "official_rule_publication",
+      "observation": {
+        "health": "retained_snapshot",
+        "retrieved_at": "2026-11-17T20:15:01.353202+00:00",
+        "sha256": "1434dbd695f9bd434bd228d0fb326fe00ed014e178986e1f3c860c6c4a551fa4"
+      }
+    }
+  },
+  "court_directory": [],
+  "citation_leads": [
+    {
+      "category": "eviction",
+      "citation": "28 Virgin Islands Code § 840. Grounds for recovery of possession; proof and defenses.",
+      "directory": "eviction",
+      "survey_through": "2021-01-01",
+      "status": "primary_passage_required"
+    }
+  ],
+  "passages": {
+    "53803100a69e9c66bf5dd6ec03a669": {
+      "source_id": "US-VI:commencement:c63a35373401",
+      "citation": "V.I. R. Civ. P. 3",
+      "authority_type": "court_rule",
+      "language": "en",
+      "text": "Rule 3. Commencing an Action A civil action is commenced by filing a complaint with the clerk of court.",
+      "text_sha256": "29855e84ab0e8aef8eaf28452247609276e6c6a4b3c49896e0bd9a414adffe55",
+      "publisher_sha256": "1434dbd695f9bd434bd228d0fb326fe00ed014e178986e1f3c860c6c4a551fa4",
+      "retrieved_at": "2026-11-17T20:15:01.353202+00:00",
+      "currentness": "unresolved",
+      "court": "Superior Court of the Virgin Islands"
+    }
+  }
+}
