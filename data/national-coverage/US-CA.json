@@ -756,6 +756,54 @@
         "retrieved_at": "2026-11-23T15:32:12.491822+00:00",
         "sha256": "ef3421b14ebf64dbf884566ff659b39776035ec5b6e6500be0af91e3cc15533c"
       }
+    },
+    "US-CA:contract_breach:f38a62c83c0d": {
+      "category": "contract_breach",
+      "title": "Judicial Council of California Civil Jury Instructions No. 303 (2026)",
+      "url": "https://courts.ca.gov/system/files/file/judicial_council_of_california_civil_jury_instructions_2026.pdf",
+      "locator": "Judicial Council of California Civil Jury Instructions No. 303 (2026)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:41:28.414158+00:00",
+        "sha256": "592a3bd5a1f5d15f784f6c8a3ef35efbf98b27f010324ef994580659625662ec"
+      }
+    },
+    "US-CA:premises:1d9b5aa9f969": {
+      "category": "premises",
+      "title": "Judicial Council of California Civil Jury Instructions No. 1000 (2026)",
+      "url": "https://courts.ca.gov/system/files/file/judicial_council_of_california_civil_jury_instructions_2026.pdf",
+      "locator": "Judicial Council of California Civil Jury Instructions No. 1000 (2026)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:41:28.414158+00:00",
+        "sha256": "592a3bd5a1f5d15f784f6c8a3ef35efbf98b27f010324ef994580659625662ec"
+      }
+    },
+    "US-CA:premises:747a7ff1ad98": {
+      "category": "premises",
+      "title": "Judicial Council of California Civil Jury Instructions No. 1001 (2026)",
+      "url": "https://courts.ca.gov/system/files/file/judicial_council_of_california_civil_jury_instructions_2026.pdf",
+      "locator": "Judicial Council of California Civil Jury Instructions No. 1001 (2026)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:41:28.414158+00:00",
+        "sha256": "592a3bd5a1f5d15f784f6c8a3ef35efbf98b27f010324ef994580659625662ec"
+      }
+    },
+    "US-CA:premises:981cc1137678": {
+      "category": "premises",
+      "title": "Judicial Council of California Civil Jury Instructions No. 1004 (2026)",
+      "url": "https://courts.ca.gov/system/files/file/judicial_council_of_california_civil_jury_instructions_2026.pdf",
+      "locator": "Judicial Council of California Civil Jury Instructions No. 1004 (2026)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:41:28.414158+00:00",
+        "sha256": "592a3bd5a1f5d15f784f6c8a3ef35efbf98b27f010324ef994580659625662ec"
+      }
     }
   },
   "court_directory": [
@@ -1489,6 +1537,58 @@
       "edition": "Judicial Council revision effective January 1, 2026",
       "effective_from": "2026-01-01",
       "publisher_member": "SC-100, page 1, title and mandatory-use designation"
+    },
+    "24ec0ce09d6f0e57a59572921f0a48": {
+      "source_id": "US-CA:contract_breach:f38a62c83c0d",
+      "authority_type": "court_instruction",
+      "citation": "Judicial Council of California Civil Jury Instructions No. 303 (2026)",
+      "text": "To recover damages from [ name of defendant ] for breach of contract, [name of plaintiff ] must prove all of the following: 1. That [ name of plaintiff ] and [ name of defendant ] entered into a contract; [2. That [ name of plaintiff ] did all, or substantially all, of the significant things that the contract required [him/her/ nonbinary pronoun/it] to do;] [or] [2. That [ name of plaintiff ] was excused from having to [ specify things that plaintiff did not do, e.g., obtain a guarantor on the contract ];] [3. That [ specify occurrence of all conditions required by the contract for [name of defendant]’s performance, e.g., the property was rezoned for residential use ];] [or] [3. That [ specify condition(s) that did not occur ] [was/were] [waived/ excused];] [4. That [ name of defendant ] failed to do something that the contract required [him/her/ nonbinary pronoun /it] to do;] [or] [4. That [ name of defendant ] did something that the contract prohibited [him/her/ nonbinary pronoun /it] from doing;] 5. That [ name of plaintiff ] was harmed; and 6. That [ name of defendant ]’s breach of contract was a substantial factor in causing [ name of plaintiff ]’s harm.",
+      "text_sha256": "e9914f6e78ed7df9b4dc4eb8818532dfcda3cbf688513aa8190a0a33c8debab4",
+      "publisher_sha256": "592a3bd5a1f5d15f784f6c8a3ef35efbf98b27f010324ef994580659625662ec",
+      "retrieved_at": "2026-11-23T15:41:28.414158+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Judicial Council of California",
+      "edition": "2026 edition adopted December 2025"
+    },
+    "9f3408bc5a86601ddb13d057bb9858": {
+      "source_id": "US-CA:premises:1d9b5aa9f969",
+      "authority_type": "court_instruction",
+      "citation": "Judicial Council of California Civil Jury Instructions No. 1000 (2026)",
+      "text": "[Name of plaintiff ] claims that [he/she/ nonbinary pronoun] was harmed because of the way [ name of defendant ] managed [his/her/ nonbinary pronoun/its] property. To establish this claim, [ name of plaintiff ] must prove all of the following: 1. That [ name of defendant ] [owned/leased/occupied/controlled] the property; 2. That [ name of defendant ] was negligent in the use or maintenance of the property; 3. That [ name of plaintiff ] was harmed; and 4. That [ name of defendant ]’s negligence was a substantial factor in causing [ name of plaintiff ]’s harm.",
+      "text_sha256": "2f8cc87e199c6a19e63c0d7fbaeb1d6ccd69206918865af71b49bcecef09329d",
+      "publisher_sha256": "592a3bd5a1f5d15f784f6c8a3ef35efbf98b27f010324ef994580659625662ec",
+      "retrieved_at": "2026-11-23T15:41:28.414158+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Judicial Council of California",
+      "edition": "2026 edition adopted December 2025"
+    },
+    "ea9d61eb11cfb45dc5338f1516b326": {
+      "source_id": "US-CA:premises:747a7ff1ad98",
+      "authority_type": "court_instruction",
+      "citation": "Judicial Council of California Civil Jury Instructions No. 1001 (2026)",
+      "text": "A person who [owns/leases/occupies/controls] property is negligent if that person fails to use reasonable care to keep the property in a reasonably safe condition. A person who [owns/leases/occupies/controls] property must use reasonable care to discover any unsafe conditions and to repair, replace, or give adequate warning of anything that could be reasonably expected to harm others. In deciding whether [ name of defendant ] used reasonable care, you may consider, among other factors, the following: (a) The location of the property; (b) The likelihood that someone would come on to the property in the same manner as [ name of plaintiff ] did; (c) The likelihood of harm; (d) The probable seriousness of such harm; (e) Whether [ name of defendant ] knew or should have known of the condition that created the risk of harm; (f) The difficulty of protecting against the risk of such harm; [and] (g) The extent of [ name of defendant ]’s control over the condition that created the risk of harm; [and] (h) [ Other relevant factor(s) .]",
+      "text_sha256": "13d4c8049c59e408c6709f3c424a7da6b9c9874c35b822577094716c71781eee",
+      "publisher_sha256": "592a3bd5a1f5d15f784f6c8a3ef35efbf98b27f010324ef994580659625662ec",
+      "retrieved_at": "2026-11-23T15:41:28.414158+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Judicial Council of California",
+      "edition": "2026 edition adopted December 2025"
+    },
+    "b594c3e19ac522ad032aa62058dd8b": {
+      "source_id": "US-CA:premises:981cc1137678",
+      "authority_type": "court_instruction",
+      "citation": "Judicial Council of California Civil Jury Instructions No. 1004 (2026)",
+      "text": "If an unsafe condition of the property is so obvious that a person could reasonably be expected to observe it, then the [owner/occupier/one who controls the property] does not have to warn others about the dangerous condition. However, the [owner/occupier/one who controls the property] still must use reasonable care to protect against the risk of harm if it is foreseeable that the condition may cause injury to someone who because of necessity encounters the condition.",
+      "text_sha256": "b03ada0714795868504c3b53ea43ce297bdbb9e41f78f2c1be493af233ee3af3",
+      "publisher_sha256": "592a3bd5a1f5d15f784f6c8a3ef35efbf98b27f010324ef994580659625662ec",
+      "retrieved_at": "2026-11-23T15:41:28.414158+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Judicial Council of California",
+      "edition": "2026 edition adopted December 2025"
     }
   },
   "fault_allocation": {

@@ -415,6 +415,18 @@
         "retrieved_at": "2026-11-22T03:49:55.396641+00:00",
         "sha256": "a4e1f9266b6085858fab8f14f2218f572f4f617ff7f4b6faaf7f2b0a779609e1"
       }
+    },
+    "US-NE:general_contract_damages:ea0a3d215b8b": {
+      "category": "general_contract_damages",
+      "title": "TNT Cattle Co. v. Fife, 304 Neb. 890, 922 (2020)",
+      "url": "https://www.nebraska.gov/apps-courts-epub/public/viewCertified?docId=N00012129PUB",
+      "locator": "TNT Cattle Co. v. Fife, 304 Neb. 890, 922 (2020)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-19T19:39:41.809907+00:00",
+        "sha256": "b7be9ff5060571eb30394831e239d53d5393039e4b2d6833279c2a119ba6a2f1"
+      }
     }
   },
   "court_directory": [
@@ -730,6 +742,22 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Nebraska Legislature, public injunction, costs and restitution under the Consumer Protection Act."
+    },
+    "474c858674157ba087b5b91ce86adc": {
+      "source_id": "US-NE:general_contract_damages:ea0a3d215b8b",
+      "authority_type": "opinion",
+      "citation": "TNT Cattle Co. v. Fife, 304 Neb. 890, 922 (2020)",
+      "text": "In a breach of contract case, the ultimate objective of a damages award is to put the injured party in the same position the injured party would have occupied if the contract had been performed, that is, to make the injured party whole. One injured by a breach of contract is entitled to recover all its damages, including the gains prevented as well as the losses sustained, provided the damages are reasonably certain and such as might be expected to follow the breach. While damages need not be proved with mathematical certainty, neither can they be established by evidence which is speculative and conjectural. Uncertainty as to the fact of whether damages were sustained at all is fatal to recovery, but uncertainty to amount is not if the evidence furnishes a reasonably certain factual basis for computation of the probable loss.",
+      "text_sha256": "f5a9a56e539b82f7f4414feb385971b4e410ac5a150c9e1fd55e11a47df34a22",
+      "publisher_sha256": "b7be9ff5060571eb30394831e239d53d5393039e4b2d6833279c2a119ba6a2f1",
+      "retrieved_at": "2026-11-19T19:39:41.809907+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Certified Nebraska Reports, January 31, 2020",
+      "court": "Nebraska Supreme Court",
+      "decision_date": "2020-01-31",
+      "opinion_role": "majority",
+      "procedural_posture": "Appellate review of judgment after a bench trial over an oral farm lease, including contract damages."
     }
   },
   "fault_allocation": {

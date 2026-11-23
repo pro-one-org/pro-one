@@ -519,6 +519,66 @@
         "retrieved_at": "2026-11-22T03:30:44.560550+00:00",
         "sha256": "6ffef1a2df0c413388ad751ca0a03a8de09c9261ba89e35bb65348909935dd22"
       }
+    },
+    "US-MA:contract_breach:21b41f0a9f59": {
+      "category": "contract_breach",
+      "title": "Massachusetts District Court Civil Model Jury Instruction 5.00 (May 2024)",
+      "url": "https://www.mass.gov/doc/500-overview-of-elements/download",
+      "locator": "Massachusetts District Court Civil Model Jury Instruction 5.00 (May 2024)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:41:26.785048+00:00",
+        "sha256": "91d3967e5d06c883f50e293e499ceec1e4edcb03cd8d83589d576b0d186c3d77"
+      }
+    },
+    "US-MA:contract_formation:4a2cca9a6aba": {
+      "category": "contract_formation",
+      "title": "Massachusetts District Court Civil Model Jury Instruction 5.01 (May 2024)",
+      "url": "https://www.mass.gov/doc/501-formation-of-a-binding-contract/download",
+      "locator": "Massachusetts District Court Civil Model Jury Instruction 5.01 (May 2024)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:41:26.785048+00:00",
+        "sha256": "a95f1886bd5f52599763a75f07df37626f8b22d0989e37a6c0de02b4b8294e30"
+      }
+    },
+    "US-MA:general_contract_damages:d74484c1bf6f": {
+      "category": "general_contract_damages",
+      "title": "Massachusetts District Court Civil Model Jury Instruction 5.07 (May 2024)",
+      "url": "https://www.mass.gov/doc/507-damages/download",
+      "locator": "Massachusetts District Court Civil Model Jury Instruction 5.07 (May 2024)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:41:26.574618+00:00",
+        "sha256": "7bfd8393d9135e5cafaf8f7c70a244053cd17749f2e8ab288aa1b6e53acef690"
+      }
+    },
+    "US-MA:premises:165970e03c73": {
+      "category": "premises",
+      "title": "Massachusetts District Court Civil Model Jury Instruction 4.00 (May 2024)",
+      "url": "https://www.mass.gov/doc/400-overview-of-elements-and-duty/download",
+      "locator": "Massachusetts District Court Civil Model Jury Instruction 4.00 (May 2024)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:42:17.710027+00:00",
+        "sha256": "e8c2cf2120a2f3d2299edb24d3593a0d96ebca2143b6c8e2d09ba0fa96312222"
+      }
+    },
+    "US-MA:premises:c5fc4ffd9f5c": {
+      "category": "premises",
+      "title": "Massachusetts District Court Civil Model Jury Instruction 4.01 (May 2024)",
+      "url": "https://www.mass.gov/doc/401-breach-of-duty/download",
+      "locator": "Massachusetts District Court Civil Model Jury Instruction 4.01 (May 2024)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:42:17.758788+00:00",
+        "sha256": "df8e68a7aa8ced47d92508089b01ad618fb4e075e2ee463fd60149513d3d1d2c"
+      }
     }
   },
   "court_directory": [
@@ -936,6 +996,71 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Massachusetts General Court, public injunction, venue and court-ordered relief under the first paragraph. Pre-action notice follows separately."
+    },
+    "e0b6211a1203906de54ddd6d1ea4e0": {
+      "source_id": "US-MA:contract_breach:21b41f0a9f59",
+      "authority_type": "court_instruction",
+      "citation": "Massachusetts District Court Civil Model Jury Instruction 5.00 (May 2024)",
+      "text": "The parties create an enforceable contract when they agree to material terms and intend to be bound by that agreement. A breach of contract occurs when a party fails to comply with one or more material or significant terms of the contract. In order to succeed on this claim, the plaintiff must prove each of the following elements by a preponderance of the evidence: First: that there is a binding contract, including proof of the terms of the contract; Second: that the plaintiff performed (his / her / their / its) obligations under the contract (or because of the conduct of the other party, is excused from performance); Third: that the defendant breached or violated the contract; and Fourth: that the plaintiff suffered damages as a result of the breach of contract.",
+      "text_sha256": "cd17b4b80e76d8e2b41c56e1f3b263ac29687edfbad0a49ab0ddb97a59ba21a9",
+      "publisher_sha256": "91d3967e5d06c883f50e293e499ceec1e4edcb03cd8d83589d576b0d186c3d77",
+      "retrieved_at": "2026-11-23T15:41:26.785048+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Massachusetts District Court",
+      "edition": "May 2024 revision"
+    },
+    "8ed66d1b364f81c85c4ecda13fd7ac": {
+      "source_id": "US-MA:contract_formation:4a2cca9a6aba",
+      "authority_type": "court_instruction",
+      "citation": "Massachusetts District Court Civil Model Jury Instruction 5.01 (May 2024)",
+      "text": "To form a contract, the parties must mutually agree to the terms and conditions of their promises. This is often referred to as “mutuality” or a “meeting of the minds.” When an agreement is mutual, it means that the parties communicated to each other their agreement to the same terms and conditions. That is, they had those same terms and conditions in mind when they entered into the contract. A party can communicate (his / her / their / its) agreement to the terms and conditions of a contract by written or spoken words, even words sent electronically, or by performing, or not performing, a particular action, as long as it’s intended to show agreement to the other party. The law presumes that a person intends the natural and probable consequences of (his / her / their / its) acts. Keeping in mind this concept of “mutuality,” you must determine whether the plaintiff has shown that the parties intended to have a binding contract by proving each of the following three elements by a preponderance of the evidence: First: that an offer was made; Second: that the offer was accepted; and Third: that the contract was supported by consideration, that is, the plaintiff and the defendant each exchanged something of value or promised to exchange something of value.",
+      "text_sha256": "7b251421dcaa51c1813a2515cdf09b7d2d5d2a151b3520baa055e97993f4ce8a",
+      "publisher_sha256": "a95f1886bd5f52599763a75f07df37626f8b22d0989e37a6c0de02b4b8294e30",
+      "retrieved_at": "2026-11-23T15:41:26.785048+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Massachusetts District Court",
+      "edition": "May 2024 revision"
+    },
+    "8f12c2892319627a28c2a785af1b19": {
+      "source_id": "US-MA:general_contract_damages:d74484c1bf6f",
+      "authority_type": "court_instruction",
+      "citation": "Massachusetts District Court Civil Model Jury Instruction 5.07 (May 2024)",
+      "text": "As I stated earlier, expectation damages result naturally from the breach of contract itself and are meant to give the plaintiff the benefit of (his / her / their / its) expected bargain that (he / she / they / it) would have received had the defendant fully performed. Consequential damages arise from or are a “consequence” of special facts and circumstances occurring after the breach that the defendant would have reason to know about or foresee at the time (he / she / they / it) entered into the contract. It is not necessary that the defendant anticipated a particular or specific loss to the plaintiff for the loss to be considered “consequential”. It is enough that, when looking at the parties’ contract objectively, the loss would have been reasonably contemplated.",
+      "text_sha256": "ca804a907c614a80eb6c764eb43b64f90fcc44346ed947f816d5877abae0df46",
+      "publisher_sha256": "7bfd8393d9135e5cafaf8f7c70a244053cd17749f2e8ab288aa1b6e53acef690",
+      "retrieved_at": "2026-11-23T15:41:26.574618+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Massachusetts District Court",
+      "edition": "May 2024 revision"
+    },
+    "2fdae625fafccdb78b0a7f2d424bbe": {
+      "source_id": "US-MA:premises:165970e03c73",
+      "authority_type": "court_instruction",
+      "citation": "Massachusetts District Court Civil Model Jury Instruction 4.00 (May 2024)",
+      "text": "As to the first element, duty, the law in Massachusetts is that an owner, or if not the owner, one who is in control of the real estate, which we call “the premises,” has a duty of reasonable care to all persons lawfully on the premises, which would include, among others, guests and customers. This duty requires the owner or one in control of the premises to take steps that are reasonable and appropriate to prevent injury under all of the circumstances, taking into account the foreseeability and likelihood of injury to others, the seriousness of the harm that may occur, the burden of avoiding its risks, and the proper allocation of the risks involved.",
+      "text_sha256": "6a101028635d207393c3144d64493ca2048c0d07036b39bd2fefb3904418dd2c",
+      "publisher_sha256": "e8c2cf2120a2f3d2299edb24d3593a0d96ebca2143b6c8e2d09ba0fa96312222",
+      "retrieved_at": "2026-11-23T15:42:17.710027+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Massachusetts District Court",
+      "edition": "May 2024 revision"
+    },
+    "29d3e50758a6179cc50809351ad330": {
+      "source_id": "US-MA:premises:c5fc4ffd9f5c",
+      "authority_type": "court_instruction",
+      "citation": "Massachusetts District Court Civil Model Jury Instruction 4.01 (May 2024)",
+      "text": "If you find that an unsafe condition existed, then the plaintiff, in order to prove that the defendant was negligent, must prove by a preponderance of the evidence that the defendant, or (his / her / their / its) employee, either: 1. Caused the condition; or 2. Had actual knowledge of the existence of the condition and failed to use due care to remedy it or make the premises safe; or 3. That the condition existed for such a length of time that the defendant reasonably should have known about it and taken steps to remedy it or make it safe.",
+      "text_sha256": "2ff9076c63384a64f7e9126af82c34317bf5bcc617f5da0911cd774138f4e35c",
+      "publisher_sha256": "df8e68a7aa8ced47d92508089b01ad618fb4e075e2ee463fd60149513d3d1d2c",
+      "retrieved_at": "2026-11-23T15:42:17.758788+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Massachusetts District Court",
+      "edition": "May 2024 revision"
     }
   },
   "fault_allocation": {

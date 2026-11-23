@@ -26,9 +26,15 @@
 - California's revised SC-100 links directly to the matched official PDF in the small-claims shell. Identification of remaining mandatory forms and applicability is open. The Maryland Judiciary identifies DC-CV-115 and the statutory trigger. The public PDF and form index downloads returned access errors, so this batch retains the existing statute without a verified PDF binding.
 - The corpus now has 1,393 authority versions, including 155 dated publisher verifications, 506 historical records and 732 with unresolved currentness. There are 1,477 unsupported, 1,622 partial and 665 reference-only coverage cells. Focused tests, source validation, all 37 mapped evaluations and both national research evaluations passed. Consolidated logs are under `.local/sub215-*.log`.
 
+## Contract and premises checkpoint
+
+- Prior exact-head checkpoint `9a29315` passed 657 local regression tests and [CI run 45207730947](https://github.com/pro-one-org/pro-one/actions/runs/45207730947), including production build and smoke.
+- Ten new passages bind California and Massachusetts official civil jury instructions and a certified Nebraska Supreme Court decision. General contract breach evidence increased from 18 to 20 jurisdictions, damages from 22 to 24, and premises from eight to ten. Model instructions retain their court and edition scope with unresolved currentness. The Nebraska opinion is historical.
+- This batch has 1,403 retained versions, with 155 dated publisher verifications, 507 historical and 741 currentness-unresolved. Of 3,764 coverage cells, 1,469 are unsupported, 1,630 partial and 665 reference-only. The acceptance tracker now gives individual status and measurements for criteria 14 through 18. Local checks are under `.local/sub217-*.log`.
+
 ## Next priorities
 
-- Close substantive baseline gaps first. At the previous baseline there were retained passages for breach in 18 jurisdictions, contract damages in 22, premises in eight, personal-injury accrual in six and tolling in 13. All 51 had fault regime bindings and personal-injury and ordinary contract limitations sources, with gaps in exception coverage and currentness.
+- Close substantive baseline gaps first. Reuse the cached Kentucky disability-tolling statute and confirm the Texas Chapter 16 legislative text. Continue personal-injury accrual and tolling, exceptions to fault regimes, ordinary contract breach and damages, and premises coverage as measured in the tracker.
 - Reuse the captured filing-fee and transition evidence under `.local/sub209-*` when needed for court-specific procedure. Iowa Acts 2026 ch. 1192, §§ 24 and 28 distinguish fees paid before and on or after July 1, 2026. Maine's March 9, 2026 fee schedule distinguishes ordinary filings from covered debt-buyer filings.
 
 Keep PR #31 in draft. External execution and public release remain disabled.
