@@ -62,8 +62,10 @@ class NationalCoverageTests(unittest.TestCase):
     def test_official_mandatory_form_reference_is_scoped_to_its_action_and_court(self):
         shells = {row["action_type"]: row for row in coverage("US-CA")["action_shells"]}
         self.assertEqual(shells["complaint"]["official_form_references"], [])
-        form, = shells["small_claim"]["official_form_references"]
-        self.assertEqual(form["publisher_identifier"], "SC-100")
+        forms = {row["publisher_identifier"]: row for row in shells["small_claim"]["official_form_references"]}
+        form = forms["SC-100"]
+        self.assertIn("Plaintiff initiating", form["applicability"])
+        self.assertIn("Defendant asserting a claim", forms["SC-120"]["applicability"])
         self.assertEqual(form["revision"], "2026-01-01")
         self.assertEqual(form["court_scope"], "small_claims")
         self.assertEqual(form["requirement_currentness"], "unresolved")
@@ -73,6 +75,21 @@ class NationalCoverageTests(unittest.TestCase):
                          ("disabled", "disabled"))
         self.assertTrue(all(form["id"] != other["id"] for shell in coverage("US-OR")["action_shells"]
                             for other in shell["official_form_references"]))
+
+    def test_small_claim_forms_keep_mandatory_and_substantially_similar_requirements_distinct(self):
+        idaho, = (row for row in coverage("US-ID")["action_shells"] if row["action_type"] == "small_claim")
+        idaho_forms = {row["publisher_identifier"]: row for row in idaho["official_form_references"]}
+        self.assertEqual(idaho_forms["CAO SC 1-2"]["requirement_level"], "required_for_stated_scope")
+
+        utah, = (row for row in coverage("US-UT")["action_shells"] if row["action_type"] == "small_claim")
+        utah_forms = {row["publisher_identifier"]: row for row in utah["official_form_references"]}
+        odr, ordinary = (utah_forms[key] for key in ("2001SC", "1025XX"))
+        self.assertIn("participating in online dispute resolution", odr["applicability"])
+        self.assertIn("outside the online dispute resolution program", ordinary["applicability"])
+        for form in (odr, ordinary):
+            self.assertEqual(form["requirement_level"], "substantially_similar_form_required")
+            self.assertEqual(form["requirement_citation"], "Utah Rules of Small Claims Procedure 1(c)")
+            self.assertEqual(form["automated_completion"], "disabled")
 
     def test_premises_open_and_obvious_authority_stays_in_its_jurisdiction(self):
         provider = RetainedLegislativeResearch()
@@ -654,9 +671,11 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertEqual(source["citation"]["preferred_citation"], "Mich. Comp. Laws § 600.5827")
         self.assertEqual(source["dates"]["effective_from"], "1963-01-01")
         tolling_query = matter.model_copy(update={"topics": ["tolling"]})
-        tolling, = provider.search(tolling_query)
-        self.assertEqual(provider.fetch(tolling).source["citation"]["preferred_citation"], "Mich. Comp. Laws § 600.5855")
-        self.assertFalse({accrual, tolling} & set(provider.search(matter.model_copy(update={"topics": ["limitations"]}))))
+        tolling_ids = provider.search(tolling_query)
+        citations = {provider.fetch(key).source["citation"]["preferred_citation"] for key in tolling_ids}
+        self.assertTrue({"Mich. Comp. Laws § 600.5855", "Mich. Comp. Laws § 600.5851(1)–(5)"}.issubset(citations))
+        limitations_ids = set(provider.search(matter.model_copy(update={"topics": ["limitations"]})))
+        self.assertTrue({accrual, *tolling_ids}.isdisjoint(limitations_ids))
         self.assertFalse(provider.search(tolling_query.model_copy(update={"authority_status": "current",
                                                                           "authority_as_of": "2026-11-20"})))
 

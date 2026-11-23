@@ -38,6 +38,12 @@
 - Added nine passages across Arizona, D.C., Illinois, Kentucky, Michigan and Texas. The D.C. publisher version verifies two provisions as of April 29, 2026. The XML replay preserves the operative clause that follows the list of disabilities. Illinois retains two differing historical appellate readings of the survival-action rules under their respective case scopes.
 - Nationwide accrual passage coverage rose from six to seven jurisdictions and tolling from 13 to 18. The corpus now has 1,412 authority versions with 157 dated publisher verifications, 509 historical and 746 currentness-unresolved. Coverage depths are 1,463 unsupported, 1,636 partial and 665 reference-only.
 - The corrected negative test and new D.C. and Illinois regressions passed. Consolidated checks are logged under `.local/sub220-check-*.log`.
+- The full suite at `61d799d` found a test that expected exactly one Michigan tolling authority. The form batch checks both retained statutes and verifies that neither satisfies the ordinary limitations query.
+
+## Official form applicability checkpoint
+
+- Added four official form references. California SC-120 is scoped to a defendant's small claim, Idaho CAO SC 1-2 to plaintiff commencement, and Utah 2001SC and 1025XX to the two distinct justice-court paths. Utah requires a substantially similar form. The shell exposes the court's applicability source and exact requirement level with completion disabled.
+- Ten form artifacts are indexed and five have verified form and requirement bindings. Direct court downloads for Maryland DC-CV-115 and NYC CIV-SC-50 were inaccessible. The full corpus has 1,415 versions, including 157 dated publisher verifications, 509 historical and 749 currentness-unresolved. There are 1,461 unsupported, 1,638 partial and 665 reference-only coverage cells.
 
 ## Next priorities
 

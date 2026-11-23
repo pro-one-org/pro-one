@@ -804,6 +804,42 @@
         "retrieved_at": "2026-11-23T15:41:28.414158+00:00",
         "sha256": "592a3bd5a1f5d15f784f6c8a3ef35efbf98b27f010324ef994580659625662ec"
       }
+    },
+    "US-CA:small_claim_form:30082260a734": {
+      "category": "small_claim_form",
+      "title": "Judicial Council of California Form SC-120 (rev. July 1, 2025)",
+      "url": "https://courts.ca.gov/system/files/2025-07/sc120.pdf",
+      "locator": "Judicial Council of California Form SC-120 (rev. July 1, 2025)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:58:58.811280+00:00",
+        "sha256": "f79851b27e429e10e533ad3d8d797ce49e8d78968df4f4653da4decf60d473d6"
+      }
+    },
+    "US-CA:small_claim_form:afdb0e5107bb": {
+      "category": "small_claim_form",
+      "title": "Defendant’s Claim and ORDER to Go to Small Claims Court",
+      "url": "https://courts.ca.gov/system/files/2025-07/sc120.pdf",
+      "locator": "SC-120",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:58:58.811280+00:00",
+        "sha256": "f79851b27e429e10e533ad3d8d797ce49e8d78968df4f4653da4decf60d473d6"
+      }
+    },
+    "US-CA:small_claims:5d981a82ff31": {
+      "category": "small_claims",
+      "title": "California Rules of Court Appendix A, Judicial Council forms",
+      "url": "https://courts.ca.gov/system/files?file=rules-court%2Fappendix.pdf",
+      "locator": "SC-120",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:58:58.985710+00:00",
+        "sha256": "d1fa41ae32ce383070af6b2a218677dc5da3c677cbe2e0c77fdd9560de18c808"
+      }
     }
   },
   "court_directory": [
@@ -880,16 +916,20 @@
       "applicability": "Plaintiff initiating an ordinary California Superior Court small-claims case. Confirm court, case type, attachments and the applicable revision before use."
     },
     "US-CA:form:SC-120": {
-      "title": "Defendant's Claim and Order to Go to Small Claims Court",
+      "title": "Defendant’s Claim and ORDER to Go to Small Claims Court",
       "publisher_identifier": "SC-120",
-      "source_id": "US-CA:small_claim_form:5104ea3ead0a",
-      "index_source_id": "US-CA:small_claims:d10e23cd9a32",
-      "index_sha256": "690642dcffcc55f5da19a7d78d033422b59c2245f54a16251e4e36e4cd5b21e8",
+      "source_id": "US-CA:small_claim_form:afdb0e5107bb",
+      "index_source_id": "US-CA:small_claims:5d981a82ff31",
+      "index_sha256": "d1fa41ae32ce383070af6b2a218677dc5da3c677cbe2e0c77fdd9560de18c808",
       "court_scope": "small_claims",
-      "mandatory": "review_required",
-      "revision": null,
-      "last_observed": "2026-11-17T19:42:33.238783+00:00",
-      "automated_completion": "disabled"
+      "mandatory": "required_for_stated_scope",
+      "revision": "2025-07-01",
+      "last_observed": "2026-11-23T15:58:58.811280+00:00",
+      "automated_completion": "disabled",
+      "form_sha256": "f79851b27e429e10e533ad3d8d797ce49e8d78968df4f4653da4decf60d473d6",
+      "action_type": "small_claim",
+      "requirement_passage_selector": "b4841243be7da709e2f4bbcb131482",
+      "applicability": "Defendant asserting a claim in a California Superior Court small-claims case. Confirm the claim and any required attachments before use."
     }
   },
   "passages": {
@@ -1589,6 +1629,17 @@
       "language": "en",
       "court": "Judicial Council of California",
       "edition": "2026 edition adopted December 2025"
+    },
+    "b4841243be7da709e2f4bbcb131482": {
+      "source_id": "US-CA:small_claim_form:30082260a734",
+      "authority_type": "court_instruction",
+      "citation": "Judicial Council of California Form SC-120 (rev. July 1, 2025)",
+      "text": "Judicial Council of California, courts.ca.gov Revised July 1, 2025, Mandatory Form Code of Civil Procedure, § 116.110 et seq. Defendant’s Claim and ORDER to Go to Small Claims Court (Small Claims)",
+      "text_sha256": "23702b8ff4ce5ee5ddaf3ba7f25dbe7a6131c4fad5275bd64e9162e9f6bc2250",
+      "publisher_sha256": "f79851b27e429e10e533ad3d8d797ce49e8d78968df4f4653da4decf60d473d6",
+      "retrieved_at": "2026-11-23T15:58:58.811280+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

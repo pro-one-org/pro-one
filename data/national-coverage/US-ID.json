@@ -419,6 +419,42 @@
         "retrieved_at": "2026-11-20T16:01:55.611634+00:00",
         "sha256": "8d790600ff3e504fbba4d6ccad4e824497b0919a50c44725b629381b95dbf19f"
       }
+    },
+    "US-ID:small_claim_form:91e322bd7fa4": {
+      "category": "small_claim_form",
+      "title": "Idaho Rules for Small Claims Actions Rule 2 (plaintiff complaint form)",
+      "url": "https://isc.idaho.gov/rules-procedure/irsca",
+      "locator": "Idaho Rules for Small Claims Actions Rule 2 (plaintiff complaint form)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:58:59.306731+00:00",
+        "sha256": "4f232f925476fb58bf0cf1d2401fe7b3b8e87e3c6b719bfc122fca986a5e88ef"
+      }
+    },
+    "US-ID:small_claim_form:645eb2ba549b": {
+      "category": "small_claim_form",
+      "title": "Claim (Small Claims)",
+      "url": "https://courtselfhelp.idaho.gov/docs/forms/CAO_SC_1-2.pdf",
+      "locator": "CAO SC 1-2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:58:58.991366+00:00",
+        "sha256": "d1d9abd8fa0d7e064dd9d4d28627b0068e2ccb3d46a3ad82f650adef1b1efa59"
+      }
+    },
+    "US-ID:small_claims:11ab88e12392": {
+      "category": "small_claims",
+      "title": "Idaho Supreme Court small-claims rules, approved forms link",
+      "url": "https://isc.idaho.gov/rules-procedure/irsca",
+      "locator": "CAO SC 1-2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:58:59.306731+00:00",
+        "sha256": "4f232f925476fb58bf0cf1d2401fe7b3b8e87e3c6b719bfc122fca986a5e88ef"
+      }
     }
   },
   "court_directory": [
@@ -704,6 +740,17 @@
       "retrieved_at": "2026-11-20T16:01:55.611634+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "76d4c656315f30fd50256fb4821681": {
+      "source_id": "US-ID:small_claim_form:91e322bd7fa4",
+      "authority_type": "court_rule",
+      "citation": "Idaho Rules for Small Claims Actions Rule 2 (plaintiff complaint form)",
+      "text": "The court must provide to all persons interested in filing a small claims action approved “Complaint” and “Answer” forms, as well as “Instructions” on how to file an answer. The approved forms can be found at https://courtselfhelp.idaho.gov/Forms/claims. The plaintiff must use the court approved complaint form and pay the filing fee.",
+      "text_sha256": "36d2c679c1d8083442077421c9e54b27a553a0938622b14be6b1191914e1cc46",
+      "publisher_sha256": "4f232f925476fb58bf0cf1d2401fe7b3b8e87e3c6b719bfc122fca986a5e88ef",
+      "retrieved_at": "2026-11-23T15:58:59.306731+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {
@@ -712,5 +759,23 @@
     "source_id": "US-ID:fault:e42a54e830ed",
     "currentness": "unresolved",
     "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  },
+  "forms": {
+    "US-ID:form:CAO SC 1-2": {
+      "title": "Claim (Small Claims)",
+      "publisher_identifier": "CAO SC 1-2",
+      "source_id": "US-ID:small_claim_form:645eb2ba549b",
+      "index_source_id": "US-ID:small_claims:11ab88e12392",
+      "index_sha256": "4f232f925476fb58bf0cf1d2401fe7b3b8e87e3c6b719bfc122fca986a5e88ef",
+      "court_scope": "Idaho District Court Small Claims Department",
+      "mandatory": "required_for_stated_scope",
+      "revision": "2016-07-01",
+      "last_observed": "2026-11-23T15:58:58.991366+00:00",
+      "automated_completion": "disabled",
+      "form_sha256": "d1d9abd8fa0d7e064dd9d4d28627b0068e2ccb3d46a3ad82f650adef1b1efa59",
+      "action_type": "small_claim",
+      "requirement_passage_selector": "76d4c656315f30fd50256fb4821681",
+      "applicability": "Plaintiff initiating an Idaho district court small-claims action. The standardized claim contains money and personal-property paths."
+    }
   }
 }

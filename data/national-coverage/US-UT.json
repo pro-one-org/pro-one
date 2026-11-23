@@ -492,6 +492,54 @@
         "retrieved_at": "2026-11-22T04:03:03.924934+00:00",
         "sha256": "2464b0298cf454a6edc594f2557bcfc0502f481e1f216b6491100552c1f93531"
       }
+    },
+    "US-UT:small_claim_form:8eda4c5f96da": {
+      "category": "small_claim_form",
+      "title": "Utah Rules of Small Claims Procedure 1(c)",
+      "url": "https://legacy.utcourts.gov/rules/viewall.php?type=SRPE",
+      "locator": "Utah Rules of Small Claims Procedure 1(c)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:00:29.993972+00:00",
+        "sha256": "d6994077c3242dfd1d17322fa70f2e7fa2ffbb5ad03de3d884784af9ebade740"
+      }
+    },
+    "US-UT:small_claim_form:550400247ed9": {
+      "category": "small_claim_form",
+      "title": "Small Claims Summons and Affidavit (Online Dispute Resolution Case)",
+      "url": "https://legacy.utcourts.gov/odr/docs/2001SC_Small_Claims_Affidavit_and_Summons_ODR.pdf",
+      "locator": "2001SC",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:58:59.590832+00:00",
+        "sha256": "9bb41ec33ee5b11f2970805f3c01471a51b12b3e0be34735b9c112b58f932b51"
+      }
+    },
+    "US-UT:small_claims:0fca82f7d145": {
+      "category": "small_claims",
+      "title": "Utah Courts checklist for selecting the small-claims affidavit and summons",
+      "url": "https://legacy.utcourts.gov/smallclaimsodr/docs/Checklist_for_Completing_Small_Claims_Affidavit_and_Summons.pdf",
+      "locator": "1025XX",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:59:59.565196+00:00",
+        "sha256": "6a4fda6c296ec395e6a7461b2fd8945f26eee7206bad0ed7b28e83b360f4896a"
+      }
+    },
+    "US-UT:small_claim_form:3e7f67a36a9b": {
+      "category": "small_claim_form",
+      "title": "Affidavit and Summons (Small Claims)",
+      "url": "https://legacy.utcourts.gov/howto/smallclaims/docs/01_Affidavit_and_Summons.pdf",
+      "locator": "1025XX",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:58:59.288312+00:00",
+        "sha256": "a92991b32cfc7d10a24d18a22a7c8aa7c516ead1584f36efa3823f8a53ecfe2f"
+      }
     }
   },
   "court_directory": [
@@ -904,6 +952,17 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Utah Legislature, ordinary deficiency notice and emergency dangerous-condition notice. Separate prerequisites apply to remedies."
+    },
+    "9c41ef4c631029474daa1f31ab5884": {
+      "source_id": "US-UT:small_claim_form:8eda4c5f96da",
+      "authority_type": "court_rule",
+      "citation": "Utah Rules of Small Claims Procedure 1(c)",
+      "text": "(c) If the Supreme Court has approved a form for use in small claims actions, parties must file documents substantially similar in form the approved form.",
+      "text_sha256": "031b99da6f778bf99ad500632c9ce86206f2651fbf5fa29dfa8a9c3a0ece1f91",
+      "publisher_sha256": "d6994077c3242dfd1d17322fa70f2e7fa2ffbb5ad03de3d884784af9ebade740",
+      "retrieved_at": "2026-11-23T16:00:29.993972+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {
@@ -912,5 +971,39 @@
     "source_id": "US-UT:fault:106d58d09095",
     "currentness": "unresolved",
     "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  },
+  "forms": {
+    "US-UT:form:2001SC": {
+      "title": "Small Claims Summons and Affidavit (Online Dispute Resolution Case)",
+      "publisher_identifier": "2001SC",
+      "source_id": "US-UT:small_claim_form:550400247ed9",
+      "index_source_id": "US-UT:small_claims:0fca82f7d145",
+      "index_sha256": "6a4fda6c296ec395e6a7461b2fd8945f26eee7206bad0ed7b28e83b360f4896a",
+      "court_scope": "Utah Justice Court small claims",
+      "mandatory": "substantially_similar_form_required",
+      "revision": "2023-04-13",
+      "last_observed": "2026-11-23T15:58:59.590832+00:00",
+      "automated_completion": "disabled",
+      "form_sha256": "9bb41ec33ee5b11f2970805f3c01471a51b12b3e0be34735b9c112b58f932b51",
+      "action_type": "small_claim",
+      "requirement_passage_selector": "9c41ef4c631029474daa1f31ab5884",
+      "applicability": "Plaintiff filing in a Utah justice court participating in online dispute resolution. Confirm local court participation and whether an exemption request is needed."
+    },
+    "US-UT:form:1025XX": {
+      "title": "Affidavit and Summons (Small Claims)",
+      "publisher_identifier": "1025XX",
+      "source_id": "US-UT:small_claim_form:3e7f67a36a9b",
+      "index_source_id": "US-UT:small_claims:0fca82f7d145",
+      "index_sha256": "6a4fda6c296ec395e6a7461b2fd8945f26eee7206bad0ed7b28e83b360f4896a",
+      "court_scope": "Utah Justice Court small claims",
+      "mandatory": "substantially_similar_form_required",
+      "revision": "2024-05-13",
+      "last_observed": "2026-11-23T15:58:59.288312+00:00",
+      "automated_completion": "disabled",
+      "form_sha256": "a92991b32cfc7d10a24d18a22a7c8aa7c516ead1584f36efa3823f8a53ecfe2f",
+      "action_type": "small_claim",
+      "requirement_passage_selector": "9c41ef4c631029474daa1f31ab5884",
+      "applicability": "Plaintiff filing in a Utah justice court outside the online dispute resolution program. Confirm the local court and any required cover sheet."
+    }
   }
 }

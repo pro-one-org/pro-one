@@ -58,6 +58,7 @@ ACTION_REVIEW_TOPICS = {
     "answer": ("answer_contents", "postmotion_response", "demurrer_timing", "amended_pleading_response", "calendar",
                "debt_response", "debt_judgment_proof"),
 }
+OFFICIAL_FORM_REQUIREMENTS = {"required_for_stated_scope", "substantially_similar_form_required"}
 
 
 @lru_cache(maxsize=1)
@@ -91,7 +92,7 @@ def manifest(scope):
         if (not key.startswith(scope + ":form:") or form["source_id"] not in sources
                 or form["index_source_id"] not in sources or form["automated_completion"] != "disabled"):
             raise ValueError("invalid_form_reference")
-        if form.get("mandatory") == "required_for_stated_scope":
+        if form.get("mandatory") in OFFICIAL_FORM_REQUIREMENTS:
             requirement = record.get("passages", {}).get(form.get("requirement_passage_selector"))
             observation = sources[form["source_id"]].get("observation", {})
             if (form.get("action_type") not in ACTION_REQUIREMENTS or not form.get("applicability")
@@ -149,7 +150,7 @@ def action_shells(scope):
         })
     official_forms = defaultdict(list)
     for key, form in record.get("forms", {}).items():
-        if form.get("mandatory") == "required_for_stated_scope":
+        if form.get("mandatory") in OFFICIAL_FORM_REQUIREMENTS:
             requirement = record["passages"][form["requirement_passage_selector"]]
             official_forms[form["action_type"]].append({
                 "id": key,
@@ -159,6 +160,8 @@ def action_shells(scope):
                 "revision": form["revision"],
                 "court_scope": form["court_scope"],
                 "applicability": form["applicability"],
+                "applicability_source_url": record["sources"][form["index_source_id"]]["url"],
+                "requirement_level": form["mandatory"],
                 "requirement_passage_selector": form["requirement_passage_selector"],
                 "requirement_citation": requirement["citation"],
                 "requirement_currentness": requirement["currentness"],
