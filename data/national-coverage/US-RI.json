@@ -404,6 +404,30 @@
         "retrieved_at": "2026-11-20T16:01:53.714345+00:00",
         "sha256": "01dea708aa73f7816bd816f6ae5d29701b38e5b0571d8c2e1ea01e17acc700f6"
       }
+    },
+    "US-RI:premises:cf354d9bb122": {
+      "category": "premises",
+      "title": "Berard v. HCP, Inc., No. 2012-164-A., slip op. at 6 (R.I. May 15, 2013)",
+      "url": "https://www.courts.ri.gov/Opinions/12-164.pdf",
+      "locator": "Berard v. HCP, Inc., No. 2012-164-A., slip op. at 6 (R.I. May 15, 2013)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:13:24.375921+00:00",
+        "sha256": "238c02cdf4b36b388a94f49f46e74865508770fe06ec523177f719a3073d8802"
+      }
+    },
+    "US-RI:premises:372ee4861558": {
+      "category": "premises",
+      "title": "Kurczy v. St. Joseph Veterans Association, Inc., 820 A.2d 929, 935 (R.I. 2003)",
+      "url": "https://www.courts.ri.gov/Opinions/00-387.pdf",
+      "locator": "Kurczy v. St. Joseph Veterans Association, Inc., 820 A.2d 929, 935 (R.I. 2003)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:12:39.851972+00:00",
+        "sha256": "c65dd729ada5a45abb4d2df909aff1be3ffe9cca58889d284e64a070ef99a479"
+      }
     }
   },
   "court_directory": [
@@ -734,6 +758,40 @@
       "language": "en",
       "edition": "Rhode Island Superior Court Rules of Civil Procedure, February 2024 compilation",
       "court": "Rhode Island Superior Court"
+    },
+    "dc131321e3efdbbd20ac8b88c4b187": {
+      "source_id": "US-RI:premises:cf354d9bb122",
+      "citation": "Berard v. HCP, Inc., No. 2012-164-A., slip op. at 6 (R.I. May 15, 2013)",
+      "text": "“under our well-settled law, a commercial landlord owes a duty of care to an invitee of its tenant only under the narrowest of circumstances * * * [and that] such a landowner is not liable for injuries that the tenant’s invitee suffers on the leased premises, ‘unless the injury results from the landlord’s breach of a covenant to repair in the lease, or from a latent defect known to the landlord but not known to the tenant or guest, or because the landlord subsequently has assumed the duty to repair.’” Id. at 274 (quoting Lucier v. Impact Recreation, Ltd., 864 A.2d 635, 640 (R.I. 2005)).",
+      "text_sha256": "1034e8dc40f1dbaff16670b13d2b4946421b8cc1b6acdf5aa846bea2994b5910",
+      "publisher_sha256": "238c02cdf4b36b388a94f49f46e74865508770fe06ec523177f719a3073d8802",
+      "retrieved_at": "2026-11-23T21:13:24.375921+00:00",
+      "language": "en",
+      "authority_type": "opinion",
+      "currentness": "historical",
+      "edition": "Court-published opinion of 2013-05-15",
+      "court": "Rhode Island Supreme Court",
+      "decision_date": "2013-05-15",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment for a commercial lessor after a slip and fall on ice.",
+      "scope_notes": "Duty of a commercial landlord to a tenant's invitee on leased premises. The decision addresses a repair covenant, known latent defect, and assumption of repair duty as distinct exceptions."
+    },
+    "f60853960f6c6a79c4d7cfb6537308": {
+      "source_id": "US-RI:premises:372ee4861558",
+      "citation": "Kurczy v. St. Joseph Veterans Association, Inc., 820 A.2d 929, 935 (R.I. 2003)",
+      "text": "Thus, after instructing the jury that defendant owed a duty of reasonable care to those persons, such as the wedding guests, whom it expected to be present on its premises, the trial justice gave the jury further instructions, advising that it could determine whether the landowner (defendant) owed a greater degree of care to plaintiff because Lucas was a minor and because children such as Lucas would be included among the invited guests. Although the trial justice should not have insinuated that the jury could determine whether the landowner owed a duty involving “a greater degree of care” than reasonable care because of Lucas’s status as a minor, we deem this part of the instruction to be harmless error in light of the additional instruction that followed. The trial justice immediately thereafter informed the jury that, in evaluating what constitutes reasonable care, it could consider whether defendant was obliged to exercise a greater degree of care to maintain its premises in a reasonably safe condition for “the purposes intended by [Lucas’s] visit on the defendant’s premises.”",
+      "text_sha256": "fbd7528e1688d359d93534758cff4fc7911ca3fbe55d5072f9126f6ed04ae9ff",
+      "publisher_sha256": "c65dd729ada5a45abb4d2df909aff1be3ffe9cca58889d284e64a070ef99a479",
+      "retrieved_at": "2026-11-23T21:12:39.851972+00:00",
+      "language": "en",
+      "authority_type": "opinion",
+      "currentness": "historical",
+      "edition": "Court-published opinion of 2003-04-15",
+      "court": "Rhode Island Supreme Court",
+      "decision_date": "2003-04-15",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal following an invitee's verdict, reviewing the premises-duty jury instructions.",
+      "scope_notes": "Reasonable care toward invitees expected on the property. The court considered the minor invitee's intended use within the reasonable-care standard."
     }
   },
   "fault_allocation": {

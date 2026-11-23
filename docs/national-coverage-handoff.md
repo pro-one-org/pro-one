@@ -100,9 +100,15 @@
 - Louisiana preserves the January 1, 2026 comparative fault amendment with the prior proportional-reduction clause, the separate solidary liability provision, and the July 1, 2024 prescription act's prospective applicability. The date evidence does not resolve a particular action's governing version.
 - Fifteen jurisdictions have premises evidence. The corpus has 1,460 authority versions, including 164 dated publisher verifications, 524 historical and 772 currentness-unresolved. Of 3,764 coverage cells, 1,438 are unsupported, 1,660 partial and 666 reference-only. Checks are logged under `.local/transitions-verified-*.log`.
 
+## Rhode Island and Vermont premises checkpoint
+
+- Vermont's Demag opinion preserves the standard for lawful entrants and its distinct trespasser scope. Rhode Island's Kurczy and Berard opinions distinguish the duty to expected invitees from the commercial lessor's duties concerning the leased premises, including the repair-covenant and latent-defect exceptions.
+- Seventeen jurisdictions now have premises evidence. The corpus has 1,463 authority versions, including 164 dated publisher verifications, 527 historical and 772 currentness-unresolved. Of 3,764 coverage cells, 1,434 are unsupported, 1,664 partial and 666 reference-only.
+- The full suite and [CI for `3f6e932`](https://github.com/pro-one-org/pro-one/actions/runs/45267131062) found a Wisconsin isolation test that assumed there was no local premises evidence. The regression now checks that the original authority cannot cross into Wisconsin and that every Wisconsin result belongs to Wisconsin. Checks are recorded under `.local/ri-vt-final-*.log`.
+
 ## Next priorities
 
 - Close substantive baseline gaps first. Continue personal-injury accrual and tolling, exceptions to fault regimes, ordinary contract breach and damages, and premises coverage as measured in the tracker.
-- Reuse the captured filing-fee and transition evidence under `.local/sub209-*` when needed for court-specific procedure. Iowa Acts 2026 ch. 1192, §§ 24 and 28 distinguish fees paid before and on or after July 1, 2026. Maine's March 9, 2026 fee schedule distinguishes ordinary filings from covered debt-buyer filings.
+- Continue verified form applicability after restoring access to the official Maryland and New York artifacts. The prior checkout's ignored live-research snapshots are unavailable. Exact-head CI uses retained evidence and offline fixtures. The historical live evaluation needs its separate pinned corpus inputs.
 
 Keep PR #31 in draft. External execution and public release remain disabled.

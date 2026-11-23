@@ -745,6 +745,22 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
                                                                   "authority_as_of": "2026-11-23"})))
 
+    def test_vermont_entrant_rule_and_rhode_island_lessor_exceptions_stay_local(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Vermont", legal_area="torts",
+                               topics=["premises_liability"], authority_status="historical")
+        demag, = provider.search(query)
+        text = provider.fetch(demag).text
+        self.assertIn("all lawful entrants", text)
+        self.assertIn("no determination as to the duty owed to trespassers", text)
+        rhode_island = {doc.source["citation"]["preferred_citation"]: doc.text for doc in
+                        map(provider.fetch, provider.search(query.model_copy(update={"state": "Rhode Island"})))}
+        berard = next(text for citation, text in rhode_island.items() if citation.startswith("Berard"))
+        self.assertIn("covenant to repair", berard)
+        self.assertIn("latent defect known to the landlord", berard)
+        self.assertIn("assumed the duty to repair", berard)
+        self.assertNotIn(demag, provider.search(query.model_copy(update={"state": "Rhode Island"})))
+
     def test_florida_premises_research_preserves_notice_rules_and_trespasser_limits(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Florida", legal_area="torts",
@@ -1541,7 +1557,10 @@ class NationalCoverageTests(unittest.TestCase):
                                         authority_types=[kind], authority_status=status, authority_as_of=day)
                 key, = provider.search(matter)
                 self.assertIn(citation, provider.fetch(key).source["citation"]["preferred_citation"])
-                self.assertFalse(provider.search(matter.model_copy(update={"state": "Wisconsin"})))
+                wisconsin_ids = provider.search(matter.model_copy(update={"state": "Wisconsin"}))
+                self.assertNotIn(key, wisconsin_ids)
+                for local_key in wisconsin_ids:
+                    self.assertEqual("Wisconsin", provider.fetch(local_key).source["jurisdiction"]["state"])
 
     def test_wage_preemption_does_not_establish_a_wage_payment_rule(self):
         provider = RetainedLegislativeResearch()
