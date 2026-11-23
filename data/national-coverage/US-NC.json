@@ -438,6 +438,18 @@
         "retrieved_at": "2026-11-22T03:30:05.657365+00:00",
         "sha256": "4e9d59e2e890a4d13d342b065e542d6eb23801cffe1b57b630111247fab562ec"
       }
+    },
+    "US-NC:accrual:9b44d8fac311": {
+      "category": "accrual",
+      "title": "N.C. Gen. Stat. § 1-52(16)",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_1/GS_1-52.html",
+      "locator": "N.C. Gen. Stat. § 1-52(16)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:19:51.756685+00:00",
+        "sha256": "213613bb0ccda0f9864f2658fc753cd7123dd96380ade9e55bc590e8b0ca76d7"
+      }
     }
   },
   "court_directory": [
@@ -748,6 +760,17 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "North Carolina General Assembly, Attorney General actions and conditions for civil penalties."
+    },
+    "33de1c52460a9e19f504ed1eb911ee": {
+      "source_id": "US-NC:accrual:9b44d8fac311",
+      "authority_type": "statute",
+      "citation": "N.C. Gen. Stat. § 1-52(16)",
+      "text": "(16) Unless otherwise provided by law, for personal injury or physical damage to claimant's property, the cause of action, except in causes of actions referred to in G.S. 1-15(c), shall not accrue until bodily harm to the claimant or physical damage to his property becomes apparent or ought reasonably to have become apparent to the claimant, whichever event first occurs. Except as provided in G.S. 130A-26.3 or G.S. 1-17(d) and (e), no cause of action shall accrue more than 10 years from the last act or omission of the defendant giving rise to the cause of action.",
+      "text_sha256": "2e087f29b78a5a897088786b7ddbd3fa4c7a1b4ffa234c75bd0f453cd664d36d",
+      "publisher_sha256": "213613bb0ccda0f9864f2658fc753cd7123dd96380ade9e55bc590e8b0ca76d7",
+      "retrieved_at": "2026-11-23T16:19:51.756685+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

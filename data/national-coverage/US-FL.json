@@ -613,6 +613,42 @@
         "retrieved_at": "2026-11-22T03:33:29.786536+00:00",
         "sha256": "e99856164b3a9b100b5566ea7fbf87e7d18842ef7e545df7650df2b9fd150bff"
       }
+    },
+    "US-FL:cover_sheet_form:ae204a37d5ec": {
+      "category": "cover_sheet_form",
+      "title": "Florida Civil Procedure Form 1.997 (cover-sheet filing instruction)",
+      "url": "https://www.jud12.flcourts.org/Portals/0/Documents/Divisions/Civil/Forms/Civil-Cover-Sheet.pdf?ver=JoMJi1ZbwaOuuCfFoio6ig%3D%3D",
+      "locator": "Florida Civil Procedure Form 1.997 (cover-sheet filing instruction)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:23:43.042670+00:00",
+        "sha256": "1b6872b6bdcdb1f47f00b3bef18f347fe4eb300f6081aaa8c9c381000d2a33b4"
+      }
+    },
+    "US-FL:cover_sheet_form:a00a90c8b60a": {
+      "category": "cover_sheet_form",
+      "title": "Civil Cover Sheet",
+      "url": "https://www.jud12.flcourts.org/Portals/0/Documents/Divisions/Civil/Forms/Civil-Cover-Sheet.pdf?ver=JoMJi1ZbwaOuuCfFoio6ig%3D%3D",
+      "locator": "1.997",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:23:43.042670+00:00",
+        "sha256": "1b6872b6bdcdb1f47f00b3bef18f347fe4eb300f6081aaa8c9c381000d2a33b4"
+      }
+    },
+    "US-FL:forms:bd88c1e13da5": {
+      "category": "forms",
+      "title": "Florida Judicial Branch civil filing form instructions",
+      "url": "https://www.jud12.flcourts.org/Portals/0/Documents/Divisions/Civil/Forms/Civil-Cover-Sheet.pdf?ver=JoMJi1ZbwaOuuCfFoio6ig%3D%3D",
+      "locator": "1.997",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:23:43.042670+00:00",
+        "sha256": "1b6872b6bdcdb1f47f00b3bef18f347fe4eb300f6081aaa8c9c381000d2a33b4"
+      }
     }
   },
   "court_directory": [
@@ -1106,6 +1142,18 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "2026 Florida Statutes, office of the state attorney and Department of Legal Affairs allocation."
+    },
+    "979abc3fd6aac63a0e8f83323f7ae5": {
+      "source_id": "US-FL:cover_sheet_form:ae204a37d5ec",
+      "authority_type": "court_instruction",
+      "citation": "Florida Civil Procedure Form 1.997 (cover-sheet filing instruction)",
+      "text": "The civil cover sheet and the information contained in it neither replace nor supplement the filing and service of pleadings or other documents as required by law. This form must be filed by the plaintiff or petitioner with the Clerk of Court for the purpose of reporting uniform data pursuant to section 25.075, Florida Statutes.",
+      "text_sha256": "af4c1649d46651cd60200960e386c748469b96329294f7907b3f7cdb0d435bff",
+      "publisher_sha256": "1b6872b6bdcdb1f47f00b3bef18f347fe4eb300f6081aaa8c9c381000d2a33b4",
+      "retrieved_at": "2026-11-23T16:23:43.042670+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Florida Judicial Branch"
     }
   },
   "fault_allocation": {
@@ -1114,5 +1162,23 @@
     "source_id": "US-FL:fault:826a11fa4bd3",
     "currentness": "unresolved",
     "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  },
+  "forms": {
+    "US-FL:form:1.997": {
+      "title": "Civil Cover Sheet",
+      "publisher_identifier": "1.997",
+      "source_id": "US-FL:cover_sheet_form:a00a90c8b60a",
+      "index_source_id": "US-FL:forms:bd88c1e13da5",
+      "index_sha256": "1b6872b6bdcdb1f47f00b3bef18f347fe4eb300f6081aaa8c9c381000d2a33b4",
+      "court_scope": "Florida Judicial Branch",
+      "mandatory": "required_for_stated_scope",
+      "revision": null,
+      "last_observed": "2026-11-23T16:23:43.042670+00:00",
+      "automated_completion": "disabled",
+      "form_sha256": "1b6872b6bdcdb1f47f00b3bef18f347fe4eb300f6081aaa8c9c381000d2a33b4",
+      "action_type": "complaint",
+      "requirement_passage_selector": "979abc3fd6aac63a0e8f83323f7ae5",
+      "applicability": "Plaintiff or petitioner initiating a Florida civil action for which the uniform reporting cover sheet is required. Check the court, case type and applicable version."
+    }
   }
 }

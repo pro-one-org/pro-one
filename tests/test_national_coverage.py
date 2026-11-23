@@ -115,6 +115,25 @@ class NationalCoverageTests(unittest.TestCase):
             self.assertEqual(form["requirement_citation"], "Utah Rules of Small Claims Procedure 1(c)")
             self.assertEqual(form["automated_completion"], "disabled")
 
+    def test_civil_cover_sheet_references_are_available_only_on_the_initiating_path(self):
+        expected = {"US-CO": "JDF 601", "US-FL": "1.997", "US-MA": "SC0001"}
+        for jurisdiction, identifier in expected.items():
+            with self.subTest(jurisdiction=jurisdiction):
+                shells = {row["action_type"]: row for row in coverage(jurisdiction)["action_shells"]}
+                references = {row["publisher_identifier"]: row for row in shells["complaint"]["official_form_references"]}
+                form = references[identifier]
+                self.assertNotIn(identifier, {ref["publisher_identifier"]
+                                            for ref in shells["answer"]["official_form_references"]})
+                self.assertEqual(form["requirement_level"], "required_for_stated_scope")
+                self.assertEqual((form["requirement_currentness"], form["automated_completion"]),
+                                 ("unresolved", "disabled"))
+                if jurisdiction == "US-MA":
+                    self.assertEqual(form["revision"], "2024-02")
+                    self.assertTrue(form["url"].endswith("/publicforms/SC0001"))
+                if jurisdiction == "US-FL":
+                    self.assertIsNone(form["revision"])
+                    self.assertTrue(form["last_observed"])
+
     def test_premises_open_and_obvious_authority_stays_in_its_jurisdiction(self):
         provider = RetainedLegislativeResearch()
         matter = ResearchMatter(country="US", state="Ohio", legal_area="torts", topics=["premises_liability"],

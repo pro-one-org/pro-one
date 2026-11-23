@@ -1026,6 +1026,18 @@
         "retrieved_at": "2026-11-22T03:38:54.344148+00:00",
         "sha256": "c5ea40eb8ef1d61f44275f1815ad064395956018ca4e2ccb2efe714107016e0d"
       }
+    },
+    "US-WI:accrual:69d58799a98d": {
+      "category": "accrual",
+      "title": "Christ v. Exxon Mobil Corp., 2015 WI 58, ¶¶ 5–6",
+      "url": "https://www.wicourts.gov/sc/opinion/DisplayDocument.pdf?content=pdf&seqNo=143482",
+      "locator": "Christ v. Exxon Mobil Corp., 2015 WI 58, ¶¶ 5–6",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:20:02.068396+00:00",
+        "sha256": "1c43811a3ed2e2dfb288cbe3de47de0a0269483190045082f599a75e57dca3e1"
+      }
     }
   },
   "court_directory": [
@@ -2044,6 +2056,22 @@
       "current_as_of": "2026-11-04",
       "publisher_path": "/statutes/statutes/100/18/11/d",
       "edition": "Wisconsin Statutes certified November 4, 2026"
+    },
+    "bea4456ec1b59ae6033e4f74280304": {
+      "source_id": "US-WI:accrual:69d58799a98d",
+      "authority_type": "opinion",
+      "citation": "Christ v. Exxon Mobil Corp., 2015 WI 58, ¶¶ 5–6",
+      "text": "We agree with the plaintiffs and hold that the discovery rule permits the accrual of both survival claims and wrongful death claims after the date of the decedent's death. In the absence of a legislatively created rule to the contrary, claims accrue when there is a \"claim capable of present enforcement, a suable party against whom it may be enforced, and a party who has a present right to enforce it.\" Emp'rs Ins. of Wausau v. Smith, 154 Wis. 2d 199, 231, 453 N.W.2d 856 (1990) (quoting Barry v. Minahan, 127 Wis. 570, 573, 107 N.W. 488 (1906)). These criteria are not met \"until the plaintiff discovers, or in the exercise of reasonable diligence should have discovered, not only the fact of injury but also that the injury was probably caused by the defendant's conduct or product.\" Borello v. U.S. Oil Co., 130 Wis. 2d 397, 411, 388 N.W.2d 140 (1986). See also Carlson v. Pepin Cnty., 167 Wis. 2d 345, 352-53, 481 N.W.2d 498 (Ct. App. 1992) (\"Under the discovery rule, a cause of action accrues when the plaintiff discovered or, in the exercise of reasonable diligence, should have discovered his injury, its nature, its cause and the identity of the allegedly responsible defendant.\"). ¶6 In the circumstances of this case, the applicable statute of limitations began to run when the survival claims and wrongful death claims were discovered, provided that the plaintiffs are able to show that they exercised reasonable diligence in investigating and discovering their claims.",
+      "text_sha256": "3c0112b8e967b81dfeb6f1104bdebfce1cba54d1135e8e0cf5bb323cc0761065",
+      "publisher_sha256": "1c43811a3ed2e2dfb288cbe3de47de0a0269483190045082f599a75e57dca3e1",
+      "retrieved_at": "2026-11-23T16:20:02.068396+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Official published slip opinion of June 23, 2015",
+      "court": "Wisconsin Supreme Court",
+      "decision_date": "2015-06-23",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of summary judgment involving wrongful-death and survival claims arising from alleged benzene exposure."
     }
   },
   "fault_allocation": {

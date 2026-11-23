@@ -609,6 +609,42 @@
         "retrieved_at": "2026-11-22T04:03:03.888013+00:00",
         "sha256": "51572d2e57c79c87327b8a4b7bf68dc530a927cb31410560fa4700fdd7e2dc33"
       }
+    },
+    "US-CO:cover_sheet_form:e49827fec21c": {
+      "category": "cover_sheet_form",
+      "title": "Colorado Judicial Branch, District Civil Case Cover Sheet filing requirement",
+      "url": "https://www.coloradojudicial.gov/self-help/cases-more-25000",
+      "locator": "Colorado Judicial Branch, District Civil Case Cover Sheet filing requirement",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:21:40.395327+00:00",
+        "sha256": "d7bac59c966c1e1491c0d6b3a85200029baf473e1efa4e57b2e83e122ce7adfa"
+      }
+    },
+    "US-CO:cover_sheet_form:2c7e0285960c": {
+      "category": "cover_sheet_form",
+      "title": "District Court Civil (CV) Case Cover Sheet",
+      "url": "https://www.coloradojudicial.gov/sites/default/files/2024-04/JDF601.pdf",
+      "locator": "JDF 601",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:21:40.427617+00:00",
+        "sha256": "a07f289d6d11b19c8ddbf86630936867801330be1ddac50e69448ffee5b5d7b5"
+      }
+    },
+    "US-CO:forms:c23cebeb6623": {
+      "category": "forms",
+      "title": "Colorado District Court civil filing form instructions",
+      "url": "https://www.coloradojudicial.gov/self-help/cases-more-25000",
+      "locator": "JDF 601",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:21:40.395327+00:00",
+        "sha256": "d7bac59c966c1e1491c0d6b3a85200029baf473e1efa4e57b2e83e122ce7adfa"
+      }
     }
   },
   "court_directory": [
@@ -1156,6 +1192,18 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Colorado Office of Legislative Legal Services 2026 Title 38. Warranty, notice, commencement of remediation and additional conditions."
+    },
+    "602e10a83a2be23dcf3a248924567b": {
+      "source_id": "US-CO:cover_sheet_form:e49827fec21c",
+      "authority_type": "court_instruction",
+      "citation": "Colorado Judicial Branch, District Civil Case Cover Sheet filing requirement",
+      "text": "As of July 1, 2004, the JDF 601 Case Cover Sheet is required by C.R.C.P. 16.1 Simplified Procedure for all District Civil (CV) actions filed on or after that date. This cover sheet must be filed with the Complaint and any Counterclaim, Cross-claim, or Third Party Complaint.",
+      "text_sha256": "b558b9cc18946d011cf44c48ae05098e18a0a1c6e349440d726ef22ce38a5b6e",
+      "publisher_sha256": "d7bac59c966c1e1491c0d6b3a85200029baf473e1efa4e57b2e83e122ce7adfa",
+      "retrieved_at": "2026-11-23T16:21:40.395327+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Colorado District Court"
     }
   },
   "fault_allocation": {
@@ -1164,5 +1212,23 @@
     "passage_selector": "addf4e2a966b9f009fb48577879d68",
     "currentness": "historical",
     "qualification": "The opinion quotes the threshold and proportional reduction in Colo. Rev. Stat. § 13-21-111(1)."
+  },
+  "forms": {
+    "US-CO:form:JDF 601": {
+      "title": "District Court Civil (CV) Case Cover Sheet",
+      "publisher_identifier": "JDF 601",
+      "source_id": "US-CO:cover_sheet_form:2c7e0285960c",
+      "index_source_id": "US-CO:forms:c23cebeb6623",
+      "index_sha256": "d7bac59c966c1e1491c0d6b3a85200029baf473e1efa4e57b2e83e122ce7adfa",
+      "court_scope": "Colorado District Court",
+      "mandatory": "required_for_stated_scope",
+      "revision": "2022-03",
+      "last_observed": "2026-11-23T16:21:40.427617+00:00",
+      "automated_completion": "disabled",
+      "form_sha256": "a07f289d6d11b19c8ddbf86630936867801330be1ddac50e69448ffee5b5d7b5",
+      "action_type": "complaint",
+      "requirement_passage_selector": "602e10a83a2be23dcf3a248924567b",
+      "applicability": "Party filing a covered initial pleading in a Colorado District Court Civil (CV) case under the published cover-sheet instructions. Review case classification before use."
+    }
   }
 }

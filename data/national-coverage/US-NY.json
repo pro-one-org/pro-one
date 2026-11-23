@@ -545,6 +545,18 @@
         "retrieved_at": "2026-11-23T16:13:27.696126+00:00",
         "sha256": "5de2a1c0a2736e90824850015ee1e9f0bd5b3936c36cdd16ed2b52452b837df0"
       }
+    },
+    "US-NY:accrual:8f7142992ad9": {
+      "category": "accrual",
+      "title": "N.Y. CPLR 214-c(2)–(6)",
+      "url": "https://www.nysenate.gov/legislation/laws/CVP/214-C",
+      "locator": "N.Y. CPLR 214-c(2)–(6)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:19:51.526706+00:00",
+        "sha256": "8167d0f210a6097afaf6f09727e4ddedba8b9c649594dd3f25b1d4401e2cb069"
+      }
     }
   },
   "court_directory": [
@@ -1057,6 +1069,17 @@
       "edition": "Text in force before the 2026 Part EE amendment",
       "effective_until": "2026-05-26",
       "publisher_member": "A10008-C, Part EE § 3. Pre-amendment text reconstructed from the signed bill's brackets and unchanged text. Part EE § 4 uses the action commencement date."
+    },
+    "87930c0b9f7cf87ad6083873e228d9": {
+      "source_id": "US-NY:accrual:8f7142992ad9",
+      "authority_type": "statute",
+      "citation": "N.Y. CPLR 214-c(2)–(6)",
+      "text": "2. Notwithstanding the provisions of section 214, the three year period within which an action to recover damages for personal injury or injury to property caused by the latent effects of exposure to any substance or combination of substances, in any form, upon or within the body or upon or within property must be commenced shall be computed from the date of discovery of the injury by the plaintiff or from the date when through the exercise of reasonable diligence such injury should have been discovered by the plaintiff, whichever is earlier. 3. For the purposes of sections fifty-e and fifty-i of the general municipal law, section thirty-eight hundred thirteen of the education law and the provisions of any general, special or local law or charter requiring as a condition precedent to commencement of an action or special proceeding that a notice of claim be filed or presented within a specified period of time after the claim or action accrued, a claim or action for personal injury or injury to property caused by the latent effects of exposure to any substance or combination of substances, in any form, upon or within the body or upon or within property shall be deemed to have accrued on the date of discovery of the injury by the plaintiff or on the date when through the exercise of reasonable diligence the injury should have been discovered, whichever is earlier. 4. Notwithstanding the provisions of subdivisions two and three of this section, where the discovery of the cause of the injury is alleged to have occurred less than five years after discovery of the injury or when with reasonable diligence such injury should have been discovered, whichever is earlier, an action may be commenced or a claim filed within one year of such discovery of the cause of the injury; provided, however, if any such action is commenced or claim filed after the period in which it would otherwise have been authorized pursuant to subdivision two or three of this section the plaintiff or claimant shall be required to allege and prove that technical, scientific or medical knowledge and information sufficient to ascertain the cause of his injury had not been discovered, identified or determined prior to the expiration of the period within which the action or claim would have been authorized and that he has otherwise satisfied the requirements of subdivisions two and three of this section. 5. This section shall not be applicable to any action for medical or dental malpractice. 6. This section shall be applicable to acts, omissions or failures occurring prior to, on or after July first, nineteen hundred eighty-six, except that this section shall not be applicable to any act, omission or failure: (a) which occurred prior to July first, nineteen hundred eighty-six, and (b) which caused or contributed to an injury that either was discovered or through the exercise of reasonable diligence should have been discovered prior to such date, and (c) an action for which was or would have been barred because the applicable period of limitation had expired prior to such date.",
+      "text_sha256": "1a7ee5e02249dd0fe7eda650093e043f0435788a5e7a429af5932d5e3416facf",
+      "publisher_sha256": "8167d0f210a6097afaf6f09727e4ddedba8b9c649594dd3f25b1d4401e2cb069",
+      "retrieved_at": "2026-11-23T16:19:51.526706+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {

@@ -94,12 +94,17 @@ def manifest(scope):
             raise ValueError("invalid_form_reference")
         if form.get("mandatory") in OFFICIAL_FORM_REQUIREMENTS:
             requirement = record.get("passages", {}).get(form.get("requirement_passage_selector"))
-            observation = sources[form["source_id"]].get("observation", {})
+            source = sources[form["source_id"]]
+            observation = source.get("observation", {})
             if (form.get("action_type") not in ACTION_REQUIREMENTS or not form.get("applicability")
                     or not re.fullmatch("[a-f0-9]{64}", form.get("form_sha256", ""))
-                    or form["form_sha256"] != observation.get("sha256") or not form.get("revision")
+                    or form["form_sha256"] != observation.get("sha256")
                     or not requirement):
                 raise ValueError("invalid_mandatory_form_requirement")
+            if form.get("view_url"):
+                view = urlsplit(form["view_url"])
+                if view.scheme != "https" or view.hostname != urlsplit(source["url"]).hostname:
+                    raise ValueError("invalid_form_view_url")
     for selector, passage in record.get("passages", {}).items():
         source = sources.get(passage["source_id"])
         capture = passage["publisher_sha256"]
@@ -156,8 +161,9 @@ def action_shells(scope):
                 "id": key,
                 "title": form["title"],
                 "publisher_identifier": form["publisher_identifier"],
-                "url": record["sources"][form["source_id"]]["url"],
+                "url": form.get("view_url") or record["sources"][form["source_id"]]["url"],
                 "revision": form["revision"],
+                "last_observed": form["last_observed"],
                 "court_scope": form["court_scope"],
                 "applicability": form["applicability"],
                 "applicability_source_url": record["sources"][form["index_source_id"]]["url"],

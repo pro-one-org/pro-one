@@ -52,6 +52,13 @@
 - D.C.'s pinned April 29, 2026 publisher version retains the collision scope, vulnerable-user definition and preserved doctrines. New York's signed chapter law and agency guidance confirm the May 26, 2026 action-commencement transition. Both statutory text versions remain available.
 - The corpus has 1,427 versions, including 160 dated publisher verifications, 512 historical and 755 currentness-unresolved. There are 1,455 unsupported, 1,644 partial and 665 reference-only coverage cells. Checks are under `.local/sub226-check-*.log`.
 
+## Accrual and civil cover sheet checkpoint
+
+- Prior exact-head checkpoint `1c1f8f1` passed 662 local regression tests and [CI run 45215365701](https://github.com/pro-one-org/pro-one/actions/runs/45215365701), including production build and smoke.
+- Added the North Carolina bodily-harm or physical-damage discovery provision, New York's latent-exposure rules with exclusions, and Wisconsin's 2015 survival and wrongful-death opinion. Retained accrual evidence now spans ten jurisdictions. The Wisconsin opinion is historical and the statutes remain currentness-unresolved.
+- Added initiating civil cover-sheet bindings for Colorado JDF 601, Massachusetts SC0001 and Florida 1.997. Florida's court copy has no displayed revision, so the reference preserves that uncertainty with the capture date and digest. Thirteen forms are indexed and eight have retained form and requirement evidence.
+- The corpus has 1,433 versions, including 160 dated publisher verifications, 513 historical and 760 currentness-unresolved. There are 1,449 unsupported, 1,650 partial and 665 reference-only coverage cells. Checks are under `.local/sub230-check-*.log`.
+
 ## Next priorities
 
 - Close substantive baseline gaps first. Continue personal-injury accrual and tolling, exceptions to fault regimes, ordinary contract breach and damages, and premises coverage as measured in the tracker.

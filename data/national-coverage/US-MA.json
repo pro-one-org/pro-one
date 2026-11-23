@@ -579,6 +579,42 @@
         "retrieved_at": "2026-11-23T15:42:17.758788+00:00",
         "sha256": "df8e68a7aa8ced47d92508089b01ad618fb4e075e2ee463fd60149513d3d1d2c"
       }
+    },
+    "US-MA:cover_sheet_form:080fdbdf755b": {
+      "category": "cover_sheet_form",
+      "title": "Massachusetts Superior Court Rule 29 (initiating pleading)",
+      "url": "https://www.mass.gov/superior-court-rules/superior-court-rule-29-cover-sheet-statement-as-to-damages",
+      "locator": "Massachusetts Superior Court Rule 29 (initiating pleading)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:21:40.142026+00:00",
+        "sha256": "1f53f6abec0771a18d8456e18c11e86d917ceb2755b402741f3f556f846a582c"
+      }
+    },
+    "US-MA:cover_sheet_form:5093c3b9d283": {
+      "category": "cover_sheet_form",
+      "title": "Superior Court Civil Action Cover Sheet",
+      "url": "https://courtforms.jud.state.ma.us/content/dam/formsanddocuments/publicforms/SC0001.xdp",
+      "locator": "SC0001",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:23:42.875024+00:00",
+        "sha256": "22429b515a62ee8bd080b8147adaaeeed2772c58b75999599e3cf8895218ff7c"
+      }
+    },
+    "US-MA:forms:42a56f77efb7": {
+      "category": "forms",
+      "title": "Massachusetts Superior Court civil filing form instructions",
+      "url": "https://www.mass.gov/lists/superior-court-forms",
+      "locator": "SC0001",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:21:40.326830+00:00",
+        "sha256": "58ffd9e9a750805295784325b67f3e9c81381fdca494138f50c3e0280b063cdd"
+      }
     }
   },
   "court_directory": [
@@ -1061,6 +1097,18 @@
       "language": "en",
       "court": "Massachusetts District Court",
       "edition": "May 2024 revision"
+    },
+    "7de511df9108bf5ed654d2cba16305": {
+      "source_id": "US-MA:cover_sheet_form:080fdbdf755b",
+      "authority_type": "court_rule",
+      "citation": "Massachusetts Superior Court Rule 29 (initiating pleading)",
+      "text": "No Clerk-Magistrate shall accept for filing any Complaint or other pleading which commences a civil action unless accompanied by a civil action cover sheet completed and signed by the attorney or pro se party filing such pleading. The civil action cover sheet shall be in a form approved by the Chief Administrative Justice in consultation with the Chief Justice of the Superior Court. 2. Duty of the plaintiff",
+      "text_sha256": "7361e557dca688ad1d084e3407fbd07ffd711a079b249f7488374a4ecc5cbfc6",
+      "publisher_sha256": "1f53f6abec0771a18d8456e18c11e86d917ceb2755b402741f3f556f846a582c",
+      "retrieved_at": "2026-11-23T16:21:40.142026+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Massachusetts Superior Court"
     }
   },
   "fault_allocation": {
@@ -1069,5 +1117,24 @@
     "source_id": "US-MA:fault:169d777bb89e",
     "currentness": "unresolved",
     "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  },
+  "forms": {
+    "US-MA:form:SC0001": {
+      "title": "Superior Court Civil Action Cover Sheet",
+      "publisher_identifier": "SC0001",
+      "source_id": "US-MA:cover_sheet_form:5093c3b9d283",
+      "index_source_id": "US-MA:forms:42a56f77efb7",
+      "index_sha256": "58ffd9e9a750805295784325b67f3e9c81381fdca494138f50c3e0280b063cdd",
+      "court_scope": "Massachusetts Superior Court",
+      "mandatory": "required_for_stated_scope",
+      "revision": "2024-02",
+      "last_observed": "2026-11-23T16:23:42.875024+00:00",
+      "automated_completion": "disabled",
+      "form_sha256": "22429b515a62ee8bd080b8147adaaeeed2772c58b75999599e3cf8895218ff7c",
+      "action_type": "complaint",
+      "requirement_passage_selector": "7de511df9108bf5ed654d2cba16305",
+      "applicability": "Party filing a pleading that commences a civil action in the Massachusetts Superior Court. Review the applicable statement-as-to-damages requirements.",
+      "view_url": "https://courtforms.jud.state.ma.us/publicforms/SC0001"
+    }
   }
 }
