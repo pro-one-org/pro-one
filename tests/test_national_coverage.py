@@ -23,6 +23,16 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_premises_open_and_obvious_authority_stays_in_its_jurisdiction(self):
+        provider = RetainedLegislativeResearch()
+        matter = ResearchMatter(country="US", state="Ohio", legal_area="torts", topics=["premises_liability"],
+                                authority_types=["opinion"], authority_status="historical")
+        ohio, = provider.search(matter)
+        self.assertIn("obviates the duty to warn", provider.fetch(ohio).text)
+        michigan, = provider.search(matter.model_copy(update={"state": "Michigan"}))
+        self.assertIn("relevant to breach and the parties’ comparative fault", provider.fetch(michigan).text)
+        self.assertNotEqual(ohio, michigan)
+
     def test_maine_dated_response_is_scoped_and_review_only(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Maine", legal_area="civil_procedure",

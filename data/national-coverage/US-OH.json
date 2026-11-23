@@ -560,6 +560,18 @@
         "retrieved_at": "2026-11-22T03:30:05.967330+00:00",
         "sha256": "92de9f2ee8c84e58bb7126897a47d21ad2f5207a514b7a5412e22f4817b929bf"
       }
+    },
+    "US-OH:premises:d86a1c5d4bd7": {
+      "category": "premises",
+      "title": "Armstrong v. Best Buy Co., Inc., 99 Ohio St. 3d 79, 2003-Ohio-2573, ¶ 5",
+      "url": "https://www.supremecourt.ohio.gov/rod/docs/pdf/0/2003/2003-ohio-2573.pdf",
+      "locator": "Armstrong v. Best Buy Co., Inc., 99 Ohio St. 3d 79, 2003-Ohio-2573, ¶ 5",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:59:26.250291+00:00",
+        "sha256": "afbbdea5898513a2977cf435f1fa9dab502993c001a528f1f6286e4fe980a77b"
+      }
     }
   },
   "court_directory": [
@@ -1087,6 +1099,23 @@
       "edition": "Ohio Legislative Service Commission authenticated April 6, 2017 version",
       "publisher_member": "Ohio Legislative Service Commission authenticated version effective April 6, 2017; public remedies under subdivision (A).",
       "effective_from": "2017-04-06"
+    },
+    "957cddc4461989add1b5b50e5c77e0": {
+      "source_id": "US-OH:premises:d86a1c5d4bd7",
+      "authority_type": "opinion",
+      "citation": "Armstrong v. Best Buy Co., Inc., 99 Ohio St. 3d 79, 2003-Ohio-2573, ¶ 5",
+      "text": "{¶5} The sole issue before this court concerns the viability of the open-and-obvious doctrine, which states that a premises-owner owes no duty to persons entering those premises regarding dangers that are open and obvious. Sidle v. Humphrey (1968), 13 Ohio St.2d 45, 42 O.O.2d 96, 233 N.E.2d 589, paragraph one of the syllabus. The rationale underlying this doctrine is “that the open and obvious nature of the hazard itself serves as a warning. Thus, the owner or occupier may reasonably expect that persons entering the premises will discover those dangers and take appropriate measures to protect themselves.” Simmers v. Bentley Constr. Co. (1992), 64 Ohio St.3d 642, 644, 597 N.E.2d 504. A shopkeeper ordinarily owes its business invitees a duty of ordinary care in maintaining the premises in a reasonably safe condition and has the duty to warn its invitees of latent or hidden dangers. Paschal v. Rite Aid Pharmacy, Inc. (1985), 18 Ohio St.3d 203, 18 OBR 267, 480 N.E.2d 474; Jackson v. Kings Island (1979), 58 Ohio St.2d 357, 12 O.O.3d 321, 390 N.E.2d 810. When applicable, however, the open-and-obvious doctrine obviates the duty to warn and acts as a complete bar to any negligence claims.",
+      "text_sha256": "8d2e9c5d73a47622d18e77aa659dfc7a866f0acb59f41e6398eced81ba7a7740",
+      "publisher_sha256": "afbbdea5898513a2977cf435f1fa9dab502993c001a528f1f6286e4fe980a77b",
+      "retrieved_at": "2026-11-22T03:59:26.250291+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Supreme Court of Ohio opinion issued 2003-06-04",
+      "court": "Supreme Court of Ohio",
+      "publisher_member": "Supreme Court of Ohio majority opinion paragraph 5; business invitees and the open-and-obvious rule.",
+      "decision_date": "2003-06-04",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal and interdistrict conflict certification following summary judgment in a store trip-and-fall action; affirmed."
     }
   },
   "fault_allocation": {

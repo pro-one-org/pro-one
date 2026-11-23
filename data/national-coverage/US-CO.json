@@ -597,6 +597,18 @@
         "retrieved_at": "2026-11-22T03:40:08.148436+00:00",
         "sha256": "80be0b305002b6f76bd65e1225c1cc0a20793a40d2e9e636279d943e5cf2d6be"
       }
+    },
+    "US-CO:habitability:1065cf26bb41": {
+      "category": "habitability",
+      "title": "Colo. Rev. Stat. § 38-12-503(1)–(2)",
+      "url": "https://olls.info/crs/crs2026-title-38.htm",
+      "locator": "Colo. Rev. Stat. § 38-12-503(1)–(2)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T04:03:03.888013+00:00",
+        "sha256": "51572d2e57c79c87327b8a4b7bf68dc530a927cb31410560fa4700fdd7e2dc33"
+      }
     }
   },
   "court_directory": [
@@ -1132,6 +1144,18 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Colorado Office of Legislative Legal Services 2026 Title 8. Differing claim caps by filing period, including later rulemaking."
+    },
+    "05d5902fa271ed6b1d711a6796e133": {
+      "source_id": "US-CO:habitability:1065cf26bb41",
+      "authority_type": "statute",
+      "citation": "Colo. Rev. Stat. § 38-12-503(1)–(2)",
+      "text": "(1) In every rental agreement, the landlord is deemed to warrant that the residential premises is fit for human habitation at the inception of the tenant's occupancy and that the landlord will maintain the residential premises as fit for human habitation throughout the entire period that the tenant lawfully occupies the residential premises or dwelling unit. (2) A landlord breaches the warranty of habitability set forth in subsection (1) of this section if: (a) A residential premises is: (I) Uninhabitable as described in section 38-12-505; or (II) In a condition that materially interferes with the tenant's life, health, or safety; and (b) The landlord has notice, as described in subsection (3)(e) of this section, of the condition described in subsection (2)(a) of this section and: (I) Has failed to commence remedial action in accordance with subsection (4) of this section within the following period after having notice: (A) Twenty-four hours, where the condition materially interferes with the tenant's life, health, or safety; or (B) Seventy-two hours, where the residential premises are uninhabitable as described in section 38-12-505 or otherwise; (II) Has commenced remedial action, in accordance with subsection (4) of this section, within the period described in subsection (2)(b)(I) of this section, but failed to continue performing the remedial action as needed until the condition was remedied or repaired; (III) Has failed to completely remedy or repair the condition within a reasonable time after commencing remedial action; (IV) Has failed to comply with subsection (8) of this section concerning a residential premises that has been damaged due to an environmental public health event; or (V) Leases a residential premises to a tenant and the residential premises is in an uninhabitable condition at the inception of the tenant's occupancy.",
+      "text_sha256": "c913d2fbed2255bda04d0ef2448116ae546301277c37d5b30e6bc5379e9dedfa",
+      "publisher_sha256": "51572d2e57c79c87327b8a4b7bf68dc530a927cb31410560fa4700fdd7e2dc33",
+      "retrieved_at": "2026-11-22T04:03:03.888013+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "publisher_member": "Colorado Office of Legislative Legal Services 2026 Title 38. Warranty, notice, commencement of remediation and additional conditions."
     }
   },
   "fault_allocation": {

@@ -766,6 +766,18 @@
         "retrieved_at": "2026-11-22T03:45:16.647080+00:00",
         "sha256": "482539c03d980edfc0c40f56e683d4f9a38b5cb1344b51bd72969129a19a73d9"
       }
+    },
+    "US-TX:premises:9a2ae27a7976": {
+      "category": "premises",
+      "title": "Austin v. Kroger Tex., L.P., 465 S.W.3d 193 (Tex. 2015) (exceptions)",
+      "url": "https://dev-search.txcourts.gov/SearchMedia.aspx?DT=OPINION&MediaID=3a4e8f17-b70d-407b-b2e8-03ac24c3a77a&MediaVersionID=e7e0cde6-b5bc-4a88-b4ec-decd7b21bfb2&coa=cossup",
+      "locator": "Austin v. Kroger Tex., L.P., 465 S.W.3d 193 (Tex. 2015) (exceptions)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:59:26.470090+00:00",
+        "sha256": "9e34eae681c95e1522f1786986071f3961dab3d4ae6e574abd7483d5ba098281"
+      }
     }
   },
   "court_directory": [
@@ -1389,6 +1401,23 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Texas Workforce Commission’s statutory reprint, pages 13–14. Verified form, covered work, agency jurisdiction, and authorized filing methods. Live channel availability requires separate confirmation."
+    },
+    "1af1aeadf5243535068d92b97fe4bf": {
+      "source_id": "US-TX:premises:9a2ae27a7976",
+      "authority_type": "opinion",
+      "citation": "Austin v. Kroger Tex., L.P., 465 S.W.3d 193 (Tex. 2015) (exceptions)",
+      "text": "Today we reaffirm the general rule while clarifying and confirming the existence of two exceptions that the Court has recognized when the landowner’s provision of an otherwise adequate warning is legally insufficient to make the premises reasonably safe. The first exception may arise when a dangerous condition results from the foreseeable criminal activity of third parties. We will refer to this as the criminal-activity exception. The second exception may arise when the invitee necessarily must use the unreasonably dangerous premises, and despite the invitee’s awareness and appreciation of the dangers, the invitee is incapable of taking precautions that will adequately reduce the risk. We will refer to this as the necessary-use exception. In cases involving these exceptions, we have held that the obviousness of the danger and the invitee’s appreciation of it may be relevant to a landowner’s defense based on the invitee’s proportionate responsibility, but they do not relieve the landowner of its duty to make the premises reasonably safe.",
+      "text_sha256": "542019d185a9f68733f5fbabc923e3a5e359c0bd2c8d1ecbce0845c852538d75",
+      "publisher_sha256": "9e34eae681c95e1522f1786986071f3961dab3d4ae6e574abd7483d5ba098281",
+      "retrieved_at": "2026-11-22T03:59:26.470090+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Supreme Court of Texas opinion issued 2015-06-12",
+      "court": "Supreme Court of Texas",
+      "publisher_member": "Supreme Court majority Part III, limited criminal-activity and necessary-use exceptions to the ordinarily sufficient-warning rule.",
+      "decision_date": "2015-06-12",
+      "opinion_role": "majority",
+      "procedural_posture": "Answered a Fifth Circuit certified question in an employee’s premises claim involving a nonsubscribing employer."
     }
   },
   "fault_allocation": {

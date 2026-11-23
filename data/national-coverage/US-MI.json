@@ -767,6 +767,30 @@
         "retrieved_at": "2026-11-22T03:30:06.401921+00:00",
         "sha256": "5ba4645bf47f8a47c77ed81341b22140505bc7c259e7ac863e5e71c8e552c9e5"
       }
+    },
+    "US-MI:premises:7ff99eb158a9": {
+      "category": "premises",
+      "title": "Kandil-Elsayed v. F & E Oil, Inc., 512 Mich. 95 (2023)",
+      "url": "https://www.courts.michigan.gov/siteassets/case-documents/uploads/opinions/final/sct/162907_79_01.pdf",
+      "locator": "Kandil-Elsayed v. F & E Oil, Inc., 512 Mich. 95 (2023)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:59:26.217744+00:00",
+        "sha256": "dc1185573a45905628c30cbb1c2d1634851f572a3f2b10aa0a4096c1624ac8bd"
+      }
+    },
+    "US-MI:premises:7bb470efdaec": {
+      "category": "premises",
+      "title": "2014 Mich. Pub. Acts 226, § 3",
+      "url": "https://www.legislature.mi.gov/documents/2013-2014/publicact/htm/2014-PA-0226.htm",
+      "locator": "2014 Mich. Pub. Acts 226, § 3",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:59:26.252298+00:00",
+        "sha256": "667f8cb5c56697772727e181e2f0088fe3dc3f499da6568ab61e5ca884266164"
+      }
     }
   },
   "court_directory": [
@@ -1511,6 +1535,37 @@
       "language": "en",
       "publisher_member": "Michigan Legislature, public injunction, statutory pre-action notice and court waiver, venue and civil fine distinctions.",
       "effective_from": "2021-04-01"
+    },
+    "f2c19f8a988499719759153d54ba2b": {
+      "source_id": "US-MI:premises:7ff99eb158a9",
+      "authority_type": "opinion",
+      "citation": "Kandil-Elsayed v. F & E Oil, Inc., 512 Mich. 95 (2023)",
+      "text": "We conclude that Lugo was wrongly decided and must be overruled in two respects. First, we overrule Lugo’s decision to make the open and obvious danger doctrine a part of a land possessor’s duty. Rather, we hold that the open and obvious nature of a condition is relevant to breach and the parties’ comparative fault. Second, we overrule the special-aspects doctrine and hold that when a land possessor should anticipate the harm that results from an open and obvious condition, despite its obviousness, the possessor is not relieved of the duty of reasonable care. Under the new framework announced today, we conclude that while in each case the defendant owed the injured plaintiff a duty of care, genuine issues of material fact remain as to whether they breached that duty and, if so, whether the plaintiffs were comparatively at fault such that their damages must be reduced. Therefore, we reverse the judgment of the Court of Appeals affirming the trial court’s grant of summary disposition in both cases and remand for further proceedings consistent with this opinion.",
+      "text_sha256": "81f25b63e50d88067d12d49e0e35fe6d57643b150042dfbdd3d791c255cbe614",
+      "publisher_sha256": "dc1185573a45905628c30cbb1c2d1634851f572a3f2b10aa0a4096c1624ac8bd",
+      "retrieved_at": "2026-11-22T03:59:26.217744+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Michigan Supreme Court opinion issued 2023-07-28",
+      "court": "Michigan Supreme Court",
+      "publisher_member": "Michigan Supreme Court majority opinion introduction, after the reporter’s case synopsis; business invitees.",
+      "decision_date": "2023-07-28",
+      "opinion_role": "majority",
+      "procedural_posture": "Consolidated appeals after summary disposition in two invitee injury actions; reversed and remanded."
+    },
+    "e56f276adfaa500e36e4c8f3b2dcbd": {
+      "source_id": "US-MI:premises:7bb470efdaec",
+      "authority_type": "statute",
+      "citation": "2014 Mich. Pub. Acts 226, § 3",
+      "text": "Sec. 3. (1) A possessor of a fee, reversionary, or easement interest in land, including an owner, lessee, or other lawful occupant, owes no duty of care to a trespasser and is not liable to a trespasser for physical harm caused by the possessor’s failure to exercise reasonable care to put the land in a condition reasonably safe for the trespasser or to carry on activities on the land so as not to endanger trespassers. (2) Notwithstanding subsection (1), a possessor of land may be subject to liability for physical injury or death to a trespasser if any of the following apply: (a) The possessor injured the trespasser by willful and wanton misconduct. (b) The possessor was aware of the trespasser’s presence on the land, or in the exercise of ordinary care should have known of the trespasser’s presence on the land, and failed to use ordinary care to prevent injury to the trespasser arising from active negligence. (c) The possessor knew, or from facts within the possessor’s knowledge should have known, that trespassers constantly intrude on a limited area of the land and the trespasser was harmed as a result of the possessor’s failure to carry on an activity in that limited area involving a risk of death or serious bodily harm with reasonable care for the trespasser’s safety. (d) The trespasser is a child injured by an artificial condition on the land and all of the following apply: ( i ) The possessor knew or had reason to know that a child would be likely to trespass on the place where the condition existed. ( ii ) The possessor knew or had reason to know of the condition and realized or should have realized that the condition would involve an unreasonable risk of death or serious bodily harm to a child. ( iii ) The injured child, because of his or her youth, did not discover the condition or realize the risk involved in intermeddling with it or in coming within the area made dangerous by it. ( iv ) The utility to the possessor of maintaining the condition and the burden of eliminating the danger were slight as compared with the risk to the child. (v) The possessor failed to exercise reasonable care to eliminate the danger or otherwise to protect the child. (3) This section does not increase the liability of a possessor of land and does not affect any immunity from or defenses to civil liability established by or available under the statutes or common law of this state to which a possessor of land is entitled.",
+      "text_sha256": "c9fd96578487b22aea77cff9a28d300396b90b85e7a314bbc3d05c96b0a883a6",
+      "publisher_sha256": "667f8cb5c56697772727e181e2f0088fe3dc3f499da6568ab61e5ca884266164",
+      "retrieved_at": "2026-11-22T03:59:26.252298+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "2014 Michigan Public Acts",
+      "publisher_member": "Michigan enrolled and approved Trespass Liability Act, published June 26, 2014, including exceptions and retained defenses.",
+      "effective_from": "2014-06-26"
     }
   },
   "fault_allocation": {

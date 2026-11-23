@@ -591,6 +591,18 @@
         "retrieved_at": "2026-11-22T03:30:05.714686+00:00",
         "sha256": "dfc84393ca790f84357c6558fab558c5957f057d5597676991e46c7238da0278"
       }
+    },
+    "US-VA:premises:083c47197fd7": {
+      "category": "premises",
+      "title": "Franconia Assocs. v. Clark, 250 Va. 444 (1995)",
+      "url": "https://www.vacourts.gov/static/opinions/opnscvwp/1942034.pdf",
+      "locator": "Franconia Assocs. v. Clark, 250 Va. 444 (1995)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-22T03:59:26.063828+00:00",
+        "sha256": "6ebee91c9904e5d5f9abeb70cdd5489ff3a41582d8fbd1dc1d0ad4d9d3aa1dbe"
+      }
     }
   },
   "court_directory": [
@@ -1028,6 +1040,23 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Virginia Legislative Information System, public injunction by specified state and local attorneys with pre-action notice exceptions."
+    },
+    "a393c1e5f4954e97901045c771c0b1": {
+      "source_id": "US-VA:premises:083c47197fd7",
+      "authority_type": "opinion",
+      "citation": "Franconia Assocs. v. Clark, 250 Va. 444 (1995)",
+      "text": "The owner of premises is not an insurer of his invitee's safety. Rather, the owner must use ordinary care to render the premises reasonably safe for the invitee's visit. Holcombe v. NationsBanc Financial Services, 248 Va. 445, 448, 450 S.E.2d 158, 160 (1994); Tate v. Rice, 227 Va. 341, 345, 315 S.E.2d 385, 388 (1984); Gumenick v. United States, 213 Va. 510, 515, 193 S.E.2d 788, 793 (1973); Knight v. Moore, 179 Va. 139, 146, 18 S.E.2d 266, 270 (1942). The owner's duty, however, \"does not extend to places beyond the invitation and to which the invitee is not reasonably expected to go.\" City of Suffolk v. Hewitt, 226 Va. 20, 24, 307 S.E.2d 444, 446 (1983). By contrast, the duty that a property owner owes to a trespasser or bare licensee is limited. Speaking generally, the duty owing by the owner 'to a trespasser on his premises is to do him no intentional or wilful injury.' There must be such notice of the trespasser's danger as would put a prudent man on the alert before the duty of protection arises. So also with respect to a bare licensee (that is to say one who is permitted by the passive acquiescence of the owner to come on his premises for his own convenience). 'He takes upon himself all the ordinary risks attached to the place and the business carried on there.' The owner must not intentionally or wilfully injure him, but he owes him the active duty of protection only after he knows of his danger, or might have known of it and avoided it by the use of ordinary care. Appalachian Power Co. v. LaForce, 214 Va. 438, 441, 201 S.E.2d 768, 770 (1974) (quoting Lunsford v. Colonial Coal Co., 115 Va. 346, 348-49, 79 S.E. 348, 349 (1913)). In Pettyjohn & Sons v. Basham, 126 Va. 72, 79-80, 100 S.E. 813, 815 (1919), we observed: \"Usually, an invitation will be inferred where the visit is of common interest or mutual advantage to the parties, while a license will be inferred where the object is the mere pleasure or benefit of the visitor.\"",
+      "text_sha256": "5e5b599270a708cdb407ba2547e4d7916e77ef62604489be3a1d16052f228463",
+      "publisher_sha256": "6ebee91c9904e5d5f9abeb70cdd5489ff3a41582d8fbd1dc1d0ad4d9d3aa1dbe",
+      "retrieved_at": "2026-11-22T03:59:26.063828+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Supreme Court of Virginia opinion issued 1995-11-03",
+      "court": "Supreme Court of Virginia",
+      "publisher_member": "Virginia Supreme Court majority opinion, invitee scope and distinct treatment of trespassers and bare licensees.",
+      "decision_date": "1995-11-03",
+      "opinion_role": "majority",
+      "procedural_posture": "Direct appeal from a plaintiff’s premises-liability verdict after an injury during a pursuit on the defendants’ property."
     }
   },
   "fault_allocation": {
