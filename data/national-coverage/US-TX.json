@@ -802,6 +802,30 @@
         "retrieved_at": "2026-11-23T15:52:16.902935+00:00",
         "sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce"
       }
+    },
+    "US-TX:general_contract_damages:a60ec6e88148": {
+      "category": "general_contract_damages",
+      "title": "Signature Indus. Servs., LLC v. Int'l Paper Co., No. 20-0396, slip op. at 6–7 (Tex. 2022)",
+      "url": "https://www.txcourts.gov/media/1453476/200396.pdf",
+      "locator": "Signature Indus. Servs., LLC v. Int'l Paper Co., No. 20-0396, slip op. at 6–7 (Tex. 2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T20:36:08.995327+00:00",
+        "sha256": "f55c1543e30f91fa238637a7d3baf7bfd7229f6d872449789fed4384f09676a9"
+      }
+    },
+    "US-TX:general_contract_damages:991633ba646a": {
+      "category": "general_contract_damages",
+      "title": "Signature Indus. Servs., LLC v. Int'l Paper Co., No. 20-0396, slip op. at 8 (Tex. 2022)",
+      "url": "https://www.txcourts.gov/media/1453476/200396.pdf",
+      "locator": "Signature Indus. Servs., LLC v. Int'l Paper Co., No. 20-0396, slip op. at 8 (Tex. 2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T20:36:08.995327+00:00",
+        "sha256": "f55c1543e30f91fa238637a7d3baf7bfd7229f6d872449789fed4384f09676a9"
+      }
     }
   },
   "court_directory": [
@@ -1466,6 +1490,38 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "2005-09-01"
+    },
+    "e653035485eb0ea50c59aeb197d398": {
+      "source_id": "US-TX:general_contract_damages:a60ec6e88148",
+      "citation": "Signature Indus. Servs., LLC v. Int'l Paper Co., No. 20-0396, slip op. at 6–7 (Tex. 2022)",
+      "text": "Damages for breach of contract may include both direct and consequential damages. Dallas/Fort Worth Int’l Airport Bd. v. Vizant Techs., LLC, 576 S.W.3d 362, 373 (Tex. 2019). Direct damages often include restoration of “the benefit of a plaintiff’s bargain.” Quigley v. Bennett, 227 S.W.3d 51, 56 (Tex. 2007) (Brister, J., concurring). Consequential damages, on the other hand, compensate the plaintiff for foreseeable losses that were caused by the breach but were not a necessary consequence of it. Stuart v. Bayless, 964 S.W.2d 920, 921 (Tex. 1998). From at least the time of Hadley v. Baxendale, 9 Exch. 341, 156 Eng. Rep. 145 (1854), the widely recognized rule has been that consequential damages “are not recoverable unless the parties contemplated at the time they made the contract that such damages would be a probable result of the breach.” Stuart, 964 S.W.2d at 921. We call this requirement “foreseeability.” Basic Cap. Mgmt., Inc. v. Dynex Com., Inc., 348 S.W.3d 894, 901 (Tex. 2011). A foreseeable loss may either follow predictably from the breach “in the ordinary course of events” or arise from “special circumstances” that the party in breach “had reason to know.” Id. at 902. A loss that is not the “probable” consequence of the breach, from the breaching party’s perspective at the time of contracting, is not foreseeable. Mead v. Johnson Grp., Inc., 615 S.W.2d 685, 687 (Tex. 1981)",
+      "text_sha256": "7c14b9e1c2fee98ff72d98011cac75433a4f72ed0cdfa3b187ce840ce53be442",
+      "publisher_sha256": "f55c1543e30f91fa238637a7d3baf7bfd7229f6d872449789fed4384f09676a9",
+      "retrieved_at": "2026-11-23T20:36:08.995327+00:00",
+      "language": "en",
+      "authority_type": "opinion",
+      "edition": "Published slip opinion of 2022-01-14",
+      "court": "Supreme Court of Texas",
+      "decision_date": "2022-01-14",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of a contract damages verdict, including rejection of consequential company-value losses.",
+      "currentness": "historical"
+    },
+    "0063209a09a50d98c9c8a3518129d2": {
+      "source_id": "US-TX:general_contract_damages:991633ba646a",
+      "citation": "Signature Indus. Servs., LLC v. Int'l Paper Co., No. 20-0396, slip op. at 8 (Tex. 2022)",
+      "text": "Apart from foreseeability, consequential damages must also be “proved with reasonable certainty.” Phillips v. Carlton Energy Grp., LLC, 475 S.W.3d 265, 278 (Tex. 2015). “Proof need not be exact, but neither can it be speculative.” Id. The losses must be “susceptible of being established by proof to that degree of certainty which the law demands.” Sw. Battery Corp. v. Owen, 115 S.W.2d 1097, 1099 (Tex. 1938).",
+      "text_sha256": "1d4d68b168b36caf518e77083312fa2c1772a41415f6722a8a24b46c48b41e90",
+      "publisher_sha256": "f55c1543e30f91fa238637a7d3baf7bfd7229f6d872449789fed4384f09676a9",
+      "retrieved_at": "2026-11-23T20:36:08.995327+00:00",
+      "language": "en",
+      "authority_type": "opinion",
+      "edition": "Published slip opinion of 2022-01-14",
+      "court": "Supreme Court of Texas",
+      "decision_date": "2022-01-14",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of the proof of consequential damages after a jury verdict.",
+      "currentness": "historical"
     }
   },
   "fault_allocation": {

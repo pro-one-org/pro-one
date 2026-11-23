@@ -59,6 +59,14 @@
 - Added initiating civil cover-sheet bindings for Colorado JDF 601, Massachusetts SC0001 and Florida 1.997. Florida's court copy has no displayed revision, so the reference preserves that uncertainty with the capture date and digest. Thirteen forms are indexed and eight have retained form and requirement evidence.
 - The corpus has 1,433 versions, including 160 dated publisher verifications, 513 historical and 760 currentness-unresolved. There are 1,449 unsupported, 1,650 partial and 665 reference-only coverage cells. Checks are under `.local/sub230-check-*.log`.
 
+## Certified Washington law and contract remedies checkpoint
+
+- Prior exact-head checkpoint `3635d52` passed 663 local regression tests and [CI run 45217119331](https://github.com/pro-one-org/pro-one/actions/runs/45217119331), including production build and smoke.
+- The original checkout was unavailable at recovery. The pending Washington and contract-remedy edits were reconstructed against the same pushed commit in a separate checkout. All four Washington publisher files match their previously recorded SHA-256 digests.
+- Washington's publisher-certified July 12, 2024 PDFs preserve the ordinary injury and written-contract periods, comparative fault, and the distinct joint-liability statute. The certificate replay preserves the publisher's bracketed correction in RCW 4.22.070.
+- Florida, Ohio and Texas published opinions add scoped historical contract-remedy evidence. Texas distinguishes direct and consequential damages, including separate foreseeability and reasonable-certainty requirements.
+- The corpus has 1,441 authority versions, with 164 dated publisher verifications, 517 historical and 760 currentness-unresolved. There are 1,447 unsupported, 1,652 partial and 665 reference-only coverage cells. Contract damages passages span 26 jurisdictions. Recovery checks are under `.local/recovery-*.log`.
+
 ## Next priorities
 
 - Close substantive baseline gaps first. Continue personal-injury accrual and tolling, exceptions to fault regimes, ordinary contract breach and damages, and premises coverage as measured in the tracker.

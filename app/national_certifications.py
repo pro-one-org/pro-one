@@ -20,10 +20,18 @@ CERTIFIED_TYPES = {
 }
 WASHINGTON_RCW_ROOT = "https://lawfilesext.leg.wa.gov/law/RCWArchive/2026/pdf/"
 WASHINGTON_RCW_SECTIONS = {
+    "4.16.040": ("f9eec249dc1398c1e796bde0553a21b01f65b0b24ab190e324635b9308853d4d",
+                 "The following actions shall be commenced within six years"),
+    "4.16.080": ("d6281a2cad4a0a51bff55fe6a3cf6beff29962fbb6e6a04867da43ee4fe0c627",
+                 "The following actions shall be commenced within three years"),
     "4.16.170": ("723477c44b528679f1e15cabe83ec8f08ef25552d3ace454c128d295bdfea33e",
                  "For the purpose of tolling any statute of limitations"),
     "4.16.190": ("4274a90eabb0fb704103c53f747f3817fff917821524eab3681fb1a14681d723",
                  "Unless otherwise provided in this section"),
+    "4.22.005": ("fffcae1d772312a6e4caf626c0202ddbbee751e532c6fb8fb84cf3779c5ce3d6",
+                 "In an action based on fault seeking to recover damages"),
+    "4.22.070": ("e50de2aa094e9a7f0a5f9076c61367f5007fb1dc6ea9503a3aa78d12ace9dc3c",
+                 "(1) In all actions involving fault of more than one entity"),
     "19.86.080": ("630faf80fd75e2c4d55c77a5d17f47b613ff85ce4aeece9035cc22215fb472b2",
                   "(1) The attorney general may bring an action"),
     "19.86.090": ("e0b6f825333555689d7d2cfd1e88a0dbf2757d438bf1d0ee4a0cc9b931940801",
@@ -574,7 +582,9 @@ def washington_rcw_basis(url, digest, section, citation, quote):
     text = " ".join(pages[0].extract_text().split())
     footer = f"Certified on 7/12/2024 RCW {section} Page 1"
     start = spec[1]
-    body, history, _ = text.partition(" [")
+    # Section 4.22.070 contains a bracketed correction in the operative text.
+    history = re.search(r" \[\d{4} c " if section == "4.22.070" else r" \[", text)
+    body = text[:history.start()] if history else ""
     if (not text.startswith(f"RCW {section} ") or not text.endswith(footer)
             or not history or body.count(start) != 1 or quote != body[body.index(start):]):
         raise ValueError("certified_excerpt_or_date_mismatch")

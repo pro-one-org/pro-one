@@ -23,6 +23,19 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_washington_certified_fault_and_joint_liability_are_separate_topics(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Washington", legal_area="torts",
+                               topics=["fault_allocation"], authority_status="current_as_of", authority_as_of="2024-07-12")
+        fault, = provider.search(query)
+        self.assertIn("but does not bar recovery", provider.fetch(fault).text)
+        allocation, = provider.search(query.model_copy(update={"topics": ["joint_several_liability"]}))
+        text = provider.fetch(allocation).text
+        self.assertIn("entities immune from liability to the claimant under Title 51 RCW", text)
+        self.assertIn("claimants [claimant's] total damages", text)
+        self.assertIn("cause of action arising from the tortious interference with contracts", text)
+        self.assertNotEqual(fault, allocation)
+
     def test_new_york_fault_amendment_keeps_the_commencement_date_and_prior_text(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="New York", legal_area="torts",
