@@ -461,6 +461,18 @@
         "retrieved_at": "2026-11-22T03:05:43.958913+00:00",
         "sha256": "d6da300d8eacbc7ec8a819976b4ff409e55332923d507e190c68a0943a4bfb3a"
       }
+    },
+    "US-MO:contract_accrual:20925b2c3274": {
+      "category": "contract_accrual",
+      "title": "Smock v. Associated Electric Cooperative, Inc., No. WD81326, slip op. at 6 (Mo. Ct. App. 2018)",
+      "url": "https://www.courts.mo.gov/file/WD/Opinion_WD81326.pdf",
+      "locator": "Smock v. Associated Electric Cooperative, Inc., No. WD81326, slip op. at 6 (Mo. Ct. App. 2018)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:19:07.111071+00:00",
+        "sha256": "06eb3a2bd41c7fc707dee68fe8b6e9b91f3f041f521c5cc531f1073953efb9c3"
+      }
     }
   },
   "court_directory": [
@@ -845,6 +857,23 @@
       "opinion_role": "majority",
       "procedural_posture": "Appeal after bench trial on a failed real-estate sale; affirmed, with contractual attorney fees awarded on appeal.",
       "publisher_member": "Slip opinion page 18; general contract elements in a land-sale dispute"
+    },
+    "bf8d3a5d428332e89d6ecc0f10f2c9": {
+      "source_id": "US-MO:contract_accrual:20925b2c3274",
+      "citation": "Smock v. Associated Electric Cooperative, Inc., No. WD81326, slip op. at 6 (Mo. Ct. App. 2018)",
+      "text": "Accrual takes place not “when the wrong is done or the technical breach of contract or duty occurs, but when the damage resulting therefrom is sustained and is capable of ascertainment.” § 516.100. “Damage is capable of ascertainment when it can be discovered or is made known, even if its extent remains unknown.” D’Arcy, 129 S.W.3d at 29.",
+      "text_sha256": "08acf5059cab00d736e59d4a30dc8cb789e75c52bc517e385e4806be7cdb5b64",
+      "publisher_sha256": "06eb3a2bd41c7fc707dee68fe8b6e9b91f3f041f521c5cc531f1073953efb9c3",
+      "retrieved_at": "2026-11-23T21:19:07.111071+00:00",
+      "language": "en",
+      "authority_type": "opinion",
+      "currentness": "historical",
+      "edition": "Court-published opinion, modified December 18, 2018",
+      "court": "Missouri Court of Appeals, Western District",
+      "decision_date": "2018-11-13",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment on limitations in an easement-related contract and tort action.",
+      "scope_notes": "Applies Missouri section 516.100 to ascertainable damage. Review claim-specific exceptions and the period applicable to the form of obligation."
     }
   },
   "fault_allocation": {

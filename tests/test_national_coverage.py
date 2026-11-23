@@ -727,6 +727,22 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
                                                                   "authority_as_of": "2026-11-23"})))
 
+    def test_louisiana_payment_prescription_and_missouri_accrual_stay_separate(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Louisiana", legal_area="contracts",
+                               topics=["contract_accrual"], authority_status="unresolved")
+        key, = provider.search(query)
+        doc = provider.fetch(key)
+        self.assertIn("payment is exigible", doc.text)
+        self.assertTrue(any("three-year prescription" in note for passage in doc.passages
+                            for note in passage["limitations"]))
+        special, = provider.search(query.model_copy(update={"topics": ["contract_limitations"]}))
+        self.assertIn("An action on an open account", provider.fetch(special).text)
+        self.assertNotEqual(key, special)
+        missouri, = provider.search(query.model_copy(update={"state": "Missouri", "authority_status": "historical"}))
+        self.assertIn("sustained and is capable of ascertainment", provider.fetch(missouri).text)
+        self.assertNotEqual(key, missouri)
+
     def test_colorado_contract_records_keep_breach_damages_and_accrual_separate(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Colorado", legal_area="contracts",

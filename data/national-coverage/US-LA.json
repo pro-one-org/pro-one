@@ -506,6 +506,30 @@
         "retrieved_at": "2026-11-23T21:07:07.261544+00:00",
         "sha256": "c2db7f50a67e2e1123b9d3f281a069a2934670aee0107fe0f950ccb22b131a56"
       }
+    },
+    "US-LA:general_contract_limitations:d36684b94b37": {
+      "category": "general_contract_limitations",
+      "title": "La. Civ. Code art. 3494",
+      "url": "https://www.legis.la.gov/legis/Law.aspx?d=110518",
+      "locator": "La. Civ. Code art. 3494",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:18:28.782017+00:00",
+        "sha256": "ea8594b05fb97c43d60434d38830f7098b7f937e6102c8449b91d5fe20b72220"
+      }
+    },
+    "US-LA:contract_accrual:416ae408d959": {
+      "category": "contract_accrual",
+      "title": "La. Civ. Code art. 3495",
+      "url": "https://www.legis.la.gov/legis/Law.aspx?d=110519",
+      "locator": "La. Civ. Code art. 3495",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:18:44.214869+00:00",
+        "sha256": "e0a68ffcf98268ac04f082bf3314aa5c972a479c02cd6118a9189920d42a91ed"
+      }
     }
   },
   "court_directory": [
@@ -949,6 +973,30 @@
       "effective_from": "2024-07-01",
       "edition": "Enrolled Louisiana House Bill 315, Act No. 423, 2024 regular session",
       "scope_notes": "Prospective applicability of the 2024 two-year prescription act. The act expressly applies to delictual actions arising after its July 1, 2024 effective date. The passage does not calculate an individual deadline."
+    },
+    "55231381d2bc45cf05b614078159d1": {
+      "source_id": "US-LA:general_contract_limitations:d36684b94b37",
+      "citation": "La. Civ. Code art. 3494",
+      "text": "The following actions are subject to a liberative prescription of three years: (1) An action for the recovery of compensation for services rendered, including payment of salaries, wages, commissions, professional fees, fees and emoluments of public officials, freight, passage, money, lodging, and board; (2) An action for arrearages of rent and annuities; (3) An action on money lent; (4) An action on an open account; and (5) An action to recover underpayments or overpayments of royalties from the production of minerals, provided that nothing herein applies to any payments, rent, or royalties derived from state-owned properties.",
+      "text_sha256": "4d5b97a18b77ec386e5cdfddec079f9eb76feb3c6a81e17c51c58edb20732d72",
+      "publisher_sha256": "ea8594b05fb97c43d60434d38830f7098b7f937e6102c8449b91d5fe20b72220",
+      "retrieved_at": "2026-11-23T21:18:28.782017+00:00",
+      "language": "en",
+      "authority_type": "statute",
+      "currentness": "unresolved",
+      "scope_notes": "Three-year prescription for the listed claims. Verify whether the pleaded obligation falls within the list before applying the period."
+    },
+    "8d902786728f7aef53c16515ebebcc": {
+      "source_id": "US-LA:contract_accrual:416ae408d959",
+      "citation": "La. Civ. Code art. 3495",
+      "text": "This prescription commences to run from the day payment is exigible. It accrues as to past due payments even if there is a continuation of labor, supplies, or other services.",
+      "text_sha256": "d2445412cf6fc2cfd30e48ce48539e0c538af0c10718b0872d4d9b490f3d185b",
+      "publisher_sha256": "e0a68ffcf98268ac04f082bf3314aa5c972a479c02cd6118a9189920d42a91ed",
+      "retrieved_at": "2026-11-23T21:18:44.214869+00:00",
+      "language": "en",
+      "authority_type": "statute",
+      "currentness": "unresolved",
+      "scope_notes": "Accrual for the three-year prescription chapter. Past due payments accrue separately despite continued labor, supplies, or services."
     }
   },
   "fault_allocation": {

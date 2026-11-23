@@ -106,6 +106,12 @@
 - Seventeen jurisdictions now have premises evidence. The corpus has 1,463 authority versions, including 164 dated publisher verifications, 527 historical and 772 currentness-unresolved. Of 3,764 coverage cells, 1,434 are unsupported, 1,664 partial and 666 reference-only.
 - The full suite and [CI for `3f6e932`](https://github.com/pro-one-org/pro-one/actions/runs/45267131062) found a Wisconsin isolation test that assumed there was no local premises evidence. The regression now checks that the original authority cannot cross into Wisconsin and that every Wisconsin result belongs to Wisconsin. Checks are recorded under `.local/ri-vt-final-*.log`.
 
+## Louisiana and Missouri contract prescription and accrual
+
+- Checkpoint `75a3889` passed 671 local tests, both national coverage benchmarks, 37 mapped evaluations and [exact-head CI](https://github.com/pro-one-org/pro-one/actions/runs/45267983778), including production build and smoke. A separate retained-publisher adversarial run matched 30 added passages and rejected 120 wrong-jurisdiction, wrong-family, invented-citation or unsupported-currentness queries without a leak.
+- Louisiana articles 3494 and 3495 distinguish the listed three-year prescription claims and the accrual of past-due payments. Missouri's published Smock opinion supports ascertainable damages in its stated claims context. The Louisiana text remains currentness-unresolved and the Missouri decision remains historical.
+- Four jurisdictions now have separately indexed contract-accrual evidence. The corpus has 1,466 authority versions, including 164 dated publisher verifications, 528 historical and 774 currentness-unresolved. Of 3,764 coverage cells, 1,434 are unsupported, 1,664 partial and 666 reference-only. Checks are recorded under `.local/payment-accrual-final-*.log`.
+
 ## Next priorities
 
 - Close substantive baseline gaps first. Continue personal-injury accrual and tolling, exceptions to fault regimes, ordinary contract breach and damages, and premises coverage as measured in the tracker.
