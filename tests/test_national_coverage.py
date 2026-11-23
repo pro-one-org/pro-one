@@ -152,6 +152,24 @@ class NationalCoverageTests(unittest.TestCase):
             self.assertEqual(form["requirement_citation"], "Utah Rules of Small Claims Procedure 1(c)")
             self.assertEqual(form["automated_completion"], "disabled")
 
+    def test_iowa_and_maine_small_claim_forms_require_the_scoped_official_form(self):
+        for scope, identifier, citation, applicability in (
+            ("US-IA", "3.1", "Iowa Code § 631.15", "defendant who lives in Iowa"),
+            ("US-ME", "SC-001", "M.R.S.C.P. 2(a)–(b)", "Maine District Court"),
+        ):
+            with self.subTest(scope=scope):
+                shells = {row["action_type"]: row for row in coverage(scope)["action_shells"]}
+                claim = shells["small_claim"]
+                form, = claim["official_form_references"]
+                self.assertEqual(identifier, form["publisher_identifier"])
+                self.assertIn(citation, form["requirement_citation"])
+                self.assertIn(applicability, form["applicability"])
+                self.assertEqual("required_for_stated_scope", form["requirement_level"])
+                self.assertEqual("unresolved", form["requirement_currentness"])
+                self.assertEqual("disabled", form["automated_completion"])
+                self.assertEqual(("blocked", "disabled"), (claim["readiness"], claim["execution"]))
+                self.assertFalse(shells["complaint"]["official_form_references"])
+
     def test_connecticut_civil_summons_is_scoped_to_the_complaint_path(self):
         shells = {row["action_type"]: row for row in coverage("US-CT")["action_shells"]}
         form, = shells["complaint"]["official_form_references"]

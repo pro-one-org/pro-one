@@ -599,6 +599,42 @@
         "retrieved_at": "2026-11-20T16:01:53.279860+00:00",
         "sha256": "263f9b45c296db9ad9f3dbafabefcd6106373baedddce38e326ecde5387584d0"
       }
+    },
+    "US-ME:small_claims:980b69e5f223": {
+      "category": "small_claims",
+      "title": "M.R.S.C.P. 2(a)–(b) (Nov. 1, 2024 compilation)",
+      "url": "https://www.courts.maine.gov/rules/text/mrscp%202024-11-01.pdf",
+      "locator": "M.R.S.C.P. 2(a)–(b) (Nov. 1, 2024 compilation)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:27:33.586197+00:00",
+        "sha256": "d3617f17542422a71eaf7e4fc982b4d84ad7c594e98e4ad145eb63fa9721d6af"
+      }
+    },
+    "US-ME:small_claim_form:595dabc9bb65": {
+      "category": "small_claim_form",
+      "title": "Statement of Claim (Small Claims)",
+      "url": "https://mjbportal.courts.maine.gov/CourtForms/FormsLists/DownloadForm?strFormNumber=SC-001",
+      "locator": "Statement of Claim (Small Claims)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:27:32.611665+00:00",
+        "sha256": "2a5b31cfe79df2e90c6b98b5bdb9f8ae0818d4f75f44f91fe35b37004e2490c7"
+      }
+    },
+    "US-ME:small_claim_form_index:a854b269cebc": {
+      "category": "small_claim_form_index",
+      "title": "Maine District Court, small-claims filing instructions",
+      "url": "https://www.courts.maine.gov/help/guides/sc-guide-2026.pdf",
+      "locator": "Maine District Court, small-claims filing instructions",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:27:33.181202+00:00",
+        "sha256": "ef9d5e36c980dc5f2317f5d181cdd8c5409101fc99a5762497c91f2afaf93f6e"
+      }
     }
   },
   "court_directory": [
@@ -1145,6 +1181,19 @@
       "current_as_of": "2026-06-01",
       "publisher_path": "e153851c48b778afde11f331dc91ea49fa91a02ad0cc3cf038d5627126d45f01",
       "publisher_member": "Claims for relief, including counterclaims and cross-claims."
+    },
+    "5f90e1a5d2d6c37a53cc4e4c9605e8": {
+      "source_id": "US-ME:small_claims:980b69e5f223",
+      "citation": "M.R.S.C.P. 2(a)–(b) (Nov. 1, 2024 compilation)",
+      "text": "(a) Commencement by Filing; Fee. A small claims action is commenced by filing a statement of claim with the court on a form to be provided by the court and by payment to the clerk of a filing fee specified in the Court Fee Schedule. (b) Waiver of Fees. The plaintiff may file an in forma pauperis application for waiver of the filing and service fees. If the court finds that the plaintiff does not have sufficient funds to pay such fee or fees, it shall order waiver thereof.",
+      "text_sha256": "3d9d77deaac3deea8ac6dec2b5fef27478223575f576b9a0476b66581ea1c71a",
+      "publisher_sha256": "d3617f17542422a71eaf7e4fc982b4d84ad7c594e98e4ad145eb63fa9721d6af",
+      "retrieved_at": "2026-11-23T21:27:33.586197+00:00",
+      "language": "en",
+      "authority_type": "court_rule",
+      "currentness": "unresolved",
+      "edition": "Maine Rules of Small Claims Procedure, November 1, 2024",
+      "court": "Maine District Court"
     }
   },
   "fault_allocation": {
@@ -1153,5 +1202,23 @@
     "source_id": "US-ME:fault:15d129a1ef82",
     "currentness": "unresolved",
     "qualification": "The rule contains an equal-fault bar, a just-and-equitable reduction stated in dollars and cents, and separate provisions for released defendants and multiple parties."
+  },
+  "forms": {
+    "US-ME:form:SC-001": {
+      "title": "Statement of Claim (Small Claims)",
+      "publisher_identifier": "SC-001",
+      "source_id": "US-ME:small_claim_form:595dabc9bb65",
+      "index_source_id": "US-ME:small_claim_form_index:a854b269cebc",
+      "index_sha256": "ef9d5e36c980dc5f2317f5d181cdd8c5409101fc99a5762497c91f2afaf93f6e",
+      "court_scope": "Maine District Court",
+      "mandatory": "required_for_stated_scope",
+      "revision": "2021-10",
+      "last_observed": "2026-11-23T21:27:32.611665+00:00",
+      "automated_completion": "disabled",
+      "form_sha256": "2a5b31cfe79df2e90c6b98b5bdb9f8ae0818d4f75f44f91fe35b37004e2490c7",
+      "action_type": "small_claim",
+      "requirement_passage_selector": "5f90e1a5d2d6c37a53cc4e4c9605e8",
+      "applicability": "Plaintiff commencing a small-claims case in Maine District Court. Review the court's fee or waiver and locally applicable filing and service procedures; the respondent uses a separate path."
+    }
   }
 }

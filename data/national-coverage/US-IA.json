@@ -586,6 +586,42 @@
         "retrieved_at": "2026-11-22T04:03:03.991950+00:00",
         "sha256": "3b4594d772a2a9ee9e9729f0c954d3c956c62fd4ef9bd2c0cf85883ea7848f61"
       }
+    },
+    "US-IA:small_claims:c9de7248690d": {
+      "category": "small_claims",
+      "title": "Iowa Code § 631.15 (2026 ed.)",
+      "url": "https://www.legis.iowa.gov/docs/code/2026/631.15.pdf",
+      "locator": "Iowa Code § 631.15 (2026 ed.)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:28:04.526660+00:00",
+        "sha256": "a418c6efc46b014afc7fd9281b1c061dada6d92c9bc48a06c3984b1678c6e816"
+      }
+    },
+    "US-IA:small_claim_form:27dc67a2923f": {
+      "category": "small_claim_form",
+      "title": "Original Notice and Petition for a Money Judgment",
+      "url": "https://www.iowacourts.gov/collections/304/files/535/embedDocument",
+      "locator": "Original Notice and Petition for a Money Judgment",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:27:31.365323+00:00",
+        "sha256": "877737f3bb3e5d5297b26ab3604fac0ffb78deb7d09295f37c27b5ef4575894c"
+      }
+    },
+    "US-IA:small_claim_form_index:15dc53746520": {
+      "category": "small_claim_form_index",
+      "title": "Iowa District Court, small claims, small-claims filing instructions",
+      "url": "https://www.iowacourts.gov/browse/files/cc85952321f54914bf6ba14535b8ac9d/download",
+      "locator": "Iowa District Court, small claims, small-claims filing instructions",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:27:31.629421+00:00",
+        "sha256": "6c026753496324568630dbfd88f28122de6057168f5b8841ccdee3835ae150a0"
+      }
     }
   },
   "court_directory": [
@@ -991,6 +1027,19 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Iowa Code 2026, enumerated grounds for summary possession remedies; separate notice, service and hearing provisions apply."
+    },
+    "537164270062339a5d409cff80fd44": {
+      "source_id": "US-IA:small_claims:c9de7248690d",
+      "citation": "Iowa Code § 631.15 (2026 ed.)",
+      "text": "The supreme court shall prescribe standard forms of pleadings to be used in small claims actions. Standard forms promulgated by the supreme court shall be the exclusive forms used.",
+      "text_sha256": "c3ce15f22f7ef6e5a345da157353f1814705320277dcb5ac35a4634fe9072000",
+      "publisher_sha256": "a418c6efc46b014afc7fd9281b1c061dada6d92c9bc48a06c3984b1678c6e816",
+      "retrieved_at": "2026-11-23T21:28:04.526660+00:00",
+      "language": "en",
+      "authority_type": "statute",
+      "currentness": "unresolved",
+      "edition": "Iowa Code 2026",
+      "court": "Iowa District Court, small claims"
     }
   },
   "fault_allocation": {
@@ -999,5 +1048,23 @@
     "source_id": "US-IA:fault:f3b39ea29516",
     "currentness": "unresolved",
     "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  },
+  "forms": {
+    "US-IA:form:3.1": {
+      "title": "Original Notice and Petition for a Money Judgment",
+      "publisher_identifier": "3.1",
+      "source_id": "US-IA:small_claim_form:27dc67a2923f",
+      "index_source_id": "US-IA:small_claim_form_index:15dc53746520",
+      "index_sha256": "6c026753496324568630dbfd88f28122de6057168f5b8841ccdee3835ae150a0",
+      "court_scope": "Iowa District Court, small claims",
+      "mandatory": "required_for_stated_scope",
+      "revision": "unresolved",
+      "last_observed": "2026-11-23T21:27:31.365323+00:00",
+      "automated_completion": "disabled",
+      "form_sha256": "877737f3bb3e5d5297b26ab3604fac0ffb78deb7d09295f37c27b5ef4575894c",
+      "action_type": "small_claim",
+      "requirement_passage_selector": "537164270062339a5d409cff80fd44",
+      "applicability": "Plaintiff seeking a small-claims money judgment against a defendant who lives in Iowa. Review separate forms for nonresident defendants, other kinds of relief, and any required supporting forms. The publisher PDF does not display a revision date."
+    }
   }
 }

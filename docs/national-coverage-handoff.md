@@ -118,6 +118,11 @@
 - Kentucky's Phelps opinion distinguishes open-and-obvious danger from the requirement to prove the hazard. Minnesota's Foss opinion separately preserves reasonable care toward invitees and the effect of child supervision and foreseeability. West Virginia's Gable opinion preserves the factual defense and the limits of a motion to dismiss. The three opinions remain historical.
 - Twenty jurisdictions now have premises evidence. The corpus has 1,470 versions, including 164 dated publisher verifications, 532 historical and 774 currentness-unresolved. Of 3,764 coverage cells, 1,428 are unsupported, 1,670 partial and 666 reference-only. Checks are recorded under `.local/premises-ky-mn-wv-*.log`.
 
+## Iowa and Maine small-claims forms
+
+- Maine SC-001, revised October 2021, is the statement of claim identified in the 2026 court guide and supported by Rule 2(a)–(b). Iowa Form 3.1 implements the exclusive-form statute for the money-judgment path against an in-state defendant. The Iowa publisher PDF leaves revision unresolved. Both official forms are limited to their stated initiating paths and retain disabled completion and execution.
+- Sixteen forms are indexed and eleven have both a verified artifact and a retained applicability requirement. There are 1,472 authority versions, including 164 dated publisher verifications, 532 historical and 776 currentness-unresolved. There are 1,426 unsupported, 1,670 partial and 668 reference-only cells. Checks are logged under `.local/me-ia-final-*.log`.
+
 ## Next priorities
 
 - Close substantive baseline gaps first. Continue personal-injury accrual and tolling, exceptions to fault regimes, ordinary contract breach and damages, and premises coverage as measured in the tracker.
