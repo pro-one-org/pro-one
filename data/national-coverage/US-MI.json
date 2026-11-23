@@ -798,6 +798,18 @@
       "url": "https://www.courts.michigan.gov/siteassets/rules-instructions-administrative-orders/michigan-court-rules/michigan-court-rules-responsive-html5.zip/Michigan_Court_Rules/Court_Rules_Chapter_2/Court_Rules_Chapter_2.htm",
       "directory": null,
       "locator": "Chapter 2, Civil Procedure"
+    },
+    "US-MI:tolling:99ff92463c0b": {
+      "category": "tolling",
+      "title": "Mich. Comp. Laws § 600.5851(1)–(5)",
+      "url": "https://www.legislature.mi.gov/documents/mcl/pdf/mcl-600-5851.pdf",
+      "locator": "Mich. Comp. Laws § 600.5851(1)–(5)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:50:28.157848+00:00",
+        "sha256": "ea5949b5f19f80e65416b3bbc2c1010716da3690ceba090648303194689c382a"
+      }
     }
   },
   "court_directory": [
@@ -1573,6 +1585,18 @@
       "edition": "2014 Michigan Public Acts",
       "publisher_member": "Michigan enrolled and approved Trespass Liability Act, published June 26, 2014, including exceptions and retained defenses.",
       "effective_from": "2014-06-26"
+    },
+    "d10ac07f8787f56d19383340961bb8": {
+      "source_id": "US-MI:tolling:99ff92463c0b",
+      "authority_type": "statute",
+      "citation": "Mich. Comp. Laws § 600.5851(1)–(5)",
+      "text": "(1) Except as otherwise provided in subsections (7) and (8), if the person first entitled to make an entry or bring an action under this act is under 18 years of age or insane at the time the claim accrues, the person or those claiming under the person shall have 1 year after the disability is removed through death or otherwise, to make the entry or bring the action although the period of limitations has run. This section does not lessen the time provided for in section 5852. (2) The term insane as employed in this chapter means a condition of mental derangement such as to prevent the sufferer from comprehending rights he or she is otherwise bound to know and is not dependent on whether or not the person has been judicially declared to be insane. (3) To be considered a disability, the infancy or insanity must exist at the time the claim accrues. If the disability comes into existence after the claim has accrued, a court shall not recognize the disability under this section for the purpose of modifying the period of limitations. (4) A person shall not tack successive disabilities. A court shall recognize only those disabilities that exist at the time the claim first accrues and that disable the person to whom the claim first accrues for the purpose of modifying the period of limitations. (5) A court shall recognize both of the disabilities of infancy or insanity that disable the person to whom the claim first accrues at the time the claim first accrues. A court shall count the year of grace provided in this section from the termination of the last disability to the person to whom the claim originally accrued that has continued from the time the claim accrued, whether this disability terminates because of the death of the person disabled or for some other reason.",
+      "text_sha256": "97710c455d5a6e02bb3c395480bed761a985daa93f57e0f5cdb6433a73ddced3",
+      "publisher_sha256": "ea5949b5f19f80e65416b3bbc2c1010716da3690ceba090648303194689c382a",
+      "retrieved_at": "2026-11-23T15:50:28.157848+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Michigan Compiled Laws through 2026 PA 114, rendered October 25, 2026"
     }
   },
   "fault_allocation": {

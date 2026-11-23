@@ -501,6 +501,30 @@
         "retrieved_at": "2026-11-22T03:34:45.789718+00:00",
         "sha256": "3e5fee7b05d3d0f0ecee08c21144b10adb7f840de6c1f7dd240d37ac0b32d5d0"
       }
+    },
+    "US-IL:tolling:a4bffb5b5557": {
+      "category": "tolling",
+      "title": "Giles v. Parks, 2018 IL App (1st) 163152, ¶ 15",
+      "url": "https://www.illinoiscourts.gov/Resources/52fdd82f-1666-49ee-9f0b-3bec6d19614c/1163152.pdf",
+      "locator": "Giles v. Parks, 2018 IL App (1st) 163152, ¶ 15",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:50:29.700805+00:00",
+        "sha256": "40c2f85fb038835f1ba5f16f4f42ade5e303eab3520a62901e93f99cda023484"
+      }
+    },
+    "US-IL:tolling:c54c035cdc45": {
+      "category": "tolling",
+      "title": "Zayed v. Clark Manor Convalescent Center, Inc., 2019 IL App (1st) 181552, ¶¶ 29–30",
+      "url": "https://www.illinoiscourts.gov/Resources/09d595f7-da2c-4ea4-b9b4-5001e1337434/1181552.pdf",
+      "locator": "Zayed v. Clark Manor Convalescent Center, Inc., 2019 IL App (1st) 181552, ¶¶ 29–30",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:50:29.783227+00:00",
+        "sha256": "1a5706e8838efcf8fb2f013c01a1983921c7994f5188ecf438492274ba65f672"
+      }
     }
   },
   "court_directory": [
@@ -924,6 +948,38 @@
       "decision_date": "2001-10-10",
       "opinion_role": "majority",
       "procedural_posture": "Appeal in a construction-contract and mechanic’s lien dispute, including whether expert fees are recoverable under the contract."
+    },
+    "265daeda06f937d4d261de05a79b0e": {
+      "source_id": "US-IL:tolling:a4bffb5b5557",
+      "authority_type": "opinion",
+      "citation": "Giles v. Parks, 2018 IL App (1st) 163152, ¶ 15",
+      "text": "The statute dealing with legal disability is specific to and only applies to the person suffering from the disability. Section 13-211 states that “[i]f the person entitled to bring an action” is under a legal disability, then “he or she may bring the action within 2 years after the *** disability is removed.” (Emphases added). Id. § 13-211. The statute contemplates both that the disability be removed at some point and that the injured party bring the action that would otherwise be time barred. Id. The statute does not contemplate a representative bringing any action at all, let alone an action two years after the disability is removed. Fess v. Parke, Davis & Co., 113 Ill. App. 3d 133, 135 (1983) (the person under a disability, and “only that person[,] may bring an action within two years after the disability is removed”); see also Swider v. Holy Cross Hospital, 146 Ill. App. 3d 740, 742 (1986).",
+      "text_sha256": "993f6b454d1955fe21a6ccc81809c7688b3a3e2ec549d0f278dc2c81c2069125",
+      "publisher_sha256": "40c2f85fb038835f1ba5f16f4f42ade5e303eab3520a62901e93f99cda023484",
+      "retrieved_at": "2026-11-23T15:50:29.700805+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Official Reports, February 5, 2018",
+      "court": "Illinois Appellate Court, First District, First Division",
+      "decision_date": "2018-02-05",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissal of a survival action. A different First District division disagreed in Zayed."
+    },
+    "d3d53e52e9f9a11a8d0ccc5957f05d": {
+      "source_id": "US-IL:tolling:c54c035cdc45",
+      "authority_type": "opinion",
+      "citation": "Zayed v. Clark Manor Convalescent Center, Inc., 2019 IL App (1st) 181552, ¶¶ 29–30",
+      "text": "Section 13-209 provides that a representative may commence an action either “before the expiration of the time limited for commencement” —which, in the case of a disabled person, includes two years after he or she is no longer under a disability—or “one year from his or her death, whichever date is later.” Two years is obviously later than one year, so the two-year limit applies in this case. ¶ 30 Interpreting the two rules together, as we are required to do, there is no conflict between them, and the deceased’s representative had two years from the date of death to file this action, which she did.",
+      "text_sha256": "ad68271a0c7efd77c37e76286dc86c44c41b473dddae53aec8fcda3d741cb9ce",
+      "publisher_sha256": "1a5706e8838efcf8fb2f013c01a1983921c7994f5188ecf438492274ba65f672",
+      "retrieved_at": "2026-11-23T15:50:29.783227+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Illinois Official Reports, September 26, 2019",
+      "court": "Illinois Appellate Court, First District, Fourth Division",
+      "decision_date": "2019-09-26",
+      "opinion_role": "majority",
+      "procedural_posture": "Reversal of dismissal of a survival action. The panel expressly disagreed with Giles."
     }
   },
   "fault_allocation": {

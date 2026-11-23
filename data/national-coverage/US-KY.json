@@ -442,6 +442,18 @@
         "retrieved_at": "2026-11-22T03:40:08.039985+00:00",
         "sha256": "2ece3377951fcd848779a7f62958ec6d9f31a42fa627bf71318b999f14dff797"
       }
+    },
+    "US-KY:tolling:d839f56ee82a": {
+      "category": "tolling",
+      "title": "Ky. Rev. Stat. § 413.170(1)",
+      "url": "https://apps.legislature.ky.gov/law/Statutes/statute.aspx?id=17873",
+      "locator": "Ky. Rev. Stat. § 413.170(1)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-20T15:18:10.026493+00:00",
+        "sha256": "73b93b36d3c61e592f831a0bbfa82859fa4a8e3e2e96bb8dbf62c8407c1549ad"
+      }
     }
   },
   "court_directory": [
@@ -827,6 +839,18 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Kentucky Legislature, optional assignment in trust at employee’s written request under specified wage statutes."
+    },
+    "6d340a75c6aec5fef9318236bee312": {
+      "source_id": "US-KY:tolling:d839f56ee82a",
+      "authority_type": "statute",
+      "citation": "Ky. Rev. Stat. § 413.170(1)",
+      "text": "(1) If a person entitled to bring any action mentioned in KRS 413.090 to 413.160, except for a penalty or forfeiture, was, at the time the cause of action accrued, an infant or of unsound mind, the action may be brought within the same number of years after the removal of the disability or death of the person, whichever happens first, allowed to a person without the disability to bring the action after the right accrued.",
+      "text_sha256": "5336208a2c66ff8093c2baf7acf607ddcb0b40a8824350480c75f49c5e7c2c70",
+      "publisher_sha256": "73b93b36d3c61e592f831a0bbfa82859fa4a8e3e2e96bb8dbf62c8407c1549ad",
+      "retrieved_at": "2026-11-20T15:18:10.026493+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1942-10-01"
     }
   },
   "fault_allocation": {

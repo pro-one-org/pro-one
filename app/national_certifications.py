@@ -45,6 +45,7 @@ DC_CODE_NAMESPACE = {"dc": "https://code.dccouncil.us/schemas/dc-library"}
 DC_CODE_INDEX_DIGEST = "3ed269628b4a6251a05b54014ac05c7ed9a5ab685f99aad1d289251a444ffa83"
 DC_CODE_SECTION_DIGESTS = {
     "12-301": "f5c090634e28f9d8972bd7b0ffcdb6a7aa6f1e4ae1ac6a743a8927f750c2b0fd",
+    "12-302": "1e574ea167fb9cad577621bf575033275ab6adf4e78bce8bfa8b1c3e0b768882",
     "16-2702": "61133924975cd7716f8702995a7795224cbf2aa5ff21c764374fda6a6920d208",
     "28-3814": "25912889f044e37848acad8057226d8260b436e7a332fb5ecd5072a82995b30f",
     "28-3905": "fc1e3afd2361b0f70a66b031c3f97ae6f318184ce3992cee678feb274c153300",
@@ -54,6 +55,8 @@ DC_CODE_SECTION_DIGESTS = {
 }
 DC_CODE_PASSAGES = {
     "12-301(a)(7)": ("12-301", ("[(a)]", "(7)")),
+    "12-302(a)": ("12-302", ("(a)",)),
+    "12-302(b)": ("12-302", ("(b)",)),
     "16-2702": ("16-2702", ()),
     "28-3814(o)": ("28-3814", ("(o)",)),
     "28-3814(q)": ("28-3814", ("(q)",)),
@@ -500,10 +503,11 @@ def dc_code_paragraph(node):
     ns = DC_CODE_NAMESPACE
     if node.get("placeholder"):
         raise ValueError("certified_version_requires_effective_date_review")
-    return " ".join(part for part in (
-        dc_code_text(node.find("dc:num", ns)), *(dc_code_text(text) for text in node.findall("dc:text", ns)),
-        *(dc_code_paragraph(child) for child in node.findall("dc:para", ns)),
-    ) if part)
+    text_tags = {f"{{{ns['dc']}}}{tag}" for tag in ("num", "text", "aftertext")}
+    paragraph_tag = f"{{{ns['dc']}}}para"
+    parts = [dc_code_paragraph(child) if child.tag == paragraph_tag else dc_code_text(child)
+             for child in node if child.tag == paragraph_tag or child.tag in text_tags]
+    return " ".join(filter(None, parts))
 
 
 def dc_code_passage(digest, section, selectors):

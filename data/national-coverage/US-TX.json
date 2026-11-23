@@ -778,6 +778,30 @@
         "retrieved_at": "2026-11-22T03:59:26.470090+00:00",
         "sha256": "9e34eae681c95e1522f1786986071f3961dab3d4ae6e574abd7483d5ba098281"
       }
+    },
+    "US-TX:tolling:ef80ee046c3b": {
+      "category": "tolling",
+      "title": "Tex. Civ. Prac. & Rem. Code § 16.001",
+      "url": "https://tcss.legis.texas.gov/resources/CP/pdf/CP.16.pdf",
+      "locator": "Tex. Civ. Prac. & Rem. Code § 16.001",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:52:16.902935+00:00",
+        "sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce"
+      }
+    },
+    "US-TX:accrual:26e9fef80e2c": {
+      "category": "accrual",
+      "title": "Tex. Civ. Prac. & Rem. Code § 16.0031",
+      "url": "https://tcss.legis.texas.gov/resources/CP/pdf/CP.16.pdf",
+      "locator": "Tex. Civ. Prac. & Rem. Code § 16.0031",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:52:16.902935+00:00",
+        "sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce"
+      }
     }
   },
   "court_directory": [
@@ -1418,6 +1442,30 @@
       "decision_date": "2015-06-12",
       "opinion_role": "majority",
       "procedural_posture": "Answered a Fifth Circuit certified question in an employee’s premises claim involving a nonsubscribing employer."
+    },
+    "0b865d9fc46d75eb64a93edb29ad1b": {
+      "source_id": "US-TX:tolling:ef80ee046c3b",
+      "authority_type": "statute",
+      "citation": "Tex. Civ. Prac. & Rem. Code § 16.001",
+      "text": "(a) For the purposes of this subchapter, a person is under a legal disability if the person is: (1) younger than 18 years of age, regardless of whether the person is married; or (2) of unsound mind. (b) If a person entitled to bring a personal action is under a legal disability when the cause of action accrues, the time of the disability is not included in a limitations period. (c) A person may not tack one legal disability to another to extend a limitations period. (d) A disability that arises after a limitations period starts does not suspend the running of the period.",
+      "text_sha256": "2e5db384711f9511a3f55fba2d930eb95580bc3b61fb0c3c8deb9087d8212314",
+      "publisher_sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce",
+      "retrieved_at": "2026-11-23T15:52:16.902935+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "1987-09-01"
+    },
+    "712975b953ff9ac8659474c6acb217": {
+      "source_id": "US-TX:accrual:26e9fef80e2c",
+      "authority_type": "statute",
+      "citation": "Tex. Civ. Prac. & Rem. Code § 16.0031",
+      "text": "(a) In an action for personal injury or death resulting from an asbestos-related injury, as defined by Section 90.001, the cause of action accrues for purposes of Section 16.003 on the earlier of the following dates: (1) the date of the exposed person’s death; or (2) the date that the claimant serves on a defendant a report complying with Section 90.003 or 90.010(f). (b) In an action for personal injury or death resulting from a silica-related injury, as defined by Section 90.001, the cause of action accrues for purposes of Section 16.003 on the earlier of the following dates: (1) the date of the exposed person’s death; or (2) the date that the claimant serves on a defendant a report complying with Section 90.004 or 90.010(f).",
+      "text_sha256": "3c6da0ef0b8671b7a7f8ef651c2f6e68e228dccbb75412ffccf3afae177dc760",
+      "publisher_sha256": "4dbaed97e2934cef3f9dd4c7dd04859e97fd8f3386a3b3ebe40aae80077a11ce",
+      "retrieved_at": "2026-11-23T15:52:16.902935+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "effective_from": "2005-09-01"
     }
   },
   "fault_allocation": {

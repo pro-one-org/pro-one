@@ -31,10 +31,17 @@
 - Prior exact-head checkpoint `9a29315` passed 657 local regression tests and [CI run 45207730947](https://github.com/pro-one-org/pro-one/actions/runs/45207730947), including production build and smoke.
 - Ten new passages bind California and Massachusetts official civil jury instructions and a certified Nebraska Supreme Court decision. General contract breach evidence increased from 18 to 20 jurisdictions, damages from 22 to 24, and premises from eight to ten. Model instructions retain their court and edition scope with unresolved currentness. The Nebraska opinion is historical.
 - This batch has 1,403 retained versions, with 155 dated publisher verifications, 507 historical and 741 currentness-unresolved. Of 3,764 coverage cells, 1,469 are unsupported, 1,630 partial and 665 reference-only. The acceptance tracker now gives individual status and measurements for criteria 14 through 18. Local checks are under `.local/sub217-*.log`.
+- Checkpoint `df5f85a` exposed a regression fixture that assumed California premises authority was absent. The next batch gives that negative test an explicitly empty provider set and checks that the service returns no evidence package.
+
+## Limitations exceptions checkpoint
+
+- Added nine passages across Arizona, D.C., Illinois, Kentucky, Michigan and Texas. The D.C. publisher version verifies two provisions as of April 29, 2026. The XML replay preserves the operative clause that follows the list of disabilities. Illinois retains two differing historical appellate readings of the survival-action rules under their respective case scopes.
+- Nationwide accrual passage coverage rose from six to seven jurisdictions and tolling from 13 to 18. The corpus now has 1,412 authority versions with 157 dated publisher verifications, 509 historical and 746 currentness-unresolved. Coverage depths are 1,463 unsupported, 1,636 partial and 665 reference-only.
+- The corrected negative test and new D.C. and Illinois regressions passed. Consolidated checks are logged under `.local/sub220-check-*.log`.
 
 ## Next priorities
 
-- Close substantive baseline gaps first. Reuse the cached Kentucky disability-tolling statute and confirm the Texas Chapter 16 legislative text. Continue personal-injury accrual and tolling, exceptions to fault regimes, ordinary contract breach and damages, and premises coverage as measured in the tracker.
+- Close substantive baseline gaps first. Continue personal-injury accrual and tolling, exceptions to fault regimes, ordinary contract breach and damages, and premises coverage as measured in the tracker.
 - Reuse the captured filing-fee and transition evidence under `.local/sub209-*` when needed for court-specific procedure. Iowa Acts 2026 ch. 1192, §§ 24 and 28 distinguish fees paid before and on or after July 1, 2026. Maine's March 9, 2026 fee schedule distinguishes ordinary filings from covered debt-buyer filings.
 
 Keep PR #31 in draft. External execution and public release remain disabled.

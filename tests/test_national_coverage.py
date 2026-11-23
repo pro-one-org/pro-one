@@ -23,6 +23,26 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_dc_tolling_replay_retains_the_qualifying_text_after_the_list(self):
+        provider = RetainedLegislativeResearch()
+        matter = ResearchMatter(country="US", state="District of Columbia", sovereign="district", legal_area="torts",
+                                topics=["tolling"], authority_status="current_as_of", authority_as_of="2026-04-29")
+        passages = [provider.fetch(key).text for key in provider.search(matter)]
+        general, = (text for text in passages if "(3) imprisoned" in text)
+        self.assertTrue(general.endswith("after the disability is removed."))
+        self.assertIn("Except as provided by subsection (b)", general)
+        self.assertTrue(any("instrument under seal" in text for text in passages))
+
+    def test_historical_illinois_tolling_cases_preserve_different_survival_rule_readings(self):
+        provider = RetainedLegislativeResearch()
+        matter = ResearchMatter(country="US", state="Illinois", legal_area="torts",
+                                topics=["tolling"], authority_types=["opinion"], authority_status="historical")
+        passages = [provider.fetch(key).text for key in provider.search(matter)]
+        self.assertTrue(any("does not contemplate a representative" in text for text in passages))
+        self.assertTrue(any("the deceased’s representative had two years" in text for text in passages))
+        self.assertEqual(provider.search(matter.model_copy(update={"authority_status": "current_as_of",
+                                                                 "authority_as_of": "2019-09-26"})), [])
+
     def test_signed_mississippi_equal_pay_act_keeps_its_effective_date_and_topic(self):
         provider = RetainedLegislativeResearch()
         matter = ResearchMatter(country="US", state="Mississippi", legal_area="employment",

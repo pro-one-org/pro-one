@@ -510,6 +510,30 @@
       "url": "https://www.dccourts.gov/superior-court/superior-court-resources/rules-of-the-superior-court/",
       "directory": null,
       "locator": "Civil Division rules"
+    },
+    "US-DC:tolling:5b4bae8ccc5e": {
+      "category": "tolling",
+      "title": "D.C. Code § 12-302(a)",
+      "url": "https://raw.githubusercontent.com/DCCouncil/law-xml-codified/6231fae42de60c3c498548c489b0ca84ef60353a/us/dc/council/code/titles/12/sections/12-302.xml",
+      "locator": "D.C. Code § 12-302(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:49:10.167493+00:00",
+        "sha256": "1e574ea167fb9cad577621bf575033275ab6adf4e78bce8bfa8b1c3e0b768882"
+      }
+    },
+    "US-DC:tolling:09374ef11b25": {
+      "category": "tolling",
+      "title": "D.C. Code § 12-302(b)",
+      "url": "https://raw.githubusercontent.com/DCCouncil/law-xml-codified/6231fae42de60c3c498548c489b0ca84ef60353a/us/dc/council/code/titles/12/sections/12-302.xml",
+      "locator": "D.C. Code § 12-302(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:49:10.167493+00:00",
+        "sha256": "1e574ea167fb9cad577621bf575033275ab6adf4e78bce8bfa8b1c3e0b768882"
+      }
     }
   },
   "court_directory": [
@@ -989,6 +1013,34 @@
       "publisher_path": "3ed269628b4a6251a05b54014ac05c7ed9a5ab685f99aad1d289251a444ffa83",
       "edition": "D.C. Council codified XML publication, current through April 29, 2026.",
       "publisher_member": "April 29, 2026 Council edition before the fall 2026 amendments; date-specific public injunction and restitution authority."
+    },
+    "e6c69177443dd6b1404d6f186b3037": {
+      "source_id": "US-DC:tolling:5b4bae8ccc5e",
+      "authority_type": "statute",
+      "citation": "D.C. Code § 12-302(a)",
+      "text": "(a) Except as provided by subsection (b) of this section, when a person entitled to maintain an action is, at the time the right of action accrues: (1) under 18 years of age; or (2) non compos mentis; or (3) imprisoned — he or his proper representative may bring action within the time limited after the disability is removed.",
+      "text_sha256": "b51f0593dbd8e29214cf9d3ea9a4dffb234d1749309b084fac6a6e391dc6dcc8",
+      "publisher_sha256": "1e574ea167fb9cad577621bf575033275ab6adf4e78bce8bfa8b1c3e0b768882",
+      "retrieved_at": "2026-11-23T15:49:10.167493+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-04-29",
+      "publisher_path": "3ed269628b4a6251a05b54014ac05c7ed9a5ab685f99aad1d289251a444ffa83",
+      "edition": "D.C. Council XML, current through April 29, 2026"
+    },
+    "eb5a03b0c56093f76f5f5c12b850d2": {
+      "source_id": "US-DC:tolling:09374ef11b25",
+      "authority_type": "statute",
+      "citation": "D.C. Code § 12-302(b)",
+      "text": "(b) When a person entitled to maintain an action for the recovery of lands, tenements, or hereditaments, or upon an instrument under seal, is under any of the disabilities specified by subsection (a) of this section at the time the right of action accrues, he or his proper representative, except where otherwise specified herein, may bring the action within 5 years after the disability is removed, and not thereafter.",
+      "text_sha256": "6391803e00b2615bf1b43cf824dae8f0c534fd49a547718045304243766ce6f2",
+      "publisher_sha256": "1e574ea167fb9cad577621bf575033275ab6adf4e78bce8bfa8b1c3e0b768882",
+      "retrieved_at": "2026-11-23T15:49:10.167493+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-04-29",
+      "publisher_path": "3ed269628b4a6251a05b54014ac05c7ed9a5ab685f99aad1d289251a444ffa83",
+      "edition": "D.C. Council XML, current through April 29, 2026"
     }
   },
   "fault_allocation": {

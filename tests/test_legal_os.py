@@ -162,7 +162,10 @@ class LegalOSTests(unittest.TestCase):
 
     def test_no_authority_means_no_answer(self):
         matter = ResearchMatter(country="US", state="California", legal_area="torts", topics=["premises_liability"])
-        self.assertEqual("no_authoritative_support", self.service.assemble(matter)["status"])
+        service = GeneralLegalResearchService(self.repo, providers=[])
+        result = service.assemble(matter)
+        self.assertEqual("no_authoritative_support", result["status"])
+        self.assertIsNone(result["package"])
 
     def test_topic_cannot_override_legal_area(self):
         matter = MATTER.model_copy(update={"legal_area": "contracts"})

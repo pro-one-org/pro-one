@@ -372,6 +372,18 @@
         "retrieved_at": "2026-11-22T03:40:08.143925+00:00",
         "sha256": "624f60a82dc3be472acd355152d2216ca7e7946506b62cdc84b8005582739908"
       }
+    },
+    "US-AZ:tolling:e3da793048b4": {
+      "category": "tolling",
+      "title": "Ariz. Rev. Stat. § 12-502",
+      "url": "https://azleg.gov/ars/12/00502.htm",
+      "locator": "Ariz. Rev. Stat. § 12-502",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:49:10.570575+00:00",
+        "sha256": "e679ed4400fbcdc8c4891380be621a1e355b35c74f225173fd1b62e183647d1d"
+      }
     }
   },
   "court_directory": [
@@ -681,6 +693,17 @@
       "language": "en",
       "publisher_member": "Arizona Legislature, statutory wage complaint up to $12,000 with one-year accrual condition, as amended by 2025 Ch. 38.",
       "effective_from": "2025-09-26"
+    },
+    "4e4715444d1e58c8d7e02c970ae75d": {
+      "source_id": "US-AZ:tolling:e3da793048b4",
+      "authority_type": "statute",
+      "citation": "Ariz. Rev. Stat. § 12-502",
+      "text": "If a person entitled to bring an action other than those set forth in article 2 of this chapter is at the time the cause of action accrues either under eighteen years of age or of unsound mind, the period of such disability shall not be deemed a portion of the period limited for commencement of the action. Such person shall have the same time after removal of the disability which is allowed to others.",
+      "text_sha256": "54e0f1e3a5ef6b5c265a63f31170cb25d20bf2859642a7503bf5ac1069fcc47d",
+      "publisher_sha256": "e679ed4400fbcdc8c4891380be621a1e355b35c74f225173fd1b62e183647d1d",
+      "retrieved_at": "2026-11-23T15:49:10.570575+00:00",
+      "currentness": "unresolved",
+      "language": "en"
     }
   },
   "fault_allocation": {
