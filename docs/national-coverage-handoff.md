@@ -67,6 +67,14 @@
 - Florida, Ohio and Texas published opinions add scoped historical contract-remedy evidence. Texas distinguishes direct and consequential damages, including separate foreseeability and reasonable-certainty requirements.
 - The corpus has 1,441 authority versions, with 164 dated publisher verifications, 517 historical and 760 currentness-unresolved. There are 1,447 unsupported, 1,652 partial and 665 reference-only coverage cells. Contract damages passages span 26 jurisdictions. Recovery checks are under `.local/recovery-*.log`.
 
+## Maryland and New York court forms
+
+- Checkpoint `bad044f` contains the recovered Washington and contract-remedy batch. The original checkout and its local live-corpus snapshots were unavailable. The recovered diff has 253 additions and six deletions across the eight tracked files and four certified archives. The earlier report of 296 additions and 19 deletions could not be independently reconciled.
+- All 664 local regression tests passed at `bad044f` along with coverage and repository validation, 37 mapped evaluations, and both national coverage benchmarks. [Exact-head CI](https://github.com/pro-one-org/pro-one/actions/runs/45262010022) passed, including the production container build and smoke tests. PR #31 was open, draft and mergeable at that head. The live-corpus adversarial and national research evaluations could not be rerun because their ignored SQLite inputs were in the missing checkout.
+- Maryland identifies DC-CV-115, revised October 2024, as the required notice before a residential nonpayment summary-ejectment complaint. The retained Maryland statute supplies the notice trigger and methods. The notice form is separate from the complaint form. [Maryland Judiciary housing instructions](https://www.mdcourts.gov/legalhelp/housing) and [official DC-CV-115](https://www.mdcourts.gov/sites/default/files/court-forms/dccv115.pdf).
+- New York identifies NYC Civil Court CIV-SC-50, revised April 22, 2022, as the small-claims statement of claim. The court publishes clerk-office and limited mail procedures. The captured July 7, 2023 statutory rendition supports NYC small-claims commencement and preserves the employee fee exception. The statute does not identify the form by number, and its currentness remains unresolved. [New York State Senate § 1803](https://www.nysenate.gov/legislation/laws/CCA/1803) and [NYC small-claims filing instructions](https://www.nycourts.gov/new-york-city-small-claims-court/starting-case-nyc-small-claims-court).
+- Direct publisher downloads of the two PDF artifacts returned HTTP 403. The published text can be inspected, but the download failure prevents reproduction of a raw artifact hash. Both forms remain outside the verified binding count.
+
 ## Next priorities
 
 - Close substantive baseline gaps first. Continue personal-injury accrual and tolling, exceptions to fault regimes, ordinary contract breach and damages, and premises coverage as measured in the tracker.

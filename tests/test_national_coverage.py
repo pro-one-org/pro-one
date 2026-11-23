@@ -675,6 +675,22 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertIn("waives the right to jury trial", docs["Alaska Dist. Ct. R. Civ. P. 10(a)"])
         self.assertFalse(provider.search(query.model_copy(update={"topics": ["commencement"]})))
 
+    def test_nyc_small_claim_commencement_keeps_fee_exception_and_court_scope(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="New York", legal_area="civil_procedure",
+                               court="Civil Court of the City of New York", topics=["small_claims"],
+                               authority_status="unresolved")
+        docs = {doc.source["citation"]["preferred_citation"]: doc.text
+                for doc in map(provider.fetch, provider.search(query))}
+        commencement = docs["N.Y.C. Civil Court Act § 1803(a)"]
+        self.assertIn("statement of his cause of action", commencement)
+        self.assertIn("No filing fee, however, shall be demanded", commencement)
+        self.assertNotIn("CIV-SC-50", commencement)
+        self.assertFalse(provider.search(query.model_copy(update={"court": "New York Supreme Court"})))
+        self.assertFalse(provider.search(query.model_copy(update={"state": "Maryland"})))
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                  "authority_as_of": "2026-11-23"})))
+
     def test_partial_negligence_summary_uses_retained_passages_in_each_state(self):
         for scope, jurisdiction in registry().items():
             if jurisdiction.kind not in {"state", "district"}:

@@ -557,6 +557,18 @@
         "retrieved_at": "2026-11-23T16:19:51.526706+00:00",
         "sha256": "8167d0f210a6097afaf6f09727e4ddedba8b9c649594dd3f25b1d4401e2cb069"
       }
+    },
+    "US-NY:small_claims:88122e07dcf4": {
+      "category": "small_claims",
+      "title": "N.Y.C. Civil Court Act § 1803(a)",
+      "url": "https://www.nysenate.gov/legislation/laws/CCA/1803",
+      "locator": "N.Y.C. Civil Court Act § 1803(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T20:42:09.068763+00:00",
+        "sha256": "43418e9aa79ec2030ebbd310c655f6ee8a2ac2bd180a6d90e6e51c298730133c"
+      }
     }
   },
   "court_directory": [
@@ -1080,6 +1092,19 @@
       "retrieved_at": "2026-11-23T16:19:51.526706+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "9f9e62ed7f3b295f87ec0627d7dce5": {
+      "source_id": "US-NY:small_claims:88122e07dcf4",
+      "authority_type": "statute",
+      "citation": "N.Y.C. Civil Court Act § 1803(a)",
+      "text": "(a) Small claims shall be commenced upon the payment by the claimant of a filing fee of fifteen dollars for claims in the amount of one thousand dollars or less and twenty dollars for claims in the amount of more than one thousand dollars, without the service of a summons and, except by special order of the court, without the service of any pleading other than a statement of his cause of action by the claimant or someone in his behalf to the clerk, who shall reduce the same to a concise, written form and record it in a docket kept especially for such purpose. Such procedure shall provide for the sending of notice of such claim by ordinary first class mail and certified mail with return receipt requested to the party complained against (1) at his residence, if he resides within the city of New York, and his residence is known to the claimant, (2) at his office or place of regular employment within the city of New York if he does not reside therein or his residence within the city of New York is not known to the claimant, or (3) where claimant is or was a tenant or lessee of real property owned by the defendant and the claim relates to such tenancy or lease and the notice of claim cannot be sent under paragraph one or two of this subdivision, at any place in the state where plaintiff may mail or otherwise deliver rent. If, after the expiration of twenty-one days, such ordinary first class mailing has not been returned as undeliverable, the party complained against shall be presumed to have received notice of such claim. Such notice shall include a clear description of the procedure for filing a counterclaim, pursuant to subdivision (c) of this section. Such procedure shall further provide for an early hearing upon and determination of such claim. No filing fee, however, shall be demanded or received on small claims of employees who shall comply with § 1912 (a) of this act which is hereby made applicable, except that necessary mailing costs shall be paid.",
+      "text_sha256": "2dccfa1b2d2ee84834db24760b921cf2f90e9a8ed7385afa122d1da84bf418e7",
+      "publisher_sha256": "43418e9aa79ec2030ebbd310c655f6ee8a2ac2bd180a6d90e6e51c298730133c",
+      "retrieved_at": "2026-11-23T20:42:09.068763+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Civil Court of the City of New York",
+      "scope_notes": "New York City Civil Court small-claims commencement under Article 18. The Senate labels the rendition as its July 7, 2023 revision. The statute addresses the statement to the clerk and the fee, notice and employee exception. It does not name CIV-SC-50 or establish that the paper form is mandatory for every filing channel."
     }
   },
   "fault_allocation": {
