@@ -635,6 +635,18 @@
         "retrieved_at": "2026-11-22T03:30:44.560550+00:00",
         "sha256": "670245dbbeca6b25d41fb16906546308e7c5a214c6a67ccde76c28deca00c796"
       }
+    },
+    "US-CT:summons_form:cbbef2c6b7d5": {
+      "category": "summons_form",
+      "title": "Connecticut Judicial Branch Civil Summons, JD-CV-1",
+      "url": "https://www.jud.ct.gov/webforms/forms/cv001.pdf",
+      "locator": "JD-CV-1 (Rev. 8-26), pp. 1–2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T20:58:25.226933+00:00",
+        "sha256": "5086e419aff51e7a6c5b2dd40573e7c76aa4ebda00aa69879ded4c55ea407c59"
+      }
     }
   },
   "court_directory": [
@@ -1155,5 +1167,23 @@
     "source_id": "US-CT:fault:33b05f66ddff",
     "currentness": "historical",
     "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  },
+  "forms": {
+    "US-CT:form:JD-CV-1": {
+      "title": "Civil Summons",
+      "publisher_identifier": "JD-CV-1",
+      "source_id": "US-CT:summons_form:cbbef2c6b7d5",
+      "index_source_id": "US-CT:summons_issuance:3b9d759ccbf7",
+      "index_sha256": "bb406ab49314de7f6b49f5de43e1b2e354465bb70ce52ecc37412ec058db69d6",
+      "court_scope": "Connecticut Superior Court",
+      "mandatory": "substantially_similar_form_required",
+      "revision": "2026-08",
+      "last_observed": "2026-11-23T20:58:25.226933+00:00",
+      "automated_completion": "disabled",
+      "form_sha256": "5086e419aff51e7a6c5b2dd40573e7c76aa4ebda00aa69879ded4c55ea407c59",
+      "action_type": "complaint",
+      "requirement_passage_selector": "1e69225f87ea29fbe1670bfbb1cc63",
+      "applicability": "Writ of summons accompanying the complaint in an ordinary Connecticut Superior Court civil action. Review Practice Book § 8-1(b)–(d) and the form's second page. Exclusions include family proceedings, summary process, entry and detainer, housing code enforcement, name changes, arbitration proceedings, probate or administrative appeals, and requests for attachment, garnishment or replevy. For a self-represented plaintiff, the clerk signs the summons. After service by a proper officer, the form directs filing of the originals and the officer's return."
+    }
   }
 }

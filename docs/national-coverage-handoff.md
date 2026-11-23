@@ -82,6 +82,15 @@
 - The corpus has 1,447 authority versions, including 164 dated publisher verifications, 521 historical and 762 currentness-unresolved. Of 3,764 cells, 1,444 are unsupported, 1,655 partial and 665 reference-only. Premises passage coverage spans 13 jurisdictions. The full validation logs are under `.local/premises-final-*.log`.
 - The full suite and [CI for `31964db`](https://github.com/pro-one-org/pro-one/actions/runs/45262668355) found a NYC procedural test that assumed one reference. The regression now requires both NYC statutes and checks that each remains local and currentness-unresolved. The response still denies external action.
 
+## Colorado ordinary contract and Connecticut summons checkpoint
+
+- Checkpoint `e641eed` passed 666 local regression tests and [exact-head CI](https://github.com/pro-one-org/pro-one/actions/runs/45264092999), including the production container build and smoke tests.
+
+- Five February 2026 judiciary pattern instructions distinguish ordinary breach, materiality, the effects of nominal damages, and the proof required for general and special damages. Later currentness and case-specific instruction selection remain unresolved. The historical Colorado Supreme Court accrual opinion distinguishes discovery of breach from awareness of damages.
+- Twenty-three jurisdictions have retained breach evidence and 26 have damages evidence across all categories, including 16 with general contract damages. The corpus has 1,453 authority versions, including 164 dated publisher verifications, 522 historical and 767 currentness-unresolved. Of 3,764 cells, 1,442 are unsupported, 1,656 partial and 666 reference-only. Checks are recorded under `.local/contract-summons-final-*.log`.
+
+- The Connecticut Judicial Branch now distributes JD-CV-1, revision August 2026. The direct PDF is linked to the verified 2026 Practice Book § 8-1(a) capture and applies to ordinary Superior Court civil writs substantially in compliance with the form. Its instructions distinguish the clerk-signed pro se route, exclusions, and filing after service. Fourteen official form artifacts are indexed and nine have a verified form and requirement binding. [Official JD-CV-1](https://www.jud.ct.gov/webforms/forms/cv001.pdf) and [2026 Connecticut Practice Book](https://www.jud.ct.gov/publications/PracticeBook/PB.pdf).
+
 ## Next priorities
 
 - Close substantive baseline gaps first. Continue personal-injury accrual and tolling, exceptions to fault regimes, ordinary contract breach and damages, and premises coverage as measured in the tracker.

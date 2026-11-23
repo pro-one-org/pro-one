@@ -128,6 +128,18 @@ class NationalCoverageTests(unittest.TestCase):
             self.assertEqual(form["requirement_citation"], "Utah Rules of Small Claims Procedure 1(c)")
             self.assertEqual(form["automated_completion"], "disabled")
 
+    def test_connecticut_civil_summons_is_scoped_to_the_complaint_path(self):
+        shells = {row["action_type"]: row for row in coverage("US-CT")["action_shells"]}
+        form, = shells["complaint"]["official_form_references"]
+        self.assertEqual("JD-CV-1", form["publisher_identifier"])
+        self.assertEqual("2026-08", form["revision"])
+        self.assertEqual("substantially_similar_form_required", form["requirement_level"])
+        self.assertIn("8-1(a)", form["requirement_citation"])
+        self.assertIn("summary process", form["applicability"])
+        self.assertIn("officer's return", form["applicability"])
+        self.assertEqual("disabled", form["automated_completion"])
+        self.assertFalse(shells["answer"]["official_form_references"])
+
     def test_civil_cover_sheet_references_are_available_only_on_the_initiating_path(self):
         expected = {"US-CO": "JDF 601", "US-FL": "1.997", "US-MA": "SC0001"}
         for jurisdiction, identifier in expected.items():
@@ -688,6 +700,24 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertNotIn("CIV-SC-50", commencement)
         self.assertFalse(provider.search(query.model_copy(update={"court": "New York Supreme Court"})))
         self.assertFalse(provider.search(query.model_copy(update={"state": "Maryland"})))
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                  "authority_as_of": "2026-11-23"})))
+
+    def test_colorado_contract_records_keep_breach_damages_and_accrual_separate(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Colorado", legal_area="contracts",
+                               topics=["contract_breach"], authority_status="unresolved")
+        breach = {doc.source["citation"]["preferred_citation"]: doc.text
+                  for doc in map(provider.fetch, provider.search(query))}
+        self.assertIn("material breach by one party excuses performance", breach["Colo. Jury Instr., Civil 30:11"])
+        damages_query = query.model_copy(update={"topics": ["general_contract_damages"]})
+        damages = {doc.source["citation"]["preferred_citation"]: doc.text
+                   for doc in map(provider.fetch, provider.search(damages_query))}
+        self.assertIn("nominal damages", damages["Colo. Jury Instr., Civil 30:37"])
+        self.assertTrue(breach.keys().isdisjoint(damages))
+        accrual_query = query.model_copy(update={"topics": ["contract_accrual"], "authority_status": "historical"})
+        accrual, = provider.search(accrual_query)
+        self.assertIn("violation of a contractual obligation", provider.fetch(accrual).text)
         self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
                                                                   "authority_as_of": "2026-11-23"})))
 
