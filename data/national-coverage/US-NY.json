@@ -569,6 +569,32 @@
         "retrieved_at": "2026-11-23T20:42:09.068763+00:00",
         "sha256": "43418e9aa79ec2030ebbd310c655f6ee8a2ac2bd180a6d90e6e51c298730133c"
       }
+    },
+    "US-NY:small_claim_form:83a7ca4b820a": {
+      "category": "small_claim_form",
+      "title": "Statement of Claim (Small Claims)",
+      "url": "https://webfiles.nycourts.gov/public/2026-04/civ-sc-50.pdf",
+      "locator": "Statement of Claim (Small Claims)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:46:19.488563+00:00",
+        "sha256": "348e3117b09df5d583b3011331abed4628a38d2eab327edf8bbabb4cd1cfbe39",
+        "capture_url": "https://legacypdf.blob.core.usgovcloudapi.net/public/2026-04/civ-sc-50.pdf"
+      }
+    },
+    "US-NY:small_claim_form_index:f1c6454fca5b": {
+      "category": "small_claim_form_index",
+      "title": "Civil Court of the City of New York, Small Claims Part, small-claims filing instructions",
+      "url": "https://webfiles.nycourts.gov/public/2026-04/instructionsforfiling.pdf",
+      "locator": "Civil Court of the City of New York, Small Claims Part, small-claims filing instructions",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:48:34.854222+00:00",
+        "sha256": "e65f35b78cf6093fe4255a2895f849392c45b9980604d025f336166de90da622",
+        "capture_url": "https://legacypdf.blob.core.usgovcloudapi.net/public/2026-04/instructionsforfiling.pdf"
+      }
     }
   },
   "court_directory": [
@@ -1113,5 +1139,23 @@
     "source_id": "US-NY:fault:8d0e072334d2",
     "currentness": "unresolved",
     "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+  },
+  "forms": {
+    "US-NY:form:CIV-SC-50": {
+      "title": "Statement of Claim (Small Claims)",
+      "publisher_identifier": "CIV-SC-50",
+      "source_id": "US-NY:small_claim_form:83a7ca4b820a",
+      "index_source_id": "US-NY:small_claim_form_index:f1c6454fca5b",
+      "index_sha256": "e65f35b78cf6093fe4255a2895f849392c45b9980604d025f336166de90da622",
+      "court_scope": "Civil Court of the City of New York, Small Claims Part",
+      "mandatory": "required_for_stated_scope",
+      "revision": "2022-04-22",
+      "last_observed": "2026-11-23T21:46:19.488563+00:00",
+      "automated_completion": "disabled",
+      "form_sha256": "348e3117b09df5d583b3011331abed4628a38d2eab327edf8bbabb4cd1cfbe39",
+      "action_type": "small_claim",
+      "requirement_passage_selector": "9f9e62ed7f3b295f87ec0627d7dce5",
+      "applicability": "Paper statement for an eligible claimant who lives outside NYC and files by mail in NYC Civil Court Small Claims Part. Confirm the proper county and filing packet with the clerk. The court instructions specify CIV-SC-50 (red ink), signature, the applicable fee or exception, and a return envelope. Other filing channels, commercial claims and courts outside NYC require separate review."
+    }
   }
 }

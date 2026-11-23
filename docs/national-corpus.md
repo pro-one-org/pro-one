@@ -288,3 +288,17 @@ snapshot and hashes, retain the original attribution and distinguish
 provider-derived status fields from official identity and currentness evidence.
 This foundation uses publisher feeds and CourtListener. It includes zero
 Open US Law records. [Dataset card](https://huggingface.co/datasets/vaquill/open-us-law)
+
+## Recovery of the live evaluation inputs
+
+The November 23, 2026 recovery checkout had no original local SQLite databases. To reproduce the public portion, use the documented `ingest` commands above for OLRC, annual CFR, eCFR, Federal Register, U.S. Reports, federal rules, Virginia, Maryland, Florida and the California samples independently. Also ingest `virginia_code 1/2/1-200`. The `build-start` and `build-resume` commands can record the same sequence. A failed selector stops that plan, so run an independent later selector separately. The rebuilt SQLite corpus and verification logs stay under ignored `.local/`.
+
+| Dependency | Recovery result |
+| --- | --- |
+| Statutes, rules and regulations with publicly reproducible selectors | 17 snapshots and 1,215 normalized versions. The reconstruction includes California regulation `3203`. |
+| Reviewed 8 CFR 100.4 supersession | The annual CFR and Federal Register artifacts matched their pinned hashes. The current public eCFR Title 8 response hashes to `5a69acc6e5d90d33c415d77663d5511587d87e400541e86f8c616e466268a586`. The reviewed supersession requires the earlier exact `0b36bdcddc16ecfbbbbaae69a5b2fff81ef64f7b4c08d1af19a668f4ea3a92aa` artifact. The recorder returned `supersession_artifact_unavailable`. The title 1 annual/eCFR identity check also failed on the reconstructed inputs. |
+| CourtListener opinions | The original CourtListener database and federal opinion snapshots were unavailable. The authenticated adapter requires a configured `COURTLISTENER_API_TOKEN` or legitimate retained snapshots. The public U.S. Reports rendition was restored independently. The two opinion-role checks and the cross-provider identity check remain unverified. |
+| New York statute and constitution | The original publisher snapshots for Real Property Law § 235-b and Constitution article I § 6 were unavailable. The adapter's direct network refresh remains disabled. Rebuild requires retained authorized publisher captures. |
+| California Civil Code archive and court rule | The code adapter rejected the public archive response with `california_archive_range_mismatch`. It requires the original reviewed ZIP member ranges and archive identity, or a newly reviewed release with separately verified effective dates. Rule 8.1115 requires the retained publisher capture because automated access is restricted. |
+
+Run `python -B scripts/evaluate_national_corpus.py` against the reconstructed corpus. The recovery report had 17 of 24 rank-one matches, zero results on 18 negative queries and zero of two verified identity checks. The command exited nonzero. Historical publisher bytes or authorized captures must be recovered before treating the old live checks as reproduced. The offline national benchmarks and retained-publisher evaluations have separate inputs.

@@ -170,6 +170,22 @@ class NationalCoverageTests(unittest.TestCase):
                 self.assertEqual(("blocked", "disabled"), (claim["readiness"], claim["execution"]))
                 self.assertFalse(shells["complaint"]["official_form_references"])
 
+    def test_nyc_official_statement_is_scoped_to_paper_mail_filing(self):
+        shells = {row["action_type"]: row for row in coverage("US-NY")["action_shells"]}
+        form, = shells["small_claim"]["official_form_references"]
+        self.assertEqual("CIV-SC-50", form["publisher_identifier"])
+        self.assertEqual("2022-04-22", form["revision"])
+        self.assertIn("Civil Court of the City of New York", form["court_scope"])
+        self.assertIn("lives outside NYC and files by mail", form["applicability"])
+        self.assertEqual("N.Y.C. Civil Court Act § 1803(a)", form["requirement_citation"])
+        self.assertEqual("unresolved", form["requirement_currentness"])
+        self.assertTrue(form["applicability_source_url"].endswith("/instructionsforfiling.pdf"))
+        self.assertEqual(("disabled", "blocked", "disabled"),
+                         (form["automated_completion"], shells["small_claim"]["readiness"],
+                          shells["small_claim"]["execution"]))
+        for action in ("complaint", "answer", "demand"):
+            self.assertFalse(shells[action]["official_form_references"])
+
     def test_connecticut_civil_summons_is_scoped_to_the_complaint_path(self):
         shells = {row["action_type"]: row for row in coverage("US-CT")["action_shells"]}
         form, = shells["complaint"]["official_form_references"]
@@ -773,6 +789,11 @@ class NationalCoverageTests(unittest.TestCase):
                    for doc in map(provider.fetch, provider.search(damages_query))}
         self.assertIn("nominal damages", damages["Colo. Jury Instr., Civil 30:37"])
         self.assertTrue(breach.keys().isdisjoint(damages))
+        formation_query = query.model_copy(update={"topics": ["contract_formation"],
+                                                   "court": "Colorado civil jury trials"})
+        formation, = provider.search(formation_query)
+        self.assertIn("offer and an acceptance", provider.fetch(formation).text)
+        self.assertFalse(provider.search(formation_query.model_copy(update={"state": "New York"})))
         accrual_query = query.model_copy(update={"topics": ["contract_accrual"], "authority_status": "historical"})
         accrual, = provider.search(accrual_query)
         self.assertIn("violation of a contractual obligation", provider.fetch(accrual).text)
@@ -1467,6 +1488,19 @@ class NationalCoverageTests(unittest.TestCase):
                     "authority_status": "current", "authority_as_of": "2026-11-21",
                 })))
 
+    def test_florida_ordinary_formation_instruction_is_historical(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Florida", legal_area="contracts",
+                               topics=["contract_formation"], court="Florida civil jury trials",
+                               authority_status="historical")
+        key, = provider.search(query)
+        instruction = provider.fetch(key)
+        self.assertIn("unspoken intentions", instruction.text)
+        self.assertIn("neither offer nor acceptance is contested", instruction.text)
+        self.assertFalse(provider.search(query.model_copy(update={"state": "Colorado"})))
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                  "authority_as_of": "2026-11-23"})))
+
     def test_formation_sources_preserve_local_subject_and_edition(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Arizona", legal_area="contracts",
@@ -1477,7 +1511,9 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertIn("consent of the parties", provider.fetch(louisiana).text)
         self.assertNotIn("sale of goods", provider.fetch(louisiana).text)
         self.assertEqual(provider.search(query.model_copy(update={"topics": ["contract_breach"]})), [])
-        self.assertEqual(coverage("CO")["cells"]["contract.formation"]["status"], "historical_only")
+        colorado, = provider.search(query.model_copy(update={"state": "Colorado", "authority_status": "historical"}))
+        self.assertIn("sale of goods", provider.fetch(colorado).text)
+        self.assertEqual(coverage("CO")["cells"]["contract.formation"]["status"], "currentness_unresolved")
 
     def test_health_journal_preserves_drift_and_outage_without_mutating_corpus(self):
         import sqlite3

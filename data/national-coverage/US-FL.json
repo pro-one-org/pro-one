@@ -685,6 +685,18 @@
         "retrieved_at": "2026-11-23T21:02:33.959392+00:00",
         "sha256": "302dc2b43ec01b8413541987fd40b1f3839dd5d2a6e04a80c08f25f7f5070615"
       }
+    },
+    "US-FL:contract_formation:a337190ac442": {
+      "category": "contract_formation",
+      "title": "Fla. Std. Jury Instr. (Cont. & Bus.) 416.3 (2013 adoption)",
+      "url": "https://supremecourt.flcourts.gov/content/download/243069/file/sc12-1931.pdf",
+      "locator": "Fla. Std. Jury Instr. (Cont. & Bus.) 416.3 (2013 adoption)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:55:14.506571+00:00",
+        "sha256": "efefb7127ce1402e1657d160db53f1d688da656505e4759015391617b65053c1"
+      }
     }
   },
   "court_directory": [
@@ -1232,6 +1244,21 @@
       "currentness": "unresolved",
       "edition": "Online Sunshine 2026 Florida Statutes",
       "scope_notes": "Trespasser-specific immunity, duties, definitions and exceptions. The statute does not supply the duty to an invitee."
+    },
+    "b15a56146e9a25499cf486fddb6055": {
+      "source_id": "US-FL:contract_formation:a337190ac442",
+      "citation": "Fla. Std. Jury Instr. (Cont. & Bus.) 416.3 (2013 adoption)",
+      "text": "(Claimant) claims that the parties entered into a contract. To prove that a contract was created, (claimant) must prove all of the following: 1. The essential contract terms were clear enough that the parties could understand what each was required to do; 2. The parties agreed to give each other something of value. [A promise to do something or not to do something may have value]; and 3. The parties agreed to the essential terms of the contract. When you examine whether the parties agreed to the essential terms of the contract, ask yourself if, under the circumstances, a reasonable person would conclude, from the words and conduct of each party, that there was an agreement. The making of a contract depends only on what the parties said or did. You may not consider the parties’ thoughts or unspoken intentions. Note: If neither offer nor acceptance is contested, then element #3 should not be given. If (Claimant) did not prove all of the above, then a contract was not created.",
+      "text_sha256": "ed2c31ccaa3941cf3fe311ca2998f2d8edb1c8c73f9f8f63969af72d6f1cd3d4",
+      "publisher_sha256": "efefb7127ce1402e1657d160db53f1d688da656505e4759015391617b65053c1",
+      "retrieved_at": "2026-11-23T21:55:14.506571+00:00",
+      "language": "en",
+      "authority_type": "court_instruction",
+      "currentness": "historical",
+      "effective_from": "2013-06-06",
+      "edition": "Florida Supreme Court SC12-1931, June 6, 2013",
+      "court": "Florida civil jury trials",
+      "scope_notes": "Contested ordinary formation. The authorized historical instruction addresses definite terms, value exchanged and observable assent. The note on use limits the instruction to genuinely disputed issues. Later amendments and subsequent treatment remain unverified."
     }
   },
   "fault_allocation": {

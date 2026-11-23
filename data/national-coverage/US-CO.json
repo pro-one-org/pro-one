@@ -753,6 +753,18 @@
         "retrieved_at": "2026-11-23T20:54:06.077051+00:00",
         "sha256": "b69dee6149cd7896d02e358dd817d13cb8cfb040d6a49c303c48cb93177b664a"
       }
+    },
+    "US-CO:contract_formation:56da8d6b187a": {
+      "category": "contract_formation",
+      "title": "Colo. Jury Instr., Civil 30:1",
+      "url": "https://www.coloradojudicial.gov/sites/default/files/2026-02/Chapter%2030.pdf",
+      "locator": "Colo. Jury Instr., Civil 30:1",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:51:04.738472+00:00",
+        "sha256": "813c45f50825d4ddd4e6a9af7791f5426c105d9938214bbe547fa2a254db04e3"
+      }
     }
   },
   "court_directory": [
@@ -1447,6 +1459,20 @@
       "opinion_role": "majority",
       "procedural_posture": "Certiorari review of a limitations ruling in a suit for breach of an intergovernmental agreement.",
       "scope_notes": "Interprets Colo. Rev. Stat. § 13-80-108(6). The passage addresses discovery of breach and distinguishes it from awareness of damages."
+    },
+    "e7dc53db528487705a01981de3d10b": {
+      "source_id": "US-CO:contract_formation:56da8d6b187a",
+      "citation": "Colo. Jury Instr., Civil 30:1",
+      "text": "A contract is an agreement between two or more persons or entities. A contract consists of an offer and an acceptance of that offer, and must be supported by consideration. If any one of these three elements is missing, there is no contract.",
+      "text_sha256": "25bc483ae3be8ecc35081fdedbf5601012ab33f9a770583d5e4c92f97af23f99",
+      "publisher_sha256": "813c45f50825d4ddd4e6a9af7791f5426c105d9938214bbe547fa2a254db04e3",
+      "retrieved_at": "2026-11-23T21:51:04.738472+00:00",
+      "language": "en",
+      "authority_type": "court_instruction",
+      "currentness": "unresolved",
+      "court": "Colorado civil jury trials",
+      "edition": "Colorado Judicial Branch Chapter 30 publication, February 2026",
+      "scope_notes": "Pattern instruction where ordinary contract formation is disputed. The publisher notes separately address definiteness and identify distinct sale-of-goods rules. Currentness and case-specific exceptions remain subject to review."
     }
   },
   "fault_allocation": {
