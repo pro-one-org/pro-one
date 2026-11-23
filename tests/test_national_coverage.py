@@ -36,6 +36,30 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertIn("cause of action arising from the tortious interference with contracts", text)
         self.assertNotEqual(fault, allocation)
 
+    def test_louisiana_keeps_distinct_fault_and_prescription_transition_sources(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Louisiana", legal_area="torts",
+                               topics=["fault_allocation"], authority_status="historical")
+        prior, = provider.search(query)
+        self.assertIn("shall be reduced in proportion", provider.fetch(prior).text)
+        self.assertNotIn("fifty-one percent", provider.fetch(prior).text)
+        revised = [provider.fetch(key) for key in provider.search(query.model_copy(update={"authority_status": "unresolved"}))]
+        act, = (doc for doc in revised if "2025 La. Acts No. 15" in doc.source["citation"]["preferred_citation"])
+        self.assertEqual("statute", act.source["source_type"])
+        self.assertEqual("session_law_excerpts_us_la", act.source["corpus_provenance"]["provider"])
+        self.assertEqual("unresolved", act.source["corpus_provenance"]["currentness"])
+        self.assertIn("effective on January 1, 2026", act.text)
+        self.assertTrue(any("Retroactivity" in note for passage in act.passages for note in passage["limitations"]))
+        self.assertIn("equal to or greater than fifty-one percent", act.text)
+        joint_query = query.model_copy(update={"topics": ["joint_several_liability"], "authority_status": "unresolved"})
+        joint, = provider.search(joint_query)
+        self.assertIn("answerable, in solido", provider.fetch(joint).text)
+        pi_query = query.model_copy(update={"topics": ["limitations"], "authority_status": "unresolved"})
+        pi_docs = [provider.fetch(key) for key in provider.search(pi_query)]
+        transition, = (doc for doc in pi_docs if "2024 La. Acts No. 423" in doc.source["citation"]["preferred_citation"])
+        self.assertIn("delictual actions arising after the effective date", transition.text)
+        self.assertIn("effective on July 1, 2024", transition.text)
+
     def test_new_york_fault_amendment_keeps_the_commencement_date_and_prior_text(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="New York", legal_area="torts",
@@ -720,6 +744,20 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertIn("violation of a contractual obligation", provider.fetch(accrual).text)
         self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
                                                                   "authority_as_of": "2026-11-23"})))
+
+    def test_florida_premises_research_preserves_notice_rules_and_trespasser_limits(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Florida", legal_area="torts",
+                               topics=["premises_liability"], authority_status="unresolved")
+        passages = {doc.source["citation"]["preferred_citation"]: doc.text
+                    for doc in map(provider.fetch, provider.search(query))}
+        transitory = passages["Fla. Stat. § 768.0755"]
+        self.assertIn("occurred with regularity and was therefore foreseeable", transitory)
+        self.assertIn("does not affect any common-law duty of care", transitory)
+        trespassers = passages["Fla. Stat. § 768.075"]
+        self.assertIn("discovered trespasser", trespassers)
+        self.assertIn("attractive nuisance doctrine", trespassers)
+        self.assertFalse(provider.search(query.model_copy(update={"state": "Wisconsin"})))
 
     def test_premises_duty_preserves_distinct_colorado_entrant_contexts(self):
         provider = RetainedLegislativeResearch()

@@ -458,6 +458,54 @@
         "retrieved_at": "2026-11-22T03:30:05.812260+00:00",
         "sha256": "e478b09576a40b6ac3cdd7197a6052d48a8e4c39bae10c90c85deced50711efc"
       }
+    },
+    "US-LA:fault:b59cdffbe2e6": {
+      "category": "fault",
+      "title": "La. Civ. Code art. 2323(A), reduction clause before 2025 La. Acts No. 15",
+      "url": "https://www.legis.la.gov/legis/ViewDocument.aspx?d=1419039",
+      "locator": "La. Civ. Code art. 2323(A), reduction clause before 2025 La. Acts No. 15",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:05:28.228567+00:00",
+        "sha256": "611cb13850bfb7e173ebcb0cd3c7aa09091ac15ac4b2c3b0d05ef9db9ecab415"
+      }
+    },
+    "US-LA:fault:a92251950447": {
+      "category": "fault",
+      "title": "2025 La. Acts No. 15, §§ 1–2 (art. 2323(A)(2), (D))",
+      "url": "https://www.legis.la.gov/legis/ViewDocument.aspx?d=1419039",
+      "locator": "2025 La. Acts No. 15, §§ 1–2 (art. 2323(A)(2), (D))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:05:28.228567+00:00",
+        "sha256": "611cb13850bfb7e173ebcb0cd3c7aa09091ac15ac4b2c3b0d05ef9db9ecab415"
+      }
+    },
+    "US-LA:joint_several_liability:c5483902bde2": {
+      "category": "joint_several_liability",
+      "title": "La. Civ. Code art. 2324(A)–(B)",
+      "url": "https://www.legis.la.gov/legis/Law.aspx?d=109388",
+      "locator": "La. Civ. Code art. 2324(A)–(B)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:05:27.825841+00:00",
+        "sha256": "1dbb263a65140f77ad47c6f9e433c5c3692c0665a540df760f23dbd0a0e9db06"
+      }
+    },
+    "US-LA:pi_limitations:c9bd2d0d6892": {
+      "category": "pi_limitations",
+      "title": "2024 La. Acts No. 423, §§ 3–4",
+      "url": "https://www.legis.la.gov/legis/ViewDocument.aspx?d=1381901",
+      "locator": "2024 La. Acts No. 423, §§ 3–4",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:07:07.261544+00:00",
+        "sha256": "c2db7f50a67e2e1123b9d3f281a069a2934670aee0107fe0f950ccb22b131a56"
+      }
     }
   },
   "court_directory": [
@@ -582,7 +630,8 @@
       "publisher_sha256": "ed56dc3a73e6d8ce2a1cd8c250a431e52d5e4f5ddb6b05298dc63fdc17570600",
       "retrieved_at": "2026-11-17T19:33:57.780060+00:00",
       "language": "en",
-      "currentness": "unresolved"
+      "currentness": "unresolved",
+      "scope_notes": "Read with 2024 La. Acts No. 423, §§ 3–4, which applies prospectively to delictual actions arising after its July 1, 2024 effective date. The statutory product-liability exception is limited to its terms."
     },
     "7688a23a282650833e671f14adf570": {
       "citation": "La. Civ. Code art. 3499",
@@ -604,7 +653,8 @@
       "text_sha256": "97448e4645fb71230c55750dc40a823f540cce09285d561f9037794cf37d8e96",
       "publisher_sha256": "13975d87a3b941bb3bb8513a6a222c68e8df7d23db7675be0f66dfd6f373ce61",
       "retrieved_at": "2026-11-17T20:50:33.943744+00:00",
-      "currentness": "unresolved"
+      "currentness": "unresolved",
+      "scope_notes": "The effective date is established by the enrolled 2025 La. Acts No. 15, § 2. The intentional-tortfeasor exception in Paragraph C remains separate from the threshold. Case-specific transition and later currentness remain unresolved."
     },
     "9e95656d226ba868907b4858b03978": {
       "source_id": "US-LA:consumer_private_action:30d4f2a07c96",
@@ -845,6 +895,60 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Louisiana State Legislature, public injunction authority, statutory venue and emergency conditions."
+    },
+    "e511aba53a13dde7b17ceda4731c12": {
+      "source_id": "US-LA:fault:b59cdffbe2e6",
+      "citation": "La. Civ. Code art. 2323(A), reduction clause before 2025 La. Acts No. 15",
+      "text": "If a person suffers injury, death, or loss as the result partly of his own negligence and partly as a result of the fault of another person or persons, the amount of damages recoverable shall be reduced in proportion to the degree or percentage of negligence attributable to the person suffering the injury, death, or loss.",
+      "text_sha256": "463c92780de23cf9dc41484ad572cef5460367a05cfeeceac545d4abd47cbe24",
+      "publisher_sha256": "611cb13850bfb7e173ebcb0cd3c7aa09091ac15ac4b2c3b0d05ef9db9ecab415",
+      "retrieved_at": "2026-11-23T21:05:28.228567+00:00",
+      "language": "en",
+      "authority_type": "session_law",
+      "currentness": "historical",
+      "effective_until": "2026-01-01",
+      "edition": "Prior language shown struck through in 2025 La. Acts No. 15",
+      "scope_notes": "Prior proportional-reduction clause as identified by the enrolled act. The replacement's effective date does not determine which version applies to a particular pending claim."
+    },
+    "f6b6dfc7866752a127f9bdba60206f": {
+      "source_id": "US-LA:fault:a92251950447",
+      "citation": "2025 La. Acts No. 15, §§ 1–2 (art. 2323(A)(2), (D))",
+      "text": "(2) If a person suffers injury, death, or loss partly as the result of his own negligence and partly as a result of the fault of another person or persons, then the following shall apply: (a) If the degree or percentage of negligence attributable to the person suffering injury, death, or loss is equal to or greater than fifty-one percent, then the person suffering injury, death, or loss shall not be entitled to recover damages. (b) If the degree or percentage of negligence attributable to the person suffering injury, death, or loss is less than fifty-one percent, then the amount of damages recoverable shall be reduced in proportion to the degree or percentage of negligence attributable to the person suffering the injury, death, or loss. * * * D. In cases where the issue of comparative fault is submitted to the jury, the jury shall be instructed on the effect of this Article. Section 2. This Act shall become effective on January 1, 2026.",
+      "text_sha256": "e45248f75768a5f2acbcf62f0f05f4554cf80ae6a4af3928b90a83d19bef0552",
+      "publisher_sha256": "611cb13850bfb7e173ebcb0cd3c7aa09091ac15ac4b2c3b0d05ef9db9ecab415",
+      "retrieved_at": "2026-11-23T21:05:28.228567+00:00",
+      "language": "en",
+      "authority_type": "session_law",
+      "currentness": "unresolved",
+      "effective_from": "2026-01-01",
+      "edition": "Enrolled Louisiana House Bill 431, Act No. 15, 2025 regular session",
+      "scope_notes": "Enacted modified comparative fault threshold and jury instruction. The act states its effective date. Retroactivity and subsequent developments require separate review."
+    },
+    "06f258f282bc77929b0e7c33966d3a": {
+      "source_id": "US-LA:joint_several_liability:c5483902bde2",
+      "citation": "La. Civ. Code art. 2324(A)–(B)",
+      "text": "A. He who conspires with another person to commit an intentional or willful act is answerable, in solido, with that person, for the damage caused by such act. B. If liability is not solidary pursuant to Paragraph A, then liability for damages caused by two or more persons shall be a joint and divisible obligation. A joint tortfeasor shall not be liable for more than his degree of fault and shall not be solidarily liable with any other person for damages attributable to the fault of such other person, including the person suffering injury, death, or loss, regardless of such other person's insolvency, ability to pay, degree of fault, immunity by statute or otherwise, including but not limited to immunity as provided in R.S. 23:1032, or that the other person's identity is not known or reasonably ascertainable.",
+      "text_sha256": "02b422a3851424a0bdc6a68869bc06d4322b856cbd146750b55c526a9517b22e",
+      "publisher_sha256": "1dbb263a65140f77ad47c6f9e433c5c3692c0665a540df760f23dbd0a0e9db06",
+      "retrieved_at": "2026-11-23T21:05:27.825841+00:00",
+      "language": "en",
+      "authority_type": "statute",
+      "currentness": "unresolved",
+      "scope_notes": "Preserves Louisiana civil-law solidary liability for conspirators in intentional or willful acts, and the otherwise joint and divisible obligation."
+    },
+    "b2c5e080244d7233ebe429bf01efeb": {
+      "source_id": "US-LA:pi_limitations:c9bd2d0d6892",
+      "citation": "2024 La. Acts No. 423, §§ 3–4",
+      "text": "Section 3. The provisions of this Act shall be given prospective application only and shall apply to delictual actions arising after the effective date of this Act. Section 4. This Act shall become effective on July 1, 2024.",
+      "text_sha256": "5f6bcdad62a4a84b4190023bae0f8d99ed2bb9a7907682d83673cae539f18b07",
+      "publisher_sha256": "c2db7f50a67e2e1123b9d3f281a069a2934670aee0107fe0f950ccb22b131a56",
+      "retrieved_at": "2026-11-23T21:07:07.261544+00:00",
+      "language": "en",
+      "authority_type": "session_law",
+      "currentness": "unresolved",
+      "effective_from": "2024-07-01",
+      "edition": "Enrolled Louisiana House Bill 315, Act No. 423, 2024 regular session",
+      "scope_notes": "Prospective applicability of the 2024 two-year prescription act. The act expressly applies to delictual actions arising after its July 1, 2024 effective date. The passage does not calculate an individual deadline."
     }
   },
   "fault_allocation": {
@@ -852,6 +956,6 @@
     "passage_selector": "fa32f55038ba2f8c88ad0e24188a70",
     "source_id": "US-LA:fault:b6c8ac710079",
     "currentness": "unresolved",
-    "qualification": "Classification applies only within the quoted provision. Exceptions, effective dates and other potentially governing authorities require review."
+    "qualification": "Article 2323 as amended effective January 1, 2026. Paragraph C addresses mixed negligence and intentional fault. Verify which edition applies before applying the threshold."
   }
 }

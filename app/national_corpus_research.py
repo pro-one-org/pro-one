@@ -16,7 +16,8 @@ from app.retrieval import tokens
 
 
 STATE_CODES = {name: code for code, name in SUBNATIONAL_NAMES.items()}
-SOURCE_TYPES = {"statute": "statute", "regulation": "regulation", "opinion": "court_opinion",
+# The source schema groups enacted session laws with statutes. The normalized corpus keeps session law as a distinct family.
+SOURCE_TYPES = {"statute": "statute", "session_law": "statute", "regulation": "regulation", "opinion": "court_opinion",
                 "court_rule": "court_rule", "constitution": "constitution", "register_document": "other"}
 FAMILY_PRIORITY = ("statute", "regulation", "opinion", "constitution", "court_rule", "register_document")
 CORPUS_ANCHORS = {"summary_judgment": ("summary judgment genuine dispute material fact",), "landlord_repairs": (

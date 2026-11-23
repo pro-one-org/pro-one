@@ -148,6 +148,8 @@ class RetainedLegislativeResearch:
             for passage in passages:
                 passage["verification"]["retrieved_on"] = row["retrieved_at"][:10]
                 passage["limitations"].extend(v.limitations)
+                if row.get("scope_notes"):
+                    passage["limitations"].append(row["scope_notes"])
                 if v.current_as_of:
                     passage["limitations"].append("Publisher certification applies as of " + v.current_as_of.isoformat() + ".")
             self.documents[source["id"]] = AuthorityDocument(source, tuple(passages), v.text)

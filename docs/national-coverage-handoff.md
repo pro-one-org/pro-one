@@ -91,6 +91,15 @@
 
 - The Connecticut Judicial Branch now distributes JD-CV-1, revision August 2026. The direct PDF is linked to the verified 2026 Practice Book § 8-1(a) capture and applies to ordinary Superior Court civil writs substantially in compliance with the form. Its instructions distinguish the clerk-signed pro se route, exclusions, and filing after service. Fourteen official form artifacts are indexed and nine have a verified form and requirement binding. [Official JD-CV-1](https://www.jud.ct.gov/webforms/forms/cv001.pdf) and [2026 Connecticut Practice Book](https://www.jud.ct.gov/publications/PracticeBook/PB.pdf).
 
+## Florida and Wisconsin premises and Louisiana transitions
+
+- Checkpoint `444d255` passed 668 local regression tests and [exact-head CI](https://github.com/pro-one-org/pro-one/actions/runs/45265469918), including production container build and smoke.
+
+- Florida adds the 2026 Online Sunshine text on notice for transitory foreign substances in business establishments and the separate trespasser immunity, duty and exceptions provision. The source edition is recorded and subsequent currentness remains unresolved.
+- Wisconsin adds the published Rosario decision on actual or constructive notice for an unsafe condition associated with the structure of a public building. The passage remains historical and scoped to that test.
+- Louisiana preserves the January 1, 2026 comparative fault amendment with the prior proportional-reduction clause, the separate solidary liability provision, and the July 1, 2024 prescription act's prospective applicability. The date evidence does not resolve a particular action's governing version.
+- Fifteen jurisdictions have premises evidence. The corpus has 1,460 authority versions, including 164 dated publisher verifications, 524 historical and 772 currentness-unresolved. Of 3,764 coverage cells, 1,438 are unsupported, 1,660 partial and 666 reference-only. Checks are logged under `.local/transitions-verified-*.log`.
+
 ## Next priorities
 
 - Close substantive baseline gaps first. Continue personal-injury accrual and tolling, exceptions to fault regimes, ordinary contract breach and damages, and premises coverage as measured in the tracker.

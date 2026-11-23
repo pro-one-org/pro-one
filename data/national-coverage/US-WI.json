@@ -1038,6 +1038,18 @@
         "retrieved_at": "2026-11-23T16:20:02.068396+00:00",
         "sha256": "1c43811a3ed2e2dfb288cbe3de47de0a0269483190045082f599a75e57dca3e1"
       }
+    },
+    "US-WI:premises:bb19836e7532": {
+      "category": "premises",
+      "title": "Rosario v. Acuity, 2007 WI App 194, ¶ 12",
+      "url": "https://www.wicourts.gov/ca/opinion/DisplayDocument.pdf?content=pdf&seqNo=29585",
+      "locator": "Rosario v. Acuity, 2007 WI App 194, ¶ 12",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:02:56.436198+00:00",
+        "sha256": "8c0dfdfffce82058f3d948b135e47ad80b1c97cd12da6a0cb8fe35f37137cad1"
+      }
     }
   },
   "court_directory": [
@@ -2072,6 +2084,23 @@
       "decision_date": "2015-06-23",
       "opinion_role": "majority",
       "procedural_posture": "Review of summary judgment involving wrongful-death and survival claims arising from alleged benzene exposure."
+    },
+    "7154bf0c277e573131baad7b801732": {
+      "source_id": "US-WI:premises:bb19836e7532",
+      "citation": "Rosario v. Acuity, 2007 WI App 194, ¶ 12",
+      "text": "A property owner must have actual or constructive notice of the defect to be liable for an unsafe condition associated with the structure of the building. Pettric v. Gridley Dairy Co., 202 Wis. 289, 293, 232 N.W. 595 (1930). The general rule is that constructive notice is chargeable only where the hazard has existed for a sufficient length of time to allow the vigilant owner … the opportunity to discover and remedy the situation. The length of time viewed as sufficient varies according to the nature of the business, the nature of the defect, and the public policy involved. May v. Skelley Oil Co., 83 Wis. 2d 30, 36-37, 264 N.W.2d 574 (1978).",
+      "text_sha256": "f8e9525f0e7a5606303c41c8bc91f084ed50f020993e958f115ceb255c7f0dd5",
+      "publisher_sha256": "8c0dfdfffce82058f3d948b135e47ad80b1c97cd12da6a0cb8fe35f37137cad1",
+      "retrieved_at": "2026-11-23T21:02:56.436198+00:00",
+      "language": "en",
+      "authority_type": "opinion",
+      "currentness": "historical",
+      "edition": "Court-published opinion of 2007-07-10",
+      "court": "Wisconsin Court of Appeals",
+      "decision_date": "2007-07-10",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from summary judgment in a safe-place and negligence action.",
+      "scope_notes": "Notice for an unsafe condition associated with the structure of a public building. Structural defects and ordinary negligence require separate analysis."
     }
   },
   "fault_allocation": {
