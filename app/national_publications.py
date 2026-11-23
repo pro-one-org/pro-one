@@ -20,7 +20,8 @@ class LegislativeExcerpts:
         hosts = sorted({urlsplit(record["sources"][p["source_id"]]["url"]).hostname
                         for p in record.get("passages", {}).values() if p["authority_type"] == authority_type})
         prefix = {"statute": "legislative_excerpts_", "constitution": "constitutional_excerpts_",
-                  "court_rule": "court_rule_excerpts_",
+                  "session_law": "session_law_excerpts_", "court_rule": "court_rule_excerpts_",
+                  "court_instruction": "court_instruction_excerpts_",
                   "opinion": "judicial_opinion_excerpts_"}[authority_type]
         self.source = Source(
             name=prefix + jurisdiction.lower().replace("-", "_"),
@@ -62,8 +63,10 @@ class LegislativeExcerpts:
         publisher = urlsplit(source["url"]).hostname
         namespace = {
             "statute": "legislative_publication",
+            "session_law": "legislative_publication",
             "constitution": "constitutional_publication",
             "court_rule": "judicial_publication",
+            "court_instruction": "judicial_publication",
             "opinion": "judicial_publication",
         }[self.source.authority_type]
         day, basis = (certified_basis(owner.id, source["url"], row["publisher_sha256"], row["publisher_path"], citation, row["text"])
@@ -76,7 +79,7 @@ class LegislativeExcerpts:
             edition=row.get("edition", f"publisher capture {retrieved.isoformat()}"),
             effective_from=date.fromisoformat(row["effective_from"]) if row.get("effective_from") else None,
             effective_until=date.fromisoformat(row["effective_until"]) if row.get("effective_until") else None,
-            text=row["text"], legislature=publisher if self.source.authority_type == "statute" else None,
+            text=row["text"], legislature=publisher if self.source.authority_type in {"statute", "session_law"} else None,
             court=row.get("court"), currentness=row["currentness"],
             published_on=date.fromisoformat(row["decision_date"]) if row.get("decision_date") else None,
             opinion_role=row.get("opinion_role"), procedural_posture=row.get("procedural_posture"),

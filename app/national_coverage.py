@@ -20,7 +20,7 @@ CAPABILITIES = {
                     "contract": ("contract", "commercial_code", "contract_formation", "contract_breach",
                                  "general_contract_damages"), "consumer": ("consumerLaw", "consumer_agency"),
                     "landlord_tenant": ("deposit", "eviction"), "debt": ("debtLaw",),
-                    "wage": ("wageLaw", "wage_separation", "labor_agency")},
+                    "wage": ("wageLaw", "wage_separation", "labor_agency", "wage_equal_pay")},
     "negligence": {"duty": ("negligence_duty", "negligence_elements"), "breach": ("negligence_breach", "negligence_elements"),
                    "causation": ("negligence_causation", "negligence_elements"), "injury": ("negligence_injury", "negligence_elements"),
                    "premises_relationship": ("premises",), "plaintiff_fault": ("fault",)},
@@ -91,6 +91,14 @@ def manifest(scope):
         if (not key.startswith(scope + ":form:") or form["source_id"] not in sources
                 or form["index_source_id"] not in sources or form["automated_completion"] != "disabled"):
             raise ValueError("invalid_form_reference")
+        if form.get("mandatory") == "required_for_stated_scope":
+            requirement = record.get("passages", {}).get(form.get("requirement_passage_selector"))
+            observation = sources[form["source_id"]].get("observation", {})
+            if (form.get("action_type") not in ACTION_REQUIREMENTS or not form.get("applicability")
+                    or not re.fullmatch("[a-f0-9]{64}", form.get("form_sha256", ""))
+                    or form["form_sha256"] != observation.get("sha256") or not form.get("revision")
+                    or not requirement):
+                raise ValueError("invalid_mandatory_form_requirement")
     for selector, passage in record.get("passages", {}).items():
         source = sources.get(passage["source_id"])
         capture = passage["publisher_sha256"]
@@ -139,6 +147,23 @@ def action_shells(scope):
             "effective_from": passage.get("effective_from"), "effective_until": passage.get("effective_until"),
             "edition": passage.get("edition"),
         })
+    official_forms = defaultdict(list)
+    for key, form in record.get("forms", {}).items():
+        if form.get("mandatory") == "required_for_stated_scope":
+            requirement = record["passages"][form["requirement_passage_selector"]]
+            official_forms[form["action_type"]].append({
+                "id": key,
+                "title": form["title"],
+                "publisher_identifier": form["publisher_identifier"],
+                "url": record["sources"][form["source_id"]]["url"],
+                "revision": form["revision"],
+                "court_scope": form["court_scope"],
+                "applicability": form["applicability"],
+                "requirement_passage_selector": form["requirement_passage_selector"],
+                "requirement_citation": requirement["citation"],
+                "requirement_currentness": requirement["currentness"],
+                "automated_completion": form["automated_completion"],
+            })
     return [{
         "id": f"{scope[3:].lower()}_{kind}_reference", "jurisdiction": scope, "version": record["version"],
         "action_type": kind, "path": "pre_suit" if kind == "demand" else "civil_response" if kind == "answer" else "civil_initiation",
@@ -153,6 +178,7 @@ def action_shells(scope):
                             if topic in evidence},
         "court_references": by_category["judiciary"], "rules_references": by_category["civil_rules"],
         "document_strategy": "reviewed_demand_basis_required" if kind == "demand" else "resolve_mandatory_form_and_local_requirements",
+        "official_form_references": official_forms[kind],
         "local_rules": "not_assessed" if kind == "demand" else "local_rule_required",
         "currentness": "currentness_unresolved", "readiness": "blocked", "execution": "disabled",
     } for kind, deps in ACTION_REQUIREMENTS.items()]

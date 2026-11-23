@@ -23,6 +23,37 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_signed_mississippi_equal_pay_act_keeps_its_effective_date_and_topic(self):
+        provider = RetainedLegislativeResearch()
+        matter = ResearchMatter(country="US", state="Mississippi", legal_area="employment",
+                                topics=["equal_pay"], authority_status="unresolved")
+        matches = provider.search(matter)
+        self.assertEqual(len(matches), 2)
+        self.assertTrue(any("same establishment" in provider.fetch(match).text for match in matches))
+        manifest_row = manifest("US-MS")
+        equal_pay = {selector: row for selector, row in manifest_row["passages"].items()
+                     if manifest_row["sources"][row["source_id"]]["category"] == "wage_equal_pay"
+                     and "ch. 490" in row["citation"]}
+        self.assertEqual({row["effective_from"] for row in equal_pay.values()}, {"2022-07-01"})
+        self.assertTrue(equal_pay.keys().isdisjoint(coverage("US-MS")["cells"]["wages.payment"]["passage_selectors"]))
+        louisiana = provider.search(matter.model_copy(update={"state": "Louisiana"}))
+        self.assertTrue(set(matches).isdisjoint(louisiana))
+
+    def test_official_mandatory_form_reference_is_scoped_to_its_action_and_court(self):
+        shells = {row["action_type"]: row for row in coverage("US-CA")["action_shells"]}
+        self.assertEqual(shells["complaint"]["official_form_references"], [])
+        form, = shells["small_claim"]["official_form_references"]
+        self.assertEqual(form["publisher_identifier"], "SC-100")
+        self.assertEqual(form["revision"], "2026-01-01")
+        self.assertEqual(form["court_scope"], "small_claims")
+        self.assertEqual(form["requirement_currentness"], "unresolved")
+        self.assertIn("Mandatory Form",
+                      manifest("US-CA")["passages"][form["requirement_passage_selector"]]["text"])
+        self.assertEqual((form["automated_completion"], shells["small_claim"]["execution"]),
+                         ("disabled", "disabled"))
+        self.assertTrue(all(form["id"] != other["id"] for shell in coverage("US-OR")["action_shells"]
+                            for other in shell["official_form_references"]))
+
     def test_premises_open_and_obvious_authority_stays_in_its_jurisdiction(self):
         provider = RetainedLegislativeResearch()
         matter = ResearchMatter(country="US", state="Ohio", legal_area="torts", topics=["premises_liability"],
@@ -1225,6 +1256,40 @@ class NationalCoverageTests(unittest.TestCase):
                                         for shell in row["action_shells"]))
                     self.assertTrue(row["cells"]["procedure.small_claims"]["source_ids"])
                     self.assertTrue(row["court_directory"])
+
+    def test_general_civil_shell_binds_local_selection_and_procedure_in_every_state_and_dc(self):
+        identifiers = set()
+        for scope, owner in registry().items():
+            row = coverage(scope)
+            if owner.kind not in {"state", "district"}:
+                self.assertEqual(row["action_shells"], [])
+                continue
+            with self.subTest(scope=scope):
+                shell, = (action for action in row["action_shells"] if action["action_type"] == "complaint")
+                self.assertEqual(shell["jurisdiction"], scope)
+                self.assertNotIn(shell["id"], identifiers)
+                identifiers.add(shell["id"])
+                self.assertEqual((shell["path"], shell["stage"]), ("civil_initiation", "reference"))
+                self.assertEqual(shell["court_selection"], "user_must_identify_court")
+                self.assertEqual(shell["claim_analysis"], "verified_applicable_basis_required")
+                self.assertIn("party_role", shell["party_requirements"])
+                self.assertIn("attributed_material_facts", shell["matter_requirements"])
+                self.assertEqual(set(shell["procedure_dependencies"]),
+                                 {"commencement", "venue", "service", "fees", "e_filing"})
+                self.assertEqual(shell["document_strategy"], "resolve_mandatory_form_and_local_requirements")
+                self.assertEqual((shell["local_rules"], shell["coverage_status"]),
+                                 ("local_rule_required", "local_rule_required"))
+                self.assertEqual((shell["readiness"], shell["execution"]), ("blocked", "disabled"))
+                self.assertTrue(shell["court_references"])
+                self.assertTrue(shell["rules_references"])
+                for category in ("commencement", "service"):
+                    self.assertTrue(shell["procedure_evidence"][category])
+                    for item in shell["procedure_evidence"][category]:
+                        self.assertIn(item["source_id"], shell["procedure_dependencies"][category])
+                        self.assertEqual(row["sources"][item["source_id"]]["category"], category)
+                        self.assertEqual(manifest(scope)["passages"][item["passage_selector"]]["citation"],
+                                         item["citation"])
+        self.assertEqual(len(identifiers), 51)
 
     def test_exact_publication_replay_rejects_invented_or_changed_text(self):
         publisher_editions = {

@@ -744,6 +744,18 @@
         "retrieved_at": "2026-11-22T03:54:40.891953+00:00",
         "sha256": "ef14c2b701c706679eac2002144d65fd38a76c4600e377c9e43733d0c79b2b03"
       }
+    },
+    "US-CA:small_claim_form:39a5417ea232": {
+      "category": "small_claim_form",
+      "title": "Judicial Council of California Form SC-100 (rev. Jan. 1, 2026)",
+      "url": "https://courts.ca.gov/sites/default/files/courts/default/2024-11/sc100.pdf",
+      "locator": "Judicial Council of California Form SC-100 (rev. Jan. 1, 2026)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T15:32:12.491822+00:00",
+        "sha256": "ef3421b14ebf64dbf884566ff659b39776035ec5b6e6500be0af91e3cc15533c"
+      }
     }
   },
   "court_directory": [
@@ -806,14 +818,18 @@
     "US-CA:form:SC-100": {
       "title": "Plaintiff's Claim and Order to Go to Small Claims Court",
       "publisher_identifier": "SC-100",
-      "source_id": "US-CA:small_claim_form:809c694880d3",
+      "source_id": "US-CA:small_claim_form:39a5417ea232",
       "index_source_id": "US-CA:small_claims:d10e23cd9a32",
       "index_sha256": "690642dcffcc55f5da19a7d78d033422b59c2245f54a16251e4e36e4cd5b21e8",
       "court_scope": "small_claims",
-      "mandatory": "review_required",
-      "revision": null,
-      "last_observed": "2026-11-17T19:42:33.238783+00:00",
-      "automated_completion": "disabled"
+      "mandatory": "required_for_stated_scope",
+      "revision": "2026-01-01",
+      "last_observed": "2026-11-23T15:32:12.491822+00:00",
+      "automated_completion": "disabled",
+      "form_sha256": "ef3421b14ebf64dbf884566ff659b39776035ec5b6e6500be0af91e3cc15533c",
+      "action_type": "small_claim",
+      "requirement_passage_selector": "2218d423001acbf8427a9a7eb1f9c2",
+      "applicability": "Plaintiff initiating an ordinary California Superior Court small-claims case. Confirm court, case type, attachments and the applicable revision before use."
     },
     "US-CA:form:SC-120": {
       "title": "Defendant's Claim and Order to Go to Small Claims Court",
@@ -1458,6 +1474,21 @@
       "publisher_section_id": "BPC17204.20211401",
       "publisher_history": "Amended by Stats. 2021, Ch. 140, Sec. 1.   (SB 461)   Effective January 1, 2022.   Note: This section was amended on Nov. 2, 2004, by initiative Prop. 64.",
       "edition": "California Legislative Counsel PUBINFO archive, modified November 16, 2026"
+    },
+    "2218d423001acbf8427a9a7eb1f9c2": {
+      "source_id": "US-CA:small_claim_form:39a5417ea232",
+      "authority_type": "court_instruction",
+      "citation": "Judicial Council of California Form SC-100 (rev. Jan. 1, 2026)",
+      "text": "Judicial Council of California, courts.ca.gov Rev. January 1, 2026, Mandatory Form Plaintiff's Claim and ORDER to Go to Small Claims Court",
+      "text_sha256": "82f36516c8f2629faa2f6e46bfdfd71286a3bb6b842b4d23554508a92dc94fe3",
+      "publisher_sha256": "ef3421b14ebf64dbf884566ff659b39776035ec5b6e6500be0af91e3cc15533c",
+      "retrieved_at": "2026-11-23T15:32:12.491822+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Superior Court of California",
+      "edition": "Judicial Council revision effective January 1, 2026",
+      "effective_from": "2026-01-01",
+      "publisher_member": "SC-100, page 1, title and mandatory-use designation"
     }
   },
   "fault_allocation": {
