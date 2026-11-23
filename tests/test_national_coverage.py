@@ -761,6 +761,22 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
                                                                   "authority_as_of": "2026-11-23"})))
 
+    def test_premises_sources_keep_proof_and_procedural_limits(self):
+        provider = RetainedLegislativeResearch()
+        for state, text in (
+            ("Kentucky", "failed to submit proof of a material fact"),
+            ("Minnesota", "question of comparative negligence"),
+            ("West Virginia", "a defense that must be raised by the defendant"),
+        ):
+            with self.subTest(state=state):
+                query = ResearchMatter(country="US", state=state, legal_area="torts",
+                                       topics=["premises_liability"], authority_status="historical")
+                documents = [provider.fetch(key) for key in provider.search(query)]
+                self.assertTrue(any(text in doc.text for doc in documents))
+                self.assertTrue(all(doc.source["jurisdiction"]["state"] == state for doc in documents))
+                self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                          "authority_as_of": "2026-11-23"})))
+
     def test_vermont_entrant_rule_and_rhode_island_lessor_exceptions_stay_local(self):
         provider = RetainedLegislativeResearch()
         query = ResearchMatter(country="US", state="Vermont", legal_area="torts",

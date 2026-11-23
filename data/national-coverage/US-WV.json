@@ -463,6 +463,18 @@
         "retrieved_at": "2026-11-21T22:06:49.650217+00:00",
         "sha256": "0ee05eb2712a88f1e98eba5414a7d1c8bb0612b4b95d77b5222a39fb9dfb64dd"
       }
+    },
+    "US-WV:premises:ae52058d4eff": {
+      "category": "premises",
+      "title": "Gable v. Gable, No. 19-1077, slip op. at 29 (W. Va. June 1, 2021)",
+      "url": "https://www.courtswv.gov/sites/default/pubfilesmnt/2023-11/19-1077.pdf",
+      "locator": "Gable v. Gable, No. 19-1077, slip op. at 29 (W. Va. June 1, 2021)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:24:36.511475+00:00",
+        "sha256": "2832633f5338b097e8a18623c28473f189e8e78ff72a0b1b4248dea07920e563"
+      }
     }
   },
   "court_directory": [
@@ -867,6 +879,23 @@
       "court": "West Virginia trial courts of record governed by the West Virginia Rules of Civil Procedure",
       "publisher_member": "West Virginia Judiciary revised civil rules PDF p. 8, effective January 1, 2025",
       "effective_from": "2025-01-01"
+    },
+    "ef33023164a6519d59f5ff08f07e89": {
+      "source_id": "US-WV:premises:ae52058d4eff",
+      "citation": "Gable v. Gable, No. 19-1077, slip op. at 29 (W. Va. June 1, 2021)",
+      "text": "We hold that under West Virginia Code § 55-7-28(a), whether a danger was open, obvious, reasonably apparent or as well known to the person injured as it was to the owner or occupant is a question of fact. Furthermore, the question of whether the danger or hazard is one contemplated by the statute is a defense that must be raised by the defendant, and not by the plaintiff in his or her complaint. It was error for the circuit court to have dismissed the complaint merely because the plaintiff omitted any allegation that the object that caused his fall was not open, obvious, reasonably apparent, or as well known to him as it was to the defendant.",
+      "text_sha256": "f49258daba8a02003377df9614dc02147c47a1189151c4ad4c38891fe1040399",
+      "publisher_sha256": "2832633f5338b097e8a18623c28473f189e8e78ff72a0b1b4248dea07920e563",
+      "retrieved_at": "2026-11-23T21:24:36.511475+00:00",
+      "language": "en",
+      "authority_type": "opinion",
+      "currentness": "historical",
+      "edition": "Court-published opinion of 2021-06-01",
+      "court": "Supreme Court of Appeals of West Virginia",
+      "decision_date": "2021-06-01",
+      "opinion_role": "majority",
+      "procedural_posture": "Appeal from dismissal under Rule 12(b)(6) in a premises liability action.",
+      "scope_notes": "Interprets the reinstated open-and-obvious statute in the motion-to-dismiss posture. The decision treats openness or obviousness as a factual defense and does not determine subsequent statutory currency."
     }
   },
   "fault_allocation": {

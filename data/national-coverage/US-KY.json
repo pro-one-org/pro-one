@@ -454,6 +454,18 @@
         "retrieved_at": "2026-11-20T15:18:10.026493+00:00",
         "sha256": "73b93b36d3c61e592f831a0bbfa82859fa4a8e3e2e96bb8dbf62c8407c1549ad"
       }
+    },
+    "US-KY:premises:3c450bfd459f": {
+      "category": "premises",
+      "title": "Phelps v. Bluegrass Hospitality Management, LLC, No. 2019-SC-0613-DG, slip op. at 10 (Ky. Sept. 30, 2021)",
+      "url": "https://appellatepublic.kycourts.net/api/api/v1/publicaccessdocuments/2748ce1a21c2c056e4d9885660de7e59d80979bd773083707b8131fc3fca2263/download",
+      "locator": "Phelps v. Bluegrass Hospitality Management, LLC, No. 2019-SC-0613-DG, slip op. at 10 (Ky. Sept. 30, 2021)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:22:33.916794+00:00",
+        "sha256": "8100c66042b789c2b86d5fdf2851ea0905a5f9a8e6a1e6549fd4c3c2cbad6152"
+      }
     }
   },
   "court_directory": [
@@ -851,6 +863,23 @@
       "currentness": "unresolved",
       "language": "en",
       "effective_from": "1942-10-01"
+    },
+    "c47fc6e8342f57378dc37e7fc7ba78": {
+      "source_id": "US-KY:premises:3c450bfd459f",
+      "citation": "Phelps v. Bluegrass Hospitality Management, LLC, No. 2019-SC-0613-DG, slip op. at 10 (Ky. Sept. 30, 2021)",
+      "text": "Even if Phelps had been able to present any tangible evidence establishing BGH knew or should have known of a hazardous condition on its premises and breached its duty to correct or warn of it, the open and obvious doctrine would not have authorized dismissal of her claim under comparative negligence simply because of her own complicity in failing to recognize and/or avoid the danger. In that case, BGH would have been entitled to summary judgment only if it could show Phelps was “so clearly the only fault of [her] injury” that the business bore no responsibility. Id. Otherwise, the trier would remain tasked with apportioning fault and liability for Phelps’ injury. While the Court of Appeals erred in applying the open and obvious doctrine to dismiss Phelps’ claim, this misadventure does not rise to the level of reversible error because we have held she failed to submit proof of a material fact—that being the presence of a hazardous condition upon BGH’s business premises—and because the judgment of a lower court can be affirmed for any reason supported in the record. Fischer v. Fischer, 348 S.W.3d 582, 591 (Ky. 2011).",
+      "text_sha256": "1a17edadbd6190573224351ff0cf706d01bfa132a39f5050e18bab615415a5c1",
+      "publisher_sha256": "8100c66042b789c2b86d5fdf2851ea0905a5f9a8e6a1e6549fd4c3c2cbad6152",
+      "retrieved_at": "2026-11-23T21:22:33.916794+00:00",
+      "language": "en",
+      "authority_type": "opinion",
+      "currentness": "historical",
+      "edition": "Court-published opinion of 2021-09-30",
+      "court": "Supreme Court of Kentucky",
+      "decision_date": "2021-09-30",
+      "opinion_role": "majority",
+      "procedural_posture": "Discretionary review of summary judgment after a restaurant patron's fall.",
+      "scope_notes": "Open-and-obvious danger and comparative fault in the stated Kentucky premises case. The court affirmed because evidence of a hazardous condition was missing."
     }
   },
   "fault_allocation": {

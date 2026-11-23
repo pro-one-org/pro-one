@@ -112,6 +112,12 @@
 - Louisiana articles 3494 and 3495 distinguish the listed three-year prescription claims and the accrual of past-due payments. Missouri's published Smock opinion supports ascertainable damages in its stated claims context. The Louisiana text remains currentness-unresolved and the Missouri decision remains historical.
 - Four jurisdictions now have separately indexed contract-accrual evidence. The corpus has 1,466 authority versions, including 164 dated publisher verifications, 528 historical and 774 currentness-unresolved. Of 3,764 coverage cells, 1,434 are unsupported, 1,664 partial and 666 reference-only. Checks are recorded under `.local/payment-accrual-final-*.log`.
 
+## Kentucky, Minnesota, and West Virginia premises checkpoint
+
+- Checkpoint `3b57cf3` passed 672 local tests and [exact-head CI](https://github.com/pro-one-org/pro-one/actions/runs/45268884460), including production build and smoke.
+- Kentucky's Phelps opinion distinguishes open-and-obvious danger from the requirement to prove the hazard. Minnesota's Foss opinion separately preserves reasonable care toward invitees and the effect of child supervision and foreseeability. West Virginia's Gable opinion preserves the factual defense and the limits of a motion to dismiss. The three opinions remain historical.
+- Twenty jurisdictions now have premises evidence. The corpus has 1,470 versions, including 164 dated publisher verifications, 532 historical and 774 currentness-unresolved. Of 3,764 coverage cells, 1,428 are unsupported, 1,670 partial and 666 reference-only. Checks are recorded under `.local/premises-ky-mn-wv-*.log`.
+
 ## Next priorities
 
 - Close substantive baseline gaps first. Continue personal-injury accrual and tolling, exceptions to fault regimes, ordinary contract breach and damages, and premises coverage as measured in the tracker.

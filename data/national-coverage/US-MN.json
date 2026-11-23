@@ -559,6 +559,30 @@
         "retrieved_at": "2026-11-22T03:30:05.746922+00:00",
         "sha256": "d2d16f2662022fb0e624f46abc78a9885e2a2dd9561d2bada19c08312bb9f95a"
       }
+    },
+    "US-MN:premises:465719222bde": {
+      "category": "premises",
+      "title": "Foss v. Kincade, No. A07-0313, slip op. at 6 (Minn. May 14, 2009)",
+      "url": "https://mn.gov/web/prod/static/lawlib/live/archive/supct/0905/OPA070313-0514.pdf",
+      "locator": "Foss v. Kincade, No. A07-0313, slip op. at 6 (Minn. May 14, 2009)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:22:34.894543+00:00",
+        "sha256": "91cb9bad1b45a2550e44b83b49a8db3998cfb08d4f415e83ef16be255e37e509"
+      }
+    },
+    "US-MN:premises:418c008ba419": {
+      "category": "premises",
+      "title": "Foss v. Kincade, No. A07-0313, slip op. at 10 (Minn. May 14, 2009)",
+      "url": "https://mn.gov/web/prod/static/lawlib/live/archive/supct/0905/OPA070313-0514.pdf",
+      "locator": "Foss v. Kincade, No. A07-0313, slip op. at 10 (Minn. May 14, 2009)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T21:22:34.894543+00:00",
+        "sha256": "91cb9bad1b45a2550e44b83b49a8db3998cfb08d4f415e83ef16be255e37e509"
+      }
     }
   },
   "court_directory": [
@@ -1011,6 +1035,40 @@
       "currentness": "unresolved",
       "language": "en",
       "publisher_member": "Minnesota Revisor of Statutes, defined consumer sales and private recovery of damages, fees and equitable relief."
+    },
+    "631da7d4b0d9c2ef4320f82eae624a": {
+      "source_id": "US-MN:premises:465719222bde",
+      "citation": "Foss v. Kincade, No. A07-0313, slip op. at 6 (Minn. May 14, 2009)",
+      "text": "As part of our analysis in Peterson, we held that a landowner owed a duty “to use reasonable care for the safety of all such persons invited upon the premises, regardless of the status of the individuals.” Id. at 174, 199 N.W.2d at 647. Under the rule announced in Peterson, “the extent of the duty of the owner to inspect, repair, or warn those who come upon the land as licensees or invitees will be decided by the test of reasonable care.” Id. According to Peterson, among the factors that might be considered in determining liability are “the circumstances under which the entrant enters the land (licensee or invitee); foreseeability or possibility of harm; duty to inspect, repair, or warn; reasonableness of inspection or repair; and opportunity and ease of repair or correction.” Id. at 174, 199 N.W.2d at 648 n.7.",
+      "text_sha256": "03981052ac894dc2a5347219a0aeb3c466d4373f86b116a1f7a1625be9a26f39",
+      "publisher_sha256": "91cb9bad1b45a2550e44b83b49a8db3998cfb08d4f415e83ef16be255e37e509",
+      "retrieved_at": "2026-11-23T21:22:34.894543+00:00",
+      "language": "en",
+      "authority_type": "opinion",
+      "currentness": "historical",
+      "edition": "Court-published opinion of 2009-05-14",
+      "court": "Minnesota Supreme Court",
+      "decision_date": "2009-05-14",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of summary judgment following an injury to a minor social guest.",
+      "scope_notes": "Reasonable care for invitees and licensees and the factors for inspection, repair and warning."
+    },
+    "ad3a37826722c6b9104fc5a0a7fadb": {
+      "source_id": "US-MN:premises:418c008ba419",
+      "citation": "Foss v. Kincade, No. A07-0313, slip op. at 10 (Minn. May 14, 2009)",
+      "text": "As we expressed in Canada, whether an invitee child’s injuries might also be causally linked to a parent’s failure to supervise is a question of comparative negligence, not a ground on which to extinguish the landowner’s duty to maintain a safe premises for social guests. See id. Although we do not, as the court of appeals did, premise our holding here on the presence of Peggy Foss, we nonetheless conclude that the harm to David was not reasonably foreseeable.",
+      "text_sha256": "685add52b72e75d78adcdb75e0cb7467d40c19efc62990c08e2d029c94f88dea",
+      "publisher_sha256": "91cb9bad1b45a2550e44b83b49a8db3998cfb08d4f415e83ef16be255e37e509",
+      "retrieved_at": "2026-11-23T21:22:34.894543+00:00",
+      "language": "en",
+      "authority_type": "opinion",
+      "currentness": "historical",
+      "edition": "Court-published opinion of 2009-05-14",
+      "court": "Minnesota Supreme Court",
+      "decision_date": "2009-05-14",
+      "opinion_role": "majority",
+      "procedural_posture": "Review of summary judgment following an injury to a minor social guest.",
+      "scope_notes": "A parent's supervision in the minor-guest context affects comparative negligence. The court separately considered foreseeability."
     }
   },
   "fault_allocation": {
