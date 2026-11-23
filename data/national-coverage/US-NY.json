@@ -521,6 +521,30 @@
         "retrieved_at": "2026-11-22T03:56:22.229649+00:00",
         "sha256": "3c32c53856a001a8fbbfb330f4d4529329c452a657cf2520742cb2c5628eb855"
       }
+    },
+    "US-NY:fault:daab6c3a5c05": {
+      "category": "fault",
+      "title": "2026 N.Y. Laws ch. 58, pt. EE, § 4",
+      "url": "https://www.nysenate.gov/legislation/bills/2025/A10008/amendment/C",
+      "locator": "2026 N.Y. Laws ch. 58, pt. EE, § 4",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:13:27.696126+00:00",
+        "sha256": "5de2a1c0a2736e90824850015ee1e9f0bd5b3936c36cdd16ed2b52452b837df0"
+      }
+    },
+    "US-NY:fault:c9128d5534eb": {
+      "category": "fault",
+      "title": "N.Y. CPLR 1411",
+      "url": "https://www.nysenate.gov/legislation/bills/2025/A10008/amendment/C",
+      "locator": "N.Y. CPLR 1411",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:13:27.696126+00:00",
+        "sha256": "5de2a1c0a2736e90824850015ee1e9f0bd5b3936c36cdd16ed2b52452b837df0"
+      }
     }
   },
   "court_directory": [
@@ -673,7 +697,9 @@
       "text_sha256": "442063ddeed4e06493d0a1fc452f23e9e9a08b55bb3749ca89aefdf147f670dc",
       "publisher_sha256": "8e22857d706801cf6bdbcf8bdb3340ab2ed61845c63febd4b7f89715eed8834e",
       "retrieved_at": "2026-11-17T20:50:35.153837+00:00",
-      "currentness": "unresolved"
+      "currentness": "unresolved",
+      "effective_from": "2026-05-26",
+      "publisher_history": "NY Senate revision date May 29, 2026. Chapter 58 part EE §§ 3–4 was signed May 26, 2026, and applies to actions and proceedings commenced on or after May 26, 2026."
     },
     "f8bd4c9e7a2f3fb5040aa03f09290b": {
       "source_id": "US-NY:contract_formation:fa8a1cfeb8d9",
@@ -1003,6 +1029,34 @@
       "language": "en",
       "court": "New York Town and Village Justice Courts",
       "publisher_member": "Town or village Justice Court return day within the statutory range, determined by rule or by the specific court."
+    },
+    "001a32510c024ee12a7c7dfaa23d6d": {
+      "source_id": "US-NY:fault:daab6c3a5c05",
+      "authority_type": "session_law",
+      "citation": "2026 N.Y. Laws ch. 58, pt. EE, § 4",
+      "text": "§ 4. This act shall take effect immediately and shall be applicable to all actions and proceedings commenced on or after such date.",
+      "text_sha256": "ae8b1f2282eb85b16eb17444dfe74351a746dae94b11bb6e60eb4bc5c99af9f0",
+      "publisher_sha256": "5de2a1c0a2736e90824850015ee1e9f0bd5b3936c36cdd16ed2b52452b837df0",
+      "retrieved_at": "2026-11-23T16:13:27.696126+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "edition": "Signed New York chapter law, May 26, 2026",
+      "effective_from": "2026-05-26",
+      "publisher_member": "Signed A10008-C Part EE § 4, past the replacement CPLR 1411 text. NYDFS Circular Letter No. 3 (2026) confirms the commencement-date application."
+    },
+    "1f1228228210a337a36bd086443a60": {
+      "source_id": "US-NY:fault:c9128d5534eb",
+      "authority_type": "statute",
+      "citation": "N.Y. CPLR 1411",
+      "text": "In any action to recover damages for personal injury, injury to property, or wrongful death, the culpable conduct attributable to the claimant or to the decedent, including contributory negligence or assumption of risk, shall not bar recovery, but the amount of damages otherwise recoverable shall be diminished in the proportion which the culpable conduct attributable to the claimant or decedent bears to the culpable conduct which caused the damages.",
+      "text_sha256": "3baa23d65909218a21e0b5471ee88c4ec28157da1e2056b10295e139c8b8da52",
+      "publisher_sha256": "5de2a1c0a2736e90824850015ee1e9f0bd5b3936c36cdd16ed2b52452b837df0",
+      "retrieved_at": "2026-11-23T16:13:27.696126+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Text in force before the 2026 Part EE amendment",
+      "effective_until": "2026-05-26",
+      "publisher_member": "A10008-C, Part EE § 3. Pre-amendment text reconstructed from the signed bill's brackets and unchanged text. Part EE § 4 uses the action commencement date."
     }
   },
   "fault_allocation": {

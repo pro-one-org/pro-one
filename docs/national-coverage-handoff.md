@@ -45,6 +45,13 @@
 - Added four official form references. California SC-120 is scoped to a defendant's small claim, Idaho CAO SC 1-2 to plaintiff commencement, and Utah 2001SC and 1025XX to the two distinct justice-court paths. Utah requires a substantially similar form. The shell exposes the court's applicability source and exact requirement level with completion disabled.
 - Ten form artifacts are indexed and five have verified form and requirement bindings. Direct court downloads for Maryland DC-CV-115 and NYC CIV-SC-50 were inaccessible. The full corpus has 1,415 versions, including 157 dated publisher verifications, 509 historical and 749 currentness-unresolved. There are 1,461 unsupported, 1,638 partial and 665 reference-only coverage cells.
 
+## State fault and premises checkpoint
+
+- Prior exact-head checkpoint `dc6d1d9` passed 660 local regression tests and [CI run 45212480209](https://github.com/pro-one-org/pro-one/actions/runs/45212480209), including production build and smoke.
+- Alaska official model instructions distinguish improved and unimproved property and provide general contract formation, breach and expectation damages. Arizona's Supreme Court opinion addresses actual control. Kansas's published Supreme Court opinion adds ordinary contract-breach elements. The model instructions retain unresolved currentness and the opinions remain historical.
+- D.C.'s pinned April 29, 2026 publisher version retains the collision scope, vulnerable-user definition and preserved doctrines. New York's signed chapter law and agency guidance confirm the May 26, 2026 action-commencement transition. Both statutory text versions remain available.
+- The corpus has 1,427 versions, including 160 dated publisher verifications, 512 historical and 755 currentness-unresolved. There are 1,455 unsupported, 1,644 partial and 665 reference-only coverage cells. Checks are under `.local/sub226-check-*.log`.
+
 ## Next priorities
 
 - Close substantive baseline gaps first. Continue personal-injury accrual and tolling, exceptions to fault regimes, ordinary contract breach and damages, and premises coverage as measured in the tracker.

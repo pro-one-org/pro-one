@@ -52,7 +52,10 @@ DC_CODE_SECTION_DIGESTS = {
     "28-3909": "b249ec765dc52c34f0e4a7b25db66a5fd7ba3914f25a4a953c9bda120e0b72f2",
     "32-1308": "895851bd01a6f605bdc6acf29dfb3e6f5d9b0bf1b8cdd10fe3d2d4fb4aefcdc7",
     "42-3502.17": "d512c41f105199af558518962c19abcdb81725a7f937d79c9e72f7c40d9cdc24",
+    "50-2204.51": "f0576ed0ea52d4ec8516ebb637ba53a45405796ed07a27f67313ebb179a1fd9a",
+    "50-2204.52": "f64da24b4d49dfdf4b6d537ea93b5b2e3de1f092614e3d25a16c6230d8fdbff9",
 }
+DC_CODE_SUBCHAPTER_MEMBERS = {"50-2204.51", "50-2204.52"}
 DC_CODE_PASSAGES = {
     "12-301(a)(7)": ("12-301", ("[(a)]", "(7)")),
     "12-302(a)": ("12-302", ("(a)",)),
@@ -68,6 +71,9 @@ DC_CODE_PASSAGES = {
     "32-1308(c)": ("32-1308", ("(c)",)),
     "42-3502.17(b)": ("42-3502.17", ("(b)",)),
     "42-3502.17(c)": ("42-3502.17", ("(c)",)),
+    "50–2204.51(13)": ("50-2204.51", ("(a)", "(13)")),
+    "50–2204.52(a)": ("50-2204.52", ("(a)",)),
+    "50–2204.52(b)": ("50-2204.52", ("(b)",)),
 }
 INDIANA_RULES_ROOT = "https://rules.incourts.gov/Content/"
 INDIANA_RULESETS = {"trial": "Indiana Rules of Trial Procedure", "small-claims": "Indiana Small Claims Rules"}
@@ -513,7 +519,9 @@ def dc_code_paragraph(node):
 def dc_code_passage(digest, section, selectors):
     ns = DC_CODE_NAMESPACE
     root = ElementTree.fromstring(retained_publisher_bytes(digest, "xml"))
-    if root.get("containing-doc") != "D.C. Code" or root.findtext("dc:num", namespaces=ns) != section:
+    document = root.get("containing-doc")
+    if (root.findtext("dc:num", namespaces=ns) != section
+            or document != "D.C. Code" and not (document is None and section in DC_CODE_SUBCHAPTER_MEMBERS)):
         raise ValueError("certified_excerpt_or_date_mismatch")
     if not selectors:
         return dc_code_text(root.find("dc:text", ns))

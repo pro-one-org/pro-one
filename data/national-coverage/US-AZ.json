@@ -384,6 +384,18 @@
         "retrieved_at": "2026-11-23T15:49:10.570575+00:00",
         "sha256": "e679ed4400fbcdc8c4891380be621a1e355b35c74f225173fd1b62e183647d1d"
       }
+    },
+    "US-AZ:premises:d399becde4c7": {
+      "category": "premises",
+      "title": "Dabush v. Seacret Direct LLC, 250 Ariz. 264, ¶ 19 (2021)",
+      "url": "https://www.azcourts.gov/Portals/0/OpinionFiles/Supreme/2021/CV190200PR.pdf",
+      "locator": "Dabush v. Seacret Direct LLC, 250 Ariz. 264, ¶ 19 (2021)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:06:48.188586+00:00",
+        "sha256": "029c45aedd425fbbd4e7b74935d125b4aeffe76a5069ac32678b484c48905d65"
+      }
     }
   },
   "court_directory": [
@@ -704,6 +716,22 @@
       "retrieved_at": "2026-11-23T15:49:10.570575+00:00",
       "currentness": "unresolved",
       "language": "en"
+    },
+    "2412fe7f35392a09281e4f05a60040": {
+      "source_id": "US-AZ:premises:d399becde4c7",
+      "authority_type": "opinion",
+      "citation": "Dabush v. Seacret Direct LLC, 250 Ariz. 264, ¶ 19 (2021)",
+      "text": "Both the authority to exclude others and control over repairs are necessary to impose a duty of care on a possessor of land. Specifically, to keep a premises in a safe condition, a landowner must be able to limit who enters the premises.",
+      "text_sha256": "94441142974e6901d65b86cf482f428104f74f7d360c96be9411385e9ec16e1a",
+      "publisher_sha256": "029c45aedd425fbbd4e7b74935d125b4aeffe76a5069ac32678b484c48905d65",
+      "retrieved_at": "2026-11-23T16:06:48.188586+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Court opinion filed January 8, 2021",
+      "court": "Arizona Supreme Court",
+      "decision_date": "2021-01-08",
+      "procedural_posture": "Review of summary judgment on duties owed after a fall through a skylight on a warehouse roof.",
+      "opinion_role": "majority"
     }
   },
   "fault_allocation": {

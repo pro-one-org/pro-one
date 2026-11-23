@@ -564,6 +564,66 @@
         "retrieved_at": "2026-11-18T20:45:45.439868+00:00",
         "sha256": "a08b5ff52d6893ba454e186935052099f6243e82e464b93e7ef9856d103bacdb"
       }
+    },
+    "US-AK:contract_breach:ef0274fed189": {
+      "category": "contract_breach",
+      "title": "Alaska Civil Pattern Jury Instruction 24.00A (2022)",
+      "url": "https://courts.alaska.gov/CVPJI/docs/24.00A.docx",
+      "locator": "Alaska Civil Pattern Jury Instruction 24.00A (2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:08:22.991909+00:00",
+        "sha256": "e7bcbdd19626cf51bb996029c74669650ce11eea2d6abdd29b5e97e7a8f91bb7"
+      }
+    },
+    "US-AK:contract_formation:11f4c4e2d3bc": {
+      "category": "contract_formation",
+      "title": "Alaska Civil Pattern Jury Instruction 24.01A (2022)",
+      "url": "https://courts.alaska.gov/CVPJI/docs/24.01A.docx",
+      "locator": "Alaska Civil Pattern Jury Instruction 24.01A (2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:08:22.968374+00:00",
+        "sha256": "5d647128e74aa8d625b17dbf919e639d92611babb09746b5823533493e34b06f"
+      }
+    },
+    "US-AK:general_contract_damages:21bf70f5103f": {
+      "category": "general_contract_damages",
+      "title": "Alaska Civil Pattern Jury Instruction 24.09A (2022)",
+      "url": "https://courts.alaska.gov/CVPJI/docs/24.09A.docx",
+      "locator": "Alaska Civil Pattern Jury Instruction 24.09A (2022)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:08:22.975366+00:00",
+        "sha256": "12a9e5d2e55963f351f98b47cb3451dd4e55484dddd3157f432e003e03a28125"
+      }
+    },
+    "US-AK:premises:046072584ea6": {
+      "category": "premises",
+      "title": "Alaska Civil Pattern Jury Instruction 06.01 (2019)",
+      "url": "https://courts.alaska.gov/CVPJI/docs/06.01.docx",
+      "locator": "Alaska Civil Pattern Jury Instruction 06.01 (2019)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:09:36.968664+00:00",
+        "sha256": "e052c20193a4900c76d10eb561cf082630f9949c617511ce22839b58828da0d8"
+      }
+    },
+    "US-AK:premises:2839bf895de7": {
+      "category": "premises",
+      "title": "Alaska Civil Pattern Jury Instruction 06.02 (2019)",
+      "url": "https://courts.alaska.gov/CVPJI/docs/06.02.docx",
+      "locator": "Alaska Civil Pattern Jury Instruction 06.02 (2019)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:09:36.968664+00:00",
+        "sha256": "fb043d0acba9909bf00659084158d21a29fe0df96611da9479344252b39dd329"
+      }
     }
   },
   "court_directory": [
@@ -914,6 +974,76 @@
       "edition": "Alaska Court System civil rules compilation retained in November 2026",
       "court": "Alaska courts governed by the Alaska Rules of Civil Procedure",
       "publisher_member": "Alaska Court System civil rules compilation retained in November 2026, PDF p. 22, Alaska R. Civ. P. 4(j), court rules compilation, rule text only"
+    },
+    "9bb44d11988f57a1fb842c6f7edfa3": {
+      "source_id": "US-AK:contract_breach:ef0274fed189",
+      "authority_type": "court_instruction",
+      "citation": "Alaska Civil Pattern Jury Instruction 24.00A (2022)",
+      "text": "[Plaintiff] claims that [he she it] had a contract with [defendant], and that [defendant] breached the contract. [Plaintiff] is seeking an award of damages for [defendant’s] breach of the contract. In order to find in favor of [plaintiff] on this claim, you must decide that it is more likely true than not true that: There was a contract between [plaintiff] and [defendant]; and [Defendant] breached the contract. If you decide that both elements of this claim are more likely true than not true, your verdict on this claim must be in favor of [plaintiff], and you must determine the amount of the damages to be awarded to [plaintiff]. Otherwise, your verdict on this claim must be in favor of [defendant].",
+      "text_sha256": "82a4fe7a8a014f294c038d2a14dbe558089210dd77bf9b9017777a5e2a904321",
+      "publisher_sha256": "e7bcbdd19626cf51bb996029c74669650ce11eea2d6abdd29b5e97e7a8f91bb7",
+      "retrieved_at": "2026-11-23T16:08:22.991909+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska Court System",
+      "edition": "Civil Pattern Jury Instructions, article revision 2022",
+      "publisher_member": "word/document.xml, main instruction"
+    },
+    "34a81cf656fb835fff352467e53808": {
+      "source_id": "US-AK:contract_formation:11f4c4e2d3bc",
+      "authority_type": "court_instruction",
+      "citation": "Alaska Civil Pattern Jury Instruction 24.01A (2022)",
+      "text": "[Plaintiff] claims that [he she it] entered into a contract with [defendant]. [Defendant] denies that the parties entered into a contract. In order to find that [names] entered into a contract, you must find that each of the following statements is more likely true than not true: [Name] made an offer to [name] that included all of the important terms of a proposed agreement; [Name] accepted [name’s] offer through words or conduct that were clear and definite; Under the terms of the agreement, each party gave something of value, or promised to give something of value, in exchange for what the other party gave or promised; and Both [name] and [name] intended to be bound by their agreement. A party’s intent to be bound by an agreement is determined by that party’s words or conduct, as the words or conduct would be interpreted by a reasonable person. A party’s unexpressed intent cannot be considered when determining whether that party intended to be bound by an agreement. If you decide that all four of these statements are more likely true than not true, then there was a contract between [plaintiff and defendant]. If you do not find that all four of these statements are more likely true than not true, [plaintiff] and [defendant] did not enter into a contract.",
+      "text_sha256": "acb5e94080a22e7c4ece6b029b4eca20cb17a09c961a5e591890fd507c57c36c",
+      "publisher_sha256": "5d647128e74aa8d625b17dbf919e639d92611babb09746b5823533493e34b06f",
+      "retrieved_at": "2026-11-23T16:08:22.968374+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska Court System",
+      "edition": "Civil Pattern Jury Instructions, article revision 2022",
+      "publisher_member": "word/document.xml, main instruction"
+    },
+    "77fe43933cd1c8d88afb14b9a4e99d": {
+      "source_id": "US-AK:general_contract_damages:21bf70f5103f",
+      "authority_type": "court_instruction",
+      "citation": "Alaska Civil Pattern Jury Instruction 24.09A (2022)",
+      "text": "If you find in favor of [plaintiff] on [his her its] claim for breach of contract, you must decide how much money, if any, will fairly compensate [plaintiff] for a financial loss caused by [defendant’s] breach of the contract. This compensation is called compensatory damages. The purpose of an award of compensatory damages is to put [plaintiff] in the same financial position that [he she it] would have been in if [defendant] had fully performed [his her its] obligations under the contract. To award compensatory damages to [plaintiff] for [defendant’s] breach of contract, you must find that it is more likely true than not true that: [Defendant’s] breach of the contract caused [plaintiff’s] financial loss; and When [plaintiff] and [defendant] entered into the contract, [defendant] knew or could have reasonably foreseen that this financial loss would be a probable result if [defendant] breached the contract. A financial loss from breach of a contract is reasonably foreseeable if either: the loss follows in the ordinary course of events from the breach; or the loss follows from special circumstances that the party had reason to know about when the parties entered into the contract. (3)[Plaintiff] has established the amount of [his her its] financial loss with reasonable certainty. An award of compensatory damages must be based on evidence, and not on speculation, guesswork or conjecture. If you decide that these requirements for an award of compensatory damages have not been met, you cannot award compensatory damages to [plaintiff]. Instead, you must award [plaintiff] nominal damages. In a moment, I will instruct you regarding an award of nominal damages.",
+      "text_sha256": "ff2944fbe57f0e38cf4fad928d53888fe4726eb929dc5dc4916223af276d811e",
+      "publisher_sha256": "12a9e5d2e55963f351f98b47cb3451dd4e55484dddd3157f432e003e03a28125",
+      "retrieved_at": "2026-11-23T16:08:22.975366+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska Court System",
+      "edition": "Civil Pattern Jury Instructions, article revision 2022",
+      "publisher_member": "word/document.xml, main instruction"
+    },
+    "5b2ff125641a5716410e8857aeb84f": {
+      "source_id": "US-AK:premises:046072584ea6",
+      "authority_type": "court_instruction",
+      "citation": "Alaska Civil Pattern Jury Instruction 06.01 (2019)",
+      "text": "LANDOWNER LIABILITY - IMPROVED PROPERTY. [A landowner] [A property owner] is negligent if the owner fails to exercise reasonable care to guard against unreasonable risks created by a dangerous condition on the property. A person can be negligent by acting or failing to act. A person is negligent if he or she does something that a reasonably careful person would not do in the same situation, or fails to do something that a reasonably careful person would do in the same situation. The law does not require exceptional caution or skill, only reasonable care.",
+      "text_sha256": "76e63280235184fd7fab6829c0e1774f4dbf1d6f0461890c59c5b28c0178a194",
+      "publisher_sha256": "e052c20193a4900c76d10eb561cf082630f9949c617511ce22839b58828da0d8",
+      "retrieved_at": "2026-11-23T16:09:36.968664+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska Court System",
+      "edition": "Civil Pattern Jury Instructions, article revision 2019",
+      "publisher_member": "word/document.xml, main instruction"
+    },
+    "8150443582516a2995df79e0d1dbda": {
+      "source_id": "US-AK:premises:2839bf895de7",
+      "authority_type": "court_instruction",
+      "citation": "Alaska Civil Pattern Jury Instruction 06.02 (2019)",
+      "text": "LANDOWNER LIABILITY - ELEMENTS WHEN THE LANDOWNER’S LIABILITY IS LIMITED BY AS 09.65.200 (LIABILITY FOR INJURIES OCCURRING ON UNIMPROVED LAND). Plaintiff claims that [he][she] was harmed because of the defendant’s failure to follow the standard of conduct that governs owners of land. In order to find in favor of the plaintiff on this claim, you must decide that each of the following elements is more likely true than not true: 1.The defendant failed to guard against unreasonable risks created by a dangerous condition on the property. 2.The defendant’s failure constituted gross negligence, reckless misconduct, or intentional misconduct. This element is not established if the defendant engaged in conduct that constituted only ordinary negligence. In a moment, I will explain each of these terms. 3.The plaintiff was harmed; and 4.The defendant’s failure was a substantial factor in causing the plaintiff’s harm. Ordinary negligence is the failure to use reasonable care, which is the amount of care that a reasonably careful person would use in the same situation.",
+      "text_sha256": "14d111932e09d99e343be7ee33f37b04adbf34a5bdce45f26e4c1f376f639ce3",
+      "publisher_sha256": "fb043d0acba9909bf00659084158d21a29fe0df96611da9479344252b39dd329",
+      "retrieved_at": "2026-11-23T16:09:36.968664+00:00",
+      "currentness": "unresolved",
+      "language": "en",
+      "court": "Alaska Court System",
+      "edition": "Civil Pattern Jury Instructions, article revision 2019",
+      "publisher_member": "word/document.xml, main instruction"
     }
   },
   "fault_allocation": {

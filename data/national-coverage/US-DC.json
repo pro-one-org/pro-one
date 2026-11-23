@@ -534,6 +534,42 @@
         "retrieved_at": "2026-11-23T15:49:10.167493+00:00",
         "sha256": "1e574ea167fb9cad577621bf575033275ab6adf4e78bce8bfa8b1c3e0b768882"
       }
+    },
+    "US-DC:fault:b517b94b285f": {
+      "category": "fault",
+      "title": "D.C. Code § 50–2204.52(a)",
+      "url": "https://raw.githubusercontent.com/DCCouncil/law-xml-codified/6231fae42de60c3c498548c489b0ca84ef60353a/us/dc/council/code/titles/50/sections/50-2204.52.xml",
+      "locator": "D.C. Code § 50–2204.52(a)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:13:27.295344+00:00",
+        "sha256": "f64da24b4d49dfdf4b6d537ea93b5b2e3de1f092614e3d25a16c6230d8fdbff9"
+      }
+    },
+    "US-DC:fault:7ef62cef172b": {
+      "category": "fault",
+      "title": "D.C. Code § 50–2204.52(b)",
+      "url": "https://raw.githubusercontent.com/DCCouncil/law-xml-codified/6231fae42de60c3c498548c489b0ca84ef60353a/us/dc/council/code/titles/50/sections/50-2204.52.xml",
+      "locator": "D.C. Code § 50–2204.52(b)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:13:27.295344+00:00",
+        "sha256": "f64da24b4d49dfdf4b6d537ea93b5b2e3de1f092614e3d25a16c6230d8fdbff9"
+      }
+    },
+    "US-DC:fault:c34686d28ae9": {
+      "category": "fault",
+      "title": "D.C. Code § 50–2204.51(13)",
+      "url": "https://raw.githubusercontent.com/DCCouncil/law-xml-codified/6231fae42de60c3c498548c489b0ca84ef60353a/us/dc/council/code/titles/50/sections/50-2204.51.xml",
+      "locator": "D.C. Code § 50–2204.51(13)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:13:27.318217+00:00",
+        "sha256": "f0576ed0ea52d4ec8516ebb637ba53a45405796ed07a27f67313ebb179a1fd9a"
+      }
     }
   },
   "court_directory": [
@@ -1041,13 +1077,58 @@
       "current_as_of": "2026-04-29",
       "publisher_path": "3ed269628b4a6251a05b54014ac05c7ed9a5ab685f99aad1d289251a444ffa83",
       "edition": "D.C. Council XML, current through April 29, 2026"
+    },
+    "de30dbab11489948258c904cc1ff83": {
+      "source_id": "US-DC:fault:b517b94b285f",
+      "authority_type": "statute",
+      "citation": "D.C. Code § 50–2204.52(a)",
+      "text": "(a) Unless the plaintiff's negligence is a proximate cause of the plaintiff's injury and greater than the aggregated total negligence of all the defendants that proximately caused the plaintiff's injury, the negligence of the following shall not bar the plaintiff's recovery in any civil action in which the plaintiff is one of the following: (1) A pedestrian or vulnerable user of a public highway or sidewalk involved in a collision with a motor vehicle or another vulnerable user; or (2) A vulnerable user of a public highway or sidewalk involved in a collision with a pedestrian.",
+      "text_sha256": "b26564dc1695a8898b890d3753ba87e9c5c689aabca9dfd8948c36ece58dfe52",
+      "publisher_sha256": "f64da24b4d49dfdf4b6d537ea93b5b2e3de1f092614e3d25a16c6230d8fdbff9",
+      "retrieved_at": "2026-11-23T16:13:27.295344+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-04-29",
+      "publisher_path": "3ed269628b4a6251a05b54014ac05c7ed9a5ab685f99aad1d289251a444ffa83",
+      "edition": "D.C. Council XML, current through April 29, 2026",
+      "effective_from": "2021-03-16"
+    },
+    "d31f4ee820e0a23f2f5950e67355d3": {
+      "source_id": "US-DC:fault:7ef62cef172b",
+      "authority_type": "statute",
+      "citation": "D.C. Code § 50–2204.52(b)",
+      "text": "(b) Nothing in this subchapter shall be construed to: (1) Change or affect the doctrine of joint and several liability or the last clear chance doctrine; or (2) Reduce the legal protections provided to pedestrians and cyclists under: (A) § 7-1004; or (B) § 50-1606.",
+      "text_sha256": "21499c9715a9785ae23cf7e8fc84eec3bb0b23280c2ce9f4400c7de50c39d1b9",
+      "publisher_sha256": "f64da24b4d49dfdf4b6d537ea93b5b2e3de1f092614e3d25a16c6230d8fdbff9",
+      "retrieved_at": "2026-11-23T16:13:27.295344+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-04-29",
+      "publisher_path": "3ed269628b4a6251a05b54014ac05c7ed9a5ab685f99aad1d289251a444ffa83",
+      "edition": "D.C. Council XML, current through April 29, 2026",
+      "effective_from": "2021-03-16"
+    },
+    "fa061ec3e2bfb6cc0a568a3110ad61": {
+      "source_id": "US-DC:fault:c34686d28ae9",
+      "authority_type": "statute",
+      "citation": "D.C. Code § 50–2204.51(13)",
+      "text": "(13) \"Vulnerable user\" means an individual using an all-terrain vehicle, bicycle, dirt bike, electric mobility device, motorcycle, motorized bicycle, motor-driven cycle, non-motorized scooter, personal mobility device, skateboard, or other similar device.",
+      "text_sha256": "0898a98e9a9320ae4f635a310cc540475312f3b3def4e00920d46d409eedb7f4",
+      "publisher_sha256": "f0576ed0ea52d4ec8516ebb637ba53a45405796ed07a27f67313ebb179a1fd9a",
+      "retrieved_at": "2026-11-23T16:13:27.318217+00:00",
+      "currentness": "current_as_of",
+      "language": "en",
+      "current_as_of": "2026-04-29",
+      "publisher_path": "3ed269628b4a6251a05b54014ac05c7ed9a5ab685f99aad1d289251a444ffa83",
+      "edition": "D.C. Council XML, current through April 29, 2026",
+      "effective_from": "2021-03-16"
     }
   },
   "fault_allocation": {
     "regime": "other_state_specific",
-    "source_id": "US-DC:fault:47842a8c4074",
-    "passage_selector": "9ccf7567645c158996869a47864d15",
-    "currentness": "unresolved",
+    "source_id": "US-DC:fault:b517b94b285f",
+    "passage_selector": "de30dbab11489948258c904cc1ff83",
+    "currentness": "current_as_of",
     "qualification": "The provision is limited to the covered public-highway and sidewalk collisions and parties specified in subsection (a). Joint and several liability, last clear chance, and the additional legislation identified in subsection (b) are preserved."
   }
 }

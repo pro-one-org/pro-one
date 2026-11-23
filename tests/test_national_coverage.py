@@ -23,6 +23,30 @@ from app.procedural_research import infer_jurisdiction
 
 
 class NationalCoverageTests(unittest.TestCase):
+    def test_new_york_fault_amendment_keeps_the_commencement_date_and_prior_text(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="New York", legal_area="torts",
+                               topics=["fault_allocation"], authority_status="unresolved")
+        documents = [provider.fetch(key) for key in provider.search(query)]
+        amended, = (doc for doc in documents if doc.source["citation"]["preferred_citation"] == "N.Y. CPLR 1411")
+        self.assertIn("article fifty-one of the insurance law", amended.text)
+        self.assertEqual(amended.source["dates"]["effective_from"], "2026-05-26")
+        self.assertTrue(any("actions and proceedings commenced on or after such date" in doc.text for doc in documents))
+        prior = [provider.fetch(key) for key in provider.search(query.model_copy(update={"authority_status": "historical"}))]
+        predecessor, = (doc for doc in prior if doc.source["citation"]["preferred_citation"] == "N.Y. CPLR 1411")
+        self.assertNotIn("article fifty-one", predecessor.text)
+        self.assertEqual(predecessor.source["dates"]["effective_through"], "2026-05-26")
+
+    def test_dc_vulnerable_user_fault_exception_retains_the_scope_and_other_doctrines(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="District of Columbia", sovereign="district", legal_area="torts",
+                               topics=["fault_allocation"], authority_status="current_as_of", authority_as_of="2026-04-29")
+        passages = [provider.fetch(key).text for key in provider.search(query)]
+        self.assertTrue(any("greater than the aggregated total negligence" in text and "public highway or sidewalk" in text
+                            for text in passages))
+        self.assertTrue(any("joint and several liability or the last clear chance doctrine" in text for text in passages))
+        self.assertTrue(any('"Vulnerable user" means an individual' in text for text in passages))
+
     def test_dc_tolling_replay_retains_the_qualifying_text_after_the_list(self):
         provider = RetainedLegislativeResearch()
         matter = ResearchMatter(country="US", state="District of Columbia", sovereign="district", legal_area="torts",

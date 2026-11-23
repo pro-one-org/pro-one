@@ -444,6 +444,18 @@
         "retrieved_at": "2026-11-21T22:06:49.449930+00:00",
         "sha256": "18b723b8790d6505fc74013b51e6cdfd280f83b01ee12a801a2e6b5eaf218bf2"
       }
+    },
+    "US-KS:contract_breach:39d694cb2755": {
+      "category": "contract_breach",
+      "title": "Stechschulte v. Jennings, 297 Kan. 2, 23 (2013)",
+      "url": "https://kscourts.gov/KSCourts/media/KsCourts/Opinions/100648.pdf?ext=.pdf",
+      "locator": "Stechschulte v. Jennings, 297 Kan. 2, 23 (2013)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T16:09:36.409268+00:00",
+        "sha256": "f6aa3c71fa04df066d12a7428442be695f5e5c300569081180a5ad47e7f69a0f"
+      }
     }
   },
   "court_directory": [
@@ -781,6 +793,22 @@
       "language": "en",
       "edition": "Kansas Legislature 2023 statutes",
       "publisher_member": "Publisher PDF p. 1, Kan. Stat. Ann. § 60-203(a)–(b), statutory text"
+    },
+    "bb97ec764f64d84eea5ea0e3b60029": {
+      "source_id": "US-KS:contract_breach:39d694cb2755",
+      "authority_type": "opinion",
+      "citation": "Stechschulte v. Jennings, 297 Kan. 2, 23 (2013)",
+      "text": "The elements of a breach of contract claim are: (1) the existence of a contract between the parties; (2) sufficient consideration to support the contract; (3) the plaintiff's performance or willingness to perform in compliance with the contract; (4) the defendant's breach of the contract; and (5) damages to the plaintiff caused by the breach. Commercial Credit Corporation v. Harris, 212 Kan. 310, 313, 510 P.2d 1322 (1973); PIK Civ. 4th 124.01.",
+      "text_sha256": "fdfb34415b6f34400a72f550b45b90848be8ca95bf7f7f6a11414762d5877b2f",
+      "publisher_sha256": "f6aa3c71fa04df066d12a7428442be695f5e5c300569081180a5ad47e7f69a0f",
+      "retrieved_at": "2026-11-23T16:09:36.409268+00:00",
+      "currentness": "historical",
+      "language": "en",
+      "edition": "Published slip opinion, April 12, 2013",
+      "court": "Kansas Supreme Court",
+      "decision_date": "2013-04-12",
+      "procedural_posture": "Review of appellate ruling on summary judgment in a residential sale disclosure dispute.",
+      "opinion_role": "majority"
     }
   },
   "fault_allocation": {
