@@ -172,9 +172,12 @@ class ProceduralIntelligenceTests(unittest.TestCase):
     def test_new_york_small_claims_reference_identifies_the_city_court(self):
         result = self.service().respond(ProceduralRequest(message="What are the small claims rules in New York?"))
         self.assertEqual("outside_bounded_coverage", result["status"])
-        reference, = result["reference_authorities"]
-        self.assertEqual("Civil Court of the City of New York", reference["court"])
-        self.assertEqual("unresolved", reference["currentness"])
+        references = result["reference_authorities"]
+        self.assertEqual({"N.Y.C. Civil Court Act § 1801", "N.Y.C. Civil Court Act § 1803(a)"},
+                         {reference["citation"] for reference in references})
+        for reference in references:
+            self.assertEqual("Civil Court of the City of New York", reference["court"])
+            self.assertEqual("unresolved", reference["currentness"])
         self.assertFalse(result["external_action_allowed"])
 
     def test_wisconsin_filing_topics_return_dated_references_only(self):

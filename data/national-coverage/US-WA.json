@@ -573,6 +573,18 @@
         "retrieved_at": "2026-11-23T20:36:10.316073+00:00",
         "sha256": "e50de2aa094e9a7f0a5f9076c61367f5007fb1dc6ea9503a3aa78d12ace9dc3c"
       }
+    },
+    "US-WA:accrual:9b33427e0030": {
+      "category": "accrual",
+      "title": "Nichols v. Peterson NW, Inc., No. 47685-1-II, slip op. at 11 (Wash. Ct. App. Oct. 25, 2016)",
+      "url": "https://www.courts.wa.gov/opinions/pdf/D2%2047685-1-II%20Orders%20Publishing.pdf",
+      "locator": "Nichols v. Peterson NW, Inc., No. 47685-1-II, slip op. at 11 (Wash. Ct. App. Oct. 25, 2016)",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T20:47:25.905307+00:00",
+        "sha256": "77a6780ca203d08eeeeac03aae3cd770e5af8cabfffdc13f39f3ab3c9483024e"
+      }
     }
   },
   "court_directory": [
@@ -1101,6 +1113,23 @@
       "currentness": "current_as_of",
       "current_as_of": "2024-07-12",
       "publisher_path": "4.22.070"
+    },
+    "8755391a6ef519091043f09511a31c": {
+      "source_id": "US-WA:accrual:9b33427e0030",
+      "citation": "Nichols v. Peterson NW, Inc., No. 47685-1-II, slip op. at 11 (Wash. Ct. App. Oct. 25, 2016)",
+      "text": "A cause of action accrues when every element of an action is susceptible to proof. Woods View II, LLC v. Kitsap County, 188 Wn. App. 1, 20, 352 P.3d 807, review denied, 184 Wn.2d 1015 (2015). In many instances an action accrues immediately when a wrongful act occurs, but in some circumstances, a plaintiff can be unaware of the harm until a later time. 1000 Virginia Ltd. P’ship v. Vertecs Corp., 158 Wn.2d 566, 575, 146 P.3d 423 (2006). To prevent an injustice in these instances, courts may apply the discovery rule. Id. Under the discovery rule, a cause of action accrues when the plaintiff discovers, or in the reasonable exercise of diligence should discover, the salient facts underlying the cause of action’s elements. Id. The diligence element of this test raises a question of fact, unless reasonable minds could reach but one conclusion. Burns v. McClinton, 135 Wn. App. 285, 300, 143 P.3d 630 (2006).",
+      "text_sha256": "431fd91ea2502ee34525868f9b3489c1004cfdf631c582acef69fb705c99162b",
+      "publisher_sha256": "77a6780ca203d08eeeeac03aae3cd770e5af8cabfffdc13f39f3ab3c9483024e",
+      "retrieved_at": "2026-11-23T20:47:25.905307+00:00",
+      "language": "en",
+      "authority_type": "opinion",
+      "currentness": "historical",
+      "court": "Washington Court of Appeals, Division II",
+      "decision_date": "2016-10-25",
+      "opinion_role": "majority",
+      "edition": "Court-published opinion of 2016-10-25",
+      "scope_notes": "Construction negligence and water intrusion on summary judgment. The court granted publication on January 24, 2017. This discovery and reasonable-diligence evidence is limited to the stated property-damage scope.",
+      "procedural_posture": "Appeal from summary judgment dismissing negligence claims concerning water intrusion."
     }
   },
   "fault_allocation": {

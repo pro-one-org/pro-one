@@ -525,6 +525,18 @@
         "retrieved_at": "2026-11-23T15:50:29.783227+00:00",
         "sha256": "1a5706e8838efcf8fb2f013c01a1983921c7994f5188ecf438492274ba65f672"
       }
+    },
+    "US-IL:premises:65c9f1989297": {
+      "category": "premises",
+      "title": "Bruns v. City of Centralia, 2014 IL 116998, ¶ 22",
+      "url": "https://www.illinoiscourts.gov/Resources/b0a6ce2b-1c67-4c3a-86b1-49e600fd7a38/116998.pdf",
+      "locator": "Bruns v. City of Centralia, 2014 IL 116998, ¶ 22",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T20:46:03.135765+00:00",
+        "sha256": "4b6ca52894fa2078b224a6c5c08e76b730921ef91c3640120cb4d9884792deac"
+      }
     }
   },
   "court_directory": [
@@ -980,6 +992,23 @@
       "decision_date": "2019-09-26",
       "opinion_role": "majority",
       "procedural_posture": "Reversal of dismissal of a survival action. The panel expressly disagreed with Giles."
+    },
+    "c0f786d111c0c888df66f21f3e0c9d": {
+      "source_id": "US-IL:premises:65c9f1989297",
+      "citation": "Bruns v. City of Centralia, 2014 IL 116998, ¶ 22",
+      "text": "Preliminarily, we note that the distraction exception will only apply where evidence exists from which a court can infer that plaintiff was actually distracted. See Sollami, 201 Ill. 2d at 16-17 (distraction exception did not apply to open and obvious danger of “rocket-jumping” on trampoline because no evidence was presented tending to show that the plaintiff was distracted); Bucheleres, 171 Ill. 2d at 452-53 (declining to apply distraction exception where the “record does not indicate that plaintiffs in the instant cases were distracted or forgetful of the lake’s existence when they decided to dive off the seawalls”). Accord Belluomini, 346 Ill. App. 3d at 695; True v. Greenwood Manor West, Inc., 316 Ill. App. 3d 676, 680 (2000). Here, the only distraction identified by plaintiff is that her attention was fixed on the door and steps of the clinic. Although the record supports that plaintiff was, in fact, looking in that direction, rather than at the defective sidewalk, we conclude that the mere fact of looking elsewhere does not constitute a distraction.",
+      "text_sha256": "45df7a0524bd370e305ff0d8d9333a1ce6a79ded2987bda9fb6ff5b21fc4ea4e",
+      "publisher_sha256": "4b6ca52894fa2078b224a6c5c08e76b730921ef91c3640120cb4d9884792deac",
+      "retrieved_at": "2026-11-23T20:46:03.135765+00:00",
+      "language": "en",
+      "authority_type": "opinion",
+      "currentness": "historical",
+      "court": "Supreme Court of Illinois",
+      "decision_date": "2014-09-18",
+      "opinion_role": "majority",
+      "edition": "Court-published opinion of 2014-09-18",
+      "scope_notes": "Distraction exception to the open-and-obvious rule in a sidewalk-defect negligence action on summary judgment. Subsequent treatment has not been verified.",
+      "procedural_posture": "Review of summary judgment in a municipal sidewalk-defect negligence action."
     }
   },
   "fault_allocation": {

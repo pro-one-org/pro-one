@@ -691,6 +691,21 @@ class NationalCoverageTests(unittest.TestCase):
         self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
                                                                   "authority_as_of": "2026-11-23"})))
 
+    def test_premises_duty_preserves_distinct_colorado_entrant_contexts(self):
+        provider = RetainedLegislativeResearch()
+        query = ResearchMatter(country="US", state="Colorado", legal_area="torts",
+                               court="Colorado Court of Appeals", topics=["premises_liability"],
+                               authority_status="historical")
+        docs = {doc.source["citation"]["preferred_citation"]: doc.text
+                for doc in map(provider.fetch, provider.search(query))}
+        lease = docs["Martinez v. Cast, LLC, 2025 COA 32, ¶¶ 1–3"]
+        self.assertIn("actually knew about", lease)
+        guest = docs["Willis v. Twin Shores Master Owner Ass'n, Inc., 2025 COA 37, ¶¶ 1–2"]
+        self.assertIn("owned and controlled by the association", guest)
+        self.assertIn("genuine dispute of material fact", guest)
+        self.assertFalse(provider.search(query.model_copy(update={"authority_status": "current",
+                                                                  "authority_as_of": "2026-11-23"})))
+
     def test_partial_negligence_summary_uses_retained_passages_in_each_state(self):
         for scope, jurisdiction in registry().items():
             if jurisdiction.kind not in {"state", "district"}:

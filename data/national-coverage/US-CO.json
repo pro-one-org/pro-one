@@ -645,6 +645,42 @@
         "retrieved_at": "2026-11-23T16:21:40.395327+00:00",
         "sha256": "d7bac59c966c1e1491c0d6b3a85200029baf473e1efa4e57b2e83e122ce7adfa"
       }
+    },
+    "US-CO:premises:bd717c0f3cf1": {
+      "category": "premises",
+      "title": "Martinez v. Cast, LLC, 2025 COA 32, ¶¶ 1–3",
+      "url": "https://www.coloradojudicial.gov/system/files/opinions-2025-03/23CA1909-PD.pdf",
+      "locator": "Martinez v. Cast, LLC, 2025 COA 32, ¶¶ 1–3",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T20:47:26.613500+00:00",
+        "sha256": "489a95e69443d83643d2be64376adbb81eaf5f74e381d4a40f95645d8cdaacef"
+      }
+    },
+    "US-CO:premises:74fdd910af69": {
+      "category": "premises",
+      "title": "Willis v. Twin Shores Master Owner Ass'n, Inc., 2025 COA 37, ¶¶ 1–2",
+      "url": "https://www.coloradojudicial.gov/system/files/opinions-2025-04/24CA0369-PD.pdf",
+      "locator": "Willis v. Twin Shores Master Owner Ass'n, Inc., 2025 COA 37, ¶¶ 1–2",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T20:47:26.277672+00:00",
+        "sha256": "8f055cc3477c8266b71433ca95e5c7a5569f11ee0a3a13e8df29346b9814158d"
+      }
+    },
+    "US-CO:premises:d2b930e66480": {
+      "category": "premises",
+      "title": "2022 Colo. Sess. Laws ch. 75, § 2 (Colo. Rev. Stat. § 13-21-115(2)(e))",
+      "url": "https://leg.colorado.gov/laws/session-laws/SB22-115/75/download",
+      "locator": "2022 Colo. Sess. Laws ch. 75, § 2 (Colo. Rev. Stat. § 13-21-115(2)(e))",
+      "directory": null,
+      "observation": {
+        "health": "publisher_bytes_retained",
+        "retrieved_at": "2026-11-23T20:46:15.699817+00:00",
+        "sha256": "b69a78bc31a1fafb12b9df6f32246a7f98b4f5d25695352b579161dfece84ed3"
+      }
     }
   },
   "court_directory": [
@@ -1204,6 +1240,54 @@
       "currentness": "unresolved",
       "language": "en",
       "court": "Colorado District Court"
+    },
+    "feac2d88ec7752e09db882932a439b": {
+      "source_id": "US-CO:premises:bd717c0f3cf1",
+      "citation": "Martinez v. Cast, LLC, 2025 COA 32, ¶¶ 1–3",
+      "text": "The Colorado Premises Liability Act (the Act), § 13-21-115, C.R.S. 2024, provides the sole remedy against landowners for injuries on their property. Wycoff v. Grace Cmty. Church of Assemblies of God, 251 P.3d 1260, 1265 (Colo. App. 2010). The Act divides those persons to whom a landowner owes a duty of care into three categories — trespassers, invitees, and licensees. § 13-21-115(4). ¶ 2 Landowners owe different duties to each category of persons. A person “who enters or remains on the land of another” for the person’s “own convenience or to advance the [person’s] own interests, pursuant to the landowner’s permission or consent,” is a “licensee” under the Act. § 13-21-115(7)(c). “[S]ocial guest[s]” are licensees. Id. ¶ 3 As relevant to this case, “[a] licensee may only recover damages caused . . . [b]y the landowner’s unreasonable failure to exercise reasonable care with respect to dangers created by the landowner that the landowner actually knew about.” § 13-21-115(4)(b)(I).",
+      "text_sha256": "84b685a8a01759279ff3ec26586e97d8f7f23d69b61b39b07e5ecbc09930926b",
+      "publisher_sha256": "489a95e69443d83643d2be64376adbb81eaf5f74e381d4a40f95645d8cdaacef",
+      "retrieved_at": "2026-11-23T20:47:26.613500+00:00",
+      "language": "en",
+      "authority_type": "opinion",
+      "currentness": "historical",
+      "court": "Colorado Court of Appeals",
+      "decision_date": "2025-03-20",
+      "opinion_role": "majority",
+      "edition": "Court-published opinion of 2025-03-20",
+      "scope_notes": "Premises Liability Act entrant categories and the known dangers created by a landowner branch of the licensee standard in a leased-dwelling fire case.",
+      "procedural_posture": "Appeal from summary judgment in a premises-liability action arising from a fire at a leased dwelling."
+    },
+    "319f725df2d3878e48ccb08671a193": {
+      "source_id": "US-CO:premises:74fdd910af69",
+      "citation": "Willis v. Twin Shores Master Owner Ass'n, Inc., 2025 COA 37, ¶¶ 1–2",
+      "text": "This slip-and-fall case presents a novel issue concerning the standard of care a common interest community association owes to a unit owner’s guest who is injured in an area that is part of the common elements owned and controlled by the association. We conclude that, in relation to such an association, a unit owner’s guest is an invitee under the Colorado Premises Liability Act (PLA), § 13-21-115, C.R.S. 2024. ¶ 2 Accordingly, we reverse the district court’s entry of summary judgment in favor of the defendants, Twin Shores Master Owners Association, Inc., and Hammersmith Management, Inc., on the PLA claim asserted by the plaintiff, Tiffani Willis. The judgment was predicated on the conclusion that Willis was the defendants’ licensee at the time of her injury and didn’t present sufficient facts to establish liability to her as a licensee. We conclude, however, that if Willis was injured in an area that was part of the common elements owned and controlled by the association — an issue on which there is a genuine dispute of material fact — then she was the defendants’ invitee. We therefore reverse the judgment and remand the case for further proceedings.",
+      "text_sha256": "223793b53765b2c1066d9028ce9df503a32259ac655f916d5372a3ed0515151f",
+      "publisher_sha256": "8f055cc3477c8266b71433ca95e5c7a5569f11ee0a3a13e8df29346b9814158d",
+      "retrieved_at": "2026-11-23T20:47:26.277672+00:00",
+      "language": "en",
+      "authority_type": "opinion",
+      "currentness": "historical",
+      "court": "Colorado Court of Appeals",
+      "decision_date": "2025-04-03",
+      "opinion_role": "majority",
+      "edition": "Court-published opinion of 2025-04-03",
+      "scope_notes": "Status of a unit owner's guest in common elements owned and controlled by a common-interest community association. Location and control remained disputed on remand.",
+      "procedural_posture": "Appeal from a grant of summary judgment based on the claimant's status as a licensee."
+    },
+    "3bdf6562b7a2b1b140a288f8b292ed": {
+      "source_id": "US-CO:premises:d2b930e66480",
+      "citation": "2022 Colo. Sess. Laws ch. 75, § 2 (Colo. Rev. Stat. § 13-21-115(2)(e))",
+      "text": "(e) (I) THE ROCKY MOUNTAIN PLANNED PARENTHOOD, INC. V. WAGNER, 2020 CO 51, 467 P.3d 287, AND WAGNER V. PLANNED PARENTHOOD FEDERATION OF AMERICA, INC., 2019 COA 26, 471 P.3d 1089, DECISIONS DO NOT ACCURATELY REFLECT THE INTENT OF THE GENERAL ASSEMBLY REGARDING LANDOWNER LIABILITY AND MUST NOT BE RELIED UPON IN APPLYING THIS SECTION TO THE EXTENT THAT THE MAJORITY OPINIONS DETERMINED: (A) THE FORESEEABILITY OF THIRD-PARTY CRIMINAL CONDUCT BASED UPON WHETHER THE GOODS OR SERVICES OFFERED BY A LANDOWNER ARE CONTROVERSIAL; AND (B) THAT A LANDOWNER COULD BE HELD LIABLE AS A SUBSTANTIAL FACTOR IN CAUSING HARM WITHOUT CONSIDERING WHETHER A THIRD-PARTY CRIMINAL ACT WAS THE PREDOMINANT CAUSE OF THAT HARM, AS NOTED BY THE DISSENTING JUSTICES AND JUDGE. (II) IN MAKING THIS DECLARATION, THE GENERAL ASSEMBLY DOES NOT INTEND TO REJECT OR OTHERWISE DISTURB ANY JUDICIAL DECISION OTHER THAN THE WAGNER DECISIONS.",
+      "text_sha256": "2db7db2c2c8858f6b17943e2ec4b147f8ab09482c9f30f47f4500fb0523f108c",
+      "publisher_sha256": "b69a78bc31a1fafb12b9df6f32246a7f98b4f5d25695352b579161dfece84ed3",
+      "retrieved_at": "2026-11-23T20:46:15.699817+00:00",
+      "language": "en",
+      "authority_type": "statute",
+      "currentness": "unresolved",
+      "effective_from": "2022-04-07",
+      "edition": "Colorado Session Laws 2022, chapter 75",
+      "scope_notes": "Legislative declaration limiting reliance on the Wagner opinions for specified third-party criminal conduct issues. Section 3 applies the act to actions pending on or after its effective date. Subsequent amendments require review."
     }
   },
   "fault_allocation": {

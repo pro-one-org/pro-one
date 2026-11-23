@@ -75,6 +75,13 @@
 - New York identifies NYC Civil Court CIV-SC-50, revised April 22, 2022, as the small-claims statement of claim. The court publishes clerk-office and limited mail procedures. The captured July 7, 2023 statutory rendition supports NYC small-claims commencement and preserves the employee fee exception. The statute does not identify the form by number, and its currentness remains unresolved. [New York State Senate § 1803](https://www.nysenate.gov/legislation/laws/CCA/1803) and [NYC small-claims filing instructions](https://www.nycourts.gov/new-york-city-small-claims-court/starting-case-nyc-small-claims-court).
 - Direct publisher downloads of the two PDF artifacts returned HTTP 403. The published text can be inspected, but the download failure prevents reproduction of a raw artifact hash. Both forms remain outside the verified binding count.
 
+## Colorado and Illinois premises and Washington accrual
+
+- Colorado's enacted 2022 session law preserves the limited treatment of the Wagner decisions and the pending-action applicability clause. Two published appellate opinions separately support the licensee rule on dangers created by the landowner and the invitee rule for unit owners' guests in association-owned and controlled common elements.
+- Illinois's published Bruns opinion preserves the actual-distraction requirement and distinguishes looking elsewhere. Washington's published Nichols opinion adds a scoped discovery and reasonable-diligence passage for water intrusion and construction negligence. It does not fill Washington's personal-injury discovery gap.
+- The corpus has 1,447 authority versions, including 164 dated publisher verifications, 521 historical and 762 currentness-unresolved. Of 3,764 cells, 1,444 are unsupported, 1,655 partial and 665 reference-only. Premises passage coverage spans 13 jurisdictions. The full validation logs are under `.local/premises-final-*.log`.
+- The full suite and [CI for `31964db`](https://github.com/pro-one-org/pro-one/actions/runs/45262668355) found a NYC procedural test that assumed one reference. The regression now requires both NYC statutes and checks that each remains local and currentness-unresolved. The response still denies external action.
+
 ## Next priorities
 
 - Close substantive baseline gaps first. Continue personal-injury accrual and tolling, exceptions to fault regimes, ordinary contract breach and damages, and premises coverage as measured in the tracker.
